@@ -6,20 +6,20 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 7429d8f9-1e8f-4fbd-8b04-cbe7adbff3e2
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: 6dd8a70293161ff58361953a7e48a98834b7abe0
 workflow-type: tm+mt
-source-wordcount: '1178'
-ht-degree: 84%
+source-wordcount: '1105'
+ht-degree: 13%
 
 ---
 
 # Planification de classeurs
 
-Une fois le classeur enregistré et l’analyse terminée, vous pouvez facilement le partager avec d’autres membres de l’équipe à l’aide de la fonction de planification. La fonction Planification vous permet de créer une planification qui actualise automatiquement les données du classeur et d’envoyer par e-mail le fichier .xlsx du classeur Excel en tant que pièce jointe à une audience spécifiée à une date et une heure spécifiques. La configuration d’une planification permet aux destinataires de recevoir automatiquement des mises à jour régulières. Vous pouvez également utiliser la fonction de planification pour envoyer le classeur une seule fois sans planifier de mises à jour automatiques.
+Une fois le classeur enregistré et l’analyse terminée, vous pouvez le partager avec d’autres membres de l’équipe à l’aide de la fonction de planification. La fonction de planification vous permet de créer une planification qui actualise automatiquement les données du classeur. Et envoie par e-mail le fichier de classeur Excel en tant que pièce jointe à une audience spécifiée à une date et une heure spécifiques. La configuration d’une planification permet aux destinataires de recevoir automatiquement des mises à jour régulières. Vous pouvez également utiliser la fonction de planification pour envoyer le classeur une seule fois sans planifier de mises à jour automatiques.
 
-Vous pouvez créer plusieurs planifications pour un seul classeur. Par exemple, vous pouvez envoyer un classeur à votre équipe sur une base quotidienne et l’envoyer à votre responsable une fois par semaine en créant deux planifications différentes.
+Vous pouvez créer plusieurs planifications pour un seul classeur. Par exemple, vous créez deux planifications pour envoyer un classeur à votre équipe tous les jours et à votre responsable une fois par semaine.
 
-La fonction Planification vous permet également de configurer la protection par mot de passe d’un classeur et de modifier les classeurs planifiés précédemment.
+La fonction de planification vous permet également de configurer la protection par mot de passe d’un classeur et de modifier les classeurs planifiés précédemment.
 
 
 >[!BEGINSHADEBOX]
@@ -31,104 +31,152 @@ Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Schedule Workbo
 
 ## Planifier un classeur
 
-Utilisez le bouton Planifier la tâche dans le centre Report Builder pour créer rapidement une planification afin de pouvoir distribuer automatiquement un fichier Excel de classeur (.xlsx) à un individu ou à un groupe.
+Pour planifier un classeur :
 
-1. Cliquez sur le bouton Planifier dans le centre Report Builder.
+1. Sélectionnez **[!UICONTROL Planification]** dans le hub Report Builder pour créer une planification afin de pouvoir distribuer automatiquement un fichier Excel de classeur (.xlsx) à un individu ou à un groupe.
 
-   ![Cliquez sur le bouton Planifier pour créer une planification.](./assets/schedule-button.png){width="55%"}
+   ![Cliquez sur le bouton Planifier pour créer une planification.](./assets/schedule.png){zoomable="yes"}
 
-1. Cliquez sur Planifier un classeur ou sur le bouton Plus dans le coin supérieur gauche pour créer un classeur planifié.
+1. Sélectionnez **[!UICONTROL Planifier le classeur]** ou ![Ajouter](/help/assets/icons/Add.svg) pour créer un classeur planifié.
 
-   ![Fenêtre Planifier des classeurs.](./assets/schedule-workbook.png){width="55%"}
+   ![Fenêtre Planifier des classeurs.](./assets/schedule-workbook.png){zoomable="yes"}
 
    Le volet de planification affiche des informations prédéfinies sur le classeur, telles que le nom du classeur et la date de la dernière modification.
 
-   ![Volet de planification.](./assets/schedule-pane.png){width="55%"}
+### Fichier
 
-1. (Facultatif) Saisissez un nom de fichier.
+Dans la section **[!UICONTROL Fichier]**, vous fournissez des détails sur le type de fichier, le nom et un mot de passe pour protéger le fichier.
 
-   Par défaut, le nom de fichier du classeur correspond au nom du classeur, mais vous pouvez le modifier si vous le souhaitez. Si vous envoyez le même classeur à plusieurs audiences et que vous souhaitez lui donner un nom un peu plus convivial pour une audience particulière, vous pouvez changer son nom.
+![Volet de planification.](./assets/schedule-pane.png){zoomable="yes"}
 
-1. (Facultatif) Sélectionnez **Ajouter un horodatage au nom du fichier**.
+1. Utilisez ![TableSelect](/help/assets/icons/TableSelect.svg) pour sélectionner le classeur actif, s’il n’est pas déjà sélectionné.
 
-   Vous pouvez ajouter un horodatage au nom du fichier pour indiquer la date à laquelle le classeur a été mis à jour. Ceci est utile pour vérifier rapidement quelle version d’un classeur a été envoyée à une date spécifique. L’**Aperçu du nom de fichier** permet de voir la manière dont le nom de fichier du classeur apparaîtra dans l’e-mail lors de la distribution du classeur. Le format d’horodatage est AAAA-MM-JJ.
+1. (Facultatif) Saisissez un **[!UICONTROL Nom de fichier]**.
 
-1. (Facultatif) Sélectionnez **compression .zip** pour compresser le fichier et configurer sa protection par mot de passe.
+   Par défaut, le nom de fichier du classeur correspond au nom du classeur, mais vous pouvez le modifier si vous le souhaitez.
 
-   Lorsque vous effectuez cette sélection, vous êtes invité à saisir un mot de passe pour ouvrir le fichier. Ceci est utile si vous avez des inquiétudes concernant la sécurité des données et que vous souhaitez protéger le classeur par mot de passe. Pour protéger le fichier avec un mot de passe, vous devez sélectionner **compression .zip**. Le mot de passe doit contenir au moins 8 caractères, un chiffre et un caractère spécial.
+1. Sélectionnez un **[!UICONTROL Type de fichier]**.
 
-   ![Saisissez un mot de passe dans le champ Protéger le classeur par mot de passe](./assets/zip-compression.png){width="55%"}.
+   * **[!UICONTROL Excel]**
+   * **[!UICONTROL PDF]**
+   * **[!UICONTROL CSV]**
 
-1. Saisissez les **Destinataires**. Vous pouvez saisir le nom d’une personne reconnue dans votre organisation ou saisir l’adresse e-mail d’une personne interne ou externe à votre organisation.
+   Lorsque vous sélectionnez **[!UICONTROL CSV]**, sachez que le classeur planifié est envoyé en tant que pièce jointe. Certaines administrations de messagerie d&#39;entreprise peuvent bloquer les e-mails contenant des pièces jointes au format zip. Un avertissement s’affiche en conséquence.
+
+1. (Facultatif) Sélectionnez **[!UICONTROL Ajouter un horodatage au nom du fichier]**.
+
+   Vous pouvez ajouter un horodatage au nom du fichier pour indiquer la date à laquelle le classeur a été mis à jour. Un horodatage est utile pour savoir quelle version d’un classeur a été envoyée à une date spécifique. Lorsque cette option est sélectionnée, vous pouvez choisir entre :
+
+   * **[!UICONTROL Format de date ISO]**, ce qui entraîne l’ajout de `YYYY-MM-DD` au nom de fichier.
+   * **[!UICONTROL Format de date ISO + horodatage]**, ce qui entraîne l’ajout de `YYYY-MM-DD_HH-MM-SS` au nom de fichier.
+
+<!-- Does no longer seem to be an option? 
+1. (Optional) Select **.zip compression** to compress the file and set up password protection on the file.
+
+    When you make this selection, you're prompted to enter a password to open the file. This is helpful if you have concerns about data security and you want to password protect the workbook. Protecting the file with a password requires you to select **.zip compression**. The password must be at least 8 characters and contain a number and a special character.
+
+    ![Enter a password in the Password protect the workbook field.](./assets/zip-compression.png){zoomable="yes"}{width="55%"}
+-->
+
+1. Saisissez un mot de passe dans **[!UICONTROL Protéger le classeur par mot de passe]**. Un mot de passe valide nécessite au moins 8 caractères, un nombre et un caractère spécial. Sélectionnez ![VisibilityOff](/help/assets/icons/VisibilityOff.svg) pour afficher le mot de passe et ![Visibility](/help/assets/icons/Visibility.svg) pour le masquer (par défaut).
+
+
+### Adresse électronique
+
+Dans la section **[!UICONTROL E-mail]**, indiquez les destinataires, l’objet et la description de l’e-mail.
+
+![Paramètres de planification de l’e-mail](assets/schedule-email.png){zoomable="yes"}
+
+1. Saisissez les **Destinataires**. Vous pouvez saisir le nom d&#39;une personne reconnue dans votre organisation. Vous pouvez également saisir l’adresse e-mail d’une personne extérieure à votre entreprise.
 
 1. Saisissez l’**Objet** de l’e-mail et une description pour vos destinataires. Par défaut, l’objet correspond au nom de fichier du classeur, mais vous pouvez modifier l’objet si nécessaire. Vous pouvez ajouter des détails dans la section de description.
 
-   ![Saisissez un objet dans le champ Objet.](./assets/recipients-subject.png){width="55%"}
+1. Vous pouvez éventuellement saisir une description dans la zone de texte **[!UICONTROL Description]**.
 
-1. Configurez les options de planification pour définir la date et l’heure auxquelles le classeur doit être envoyé par e-mail aux destinataires.
 
-   Sélectionnez les dates et périodes de début et de fin. Il peut s’agir de la date d’aujourd’hui ou d’une date ultérieure.
+### Planifier
 
-   Choisissez la **Fréquence** dans le menu déroulant. Vous pouvez choisir une fréquence horaire, quotidienne, hebdomadaire, mensuelle ou annuelle pour un jour spécifique. Par exemple, vous pouvez configurer une planification pour envoyer le classeur le premier dimanche soir du mois afin que vos destinataires voient l’e-mail dans leur boîte de réception à la première heure le lundi matin.
+Dans la section **[!UICONTROL Planifier]**, vous pouvez définir la planification pour envoyer les e-mails avec le classeur à vos destinataires.
 
-   ![Sélectionnez la fréquence pour planifier votre rapport.](./assets/frequency.png){width="55%"}
+![Définition d’horaire](assets/schedule-enable.png){zoomable="yes"}
 
-1. Une fois la planification définie, cliquez sur **Envoyer selon le calendrier**.
+1. Sélectionnez **[!UICONTROL Afficher les options de planification]** pour définir une planification.
 
-   ![Cliquez sur Envoyer selon le calendrier.](./assets/send-on-schedule.png){width="55%"}
+1. Saisissez une date de début dans **[!UICONTROL À partir du]**. Vous pouvez également sélectionner ![Calendrier](/help/assets/icons/Calendar.svg) pour choisir une date de début dans le calendrier.
 
-   Un toast de confirmation s’affiche au bas du centre Report Builder et le classeur planifié est répertorié sous l’onglet Classeurs.
+1. Saisissez une date de fin dans **[!UICONTROL Se terminant le]**. Vous pouvez également sélectionner ![Calendrier](/help/assets/icons/Calendar.svg) pour choisir une date de fin dans le calendrier.
 
-   ![Toast de confirmation](./assets/confirmation-toast.png){width="55%"}
+1. Sélectionnez une **[!UICONTROL Fréquence]**. Selon la fréquence sélectionnée, vous disposez d’options supplémentaires. Voir le tableau ci-dessous.
 
-## Envoyer le classeur une seule fois
+   | Fréquence | Options |
+   |---|---|
+   | **[!UICONTROL Envoyer par heure]** | Saisissez une valeur pour **[!UICONTROL Envoyer toutes les heures]**. |
+   | **[!UICONTROL Envoyer quotidiennement]** | Sélectionnez une **[!UICONTROL Fréquence quotidienne]** : **[!UICONTROL Envoyer tous les jours]**, **[!UICONTROL Envoyer tous les jours de la semaine]** ou **[!UICONTROL Fréquence personnalisée]**.<br/>Si vous sélectionnez **[!UICONTROL Fréquence personnalisée]**, saisissez une valeur pour **[!UICONTROL Envoyer tous les jours]**. |
+   | **[!UICONTROL Envoyer une fois par semaine]** | Saisissez une valeur pour **[!UICONTROL Envoyer toutes les semaines]**. Sélectionnez ensuite un **[!UICONTROL Jour de la semaine]**. |
+   | **[!UICONTROL Envoyer mensuellement par jour de la semaine]** | Sélectionnez un **[!UICONTROL Jour de la semaine]** et un **[!UICONTROL Semaine du mois]**. |
+   | **[!UICONTROL Envoyer mensuellement par jour du mois]** | Sélectionnez une valeur dans **[!UICONTROL Envoyer ce jour du mois]**. |
+   | **[!UICONTROL Envoyer annuellement par jour du mois]** | Sélectionnez un **[!UICONTROL Jour de la semaine]**, une **[!UICONTROL Semaine du mois]** et une **[!UICONTROL Mensuel de l’année]**. |
+   | **[!UICONTROL Envoyer annuellement par date spécifique]** | Sélectionnez un **[!UICONTROL Mois de l’année]** et sélectionnez une valeur dans **[!UICONTROL Envoyer ce jour du mois]**. |
 
-Vous pouvez également envoyer le classeur une seule fois.
+### Envoyer
 
-1. Désélectionnez **Afficher les options de planification**.
+Pour envoyer le classeur :
 
-   ![Cliquez sur Décocher Afficher les options de planification pour envoyer un classeur une fois.](./assets/send-now.png){width="40%"}
+* Si vous n’avez pas défini de planning à l’aide de l’option **[!UICONTROL Afficher les options de planification]**, sélectionnez **[!UICONTROL Envoyer maintenant]** pour envoyer immédiatement le classeur par e-mail.
+* Si vous avez défini une planification à l’aide de l’option **[!UICONTROL Afficher les options de planification]**, sélectionnez **[!UICONTROL Envoyer selon le calendrier]** pour envoyer le classeur par e-mail à l’aide de la planification que vous avez définie.
 
-1. Cliquez sur **Envoyer maintenant**.
+Dans les deux cas, un toast de confirmation s’affiche au bas du hub Report Builder.
 
-## Afficher et modifier les classeurs planifiés
+Pour annuler l’envoi du classeur, sélectionnez **[!UICONTROL Annuler]**.
 
-Vous pouvez afficher et gérer tous les classeurs planifiés au même endroit sous l’onglet Classeurs.
 
-1. Dans la section Planification du centre Report Builder, cliquez sur l’onglet Classeurs. Utilisez cette vue pour afficher la liste de tous les classeurs planifiés.
+## Afficher et gérer les classeurs planifiés
 
-1. Sélectionnez un classeur. Plusieurs outils s’affichent pour vous permettre de modifier le classeur, de modifier la tâche planifiée, de suspendre et de redémarrer la tâche planifiée, de télécharger un rapport de tâche planifiée ou de supprimer la tâche planifiée.
+Vous pouvez afficher et gérer tous les classeurs planifiés dans l’onglet **[!UICONTROL Classeurs]**.
 
-   ![Capture d’écran affichant les icônes de planning du classeur.](./assets/schedule-icons.png){width="20%"}
+1. Sélectionnez **[!UICONTROL Planifier]** dans le hub Report Builder
 
-* (Facultatif) Cliquez sur l’icône en forme de crayon pour modifier la tâche de planification du classeur.
+1. Sélectionnez l’onglet **[!UICONTROL Classeurs]**. La liste de tous les classeurs planifiés s’affiche.
 
-* (Facultatif) Cliquez sur l’icône d’horloge pour afficher l’historique de chaque tâche planifiée.
+   ![Classeur planifié](assets/scheduled-workbooks.png){zoomable="yes"}
 
-* (Facultatif) Cliquez sur l’icône de pause pour suspendre et redémarrer la tâche du planning de distribution. Cela s’avère utile si vous devez modifier le classeur avant son envoi. Cliquez de nouveau sur l’icône de pause lorsque vous souhaitez redémarrer la distribution.
+   Vous pouvez placer le pointeur de la souris sur l’icône pour afficher le statut d’un classeur planifié.
 
-* (Facultatif) Cliquez sur l’icône de téléchargement pour télécharger une copie de la tâche de planification du classeur.
+   Utilisez ![Rechercher](/help/assets/icons/Search.svg) pour rechercher des classeurs planifiés spécifiques.
+Utilisez ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) pour définir les colonnes à afficher.
 
-* (Facultatif) Cliquez sur la corbeille pour supprimer la tâche de planification.
+1. Sélectionnez un ou plusieurs classeurs.
 
-  ![Capture d’écran affichant la liste des tâches planifiées.](./assets/selected-workbook.png){width="40%"}
+   ![Planifier les classeurs sélectionnés](assets/scheduled-workbooks-selected.png){zoomable="yes"}
 
-## Vérifier l’état des tâches planifiées
+   Les options disponibles sont les suivantes :
 
-L’affichage de l’historique vous permet de consulter l’état de chaque tâche planifiée. Une ligne distincte documente le changement d’état pour chaque tâche planifiée. Dans l’exemple ci-dessous, la *Nouvelle planification horaire* a été lancée le 5 janvier à 15 h 04. À 15 h 05, elle a été actualisée et envoyée aux destinataires. Une erreur s’est produite lors de l’actualisation du classeur suivant : *Classeur incorrect*. En cas d’échec de l’envoi d’un classeur, l’onglet Historique vous aide à résoudre les problèmes en indiquant le stade du processus où l’erreur s’est produite. Dans ce cas, il s’agit probablement d’une erreur de bloc de données, par exemple un composant manquant, qui a empêché l’actualisation du classeur.
+   | Option | Description |
+   |---|---|
+   | ![Modifier](/help/assets/icons/Edit.svg) | Modifiez la planification d’un classeur sélectionné. |
+   | ![Historique](/help/assets/icons/History.svg) | Afficher l’historique des classeurs sélectionnés. |
+   | ![ Pause ](/help/assets/icons/Pause.svg) | Mettre en pause le planning des classeurs sélectionnés. |
+   | ![Lecture](/help/assets/icons/Play.svg) | Reprenez la planification des classeurs sélectionnés. |
+   | ![Télécharger](/help/assets/icons/Download.svg) | Téléchargez le classeur sélectionné dans un nouveau classeur. |
+   | ![Supprimer](/help/assets/icons/Delete.svg) | Supprimez la planification des classeurs sélectionnés. |
 
-Une coche verte indique que le classeur a bien été envoyé. Un point d’exclamation dans un triangle rouge indique qu’une erreur s’est produite.
 
-Vous pouvez choisir les colonnes à afficher dans l’onglet Historique en cliquant sur l’icône de paramétrage des colonnes située à droite de la barre de recherche.
+## Historique et statut des classeurs planifiés
 
-![Cliquez sur l’icône de colonne pour afficher ou masquer des colonnes spécifiques.](./assets/history.png){width="55%"}
+Vous pouvez afficher l’historique et le statut des classeurs planifiés dans l’onglet **[!UICONTROL Historique]**.
 
-Vous pouvez filtrer l’historique pour n’afficher que celui d’un seul classeur planifié en vous rendant dans l’onglet des classeurs, en le sélectionnant et en cliquant sur l’icône d’historique.
+1. Sélectionnez **[!UICONTROL Planifier]** dans le hub Report Builder.
 
-Vous pouvez également afficher l’historique d’un classeur spécifique à partir de l’onglet Classeurs. Dans l’onglet Classeurs, sélectionnez le classeur, puis cliquez sur l’icône d’historique.
+1. Sélectionnez l’onglet **[!UICONTROL Historique]**. La liste de tous les classeurs planifiés s’affiche.
 
-![Icône d’historique des classeurs](./assets/history2.png){width="55%"}
+   ![Historique planifié](assets/scheduled-workbooks-history.png){zoomable="yes"}
 
-Le filtre du classeur s’affiche alors en haut de l’historique. Pour afficher à nouveau l’historique de toutes les tâches planifiées, cliquez sur le x en regard du filtre.
+   Utilisez ![Rechercher](/help/assets/icons/Search.svg) pour rechercher des classeurs spécifiques dans la liste.
+Utilisez ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) pour définir les colonnes à afficher.
 
-![Le filtre du classeur.](./assets/history3.png){width="55%"}
+   L’onglet **[!UICONTROL Historique]** vous permet de consulter le statut de chaque tâche planifiée. Une ligne distincte documente le changement d’état pour chaque tâche planifiée.
+
+   * Un ![CheckmarkCircleGreen](/help/assets/icons/CheckmarkCircleGreen.svg) indique que le classeur a bien été envoyé.
+   * Un ![AlertRed](/help/assets/icons/AlertRed.svg) indique qu&#39;une erreur s&#39;est produite.
+
+Vous pouvez également sélectionner ![Historique](/help/assets/icons/History.svg) pour un ou plusieurs classeurs sélectionnés dans l’onglet **[!UICONTROL Classeurs]**. Cette action affiche l’onglet **[!UICONTROL Historique]** avec une liste filtrée par votre sélection. Sélectionnez ![CrossSize75](/help/assets/icons/CrossSize75.svg) pour supprimer un filtre.

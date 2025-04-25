@@ -5,7 +5,7 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
+source-git-commit: 6213cc09800743a1f7cb4828d71ee731439e529b
 workflow-type: tm+mt
 source-wordcount: '2125'
 ht-degree: 85%
@@ -191,7 +191,7 @@ Vous pouvez filtrer ![icône Filtrer](https://spectrum.adobe.com/static/icons/wo
 
 ### Paramètres (segments)
 
-Vous pouvez ajouter des segments qui s’appliquent à l’ensemble d’une vue de données. Ce segment est appliqué à tout rapport exécuté dans Workspace. Faites glisser un segment de la liste du rail de gauche vers le champ [!UICONTROL Ajouter des segments].
+Vous pouvez ajouter des segments qui s’appliquent à l’ensemble d’une vue de données. Ce segment est appliqué à tout rapport exécuté dans Workspace. Faites glisser un segment de la liste du rail de gauche vers le champ **[!UICONTROL Ajouter des segments]**.
 
 ### Paramètres de session
 

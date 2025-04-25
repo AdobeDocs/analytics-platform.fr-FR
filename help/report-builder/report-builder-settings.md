@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 exl-id: 32423cb4-1a4c-4ea3-ad4b-9520aff9ae4b
 solution: Customer Journey Analytics
-source-git-commit: 9efad7c7808a7a68bc25fc5f1700f4e4f8e18614
+source-git-commit: 9794779894fbecb433c16d108c555c5f81a4b491
 workflow-type: tm+mt
-source-wordcount: '281'
-ht-degree: 87%
+source-wordcount: '258'
+ht-degree: 29%
 
 ---
 
@@ -19,44 +19,41 @@ Utilisez le volet **Paramètres** pour configurer les paramètres au niveau de l
 
 Pour modifier les paramètres de Report Builder
 
-1. Cliquez sur l’icône **Paramètres**.
+1. Sélectionnez l’icône **Paramètres**.
 
-1. Apportez des modifications au mode hors ligne, sélectionnez une langue ou activez les paramètres du journal de dépannage.
+1. Apportez des modifications à [activer ou désactiver le mode hors ligne](#off-line-mode), [sélectionner une langue](#language) ou [activer le dépannage](#troubleshooting).
 
-1. Cliquez sur **Appliquer**.
+1. Sélectionnez **[!UICONTROL Appliquer]**.
 
-   ![Report Builder de la période affichant le bouton Annuler et Appliquer.](./assets/image38.png)
+   ![Volet de période Report Builder affichant le bouton Annuler et appliquer.](./assets/report-builder-settings.png){zoomable="yes"}
 
 ## Mode hors ligne
 
-Lors de la création et de la modification d’un bloc de données en mode hors ligne, les données ne sont pas récupérées. Au lieu de cela, des données de simulation sont utilisées afin que vous puissiez rapidement créer et éditer un bloc de données sans attendre l’exécution de la requête. Lorsque vous êtes de retour en ligne, la commande *Actualiser le bloc de données* ou *Actualiser tous les blocs de données* actualise les blocs de données que vous avez créés avec des données réelles.
+Lorsque vous créez et modifiez un bloc de données en mode hors ligne, les données ne sont pas récupérées. Au lieu de cela, des données de simulation sont utilisées afin que vous puissiez travailler rapidement sans attendre que la requête s’exécute. Lorsque vous êtes de retour en ligne, sélectionnez ![Actualiser](/help/assets/icons/Refresh.svg) **[!UICONTROL Actualiser le bloc de données]** ou ![DocumentRefresh](/help/assets/icons/DocumentRefresh.svg) **[!UICONTROL Actualiser tous les blocs de données]** pour actualiser les blocs de données avec les données réelles.
 
 Pour activer le mode hors ligne
 
-1. Cliquez sur l’icône **Paramètres**.
+1. Sélectionnez ![Paramètre](/help/assets/icons/Setting.svg).
 
-1. Sélectionnez **Activation du mode hors ligne**.
+1. Activez le bouton (bascule) **[!UICONTROL Activer le mode hors ligne]**.
 
-1. Saisissez un nombre entier positif dans le champ **Afficher les données de mesure sous**.
+1. Saisissez un entier positif dans le champ **[!UICONTROL Afficher les données de mesure]**.
 
-1. Cliquez sur **Appliquer**.
+1. Sélectionnez **[!UICONTROL Appliquer]**.
+
 
 ## Langue
 
-Vous pouvez choisir la langue de l’interface utilisateur de Report Builder. Toutes les langues Adobe Analytics prises en charge sont disponibles.
+Vous pouvez choisir la langue de l’interface de Report Builder. Toutes les langues Customer Journey Analytics prises en charge sont disponibles.
 
-Pour sélectionner la langue utilisée dans l’interface utilisateur de Report Builder
+Pour sélectionner la langue utilisée dans l’interface de Report Builder :
 
-1. Cliquez sur Paramètres.
+1. Sélectionnez une langue dans le menu déroulant **[!UICONTROL Langue]**.
 
-1. Sélectionnez une langue dans le menu déroulant **Langue**.
-
-   ![Panneau de plage de dates de Report Builder affichant la liste Langue avec l’anglais sélectionné.](./assets/image39.png)
-
-1. Cliquez sur **Appliquer.**
+1. Sélectionnez **Appliquer.**
 
 ## Résolution des problèmes
 
-Utilisez le paramètre de dépannage pour consigner toutes les données client/serveur dans un fichier local. Utilisez cette option pour résoudre les tickets d’assistance.
+Le paramètre **[!UICONTROL Journaux de dépannage]** consigne toutes les données client/serveur dans un fichier local. Utilisez cette option pour résoudre les tickets d’assistance.
 
-Pour activer l’option Dépannage, sélectionnez **Enregistrer la requête Report Builder dans le fichier local**.
+Pour activer les journaux de dépannage, cochez la case **[!UICONTROL Enregistrer la requête Report Builder dans le fichier local]**.

@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 2581ff0f3d149a539ed730a941ce1b6288e9af0e
+source-git-commit: 9794779894fbecb433c16d108c555c5f81a4b491
 workflow-type: tm+mt
 source-wordcount: '1214'
-ht-degree: 86%
+ht-degree: 83%
 
 ---
 
@@ -383,16 +383,16 @@ ht-degree: 86%
 
 + Report Builder {#cja-reportbuilder}
    + [Vue d’ensemble](../report-builder/report-buider-overview.md)
-   + [Configuration de Report Builder](../report-builder/report-builder-setup.md)
-   + [Création dʼun bloc de données](../report-builder/create-a-data-block.md)
-   + [Centre Report Builder](../report-builder/report-builder-hub.md)
-   + [Sélection d’une vue de données](../report-builder/select-data-view.md)
+   + [Configuration de Report Builder](../report-builder/report-builder-setup.md)
+   + [Créer un bloc de données](../report-builder/create-a-data-block.md)
+   + [hub Report Builder](../report-builder/report-builder-hub.md)
+   + [Sélectionner une vue de données](../report-builder/select-data-view.md)
    + [Sélectionner une période](../report-builder/select-date-range.md)
-   + [Utiliser des segments](../report-builder/work-with-filters.md)
-   + [Filtrer des dimensions](../report-builder/filter-dimensions.md)
+   + [Utilisation des segments](../report-builder/work-with-filters.md)
+   + [Filtrer les dimensions](../report-builder/filter-dimensions.md)
    + [Gestion des blocs de données](../report-builder/manage-reportbuilder.md)
    + [Planification de classeurs](../report-builder/schedule-reportbuilder.md)
-   + [Étiquettes restreintes](../report-builder/restricted-labels.md)
+   + [Libellés restreints](../report-builder/restricted-labels.md)
    + [Paramètres de Report Builder](../report-builder/report-builder-settings.md)
 
 + Gestionnaire des activités de rapport {#reporting-activity-manager}

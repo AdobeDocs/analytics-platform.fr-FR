@@ -4,10 +4,10 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: b880c63d22cec0e7de4f313eef72e86f41e85eca
+source-git-commit: 9cda9a2b8d5ec876a1c4a5c539daa1e0624a4460
 workflow-type: tm+mt
-source-wordcount: '5057'
-ht-degree: 91%
+source-wordcount: '5066'
+ht-degree: 90%
 
 ---
 
@@ -20,6 +20,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Fonctionnalité | Description |
 | --- | --- |
 | **Avril 2025** | |
+| Report Builder | Consultez et mettez à jour la documentation de [Report Builder](/help/report-builder/report-buider-overview.md). |
 | Afficher et gérer l’utilisation | Modification de la documentation concernant l’[affichage](/help/connections/manage-connections.md#usage) et la [gestion](/help/technotes/estimate-usage.md) de l’utilisation de Customer Journey Analytics |
 | Adobe Content Analytics | [Content Analytics](/help/content-analytics/content-analytics.md) vous permet d’examiner rapidement et facilement de grands volumes de données de contenu pour découvrir les tendances, repérer les anomalies, identifier la lassitude du contenu et obtenir des informations grâce à l’exposition du contenu. |
 | Mise à jour des champs XDM pour la collecte de données Streaming Media dans Adobe Experience Platform | Lors de la collecte de données Streaming Media dans Adobe Experience Platform, les chemins d’accès aux champs XDM affichés sous l’en-tête « Chemin d’accès au champ XDM » de la documentation des paramètres Streaming Media ne doivent plus être utilisés. Ces chemins d’accès aux champs se trouvent sur les pages suivantes et sont marqués comme « Obsolètes » : [Paramètres audio et vidéo](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters), [Paramètres d’annonce](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/ad-parameters), [Paramètres de chapitre](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/chapter-parameters), [Paramètres d’état du lecteur](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/player-state-parameters) et [Paramètres de qualité](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/quality-parameters). |

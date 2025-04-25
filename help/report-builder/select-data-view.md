@@ -1,15 +1,15 @@
 ---
-title: Sélection d’une vue de données en Report Builder
+title: Comment sélectionner une vue de données dans Report Builder
 description: Décrit comment sélectionner des vues de données dans Adobe Report Builder
 role: User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: bf765144-34f8-465b-b06d-53e4ca91014a
-source-git-commit: 48f5e9d6c5d3a33a5bae45e841eb8364b7172876
+source-git-commit: 9794779894fbecb433c16d108c555c5f81a4b491
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 2%
+source-wordcount: '383'
+ht-degree: 1%
 
 ---
 
@@ -17,43 +17,41 @@ ht-degree: 2%
 
 Vous pouvez sélectionner une vue de données dans la liste déroulante ou sélectionner une vue de données dans une cellule et mettre automatiquement à jour votre bloc de données avec une nouvelle vue de données.
 
-**Sélectionner une vue de données à partir de la cellule**
+## Sélectionner la vue de données depuis une cellule
 
-La sélection d’une vue de données à partir d’une cellule facilite l’actualisation des blocs de données à l’aide de différentes vues de données. Si votre organisation dispose de plusieurs vues de données similaires ou identiques les unes aux autres dans sa structure, au lieu de créer des rapports entièrement nouveaux avec des blocs de données distincts, vous pouvez actualiser les blocs de données avec une vue de données sélectionnée à partir d’une cellule. Cela s’avère également utile si vous disposez de formats de bloc de données complexes qui incluent des composants et des mises en page personnalisés.
+La sélection d’une vue de données dans une cellule facilite l’actualisation des blocs de données à l’aide de différentes vues de données. Au lieu de créer des rapports entièrement nouveaux avec des blocs de données distincts, vous pouvez actualiser les blocs de données avec une vue de données sélectionnée à partir d’une cellule.
 
-Pour sélectionner une vue de données à partir d’une cellule, vous devez d’abord créer un bloc de données et attribuer plusieurs vues de données à une cellule en dehors de votre bloc de données. Utilisez ensuite la vue de données du panneau de cellule pour actualiser vos blocs de données à partir de différentes vues de données.
+La sélection d’une vue de données à partir d’une cellule s’avère utile lorsque vous disposez des éléments suivants :
 
-1. Créez un bloc de données.
-Pour plus d’informations sur la création d’un bloc de données, voir [Création d’un bloc de données](/help/report-builder/create-a-data-block.md).
+* Plusieurs vues de données similaires ou identiques dans leur structure.
+* Formats de blocs de données complexes comprenant des composants et des mises en page personnalisés.
 
-1. Cliquez sur l&#39; *icône de cellule* dans la section *Vues de données* .
+Pour sélectionner une vue de données dans une cellule, commencez par créer un bloc de données et affectez plusieurs vues de données à une cellule à l’extérieur de votre bloc de données. Utilisez ensuite le panneau **[!UICONTROL Vue de données à partir de la cellule]** pour actualiser vos blocs de données à partir de différentes vues de données.
 
-   ![Créez une nouvelle fenêtre de bloc de données avec l’icône de cellule mise en surbrillance.](/help/report-builder/assets/cell-icon.png)
+1. Créez un bloc de données. Pour plus d’informations sur la création d’un bloc de données, voir [Créer un bloc de données](/help/report-builder/create-a-data-block.md).
 
-1. Sélectionnez un emplacement de cellule pour ajouter les vues de données à la cellule sélectionnée.
+1. Sélectionnez ![DataViewSelector](/help/assets/icons/DataViewSelector.svg) dans **[!UICONTROL Vues des données]**.
 
-   Vous pouvez sélectionner une cellule suffisamment éloignée de vos cellules de bloc de données pour qu’elles ne se chevauchent pas.
+1. Sélectionnez une cellule à l’aide de ![DataBlockSelector](/help/assets/icons/DataBlockSelector.svg) en dehors du bloc de données.
 
-1. Confirmez l’emplacement de la cellule sélectionnée.
+1. Ajoutez une ou plusieurs vues de données à partir de la **[!UICONTROL Sélectionner les vues de données à ajouter à la vue de données à partir de la cellule]** en effectuant un glisser-déposer. Vous pouvez également sélectionner deux fois une vue de données pour l’ajouter à la liste **[!UICONTROL Vues de données incluses]**.
 
-1. Sélectionnez les vues de données que vous souhaitez affecter à la cellule.
+   * Vous pouvez utiliser ![Rechercher](/help/assets/icons/Search.svg) **[!UICONTROL _Sélectionner les vues de données_]** pour rechercher des vues de données.
+   * Utilisez ![MoreSmall](/help/assets/icons/MoreSmall.svg) pour ouvrir un menu contextuel afin de déplacer les vues de données vers le haut ou vers le bas dans la liste **[!UICONTROL Vues de données incluses]**.
+   * Utilisez ![CrossSize75](/help/assets/icons/CrossSize75.svg) pour supprimer une vue de données de la liste **[!UICONTROL Vues de données incluses]**.
 
-   ![Report Builder : volet d’édition rapide affichant les vues Sélectionner les données.](/help/report-builder/assets/select-data-view.png)
+   ![Sélectionner la vue de données depuis une cellule](assets/dataviews-from-a-cell.png){zoomable="yes"}
 
-1. Cliquez sur **Appliquer**.
+1. Sélectionnez **[!UICONTROL Appliquer]** pour appliquer les vues de données sélectionnées à la cellule sélectionnée.
 
-   Une fois le bloc de données terminé, vous pouvez l’actualiser à l’aide d’une vue de données différente de celle de la cellule sélectionnée.
 
-   **Modifier la vue de données à partir de la cellule**
+## Modifier la vue de données d’une cellule
 
-1. Cliquez sur l’emplacement de la cellule de la vue de données que vous avez choisi à l’étape 3.
+1. Sélectionnez l’emplacement de la cellule de la vue de données dans votre feuille.
+1. Dans le hub Report Builder, cliquez sur le lien **[!UICONTROL Vues de données à partir de la cellule]** dans **[!UICONTROL Modification rapide]**.
+1. Sélectionnez une vue de données dans le menu déroulant **[!UICONTROL Vue de données]**.
 
-   Un menu déroulant répertoriant les vues de données que vous avez sélectionnées précédemment à l’ étape 5 s’affiche.
+   ![Modifier la vue de données d’une cellule](assets/change-data-view-from-cell.png){zoomable="yes"}
+1. Facultatif, sélectionnez **[!UICONTROL Actualiser le(s) bloc(s) de données lors de la modification]**.
 
-1. Sélectionnez une autre vue de données dans la liste déroulante.
-
-1. (Facultatif) **Sélectionnez Actualiser le ou les blocs de données** lors de la modification.
-
-1. Cliquez sur **Appliquer**.
-
-   Le Report Builder actualise le bloc de données avec la vue de données sélectionnée.
+1. Sélectionnez **[!UICONTROL Appliquer]**. Report Builder actualise le bloc de données en fonction de la vue de données sélectionnée.
