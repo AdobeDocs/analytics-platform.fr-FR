@@ -9,9 +9,9 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 22b06eaf9f224188699aa241de1d1daad8a14619
+source-git-commit: aa7b73db10e81a96f532eedf09091109209124c0
 workflow-type: tm+mt
-source-wordcount: '1214'
+source-wordcount: '1223'
 ht-degree: 83%
 
 ---
@@ -148,6 +148,9 @@ ht-degree: 83%
    + [Champs dérivés](../data-views/derived-fields/derived-fields.md)
    + [Données de résumé](../data-views/summary-data.md)
    + [Libellés et politiques](../data-views/data-governance.md)
+   + Mesures et dimensions partagées{#shared-metrics-dimensions}
+      + [Vue d’ensemble](/help/data-views/shared-metrics-dimensions/smd-overview.md)
+      + [Éditeur](/help/data-views/shared-metrics-dimensions/shared-component-editor.md)
 
 + Outils {#tools}
    + Transfert de ressources {#asset-transfer}
@@ -165,7 +168,7 @@ ht-degree: 83%
       + [Vue d’ensemble](../analysis-workspace/build-workspace-project/freeform-overview.md)
       + [Créer des projets](/help/analysis-workspace/build-workspace-project/create-projects.md)
       + [Ouvrir des projets](/help/analysis-workspace/build-workspace-project/open-projects.md)
-      + [Commentaire dans les projets](/help/analysis-workspace/build-workspace-project/comment-projects.md)
+      + [Commentaire sur les projets](/help/analysis-workspace/build-workspace-project/comment-projects.md)
       + [Enregistrement des projets](../analysis-workspace/build-workspace-project/save-projects.md)
       + Dossiers dans Workspace {#workspace-folders}
          + [À propos des dossiers](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
@@ -424,6 +427,36 @@ ht-degree: 83%
 
 + Cas d’utilisation {#cja-usecases}
    + [Cas d’utilisation de Customer Journey Analytics](../use-cases/cja-usecases.md)
+   + Données Adobe Analytics {#aa-data}
+      + [Utiliser les dimensions du canal marketing](../use-cases/aa-data/marketing-channels.md)
+      + [Combiner des suites de rapports avec différents schémas](../use-cases/aa-data/combine-report-suites.md)
+   + B2B {#b2b}
+      + [Exemple de projet B2B](../use-cases/b2b/example.md)
+   + Données complexes {#complex-data}
+      + [Utiliser des tableaux d’objets](../use-cases/object-arrays.md)
+   + Données cross-canal {#cross-channel}
+      + [Analyse des données sur plusieurs canaux](../use-cases/cross-channel/cross-channel.md)
+      + [Importer les données du centre d’appel et web](../use-cases/cross-channel/call-center.md)
+   + Exportation de données {#data-export}
+      + [Vue d’ensemble](../use-cases/data-export/overview.md)
+      + [Extension BI](../use-cases/data-export/bi-extension.md)
+      + [Exporter les jeux de données](../use-cases/data-export/export-datasets.md)
+      + [Exporter le tableau complet](../use-cases/data-export/export-full-table.md)
+      + [Jeux de données du service de requête et d’export](../use-cases/data-export/queryservice-export-datasets.md)
+   + Ingestion de données {#data-ingestion}
+      + [Ingérer et utiliser des données de Marketo Engage](../use-cases/data-ingestion/marketo.md)
+      + [Ingérer et utiliser des audiences Experience Platform](../use-cases/data-ingestion/ingest-aep-segments.md)
+   + Vues des données {#data-views}
+      + [Cas dʼutilisation des vues de données](/help/use-cases/data-views/data-views-usecases.md)
+      + [Utiliser des dimensions et des mesures de liaison](/help/use-cases/data-views/binding-dimensions-metrics.md)
+      + [Utiliser des données de résumé](/help/use-cases/data-views/summary-data.md)
+      + [Cas d’utilisation de l’extension BI](/help/use-cases/data-views/bi-extension-usecases.md)
+   + Champs dérivés {#derived-fields}
+      + [Créer un rapport sur les objectifs](../use-cases/goals-using-derived-fields.md)
+   + Analyse de produit {#product-analysis}
+      + [Analyse de produit](/help/use-cases/product-analysis.md)
+   + Groupement {#stitching}
+      + [Périphériques partagés](/help/use-cases/stitching/shared-devices.md)
    + Données tierces {#third-party}
       + [Vue d’ensemble](/help/use-cases/third-party/overview.md)
       + Google Analytics {#ga}
@@ -437,34 +470,6 @@ ht-degree: 83%
          + [Utiliser des cartes thermiques](/help/use-cases/third-party/quantum-metric/heatmap.md)
          + [Ajouter des événements de friction](/help/use-cases/third-party/quantum-metric/friction-events.md)
          + [Connecteur source](/help/use-cases/third-party/quantum-metric/source-connector.md)
-   + Ingestion de données {#data-ingestion}
-      + [Ingérer et utiliser des données de Marketo Engage](../use-cases/data-ingestion/marketo.md)
-      + [Ingérer et utiliser des audiences Experience Platform](../use-cases/data-ingestion/ingest-aep-segments.md)
-   + Vues des données {#data-views}
-      + [Cas dʼutilisation des vues de données](/help/use-cases/data-views/data-views-usecases.md)
-      + [Utiliser des dimensions et des mesures de liaison](/help/use-cases/data-views/binding-dimensions-metrics.md)
-      + [Utiliser des données de résumé](/help/use-cases/data-views/summary-data.md)
-      + [Cas d’utilisation de l’extension BI](/help/use-cases/data-views/bi-extension-usecases.md)
-   + Exportation de données {#data-export}
-      + [Vue d’ensemble](../use-cases/data-export/overview.md)
-      + [Extension BI](../use-cases/data-export/bi-extension.md)
-      + [Exporter les jeux de données](../use-cases/data-export/export-datasets.md)
-      + [Exporter le tableau complet](../use-cases/data-export/export-full-table.md)
-      + [Jeux de données du service de requête et d’export](../use-cases/data-export/queryservice-export-datasets.md)
-   + B2B {#b2b}
-      + [Exemple de projet B2B](../use-cases/b2b/example.md)
-   + Données cross-canal {#cross-channel}
-      + [Analyse des données sur plusieurs canaux](../use-cases/cross-channel/cross-channel.md)
-      + [Importer les données du centre d’appel et web](../use-cases/cross-channel/call-center.md)
-   + Données Adobe Analytics {#aa-data}
-      + [Utiliser les dimensions du canal marketing](../use-cases/aa-data/marketing-channels.md)
-      + [Combiner des suites de rapports avec différents schémas](../use-cases/aa-data/combine-report-suites.md)
-   + Données complexes {#complex-data}
-      + [Utiliser des tableaux d’objets](../use-cases/object-arrays.md)
-   + Groupement {#stitching}
-      + [Périphériques partagés](/help/use-cases/stitching/shared-devices.md)
-   + Champs dérivés {#derived-fields}
-      + [Créer un rapport sur les objectifs](../use-cases/goals-using-derived-fields.md)
 
 + Labs {#labs}
    + [Guide d’utilisation de Labs](../labs/labs.md)
