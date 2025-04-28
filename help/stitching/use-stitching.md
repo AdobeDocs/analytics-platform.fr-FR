@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: a04c74ab-606e-45a9-a3e4-0d476c8d2426
-source-git-commit: 157f70353f60da3fec83e016e7a09f69f7f514cf
+source-git-commit: 7cd0bd94ec45b1570d0be765d95b25defa3e1b87
 workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 10%
+source-wordcount: '462'
+ht-degree: 9%
 
 ---
 
@@ -34,7 +34,12 @@ Le package Customer Journey Analytics auquel vous avez droit détermine les mét
    - Demande d’activation du groupement.
    - L’identifiant du jeu de données pour lequel vous souhaitez recréer la clé.
    - Nom de la colonne (chemin d’identité et espace de noms) de l’identifiant persistant du jeu de données souhaité (identifiant qui apparaît sur chaque ligne).
-   - Pour le groupement basé sur les champs, le nom de colonne de l’identifiant temporaire du jeu de données souhaité (l’identifiant de personne, qui agit également comme un lien entre les jeux de données dans le contexte d’une connexion). Pour le groupement basé sur un graphique, espace de noms d’identité à utiliser pour interroger le graphique d’identité.
+   - Si le jeu de données prend en charge `identityMap` :
+      - Pour le groupement basé sur les champs, spécifiez l’espace de noms pour les ID persistants et temporaires.
+      - Pour le groupement basé sur les graphiques, spécifiez l’espace de noms de l’identifiant persistant et l’espace de noms d’identité à utiliser pour interroger le graphique d’identité.
+   - Si le jeu de données ne prend pas en charge `identityMap` :
+      - Pour le groupement basé sur les champs, le nom de colonne de l’identifiant temporaire du jeu de données souhaité (l’identifiant de personne, qui agit également comme un lien entre les jeux de données dans le contexte d’une connexion).
+      - Pour le groupement basé sur un graphique, espace de noms d’identité à utiliser pour interroger le graphique d’identité.
    - Votre préférence en termes d’intervalle de recherche en amont et de fréquence de relecture. Consultez votre package Customer Journey Analytics pour connaître les [ options ](#options) disponibles.
    - Nom de la sandbox.
 

@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: ea5c9114-1fc3-4686-b184-2850acb42b5c
-source-git-commit: 9118a3c20158b1a0373fab1b41595aa7b07075f6
+source-git-commit: 9237549aabe73ec98fc42d593e899c98e12eb194
 workflow-type: tm+mt
-source-wordcount: '1385'
+source-wordcount: '1540'
 ht-degree: 7%
 
 ---
@@ -15,9 +15,77 @@ ht-degree: 7%
 # Groupement basé sur les graphes
 
 
-Dans le groupement basé sur les graphiques, vous spécifiez un jeu de données d’événement, ainsi que l’identifiant persistant (cookie) et l’espace de noms de l’identifiant temporaire (ID de personne) pour ce jeu de données. L’assemblage basé sur des graphiques crée une colonne pour l’ID assemblé dans le nouveau jeu de données assemblé. Elle utilise ensuite l’identifiant persistant pour interroger le graphique d’identités à partir du service d’identités Experience Platform, à l’aide de l’espace de noms spécifié, afin de mettre à jour l’identifiant assemblé.
+Dans le groupement basé sur les graphiques, vous spécifiez un jeu de données d’événement, ainsi que l’identifiant persistant (cookie) et l’espace de noms de l’identifiant temporaire (ID de personne) pour ce jeu de données. L’assemblage basé sur des graphiques crée une colonne pour l’ID assemblé dans le nouveau jeu de données assemblé. Elle utilise ensuite l’identifiant persistant pour interroger le graphique d’identités d’Experience Platform Identity Service, à l’aide de l’espace de noms spécifié, afin de mettre à jour l’identifiant assemblé.
 
 ![Assemblage basé sur les graphiques](/help/stitching/assets/gbs.png)
+
+## IdentityMap
+
+Le groupement basé sur les graphiques prend en charge l’utilisation du groupe de champs [`identifyMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity) dans les scénarios suivants :
+
+- Utilisation de l’identité principale dans `identityMap`’espace de noms pour définir l’ID persistant :
+   - Si plusieurs identités principales sont trouvées dans différents espaces de noms, les identités des espaces de noms sont triées par ordre lexigraphique et la première identité est sélectionnée.
+   - Si plusieurs identités principales sont trouvées dans un seul espace de noms, la première identité principale disponible au niveau lexicographique est sélectionnée.
+
+  Dans l’exemple ci-dessous, les espaces de noms et les identités génèrent une liste d’identités principales triées, et finalement l’identité sélectionnée.
+
+  <table>
+     <tr>
+       <th>Espaces de noms</th>
+       <th>Liste des identités</th>
+     </tr>
+     <tr>
+       <td>ECID</td>
+       <td><pre lang="json"><code>[<br/>&nbsp;&nbsp;{"id": "ecid-3"},<br/>&nbsp;&nbsp;{"id": "ecid-2", "primary": true},<br/>&nbsp;&nbsp;{"id": "ecid-1", "primary": true}<br/>&nbsp;]</code></pre></td>
+     </tr>
+     <tr>
+       <td>CCID</td>
+       <td><pre lang="json"><code>[<br/>&nbsp;&nbsp;{"id": "ccid-1"},<br/>&nbsp;&nbsp;{"id": "ccid-2", "primary": true}<br/>]</code></pre></td>
+     </tr>
+   </table>
+
+  <table>
+    <tr>
+      <th>Liste des identités triées</th>
+      <th>Identité sélectionnée</th>
+    </tr>
+    <tr>
+      <td><pre lang="json"><code>PrimaryIdentities [<br/>&nbsp;&nbsp;{"id": "ccid-2", "namespace": "CCID"},<br/>&nbsp;&nbsp;{"id": "ecid-1", "namespace": "ECID"},<br/>&nbsp;&nbsp;{"id": "ecid-2", "namespace": "ECID"}<br/>]<br/>NonPrimaryIdentities [<br/>&nbsp;&nbsp;{"id": "ccid-1", "namespace": "CCID"},<br/>&nbsp;&nbsp;{"id": "ecid-3", "namespace": "ECID"}<br/>]</code></pre></td>
+      <td><pre lang="json"><code>"id": "ccid-2",<br/>"namespace": "CCID"</code></pre></td>
+    </tr>
+  </table>
+
+- Utilisation de `identityMap` espace de noms pour définir le persistentID :
+   - Si plusieurs valeurs pour persistentID sont trouvées dans un espace de noms `identityMap`, la première identité disponible au niveau lexicographique est utilisée.
+
+  Dans l’exemple ci-dessous, les espaces de noms et les identités génèrent une liste d’identités triées pour l’espace de noms sélectionné (ECID), et finalement l’identité sélectionnée.
+
+  <table>
+     <tr>
+       <th>Espaces de noms</th>
+       <th>Liste des identités</th>
+     </tr>
+     <tr>
+       <td>ECID</td>
+       <td><pre lang="json"><code>[<br/>&nbsp;&nbsp;{"id": "ecid-3"},<br/>&nbsp;&nbsp;{"id": "ecid-2", "primary": true},<br/>&nbsp;&nbsp;{"id": "ecid-1", "primary": true}<br/>]</code></pre></td>
+     </tr>
+     <tr>
+       <td>CCID</td>
+       <td><pre lang="json"><code>[<br/>&nbsp;&nbsp;{"id": "ccid-1"},<br/>&nbsp;&nbsp;{"id": "ccid-2", "primary": true}<br/>]</code></pre></td>
+     </tr>
+   </table>
+
+  <table>
+    <tr>
+      <th>Liste des identités triées</th>
+      <th>Identité sélectionnée</th>
+    </tr>
+    <tr>
+      <td><pre lang="json"><code>[<br/>&nbsp;&nbsp;"id": "ecid-1",<br/>&nbsp;&nbsp;"id": "ecid-2",<br/>&nbsp;&nbsp;"id": "ecid-3"<br/>]</code></pre></td>
+      <td><pre lang="json"><code>"id": "ecid-1",<br/>"namespace": "ECID"</code></pre></td>
+    </tr>
+  </table>
+
 
 ## Fonctionnement de l’assemblage basé sur les graphiques
 
@@ -25,7 +93,7 @@ L’assemblage effectue au moins deux passages aux données d’un jeu de donné
 
 - **Assemblage en direct** : tente d’assembler chaque accès (événement) au fur et à mesure qu’il arrive, à l’aide de l’identifiant persistant pour rechercher l’identifiant transitoire de l’espace de noms sélectionné en interrogeant le graphique d’identité. Si l’ID transitoire est disponible à partir de la recherche, il est immédiatement regroupé.
 
-- **Groupement de relecture** : *relit* les données en fonction des identités mises à jour à partir du graphique d’identités. À cette étape, les accès provenant d’appareils inconnus précédemment (identifiants persistants) sont regroupés, car le graphique d’identité a résolu l’identité d’un espace de noms. La relecture est déterminée par deux paramètres : **fréquence** et **intervalle de recherche en amont**. L’Adobe offre les combinaisons suivantes de ces paramètres :
+- **Groupement de relecture** : *relit* les données en fonction des identités mises à jour à partir du graphique d’identités. À cette étape, les accès provenant d’appareils inconnus précédemment (identifiants persistants) sont regroupés, car le graphique d’identité a résolu l’identité d’un espace de noms. La relecture est déterminée par deux paramètres : **fréquence** et **intervalle de recherche en amont**. Adobe propose les combinaisons de paramètres suivantes :
    - **Recherche en amont quotidienne à une fréquence quotidienne** : les données sont relues tous les jours avec un intervalle de recherche en amont de 24 heures. Cette option présente un avantage car les relectures sont beaucoup plus fréquentes, mais les visiteurs non authentifiés doivent s’authentifier le jour même où ils visitent votre site.
    - **Recherche en amont hebdomadaire à une fréquence hebdomadaire** : les données sont relues une fois par semaine avec un intervalle de recherche en amont hebdomadaire (voir [options](#options)). Cette option présente un avantage qui permet aux sessions non authentifiées de disposer d’un temps d’authentification beaucoup moins stricte. Toutefois, les données désassemblées datant de moins d’une semaine ne sont pas retraitées avant la prochaine relecture hebdomadaire.
    - **Recherche en amont bihebdomadaire sur une fréquence hebdomadaire** : les données sont relues une fois par semaine avec un intervalle de recherche en amont bihebdomadaire (voir [options](#options)). Cette option présente un avantage qui permet aux sessions non authentifiées de disposer d’un temps d’authentification beaucoup moins stricte. Toutefois, les données désassemblées datant de moins de deux semaines ne sont pas retraitées avant la prochaine relecture hebdomadaire.
@@ -133,13 +201,13 @@ Le tableau suivant représente les mêmes données que ci-dessus, mais montre l�
 
 Les conditions préalables suivantes s’appliquent spécifiquement au groupement basé sur les graphiques :
 
-- Le jeu de données d’événement dans Adobe Experience Platform auquel vous souhaitez appliquer le groupement doit comporter une colonne qui identifie un visiteur sur chaque ligne, à savoir l’**identifiant persistant**. Par exemple, un identifiant visiteur généré par une bibliothèque Adobe Analytics AppMeasurement ou un ECID généré par le service d’identités Experience Platform.
+- Le jeu de données d’événement dans Adobe Experience Platform auquel vous souhaitez appliquer le groupement doit comporter une colonne qui identifie un visiteur sur chaque ligne, à savoir l’**identifiant persistant**. Il peut s’agir, par exemple, d’un identifiant visiteur généré par une bibliothèque Adobe Analytics AppMeasurement ou d’un ECID généré par Experience Platform Identity Service.
 - L’identifiant persistant doit également être [défini en tant qu’identité](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/ui/fields/identity) dans le schéma .
-- Le graphique d’identités du Service d’identités Experience Platform doit comporter un espace de noms (par exemple `Email` ou `Phone`) que vous souhaitez utiliser lors du groupement pour résoudre l’**ID transitoire**. Voir [Service d’identités Experience Platform ](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/home) pour plus d’informations.
+- Le graphique d’identités d’Experience Platform Identity Service doit comporter un espace de noms (par exemple `Email` ou `Phone`) que vous souhaitez utiliser lors du groupement pour résoudre l’**ID transitoire**. Voir [Experience Platform Identity Service](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/home) pour plus d’informations.
 
 >[!NOTE]
 >
->Vous n’avez **pas** besoin d’une licence Real-time Customer Data Platform pour le groupement basé sur les graphiques. Le package **Prime** ou version ultérieure de Customer Journey Analytics inclut les droits requis du service d’identités Experience Platform.
+>Vous n’avez **besoin**’une licence Real-time Customer Data Platform pour le groupement basé sur les graphiques. Le package **Prime** ou version ultérieure de Customer Journey Analytics inclut les droits requis pour Experience Platform Identity Service.
 
 
 ## Limites
@@ -148,7 +216,7 @@ Les restrictions suivantes s’appliquent spécifiquement au groupement basé su
 
 - Les dates et heures ne sont pas prises en compte lors de l’interrogation de l’ID temporaire à l’aide de l’espace de noms spécifié. Il est donc possible qu’un identifiant persistant soit associé à un identifiant temporaire d’un enregistrement qui a un horodatage antérieur.
 - Dans les scénarios d’appareils partagés, où l’espace de noms du graphique contient plusieurs identités, la première identité lexicographique est utilisée. Si les limites et priorités d’espace de noms sont configurées dans le cadre de la publication des règles de liaison de graphiques, l’identité du dernier utilisateur authentifié est utilisée. Voir [Appareils partagés](/help/use-cases/stitching/shared-devices.md) pour plus d’informations.
-- Il existe une limite stricte de trois mois de renvoi d’identités dans le graphique d’identités. Utilisez le renvoi d’identités si vous n’utilisez pas une application Experience Platform, telle que Real-time Customer Data Platform, pour renseigner le graphique d’identité.
+- Il existe une limite stricte de trois mois de renvoi d’identités dans le graphique d’identités. Utilisez le remplissage d’identités si vous n’utilisez pas une application Experience Platform, telle que Real-time Customer Data Platform, pour renseigner le graphique d’identité.
 - Les mécanismes de sécurisation [Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails) s’appliquent. Voir, par exemple, les [limites statiques](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails#static-limits) suivantes :
    - Nombre maximal d’identités dans un graphique : 50.
    - Nombre maximal de liens vers une identité pour une ingestion par lots unique : 50.
