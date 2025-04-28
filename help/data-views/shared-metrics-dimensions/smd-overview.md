@@ -2,7 +2,7 @@
 title: Mesures et dimensions partagées - Aperçu
 description: Utilisez la même dimension ou la même référence de mesure dans plusieurs vues de données.
 exl-id: 998a9f9b-cfa7-4b97-b32b-d50e35d01b39
-source-git-commit: 5fd023f988e485f04654869a982e02cb0f3e52a1
+source-git-commit: 4bb24fae7c7d53a0fde3bb2dc35ef27f91701d5a
 workflow-type: tm+mt
 source-wordcount: '1245'
 ht-degree: 0%
@@ -89,7 +89,7 @@ Utilisez la case à cocher en regard d’un composant pour afficher toutes les a
 ![Aperçu des actions disponibles](assets/smd-actions.png)
 
 * ![Icône Crayon](/help/assets/icons/Edit.svg) **[!UICONTROL Modifier]** : ouvrez les dimensions et mesures sélectionnées dans l’[éditeur de composants partagé](shared-component-editor.md) qui vous permet d’ajuster leurs [paramètres des composants](/help/data-views/component-settings/overview.md). Lorsque vous sélectionnez plusieurs composants à modifier, ils sont tous ouverts dans l’éditeur de composants. Vous pouvez déplacer les composants tout en cliquant dessus dans l’éditeur de composants afin de modifier le même champ pour plusieurs composants.
-* ![Icône Partager](/help/assets/icons/Share.svg) **[!UICONTROL Partager sur la ou les vues de données)]** : ouvre une fenêtre qui affiche toutes les vues de données disponibles dans la connexion sélectionnée. Cochez la case de chaque vue de données dans laquelle vous souhaitez rendre ce composant disponible, puis sélectionnez **[!UICONTROL Partager]**.
-* ![Icône Ne pas partager](/help/assets/icons/SaveTo.svg) **[!UICONTROL Ne pas partager dans la/les vue(s) de données]** : ouvre une fenêtre qui affiche toutes les vues de données avec lesquelles ce composant est actuellement partagé. Cochez la case de chaque vue de données à partir de laquelle vous souhaitez supprimer la disponibilité de ce composant, puis sélectionnez **[!UICONTROL Ne pas partager]**.
+* ![Icône Partager](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Partager sur la ou les vues de données)]** : ouvre une fenêtre qui affiche toutes les vues de données disponibles dans la connexion sélectionnée. Cochez la case de chaque vue de données dans laquelle vous souhaitez rendre ce composant disponible, puis sélectionnez **[!UICONTROL Partager]**.
+* ![Icône Ne pas partager](/help/assets/icons/SaveTo.svg) **[!UICONTROL Ne pas partager de la/des vue(s) de données]** : ouvre une fenêtre qui affiche toutes les vues de données avec lesquelles ce composant est actuellement partagé. Cochez la case de chaque vue de données à partir de laquelle vous souhaitez supprimer la disponibilité de ce composant, puis sélectionnez **[!UICONTROL Ne pas partager]**.
 * ![Icône Dupliquer](/help/assets/icons/Copy.svg) **[!UICONTROL Dupliquer]** : crée une copie du ou des composants sélectionnés. Un nouvel identifiant de composant est généré pour les composants dupliqués.
 * ![Icône Supprimer](/help/assets/icons/Delete.svg) **[!UICONTROL Supprimer]** : supprime les composants sélectionnés de l’interface. Si les composants sélectionnés sont partagés avec n’importe quelle vue de données, ils ne sont pas partagés.
