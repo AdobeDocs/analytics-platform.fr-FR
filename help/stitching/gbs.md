@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: ea5c9114-1fc3-4686-b184-2850acb42b5c
-source-git-commit: 9237549aabe73ec98fc42d593e899c98e12eb194
+source-git-commit: e0e80723e21b7e8c460c05ec39b699eef00abb8b
 workflow-type: tm+mt
 source-wordcount: '1540'
 ht-degree: 7%
@@ -29,7 +29,7 @@ Le groupement basé sur les graphiques prend en charge l’utilisation du groupe
 
   Dans l’exemple ci-dessous, les espaces de noms et les identités génèrent une liste d’identités principales triées, et finalement l’identité sélectionnée.
 
-  <table>
+  <table style="table-layout:auto">
      <tr>
        <th>Espaces de noms</th>
        <th>Liste des identités</th>
@@ -44,7 +44,7 @@ Le groupement basé sur les graphiques prend en charge l’utilisation du groupe
      </tr>
    </table>
 
-  <table>
+  <table style="table-layout:auto">
     <tr>
       <th>Liste des identités triées</th>
       <th>Identité sélectionnée</th>
@@ -60,7 +60,7 @@ Le groupement basé sur les graphiques prend en charge l’utilisation du groupe
 
   Dans l’exemple ci-dessous, les espaces de noms et les identités génèrent une liste d’identités triées pour l’espace de noms sélectionné (ECID), et finalement l’identité sélectionnée.
 
-  <table>
+  <table style="table-layout:auto">
      <tr>
        <th>Espaces de noms</th>
        <th>Liste des identités</th>
@@ -75,7 +75,7 @@ Le groupement basé sur les graphiques prend en charge l’utilisation du groupe
      </tr>
    </table>
 
-  <table>
+  <table style="table-layout:auto">
     <tr>
       <th>Liste des identités triées</th>
       <th>Identité sélectionnée</th>
