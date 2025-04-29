@@ -5,10 +5,10 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
+source-git-commit: e4ddb98b800457e407bb414ed4929c5d5018cf30
 workflow-type: tm+mt
-source-wordcount: '3873'
-ht-degree: 75%
+source-wordcount: '3947'
+ht-degree: 74%
 
 ---
 
@@ -217,6 +217,7 @@ Cliquez sur les titres des sections liées pour plus d’informations et de cont
 | | Afficher la valeur maximale | superposez un libellé de valeur maximale pour mettre rapidement en surbrillance les pics d’une mesure. Remarque : les valeurs maximales sont dérivées des points de données visibles dans la visualisation, et non du jeu complet de valeurs dans une dimension. |
 | | Afficher la courbe de tendance | Affichez une courbe de tendance de régression ou de moyenne glissante sur votre série de lignes. Les courbes de tendance permettent d’illustrer plus clairement un schéma dans les données. |
 | **[Cohorte](/help/analysis-workspace/visualizations/cohort-table/t-cohort.md)** | | |
+| | [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>Container | Sélectionnez le conteneur préféré pour l’analyse des cohortes dans le cas d’une connexion [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} basée sur un compte. <p>Les options disponibles sont les suivantes :</p> <ul><li>Comptes Globaux [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>Comptes [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>Groupes d&#39;achat [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>Opportunités [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>Personne</li></ul> |
 | | Granularité | Pour les visualisations de tendances, vous pouvez modifier la granularité temporelle (Jour, Semaine, Mois, Trimestre ou Année). Cette modification sʼapplique également au tableau de source de données. |
 | | Afficher uniquement le pourcentage | Supprime la valeur numérique et affiche uniquement le pourcentage. |
 | | Arrondir le pourcentage à l’entier le plus proche | Arrondit la valeur de pourcentage à l’entier le plus proche au lieu d’afficher la valeur décimale. |

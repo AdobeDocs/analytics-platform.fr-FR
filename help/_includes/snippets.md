@@ -1,8 +1,8 @@
 ---
-source-git-commit: a85efff8720d8fdf02b0d1290fedf17654be48e3
+source-git-commit: 3ca1004fc1bbe3b60f32348d7da84718aef3a057
 workflow-type: tm+mt
-source-wordcount: '3759'
-ht-degree: 30%
+source-wordcount: '4061'
+ht-degree: 34%
 
 ---
 # Extraits
@@ -239,3 +239,19 @@ Utilisez les informations suivantes pour choisir la visualisation qui répond le
 >[!INFO]
 >
 >Dans cette documentation, les articles ou fonctionnalités B2B spécifiques, disponibles uniquement avec le B2B edition Customer Journey Analytics, sont marqués de [!BADGE B2B edition]{type=Informative}.
+
+
+## Paramètres communs des jeux de données {#common-dataset-settings}
+
+| Paramètre | Description |
+|---|---|
+| **[!UICONTROL Importer de nouvelles données]** | Activez cette option si vous souhaitez établir une connexion continue. Avec une connexion continue, les nouveaux lots de données ajoutés aux jeux de données sont automatiquement disponibles dans Workspace. |
+| **[!UICONTROL Renvoi du jeu de données]** | Activez **[!UICONTROL Renvoyer toutes les données existantes]** pour vous assurer que toutes les données existantes sont renvoyées.<br/><br/>Sélectionnez **[!UICONTROL Renvoi de la demande]** pour renvoyer des données historiques pour une période spécifique. Vous pouvez définir jusqu’à 10 périodes de renvoi de jeux de données.<ol><li>Définissez la période en saisissant les données de début et de fin ou en sélectionnant des dates à l’aide du ![Calendrier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg).</li><li>Sélectionnez **[!UICONTROL Renvoi de la file dʼattente]** pour ajouter le renvoi à la liste, ou bien **[!UICONTROL Annuler]** pour annuler.</li></ol>Pour chaque entrée, sélectionnez ![Modifier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) pour modifier la période, ou sélectionnez ![Supprimer](https://spectrum.adobe.com/static/icons/ui_18/CrossSize500.svg) pour supprimer l’entrée.<br/><br/>À propos des renvois :<ul><li>Vous pouvez renvoyer chaque jeu de données individuellement.</li><li>Vous donnez la priorité aux nouvelles données ajoutées à un jeu de données dans la connexion, de sorte que ces nouvelles données ont la latence la plus faible.</li><li>Les données de renvoi (historiques) sont importées plus lentement. La quantité de données historiques influence la latence.</li><li>Le connecteur source Analytics importe jusquʼà 13 mois de données pour les sandbox de production, et ce quelle que soit leur taille. Le renvoi dans les sanbox hors production est limité à 3 mois.</li></ul> |
+| **[!UICONTROL Statut du lot]** | Les indicateurs de statut possibles sont les suivants :<ul><li>Réussite</li><li>Traitement de X renvoi(s)</li><li>Off</li></ul> |
+| **[!UICONTROL Identifiant du jeu de données]** | Cet identifiant est généré automatiquement. |
+| **[!UICONTROL Description]** | Description donnée à ce jeu de données lors de sa création. |
+| **[!UICONTROL Nombre d’enregistrements]** | La taille du jeu de données. |
+| **[!UICONTROL Schéma]** | Le schéma à partir duquel le jeu de données a été créé dans Adobe Experience Platform. |
+| **[!UICONTROL Jeu de données]** | Nom du jeu de données. |
+| **[!UICONTROL Aperçu : *nom du jeu de données *]** | Prévisualise le jeu de données pour les 10 premières lignes et les 10 premières colonnes. |
+| ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) **[!UICONTROL Remove]** | Vous pouvez [supprimer un jeu de données](/help/connections/create-connection.md#delete-a-dataset) sans supprimer l’ensemble de la connexion. La suppression d’un jeu de données d’une connexion réduit les coûts liés à l’ingestion des données et au processus laborieux de recréation de l’ensemble de la connexion et des vues de données associées. |
