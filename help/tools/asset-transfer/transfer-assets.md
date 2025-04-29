@@ -4,9 +4,9 @@ description: Découvrez comment transférer des composants d’un utilisateur à
 role: Admin
 solution: Customer Journey Analytics
 exl-id: c5ed81ea-1d55-4193-9bb1-a2a93ebde91f
-source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
+source-git-commit: 3e521cb4ef532d57b9f408fc12dcf138f130f059
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '831'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Le transfert de ressources nécessite l’autorisation d’administrateur de pro
 
 1. Une fois que vous avez sélectionné un utilisateur, l’option Transférer les ressources s’affiche en bas de l’écran.
 
-   ![option de menu ](/help/tools/asset-transfer/assets/after-selection.png)
+   ![Option du menu Transférer les ressources](/help/tools/asset-transfer/assets/after-selection.png)
 
 1. Cliquez sur **[!UICONTROL Transférer les ressources]**.
 
@@ -75,6 +75,20 @@ Un transfert peut avoir trois conséquences :
 
 - **Échec du transfert** : « Échec du transfert des ressources. Veuillez réessayer. »
 
+### Raisons potentielles de l’échec du transfert d’actifs
+
+- Services dépendants à l’origine des échecs : le transfert de ressources interagit avec un service différent pour chaque type de composant (par exemple, problèmes réseau, problèmes de service en aval), ce qui peut entraîner un échec partiel ou complet, ou des échecs intermittents.
+
+- Composant manquant ou transféré par un autre administrateur : un composant a été supprimé par un autre utilisateur ou transféré par un autre administrateur à une autre personne, alors qu’une tâche de transfert de ressources était toujours en cours.
+
+- Le corps POST de l’API ne se remplit pas correctement : un composant peut ne pas être envoyé dans le corps POST de l’API lorsque plusieurs types de composants sont sélectionnés.
+
+- Utilisateur inexistant : l’utilisateur a été supprimé lors du transfert ou n’est pas valide pour une autre raison. Si l’utilisateur n’est pas valide avant le début du transfert, l’outil l’intercepte et ne traite pas le traitement. Si l’utilisateur a été supprimé en cours de transfert, cela peut entraîner des échecs partiels.
+
+- Échec de connexion/réseau : la connexion meurt lors du transfert intermédiaire. Tous les lots de tâches de transfert déjà transmis au serveur principal sont toujours traités jusqu’à la fin, mais l’utilisateur ne voit pas le message de résultat du transfert avec un résumé de ce qui a réussi et de ce qui a échoué.
+
+- Fermeture de l’onglet du navigateur en cours de transfert : pour les transferts très volumineux, si l’onglet du navigateur est fermé ou si vous quittez la page en cours de transfert, seules les requêtes réseau effectuées avant la fermeture de l’onglet/la navigation dans la page se produisent pour transférer correctement les ressources. Si l’utilisateur revient à la page, il ne reçoit pas le message de statut de la réponse indiquant quelles ressources ont été transférées et lesquelles ne l’ont pas été.
+
 ## Transfert de ressources lors de la mise à niveau d’Adobe Analytics vers Customer Journey Analytics
 
 L’un des principaux cas d’utilisation du transfert de ressources concerne la mise à niveau d’Adobe Analytics vers Customer Journey Analytics.
@@ -91,6 +105,9 @@ Cet outil de transfert de ressources permet par la suite aux administrateurs de 
 
 L’option **[!UICONTROL Exporter au format CSV]** permet uniquement aux administrateurs de télécharger une liste d’utilisateurs affichée dans un fichier .csv. Il ne leur permet pas d’exporter une liste des ressources transférées vers un fichier .csv.
 
-<!---## Unknown users
+## Utilisateurs et utilisatrices inactifs
 
-All previously deleted users appear under one unknown user entry, along with all their orphan components. These components can be transferred to a new recipient. This feature will be available in January.-->
+Tous les utilisateurs précédemment supprimés apparaissent sous une seule entrée « Utilisateurs inactifs », ainsi que tous leurs composants orphelins. Ces composants peuvent être transférés à un nouveau destinataire. Cette fonctionnalité sera disponible en janvier.
+
+![Utilisateurs inactifs apparaissant dans l’interface utilisateur de transfert de ressources](assets/inactive-users.png)
+
