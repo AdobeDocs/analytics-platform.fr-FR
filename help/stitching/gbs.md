@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: ea5c9114-1fc3-4686-b184-2850acb42b5c
-source-git-commit: e0e80723e21b7e8c460c05ec39b699eef00abb8b
+source-git-commit: 98432804b71805c3714423dff577bbf80d5c92d1
 workflow-type: tm+mt
 source-wordcount: '1540'
 ht-degree: 7%
@@ -21,7 +21,7 @@ Dans le groupement basé sur les graphiques, vous spécifiez un jeu de données 
 
 ## IdentityMap
 
-Le groupement basé sur les graphiques prend en charge l’utilisation du groupe de champs [`identifyMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity) dans les scénarios suivants :
+Le groupement basé sur les graphiques prend en charge l’utilisation du groupe de champs [`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity) dans les scénarios suivants :
 
 - Utilisation de l’identité principale dans `identityMap`’espace de noms pour définir l’ID persistant :
    - Si plusieurs identités principales sont trouvées dans différents espaces de noms, les identités des espaces de noms sont triées par ordre lexigraphique et la première identité est sélectionnée.
