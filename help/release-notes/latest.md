@@ -3,16 +3,16 @@ title: Notes de mise à jour actuelles de Customer Journey Analytics
 description: Afficher les dernières notes de mise à jour de Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 4e65e2fd1720b63b9dec341d4a67f7356df77fcb
+source-git-commit: 8a8244bff45017a4b021599df6ff3dc37cf8e1c6
 workflow-type: tm+mt
-source-wordcount: '833'
-ht-degree: 76%
+source-wordcount: '890'
+ht-degree: 71%
 
 ---
 
 # Notes de mise à jour de la version actuelle d’Adobe Customer Journey Analytics (avril 2025)
 
-**Dernière mise à jour** : mardi 28 avril 2025
+**Dernière mise à jour** : jeudi 30 avril 2025
 
 Ces notes de mise à jour portent sur la période du 27 mars au 15 mai 2025. Les mises à jour d’Adobe Customer Journey Analytics suivent un [modèle de diffusion continue](releases.md) qui permet une approche plus évolutive et plus progressive du déploiement des fonctionnalités. Par conséquent, ces notes de mise à jour sont mises à jour plusieurs fois par mois. Veuillez les vérifier régulièrement.
 
@@ -20,6 +20,7 @@ Ces notes de mise à jour portent sur la période du 27 mars au 15 mai 2025. L
 
 | Fonctionnalité | Description | [Le déploiement commence](releases.md) | [Disponibilité générale](releases.md) |
 | ----------- | ---------- | ------- | ---- |
+| **Augmentation des limites d&#39;exportation de tables complètes** | Nous augmentons le nombre de colonnes que les clients peuvent utiliser avec l’exportation complète des tableaux, de 5 dimensions et 5 mesures à 10 dimensions et 10 mesures. Cela s’applique à tous les niveaux Customer Journey Analytics. Les droits pour le nombre de lignes pouvant être exportées ne changent pas. |  | 30 avril 2025 |
 | **Mises à jour de l’élément de ligne « Aucune valeur » sur les dimensions numériques** | Pour les dimensions numériques, cette mise à jour permet les actions suivantes :<ul><li>Utilisez l’élément de dimension « Aucune valeur » dans un segment.</li><li>Effectuer une répartition dans un rapport sur l’élément de ligne « Aucune valeur ».</li></ul> [En savoir plus](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dataviews/component-settings/no-value-options#numeric) | 27 mars 2025 |
 | **Adobe Content Analytics** | Adobe Content Analytics permet d’examiner rapidement et facilement de grands volumes de données de contenu pour découvrir des tendances, repérer des anomalies, identifier la lassitude du contenu et obtenir des informations grâce à l’exposition du contenu.<p>Dès le départ, vous pouvez gagner du temps grâce aux modèles de création de rapports préconfigurés et aux nouvelles fonctionnalités telles que l’Inspecteur de ressources. Cette fonctionnalité vous permet non seulement de visualiser la ressource en ligne avec vos données, mais également d’ouvrir chaque ressource pour obtenir un résumé des détails, notamment les performances, les emplacements, les attributs, etc.<p>Vous pouvez examiner ce nouvel ensemble de données de contenu dans le cadre du parcours clientèle complet pour répondre à des questions commerciales importantes, évaluer les performances du contenu, améliorer la segmentation, identifier les opportunités d’optimisation et définir de nouvelles audiences pour l’activation.<p>Content Analytics est un module complémentaire de Customer Journey Analytics. [En savoir plus](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/content-analytics/content-analytics) |  | 27 mars 2025 |
 | **Media Collection : mises à jour du connecteur Source d’Adobe pour le nouveau XDM de création de rapports multimédia** | Le connecteur source Analytics mappe automatiquement les données de médias en streaming dans Adobe Analytics aux mêmes champs utilisés par le SDK web. Auparavant, les données étaient mappées à la fois à l’ancien et au nouvel emplacement, mais seul le nouvel emplacement sera utilisé à l’avenir. [En savoir plus](https://experienceleague.adobe.com/fr/docs/analytics/implementation/aep-edge/xdm-var-mapping) |  | 31 mars 2025 |

@@ -5,7 +5,7 @@ title: Exporter des rapports Customer Journey Analytics vers le cloud
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
+source-git-commit: 158d75f81490edca2b5219a9b3ede2fbcdcc5901
 workflow-type: tm+mt
 source-wordcount: '2285'
 ht-degree: 98%
@@ -189,7 +189,7 @@ Les composants suivants ne sont pas pris en charge et Analysis Workspace vous i
    * A la [persistance activée](/help/data-views/component-settings/persistence.md).
    * N’utilise pas de [dimension de liaison](/help/use-cases/data-views/binding-dimensions-metrics.md).
 * Dimensions multiples provenant de champs faisant référence à différents [tableaux d’objets](/help/use-cases/object-arrays.md). (Plusieurs dimensions référençant le même tableau d’objets sont autorisées.)
-* Plus de 5 dimensions et 5 mesures par rapport (jusqu’à 5 dimensions et 5 mesures sont prises en charge).
+* Plus de 10 dimensions et 10 mesures par rapport (jusqu’à 10 dimensions et 10 mesures sont prises en charge).
 * Dans les colonnes de tableau :
    * Périodes
    * Dimensions
@@ -227,8 +227,8 @@ Si vous utilisiez auparavant Data Warehouse pour exporter des données Adobe An
 | Créer un rapport personnalisé | Oui | Oui |
 | Mesures calculées | Oui | Non |
 | Segments | Oui | Limitées |
-| Dimensions | Limite de 5 | Illimitées |
-| Mesures | Limite de 5 | Illimitées |
+| Dimensions | Limite de 10 | Illimitées |
+| Mesures | Limite de 10 | Illimitées |
 | Lignes de rapport | Limite de 3 millions, 30 millions, 150 millions ou 300 millions, selon le niveau | Illimitées |
 | Nombre de rapports | Illimitées | Illimitées |
 | Diffusion ad hoc (unique) | Oui | Oui |
