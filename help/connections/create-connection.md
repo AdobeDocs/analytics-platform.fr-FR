@@ -5,10 +5,10 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: e4ddb98b800457e407bb414ed4929c5d5018cf30
+source-git-commit: 836c793ae74185728af03636b0ba3e838f46f05d
 workflow-type: tm+mt
-source-wordcount: '6723'
-ht-degree: 60%
+source-wordcount: '6794'
+ht-degree: 59%
 
 ---
 
@@ -210,6 +210,8 @@ Sur l’écran **[!UICONTROL Connexions]** > **[!UICONTROL *Nom de la connexion 
 
 Sur l’écran **[!UICONTROL Connexions]** > **[!UICONTROL *Nom de la connexion *]**:
 
+![Paramètres de connexion sans titre.](assets/create-conn1-b2b.png)
+
 1. Configurez les paramètres de connexion.
 
    | Paramètre | Description |
@@ -217,7 +219,7 @@ Sur l’écran **[!UICONTROL Connexions]** > **[!UICONTROL *Nom de la connexion 
    | **[!UICONTROL Nom de la connexion]** | Saisissez un nom unique pour la connexion. |
    | **[!UICONTROL Description de la connexion]** | Décrivez l’objectif de cette connexion. |
    | **[!UICONTROL Étiquettes]** | Spécifiez des balises pour ajouter des balises à votre connexion afin de pouvoir utiliser ces balises pour rechercher la connexion à une étape ultérieure. |
-   | **[!UICONTROL ID Principal]** | Sélectionnez l’identifiant principal approprié pour votre connexion : <ul><li>![Utilisateur](/help/assets/icons/User.svg) **[!UICONTROL Personne]** pour un scénario B2C</li><li> ![Création](/help/assets/icons/Building.svg) **[!UICONTROL Compte]** pour un scénario B2B.</li></ul>.<br/>Dès que vous ajoutez un ou plusieurs jeux de données à votre connexion, vous ne pouvez plus modifier l’identifiant principal. <br/> La sélection de l’identifiant principal définit si la connexion est basée sur une personne ou sur un compte. La base de connexion détermine les [paramètres](#dataset-settings) disponibles pour certains types de jeux de données. |
+   | **[!UICONTROL ID Principal]** | Sélectionnez l’identifiant principal approprié pour votre connexion : <ul><li>![Utilisateur](/help/assets/icons/User.svg) **[!UICONTROL Personne]** pour une connexion basée sur la personne que vous utilisez généralement dans un scénario B2C.</li><li> ![Création](/help/assets/icons/Building.svg) **[!UICONTROL Compte]** pour une connexion basée sur un compte que vous utilisez généralement dans un scénario B2B.</li></ul>Dès que vous ajoutez un ou plusieurs jeux de données à votre connexion, vous ne pouvez plus modifier l’identifiant principal. <br/> La sélection de l’identifiant principal définit si la connexion est basée sur une personne ou sur un compte. La base de connexion détermine les [paramètres](#dataset-settings) disponibles pour certains types de jeux de données. |
    | **[!UICONTROL Conteneurs facultatifs]** | Si vous avez sélectionné ![Création](/help/assets/icons/Building.svg) **[!UICONTROL Compte]** comme **[!UICONTROL ID de Principal]**, sélectionnez des conteneurs supplémentaires.<ul><li>**[!UICONTROL Compte global]** : permet la configuration de comptes globaux dans une connexion.</li><li>**[!UICONTROL Opportunité]** : permet la configuration des opportunités dans une connexion.</li><li>**[!UICONTROL Groupe d’achat]** : permet la configuration des groupes d’achat dans une connexion.</li><ul> |
    | **[!UICONTROL Sandbox]** | Dans Experience Platform, sélectionnez une sandbox qui contient les jeux de données auxquels vous souhaitez créer une connexion.<p>Adobe Experience Platform fournit des [sandbox](https://experienceleague.adobe.com/fr/docs/experience-platform/sandbox/home) qui divisent une instance de plateforme unique en environnements virtuels distincts pour favoriser le développement et l’évolution d’applications d’expérience digitale. Vous pouvez considérer les sandbox comme des « silos de données » contenant des jeux de données. Les sandbox permettent de contrôler l’accès aux jeux de données.<p>Une fois que vous avez sélectionné la sandbox, le rail de gauche affiche tous les jeux de données de cette sandbox que vous pouvez extraire. |
    | **[!UICONTROL Activer la fenêtre dynamique de conservation des données]** | Si vous cochez cette case, elle vous permet de définir la conservation des données Customer Journey Analytics sous la forme d’une fenêtre dynamique en mois (1 mois, 3 mois, 6 mois, etc.), au niveau de la connexion.<p>La conservation des données est basée sur les horodatages des jeux de données dʼévénement et sʼapplique uniquement aux jeux de données dʼévénement. Aucun paramètre de fenêtre dynamique de conservation des données nʼexiste pour les jeux de données de profil ou de recherche, car il nʼexiste aucun horodatage applicable. Cependant, si votre connexion inclut un profil ou des jeux de données de recherche (en plus d’un ou plusieurs jeux de données d’événement), ces données sont conservées pendant la même période.<p> Lʼavantage principal est que vous ne stockez ou ne créez des rapports que sur les données applicables et utiles, et supprimez les données plus anciennes qui ne sont plus utiles. Elle vous aide à rester dans les limites de votre contrat et réduit le risque de surcoût.<p><ul><li>Si vous laissez la valeur par défaut (non cochée), le paramètre de conservation des données d’Adobe Experience Platform remplace la période de conservation. Si vous avez 25 mois de données dans Experience Platform, Customer Journey Analytics obtient 25 mois de données par renvoi. Si vous avez supprimé 10 de ces mois dans Platform, Customer Journey Analytics conserve les 15 mois restants.</li><li>Si vous activez une fenêtre dynamique de données, indiquez dans **[!UICONTROL Sélectionner le nombre de mois]** le nombre de mois pendant lesquels vous activez la fenêtre dynamique de données. |
@@ -463,7 +465,7 @@ Vous [ajoutez un ou plusieurs jeux de données](#add-datasets) ou [modifiez des 
 >[!CONTEXTUALHELP]
 >id="connection_datasetbackfill"
 >title="Renvoi du jeu de données"
->abstract="Cette option renverra les données existantes (historiques) dʼExperience Platform pour ce jeu de données dans la connexion."
+>abstract="Cette option renvoie les données (historiques) existantes d’Experience Platform pour ce jeu de données dans la connexion."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -483,7 +485,7 @@ Vous [ajoutez un ou plusieurs jeux de données](#add-datasets) ou [modifiez des 
 >title="Carte de connexion"
 >abstract="La carte de connexion visualise les relations entre les jeux de données d’événement, de personne, de compte et de recherche pertinents (tels que les opportunités, les membres des campagnes, etc.)."
 
-## Ajouter des jeux de données
+### Ajouter des jeux de données
 
 Vous pouvez ajouter un ou plusieurs jeux de données Experience Platform lors de la création ou de la modification d’une connexion.
 
@@ -513,7 +515,7 @@ Vous pouvez ajouter un ou plusieurs jeux de données Experience Platform lors de
    * Pour afficher les détails d’un jeu de données, sélectionnez ![ InfoOutline ](/help/assets/icons/InfoOutline.svg).
 
 
-1. Sélectionnez un ou plusieurs jeux de données, puis cliquez sur **[!UICONTROL Suivant]**. Au moins un jeu de données d’événement doit faire partie de la connexion.
+1. Sélectionnez un ou plusieurs jeux de données, puis cliquez sur **[!UICONTROL Suivant]**. Au moins un événement ou un jeu de données de résumé doit faire partie de la connexion.
 
 1. Configurez les [paramètres de chacun des jeux de données sélectionnés](#dataset-settings) un par un, à l’étape ➋ **[!UICONTROL Paramètres des jeux de données]** de la boîte de dialogue **[!UICONTROL Ajouter des jeux de données]**.
 
@@ -548,7 +550,7 @@ Tous les jeux de données et types de jeux de données comportent des [paramètr
 
 Les paramètres spécifiques d’un jeu de données d’événement dépendent du type de connexion.
 
-##### Connexion basée sur la personne
+##### Connexion basée sur les personnes
 
 ![Paramètres des jeux de données d’événements B2C](assets/event-dataset-settings-b2c.png)
 
@@ -558,8 +560,8 @@ Pour un jeu de données d’événement dans une connexion basée sur une person
 | --- | --- |
 | **[!UICONTROL ID de personne]** | Sélectionnez un ID de personne dans la liste déroulante des identités disponibles. Ces identités ont été définies dans le schéma du jeu de données dans Experience Platform. Voir [Utiliser la carte des identités comme ID de personne](#id-map) pour plus d’informations sur l’utilisation de la carte des identités comme ID de personne.<p>Si aucun ID de personne n’est disponible, cela signifie qu’aucun ID de personne n’est défini dans le schéma. Voir [Définir des champs d’identité dans l’interface utilisateur](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/ui/fields/identity) pour plus d’informations. <p>La valeur de l’ID de personne sélectionné est considérée comme sensible à la casse. Par exemple : `abc123` et `ABC123` sont deux valeurs différentes. |
 | **[!UICONTROL Date et heure]** | Ce paramètre est automatiquement défini sur le champ d’horodatage par défaut des schémas basés sur un événement dans Experience Platform. |
-| **[!UICONTROL Type de source de données]** | Sélectionnez un type de source de données. <br/>Les types de sources de données incluent les éléments suivants : <ul><li>[!UICONTROL Données web]</li><li>[!UICONTROL Données d’application mobile]</li><li>[!UICONTROL Données de point de vente]</li><li>[!UICONTROL Données CRM]</li><li>[!UICONTROL Données de l’enquête]</li><li>[!UICONTROL Données du centre d’appels]</li><li>[!UICONTROL Données du produit]</li><li> [!UICONTROL Données des comptes]</li><li> [!UICONTROL Données de transaction]</li><li>[!UICONTROL Données de commentaires client]</li><li> [!UICONTROL Autre]</li></ul>Ce champ est utilisé pour interroger les types de sources de données en cours d’utilisation. |
-| **[!UICONTROL Description de la source de données]** | Décrivez la source de données lorsque vous avez sélectionné Autre comme type de source de données. |
+| **[!UICONTROL Type de source de données]** | Sélectionnez un type de source de données. Les types de sources de données incluent : <ul><li>[!UICONTROL Données web]</li><li>[!UICONTROL Données d’application mobile]</li><li>[!UICONTROL Données de point de vente]</li><li>[!UICONTROL Données CRM]</li><li>[!UICONTROL Données de l’enquête]</li><li>[!UICONTROL Données du centre d’appels]</li><li>[!UICONTROL Données du produit]</li><li> [!UICONTROL Données des comptes]</li><li> [!UICONTROL Données de transaction]</li><li>[!UICONTROL Données de commentaires client]</li><li> [!UICONTROL Autre]</li></ul>Ce champ est utilisé pour interroger les types de sources de données en cours d’utilisation. |
+| **[!UICONTROL Description de la source de données]** | Description de la source de données lorsque vous avez sélectionné Autre comme type de source de données. |
 
 
 ##### Connexion basée sur un compte
@@ -572,21 +574,21 @@ Pour un jeu de données d’événement dans une connexion basée sur un compte,
 
 | Paramètre | Description |
 | --- | --- |
-| **[!UICONTROL ID de compte]** | Sélectionnez un Identifiant de compte (identifiant unique d’un compte) parmi les identités disponibles définies dans le schéma du jeu de données dans Experience Platform. |
-| **[!UICONTROL Identifiant de compte global]** | Sélectionnez un Identifiant de compte (identifiant unique d’un compte) parmi les identités disponibles définies dans le schéma du jeu de données dans Experience Platform. |
+| **[!UICONTROL ID de compte]** | Sélectionnez un identifiant de compte global (l’identifiant unique d’un compte) parmi les identités disponibles définies dans le schéma du jeu de données dans Experience Platform. Applicable lorsque vous avez ajouté le compte global en tant que conteneur à votre connexion. |
+| **[!UICONTROL Identifiant de compte global]** | Sélectionnez un Identifiant de compte (identifiant unique d’un compte) parmi les identités disponibles définies dans le schéma du jeu de données dans Experience Platform. Applicable lorsque vous n’avez pas ajouté le compte global en tant que conteneur à votre connexion. |
 | **[!UICONTROL ID de l’opportunité]** | Sélectionnez un identifiant d’opportunité (l’identifiant unique d’une opportunité) parmi les identités disponibles définies dans le schéma du jeu de données dans Experience Platform. |
 | **[!UICONTROL ID du groupe d&#39;achat]** | Sélectionnez un identifiant de groupe d’achats (identifiant unique d’un groupe d’achats) à partir des identités disponibles définies dans le schéma du jeu de données dans Experience Platform. |
 | **[!UICONTROL ID de personne]** | Sélectionnez un ID de personne dans la liste déroulante des identités disponibles. Ces identités ont été définies dans le schéma du jeu de données d’Experience Platform. Voir [Utiliser la carte des identités comme ID de personne](#id-map) pour plus d’informations sur l’utilisation de la carte des identités comme ID de personne.<p>Si aucun ID de personne n’est disponible, cela signifie qu’un ou plusieurs ID de personne n’ont pas été définis dans le schéma. Voir [Définir des champs d’identité dans l’interface utilisateur](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/ui/fields/identity) pour plus d’informations. <p>La valeur de l’ID de personne sélectionné est considérée comme sensible à la casse. Par exemple : `abc123` et `ABC123` sont deux valeurs différentes. |
 | **[!UICONTROL Date et heure]** | Ce paramètre est automatiquement défini sur le champ d’horodatage par défaut des schémas basés sur un événement dans Experience Platform. |
-| **[!UICONTROL Type de source de données]** | Sélectionnez un type de source de données. <br/>Les types de sources de données incluent les éléments suivants : <ul><li>[!UICONTROL Données web]</li><li>[!UICONTROL Données d’application mobile]</li><li>[!UICONTROL Données de point de vente]</li><li>[!UICONTROL Données CRM]</li><li>[!UICONTROL Données de l’enquête]</li><li>[!UICONTROL Données du centre d’appels]</li><li>[!UICONTROL Données du produit]</li><li> [!UICONTROL Données des comptes]</li><li> [!UICONTROL Données de transaction]</li><li>[!UICONTROL Données de commentaires client]</li><li> [!UICONTROL Autre]</li></ul>Ce champ est utilisé pour interroger les types de sources de données en cours d’utilisation. |
-| **[!UICONTROL Description de la source de données]** | Décrivez la source de données lorsque vous avez sélectionné Autre comme type de source de données. |
+| **[!UICONTROL Type de source de données]** | Sélectionnez un type de source de données. Les types de sources de données incluent : <ul><li>[!UICONTROL Données web]</li><li>[!UICONTROL Données d’application mobile]</li><li>[!UICONTROL Données de point de vente]</li><li>[!UICONTROL Données CRM]</li><li>[!UICONTROL Données de l’enquête]</li><li>[!UICONTROL Données du centre d’appels]</li><li>[!UICONTROL Données du produit]</li><li> [!UICONTROL Données des comptes]</li><li> [!UICONTROL Données de transaction]</li><li>[!UICONTROL Données de commentaires client]</li><li> [!UICONTROL Autre]</li></ul>Ce champ est utilisé pour interroger les types de sources de données en cours d’utilisation. |
+| **[!UICONTROL Description de la source de données]** | Description de la source de données lorsque vous avez sélectionné Autre comme type de source de données. |
 
 
 #### Jeu de données de profil
 
 Les paramètres spécifiques d’un jeu de données de profil dépendent du type de connexion.
 
-##### Connexion basée sur la personne
+##### Connexion basée sur les personnes
 
 ![Paramètres du jeu de données de profil B2C](assets/profile-dataset-settings-b2c.png)
 
@@ -594,9 +596,9 @@ Pour un jeu de données de profil dans une connexion basée sur une personne, vo
 
 | Paramètre | Description |
 | --- | --- |
-| **[!UICONTROL ID de personne]** | Sélectionnez un ID de personne dans la liste déroulante des identités disponibles. Ces identités ont été définies dans le schéma du jeu de données dans Experience Platform. Voir [Utiliser la carte des identités comme ID de personne](#id-map) pour plus d’informations sur l’utilisation de la carte des identités comme ID de personne.<p>Si aucun ID de personne n’est disponible, cela signifie qu’aucun ID de personne n’a été défini dans le schéma. Voir [Définir des champs d’identité dans l’interface utilisateur](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/ui/fields/identity) pour plus d’informations. <p>La valeur de l’ID de personne sélectionné est considérée comme sensible à la casse. Par exemple : `abc123` et `ABC123` sont deux valeurs différentes. |
-| **[!UICONTROL Type de source de données]** | Sélectionnez un type de source de données. <br/>Les types de sources de données incluent les éléments suivants : <ul><li>[!UICONTROL Données web]</li><li>[!UICONTROL Données d’application mobile]</li><li>[!UICONTROL Données de point de vente]</li><li>[!UICONTROL Données CRM]</li><li>[!UICONTROL Données de l’enquête]</li><li>[!UICONTROL Données du centre d’appels]</li><li>[!UICONTROL Données du produit]</li><li> [!UICONTROL Données des comptes]</li><li> [!UICONTROL Données de transaction]</li><li>[!UICONTROL Données de commentaires client]</li><li> [!UICONTROL Autre]</li></ul>Ce champ est utilisé pour interroger les types de sources de données en cours d’utilisation. |
-| **[!UICONTROL Description de la source de données]** | Décrivez la source de données lorsque vous avez sélectionné Autre comme type de source de données. |
+| **[!UICONTROL ID de personne]** | Sélectionnez un ID de personne dans la liste déroulante des identités disponibles. Ces identités ont été définies dans le schéma du jeu de données dans Experience Platform. Voir [Utiliser la carte des identités comme ID de personne](#id-map) pour plus d’informations sur l’utilisation de la carte des identités comme ID de personne.<p>Si aucun ID de personne n’est disponible, aucun ID de personne n’est défini dans le schéma. Voir [Définir des champs d’identité dans l’interface utilisateur](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/ui/fields/identity) pour plus d’informations. <p>La valeur de l’ID de personne sélectionné est considérée comme sensible à la casse. Par exemple : `abc123` et `ABC123` sont deux valeurs différentes. |
+| **[!UICONTROL Type de source de données]** | Sélectionnez un type de source de données. Les types de sources de données incluent : <ul><li>[!UICONTROL Données web]</li><li>[!UICONTROL Données d’application mobile]</li><li>[!UICONTROL Données de point de vente]</li><li>[!UICONTROL Données CRM]</li><li>[!UICONTROL Données de l’enquête]</li><li>[!UICONTROL Données du centre d’appels]</li><li>[!UICONTROL Données du produit]</li><li> [!UICONTROL Données des comptes]</li><li> [!UICONTROL Données de transaction]</li><li>[!UICONTROL Données de commentaires client]</li><li> [!UICONTROL Autre]</li></ul>Ce champ est utilisé pour interroger les types de sources de données en cours d’utilisation. |
+| **[!UICONTROL Description de la source de données]** | Description de la source de données lorsque vous avez sélectionné Autre comme type de source de données. |
 
 #### Connexion basée sur un compte
 
@@ -606,18 +608,19 @@ Pour un jeu de données de profil dans une connexion basée sur un compte, vous 
 
 | Paramètre | Description |
 | --- | --- |
-| **[!UICONTROL ID de personne]** | Sélectionnez un ID de personne dans la liste déroulante des identités disponibles. Ces identités ont été définies dans le schéma du jeu de données dans Experience Platform. Voir [Utiliser la carte des identités comme ID de personne](#id-map) pour plus d’informations sur l’utilisation de la carte des identités comme ID de personne.<p>Si aucun ID de personne n’est disponible, cela signifie qu’aucun ID de personne n’a été défini dans le schéma. Voir [Définir des champs d’identité dans l’interface utilisateur](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/ui/fields/identity) pour plus d’informations. <p>La valeur de l’ID de personne sélectionné est considérée comme sensible à la casse. Par exemple : `abc123` et `ABC123` sont deux valeurs différentes. |
-| **[!UICONTROL ID de compte]** | Sélectionnez un Identifiant de compte utilisé pour prendre en charge le compte-rendu des performances basé sur les comptes pour le jeu de données dans la liste déroulante des identités disponibles. |
-| **[!UICONTROL Type de source de données]** | Sélectionnez un type de source de données. <br/>Les types de sources de données incluent les éléments suivants : <ul><li>[!UICONTROL Données web]</li><li>[!UICONTROL Données d’application mobile]</li><li>[!UICONTROL Données de point de vente]</li><li>[!UICONTROL Données CRM]</li><li>[!UICONTROL Données de l’enquête]</li><li>[!UICONTROL Données du centre d’appels]</li><li>[!UICONTROL Données du produit]</li><li> [!UICONTROL Données des comptes]</li><li> [!UICONTROL Données de transaction]</li><li>[!UICONTROL Données de commentaires client]</li><li> [!UICONTROL Autre]</li></ul>Ce champ est utilisé pour interroger les types de sources de données en cours d’utilisation. |
-| **[!UICONTROL Description de la source de données]** | Décrivez la source de données lorsque vous avez sélectionné Autre comme type de source de données. |
+| **[!UICONTROL ID de personne]** | Sélectionnez un ID de personne dans la liste déroulante des identités disponibles. Ces identités ont été définies dans le schéma du jeu de données dans Experience Platform. Voir [Utiliser la carte des identités comme ID de personne](#id-map) pour plus d’informations sur l’utilisation de la carte des identités comme ID de personne.<p>Si aucun ID de personne n’est disponible, aucun ID de personne n’est défini dans le schéma. Voir [Définir des champs d’identité dans l’interface utilisateur](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/ui/fields/identity) pour plus d’informations. <p>La valeur de l’ID de personne sélectionné est considérée comme sensible à la casse. Par exemple : `abc123` et `ABC123` sont deux valeurs différentes. |
+| **[!UICONTROL Champ Compte global]** | Sélectionnez un champ de compte global pour prendre en charge le compte rendu des performances basé sur les comptes pour le jeu de données dans la liste déroulante des identités disponibles. Applicable lorsque vous avez ajouté le compte global en tant que conteneur à votre connexion. |
+| **[!UICONTROL Champ de compte]** | Sélectionnez un champ de compte pour prendre en charge le compte rendu des performances basé sur les comptes pour le jeu de données dans la liste déroulante des identités disponibles. Applicable lorsque vous n’avez pas ajouté le compte global en tant que conteneur à votre connexion. |
+| **[!UICONTROL Type de source de données]** | Sélectionnez un type de source de données. Les types de sources de données incluent : <ul><li>[!UICONTROL Données web]</li><li>[!UICONTROL Données d’application mobile]</li><li>[!UICONTROL Données de point de vente]</li><li>[!UICONTROL Données CRM]</li><li>[!UICONTROL Données de l’enquête]</li><li>[!UICONTROL Données du centre d’appels]</li><li>[!UICONTROL Données du produit]</li><li> [!UICONTROL Données des comptes]</li><li> [!UICONTROL Données de transaction]</li><li>[!UICONTROL Données de commentaires client]</li><li> [!UICONTROL Autre]</li></ul>Ce champ est utilisé pour interroger les types de sources de données en cours d’utilisation. |
+| **[!UICONTROL Description de la source de données]** | Description de la source de données lorsque vous avez sélectionné Autre comme type de source de données. |
 
 #### Jeu de données de recherche
 
 Les paramètres spécifiques d’un jeu de données de recherche dépendent du type de connexion.
 
-##### Connexion basée sur la personne
+##### Connexion basée sur les personnes
 
-![Basé sur la personne pour les paramètres du jeu de données d’événement de recherche](assets/lookup-dataset-settings-b2c.png)
+![Paramètres du jeu de données d’événement de recherche basés sur la personne](assets/lookup-dataset-settings-b2c.png)
 
 Pour un jeu de données de recherche dans une connexion basée sur une personne, vous spécifiez :
 
@@ -625,8 +628,8 @@ Pour un jeu de données de recherche dans une connexion basée sur une personne,
 |---|---|
 | **[!UICONTROL Clé]** | Clé à utiliser pour un jeu de données de recherche. |
 | **[!UICONTROL Clé correspondante]** | Clé correspondante à joindre à l’un des jeux de données d’événement. Si cette liste est vide, vous n’avez probablement pas ajouté ni configuré de jeu de données d’événement. |
-| **[!UICONTROL Type de source de données]** | Sélectionnez un type de source de données. <br/>Les types de sources de données incluent les éléments suivants : <ul><li>[!UICONTROL Données web]</li><li>[!UICONTROL Données d’application mobile]</li><li>[!UICONTROL Données de point de vente]</li><li>[!UICONTROL Données CRM]</li><li>[!UICONTROL Données de l’enquête]</li><li>[!UICONTROL Données du centre d’appels]</li><li>[!UICONTROL Données du produit]</li><li> [!UICONTROL Données des comptes]</li><li> [!UICONTROL Données de transaction]</li><li>[!UICONTROL Données de commentaires client]</li><li> [!UICONTROL Autre]</li></ul>Ce champ est utilisé pour interroger les types de sources de données en cours d’utilisation. |
-| **[!UICONTROL Description de la source de données]** | Décrivez la source de données lorsque vous avez sélectionné Autre comme type de source de données. |
+| **[!UICONTROL Type de source de données]** | Sélectionnez un type de source de données. Les types de sources de données incluent : <ul><li>[!UICONTROL Données web]</li><li>[!UICONTROL Données d’application mobile]</li><li>[!UICONTROL Données de point de vente]</li><li>[!UICONTROL Données CRM]</li><li>[!UICONTROL Données de l’enquête]</li><li>[!UICONTROL Données du centre d’appels]</li><li>[!UICONTROL Données du produit]</li><li> [!UICONTROL Données des comptes]</li><li> [!UICONTROL Données de transaction]</li><li>[!UICONTROL Données de commentaires client]</li><li> [!UICONTROL Autre]</li></ul>Ce champ est utilisé pour interroger les types de sources de données en cours d’utilisation. |
+| **[!UICONTROL Description de la source de données]** | Description de la source de données lorsque vous avez sélectionné Autre comme type de source de données. |
 | **[!UICONTROL Transformer le jeu de données]** | Pour des jeux de données de recherche B2B spécifiques, vous pouvez activer la transformation d’un jeu de données pour des scénarios de rapports individuels B2B appropriés. Voir [Transformer des jeux de données pour les recherches B2B](transform-datasets-b2b-lookups.md) pour plus d’informations. |
 
 
@@ -635,7 +638,7 @@ Pour un jeu de données de recherche dans une connexion basée sur une personne,
 
 [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
 
-![Basé sur le compte des paramètres du jeu de données de recherche](assets/lookup-dataset-settings-b2b.png)
+![Basé sur le compte des paramètres du jeu de données d’événement de recherche](assets/lookup-dataset-settings-b2b.png)
 
 Pour un jeu de données de recherche dans une connexion basée sur un compte, vous pouvez spécifier :
 
@@ -675,6 +678,23 @@ Lorsque vous supprimez un jeu de données, vous êtes averti des implications de
 
 Lorsque vous sélectionnez ![Historique](/help/assets/icons/History.svg) **[!UICONTROL Renvois précédents]** dans l’interface, une boîte de dialogue **[!UICONTROL Renvois précédents : _Nom du jeu de données_]**affiche les renvois les plus récents du jeu de données.
 
+## Types de jeux de données {#dataset-types}
+
+Pour chaque jeu de données que vous avez ajouté à cette connexion, [!UICONTROL Customer Journey Analytics] définit automatiquement le type de jeu de données en fonction des données qui y sont entrées.
+
+>[!IMPORTANT]
+>
+>Ajoutez au moins un jeu de données d’événement ou de résumé dans le cadre d’une connexion.
+
+Il existe différents types de jeux de données : les données [!UICONTROL Événement], les données [!UICONTROL Profil], les données [!UICONTROL Recherche] et les données [!UICONTROL Résumé].
+
+| Type de jeu de données | Description | Horodatage | Schéma | ID de personne <br/> ID de compte [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} |
+|---|---|---|---|---|
+| **[!UICONTROL Événement]** | Données qui représentent les événements dans le temps. Par exemple, visites web, interactions, transactions, données de point de vente, données d’enquête, données d’impression, etc. Ces données peuvent être des données de flux de clics typiques, avec un ID client ou un ID de cookie et un horodatage. Avec les données d’événement, vous disposez d’une flexibilité quant à l’ID utilisé comme ID de personne. | Définissez sur le champ de date et heure par défaut des schémas basés sur un événement dans [!UICONTROL Experience Platform]. | Tout schéma intégré ou personnalisé basé sur une classe XDM avec le comportement *série temporelle*. Par exemple, *Événement d’expérience XDM* ou *Événement de décision XDM*. | Vous pouvez choisir l&#39;ID de personne ou l&#39;ID de compte [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} à inclure. Chaque schéma du jeu de données défini dans Experience Platform peut disposer de son propre ensemble d’une ou de plusieurs identités définies et associées à un espace de noms d’identité. N’importe laquelle de ces identités peut être utilisée comme ID de personne ou ID de compte [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}. Par exemple, l’ID de cookie, l’ID regroupé, l’ID utilisateur, le code de suivi, l’ID de compte [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, etc. |
+| **[!UICONTROL Rechercher]** | Vous pouvez ajouter des jeux de données en tant que recherches de champs dans tous les types de jeux de données : Profil, Recherche et Événement (ce dernier a toujours été pris en charge). Cette fonctionnalité supplémentaire accroît la capacité de Customer Journey Analytics à prendre en charge des modèles de données complexes, y compris B2B. Ces données sont utilisées pour rechercher des valeurs ou des clés trouvées dans vos données d’événement, de profil ou de recherche. Vous pouvez ajouter jusqu’à deux niveaux de recherche. (Notez que les [champs dérivés](/help/data-views/derived-fields/derived-fields.md) ne peuvent pas être utilisés comme clés de correspondance pour les recherches dans les connexions.) Vous pouvez, par exemple, charger des données de recherche qui mappent les identifiants numériques de vos données d’événement avec des noms de produits. Voir l’[exemple B2B](/help/use-cases/b2b/example.md). | S.O. | Tout schéma intégré ou personnalisé basé sur une classe XDM avec le comportement *Record*, à l’exception de la classe *XDM Individual Profile*. | S.O. |
+| **[!UICONTROL Profil]** | Données appliquées à votre compte, personnes, utilisateurs ou clients dans les données [!UICONTROL Événement]. Vous permet, par exemple, de charger des données CRM à propos de vos clients. | S.O. | Tout schéma intégré ou personnalisé basé sur la classe *XDM Individual Profile*. | Vous pouvez choisir l’ID de personne/l’ID de compte [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} à inclure. Chaque jeu de données (à l’exception des jeux de données de résumé), défini dans [!DNL Experience Platform], possède son propre jeu d’un ou plusieurs ID de personne ou de compte [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} définis. Par exemple, l’ID de cookie, l’ID regroupé, l’ID utilisateur, le code de suivi, l’ID de compte, etc.<br>![ID de personne ](assets/person-id.png)**Note** : si vous créez une connexion qui comprend des jeux de données avec des ID différents, les rapports le reflèteront. Pour fusionner des jeux de données, vous devez utiliser le même ID de personne ou ID de compte [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}. |
+| **Résumé** | Données de série temporelle qui ne sont pas associées à un ID de personne individuel. Les données de résumé représentent des données agrégées à un niveau d’agrégation différent, par exemple des campagnes. Vous pouvez utiliser ces données dans Customer Journey Analytics pour prendre en charge divers cas d’utilisation. Voir la section [Données de résumé](/help/data-views/summary-data.md) pour plus d’informations. | Défini automatiquement sur le champ d’horodatage par défaut des schémas de mesures récapitulatives basées sur un événement d’Experience Platform. Seule la granularité horaire ou quotidienne est prise en charge. | Tout schéma intégré ou personnalisé basé sur la classe *Mesures récapitulatives XDM*. | S.O. |
+
 ## Vue d’ensemble de la connexion {#preview}
 
 Pour prévisualiser la connexion que vous avez créée, sélectionnez ![PageSearch](/help/assets/icons/PageSearch.svg) **[!UICONTROL Aperçu de la connexion]** dans la boîte de dialogue Paramètres de connexion.
@@ -694,26 +714,6 @@ Pour afficher une carte des relations entre les jeux de données qui font partie
 
 Cette carte vous permet de mieux comprendre comment vous avez défini votre connexion et configuré la relation entre vos jeux de données d’événement, de profil, de recherche et de résumé à l’aide d’identifiants.
 
-## Types de jeux de données {#dataset-types}
-
-Pour chaque jeu de données que vous avez ajouté à cette connexion, [!UICONTROL Customer Journey Analytics] définit automatiquement le type de jeu de données en fonction des données qui y sont entrées.
-
->[!IMPORTANT]
->
->Ajoutez au moins un jeu de données d’événement ou de résumé dans le cadre d’une connexion.
-
-Il existe différents types de jeux de données : les données [!UICONTROL Événement], les données [!UICONTROL Profil], les données [!UICONTROL Recherche] et les données [!UICONTROL Résumé].
-
-| Type de jeu de données | Description | Horodatage | Schéma | ID de personne <br/> ID de compte [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} |
-|---|---|---|---|---|
-| **[!UICONTROL Événement]** | Données qui représentent les événements dans le temps. Par exemple, visites web, interactions, transactions, données de point de vente, données d’enquête, données d’impression, etc. Ces données peuvent être des données de flux de clics typiques, avec un ID client ou un ID de cookie et un horodatage. Avec les données d’événement, vous disposez d’une flexibilité quant à l’ID utilisé comme ID de personne. | Définissez sur le champ de date et heure par défaut des schémas basés sur un événement dans [!UICONTROL Experience Platform]. | Tout schéma intégré ou personnalisé basé sur une classe XDM avec le comportement *série temporelle*. Par exemple, *Événement d’expérience XDM* ou *Événement de décision XDM*. | Vous pouvez choisir l&#39;ID de personne ou l&#39;ID de compte [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} à inclure. Chaque schéma du jeu de données défini dans Experience Platform peut disposer de son propre ensemble d’une ou de plusieurs identités définies et associées à un espace de noms d’identité. N’importe laquelle de ces identités peut être utilisée comme ID de personne ou ID de compte [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}. Par exemple, l’ID de cookie, l’ID regroupé, l’ID utilisateur, le code de suivi, l’ID de compte [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, etc. |
-| **[!UICONTROL Rechercher]** | Vous pouvez ajouter des jeux de données en tant que recherches de champs dans tous les types de jeux de données : Profil, Recherche et Événement (ce dernier a toujours été pris en charge). Cette fonctionnalité supplémentaire accroît la capacité de Customer Journey Analytics à prendre en charge des modèles de données complexes, y compris B2B. Ces données sont utilisées pour rechercher des valeurs ou des clés trouvées dans vos données d’événement, de profil ou de recherche. Vous pouvez ajouter jusqu’à deux niveaux de recherche. (Notez que les [champs dérivés](/help/data-views/derived-fields/derived-fields.md) ne peuvent pas être utilisés comme clés de correspondance pour les recherches dans les connexions.) Vous pouvez, par exemple, charger des données de recherche qui mappent les identifiants numériques de vos données d’événement avec des noms de produits. Voir l’[exemple B2B](/help/use-cases/b2b/example.md). | S.O. | Tout schéma intégré ou personnalisé basé sur une classe XDM avec le comportement *Record*, à l’exception de la classe *XDM Individual Profile*. | S.O. |
-| **[!UICONTROL Profil]** | Données appliquées à votre compte, personnes, utilisateurs ou clients dans les données [!UICONTROL Événement]. Vous permet, par exemple, de charger des données CRM à propos de vos clients. | S.O. | Tout schéma intégré ou personnalisé basé sur la classe *XDM Individual Profile*. | Vous pouvez choisir l’ID de personne/l’ID de compte [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} à inclure. Chaque jeu de données (à l’exception des jeux de données de résumé), défini dans [!DNL Experience Platform], possède son propre jeu d’un ou plusieurs ID de personne ou de compte [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} définis. Par exemple, l’ID de cookie, l’ID regroupé, l’ID utilisateur, le code de suivi, l’ID de compte, etc.<br>![ID de personne ](assets/person-id.png)**Note** : si vous créez une connexion qui comprend des jeux de données avec des ID différents, les rapports le reflèteront. Pour fusionner des jeux de données, vous devez utiliser le même ID de personne ou ID de compte [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}. |
-| **Résumé** | Données de série temporelle qui ne sont pas associées à un ID de personne individuel. Les données de résumé représentent des données agrégées à un niveau d’agrégation différent, par exemple des campagnes. Vous pouvez utiliser ces données dans Customer Journey Analytics pour prendre en charge divers cas d’utilisation. Voir la section [Données de résumé](/help/data-views/summary-data.md) pour plus d’informations. | Défini automatiquement sur le champ d’horodatage par défaut des schémas de mesures récapitulatives basées sur un événement d’Experience Platform. Seule la granularité horaire ou quotidienne est prise en charge. | Tout schéma intégré ou personnalisé basé sur la classe *Mesures récapitulatives XDM*. | S.O. |
-
->[!MORELIKETHIS]
->
->Blog : [Utilisation des jeux de données d’événement, de recherche et de profil dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-to-leverage-event-lookup-and-profile-datasets-in-adobe/ba-p/681478)
 
 ## Utilisation des champs numériques comme clés et valeurs de recherche {#numeric}
 
@@ -779,5 +779,10 @@ Lors de la création d’une connexion, vous pouvez ajouter des jeux de données
 Vous pouvez demander l’optimisation algorithmique d’un jeu de données de recherche volumineux. Cette optimisation algorithmique conserve uniquement les données dans le jeu de données de recherche qui correspondent aux clés de votre jeu de données d’événement. Ainsi, vous n’avez pas besoin de charger l’intégralité du jeu de données de recherche non optimisé. Les éléments anciens ou moins fréquemment utilisés sont supprimés, ce qui peut légèrement affecter les rapports, mais présente des avantages significatifs. L’algorithme prend en compte les 90 derniers jours et se met à jour chaque semaine.
 
 Contactez votre équipe d’assistance Adobe pour plus d’informations et pour activer cette fonctionnalité.
+
+
+>[!MORELIKETHIS]
+>
+>Blog : [Utilisation des jeux de données d’événement, de recherche et de profil dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-to-leverage-event-lookup-and-profile-datasets-in-adobe/ba-p/681478)
 
 ![Partager](/help/assets/icons/Share.svg)
