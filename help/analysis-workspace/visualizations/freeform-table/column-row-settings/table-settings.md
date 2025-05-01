@@ -4,10 +4,10 @@ title: Paramètres des lignes
 feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 role: User
-source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '1046'
-ht-degree: 92%
+ht-degree: 89%
 
 ---
 
@@ -36,9 +36,9 @@ Pour modifier le nombre de lignes affichées, procédez comme suit :
 
 1. Cliquez sur le nombre en regard de **[!UICONTROL Lignes]** en haut de la première colonne du tableau.
 
-   ![Tableau à structure libre présentant la liste déroulante pour le nombre de lignes affichées. L’option 400 lignes est sélectionnée.](assets/change-row-count.gif)
+   ![Tableau à structure libre affichant le menu déroulant pour le nombre de lignes affichées. L’option 400 lignes est sélectionnée.](assets/change-row-count.gif)
 
-1. Dans la liste déroulante, sélectionnez le nombre de lignes à afficher dans le tableau.
+1. Dans le menu déroulant, sélectionnez le nombre de lignes que le tableau doit afficher.
 
 
 ## Menu contextuel

@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 exl-id: 417443ae-a1ab-483b-a8fd-cff5ee8b6263
-source-git-commit: e2e04432682f94b18bf9ed25d15f906c05bfd59d
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
-source-wordcount: '1146'
-ht-degree: 99%
+source-wordcount: '1147'
+ht-degree: 97%
 
 ---
 
@@ -93,7 +93,7 @@ Pour utiliser correctement les données de résumé dans vos rapports et analyse
 
 ### Granularité et fuseau horaire
 
-Lors de la configuration du jeu de données contenant les données de résumé dans Customer Journey Analytics, vous remarquerez que la granularité est automatiquement dérivée des données. Les sélections des listes déroulantes **[!UICONTROL Horodatage]** et **[!UICONTROL Fuseau horaire]** sont désactivées, car les deux sont dérivées de la définition du schéma.
+Lors de la configuration du jeu de données contenant les données de résumé dans Customer Journey Analytics, vous remarquerez que la granularité est automatiquement dérivée des données. Les sélections des menus déroulants **[!UICONTROL Horodatage]** et **[!UICONTROL Fuseau horaire]** sont désactivées, car les deux sont dérivés de la définition du schéma.
 
 #### Granularité
 

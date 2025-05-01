@@ -4,10 +4,10 @@ title: Configuration d’une visualisation de flux
 feature: Visualizations
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
 role: User
-source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '1484'
-ht-degree: 87%
+ht-degree: 86%
 
 ---
 
@@ -39,7 +39,7 @@ Vous pouvez configurer le début ou la fin du chemin qui vous intéresse. Vous p
 
    * Utiliser le menu déroulant pour sélectionner des mesures ou des dimensions.
    * Faites glisser et déposez les dimensions ou les mesures à partir du panneau de gauche.
-   * Commencez à saisir le nom d’une dimension ou d’une mesure, puis sélectionnez-la lorsqu’elle apparaît dans la liste déroulante.
+   * Commencez à saisir le nom d’une dimension ou d’une mesure, puis sélectionnez-la lorsqu’elle apparaît dans le menu déroulant.
 
    >[!IMPORTANT]
    >

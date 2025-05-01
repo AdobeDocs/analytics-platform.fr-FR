@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
-source-wordcount: '8844'
-ht-degree: 99%
+source-wordcount: '8857'
+ht-degree: 98%
 
 ---
 
@@ -73,7 +73,7 @@ Lorsque vous définissez une règle dans le créateur de règles, vous utilisez 
 | A | **Nom de la règle** | Par défaut, le nom de la règle est **Règle X** (X faisant référence à un numéro de séquence). Pour modifier le nom d’une règle, sélectionnez son nom et saisissez le nouveau nom, par exemple `Query Parameter`. |
 | B | **Nom de la fonction** | Nom de la fonction sélectionnée pour la règle, par exemple [!UICONTROL URL PARSE]. Lorsque la fonction est la dernière de la séquence de fonctions et détermine les valeurs de sortie finales, le nom de la fonction est suivi de [!UICONTROL  - SORTIE FINALE], par exemple [!UICONTROL URL PARSE - SORTIE FINALE]. <br/>Pour afficher une fenêtre contextuelle contenant plus d’informations sur la fonction, sélectionnez ![icône d’aide](assets/Smock_HelpOutline_18_N.svg). |
 | C | **Description de la règle** | Vous pouvez éventuellement ajouter une description à une règle.<br/>Sélectionnez ![icône Plus](assets/More.svg), puis sélectionnez **[!UICONTROL ** Ajouter une description **]** pour ajouter une description ou **[!UICONTROL ** Modifier la description **]** pour modifier une description existante.<br/>Utilisez l’éditeur pour saisir une description. Vous pouvez utiliser la barre d’outils pour mettre en forme le texte (à l’aide du sélecteur de style, en gras, en italique, en soulignement, à droite, à gauche, centré, en couleur, en liste numérique et à puces) et ajouter des liens à des informations externes. <br/>Pour terminer la modification de la description, cliquez en dehors de l’éditeur. |
-| D | **Zone de fonction** | Définit la logique de la fonction. L’interface dépend du type de fonction. La liste déroulante de [!UICONTROL Champ] ou [!UICONTROL Valeur] affiche toutes les catégories de champs (règles, champs standard, champs) disponibles, en fonction du type d’entrée attendu par la fonction. Vous pouvez également faire glisser et déposer un champ du sélecteur de schémas et de champs standard vers un champ ou une valeur. Lorsque ce champ déplacé provient d’un jeu de données de recherche, une fonction de recherche est automatiquement insérée avant la fonction que vous définissez. <br/>Consultez [Référence des fonctions](#function-reference) pour des informations détaillées sur chacune des fonctions prises en charge. |
+| D | **Zone de fonction** | Définit la logique de la fonction. L’interface dépend du type de fonction. Le menu déroulant [!UICONTROL Champ] ou [!UICONTROL Valeur] affiche toutes les catégories de champs (règles, champs standard, champs) disponibles, en fonction du type d’entrée attendu par la fonction. Vous pouvez également faire glisser et déposer un champ du sélecteur de schémas et de champs standard vers un champ ou une valeur. Lorsque ce champ déplacé provient d’un jeu de données de recherche, une fonction de recherche est automatiquement insérée avant la fonction que vous définissez. <br/>Consultez [Référence des fonctions](#function-reference) pour des informations détaillées sur chacune des fonctions prises en charge. |
 
 {style="table-layout:auto"}
 
@@ -1948,7 +1948,7 @@ Les restrictions suivantes s’appliquent à la fonctionnalité Champ dérivé e
 
 - Vous pouvez utiliser un maximum de dix champs de schéma différents (champs standard non inclus) lors de la définition de règles pour un champ dérivé.
    - À partir de ce maximum de dix champs de schéma différents, seul un maximum de trois champs de schéma de recherche ou de profil sont autorisés.
-- Vous pouvez avoir un maximum de 100 champs dérivés par connexion Customer Journey Analytics.
+- Vous pouvez disposer d’un nombre maximal de champs dérivés par connexion Customer Journey Analytics en fonction du package pour lequel vous disposez d’une licence. Voir [Description du produit](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html?lang=fr){target="_blank"} pour plus d’informations.
 
 
 ### Résumé des limitations de fonction

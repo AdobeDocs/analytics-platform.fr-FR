@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: User
 exl-id: 3d1e3b79-402d-44ff-86b3-be9fd5494e19
-source-git-commit: 463ddbba0bd6765bd5fde1b2098c5603b48b10e4
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '14696'
 ht-degree: 3%
@@ -1032,7 +1032,7 @@ Exemple de panneau **[!UICONTROL Classement sur un seul Dimension]** pour le cas
    1. Dans la boîte de dialogue **[!UICONTROL Filtrer \[Chiffre d’affaires d’achat\]]**, sélectionnez **[!UICONTROL Plage de valeurs]** et saisissez les valeurs appropriées. Par exemple : `1,000,000` - `2,000,000`. Sélectionnez **[!UICONTROL Appliquer]** et **[!UICONTROL OK]**.
    1. Pour convertir les deux graphiques à barres en graphique à double combinaison, sélectionnez **[!UICONTROL SOMME(Achats)]** dans **[!UICONTROL Lignes]** et dans le menu déroulant, sélectionnez **[!UICONTROL Axe double]**. Les graphiques à barres se transforment en graphique de dispersion.
    1. Pour modifier le graphique de dispersion en graphique à barres :
-      1. Sélectionnez **[!UICONTROL SUM(Purchases)]** dans la zone **[!UICONTROL Marques]** et sélectionnez **[!UICONTROL Line]** dans le menu déroulant.
+      1. Sélectionnez **[!UICONTROL SOMME(Achats)]** dans la zone **[!UICONTROL Marques]** et sélectionnez **[!UICONTROL Ligne]** dans le menu déroulant.
       1. Sélectionnez **[!UICONTROL SOMME(Chiffre d’affaires d’achat)]** dans la zone **[!UICONTROL Marques]** et sélectionnez **[!UICONTROL Barre]** dans le menu déroulant.
 
    Votre Tableau Desktop devrait ressembler à ce qui suit.
@@ -1262,7 +1262,7 @@ Exemple de panneau **[!UICONTROL Classement multiple par Dimension]** pour le ca
    1. Faites glisser **[!UICONTROL Chiffre d’affaires d’achat]** et déposez-le en regard de **[!UICONTROL Lignes]**. La valeur devient **[!UICONTROL SOMME(Chiffre d’affaires d’achat)]**.
    1. Faites glisser Achats et déposez-les en regard de **[!UICONTROL Lignes]**. La valeur devient **[!UICONTROL SUM(Purchases)]**.
    1. Sélectionnez **[!UICONTROL SOMME(Achats)]** puis, dans le menu déroulant, sélectionnez **[!UICONTROL Axe double]**.
-   1. Sélectionnez **[!UICONTROL SUM(Purchases)]** dans **[!UICONTROL Marks]** et sélectionnez **[!UICONTROL Line]** dans le menu déroulant.
+   1. Sélectionnez **[!UICONTROL SOMME(Achats)]** dans **[!UICONTROL Marques]** et sélectionnez **[!UICONTROL Ligne]** dans le menu déroulant.
    1. Sélectionnez **[!UICONTROL SOMME(Chiffre d’affaires d’achat)]** dans **[!UICONTROL Marques]** et sélectionnez **[!UICONTROL Barre]** dans le menu déroulant.
    1. Sélectionnez **[!UICONTROL Vue entière]** dans le menu **[!UICONTROL Ajuster]**.
    1. Sélectionnez le titre **[!UICONTROL Chiffre d’affaires d’achat]** dans le graphique et assurez-vous que le chiffre d’affaires d’achat est dans l’ordre croissant.
@@ -1499,7 +1499,7 @@ Vous pouvez également utiliser la fonctionnalité Comptage distinct de Power BI
 
 1. Vérifiez que vous avez sélectionné la vue **[!UICONTROL Carte]**.
 1. Sélectionnez **[!UICONTROL DAY(Daterangeday)]** puis, dans le menu déroulant, sélectionnez **[!UICONTROL Month]**. La valeur devient **[!UICONTROL MONTH(Daterangeday)]**.
-1. Sélectionnez **[!UICONTROL SOMME(Nombre de noms de produits Cm distincts)]** dans **[!UICONTROL Marques]** et dans le menu déroulant, sélectionnez **[!UICONTROL Format]**.
+1. Sélectionnez **[!UICONTROL SOMME(Nombre de noms de produits Cm distincts)]** dans **[!UICONTROL Marques]**, puis dans le menu déroulant, sélectionnez **[!UICONTROL Format]**.
 1. Pour modifier la taille de la police, dans le volet **[!UICONTROL Format SUM(CM Product Name Count Distinct)]**, sélectionnez **[!UICONTROL Font]** dans **[!UICONTROL Default]** et sélectionnez **[!UICONTROL 72]**.
 1. Pour aligner le nombre, sélectionnez **[!UICONTROL Automatique]** en regard de **[!UICONTROL Alignement]** et définissez **[!UICONTROL Horizontal]** sur centré.
 1. Pour utiliser des nombres entiers, sélectionnez **[!UICONTROL 123.456]** en regard de **[!UICONTROL Nombres]** et sélectionnez **[!UICONTROL Nombre (Personnalisé)]**. Définissez **[!UICONTROL Nombre de décimales]** sur `0`.

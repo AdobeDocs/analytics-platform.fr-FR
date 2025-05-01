@@ -4,10 +4,10 @@ description: Créez une période à utiliser dans le compte rendu des performanc
 feature: Calendar
 exl-id: 3e4fa3cc-c14b-45e5-afbb-518ecfa0033e
 role: User
-source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '533'
-ht-degree: 79%
+ht-degree: 76%
 
 ---
 

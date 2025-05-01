@@ -5,10 +5,10 @@ exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
 role: User
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '913'
-ht-degree: 89%
+ht-degree: 88%
 
 ---
 
@@ -86,7 +86,7 @@ Vous pouvez rechercher, filtrer et trier la liste des composants dans le panneau
 
    Une couleur et une icône permettent d’identifier le type de composant. **Dimensions** icône ![Dimension](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) sont orange, **Segments** ![icône Segment](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) sont bleus, **Périodes** ![Icône de période](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) sont violets et **Icône de mesure** ![ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) sont verts.<br/> L’icône Adobe ![AdobeLogo](/help/assets/icons/AdobeLogoSmall.svg) indique soit un modèle de mesure calculée, soit un modèle de segment. L’icône de calculateur ![Icône de calculateur](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) indique une mesure calculée créée par un administrateur ou une administratrice de votre organisation.
 
-3. Sélectionnez le composant dans la liste déroulante.
+3. Sélectionnez le composant dans le menu déroulant.
 
 ### Filtre
 

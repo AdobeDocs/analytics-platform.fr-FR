@@ -6,7 +6,7 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: bf765144-34f8-465b-b06d-53e4ca91014a
-source-git-commit: 9794779894fbecb433c16d108c555c5f81a4b491
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 # Sélectionner une vue de données
 
-Vous pouvez sélectionner une vue de données dans la liste déroulante ou sélectionner une vue de données dans une cellule et mettre automatiquement à jour votre bloc de données avec une nouvelle vue de données.
+Vous pouvez sélectionner une vue de données dans le menu déroulant ou sélectionner une vue de données dans une cellule et mettre automatiquement à jour votre bloc de données avec une nouvelle vue de données.
 
 ## Sélectionner la vue de données depuis une cellule
 

@@ -5,10 +5,10 @@ title: Partage de projets
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
-source-wordcount: '2069'
-ht-degree: 97%
+source-wordcount: '2070'
+ht-degree: 96%
 
 ---
 
@@ -103,7 +103,7 @@ Si des modifications ne sont pas enregistrées, on vous invitera d’abord à en
 
 1. (Le cas échéant) Si vous partagez un seul projet, choisissez d’activer les options suivantes lors du partage du projet :
 
-   * **Partager les composants intégrés au projet :** partagez avec l’ensemble des destinataires les segments, mesures calculées et périodes. Une fois partagés, ces composants apparaîtront dans le menu déroulant des composants de l’espace de travail de destination. Ce paramètre n’est pas persistant, il s’applique une seule fois, au moment du partage du projet.
+   * **Partager les composants intégrés au projet :** partagez avec l’ensemble des destinataires les segments, mesures calculées et périodes. Une fois partagés, ces composants apparaissent dans le menu déroulant Composants du Workspace du destinataire. Ce paramètre n’est pas persistant, il s’applique une seule fois, au moment du partage du projet.
 
    * **Définir comme page de destination pour les destinataires :** définit cette page comme page de destination pour les destinataires. Ce paramètre n’est pas persistant, il s’applique une seule fois, au moment du partage du projet.
 

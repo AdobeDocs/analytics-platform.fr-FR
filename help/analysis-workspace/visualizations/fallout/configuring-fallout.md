@@ -4,10 +4,10 @@ title: Configuration d’une visualisation Abandons
 feature: Visualizations
 exl-id: 3d888673-d7b1-45ef-bd3a-97b98466fb0e
 role: User
-source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '735'
-ht-degree: 97%
+ht-degree: 95%
 
 ---
 
@@ -25,7 +25,7 @@ Vous pouvez effectuer un cheminement sur des dimensions, des mesures et des segm
 ## Utilisation
 
 1. Ajoutez une visualisation ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) **[!UICONTROL Abandon]**. Voir [Ajouter une visualisation à un panneau](../freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
-1. Faites glisser une page, par exemple Accueil, de la dimension Page vers le menu déroulant *Ajouter un point de contact*.
+1. Faites glisser une page, par exemple l’accueil, de la dimension Page vers le menu déroulant *Ajouter un point de contact*.
 
    ![Page d’accueil de la dimension Page d’accueil déplacée vers le champ Ajouter un point de contact.](assets/fallout-drag.png)
 

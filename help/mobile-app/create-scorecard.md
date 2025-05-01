@@ -5,10 +5,10 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: e0615e3b4b1a4f0cd675de4bf4bb84d73eab8b8c
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '2698'
-ht-degree: 96%
+ht-degree: 95%
 
 ---
 
@@ -203,7 +203,7 @@ Les répartitions affinent votre analyse en répartissant les mesures par élém
 
 ![Breakdown_view](assets/break_view.png)
 
-Chaque dimension ajoutée à la mosaïque apparaît dans une liste déroulante dans la vue détaillée de l’application. L’utilisateur en charge de l’exécution peut alors choisir parmi les options répertoriées dans la liste déroulante.
+Chaque dimension ajoutée à la mosaïque s’affiche dans un menu déroulant dans la vue détaillée de l’application. L’utilisateur en charge de l’exécution peut ensuite choisir parmi les options répertoriées dans le menu déroulant.
 
 ## Personnaliser des diapositives détaillées {#customize-detail-slide}
 

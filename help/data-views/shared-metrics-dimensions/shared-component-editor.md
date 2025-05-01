@@ -2,9 +2,9 @@
 title: Éditeur de composant partagé
 description: Créer ou modifier des dimensions et des mesures partagées.
 exl-id: 3f6a808a-d6ac-4a47-a5e2-63b9f17952e8
-source-git-commit: 62df631eeac40f2009304d91c93950c38a260dab
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '393'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ L’interface comprend trois colonnes/sections principales :
 
 * **Sélecteur de champ de schéma** : recherchez le ou les champs de schéma souhaités et faites-les glisser vers la zone des composants inclus.
    * **Connexion** : connexion active. Modifiez la connexion active dans le [gestionnaire des mesures et dimensions partagées](smd-overview.md).
-   * **Liste déroulante des composants** : vous pouvez choisir entre sélectionner [!UICONTROL Champs de schéma] (nouvelles dimensions et mesures partagées nettes) ou [!UICONTROL Mesures et dimensions] (composants partagés existants).
+   * **Liste des composants** : vous pouvez choisir entre sélectionner [!UICONTROL Champs de schéma] (nouvelles dimensions et mesures partagées) ou [!UICONTROL Mesures et dimensions] (composants partagés existants) dans le menu déroulant.
    * **Rechercher** : utilisez l’icône ![Rechercher](/help/assets/icons/Search.svg) pour rechercher du texte dans le champ de schéma souhaité ou le composant partagé par nom. Vous pouvez également utiliser des filtres ![icône de filtre](/help/assets/icons/Filter.svg) pour réduire la liste des composants. Le filtre `Is not deprecated` est actif par défaut.
    * **Créer un champ dérivé** : permet de [créer un champ dérivé](/help/data-views/derived-fields/derived-fields.md).
 * **Composants inclus** : composants que vous configurez pour être partagés. Lors de la création de composants partagés, vous pouvez faire glisser plusieurs champs de schéma vers cette zone pour créer plusieurs composants simultanément. Lors de la modification des composants partagés, vous pouvez sélectionner plusieurs composants à modifier, ce qui répertorie tous les composants sélectionnés dans cette zone.

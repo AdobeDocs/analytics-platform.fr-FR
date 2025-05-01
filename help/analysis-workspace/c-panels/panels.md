@@ -4,10 +4,10 @@ title: Panneaux - Aperçu
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '2129'
-ht-degree: 97%
+ht-degree: 94%
 
 ---
 
@@ -77,7 +77,7 @@ Vous pouvez effectuer les opérations suivantes :
 
 ## Vue de données
 
-Chaque panneau est associé à une [vue de données](/help/data-views/data-views.md), identifiée par ![Data](/help/assets/icons/Data.svg) **[!UICONTROL *nom de la vue de données *]**dans le menu déroulant en haut à droite du panneau.
+Chaque panneau est associé à une [vue de données](/help/data-views/data-views.md), identifiée par ![Données](/help/assets/icons/Data.svg) **[!UICONTROL *nom de la vue de données *]**dans le menu déroulant en haut à droite du panneau.
 
 Lorsque vous créez un projet Workspace vierge, la vue de données par défaut du panneau initial correspond à la dernière vue de données avec laquelle vous avez travaillé dans Customer Journey Analytics.
 
@@ -200,7 +200,7 @@ Pour segmenter le panneau, les utilisateurs et les utilisatrices peuvent utilise
 
 #### Segments déroulants dynamiques
 
-Les segments déroulants dynamiques vous permettent de déterminer les valeurs disponibles en fonction des données dans la plage de rapports du panneau et des valeurs dans d’autres segments déroulants. Vous pouvez par exemple créer deux listes déroulantes dynamiques à l’aide d’une dimension Pays et d’une dimension Villes. Lorsque vous sélectionnez un pays dans la liste déroulante **[!UICONTROL Pays]**, la liste déroulante **[!UICONTROL Villes]** s’adapte de manière dynamique pour n’afficher que les villes de ce pays.
+Les segments déroulants dynamiques vous permettent de déterminer les valeurs disponibles en fonction des données dans la plage de rapports du panneau et des valeurs dans d’autres segments déroulants. Vous pouvez par exemple créer deux listes déroulantes dynamiques à l’aide d’une dimension Pays et d’une dimension Villes. Lorsque vous sélectionnez un pays dans le menu déroulant **[!UICONTROL Pays]**, le menu déroulant **[!UICONTROL Villes]** s’ajuste de manière dynamique pour afficher uniquement les villes de ce pays.
 
 Ce même concept s’applique à toutes les dimensions. Seuls les éléments de dimension qui apparaissent dans la période du panneau et les segments sélectionnés sont visibles. Les éléments de dimension sélectionnés dans les segments déroulants statiques affectent les valeurs disponibles dans les segments déroulants dynamiques. Cependant, l’inverse n’est pas vrai : les éléments de dimension sélectionnés dans les segments déroulants dynamiques n’affectent pas les valeurs disponibles dans les segments déroulants statiques.
 

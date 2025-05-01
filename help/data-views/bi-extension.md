@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '3247'
-ht-degree: 92%
+ht-degree: 89%
 
 ---
 
@@ -278,7 +278,7 @@ Pour utiliser les identifiants de vue de données comme noms de table, vous pouv
 
 ### Gouvernance des données
 
-Les paramètres liés à la gouvernance de données dans Customer Journey Analytics sont hérités d’Adobe Experience Platform. L’intégration entre Customer Journey Analytics et la gouvernance de données Adobe Experience Platform permet l’étiquetage des données Customer Journey Analytics sensibles et l’application des politiques de confidentialité.
+Les paramètres liés à la gouvernance des données dans Customer Journey Analytics sont hérités d’Adobe Experience Platform. L’intégration entre Customer Journey Analytics et la gouvernance des données Adobe Experience Platform permet l’étiquetage des données Customer Journey Analytics sensibles et l’application des politiques de confidentialité.
 
 Les libellés et les politiques de confidentialité créés sur les jeux de données consommés par Experience Platform peuvent être affichés dans le workflow des vues de données Customer Journey Analytics. Par conséquent, les données interrogées à l’aide de l’[!DNL Customer Journey Analytics BI extension] affichent des avertissements ou des erreurs appropriés lorsque vous ne respectez pas les libellés et politiques de confidentialité définis.
 

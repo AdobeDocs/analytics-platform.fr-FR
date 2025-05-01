@@ -2,9 +2,9 @@
 title: Mesures et dimensions partagées - Aperçu
 description: Utilisez la même dimension ou la même référence de mesure dans plusieurs vues de données.
 exl-id: 998a9f9b-cfa7-4b97-b32b-d50e35d01b39
-source-git-commit: 4bb24fae7c7d53a0fde3bb2dc35ef27f91701d5a
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
-source-wordcount: '1245'
+source-wordcount: '1246'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Toutes les dimensions et mesures partagées sont affichées sous les quatre cart
    * **[!UICONTROL Créé par]** : affiche uniquement les composants créés par un utilisateur donné.
    * **[!UICONTROL Doublons]** : affichez uniquement les composants ayant le même ID de composant qu’un autre composant. Ces filtres sont identiques à la révision des composants à l’aide des cartes de présentation.
 * **Rechercher** : utilisez l’icône ![Rechercher](../../assets/icons/Search.svg) pour rechercher un composant par nom.
-* **[!UICONTROL Connexion]** : liste déroulante qui modifie la [connexion](/help/connections/overview.md). Les dimensions et mesures partagées sont toujours spécifiques à une seule connexion.
+* **[!UICONTROL Connexion]** : menu déroulant qui modifie la [connexion](/help/connections/overview.md). Les dimensions et mesures partagées sont toujours spécifiques à une seule connexion.
 * **[!UICONTROL Personnaliser le tableau]** : sélectionnez l’icône ![Personnaliser le tableau](/help/assets/icons/ColumnSetting.svg) pour afficher ou masquer les colonnes du tableau. Les options disponibles sont les suivantes :
    * **[!UICONTROL Nom du champ]** : le nom de la dimension ou de la mesure partagée. Ce champ est toujours visible.
    * **[!UICONTROL Type]** : indique si le composant est une dimension ou une mesure. Ce champ est toujours visible.

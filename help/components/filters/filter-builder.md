@@ -4,10 +4,10 @@ title: Création de segments
 feature: Filters, Segments
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
-source-git-commit: 85a22d1e57925f0512ce0cc658cfba1008339d91
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
-source-wordcount: '1571'
-ht-degree: 45%
+source-wordcount: '1572'
+ht-degree: 43%
 
 ---
 
@@ -68,7 +68,7 @@ Le créateur de définitions permet de créer votre définition de segment. Dans
 
 Vous pouvez configurer le type et l’étendue de votre définition :
 
-1. Pour spécifier le type de votre définition, indiquez si vous souhaitez que la définition soit inclusive ou exclusive. Sélectionnez ![Paramètre](/help/assets/icons/Setting.svg) **[!UICONTROL Options]** et dans la liste déroulante, activez **[!UICONTROL Inclure]** ou **[!UICONTROL Exclure]**.
+1. Pour spécifier le type de votre définition, indiquez si vous souhaitez que la définition soit inclusive ou exclusive. Sélectionnez ![Paramètre](/help/assets/icons/Setting.svg) **[!UICONTROL Options]** et dans le menu déroulant **[!UICONTROL Inclure]** ou **[!UICONTROL Exclure]**.
 1. Pour spécifier la portée de votre définition, choisissez dans le menu déroulant **[!UICONTROL Inclure]** ou **[!UICONTROL Exclure]** si vous souhaitez que la portée de la définition soit **[!UICONTROL Événement]**, **[!UICONTROL Session]**, **[!UICONTROL Personne]**, **[!UICONTROL Compte global]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Account]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Opportunity]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} ou **[!UICONTROL Groupe d’achat]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
 
 Vous pourrez toujours modifier ces paramètres ultérieurement.
@@ -87,7 +87,7 @@ Pour ajouter un composant :
 
 Pour ajouter un composant, procédez comme suit :
 
-* Sélectionnez un nouvel opérateur pour le composant dans le menu déroulant des opérateurs.
+* Sélectionnez un nouvel opérateur pour le composant dans le menu déroulant opérateur .
 * Sélectionnez ou spécifiez une autre valeur pour l’opérateur, le cas échéant.
 * Si le type de composant est une dimension, vous pouvez définir le modèle d’attribution. Consultez [Modèle d’attribution](#attribution-models) pour en savoir plus.
 

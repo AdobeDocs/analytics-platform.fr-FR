@@ -5,10 +5,10 @@ exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '1053'
-ht-degree: 77%
+ht-degree: 74%
 
 ---
 
@@ -101,7 +101,7 @@ Détails sur les paramètres d’expiration disponibles.
 
 ## [!UICONTROL Dimension de liaison]
 
-Liste déroulante permettant de lier la persistance d’une valeur de dimension aux valeurs de dimension dʼune autre dimension. Les options de liste déroulante valides comprennent dʼautres dimensions incluses dans la vue de données.
+Un menu déroulant qui vous permet de lier la persistance d’une valeur de dimension aux valeurs de dimension dans une autre dimension. Les options de liste déroulante valides comprennent dʼautres dimensions incluses dans la vue de données.
 
 Consultez [Utiliser des dimensions et des mesures de liaison dans Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md) pour obtenir des exemples d’utilisation efficace des dimensions de liaison.
 
@@ -115,7 +115,7 @@ Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimensions
 
 ## [!UICONTROL Mesure de liaison]
 
-Liste déroulante permettant de choisir une mesure qui agit comme un déclencheur de liaison. Les options valides comprennent les mesures incluses dans la vue de données.
+Un menu déroulant qui vous permet de choisir une mesure qui agit comme un déclencheur de liaison. Les options valides comprennent les mesures incluses dans la vue de données.
 
 Ce paramètre nʼapparaît que lorsque la Dimension de liaison est plus basse dans le tableau d’objets que le composant. Lorsque la mesure de liaison est présente dans un événement, les valeurs de la dimension sont copiées à partir de la dimension au niveau de lʼévénement vers le niveau inférieur du schéma de la dimension de liaison.
 

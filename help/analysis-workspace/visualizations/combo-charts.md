@@ -4,10 +4,10 @@ title: Visualisation des graphiques combinés
 feature: Visualizations
 exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
 role: User
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '603'
-ht-degree: 98%
+ht-degree: 95%
 
 ---
 
@@ -52,7 +52,7 @@ Gardez les éléments suivants à l’esprit :
 
 1. Ajoutez une visualisation ![Commentaire](/help/assets/icons/ComboChart.svg) [!UICONTROL Graphique combo]. Voir la section [Ajouter une visualisation à un panneau](freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 
-1. Dans les listes déroulantes, sélectionnez une dimension pour l’axe X et une mesure pour l’axe Y.
+1. Dans les menus déroulants, sélectionnez une dimension pour l’axe X et une mesure pour l’axe Y.
 
 1. Sélectionnez le type de [!UICONTROL Comparaison de lignes] que vous voulez utiliser.
 

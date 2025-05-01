@@ -5,10 +5,10 @@ title: Gestion des dossiers dans Workspace
 feature: Workspace Basics
 exl-id: dcc78e0e-49d6-40bf-a606-9a7f3f19911c
 role: User
-source-git-commit: 664756b796e8915a701ccabfb5f250e777701b60
-workflow-type: ht
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+workflow-type: tm+mt
 source-wordcount: '427'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -44,7 +44,7 @@ Pour déplacer des dossiers dans Workspace :
 * Sélectionnez un dossier que vous souhaitez déplacer, dans la [liste des projets](/help/analysis-workspace/build-workspace-project/freeform-overview.md#project-list).
 
    1. Sélectionnez **[!UICONTROL Déplacer vers]** dans les [actions](/help/analysis-workspace/build-workspace-project/freeform-overview.md#actions) disponibles dans le menu contextuel ![Plus](/help/assets/icons/More.svg) du dossier sélectionné, ou dans la barre d’actions bleue.
-   1. Dans la boîte de dialogue **[!UICONTROL Sélectionner le dossier]**, sélectionnez un dossier dans le menu déroulant **[!UICONTROL Dossier]** vers lequel déplacer le dossier.
+   1. Dans la boîte de dialogue **[!UICONTROL Sélectionner un dossier]**, sélectionnez un dossier dans le menu déroulant **[!UICONTROL Dossier]** pour le déplacer.
 
    1. Sélectionnez **[!UICONTROL Déplacer]**.
 
@@ -52,7 +52,7 @@ Pour déplacer des dossiers dans Workspace :
 
    1. Sélectionnez **[!UICONTROL Déplacer le dossier]** dans ![Plus](/help/assets/icons/More.svg) dans la [zone de titre](/help/analysis-workspace/build-workspace-project/freeform-overview.md#title-area).
 
-   1. Dans la boîte de dialogue **[!UICONTROL Sélectionner le dossier]**, sélectionnez un dossier dans le menu déroulant **[!UICONTROL Dossier]** vers lequel déplacer le dossier.
+   1. Dans la boîte de dialogue **[!UICONTROL Sélectionner un dossier]**, sélectionnez un dossier dans le menu déroulant **[!UICONTROL Dossier]** pour le déplacer.
 
    1. Sélectionnez **[!UICONTROL Déplacer]**.
 

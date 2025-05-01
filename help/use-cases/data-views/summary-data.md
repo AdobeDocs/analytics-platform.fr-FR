@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 80139806-618a-46ff-b2c4-32d7bb85a526
-source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
-source-wordcount: '5200'
-ht-degree: 8%
+source-wordcount: '5202'
+ht-degree: 15%
 
 ---
 
@@ -39,7 +39,7 @@ Vous utilisez les exemples de données de résumé suivants pour ce cas d’util
 | 6 | Campagne 456 | 115 | 5500 | ghi456 | facebook | ghi-adgroup | 2024-07-18T18:20:39.000Z |
 | 7 | Campagne 789 | 200 | 9000 | abc789 | facebook | abc-adgroup | 2024-07-18T18:20:39.000Z |
 | 8 | Campagne 789 | 20 | 2 000 | def789 | facebook | def-adgroup | 2024-07-18T18:20:39.000Z |
-| 9 | Campagne 789 | 225 | 12000 | 789 ghi | facebook | ghi-adgroup | 2024-07-18T18:20:39.000Z |
+| 9 | Campagne 789 | 225 | 12000 | ghi789 | facebook | ghi-adgroup | 2024-07-18T18:20:39.000Z |
 | 10 | Campagne 987 | 125 | 10000 | abc987 | facebook | abc-adgroup | 2024-07-18T18:20:39.000Z |
 | 11 | Campagne 987 | 120 | 15000 | def987 | facebook | def-adgroup | 2024-07-18T18:20:39.000Z |
 | 12 | Campagne 987 | 315 | 22500 | ghi987 | facebook | ghi-adgroup | 2024-07-18T18:20:39.000Z |
@@ -69,185 +69,185 @@ Les données d’événement sont disponibles dans l’exemple de jeu de donnée
 
 | timestamp | _id | page_name | person_id | tracking_code | commandes | revenue_amount |
 |---|---:|---|---|---|---:|---:|
-| 2024-07-18T19:15:39+00:00 | 1 | page d’accueil | person-1abc123 | abc123 |  |  |
+| 2024-07-18T19:15:39+00:00 | 1 | Page d’accueil | person-1abc123 | abc123 |  |  |
 | 2024-07-18T19:15:39+00:00 | 2 | page de confirmation | person-1abc123 |  | 1 | 174,25 |
-| 2024-07-18T19:15:39+00:00 | 3 | page d’accueil | person-2def123 | def123 |  |  |
-| 2024-07-18T19:15:39+00:00 | 4 | page d’accueil | person-3ghi123 | ghi123 |  |  |
+| 2024-07-18T19:15:39+00:00 | 3 | Page d’accueil | person-2def123 | def123 |  |  |
+| 2024-07-18T19:15:39+00:00 | 4 | Page d’accueil | person-3ghi123 | ghi123 |  |  |
 | 2024-07-18T19:15:39+00:00 | 5 | page de confirmation | person-3ghi123 |  | 1 | 149,25 |
-| 2024-07-18T19:15:39+00:00 | 6 | page d’accueil | person-4abc456 | abc456 |  |  |
-| 2024-07-18T19:15:39+00:00 | 7 | page d’accueil | person-5def456 | def456 |  |  |
-| 2024-07-18T19:15:39+00:00 | 8 | page d’accueil | person-6ghi456 | ghi456 |  |  |
+| 2024-07-18T19:15:39+00:00 | 6 | Page d’accueil | person-4abc456 | abc456 |  |  |
+| 2024-07-18T19:15:39+00:00 | 7 | Page d’accueil | person-5def456 | def456 |  |  |
+| 2024-07-18T19:15:39+00:00 | 8 | Page d’accueil | person-6ghi456 | ghi456 |  |  |
 | 2024-07-18T19:15:39+00:00 | 9 | page de confirmation | person-6ghi456 |  | 1 | 159,25 |
-| 2024-07-18T19:15:39+00:00 | 10 | page d’accueil | person-7abc789 | abc789 |  |  |
-| 2024-07-18T19:15:39+00:00 | 11 | page d’accueil | person-8def789 | def789 |  |  |
-| 2024-07-18T19:15:39+00:00 | 12 | page d’accueil | person-9ghi789 | 789 ghi |  |  |
+| 2024-07-18T19:15:39+00:00 | 10 | Page d’accueil | person-7abc789 | abc789 |  |  |
+| 2024-07-18T19:15:39+00:00 | 11 | Page d’accueil | person-8def789 | def789 |  |  |
+| 2024-07-18T19:15:39+00:00 | 12 | Page d’accueil | person-9ghi789 | ghi789 |  |  |
 | 2024-07-18T19:15:39+00:00 | 13 | page de confirmation | person-9ghi789 |  | 1 | 124,25 |
-| 2024-07-18T19:15:39+00:00 | 14 | page d’accueil | person-10abc987 | abc987 |  |  |
-| 2024-07-18T19:15:39+00:00 | 15 | page d’accueil | person-11def987 | def987 |  |  |
-| 2024-07-18T19:15:39+00:00 | 16 | page d’accueil | person-12ghi987 | ghi987 |  |  |
-| 2024-07-18T19:15:39+00:00 | 17 | page d’accueil | person-13abc654 | abc654 |  |  |
-| 2024-07-18T19:15:39+00:00 | 18 | page d’accueil | person-14def654 | def654 |  |  |
-| 2024-07-18T19:15:39+00:00 | 19 | page d’accueil | person-15ghi654 | ghi654 |  |  |
+| 2024-07-18T19:15:39+00:00 | 14 | Page d’accueil | person-10abc987 | abc987 |  |  |
+| 2024-07-18T19:15:39+00:00 | 15 | Page d’accueil | person-11def987 | def987 |  |  |
+| 2024-07-18T19:15:39+00:00 | 16 | Page d’accueil | person-12ghi987 | ghi987 |  |  |
+| 2024-07-18T19:15:39+00:00 | 17 | Page d’accueil | person-13abc654 | abc654 |  |  |
+| 2024-07-18T19:15:39+00:00 | 18 | Page d’accueil | person-14def654 | def654 |  |  |
+| 2024-07-18T19:15:39+00:00 | 19 | Page d’accueil | person-15ghi654 | ghi654 |  |  |
 | 2024-07-18T19:15:39+00:00 | 20 | page de confirmation | person-15ghi654 |  | 1 | 174,25 |
-| 2024-07-18T19:15:39+00:00 | 21 | page d’accueil | person-16abc321 | abc321 |  |  |
-| 2024-07-18T19:15:39+00:00 | 22 | page d’accueil | person-17def321 | def321 |  |  |
-| 2024-07-18T19:15:39+00:00 | 23 | page d’accueil | person-18ghi321 | ghi321 |  |  |
-| 2024-07-18T19:15:39+00:00 | 24 | page d’accueil | person-19abc123 | abc123 |  |  |
-| 2024-07-18T19:15:39+00:00 | 25 | page d’accueil | person-20def123 | def123 |  |  |
-| 2024-07-18T19:15:39+00:00 | 26 | page d’accueil | person-21ghi123 | ghi123 |  |  |
+| 2024-07-18T19:15:39+00:00 | 21 | Page d’accueil | person-16abc321 | abc321 |  |  |
+| 2024-07-18T19:15:39+00:00 | 22 | Page d’accueil | person-17def321 | def321 |  |  |
+| 2024-07-18T19:15:39+00:00 | 23 | Page d’accueil | person-18ghi321 | ghi321 |  |  |
+| 2024-07-18T19:15:39+00:00 | 24 | Page d’accueil | person-19abc123 | abc123 |  |  |
+| 2024-07-18T19:15:39+00:00 | 25 | Page d’accueil | person-20def123 | def123 |  |  |
+| 2024-07-18T19:15:39+00:00 | 26 | Page d’accueil | person-21ghi123 | ghi123 |  |  |
 | 2024-07-18T19:15:39+00:00 | 27 | page de confirmation | person-21ghi123 |  | 1 | 149,25 |
-| 2024-07-18T19:15:39+00:00 | 28 | page d’accueil | person-22abc456 | abc456 |  |  |
-| 2024-07-18T19:15:39+00:00 | 29 | page d’accueil | person-23def456 | def456 |  |  |
-| 2024-07-18T19:15:39+00:00 | 30 | page d’accueil | person-24ghi456 | ghi456 |  |  |
-| 2024-07-18T19:15:39+00:00 | 31 | page d’accueil | person-25abc789 | abc789 |  |  |
+| 2024-07-18T19:15:39+00:00 | 28 | Page d’accueil | person-22abc456 | abc456 |  |  |
+| 2024-07-18T19:15:39+00:00 | 29 | Page d’accueil | person-23def456 | def456 |  |  |
+| 2024-07-18T19:15:39+00:00 | 30 | Page d’accueil | person-24ghi456 | ghi456 |  |  |
+| 2024-07-18T19:15:39+00:00 | 31 | Page d’accueil | person-25abc789 | abc789 |  |  |
 | 2024-07-18T19:15:39+00:00 | 32 | page de confirmation | person-25abc789 |  | 1 | 139,25 |
-| 2024-07-18T19:15:39+00:00 | 33 | page d’accueil | person-26abc987 | abc987 |  |  |
-| 2024-07-18T19:15:39+00:00 | 34 | page d’accueil | person-27def987 | def987 |  |  |
-| 2024-07-18T19:15:39+00:00 | 35 | page d’accueil | person-28ghi987 | ghi987 |  |  |
-| 2024-07-18T19:15:39+00:00 | 36 | page d’accueil | person-29abc654 | abc654 |  |  |
+| 2024-07-18T19:15:39+00:00 | 33 | Page d’accueil | person-26abc987 | abc987 |  |  |
+| 2024-07-18T19:15:39+00:00 | 34 | Page d’accueil | person-27def987 | def987 |  |  |
+| 2024-07-18T19:15:39+00:00 | 35 | Page d’accueil | person-28ghi987 | ghi987 |  |  |
+| 2024-07-18T19:15:39+00:00 | 36 | Page d’accueil | person-29abc654 | abc654 |  |  |
 | 2024-07-18T19:15:39+00:00 | 37 | page de confirmation | person-29abc654 |  | 1 | 124,25 |
-| 2024-07-18T19:15:39+00:00 | 38 | page d’accueil | person-30def654 | def654 |  |  |
-| 2024-07-18T19:15:39+00:00 | 39 | page d’accueil | person-31ghi654 | ghi654 |  |  |
-| 2024-07-18T19:15:39+00:00 | 40 | page d’accueil | person-32abc321 | abc321 |  |  |
-| 2024-07-18T19:15:39+00:00 | 41 | page d’accueil | person-33ghi456 | ghi456 |  |  |
+| 2024-07-18T19:15:39+00:00 | 38 | Page d’accueil | person-30def654 | def654 |  |  |
+| 2024-07-18T19:15:39+00:00 | 39 | Page d’accueil | person-31ghi654 | ghi654 |  |  |
+| 2024-07-18T19:15:39+00:00 | 40 | Page d’accueil | person-32abc321 | abc321 |  |  |
+| 2024-07-18T19:15:39+00:00 | 41 | Page d’accueil | person-33ghi456 | ghi456 |  |  |
 | 2024-07-18T19:15:39+00:00 | 42 | page de confirmation | person-33ghi456 |  | 1 | 174,25 |
-| 2024-07-18T19:15:39+00:00 | 43 | page d’accueil | person-34abc789 | abc789 |  |  |
-| 2024-07-18T19:15:39+00:00 | 44 | page d’accueil | person-35def789 | def789 |  |  |
-| 2024-07-18T19:15:39+00:00 | 45 | page d’accueil | person-36ghi789 | 789 ghi |  |  |
+| 2024-07-18T19:15:39+00:00 | 43 | Page d’accueil | person-34abc789 | abc789 |  |  |
+| 2024-07-18T19:15:39+00:00 | 44 | Page d’accueil | person-35def789 | def789 |  |  |
+| 2024-07-18T19:15:39+00:00 | 45 | Page d’accueil | person-36ghi789 | ghi789 |  |  |
 | 2024-07-18T19:15:39+00:00 | 46 | page de confirmation | person-36ghi789 |  | 1 | 149,25 |
-| 2024-07-18T19:15:39+00:00 | 47 | page d’accueil | person-37abc987 | abc987 |  |  |
-| 2024-07-18T19:15:39+00:00 | 48 | page d’accueil | person-38def987 | def987 |  |  |
-| 2024-07-18T19:15:39+00:00 | 49 | page d’accueil | person-39ghi987 | ghi987 |  |  |
-| 2024-07-18T19:15:39+00:00 | 50 | page d’accueil | person-40abc654 | abc654 |  |  |
+| 2024-07-18T19:15:39+00:00 | 47 | Page d’accueil | person-37abc987 | abc987 |  |  |
+| 2024-07-18T19:15:39+00:00 | 48 | Page d’accueil | person-38def987 | def987 |  |  |
+| 2024-07-18T19:15:39+00:00 | 49 | Page d’accueil | person-39ghi987 | ghi987 |  |  |
+| 2024-07-18T19:15:39+00:00 | 50 | Page d’accueil | person-40abc654 | abc654 |  |  |
 | 2024-07-18T19:15:39+00:00 | 51 | page de confirmation | person-40abc654 |  | 1 | 124,25 |
-| 2024-07-18T19:15:39+00:00 | 52 | page d’accueil | person-41def654 | def654 |  |  |
-| 2024-07-18T19:15:39+00:00 | 53 | page d’accueil | person-42ghi654 | ghi654 |  |  |
-| 2024-07-18T19:15:39+00:00 | 54 | page d’accueil | person-43abc321 | abc321 |  |  |
-| 2024-07-18T19:15:39+00:00 | 55 | page d’accueil | person-44def321 | def321 |  |  |
-| 2024-07-18T19:15:39+00:00 | 56 | page d’accueil | person-45ghi321 | ghi321 |  |  |
-| 2024-07-18T19:15:39+00:00 | 57 | page d’accueil | person-46abc123 | abc123 |  |  |
+| 2024-07-18T19:15:39+00:00 | 52 | Page d’accueil | person-41def654 | def654 |  |  |
+| 2024-07-18T19:15:39+00:00 | 53 | Page d’accueil | person-42ghi654 | ghi654 |  |  |
+| 2024-07-18T19:15:39+00:00 | 54 | Page d’accueil | person-43abc321 | abc321 |  |  |
+| 2024-07-18T19:15:39+00:00 | 55 | Page d’accueil | person-44def321 | def321 |  |  |
+| 2024-07-18T19:15:39+00:00 | 56 | Page d’accueil | person-45ghi321 | ghi321 |  |  |
+| 2024-07-18T19:15:39+00:00 | 57 | Page d’accueil | person-46abc123 | abc123 |  |  |
 | 2024-07-18T19:15:39+00:00 | 58 | page de confirmation | person-46abc123 |  | 1 | 174,25 |
-| 2024-07-18T19:15:39+00:00 | 59 | page d’accueil | person-47def123 | def123 |  |  |
-| 2024-07-18T19:15:39+00:00 | 60 | page d’accueil | person-48ghi123 | ghi123 |  |  |
-| 2024-07-18T19:15:39+00:00 | 61 | page d’accueil | person-49abc456 | abc456 |  |  |
-| 2024-07-18T19:15:39+00:00 | 62 | page d’accueil | person-50def456 | def456 |  |  |
-| 2024-07-18T19:15:39+00:00 | 63 | page d’accueil | person-51ghi456 | ghi456 |  |  |
-| 2024-07-18T19:15:39+00:00 | 64 | page d’accueil | person-52abc789 | abc789 |  |  |
+| 2024-07-18T19:15:39+00:00 | 59 | Page d’accueil | person-47def123 | def123 |  |  |
+| 2024-07-18T19:15:39+00:00 | 60 | Page d’accueil | person-48ghi123 | ghi123 |  |  |
+| 2024-07-18T19:15:39+00:00 | 61 | Page d’accueil | person-49abc456 | abc456 |  |  |
+| 2024-07-18T19:15:39+00:00 | 62 | Page d’accueil | person-50def456 | def456 |  |  |
+| 2024-07-18T19:15:39+00:00 | 63 | Page d’accueil | person-51ghi456 | ghi456 |  |  |
+| 2024-07-18T19:15:39+00:00 | 64 | Page d’accueil | person-52abc789 | abc789 |  |  |
 | 2024-07-18T19:15:39+00:00 | 65 | page de confirmation | person-52abc789 |  | 1 | 149,25 |
-| 2024-07-18T19:15:39+00:00 | 66 | page d’accueil | person-53abc987 | abc987 |  |  |
-| 2024-07-18T19:15:39+00:00 | 67 | page d’accueil | person-54def987 | def987 |  |  |
-| 2024-07-18T19:15:39+00:00 | 68 | page d’accueil | person-55ghi987 | ghi987 |  |  |
+| 2024-07-18T19:15:39+00:00 | 66 | Page d’accueil | person-53abc987 | abc987 |  |  |
+| 2024-07-18T19:15:39+00:00 | 67 | Page d’accueil | person-54def987 | def987 |  |  |
+| 2024-07-18T19:15:39+00:00 | 68 | Page d’accueil | person-55ghi987 | ghi987 |  |  |
 | 2024-07-18T19:15:39+00:00 | 69 | page de confirmation | person-55ghi987 |  | 1 | 124,25 |
-| 2024-07-18T19:15:39+00:00 | 70 | page d’accueil | person-56abc123 | abc123 |  |  |
-| 2024-07-18T19:15:39+00:00 | 71 | page d’accueil | person-57def123 | def123 |  |  |
+| 2024-07-18T19:15:39+00:00 | 70 | Page d’accueil | person-56abc123 | abc123 |  |  |
+| 2024-07-18T19:15:39+00:00 | 71 | Page d’accueil | person-57def123 | def123 |  |  |
 | 2024-07-18T19:15:39+00:00 | 72 | page de confirmation | person-57def123 |  | 1 | 174,25 |
-| 2024-07-18T19:15:39+00:00 | 73 | page d’accueil | person-58ghi123 | ghi123 |  |  |
-| 2024-07-18T19:15:39+00:00 | 74 | page d’accueil | person-59abc456 | abc456 |  |  |
+| 2024-07-18T19:15:39+00:00 | 73 | Page d’accueil | person-58ghi123 | ghi123 |  |  |
+| 2024-07-18T19:15:39+00:00 | 74 | Page d’accueil | person-59abc456 | abc456 |  |  |
 | 2024-07-18T19:15:39+00:00 | 75 | page de confirmation | person-59abc456 |  | 1 | 149,25 |
-| 2024-07-18T19:15:39+00:00 | 76 | page d’accueil | person-60def456 | def456 |  |  |
-| 2024-07-18T19:15:39+00:00 | 77 | page d’accueil | person-61ghi456 | ghi456 |  |  |
-| 2024-07-18T19:15:39+00:00 | 78 | page d’accueil | person-62abc789 | abc789 |  |  |
+| 2024-07-18T19:15:39+00:00 | 76 | Page d’accueil | person-60def456 | def456 |  |  |
+| 2024-07-18T19:15:39+00:00 | 77 | Page d’accueil | person-61ghi456 | ghi456 |  |  |
+| 2024-07-18T19:15:39+00:00 | 78 | Page d’accueil | person-62abc789 | abc789 |  |  |
 | 2024-07-18T19:15:39+00:00 | 79 | page de confirmation | person-62abc789 |  | 1 | 159,25 |
-| 2024-07-18T19:15:39+00:00 | 80 | page d’accueil | person-63def789 | def789 |  |  |
-| 2024-07-18T19:15:39+00:00 | 81 | page d’accueil | person-64ghi789 | 789 ghi |  |  |
-| 2024-07-18T19:15:39+00:00 | 82 | page d’accueil | person-65abc987 | abc987 |  |  |
+| 2024-07-18T19:15:39+00:00 | 80 | Page d’accueil | person-63def789 | def789 |  |  |
+| 2024-07-18T19:15:39+00:00 | 81 | Page d’accueil | person-64ghi789 | ghi789 |  |  |
+| 2024-07-18T19:15:39+00:00 | 82 | Page d’accueil | person-65abc987 | abc987 |  |  |
 | 2024-07-18T19:15:39+00:00 | 83 | page de confirmation | person-65abc987 |  | 1 | 124,25 |
-| 2024-07-18T19:15:39+00:00 | 84 | page d’accueil | person-66def987 | def987 |  |  |
-| 2024-07-18T19:15:39+00:00 | 85 | page d’accueil | person-67ghi987 | ghi987 |  |  |
-| 2024-07-18T19:15:39+00:00 | 86 | page d’accueil | person-68abc654 | abc654 |  |  |
-| 2024-07-18T19:15:39+00:00 | 87 | page d’accueil | person-69def654 | def654 |  |  |
-| 2024-07-18T19:15:39+00:00 | 88 | page d’accueil | person-70ghi654 | ghi654 |  |  |
-| 2024-07-18T19:15:39+00:00 | 89 | page d’accueil | person-71abc321 | abc321 |  |  |
+| 2024-07-18T19:15:39+00:00 | 84 | Page d’accueil | person-66def987 | def987 |  |  |
+| 2024-07-18T19:15:39+00:00 | 85 | Page d’accueil | person-67ghi987 | ghi987 |  |  |
+| 2024-07-18T19:15:39+00:00 | 86 | Page d’accueil | person-68abc654 | abc654 |  |  |
+| 2024-07-18T19:15:39+00:00 | 87 | Page d’accueil | person-69def654 | def654 |  |  |
+| 2024-07-18T19:15:39+00:00 | 88 | Page d’accueil | person-70ghi654 | ghi654 |  |  |
+| 2024-07-18T19:15:39+00:00 | 89 | Page d’accueil | person-71abc321 | abc321 |  |  |
 | 2024-07-18T19:15:39+00:00 | 90 | page de confirmation | person-71abc321 |  | 1 | 174,25 |
-| 2024-07-18T19:15:39+00:00 | 91 | page d’accueil | person-72def321 | def321 |  |  |
-| 2024-07-18T19:15:39+00:00 | 92 | page d’accueil | person-73ghi321 | ghi321 |  |  |
-| 2024-07-18T19:15:39+00:00 | 93 | page d’accueil | person-74abc123 | abc123 |  |  |
-| 2024-07-18T19:15:39+00:00 | 94 | page d’accueil | person-75def123 | def123 |  |  |
-| 2024-07-18T19:15:39+00:00 | 95 | page d’accueil | person-76ghi123 | ghi123 |  |  |
-| 2024-07-18T19:15:39+00:00 | 96 | page d’accueil | person-77abc456 | abc456 |  |  |
+| 2024-07-18T19:15:39+00:00 | 91 | Page d’accueil | person-72def321 | def321 |  |  |
+| 2024-07-18T19:15:39+00:00 | 92 | Page d’accueil | person-73ghi321 | ghi321 |  |  |
+| 2024-07-18T19:15:39+00:00 | 93 | Page d’accueil | person-74abc123 | abc123 |  |  |
+| 2024-07-18T19:15:39+00:00 | 94 | Page d’accueil | person-75def123 | def123 |  |  |
+| 2024-07-18T19:15:39+00:00 | 95 | Page d’accueil | person-76ghi123 | ghi123 |  |  |
+| 2024-07-18T19:15:39+00:00 | 96 | Page d’accueil | person-77abc456 | abc456 |  |  |
 | 2024-07-18T19:15:39+00:00 | 97 | page de confirmation | person-77abc456 |  | 1 | 149,25 |
-| 2024-07-18T19:15:39+00:00 | 98 | page d’accueil | person-78def456 | def456 |  |  |
-| 2024-07-18T19:15:39+00:00 | 99 | page d’accueil | person-79ghi456 | ghi456 |  |  |
-| 2024-07-18T19:15:39+00:00 | 100 | page d’accueil | person-80abc789 | abc789 |  |  |
-| 2024-07-18T19:15:39+00:00 | 101 | page d’accueil | person-81abc987 | abc987 |  |  |
+| 2024-07-18T19:15:39+00:00 | 98 | Page d’accueil | person-78def456 | def456 |  |  |
+| 2024-07-18T19:15:39+00:00 | 99 | Page d’accueil | person-79ghi456 | ghi456 |  |  |
+| 2024-07-18T19:15:39+00:00 | 100 | Page d’accueil | person-80abc789 | abc789 |  |  |
+| 2024-07-18T19:15:39+00:00 | 101 | Page d’accueil | person-81abc987 | abc987 |  |  |
 | 2024-07-18T19:15:39+00:00 | 102 | page de confirmation | person-81abc987 |  | 1 | 139,25 |
-| 2024-07-18T19:15:39+00:00 | 103 | page d’accueil | person-82def987 | def987 |  |  |
-| 2024-07-18T19:15:39+00:00 | 104 | page d’accueil | person-83ghi987 | ghi987 |  |  |
-| 2024-07-18T19:15:39+00:00 | 105 | page d’accueil | person-84abc654 | abc654 |  |  |
-| 2024-07-18T19:15:39+00:00 | 106 | page d’accueil | person-85def654 | def654 |  |  |
+| 2024-07-18T19:15:39+00:00 | 103 | Page d’accueil | person-82def987 | def987 |  |  |
+| 2024-07-18T19:15:39+00:00 | 104 | Page d’accueil | person-83ghi987 | ghi987 |  |  |
+| 2024-07-18T19:15:39+00:00 | 105 | Page d’accueil | person-84abc654 | abc654 |  |  |
+| 2024-07-18T19:15:39+00:00 | 106 | Page d’accueil | person-85def654 | def654 |  |  |
 | 2024-07-18T19:15:39+00:00 | 107 | page de confirmation | person-85def654 |  | 1 | 124,25 |
-| 2024-07-18T19:15:39+00:00 | 108 | page d’accueil | person-86ghi654 | ghi654 |  |  |
-| 2024-07-18T19:15:39+00:00 | 109 | page d’accueil | person-87abc321 | abc321 |  |  |
-| 2024-07-18T19:15:39+00:00 | 110 | page d’accueil | person-88ghi456 | ghi456 |  |  |
-| 2024-07-18T19:15:39+00:00 | 111 | page d’accueil | person-89abc789 | abc789 |  |  |
+| 2024-07-18T19:15:39+00:00 | 108 | Page d’accueil | person-86ghi654 | ghi654 |  |  |
+| 2024-07-18T19:15:39+00:00 | 109 | Page d’accueil | person-87abc321 | abc321 |  |  |
+| 2024-07-18T19:15:39+00:00 | 110 | Page d’accueil | person-88ghi456 | ghi456 |  |  |
+| 2024-07-18T19:15:39+00:00 | 111 | Page d’accueil | person-89abc789 | abc789 |  |  |
 | 2024-07-18T19:15:39+00:00 | 112 | page de confirmation | person-89abc789 |  | 1 | 174,25 |
-| 2024-07-18T19:15:39+00:00 | 113 | page d’accueil | person-90def789 | def789 |  |  |
-| 2024-07-18T19:15:39+00:00 | 114 | page d’accueil | person-91ghi789 | 789 ghi |  |  |
-| 2024-07-18T19:15:39+00:00 | 115 | page d’accueil | person-92abc987 | abc987 |  |  |
+| 2024-07-18T19:15:39+00:00 | 113 | Page d’accueil | person-90def789 | def789 |  |  |
+| 2024-07-18T19:15:39+00:00 | 114 | Page d’accueil | person-91ghi789 | ghi789 |  |  |
+| 2024-07-18T19:15:39+00:00 | 115 | Page d’accueil | person-92abc987 | abc987 |  |  |
 | 2024-07-18T19:15:39+00:00 | 116 | page de confirmation | person-92abc987 |  | 1 | 149,25 |
-| 2024-07-18T19:15:39+00:00 | 117 | page d’accueil | person-93def987 | def987 |  |  |
-| 2024-07-18T19:15:39+00:00 | 118 | page d’accueil | person-94ghi987 | ghi987 |  |  |
-| 2024-07-18T19:15:39+00:00 | 119 | page d’accueil | person-95abc654 | abc654 |  |  |
-| 2024-07-18T19:15:39+00:00 | 120 | page d’accueil | person-96def654 | def654 |  |  |
+| 2024-07-18T19:15:39+00:00 | 117 | Page d’accueil | person-93def987 | def987 |  |  |
+| 2024-07-18T19:15:39+00:00 | 118 | Page d’accueil | person-94ghi987 | ghi987 |  |  |
+| 2024-07-18T19:15:39+00:00 | 119 | Page d’accueil | person-95abc654 | abc654 |  |  |
+| 2024-07-18T19:15:39+00:00 | 120 | Page d’accueil | person-96def654 | def654 |  |  |
 | 2024-07-18T19:15:39+00:00 | 121 | page de confirmation | person-96def654 |  | 1 | 124,25 |
-| 2024-07-18T19:15:39+00:00 | 122 | page d’accueil | person-97ghi654 | ghi654 |  |  |
-| 2024-07-18T19:15:39+00:00 | 123 | page d’accueil | person-98abc321 | abc321 |  |  |
-| 2024-07-18T19:15:39+00:00 | 124 | page d’accueil | person-99def321 | def321 |  |  |
-| 2024-07-18T19:15:39+00:00 | 125 | page d’accueil | person-100ghi321 | ghi321 |  |  |
-| 2024-07-18T19:15:39+00:00 | 126 | page d’accueil | person-101abc123 | abc123 |  |  |
-| 2024-07-18T19:15:39+00:00 | 127 | page d’accueil | person-102def123 | def123 |  |  |
+| 2024-07-18T19:15:39+00:00 | 122 | Page d’accueil | person-97ghi654 | ghi654 |  |  |
+| 2024-07-18T19:15:39+00:00 | 123 | Page d’accueil | person-98abc321 | abc321 |  |  |
+| 2024-07-18T19:15:39+00:00 | 124 | Page d’accueil | person-99def321 | def321 |  |  |
+| 2024-07-18T19:15:39+00:00 | 125 | Page d’accueil | person-100ghi321 | ghi321 |  |  |
+| 2024-07-18T19:15:39+00:00 | 126 | Page d’accueil | person-101abc123 | abc123 |  |  |
+| 2024-07-18T19:15:39+00:00 | 127 | Page d’accueil | person-102def123 | def123 |  |  |
 | 2024-07-18T19:15:39+00:00 | 128 | page de confirmation | person-102def123 |  | 1 | 174,25 |
-| 2024-07-18T19:15:39+00:00 | 129 | page d’accueil | person-103ghi123 | ghi123 |  |  |
-| 2024-07-18T19:15:39+00:00 | 130 | page d’accueil | person-104abc456 | abc456 |  |  |
-| 2024-07-18T19:15:39+00:00 | 131 | page d’accueil | person-105def456 | def456 |  |  |
-| 2024-07-18T19:15:39+00:00 | 132 | page d’accueil | person-106ghi456 | ghi456 |  |  |
-| 2024-07-18T19:15:39+00:00 | 133 | page d’accueil | person-107abc789 | abc789 |  |  |
-| 2024-07-18T19:15:39+00:00 | 134 | page d’accueil | person-108abc987 | abc987 |  |  |
+| 2024-07-18T19:15:39+00:00 | 129 | Page d’accueil | person-103ghi123 | ghi123 |  |  |
+| 2024-07-18T19:15:39+00:00 | 130 | Page d’accueil | person-104abc456 | abc456 |  |  |
+| 2024-07-18T19:15:39+00:00 | 131 | Page d’accueil | person-105def456 | def456 |  |  |
+| 2024-07-18T19:15:39+00:00 | 132 | Page d’accueil | person-106ghi456 | ghi456 |  |  |
+| 2024-07-18T19:15:39+00:00 | 133 | Page d’accueil | person-107abc789 | abc789 |  |  |
+| 2024-07-18T19:15:39+00:00 | 134 | Page d’accueil | person-108abc987 | abc987 |  |  |
 | 2024-07-18T19:15:39+00:00 | 135 | page de confirmation | person-108abc987 |  | 1 | 149,25 |
-| 2024-07-18T19:15:39+00:00 | 136 | page d’accueil | person-109def987 | def987 |  |  |
-| 2024-07-18T19:15:39+00:00 | 137 | page d’accueil | person-110ghi987 | ghi987 |  |  |
+| 2024-07-18T19:15:39+00:00 | 136 | Page d’accueil | person-109def987 | def987 |  |  |
+| 2024-07-18T19:15:39+00:00 | 137 | Page d’accueil | person-110ghi987 | ghi987 |  |  |
 | 2024-07-18T19:15:39+00:00 | 138 | page de confirmation | person-110ghi987 |  |  |  |
-| 2024-07-18T19:15:39+00:00 | 139 | page d’accueil | person-111def987 | def987 |  |  |
-| 2024-07-18T19:15:39+00:00 | 140 | page d’accueil | person-112def987 |  | 1 | 124,25 |
+| 2024-07-18T19:15:39+00:00 | 139 | Page d’accueil | person-111def987 | def987 |  |  |
+| 2024-07-18T19:15:39+00:00 | 140 | Page d’accueil | person-112def987 |  | 1 | 124,25 |
 | 2024-07-18T19:15:39+00:00 | 141 | page de confirmation | person-112def987 |  | 1 | 149,25 |
-| 2024-07-18T19:15:39+00:00 | 142 | page d’accueil | person-113ghi987 | ghi987 |  |  |
-| 2024-07-18T19:15:39+00:00 | 143 | page d’accueil | person-114abc654 | abc654 |  |  |
-| 2024-07-18T19:15:39+00:00 | 144 | page d’accueil | person-115def654 | def654 |  |  |
+| 2024-07-18T19:15:39+00:00 | 142 | Page d’accueil | person-113ghi987 | ghi987 |  |  |
+| 2024-07-18T19:15:39+00:00 | 143 | Page d’accueil | person-114abc654 | abc654 |  |  |
+| 2024-07-18T19:15:39+00:00 | 144 | Page d’accueil | person-115def654 | def654 |  |  |
 | 2024-07-18T19:15:39+00:00 | 145 | page de confirmation | person-115def654 |  | 1 | 159,25 |
-| 2024-07-18T19:15:39+00:00 | 146 | page d’accueil | person-116ghi654 | ghi654 |  |  |
-| 2024-07-18T19:15:39+00:00 | 147 | page d’accueil | person-117abc321 | abc321 |  |  |
-| 2024-07-18T19:15:39+00:00 | 148 | page d’accueil | person-118def321 | def321 |  |  |
+| 2024-07-18T19:15:39+00:00 | 146 | Page d’accueil | person-116ghi654 | ghi654 |  |  |
+| 2024-07-18T19:15:39+00:00 | 147 | Page d’accueil | person-117abc321 | abc321 |  |  |
+| 2024-07-18T19:15:39+00:00 | 148 | Page d’accueil | person-118def321 | def321 |  |  |
 | 2024-07-18T19:15:39+00:00 | 149 | page de confirmation | person-118def321 |  | 1 | 124,25 |
-| 2024-07-18T19:15:39+00:00 | 150 | page d’accueil | person-119ghi321 | ghi321 |  |  |
-| 2024-07-18T19:15:39+00:00 | 151 | page d’accueil | person-120abc123 | abc123 |  |  |
-| 2024-07-18T19:15:39+00:00 | 152 | page d’accueil | person-121def123 | def123 |  |  |
-| 2024-07-18T19:15:39+00:00 | 153 | page d’accueil | person-122ghi123 | ghi123 |  |  |
-| 2024-07-18T19:15:39+00:00 | 154 | page d’accueil | person-123abc456 | abc456 |  |  |
-| 2024-07-18T19:15:39+00:00 | 155 | page d’accueil | person-124def456 | def456 |  |  |
+| 2024-07-18T19:15:39+00:00 | 150 | Page d’accueil | person-119ghi321 | ghi321 |  |  |
+| 2024-07-18T19:15:39+00:00 | 151 | Page d’accueil | person-120abc123 | abc123 |  |  |
+| 2024-07-18T19:15:39+00:00 | 152 | Page d’accueil | person-121def123 | def123 |  |  |
+| 2024-07-18T19:15:39+00:00 | 153 | Page d’accueil | person-122ghi123 | ghi123 |  |  |
+| 2024-07-18T19:15:39+00:00 | 154 | Page d’accueil | person-123abc456 | abc456 |  |  |
+| 2024-07-18T19:15:39+00:00 | 155 | Page d’accueil | person-124def456 | def456 |  |  |
 | 2024-07-18T19:15:39+00:00 | 156 | page de confirmation | person-124def456 |  | 1 | 174,25 |
-| 2024-07-18T19:15:39+00:00 | 157 | page d’accueil | person-125ghi456 | ghi456 |  |  |
-| 2024-07-18T19:15:39+00:00 | 158 | page d’accueil | person-126abc789 | abc789 |  |  |
-| 2024-07-18T19:15:39+00:00 | 159 | page d’accueil | person-127abc987 | abc987 |  |  |
-| 2024-07-18T19:15:39+00:00 | 160 | page d’accueil | person-128def987 | def987 |  |  |
-| 2024-07-18T19:15:39+00:00 | 161 | page d’accueil | person-129ghi987 | ghi987 |  |  |
-| 2024-07-18T19:15:39+00:00 | 162 | page d’accueil | person-130abc654 | abc654 |  |  |
+| 2024-07-18T19:15:39+00:00 | 157 | Page d’accueil | person-125ghi456 | ghi456 |  |  |
+| 2024-07-18T19:15:39+00:00 | 158 | Page d’accueil | person-126abc789 | abc789 |  |  |
+| 2024-07-18T19:15:39+00:00 | 159 | Page d’accueil | person-127abc987 | abc987 |  |  |
+| 2024-07-18T19:15:39+00:00 | 160 | Page d’accueil | person-128def987 | def987 |  |  |
+| 2024-07-18T19:15:39+00:00 | 161 | Page d’accueil | person-129ghi987 | ghi987 |  |  |
+| 2024-07-18T19:15:39+00:00 | 162 | Page d’accueil | person-130abc654 | abc654 |  |  |
 | 2024-07-18T19:15:39+00:00 | 163 | page de confirmation | person-130abc654 |  | 1 | 149,25 |
-| 2024-07-18T19:15:39+00:00 | 164 | page d’accueil | person-131def654 | def654 |  |  |
-| 2024-07-18T19:15:39+00:00 | 165 | page d’accueil | person-132ghi654 | ghi654 |  |  |
-| 2024-07-18T19:15:39+00:00 | 166 | page d’accueil | person-133abc321 | abc321 |  |  |
-| 2024-07-18T19:15:39+00:00 | 167 | page d’accueil | person-134ghi456 | ghi456 |  |  |
+| 2024-07-18T19:15:39+00:00 | 164 | Page d’accueil | person-131def654 | def654 |  |  |
+| 2024-07-18T19:15:39+00:00 | 165 | Page d’accueil | person-132ghi654 | ghi654 |  |  |
+| 2024-07-18T19:15:39+00:00 | 166 | Page d’accueil | person-133abc321 | abc321 |  |  |
+| 2024-07-18T19:15:39+00:00 | 167 | Page d’accueil | person-134ghi456 | ghi456 |  |  |
 | 2024-07-18T19:15:39+00:00 | 168 | page de confirmation | person-134ghi456 |  | 1 | 139,25 |
-| 2024-07-18T19:15:39+00:00 | 169 | page d’accueil | person-135abc789 | abc789 |  |  |
-| 2024-07-18T19:15:39+00:00 | 170 | page d’accueil | person-136def789 | def789 |  |  |
-| 2024-07-18T19:15:39+00:00 | 171 | page d’accueil | person-137ghi789 | 789 ghi |  |  |
-| 2024-07-18T19:15:39+00:00 | 172 | page d’accueil | person-138abc987 | abc987 |  |  |
+| 2024-07-18T19:15:39+00:00 | 169 | Page d’accueil | person-135abc789 | abc789 |  |  |
+| 2024-07-18T19:15:39+00:00 | 170 | Page d’accueil | person-136def789 | def789 |  |  |
+| 2024-07-18T19:15:39+00:00 | 171 | Page d’accueil | person-137ghi789 | ghi789 |  |  |
+| 2024-07-18T19:15:39+00:00 | 172 | Page d’accueil | person-138abc987 | abc987 |  |  |
 | 2024-07-18T19:15:39+00:00 | 173 | page de confirmation | person-138abc987 |  | 1 | 124,25 |
-| 2024-07-18T19:15:39+00:00 | 174 | page d’accueil | person-139def987 | def987 |  |  |
-| 2024-07-18T19:15:39+00:00 | 175 | page d’accueil | person-140ghi987 | ghi987 |  |  |
-| 2024-07-18T19:15:39+00:00 | 176 | page d’accueil | person-141abc654 | abc654 |  |  |
-| 2024-07-18T19:15:39+00:00 | 177 | page d’accueil | person-142def654 | def654 |  |  |
+| 2024-07-18T19:15:39+00:00 | 174 | Page d’accueil | person-139def987 | def987 |  |  |
+| 2024-07-18T19:15:39+00:00 | 175 | Page d’accueil | person-140ghi987 | ghi987 |  |  |
+| 2024-07-18T19:15:39+00:00 | 176 | Page d’accueil | person-141abc654 | abc654 |  |  |
+| 2024-07-18T19:15:39+00:00 | 177 | Page d’accueil | person-142def654 | def654 |  |  |
 | 2024-07-18T19:15:39+00:00 | 178 | page de confirmation | person-142def654 |  | 1 | 174,25 |
-| 2024-07-18T19:15:39+00:00 | 179 | page d’accueil | person-143ghi654 | ghi654 |  |  |
+| 2024-07-18T19:15:39+00:00 | 179 | Page d’accueil | person-143ghi654 | ghi654 |  |  |
 
 [![DataDownload](/help/assets/icons/DataDownload.svg)](./assets/event-data.csv)
 
@@ -267,7 +267,7 @@ Les données de recherche sont disponibles dans l’exemple de jeu de données d
 | 6 | ghi456 | ghi-adgroup | Campagne 456 |
 | 7 | abc789 | abc-adgroup | Campagne 789 |
 | 8 | def789 | def-adgroup | Campagne 789 |
-| 9 | 789 ghi | ghi-adgroup | Campagne 789 |
+| 9 | ghi789 | ghi-adgroup | Campagne 789 |
 | 10 | abc987 | abc-adgroup | Campagne 987 |
 | 11 | def987 | def-adgroup | Campagne 987 |
 | 12 | ghi987 | ghi-adgroup | Campagne 987 |
@@ -314,7 +314,7 @@ Pour ajouter un groupe de champs contenant les champs de vos données d’exempl
    1. Saisissez un **[!UICONTROL Nom du champ]** : `campaign_id`
    1. Saisissez un **[!UICONTROL Nom d’affichage]** : `campaign_id`
    1. Sélectionnez un **[!UICONTROL Type]** dans le menu déroulant **[!UICONTROL Sélectionner le type de données]** : **[!UICONTROL Chaîne]**
-   1. Assurez-vous que **[!UICONTROL Affecter à]** **[!UICONTROL Groupe de champs]** est sélectionné, puis sélectionnez **[!UICONTROL Exemple de données de résumé]** dans la liste déroulante.
+   1. Assurez-vous que **[!UICONTROL Affecter à]** **[!UICONTROL Groupe de champs]** est sélectionné, puis sélectionnez **[!UICONTROL Exemple de données de résumé]** dans le menu déroulant.
    1. Faites défiler jusqu’en bas, puis sélectionnez **[!UICONTROL Appliquer]**.
 1. Répétez l&#39;étape précédente pour les autres champs des données récapitulatives. Consultez le tableau ci-dessous pour connaître les valeurs correctes.
 
@@ -340,7 +340,7 @@ Vous avez maintenant défini un schéma qui détaille le modèle de vos données
 
 Pour stocker vos données de résumé dans Experience Platform, vous devez d’abord créer un jeu de données, puis charger vos données de résumé dans le jeu de données.
 
-Pour créer un jeu de données :
+Pour créer un jeu de données, procédez comme suit :
 
 1. Sélectionnez **[!UICONTROL Experience Platform]** dans le champ   ![App](/help/assets/icons/Apps.svg)   sélecteur d’applications.
 1. Sélectionnez **[!UICONTROL Jeux de données]** dans le rail de gauche.
@@ -362,7 +362,7 @@ Pour charger vos données d’exemple dans ce jeu de données :
    1. Sélectionnez **[!UICONTROL Launch]** dans le panneau **[!UICONTROL Mapper CSV à un schéma XDM]**.
 1. À l’étape **[!UICONTROL Détails du flux de données]** de l’assistant **[!UICONTROL Workflows]** > **[!UICONTROL Mapper CSV à un schéma XDM]** :
    1. Sélectionnez **[!UICONTROL Jeu de données existant]** pour **[!UICONTROL Jeu de données cible]**.
-   1. Sélectionnez **[!UICONTROL Exemple de jeu de données de résumé]** dans la liste déroulante.
+   1. Sélectionnez **[!UICONTROL Exemple de jeu de données de résumé]** dans le menu déroulant.
    1. Sélectionnez **[!UICONTROL Suivant]**.
 1. À l’étape **[!UICONTROL Sélectionner des données]** de l’assistant **[!UICONTROL Workflows]** > **[!UICONTROL Mapper CSV à un schéma XDM]** :
    1. Effectuez un glisser-déposer de votre fichier avec des données récapitulatives au format CSV dans **[!UICONTROL Glisser-déposer des fichiers]**. Vous pouvez également utiliser **[!UICONTROL Choisir les fichiers]** pour sélectionner votre fichier.
@@ -391,8 +391,8 @@ Pour utiliser vos données d’exemple dans Customer Journey Analytics, vous dev
 1. Sélectionnez **[!UICONTROL Créer une connexion]**.
 1. Dans **[!UICONTROL Connexions]** > **[!UICONTROL Connexion sans titre]** :
    1. Saisissez un **[!UICONTROL Nom de la connexion]** par exemple `Example Connection Using Summary Data`.
-   1. Sélectionnez la sandbox qui contient le jeu de données que vous avez créé et les autres jeux de données que vous souhaitez inclure dans la liste déroulante Sandbox .
-   1. Sélectionnez **[!UICONTROL moins de 1 million]** dans la liste déroulante **[!UICONTROL Nombre moyen d’événements quotidiens]**.
+   1. Sélectionnez le sandbox qui contient le jeu de données que vous avez créé et les autres jeux de données que vous souhaitez inclure dans le menu déroulant Sandbox .
+   1. Sélectionnez **[!UICONTROL moins de 1 million]** dans le menu déroulant **[!UICONTROL Nombre moyen d’événements quotidiens]**.
    1. Sélectionnez **[!UICONTROL Ajouter des jeux de données]**.
    1. À l’étape **[!UICONTROL Sélectionner des jeux de données]** de l’assistant **[!UICONTROL Ajouter des jeux de données]** :
       1. Recherchez ![Rechercher](/help/assets/icons/Search.svg) et sélectionnez **[!UICONTROL Exemple de jeu de données de résumé]**, **[!UICONTROL Exemple de jeu de données d’événement]** et **[!UICONTROL Exemple de jeu de données de recherche]**.
@@ -461,7 +461,7 @@ Pour que vous puissiez générer des rapports sur les données correctes dans Wo
          | Coût | Exemple de jeu de données de résumé | Double | *_tenant*.cost |
          | Impressions | Exemple de jeu de données de résumé | Nombre entier | *_tenant*.impression |
          | Commandes | Exemple de jeu de données de données d’événement | Nombre entier | *_tenant*.orders |
-         | Recettes | Exemple de jeu de données de données d’événement | Double | *_tenant*.revenue_amount |
+         | Chiffre dʼaffaires | Exemple de jeu de données de données d’événement | Double | *_tenant*.revenue_amount |
 
          **Dimensions**
 
@@ -483,7 +483,7 @@ Pour que vous puissiez générer des rapports sur les données correctes dans Wo
          ![Données du résumé du code de tracking](../assets/tracking-code-summary-data.png)
          1. Développez ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Summary Data Group]**.
          1. Activez **[!UICONTROL Créer un regroupement]**.
-         1. Sélectionnez **[!UICONTROL Identifiant de campagne]** dans la liste déroulante **[!UICONTROL Dimension]**. Cette étape permet de s’assurer que les données d’événement et les données récapitulatives sont correctement combinées pour le compte rendu des performances.
+         1. Sélectionnez **[!UICONTROL Identifiant de campagne]** dans le menu déroulant **[!UICONTROL Dimension]**. Cette étape permet de s’assurer que les données d’événement et les données récapitulatives sont correctement combinées pour le compte rendu des performances.
          1. Vous pouvez éventuellement activer l’option **[!UICONTROL Masquer dans les rapports]**. Le paramètre [!UICONTROL Masquer dans les rapports] permet de s’assurer que la dimension sélectionnée ([!UICONTROL ID de campagne]) est masquée dans Analysis Workspace et d’autres outils de création de rapports Customer Journey Analytics. Si vous avez activé cette option, vous pouvez la vérifier :
             1. Sélectionnez la dimension **[!UICONTROL Identifiant de campagne]** dans la liste **[!UICONTROL Dimensions]**.
             1. Notez que la fonction **[!UICONTROL Masquer le composant dans les rapports]** dans **[!UICONTROL Paramètres des composants]** est désormais automatiquement activée.
@@ -506,27 +506,27 @@ Pour que vous puissiez générer des rapports sur les données correctes dans Wo
 
          1. Développez ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Summary Data Group]**.
          1. Activez **[!UICONTROL Créer un regroupement]**.
-         1. Sélectionnez **[!UICONTROL Nom de la campagne (champ dérivé de la recherche)]** dans la liste déroulante **[!UICONTROL Dimension]**. Cette étape permet de s’assurer que le nom de la campagne (recherche) de l’exemple de jeu de données de recherche peut être utilisé en toute sécurité dans les rapports (voir [Workspace](#workspace)).
+         1. Sélectionnez **[!UICONTROL Nom de la campagne (champ dérivé de la recherche)]** dans le menu déroulant **[!UICONTROL Dimension]**. Cette étape permet de s’assurer que le nom de la campagne (recherche) de l’exemple de jeu de données de recherche peut être utilisé en toute sécurité dans les rapports (voir [Workspace](#workspace)).
 
       1. Sélectionnez la mesure **[!UICONTROL Recettes]** dans la liste **[!UICONTROL Mesures]**. Dans le panneau des composants :
 
          ![Données récapitulatives des revenus](../assets/revenue-summary-data.png)
          1. Développez ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Attribution]**.
-            1. Sélectionnez ![AttributeLastTouch](/help/assets/icons/AttributeLastTouch.svg) **[!UICONTROL Dernière touche]** dans la liste déroulante **[!UICONTROL Modèle d’attribution]**.
-            1. Sélectionnez **[!UICONTROL 30 jours]** dans la liste déroulante **[!UICONTROL Intervalle de recherche en amont]**.
+            1. Sélectionnez ![AttributeLastTouch](/help/assets/icons/AttributeLastTouch.svg) **[!UICONTROL Dernière touche]** dans le menu déroulant **[!UICONTROL Modèle d’attribution]**.
+            1. Sélectionnez **[!UICONTROL 30 jours]** dans le menu déroulant **[!UICONTROL Intervalle de recherche en amont]**.
          1. Développez ![ChevronDown](/help/assets/icons/ChevronDown.svg) **Format**.
-            1. Sélectionnez **[!UICONTROL Devise]** dans la liste déroulante **[!UICONTROL Format]**.
-            1. Sélectionnez **[!UICONTROL 2]** dans la liste déroulante **[!UICONTROL Nombre de décimales]**.
+            1. Sélectionnez **[!UICONTROL Devise]** dans le menu déroulant **[!UICONTROL Format]**.
+            1. Sélectionnez **[!UICONTROL 2]** dans le menu déroulant **[!UICONTROL Nombre de décimales]**.
 
       1. Sélectionnez la mesure **[!UICONTROL Commandes]** dans la liste **[!UICONTROL Mesures]**. Dans le panneau des composants :
 
          ![Données récapitulatives des commandes](../assets/orders-summary-data.png)
          1. Développez ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Attribution]**.
-            1. Sélectionnez ![AttributeLastTouch](/help/assets/icons/AttributeLastTouch.svg) **[!UICONTROL Dernière touche]** dans la liste déroulante **[!UICONTROL Modèle d’attribution]**.
-            1. Sélectionnez **[!UICONTROL 30 jours]** dans la liste déroulante **[!UICONTROL Intervalle de recherche en amont]**.
+            1. Sélectionnez ![AttributeLastTouch](/help/assets/icons/AttributeLastTouch.svg) **[!UICONTROL Dernière touche]** dans le menu déroulant **[!UICONTROL Modèle d’attribution]**.
+            1. Sélectionnez **[!UICONTROL 30 jours]** dans le menu déroulant **[!UICONTROL Intervalle de recherche en amont]**.
          1. Développez ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Format]**.
-            1. Sélectionnez **[!UICONTROL Décimal]** dans la liste déroulante **[!UICONTROL Format]**.
-            1. Sélectionnez **[!UICONTROL ▲ Bon (vert)]** dans la liste déroulante **[!UICONTROL Afficher la tendance à la hausse sous forme de]**.
+            1. Sélectionnez **[!UICONTROL Décimal]** dans le menu déroulant **[!UICONTROL Format]**.
+            1. Sélectionnez **[!UICONTROL ▲ Bon (vert)]** dans le menu déroulant **[!UICONTROL Afficher la tendance à la hausse sous forme de]**.
 
       1. Sélectionnez **[!UICONTROL Enregistrer et continuer]**.
 
