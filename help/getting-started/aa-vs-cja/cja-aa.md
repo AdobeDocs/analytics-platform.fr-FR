@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: 8972a195554971006eb4315bdd216947d6cf79f3
 workflow-type: tm+mt
-source-wordcount: '2441'
-ht-degree: 94%
+source-wordcount: '2482'
+ht-degree: 93%
 
 ---
 
@@ -37,6 +37,7 @@ Le tableau suivant répertorie les fonctionnalités disponibles dans Customer Jo
 | **Zone de travail du parcours** | La [zone de travail du parcours](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/journey-canvas?lang=fr) est une visualisation dans Analysis Workspace qui vous permet d’analyser la manière dont les personnes passent par un parcours défini ou en sortent. |
 | **Utilisation du produit** | [Utilisation du produit](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/tools/product-usage/usage-overview) indique comment votre entreprise utilise Customer Journey Analytics. |
 | **Transformations au moment du rapport** | Les [vues de données](/help/data-views/data-views.md) dans Customer Journey Analytics vous permettent d’interpréter plus en détail les données d’une connexion. Vous pouvez modifier ou supprimer des données sans modifier la mise en œuvre, utiliser des sous-chaînes pour manipuler des dimensions, créer des mesures à partir de n’importe quelle valeur, ou encore filtrer les sous-événements. Toutes ces transformations sont faites de manière non destructive. Adobe Analytics offre des fonctionnalités limitées par le biais de suites de rapports virtuelles et de durées de session personnalisées. |
+| **Mesures et dimensions partagées entre les vues de données** | Permet d’[appliquer des paramètres de dimension et de mesure à plusieurs vues de données](/help/data-views/shared-metrics-dimensions/smd-overview.md). Les modifications apportées à une dimension ou à une mesure partagée s’appliquent à toutes les instances de cette dimension ou mesure dans toutes les vues de données applicables. |
 | **Accès SQL** | À l’aide de l’option Data Distiller, Customer Journey Analytics peut supprimer les limites des données collectées lors du traitement du serveur principal d’Adobe. Vous pouvez modifier vos données grâce à SQL, créer des valeurs et des jeux de données propres à votre entreprise et continuer à explorer. Analytics ne prend en charge aucun type d’accès SQL à ses données. |
 | **Assemblage** | Le [Groupement](/help/stitching/overview.md) est une puissante fonctionnalité qui élève la capacité d’un jeu de données d’événement relative à l’analyse cross-canal. L’analyse cross-canal est un cas d’utilisation principal que Customer Journey Analytics peut traiter, ce qui vous permet de combiner et d’exécuter en toute transparence des rapports sur plusieurs jeux de données de différents canaux, en fonction d’un identifiant commun (ID de personne). |
 | **Modèles dans Adobe Journey Optimizer** | Personnalisez la nouvelle interface de création de rapports d’Adobe Journey Optimizer en créant ou en modifiant un [modèle](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/templates/create-templates?lang=fr) dans Customer Journey Analytics, puis en enregistrant le modèle à utiliser sur la page Rapports dans Journey Optimizer. |
