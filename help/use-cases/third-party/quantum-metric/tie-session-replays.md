@@ -7,9 +7,9 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: fcc36457-4ce9-4c93-93e2-de03becfd5da
-source-git-commit: d48a6fc306a84eeeb189e1b272bfded7ed26ed70
+source-git-commit: a03505aeb56f99b28f50819765a496705876b89c
 workflow-type: tm+mt
-source-wordcount: '811'
+source-wordcount: '812'
 ht-degree: 2%
 
 ---
@@ -24,7 +24,7 @@ Ces étapes supposent que vous utilisiez les balises dans la collecte de donnée
 
 Pour plus d’informations, consultez la documentation de l’[extension de balise Quantum Metric](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric).
 
-## Étape 1 : créer un champ de schéma pour s’adapter aux données de mesure quantique
+## Étape 1 : créer un champ de schéma pour s’adapter à l’ID de session Quantum Metric
 
 Ce cas d’utilisation nécessite un champ de schéma dédié vers lequel envoyer des données. Vous pouvez créer ce champ à l’emplacement de votre choix dans votre schéma et le nommer comme vous le souhaitez. Des exemples de valeurs sont fournis si votre organisation n’a pas de préférence en matière de nom ou d’emplacement.
 
@@ -32,7 +32,7 @@ Ce cas d’utilisation nécessite un champ de schéma dédié vers lequel envoye
 1. Accédez à **[!UICONTROL Collecte de données]** > **[!UICONTROL Schémas]**.
 1. Sélectionnez le schéma souhaité dans la liste.
 1. Sélectionnez l’icône ![Ajouter un champ](/help/assets/icons/AddCircle.svg) en regard de l’objet souhaité. Par exemple, en regard de `Implementation Details`.
-1. Dans la partie droite, saisissez le [!UICONTROL Nom] souhaité. Par exemple : `qmSessionId`.
+1. Sur la droite, saisissez le [!UICONTROL Nom] souhaité. Par exemple : `qmSessionId`.
 1. Saisissez le [!UICONTROL Nom d’affichage] souhaité. Par exemple : `Quantum Metric session ID`.
 1. Sélectionnez le [!UICONTROL Type] en tant que **[!UICONTROL Chaîne]**.
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
