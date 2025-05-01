@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
-source-git-commit: f39cf7c386c42488d6607154fc7922911df5527c
+source-git-commit: d695fcb8dbd98675914c687f3dfaf8c5f0017073
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 1%
