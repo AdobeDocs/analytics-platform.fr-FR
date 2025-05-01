@@ -7,10 +7,10 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: 1b7d5159-39b2-4ba4-be64-f448ae53c70e
-source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
+source-git-commit: 11dc62cda2ceb7afabd3abd0944420601c8fa235
 workflow-type: tm+mt
-source-wordcount: '552'
-ht-degree: 0%
+source-wordcount: '665'
+ht-degree: 1%
 
 ---
 
@@ -25,7 +25,20 @@ Ce cas d’utilisation a deux exigences :
 * Vous devez avoir droit au package **Dev Ops** de Quantum Metric.
 * Vous devez utiliser les balises dans la collecte de données Adobe Experience Platform.
 
-## Étape 1 : capturer des événements de friction à l’aide de l’extension de balise Quantum Metric
+## Étape 1 : créer un champ de schéma pour s’adapter aux événements de frottement de mesure quantique
+
+Ce cas d’utilisation nécessite un champ de schéma dédié vers lequel envoyer des données. Vous pouvez créer ce champ à l’emplacement de votre choix dans votre schéma et le nommer comme vous le souhaitez. Des exemples de valeurs sont fournis si votre organisation n’a pas de préférence en matière de nom ou d’emplacement.
+
+1. Connectez-vous à [experience.adobe.com](https://experience.adobe.com).
+1. Accédez à **[!UICONTROL Collecte de données]** > **[!UICONTROL Schémas]**.
+1. Sélectionnez le schéma souhaité dans la liste.
+1. Sélectionnez l’icône ![Ajouter un champ](/help/assets/icons/AddCircle.svg) en regard de l’objet souhaité. Par exemple, en regard de `Implementation Details`.
+1. Sur la droite, saisissez le [!UICONTROL Nom] souhaité. Par exemple : `qmErrorName`.
+1. Saisissez le [!UICONTROL Nom d’affichage] souhaité. Par exemple : `Quantum Metric error name`.
+1. Sélectionnez le [!UICONTROL Type] en tant que **[!UICONTROL Chaîne]**.
+1. Sélectionnez **[!UICONTROL Enregistrer]**.
+
+## Étape 2 : capturer des événements de friction à l’aide de l’extension de balise Quantum Metric
 
 Voir [Extension Quantum Metric](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric) dans le guide des destinations Adobe Experience Platform pour obtenir des instructions sur la configuration de vos balises afin d’inclure des données de mesure quantique. L’utilisation de cette extension transmet plus de lignes dans un jeu de données existant.
 
@@ -40,7 +53,7 @@ Ajoutez ensuite l’élément de données défini dynamiquement à votre objet X
 
 ![Capture d’écran du nom de l’erreur de mesure quantique](assets/error-name.png)
 
-## Étape 2 : ajouter une ou plusieurs dimensions et mesures à la vue de données dans Customer Journey Analytics
+## Étape 3 : ajouter une ou plusieurs dimensions et mesures à la vue de données dans Customer Journey Analytics
 
 Modifiez la vue de données existante pour ajouter l’ID de session en tant que dimension disponible dans Customer Journey Analytics.
 
@@ -52,7 +65,7 @@ Modifiez la vue de données existante pour ajouter l’ID de session en tant que
 1. Une fois toutes les dimensions et mesures souhaitées créées, cliquez sur **[!UICONTROL Enregistrer]**.
 1. Pour obtenir une liste complète des événements d’erreur, reportez-vous à la documentation de Quantum Metric . Si vous avez des questions supplémentaires, contactez votre représentant du service clientèle de Quantum Metric ou envoyez une demande par le biais du portail [Quantum Metric Customer Request Portal](https://community.quantummetric.com/s/public-support-page).
 
-## Étape 3 : utiliser la dimension et les mesures avec le reste de vos données dans Analysis Workspace
+## Étape 4 : utiliser la dimension et les mesures avec le reste de vos données dans Analysis Workspace
 
 Grâce aux données d’événement de friction de mesure quantique collectées avec le reste de vos données visiteur, vous pouvez les utiliser exactement comme vous le feriez pour toute autre dimension ou mesure dans Customer Journey Analytics.
 
