@@ -5,10 +5,10 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: f13d0f7afcfe2ebb334062b79b409219169c1aee
 workflow-type: tm+mt
-source-wordcount: '6794'
-ht-degree: 58%
+source-wordcount: '6802'
+ht-degree: 57%
 
 ---
 
@@ -331,8 +331,8 @@ Vous [ajoutez un ou plusieurs jeux de données](#add-datasets) ou [modifiez des 
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_matchingkey"
->title="Clé correspondante"
->abstract="Sélectionnez le mode de jointure : en fonction d’une clé ou d’un conteneur correspondants.<br/><br/>**[!UICONTROL Clé correspondante ]** : sélectionnez un champ à joindre à l’un des jeux de données d’événement. Si cette liste est vide, vous n’avez probablement pas ajouté ni configuré de jeu de données d’événement.<br/>**[!UICONTROL Conteneur correspondant]** : sélectionnez un conteneur à utiliser à joindre à l’un des jeux de données d’événement. Si cette liste est vide, il est probable que vous n&#39;ayez pas configuré un ou plusieurs conteneurs."
+>title="Type de clé correspondant"
+>abstract="Sélectionnez le mode de jointure : en fonction d’une correspondance par champ ou d’une correspondance par conteneur.<br/><br/>**[!UICONTROL Correspondance par champ ]**: sélectionnez un champ pour joindre l’un des jeux de données d’événement. Si cette liste est vide, vous n’avez probablement pas ajouté ni configuré de jeu de données d’événement.<br/>**[!UICONTROL Correspondance par conteneur]** : sélectionnez un conteneur à utiliser pour se joindre à l’un des jeux de données d’événement. Si cette liste est vide, il est probable que vous n&#39;ayez pas configuré un ou plusieurs conteneurs."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -446,8 +446,8 @@ Vous [ajoutez un ou plusieurs jeux de données](#add-datasets) ou [modifiez des 
 
 >[!CONTEXTUALHELP]
 >id="connection_matchingkey"
->title="Clé correspondante"
->abstract="Sélectionnez le mode de jointure : en fonction d’une clé ou d’un conteneur correspondants.<br/><br/>**[!UICONTROL Clé correspondante ]** : sélectionnez un champ à joindre à l’un des jeux de données d’événement. Si cette liste est vide, vous n’avez probablement pas ajouté ni configuré de jeu de données d’événement.<br/>**[!UICONTROL Conteneur correspondant]** : sélectionnez un conteneur à utiliser à joindre à l’un des jeux de données d’événement. Si cette liste est vide, il est probable que vous n&#39;ayez pas configuré un ou plusieurs conteneurs."
+>title="Type de clé correspondant"
+>abstract="Sélectionnez le mode de jointure : en fonction d’une correspondance par champ ou d’une correspondance par conteneur.<br/><br/>**[!UICONTROL Correspondance par champ ]**: sélectionnez un champ pour joindre l’un des jeux de données d’événement. Si cette liste est vide, vous n’avez probablement pas ajouté ni configuré de jeu de données d’événement.<br/>**[!UICONTROL Correspondance par conteneur]** : sélectionnez un conteneur à utiliser pour se joindre à l’un des jeux de données d’événement. Si cette liste est vide, il est probable que vous n&#39;ayez pas configuré un ou plusieurs conteneurs."
 
 <!-- markdownlint-enable MD034 -->
 

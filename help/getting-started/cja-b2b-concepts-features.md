@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 badgePremium: label="B2B edition"
 exl-id: df2cc922-d214-49b9-8fdb-443cc1dac05b
-source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
+source-git-commit: f13d0f7afcfe2ebb334062b79b409219169c1aee
 workflow-type: tm+mt
-source-wordcount: '819'
+source-wordcount: '1052'
 ht-degree: 0%
 
 ---
@@ -19,59 +19,74 @@ ht-degree: 0%
 
 {{draft-b2b}}
 
-Cet article explique les concepts généraux et les fonctionnalités des jeux de données et des conteneurs, ainsi que les différences entre la norme et le B2B edition de Customer Journey Analytics.
-
-Les jeux de données sont les sources d’une connexion. Lors de la configuration d’une connexion, vous définissez des jeux de données qui feront partie de cette connexion.
-
-Les conteneurs sont utilisés dans Customer Journey Analytics pour prendre en charge et faciliter des fonctionnalités telles que les segments, les mesures calculées et les fonctionnalités d’analyse avancées.
+Cet article explique des concepts tels que les connexions, les identifiants, les conteneurs et les jeux de données, généralement utilisés dans Customer Journey Analytics. et comment le B2B edition Customer Journey Analytics ajoute des fonctions supplémentaires à ces concepts.
 
 
+## Connexions et identifiants
+
+Dans Customer Journey Analytics, vous sélectionnez un identifiant commun, appelé ID de personne, pour connecter vos données d’événement à d’autres jeux de données tels que le jeu de données de profil et les jeux de données de recherche. Ce type de connexion est connu sous le nom de connexion basée sur la personne, qui facilite la création de rapports et l’analyse basés sur la personne.
+
+Dans Customer Journey Analytics B2B edition, vous pouvez choisir entre une connexion basée sur une personne ou une connexion basée sur un compte. Une connexion basée sur un compte facilite la création de rapports et l’analyse basée sur un compte.
+
+* Pour une connexion basée sur une personne, sélectionnez Personne comme identifiant principal. Vous pouvez ensuite configurer vos projets de connexion, de vue de données et d’espace de travail pour les rapports basés sur les personnes.
+* Pour une connexion basée sur un compte, sélectionnez Compte comme identifiant principal. Vous pouvez ensuite éventuellement ajouter des conteneurs supplémentaires pour le compte global, le groupe d’achats et l’opportunité. Que vous ajoutiez ou non un compte global, votre identifiant principal est un identifiant de compte ou un identifiant de compte global.
 
 
-## Conteneurs standard
+## Conteneurs
 
-La version *standard* de Customer Journey Analytics repose sur le concept de trois conteneurs : Personne, Session et Événement. Dans une configuration Customer Journey Analytics standard, ces conteneurs pertinents sont générés implicitement en fonction de votre configuration.
+Dans Customer Journey Analytics, les conteneurs sont générés dans le cadre de la configuration d’une connexion et d’une vue de données. Les conteneurs stockent uniquement des identifiants pour faciliter l’exécution rapide et performante de fonctionnalités telles que la segmentation, les répartitions, etc.
 
-Vous pouvez redéfinir la manière dont ces conteneurs sont nommés lorsque vous configurez une vue de données, mais conceptuellement, la version standard utilise une hiérarchie de conteneurs basée sur les personnes.
+### Conteneurs standard
+
+Customer Journey Analytics repose sur le concept de trois conteneurs : Personne, Session et Événement. Lors d’une configuration, ces conteneurs sont générés implicitement.
+
+Vous pouvez redéfinir la manière dont ces conteneurs sont nommés lorsque vous configurez une vue de données, mais la hiérarchie et les relations entre les conteneurs sont prédéterminées. Le conteneur Session est généré en fonction de la manière dont vous définissez une session dans le [Paramètres de session](/help/data-views/session-settings.md) dans votre vue de données.
 
 ![B2C](assets/b2c-containers.svg){zoomable="yes"}
 
-Dans la connexion, vous ajoutez des jeux de données d’événement, de profil et de recherche, puis vous sélectionnez des identités à utiliser pour définir la connexion entre ces jeux de données. Dans le cadre de la connexion, une hiérarchie de conteneurs basée sur les personnes est générée automatiquement. Dans cette hiérarchie, le conteneur de sessions est défini par les [paramètres de session](/help/data-views/session-settings.md) dans votre vue de données.
 
+### Conteneurs B2B
 
-## Conteneurs B2B
+Dans Customer Journey Analytics B2B edition, un conteneur Compte est ajouté à la liste des conteneurs générés. Vous avez également la possibilité de configurer la génération de conteneurs supplémentaires, tels que Compte global, Groupe d’achats et Opportunité.
 
-Dans Customer Journey Analytics B2B edition, un conteneur Compte est ajouté à la liste des conteneurs générés.  Vous avez également la possibilité de configurer la génération de conteneurs supplémentaires, tels que Compte global, Groupe d’achats et Opportunité.
+La hiérarchie et les relations entre les conteneurs sont prédéterminées. L’opportunité, le groupe d’achats et la personne sont tous des conteneurs frères du conteneur Compte . Dans cette hiérarchie, le conteneur de sessions entre le conteneur de personnes et le conteneur d’événements est généré en fonction de la manière dont vous définissez une session dans les [Paramètres de session](/help/data-views/session-settings.md) dans votre vue de données. D’autres conteneurs de sessions, par exemple entre le conteneur Compte et le conteneur Événement , ne sont actuellement pas générés et pris en charge. Consultez le tableau ci-dessous pour une description et une utilisation de base des conteneurs B2B.
 
 ![B2B](assets/b2b-containers.svg){zoomable="yes"}
 
-Dans la connexion, vous ajoutez des jeux de données d’événement, de compte, de compte global, d’opportunité, de groupe d’achats et d’autres jeux de données de recherche. Vous sélectionnez Compte comme identifiant principal de la connexion afin de pouvoir utiliser des identités de compte pour définir la connexion entre les jeux de données. Dans le cadre de la connexion, une hiérarchie de conteneurs basée sur les comptes est générée automatiquement. Dans cette hiérarchie, le conteneur de sessions entre le conteneur de personnes et le conteneur d’événements est défini par les [paramètres de session](/help/data-views/session-settings.md) dans votre vue de données. En outre, les conteneurs Session, par exemple entre Compte et Événement, ne sont actuellement pas pris en charge.
-
-L’opportunité, le groupe d’achats et la personne sont tous des conteneurs frères du conteneur Compte . Consultez le tableau ci-dessous pour une description et une utilisation de base.
-
 | Conteneur B2B | Description<br/>Cas d’utilisation de base |
 |---|---|
-| Compte | Une entreprise qui est un client ou un client potentiel de votre entreprise. Il peut s’agir d’une filiale ou d’une division d’une organisation plus grande. Le compte représente l&#39;organisation à laquelle vous vendez et que vous souhaitez suivre au niveau de cette organisation. |
-| Compte global (facultatif) | Société mère principale d&#39;un groupe de sociétés liées. Un compte global n&#39;a pas de société mère, mais peut avoir des filiales ou des divisions appartenant au compte global. Un compte qui n’a pas de parent ou de filiale doit être répertorié à la fois dans le champ compte et dans le champ compte global, si les deux sont activés dans le cadre de la configuration d’une connexion. |
-| Opportunité (facultatif) | Ensemble de produits et de services qui sont vendus ensemble. Une opportunité impliquait souvent différentes étapes du cycle de vente pour se conclure en tant que vente.<br>Vous utiliseriez les données d’opportunité pour mesurer la progression de l’opportunité via l’entonnoir de ventes. Par exemple, un rapport qui fournit des détails sur les principales opportunités qui sont passées de l’étape 3 à l’étape 4. |
+| Compte | Une entreprise qui est un client ou un client potentiel de votre entreprise. L&#39;entreprise peut être une filiale ou une division d&#39;une organisation plus grande. Le compte représente l&#39;organisation à laquelle vous vendez et que vous souhaitez suivre au niveau de cette organisation. |
+| Compte global (facultatif) | Société mère principale d&#39;un groupe de sociétés liées. Un compte global n&#39;a pas de société mère, mais peut avoir des filiales ou des divisions appartenant au compte global. Lorsque le conteneur Compte global est configuré dans votre connexion, un compte qui n’a pas de parent ou de filiale doit être répertorié dans les champs Compte et Compte global . |
+| Opportunité (facultatif) | Ensemble de produits et de services qui sont vendus ensemble. Une opportunité impliquait souvent différentes étapes du cycle de vente jusqu&#39;à la clôture de la vente.<br>Vous utiliseriez les données pour mesurer la progression de l’opportunité via l’entonnoir de ventes. Par exemple, un rapport qui fournit des détails sur les principales opportunités qui sont passées de l’étape 3 à l’étape 4. |
 | Groupe d&#39;achat (facultatif) | Ensemble de personnes au sein d’une organisation qui participent au processus de prise de décision pour l’achat d’un produit ou d’un service. <br/>Vous pouvez utiliser les données des groupes d&#39;achats pour effectuer le suivi des groupes d&#39;achats via la gestion de campagnes. Par exemple, créez un segment d’audience de groupes d’achats clés.<br/> Vous souhaitez très probablement effectuer une recherche à partir du groupe d&#39;achat dans les données de profil, afin de pouvoir créer des rapports sur les personnes d&#39;un groupe d&#39;achat. |
 | Personne | Personne, souvent identifiée par une adresse e-mail unique, qui a interagi avec l’entreprise. <br/>Vous pouvez utiliser les données de profil pour identifier les personnes qui travaillent pour un compte. Par exemple : ciblez toutes les personnes d’un compte qui se sont inscrites à une conférence. |
 
+>[!IMPORTANT]
+>
+>* Si vous avez **activé** le conteneur Compte global dans une connexion basée sur un compte, chaque enregistrement de vos jeux de données d’événement doit contenir un identifiant de compte et un identifiant de compte global. Dans le cas contraire, l’enregistrement est ignoré.
+>* Si vous n’avez **pas activé** le conteneur Compte global dans une connexion basée sur un compte, chaque enregistrement de vos jeux de données d’événement doit contenir un identifiant de compte. Dans le cas contraire, l’enregistrement est ignoré.
+
+## Jeux de données
+
+Lorsque vous configurez les [paramètres des jeux de données](/help/connections/create-connection.md#dataset-settings) pour la connexion basée sur le compte dans Customer Journey Analytics B2B edition, les options disponibles pour certains des paramètres dépendent du [type de jeu de données](/help/connections/create-connection.md#dataset-types). Par exemple, vous devez :
+
+* Spécifiez des identifiants pour chacun des conteneurs que vous avez configurés pour vos jeux de données d’événement.
+* Définissez un champ de compte ou un champ de compte global pour vos jeux de données de profil.
+* Définissez des clés et comment faire correspondre ces clés (par conteneur de champs) pour les jeux de données de recherche.
 
 ## Correspondance par conteneur ou champ
 
-Lorsque vous définissez une connexion dans Customer Journey Analytics, vous pouvez définir pour chaque jeu de données d’enregistrement (profil ou recherche), si ce jeu de données est mis en correspondance par conteneur ou par champ.
+Vous pouvez définir pour chaque jeu de données de recherche, si vous appariez au jeu de données par champ ou par conteneur.
 
 ### Correspondance par conteneur
 
-Si un jeu de données d’enregistrement est mis en correspondance par conteneur, par exemple par groupe d’achats, le jeu de données d’enregistrement est traité comme un type de jeu de données de profil et comme un jeu de données de profil dans l’interface utilisateur.
+Si un jeu de données d’enregistrement utilise une correspondance par conteneur, le jeu de données d’enregistrement est traité comme un type de jeu de données de profil et comme un jeu de données de profil dans l’interface utilisateur. Utilisez la correspondance par conteneur sur les jeux de données qui prennent en charge vos conteneurs configurés. Par exemple, un jeu de données Groupe d’achats.
 
 ### Correspondance par champ
 
-Si un jeu de données d’enregistrement est mis en correspondance par champ (par exemple, Membre de la liste marketing), le jeu de données d’enregistrement est traité comme un type de jeu de données de recherche et comme un jeu de données de recherche dans l’interface utilisateur.
-
+Si un jeu de données d’enregistrement utilise une correspondance par champ, le jeu de données d’enregistrement est traité comme un type de jeu de données de recherche et comme un jeu de données de recherche dans l’interface utilisateur. Utilisez le champ Correspondance par sur les jeux de données qui prennent en charge des détails supplémentaires par le biais de la recherche. Par exemple, un jeu de données Membre de la liste marketing ou un jeu de données Détails du produit.
 
 
 ## Rapport sur les données basées sur les personnes et les comptes
 
-Si vous souhaitez créer des rapports sur des conteneurs basés sur des personnes (et des identités de personne) et des conteneurs basés sur des comptes (et des identités de compte), vous devez configurer deux connexions distinctes dans Customer Journey Analytics. Une connexion où vous sélectionnez Personne comme ID de Principal et une connexion où vous sélectionnez Compte comme ID de Principal. Customer Journey Analytics ne prend pas en charge les rapports basés sur les personnes et les comptes rendus de performances à partir du même conteneur.
+Si vous souhaitez créer des rapports sur des conteneurs basés sur des personnes (et des identités de personne) et des conteneurs basés sur des comptes (et des identités de compte), vous devez configurer deux connexions distinctes dans Customer Journey Analytics. Une connexion où vous sélectionnez Personne comme ID de Principal et une connexion où vous sélectionnez Compte comme ID de Principal. Customer Journey Analytics ne prend pas en charge les rapports basés sur les personnes et les comptes rendus de performances à partir d’une seule hiérarchie de conteneurs.
