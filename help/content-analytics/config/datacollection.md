@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
-source-git-commit: d695fcb8dbd98675914c687f3dfaf8c5f0017073
+source-git-commit: 63c6a5d6148c1562b7f6ac8e4a1cac5919e2dd2e
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 1%
@@ -15,7 +15,6 @@ ht-degree: 1%
 # Collecte de données Content Analytics
 
 Cet article explique en détail comment Content Analytics collecte des données
-
 
 ## Définitions
 
@@ -40,7 +39,6 @@ La bibliothèque Content Analytics collecte des données lorsque :
 * L’URL de la page est configurée dans l’extension [Content Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview){target="_blank"}, qui fait partie de la bibliothèque de balises incluse.
 
 
-
 ## Événement Content Analytics
 
 Un événement Content Analytics comprend :
@@ -52,7 +50,6 @@ Un événement Content Analytics comprend :
 * Clics sur l’expérience (le cas échéant, et si configuré)
 * Vues des ressources (le cas échéant, et si elles sont configurées)
 * Clics sur les ressources (le cas échéant, et si elles sont configurées)
-
 
 Les événements Content Analytics sont collectés comme une séquence de :
 
