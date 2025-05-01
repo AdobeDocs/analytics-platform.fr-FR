@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
-source-git-commit: 6d23203468032510446711ff5a874fd149531a9a
+source-git-commit: f39cf7c386c42488d6607154fc7922911df5527c
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '602'
 ht-degree: 1%
 
 ---
@@ -57,7 +57,7 @@ Un événement Content Analytics comprend :
 Les événements Content Analytics sont collectés comme une séquence de :
 
 1. [Affichage enregistré ou clic](#recorded-view-or-click).
-1. [Événement régulier ou spécifique (comportemental)](#regular-or-specific-behaviorial-event).
+1. [Déclencheur permettant d’envoyer un événement Content Analytics](#trigger-to-send-a-content-analytics-event).
 
 Content Analytics collecte les données de cette manière pour refléter cette séquence, au lieu de collecter une vue ou un clic séparément de la collecte de l’événement qui suit immédiatement cette vue ou ce clic. Cette méthode de collecte des données d’analyse de contenu réduit également la quantité de données collectées.
 
@@ -84,11 +84,11 @@ Un clic sur une expérience est enregistré lorsque :
 * Tout clic se produit sur un lien de la page pour lequel les expériences sont activées.
 
 
-### Événement régulier ou spécifique (comportemental)
+### Déclencheur d’envoi d’un événement Content Analytics
 
-Les déclencheurs permettant de déclencher un événement (comportemental) régulier ou spécifique dans le cadre de Content Analytics sont les suivants :
+Pour réduire le nombre d’appels quittant la page, Content Analytics collecte des informations mais ne les envoie pas immédiatement. Les informations d’interaction de contenu sont collectées et un événement contenant ces informations n’est envoyé que lorsque l’un des déclencheurs suivants se produit :
 
-* Web SDK ou AppMeasurement envoie un événement.
+* Web SDK ou AppMeasurement envoie un événement. La date et l’heure de cet événement sont
 * La visibilité passe à masquée, par exemple :
    * Déchargements de page
    * Basculer l’onglet

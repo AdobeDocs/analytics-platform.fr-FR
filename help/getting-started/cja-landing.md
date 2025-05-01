@@ -4,10 +4,10 @@ description: Page de destination de Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
+source-git-commit: f39cf7c386c42488d6607154fc7922911df5527c
 workflow-type: tm+mt
-source-wordcount: '836'
-ht-degree: 96%
+source-wordcount: '884'
+ht-degree: 90%
 
 ---
 
@@ -28,6 +28,12 @@ Découvrez les améliorations les plus récentes apportées au produit et à la 
 Adobe Content Analytics permet d’examiner rapidement et facilement de grands volumes de données de contenu pour découvrir des tendances, repérer des anomalies, identifier la lassitude du contenu et obtenir des informations grâce à l’exposition du contenu.
 
 [![Image](assets/learn-more-button.svg)](/help/content-analytics/content-analytics.md)
+
+>[!TAB  Mesures et dimensions partagées ]
+
+Les mesures et dimensions partagées fournissent un emplacement central pour gérer les dimensions et mesures qui peuvent être utilisées dans un certain nombre de vues de données. Ces composants sont particulièrement utiles aux organisations qui utilisent plusieurs vues de données, en particulier si ces vues de données partagent des paramètres de composant communs.
+
+[![Image](assets/learn-more-button.svg)](/help/data-views/shared-metrics-dimensions/smd-overview.md)
 
 >[!TAB Assistant IA]
 
@@ -54,6 +60,7 @@ Les légendes intelligentes sont désormais prises en charge, avec des améliora
 Les alertes envoient un avertissement en fonction de pourcentages ou de points de données spécifiques modifiés. Vous pouvez prévisualiser la fréquence à laquelle une alerte sera déclenchée, envoyer des alertes par e-mail ou par SMS, créer des alertes empilées, etc.
 
 [![Image](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
+
 
 >[!TAB Données de résumé]
 
