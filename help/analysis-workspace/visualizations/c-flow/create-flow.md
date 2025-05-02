@@ -4,10 +4,10 @@ title: Configuration d’une visualisation de flux
 feature: Visualizations
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
 role: User
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 915c1ecff6dcbe42a6ed81c74f4ec5b4a24eaaa5
 workflow-type: tm+mt
-source-wordcount: '1484'
-ht-degree: 86%
+source-wordcount: '1525'
+ht-degree: 85%
 
 ---
 
@@ -17,6 +17,17 @@ ht-degree: 86%
 >id="workspace_flow_container"
 >title="Conteneur de flux"
 >abstract="Sélectionnez le conteneur à utiliser pour afficher (les nombres du) le cheminement."
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_include_repeats_disabled"
+>title="Inclure les répétitions (désactivé)"
+>abstract="Les répétitions ne peuvent pas être supprimées des visualisations de flux qui incluent des dimensions à valeurs multiples."
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_include_repeats_default"
+>title="Inclure les répétitions "
+>abstract="Les visualisations Flux sont basées sur des instances d’une dimension. Ce paramètre vous donne la possibilité d’inclure ou d’exclure des instances répétées. Par exemple : rechargements de page."
+
 
 
 Les visualisations de flux vous aident à comprendre le parcours provenant d’un événement de conversion spécifique sur votre site web ou votre application. Ou menant à un événement de conversion spécifique. La visualisation trace un chemin d’accès à travers vos dimensions (et éléments de dimension) ou mesures.
