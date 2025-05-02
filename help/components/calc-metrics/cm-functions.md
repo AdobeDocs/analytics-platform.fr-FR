@@ -6,8 +6,8 @@ exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 role: User
 source-git-commit: 47c5fc27d994667933103f864a253e086050bbf8
 workflow-type: tm+mt
-source-wordcount: '1636'
-ht-degree: 100%
+source-wordcount: '1878'
+ht-degree: 92%
 
 ---
 
@@ -26,7 +26,7 @@ Le [créateur de mesures calculées](cm-workflow/cm-build-metrics.md) vous perme
 
 Une fonction de tableau consiste à ce que la sortie soit la même pour chaque ligne du tableau. Une fonction de ligne consiste à ce que la sortie soit différente pour chaque ligne du tableau.
 
-Le cas échéant, une fonction est annotée avec le type de fonction : [!BADGE Tableau].{type="Neutral"}[!BADGE Ligne]{type="Neutral"}
+Le cas échéant, une fonction est annotée avec le type de fonction : [!BADGE Tableau]{type="Neutral"} ou [!BADGE Ligne]{type="Neutral"}
 
 ## Que signifie le paramètre d’inclusion de zéros ?
 
@@ -52,7 +52,7 @@ Un autre scénario consiste à utiliser deux mesures intéressantes, l’une aya
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL ABSOLUTE VALUE(metric)]**
 
-[!BADGE Ligne]{type="Neutral"}
+[!BADGE Ligne]{type="Neutral"} Renvoie la valeur absolue d’un nombre. La valeur absolue d’un nombre est le nombre doté d’une valeur positive.
 
 | Argument | Description |
 |---|---|
@@ -137,7 +137,7 @@ Ajoute toutes les valeurs numériques d’une mesure dans une colonne (sur l’e
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL COUNT(metric)]**
 
-[!BADGE Tableau]{type="Neutral"}
+[!BADGE Tableau]{type="Neutral"} renvoie le nombre, ou décompte, de valeurs non nulles pour une mesure dans une colonne (nombre d’éléments uniques signalés dans une dimension).
 
 | Argument | Description |
 |---|---|
@@ -157,7 +157,7 @@ Ajoute toutes les valeurs numériques d’une mesure dans une colonne (sur l’e
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENT(metric)]**
 
-[!BADGE Ligne]{type="Neutral"}
+[!BADGE Ligne]{type="Neutral"} Renvoie e élevé à la puissance d’un nombre donné. La constante e est égale à 2,71828182845904, la base du logarithme népérien. EXPONENT est l’inverse de LN, le logarithme népérien d’un nombre.
 
 | Argument | Description |
 |---|---|
@@ -178,7 +178,7 @@ Ajoute toutes les valeurs numériques d’une mesure dans une colonne (sur l’e
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL MEAN(metric, include_zeros)]**
 
-[!BADGE Tableau]{type="Neutral"}
+[!BADGE Tableau]{type="Neutral"} renvoie la moyenne arithmétique, ou moyenne, pour une mesure dans une colonne.
 
 | Argument | Description |
 |---|---|
@@ -200,7 +200,7 @@ Ajoute toutes les valeurs numériques d’une mesure dans une colonne (sur l’e
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL MEDIAN(metric, include_zeros)]**
 
-[!BADGE Tableau]{type="Neutral"}
+[!BADGE Tableau]{type="Neutral"} renvoie la médiane d’une mesure dans une colonne. La médiane est le nombre qui se situe au milieu d’un ensemble de nombres. En d’autres termes, la moitié des nombres ont des valeurs supérieures ou égales à la médiane, et l’autre moitié est inférieure ou égale à la médiane.
 
 | Argument | Description |
 |---|---|
@@ -252,14 +252,14 @@ MODULO(MODULO(x,y)+y,y)
 >[!CONTEXTUALHELP]
 >id="functions-percentile"
 >title="Percentile"
->abstract="Renvoie le énième centile, qui est une valeur comprise entre 0 et 100. Lorsque n &lt; 0, la fonction utilise zéro. Lorsque n > 100, la fonction renvoie 100."
+>abstract="Renvoie le énième percentile, qui est une valeur comprise entre 0 et 100. Lorsque n &lt; 0, la fonction utilise zéro. Lorsque n > 100, la fonction renvoie 100."
 
 <!-- markdownlint-enable MD034 -->
 
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL PERCENTILE(metric, k, include_zeros)]**
 
-[!BADGE Tableau]{type="Neutral"}
+[!BADGE Tableau]{type="Neutral"} renvoie le énième centile, qui est une valeur comprise entre 0 et 100. Lorsque n &lt; 0, la fonction utilise zéro. Lorsque n > 100, la fonction renvoie 100.
 
 | Argument | Description |
 |---|---|
@@ -304,7 +304,7 @@ Renvoie x élevé à la puissance y.
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL QUARTILE(metric, quartile, include_zeros)]**
 
-[!BADGE Tableau]{type="Neutral"}[COLUMN MINIMUM](#column-minimum), [MEDIAN](#median), et [COLUMN MAXIMUM](#column-maximum) renvoient la même valeur que [QUARTILE](#quartile) lorsque le quartile est égal à `0` (zéro), `2` et `4`, respectivement.
+[!BADGE Tableau]{type="Neutral"} renvoie le quartile des valeurs d’une mesure. Par exemple, les quartiles peuvent être utilisés pour trouver les 25 % de produits générant le plus de recettes. [COLUMN MINIMUM](#column-minimum), [MEDIAN](#median), et [COLUMN MAXIMUM](#column-maximum) renvoient la même valeur que [QUARTILE](#quartile) lorsque le quartile est égal à `0` (zéro), `2` et `4`, respectivement.
 
 | Argument | Description |
 |---|---|
@@ -330,7 +330,7 @@ Un arrondi sans paramètre de *nombre* est identique à un paramètre de *nombre
 
 | Argument | Description |
 |---|---|
-| metric | Mesure que vous souhaitez arrondir. |
+| mesure | Mesure que vous souhaitez arrondir. |
 | Number | Nombre de chiffres après la virgule à renvoyer. (Si négatif, renvoie des 0 à gauche de la décimale.) |
 
 ### Exemples
@@ -435,7 +435,7 @@ Somme des colonnes de chaque ligne.
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL SQUARE ROOT(metric, include_zeros)]**
 
-[!BADGE Ligne]{type="Neutral"}
+[!BADGE Ligne]{type="Neutral"} Renvoie la racine carrée positive d’un nombre. La racine carrée d’un nombre est la valeur de ce nombre élevée à la puissance 1/2.
 
 | Argument | Description |
 |---|---|
@@ -455,7 +455,7 @@ Somme des colonnes de chaque ligne.
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL STANDARD DEVIATION(metric, include_zeros)]**
 
-[!BADGE Tableau]{type="Neutral"}
+[!BADGE Tableau]{type="Neutral"} renvoie l’écart type, ou racine carrée de la variance, en fonction d’un échantillon de population de données.
 
 | Argument | Description |
 |---|---|
@@ -476,7 +476,7 @@ Somme des colonnes de chaque ligne.
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL VARIANCE(metric, include_zeros)]**
 
-[!BADGE Tableau]{type="Neutral"}
+[!BADGE Tableau]{type="Neutral"} renvoie l’écart en fonction d’un échantillon de population de données.
 
 | Argument | Description |
 |---|---|
