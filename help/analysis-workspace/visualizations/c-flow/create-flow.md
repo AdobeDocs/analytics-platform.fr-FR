@@ -4,14 +4,34 @@ title: Configuration d’une visualisation de flux
 feature: Visualizations
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
 role: User
-source-git-commit: 915c1ecff6dcbe42a6ed81c74f4ec5b4a24eaaa5
+source-git-commit: 2a2e158c0eb0f60591a92ed98572bbb6c344e3be
 workflow-type: tm+mt
-source-wordcount: '1525'
-ht-degree: 85%
+source-wordcount: '1684'
+ht-degree: 79%
 
 ---
 
 # Configurer une visualisation de flux {#configure-a-flow-visualization}
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_startswith"
+>title="Commence par"
+>abstract="Ce champ ne peut être défini que sur la version initiale. Pour mettre à jour ce champ, sélectionnez **[!UICONTROL Réinitialiser]** pour créer une visualisation des flux."
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_contains"
+>title="Contient"
+>abstract="Ce champ ne peut être défini que sur la version initiale. Pour mettre à jour ce champ, sélectionnez **[!UICONTROL Réinitialiser]** pour créer une visualisation des flux."
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_endswith"
+>title="Se termine par"
+>abstract="Ce champ ne peut être défini que sur la version initiale. Pour mettre à jour ce champ, sélectionnez **[!UICONTROL Réinitialiser]** pour créer une visualisation des flux."
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_pathingdimension"
+>title="Dimension du cheminement"
+>abstract="Sélectionnez une dimension qui servira de chemin d’accès ou de sortie du composant sélectionné."
 
 >[!CONTEXTUALHELP]
 >id="workspace_flow_container"
@@ -25,8 +45,23 @@ ht-degree: 85%
 
 >[!CONTEXTUALHELP]
 >id="workspace_flow_include_repeats_default"
->title="Inclure les répétitions "
+>title="Inclure les répétitions"
 >abstract="Les visualisations Flux sont basées sur des instances d’une dimension. Ce paramètre vous donne la possibilité d’inclure ou d’exclure des instances répétées. Par exemple : rechargements de page."
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_limit_occurrence"
+>title="Limiter à la première/dernière occurrence"
+>abstract="Les résultats sont limités aux chemins d’accès lorsque le premier/dernier point de contact est une entrée/sortie."
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_numberofcolumns"
+>title="Nombre de colonnes"
+>abstract="Ce champ ne peut être défini que sur la version initiale. Pour mettre à jour ce champ, sélectionnez **[!UICONTROL Réinitialiser]** pour créer une visualisation des flux."
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_itemsexpandedpercolumn"
+>title="Éléments développés par colonne"
+>abstract="Ce champ ne peut être défini que sur la version initiale. Pour mettre à jour ce champ, sélectionnez **[!UICONTROL Réinitialiser]** pour créer une visualisation des flux."
 
 
 
