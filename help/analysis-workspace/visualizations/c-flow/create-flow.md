@@ -4,10 +4,10 @@ title: Configuration d’une visualisation de flux
 feature: Visualizations
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
 role: User
-source-git-commit: 2a2e158c0eb0f60591a92ed98572bbb6c344e3be
+source-git-commit: 933b4005724aa438c3daeb58191e940821b5bb5f
 workflow-type: tm+mt
-source-wordcount: '1684'
-ht-degree: 79%
+source-wordcount: '1709'
+ht-degree: 78%
 
 ---
 
@@ -63,6 +63,10 @@ ht-degree: 79%
 >title="Éléments développés par colonne"
 >abstract="Ce champ ne peut être défini que sur la version initiale. Pour mettre à jour ce champ, sélectionnez **[!UICONTROL Réinitialiser]** pour créer une visualisation des flux."
 
+>[!CONTEXTUALHELP]
+>id="workspace_flow_resettoupdate"
+>title="Réinitialiser pour mettre à jour"
+>abstract="Ce champ ne peut être défini que sur la version initiale. Pour mettre à jour ce champ, sélectionnez **[!UICONTROL Réinitialiser]** pour créer une visualisation des flux."
 
 
 Les visualisations de flux vous aident à comprendre le parcours provenant d’un événement de conversion spécifique sur votre site web ou votre application. Ou menant à un événement de conversion spécifique. La visualisation trace un chemin d’accès à travers vos dimensions (et éléments de dimension) ou mesures.
