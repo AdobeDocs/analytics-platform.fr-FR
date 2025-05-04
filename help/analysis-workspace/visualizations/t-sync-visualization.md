@@ -5,10 +5,10 @@ title: Gestion des sources de données
 feature: Visualizations
 exl-id: f9e89bef-0e78-49c7-8b7b-1fefd709c0cd
 role: User
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 8f9c03607130bdeaf6cb7a32d8dd465712a47ea5
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 96%
+source-wordcount: '437'
+ht-degree: 92%
 
 ---
 
@@ -29,6 +29,15 @@ ht-degree: 96%
 >id="workspace_freeformtable_lockselection_showtable"
 >title="Afficher le tableau"
 >abstract="Sélectionnez **[!UICONTROL Afficher le tableau]** pour générer une nouvelle source de données pour votre visualisation actuelle, distincte de la source de données d’origine."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_freeformtable_showtable"
+>title="Afficher le tableau"
+>abstract="Sélectionnez **[!UICONTROL Afficher le tableau]** pour générer une nouvelle source de données pour la visualisation actuelle, distincte de la source de données d’origine."
 
 <!-- markdownlint-enable MD034 -->
 
