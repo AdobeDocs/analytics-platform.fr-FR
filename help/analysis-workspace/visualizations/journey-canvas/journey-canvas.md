@@ -7,7 +7,7 @@ exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
 source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
 workflow-type: tm+mt
 source-wordcount: '1988'
-ht-degree: 84%
+ht-degree: 87%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 84%
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_button"
 >title="Zone de travail de parcours"
->abstract="Indique comment les personnes passent par une série de points de contact ou en sortent. Utilisez pour les parcours comportant plusieurs points d’entrée et chemins d’accès, ou pour analyser les parcours créés dans Journey Optimizer."
+>abstract="Indique comment les personnes passent par une série de points de contact ou en sortent. À utiliser pour les parcours comportant plusieurs points d’entrée et chemins d’accès, ou pour analyser les parcours créés dans Journey Optimizer."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -27,7 +27,7 @@ ht-degree: 84%
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_panel"
 >title="Zone de travail de parcours"
->abstract="Analysez la façon dont les personnes passent par un parcours défini ou en sortent. Créez des analyses de parcours utilisateur en créant un graphique flexible de nœuds et de flèches représentant n’importe quelle combinaison d’événements, d’éléments de dimension et de segments. Faites glisser des nœuds sur la zone de travail pour réorganiser les événements et les conditions du parcours. Les données sont mises à jour en conséquence. <br/><br/>Les clients ayant accès à Adobe Journey Optimizer peuvent analyser les parcours Journey Optimizer existants."
+>abstract="Analysez la façon dont les personnes passent par un parcours défini ou en sortent. Créez des analyses de parcours utilisateur en créant un graphique flexible de nœuds et de flèches représentant n’importe quelle combinaison d’événements, d’éléments de dimension et de segments. Faites glisser des nœuds sur la zone de travail pour réorganiser les événements et les conditions du parcours. Les données sont mises à jour en conséquence. <br/><br/>Les clientes et clients ayant accès à Adobe Journey Optimizer peuvent analyser les parcours Journey Optimizer existants."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -36,7 +36,7 @@ ht-degree: 84%
 >[!CONTEXTUALHELP]
 >id="journeycanvas_button"
 >title="Zone de travail de parcours"
->abstract="Indique comment les personnes passent par une série de points de contact ou en sortent. Utilisez pour les parcours comportant plusieurs points d’entrée et chemins d’accès, ou pour analyser les parcours créés dans Journey Optimizer."
+>abstract="Indique comment les personnes passent par une série de points de contact ou en sortent. À utiliser pour les parcours comportant plusieurs points d’entrée et chemins d’accès, ou pour analyser les parcours créés dans Journey Optimizer."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -45,7 +45,7 @@ ht-degree: 84%
 >[!CONTEXTUALHELP]
 >id="journeycanvas_panel"
 >title="Zone de travail de parcours"
->abstract="Analysez la façon dont les personnes passent par un parcours défini ou en sortent. Créez des analyses de parcours utilisateur en créant un graphique flexible de nœuds et de flèches représentant n’importe quelle combinaison d’événements, d’éléments de dimension et de segments. Faites glisser des nœuds sur la zone de travail pour réorganiser les événements et les conditions du parcours. Les données sont mises à jour en conséquence. <br/><br/>Les clients ayant accès à Adobe Journey Optimizer peuvent analyser les parcours Journey Optimizer existants."
+>abstract="Analysez la façon dont les personnes passent par un parcours défini ou en sortent. Créez des analyses de parcours utilisateur en créant un graphique flexible de nœuds et de flèches représentant n’importe quelle combinaison d’événements, d’éléments de dimension et de segments. Faites glisser des nœuds sur la zone de travail pour réorganiser les événements et les conditions du parcours. Les données sont mises à jour en conséquence. <br/><br/>Les clientes et clients ayant accès à Adobe Journey Optimizer peuvent analyser les parcours Journey Optimizer existants."
 
 <!-- markdownlint-enable MD034 -->
 
