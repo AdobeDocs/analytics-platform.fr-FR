@@ -17,7 +17,7 @@ ht-degree: 14%
 
 Ce tableau répertorie toutes les icônes Spectrum disponibles via la configuration des fragments de code des icônes Spectrum. Utilisez le nom pour ajouter le fragment de code à votre markdown et faire apparaître l’icône Spectre .
 
-Regardez la [page Wiki](ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Spectrum+icons+in+documentation) pour toutes les mises à jour.
+Regardez la [page Wiki] (ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Spectrum+icons+in+documentation) pour toutes les mises à jour.
 
 ![](https://reportbuilder.an.adobe.com/assets/AdobeAnalyticsLogo-80.png)
 

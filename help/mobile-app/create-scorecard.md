@@ -48,7 +48,7 @@ En tant que curateur ou curatrice de cette carte de performance, vous pouvez uti
 
 Pour créer la carte de performance, procédez comme suit :
 
-1. Accédez au modèle [!UICONTROL  Carte de performance mobile vierge ] dans Workspace.
+1. Accédez au modèle [!UICONTROL &#x200B; Carte de performance mobile vierge &#x200B;] dans Workspace.
 2. Configurer la carte de performance avec des données, puis enregistrez-la.
 
 ## Accéder au modèle de [!UICONTROL Fiche d’évaluation mobile vierge] {#template}

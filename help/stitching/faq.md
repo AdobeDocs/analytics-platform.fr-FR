@@ -23,8 +23,8 @@ Voici quelques questions fréquentes sur le groupement :
 Vous pouvez utiliser une visualisation de flux avec la dimension Identifiant du jeu de données.
 
 1. Connectez-vous à [Customer Journey Analytics](https://analytics.adobe.com) et créez un projet Workspace vierge.
-2. Sélectionnez l’onglet **[!UICONTROL ** Visualisations **]** à gauche, puis faites glisser une visualisation **[!UICONTROL ** Flux **]** vers la zone de travail à droite.
-3. Sélectionnez l’onglet **[!UICONTROL ** Composants **]** à gauche, puis faites glisser la dimension **[!UICONTROL ** Identifiant du jeu de données **]** vers l’emplacement central intitulé **[!UICONTROL ** Dimension ou Élément **]**.
+2. Sélectionnez l’onglet **[!UICONTROL ** Visualisations **]** à gauche, puis faites glisser une visualisation **[!UICONTROL **&#x200B; Flux &#x200B;**]** vers la zone de travail à droite.
+3. Sélectionnez l’onglet **[!UICONTROL ** Composants **]** à gauche, puis faites glisser la dimension **[!UICONTROL ** Identifiant du jeu de données **]** vers l’emplacement central intitulé **[!UICONTROL **&#x200B; Dimension ou Élément &#x200B;**]**.
 4. Ce rapport de flux est interactif. Pour développer les flux sur les pages suivantes ou précédentes, sélectionnez l’une des valeurs. Utilisez le menu contextuel pour développer ou réduire des colonnes. Il est également possible d’utiliser différentes dimensions dans le même rapport de flux.
 
 Si vous souhaitez renommer des éléments de dimension Identifiant du jeu de données, vous pouvez utiliser un jeu de données de recherche.

@@ -43,7 +43,7 @@ Après avoir configuré votre implémentation de SDK web ou d’API, vous devez 
 
 1. Sélectionnez l’ID de lot d’un jeu de données donné, puis vérifiez que **[!UICONTROL Succès]** s’affiche dans le champ **[!UICONTROL Statut]**.
 
-   **[!UICONTROL Si le champ****Échec]** s’affiche, vérifiez votre implémentation pour vous assurer qu’elle envoie correctement des données à Adobe.
+   **[!UICONTROL Si le champ**&#x200B;**Échec]** s’affiche, vérifiez votre implémentation pour vous assurer qu’elle envoie correctement des données à Adobe.
 
    Répétez cette étape pour vérifier le statut de chaque lot.
 

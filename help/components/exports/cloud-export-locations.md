@@ -88,11 +88,11 @@ Pour plus d’informations sur la gestion des emplacements existants, y compris 
 
    1. Ouvrez l’ [Explorateur de stockage Azure Microsoft](https://azure.microsoft.com/en-us/products/storage/storage-explorer/).
 
-   1. Accédez à [!UICONTROL **Comptes de stockage**] > [!UICONTROL **(Conteneurs attachés)**] > [!UICONTROL **Conteneurs Blob**] > **[!UICONTROL cjaexport-_nombre_]**>*** votre_nom_conteneur ***.
+   1. Accédez à [!UICONTROL **Comptes de stockage**] > [!UICONTROL **(Conteneurs attachés)**] > [!UICONTROL **Conteneurs Blob**] > **[!UICONTROL cjaexport-_nombre_]**>*** votre_nom_conteneur &#x200B;***.
 
       >[!NOTE]
       >
-      >Le nom de dossier **[!UICONTROL cjaexport-_number_]**est le nom par défaut fourni par Azure Storage Explorer. Si une seule connexion est associée à votre URI SAS (ce qui est normal), le nom de ce dossier est **[!UICONTROL cjaexport-1]**.
+      >Le nom de dossier **[!UICONTROL cjaexport-_number_]**&#x200B;est le nom par défaut fourni par Azure Storage Explorer. Si une seule connexion est associée à votre URI SAS (ce qui est normal), le nom de ce dossier est **[!UICONTROL cjaexport-1]**.
 
 
       ![Accès aux fichiers dans l’explorateur de stockage Azure](assets/azure-storage-explorer-access.png)

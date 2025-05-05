@@ -25,7 +25,7 @@ Vous pouvez créer une annotation de la manière suivante :
 * **B**. Dans un projet Workspace, dans le menu contextuel d’une visualisation, sélectionnez **[!UICONTROL Créer une annotation à partir de la sélection]**.
 * **C**. Dans un projet Workspace, dans le menu contextuel d’un graphique linéaire, sélectionnez **[!UICONTROL Annoter la sélection]**.
 * **J**. Dans un projet Workspace, sélectionnez **[!UICONTROL Composants]** dans le menu, puis sélectionnez **[!UICONTROL Créer une annotation]**.
-* ****.  Dans un projet Workspace, utilisez le raccourci **[!UICONTROL ctrl+maj+o]** (Windows) ou **[!UICONTROL maj+commande+o]** (macOS)
+* **&#x200B;**.  Dans un projet Workspace, utilisez le raccourci **[!UICONTROL ctrl+maj+o]** (Windows) ou **[!UICONTROL maj+commande+o]** (macOS)
 
 Pour définir l’annotation, utilisez le [[!UICONTROL Créateur d’annotations]](#annotation-builder) :
 

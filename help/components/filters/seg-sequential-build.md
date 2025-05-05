@@ -82,7 +82,7 @@ Identifiez toutes les sessions au cours desquelles une personne visite une page 
 
 ## [!UICONTROL Après] et [!UICONTROL Dans]
 
-Vous pouvez utiliser ![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL After]** et ![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL Within]** l’opérateur **[!UICONTROL Then]** pour définir des [contraintes de temps ou ](#time-constraints)contraintes supplémentaires pour les événements, les sessions ou les dimensions[ ](#event-session-and-dimension-constraints).
+Vous pouvez utiliser ![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL After]** et ![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL Within]** l’opérateur **[!UICONTROL Then]** pour définir des [contraintes de temps ou ](#time-constraints)contraintes supplémentaires pour les événements, les sessions ou les dimensions[&#128279;](#event-session-and-dimension-constraints).
 
 ### Contraintes de temps
 
@@ -91,7 +91,7 @@ Pour appliquer des contraintes de temps à l’opérateur **[!UICONTROL Then]** 
 1. Sélectionnez ![ Horloge ](/help/assets/icons/Clock.svg).
 1. Sélectionnez **[!UICONTROL Dans]** ou **[!UICONTROL Après]** dans le menu contextuel.
 1. Spécifiez une période (**[!UICONTROL Minute]**, **[!UICONTROL Heure]**, jusqu’à **[!UICONTROL Années]**).
-1. Sélectionnez le ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL *nombre *]**pour ouvrir une fenêtre contextuelle qui vous permet de saisir ou de spécifier un nombre à l’aide de**[!UICONTROL -]**ou**[!UICONTROL +]**.
+1. Sélectionnez le ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL *nombre *]**&#x200B;pour ouvrir une fenêtre contextuelle qui vous permet de saisir ou de spécifier un nombre à l’aide de&#x200B;**[!UICONTROL -]**&#x200B;ou&#x200B;**[!UICONTROL +]**.
 
 Pour supprimer une contrainte de temps, utilisez ![CrossSize75](/help/assets/icons/CrossSize75.svg).
 
@@ -154,7 +154,7 @@ Les exemples de séquences suivants correspondent ou ne correspondent pas :
 
 Vous pouvez spécifier les données à inclure dans votre segment séquentiel ou dans un conteneur séquentiel qui fait partie de votre segment séquentiel.
 
-### [!UICONTROL  Tout le monde ] {#include_everyone}
+### [!UICONTROL &#x200B; Tout le monde &#x200B;] {#include_everyone}
 
 Pour créer un segment séquentiel qui inclut tout le monde, sélectionnez l’option ![UserGroup](/help/assets/icons/UserGroup.svg) **[!UICONTROL Inclure tout le monde]**.
 
@@ -210,7 +210,7 @@ Lors de la création de rapports sur les sections de site à l’aide de ces tro
 
 ## [!UICONTROL Exclure]
 
-Les définitions de segment incluent toutes les données, sauf si vous excluez spécifiquement les données ![Utilisateur](/help/assets/icons/User.svg) [!UICONTROL Personne], ![Visite](/help/assets/icons/Visit.svg) [!UICONTROL Session] ou ![PageWeb](/help/assets/icons/WebPage.svg)[!UICONTROL Event] à l’aide de **[!UICONTROL Exclude]**.
+Les définitions de segment incluent toutes les données, sauf si vous excluez spécifiquement les données ![Utilisateur](/help/assets/icons/User.svg) [!UICONTROL Personne], ![Visite](/help/assets/icons/Visit.svg) [!UICONTROL Session] ou ![PageWeb](/help/assets/icons/WebPage.svg) [!UICONTROL Event] à l’aide de **[!UICONTROL Exclude]**.
 
 [!UICONTROL Exclure] vous permet d’ignorer les données courantes et de créer des segments avec plus de focus. Exclure permet également de créer des segments excluant des groupes de personnes spécifiques. Par exemple, pour définir un segment qui spécifie les personnes ayant passé des commandes, puis excluant ce groupe de personnes afin d’identifier *non-acheteurs*. Une bonne pratique consiste à créer des règles qui utilisent une définition large plutôt que d’essayer d’utiliser [!UICONTROL Exclure] pour cibler des personnes spécifiques qui correspondent à des valeurs d’inclusion spécifiques.
 
@@ -274,7 +274,7 @@ Voici des exemples d’utilisation du conteneur Groupe logique .
 
 Identifiez les personnes qui ont visité une page, puis consulté chaque page d’un autre ensemble de pages dans n’importe quel ordre. Par exemple, les personnes qui ont visité la page d’accueil, puis ont visité chacune des pages Hommes, Femmes et Enfants, quel que soit l’ordre.
 
-Vous pouvez créer ce segment sans [!UICONTROL  Groupe logique ], mais la construction sera complexe et laborieuse. Spécifiez chaque séquence de pages que le visiteur peut afficher. Pour plus de clarté, seul le premier conteneur est ouvert ![ChevronDown](/help/assets/icons/ChevronDown.svg) et les autres conteneurs sont fermés ![ChevronRight](/help/assets/icons/ChevronRight.svg). Vous pouvez dériver le contenu des autres conteneurs par les titres.
+Vous pouvez créer ce segment sans [!UICONTROL &#x200B; Groupe logique &#x200B;], mais la construction sera complexe et laborieuse. Spécifiez chaque séquence de pages que le visiteur peut afficher. Pour plus de clarté, seul le premier conteneur est ouvert ![ChevronDown](/help/assets/icons/ChevronDown.svg) et les autres conteneurs sont fermés ![ChevronRight](/help/assets/icons/ChevronRight.svg). Vous pouvez dériver le contenu des autres conteneurs par les titres.
 
 ![Exemple n’utilisant pas de groupe logique](assets/logicgroup-example-notusing.png)
 

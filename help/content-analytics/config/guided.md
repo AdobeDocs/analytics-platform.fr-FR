@@ -312,7 +312,7 @@ Dans une nouvelle configuration, vous devez définir si vous souhaitez utiliser 
 
 >[!IMPORTANT]
 >
->Supprimez manuellement l’extension automatique Web SDK incluse de la propriété Tags nouvellement créée si vous disposez d’une implémentation de Web SDK existante qui utilise la bibliothèque JavaScript [](https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/install/library) au lieu de l’extension [ Tags](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration).
+>Supprimez manuellement l’extension automatique Web SDK incluse de la propriété Tags nouvellement créée si vous disposez d’une implémentation de Web SDK existante qui utilise la bibliothèque JavaScript [&#128279;](https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/install/library) au lieu de l’extension [ Tags](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration).
 >
 
 

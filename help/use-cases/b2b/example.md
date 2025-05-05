@@ -60,14 +60,14 @@ Pour garantir une configuration correcte d’une connexion qui prend en charge l
    |---|---|---|---| 
    | Jeu de données d’activité B2B | SourceKey <br/>**personKey.sourceKey** | | |
    | Jeu de données de personne B2B | SourceKey <br/>**b2b.personKey.sourceKey** | | |
-   | Jeu de données de compte B2B | | SourceKey <br/>**accountKey.sourceKey**❶ | SourceKey<br>(Jeu de données de personne B2B)<br/>**b2b.accountKey.sourceKey**❶ |
-   | Jeu de données d’opportunité B2B | | Clé Source <br/>**opportunitésKey.sourceKey**❷ | SourceKey<br/>(Jeu de données de relation d’opportunité B2B)<br/>**opportunitésKey.sourceKey**❷ |
-   | Jeu de données de campagne B2B | | SourceKey <br/>**campaignKey.sourceKey**❸ | SourceKey<br/>(Jeu de données de membre de campagne B2B)<br/>**campaignKey.sourceKey**❸<br/> |
-   | Jeu de données de liste marketing B2B | | SourceKey <br/>**marketingListKey.sourceKey**❹ | SourceKey<br/>(Jeu de données de membre de liste marketing B2B)<br/>**marketingListKey.sourceKey**❹ |
-   | Jeu de données sur la relation de personne de compte B2B | | SourceKey <br/>**personKey.sourceKey**❺ | Clé Source<br/>(Jeux de données d’événement)<br/>**personKey.sourceKey**❺ |
-   | Jeu de données de relation d’opportunité B2B | | SourceKey <br/>**personKey.sourceKe** y ❻ | Clé Source<br/>(Jeux de données d’événement)<br/>**personKey.sourceKey**❻ |
-   | Jeu de données des membres de campagne B2B | | SourceKey <br/>**personKey.sourceKey**❼ | Clé Source<br/>(Jeux de données d’événement)<br/>**personKey.sourceKey**❼ |
-   | Jeu de données des membres de liste marketing B2B | | SourceKey <br/>**personKey.sourceKey**❽ | Clé Source<br/>(Jeux de données d’événement)<br/>**personKey.sourceKey**❽ |
+   | Jeu de données de compte B2B | | SourceKey <br/>**accountKey.sourceKey**&#x200B;❶ | SourceKey<br>(Jeu de données de personne B2B)<br/>**b2b.accountKey.sourceKey**&#x200B;❶ |
+   | Jeu de données d’opportunité B2B | | Clé Source <br/>**opportunitésKey.sourceKey**&#x200B;❷ | SourceKey<br/>(Jeu de données de relation d’opportunité B2B)<br/>**opportunitésKey.sourceKey**&#x200B;❷ |
+   | Jeu de données de campagne B2B | | SourceKey <br/>**campaignKey.sourceKey**&#x200B;❸ | SourceKey<br/>(Jeu de données de membre de campagne B2B)<br/>**campaignKey.sourceKey**&#x200B;❸<br/> |
+   | Jeu de données de liste marketing B2B | | SourceKey <br/>**marketingListKey.sourceKey**&#x200B;❹ | SourceKey<br/>(Jeu de données de membre de liste marketing B2B)<br/>**marketingListKey.sourceKey**&#x200B;❹ |
+   | Jeu de données sur la relation de personne de compte B2B | | SourceKey <br/>**personKey.sourceKey**&#x200B;❺ | Clé Source<br/>(Jeux de données d’événement)<br/>**personKey.sourceKey**&#x200B;❺ |
+   | Jeu de données de relation d’opportunité B2B | | SourceKey <br/>**personKey.sourceKe** y ❻ | Clé Source<br/>(Jeux de données d’événement)<br/>**personKey.sourceKey**&#x200B;❻ |
+   | Jeu de données des membres de campagne B2B | | SourceKey <br/>**personKey.sourceKey**&#x200B;❼ | Clé Source<br/>(Jeux de données d’événement)<br/>**personKey.sourceKey**&#x200B;❼ |
+   | Jeu de données des membres de liste marketing B2B | | SourceKey <br/>**personKey.sourceKey**&#x200B;❽ | Clé Source<br/>(Jeux de données d’événement)<br/>**personKey.sourceKey**&#x200B;❽ |
 
 {style="table-layout:auto"}
 

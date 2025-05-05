@@ -14,7 +14,7 @@ ht-degree: 12%
 # Gestion des périodes
 
 
-Vous pouvez partager, filtrer, baliser, approuver, copier, partager et supprimer des plages de dates et marquer des plages de dates comme favorites depuis une interface de gestion [!UICONTROL  centrale des plages de dates]. Pour gérer les plages de dates :
+Vous pouvez partager, filtrer, baliser, approuver, copier, partager et supprimer des plages de dates et marquer des plages de dates comme favorites depuis une interface de gestion [!UICONTROL &#x200B; centrale des plages de dates]. Pour gérer les plages de dates :
 
 * Sélectionnez **[!UICONTROL Composants]** dans l’interface principale, puis **[!UICONTROL Plages de dates]**.
 

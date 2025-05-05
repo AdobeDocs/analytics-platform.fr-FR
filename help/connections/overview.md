@@ -14,7 +14,7 @@ ht-degree: 10%
 
 # Présentation des connexions
 
-Les connexions permettent aux administrateurs et administratrices de produit Customer Journey Analytics d’établir des connexions avec différentes sources de données [!DNL  Experience Platform], telles que les jeux de données d’événement, de recherche, de profil et de résumé. Ces connexions permettent l’intégration des données d’une connexion à une vue de données dérivée. Les connexions sont la base de Customer Journey Analytics et sont créées à partir de jeux de données sources [!DNL Experience Platform].
+Les connexions permettent aux administrateurs et administratrices de produit Customer Journey Analytics d’établir des connexions avec différentes sources de données [!DNL &#x200B; Experience Platform], telles que les jeux de données d’événement, de recherche, de profil et de résumé. Ces connexions permettent l’intégration des données d’une connexion à une vue de données dérivée. Les connexions sont la base de Customer Journey Analytics et sont créées à partir de jeux de données sources [!DNL Experience Platform].
 
 >[!IMPORTANT]
 >

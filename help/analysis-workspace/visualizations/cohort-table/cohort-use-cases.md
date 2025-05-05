@@ -14,7 +14,7 @@ ht-degree: 52%
 
 # Cas d’utilisation de l’[!UICONTROL analyse des cohortes]
 
-Cet article décrit quelques exemples de cas d’utilisation de l’[!UICONTROL  Analyse des cohortes ].
+Cet article décrit quelques exemples de cas d’utilisation de l’[!UICONTROL &#x200B; Analyse des cohortes &#x200B;].
 
 ## Cas d’utilisation d’interactions avec les applications
 

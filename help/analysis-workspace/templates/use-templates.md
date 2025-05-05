@@ -128,27 +128,27 @@ Pour accéder à tous les modèles préconfigurés disponibles, procédez comme 
 
    Les sections suivantes correspondent aux catégories disponibles et fournissent des informations sur chaque modèle.
 
-   * [[!UICONTROL ](#most-popular)
+   * &lbrack;[](#most-popular)
 
-   * [[!UICONTROL ](#engagement)
+   * &lbrack;[](#engagement)
 
-   * [[!UICONTROL ](#web-conversion)
+   * &lbrack;[](#web-conversion)
 
-   * [[!UICONTROL ](#web-audience)
+   * &lbrack;[](#web-audience)
 
-   * [[!UICONTROL ](#web-acquisition)
+   * &lbrack;[](#web-acquisition)
 
-   * [[!UICONTROL ](#mobile-mobile-app)
+   * &lbrack;[](#mobile-mobile-app)
 
-   * [[!UICONTROL ](#mobile-mobile-device-information)
+   * &lbrack;[](#mobile-mobile-device-information)
 
-   * [[!UICONTROL ](#time-parting)
+   * &lbrack;[](#time-parting)
 
-   * [[!UICONTROL ](#cross-channel)
+   * &lbrack;[](#cross-channel)
 
-   * [[!UICONTROL ](#other-channels)
+   * &lbrack;[](#other-channels)
 
-   * [[!UICONTROL ](#ajo)
+   * &lbrack;[](#ajo)
 
 ### Les plus populaires {#most-popular}
 

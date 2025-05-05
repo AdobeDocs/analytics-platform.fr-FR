@@ -27,7 +27,7 @@ Vous pouvez créer un segment des manières suivantes :
 * **B**. Dans un projet Workspace, dans le panneau de gauche Composants , sélectionnez ![Ajouter](/help/assets/icons/Add.svg) sous ![Segment](/help/assets/icons/Segmentation.svg) **Segments**.
 * **C**. Dans un projet Workspace, dans le menu contextuel d’une visualisation, sélectionnez **[!UICONTROL Créer un segment à partir de la sélection]**.
 * **J**. Dans un projet Workspace, sélectionnez **[!UICONTROL Composants]** dans le menu, puis sélectionnez **[!UICONTROL Créer un segment]**.
-* ****. Dans un projet Workspace, utilisez le raccourci **[!UICONTROL maj+cmd+e]** (macOS) ou **[!UICONTROL maj+ctrl+e]** (Windows).
+* **&#x200B;**. Dans un projet Workspace, utilisez le raccourci **[!UICONTROL maj+cmd+e]** (macOS) ou **[!UICONTROL maj+ctrl+e]** (Windows).
 * **F**. Sélectionnez ![Ajouter](/help/assets/icons/Add.svg) dans ***Déposez un segment ici (ou tout autre composant)*** zone de dépôt. Cette action crée un segment Projet uniquement.
 
 Pour définir le nouveau segment, utilisez le [créateur de segments](/help/components/filters/filter-builder.md).

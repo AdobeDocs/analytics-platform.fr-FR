@@ -100,7 +100,7 @@ Cependant, si vous avez inclus les deux tableaux dans votre connexion, l’attri
 
 >[!NOTE]
 >
->Si un champ fusionné est une clé de recherche pour un jeu de données d’événement dans la connexion, le jeu de données de recherche associé va enrichir toutes les valeurs **1} de ce champ.** Peu importe de quel jeu de données d’événement provient une ligne, car la relation de recherche est associée au chemin du schéma partagé.
+>Si un champ fusionné est une clé de recherche pour un jeu de données d’événement dans la connexion, le jeu de données de recherche associé va enrichir toutes les valeurs **1&rbrace; de ce champ.** Peu importe de quel jeu de données d’événement provient une ligne, car la relation de recherche est associée au chemin du schéma partagé.
 
 ## Analyse cross-canal
 

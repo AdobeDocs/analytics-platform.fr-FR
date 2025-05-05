@@ -34,7 +34,7 @@ ht-degree: 96%
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente le panneau Expérimentation dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consultez [Panneau Analytics for Target](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/panels/a4t-panel) pour plus d’informations sur l’analyse des activités et des expériences Adobe Target dans_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
+_Cet article présente le panneau Expérimentation dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consultez [Panneau Analytics for Target](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/panels/a4t-panel) pour plus d’informations sur l’analyse des activités et des expériences Adobe Target dans_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
