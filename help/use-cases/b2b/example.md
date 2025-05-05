@@ -14,7 +14,7 @@ ht-degree: 12%
 
 # Exemple de projet B2B
 
-Cet article illustre un cas pratique où vous souhaitez générer des rapports appropriés en Customer Journey Analytics sur les données de personne dans le contexte d’une configuration B2B standard. Une telle configuration fait partie du [B2B edition Real-Time CDP](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview).  Le cas d’utilisation explique comment configurer, configurer et générer des rapports au niveau du profil (personne) en fonction des données B2B dans Customer Journey Analytics.
+Cet article illustre un cas pratique où vous souhaitez générer des rapports appropriés en Customer Journey Analytics sur les données de personne dans le contexte d’une configuration B2B standard. Une telle configuration fait partie du [B2B edition Real-Time CDP](https://experienceleague.adobe.com/fr/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview).  Le cas d’utilisation explique comment configurer, configurer et générer des rapports au niveau du profil (personne) en fonction des données B2B dans Customer Journey Analytics.
 
 ## Connexion
 
@@ -41,7 +41,7 @@ Définissez votre connexion pour inclure tous les jeux de données B2B pertinent
 -->
 
 
-La relation entre les schémas de recherche B2B, le schéma de profil et le schéma d’événement est définie dans la configuration B2B d’Experience Platform. Voir Schémas dans [Real-Time Customer Data Platform B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/schemas/b2b) et [Définition d’une relation multiple-à-un entre deux schémas dans Real-Time Customer Data Platform B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/relationship-b2b).
+La relation entre les schémas de recherche B2B, le schéma de profil et le schéma d’événement est définie dans la configuration B2B d’Experience Platform. Voir Schémas dans [Real-Time Customer Data Platform B2B edition](https://experienceleague.adobe.com/fr/docs/experience-platform/rtcdp/schemas/b2b) et [Définition d’une relation multiple-à-un entre deux schémas dans Real-Time Customer Data Platform B2B edition](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/tutorials/relationship-b2b).
 
 
 Pour garantir une configuration correcte d’une connexion qui prend en charge les recherches basées sur les personnes de vos données B2B, utilisez l’illustration suivante pour obtenir un aperçu et procédez comme suit :

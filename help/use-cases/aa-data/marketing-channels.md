@@ -14,12 +14,12 @@ ht-degree: 61%
 
 # Utiliser les dimensions du canal marketing
 
-Si votre entreprise utilise le [connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html) pour importer les données de la suite de rapports dans Customer Journey Analytics, vous pouvez configurer une connexion en Customer Journey Analytics pour créer des rapports sur les dimensions du canal marketing.
+Si votre entreprise utilise le [connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=fr) pour importer les données de la suite de rapports dans Customer Journey Analytics, vous pouvez configurer une connexion en Customer Journey Analytics pour créer des rapports sur les dimensions du canal marketing.
 
 ## Conditions préalables
 
-* Les données de la suite de rapports doivent déjà être importées dans Adobe Experience Platform à l’aide du [connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). Les autres sources de données ne sont pas prises en charge, car les canaux marketing dépendent des règles de traitement d’une suite de rapports Analytics.
-* Les règles de traitement de canal marketing doivent déjà être configurées. Voir [Règles de traitement des canaux marketing](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-rules.html) dans le guide Composants Adobe Analytics.
+* Les données de la suite de rapports doivent déjà être importées dans Adobe Experience Platform à l’aide du [connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=fr). Les autres sources de données ne sont pas prises en charge, car les canaux marketing dépendent des règles de traitement d’une suite de rapports Analytics.
+* Les règles de traitement de canal marketing doivent déjà être configurées. Voir [Règles de traitement des canaux marketing](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-rules.html?lang=fr) dans le guide Composants Adobe Analytics.
 
 ## Éléments de schéma de canal marketing
 

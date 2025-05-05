@@ -165,7 +165,7 @@ Les conteneurs Événement incluent des répartitions de page unique basées sur
 
 ### Conteneurs B2B
 
-[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
+[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
 
 Lorsque vous avez accès à [Customer Journey Analytics B2B edition](/help/getting-started/cja-b2b-edition.md), des conteneurs supplémentaires à utiliser dans les segments sont disponibles. Pour plus d’informations sur l’utilisation de ces conteneurs supplémentaires, consultez les concepts et fonctionnalités [B2B](/help/getting-started/cja-b2b-concepts-features.md).
 

@@ -46,4 +46,4 @@ Pour afficher la table des matières d’un projet, procédez comme suit :
 
 >[!MORELIKETHIS]
 >
->* [Simplifiez la navigation dans les tableaux de bord avec la nouvelle fonctionnalité Table des matières d’Adobe Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/simplify-dashboard-navigation-with-the-new-table-of-contents/ba-p/731284)
+>* [Simplifiez la navigation dans les tableaux de bord avec la nouvelle fonctionnalité Table des matières d’Adobe Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/simplify-dashboard-navigation-with-the-new-table-of-contents/ba-p/731284?profile.language=fr)

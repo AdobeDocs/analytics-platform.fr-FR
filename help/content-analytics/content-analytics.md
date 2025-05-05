@@ -72,6 +72,6 @@ Content Analytics utilise les données d’affichage d’images web dans les jeu
 >
 >[Création de rapports Content Analytics](report/report.md)
 >[Configurer Content Analytics](config/configuration.md)
->[Calcul des bounces et du taux de bounce dans Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446#M454)
+>[Calcul des bounces et du taux de bounce dans Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446?profile.language=fr#M454)
 >
 

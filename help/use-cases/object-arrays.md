@@ -270,5 +270,5 @@ L’application de cette mesure calculée affiche les résultats souhaités :
 
 ## Limites
 
-Des limites s’appliquent aux tableaux dans les données utilisées par Customer Journey Analytics et modélisées dans le cadre d’un schéma dans Experience Platform. Voir [Limites de modèle de données](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-model-limits) et [Limites de taille de données](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-size-limits) dans les [ garde-fous par défaut pour la segmentation et les données de profil client en temps réel](https://experienceleague.adobe.com/fr/docs/experience-platform/profile/guardrails).
+Des limites s’appliquent aux tableaux dans les données utilisées par Customer Journey Analytics et modélisées dans le cadre d’un schéma dans Experience Platform. Voir [Limites de modèle de données](https://experienceleague.adobe.com/fr/docs/experience-platform/profile/guardrails#data-model-limits) et [Limites de taille de données](https://experienceleague.adobe.com/fr/docs/experience-platform/profile/guardrails#data-size-limits) dans les [ garde-fous par défaut pour la segmentation et les données de profil client en temps réel](https://experienceleague.adobe.com/fr/docs/experience-platform/profile/guardrails).
 

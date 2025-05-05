@@ -66,7 +66,7 @@ Toutes les dimensions et mesures partagées sont affichées sous les quatre cart
    * **[!UICONTROL Description]** : [description](/help/data-views/component-settings/overview.md) du composant.
    * **[!UICONTROL Libellés de contexte]** : les [libellés de contexte](/help/data-views/component-settings/overview.md) du composant.
    * **[!UICONTROL Inclure/exclure des valeurs]** : répertorie le nombre de règles tel que spécifié sous [Inclure/exclure des valeurs](/help/data-views/component-settings/include-exclude-values.md).
-   * **[!UICONTROL Libellés d’utilisation des données]** : [libellés d’utilisation des données](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview) pour le champ de schéma.
+   * **[!UICONTROL Libellés d’utilisation des données]** : [libellés d’utilisation des données](https://experienceleague.adobe.com/fr/docs/experience-platform/data-governance/labels/overview) pour le champ de schéma.
    * **[!UICONTROL Obsolète]** : indique si l’indicateur obsolète est défini.
    * **[!UICONTROL Format]** : format dans lequel les valeurs apparaissent. Les booléens apparaissent généralement sous la forme `True | False`, les mesures apparaissent généralement sous la forme `Decimal`, etc.
    * **[!UICONTROL Déduplication des mesures]** : paramètres [Déduplication des mesures](/help/data-views/component-settings/metric-deduplication.md) du composant.

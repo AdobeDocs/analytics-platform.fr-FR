@@ -28,10 +28,10 @@ Certaines configurations de pare-feu bloquent les domaines sur lesquels Customer
 
 ## Domaines Adobe Experience Cloud
 
-Outre les domaines ci-dessus, le Adobe Experience Cloud s’appuie sur plusieurs domaines pour la collecte de données et l’exportation de rapports. Voir [Domaines utilisés par Adobe Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/domains) pour cette liste de domaines.
+Outre les domaines ci-dessus, le Adobe Experience Cloud s’appuie sur plusieurs domaines pour la collecte de données et l’exportation de rapports. Voir [Domaines utilisés par Adobe Experience Cloud](https://experienceleague.adobe.com/fr/docs/core-services/interface/data-collection/domains) pour cette liste de domaines.
 
 >[!MORELIKETHIS]
 >
 >[Adresses IP utilisées par le Customer Journey Analytics](ip-addresses.md)
 >
->[Domaines utilisés par Adobe Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/domains)
+>[Domaines utilisés par Adobe Experience Cloud](https://experienceleague.adobe.com/fr/docs/core-services/interface/data-collection/domains)

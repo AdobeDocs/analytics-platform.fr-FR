@@ -68,7 +68,7 @@ Les éléments suivants s’affichent :
    * CREATE : une action « créer » a été effectuée.
    * DELETE : une action « supprimer » a été effectuée.
    * EDIT : une action « modifier » a été effectuée.
-   * EMBARGO : lorsque vous limitez une demande dans le [ Gestionnaire des activités de rapports ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/reporting-activity-manager/reporting-activity-cancel-requests), l’action est enregistrée dans le journal d’audit sous EMBARGO.
+   * EMBARGO : lorsque vous limitez une demande dans le [ Gestionnaire des activités de rapports ](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/reporting-activity-manager/reporting-activity-cancel-requests), l’action est enregistrée dans le journal d’audit sous EMBARGO.
    * EXPORT : une action « export » a été effectuée.
    * ORG_CHANGE : une action de changement d’organisation a été effectuée.
    * REFRESH : une action « actualiser » a été effectuée.

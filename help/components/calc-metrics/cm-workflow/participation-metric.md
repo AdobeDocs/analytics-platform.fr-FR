@@ -16,7 +16,7 @@ Les mesures de participation sont utilisées pour quantifier la manière dont le
 
 >[!NOTE]
 >
->Les administrateurs peuvent créer des mesures avec des modèles d’attribution autres que ceux par défaut, tels que Participation, dans le cadre d’une [vue de données](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views). Pour plus d’informations, voir [Paramètres du composant d’attribution](../../../data-views/component-settings/attribution.md) .
+>Les administrateurs peuvent créer des mesures avec des modèles d’attribution autres que ceux par défaut, tels que Participation, dans le cadre d’une [vue de données](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dataviews/data-views). Pour plus d’informations, voir [Paramètres du composant d’attribution](../../../data-views/component-settings/attribution.md) .
 
 Les étapes ci-dessous montrent comment tout utilisateur disposant de l’[autorisation Créer une mesure calculée](/help/technotes//access-control.md#user-level-access) peut créer une mesure de participation.
 

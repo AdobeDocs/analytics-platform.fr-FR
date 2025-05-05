@@ -36,7 +36,7 @@ Content Analytics nécessite qu’Experience Platform Edge Network Web SDK colle
 La bibliothèque Content Analytics collecte des données lorsque :
 
 * Content Analytics est inclus dans la bibliothèque de balises chargée sur la page.
-* L’URL de la page est configurée dans l’extension [Content Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview){target="_blank"}, qui fait partie de la bibliothèque de balises incluse.
+* L’URL de la page est configurée dans l’extension [Content Analytics](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/content-analytics/overview){target="_blank"}, qui fait partie de la bibliothèque de balises incluse.
 
 
 ## Événement Content Analytics

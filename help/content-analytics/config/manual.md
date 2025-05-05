@@ -22,17 +22,17 @@ Les actions de configuration manuelles suivantes sont disponibles :
 
 Pour démarrer la collecte de données pour une configuration Content Analytics implémentée, procédez comme suit :
 
-1. Suivez le [ flux de publication ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"}. Publiez la bibliothèque pour la propriété Tags contenant votre configuration Content Analytics.
+1. Suivez le [ flux de publication ](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/publish/overview){target="_blank"}. Publiez la bibliothèque pour la propriété Tags contenant votre configuration Content Analytics.
 
-1. [Installez](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/environments/environments#installation) le code incorporé dans l’élément `<head>` des pages dans votre environnement de développement, d’évaluation ou de publication, sous réserve de Content Analytics.
+1. [Installez](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/publish/environments/environments#installation) le code incorporé dans l’élément `<head>` des pages dans votre environnement de développement, d’évaluation ou de publication, sous réserve de Content Analytics.
 
 
 ## Arrêter la collecte de données
 
 Pour arrêter la collecte de données pour une configuration Content Analytics implémentée, procédez comme suit :
 
-1. Supprimez le [code incorporé](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/environments/environments) dans l’élément `<head>` des pages de votre environnement de développement, d’évaluation ou de production, sous réserve de Content Analytics.
-1. [Supprimez](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview) la propriété Balises associée à votre configuration Content Analytics.
+1. Supprimez le [code incorporé](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/publish/environments/environments) dans l’élément `<head>` des pages de votre environnement de développement, d’évaluation ou de production, sous réserve de Content Analytics.
+1. [Supprimez](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/publish/overview) la propriété Balises associée à votre configuration Content Analytics.
 
 
 
@@ -40,32 +40,32 @@ Pour arrêter la collecte de données pour une configuration Content Analytics i
 
 Vous pouvez apporter des modifications mineures à une configuration implémentée à l’aide de l’[assistant de configuration guidé](guided.md). Par exemple, modifiez la vue de données ou activez ou désactivez des expériences.
 
-Vous utilisez l’extension [Adobe Content Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview) dans la propriété Tags associée à votre configuration Content Analytics pour apporter des modifications aux artefacts suivants :
+Vous utilisez l’extension [Adobe Content Analytics](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/content-analytics/overview) dans la propriété Tags associée à votre configuration Content Analytics pour apporter des modifications aux artefacts suivants :
 
-* [Sandbox et flux de données](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-datastreams){target="_blank"}.
+* [Sandbox et flux de données](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-datastreams){target="_blank"}.
 
   >[!CAUTION]
   >
   >Vérifiez que le sandbox et le flux de données que vous configurez dans l’extension Adobe Content Analytics sont déjà configurés pour Content Analytics à l’aide de la [configuration guidée](guided.md) à un stade antérieur. Cette configuration garantit que tous les artefacts requis sont disponibles.<br/><br/>Vérifiez également que les mises à jour du sandbox ou des flux de données n’interfèrent pas avec une autre configuration Content Analytics configurée pour utiliser le même sandbox ou les mêmes flux de données.
   >
 
-* [Capture et définition de l’expérience](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview?lang=en#configure-experience-capture-and-definition)
+* [Capture et définition de l’expérience](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/content-analytics/overview?lang=en#configure-experience-capture-and-definition)
 
   Vous pouvez activer ou désactiver des expériences et modifier les combinaisons d’expressions régulières et de paramètres de requête afin de déterminer comment le contenu est rendu sur votre site web.
 
-* [Segmentation des événements](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting){target="_blank"}
+* [Segmentation des événements](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting){target="_blank"}
 
   Vous pouvez modifier les expressions régulières pour modifier la manière dont vous segmentez les pages et les ressources.
 
 
-Après avoir apporté des modifications à l’extension Adobe Content Analytics, veillez à utiliser [flux de publication](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"} pour commencer la collecte de données en fonction des modifications apportées.
+Après avoir apporté des modifications à l’extension Adobe Content Analytics, veillez à utiliser [flux de publication](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/publish/overview){target="_blank"} pour commencer la collecte de données en fonction des modifications apportées.
 
 
 
 >[!MORELIKETHIS]
 >
 >[Configuration guidée](guided.md)
->[Présentation de la publication des balises de collecte de données](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview)
+>[Présentation de la publication des balises de collecte de données](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/publish/overview)
 >
 
 

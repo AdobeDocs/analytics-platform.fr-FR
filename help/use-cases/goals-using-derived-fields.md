@@ -16,7 +16,7 @@ ht-degree: 6%
 
 Ce cas pratique décrit comment utiliser la puissance des champs dérivés pour définir des objectifs pour une dimension spécifique, puis utiliser ces objectifs dans votre projet Workspace.
 
-Si vous ne connaissez pas les champs dérivés, reportez-vous au [tutoriel](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/derived-fields-in-cja.html) et à la [documentation](../data-views/derived-fields/derived-fields.md) pour une introduction.
+Si vous ne connaissez pas les champs dérivés, reportez-vous au [tutoriel](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/derived-fields-in-cja.html?lang=fr) et à la [documentation](../data-views/derived-fields/derived-fields.md) pour une introduction.
 
 
 ## Définition des objectifs

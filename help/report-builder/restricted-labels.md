@@ -23,7 +23,7 @@ En outre, lorsque des données sont exportées à partir de Customer Journey A
 
 Cette intégration vous permet de gérer la conformité. Les gestionnaires de données de votre entreprise peuvent définir des politiques pour restreindre l’utilisation. Par conséquent, vos utilisateurs et utilisatrices Customer Journey Analytics peuvent utiliser les données de manière plus sécurisée, tout en sachant qu’elles sont conformes aux politiques définies par les gestionnaires de données.
 
-Pour plus d’informations, voir [Customer Journey Analytics et gouvernance des données](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-privacy/privacy-overview)
+Pour plus d’informations, voir [Customer Journey Analytics et gouvernance des données](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-privacy/privacy-overview)
 
 ## Afficher les données limitées
 
@@ -34,7 +34,7 @@ Deux politiques définies par Adobe sont affichées dans Customer Journey Analyt
 
 Les composants soumis à ces politiques sont grisés et possèdent une icône ![InfoOutline](/help/assets/icons/InfoOutline.svg). Lorsque vous pointez sur l’icône d’informations, une note s’affiche pour indiquer les éléments suivants : **[!UICONTROL Des politiques ont été appliquées à ce champ pour interdire l’utilisation de ces données]**.
 
-Pour plus d’informations, voir [ Étiquettes et politiques ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-governance).
+Pour plus d’informations, voir [ Étiquettes et politiques ](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dataviews/data-governance).
 
 
 ![Note de politique indiquant l’utilisation interdite des données.](assets/restricted-label.png){zoomable="yes"}

@@ -27,7 +27,7 @@ ht-degree: 90%
 
 En tirant parti des technologies de pointe en matière de machine learning et de deep learning supervisés, l’optimisation personnalisée permet à une personne professionnelle (spécialisée dans le marketing) de définir des objectifs commerciaux et d’utiliser ses données de clientèle pour entraîner des modèles orientés métier afin de fournir des offres personnalisées et d’optimiser les KPI.
 
-1. Suivez les informations de la section [Modèle d’optimisation personnalisée](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/rankings/ai-models/personalized-optimization-model) du guide de Journey Optimizer.
+1. Suivez les informations de la section [Modèle d’optimisation personnalisée](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/decisioning/offer-decisioning/rankings/ai-models/personalized-optimization-model) du guide de Journey Optimizer.
 
 {{upgrade-final-step}}
 
