@@ -41,7 +41,7 @@ Avec une visutlisation Treemap, vous pouvez voir des motifs qui seraient diffici
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisation Treemap](https://video.tv.adobe.com/v/334458/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisation Treemap](https://video.tv.adobe.com/v/3416854/?quality=12&learn=on&captions=fre_fr){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 

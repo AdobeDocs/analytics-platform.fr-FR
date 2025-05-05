@@ -60,7 +60,7 @@ Le temps de lecture peut vous aider à comprendre les éléments suivants :
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Temps de lecture de média](https://video.tv.adobe.com/v/338699){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Temps de lecture de média](https://video.tv.adobe.com/v/3446702?captions=fre_fr){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 

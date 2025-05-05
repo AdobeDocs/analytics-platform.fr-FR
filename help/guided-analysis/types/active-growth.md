@@ -34,7 +34,7 @@ L’analyse ![PeopleGroup](/help/assets/icons/PeopleGroup.svg) **[!UICONTROL Cro
 Tous les utilisateurs et utilisatrices actifs (nouveaux + conservés + récurrents) apparaissent en teinte turquoise au-dessus de l’axe horizontal, tandis que tous les utilisateurs et utilisatrices inactifs apparaissent en orange au-dessous de l’axe horizontal.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3421667/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3423393/?quality=12&learn=on&captions=fre_fr)
 
 ## Cas d’utilisation
 
