@@ -5,7 +5,7 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
+source-git-commit: 720751130d0f66bddffd13c6f160a85fcc7a7206
 workflow-type: tm+mt
 source-wordcount: '1454'
 ht-degree: 98%
@@ -24,7 +24,7 @@ Toute la partie concernant les rapports n’a pas vraiment changé.
 
 * Vous pouvez utiliser [Analysis Workspace](/help/analysis-workspace/home.md) pour analyser vos données. Workspace a le même mode de fonctionnement que sur la version standard d’Adobe Analytics.
 * La même version des [tableaux de bord Adobe Analytics](/help/mobile-app/home.md) est disponible et fonctionne de la même manière, que ce soit avec Customer Journey Analytics ou Adobe Analytics.
-* [Report Builder](/help/report-builder/report-buider-overview.md) a une nouvelle interface et fonctionne sur MS Windows, macOS et la version web d’Excel. (Avant cette version de Report Builder, vous ne pouviez pas l’utiliser sur Mac à moins de l’exécuter sur VMware.) Cette version ne prend pas encore en charge les demandes de données AA traditionnelles.
+* [Report Builder](/help/report-builder/rb-overview.md) a une nouvelle interface et fonctionne sur MS Windows, macOS et la version web d’Excel. (Avant cette version de Report Builder, vous ne pouviez pas l’utiliser sur Mac à moins de l’exécuter sur VMware.) Cette version ne prend pas encore en charge les demandes de données AA traditionnelles.
 
 ## Modification des rapports
 
@@ -93,7 +93,7 @@ Les mesures calculées portent le même nom entre Adobe Analytics et Customer Jo
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Déplacement des mesures calculées d’Adobe Analytics vers Customer Journey Analytics](https://video.tv.adobe.com/v/33728?quality=12&learn=on&captions=fre_fr){target="_blank"} pour une vidéo de démonstration sur le déplacement des mesures calculées.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Déplacement des mesures calculées d’Adobe Analytics vers Customer Journey Analytics](https://video.tv.adobe.com/v/31788?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration sur le déplacement des mesures calculées.
 
 >[!ENDSHADEBOX]
 
@@ -120,7 +120,7 @@ Customer Journey Analytics étend le concept d’identité au-delà des ECID pou
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Utilisation d’une identité dans Customer Journey Analytics](https://video.tv.adobe.com/v/32935/?quality=12&learn=on&captions=fre_fr){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Utilisation d’une identité dans Customer Journey Analytics](https://video.tv.adobe.com/v/30750/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 

@@ -1,24 +1,24 @@
 ---
 title: Présentation des dimensions
-description: Découvrez les dimensions et leur utilisation en Customer Journey Analytics
+description: Découvrez les dimensions et leur utilisation dans Customer Journey Analytics
 feature: Dimensions
 exl-id: 3592808b-17fd-401d-ab12-ff0308b21f45
-source-git-commit: d37734ae415722fc609715868c37a36f2becdbf6
+source-git-commit: ed7e9a6c34c5f8ba9ba4f75be05768409cbc158d
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '263'
 ht-degree: 36%
 
 ---
 
 # Présentation des dimensions
 
-Les Dimensions sont un type de composant dans Customer Journey Analytics utilisé pour analyser les données. Par exemple, vous utilisez des dimensions lors de la création de rapports dans [Analysis Workspace](/help/analysis-workspace/home.md) ou dans [Report Builder](/help/report-builder/report-buider-overview.md).
+Les dimensions sont un type de composant dans Customer Journey Analytics utilisé pour analyser les données. Par exemple, vous utilisez des dimensions lors de la création de rapports dans [Analysis Workspace](/help/analysis-workspace/home.md) ou dans [Report Builder](/help/report-builder/rb-overview.md).
 
-Les dimensions du Customer Journey Analytics sont de type illimité ; les valeurs peuvent être numériques, textuelles, objets, listes ou mélanges de toutes.
+Les dimensions Customer Journey Analytics sont de type illimité ; les valeurs peuvent être numériques, textuelles, d’objets, de listes ou des mélanges de tous.
 
-Dans Customer Journey Analytics, un rapport de base affiche des lignes de dimensions (généralement des valeurs de chaîne), par rapport à une colonne de mesures (valeurs numériques courantes).
+Un rapport de base dans Customer Journey Analytics affiche des lignes de dimensions (généralement des valeurs de chaîne) par rapport à une colonne de mesures (généralement des valeurs numériques).
 
-Par exemple, si vous combinez la dimension Page à la mesure Personnes, vous obtenez un rapport de classement indiquant les pages les plus visitées par les personnes :
+Par exemple, si vous combinez la dimension Page avec la mesure Personnes , vous obtiendrez un rapport avec classement présentant les pages les plus visitées par les personnes :
 
 | Page | Personnes |
 | --- | ---: |
@@ -33,7 +33,7 @@ Chaque dimension représente une partie ou une facette différente de votre site
 
 ## Création de dimensions
 
-Les administrateurs de Customer Journey Analytics peuvent [créer des dimensions dans une vue de données](/help/data-views/create-dataview.md#components).
+L’administration de Customer Journey Analytics peut [créer des dimensions dans une vue de données](/help/data-views/create-dataview.md#components).
 
 ## Dimensions par défaut
 
@@ -60,4 +60,4 @@ Lorsque vous créez une vue de données, les composants temporels suivants sont 
 
 ## Ajouter des descriptions pour les dimensions
 
-Les administrateurs de Customer Journey Analytics peuvent ajouter des descriptions pour les dimensions et d’autres composants dans la vue de données ou directement dans Analysis Workspace. Pour plus d’informations sur l’ajout de descriptions aux dimensions, voir [Ajouter des descriptions de composant](/help/components/add-component-descriptions.md).
+Les administrateurs et administratrices de Customer Journey Analytics peuvent ajouter des descriptions pour les dimensions et d’autres composants dans la vue de données ou directement dans Analysis Workspace. Pour plus d’informations sur l’ajout de descriptions aux dimensions, voir [Ajouter des descriptions de composant](/help/components/add-component-descriptions.md).

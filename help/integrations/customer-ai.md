@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
 feature: Experience Platform Integration
-source-git-commit: c26829d7a53e9ba8d5faf731a8a1dca2e741bf21
-workflow-type: ht
-source-wordcount: '959'
-ht-degree: 100%
+source-git-commit: ed7e9a6c34c5f8ba9ba4f75be05768409cbc158d
+workflow-type: tm+mt
+source-wordcount: '960'
+ht-degree: 97%
 
 ---
 
@@ -49,7 +49,7 @@ Pour intégrer réellement les données d’IA dédiée aux clientes et clients 
 
 ## Étape 1 : Configurer une instance IA dédiée aux clients
 
-Une fois vos données préparées et vos informations d’identification et schémas en place, commencez par suivre le guide [Configurer une instance IA dédiée aux clients](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/user-guide/configure.html?lang=fr) dans Adobe Experience Platform.
+Une fois vos données préparées et vos informations d’identification et schémas en place, commencez par suivre le guide [Configurer une instance IA dédiée aux clients](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/user-guide/configure.html) dans Adobe Experience Platform.
 
 ## Étape 2 : configurer une connexion Customer Journey Analytics à des jeux de données IA dédiée aux clientes et clients
 
@@ -73,7 +73,7 @@ Voici un exemple de schéma XDM que Customer Journey Analytics apporterait dan
 
 Dans Customer Journey Analytics, vous pouvez maintenant [créer des vues de données](/help/data-views/create-dataview.md) avec les dimensions (score, date de score, probabilité, etc.) et les mesures introduites dans le cadre de la connexion que vous avez établie.
 
-![Cration d’une fenêtre de vue de données](assets/create-dataview.png)
+![Créer une fenêtre de vue de données](assets/create-dataview.png)
 
 ## Étape 4 : Établir des rapports sur les scores CAI dans Workspace
 
