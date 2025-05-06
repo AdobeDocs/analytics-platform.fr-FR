@@ -4,12 +4,10 @@ description: La session Lier Quantum Metric est relue avec les données de CJA p
 role: User, Admin
 solution: Customer Journey Analytics
 feature: Use Cases
-hidefromtoc: true
-hide: true
 exl-id: fcc36457-4ce9-4c93-93e2-de03becfd5da
-source-git-commit: a03505aeb56f99b28f50819765a496705876b89c
+source-git-commit: 95a107c6bbc6dce6cc43c4a1b51beeaa1fa7aff1
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '814'
 ht-degree: 2%
 
 ---
@@ -22,7 +20,7 @@ En liant les relectures de session de Quantum Metric aux données de CJA, les cl
 
 Ces étapes supposent que vous utilisiez les balises dans la collecte de données Adobe Experience Platform. Vous pouvez adapter ces méthodes de collecte de données vers une implémentation manuelle de Web SDK si votre entreprise n’utilise pas de balises.
 
-Pour plus d’informations, consultez la documentation de l’[extension de balise Quantum Metric](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/catalog/analytics/quantum-metric).
+Pour plus d’informations, consultez la documentation de l’[extension de balise Quantum Metric](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric).
 
 ## Étape 1 : créer un champ de schéma pour s’adapter à l’ID de session Quantum Metric
 
@@ -110,8 +108,10 @@ Créez un tableau à structure libre dans Workspace et configurez-le afin que le
 
 Chaque ID de session est désormais un lien cliquable. Voir [Créer des liens hypertexte dans un tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md) pour plus d’informations sur l’ajout de liens hypertexte aux éléments de dimension Analysis Workspace.
 
+![Relecture de session](assets/session-replay.png)
+
 ## Étape 5 : affichage des sessions depuis Customer Journey Analytics
 
 Une fois que vous avez trouvé un segment intéressant que vous souhaitez explorer, vous pouvez l’appliquer au panneau qui comprend vos liens d’ID de session. Le tableau renvoie toutes les sessions de ce segment et vous pouvez cliquer sur l’une d’entre elles pour l’explorer davantage dans la mesure quantique.
 
-Pour plus d’informations[&#128279;](https://www.quantummetric.com/resources/ebook/the-enterprise-guide-to-session-replay) consultez le  Guide d’entreprise sur la relecture de session sur Quantum Metric . Vous pouvez également contacter votre représentant du service clientèle de Quantum Metric ou soumettre une demande par le biais du portail [Quantum Metric Customer Request](https://community.quantummetric.com/s/public-support-page).
+Pour plus d’informations](https://www.quantummetric.com/resources/ebook/the-enterprise-guide-to-session-replay) consultez le [ Guide d’entreprise sur la relecture de session sur Quantum Metric . Vous pouvez également contacter votre représentant du service clientèle de Quantum Metric ou soumettre une demande par le biais du portail [Quantum Metric Customer Request](https://community.quantummetric.com/s/public-support-page).

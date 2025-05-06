@@ -4,12 +4,10 @@ description: Ajoutez des événements de friction collectés par Quantum Metric 
 role: User, Admin
 solution: Customer Journey Analytics
 feature: Use Cases
-hidefromtoc: true
-hide: true
 exl-id: 1b7d5159-39b2-4ba4-be64-f448ae53c70e
-source-git-commit: 11dc62cda2ceb7afabd3abd0944420601c8fa235
+source-git-commit: 95a107c6bbc6dce6cc43c4a1b51beeaa1fa7aff1
 workflow-type: tm+mt
-source-wordcount: '665'
+source-wordcount: '667'
 ht-degree: 1%
 
 ---
@@ -40,7 +38,7 @@ Ce cas d’utilisation nécessite un champ de schéma dédié vers lequel envoye
 
 ## Étape 2 : capturer des événements de friction à l’aide de l’extension de balise Quantum Metric
 
-Voir [Extension Quantum Metric](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/catalog/analytics/quantum-metric) dans le guide des destinations Adobe Experience Platform pour obtenir des instructions sur la configuration de vos balises afin d’inclure des données de mesure quantique. L’utilisation de cette extension transmet plus de lignes dans un jeu de données existant.
+Voir [Extension Quantum Metric](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric) dans le guide des destinations Adobe Experience Platform pour obtenir des instructions sur la configuration de vos balises afin d’inclure des données de mesure quantique. L’utilisation de cette extension transmet plus de lignes dans un jeu de données existant.
 
 Utilisez les balises dans la collecte de données Adobe Experience Platform pour définir manuellement le nom de l’événement de friction afin qu’il puisse être inclus dans l’objet XDM et analysé. Pour ce faire, vous pouvez utiliser le code personnalisé de la règle :
 
@@ -74,6 +72,8 @@ Grâce aux données d’événement de friction de mesure quantique collectées 
 1. Sélectionnez un projet existant ou créez-en un.
 1. Créez un [tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md).
 1. Faites glisser les dimensions et mesures de votre choix vers la zone de travail Workspace pour les analyser.
+
+![Graphique de friction](assets/friction-graph.png)
 
 Les idées d’analyse possibles sont les suivantes :
 

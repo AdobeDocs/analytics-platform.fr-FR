@@ -4,12 +4,10 @@ description: Comprenez mieux l’engagement au niveau des pages et optimisez les
 role: User, Admin
 solution: Customer Journey Analytics
 feature: Use Cases
-hidefromtoc: true
-hide: true
 exl-id: d861135f-42a4-45ac-8b11-41f151bfce92
-source-git-commit: 25a2c549c27918f80202bde4cd30e305f4a295f3
+source-git-commit: 95a107c6bbc6dce6cc43c4a1b51beeaa1fa7aff1
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '348'
 ht-degree: 1%
 
 ---
@@ -24,7 +22,7 @@ Le tableau renvoie toutes les sessions de ce segment. Vous pouvez cliquer sur l�
 
 Pour accéder aux fonctionnalités de carte thermique de Quantum Metric, vous devez disposer du package **UX Ops**.
 
-## Étape 1 : créez un tableau à structure libre dans Workspace et configurez-le de sorte que les valeurs d’ID de session soient des liens directement vers Quantum Metric.
+## Étape 1 : Configurer les liens dans Analysis Workspace
 
 1. Connectez-vous à [experience.adobe.com](https://experience.adobe.com).
 1. Accédez à Customer Journey Analytics, puis sélectionnez **[!UICONTROL Workspace]** dans le menu supérieur.
@@ -41,6 +39,8 @@ Pour accéder aux fonctionnalités de carte thermique de Quantum Metric, vous de
 
 1. Cliquez sur **[!UICONTROL Créer]**.
 1. Testez l’un des liens pour voir s’il s’ouvre dans l’URL avec l’extension Quantum Metric visible. Ces liens s’ouvrent dans un nouvel onglet afin que votre projet Workspace reste ouvert.
+
+![ Carte thermique ](assets/heatmap.png)
 
 ## Étape 2 : affichage des cartes thermiques en cliquant sur les liens dans Customer Journey Analytics
 
