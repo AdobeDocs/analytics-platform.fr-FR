@@ -9,7 +9,7 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: aa7b73db10e81a96f532eedf09091109209124c0
+source-git-commit: 1015ce248785248846f1f9ff7c6461adc0c54797
 workflow-type: tm+mt
 source-wordcount: '1223'
 ht-degree: 83%
@@ -39,7 +39,7 @@ ht-degree: 83%
       + [Questions fréquentes](../getting-started/cja-faq.md)
       + [Comparer aux solutions BI](../getting-started/cja-vs-bi.md)
       + [Assistant IA](../ai-assistant.md)
-      + [Agent Data Insights](../data-analysis-ai.md)
+      + [Agent Data Insights](../data-analysis-ai.md)
    + Customer Journey Analytics B2B edition {#cja-b2b}
       + [Vue d’ensemble](/help/getting-started/cja-b2b-edition.md)
       + [Concepts et fonctionnalités B2B](/help/getting-started/cja-b2b-concepts-features.md)
@@ -323,7 +323,7 @@ ht-degree: 83%
       + [Dimensions de répartition du temps](../components/dimensions/time-parting-dimensions.md)
       + [Dimensions de cardinalité élevée](../components/dimensions/high-cardinality.md)
    + [Mesures](../components/apply-create-metrics.md)
-   + Segments {#cja-segments}
+   + Segments {#cja-filters}
       + [Vue d’ensemble](../components/filters/filters-overview.md)
       + [Création de segments](../components/filters/create-filters.md)
       + [Création de segments](../components/filters/filter-builder.md)
