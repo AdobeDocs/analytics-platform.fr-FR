@@ -5,23 +5,20 @@ exl-id: 53ef7485-9cae-4663-bf61-4eb77c126830
 feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 role: User
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: be617c59cd2fced0031fda1130b86e638bee8f68
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 98%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Analyse de la [!UICONTROL croissance active] {#active-growth}
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="workspace_guidedanalysis_activegrowth_button"
 >title="Croissance active"
 >abstract="Identifiez les nouvelles personnes, celles qui ont été conservées, celles qui reviennent ou celles qui sont inactives."
 
-<!-- markdownlint-enable MD034 -->
 
 
 L’analyse ![PeopleGroup](/help/assets/icons/PeopleGroup.svg) **[!UICONTROL Croissance active]** fournit des informations sur la croissance et l’acquisition d’utilisateurs et d’utilisatrices sur une période spécifique. L’axe horizontal est un intervalle de temps, tandis que l’axe vertical est une mesure des utilisateurs et utilisatrices. Les utilisateurs et utilisatrices sont répartis en quatre catégories :
@@ -34,7 +31,7 @@ L’analyse ![PeopleGroup](/help/assets/icons/PeopleGroup.svg) **[!UICONTROL Cro
 Tous les utilisateurs et utilisatrices actifs (nouveaux + conservés + récurrents) apparaissent en teinte turquoise au-dessus de l’axe horizontal, tandis que tous les utilisateurs et utilisatrices inactifs apparaissent en orange au-dessous de l’axe horizontal.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3423393/?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3421667/?quality=12&learn=on)
 
 ## Cas d’utilisation
 
@@ -54,7 +51,7 @@ Le rail de requête vous permet de configurer les composants suivants :
 
 * **[!UICONTROL Vue]** : basculez entre cette analyse et [Croissance nette](net-growth.md).
 * **[!UICONTROL Événements]** : événements que vous souhaitez mesurer. Cette analyse étant basée sur les personnes, une personne qui interagit avec l’événement une fois au cours de la période est comptabilisée comme étant active. Vous pouvez inclure un événement dans une requête.
-* **[!UICONTROL Compté comme]** : méthode de comptage à appliquer aux événements sélectionnés. Les options incluent [!UICONTROL Nombre d’utilisateurs et d’utilisatrices] et [!UICONTROL Pourcentage d’utilisateurs et d’utilisatrices].
+* **[!UICONTROL Compté comme]** : méthode de comptage à appliquer aux événements sélectionnés. <ul><li>**[!UICONTROL Options]** inclure [!UICONTROL Nombre d’utilisateurs] et [!UICONTROL Pourcentage d’utilisateurs].</li><li>[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} Des options **[!UICONTROL B2B supplémentaires]** sont disponibles pour Customer Journey Analytics B2B edition : [!UICONTROL Comptes globaux], [!UICONTROL Comptes], [!UICONTROL Groupes d’achat], [!UICONTROL Opportunités], [!UICONTROL Pourcentage des comptes globaux], [!UICONTROL Pourcentage des comptes], [!UICONTROL Pourcentage des groupes d’achat] et [!UICONTROL Pourcentage des opportunités].</li></ul>
 * **[!UICONTROL Segments]** : segment selon lequel vous souhaitez segmenter les données. Vous pouvez inclure un segment dans une requête.
 
 ### Paramètres du graphique

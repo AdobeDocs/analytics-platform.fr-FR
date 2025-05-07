@@ -5,10 +5,10 @@ exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 role: User
-source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
-workflow-type: ht
-source-wordcount: '781'
-ht-degree: 100%
+source-git-commit: e42f04eaa06a761803e76b64a5a16674fb4af57d
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 100%
 L’analyse ![GraphTrend](/help/assets/icons/GraphTrend.svg) **[!UICONTROL Tendances]** fournit des informations précieuses sur les performances de votre produit ou le comportement de vos utilisateurs et utilisatrices au fil du temps. L’axe horizontal de ce rapport est un intervalle de temps, tandis que l’axe vertical mesure les événements souhaités.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3423439/?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3421666/?quality=12&learn=on)
 
 ## Cas d’utilisation
 
@@ -47,7 +47,7 @@ Le rail de requête vous permet de configurer les composants suivants :
 
 * **[!UICONTROL Vue]** : basculez entre cette analyse et [Fréquence](frequency.md).
 * **[!UICONTROL Événements et mesures]** : événements ou mesures que vous souhaitez mesurer. Chaque sélection est représentée sous la forme d’une série de graphiques et d’une ligne de tableau. Les événements et les mesures ne peuvent pas être combinés dans la requête ; une fois que vous avez effectué votre première sélection, les sélections de requête restantes doivent être du même type. Vous pouvez inclure un maximum de cinq sélections.
-* **[!UICONTROL Compté comme]** : méthode de comptage à appliquer aux événements sélectionnés. Les options incluent Événements, Sessions, Utilisateurs, et utilisatrices Pourcentage d’utilisateurs et d’utilisatrices, Événements par session et Événements par utilisateur ou utilisatrice. Les options Comptabilisé comme s’appliquent uniquement aux requêtes d’événement et sont supprimées pour les requêtes de mesure.
+* **[!UICONTROL Compté comme]** : méthode de comptage à appliquer aux événements sélectionnés. <ul><li>**[!UICONTROL Options]** incluent [!UICONTROL Utilisateurs], [!UICONTROL Événements], [!UICONTROL Sessions], [!UICONTROL Pourcentage d’utilisateurs], [!UICONTROL Événements par session] et [!UICONTROL Événements par utilisateur].</li><li>[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} Des options **[!UICONTROL B2B supplémentaires]** sont disponibles pour Customer Journey Analytics B2B edition : [!UICONTROL Comptes globaux], [!UICONTROL Comptes], [!UICONTROL Groupes d’achats], [!UICONTROL Opportunités], [!UICONTROL Pourcentage de comptes globaux], [!UICONTROL Pourcentage de comptes], [!UICONTROL Pourcentage de groupes d’achats], [!UICONTROL Pourcentage d’opportunités], [!UICONTROL Événements par compte global], [!UICONTROL Événements par compte], [!UICONTROL Événements par groupe d’achats] et [!UICONTROL Événements par opportunité].</li></ul>Les options Comptabilisé comme s’appliquent uniquement aux requêtes d’événement et sont supprimées pour les requêtes de mesure.
 * **[!UICONTROL Segments]** : segments que vous souhaitez mesurer. Chaque segment sélectionné double le nombre de séries de graphiques et de lignes de tableau. Vous pouvez inclure un maximum de cinq segments.
 * **[!UICONTROL Propriété de répartition]** : répartit les lignes de la série de graphiques et du tableau selon les valeurs de la propriété sélectionnée. Une seule propriété de répartition est prise en charge. Les 20 premières valeurs apparaissent dans le tableau, et jusqu’à dix valeurs peuvent être affichées dans le graphique. Vous pouvez masquer ou afficher une ligne dans le graphique en appuyant sur l’icône ![Icône afficher/masquer](../assets/hide-in-chart.png).
 

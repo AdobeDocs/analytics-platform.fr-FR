@@ -6,10 +6,10 @@ feature: Basics
 role: User, Admin
 badgePremium: label="B2B edition"
 exl-id: df2cc922-d214-49b9-8fdb-443cc1dac05b
-source-git-commit: 326a82e93c0c8d57db224023ed5f3a7ab94a8997
+source-git-commit: be617c59cd2fced0031fda1130b86e638bee8f68
 workflow-type: tm+mt
-source-wordcount: '1052'
-ht-degree: 0%
+source-wordcount: '1246'
+ht-degree: 2%
 
 ---
 
@@ -33,7 +33,7 @@ Dans Customer Journey Analytics B2B edition, vous pouvez choisir entre une conne
 
 ## Conteneurs
 
-Dans Customer Journey Analytics, les conteneurs sont générés dans le cadre de la configuration d’une connexion et d’une vue de données. Les conteneurs stockent uniquement des identifiants pour faciliter l’exécution rapide et performante de fonctionnalités telles que la segmentation, les répartitions, etc.
+Dans Customer Journey Analytics, les conteneurs sont générés dans le cadre de la configuration d’une connexion et d’une vue de données. Les conteneurs stockent des groupes d’identifiants pour faciliter l’exécution rapide et performante de fonctionnalités telles que la segmentation, les répartitions, etc.
 
 ### Conteneurs standard
 
@@ -67,6 +67,24 @@ La hiérarchie et les relations entre les conteneurs sont prédéterminées. L�
 
 ## Jeux de données
 
+Le B2B de Customer Journey Analytics fait la distinction entre les types de données et les jeux de données suivants.
+
+| Type de données | Série temporelle | Enregistrements de conteneur | Enregistrements de champ |
+|---|---|---|---|
+| **Jeux de données** | **Jeux de données d’événements**<br/> Par exemple :<ul><li>Analyse numérique</li><li>Événements CRM</li><li>Événements en personne</li><li>Données du centre d’appels</li></ul> | **Jeux de données de profil**<br/> Par exemple :<ul><li>Enregistrements CRM</li><li>Enregistrements B2B AJO</li><li>Enregistrements CDP</li><ul> | **Classifications**<br/> Par exemple :<ul><li>Enregistrements de campagne</li><li>Enregistrements de listes marketing</li><li>Métadonnées de contenu</li><li>Enregistrements de produit</li></ul> |
+| Configuration requise | **Horodatage**<br> Chaque enregistrement nécessite :<ul><li>ID de compte</li><li>ID de compte global</li><li>ID de personne</li></ul> | **Identifiant de compte**<br> Les enregistrements ont besoin d&#39;un identifiant de conteneur, comme :<ul><li>Compte</li><li>Personne</li><li>Opportunité</li><li>Groupe d’achat</li></ul> | **Clé correspondante**<br> Les enregistrements ont besoin d&#39;un identifiant contenu dans un conteneur ou un jeu de données d&#39;événement, comme :<ul><li>ID de campagne</li><li>Identifiant de contenu</li><li>ID de produit</li></ul> |
+
+{style="table-layout:fixed"}
+
+Exemple de connexion basée sur un compte dans Customer Journey Analytics B2B edition :
+
+![Exemple de connexion basée sur un compte](assets/b2b-datasets.svg)
+
+Customer Journey Analytics B2B edition propose l’interface [Carte des connexions](/help/connections/create-connection.md#connection-map) pour vous donner un aperçu des relations entre les jeux de données dans votre connexion.
+
+
+Tout comme Customer Journey Analytics, les données de série temporelle basées sur un événement sont au cœur de Customer Journey Analytics B2B edition. La principale différence pour une connexion basée sur un compte est que vous avez besoin d’un identifiant de compte sur chaque enregistrement de votre jeu de données d’événement au lieu d’un identifiant de personne.
+
 Lorsque vous configurez les [paramètres des jeux de données](/help/connections/create-connection.md#dataset-settings) pour la connexion basée sur le compte dans Customer Journey Analytics B2B edition, les options disponibles pour certains des paramètres dépendent du [type de jeu de données](/help/connections/create-connection.md#dataset-types). Par exemple, vous devez :
 
 * Spécifiez des identifiants pour chacun des conteneurs que vous avez configurés pour vos jeux de données d’événement.
@@ -79,11 +97,11 @@ Vous pouvez définir pour chaque jeu de données de recherche, si vous appariez 
 
 ### Correspondance par conteneur
 
-Si un jeu de données d’enregistrement utilise une correspondance par conteneur, le jeu de données d’enregistrement est traité comme un type de jeu de données de profil et comme un jeu de données de profil dans l’interface utilisateur. Utilisez la correspondance par conteneur sur les jeux de données qui prennent en charge vos conteneurs configurés. Par exemple, un jeu de données Groupe d’achats.
+Si un jeu de données d’enregistrement utilise une correspondance par conteneur, le jeu de données d’enregistrement est traité comme un type de jeu de données de profil et comme un jeu de données de profil dans l’interface utilisateur. Utilisez la correspondance par conteneur sur les jeux de données qui contiennent des enregistrements de conteneur et qui prennent en charge vos conteneurs configurés. Par exemple, un jeu de données Groupe d’achats.
 
 ### Correspondance par champ
 
-Si un jeu de données d’enregistrement utilise une correspondance par champ, le jeu de données d’enregistrement est traité comme un type de jeu de données de recherche et comme un jeu de données de recherche dans l’interface utilisateur. Utilisez le champ Correspondance par sur les jeux de données qui prennent en charge des détails supplémentaires par le biais de la recherche. Par exemple, un jeu de données Membre de la liste marketing ou un jeu de données Détails du produit.
+Si un jeu de données d’enregistrement utilise une correspondance par champ, le jeu de données d’enregistrement est traité comme un type de jeu de données de recherche et comme un jeu de données de recherche dans l’interface utilisateur. Utilisez le champ Correspondance par sur les jeux de données qui contiennent des détails de classification supplémentaires par le biais de la recherche. Par exemple, un jeu de données Membre de la liste marketing ou Détails du produit .
 
 
 ## Rapport sur les données basées sur les personnes et les comptes

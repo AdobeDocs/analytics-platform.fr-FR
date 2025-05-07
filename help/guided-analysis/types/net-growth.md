@@ -5,10 +5,10 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 exl-id: a4f97458-9934-4a98-8005-fa1ba7831101
 role: User
-source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
-workflow-type: ht
-source-wordcount: '676'
-ht-degree: 100%
+source-git-commit: be617c59cd2fced0031fda1130b86e638bee8f68
+workflow-type: tm+mt
+source-wordcount: '716'
+ht-degree: 93%
 
 ---
 
@@ -41,7 +41,7 @@ De la même manière que pour l’analyse [Active](active-growth.md), les utilis
 >
 >Les utilisateurs et utilisatrices réguliers ne sont pas pris en compte dans ce calcul, car ils ne représentent aucun gain ni aucune perte pour les utilisateurs et utilisatrices.
 
->[!VIDEO](https://video.tv.adobe.com/v/3423460/?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3421664/?quality=12&learn=on)
 
 
 ## Cas d’utilisation
@@ -62,7 +62,7 @@ Le rail de requête vous permet de configurer les composants suivants :
 
 * **[!UICONTROL Afficher]** : basculez entre cette analyse et [Croissance active](active-growth.md).
 * **[!UICONTROL Événements]** : événements que vous souhaitez mesurer. Cette analyse étant basée sur les personnes, une personne qui interagit avec l’événement une fois au cours de la période est comptabilisée comme étant active. Vous pouvez inclure un événement dans une requête.
-* **[!UICONTROL Compté comme]** : méthode de comptage à appliquer aux événements sélectionnés. Les options incluent [!UICONTROL Nombre d’utilisateurs et utilisatrices] et [!UICONTROL Pourcentage d’utilisateurs et utilisatrices].
+* **[!UICONTROL Compté comme]** : méthode de comptage à appliquer aux événements sélectionnés. <ul><li>**[!UICONTROL Options]** inclure [!UICONTROL Nombre d’utilisateurs] et [!UICONTROL Pourcentage d’utilisateurs].</li><li>[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} Des options **[!UICONTROL B2B supplémentaires]** sont disponibles pour Customer Journey Analytics B2B edition : [!UICONTROL Comptes globaux], [!UICONTROL Comptes], [!UICONTROL Groupes d’achat], [!UICONTROL Opportunités], [!UICONTROL Pourcentage des comptes globaux], [!UICONTROL Pourcentage des comptes], [!UICONTROL Pourcentage des groupes d’achat] et [!UICONTROL Pourcentage des opportunités].</li></ul>
 * **[!UICONTROL Segments]** : segments que vous souhaitez mesurer. Vous pouvez inclure un segment dans une requête.
 
 ### Comparaison de temps
