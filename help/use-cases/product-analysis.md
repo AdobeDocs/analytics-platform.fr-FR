@@ -1,9 +1,10 @@
 ---
 title: Analyse de produit dans Customer Journey Analytics
 description: Découvrez les fonctionnalités que vous pouvez utiliser dans Customer Journey Analytics pour effectuer efficacement une analyse de produit.
-source-git-commit: aa7b73db10e81a96f532eedf09091109209124c0
+exl-id: b185a2ed-18c8-4fb3-8c69-693d5fee0e67
+source-git-commit: 40e6fbd49a92690253855e314e9999da28a7d2f6
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '826'
 ht-degree: 1%
 
 ---
@@ -32,7 +33,7 @@ Les fonctionnalités suivantes de Adobe Experience Platform et Customer Journey 
 * Adobe Experience Platform
    * [Jeux de données&#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/catalog/datasets/overview)
    * [Préparation des données&#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/data-prep/home)
-   * [Distiller de données&#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/query/data-distiller/overview)
+   * [Distiller de données&#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/query/data-distiller/overview)
 * Customer Journey Analytics
    * [Connexions &#x200B;](/help/connections/overview.md)
    * [Vues de données](/help/data-views/data-views.md), y compris [champs dérivés&#x200B;](/help/data-views/derived-fields/derived-fields.md)
@@ -46,6 +47,10 @@ La croissance du produit repose sur des informations exploitables en amont, qui 
 
 * L’acquisition permet de suivre les nouveaux utilisateurs qui accèdent à votre produit, y compris la manière dont ils arrivent et les efforts les plus ou les moins efficaces.
 * L’activation surveille les nouveaux utilisateurs qui interagissent avec votre premier événement de valeur, défini en fonction de vos objectifs spécifiques.
+
+![Croissance active](/help/guided-analysis/assets/active.png)
+
+![Analyse de l’engagement](/help/guided-analysis/assets/feature-matrix.png)
 
 Les fonctionnalités suivantes de Customer Journey Analytics vous permettent de mesurer efficacement l’acquisition et l’activation :
 
@@ -76,6 +81,8 @@ Les fonctionnalités suivantes de Customer Journey Analytics vous aident à suiv
 
 La rétention mesure le nombre d’utilisateurs qui continuent à utiliser le produit après l’acquisition et l’activation initiales. Les produits hautement performants maintiennent une base d’utilisateurs stable et fidèle en maximisant l’interaction avec les fonctionnalités qui sont le plus fortement corrélées à l’utilisation continue. Un utilisateur conservé revient au produit et interagit avec celui-ci au fil du temps, contrairement à un utilisateur résilié. Les équipes produit effectuent le suivi de la fidélisation pour identifier les fonctionnalités qui stimulent l’engagement continu et conçoivent des interventions qui orientent les utilisateurs résiliés vers le comportement de l’utilisateur retenu.
 
+![Analyse de la rétention](/help/guided-analysis/assets/retention.png)
+
 Les fonctionnalités suivantes de Customer Journey Analytics vous permettent de suivre efficacement la rétention et l’attrition :
 
 * [Analyse guidée : rétention](/help/guided-analysis/types/retention.md)&#x200B;
@@ -92,12 +99,14 @@ Les fonctionnalités suivantes d’Experience Cloud vous permettent d’agir eff
 * [Créer et publier des audiences](/help/components/audiences/publish.md)&#x200B; pour activation à partir de Customer Journey Analytics
 * Activer les audiences par le biais des produits Experience Cloud :
    * [Exécutez des expériences](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/content-management/content-experiment/get-started-experiment) dans AJO et Adobe Target, et mesurez l’impact des variations dans Customer Journey Analytics à l’aide du [panneau Expérimentation](/help/analysis-workspace/c-panels/experimentation.md)
-   * [Diffuser des engagements in-app](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/channels/in-app/get-started-in-app) aux utilisateurs dans AJO
-* [Activer des audiences](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/activate/activation-overview) vers des destinations externes avec la plateforme de données clients en temps réel d’Adobe&#x200B;
+   * [Diffuser des engagements in-app](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/in-app/get-started-in-app) aux utilisateurs dans AJO
+* [Activer des audiences](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activation-overview) vers des destinations externes avec la plateforme de données clients en temps réel d’Adobe&#x200B;
 
 ## Partagez des informations avec l’organisation&#x200B;
 
 Communiquez les résultats clés entre les équipes afin d’aligner les efforts, de favoriser la collaboration et de vous assurer que tout le monde travaille à l’atteinte des objectifs communs des produits et des entreprises.
+
+![Analyse guidée dans Workspace](assets/guided-analysis-workspace.png)
 
 Les fonctionnalités suivantes de Customer Journey Analytics vous aident à partager efficacement des informations :
 
