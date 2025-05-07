@@ -4,23 +4,25 @@ description: En savoir plus sur le concept de publication d’audience dans Cust
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
 feature: Audiences
 role: User, Admin
-source-git-commit: 9393be88ab7320adb5bd046701667f638673af5e
+source-git-commit: be062e350a8c1989be41aeb2774471a3fe1bf524
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 87%
+source-wordcount: '435'
+ht-degree: 76%
 
 ---
 
 # Vue d’ensemble de la publication des audiences
 
-Vous pouvez désormais créer et publier des audiences découvertes dans Customer Journey Analytics dans le [profil client en temps réel](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=fr) dans Adobe Experience Platform pour le ciblage et la personnalisation des clientes et clients.
+Vous pouvez désormais créer et publier des audiences découvertes dans Customer Journey Analytics dans le [profil client en temps réel](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html) dans Adobe Experience Platform pour le ciblage et la personnalisation des clientes et clients.
 
 La publication d’audiences offre un moyen clair d’activer et d’agir sur les informations trouvées dans Customer Journey Analytics. Ces actions peuvent inclure les éléments suivants :
 
 * Utilisation de l’audience pour un parcours dans Adobe Journey Optimizer.
+Pour plus d’informations sur l’utilisation des audiences publiées sur Experience Platform, consultez [Prise en main des audiences](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/audiences-profiles-identities/audiences/about-audiences) dans la documentation de Journey Optimizer.
 * Exportation de l’audience vers un tiers par le biais d’une destination Experience Platform.
 * Enrichissement du profil client en temps réel avec des attributs utiles dérivés de données basées sur un événement dans Customer Journey Analytics.
-* Tout cela avec une latence minimale après la publication de l’audience. [En savoir plus](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-components/audiences/publish#latency)
+* Tout cela avec une latence minimale après la publication de l’audience.
+Pour plus d’informations, voir [Considérations relatives à la latence](/help/components/audiences/publish.md#latency-considerations) dans [Création et publication d’audiences](/help/components/audiences/publish.md).
 * Publication d’audiences ponctuelles ou d’audiences récurrentes
 
 Les audiences que vous créez dans Customer Journey Analytics ne doivent pas nécessairement être basées sur des jeux de données activés pour le profil. Vous pouvez ingérer des données historiques dans Experience Platform sans activer les jeux de données et les schémas associés pour le profil. Utilisez ensuite ces jeux de données pour découvrir les audiences appropriées dans Customer Journey Analytics et publier ces audiences dans le profil client en temps réel dans Experience Platform à des fins d’activation.

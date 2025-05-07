@@ -4,10 +4,10 @@ description: Découvrez comment publier des audiences à partir de Customer Jou
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
+source-git-commit: be062e350a8c1989be41aeb2774471a3fe1bf524
 workflow-type: tm+mt
-source-wordcount: '2320'
-ht-degree: 77%
+source-wordcount: '2368'
+ht-degree: 74%
 
 ---
 
@@ -122,9 +122,13 @@ Le panneau Prévisualisation des données fournit les informations suivantes.
 
 ## Que se passe-t-il une fois une audience créée et publiée ? {#after-audience-created}
 
-Une fois que vous avez créé et publié une audience dans Customer Journey Analytics, elle est disponible dans Experience Platform. Un segment de diffusion en continu Adone Experience Platform n’est créé que si votre organisation est configurée pour la segmentation en continu.
+Une fois l’audience créée et publiée dans Customer Journey Analytics, elle est disponible dans Experience Platform et peut être consultée sur le [portail d’audiences](https://experienceleague.adobe.com/fr/docs/experience-platform/segmentation/ui/audience-portal). L’audience étant disponible dans Experience Platform, elle peut être utilisée dans d’autres applications Experience Platform, telles que Adobe Journey Optimizer.
 
-* L’audience dans Platform partage le même nom et la même description que l’audience Customer Journey Analytics. Le nom est ajouté avec l’identifiant d’audience Customer Journey Analytics afin de s’assurer que l’audience est unique.
+Un segment de diffusion en continu Adone Experience Platform n’est créé que si votre organisation est configurée pour la segmentation en continu.
+
+Tenez compte des points suivants lorsque vous utilisez des audiences publiées de Customer Journey Analytics vers Experience Platform :
+
+* L’audience dans Experience Platform partage le même nom et la même description que l’audience Customer Journey Analytics. Le nom est ajouté avec l’identifiant d’audience Customer Journey Analytics afin de s’assurer que l’audience est unique.
 * Toute modification apportée au nom ou à la description de l’audience dans Customer Journey Analytics est répercutée dans Experience Platform.
 * Si une audience est supprimée dans Customer Journey Analytics, elle reste disponible dans Experience Platform jusqu’à l’expiration de son appartenance à un profil. L’appartenance à un profil expire après 420 jours pour les audiences ponctuelles et après 16 jours pour les audiences récurrentes.
 
