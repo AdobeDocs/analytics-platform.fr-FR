@@ -4,16 +4,16 @@ title: Modèles de mesures calculées
 feature: Calculated Metrics
 exl-id: 08d11cce-170e-42a2-806f-e0a28b70a2dc
 role: User
-source-git-commit: f0786cfa74453693078c7d30d647a96bf1d98d07
+source-git-commit: c183a5013cbc5ff3765cc4926a308d0c4563a097
 workflow-type: tm+mt
 source-wordcount: '546'
-ht-degree: 88%
+ht-degree: 83%
 
 ---
 
 # Modèles de mesures calculées
 
-Customer Journey Analytics fournit les modèles de mesures calculées suivants pour couvrir les cas d’utilisation les plus courants. Ces mesures calculées définies par Adobe sont identifiées par un petit logo ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg). Pour filtrer rapidement ces mesures, sélectionnez ![Libellé](/help/assets/icons/Label.svg) **[!UICONTROL Modèle Adobe]** dans le [Filtre de composants](/help/components/overview.md#filter).
+Customer Journey Analytics fournit les modèles de mesures calculées suivants pour couvrir les cas d’utilisation les plus courants. Ces mesures calculées définies par Adobe sont identifiées par un petit logo ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg). Pour filtrer rapidement ces mesures, sélectionnez ![Libellé](/help/assets/icons/Label.svg) **[!UICONTROL Modèle Adobe]** dans le [Filtre de composants](/help/components/overview.md#filter).
 
 | Nom de la mesure calculée | Description<br/>Formule |
 |---------|----------|

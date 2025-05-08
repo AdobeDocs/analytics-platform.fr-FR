@@ -3,16 +3,16 @@ description: Dans le Gestionnaire de mesures calculées, vous pouvez définir un
 title: Approbation des mesures calculées
 feature: Calculated Metrics
 exl-id: da55bb2b-9d42-4fba-add4-655f7f7c7ef6
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: c183a5013cbc5ff3765cc4926a308d0c4563a097
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '147'
 ht-degree: 21%
 
 ---
 
 # Approbation des mesures calculées
 
-Dans le [gestionnaire de mesures calculées](cm-manager.md), vous pouvez approuver et annuler l’approbation de segments. Seuls les administrateurs peuvent approuver les mesures calculées.
+Dans le [gestionnaire de mesures calculées](cm-manager.md), vous pouvez approuver et annuler l’approbation des mesures calculées. Seuls les administrateurs peuvent approuver les mesures calculées.
 
 Pour approuver des mesures calculées :
 
