@@ -5,7 +5,7 @@ title: Exporter des rapports Customer Journey Analytics vers le cloud
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: 158d75f81490edca2b5219a9b3ede2fbcdcc5901
+source-git-commit: 0fb04c116864f50b396ffbd1f22e2d6dad3da983
 workflow-type: tm+mt
 source-wordcount: '2285'
 ht-degree: 98%
@@ -123,7 +123,7 @@ Un fichier manifeste dont le nom de fichier est `cja-export-{reportInstanceId}-{
 
 <!-- add in  what the file name, structure, and file format will be -->
 
-## Avantages de l’export vers le cloud
+## Avantages de l’export vers le cloud {#advantages}
 
 L’export de données Customer Journey Analytics vers le cloud vous permet d’effectuer les opérations suivantes :
 
@@ -217,7 +217,7 @@ Si un modèle d’attribution autre que celui par défaut est utilisé dans un r
   >
   >Les rapports multidimensionnels ne sont pris en charge que lors de l’export de données vers le cloud, comme décrit dans cet article.
 
-## Comparaison de l’export de tableaux complets (dans Customer Journey Analytics) vers Data Warehouse (dans Adobe Analytics)
+## Comparaison de l’export de tableaux complets (dans Customer Journey Analytics) vers Data Warehouse (dans Adobe Analytics) {#comparison}
 
 Si vous utilisiez auparavant Data Warehouse pour exporter des données Adobe Analytics, le tableau suivant peut vous aider à comprendre les différences entre l’export de tableaux complets dans Customer Journey Analytics et l’export de données avec Data Warehouse dans Adobe Analytics.
 
