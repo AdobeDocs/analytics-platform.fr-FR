@@ -4,7 +4,7 @@ title: Créer des projets
 feature: Workspace Basics
 role: User
 exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
-source-git-commit: 191693bc970fcf59ee51706365abde0ee30e3d3d
+source-git-commit: de0b51096c772ceb180e759b2dd992e3cf2a009d
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 95%
@@ -12,15 +12,6 @@ ht-degree: 95%
 ---
 
 # Créer des projets {#create-projects}
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="workspace_project_countrepeatinstances"
->title="Comptage des instances répétées"
->abstract="Ce paramètre indique si les instances répétées sont comptabilisées dans les rapports.<br/><br/>Remarque : ce paramètre ne s’applique pas aux visualisations de flux ou d’abandons."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Les [projets](/help/analysis-workspace/build-workspace-project/freeform-overview.md) dans Analysis Workspace vous permettent de créer et de visualiser des analyses critiques.  Ces analyses peuvent être partagées avec des parties prenantes au sein de votre organisation ou en dehors.
@@ -56,23 +47,21 @@ Maintenant que vous avez créé un projet Workspace vierge, assurez-vous de conn
 
 ## Informations et paramètres du projet {#project-info-settings}
 
-<!-- markdownlint-disable MD034 -->
+>[!CONTEXTUALHELP]
+>id="workspace_project_countrepeatinstances"
+>title="Comptage des instances répétées"
+>abstract="Ce paramètre indique si les instances répétées sont comptabilisées dans les rapports.<br/><br/>Remarque : ce paramètre ne s’applique pas aux visualisations de flux ou d’abandons."
 
 >[!CONTEXTUALHELP]
 >id="workspace_project_repeatinstances"
 >title="Comptage des instances répétées"
 >abstract="Ce paramètre indique si les instances répétées sont comptabilisées dans les rapports.<br/>Remarque : ce paramètre ne s’applique pas aux visualisations de flux ou d’abandons."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="workspace_project_commenting"
 >title="Autoriser les commentaires"
 >abstract="Lorsqu’elle est activée, une zone de commentaires est disponible dans le rail de droite du projet dans Analysis Workspace."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Les paramètres du projet fournissent des informations sur le projet actif au niveau du projet.
