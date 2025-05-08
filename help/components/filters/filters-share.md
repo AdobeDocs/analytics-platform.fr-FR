@@ -4,7 +4,7 @@ title: Partage des segments
 feature: Filters, Segments
 exl-id: c8559c7b-f886-4046-9bd6-80778882afcc
 role: User
-source-git-commit: 85a22d1e57925f0512ce0cc658cfba1008339d91
+source-git-commit: cc1e5737b481a231e139562ca4a79fbdfd61d8a3
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 11%
@@ -38,6 +38,6 @@ Vous trouverez ci-dessous quelques bonnes pratiques concernant le partage de seg
 
 * En tant qu’administrateur ou administratrice, ne partagez un segment avec Tous que si vous êtes convaincu(e) que toute personne de votre organisation est à l’aise avec l’utilisation des segments. Vous pouvez également envisager de favoriser ces segments. Voir [Marquer un segment comme favori](filters-favorite.md) pour plus d’informations.
 
-* En tant qu’administrateur ou administratrice, partagez un segment avec un groupe spécifique si ce segment apporte une valeur commerciale aux utilisateurs et utilisatrices de ce groupe
+* En tant qu’administrateur ou administratrice, partagez un segment avec un groupe spécifique si ce segment apporte une valeur commerciale aux utilisateurs et utilisatrices de ce groupe.
 
 * En tant qu’administrateur ou utilisatrice individuelle, partagez un segment avec une ou plusieurs personnes afin de valider un segment. Si les segments ne s’avèrent pas utiles, vous pouvez les supprimer.
