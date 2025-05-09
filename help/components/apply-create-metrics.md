@@ -4,10 +4,10 @@ title: Mesures
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
 role: User
-source-git-commit: defe6ad6fc796a230525ba9b178d744caf340e2f
+source-git-commit: 65b4339b4a1b27c41cfe442482a54661989d704b
 workflow-type: tm+mt
-source-wordcount: '864'
-ht-degree: 8%
+source-wordcount: '886'
+ht-degree: 9%
 
 ---
 
@@ -35,11 +35,19 @@ Adobe propose plusieurs types de mesures à utiliser dans Analysis Workspace :
    * **Sessions** : la mesure Sessions dans Customer Journey Analytics est ce que vous définissez dans le cadre de la configuration des paramètres Sessions dans votre vue de données. Voir [ Paramètres de session ](/help/data-views/session-settings.md).
    * **Événements** : la mesure Événements dans Customer Journey Analytics se compose des événements qui font partie de tout jeu de données d’événement que vous avez configuré dans le cadre de votre connexion.
 
+  Voir [Mesures standard](#standard-metrics) pour obtenir la liste complète des mesures standard.
+
 * **Mesures calculées** ![Calculateur](/help/assets/icons/Calculator.svg) : mesures définies par l’utilisateur ou l’utilisatrice et basées sur des mesures standard, des nombres statiques ou des fonctions algorithmiques.
 
 * **Modèles de mesures calculées** ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg) : mesures définies par Adobe qui se comportent de la même manière que les mesures calculées. Vous pouvez les utiliser tels quels dans les projets Workspace ou enregistrer une copie pour personnaliser la logique. Voir [ Mesures calculées par défaut ](calc-metrics/cm-workflow/../default-calcmetrics.md).
 
 Vous pouvez voir si une mesure est approuvée ![icône Approuvée](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg) ou non. Si vous souhaitez plus de détails sur une mesure, pointez sur la mesure, puis sélectionnez ![Icône Infos](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg). Voir [Informations sur les composants](use-components-in-workspace.md#component-info) pour plus d’informations.
+
+
+## Mesures standard
+
+Liste complète des mesures standard dans Customer Journey Analytics :
+{{standard-metrics}}
 
 ## Comparaison de mesures avec différents modèles d’attribution
 

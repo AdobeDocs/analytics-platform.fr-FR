@@ -4,9 +4,9 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 7930ca9a124f4a82cbe0fb08e8766f04109ccd87
+source-git-commit: 65b4339b4a1b27c41cfe442482a54661989d704b
 workflow-type: tm+mt
-source-wordcount: '5156'
+source-wordcount: '5155'
 ht-degree: 89%
 
 ---
@@ -20,16 +20,16 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Fonctionnalité | Description |
 | --- | --- |
 | **Mai 2025** | |
-| Dimension Profondeur de l’événement | Documentation pour la nouvelle dimension Profondeur de l’événement, dans le cadre des [composants standard requis](/help/data-views/component-reference.md#required-standard-components) d’une vue de données. |
+| Dimension Profondeur de l’événement | Documentation pour la nouvelle dimension Profondeur de l’événement, dans le cadre des [dimensions standard](/help/components/dimensions/overview.md#standard-dimensions) d’une vue de données. |
 | **Avril 2025** | |
-| Augmentation des limites d&#39;exportation de tables complètes | Modification du [nombre de colonnes](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/export/export-cloud#comparison-of-full-table-export-in-customer-journey-analytics-to-data-warehouse-in-adobe-analytics) que les clients peuvent utiliser avec l’exportation complète du tableau, de 5 dimensions et 5 mesures à 10 dimensions et 10 mesures. |
+| Augmentation des limites d&#39;exportation de tables complètes | Modification du [nombre de colonnes](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/export/export-cloud#comparison-of-full-table-export-in-customer-journey-analytics-to-data-warehouse-in-adobe-analytics) que les clients peuvent utiliser avec l’exportation complète du tableau, de 5 dimensions et 5 mesures à 10 dimensions et 10 mesures. |
 | Connexions | Révision et mise à jour de la documentation sur les connexions au Parcours client pour les B2B edition de Parcours client à venir. |
 | Cas d’utilisation de l’analyse de produit | Ajout de la section [Analyse de produit dans Customer Journey Analytics](/help/use-cases/product-analysis.md). |
 | Mesures et dimensions partagées | Ajout de la documentation relative à la fonctionnalité [Mesures et dimensions partagées](/help/data-views/shared-metrics-dimensions/smd-overview.md). |
 | Report Builder | Consultez et mettez à jour la documentation de [Report Builder](/help/report-builder/rb-overview.md). |
 | Afficher et gérer l’utilisation | Modification de la documentation concernant l’[affichage](/help/connections/manage-connections.md#usage) et la [gestion](/help/technotes/estimate-usage.md) de l’utilisation de Customer Journey Analytics |
 | Adobe Content Analytics | [Content Analytics](/help/content-analytics/content-analytics.md) vous permet d’examiner rapidement et facilement de grands volumes de données de contenu pour découvrir les tendances, repérer les anomalies, identifier la lassitude du contenu et obtenir des informations grâce à l’exposition du contenu. |
-| Mise à jour des champs XDM pour la collecte de données Streaming Media dans Adobe Experience Platform | Lors de la collecte de données Streaming Media dans Adobe Experience Platform, les chemins d’accès aux champs XDM affichés sous l’en-tête « Chemin d’accès au champ XDM » de la documentation des paramètres Streaming Media ne doivent plus être utilisés. Ces chemins d’accès aux champs se trouvent sur les pages suivantes et sont marqués comme « Obsolètes » : [Paramètres audio et vidéo](https://experienceleague.adobe.com/fr/docs/media-analytics/using/implementation/variables/audio-video-parameters), [Paramètres d’annonce](https://experienceleague.adobe.com/fr/docs/media-analytics/using/implementation/variables/ad-parameters), [Paramètres de chapitre](https://experienceleague.adobe.com/fr/docs/media-analytics/using/implementation/variables/chapter-parameters), [Paramètres d’état du lecteur](https://experienceleague.adobe.com/fr/docs/media-analytics/using/implementation/variables/player-state-parameters) et [Paramètres de qualité](https://experienceleague.adobe.com/fr/docs/media-analytics/using/implementation/variables/quality-parameters). |
+| Mise à jour des champs XDM pour la collecte de données Streaming Media dans Adobe Experience Platform | Lors de la collecte de données Streaming Media dans Adobe Experience Platform, les chemins d’accès aux champs XDM affichés sous l’en-tête « Chemin d’accès au champ XDM » de la documentation des paramètres Streaming Media ne doivent plus être utilisés. Ces chemins d’accès aux champs se trouvent sur les pages suivantes et sont marqués comme « Obsolètes » : [Paramètres audio et vidéo](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters), [Paramètres d’annonce](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/ad-parameters), [Paramètres de chapitre](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/chapter-parameters), [Paramètres d’état du lecteur](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/player-state-parameters) et [Paramètres de qualité](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/quality-parameters). |
 | Media Collection : mises à jour du connecteur source d’Adobe pour le nouveau schéma XDM de création de rapports multimédia | Le connecteur source Analytics mappe automatiquement les données de médias en streaming dans Adobe Analytics aux mêmes champs utilisés par le SDK web. Auparavant, les données étaient mappées à la fois à l’ancien et au nouvel emplacement, mais seul le nouvel emplacement sera utilisé à l’avenir. [En savoir plus](https://experienceleague.adobe.com/fr/docs/analytics/implementation/aep-edge/xdm-var-mapping) |
 | Modification de la terminologie : « Filtres » en « Segments » | Auparavant, Adobe Customer Journey Analytics appelait les segments « filtres ». Cette terminologie est désormais conforme à celle d’Adobe Analytics. Les « filtres » sont désormais appelés « segments ». (Bien entendu, les filtres de recherche sont toujours appelés « filtres ».) L’interface utilisateur et la documentation ont été mises à jour. |
 | **Mars 2025** | |
@@ -268,7 +268,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | **Novembre 2021** | |
 | Novembre 2021 | Mise à jour de la documentation pour les [[!UICONTROL Enregistrements ignorés]](/help/connections/manage-connections.md) sur la page Détails de la connexion. |
 | **Octobre 2021** | |
-| Octobre 2021 | Documentation pour [Report Builder](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/rb-overview.html?lang=fr#) dans Customer Journey Analytics. |
+| Octobre 2021 | Documentation pour [Report Builder](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/rb-overview.html#) dans Customer Journey Analytics. |
 | Octobre 2021 | Documentation des API [Journal d’audit](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) Customer Journey Analytics |
 | Octobre 2021 | [Visualisations pour les tableaux de bord Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html?lang=fr#apply-visualizations) documenté |
 | Octobre 2021 | Document pour le créneau variable pour la [Rétention des données](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=fr#set-rolling-window-for-connection-data-retention) de [!UICONTROL connexion]. |

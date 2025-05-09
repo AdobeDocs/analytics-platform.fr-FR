@@ -1,8 +1,8 @@
 ---
-source-git-commit: 3ca1004fc1bbe3b60f32348d7da84718aef3a057
+source-git-commit: 65b4339b4a1b27c41cfe442482a54661989d704b
 workflow-type: tm+mt
-source-wordcount: '4061'
-ht-degree: 34%
+source-wordcount: '5198'
+ht-degree: 35%
 
 ---
 # Extraits
@@ -255,3 +255,44 @@ Utilisez les informations suivantes pour choisir la visualisation qui répond le
 | **[!UICONTROL Jeu de données]** | Nom du jeu de données. |
 | **[!UICONTROL Aperçu : *nom du jeu de données *]** | Prévisualise le jeu de données pour les 10 premières lignes et les 10 premières colonnes. |
 | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) **[!UICONTROL Remove]** | Vous pouvez [supprimer un jeu de données](/help/connections/create-connection.md#delete-a-dataset) sans supprimer l’ensemble de la connexion. La suppression d’un jeu de données d’une connexion réduit les coûts liés à l’ingestion des données et au processus laborieux de recréation de l’ensemble de la connexion et des vues de données associées. |
+
+## Dimensions standard {#standard-dimensions}
+
+| Nom du composant | Remarques |
+|---|---|
+| 15 minutes | Toutes les 15 minutes pendant lesquelles un événement donné s’est produit (arrondi à l’unité inférieure). Le premier élément de dimension correspond aux 15 premières minutes de la période et le dernier élément de dimension correspond aux 15 dernières minutes de la période. |
+| 30 minutes | Toutes les 30 minutes pendant lesquelles un événement donné s’est produit (arrondi à l’unité inférieure). Le premier élément de dimension correspond aux 30 premières minutes de la période et le dernier élément de dimension correspond aux 30 dernières minutes de la période. |
+| 5 minutes | Toutes les 5 minutes pendant lesquelles un événement donné s’est produit (arrondi à l’unité inférieure). Le premier élément de dimension correspond aux 15 premières minutes de la période et le dernier élément de dimension correspond aux 5 dernières minutes de la période. |
+| [!UICONTROL Jour] | Le jour où un événement donné s’est produit. Le premier élément de dimension correspond au premier jour de la période et le dernier élément de dimension correspond au dernier jour de la période. |
+| [!UICONTROL Jour du mois] | Le jour du mois au cours duquel un événement donné s’est produit. Le premier élément de dimension correspond au premier jour du mois dans la période et le dernier élément de dimension correspond au dernier jour du mois dans la période. |
+| [!UICONTROL Jour de la semaine] | Le jour de la semaine où un événement donné s’est produit. Le premier élément de dimension correspond au premier jour de la semaine dans la période et le dernier élément de dimension correspond au dernier jour de la semaine dans la période. |
+| [!UICONTROL Jour du mois] | Le jour du mois au cours duquel un événement donné s’est produit. Le premier élément de dimension correspond au premier jour du mois dans la période et le dernier élément de dimension correspond au dernier jour du mois dans la période. |
+| Profondeur de l’événement | Attribue des valeurs numériques séquentielles (1, 2, 3, etc.) à chaque interaction d’événement dans une session. Avec cette dimension, vous pouvez activer le suivi et l’analyse détaillés du lieu où des événements spécifiques se produisent dans le flux séquentiel des interactions utilisateur au sein d’une session. Vous pouvez suivre la progression des événements du début à la fin dans une session limitée. Par exemple : un visiteur arrive sur votre page d’accueil (événement 1, début de session), utilise la fonction de recherche (événement 2), consulte une page de détails du produit (événement 3), l’ajoute au panier (événement 4), passe en caisse (événement 5) et effectue un achat (événement 6, fin de session). Vous pouvez désormais utiliser [!UICONTROL Profondeur d’événement] dans une définition de segment pour segmenter les données en fonction de la profondeur d’interaction. |
+| [!UICONTROL Heure] | Heure à laquelle un événement donné s’est produit (arrondie à l’unité inférieure). Le premier élément de dimension correspond à la première heure de la période et le dernier élément de dimension correspond à la dernière heure de la période. |
+| [!UICONTROL Heure de la journée] | Heure du jour à laquelle un événement donné s’est produit (arrondie à l’unité inférieure). Le premier élément de dimension correspond à la première heure de la journée dans la période, et le dernier élément de dimension correspond à la dernière heure de la journée dans la période. |
+| [!UICONTROL Minute] | La minute à laquelle un événement donné s’est produit (arrondi à l’unité inférieure). Le premier élément de dimension correspond à la première minute de la période, et le dernier élément de dimension correspond à la dernière minute de la période. |
+| [!UICONTROL Minute de l’heure] | La minute de l’heure à laquelle un événement donné s’est produit (arrondie à l’unité inférieure). Le premier élément de dimension correspond à la première minute de l’heure dans la période et le dernier élément de dimension correspond à la dernière minute de l’heure dans la période. |
+| [!UICONTROL Mois] | Le mois au cours duquel un événement donné s’est produit. Le premier élément de dimension correspond au premier mois de la période, et le dernier élément de dimension correspond au dernier mois de la période. |
+| [!UICONTROL  Mois de l’année ] | Le mois de l’année au cours duquel un événement donné s’est produit. Le premier élément de dimension correspond au premier mois de l’année dans la période et le dernier élément de dimension correspond au dernier mois de l’année dans la période. |
+| [!UICONTROL Trimestre] | Le trimestre au cours duquel un événement donné s’est produit. Le premier élément de dimension correspond au premier trimestre de la période et le dernier élément de dimension correspond au dernier trimestre de la période. |
+| [!UICONTROL Trimestre de l’année] | Trimestre de l’année au cours duquel un événement donné s’est produit. Le premier élément de dimension correspond au premier trimestre de l’année dans la période, et le dernier élément de dimension correspond au dernier trimestre de l’année dans la période. |
+| [!UICONTROL Seconde] | Seconde à laquelle un événement donné s’est produit (arrondie à l’unité inférieure). Le premier élément de dimension correspond à la première seconde de la période, et le dernier élément de dimension correspond à la dernière seconde de la période. |
+| [!UICONTROL Semaine] | La semaine où un événement donné s’est produit. Le premier élément de dimension correspond à la première semaine de la période et le dernier élément de dimension correspond à la dernière semaine de la période. |
+| [!UICONTROL Semaine de l’année] | Semaine de l’année au cours de laquelle un événement donné s’est produit. Le premier élément de dimension correspond à la première semaine de l’année dans la période, et le dernier élément de dimension correspond à la dernière semaine de l’année dans la période. |
+| [!UICONTROL Année] | L’année au cours de laquelle un événement donné s’est produit. Le premier élément de dimension correspond à la première année de la période et le dernier élément de dimension correspond à la dernière année de la période. |
+
+
+## Mesures standard {#standard-metrics}
+
+| Nom du composant | Remarques |
+| --- | --- |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Accounts] | En fonction de l’identifiant de compte spécifié dans une [!UICONTROL  Connexion ]. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Groupe D&#39;Achats] | Groupes d’achats, en fonction de l’identifiant de groupe d’achats spécifié dans la [!UICONTROL Connexion]. |
+| [!UICONTROL Événements] | Cette mesure représente le nombre de lignes de tous les jeux de données dʼévénements dans une [!UICONTROL Connexion]. |
+| [!BADGE Comptes globaux ]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL  B2B edition] | En fonction de l’identifiant de comptes globaux spécifié dans le [!UICONTROL Connexion]. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Opportunités] | Les opportunités, en fonction de l’identifiant d’opportunité spécifié dans la [!UICONTROL Connexion]. |
+| [!UICONTROL Personnes] | Basée sur lʼidentifiant de personne spécifié dans une [!UICONTROL Connexion]. |
+| [!UICONTROL La session se termine] | Le nombre dʼévénements qui étaient le dernier événement dʼune session. Tout comme la méthode [!UICONTROL démarrages de session], elle peut également être utilisée dans une définition de segment pour segmenter les éléments jusqu’au dernier événement de chaque session.<p>Ce composant doit être inclus dans votre vue de données pour que la [mesure calculée](/help/components/calc-metrics/default-calcmetrics.md) suivante soit disponible dans Workspace : <ul><li>Taux de fin de session</li></p> |
+| [!UICONTROL La session commence] | Le nombre dʼévénements qui étaient le premier événement dʼune session. Lorsqu’elle est utilisée dans une définition de segment (par exemple, « [!UICONTROL La session commence] existe »), elle segmente jusqu’au premier événement de chaque session.<p>Ce composant doit être inclus dans votre vue de données pour que la [mesure calculée](/help/components/calc-metrics/default-calcmetrics.md) suivante soit disponible dans Workspace : <ul><li>Taux de début de session</li></p> |
+| [!UICONTROL Sessions] | En fonction des paramètres de session de la vue de données. |
+| [!UICONTROL Durée (secondes)] | Additionne le temps entre deux valeurs différentes pour une dimension.<p>Ce composant doit être inclus dans votre vue de données pour que la [mesure calculée](/help/components/calc-metrics/default-calcmetrics.md) suivante soit disponible dans Workspace : <ul><li>Durée par personne</li><li>Durée par session</li></p> |

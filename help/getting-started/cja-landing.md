@@ -4,10 +4,10 @@ description: Page de destination de Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: 720751130d0f66bddffd13c6f160a85fcc7a7206
+source-git-commit: 65b4339b4a1b27c41cfe442482a54661989d704b
 workflow-type: tm+mt
-source-wordcount: '884'
-ht-degree: 90%
+source-wordcount: '737'
+ht-degree: 80%
 
 ---
 
@@ -19,7 +19,7 @@ Customer Journey Analytics vous permet de contrôler la manière dont vous conne
 
 ## Nouveautés
 
-Découvrez les améliorations les plus récentes apportées au produit et à la documentation de Customer Journey Analytics. Pour obtenir une liste complète des fonctionnalités, des améliorations et des correctifs, consultez les [notes de mise à jour](../release-notes/latest.md). Visitez la [page des mises à jour de la documentation](../release-notes/doc-changes.md) pour être à jour avec les dernières modifications.
+Découvrez les améliorations les plus récentes apportées au produit et à la documentation de Customer Journey Analytics. Pour obtenir une liste complète des fonctionnalités, des améliorations et des correctifs, consultez les [notes de mise à jour](../release-notes/latest.md). Consultez la [page des mises à jour de la documentation](../release-notes/doc-changes.md) pour rester à jour avec les dernières mises à jour de la documentation.
 
 >[!BEGINTABS]
 
@@ -29,47 +29,60 @@ Adobe Content Analytics vous permet d’examiner rapidement et facilement de g
 
 [![Image](assets/learn-more-button.svg)](/help/content-analytics/content-analytics.md)
 
+>[!TAB Profondeur de l’événement]
+
+La profondeur d’événement est une nouvelle dimension standard qui offre de nouvelles façons de mesurer et de mieux comprendre le positionnement des événements dans les sessions client. La dimension Profondeur de l’événement permet un suivi et une analyse détaillés de l’endroit où des événements spécifiques se produisent dans le flux séquentiel des interactions utilisateur au sein d’une session.
+
+[![Image](assets/learn-more-button.svg)](/help/components/dimensions/overview.md#standard-dimensions)
+
+
 >[!TAB  Mesures et dimensions partagées ]
 
 Les mesures et dimensions partagées fournissent un emplacement central pour gérer les dimensions et mesures qui peuvent être utilisées dans un certain nombre de vues de données. Ces composants sont particulièrement utiles aux organisations qui utilisent plusieurs vues de données, en particulier si ces vues de données partagent des paramètres de composant communs.
 
 [![Image](assets/learn-more-button.svg)](/help/data-views/shared-metrics-dimensions/smd-overview.md)
 
->[!TAB Assistant IA]
 
-L’assistant IA est une expérience conversationnelle qui permet aux utilisateurs et utilisatrices d’effectuer rapidement des tâches, que ce soit en termes de compréhension des concepts, de résolution des problèmes ou de recherche d’informations. Il permet également aux personnes n’étant pas spécialisées d’effectuer des tâches expertes et d’améliorer la qualité générale du travail.
+<!--
+>[!TAB AI Assistant] 
 
-[![Image](assets/learn-more-button.svg)](/help/ai-assistant.md)
+AI Assistant is a conversational experience that allows practitioners to perform tasks at a fast pace - whether its understanding concepts, troubleshooting problems, or searching through information. It also allows non-experts to perform expert tasks and increases the overall quality of work.
 
-
->[!TAB Analyse guidée]
-
-L’analyse guidée est désormais disponible directement dans Analysis Workspace, ce qui permet aux utilisateurs et utilisatrices de créer des tableaux de bord avec des informations complètes issues de panneaux, de visualisations et d’analyses guidées.
-
-[![Image](assets/learn-more-button.svg)](/help/guided-analysis/overview.md)
+[![image](assets/learn-more-button.svg)](/help/ai-assistant.md)
 
 
->[!TAB Légendes intelligentes v2]
+>[!TAB Guided Analysis] 
 
-Les légendes intelligentes sont désormais prises en charge, avec des améliorations supplémentaires de l’interface, pour les visualisations [Ligne](/help/analysis-workspace/visualizations/line.md) (y compris multiligne), [Barres](/help/analysis-workspace/visualizations/bar.md), [Barres horizontales](/help/analysis-workspace/visualizations/horizontal-bar.md), [Surface](/help/analysis-workspace/visualizations/area.md) (y compris lignes de surface multiples), [Anneau](/help/analysis-workspace/visualizations/donut.md), [Abandons](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) et [Flux](/help/analysis-workspace/visualizations/c-flow/flow.md).
+Guided Analysis is now available directly from within Analysis Workspace, enabling users to create dashboards with comprehensive insights from panels, visualizations, and guided analyses.
 
-[![Image](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
-
->[!TAB Alertes]
-
-Les alertes envoient un avertissement en fonction de pourcentages ou de points de données spécifiques modifiés. Vous pouvez prévisualiser la fréquence à laquelle une alerte sera déclenchée, envoyer des alertes par e-mail ou par SMS, créer des alertes empilées, etc.
-
-[![Image](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
+[![image](assets/learn-more-button.svg)](/help/guided-analysis/overview.md)
 
 
->[!TAB Données de résumé]
 
-Vous permet d’importer des données de série temporelle qui ne comportent pas d’ID de personne. Ces données de série temporelle peuvent être utilisées pour prendre en charge divers cas d’utilisation, tels que les suivants :
+>[!TAB Intelligent captions v2] 
 
-- Présenter des indicateurs de performances de haut niveau dans ou à côté des données au niveau de l’événement.
-- Charger les cibles ou les objectifs toutes les heures ou tous les jours, puis positionner ces cibles ou objectifs par rapport aux mesures au niveau de l’événement.
+Intelligent captions are now supported, with additional interface improvements, for [Line](/help/analysis-workspace/visualizations/line.md) (including multi-line), [Bar](/help/analysis-workspace/visualizations/bar.md), [Horizontal bar](/help/analysis-workspace/visualizations/horizontal-bar.md), [Area](/help/analysis-workspace/visualizations/area.md) (including multiple Area lines), [Donut](/help/analysis-workspace/visualizations/donut.md), [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md), and [Flow](/help/analysis-workspace/visualizations/c-flow/flow.md) visualizations.
 
-[![Image](assets/learn-more-button.svg)](/help/data-views/summary-data.md)
+[![image](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
+
+
+>[!TAB Alerts] 
+
+Alerts allow you to be notified based on changed percentages or specific data points. You can preview how often an alert will trigger, send alerts by email or SMS, create stacked alerts, and more.
+
+[![image](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
+
+
+>[!TAB Summary data] 
+
+Allows you to bring in time-series data that does not have a person ID. This time-series data can be used to support various use cases, such as 
+
+- Presenting high-level performance indicators as part of or next to event-level data. 
+- Uploading targets or goals at an hourly or daily basis, then positioning these targets or goals against event-level metrics. 
+
+[![image](assets/learn-more-button.svg)](/help/data-views/summary-data.md)
+
+-->
 
 >[!TAB Groupement basé sur les graphiques*]
 
@@ -163,7 +176,7 @@ Comprenez les différences entre Customer Journey Analytics et Adobe Analytic
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td><strong>Customer Journey Analytics</strong><br/>
-<a href="https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/overview" target="_blank">Tutoriels</a> - <a href="https://helpx.adobe.com/fr/legal/product-descriptions/customer-journey-analytics.html?lang=fr" target="_blank">Description du produit Customer Journey Analytics</a> - <a href="https://helpx.adobe.com/fr/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html?lang=fr" target="_blank">Description du produit Adobe Analytics (module complémentaire Customer Journey Analytics)</a> - <a href="https://developer.adobe.com/cja-apis/docs/" target="_blank">API de Customer Journey Analytics</a> - <a href="/help/ai-assistant.md">Assistant IA</a>
+<a href="https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/overview" target="_blank">Tutoriels</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html?lang=fr" target="_blank">Description du produit Customer Journey Analytics</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html?lang=fr" target="_blank">Description du produit Adobe Analytics (module complémentaire Customer Journey Analytics)</a> - <a href="https://developer.adobe.com/cja-apis/docs/" target="_blank">API de Customer Journey Analytics</a> - <a href="/help/ai-assistant.md">Assistant IA</a>
 </td>
 <td><strong>Ingestion des données</strong><br/><a href="/help/data-ingestion/data-ingestion.md">Vue d’ensemble</a> - <a href="/help/data-ingestion/analytics.md">Analytics</a> - <a href="/help/data-ingestion/aepwebsdk.md">SDK Web</a> - <a href="/help/data-ingestion/aepmobilesdk.md">SDK Mobile</a> - <a href="/help/data-ingestion/batch.md">Lot</a> - <a href="/help/data-ingestion/streaming.md">Streaming</a> - <a href="/help/data-ingestion/sources.md">Sources</a> - <a href="/help/data-ingestion/serverapi.md">API du serveur</a>
 </td>
