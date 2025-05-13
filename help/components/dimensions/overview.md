@@ -3,10 +3,10 @@ title: Présentation des dimensions
 description: Découvrez les dimensions et leur utilisation dans Customer Journey Analytics
 feature: Dimensions
 exl-id: 3592808b-17fd-401d-ab12-ff0308b21f45
-source-git-commit: 65b4339b4a1b27c41cfe442482a54661989d704b
+source-git-commit: 6cabedc5ed58dac450577fc3505be5f95b7a959d
 workflow-type: tm+mt
-source-wordcount: '225'
-ht-degree: 26%
+source-wordcount: '235'
+ht-degree: 25%
 
 ---
 
@@ -45,3 +45,9 @@ Lorsque vous créez une vue de données, les composants suivants sont ajoutés p
 ## Ajouter des descriptions pour les dimensions
 
 Les administrateurs et administratrices de Customer Journey Analytics peuvent ajouter des descriptions pour les dimensions et d’autres composants dans la vue de données ou directement dans Analysis Workspace. Pour plus d’informations sur l’ajout de descriptions aux dimensions, voir [Ajouter des descriptions de composant](/help/components/add-component-descriptions.md).
+
+>[!MORELIKETHIS]
+>
+>[Découvrez des informations plus précises sur les clients avec la fonctionnalité Profondeur de l’événement](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/discover-deeper-customer-insights-with-adobe-customer-journey/ba-p/753947#M576)
+>
+
