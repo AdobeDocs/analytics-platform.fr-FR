@@ -4,69 +4,101 @@ title: Visualiser les données avec l’agent Data Insights dans Customer Journe
 role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
-hidefromtoc: true
-hide: true
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
+source-git-commit: f3f3b34c904c1aeba3fbd07218f323ccd81974d4
 workflow-type: tm+mt
-source-wordcount: '1878'
-ht-degree: 5%
+source-wordcount: '1861'
+ht-degree: 3%
 
 ---
 
-# Visualiser les données avec l’agent Data Insights dans Customer Journey Analytics
+# Visualisation des données avec Data Insights Agent dans Customer Journey Analytics
 
-L’agent Data Insights, qui fait partie de l’assistant d’IA dans Customer Journey Analytics, est un agent de conversation d’IA génératif qui répond rapidement et efficacement aux questions sur vos données. Il crée des visualisations pertinentes dans Analysis Workspace à l’aide de composants de votre vue de données et en utilisant vos données réelles.
+{{release-limited-testing}}
 
-L’utilisation de l’agent Data Insights pour répondre aux questions relatives aux données dans Analysis Workspace peut vous permettre de gagner d’innombrables heures que vous pourriez passer à créer manuellement des visualisations dans Analysis Workspace et à vous familiariser avec vos composants de vue de données.
+>[!AVAILABILITY]
+>
+>Data Insights Agent est disponible pour les clients Customer Journey Analytics éligibles jusqu’au 30 novembre 2025. Passée cette date, une licence est requise pour continuer à utiliser Data Insights Agent. Veuillez contacter l’équipe de votre compte Adobe pour obtenir de l’aide sur le processus de licence.
+
+Data Insights Agent, accessible à partir de l’assistant d’IA dans Customer Journey Analytics, est un agent de conversation d’IA génératif qui répond rapidement et efficacement aux questions sur vos données. Il crée des visualisations pertinentes dans Analysis Workspace à l’aide de composants de votre vue de données et en utilisant vos données réelles.
+
+L’utilisation de Data Insights Agent pour répondre aux questions relatives aux données dans Analysis Workspace peut vous faire gagner un nombre incalculable d’heures que vous pourriez passer à créer manuellement des visualisations dans Analysis Workspace et à vous familiariser avec vos composants de vue de données.
 
 ![Agent Data Insights dans l’assistant AI](assets/cja-ai-asst-da.gif)
 
-## Fonctionnalités incluses ou non dans la portée de l’application Beta
+## Fonctionnalités incluses ou non dans la portée
 
-### Fonctionnalités de Beta intégrées
+
+
+### Fonctionnalités intégrées à la portée
 
 | Fonctionnalité prise en charge | Description |
 | --- | --- |
 | **Création et mise à jour de visualisations** | Génère un tableau à structure libre et les visualisations associées (ligne, barre, anneau, etc.).<p>Exemple : *Quel est le bénéfice sur l’ensemble des SKU de février à mai ?* |
 | **Types de visualisation pris en charge** | <ul><li>Ligne</li><li>Multiligne</li><li>Tableau à structure libre</li><li>Barre</li><li>Anneau</li><li>Nombre de résumés</li></ul> |
-| **Détection d’invite hors de portée** | Si vous envoyez une invite qui est hors de portée, telle que « exporter ce projet », l’agent Data Insights répond en vous informant que la question est hors de portée. |
-| **Clarification des questions** | Si vous posez une question à laquelle l’agent Data Insights ne peut pas répondre en raison d’un contexte suffisant ou si elle est trop générique, l’agent Data Insights répond par une question de clarification ou des options suggérées. Exemples : <p>**Composants**<ul><li>Mesure : *Quelle mesure « chiffre d’affaires » vouliez-vous dire ?*</li><li>Dimension : *Sur laquelle des « régions » ci-dessous voulez-vous vous concentrer ?*</li><li>Segment : *Quel segment de « Compte » vouliez-vous appliquer ?*</li><li>Période : *Par « mois dernier », vouliez-vous dire le dernier mois complet ou les 30 derniers jours ?*</li></ul>**Éléments de Dimension** : de quel « nom de magasin » parlez-vous ? (par exemple, #5274 de magasin, #2949 de magasin, etc.). |
-| **Multi-tour** | L’agent Data Insights répond à une invite avec le contexte de toutes les invites précédentes, ce qui permet aux utilisateurs et utilisatrices de mettre à jour les visualisations et de poser des questions de suivi. Exemple : <ul><li>Invite 1 : *Tendance des événements à partir de mars.*</li><li>Invite 2 : *afficher à la place les données de mars à avril*</li></ul> |
+| **Détection d’invite hors de portée** | Si vous envoyez une invite qui est hors de portée, telle que « exporter ce projet », Data Insights Agent répond en vous informant que la question est hors de portée. |
+| **Clarification des questions** | Si vous posez une question à laquelle Data Insights Agent ne peut pas répondre en raison d’un manque de contexte ou si votre question est trop générique, Data Insights Agent vous répond par une question de clarification ou des suggestions d’options. Exemples : <p>**Composants**<ul><li>Mesure : *Quelle mesure « chiffre d’affaires » vouliez-vous dire ?*</li><li>Dimension : *Sur laquelle des « régions » ci-dessous voulez-vous vous concentrer ?*</li><li>Segment : *Quel segment de « Compte » vouliez-vous appliquer ?*</li><li>Période : *Par « mois dernier », vouliez-vous dire le dernier mois complet ou les 30 derniers jours ?*</li></ul>**Éléments de Dimension** : de quel « nom de magasin » parlez-vous ? (par exemple, #5274 de magasin, #2949 de magasin, etc.). |
+| **Multi-tour** | Data Insights Agent répond à une invite avec le contexte de toutes les invites précédentes, ce qui permet aux utilisateurs et utilisatrices de mettre à jour les visualisations et de poser des questions de suivi. Exemple : <ul><li>Invite 1 : *Tendance des événements à partir de mars.*</li><li>Invite 2 : *afficher à la place les données de mars à avril*</li></ul> |
 | **Vérifiabilité** | La vérifiabilité et l’exactitude des données peuvent être confirmées via le tableau à structure libre généré et la visualisation des données. Par exemple, si un utilisateur demande *Tendance des commandes le mois dernier*, vous pouvez confirmer que la mesure correcte (« commandes ») et la période (« mois dernier ») ont été sélectionnées dans le panneau, la visualisation des données et le tableau à structure libre nouvellement générés. |
 | **Commentaires** | <ul><li>Pouces levés</li><li>Pouces baissés</li><li>Drapeau</li></ul> |
 
-### Fonctionnalités de Beta hors de portée
+### Fonctionnalités hors de portée
 
 | Fonction non prise en charge | Description |
 | --- | --- |
-| **Résumé ou réponse en ligne** | L’agent Data Insights ne peut pas répondre en ligne dans le rail de conversation avec une réponse récapitulative d’une invite utilisateur. Exemples d’invites hors de portée :<ul><li>*Donnez-moi un résumé des informations de ma dernière invite.*</li><li>*Résumer les points forts de la visualisation Ligne.*</li></ul> |
-| **Clarification des questions** | Les questions de clarification sont limitées aux composants et aux éléments de dimension. L’agent Data Insights ne peut pas clarifier des éléments tels que les vues de données, les visualisations, la granularité des données, la comparaison et la portée. Lorsque des questions de clarification ne peuvent pas être utilisées, l’agent utilise par défaut ce que vous demandez le plus probablement. Si elle renvoie une visualisation ou une granularité de données inattendue, vous pouvez ensuite utiliser la fonctionnalité multi-tour / mise à jour pour ajuster la visualisation et les données. |
-| **Actions/fonctionnalités Workspace** | L’agent Data Insights ne peut pas agir sur un utilisateur dans Workspace en dehors de la création et de la mise à jour de visualisations. Par exemple, il ne peut effectuer aucune des opérations suivantes :<ul><li>Boutons de l’interface utilisateur d’action contextuelle (ajouter au graphique, nouveau panneau, nouveau tableau)</li><li>Partager</li><li>Exporter</li><li>Télécharger</li><li>Gérer les préférences utilisateur</li><li>Traiter</li><li>Gérer la vue de données</li><li>Application Tableaux de bord Analytics</li><li>Attribution</li></ul> |
-| **Types de visualisation non pris en charge** | <ul><li>Flux</li><li>Abandons</li><li>Tableau de cohortes</li><li>Aires, Aires empilées</li><li>Barres empilées</li><li>Puces</li><li>Combo</li><li>Histogramme</li><li>Barres horizontales, barres empilées horizontales</li><li>Résumé des mesures clés</li><li>Dispersion</li><li>Synthèse des modifications</li><li>Text</li><li>Plan en arborescence</li><li>Venn</li></ul> |
+| **Résumé ou réponse en ligne** | Data Insights Agent ne peut pas répondre en ligne dans le rail de conversation avec une réponse récapitulative d’une invite utilisateur. Exemples d’invites hors de portée :<ul><li>*Donnez-moi un résumé des informations de ma dernière invite.*</li><li>*Résumer les points forts de la visualisation Ligne.*</li></ul> |
+| **Clarification des questions** | Les questions de clarification sont limitées aux composants et aux éléments de dimension. Data Insights Agent ne peut pas clarifier des éléments tels que les vues de données, les visualisations, la granularité des données, la comparaison et la portée. Lorsque des questions de clarification ne peuvent pas être utilisées, l’agent utilise par défaut ce que vous demandez le plus probablement. Si elle renvoie une visualisation ou une granularité de données inattendue, vous pouvez ensuite utiliser la fonctionnalité multi-tour / mise à jour pour ajuster la visualisation et les données. |
+| **Actions/fonctionnalités Workspace** | Data Insights Agent ne peut pas agir pour un utilisateur dans Workspace en dehors de la création et de la mise à jour de visualisations. Par exemple, il ne peut effectuer aucune des opérations suivantes :<ul><li>Boutons de l’interface utilisateur d’action contextuelle (ajouter au graphique, nouveau panneau, nouveau tableau)</li><li>Partager</li><li>Exporter</li><li>Télécharger</li><li>Gérer les préférences utilisateur</li><li>Traiter</li><li>Gérer la vue de données</li><li>Application Tableaux de bord Analytics</li><li>Attribution</li></ul> |
+| **Types de visualisation non pris en charge** | <ul><li>Flux</li><li>Abandon</li><li>Table de cohortes</li><li>Aires, Aires empilées</li><li>Barres empilées</li><li>Puces</li><li>Combo</li><li>Histogramme</li><li>Barres horizontales, barres empilées horizontales</li><li>Résumé des mesures clés</li><li>Dispersion</li><li>Synthèse des modifications</li><li>Text</li><li>Plan en arborescence</li><li>Venn</li></ul> |
 
-## Gérer l’accès à l’agent Data Insights dans Customer Journey Analytics
+## Gestion de l’accès à Data Insights Agent dans Customer Journey Analytics
 
-Les paramètres suivants régissent l’accès à l’agent Data Insights dans Customer Journey Analytics :
+Les paramètres suivants régissent l’accès à Data Insights Agent dans Customer Journey Analytics :
 
-* **Accès à la solution** : l’agent Data Insights est disponible pour les clients Customer Journey Analytics Prime et Ultimate. Il n’est pas disponible dans Adobe Analytics.
+* **Accès à la solution** : Data Insights Agent est disponible pour les clients Customer Journey Analytics Prime et Ultimate. Il n’est pas disponible dans Adobe Analytics.
 
-* **Accès contractuel** : si vous ne pouvez pas utiliser l’agent Data Insights dans l’assistant AI, contactez l’administrateur ou l’administratrice de votre entreprise ou le représentant ou représentante de compte Adobe. Avant que votre organisation puisse utiliser l’agent Data Insights, vous devez accepter certains termes juridiques liés à GenAI.
+* **Accès contractuel** : si vous ne pouvez pas utiliser Data Insights Agent dans l’assistant AI, contactez l’administrateur ou l’administratrice de votre entreprise ou l’équipe chargée du compte Adobe. Avant que votre entreprise puisse utiliser Data Insights Agent, vous devez accepter certains termes juridiques liés à l’IA générative.
 
-* **Autorisations** : dans [!UICONTROL Adobe Admin Console], l’autorisation [!UICONTROL Outils de création de rapports] **[!UICONTROL Assistant AI : Visualisation des données]** détermine l’accès à cet outil. Un [administrateur ou une administratrice de profil de produit](https://helpx.adobe.com/fr/enterprise/using/manage-product-profiles.html) doit suivre les étapes suivantes dans l’[!UICONTROL Admin Console] :
-   1. Accédez à **[!UICONTROL Admin Console]** > **[!UICONTROL Produits et services]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Profils de produit]**
-   1. Sélectionnez le titre du profil de produit pour lequel vous souhaitez fournir un accès à [!UICONTROL Assistant AI : connaissance du produit].
-   1. Dans le profil de produit spécifique, sélectionnez **[!UICONTROL Autorisations]**.
-   1. Sélectionnez ![Modifier](/help/assets/icons/Edit.svg) pour modifier les **[!UICONTROL Outils de création des rapports]**.
-   1. Sélectionnez ![AjouterCercle](/help/assets/icons/AddCircle.svg) pour ajouter **Assistant AI : Connaissance des produits** et **Assistant AI : Analyse des données** à **[!UICONTROL Éléments d’autorisation inclus]**.
+* **Autorisations** : les autorisations nécessaires doivent être accordées dans le [!UICONTROL Adobe Admin Console] pour que les utilisateurs puissent accéder à Data Insights Agent.
+
+  Pour accorder des autorisations, un [administrateur de profil de produit](https://helpx.adobe.com/fr/enterprise/using/manage-product-profiles.html) doit effectuer les étapes suivantes dans l’[!UICONTROL Admin Console] :
+   1. Dans **[!UICONTROL Admin Console]**, sélectionnez l’onglet **[!UICONTROL Produits]** pour afficher la page **[!UICONTROL Tous les produits et services]**.
+   1. Sélectionnez **[!UICONTROL Customer Journey Analytics]**.
+   1. Dans l’onglet **[!UICONTROL Profils de produit]**, sélectionnez le titre du profil de produit pour lequel vous souhaitez fournir un accès à [!UICONTROL Assistant AI : connaissance du produit].
+   1. Dans le profil de produit spécifique, sélectionnez l’onglet **[!UICONTROL Autorisations]**.
+
+      ![Onglet Autorisations dans Admin Console](assets/ai-assistant-permissions-tab.png)
+
+   1. Dans la ligne **[!UICONTROL Outils de création de rapports]** du tableau fourni, sélectionnez l’icône de modification ![Modifier](/help/assets/icons/Edit.svg).
+   1. Faites défiler l’écran jusqu’à ou recherchez **[!UICONTROL Assistant IA : connaissance du produit]**, puis sélectionnez l’icône plus ![Ajouter un cercle](/help/assets/icons/AddCircle.svg) en regard de cette autorisation.
+
+      L’autorisation **[!UICONTROL Assistant AI : Connaissance des produits]** est ajoutée à la colonne **[!UICONTROL Éléments d’autorisation inclus]**.
 
       ![Ajouter une autorisation](assets/ai-assistant-permissions.png).
 
+   1. Sélectionnez l’onglet **[!UICONTROL Outils de vues de données]**, puis sélectionnez l’icône plus ![AddCircle](/help/assets/icons/AddCircle.svg) en regard de l’autorisation **[!UICONTROL Data Insights Agent]**.
+
+      L&#39;autorisation **[!UICONTROL Data Insights Agent]** est ajoutée à la colonne **[!UICONTROL Éléments d&#39;autorisation inclus]**.
+
+      ![Ajouter une autorisation](assets/ai-assistant-permissions-dataviewtools.png).
+
+   1. Sélectionnez l’onglet **[!UICONTROL Vues de données]** pour choisir les vues de données à activer pour Data Insights Agent.
+
+      >[!IMPORTANT]
+      >
+      >Le Data Insights Agent peut référencer les vues de données incluses à un moment donné le jour même de leur activation dans Admin Console.
+
+   1. Recherchez ou accédez aux vues de données à activer, puis sélectionnez l’icône plus ![AddCircle](/help/assets/icons/AddCircle.svg) en regard du nom de chaque vue de données.
+
+      Chaque vue de données ajoutée est visible dans la colonne **[!UICONTROL Éléments d’autorisation inclus]**.
+
+      ![Ajouter une autorisation](assets/ai-assistant-permissions-dataviews.png).
+
    1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les autorisations.
 
-Pour plus d’informations, consultez [Contrôle d’accès](/help/technotes/access-control.md#access-control).
+  Pour plus d’informations sur le contrôle d’accès, voir [ Contrôle d’accès ](/help/technotes/access-control.md#access-control).
 
-## Accéder à l’agent Data Insights dans l’assistant d’IA
+## Accès à Data Insights Agent dans l’assistant d’IA
 
 1. Accédez à [experience.adobe.com](https://experience.adobe.com/) et connectez-vous avec votre Adobe ID.
 
@@ -74,23 +106,21 @@ Pour plus d’informations, consultez [Contrôle d’accès](/help/technotes/acc
 
 3. Sélectionnez **[!UICONTROL Projet vierge]** dans la bannière en haut de la page des projets pour ouvrir un nouveau projet vierge.
 
-4. Assurez-vous que la vue de données sélectionnée pour le panneau est identique à la vue de données activée pour une utilisation avec l’agent Data Insights pour le test Beta.
-
-   Si vous n’êtes pas sûr, contactez le canal Beta Slack.
+4. Assurez-vous que la vue de données sélectionnée pour le panneau est une vue de données activée pour une utilisation avec Data Insights Agent, comme décrit dans la section [Gérer l’accès à Data Insights Agent dans Customer Journey Analytics](#manage-access-to-data-insights-agent-in-customer-journey-analytics).
 
 5. Sélectionnez l’icône de conversation de l’assistant AI dans la zone supérieure droite de la page.
 
    Si vous ne voyez pas l’icône de conversation, contactez votre administrateur afin qu’il puisse activer les fonctionnalités suivantes dans Admin Console :
 
-   * **[!UICONTROL Assistant IA : connaissance des produits]**
+   * Outils de création de rapports : **[!UICONTROL Assistant IA : Connaissance des produits]**
 
-   * **[!UICONTROL Assistant IA : analyse des données]**
+   * Outils De Vue De Données : **[!UICONTROL Data Insights Agent]**
 
-   Pour plus d’informations, les administrateurs peuvent consulter [ces instructions](https://experienceleague.adobe.com/fr/docs/experience-platform/ai-assistant/access).
+   Pour plus d’informations, voir [Gérer l’accès à Data Insights Agent dans Customer Journey Analytics](#manage-access-to-data-insights-agent-in-customer-journey-analytics).
 
    ![Icône de l’assistant AI](/help/assets/ai-asst-icon.png)
 
-6. Dans la boîte de dialogue **[!UICONTROL Demandez à propos de Customer Journey Analytics]** au bas de la page, posez une question sur la visualisation des données à l’aide de l’agent Data Insights.
+6. Dans la boîte de dialogue **[!UICONTROL Demandez à propos de Customer Journey Analytics]** au bas de la page, posez une question sur la visualisation des données à l’aide de Data Insights Agent.
 
    Pour plus d’informations, consultez les exemples suivants.
 
@@ -102,7 +132,7 @@ Supposons, par exemple, que vous soyez intéressé par les commandes que votre e
 
 ![invite AI](/help/assets/ai-asst-prompt1.png)
 
-**Réponse :** l’agent Data Insights collecte des informations en examinant les données de la vue de données, y compris les mesures et les composants. Cela traduit l’invite en dimensions et mesures appropriées dans la plage de données.
+**Réponse :** Data Insights Agent collecte des informations en examinant les données de la vue de données, y compris les mesures et les composants. Cela traduit l’invite en dimensions et mesures appropriées dans la plage de données.
 
 Comme vous pouvez le constater, il a généré automatiquement un graphique linéaire et un tableau à structure libre pour afficher les commandes pour juillet.
 
@@ -114,13 +144,13 @@ Ensuite, vous devez comparer vos revenus par région.
 
 **Invite :** dans la fenêtre d’invite, saisissez *« Afficher le chiffre d’affaires par région »*
 
-**Réponse :** l’agent Data Insights comprend intelligemment que par « région », vous voulez dire « région du client ». Il génère un graphique à barres qui présente le mieux les recettes par région :
+**Réponse :** Data Insights Agent comprend intelligemment que par « région », vous voulez dire « région du client ». Il génère un graphique à barres qui présente le mieux les recettes par région :
 
 ![Graphique à barres](/help/assets/ai-asst-result2.png)
 
 ### Exemple 3
 
-Ensuite, en plus de comprendre le chiffre d’affaires par région, vous souhaitez également afficher les données de bénéfice par région. Au lieu de répéter l’invite précédente, vous pouvez demander à l’agent Data Insights de mettre à jour le tableau à structure libre et de visualisation le plus récent.
+Ensuite, en plus de comprendre le chiffre d’affaires par région, vous souhaitez également afficher les données de bénéfice par région. Au lieu de répéter l’invite précédente, vous pouvez demander à Data Insights Agent de mettre à jour le tableau à structure libre et de visualisation le plus récent.
 
 **Invite :** dans la fenêtre d’invite, saisissez *« Ajouter un bénéfice »*
 
@@ -134,13 +164,13 @@ Enfin, examinons les recettes par catégorie de produits.
 
 **Invite :** dans la fenêtre d’invite, saisissez *« Proportion du chiffre d’affaires par catégorie de produits ».*
 
-**Réponse :** nouveau, l’agent Data Insights sélectionne la visualisation la plus appropriée, dans ce cas la visualisation **[!UICONTROL en anneau]**, pour répondre à la question.
+**Réponse :** encore une fois, Data Insights Agent sélectionne la visualisation la plus appropriée, dans ce cas la visualisation **[!UICONTROL en anneau]**, pour répondre à la question.
 
 ![Anneau](/help/assets/ai-asst-result3.png)
 
 ## Exemples d’invites de visualisation de données
 
-Vous trouverez ci-dessous quelques exemples d’invites courantes et des visualisations utilisées par l’agent Data Insights pour répondre à ces invites.
+Vous trouverez ci-dessous quelques exemples d’invites courantes et des visualisations utilisées par Data Insights Agent pour répondre à ces invites.
 
 | Exemple d’invite | Visualisation attendue |
 | --- | --- |
@@ -159,21 +189,21 @@ Vous trouverez ci-dessous quelques exemples d’invites courantes et des visuali
 
 ## Bonnes pratiques en matière de promotion
 
-L’agent Data Insights traite le contexte fourni par chaque invite utilisateur et tente de répondre intelligemment avec la visualisation et les composants les plus appropriés dans un tableau à structure libre.
+Data Insights Agent traite le contexte fourni par chaque invite utilisateur et tente de répondre intelligemment avec la visualisation et les composants les plus appropriés dans un tableau à structure libre.
 
 Les réponses peuvent varier en fonction des mots et expressions spécifiques utilisés dans l’invite, et de légères modifications de la langue peuvent entraîner des résultats différents.
 
 Pour obtenir les meilleurs résultats, tenez compte des recommandations suivantes :
 
-* Soyez précis : incluez des termes exacts pour réduire la réponse. Voici un exemple d’invite spécifique : « Ventes du mois dernier en Californie »
+* **Soyez précis :** incluez des termes exacts pour réduire la réponse. Voici un exemple d’invite spécifique : « Ventes du mois dernier en Californie »
 
-* Utiliser des mesures et des segments clairs : l’ajout de mesures spécifiques (telles que « Chiffre d’affaires »), de dimensions (telles que « nom du site web »), de segments (tels que « utilisateurs d’iPhone ») et de périodes (telles que « trois derniers mois ») permet au Data Insights Agent de se concentrer sur les données appropriées.
+* **Utiliser des mesures, des dimensions et des segments clairs :** l’ajout de mesures spécifiques (telles que « Chiffre d’affaires »), de dimensions (telles que « nom du site web »), de segments (tels que « utilisateurs d’iPhone ») et de périodes (telles que « trois derniers mois ») permet à Data Insights Agent de se concentrer sur les données appropriées.
 
-* Poser des questions directes : la formulation directe des questions permet à l’agent Data Insights de fournir plus facilement des informations claires et pertinentes. Voici un exemple de question directe dans une invite : « Quel est le chiffre d’affaires moyen par catégorie de produits cette année ? »
+* **Poser des questions directes :** le fait de poser des questions directement permet à Data Insights Agent de fournir plus facilement des informations claires et pertinentes. Voici un exemple de question directe dans une invite : « Quel est le chiffre d’affaires moyen par catégorie de produits cette année ? »
 
-Consultez le tableau suivant d’exemples de termes et d’expressions que vous pouvez utiliser dans les invites avec l’agent Data Insights, ainsi que les types de réponses attendus.
+Consultez le tableau ci-dessous pour obtenir des exemples de termes et d’expressions que vous pouvez utiliser dans les invites avec Data Insights Agent, ainsi que les types de réponses attendus.
 
-Ces exemples sont conçus pour vous aider à vous familiariser avec la manière dont des mots ou des structures spécifiques peuvent influencer la sortie de l’agent Data Insight, afin de garantir des informations plus précises et plus précieuses. L’agent Data Insights utilise l’IA générative, de sorte que les visualisations ou les données sélectionnées peuvent varier légèrement selon des invites similaires.
+Ces exemples sont conçus pour vous aider à vous familiariser avec la manière dont des mots ou des structures spécifiques peuvent influencer la sortie de l’agent Data Insight, afin de garantir des informations plus précises et plus précieuses. Data Insights Agent utilise l’IA générative, de sorte que les visualisations ou les données sélectionnées peuvent varier légèrement entre des invites similaires.
 
 | Résultat souhaité | Exemples de termes et d’expressions |
 | --- | --- |
@@ -183,24 +213,29 @@ Ces exemples sont conçus pour vous aider à vous familiariser avec la manière 
 | Visualisation sous forme de lignes | <ul><li>Tendance</li><li>[Mesure] dans [Période]</li></ul> |
 | Visualisation sous forme de barres | <ul><li>[Mesure] par [Dimension]</li></ul> |
 
-## Attentes en matière de test Beta et commentaires demandés
+<!--
 
-Après avoir posé chaque question, examinez attentivement la réponse fournie par l&#39;assistant. Il est essentiel d’évaluer entièrement les visualisations générées avant de fournir des commentaires.
+## Beta testing expectations and requested feedback
 
-Tenez compte des points suivants lors de l’évaluation d’une réponse de l’agent Data Insights :
+After posing each question, carefully review the assistant's provided answer. It's crucial to evaluate the generated visualizations comprehensively before providing feedback. 
 
-* Réponse du rail de conversation ou modèle : évaluez la réponse textuelle fournie. La réponse est-elle appropriée compte tenu du contexte de votre invite ?
+Consider the following when evaluating a response from Data Insights Agent: 
 
-* Visualisation/graphique : permet d’évaluer la visualisation. S’agit-il de la visualisation appropriée ou attendue pour votre question, ou vous attendiez-vous à une visualisation différente ?
+* Chat rail response or template: Evaluate the textual response provided. Is the response appropriate given the context of your prompt? 
 
-* Tableau à structure libre : permet d’évaluer le tableau à structure libre. Les données du tableau à structure libre sont-elles correctes ? Ventilez-vous les données là où elles sont demandées? Les segments appliqués sont-ils ceux que vous avez demandés ou attendus ?
+* Visualization/chart: Evaluate the visualization. Is it the appropriate or expected visualization for your question, or would you have expected a different visualization?  
 
-* Message d’erreur / Hors-portée : si un message d’erreur générique indiquant que la question est hors de portée est fourni, indiquez si vous pensez que le message de hors-portée est approprié, compte tenu de votre invite. Votre invite était-elle vraiment dans la portée ?
+* Freeform table: Evaluate the freeform table. Is the freeform table data correct? Is it breaking down data where requested? Are the applied segments those that you requested or expected? 
 
-**Pour chaque réponse, donnez un pouce vers le haut ou un pouce vers le bas, en fonction de la réponse.**
+* Error Message / Out-of-Scope: If a generic error message is given stating the question is out of scope, provide feedback on whether you think the out-of-scope message is appropriate, given your prompt. Was your prompt actually in scope? 
 
-Après la sélection des pouces vers le haut ou vers le bas, veuillez effectuer une sélection pour les champs de commentaires à sélection multiple pertinents. Si vous souhaitez fournir des commentaires supplémentaires, ajoutez des notes dans la zone de texte ouverte.
+**For every response, give a thumbs up or thumbs down, based on the response.**
 
-## Questions et contact
+Following the thumbs up or thumbs down selection, please make a selection for the relevant multi-select feedback boxes. If you want to provide additional feedback, add notes in the open text box.
 
-* Envoyez vos questions et commentaires sur le canal Beta Slack : #data-insights-agent-in-cja-beta
+## Questions and Contact
+
+* Send questions and feedback in the Beta Slack channel: #data-insights-agent-in-cja-beta
+
+-->
+
