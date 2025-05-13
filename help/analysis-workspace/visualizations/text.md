@@ -4,10 +4,10 @@ title: Texte
 feature: Visualizations
 exl-id: 51cb6b57-682f-4475-b829-75def725be43
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
-workflow-type: ht
-source-wordcount: '265'
-ht-degree: 100%
+source-git-commit: 75d45cd6a2149bb44949ec6e0f3808ea4a6995f5
+workflow-type: tm+mt
+source-wordcount: '285'
+ht-degree: 86%
 
 ---
 
@@ -58,6 +58,10 @@ Pour ajouter un lien hypertexte, mettez le texte en surbrillance puis sélection
 
 ## Ajout d’images {#images}
 
-Pour ajouter une image à votre projet, sélectionnez ![Image](/help/assets/icons/Image.svg) dans le menu et insérez une URL d’image publique. L’URL de l’image doit être accessible publiquement, commencer par `https` et être au format `.png`, `.jpeg`, `.jpg` ou `.gif`. Les images statiques et animées sont prises en charge.
+Pour ajouter une image à votre projet, sélectionnez ![Image](/help/assets/icons/Image.svg) dans le menu, spécifiez une URL d’image dans **[!UICONTROL URL de l’image]** (par exemple, `https://www.adobe.com/uploads/2018/06/Adobe.png`) et sélectionnez **[!UICONTROL Enregistrer]**.
+
+L’URL de l’image doit être accessible publiquement, commencer par `https` et être au format `.png`, `.jpeg`, `.jpg` ou `.gif`. Les images statiques et animées sont prises en charge.
+
+Notez que l’insertion par glisser-déposer d’une image n’est pas prise en charge.
 
 ![Options de texte avec l’icône d’image sélectionnée.](assets/image.png)
