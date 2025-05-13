@@ -5,10 +5,10 @@ title: Exporter des rapports Customer Journey Analytics vers le cloud
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: 0fb04c116864f50b396ffbd1f22e2d6dad3da983
+source-git-commit: 9482dd11ecf4aa6f3f8a45c90c3838a4a3389c73
 workflow-type: tm+mt
-source-wordcount: '2285'
-ht-degree: 98%
+source-wordcount: '2312'
+ht-degree: 97%
 
 ---
 
@@ -51,7 +51,16 @@ Procédez comme suit lors de l’export de tableaux complets vers le cloud :
 
 ![Processus d’export de tableau complet décrit dans les étapes 1 à 4.](assets/export-full-table-process.png)
 
-## Exporter des tableaux complets depuis Analysis Workspace
+## Exporter des tableaux complets depuis Analysis Workspace {#export-from-workspace}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="export-manifest"
+>title="Fichier de manifeste "
+>abstract="Lorsqu’il est activé, un fichier manifeste est inclus dans toute diffusion d’exportation réussie. Le fichier manifeste vous permet de confirmer que tous les fichiers ont bien été livrés."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 >
