@@ -4,10 +4,10 @@ title: Créer des projets
 feature: Workspace Basics
 role: User
 exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
-source-git-commit: de0b51096c772ceb180e759b2dd992e3cf2a009d
+source-git-commit: fb7e0e911de2a4a702d6069ca2f53d7769ec608b
 workflow-type: tm+mt
-source-wordcount: '431'
-ht-degree: 95%
+source-wordcount: '500'
+ht-degree: 79%
 
 ---
 
@@ -31,13 +31,13 @@ Maintenant que vous avez créé un projet Workspace vierge, assurez-vous de conn
 
 ![Exemple de projet](assets/example-project.png)
 
-* Ajoutez des [panneaux](/help/analysis-workspace/c-panels/panels.md) à votre projet. Par exemple, le **[!DNL Example Panel]** ➊.
+* Ajoutez des [panneaux](/help/analysis-workspace/c-panels/panels.md) à votre projet. Par exemple, le ➊ **[!DNL Example Panel]**.
 
 * Ajoutez des [visualisations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) à vos panneaux. Par exemple :
-   * **[!DNL Line Graph]** Visualisation [en courbes](/help/analysis-workspace/visualizations/line.md) ➋
-   * **[!DNL Countries]** Visualisation sous forme de [Tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) ➌
+   * **[!DNL Line Graph]** [Ligne](/help/analysis-workspace/visualizations/line.md) ➋ de visualisation
+   * **[!DNL Countries]** [Tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) ➌ de visualisation
 * Ajoutez des [composants](/help/components/overview.md) à vos visualisations. Par exemple :
-   * **[!DNL Store Country]** [dimension](/help/components/dimensions/overview.md) ➍
+   * **[!DNL Store Country]** [dimension](/help/components/dimensions/overview.md) ➍
    * **[!DNL People]** [mesure](/help/components/apply-create-metrics.md) ➎
    * **[!DNL Avg Order Value]** [mesure calculée](/help/components/calc-metrics/calc-metr-overview.md) ➏
    * **[!DNL Mobile App Sessions]** [segment](/help/components/filters/filters-overview.md) ➐
@@ -81,14 +81,7 @@ Les paramètres incluent :
 | Affichage des annotations | Spécifie si les annotations s’affichent pour ce projet ou non. |
 | [Palette de couleurs du projet](/help/analysis-workspace/build-workspace-project/color-palettes.md) | Vous pouvez modifier la palette de couleurs catégoriques utilisée dans Workspace en choisissant parmi les palettes prêtes à l’emploi qui ont été optimisées pour le daltonisme ou en spécifiant votre palette personnalisée. Cette fonction affecte de nombreux éléments dans Workspace, y compris la plupart des visualisations. |
 | [Densité d’affichage](/help/analysis-workspace/build-workspace-project/view-density.md) | Vous permet de voir plus de données sur l’écran en réduisant l’espacement vertical du panneau de gauche, des tableaux à structure libre et des tableaux de cohortes. |
-
-<!--
-
-Add this to the table above - exchange - for pipe: (End of April, 2025 when project commenting is GA)
-
-Allow commenting - When this option is enabled, a comments area is available in the right rail of the project in Analysis Workspace. For more information, see [Add and manage comments in projects](/help/analysis-workspace/build-workspace-project/comment-projects.md). 
-
--->
+| Autoriser les commentaires | **Remarque :** cette fonctionnalité est en phase de test limité de la publication et peut ne pas encore être disponible dans votre environnement. Cette note sera supprimée lorsque la fonctionnalité sera disponible. Pour plus d’informations sur le processus de publication de Customer Journey Analytics, consultez [Versions des fonctionnalités de Customer Journey Analytics](/help/release-notes/releases.md). <p>Lorsque cette option est activée, une zone de commentaires est disponible dans le rail de droite du projet dans Analysis Workspace. Pour plus d’informations, voir [Ajouter et gérer des commentaires dans les projets](/help/analysis-workspace/build-workspace-project/comment-projects.md).</p> |
 
 
 
