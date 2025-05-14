@@ -5,16 +5,16 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: 17cd5170e62b410ebf6118c6ac562d20b81b4e21
 workflow-type: tm+mt
-source-wordcount: '1760'
-ht-degree: 10%
+source-wordcount: '2012'
+ht-degree: 11%
 
 ---
 
 # Mécanismes de sécurisation de Customer Journey Analytics
 
-Ce document fournit des limites pour divers composants de Customer Journey Analytics. Pour les mécanismes de sécurisation, les paramètres de définition de la portée et les droits, reportez-vous à la [ Description du produit pour Customer Journey Analytics ](https://helpx.adobe.com/fr/legal/product-descriptions/customer-journey-analytics.html?lang=fr) ou à la [ Description du produit pour le module complémentaire Adobe Analytics : Customer Journey Analytics](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html?lang=fr).
+Ce document fournit des limites pour divers composants de Customer Journey Analytics. Pour les mécanismes de sécurisation, les paramètres de définition de la portée et les droits, reportez-vous à la [ Description du produit pour Customer Journey Analytics ](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html?lang=fr) ou à la [ Description du produit pour le module complémentaire Adobe Analytics : Customer Journey Analytics](https://helpx.adobe.com/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html?lang=fr).
 
 ## Types de limite
 
@@ -53,6 +53,10 @@ Certaines des fonctionnalités et leur valeur associée pour la limite dépenden
 | Panneaux par projet | 15 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de [panneaux](../analysis-workspace/home.md#panels) par projet. |
 | Visualisations par panneau | 25 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de [visualisations](../analysis-workspace/home.md#visualizations) par panneau. |
 | Champs dérivés par tableau à structure libre | 5 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de champs dérivés différents dans un seul tableau à structure libre. |
+| Commentaires par projet <p>**Remarque :** la possibilité de commenter les projets se trouve dans la phase de test limité de la publication et peut ne pas encore être disponible dans votre environnement. Cette note sera supprimée lorsque la fonctionnalité sera disponible. Pour plus d’informations sur le processus de publication de Customer Journey Analytics, consultez [Versions des fonctionnalités de Customer Journey Analytics](/help/release-notes/releases.md).</p> | 1,000 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de commentaires par projet. |
+| Réponses par commentaire <p>**Remarque :** la possibilité de commenter les projets se trouve dans la phase de test limité de la publication et peut ne pas encore être disponible dans votre environnement. Cette note sera supprimée lorsque la fonctionnalité sera disponible. Pour plus d’informations sur le processus de publication de Customer Journey Analytics, consultez [Versions des fonctionnalités de Customer Journey Analytics](/help/release-notes/releases.md).</p> | 100 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximum de réponses par commentaire. |
+| Images par commentaire <p>**Remarque :** la possibilité de commenter les projets se trouve dans la phase de test limité de la publication et peut ne pas encore être disponible dans votre environnement. Cette note sera supprimée lorsque la fonctionnalité sera disponible. Pour plus d’informations sur le processus de publication de Customer Journey Analytics, consultez [Versions des fonctionnalités de Customer Journey Analytics](/help/release-notes/releases.md).</p> | 5 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal d’images par commentaire. |
+| Taille de l’image <p>**Remarque :** la possibilité de commenter les projets se trouve dans la phase de test limité de la publication et peut ne pas encore être disponible dans votre environnement. Cette note sera supprimée lorsque la fonctionnalité sera disponible. Pour plus d’informations sur le processus de publication de Customer Journey Analytics, consultez [Versions des fonctionnalités de Customer Journey Analytics](/help/release-notes/releases.md).</p> | 2 | Mécanisme de sécurisation mis en œuvre par le système | Taille maximale de chargement par image en Mo pour les commentaires dans les projets |
 
 {style="table-layout:auto"}
 
@@ -138,7 +142,7 @@ Consultez également la section Experience Platform [Mécanismes de sécurisatio
 
 {style="table-layout:auto"}
 
-Consultez également la section Experience Platform [ Mécanismes de sécurisation pour l’ingestion de données](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=fr).
+Consultez également la section Experience Platform [ Mécanismes de sécurisation pour l’ingestion de données](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html).
 
 
 ## Exportation des données des destinations
@@ -150,7 +154,7 @@ Consultez également la section Experience Platform [ Mécanismes de sécurisati
 
 {style="table-layout:auto"}
 
-Consultez également la section Experience Platform [ Mécanismes de sécurisation d’exportation de jeux de données ](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/guardrails#dataset-exports)
+Consultez également la section Experience Platform [ Mécanismes de sécurisation d’exportation de jeux de données ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports)
 
 
 ## Zone d’atterrissage des données
@@ -238,7 +242,7 @@ Consultez également la section Experience Platform [ Mécanismes de sécurisati
 
 >[!NOTE]
 >
->Les délais de traitement ci-dessous sont des mécanismes de sécurisation, et non des accords de niveau de service (SLA) contractuels. La latence varie en fonction de la configuration du client, des volumes de données et des applications clientes. Les temps de traitement réels sont souvent plus rapides. Consultez votre contrat Customer Journey Analytics pour connaître les conditions contractuelles et les contrats de niveau de service spécifiques. Voir Experience Platform [Mécanismes de sécurisation pour l’ingestion de données](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=fr) pour plus d’informations.
+>Les délais de traitement ci-dessous sont des mécanismes de sécurisation, et non des accords de niveau de service (SLA) contractuels. La latence varie en fonction de la configuration du client, des volumes de données et des applications clientes. Les temps de traitement réels sont souvent plus rapides. Consultez votre contrat Customer Journey Analytics pour connaître les conditions contractuelles et les contrats de niveau de service spécifiques. Voir Experience Platform [Mécanismes de sécurisation pour l’ingestion de données](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html) pour plus d’informations.
 
 | Flux de données | Latence attendue |
 |---|---|
