@@ -6,9 +6,9 @@ feature: Basics
 role: User, Admin
 badgePremium: label="B2B edition"
 exl-id: 89e482b8-8082-4413-8fd3-cc1331780af4
-source-git-commit: 65b4339b4a1b27c41cfe442482a54661989d704b
+source-git-commit: d0dfcce1a9ba2a2f3e55abc63116ed07a33c9411
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '463'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,9 @@ ht-degree: 0%
 
 {{draft-b2b}}
 
-Adobe Analytics a commencé comme un outil d’analyse web et numérique pour les marketeurs, tandis que Customer Journey Analytics a élargi la portée pour inclure les données multicanaux, hors ligne et multi-plateformes.  Ces deux outils aident les entreprises B2C (Business to Consumer) à analyser et à optimiser leurs efforts marketing et leurs expériences client.
+Adobe Analytics a commencé comme un outil d’analyse web et numérique pour les marketeurs, tandis que Customer Journey Analytics a élargi la portée pour inclure les données multicanaux, hors ligne et multi-plateformes.  Ces deux outils aident les entreprises B2C (Business to Consumer) à analyser et à optimiser leurs efforts marketing et leurs expériences client. Et concentrez-vous sur les **rapports et analyses basés sur la personne** : comprenez le parcours client, où le client est une personne qui interagit avec votre marque sur plusieurs canaux.
 
-Dans les ventes B2B (business-to-business), le parcours d’achat implique plusieurs parties, des points de contact en ligne et hors ligne, ainsi que des étapes clés avant de conclure une transaction. Les sociétés B2B doivent suivre toutes ces interactions dans une vue de parcours unifiée pour analyser et optimiser efficacement leurs efforts de marketing et leurs expériences de compte.
+Customer Journey Analytics B2B edition ajoute **rapports et analyses basés sur les comptes**. Dans les ventes B2B (business-to-business), le parcours d’achat implique plusieurs parties, des points de contact en ligne et hors ligne, ainsi que des étapes clés avant de conclure une transaction. Les sociétés B2B doivent suivre toutes ces interactions dans une vue de parcours unifiée pour analyser et optimiser efficacement leurs efforts de marketing et leurs expériences de compte.
 
 Les caractéristiques de vente B2B standard sont les suivantes :
 

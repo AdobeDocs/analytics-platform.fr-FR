@@ -5,9 +5,9 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: baf392d4d576f07d906ccb7cee379bf5cdfd2a34
+source-git-commit: 3aa8986569d5bb5d7767f95cbdaead3f09440383
 workflow-type: tm+mt
-source-wordcount: '7199'
+source-wordcount: '7259'
 ht-degree: 53%
 
 ---
@@ -75,6 +75,11 @@ ht-degree: 53%
 >abstract="Sélectionnez une plage pour le nombre d’événements quotidiens attendus pour l’ensemble de la connexion."
 
 >[!CONTEXTUALHELP]
+>id="connection_change_personid"
+>title="Modifier l’ID de personne"
+>abstract="Une modification de l’ID de personne supprime toutes les données existantes dans la connexion et réingère toutes les données du jeu de données en fonction du nouvel ID de personne. Cette action peut avoir des répercussions sur les coûts. <br/><br/>Lorsque vous sélectionnez **[!UICONTROL Continuer]**, un délai dans la création de rapports est possible jusqu’à ce que le processus soit terminé."
+
+>[!CONTEXTUALHELP]
 >id="connection_change_accountid"
 >title="Modifier l’ID de compte"
 >abstract="Une modification de l’ID de compte supprime toutes les données existantes dans la connexion et réingère toutes les données du jeu de données en fonction du nouvel ID de compte. Cette action peut avoir des répercussions sur les coûts. <br/><br/>Lorsque vous sélectionnez **[!UICONTROL Continuer]**, un délai dans la création de rapports est possible jusqu’à ce que le processus soit terminé."
@@ -106,7 +111,7 @@ L’expérience de workflow de création et de modification de connexion apporte
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Créer et modifier une connexion](https://video.tv.adobe.com/v/3409299/?quality=12&learn=on&captions=fre_fr){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Créer et modifier une connexion](https://video.tv.adobe.com/v/343044/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 
@@ -173,14 +178,14 @@ Sur l’écran **[!UICONTROL Connexions]** > **[!UICONTROL *Nom de la connexion 
    | **[!UICONTROL ID de personne]** | ID de personne utilisé pour prendre en charge les rapports basés sur les personnes pour le jeu de données. |
    | **[!UICONTROL Clé]** | Clé utilisée pour un jeu de données de recherche. |
    | **[!UICONTROL Clé correspondante]** | La clé correspondante utilisée pour un jeu de données de recherche. |
-   | **[!UICONTROL Importer de nouvelles données]** | Statut de l’import des nouvelles données pour le jeu de données : <p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _ activés]**&#x200B;si le jeu de données est configuré pour importer de nouvelles données, et<p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _x désactivés_]** si le jeu de données est configuré pour ne pas importer de nouvelles données. |
-   | **[!UICONTROL Renvoyer les données]** | Statut des données de renvoi pour le jeu de données.<p>![Statut rouge](assets/status-red.svg) **[!UICONTROL _x _renvois ayant échoué]**&#x200B;pour le nombre de renvois ayant échoué,<p>![Statut rouge](assets/status-orange.svg) **[!UICONTROL _x _renvois en cours de traitement]**&#x200B;pour le nombre de renvois en cours de traitement,<p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _renvois terminés]**&#x200B;pour le nombre de renvois terminés, et<p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _Désactivé_]** au cas où aucun renvoi n’est configuré. |
+   | **[!UICONTROL Importer de nouvelles données]** | Statut de l’import des nouvelles données pour le jeu de données : <p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _ activés]**si le jeu de données est configuré pour importer de nouvelles données, et<p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _x désactivés_]** si le jeu de données est configuré pour ne pas importer de nouvelles données. |
+   | **[!UICONTROL Renvoyer les données]** | Statut des données de renvoi pour le jeu de données.<p>![Statut rouge](assets/status-red.svg) **[!UICONTROL _x _renvois ayant échoué]**pour le nombre de renvois ayant échoué,<p>![Statut rouge](assets/status-orange.svg) **[!UICONTROL _x _renvois en cours de traitement]**pour le nombre de renvois en cours de traitement,<p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _renvois terminés]**pour le nombre de renvois terminés, et<p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _Désactivé_]** au cas où aucun renvoi n’est configuré. |
 
    Vous pouvez rechercher un jeu de données spécifique à l’aide du champ ![Rechercher](/help/assets/icons/Search.svg).
 
 ### Customer Journey Analytics B2B edition
 
-[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
+[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
 
 Sur l’écran **[!UICONTROL Connexions]** > **[!UICONTROL *Nom de la connexion *]**:
 
@@ -219,8 +224,8 @@ Sur l’écran **[!UICONTROL Connexions]** > **[!UICONTROL *Nom de la connexion 
    | **[!UICONTROL ID de personne]** | ID de personne utilisé pour prendre en charge les rapports basés sur les personnes pour le jeu de données. |
    | **[!UICONTROL Clé]** | Clé utilisée pour un jeu de données de recherche. |
    | **[!UICONTROL Clé correspondante]** | La clé correspondante utilisée pour un jeu de données de recherche. |
-   | **[!UICONTROL Importer de nouvelles données]** | Statut de l’import des nouvelles données pour le jeu de données : <p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _ activés]**&#x200B;si le jeu de données est configuré pour importer de nouvelles données, et<p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _x désactivés_]** si le jeu de données est configuré pour ne pas importer de nouvelles données. |
-   | **[!UICONTROL Renvoyer les données]** | Statut des données de renvoi pour le jeu de données.<p>![Statut rouge](assets/status-red.svg) **[!UICONTROL _x _renvois ayant échoué]**&#x200B;pour le nombre de renvois ayant échoué,<p>![Statut rouge](assets/status-orange.svg) **[!UICONTROL _x _renvois en cours de traitement]**&#x200B;pour le nombre de renvois en cours de traitement,<p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _renvois terminés]**&#x200B;pour le nombre de renvois terminés, et<p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _Désactivé_]** au cas où aucun renvoi n’est configuré. |
+   | **[!UICONTROL Importer de nouvelles données]** | Statut de l’import des nouvelles données pour le jeu de données : <p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _ activés]**si le jeu de données est configuré pour importer de nouvelles données, et<p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _x désactivés_]** si le jeu de données est configuré pour ne pas importer de nouvelles données. |
+   | **[!UICONTROL Renvoyer les données]** | Statut des données de renvoi pour le jeu de données.<p>![Statut rouge](assets/status-red.svg) **[!UICONTROL _x _renvois ayant échoué]**pour le nombre de renvois ayant échoué,<p>![Statut rouge](assets/status-orange.svg) **[!UICONTROL _x _renvois en cours de traitement]**pour le nombre de renvois en cours de traitement,<p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _renvois terminés]**pour le nombre de renvois terminés, et<p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _Désactivé_]** au cas où aucun renvoi n’est configuré. |
 
    Vous pouvez rechercher un jeu de données spécifique à l’aide du champ ![Rechercher](/help/assets/icons/Search.svg).
 
@@ -228,231 +233,133 @@ Sur l’écran **[!UICONTROL Connexions]** > **[!UICONTROL *Nom de la connexion 
 
 Vous [ajoutez un ou plusieurs jeux de données](#add-datasets) ou [modifiez des jeux de données existants](#edit-a-dataset) dans le cadre du workflow de connexion.
 
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_primaryid"
 >title="ID principal"
 >abstract="Sélectionnez l’ID principal approprié à votre connexion : Personne pour un scénario B2C. Compte pour un scénario B2B."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="cja_connection_optionalcontainers"
 >title="Conteneurs facultatifs"
->abstract="Sélectionnez des conteneurs supplémentaires.<br/><br/>**[!UICONTROL Compte global &#x200B;]** : permet la configuration de comptes globaux dans une connexion.<br/>**[!UICONTROL Opportunité]** : permet la configuration des opportunités dans une connexion.<br/>**[!UICONTROL Groupe d’achat &#x200B;]** : permet la configuration des groupes d’achat dans une connexion."
+>abstract="Sélectionnez des conteneurs supplémentaires.<br/><br/>**[!UICONTROL Compte global ]** : permet la configuration de comptes globaux dans une connexion.<br/>**[!UICONTROL Opportunité]** : permet la configuration des opportunités dans une connexion.<br/>**[!UICONTROL Groupe d’achat ]** : permet la configuration des groupes d’achat dans une connexion."
 
-<!-- markdownlint-enable MD034 -->
 
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja_connection_personid"
->title="ID de personne"
->abstract="Sélectionnez un ID de personne parmi les identités disponibles définies dans le schéma du jeu de données d’Experience Platform."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_accountid"
 >title="ID de compte"
 >abstract="Sélectionnez un ID de compte (l’identifiant unique d’un compte) parmi les identités disponibles définies dans le schéma du jeu de données d’Experience Platform."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="cja_connection_accountfield"
 >title="Champ de compte"
 >abstract="Sélectionnez un champ qui représente l’identifiant de compte (identifiant unique d’un compte)."
-
-<!-- markdownlint-enable MD034 -->
-
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_globalaccountid"
 >title="Identifiant de compte global"
 >abstract="Sélectionnez un identifiant de compte global (l’identifiant unique d’un compte global) parmi les identités disponibles que vous avez définies dans le schéma du jeu de données dans Experience Platform."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="cja_connection_opportunityid"
 >title="ID de l’opportunité"
 >abstract="Sélectionnez un identifiant d’opportunité (l’identifiant unique d’une opportunité) parmi les identités disponibles que vous avez définies dans le schéma du jeu de données dans Experience Platform."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_buyinggroupid"
 >title="ID du groupe d’achat"
 >abstract="Sélectionnez un identifiant de groupe d’achats (identifiant unique d’un groupe d’achats) parmi les identités disponibles que vous avez définies dans le schéma du jeu de données dans Experience Platform."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
+>[!CONTEXTUALHELP]
+>id="cja_connection_personid"
+>title="ID de personne"
+>abstract="Sélectionnez un ID de personne (l’identifiant unique d’une personne) parmi les identités disponibles que vous avez définies dans le schéma du jeu de données dans Experience Platform."
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_matchingkey"
 >title="Type de clé correspondant"
->abstract="Sélectionnez le mode de jointure : en fonction d’une correspondance par champ ou d’une correspondance par conteneur.<br/><br/>**[!UICONTROL Correspondance par champ &#x200B;]**: sélectionnez un champ pour joindre l’un des jeux de données d’événement. Si cette liste est vide, vous n’avez probablement pas ajouté ni configuré de jeu de données d’événement.<br/>**[!UICONTROL Correspondance par conteneur]** : sélectionnez un conteneur à utiliser pour se joindre à l’un des jeux de données d’événement."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
+>abstract="Sélectionnez le mode de jointure : en fonction d’une correspondance par champ ou d’une correspondance par conteneur.<br/><br/>**[!UICONTROL Correspondance par champ ]**: sélectionnez un champ pour joindre l’un des jeux de données d’événement. Si cette liste est vide, vous n’avez probablement pas ajouté ni configuré de jeu de données d’événement.<br/>**[!UICONTROL Correspondance par conteneur]** : sélectionnez un conteneur à utiliser pour se joindre à l’un des jeux de données d’événement."
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_importnewdata"
 >title="Importer de nouvelles données"
 >abstract="Tous les nouveaux lots qui sont ajoutés au jeu de données Experience Platform sont automatiquement ajoutés dans cette connexion et mis à disposition pour analyse."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="cja_connection_datasetbackfill"
 >title="Renvoi du jeu de données"
 >abstract="Cette option renvoie les données (historiques) existantes d’Experience Platform pour ce jeu de données dans la connexion."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_transformdataset"
 >title="Transformer le jeu de données"
 >abstract="Cette option transforme le jeu de données afin qu’il puisse être utilisé pour les recherches basées sur la personne dans les scénarios B2B. Une fois activée, la transformation du jeu de données est irréversible."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="cja_connection_connectionmap"
 >title="Carte de connexion"
 >abstract="La carte de connexion visualise les relations entre les jeux de données d’événement, de personne, de compte et de recherche pertinents (tels que les opportunités, les membres des campagnes, etc.)."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="connection_primaryid"
 >title="ID principal"
 >abstract="Sélectionnez l’ID principal approprié à votre connexion : Personne pour un scénario B2C. Compte pour un scénario B2B."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="connection_optionalcontainers"
 >title="Conteneurs facultatifs"
->abstract="Sélectionnez des conteneurs supplémentaires.<br/><br/>**[!UICONTROL Compte global &#x200B;]** : permet la configuration de comptes globaux dans une connexion.<br/>**[!UICONTROL Opportunité]** : permet la configuration des opportunités dans une connexion.<br/>**[!UICONTROL Groupe d’achat &#x200B;]** : permet la configuration des groupes d’achat dans une connexion."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
+>abstract="Sélectionnez des conteneurs supplémentaires.<br/><br/>**[!UICONTROL Compte global ]** : permet la configuration de comptes globaux dans une connexion.<br/>**[!UICONTROL Opportunité]** : permet la configuration des opportunités dans une connexion.<br/>**[!UICONTROL Groupe d’achat ]** : permet la configuration des groupes d’achat dans une connexion."
 
 >[!CONTEXTUALHELP]
 >id="connection_personid"
 >title="ID de personne"
 >abstract="Sélectionnez un ID de personne parmi les identités disponibles définies dans le schéma du jeu de données d’Experience Platform."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="connection_accountid"
 >title="ID de compte"
 >abstract="Sélectionnez un ID de compte (l’identifiant unique d’un compte) parmi les identités disponibles définies dans le schéma du jeu de données d’Experience Platform."
-
-<!-- markdownlint-enable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="connection_accountfield"
 >title="Champ de compte"
 >abstract="Sélectionnez un champ qui représente l’identifiant de compte (identifiant unique d’un compte)."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="connection_globalaccountid"
 >title="Identifiant de compte global"
 >abstract="Sélectionnez un identifiant de compte global (l’identifiant unique d’un compte global) parmi les identités disponibles que vous avez définies dans le schéma du jeu de données dans Experience Platform."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="connection_opportunityid"
 >title="ID de l’opportunité"
 >abstract="Sélectionnez un identifiant d’opportunité (l’identifiant unique d’une opportunité) parmi les identités disponibles que vous avez définies dans le schéma du jeu de données dans Experience Platform."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="connection_buyinggroupid"
 >title="ID du groupe d’achat"
 >abstract="Sélectionnez un identifiant de groupe d’achats (identifiant unique d’un groupe d’achats) parmi les identités disponibles que vous avez définies dans le schéma du jeu de données dans Experience Platform."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="connection_matchingkey"
 >title="Type de clé correspondant"
->abstract="Sélectionnez le mode de jointure : en fonction d’une correspondance par champ ou d’une correspondance par conteneur.<br/><br/>**[!UICONTROL Correspondance par champ &#x200B;]**: sélectionnez un champ pour joindre l’un des jeux de données d’événement. Si cette liste est vide, vous n’avez probablement pas ajouté ni configuré de jeu de données d’événement.<br/>**[!UICONTROL Correspondance par conteneur]** : sélectionnez un conteneur à utiliser pour se joindre à l’un des jeux de données d’événement."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
+>abstract="Sélectionnez le mode de jointure : en fonction d’une correspondance par champ ou d’une correspondance par conteneur.<br/><br/>**[!UICONTROL Correspondance par champ ]**: sélectionnez un champ pour joindre l’un des jeux de données d’événement. Si cette liste est vide, vous n’avez probablement pas ajouté ni configuré de jeu de données d’événement.<br/>**[!UICONTROL Correspondance par conteneur]** : sélectionnez un conteneur à utiliser pour se joindre à l’un des jeux de données d’événement."
 
 >[!CONTEXTUALHELP]
 >id="connection_importnewdata"
 >title="Importer de nouvelles données"
 >abstract="Tous les nouveaux lots qui sont ajoutés dans le jeu de données Experience Platform sont automatiquement ajoutés dans cette connexion et mis à disposition pour analyse."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="connection_datasetbackfill"
 >title="Renvoi du jeu de données"
 >abstract="Cette option renvoie les données (historiques) existantes d’Experience Platform pour ce jeu de données dans la connexion."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="connection_transformdataset"
 >title="Transformer le jeu de données"
 >abstract="Cette option transforme le jeu de données afin qu’il puisse être utilisé pour les recherches basées sur la personne dans les scénarios B2B. Une fois activée, la transformation du jeu de données est irréversible."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="connection_connectionmap"
@@ -516,7 +423,7 @@ Pour modifier un jeu de données déjà configuré pour une connexion, accédez 
 
 ### Paramètres du jeu de données
 
-Lorsque vous ajoutez des jeux de données ou modifiez un jeu de données existant, vous configurez les paramètres du jeu de données pour chaque jeu. Les paramètres disponibles dépendent du [type de jeu de données](#dataset-types) et, pour certains types de jeux de données, du type de connexion (basé sur la personne ou sur le compte [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}.).
+Lorsque vous ajoutez des jeux de données ou modifiez un jeu de données existant, vous configurez les paramètres du jeu de données pour chaque jeu. Les paramètres disponibles dépendent du [type de jeu de données](#dataset-types) et, pour certains types de jeux de données, du type de connexion (basé sur la personne ou sur le compte [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}.).
 
 Tous les jeux de données et types de jeux de données comportent des [paramètres généraux et détails](#general-dataset-settings-and-details) comme s’il faut importer de nouvelles données et demander des renvois.
 
@@ -540,7 +447,7 @@ Pour un jeu de données d’événement dans une connexion basée sur une person
 
 ##### Connexion basée sur un compte
 
-[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
+[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
 
 Pour un jeu de données d’événement dans une connexion basée sur un compte, vous pouvez spécifier les éléments suivants :
 
@@ -609,7 +516,7 @@ Pour un jeu de données de recherche dans une connexion basée sur une personne,
 
 ##### Connexion basée sur un compte
 
-[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
+[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
 
 ![Basé sur le compte des paramètres du jeu de données d’événement de recherche](assets/lookup-dataset-settings-b2b.png)
 
@@ -668,7 +575,7 @@ Lorsque vous supprimez un jeu de données, vous êtes averti des implications de
 
 ### Renvois précédents
 
-Lorsque vous sélectionnez ![Historique](/help/assets/icons/History.svg) **[!UICONTROL Renvois précédents]** dans l’interface, une boîte de dialogue **[!UICONTROL Renvois précédents : _Nom du jeu de données_]**&#x200B;affiche les renvois les plus récents du jeu de données.
+Lorsque vous sélectionnez ![Historique](/help/assets/icons/History.svg) **[!UICONTROL Renvois précédents]** dans l’interface, une boîte de dialogue **[!UICONTROL Renvois précédents : _Nom du jeu de données_]**affiche les renvois les plus récents du jeu de données.
 
 ## Types de jeux de données {#dataset-types}
 
@@ -680,11 +587,11 @@ Pour chaque jeu de données que vous avez ajouté à cette connexion, [!UICONTRO
 
 Il existe différents types de jeux de données : les données [!UICONTROL Événement], les données [!UICONTROL Profil], les données [!UICONTROL Recherche] et les données [!UICONTROL Résumé].
 
-| Type de jeu de données | Description | Horodatage | Schéma | ID de personne <br/> ID de compte [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} |
+| Type de jeu de données | Description | Horodatage | Schéma | ID de personne <br/> ID de compte [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} |
 |---|---|---|---|---|
-| **[!UICONTROL Événement]** | Données qui représentent les événements dans le temps. Par exemple, visites web, interactions, transactions, données de point de vente, données d’enquête, données d’impression, etc. Ces données peuvent être des données de flux de clics typiques, avec un ID client ou un ID de cookie et un horodatage. Avec les données d’événement, vous disposez d’une flexibilité quant à l’ID utilisé comme ID de personne. | Définissez sur le champ de date et heure par défaut des schémas basés sur un événement dans [!UICONTROL Experience Platform]. | Tout schéma intégré ou personnalisé basé sur une classe XDM avec le comportement *série temporelle*. Par exemple, *Événement d’expérience XDM* ou *Événement de décision XDM*. | Vous pouvez choisir l&#39;ID de personne ou l&#39;ID de compte [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} à inclure. Chaque schéma du jeu de données défini dans Experience Platform peut disposer de son propre ensemble d’une ou de plusieurs identités définies et associées à un espace de noms d’identité. N’importe laquelle de ces identités peut être utilisée comme ID de personne ou ID de compte [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}. Par exemple, l’ID de cookie, l’ID regroupé, l’ID utilisateur, le code de suivi, l’ID de compte [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, etc. |
+| **[!UICONTROL Événement]** | Données qui représentent les événements dans le temps. Par exemple, visites web, interactions, transactions, données de point de vente, données d’enquête, données d’impression, etc. Ces données peuvent être des données de flux de clics typiques, avec un ID client ou un ID de cookie et un horodatage. Avec les données d’événement, vous disposez d’une flexibilité quant à l’ID utilisé comme ID de personne. | Définissez sur le champ de date et heure par défaut des schémas basés sur un événement dans [!UICONTROL Experience Platform]. | Tout schéma intégré ou personnalisé basé sur une classe XDM avec le comportement *série temporelle*. Par exemple, *Événement d’expérience XDM* ou *Événement de décision XDM*. | Vous pouvez choisir l&#39;ID de personne ou l&#39;ID de compte [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} à inclure. Chaque schéma du jeu de données défini dans Experience Platform peut disposer de son propre ensemble d’une ou de plusieurs identités définies et associées à un espace de noms d’identité. N’importe laquelle de ces identités peut être utilisée comme ID de personne ou ID de compte [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}. Par exemple, l’ID de cookie, l’ID regroupé, l’ID utilisateur, le code de suivi, l’ID de compte [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, etc. |
 | **[!UICONTROL Rechercher]** | Vous pouvez ajouter des jeux de données en tant que recherches de champs dans tous les types de jeux de données : Profil, Recherche et Événement (ce dernier a toujours été pris en charge). Cette fonctionnalité supplémentaire accroît la capacité de Customer Journey Analytics à prendre en charge des modèles de données complexes, y compris B2B. Ces données sont utilisées pour rechercher des valeurs ou des clés trouvées dans vos données d’événement, de profil ou de recherche. Vous pouvez ajouter jusqu’à deux niveaux de recherche. (Notez que les [champs dérivés](/help/data-views/derived-fields/derived-fields.md) ne peuvent pas être utilisés comme clés de correspondance pour les recherches dans les connexions.) Vous pouvez, par exemple, charger des données de recherche qui mappent les identifiants numériques de vos données d’événement avec des noms de produits. Voir l’[exemple B2B](/help/use-cases/b2b/example.md). | S.O. | Tout schéma intégré ou personnalisé basé sur une classe XDM avec le comportement *Record*, à l’exception de la classe *XDM Individual Profile*. | S.O. |
-| **[!UICONTROL Profil]** | Données appliquées à votre compte, personnes, utilisateurs ou clients dans les données [!UICONTROL Événement]. Vous permet, par exemple, de charger des données CRM à propos de vos clients. | S.O. | Tout schéma intégré ou personnalisé basé sur la classe *XDM Individual Profile*. | Vous pouvez choisir l’ID de personne/l’ID de compte [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} à inclure. Chaque jeu de données (à l’exception des jeux de données de résumé), défini dans [!DNL Experience Platform], possède son propre jeu d’un ou plusieurs ID de personne ou de compte [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} définis. Par exemple, l’ID de cookie, l’ID regroupé, l’ID utilisateur, le code de suivi, l’ID de compte, etc.<br>![ID de personne ](assets/person-id.png)**Note** : si vous créez une connexion qui comprend des jeux de données avec des ID différents, les rapports le reflèteront. Pour fusionner des jeux de données, vous devez utiliser le même ID de personne ou ID de compte [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}. |
+| **[!UICONTROL Profil]** | Données appliquées à votre compte, personnes, utilisateurs ou clients dans les données [!UICONTROL Événement]. Vous permet, par exemple, de charger des données CRM à propos de vos clients. | S.O. | Tout schéma intégré ou personnalisé basé sur la classe *XDM Individual Profile*. | Vous pouvez choisir l’ID de personne/l’ID de compte [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} à inclure. Chaque jeu de données (à l’exception des jeux de données de résumé), défini dans [!DNL Experience Platform], possède son propre jeu d’un ou plusieurs ID de personne ou de compte [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} définis. Par exemple, l’ID de cookie, l’ID regroupé, l’ID utilisateur, le code de suivi, l’ID de compte, etc.<br>![ID de personne ](assets/person-id.png)**Note** : si vous créez une connexion qui comprend des jeux de données avec des ID différents, les rapports le reflèteront. Pour fusionner des jeux de données, vous devez utiliser le même ID de personne ou ID de compte [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}. |
 | **Résumé** | Données de série temporelle qui ne sont pas associées à un ID de personne individuel. Les données de résumé représentent des données agrégées à un niveau d’agrégation différent, par exemple des campagnes. Vous pouvez utiliser ces données dans Customer Journey Analytics pour prendre en charge divers cas d’utilisation. Voir la section [Données de résumé](/help/data-views/summary-data.md) pour plus d’informations. | Défini automatiquement sur le champ d’horodatage par défaut des schémas de mesures récapitulatives basées sur un événement d’Experience Platform. Seule la granularité horaire ou quotidienne est prise en charge. | Tout schéma intégré ou personnalisé basé sur la classe *Mesures récapitulatives XDM*. | S.O. |
 
 ## Vue d’ensemble de la connexion {#preview}
@@ -698,13 +605,13 @@ Cet aperçu contient certaines colonnes répertoriant la configuration de la con
 
 ## Carte de connexion
 
-[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
+[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
 
 Pour afficher une carte des relations entre les jeux de données qui font partie de votre connexion, sélectionnez ![GraphPathing](/help/assets/icons/GraphPathing.svg) **[!UICONTROL Carte de connexion]** dans la boîte de dialogue Paramètres de connexion.
 
 ![Mappage de connexion](assets/connectionmap.png)
 
-Cette carte vous permet de mieux comprendre comment vous avez défini votre connexion et configuré la relation entre vos jeux de données d’événement, de profil, de recherche et de résumé à l’aide d’identifiants.
+Cette carte vous permet de mieux comprendre comment vous avez défini votre connexion et configuré la relation entre vos jeux de données d’événement, de profil, de recherche et de résumé à l’aide de conteneurs et d’identifiants.
 
 
 ## Utilisation des champs numériques comme clés et valeurs de recherche {#numeric}
@@ -775,6 +682,6 @@ Contactez votre équipe d’assistance Adobe pour plus d’informations et pour
 
 >[!MORELIKETHIS]
 >
->Blog : [Utilisation des jeux de données d’événement, de recherche et de profil dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-to-leverage-event-lookup-and-profile-datasets-in-adobe/ba-p/681478?profile.language=fr)
+>Blog : [Utilisation des jeux de données d’événement, de recherche et de profil dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-to-leverage-event-lookup-and-profile-datasets-in-adobe/ba-p/681478)
 
 ![Partager](/help/assets/icons/Share.svg)
