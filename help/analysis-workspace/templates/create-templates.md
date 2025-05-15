@@ -7,7 +7,7 @@ exl-id: 23cdf02f-56a1-4465-ae7f-b3a1bcad28af
 source-git-commit: f0786cfa74453693078c7d30d647a96bf1d98d07
 workflow-type: tm+mt
 source-wordcount: '1850'
-ht-degree: 83%
+ht-degree: 85%
 
 ---
 
@@ -23,8 +23,8 @@ Les membres de la société de connexion peuvent utiliser ces modèles d’entre
 
 >[!CONTEXTUALHELP]
 >id="use-case-ajo-template"
->title="Utiliser le modèle dans Journey Optimizer"
->abstract="Lorsque vous utilisez ce modèle dans Journey Optimizer, la vue de données définie comme vue de données par défaut dans Adobe Journey Optimizer est utilisée, quelle que soit la vue de données sélectionnée avec ce modèle dans Customer Journey Analytics."
+>title="Utiliser un modèle dans Journey Optimizer"
+>abstract="Lorsque vous utilisez ce modèle dans Journey Optimizer, la vue de données définie comme vue de données par défaut dans Adobe Journey Optimizer est utilisée, quelle que soit la vue de données sélectionnée avec ce modèle dans Customer Journey Analytics."
 
 <!-- markdownlint-enable MD034 -->
 

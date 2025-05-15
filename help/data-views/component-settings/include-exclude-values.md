@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
 workflow-type: tm+mt
 source-wordcount: '356'
-ht-degree: 83%
+ht-degree: 88%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 83%
 >[!CONTEXTUALHELP]
 >id="dataview_component_dimension_includeexcludevalues"
 >title="Valeurs d’inclusion/exclusion"
->abstract="Précisez une dimension afin de n’inclure que les valeurs correspondant à des critères spécifiques. Les inclusions et exclusions ont lieu avant l’affectation et la segmentation dans les rapports. Déterminer si la logique de segment spécifiée est sensible à la casse."
+>abstract="Précisez une dimension afin de n’inclure que les valeurs correspondant à des critères spécifiques. Les inclusions et les exclusions se produisent avant l’attribution et la segmentation dans les rapports. Déterminez si la logique de segment spécifiée respecte la casse."
 
 <!-- markdownlint-enable MD034 -->
 

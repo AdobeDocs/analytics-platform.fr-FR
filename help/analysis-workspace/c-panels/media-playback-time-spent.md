@@ -7,7 +7,7 @@ role: User
 source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '1073'
-ht-degree: 89%
+ht-degree: 91%
 
 ---
 
@@ -27,14 +27,14 @@ ht-degree: 89%
 >[!CONTEXTUALHELP]
 >id="workspace_mediaplaybacktimespent_panel"
 >title="Temps de lecture de média"
->abstract="Analysez la consommation vidéo sur le long terme, sélectionnez différentes granularités, et éventuellement ventilez et comparez à l’aide de segments, de dimensions, d’éléments de dimension ou de périodes."
+>abstract="Analysez l’évolution de la consommation vidéo, sélectionnez différentes granularités, et, éventuellement, ventilez et comparez à l’aide de filtres, de dimensions, d’éléments de dimension ou de périodes."
 
 <!-- markdownlint-enable MD034 -->
 
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente le panneau Temps de lecture de média dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_.<br/>_Consultez [panneau Temps de lecture de média](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent) pour la_ version ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** de cet article._
+_Cet article présente le panneau Temps de lecture de média dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_Consultez [panneau Temps de lecture de média](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent) pour la_ version ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 
@@ -60,7 +60,7 @@ Le temps de lecture peut vous aider à comprendre les éléments suivants :
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Temps de lecture de média](https://video.tv.adobe.com/v/3446702?captions=fre_fr){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Temps de lecture de média](https://video.tv.adobe.com/v/338699){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 

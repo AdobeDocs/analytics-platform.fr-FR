@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '1053'
-ht-degree: 74%
+ht-degree: 75%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 74%
 >[!CONTEXTUALHELP]
 >id="dataview_component_dimension_persistence"
 >title="Persistance"
->abstract="Configurez le modèle d’attribution par défaut appliqué à une dimension. L’affectation s’applique avant les segments dans les rapports. Pour plus d’informations, consultez les sections [Paramètres d’affectation](/help/data-views/component-settings/persistence.md#allocation-settings), [Paramètres d’expiration](/help/data-views/component-settings/persistence.md#expiration-settings), [Dimension de liaison](/help/data-views/component-settings/persistence.md#binding-dimension) et [Mesures de liaison](/help/data-views/component-settings/persistence.md#binding-metric)."
+>abstract="Configurez le modèle d’attribution par défaut appliqué à une dimension. L’attribution s’applique avant les segments dans les rapports. Pour plus d’informations, consultez les sections [Paramètres d’affectation](/help/data-views/component-settings/persistence.md#allocation-settings), [Paramètres d’expiration](/help/data-views/component-settings/persistence.md#expiration-settings), [Dimension de liaison](/help/data-views/component-settings/persistence.md#binding-dimension) et [Mesures de liaison](/help/data-views/component-settings/persistence.md#binding-metric)."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -91,10 +91,10 @@ Détails sur les paramètres d’expiration disponibles.
 
 * **Session** : expire après une session donnée. Fenêtre d’expiration par défaut.
 * **Créneau de reporting des personnes** : expire à la fin du créneau de reporting.
-* **Période de création de rapports de compte global** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} : expire à la fin de la période de création de rapports.
-* **Période de création de rapports de compte** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} : expire à la fin de la période de création de rapports.
-* **Période de création de rapports sur les opportunités** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} : expire à la fin de la période de création de rapports.
-* **Période de reporting du groupe d&#39;achats** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} : expire à la fin de la période de reporting.
+* **Période de création de rapports de compte global** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} : expire à la fin de la période de création de rapports.
+* **Période de création de rapports de compte** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} : expire à la fin de la période de création de rapports.
+* **Période de création de rapports sur les opportunités** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} : expire à la fin de la période de création de rapports.
+* **Période de reporting du groupe d&#39;achats** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} : expire à la fin de la période de reporting.
 * **Heure personnalisée** : expire après une période spécifiée (jusqu’à 90 jours). Cette option dʼexpiration est disponible uniquement pour les modèles dʼattribution d’origine et La plus récente. Lors de lʼutilisation de lʼexpiration basée sur le temps, les valeurs antérieures au début de votre intervalle de compte rendu des performances (jusquʼà 90 jours) sont prises en compte.
 * **Mesure** : lorsque cette mesure est vue dans un événement, la valeur conservée dans la dimension arrive immédiatement à expiration. Vous pouvez utiliser n’importe quelle mesure comme fin d’expiration pour cette dimension. Cette option dʼexpiration est disponible uniquement pour les paramètres dʼattribution Original et La plus récente.
 
@@ -108,7 +108,7 @@ Consultez [Utiliser des dimensions et des mesures de liaison dans Customer Jour
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimensions de liaison](https://video.tv.adobe.com/v/3409292/?quality=12&learn=on&captions=fre_fr){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimensions de liaison](https://video.tv.adobe.com/v/342694/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 

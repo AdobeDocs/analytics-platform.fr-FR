@@ -7,7 +7,7 @@ role: User
 source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '1174'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
@@ -27,14 +27,14 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="workspace_mediaconcurrentviewers_panel"
 >title="Visiteurs et visiteuses simultanés de médias"
->abstract="Analysez les visionneuses au fil du temps, affichez le pic d’accès simultanés et, éventuellement, ventilez et comparez à l’aide de segments, de dimensions, d’éléments de dimension ou de périodes."
+>abstract="Analysez l’évolution des visiteurs et visiteuses simultanés, affichez la simultanéité la plus élevée et, éventuellement, ventilez et comparez à l’aide de filtres, de dimensions, d’éléments de dimension ou de périodes."
 
 <!-- markdownlint-enable MD034 -->
 
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente le panneau Visiteurs et visiteuses simultanés de médias dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_.<br/>_Consultez [panneau Visiteurs et visiteuses simultanés de médias](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers) pour la_ version ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** de cet article._
+_Cet article présente le panneau Visiteurs et visiteuses simultanés de médias dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_Consultez [panneau Visiteurs et visiteuses simultanés de médias](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers) pour la_ version ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 
@@ -55,7 +55,7 @@ Dans Analysis Workspace, les visiteurs et visiteuses simultanés représentent 
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Panneau Visiteurs et visiteuses simultanés de médias](https://video.tv.adobe.com/v/35025/?quality=12&learn=on&captions=fre_fr){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Panneau Visiteurs et visiteuses simultanés de médias](https://video.tv.adobe.com/v/26990/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 

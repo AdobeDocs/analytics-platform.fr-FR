@@ -7,7 +7,7 @@ exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
 source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
 workflow-type: tm+mt
 source-wordcount: '1988'
-ht-degree: 87%
+ht-degree: 90%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 87%
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_panel"
 >title="Zone de travail de parcours"
->abstract="Analysez la façon dont les personnes passent par un parcours défini ou en sortent. Créez des analyses de parcours utilisateur en créant un graphique flexible de nœuds et de flèches représentant n’importe quelle combinaison d’événements, d’éléments de dimension et de segments. Faites glisser des nœuds sur la zone de travail pour réorganiser les événements et les conditions du parcours. Les données sont mises à jour en conséquence. <br/><br/>Les clientes et clients ayant accès à Adobe Journey Optimizer peuvent analyser les parcours Journey Optimizer existants."
+>abstract="Analysez la façon dont les personnes passent par un parcours défini ou en sortent. Créez des analyses de parcours d’utilisateurs et d’utilisatrices en créant un graphique flexible de nœuds et de flèches représentant n’importe quelle combinaison d’événements, d’éléments de dimension et de segments. Faites glisser des nœuds sur la zone de travail pour réorganiser les événements et les conditions du parcours. Les données sont mises à jour en conséquence. <br/><br/>Les clientes et clients ayant accès à Adobe Journey Optimizer peuvent analyser les parcours Journey Optimizer existants."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -45,13 +45,13 @@ ht-degree: 87%
 >[!CONTEXTUALHELP]
 >id="journeycanvas_panel"
 >title="Zone de travail de parcours"
->abstract="Analysez la façon dont les personnes passent par un parcours défini ou en sortent. Créez des analyses de parcours utilisateur en créant un graphique flexible de nœuds et de flèches représentant n’importe quelle combinaison d’événements, d’éléments de dimension et de segments. Faites glisser des nœuds sur la zone de travail pour réorganiser les événements et les conditions du parcours. Les données sont mises à jour en conséquence. <br/><br/>Les clientes et clients ayant accès à Adobe Journey Optimizer peuvent analyser les parcours Journey Optimizer existants."
+>abstract="Analysez la façon dont les personnes passent par un parcours défini ou en sortent. Créez des analyses de parcours d’utilisateurs et d’utilisatrices en créant un graphique flexible de nœuds et de flèches représentant n’importe quelle combinaison d’événements, d’éléments de dimension et de segments. Faites glisser des nœuds sur la zone de travail pour réorganiser les événements et les conditions du parcours. Les données sont mises à jour en conséquence. <br/><br/>Les clientes et clients ayant accès à Adobe Journey Optimizer peuvent analyser les parcours Journey Optimizer existants."
 
 <!-- markdownlint-enable MD034 -->
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente la visualisation Zone de travail de parcours dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**.<br/>Il n’existe aucune visualisation équivalente dans **Adobe Analytics**._
+_Cet article présente la visualisation Zone de travail de parcours dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**.<br/>Il n’existe aucune visualisation équivalente dans **Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
@@ -263,5 +263,5 @@ Vous pouvez créer des analyses dans la zone de travail de parcours en fonction 
 
 >[!MORELIKETHIS]
 >
-> * [Guide de Parcours de la visualisation de la zone de travail dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-guide-to-journey-canvas-visualization-in-adobe-customer/ba-p/737857?profile.language=fr)
+> * [Guide de Parcours de la visualisation de la zone de travail dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-guide-to-journey-canvas-visualization-in-adobe-customer/ba-p/737857)
 

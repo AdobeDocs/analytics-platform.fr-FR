@@ -7,7 +7,7 @@ exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
 source-git-commit: fb7e0e911de2a4a702d6069ca2f53d7769ec608b
 workflow-type: tm+mt
 source-wordcount: '500'
-ht-degree: 79%
+ht-degree: 83%
 
 ---
 
@@ -61,7 +61,7 @@ Maintenant que vous avez créé un projet Workspace vierge, assurez-vous de conn
 >[!CONTEXTUALHELP]
 >id="workspace_project_commenting"
 >title="Autoriser les commentaires"
->abstract="Lorsqu’elle est activée, une zone de commentaires est disponible dans le rail de droite du projet dans Analysis Workspace."
+>abstract="Lorsque ce paramètre est activé, une zone de commentaires est disponible dans le rail de droite du projet dans Analysis Workspace."
 
 
 Les paramètres du projet fournissent des informations sur le projet actif au niveau du projet.
