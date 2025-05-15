@@ -174,7 +174,7 @@ Utilisez un menu contextuel sur n’importe quel nœud de la visualisation Flux 
 | **[!UICONTROL Exclure un élément]** ou **[!UICONTROL Restaurer les éléments exclus]** | Supprime un nœud donné de la colonne et le transforme automatiquement en filtre en haut de la colonne. Pour restaurer l’élément exclu, sélectionnez **[!UICONTROL Restaurer un élément exclu]** dans le menu contextuel. vous pouvez également ouvrir le segment en haut de la colonne et supprimer le rectangle contenant l’élément que vous venez d’exclure. |
 | **[!UICONTROL Tendance]** | Permet de créer un diagramme de tendance pour le nœud. |
 | **[!UICONTROL Afficher la colonne suivante]**/**[!UICONTROL Afficher la colonne précédente]** | Affiche la colonne suivante (à droite) ou précédente (à gauche) de la visualisation. |
-| **[!UICONTROL Masquer la colonne]**n | Masque la colonne sélectionnée dans la visualisation. |
+| **[!UICONTROL Masquer la colonne]**&#x200B;n | Masque la colonne sélectionnée dans la visualisation. |
 | **[!UICONTROL Développer toute la colonne]** | Permet de développer une colonne pour afficher tous les nœuds. Par défaut, seuls les cinq premiers nœuds sont présentés. |
 | **[!UICONTROL Créer une audience à partir de la sélection]** | Crée une audience en fonction de la colonne sélectionnée. |
 | **[!UICONTROL Réduire toute la colonne]** | Permet de masquer tous les nœuds d’une colonne. |

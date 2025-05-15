@@ -51,7 +51,7 @@ ht-degree: 90%
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente la visualisation Zone de travail de parcours dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**.<br/>Il n’existe aucune visualisation équivalente dans **Adobe Analytics**._
+_Cet article présente la visualisation Zone de travail de parcours dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**.<br/>Il n’existe aucune visualisation équivalente dans **Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
