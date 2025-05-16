@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 720751130d0f66bddffd13c6f160a85fcc7a7206
+source-git-commit: 7c293f2ab0f46695a53572d1231fb866a23688cd
 workflow-type: tm+mt
-source-wordcount: '1223'
-ht-degree: 83%
+source-wordcount: '1225'
+ht-degree: 84%
 
 ---
 
@@ -199,7 +199,7 @@ ht-degree: 83%
          + [Vue d’ensemble](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
          + [Configurer](../analysis-workspace/visualizations/cohort-table/t-cohort.md)
          + [Cas d’utilisation](../analysis-workspace/visualizations/cohort-table/cohort-use-cases.md)
-      + Abandons {#fallout}
+      + Abandon {#fallout}
          + [Vue d’ensemble](../analysis-workspace/visualizations/fallout/fallout-flow.md)
          + [Configurer](../analysis-workspace/visualizations/fallout/configuring-fallout.md)
          + [Abandons interdimensionnels](../analysis-workspace/visualizations/fallout/configuring-interdimensional-fallout.md)
@@ -307,7 +307,7 @@ ht-degree: 83%
    + [Utiliser des composants dans Analysis Workspace](../components/use-components-in-workspace.md)
    + [Ajouter des descriptions des composants](../components/add-component-descriptions.md)
    + Annotations {#annotations}
-      + [Aperçu des annotations](../components/annotations/overview.md)
+      + [Vue d’ensemble des annotations](../components/annotations/overview.md)
       + [Création d’annotations](../components/annotations/create-annotations.md)
       + [Gestion des annotations](../components/annotations/manage-annotations.md)
       + [Affichage des annotations](../components/annotations/view-annotations.md)
@@ -411,6 +411,7 @@ ht-degree: 83%
    + [Groupement basé sur les graphes](/help/stitching/gbs.md)
    + [Utilisation du groupement](/help/stitching/use-stitching.md)
    + [Créer et gérer de jeux de données groupés](/help/stitching/stitching-ui.md)
+   + [Valider le groupement](/help/stitching/validate.md)
    + [Questions fréquentes](/help/stitching/faq.md)
 
 + Intégrations Adobe {#integrations}
