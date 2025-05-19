@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: b9b73926-6502-4a48-ba73-c784f80950d3
-source-git-commit: 3b402e367d2385b336c84ef52897ab34387a948d
+source-git-commit: a37542e4df80048c0750964bb979d77625813ebe
 workflow-type: tm+mt
 source-wordcount: '1181'
 ht-degree: 0%
@@ -117,3 +117,4 @@ L’essentiel à retenir de cet article est que ce type de validation et d’ana
 * Autorisez les décisions basées sur les données concernant la stratégie d’authentification et l’optimisation.
 
 Ces mesures donnent aux parties prenantes une vue d’ensemble complète de la manière dont l’assemblage de Customer Journey Analytics affecte les taux de succès de l’authentification et les performances globales d’identification des personnes.
+
