@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: a04c74ab-606e-45a9-a3e4-0d476c8d2426
-source-git-commit: 7cd0bd94ec45b1570d0be765d95b25defa3e1b87
+source-git-commit: dd285caa3d9702d3ddccdba2bc656767a9fe4684
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 9%
@@ -14,11 +14,11 @@ ht-degree: 9%
 
 # Utilisation du groupement
 
-Une fois que votre organisation remplit toutes les [conditions préalables](#prerequisites) et comprend les limites communes [limitations](#limitations) et les limites spécifiques aux méthodes de groupement ([basées sur les champs](#limitations-1) et [basées sur les graphiques](#limitations-2)), vous pouvez suivre les étapes suivantes pour commencer à utiliser le groupement dans Customer Journey Analytics.
+Une fois que votre organisation remplit toutes les [conditions préalables](overview.md#prerequisites) et comprend les limites communes [limitations](overview.md#limitations) et les limites spécifiques aux méthodes de groupement ([basées sur les champs](fbs.md#limitations) et [basées sur les graphiques](gbs.md#limitations)), vous pouvez suivre les étapes suivantes pour commencer à utiliser le groupement dans Customer Journey Analytics.
 
 ## Sélectionner des options
 
-Le package Customer Journey Analytics auquel vous avez droit détermine les méthodes de groupement disponibles, les options pour la durée de renvoi initiale, l’intervalle de recherche en amont, la fréquence de relecture et le nombre maximal de jeux de données autorisés pour le groupement. Voir la description du produit [Customer Journey Analytics](https://helpx.adobe.com/fr/legal/product-descriptions/customer-journey-analytics.html?lang=fr) pour plus d’informations. Déterminez les options disponibles avant de demander de l’aide.
+Le package Customer Journey Analytics auquel vous avez droit détermine les méthodes de groupement disponibles, les options pour la durée de renvoi initiale, l’intervalle de recherche en amont, la fréquence de relecture et le nombre maximal de jeux de données autorisés pour le groupement. Voir la description du produit [Customer Journey Analytics](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html?lang=fr) pour plus d’informations. Déterminez les options disponibles avant de demander de l’aide.
 
 | | Customer Journey Analytics<br/>Select | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>Ultimate |
 |---|---|---|---|
