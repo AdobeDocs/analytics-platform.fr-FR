@@ -4,11 +4,10 @@ description: Validation du groupement
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
-hide: true
-hidefromtoc: true
-source-git-commit: 7c293f2ab0f46695a53572d1231fb866a23688cd
+exl-id: b9b73926-6502-4a48-ba73-c784f80950d3
+source-git-commit: 3b402e367d2385b336c84ef52897ab34387a948d
 workflow-type: tm+mt
-source-wordcount: '1164'
+source-wordcount: '1181'
 ht-degree: 0%
 
 ---
@@ -29,7 +28,7 @@ Bien que ces méthodes d’analyse puissent être utilisées pour le groupement 
 
 >[!NOTE]
 >
->Cet article ne traite pas de la valeur globale d’une configuration Customer Journey Analytics dans laquelle tous les jeux de données d’Experience Platform sont alignés sur le même espace de noms d’identité. Et que tous ces jeux de données sont joliment associés pour effectuer une analyse sur l’ensemble d’un parcours client.
+>L’assemblage (validation de) d’un ou de plusieurs jeux de données contribue finalement à une meilleure analyse et à de meilleures informations. Cependant, cet article ne traite pas de la valeur globale d’une configuration Customer Journey Analytics dans laquelle tous les jeux de données d’Experience Platform sont alignés sur le même espace de noms d’identité. Et que tous ces jeux de données sont joliment associés pour effectuer une analyse sur l’ensemble d’un parcours client.
 
 
 ## Conditions préalables relatives aux vues de données
@@ -88,7 +87,7 @@ Lorsque vous créez une connexion, vous devez définir le champ ou l’identité
 
 Vous souhaitez mesurer les performances d’identification avant et après le groupement. Pour ce faire, créez trois mesures calculées supplémentaires :
 
-1. Une mesure calculée **[!UICONTROL Taux d’authentification groupée]** qui calcule le nombre d’événements pour lesquels l’espace de noms groupé est défini sur l’identité souhaitée par rapport au nombre total d’événements. Lorsque vous avez configuré la vue de données, vous avez créé une mesure **[!UICONTROL Espace de noms d’e-mail assemblé]** qui incluait un filtre permettant de compter uniquement lorsqu’un événement a un espace de noms défini sur e-mail. La mesure calculée utilise cette mesure **[!UICONTROL Espace de noms d’e-mail assemblé]** pour fournir une indication du pourcentage des données qui possède l’identité souhaitée.
+1. Une mesure calculée **[!UICONTROL Taux d’authentification groupée]** qui calcule le nombre d’événements pour lesquels l’espace de noms groupé est défini sur l’identité souhaitée par rapport au nombre total d’événements. Lorsque vous avez configuré la vue de données, vous avez créé une mesure **[!UICONTROL Espace de noms d’e-mail assemblé]** qui incluait un filtre pour comptabiliser uniquement lorsqu’un événement a un espace de noms défini sur e-mail. La mesure calculée utilise cette mesure **[!UICONTROL Espace de noms d’e-mail assemblé]** pour fournir une indication du pourcentage des données qui possède l’identité souhaitée.
    ![Mesure calculée du taux d’authentification groupée](assets/calcmetric-stitchedauthenticationrate.png)
 
 1. Une mesure calculée **[!UICONTROL Augmentation en pourcentage]** qui calcule la variation en pourcentage brute entre le taux d’identification actuel et le taux assemblé.
