@@ -41,7 +41,7 @@ Avant d’utiliser le groupement, veillez à ce que votre organisation dispose d
 - Importez les données de votre choix dans Adobe Experience Platform :
 
    - Pour les données Adobe Analytics, voir [Utilisation des données de suite de rapports Adobe Analytics dans Customer Journey Analytics](/help/getting-started/aa-vs-cja/aa-data-in-cja.md).
-   - Pour d’autres types de données, consultez [Créer un schéma](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui) et [Ingérer des données](https://experienceleague.adobe.com/fr/docs/experience-platform/ingestion/home) dans la documentation d’Adobe Experience Platform.
+   - Pour d’autres types de données, consultez [Créer un schéma](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/tutorials/create-schema-ui) et [Ingérer des données](https://experienceleague.adobe.com/fr/docs/experience-platform/ingestion/home) dans la documentation d’Adobe Experience Platform.
 
 L’analyse cross-canal vous est utile si vous combinez un ou plusieurs de vos jeux de données groupés avec d’autres jeux de données, tels que les données de centre d’appels, dans le cadre de la définition de votre connexion Customer Journey Analytics. Cette configuration de connexion suppose que ces autres jeux de données contiennent déjà un ID de personne sur chaque ligne, similaire à l’ID assemblé.
 
@@ -55,7 +55,7 @@ L’analyse cross-canal vous est utile si vous combinez un ou plusieurs de vos j
 >
 >- Si vous supprimez le jeu de données source, le jeu de données assemblé cesse le traitement et est supprimé par le système.
 >
->- Les libellés d’utilisation des données ne sont pas automatiquement propagés au schéma du jeu de données groupé. Si des libellés d’utilisation des données sont appliqués au schéma du jeu de données source, vous devez appliquer manuellement ces libellés d’utilisation des données au schéma du jeu de données assemblé. Consultez [ Gestion des libellés d’utilisation des données dans Experience Platform ](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview) pour plus d’informations.
+>- Les libellés d’utilisation des données ne sont pas automatiquement propagés au schéma du jeu de données groupé. Si des libellés d’utilisation des données sont appliqués au schéma du jeu de données source, vous devez appliquer manuellement ces libellés d’utilisation des données au schéma du jeu de données assemblé. Consultez [ Gestion des libellés d’utilisation des données dans Experience Platform ](https://experienceleague.adobe.com/fr/docs/experience-platform/data-governance/labels/overview) pour plus d’informations.
 
 L’assemblage est une fonctionnalité innovante et robuste, mais son utilisation a ses limites.
 
