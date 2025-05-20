@@ -8,7 +8,7 @@ role: User
 source-git-commit: 9482dd11ecf4aa6f3f8a45c90c3838a4a3389c73
 workflow-type: tm+mt
 source-wordcount: '2312'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -58,7 +58,7 @@ Procédez comme suit lors de l’export de tableaux complets vers le cloud :
 >[!CONTEXTUALHELP]
 >id="export-manifest"
 >title="Fichier de manifeste "
->abstract="Lorsqu’il est activé, un fichier manifeste est inclus dans toute diffusion d’exportation réussie. Le fichier manifeste vous permet de confirmer que tous les fichiers ont bien été livrés."
+>abstract="Lorsqu’il est activé, un fichier de manifeste est inclus dans toute diffusion d’export réussie. Le fichier de manifeste vous permet de confirmer que tous les fichiers ont bien été diffusés."
 
 <!-- markdownlint-enable MD034 -->
 
