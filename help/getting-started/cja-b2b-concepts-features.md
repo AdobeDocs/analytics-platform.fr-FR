@@ -6,9 +6,9 @@ feature: Basics
 role: User, Admin
 badgePremium: label="B2B edition"
 exl-id: df2cc922-d214-49b9-8fdb-443cc1dac05b
-source-git-commit: be617c59cd2fced0031fda1130b86e638bee8f68
+source-git-commit: 6bfd54148736d4b3434eac3ee3aa6fc8a838d57a
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1470'
 ht-degree: 2%
 
 ---
@@ -33,7 +33,7 @@ Dans Customer Journey Analytics B2B edition, vous pouvez choisir entre une conne
 
 ## Conteneurs
 
-Dans Customer Journey Analytics, les conteneurs sont générés dans le cadre de la configuration d’une connexion et d’une vue de données. Les conteneurs stockent des groupes d’identifiants pour faciliter l’exécution rapide et performante de fonctionnalités telles que la segmentation, les répartitions, etc.
+Dans Customer Journey Analytics, les conteneurs sont générés dans le cadre de la configuration d’une connexion et d’une vue de données et fournissent une structure et une portée des données. Les conteneurs stockent des groupes d’identifiants pour séquencer tous les horodatages d’événement par des identifiants uniques. Ce stockage facilite l’exécution rapide et performante des fonctionnalités telles que la segmentation, l’attribution et les visualisations.
 
 ### Conteneurs standard
 
@@ -64,6 +64,23 @@ La hiérarchie et les relations entre les conteneurs sont prédéterminées. L�
 >
 >* Si vous avez **activé** le conteneur Compte global dans une connexion basée sur un compte, chaque enregistrement de vos jeux de données d’événement doit contenir un identifiant de compte et un identifiant de compte global. Dans le cas contraire, l’enregistrement est ignoré.
 >* Si vous n’avez **pas activé** le conteneur Compte global dans une connexion basée sur un compte, chaque enregistrement de vos jeux de données d’événement doit contenir un identifiant de compte. Dans le cas contraire, l’enregistrement est ignoré.
+
+Vous pouvez utiliser les conteneurs B2B pour des fonctionnalités B2B spécifiques dans Analysis Workspace :
+
+* **Segmentation** : les conteneurs de segments [B2B](/help/components/filters/filters-overview.md#b2b-containers) vous permettent de créer des segments avec une portée de conteneur allant au-delà des personnes, des sessions ou des événements. Par exemple : un segment Comptes avec enregistrement d’événement ou un segment Comptes américains avec groupes d’achats et opportunités d’étape 5 .
+
+  >[!NOTE]
+  >
+  >Les données d’événement B2B dans une configuration basée sur un compte dans Customer Journey Analytics B2B edition peuvent contenir des lignes de données sans personne ni session. Par exemple : une ligne qui détaille la progression de l’étape d’opportunité. Lorsque vous évaluez votre segment, gardez à l’esprit que les personnes et les sessions peuvent ne plus être les bons critères.
+  >
+
+* **Attribution** : vous pouvez utiliser les nouveaux conteneurs B2B dans [panneau d’attribution](/help/analysis-workspace/c-panels/attribution.md), dans [paramètres des composants d’attribution](/help/data-views/component-settings/attribution.md), dans [mesures calculées](/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md) ou dans [colonnes d’un tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md). Les recherches en amont de comptes sont étendues à 13 mois.
+
+* **Visualisations** : les visualisations [Abandon](/help/analysis-workspace/visualizations/fallout/fallout-flow.md), [Flux](/help/analysis-workspace/visualizations/c-flow/flow.md), [Zone de travail de Parcours ](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) et [Tableau de cohorte](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) prennent en charge les nouveaux conteneurs B2B. Par exemple : vous pouvez utiliser les nouveaux conteneurs pour comprendre comment les groupes d’achats consomment du contenu ou comment les cohortes d’opportunités se rapprochent de la conclusion d’une vente.
+Vous pouvez également définir le conteneur par défaut pour ces visualisations dans les [préférences utilisateur](/help/analysis-workspace/user-preferences.md#visualizations-preferences).
+
+Les segments, l’attribution et les visualisations ainsi que les conteneurs B2B vous aident à obtenir des analyses et des informations B2B approfondies.
+
 
 ## Jeux de données
 
