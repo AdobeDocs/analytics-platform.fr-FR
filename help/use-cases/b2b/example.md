@@ -14,9 +14,9 @@ ht-degree: 11%
 
 # Exemple de projet B2B basé sur les personnes
 
-Cet article illustre un cas d’utilisation dans lequel vous souhaitez générer correctement des rapports dans Customer Journey Analytics sur les données de personne dans le contexte d’une configuration B2B standard basée sur la personne. Une telle configuration est facilitée par le [B2B edition Real-Time CDP](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview).  Le cas d’utilisation explique comment configurer et générer des rapports sur les données B2B basées sur le niveau du profil (personne) dans Customer Journey Analytics.
+Cet article illustre un cas d’utilisation dans lequel vous souhaitez générer correctement des rapports dans Customer Journey Analytics sur les données de personne dans le contexte d’une configuration B2B standard basée sur la personne. Une telle configuration est facilitée par le [B2B edition Real-Time CDP](https://experienceleague.adobe.com/fr/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview).  Le cas d’utilisation explique comment configurer et générer des rapports sur les données B2B basées sur le niveau du profil (personne) dans Customer Journey Analytics.
 
-[!BADGE B2B edition &#x200B;]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} une section distincte pour les cas d’utilisation de création de rapports basés sur les comptes est publiée avec la version de [Customer Journey Analytics B2B edition](/help/getting-started/cja-b2b-edition.md).
+[!BADGE B2B edition &#x200B;]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} une section distincte pour les cas d’utilisation de création de rapports basés sur les comptes est publiée avec la version de [Customer Journey Analytics B2B edition](/help/getting-started/cja-b2b-edition.md).
 
 ## Connexion
 
@@ -43,7 +43,7 @@ Définissez votre connexion pour inclure tous les jeux de données B2B pertinent
 -->
 
 
-La relation entre les schémas de recherche B2B, le schéma de profil et le schéma d’événement est définie dans la configuration B2B d’Experience Platform. Voir Schémas dans [Real-Time Customer Data Platform B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/schemas/b2b) et [Définir une relation multiple-à-un entre deux schémas dans Real-Time Customer Data Platform B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/relationship-b2b).
+La relation entre les schémas de recherche B2B, le schéma de profil et le schéma d’événement est définie dans la configuration B2B d’Experience Platform. Voir Schémas dans [Real-Time Customer Data Platform B2B edition](https://experienceleague.adobe.com/fr/docs/experience-platform/rtcdp/schemas/b2b) et [Définir une relation multiple-à-un entre deux schémas dans Real-Time Customer Data Platform B2B edition](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/tutorials/relationship-b2b).
 
 
 Pour garantir une configuration appropriée d’une connexion qui prend en charge les recherches basées sur la personne de vos données B2B, utilisez l’illustration suivante pour obtenir un aperçu et procédez comme suit :
