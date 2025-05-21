@@ -6,14 +6,18 @@ feature: Use Cases
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: d0268ce9ba22228c5c42d600c173f39cd1001638
+badgePremium: label="B2B edition"
+exl-id: f5294af8-b8dc-4239-b0f7-5c20d39007ee
+source-git-commit: f66df039c56fc1df3fb0e102745f500a3782d26d
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '277'
 ht-degree: 2%
 
 ---
 
 # Développer les comptes clés
+
+{{draft-b2b}}
 
 La croissance et la conservation des comptes clés est une priorité majeure pour les entreprises B2B. Pour garantir la progression des transactions, vous devez impérativement communiquer au bon moment avec les principales parties prenantes de vos comptes cibles.
 
@@ -51,4 +55,3 @@ Cas d’utilisation ![B2B - croissance des comptes clés - collaboration - parta
 1. [Alertes intelligentes](/help/components/c-intelligent-alerts/intelligent-alerts.md)
 1. [Partager avec des utilisateurs de l’espace de travail ou avec tout le monde](/help/analysis-workspace/curate-share/share-projects.md)
 1. [Commentaires](/help/analysis-workspace/build-workspace-project/comment-projects.md)
-

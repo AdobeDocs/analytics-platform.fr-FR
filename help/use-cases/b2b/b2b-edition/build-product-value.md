@@ -6,14 +6,18 @@ feature: Use Cases
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: d0268ce9ba22228c5c42d600c173f39cd1001638
+badgePremium: label="B2B edition"
+exl-id: 509c68e1-a8cc-48ac-9e9d-50c703356dbc
+source-git-commit: f66df039c56fc1df3fb0e102745f500a3782d26d
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
 
 # Créer la valeur du produit
+
+{{draft-b2b}}
 
 Vous souhaitez fournir des informations sur la valeur des produits B2B aux chefs de produit et aux CMO ou aux PDG. Par exemple, par le biais d’une analyse ou de prédictions de résiliation pilotées par les données. Et de rendre ces informations digestibles via des tableaux de bord mobiles.
 
@@ -61,5 +65,3 @@ Vous souhaitez créer une carte de performance mobile qui combine des détails s
 1. Utilisez **[!UICONTROL Aperçu]** pour prévisualiser le tableau de bord. Le tableau de bord est désormais disponible dans l’application de tableau de bord Adobe Analytics, disponible dans [App Store](https://apps.apple.com/us/app/adobe-analytics-dashboards/id1509062264) ou [Google Play](https://play.google.com/store/apps/details?id=com.adobe.analyticsdashboards).
 
    Cas d’utilisation ![B2B - Créer de la valeur pour le produit - Démocratiser les informations - Aperçu de la carte de performance mobile](assets/b2b-uc-build-product-value-mobile-scorecard-preview.png)
-
-
