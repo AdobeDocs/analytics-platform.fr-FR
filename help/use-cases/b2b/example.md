@@ -16,7 +16,7 @@ ht-degree: 11%
 
 Cet article illustre un cas d’utilisation dans lequel vous souhaitez générer correctement des rapports dans Customer Journey Analytics sur les données de personne dans le contexte d’une configuration B2B standard basée sur la personne. Une telle configuration est facilitée par le [B2B edition Real-Time CDP](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview).  Le cas d’utilisation explique comment configurer et générer des rapports sur les données B2B basées sur le niveau du profil (personne) dans Customer Journey Analytics.
 
-[!BADGE B2B edition ]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} une section distincte pour les cas d’utilisation de création de rapports basés sur les comptes est publiée avec la version de [Customer Journey Analytics B2B edition](/help/getting-started/cja-b2b-edition.md).
+[!BADGE B2B edition &#x200B;]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} une section distincte pour les cas d’utilisation de création de rapports basés sur les comptes est publiée avec la version de [Customer Journey Analytics B2B edition](/help/getting-started/cja-b2b-edition.md).
 
 ## Connexion
 
@@ -62,14 +62,14 @@ Pour garantir une configuration appropriée d’une connexion qui prend en charg
    |---|---|---|---| 
    | Jeu De Données D’Activité B2B | SourceKey <br/>**personKey.sourceKey** | | |
    | Jeu De Données De Personnes B2B | SourceKey <br/>**b2b.personKey.sourceKey** | | |
-   | Jeu De Données De Compte B2B | | SourceKey <br/>**accountKey.sourceKey**❶ | SourceKey<br>(Jeu de données de personne B2B)<br/>**b2b.accountKey.sourceKey**❶ |
-   | Jeu de données d’opportunité B2B | | Source Key <br/>**opportunitéKey.sourceKey**❷ | SourceKey<br/>(jeu de données de relation d’opportunité B2B)<br/>**opportunitéKey.sourceKey**❷ |
-   | Jeu De Données De Campagne B2B | | SourceKey <br/>**campaignKey.sourceKey**❸ | SourceKey<br/>(jeu de données de membre de campagne B2B)<br/>**campaignKey.sourceKey**❸<br/> |
-   | Jeu De Données De Liste Marketing B2B | | SourceKey <br/>**marketingListKey.sourceKey**❹ | SourceKey<br/>(jeu de données de membre de la liste marketing B2B)<br/>**marketingListKey.sourceKey**❹ |
-   | Jeu De Données Relation Personne-Compte B2B | | SourceKey <br/>**personKey.sourceKey**❺ | Clé Source<br/>(jeux de données d’événements)<br/>**personKey.sourceKey**❺ |
-   | Jeu De Données De Relation De La Personne Avec L’Opportunité B2B | | SourceKey <br/>**personKey.sourceKe** y❻ | Clé Source<br/>(jeux de données d’événements)<br/>**personKey.sourceKey**❻ |
-   | Jeu De Données De Membre De Campagne B2B | | SourceKey <br/>**personKey.sourceKey**❼ | Clé Source<br/>(jeux de données d’événements)<br/>**personKey.sourceKey**❼ |
-   | Jeu De Données De Membre De La Liste Marketing B2B | | SourceKey <br/>**personKey.sourceKey**❽ | Clé Source<br/>(jeux de données d’événements)<br/>**personKey.sourceKey**❽ |
+   | Jeu De Données De Compte B2B | | SourceKey <br/>**accountKey.sourceKey**&#x200B;❶ | SourceKey<br>(Jeu de données de personne B2B)<br/>**b2b.accountKey.sourceKey**&#x200B;❶ |
+   | Jeu de données d’opportunité B2B | | Source Key <br/>**opportunitéKey.sourceKey**&#x200B;❷ | SourceKey<br/>(jeu de données de relation d’opportunité B2B)<br/>**opportunitéKey.sourceKey**&#x200B;❷ |
+   | Jeu De Données De Campagne B2B | | SourceKey <br/>**campaignKey.sourceKey**&#x200B;❸ | SourceKey<br/>(jeu de données de membre de campagne B2B)<br/>**campaignKey.sourceKey**&#x200B;❸<br/> |
+   | Jeu De Données De Liste Marketing B2B | | SourceKey <br/>**marketingListKey.sourceKey**&#x200B;❹ | SourceKey<br/>(jeu de données de membre de la liste marketing B2B)<br/>**marketingListKey.sourceKey**&#x200B;❹ |
+   | Jeu De Données Relation Personne-Compte B2B | | SourceKey <br/>**personKey.sourceKey**&#x200B;❺ | Clé Source<br/>(jeux de données d’événements)<br/>**personKey.sourceKey**&#x200B;❺ |
+   | Jeu De Données De Relation De La Personne Avec L’Opportunité B2B | | SourceKey <br/>**personKey.sourceKe** y❻ | Clé Source<br/>(jeux de données d’événements)<br/>**personKey.sourceKey**&#x200B;❻ |
+   | Jeu De Données De Membre De Campagne B2B | | SourceKey <br/>**personKey.sourceKey**&#x200B;❼ | Clé Source<br/>(jeux de données d’événements)<br/>**personKey.sourceKey**&#x200B;❼ |
+   | Jeu De Données De Membre De La Liste Marketing B2B | | SourceKey <br/>**personKey.sourceKey**&#x200B;❽ | Clé Source<br/>(jeux de données d’événements)<br/>**personKey.sourceKey**&#x200B;❽ |
 
 {style="table-layout:auto"}
 
