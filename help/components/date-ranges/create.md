@@ -7,7 +7,7 @@ role: User
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '533'
-ht-degree: 76%
+ht-degree: 97%
 
 ---
 
@@ -18,11 +18,11 @@ Tout le monde peut créer une période personnalisée. Pour créer une période,
 
 ![Création d’une annotation](assets/create-date-range.png)
 
-* **A** - Dans l’interface principale, sélectionnez **[!UICONTROL Composants]** puis **[!UICONTROL Période]**. Sélectionnez ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Ajouter]** dans le [[!UICONTROL gestionnaire de périodes]](/help/components/date-ranges/manage.md).
+* **A** - Dans l’interface principale, sélectionnez **[!UICONTROL Composants]**, puis **[!UICONTROL Période]**. Sélectionnez ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Ajouter]** dans le [[!UICONTROL gestionnaire de périodes]](/help/components/date-ranges/manage.md).
 * **B** - Dans un projet Workspace, dans le menu contextuel d’une visualisation, sélectionnez **[!UICONTROL Période personnalisée à cette période]**.
-* **C** - Dans un projet Workspace, sélectionnez **[!UICONTROL Composants]** dans le menu, puis sélectionnez **[!UICONTROL Créer une période]**
-* **D** - Dans un projet Workspace, utilisez le raccourci **[!UICONTROL ctrl+maj+d]** (Windows) ou **[!UICONTROL maj+commande+d]** (macOS).
-* **E** - Dans un projet Workspace, dans le panneau de gauche Composants , sélectionnez ![Ajouter](/help/assets/icons/Add.svg) à ![Calendrier](/help/assets/icons/Calendar.svg) **Périodes**.
+* **C** - Dans un projet Workspace, sélectionnez **[!UICONTROL Composants]** dans le menu, puis **[!UICONTROL Créer une période]**.
+* **D** - Dans un projet Workspace, utilisez le raccourci **[!UICONTROL Ctrl+Maj+D]** (Windows) ou **[!UICONTROL Shift+Commande+D]** (macOS).
+* **E** - Dans un projet Workspace, dans le panneau de gauche Composants, sélectionnez ![Ajouter](/help/assets/icons/Add.svg), puis ![Calendrier](/help/assets/icons/Calendar.svg) **Périodes**.
 * **F** - Dans une visualisation prise en charge, comme une visualisation en ligne, dans le menu contextuel d’un point de données, sélectionnez **[!UICONTROL Annoter la sélection]**.
 
 Pour définir la période, utilisez le [[!UICONTROL Créateur de périodes]](#annotation-builder) :

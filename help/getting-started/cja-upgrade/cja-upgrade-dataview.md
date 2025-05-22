@@ -8,7 +8,7 @@ exl-id: 832f3f9a-1836-43ac-8185-f22ae0ded3aa
 source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
 workflow-type: tm+mt
 source-wordcount: '401'
-ht-degree: 90%
+ht-degree: 95%
 
 ---
 
@@ -31,7 +31,7 @@ La création dʼune vue de données implique soit la création de mesures et de 
 
 Pour créer une vue de données, procédez comme suit :
 
-1. Connectez-vous à [Customer Journey Analytics](https://analytics.adobe.com) et sélectionnez **[!UICONTROL Vues de données]**, éventuellement à partir de **[!UICONTROL Gestion des données]**, dans le menu supérieur.
+1. Connectez-vous à [Customer Journey Analytics](https://analytics.adobe.com) et sélectionnez **[!UICONTROL Vues de données]**, éventuellement à partir de **[!UICONTROL Gestion des données]**, dans le menu supérieur.
 
 1. Sélectionnez **[!UICONTROL Créer une vue de données]**. Vous pouvez également sélectionner une vue de données existante dans la liste des vues de données pour la modifier.
 

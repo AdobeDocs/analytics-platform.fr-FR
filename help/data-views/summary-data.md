@@ -8,7 +8,7 @@ exl-id: 417443ae-a1ab-483b-a8fd-cff5ee8b6263
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '1147'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -154,5 +154,5 @@ Assurez-vous que les paramètres des composants pour un groupe de données de r�
 >[!MORELIKETHIS]
 >
 >- Consultez l’article [Utiliser des données de résumé](/help/use-cases/data-views/summary-data.md) pour obtenir un exemple de cas d’utilisation détaillé sur l’utilisation des données de résumé et la création de rapports les concernant.
->- Blog : [Comment les données récapitulatives améliorent les jeux de données Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-summary-data-enhances-adobe-customer-journey-analytics/ba-p/704635?profile.language=fr)
+>- Blog : [comment les données de résumé améliorent les jeux de données Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-summary-data-enhances-adobe-customer-journey-analytics/ba-p/704635)
 

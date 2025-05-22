@@ -7,13 +7,13 @@ role: User, Admin
 source-git-commit: be062e350a8c1989be41aeb2774471a3fe1bf524
 workflow-type: tm+mt
 source-wordcount: '435'
-ht-degree: 76%
+ht-degree: 87%
 
 ---
 
 # Vue d’ensemble de la publication des audiences
 
-Vous pouvez désormais créer et publier des audiences découvertes dans Customer Journey Analytics dans le [profil client en temps réel](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=fr) dans Adobe Experience Platform pour le ciblage et la personnalisation des clientes et clients.
+Vous pouvez désormais créer et publier des audiences découvertes dans Customer Journey Analytics dans le [profil client en temps réel](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html) dans Adobe Experience Platform pour le ciblage et la personnalisation des clientes et clients.
 
 La publication d’audiences offre un moyen clair d’activer et d’agir sur les informations trouvées dans Customer Journey Analytics. Ces actions peuvent inclure les éléments suivants :
 
@@ -31,7 +31,7 @@ Les audiences que vous créez dans Customer Journey Analytics ne doivent pas n
 
 **Audience** : un ensemble ou une liste d’identités ayant à la fois un espace de noms et un identifiant spécifique associé à cet espace de noms. Les audiences sont transportables à partir d’Adobe Experience Platform et des applications qui s’y trouvent (comme Customer Journey Analytics). Les audiences peuvent contenir des espaces de noms mixtes.
 
-**Segment** : ensemble de règles qui, lorsqu’elles sont évaluées sur un jeu de données pour une période donnée, produit un sous-ensemble de données. Un segment peut être utilisé dans le processus de création d’une audience lorsqu’il est associé à d’autres services de support. Les segments sont définis et conservés dans Customer Journey Analytics.
+**Segment** : un ensemble de règles qui, lorsqu’elles sont évaluées sur un ensemble de données pour une période donnée, produit un sous-ensemble de données. Un segment peut être utilisé dans le processus de création d’une audience lorsqu’il est associé à d’autres services de support. Les segments sont définis et conservés dans Customer Journey Analytics.
 
 ## Autorisations
 

@@ -7,7 +7,7 @@ role: User
 source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
 workflow-type: tm+mt
 source-wordcount: '313'
-ht-degree: 73%
+ht-degree: 93%
 
 ---
 
@@ -24,20 +24,20 @@ Voici une liste des limites connues dans Analysis Workspace et ses composants co
 
 ## Visualisations
 
-* Les visualisations qui tirent parti des segments, telles que [!UICONTROL Abandon], [!UICONTROL Flux], [!UICONTROL Cohorte] et [!UICONTROL Histogramme], ne peuvent pas accepter les mesures calculées en tant qu’entrées.
+* Les visualisations qui tirent parti des segments, par exemple [!UICONTROL Abandons], [!UICONTROL Flux], [!UICONTROL Cohorte] et [!UICONTROL Histogramme], ne peuvent pas accepter les mesures calculées en tant qu’entrées.
 * [!UICONTROL Flux] : les dimensions d’entrée/de sortie, comme la [!UICONTROL page d’entrée], ne peuvent pas être utilisées dans Flux.
 * [!UICONTROL Cohorte] : Les nombres non entiers ne peuvent pas être utilisés comme critères Cohorte.
 
 ## Segments
 
-* Certaines mesures et dimensions ne peuvent pas être segmentées, comme [!UICONTROL Événements], [!UICONTROL Personnes], etc.
-* Les segments ad hoc créés dans la [zone de dépôt du panneau](/help/analysis-workspace/c-panels/panels.md) sont un type de segment rapide. Elles n’apparaissent pas dans le panneau de gauche de Workspace ou du gestionnaire de segments, sauf si elles sont rendues publiques. Pour en savoir plus, voir [Segments rapides](/help/components/filters/quick-filters.md).
+* Certaines mesures et dimensions ne peuvent pas être filtrées, comme [!UICONTROL Événements], [!UICONTROL Personnes], etc.
+* Les segments ad hoc créés dans la [zone de dépôt du panneau](/help/analysis-workspace/c-panels/panels.md) sont un type de segment rapide. Elles n’apparaissent pas dans le panneau de gauche de Workspace ou du gestionnaire de segments, sauf si elles sont rendues publiques. Pour en savoir plus, consultez [Segments rapides](/help/components/filters/quick-filters.md).
 
 ## Mesures calculées
 
 * Il n’est pas possible d’utiliser les mesures calculées dans certaines visualisations. Consultez [Visualisations](#visualizations).
 * Les mesures calculées ne peuvent pas être utilisées dans le panneau [!UICONTROL Attribution], car elles peuvent inclure elles-mêmes des modèles d’attribution distincts.
-* Certains composants et opérateurs ne sont pas disponibles si une mesure calculée est créée à partir de Workspace (contrairement à une création à partir de [!UICONTROL Composants > segments]). Par exemple, [!UICONTROL Adresse IP].
+* Certains composants et opérateurs ne sont pas disponibles si une mesure calculée est créée à partir de Workspace (contrairement à une création à partir de [!UICONTROL Composants > Segments]). Par exemple, [!UICONTROL Adresse IP].
 
 ## Périodes
 

@@ -7,7 +7,7 @@ role: User
 source-git-commit: 9a15cb4d771892ff656fe72b8e53d890a3fd99f7
 workflow-type: tm+mt
 source-wordcount: '844'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -17,7 +17,7 @@ Les tableaux à structure libre dans Analysis Workspace sont la base de l’ana
 
 <!--The following video covers filter and sort options in Analysis Workspace, in addition to pagination options:
 
->[!VIDEO](https://video.tv.adobe.com/v/327341?captions=fre_fr)-->
+>[!VIDEO](https://video.tv.adobe.com/v/23968)-->
 
 ## Filtrer des tableaux
 

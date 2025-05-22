@@ -7,7 +7,7 @@ role: User
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '5247'
-ht-degree: 89%
+ht-degree: 99%
 
 ---
 
@@ -21,7 +21,7 @@ Accédez à ces fonctions en sélectionnant **[!UICONTROL Tout afficher]** ci-de
 
 Une fonction de tableau consiste à ce que la sortie soit la même pour chaque ligne du tableau. Une fonction de ligne consiste à ce que la sortie soit différente pour chaque ligne du tableau.
 
-Le cas échéant, une fonction est annotée avec le type de fonction : [!BADGE Tableau]{type="Neutral"} ou [!BADGE Ligne]{type="Neutral"}
+Le cas échéant et lorsque c’est utile, une fonction est annotée avec le type de fonction : [!BADGE Tableau]{type="Neutral"} ou [!BADGE Ligne]{type="Neutral"}.
 
 ## Que signifie le paramètre d’inclusion de zéros ?
 
@@ -59,14 +59,14 @@ Conjonction. Non égal à zéro est considéré comme true et égal à zéro est
 >[!CONTEXTUALHELP]
 >id="functions-count-distinct-metric"
 >title="Nombre distinct approximatif"
->abstract="Renvoie le nombre distinct approximatif d’éléments de dimension pour la dimension sélectionnée."
+>abstract="Renvoie le nombre approximatif d’éléments distincts pour la dimension sélectionnée."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL NOMBRE APPROXIMATIF DISTINCT(dimension)]**
 
 
-Renvoie le nombre distinct approximatif d’éléments de dimension pour la dimension sélectionnée.
+Renvoie le nombre approximatif d’éléments distincts pour la dimension sélectionnée.
 
 
 | Argument | Description |
@@ -93,7 +93,7 @@ Un cas d’utilisation courant de cette fonction est lorsque vous souhaitez obte
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL ARC COSINUS(mesure)]**
 
 
-[!BADGE Ligne]{type="Neutral"} Renvoie l’arccosinus, ou l’inverse du cosinus, d’une mesure. L’arc cosinus d’un nombre est l’angle dont le cosinus vaut ce nombre. L’angle renvoyé est donné en radians dans la plage 0 (zéro) à pi. Si vous souhaitez convertir le résultat de radians en degrés, multipliez-le par 180/PI().
+[!BADGE Ligne]{type="Neutral"} Renvoie l’arc cosinus, ou l’inverse du cosinus, d’une mesure. L’arc cosinus d’un nombre est l’angle dont le cosinus vaut ce nombre. L’angle renvoyé est donné en radians dans la plage 0 (zéro) à pi. Si vous souhaitez convertir le résultat de radians en degrés, multipliez-le par 180/PI().
 
 
 | Argument | Description |
@@ -116,7 +116,7 @@ Un cas d’utilisation courant de cette fonction est lorsque vous souhaitez obte
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL ARC SINUS(mesure)]**
 
 
-[!BADGE Ligne]{type="Neutral"} renvoie l’arc sinus, ou sinus inverse, d’un nombre. L’arc sinus d’un nombre est l’angle dont le sinus est un nombre. L’angle renvoyé est donné en radians dans la plage -pi/2 à pi/2. Pour exprimer l&#39;arcsinus en degrés, multipliez le résultat par 180/PI().
+[!BADGE Ligne]{type="Neutral"} Renvoie l’arc sinus, ou le sinus inverse, d’un nombre. L’arc sinus d’un nombre est l’angle dont le sinus est un nombre. L’angle renvoyé est donné en radians dans la plage -pi/2 à pi/2. Pour exprimer l’arc sinus en degrés, multipliez le résultat par 180/PI().
 
 
 | Argument | Description |
@@ -139,7 +139,7 @@ Un cas d’utilisation courant de cette fonction est lorsque vous souhaitez obte
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL ARC TANGENTE(mesure)]**
 
 
-[!BADGE Ligne]{type="Neutral"} renvoie l’arctangente, ou tangente inverse, d’un nombre. L’arc tangente d’un nombre est l’angle dont la tangente est un nombre. L’angle renvoyé est donné en radians dans la plage -pi/2 à pi/2. Pour exprimer l’arc tangente en degrés, multipliez le résultat par 180/PI().
+[!BADGE Ligne]{type="Neutral"} Renvoie l’arc tangente, ou la tangente inverse, d’un nombre. L’arc tangente d’un nombre est l’angle dont la tangente est un nombre. L’angle renvoyé est donné en radians dans la plage -pi/2 à pi/2. Pour exprimer l’arc tangente en degrés, multipliez le résultat par 180/PI().
 
 
 | Argument | Description |
@@ -155,13 +155,13 @@ Un cas d’utilisation courant de cette fonction est lorsque vous souhaitez obte
 >[!CONTEXTUALHELP]
 >id="functions-cdf-t"
 >title="Cdf-T"
->abstract="Renvoie la probabilité qu’une variable aléatoire avec une loi de Student-t à n degrés de liberté ait un score z inférieur à col."
+>abstract="Renvoie la probabilité qu’une variable aléatoire avec une loi de Student t à n degrés de liberté ait un score z inférieur à col."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL CDF-T(mesure, nombre)]**
 
-Renvoie la probabilité qu’une variable aléatoire avec une loi de Student-t à n degrés de liberté ait un score z inférieur à col.
+Renvoie la probabilité qu’une variable aléatoire avec une loi de Student t à n degrés de liberté ait un score z inférieur à col.
 
 | Argument | Description |
 |---|---|
@@ -215,13 +215,13 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-ceil"
 >title="Plafond"
->abstract="Renvoie l’entier le plus petit, non inférieur à une valeur donnée. Par exemple, si vous souhaitez éviter de rapporter les décimales de devise pour les recettes et qu’un produit a une recette de 569,34 $, utilisez la formule CEILING(Revenue) pour arrondir la recette au dollar le plus proche, soit 570 $."
+>abstract="Renvoie l’entier le plus petit, non inférieur à une valeur donnée. Par exemple, si vous souhaitez éviter de rapporter les décimales de devise pour le chiffre d’affaires et qu’un produit génère 569,34 $, utilisez la formule CEILING(Revenue) pour arrondir le chiffre d’affaires au dollar le plus proche, soit 570 $."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL PLAFOND(mesure)]**
 
-[!BADGE Ligne]{type="Neutral"} Renvoie le plus petit entier non inférieur à une valeur donnée. Par exemple, si vous souhaitez éviter de rapporter les décimales de devise pour les recettes et qu’un produit a une recette de 569,34 $, utilisez la formule CEILING(Revenue) pour arrondir la recette au dollar le plus proche, soit 570 $.
+[!BADGE Ligne]{type="Neutral"} Renvoie l’entier le plus petit, non inférieur à une valeur donnée. Par exemple, si vous souhaitez éviter de rapporter les décimales de devise pour le chiffre d’affaires et qu’un produit génère 569,34 $, utilisez la formule CEILING(Revenue) pour arrondir le chiffre d’affaires au dollar le plus proche, soit 570 $.
 
 | Argument | Description |
 |---|---|
@@ -260,7 +260,7 @@ Le degré de confiance est une mesure probabiliste de l’ampleur des preuves su
 >[!CONTEXTUALHELP]
 >id="functions-waskr-confidence-interval-lower"
 >title="Confiance (inférieure)"
->abstract="Calculez le degré de confiance valide à tout moment **inférieure** à l’aide de la méthode WASKR comme décrit dans [Théorie des limites centrales uniformes dans le temps et séquences de confiance asymptotiques](https://arxiv.org/pdf/2103.06476)."
+>abstract="Calculez le degré de confiance valide à tout moment **inférieur** à l’aide de la méthode WASKR comme décrit dans [Théorie des limites centrales uniformes dans le temps et séquences de confiance asymptotiques](https://arxiv.org/pdf/2103.06476)."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -284,7 +284,7 @@ Le degré de confiance est une mesure probabiliste de l’ampleur des preuves su
 >[!CONTEXTUALHELP]
 >id="functions-waskr-confidence-interval-upper"
 >title="Confiance (supérieure)"
->abstract="Calculez le degré de confiance valide à tout moment **supérieure** à l’aide de la méthode WASKR comme décrit dans [Théorie des limites centrales uniformes dans le temps et séquences de confiance asymptotiques](https://arxiv.org/pdf/2103.06476)."
+>abstract="Calculez le degré de confiance valide à tout moment **supérieur** à l’aide de la méthode WASKR comme décrit dans [Théorie des limites centrales uniformes dans le temps et séquences de confiance asymptotiques](https://arxiv.org/pdf/2103.06476)."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -419,7 +419,7 @@ Renvoie la moyenne des n derniers éléments de la colonne x. Si n > 0, addi
 | Argument | Description |
 |---|---|
 | metric_X | Mesure à utiliser pour la comparaison. |
-| metric_Y | Mesure à utiliser pour la comparaison. |
+| metric_Y | Mesure à utiliser comme référence pour comparer. |
 
 ### Exemple
 
@@ -440,7 +440,7 @@ Renvoie la moyenne des n derniers éléments de la colonne x. Si n > 0, addi
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION EXPONENTIELLE : COEFFICIENT DE CORRÉLATION(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE Tableau]{type="Neutral"} Régression exponentielle : Y = a exp(X) + b. Renvoie le coefficient de corrélation.
+[!BADGE Tableau]{type="Neutral"} Régression exponentielle : Y = a exp(X) + b. Renvoie le coefficient de corrélation.
 
 
 | Argument | Description |
@@ -463,7 +463,7 @@ Renvoie la moyenne des n derniers éléments de la colonne x. Si n > 0, addi
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION EXPONENTIELLE : PRÉDITE Y(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE Ligne]{type="Neutral"} Régression exponentielle : Y = a exp(X) + b. Renvoie Y.
+[!BADGE Ligne]{type="Neutral"} Régression exponentielle : Y = a exp(X) + b. Renvoie Y.
 
 
 | Argument | Description |
@@ -487,7 +487,7 @@ Renvoie la moyenne des n derniers éléments de la colonne x. Si n > 0, addi
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION EXPONENTIELLE : INTERCEPTER(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE Tableau]{type="Neutral"} Régression exponentielle : Y = a exp(X) + b. Renvoie b.
+[!BADGE Tableau]{type="Neutral"} Régression exponentielle : Y = a exp(X) + b. Renvoie b.
 
 | Argument | Description |
 |---|---|
@@ -510,7 +510,7 @@ Renvoie la moyenne des n derniers éléments de la colonne x. Si n > 0, addi
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION EXPONENTIELLE : PENTE(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE Tableau]{type="Neutral"} Régression exponentielle : Y = a exp(X) + b. Renvoie a.
+[!BADGE Tableau]{type="Neutral"} Régression exponentielle : Y = a exp(X) + b. Renvoie a.
 
 
 | Argument | Description |
@@ -527,13 +527,13 @@ Renvoie la moyenne des n derniers éléments de la colonne x. Si n > 0, addi
 >[!CONTEXTUALHELP]
 >id="functions-floor"
 >title="Arrondi à l’inférieur"
->abstract="Renvoie l’entier le plus grand, non supérieur à une valeur donnée. Par exemple, si vous souhaitez éviter de rapporter les décimales de devise pour les recettes et qu’un produit a une recette de 569,34 $, utilisez la formule FLOOR(Revenue) pour arrondir la recette au dollar le plus proche, soit 569 $."
+>abstract="Renvoie l’entier le plus grand, non supérieur à une valeur donnée. Par exemple, si vous souhaitez éviter de rapporter les décimales de devise pour le chiffre d’affaires et qu’un produit génère 569,34 $, utilisez la formule FLOOR(Revenue) pour arrondir le chiffre d’affaires au dollar le plus proche, soit 569 $."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL FLOOR(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Ligne]{type="Neutral"} Renvoie le plus grand entier non supérieur à une valeur donnée. Par exemple, si vous souhaitez éviter de rapporter les décimales de devise pour les recettes et qu’un produit a une recette de 569,34 $, utilisez la formule FLOOR(Revenue) pour arrondir la recette au dollar le plus proche, soit 569 $.
+[!BADGE Ligne]{type="Neutral"} Renvoie l’entier le plus grand, non supérieur à une valeur donnée. Par exemple, si vous souhaitez éviter de rapporter les décimales de devise pour le chiffre d’affaires et qu’un produit génère 569,34 $, utilisez la formule FLOOR(Revenue) pour arrondir le chiffre d’affaires au dollar le plus proche, soit 569 $.
 
 | Argument | Description |
 |---|---|
@@ -558,7 +558,7 @@ La sortie est soit 0 (false) soit 1 (true).
 | Argument | Description |
 |---|---|
 | metric_X | Mesure de base à utiliser pour la comparaison. |
-| metric_Y | Mesure à utiliser pour la comparaison. |
+| metric_Y | Mesure à utiliser comme référence pour comparer. |
 
 ### Exemple
 
@@ -583,7 +583,7 @@ Supérieur ou égal à. La sortie est soit 0 (false) soit 1 (true).
 | Argument | Description |
 |---|---|
 | metric_X | Mesure de base à utiliser pour la comparaison. |
-| metric_Y | Mesure à utiliser pour la comparaison. |
+| metric_Y | Mesure à utiliser comme référence pour comparer. |
 
 ### Exemple
 
@@ -668,7 +668,7 @@ Supérieur ou égal à. La sortie est soit 0 (false) soit 1 (true).
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL SI(logical_test, value_if_true, value_if_false)]**
 
 
-[!BADGE Row]{type="Neutral"} Si la valeur du paramètre de condition est différente de zéro (true), le résultat est la valeur du paramètre value_if_true. Dans le cas contraire, il s’agit de la valeur du paramètre value_if_false.
+[!BADGE Ligne]{type="Neutral"} Si la valeur du paramètre de condition est différente de zéro (true), le résultat est la valeur du paramètre value_if_true. Dans le cas contraire, il s’agit de la valeur du paramètre value_if_false.
 
 
 | Argument | Description |
@@ -696,7 +696,7 @@ La sortie est soit 0 (false) soit 1 (true).
 | Argument | Description |
 |---|---|
 | metric_X | Mesure à utiliser pour la comparaison. |
-| metric_Y | Mesure à utiliser pour la comparaison. |
+| metric_Y | Mesure à utiliser comme référence pour comparer. |
 
 ### Exemple
 
@@ -721,7 +721,7 @@ Inférieur ou égal à. La sortie est soit 0 (false) soit 1 (true).
 | Argument | Description |
 |---|---|
 | metric_X | Mesure à utiliser pour la comparaison. |
-| metric_Y | Mesure à utiliser pour la comparaison. |
+| metric_Y | Mesure à utiliser comme référence pour comparer. |
 
 ### Exemple
 
@@ -740,7 +740,7 @@ Inférieur ou égal à. La sortie est soit 0 (false) soit 1 (true).
 
 <!-- markdownlint-enable MD034 -->
 
-![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL EFFET ÉLÉVATEUR(conteneur de normalisation, mesure de succès, contrôle)]**
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL ÉLÉVATEUR(conteneur-normalisation, mesure-succès, contrôle)]**
 
 Effet élévateur du ratio par rapport à la valeur de contrôle.
 
@@ -766,7 +766,7 @@ Effet élévateur du ratio par rapport à la valeur de contrôle.
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION LINÉAIRE : COEFFICIENT DE CORRÉLATION(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE Tableau]{type="Neutral"} Régression linéaire : Y = a X + b. Renvoie le coefficient de corrélation.
+[!BADGE Tableau]{type="Neutral"} Régression linéaire : Y = a X + b. Renvoie le coefficient de corrélation.
 
 
 | Argument | Description |
@@ -791,7 +791,7 @@ Effet élévateur du ratio par rapport à la valeur de contrôle.
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION LINÉAIRE : INTERCEPTER(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE Tableau]{type="Neutral"} Régression linéaire : Y = a X + b. Renvoie b.
+[!BADGE Tableau]{type="Neutral"} Régression linéaire : Y = a X + b. Renvoie b.
 
 
 | Argument | Description |
@@ -816,7 +816,7 @@ Effet élévateur du ratio par rapport à la valeur de contrôle.
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION LINÉAIRE : PRÉDITE Y(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE Ligne]{type="Neutral"} Régression linéaire : Y = a X + b. Renvoie Y.
+[!BADGE Ligne]{type="Neutral"} Régression linéaire : Y = a X + b. Renvoie Y.
 
 
 | Argument | Description |
@@ -840,7 +840,7 @@ Effet élévateur du ratio par rapport à la valeur de contrôle.
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION LINÉAIRE : PENTE(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Tableau]{type="Neutral"} Régression linéaire : Y = a X + b. Renvoie a.
+[!BADGE Tableau]{type="Neutral"} Régression linéaire : Y = a X + b. Renvoie a.
 
 | Argument | Description |
 |---|---|
@@ -863,7 +863,7 @@ Effet élévateur du ratio par rapport à la valeur de contrôle.
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL LOGARITHME BASE 10(mesure)]**
 
 
-[!BADGE Ligne]{type="Neutral"} Renvoie le logarithme en base 10 d’un nombre.
+[!BADGE Ligne]{type="Neutral"} Renvoie le logarithme de base 10 d’un nombre.
 
 
 | Argument | Description |
@@ -884,7 +884,7 @@ Effet élévateur du ratio par rapport à la valeur de contrôle.
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION LOGARITHMIQUE : COEFFICIENT DE CORRÉLATION(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Table]{type="Neutral"} Régression du log : Y = a ln(X) + b. Renvoie le coefficient de corrélation.
+[!BADGE Tableau]{type="Neutral"} Régression logarithmique : Y = a ln(X) + b. Renvoie le coefficient de corrélation.
 
 | Argument | Description |
 |---|---|
@@ -906,7 +906,7 @@ Effet élévateur du ratio par rapport à la valeur de contrôle.
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION LOGARITHMIQUE : INTERCEPTER(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Table]{type="Neutral"} Régression du journal : Y = a ln(X) + b. Renvoie b.
+[!BADGE Tableau]{type="Neutral"} Régression logarithmique : Y = a ln(X) + b. Renvoie b.
 
 | Argument | Description |
 |---|---|
@@ -929,7 +929,7 @@ Effet élévateur du ratio par rapport à la valeur de contrôle.
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION LOGARITHMIQUE : PRÉDITE Y(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Ligne]{type="Neutral"} Régression du journal : Y = a ln(X) + b. Renvoie Y.
+[!BADGE Ligne]{type="Neutral"} Régression logarithmique : Y = a ln(X) + b. Renvoie Y.
 
 | Argument | Description |
 |---|---|
@@ -952,7 +952,7 @@ Effet élévateur du ratio par rapport à la valeur de contrôle.
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION LOGARITHMIQUE : PENTE(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Table]{type="Neutral"} Régression du journal : Y = a ln(X) + b. Renvoie a.
+[!BADGE Tableau]{type="Neutral"} Régression logarithmique : Y = a ln(X) + b. Renvoie a.
 
 | Argument | Description |
 |---|---|
@@ -1024,7 +1024,7 @@ Non égal à. La sortie est soit 0 (false) soit 1 (true).
 | Argument | Description |
 |---|---|
 | metric_X | Mesure à utiliser pour la comparaison. |
-| metric_Y | Mesure à utiliser pour la comparaison. |
+| metric_Y | Mesure à utiliser comme référence pour comparer. |
 
 ### Exemple
 
@@ -1087,7 +1087,7 @@ Renvoie Pi : 3,14159...
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION DE PUISSANCE : COEFFICIENT DE CORRÉLATION(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Tableau]{type="Neutral"} Régression de la puissance : Y = b X ^ a. Renvoie le coefficient de corrélation.
+[!BADGE Tableau]{type="Neutral"} Régression de puissance : Y = b X ^ a. Renvoie le coefficient de corrélation.
 
 | Argument | Description |
 |---|---|
@@ -1111,7 +1111,7 @@ Renvoie Pi : 3,14159...
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION DE PUISSANCE : INTERCEPTER(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE Tableau]{type="Neutral"} Régression de la puissance : Y = b X ^ a. Renvoie b.
+[!BADGE Tableau]{type="Neutral"} Régression de puissance : Y = b X ^ a. Renvoie b.
 
 
 | Argument | Description |
@@ -1134,7 +1134,7 @@ Renvoie Pi : 3,14159...
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION DE PUISSANCE : PRÉDITE Y(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Ligne]{type="Neutral"} Régression de la puissance : Y = b X ^ a. Renvoie Y.
+[!BADGE Ligne]{type="Neutral"} Régression de puissance : Y = b X ^ a. Renvoie Y.
 
 | Argument | Description |
 |---|---|
@@ -1157,7 +1157,7 @@ Renvoie Pi : 3,14159...
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION DE PUISSANCE : PENTE(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Tableau]{type="Neutral"} Régression de la puissance : Y = b X ^ a. Renvoie a.
+[!BADGE Tableau]{type="Neutral"} Régression de puissance : Y = b X ^ a. Renvoie a.
 
 | Argument | Description |
 |---|---|
@@ -1180,7 +1180,7 @@ Renvoie Pi : 3,14159...
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION QUADRATIQUE : COEFFICIENT DE CORRÉLATION(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Tableau]{type="Neutral"} Régression quadratique : Y = (a + bX) ^ 2, Renvoie le coefficient de corrélation.
+[!BADGE Tableau]{type="Neutral"} Régression quadratique : Y = (a + bX) ^ 2. Renvoie le coefficient de corrélation.
 
 | Argument | Description |
 |---|---|
@@ -1201,7 +1201,7 @@ Renvoie Pi : 3,14159...
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION QUADRATIQUE : INTERCEPTER(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Tableau]{type="Neutral"} Régression quadratique : Y = (a + bX) ^ 2, Renvoie a.
+[!BADGE Tableau]{type="Neutral"} Régression quadratique : Y = (a + bX) ^ 2. Renvoie a.
 
 | Argument | Description |
 |---|---|
@@ -1223,7 +1223,7 @@ Renvoie Pi : 3,14159...
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION QUADRATIQUE : PRÉDITE Y(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Ligne]{type="Neutral"} Régression quadratique : Y = (a + bX) ^ 2, Renvoie Y.
+[!BADGE Ligne]{type="Neutral"} Régression quadratique : Y = (a + bX) ^ 2. Renvoie Y.
 
 | Argument | Description |
 |---|---|
@@ -1245,7 +1245,7 @@ Renvoie Pi : 3,14159...
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION QUADRATIQUE : PENTE(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Tableau]{type="Neutral"} Régression quadratique : Y = (a + bX) ^ 2, Renvoie b.
+[!BADGE Tableau]{type="Neutral"} Régression quadratique : Y = (a + bX) ^ 2. Renvoie b.
 
 | Argument | Description |
 |---|---|
@@ -1268,7 +1268,7 @@ Renvoie Pi : 3,14159...
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION RÉCIPROQUE : COEFFICIENT DE CORRÉLATION(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Tableau]{type="Neutral"} Régression réciproque : Y = a + b X ^ -1. Renvoie le coefficient de corrélation.
+[!BADGE Tableau]{type="Neutral"} Régression réciproque : Y = a + b X ^ -1. Renvoie le coefficient de corrélation.
 
 | Argument | Description |
 |---|---|
@@ -1290,7 +1290,7 @@ Renvoie Pi : 3,14159...
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION RÉCIPROQUE : INTERCEPTER(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Tableau]{type="Neutral"} Régression réciproque : Y = a + b X ^ -1. Renvoie a.
+[!BADGE Tableau]{type="Neutral"} Régression réciproque : Y = a + b X ^ -1. Renvoie a.
 
 | Argument | Description |
 |---|---|
@@ -1312,7 +1312,7 @@ Renvoie Pi : 3,14159...
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION RÉCIPROQUE : PRÉDITE Y(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Ligne]{type="Neutral"} Régression réciproque : Y = a + b X ^ -1. Renvoie Y.
+[!BADGE Ligne]{type="Neutral"} Régression réciproque : Y = a + b X ^ -1. Renvoie Y.
 
 | Argument | Description |
 |---|---|
@@ -1334,7 +1334,7 @@ Renvoie Pi : 3,14159...
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION RÉCIPROQUE : PENTE(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Tableau]{type="Neutral"} Régression réciproque : Y = a + b X ^ -1. Renvoie b.
+[!BADGE Tableau]{type="Neutral"} Régression réciproque : Y = a + b X ^ -1. Renvoie b.
 
 | Argument | Description |
 |---|---|
@@ -1353,9 +1353,9 @@ Renvoie Pi : 3,14159...
 >title="Variance de l’échantillon"
 >abstract="Calcule une estimation de la variance de l’échantillon à l’aide de la formule (sum(metric^2) / (N - 1)) - (sum(metric))^2/(N*(N-1)). où N est le nombre du conteneur de normalisation. <br/>Ceci est utilisé dans le cadre des calculs de confiance *valides à tout moment*. En règle générale, cette fonction n’est pas utile seule, mais elle peut être utilisée pour vérifier les calculs ou pour effectuer des calculs de confiance *manuellement*."
 
-![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL EXEMPLE DE VARIANCE(conteneur-normalisation, mesure-succès)]**
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL VARIANCE D’ÉCHANTILLONNAGE(conteneur-normalisation, mesure-succès)]**
 
-Calcule une estimation de l&#39;écart d&#39;échantillonnage.
+Calcule une estimation de la variance d’échantillonnage.
 
 | Argument | Description |
 | --- | --- |
@@ -1418,13 +1418,13 @@ Calcule une estimation de l&#39;écart d&#39;échantillonnage.
 >[!CONTEXTUALHELP]
 >id="functions-t-test"
 >title="Test en t"
->abstract="Exécute un test en t m-latéral avec un score normalisé de col et n degrés de liberté."
+>abstract="Exécute un test t m-latéral avec un score-t de x et n degrés de liberté."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL TEST EN T(mesure, degrés, queues)]**
 
-Exécute un test en t m-latéral avec un score normalisé de col et n degrés de liberté.
+Exécute un test t m-latéral avec un score-t de x et n degrés de liberté.
 
 | Argument | Description |
 |---|---|
@@ -1492,7 +1492,7 @@ Renvoie la tangente de l’angle donné. Si l’angle est en degrés, multipliez
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL SCORE CENTRÉ(mesure, include_zeros)]**
 
-[!BADGE Ligne]{type="Neutral"} Écart par rapport à la moyenne divisé par l’écart type.
+[!BADGE Ligne]{type="Neutral"} Écart par rapport à la moyenne divisé par l’écart-type.
 
 | Argument | Description |
 |---|---|
@@ -1520,13 +1520,13 @@ où ***[!DNL x]*** est le score brut, ***[!DNL μ]*** la moyenne de la populatio
 >[!CONTEXTUALHELP]
 >id="functions-z-test"
 >title="Test Z"
->abstract="Exécute un test Z n-latéral avec un score centré de x."
+>abstract="Exécute un test z n-latéral avec un score-z de x."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL TEST Z(metric_tails)]**
 
-Exécute un test Z n-latéral avec un score centré de x.
+Exécute un test z n-latéral avec un score-z de x.
 
 | Argument | Description |
 |---|---|

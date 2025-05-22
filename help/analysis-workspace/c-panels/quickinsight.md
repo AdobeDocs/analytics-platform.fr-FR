@@ -6,8 +6,8 @@ exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
 role: User
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
-source-wordcount: '1154'
-ht-degree: 91%
+source-wordcount: '1145'
+ht-degree: 95%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 91%
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente le panneau Aperçu rapide de_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_.<br/>_Voir le [panneau Aperçu rapide](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/panels/quickinsight) de la version_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** de cet article._
+_Cet article présente le panneau Aperçu rapide de_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_Voir le [panneau Aperçu rapide](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/panels/quickinsight) de la version_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 
@@ -62,7 +62,7 @@ Voici quelques-uns des termes de base que vous devez connaître. Chaque tableau 
 | [!UICONTROL Mesure] | Les mesures sont des informations quantitatives sur l’activité des individus, telles que les affichages, les clics publicitaires, les actualisations, la durée moyenne de consultation, les unités, les commandes, le chiffre d’affaires, etc. |
 | **[!UICONTROL Visualisation]** | Workspace offre [une variété de visualisations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) pour créer des représentations visuelles de vos données. Par exemple, des graphiques à barres, des graphiques en anneau, des histogrammes, des graphiques en courbes, des cartes, des nuages de points, etc. |
 | **[!UICONTROL Répartition des dimensions]** | Une répartition de dimension est un moyen de répartir une dimension en fonction d’autres dimensions. Par exemple, vous pouvez répartir les États américains en fonction des périphériques mobiles pour obtenir le nombre de visites via des périphériques mobiles par État. Vous pouvez également répartir les périphériques mobiles par types de périphériques mobiles, par régions, par campagnes internes, etc. |
-| **[!UICONTROL Segment]** | Les filtres vous permettent d’identifier des sous-ensembles de personnes selon des caractéristiques ou des interactions avec des sites web. Par exemple, vous pouvez créer des segments [!UICONTROL Personnes] basés sur les éléments suivants : <li>Attributs : type de navigateur, appareil, nombre de visites, pays, sexe.</li><li>Interactions : campagnes, recherche par mots-clés, moteur de recherche.</li><li>Sorties et entrées : personnes provenant de Facebook, d’une page de destination définie, d’un domaine référent.</li><li> Variables personnalisées : champ de formulaire, catégories définies, ID de client. |
+| **[!UICONTROL Segment]** | Les filtres vous permettent d’identifier des sous-ensembles de personnes selon des caractéristiques ou des interactions avec des sites web. Par exemple, vous pouvez créer des segments [!UICONTROL Personnes] basés sur les éléments suivants : <li>Attributs : type de navigateur, appareil, nombre de visites, pays, sexe.</li><li>Interactions : campagnes, recherche par mots-clés, moteur de recherche.</li><li>Sorties et entrées : personnes provenant de Facebook, d’une page de destination définie, d’un domaine référent.</li><li> Variables personnalisées : champ de formulaire, catégories définies, ID de client. |
 
 ## Utilisation
 
@@ -83,7 +83,7 @@ Sélectionnez vos blocs de création :
 
 * **[!UICONTROL Analyser]** : spécifiez une dimension (orange)
 * **[!UICONTROL Par]** : spécifiez une mesure (vert)
-* **[!UICONTROL segment par]** - spécifiez un segment (bleu)
+* **[!UICONTROL Segmenter par]** : spécifiez un segment (bleu).
 * **[!UICONTROL Sur]** : spécifiez une période (violet).
 
 Pour que la visualisation fonctionne correctement, vous devez sélectionner au moins une dimension et une mesure.
@@ -105,7 +105,7 @@ Sélectionnez **[!UICONTROL Effacer]** pour effacer tous les champs de saisie.
 
    ![Tableau à structure libre présentant la dimension verticalement et la mesure horizontalement.](assets/quick-insights-output.png)
 
-   * Un tableau à structure libre avec la dimension (code de pays) et la mesure (sessions), segmenté par sessions web au cours des 12 derniers mois.
+   * Tableau à structure libre avec la dimension (code de pays) et la mesure (sessions), segmenté par sessions web pour les 12 derniers mois.
 
    * Une visualisation correspondante, dans ce cas un [graphique à barres](/help/analysis-workspace/visualizations/bar.md). La visualisation qui est générée dépend du type de données que vous avez ajoutées au tableau. Toutes les données temporelles (telles que les [!UICONTROL Sessions] par jour/mois) sont présentées par défaut sous forme de graphique [!UICONTROL en courbes]. Toutes les données non temporelles (telles que les [!UICONTROL Sessions] par [!UICONTROL Appareil]) sont présentées sous forme de graphique [!UICONTROL à barres]. Vous pouvez modifier le type de visualisation en cliquant sur la flèche déroulante en regard du type de visualisation.
 
@@ -125,13 +125,13 @@ D’autres astuces utiles s’affichent dans le [!UICONTROL Créateur d’Aperç
 
   ![Résultat du créateur d’Aperçu rapide](assets/qibuilder-result.png)
 
-   * Dimension **[!UICONTROL Analyser]** **[!UICONTROL Répartie par]** : vous pouvez utiliser jusqu’à 3 niveaux de répartition sur les dimensions pour analyser en détail les données afin d’obtenir les informations dont vous avez réellement besoin. Voir les sections ➊, ➋, et ➌.
+   * Dimension **[!UICONTROL Analyser]** **[!UICONTROL Répartie par]** : vous pouvez utiliser jusqu’à 3 niveaux de répartition sur les dimensions pour analyser en détail les données afin d’obtenir les informations dont vous avez réellement besoin. Voir ➊, ➋ et ➌.
 
-   * Ajouter d’autres mesures **[!UICONTROL Par]** : vous pouvez ajouter jusqu’à 2 mesures supplémentaires. Voir les sections ➍ et ➎.
+   * Ajouter d’autres mesures **[!UICONTROL Par]** : vous pouvez ajouter jusqu’à 2 mesures supplémentaires. Voir ➍ et ➎.
 
-   * **[!UICONTROL segment par]** : vous pouvez ajouter jusqu’à 2 segments supplémentaires. Par exemple, ajoutez Réservations en tant que segment et combinez-le avec les segments Personnes réservant fréquemment et Personnes voyageant pour la première fois, que vous comparez. Voir les sections ➏, ➐ et ➑.
+   * **[!UICONTROL Segmenter par]** : vous pouvez ajouter jusqu’à 2 segments supplémentaires. Par exemple, ajoutez Réservations en tant que segment et combinez-le avec les segments Personnes réservant fréquemment et Personnes voyageant pour la première fois, que vous comparez. Voir ➏, ➐ et ➑.
 
-   * Sur : vous pouvez spécifier la période. Voir la section ➒.
+   * Sur : vous pouvez spécifier la période. Voir ➒.
 
 ## Limites connues
 

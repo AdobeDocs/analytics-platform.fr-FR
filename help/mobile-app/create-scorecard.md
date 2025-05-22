@@ -8,7 +8,7 @@ solution: Customer Journey Analytics
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '2698'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -29,7 +29,7 @@ Les informations suivantes indiquent aux curateurs et curatrices des données Cu
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Créer une carte de performance mobile](https://video.tv.adobe.com/v/3409729?quality=12&learn=on&captions=fre_fr){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Créer une carte de performance mobile](https://video.tv.adobe.com/v/343458?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 
@@ -48,7 +48,7 @@ En tant que curateur ou curatrice de cette carte de performance, vous pouvez uti
 
 Pour créer la carte de performance, procédez comme suit :
 
-1. Accédez au modèle [!UICONTROL &#x200B; Carte de performance mobile vierge &#x200B;] dans Workspace.
+1. Accédez au modèle de [!UICONTROL Carte de performance mobile vierge] dans Workspace.
 2. Configurer la carte de performance avec des données, puis enregistrez-la.
 
 ## Accéder au modèle de [!UICONTROL Fiche d’évaluation mobile vierge] {#template}
@@ -73,7 +73,7 @@ Vous pouvez accéder au modèle de [!UICONTROL Carte de performance mobile vierg
 
 Pour implémenter le modèle de carte de performance, procédez comme suit :
 
-1. Sous **[!UICONTROL Propriétés de la carte de performance]** (dans le rail de droite), spécifiez une **[!UICONTROL Vue de données du projet]** à partir de laquelle vous souhaitez utiliser les données.
+1. Sous **[!UICONTROL Propriétés de la carte de performance]** (dans le rail de droite), précisez la **[!UICONTROL vue de données du projet]** dont vous souhaitez utiliser les données.
 
    ![Fenêtre de nouvelle carte de performance mobile mettant en surbrillance la sélection de la vue de données](assets/properties_save.png)
 
@@ -96,9 +96,9 @@ Par exemple, vous pouvez ajouter des dimensions appropriées (comme **[!DNL Mark
 
 Pour appliquer des segments à des mosaïques individuelles, faites glisser un segment du panneau de gauche et déposez-le directement en haut de la mosaïque.
 
-Si vous souhaitez appliquer le segment à toutes les vignettes de la carte de performance, déposez la vignette en haut de la carte de performance. Vous pouvez également appliquer des segments en les sélectionnant dans le menu de segments sous les périodes. Vous [configurez et appliquez des segments à vos cartes de performance](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=fr) comme vous le feriez dans Customer Journey Analytics Workspace.
+Si vous souhaitez appliquer le segment à toutes les vignettes de la carte de performance, déposez la vignette en haut de la carte de performance. Vous pouvez également appliquer des segments en les sélectionnant dans le menu des segments situé sous les périodes. Vous [configurez et appliquez des segments à vos cartes de performance](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=fr) de la même manière que dans Customer Journey Analytics Workspace.
 
-![Sélecteur de liste déroulante de segment mettant en surbrillance les segments de build](assets/segment_ui.png)
+![Liste déroulante de segment mettant en surbrillance les segments créés](assets/segment_ui.png)
 
 ## Ajout de périodes {#dates}
 
@@ -212,7 +212,7 @@ Les diapositives détaillées personnalisées vous permettent d’être encore p
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Vues détaillées personnalisées](https://video.tv.adobe.com/v/3413787?quality=12&learn=on&captions=fre_fr){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Vues détaillées personnalisées](https://video.tv.adobe.com/v/3410002?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 
@@ -257,7 +257,7 @@ Regardez la vidéo pour en savoir plus sur la création d’histoires de donnée
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Histoires de données pour un projet de carte de performance mobile](https://video.tv.adobe.com/v/3420560/?quality=12&learn=on&captions=fre_fr){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Histoires de données pour un projet de carte de performance mobile](https://video.tv.adobe.com/v/3416392/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 
@@ -282,7 +282,7 @@ Pour supprimer une diapositive, appuyez sur l’icône de corbeille.
 
 ### Personnaliser une histoire de données {#customize-data-story}
 
-Les histoires de données vous permettent de personnaliser chaque élément, afin de partager uniquement les informations que vous souhaitez partager, et d’exclure tout ce dont vous n’avez pas besoin. Vous pouvez personnaliser les mosaïques et les diapositives individuelles pour ajouter des segments, afficher des répartitions, modifier la disposition et modifier les visualisations.
+Les histoires de données vous permettent de personnaliser chaque élément, afin de partager uniquement les informations que vous souhaitez partager, et d’exclure tout ce dont vous n’avez pas besoin. Vous pouvez personnaliser les mosaïques et les diapositives en ajoutant des segments, en affichant les répartitions et en modifiant la disposition et les visualisations.
 
 **Pour personnaliser les mosaïques**
 

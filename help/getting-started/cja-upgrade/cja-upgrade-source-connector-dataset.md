@@ -8,7 +8,7 @@ exl-id: 424485a3-a076-4656-83b6-733f16cc2326
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '887'
-ht-degree: 90%
+ht-degree: 92%
 
 ---
 
@@ -51,7 +51,7 @@ Vous devez ajouter ce jeu de données créé automatiquement à la même connexi
 
 Pour ajouter le jeu de données créé automatiquement à la même connexion que celle que vous avez créée pour votre implémentation de SDK web, procédez comme suit :
 
-1. Dans Customer Journey Analytics, sélectionnez **[!UICONTROL Connexions]**, éventuellement à partir de **[!UICONTROL Gestion des données]**, dans le menu supérieur.
+1. Dans Customer Journey Analytics, sélectionnez **[!UICONTROL Connexions]**, éventuellement à partir de **[!UICONTROL Gestion des données]**, dans le menu supérieur.
 
 1. Sélectionnez la connexion que vous [avez créée pour votre implémentation de SDK web](/help/getting-started/cja-upgrade/cja-upgrade-connection.md).
 

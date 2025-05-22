@@ -6,8 +6,8 @@ feature: Audiences
 role: User
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
-source-wordcount: '768'
-ht-degree: 76%
+source-wordcount: '766'
+ht-degree: 95%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 76%
 
 Les audiences peuvent être gérées dans Customer Journey Analytics en utilisant **[!UICONTROL Composants]** > **[!UICONTROL Audiences]**.
 
-## Comprendre les tâches de gestion des audiences
+## Comprendre les tâches de gestion de l’audience
 
 La gestion des audiences créées précédemment permet d’effectuer les opérations suivantes :
 
@@ -27,21 +27,21 @@ La gestion des audiences créées précédemment permet d’effectuer les opéra
 
 Si vous disposez d’un accès [Affichage de l’audience](/help/technotes/access-control.md#user-level-access), vous pouvez afficher les audiences. Si vous disposez d’un accès [Création d’audience](/help/technotes/access-control.md#user-level-access), vous pouvez modifier et supprimer des audiences.
 
-## Affichage des audiences dans la liste Audiences
+## Afficher des audiences dans la liste des audiences
 
 La liste Audiences affiche ➊ les audiences existantes.
 
 ![Gestionnaire d’audiences](assets/audiences-manager.png)
 
-Pour afficher la liste Audience :
+Pour afficher la liste des audiences, procédez comme suit :
 
-1. Dans Customer Journey Analytics, sélectionnez **[!UICONTROL Composants]** > **[!UICONTROL Audiences]**.
+1. Dans Customer Journey Analytics, sélectionnez **[!UICONTROL Composants]** > **[!UICONTROL Audiences]**.
 
 1. (Facultatif) Utilisez ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) pour configurer les colonnes à afficher.
 
-1. (Facultatif) Recherchez une audience à l’aide de ![Rechercher](/help/assets/icons/Search.svg).
+1. (Facultatif) Recherchez une audience à l’aide de la ![Recherche](/help/assets/icons/Search.svg).
 
-   Les colonnes suivantes sont disponibles avec des informations sur chaque audience :
+   Les colonnes suivantes sont disponibles avec des informations sur chaque audience :
 
    | Colonne | Description |
    | --- | --- |
@@ -56,13 +56,13 @@ Pour afficher la liste Audience :
    | **[!UICONTROL Dernière actualisation]** | Horodatage de la dernière actualisation de l’audience. |
    | **[!UICONTROL Dernière modification]** | Horodatage de la dernière édition ou modification de l’audience. |
 
-## Modifier les audiences
+## Modifier des audiences
 
-Vous pouvez modifier les paramètres d’une audience à tout moment. Lorsque vous modifiez une audience (une audience unique ou récurrente), une republication est requise.
+Vous pouvez modifier les paramètres d’une audience à tout moment. Lorsque vous modifiez une audience (une audience unique ou récurrente), vous devez effectuer une republication.
 
 Pour modifier une audience, procédez comme suit :
 
-1. Dans Customer Journey Analytics, sélectionnez **[!UICONTROL Composants]** > **[!UICONTROL Audiences]**.
+1. Dans Customer Journey Analytics, sélectionnez **[!UICONTROL Composants]** > **[!UICONTROL Audiences]**.
 
    La page Audiences s’affiche.
 
@@ -70,7 +70,7 @@ Pour modifier une audience, procédez comme suit :
 
    La boîte de dialogue **[!UICONTROL Modifier l’audience]** s’affiche.
 
-1. Vous pouvez mettre à jour n’importe quel champ disponible pour l’audience. Pour plus d’informations sur les champs que vous pouvez mettre à jour, voir [Créateur d’audiences](/help/components/audiences/publish.md#audience-builder) dans l’article [Création et publication d’audiences](/help/components/audiences/publish.md).
+1. Vous pouvez mettre à jour n’importe quel champ disponible pour l’audience. Pour plus d’informations sur les champs que vous pouvez mettre à jour, consultez [Créateur d’audiences](/help/components/audiences/publish.md#audience-builder) dans l’article [Créer et publier des audiences](/help/components/audiences/publish.md).
 
 1. Sélectionnez **[!UICONTROL Republier]**.
 
@@ -80,9 +80,9 @@ Voici des actions courantes du gestionnaire de projets planifiés : Vous pouvez
 
 | Icône | Action | Description |
 |:---:|---|---|
-| ![Étiquettes](/help/assets/icons/Labels.svg) | **[!UICONTROL Étiquette]** | Balisez les audiences sélectionnées. Dans la boîte de dialogue **[!UICONTROL Mettre à jour les balises : *nom de l’audience *]**, sélectionnez des balises dans le menu déroulant ou saisissez une ou plusieurs nouvelles balises. Sélectionnez&#x200B;**[!UICONTROL Enregistrer &#x200B;]**&#x200B;pour enregistrer. |
+| ![Étiquettes](/help/assets/icons/Labels.svg) | **[!UICONTROL Étiquette]** | Balisez les audiences sélectionnées. Dans la boîte de dialogue **[!UICONTROL Mettre à jour les balises : *nom de l’audience *]**, sélectionnez des balises dans le menu déroulant ou saisissez une ou plusieurs nouvelles balises. Sélectionnez**[!UICONTROL Enregistrer ]**pour enregistrer. |
 | ![Supprimer](/help/assets/icons/Delete.svg) | **[!UICONTROL Supprimer]** | Supprimez l’audience sélectionnée. |
-| ![Modifier](/help/assets/icons/Edit.svg) | **[!UICONTROL Renommer]** | Renommez l’audience sélectionnée. Utilisez la boîte de dialogue **[!UICONTROL Renommer : *nom de l’audience *]**&#x200B;pour renommer l’audience et sélectionnez&#x200B;**[!UICONTROL Enregistrer &#x200B;]**&#x200B;pour enregistrer. |
+| ![Modifier](/help/assets/icons/Edit.svg) | **[!UICONTROL Renommer]** | Renommez l’audience sélectionnée. Utilisez la boîte de dialogue **[!UICONTROL Renommer : *nom de l’audience *]**pour renommer l’audience et sélectionnez**[!UICONTROL Enregistrer ]**pour enregistrer. |
 
 Les actions suivantes sont disponibles à partir de la barre d’actions bleue lors de la sélection d’un ou de plusieurs projets planifiés.
 
@@ -94,7 +94,7 @@ Les actions suivantes sont disponibles à partir de la barre d’actions bleue l
 
 ## Filtrer la liste des audiences
 
-Vous pouvez filtrer la [liste des audiences](#audiences-list) à l’aide du panneau Filtrer ➋. Pour afficher ou masquer le panneau Filtrer, utilisez ![Filtrer](/help/assets/icons/Filter.svg).
+Vous pouvez filtrer la [liste des audiences](#audiences-list) à l’aide du panneau de filtrage ➋. Pour afficher ou masquer le panneau Filtrer, utilisez ![Filtrer](/help/assets/icons/Filter.svg).
 
 ![Gestionnaire d’audiences](assets/audiences-manager.png)
 

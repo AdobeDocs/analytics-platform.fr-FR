@@ -7,7 +7,7 @@ role: User
 source-git-commit: ce18545a0ee597ee448fa55d83bdece54c7c849c
 workflow-type: tm+mt
 source-wordcount: '212'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Les mesures calculées sont des mesures personnalisées que vous pouvez créer �
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Présentation des mesures calculées](https://video.tv.adobe.com/v/33727/?quality=12&learn=on&captions=fre_fr){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Présentation des mesures calculées](https://video.tv.adobe.com/v/31787/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 

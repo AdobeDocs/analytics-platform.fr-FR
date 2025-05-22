@@ -8,7 +8,7 @@ role: User
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '913'
-ht-degree: 88%
+ht-degree: 95%
 
 ---
 
@@ -23,7 +23,7 @@ Pour gérer les composants à partir de l’interface principale de Customer Jou
 
 Vous pouvez gérer les composants suivants :
 
-* [Segments](filters/filters-overview.md) : créez, gérez, partagez et appliquez des segments d’audience puissants et ciblés à vos rapports. Les segments vous permettent d’identifier des sous-ensembles de personnes en fonction de caractéristiques ou d’interactions.
+* [Segments](filters/filters-overview.md) : créez, gérez, partagez et appliquez des segments d’audience puissants à vos rapports. Les segments vous permettent d’identifier des sous-ensembles de personnes en fonction de caractéristiques ou d’interactions.
 * [Mesures calculées :](calc-metrics/calc-metr-overview.md) utilisent les mesures et les formules comme nouveaux composants à utiliser dans les rapports.
 * [Périodes](date-ranges/create.md) : permettent de personnaliser et d’affiner les offres Analysis Workspace.
 * [Annotations](/help/components/annotations/overview.md) : communiquez les nuances et les informations concernant les données contextuelles à votre organisation.
@@ -36,7 +36,7 @@ Vous pouvez gérer les composants suivants :
 
 ## Composants d’Analysis Workspace
 
-Les composants d’Analysis Workspace se composent de mesures, de dimensions, de segments et de périodes que vous pouvez faire glisser et déposer sur les panneaux et les visualisations de votre projet Workspace. Les composants personnalisés que vous créez sont ajoutés à ces panneaux, tels qu’une mesure calculée ou une période personnalisée.
+Les composants d’Analysis Workspace sont constitués de mesures, dimensions, segments et périodes que vous pouvez glisser-déposer dans des panneaux et des visualisations de votre projet Workspace. Les composants personnalisés que vous créez sont ajoutés à ces panneaux, tels qu’une mesure calculée ou une période personnalisée.
 
 Pour accéder au panneau Composants, sélectionnez ![Traiter](/help/assets/icons/Curate.svg) **[!UICONTROL Composants]** dans le panneau des boutons.
 
@@ -72,7 +72,7 @@ Vous pouvez gérer les composants (individuellement ou en en sélectionnant plus
    | ![Partager](/help/assets/icons/ShareAlt.svg) [!UICONTROL **Partager**] | Partagez des composants avec des utilisateurs de votre organisation. Cette option est uniquement disponible pour les composants personnalisés, tels que les segments ou les mesures calculées. |
    | ![Supprimer](/help/assets/icons/Delete.svg) [!UICONTROL **Supprimer**] | Supprimez les composants dont vous n’avez plus besoin. Cette option est uniquement disponible pour les composants personnalisés, tels que les segments ou les mesures calculées. |
 
-Les composants personnalisés peuvent également être gérés par l’intermédiaire de leurs gestionnaires de composants respectifs. Par exemple, consultez [Gestion des segments](/help/components/filters/manage-filters.md).
+Les composants personnalisés peuvent également être gérés par l’intermédiaire de leurs gestionnaires de composants respectifs. Par exemple, consultez [Gérer les segments](/help/components/filters/manage-filters.md).
 
 ## Gestion de la liste des composants
 
@@ -84,7 +84,7 @@ Vous pouvez rechercher, filtrer et trier la liste des composants dans le panneau
 
 2. Dans le champ de recherche, commencez à saisir le nom du composant que vous souhaitez utiliser dans votre projet.
 
-   Une couleur et une icône permettent d’identifier le type de composant. **Dimensions** icône ![Dimension](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) sont orange, **Segments** ![icône Segment](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) sont bleus, **Périodes** ![Icône de période](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) sont violets et **Icône de mesure** ![ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) sont verts.<br/> L’icône Adobe ![AdobeLogo](/help/assets/icons/AdobeLogoSmall.svg) indique soit un modèle de mesure calculée, soit un modèle de segment. L’icône de calculateur ![Icône de calculateur](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) indique une mesure calculée créée par un administrateur ou une administratrice de votre organisation.
+   Une couleur et une icône permettent d’identifier le type de composant. **Dimensions** icône ![Dimension](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) sont orange, **Segments** ![icône Segment](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) sont bleus, **Périodes** ![Icône de période](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) sont violets et **Icône de mesure** ![ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) sont verts.<br/>L’icône Adobe ![Logo Adobe](/help/assets/icons/AdobeLogoSmall.svg) indique soit un modèle de mesure calculée, soit un modèle de segment. L’icône de calculateur ![Icône de calculateur](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) indique une mesure calculée créée par un administrateur ou une administratrice de votre organisation.
 
 3. Sélectionnez le composant dans le menu déroulant.
 

@@ -8,7 +8,7 @@ role: User
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '1616'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -28,7 +28,7 @@ Voici les types de visualisation disponibles dans Analysis Workspace :
 | ![Graphique à puces](/help/assets/icons/GraphBullet.svg)</p> | [Puces](/help/analysis-workspace/visualizations/bullet-graph.md) | Visualisation Graphique à puces affichant comment comparer ou mesurer une valeur qui vous intéresse par rapport à d’autres plages de performances (objectifs). |
 | ![ChiffresTexte](/help/assets/icons/TextNumbered.svg) | [Table de cohorte](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | Une visualisation Cohorte est un groupe de personnes partageant des caractéristiques communes au cours d’une période spécifique. Une table de cohorte est utile pour les analyses de la rétention, de lʼattrition ou de la latence. |
 | ![Combo](/help/assets/icons/ComboChart.svg) | [Combo](combo-charts.md) | Une visualisation Graphique combo facilite la création rapide d’une visualisation de comparaison sans qu’il soit nécessaire de créer un tableau au préalable. |
-| ![Graphique à anneaux](/help/assets/icons/GraphDonut.svg) | [Anneau](/help/analysis-workspace/visualizations/donut.md) | Semblable à un graphique en secteurs, une visualisation en anneau affiche les données sous la forme de parties ou de segments d’un tout. |
+| ![Graphique à anneaux](/help/assets/icons/GraphDonut.svg) | [Anneau](/help/analysis-workspace/visualizations/donut.md) | Similaire à un graphique en secteurs, la visualisation en anneau présente les données comme des portions ou des segments d’un tout. |
 | ![Entonnoir de conversion](/help/assets/icons/ConversionFunnel.svg) | [Abandon](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | La visualisation Abandons indique où les personnes sont sorties (abandonné) d’une suite prédéfinie de pages et où elles ont poursuivi leur visite à travers ces pages (diminution). |
 | ![GraphPathing](/help/assets/icons/GraphPathing.svg) | [Flux](/help/analysis-workspace/visualizations/c-flow/flow.md) | La visualisation Flux présente les parcours exacts des clientes et clients sur vos sites web et dans vos applications. |
 | ![ViewTable](/help/assets/icons/ViewTable.svg)</p> | [Tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | Une visualisation Tableau à structure libre est une visualisation interactive. La visualisation Tableau à structure libre est la base de l’analyse des données dans Workspace. |
@@ -44,7 +44,7 @@ Voici les types de visualisation disponibles dans Analysis Workspace :
 | ![123](/help/assets/icons/123.svg)</p> | [Numéro de résumé](/help/analysis-workspace/visualizations/summary-number-change.md) | Une visualisation Synthèse des chiffres affiche la cellule sélectionnée sous la forme d’un grand nombre. |
 | ![Texte](/help/assets/icons/Text.svg) | [Texte](/help/analysis-workspace/visualizations/text.md) | Une visualisation Texte permet d’ajouter du texte défini par l’utilisateur ou l’utilisatrice dans Workspace. Utile pour ajouter du contexte supplémentaire à votre analyse et à vos informations, en plus de tirer parti des descriptions des panneaux/visualisations. |
 | ![ModernGridView](/help/assets/icons/ModernGridView.svg) | [Plan en arborescence](/help/analysis-workspace/visualizations/treemap.md)<p> | Une visualisation Treemap présente les données hiérarchiques (structurées en arborescence) sous la forme d’un ensemble de rectangles imbriqués. |
-| ![Type](/help/assets/icons/TwoDots.svg) | [Venn](/help/analysis-workspace/visualizations/venn.md) | Une visualisation de Venn utilise des cercles pour représenter le chevauchement des mesures de jusqu’à 3 segments. |
+| ![Type](/help/assets/icons/TwoDots.svg) | [Venn](/help/analysis-workspace/visualizations/venn.md) | Une visualisation Venn utilise des cercles pour représenter le chevauchement des mesures dʼun maximum de trois segments. |
 
 <!-- Add beneath Horizontal bar in the table above: | [Journey canvas](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) | Similar to Fallout, Journey canvas shows where persons left (fell out) and continued through (fell through) a predefined sequence of pages. <p>Unlike Fallout, Journey canvas supports not only linear journeys, but any number of entry points and paths. Furthermore, journeys can be created in Adobe Journey Optimizer and then analyzed in Journey canvas.</p> | -->
 
@@ -158,6 +158,6 @@ Certaines visualisation (comme Table de cohorte, Abandons, Flux, etc.) possèden
 
 ## Visualiser
 
-Si vous ne savez pas quelle visualisation choisir, sélectionnez ![GraphBarVerticalAdd](/help/assets/icons/GraphBarVerticalAdd.svg) **[!UICONTROL Visualiser]** dans une ligne de tableau à structure libre (disponible au survol de la souris). Cette sélection est la méthode la plus rapide pour ajouter une visualisation. Analysis Workspace s’affiche alors et détermine quelle visualisation serait la mieux adaptée à vos données. Par exemple, si une ligne est sélectionnée, un [graphique linéaire](line.md) à tendance est créé. Si trois lignes de segment sont sélectionnées, un diagramme de [venn](venn.md) est créé.
+Si vous ne savez pas quelle visualisation choisir, sélectionnez ![GraphBarVerticalAdd](/help/assets/icons/GraphBarVerticalAdd.svg) **[!UICONTROL Visualiser]** dans une ligne de tableau à structure libre (disponible au survol de la souris). Cette sélection est la méthode la plus rapide pour ajouter une visualisation. Analysis Workspace s’affiche alors et détermine quelle visualisation serait la mieux adaptée à vos données. Par exemple, si une ligne est sélectionnée, un [graphique linéaire](line.md) à tendance est créé. Si trois lignes de segment sont sélectionnées, un diagramme de [Venn](venn.md) est créé.
 
 ![Visualisation rapide](assets/quick-viz.png)

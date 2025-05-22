@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 07f9a224d43658a58779abecd6473fceb7109ef4
 workflow-type: tm+mt
 source-wordcount: '2125'
-ht-degree: 85%
+ht-degree: 96%
 
 ---
 
@@ -19,14 +19,14 @@ La création dʼune vue de données implique soit la création de mesures et de 
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Créer ou modifier une vue de données](https://video.tv.adobe.com/v/345542/?quality=12&learn=on&captions=fre_fr){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Créer ou modifier une vue de données](https://video.tv.adobe.com/v/35110/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 
 
-Pour créer ou modifier une vue de données :
+Pour créer ou modifier une vue de données, procédez comme suit :
 
-1. Connectez-vous à [Customer Journey Analytics](https://analytics.adobe.com) et sélectionnez **[!UICONTROL Vues de données]**, éventuellement à partir de **[!UICONTROL Gestion des données]**, dans le menu supérieur.
+1. Connectez-vous à [Customer Journey Analytics](https://analytics.adobe.com) et sélectionnez **[!UICONTROL Vues de données]**, éventuellement à partir de **[!UICONTROL Gestion des données]**, dans le menu supérieur.
 1. Pour créer une vue de données, sélectionnez **[!UICONTROL Créer une vue de données]**. Vous pouvez également sélectionner une vue de données existante dans la liste des vues de données pour la modifier.
 
 
@@ -40,7 +40,7 @@ Pour configurer une vue de données nouvelle ou existante :
 
 ![Configurer la vue de données](assets/dataview-configure.png)
 
->[!TAB B2B edition]
+>[!TAB B2B Edition]
 
 ![Configurer la vue de données B2B](assets/dataview-configure-b2b.png)
 
@@ -100,13 +100,13 @@ Désigne le nom des conteneurs pour la vue de données. Les noms de conteneur so
 
 | Paramètre | Description |
 | --- | --- |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Nom du conteneur de compte global &#x200B;]** | `Global Account` (par défaut). Le conteneur [!UICONTROL Compte global] comprend chaque session et événement pour les comptes globaux au cours de la période spécifiée. Si votre organisation utilise un autre terme, vous pouvez renommer le conteneur ici. |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Nom du conteneur du compte &#x200B;]** | `Account` (par défaut). Le conteneur [!UICONTROL Compte] comprend chaque session et événement pour les comptes au cours de la période spécifiée. Si votre organisation utilise un autre terme, vous pouvez renommer le conteneur ici. |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Nom du conteneur d’opportunités &#x200B;]** | `Opportunity` (par défaut). Le conteneur [!UICONTROL Opportunité] comprend chaque session et événement pour les opportunités au cours de la période spécifiée. Si votre organisation utilise un autre terme, vous pouvez renommer le conteneur ici. |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Nom du conteneur du groupe d&#39;achat &#x200B;]** | `Buying Group` (par défaut). Le conteneur [!UICONTROL Groupe d&#39;achat] comprend chaque session et événement pour les groupes d&#39;achat au cours de la période spécifiée. Si votre organisation utilise un autre terme, vous pouvez renommer le conteneur ici. |
-| **[!UICONTROL Nom du conteneur de personnes]** | `Person` (par défaut). Le conteneur [!UICONTROL Personne] inclut chaque session et événement pour les personnes au cours dʼune période indiquée. Si votre organisation utilise un autre terme (par exemple, « Visiteur » ou « Utilisateur »), vous pouvez renommer le conteneur ici. |
-| **[!UICONTROL Nom du conteneur de sessions]** | `Session` (par défaut). Le conteneur [!UICONTROL Session] permet dʼidentifier les interactions de pages, les campagnes ou les conversions pour une session spécifique. Vous pouvez renommer ce conteneur en « Visite » ou tout autre terme de votre choix. |
-| **[!UICONTROL Nom du conteneur d’événements]** | `Event` (par défaut). Le conteneur [!UICONTROL Événement] définit des événements individuels dans un jeu de données. Si votre organisation utilise un autre terme (par exemple, « Accès » ou « Pages vues »), vous pouvez renommer le conteneur ici. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Nom du conteneur Compte global ]** | `Global Account` (valeur par défaut). Le conteneur [!UICONTROL Compte global] inclut toutes les sessions et événements des comptes globaux au cours de la période indiquée. Si votre organisation utilise un autre terme, vous pouvez renommer le conteneur ici. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Nom du conteneur Compte ]** | `Account` (valeur par défaut). Le conteneur [!UICONTROL Compte] inclut toutes les sessions et événements des comptes au cours de la période indiquée. Si votre organisation utilise un autre terme, vous pouvez renommer le conteneur ici. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Nom du conteneur Opportunité&#x200B;]** | `Opportunity` (valeur par défaut). Le conteneur [!UICONTROL Opportunité] inclut toutes les sessions et événements des opportunités au cours de la période indiquée. Si votre organisation utilise un autre terme, vous pouvez renommer le conteneur ici. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Nom du conteneur Groupe d’achat ]** | `Buying Group` (valeur par défaut). Le conteneur [!UICONTROL Groupe d’achat] inclut toutes les sessions et événements des groupes d’achat au cours de la période indiquée. Si votre organisation utilise un autre terme, vous pouvez renommer le conteneur ici. |
+| **[!UICONTROL Nom du conteneur Personne]** | `Person` (valeur par défaut). Le conteneur [!UICONTROL Personne] inclut chaque session et événement pour les personnes au cours dʼune période indiquée. Si votre organisation utilise un autre terme (par exemple, « Visiteur » ou « Utilisateur »), vous pouvez renommer le conteneur ici. |
+| **[!UICONTROL Nom du conteneur de sessions]** | `Session` (valeur par défaut). Le conteneur [!UICONTROL Session] permet dʼidentifier les interactions de pages, les campagnes ou les conversions pour une session spécifique. Vous pouvez renommer ce conteneur en « Visite » ou tout autre terme de votre choix. |
+| **[!UICONTROL Nom du conteneur d’événements]** | `Event` (valeur par défaut). Le conteneur [!UICONTROL Événement] définit des événements individuels dans un jeu de données. Si votre organisation utilise un autre terme (par exemple, « Accès » ou « Pages vues »), vous pouvez renommer le conteneur ici. |
 
 {style="table-layout:auto"}
 
@@ -194,8 +194,8 @@ Déterminez la période d’inactivité entre les événements avant l’expirat
 
 ### Prévisualisation des données
 
-L’aperçu des données compare (pour les différents conteneurs) les données de cette vue de données avec les données de la connexion. Le pourcentage de prévisualisation est basé sur le nombre total dans la connexion des 90 derniers jours.
+La prévisualisation des données compare (pour les différents conteneurs) les données de cette vue de données avec celles de la connexion. Le pourcentage de prévisualisation est basé sur le nombre total dans la connexion des 90 derniers jours.
 
-Si l’aperçu ne se charge pas, votre connexion peut encore être en cours de remplissage.
+Si la prévisualisation ne charge pas, votre connexion peut encore être en cours de renvoi.
 
 Une fois tous les paramètres spécifiés, cliquez sur **[!UICONTROL Enregistrer et terminer]**.

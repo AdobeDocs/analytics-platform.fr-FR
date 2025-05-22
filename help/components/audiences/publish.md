@@ -7,7 +7,7 @@ role: User
 source-git-commit: be062e350a8c1989be41aeb2774471a3fe1bf524
 workflow-type: tm+mt
 source-wordcount: '2368'
-ht-degree: 74%
+ht-degree: 96%
 
 ---
 
@@ -71,9 +71,9 @@ Lisez cette [vue d’ensemble](/help/components/audiences/audiences-overview.md)
 
    | Méthode de création | Détails |
    | --- | --- |
-   | Depuis l’interface **[!UICONTROL Audiences]** | Sélectionnez **[!UICONTROL Composants]** > **[!UICONTROL Audiences]** dans le menu principal de Customer Journey Analytics. L’interface Audiences s’affiche. Sélectionnez **[!UICONTROL Créer une audience]** et le [!UICONTROL Créateur d’audience] s’ouvre. |
+   | Depuis l’interface **[!UICONTROL Audiences]**. | Sélectionnez **[!UICONTROL Composants]** > **[!UICONTROL Audiences]** dans le menu principal de Customer Journey Analytics. L’interface Audiences s’affiche. Sélectionnez **[!UICONTROL Créer une audience]** et le [!UICONTROL créateur d’audiences] s’ouvre. |
    | Depuis une visualisation dans Analysis Workspace | De nombreuses visualisations dans Analysis Workspace vous permettent de créer une audience à l’aide du menu contextuel. Par exemple, vous pouvez sélectionner **[!UICONTROL Créer une audience]** dans le menu contextuel d’un élément dans un [Tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) ou d’un nœud dans une [Zone de travail de parcours](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md).<p>L’utilisation de cette méthode préremplit le segment dans le créateur d’audiences avec la dimension ou l’élément de dimension que vous avez sélectionné.</p><p>Les visualisations suivantes vous permettent de créer une audience à l’aide du menu de clic droit :</p><ul><li>[Table de cohorte](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)</li><li>[Abandon](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)</li><li>[Flux](/help/analysis-workspace/visualizations/c-flow/flow.md)</li><li>[Tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)</li><li>[Zone de travail de parcours](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)</li><li>[Venn](/help/analysis-workspace/visualizations/venn.md)</li></ul><p>**Note :** les audiences ne peuvent pas inclure de mesures calculées. Si vous essayez de créer une audience qui contient une mesure calculée, la mesure calculée n’est pas incluse dans la définition de l’audience.</p> |
-   | À partir de l’interface utilisateur de création/modification de segment | Cochez la case qui indique **[!UICONTROL Créer une audience à partir de ce segment]**. L’utilisation de cette méthode préremplit le segment. Voir [Créer des segments](/help/components/filters/create-filters.md) pour plus d’informations. |
+   | À partir de l’interface d’utilisation de création/modification de segment | Cochez la case qui indique : **[!UICONTROL Créer une audience à partir de ce segment]**. L’utilisation de cette méthode préremplit le segment. Voir [Créer des segments](/help/components/filters/create-filters.md) pour plus d’informations. |
 
    {style="table-layout:auto"}
 
@@ -101,7 +101,7 @@ Configurez ces paramètres pour définir ou mettre à jour votre audience.
 | **[!UICONTROL Étiquettes]** | Toutes les balises que vous souhaitez affecter à l’audience à des fins d’organisation. Vous pouvez sélectionner une ou plusieurs balises préexistantes ou en saisir une nouvelle. |
 | **[!UICONTROL Description]** | Description de l’audience pour la différencier des autres. Par exemple, `Build an audience of really interested potential car buyers` |
 | **[!UICONTROL Fréquence d’actualisation]** | Fréquence à laquelle vous souhaitez actualiser l’audience.<p/>Vous pouvez choisir entre les options suivantes : <ul><li>Audience **[!UICONTROL ponctuelle]** : audience (par défaut) qui n’a pas besoin d’être actualisée. Par exemple, cette option peut s’avérer utile pour des campagnes ponctuelles spécifiques.<br/>Vous devez spécifier une **[!UICONTROL Période ponctuelle]**. Vous pouvez utiliser ![Calendrier](/help/assets/icons/Calendar.svg) pour saisir une période.</li><li>Audience actualisable. Vous avez les choix suivants :<ul><li>**[!UICONTROL Toutes les 4 heures]** : audience qui s’actualise toutes les 4 heures.</li><li>**[!UICONTROL Quotidien]** : audience qui s’actualise quotidiennement.</li><li>**[!UICONTROL Hebdomadaire]** : audience qui s’actualise toutes les semaines.</li><li>**[!UICONTROL Mensuel]** : audience qui s’actualise tous les mois.</li></ul></li>Pour actualiser les audiences, vous devez indiquer les informations suivantes :<ul><li>**[!UICONTROL Actualiser l’intervalle de recherche en amont]**. Définissez le nombre de jours de recherche en amont à partir desquels une audience est évaluée. Vous pouvez effectuer un choix parmi des options ou définir une heure personnalisée. La durée maximale est de 90 jours.</li><li>**[!UICONTROL Date d’expiration]** : permet de définir à quel moment l’audience cesse d’être actualisée. Vous pouvez utiliser ![Calendrier](/help/assets/icons/Calendar.svg) pour sélectionner une date. La valeur par défaut est d’un an à compter de la date de création. Les audiences arrivant à expiration sont traitées de la même manière que les rapports planifiés arrivant à expiration. L’administrateur ou l’administratrice reçoit un e-mail un mois avant l’expiration de l’audience.</li></ul> Notez qu’il existe une limite de 75 à 150 actualisations d’audience, selon vos droits Customer Journey Analytics.</li></ul> |
-| **[!UICONTROL Filtrer]** | Les filtres sont la principale entrée de l’audience. Faites glisser un ou plusieurs segments depuis le panneau ![Segmentation](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segment]** vers la zone Segment . Vous pouvez utiliser ![Rechercher](/help/assets/icons/Search.svg) [!UICONTROL *Rechercher des segments*] pour rechercher des segments. Vous pouvez ajouter jusqu’à 20 segments. Les segments peuvent être joints à l’aide d’opérateurs **[!UICONTROL Et]** ou **[!UICONTROL Ou]**.<p>Lors de la création d’une audience à partir d’une visualisation dans Analysis Workspace (un tableau à structure libre ou une zone de travail de Parcours, par exemple), tous les segments appliqués au panneau ou à la colonne sont conservés. Vous pouvez supprimer tous les segments qui sont automatiquement appliqués.</p> |
+| **[!UICONTROL Filtrer]** | Les filtres sont la principale entrée de l’audience. Effectuez un glisser-déposer d’un ou plusieurs segments depuis le panneau de gauche ![Segmentation](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segment]** vers la zone Segment. Vous pouvez utiliser ![Rechercher](/help/assets/icons/Search.svg) [!UICONTROL *Rechercher des segments*] pour rechercher des segments. Vous pouvez ajouter jusquʼà 20 segments. Les segments peuvent être liés avec des opérateurs **[!UICONTROL Et]** ou **[!UICONTROL Ou]**.<p>Lorsque vous créez une audience à partir d’une visualisation dans Analysis Workspace (un tableau à structure libre ou une zone de travail de parcours, par exemple), tous les segments appliqués au panneau ou à la colonne sont conservés. Vous pouvez supprimer tous les segments appliqués automatiquement.</p> |
 | **[!UICONTROL Prévisualisation des données]** | Sélectionnez ![Infos](/help/assets/icons/Info.svg) pour afficher ou masquer la [Prévisualisation des données](#data-preview) pour la période sélectionnée. |
 
 ## Prévisualisation des données
@@ -151,7 +151,7 @@ Tenez compte des points suivants lorsque vous utilisez des audiences publiées d
 
 ## Utiliser les audiences Customer Journey Analytics dans Experience Platform {#audiences-aep}
 
-Customer Journey Analytics récupère toutes les combinaisons d’espace de noms et d’identifiants de votre audience publiée et les diffuse dans Real-Time Customer Data Platform. Customer Journey Analytics envoie l’audience à Experience Platform avec l’identité principale définie sur l’élément sélectionné en fonction de ce qui a été sélectionné comme [!UICONTROL ID de personne] lors de la configuration de la connexion.
+Customer Journey Analytics récupère désormais toutes les combinaisons d’espace de noms et d’ID de votre audience publiée et les diffuse dans Real-Time CDP. Customer Journey Analytics envoie l’audience à Experience Platform avec l’identité principale définie sur l’élément sélectionné en fonction de ce qui a été sélectionné comme [!UICONTROL ID de personne] lors de la configuration de la connexion.
 
 Real-Time Customer Data Platform examine ensuite chaque combinaison espace de noms/ID et recherche un profil dont elle peut faire partie. Un profil est essentiellement un groupe d’espaces de noms, d’identifiants et d’appareils liés. Si un profil est trouvé, il ajoute l’espace de noms et l’identifiant aux autres identifiants de ce profil en tant qu’attribut d’appartenance à un segment. Par exemple, <user@adobe.com> peut être ciblé sur tous leurs appareils et canaux. Si aucun profil n’est trouvé, un nouveau profil est créé.
 
@@ -175,38 +175,38 @@ Pour plus d’informations sur l’utilisation des audiences dans Platform, cons
 
 ### Comprendre les incohérences dans le nombre d’audiences
 
-Des incohérences dans le nombre d’audiences peuvent se produire entre Customer Journey Analytics et Real-Time Customer Data Platform.
+Il peut y avoir incohérences dans le nombre d’audiences entre Customer Journey Analytics et Real-Time CDP.
 
 <!--
 ![Infographic on audience differences between Customer Journey Analytics and Real-Time CDP.](/help/components/audiences/assets/infographic-cja-rtcdp.png)
 -->
 
-#### Comptages estimatifs et déterministes
+#### Estimations et nombres déterministes
 
-La méthodologie par laquelle le nombre d’adhésions à l’audience est calculé diffère entre les deux applications, comme décrit ci-dessous.
+La méthodologie de calcul du nombre de membres de l’audience diffère entre les deux applications, comme décrit ci-dessous.
 
-* **Customer Journey Analytics** : la mesure **[!UICONTROL Nombre total de personnes]** dans Customer Journey Analytics est une valeur estimée. Cela signifie que le nombre est une estimation basée sur les règles de l’audience et qu’il peut varier entre les intervalles d’actualisation.
-* **Real-Time Customer Data Platform** : le nombre dans Real-Time Customer Data Platform est déterministe, en fonction des tâches d’évaluation quotidiennes, et fixe au moment où l’audience termine sa publication sur le portail d’audiences.
+* **Customer Journey Analytics** : la mesure **[!UICONTROL Nombre total de personnes]** dans Customer Journey Analytics est une valeur estimée. Cela signifie que le nombre est une estimation basée sur les règles de l’audience et qu’il peut varier entre les intervalles d’actualisation.
+* **Real-Time Customer Data Platform** : le nombre dans Real-Time Customer Data Platform est déterministe, en fonction des tâches d’évaluation quotidiennes, et fixe au moment où l’audience termine sa publication sur le portail d’audiences.
 
-#### Intervalle et taux de publication
+#### Période et taux de publication
 
-Les audiences publient sur Real-Time Customer Data Platform à un taux de 1 500 enregistrements par seconde (RPS). Par exemple, la publication complète d’une audience de 20 millions de membres prendra environ 3,7 heures (20 millions/1 500 RPS/3 600 secondes par heure). Pendant ce temps, des différences d’appartenance à l’audience entre les deux applications sont probables.
+Les audiences publient sur Real-Time Customer Data Platform à un taux de 1 500 enregistrements par seconde (RPS). Par exemple, la publication complète d’une audience de 20 millions de membres prendra environ 3,7 heures (20 millions/1 500 RPS/3 600 secondes par heure). Pendant ce temps, il est probable de constater des différences dans le nombre de membres de l’audience entre les deux applications.
 
 #### Fragmentation du profil
 
-Si des profils importés de Customer Journey Analytics existent déjà dans Real-Time Customer Data Platform, ils ne sont pas comptabilisés comme de nouveaux profils. Cela peut entraîner un nombre de profils inférieur aux prévisions dans Real-Time Customer Data Platform.
+Si des profils importés de Customer Journey Analytics existent déjà dans Real-Time Customer Data Platform, ils ne sont pas comptabilisés comme de nouveaux profils. Cela peut entraîner un nombre de profils inférieur aux prévisions dans Real-Time Customer Data Platform.
 
 #### Audiences par lots ou en flux continu
 
-Les audiences Customer Journey Analytics ne sont pas incluses dans la tâche d’évaluation quotidienne par lots et restent fixes jusqu’au prochain intervalle de publication. En revanche, d’autres audiences par lots dans Real-Time Customer Data Platform sont réévaluées toutes les 24 heures.
+Les audiences Customer Journey Analytics ne sont pas incluses dans la tâche d’évaluation quotidienne par lots et restent fixes jusqu’à la prochaine période de publication. En revanche, d’autres audiences par lots dans Real-Time Customer Data Platform sont réévaluées toutes les 24 heures.
 
 ### Points essentiels à retenir
 
-* **Nombres estimés dans Customer Journey Analytics** : comprenez que le nombre **[!UICONTROL Total de personnes]** dans Customer Journey Analytics est une estimation et peut varier en raison des données de diffusion en continu et des comportements d’identité.
-* **Nombre déterministe dans Real-Time Customer Data Platform** : le nombre dans Real-Time Customer Data Platform est fixe et ne change que lors de la prochaine période de publication.
-* **Fragmentation de profil** : sachez que les profils existants dans Real-Time Customer Data Platform peuvent ne pas contribuer au nombre de nouveaux profils lors de l’import depuis Customer Journey Analytics.
+* **Estimations dans Customer Journey Analytics** : le nombre **[!UICONTROL Total de personnes]** dans Customer Journey Analytics est une estimation et peut varier en raison des données en flux continu et des comportements d’identité.
+* **Nombres déterministes dans Real-Time Customer Data Platform** : le nombre dans Real-Time Customer Data Platform est fixe et ne change que lors de la prochaine période de publication.
+* **Fragmentation de profil** : notez que les profils existants dans Real-Time Customer Data Platform peuvent ne pas contribuer au nombre de nouveaux profils lors de l’import depuis Customer Journey Analytics.
 
-En différenciant clairement ces aspects, vous pouvez mieux comprendre et gérer les données de votre audience dans Customer Journey Analytics et Real-Time Customer Data Platform.—>
+Si vous faites la différence entre ces éléments, vous pouvez mieux comprendre et gérer les données de votre audience dans Customer Journey Analytics et Real-Time Customer Data Platform.--->
 
 ## Questions fréquentes {#faq}
 

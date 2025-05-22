@@ -8,7 +8,7 @@ role: User
 source-git-commit: 1474a29dc9063ea65a78d34b3a2eb9861a71ee4e
 workflow-type: tm+mt
 source-wordcount: '2091'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -40,7 +40,7 @@ Les [traitements](curate.md) appliqués avant le partage sont répercutés lorsq
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Partage de projet dans Analysis Workspace](https://video.tv.adobe.com/v/40030/?quality=12&learn=on&captions=fre_fr){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Partage de projet dans Analysis Workspace](https://video.tv.adobe.com/v/36207/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 
@@ -150,17 +150,17 @@ Vous pouvez accorder un [accès en lecture seule](/help/analysis-workspace/curat
 >
 >* Les projets comportant plus de 50 visualisations étendues ne peuvent pas être partagés avec des personnes qui n’ont pas accès à Customer Journey Analytics.
 >
->* Les utilisateurs et utilisatrices avec lesquels vous partagez du contenu peuvent afficher tous les segments qui ont été appliqués au projet lors du [traitement](curate.md).
+>* Les personnes avec lesquelles vous partagez le projet peuvent afficher les segments qui ont été appliqués au projet pendant le [traitement](curate.md).
 > 
 >* Les personnes avec lesquelles vous effectuez le partage peuvent modifier la période du projet. La période que vous définissez pour le projet s’affiche par défaut.
 >
 >* Un projet peut devenir inaccessible si de nombreuses personnes tentent d’accéder simultanément à un lien donné. Par défaut, plus de 190 personnes peuvent accéder à un seul lien toutes les 5 minutes. Si votre organisation atteint cette limite, patientez 5 minutes, puis tentez à nouveau d’accéder au lien.
 >
->* Pour les licences [!DNL Healthcare Shield] et [!DNL Privacy & Security Shield], la fonctionnalité [!UICONTROL Partager avec tout le monde] nécessite une authentification Experience Cloud. Pour les clients [!DNL Healthcare Shield], un avertissement de « conformité HIPAA » s’affiche, mais vous pouvez toujours utiliser cette fonctionnalité après l’authentification auprès d’Experience Cloud.
+>* Pour les licences [!DNL Healthcare Shield] et [!DNL Privacy & Security Shield], la fonctionnalité [!UICONTROL Partager avec tout le monde] nécessite une authentification Experience Cloud. Pour les clientes et clients [!DNL Healthcare Shield], un avertissement de « conformité HIPAA » s’affiche, mais vous pouvez toujours utiliser cette fonctionnalité après l’authentification auprès d’Experience Cloud.
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Partager avec tout le monde](https://video.tv.adobe.com/v/3452452/?quality=12&learn=on&captions=fre_fr){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Partager avec tout le monde](https://video.tv.adobe.com/v/3420093/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 
@@ -215,7 +215,7 @@ Vous pouvez partager les composants incorporés qui font partie de votre projet.
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Partager des composants incorporés dans Analysis Workspace](https://video.tv.adobe.com/v/327496/?quality=12&learn=on&captions=fre_fr){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Partager des composants incorporés dans Analysis Workspace](https://video.tv.adobe.com/v/24713/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 

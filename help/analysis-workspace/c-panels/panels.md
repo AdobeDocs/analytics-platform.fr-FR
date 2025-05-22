@@ -7,7 +7,7 @@ role: User
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '2129'
-ht-degree: 94%
+ht-degree: 97%
 
 ---
 
@@ -77,7 +77,7 @@ Vous pouvez effectuer les opérations suivantes :
 
 ## Vue de données
 
-Chaque panneau est associé à une [vue de données](/help/data-views/data-views.md), identifiée par ![Données](/help/assets/icons/Data.svg) **[!UICONTROL *nom de la vue de données *]**&#x200B;dans le menu déroulant en haut à droite du panneau.
+Chaque panneau est associé à une [vue de données](/help/data-views/data-views.md), identifiée par ![Données](/help/assets/icons/Data.svg) **[!UICONTROL *nom de la vue de données *]**dans le menu déroulant en haut à droite du panneau.
 
 Lorsque vous créez un projet Workspace vierge, la vue de données par défaut du panneau initial correspond à la dernière vue de données avec laquelle vous avez travaillé dans Customer Journey Analytics.
 
@@ -85,7 +85,7 @@ Lorsque vous créez un panneau, la vue de données par défaut est basée sur la
 
 >[!IMPORTANT]
 >
->La vue de données sélectionnée détermine les dimensions, mesures et segments disponibles pour la création de visualisations dans un panneau.
+>La vue de données sélectionnée détermine les dimensions, les mesures et les segments disponibles pour la création des visualisations dans un panneau.
 >
 >
 >Lorsque vous changez la vue de données d’un panneau, certains composants peuvent ne pas être disponibles dans la nouvelle vue de données. Cette modification peut empêcher votre visualisation de s’afficher correctement. Des avertissements peuvent s’afficher, par exemple :
@@ -147,7 +147,7 @@ Faites glisser un segment à partir du panneau de gauche vers la zone de dépôt
 Vous pouvez également faire glisser les composants qui ne sont pas des segments directement vers la zone de dépôt pour créer des segments rapides, ce qui vous permet de gagner du temps et vous évite de passer par le [créateur de segments](/help/components/filters/filter-builder.md). Les segments ainsi créés sont automatiquement définis comme des segments de niveau événement. Cette définition peut être rapidement modifiée en sélectionnant l’option ![Modifier](/help/assets/icons/Edit.svg) à côté du nom du segment.
 
 
-Pour en savoir plus, voir [Segments rapides](/help/components/filters/quick-filters.md).
+Pour en savoir plus, consultez [Segments rapides](/help/components/filters/quick-filters.md).
 
 ![Segments ad hoc rendus publics et déposés dans la zone de dépôt](assets/adhoc-segment-filter.png)
 
@@ -155,7 +155,7 @@ Pour en savoir plus, voir [Segments rapides](/help/components/filters/quick-filt
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Déposer les segments](https://video.tv.adobe.com/v/327485?quality=12&learn=on&captions=fre_fr){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Déposer les segments](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 
@@ -168,7 +168,7 @@ Les segments déroulants statiques vous permettent d’interagir avec les donné
 
 Les segments déroulants statiques peuvent également être utilisés pour consolider plusieurs projets en un seul. Par exemple, si vous avez plusieurs versions d’un même projet avec des segments Pays différents, vous pouvez les fusionner en un seul projet et ajouter un segment de menu déroulant Pays.
 
-![Segments déroulants statiques présentant le segment « Direct » du canal de marché mis en surbrillance. ](assets/dropdown-filter-intro.png)
+![Segments déroulants statiques affichant le segment Canal de marché « Direct » en surbrillance.](assets/dropdown-filter-intro.png)
 
 ##### Créer des segments déroulants statiques
 

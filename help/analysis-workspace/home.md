@@ -8,7 +8,7 @@ solution: Customer Journey Analytics
 role: User
 source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
-source-wordcount: '1473'
+source-wordcount: '1469'
 ht-degree: 99%
 
 ---
@@ -19,7 +19,7 @@ Analysis Workspace vous permet de créer rapidement des analyses pour recueilli
 
 >[!BEGINSHADEBOX]
 
-Voir la vidéo de démonstration ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Vue d’ensemble d’Analysis Workspace](https://video.tv.adobe.com/v/3424559/?quality=12&learn=on&captions=fre_fr){target="_blank"}.
+Voir la vidéo de démonstration ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Vue d’ensemble d’Analysis Workspace](https://video.tv.adobe.com/v/26266/?quality=12&learn=on){target="_blank"}.
 
 >[!ENDSHADEBOX]
 
@@ -59,10 +59,10 @@ Les fonctionnalités sont également disponibles par le biais du menu Workspace 
 Notez que sur votre clavier, les symboles suivants peuvent être utilisés :
 
 - **⇧** pour **[!UICONTROL *Maj *]**.
-- **⌘** pour **[!UICONTROL *Cmd *]**(commande).
-- **⌃** pour **[!UICONTROL *Ctrl *]**(contrôle).
-- **⌥** pour **[!UICONTROL *Opt *]**(option).
-- **⎇** pour **[!UICONTROL *Alt *]**(alternative).
+- **⌘** pour **[!UICONTROL *cmd *]**(commande).
+- **⌃** pour **[!UICONTROL *ctrl *]**(contrôle).
+- **⌥** pour **[!UICONTROL *opt *]**(option).
+- **⎇** pour **[!UICONTROL *alt *]**(alternative).
 
 Consultez les tableaux ci-dessous pour une vue d’ensemble des menus disponibles.
 

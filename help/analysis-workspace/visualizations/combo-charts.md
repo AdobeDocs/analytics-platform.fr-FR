@@ -7,7 +7,7 @@ role: User
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '603'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -25,9 +25,9 @@ ht-degree: 95%
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente la visualisation Combo dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._
+_Cet article présente la visualisation Combo dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._
 
-_Consultez [Combo](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/combo-charts) pour la_ version ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** de cet article._
+_Consultez [Combo](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/combo-charts) pour la_ version ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 
@@ -45,7 +45,7 @@ Gardez les éléments suivants à l’esprit :
 * Vous pouvez ajouter plusieurs comparaisons dans un seul [!UICONTROL graphique combiné].
 * Si vous ajoutez une ou plusieurs comparaisons, celles-ci doivent être du même type, par exemple : [!UICONTROL Comparaison de temps].
 * Vous pouvez ajouter jusqu’à 5 comparaisons.
-* Vous pouvez appliquer jusqu’à 3 segments à une mesure.
+* Vous pouvez appliquer jusqu’à 3 segments à une mesure.
 * Les mesures calculées ne sont pas prises en charge dans les graphiques combo.
 
 ## Utilisation

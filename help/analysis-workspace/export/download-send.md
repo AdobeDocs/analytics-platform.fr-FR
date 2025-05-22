@@ -7,7 +7,7 @@ role: User
 source-git-commit: 9a15cb4d771892ff656fe72b8e53d890a3fd99f7
 workflow-type: tm+mt
 source-wordcount: '1194'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -80,7 +80,7 @@ Si vous souhaitez analyser davantage que les 400 lignes de données visibles da
 
 >[!TIP]
 >
-> Si votre dimension dépasse 50 000 éléments, téléchargez le fichier avec différentes mesures de tri appliquées ou appliquez un segment. Par exemple, triez les visites par ordre descendant dans un téléchargement, puis par ordre ascendant dans un second téléchargement. Cette astuce peut vous aider à récupérer des éléments à traîne longue.
+> Si votre dimension dépasse 50 000 éléments, téléchargez le fichier avec différentes mesures de tri appliquées ou appliquez un segment. Par exemple, triez les visites par ordre descendant dans un téléchargement, puis par ordre ascendant dans un second téléchargement. Cette astuce peut vous aider à récupérer des éléments à traîne longue.
 
 Vous pouvez réaliser plusieurs tâches au sein du projet et même naviguer vers un nouveau projet Workspace dans le même onglet pendant le téléchargement est en cours. Le téléchargement est interrompu si vous ouvrez un nouvel onglet du navigateur. Le téléchargement est annulé si vous quittez complètement Workspace ou si vous fermez lʼonglet du navigateur.
 
@@ -114,7 +114,7 @@ Si la [politique de gouvernance des données](/help/data-views/data-governance.m
 
 Si des champs de données libellés comme sensibles sont inclus dans la [!UICONTROL Vue de données], l’option permettant de sélectionner et de copier des données à l’écran est limitée pour toutes les données de la [!UICONTROL Vue de données].
 
-## FAQ {#faq}
+## Questions fréquentes {#faq}
 
 | Question | Réponse |
 | --- | --- |

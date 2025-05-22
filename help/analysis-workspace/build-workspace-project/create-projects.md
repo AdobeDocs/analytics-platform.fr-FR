@@ -61,7 +61,7 @@ Maintenant que vous avez créé un projet Workspace vierge, assurez-vous de conn
 >[!CONTEXTUALHELP]
 >id="workspace_project_commenting"
 >title="Autoriser les commentaires"
->abstract="Lorsque ce paramètre est activé, une zone de commentaires est disponible dans le rail de droite du projet dans Analysis Workspace."
+>abstract="Lorsque cette option est activée, une zone de commentaires est disponible dans le rail de droite du projet dans Analysis Workspace."
 
 
 Les paramètres du projet fournissent des informations sur le projet actif au niveau du projet.
