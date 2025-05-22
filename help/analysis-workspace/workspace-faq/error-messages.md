@@ -5,9 +5,9 @@ feature: FAQ
 exl-id: 792c3b2e-bd24-4e98-b9ea-983c1189d52e
 role: User
 source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '589'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Certains messages d’erreur courants peuvent s’afficher lorsque vous utilisez
 | Message d’erreur | Pourquoi l’erreur se produit-elle ? | Optimisation |
 | --- | --- | --- |
 | [!UICONTROL La vue de données fait l’objet de rapports exceptionnellement lourds. Veuillez réessayer ultérieurement.] | Votre organisation tente d’exécuter trop de requêtes simultanées sur une vue de données spécifique. Les facteurs à l’origine de cette erreur sont les demandes d’API, les projets planifiés, les rapports planifiés, les alertes planifiées et les utilisateurs et utilisatrices qui effectuent simultanément des demandes de création de rapports. | Répartissez vos requêtes et vos plannings pour la vue de données de manière plus uniforme tout au long de la journée.<p>Les administrateurs et les administratrices peuvent utiliser le [Gestionnaire des activités de rapport pour identifier et annuler des requêtes](/help/reporting-activity-manager/reporting-activity-overview.md) qui consomment de la capacité de création de rapports.</p> |
-| [!UICONTROL Ce rapport est trop complexe. Veuillez consulter les bonnes pratiques pour créer des rapports Analysis Workspace.] | Votre requête de création de rapports est trop volumineuse et ne peut pas être exécutée. Les facteurs à l’origine de cette erreur sont les expirations de délai en raison de la complexité de la requête. | Simplifiez votre requête. Par exemple, raccourcissez la période, simplifiez les critères de segment ou supprimez certaines colonnes ou lignes de votre tableau. Vous pouvez également envisager de diviser le tableau en plusieurs requêtes distinctes. |
+| [!UICONTROL Ce rapport est trop complexe. Veuillez consulter les bonnes pratiques pour créer des rapports Analysis Workspace.] | Votre requête de création de rapports est trop volumineuse et ne peut pas être exécutée. Les facteurs à l’origine de cette erreur sont les expirations de délai en raison de la complexité de la requête. | Simplifiez votre requête. Par exemple, raccourcissez la période, simplifiez les critères de segmentation ou supprimez certaines colonnes ou lignes de votre tableau. Vous pouvez également envisager de diviser le tableau en plusieurs requêtes distinctes. |
 | [!UICONTROL La vue des données dépasse actuellement sa capacité de reporting. Veuillez simplifier la demande ou réessayer plus tard.] | Votre organisation tente d’exécuter trop de requêtes simultanées sur une vue de données spécifique. Les facteurs à l’origine de cette erreur sont les requêtes API, les projets planifiés, et les utilisateurs et les utilisatrices qui effectuent simultanément des demandes de création de rapports. | Répartissez vos requêtes et vos plannings pour la vue de données de manière plus uniforme tout au long de la journée. |
 | [!UICONTROL Une erreur système s’est produite. Veuillez soumettre un ticket à l’assistance clientèle sous **[!UICONTROL Aide > Envoyer le ticket d’assistance]** en incluant votre code d’erreur.] | Adobe rencontre un problème qui doit être résolu. | Envoyez le code d’erreur à l’Assistance clientèle. |
 | [!UICONTROL Erreur 500 : Échec du chargement de la page] | Les problèmes liés à votre réseau local, tels que les [paramètres du pare-feu](/help/technotes/ip-addresses.md) de la société, sont un facteur contribuant à cette erreur. En outre, Adobe peut rencontrer un problème qui doit être résolu. | Essayez de vous reconnecter après quelques minutes. Si le problème persiste, envoyez le code d’ID d’instance EIM à l’assistance clientèle. |

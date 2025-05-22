@@ -6,7 +6,7 @@ title: Utilisation des touches de raccourci Workspace
 exl-id: de99a92b-701c-4cdc-a0c2-a70972a19499
 role: User
 source-git-commit: ab78583eb36d6158630724fbab9eb8148bcdbe23
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '402'
 ht-degree: 100%
 
@@ -46,7 +46,7 @@ Notez que sur votre clavier, les symboles suivants peuvent être utilisés :
 | Création d’une alerte | **[!UICONTROL *Cmd+Maj+a *]** | **[!UICONTROL *Ctrl+Maj+a *]** |
 | Création d’une mesure calculée | **[!UICONTROL *Cmd+Maj+c *]** | **[!UICONTROL *Ctrl+Maj+c *]** |
 | Création d’une période | **[!UICONTROL *Cmd+Maj+d *]** | **[!UICONTROL *Ctrl+Maj+d *]** |
-| Création d’un segment | **[!UICONTROL *Cmd+Maj+e *]** | **[!UICONTROL *Ctrl+Maj+e *]** |
+| Créer un segment | **[!UICONTROL *Cmd+Maj+e *]** | **[!UICONTROL *Ctrl+Maj+e *]** |
 | Effacer tout | **[!UICONTROL *Alt+w *]** | **[!UICONTROL *Opt+w *]** |
 | Copier | **[!UICONTROL *Cmd+c *]** | **[!UICONTROL *Ctrl+C *]** |
 | Répéter | **[!UICONTROL *Cmd+Maj+Z *]** | **[!UICONTROL *Ctrl+Maj+Z *]** |

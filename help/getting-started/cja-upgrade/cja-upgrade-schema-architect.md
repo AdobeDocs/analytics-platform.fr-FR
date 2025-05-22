@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: f932110a-ca9d-40d1-9459-064ef9cd23da
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '487'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ L’architecture sous-jacente de Customer Journey Analytics offre beaucoup plu
 
 >[!NOTE]
 >
->Les informations suivantes ne sont pas encore complètes. Elle sera terminée dans un avenir proche.
+>Les informations suivantes ne sont pas encore complètes. Elles seront bientôt complètes.
 
 | Architecture des données Adobe Analytics | Architecture du schéma XDM |
 |---------|----------|
@@ -50,10 +50,10 @@ L’architecture sous-jacente de Customer Journey Analytics offre beaucoup plu
 
 >[!NOTE]
 >
->Ces informations ne sont pas encore disponibles. Il sera disponible prochainement.
+>Ces informations ne sont pas encore disponibles. Elles seront bientôt disponibles.
 
 ## Prendre en compte les autres applications Adobe Experience Platform utilisées dans votre organisation
 
 >[!NOTE]
 >
->Ces informations ne sont pas encore disponibles. Il sera disponible prochainement.
+>Ces informations ne sont pas encore disponibles. Elles seront bientôt disponibles.

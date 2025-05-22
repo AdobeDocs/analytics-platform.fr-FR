@@ -5,9 +5,9 @@ exl-id: ab2b7ff2-c638-4ab4-bc86-d1701bebcb1a
 feature: Privacy
 role: Admin
 source-git-commit: 612fce23fe4cb9920c05f3253d69e543668a7cf1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '387'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -39,4 +39,4 @@ Conformément au CCPA, le Service Confidentialité reçoit les demandes de refus
 
 >[!MORELIKETHIS]
 >
->* [Blog : Comment maintenir une gouvernance efficace dans Adobe Customer Journey Analytics ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/bg-p/adobe-analytics-blogs/page/4?profile.language=fr)
+>* [Blog : comment maintenir une gouvernance efficace dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/bg-p/adobe-analytics-blogs/page/4)

@@ -5,9 +5,9 @@ feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
 role: User
 source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '326'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 96%
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente la visualisation Flux dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consultez [Flux](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/flow/flow) pour la_ version ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** de cet article._
+_Cet article présente la visualisation Flux dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consultez [Flux](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/flow/flow) pour la_ version ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 
@@ -41,7 +41,7 @@ Avec cette visualisation, vous pouvez réaliser les actions suivantes :
 
 * Visualisez le parcours des clientes e t clients dans votre site web ou votre application.
 * Analysez où se rendent les clientes et clients avant et après les points de contrôle spécifiés, tels qu’une entrée, une dimension spécifique ou une sortie.
-* Créez des segments en désignant un point spécifique dans un chemin choisi.
+* Créez des segments en désignant un point spécifique dans un chemin donné.
 
 
 >[!BEGINSHADEBOX]

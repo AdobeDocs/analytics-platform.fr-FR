@@ -5,9 +5,9 @@ feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
 source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1988'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 90%
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_button"
 >title="Zone de travail de parcours"
->abstract="Indique comment les personnes passent par une série de points de contact ou en sortent. À utiliser pour les parcours comportant plusieurs points d’entrée et chemins d’accès, ou pour analyser les parcours créés dans Journey Optimizer."
+>abstract="Indique comment les personnes passent par une série de points de contact ou en sortent. À utiliser pour les parcours comportant plusieurs points et chemins d’entrée, ou pour analyser les parcours créés dans Journey Optimizer."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -27,7 +27,7 @@ ht-degree: 90%
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_panel"
 >title="Zone de travail de parcours"
->abstract="Analysez la façon dont les personnes passent par un parcours défini ou en sortent. Créez des analyses de parcours d’utilisateurs et d’utilisatrices en créant un graphique flexible de nœuds et de flèches représentant n’importe quelle combinaison d’événements, d’éléments de dimension et de segments. Faites glisser des nœuds sur la zone de travail pour réorganiser les événements et les conditions du parcours. Les données sont mises à jour en conséquence. <br/><br/>Les clientes et clients ayant accès à Adobe Journey Optimizer peuvent analyser les parcours Journey Optimizer existants."
+>abstract="Analysez la façon dont les personnes passent par un parcours défini ou en sortent. Créez des analyses de parcours d’utilisation en créant un graphique flexible de nœuds et de flèches représentant n’importe quelle combinaison d’événements, d’éléments de dimension et de segments. Faites glisser des nœuds sur la zone de travail pour réorganiser les événements et les conditions du parcours. Les données sont mises à jour en conséquence. <br/><br/>Les clientes et clients qui ont accès à Adobe Journey Optimizer peuvent analyser les parcours Journey Optimizer existants."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -36,7 +36,7 @@ ht-degree: 90%
 >[!CONTEXTUALHELP]
 >id="journeycanvas_button"
 >title="Zone de travail de parcours"
->abstract="Indique comment les personnes passent par une série de points de contact ou en sortent. À utiliser pour les parcours comportant plusieurs points d’entrée et chemins d’accès, ou pour analyser les parcours créés dans Journey Optimizer."
+>abstract="Indique comment les personnes passent par une série de points de contact ou en sortent. À utiliser pour les parcours comportant plusieurs points et chemins d’entrée, ou pour analyser les parcours créés dans Journey Optimizer."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -45,19 +45,19 @@ ht-degree: 90%
 >[!CONTEXTUALHELP]
 >id="journeycanvas_panel"
 >title="Zone de travail de parcours"
->abstract="Analysez la façon dont les personnes passent par un parcours défini ou en sortent. Créez des analyses de parcours d’utilisateurs et d’utilisatrices en créant un graphique flexible de nœuds et de flèches représentant n’importe quelle combinaison d’événements, d’éléments de dimension et de segments. Faites glisser des nœuds sur la zone de travail pour réorganiser les événements et les conditions du parcours. Les données sont mises à jour en conséquence. <br/><br/>Les clientes et clients ayant accès à Adobe Journey Optimizer peuvent analyser les parcours Journey Optimizer existants."
+>abstract="Analysez la façon dont les personnes passent par un parcours défini ou en sortent. Créez des analyses de parcours d’utilisation en créant un graphique flexible de nœuds et de flèches représentant n’importe quelle combinaison d’événements, d’éléments de dimension et de segments. Faites glisser des nœuds sur la zone de travail pour réorganiser les événements et les conditions du parcours. Les données sont mises à jour en conséquence. <br/><br/>Les clientes et clients qui ont accès à Adobe Journey Optimizer peuvent analyser les parcours Journey Optimizer existants."
 
 <!-- markdownlint-enable MD034 -->
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente la visualisation Zone de travail de parcours dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**.<br/>Il n’existe aucune visualisation équivalente dans **Adobe Analytics**._
+_Cet article présente la visualisation Zone de travail de parcours dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**.<br/>Il n’existe aucune visualisation équivalente dans **Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
 La visualisation Zone de travail de parcours vous permet d’analyser les parcours que vous fournissez à vos utilisateurs et utilisatrices et à votre clientèle, et d’obtenir des informations détaillées à leur sujet. Elle vous permet de définir entièrement un parcours ou d’en afficher un depuis Journey Optimizer, puis de voir comment les personnes l’ont quitté (abandonné) ou ont continué à le parcourir (diminution).
 
-Vous pouvez [créer des analyses de parcours utilisateur](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) en utilisant n’importe quelle combinaison d’événements, d’éléments de dimension, de segments et de périodes pour créer des nœuds de parcours. Connectez les nœuds pour créer le flux du parcours et inclure plusieurs chemins et points de décision. Faites glisser des nœuds sur la zone de travail pour réorganiser les événements et les conditions du parcours. Les données sont mises à jour en temps réel au fur et à mesure des modifications.
+Vous pouvez [créer des analyses de parcours d’utilisation](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) en utilisant n’importe quelle combinaison d’événements, d’éléments de dimension, de segments et de périodes pour créer des nœuds de parcours. Connectez les nœuds pour créer le flux du parcours et inclure plusieurs chemins et points de décision. Faites glisser des nœuds sur la zone de travail pour réorganiser les événements et les conditions du parcours. Les données sont mises à jour en temps réel au fur et à mesure des modifications.
 
 [Les nœuds sont connectés](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#logic-when-connecting-nodes) en tant que « chemin définitif », ce qui signifie que les visiteurs et visiteuses sont comptabilisés tant qu’ils passent finalement d’un nœud à l’autre, quels que soient les événements qui se produisent entre les 2 nœuds. Le temps imparti aux utilisateurs et utilisatrices pour se déplacer sur le chemin est déterminé par le paramètre du conteneur.
 
@@ -170,7 +170,7 @@ La zone de travail de parcours fournit une analyse approfondie et complète qui 
 
 L’utilisation de la zone de travail de parcours pour analyser les parcours créés dans Journey Optimizer offre divers avantages :
 
-* Créez des événements à l’aide des dimensions, mesures, segments ou périodes Customer Journey Analytics.
+* Créez des événements à l’aide des dimensions, des mesures, des segments ou des périodes de Customer Journey Analytics.
 
   Dans Journey Optimizer, un utilisateur ou une utilisatrice technique doit créer un événement avant de pouvoir l’ajouter à un parcours.
 
@@ -192,21 +192,21 @@ L’utilisation de la zone de travail de parcours pour analyser les parcours cr�
 
 ### Synchronisation entre Journey Optimizer et la zone de travail de parcours
 
-Tenez compte des comportements suivants pour comprendre la synchronisation entre Journey Optimizer et la zone de travail de Parcours :
+Tenez compte des comportements suivants pour comprendre la synchronisation entre Journey Optimizer et la zone de travail du parcours :
 
-* **La synchronisation des données est unidirectionnelle uniquement**
+* **La synchronisation des données est unidirectionnelle.**
 
   Après avoir créé une analyse d’un parcours Journey Optimizer dans la zone de travail de parcours, les synchronisations de données se font dans une seule direction, de Journey Optimizer vers la zone de travail de parcours. Cela signifie que les modifications apportées à un parcours dans la zone de travail de parcours ne sont jamais répercutées dans Journey Optimizer.
 
-* **La modification d’un parcours dans la zone de travail du Parcours arrête la synchronisation**
+* **La modification d’un parcours dans la zone de travail du parcours entraîne l’arrêt de la synchronisation.**
 
-  Les modifications apportées à un parcours dans Journey Optimizer se synchronisent avec la zone de travail de Parcours [uniquement si le parcours n’a pas été modifié de manière significative dans la zone de travail de Parcours ](#differences-after-modifying-a-journey-in-journey-canvas). Une fois que vous avez modifié un parcours dans la zone de travail de parcours, les modifications que vous apportez au parcours dans Journey Optimizer ne sont pas répercutées dans la zone de travail de parcours. Pour que les modifications soient répercutées dans la zone de travail de parcours, vous pouvez supprimer et [recréer le parcours dans la zone de travail de parcours ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
+  Les modifications apportées à un parcours dans Journey Optimizer sont synchronisées avec la zone de travail du parcours [uniquement si le parcours n’a pas été modifié de manière significative dans la zone de travail du parcours](#differences-after-modifying-a-journey-in-journey-canvas). Une fois que vous avez modifié un parcours dans la zone de travail de parcours, les modifications que vous apportez au parcours dans Journey Optimizer ne sont pas répercutées dans la zone de travail de parcours. Pour que les modifications soient répercutées dans la zone de travail de parcours, vous pouvez supprimer et [recréer le parcours dans la zone de travail de parcours ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
 
-* **L’utilisation d’un lien « Partager avec tout le monde » nécessite que le projet soit enregistré dans Customer Journey Analytics une fois les modifications apportées dans Journey Optimizer**
+* **Pour utiliser un lien « Partager avec tout le monde », le projet doit être enregistré dans Customer Journey Analytics une fois les modifications apportées dans Journey Optimizer**.
 
-  Lors de l’utilisation d’un lien « Partager avec tout le monde », les modifications apportées dans Journey Optimizer ne sont pas répercutées dans la zone de travail de Parcours tant que le projet n’est pas enregistré dans Customer Journey Analytics.
+  Lorsque vous utilisez un lien « Partager avec tout le monde », les modifications apportées dans Journey Optimizer ne sont pas répercutées dans la zone de travail du parcours tant que le projet n’est pas enregistré dans Customer Journey Analytics.
 
-  Pour plus d’informations sur les liens « Partager avec tout le monde », consultez [Partager un projet avec tout le monde (n’est plus requis)](/help/analysis-workspace/curate-share/share-projects.md#share-a-project-with-anyone-no-login-required) dans [Partager des projets](/help/analysis-workspace/curate-share/share-projects.md).
+  Pour plus d’informations sur les liens « Partager avec tout le monde », consultez [Partager un projet avec tout le monde (sans connexion requise)](/help/analysis-workspace/curate-share/share-projects.md#share-a-project-with-anyone-no-login-required) dans [Partager des projets](/help/analysis-workspace/curate-share/share-projects.md).
 
 ### Différences après modification d’un parcours dans la zone de travail de parcours {#differences-after-modifying}
 
@@ -234,7 +234,7 @@ En effet, contrairement à Journey Optimizer, la zone de travail de parcours vo
 
 #### Différences de fonctionnalités
 
-Après avoir modifié un parcours Journey Optimizer dans la zone de travail du Parcours, les options disponibles dans le champ déroulant [!UICONTROL **Paramètres des flèches**] changent en fonction de vos modifications. Pour plus d’informations, consultez [Configuration des paramètres](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
+Après avoir modifié un parcours Journey Optimizer dans la zone de travail du parcours, les options disponibles dans le champ déroulant [!UICONTROL **Paramètres de la flèche**] changent en fonction de vos modifications. Pour plus d’informations, consultez [Configuration des paramètres](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
 
 Le champ [!UICONTROL **Type de nœud**] est disponible uniquement dans Journey Optimizer. Il n’est pas disponible lors de l’affichage d’un parcours Journey Optimizer dans la zone de travail de parcours, que vous apportiez ou non des modifications au parcours dans la zone de travail de parcours.
 
@@ -263,5 +263,5 @@ Vous pouvez créer des analyses dans la zone de travail de parcours en fonction 
 
 >[!MORELIKETHIS]
 >
-> * [Guide de Parcours de la visualisation de la zone de travail dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-guide-to-journey-canvas-visualization-in-adobe-customer/ba-p/737857?profile.language=fr)
+> * [Guide pour la visualisation de la zone de travail de parcours dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-guide-to-journey-canvas-visualization-in-adobe-customer/ba-p/737857)
 

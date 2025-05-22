@@ -1,18 +1,18 @@
 ---
-title: Aperçu des annotations
+title: Vue d’ensemble des annotations
 description: Utilisation des annotations dans l’espace de travail.
 solution: Customer Journey Analytics
 feature: Components
 exl-id: a87f6968-27a5-4595-be4f-0a38e03b9398
 role: User
 source-git-commit: 3cbf30778ff0fbb4198db16cbbabf3d62a87d384
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '318'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Aperçu des annotations
+# Vue d’ensemble des annotations
 
 Les annotations vous permettent de communiquer efficacement les nuances et les informations des données contextuelles aux autres parties prenantes de votre entreprise. Elles vous permettent de lier des événements de calendrier à des dimensions et à des mesures spécifiques. Vous pouvez annoter une date ou une période avec des problèmes de données connus, des jours fériés, des lancements de campagne, etc. Vous pouvez ensuite afficher les événements sous forme graphique et voir si les campagnes ou d’autres événements ont affecté le trafic sur votre site, votre utilisation de l’application mobile, votre chiffre d’affaires ou toute autre mesure.
 
@@ -24,7 +24,7 @@ Les annotations peuvent s’appliquer à :
 
 * Une date unique ou une période.
 
-* Votre jeu de données complet ou des mesures, dimensions ou segments spécifiques.
+* Votre jeu de données entier ou des mesures, dimensions ou segments spécifiques.
 
 * Le projet dans lequel les annotations sont créées (par défaut) ou tous les projets.
 

@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: bc79ba1a-1153-4fe8-b265-9703a323c977
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '238'
-ht-degree: 54%
+ht-degree: 100%
 
 ---
 
@@ -25,21 +25,21 @@ ht-degree: 54%
 
 {{upgrade-note}}
 
-Le processus recommandé de mise à niveau d’une solution d’analyse autre qu’Adobe Analytics vers Customer Journey Analytics est une nouvelle implémentation d’Experience Platform Web SDK, qui est la méthode de collecte de données préférée pour Customer Journey Analytics. En conjonction avec le SDK web, Adobe recommande également d’ingérer des données historiques provenant de la solution d’analyse tierce dans Adobe Experience Platform.
+Le processus recommandé de mise à niveau à partir d’une solution d’analyse autre qu’Adobe Analytics vers Customer Journey Analytics consiste à implémenter le SDK web Experience Platform, qui est la méthode de collecte de données privilégiée dans Customer Journey Analytics. En conjonction avec le SDK web, Adobe recommande également d’ingérer des données historiques provenant de la solution d’analyse tierce dans Adobe Experience Platform.
 
 <!-- After you have enough historical data using the Experience Platform Web SDK and you have fully transitioned to Customer Journey Analytics, the Analytics source connector can be turned off and the Web SDK can be used exclusively. -->
 
 Procédez comme suit lorsque vous passez à Customer Journey Analytics à partir d’une solution d’analyse tierce, telle que Google Analytics :
 
-1. Suivez les [étapes de mise à niveau recommandées détaillées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#detailed-recommended-upgrade-steps).
+1. Suivez les [étapes recommandées de mise à niveau détaillées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#detailed-recommended-upgrade-steps).
 
-   Ces étapes sont destinées aux organisations qui effectuent une mise à niveau à partir d’Adobe Analytics. Lorsque vous suivez ces étapes, comprenez les points suivants :
+   Ces étapes sont destinées aux organisations qui effectuent une mise à niveau à partir d’Adobe Analytics. Avant de suivre ces étapes, tenez compte des points suivants :
 
-   * Vous devez créer un flux de données.
+   * Vous devez créer un train de données.
 
-   * Vous ne pouvez pas migrer des projets et des composants à partir d’une solution non Adobe Analytics.
+   * Vous ne pouvez pas migrer des projets et des composants à partir d’une solution autre qu’Adobe Analytics.
 
-   * Selon votre solution d’analyse, un connecteur source peut être disponible pour ingérer des données historiques. Pour plus d’informations, consultez [Analytics](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/home#analytics) dans la présentation des connecteurs Source [&#128279;](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/home) dans la documentation d’Experience Platform.
+   * Selon votre solution d’analyse, un connecteur source peut être disponible pour ingérer des données historiques. Pour plus d’informations, consultez [Analytics](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/home#analytics) dans la [vue d’ensemble des connecteurs source](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/home) de la documentation d’Experience Platform.
 
 
 Contactez votre représentant ou représentante Adobe si vous avez besoin d’assistance ou de conseils plus précis.

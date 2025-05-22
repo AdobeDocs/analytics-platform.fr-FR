@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 4c0eef7d-7b0e-43b5-8126-d84d4fffd80c
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '538'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 92%
 
 L’utilisation du connecteur source Analytics comme seule implémentation pour Customer Journey Analytics présente des inconvénients inhérents.
 
-Si votre organisation a déjà effectué la mise à niveau vers Customer Journey Analytics à l’aide de l’implémentation du connecteur source Analytics uniquement, Adobe recommande de passer à une nouvelle implémentation de Web SDK pour la collecte de données en cours, et d’utiliser le connecteur source Analytics uniquement pour les données historiques.
+Si votre organisation a déjà effectué la mise à niveau vers Customer Journey Analytics uniquement en implémentant le connecteur source Analytics, Adobe recommande de passer à une nouvelle implémentation du SDK web pour la collecte de données en cours, et d’utiliser le connecteur source Analytics uniquement pour les données historiques.
 
 ## Comprendre les avantages et les inconvénients de l’utilisation exclusive du connecteur source Analytics
 
@@ -54,7 +54,7 @@ Voici le processus de haut niveau pour passer de l’utilisation exclusive du co
 
 1. Mappez chaque dimension Adobe Analytics de votre connecteur source Analytics à la dimension dans le schéma du SDK web.
 
-   1. &#x200B;
+   1. 
       <!-- how do you get here -->
 
    1. Dans la section **[!UICONTROL Mapper les champs standard]**, sélectionnez l’onglet **[!UICONTROL Personnalisé]**.

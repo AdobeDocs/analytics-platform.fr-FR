@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5086ac6e-5bee-4f0f-b7e5-a3d9bd8a1332
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '132'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -19,15 +19,15 @@ ht-degree: 90%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-personalization"
 >title="Utiliser l’objet de personnalisation pour Adobe Journey Optimizer"
->abstract="En tirant parti des technologies de pointe en matière de machine learning et de deep learning supervisés, l’optimisation personnalisée permet à une personne professionnelle (spécialisée dans le marketing) de définir des objectifs commerciaux et d’utiliser ses données de clientèle pour entraîner des modèles orientés métier afin de fournir des offres personnalisées et d’optimiser les KPI."
+>abstract="En tirant parti des technologies de pointe en matière de machine learning et de deep learning supervisés, l’optimisation personnalisée permet à une personne professionnelle (spécialisée dans le marketing) de définir des objectifs commerciaux et d’utiliser ses données client pour entraîner des modèles orientés métier afin de fournir des offres personnalisées et d’optimiser les KPI."
 
 <!-- markdownlint-enable MD034 -->
 
 {{upgrade-note}}
 
-En tirant parti des technologies de pointe en matière de machine learning et de deep learning supervisés, l’optimisation personnalisée permet à une personne professionnelle (spécialisée dans le marketing) de définir des objectifs commerciaux et d’utiliser ses données de clientèle pour entraîner des modèles orientés métier afin de fournir des offres personnalisées et d’optimiser les KPI.
+En tirant parti des technologies de pointe en matière de machine learning et de deep learning supervisés, l’optimisation personnalisée permet à une personne professionnelle (spécialisée dans le marketing) de définir des objectifs commerciaux et d’utiliser ses données client pour entraîner des modèles orientés métier afin de fournir des offres personnalisées et d’optimiser les KPI.
 
-1. Suivez les informations de la section [Modèle d’optimisation personnalisée](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/decisioning/offer-decisioning/rankings/ai-models/personalized-optimization-model) du guide de Journey Optimizer.
+1. Consultez les informations de la section [Modèle d’optimisation personnalisée](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/decisioning/offer-decisioning/rankings/ai-models/personalized-optimization-model) dans le guide de Journey Optimizer.
 
 {{upgrade-final-step}}
 

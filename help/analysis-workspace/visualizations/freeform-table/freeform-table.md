@@ -5,9 +5,9 @@ feature: Visualizations
 exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
 role: User
 source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '779'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 94%
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente la visualisation Tableau à structure libre dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consultez [Tableau à structure libre](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/freeform-table) pour la_ version ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** de cet article._
+_Cet article présente la visualisation Tableau à structure libre dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consultez [Tableau à structure libre](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/freeform-table) pour la_ version ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 
@@ -46,7 +46,7 @@ Le moyen le plus rapide de créer un tableau consiste à déposer les composants
 
 ## Créateur de tableau à structure libre
 
-Si vous préférez d’abord ajouter plusieurs composants à votre tableau, puis effectuer le rendu des données, vous pouvez **[!UICONTROL activer le créateur de tableau]**. Lorsque le créateur est activé, vous pouvez faire glisser et déposer des dimensions, des répartitions, des mesures et des segments afin de créer des tableaux qui répondent à des questions plus complexes. Les données sont mises à jour une fois que vous avez sélectionné **[!UICONTROL Créer]**.
+Si vous préférez d’abord ajouter plusieurs composants à votre tableau, puis effectuer le rendu des données, vous pouvez **[!UICONTROL activer le créateur de tableau]**. Une fois le créateur activé, vous pouvez faire glisser et déposer des dimensions, répartitions, mesures et segments afin de créer des tableaux qui répondent à des problématiques plus complexes. Les données sont mises à jour une fois que vous avez sélectionné **[!UICONTROL Créer]**.
 
 ![Créateur de tableau à structure libre affichant ](assets/table-builder.png)
 
@@ -56,15 +56,15 @@ Vous pouvez interagir et personnaliser un tableau à structure libre de différe
 
 ### Filtrer et trier
 
-* Vous pouvez [segmenter et trier](filter-and-sort.md) les données d’un tableau.
+* Vous pouvez [segmenter et trier](filter-and-sort.md) les données dans un tableau.
 
 ### Lignes
 
 * Vous pouvez rapidement [créer une visualisation](../freeform-analysis-visualizations.md#visualize) à partir d’une ou de plusieurs lignes avec ![GraphBarVerticalAdd](/help/assets/icons/GraphBarVerticalAdd.svg).
 * Vous pouvez afficher davantage de lignes sur un seul écran en réglant la [densité d’affichage](/help/analysis-workspace/build-workspace-project/view-density.md) du projet.
 * Chaque ligne de dimension peut afficher jusqu’à 400 lignes avant la pagination. Sélectionnez le nombre en regard de **[!UICONTROL Lignes]** dans le premier en-tête de colonne, pour afficher davantage de lignes sur une page. Accédez à une autre page à l’aide de ![ChevronRight](/help/assets/icons/ChevronRight.svg) dans le premier en-tête de colonne.
-* Vous pouvez répartir les lignes en fonction de composants supplémentaires. Pour répartir plusieurs lignes à la fois, sélectionnez plusieurs lignes, puis faites glisser le composant suivant sur les lignes sélectionnées. En savoir plus sur la [répartition](/help/components/dimensions/t-breakdown-fa.md).
-* Les lignes peuvent être [segmentées](/help/components/filters/filters-overview.md) pour afficher un ensemble réduit d’éléments. D’autres paramètres sont disponibles dans les [Paramètres des lignes](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md).
+* Vous pouvez répartir les lignes en fonction de composants supplémentaires. Pour répartir plusieurs lignes à la fois, sélectionnez plusieurs lignes, puis faites glisser le composant suivant sur les lignes sélectionnées. En savoir plus sur les [répartitions](/help/components/dimensions/t-breakdown-fa.md).
+* Les lignes peuvent être [segmentées](/help/components/filters/filters-overview.md) pour n’afficher que certains éléments. D’autres paramètres sont disponibles dans les [Paramètres des lignes](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md).
 
 ### Colonnes
 

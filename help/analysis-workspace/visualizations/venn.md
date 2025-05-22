@@ -5,9 +5,9 @@ feature: Visualizations
 exl-id: a0162164-a0cf-45b9-99b6-2a115e9a4e57
 role: User
 source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '167'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -25,16 +25,16 @@ ht-degree: 73%
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente la visualisation Venn dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consultez [Venn](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/venn) pour la_ version ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** de cet article._
+_Cet article présente la visualisation Venn dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consultez [Venn](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/venn) pour la_ version ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 
 
-La visualisation ![Type](/help/assets/icons/TwoDots.svg) **[!UICONTROL Venn]** vous permet de faire glisser jusqu’à 3 segments et une mesure (à partir du panneau Composants) pour créer un diagramme de Venn.
+La visualisation ![Type](/help/assets/icons/TwoDots.svg) **[!UICONTROL Venn]** vous permet de faire glisser jusqu’à 3 filtres et une mesure (à partir du panneau Composants) pour créer un diagramme de Venn.
 
-![Visualisation de Venn qui comprend trois segments.](assets/venn.png)
+![Visualisation Venn qui comprend trois filtres.](assets/venn.png)
 
-Vous pouvez pointer sur les segments pour afficher plus d’insight en pourcentages, etc.
+Vous pouvez ensuite pointer sur les segments afin d’afficher davantage d’informations sur les pourcentages, etc.
 
 Pour générer un [!UICONTROL Tableau à structure libre] à partir de la visualisation [!UICONTROL Venn], sélectionnez l’icône colorée ![StatusOrange](/help/assets/icons/StatusOrange.svg) à côté de l’en-tête **[!UICONTROL Venn]** et sélectionnez **[!UICONTROL Afficher la source de données]**. Un tableau à structure libre **[!UICONTROL Données de Venn]** contenant les données utilisées pour créer la visualisation [!UICONTROL Venn] s’affiche.
 
@@ -48,7 +48,7 @@ To normalize the Venn diagram (take the size out of it), go select ![Setting](/h
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisation Venn](https://video.tv.adobe.com/v/3416882/?quality=12&learn=on&captions=fre_fr){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisation Venn](https://video.tv.adobe.com/v/335798/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 

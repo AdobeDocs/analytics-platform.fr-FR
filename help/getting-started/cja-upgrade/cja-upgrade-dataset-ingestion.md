@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 35fcd213-d831-4da0-b946-f6f0d8561f60
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '221'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 69%
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/data-ingestion/aepwebsdk.md-->
 
-Après avoir configuré votre implémentation de SDK web ou d’API, vous devez vérifier les statuts de lots individuels pour vous assurer que les données sont ingérées dans le jeu de données.
+Après avoir configuré l’implémentation du SDK web ou de l’API, vous devez vérifier le statut de chaque lot pour vous assurer que les données sont ingérées dans le jeu de données.
 
 1. Dans l’interface d’utilisation d’Experience Platform, sélectionnez **[!UICONTROL Surveillance]** dans le volet de navigation de gauche.
 
@@ -37,13 +37,13 @@ Après avoir configuré votre implémentation de SDK web ou d’API, vous devez 
 
 1. Sélectionnez **[!UICONTROL Lot de bout en bout]** pour afficher une liste de lots.
 
-   Si aucun lot ne s’affiche, vérifiez votre implémentation pour vous assurer qu’elle envoie correctement des données à Adobe.
+   Si aucun lot ne s’affiche, vérifiez l’implémentation pour vous assurer qu’elle envoie correctement des données à Adobe.
 
    <!-- insert screenshot -->
 
 1. Sélectionnez l’ID de lot d’un jeu de données donné, puis vérifiez que **[!UICONTROL Succès]** s’affiche dans le champ **[!UICONTROL Statut]**.
 
-   **[!UICONTROL Si le champ**&#x200B;**Échec]** s’affiche, vérifiez votre implémentation pour vous assurer qu’elle envoie correctement des données à Adobe.
+   Si **[!UICONTROL Échec]** s’affiche dans le champ **[!UICONTROL Statut]**, vérifiez l’implémentation pour vous assurer qu’elle envoie correctement des données à Adobe.
 
    Répétez cette étape pour vérifier le statut de chaque lot.
 

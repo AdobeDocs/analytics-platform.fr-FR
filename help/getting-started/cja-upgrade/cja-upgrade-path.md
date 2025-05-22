@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 exl-id: 9559ba10-cbaf-4243-9c85-a0a5f6e3bbff
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2981'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Les informations de cette page couvrent l’Étape 2 de la mise à niveau, comm
 
 >[!AVAILABILITY]
 >
->Les informations de cette page sont en cours de remplacement par les informations de mise à niveau plus complètes suivantes : <ul><li>**Étapes de mise à niveau recommandées**<p>Pour plus d’informations, voir [Chemin recommandé lors de la mise à niveau d’Adobe Analytics vers Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md).</p></li><li>**Guide de mise à niveau de Customer Journey Analytics**<p>Un nouveau guide de mise à niveau est disponible pour générer dynamiquement des étapes de mise à niveau adaptées à votre entreprise et à vos circonstances uniques.</p><p>Pour accéder au guide à partir de Customer Journey Analytics, sélectionnez l’onglet **[!UICONTROL Workspace]**, puis sélectionnez **[!UICONTROL Mettre à niveau vers Customer Journey Analytics]** dans le panneau de gauche. Suivez les instructions à l’écran.</p></li></ul>
+>Les informations de cette page sont progressivement remplacées par des informations de mise à niveau plus complètes suivantes : <ul><li>**Étapes recommandées pour la mise à niveau**<p>Pour plus d’informations, consultez [Chemin recommandé pour la mise à niveau à partir d’Adobe Analytics vers Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md).</p></li><li>**Guide de mise à niveau de Customer Journey Analytics**<p>Un nouveau guide est disponible pour générer dynamiquement des étapes de mise à niveau adaptées à votre entreprise et à vos circonstances.</p><p>Pour accéder au guide à partir de Customer Journey Analytics, sélectionnez l’onglet **[!UICONTROL Espace de travail]**, puis sélectionnez **[!UICONTROL Mettre à niveau vers Customer Journey Analytics]** dans le panneau de gauche. Suivez les instructions à l’écran.</p></li></ul>
 
 
 Après avoir décidé de mettre à niveau vers Customer Journey Analytics, vous devez déterminer le chemin de mise à niveau optimal pour votre organisation.

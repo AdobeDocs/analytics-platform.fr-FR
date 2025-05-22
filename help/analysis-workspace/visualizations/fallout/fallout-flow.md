@@ -5,9 +5,9 @@ feature: Visualizations
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
 role: User
 source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '357'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 95%
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente la visualisation Abandons dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consultez [Abandons](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow) pour la_ version ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** de cet article._
+_Cet article présente la visualisation Abandons dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consultez [Abandons](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow) pour la_ version ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 
@@ -43,7 +43,7 @@ Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Créer un 
 
 Grâce aux visualisations Abandons, vous pouvez effectuer ce qui suit :
 
-* Comparer en vis-à-vis deux segments du même rapport
+* Comparer en vis-à-vis deux segments du même rapport
 * Faites glisser, déposez et réorganisez les étapes de l’entonnoir (points de contact).
 * Combinez et associez des valeurs issues de différentes dimensions et mesures.
 * Créez un rapport multidimensionnel sur les abandons.
@@ -75,7 +75,7 @@ Les visualisations Abandons sont particulièrement adaptées aux éléments suiv
 
 * Analyse des abandons impliquant des parcours avec une séquence prédéfinie de pages et un point d’entrée unique ainsi qu’un chemin d’accès. (Utilisez Zone de travail de parcours pour les parcours comportant plusieurs points d’entrée et chemins d’accès.)
 
-* Parcours dans lesquels vous devez effectuer des comparaisons côte à côte de deux segments différents dans le même rapport.
+* Parcours pour lesquels vous devez effectuer une comparaison en vis-à-vis de deux segments différents du même rapport.
 
 Utilisez [le tableau ci-dessus](#understand-the-differences) pour comprendre les différences entre les visualisations Zone de travail de parcours, Abandons et Flux.
 
