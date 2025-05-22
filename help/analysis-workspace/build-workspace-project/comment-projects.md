@@ -4,9 +4,9 @@ title: Ajouter et afficher des commentaires dans les projets
 feature: Workspace Basics
 role: User
 exl-id: 05f69a1c-31c2-40d8-ae8b-a084169897b1
-source-git-commit: fb7e0e911de2a4a702d6069ca2f53d7769ec608b
+source-git-commit: df147b92e19b6dee66fcf6346113596f1cde6fd1
 workflow-type: tm+mt
-source-wordcount: '1683'
+source-wordcount: '1723'
 ht-degree: 0%
 
 ---
@@ -104,19 +104,23 @@ Pour ajouter des commentaires à un projet dans Analysis Workspace :
 
 ## Inclure les autres dans un commentaire
 
-La fonction de commentaire d’Analysis Workspace facilite la collaboration avec d’autres personnes. Pour inclure une autre personne dans votre commentaire :
+La fonction de commentaire d’Analysis Workspace facilite la collaboration avec d’autres personnes.
+
+Tenez compte des points suivants lors de l’utilisation du symbole @ pour inclure des personnes dans un commentaire :
+
+* Les personnes que vous incluez reçoivent des notifications en fonction de leurs paramètres de notification Adobe Experience Cloud. Par défaut, ils reçoivent une notification [Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#view-notifications).
+
+  De plus, les utilisateurs peuvent configurer les paramètres de notification d’Experience Cloud pour recevoir des notifications par e-mail et des notifications Slack en [s’abonnant aux notifications par e-mail](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) et [s’abonnant aux notifications Slack](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#slack).
+
+* Vous pouvez inclure n’importe quel membre de votre organisation dans un commentaire, mais cela ne lui accorde pas automatiquement l’accès au projet. Seules les personnes ayant déjà accès au projet peuvent y accéder.
+
+Pour inclure une autre personne dans votre commentaire :
 
 1. Saisissez le symbole @, puis commencez à saisir le prénom, le nom ou l’adresse e-mail de la personne que vous souhaitez inclure.
 
    ![utilisateur de balise](assets/comments-tag-user.png)
 
 1. Sélectionnez le nom de la personne lorsqu’il apparaît dans le menu déroulant.
-
-Tenez compte des points suivants lors de l’utilisation du symbole @ pour inclure des personnes dans un commentaire :
-
-* Les personnes que vous incluez reçoivent une notification par e-mail et une notification Pulse.
-
-* Vous pouvez inclure n’importe quel membre de votre organisation dans un commentaire, mais cela ne lui accorde pas automatiquement l’accès au projet. Seules les personnes ayant déjà accès au projet peuvent y accéder.
 
 ## Répondre à un commentaire
 
@@ -126,7 +130,7 @@ Tenez compte des points suivants lors de l’utilisation du symbole @ pour inclu
 
    Ou
 
-   Si vous souhaitez que votre réponse inclue le texte du commentaire auquel vous répondez, avec le texte d’origine encapsulé dans une balise guillemet, sélectionnez l’icône en forme de trois points en regard du commentaire ou de la réponse spécifique auxquels vous souhaitez répondre, puis sélectionnez **[!UICONTROL Citer la réponse]**. Une réponse avec devis est un bon moyen d&#39;indiquer clairement le commentaire ou la réponse à laquelle votre commentaire fait référence.
+   Pour inclure le texte du commentaire auquel vous répondez, avec le texte d’origine encapsulé dans une balise guillemet, sélectionnez l’icône en forme de 3 points en regard du commentaire ou de la réponse spécifique auxquels vous souhaitez répondre, puis sélectionnez **[!UICONTROL Citer la réponse]**. Une réponse avec devis est un bon moyen d’indiquer à quel commentaire ou à quelle réponse votre commentaire fait référence.
 
 1. Dans le champ **[!UICONTROL Nouveau commentaire]**, spécifiez votre commentaire.
 
@@ -196,7 +200,7 @@ Pour copier le corps de texte d’un commentaire :
 
 1. Une fois le projet ouvert dans Analysis Workspace, sélectionnez l’icône de zone de commentaires ![icône de zone de commentaires](assets/comments-area-icon.png) dans le rail droit d’Analysis Workspace.
 
-1. Sélectionnez **[!UICONTROL Comme]** sous le commentaire que vous souhaitez endosser.
+1. Sélectionnez **[!UICONTROL J’aime]** sous le commentaire que vous souhaitez endosser.
 
 ## Supprimer un commentaire
 
