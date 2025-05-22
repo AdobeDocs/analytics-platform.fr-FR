@@ -37,7 +37,7 @@ Semblable à un graphique en secteurs, la visualisation ![GraphDonut](/help/asse
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Ajouter une visualisation en anneau](https://video.tv.adobe.com/v/334309/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Ajouter une visualisation en anneau](https://video.tv.adobe.com/v/3416624/?quality=12&learn=on&captions=fre_fr){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 
