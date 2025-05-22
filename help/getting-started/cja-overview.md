@@ -23,7 +23,7 @@ L’architecture de haut niveau de Customer Journey Analytics est présentée 
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Customer Journey Analysis : Analytics pour l’expérience commerciale](https://video.tv.adobe.com/v/30090/?quality=12&learn=on){target="_blank"} pour une présentation vidéo de Customer Journey Analytics.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Customer Journey Analysis : Analytics pour l’expérience commerciale](https://video.tv.adobe.com/v/36216/?quality=12&learn=on&captions=fre_fr){target="_blank"} pour une présentation vidéo de Customer Journey Analytics.
 
 >[!ENDSHADEBOX]
 
@@ -93,13 +93,13 @@ De l’ingestion de données à l’accès SQL direct, plusieurs composantes de 
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Utilisation des données dans Customer Journey Analytics](https://video.tv.adobe.com/v/32112/?quality=12&learn=on){target="_blank"} pour une présentation vidéo sur l’utilisation des données dans Customer Journey Analytics.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Utilisation des données dans Customer Journey Analytics](https://video.tv.adobe.com/v/36081/?quality=12&learn=on&captions=fre_fr){target="_blank"} pour une présentation vidéo sur l’utilisation des données dans Customer Journey Analytics.
 
 >[!ENDSHADEBOX]
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Architecture et intégration](https://video.tv.adobe.com/v/32483/?quality=12&learn=on){target="_blank"} pour une présentation vidéo de l’architecture et l’intégration de Customer Journey Analytics.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Architecture et intégration](https://video.tv.adobe.com/v/330409/?quality=12&learn=on&captions=fre_fr){target="_blank"} pour une présentation vidéo de l’architecture et l’intégration de Customer Journey Analytics.
 
 >[!ENDSHADEBOX]
 

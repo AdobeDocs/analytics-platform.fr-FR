@@ -155,7 +155,7 @@ Pour en savoir plus, consultez [Segments rapides](/help/components/filters/quick
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Déposer les segments](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Déposer les segments](https://video.tv.adobe.com/v/327485?quality=12&learn=on&captions=fre_fr){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 
