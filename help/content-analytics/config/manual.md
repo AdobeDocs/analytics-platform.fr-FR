@@ -53,7 +53,7 @@ Utilisez l’[extension Adobe Content Analytics](https://experienceleague.adob
 
   Vous pouvez activer ou désactiver des expériences et modifier les combinaisons d’expressions régulières et de paramètres de requête afin de déterminer comment s’effectue le rendu du contenu sur votre site web.
 
-* [Segmentation des événements](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting){target="_blank"}
+* [Segmentation des événements](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting){target="_blank"}
 
   Vous pouvez modifier les expressions régulières pour modifier la manière dont vous segmentez les pages et les ressources.
 

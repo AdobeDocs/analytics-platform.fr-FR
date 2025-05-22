@@ -48,5 +48,5 @@ Lorsque vous utilisez une valeur numérique comme dimension, vous pouvez :
 
 >[!MORELIKETHIS]
 >
->Voici un article de blog sur la [gestion de « aucune valeur » dans Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/handling-quot-no-value-quot-in-customer-journey-analytics/ba-p/597339).
+>Voici un article de blog sur la [gestion de « aucune valeur » dans Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/handling-quot-no-value-quot-in-customer-journey-analytics/ba-p/597339?profile.language=fr).
 
