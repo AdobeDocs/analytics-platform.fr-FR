@@ -5,10 +5,10 @@ title: Exporter des rapports Customer Journey Analytics vers le cloud
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: c503b5bc65565b342e5e6bea8c019d8e1ee1e429
+source-git-commit: 0891aa2bed446e704b0222eff992c5f5bc200f82
 workflow-type: tm+mt
-source-wordcount: '2284'
-ht-degree: 98%
+source-wordcount: '2340'
+ht-degree: 95%
 
 ---
 
@@ -156,9 +156,9 @@ Les fonctionnalités suivantes ne sont pas prises en charge et sont automatiquem
 * Lignes statiques
 * Alignement des dates
 * Mesures issues de jeux de données de résumé
-* Dimensions dynamiques
+* Éléments de dimension dynamiques
 
-  Pour plus d’informations, consultez [Éléments de dimension dynamiques ou statiques dans les tableaux à structure libre](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md).
+  Les éléments de dimension dynamiques sont créés lorsque vous déposez une dimension sur un en-tête de colonne dans un tableau à structure libre, ce qui entraîne le filtrage dynamique de la colonne par les 5 premiers éléments de dimension. Dans Analysis Workspace, ces 5 principaux éléments de dimension sont mis à jour chaque fois que vous chargez le projet. Dans une exportation de table complète, ces éléments de dimension deviennent statiques. Pour plus d’informations, consultez [Éléments de dimension dynamiques ou statiques dans les tableaux à structure libre](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md).
 * Les dimensions de la première répartition sont converties et ajoutées en tant que dimension secondaire dans la ligne du tableau exporté ; les autres répartitions ne sont pas incluses dans le tableau.
 * Le tri n’est pas pris en charge pour la plupart des jeux de données ; il peut être utilisé pour les petits jeux de données.
 
