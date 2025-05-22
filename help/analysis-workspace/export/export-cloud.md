@@ -5,9 +5,9 @@ title: Exporter des rapports Customer Journey Analytics vers le cloud
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: 9482dd11ecf4aa6f3f8a45c90c3838a4a3389c73
+source-git-commit: c503b5bc65565b342e5e6bea8c019d8e1ee1e429
 workflow-type: tm+mt
-source-wordcount: '2312'
+source-wordcount: '2284'
 ht-degree: 98%
 
 ---
@@ -91,8 +91,9 @@ Pour exporter des tableaux complets à partir d’Analysis Workspace, procédez
    | Début le | Jour et heure auxquels l’export planifié doit commencer. <p>Cette option n’est disponible que lors du choix d’une fréquence d’export planifié.</p> |
    | Se termine le | Jour et heure d’expiration de l’export planifié. L’export planifié ne s’exécute plus après la date et l’heure que vous avez définies. <p>Cette option n’est disponible que lors du choix d’une fréquence d’export planifié.</p> |
    | Format du fichier | Choisissez si les données exportées doivent être au format .csv ou .json. |
+   | Inclure le fichier manifeste | Lorsqu’il est activé, un fichier de manifeste est inclus dans toute diffusion d’export réussie. Le fichier manifeste vous permet de confirmer que tous les fichiers ont bien été diffusés. Il comprend les informations suivantes :<ul><li>Liste de tous les fichiers diffusés</li><li>Somme de contrôle MD5 de chaque fichier</li></ul><p>Les données exportées sont disponibles sous la forme d’un fichier compressé dans la destination cloud que vous avez configurée, comme décrit dans [Configuration des comptes d’export cloud](/help/components/exports/cloud-export-accounts.md) et [Configuration des emplacements d’export cloud](/help/components/exports/cloud-export-locations.md).</p><p>Le nom du fichier compressé est le suivant, selon que vous avez choisi le format CSV ou JSON :</p><ul><li>`cja-export-{reportInstanceId}-{idx}.csv.gz`</li><li>`cja-export-{reportInstanceId}-{idx}.json.gz`</li></ul><p>Vous choisissez le format de fichier dans le champ [!UICONTROL **Format de fichier**] ci-dessus.</p> |
    | Compte | Sélectionnez le compte d’export dans le cloud où vous souhaitez que les données soient envoyées. <p>Si vous n’avez pas encore configuré de compte cloud à utiliser, vous pouvez également configurer un nouveau compte :<ol><li>Sélectionnez [!UICONTROL **Ajouter un compte**], puis spécifiez les informations suivantes :<ul><li>[!UICONTROL **Nom du compte d’emplacement**] : spécifiez un nom pour le compte d’emplacement. Ce nom apparaît lors de la création d’un emplacement. </li><li>[!UICONTROL **Description de compte d’emplacement**] : fournissez une brève description du compte pour le différencier des autres comptes du même type de compte.</li><li>[!UICONTROL **Type de compte**] : sélectionnez le type de compte cloud vers lequel vous exportez. Les types de compte disponibles sont Amazon S3 Role ARN, Google Cloud Platform, Azure SAS, Azure RBAC, Snowflake et Zone de destination des données AEP.</li></ul><li>Pour terminer la configuration de votre compte, sélectionnez le lien ci-dessous, correspondant au [!UICONTROL **type de compte**] sélectionné :<ul><li>[Zone de destination des données AEP](/help/components/exports/cloud-export-accounts.md#aep-data-landing-zone)</li><li>[Amazon S3 Role ARN](/help/components/exports/cloud-export-accounts.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-accounts.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-accounts.md#azure-sas)</li><li>[RBAC Azure](/help/components/exports/cloud-export-accounts.md#azure-rbac)</li><li>[Snowflake](/help/components/exports/cloud-export-accounts.md#snowflake)</li></ul></ol> |
-   | Nom de l’emplacement | Sélectionnez l’emplacement sur le compte où vous souhaitez que les données d’export soient envoyées.<p>Si vous n’avez pas encore configuré l’emplacement que vous souhaitez utiliser sur le compte que vous avez sélectionné, vous pouvez configurer un nouvel emplacement :<ol><li>Sélectionnez [!UICONTROL **Ajouter un emplacement**], puis spécifiez les informations suivantes : <ul><li>[!UICONTROL **Nom**] : nom de l’emplacement.</li><li>[!UICONTROL **Description**] : fournissez une brève description de l’emplacement pour le différencier des autres emplacements sur le compte compte.</li><li>[!UICONTROL **Compte d’emplacement**] : sélectionnez le compte sur lequel vous souhaitez créer l’emplacement.</li></ul><li>Pour terminer la configuration de votre emplacement, sélectionnez le lien ci-dessous, qui correspond au type de compte que vous avez sélectionné dans le champ [!UICONTROL **Compte d’emplacement**] :<ul><li>[Zone de destination des données AEP](/help/components/exports/cloud-export-locations.md#aep-data-landing-zone)</li><li>[Amazon S3 Role ARN](/help/components/exports/cloud-export-locations.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-locations.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-locations.md#azure-sas)</li><li>[RBAC Azure](/help/components/exports/cloud-export-locations.md#azure-rbac)</li><li>[Snowflake](/help/components/exports/cloud-export-locations.md#snowflake)</li></ul> |
+   | Emplacement | Sélectionnez l’emplacement sur le compte où vous souhaitez que les données d’export soient envoyées.<p>Si vous n’avez pas encore configuré l’emplacement que vous souhaitez utiliser sur le compte que vous avez sélectionné, vous pouvez configurer un nouvel emplacement :<ol><li>Sélectionnez [!UICONTROL **Ajouter un emplacement**], puis spécifiez les informations suivantes : <ul><li>[!UICONTROL **Nom**] : nom de l’emplacement.</li><li>[!UICONTROL **Description**] : fournissez une brève description de l’emplacement pour le différencier des autres emplacements sur le compte compte.</li><li>[!UICONTROL **Compte d’emplacement**] : sélectionnez le compte sur lequel vous souhaitez créer l’emplacement.</li></ul><li>Pour terminer la configuration de votre emplacement, sélectionnez le lien ci-dessous, qui correspond au type de compte que vous avez sélectionné dans le champ [!UICONTROL **Compte d’emplacement**] :<ul><li>[Zone de destination des données AEP](/help/components/exports/cloud-export-locations.md#aep-data-landing-zone)</li><li>[Amazon S3 Role ARN](/help/components/exports/cloud-export-locations.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-locations.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-locations.md#azure-sas)</li><li>[RBAC Azure](/help/components/exports/cloud-export-locations.md#azure-rbac)</li><li>[Snowflake](/help/components/exports/cloud-export-locations.md#snowflake)</li></ul> |
 
    {style="table-layout:auto"}
 
@@ -105,32 +106,6 @@ Pour exporter des tableaux complets à partir d’Analysis Workspace, procédez
 ## Gérer des exports
 
 Une fois les données exportées à partir d’Analysis Workspace, vous pouvez modifier, exporter à nouveau, dupliquer, baliser ou supprimer des exports existants, comme décrit dans la section [Gérer les exports](/help/components/exports/manage-exports.md).
-
-## Afficher les données exportées et le fichier manifeste
-
-### Données exportées
-
-Les données exportées sont disponibles sous la forme d’un fichier compressé dans la destination cloud que vous avez configurée, comme décrit dans [Configuration des comptes d’export cloud](/help/components/exports/cloud-export-accounts.md) et [Configuration des emplacements d’export cloud](/help/components/exports/cloud-export-locations.md).
-
-Le nom du fichier compressé est le suivant, selon que vous avez choisi le format CSV ou JSON :
-
-* `cja-export-{reportInstanceId}-{idx}.csv.gz`
-
-* `cja-export-{reportInstanceId}-{idx}.json.gz`
-
->[!NOTE]
->
->Vous choisissez le format de fichier dans le champ [!UICONTROL **Format de fichier**] lors de l’export du tableau, comme décrit dans la section [Exporter des tableaux complets à partir d’Analysis Workspace](#export-full-tables-from-analysis-workspace).
-
-### Fichier de manifeste 
-
-Un fichier manifeste dont le nom de fichier est `cja-export-{reportInstanceId}-{idx}.json.gz` est inclus dans toute diffusion d’export réussie contenant au moins un fichier. Le fichier manifeste vous permet de confirmer que tous les fichiers ont bien été diffusés. Il comprend les informations suivantes :
-
-* Liste de tous les fichiers diffusés
-
-* Somme de contrôle MD5 de chaque fichier
-
-<!-- add in  what the file name, structure, and file format will be -->
 
 ## Avantages de l’export vers le cloud {#advantages}
 
