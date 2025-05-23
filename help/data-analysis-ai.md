@@ -5,9 +5,9 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: e82179f3436dc6b66ebe3f2f9b11986cadd135d9
+source-git-commit: bef00aa251831cdb809a6243b5d5a8e2c0dda9bb
 workflow-type: tm+mt
-source-wordcount: '1861'
+source-wordcount: '1872'
 ht-degree: 3%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 3%
 
 >[!AVAILABILITY]
 >
->Data Insights Agent est disponible pour les clients Customer Journey Analytics éligibles jusqu’au 30 novembre 2025. Passée cette date, une licence est requise pour continuer à utiliser Data Insights Agent. Veuillez contacter l’équipe de votre compte Adobe pour obtenir de l’aide sur le processus de licence.
+>Data Insights Agent est disponible pour les clients éligibles pendant une durée limitée. L’accès à Data Insights Agent prendra fin le 30 novembre 2025. Pour continuer à utiliser Data Insights Agent sans interruption, contactez votre représentant de compte Adobe pour en savoir plus sur les licences Data Insights Agent.
 
 Data Insights Agent, accessible à partir de l’assistant d’IA dans Customer Journey Analytics, est un agent de conversation d’IA génératif qui répond rapidement et efficacement aux questions sur vos données. Il crée des visualisations pertinentes dans Analysis Workspace à l’aide de composants de votre vue de données et en utilisant vos données réelles.
 
@@ -30,7 +30,7 @@ L’utilisation de Data Insights Agent pour répondre aux questions relatives au
 
 | Fonctionnalité | Dans la portée | Hors de portée |
 | --- | --- | --- |
-| **Types de visualisation** | <ul><li>Ligne</li><li>Multiligne</li><li>Tableau à structure libre</li><li>Barre</li><li>Anneau</li><li>Nombre de résumés</li></ul> | <ul><li>Flux</li><li>Abandon</li><li>Table de cohortes</li><li>Aires, Aires empilées</li><li>Barres empilées</li><li>Puces</li><li>Combo</li><li>Histogramme</li><li>Barres horizontales, barres empilées horizontales</li><li>Résumé des mesures clés</li><li>Dispersion</li><li>Synthèse des modifications</li><li>Text</li><li>Plan en arborescence</li><li>Venn</li></ul> |
+| **Types de visualisation** | <ul><li>Ligne</li><li>Multiligne</li><li>Tableau à structure libre</li><li>Barre</li><li>Anneau</li><li>Nombre de résumés</li></ul> | <ul><li>Flux</li><li>Abandons</li><li>Table de cohortes</li><li>Aires, Aires empilées</li><li>Barres empilées</li><li>Puces</li><li>Combo</li><li>Histogramme</li><li>Barres horizontales, barres empilées horizontales</li><li>Résumé des mesures clés</li><li>Dispersion</li><li>Synthèse des modifications</li><li>Text</li><li>Plan en arborescence</li><li>Venn</li></ul> |
 | **Actions de Workspace et fonctionnalités de l’agent** | <ul><li>Création et mise à jour de visualisations<p>Génère un tableau à structure libre et les visualisations associées (ligne, barre, anneau, etc.).<p>Par exemple, *Quel est le bénéfice sur l’ensemble des SKU de février à mai ?*</p></li><li>Poser des questions de suivi</li><li>Répondre à une invite dans le contexte à partir d’une invite précédente<p>Par exemple :</p> <ul><li>Invite 1 : *Tendance des événements à partir de mars.*</li><li>Invite 2 : *afficher à la place les données de mars à avril*</li></ul> </li><li>Détection d’invite hors de portée<p>Si vous envoyez une invite hors de portée, par exemple *Exporter ce projet*, Data Insights Agent vous informe que la question est hors de portée.</p></li></ul> | <ul><li>Boutons de l’interface utilisateur d’action contextuelle (ajouter au graphique, nouveau panneau, nouveau tableau)</li><li>Partager</li><li>Exporter</li><li>Télécharger</li><li>Gérer les préférences utilisateur</li><li>Traiter</li><li>Gérer la vue de données</li><li>Application Tableaux de bord Analytics</li><li>Attribution</li><li>Résumé ou réponse en ligne<p>Data Insights Agent ne peut pas répondre en ligne dans le rail de conversation avec une réponse récapitulative d’une invite utilisateur. Voici des exemples d’invites hors de portée : *Donnez-moi un résumé des informations de ma dernière invite* et *Résumez les points forts de la visualisation en ligne.*</p></li></ul> |
 | **Clarification des questions** | Si vous posez une question à laquelle Data Insights Agent ne peut pas répondre en raison d’un manque de contexte ou si votre question est trop générique, Data Insights Agent vous répond par une question de clarification ou des suggestions d’options. <p>Les questions de clarification suivantes sont des exemples de questions liées aux composants :</p><ul><li>Mesure : *Quelle mesure « chiffre d’affaires » vouliez-vous dire ?*</li><li>Dimension : *Sur laquelle des « régions » ci-dessous voulez-vous vous concentrer ?*</li><li>Segment : *Quel segment de « Compte » vouliez-vous appliquer ?*</li><li>Période : *Par « mois dernier », vouliez-vous dire le dernier mois complet ou les 30 derniers jours ?*</li></ul><p>La question de clarification suivante est un exemple de question liée aux éléments de dimension :</p> <ul><li>Quel « nom de magasin » vouliez-vous dire ? (par exemple, #5274 de magasin, #2949 de magasin, etc.).</li></ul> | Les questions de clarification sont limitées aux composants et aux éléments de dimension. Data Insights Agent ne peut pas clarifier des éléments tels que les vues de données, les visualisations, la granularité des données, la comparaison et la portée. Lorsque des questions de clarification ne peuvent pas être utilisées, l’agent utilise par défaut ce que vous demandez le plus probablement. Si elle renvoie une visualisation ou une granularité de données inattendue, vous pouvez poser une question complémentaire ou ajuster la visualisation et les données. |
 | **Vérifiabilité et exactitude des données** | La vérifiabilité et l’exactitude des données peuvent être confirmées en affichant le tableau à structure libre généré et la visualisation des données. <p>Par exemple, si vous demandez à Data Insights Agent d’*Établir la tendance des commandes le mois dernier*, vous pouvez confirmer que la mesure correcte (« commandes ») et la période (« mois dernier ») ont été sélectionnées dans le panneau, la visualisation des données et le tableau à structure libre nouvellement générés. | Data Insights Agent ne répond pas en vous informant des composants ou des visualisations qui ont été ajoutés.</p> |
@@ -41,7 +41,7 @@ L’utilisation de Data Insights Agent pour répondre aux questions relatives au
 
 Les paramètres suivants régissent l’accès à Data Insights Agent dans Customer Journey Analytics :
 
-* **Accès à la solution** : Data Insights Agent est disponible pour les clients Customer Journey Analytics Prime et Ultimate. Il n’est pas disponible dans Adobe Analytics.
+* **Accès à la solution** : Data Insights Agent est disponible pour tous les clients Customer Journey Analytics dans le cadre d’un programme d’accès limité jusqu’au 30 novembre 2025. Il n’est pas disponible dans Adobe Analytics.
 
 * **Accès contractuel** : si vous ne pouvez pas utiliser Data Insights Agent dans l’assistant AI, contactez l’administrateur ou l’administratrice de votre entreprise ou l’équipe chargée du compte Adobe. Avant que votre entreprise puisse utiliser Data Insights Agent, vous devez accepter certains termes juridiques liés à l’IA générative.
 
