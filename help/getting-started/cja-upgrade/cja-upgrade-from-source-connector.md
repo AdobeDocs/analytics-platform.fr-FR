@@ -54,7 +54,7 @@ Voici le processus de haut niveau pour passer de l’utilisation exclusive du co
 
 1. Mappez chaque dimension Adobe Analytics de votre connecteur source Analytics à la dimension dans le schéma du SDK web.
 
-   1. 
+   1. &#x200B;
       <!-- how do you get here -->
 
    1. Dans la section **[!UICONTROL Mapper les champs standard]**, sélectionnez l’onglet **[!UICONTROL Personnalisé]**.
