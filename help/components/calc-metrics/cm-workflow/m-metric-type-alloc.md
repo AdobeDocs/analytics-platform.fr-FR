@@ -3,10 +3,10 @@ description: Découvrir le type de mesure et l’attribution
 title: Type de mesure et attribution
 feature: Calculated Metrics
 exl-id: da73a9ba-542e-436c-bdb2-b629b5b6f760
-source-git-commit: 2d182004b12eb44f54ec9b4b5f63cb9072594aec
+source-git-commit: 2b193e1ff612ab00335898164dc84afb08673fff
 workflow-type: tm+mt
-source-wordcount: '1007'
-ht-degree: 100%
+source-wordcount: '1017'
+ht-degree: 98%
 
 ---
 
@@ -132,11 +132,14 @@ Consultez [Exemple](#example) pour un exemple d’utilisation d’un modèle d�
 >abstract="Le crédit est déterminé dynamiquement à l’aide d’un algorithme statistique."
 
 
+>[!CONTEXTUALHELP]
+>id="components_calculatedmetrics_attribution_container"
+>title="Conteneur"
+>abstract="Sélectionnez un conteneur pour définir la portée souhaitée pour l’attribution."
+
 
 {{attribution-models-details}}
 
-
-### Intervalle de recherche en amont {#lookback-window}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -145,7 +148,6 @@ Consultez [Exemple](#example) pour un exemple d’utilisation d’un modèle d�
 >title="Intervalle de recherche en amont"
 >abstract="Ce paramètre détermine la fenêtre d’attribution des données qui sera appliquée à chaque conversion."
 
-<!-- markdownlint-enable MD034 -->
 
 {{attribution-lookback-window}}
 
