@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
-source-git-commit: 6d23203468032510446711ff5a874fd149531a9a
+source-git-commit: dd4adc5acd05aecf0a67072df6688a344e1ce5c9
 workflow-type: tm+mt
-source-wordcount: '855'
-ht-degree: 96%
+source-wordcount: '836'
+ht-degree: 91%
 
 ---
 
@@ -60,18 +60,14 @@ Content Analytics utilise les données d’affichage d’images web dans les jeu
 
 >[!NOTE]
 >
->Si vous disposez d’une licence pour le module complémentaire Privacy and Security Shield, veuillez noter que les expériences et les ressources (toutes les données générées à partir de celles-ci), dans le cadre de Content Analytics, ne sont pas couvertes par l’étiquetage DULE ou les clés gérées par les clientes et les clients.
+>Si vous disposez d’une licence pour le module complémentaire Privacy and Security Shield, sachez que les expériences et les ressources (toutes les données générées à partir de celles-ci), soumises à Content Analytics, ne sont pas couvertes par l’étiquetage DULE ou les clés gérées par le client. En outre, Content Analytics n’est pas un service conforme à la loi HIPAA.
 >
 
->[!NOTE]
->
->Content Analytics [envoie des événements supplémentaires](config/datacollection.md#content-analytics-event) qui influencent probablement toute définition de taux de rebond basée sur le nombre d’événements dans une session ou sur une page.
->
 
 >[!MORELIKETHIS]
 >
 >[Création de rapports Content Analytics](report/report.md)
 >[Configurer Content Analytics](config/configuration.md)
->[Calcul des rebonds et du taux de rebond dans Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446?profile.language=fr#M454)
+>[Calcul des rebonds et du taux de rebond dans Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446#M454)
 >
 

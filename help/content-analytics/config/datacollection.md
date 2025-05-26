@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
-source-git-commit: 63c6a5d6148c1562b7f6ac8e4a1cac5919e2dd2e
+source-git-commit: c10d88c27d4a3c92e02179da4a73a6a499d2a8c2
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 80%
+source-wordcount: '628'
+ht-degree: 77%
 
 ---
 
@@ -94,6 +94,11 @@ Pour réduire le nombre d’appels quittant la page, Content Analytics collecte 
    * Verrouiller l’écran
 * L’URL est modifiée en conséquence.
 * Les vues de ressources enregistrées et prêtes à être envoyées dépassent le nombre de 32.
+
+>[!NOTE]
+>
+>Les événements Content Analytics supplémentaires affectent probablement toute définition de taux de rebond basée sur le nombre d&#39;événements dans une session ou une page.
+>
 
 
 ## Schémas

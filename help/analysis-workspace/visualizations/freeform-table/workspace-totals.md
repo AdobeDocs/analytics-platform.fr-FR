@@ -4,31 +4,27 @@ title: Totaux de Workspace
 feature: Visualizations
 exl-id: ba14b88c-44c2-45f6-b68f-f5c1263a89dd
 role: User
-source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
-workflow-type: ht
-source-wordcount: '487'
-ht-degree: 100%
+source-git-commit: c10d88c27d4a3c92e02179da4a73a6a499d2a8c2
+workflow-type: tm+mt
+source-wordcount: '485'
+ht-degree: 94%
 
 ---
 
 # Totaux de Workspace {#workspace-totals}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="workspace_freeformtable_grandtotal"
 >title="Total général"
->abstract="Le total général n’est pas pris en charge pour les tableaux ou les ventilations avec des lignes statiques."
-
-<!-- markdownlint-enable MD034 -->
+>abstract="Le total général n’est pas pris en charge pour les tableaux ou les répartitions avec des lignes statiques."
 
 
 Dans les tableaux à structure libre, une ligne de total s’affiche à chaque niveau de répartition et peut afficher deux totaux :
 
 ![Tableau à structure libre mettant en surbrillance le total général et le total du tableau.](assets/total-row.png)
 
-* **[!UICONTROL Total du tableau]** ➊ : ce total est généralement égal au [!UICONTROL total général] ou est un sous-ensemble de ce dernier. Le total reflète les segments de tableau appliqués dans le tableau à structure libre, y compris l’option [!UICONTROL Ne rien inclure].
-* **[!UICONTROL Total général]** (**[!UICONTROL sur]** *nombre*) ➋ : ce total représente tous les événements qui ont été collectés. Lorsqu’un segment est appliqué au niveau du panneau ou dans le tableau à structure libre, ce total s’ajuste pour refléter tous les événements qui correspondent aux critères du segment.
+* **[!UICONTROL Total du tableau]** ➊ - Ce total est généralement égal à ou à un sous-ensemble du [!UICONTROL Total général]. Le total reflète les segments de tableau appliqués dans le tableau à structure libre, y compris l’option [!UICONTROL Ne rien inclure].
+* **[!UICONTROL Total général]** (**[!UICONTROL sur]** *nombre*) ➋ - Ce total représente tous les événements qui ont été collectés. Lorsqu’un segment est appliqué au niveau du panneau ou dans le tableau à structure libre, ce total s’ajuste pour refléter tous les événements qui correspondent aux critères du segment.
 
 
 
