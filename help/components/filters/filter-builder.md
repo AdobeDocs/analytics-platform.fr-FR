@@ -4,10 +4,10 @@ title: Création de segments
 feature: Filters, Segments
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: c383681cb5c454b79d33a89e25b0d54bd239da66
 workflow-type: tm+mt
-source-wordcount: '1572'
-ht-degree: 51%
+source-wordcount: '1569'
+ht-degree: 50%
 
 ---
 
@@ -157,7 +157,7 @@ Vous pouvez également définir 52 segments : 50 segments pour les États améri
 >[!CONTEXTUALHELP]
 >id="components_filters_attribution_instance"
 >title="Instance"
->abstract="Inclut des instances et des valeurs persistantes pour la dimension."
+>abstract="Inclut des instances pour la dimension."
 
 
 >[!CONTEXTUALHELP]
