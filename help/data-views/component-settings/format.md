@@ -5,10 +5,10 @@ exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
-workflow-type: ht
+source-git-commit: 6fdb6cbd6f12a0417f513565b02e3ad60c8df6cb
+workflow-type: tm+mt
 source-wordcount: '737'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
 
@@ -24,11 +24,11 @@ ht-degree: 100%
 <!-- markdownlint-enable MD034 -->
 
 
-La mise en forme vous permet de déterminer le mode dʼaffichage dʼune mesure donnée lors de son utilisation dans des rapports.
+Le format vous permet de déterminer l’affichage d’un composant donné lorsqu’il est utilisé dans des rapports.
 
-## Configurer les paramètres de mise en forme pour une mesure
+## Configuration des paramètres de format pour un composant
 
-Vous pouvez déterminer l’affichage d’une mesure donnée en ajustant ses paramètres de mise en forme.
+Vous pouvez déterminer l’affichage d’un composant donné en ajustant ses paramètres de format.
 
 1. Dans Customer Journey Analytics, sélectionnez l’onglet [!UICONTROL **Vues de données**].
 
@@ -44,12 +44,12 @@ Vous pouvez déterminer l’affichage d’une mesure donnée en ajustant ses par
 
    | Paramètre | Description |
    | --- | --- |
-   | **[!UICONTROL Format]** | Permet de définir la mise en forme dʼune mesure, telle que la valeur décimale, la durée, le pourcentage ou la devise. |
-   | **[!UICONTROL Décimal]** | Non visible sur les types de données du schéma entier. Permet de définir le nombre de décimales quʼune mesure affiche. |
+   | **[!UICONTROL Format]** | Permet de spécifier la mise en forme d’un composant en tant que Décimale, Heure, Pourcentage ou Devise. |
+   | **[!UICONTROL Décimal]** | Non visible sur les types de données du schéma entier. Permet de spécifier le nombre de décimales affichées par un composant. |
    | **[!UICONTROL Date]** | Permet de déterminer comment le champ de date et heure doit s’afficher lorsqu’il est utilisé comme dimension dans un rapport. [En savoir plus](../../use-cases/data-views/data-views-usecases.md#date-and-date-time-use-cases) |
    | **[!UICONTROL Date et heure]** | Permet de déterminer comment le champ de date et heure doit s’afficher lorsqu’il est utilisé comme dimension dans un rapport. [En savoir plus](../../use-cases/data-views/data-views-usecases.md#date-and-date-time-use-cases) |
-   | **[!UICONTROL Devise]** | Permet de déterminer la devise dans laquelle la mesure doit s’afficher. <p>Si vous analysez des données globales dans lesquelles les transactions sont effectuées dans différentes devises, reportez-vous à la section [Utiliser la conversion de devise](#use-currency-conversion).</p> |
-   | **[!UICONTROL Afficher la tendance à la hausse sous forme de]** | Permet de définir si une tendance à la hausse de cette mesure est bonne (verte) ou mauvaise (rouge). |
+   | **[!UICONTROL Devise]** | Permet de déterminer la devise dans laquelle vous souhaitez que le composant s’affiche. <p>Si vous analysez des données globales dans lesquelles les transactions sont effectuées dans différentes devises, reportez-vous à la section [Utiliser la conversion de devise](#use-currency-conversion).</p> |
+   | **[!UICONTROL Afficher la tendance à la hausse sous forme de]** | Permet de spécifier si une tendance à la hausse de ce composant est bonne (verte) ou mauvaise (rouge). |
    | **[!UICONTROL Valeur « true »]** et **[!UICONTROL valeur « false »]** | Visible uniquement sur les types de données du schéma booléen. Permet de personnaliser le libellé de lʼélément de dimension pour les valeurs `true` et `false`. |
 
    {style="table-layout:auto"}
