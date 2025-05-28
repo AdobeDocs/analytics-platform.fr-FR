@@ -4,7 +4,7 @@ description: Accédez à ces fonctions en cochant Afficher les options avancées
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: ca1aae1291119214f3b051f9b6df8ddcd58faa6c
 workflow-type: tm+mt
 source-wordcount: '5247'
 ht-degree: 99%
@@ -258,7 +258,7 @@ Le degré de confiance est une mesure probabiliste de l’ampleur des preuves su
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="functions-waskr-confidence-interval-lower"
+>id="functions-waskr-lower-individual-confidence-sequence"
 >title="Confiance (inférieure)"
 >abstract="Calculez le degré de confiance valide à tout moment **inférieur** à l’aide de la méthode WASKR comme décrit dans [Théorie des limites centrales uniformes dans le temps et séquences de confiance asymptotiques](https://arxiv.org/pdf/2103.06476)."
 
@@ -282,7 +282,7 @@ Le degré de confiance est une mesure probabiliste de l’ampleur des preuves su
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="functions-waskr-confidence-interval-upper"
+>id="functions-waskr-upper-individual-confidence-sequence"
 >title="Confiance (supérieure)"
 >abstract="Calculez le degré de confiance valide à tout moment **supérieur** à l’aide de la méthode WASKR comme décrit dans [Théorie des limites centrales uniformes dans le temps et séquences de confiance asymptotiques](https://arxiv.org/pdf/2103.06476)."
 
