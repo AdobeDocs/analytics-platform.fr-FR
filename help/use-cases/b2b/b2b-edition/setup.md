@@ -4,11 +4,9 @@ description: Découvrez comment configurer Customer Journey Analytics B2B editio
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-hide: true
-hidefromtoc: true
 badgePremium: label="B2B edition"
 exl-id: f959a77b-ccfb-43f2-93bb-b330e73d59ac
-source-git-commit: f66df039c56fc1df3fb0e102745f500a3782d26d
+source-git-commit: 2fad11178853e08783b8f48671b504f50b6e0770
 workflow-type: tm+mt
 source-wordcount: '1727'
 ht-degree: 13%
@@ -288,9 +286,9 @@ Définissez une connexion basée sur un compte dans Customer Journey Analytics p
    Connexion ![B2B - ajout de jeux de données](assets/b2b-connection-add-datasets.png)
 
 1. Sélectionnez **[!UICONTROL Suivant]** pour configurer les paramètres de chacun des jeux de données sélectionnés.
-1. Pour le jeu de données d’événement, veillez à sélectionner les eVars appropriées qui correspondent aux identités pour **[!UICONTROL ID de compte]**, **[!UICONTROL ID de compte global]**, **[!UICONTROL ID d’opportunité]**, **[!UICONTROL ID de groupe d’achats]** et **[!UICONTROL ID de personne]**.
+1. Pour le jeu de données d’événement, veillez à sélectionner les champs appropriés qui correspondent aux identités de **[!UICONTROL ID de compte]**, **[!UICONTROL ID de compte global]**, **[!UICONTROL ID d’opportunité]**, **[!UICONTROL ID de groupe d’achats]** et **[!UICONTROL ID de personne]**.
 
-   Connexion ![B2B - Ajout d’un jeu de données d’événement](assets/b2b-connection-add-datasets-event-data.png).
+   Connexion ![B2B - Ajout d’un jeu de données d’événement](assets/b2b-connection-add-datasets-event-data.png)
 
 1. Faites défiler la page vers le bas pour configurer le jeu de données d’enregistrements de compte. Veillez à sélectionner l’identifiant correct (**[!UICONTROL ID_Compte]**) pour correspondre au compte par le conteneur **[!UICONTROL Compte global]**. Sélectionnez l’identifiant correct (**[!UICONTROL Account_ID]**) comme **[!UICONTROL champ Compte global]**.
 

@@ -5,11 +5,10 @@ solution: Customer Journey Analytics
 feature: Basics
 role: User, Admin
 badgePremium: label="B2B edition"
-hide: true
-hidefromtoc: true
-source-git-commit: c0446bd85b65109fd3311d54e33f9fb33af28f88
+exl-id: d0e6398b-8080-4e36-b178-0cb91945d0c5
+source-git-commit: 2fad11178853e08783b8f48671b504f50b6e0770
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '516'
 ht-degree: 0%
 
 ---
@@ -27,6 +26,8 @@ L’article suppose que vous utilisez déjà Customer Journey Analytics dans une
 * Vous disposez de [projets](/help/analysis-workspace/home.md) avec des rapports et des visualisations qui utilisent ces vues de données.
 
 Si vous n’avez encore jamais utilisé Customer Journey Analytics, consultez le guide de démarrage rapide de [B2B edition](cja-b2b-quick-start-guide.md).
+
+Si vous êtes un utilisateur d’Adobe Analytics et envisagez d’utiliser Customer Journey Analytics B2B edition, reportez-vous d’abord à la documentation [mise à niveau d’Adobe Analytics vers Customer Journey Analytics](cja-upgrade/cja-upgrade-recommendations.md).
 
 
 ## Implémentation existante
