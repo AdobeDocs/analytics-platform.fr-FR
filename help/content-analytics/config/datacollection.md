@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
-source-git-commit: c10d88c27d4a3c92e02179da4a73a6a499d2a8c2
+source-git-commit: 7909388273af4c19d2dfda671c2af8eac470fff9
 workflow-type: tm+mt
-source-wordcount: '628'
-ht-degree: 77%
+source-wordcount: '622'
+ht-degree: 78%
 
 ---
 
@@ -85,7 +85,7 @@ Un clic sur une expérience est enregistré lorsque :
 
 Pour réduire le nombre d’appels quittant la page, Content Analytics collecte des informations mais ne les envoie pas immédiatement. Les informations d’interaction de contenu sont collectées et un événement contenant ces informations n’est envoyé que lorsque l’un des déclencheurs suivants se produit :
 
-* Web SDK ou AppMeasurement envoie un événement. La date et l’heure de cet événement sont
+* Le SDK Web ou AppMeasurement envoie un événement.
 * La visibilité passe à masquée, par exemple :
    * Charger une page
    * Basculer d’onglet à un autre
