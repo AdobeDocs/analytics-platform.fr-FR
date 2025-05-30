@@ -183,45 +183,45 @@ Vous pouvez filtrer ![icône Filtrer](https://spectrum.adobe.com/static/icons/wo
 >id="dataview_includedcomponents_filter_datagovernance_custom"
 >title="Étiquettes personnalisées"
 >abstract="Outre les étiquettes fournies par Adobe, vous pouvez également définir vos propres étiquettes personnalisées pour votre organisation."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Vue d’ensemble des libellés d’utilisation des données"
+>additional-url="https://experienceleague.adobe.com/fr/docs/experience-platform/data-governance/labels/overview" text="Vue d’ensemble des libellés d’utilisation des données"
 
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_contract"
 >title="Étiquettes Contrat"
 >abstract="Les libellés de contrat (C) sont utilisés pour classer les données contenant des obligations contractuelles ou liées aux politiques de gouvernance des données de votre organisation."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Vue d’ensemble des libellés d’utilisation des données"
+>additional-url="https://experienceleague.adobe.com/fr/docs/experience-platform/data-governance/labels/overview" text="Vue d’ensemble des libellés d’utilisation des données"
 
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_identity"
 >title="Étiquettes Identité"
 >abstract="Les étiquettes d’identité (I) sont utilisées pour classer les données permettant d’identifier ou de contacter une personne spécifique."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Vue d’ensemble des libellés d’utilisation des données"
+>additional-url="https://experienceleague.adobe.com/fr/docs/experience-platform/data-governance/labels/overview" text="Vue d’ensemble des libellés d’utilisation des données"
 
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_sensitive"
 >title="Étiquettes Sensibles"
 >abstract="Les libellés Sensible (S) sont utilisés pour classer les données que vous et votre organisation considérez comme sensibles."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Vue d’ensemble des libellés d’utilisation des données"
+>additional-url="https://experienceleague.adobe.com/fr/docs/experience-platform/data-governance/labels/overview" text="Vue d’ensemble des libellés d’utilisation des données"
 
 
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_partnerecosystem"
 >title="Réseaux partnaires"
 >abstract="Les libellés P (Partner Ecosystem) servent à catégoriser les données partagées avec des partenaires tiers."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Vue d’ensemble des libellés d’utilisation des données"
+>additional-url="https://experienceleague.adobe.com/fr/docs/experience-platform/data-governance/labels/overview" text="Vue d’ensemble des libellés d’utilisation des données"
 
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_policies"
 >title="Politiques"
 >abstract="Des politiques d’utilisation des données doivent être mises en œuvre pour que les libellés d’utilisation des données prennent en charge efficacement la conformité des données. Les politiques d’utilisation des données sont des règles qui décrivent les types d’actions marketing que vous êtes autorisé ou non à effectuer sur des données dans Experience Platform. Les filtres Politiques appliquent la politique activée à la vue de données."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Vue d’ensemble des libellés d’utilisation des données"
+>additional-url="https://experienceleague.adobe.com/fr/docs/experience-platform/data-governance/labels/overview" text="Vue d’ensemble des libellés d’utilisation des données"
 
 
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_responsibleengagement"
 >title="Libellés d’engagement responsable"
 >abstract="Les étiquettes d’engagement responsable sont utilisées pour soutenir l’engagement responsable."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Vue d’ensemble des libellés d’utilisation des données"
+>additional-url="https://experienceleague.adobe.com/fr/docs/experience-platform/data-governance/labels/overview" text="Vue d’ensemble des libellés d’utilisation des données"
 
 
 Le **[!UICONTROL Composants inclus]** contient la liste des **[!UICONTROL Mesures]** et **[!UICONTROL Dimensions]** que vous configurez pour la vue de données.
