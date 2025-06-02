@@ -101,7 +101,7 @@ Chaque étape fournit une explication générale d’un processus plus détaill�
 
    1. Remplissez un objet XDM et envoyez-le au train de données.
 
-+++
+   +++
 
    +++Balises
 
@@ -113,7 +113,7 @@ Chaque étape fournit une explication générale d’un processus plus détaill�
 
    1. [Ajoutez une logique de collecte de données XDM à votre balise](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md){target="_blank"}.
 
-+++
+   +++
 
 +++ API
 
