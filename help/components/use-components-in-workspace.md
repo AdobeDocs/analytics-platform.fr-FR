@@ -15,7 +15,7 @@ ht-degree: 7%
 
 Les composants constituent les données réelles de tout projet dans Analysis Workspace. Les composants se composent de dimensions, de mesures, de segments et de périodes. Vous pouvez ajouter des composants à un projet en les faisant glisser dans des visualisations ou des panneaux.
 
-Pour plus d’informations sur les types de composants que vous pouvez ajouter](/help/components/overview.md) reportez-vous à la [ Présentation des composants .
+Pour plus d’informations sur les types de composants que vous pouvez ajouter[&#128279;](/help/components/overview.md) reportez-vous à la  Présentation des composants .
 
 >[!TIP]
 >
