@@ -3,7 +3,7 @@ description: La segmentation de mesures individuelles permet d’effectuer des c
 title: Mesures segmentées
 feature: Calculated Metrics
 exl-id: 37cc93df-9f51-42b3-918f-ed5864991621
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 1%
@@ -16,7 +16,7 @@ Dans le [créateur de mesures calculées](cm-build-metrics.md#definition-builder
 
 >[!NOTE]
 >
->Les définitions de segment sont mises à jour via le [créateur de segments](/help/components/filters/filter-builder.md). Si vous apportez une modification à un segment, le segment est automatiquement mis à jour partout où il est utilisé, y compris si le segment fait partie d’une définition de mesure calculée.
+>Les définitions de segment sont mises à jour via le [créateur de segments](/help/components/segments/seg-builder.md). Si vous apportez une modification à un segment, le segment est automatiquement mis à jour partout où il est utilisé, y compris si le segment fait partie d’une définition de mesure calculée.
 >
 
 Vous souhaitez comparer les mesures pour les Allemands qui interagissent avec votre marque par rapport aux personnes en dehors de l’Allemagne. Vous pouvez donc répondre à des questions telles que :
@@ -30,7 +30,7 @@ Consultez les sections ci-dessous pour illustrer la manière dont les mesures se
 ## Pages populaires
 
 1. [Création d’une mesure calculée](cm-workflow.md) à partir d’un projet Workspace appelé `German people`.
-1. Dans le [créateur de mesures calculées](cm-build-metrics.md), [créez un segment](/help/components/filters/filter-builder.md) intitulé `Germany`, qui utilise le champ Pays CRM des données de votre CRM pour déterminer d’où vient une personne.
+1. Dans le [créateur de mesures calculées](cm-build-metrics.md), [créez un segment](/help/components/segments/seg-builder.md) intitulé `Germany`, qui utilise le champ Pays CRM des données de votre CRM pour déterminer d’où vient une personne.
 
    >[!TIP]
    >
@@ -90,7 +90,7 @@ Répétez les étapes ci-dessus pour la version internationale de votre mesure c
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Utiliser une mesure calculée segmentée comme mesure sans implémentation](https://video.tv.adobe.com/v/37941?quality=12&learn=on&captions=fre_fr){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Utiliser une mesure calculée segmentée comme mesure sans implémentation](https://video.tv.adobe.com/v/25407?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 

@@ -4,7 +4,7 @@ title: Utiliser des composants dans Analysis Workspace
 feature: Components
 role: User
 exl-id: 97bdfb9e-a27e-4a6b-b6cc-21a292398037
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 7%
@@ -15,7 +15,7 @@ ht-degree: 7%
 
 Les composants constituent les données réelles de tout projet dans Analysis Workspace. Les composants se composent de dimensions, de mesures, de segments et de périodes. Vous pouvez ajouter des composants à un projet en les faisant glisser dans des visualisations ou des panneaux.
 
-Pour plus d’informations sur les types de composants que vous pouvez ajouter[&#128279;](/help/components/overview.md) reportez-vous à la  Présentation des composants .
+Pour plus d’informations sur les types de composants que vous pouvez ajouter](/help/components/overview.md) reportez-vous à la [ Présentation des composants .
 
 >[!TIP]
 >
@@ -91,7 +91,7 @@ Pour plus d’informations sur les mesures, voir [Mesures](/help/components/appl
 
 ### Ajouter des segments à un projet
 
-Les [segments](/help/components/filters/filters-overview.md) vous permettent d’identifier des sous-ensembles de personnes, de sessions ou d’événements en fonction de caractéristiques ou d’interactions spécifiques.
+Les [segments](/help/components/segments/seg-overview.md) vous permettent d’identifier des sous-ensembles de personnes, de sessions ou d’événements en fonction de caractéristiques ou d’interactions spécifiques.
 
 Vous pouvez utiliser les segments dans Analysis Workspace de l’une des manières suivantes :
 
@@ -103,7 +103,7 @@ Pour plus d’informations sur l’utilisation de la zone de dépôt de segments
 Lorsque vous ajoutez des segments à une colonne d’un tableau à structure libre, les segments s’appliquent à tout le contenu de la colonne du tableau. Vous pouvez également ajouter des segments dans le cadre d’une visualisation des abandons.
 
 * Utilisation de segments dans les composants
-Lorsque vous définissez des composants tels que [mesures calculées](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md), [annotations](/help/components/annotations/create-annotations.md#annotation-builder) ou même [segments](/help/components/filters/filter-builder.md) vous pouvez utiliser des segments dans le cadre de la définition.
+Lorsque vous définissez des composants tels que [mesures calculées](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md), [annotations](/help/components/annotations/create-annotations.md#annotation-builder) ou même [segments](/help/components/segments/seg-builder.md) vous pouvez utiliser des segments dans le cadre de la définition.
 
 
 ### Ajout de périodes à un projet

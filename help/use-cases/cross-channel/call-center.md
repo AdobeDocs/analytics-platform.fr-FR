@@ -5,7 +5,7 @@ exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
 source-wordcount: '1141'
 ht-degree: 88%
@@ -69,7 +69,7 @@ Vous pouvez utiliser les visualisations suivantes pour obtenir des informations 
 
 Cette visualisation vous aide à comprendre comment l’ACC assemble les données.
 
-1. Créez deux segments. La variable utilisée dans ces deux segments est la même variable mentionnée ci-dessus qui reflète la source des données de chaque événement. Voir [Créer un segment](/help/components/filters/create-filters.md) pour plus d’informations.
+1. Créez deux segments. La variable utilisée dans ces deux segments est la même variable mentionnée ci-dessus qui reflète la source des données de chaque événement. Voir [Créer un segment](/help/components/segments/seg-create.md) pour plus d’informations.
    * Conteneur de personne où l’identifiant de jeu de données est égal à vos données web
    * Conteneur de personne où l’identifiant de jeu de données est égal à vos données de centre d’appel
 2. Dans Analysis Workspace, faites glisser une visualisation [Venn](/help/analysis-workspace/visualizations/venn.md) sur la zone de travail de l’espace de travail.

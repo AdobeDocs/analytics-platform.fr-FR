@@ -4,9 +4,9 @@ title: Gestion des alertes
 feature: Workspace Basics
 role: User, Admin
 exl-id: 174c3ebd-a77b-4403-ae9a-bb0cff4bcca6
-source-git-commit: a85efff8720d8fdf02b0d1290fedf17654be48e3
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '596'
 ht-degree: 21%
 
 ---
@@ -18,7 +18,7 @@ Vous pouvez filtrer, baliser, supprimer, renommer, copier, activer, désactiver,
 
 * Sélectionnez **[!UICONTROL Composants]** dans l’interface principale, puis sélectionnez **[!UICONTROL Alertes]**.
 
-La structure du gestionnaire d’alertes est similaire à celle du [gestionnaire de segments](/help/components/filters/manage-filters.md) et du [gestionnaire de mesures calculées](/help/components/calc-metrics/cm-workflow/cm-manager.md).
+La structure du gestionnaire d’alertes est similaire à celle du [gestionnaire de segments](/help/components/segments/seg-manage.md) et du [gestionnaire de mesures calculées](/help/components/calc-metrics/cm-workflow/cm-manager.md).
 
 
 ## Gestionnaire d’alertes

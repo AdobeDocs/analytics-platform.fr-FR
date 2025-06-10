@@ -3,7 +3,7 @@ description: Le créateur de mesures calculées fournit un canevas où faire gli
 title: Créer des mesures calculées
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
 source-wordcount: '1703'
 ht-degree: 95%
@@ -218,6 +218,6 @@ Pour supprimer un conteneur, sélectionnez ![Fermer](/help/assets/icons/Close.sv
 >[!MORELIKETHIS]
 >
 >[Utilisation des fonctions](cm-using-functions.md)
->[Segments ](/help/components/filters/filters-overview.md)
+>>[Segments ](/help/components/segments/seg-overview.md)
 >
 

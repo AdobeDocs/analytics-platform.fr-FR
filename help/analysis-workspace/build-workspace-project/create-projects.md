@@ -4,7 +4,7 @@ title: Créer des projets
 feature: Workspace Basics
 role: User
 exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
-source-git-commit: fb7e0e911de2a4a702d6069ca2f53d7769ec608b
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
 source-wordcount: '500'
 ht-degree: 83%
@@ -40,7 +40,7 @@ Maintenant que vous avez créé un projet Workspace vierge, assurez-vous de conn
    * **[!DNL Store Country]** [dimension](/help/components/dimensions/overview.md) ➍
    * **[!DNL People]** [mesure](/help/components/apply-create-metrics.md) ➎
    * **[!DNL Avg Order Value]** [mesure calculée](/help/components/calc-metrics/calc-metr-overview.md) ➏
-   * **[!DNL Mobile App Sessions]** [segment](/help/components/filters/filters-overview.md) ➐
+   * **[!DNL Mobile App Sessions]** [segment](/help/components/segments/seg-overview.md) ➐
    * **[!DNL Last Month]** [période](/help/components/date-ranges/overview.md) ➑
    * **[!DNL Example]** [annotation](/help/components/annotations/overview.md) ➒
 

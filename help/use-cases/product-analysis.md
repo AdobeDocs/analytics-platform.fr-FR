@@ -2,7 +2,7 @@
 title: Analyse de produit dans Customer Journey Analytics
 description: Découvrez les fonctionnalités que vous pouvez utiliser dans Customer Journey Analytics pour effectuer efficacement une analyse de produit.
 exl-id: b185a2ed-18c8-4fb3-8c69-693d5fee0e67
-source-git-commit: 3d8ebd90156f0e44e4c45913a524ed91360dd39e
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 1%
@@ -33,11 +33,11 @@ Les fonctionnalités suivantes de Adobe Experience Platform et Customer Journey 
 * Adobe Experience Platform
    * [Jeux de données&#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/catalog/datasets/overview)
    * [Préparation des données&#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/data-prep/home)
-   * [Distiller de données&#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/query/data-distiller/overview)
+   * [Distiller de données&#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/query/data-distiller/overview)
 * Customer Journey Analytics
    * [Connexions &#x200B;](/help/connections/overview.md)
    * [Vues de données](/help/data-views/data-views.md), y compris [champs dérivés&#x200B;](/help/data-views/derived-fields/derived-fields.md)
-   * [Segments &#x200B;](/help/components/filters/filters-overview.md)
+   * [Segments &#x200B;](/help/components/segments/seg-overview.md)
    * [Mesures calculées](/help/components/calc-metrics/calc-metr-overview.md)
    * [Analyse guidée &#x200B; : frise chronologique&#x200B;](/help/guided-analysis/types/timeline.md)
 
@@ -99,8 +99,8 @@ Les fonctionnalités suivantes d’Experience Cloud vous permettent d’agir eff
 * [Créer et publier des audiences](/help/components/audiences/publish.md)&#x200B; pour activation à partir de Customer Journey Analytics
 * Activer les audiences par le biais des produits Experience Cloud :
    * [Exécutez des expériences](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/content-management/content-experiment/get-started-experiment) dans AJO et Adobe Target, et mesurez l’impact des variations dans Customer Journey Analytics à l’aide du [panneau Expérimentation](/help/analysis-workspace/c-panels/experimentation.md)
-   * [Diffuser des engagements in-app](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/channels/in-app/get-started-in-app) aux utilisateurs dans AJO
-* [Activer des audiences](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/activate/activation-overview) vers des destinations externes avec la plateforme de données clients en temps réel d’Adobe&#x200B;
+   * [Diffuser des engagements in-app](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/in-app/get-started-in-app) aux utilisateurs dans AJO
+* [Activer des audiences](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activation-overview) vers des destinations externes avec la plateforme de données clients en temps réel d’Adobe&#x200B;
 
 ## Partagez des informations avec l’organisation&#x200B;
 

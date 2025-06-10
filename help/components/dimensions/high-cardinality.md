@@ -5,7 +5,7 @@ feature: Dimensions
 solution: Customer Journey Analytics
 exl-id: 17b275a5-c2c2-48ee-b663-e7fe76f79456
 role: User
-source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
 source-wordcount: '544'
 ht-degree: 7%
@@ -34,7 +34,7 @@ Bien que certains éléments de dimension individuels puissent être absents des
 
 La meilleure façon de prendre en charge les dimensions à cardinalité élevée consiste à limiter le nombre d’éléments de dimension traités par un rapport. Tous les rapports étant traités au moment où ils sont demandés, vous pouvez ajuster les paramètres de rapport pour obtenir des résultats immédiats. Adobe recommande l’une des optimisations suivantes pour les dimensions à cardinalité élevée :
 
-* Utilisez un [segment](/help/components/filters/create-filters.md). Les segments s’appliquent au moment où chaque serveur traite un sous-ensemble de données.
+* Utilisez un [segment](/help/components/segments/seg-create.md). Les segments s’appliquent au moment où chaque serveur traite un sous-ensemble de données.
 * Utilisez une recherche. Les éléments Dimension exclus du terme de recherche sont supprimés des résultats du rapport, ce qui rend plus probable l’affichage des éléments de dimension souhaités.
 * Utilisez une dimension du jeu de données de recherche. Les dimensions des jeux de données de recherche combinent les éléments de dimension des jeux de données d’événement, ce qui limite le nombre de valeurs uniques retournées.
 * Utilisez le paramètre de composant [Inclure/exclure](/help/data-views/component-settings/include-exclude-values.md) dans le gestionnaire de vues de données.

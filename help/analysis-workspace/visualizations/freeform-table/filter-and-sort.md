@@ -4,7 +4,7 @@ title: Filtrer et trier des tableaux
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: 9a15cb4d771892ff656fe72b8e53d890a3fd99f7
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
 source-wordcount: '844'
 ht-degree: 99%
@@ -17,7 +17,7 @@ Les tableaux à structure libre dans Analysis Workspace sont la base de l’ana
 
 <!--The following video covers filter and sort options in Analysis Workspace, in addition to pagination options:
 
->[!VIDEO](https://video.tv.adobe.com/v/327341?captions=fre_fr)-->
+>[!VIDEO](https://video.tv.adobe.com/v/23968)-->
 
 ## Filtrer des tableaux
 
@@ -96,7 +96,7 @@ Pour filtrer les données dans les tableaux à structure libre :
 
 ### Utiliser les segments d’audience
 
-Voir [Présentation de la segmentation](/help/components/filters/filters-overview.md) pour plus d’informations.
+Voir [Présentation de la segmentation](/help/components/segments/seg-overview.md) pour plus d’informations.
 
 ## Trier des tableaux
 

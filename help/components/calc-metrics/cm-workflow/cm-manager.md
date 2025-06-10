@@ -3,10 +3,10 @@ description: Le gestionnaire de mesures calculées vous permet de partager, filt
 title: Gestionnaire de mesures calculées
 feature: Calculated Metrics
 exl-id: 8b257ecc-a596-4b34-ac26-eda16835f1ba
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 30%
+source-wordcount: '897'
+ht-degree: 29%
 
 ---
 
@@ -33,7 +33,7 @@ La liste des filtres affiche ➊ toutes les mesures calculées que vous posséde
 
 | Colonne | Description |
 | --- | --- | 
-| ![Contour en forme d’étoile](/help/assets/icons/StarOutline.svg) | Sélectionnez pour favoriser ![Étoile](/help/assets/icons/Star.svg) ou annuler l’avantage ![ÉtoileContour](/help/assets/icons/StarOutline.svg) une mesure calculée. Voir [Marquer la mesure calculée comme favori](/help/components/filters/filters-favorite.md) |
+| ![Contour en forme d’étoile](/help/assets/icons/StarOutline.svg) | Sélectionnez pour favoriser ![Étoile](/help/assets/icons/Star.svg) ou annuler l’avantage ![ÉtoileContour](/help/assets/icons/StarOutline.svg) une mesure calculée. Voir [Marquer la mesure calculée comme favori](/help/components/segments/seg-favorite.md) |
 | **[!UICONTROL Titre et description]** | Pour modifier la mesure calculée, sélectionnez le lien du titre, qui ouvre le [créateur de mesures calculées](cm-build-metrics.md). Une mesure calculée partagée est indiquée par ![Partager](/help/assets/icons/ShareAlt.svg). |
 | **[!UICONTROL Vue de données]** | Vues de données auxquelles s’applique cette mesure calculée. |
 | **[!UICONTROL Propriétaire]** | Propriétaire de la mesure calculée. En tant qu’utilisateur ou utilisatrice, vous ne pouvez consulter que les annotations que vous possédez ou celles qui ont été partagées avec vous. |
