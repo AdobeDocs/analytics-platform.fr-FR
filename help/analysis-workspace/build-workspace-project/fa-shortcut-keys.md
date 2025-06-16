@@ -5,10 +5,10 @@ feature: Workspace Basics
 title: Utilisation des touches de raccourci Workspace
 exl-id: de99a92b-701c-4cdc-a0c2-a70972a19499
 role: User
-source-git-commit: ab78583eb36d6158630724fbab9eb8148bcdbe23
-workflow-type: ht
-source-wordcount: '402'
-ht-degree: 100%
+source-git-commit: 61a7e21d3e5d586c341a5b0f12490e3da1054382
+workflow-type: tm+mt
+source-wordcount: '424'
+ht-degree: 90%
 
 ---
 
@@ -19,10 +19,10 @@ Des touches de raccourci (raccourcis clavier) sont disponibles dans Analysis Wor
 Notez que sur votre clavier, les symboles suivants peuvent être utilisés :
 
 - **⇧** pour **[!UICONTROL ** Maj **]**.
-- **⌘** pour **[!UICONTROL ** Cmd **]** (commande).
-- **⌃** pour **[!UICONTROL ** Ctrl **]** (contrôle).
-- **⌥** pour **[!UICONTROL ** Opt **]** (option).
-- **⎇** pour **[!UICONTROL ** Alt **]** (alternative).
+- **⌘** pour **[!UICONTROL ** cmd **]** (commande).
+- **⌃** pour **[!UICONTROL ** ctrl **]** (contrôle).
+- **⌥** pour **[!UICONTROL ** opt **]** (option).
+- **⎇** pour **[!UICONTROL ** alt **]** (alternative).
 
 ## Actions de navigation
 
@@ -35,8 +35,8 @@ Notez que sur votre clavier, les symboles suivants peuvent être utilisés :
 | Accès au volet Composants | **[!UICONTROL *Opt+Maj+3 *]** | **[!UICONTROL *Alt+Maj+3 *]** |
 | Réduction/Développement de tous les panneaux | **[!UICONTROL *Opt+m *]** | **[!UICONTROL *Alt+m *]** |
 | Réduction/Développement du panneau actif | **[!UICONTROL *Opt+Cmd+m *]** | **[!UICONTROL *Alt+Ctrl+m *]** |
-| Accès au panneau suivant | **[!UICONTROL *Opt *+▶︎]** | **[!UICONTROL *Alt *+▶︎]** |
-| Accès au panneau précédent | **[!UICONTROL *Opt *+◀︎]** | **[!UICONTROL *Alt *+◀︎]** |
+| Accès au panneau suivant | **[!UICONTROL *opt *+ ▶︎]** | **[!UICONTROL *alt *+ ▶︎]** |
+| Accès au panneau précédent | **[!UICONTROL *opt *+ ◀︎]** | **[!UICONTROL *alt *+ ◀︎]** |
 
 ## Actions d’analyse
 
@@ -67,6 +67,13 @@ Notez que sur votre clavier, les symboles suivants peuvent être utilisés :
 | Nouveau graphique linéaire | **[!UICONTROL *Opt+2 *]** | **[!UICONTROL *Alt+2 *]** |
 | Nouveau graphique à barres | **[!UICONTROL *Opt+3 *]** | **[!UICONTROL *Alt+3 *]** |
 | Nouveau graphique combiné | **[!UICONTROL *Opt+4 *]** | **[!UICONTROL *Alt+4 *]** |
+
+## Déplacer les actions du panneau
+
+| Action | Raccourci Mac | Raccourci Windows |
+| --- | --- | --- | 
+| Déplacer le panneau vers le haut | **[!UICONTROL *cmd + opt + up *]** | **[!UICONTROL *Alt + Ctrl + Haut *]** |
+| Déplacer le panneau vers le bas | **[!UICONTROL *cmd + opt + down *]** | **[!UICONTROL *Alt+Ctrl+Bas *]** |
 
 ## Actions de démocratisation
 
