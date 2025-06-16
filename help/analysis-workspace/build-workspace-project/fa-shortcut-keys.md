@@ -18,11 +18,11 @@ Des touches de raccourci (raccourcis clavier) sont disponibles dans Analysis Wor
 
 Notez que sur votre clavier, les symboles suivants peuvent être utilisés :
 
-- **⇧** pour **[!UICONTROL ** Maj **]**.
-- **⌘** pour **[!UICONTROL ** cmd **]** (commande).
-- **⌃** pour **[!UICONTROL ** ctrl **]** (contrôle).
-- **⌥** pour **[!UICONTROL ** opt **]** (option).
-- **⎇** pour **[!UICONTROL ** alt **]** (alternative).
+- **⇧** pour **[!UICONTROL **&#x200B; Maj &#x200B;**]**.
+- **⌘** pour **[!UICONTROL **&#x200B; cmd &#x200B;**]** (commande).
+- **⌃** pour **[!UICONTROL **&#x200B; ctrl &#x200B;**]** (contrôle).
+- **⌥** pour **[!UICONTROL **&#x200B; opt &#x200B;**]** (option).
+- **⎇** pour **[!UICONTROL **&#x200B; alt &#x200B;**]** (alternative).
 
 ## Actions de navigation
 
