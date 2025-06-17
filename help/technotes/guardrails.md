@@ -5,16 +5,16 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: 9c8a2ed7712ad7e4e0bcada16d3b581d52a49472
 workflow-type: tm+mt
-source-wordcount: '2012'
-ht-degree: 11%
+source-wordcount: '2062'
+ht-degree: 12%
 
 ---
 
 # Mécanismes de sécurisation de Customer Journey Analytics
 
-Ce document fournit des limites pour divers composants de Customer Journey Analytics. Pour les mécanismes de sécurisation, les paramètres de définition de la portée et les droits, reportez-vous à la [ Description du produit pour Customer Journey Analytics ](https://helpx.adobe.com/fr/legal/product-descriptions/customer-journey-analytics.html?lang=fr) ou à la [ Description du produit pour le module complémentaire Adobe Analytics : Customer Journey Analytics](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html?lang=fr).
+Ce document fournit des limites pour divers composants de Customer Journey Analytics. Pour les mécanismes de sécurisation, les paramètres de définition de la portée et les droits, reportez-vous à la [ Description du produit pour Customer Journey Analytics ](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html?lang=fr) ou à la [ Description du produit pour le module complémentaire Adobe Analytics : Customer Journey Analytics](https://helpx.adobe.com/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html?lang=fr).
 
 ## Types de limite
 
@@ -142,7 +142,7 @@ Consultez également la section Experience Platform [Mécanismes de sécurisatio
 
 {style="table-layout:auto"}
 
-Consultez également la section Experience Platform [ Mécanismes de sécurisation pour l’ingestion de données](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=fr).
+Consultez également la section Experience Platform [ Mécanismes de sécurisation pour l’ingestion de données](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html).
 
 
 ## Exportation des données des destinations
@@ -154,7 +154,7 @@ Consultez également la section Experience Platform [ Mécanismes de sécurisati
 
 {style="table-layout:auto"}
 
-Consultez également la section Experience Platform [ Mécanismes de sécurisation d’exportation de jeux de données ](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/guardrails#dataset-exports)
+Consultez également la section Experience Platform [ Mécanismes de sécurisation d’exportation de jeux de données ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports)
 
 
 ## Zone d’atterrissage des données
@@ -238,11 +238,23 @@ Consultez également la section Experience Platform [ Mécanismes de sécurisati
 
 {style="table-layout:auto"}
 
+
+## Mesures et dimensions partagées
+
+| Nom | Valeur | Type de limite | Description |
+|---|--:|---|---|
+| Bibliothèque partagée | 1 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de bibliothèques partagées pour une connexion. |
+| Mesures partagées | 10 000 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de mesures partagées par bibliothèque partagée. |
+| Dimensions communes | 10 000 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de dimensions partagées par bibliothèque partagée. |
+
+{style="table-layout:auto"}
+
+
 ## Latences
 
 >[!NOTE]
 >
->Les délais de traitement ci-dessous sont des mécanismes de sécurisation, et non des accords de niveau de service (SLA) contractuels. La latence varie en fonction de la configuration du client, des volumes de données et des applications clientes. Les temps de traitement réels sont souvent plus rapides. Consultez votre contrat Customer Journey Analytics pour connaître les conditions contractuelles et les contrats de niveau de service spécifiques. Voir Experience Platform [Mécanismes de sécurisation pour l’ingestion de données](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=fr) pour plus d’informations.
+>Les délais de traitement ci-dessous sont des mécanismes de sécurisation, et non des accords de niveau de service (SLA) contractuels. La latence varie en fonction de la configuration du client, des volumes de données et des applications clientes. Les temps de traitement réels sont souvent plus rapides. Consultez votre contrat Customer Journey Analytics pour connaître les conditions contractuelles et les contrats de niveau de service spécifiques. Voir Experience Platform [Mécanismes de sécurisation pour l’ingestion de données](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html) pour plus d’informations.
 
 | Flux de données | Latence attendue |
 |---|---|
