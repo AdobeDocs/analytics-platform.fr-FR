@@ -4,16 +4,16 @@ description: Décrit le fonctionnement de la gouvernance des données dans Custo
 exl-id: ab2b7ff2-c638-4ab4-bc86-d1701bebcb1a
 feature: Privacy
 role: Admin
-source-git-commit: 612fce23fe4cb9920c05f3253d69e543668a7cf1
-workflow-type: ht
-source-wordcount: '387'
-ht-degree: 100%
+source-git-commit: 40706e3118cbaf7582d8625d307358b16f1836ac
+workflow-type: tm+mt
+source-wordcount: '440'
+ht-degree: 90%
 
 ---
 
 # Adobe Customer Journey Analytics et gouvernance des données
 
-En règle générale, tous les paramètres liés à la gouvernance de données dans Customer Journey Analytics sont hérités d’Adobe Experience Platform.
+En règle générale, tous les paramètres liés à la gouvernance des données dans Customer Journey Analytics sont hérités d’Adobe Experience Platform.
 
 ## Gouvernance des données
 
@@ -27,6 +27,12 @@ Cette intégration vous permet de gérer la conformité plus facilement. Les ges
 
 [En savoir plus](/help/data-views/data-governance.md)
 
+## Demandes d&#39;accès à des informations personnelles
+
+Adobe gère les demandes d’accès à des informations personnelles conformément aux lois locales et internationales applicables.
+
+Étant donné que Customer Journey Analytics utilise des données disponibles dans Adobe Experience Platform, Adobe offre la fonctionnalité [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=fr) pour envoyer des demandes d’accès et de suppression de données. Ces demandes s’appliquent aussi bien aux jeux de données originaux qu’aux jeux de données recomposés.
+
 ## RGPD
 
 Customer Journey Analytics ne souscrit pas directement au Service Central du Règlement Général sur la Protection des Données (RGPD) et hérite à la place de toutes les modifications apportées aux jeux de données dans Experience Platform. Customer Journey Analytics dépend du lac de données de Platform pour appliquer les demandes de suppression liées au RGPD et informer Customer Journey Analytics lorsque les demandes sont terminées. Toutes les modifications apportées aux lots affectés dans Customer Journey Analytics pour les jeux de données d’événement sont synchronisées avec les données de Platform. Les jeux de données de profil et de recherche affectés par les demandes de suppression liées au RGPD sont entièrement ré-ingérés après chaque demande de suppression. Les demandes de suppression sont généralement terminées dans les 7 jours suivant un événement de suppression dans le lac de données.
@@ -39,4 +45,4 @@ Conformément au CCPA, le Service Confidentialité reçoit les demandes de refus
 
 >[!MORELIKETHIS]
 >
->* [Blog : comment maintenir une gouvernance efficace dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/bg-p/adobe-analytics-blogs/page/4?profile.language=fr)
+>* [Blog : comment maintenir une gouvernance efficace dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/bg-p/adobe-analytics-blogs/page/4)
