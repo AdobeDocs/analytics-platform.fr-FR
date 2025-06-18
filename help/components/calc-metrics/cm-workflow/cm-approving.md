@@ -3,7 +3,7 @@ description: Dans le Gestionnaire de mesures calculées, vous pouvez définir un
 title: Approbation des mesures calculées
 feature: Calculated Metrics
 exl-id: da55bb2b-9d42-4fba-add4-655f7f7c7ef6
-source-git-commit: c183a5013cbc5ff3765cc4926a308d0c4563a097
+source-git-commit: ef97b36a95e5f39f7436f5e21861d1ee5a0338dd
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 21%
@@ -16,7 +16,7 @@ Dans le [gestionnaire de mesures calculées](cm-manager.md), vous pouvez approuv
 
 Pour approuver des mesures calculées :
 
-1. Dans le [Gestionnaire de mesures calculées](cm-approving.md), sélectionnez une ou plusieurs des mesures calculées à approuver.
+1. Dans le [Gestionnaire de mesures calculées](cm-manager.md), sélectionnez une ou plusieurs des mesures calculées à approuver.
 1. Dans la barre d’actions, sélectionnez ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Approuver]**. Les mesures calculées approuvées sont indiquées par ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)
 
 Pour annuler l’approbation des mesures calculées :

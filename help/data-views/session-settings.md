@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Data Views
 exl-id: 25710bf1-ec85-4a7d-a404-54549013cc2c
 role: Admin
-source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
-workflow-type: ht
+source-git-commit: 15a3d7b6f2ec4f37fd861315871e06ddefa5348a
+workflow-type: tm+mt
 source-wordcount: '462'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
 
@@ -47,11 +47,11 @@ Pour définir le contexte d’une session dans une vue de données, procédez co
 
    2. Sélectionnez une mesure dans la liste **[!UICONTROL Déposer une mesure ici]** liste sous **[!UICONTROL Démarrer une nouvelle session avec une mesure]**. Vous pouvez également faire glisser et déposer une mesure à partir du volet de gauche sur le **[!UICONTROL champ Déposer une mesure]**. La mesure sélectionnée définit le début d’une nouvelle session. Vous pouvez définir plusieurs mesures.
 
-      Vous pouvez utiliser n’importe quel type de mesure pour définir une nouvelle session. Par exemple, imaginez que vous souhaitiez définir une nouvelle session chaque fois qu’un profil lance votre application mobile. Dans **[!UICONTROL Vue des données]** > **[!UICONTROL Composants]**, vous définissez un composant de type mesure nommé **[!UICONTROL Lancements]**, basé sur un champ de schéma **[!UICONTROL Nom]** **[!UICONTROL appInteraction]**. Ensuite, vous spécifiez le composant de mesure **[!UICONTROL Lancements]** pour qu’il ne compte la valeur que lorsqu’elle correspond à `launch`.
+      Vous pouvez utiliser n’importe quel type de mesure pour définir une nouvelle session. Par exemple, imaginez que vous souhaitiez définir une nouvelle session chaque fois qu’un profil lance votre application mobile. Dans **[!UICONTROL Vue de données]** > **[!UICONTROL Composants]**, définissez un composant de type mesure, nommé **[!UICONTROL Launch]**, en fonction d’un champ de schéma **[!UICONTROL appInteraction]** **[!UICONTROL Name]**. Vous spécifiez en outre le composant de mesure **[!UICONTROL Launch]** pour ne comptabiliser la valeur que lorsque la valeur correspond à `launch`.
 
       ![Composant de mesure d’interaction de l’application Lancements](assets/component-launches.png)
 
-      Faites ensuite glisser-déposer, ou sélectionnez la mesure **[!UICONTROL Lancements]** en tant que mesure pour définir une nouvelle session.
+      Ensuite, effectuez un glisser-déposer ou sélectionnez la mesure **[!UICONTROL Lancement]** pour définir une nouvelle session.
 
       ![Paramètres de session Lancements](assets/session-settings-launches-metric.png)
 

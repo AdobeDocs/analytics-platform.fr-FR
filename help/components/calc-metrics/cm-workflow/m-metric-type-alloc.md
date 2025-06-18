@@ -3,10 +3,10 @@ description: Découvrir le type de mesure et l’attribution
 title: Type de mesure et attribution
 feature: Calculated Metrics
 exl-id: da73a9ba-542e-436c-bdb2-b629b5b6f760
-source-git-commit: 2b193e1ff612ab00335898164dc84afb08673fff
+source-git-commit: 304b8d85767d89ee60a6fb37a128194f60ca89d4
 workflow-type: tm+mt
-source-wordcount: '1017'
-ht-degree: 98%
+source-wordcount: '612'
+ht-degree: 91%
 
 ---
 
@@ -33,23 +33,23 @@ Vous pouvez configurer le type de mesure et le [modèle d’attribution](#attrib
          * Désactivez **[!UICONTROL Utiliser un modèle d’attribution différent du modèle par défaut]** pour utiliser le modèle d’attribution de colonne par défaut, à savoir Dernière touche, avec un intervalle de recherche en amont de 30 jours.
          * Activez **[!UICONTROL Utiliser un modèle d’attribution différent du modèle par défaut]**. Dans la boîte de dialogue **[!UICONTROL Modèle d’attribution de colonne]**,
 
-            * sélectionnez un **[!UICONTROL Modèle]** parmi les modèles d’attribution.
-            * Sélectionnez un **[!UICONTROL Intervalle de recherche en amont]**. Si vous sélectionnez **[!UICONTROL Heure personnalisée]**, vous pouvez définir la période avec un granularité allant des **[!UICONTROL minute(s)]** aux **[!UICONTROL trimestre(s)]**. Consultez [Intervalle de recherche en amont](#lookback-window) pour en savoir plus.
+            * Sélectionnez un **[!UICONTROL Modèle]** dans les [modèles d’attribution](#attribution-models).
+            * Sélectionnez un **[!UICONTROL Conteneur]** parmi les options [conteneur](#container).
+            * Sélectionnez une option **[!UICONTROL Intervalle de recherche en amont]** dans l’[Intervalle de recherche en amont](#lookback-window). Si vous sélectionnez **[!UICONTROL Heure personnalisée]**, vous pouvez définir la période en **[!UICONTROL minute(s)]** jusqu’à **[!UICONTROL trimestre(s)]**.
 
       1. Sélectionnez **[!UICONTROL Appliquer]** pour appliquer le modèle d’attribution différent du modèle par défaut. Sélectionnez Annuler pour annuler.
 
      Si vous avez déjà défini un modèle d’attribution différent du modèle par défaut, sélectionnez **[!UICONTROL Modifier]** pour modifier la sélection.
 
-Consultez [Exemple](#example) pour un exemple d’utilisation d’un modèle d’attribution et d’un intervalle de recherche en amont.
+Voir [Exemple](#example) pour un exemple d’utilisation d’un modèle d’attribution, d’un conteneur et d’un intervalle de recherche en amont.
 
 
-## Attribution {#attribution}
+## Modèles d’attribution {#attribution-models}
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_nondefaultattributionmodel"
 >title="Utilisation d’un modèle d’attribution différent du modèle par défaut"
 >abstract="Activez un modèle d’attribution autre que celui par défaut pour la mesure sélectionnée."
-
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attributionmodel"
@@ -131,69 +131,38 @@ Consultez [Exemple](#example) pour un exemple d’utilisation d’un modèle d�
 >title="Algorithmique"
 >abstract="Le crédit est déterminé dynamiquement à l’aide d’un algorithme statistique."
 
+{{attribution-models-details}}
+
+
+## Conteneur {#container}
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_container"
 >title="Conteneur"
 >abstract="Sélectionnez un conteneur pour définir la portée souhaitée pour l’attribution."
 
+{{attribution-container}}
 
-{{attribution-models-details}}
 
-
-<!-- markdownlint-disable MD034 -->
+## Intervalle de recherche en amont {#lookback-winwow}
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_lookbackwindow"
 >title="Intervalle de recherche en amont"
 >abstract="Ce paramètre détermine la fenêtre d’attribution des données qui sera appliquée à chaque conversion."
 
-
 {{attribution-lookback-window}}
 
 
-### Exemple d’attribution {#attribution-example}
 
-Examinez l’exemple suivant :
 
-1. Le 15 septembre, une personne arrive sur votre site par le biais d’une annonce de référencement payant, puis le quitte.
-1. Le 18 septembre, la personne arrive de nouveau sur votre site par le biais d’un lien sur les médias sociaux qu’une personne de son entourage lui a envoyé. Ils ajoutent plusieurs articles à leur panier, mais n’achètent rien.
-1. Le 24 septembre, votre équipe marketing leur envoie un courrier électronique contenant un bon pour certains articles de leur panier. Ils appliquent le bon, mais se rendent sur plusieurs autres sites pour voir s’il existe d’autres bons. Ils en trouvent un autre par le biais d’une annonce d’affichage, puis effectuent un achat de 50 $.
+## Exemple
 
-Selon votre intervalle de recherche en amont et votre modèle d’attribution, les canaux reçoivent un crédit différent. Voici quelques exemples :
-
-* À l’aide de **Première touche** et d’un **intervalle de recherche en amont des sessions**, l’attribution ne s’intéresse qu’à la troisième visite. Entre l’e-mail et l’affichage, l’e-mail était le premier. Dès lors, il reçoit 100 % du crédit pour l’achat de 50 $.
-
-* À l’aide de **Première touche** et d’un **intervalle de recherche en amont des personnes**, l’attribution s’intéresse aux trois visites. Le référencement payant a été le premier. Il obtient donc un crédit de 100 % pour l’achat de 50 $.
-
-* À l’aide de **Linéaire** et d’un **intervalle de recherche en amont des sessions**, le crédit est divisé entre l’e-mail et l’affichage. Ces deux canaux reçoivent chacun un crédit pour 25 $.
-À l’aide de **linéaire** et d’un **intervalle de recherche en amont des personnes**, le crédit est divisé entre le référencement payant, les réseaux sociaux, l’e-mail et l’affichage. Chaque canal reçoit un crédit pour 12,50 $ pour cet achat.
-
-* À l’aide du modèle **En forme de J** et d’un **intervalle de recherche en amont des personnes**, le crédit est divisé entre le référencement payant, les réseaux sociaux, l’e-mail et l’affichage.
-
-   * Un crédit de 60 % est accordé à l’affichage, pour un montant de 30 $.
-   * Un crédit de 20 % est accordé au référencement payant, pour un montant de 10 $.
-   * Les 20 % restants sont répartis entre les réseaux sociaux et le courrier électronique, soit 5 $ à chacun.
-
-* À l’aide de **Atténuation temporelle** et d’un **intervalle de recherche en amont des personnes**, le crédit est divisé entre le référencement payant, les réseaux sociaux, l’e-mail et l’affichage. Utilisation de la demi-vie de sept jours par défaut :
-
-   * Intervalle de zéro jour entre le point de contact de l’affichage et la conversion. `2^(-0/7) = 1`
-   * Intervalle de zéro jour entre le point de contact de l’e-mail et la conversion. `2^(-0/7) = 1`
-   * Intervalle de six jours entre le point de contact de réseaux sociaux et la conversion. `2^(-6/7) = 0.552`
-   * Intervalle de neuf jours entre le point de contact du référencement payant et la conversion. `2^(-9/7) = 0.41`
-   * La normalisation de ces valeurs entraîne les résultats suivants :
-
-      * Affichage : 33,8 %, gain de 16,88 $
-      * Courrier électronique : 33,8 %, gain de 16,88 $
-      * Réseaux sociaux : 18,6 %, gain de 9,32 $
-      * Référencement payant : 13,8 %, gain de 6,92 $
-
-Les événements de conversion qui comportent généralement des nombres entiers sont divisés si le crédit revient à plusieurs canaux. Par exemple, si deux canaux contribuent à un événement personnalisé à l’aide d’un modèle d’attribution linéaire, les deux canaux obtiennent 0,5 de cette commande. Ces mesures partielles sont additionnées pour toutes les personnes, puis arrondies à l’entier le plus proche à des fins de création de rapports.
-
+{{attribution-example}}
 
 >[!MORELIKETHIS]
 >
 >[Paramètres des composants d’attribution](/help/data-views/component-settings/attribution.md)
->[Mesure de participation](participation-metric.md)
+>>[Mesure de participation](participation-metric.md)
 >
 

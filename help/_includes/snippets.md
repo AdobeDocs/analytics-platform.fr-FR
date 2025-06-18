@@ -1,7 +1,7 @@
 ---
-source-git-commit: fe705aade87a2c5ea8d47db3dcd727d239eafc76
+source-git-commit: 256b1a3901a13ff2873a5cb5782baf26c93b8e8d
 workflow-type: tm+mt
-source-wordcount: '5193'
+source-wordcount: '4947'
 ht-degree: 38%
 
 ---
@@ -124,21 +124,26 @@ Un modèle d’attribution détermine les éléments de dimension qui reçoivent
 
 {style="table-layout:auto"}
 
+## Conteneur d’attribution {#attribution-container}
+
+Un conteneur d’attribution définit la portée souhaitée pour l’attribution. Les options possibles sont les suivantes :
+
+* **Session** : recherche le début de la session au cours de laquelle une conversion a eu lieu. Les intervalles de recherche en amont de session respectent le [délai d’expiration de session](/help/data-views/create-dataview.md#session-settings) modifié dans une vue de données.
+* **Personne** : examine les conversions à partir de la portée du conteneur de personnes.
+* **Compte global** [!BADGE B2B edition]{type=Informative} : examine les conversions à partir de la portée du conteneur des comptes globaux.
+* **Comptes** [!BADGE B2B edition]{type=Informative} : examine les conversions à partir de l’étendue du conteneur de personnes .
+* **Opportunité** [!BADGE B2B edition]{type=Informative} : examine les conversions à partir de la portée du conteneur d’opportunités .
+* **Groupe d’achat** [!BADGE B2B edition]{type=Informative} : examine les conversions à partir de l’étendue du conteneur du groupe d’achat.
+
 ## Intervalle de recherche en amont d’attribution {#attribution-lookback-window}
 
-Un intervalle de recherche en amont est la durée pendant laquelle une conversion doit faire une recherche en amont pour inclure des points de contact. Si un élément de dimension est défini en dehors de l’intervalle de recherche en amont, la valeur n’est incluse dans aucun calcul d’attribution.
+Un intervalle de recherche en amont d’attribution est la durée pendant laquelle une conversion doit rechercher les points de contact inclus. Si un élément de dimension est défini en dehors de l’intervalle de recherche en amont, la valeur n’est incluse dans aucun calcul d’attribution.
 
 * **14 jours** : recherche les 14 jours précédents à partir du moment où la conversion a eu lieu.
 * **30 jours** : vérifie les 30 jours précédents à partir du moment où la conversion a eu lieu.
 * **60 jours** : vérifie les 60 jours précédents à partir du moment où la conversion a eu lieu.
 * **90 jours** : vérifie les 90 jours précédant la date de la conversion.
 * **13 mois** [!BADGE B2B edition]{type=Informative} : recherche les 13 mois précédant la conversion.
-* **Session** : recherche le début de la session au cours de laquelle une conversion a eu lieu. Les intervalles de recherche en amont de session respectent le [délai d’expiration de session](/help/data-views/create-dataview.md#session-settings) modifié dans une vue de données.
-* **Personne (intervalle du compte rendu des performances)** : examine toutes les visites jusqu’au premier du mois de la période actuelle. Par exemple, si la période du rapport s’étend du 15 au 30 septembre, la période de recherche en amont d’une personne inclut le 1er au 30 septembre. Si vous utilisez cet intervalle de recherche en amont, vous pouvez parfois voir que les éléments de dimension sont attribués à des dates en dehors de votre intervalle de compte rendu des performances.
-* **Compte global (intervalle de création de rapports)** [!BADGE B2B edition]{type=Informative} : examine tous les comptes globaux jusqu’au premier du mois de la période en cours. Par exemple, si la période du rapport s’étend du 15 au 30 septembre, la période de recherche en amont du compte global inclut le 1er au 30 septembre. Si vous utilisez cet intervalle de recherche en amont, vous pouvez parfois voir que les éléments de dimension sont attribués à des dates en dehors de votre intervalle de compte rendu des performances.
-* **Comptes (intervalle de création de rapports)** [!BADGE B2B edition]{type=Informative} : examine tous les comptes jusqu’au premier du mois de la période en cours. Par exemple, si la période du rapport s’étend du 15 au 30 septembre, la période de recherche en amont du compte inclut le 1er au 30 septembre. Si vous utilisez cet intervalle de recherche en amont, vous pouvez parfois voir que les éléments de dimension sont attribués à des dates en dehors de votre intervalle de compte rendu des performances.
-* **Opportunité (intervalle de création de rapports)** [!BADGE B2B edition]{type=Informative} : examine toutes les opportunités jusqu’au premier du mois de la période actuelle. Par exemple, si la période du rapport s’étend du 15 au 30 septembre, la période de recherche en amont d’opportunité comprend le 1er au 30 septembre. Si vous utilisez cet intervalle de recherche en amont, vous pouvez parfois voir que les éléments de dimension sont attribués à des dates en dehors de votre intervalle de compte rendu des performances.
-* **Groupe d’achats (intervalle de rapport)** [!BADGE B2B edition]{type=Informative} : examine tous les groupes d’achats jusqu’au premier du mois de la période actuelle. Par exemple, si la période du rapport est comprise entre le 15 et le 30 septembre, la période de recherche en amont du groupe d&#39;achats comprend le 1er et le 30 septembre. Si vous utilisez cet intervalle de recherche en amont, vous pouvez parfois voir que les éléments de dimension sont attribués à des dates en dehors de votre intervalle de compte rendu des performances.
 * **Heure personnalisée :** vous permet de définir un intervalle de recherche en amont personnalisé à partir du moment où une conversion s’est produite. Vous pouvez spécifier le nombre de minutes, heures, jours, semaines, mois ou trimestres. Par exemple, si une conversion a eu lieu le 20 février, un intervalle de recherche en amont de cinq jours évalue tous les points de contact de dimension entre le 15 et le 20 février dans le modèle d’attribution.
 
 ## Exemple d’attribution {#attribution-example}
@@ -149,35 +154,20 @@ Examinez l’exemple suivant :
 1. Le 18 septembre, la personne arrive de nouveau sur votre site par le biais d’un lien sur les médias sociaux qu’une personne de son entourage lui a envoyé. Ils ajoutent plusieurs articles à leur panier, mais n’achètent rien.
 1. Le 24 septembre, votre équipe marketing leur envoie un courrier électronique contenant un bon pour certains articles de leur panier. Ils appliquent le bon, mais se rendent sur plusieurs autres sites pour voir s’il existe d’autres bons. Ils en trouvent un autre par le biais d’une annonce d’affichage, puis effectuent un achat de 50 $.
 
-Selon votre intervalle de recherche en amont et votre modèle d’attribution, les canaux reçoivent un crédit différent. Voici quelques exemples :
+Selon votre modèle d’attribution, le conteneur et les canaux reçoivent un crédit différent. Consultez le tableau ci-dessous pour obtenir des exemples :
 
-* À l’aide de **Première touche** et d’un **intervalle de recherche en amont des sessions**, l’attribution ne s’intéresse qu’à la troisième visite. Entre l’e-mail et l’affichage, l’e-mail était le premier. Dès lors, il reçoit 100 % du crédit pour l’achat de 50 $.
-
-* À l’aide de **Première touche** et d’un **intervalle de recherche en amont des personnes**, l’attribution s’intéresse aux trois visites. Le référencement payant a été le premier. Il obtient donc un crédit de 100 % pour l’achat de 50 $.
-
-* À l’aide de **Linéaire** et d’un **intervalle de recherche en amont des sessions**, le crédit est divisé entre l’e-mail et l’affichage. Ces deux canaux reçoivent chacun un crédit pour 25 $.
-À l’aide de **linéaire** et d’un **intervalle de recherche en amont des personnes**, le crédit est divisé entre le référencement payant, les réseaux sociaux, l’e-mail et l’affichage. Chaque canal reçoit un crédit pour 12,50 $ pour cet achat.
-
-* À l’aide du modèle **En forme de J** et d’un **intervalle de recherche en amont des personnes**, le crédit est divisé entre le référencement payant, les réseaux sociaux, l’e-mail et l’affichage.
-
-   * Un crédit de 60 % est accordé à l’affichage, pour un montant de 30 $.
-   * Un crédit de 20 % est accordé au référencement payant, pour un montant de 10 $.
-   * Les 20 % restants sont répartis entre les réseaux sociaux et le courrier électronique, soit 5 $ à chacun.
-
-* À l’aide de **Atténuation temporelle** et d’un **intervalle de recherche en amont des personnes**, le crédit est divisé entre le référencement payant, les réseaux sociaux, l’e-mail et l’affichage. Utilisation de la demi-vie de sept jours par défaut :
-
-   * Intervalle de zéro jour entre le point de contact de l’affichage et la conversion. `2^(-0/7) = 1`
-   * Intervalle de zéro jour entre le point de contact de l’e-mail et la conversion. `2^(-0/7) = 1`
-   * Intervalle de six jours entre le point de contact de réseaux sociaux et la conversion. `2^(-6/7) = 0.552`
-   * Intervalle de neuf jours entre le point de contact du référencement payant et la conversion. `2^(-9/7) = 0.41`
-   * La normalisation de ces valeurs entraîne les résultats suivants :
-
-      * Affichage : 33,8 %, gain de 16,88 $
-      * Courrier électronique : 33,8 %, gain de 16,88 $
-      * Réseaux sociaux : 18,6 %, gain de 9,32 $
-      * Référencement payant : 13,8 %, gain de 6,92 $
+| Modèle | Conteneur | Intervalle de recherche en amont | Explication |
+|---|---|---|---|
+| Première touche | Session | 30 jours | L’attribution ne s’intéresse qu’à la troisième visite. Entre l’e-mail et l’affichage, l’e-mail était le premier. Dès lors, il reçoit 100 % du crédit pour l’achat de 50 $. |
+| Première touche | Personne | 30 jours | Attribution examine les trois visites. Le référencement payant a été le premier. Il obtient donc un crédit de 100 % pour l’achat de 50 $. |
+| Linéaire | Session | 30 jours | Le crédit est divisé entre l’e-mail et l’affichage. Ces deux canaux reçoivent chacun un crédit de 25 $. |
+| Linéaire | Personne | 30 jours | Le crédit est divisé entre le référencement payant, les réseaux sociaux, les e-mails et l’affichage. Chaque canal reçoit un crédit pour 12,50 $ pour cet achat. |
+| en forme de J | Personne | 30 jours | Le crédit est divisé entre le référencement payant, les réseaux sociaux, les e-mails et l’affichage.<ul><li>Un crédit de 60 % est accordé à l’affichage, pour un montant de 30 $.</li><li>Un crédit de 20 % est accordé au référencement payant, pour un montant de 10 $.</li><li>Les 20 % restants sont répartis entre les réseaux sociaux et le courrier électronique, soit 5 $ à chacun.</li></ul> |
+| Décroissance temporelle | Personne | 30 jours | <ul><li>Intervalle de zéro jour entre le point de contact de l’affichage et la conversion. `2^(-0/7) = 1`</li><li>Intervalle de zéro jour entre le point de contact de l’e-mail et la conversion. `2^(-0/7) = 1`</li><li>Intervalle de six jours entre le point de contact de réseaux sociaux et la conversion. `2^(-6/7) = 0.552`</li><li>Intervalle de neuf jours entre le point de contact du référencement payant et la conversion. `2^(-9/7) = 0.41`</li>La normalisation de ces valeurs entraîne les résultats suivants :<ul><li>Affichage : 33,8 %, gain de 16,88 $</li><li>Courrier électronique : 33,8 %, gain de 16,88 $</li><li>Réseaux sociaux : 18,6 %, gain de 9,32 $</li><li>Référencement payant : 13,8 %, gain de 6,92 $</li></ul></li></ul> |
 
 Les événements de conversion qui comportent généralement des nombres entiers sont divisés si le crédit revient à plusieurs canaux. Par exemple, si deux canaux contribuent à un événement personnalisé à l’aide d’un modèle d’attribution linéaire, les deux canaux obtiennent 0,5 de cette commande. Ces mesures partielles sont additionnées pour toutes les personnes, puis arrondies à l’entier le plus proche à des fins de création de rapports.
+
+[!BADGE B2B edition ]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} utilisez des conteneurs B2B spécifiques, tels que des comptes ou des opportunités, et des intervalles de recherche en amont plus appropriés (jusqu’à 13 mois) pour appliquer les modèles d’attribution ci-dessus dans des scénarios B2B standard.
 
 ## Comparaisons des visualisations de parcours {#journey-visualization-comparisons}
 
@@ -272,7 +262,7 @@ Utilisez les informations suivantes pour choisir la visualisation qui répond le
 | [!UICONTROL Minute] | La minute à laquelle un événement donné s’est produit (arrondi à l’unité inférieure). Le premier élément de dimension correspond à la première minute de la période, et le dernier élément de dimension correspond à la dernière minute de la période. |
 | [!UICONTROL Minute de l’heure] | La minute de l’heure à laquelle un événement donné s’est produit (arrondie à l’unité inférieure). Le premier élément de dimension correspond à la première minute de l’heure dans la période et le dernier élément de dimension correspond à la dernière minute de l’heure dans la période. |
 | [!UICONTROL Mois] | Le mois au cours duquel un événement donné s’est produit. Le premier élément de dimension correspond au premier mois de la période, et le dernier élément de dimension correspond au dernier mois de la période. |
-| [!UICONTROL &#x200B; Mois de l’année &#x200B;] | Le mois de l’année au cours duquel un événement donné s’est produit. Le premier élément de dimension correspond au premier mois de l’année dans la période et le dernier élément de dimension correspond au dernier mois de l’année dans la période. |
+| [!UICONTROL  Mois de l’année ] | Le mois de l’année au cours duquel un événement donné s’est produit. Le premier élément de dimension correspond au premier mois de l’année dans la période et le dernier élément de dimension correspond au dernier mois de l’année dans la période. |
 | [!UICONTROL Trimestre] | Le trimestre au cours duquel un événement donné s’est produit. Le premier élément de dimension correspond au premier trimestre de la période et le dernier élément de dimension correspond au dernier trimestre de la période. |
 | [!UICONTROL Trimestre de l’année] | Trimestre de l’année au cours duquel un événement donné s’est produit. Le premier élément de dimension correspond au premier trimestre de l’année dans la période, et le dernier élément de dimension correspond au dernier trimestre de l’année dans la période. |
 | [!UICONTROL Seconde] | Seconde à laquelle un événement donné s’est produit (arrondie à l’unité inférieure). Le premier élément de dimension correspond à la première seconde de la période, et le dernier élément de dimension correspond à la dernière seconde de la période. |
@@ -288,7 +278,7 @@ Utilisez les informations suivantes pour choisir la visualisation qui répond le
 | [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>[!UICONTROL Accounts] | En fonction de lʼID de compte spécifié dans une [!UICONTROL Connexion]. |
 | [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>[!UICONTROL Groupe D&#39;Achats] | Groupes d’achats, en fonction de l’ID de groupe d’achats spécifié dans la [!UICONTROL Connexion]. |
 | [!UICONTROL Événements] | Cette mesure représente le nombre de lignes de tous les jeux de données dʼévénements dans une [!UICONTROL Connexion]. |
-| [!BADGE Comptes globaux &#x200B;]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>[!UICONTROL &#x200B; B2B edition] | En fonction de lʼID de compte spécifié dans une [!UICONTROL Connexion]. |
+| [!BADGE Comptes globaux ]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>[!UICONTROL  B2B edition] | En fonction de lʼID de compte spécifié dans une [!UICONTROL Connexion]. |
 | [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>[!UICONTROL Opportunités] | Les opportunités, en fonction de l’ID d’opportunité d’opportunité dans la [!UICONTROL Connexion]. |
 | [!UICONTROL Personnes] | Basée sur lʼidentifiant de personne spécifié dans une [!UICONTROL Connexion]. |
 | [!UICONTROL La session se termine] | Le nombre dʼévénements qui étaient le dernier événement dʼune session. Tout comme la méthode [!UICONTROL démarrages de session], elle peut également être utilisée dans une définition de segment pour segmenter les éléments jusqu’au dernier événement de chaque session.<p>Ce composant doit être inclus dans votre vue de données pour que la [mesure calculée](/help/components/calc-metrics/default-calcmetrics.md) suivante soit disponible dans Workspace : <ul><li>Taux de fin de session</li></p> |

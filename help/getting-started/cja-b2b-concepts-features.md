@@ -6,7 +6,7 @@ feature: Basics
 role: User, Admin
 badgePremium: label="B2B edition"
 exl-id: df2cc922-d214-49b9-8fdb-443cc1dac05b
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: 3c13ae26a9ef48454467fc21b8faaa9e078c7f9f
 workflow-type: tm+mt
 source-wordcount: '1470'
 ht-degree: 2%
@@ -15,8 +15,6 @@ ht-degree: 2%
 
 
 # Concepts et fonctions de B2B edition
-
-{{draft-b2b}}
 
 Cet article explique des concepts tels que les connexions, les identifiants, les conteneurs et les jeux de données, généralement utilisés dans Customer Journey Analytics. et comment le B2B edition Customer Journey Analytics ajoute des fonctions supplémentaires à ces concepts.
 
