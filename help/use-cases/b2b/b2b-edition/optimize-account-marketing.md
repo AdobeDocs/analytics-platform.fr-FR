@@ -49,8 +49,8 @@ Une visualisation de zone de travail de parcours vous permet d’effectuer les o
 Vous souhaitez visualiser le parcours d’un formulaire de prospect à un formulaire fermé.
 
 1. Visualisation [Création et configuration d’une zone de travail de Parcours ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
-1. Configurez **[!UICONTROL Compte]** comme mesure de Principal ****.
-1. Veillez à sélectionner **[!UICONTROL Compte]** comme conteneur de zone de travail de Parcours ****.
+1. Configurez **[!UICONTROL Compte]** comme mesure de Principal **&#x200B;**.
+1. Veillez à sélectionner **[!UICONTROL Compte]** comme conteneur de zone de travail de Parcours **&#x200B;**.
 
    ![Cas d’utilisation B2B - optimiser le marketing de compte - Zone de travail de parcours - Configuration](assets/b2b-uc-optimize-marketing-journey-canvas-config.png)
 
