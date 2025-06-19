@@ -4,9 +4,9 @@ title: Ajouter et afficher des commentaires dans les projets
 feature: Workspace Basics
 role: User
 exl-id: 05f69a1c-31c2-40d8-ae8b-a084169897b1
-source-git-commit: 29db477c96ad5ca7c69a7f7055c1a7fd3c06eb04
+source-git-commit: 91ac84764a186d81f3270bb3ec9673d93b11bd38
 workflow-type: tm+mt
-source-wordcount: '1821'
+source-wordcount: '1857'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Vous pouvez afficher des commentaires dans la zone des commentaires dans le rail
 
 ### Afficher les commentaires dans la zone des commentaires
 
-Tous les commentaires ajoutés dans un projet Analysis Workspace sont visibles dans la zone des commentaires du rail de droite.
+Tous les commentaires ajoutés dans un projet Analysis Workspace sont visibles dans la zone des commentaires du rail de droite. Le nombre total de commentaires existants s’affiche sur l’icône des commentaires .
 
 1. Par défaut, la zone de commentaires est développée pour chaque projet dans Analysis Workspace la première fois que vous ouvrez un projet.
 
@@ -131,13 +131,15 @@ Pour inclure une autre personne dans votre commentaire :
 
 ## Répondre à un commentaire
 
-1. Une fois le projet ouvert dans Analysis Workspace, sélectionnez l’icône de zone de commentaires ![icône de zone de commentaires](/help/assets/icons/Comment.svg) dans le rail droit d’Analysis Workspace.
+1. Dans Analysis Workspace, ouvrez le projet dans lequel vous souhaitez ajouter un commentaire.
 
-1. Sélectionnez **[!UICONTROL Répondre]** en regard du commentaire auquel vous souhaitez répondre.
+1. Sélectionnez l’icône de zone de commentaires ![icône de zone de commentaires](/help/assets/icons/Comment.svg) dans le rail de droite d’Analysis Workspace, puis sélectionnez **[!UICONTROL Répondre]** en regard du commentaire auquel vous souhaitez répondre.
+
+   Pour inclure le texte du commentaire auquel vous répondez, avec le texte d’origine encapsulé dans une balise guillemet, sélectionnez l’icône en forme de 3 points en regard du commentaire ou de la réponse spécifique auxquels vous souhaitez répondre, puis sélectionnez **[!UICONTROL Citer la réponse]**. Une réponse avec devis est un bon moyen d’indiquer à quel commentaire ou à quelle réponse votre commentaire fait référence.
 
    Ou
 
-   Pour inclure le texte du commentaire auquel vous répondez, avec le texte d’origine encapsulé dans une balise guillemet, sélectionnez l’icône en forme de 3 points en regard du commentaire ou de la réponse spécifique auxquels vous souhaitez répondre, puis sélectionnez **[!UICONTROL Citer la réponse]**. Une réponse avec devis est un bon moyen d’indiquer à quel commentaire ou à quelle réponse votre commentaire fait référence.
+   Sélectionnez l’icône de commentaire dans le panneau ou la visualisation où le commentaire a été fait, puis sélectionnez **[!UICONTROL Répondre]**.
 
 1. Dans le champ **[!UICONTROL Nouveau commentaire]**, spécifiez votre commentaire.
 
@@ -149,9 +151,9 @@ Pour inclure une autre personne dans votre commentaire :
 
 ## Recevoir des notifications sur les commentaires
 
-Les propriétaires de projet et [personnes spécifiques que vous mentionnez](#include-others-in-a-comment) reçoivent des notifications en fonction de leurs paramètres de notification Adobe Experience Cloud. Par défaut, ils reçoivent une notification in-app, visible à partir de l’icône [notification Experience Cloud](https://experienceleague.adobe.com/fr/docs/core-services/interface/features/account-preferences#view-notifications) ![icône de notification Experience Cloud](assets/experience-cloud-notification.svg) dans Customer Journey Analytics.
+Les propriétaires de projet et [personnes spécifiques que vous mentionnez](#include-others-in-a-comment) reçoivent des notifications en fonction de leurs paramètres de notification Adobe Experience Cloud. Par défaut, ils reçoivent une notification in-app, visible à partir de l’icône [notification Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#view-notifications) ![icône de notification Experience Cloud](assets/experience-cloud-notification.svg) dans Customer Journey Analytics.
 
-De plus, les utilisateurs peuvent configurer les paramètres de notification d’Experience Cloud pour recevoir des notifications par e-mail et des notifications Slack en [s’abonnant aux notifications par e-mail](https://experienceleague.adobe.com/fr/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) et [s’abonnant aux notifications Slack](https://experienceleague.adobe.com/fr/docs/core-services/interface/features/account-preferences#slack).
+De plus, les utilisateurs peuvent configurer les paramètres de notification d’Experience Cloud pour recevoir des notifications par e-mail et des notifications Slack en [s’abonnant aux notifications par e-mail](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) et [s’abonnant aux notifications Slack](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#slack).
 
 ## Placer un badge pour un commentaire existant
 
