@@ -4,7 +4,7 @@ title: Segments rapides
 feature: Workspace Basics, Filters, Segments
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: b3c7ceedec7b3f6a916e97bab38fd55f1d6c7f51
 workflow-type: tm+mt
 source-wordcount: '1174'
 ht-degree: 23%
@@ -19,7 +19,7 @@ Les segments rapides vous permettent d’explorer rapidement les données d’un
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segments rapides dans Analysis Workspace](https://video.tv.adobe.com/v/345337/?quality=12&learn=on&captions=fre_fr){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segments rapides dans Analysis Workspace](https://video.tv.adobe.com/v/341466/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 
@@ -107,6 +107,6 @@ Les segments rapides portent exactement le même nom. Vous pouvez créer et modi
 Les segments présentent les avantages suivants par rapport aux segments rapides.
 
 * Les segments peuvent être disponibles dans tous vos projets Workspace
-* Les segments prennent en charge une plus grande complexité à l’aide de conteneurs et de séquences imbriqués et hiérarchiques (utilisant des segments de séquence).
+* Les segments prennent en charge une plus grande complexité à l’aide de [conteneurs](seg-builder.md#containers) et de séquences imbriqués et hiérarchiques (à l’aide de [segments séquentiels](seg-sequential-build.md)).
 
 

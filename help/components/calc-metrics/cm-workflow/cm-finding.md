@@ -3,9 +3,9 @@ description: Décrit le tri et le filtrage, les deux principales façons de trou
 title: Recherche de mesures
 feature: Calculated Metrics
 exl-id: 34d2563a-7cd2-4f22-9ad0-6a3dab8d84ea
-source-git-commit: d2fb161151bb909152470041449ab3010e72e5e3
+source-git-commit: 46242b86d4a7c0e60a468885fcbaa73c575dfb74
 workflow-type: tm+mt
-source-wordcount: '46'
+source-wordcount: '50'
 ht-degree: 8%
 
 ---
@@ -14,4 +14,4 @@ ht-degree: 8%
 
 Vous pouvez localiser les mesures dans Analysis Workspace de la même manière que vous localisez d’autres types de composants.
 
-Pour plus d’informations sur la localisation des composants, voir [Recherche](/help/components/overview.md#search) dans [Présentation des composants](/help/components/overview.md).
+Pour plus d’informations sur la localisation rapide des composants, voir [Gérer la liste des composants](/help/components/overview.md#manage-the-component-list) dans [Présentation des composants](/help/components/overview.md).

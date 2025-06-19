@@ -3,9 +3,9 @@ description: Le gestionnaire de mesures calculées vous permet de partager, filt
 title: Gestionnaire de mesures calculées
 feature: Calculated Metrics
 exl-id: 8b257ecc-a596-4b34-ac26-eda16835f1ba
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: b3c7ceedec7b3f6a916e97bab38fd55f1d6c7f51
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '901'
 ht-degree: 29%
 
 ---
@@ -23,11 +23,11 @@ Vous pouvez partager, filtrer, baliser, approuver, renommer, copier, supprimer, 
 Le gestionnaire de mesures calculées comporte les éléments d’interface suivants :
 
 
-![Interface des filtres](assets/calculated-metrics-manager.png)
+![Interface du gestionnaire de mesures calculées](assets/calculated-metrics-manager.png)
 
-### Liste des filtres
+### Liste des mesures calculées
 
-La liste des filtres affiche ➊ toutes les mesures calculées que vous possédez ou qui ont été partagées avec vous. La liste comporte les colonnes suivantes :
+La liste des mesures calculées ➊ affiche toutes les mesures calculées que vous possédez ou qui ont été partagées avec vous. La liste comporte les colonnes suivantes :
 
 <!-- I think this table incorrectly talks about quick calculated metrics -->
 

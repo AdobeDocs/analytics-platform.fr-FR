@@ -3,10 +3,10 @@ description: Selon vos autorisations, vous pouvez partager des mesures calculée
 title: Partage des mesures calculées
 feature: Calculated Metrics
 exl-id: b2a3e4e3-f0aa-4505-b3f5-7d9f14dc1640
-source-git-commit: 53069702055e0adf7abf9061c592fb15772ded73
+source-git-commit: b3c7ceedec7b3f6a916e97bab38fd55f1d6c7f51
 workflow-type: tm+mt
 source-wordcount: '322'
-ht-degree: 10%
+ht-degree: 11%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 10%
 Dans le [gestionnaire de mesures calculées](cm-manager.md), vous pouvez partager des mesures calculées. Selon vos autorisations, vous pouvez partager des mesures calculées avec l’ensemble de l’organisation, des groupes ou des utilisateurs individuels :
 
 * **Administrateurs** : les administrateurs peuvent partager des mesures calculées avec l’ensemble de l’organisation, avec des groupes d’une organisation et avec des utilisateurs individuels. Voir la [documentation Admin Console](https://helpx.adobe.com/fr/enterprise/using/manage-products.html) pour en savoir plus.
-* **Non-administrateurs** : les non-administrateurs peuvent uniquement partager la mesure calculée qu’ils ont créée et uniquement avec des utilisateurs individuels. |
+* **Non-administrateurs** : les non-administrateurs peuvent uniquement partager la mesure calculée qu’ils ont créée et uniquement avec des utilisateurs individuels.
 
 Pour partager une ou plusieurs mesures calculées :
 
