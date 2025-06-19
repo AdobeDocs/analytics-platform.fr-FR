@@ -163,6 +163,6 @@ Voir [Exemple](#example) pour un exemple d’utilisation d’un modèle d’attr
 >[!MORELIKETHIS]
 >
 >[Paramètres des composants d’attribution](/help/data-views/component-settings/attribution.md)
->>[Mesure de participation](participation-metric.md)
+>&#x200B;>[Mesure de participation](participation-metric.md)
 >
 
