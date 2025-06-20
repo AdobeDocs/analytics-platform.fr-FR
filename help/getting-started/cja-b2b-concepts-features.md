@@ -6,9 +6,9 @@ feature: Basics
 role: User, Admin
 badgePremium: label="B2B edition"
 exl-id: df2cc922-d214-49b9-8fdb-443cc1dac05b
-source-git-commit: 3c13ae26a9ef48454467fc21b8faaa9e078c7f9f
+source-git-commit: 68f2fe684f6eb9590ab047e893fb04b1cbe1a8cd
 workflow-type: tm+mt
-source-wordcount: '1470'
+source-wordcount: '1469'
 ht-degree: 2%
 
 ---
@@ -31,7 +31,7 @@ Dans Customer Journey Analytics B2B edition, vous pouvez choisir entre une conne
 
 ## Conteneurs
 
-Dans Customer Journey Analytics, les conteneurs sont générés dans le cadre de la configuration d’une connexion et d’une vue de données et fournissent une structure et une portée des données. Les conteneurs stockent des groupes d’identifiants pour séquencer tous les horodatages d’événement par des identifiants uniques. Ce stockage facilite l’exécution rapide et performante des fonctionnalités telles que la segmentation, l’attribution et les visualisations.
+Dans Customer Journey Analytics, les conteneurs sont générés dans le cadre de la configuration d’une connexion et d’une vue de données et fournissent la structure et la portée des données. Les conteneurs stockent des groupes d’identifiants pour séquencer tous les horodatages d’événement par des identifiants uniques. Ce stockage facilite l’exécution rapide et performante des fonctionnalités telles que la segmentation, l’attribution et les visualisations.
 
 ### Conteneurs standard
 
@@ -121,5 +121,5 @@ Si un jeu de données d’enregistrement utilise une correspondance par champ, l
 
 ## Rapport sur les données basées sur les personnes et les comptes
 
-Si vous souhaitez créer des rapports sur des conteneurs basés sur des personnes (et des identités de personne) et des conteneurs basés sur des comptes (et des identités de compte), vous devez configurer deux connexions distinctes dans Customer Journey Analytics. Une connexion où vous sélectionnez Personne comme ID de Principal et une connexion où vous sélectionnez Compte comme ID de Principal. Customer Journey Analytics ne prend pas en charge les rapports basés sur les personnes et les comptes rendus de performances à partir d’une seule hiérarchie de conteneurs.
+Si vous souhaitez créer des rapports sur des conteneurs basés sur des personnes (et des identités de personne) et des conteneurs basés sur des comptes (et des identités de compte), vous devez configurer deux connexions distinctes dans Customer Journey Analytics. Une connexion pour laquelle vous sélectionnez Personne comme ID de Principal et une connexion pour laquelle vous sélectionnez Compte comme ID de Principal. Customer Journey Analytics ne prend pas en charge les rapports basés sur les personnes et les comptes rendus de performances à partir d’une seule hiérarchie de conteneurs.
 
