@@ -3,10 +3,10 @@ description: Le créateur de mesures calculées fournit un canevas où faire gli
 title: Créer des mesures calculées
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: ef97b36a95e5f39f7436f5e21861d1ee5a0338dd
+source-git-commit: ec2fc88372814b01a04d4cc824181222ee55a83d
 workflow-type: tm+mt
-source-wordcount: '1703'
-ht-degree: 95%
+source-wordcount: '1628'
+ht-degree: 94%
 
 ---
 
@@ -18,32 +18,16 @@ ht-degree: 95%
 >abstract="Indique l’endroit où cette mesure calculée peut être utilisée dans Customer Journey Analytics, par exemple dans Analysis Workspace, Report Builder, etc. Certaines mesures calculées ne peuvent pas être utilisées avec l’expérimentation."
 >additional-url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/panels/experimentation#use-in-experimentation" text="Utiliser les mesures calculées dans l’expérimentation"
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_externalid"
 >title="ID externe"
 >abstract="La modification de l’ID externe peut avoir une incidence sur la manière dont la mesure calculée apparaît dans des sources externes, telles que les outils de Business Intelligence."
 
-<!-- markdownlint-enable MD034 -->
-
 Customer Journey Analytics fournit une zone de travail où vous pouvez faire glisser et déposer des dimensions, des mesures, des segments et des fonctions permettant de créer des mesures personnalisées en fonction de la logique de hiérarchie des conteneurs, des règles et des opérateurs. Grâce à cet outil de développement intégré, vous pouvez créer et enregistrer des mesures calculées simples ou complexes.
-
-## Commencer à créer une mesure calculée
 
 Vous pouvez utiliser le créateur de mesures calculées pour créer ou modifier des mesures calculées. Une fois créées de cette manière, les mesures calculées sont disponibles dans la liste des composants et peuvent ensuite être utilisées dans les projets de l’ensemble de votre organisation. Vous pouvez également créer rapidement une mesure calculée qui n’est disponible que pour le projet dans lequel elle a été créée, comme décrit dans la section [Création de mesures calculées pour un seul projet](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project) dans [Mesures](/help/components/apply-create-metrics.md).
 
-Accédez au créateur de mesures calculées pour commencer à créer une mesure calculée disponible dans la liste des composants.
-
-1. Accédez au créateur de mesures calculées de l’une des manières suivantes :
-
-   * Dans Analysis Workspace, ouvrez un projet et sélectionnez **[!UICONTROL Composants]** > **[!UICONTROL Créer une mesure]**.
-   * Dans Analysis Workspace, ouvrez un projet, puis sélectionnez l’icône **Plus** en regard de la section [!UICONTROL **Mesures**] dans le rail de gauche.
-   * Dans [!DNL Customer Journey Analytics], accédez à **[!UICONTROL Composants]** > **[!UICONTROL Mesures calculées]**, puis sélectionnez **[!UICONTROL + Ajouter]** en haut de la page Mesures calculées.
-
-1. Continuez avec [Zones du créateur de mesures calculées](#areas-of-the-calculated-metrics-builder).
+[Créer une mesure calculée](cm-workflow.md) décrit les différentes options disponibles pour créer une mesure calculée.
 
 ## Zones du créateur de mesures calculées
 
@@ -216,5 +200,5 @@ Pour supprimer un conteneur, sélectionnez ![Fermer](/help/assets/icons/Close.sv
 >[!MORELIKETHIS]
 >
 >[Utilisation des fonctions](cm-using-functions.md)
->&#x200B;>[Segments ](/help/components/segments/seg-overview.md)
+>>[Segments ](/help/components/segments/seg-overview.md)
 >

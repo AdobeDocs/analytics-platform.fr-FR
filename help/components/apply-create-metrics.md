@@ -4,10 +4,10 @@ title: Mesures
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
 role: User
-source-git-commit: 65b4339b4a1b27c41cfe442482a54661989d704b
+source-git-commit: ec2fc88372814b01a04d4cc824181222ee55a83d
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 9%
+source-wordcount: '866'
+ht-degree: 7%
 
 ---
 
@@ -49,13 +49,6 @@ Vous pouvez voir si une mesure est approuvée ![icône Approuvée](https://spect
 Liste complète des mesures standard dans Customer Journey Analytics :
 {{standard-metrics}}
 
-## Comparaison de mesures avec différents modèles d’attribution
-
-Pour comparer rapidement un modèle d’attribution à un autre pour une mesure, sélectionnez **[!UICONTROL Comparer les modèles d’attribution]** dans le menu contextuel d’une mesure.
-
-Panneau ![Workspace mettant en surbrillance Comparer les modèles d’attribution](assets/compare-attribution.png)
-
-Ce raccourci vous permet de comparer un modèle d’attribution à un autre sans faire glisser une mesure et la configurer deux fois.
 
 ## Création de mesures calculées
 
@@ -65,9 +58,7 @@ Il existe plusieurs façons de créer des mesures calculées. La méthode que vo
 
 ### Création de mesures calculées pour tous les projets
 
-Vous pouvez utiliser le créateur de mesures calculées pour créer des mesures calculées. Une fois créées de cette manière, les mesures calculées sont disponibles dans la liste des composants et peuvent ensuite être utilisées dans les projets de l’ensemble de votre organisation.
-
-Pour plus d’informations sur l’accès au créateur de mesures calculées, voir [Création de mesures calculées](/help/components/calc-metrics/cm-workflow/cm-workflow.md).
+Vous pouvez utiliser le [créateur de mesures calculées](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) pour [créer des mesures calculées](/help/components/calc-metrics/cm-workflow/cm-workflow.md). Une fois créées de cette manière, les mesures calculées sont disponibles dans la liste des composants et peuvent ensuite être utilisées dans les projets de l’ensemble de votre organisation.
 
 ### Création de mesures calculées pour un seul projet
 
@@ -113,6 +104,13 @@ Pour créer une mesure calculée pour un seul projet :
 
    * [!UICONTROL **Changement en pourcentage**] : crée une colonne qui affiche le changement en pourcentage entre les deux colonnes sélectionnées.
 
-[Mesures calculées : mesures sans implémentation](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics.html?lang=fr) (3:42)
+
+## Comparaison de mesures avec différents modèles d’attribution
+
+Pour comparer rapidement un modèle d’attribution à un autre pour une mesure, sélectionnez **[!UICONTROL Comparer les modèles d’attribution]** dans le menu contextuel d’une mesure.
+
+Panneau ![Workspace mettant en surbrillance Comparer les modèles d’attribution](assets/compare-attribution.png)
+
+Ce raccourci vous permet de comparer un modèle d’attribution à un autre sans faire glisser une mesure et la configurer deux fois.
 
 

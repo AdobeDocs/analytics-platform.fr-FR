@@ -4,7 +4,7 @@ title: Création de segments
 feature: Filters, Segments
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: ec2fc88372814b01a04d4cc824181222ee55a83d
 workflow-type: tm+mt
 source-wordcount: '1569'
 ht-degree: 51%
@@ -12,8 +12,6 @@ ht-degree: 51%
 ---
 
 # Création de segments {#build-segments}
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="components_filters_createaudience"
@@ -24,7 +22,6 @@ ht-degree: 51%
 >id="components_filters_datapreview"
 >title="Prévisualisation des données"
 >abstract="Compare les données de ce segment aux données de la vue de données. Le pourcentage de prévisualisation est basé sur le nombre total dans la vue de données des **90 derniers jours**.<br><br/>Si la prévisualisation ne se charge pas, il se peut que votre connexion soit encore en train de remplir les données."
-
 
 La boîte de dialogue **[!UICONTROL Créateur de segments]** permet de créer des segments ou de modifier des segments existants. La boîte de dialogue est intitulée **[!UICONTROL Nouveau segment]** ou **[!UICONTROL Modifier le segment]** pour les segments que vous créez ou gérez à partir du gestionnaire [[!UICONTROL Segment]](/help/components/segments/seg-manage.md).
 
@@ -202,5 +199,3 @@ Le tableau ci-dessous explique, pour chaque modèle d’attribution, les événe
 Un exemple de rapport sur les événements utilisant les trois segments se présente comme suit :
 
 ![Résultats du modèle d’attribution de segment](assets/filter-dimension-attribution-results.png)
-
-<!-- markdownlint-enable MD034 -->
