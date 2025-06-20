@@ -65,7 +65,7 @@ Après avoir apporté des modifications dans l’extension Adobe Content Analy
 >[!MORELIKETHIS]
 >
 >[Configuration guidée](guided.md)
->>[Vue d’ensemble de la publication des balises de collecte de données](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/publish/overview)
+>&#x200B;>[Vue d’ensemble de la publication des balises de collecte de données](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/publish/overview)
 >
 
 
