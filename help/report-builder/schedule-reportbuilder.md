@@ -6,14 +6,14 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 7429d8f9-1e8f-4fbd-8b04-cbe7adbff3e2
-source-git-commit: 6dd8a70293161ff58361953a7e48a98834b7abe0
+source-git-commit: 9505f21748b3d94b2398f898e5399d095ccec260
 workflow-type: tm+mt
-source-wordcount: '1105'
-ht-degree: 13%
+source-wordcount: '864'
+ht-degree: 15%
 
 ---
 
-# Planification de classeurs
+# Planification de classeurs par partage via e-mail
 
 Une fois le classeur enregistré et l’analyse terminée, vous pouvez le partager avec d’autres membres de l’équipe à l’aide de la fonction de planification. La fonction de planification vous permet de créer une planification qui actualise automatiquement les données du classeur. Et envoie par e-mail le fichier de classeur Excel en tant que pièce jointe à une audience spécifiée à une date et une heure spécifiques. La configuration d’une planification permet aux destinataires de recevoir automatiquement des mises à jour régulières. Vous pouvez également utiliser la fonction de planification pour envoyer le classeur une seule fois sans planifier de mises à jour automatiques.
 
@@ -24,7 +24,7 @@ La fonction de planification vous permet également de configurer la protection 
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Schedule Workbooks](https://video.tv.adobe.com/v/3417504/?quality=12&learn=on&captions=fre_fr){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Schedule Workbooks](https://video.tv.adobe.com/v/3413079/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 
@@ -129,54 +129,7 @@ Dans les deux cas, un toast de confirmation s’affiche au bas du hub Report Bui
 
 Pour annuler l’envoi du classeur, sélectionnez **[!UICONTROL Annuler]**.
 
+## Gestion des classeurs planifiés
 
-## Afficher et gérer les classeurs planifiés
+Pour plus d’informations sur la gestion des classeurs déjà planifiés, voir [ Gérer les classeurs planifiés ](/help/report-builder/manage-schedules-reportbuilder.md).
 
-Vous pouvez afficher et gérer tous les classeurs planifiés dans l’onglet **[!UICONTROL Classeurs]**.
-
-1. Sélectionnez **[!UICONTROL Planifier]** dans le hub Report Builder
-
-1. Sélectionnez l’onglet **[!UICONTROL Classeurs]**. La liste de tous les classeurs planifiés s’affiche.
-
-   ![Classeur planifié](assets/scheduled-workbooks.png){zoomable="yes"}
-
-   Vous pouvez placer le pointeur de la souris sur l’icône pour afficher le statut d’un classeur planifié.
-
-   Utilisez ![Rechercher](/help/assets/icons/Search.svg) pour rechercher des classeurs planifiés spécifiques.
-Utilisez ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) pour définir les colonnes à afficher.
-
-1. Sélectionnez un ou plusieurs classeurs.
-
-   ![Planifier les classeurs sélectionnés](assets/scheduled-workbooks-selected.png){zoomable="yes"}
-
-   Les options disponibles sont les suivantes :
-
-   | Option | Description |
-   |---|---|
-   | ![Modifier](/help/assets/icons/Edit.svg) | Modifiez la planification d’un classeur sélectionné. |
-   | ![Historique](/help/assets/icons/History.svg) | Afficher l’historique des classeurs sélectionnés. |
-   | ![ Pause ](/help/assets/icons/Pause.svg) | Mettre en pause le planning des classeurs sélectionnés. |
-   | ![Lecture](/help/assets/icons/Play.svg) | Reprenez la planification des classeurs sélectionnés. |
-   | ![Télécharger](/help/assets/icons/Download.svg) | Téléchargez le classeur sélectionné dans un nouveau classeur. |
-   | ![Supprimer](/help/assets/icons/Delete.svg) | Supprimez la planification des classeurs sélectionnés. |
-
-
-## Historique et statut des classeurs planifiés
-
-Vous pouvez afficher l’historique et le statut des classeurs planifiés dans l’onglet **[!UICONTROL Historique]**.
-
-1. Sélectionnez **[!UICONTROL Planifier]** dans le hub Report Builder.
-
-1. Sélectionnez l’onglet **[!UICONTROL Historique]**. La liste de tous les classeurs planifiés s’affiche.
-
-   ![Historique planifié](assets/scheduled-workbooks-history.png){zoomable="yes"}
-
-   Utilisez ![Rechercher](/help/assets/icons/Search.svg) pour rechercher des classeurs spécifiques dans la liste.
-Utilisez ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) pour définir les colonnes à afficher.
-
-   L’onglet **[!UICONTROL Historique]** vous permet de consulter le statut de chaque tâche planifiée. Une ligne distincte documente le changement d’état pour chaque tâche planifiée.
-
-   * Un ![CheckmarkCircleGreen](/help/assets/icons/CheckmarkCircleGreen.svg) indique que le classeur a bien été envoyé.
-   * Un ![AlertRed](/help/assets/icons/AlertRed.svg) indique qu&#39;une erreur s&#39;est produite.
-
-Vous pouvez également sélectionner ![Historique](/help/assets/icons/History.svg) pour un ou plusieurs classeurs sélectionnés dans l’onglet **[!UICONTROL Classeurs]**. Cette action affiche l’onglet **[!UICONTROL Historique]** avec une liste filtrée par votre sélection. Sélectionnez ![CrossSize75](/help/assets/icons/CrossSize75.svg) pour supprimer un filtre.
