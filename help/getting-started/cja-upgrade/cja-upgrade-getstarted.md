@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 exl-id: fd3b36ab-72c1-469a-b2c7-419813c82425
 source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '721'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Voici quelques-uns des avantages clés : (Pour obtenir une liste complète, ain
 
 * [Transformations de la période de rapport dans les vues de données](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md#customer-journey-analytics-data-views)
 
-  Les vues de données dans Customer Journey Analytics vous permettent d’interpréter plus en détail les données d’une connexion. Vous pouvez modifier ou supprimer des données sans modifier votre implémentation, utiliser des sous-chaînes pour manipuler des dimensions, créer des mesures à partir de n’importe quelle valeur, segmenter des sous-événements ou utiliser des champs dérivés. Toutes ces transformations sont non destructives.
+  Les vues de données dans Customer Journey Analytics vous permettent d’interpréter plus en détail les données d’une connexion. Vous pouvez modifier ou supprimer des données sans modifier l’implémentation, utiliser des sous-chaînes pour manipuler des dimensions, créer des mesures à partir de n’importe quelle valeur, segmenter les sous-événements ou encore utiliser des champs dérivés. Toutes ces transformations sont non destructives.
 
 * [Les transformations s’appliquent aux données historiques et nouvelles.](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
 

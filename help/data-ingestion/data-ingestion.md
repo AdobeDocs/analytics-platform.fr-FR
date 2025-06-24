@@ -6,13 +6,13 @@ feature: Basics
 exl-id: ead96b72-40f1-4ce9-8d91-c8ceea6c4458
 role: Admin
 source-git-commit: 8071e8d5e1ab7e9cfc5037d710361a4d10285704
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '957'
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
-# Présentation de l’ingestion de données
+# Vue d’ensemble de l’ingestion de données
 
 Plusieurs options s’offrent à vous lors de l’ingestion de données dans Customer Journey Analytics. Certaines de ces options supposent que vous voulez déplacer les données Adobe Analytics classiques, d’autres supposent que vous utilisez des données ingérées dans Adobe Experience Platform.
 
@@ -20,9 +20,9 @@ Plusieurs options s’offrent à vous lors de l’ingestion de données dans Cus
 >
 >Dans tous les scénarios, les données que vous souhaitez _utiliser_ dans Customer Journey Analytics sont en réalité _ingérées_ dans Adobe Experience Platform.
 
-Consultez l’architecture de Customer Journey Analytics de haut niveau présentée précédemment dans la [Présentation](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=fr) :
+Consultez l’architecture de Customer Journey Analytics de haut niveau présentée précédemment dans la [Présentation](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-overview.html) :
 
-Architecture de ![Customer Journey Analytics décrite dans cette section](./assets/cja-architecture.png)
+![Architecture de Customer Journey Analytics expliquée dans cette section.](./assets/cja-architecture.png)
 
 Le jeu de données dans l’architecture ci-dessus peut provenir de diverses sources :
 
@@ -32,9 +32,9 @@ Le jeu de données dans l’architecture ci-dessus peut provenir de diverses sou
 
 - Données provenant d’un déploiement d’Adobe Analytics actuel
 
-- les données provenant du suivi de votre site web/application mobile à l’aide de Adobe Experience Platform Web/Mobile SDK,
+- Données provenant du suivi de votre site web/application mobile à l’aide du SDK Web/mobile Adobe Experience Platform
 
-- les données provenant du suivi d’une application de bureau, d’un jeu de console, d’un décodeur ou d’un appareil IoT à l’aide de l’API Adobe Experience Platform Edge Network Server, ou
+- Données provenant du suivi d’une application de bureau, d’un jeu de console, d’un décodeur ou d’un appareil IoT à l’aide de l’API Adobe Experience Platform Edge Network Server, ou
 
 - Données provenant d’un fournisseur de données tiers pour lequel Adobe fournit un connecteur source
 
@@ -42,17 +42,17 @@ De plus, il est possible de disposer de plusieurs de ces jeux de données.
 
 Cette section de la documentation fournit des guides de démarrage rapide pour divers scénarios.
 
-## Hiérarchisation de l’ingestion et latence
+## Hiérarchisation et latence de l’ingestion
 
-Vous pouvez ingérer vos données d’événement dans Customer Journey Analytics dans les 90 minutes (SLT), que les données aient 24 heures, 48 heures ou 7 jours.
+Vous pouvez désormais ingérer vos données d’événement dans Customer Journey Analytics dans les 90 minutes (SLT), qu’elles aient été créées il y a 24 heures, 48 heures ou 7 jours.
 
 Notez que cette fonctionnalité diffère en fonction du package SKU acheté par votre entreprise :
 
-- Priorité d’ingestion de base : données de 24 heures avec traitement SLT de 90 minutes (disponible pour **CJA Foundation** et **CJA Select**)
+- Ingestion de priorité de base : données datant de 24 heures dans un traitement SLT de 90 minutes (disponible pour **CJA Foundation** et **CJA Select**).
 
-- Ingestion prioritaire intermédiaire : données datant de 72 heures et traitées dans un délai de 90 minutes par SLT (disponible pour **CJA Prime**)
+- Ingestion de priorité intermédiaire : données datant de 72 heures dans un traitement SLT de 90 minutes (disponible pour **CJA Prime**).
 
-- Ingestion prioritaire avancée : données datant d’une semaine et traitées dans un délai de 90 minutes par SLT (disponible pour **CJA Ultimate**)
+- Ingestion de priorité avancée : données datant d’une semaine dans un traitement SLT de 90 minutes (disponible pour **CJA Ultimate**).
 
 ## Ingérer et utiliser des données à partir d’Adobe Analytics classique
 
@@ -61,25 +61,25 @@ Adobe Analytics est déjà déployé et vous souhaitez ingérer ces données dan
 Consultez [Ingérer et utiliser des données à partir d’Adobe Analytics classique](./analytics.md) pour plus d’informations.
 
 
-## Ingérer et utiliser des données via l’Edge Network
+## Ingérer et utiliser des données via Edge Network
 
-### Utilisation de Adobe Experience Platform Web SDK
+### Avec le SDK Web Adobe Experience Platform
 
-Vous souhaitez analyser votre site web à l’aide de la technologie Adobe, éventuellement effectuer une migration à partir d’une autre solution ou commencer à suivre le comportement de votre personne. Vous souhaitez suivre les bonnes pratiques d’Adobe en matière d’implémentation, qui consistent à utiliser les SDK Adobe Experience Platform et le réseau Edge, pour ingérer les données. Vous pouvez ensuite utiliser, combiner et analyser les données ingérées avec les données provenant d’autres canaux et sources de données dans Customer Journey Analytics.
+Vous souhaitez analyser le site web à l’aide de la technologie Adobe, éventuellement effectuer une migration à partir d’une autre solution ou commencer à suivre le comportement des visiteurs et visiteuses. Vous souhaitez suivre les bonnes pratiques d’Adobe en matière d’implémentation, qui consistent à utiliser les SDK Adobe Experience Platform et le réseau Edge, pour ingérer les données. Vous pouvez ensuite utiliser, combiner et analyser les données ingérées avec des données provenant d’autres canaux et sources de données dans Customer Journey Analytics.
 
-Pour plus d’informations, voir [ Ingérer et utiliser des données via Adobe Experience Platform Web SDK ](./aepwebsdk.md).
+Pour plus d’informations, consultez [Ingérer et utiliser des données via le SDK Web Adobe Experience Platform](./aepwebsdk.md).
 
-### Utilisation de Adobe Experience Platform Mobile SDK
+### Avec le SDK mobile Adobe Experience Platform
 
-Vous souhaitez analyser votre application mobile avec la technologie Adobe, éventuellement effectuer une migration à partir d’une autre solution ou commencer à suivre le comportement d’une personne dans l’application à partir de zéro. Vous souhaitez suivre les bonnes pratiques d’Adobe en matière d’implémentation, qui consistent à utiliser les SDK Adobe Experience Platform et le réseau Edge, pour ingérer les données. Vous pouvez ensuite utiliser, combiner et analyser les données ingérées avec les données provenant d’autres canaux et sources de données dans Customer Journey Analytics.
+Vous souhaitez analyser votre application mobile avec la technologie Adobe, éventuellement effectuer une migration à partir d’une autre solution ou commencer à suivre le comportement des visiteurs et visiteuses dans l’application à partir de zéro. Vous souhaitez suivre les bonnes pratiques d’Adobe en matière d’implémentation, qui consistent à utiliser les SDK Adobe Experience Platform et le réseau Edge, pour ingérer les données. Vous pouvez ensuite utiliser, combiner et analyser les données ingérées avec des données provenant d’autres canaux et sources de données dans Customer Journey Analytics.
 
-Voir [ Ingérer et utiliser des données via Adobe Experience Platform Mobile SDK](./aepmobilesdk.md) pour plus d’informations.
+Pour plus d’informations, consultez [Ingérer et utiliser des données via le SDK mobile Adobe Experience Platform](./aepmobilesdk.md).
 
-### Utilisation de l’API Adobe Experience Platform Edge Network Server
+### Avec l’API Adobe Experience Platform Edge Network Server
 
-Vous souhaitez analyser votre application de bureau, le jeu tel qu’il est joué sur une console de jeu, l’utilisation d’une application de diffusion vidéo en continu sur un décodeur ou votre appareil IoT avec la technologie Adobe. Vous risquez de migrer à partir d’une autre solution ou de commencer à suivre le comportement d’une personne sur ces appareils à partir de zéro. Vous devez suivre les bonnes pratiques d’Adobe en matière d’implémentation, qui consistent à utiliser les API du serveur Edge Network Adobe Experience Platform et Edge Network, pour ingérer les données. Vous pouvez ensuite utiliser, combiner et analyser les données ingérées avec les données provenant d’autres canaux et sources de données dans Customer Journey Analytics.
+Vous souhaitez analyser votre application de bureau, le jeu joué sur une console de jeu, l’utilisation d’une application de streaming vidéo sur un décodeur ou votre appareil IoT avec la technologie Adobe. Vous souhaitez éventuellement effectuer une migration à partir d’une autre solution ou commencer à suivre le comportement des visiteurs et visiteuses sur ces appareils à partir de zéro. Vous souhaitez suivre les bonnes pratiques d’Adobe en matière d’implémentation, qui consistent à utiliser les API Adobe Experience Platform Edge Network Server et Edge Network, pour ingérer les données. Vous pouvez ensuite utiliser, combiner et analyser les données ingérées avec des données provenant d’autres canaux et sources de données dans Customer Journey Analytics.
 
-Pour plus d’informations, voir [ Ingérer et utiliser des données via l’API du serveur Edge Network Adobe Experience Platform ](./serverapi.md).
+Pour plus d’informations, consultez [Ingérer et utiliser des données via l’API Adobe Experience Platform Edge Network Server](./serverapi.md).
 
 ## Ingérer et utiliser les données par lot
 
@@ -101,5 +101,5 @@ Consultez [Ingérer et utiliser des données à l’aide des connecteurs source]
 
 >[!MORELIKETHIS]
 >
->Blog : [En savoir plus sur le traitement et l’ingestion des données dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-closer-look-at-data-processing-amp-ingestion-in-adobe-customer/ba-p/665091?profile.language=fr)
+>Blog : [en savoir plus sur le traitement et l’ingestion des données dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-closer-look-at-data-processing-amp-ingestion-in-adobe-customer/ba-p/665091)
 

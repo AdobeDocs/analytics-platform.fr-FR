@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
 source-git-commit: 65b4339b4a1b27c41cfe442482a54661989d704b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '737'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -15,30 +15,30 @@ ht-degree: 80%
 
 Ce guide de documentation technique fournit une aide à l’auto-assistance pour Customer Journey Analytics. Customer Journey Analytics vous permet d’importer les données de vos clientes et clients à partir de n’importe quel canal de votre choix (en ligne et hors ligne) dans Adobe Experience Platform. Analysez ensuite ces données comme vous le feriez pour vos données numériques existantes en utilisant l’Analysis Workspace actuel.
 
-Customer Journey Analytics vous permet de contrôler la manière dont vous connectez vos données en ligne et hors ligne dans Analysis Workspace sur n’importe quel ID de client commun, ce qui vous permet d’effectuer des attributions, des segments, des flux, des abandons, etc. sur l’ensemble de vos données client.
+Customer Journey Analytics vous permet de contrôler la manière dont vous connectez vos données en ligne et hors ligne dans Analysis Workspace sur n’importe quel ID de client commun, ce qui vous permet d’effectuer une attribution, des segments, un flux, des abandons, etc. sur l’ensemble de vos données client.
 
 ## Nouveautés
 
-Découvrez les améliorations les plus récentes apportées au produit et à la documentation de Customer Journey Analytics. Pour obtenir une liste complète des fonctionnalités, des améliorations et des correctifs, consultez les [notes de mise à jour](../release-notes/latest.md). Consultez la [page des mises à jour de la documentation](../release-notes/doc-changes.md) pour rester à jour avec les dernières mises à jour de la documentation.
+Découvrez les améliorations les plus récentes apportées au produit et à la documentation de Customer Journey Analytics. Pour obtenir une liste complète des fonctionnalités, des améliorations et des correctifs, consultez les [notes de mise à jour](../release-notes/latest.md). Accédez à la [page des mises à jour de la documentation](../release-notes/doc-changes.md) pour connaître les dernières modifications.
 
 >[!BEGINTABS]
 
->[!TAB Content Analytics]
+>[!TAB Analyse du contenu]
 
-Adobe Content Analytics vous permet d’examiner rapidement et facilement de grands volumes de données de contenu pour repérer des tendances, détecter des anomalies, identifier la lassitude liée au contenu et obtenir des informations issues de l’exposition du contenu.
+L’analyse du contenu Adobe vous permet d’examiner rapidement et facilement de grands volumes de données de contenu pour repérer des tendances, détecter des anomalies, identifier la lassitude liée au contenu et obtenir des informations issues de l’exposition du contenu.
 
 [![Image](assets/learn-more-button.svg)](/help/content-analytics/content-analytics.md)
 
 >[!TAB Profondeur de l’événement]
 
-La profondeur d’événement est une nouvelle dimension standard qui offre de nouvelles façons de mesurer et de mieux comprendre le positionnement des événements dans les sessions client. La dimension Profondeur de l’événement permet un suivi et une analyse détaillés de l’endroit où des événements spécifiques se produisent dans le flux séquentiel des interactions utilisateur au sein d’une session.
+La profondeur de l’événement est une nouvelle dimension standard qui offre de nouvelles façons de mesurer et de mieux comprendre le positionnement des événements dans les sessions client. La dimension Profondeur de l’événement permet un suivi et une analyse détaillés de l’endroit où des événements spécifiques se produisent dans le flux séquentiel des interactions utilisateur au sein d’une session.
 
 [![Image](assets/learn-more-button.svg)](/help/components/dimensions/overview.md#standard-dimensions)
 
 
->[!TAB  Mesures et dimensions partagées ]
+>[!TAB Dimensions et mesures partagées]
 
-Les mesures et dimensions partagées fournissent un emplacement central pour gérer les dimensions et mesures qui peuvent être utilisées dans un certain nombre de vues de données. Ces composants sont particulièrement utiles aux organisations qui utilisent plusieurs vues de données, en particulier si ces vues de données partagent des paramètres de composant communs.
+Les dimensions et mesures partagées fournissent un emplacement central où gérer les dimensions et mesures qui peuvent être utilisées dans un certain nombre de vues de données. Ces composants sont particulièrement utiles aux entreprises qui utilisent plusieurs vues de données, en particulier si ces vues de données ont des paramètres de composant en commun.
 
 [![Image](assets/learn-more-button.svg)](/help/data-views/shared-metrics-dimensions/smd-overview.md)
 
@@ -176,7 +176,7 @@ Comprenez les différences entre Customer Journey Analytics et Adobe Analytic
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td><strong>Customer Journey Analytics</strong><br/>
-<a href="https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/overview" target="_blank">Tutoriels</a> - <a href="https://helpx.adobe.com/fr/legal/product-descriptions/customer-journey-analytics.html?lang=fr" target="_blank">Description du produit Customer Journey Analytics</a> - <a href="https://helpx.adobe.com/fr/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html?lang=fr" target="_blank">Description du produit Adobe Analytics (module complémentaire Customer Journey Analytics)</a> - <a href="https://developer.adobe.com/cja-apis/docs/" target="_blank">API de Customer Journey Analytics</a> - <a href="/help/ai-assistant.md">Assistant IA</a>
+<a href="https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/overview" target="_blank">Tutoriels</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html?lang=fr" target="_blank">Description du produit Customer Journey Analytics</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html?lang=fr" target="_blank">Description du produit Adobe Analytics (module complémentaire Customer Journey Analytics)</a> - <a href="https://developer.adobe.com/cja-apis/docs/" target="_blank">API de Customer Journey Analytics</a> - <a href="/help/ai-assistant.md">Assistant IA</a>
 </td>
 <td><strong>Ingestion des données</strong><br/><a href="/help/data-ingestion/data-ingestion.md">Vue d’ensemble</a> - <a href="/help/data-ingestion/analytics.md">Analytics</a> - <a href="/help/data-ingestion/aepwebsdk.md">SDK Web</a> - <a href="/help/data-ingestion/aepmobilesdk.md">SDK Mobile</a> - <a href="/help/data-ingestion/batch.md">Lot</a> - <a href="/help/data-ingestion/streaming.md">Streaming</a> - <a href="/help/data-ingestion/sources.md">Sources</a> - <a href="/help/data-ingestion/serverapi.md">API du serveur</a>
 </td>

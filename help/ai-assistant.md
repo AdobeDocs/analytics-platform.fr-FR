@@ -1,81 +1,81 @@
 ---
-description: Comment poser des questions à la documentation du Customer Journey Analytics
+description: Poser des questions sur la documentation de Customer Journey Analytics
 title: Assistant IA pour Adobe Customer Journey Analytics
 role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 7a4f15c4-7fd6-4a6a-9b83-7c1f3b95be16
 source-git-commit: 20b578a6269aeaf54f6296b1f4337937887ecf05
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '604'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 
 # Assistant IA pour Adobe Customer Journey Analytics
 
-L’assistant d’IA est une expérience conversationnelle qui permet aux utilisateurs d’effectuer rapidement des tâches. Il s’agit de comprendre les concepts, de résoudre les problèmes ou de rechercher des informations. L’assistant d’IA permet également aux non-experts d’effectuer des tâches d’expert et d’améliorer la qualité générale du travail.
+L’Assistant IA est une expérience de conversation qui permet aux utilisateurs et aux utilisatrices d’effectuer des tâches rapidement. Pour comprendre des concepts, résoudre des problèmes ou parcourir des informations. L’Assistant IA permet également aux personnes n’étant pas spécialisées d’effectuer des tâches expertes et d’améliorer la qualité générale du travail.
 
-L’assistant d’IA en Customer Journey Analytics est formé à la documentation de Adobe Experience League. Lorsqu’une question est posée, l’assistant d’IA répond avec une réponse utile qui permet un apprentissage rapide.
+L’Assistant IA de Customer Journey Analytics est entraîné avec la documentation d’Adobe Experience League. Lorsqu’on lui pose une question, l’Assistant IA renvoie une réponse utile qui permet un apprentissage rapide.
 
-En tant qu’utilisateur novice, vous pouvez utiliser l’assistant d’IA pour découvrir les concepts de Customer Journey Analytics et vous inscrire à des produits et fonctionnalités que vous ne connaissez pas. En tant qu’utilisateur expérimenté, vous pouvez utiliser l’assistant d’IA pour présenter des cas d’utilisation plus avancés ou des conseils et astuces.
+Si vous êtes débutant ou débutante, vous pouvez utiliser l’Assistant IA pour apprendre les concepts de Customer Journey Analytics et vous familiariser avec des produits et fonctionnalités que vous ne connaissez pas. Si vous avez de l’expérience, vous pouvez utiliser l’Assistant IA pour présenter des cas d’utilisation plus avancés ou des conseils et astuces.
 
-Voici quelques exemples de questions conceptuelles :
+Voici des exemples de questions sur les concepts :
 
-* Quelle est la différence entre l’ingestion par lots et l’ingestion par flux ?
-* À quoi Customer Journey Analytics est-il le mieux utilisé ?
-* Comment configurer une vue de données ?
+* Quelle est la différence entre l’ingestion par lots et en flux continu ?
+* Dans quels cas est-il préférable d’utiliser Customer Journey Analytics ?
+* Comment configurer une vue de données ?
 
-Il n’est pas possible de répondre à des questions en dehors de la portée de Customer Journey Analytics, telles que des questions sur d’autres produits Adobe tels qu’Adobe Target et Adobe Creative Cloud Suite.
+L’Assistant ne peut pas répondre aux questions qui ne portent pas sur Customer Journey Analytics, telles que des questions sur d’autres produits Adobe comme Adobe Target et la suite Adobe Creative Cloud.
 
-L’assistant d’IA pour les Customer Journey Analytics est disponible pour tous les niveaux de produit.
+L’Assistant IA pour Customer Journey Analytics est disponible pour tous les niveaux du produit.
 
-## Connaissances produit {#knowledge}
+## Connaissances du produit {#knowledge}
 
-Le modèle de récupération des connaissances du produit est formé sur Customer Journey Analytics. D’autres fonctionnalités, telles que l’analyse des données, seront déployées ultérieurement.
+Le modèle de récupération des connaissances sur le produit est entraîné pour Customer Journey Analytics. D’autres fonctionnalités, telles que l’analyse des données, seront déployées ultérieurement.
 
-| Connaissances produit | Exemples |
+| Connaissances du produit | Exemples |
 | --- | --- |
-| Apprentissage pointé | <ul><li>Quelle est la différence entre Adobe Analytics et Customer Journey Analytics ?</li><li>Comment créer une mesure calculée ?</li></ul> |
-| Découverte ouverte | <ul><li>Comment exporter un projet Workspace ?</li><li>Comment puis-je trouver des composants Workspace en double ?</li></ul> |
-| Résolution des problèmes | <ul><li>Combien de temps faut-il pour que les données entrent dans CJA ?</li><li>Combien de champs dérivés puis-je avoir dans une connexion de Customer Journey Analytics ?</li></ul> |
+| Apprentissage ciblé | <ul><li>Quelle est la différence entre Adobe Analytics et Customer Journey Analytics ?</li><li>Comment créer une mesure calculée ?</li></ul> |
+| Ouvrir la découverte | <ul><li>Comment exporter un projet Workspace ?</li><li>Comment détecter des composants Workspace en double ?</li></ul> |
+| Résolution des problèmes | <ul><li>Combien de temps faut-il pour que les données arrivent dans CJA ?</li><li>Combien de champs dérivés peut-on avoir dans une connexion Customer Journey Analytics ?</li></ul> |
 
 ## Accès aux fonctionnalités
 
-Les paramètres suivants régissent l’accès à la fonctionnalité de l’assistant d’IA :
+Les paramètres suivants régissent l’accès à la fonctionnalité d’Assistant IA :
 
-* **Accès aux solutions** : l’assistant d’IA est disponible en Customer Journey Analytics, mais pas dans Adobe Analytics. Il est également disponible dans Adobe Experience Platform, Adobe Journey Optimizer, Adobe Real-Time CDP et d’autres applications Experience Platform.
+* **Accès à la solution** : la fonctionnalité d’Assistant IA est disponible dans Customer Journey Analytics, mais pas dans Adobe Analytics. Il est également disponible dans Adobe Experience Platform, Adobe Journey Optimizer, Adobe Real-Time CDP et d’autres applications Experience Platform.
 
-* **Accès contractuel** : si vous ne pouvez pas utiliser l’assistant d’IA, contactez l’administrateur ou le représentant du compte d’Adobe de votre entreprise. Avant de pouvoir utiliser l’assistant d’IA, votre entreprise doit accepter certaines dispositions légales relatives à l’IA dédiée à Gen.
+* **Accès contractuel** : si vous ne pouvez pas utiliser l’Assistant IA, contactez l’équipe d’administration de votre entreprise ou le représentant ou la représentante des comptes Adobe. Avant que votre entreprise puisse utiliser l’Assistant IA, vous devez accepter certaines conditions légales liées à GenAI.
 
-* **Autorisations** : dans le [!UICONTROL Adobe Admin Console], l’autorisation [!UICONTROL Outils de création de rapports] **[!UICONTROL Assistant d’IA : connaissance du produit]** détermine l’accès à cet outil. Un [ administrateur de profil de produit ](https://helpx.adobe.com/fr/enterprise/using/manage-product-profiles.html) doit suivre les étapes suivantes dans l’ [!UICONTROL Admin Console] :
-   1. Accédez à **[!UICONTROL Admin Console]** > **[!UICONTROL Produits et services]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Profils de produit]**
-   1. Sélectionnez le titre du profil de produit pour lequel vous souhaitez donner accès à [!UICONTROL Assistant IA : connaissance du produit].
+* **Autorisations** : dans [!UICONTROL Adobe Admin Console], l’autorisation [!UICONTROL Outils de création de rapports] **[!UICONTROL Assistant IA : connaissance du produit]** détermine l’accès à cet outil. Un [administrateur ou une administratrice de profil de produit](https://helpx.adobe.com/fr/enterprise/using/manage-product-profiles.html) doit suivre les étapes suivantes dans [!UICONTROL Admin Console] :
+   1. Accédez à **[!UICONTROL Admin Console]** > **[!UICONTROL Produits et services]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Profils de produit]**.
+   1. Sélectionnez le titre du profil de produit pour lequel vous souhaitez fournir un accès à [!UICONTROL Assistant IA : connaissances du produit].
    1. Dans le profil de produit spécifique, sélectionnez **[!UICONTROL Autorisations]**.
-   1. Sélectionnez ![Modifier](/help/assets/icons/Edit.svg) pour modifier les **[!UICONTROL outils de création de rapports]**.
-   1. Sélectionnez ![AddCircle](/help/assets/icons/AddCircle.svg) pour ajouter **Assistant IA : connaissance du produit** à **[!UICONTROL Éléments d’autorisation inclus]**.
+   1. Sélectionnez ![Modifier](/help/assets/icons/Edit.svg) pour modifier les **[!UICONTROL Outils de création des rapports]**.
+   1. Sélectionnez ![Cercle d’ajout](/help/assets/icons/AddCircle.svg) pour ajouter **Assistant IA : connaissances du produit** aux **[!UICONTROL Éléments d’autorisation inclus]**.
 
-      ![Ajouter une autorisation](assets/ai-assistant-permissions.png).
+      ![Ajouter une autorisation](assets/ai-assistant-permissions.png)
 
    1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les autorisations.
 
-Voir [Contrôle d’accès](/help/technotes/access-control.md#access-control) pour plus d’informations.
+Pour plus d’informations, consultez [Contrôle d’accès](/help/technotes/access-control.md#access-control).
 
-## Accès à l’assistant d’IA dans l’interface utilisateur de Customer Journey Analytics
+## Accéder à l’Assistant IA dans l’interface d’utilisation de Customer Journey Analytics
 
-1. Pour lancer l’assistant d’IA, sélectionnez l’icône de l’assistant dans l’en-tête supérieur d’une page de l’interface utilisateur du Customer Journey Analytics.
+1. Pour lancer l’Assistant IA, sélectionnez l’icône Assistant IA dans l’en-tête supérieur de n’importe quelle page de l’interface d’utilisation de Customer Journey Analytics.
 
-   ![Icône de l’assistant d’IA](assets/ai-asst1.png)
+   ![Icône de l’Assistant IA](assets/ai-asst1.png)
 
-   Lors de l’utilisation initiale de l’assistant d’IA, une clause de non-responsabilité s’affiche avec certaines conditions d’utilisation de l’assistant.
+   Lorsque vous utilisez l’Assistant IA pour la première fois, une clause de non-responsabilité s’affiche avec certaines conditions générales d’utilisation de l’Assistant.
 
-1. Dans la boîte de dialogue fournie, posez une question spécifique en langage naturel à l’assistant d’IA.
+1. Dans la zone fournie, posez une question en langage naturel à l’Assistant IA.
 
-   ![Zone de question](assets/ai-asst2.png)
+   ![Zone de questions](assets/ai-asst2.png)
 
-1. (Facultatif) Pour afficher les sources, cliquez sur **[!UICONTROL Afficher les sources]** et la ou les sources de documentation qui ont fourni la réponse s’affichent.
+1. (Facultatif) Cliquez sur **[!UICONTROL Afficher les sources]** pour afficher la ou les sources de documentation qui ont fourni la réponse.
 
-1. (Facultatif) Vous pouvez également fournir un vote par pouce ou par pouce sur l’utilité d’une réponse donnée.
+1. (Facultatif) Vous pouvez également évaluer l’utilité de la réponse à l’aide du pouce levé ou du pouce baissé.
 
-1. (Facultatif) Vous pouvez marquer la réponse pour du contenu inapproprié ou nocif.
+1. (Facultatif) Vous pouvez signaler la réponse en cas de contenu inapproprié ou préjudiciable.

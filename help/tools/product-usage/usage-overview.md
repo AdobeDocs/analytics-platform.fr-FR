@@ -3,9 +3,9 @@ title: Vue d’ensemble de l’utilisation du produit
 description: Affichez des informations et des rapports sur la manière dont votre organisation utilise Customer Journey Analytics.
 exl-id: 3806ca7c-ee90-4222-9ffd-2e791c4550e5
 source-git-commit: a4615907f61b4d63393a9481fdd7b45b7b9b6262
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '591'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ Lorsque vous activez Utilisation du produit, les dimensions suivantes sont dispo
    * [!UICONTROL Partage de projet]
    * [!UICONTROL Exécuter le panneau Expérimentation]
    * [!UICONTROL Enregistrer le projet]
-   * [!UICONTROL Carte de performance enregistrée &#x200B;]
+   * [!UICONTROL Carte de performance enregistrée ]
    * [!UICONTROL Envoyer un fichier]
    * [!UICONTROL Envoyer le fichier selon le planning]
    * [!UICONTROL Partager le projet avec tout le monde]
@@ -129,8 +129,8 @@ L’utilisation du produit ne suit pas les composants individuels d’un projet 
 
 ## Modèle disponible
 
-Un modèle [Adobe](/help/analysis-workspace/templates/use-templates.md) qui utilise les composants générés automatiquement à partir de cette fonctionnalité, est disponible.
+Un [modèle Adobe](/help/analysis-workspace/templates/use-templates.md) qui utilise les composants générés automatiquement à partir de cette fonctionnalité, est disponible.
 
-**[!UICONTROL Modèles Adobe]** > **[!UICONTROL Autre]** > **[!UICONTROL Présentation de l’utilisation du produit]**
+**[!UICONTROL Modèles Adobe]** > **[!UICONTROL Autre]** > **[!UICONTROL Vue d’ensemble de l’utilisation du produit]**
 
-Sélectionnez la vue de données que l’utilisation du produit a automatiquement créée dans le sélecteur de vue de données, puis sélectionnez le modèle **[!UICONTROL Vue d’ensemble de l’utilisation du produit]**. Sélectionnez **[!UICONTROL Aperçu]** pour voir quels panneaux le modèle utilise et en savoir plus sur les cas d’utilisation idéaux, ou sélectionnez **[!UICONTROL Utiliser le modèle]** pour l’ouvrir dans Analysis Workspace.
+Sélectionnez la vue de données que l’utilisation du produit a automatiquement créée dans le sélecteur de vue de données, puis sélectionnez le modèle **[!UICONTROL Vue d’ensemble de l’utilisation du produit]**. Sélectionnez **[!UICONTROL Aperçu]** pour voir quels panneaux le modèle utilise et en savoir plus sur les cas d’utilisation pertinents, ou sélectionnez **[!UICONTROL Utiliser le modèle]** à ouvrir dans Analysis Workspace.

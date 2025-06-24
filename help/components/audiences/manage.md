@@ -5,9 +5,9 @@ exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
 feature: Audiences
 role: User
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '766'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Si vous disposez d’un accès [Affichage de l’audience](/help/technotes/acces
 
 ## Afficher des audiences dans la liste des audiences
 
-La liste Audiences affiche ➊ les audiences existantes.
+La liste des audiences ➊ affiche les audiences existantes.
 
 ![Gestionnaire d’audiences](assets/audiences-manager.png)
 
@@ -80,9 +80,9 @@ Voici des actions courantes du gestionnaire de projets planifiés : Vous pouvez
 
 | Icône | Action | Description |
 |:---:|---|---|
-| ![Étiquettes](/help/assets/icons/Labels.svg) | **[!UICONTROL Étiquette]** | Balisez les audiences sélectionnées. Dans la boîte de dialogue **[!UICONTROL Mettre à jour les balises : *nom de l’audience *]**, sélectionnez des balises dans le menu déroulant ou saisissez une ou plusieurs nouvelles balises. Sélectionnez&#x200B;**[!UICONTROL Enregistrer &#x200B;]**&#x200B;pour enregistrer. |
+| ![Étiquettes](/help/assets/icons/Labels.svg) | **[!UICONTROL Étiquette]** | Balisez les audiences sélectionnées. Dans la boîte de dialogue **[!UICONTROL Mettre à jour les balises : *nom de l’audience *]**, sélectionnez des balises dans le menu déroulant ou saisissez une ou plusieurs nouvelles balises. Sélectionnez**[!UICONTROL Enregistrer ]**pour enregistrer. |
 | ![Supprimer](/help/assets/icons/Delete.svg) | **[!UICONTROL Supprimer]** | Supprimez l’audience sélectionnée. |
-| ![Modifier](/help/assets/icons/Edit.svg) | **[!UICONTROL Renommer]** | Renommez l’audience sélectionnée. Utilisez la boîte de dialogue **[!UICONTROL Renommer : *nom de l’audience *]**&#x200B;pour renommer l’audience et sélectionnez&#x200B;**[!UICONTROL Enregistrer &#x200B;]**&#x200B;pour enregistrer. |
+| ![Modifier](/help/assets/icons/Edit.svg) | **[!UICONTROL Renommer]** | Renommez l’audience sélectionnée. Utilisez la boîte de dialogue **[!UICONTROL Renommer : *nom de l’audience *]**pour renommer l’audience et sélectionnez**[!UICONTROL Enregistrer ]**pour enregistrer. |
 
 Les actions suivantes sont disponibles à partir de la barre d’actions bleue lors de la sélection d’un ou de plusieurs projets planifiés.
 
@@ -94,7 +94,7 @@ Les actions suivantes sont disponibles à partir de la barre d’actions bleue l
 
 ## Filtrer la liste des audiences
 
-Vous pouvez filtrer la [liste des audiences](#audiences-list) à l’aide du panneau de filtrage ➋. Pour afficher ou masquer le panneau Filtrer, utilisez ![Filtrer](/help/assets/icons/Filter.svg).
+Vous pouvez filtrer la [liste des audiences](#audiences-list) à l’aide du panneau Filtrer ➋. Pour afficher ou masquer le panneau Filtrer, utilisez ![Filtrer](/help/assets/icons/Filter.svg).
 
 ![Gestionnaire d’audiences](assets/audiences-manager.png)
 

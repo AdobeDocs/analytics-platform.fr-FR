@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: FAQ
 role: User
 source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2580'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 98%
 
 Adobe Customer Journey Analytics est le produit d’analyse de nouvelle génération. L’article ci-dessous fournit les réponses aux questions fréquentes sur Customer Journey Analytics. Pour plus d’informations, consultez [Support pour les fonctionnalités Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md).
 
-## 1. Prérequis {#prerequisites}
+## &#x200B;1. Prérequis {#prerequisites}
 
 +++**Ai-je besoin d’un [!UICONTROL graphique d’appareil privé] ou d’un [!UICONTROL graphique d’appareil Coop] pour [!UICONTROL Customer Journey Analytics] ?**
 
@@ -39,7 +39,7 @@ Customer Journey Analytics comprend des fonctions de [Préparation de données
 +++
 
 
-## 2. Groupement des données {#stitching}
+## &#x200B;2. Groupement des données {#stitching}
 
 +++**[!UICONTROL Customer Journey Analytics] peut-il « assembler » d’un périphérique ou d’un jeu de données à l’autre ?**
 
@@ -76,7 +76,7 @@ Lorsque l’option est activée pour la première fois, Adobe fournit un renvoi 
 
 +++
 
-## 3. Transfert de données dans [!UICONTROL Customer Journey Analytics] {#ingest}
+## &#x200B;3. Transfert de données dans [!UICONTROL Customer Journey Analytics] {#ingest}
 
 +++**Puis-je combiner des données provenant de différentes sandbox [!UICONTROL Adobe Experience Platform] dans une seule connexion [!UICONTROL Customer Journey Analytics] ?**
 
@@ -87,7 +87,7 @@ Non, vous ne pouvez pas accéder aux données d’une sandbox à un autre. Vous 
 
 +++**Comment est-ce que je connecte les données en ligne aux données hors ligne dans [!UICONTROL Customer Journey Analytics] ?**
 
-Tant que l’ID de personne correspond entre les jeux de données, [!UICONTROL Customer Journey Analytics] peut connecter des segments, l’attribution, le flux, l’abandon, etc. entre les jeux de données.
+Tant que lʼID de personne correspond dʼun jeu de données à un autre, [!UICONTROL Customer Journey Analytics] peut connecter dans les jeux de données les segments, lʼattribution, le flux, les abandons, etc.
 
 +++
 
@@ -101,7 +101,7 @@ Votre droit d’utilisation de Customer Journey Analytics vous permet d’ing�
 
 +++**Comment puis-je intégrer des données [!UICONTROL Adobe Analytics] dans [!UICONTROL Customer Journey Analytics] ?**
 
-Les données [!UICONTROL Adobe Analytics] peuvent être connectées à Experience Platform par le biais du [connecteur source Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=fr). La plupart des champs [!UICONTROL Adobe Analytics] sont transférés au format XDM. Cependant, d’autres champs ne sont pas encore disponibles.
+Les données [!UICONTROL Adobe Analytics] peuvent être connectées à Experience Platform par le biais du [connecteur source Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). La plupart des champs [!UICONTROL Adobe Analytics] sont transférés au format XDM. Cependant, d’autres champs ne sont pas encore disponibles.
 
 +++
 
@@ -128,7 +128,7 @@ Non, vous pouvez utiliser n’importe quel ID, y compris le hachage d’un ID cl
 +++
 
 
-## 4. Considérations relatives à la latence {#latency}
+## &#x200B;4. Considérations relatives à la latence {#latency}
 
 >[!NOTE]
 >
@@ -143,13 +143,13 @@ Adobe a récemment modifié la manière dont il traite les données dans Custome
 * Les données d’événement pour la journée actuelle sont diffusées en continu sous forme de données dynamiques. Toutes les données dont l’heure de l’événement est antérieure à 11:59:59 pm (23:59:59) le jour précédent sont traitées comme des renvois.
 * Toutes les données d’événement de plus de 24 heures (même si elles se trouvent dans le même lot que les données plus récentes) sont considérées comme un renvoi et sont ingérées avec une priorité inférieure.
 
-## 5. Définition dʼune fenêtre dynamique pour la conservation des données de [!UICONTROL connexion] {#data-retention}
+## &#x200B;5. Définition dʼune fenêtre dynamique pour la conservation des données de [!UICONTROL connexion] {#data-retention}
 
-Le paramètre [**[!UICONTROL Activer la fenêtre dynamique de données &#x200B;]**](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=fr#create-connection) vous permet de définir la conservation des données Customer Journey Analytics sous la forme d’une fenêtre dynamique en mois (trois mois, six mois, etc.). Il est défini au niveau de la [!UICONTROL connexion] et non au niveau du [!UICONTROL jeu de données]. La conservation des données est basée sur les horodatages des jeux de données dʼévénement et sʼapplique uniquement aux jeux de données dʼévénement. Aucun paramètre de rétention des données nʼexiste pour les jeux de données de profil ou de recherche, car il nʼexiste aucun horodatage applicable.
+Le paramètre [**[!UICONTROL Activer la fenêtre dynamique de données ]**](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#create-connection) vous permet de définir la conservation des données Customer Journey Analytics sous la forme d’une fenêtre dynamique en mois (trois mois, six mois, etc.). Il est défini au niveau de la [!UICONTROL connexion] et non au niveau du [!UICONTROL jeu de données]. La conservation des données est basée sur les horodatages des jeux de données dʼévénement et sʼapplique uniquement aux jeux de données dʼévénement. Aucun paramètre de rétention des données nʼexiste pour les jeux de données de profil ou de recherche, car il nʼexiste aucun horodatage applicable.
 
 Lʼavantage principal est que vous ne stockez ou ne créez des rapports que sur les données applicables et utiles, et supprimez les données plus anciennes qui ne sont plus utiles. Elle vous aide à rester dans les limites de votre contrat et réduit le risque de surcoût.
 
-## 6. Implications de la suppression de composants de données {#deletion}
+## &#x200B;6. Implications de la suppression de composants de données {#deletion}
 
 La suppression des données implique six types de composants : sandbox, schéma, jeu de données, connexion, vue de données et projet Workspace. Voici quelques scénarios possibles de suppression de l’un de ces composants :
 
@@ -164,9 +164,9 @@ La suppression des données implique six types de composants : sandbox, schém
 | Supprime une connexion dans [!UICONTROL Customer Journey Analytics] | Un message d’erreur indique que :<ul><li>Les vues de données créées pour la connexion supprimée ne fonctionneront plus.</li><li> De même, les projets Workspace qui dépendent des vues de données dans la connexion supprimée cessent de fonctionner.</li></ul> |
 | Supprime une vue de données dans [!UICONTROL Customer Journey Analytics] | Un message dʼerreur indique que tous les projets Workspace qui dépendent de cette vue de données supprimée cesseront de fonctionner. |
 
-## 7. Remarques concernant la fusion de suites de rapports dans Customer Journey Analytics {#merge-reportsuite}
+## &#x200B;7. Remarques concernant la fusion de suites de rapports dans Customer Journey Analytics {#merge-reportsuite}
 
-Si vous prévoyez d’ingérer des données Adobe Analytics par l’intermédiaire du [connecteur source Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=fr), tenez compte de ces ramifications lors de la fusion de suites de rapports Adobe Analytics ou plus.
+Si vous prévoyez d’ingérer des données Adobe Analytics par l’intermédiaire du [connecteur source Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html), tenez compte de ces ramifications lors de la fusion de suites de rapports Adobe Analytics ou plus.
 
 | Problème | Considération |
 | --- | --- |
@@ -174,10 +174,10 @@ Si vous prévoyez d’ingérer des données Adobe Analytics par l’intermédia
 | Comptes de [!UICONTROL Sessions] et de [!UICONTROL Personnes] | Elles sont dédupliquées dans les suites de rapports. Par conséquent, les comptes peuvent ne pas correspondre. |
 | Déduplication des mesures | Déduplique les instances d’une mesure (par exemple, [!UICONTROL Commandes]) si plusieurs lignes possèdent le même ID de transaction (par exemple, [!UICONTROL ID d’achat]). Cela permet d’éviter le surcomptage des mesures clés. Par conséquent, les mesures telles que [!UICONTROL Commandes] peuvent ne pas s’additionner dans les suites de rapports. |
 | Devise | La conversion de devises n’est pas encore prise en charge dans Customer Journey Analytics. Si les suites de rapports que vous tentez de fusionner utilisent des devises de base différentes, des problèmes peuvent survenir. |
-| [!UICONTROL Persistance] | La [persistance](../data-views/component-settings/persistence.md) s’étend sur toutes les suites de rapports, ce qui a un impact sur les [!UICONTROL segments], [!UICONTROL attribution], etc. Les nombres peuvent ne pas s’additionner correctement. |
+| [!UICONTROL Persistance] | La [persistance](../data-views/component-settings/persistence.md) s’étend à l’ensemble des suites de rapport, ce qui se répercute sur les [!UICONTROL segments], l’[!UICONTROL attribution], etc. Les nombres peuvent ne pas s’additionner correctement. |
 | [!UICONTROL Classifications] | [!UICONTROL Les classifications] ne sont pas automatiquement dédupliquées lors de la fusion de suites de rapports. Lorsque vous combinez plusieurs fichiers de classification en un seul jeu de données de [!UICONTROL recherche], vous pouvez rencontrer des problèmes. |
 
-## 8. Composants [!UICONTROL Adobe Analytics]
+## &#x200B;8. Composants [!UICONTROL Adobe Analytics]
 
 +++**Puis-je partager/publier des [!UICONTROL audiences] de [!DNL Customer Journey Analytics] vers Experience Platform Real-Time CDP ou vers d’autres applications Experience Cloud ?**
 
@@ -215,17 +215,17 @@ Cela dépend de votre cas d’utilisation. Veuillez collaborer avec votre équip
 
 +++
 
-## 9. Estimer la taille de connexion {#estimate-size}
+## &#x200B;9. Estimer la taille de connexion {#estimate-size}
 
 Consultez [ Utilisation des connexions](/help/connections/manage-connections.md#usage).
 
-## 10. À propos des limites d’utilisation {#overage}
+## &#x200B;10. À propos des limites d’utilisation {#overage}
 
 Les limites d’utilisation sont surveillées et Adobe en assure l’application stricte. « Lignes de données » désigne les lignes de données moyennes quotidiennes disponibles pour analyse dans Customer Journey Analytics.
 
 Supposons par exemple que votre contrat vous donne droit à 1 million de lignes de données. Lors de votre premier jour d’utilisation de Customer Journey Analytics, vous chargez 2 millions de lignes de données. Le jour suivant, vous supprimez 1 million de lignes et ne dépassez pas cette limite (soit 1 million) pour le reste de la durée de votre licence. Selon les conditions de votre contrat, des frais de surutilisation peuvent vous être imputés au prorata pour le premier jour, car vous avez dépassé votre droit de licence « Lignes de données ».
 
-## 11. Repérer les écarts de données {#discrepancies}
+## &#x200B;11. Repérer les écarts de données {#discrepancies}
 
 Parfois, vous remarquerez peut-être que le nombre total dʼévénements ingérés par votre connexion est différent du nombre de lignes du jeu de données dans [!UICONTROL Adobe Experience Platform]. Dans cet exemple, le jeu de données « Impression B2B » contient 7 650 lignes, mais le jeu de données contient 3 830 lignes dans [!UICONTROL Adobe Experience Platform]. Il existe plusieurs raisons pour lesquelles des écarts peuvent survenir et les mesures suivantes peuvent être prises pour effectuer un diagnostic :
 
@@ -238,11 +238,11 @@ Parfois, vous remarquerez peut-être que le nombre total dʼévénements ingér�
 Découvrez-en plus sur les [implications de la suppression du jeu de données et de la connexion](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=fr#implications-of-deleting-data-components) dans [!UICONTROL Customer Journey Analytics] et [!UICONTROL Adobe Experience Platform].
 
 
-## 12. Collecte de données régionales
+## &#x200B;12. Collecte de données régionales
 
 Adobe Experience Cloud utilise la collecte de données régionale (RDC) afin que les interactions entre vos visiteurs/visiteuses et vos solutions Adobe et non Adobe se produisent le plus près possible de vos visiteurs/visiteuses. Une fois que les données sont collectées à l’échelle régionale dans un centre de collecte de données (DCC, également appelé site Edge, qui fait partie de Platform Edge Network), elles sont transférées au moyen d’une connexion sécurisée aux solutions appropriées, en fonction de la configuration de votre train de données et/ou du transfert d’événement.
 
-![Flux de données utilisant les réseaux Edge](https://experienceleague.adobe.com/docs/experience-platform/assets/collection.png?lang=fr)
+![Flux de données utilisant les réseaux Edge](https://experienceleague.adobe.com/docs/experience-platform/assets/collection.png)
 
 Le processus de collecte de données régionale suit les étapes ci-après :
 
@@ -272,4 +272,4 @@ Lorsque les données atteignent le centre de données régional, la configuratio
 Customer Journey Analytics nécessite des jeux de données d’Adobe Experience Platform. Par conséquent, votre configuration de transfert de flux de données/d’événement nécessite que le service Adobe Experience Platform achemine les données du centre de données régional vers le centre de données où se trouve votre instance Adobe Experience Platform. Customer Journey Analytics et ses services et son infrastructure de prise en charge sont déployés sur cette même instance Adobe Experience Platform.
 
 
-Voir [Vue d’ensemble de la collecte de données](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html?lang=fr) pour plus d’informations sur le processus de collecte de données au-delà du réseau Adobe Experience Platform Edge et de ses centres de données régionaux.
+Voir [Vue d’ensemble de la collecte de données](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html) pour plus d’informations sur le processus de collecte de données au-delà du réseau Adobe Experience Platform Edge et de ses centres de données régionaux.
