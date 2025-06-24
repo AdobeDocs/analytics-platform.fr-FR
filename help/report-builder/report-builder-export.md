@@ -5,13 +5,13 @@ role: User, Admin
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
-source-git-commit: e653cbe7c1955d04830b9ed9ff6399973036ab64
+exl-id: 1d5d87d8-1920-406b-8cce-41b89b7ae70b
+source-git-commit: 5a0cb6fa221282b70df5efb58362855ff58f76b8
 workflow-type: tm+mt
 source-wordcount: '1304'
 ht-degree: 38%
 
 ---
-
 
 # Planifier des classeurs en exportant vers des destinations cloud
 
@@ -35,7 +35,7 @@ Procédez comme suit lors de l’exportation de classeurs de Report Builder vers
 
 ![Processus d’exportation décrit aux étapes 1 à 4.](assets/report-builder-export-process.png)
 
-## Exporter un rapport depuis Report Builder {#export-from-report-builder}
+## Exporter un rapport depuis Report Builder
 
 >[!NOTE]
 >
@@ -90,7 +90,7 @@ Pour exporter des rapports depuis Report Builder :
 
 Une fois les données exportées à partir d’Analysis Workspace, vous pouvez modifier, exporter à nouveau, dupliquer, baliser ou supprimer des exports existants, comme décrit dans la section [Gérer les exports](/help/components/exports/manage-exports.md).
 
-## Avantages de l’export vers le cloud {#advantages}
+## Avantages de l’export vers le cloud
 
 L’export de données Customer Journey Analytics vers le cloud vous permet d’effectuer les opérations suivantes :
 
@@ -119,6 +119,3 @@ Assurez-vous que vos blocs de données, votre environnement et vos autorisations
 * **Blocs de données :** tous les blocs de données doivent inclure au moins un composant dans une colonne, une ligne ou une valeur.
 
 * **Environnement :** assurez-vous que les [adresses IP](/help/technotes/ip-addresses.md) et [domaines](/help/technotes/domains.md) utilisés par Customer Journey Analytics sont autorisés via le pare-feu de leur entreprise.
-
-
-
