@@ -6,10 +6,10 @@ feature: Basics
 role: User, Admin
 badgePremium: label="B2B Edition"
 exl-id: 89e482b8-8082-4413-8fd3-cc1331780af4
-source-git-commit: a2aea32eb14462ee2041405394afa6bd0c484e8d
+source-git-commit: 60035b8fc65627bf5ead2a50959ce9cc5fe48604
 workflow-type: tm+mt
-source-wordcount: '469'
-ht-degree: 98%
+source-wordcount: '472'
+ht-degree: 95%
 
 ---
 
@@ -20,7 +20,8 @@ ht-degree: 98%
 
 Adobe Analytics était à l’origine un outil d’analyse web et numérique pour les responsables marketing, tandis que Customer Journey Analytics a élargi la portée pour inclure les données multicanaux, hors ligne et sur plusieurs plateformes.  Ces deux outils aident les entreprises B2C (Business to Consumer) à analyser et à optimiser leurs efforts marketing et leurs expériences client. Concentrez-vous sur **le reporting et l’analyse basés sur la personne** : examinez le parcours client, où le client ou la cliente est une personne qui interagit avec votre marque sur plusieurs canaux.
 
-Customer Journey Analytics B2B Edition ajoute des fonctionnalités de **reporting et d’analyse basés sur les comptes**. Dans les ventes B2B (business-to-business), le parcours d’achat implique plusieurs parties, des points de contact en ligne et hors ligne, ainsi que des étapes clés avant de conclure une transaction. Les entreprise B2B doivent suivre toutes ces interactions dans une vue de parcours unifiée pour analyser et optimiser efficacement leurs efforts de marketing et leurs expériences de compte.
+![Image principale B2B](assets/b2b-image.png)
+Customer Journey Analytics B2B edition ajoute **rapports et analyses basés sur les comptes**. Dans les ventes B2B (business-to-business), le parcours d’achat implique plusieurs parties, des points de contact en ligne et hors ligne, ainsi que des étapes clés avant de conclure une transaction. Les entreprise B2B doivent suivre toutes ces interactions dans une vue de parcours unifiée pour analyser et optimiser efficacement leurs efforts de marketing et leurs expériences de compte.
 
 Les caractéristiques de vente B2B standard sont les suivantes :
 
@@ -43,7 +44,7 @@ Customer Journey Analytics B2B Edition permet aux entreprises B2B d’aligner le
 >[!MORELIKETHIS]
 >
 >[Concepts et fonctionnalités B2B](cja-b2b-concepts-features.md)
->&#x200B;>[Guide de démarrage rapide B2B](cja-b2b-quick-start-guide.md)
->&#x200B;>[Guide de transition B2B ](cja-b2b-transition.md)
->&#x200B;>[Cas d’utilisation B2B ](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)
+>>[Guide de démarrage rapide B2B](cja-b2b-quick-start-guide.md)
+>>[Guide de transition B2B ](cja-b2b-transition.md)
+>>[Cas d’utilisation B2B ](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)
 >

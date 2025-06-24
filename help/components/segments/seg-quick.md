@@ -4,10 +4,10 @@ title: Segments rapides
 feature: Workspace Basics, Filters, Segments
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: b3c7ceedec7b3f6a916e97bab38fd55f1d6c7f51
+source-git-commit: 21935a0e9e976cd680fb036bb47f4248aaa66890
 workflow-type: tm+mt
-source-wordcount: '1174'
-ht-degree: 23%
+source-wordcount: '1187'
+ht-degree: 21%
 
 ---
 
@@ -19,7 +19,7 @@ Les segments rapides vous permettent d’explorer rapidement les données d’un
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segments rapides dans Analysis Workspace](https://video.tv.adobe.com/v/345337/?quality=12&learn=on&captions=fre_fr){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segments rapides dans Analysis Workspace](https://video.tv.adobe.com/v/341466/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 
@@ -43,9 +43,9 @@ Pour créer un segment rapide :
 Lorsque vous créez un segment rapide par glisser-déposer, notez les points suivants :
 
 * Tous les types de composants ne sont pas pris en charge. Les mesures calculées ne sont pas prises en charge. Seules les dimensions et mesures à partir desquelles vous pouvez créer des segments sont prises en charge.
-* Pour les composants de dimensions et de mesures, le [créateur de segments rapides](#quick-segment-builder) crée automatiquement des conditions de `exists`. Par exemple, si vous effectuez un glisser-déposer de `City`, la condition `City exists` est créée.
-* Pour les valeurs de dimension, le [créateur de segments rapides](#quick-segment-builder) crée automatiquement une condition de `equals`. Par exemple, si vous effectuez un glisser-déposer de `amsterdam` à partir de la dimension `City`, la condition `City equals amsterdam` est créée.
-* Si vous faites glisser et déposez des `unspecified` ou des `none`, le [créateur de segments rapides](#quick-segment-builder) crée automatiquement une condition de `does not exist`.
+* Pour les composants de dimensions et de mesures, le [créateur de segments rapides](#quick-segment-builder) crée automatiquement des conditions de `exists`. Par exemple, si vous effectuez un glisser-déposer de **[!UICONTROL Ville]**, la condition **[!UICONTROL Ville]** **[!UICONTROL existe]** est créée.
+* Pour les valeurs de dimension, le [créateur de segments rapides](#quick-segment-builder) crée automatiquement une condition **[!UICONTROL égal à]**. Par exemple, si vous effectuez un glisser-déposer **[!UICONTROL Amsterdam]** depuis la liste des dimensions **[!UICONTROL Ville]**, la condition **[!UICONTROL Ville]** **[!UICONTROL égal]** `Amsterdam` est créée.
+* Si vous effectuez un glisser-déposer **[!UICONTROL non spécifié]** ou **[!UICONTROL aucun]**, le [créateur de segments rapides](#quick-segment-builder) crée automatiquement une condition **[!UICONTROL n’existe pas]**.
 
 Les segments rapides que vous créez s’affichent en haut du panneau. Les segments rapides ont une fine barre de gauche bleu clair. Lorsqu’un segment rapide est en mode de modification à l’aide du [créateur de segments rapides](#quick-segment-builder), l’arrière-plan du segment rapide est bleu clair.
 
@@ -61,7 +61,7 @@ Pour gérer un segment rapide, passez la souris sur un **[!UICONTROL segment rap
 
 ## Créateur de segments rapides
 
-Consultez ci-dessous un exemple du créateur de segments rapides. Dans cet exemple, le créateur est ouvert pour un segment rapide intitulé `Call Reason = Order Change AND Online Orders is greater than or equal 1`. Les deux segments rapides situés en haut s’appliquent au panneau [!UICONTROL Tableau de bord de la valeur moyenne des commandes] et à toutes les visualisations contenues dans le tableau à structure libre [!UICONTROL Valeur moyenne des commandes par pays].
+Consultez ci-dessous un exemple du créateur de segments rapides. Dans cet exemple, le créateur est ouvert pour un segment rapide intitulé `Call Reason = Order Change AND Online Orders is greater than or equal 1`. Les deux segments rapides situés en haut s’appliquent au panneau **[!UICONTROL Tableau de bord de la valeur moyenne des commandes]** et à toutes les visualisations contenues dans le tableau à structure libre [!UICONTROL Valeur moyenne des commandes par pays].
 
 ![Créateur de segments rapide](assets/quick-filter-builder.png)
 
@@ -74,7 +74,7 @@ La zone d’en-tête détermine le nom, le type et la portée du segment rapide.
 | Élément | Description |
 |---|---|
 | **[!UICONTROL Nom]** | Le nom est automatiquement dérivé de la définition de segment rapide. |
-| **[!UICONTROL Personnes]** <br/>![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) ![Alerte](/help/assets/icons/Alert.svg) | Prévisualisez les données issues du segment rapide. Une barre et un pourcentage indiquent à insight la quantité de données globales qui fait partie du résultat du segment rapide. Une ![alerte](/help/assets/icons/Alert.svg) rouge indique que le segment rapide ne renvoie pas de données. |
+| **[!UICONTROL Personnes]** <br/>![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) ![Alerte](/help/assets/icons/Alert.svg) | Prévisualisez les données issues du segment rapide. Une barre et un pourcentage indiquent à insight la quantité de données globales qui fait partie du résultat du segment rapide. Une ![Alerte](/help/assets/icons/AlertRed.svg) indique que le segment rapide ne renvoie pas de données. |
 | **[!UICONTROL Inclure]**<br/>**[!UICONTROL Exclure]** | Dans la liste déroulante ![ChevronDown](/help/assets/icons/ChevronDown.svg) choisissez d’inclure ou d’exclure les résultats du segment rapide des données du panneau. |
 | **[!UICONTROL Événement]**<br/>**[!UICONTROL Session]**<br/>**[!UICONTROL Personne]** | Dans le menu déroulant ![ChevronDown](/help/assets/icons/ChevronDown.svg) sélectionnez la portée du segment rapide. |
 

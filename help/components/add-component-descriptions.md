@@ -4,7 +4,7 @@ title: Ajouter des descriptions des composants
 feature: Components
 role: Admin
 exl-id: 99d531cd-50e9-4e6c-adad-a66b606fd877
-source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
+source-git-commit: 21935a0e9e976cd680fb036bb47f4248aaa66890
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 14%
@@ -17,7 +17,7 @@ Les descriptions permettent aux utilisateurs et utilisatrices de savoir comment 
 
 Les administrateurs et administratrices de Customer Journey Analytics peuvent ajouter des descriptions pour les composants (dimensions, mesures, segments et périodes) dans une vue de données ou à l’aide du dictionnaire de données.
 
-## Ajout de descriptions dans une vue de données
+## Ajouter des descriptions dans une vue de données
 
 Vous pouvez ajouter une description à un composant que vous avez ajouté à votre vue de données. Voir [ Paramètres des composants ](/help/data-views/component-settings/overview.md).
 
@@ -32,5 +32,5 @@ Pour obtenir des informations générales sur le dictionnaire de données, consu
 >[!MORELIKETHIS]
 >
 >[Paramètres des composants de la vue de données](/help/data-views/component-settings/overview.md)
->[Entrées du composant Dictionnaire de données](/help/components/data-dictionary/edit-entries-data-dictionary.md)
+>>[Entrées du composant Dictionnaire de données](/help/components/data-dictionary/edit-entries-data-dictionary.md)
 >

@@ -4,10 +4,10 @@ description: Comment créer des annotations dans l’espace de travail.
 feature: Components
 exl-id: 68fef9b3-dc47-4e56-bea6-d1c4c39fb51b
 role: User, Admin
-source-git-commit: 3cbf30778ff0fbb4198db16cbbabf3d62a87d384
-workflow-type: ht
+source-git-commit: 21935a0e9e976cd680fb036bb47f4248aaa66890
+workflow-type: tm+mt
 source-wordcount: '873'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -27,7 +27,7 @@ Vous pouvez créer une annotation de la manière suivante :
 * **D**. Dans un projet Workspace, sélectionnez **[!UICONTROL Composants]** dans le menu, puis **[!UICONTROL Créer une annotation]**.
 * **E**.  Dans un projet Workspace, utilisez le raccourci **[!UICONTROL Ctrl+Maj+O]** (Windows) ou **[!UICONTROL Shift+Commande+O]** (macOS)
 
-Pour définir l’annotation, utilisez le [[!UICONTROL Créateur d’annotations]](#annotation-builder) :
+Pour définir l’annotation, vous utilisez le [[!UICONTROL créateur d’annotations]](#annotation-builder).
 
 <!-- Should we really mention API here. If so, we can do it all over the place in the docs...
 | **Use the [Customer Journey Analytics Annotations API](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/)** | The Customer Journey Analytics Annotations APIs allow you to create, update, or retrieve annotations programmatically through Adobe Developer. These APIs use the same data and methods that Adobe uses inside the product UI. |

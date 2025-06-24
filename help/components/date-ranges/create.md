@@ -4,10 +4,10 @@ description: Créez une période à utiliser dans le compte rendu des performanc
 feature: Calendar
 exl-id: 3e4fa3cc-c14b-45e5-afbb-518ecfa0033e
 role: User
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 60035b8fc65627bf5ead2a50959ce9cc5fe48604
 workflow-type: tm+mt
 source-wordcount: '533'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -25,7 +25,7 @@ Tout le monde peut créer une période personnalisée. Pour créer une période,
 * **E** - Dans un projet Workspace, dans le panneau de gauche Composants, sélectionnez ![Ajouter](/help/assets/icons/Add.svg), puis ![Calendrier](/help/assets/icons/Calendar.svg) **Périodes**.
 * **F** - Dans une visualisation prise en charge, comme une visualisation en ligne, dans le menu contextuel d’un point de données, sélectionnez **[!UICONTROL Annoter la sélection]**.
 
-Pour définir la période, utilisez le [[!UICONTROL Créateur de périodes]](#annotation-builder) :
+Pour définir l’annotation, vous utilisez le [[!UICONTROL créateur de périodes]](#annotation-builder).
 
 <!-- Should we really mention API here. If so, we can do it all over the place in the docs...
 | **Use the [Customer Journey Analytics Annotations API](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/)** | The Customer Journey Analytics Annotations APIs allow you to create, update, or retrieve annotations programmatically through Adobe Developer. These APIs use the same data and methods that Adobe uses inside the product UI. |
