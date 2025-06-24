@@ -77,7 +77,7 @@ Vous pouvez effectuer les opérations suivantes :
 
 ## Vue de données
 
-Chaque panneau est associé à une [vue de données](/help/data-views/data-views.md), identifiée par le ![Données](/help/assets/icons/Data.svg) **[!UICONTROL *nom de la vue de données *]**dans le menu déroulant en haut à droite du panneau.
+Chaque panneau est associé à une [vue de données](/help/data-views/data-views.md), identifiée par le ![Données](/help/assets/icons/Data.svg) **[!UICONTROL *nom de la vue de données *]**&#x200B;dans le menu déroulant en haut à droite du panneau.
 
 Lorsque vous créez un projet Workspace vierge, la vue de données par défaut du panneau initial correspond à la dernière vue de données avec laquelle vous avez travaillé dans Customer Journey Analytics.
 
