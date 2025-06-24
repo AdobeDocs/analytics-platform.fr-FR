@@ -101,7 +101,7 @@ Votre droit d’utilisation de Customer Journey Analytics vous permet d’ing�
 
 +++**Comment puis-je intégrer des données [!UICONTROL Adobe Analytics] dans [!UICONTROL Customer Journey Analytics] ?**
 
-Les données [!UICONTROL Adobe Analytics] peuvent être connectées à Experience Platform par le biais du [connecteur source Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). La plupart des champs [!UICONTROL Adobe Analytics] sont transférés au format XDM. Cependant, d’autres champs ne sont pas encore disponibles.
+Les données [!UICONTROL Adobe Analytics] peuvent être connectées à Experience Platform par le biais du [connecteur source Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=fr). La plupart des champs [!UICONTROL Adobe Analytics] sont transférés au format XDM. Cependant, d’autres champs ne sont pas encore disponibles.
 
 +++
 
@@ -145,7 +145,7 @@ Adobe a récemment modifié la manière dont il traite les données dans Custome
 
 ## &#x200B;5. Définition dʼune fenêtre dynamique pour la conservation des données de [!UICONTROL connexion] {#data-retention}
 
-Le paramètre [**[!UICONTROL Activer la fenêtre dynamique de données ]**](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#create-connection) vous permet de définir la conservation des données Customer Journey Analytics sous la forme d’une fenêtre dynamique en mois (trois mois, six mois, etc.). Il est défini au niveau de la [!UICONTROL connexion] et non au niveau du [!UICONTROL jeu de données]. La conservation des données est basée sur les horodatages des jeux de données dʼévénement et sʼapplique uniquement aux jeux de données dʼévénement. Aucun paramètre de rétention des données nʼexiste pour les jeux de données de profil ou de recherche, car il nʼexiste aucun horodatage applicable.
+Le paramètre [**[!UICONTROL Activer la fenêtre dynamique de données ]**](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=fr#create-connection) vous permet de définir la conservation des données Customer Journey Analytics sous la forme d’une fenêtre dynamique en mois (trois mois, six mois, etc.). Il est défini au niveau de la [!UICONTROL connexion] et non au niveau du [!UICONTROL jeu de données]. La conservation des données est basée sur les horodatages des jeux de données dʼévénement et sʼapplique uniquement aux jeux de données dʼévénement. Aucun paramètre de rétention des données nʼexiste pour les jeux de données de profil ou de recherche, car il nʼexiste aucun horodatage applicable.
 
 Lʼavantage principal est que vous ne stockez ou ne créez des rapports que sur les données applicables et utiles, et supprimez les données plus anciennes qui ne sont plus utiles. Elle vous aide à rester dans les limites de votre contrat et réduit le risque de surcoût.
 
@@ -166,7 +166,7 @@ La suppression des données implique six types de composants : sandbox, schém
 
 ## &#x200B;7. Remarques concernant la fusion de suites de rapports dans Customer Journey Analytics {#merge-reportsuite}
 
-Si vous prévoyez d’ingérer des données Adobe Analytics par l’intermédiaire du [connecteur source Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html), tenez compte de ces ramifications lors de la fusion de suites de rapports Adobe Analytics ou plus.
+Si vous prévoyez d’ingérer des données Adobe Analytics par l’intermédiaire du [connecteur source Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=fr), tenez compte de ces ramifications lors de la fusion de suites de rapports Adobe Analytics ou plus.
 
 | Problème | Considération |
 | --- | --- |
@@ -242,7 +242,7 @@ Découvrez-en plus sur les [implications de la suppression du jeu de données et
 
 Adobe Experience Cloud utilise la collecte de données régionale (RDC) afin que les interactions entre vos visiteurs/visiteuses et vos solutions Adobe et non Adobe se produisent le plus près possible de vos visiteurs/visiteuses. Une fois que les données sont collectées à l’échelle régionale dans un centre de collecte de données (DCC, également appelé site Edge, qui fait partie de Platform Edge Network), elles sont transférées au moyen d’une connexion sécurisée aux solutions appropriées, en fonction de la configuration de votre train de données et/ou du transfert d’événement.
 
-![Flux de données utilisant les réseaux Edge](https://experienceleague.adobe.com/docs/experience-platform/assets/collection.png)
+![Flux de données utilisant les réseaux Edge](https://experienceleague.adobe.com/docs/experience-platform/assets/collection.png?lang=fr)
 
 Le processus de collecte de données régionale suit les étapes ci-après :
 
@@ -272,4 +272,4 @@ Lorsque les données atteignent le centre de données régional, la configuratio
 Customer Journey Analytics nécessite des jeux de données d’Adobe Experience Platform. Par conséquent, votre configuration de transfert de flux de données/d’événement nécessite que le service Adobe Experience Platform achemine les données du centre de données régional vers le centre de données où se trouve votre instance Adobe Experience Platform. Customer Journey Analytics et ses services et son infrastructure de prise en charge sont déployés sur cette même instance Adobe Experience Platform.
 
 
-Voir [Vue d’ensemble de la collecte de données](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html) pour plus d’informations sur le processus de collecte de données au-delà du réseau Adobe Experience Platform Edge et de ses centres de données régionaux.
+Voir [Vue d’ensemble de la collecte de données](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html?lang=fr) pour plus d’informations sur le processus de collecte de données au-delà du réseau Adobe Experience Platform Edge et de ses centres de données régionaux.

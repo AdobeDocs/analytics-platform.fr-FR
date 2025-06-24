@@ -105,6 +105,6 @@ Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Architecture et
 
 >[!MORELIKETHIS]
 >
->* [Formation express à Adobe Customer Journey Analytics pour les analystes](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-crash-course-for-analysts/ba-p/719261)
->* [Optimisation de votre approche et de votre workflow Adobe Customer Journey Analytics : modèles d’équipe pour les organisations de toutes tailles](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/optimizing-your-mindset-and-adobe-customer-journey-analytics/ba-p/721456)
->* [Élaboration de la préparation de l’entreprise : guide de mise à l’échelle d’Adobe Customer Journey Analytics axé sur l’humain](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/building-organizational-readiness-a-people-first-guide-to/ba-p/723273)
+>* [Formation express à Adobe Customer Journey Analytics pour les analystes](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-crash-course-for-analysts/ba-p/719261?profile.language=fr)
+>* [Optimisation de votre approche et de votre workflow Adobe Customer Journey Analytics : modèles d’équipe pour les organisations de toutes tailles](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/optimizing-your-mindset-and-adobe-customer-journey-analytics/ba-p/721456?profile.language=fr)
+>* [Élaboration de la préparation de l’entreprise : guide de mise à l’échelle d’Adobe Customer Journey Analytics axé sur l’humain](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/building-organizational-readiness-a-people-first-guide-to/ba-p/723273?profile.language=fr)

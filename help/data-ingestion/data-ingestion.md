@@ -101,5 +101,5 @@ Consultez [Ingérer et utiliser des données à l’aide des connecteurs source]
 
 >[!MORELIKETHIS]
 >
->Blog : [en savoir plus sur le traitement et l’ingestion des données dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-closer-look-at-data-processing-amp-ingestion-in-adobe-customer/ba-p/665091)
+>Blog : [en savoir plus sur le traitement et l’ingestion des données dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-closer-look-at-data-processing-amp-ingestion-in-adobe-customer/ba-p/665091?profile.language=fr)
 
