@@ -32,5 +32,5 @@ Pour obtenir des informations générales sur le dictionnaire de données, consu
 >[!MORELIKETHIS]
 >
 >[Paramètres des composants de la vue de données](/help/data-views/component-settings/overview.md)
->>[Entrées du composant Dictionnaire de données](/help/components/data-dictionary/edit-entries-data-dictionary.md)
+>&#x200B;>[Entrées du composant Dictionnaire de données](/help/components/data-dictionary/edit-entries-data-dictionary.md)
 >

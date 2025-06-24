@@ -44,7 +44,7 @@ Customer Journey Analytics B2B Edition permet aux entreprises B2B d’aligner le
 >[!MORELIKETHIS]
 >
 >[Concepts et fonctionnalités B2B](cja-b2b-concepts-features.md)
->>[Guide de démarrage rapide B2B](cja-b2b-quick-start-guide.md)
->>[Guide de transition B2B ](cja-b2b-transition.md)
->>[Cas d’utilisation B2B ](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)
+>&#x200B;>[Guide de démarrage rapide B2B](cja-b2b-quick-start-guide.md)
+>&#x200B;>[Guide de transition B2B ](cja-b2b-transition.md)
+>&#x200B;>[Cas d’utilisation B2B ](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)
 >
