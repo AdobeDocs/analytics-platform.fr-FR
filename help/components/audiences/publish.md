@@ -6,8 +6,8 @@ feature: Audiences
 role: User
 source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
-source-wordcount: '2368'
-ht-degree: 96%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -73,7 +73,7 @@ Lisez cette [vue d’ensemble](/help/components/audiences/audiences-overview.md)
    | --- | --- |
    | Depuis l’interface **[!UICONTROL Audiences]**. | Sélectionnez **[!UICONTROL Composants]** > **[!UICONTROL Audiences]** dans le menu principal de Customer Journey Analytics. L’interface Audiences s’affiche. Sélectionnez **[!UICONTROL Créer une audience]** et le [!UICONTROL créateur d’audiences] s’ouvre. |
    | Depuis une visualisation dans Analysis Workspace | De nombreuses visualisations dans Analysis Workspace vous permettent de créer une audience à l’aide du menu contextuel. Par exemple, vous pouvez sélectionner **[!UICONTROL Créer une audience]** dans le menu contextuel d’un élément dans un [Tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) ou d’un nœud dans une [Zone de travail de parcours](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md).<p>L’utilisation de cette méthode préremplit le segment dans le créateur d’audiences avec la dimension ou l’élément de dimension que vous avez sélectionné.</p><p>Les visualisations suivantes vous permettent de créer une audience à l’aide du menu de clic droit :</p><ul><li>[Table de cohorte](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)</li><li>[Abandon](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)</li><li>[Flux](/help/analysis-workspace/visualizations/c-flow/flow.md)</li><li>[Tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)</li><li>[Zone de travail de parcours](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)</li><li>[Venn](/help/analysis-workspace/visualizations/venn.md)</li></ul><p>**Note :** les audiences ne peuvent pas inclure de mesures calculées. Si vous essayez de créer une audience qui contient une mesure calculée, la mesure calculée n’est pas incluse dans la définition de l’audience.</p> |
-   | À partir de l’interface d’utilisation de création/modification de segment | Cochez la case qui indique : **[!UICONTROL Créer une audience à partir de ce segment]**. L’utilisation de cette méthode préremplit le segment. Voir [Créer des segments](/help/components/segments/seg-create.md) pour plus d’informations. |
+   | À partir de l’interface d’utilisation de création/modification de segment | Cochez la case qui indique : **[!UICONTROL Créer une audience à partir de ce segment]**. L’utilisation de cette méthode préremplit le segment. Pour plus d’informations, consultez [Créer des segments](/help/components/segments/seg-create.md). |
 
    {style="table-layout:auto"}
 
@@ -122,13 +122,13 @@ Le panneau Prévisualisation des données fournit les informations suivantes.
 
 ## Que se passe-t-il une fois une audience créée et publiée ? {#after-audience-created}
 
-Une fois l’audience créée et publiée dans Customer Journey Analytics, elle est disponible dans Experience Platform et peut être consultée sur le [portail d’audiences](https://experienceleague.adobe.com/fr/docs/experience-platform/segmentation/ui/audience-portal). L’audience étant disponible dans Experience Platform, elle peut être utilisée dans d’autres applications Experience Platform, telles que Adobe Journey Optimizer.
+Une fois que vous avez créé et publié une audience dans Customer Journey Analytics, elle est disponible dans Experience Platform et peut être visualisée sur le [portail d’audiences](https://experienceleague.adobe.com/fr/docs/experience-platform/segmentation/ui/audience-portal). L’audience étant disponible dans Experience Platform, elle peut être utilisée dans d’autres applications Experience Platform, telles qu’Adobe Journey Optimizer.
 
-Un segment de diffusion en continu Adone Experience Platform n’est créé que si votre organisation est configurée pour la segmentation en continu.
+Un segment en streaming Adobe Experience Platform n’est créé que si votre organisation est configurée pour la segmentation en streaming.
 
-Tenez compte des points suivants lorsque vous utilisez des audiences publiées de Customer Journey Analytics vers Experience Platform :
+Tenez compte des points suivants lorsque vous utilisez des audiences publiées de Customer Journey Analytics sur Experience Platform :
 
-* L’audience dans Experience Platform partage le même nom et la même description que l’audience Customer Journey Analytics. Le nom est ajouté avec l’identifiant d’audience Customer Journey Analytics afin de s’assurer que l’audience est unique.
+* L’audience dans Experience Platform partage le même nom et la même description que l’audience Customer Journey Analytics. Le nom est ajouté avec l’identifiant d’audience Customer Journey Analytics afin de s’assurer que l’audience est unique.
 * Toute modification apportée au nom ou à la description de l’audience dans Customer Journey Analytics est répercutée dans Experience Platform.
 * Si une audience est supprimée dans Customer Journey Analytics, elle reste disponible dans Experience Platform jusqu’à l’expiration de son appartenance à un profil. L’appartenance à un profil expire après 420 jours pour les audiences ponctuelles et après 16 jours pour les audiences récurrentes.
 

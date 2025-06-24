@@ -12,7 +12,7 @@ breadcrumb-title: Guide de Customer Journey Analytics
 source-git-commit: 995a2a9250f4ef929890b781b8d55263a04d38a3
 workflow-type: tm+mt
 source-wordcount: '1263'
-ht-degree: 93%
+ht-degree: 98%
 
 ---
 
@@ -171,7 +171,7 @@ ht-degree: 93%
       + [Vue d’ensemble](../analysis-workspace/build-workspace-project/freeform-overview.md)
       + [Créer des projets](/help/analysis-workspace/build-workspace-project/create-projects.md)
       + [Ouvrir des projets](/help/analysis-workspace/build-workspace-project/open-projects.md)
-      + [Commentaire sur les projets](/help/analysis-workspace/build-workspace-project/comment-projects.md)
+      + [Commentaires dans les projets](/help/analysis-workspace/build-workspace-project/comment-projects.md)
       + [Enregistrement des projets](../analysis-workspace/build-workspace-project/save-projects.md)
       + Dossiers dans Workspace {#workspace-folders}
          + [À propos des dossiers](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
@@ -201,11 +201,11 @@ ht-degree: 93%
          + [Vue d’ensemble](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
          + [Configurer](../analysis-workspace/visualizations/cohort-table/t-cohort.md)
          + [Cas d’utilisation](../analysis-workspace/visualizations/cohort-table/cohort-use-cases.md)
-      + Abandons {#fallout}
+      + Abandon {#fallout}
          + [Vue d’ensemble](../analysis-workspace/visualizations/fallout/fallout-flow.md)
          + [Configurer](../analysis-workspace/visualizations/fallout/configuring-fallout.md)
          + [Abandons interdimensionnels](../analysis-workspace/visualizations/fallout/configuring-interdimensional-fallout.md)
-         + [Appliquer les segments](../analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
+         + [Appliquer des segments](../analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
       + Flux {#flow}
          + [Vue d’ensemble](../analysis-workspace/visualizations/c-flow/flow.md)
          + [Configurer](../analysis-workspace/visualizations/c-flow/create-flow.md)
@@ -222,12 +222,12 @@ ht-degree: 93%
       + [Histogramme](../analysis-workspace/visualizations/histogram.md)
       + [Barres horizontales (empilées)](../analysis-workspace/visualizations/horizontal-bar.md)
       + [Résumé des mesures clés](../analysis-workspace/visualizations/key-metric.md)
-      + [Ligne](../analysis-workspace/visualizations/line.md)
+      + [Graphique linéaire](../analysis-workspace/visualizations/line.md)
       + [Carte](/help/analysis-workspace/visualizations/map.md)
-      + [Dispersion](../analysis-workspace/visualizations/scatterplot.md)
+      + [Nuage de points](../analysis-workspace/visualizations/scatterplot.md)
       + [En-tête de section](/help/analysis-workspace/visualizations/section-header.md)
       + [Synthèse de nombres et de variations](../analysis-workspace/visualizations/summary-number-change.md)
-      + [Text](../analysis-workspace/visualizations/text.md)
+      + [Texte](../analysis-workspace/visualizations/text.md)
       + [Arborescence](../analysis-workspace/visualizations/treemap.md)
       + [Venn](../analysis-workspace/visualizations/venn.md)
    + Panneaux {#panels}
@@ -328,17 +328,17 @@ ht-degree: 93%
    + [Mesures](../components/apply-create-metrics.md)
    + Segments {#segments}
       + [Vue d’ensemble](/help/components/segments/seg-overview.md)
-      + [Création de segments](/help/components/segments/seg-create.md)
-      + [Création de segments](/help/components/segments/seg-builder.md)
+      + [Créer des segments](/help/components/segments/seg-create.md)
+      + [Créer des segments](/help/components/segments/seg-builder.md)
       + [Segments rapides](/help/components/segments/seg-quick.md)
       + [Segments séquentiels](/help/components/segments/seg-sequential-build.md)
-      + [Partage des segments](/help/components/segments/seg-share.md)
-      + [Balisage des segments](/help/components/segments/seg-tag.md)
-      + [Filtrer la liste des segments](/help/components/segments/seg-filter.md)
-      + [Marquage des segments comme favoris](/help/components/segments/seg-favorite.md)
-      + [Approbation des segments](/help/components/segments/seg-approve.md)
+      + [Partager des segments](/help/components/segments/seg-share.md)
+      + [Baliser des segments](/help/components/segments/seg-tag.md)
+      + [Filtrer la liste de segments](/help/components/segments/seg-filter.md)
+      + [Marquer des segments comme favoris](/help/components/segments/seg-favorite.md)
+      + [Approuver des segments](/help/components/segments/seg-approve.md)
       + [Copier des segments](/help/components/segments/seg-copy.md)
-      + [Gestion des segments](/help/components/segments/seg-manage.md)
+      + [Gérer les segments](/help/components/segments/seg-manage.md)
       + [Opérateurs](/help/components/segments/seg-operators.md)
       + [Utiliser les segments](/help/components/segments/seg-use.md)
    + Mesures calculées {#cja-calcmetrics}
@@ -392,17 +392,17 @@ ht-degree: 93%
    + [Vue d’ensemble](../report-builder/rb-overview.md)
    + [Configuration de Report Builder](../report-builder/report-builder-setup.md)
    + [Créer un bloc de données](../report-builder/create-a-data-block.md)
-   + [hub Report Builder](../report-builder/report-builder-hub.md)
+   + [Hub Report Builder](../report-builder/report-builder-hub.md)
    + [Sélectionner une vue de données](../report-builder/select-data-view.md)
    + [Sélectionner une période](../report-builder/select-date-range.md)
-   + [Utilisation des segments](../report-builder/work-with-filters.md)
-   + [Filtrer les dimensions](../report-builder/filter-dimensions.md)
-   + [Gestion des blocs de données](../report-builder/manage-reportbuilder.md)
+   + [Utiliser des segments](../report-builder/work-with-filters.md)
+   + [Filtrer des dimensions](../report-builder/filter-dimensions.md)
+   + [Gérer les blocs de données](../report-builder/manage-reportbuilder.md)
    + [Planifier des classeurs pour l’e-mail](../report-builder/schedule-reportbuilder.md)
    + [Planification de classeurs pour les exportations cloud](../report-builder/report-builder-export.md)
    + [Gérer les plannings de classeur](/help/report-builder/manage-schedules-reportbuilder.md)
    + [Libellés restreints](../report-builder/restricted-labels.md)
-   + [Paramètres de Report Builder](../report-builder/report-builder-settings.md)
+   + [Paramètres de Report Builder](../report-builder/report-builder-settings.md)
 
 
 + Gestionnaire des activités de rapport {#reporting-activity-manager}
@@ -415,7 +415,7 @@ ht-degree: 93%
    + [Groupement basé sur les champs](/help/stitching/fbs.md)
    + [Groupement basé sur les graphes](/help/stitching/gbs.md)
    + [Utilisation du groupement](/help/stitching/use-stitching.md)
-   + [Créer et gérer de jeux de données groupés](/help/stitching/stitching-ui.md)
+   + [Créer et gérer des jeux de données groupés](/help/stitching/stitching-ui.md)
    + [Valider le groupement](/help/stitching/validate.md)
    + [Questions fréquentes](/help/stitching/faq.md)
 
@@ -439,10 +439,10 @@ ht-degree: 93%
       + [Combiner des suites de rapports avec différents schémas](../use-cases/aa-data/combine-report-suites.md)
    + B2B {#b2b}
       + [Exemple de projet B2B basé sur les personnes](../use-cases/b2b/example.md)
-      + B2B edition {#b2b-edition}
-         + [Présentation des cas d’utilisation](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)
+      + B2B Edition {#b2b-edition}
+         + [Vue d’ensemble des cas d’utilisation](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)
          + [Configuration](/help/use-cases/b2b/b2b-edition/setup.md)
-         + [Optimisation du marketing de compte](/help/use-cases/b2b/b2b-edition/optimize-account-marketing.md)
+         + [Optimiser le marketing de compte](/help/use-cases/b2b/b2b-edition/optimize-account-marketing.md)
          + [Développer les comptes clés](/help/use-cases/b2b/b2b-edition/grow-key-accounts.md)
          + [Créer la valeur du produit](/help/use-cases/b2b/b2b-edition/build-product-value.md)
    + Données complexes {#complex-data}

@@ -8,7 +8,7 @@ exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
 source-git-commit: dd4adc5acd05aecf0a67072df6688a344e1ce5c9
 workflow-type: tm+mt
 source-wordcount: '836'
-ht-degree: 91%
+ht-degree: 94%
 
 ---
 
@@ -41,9 +41,9 @@ Content Analytics utilise les termes clés suivants :
 
 ## Fonctionnement
 
-Content Analytics utilise les données d’affichage d’images web dans les jeux de données d’événement d’Experience Platform pour [collecter des données d’événement de contenu](config/datacollection.md). et associe cette collecte de données de contenu à l’implémentation de collecte de données (existantes) de données comportementales.
+L’analyse du contenu utilise les données d’affichage d’images web dans les jeux de données d’événement d’Experience Platform pour [collecter des données d’événement de contenu](config/datacollection.md). et associe cette collecte de données de contenu à l’implémentation de collecte de données (existante) de données comportementales.
 
-![Content Analytics - Fonctionnement](assets/aca-overview.gif)
+![Analyse du contenu - Fonctionnement](assets/aca-overview.gif)
 
 1. Lorsqu’une personne visite un site [configuré pour Content Analytics](config/configuration.md) le SDK web Experience Platform enregistre les impressions et les interactions avec le contenu.
 1. Le service d’identités et de fonctionnalités traite ces interactions. Ce processus consiste en un service de récupération qui revisite les versions publiques des URL configurées qui définissent les interactions. Pour toutes ces URL récupérées, le service d’identités identifie de manière unique les expériences et les ressources. Le service de fonctionnalités applique des services d’IA et de ML pour identifier des expériences ainsi que des métadonnées et attributs de ressources.
@@ -67,7 +67,7 @@ Content Analytics utilise les données d’affichage d’images web dans les jeu
 >[!MORELIKETHIS]
 >
 >[Création de rapports Content Analytics](report/report.md)
->[Configurer Content Analytics](config/configuration.md)
->[Calcul des rebonds et du taux de rebond dans Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446?profile.language=fr#M454)
+>>[Configurer Content Analytics](config/configuration.md)
+>>[Calcul des rebonds et du taux de rebond dans Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446#M454)
 >
 
