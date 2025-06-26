@@ -5,14 +5,14 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: 029a7ebb10ac9daf4c4b121efa85042d6da22316
+source-git-commit: 7bf74e02db581bdf11b7efe31b62f018320c7f22
 workflow-type: tm+mt
-source-wordcount: '1980'
-ht-degree: 91%
+source-wordcount: '2359'
+ht-degree: 75%
 
 ---
 
-# Visualiser des données avec l’agent Data Insights dans Customer Journey Analytics
+# Visualisation des données avec Data Insights Agent
 
 >[!AVAILABILITY]
 >
@@ -39,7 +39,7 @@ Utiliser l’agent Data Insights pour répondre à des questions sur des donnée
 | **Mécanismes de commentaires** | <ul><li>Pouces levés</li><li>Pouces baissés</li><li>Drapeau</li></ul> |  |
 
 
-## Gérer l’accès à l’agent Data Insights dans Customer Journey Analytics
+## Gérer l’accès à Data Insights Agent
 
 Les paramètres suivants régissent l’accès à l’agent Data Insights dans Customer Journey Analytics :
 
@@ -229,3 +229,24 @@ Following the thumbs up or thumbs down selection, please make a selection for th
 
 -->
 
+
+## Bonnes pratiques de configuration
+
+Vous trouverez ci-dessous les bonnes pratiques relatives à votre configuration Customer Journey Analytics (vue de données, mesures calculées, segments, etc.) pour vous assurer que Data Insights Agent peut localiser les composants corrects et renvoyer des réponses plus précises sans que vous ayez à demander des informations supplémentaires.
+
+* **Équilibrez les composants dont vous avez besoin**. N’ajoutez pas tous les champs de vos jeux de données en tant que mesures ou composants de dimension à votre vue de données. En particulier, ceux que vous n&#39;utiliserez certainement pas dans votre analyse. D’un autre côté, ne vous limitez pas strictement aux champs que vous prévoyez d’utiliser pour votre analyse. Une vue de données trop limitée limite la flexibilité de votre analyse et la fonctionnalité de l’agent Data Insight.
+* **Utilisez toujours des noms d’affichage conviviaux**. Assurez-vous que tous les champs que vous définissez dans votre vue de données, que ce soit en tant que mesures ou composant de dimension, disposent d’un nom de composant convivial. Le processus de renommage des champs avec un nom convivial est particulièrement pertinent pour les champs des jeux de données du connecteur source Adobe Analytics. Ces champs ont souvent des noms non conviviaux et non identifiables tels que `eVar41` ou `prop25`.
+* **Utilisez des noms distinctifs**. Les noms distincts sont particulièrement pertinents lorsque vous utilisez un champ à la fois comme mesure et comme composant de dimension dans votre vue de données. Vous pouvez également utiliser un champ dans plusieurs composants, chacun avec des paramètres de composant différents.
+* **Utilisez une convention de nommage des composants**. Vous pouvez utiliser une convention de nommage des composants pour les regrouper. Par exemple, **[!UICONTROL Commandes | Produits]** et **[!UICONTROL Commandes | Client]** pour faire la distinction entre les différentes mesures de commande pouvant exister dans vos données.
+* **Utiliser le dictionnaire de données**. Ajoutez une description et d’autres données pertinentes pour les composants dans le dictionnaire de données. L’agent Data Insight n’utilise actuellement pas de description ni de balises. mais pourrait utiliser la description et les balises du dictionnaire de données à l’avenir.
+* **Utiliser des mesures calculées approuvées**. Convenez d’un processus pour n’utiliser que des mesures calculées approuvées comme composants dans votre vue de données et évitez d’utiliser des mesures calculées expérimentales.
+* **Partage des segments requis**. Veillez à partager les segments et à rendre visibles les segments requis pour les invites de l’agent Data Insights.
+* **Normaliser les noms de composant dans les vues de données**. Si vous utilisez les mêmes champs en tant que composant dans plusieurs vues de données, veillez à utiliser un seul nom convivial et un seul identifiant pour ce composant. Un nom et un identifiant uniques permettent à l’agent Data Insights de changer de vue de données sans perdre de contexte.
+
+>[!MORELIKETHIS]
+>
+>[Paramètres de composant](/help/data-views/component-settings/overview.md)
+>>[Dictionnaire de données ](/help/components/data-dictionary/data-dictionary-overview.md)
+>>[Approuver la mesure calculée](/help/components/calc-metrics/cm-workflow/cm-approving.md)
+>>[Partage de segments ](/help/components/segments/seg-share.md)
+>
