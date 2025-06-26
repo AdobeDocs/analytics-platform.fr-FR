@@ -246,7 +246,7 @@ Vous trouverez ci-dessous les bonnes pratiques relatives à votre configuration 
 >[!MORELIKETHIS]
 >
 >[Paramètres de composant](/help/data-views/component-settings/overview.md)
->>[Dictionnaire de données ](/help/components/data-dictionary/data-dictionary-overview.md)
->>[Approuver la mesure calculée](/help/components/calc-metrics/cm-workflow/cm-approving.md)
->>[Partage de segments ](/help/components/segments/seg-share.md)
+>&#x200B;>[Dictionnaire de données ](/help/components/data-dictionary/data-dictionary-overview.md)
+>&#x200B;>[Approuver la mesure calculée](/help/components/calc-metrics/cm-workflow/cm-approving.md)
+>&#x200B;>[Partage de segments ](/help/components/segments/seg-share.md)
 >
