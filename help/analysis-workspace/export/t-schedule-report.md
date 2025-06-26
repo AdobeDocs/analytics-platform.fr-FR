@@ -6,10 +6,10 @@ feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
-workflow-type: ht
-source-wordcount: '1034'
-ht-degree: 100%
+source-git-commit: a462e736ddcdf1a5ea84a85eea2c2ce0b8a34fb0
+workflow-type: tm+mt
+source-wordcount: '791'
+ht-degree: 58%
 
 ---
 
@@ -21,69 +21,52 @@ Toutes les balises appliquées au projet sont automatiquement appliquées à l�
 
 D’autres méthodes d’export des données Customer Journey Analytics sont également disponibles, comme décrit dans la section [Vue d’ensemble de l’export](/help/analysis-workspace/export/export-project-overview.md).
 
-## Envoyer le fichier maintenant {#now}
+![Envoyer un fichier](assets/send-file.png)
 
-Pour envoyer un fichier immédiatement aux destinataires par courrier électronique, procédez comme suit :
+## Envoyer le fichier
 
-1. Cliquez sur **[!UICONTROL Partager] > [!UICONTROL Exporter le fichier]**.
+Pour envoyer un fichier aux destinataires par e-mail :
+
+1. Sélectionnez **[!UICONTROL Partager] > [!UICONTROL Envoyer le fichier]**.
 1. Spécifiez le type de fichier :
    * [!UICONTROL **CSV**] : choisissez cette option si vous souhaitez des données en texte brut.
    * [!UICONTROL **PDF**] : choisissez cette option si vous souhaitez que le fichier téléchargé contienne tous les tableaux et visualisations affichés (visibles) dans le projet.
-1. (Facultatif) Ajoutez une description qui sera incluse dans l’e-mail pour décrire le fichier reçu.
-1. Ajoutez des destinataires ou des groupes. Vous pouvez également saisir les adresses électroniques.
-1. (Uniquement pour les clients de Healthcare Shield) Indiquez un mot de passe. Voir la section Protection par mot de passe d’un rapport planifié.
-1. (Facultatif) Cliquez sur **[!UICONTROL Afficher les options de planification]** pour planifier une livraison.
-1. Cliquez sur **[!UICONTROL Envoyer maintenant]**.
+1. (Facultatif) Utilisez **[!UICONTROL Description]** pour ajouter une description à inclure dans l’e-mail.
+1. Ajoutez des destinataires ou des groupes. Vous pouvez également saisir des adresses e-mail.
+1. (Uniquement pour les clients Healthcare Shield) Indiquez un mot de passe pour [protéger par mot de passe un rapport planifié](#password-protect-a-new-scheduled-project).
+1. (Facultatif) Sélectionnez **[!UICONTROL Afficher les options de planification]** pour [planifier une exportation de fichier](#schedule-file-export).
+1. Cliquez sur **[!UICONTROL Envoyer maintenant]**. Sélectionnez **[!UICONTROL Annuler]** pour annuler.
 
-![Fenêtre Envoyer le fichier et bouton Envoyer maintenant.](assets/send-file-no-scheduling-options.JPG)
 
-## Envoyer le fichier selon le calendrier {#schedule}
+## Planifier l’export de fichier {#schedule}
 
-Pour envoyer un fichier selon un calendrier récurrent aux destinataires par e-mail, procédez comme suit :
+Pour envoyer un fichier selon un planning aux destinataires par e-mail
 
-1. Cliquez sur **[!UICONTROL Partager] > [!UICONTROL Planifier l’export de fichier]**.
-1. Spécifiez le type de fichier (CSV ou PDF).
-1. (Facultatif) Ajoutez une description qui sera incluse dans le courrier électronique pour décrire le fichier reçu.
-1. Ajoutez des destinataires ou des groupes. Vous pouvez également saisir les adresses électroniques.
-1. (Uniquement pour les clients de Healthcare Shield) Indiquez un mot de passe. Voir la section Protection par mot de passe d’un rapport planifié.
-1. Précisez la période pendant laquelle la livraison doit être effectuée en modifiant les entrées Début le et Fin le. La date de fin doit se situer dans un délai d’un an à compter du jour de la création ou de la modification de la planification.
-1. Spécifiez la fréquence de livraison. Chaque fréquence offre différentes personnalisations.
-1. Cliquez sur **[!UICONTROL Envoyer selon le calendrier]**.
+1. Sélectionnez **[!UICONTROL Partager] > [!UICONTROL Planifier l’exportation de fichier]**.
+1. Spécifiez le type de fichier :
+   * [!UICONTROL **CSV**] : choisissez cette option si vous souhaitez des données en texte brut.
+   * [!UICONTROL **PDF**] : choisissez cette option si vous souhaitez que le fichier téléchargé contienne tous les tableaux et visualisations affichés (visibles) dans le projet.
+1. (Facultatif) Utilisez **[!UICONTROL Description]** pour ajouter une description à inclure dans l’e-mail.
+1. Ajoutez des destinataires ou des groupes. Vous pouvez également saisir des adresses e-mail.
+1. (Uniquement pour les clients Healthcare Shield) Indiquez un mot de passe pour [protéger par mot de passe un rapport planifié](#password-protect-a-new-scheduled-project).
+1. Assurez-vous que **[!UICONTROL Afficher les options de planification]** est sélectionné.
+1. Sélectionnez une **[!UICONTROL Fréquence]**. Vous pouvez choisir entre :
 
-![La fenêtre Envoyer le fichier et les options de planification s’affichent pour indiquer les dates de début et de fin, ainsi que les paramètres de fréquence quotidienne.](assets/send-file.JPG)
+   | Fréquence | Options |
+   |---|---|
+   | **[!UICONTROL Envoyer par heure]** | Saisissez une valeur pour **[!UICONTROL Envoyer toutes les heures]**. |
+   | **[!UICONTROL Envoyer quotidiennement]** | Sélectionnez une **[!UICONTROL Fréquence quotidienne]** : **[!UICONTROL Envoyer tous les jours]**, **[!UICONTROL Envoyer tous les jours de la semaine]** ou **[!UICONTROL Fréquence personnalisée]**.<br/>Si vous sélectionnez **[!UICONTROL Fréquence personnalisée]**, saisissez une valeur pour **[!UICONTROL Envoyer tous les jours]**. |
+   | **[!UICONTROL Envoyer une fois par semaine]** | Saisissez une valeur pour **[!UICONTROL Envoyer toutes les semaines]**. Sélectionnez ensuite un **[!UICONTROL Jour de la semaine]**. |
+   | **[!UICONTROL Envoyer mensuellement par jour de la semaine]** | Sélectionnez un **[!UICONTROL Jour de la semaine]** et un **[!UICONTROL Semaine du mois]**. |
+   | **[!UICONTROL Envoyer mensuellement par jour du mois]** | Sélectionnez une valeur dans **[!UICONTROL Envoyer ce jour du mois]**. |
+   | **[!UICONTROL Envoyer annuellement par jour du mois]** | Sélectionnez un **[!UICONTROL Jour de la semaine]**, une **[!UICONTROL Semaine du mois]** et une **[!UICONTROL Mensuel de l’année]**. |
+   | **[!UICONTROL Envoyer annuellement par date spécifique]** | Sélectionnez un **[!UICONTROL Mois de l’année]** et sélectionnez une valeur dans **[!UICONTROL Envoyer ce jour du mois]**. |
 
-## Gestionnaire de projets planifiés {#manager}
+1. Saisissez une date de début dans **[!UICONTROL À partir du]**. Vous pouvez également sélectionner ![Calendrier](/help/assets/icons/Calendar.svg) pour choisir une date de début dans le calendrier.
 
-Les projets Analysis Workspace planifiés peuvent être gérés sous **[!UICONTROL Analytics] > [!UICONTROL Composants] > [!UICONTROL Projets planifiés]**.
+1. Saisissez une date de fin dans **[!UICONTROL Se terminant le]**. Vous pouvez également sélectionner ![Calendrier](/help/assets/icons/Calendar.svg) pour choisir une date de fin dans le calendrier.
+1. Sélectionnez **[!UICONTROL Envoyer selon le calendrier]**. Sélectionnez **[!UICONTROL Annuler]** pour annuler.
 
-Dans le Gestionnaire de projets planifiés, vous pouvez modifier et supprimer les calendriers de projets récurrents. Utilisez la barre de recherche ou les options de filtre dans le panneau de gauche pour rechercher un planning. Vous pouvez filtrer par balise, calendriers approuvés, propriétaires, etc.
-
-| Champ | Description |
-| --- | --- |
-| [!UICONTROL Favoris] | Sélectionnez l’icône en forme d’étoile pour marquer ce planning comme favori. |
-| [!UICONTROL Identifiant de planning] | Cet identifiant est principalement utilisé à des fins de débogage. |
-| [!UICONTROL Titre et description] | Titre et description de ce projet. |
-| [!UICONTROL Propriétaire] | Personne qui a créé le projet et qui en est propriétaire. |
-| [!UICONTROL Balises] | (facultatif) Le balisage est un moyen efficace d’organiser les projets. Tous les utilisateurs peuvent créer des balises et en appliquer une ou plusieurs à un projet. Néanmoins, vous ne pouvez afficher les balises que pour les projets que vous possédez ou qui ont été partagés avec vous. |
-| [!UICONTROL Distribué à] | Le ou les personnes destinataires de ce projet planifié. |
-| [!UICONTROL Date d’expiration] | Vous pouvez définir des dates d’expiration maximales allant jusqu’à un an pour les projets planifiés, quelle que soit la fréquence de planification. |
-| [!UICONTROL Fréquence] | Fréquence à laquelle vous souhaitez envoyer ce projet planifié aux personnes destinataires. |
-| [!UICONTROL Heure d’exécution] | Heure à laquelle ce projet planifié est envoyé. |
-| [!UICONTROL Nombre de requêtes] | Nombre de requêtes concernant ce projet. |
-
-Actions courantes du Gestionnaire de projets planifiés :
-
-| Action | Description |
-|---|---|
-| **[!UICONTROL Modifier le planning]** | Cliquez sur le titre du planning pour mettre à jour les paramètres de livraison. |
-| **[!UICONTROL Supprimer le planning]** | Sélectionnez le projet planifié dans la liste, puis cliquez sur Supprimer dans le menu. Cela supprime le planning sélectionné pour le projet ; le projet lui-même n’est pas supprimé. |
-| **[!UICONTROL Ajout de balises]** | Sélectionnez le projet planifié dans la liste, puis « Balise » ou « Approuver » pour organiser vos plannings et faciliter les recherches. |
-| **[!UICONTROL Afficher les plannings échoués]** | Accédez au panneau de gauche > Autres filtres > Échec pour afficher les plannings qui ont échoué. |
-| **[!UICONTROL Afficher les plannings expirés]** | Accédez au panneau de gauche > Autres filtres > Expiré pour afficher les plannings qui ont expiré. Cliquez sur le titre du planning pour configurer une nouvelle diffusion. |
-| **[!UICONTROL Afficher l’ID de planning]** | Accédez aux options relatives aux colonnes dans le coin supérieur droit et ajoutez la colonne ID de planning dans le tableau. L’ID planifié est souvent utile pour le débogage. |
-
-Le Gestionnaire de planification des projets affiche les éléments créés par un utilisateur spécifique. Si le compte d’utilisateur ou d’utilisatrice est désactivé dans l’application, toutes les diffusions planifiées sont interrompues.
-Pour plus d’informations, consultez [Projets planifiés](/help/components/scheduled-projects-manager.md).
 
 ## Protéger un projet planifié par mot de passe {#password}
 
@@ -109,8 +92,6 @@ Une fois que votre entreprise a acheté et activé le SKU Healthcare Shield, l�
 
 * Lorsqu’un projet planifié existant est sur le point d’être envoyé. Le projet actuellement planifié sera désactivé jusqu’à la mise en place de la protection par mot de passe. La personne propriétaire du projet planifié reçoit un e-mail l’informant de cette exigence.
 
-![Fenêtre Modifier le projet planifié et notification de chiffrement de mot de passe indiquant que votre organisation nécessite un chiffrement de mot de passe.](assets/password.png)
-
 ### Exigences relatives au mot de passe
 
 Les exigences relatives au mot de passe sont conformes à la norme Adobe, qui requiert un minimum de 8 caractères avec au moins un nombre et un caractère spécial.
@@ -122,7 +103,7 @@ Les exigences relatives au mot de passe sont conformes à la norme Adobe, qui re
 
 ### Protéger un projet planifié existant par mot de passe
 
-Avant la planification d’un projet, la personne propriétaire du projet reçoit un e-mail semblable à celui-ci :
+Lorsque vous protégez par mot de passe un projet planifié existant, le propriétaire du projet reçoit un e-mail similaire à celui-ci :
 
 ![Notification par e-mail de Customer Journey Analytics indiquant que le chiffrement du mot de passe est requis pour votre organisation.](assets/email-password.png)
 
@@ -130,3 +111,9 @@ Avant la planification d’un projet, la personne propriétaire du projet reçoi
 1. Sélectionnez **[!UICONTROL Afficher le projet planifié]**.
 1. Dans la boîte de dialogue **[!UICONTROL Modifier le projet planifié]**, saisissez un mot de passe et saisissez-le à nouveau.
 1. Partagez ce mot de passe avec les destinataires du projet planifié. Ne distribuez pas le mot de passe aux personnes qui ne sont pas destinataires du projet planifié.
+
+
+
+## Gestionnaire de projets planifiés {#manager}
+
+Les projets Analysis Workspace planifiés peuvent être gérés à partir de l’interface principale, en utilisant **[!UICONTROL Composants]** > **[!UICONTROL Projets planifiés]**. Pour plus d’informations, consultez [Projets planifiés](/help/components/scheduled-projects-manager.md).

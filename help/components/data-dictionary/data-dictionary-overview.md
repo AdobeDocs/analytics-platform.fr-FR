@@ -1,13 +1,13 @@
 ---
-description: Le dictionnaire de données dans Analysis Workspace permet aux utilisateurs et utilisatrices de cataloguer et de suivre les différents composants dans Analysis Workspace, y compris leur utilisation prévue, ceux qui sont approuvés, ceux qui sont des doublons, etc.
+description: Le dictionnaire de données dans Analysis Workspace permet aux utilisateurs et utilisatrices de cataloguer et de suivre les différents composants dans Analysis Workspace, y compris leur utilisation prévue, qui est approuvée, qui sont des doublons, etc.
 title: Présentation du dictionnaire de données
 feature: Components
 role: User, Admin
 exl-id: 8e4b8169-7c7f-4a58-a6c6-70efb0c86ce8
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
-workflow-type: ht
-source-wordcount: '567'
-ht-degree: 100%
+source-git-commit: f940e5cba11df0ff158093a503213ff1641b1c5d
+workflow-type: tm+mt
+source-wordcount: '569'
+ht-degree: 82%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="component_datadictionary"
 >title="Dictionnaire de données"
->abstract="Le dictionnaire de données aide les utilisateurs, utilisatrices, administrateurs et administratrices à suivre et à mieux comprendre les composants dans leur environnement Analytics. <br/>Les administrateurs et administratrices d’Analytics sont responsables de la conservation des informations de chaque composant du dictionnaire de données pour les utilisateurs et utilisatrices."
+>abstract="Le dictionnaire de données permet aux utilisateurs et utilisatrices, et aux administrateurs et administratrices, de suivre et de mieux comprendre les composants dans leur environnement Customer Journey Analytics. Les administrateurs et administratrices de Customer Journey Analytics <br/>sont chargés de traiter les informations sur chaque composant du dictionnaire de données."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -30,7 +30,7 @@ Les administrateurs et administratrices d’Analytics sont responsables du trait
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dictionnaire de données pour Analysis Workspace](https://video.tv.adobe.com/v/3422282/?quality=12&learn=on&captions=fre_fr){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dictionnaire de données pour Analysis Workspace](https://video.tv.adobe.com/v/3418028/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 
@@ -58,7 +58,7 @@ Pour plus d’informations sur l’accès au dictionnaire de données et sur les
 
 Le dictionnaire de données permet aux administrateurs et administratrices système de suivre et de traiter les composants dans leur environnement Analytics.
 
-Voici quelques-unes des façons dont les administrateurs et administratrices d’Analytics peuvent utiliser le dictionnaire de données :
+Les administrateurs et administratrices d’Analytics peuvent utiliser le dictionnaire de données à ces fins :
 
 * Identifier les composants en double qui doivent être consolidés.
 
@@ -103,10 +103,10 @@ Vous pouvez manipuler la fenêtre du dictionnaire de données de l’une des man
 
   Si vous fermez et rouvrez Analysis Workspace, la fenêtre du dictionnaire de données reste à l’emplacement où vous l’avez déplacée pour la dernière fois. <!--True?-->
 
-* Réduire le dictionnaire de données
+* Réduisez la fenêtre.
 
   Une fois réduit, le dictionnaire de données s’affiche sous la forme d’un onglet bleu dans le coin inférieur droit d’Analysis Workspace.
 
   Lorsque vous sélectionnez l’onglet bleu, le dictionnaire de données s’ouvre sur le composant que vous avez consulté le plus récemment.
 
-* Fermer le dictionnaire de données
+* Ferme la fenêtre.
