@@ -17,7 +17,7 @@ ht-degree: 55%
 Le traitement vous permet de limiter les composants (dimensions, mesures, segments, périodes) avant de partager un projet. Lorsqu’un destinataire ouvre le projet, il voit un ensemble limité de composants que vous avez traités pour lui. Le traitement est une étape facultative mais recommandée avant de partager un projet.
 
 >[!NOTE]
-> Les profils de produit constituent le principal mécanisme contrôlant ce que voit un utilisateur. Ils sont gérés via l’[Admin Console pour Adobe Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/admin-tool-experience-cloud). Le traitement est un segment secondaire.
+> Les profils de produit constituent le principal mécanisme contrôlant ce que voit un utilisateur. Ils sont gérés via l’[Admin Console pour Adobe Experience Cloud](https://experienceleague.adobe.com/fr/docs/core-services/interface/administration/admin-tool-experience-cloud). Le traitement est un segment secondaire.
 
 ## Application du traitement du projet
 
