@@ -15,7 +15,7 @@ ht-degree: 0%
 
 La visualisation de la zone de travail des Parcours vous permet d’analyser les parcours que vous fournissez à vos utilisateurs et clientes, et d’obtenir des informations détaillées à leur sujet.
 
-Pour en savoir plus sur la zone de travail de Parcours, consultez la présentation de la zone de travail de Parcours [](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) et [Configurer une visualisation de zone de travail de Parcours ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
+Pour en savoir plus sur la zone de travail de Parcours, consultez la présentation de la zone de travail de Parcours [&#128279;](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) et [Configurer une visualisation de zone de travail de Parcours ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
 
 Les informations suivantes peuvent vous aider à résoudre les problèmes liés aux résultats inattendus que vous pouvez voir, tels que les nœuds qui apparaissent plus tard dans le parcours et qui affichent un pourcentage ou un nombre plus élevé que les nœuds qui apparaissent plus tôt dans le parcours.
 

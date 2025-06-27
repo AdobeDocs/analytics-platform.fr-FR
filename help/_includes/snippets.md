@@ -167,7 +167,7 @@ Selon votre modèle d’attribution, le conteneur et les canaux reçoivent un cr
 
 Les événements de conversion qui comportent généralement des nombres entiers sont divisés si le crédit revient à plusieurs canaux. Par exemple, si deux canaux contribuent à un événement personnalisé à l’aide d’un modèle d’attribution linéaire, les deux canaux obtiennent 0,5 de cette commande. Ces mesures partielles sont additionnées pour toutes les personnes, puis arrondies à l’entier le plus proche à des fins de création de rapports.
 
-[!BADGE B2B edition ]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} utilisez des conteneurs B2B spécifiques, tels que des comptes ou des opportunités, et des intervalles de recherche en amont plus appropriés (jusqu’à 13 mois) pour appliquer les modèles d’attribution ci-dessus dans des scénarios B2B standard.
+[!BADGE B2B edition &#x200B;]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} utilisez des conteneurs B2B spécifiques, tels que des comptes ou des opportunités, et des intervalles de recherche en amont plus appropriés (jusqu’à 13 mois) pour appliquer les modèles d’attribution ci-dessus dans des scénarios B2B standard.
 
 ## Comparaisons des visualisations de Journey {#journey-visualization-comparisons}
 
