@@ -1,17 +1,17 @@
 ---
-title: Créer des liens hypertextes dans un tableau à structure libre
-description: Découvrir comment créer des liens hypertextes pour les éléments de dimension dans un tableau à structure libre dans Analysis Workspace
+title: Créer Des Hyperliens Pour Les Dimensions D’Un Tableau À Structure Libre
+description: Découvrez comment créer des liens hypertexte pour les éléments de dimension dans un tableau à structure libre dans Analysis Workspace.
 feature: Visualizations
 role: User
 exl-id: 24fc2d24-b8c2-4664-8b9c-beda284f9033
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '1607'
-ht-degree: 98%
+source-wordcount: '1605'
+ht-degree: 97%
 
 ---
 
-# Créer des liens hypertextes dans un tableau à structure libre
+# Créer des liens hypertextes
 
 Vous pouvez créer des liens hypertextes pour des éléments de dimension afin de les rendre cliquables dans un tableau à structure libre d’Analysis Workspace.
 
@@ -26,7 +26,7 @@ Cette fonctionnalité est particulièrement utile lors de la création de liens 
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Créerdes liens hypertextes dans un tableau à structure libre](https://video.tv.adobe.com/v/3445782/?quality=12&learn=on&captions=fre_fr){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Créerdes liens hypertextes dans un tableau à structure libre](https://video.tv.adobe.com/v/3430411/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 

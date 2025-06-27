@@ -1,12 +1,12 @@
 ---
-description: Vue d’ensemble de l’utilisation des modèles par défaut dans Analysis Workspace.
+description: Découvrez comment utiliser des modèles dans Analysis Workspace.
 title: Utiliser des modèles
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 49e0327b2c67ed12fa316f74f6d6a8ce39e3c87a
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '19829'
+source-wordcount: '19826'
 ht-degree: 99%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 99%
 Les modèles (ou modèles d’entreprise) dans Analysis Workspace fournissent un aperçu rapide sur les scénarios de création de rapports les plus courants. Voici quelques exemples de questions auxquelles vous pouvez répondre à l’aide de modèles :
 
 * Nombre de visiteurs sur votre site
-* Nombre de ces visiteurs qui sont uniques (comptabilisés une seule fois)
+* Nombre de ces visites qui sont uniques (comptabilisées une seule fois)
 * Leur acheminement vers le site (s’ils ont suivi un lien ou se sont rendus directement dessus)
 * Mots-clés utilisés par les visiteurs pour rechercher le contenu du site
 * Leur durée passée sur une page donnée ou sur le site entier

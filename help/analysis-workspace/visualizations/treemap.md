@@ -1,13 +1,13 @@
 ---
-description: Présente les données hiérarchiques (structurées en arbre) sous la forme d’un ensemble de rectangles imbriqués.
+description: Découvrez comment afficher des données hiérarchiques (structurées en arborescence) sous la forme d’un ensemble de rectangles imbriqués.
 title: Treemap
 feature: Visualizations
 exl-id: fc39d1a9-9e83-40f3-af28-f4803647ad0b
 role: User
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
-workflow-type: ht
-source-wordcount: '164'
-ht-degree: 100%
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+workflow-type: tm+mt
+source-wordcount: '167'
+ht-degree: 92%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="workspace_treemap_button"
->title="Treemap"
+>title="Plan en arborescence"
 >abstract="Créez une visualisation de graphique de compartimentage pour afficher des données hiérarchiques (structurées en arborescence) avec des rectangles imbriqués."
 
 <!-- markdownlint-enable MD034 -->
@@ -41,7 +41,7 @@ Avec une visutlisation Treemap, vous pouvez voir des motifs qui seraient diffici
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisation Treemap](https://video.tv.adobe.com/v/3416854/?quality=12&learn=on&captions=fre_fr){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisation Treemap](https://video.tv.adobe.com/v/334458/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 
@@ -49,8 +49,8 @@ Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisat
 >[!MORELIKETHIS]
 >
 >[Ajouter une visualisation à un panneau](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->[Paramètres de visualisation](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->[Menu contextuel de visualisation](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>>[Paramètres de visualisation](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>>[Menu contextuel de visualisation](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
 
 

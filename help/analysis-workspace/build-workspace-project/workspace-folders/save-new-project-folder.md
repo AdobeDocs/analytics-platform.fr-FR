@@ -1,32 +1,36 @@
 ---
-description: En savoir plus sur l’enregistrement de projets dans des dossiers de Workspace
+description: Découvrez comment enregistrer un nouveau projet dans un dossier Analysis Workspace.
 keywords: Analysis Workspace
-title: Enregistrer des projets dans des dossiers
+title: Enregistrer Un Nouveau Projet Dans Un Dossier
 feature: Workspace Basics
 exl-id: d08a558b-a2bb-4002-b179-437e1885c6c4
 role: User
-source-git-commit: 6cf6fa977a2c5dee28dcfe6f9446d294a9d9fd0f
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '93'
-ht-degree: 100%
+source-wordcount: '35'
+ht-degree: 5%
 
 ---
 
 # Enregistrer un nouveau projet dans un dossier
 
-<!-- Is this article still needed -->
+Voir [Enregistrer les projets](../save-projects.md#save) pour plus d’informations.
+
+<!-- Is this article still needed; removed from TOC
 
 
-Pour enregistrer un nouveau projet dans un dossier spécifique, sélectionnez le nom du dossier dans la fenêtre de dialogue Enregistrer le projet.
+To save a new project to a specific folder, select the folder name in the Save project dialogue window.
 
-1. Dans Workspace, créez un projet.
+1. In Workspace, create a new project.
 
-   ![Fenêtre de tableau à structure libre dans laquelle vous pouvez créer un projet.](/help/analysis-workspace/build-workspace-project/assets/save-to-folder1.png)
+    ![The Freeform table window where you can create a new project.](/help/analysis-workspace/build-workspace-project/assets/save-to-folder1.png)
 
-1. Dans la boîte de dialogue **Projet** > **Enregistrer**, sélectionnez un nom de dossier dans le menu déroulant Dossier.
+1. In the **Project** > **Save** dialogue, select a folder name from the Folder drop-down menu.
 
-   ![Fenêtre Enregistrer dans laquelle vous enregistrez votre nouveau projet dans un dossier.](/help/analysis-workspace/build-workspace-project/assets/save-to-folder2.png)
+    ![The Save window where you save your new project to a folder.](/help/analysis-workspace/build-workspace-project/assets/save-to-folder2.png)
 
-1. Cliquez sur **Enregistrer**.
+1. Click **Save**.
 
-   Le projet est enregistré dans le dossier sélectionné.
+    The project is saved in the selected folder.
+
+-->

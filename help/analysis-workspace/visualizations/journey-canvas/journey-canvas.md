@@ -1,13 +1,13 @@
 ---
-description: Vue d’ensemble de Zone de travail de parcours
-title: Zone de travail de parcours
+description: Découvrez comment utiliser la zone de travail de parcours dans Analysis Workspace.
+title: Présentation de la zone de travail de parcours
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
-workflow-type: ht
-source-wordcount: '1988'
-ht-degree: 100%
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+workflow-type: tm+mt
+source-wordcount: '1996'
+ht-degree: 99%
 
 ---
 
@@ -263,5 +263,5 @@ Vous pouvez créer des analyses dans la zone de travail de parcours en fonction 
 
 >[!MORELIKETHIS]
 >
-> * [Guide pour la visualisation de la zone de travail de parcours dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-guide-to-journey-canvas-visualization-in-adobe-customer/ba-p/737857?profile.language=fr)
+> * [Guide pour la visualisation de la zone de travail de parcours dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-guide-to-journey-canvas-visualization-in-adobe-customer/ba-p/737857)
 

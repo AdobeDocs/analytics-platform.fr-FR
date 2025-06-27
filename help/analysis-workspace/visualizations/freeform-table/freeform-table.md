@@ -1,13 +1,13 @@
 ---
-title: Vue d’ensemble du tableau à structure libre
-description: Les tableaux à structure libre constituent la base de l’analyse des données dans Workspace.
+title: Présentation des tableaux à structure libre
+description: Découvrez comment utiliser les tableaux à structure libre, qui sont la base de l’analyse des données dans Analysis Workspace.
 feature: Visualizations
 exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
 role: User
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '779'
-ht-degree: 100%
+source-wordcount: '785'
+ht-degree: 97%
 
 ---
 

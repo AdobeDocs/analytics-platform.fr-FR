@@ -1,14 +1,14 @@
 ---
-description: Dans Analysis Workspace, vous pouvez créer des segments d’après un point de contact, ajouter des segments comme point de contact et comparer des processus clés pour plusieurs segments.
-keywords: abandons et segments;segments dans l’analyse des abandons;comparer des segments dans les abandons
-title: Application de segments dans l’analyse des abandons
+description: Découvrez comment créer des segments à partir d’un point de contact, ajouter des segments en tant que point de contact et comparer les workflows clés sur différents segments dans une analyse des abandons dans Analysis Workspace.
+keywords: abandons et segmentation ; segments dans l’analyse des abandons ; comparer les segments dans les abandons
+title: Application De Segments Dans L’Analyse Des Abandons
 feature: Visualizations
 exl-id: 85b1024f-acd2-43b7-b4b1-b10961ba43e8
 role: User
-source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 38%
+source-wordcount: '468'
+ht-degree: 34%
 
 ---
 
@@ -20,9 +20,12 @@ Dans Analysis Workspace, vous pouvez créer des segments d’après un point de 
 >
 >Les segments utilisés comme points de contrôle dans la visualisation Abandons doivent utiliser un conteneur qui se trouve à un niveau inférieur par rapport au contexte global de la visualisation Abandons. Dans le cas d’une visualisation Abandon dans le contexte d’une personne, les segments utilisés comme points de contrôle doivent être des segments basés sur une session ou un événement. Avec une visualisation des abandons en contexte de session, les segments utilisés comme points de contrôle doivent être des segments basés sur un événement. Si vous utilisez une combinaison non valide, l’abandon est de 100 %. Un avertissement s’affiche dans la visualisation des abandons lorsque vous ajoutez un segment incompatible comme point de contact. Certaines combinaisons de conteneurs de segments non valides entraînent des diagrammes d’abandons non valides, par exemple :
 >
->* Utilisation d’un segment basé sur les personnes comme point de contact dans une visualisation des abandons avec contexte de personne
->* Utilisation d’un segment basé sur une personne comme point de contact dans une visualisation des abandons avec contexte de session
->* Utilisation d’un segment basé sur une session comme point de contact dans une visualisation des abandons avec contexte de session
+>* Utilisation d’un segment basé sur les personnes comme point de contact dans une visualisation des abandons avec contexte de personne.
+>* Utilisation d’un segment basé sur une personne comme point de contact dans une visualisation des abandons avec contexte de session.
+>* Utilisation d’un segment basé sur une session comme point de contact dans une visualisation des abandons avec contexte de session.
+<!-- Should we add B2B context here?
+* [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} Usimg a B2B container based segment as a touchpoint inside a non-container based context Fallout visualization.
+* -->
 
 ## Création d’un segment à partir d’un point de contact
 

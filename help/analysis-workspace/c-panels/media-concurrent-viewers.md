@@ -1,13 +1,13 @@
 ---
 title: Panneau Observateurs simultanés de médias
-description: Comment utiliser et interpréter le panneau Visiteurs et visiteuses simultanés de médias dans Analysis Workspace.
+description: Découvrez comment utiliser et interpréter le panneau d’observateurs simultanés de médias dans Analysis Workspace.
 feature: Panels
 exl-id: a442fb9c-165f-4136-95e2-ce92b9280c25
 role: User
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
-workflow-type: ht
-source-wordcount: '1174'
-ht-degree: 100%
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+workflow-type: tm+mt
+source-wordcount: '1175'
+ht-degree: 98%
 
 ---
 
@@ -55,7 +55,7 @@ Dans Analysis Workspace, les visiteurs et visiteuses simultanés représentent 
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Panneau Visiteurs et visiteuses simultanés de médias](https://video.tv.adobe.com/v/35025/?quality=12&learn=on&captions=fre_fr){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Panneau Visiteurs et visiteuses simultanés de médias](https://video.tv.adobe.com/v/26990/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 
@@ -130,6 +130,6 @@ Un tableau à structure libre n’est pas disponible dans cet affichage. Pour af
 >[!MORELIKETHIS]
 >
 >[Créer un panneau](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
->[Panneau Temps de lecture de média](media-playback-time-spent.md)
->[Panneau Audience moyenne par minute de média](average-minute-audience-panel.md)
+>>[Panneau Temps de lecture de média](media-playback-time-spent.md)
+>>[Panneau Audience moyenne par minute de média](average-minute-audience-panel.md)
 >

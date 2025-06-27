@@ -1,13 +1,13 @@
 ---
-title: Vue d’ensemble de la table de cohorte
-description: Découvrir comment utiliser une table de cohorte pour l’analyse des cohortes dans Analysis Workspace
+title: Aperçu du tableau de cohortes
+description: Découvrez comment approfondir les données relatives à votre audience et les diviser en groupes associés à l’aide de l’analyse des cohortes. Utilisez l’analyse des cohortes dans Analysis Workspace.
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 role: User
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
-workflow-type: ht
-source-wordcount: '705'
-ht-degree: 100%
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+workflow-type: tm+mt
+source-wordcount: '719'
+ht-degree: 94%
 
 ---
 
@@ -55,7 +55,7 @@ La [!UICONTROL Table de cohorte] est disponible pour tous les clientes et client
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analyse des cohortes dans Analysis Workspace](https://video.tv.adobe.com/v/3430072/?quality=12&learn=on&captions=fre_fr){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analyse des cohortes dans Analysis Workspace](https://video.tv.adobe.com/v/23990/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 
@@ -74,31 +74,31 @@ Les sections suivantes décrivent les fonctionnalités d’analyse des cohortes 
 
 Pour plus d’informations sur la création d’une cohorte et l’exécution d’un rapport [!UICONTROL Analyse des cohortes], consultez [Configurer une table de cohorte](/help/analysis-workspace/visualizations/cohort-table/t-cohort.md).
 
-### Tableau de [!UICONTROL rétention]
+### Table de rétention
 
 Une table de cohorte de [!UICONTROL rétention] renvoie des personnes : chaque cellule de données indique le nombre brut et le pourcentage de personnes dans la cohorte qui ont effectué l’action durant cette période. Vous pouvez inclure jusqu’à 3 mesures et 10 segments.
 
 ![Rapport de cohorte de rétention indiquant les unités et le pourcentage de personnes dans la cohorte.](assets/retention-report.png)
 
-### Tableau d’[!UICONTROL attrition]
+### Tableau de résiliation
 
 Une table de cohorte d’[!UICONTROL attrition] est l’opposé d’un tableau de rétention. Elle indique les personnes qui ont abandonné ou n’ont jamais rempli les critères de retour de votre cohorte au fil du temps. Vous pouvez inclure jusqu’à 3 mesures et 10 segments.
 
 ![Tableau d’attrition montrant les unités et le pourcentage de personnes qui ne répondaient pas aux critères de retour pour une cohorte.](assets/churn-report.png)
 
-### [!UICONTROL Calcul variable]
+### Calcul glissant
 
 Vous pouvez calculer la rétention ou l’attrition en fonction de la colonne précédente, et non de la colonne incluse, que l’on appelle calcul glissant.
 
 ![Rapport de cohorte de rétention présentant des calculs basés sur une colonne de données précédente.](assets/retention-report-rolling.png)
 
-### Tableau de [!UICONTROL latence]
+### Tableau de latence
 
 Un tableau de latence mesure la durée écoulée avant et après l’événement d’inclusion. La mesure de la latence est un excellent outil pré-/post-analyse. La colonne **[!UICONTROL Inclus]** se trouve au centre du tableau, tandis que les périodes avant et après l’événement d’inclusion sont affichées des deux côtés.
 
 ![Rapport de cohorte indiquant le temps écoulé avant et après un événement.](assets/retention-report-latency.png)
 
-### Cohorte de [!UICONTROL dimension personnalisée]
+### Cohorte de dimension personnalisée
 
 Vous pouvez créer des cohortes sur la base d’une dimension sélectionnée, et non des cohortes en fonction du temps, qui sont les cohortes par défaut. Utilisez des dimensions telles que [!UICONTROL Ville géographique], [!UICONTROL Canal marketing], [!UICONTROL campagne], [!UICONTROL produit], [!UICONTROL page], [!UICONTROL région] ou toute autre dimension pour afficher l’évolution de la rétention. En fonction des différentes valeurs de ces dimensions.
 

@@ -1,13 +1,13 @@
 ---
-description: Découvrez les rapports et les visualisations sur les abandons.
-title: À propos des rapports et des visualisations sur les abandons
+description: Découvrez comment utiliser la visualisation des abandons dans Analysis Workspace.
+title: Présentation des abandons
 feature: Visualizations
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
 role: User
-source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
-workflow-type: ht
-source-wordcount: '357'
-ht-degree: 100%
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+workflow-type: tm+mt
+source-wordcount: '358'
+ht-degree: 96%
 
 ---
 

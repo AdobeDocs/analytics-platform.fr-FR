@@ -1,49 +1,36 @@
 ---
-description: Synchronisez les visualisations pour contrôler quel tableau de données ou source de données correspond à une visualisation.
+description: Découvrez comment synchroniser un tableau à structure libre ou une source de données avec la visualisation correspondante.
 keywords: Analysis Workspace;Synchroniser une visualisation avec une source de données
 title: Gestion des sources de données
 feature: Visualizations
 exl-id: f9e89bef-0e78-49c7-8b7b-1fefd709c0cd
 role: User
-source-git-commit: 8f9c03607130bdeaf6cb7a32d8dd465712a47ea5
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 96%
+source-wordcount: '436'
+ht-degree: 89%
 
 ---
 
-# Gestion des sources de données {#manage-data-sources}
-
-<!-- markdownlint-disable MD034 -->
+# Gérer des sources de données {#manage-data-sources}
 
 >[!CONTEXTUALHELP]
 >id="workspace_freeformtable_lockselection"
 >title="Verrouiller la sélection"
 >abstract="Activez ce paramètre pour verrouiller la visualisation sur les positions ou les éléments sélectionnés dans la source de données."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="workspace_freeformtable_lockselection_showtable"
 >title="Afficher le tableau"
 >abstract="Sélectionnez **[!UICONTROL Afficher le tableau]** pour générer une nouvelle source de données pour votre visualisation actuelle, distincte de la source de données d’origine."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="workspace_freeformtable_showtable"
 >title="Afficher le tableau"
 >abstract="Sélectionnez **[!UICONTROL Afficher le tableau]** pour générer une nouvelle source de données pour votre visualisation actuelle, distincte de la source de données d’origine."
 
-<!-- markdownlint-enable MD034 -->
 
-
-
-Synchronisez les visualisations pour contrôler quel tableau de données ou source de données correspond à une visualisation.
+La synchronisation des visualisations vous permet de contrôler le tableau à structure libre ou la source de données qui correspond à une visualisation.
 
 >[!TIP]
 >

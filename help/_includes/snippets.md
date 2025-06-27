@@ -1,5 +1,5 @@
 ---
-source-git-commit: 256b1a3901a13ff2873a5cb5782baf26c93b8e8d
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
 source-wordcount: '4947'
 ht-degree: 95%
@@ -57,7 +57,7 @@ Les options de comparaison temporelle disponibles incluent la période précéde
 
 ## Démonstration vidéo d’Adobe Analytics {#videoaa}
 
-*Cette vidéo présente la fonctionnalité dans Adobe Analytics. Toutefois, cette fonctionnalité est également disponible dans Customer Journey Analytics. Gardez à l’esprit les différences terminologiques entre Adobe Analytics et Customer Journey Analytics (par exemple, « visites » et « sessions »).*
+Cette vidéo présente la fonctionnalité dans Adobe Analytics. Toutefois, cette fonctionnalité est également disponible dans Customer Journey Analytics. Tenez compte des différences terminologiques entre Adobe Analytics et Customer Journey Analytics (par exemple, *visites* par rapport aux *sessions*).
 
 
 ## Section de filtre de balise {#tagfiltersection}
@@ -167,7 +167,7 @@ Selon votre modèle d’attribution, le conteneur et les canaux reçoivent un cr
 
 Les événements de conversion qui comportent généralement des nombres entiers sont divisés si le crédit revient à plusieurs canaux. Par exemple, si deux canaux contribuent à un événement personnalisé à l’aide d’un modèle d’attribution linéaire, les deux canaux obtiennent 0,5 de cette commande. Ces mesures partielles sont additionnées pour toutes les personnes, puis arrondies à l’entier le plus proche à des fins de création de rapports.
 
-[!BADGE B2B edition &#x200B;]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} utilisez des conteneurs B2B spécifiques, tels que des comptes ou des opportunités, et des intervalles de recherche en amont plus appropriés (jusqu’à 13 mois) pour appliquer les modèles d’attribution ci-dessus dans des scénarios B2B standard.
+[!BADGE B2B edition ]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} utilisez des conteneurs B2B spécifiques, tels que des comptes ou des opportunités, et des intervalles de recherche en amont plus appropriés (jusqu’à 13 mois) pour appliquer les modèles d’attribution ci-dessus dans des scénarios B2B standard.
 
 ## Comparaisons des visualisations de Journey {#journey-visualization-comparisons}
 

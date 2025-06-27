@@ -1,13 +1,13 @@
 ---
 title: Panneau Temps de lecture de média
-description: Découvrez comment utiliser et interpréter le panneau Temps de lecture de média dans Analysis Workspace.
+description: Découvrez comment utiliser et interpréter le panneau Durée de lecture des médias dans Analysis Workspace.
 feature: Panels
 exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
 role: User
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
-workflow-type: ht
-source-wordcount: '1073'
-ht-degree: 100%
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+workflow-type: tm+mt
+source-wordcount: '1074'
+ht-degree: 98%
 
 ---
 
@@ -42,7 +42,7 @@ _Cet article présente le panneau Temps de lecture de média dans_ ![CustomerJou
 >[!NOTE]
 >
 >Le panneau Audience moyenne par minute de média est disponible uniquement pour les clientes et clients qui ont acheté le module complémentaire Streaming Media Collection pour Customer Journey Analytics.
->Pour plus d’informations, contactez votre représentant ou représentante du service commercial Adobe ou l’équipe Adobe en charge des comptes.
+>>Pour plus d’informations, contactez votre représentant ou représentante du service commercial Adobe ou l’équipe Adobe en charge des comptes.
 >
 
 Le panneau **[!UICONTROL Temps de lecture de média]** permet dʼanalyser la lecture au fil du temps. Il fournit également des informations détaillées sur le pic dʼaccès simultanés et la possibilité de ventiler et de comparer.
@@ -60,7 +60,7 @@ Le temps de lecture peut vous aider à comprendre les éléments suivants :
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Temps de lecture de média](https://video.tv.adobe.com/v/3446702?captions=fre_fr){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Temps de lecture de média](https://video.tv.adobe.com/v/338699){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 
@@ -129,6 +129,6 @@ La seule mesure pouvant être utilisée dans ce panneau est Durée de la lecture
 >[!MORELIKETHIS]
 >
 >[Créer un panneau](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
->[Panneau Audience moyenne par minute de média](average-minute-audience-panel.md)
->[Panneau Visiteurs et visiteuses simultanés de médias](media-concurrent-viewers.md)
+>>[Panneau Audience moyenne par minute de média](average-minute-audience-panel.md)
+>>[Panneau Visiteurs et visiteuses simultanés de médias](media-concurrent-viewers.md)
 >

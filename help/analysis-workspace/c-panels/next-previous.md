@@ -1,19 +1,17 @@
 ---
-description: Panneau qui affiche les éléments de dimension suivants ou précédents pour une dimension spécifique.
-title: Panneau Élément suivant ou précédent
+description: Découvrez comment utiliser le panneau Élément suivant ou précédent qui affiche les éléments de dimension suivants ou précédents pour une dimension spécifique.
+title: Panneau D’Élément Suivant Ou Précédent
 feature: Panels
 role: User, Admin
 exl-id: a5f6ce97-6720-4129-9ece-e2e834289d45
-source-git-commit: c94e97723a4ed30e675144e02196c93016b13235
-workflow-type: ht
-source-wordcount: '457'
-ht-degree: 100%
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+workflow-type: tm+mt
+source-wordcount: '465'
+ht-degree: 94%
 
 ---
 
 # Panneau Élément suivant ou précédent {#next-or-previous-item-panel}
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="workspace_nextorpreviousitem_button"
@@ -25,9 +23,6 @@ ht-degree: 100%
 >title="Élément suivant ou précédent"
 >abstract="Analysez les endroits les plus courants d’où viennent les visiteurs et visiteuses et ceux où ils vont ensuite. Spécifiez la dimension, l’élément de dimension, la direction et le conteneur à utiliser pour la visualisation."
 
-
-
-<!-- markdownlint-enable MD034 -->
 
 >[!BEGINSHADEBOX]
 

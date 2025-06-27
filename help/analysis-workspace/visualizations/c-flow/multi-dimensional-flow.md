@@ -1,13 +1,13 @@
 ---
-description: Dans un flux interdimensionnel, vous pouvez examiner le cheminement des utilisateurs dans plusieurs dimensions.
+description: Comprenez comment un flux interdimensionnel vous permet d’examiner les chemins d’accès des utilisateurs sur différentes dimensions.
 title: Flux interdimensionnels
 feature: Visualizations
 exl-id: 459166b1-a522-45b6-9d2c-69e3409e442e
 role: User
-source-git-commit: 1eeba4dc9de52f2890cf25794e767f199a4aa04c
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 7%
+source-wordcount: '334'
+ht-degree: 89%
 
 ---
 
@@ -23,27 +23,27 @@ A dimension label at the top of each Flow column makes using multiple dimensions
 
 ## Interactions et événements des applications mobiles
 
-La dimension [!UICONTROL Nom de l’écran] est utilisée dans cet exemple de flux pour voir comment les utilisateurs utilisent les différents écrans (scènes) dans l’application. L’écran supérieur renvoyé est **[!UICONTROL luma : content : ios : en : home]**, qui est la page d’accueil de l’application :
+La dimension [!UICONTROL Nom de l’écran] est utilisée dans cet exemple de flux pour voir comment les utilisateurs et utilisatrices utilisent les différents écrans (scènes) dans l’application. L’écran supérieur renvoyé est **[!UICONTROL luma: content: ios: en: home]**, qui est la page d’accueil de l’application :
 
 ![Flux affichant l’élément ajouté.](assets/flowapp.png)
 
-Pour explorer l’interaction entre les écrans et les types d’événement (tels que l’ajout au panier, les achats, etc.) dans cette application, effectuez un glisser-déposer de la dimension **[!UICONTROL Types d’événement]** :
+Pour explorer l’interaction entre les écrans et les types d’événement (tels que l’ajout au panier, les achats, etc.) dans cette application, effectuez un glisser-déposer de la dimension **[!UICONTROL Types d’événement]** :
 
-* En plus de toute étape disponible dans le flux, pour remplacer cette dimension :
+* En plus de toute étape disponible dans le flux, pour remplacer cette dimension, procédez comme suit :
 
-  ![Flux présentant la dimension Page glissée sur plusieurs zones.](assets/flowapp-replace.png)
+  ![Flux présentant la dimension Page placée dans plusieurs zones.](assets/flowapp-replace.png)
 
-* En dehors de la visualisation de flux actuelle, pour ajouter la dimension :
+* En dehors de la visualisation de flux actuelle, pour ajouter la dimension, procédez comme suit :
 
-  ![Flux affichant la dimension Page glissée vers l’espace blanc à la fin.](assets/flowapp-add.png)
+  ![Flux affichant la dimension Page placée dans l’espace blanc à la fin.](assets/flowapp-add.png)
 
 La visualisation de flux ci-dessous montre le résultat de l’ajout de la dimension **[!UICONTROL Types d’événement]**. La visualisation fournit des informations sur la manière dont les utilisateurs et utilisatrices d’applications mobiles se déplacent sur différents écrans de l’application avant d’ajouter des produits à un panier, de fermer l’application, de se voir présenter une offre, etc.
 
-![Un fLow affichant les résultats de la dimension Page en haut de la liste.](assets/flowapp-result.png)
+![Flux affichant les résultats de la dimension Page en haut de la liste.](assets/flowapp-result.png)
 
-## Comment les campagnes génèrent des visites web
+## Génération de visites web par les campagnes
 
-Vous souhaitez analyser les campagnes qui génèrent des visites sur le site web. Vous créez une visualisation de flux avec la dimension **[!UICONTROL Nom de la campagne]**
+Vous souhaitez analyser les campagnes qui génèrent des visites sur le site web. Vous créez une visualisation de flux avec la dimension **[!UICONTROL Nom de la campagne]**.
 
 ![Dimension du nom de la campagne web de flux](assets/flowweb.png)
 
@@ -53,4 +53,4 @@ Vous remplacez la dernière dimension **[!UICONTROL Nom de la campagne]** par la
 
 Vous pouvez pointer sur n’importe quel flux pour afficher plus de détails. Par exemple, les campagnes qui ont généré un passage en caisse du panier.
 
-![Nom de campagne web de flux et pointeur de dimension de page web](assets/flowweb-hover.png)
+![Nom de campagne web de flux et pointage sur la dimension de page web](assets/flowweb-hover.png)

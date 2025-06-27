@@ -1,15 +1,15 @@
 ---
 keywords: Analysis Workspace
 title: Vue d’ensemble d’Analysis Workspace
-description: Présentation des fonctionnalités d’Analysis Workspace
+description: Découvrez Analysis Workspace, le principal outil d’analyse d’Adobe Analytics. Utilisez des projets, des panneaux, des tableaux, des visualisations et d’autres composants pour donner vie aux données, ainsi que pour traiter et partager votre analyse.
 feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1490'
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,9 @@ Analysis Workspace vous permet de créer rapidement des analyses pour recueilli
 
 >[!BEGINSHADEBOX]
 
-Voir la vidéo de démonstration ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Vue d’ensemble d’Analysis Workspace](https://video.tv.adobe.com/v/3424559/?quality=12&learn=on&captions=fre_fr){target="_blank"}.
+Voir la vidéo de démonstration ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Vue d’ensemble d’Analysis Workspace](https://video.tv.adobe.com/v/26266/?quality=12&learn=on){target="_blank"}.
+
+{{videoaa}}
 
 >[!ENDSHADEBOX]
 
@@ -32,7 +34,7 @@ L’image suivante et le tableau qui l’accompagne présentent les principaux �
 | Emplacement | Nom et fonction |
 |:---------:|----------|
 | A | Contient le nom du projet, une structure de menus pour accéder aux fonctionnalités, un bouton ![Bouton Précédent](/help/assets/icons/ChevronLeft.svg) pour revenir à votre liste de projets et un bouton **[!UICONTROL Partager]** pour [partager votre projet Workspace](/help/analysis-workspace/curate-share/share-projects.md). <br/>Sélectionnez à tout moment le nom de votre projet (par exemple : Nouveau projet) pour le modifier. <br/>Sélectionnez ![Supprimer des favoris](/help/assets/icons/StarOutline.svg) pour ajouter votre projet aux projets favoris ![Ajouter aux favoris](/help/assets/icons/Star.svg). |
-| B | **Panneau Bouton :** contient des boutons permettant d’accéder aux [fonctionnalités](#features) clés d’Analysis Workspace :<ul><li>![WebPage](/help/assets/icons/WebPage.svg) [[!UICONTROL Panneaux]](/help/analysis-workspace/c-panels/panels.md)</li><li>![Analyse guidée](/help/assets/icons/GuidedAnalysis.svg) [[!UICONTROL Analyse guidée]](/help/guided-analysis/overview.md)</li><li>![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) [[!UICONTROL Visualisations]](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)</li><li>![Traiter](/help/assets/icons/Curate.svg) [[!UICONTROL Composants]](/help/components/overview.md)</li><li>![ViewList](/help/assets/icons/ViewList.svg) [[!UICONTROL Table des matières]](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md)</li><li>![Signet](/help/assets/icons/Bookmark.svg) [[!UICONTROL Dictionnaire de données]](/help/components/data-dictionary/data-dictionary-overview.md)</li></ul> |
+| B | **Panneau Bouton :** contient des boutons permettant d’accéder aux principales [fonctionnalités](#features) d’Analysis Workspace :<ul><li>![WebPage](/help/assets/icons/WebPage.svg) [[!UICONTROL Panneaux]](/help/analysis-workspace/c-panels/panels.md)</li><li>![Analyse guidée](/help/assets/icons/GuidedAnalysis.svg) [[!UICONTROL Analyse guidée]](/help/guided-analysis/overview.md)</li><li>![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) [[!UICONTROL Visualisations]](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)</li><li>![Traiter](/help/assets/icons/Curate.svg) [[!UICONTROL Composants]](/help/components/overview.md)</li><li>![ViewList](/help/assets/icons/ViewList.svg) [[!UICONTROL Table des matières]](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md)</li><li>![Signet](/help/assets/icons/Bookmark.svg) [[!UICONTROL Dictionnaire de données]](/help/components/data-dictionary/data-dictionary-overview.md)</li></ul> |
 | C | **Panneau de gauche :** cette zone contient des composants, des visualisations, des listes ou des panneaux individuels. Le contenu dépend du bouton sélectionné dans le panneau des boutons. |
 | D | **Zone de travail :** il s’agit de la zone principale dans laquelle vous faites glisser le contenu à partir du panneau de gauche pour créer votre projet. Le projet se met à jour de manière dynamique lorsque vous ajoutez des panneaux, des visualisations aux panneaux, et des composants aux visualisations. Vous pouvez créer plusieurs panneaux et, dans chaque panneau, créer plusieurs visualisations.<br/>Chaque panneau est basé sur une vue de données sélectionnée. La vue de données sélectionnée détermine les composants disponibles, tels que les mesures et les dimensions. Consultez [Panneaux - Vue de données](/help/analysis-workspace/c-panels/panels.md#data-view) pour plus d’informations. |
 
@@ -121,16 +123,16 @@ Consultez les tableaux ci-dessous pour une vue d’ensemble des menus disponible
 | **[!UICONTROL Planifier l’export des fichiers]** | **[!UICONTROL *maj+opt+s *]** | **[!UICONTROL *maj+alt+s *]** | [Envoyez le projet selon un calendrier défini et sous forme de fichier CSV ou PDF à d’autres destinataires](/help/analysis-workspace/curate-share/send-schedule-files.md). |
 | **[!UICONTROL Traiter les données du projet]** | **[!UICONTROL *maj+cmd+g *]** | **[!UICONTROL *maj+ctrl+g *]** | [Traiter les données du projet](/help/analysis-workspace/curate-share/curate.md). |
 
-| Aide | Raccourci Mac | Raccourci Windows | Description |
-|---|---|---|---|
-| **[!UICONTROL Vidéos]** | | | Ouvrez le canal YouTube Customer Journey Analytics dans un nouvel onglet de navigateur. |
-| **[!UICONTROL Documentation d’aide]** | | | Ouvrez la documentation (que vous êtes en train de lire...) dans un nouvel onglet de navigateur. |
-| **[!UICONTROL Forum d’aide]** | | | Ouvrez le forum des communautés Adobe Analytics Experience League dans un nouvel onglet de navigateur. |
-| **[!UICONTROL Raccourcis]** | | | Affichez une vue d’ensemble des raccourcis clavier que vous pouvez utiliser dans Workspace. |
-| **[!UICONTROL Activer le Debugger]** |  | | Activez le débogueur. Votre projet va se charger à nouveau. |
-| **[!UICONTROL Désactiver le débogueur]** | | | Désactivez le débogueur. Votre projet va se charger à nouveau. |
-| **[!UICONTROL Performances]** | | | Affichez une boîte de dialogue qui présente les mesures des **[!UICONTROL performances d’Analysis Workspace]**. Utilisez **[!UICONTROL Télécharger au format CSV]** pour télécharger un fichier CSV des mesures de performances. |
-| **[!UICONTROL À propos de Workspace]** | | | Affichez une boîte de dialogue **[!UICONTROL À propos d’Analysis Workspace]** avec des informations sur la version, les niveaux d’accès aux fonctionnalités et les indicateurs de fonctionnalités actives. |
+| Aide | Description |
+|---|---|
+| **[!UICONTROL Vidéos]** | Ouvrez le canal YouTube Customer Journey Analytics dans un nouvel onglet de navigateur. |
+| **[!UICONTROL Documentation d’aide]** | Ouvrez la documentation (que vous êtes en train de lire...) dans un nouvel onglet de navigateur. |
+| **[!UICONTROL Forum d’aide]** | Ouvrez le forum des communautés Adobe Analytics Experience League dans un nouvel onglet de navigateur. |
+| **[!UICONTROL Raccourcis]** | Affichez une vue d’ensemble des raccourcis clavier que vous pouvez utiliser dans Workspace. |
+| **[!UICONTROL Activer le Debugger]** | Activez le débogueur. Votre projet va se charger à nouveau. |
+| **[!UICONTROL Désactiver le débogueur]** | Désactivez le débogueur. Votre projet va se charger à nouveau. |
+| **[!UICONTROL Performances]** | Affichez une boîte de dialogue qui présente les mesures des **[!UICONTROL performances d’Analysis Workspace]**. Utilisez **[!UICONTROL Télécharger au format CSV]** pour télécharger un fichier CSV des mesures de performances. |
+| **[!UICONTROL À propos de Workspace]** | Affichez une boîte de dialogue **[!UICONTROL À propos d’Analysis Workspace]** avec des informations sur la version, les niveaux d’accès aux fonctionnalités et les indicateurs de fonctionnalités actives. |
 
 ## Sources de données
 

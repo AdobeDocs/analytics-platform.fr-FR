@@ -1,26 +1,26 @@
 ---
-description: Découvrez des exemples de cas d’utilisation pour l’analyse des cohortes.
+description: Découvrez quelques exemples de cas d’utilisation d’analyse des cohortes.
 keywords: Analysis Workspace
-title: Cas d’utilisation de l’analyse des cohortes
+title: Cas D’Utilisation De L’Analyse Des Cohortes
 feature: Visualizations
 exl-id: f559d4b4-b682-4306-b111-22acb26fe0a0
 role: User
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '973'
-ht-degree: 52%
+source-wordcount: '974'
+ht-degree: 51%
 
 ---
 
-# Cas d’utilisation de l’[!UICONTROL analyse des cohortes]
+# Cas d’utilisation de l’analyse des cohortes
 
-Cet article décrit quelques exemples de cas d’utilisation de l’[!UICONTROL &#x200B; Analyse des cohortes &#x200B;].
+Cet article décrit quelques exemples de cas d’utilisation pour l’analyse des cohortes.
 
 ## Cas d’utilisation d’interactions avec les applications
 
 Supposons que vous souhaitiez analyser la manière dont les utilisateurs qui installent votre application l’utilisent au fil du temps. Est-ce qu’ils l’installent mais ne l’utilisent jamais ? Est-ce qu’ils l’utilisent pendant quelque temps, puis arrêtent de le faire ? Ou est-ce qu’ils continuent à l’utiliser au fil du temps ?
 
-Vous pouvez créer une [!UICONTROL analyse des cohortes] sur six mois :
+Vous pouvez créer une analyse des cohortes sur six mois.
 
 **Granularité** : mensuelle, de janvier 2015 à juin 2015
 

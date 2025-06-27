@@ -1,13 +1,13 @@
 ---
 title: Panneau Audience moyenne par minute de média
-description: Découvrez comment utiliser et interpréter le panneau Audience moyenne par minute de média dans Analysis Workspace.
+description: Découvrez comment utiliser et interpréter le panneau d’audience moyenne par minute de média dans Analysis Workspace.
 feature: Panels
 role: User, Admin
 exl-id: c55b5534-a9a6-47f1-8b43-c8c0b8686c53
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
 workflow-type: tm+mt
-source-wordcount: '1678'
-ht-degree: 95%
+source-wordcount: '1679'
+ht-degree: 93%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 95%
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente le panneau Audience moyenne par minute de média dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_.<br/>_Consultez [panneau Audience moyenne par minute de média](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel) pour la_ version ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** de cet article._
+_Cet article présente le panneau Audience moyenne par minute de média dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_Consultez [panneau Audience moyenne par minute de média](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel) pour la_ version ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 
@@ -187,6 +187,6 @@ Le panneau Audience moyenne par minute de média utilise uniquement la mesure d�
 >[!MORELIKETHIS]
 >
 > [Créer un panneau](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
-> [Panneau Visiteurs et visiteuses simultanés de médias](media-concurrent-viewers.md)
-> [Panneau Temps de lecture de média](media-playback-time-spent.md)
+> > [Panneau Visiteurs et visiteuses simultanés de médias](media-concurrent-viewers.md)
+> > [Panneau Temps de lecture de média](media-playback-time-spent.md)
 >

@@ -1,13 +1,13 @@
 ---
-description: Découvrez les panneaux à structure libre dans Analysis Workspace.
+description: Découvrez comment utiliser des panneaux à structure libre avec un tableau à structure libre comme état de départ pour votre projet Analysis Workspace.
 title: Panneau à structure libre
 feature: Panels
 exl-id: 4e1d5d72-da59-419a-835e-a3c90f1362b4
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
-workflow-type: ht
-source-wordcount: '114'
-ht-degree: 100%
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+workflow-type: tm+mt
+source-wordcount: '127'
+ht-degree: 84%
 
 ---
 
@@ -37,6 +37,6 @@ Pour utiliser un **[!UICONTROL Panneau à structure libre]**, procédez comme su
 >[!MORELIKETHIS]
 >
 >[Créer un panneau](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
->[Utiliser des composants dans Workspace](/help/components/use-components-in-workspace.md)
->[Visualisation Tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)
+>>[Utiliser des composants dans Workspace](/help/components/use-components-in-workspace.md)
+>>[Visualisation Tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)
 >
