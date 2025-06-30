@@ -9,13 +9,12 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 20a7ae368a9480697b6c07e88b557fbea425a932
+source-git-commit: 9f55946efb0471e1b92e9fabedc2b3d3a7b713a8
 workflow-type: tm+mt
-source-wordcount: '1255'
+source-wordcount: '1252'
 ht-degree: 96%
 
 ---
-
 
 # Guide d’Adobe Customer Journey Analytics {#using}
 
@@ -48,7 +47,7 @@ ht-degree: 96%
       + [Guide de démarrage rapide](/help/getting-started/cja-b2b-quick-start-guide.md)
       + [Guide de transition](/help/getting-started/cja-b2b-transition.md)
 
-+ Customer Journey Analytics et Adobe Analytics {#compare-aa-cja}
++ Mettre à niveau et comparer {#compare-aa-cja}
    + Mettre à niveau vers Customer Journey Analytics {#upgrade-to-cja}
       + [Commencer](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md)
       + [Choisir votre chemin de mise à niveau](/help/getting-started/cja-upgrade/cja-upgrade-path.md)
@@ -98,7 +97,7 @@ ht-degree: 96%
          + [Options d’implémentation du SDK web](/help/getting-started/cja-upgrade/cja-upgrade-websdk-implementation.md)
          + [Configurer le SDK web Adobe Analytics pour Platform](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md)
          + [Utiliser la personnalisation avec Adobe Journey Optimizer](/help/getting-started/cja-upgrade/cja-upgrade-personalization-journeyoptimizer.md)
-   + Comparaison à Adobe Analytics {#cja-aa-comparison}
+   + Comparer à Adobe Analytics {#cja-aa-comparison}
       + [Vue d’ensemble](../getting-started/aa-vs-cja/overview.md)
       + [Utilisation de données Adobe Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
       + [Prise en charge des fonctionnalités](../getting-started/aa-vs-cja/cja-aa.md)
