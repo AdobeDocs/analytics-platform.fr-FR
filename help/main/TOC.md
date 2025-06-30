@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+source-git-commit: 084c995658a5cf698d253f1c15229f621a8c55d5
 workflow-type: tm+mt
-source-wordcount: '1253'
-ht-degree: 97%
+source-wordcount: '1255'
+ht-degree: 96%
 
 ---
 
@@ -169,6 +169,7 @@ ht-degree: 97%
    + [Exécuter une analyse avancée](../analysis-workspace/perform-adv-analysis.md)
    + Projets {#build-workspace-project}
       + [Vue d’ensemble](../analysis-workspace/build-workspace-project/freeform-overview.md)
+      + [Démarrage rapide de projets](/help/analysis-workspace/build-workspace-project/starter-projects.md)
       + [Créer des projets](/help/analysis-workspace/build-workspace-project/create-projects.md)
       + [Ouvrir des projets](/help/analysis-workspace/build-workspace-project/open-projects.md)
       + [Commentaires dans les projets](/help/analysis-workspace/build-workspace-project/comment-projects.md)
@@ -242,16 +243,16 @@ ht-degree: 97%
       + [Temps de lecture de média](../analysis-workspace/c-panels/media-playback-time-spent.md)
       + [Élément suivant ou précédent](../analysis-workspace/c-panels/next-previous.md)
       + [Aperçu rapide](../analysis-workspace/c-panels/quickinsight.md)
-   + Traiter, partager et planifier des projets {#curate-share}
+   + Traitement et partage {#curate-share}
       + [Vue d’ensemble](../analysis-workspace/curate-share/send-schedule-files.md)
       + [Traitement des projets](../analysis-workspace/curate-share/curate.md)
       + [Partage de projets](../analysis-workspace/curate-share/share-projects.md)
       + [Création de liens partageables](../analysis-workspace/curate-share/shareable-links.md)
       + [Projets en lecture seule](../analysis-workspace/curate-share/view-only-projects.md)
+      + [Envoyer et planifier des projets](../analysis-workspace/curate-share//t-schedule-report.md)
    + Exporter {#export}
       + [Vue d’ensemble](../analysis-workspace/export/export-project-overview.md)
       + [Télécharger](../analysis-workspace/export/download-send.md)
-      + [Envoyer à d’autres personnes](../analysis-workspace/export/t-schedule-report.md)
       + [Exporter vers le cloud](../analysis-workspace/export/export-cloud.md)
    + Détection des anomalies {#anomaly-detection}
       + [Vue d’ensemble](../analysis-workspace/c-anomaly-detection/anomaly-detection.md)

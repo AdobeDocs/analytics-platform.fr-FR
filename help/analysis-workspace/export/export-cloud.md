@@ -5,9 +5,9 @@ title: Exporter des rapports Customer Journey Analytics vers le cloud
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: 0891aa2bed446e704b0222eff992c5f5bc200f82
+source-git-commit: 70daf2251576bc3b473e63b3bb7c48f2d16dbffe
 workflow-type: tm+mt
-source-wordcount: '2340'
+source-wordcount: '2360'
 ht-degree: 95%
 
 ---
@@ -81,7 +81,7 @@ Pour exporter des tableaux complets à partir d’Analysis Workspace, procédez
    | Nom du champ | Fonction |
    |---------|----------|
    | Nom | Spécifiez le nom de l’export. Ce nom s’affiche dans la liste des exports. |
-   | Balises | Vous pouvez appliquer une balise existante à l’export ou créer une balise et l’appliquer. <p>Pour appliquer une balise existante à l’export, sélectionnez une balise dans le menu déroulant. Toutes les balises de votre société peuvent être appliquées<!-- double-check this -->.</p> <p>Pour créer une balise, saisissez son nom, puis appuyez sur Entrée.</p><p>Tenez compte des points suivants lors de l’application de balises à un export : <ul><li>Les balises que vous appliquez peuvent être filtrées ou recherchées dans le tableau des exports.</li> <li>Les balises appliquées à un projet ne sont pas automatiquement appliquées lors de l’export d’un tableau complet, comme décrit dans la section « Configurer les colonnes sur la page des exports » de la section [Gérer les exports](/help/components/exports/manage-exports.md). (Lorsque vous [planifiez un projet complet pour l’export](/help/analysis-workspace/export/t-schedule-report.md), toutes les balises appliquées au projet sont également automatiquement appliquées à l’export.) <!-- Right now we don't have a column for them on the exports table, so this isn't true. Jaden is adding the column. --></li></ul> |
+   | Balises | Vous pouvez appliquer une balise existante à l’export ou créer une balise et l’appliquer. <p>Pour appliquer une balise existante à l’export, sélectionnez une balise dans le menu déroulant. Toutes les balises de votre société peuvent être appliquées<!-- double-check this -->.</p> <p>Pour créer une balise, saisissez son nom, puis appuyez sur Entrée.</p><p>Tenez compte des points suivants lors de l’application de balises à un export : <ul><li>Les balises que vous appliquez peuvent être filtrées ou recherchées dans le tableau des exports.</li> <li>Les balises appliquées à un projet ne sont pas automatiquement appliquées lors de l’export d’un tableau complet, comme décrit dans la section « Configurer les colonnes sur la page des exports » de la section [Gérer les exports](/help/components/exports/manage-exports.md). (Lorsque vous [planifiez un projet complet pour l’export](/help/analysis-workspace/curate-share/t-schedule-report.md), toutes les balises appliquées au projet sont également automatiquement appliquées à l’export.) <!-- Right now we don't have a column for them on the exports table, so this isn't true. Jaden is adding the column. --></li></ul> |
    | Description | Ajoutez une description à l’export. Vous pouvez choisir d’afficher les descriptions sous forme d’une colonne dans la [page Exports](/help/components/exports/manage-exports.md) lors de l’affichage des exports. |
    | Vue de données | Sélectionnez la vue de données qui contient les composants que vous souhaitez inclure dans l’export. Le menu déroulant Vue des données se trouve dans le coin supérieur gauche de la boîte de dialogue et peut être identifié par l’icône de vue de données ![icône de vue de données](assets/data-view-icon.png).  <p>**Note :** si vous choisissez une vue de données à laquelle il manque des composants déjà inclus dans votre tableau de données, on vous invite à effacer le tableau de données et à le recréer à l’aide des composants inclus dans la vue de données sélectionnée. </p> |
    | Intervalle de recherche en amont | Sélectionnez la période de création de rapports à inclure dans chaque fichier d’export. Les options incluent [!UICONTROL **Aujourd’hui**], [!UICONTROL **Hier**], [!UICONTROL **Les 7 derniers jours**], [!UICONTROL **Les 30 derniers jours**], [!UICONTROL **Cette semaine**] et [!UICONTROL **Ce mois-ci**]. <p>Cette option ne s’affiche pas lorsque la variable [!UICONTROL **Fréquence d’export**] est définie sur [!UICONTROL **Envoyer maintenant (une seule fois)**]. |
@@ -129,7 +129,9 @@ L’export de données Customer Journey Analytics vers le cloud vous permet d�
 
 * Exporter les tableaux contenant plusieurs dimensions.
 
-## Exigences d’export {#export-requirements}
+## Conditions requises et fonctionnalités non prises en charge {#export-requirements}
+
+Cette section décrit les exigences minimales et les fonctionnalités non prises en charge que vous devez prendre en compte lorsque vous exportez des données.
 
 ### Configuration minimale requise
 

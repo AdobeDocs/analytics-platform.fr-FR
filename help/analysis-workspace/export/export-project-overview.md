@@ -5,16 +5,16 @@ title: Comment exporter des données de projet
 feature: Curate and Share
 exl-id: 3d467050-4bf0-4bdb-b7d2-eba67fbd526d
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
-source-wordcount: '304'
-ht-degree: 100%
+source-git-commit: 70daf2251576bc3b473e63b3bb7c48f2d16dbffe
+workflow-type: tm+mt
+source-wordcount: '297'
+ht-degree: 55%
 
 ---
 
 # Vue d’ensemble de l’export
 
-Vous pouvez exporter des rapports Customer Journey Analytics à partir d’Analysis Workspace. Vous pouvez exporter des rapports Customer Journey Analytics pour plusieurs raisons, par exemple pour les utiliser dans des outils tiers ou les combiner avec des données externes.
+Vous pouvez exporter des projets Customer Journey Analytics (ou en faire partie) à partir d’Analysis Workspace. Vous pouvez exporter des rapports Customer Journey Analytics pour plusieurs raisons, par exemple pour les utiliser dans des outils tiers ou les combiner avec des données externes.
 
 Les sections suivantes décrivent les types de fichiers pris en charge, les différentes méthodes disponibles pour l’export et les avantages de chaque méthode.
 
@@ -30,12 +30,12 @@ Vous pouvez exporter des rapports Customer Journey Analytics sous la forme d�
 
 ## Méthodes d’export
 
-Plusieurs méthodes sont disponibles lors de l’export à partir d’Analysis Workspace. Lorsque vous choisissez une méthode d’export, tenez compte de ce que vous souhaitez exporter et des personnes qui doivent y accéder.
+Plusieurs méthodes sont disponibles lorsque vous souhaitez exporter à partir d’Analysis Workspace. Lorsque vous choisissez une méthode d’exportation, tenez compte de ce que vous souhaitez exporter et des personnes qui doivent y accéder.
 
-| Méthode d’export | Avantages |
+| Méthode d’export | Utilisez cette méthode si vous souhaitez... |
 |---------|----------|
-| [Télécharger sur votre station de travail](/help/analysis-workspace/export/download-send.md) | Utilisez cette méthode si vous souhaitez effectuer ce qui suit : <ul><li>Téléchargez des projets sur votre poste de travail personnel.</li><li>Les téléchargements sont ad hoc uniquement (ne peuvent pas être planifiés).</li> <li>Téléchargez un total de 50 000 lignes.</li> <!--true? Are there 2 different options to download to your workstation?--> <!-- is this emailing it? --> |
-| [Envoyer à d’autres utilisateurs et utilisatrices](/help/analysis-workspace/export/t-schedule-report.md) | Utilisez cette méthode si vous souhaitez effectuer ce qui suit : <ul><li>Envoyez par e-mail des données Customer Journey Analytics exportées vers d’autres utilisateurs et utilisatrices de votre organisation.</li><li>Cela peut être ad hoc ou selon un planning.</li> <li>Incluez un total de 50 000 lignes.</li> <!--true?--> |
-| [Envoyer à une application cloud](/help/analysis-workspace/export/export-cloud.md) | Utilisez cette méthode si vous souhaitez effectuer ce qui suit : <ul><li>Exportez vers un emplacement partagé, tel que la Zone de destination des données Adobe Experience Platform, Google Cloud Platform, Microsoft Azure, Amazon S3 ou Snowflake.</li><li>Cela peut être ad hoc ou selon un planning.</li><li>Stockez de plus grandes quantités de données Customer Journey Analytics.</li><li>Exportez des tableaux complets contenant des milliers ou des millions de lignes.<!-- What other things? Wiki talks about things that aren't even possible in Data Warehouse. What are they? --> </li> |
+| [Télécharger sur votre station de travail](/help/analysis-workspace/export/download-send.md) | <li>Téléchargez des projets sur votre poste de travail personnel.</li><li>Télécharger uniquement les données ad hoc (non planifiées).</li> <li>Téléchargez 50 000 lignes au maximum.</li> <!--true? Are there 2 different options to download to your workstation?--> <!-- is this emailing it? --> |
+| [Envoyer à d’autres utilisateurs et utilisatrices](/help/analysis-workspace/curate-share/t-schedule-report.md) | <li>Envoyez par e-mail des données Customer Journey Analytics exportées vers d’autres utilisateurs et utilisatrices de votre organisation.</li><li>Envoyer l’e-mail ad hoc ou selon un planning.</li> <li>Inclure un maximum de 50 000 lignes dans l’e-mail.</li> <!--true?--> |
+| [Exporter vers une application cloud](/help/analysis-workspace/export/export-cloud.md) | <li>Exporter vers un emplacement cloud, tel que <ul><li>Zone d’entrée des données Adobe Experience Platform</li><li>Google Cloud Platform</li><li>Microsoft Azure</li><li>Amazon S3</li><li>Snowflake</li></ul></li><li>Exportez des données ad hoc ou selon un planning.</li><li>Stockez de plus grandes quantités de données Customer Journey Analytics.</li><li>Exportez des tableaux complets contenant des milliers ou des millions de lignes.<!-- What other things? Wiki talks about things that aren't even possible in Data Warehouse. What are they? --> </li> |
 
 {style="table-layout:auto"}

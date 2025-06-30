@@ -1,14 +1,14 @@
 ---
-description: Découvrez comment créer des liens partageables vers des projets ou des visualisations
+description: Découvrez comment créer des liens partageables vers des projets ou des visualisations.
 keywords: Partage de projets Analysis Workspace
-title: Création de liens partageables
+title: Créer des liens partageables
 exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
 feature: Curate and Share
 role: User
-source-git-commit: 9cdfa94ad04d3d1ce43e591fa9219146152862dc
+source-git-commit: 084c995658a5cf698d253f1c15229f621a8c55d5
 workflow-type: tm+mt
 source-wordcount: '369'
-ht-degree: 58%
+ht-degree: 53%
 
 ---
 

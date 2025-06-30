@@ -1,14 +1,14 @@
 ---
-description: Projets en lecture seule dans Workspace
+description: Découvrez l’expérience des projets en lecture seule dans Analysis Workspace.
 keywords: Projets en lecture seule
 title: Projets en lecture seule
 feature: Curate and Share
 exl-id: 2bc26444-aeea-4695-92a5-a2b45ac18e0d
 role: User
-source-git-commit: a462e736ddcdf1a5ea84a85eea2c2ce0b8a34fb0
+source-git-commit: 084c995658a5cf698d253f1c15229f621a8c55d5
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 37%
+source-wordcount: '303'
+ht-degree: 35%
 
 ---
 
@@ -43,10 +43,10 @@ Voici quelques-unes des interactions activées les plus intéressantes dans un p
 
 | Zone | Interactions activées |
 | --- | --- |
-| Tableaux à structure libre | <ul><li>Pagination et tri</li><li>Survol</li><li>Sélections de cellules qui mettent à jour les visualisations liées</li><li>À partir du menu contextuel > Obtenir le lien de la visualisation</li><li>À partir du menu contextuel > Copier dans le presse-papiers</li></ul> |
-| Visualisations | <ul><li>Clic pour activer/désactiver la légende</li><li>Survol</li><li>À partir du menu contextuel > Obtenir le lien de la visualisation</li><li>Réduire/Développer</li><li>Flux - développer les nœuds de flux</li><li>Carte - zoom</li></ul> |
-| Panneaux | <ul><li>Segments déroulants interactifs</li><li>À partir du menu contextuel > Obtenir le lien du panneau</li><li>Réduire/Développer</li></ul> |
-| Projet | <ul><li>Inspection de toutes les icônes d’informations</li><li>Menu Projet - Nouveau, Ouvrir, Définir comme page de destination, Actualiser, Télécharger CSV/PDF, Informations et paramètres limités du projet</li><li>Menu Partager - Obtenir le lien du projet, Envoyer le fichier maintenant</li><li>Menu Aide - Toutes les actions à l’exception des options Conseils et Débogueur</li></ul> |
+| **Tableaux à structure libre** | <li>Pagination et tri</li><li>Survol</li><li>Sélections de cellules qui mettent à jour les visualisations liées</li><li>À partir du menu contextuel > Obtenir le lien de la visualisation</li><li>À partir du menu contextuel > Copier dans le presse-papiers</li> |
+| **Visualisations** | <li>Clic pour activer/désactiver la légende</li><li>Survol</li><li>À partir du menu contextuel > Obtenir le lien de la visualisation</li><li>Réduire/Développer</li><li>Flux - développer les nœuds de flux</li><li>Carte - zoom</li></ul> |
+| **Panneaux** | <li>Segments déroulants interactifs</li><li>À partir du menu contextuel > Obtenir le lien du panneau</li><li>Réduire/Développer</li> |
+| **Projet** | <li>Inspection de toutes les icônes d’informations</li><li>Menu Projet - Nouveau, Ouvrir, Définir comme page de destination, Actualiser, Télécharger CSV/PDF, Informations et paramètres limités du projet</li><li>Menu Partager - Obtenir le lien du projet, Envoyer le fichier maintenant</li><li>Menu Aide - Toutes les actions à l’exception des options Conseils et Débogueur</li> |
 
 
 ## Partager avec tout le monde l’expérience
