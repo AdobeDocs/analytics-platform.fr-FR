@@ -4,14 +4,14 @@ title: Présentation Du Traitement Et Du Partage De Projets
 feature: Curate and Share
 exl-id: d7f92e59-18e9-43cd-8121-3c970434aaee
 role: User
-source-git-commit: 70daf2251576bc3b473e63b3bb7c48f2d16dbffe
+source-git-commit: 6cbf18496585fc973414b79b5957f918a16c0459
 workflow-type: tm+mt
-source-wordcount: '185'
+source-wordcount: '186'
 ht-degree: 52%
 
 ---
 
-# Traitement et partage de la vue d’ensemble
+# Organisation et partage de la vue d’ensemble des projets
 
 Vous pouvez traiter et partager des projets, ou envoyer des projets sous forme de fichiers PDF ou CSV aux destinataires de votre entreprise ou à une autre personne à l’aide des options disponibles dans le menu **[!UICONTROL Partager]** d’Analysis Workspace ou lorsque vous sélectionnez **[!UICONTROL Partager]** en haut à droite de l’interface.
 
