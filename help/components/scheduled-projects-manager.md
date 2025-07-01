@@ -4,7 +4,7 @@ title: Mesures
 feature: Components
 exl-id: fa7c5a0f-4983-40ee-b9c1-3e10aab3fc28
 role: User
-source-git-commit: 70daf2251576bc3b473e63b3bb7c48f2d16dbffe
+source-git-commit: c91ee21a3d4e20e3bdaeb75f2011ede6eee6cba0
 workflow-type: tm+mt
 source-wordcount: '790'
 ht-degree: 42%
@@ -44,7 +44,7 @@ Vous pouvez utiliser ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) pour
 
 Recherchez un projet planifié à l’aide de ![Rechercher](/help/assets/icons/Search.svg). Vous pouvez également voir si des filtres sont appliqués à partir du panneau Filtres . Pour supprimer un filtre, sélectionnez ![CrossSize75](/help/assets/icons/CrossSize75.svg). Pour supprimer tous les filtres, sélectionnez **[!UICONTROL Effacer tout]**.
 
-Pour modifier un projet planifié, sélectionnez le titre du projet planifié. Utilisez la boîte de dialogue **[!UICONTROL Modifier le projet planifié]** pour mettre à jour les détails du planning. Voir [Envoyer des fichiers à d’autres](../analysis-workspace/curate-share/t-schedule-report.md) pour plus d’informations.
+Pour modifier un projet planifié, sélectionnez le titre du projet planifié. Utilisez la boîte de dialogue **[!UICONTROL Modifier le projet planifié]** pour mettre à jour les détails du planning. Voir [Envoyer des fichiers à d’autres](../analysis-workspace/export/t-schedule-report.md) pour plus d’informations.
 
 ![Modifier le projet planifié](assets/edit-scheduled-project.png)
 
