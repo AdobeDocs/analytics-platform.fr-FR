@@ -7,7 +7,7 @@ feature: Release Notes
 source-git-commit: c91ee21a3d4e20e3bdaeb75f2011ede6eee6cba0
 workflow-type: tm+mt
 source-wordcount: '5261'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -19,10 +19,10 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 
 | Fonctionnalité | Description |
 | --- | --- |
-| **Juin 2025** | |
-| Nouvelles actions de raccourci | Les nouveaux raccourcis clavier d’Analysis Workspace vous permettent désormais de [déplacer les panneaux Workspace](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md#move-panel-actions) de haut en bas dans un projet. |
+| **Juin 2025** | |
+| Nouvelles actions de raccourci | Les nouveaux raccourcis clavier d’Analysis Workspace permettent désormais de [déplacer les panneaux Workspace](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md#move-panel-actions) vers le haut et vers le bas dans un projet. |
 | **Mai 2025** | |
-| Customer Journey Analytics [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Brouillon de documentation sur le B2B edition Customer Journey Analytics à venir, notamment : <ul><li>de nouveaux articles [présentation](/help/getting-started/cja-b2b-edition.md), [concepts et fonctionnalités](/help/getting-started/cja-b2b-concepts-features.md), [guide de démarrage rapide](/help/getting-started/cja-b2b-quick-start-guide.md), [guide de transition](/help/getting-started/cja-b2b-transition.md) et [cas d’utilisation](/help/use-cases/b2b/b2b-edition/use-cases-overview.md), et</li><li>de nombreuses mises à jour de la documentation existante.</li></ul>La documentation, les articles et les fonctionnalités de B2B edition du Parcours client sont étiquetés avec un badge [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}. |
+| Customer Journey Analytics [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Brouillon de documentation sur Customer Journey Analytics B2B Edition, bientôt disponible, avec notamment : <ul><li>de nouveaux articles relatifs aux [vues d’ensemble](/help/getting-started/cja-b2b-edition.md), aux [concepts et fonctionnalités](/help/getting-started/cja-b2b-concepts-features.md), aux [guides de démarrage rapide](/help/getting-started/cja-b2b-quick-start-guide.md), aux [guides de transition](/help/getting-started/cja-b2b-transition.md) et aux [cas d’utilisation](/help/use-cases/b2b/b2b-edition/use-cases-overview.md), et</li><li>de nombreuses mises à jour de la documentation existante.</li></ul>La documentation, les articles et les fonctionnalités de Customer Journey B2B Edition sont marqués avec le badge [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}. |
 | Valider le groupement | Ajout d’une documentation pour [valider](/help/stitching/validate.md) comment le groupement d’identités affecte les taux de succès de l’authentification et les performances globales d’identification de la personne. |
 | Dimension Profondeur de l’événement | Documentation pour la nouvelle dimension Profondeur de l’événement, dans le cadre des [dimensions standard](/help/components/dimensions/overview.md#standard-dimensions) d’une vue de données. |
 | **Avril 2025** | |

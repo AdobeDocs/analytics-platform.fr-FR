@@ -2,7 +2,7 @@
 source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
 source-wordcount: '4947'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 # Extraits
@@ -126,18 +126,18 @@ Un modèle d’attribution détermine les éléments de dimension crédités pou
 
 ## Conteneur d’attribution {#attribution-container}
 
-Un conteneur d’attribution définit la portée souhaitée pour l’attribution. Les options possibles sont les suivantes :
+Un conteneur d’attribution définit la portée souhaitée pour l’attribution. Les options possibles sont les suivantes :
 
 * **Session :** recherche en amont jusqu’au début d’une session au cours de laquelle une conversion s’est produite. Les intervalles de recherche en amont des sessions respectent la [délai d’expiration de session](/help/data-views/create-dataview.md#session-settings) modifiée dans une vue de données.
-* **Personne** : examine les conversions à partir de la portée du conteneur de personnes.
-* **Compte global** [!BADGE B2B edition]{type=Informative} : examine les conversions à partir de la portée du conteneur des comptes globaux.
-* **Comptes** [!BADGE B2B edition]{type=Informative} : examine les conversions à partir de l’étendue du conteneur de personnes .
-* **Opportunité** [!BADGE B2B edition]{type=Informative} : examine les conversions à partir de la portée du conteneur d’opportunités .
-* **Groupe d’achat** [!BADGE B2B edition]{type=Informative} : examine les conversions à partir de l’étendue du conteneur du groupe d’achat.
+* **Personne** : examine les conversions à partir de la portée du conteneur de personnes.
+* **Compte global** [!BADGE B2B Edition]{type=Informative} : examine les conversions à partir de la portée du conteneur de comptes globaux.
+* **Comptes** [!BADGE B2B Edition]{type=Informative} : examine les conversions à partir de la portée du conteneur de personnes.
+* **Opportunité** [!BADGE B2B Edition]{type=Informative} : examine les conversions à partir de la portée du conteneur d’opportunités.
+* **Groupe d’achat** [!BADGE B2B Edition]{type=Informative} : examine les conversions à partir de la portée du conteneur de groupes d’achat.
 
 ## Intervalle de recherche en amont des attributions {#attribution-lookback-window}
 
-Un intervalle de recherche en amont d’attribution est la durée pendant laquelle une conversion doit rechercher les points de contact inclus. Si un élément de dimension est défini en dehors de l’intervalle de recherche en amont, la valeur n’est incluse dans aucun calcul d’attribution.
+Un intervalle de recherche en amont des attributions correspond à la durée pendant laquelle une conversion doit effectuer une recherche en amont pour englober les points de contact. Si un élément de dimension est défini en dehors de l’intervalle de recherche en amont, la valeur n’est incluse dans aucun calcul d’attribution.
 
 * **14 jours** : remonte jusqu’à 14 jours en arrière à partir du moment où la conversion a eu lieu.
 * **30 jours** : remonte jusqu’à 30 jours en arrière à partir du moment où la conversion a eu lieu.
@@ -154,20 +154,20 @@ Examinez l’exemple suivant :
 1. Le 18 septembre, la personne arrive de nouveau sur votre site par le biais d’un lien sur les médias sociaux qu’une personne de son entourage lui a envoyé. Ils ajoutent plusieurs articles à leur panier, mais n’achètent rien.
 1. Le 24 septembre, votre équipe marketing leur envoie un courrier électronique contenant un bon pour certains articles de leur panier. Ils appliquent le bon, mais se rendent sur plusieurs autres sites pour voir s’il existe d’autres bons. Ils en trouvent un autre par le biais d’une annonce d’affichage, puis effectuent un achat de 50 $.
 
-Selon votre modèle d’attribution, le conteneur et les canaux reçoivent un crédit différent. Consultez le tableau ci-dessous pour obtenir des exemples :
+Selon votre modèle d’attribution, le conteneur et les canaux reçoivent un crédit différent. Voir le tableau ci-dessous pour obtenir des exemples :
 
 | Modèle | Conteneur | Intervalle de recherche en amont | Explication |
 |---|---|---|---|
 | Première touche | Session | 30 jours | L’attribution ne s’intéresse qu’à la troisième visite. Entre l’e-mail et l’affichage, l’e-mail était le premier. Dès lors, il reçoit 100 % du crédit pour l’achat de 50 $. |
-| Première touche | Personne | 30 jours | Attribution examine les trois visites. Le référencement payant a été le premier. Il obtient donc un crédit de 100 % pour l’achat de 50 $. |
+| Première touche | Personne | 30 jours | L’attribution examine les trois visites. Le référencement payant a été le premier. Il obtient donc un crédit de 100 % pour l’achat de 50 $. |
 | Linéaire | Session | 30 jours | Le crédit est divisé entre l’e-mail et l’affichage. Ces deux canaux reçoivent chacun un crédit de 25 $. |
-| Linéaire | Personne | 30 jours | Le crédit est divisé entre le référencement payant, les réseaux sociaux, les e-mails et l’affichage. Chaque canal reçoit un crédit pour 12,50 $ pour cet achat. |
-| en forme de J | Personne | 30 jours | Le crédit est divisé entre le référencement payant, les réseaux sociaux, les e-mails et l’affichage.<ul><li>Un crédit de 60 % est accordé à l’affichage, pour un montant de 30 $.</li><li>Un crédit de 20 % est accordé au référencement payant, pour un montant de 10 $.</li><li>Les 20 % restants sont répartis entre les réseaux sociaux et le courrier électronique, soit 5 $ à chacun.</li></ul> |
+| Linéaire | Personne | 30 jours | Le crédit est divisé entre le référencement payant, les réseaux sociaux, les e-mails et l’affichage. Chaque canal reçoit un crédit de 12,50 $ pour cet achat. |
+| En forme de J | Personne | 30 jours | Le crédit est divisé entre le référencement payant, les réseaux sociaux, les e-mails et l’affichage.<ul><li>Un crédit de 60 % est accordé à l’affichage, pour un montant de 30 $.</li><li>Un crédit de 20 % est accordé au référencement payant, pour un montant de 10 $.</li><li>Les 20 % restants sont répartis entre les réseaux sociaux et le courrier électronique, soit 5 $ à chacun.</li></ul> |
 | Atténuation temporelle | Personne | 30 jours | <ul><li>Intervalle de zéro jour entre le point de contact de l’affichage et la conversion. `2^(-0/7) = 1`</li><li>Intervalle de zéro jour entre le point de contact de l’e-mail et la conversion. `2^(-0/7) = 1`</li><li>Intervalle de six jours entre le point de contact de réseaux sociaux et la conversion. `2^(-6/7) = 0.552`</li><li>Intervalle de neuf jours entre le point de contact du référencement payant et la conversion. `2^(-9/7) = 0.41`</li>La normalisation de ces valeurs entraîne les résultats suivants :<ul><li>Affichage : 33,8 %, gain de 16,88 $</li><li>Courrier électronique : 33,8 %, gain de 16,88 $</li><li>Réseaux sociaux : 18,6 %, gain de 9,32 $</li><li>Référencement payant : 13,8 %, gain de 6,92 $</li></ul></li></ul> |
 
 Les événements de conversion qui comportent généralement des nombres entiers sont divisés si le crédit revient à plusieurs canaux. Par exemple, si deux canaux contribuent à un événement personnalisé à l’aide d’un modèle d’attribution linéaire, les deux canaux obtiennent 0,5 de cette commande. Ces mesures partielles sont additionnées pour toutes les personnes, puis arrondies à l’entier le plus proche à des fins de création de rapports.
 
-[!BADGE B2B edition &#x200B;]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} utilisez des conteneurs B2B spécifiques, tels que des comptes ou des opportunités, et des intervalles de recherche en amont plus appropriés (jusqu’à 13 mois) pour appliquer les modèles d’attribution ci-dessus dans des scénarios B2B standard.
+[!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} Utilisez des conteneurs B2B spécifiques, tels que des comptes ou des opportunités, et des intervalles de recherche en amont plus appropriés (jusqu’à 13 mois) pour appliquer les modèles d’attribution ci-dessus dans des scénarios B2B standard.
 
 ## Comparaisons des visualisations de Journey {#journey-visualization-comparisons}
 
@@ -236,7 +236,7 @@ Utilisez les informations suivantes pour choisir la visualisation qui répond le
 | Paramètre | Description |
 |---|---|
 | **[!UICONTROL Importer de nouvelles données]** | Activez cette option si vous souhaitez établir une connexion continue. Avec une connexion continue, les nouveaux lots de données ajoutés aux jeux de données sont automatiquement disponibles dans Workspace. |
-| **[!UICONTROL Renvoi du jeu de données]** | Activez **[!UICONTROL Renvoyer toutes les données existantes]** pour vous assurer que toutes les données existantes sont renvoyées.<br/><br/>Sélectionnez **[!UICONTROL Renvoi de la demande]** pour renvoyer des données historiques pour une période spécifique. Vous pouvez définir jusqu’à 10 périodes de renvoi de jeux de données.<ol><li>Définissez la période en saisissant les données de début et de fin ou en sélectionnant des dates à l’aide du ![Calendrier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg).</li><li>Sélectionnez **[!UICONTROL Renvoi de la file dʼattente]** pour ajouter le renvoi à la liste, ou bien **[!UICONTROL Annuler]** pour annuler.</li></ol>Pour chaque entrée, sélectionnez ![Modifier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) pour modifier la période, ou sélectionnez ![Supprimer](https://spectrum.adobe.com/static/icons/ui_18/CrossSize500.svg) pour supprimer l’entrée.<br/><br/>À propos des renvois :<ul><li>Vous pouvez renvoyer chaque jeu de données individuellement.</li><li>Vous donnez la priorité aux nouvelles données ajoutées à un jeu de données dans la connexion, de sorte que ces nouvelles données ont la latence la plus faible.</li><li>Les données de renvoi (historiques) sont importées plus lentement. La quantité de données historiques influence la latence.</li><li>Le connecteur source Analytics importe jusquʼà 13 mois de données pour les sandbox de production, et ce quelle que soit leur taille. Le renvoi dans les sanbox hors production est limité à 3 mois.</li><li>Pour les sandbox de production, si vous disposez d’une licence pour le SKU supplémentaire qui vous autorise à importer plus de 13 mois de données de renvoi historiques, contactez Adobe pour demander le renvoi étendu.</li></ul> |
+| **[!UICONTROL Renvoi du jeu de données]** | Activez **[!UICONTROL Renvoyer toutes les données existantes]** pour vous assurer que toutes les données existantes sont renvoyées.<br/><br/>Sélectionnez **[!UICONTROL Renvoi de la demande]** pour renvoyer des données historiques pour une période spécifique. Vous pouvez définir jusqu’à 10 périodes de renvoi de jeux de données.<ol><li>Définissez la période en saisissant les données de début et de fin ou en sélectionnant des dates à l’aide du ![Calendrier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg).</li><li>Sélectionnez **[!UICONTROL Renvoi de la file dʼattente]** pour ajouter le renvoi à la liste, ou bien **[!UICONTROL Annuler]** pour annuler.</li></ol>Pour chaque entrée, sélectionnez ![Modifier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) pour modifier la période, ou sélectionnez ![Supprimer](https://spectrum.adobe.com/static/icons/ui_18/CrossSize500.svg) pour supprimer l’entrée.<br/><br/>À propos des renvois :<ul><li>Vous pouvez renvoyer chaque jeu de données individuellement.</li><li>Vous donnez la priorité aux nouvelles données ajoutées à un jeu de données dans la connexion, de sorte que ces nouvelles données ont la latence la plus faible.</li><li>Les données de renvoi (historiques) sont importées plus lentement. La quantité de données historiques influence la latence.</li><li>Le connecteur source Analytics importe jusquʼà 13 mois de données pour les sandbox de production, et ce quelle que soit leur taille. Le renvoi dans les sanbox hors production est limité à 3 mois.</li><li>Pour les sandbox de production, si vous disposez d’une licence pour le SKU supplémentaire qui vous autorise à importer plus de 13 mois de données de renvoi historiques, contactez Adobe pour demander le renvoi étendu.</li></ul> |
 | **[!UICONTROL Statut du lot]** | Les indicateurs de statut possibles sont les suivants :<ul><li>Réussite</li><li>Traitement de X renvoi(s)</li><li>Off</li></ul> |
 | **[!UICONTROL Identifiant du jeu de données]** | Cet identifiant est généré automatiquement. |
 | **[!UICONTROL Description]** | Description donnée à ce jeu de données lors de sa création. |

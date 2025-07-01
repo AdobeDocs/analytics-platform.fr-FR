@@ -12,7 +12,7 @@ breadcrumb-title: Guide de Customer Journey Analytics
 source-git-commit: a3442e4cbb949228213a606b87ff65c8c562895b
 workflow-type: tm+mt
 source-wordcount: '1251'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -21,8 +21,8 @@ ht-degree: 96%
 + [Guide d’Adobe Customer Journey Analytics](../getting-started/cja-landing.md)
 
 + Notes de mise à jour {#releases}
-   + [Dernière version de Customer Journey Analytics](../release-notes/latest.md)
-   + [Notes de mise à jour préliminaires de Customer Journey Analytics](../release-notes/pre-release-notes.md)
+   + [Dernière mise à jour de Customer Journey Analytics](../release-notes/latest.md)
+   + [Notes de version préliminaire de Customer Journey Analytics](../release-notes/pre-release-notes.md)
    + [Versions de 2025](../release-notes/2025.md)
    + [Versions de 2024](../release-notes/2024.md)
    + [Versions de 2023](../release-notes/2023.md)
@@ -398,9 +398,9 @@ ht-degree: 96%
    + [Utiliser des segments](../report-builder/work-with-filters.md)
    + [Filtrer des dimensions](../report-builder/filter-dimensions.md)
    + [Gérer les blocs de données](../report-builder/manage-reportbuilder.md)
-   + [Planifier des classeurs pour l’e-mail](../report-builder/schedule-reportbuilder.md)
-   + [Planification de classeurs pour les exportations cloud](../report-builder/report-builder-export.md)
-   + [Gérer les plannings de classeur](/help/report-builder/manage-schedules-reportbuilder.md)
+   + [Planifier des classeurs pour les e-mails](../report-builder/schedule-reportbuilder.md)
+   + [Planifier des classeurs pour les exports cloud](../report-builder/report-builder-export.md)
+   + [Gérer les plannings de classeurs](/help/report-builder/manage-schedules-reportbuilder.md)
    + [Libellés restreints](../report-builder/restricted-labels.md)
    + [Paramètres de Report Builder](../report-builder/report-builder-settings.md)
 
