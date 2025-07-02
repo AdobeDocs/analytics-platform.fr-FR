@@ -1,17 +1,17 @@
 ---
+description: Utilisez le calendrier et les périodes pour spécifier des périodes dans Analysis Workspace.
 title: Présentation des périodes
-description: Découvrez les périodes et comment les utiliser dans le compte rendu des performances.
 feature: Calendar
 exl-id: 99b31bd9-32f1-4da1-9e47-6d90c66282c5
 role: User
-source-git-commit: 747e77b964006404d70b500b28ec44005d65d944
-workflow-type: ht
+source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
+workflow-type: tm+mt
 source-wordcount: '532'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
-# Présentation des périodes
+# Vue d’ensemble des périodes
 
 Dans un projet Workspace, vous utilisez généralement le [calendrier dans un panneau](/help/analysis-workspace/c-panels/panels.md#calendar) pour spécifier la période des visualisations dans ce panneau.
 
@@ -21,7 +21,7 @@ Les composants de période vous permettent de définir et de remplacer les param
 
 +++ View a video illustrating use of calendar and date ranges
 
->[!VIDEO](https://video.tv.adobe.com/v/327346?format=jpeg&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/24136?format=jpeg)
 
 {{videoaa}}
 +++

@@ -1,13 +1,13 @@
 ---
 title: Création d’annotations
-description: Comment créer des annotations dans l’espace de travail.
+description: Création d’annotations dans Analysis Workspace.
 feature: Components
 exl-id: 68fef9b3-dc47-4e56-bea6-d1c4c39fb51b
 role: User, Admin
-source-git-commit: 21935a0e9e976cd680fb036bb47f4248aaa66890
+source-git-commit: f3c9a000ae5baa19cb5a6cf0e0343de3a9685b56
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 98%
+source-wordcount: '874'
+ht-degree: 86%
 
 ---
 
@@ -41,7 +41,7 @@ Pour définir l’annotation, vous utilisez le [[!UICONTROL créateur d’annota
 >[!CONTEXTUALHELP]
 >id="components_annotations_details"
 >title="Détails des annotations"
->abstract="Les annotations vous permettent de communiquer efficacement à votre organisation les nuances et informations concernant les données contextuelles. Elles vous permettent de lier des événements de calendrier à des dimensions/mesures spécifiques."
+>abstract="Les annotations vous permettent de communiquer efficacement à votre organisation les nuances et informations concernant les données contextuelles. Les annotations vous permettent de lier des événements de calendrier à des dimensions et mesures spécifiques."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -50,7 +50,7 @@ Pour définir l’annotation, vous utilisez le [[!UICONTROL créateur d’annota
 >[!CONTEXTUALHELP]
 >id="components_annotations_scope"
 >title="Portée"
->abstract="La portée vous permet de spécifier les données qui seront annotées. Les mesures calculées et les segments n’hériteront pas automatiquement des annotations appliquées aux composants utilisés dans leurs définitions. Vous pouvez ajouter de nouvelles mesures calculées à la section Portée d’une annotation existante. Les nouveaux segments nécessitent une nouvelle annotation."
+>abstract="La portée vous permet de personnaliser les données annotées. Les segments et mesures calculées n’héritent pas automatiquement des annotations appliquées aux composants utilisés dans leurs définitions. Vous pouvez ajouter de nouvelles mesures calculées à la section Portée d’une annotation existante. Les nouveaux segments nécessitent une nouvelle annotation."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -62,11 +62,11 @@ La boîte de dialogue du **[!UICONTROL Créateur d’annotations]** permet de cr
 
 >[!TAB Créateur d’annotations]
 
-![Fenêtre de détails des annotations présentant les champs et options décrits dans la section suivante.](assets/annotation-builder.png)
+![Fenêtre de détails des annotations présentant les champs et options décrits dans la section suivante.](assets/annotation-builder.png){zoomable="yes"}
 
->[!TAB Création/modification d’une annotation]
+>[!TAB  Modifier l’annotation ]
 
-![Fenêtre de détails des annotations présentant les champs et options décrits dans la section suivante.](assets/create-edit-annotation.png)
+![Fenêtre de détails des annotations présentant les champs et options décrits dans la section suivante.](assets/create-edit-annotation.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -79,9 +79,9 @@ La boîte de dialogue du **[!UICONTROL Créateur d’annotations]** permet de cr
    | **[!UICONTROL Titre]** ![Requis](/help/assets/icons/Required.svg) | Nommez l’annotation, par exemple `Needs further investigation`. |
    | **[!UICONTROL Description]** | Fournissez une description de l’annotation, par exemple, `We never expected such a fluctuation in numbers.`. |
    | **[!UICONTROL Étiquettes]** | Organisez l’annotation en créant ou en appliquant une ou plusieurs étiquettes. Commencez à saisir du texte pour rechercher les étiquettes existantes que vous pouvez sélectionner. Ou appuyez sur **[!UICONTROL Entrée]** pour ajouter une nouvelle étiquette. Sélectionnez ![CrossSize75](/help/assets/icons/CrossSize75.svg) pour supprimer une étiquette. |
-   | **[!UICONTROL Date appliquée]** ![Requis](/help/assets/icons/Required.svg) | Sélectionnez la date ou la période qui doit être indiquée pour que l’annotation soit visible. Lorsque vous créez une annotation à l’aide du raccourci, celle-ci correspond par défaut à la période de la journée en cours. Lorsque vous créez une annotation à l’aide d’une sélection dans une visualisation, l’annotation correspond par défaut à la période basée sur la période du panneau auquel appartient la visualisation. |
+   | **[!UICONTROL Date appliquée]** ![Requis](/help/assets/icons/Required.svg) | Sélectionnez la date ou la période qui doit être indiquée pour que l’annotation soit visible. Lorsque vous créez une annotation à l’aide du raccourci, celle-ci correspond par défaut à la période de la journée en cours. Lorsque vous créez une annotation à l’aide d’une sélection dans une visualisation, l’annotation utilise par défaut la période basée sur la période du panneau auquel la visualisation appartient. |
    | **[!UICONTROL Couleur]** | Appliquez une couleur à l’annotation. L’annotation apparaît dans le projet avec la couleur sélectionnée. Vous pouvez utiliser la couleur pour classer les annotations comme les jours fériés, les événements externes, les problèmes de suivi, etc. |
-   | **[!UICONTROL Portée]** | Glissez-déposez les mesures à partir du panneau de composant qui déclenche l’annotation. Par exemple Personnes, Sessions et Événements. Glissez-déposez ensuite les dimensions ou les segments du panneau de composant qui servent alors de segments pour déterminer s’il faut afficher ou non l’annotation. Si vous n’indiquez pas de portée, l’annotation s’applique à toutes vos données. <br/>Vous disposez de deux options :<ul><li>**[!UICONTROL L’une de ces mesures est présente]** : glissez-déposez jusqu’à 10 mesures qui déclenchent l’affichage de l’annotation.<br/>Par exemple, la mesure Chiffre d’affaires a cessé de collecter des données pour une période spécifique. Faites glisser la mesure Chiffre d’affaires dans cette zone.</li><li>**[!UICONTROL Avec tous ces segments]** : faites glisser et déposez jusqu’à 10 dimensions ou segments pour définir si l’annotation s’affiche ou non.</li></ul><p><p>**Remarque :** toute annotation appliquée à un composant qui est ensuite utilisé dans le cadre d’une mesure calculée ou d’une définition de segment n’est pas héritée dans ces derniers. La mesure calculée souhaitée doit également être ajoutée à la section de la portée pour afficher l’annotation. Toutefois, une nouvelle annotation doit être créée pour tout segment que vous souhaitez annoter avec les mêmes informations. Exemple : vous appliquez une annotation à [!UICONTROL Commandes] un jour spécifique. Vous pouvez ensuite utiliser [!UICONTROL Commandes] dans une mesure calculée pour la même période. La nouvelle mesure calculée n’affiche pas automatiquement l’annotation pour les commandes. Ajoutez également la mesure calculée à la section Portée pour que l’annotation s’affiche. |
+   | **[!UICONTROL Portée]** | Glissez-déposez les mesures à partir du panneau de composant qui déclenche l’annotation. Par exemple, les utilisateurs, les sessions et les événements. Glissez-déposez ensuite les dimensions ou les segments du panneau de composant qui servent alors de segments pour déterminer s’il faut afficher ou non l’annotation. Si vous n’indiquez pas de portée, l’annotation s’applique à toutes vos données. <br/>Vous disposez de deux options :<ul><li>**[!UICONTROL L’une de ces mesures est présente]** : glissez-déposez jusqu’à 10 mesures qui déclenchent l’affichage de l’annotation.<br/>Par exemple, la mesure Revenu a cessé de collecter des données pour une période spécifique. Faites glisser la mesure Chiffre d’affaires dans cette zone.</li><li>**[!UICONTROL Avec tous ces segments]** : faites glisser et déposez jusqu’à 10 dimensions ou segments pour définir si l’annotation s’affiche ou non.</li></ul><p><p>**Remarque :** toute annotation appliquée à un composant qui est ensuite utilisé dans le cadre d’une mesure calculée ou d’une définition de segment n’est pas héritée dans ces derniers. La mesure calculée souhaitée doit également être ajoutée à la section de la portée pour afficher l’annotation. Toutefois, une nouvelle annotation doit être créée pour tout segment que vous souhaitez annoter avec les mêmes informations. Exemple : vous appliquez une annotation à [!UICONTROL Commandes] un jour spécifique. Vous pouvez ensuite utiliser [!UICONTROL Commandes] dans une mesure calculée pour la même période. La nouvelle mesure calculée n’affiche pas automatiquement l’annotation pour les commandes. Ajoutez également la mesure calculée à la section Portée pour que l’annotation s’affiche. |
    | **[!UICONTROL Appliquer à toutes les vues de données]** | Par défaut, l’annotation s’applique à la vue de données d’origine. En cochant cette case, vous pouvez faire en sorte que l’annotation s’applique à toutes les vues de données de l’entreprise. |
 
    {style="table-layout:auto"}

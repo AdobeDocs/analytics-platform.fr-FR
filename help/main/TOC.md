@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: a3442e4cbb949228213a606b87ff65c8c562895b
+source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
 workflow-type: tm+mt
-source-wordcount: '1251'
-ht-degree: 98%
+source-wordcount: '1248'
+ht-degree: 97%
 
 ---
 
@@ -172,7 +172,7 @@ ht-degree: 98%
       + [Créer des projets](/help/analysis-workspace/build-workspace-project/create-projects.md)
       + [Ouvrir des projets](/help/analysis-workspace/build-workspace-project/open-projects.md)
       + [Commentaires dans les projets](/help/analysis-workspace/build-workspace-project/comment-projects.md)
-      + [Enregistrement des projets](../analysis-workspace/build-workspace-project/save-projects.md)
+      + [Enregistrer des projets](../analysis-workspace/build-workspace-project/save-projects.md)
       + [Table des matières](../analysis-workspace/build-workspace-project/project-table-of-contents.md)
       + Dossiers dans Workspace {#workspace-folders}
          + [Vue d’ensemble](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
@@ -248,10 +248,10 @@ ht-degree: 98%
       + [Partage de projets](../analysis-workspace/curate-share/share-projects.md)
       + [Création de liens partageables](../analysis-workspace/curate-share/shareable-links.md)
       + [Projets en lecture seule](../analysis-workspace/curate-share/view-only-projects.md)
-      + [Envoyer et planifier](../analysis-workspace/export/t-schedule-report.md)
    + Exporter {#export}
       + [Vue d’ensemble](../analysis-workspace/export/export-project-overview.md)
       + [Télécharger](../analysis-workspace/export/download-send.md)
+      + [Envoyer et planifier](../analysis-workspace/export/t-schedule-report.md)
       + [Exporter vers le cloud](../analysis-workspace/export/export-cloud.md)
    + Détection des anomalies {#anomaly-detection}
       + [Vue d’ensemble](../analysis-workspace/c-anomaly-detection/anomaly-detection.md)
@@ -264,7 +264,8 @@ ht-degree: 98%
    + [Préférences de l’utilisateur ou de l’utilisatrice](../analysis-workspace/user-preferences.md)
    + Questions fréquentes sur Workspace et plus {#workspace-faq}
       + [Questions fréquentes](../analysis-workspace/workspace-faq/faq.md)
-      + [Messages d’erreur](../analysis-workspace/workspace-faq/error-messages.md)
+      + [Optimiser les performances](../analysis-workspace/workspace-faq/optimizing-performance.md)
+      + [Erreur et dépannage](../analysis-workspace/workspace-faq/error-messages.md)
       + [Limites](../analysis-workspace/workspace-faq/aw-limitations.md)
       + [Exigences pour l’administration](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
       + [Accessibilité](../analysis-workspace/workspace-faq/aw-accessibility.md)
@@ -306,21 +307,20 @@ ht-degree: 98%
 
 + Composants {#cja-components}
    + [Vue d’ensemble](../components/overview.md)
-   + [Utiliser des composants dans Analysis Workspace](../components/use-components-in-workspace.md)
+   + [Utiliser les composants](../components/use-components-in-workspace.md)
    + [Ajouter des descriptions des composants](../components/add-component-descriptions.md)
    + Annotations {#annotations}
-      + [Vue d’ensemble des annotations](../components/annotations/overview.md)
+      + [Vue d’ensemble](../components/annotations/overview.md)
       + [Création d’annotations](../components/annotations/create-annotations.md)
       + [Gestion des annotations](../components/annotations/manage-annotations.md)
       + [Affichage des annotations](../components/annotations/view-annotations.md)
-      + [Annotations mobiles](../components/annotations/mobile-annotations.md)
-   + [Projets planifiés](../components/scheduled-projects-manager.md)
+      + [Annotations des cartes de performance mobiles](../components/annotations/mobile-annotations.md)
    + Audiences {#audiences}
       + [Présentation des audiences](../components/audiences/audiences-overview.md)
       + [Créer et publier des audiences](../components/audiences/publish.md)
       + [Gérer des audiences](../components/audiences/manage.md)
    + Dimensions {#dimensions}
-      + [Vue d’ensemble des dimensions](../components/dimensions/overview.md)
+      + [Vue d’ensemble](../components/dimensions/overview.md)
       + [Aperçu des dimensions](../components/dimensions/view-dimensions.md)
       + [Ventilation des dimensions](../components/dimensions/t-breakdown-fa.md)
       + [Dimensions de répartition du temps](../components/dimensions/time-parting-dimensions.md)
@@ -343,7 +343,7 @@ ht-degree: 98%
       + [Utiliser les segments](/help/components/segments/seg-use.md)
    + Mesures calculées {#cja-calcmetrics}
       + [Vue d’ensemble](../components/calc-metrics/calc-metr-overview.md)
-      + Workflow des mesures calculées {#cm-workflow}
+      + Processus {#cm-workflow}
          + [Création de mesures calculées](../components/calc-metrics/cm-workflow/cm-workflow.md)
          + [Créer des mesures calculées](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
          + [Recherche de mesures](../components/calc-metrics/cm-workflow/cm-finding.md)
@@ -387,6 +387,7 @@ ht-degree: 98%
       + [Afficher des informations sur les composants dans le dictionnaire de données](../components/data-dictionary/view-data-dictionary.md)
       + [Modifier les entrées de composant dans le dictionnaire de données](../components/data-dictionary/edit-entries-data-dictionary.md)
       + [Surveiller l’intégrité du dictionnaire de données](../components/data-dictionary/monitor-data-dictionary-health.md)
+   + [Projets planifiés](../components/scheduled-projects-manager.md)
 
 + Report Builder {#cja-reportbuilder}
    + [Vue d’ensemble](../report-builder/rb-overview.md)

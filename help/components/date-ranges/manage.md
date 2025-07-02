@@ -1,100 +1,100 @@
 ---
-title: Gestion des périodes
-description: Partagez, renommez ou supprimez des périodes dans Analysis Workspace.
+title: Gérer les plages de dates
+description: Découvrez comment gérer les périodes dans Analysis Workspace.
 feature: Calendar
 exl-id: 694758c4-d740-4fd7-9fb0-3ff7f6b25a3d
 role: User
-source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
+source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
 workflow-type: tm+mt
-source-wordcount: '607'
-ht-degree: 12%
+source-wordcount: '603'
+ht-degree: 30%
 
 ---
 
 # Gestion des périodes
 
 
-Vous pouvez partager, filtrer, baliser, approuver, copier, partager et supprimer des plages de dates et marquer des plages de dates comme favorites depuis une interface de gestion [!UICONTROL &#x200B; centrale des plages de dates]. Pour gérer les plages de dates :
+Vous pouvez partager, filtrer, baliser, approuver, copier, partager et supprimer des périodes et les marquer comme favorites à partir d’une interface de gestion centrale [!UICONTROL périodes]. Pour gérer les périodes :
 
-* Sélectionnez **[!UICONTROL Composants]** dans l’interface principale, puis **[!UICONTROL Plages de dates]**.
+* Sélectionnez **[!UICONTROL Composants]** dans l’interface principale, puis sélectionnez **[!UICONTROL Périodes]**.
 
 
-## Gestionnaire de plages de dates
+## Gestionnaire des périodes
 
-Le gestionnaire de plages de dates comprend les éléments d’interface suivants :
+Le gestionnaire de périodes comporte les éléments d’interface suivants :
 
-![Interface des plages de dates](assets/date-ranges-manager.png)
+![ Interface des périodes ](assets/date-ranges-manager.png)
 
-### Liste des plages de dates
+### Liste des périodes
 
-La liste des plages de dates affiche toutes les plages de dates. La liste contient les colonnes suivantes :
+La liste des périodes affiche ➊ toutes les périodes. La liste comporte les colonnes suivantes :
 
 | Colonne | Description |
 | --- | --- | 
-| ![StarOutline](/help/assets/icons/StarOutline.svg) | Sélectionnez pour favoriser ![Star](/help/assets/icons/Star.svg) ou pour annuler ![StarOutline](/help/assets/icons/StarOutline.svg) une période. |
-| **[!UICONTROL Titre et description]** | Pour modifier le titre et la description, sélectionnez le lien du titre, qui ouvre le [créateur de plages de dates](/help/components/date-ranges/create.md#date-range-builder). |
+| ![Contour en forme d’étoile](/help/assets/icons/StarOutline.svg) | Sélectionnez pour privilégier ![Étoile](/help/assets/icons/Star.svg) ou ne pas privilégier ![ÉtoileContour](/help/assets/icons/StarOutline.svg) une période. |
+| **[!UICONTROL Titre et description]** | Pour modifier le titre et la description, sélectionnez le lien du titre, qui ouvre le [créateur de périodes](/help/components/date-ranges/create.md#date-range-builder). |
 | **[!UICONTROL Propriétaire]** | Propriétaire de la période. |
-| **[!UICONTROL Balises]** | Les balises pour cette période. |
-| **[!UICONTROL Partagé avec]** | Les individus ou les groupes avec lesquels vous avez partagé la période. Sélectionnez cette option pour ouvrir la boîte de dialogue **[!UICONTROL Partager la plage de dates]**. |
+| **[!UICONTROL Balises]** | Balises pour cette période. |
+| **[!UICONTROL Partagé avec]** | Individus ou groupes avec lesquels vous avez partagé la période. Sélectionnez pour ouvrir la boîte de dialogue **[!UICONTROL Partager la période]**. |
 | **[!UICONTROL Date de modification]** | Affiche la date et l’heure de la dernière modification de la période. |
 
 {style="table-layout:auto"}
 
-Utilisez ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) pour spécifier les colonnes à afficher.
+Utilisez ![Paramètres de colonne](/help/assets/icons/ColumnSetting.svg) pour spécifier les colonnes à afficher.
 
 ### Barre d’actions
 
-Vous pouvez agir sur les plages de dates à l’aide de la barre d’actions. La barre d’actions contient les actions suivantes :
+Vous pouvez agir sur les périodes à l’aide de la barre d’actions ➋. La barre d’actions contient les actions suivantes :
 
 | Icône | Action | Description |
 |:---:|---|---|
-| ![AddCircle](/help/assets/icons/AddCircle.svg) | **[!UICONTROL Ajouter]** | Ajoutez une autre plage de dates à l’aide du [créateur de plages de dates](create.md#date-range-builder). |
-| ![Recherche](/help/assets/icons/Search.svg) | [!UICONTROL *Recherche par titre*] | Lorsqu’aucune période n’est sélectionnée dans la liste, recherchez des périodes à l’aide de ce champ de recherche. |
-| ![Maison de disques](/help/assets/icons/Label.svg) | **[!UICONTROL Balise]** | Balisez les plages de dates sélectionnées. Dans la boîte de dialogue **[!UICONTROL Baliser la plage de dates]**, sélectionnez ou désélectionnez les balises pour les plages de dates sélectionnées. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les balises pour les périodes sélectionnées. |
-| ![Partager](/help/assets/icons/ShareAlt.svg) | **[!UICONTROL Partager]** | Partagez les périodes sélectionnées. Dans la boîte de dialogue **[!UICONTROL Partager la plage de dates]**, vous pouvez ![Rechercher](/help/assets/icons/Search.svg) *Rechercher des individus ou des groupes* ou sélectionner **[!UICONTROL Organisation]** ou **[!UICONTROL Groupes]**. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les détails du partage pour les périodes sélectionnées. |
-| ![Supprimer](/help/assets/icons/Delete.svg) | **[!UICONTROL Supprimer]** | Supprimer les périodes sélectionnées. Vous êtes invité à faire une confirmation. |
-| ![Modifier](/help/assets/icons/Edit.svg) | **[!UICONTROL Renommer]** | Renommez une seule période sélectionnée. Lorsque cette option est sélectionnée, vous pouvez renommer la période intégrée. |
-| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL Approuver]** | Approuvez les périodes sélectionnées. |
-| ![Copier](/help/assets/icons/Copy.svg) | **[!UICONTROL Copier]** | Copiez les périodes sélectionnées. De nouvelles plages de dates sont créées avec le même nom et le même suffixe (Copier). |
-| ![FileCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL Exporter dans un fichier CSV]** | Exportez les plages de dates sélectionnées vers un fichier `Date ranges List.csv`. |
+| ![Cercle d’ajout](/help/assets/icons/AddCircle.svg) | **[!UICONTROL Ajouter]** | Ajoutez une autre période à l’aide du [créateur de périodes](create.md#date-range-builder). |
+| ![Recherche](/help/assets/icons/Search.svg) | [!UICONTROL *Rechercher par titre*] | Lorsqu’aucune période n’est sélectionnée dans la liste, recherchez des périodes à l’aide de ce champ de recherche. |
+| ![Libellé](/help/assets/icons/Label.svg) | **[!UICONTROL Étiquette]** | Balisez les périodes sélectionnées. Dans la boîte de dialogue **[!UICONTROL Période de balise]**, sélectionnez ou désélectionnez les balises des périodes sélectionnées. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les balises des périodes sélectionnées. |
+| ![Partager](/help/assets/icons/ShareAlt.svg) | **[!UICONTROL Partager]** | Partagez les périodes sélectionnées. Dans la boîte de dialogue **[!UICONTROL Partager la période]**, vous pouvez ![Rechercher](/help/assets/icons/Search.svg) *Rechercher des individus ou des groupes* ou sélectionner **[!UICONTROL Organisation]** ou **[!UICONTROL Groupes]**. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les détails de partage pour les périodes sélectionnées. |
+| ![Supprimer](/help/assets/icons/Delete.svg) | **[!UICONTROL Supprimer]** | Supprimez les périodes sélectionnées. Il vous est demandé de confirmer. |
+| ![Modifier](/help/assets/icons/Edit.svg) | **[!UICONTROL Renommer]** | Renommez une seule période sélectionnée. Lorsque cette option est sélectionnée, vous pouvez renommer la période en ligne. |
+| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL Approuver]** | Valider les périodes sélectionnées. |
+| ![Copier](/help/assets/icons/Copy.svg) | **[!UICONTROL Copier]** | Copiez les périodes sélectionnées. De nouvelles périodes sont créées avec le même nom et le même suffixe (Copier). |
+| ![Fichier CSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL Exporter dans un fichier CSV]** | Exportez les périodes sélectionnées dans un fichier `Date ranges List.csv`. |
 
-### Barre de filtres active
+### Barre de filtres actifs
 
-La barre de filtre affiche les filtres actifs (le cas échéant). Vous pouvez supprimer rapidement un filtre à l’aide de ![CrossSize75](/help/assets/icons/CrossSize75.svg). Si plusieurs filtres sont spécifiés, utilisez **[!UICONTROL Tout supprimer]** pour supprimer tous les filtres.
+La barre de filtres affiche ➌ les filtres actifs (le cas échéant). Vous pouvez supprimer rapidement un filtre à l’aide de ![CrossSize75](/help/assets/icons/CrossSize75.svg). Si plusieurs filtres sont spécifiés, utilisez **[!UICONTROL Tout supprimer]** pour supprimer tous les filtres.
 
 ### Panneau Filtrer
 
-Vous pouvez filtrer les périodes à l’aide du panneau de gauche **[!UICONTROL Filtre]** . Le panneau de filtrage affiche le type de filtre et le nombre de plages de dates qui respectent le filtre. Sélectionnez ![Filtre](/help/assets/icons/Filter.svg) pour activer/désactiver l’affichage du panneau de filtrage.
+Vous pouvez filtrer les périodes à l’aide du **[!UICONTROL du panneau de gauche]** Filtrer➍. Le panneau de filtrage affiche le type de filtre et le nombre de périodes qui respectent le filtre. Sélectionnez ![Filtrer](/help/assets/icons/Filter.svg) pour afficher ou masquer le panneau Filtrer.
 
-Pour filtrer la liste des filtres :
+Pour filtrer la liste des filtres :
 
-1. Sélectionnez ![Filter](/help/assets/icons/Filter.svg) pour ouvrir le panneau Filtres. Si vous avez besoin d’espace supplémentaire pour la liste Filtres, vous pouvez sélectionner à nouveau ![Filtre](/help/assets/icons/Filter.svg) pour fermer le panneau.
-1. Vous pouvez filtrer les plages de dates à l’aide des [sections de filtrage](#filter-sections) disponibles.
+1. Sélectionnez ![Filtrer](/help/assets/icons/Filter.svg) pour ouvrir le panneau Filtres. Si vous avez besoin d’espace supplémentaire pour la liste des filtres, vous pouvez sélectionner à nouveau ![Filtrer](/help/assets/icons/Filter.svg) pour fermer le panneau.
+1. Vous pouvez filtrer les périodes à l’aide de l’une des [sections de filtre](#filter-sections) disponibles.
 
    >[!INFO]
    >
-   >*Les éléments* se rapportent aux éléments de la période affichés dans la [liste de plages de dates](#date-ranges-list).
+   >*Éléments* font référence aux éléments de période affichés dans la [liste Périodes](#date-ranges-list).
    > 
 
-#### Filtrage des sections
+#### Sections de filtrage
 
 {{tagfiltersection}}
 {{ownerfiltersection}}
 {{otherfiltersfiltersection}}
 
 
-La [liste des plages de dates](#date-ranges-list) est automatiquement mise à jour en fonction de la configuration de votre filtre. Vous pouvez voir les filtres configurés dans la [barre de filtres actifs](#active-filter-bar).
+La [liste des périodes](#date-ranges-list) est automatiquement mise à jour en fonction de la configuration de votre filtre. Vous pouvez voir les filtres configurés dans la [Barre des filtres actifs](#active-filter-bar).
 
 
-## Modification des plages de dates
+## Modifier les périodes
 
-Vous pouvez modifier une période de deux manières différentes :
+Vous pouvez modifier une période de deux manières :
 
 * Dans un projet Workspace, utilisez l’icône [Informations sur le composant](/help/components/use-components-in-workspace.md#component-info).
 
-* Dans la liste [[!UICONTROL Plages de dates]](#date-ranges-list), sélectionnez le titre de la plage de dates.
+* Dans la liste [[!UICONTROL Périodes] , choisissez ](#date-ranges-list) titre de la période.
 
-Vous utilisez le [créateur de plages de dates](/help/components/date-ranges/create.md#date-range-builder) pour modifier la plage de dates.
+Vous utilisez le [créateur de périodes](/help/components/date-ranges/create.md#date-range-builder) pour modifier la période.
 
 
 

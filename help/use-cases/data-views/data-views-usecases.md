@@ -1,14 +1,14 @@
 ---
-title: Cas dʼutilisation des vues de données dans Customer Journey Analytics
-description: Découvrez plusieurs cas dʼutilisation qui montrent la flexibilité et la puissance des vues de données dans Customer Journey Analytics
+title: Cas D’Utilisation Des Vues De Données
+description: Découvrez plusieurs cas d’utilisation qui montrent la flexibilité et la puissance des vues de données dans Customer Journey Analytics
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: f0786cfa74453693078c7d30d647a96bf1d98d07
+source-git-commit: 0e9dc47b80db142801a94dcbf31470d99a610949
 workflow-type: tm+mt
-source-wordcount: '1362'
-ht-degree: 33%
+source-wordcount: '1358'
+ht-degree: 30%
 
 ---
 
@@ -39,7 +39,7 @@ Par exemple, lors de la création d’une vue de données, vous pouvez créer un
 1. Ouvrez la section **[!UICONTROL Inclure/exclure des valeurs]** et spécifiez ce qui suit :
    1. Activez **[!UICONTROL Définir les valeurs d’inclusion et d’exclusion]**.
    1. Sélectionnez **[!UICONTROL Si tous les critères sont satisfaits]** dans **[!UICONTROL Correspondre]**.
-   1. Spécifiez `confirmation`. Ce texte pour le **[!UICONTROL page_title]** indique que cette page est liée au passage d’une commande. Une fois que vous avez examiné tous les titres de page répondant à ces critères, un `1` est comptabilisé pour chaque instance. Le résultat est une nouvelle mesure (qui n’est pas une mesure calculée). Une mesure qui a inclus/exclu des valeurs peut être utilisée partout où une autre mesure peut être utilisée. Il fonctionne avec Attribution IQ, les segments et partout ailleurs où vous pouvez utiliser des mesures standard.
+   1. Spécifiez `confirmation`. Le texte du **[!UICONTROL page_title]** indique que cette page est liée au passage d’une commande. Une fois que vous avez examiné tous les titres de page répondant à ces critères, un `1` est comptabilisé pour chaque instance. Le résultat est une nouvelle mesure (qui n’est pas une mesure calculée). Une mesure qui a inclus/exclu des valeurs peut être utilisée partout où une autre mesure peut être utilisée. Ces mesures fonctionnent avec l’attribution, les segments et partout ailleurs où vous pouvez utiliser des mesures standard.
 
    ![Dimension vers la mesure](../assets/string-to-metric.gif){width=100%}
 1. Vous pouvez également définir un modèle dʼattribution pour cette mesure, tel que [!UICONTROL Dernière touche], avec un [!UICONTROL intervalle de recherche en amont] de [!UICONTROL Session].
@@ -86,7 +86,7 @@ Ces nouveaux paramètres vous permettent dʼafficher uniquement les chiffres dʼ
 
 ## Utiliser le paramètre [!UICONTROL Aucune option de valeur] {#no-value}
 
-Votre entreprise a peut-être passé du temps à former vos utilisateurs pour qu’ils s’attendent à des dimensions « Non spécifiées » dans les rapports. La valeur par défaut pour les dimensions dans les vues de données est « Aucune valeur ». Cependant, vous pouvez spécifier comment Aucune valeur ne doit être signalée pour chaque dimension. Consultez les options Aucune valeur pour un composant de dimension.
+Votre entreprise a peut-être passé du temps à former vos utilisateurs pour qu’ils s’attendent à des dimensions « Non spécifiées » dans les rapports. La valeur par défaut pour les dimensions dans les vues de données est *Aucune valeur*. Cependant, vous pouvez spécifier comment Aucune valeur ne doit être signalée pour chaque dimension. Consultez les options **[!UICONTROL Aucune valeur]** pour un composant de dimension.
 
 ![Pas d’option de valeur](../assets/no-value-options.gif){width=100%}
 
@@ -112,11 +112,11 @@ Vous pouvez déterminer si une session est bien la toute première session d’u
 
 Une dimension et deux mesures facilitent cette création de rapports :
 
-* [Type de session](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dataviews/component-reference) - Cette dimension possède deux valeurs : [!UICONTROL Nouveau] et [!UICONTROL Récurrent]. L’élément de ligne [!UICONTROL Nouveau] comprend tout le comportement (c’est-à-dire les mesures par rapport à cette dimension) d’une session déterminée comme étant la première session définie d’une personne. Tous les autres éléments sont inclus dans l’élément de ligne [!UICONTROL Récurrent] (en supposant que tous ceux-ci appartiennent à une session). Les mesures qui ne font partie d’aucune session se retrouvent dans le compartiment « Non applicable » pour cette dimension.
+* [Type de session](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference) - Cette dimension possède deux valeurs : [!UICONTROL Nouveau] et [!UICONTROL Récurrent]. L’élément de ligne [!UICONTROL Nouveau] comprend tout le comportement (c’est-à-dire les mesures par rapport à cette dimension) d’une session déterminée comme étant la première session définie d’une personne. Tous les autres éléments sont inclus dans l’élément de ligne [!UICONTROL Récurrent] (en supposant que tous ceux-ci appartiennent à une session). Les mesures qui ne font partie d’aucune session se retrouvent dans le compartiment « Non applicable » pour cette dimension.
 
-* [Premières sessions](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dataviews/component-reference) La mesure Premières sessions est définie comme la première session d’une personne dans la fenêtre de création de rapports.
+* [Premières sessions](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference) La mesure Premières sessions est définie comme la première session d’une personne dans la fenêtre de création de rapports.
 
-* [Sessions récurrentes](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dataviews/component-reference) la mesure Sessions récurrentes correspond au nombre de sessions qui n’ont pas été la première session d’une personne.—>
+* [Sessions récurrentes](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference) la mesure Sessions récurrentes correspond au nombre de sessions qui n’ont pas été la première session d’une personne.—>
 
 Pour accéder aux composants :
 
@@ -127,8 +127,7 @@ Pour accéder aux composants :
 Les nouvelles sessions sont presque toujours rapportées avec précision. Ces exceptions sont les suivantes :
 
 * Lorsqu’une première session s’est produite avant l’intervalle de recherche en amont de 13 mois. <br/>Cette session est ignorée.
-
-* Lorsqu’une session s’étend à la fois sur l’intervalle de recherche en amont et le créneau de rapport. <br/>Par exemple, vous exécutez un rapport du 1er au 15 juin 2022. L’intervalle de recherche en amont s’étend du 1er mai 2021 au 31 mai 2022. Si une session commence le 30 mai 2022 et se termine le 1er juin 2022, elle est incluse dans l’intervalle de recherche en amont. Et toutes les sessions dans la fenêtre de rapport sont comptabilisées comme des sessions récurrentes.
+* Lorsqu’une session s’étend à la fois sur l’intervalle de recherche en amont et l’intervalle de rapport.<br/>Par exemple, vous exécutez un rapport du 1er juin 2022 au 15 juin 2022. L’intervalle de recherche en amont s’étend du 1er mai 2021 au 31 mai 2022. Si une session commence le 30 mai 2022 et se termine le 1er juin 2022, elle est incluse dans l’intervalle de recherche en amont. Et toutes les sessions dans la fenêtre de rapport sont comptabilisées comme des sessions récurrentes.
 
 ## Utiliser la fonctionnalité Date et Date et heure {#date}
 
@@ -142,7 +141,7 @@ Les dates postérieures au 1er janvier 1900 (à l’exception du 1er janvier 197
 
 ### Cas d’utilisation de date et date-heure
 
-* Date : une agence de voyages collecte la date de départ des voyages dans un champ de leurs données. L’entreprise souhaite disposer d’un rapport comparant le [!UICONTROL &#x200B; Jour de la semaine &#x200B;] pour toutes les dates de départ collectées afin de déterminer laquelle est la plus populaire. Et la société aimerait faire de même pour le [!UICONTROL Mois de l’année].
+* Date : une agence de voyages collecte la date de départ des voyages dans un champ de leurs données. L’entreprise souhaite disposer d’un rapport comparant le [!UICONTROL  Jour de la semaine ] pour toutes les dates de départ collectées afin de déterminer laquelle est la plus populaire. Et la société aimerait faire de même pour le [!UICONTROL Mois de l’année].
 
 * Date et heure : une société de vente au détail collecte l’heure de chacun de ses achats dans les points de vente (POS). Sur un mois donné, l’entreprise souhaite déterminer les périodes de plus forte affluence en [!UICONTROL Heure de la journée].
 

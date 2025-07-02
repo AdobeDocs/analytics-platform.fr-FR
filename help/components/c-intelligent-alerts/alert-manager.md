@@ -1,13 +1,13 @@
 ---
-description: Création, modification ou suppression des alertes.
-title: Gestion des alertes
+description: Découvrez comment gérer les alertes.
+title: Gérer les alertes
 feature: Workspace Basics
 role: User, Admin
 exl-id: 174c3ebd-a77b-4403-ae9a-bb0cff4bcca6
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
 workflow-type: tm+mt
 source-wordcount: '596'
-ht-degree: 21%
+ht-degree: 22%
 
 ---
 
@@ -39,7 +39,7 @@ La liste des alertes affiche ➊ toutes les alertes que vous possédez, celles q
 | **[!UICONTROL Activé]** | Indique si l’alerte est activée ou désactivée. |
 | **[!UICONTROL Vue de données]** | Vues de données auxquelles cette alerte s’applique. |
 | **[!UICONTROL Propriétaire]** | Propriétaire de l’alerte. En tant que non-administrateur, vous ne voyez que les alertes que vous possédez ou celles qui sont partagées avec vous. |
-| **[!UICONTROL Étiquettes]** | Balises pour cette alerte. |
+| **[!UICONTROL Balises]** | Balises pour cette alerte. |
 | **[!UICONTROL Date d’expiration]** | Date et heure d’expiration de l’alerte. |
 | **[!UICONTROL Date de modification]** | Date et heure de la dernière modification de l’alerte. |
 
@@ -71,7 +71,7 @@ La barre de filtrage affiche ➌ les filtres actifs appliqués à partir du pann
 
 ### Panneau Filtrer
 
-Vous pouvez filtrer la liste des alertes à l’aide du ➍ du panneau de gauche ![Filtrer](/help/assets/icons/Filter.svg) **[!UICONTROL Filtrer]**. Le panneau de filtrage affiche le type de filtre et le nombre d’alertes qui respectent le filtre spécifique.
+Vous pouvez filtrer la liste des alertes à l’aide du ![ du panneau de gauche ](/help/assets/icons/Filter.svg)Filtrer **** Filtrer➍. Le panneau de filtrage affiche le type de filtre et le nombre d’alertes qui respectent le filtre spécifique.
 
 
 1. Sélectionnez ![Filtrer](/help/assets/icons/Filter.svg) pour ouvrir le panneau Filtres. Si vous avez besoin de plus d’espace pour la liste des alertes, vous pouvez sélectionner ![Filtrer](/help/assets/icons/Filter.svg) une fois de plus pour fermer le panneau.
@@ -103,7 +103,7 @@ Vous pouvez filtrer la liste des alertes à l’aide du ➍ du panneau de gauche
 {{typefiltersection}}
 
 
-#### Section d’autres filtres
+#### Section des autres filtres
 
 {{otherfiltersfiltersection}}
 
