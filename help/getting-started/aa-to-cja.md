@@ -32,7 +32,7 @@ Dans des jeux de données tels qu’Adobe Analytics, une identité peut ne pas 
 
 ### Aligner vos variables
 
-La méthode la plus simple pour transformer les données Adobe Analytics en données Customer Journey Analytics consiste à ingérer une [suite de rapports globale](https://experienceleague.adobe.com/en/docs/analytics/implementation/prepare/global-rs) dans Experience Platform à l’aide du [connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics?lang=fr). Ce connecteur mappe directement vos variables Adobe Analytics à un jeu de données et à un schéma XDM dans Experience Platform, qui peuvent à leur tour être facilement connectés à Customer Journey Analytics.
+La méthode la plus simple pour transformer les données Adobe Analytics en données Customer Journey Analytics consiste à ingérer une [suite de rapports globale](https://experienceleague.adobe.com/fr/docs/analytics/implementation/prepare/global-rs) dans Experience Platform à l’aide du [connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics?lang=fr). Ce connecteur mappe directement vos variables Adobe Analytics à un jeu de données et à un schéma XDM dans Experience Platform, qui peuvent à leur tour être facilement connectés à Customer Journey Analytics.
 
 Une suite de rapports globale complète peut ne pas toujours être faisable pour une implémentation. Si vous prévoyez d’importer plusieurs suites de rapports dans Customer Journey Analytics, deux options s’offrent à vous :
 
@@ -52,7 +52,7 @@ Les paramètres traditionnels du canal marketing Adobe Analytics ne s’exécut
 
 * D’autre part, la nature de Customer Journey Analytics en matière de période des rapports.
 
-Adobe a publié une [mise à jour des bonnes pratiques relatives à l’implémentation des canaux marketing](https://experienceleague.adobe.com/en/docs/analytics/components/marketing-channels/mchannel-best-practices). Ces recommandations mises à jour vous aident à tirer le meilleur parti des fonctionnalités déjà présentes dans Adobe Analytics avec des fonctionnalités d’attribution avancées. Les recommandations vous permettent également de réussir la transition vers Customer Journey Analytics.
+Adobe a publié une [mise à jour des bonnes pratiques relatives à l’implémentation des canaux marketing](https://experienceleague.adobe.com/fr/docs/analytics/components/marketing-channels/mchannel-best-practices). Ces recommandations mises à jour vous aident à tirer le meilleur parti des fonctionnalités déjà présentes dans Adobe Analytics avec des fonctionnalités d’attribution avancées. Les recommandations vous permettent également de réussir la transition vers Customer Journey Analytics.
 
 Avec l’introduction de [Champs dérivés](../data-views/derived-fields/derived-fields.md) dans le cadre des vues de données de Customer Journey Analytics, les canaux marketing sont également pris en charge de manière non destructive et rétroactive à l’aide du [Modèle de fonction Canal marketing](../data-views/derived-fields/derived-fields.md#function-templates).
 
@@ -66,7 +66,7 @@ Dans Adobe Analytics, le compte rendu des performances sʼappuie sur une quanti
 
 Le [!UICONTROL Traitement de la période de rapport] offre la possibilité d’appliquer des paramètres rétroactifs et de créer plusieurs versions de la persistance des variables, sans avoir besoin de modifier la façon dont les données sous-jacentes sont collectées.
 
-Ce changement entraîne certaines différences dans la manière dont les données sont rapportées, en particulier pour les variables qui peuvent avoir une longue période d’expiration. Vous pouvez commencer par évaluer la manière dont le traitement de la période de rapport peut avoir un impact sur le compte rendu des performances à l’aide d’une [suite de rapports virtuelle](https://experienceleague.adobe.com/en/docs/analytics/components/virtual-report-suites/vrs-report-time-processing).
+Ce changement entraîne certaines différences dans la manière dont les données sont rapportées, en particulier pour les variables qui peuvent avoir une longue période d’expiration. Vous pouvez commencer par évaluer la manière dont le traitement de la période de rapport peut avoir un impact sur le compte rendu des performances à l’aide d’une [suite de rapports virtuelle](https://experienceleague.adobe.com/fr/docs/analytics/components/virtual-report-suites/vrs-report-time-processing).
 
 ### Identifier les segments et mesures calculées importants {#segments-calcmetrics}
 
@@ -82,9 +82,9 @@ Pour que la migration entre les deux systèmes se passe le mieux possible pour l
 
 Regardez ces deux vidéos pour obtenir plus dʼinformations :
 
-* [Déplacer des segments Adobe Analytics vers Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/moving-adobe-analytics-segments-to-customer-journey-analytics.html)
+* [Déplacer des segments Adobe Analytics vers Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/moving-adobe-analytics-segments-to-customer-journey-analytics.html?lang=fr)
 
-* [Déplacer vos mesures calculées d’Adobe Analytics vers Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/components/calc-metrics/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics)
+* [Déplacer vos mesures calculées d’Adobe Analytics vers Customer Journey Analytics](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/components/calc-metrics/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics)
 
 ### Autres considérations
 
