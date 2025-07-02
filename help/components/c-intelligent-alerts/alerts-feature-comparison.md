@@ -57,4 +57,4 @@ Dans Adobe Analytics, les options disponibles sont les suivantes :
 
 * Ouvrez un projet dans Analysis Workspace, puis sélectionnez **[!UICONTROL Composants]** > **[!UICONTROL Créer une alerte]**.
 
-* Ouvrez un projet dans Analysis Workspace, puis utilisez le raccourci suivant : **[!UICONTROL *ctrl *]**+**[!UICONTROL * maj *]** + **[!UICONTROL *a *]**(Windows) ou**[!UICONTROL * cmd *]** + **[!UICONTROL *maj *]**+**[!UICONTROL * a *]** (macOS).
+* Ouvrez un projet dans Analysis Workspace, puis utilisez le raccourci suivant : **[!UICONTROL *ctrl *]**+**[!UICONTROL * maj *]** + **[!UICONTROL *a *]**(Windows) ou&#x200B;**[!UICONTROL * cmd *]** + **[!UICONTROL *maj *]**+**[!UICONTROL * a *]** (macOS).
