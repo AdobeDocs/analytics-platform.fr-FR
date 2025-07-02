@@ -21,7 +21,7 @@ Les composants de période vous permettent de définir et de remplacer les param
 
 +++ View a video illustrating use of calendar and date ranges
 
->[!VIDEO](https://video.tv.adobe.com/v/24136?format=jpeg)
+>[!VIDEO](https://video.tv.adobe.com/v/327346?format=jpeg&captions=fre_fr)
 
 {{videoaa}}
 +++
