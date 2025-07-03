@@ -5,10 +5,10 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: e19151a7b0c3ab2f9e532034d329896768ee095f
+source-git-commit: 3c3fd6b814485871f2fd9249b0ffa9a0b24a360c
 workflow-type: tm+mt
-source-wordcount: '1972'
-ht-degree: 99%
+source-wordcount: '2371'
+ht-degree: 82%
 
 ---
 
@@ -229,26 +229,24 @@ Following the thumbs up or thumbs down selection, please make a selection for th
 
 -->
 
-<!--
-## Configuration best practices
 
-Below are best practices for your Customer Journey Analytics configuration (data view, calculated metrics, segments, and more) to ensure the Data Insights Agent can locate the correct components and return cleaner answers without having you to prompt for additional information.
+## Bonnes pratiques de configuration
 
-* **Balance what components you need**. Do not add all the fields of your datasets as metrics or dimension components to your data view. Especially, those you most certainly will not use in your analysis. On the other hand, do not strictly limit yourself only to the fields you anticipate you require for your analysis. A too limited data view restricts the flexibility in your analysis and the Data Insight's agent functionality.
-* **Always use friendly display names**. Ensure that all fields you define in your data view, either as a metrics or dimension component, do have a friendly component name. The process of renaming fields with a friendly name is especially relevant for fields from Adobe Analytics source connector datasets. These fields often have non-friendly unidentifiable names like `eVar41`, or `prop25`.
-* **Use distinctive names**. Distinctive names are especially relevant when you use a field both as a metric and a dimension component in your data view. Or when you use a field in multiple components, each with different component settings. 
-* **Use a component naming convention**. You can use a component naming convention to group components. For example, **[!UICONTROL Orders | Product]** and  **[!UICONTROL Orders | Customer]** to distinguish between different order metrics that might exist in your data.
-* **Use the Data Dictionary**. Add description and other relevant data for components in the Data Dictionary. The Data Insight agent currently does not use description and tags. but might use Data Dictionary description and tags in the future. 
-* **Use approved calculated metrics**. Agree on a process to use only approved calculated metrics as components in your data view, and avoid using experimental calculated metrics.
-* **Share required segments**. Ensure you share segments and make segments visible that are required for Data Insights agent prompts.
-* **Standardize on component names across data views**. If you use the same fields as a component in multiple data views, ensure you use a single friendly name and a single identifier for that component. A single name and identifier allows the Data Insights agent to switch data views without losing context.
+Vous trouverez ci-dessous les bonnes pratiques relatives à votre configuration Customer Journey Analytics (vue de données, mesures calculées, segments, etc.) pour vous assurer que le Data Insights Agent peut localiser les composants corrects et renvoyer des réponses plus précises sans avoir à vous demander des informations supplémentaires.
+
+* **Équilibrez les composants dont vous avez besoin**. N’ajoutez pas tous les champs de vos jeux de données en tant que mesures ou composants de dimension à votre vue de données. En particulier, ceux que vous n&#39;utiliserez certainement pas dans votre analyse. D’un autre côté, ne vous limitez pas strictement aux champs que vous prévoyez d’utiliser pour votre analyse. Une vue de données trop limitée limite la flexibilité de votre analyse et la fonctionnalité de Data Insights Agent.
+* **Utilisez toujours des noms d’affichage conviviaux**. Assurez-vous que tous les champs que vous définissez dans votre vue de données, en tant que composant de mesure ou de dimension, ont un nom de composant convivial. Le processus de renommage des champs avec un nom convivial est particulièrement pertinent pour les champs des jeux de données du connecteur source Adobe Analytics. Ces champs comportent souvent des noms non identifiables et non conviviaux, comme `eVar41` ou `prop25`.
+* **Utilisez des noms distinctifs**. Les noms distinctifs sont particulièrement pertinents lorsque vous utilisez le même champ en tant que mesure et composant de dimension dans votre vue de données. Ou lorsque vous utilisez un champ dans plusieurs composants du même type (par exemple, dans deux mesures différentes), chacun avec des paramètres de composant différents.
+* **Utilisez une convention de nommage des composants**. Vous pouvez utiliser une convention de nommage des composants pour les regrouper. Par exemple, **[!UICONTROL Commandes | Produits]** et **[!UICONTROL Commandes | Client]** peut faire la distinction entre les différentes mesures de commande qui peuvent exister dans vos données.
+* **Utiliser le dictionnaire de données**. Ajoutez une description et d’autres données pertinentes pour les composants dans le dictionnaire de données. Actuellement, l’agent Data Insight n’utilise pas la description et les balises du dictionnaire de données, mais cela pourrait se produire à l’avenir.
+* **Utiliser des mesures calculées approuvées**. Convenez d’un processus pour n’utiliser que des mesures calculées approuvées comme composants dans votre vue de données et évitez d’utiliser des mesures calculées expérimentales.
+* **Partage des segments requis**. Veillez à partager les segments et à rendre visibles les segments requis pour les invites de Data Insights Agent.
+* **Normaliser les noms de composant dans les vues de données**. Si vous utilisez les mêmes champs en tant que composant dans plusieurs vues de données, veillez à utiliser un seul nom convivial et un seul identifiant pour ce composant. Un nom et un identifiant uniques permettent au Data Insights Agent de changer de vue de données sans perdre de contexte.
 
 >[!MORELIKETHIS]
 >
->[Component settings](/help/data-views/component-settings/overview.md)
->[Data Dictionary](/help/components/data-dictionary/data-dictionary-overview.md)
->[Approve calculated metric](/help/components/calc-metrics/cm-workflow/cm-approving.md)
->[Share segments](/help/components/segments/seg-share.md)
+>[Paramètres de composant](/help/data-views/component-settings/overview.md)
+>>[Dictionnaire de données ](/help/components/data-dictionary/data-dictionary-overview.md)
+>>[Approuver la mesure calculée](/help/components/calc-metrics/cm-workflow/cm-approving.md)
+>>[Partage de segments ](/help/components/segments/seg-share.md)
 >
-
--->

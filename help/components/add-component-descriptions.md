@@ -1,13 +1,13 @@
 ---
-description: Les administrateurs et administratrices peuvent ajouter des descriptions pour les composants dans la vue de données ou en utilisant le dictionnaire de données
-title: Ajouter des descriptions de composant
+description: Découvrez comment les administrateurs et administratrices peuvent ajouter des descriptions aux composants à l’aide d’une vue de données ou du dictionnaire de données.
+title: Ajouter des descriptions des composants
 feature: Components
 role: Admin
 exl-id: 99d531cd-50e9-4e6c-adad-a66b606fd877
-source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
+source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
-source-wordcount: '174'
-ht-degree: 12%
+source-wordcount: '168'
+ht-degree: 17%
 
 ---
 
@@ -17,11 +17,11 @@ Les descriptions permettent aux utilisateurs et utilisatrices de savoir comment 
 
 Les administrateurs et administratrices de Customer Journey Analytics peuvent ajouter des descriptions pour les composants (dimensions, mesures, segments et périodes) dans une vue de données ou à l’aide du dictionnaire de données.
 
-## Ajouter des descriptions dans une vue de données
+## Vue de données
 
 Vous pouvez ajouter une description à un composant que vous avez ajouté à votre vue de données. Voir [ Paramètres des composants ](/help/data-views/component-settings/overview.md).
 
-## Ajouter des descriptions à l’aide du dictionnaire de données
+## Dictionnaire de données
 
 Le dictionnaire de données dans Analysis Workspace permet aux utilisateurs et utilisatrices, et aux administrateurs et administratrices, de suivre et de mieux comprendre les composants dans leur environnement Customer Journey Analytics. Le dictionnaire de données permet aux administrateurs et administratrices d’ajouter des descriptions des composants directement dans Analysis Workspace.
 
@@ -32,5 +32,5 @@ Pour obtenir des informations générales sur le dictionnaire de données, consu
 >[!MORELIKETHIS]
 >
 >[Paramètres des composants de la vue de données](/help/data-views/component-settings/overview.md)
->&#x200B;>[Entrées du composant Dictionnaire de données](/help/components/data-dictionary/edit-entries-data-dictionary.md)
+>>[Entrées du composant Dictionnaire de données](/help/components/data-dictionary/edit-entries-data-dictionary.md)
 >

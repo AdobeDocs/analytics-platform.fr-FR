@@ -1,13 +1,13 @@
 ---
-description: Découvrez comment les dimensions de répartition temporelle prennent l’horodatage des événements collectés et les divisent en dimensions plus significatives telles que l’heure du jour ou le jour de la semaine.
+description: Découvrez comment les dimensions de répartition temporelle répartissent l’horodatage des événements collectés et répartissent ces événements en dimensions plus significatives telles que l’heure du jour ou le jour de la semaine.
 title: Dimensions de répartition du temps
 feature: Dimensions
 exl-id: 5c3c2867-58de-4765-a4e1-91eac1891b38
 role: User
-source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
+source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
-source-wordcount: '196'
-ht-degree: 55%
+source-wordcount: '198'
+ht-degree: 54%
 
 ---
 

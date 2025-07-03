@@ -1,17 +1,17 @@
 ---
 description: Modification de la palette de couleurs de visualisation ou définition de votre propre palette de couleurs personnalisée.
-title: Palette de couleurs de visualisation
+title: Palettes de couleurs de visualisations
 feature: Workspace Basics
 exl-id: c3c208b9-84a5-4620-ba3c-7e483215e698
 role: User
-source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
 source-wordcount: '214'
-ht-degree: 92%
+ht-degree: 91%
 
 ---
 
-# Palette de couleurs de visualisation {#visualization-color-palette}
+# Palettes de couleurs de visualisation {#visualization-color-palettes}
 
 <!-- markdownlint-disable MD034 -->
 

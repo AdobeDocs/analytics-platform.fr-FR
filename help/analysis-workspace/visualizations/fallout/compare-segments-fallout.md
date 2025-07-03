@@ -5,7 +5,7 @@ title: Application De Segments Dans L’Analyse Des Abandons
 feature: Visualizations
 exl-id: 85b1024f-acd2-43b7-b4b1-b10961ba43e8
 role: User
-source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
 source-wordcount: '468'
 ht-degree: 34%
@@ -23,19 +23,20 @@ Dans Analysis Workspace, vous pouvez créer des segments d’après un point de 
 >* Utilisation d’un segment basé sur les personnes comme point de contact dans une visualisation des abandons avec contexte de personne.
 >* Utilisation d’un segment basé sur une personne comme point de contact dans une visualisation des abandons avec contexte de session.
 >* Utilisation d’un segment basé sur une session comme point de contact dans une visualisation des abandons avec contexte de session.
+
 <!-- Should we add B2B context here?
-* [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} Usimg a B2B container based segment as a touchpoint inside a non-container based context Fallout visualization.
+* [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} Usimg a B2B container based segment as a touchpoint inside a non-container based context Fallout visualization.
 * -->
 
 ## Création d’un segment à partir d’un point de contact
 
 1. Créez un segment d’après un point de contact donné qui vous intéresse particulièrement et qu’il peut être utile d’appliquer à d’autres rapports. Cliquez avec le bouton droit sur le point de contact et sélectionnez **[!UICONTROL Créer un segment à partir du point de contact]**.
 
-   ![Menu déroulant Point de contact avec l’option Créer un segment à partir du point de contact mise en surbrillance.](assets/fallout-createfilter.png)
+   ![Menu déroulant Point de contact avec l’option Créer un segment à partir du point de contact mise en surbrillance.](assets/fallout-createsegment.png)
 
    Le [!UICONTROL créateur de segments] s’ouvre ; il est prérempli avec le segment séquentiel préconfiguré qui correspond au point de contact que vous avez sélectionné :
 
-   ![Le créateur de segments affiche le segment séquentiel prérempli et préconfiguré.](assets/fallout-definefilter.png)
+   ![Le créateur de segments affiche le segment séquentiel prérempli et préconfiguré.](assets/fallout-definesegment.png)
 
 1. Nommez et décrivez le segment, puis enregistrez-le.
 
@@ -57,7 +58,7 @@ Vous pouvez comparer un nombre illimité de segments dans la visualisation Aband
 1. Faites glisser les trois segments sur la zone de dépôt de segments en haut de la visualisation.
 
 
-1. Facultatif : vous pouvez conserver *Toutes les visites* comme conteneur par défaut ou supprimer le conteneur.
+1. Facultatif : vous pouvez conserver *Toutes les personnes* comme conteneur par défaut ou supprimer le conteneur.
 
    ![Abandon affichant toutes les visites avec les deux segments déplacés à l’étape précédente.](assets/fallout-multiplefilters.png)
 
