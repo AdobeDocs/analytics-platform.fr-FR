@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 feature: Workspace Basics
 title: Débogueur de projet
 role: User
-source-git-commit: 4d902bab01c1c795cb7d852066128f6b9db0823a
+source-git-commit: ae8c1fb127accae53ab9363a8cceedd5221a245b
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '466'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,7 @@ Le débogueur de projet vous aide, ainsi que le support Adobe, à résoudre les 
 
 >[!NOTE]
 >
->Pour utiliser le débogueur, vous devez avoir un accès **Modifier** ou **Copier** [ au projet](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-25744).
+>Pour utiliser le débogueur, vous devez avoir un accès **Modifier** ou **Copier** [ au projet](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25744).
 >
 
 
@@ -55,7 +55,7 @@ Pour utiliser le débogueur pour une visualisation spécifique :
 
    * **[!UICONTROL Date et heure de la demande]**
    * **[!UICONTROL Date et heure de la réponse]**
-   * **[!UICONTROL Heure de la requête]**
+   * **[!UICONTROL Heure de la demande]**
    * **[!UICONTROL Durée de la file]**
    * **[!UICONTROL Temps de traitement serveur]**
    * **[!UICONTROL Heure de recherche]**
@@ -75,7 +75,7 @@ Pour utiliser le débogueur pour une visualisation spécifique :
    * JSON (réponse)
    * Requête cURL
 
-1. **&#x200B; Utilisez ![Copier](/help/assets/icons/Copy.svg) &#x200B;** [!UICONTROL Copier dans le presse-papiers]d sous **[!UICONTROL Requête cURL]** pour copier la requête dans le presse-papiers.
+1. Utilisez ![Copier](/help/assets/icons/Copy.svg) **[!UICONTROL Copier dans le presse-papiers]** sous **[!UICONTROL Requête cURL]** pour copier la requête dans le presse-papiers.
 1. Pointez sur l’une des zones de texte **[!UICONTROL Requête]** ou **[!UICONTROL Réponse]** pour afficher et sélectionnez ![Copier](/help/assets/icons/Copy.svg) **[!UICONTROL Copier dans le presse-papiers]** pour copier le contenu de cette zone de texte (XML ou JSON) dans le presse-papiers.
 
 1. Échangez toutes les informations que vous avez copiées et que l’assistance Adobe a demandées pour résoudre les problèmes liés aux visualisations dans votre projet Analysis Workspace.
