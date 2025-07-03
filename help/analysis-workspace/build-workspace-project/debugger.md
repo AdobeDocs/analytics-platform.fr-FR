@@ -75,7 +75,7 @@ Pour utiliser le débogueur pour une visualisation spécifique :
    * JSON (réponse)
    * Requête cURL
 
-1. ** Utilisez ![Copier](/help/assets/icons/Copy.svg) **[!UICONTROL Copier dans le presse-papiers]d sous **[!UICONTROL Requête cURL]** pour copier la requête dans le presse-papiers.
+1. **&#x200B; Utilisez ![Copier](/help/assets/icons/Copy.svg) &#x200B;** [!UICONTROL Copier dans le presse-papiers]d sous **[!UICONTROL Requête cURL]** pour copier la requête dans le presse-papiers.
 1. Pointez sur l’une des zones de texte **[!UICONTROL Requête]** ou **[!UICONTROL Réponse]** pour afficher et sélectionnez ![Copier](/help/assets/icons/Copy.svg) **[!UICONTROL Copier dans le presse-papiers]** pour copier le contenu de cette zone de texte (XML ou JSON) dans le presse-papiers.
 
 1. Échangez toutes les informations que vous avez copiées et que l’assistance Adobe a demandées pour résoudre les problèmes liés aux visualisations dans votre projet Analysis Workspace.
