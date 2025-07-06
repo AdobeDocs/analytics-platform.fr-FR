@@ -38,8 +38,8 @@ Pour télécharger un projet sous la forme d’un fichier PDF :
 1. Sélectionnez **[!UICONTROL Projet]** > **[!UICONTROL Télécharger PDF]**.
 Une barre verte avec le message ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Votre téléchargement a été demandé. Veuillez patienter.]** s’affiche.
 
-1. Dès que votre téléchargement est prêt, une barre verte contenant le message ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL *Nom du projet *PDF est prête.]**apparaît.
-Sélectionnez**[!UICONTROL Télécharger]**pour télécharger le PDF. La manière exacte dont le PDF est présenté ou téléchargé dépend de la configuration de votre navigateur pour gérer les documents PDF.
+1. Dès que votre téléchargement est prêt, une barre verte contenant le message ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL *Nom du projet *PDF est prête.]**&#x200B;apparaît.
+Sélectionnez&#x200B;**[!UICONTROL Télécharger]**&#x200B;pour télécharger le PDF. La manière exacte dont le PDF est présenté ou téléchargé dépend de la configuration de votre navigateur pour gérer les documents PDF.
 
 
 Pour télécharger un projet sous la forme d’un fichier CSV :
@@ -107,8 +107,8 @@ Les fonctionnalités suivantes d’un tableau à structure libre sont appliquée
 
 Les notifications suivantes s’affichent au fur et à mesure des téléchargements du fichier :
 
-* Un bleu **[!UICONTROL _Nom de la table _-_Dimension _.csv a été demandé._x _% terminé]**indiquant la progression. Pour annuler le téléchargement à tout moment, sélectionnez **[!UICONTROL Annuler le téléchargement]**. Sélectionnez ![CrossSize100](/help/assets/icons/CrossSize100.svg) si vous souhaitez fermer le message, ce qui n’annule pas le téléchargement.
-* Un **[!UICONTROL _Nom de la table _vert -_Dimension _.csv a été téléchargé]**notification d’achèvement une fois le téléchargement du fichier terminé. Le fichier est téléchargé dans le dossier des téléchargements configuré pour votre navigateur.
+* Un bleu **[!UICONTROL _Nom de la table _-_Dimension _.csv a été demandé._x _% terminé]**&#x200B;indiquant la progression. Pour annuler le téléchargement à tout moment, sélectionnez **[!UICONTROL Annuler le téléchargement]**. Sélectionnez ![CrossSize100](/help/assets/icons/CrossSize100.svg) si vous souhaitez fermer le message, ce qui n’annule pas le téléchargement.
+* Un **[!UICONTROL _Nom de la table _vert -_Dimension _.csv a été téléchargé]**&#x200B;notification d’achèvement une fois le téléchargement du fichier terminé. Le fichier est téléchargé dans le dossier des téléchargements configuré pour votre navigateur.
 
 Si vous demandez plusieurs téléchargements à la fois, vous recevez une notification indiquant que chaque téléchargement supplémentaire est mis en file d’attente jusqu’à ce que le téléchargement précédent soit terminé.
 
