@@ -1,16 +1,16 @@
 ---
-description: Le gestionnaire de mesures calculées vous permet de partager, filtrer, baliser, approuver, copier, supprimer et marquer comme favoris.
-title: Gestionnaire de mesures calculées
+description: Découvrez comment partager, filtrer, baliser, approuver, copier, supprimer des mesures calculées et les marquer comme favoris.
+title: Gérer les mesures calculées
 feature: Calculated Metrics
 exl-id: 8b257ecc-a596-4b34-ac26-eda16835f1ba
-source-git-commit: b3c7ceedec7b3f6a916e97bab38fd55f1d6c7f51
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '901'
 ht-degree: 29%
 
 ---
 
-# Gestion des mesures calculées
+# Gérer des mesures calculées
 
 Vous pouvez partager, filtrer, baliser, approuver, renommer, copier, supprimer, exporter les mesures calculées et les marquer comme favoris à partir d’une interface de gestion centrale [!UICONTROL Mesures calculées]. Pour gérer les mesures calculées :
 
@@ -37,7 +37,7 @@ La liste des mesures calculées ➊ affiche toutes les mesures calculées que vo
 | **[!UICONTROL Titre et description]** | Pour modifier la mesure calculée, sélectionnez le lien du titre, qui ouvre le [créateur de mesures calculées](cm-build-metrics.md). Une mesure calculée partagée est indiquée par ![Partager](/help/assets/icons/ShareAlt.svg). |
 | **[!UICONTROL Vue de données]** | Vues de données auxquelles s’applique cette mesure calculée. |
 | **[!UICONTROL Propriétaire]** | Propriétaire de la mesure calculée. En tant qu’utilisateur ou utilisatrice, vous ne pouvez consulter que les annotations que vous possédez ou celles qui ont été partagées avec vous. |
-| **[!UICONTROL Étiquettes]** | Répertorie les balises de cette mesure calculée. |
+| **[!UICONTROL Balises]** | Répertorie les balises de cette mesure calculée. |
 | **[!UICONTROL Partagé avec]** | Répertorie le nombre d’individus ou de groupes avec lesquels vous avez partagé la mesure calculée. Sélectionnez pour ouvrir la boîte de dialogue **[!UICONTROL Partager la mesure calculée]**. Voir [Partage de mesures calculées](cm-sharing.md) pour plus d’informations. |
 | **[!UICONTROL Date de modification]** | Date et heure de la dernière modification de la mesure calculée. |
 | **[!UICONTROL Utilisation dans]** | Indique où les mesures calculées sont actuellement utilisées et combien de fois elles sont utilisées dans chaque zone. <p>Par exemple, si la mesure calculée est utilisée dans 40 projets et 2 alertes, la valeur de cette colonne s’affiche sous la forme de composants [!UICONTROL **42**]. <p>Sélectionnez la valeur dans cette colonne pour afficher la répartition des emplacements où les mesures calculées sont utilisées (par exemple, [!UICONTROL **Projets (40)**], [!UICONTROL **Cartes de performance mobiles (2)**]). De plus, vous pouvez afficher la liste des éléments pour lesquels les mesures calculées sont utilisées. Par exemple, pour afficher la liste des projets dans lesquels ils sont utilisés, sélectionnez le lien [!UICONTROL **Projets (40)**].</p><p>Chacune des zones suivantes affiche le nombre d’instances de mesures calculées utilisées dans cette zone :</p> <ul><li>[!UICONTROL **Projets**]<p>Contient des mesures calculées qui ont été [créées dans le créateur de mesures calculées](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) et qui sont disponibles pour tous les projets.</p></li><li>[!UICONTROL **Composants ad hoc**]<p>Contient des mesures calculées qui ont été [créées en tant que mesures calculées rapides](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project) et qui ne sont disponibles que dans un seul projet.</p></li><li>[!UICONTROL **Projets planifiés**]</li><li>[!UICONTROL **Cartes de performances mobiles**]</li><li>[!UICONTROL **Annotations**]</li><li>[!UICONTROL **Report Builder**]<p>La sélection de cette option télécharge un fichier CSV, avec les colonnes de données suivantes :</p><ul><li>Nom dans Report Builder</li><li>Dernier accès</li><li>Dernier ID d’utilisateur ou utilisatrice IMS consulté</li><li>Nom de l’utilisateur ou de l’utilisatrice consulté en dernier</li></ul></li></ul><p>Ces informations peuvent vous aider à déterminer si un composant est utile pour les utilisateurs et utilisatrices de votre organisation, où il est utilisé et s’il doit être supprimé ou modifié.</p><p>Tenez compte des points suivants lorsque vous affichez cette colonne :</p><ul><li>Ces informations sont réservées aux administrateurs et administratrices système.</li><li>La colonne [!UICONTROL **Utilisation dans**] ne s’affiche pas par défaut. Utilisez ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) pour configurer l’affichage de cette colonne.</li><li>Ces informations n’incluent pas l’utilisation de l’API ou de Data Warehouse.</li><li>Si cette colonne ne contient aucune donnée pour un composant donné, mais qu’elle comporte une date [!UICONTROL **Dernière utilisation**], le composant peut avoir été utilisé dans une analyse sans avoir été enregistré.</li><li>Les informations d’utilisation sont disponibles à partir de septembre 2023.</li></ul><p>Vous pouvez utiliser le [dictionnaire de données](/help/components/data-dictionary/data-dictionary-overview.md) avec ces informations pour vous aider à effectuer le suivi et à mieux comprendre comment les composants sont utilisés dans votre organisation.</p> |
@@ -69,7 +69,7 @@ La barre de filtrage affiche ➌ les filtres actifs appliqués à partir du pann
 
 ### Panneau Filtrer
 
-Vous pouvez filtrer la liste des mesures calculées à l’aide du ➍ du panneau de gauche ![Filtrer](/help/assets/icons/Filter.svg) **[!UICONTROL Filtrer]**. Le panneau de filtrage affiche le type de filtre et le nombre de mesures calculées qui respectent le filtre spécifique. Sélectionnez ![Filtrer](/help/assets/icons/Filter.svg) pour afficher ou masquer le panneau Filtrer.
+Vous pouvez filtrer la liste des mesures calculées à l’aide du ![ du panneau de gauche ](/help/assets/icons/Filter.svg)Filtrer **** Filtrer➍. Le panneau de filtrage affiche le type de filtre et le nombre de mesures calculées qui respectent le filtre spécifique. Sélectionnez ![Filtrer](/help/assets/icons/Filter.svg) pour afficher ou masquer le panneau Filtrer.
 
 Voir [Filtrer la liste des mesures calculées](cm-filter.md) pour plus d’informations.
 

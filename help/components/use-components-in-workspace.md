@@ -1,10 +1,10 @@
 ---
 description: Découvrez comment utiliser des composants dans un projet dans Analysis Workspace
-title: Utilisation De Composants Dans Analysis Workspace
+title: Utilisation De Composants Dans Un Projet
 feature: Components
 role: User
 exl-id: 97bdfb9e-a27e-4a6b-b6cc-21a292398037
-source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 97%

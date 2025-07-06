@@ -1,16 +1,16 @@
 ---
-description: Décrit le tri et le filtrage, les deux principales façons de trouver vos mesures.
-title: Recherche de mesures
+description: Découvrez comment trouver des mesures.
+title: Trouver des mesures
 feature: Calculated Metrics
 exl-id: 34d2563a-7cd2-4f22-9ad0-6a3dab8d84ea
-source-git-commit: 46242b86d4a7c0e60a468885fcbaa73c575dfb74
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
-source-wordcount: '50'
-ht-degree: 8%
+source-wordcount: '43'
+ht-degree: 9%
 
 ---
 
-# Recherche de mesures
+# Rechercher des mesures
 
 Vous pouvez localiser les mesures dans Analysis Workspace de la même manière que vous localisez d’autres types de composants.
 

@@ -5,10 +5,10 @@ exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 8e10818efa7da54b0802c56e5388e6c7ef7fd8b6
 workflow-type: tm+mt
-source-wordcount: '1053'
-ht-degree: 95%
+source-wordcount: '1037'
+ht-degree: 79%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 95%
 >[!CONTEXTUALHELP]
 >id="dataview_component_dimension_persistence"
 >title="Persistance"
->abstract="Configurez le modèle d’attribution par défaut appliqué à une dimension. L’attribution s’applique avant les segments dans les rapports. Pour plus d’informations, consultez les sections [Paramètres d’affectation](/help/data-views/component-settings/persistence.md#allocation-settings), [Paramètres d’expiration](/help/data-views/component-settings/persistence.md#expiration-settings), [Dimension de liaison](/help/data-views/component-settings/persistence.md#binding-dimension) et [Mesures de liaison](/help/data-views/component-settings/persistence.md#binding-metric)."
+>abstract="Configurez le modèle d’attribution par défaut appliqué à une dimension. L’attribution s’applique avant les segments dans la création de rapports."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -40,19 +40,19 @@ La [!UICONTROL persistance] est la possibilité, pour une valeur de dimension do
 
 * L’**expiration** vous permet de déterminer la durée pendant laquelle un élément de dimension persiste au-delà de l’événement sur lequel il est défini.
 
-La [!UICONTROL persistance] est disponible uniquement sur les dimensions et est rétroactive aux données auxquelles elle est appliquée. Il s’agit d’une transformation de données immédiate qui se produit avant l’application de la segmentation ou d’autres opérations d’analyse.
+La [!UICONTROL persistance] est disponible uniquement dans les dimensions et est rétroactive aux données auxquelles elle est appliquée. Il s’agit d’une transformation de données immédiate qui se produit avant l’application de la segmentation ou d’autres opérations d’analyse.
 
 | Paramètre | Description |
 | --- | --- |
 | [!UICONTROL Définir la persistance] | Activez la persistance pour la dimension. Si la persistance n’est pas activée, la dimension se rapporte uniquement aux mesures qui existent dans le même événement. Ce paramètre est désactivé par défaut. |
-| [!UICONTROL Attribution] | Permet de définir le modèle dʼattribution utilisé sur une dimension pour la persistance. Les options sont les suivantes :<ul><li>**[!UICONTROL La plus récente]** : les valeurs de la dimension persistent jusqu’à ce qu’elles soient remplacées par des valeurs ultérieures.</li><li> **[!UICONTROL Original]** : la première valeur de cette dimension persiste et n’est pas remplacée par les valeurs suivantes.</li><li>**[!UICONTROL Toutes]** : toutes les valeurs de cette dimension persistent simultanément.</li><li>**[!UICONTROL Première valeur connue]** : la première valeur de cette dimension est utilisée et sera appliquée à tous les événements avant et après.</li><li>**[!UICONTROL Dernière valeur connue]** : la dernière valeur de cette dimension est utilisée et sera appliquée à tous les événements avant et après.</li></ul> |
-| [!UICONTROL Expiration] | Permet de définir la période de persistance pour une dimension. Les options sont les suivantes : <ul><li>**[!UICONTROL Session]** (par défaut)</li><li>**[!UICONTROL Personne]**</li><li>**[!UICONTROL Temps personnalisé]**</li><li>**[!UICONTROL Mesure]**</li></ul>. Il se peut que vous ayez besoin de pouvoir faire expirer la dimension lors dʼun achat (comme les termes de recherche interne ou dʼautres cas dʼutilisation du marchandisage). Le temps d’expiration maximal que vous pouvez définir est de 90 jours. Si vous sélectionnez une attribution de [!UICONTROL Toutes], seule l’expiration [!UICONTROL Session] ou [!UICONTROL Personne] est disponible. |
+| [!UICONTROL Attribution] | Spécifiez le modèle d’attribution utilisé sur une dimension pour la persistance. Les options sont les suivantes :<ul><li>**[!UICONTROL La plus récente]** : les valeurs de la dimension persistent jusqu’à ce qu’elles soient remplacées par les valeurs suivantes</li><li> **[!UICONTROL Original]** : la première valeur de cette dimension persiste et n’est pas remplacée par les valeurs suivantes</li><li>**[!UICONTROL Toutes]** : toutes les valeurs de cette dimension persistent simultanément.</li><li>**[!UICONTROL Première valeur connue]** : la première valeur de cette dimension est utilisée et sera appliquée à tous les événements avant et après.</li><li>**[!UICONTROL Dernière valeur connue]** : la dernière valeur de cette dimension est utilisée et sera appliquée à tous les événements avant et après.</li></ul> |
+| [!UICONTROL Expiration] | Spécifiez la fenêtre de persistance pour une dimension. Les options sont les suivantes : <ul><li>**[!UICONTROL Session]** (par défaut)</li><li>**[!UICONTROL Personne]**</li><li>**[!UICONTROL Temps personnalisé]**</li><li>**[!UICONTROL Mesure]**</li></ul>. Il se peut que vous ayez besoin de pouvoir faire expirer la dimension lors dʼun achat (comme les termes de recherche interne ou dʼautres cas dʼutilisation du marchandisage). Le délai d’expiration maximal que vous pouvez définir est de 90 jours. Si vous sélectionnez une attribution de [!UICONTROL Toutes], seule l’expiration [!UICONTROL Session] ou [!UICONTROL Personne] est disponible. |
 
 {style="table-layout:auto"}
 
 ## Paramètres [!UICONTROL Attribution]
 
-Détails sur les paramètres d’attribution disponibles.
+Les paramètres d’attribution disponibles sont les suivants :
 
 * **[!UICONTROL La plus récente]** : fait persister la valeur la plus récente (par horodatage) présente dans la dimension. Toutes les valeurs suivantes qui se produisent pendant la période d’expiration de la dimension remplacent la valeur persistante précédente. Si « Traiter &quot;Aucune valeur&quot; comme valeur » est activé sur cette dimension sous [Aucune option de valeur](no-value-options.md), les valeurs vides remplacent les valeurs précédemment conservées. Par exemple, considérez le tableau suivant avec l’attribution [!UICONTROL La plus récente] et l’expiration [!UICONTROL Session] :
 
@@ -61,7 +61,7 @@ Détails sur les paramètres d’attribution disponibles.
   | Valeurs du jeu de données |  | C | B |  | A |
   | Affectation la plus récente |  | C | B | B | A |
 
-* **[!UICONTROL Original]** : conserve par horodatage la valeur d’origine présente dans la dimension pour la durée de la période d’expiration. Si cette dimension comporte une valeur, elle n’est pas remplacée lorsqu’une autre valeur est affichée sur un événement suivant. Par exemple, considérez le tableau suivant avec l’attribution [!UICONTROL Original] et l’expiration [!UICONTROL Session] :
+* **[!UICONTROL Original]** : conserve par horodatage la valeur d’origine présente dans la dimension pour la durée de la période d’expiration. Si cette dimension comporte une valeur, elle n’est pas remplacée lorsqu’une autre valeur est vue dans un événement suivant. Par exemple, considérez le tableau suivant avec l’attribution [!UICONTROL Original] et l’expiration [!UICONTROL Session] :
 
   | Dimension | Accès 1 | Accès 2 | Accès 3 | Accès 4 | Accès 5 |
   | --- | --- | --- | --- | --- | --- |
@@ -87,7 +87,7 @@ Détails sur les paramètres d’attribution disponibles.
 
 ## Paramètres [!UICONTROL Expiration]
 
-Détails sur les paramètres d’expiration disponibles.
+Les paramètres d’expiration disponibles sont les suivants :
 
 * **Session** : expire après une session donnée. Fenêtre d’expiration par défaut.
 * **Créneau de rapport de la personne** : expire à la fin de votre créneau de rapport.
@@ -103,12 +103,12 @@ Détails sur les paramètres d’expiration disponibles.
 
 Un menu déroulant qui vous permet de lier la persistance d’une valeur de dimension aux valeurs de dimension dans une autre dimension. Les options de liste déroulante valides comprennent dʼautres dimensions incluses dans la vue de données.
 
-Consultez [Utiliser des dimensions et des mesures de liaison dans Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md) pour obtenir des exemples d’utilisation efficace des dimensions de liaison.
+Consultez [Utilisation de dimensions et de mesures de liaison dans Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md) pour obtenir des exemples d’utilisation efficace des dimensions de liaison.
 
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimensions de liaison](https://video.tv.adobe.com/v/3409292/?quality=12&learn=on&captions=fre_fr){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimensions de liaison](https://video.tv.adobe.com/v/342694/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 
@@ -119,4 +119,4 @@ Un menu déroulant qui vous permet de choisir une mesure qui agit comme un décl
 
 Ce paramètre nʼapparaît que lorsque la Dimension de liaison est plus basse dans le tableau d’objets que le composant. Lorsque la mesure de liaison est présente dans un événement, les valeurs de la dimension sont copiées à partir de la dimension au niveau de lʼévénement vers le niveau inférieur du schéma de la dimension de liaison.
 
-Consultez le deuxième exemple sous [Utiliser des dimensions et des mesures de liaison dans Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md) pour plus d’informations sur l’utilisation efficace des mesures de liaison.
+Consultez le deuxième exemple sous [Utiliser des dimensions et des mesures de liaison dans Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md) pour plus d’informations sur l’utilisation efficace des mesures de liaison.

@@ -1,17 +1,17 @@
 ---
 description: En savoir plus sur les limites connues d’Adobe Analysis Workspace et ses composants connexes
-title: Limites Connues Dans Analysis Workspace
-feature: FAQ
+title: Limites connues
+feature: Workspace Basics
 exl-id: 334cfe24-a4b2-43be-94df-5a2df90612f0
 role: User
-source-git-commit: e07b901f66a59aba1a7a517443eec73387d23c57
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 98%
+source-wordcount: '307'
+ht-degree: 100%
 
 ---
 
-# Limites connues dans Analysis Workspace
+# Limites connues
 
 Voici une liste des limites connues dans Analysis Workspace et ses composants connexes :
 

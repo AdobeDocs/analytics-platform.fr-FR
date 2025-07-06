@@ -1,12 +1,12 @@
 ---
-description: Découvrir le type de mesure et l’attribution
-title: Type de mesure et attribution
+description: Découvrez le type de mesure et l’attribution.
+title: Type De Mesure Et Attribution
 feature: Calculated Metrics
 exl-id: da73a9ba-542e-436c-bdb2-b629b5b6f760
-source-git-commit: 304b8d85767d89ee60a6fb37a128194f60ca89d4
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '612'
-ht-degree: 91%
+ht-degree: 98%
 
 ---
 
@@ -33,15 +33,15 @@ Vous pouvez configurer le type de mesure et le [modèle d’attribution](#attrib
          * Désactivez **[!UICONTROL Utiliser un modèle d’attribution différent du modèle par défaut]** pour utiliser le modèle d’attribution de colonne par défaut, à savoir Dernière touche, avec un intervalle de recherche en amont de 30 jours.
          * Activez **[!UICONTROL Utiliser un modèle d’attribution différent du modèle par défaut]**. Dans la boîte de dialogue **[!UICONTROL Modèle d’attribution de colonne]**,
 
-            * Sélectionnez un **[!UICONTROL Modèle]** dans les [modèles d’attribution](#attribution-models).
-            * Sélectionnez un **[!UICONTROL Conteneur]** parmi les options [conteneur](#container).
-            * Sélectionnez une option **[!UICONTROL Intervalle de recherche en amont]** dans l’[Intervalle de recherche en amont](#lookback-window). Si vous sélectionnez **[!UICONTROL Heure personnalisée]**, vous pouvez définir la période en **[!UICONTROL minute(s)]** jusqu’à **[!UICONTROL trimestre(s)]**.
+            * sélectionnez un **[!UICONTROL Modèle]** parmi les [modèles d’attribution](#attribution-models).
+            * sélectionnez un **[!UICONTROL Conteneur]** parmi les options de [conteneur](#container).
+            * sélectionnez un **[!UICONTROL Intervalle de recherche en amont]** dans les options d’[intervalle de recherche en amont](#lookback-window). Si vous sélectionnez **[!UICONTROL Durée personnalisée]**, vous pouvez définir la période avec un granularité allant de **[!UICONTROL minute(s)]** à **[!UICONTROL trimestre(s)]**.
 
       1. Sélectionnez **[!UICONTROL Appliquer]** pour appliquer le modèle d’attribution différent du modèle par défaut. Sélectionnez Annuler pour annuler.
 
      Si vous avez déjà défini un modèle d’attribution différent du modèle par défaut, sélectionnez **[!UICONTROL Modifier]** pour modifier la sélection.
 
-Voir [Exemple](#example) pour un exemple d’utilisation d’un modèle d’attribution, d’un conteneur et d’un intervalle de recherche en amont.
+Consultez [Exemple](#example) pour un exemple d’utilisation d’un modèle d’attribution, d’un conteneur et d’un intervalle de recherche en amont.
 
 
 ## Modèles d’attribution {#attribution-models}
@@ -93,12 +93,12 @@ Voir [Exemple](#example) pour un exemple d’utilisation d’un modèle d’attr
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_jcurve"
->title="En forme de J"
+>title="Courbe en J"
 >abstract="60 % du crédit à la dernière valeur de dimension, 20 % à la première, 20 % partagés par le milieu."
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_jshaped"
->title="En forme de J"
+>title="Courbe en J"
 >abstract="60 % du crédit à la dernière valeur de dimension, 20 % à la première, 20 % partagés par le milieu."
 
 >[!CONTEXTUALHELP]
@@ -113,7 +113,7 @@ Voir [Exemple](#example) pour un exemple d’utilisation d’un modèle d’attr
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_timedecay"
->title="Décroissance temporelle"
+>title="Atténuation temporelle"
 >abstract="Les valeurs de dimension les plus proches dans le temps d’une conversion obtiennent le plus de crédit."
 
 >[!CONTEXTUALHELP]
@@ -163,6 +163,6 @@ Voir [Exemple](#example) pour un exemple d’utilisation d’un modèle d’attr
 >[!MORELIKETHIS]
 >
 >[Paramètres des composants d’attribution](/help/data-views/component-settings/attribution.md)
->&#x200B;>[Mesure de participation](participation-metric.md)
+>>[Mesure de participation](participation-metric.md)
 >
 

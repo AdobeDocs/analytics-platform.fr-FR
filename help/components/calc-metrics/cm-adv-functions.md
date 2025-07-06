@@ -1,12 +1,12 @@
 ---
 title: Fonctions avancées
-description: Accédez à ces fonctions en cochant Afficher les options avancées dans le menu déroulant Fonctions .
+description: Découvrez les fonctions de mesures calculées avancées.
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: ca1aae1291119214f3b051f9b6df8ddcd58faa6c
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
-source-wordcount: '5247'
+source-wordcount: '5241'
 ht-degree: 99%
 
 ---
@@ -1284,13 +1284,13 @@ Renvoie Pi : 3,14159...
 >[!CONTEXTUALHELP]
 >id="functions-ls-intercept-reciprocal"
 >title="Régression réciproque : ordonnée à l’origine"
->abstract="Régression réciproque : Y = a + b X ^ -1. Renvoie a."
+>abstract="Régression réciproque : Y = a + b X ^ -1. Renvoie a."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION RÉCIPROQUE : INTERCEPTER(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Tableau]{type="Neutral"} Régression réciproque : Y = a + b X ^ -1. Renvoie a.
+[!BADGE Tableau]{type="Neutral"} Régression réciproque : Y = a + b X ^ -1. Renvoie a.
 
 | Argument | Description |
 |---|---|
@@ -1306,13 +1306,13 @@ Renvoie Pi : 3,14159...
 >[!CONTEXTUALHELP]
 >id="functions-ls-pred-reciprocal"
 >title="Régression réciproque : Y prédit"
->abstract="Régression réciproque : Y = a + b X ^ -1. Renvoie Y."
+>abstract="Régression réciproque : Y = a + b X ^ -1. Renvoie Y."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION RÉCIPROQUE : PRÉDITE Y(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Ligne]{type="Neutral"} Régression réciproque : Y = a + b X ^ -1. Renvoie Y.
+[!BADGE Ligne]{type="Neutral"} Régression réciproque : Y = a + b X ^ -1. Renvoie Y.
 
 | Argument | Description |
 |---|---|
@@ -1328,13 +1328,13 @@ Renvoie Pi : 3,14159...
 >[!CONTEXTUALHELP]
 >id="functions-ls-slope-reciprocal"
 >title="Régression réciproque : inclinaison"
->abstract="Régression réciproque : Y = a + b X ^ -1. Renvoie b."
+>abstract="Régression réciproque : Y = a + b X ^ -1. Renvoie b."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION RÉCIPROQUE : PENTE(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Tableau]{type="Neutral"} Régression réciproque : Y = a + b X ^ -1. Renvoie b.
+[!BADGE Tableau]{type="Neutral"} Régression réciproque : Y = a + b X ^ -1. Renvoie b.
 
 | Argument | Description |
 |---|---|

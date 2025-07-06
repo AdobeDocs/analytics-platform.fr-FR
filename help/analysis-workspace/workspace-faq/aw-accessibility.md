@@ -1,13 +1,13 @@
 ---
 description: Découvrez les fonctionnalités de prise en charge de l’accessibilité dans Analysis Workspace.
 title: Accessibilité Dans Analysis Workspace
-feature: FAQ
+feature: Workspace Basics
 exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
 role: User
-source-git-commit: e07b901f66a59aba1a7a517443eec73387d23c57
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 94%
+source-wordcount: '546'
+ht-degree: 91%
 
 ---
 
@@ -54,7 +54,7 @@ La navigation dans [!UICONTROL Analysis Workspace] s’effectue de haut en bas e
 
 ### Raccourcis clavier (touches de raccourci)
 
-[!UICONTROL Analysis Workspace] offre un vaste ensemble de [raccourcis clavier](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md) pour un flux de travail plus fluide.
+[!UICONTROL Analysis Workspace] offre un ensemble riche de [raccourcis clavier (touches d’accès rapide)](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md) pour un workflow plus transparent.
 
 ## Prise en charge des lecteurs d’écran et des loupes
 

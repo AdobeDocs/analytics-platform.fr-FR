@@ -1,12 +1,12 @@
 ---
-description: Dans le Gestionnaire de mesures calculées, vous pouvez définir un processus qui inclut des mesures d’approbation pour différents niveaux d’application et pour des départements ou des groupes spécifiques.
-title: Approbation des mesures calculées
+description: Découvrez comment approuver les mesures calculées.
+title: Approuver les mesures calculées
 feature: Calculated Metrics
 exl-id: da55bb2b-9d42-4fba-add4-655f7f7c7ef6
-source-git-commit: ef97b36a95e5f39f7436f5e21861d1ee5a0338dd
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 21%
+source-wordcount: '127'
+ht-degree: 4%
 
 ---
 

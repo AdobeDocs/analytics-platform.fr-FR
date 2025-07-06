@@ -1,13 +1,13 @@
 ---
-description: Le marquage des segments en tant que favoris est une autre manière de les organiser pour en faciliter l’utilisation.
-title: Marquage des segments comme favoris
+description: Découvrez comment marquer les segments comme favoris comme une autre façon d’organiser les segments pour une utilisation facile.
+title: Marquer Les Segments Comme Favoris
 feature: Filters, Segments
 exl-id: b13457dd-06e5-4316-af7e-edcf4ee46408
 role: User
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
-source-wordcount: '96'
-ht-degree: 18%
+source-wordcount: '99'
+ht-degree: 0%
 
 ---
 

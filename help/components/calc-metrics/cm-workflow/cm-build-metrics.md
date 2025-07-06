@@ -1,12 +1,12 @@
 ---
-description: Le créateur de mesures calculées fournit un canevas où faire glisser et déposer des dimensions, des mesures, des segments et des fonctions permettant de créer des mesures personnalisées en fonction de la logique de hiérarchie des conteneurs, des règles et des opérateurs. Grâce à cet outil de développement intégré, vous pouvez créer et enregistrer des mesures calculées simples ou des mesures calculées avancées complexes.
-title: Créer des mesures calculées
+description: Découvrez le créateur de mesures calculées qui fournit une zone de travail pour faire glisser et déposer des dimensions, des mesures, des segments et des fonctions permettant de créer des mesures personnalisées en fonction de la logique de hiérarchie des conteneurs, des règles et des opérateurs.
+title: Création de mesures
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: ec2fc88372814b01a04d4cc824181222ee55a83d
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
-source-wordcount: '1628'
-ht-degree: 94%
+source-wordcount: '1613'
+ht-degree: 98%
 
 ---
 
@@ -138,7 +138,7 @@ Le concept de conteneur de segment permet de créer une [mesure segmentée](metr
 * Pour ajouter un conteneur de segment à partir d’une dimension, procédez comme suit :
 
    1. Faites glisser et déposez un composant ![Dimensions](/help/assets/icons/Dimensions.svg) **[!UICONTROL Dimensions]** du panneau Composants sur **[!UICONTROL Faites glisser et déposez ici des mesures, des dimensions, des éléments de dimension, des segments et/ou des fonctions]**. Vous pouvez utiliser la fonction ![Rechercher](/help/assets/icons/Search.svg) dans la barre des composants pour rechercher des composants spécifiques.
-   1. Dans la fenêtre contextuelle **[!UICONTROL Créer un segment à partir de Dimension]**, définissez la condition du segment. Sélectionnez dans la liste des opérateurs une valeur ou saisissez-en une. Par exemple, **[!UICONTROL Mois]** **[!UICONTROL est égal à]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) `Sep 2024`.
+   1. Dans la fenêtre contextuelle **[!UICONTROL Créer un segment à partir d’une dimension]**, définissez la condition du segment. Sélectionnez dans la liste des opérateurs une valeur ou saisissez-en une. Par exemple, **[!UICONTROL Mois]** **[!UICONTROL est égal à]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) `Sep 2024`.
    1. Sélectionnez **[!UICONTROL Terminé]**. Un conteneur de segment est ajouté à la **[!UICONTROL Définition]**.
 
 
@@ -152,7 +152,7 @@ Un conteneur de segment est automatiquement ajouté à la **[!UICONTROL définit
    * Sélectionnez ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Ajouter]** depuis un conteneur :
 
       1. Sélectionnez **[!UICONTROL Segment]**. Un conteneur de segment est ajouté à la **[!UICONTROL Définition]**.
-      1. Dans le nouveau conteneur de segments, sélectionnez un segment dans le menu déroulant [!UICONTROL *Sélectionner...*].
+      1. Dans le nouveau conteneur de segment, sélectionnez un segment dans le menu déroulant [!UICONTROL *Sélectionner...*].
 
   >[!TIP]
   >
@@ -164,7 +164,7 @@ Pour supprimer un segment d’un conteneur, procédez comme suit :
 
 * Sélectionnez ![Fermer](/help/assets/icons/Close.svg) en regard du nom du segment.
 
-Voir [Mesures segmentées](metrics-with-segments.md) pour plus d’informations et d’exemples.
+Consultez [Mesures segmentées](metrics-with-segments.md) pour obtenir plus de détails et des exemples.
 
 #### Conteneur de fonction
 
@@ -200,5 +200,5 @@ Pour supprimer un conteneur, sélectionnez ![Fermer](/help/assets/icons/Close.sv
 >[!MORELIKETHIS]
 >
 >[Utilisation des fonctions](cm-using-functions.md)
->&#x200B;>[Segments ](/help/components/segments/seg-overview.md)
+>>[Segments](/help/components/segments/seg-overview.md)
 >

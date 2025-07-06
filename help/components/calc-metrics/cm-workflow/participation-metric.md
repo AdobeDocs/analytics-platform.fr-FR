@@ -1,12 +1,12 @@
 ---
-description: Grâce au créateur de mesures calculées, n’importe qui peut créer une mesure de participation.
+description: Découvrez comment créer une mesure de participation.
 title: Mesure de participation
 feature: Calculated Metrics
 exl-id: 0d102f0f-3bcc-4f3a-93d2-c2b991c636cb
-source-git-commit: b3c7ceedec7b3f6a916e97bab38fd55f1d6c7f51
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
-source-wordcount: '219'
-ht-degree: 0%
+source-wordcount: '215'
+ht-degree: 1%
 
 ---
 
