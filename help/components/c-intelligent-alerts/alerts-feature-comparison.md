@@ -4,10 +4,10 @@ title: Comparaison des fonctionnalités d’alertes dans Customer Journey Analyt
 feature: Workspace Basics
 role: User, Admin
 exl-id: 04e819c4-9fb5-4459-9f8b-40d78385ed90
-source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
+source-git-commit: 9e07dfc84bc06aef987d99c225cefb4e0406f552
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 23%
+source-wordcount: '487'
+ht-degree: 24%
 
 ---
 
@@ -45,16 +45,8 @@ Pour plus d’informations sur la manière d’ajuster le délai et sur les fact
 
 <!-- Starting with "However," the rest of this information should probably go into the actual documentation where we document the option to adjust the delay. -->
 
-## Création d’une alerte à partir d’Analysis Workspace non disponible
+## Création d’une alerte
 
-Dans Analysis Workspace sous Adobe Analytics, vous pouvez créer des alertes à partir d’Analysis Workspace de l’une des manières décrites ci-dessous. Dans Customer Journey Analytics, les options de création d’alertes depuis Analysis Workspace ne sont pas encore disponibles. Accédez plutôt au Générateur d’alertes, comme décrit dans la section [Création d’alertes](/help/components/c-intelligent-alerts/alert-builder.md).
+Dans Analysis Workspace d’Adobe Analytics, vous pouvez [créer des alertes depuis Analysis Workspace de plusieurs façons](https://experienceleague.adobe.com/en/docs/analytics/components/alerts/alert-builder). Dans Customer Journey Analytics, vous pouvez uniquement [créer une alerte](alert-builder.md) dans Analysis Workspace à partir d’une sélection dans un tableau à structure libre.
 
-Dans Adobe Analytics, les options disponibles sont les suivantes :
-
-* Sélectionnez un ou plusieurs éléments de ligne dans un tableau à structure libre, puis cliquez avec le bouton droit et sélectionnez **[!UICONTROL Créer une alerte à partir de la sélection]**.
-
-  Le créateur d’alertes est ainsi prérempli instantanément afin de créer une alerte avec les mesures et segments corrects.
-
-* Ouvrez un projet dans Analysis Workspace, puis sélectionnez **[!UICONTROL Composants]** > **[!UICONTROL Créer une alerte]**.
-
-* Ouvrez un projet dans Analysis Workspace, puis utilisez le raccourci suivant : **[!UICONTROL *ctrl *]**+**[!UICONTROL * maj *]** + **[!UICONTROL *a *]**(Windows) ou&#x200B;**[!UICONTROL * cmd *]** + **[!UICONTROL *maj *]**+**[!UICONTROL * a *]** (macOS).
+Adobe Analytics et Customer Journey Analytics prennent en charge la création d’alertes par le biais du [gestionnaire d’alertes](alert-manager.md)
