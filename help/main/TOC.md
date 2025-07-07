@@ -12,7 +12,7 @@ breadcrumb-title: Guide de Customer Journey Analytics
 source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '1269'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -97,7 +97,7 @@ ht-degree: 96%
          + [Options d’implémentation du SDK web](/help/getting-started/cja-upgrade/cja-upgrade-websdk-implementation.md)
          + [Configurer le SDK web Adobe Analytics pour Platform](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md)
          + [Utiliser la personnalisation avec Adobe Journey Optimizer](/help/getting-started/cja-upgrade/cja-upgrade-personalization-journeyoptimizer.md)
-   + Comparer à Adobe Analytics {#cja-aa-comparison}
+   + Comparer à Adobe Analytics {#cja-aa-comparison}
       + [Vue d’ensemble](../getting-started/aa-vs-cja/overview.md)
       + [Utilisation de données Adobe Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
       + [Prise en charge des fonctionnalités](../getting-started/aa-vs-cja/cja-aa.md)
@@ -163,12 +163,12 @@ ht-degree: 96%
       + [Paramètres d’exclusion](../tools/product-usage/opt-out-settings.md)
 
 + Projets Workspace {#cja-workspace}
-   + [Aperçu d’Analysis Workspace](../analysis-workspace/home.md)
+   + [Vue d’ensemble d’Analysis Workspace](../analysis-workspace/home.md)
    + [Exécution d’une analyse de base](../analysis-workspace/perform-basic-analysis.md)
    + [Exécuter une analyse avancée](../analysis-workspace/perform-adv-analysis.md)
    + Projets {#build-workspace-project}
       + [Vue d’ensemble](../analysis-workspace/build-workspace-project/freeform-overview.md)
-      + [Démarrage rapide de projets](/help/analysis-workspace/build-workspace-project/starter-projects.md)
+      + [Démarrer rapidement des projets](/help/analysis-workspace/build-workspace-project/starter-projects.md)
       + [Créer des projets](/help/analysis-workspace/build-workspace-project/create-projects.md)
       + [Ouvrir des projets](/help/analysis-workspace/build-workspace-project/open-projects.md)
       + [Commentaires dans les projets](/help/analysis-workspace/build-workspace-project/comment-projects.md)
@@ -177,7 +177,7 @@ ht-degree: 96%
       + Dossiers dans Workspace {#workspace-folders}
          + [Vue d’ensemble](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
          + [Créer des dossiers](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
-         + [Gestion des dossiers](../analysis-workspace/build-workspace-project/workspace-folders/manage-folders.md)
+         + [Gérer des dossiers](../analysis-workspace/build-workspace-project/workspace-folders/manage-folders.md)
          + [Ajouter ou déplacer des projets](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
       + [Touches de raccourci](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
       + [Palettes de couleurs](../analysis-workspace/build-workspace-project/color-palettes.md)
@@ -243,10 +243,10 @@ ht-degree: 96%
       + [Temps de lecture de média](../analysis-workspace/c-panels/media-playback-time-spent.md)
       + [Élément suivant ou précédent](../analysis-workspace/c-panels/next-previous.md)
       + [Aperçu rapide](../analysis-workspace/c-panels/quickinsight.md)
-   + Traitement et partage {#curate-share}
+   + Traiter et partager {#curate-share}
       + [Vue d’ensemble](../analysis-workspace/curate-share/send-schedule-files.md)
       + [Traitement des projets](../analysis-workspace/curate-share/curate.md)
-      + [Partage de projets](../analysis-workspace/curate-share/share-projects.md)
+      + [Partager des projets](../analysis-workspace/curate-share/share-projects.md)
       + [Création de liens partageables](../analysis-workspace/curate-share/shareable-links.md)
       + [Projets en lecture seule](../analysis-workspace/curate-share/view-only-projects.md)
    + Exporter {#export}
@@ -513,4 +513,4 @@ ht-degree: 96%
    + [Optimiser les performances](../technotes/optimizing-performance.md)
    + [Gérer l’utilisation](../technotes/estimate-usage.md)
 
-+ [API Customer Journey Analytics](https://developer.adobe.com/cja-apis/docs/)
++ [API Customer Journey Analytics](https://developer.adobe.com/cja-apis/docs/?lang=fr)

@@ -1,22 +1,22 @@
 ---
-description: Découvrez comment partager des projets dans Analysis Workspace.
-keywords: Partage de projets Analysis Workspace
-title: Partage de projets
+description: Découvrez comment partager des projets dans Analysis Workspace.
+keywords: Partage Analysis Workspace
+title: Partager des projets
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
 source-git-commit: 8e10818efa7da54b0802c56e5388e6c7ef7fd8b6
 workflow-type: tm+mt
 source-wordcount: '2089'
-ht-degree: 74%
+ht-degree: 76%
 
 ---
 
-# Partage de projets {#share-projects}
+# Partager des projets {#share-projects}
 
 >[!CONTEXTUALHELP]
 >id="workspace_shareprojects"
->title="Partage de projets"
+>title="Partager des projets"
 >abstract="Vous pouvez partager l’un de ces rôles de projet avec d’autres utilisateurs et utilisatrices de votre entreprise."
 
 
@@ -40,14 +40,14 @@ Les [traitements](curate.md) appliqués avant le partage sont répercutés lorsq
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Partage de projet dans Analysis Workspace](https://video.tv.adobe.com/v/40030/?quality=12&learn=on&captions=fre_fr){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Partage de projet dans Analysis Workspace](https://video.tv.adobe.com/v/36207/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 
 >[!ENDSHADEBOX]
 
 
-## Partager avec des utilisateurs et des groupes de votre organisation {#Add}
+## Partager avec des utilisateurs, des utilisatrices et des groupes de votre organisation {#Add}
 
 Vous pouvez partager un projet avec des utilisateurs, des utilisatrices ou des groupes Analysis Workspace existants de votre organisation. Lorsque vous partagez un projet comme décrit dans cette section, les utilisateurs avec lesquels vous partagez le projet doivent déjà disposer d’un compte Customer Journey Analytics.
 
@@ -61,9 +61,9 @@ Vous pouvez partager un rôle spécifique avec des utilisateurs et utilisatrices
 
 Lorsque vous partagez un rôle de projet spécifique avec des utilisateurs et utilisatrices et des groupes de votre organisation, tenez compte des points suivants :
 
-* Les rôles de projet (**[!UICONTROL Modifier l’original]**, **[!UICONTROL Modifier la copie]** et **[!UICONTROL Lecture seule]**) s’appliquent à l’utilisateur ou à l’utilisatrice et à un ID de projet spécifique. Les rôles de projet ne dépendent pas des autorisations d&#39;utilisateur gérées dans [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/fr/docs/core-services/interface/administration/admin-getting-started).
+* Les rôles de projet (**[!UICONTROL Modifier l’original]**, **[!UICONTROL Modifier la copie]** et **[!UICONTROL Lecture seule]**) s’appliquent à l’utilisateur ou à l’utilisatrice et à un ID de projet spécifique. Les rôles de projet ne dépendent pas des autorisations d&#39;utilisateur gérées dans [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/admin-getting-started).
 
-* Dans Customer Journey Analytics, les groupes sont définis par profils de produit dans l’[Admin Console Adobe Experience Cloud](https://experienceleague.adobe.com/fr/docs/core-services/interface/administration/admin-getting-started). Les administrateurs peuvent partager des ressources avec n’importe quel groupe, y compris *Tous*. Les personnes ne disposant pas de droit d’administration peuvent partager des projets avec des groupes dont elles sont membres, à l’exception de *Tous*.
+* Dans Customer Journey Analytics, les groupes sont définis par profils de produit dans l’[Admin Console Adobe Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/admin-getting-started). Les administrateurs peuvent partager des ressources avec n’importe quel groupe, y compris *Tous*. Les personnes ne disposant pas de droit d’administration peuvent partager des projets avec des groupes dont elles sont membres, à l’exception de *Tous*.
 
 * Si un utilisateur ou une utilisatrice reçoit plusieurs rôles, le rôle le plus élevé s’applique. Ce scénario peut se produire si un utilisateur est ajouté à la fois en tant que personne individuelle et en tant que membre d’un groupe. Par exemple, si un utilisateur ou une utilisatrice reçoit le rôle **[!UICONTROL Modifier l’original]** en tant que personne individuelle et le rôle **[!UICONTROL Lecture seule]** en tant que membre d’un groupe, la personne bénéficie d’une expérience de projet **[!UICONTROL Modifier l’original]**.
 
@@ -117,7 +117,7 @@ Lorsque vous partagez un lien comme décrit dans cette section, tenez compte des
 
 * Les destinataires qui utilisent le lien doivent se connecter à Customer Journey Analytics avant d’accéder au projet.
 
-* Si la personne destinataire ne se voit pas attribuer un rôle et reçoit un [lien partageable](/help/analysis-workspace/curate-share/shareable-links.md) vers le projet (**[!UICONTROL Partager] > [!UICONTROL Obtenir le lien du projet]**), elle se voit attribuer un rôle par défaut. Les personnes chargées de l’administration reçoivent **[!UICONTROL Modifier l’original]** et les autres reçoivent **[!UICONTROL Modifier la copie]**.
+* Si la personne destinataire ne se voit pas attribuer de rôle et reçoit un [lien partageable](/help/analysis-workspace/curate-share/shareable-links.md) vers le projet (**[!UICONTROL Partager] > [!UICONTROL Obtenir le lien du projet]**), elle se verra attribuer un rôle par défaut. Les personnes chargées de l’administration reçoivent **[!UICONTROL Modifier l’original]** et les autres reçoivent **[!UICONTROL Modifier la copie]**.
 
 Pour partager le lien du projet avec les utilisateurs et utilisatrices de votre organisation, procédez comme suit :
 
@@ -161,7 +161,7 @@ Vous pouvez accorder un [accès en lecture seule](/help/analysis-workspace/curat
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Partager avec tout le monde](https://video.tv.adobe.com/v/3452452/?quality=12&learn=on&captions=fre_fr){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Partager avec tout le monde](https://video.tv.adobe.com/v/3420093/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 
@@ -216,7 +216,7 @@ Vous pouvez partager les composants incorporés qui font partie de votre projet.
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Partager des composants incorporés dans Analysis Workspace](https://video.tv.adobe.com/v/327496/?quality=12&learn=on&captions=fre_fr){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Partager des composants incorporés dans Analysis Workspace](https://video.tv.adobe.com/v/24713/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 

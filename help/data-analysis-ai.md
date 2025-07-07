@@ -8,11 +8,11 @@ exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
 source-git-commit: 3c3fd6b814485871f2fd9249b0ffa9a0b24a360c
 workflow-type: tm+mt
 source-wordcount: '2371'
-ht-degree: 82%
+ht-degree: 83%
 
 ---
 
-# Visualisation des données avec Data Insights Agent
+# Visualiser des données avec l’agent Data Insights
 
 >[!AVAILABILITY]
 >
@@ -39,9 +39,9 @@ Utiliser l’agent Data Insights pour répondre à des questions sur des donnée
 | **Mécanismes de commentaires** | <ul><li>Pouces levés</li><li>Pouces baissés</li><li>Drapeau</li></ul> |  |
 
 
-## Gérer l’accès à Data Insights Agent
+## Gérer l’accès à l’agent Data Insights
 
-Les paramètres suivants régissent l’accès à l’agent Data Insights dans Customer Journey Analytics :
+Les paramètres suivants régissent l’accès à l’agent Data Insights dans Customer Journey Analytics :
 
 * **Accès à la solution** : l’agent Data Insights est disponible pour tous les clients et clientes Customer Journey Analytics dans le cadre d’un programme en accès limité jusqu’au 30 novembre 2025. Il n’est pas disponible dans Adobe Analytics.
 
@@ -246,7 +246,7 @@ Vous trouverez ci-dessous les bonnes pratiques relatives à votre configuration 
 >[!MORELIKETHIS]
 >
 >[Paramètres de composant](/help/data-views/component-settings/overview.md)
->&#x200B;>[Dictionnaire de données ](/help/components/data-dictionary/data-dictionary-overview.md)
->&#x200B;>[Approuver la mesure calculée](/help/components/calc-metrics/cm-workflow/cm-approving.md)
->&#x200B;>[Partage de segments ](/help/components/segments/seg-share.md)
+>>[Dictionnaire de données ](/help/components/data-dictionary/data-dictionary-overview.md)
+>>[Approuver la mesure calculée](/help/components/calc-metrics/cm-workflow/cm-approving.md)
+>>[Partage de segments ](/help/components/segments/seg-share.md)
 >

@@ -1,5 +1,5 @@
 ---
-description: Découvrez comment organiser vos projets dans des dossiers dans Analysis Workspace.
+description: Découvrez comment organiser vos projets dans des dossiers dans Analysis Workspace.
 keywords: Analysis Workspace
 title: Présentation des dossiers
 feature: Workspace Basics
@@ -8,7 +8,7 @@ role: User
 source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
 source-wordcount: '419'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 96%
 
 Les dossiers dans Workspace vous aident à organiser et à classer vos projets. La fonctionnalité Dossiers vous permet de créer des dossiers et des sous-dossiers pour gérer vos projets.
 
-Les dossiers dans Customer Journey Analytics sont disponibles sur la page de destination Workspace lorsque vous avez sélectionné [Afficher les dossiers et les projets](../freeform-overview.md#show-selector).
+Les dossiers dans Customer Journey Analytics sont disponibles sur la page de destination Workspace lorsque vous avez sélectionné [Afficher les dossiers et les projets](../freeform-overview.md#show-selector).
 
 Workspace comporte deux types de dossiers : le dossier Entreprise et les dossiers personnels. Un dossier d’entreprise partagé permet aux administrateurs et aux administratrices de créer et de partager facilement du contenu avec tous les utilisateurs et toutes les utilisatrices de Workspace.
 
