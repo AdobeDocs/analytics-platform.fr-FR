@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
 source-git-commit: 94d1bcdb2419f8c2e27bd77bb2e35b04cd30d632
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '795'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Découvrez les améliorations les plus récentes apportées au produit et à la 
 
 >[!TAB B2B Edition]
 
-Customer Journey Analytics B2B Edition permet aux entreprises B2B d’aligner leurs équipes marketing, commerciale et produits en fournissant des informations de compte exploitables qui stimulent l’augmentation des revenus. Le compte étant placé au centre du modèle de données, toutes les analyses se concentrent sur le parcours de compte.
+Customer Journey Analytics B2B Edition permet aux sociétés B2B d’aligner leurs équipes marketing, ventes et produits en fournissant des informations de compte exploitables qui stimulent l’augmentation des revenus. Le compte étant placé au centre du modèle de données, toutes les analyses se concentrent sur le parcours du compte.
 
 [![Image](assets/learn-more-button.svg)](/help/getting-started/cja-b2b-edition.md)
 
@@ -150,11 +150,11 @@ Comprenez les différences entre Customer Journey Analytics et Adobe Analytic
   <tr style="border: 0;">
     <td>
       <img src="./assets/analytics.svg" width="35px"><br/>
-      <strong>Comparer à Adobe Analytics</strong><br/><a href="/help/getting-started/aa-vs-cja/overview.md">Aperçu</a> - <a href="/help/getting-started/aa-to-cja.md">Évolution</a> - <a href="/help/getting-started/aa-vs-cja/aa-data-in-cja.md">Utiliser les données Adobe Analytics</a> - <a href="/help/getting-started/aa-vs-cja/cja-aa.md">Prise en charge des fonctionnalités</a> - <a href="/help/getting-started/aa-vs-cja/terminology.md">Terminologie</a> - <a href="/help/getting-started/aa-vs-cja/data-processing-comparisons.md">Traitement des données</a> - <a href="/help/getting-started/cja-b2b-edition.md">Customer Journey Analytics B2B edition</a>
+<strong>Comparer à Adobe Analytics</strong><br/><a href="/help/getting-started/aa-vs-cja/overview.md">Vue d’ensemble</a> - <a href="/help/getting-started/aa-to-cja.md">Évolution</a> - <a href="/help/getting-started/aa-vs-cja/aa-data-in-cja.md">Utiliser les données Adobe Analytics</a> - <a href="/help/getting-started/aa-vs-cja/cja-aa.md">Prise en charge des fonctionnalités</a> - <a href="/help/getting-started/aa-vs-cja/terminology.md">Terminologie</a> - <a href="/help/getting-started/aa-vs-cja/data-processing-comparisons.md">Traitement des données</a> - <a href="/help/getting-started/cja-b2b-edition.md">Customer Journey Analytics B2B Edition</a>
     </td>
     <td>
       <img src="./assets/connections.svg" width="35px"><br/>
-      <strong>Connexions</strong><br/><a href="/help/connections/overview.md">Vue d’ensemble</a> - <a href="/help/connections/create-connection.md">Créer</a> - <a href="/help/connections/manage-connections.md">Gérer</a> - <a href="/help/stitching/overview.md">Assembler</a> - <a href="/help/connections/combined-dataset.md">Jeu de données d’événement combiné</a> - <a href="/help/connections/standard-lookups.md">Recherches standard</a>
+<strong>Connexions</strong><br/><a href="/help/connections/overview.md">Vue d’ensemble</a> - <a href="/help/connections/create-connection.md">Créer</a> - <a href="/help/connections/manage-connections.md">Gérer</a> - <a href="/help/stitching/overview.md">Assembler</a> - <a href="/help/connections/combined-dataset.md">Jeux de données d’événements combinés</a> - <a href="/help/connections/standard-lookups.md">Recherches standard</a>
     </td>
      <td>
       <img src="./assets/dataviews.svg" width="35px"><br/>
@@ -181,8 +181,8 @@ Comprenez les différences entre Customer Journey Analytics et Adobe Analytic
 ## Ressources supplémentaires
 
 <table style="table-layout:fixed"><tr style="border: 0;">
-<td><strong>Customer Journey Analytics</strong><br/>
-<a href="https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/overview" target="_blank">Tutoriels</a> - <a href="https://helpx.adobe.com/fr/legal/product-descriptions/customer-journey-analytics.html?lang=fr" target="_blank">Description du produit Customer Journey Analytics</a> - <a href="https://helpx.adobe.com/fr/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html?lang=fr" target="_blank">Description du produit Adobe Analytics (module complémentaire Customer Journey Analytics)</a> - <a href="https://helpx.adobe.com/fr/legal/product-descriptions/customer-journey-analytics-b2b.html" target="_blank">Description du produit Customer Journey Analytics B2B edition</a> - <a href="https://developer.adobe.com/cja-apis/docs/" target="_blank">API Customer Journey Analytics</a> - <a href="/help/ai-assistant.md">Assistant IA</a>
+<td><strong>Customer Journey Analytics</strong><br/>
+<a href="https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/overview" target="_blank">Tutoriels</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html?lang=fr" target="_blank">Description du produit Customer Journey Analytics</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html?lang=fr" target="_blank">Description du produit Adobe Analytics (module complémentaire Customer Journey Analytics)</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics-b2b.html?lang=fr" target="_blank">Description du produit Customer Journey Analytics B2B Edition</a> - <a href="https://developer.adobe.com/cja-apis/docs/?lang=fr" target="_blank">API Customer Journey Analytics</a> - <a href="/help/ai-assistant.md">Assistant IA</a>
 </td>
 <td><strong>Ingestion des données</strong><br/><a href="/help/data-ingestion/data-ingestion.md">Vue d’ensemble</a> - <a href="/help/data-ingestion/analytics.md">Analytics</a> - <a href="/help/data-ingestion/aepwebsdk.md">SDK Web</a> - <a href="/help/data-ingestion/aepmobilesdk.md">SDK Mobile</a> - <a href="/help/data-ingestion/batch.md">Lot</a> - <a href="/help/data-ingestion/streaming.md">Streaming</a> - <a href="/help/data-ingestion/sources.md">Sources</a> - <a href="/help/data-ingestion/serverapi.md">API du serveur</a>
 </td>

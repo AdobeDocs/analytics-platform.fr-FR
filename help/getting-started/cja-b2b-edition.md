@@ -7,9 +7,9 @@ role: User, Admin
 badgePremium: label="B2B Edition"
 exl-id: 89e482b8-8082-4413-8fd3-cc1331780af4
 source-git-commit: 60035b8fc65627bf5ead2a50959ce9cc5fe48604
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '472'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -20,8 +20,8 @@ ht-degree: 97%
 
 Adobe Analytics était à l’origine un outil d’analyse web et numérique pour les responsables marketing, tandis que Customer Journey Analytics a élargi la portée pour inclure les données multicanaux, hors ligne et sur plusieurs plateformes.  Ces deux outils aident les entreprises B2C (Business to Consumer) à analyser et à optimiser leurs efforts marketing et leurs expériences client. Concentrez-vous sur **le reporting et l’analyse basés sur la personne** : examinez le parcours client, où le client ou la cliente est une personne qui interagit avec votre marque sur plusieurs canaux.
 
-![Image principale B2B](assets/b2b-image.png)
-Customer Journey Analytics B2B edition ajoute **rapports et analyses basés sur les comptes**. Dans les ventes B2B (business-to-business), le parcours d’achat implique plusieurs parties, des points de contact en ligne et hors ligne, ainsi que des étapes clés avant de conclure une transaction. Les entreprise B2B doivent suivre toutes ces interactions dans une vue de parcours unifiée pour analyser et optimiser efficacement leurs efforts de marketing et leurs expériences de compte.
+![Image principale de B2B](assets/b2b-image.png)
+Customer Journey Analytics B2B Edition ajoute des fonctionnalités de **reporting et d’analyse basés sur les comptes**. Dans les ventes B2B (business-to-business), le parcours d’achat implique plusieurs parties, des points de contact en ligne et hors ligne, ainsi que des étapes clés avant de conclure une transaction. Les entreprise B2B doivent suivre toutes ces interactions dans une vue de parcours unifiée pour analyser et optimiser efficacement leurs efforts de marketing et leurs expériences de compte.
 
 Les caractéristiques de vente B2B standard sont les suivantes :
 
@@ -38,13 +38,13 @@ Les ventes et le marketing B2B ont évolué au-delà des entonnoirs traditionnel
 
 Les responsables marketing B2B sont soumis à une pression croissante pour démontrer comment leurs activités contribuent à la génération de revenus.  Bien qu’il soit essentiel d’aligner les efforts marketing sur les objectifs commerciaux et de mesurer l’impact sur les revenus, de nombreux outils de mesure sont conçus pour les scénarios B2C. Par conséquent, les responsables marketing B2B recherchent des outils dédiés qui fournissent des informations précises et s’alignent sur leurs objectifs spécifiques.
 
-Customer Journey Analytics B2B Edition permet aux entreprises B2B d’aligner leurs équipes marketing, commerciale et produits en fournissant des informations de compte exploitables qui stimulent l’augmentation des revenus. Le compte étant placé au centre du modèle de données, toutes les analyses se concentrent sur le parcours de compte. L’ajout d’une nouvelle couche d’entités (comptes, opportunités et groupes d’achat) en plus des événements basés sur les personnes et le temps, crée une vue d’ensemble complète du cycle de vie du marketing et des revenus B2B.
+Customer Journey Analytics B2B Edition permet aux sociétés B2B d’aligner leurs équipes marketing, ventes et produits en fournissant des informations de compte exploitables qui stimulent l’augmentation des revenus. Le compte étant placé au centre du modèle de données, toutes les analyses se concentrent sur le parcours de compte. L’ajout d’une nouvelle couche d’entités (comptes, opportunités et groupes d’achat) en plus des événements basés sur les personnes et le temps, crée une vue d’ensemble complète du cycle de vie du marketing et des revenus B2B.
 
 
 >[!MORELIKETHIS]
 >
 >[Concepts et fonctionnalités B2B](cja-b2b-concepts-features.md)
->&#x200B;>[Guide de démarrage rapide B2B](cja-b2b-quick-start-guide.md)
->&#x200B;>[Guide de transition B2B](cja-b2b-transition.md)
->&#x200B;>[Cas d’utilisation B2B](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)
+>>[Guide de démarrage rapide B2B](cja-b2b-quick-start-guide.md)
+>>[Guide de transition B2B](cja-b2b-transition.md)
+>>[Cas d’utilisation B2B](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)
 >

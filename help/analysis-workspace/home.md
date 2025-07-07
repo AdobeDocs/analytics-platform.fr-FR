@@ -1,15 +1,15 @@
 ---
 keywords: Analysis Workspace
 title: Vue d’ensemble d’Analysis Workspace
-description: Découvrez Analysis Workspace, le principal outil d’analyse d’Adobe Analytics. Utilisez des projets, des panneaux, des tableaux, des visualisations et d’autres composants pour donner vie aux données, ainsi que pour traiter et partager votre analyse.
+description: Découvrez Analysis Workspace, le principal outil d’analyse d’Adobe Analytics. Utilisez des projets, des panneaux, des tableaux, des visualisations et d’autres composants pour donner vie aux données, ainsi que pour traiter et partager votre analyse.
 feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
 source-git-commit: 9056b8b172ae7a2267bf12de4b2355d1a1364b32
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1490'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Analysis Workspace vous permet de créer rapidement des analyses pour recueilli
 
 >[!BEGINSHADEBOX]
 
-Voir la vidéo de démonstration ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Vue d’ensemble d’Analysis Workspace](https://video.tv.adobe.com/v/3424559/?quality=12&learn=on&captions=fre_fr){target="_blank"}.
+Voir la vidéo de démonstration ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Vue d’ensemble d’Analysis Workspace](https://video.tv.adobe.com/v/26266/?quality=12&learn=on){target="_blank"}.
 
 {{videoaa}}
 
@@ -34,7 +34,7 @@ L’image suivante et le tableau qui l’accompagne présentent les principaux �
 | Emplacement | Nom et fonction |
 |:---------:|----------|
 | A | Contient le nom du projet, une structure de menus pour accéder aux fonctionnalités, un bouton ![Bouton Précédent](/help/assets/icons/ChevronLeft.svg) pour revenir à votre liste de projets et un bouton **[!UICONTROL Partager]** pour [partager votre projet Workspace](/help/analysis-workspace/curate-share/share-projects.md). <br/>Sélectionnez à tout moment le nom de votre projet (par exemple : Nouveau projet) pour le modifier. <br/>Sélectionnez ![Supprimer des favoris](/help/assets/icons/StarOutline.svg) pour ajouter votre projet aux projets favoris ![Ajouter aux favoris](/help/assets/icons/Star.svg). |
-| B | **Panneau Bouton :** contient des boutons permettant d’accéder aux principales [fonctionnalités](#features) d’Analysis Workspace :<ul><li>![WebPage](/help/assets/icons/WebPage.svg) [[!UICONTROL Panneaux]](/help/analysis-workspace/c-panels/panels.md)</li><li>![Analyse guidée](/help/assets/icons/GuidedAnalysis.svg) [[!UICONTROL Analyse guidée]](/help/guided-analysis/overview.md)</li><li>![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) [[!UICONTROL Visualisations]](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)</li><li>![Traiter](/help/assets/icons/Curate.svg) [[!UICONTROL Composants]](/help/components/overview.md)</li><li>![ViewList](/help/assets/icons/ViewList.svg) [[!UICONTROL Table des matières]](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md)</li><li>![Signet](/help/assets/icons/Bookmark.svg) [[!UICONTROL Dictionnaire de données]](/help/components/data-dictionary/data-dictionary-overview.md)</li></ul> |
+| B | **Panneau de boutons :** contient des boutons permettant d’accéder aux [fonctionnalités](#features) clés d’Analysis Workspace :<ul><li>![WebPage](/help/assets/icons/WebPage.svg) [[!UICONTROL Panneaux]](/help/analysis-workspace/c-panels/panels.md)</li><li>![Analyse guidée](/help/assets/icons/GuidedAnalysis.svg) [[!UICONTROL Analyse guidée]](/help/guided-analysis/overview.md)</li><li>![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) [[!UICONTROL Visualisations]](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)</li><li>![Traiter](/help/assets/icons/Curate.svg) [[!UICONTROL Composants]](/help/components/overview.md)</li><li>![ViewList](/help/assets/icons/ViewList.svg) [[!UICONTROL Table des matières]](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md)</li><li>![Signet](/help/assets/icons/Bookmark.svg) [[!UICONTROL Dictionnaire de données]](/help/components/data-dictionary/data-dictionary-overview.md)</li></ul> |
 | C | **Panneau de gauche :** cette zone contient des composants, des visualisations, des listes ou des panneaux individuels. Le contenu dépend du bouton sélectionné dans le panneau des boutons. |
 | D | **Zone de travail :** il s’agit de la zone principale dans laquelle vous faites glisser le contenu à partir du panneau de gauche pour créer votre projet. Le projet se met à jour de manière dynamique lorsque vous ajoutez des panneaux, des visualisations aux panneaux, et des composants aux visualisations. Vous pouvez créer plusieurs panneaux et, dans chaque panneau, créer plusieurs visualisations.<br/>Chaque panneau est basé sur une vue de données sélectionnée. La vue de données sélectionnée détermine les composants disponibles, tels que les mesures et les dimensions. Consultez [Panneaux - Vue de données](/help/analysis-workspace/c-panels/panels.md#data-view) pour plus d’informations. |
 
