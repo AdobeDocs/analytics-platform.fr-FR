@@ -4,11 +4,11 @@ description: Concepts et fonctions de B2B edition de Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Basics
 role: User, Admin
-badgePremium: label="B2B edition"
+badgePremium: label="B2B Edition"
 exl-id: df2cc922-d214-49b9-8fdb-443cc1dac05b
-source-git-commit: 68f2fe684f6eb9590ab047e893fb04b1cbe1a8cd
+source-git-commit: a9c22cfd7077fd9e1ac4b9ea4ec0e016e9d2425b
 workflow-type: tm+mt
-source-wordcount: '1469'
+source-wordcount: '1468'
 ht-degree: 2%
 
 ---
@@ -87,7 +87,7 @@ Le B2B de Customer Journey Analytics fait la distinction entre les types de donn
 | Type de données | Série temporelle | Enregistrements de conteneur | Enregistrements de champ |
 |---|---|---|---|
 | **Jeux de données** | **Jeux de données d’événements**<br/> Par exemple :<ul><li>Analyse numérique</li><li>Événements CRM</li><li>Événements en personne</li><li>Données du centre d’appels</li></ul> | **Jeux de données de profil**<br/> Par exemple :<ul><li>Enregistrements CRM</li><li>Enregistrements B2B AJO</li><li>Enregistrements CDP</li><ul> | **Classifications**<br/> Par exemple :<ul><li>Enregistrements de campagne</li><li>Enregistrements de listes marketing</li><li>Métadonnées de contenu</li><li>Enregistrements de produit</li></ul> |
-| Configuration requise | **Horodatage**<br> Chaque enregistrement nécessite :<ul><li>ID de compte</li><li>ID de compte global</li><li>ID de personne</li></ul> | **Identifiant de compte**<br> Les enregistrements ont besoin d&#39;un identifiant de conteneur, comme :<ul><li>Compte</li><li>Personne</li><li>Opportunité</li><li>Groupe d’achat</li></ul> | **Clé correspondante**<br> Les enregistrements ont besoin d&#39;un identifiant contenu dans un conteneur ou un jeu de données d&#39;événement, comme :<ul><li>ID de campagne</li><li>Identifiant de contenu</li><li>ID de produit</li></ul> |
+| Configuration requise | **Horodatage**<br> Chaque enregistrement nécessite :<ul><li>ID de compte</li><li>Identifiant de compte global (facultatif)</li></ul> | **Identifiant de compte**<br> Les enregistrements ont besoin d&#39;un identifiant de conteneur, comme :<ul><li>Compte</li><li>Personne</li><li>Opportunité</li><li>Groupe d’achat</li></ul> | **Clé correspondante**<br> Les enregistrements ont besoin d&#39;un identifiant contenu dans un conteneur ou un jeu de données d&#39;événement, comme :<ul><li>ID de campagne</li><li>Identifiant de contenu</li><li>ID de produit</li></ul> |
 
 {style="table-layout:fixed"}
 
