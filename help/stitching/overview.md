@@ -72,8 +72,8 @@ Veillez à ne pas confondre le groupement avec ce qui suit :
 >[!MORELIKETHIS]
 >
 >[Groupement basé sur les champs](fbs.md)
->>[Groupement basé sur les graphes](gbs.md)
->>[Utiliser le groupement](use-stitching.md)
->>[Valider le groupement](validate.md)
->>[Questions fréquentes sur le groupement](faq.md)
+>&#x200B;>[Groupement basé sur les graphes](gbs.md)
+>&#x200B;>[Utiliser le groupement](use-stitching.md)
+>&#x200B;>[Valider le groupement](validate.md)
+>&#x200B;>[Questions fréquentes sur le groupement](faq.md)
 
