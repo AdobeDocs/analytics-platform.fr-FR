@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 1a697ce0372d1cb544940778850714a198a000ec
-workflow-type: ht
-source-wordcount: '741'
-ht-degree: 100%
+source-git-commit: 50599b36d333cae3735c6d4fd1b0af6fcabe9177
+workflow-type: tm+mt
+source-wordcount: '735'
+ht-degree: 97%
 
 ---
 
@@ -51,7 +51,7 @@ L’analyse cross-canal vous est utile si vous combinez un ou plusieurs des jeux
 >[!IMPORTANT]
 >
 >
->- Appliquez également toute modification que vous apportez au schéma du jeu de données d’événement source au nouveau schéma du jeu de données groupé, sinon le jeu de données groupé sera rompu.
+>- Appliquez également toute modification que vous apportez au schéma du jeu de données d’événement source au nouveau schéma du jeu de données groupé.
 >
 >- Si vous supprimez le jeu de données source, le jeu de données groupé cesse le traitement et est supprimé par le système.
 >
