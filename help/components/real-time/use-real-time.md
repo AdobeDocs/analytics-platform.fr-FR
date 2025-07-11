@@ -26,13 +26,13 @@ Pour utiliser les rapports en temps réel, activez le bouton (bascule) **[!UICON
 * [Panneau à structure libre](/help/analysis-workspace/c-panels/freeform-panel.md)
 * ...
 
-Un message contenant la date et l’heure de la dernière actualisation des données s’affiche. Par exemple : [!UICONTROL  *Dernière actualisation à 19 h 55*].
+Un message contenant la date et l’heure de la dernière actualisation des données s’affiche. Par exemple : [!UICONTROL &#x200B; *Dernière actualisation à 19 h 55*].
 
 Sélectionnez la période en temps réel pour laquelle vous souhaitez créer un rapport dans le menu déroulant. Les options disponibles sont les suivantes :
 
 * [!UICONTROL 15 dernières minutes]
 * [!UICONTROL 30 dernières minutes]
-* [!UICONTROL Dernière heure ]
+* [!UICONTROL Dernière heure &#x200B;]
 * [!UICONTROL 8 dernières heures]
 * [!UICONTROL Dernières 24 heures]
 
