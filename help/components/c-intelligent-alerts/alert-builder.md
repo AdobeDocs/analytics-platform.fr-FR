@@ -7,7 +7,7 @@ exl-id: 5b4b2e2b-0a73-48df-a40c-98d2c47f94c8
 source-git-commit: 9e07dfc84bc06aef987d99c225cefb4e0406f552
 workflow-type: tm+mt
 source-wordcount: '990'
-ht-degree: 64%
+ht-degree: 65%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 64%
 >[!CONTEXTUALHELP]
 >id="components_alerts_timegranularity"
 >title="Granularité temporelle"
->abstract="La granularité temporelle fait référence à la fréquence de vérification de l’alerte."
+>abstract="La granularité temporelle indique la fréquence de vérification de l’alerte."
 
 <!-- markdownlint-enable MD034 -->
 

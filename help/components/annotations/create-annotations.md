@@ -7,7 +7,7 @@ role: User, Admin
 source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
 source-wordcount: '875'
-ht-degree: 86%
+ht-degree: 91%
 
 ---
 
@@ -41,7 +41,7 @@ Pour définir l’annotation, vous utilisez le [[!UICONTROL créateur d’annota
 >[!CONTEXTUALHELP]
 >id="components_annotations_details"
 >title="Détails des annotations"
->abstract="Les annotations vous permettent de communiquer efficacement à votre organisation les nuances et informations concernant les données contextuelles. Les annotations vous permettent de lier des événements de calendrier à des dimensions et mesures spécifiques."
+>abstract="Les annotations vous permettent de communiquer efficacement à votre organisation les nuances et informations concernant les données contextuelles. Elles vous permettent de lier des événements de calendrier à des dimensions et à des mesures spécifiques."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -50,7 +50,7 @@ Pour définir l’annotation, vous utilisez le [[!UICONTROL créateur d’annota
 >[!CONTEXTUALHELP]
 >id="components_annotations_scope"
 >title="Portée"
->abstract="La portée vous permet de personnaliser les données annotées. Les segments et mesures calculées n’héritent pas automatiquement des annotations appliquées aux composants utilisés dans leurs définitions. Vous pouvez ajouter de nouvelles mesures calculées à la section Portée d’une annotation existante. Les nouveaux segments nécessitent une nouvelle annotation."
+>abstract="La portée vous permet de personnaliser les données qui seront annotées. Les mesures calculées et les segments n’hériteront pas automatiquement des annotations appliquées aux composants utilisés dans leurs définitions. Vous pouvez ajouter de nouvelles mesures calculées à la section Portée d’une annotation existante. Les nouveaux segments nécessitent une nouvelle annotation."
 
 <!-- markdownlint-enable MD034 -->
 

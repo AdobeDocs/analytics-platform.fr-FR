@@ -51,7 +51,7 @@ Procédez comme suit lors de l’export de tableaux complets vers le cloud :
 
 ![Processus d’export de tableau complet décrit dans les étapes 1 à 4.](assets/export-full-table-process.png)
 
-## Exporter des tables complètes  {#export-from-workspace}
+## Exporter des tableaux complets  {#export-from-workspace}
 
 <!-- markdownlint-disable MD034 -->
 
