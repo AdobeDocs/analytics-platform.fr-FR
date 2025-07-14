@@ -440,4 +440,4 @@ Cependant, si vous liez `product_finding_method` à la mesure Ajouts au panier, 
 
 >[!MORELIKETHIS]
 >
->Tutoriel [Lier des dimensions dans les vues de données](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views.html)
+>Tutoriel [Lier des dimensions dans les vues de données](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views.html?lang=fr)
