@@ -1,10 +1,10 @@
 ---
-title: Utilisation des dimensions et des mesures de liaison dans Customer Journey Analytics
+title: Utiliser des dimensions et des mesures de liaison dans Customer Journey Analytics
 description: Attribuez des dimensions aux tableaux dʼobjets et effectuez ainsi une analyse poussée de la persistance.
 exl-id: 5e7c71e9-3f22-4aa1-a428-0bea45efb394
 feature: Use Cases
 role: User
-source-git-commit: 1590b7fbdedfacf4665d191220156c887f9c562a
+source-git-commit: db47e3414046a2222c2cb95588c4e3cc6988e6be
 workflow-type: tm+mt
 source-wordcount: '1342'
 ht-degree: 70%
@@ -83,7 +83,7 @@ Accédez à **[!UICONTROL Vues de données]** et liez la dimension [!DNL Product
 
 ![Dimension de liaison](../assets/binding-dimension.png)
 
-Lorsque vous définissez ce modèle de persistance, Customer Journey Analytics prend note du nom du produit chaque fois que la couleur du produit est définie. Lorsqu’il reconnaît le même nom de produit dans un événement ultérieur pour cette personne, la couleur du produit est également ajoutée. Lorsque vous liez la couleur du produit à son nom, les mêmes données ressembleraient à ce qui suit :
+Lorsque vous définissez ce modèle de persistance, Customer Journey Analytics prend en compte le nom du produit chaque fois que la couleur du produit est définie. Lorsqu’il reconnaît le même nom de produit dans un événement ultérieur pour cette personne, la couleur du produit est également transférée. Lorsque vous liez la couleur du produit à son nom, les mêmes données ressembleraient à ce qui suit :
 
 | product.color | chiffre d’affaires |
 | --- | --- |
@@ -92,9 +92,9 @@ Lorsque vous définissez ce modèle de persistance, Customer Journey Analytics p
 
 ## Exemple 2 : utilisation de mesures de liaison pour lier un terme de recherche à un achat de produit
 
-L’une des méthodes de marchandisage les plus courantes d’Adobe Analytics a été de lier un terme de recherche à un produit afin que chaque terme de recherche reçoive le crédit de son produit approprié. Prenons lʼexemple de parcours client suivant :
+L’une des méthodes de marchandisage les plus courantes dans Adobe Analytics a consisté à lier un terme de recherche à un produit afin que chaque terme de recherche obtienne du crédit pour son produit approprié. Prenons lʼexemple de parcours client suivant :
 
-1. Un visiteur arrive sur votre site et recherche `boxing gloves`. La mesure Recherches est incrémentée de un et les trois premiers résultats de la recherche s’affichent.
+1. Un visiteur arrive sur votre site et recherche des `boxing gloves`. La mesure Recherches est incrémentée de un et les trois premiers résultats de la recherche s’affichent.
 
    ```json
    {
@@ -131,7 +131,7 @@ L’une des méthodes de marchandisage les plus courantes d’Adobe Analytics a 
    }
    ```
 
-3. Le visiteur recherche ensuite `tennis racket`. La mesure Recherches est incrémentée de un et les trois premiers résultats de la recherche s’affichent.
+3. Le visiteur recherche ensuite des `tennis racket`. La mesure Recherches est incrémentée de un et les trois premiers résultats de la recherche s’affichent.
 
    ```json
    {
@@ -171,7 +171,7 @@ L’une des méthodes de marchandisage les plus courantes d’Adobe Analytics a 
    }
    ```
 
-5. Le visiteur recherche `shoes` pour la troisième fois. La mesure Recherches est incrémentée de un et les trois premiers résultats de la recherche s’affichent.
+5. Le visiteur effectue une troisième recherche de `shoes`. La mesure Recherches est incrémentée de un et les trois premiers résultats de la recherche s’affichent.
 
    ```json
    {
@@ -238,21 +238,21 @@ L’une des méthodes de marchandisage les plus courantes d’Adobe Analytics a 
    }
    ```
 
-Si vous utilisez un modèle d’attribution qui n’inclut pas de dimension de liaison avec le terme de recherche, les trois produits attribuent un chiffre dʼaffaires à un seul terme de recherche. Par exemple, si vous avez utilisé l’attribution [!UICONTROL Original] avec la dimension de terme de recherche :
+Si vous utilisez un modèle d’attribution qui n’inclut pas de dimension de liaison avec le terme de recherche, les trois produits attribuent un chiffre dʼaffaires à un seul terme de recherche. Par exemple, si vous avez utilisé l’affectation [!UICONTROL Original] avec la dimension Terme de recherche :
 
 | search_term | chiffre d’affaires |
 | --- | --- |
 | gants de boxe | 204,97 USD |
 
-Si vous avez utilisé l’attribution [!UICONTROL Le plus récent] avec la dimension de terme de recherche, les trois produits attribuent toujours des recettes à un seul terme de recherche :
+Si vous avez utilisé l’affectation [!UICONTROL Le dernier] avec la dimension du terme de recherche, les trois produits attribuent toujours le chiffre d’affaires à un seul terme de recherche :
 
 | search_term | chiffre d’affaires |
 | --- | --- |
 | chaussures | 204,97 USD |
 
-Bien que cet exemple ne concerne qu’une seule personne, de nombreuses personnes qui recherchent des éléments différents peuvent attribuer des termes de recherche à différents produits. Plusieurs personnes recherchent différentes choses, ce qui rend difficile de déterminer quels sont les meilleurs résultats de recherche.
+Bien que cet exemple ne concerne qu’une seule personne, de nombreuses personnes qui recherchent des éléments différents peuvent attribuer à tort des termes de recherche à différents produits. Plusieurs personnes recherchent différentes choses, ce qui rend difficile de déterminer quels sont réellement les meilleurs résultats de recherche.
 
-Vous pouvez désormais lier [!DNL Search Term] à [!DNL Product Name] chaque fois que la mesure [!DNL Searches] est présente pour attribuer correctement le terme de recherche aux recettes.
+Vous pouvez désormais lier [!DNL Search Term] à [!DNL Product Name] chaque fois que la mesure [!DNL Searches] est présente afin d’attribuer correctement le terme de recherche au chiffre d’affaires.
 
 ![Mesure de liaison](../assets/binding-metric.png)
 
@@ -268,11 +268,11 @@ Customer Journey Analytics détecte automatiquement la relation entre la dimensi
 
 La définition de la dimension Terme de recherche sur ce modèle de persistance exécute la logique suivante :
 
-* Lorsque la dimension du terme de recherche est définie, vérifiez la présence d’un nom de produit.
-* Si le nom du produit n’est pas présent, ne faites rien.
-* Si le nom du produit est présent, vérifiez la présence de la mesure Recherches .
+* Lorsque la dimension Terme de recherche est définie, vérifiez la présence d’un nom de produit.
+* Si le nom du produit n’est pas présent, ne rien faire.
+* Dans le cas contraire, vérifiez la présence de la mesure Recherches .
 * Si la mesure Recherches nʼest pas présente, ne faites rien.
-* Dans le cas contraire, liez le terme de recherche à tous les noms de produits dans cet événement. Il se copie lui-même au même niveau que le nom du produit pour cet événement. Dans cet exemple, il est traité comme `product.search_term`.
+* Dans le cas contraire, liez le terme de recherche à tous les noms de produits dans cet événement. Il se copie lui-même au même niveau que le nom du produit pour cet événement. Dans cet exemple, elle est traitée comme `product.search_term`.
 * Si le même nom de produit est détecté dans un événement ultérieur, le terme de recherche lié est également reporté à cet événement.
 
 ## Exemple 3 : liaison du terme de recherche vidéo au profil utilisateur
@@ -345,7 +345,7 @@ Cependant, si vous avez lié `search_term` à `ProfileID`, les recherches de cha
 
 ![Liaison des visiteurs](../assets/binding-profileid.png)
 
-Analysis Workspace attribue le deuxième épisode d’Orangey au terme de recherche `kids show` sans tenir compte des recherches d’autres profils.
+Analysis Workspace attribue le deuxième épisode d’Orangey au terme de recherche `kids show` sans prendre en compte les recherches d’autres profils.
 
 | Terme de recherche | Lancements de vidéo |
 | --- | --- |
@@ -440,4 +440,4 @@ Cependant, si vous liez `product_finding_method` à la mesure Ajouts au panier, 
 
 >[!MORELIKETHIS]
 >
->Tutoriel [Dimensions de liaison dans les vues de données](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views.html?lang=fr).
+>Tutoriel [Lier des dimensions dans les vues de données](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views.html)
