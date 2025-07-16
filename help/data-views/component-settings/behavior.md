@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 50599b36d333cae3735c6d4fd1b0af6fcabe9177
 workflow-type: tm+mt
 source-wordcount: '339'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 92%
 >[!CONTEXTUALHELP]
 >id="dataview_component_dimension_behavior"
 >title="Comportement"
->abstract="Applicable aux composants de dimension et de mesure. Déterminer comment les éléments de ligne pour cette mesure sont agrégés. Indiquez si les valeurs de chaîne de cette dimension doivent être en minuscules ou non."
+>abstract="Applicable aux composants de dimension et de mesure. Déterminez la façon dont les éléments de ligne de cette mesure sont agrégés. Indiquez si les valeurs de chaîne de cette dimension doivent être en minuscules ou non."
 
 <!-- markdownlint-enable MD034 -->
 
