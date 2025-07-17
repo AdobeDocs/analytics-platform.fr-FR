@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: User
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-source-git-commit: c86da649c23ca06c3404b6e5db0b9970e8817a72
+source-git-commit: 51b3d533ef7b42ff03823f2dffcb2ccfbb9c4bbe
 workflow-type: tm+mt
 source-wordcount: '1300'
 ht-degree: 99%
@@ -31,7 +31,7 @@ En fonction des dimensions spécifiques à l’analyse du contenu que vous utili
 
 Par défaut, des miniatures s’affichent pour les dimensions d’analyse du contenu pertinentes. Pour configurer l’affichage de miniatures pour une dimension d’analyse du contenu :
 
-* Pointez sur la ligne d’en-tête d’une dimension d’analyse du contenu. Par exemple, **[!UICONTROL ID de ressource]** ou **[!UICONTROL ID d’expérience]**.
+* Pointez sur la ligne d’en-tête d’une dimension d’analyse du contenu. Par exemple, **[!UICONTROL ID de ressources]** ou **[!UICONTROL ID d’expérience]**.
 * Sélectionnez ![Paramètre](/help/assets/icons/Setting.svg).
 * Dans la fenêtre contextuelle **[!UICONTROL Paramètres de la ligne]**, sous **[!UICONTROL Paramètres]**, cochez ou décochez la case **[!UICONTROL Afficher les miniatures]**.
 
@@ -155,5 +155,5 @@ Vous pouvez ventiler n’importe quelle ressource par dimensions pour mieux comp
 >[!MORELIKETHIS]
 >
 >[Composants de l’analyse du contenu](components.md)
->&#x200B;>[Utiliser des modèles](/help/analysis-workspace/templates/use-templates.md#web-engagement)
+>>[Utiliser des modèles](/help/analysis-workspace/templates/use-templates.md#web-engagement)
 >
