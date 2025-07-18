@@ -4,10 +4,10 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 016bf917e3737f00364c531760722d9b0d6ec785
+source-git-commit: c2e62afc0db4ebca8401d2de97120f98bc692419
 workflow-type: tm+mt
-source-wordcount: '5302'
-ht-degree: 99%
+source-wordcount: '5333'
+ht-degree: 98%
 
 ---
 
@@ -22,6 +22,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | **Juillet 2025** | |
 | Débogueur | Nouvel article sur l’activation, l’utilisation et la désactivation du débogueur de projet dans Analysis Workspace. |
 | Recommandation de performances pour la visualisation de flux | Ajout d’informations indiquant que le fait de laisser plus de 10 nœuds développés dans une seule visualisation de flux peut affecter le temps de création de rapports. |
+| Autre méthode pour accorder à l’application Adobe Azure l’accès à votre clé | Ajout d’informations sur l’octroi d’autorisations via le consentement lors de la [configuration de clés gérées par le client](/help/privacy/cmk.md#set-up-customer-managed-keys-for-customer-journey-analytics-on-azure) pour Customer Journey Analytics sur Azure. |
 | **Juin 2025** | |
 | Nouvelles actions de raccourci | Les nouveaux raccourcis clavier d’Analysis Workspace permettent désormais de [déplacer les panneaux Workspace](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md#move-panel-actions) vers le haut et vers le bas dans un projet. |
 | **Mai 2025** | |
