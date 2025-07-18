@@ -5,10 +5,10 @@ title: Exemples de périodes personnalisées
 feature: Calendar
 exl-id: 1a7df63a-bf18-4c38-b7e2-e83c2d278544
 role: User
-source-git-commit: 2a152e09d4ff62a02182fc6ac085d4143105a665
+source-git-commit: 28a657a0a93325a745dcf51c706cc488f599a6e0
 workflow-type: tm+mt
-source-wordcount: '113'
-ht-degree: 4%
+source-wordcount: '112'
+ht-degree: 3%
 
 ---
 
@@ -31,7 +31,7 @@ Vous souhaitez définir une période personnalisée qui a été définie il y a 
 
 +++ Détails
 
-Vous souhaitez définir une période qui définit la période entre le jour en cours il y a une semaine et la fin de cette même semaine dernière. Par exemple, si nous sommes le mercredi 11 septembre 2024. Vous souhaitez une période comprise entre le mercredi 4 septembre 2024 et le samedi 7 septembre 2024. Septembre
+Vous souhaitez définir une période qui définit la période entre le jour en cours il y a une semaine et la fin de cette même semaine dernière. Par exemple, si nous sommes le mercredi 11 septembre 2024. Vous souhaitez une période comprise entre le mercredi 4 septembre 2024 et le samedi 7 septembre 2024.
 
 ![Exemple de période](assets/date-range-example.png)
 
