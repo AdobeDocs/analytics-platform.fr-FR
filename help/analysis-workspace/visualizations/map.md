@@ -9,7 +9,7 @@ exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
 source-git-commit: 4163228b2ffb08a04e386e6ca31151c7143aed5c
 workflow-type: tm+mt
 source-wordcount: '2270'
-ht-degree: 10%
+ht-degree: 13%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente la visualisation des cartes dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Voir [Map](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) pour la version_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** de cet article._
+_Cet article présente la visualisation des cartes dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Voir [Map](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) pour la version_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 
@@ -135,8 +135,8 @@ La visualisation des cartes dans Customer Journey Analytics diffère de la visua
 
 >[!CONTEXTUALHELP]
 >id="workspace_map_panel"
->title="Configurer la visualisation des cartes"
->abstract="Sélectionnez la mesure ou la mesure calculée utilisée comme base pour votre visualisation des cartes. Vous pouvez également ajouter un segment si vous souhaitez vous concentrer sur un sous-ensemble spécifique des données.<p>Vous pouvez mettre à jour ces informations à tout moment après le rendu de la visualisation.</p>"
+>title="Configurer la visualisation de carte"
+>abstract="Sélectionnez la mesure ou la mesure calculée utilisée comme base pour votre visualisation de carte. Vous pouvez également ajouter un segment si vous souhaitez vous concentrer sur un sous-ensemble spécifique de données.<p>Vous pouvez mettre à jour ces informations à tout moment après le rendu de la visualisation.</p>"
 
 <!-- markdownlint-enable MD034 -->
 
