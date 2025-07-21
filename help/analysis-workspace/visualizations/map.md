@@ -6,9 +6,9 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
-source-git-commit: 4163228b2ffb08a04e386e6ca31151c7143aed5c
+source-git-commit: c5d550d92a7bf201d3b9f62243540d9c4e063fc8
 workflow-type: tm+mt
-source-wordcount: '2270'
+source-wordcount: '2283'
 ht-degree: 13%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 13%
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente la visualisation des cartes dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Voir [Map](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) pour la version_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** de cet article._
+_Cet article présente la visualisation des cartes dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Voir [Map](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) pour la version_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 
@@ -212,7 +212,9 @@ La visualisation des cartes dans Customer Journey Analytics diffère de la visua
       * Afficher les nombres négatifs.
 
         Par exemple, si vous tracez une mesure d’une année à l’autre, la carte peut afficher -33 % sur New York.
+
       * Avec les mesures de type *pourcentage*, le regroupement effectue la moyenne des pourcentages.
+
       * Une palette de couleurs verte et rouge indique positif et négatif.
 
    * **Paramètres de visualisation supplémentaires** : sélectionnez l’icône Paramètres ![Paramètre](/help/assets/icons/Setting.svg) dans l’en-tête de visualisation pour afficher les paramètres supplémentaires pour la visualisation de la carte. Pour plus d’informations, voir [Configurer les paramètres de visualisation](#configure-visualization-settings).
@@ -238,7 +240,7 @@ Pour configurer les paramètres de la visualisation des cartes :
    | **[!UICONTROL Styles]** | | |
    | | **[!UICONTROL Thème de couleur]** | Affiche le jeu de couleurs pour la carte thermique et les bulles. Vous avez le choix entre Corail, Rouges, Verts ou Bleus. La valeur par défaut est Corail. |
    | | **[!UICONTROL Style de carte]** | Vous avez le choix entre De base, Rues, Lumineux, Clair, Foncé et Satellite. |
-   | | **[!UICONTROL Rayon du cluster]** | Regroupe les points de données qui se trouvent dans le nombre spécifié de pixels. La valeur par défaut est de 50. |
+   | | **[!UICONTROL Rayon du cluster]** | Regroupe les points de données qui se trouvent dans le nombre spécifié de pixels. La valeur par défaut est de 50.<p>Cette option est disponible uniquement lorsque **[!UICONTROL Bulles]** est sélectionné comme **[!UICONTROL Type de carte]**.</p> |
    | | **[!UICONTROL Valeur maximale personnalisée]** | Permet de modifier le seuil de la valeur maximale pour la carte. L’ajustement de cette valeur ajuste l’échelle des valeurs des bulles ou de la carte thermique (couleur et taille) par rapport à la valeur maximale personnalisée que vous avez définie. |
    | | **[!UICONTROL Afficher les annotations]** | Affiche les annotations effectuées pour cette visualisation. |
    | | **[!UICONTROL Masquer le titre]** | Masque le titre de la visualisation. |
@@ -263,19 +265,19 @@ Si vous disposez de jeux de données personnalisés avec une précision élevée
 
    1. Dans le champ **[!UICONTROL Nombre de décimales]**, modifiez le nombre de décimales pour refléter le niveau de précision souhaité :
 
-      * **0:** Précise au niveau de la grande région ou du pays dans la visualisation de la carte. Affiche 0 décimale dans les rapports Espace de travail.
+      * **0:** Précise au niveau de la grande région ou du pays dans la visualisation de la carte. Affiche 0 décimale dans les rapports Workspace.
 
-      * **1:** Précise au niveau de la région ou de la grande ville dans la visualisation de la carte.  Affiche 1 décimale dans les rapports Espace de travail.
+      * **1:** Précise au niveau de la région ou de la grande ville dans la visualisation de la carte.  Affiche une décimale dans les rapports Workspace.
 
-      * **2:** Précis au niveau de la ville ou du code postal dans la visualisation de la carte. Affiche 2 décimales dans les rapports Espace de travail.
+      * **2:** Précis au niveau de la ville ou du code postal dans la visualisation de la carte. Affiche 2 décimales dans les rapports Workspace.
 
         Il s’agit de la sélection par défaut.
 
-      * **3:** Précise au niveau de la très petite ville ou du quartier dans la visualisation de la carte. Affiche 3 décimales dans les rapports Espace de travail.
+      * **3:** Précise au niveau de la très petite ville ou du quartier dans la visualisation de la carte. Affiche 3 décimales dans les rapports Workspace.
 
-      * **4:** Précise à une parcelle de terrain ou un niveau de bâtiment spécifique dans la visualisation de la carte. Affiche 4 décimales dans les rapports Espace de travail.
+      * **4:** Précise à une parcelle de terrain ou un niveau de bâtiment spécifique dans la visualisation de la carte. Affiche 4 décimales dans les rapports Workspace.
 
-      * **5:** Précise à un seul mètre dans la visualisation de la carte. Affiche 5 décimales dans les rapports Espace de travail.
+      * **5:** Précise à un seul mètre dans la visualisation de la carte. Affiche 5 décimales dans les rapports Workspace.
 
 1. Sélectionnez **[!UICONTROL Enregistrer et continuer]** > **[!UICONTROL Enregistrer et terminer]**.
 
