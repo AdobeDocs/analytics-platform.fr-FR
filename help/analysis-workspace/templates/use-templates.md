@@ -4,9 +4,9 @@ title: Utiliser des modèles
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 3d1b7e877edac1abb0767c9d940e2096afe340b2
+source-git-commit: c5a8a208e2d0390c35f2855113bb2cdeedb41293
 workflow-type: tm+mt
-source-wordcount: '19841'
+source-wordcount: '19837'
 ht-degree: 99%
 
 ---
@@ -538,7 +538,7 @@ Les modèles suivants sont disponibles :
 >[!CONTEXTUALHELP]
 >id="template--content-analytics"
 >title="Découvrez le contenu et les attributs de contenu les plus performants."
->abstract="**Cela peut vous aider** à découvrir comment votre contenu se comporte à un niveau granulaire. Vous pouvez examiner les performances de ressources individuelles ou d’attributs spécifiques. Content Analytics utilise l’IA pour générer automatiquement des attributs et baliser votre contenu avec ceux-ci. &lt;a href=\ »https://experienceleague.adobe.com/fr/docs/analytics-platform/using/content-analytics/content-analytics\ » target=\« _blank\« >En savoir plus</a>.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre de tâches, comme promouvoir des ressources hautement performantes sur votre page d’accueil, personnaliser le contenu pour des segments spécifiques afin d’inclure des attributs hautement performants ou remplacer le contenu qui a commencé à devenir obsolète."
+>abstract="**Cela peut vous aider** à découvrir comment votre contenu se comporte à un niveau granulaire. Vous pouvez examiner les performances de ressources individuelles ou d’attributs spécifiques. Content Analytics utilise l’IA pour générer automatiquement des attributs et baliser votre contenu avec ceux-ci. <a href="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/content-analytics/content-analytics" target="&quot;_blank&quot;">En savoir plus</a>.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre de tâches, comme promouvoir des ressources hautement performantes sur votre page d’accueil, personnaliser le contenu pour des segments spécifiques afin d’inclure des attributs hautement performants ou remplacer le contenu qui a commencé à devenir obsolète."
 
 <!-- markdownlint-enable MD034 -->
 
