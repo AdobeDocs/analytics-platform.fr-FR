@@ -6,9 +6,9 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
-source-git-commit: c5d550d92a7bf201d3b9f62243540d9c4e063fc8
+source-git-commit: f0ef310f120e278685893308315902e32c54e35e
 workflow-type: tm+mt
-source-wordcount: '2283'
+source-wordcount: '2385'
 ht-degree: 13%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 13%
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente la visualisation des cartes dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Voir [Map](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) pour la version_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** de cet article._
+_Cet article présente la visualisation des cartes dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Voir [Map](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) pour la version_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 
@@ -287,11 +287,13 @@ Vous pouvez créer un segment en fonction d’une zone spécifique que vous sél
 
 Pour créer un segment à partir de la visualisation des cartes :
 
-1. (Facultatif) Effectuez un zoom avant sur la zone spécifique de la carte qui contient les données que vous souhaitez utiliser pour le segment.
+1. Effectuez un zoom ou un panoramique sur la zone de la carte qui contient les données que vous souhaitez utiliser pour votre segment.
 
-1. Cliquez sur l’outil de sélection ![icône de mappage de la sélection](assets/map-selection-icon.png), puis faites glisser la souris pour sélectionner la zone souhaitée.
+1. Effectuez l’une des opérations suivantes :
 
-1. Sélectionnez **[!UICONTROL Créer un segment à partir de la sélection]** dans le menu déroulant qui s’affiche.
+   * **Pour créer un segment à partir de tout ce qui est actuellement affiché dans la carte :** cliquez avec le bouton droit de la souris n’importe où sur la carte, puis sélectionnez **[!UICONTROL Créer un segment à partir de la vue actuelle]**.
+
+   * **Pour créer un segment pour une zone plus spécifique de la carte :** cliquez sur l’outil de sélection ![icône de sélection de carte](assets/map-selection-icon.png), faites glisser votre souris pour sélectionner la zone souhaitée, puis sélectionnez **[!UICONTROL Créer un segment à partir de la sélection]**.
 
 1. Utilisez le créateur de segments pour définir le nouveau segment. Pour plus d’informations, voir [Créateur de segments](/help/components/segments/seg-builder.md).
 
@@ -301,11 +303,13 @@ Vous pouvez créer une audience basée sur une zone spécifique que vous sélect
 
 Pour créer une audience à partir de la visualisation de carte :
 
-1. (Facultatif) Effectuez un zoom avant sur la zone spécifique de la carte qui contient les données que vous souhaitez utiliser pour l’audience.
+1. Effectuez un zoom ou un panoramique sur la zone de la carte qui contient les données que vous souhaitez utiliser pour votre audience.
 
-1. Cliquez sur l’outil de sélection ![icône de mappage de la sélection](assets/map-selection-icon.png), puis faites glisser la souris pour sélectionner la zone souhaitée.
+1. Effectuez l’une des opérations suivantes :
 
-1. Sélectionnez **[!UICONTROL Créer une audience à partir de la sélection]** dans le menu déroulant qui s’affiche.
+   * **Pour créer une audience à partir de tout ce qui est actuellement affiché sur la carte** cliquez avec le bouton droit n’importe où sur la carte, puis sélectionnez **[!UICONTROL Créer une audience à partir de la vue actuelle]**.
+
+   * **Pour créer une audience pour une zone plus spécifique de la carte :** cliquez sur l’outil de sélection ![icône de sélection de carte](assets/map-selection-icon.png), faites glisser votre souris pour sélectionner la zone souhaitée, puis sélectionnez **[!UICONTROL Créer une audience à partir de la sélection]**.
 
 1. Utilisez le créateur d’audiences pour définir la nouvelle audience. Pour plus d’informations, voir [Créateur d’audiences](/help/components/audiences/publish.md#audience-builder) dans [Création et publication d’audiences](/help/components/audiences/publish.md)
 
@@ -315,11 +319,13 @@ Vous pouvez créer une visualisation sous forme de graphique en courbes de tenda
 
 Pour créer un graphique en courbes de tendance à partir de la visualisation des cartes :
 
-1. (Facultatif) Effectuez un zoom avant sur la zone spécifique de la carte qui contient les données que vous souhaitez utiliser pour le graphique en courbes de tendance.
+1. Effectuez un zoom ou un panoramique sur la zone de la carte contenant les données à utiliser pour le graphique en courbes de tendance.
 
-1. Cliquez sur l’outil de sélection ![icône de mappage de la sélection](assets/map-selection-icon.png), puis faites glisser la souris pour sélectionner la zone souhaitée.
+1. Effectuez l’une des opérations suivantes :
 
-1. Sélectionnez **[!UICONTROL Tendance]** dans le menu déroulant qui s’affiche.
+   * **Pour créer un graphique en courbes de tendance à partir de tout ce qui est actuellement affiché sur la carte** cliquez avec le bouton droit n’importe où sur la carte, puis sélectionnez **[!UICONTROL Tendance dans la vue actuelle]**.
+
+   * **Pour créer un graphique en courbes de tendance pour une zone plus spécifique de la carte :** cliquez sur l’outil de sélection ![icône de sélection de carte](assets/map-selection-icon.png), faites glisser votre souris pour sélectionner la zone souhaitée, puis sélectionnez **[!UICONTROL Tendance]**.
 
    Une visualisation linéaire est créée qui comprend une ligne de tendance. Pour plus d’informations sur cette visualisation, voir [Ligne](/help/analysis-workspace/visualizations/line.md).
 
