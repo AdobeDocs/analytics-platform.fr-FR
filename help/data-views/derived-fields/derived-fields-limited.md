@@ -21,7 +21,7 @@ ht-degree: 27%
 >[!IMPORTANT]
 >
 >Il s’agit d’une documentation préliminaire des nouvelles fonctions de champ dérivées qui ne sont pas encore généralement disponibles. Utilisez ces informations pour en savoir plus sur les nouvelles fonctions de champ dérivé. Cette documentation est toujours sujette à modification et aucune obligation légale quelle qu&#39;elle soit ne peut être dérivée de la version actuelle de cet article.
->&#x200B;><br/>Voir [Champs dérivés](derived-fields.md) pour plus d’informations sur la fonctionnalité des champs dérivés en général et sur les fonctions et modèles de fonction actuellement disponibles.
+>><br/>Voir [Champs dérivés](derived-fields.md) pour plus d’informations sur la fonctionnalité des champs dérivés en général et sur les fonctions et modèles de fonction actuellement disponibles.
 >
 
 ## Référence de fonction
