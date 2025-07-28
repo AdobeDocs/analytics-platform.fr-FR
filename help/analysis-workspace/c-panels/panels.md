@@ -4,20 +4,14 @@ title: Vue d’ensemble des panneaux
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
-workflow-type: ht
-source-wordcount: '2143'
+source-git-commit: c26fbe37270171c80d77c96966dd21f2dd7c7ce9
+workflow-type: tm+mt
+source-wordcount: '2130'
 ht-degree: 100%
 
 ---
 
 # Vue d’ensemble des panneaux {#panels-overview}
-
->[!CONTEXTUALHELP]
->id="workspace_panel_realtime_refresh"
->title="Actualisation en temps réel"
->abstract="Activez pour actualiser les données et les visualisations de ce panneau en temps réel."
-
 
 Un [!UICONTROL panneau] est un ensemble de tableaux et de visualisations. Vous pouvez accéder aux panneaux à partir de l’icône située en haut à gauche dans Workspace ou à partir d’un [panneau vierge](/help/analysis-workspace/c-panels/blank-panel.md). Les panneaux sont utiles lorsque vous souhaitez organiser vos projets en fonction de périodes de temps, de vues de données ou de cas dʼutilisation dʼanalyse.
 
@@ -161,7 +155,7 @@ Pour en savoir plus, consultez [Segments rapides](/help/components/segments/seg-
 
 >[!BEGINSHADEBOX]
 
-Voir ![VidéoConsultée](/help/assets/icons/VideoCheckedOut.svg) [Segments déroulants](https://video.tv.adobe.com/v/327485?quality=12&learn=on&captions=fre_fr){target="_blank"} pour une vidéo de démonstration.
+Voir ![VidéoConsultée](/help/assets/icons/VideoCheckedOut.svg) [Segments déroulants](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 
