@@ -155,5 +155,5 @@ Vous pouvez ventiler n’importe quelle ressource par dimensions pour mieux comp
 >[!MORELIKETHIS]
 >
 >[Composants de l’analyse du contenu](components.md)
->&#x200B;>[Utiliser des modèles](/help/analysis-workspace/templates/use-templates.md#web-engagement)
+>>[Utiliser des modèles](/help/analysis-workspace/templates/use-templates.md#web-engagement)
 >

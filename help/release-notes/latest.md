@@ -6,7 +6,7 @@ feature: Release Notes
 source-git-commit: 144caa157e1a7161595e2b4fc0da60cd63de50bd
 workflow-type: tm+mt
 source-wordcount: '436'
-ht-degree: 60%
+ht-degree: 100%
 
 ---
 
@@ -15,28 +15,28 @@ ht-degree: 60%
 **Dernière mise à jour** : mercredi 22 juillet 2025
 
 
-Ces notes de mise à jour portent sur la période du samedi 11 juillet 2025 au samedi 15 août 2025. Les mises à jour d’Adobe Customer Journey Analytics suivent un [modèle de diffusion continue](releases.md) qui permet une approche plus évolutive et plus progressive du déploiement des fonctionnalités. Par conséquent, ces notes de mise à jour sont mises à jour plusieurs fois par mois. Veuillez les vérifier régulièrement.
+Ces notes de mise à jour portent sur la période du 11 juillet 2025 au 15 août 2025. Les mises à jour d’Adobe Customer Journey Analytics suivent un [modèle de diffusion continue](releases.md) qui permet une approche plus évolutive et plus progressive du déploiement des fonctionnalités. Par conséquent, ces notes de mise à jour sont mises à jour plusieurs fois par mois. Veuillez les vérifier régulièrement.
 
 ## Fonctionnalités nouvelles ou mises à jour
 
 | Fonctionnalité | Description | [Le déploiement commence](releases.md) | [Disponibilité générale](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Ajouter et afficher des commentaires dans les projets Analysis Workspace** | Une nouvelle [fonctionnalité de commentaires](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/build-workspace-project/comment-projects) dans Analysis Workspace vous permet de partager des informations et de poser des questions dans le cadre d’un projet Analysis Workspace. Celle-ci peut optimiser les discussions sur les données, en maintenant les conversations dans le contexte spécifique des données concernées. Vous pouvez : <ul><li>Commenter tout projet Analysis Workspace auquel vous avez accès</li><li>Commenter un élément spécifique d’une visualisation ou écrire des commentaires généraux sur un projet</li><li>Mentionner d’autres utilisateurs et utilisatrices pour les informer de vos commentaires</li><li>Gérer des commentaires existants (modifier, épingler, résoudre, etc.)</li></ul>Les administrateurs et les administratrices Customer Journey Analytics peuvent [désactiver les commentaires au niveau de l’organisation](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/user-preferences#ims-organization-preferences). Les propriétaires de projet peuvent [désactiver les commentaires au niveau du projet](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/build-workspace-project/create-projects). | 25 juin 2025 | mercredi 22 juillet 2025 <p>(auparavant le 29 mai 2025)</p> |
-| **Les projets téléchargés au format PDF sont téléchargés sur votre station de travail** | Lors du téléchargement d’un projet as a PDF, le PDF est téléchargé dans le dossier des téléchargements de votre station de travail. Auparavant, le téléchargement d’un projet en tant que PDF lançait le PDF dans un nouvel onglet du navigateur avec une URL unique. [En savoir plus](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/export/download-send) | | À confirmer |
-| **Champs dérivés - Fonction Typecast** | La fonction de champ dérivé de Typecast permet de modifier un type de champ à la volée et de rendre le champ disponible pour des transformations supplémentaires dans Customer Journey Analytics. | . | jeudi 30 juillet 2025 |
-| **Champs dérivés - Fonction de calcul de date** | La fonction de champ dérivé des mathématiques de date permet de renvoyer la différence entre deux champs Date ou Date et heure. | | jeudi 30 juillet 2025 |
-| **Ares : Fonction de profondeur des champs dérivés** | La fonction de champ dérivé de la profondeur permet de renvoyer la profondeur d’un champ, comme il est possible de le faire avec la dimension de profondeur d’événement standard prête à l’emploi. |  | Juillet 30,2025 |
+| **Ajouter et afficher des commentaires dans les projets Analysis Workspace** | Une nouvelle [fonctionnalité de commentaires](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/build-workspace-project/comment-projects) dans Analysis Workspace vous permet de partager des informations et de poser des questions dans le cadre d’un projet Analysis Workspace. Celle-ci peut optimiser les discussions sur les données, en maintenant les conversations dans le contexte spécifique des données concernées. Vous pouvez : <ul><li>Commenter tout projet Analysis Workspace auquel vous avez accès</li><li>Commenter un élément spécifique d’une visualisation ou écrire des commentaires généraux sur un projet</li><li>Mentionner d’autres utilisateurs et utilisatrices pour les informer de vos commentaires</li><li>Gérer des commentaires existants (modifier, épingler, résoudre, etc.)</li></ul>Les administrateurs et les administratrices Customer Journey Analytics peuvent [désactiver les commentaires au niveau de l’organisation](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/user-preferences#ims-organization-preferences). Les propriétaires de projet peuvent [désactiver les commentaires au niveau du projet](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/build-workspace-project/create-projects). | 25 juin 2025 | mercredi 22 juillet 2025 <p>(auparavant le 29 mai 2025)</p> |
+| **Les projets téléchargés au format PDF sont enregistrés sur votre poste de travail.** | Lors du téléchargement d’un projet au format PDF, le fichier est enregistré dans le dossier des téléchargements de votre poste de travail. Auparavant, le téléchargement d’un projet au format PDF ouvrait le fichier PDF dans un nouvel onglet du navigateur avec une URL unique. [En savoir plus](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/export/download-send) | | À confirmer |
+| **Champs dérivés - Fonction Typecast** | Cette fonction permet de modifier un type de champ à la volée pour rendre le champ disponible pour des transformations supplémentaires dans Customer Journey Analytics. | . | 30 juillet 2025 |
+| **Champs dérivés - Fonction Date Math** | Cette fonction permet de renvoyer la différence entre deux champs Date ou Date et heure. | | 30 juillet 2025 |
+| **Ares : fonction de profondeur des champs dérivés** | Cette fonction permet de renvoyer la profondeur d’un champ, comme il est possible de le faire avec la dimension de profondeur d’événement standard prête à l’emploi. |  | Juillet 30,2025 |
 
 ## Correctifs dans Customer Journey Analytics
 
-**Analysis Workspace**: AN-387014; AN-387500
-**Composants** : AN-387293
-**Content Analytics** : AN-387595
-**Analyse guidée** : AN-382273
-**Report Builder**: AN-382775
-**Reporting** : AN-382020 ; AN-387827
-**Segmentation** : AN-382102
-**Mesures et dimensions partagées** : AN-378451
+**Analysis Workspace** : AN-387014 ; AN-387500
+**Composants** : AN-387293
+**Analyse du contenu** : AN-387595
+**Analyse guidée** : AN-382273
+**Report Builder** : AN-382775
+**Reporting** : AN-382020 ; AN-387827
+**Segmentation** : AN-382102
+**Mesures et dimensions partagées** : AN-378451
 
 
 ## Avis importants à l’intention des administrateurs et administratrices de Customer Journey Analytics

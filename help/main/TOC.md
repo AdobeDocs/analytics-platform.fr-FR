@@ -34,7 +34,7 @@ ht-degree: 99%
 
 + Commencer {#cja-overview}
    + Customer Journey Analytics {#cja-b2c-overview}
-      + [Vue d’ensemble](../getting-started/cja-overview.md)
+      + [Présentation](../getting-started/cja-overview.md)
       + [Guide de démarrage rapide](../getting-started/cja-getting-started.md)
       + [Page de destination](../getting-started/landing.md)
       + [Questions fréquentes](../getting-started/cja-faq.md)
@@ -42,7 +42,7 @@ ht-degree: 99%
       + [Assistant IA](../ai-assistant.md)
       + [Agent Data Insights](../data-analysis-ai.md)
    + Customer Journey Analytics B2B Edition {#cja-b2b}
-      + [Vue d’ensemble](/help/getting-started/cja-b2b-edition.md)
+      + [Présentation](/help/getting-started/cja-b2b-edition.md)
       + [Concepts et fonctionnalités B2B](/help/getting-started/cja-b2b-concepts-features.md)
       + [Guide de démarrage rapide](/help/getting-started/cja-b2b-quick-start-guide.md)
       + [Guide de transition](/help/getting-started/cja-b2b-transition.md)
@@ -98,7 +98,7 @@ ht-degree: 99%
          + [Configurer le SDK web Adobe Analytics pour Platform](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md)
          + [Utiliser la personnalisation avec Adobe Journey Optimizer](/help/getting-started/cja-upgrade/cja-upgrade-personalization-journeyoptimizer.md)
    + Comparer à Adobe Analytics {#cja-aa-comparison}
-      + [Vue d’ensemble](../getting-started/aa-vs-cja/overview.md)
+      + [Présentation](../getting-started/aa-vs-cja/overview.md)
       + [Utilisation de données Adobe Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
       + [Prise en charge des fonctionnalités](../getting-started/aa-vs-cja/cja-aa.md)
       + [Comparaison de la terminologie](../getting-started/aa-vs-cja/terminology.md)
@@ -152,14 +152,14 @@ ht-degree: 99%
    + [Données de résumé](../data-views/summary-data.md)
    + [Libellés et politiques](../data-views/data-governance.md)
    + Mesures et dimensions partagées{#shared-metrics-dimensions}
-      + [Vue d’ensemble](/help/data-views/shared-metrics-dimensions/smd-overview.md)
+      + [Présentation](/help/data-views/shared-metrics-dimensions/smd-overview.md)
       + [Éditeur](/help/data-views/shared-metrics-dimensions/shared-component-editor.md)
 
 + Outils {#tools}
    + Transfert de ressources {#asset-transfer}
       + [Transférer des ressources](../tools/asset-transfer/transfer-assets.md)
    + Utilisation du produit {#product-usage}
-      + [Vue d’ensemble](../tools/product-usage/usage-overview.md)
+      + [Présentation](../tools/product-usage/usage-overview.md)
       + [Paramètres des données](../tools/product-usage/data-settings.md)
       + [Paramètres d’exclusion](../tools/product-usage/opt-out-settings.md)
 
@@ -168,7 +168,7 @@ ht-degree: 99%
    + [Exécution d’une analyse de base](../analysis-workspace/perform-basic-analysis.md)
    + [Exécuter une analyse avancée](../analysis-workspace/perform-adv-analysis.md)
    + Projets {#build-workspace-project}
-      + [Vue d’ensemble](../analysis-workspace/build-workspace-project/freeform-overview.md)
+      + [Présentation](../analysis-workspace/build-workspace-project/freeform-overview.md)
       + [Démarrer rapidement des projets](/help/analysis-workspace/build-workspace-project/starter-projects.md)
       + [Créer des projets](/help/analysis-workspace/build-workspace-project/create-projects.md)
       + [Ouvrir des projets](/help/analysis-workspace/build-workspace-project/open-projects.md)
@@ -176,7 +176,7 @@ ht-degree: 99%
       + [Enregistrer des projets](../analysis-workspace/build-workspace-project/save-projects.md)
       + [Table des matières](../analysis-workspace/build-workspace-project/project-table-of-contents.md)
       + Dossiers dans Workspace {#workspace-folders}
-         + [Vue d’ensemble](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
+         + [Présentation](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
          + [Créer des dossiers](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
          + [Gérer des dossiers](../analysis-workspace/build-workspace-project/workspace-folders/manage-folders.md)
          + [Ajouter ou déplacer des projets](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
@@ -188,11 +188,11 @@ ht-degree: 99%
       + [Utiliser des modèles](../analysis-workspace/templates/use-templates.md)
       + [Créer et gérer des modèles](../analysis-workspace/templates/create-templates.md)
    + Visualisations {#visualizations}
-      + [Vue d’ensemble](../analysis-workspace/visualizations/freeform-analysis-visualizations.md)
+      + [Présentation](../analysis-workspace/visualizations/freeform-analysis-visualizations.md)
       + [Gérer des sources de données](../analysis-workspace/visualizations/t-sync-visualization.md)
       + [Légendes intelligentes](../analysis-workspace/visualizations/intelligent-captions.md)
       + Tableau à structure libre {#freeform-table}
-         + [Vue d’ensemble](../analysis-workspace/visualizations/freeform-table/freeform-table.md)
+         + [Présentation](../analysis-workspace/visualizations/freeform-table/freeform-table.md)
          + [Créer des liens hypertextes](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)
          + Paramètres des colonnes et des lignes {#column-row-settings}
             + [Paramètres des colonnes](../analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
@@ -201,20 +201,20 @@ ht-degree: 99%
          + [Filtrer et trier](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
          + [Totaux](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
       + Table de cohorte {#cohort-table}
-         + [Vue d’ensemble](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
+         + [Présentation](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
          + [Configurer](../analysis-workspace/visualizations/cohort-table/t-cohort.md)
          + [Cas d’utilisation](../analysis-workspace/visualizations/cohort-table/cohort-use-cases.md)
       + Abandon {#fallout}
-         + [Vue d’ensemble](../analysis-workspace/visualizations/fallout/fallout-flow.md)
+         + [Présentation](../analysis-workspace/visualizations/fallout/fallout-flow.md)
          + [Configurer](../analysis-workspace/visualizations/fallout/configuring-fallout.md)
          + [Abandons interdimensionnels](../analysis-workspace/visualizations/fallout/configuring-interdimensional-fallout.md)
          + [Appliquer des segments](../analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
       + Flux {#flow}
-         + [Vue d’ensemble](../analysis-workspace/visualizations/c-flow/flow.md)
+         + [Présentation](../analysis-workspace/visualizations/c-flow/flow.md)
          + [Configurer](../analysis-workspace/visualizations/c-flow/create-flow.md)
          + [Flux interdimensionnels](../analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)
       + Zone de travail de parcours {#journey-canvas}
-         + [Vue d’ensemble](../analysis-workspace/visualizations/journey-canvas/journey-canvas.md)
+         + [Présentation](../analysis-workspace/visualizations/journey-canvas/journey-canvas.md)
          + [Configurer](../analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
          + [Résoudre des problèmes](../analysis-workspace/visualizations/journey-canvas/journey-canvas-troubleshooting.md)
       + [Aires (empilées)](../analysis-workspace/visualizations/area.md)
@@ -234,7 +234,7 @@ ht-degree: 99%
       + [Plan en arborescence](../analysis-workspace/visualizations/treemap.md)
       + [Venn](../analysis-workspace/visualizations/venn.md)
    + Panneaux {#panels}
-      + [Vue d’ensemble](../analysis-workspace/c-panels/panels.md)
+      + [Présentation](../analysis-workspace/c-panels/panels.md)
       + [Panneau vierge](../analysis-workspace/c-panels/blank-panel.md)
       + [Attribution](../analysis-workspace/c-panels/attribution.md)
       + [Expérimentation](../analysis-workspace/c-panels/experimentation.md)
@@ -245,13 +245,13 @@ ht-degree: 99%
       + [Élément suivant ou précédent](../analysis-workspace/c-panels/next-previous.md)
       + [Aperçu rapide](../analysis-workspace/c-panels/quickinsight.md)
    + Traiter et partager {#curate-share}
-      + [Vue d’ensemble](../analysis-workspace/curate-share/send-schedule-files.md)
+      + [Présentation](../analysis-workspace/curate-share/send-schedule-files.md)
       + [Traitement des projets](../analysis-workspace/curate-share/curate.md)
       + [Partager des projets](../analysis-workspace/curate-share/share-projects.md)
       + [Création de liens partageables](../analysis-workspace/curate-share/shareable-links.md)
       + [Projets en lecture seule](../analysis-workspace/curate-share/view-only-projects.md)
    + Exporter {#export}
-      + [Vue d’ensemble](../analysis-workspace/export/export-project-overview.md)
+      + [Présentation](../analysis-workspace/export/export-project-overview.md)
       + [Télécharger](../analysis-workspace/export/download-send.md)
       + [Envoyer et planifier](../analysis-workspace/export/t-schedule-report.md)
       + [Exporter vers le cloud](../analysis-workspace/export/export-cloud.md)
@@ -262,11 +262,11 @@ ht-degree: 99%
       + [Bonnes pratiques](../analysis-workspace/attribution/best-practices.md)
       + [Questions fréquentes](../analysis-workspace/attribution/faq.md)
    + Détection des anomalies {#anomaly-detection}
-      + [Vue d’ensemble](../analysis-workspace/c-anomaly-detection/anomaly-detection.md)
+      + [Présentation](../analysis-workspace/c-anomaly-detection/anomaly-detection.md)
       + [Afficher les anomalies](../analysis-workspace/c-anomaly-detection/view-anomalies.md)
       + [Techniques statistiques](../analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md)
    + Prévisions {#forecasting}
-      + [Vue d’ensemble](../analysis-workspace/c-forecast/forecasting.md)
+      + [Présentation](../analysis-workspace/c-forecast/forecasting.md)
       + [Afficher des prévisions](../analysis-workspace/c-forecast/view-forecasts.md)
       + [Techniques statistiques](../analysis-workspace/c-forecast/statistics-forecasting.md)
    + [Préférences de l’utilisateur ou de l’utilisatrice](../analysis-workspace/user-preferences.md)
@@ -279,18 +279,18 @@ ht-degree: 99%
       + [Accessibilité](../analysis-workspace/workspace-faq/aw-accessibility.md)
 
 + Content Analytics {#content-analytics}
-   + [Vue d’ensemble](/help/content-analytics/content-analytics.md)
+   + [Présentation](/help/content-analytics/content-analytics.md)
    + Rapport {#report}
-      + [Vue d’ensemble](/help/content-analytics/report/report.md)
+      + [Présentation](/help/content-analytics/report/report.md)
       + [Composants](/help/content-analytics/report/components.md)
    + Configuration {#configuration}
-      + [Vue d’ensemble](/help/content-analytics/config/configuration.md)
+      + [Présentation](/help/content-analytics/config/configuration.md)
       + [Configuration guidée](/help/content-analytics/config/guided.md)
       + [Configuration manuelle](/help/content-analytics/config/manual.md)
       + [Collecte de données](/help/content-analytics/config/datacollection.md)
 
 + Tableaux de bord Analytics {#cja-dashboards}
-   + [Vue d’ensemble](../mobile-app/home.md)
+   + [Présentation](../mobile-app/home.md)
    + [Tâches d’édition](../mobile-app/curator.md)
    + [Créer des cartes de performance mobiles](../mobile-app/create-scorecard.md)
    + [Gérer les cartes de performance mobiles](../mobile-app/manage-scorecard.md)
@@ -298,7 +298,7 @@ ht-degree: 99%
    + [Guide pour une prise en main rapide destiné aux utilisateurs en charge de l’exécution](../mobile-app/executive.md)
 
 + Analyse guidée {#guided-analysis}
-   + [Vue d’ensemble](../guided-analysis/overview.md)
+   + [Présentation](../guided-analysis/overview.md)
    + [Croissance active](../guided-analysis/types/active-growth.md)
    + [Tendances de conversion](../guided-analysis/types/conversion-trends.md)
    + [Engagement](../guided-analysis/types/engagement.md)
@@ -314,11 +314,11 @@ ht-degree: 99%
    + [Questions fréquentes](../guided-analysis/faq.md)
 
 + Composants {#cja-components}
-   + [Vue d’ensemble](../components/overview.md)
+   + [Présentation](../components/overview.md)
    + [Utiliser les composants](../components/use-components-in-workspace.md)
    + [Ajouter des descriptions des composants](../components/add-component-descriptions.md)
    + Annotations {#annotations}
-      + [Vue d’ensemble](../components/annotations/overview.md)
+      + [Présentation](../components/annotations/overview.md)
       + [Création d’annotations](../components/annotations/create-annotations.md)
       + [Gestion des annotations](../components/annotations/manage-annotations.md)
       + [Affichage des annotations](../components/annotations/view-annotations.md)
@@ -328,14 +328,14 @@ ht-degree: 99%
       + [Créer et publier des audiences](../components/audiences/publish.md)
       + [Gérer des audiences](../components/audiences/manage.md)
    + Dimensions {#dimensions}
-      + [Vue d’ensemble](../components/dimensions/overview.md)
+      + [Présentation](../components/dimensions/overview.md)
       + [Aperçu des dimensions](../components/dimensions/view-dimensions.md)
       + [Ventilation des dimensions](../components/dimensions/t-breakdown-fa.md)
       + [Dimensions de répartition du temps](../components/dimensions/time-parting-dimensions.md)
       + [Dimensions de cardinalité élevée](../components/dimensions/high-cardinality.md)
    + [Mesures](../components/apply-create-metrics.md)
    + Segments {#segments}
-      + [Vue d’ensemble](/help/components/segments/seg-overview.md)
+      + [Présentation](/help/components/segments/seg-overview.md)
       + [Créer des segments](/help/components/segments/seg-create.md)
       + [Créer des segments](/help/components/segments/seg-builder.md)
       + [Segments rapides](/help/components/segments/seg-quick.md)
@@ -350,7 +350,7 @@ ht-degree: 99%
       + [Opérateurs](/help/components/segments/seg-operators.md)
       + [Utiliser les segments](/help/components/segments/seg-use.md)
    + Mesures calculées {#cja-calcmetrics}
-      + [Vue d’ensemble](../components/calc-metrics/calc-metr-overview.md)
+      + [Présentation](../components/calc-metrics/calc-metr-overview.md)
       + Workflow {#cm-workflow}
          + [Créer des mesures calculées](../components/calc-metrics/cm-workflow/cm-workflow.md)
          + [Rechercher des mesures](../components/calc-metrics/cm-workflow/cm-finding.md)
@@ -374,7 +374,7 @@ ht-degree: 99%
       + [Fonctions de base](../components/calc-metrics/cm-functions.md)
       + [Fonctions avancées](../components/calc-metrics/cm-adv-functions.md)
    + Périodes {#cja-date-ranges}
-      + [Vue d’ensemble](../components/date-ranges/overview.md)
+      + [Présentation](../components/date-ranges/overview.md)
       + [Créer des périodes](../components/date-ranges/create.md)
       + [Gestion des périodes](../components/date-ranges/manage.md)
       + [Comparaison des dates](../components/date-ranges/time-comparison.md)
@@ -393,16 +393,16 @@ ht-degree: 99%
       + [Gérer les journaux d’export](/help/components/exports/manage-export-logs.md)
       + [Résoudre les problèmes d’export](/help/components/exports/troubleshoot-exports.md)
    + Dictionnaire de données {#data-dictionary}
-      + [Vue d’ensemble](../components/data-dictionary/data-dictionary-overview.md)
+      + [Présentation](../components/data-dictionary/data-dictionary-overview.md)
       + [Afficher des informations sur les composants dans le dictionnaire de données](../components/data-dictionary/view-data-dictionary.md)
       + [Modifier les entrées de composant dans le dictionnaire de données](../components/data-dictionary/edit-entries-data-dictionary.md)
       + [Surveiller l’intégrité du dictionnaire de données](../components/data-dictionary/monitor-data-dictionary-health.md)
-   + Création de rapports en temps réel {#real-time-reporting}
-      + [Vue d’ensemble](/help/components/real-time/real-time.md)
-      + [Utiliser les rapports en temps réel](/help/components/real-time/use-real-time.md)
+   + Créer des rapports en temps réel {#real-time-reporting}
+      + [Présentation](/help/components/real-time/real-time.md)
+      + [Utiliser la création de rapports en temps réel](/help/components/real-time/use-real-time.md)
    + [Projets planifiés](../components/scheduled-projects-manager.md)
 + Report Builder {#cja-reportbuilder}
-   + [Vue d’ensemble](../report-builder/rb-overview.md)
+   + [Présentation](../report-builder/rb-overview.md)
    + [Configuration de Report Builder](../report-builder/report-builder-setup.md)
    + [Créer un bloc de données](../report-builder/create-a-data-block.md)
    + [Hub Report Builder](../report-builder/report-builder-hub.md)
@@ -419,12 +419,12 @@ ht-degree: 99%
 
 
 + Gestionnaire des activités de rapport {#reporting-activity-manager}
-   + [Vue d’ensemble](../reporting-activity-manager/reporting-activity-overview.md)
+   + [Présentation](../reporting-activity-manager/reporting-activity-overview.md)
    + [Afficher l’activité de rapport](../reporting-activity-manager/reporting-activity.md)
    + [Annuler des demandes de création de rapports](../reporting-activity-manager/reporting-activity-cancel-requests.md)
 
 + Groupement {#stitching}
-   + [Vue d’ensemble](/help/stitching/overview.md)
+   + [Présentation](/help/stitching/overview.md)
    + [Groupement basé sur les champs](/help/stitching/fbs.md)
    + [Groupement basé sur les graphes](/help/stitching/gbs.md)
    + [Utilisation du groupement](/help/stitching/use-stitching.md)
@@ -433,7 +433,7 @@ ht-degree: 99%
    + [Questions fréquentes](/help/stitching/faq.md)
 
 + Intégrations Adobe {#integrations}
-   + [Vue d’ensemble](/help/integrations/overview.md)
+   + [Présentation](/help/integrations/overview.md)
    + [Intégrer Adobe Analytics](/help/integrations/aa.md)
    + [Intégrer Target](/help/integrations/at.md)
    + [Intégrer des données Journey Optimizer](/help/integrations/ajo.md)
@@ -464,7 +464,7 @@ ht-degree: 99%
       + [Analyse des données sur plusieurs canaux](../use-cases/cross-channel/cross-channel.md)
       + [Importer les données du centre d’appel et web](../use-cases/cross-channel/call-center.md)
    + Export de données {#data-export}
-      + [Vue d’ensemble](../use-cases/data-export/overview.md)
+      + [Présentation](../use-cases/data-export/overview.md)
       + [Extension BI](../use-cases/data-export/bi-extension.md)
       + [Exporter les jeux de données](../use-cases/data-export/export-datasets.md)
       + [Exporter le tableau complet](../use-cases/data-export/export-full-table.md)
@@ -484,14 +484,14 @@ ht-degree: 99%
    + Groupement {#stitching}
       + [Périphériques partagés](/help/use-cases/stitching/shared-devices.md)
    + Données tierces {#third-party}
-      + [Vue d’ensemble](/help/use-cases/third-party/overview.md)
+      + [Présentation](/help/use-cases/third-party/overview.md)
       + Google Analytics {#ga}
          + [Migrer des données à partir de Google Analytics](/help/use-cases/third-party/ga/overview.md)
          + [Ingérer des données historiques de Google Analytics](/help/use-cases/third-party/ga/backfill.md)
          + [Configurer des données de Google Analytics en streaming](/help/use-cases/third-party/ga/streaming.md)
          + [Créer un rapport sur des données de Google Analytics](/help/use-cases/third-party/ga/report.md)
       + Quantum Metric {#qm}
-         + [Vue d’ensemble](/help/use-cases/third-party/quantum-metric/qm-overview.md)
+         + [Présentation](/help/use-cases/third-party/quantum-metric/qm-overview.md)
          + [Lier des lectures de session](/help/use-cases/third-party/quantum-metric/tie-session-replays.md)
          + [Utiliser des cartes thermiques](/help/use-cases/third-party/quantum-metric/heatmap.md)
          + [Ajouter des événements de friction](/help/use-cases/third-party/quantum-metric/friction-events.md)
