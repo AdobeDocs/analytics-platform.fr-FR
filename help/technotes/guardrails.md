@@ -5,16 +5,16 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: fedb1337b32e44fc00989bace6a4d1788043f55f
+source-git-commit: 88956946aabb74d94cd84a8b4ef30d9eb1044ebd
 workflow-type: tm+mt
-source-wordcount: '1831'
-ht-degree: 10%
+source-wordcount: '1900'
+ht-degree: 11%
 
 ---
 
 # Mécanismes de sécurisation de Customer Journey Analytics
 
-Ce document fournit des limites pour divers composants de Customer Journey Analytics. Pour les mécanismes de sécurisation, les paramètres de définition de la portée et les droits, reportez-vous aux sections [Description du produit pour Customer Journey Analytics](https://helpx.adobe.com/fr/legal/product-descriptions/customer-journey-analytics.html?lang=fr), [Description du produit pour le module complémentaire Adobe Analytics : Customer Journey Analytics](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html?lang=fr) ou [Description du produit pour Customer Journey Analytics B2B edition](https://helpx.adobe.com/fr/legal/product-descriptions/customer-journey-analytics-b2b.html?lang=fr).
+Ce document fournit des limites pour divers composants de Customer Journey Analytics. Pour les mécanismes de sécurisation, les paramètres de définition de la portée et les droits, reportez-vous aux sections [Description du produit pour Customer Journey Analytics](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html?lang=fr), [Description du produit pour le module complémentaire Adobe Analytics : Customer Journey Analytics](https://helpx.adobe.com/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html?lang=fr) ou [Description du produit pour Customer Journey Analytics B2B edition](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics-b2b.html?lang=fr).
 
 ## Types de limite
 
@@ -94,7 +94,7 @@ Image size - 2 - System-enforced Guardrail - Maximim upload size per image in MB
 
 {style="table-layout:auto"}
 
-Consultez également la section Experience Platform [Mécanismes de sécurisation de Real-time Customer Data Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/rtcdp/guardrails/overview).
+Consultez également la section Experience Platform [Mécanismes de sécurisation de Real-time Customer Data Platform](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/guardrails/overview).
 
 
 ## Expiration automatisée des jeux de données
@@ -139,7 +139,7 @@ Consultez également la section Experience Platform [Mécanismes de sécurisatio
 
 {style="table-layout:auto"}
 
-Consultez également la section Experience Platform [ Mécanismes de sécurisation pour l’ingestion de données](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=fr).
+Consultez également la section Experience Platform [ Mécanismes de sécurisation pour l’ingestion de données](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html).
 
 
 ## Exportation des données des destinations
@@ -151,7 +151,7 @@ Consultez également la section Experience Platform [ Mécanismes de sécurisati
 
 {style="table-layout:auto"}
 
-Consultez également la section Experience Platform [ Mécanismes de sécurisation d’exportation de jeux de données ](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/guardrails#dataset-exports)
+Consultez également la section Experience Platform [ Mécanismes de sécurisation d’exportation de jeux de données ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports)
 
 
 ## Zone d’atterrissage des données
@@ -247,12 +247,18 @@ Consultez également la section Experience Platform [ Mécanismes de sécurisati
 {style="table-layout:auto"}
 
 
+## Agent Data Insights
+
+| Nom | Valeur | Type de limite | Description |
+|---|--:|---|---|
+| Vues des données | 50 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de vues de données activables pour le Data Insights Agent. Lorsque d’autres vues de données sont activées, seules les vues de données les plus utilisées sont disponibles pour le Data Insights Agent. Ce mécanisme de sécurisation n’a aucune incidence sur les [mécanismes de sécurisation définissant le nombre maximal de vues de données que vous pouvez définir pour une connexion ou au sein de votre organisation](#connections-data-views-projects). |
+
 
 ## Latences
 
 >[!NOTE]
 >
->Les délais de traitement ci-dessous sont des mécanismes de sécurisation, et non des accords de niveau de service (SLA) contractuels. La latence varie en fonction de la configuration du client, des volumes de données et des applications clientes. Les temps de traitement réels sont souvent plus rapides. Consultez votre contrat Customer Journey Analytics pour connaître les conditions contractuelles et les contrats de niveau de service spécifiques. Voir Experience Platform [Mécanismes de sécurisation pour l’ingestion de données](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=fr) pour plus d’informations.
+>Les délais de traitement ci-dessous sont des mécanismes de sécurisation, et non des accords de niveau de service (SLA) contractuels. La latence varie en fonction de la configuration du client, des volumes de données et des applications clientes. Les temps de traitement réels sont souvent plus rapides. Consultez votre contrat Customer Journey Analytics pour connaître les conditions contractuelles et les contrats de niveau de service spécifiques. Voir Experience Platform [Mécanismes de sécurisation pour l’ingestion de données](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html) pour plus d’informations.
 
 | Flux de données | Latence attendue |
 |---|---|
