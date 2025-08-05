@@ -31,13 +31,13 @@ Pour utiliser les rapports en temps réel, activez le bouton (bascule) **[!UICON
 * [Élément suivant ou précédent](/help/analysis-workspace/c-panels/next-previous.md)
 * [Aperçu rapide](/help/analysis-workspace/c-panels/quickinsight.md)
 
-Un message contenant la date et l’heure de la dernière actualisation des données s’affiche. Par exemple : [!UICONTROL &#x200B; *Dernière actualisation à 19 :55*].
+Un message contenant la date et l’heure de la dernière actualisation des données s’affiche. Par exemple : [!UICONTROL  *Dernière actualisation à 19 :55*].
 
 Sélectionnez la période en temps réel pour laquelle vous souhaitez créer un rapport dans le menu déroulant. Les options disponibles sont les suivantes :
 
 * [!UICONTROL 15 dernières minutes]
 * [!UICONTROL 30 dernières minutes]
-* [!UICONTROL Dernière heure &#x200B;]
+* [!UICONTROL Dernière heure ]
 * [!UICONTROL 8 dernières heures]
 * [!UICONTROL Dernières 24 heures]
 
