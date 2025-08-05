@@ -7,9 +7,9 @@ hidefromtoc: true
 role: User
 badgePremium: label="Beta"
 exl-id: 12fbb760-936d-4e30-958f-764febca5ae7
-source-git-commit: e7a7a297e303a410c73598f373219644e50ede74
+source-git-commit: 34dfbc98acecf1ca953434a7d1f0547ff45139a8
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '471'
 ht-degree: 1%
 
 ---
@@ -54,5 +54,8 @@ Vous devez tenir compte des limitations suivantes concernant les rapports en tem
 * Les rapports en temps réel ne génèrent que des rapports sur les données disponibles sur une période mobile de 24 heures. Les données qui dépassent cette période de 24 heures ne sont pas disponibles.
 * Attribution, segmentation, mesures calculées, etc. ne fonctionnent que sur les données disponibles au cours de la période glissante de 24 heures.
 * Les rapports en temps réel fonctionnent mieux sur les données au niveau de l’événement et de la session. Soyez prudent lorsque vous utilisez les rapports en temps réel pour les données au niveau de la personne. <!--Need to explain this a bit better --> Étant donné que seuls les événements de la période de 24 heures variable sont disponibles pour les rapports en temps réel, l’historique des événements d’une personne est également limité à cette fenêtre. Tenez compte de la préférence pour les données au niveau de l’événement et de la session lorsque vous sélectionnez des mesures (calculées) de dimension. Et lorsque vous utilisez des fonctionnalités telles que les répartitions, suivant ou précédent, et plus encore dans votre panneau Actualisation en temps réel activée .
-* Vous ne pouvez pas combiner le groupement avec les rapports en temps réel. <!-- Do we need to explain this in more detail, why? --> Comme mentionné ci-dessus, les rapports en temps réel portent sur les données au niveau des événements et des sessions, et pas tant sur les données basées sur les personnes.
+* Vous ne pouvez pas combiner le groupement avec les rapports en temps réel. <!-- Do we need to explain this in more detail, why? --> les rapports en temps réel concernent les données au niveau de l’événement et de la session, mais sont moins pertinents pour les données basées sur la personne.
 * Aucune mesure de pulsation collectée sur les médias n’est disponible, à l’exception des mesures de démarrage et de fermeture des médias. Vous pouvez donc toujours utiliser les rapports en temps réel pour activer un cas d’utilisation de média.
+* Lorsque vous utilisez les options [télécharger ou exporter](/help/analysis-workspace/export/download-send.md) pour télécharger un projet ou exporter des données d’un tableau à structure libre, tenez compte des points suivants :
+   * Un projet CSV téléchargé ou un fichier CSV exporté contient les données en temps réel disponibles au moment du téléchargement ou de l’exportation.
+   * Un projet PDF téléchargé contient des données en temps non réel, similaires aux données affichées lorsque l’actualisation en temps réel est désactivée.
