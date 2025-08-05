@@ -7,7 +7,7 @@ feature: Release Notes
 source-git-commit: 830e8312b4be2ffac907baca282ce71029e6ecc5
 workflow-type: tm+mt
 source-wordcount: '5351'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -23,8 +23,8 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Nouvelles fonctions de champ dérivé | Documentation sur les nouvelles fonctions de champ dérivées : [Date mathématique](/help/data-views/derived-fields/derived-fields.md#date-math), [profondeur](/help/data-views/derived-fields/derived-fields.md#depth) et [typecast](/help/data-views/derived-fields/derived-fields.md#typecast). |
 | **Juillet 2025** | |
 | Débogueur | Nouvel article sur l’activation, l’utilisation et la désactivation du débogueur de projet dans Analysis Workspace. |
-| Recommandation de performances pour la visualisation de flux | Ajout d’informations indiquant que le fait de laisser plus de 10 nœuds développés dans une seule visualisation de flux peut affecter le temps de création de rapports. |
-| Autre méthode pour accorder à l’application Adobe Azure l’accès à votre clé | Ajout d’informations sur l’octroi d’autorisations via le consentement lors de la [configuration de clés gérées par le client](/help/privacy/cmk.md#set-up-customer-managed-keys-for-customer-journey-analytics-on-azure) pour Customer Journey Analytics sur Azure. |
+| Recommandation de performances pour la visualisation de flux | Ajout d’informations indiquant que le fait de laisser plus de 10 nœuds développés dans une seule visualisation de flux peut affecter le temps de création de rapports. |
+| Autre méthode pour accorder à l’application Adobe Azure l’accès à votre clé | Ajout d’informations sur l’octroi d’autorisations via le consentement lors de la [configuration de clés gérées par le client ou la cliente](/help/privacy/cmk.md#set-up-customer-managed-keys-for-customer-journey-analytics-on-azure) pour Customer Journey Analytics sur Azure. |
 | **Juin 2025** | |
 | Nouvelles actions de raccourci | Les nouveaux raccourcis clavier d’Analysis Workspace permettent désormais de [déplacer les panneaux Workspace](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md#move-panel-actions) vers le haut et vers le bas dans un projet. |
 | **Mai 2025** | |
