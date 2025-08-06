@@ -3,9 +3,9 @@ title: Notes de mise à jour actuelles de Customer Journey Analytics
 description: Afficher les dernières notes de mise à jour de Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 71974e607b0924796c4413a4d092f7afd643d32f
+source-git-commit: 379cf7af9bf6722fd483a9c0639fc6b294c398a4
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '438'
 ht-degree: 81%
 
 ---
@@ -22,7 +22,7 @@ Ces notes de mise à jour portent sur la période du 11 juillet 2025 au 15 ao
 | Fonctionnalité | Description | [Le déploiement commence](releases.md) | [Disponibilité générale](releases.md) |
 | ----------- | ---------- | ------- | ---- |
 | **Ajouter et afficher des commentaires dans les projets Analysis Workspace** | Une nouvelle [fonctionnalité de commentaires](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/build-workspace-project/comment-projects) dans Analysis Workspace vous permet de partager des informations et de poser des questions dans le cadre d’un projet Analysis Workspace. Celle-ci peut optimiser les discussions sur les données, en maintenant les conversations dans le contexte spécifique des données concernées. Vous pouvez : <ul><li>Commenter tout projet Analysis Workspace auquel vous avez accès</li><li>Commenter un élément spécifique d’une visualisation ou écrire des commentaires généraux sur un projet</li><li>Mentionner d’autres utilisateurs et utilisatrices pour les informer de vos commentaires</li><li>Gérer des commentaires existants (modifier, épingler, résoudre, etc.)</li></ul>Les administrateurs et les administratrices Customer Journey Analytics peuvent [désactiver les commentaires au niveau de l’organisation](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/user-preferences#ims-organization-preferences). Les propriétaires de projet peuvent [désactiver les commentaires au niveau du projet](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/build-workspace-project/create-projects). | 25 juin 2025 | 22 juillet 2025 <p>(auparavant le 29 mai 2025)</p> |
-| **Les projets téléchargés au format PDF sont enregistrés sur votre poste de travail.** | Lors du téléchargement d’un projet au format PDF, le fichier est enregistré dans le dossier des téléchargements de votre poste de travail. Auparavant, le téléchargement d’un projet au format PDF ouvrait le fichier PDF dans un nouvel onglet du navigateur avec une URL unique. [En savoir plus](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/export/download-send) | | À confirmer |
+| **Les projets téléchargés au format PDF sont enregistrés sur votre poste de travail.** | Lors du téléchargement d’un projet au format PDF, le fichier est enregistré dans le dossier des téléchargements de votre poste de travail. Auparavant, le téléchargement d’un projet au format PDF ouvrait le fichier PDF dans un nouvel onglet du navigateur avec une URL unique. (Lien vers la documentation à venir) | | mardi 25 août 2025 |
 | **Champs dérivés - Fonction Date Math** | La fonction de champ dérivé [Date Math](/help/data-views/derived-fields/derived-fields.md#date-math) permet de renvoyer la différence entre deux champs Date ou Date et heure. | mardi 4 août 2025 | samedi 8 août 2025 |
 | **Champs Dérivés - Fonction De Profondeur** | La fonction de champ dérivé [Depth](/help/data-views/derived-fields/derived-fields.md#depth) permet de renvoyer la profondeur d’un champ, comme le permet la dimension standard de profondeur d’événement prête à l’emploi. | mardi 4 août 2025 | samedi 8 août 2025 |
 | **Champs dérivés - Fonction Typecast** | La fonction de champ dérivé [Typecast](/help/data-views/derived-fields/derived-fields.md#typecast) permet de modifier un type de champ à la volée et de rendre le champ disponible pour des transformations supplémentaires dans Customer Journey Analytics. | mardi 4 août 2025 | samedi 8 août 2025 |
