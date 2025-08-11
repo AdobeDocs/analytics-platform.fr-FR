@@ -5,9 +5,9 @@ exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
 source-git-commit: 830e8312b4be2ffac907baca282ce71029e6ecc5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5351'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Fonctionnalité | Description |
 | --- | --- |
 | **Août 2025** | |
-| Nouvelles fonctions de champ dérivé | Documentation sur les nouvelles fonctions de champ dérivées : [Date mathématique](/help/data-views/derived-fields/derived-fields.md#date-math), [profondeur](/help/data-views/derived-fields/derived-fields.md#depth) et [typecast](/help/data-views/derived-fields/derived-fields.md#typecast). |
+| Nouvelles fonctions de champs dérivés | Documentation sur les nouvelles fonctions de champs dérivés : [Mathématiques de date](/help/data-views/derived-fields/derived-fields.md#date-math), [Profondeur](/help/data-views/derived-fields/derived-fields.md#depth) et [Typecast](/help/data-views/derived-fields/derived-fields.md#typecast). |
 | **Juillet 2025** | |
 | Débogueur | Nouvel article sur l’activation, l’utilisation et la désactivation du débogueur de projet dans Analysis Workspace. |
 | Recommandation de performances pour la visualisation de flux | Ajout d’informations indiquant que le fait de laisser plus de 10 nœuds développés dans une seule visualisation de flux peut affecter le temps de création de rapports. |
