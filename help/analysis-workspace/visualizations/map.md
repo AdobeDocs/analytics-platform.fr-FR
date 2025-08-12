@@ -6,10 +6,10 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
-source-git-commit: f0ef310f120e278685893308315902e32c54e35e
+source-git-commit: bee6c3420511dc944c74e9818d77f6424fcb9cc8
 workflow-type: tm+mt
-source-wordcount: '2385'
-ht-degree: 13%
+source-wordcount: '2770'
+ht-degree: 11%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 13%
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente la visualisation des cartes dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Voir [Map](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) pour la version_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** de cet article._
+_Cet article présente la visualisation des cartes dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Voir [Map](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) pour la version_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 
@@ -59,7 +59,7 @@ La visualisation ![Globe](/help/assets/icons/Globe.svg) **[!UICONTROL Map]** d�
 
 Dans les paramètres des vues de données Customer Journey Analytics, les administrateurs peuvent ajouter des [libellés de contexte](/help/data-views/component-settings/overview.md) à une dimension ou à une mesure, et les services Customer Journey Analytics tels que la visualisation [!UICONTROL carte] peuvent utiliser ces libellés à leurs fins.
 
-#### Libellés de contexte requis pour la visualisation des cartes
+#### Libellés de contexte requis pour la latitude et la longitude dans la visualisation de carte
 
 Les libellés de contexte sont requis pour que la visualisation des cartes fonctionne. Sans les libellés de contexte suivants, la visualisation de carte ne fonctionne pas, car il n’y a aucune donnée de latitude et de longitude à utiliser.
 
@@ -72,13 +72,27 @@ Pour ajouter ces libellés de contexte :
 
 1. Sur la page Vues des données , sélectionnez la vue de données contenant les données à analyser dans la visualisation des cartes.
 
-1. Sélectionnez l’onglet **[!UICONTROL Composants]**, puis sélectionnez la dimension contenant les données de longitude.
+1. Sélectionnez l’onglet **[!UICONTROL Composants]**.
 
-1. Dans la section **[!UICONTROL Paramètres des composants]** du rail de droite, dans le champ **[!UICONTROL Libellés de contexte]**, commencez à saisir du `Longitude`, puis sélectionnez-le dans le menu déroulant.
+1. (Conditionnel) Si vous utilisez le SDK Web et que vous avez configuré la latitude et la longitude pour les renseigner dans votre flux de données, ou si vous utilisez le connecteur Source Analytics pour renseigner les données d’événement, les champs de latitude et de longitude doivent déjà être disponibles dans votre schéma et renseignés avec les libellés de contexte appropriés.
 
-   ![Libellés contextuels de latitude et longitude](assets/map-context-labels-lat-long.png)
+   Recherchez ces champs de schéma **[!UICONTROL Latitude]** et **[!UICONTROL Longitude]** (dans **[!UICONTROL Jeux de données d’événement]** > **[!UICONTROL placeContext]** > **[!UICONTROL geo]** > **[!UICONTROL _schema]**) et faites-les glisser dans votre vue de données sous forme de dimensions s’ils ne sont pas déjà présents.
 
-1. Répétez cette procédure pour ajouter le libellé de contexte **[!UICONTROL Latitude]** à la dimension contenant les données de latitude.
+   Lorsque ces champs de schéma existent en tant que dimensions dans votre vue de données, leurs libellés de contexte sont automatiquement appliqués et la visualisation des cartes les utilise sans configuration supplémentaire.
+
+   ![Ajouter des champs de schéma de latitude et de longitude à la vue de données](assets/dataview-lat-long-default.png)
+
+1. (Conditionnel) Si vous souhaitez utiliser des dimensions personnalisées pour les données de latitude et de longitude, vous pouvez configurer les libellés de contexte sur les champs personnalisés :
+
+   1. Dans la section **[!UICONTROL Dimensions]**, sélectionnez la dimension contenant les données de longitude.
+
+   1. Dans la section **[!UICONTROL Paramètres des composants]** du rail de droite, dans le champ **[!UICONTROL Libellés de contexte]**, commencez à saisir du `Longitude`, puis sélectionnez-le dans le menu déroulant.
+
+      ![Libellés contextuels de latitude et longitude](assets/map-context-labels-lat-long.png)
+
+   1. Répétez cette procédure pour ajouter le libellé de contexte **[!UICONTROL Latitude]** à la dimension contenant les données de latitude.
+
+   1. (Facultatif) Par défaut, ces dimensions sont précises au niveau de la ville ou du code postal dans la visualisation de carte et affichent 2 décimales dans les rapports Workspace. Vous pouvez les ajuster pour qu’elles soient précises sur un seul mètre dans la visualisation de carte et pour afficher 5 décimales dans les rapports Workspace. Pour plus d&#39;informations sur l&#39;ajustement du niveau de précision, voir [Configurer des emplacements précis pour les cotes](#configure-precise-locations-for-dimensions).
 
 1. Sélectionnez **[!UICONTROL Enregistrer et continuer]** > **[!UICONTROL Enregistrer et terminer]**.
 
@@ -102,13 +116,25 @@ Pour ajouter ces libellés de contexte :
 
 1. Sur la page Vues de données , sélectionnez la vue de données contenant les données à analyser avec les modèles préconfigurés qui utilisent la visualisation de carte. Dans cette vue de données, vous allez sélectionner cinq dimensions : une avec les données du pays, une avec les données de la région, une avec les données de la ville, une avec les données de l’État et une avec les données de la DMA. Vous étiquetez ensuite ces dimensions avec le libellé de contexte correspondant.
 
-1. Sélectionnez l’onglet **[!UICONTROL Composants]** puis sélectionnez la dimension contenant les données du pays.
+1. Sélectionnez l’onglet **[!UICONTROL Composants]**.
 
-1. Dans la section **[!UICONTROL Paramètres des composants]** du rail de droite, dans le champ **[!UICONTROL Libellés de contexte]**, commencez à saisir du `Geo Country`, puis sélectionnez-le dans le menu déroulant.
+1. (Sous condition) Si vous utilisez le SDK Web et que vous avez configuré les champs géographiques à renseigner dans votre flux de données, ou si vous utilisez le connecteur Source Analytics pour renseigner les données d’événement, les champs géographiques doivent déjà être disponibles dans votre schéma et renseignés avec les libellés de contexte appropriés.
 
-   ![Libellés contextuels des modèles](assets/map-context-labels-templates.png)
+   Recherchez les champs de schéma appropriés, tels que **[!UICONTROL Ville]**, **[!UICONTROL Code postal]**, **[!UICONTROL État ou province]** (dans **[!UICONTROL Jeux de données d’événement]** > **[!UICONTROL placeContext]** > **[!UICONTROL geo]**) et faites-les glisser dans votre vue de données en tant que dimensions s’ils ne sont pas déjà présents.
 
-1. Répétez cette procédure pour ajouter le libellé de contexte **[!UICONTROL Géo : Région géographique]**, **[!UICONTROL Géo : Ville géographique]**, **[!UICONTROL Géo : État géographique]** et **[!UICONTROL Géo : Dma]** à chaque dimension contenant les données correspondantes.
+   Lorsque ces champs de schéma existent en tant que dimensions dans votre vue de données, leurs libellés de contexte sont automatiquement appliqués et les modèles géographiques les utilisent sans configuration supplémentaire.
+
+   ![Ajouter des champs de schéma géographique à la vue de données](assets/dataview-geo-default.png)
+
+1. (Conditionnel) Si vous souhaitez utiliser des dimensions personnalisées pour les données géographiques, vous pouvez configurer les libellés de contexte sur les champs personnalisés :
+
+   1. Sélectionnez la dimension qui contient les données du pays.
+
+   1. Dans la section **[!UICONTROL Paramètres des composants]** du rail de droite, dans le champ **[!UICONTROL Libellés de contexte]**, commencez à saisir du `Geo Country`, puis sélectionnez-le dans le menu déroulant.
+
+      ![Libellés contextuels des modèles](assets/map-context-labels-templates.png)
+
+   1. Répétez cette procédure pour ajouter le libellé de contexte **[!UICONTROL Géo : Région géographique]**, **[!UICONTROL Géo : Ville géographique]**, **[!UICONTROL Géo : État géographique]** et **[!UICONTROL Géo : Dma]** à chaque dimension contenant les données correspondantes.
 
 1. Sélectionnez **[!UICONTROL Enregistrer et continuer]** > **[!UICONTROL Enregistrer et terminer]**.
 
@@ -255,7 +281,7 @@ Si vous disposez de jeux de données personnalisés avec une précision élevée
 
 1. Dans la vue de données, sélectionnez l’onglet **[!UICONTROL Composants]**.
 
-1. Sélectionnez la dimension à configurer.
+1. Sélectionnez les dimensions que vous utilisez pour la latitude et la longitude que vous souhaitez configurer. Pour plus d’informations sur les dimensions que vous utilisez, voir [Libellés de contexte obligatoires pour la latitude et la longitude dans la visualisation de la carte](#required-context-labels-for-latitude-and-longitude-in-the-map-visualization).
 
 1. Configurez le niveau de précision de la dimension :
 
