@@ -74,8 +74,8 @@ En plus d’être ajouté en tant qu’administrateur de produit dans le profil 
   |---|---|---|
   | [!UICONTROL Parcours] | [!UICONTROL Afficher les événements de Parcours, les sources de données et les actions] | Accès en lecture seule aux événements de parcours, aux actions personnalisées de parcours et aux sources de données de parcours. |
   | [!UICONTROL Parcours] | [!UICONTROL Gérer les événements Parcours, les sources de données et les actions] | Lire, créer, modifier et supprimer des événements, des sources ou des actions. |
-  | [!UICONTROL Parcours] | [!UICONTROL Afficher les Parcours ] | Accès en lecture seule aux parcours. |
-  | [!UICONTROL Parcours] | [!UICONTROL Gérer les Parcours ] | Lecture, création, modification et suppression des parcours. |
+  | [!UICONTROL Parcours] | [!UICONTROL Afficher les Parcours &#x200B;] | Accès en lecture seule aux parcours. |
+  | [!UICONTROL Parcours] | [!UICONTROL Gérer les Parcours &#x200B;] | Lecture, création, modification et suppression des parcours. |
 
 * Exporter des jeux de données vers des [destinations](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/activate/export-datasets)
 
