@@ -5,10 +5,10 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 7a4f15c4-7fd6-4a6a-9b83-7c1f3b95be16
-source-git-commit: 20b578a6269aeaf54f6296b1f4337937887ecf05
-workflow-type: ht
-source-wordcount: '604'
-ht-degree: 100%
+source-git-commit: 82b36895fe5186f0133c128d434470ea7f875677
+workflow-type: tm+mt
+source-wordcount: '648'
+ht-degree: 96%
 
 ---
 
@@ -33,13 +33,17 @@ L’Assistant IA pour Customer Journey Analytics est disponible pour tous les ni
 
 ## Connaissances du produit {#knowledge}
 
-Le modèle de récupération des connaissances sur le produit est entraîné pour Customer Journey Analytics. D’autres fonctionnalités, telles que l’analyse des données, seront déployées ultérieurement.
-
 | Connaissances du produit | Exemples |
 | --- | --- |
 | Apprentissage ciblé | <ul><li>Quelle est la différence entre Adobe Analytics et Customer Journey Analytics ?</li><li>Comment créer une mesure calculée ?</li></ul> |
 | Ouvrir la découverte | <ul><li>Comment exporter un projet Workspace ?</li><li>Comment détecter des composants Workspace en double ?</li></ul> |
 | Résolution des problèmes | <ul><li>Combien de temps faut-il pour que les données arrivent dans CJA ?</li><li>Combien de champs dérivés peut-on avoir dans une connexion Customer Journey Analytics ?</li></ul> |
+
+## Analyse des données
+
+L’agent Data Insights, accessible à partir de l’Assistant d’IA dans Customer Journey Analytics, est un agent de conversation d’IA générative qui répond rapidement et efficacement aux questions sur vos données. Il crée des visualisations pertinentes dans Analysis Workspace en utilisant les composants de votre vue de données et vos données réelles.
+
+Pour plus d’informations sur l’utilisation de Data Insights Agent dans l’assistant AI, voir [Visualiser les données avec Data Insights Agent](/help/data-analysis-ai.md).
 
 ## Accès aux fonctionnalités
 
