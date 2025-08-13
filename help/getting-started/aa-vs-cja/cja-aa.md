@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 144caa157e1a7161595e2b4fc0da60cd63de50bd
-workflow-type: ht
-source-wordcount: '2694'
-ht-degree: 100%
+source-git-commit: 7f44c7497a48e8377ca26cb194f828c3c8836f98
+workflow-type: tm+mt
+source-wordcount: '2709'
+ht-degree: 98%
 
 ---
 
@@ -112,9 +112,10 @@ Le tableau suivant répertorie les fonctionnalités disponibles dans Customer Jo
 | **Règles de traitement, règles VISTA et règles de traitement des canaux marketing** | Prise en charge à l’aide de la fonctionnalité de préparation des données d’Adobe Experience Platform et des [champs dérivés](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dataviews/derived-fields) pour les jeux de données basés sur le SDK web et les données du connecteur source Analytics. |
 | **Variable products** | Dans Experience Platform, il est possible d’utiliser un tableau d’objets dans un schéma de jeux de données pour répondre à ce cas d’utilisation. Dans Customer Journey Analytics, les clients et clientes ont la possibilité d’utiliser n’importe quel nombre de variables de produit et ne sont pas limités à une seule variable, comme dans Adobe Analytics. |
 | **Partage des projets** | Le partage des projets est uniquement pris en charge entre les personnes utilisant Customer Journey Analytics. Il n’existe pas de partage de projet entre Customer Journey Analytics et Analysis Workspace traditionnel. |
+| **Création de rapports en temps réel** | Les rapports en temps réel dans Customer Journey Analytics affichent et mettent à jour en temps réel les données et les visualisations au sein d’un ou de plusieurs panneaux dans Analysis Workspace. |
 | **Report Builder** | Prise en charge avec un nouveau plug-in Office 365 pour Microsoft Excel. |
 | **Autorisations d’utilisation/Contrôles d’accès aux données** | Customer Journey Analytics fait la distinction entre les administrateurs et administratrices de produit, les administrateurs et administratrices de profil de produit et les utilisateurs et utilisatrices d’[Adobe Admin Console](https://experienceleague.adobe.com/fr/docs/core-services/interface/administration/admin-tool-experience-cloud). Seuls les administrateurs et administratrices de produit peuvent créer, mettre à jour et supprimer des connexions, des projets, des segments ou des mesures calculées créés par d’autres utilisateurs et utilisatrices. Les administrateurs et administratrices de produit et les administrateurs et administratrices de profil de produit peuvent modifier les vues de données. D’autres autorisations d’utilisateurs et utilisatrices sont disponibles pour créer des mesures calculées, des segments ou des annotations. |
-| **Visualisations** | Toutes les visualisations Workspace sont prises en charge, à l’exception de la visualisation des mappages. |
+| **Visualisations** | Toutes les visualisations Workspace sont prises en charge. |
 | **Groupement cross-canal et entre appareils** | Pris en charge pour les jeux de données d’événement contenant des informations d’identité. Voir [Groupement](../../stitching/overview.md). |
 
 ## Prise en charge partielle {#partial}
@@ -127,7 +128,6 @@ Le tableau suivant répertorie les fonctionnalités disponibles dans Customer Jo
 
 | Fonctionnalité | Notes |
 | --- | --- |
-| **Création de rapports en temps réel** | La prise en charge est planifiée. |
 | **Sources de données des ID de transaction** | La prise en charge est planifiée. |
 
 ## La prise en charge n’est pas encore planifiée {#not-planned}
