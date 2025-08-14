@@ -4,9 +4,9 @@ title: Carte
 feature: Visualizations
 role: User, Admin
 exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
-source-git-commit: 0aac2739e03044c03a2561535846f1355054f45f
+source-git-commit: 71d5326f5d80f196504178855dacdf01f60fb81c
 workflow-type: tm+mt
-source-wordcount: '2770'
+source-wordcount: '2761'
 ht-degree: 11%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 11%
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente la visualisation des cartes dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Voir [Map](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) pour la version_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** de cet article._
+_Cet article présente la visualisation des cartes dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Voir [Map](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) pour la version_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 
@@ -112,13 +112,13 @@ Pour ajouter ces libellés de contexte :
 
 1. Dans Customer Journey Analytics, sélectionnez **[!UICONTROL Gestion des données]** > **[!UICONTROL Vues des données]**.
 
-1. Sur la page Vues de données , sélectionnez la vue de données contenant les données à analyser avec les modèles préconfigurés qui utilisent la visualisation de carte. Dans cette vue de données, vous allez sélectionner cinq dimensions : une avec les données du pays, une avec les données de la région, une avec les données de la ville, une avec les données de l’État et une avec les données de la DMA. Vous étiquetez ensuite ces dimensions avec le libellé de contexte correspondant.
+1. Sur la page Vues de données , sélectionnez la vue de données contenant les données à analyser avec les modèles préconfigurés qui utilisent la visualisation de carte. Dans cette vue de données, sélectionnez cinq dimensions : une avec les données du pays, une avec les données de la région, une avec les données de la ville, une avec les données de l’État et une avec les données de la DMA. Ensuite, libellez ces dimensions avec le libellé de contexte correspondant.
 
 1. Sélectionnez l’onglet **[!UICONTROL Composants]**.
 
 1. (Sous condition) Si vous utilisez le SDK Web et que vous avez configuré les champs géographiques à renseigner dans votre flux de données, ou si vous utilisez le connecteur Source Analytics pour renseigner les données d’événement, les champs géographiques doivent déjà être disponibles dans votre schéma et renseignés avec les libellés de contexte appropriés.
 
-   Recherchez les champs de schéma appropriés, tels que **[!UICONTROL Ville]**, **[!UICONTROL Code postal]**, **[!UICONTROL État ou province]** (dans **[!UICONTROL Jeux de données d’événement]** > **[!UICONTROL placeContext]** > **[!UICONTROL geo]**) et faites-les glisser dans votre vue de données en tant que dimensions s’ils ne sont pas déjà présents.
+   Recherchez les champs de schéma appropriés, tels que **[!UICONTROL Ville]**, **[!UICONTROL Code postal]**, **[!UICONTROL État ou province]** (dans **[!UICONTROL Jeux de données d’événement]** > **[!UICONTROL placeContext]** > **[!UICONTROL geo]**), puis faites-les glisser dans votre vue de données en tant que dimensions s’ils ne sont pas déjà présents.
 
    Lorsque ces champs de schéma existent en tant que dimensions dans votre vue de données, leurs libellés de contexte sont automatiquement appliqués et les modèles géographiques les utilisent sans configuration supplémentaire.
 
@@ -153,7 +153,7 @@ La visualisation des cartes dans Customer Journey Analytics diffère de la visua
 | Création d’une tendance à partir d’une sélection | Créez une visualisation sous forme de graphique en courbes de tendance en fonction d’une zone spécifique que vous sélectionnez dans la visualisation des cartes. <p>Pour plus d’informations, voir [Création d’un graphique en courbes de tendance à partir de la visualisation des cartes](#create-a-trended-line-chart-from-the-map-visualization). <!-- is this correct? --> | Impossible de créer une tendance à partir de la visualisation des cartes. |
 | Ajouter une répartition depuis une sélection | Ventilez un élément de dimension, une mesure, un segment ou une période spécifique dans une zone spécifique que vous sélectionnez dans la visualisation de carte. <p>Pour plus d’informations, voir [Ajouter une répartition à partir de la visualisation des cartes](#add-a-breakdown-from-the-map-visualization). | Impossible d’ajouter une répartition à partir de la visualisation des cartes. |
 
-## Commencer à créer une visualisation de carte {#begin-building-map}
+## Génération d’une visualisation de carte {#begin-building-map}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -185,7 +185,7 @@ La visualisation des cartes dans Customer Journey Analytics diffère de la visua
 
    * **[!UICONTROL Ajouter un segment]** : (facultatif) dans la liste déroulante de segments, sélectionnez un segment. Vous pouvez également faire glisser un segment depuis la liste des segments.
 
-   Vous pouvez mettre à jour ces informations une fois la visualisation créée en sélectionnant l’icône de modification ![Modifier](/help/assets/icons/Edit.svg) dans l’en-tête de la visualisation.
+   Vous pouvez mettre à jour ces informations une fois la visualisation créée en sélectionnant l’icône Modifier ![Modifier](/help/assets/icons/Edit.svg) dans l’en-tête de la visualisation.
 
 1. Sélectionnez la **[!UICONTROL Version]**.
 
@@ -197,7 +197,7 @@ La visualisation des cartes dans Customer Journey Analytics diffère de la visua
 
 ## Visualisation Carte
 
-1. Si ce n’est pas déjà fait, créez une visualisation de carte, comme décrit dans la section [Commencer à créer une visualisation de carte](#begin-building-a-map-visualization).
+1. Si ce n’est pas déjà fait, créez une visualisation de carte comme décrit dans la section [Créer une visualisation de carte](#begin-building-a-map-visualization).
 
 1. Dans la visualisation des cartes d’Analysis Workspace, effectuez l’une des opérations suivantes :
 
@@ -250,7 +250,7 @@ La visualisation des cartes dans Customer Journey Analytics diffère de la visua
 
 Pour configurer les paramètres de la visualisation des cartes :
 
-1. Dans Analysis Workspace, ouvrez une visualisation de carte existante ou [commencez à en créer une nouvelle](#begin-building-a-map-visualization).
+1. Dans Analysis Workspace, ouvrez une visualisation de carte existante ou [créez-en une](#begin-building-a-map-visualization).
 
 1. Pointez sur la visualisation des cartes, puis sélectionnez l’icône Paramètres ![Paramètre](/help/assets/icons/Setting.svg) dans l’en-tête de visualisation.
 
