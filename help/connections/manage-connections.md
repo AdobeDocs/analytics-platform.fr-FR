@@ -6,10 +6,10 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: f966f8e87af7ac5e1db93307452ffe16bf87fbc9
+source-git-commit: cac5582cd43aa9bc935fadf8a3ba0dab11e7b095
 workflow-type: tm+mt
-source-wordcount: '4612'
-ht-degree: 63%
+source-wordcount: '4712'
+ht-degree: 62%
 
 ---
 
@@ -73,14 +73,14 @@ Les colonnes ou icônes suivantes sont disponibles dans le tableau.
 | ![Informations](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) | Pour afficher des informations sur [!UICONTROL Jeux de données inclus], [!UICONTROL Sandbox], [!UICONTROL Propriétaire], etc., sélectionnez ![Informations](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) en regard du nom de la connexion.<p>Une fenêtre contextuelle affiche des détails sur le jeu de données. <p>![Fenêtre contextuelle d’informations de connexion](assets/connection-info-popup.png) |
 | ![Vue de données](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) | Pour [créer une vue de données](#create-a-data-view) pour la connexion, sélectionnez ![Vue de données](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg). Cette icône s’affiche uniquement lorsqu’aucune vue de données n’est déjà associée à la connexion. |
 | ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) | Sélectionnez ![ Plus ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) pour ouvrir un menu contextuel. Vous pouvez sélectionner : <p>![Modifier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Modifier]** pour [modifier](#edit-a-connection) une connexion.<p>![Supprimer](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **[!UICONTROL Supprimer]** pour [supprimer](#delete-a-connection) une connexion.<p>![Vue de données](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) **[!UICONTROL Créer une vue de données]** pour [créer une vue de données](#create-a-data-view) pour la connexion.<p>![GraphPathing](/help/assets/icons/GraphPathing.svg) **[!UICONTROL mappage de connexion]** pour afficher un [mappage de connexion](#map-a-connection) pour la connexion. |
-| [!BADGE Type de connexion &#x200B;]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL &#x200B; B2B edition &#x200B;]** | Type de connexion : connexion basée sur **[!UICONTROL Personne]** ou **[!UICONTROL Compte]**. |
+| [!BADGE Type de connexion ]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL  B2B edition ]** | Type de connexion : connexion basée sur **[!UICONTROL Personne]** ou **[!UICONTROL Compte]**. |
 | **[!UICONTROL Jeux de données]** | Un ou plusieurs liens vers les jeux de données qui font partie de la connexion. Vous pouvez sélectionner le lien hypertexte du jeu de données pour afficher le jeu de données dans la connexion. Si d’autres jeux de données font partie de la connexion sélectionnée, sélectionnez **[!UICONTROL +*x* plus]** pour afficher un panneau **[!UICONTROL Jeux de données inclus]**. Ce panneau affiche des liens vers tous les jeux de données et une option permettant de ![Rechercher](/help/assets/icons/Search.svg) rechercher des jeux de données spécifiques qui font partie de la connexion.<p>![ Jeux de données inclus ](assets/datasets-included.png)<p>Sélectionnez un nom de jeu de données pour l’ouvrir dans un nouvel onglet de l’interface d’Experience Platform. |
 | **[!UICONTROL Sandbox]** | [Sandbox Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/sandbox/home) dʼoù cette connexion tire ses jeux de données. Vous sélectionnez ce sandbox lorsque vous avez créé la connexion. Vous ne pouvez pas modifier le sandbox une fois qu’une connexion est enregistrée. |
 | **[!UICONTROL Propriétaire]** | Personne qui a créé la connexion. |
-| **[!UICONTROL Importer de nouvelles données]** | Statut de l’import de nouvelles données pour les jeux de données : <p>![Statut vert](assets/status-green.svg)   **[!UICONTROL _x _On]**&#x200B;pour les jeux de données configurés afin d’importer de nouvelles données, et<p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _x désactivés_]** pour les jeux de données non configurés pour importer de nouvelles données. |
+| **[!UICONTROL Importer de nouvelles données]** | Statut de l’import de nouvelles données pour les jeux de données : <p>![Statut vert](assets/status-green.svg)   **[!UICONTROL _x _On]**pour les jeux de données configurés afin d’importer de nouvelles données, et<p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _x désactivés_]** pour les jeux de données non configurés pour importer de nouvelles données. |
 | **[!UICONTROL Date de création]** | Date et heure auxquelles la connexion a été créée. |
 | **[!UICONTROL Dernière modification]** | Date et heure de la dernière mise à jour de la connexion. |
-| **[!UICONTROL Renvoyer les données]** | Statut des données de renvoi dans les jeux de données.<p>![Statut rouge](assets/status-red.svg) **[!UICONTROL _x _renvois ont échoué]**&#x200B;pour le nombre de renvois ayant échoué dans les jeux de données,<p>![Statut orange](assets/status-orange.svg) **[!UICONTROL _x _ renvois en cours de traitement]**&#x200B;pour le nombre de renvois en cours de traitement dans les jeux de données,<p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _ renvois terminés]**&#x200B;pour le nombre de renvois terminés pour les jeux de données, et<p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _Désactivé_]** au cas où aucun renvoi n’est défini pour les jeux de données dans la connexion. |
+| **[!UICONTROL Renvoyer les données]** | Statut des données de renvoi dans les jeux de données.<p>![Statut rouge](assets/status-red.svg) **[!UICONTROL _x _renvois ont échoué]**pour le nombre de renvois ayant échoué dans les jeux de données,<p>![Statut orange](assets/status-orange.svg) **[!UICONTROL _x _ renvois en cours de traitement]**pour le nombre de renvois en cours de traitement dans les jeux de données,<p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _ renvois terminés]**pour le nombre de renvois terminés pour les jeux de données, et<p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _Désactivé_]** au cas où aucun renvoi n’est défini pour les jeux de données dans la connexion. |
 | **[!UICONTROL Intégrations]** | Affiche toutes les applications Experience Platform activées avec la connexion. |
 | **[!UICONTROL Utilisation dans CJA]** | Indique si la connexion a été activée pour une utilisation avec Customer Journey Analytics. |
 
@@ -155,7 +155,7 @@ Vous pouvez utiliser une connexion Journey Optimizer dans Customer Journey Analy
 
 * Effectuez une analyse approfondie des données Journey Optimizer dans Customer Journey Analytics (à l’aide du bouton **[!UICONTROL Analyser dans CJA]** dans Journey Optimizer).
 
-  Pour plus d’informations, voir [Analyser dans Customer Journey Analytics](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/reporting/channel-report/report-cja-manage#cja-template) dans la documentation de Journey Optimizer.
+  Pour plus d’informations, voir [Analyser dans Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/report-cja-manage#cja-template) dans la documentation de Journey Optimizer.
 
 * Modifiez la connexion Journey Optimizer et les vues de données associées.
 
@@ -171,11 +171,15 @@ Une fois que vous avez accès à Customer Journey Analytics, vous devez autorise
 
    1. Dans la section **[!UICONTROL Utiliser dans CJA]**, sélectionnez **[!UICONTROL Désactivé]**.
 
-      Toutes les connexions qui ne sont pas actuellement configurées pour être utilisées dans Customer Journey Analytics s’affichent.
+      Toutes les connexions Journey Optimizer qui ne sont pas actuellement configurées pour être utilisées dans Customer Journey Analytics s’affichent.
 
-   1. Sélectionnez la connexion Journey Optimizer à utiliser dans Customer Journey Analytics.
+      ![Filtrer pour afficher les connexions non activées pour AJO](assets/remove-ajo-connection.png)
 
-1. Dans la connexion Journey Optimizer, sélectionnez **[!UICONTROL Utiliser dans CJA]**.
+1. Pour afficher la connexion, sélectionnez le nom de la connexion Journey Optimizer que vous souhaitez utiliser dans Customer Journey Analytics.
+
+1. Lors de l’affichage de la connexion Journey Optimizer, sélectionnez **[!UICONTROL Utiliser dans CJA]**.
+
+   ![Bouton Utiliser dans CJA ](assets/connection-use-in-cja.png)
 
    La boîte de dialogue suivante **[!UICONTROL Utiliser cette connexion dans Customer Journey Analytics]** s’affiche :
 
@@ -204,7 +208,21 @@ Vous pouvez supprimer la connexion Journey Optimizer de Customer Journey Analyti
 
 Pour supprimer la connexion de Customer Journey Analytics :
 
-1. Lors de la modification d’une connexion Journey Optimizer, sélectionnez **[!UICONTROL Supprimer de CJA]**.
+1. Recherchez la connexion Journey Optimizer à supprimer de Customer Journey Analytics.
+
+   1. Sélectionnez l’icône Filtre dans l’onglet **[!UICONTROL Connexions]**.
+
+   1. Dans la section **[!UICONTROL Utiliser dans CJA]**, sélectionnez **[!UICONTROL Activé]**.
+
+      Toutes les connexions Journey Optimizer actuellement configurées pour être utilisées dans Customer Journey Analytics s’affichent.
+
+      ![Filtrer pour afficher les connexions activées pour AJO](assets/enabled-ajo-connection.png)
+
+1. Pour afficher la connexion, sélectionnez le nom de la connexion Journey Optimizer à supprimer de Customer Journey Analytics.
+
+1. Lorsque vous affichez la connexion Journey Optimizer, sélectionnez **[!UICONTROL Supprimer de CJA]**.
+
+   ![bouton Supprimer de CJA](assets/connection-remove-from-cja.png)
 
    La boîte de dialogue **[!UICONTROL Supprimer cette connexion de Customer Journey Analytics]** suivante s’affiche :
 
@@ -260,9 +278,9 @@ Le tableau des jeux de données affiche les colonnes suivantes pour chaque jeu d
 | **[!UICONTROL Type de source de données]** | Type de source. Vous définissez le type de source lorsque vous ajoutez un jeu de données à une connexion. |
 | **[!UICONTROL Type de jeu de données]** | Le [ type de jeu de données ](create-connection.md#dataset-types). Le type peut être [!UICONTROL Événement], [!UICONTROL Profil], [!UICONTROL Recherche] ou [!UICONTROL Résumé]. |
 | **[!UICONTROL Schéma]** | Schéma Experience Platform sur lequel est basé ce jeu de données. |
-| **[!UICONTROL Importer de nouvelles données]** | Statut de l’import des nouvelles données pour le jeu de données : <p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _ activés]**&#x200B;si le jeu de données est configuré pour importer de nouvelles données, et<p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _x désactivés_]** si le jeu de données est configuré pour ne pas importer de nouvelles données. |
-| **[!UICONTROL Transformer les données]** | Statut de transformation des jeux de données de recherche B2B applicables. Voir [Transformer des jeux de données pour les recherches B2B](transform-datasets-b2b-lookups.md) pour plus d’informations.<p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _activés]**&#x200B;pour les jeux de données applicables activés pour la transformation, <p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _x désactivés_]** pour les jeux de données applicables non activés pour la transformation, et<p>**[!UICONTROL N/A]** pour tous les autres jeux de données, non applicables pour la transformation. |
-| **[!UICONTROL Renvoyer les données]** | Statut des données de renvoi pour le jeu de données.<p>![Statut rouge](assets/status-red.svg) **[!UICONTROL _x _renvois ayant échoué]**&#x200B;pour le nombre de renvois ayant échoué,<p>![Statut rouge](assets/status-orange.svg) **[!UICONTROL _x _renvois en cours de traitement]**&#x200B;pour le nombre de renvois en cours de traitement,<p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _renvois terminés]**&#x200B;pour le nombre de renvois terminés, et<p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _Désactivé_]** au cas où les renvois ne sont pas configurés. |
+| **[!UICONTROL Importer de nouvelles données]** | Statut de l’import des nouvelles données pour le jeu de données : <p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _ activés]**si le jeu de données est configuré pour importer de nouvelles données, et<p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _x désactivés_]** si le jeu de données est configuré pour ne pas importer de nouvelles données. |
+| **[!UICONTROL Transformer les données]** | Statut de transformation des jeux de données de recherche B2B applicables. Voir [Transformer des jeux de données pour les recherches B2B](transform-datasets-b2b-lookups.md) pour plus d’informations.<p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _activés]**pour les jeux de données applicables activés pour la transformation, <p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _x désactivés_]** pour les jeux de données applicables non activés pour la transformation, et<p>**[!UICONTROL N/A]** pour tous les autres jeux de données, non applicables pour la transformation. |
+| **[!UICONTROL Renvoyer les données]** | Statut des données de renvoi pour le jeu de données.<p>![Statut rouge](assets/status-red.svg) **[!UICONTROL _x _renvois ayant échoué]**pour le nombre de renvois ayant échoué,<p>![Statut rouge](assets/status-orange.svg) **[!UICONTROL _x _renvois en cours de traitement]**pour le nombre de renvois en cours de traitement,<p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _renvois terminés]**pour le nombre de renvois terminés, et<p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _Désactivé_]** au cas où les renvois ne sont pas configurés. |
 
 >[!IMPORTANT]
 >
@@ -283,12 +301,12 @@ Lorsqu’aucun jeu de données individuel n’est sélectionné dans le tableau 
 | **[!UICONTROL Description de la connexion]** | Description plus détaillée concernant lʼobjectif de cette connexion. |
 | **[!UICONTROL Sandbox]** | [Sandbox Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/sandbox/home) dʼoù cette connexion tire ses jeux de données. Vous sélectionnez ce sandbox lorsque vous avez créé la connexion. Vous ne pouvez pas modifier le sandbox une fois qu’une connexion est enregistrée. |
 | **[!UICONTROL ID de connexion]** | Identifiant généré pour la connexion. Vous pouvez utiliser ![Copier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) pour copier la valeur. |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Type d’ID de Principal &#x200B;]** | Type d’identifiant principal pour la connexion : **[!UICONTROL Personne]** pour une connexion basée sur une personne, **[!UICONTROL Compte]** pour une connexion basée sur un compte. |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Containers &#x200B;]** | Conteneurs configurés pour la connexion. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Type d’ID de Principal ]** | Type d’identifiant principal pour la connexion : **[!UICONTROL Personne]** pour une connexion basée sur une personne, **[!UICONTROL Compte]** pour une connexion basée sur un compte. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Containers ]** | Conteneurs configurés pour la connexion. |
 | **[!UICONTROL Vues de données utilisant la connexion]** | Vues de données qui utilisent cette connexion. |
-| **[!UICONTROL Importer de nouvelles données]** | Statut de l’import de nouvelles données pour les jeux de données : <p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _activés]**&#x200B;pour le nombre de jeux de données configurés pour importer de nouvelles données, et<p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _x désactivés_]** pour le nombre de jeux de données pour lesquels le nouvel import de données est désactivé. |
-| **[!UICONTROL Renvoyer les données]** | Statut des données de renvoi pour les jeux de données.<p>![Statut rouge](assets/status-red.svg) **[!UICONTROL _x _renvois ayant échoué]**&#x200B;pour le nombre de renvois ayant échoué dans les jeux de données,<p>![Statut rouge](assets/status-orange.svg) **[!UICONTROL _x _renvois en cours de traitement]**&#x200B;pour le nombre de renvois en cours de traitement dans les jeux de données,<p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _renvois terminés]**&#x200B;pour le nombre de renvois terminés pour les jeux de données, et<p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _Désactivé_]** au cas où aucun renvoi n’est défini pour les jeux de données dans la connexion. |
-| **[!UICONTROL Transformer les données]** | Statut de transformation des jeux de données de recherche B2B applicables. Voir [Transformer des jeux de données pour les recherches B2B](transform-datasets-b2b-lookups.md) pour plus d’informations.<p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _activés]**&#x200B;pour le nombre de jeux de données activés pour la transformation. |
+| **[!UICONTROL Importer de nouvelles données]** | Statut de l’import de nouvelles données pour les jeux de données : <p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _activés]**pour le nombre de jeux de données configurés pour importer de nouvelles données, et<p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _x désactivés_]** pour le nombre de jeux de données pour lesquels le nouvel import de données est désactivé. |
+| **[!UICONTROL Renvoyer les données]** | Statut des données de renvoi pour les jeux de données.<p>![Statut rouge](assets/status-red.svg) **[!UICONTROL _x _renvois ayant échoué]**pour le nombre de renvois ayant échoué dans les jeux de données,<p>![Statut rouge](assets/status-orange.svg) **[!UICONTROL _x _renvois en cours de traitement]**pour le nombre de renvois en cours de traitement dans les jeux de données,<p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _renvois terminés]**pour le nombre de renvois terminés pour les jeux de données, et<p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _Désactivé_]** au cas où aucun renvoi n’est défini pour les jeux de données dans la connexion. |
+| **[!UICONTROL Transformer les données]** | Statut de transformation des jeux de données de recherche B2B applicables. Voir [Transformer des jeux de données pour les recherches B2B](transform-datasets-b2b-lookups.md) pour plus d’informations.<p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _activés]**pour le nombre de jeux de données activés pour la transformation. |
 | **[!UICONTROL Créé par]** | Nom de la personne qui a créé la connexion. |
 | **[!UICONTROL Dernière modification]** | Date et heure de la dernière modification apportée à la connexion. |
 | **[!UICONTROL Dernière modification par]** | Nom de la personne qui a modifié la connexion pour la dernière fois. |
@@ -299,20 +317,20 @@ Lorsqu’une ligne de jeu de données est sélectionnée dans le tableau des jeu
 
 | Détails | Description |
 | --- | --- |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL ID de compte global &#x200B;]** | Identité que vous avez spécifiée comme ID de compte global pour la connexion. Applicable uniquement pour une connexion basée sur un compte pour laquelle un conteneur Compte global est configuré. |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL ID de compte &#x200B;]** | Identité que vous avez spécifiée comme ID de compte pour la connexion. Applicable uniquement pour une connexion basée sur un compte pour laquelle aucun conteneur de compte global n’est configuré. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL ID de compte global ]** | Identité que vous avez spécifiée comme ID de compte global pour la connexion. Applicable uniquement pour une connexion basée sur un compte pour laquelle un conteneur Compte global est configuré. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL ID de compte ]** | Identité que vous avez spécifiée comme ID de compte pour la connexion. Applicable uniquement pour une connexion basée sur un compte pour laquelle aucun conteneur de compte global n’est configuré. |
 | **[!UICONTROL ID de personne]** | Identité que vous avez spécifiée comme ID de personne pour la connexion. |
 | **[!UICONTROL Clé]** | Clé que vous avez spécifiée pour un jeu de données de recherche. |
 | **[!UICONTROL Clé correspondante]** | Clé correspondante que vous avez spécifiée pour un jeu de données de recherche. |
 | **[!UICONTROL Date et heure]** | Horodatage défini pour un jeu de données d’événement. |
-| **[!UICONTROL Enregistrements disponibles]** | Nombre total de lignes ingérées pour ce jeu de données, au cours de la période sélectionnée dans le calendrier. Une fois ajoutées, les données apparaissent dans le compte rendu des performances sans aucune latence. Cependant, lorsque vous créez une toute nouvelle connexion, il y a [latence](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-faq). |
+| **[!UICONTROL Enregistrements disponibles]** | Nombre total de lignes ingérées pour ce jeu de données, au cours de la période sélectionnée dans le calendrier. Une fois ajoutées, les données apparaissent dans le compte rendu des performances sans aucune latence. Cependant, lorsque vous créez une toute nouvelle connexion, il y a [latence](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-faq). |
 | **[!UICONTROL Enregistrements ajoutés]** | Le nombre d’enregistrements du jeu de données (lignes) ajoutés à une connexion au cours de la période sélectionnée. |
 | **[!UICONTROL Enregistrements ignorés]** | Le nombre d’enregistrements de jeux de données (lignes) ignorés pendant un transfert de données pour une connexion pendant la période sélectionnée. |
 | **[!UICONTROL Lots ajoutés]** | Nombre de lots qui ont été ajoutés à une connexion. |
 | **[!UICONTROL Enregistrements supprimés]** | Le nombre d’enregistrements du jeu de données (lignes) supprimés d’une connexion pendant la période sélectionnée. |
 | **[!UICONTROL Dernier ajout]** | La date et l’heure du dernier lot ajouté à une connexion. |
-| **[!UICONTROL Importer de nouvelles données]** | Statut de l’import des nouvelles données pour le jeu de données : <p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _ activés]**&#x200B;si le jeu de données est configuré pour importer de nouvelles données, et<p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _x désactivés_]** si le jeu de données est configuré pour ne pas importer de nouvelles données. |
-| **[!UICONTROL Renvoyer les données]** | Statut des données de renvoi pour le jeu de données.<p>![Statut rouge](assets/status-red.svg) **[!UICONTROL _x _renvois ayant échoué]**&#x200B;pour le nombre de renvois ayant échoué,<p>![Statut rouge](assets/status-orange.svg) **[!UICONTROL _x _renvois en cours de traitement]**&#x200B;pour le nombre de renvois en cours de traitement,<p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _renvois terminés]**&#x200B;pour le nombre de renvois terminés, et<p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _Désactivé_]** au cas où aucun renvoi n’est configuré.<p>Pour afficher une boîte de dialogue avec une vue d’ensemble des renvois précédents pour le jeu de données, sélectionnez <img src="./assets/pastbackfill.svg" alt="Renvois précédents" width="15"/> **[!UICONTROL Renvois précédents]**. |
+| **[!UICONTROL Importer de nouvelles données]** | Statut de l’import des nouvelles données pour le jeu de données : <p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _ activés]**si le jeu de données est configuré pour importer de nouvelles données, et<p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _x désactivés_]** si le jeu de données est configuré pour ne pas importer de nouvelles données. |
+| **[!UICONTROL Renvoyer les données]** | Statut des données de renvoi pour le jeu de données.<p>![Statut rouge](assets/status-red.svg) **[!UICONTROL _x _renvois ayant échoué]**pour le nombre de renvois ayant échoué,<p>![Statut rouge](assets/status-orange.svg) **[!UICONTROL _x _renvois en cours de traitement]**pour le nombre de renvois en cours de traitement,<p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _renvois terminés]**pour le nombre de renvois terminés, et<p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _Désactivé_]** au cas où aucun renvoi n’est configuré.<p>Pour afficher une boîte de dialogue avec une vue d’ensemble des renvois précédents pour le jeu de données, sélectionnez <img src="./assets/pastbackfill.svg" alt="Renvois précédents" width="15"/> **[!UICONTROL Renvois précédents]**. |
 | **[!UICONTROL Type de source de données]** | Type de source de données tel que défini lorsque le jeu de données a été ajouté à la connexion. |
 | **[!UICONTROL Type de jeu de données]** | Le [ type de jeu de données ](create-connection.md#dataset-types). |
 | **[!UICONTROL Schéma]** | Schéma Experience Platform sur lequel est basé ce jeu de données. |
@@ -437,7 +455,7 @@ L’interface Utilisation se compose de deux panneaux :
 
 * Panneau combiné affichant trois sous-panneaux pour les éléments suivants :
 
-+++ Lignes ingérées
+  +++ Lignes ingérées
 
   Le sous-panneau **[!UICONTROL Lignes ingérées]** mesure le nombre total d’enregistrements ajoutés au système chaque mois, ce qui fournit des informations sur la croissance des données et les taux d’ingestion. Le sous-panneau fournit un résumé du nombre total de lignes ingérées de ce mois et de la modification par rapport au mois précédent.
 
@@ -445,9 +463,9 @@ L’interface Utilisation se compose de deux panneaux :
 
   Vous pouvez pointer sur des points de données dans la visualisation pour afficher une fenêtre contextuelle contenant plus de détails.
 
-+++
+  +++
 
-+++ Lignes à déclarer
+  +++ Lignes à déclarer
 
   La visualisation **[!UICONTROL Lignes à déclarer]** effectue le suivi du nombre de lignes disponibles pour la création de rapports en soustrayant les lignes ignorées et supprimées des lignes ingérées, ce qui sert de mesure clé pour la facturation et l’utilisation des données. Le sous-panneau fournit deux synthèses :
 
@@ -458,9 +476,9 @@ L’interface Utilisation se compose de deux panneaux :
 
   Vous pouvez pointer sur des points de données dans les visualisations pour afficher une fenêtre contextuelle contenant plus de détails.
 
-+++
+  +++
 
-+++ Répartition des détails
+  +++ Répartition des détails
 
   Vous pouvez utiliser le tableau **[!UICONTROL Répartition des détails]** pour afficher les mesures détaillées par connexion, jeu de données, sandbox et balises. Les jeux de données dont l’objet de rapports à l’aide d’identifiants plutôt que de noms, car les noms des jeux de données peuvent être modifiés pendant une période de création de rapports. Les jeux de données ou les connexions inconnus font l’objet de rapport via leurs identifiants.
 
@@ -477,12 +495,12 @@ L’interface Utilisation se compose de deux panneaux :
 
   ![Répartition des détails](assets/usage-detail-breakdown.png)
 
-+++
+  +++
 
   Vous pouvez définir une **[!UICONTROL Période]** en mois pour créer un rapport. Utilisez ![Calendrier](/help/assets/icons/Calendar.svg) pour sélectionner la période.
 
 >[!MORELIKETHIS]
 >
 >Tutoriel [Afficher, résoudre les problèmes et modifier les paramètres de connexion](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/connections/connections-details-experience-in-cja).
->&#x200B;>[Gérer l’utilisation de Customer Journey Analytics](/help/technotes/estimate-usage.md)
+>>[Gérer l’utilisation de Customer Journey Analytics](/help/technotes/estimate-usage.md)
 >
