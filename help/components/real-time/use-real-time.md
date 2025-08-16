@@ -7,9 +7,9 @@ hidefromtoc: true
 role: User
 badgePremium: label="Beta"
 exl-id: 6e7dba80-5fb9-4554-b989-85eb54a4bd6a
-source-git-commit: 8f19ed6b4214c434dd4ca2dbb5e311c62da109c0
+source-git-commit: b833914e7066fa660f856737d6b8a6392aae2feb
 workflow-type: tm+mt
-source-wordcount: '196'
+source-wordcount: '197'
 ht-degree: 14%
 
 ---
@@ -30,13 +30,13 @@ Pour utiliser les rapports en temps réel, activez le bouton (bascule) **[!UICON
 * [Attribution](/help/analysis-workspace/c-panels/attribution.md)
 * [Élément suivant ou précédent](/help/analysis-workspace/c-panels/next-previous.md)
 
-Un message contenant la date et l’heure de la dernière actualisation des données s’affiche. Par exemple : [!UICONTROL &#x200B; *Dernière actualisation à 19 :55*].
+Un message contenant la date et l’heure de la dernière actualisation des données s’affiche. Par exemple : [!UICONTROL  *Dernière actualisation à 19 :55*].
 
-Sélectionnez la période en temps réel pour laquelle vous souhaitez créer un rapport dans le menu déroulant. Les options disponibles sont les suivantes :
+Sélectionnez la période en temps réel sur laquelle vous souhaitez créer des rapports dans le menu déroulant. Les options disponibles sont les suivantes :
 
 * [!UICONTROL 15 dernières minutes]
 * [!UICONTROL 30 dernières minutes]
-* [!UICONTROL Dernière heure &#x200B;]
+* [!UICONTROL Dernière heure ]
 * [!UICONTROL 8 dernières heures]
 * [!UICONTROL Dernières 24 heures]
 
