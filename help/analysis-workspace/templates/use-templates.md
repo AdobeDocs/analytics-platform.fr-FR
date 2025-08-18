@@ -7,7 +7,7 @@ exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
 source-git-commit: df069a7a67c65db9eb70900869495202f63abd05
 workflow-type: tm+mt
 source-wordcount: '20276'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -1067,23 +1067,23 @@ Les modèles suivants sont disponibles :
 
 >[!CONTEXTUALHELP]
 >id="cja-template--b2b-account-engagement"
->title="Découvrez l’activité de vos comptes sur les événements, les personnes et les opportunités."
->abstract="**Cela peut vous aider** à mieux comprendre si l’engagement au niveau du compte est à la hausse ou à la baisse, à comparer l’activité entre les comptes et à décider où concentrer les efforts de conservation ou d’acquisition.<br/>**En fonction de ce que vous avez appris** vous pouvez faire un certain nombre de choses, comme recentrer votre attention sur les comptes qui sont moins engagés mais qui nécessitent plus d’attention en raison de l’importance du compte."
+>title="Découvrez l’activité de vos comptes au niveau des événements, des personnes et des opportunités."
+>abstract="**Cela peut vous aider** à mieux comprendre si l’engagement au niveau du compte est à la hausse ou à la baisse, à comparer l’activité entre les comptes et à décider où concentrer les efforts de fidélisation ou d’acquisition.<br/>**En fonction de ce que vous avez appris, vous pouvez** effectuer un certain nombre d’opérations, comme recentrer votre attention sur les comptes qui génèrent moins d’engagement mais qui nécessitent plus d’attention en raison de leur importance."
 
 >[!CONTEXTUALHELP]
 >id="cja-template--b2b-opportunity-engagement"
->title="Suivez l’engagement au niveau des opportunités et découvrez les affaires qui gagnent ou perdent de l’intérêt."
->abstract="**Cela peut vous aider** à prévoir plus précisément la progression des offres et à cibler l’activation là où l’engagement atteint des pics ou se bloque.<br/>**En fonction de ce que vous avez appris, vous pouvez** un certain nombre de choses, comme déployer des efforts supplémentaires sur les transactions qui sont presque conclues et rechercher les raisons pour lesquelles d’autres transactions perdent de l’intérêt."
+>title="Suivez l’engagement au niveau des opportunités et découvrez les opérations qui suscitent ou perdent de l’intérêt."
+>abstract="**Cela peut vous aider** à prévoir plus précisément la progression des offres et à concentrer vos actions là où l’engagement s’accélère ou s’essouffle.<br/>**En fonction de ce que vous avez appris, vous pouvez** effectuer un certain nombre d’opérations, comme renforcer vos efforts sur les opérations prêtes à être conclues et analyser pourquoi d’autres perdent en dynamique."
 
 >[!CONTEXTUALHELP]
 >id="cja-template--b2b-buying-group-activity"
->title="Visualisez l’activité du groupe d’achat dans chaque compte pour informer le compte et les lectures marketing du groupe d’achat."
->abstract="**Cela peut vous aider** à visualiser quels groupes d’achats et quelles personnes au sein de ces groupes d’achats sont les plus engagés, ce qui met en évidence les lacunes en matière de participation du groupe.<br/>**D’après ce que vous avez appris** vous pouvez faire un certain nombre de choses, comme essayer de dialoguer davantage avec les gens au sein de groupes d’achat qui ne semblent pas impliqués."
+>title="Visualisez l’activité des groupes d’achat au sein de chaque compte afin d’éclairer vos actions marketing ciblant les comptes et les groupes d’achat."
+>abstract="**Cela peut vous aider** à visualiser quels groupes d’achats et quelles personnes au sein de ces groupes d’achats sont les plus engagés, ce qui met en évidence les lacunes en matière de participation du groupe.<br/>**En fonction de ce que vous avez appris, vous pouvez** effectuer un certain nombre d’opérations, comme essayer d’impliquer davantage les gens au sein de groupes d’achat qui ne semblent pas engagés."
 
 Les modèles suivants sont disponibles :
 
 | Nom du modèle | Pourquoi utiliser ce modèle <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- | 
-| Présentation de l’engagement du compte [!UICONTROL **B2B**] | Découvrez l’activité de vos comptes sur les événements, les personnes et les opportunités.<p>**Cela peut vous aider** à mieux comprendre si l’engagement au niveau du compte est à la hausse ou à la baisse, à comparer l’activité entre les comptes et à décider où concentrer les efforts de conservation ou d’acquisition.</p><p>**En fonction de ce que vous avez appris** vous pouvez faire un certain nombre de choses, comme recentrer votre attention sur les comptes qui sont moins engagés mais qui nécessitent plus d’attention en raison de l’importance du compte.</p> |
-| [!UICONTROL **Présentation de l’engagement des opportunités B2B**] | Suivez l’engagement au niveau des opportunités et découvrez les affaires qui gagnent ou perdent de l’intérêt.<p>**Cela peut vous aider** à prévoir plus précisément la progression des offres et à cibler l’activation là où l’engagement atteint des pics ou se bloque.</p><p>**En fonction de ce que vous avez appris, vous pouvez** un certain nombre de choses, comme déployer des efforts supplémentaires sur les transactions qui sont presque conclues et rechercher les raisons pour lesquelles d’autres transactions perdent de l’intérêt.</p> |
-| [!UICONTROL **Activité du groupe d’achat B2B**] | Visualisez l’activité du groupe d’achat dans chaque compte pour informer le compte et les lectures marketing du groupe d’achat.<p>**Cela peut vous aider** à visualiser quels groupes d’achats et quelles personnes au sein de ces groupes d’achats sont les plus engagés, ce qui met en évidence les lacunes en matière de participation du groupe.</p><p>**D’après ce que vous avez appris** vous pouvez faire un certain nombre de choses, comme essayer de dialoguer davantage avec les gens au sein de groupes d’achat qui ne semblent pas impliqués.</p> |
+| Présentation de l’engagement du compte [!UICONTROL **B2B**] | Découvrez l’activité de vos comptes au niveau des événements, des personnes et des opportunités.<p>**Cela peut vous aider** à mieux comprendre si l’engagement au niveau du compte est à la hausse ou à la baisse, à comparer l’activité entre les comptes et à décider où concentrer les efforts de fidélisation ou d’acquisition.</p><p>**En fonction de ce que vous avez appris, vous pouvez** effectuer un certain nombre d’opérations, comme recentrer votre attention sur les comptes qui génèrent moins d’engagement mais qui nécessitent plus d’attention en raison de leur importance.</p> |
+| [!UICONTROL **Présentation de l’engagement des opportunités B2B**] | Suivez l’engagement au niveau des opportunités et découvrez les opérations qui suscitent ou perdent de l’intérêt.<p>**Cela peut vous aider** à prévoir plus précisément la progression des offres et à concentrer vos actions là où l’engagement s’accélère ou s’essouffle.</p><p>**En fonction de ce que vous avez appris, vous pouvez** effectuer un certain nombre d’opérations, comme renforcer vos efforts sur les opérations prêtes à être conclues et analyser pourquoi d’autres perdent en dynamique.</p> |
+| [!UICONTROL **Activité du groupe d’achat B2B**] | Visualisez l’activité des groupes d’achat au sein de chaque compte afin d’éclairer vos actions marketing ciblant les comptes et les groupes d’achat.<p>**Cela peut vous aider** à visualiser quels groupes d’achats et quelles personnes au sein de ces groupes d’achats sont les plus engagés, ce qui met en évidence les lacunes en matière de participation du groupe.</p><p>**En fonction de ce que vous avez appris, vous pouvez** effectuer un certain nombre d’opérations, comme essayer d’impliquer davantage les gens au sein de groupes d’achat qui ne semblent pas engagés.</p> |
