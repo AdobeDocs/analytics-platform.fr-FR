@@ -149,7 +149,7 @@ Vous pouvez utiliser une connexion Journey Optimizer dans Customer Journey Analy
 
 * Effectuez une analyse approfondie des données Journey Optimizer dans Customer Journey Analytics (à l’aide du bouton **[!UICONTROL Analyser dans CJA]** dans Journey Optimizer).
 
-  Pour plus d’informations, voir [Analyser dans Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/report-cja-manage#cja-template) dans la documentation de Journey Optimizer.
+  Pour plus d’informations, voir [Analyser dans Customer Journey Analytics](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/reporting/channel-report/report-cja-manage#cja-template) dans la documentation de Journey Optimizer.
 
 * Modifiez la connexion Journey Optimizer et les vues de données associées.
 
@@ -322,7 +322,7 @@ Lorsqu’une ligne de jeu de données est sélectionnée dans le tableau des jeu
 | **[!UICONTROL Clé]** | Clé que vous avez spécifiée pour un jeu de données de recherche. |
 | **[!UICONTROL Clé correspondante]** | Clé correspondante que vous avez spécifiée pour un jeu de données de recherche. |
 | **[!UICONTROL Date et heure]** | Horodatage défini pour un jeu de données d’événement. |
-| **[!UICONTROL Enregistrements disponibles]** | Nombre total de lignes ingérées pour ce jeu de données, au cours de la période sélectionnée dans le calendrier. Une fois ajoutées, les données apparaissent dans le compte rendu des performances sans aucune latence. Cependant, lorsque vous créez une toute nouvelle connexion, il y a [latence](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-faq). |
+| **[!UICONTROL Enregistrements disponibles]** | Nombre total de lignes ingérées pour ce jeu de données, au cours de la période sélectionnée dans le calendrier. Une fois ajoutées, les données apparaissent dans le compte rendu des performances sans aucune latence. Cependant, lorsque vous créez une toute nouvelle connexion, il y a [latence](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-faq). |
 | **[!UICONTROL Enregistrements ajoutés]** | Le nombre d’enregistrements du jeu de données (lignes) ajoutés à une connexion au cours de la période sélectionnée. |
 | **[!UICONTROL Enregistrements ignorés]** | Le nombre d’enregistrements de jeux de données (lignes) ignorés pendant un transfert de données pour une connexion pendant la période sélectionnée. |
 | **[!UICONTROL Lots ajoutés]** | Nombre de lots qui ont été ajoutés à une connexion. |
