@@ -7,10 +7,10 @@ hidefromtoc: true
 role: User
 badgePremium: label="Beta"
 exl-id: 12fbb760-936d-4e30-958f-764febca5ae7
-source-git-commit: b833914e7066fa660f856737d6b8a6392aae2feb
+source-git-commit: d0067d8271b7628f0d174d1fa647ba1b4558ffb4
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 3%
+source-wordcount: '732'
+ht-degree: 2%
 
 ---
 
@@ -43,29 +43,30 @@ Vous souhaitez valider, par exemple :
 Ne prenez pas en compte les rapports en temps réel pour les cas d’utilisation de la surveillance des opérations. Par exemple, pour répondre à la question de savoir si un site fonctionne correctement. Comme le bouton (bascule) [ Actualisation en temps réel ](use-real-time.md) se désactive automatiquement au bout de 30 minutes et que l’actualisation du rapport en temps réel cesse, vous ne devez pas utiliser un rapport en temps réel comme source fiable pour ces cas d’utilisation.
 
 
-## Définition
+## Latences
 
-L’aspect temps réel des rapports en temps réel pour Customer Journey Analytics est défini comme les données et les visualisations qui sont mises à jour dans les 6,5 minutes environ suivant le moment où les données sous-jacentes sont ingérées par la connexion associée.
+La manière dont vous collectez les données détermine la latence en temps réel des rapports en temps réel pour Customer Journey Analytics . L’illustration et le tableau ci-dessous montrent les latences approximatives pour divers scénarios de collecte de données lors de l’utilisation de rapports standard et en temps réel.
 
-Différents composants de la configuration de votre collecte de données déterminent la latence de création de rapports en temps réel.
+L’illustration souligne également que les rapports en temps réel utilisent un jeu de données consolidé complètement distinct du [jeu de données consolidé (combiné)](/help/connections/combined-dataset.md) utilisé pour les rapports standard. Utilisez le bouton (bascule) [Actualisation en temps réel](use-real-time.md) pour basculer entre :
+
+* Création de rapports en temps réel sur un jeu de données consolidé contenant jusqu’à 24 heures de données en continu.
+* Création de rapports standard sur le jeu de données consolidé qui contient jusqu’à 13 mois de données glissantes (ou plus si vous disposez d’une licence pour le module complémentaire de capacité de données étendue).
 
 ![Création de rapports en temps réel](assets/real-time-reporting-latencies.svg){zoomable="yes"}
 
-| | Description | Latence |
-|:---:|---|--:|
-| 1 | Données collectées via les API/SDK Edge Network dans Edge Network. | &lt; 500 millisecondes |
-| 2 | Données répliquées d’Edge Network vers le service de collecte et de validation de données dans Experience Platform Hub. | &lt; 5 minutes |
-| 3 | Données collectées par le biais de connecteurs de diffusion en continu dans le service de collecte et de validation des données dans Experience Platform Hub. | &lt; 15 minutes |
-| 4 | Données collectées via Adobe Analytics et transférées par le connecteur source Analytics vers le processeur des connecteurs source dans Experience Platform Hub. | &lt; 15 minutes |
-| 5 | Données collectées via d’autres connecteurs source dans le processeur des connecteurs source d’Experience Platform Hub. | &lt; 24 heures |
-| 6 | Données traitées par le processeur en temps réel pour un jeu de données consolidé pour les rapports en temps réel. | &lt; 90 secondes |
+| | Collecte de données | Latence des rapports en temps réel | Latence de création de rapports standard |
+|:---:|---|--:|--:|
+| 1 | SDK/API d’Edge Network dans Edge Network | &amp;approx; &lt; 00h:06m:30s | &amp;approx; &lt; 01h:35m:00s |
+| 2 | Connecteurs de diffusion en continu | &amp;approx; &lt; 00h:16m:30s | &amp;approx; &lt; 01h:45m:00s |
+| 3 | Connecteur source Adobe Analytics | &amp;approx; &lt; 00h:16m:30s | &amp;approx; &lt; 01h:45m:00s |
+| 4 | Autres connecteurs source dans les connecteurs source (y compris les données par lot) | &amp;approx; &lt; 24h:01m:30s | &amp;approx; &lt; 25h:30m:00s |
 
 ## Limites
 
 Gardez à l’esprit les limites suivantes pour les rapports en temps réel :
 
-* Les rapports en temps réel ne génèrent que des rapports sur les données disponibles sur une période mobile de 24 heures. Les données qui traversent cette période de 24 heures sont masquées pour les rapports en temps réel. Une fois que l’option [actualisation en temps réel](use-real-time.md) d’un rapport est désactivée ou automatiquement désactivée, toutes les données pertinentes pour un rapport sont à nouveau disponibles.
-* Attribution, segmentation, mesures calculées, etc. ne fonctionnent que sur les données disponibles au cours de la période glissante de 24 heures.
+* Les rapports en temps réel ne génèrent que des rapports sur les données disponibles sur une période mobile de 24 heures. Données qui sont supérieures à   L’ancienne version de 24 heures n’est pas disponible pour les rapports en temps réel. Une fois que l’option [actualisation en temps réel](use-real-time.md) d’un rapport est désactivée ou automatiquement désactivée, toutes les données pertinentes sont à nouveau disponibles à partir du [jeu de données consolidé](/help/connections/combined-dataset.md) généralement utilisé pour la création de rapports dans Customer Journey Analytics.
+* Attribution, segmentation, mesures calculées, etc. ne fonctionnent que sur les données disponibles au cours de la période glissante de 24 heures. Par exemple, un segment *Visiteurs réguliers* inclut très peu de personnes dans un rapport en temps réel, car le rapport inclut uniquement les personnes qui ont consulté plusieurs fois au cours des dernières 24 heures. Une limitation similaire s’applique lorsque vous créez un rapport en temps réel sur les personnes qui ont cliqué précédemment sur une campagne qui n’est plus active.
 * Les rapports en temps réel fonctionnent mieux sur les données au niveau de l’événement et de la session. Soyez prudent lorsque vous utilisez les rapports en temps réel pour les données au niveau de la personne. <!--Need to explain this a bit better --> Étant donné que seuls les événements de la période de 24 heures variable sont disponibles pour les rapports en temps réel, l’historique des événements d’une personne est également limité à cette fenêtre. Tenez compte des préférences en matière de données au niveau de l’événement et de la session lorsque vous sélectionnez une dimension et des mesures (calculées). Et lorsque vous utilisez des fonctionnalités telles que les répartitions, suivant ou précédent, et plus encore dans votre panneau Actualisation en temps réel activée .
 * Vous ne pouvez pas combiner le groupement avec les rapports en temps réel. <!-- Do we need to explain this in more detail, why? --> Les rapports en temps réel portent sur les données au niveau des événements et des sessions, et sont moins pertinents pour les données basées sur les personnes.
 * Aucune mesure de pulsation collectée sur les médias n’est disponible, à l’exception des mesures de démarrage et de fermeture des médias. Vous pouvez donc toujours utiliser les rapports en temps réel pour activer un cas d’utilisation de média.
