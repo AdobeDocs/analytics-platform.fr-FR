@@ -56,10 +56,10 @@ L’illustration souligne également que les rapports en temps réel utilisent u
 
 | | Collecte de données | Latence des rapports en temps réel | Latence de création de rapports standard |
 |:---:|---|--:|--:|
-| 1 | SDK/API d’Edge Network dans Edge Network | &amp;approx; &lt; 00h:06m:30s | &amp;approx; &lt; 01h:35m:00s |
-| 2 | Connecteurs de diffusion en continu | &amp;approx; &lt; 00h:16m:30s | &amp;approx; &lt; 01h:45m:00s |
-| 3 | Connecteur source Adobe Analytics | &amp;approx; &lt; 00h:16m:30s | &amp;approx; &lt; 01h:45m:00s |
-| 4 | Autres connecteurs source dans les connecteurs source (y compris les données par lot) | &amp;approx; &lt; 24h:01m:30s | &amp;approx; &lt; 25h:30m:00s |
+| 1 | SDK/API d’Edge Network dans Edge Network | &approx; &lt; 00h:06m:30s | &approx; &lt; 01h:35m:00s |
+| 2 | Connecteurs de diffusion en continu | &approx; &lt; 00h:16m:30s | &approx; &lt; 01h:45m:00s |
+| 3 | Connecteur source Adobe Analytics | &approx; &lt; 00h:16m:30s | &approx; &lt; 01h:45m:00s |
+| 4 | Autres connecteurs source dans les connecteurs source (y compris les données par lot) | &approx; &lt; 24h:01m:30s | &approx; &lt; 25h:30m:00s |
 
 ## Limites
 
