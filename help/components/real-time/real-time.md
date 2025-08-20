@@ -7,9 +7,9 @@ hidefromtoc: true
 role: User
 badgePremium: label="Beta"
 exl-id: 12fbb760-936d-4e30-958f-764febca5ae7
-source-git-commit: 804668db5e104d1a1de7d5d9ce0c92a9bb1980dc
+source-git-commit: 2dd78dc120fc2bf48d3a59e28631e4ddf605b0c3
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '733'
 ht-degree: 2%
 
 ---
@@ -45,7 +45,7 @@ Ne prenez pas en compte les rapports en temps réel pour les cas d’utilisation
 
 ## Latences
 
-La manière dont vous collectez les données détermine la latence en temps réel des rapports en temps réel pour Customer Journey Analytics. L’illustration et le tableau ci-dessous montrent les latences approximatives pour divers scénarios de collecte de données lors de l’utilisation de rapports standard et en temps réel.
+La manière dont vous collectez les données détermine la latence des rapports en temps réel dans Customer Journey Analytics. L’illustration et le tableau ci-dessous montrent les latences approximatives pour divers scénarios de collecte de données lors de l’utilisation de rapports en temps réel et (à titre de comparaison) standard.
 
 L’illustration souligne également que les rapports en temps réel utilisent un jeu de données consolidé complètement distinct du [jeu de données consolidé (combiné)](/help/connections/combined-dataset.md) utilisé pour les rapports standard. Utilisez le bouton (bascule) [Actualisation en temps réel](use-real-time.md) pour basculer entre :
 
@@ -56,10 +56,11 @@ L’illustration souligne également que les rapports en temps réel utilisent u
 
 | | Collecte de données | Latence des rapports en temps réel | Latence de création de rapports standard |
 |:---:|---|--:|--:|
-| 1 | SDK/API d’Edge Network dans Edge Network | &approx; &lt; 00h:06m:30s | &approx; &lt; 01h:35m:00s |
-| 2 | Connecteurs de diffusion en continu | &approx; &lt; 00h:16m:30s | &approx; &lt; 01h:45m:00s |
-| 3 | Connecteur source Adobe Analytics | &approx; &lt; 00h:16m:30s | &approx; &lt; 01h:45m:00s |
-| 4 | Autres connecteurs source dans les connecteurs source (y compris les données par lot) | &approx; &lt; 24h:01m:30s | &approx; &lt; 25h:30m:00s |
+| 1 | SDK/API d’Edge Network dans Edge Network | &amp;approx; &lt; 00h:06m:30s | &amp;approx; &lt; 01h:35m:00s |
+| 2 | Connecteurs de diffusion en continu | &amp;approx; &lt; 00h:16m:30s | &amp;approx; &lt; 01h:45m:00s |
+| 3 | Connecteur source Adobe Analytics | &amp;approx; &lt; 00h:16m:30s | &amp;approx; &lt; 01h:45m:00s |
+| 4 | Autres connecteurs source dans les connecteurs source (y compris les données par lot) | &amp;approx; &lt; 24h:01m:30s | &amp;approx; &lt; 25h:30m:00s |
+
 
 ## Limites
 
@@ -67,8 +68,8 @@ Gardez à l’esprit les limites suivantes pour les rapports en temps réel :
 
 * Les rapports en temps réel ne génèrent que des rapports sur les données disponibles sur une période mobile de 24 heures. Données qui sont supérieures à   L’ancienne version de 24 heures n’est pas disponible pour les rapports en temps réel. Une fois que l’option [actualisation en temps réel](use-real-time.md) d’un rapport est désactivée ou automatiquement désactivée, toutes les données pertinentes sont à nouveau disponibles à partir du [jeu de données consolidé](/help/connections/combined-dataset.md) généralement utilisé pour la création de rapports dans Customer Journey Analytics.
 * Attribution, segmentation, mesures calculées, etc. ne fonctionnent que sur les données disponibles au cours de la période glissante de 24 heures. Par exemple, un segment *Visiteurs réguliers* inclut très peu de personnes dans un rapport en temps réel, car le rapport inclut uniquement les personnes qui ont consulté plusieurs fois au cours des dernières 24 heures. Une limitation similaire s’applique lorsque vous créez un rapport en temps réel sur les personnes qui ont cliqué précédemment sur une campagne qui n’est plus active.
-* Les rapports en temps réel fonctionnent mieux sur les données au niveau de l’événement et de la session. Soyez prudent lorsque vous utilisez les rapports en temps réel pour les données au niveau de la personne. <!--Need to explain this a bit better --> Étant donné que seuls les événements de la période de 24 heures variable sont disponibles pour les rapports en temps réel, l’historique des événements d’une personne est également limité à cette fenêtre. Tenez compte des préférences en matière de données au niveau de l’événement et de la session lorsque vous sélectionnez une dimension et des mesures (calculées). Et lorsque vous utilisez des fonctionnalités telles que les répartitions, suivant ou précédent, et plus encore dans votre panneau Actualisation en temps réel activée .
-* Vous ne pouvez pas combiner le groupement avec les rapports en temps réel. <!-- Do we need to explain this in more detail, why? --> Les rapports en temps réel portent sur les données au niveau des événements et des sessions, et sont moins pertinents pour les données basées sur les personnes.
+* Les rapports en temps réel fonctionnent mieux sur les données au niveau de l’événement et de la session. Soyez prudent lorsque vous utilisez les rapports en temps réel pour les données au niveau de la personne. Puisque seuls les événements de la période de 24 heures variable sont disponibles pour les rapports en temps réel, l’historique des événements d’une personne est également limité à cette fenêtre. Tenez compte des préférences en matière de données au niveau de l’événement et de la session lorsque vous sélectionnez une dimension et des mesures (calculées). Et lorsque vous utilisez des fonctionnalités telles que les répartitions, suivant ou précédent, et plus encore dans votre panneau Actualisation en temps réel activée .
+* Vous ne pouvez pas combiner le groupement avec les rapports en temps réel. Les rapports en temps réel portent sur les données au niveau des événements et des sessions, et sont moins pertinents pour les données basées sur les personnes.
 * Aucune mesure de pulsation collectée sur les médias n’est disponible, à l’exception des mesures de démarrage et de fermeture des médias. Vous pouvez donc toujours utiliser les rapports en temps réel pour activer un cas d’utilisation de média.
 * Lorsque vous utilisez les options [télécharger ou exporter](/help/analysis-workspace/export/download-send.md) pour télécharger un projet ou exporter des données d’un tableau à structure libre, tenez compte des points suivants :
    * Un projet CSV téléchargé ou un fichier CSV exporté contient les données en temps réel disponibles au moment du téléchargement ou de l’exportation.
