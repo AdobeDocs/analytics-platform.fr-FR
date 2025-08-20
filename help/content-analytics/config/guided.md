@@ -324,7 +324,7 @@ Dans une nouvelle configuration, vous devez définir si vous souhaitez utiliser 
 
 #### Configuration existante {#existing-configuration}
 
-Vous ne pouvez pas modifier la propriété Balises d’une configuration existante. Pour mettre à jour une propriété Tags associée à une configuration existante, utilisez la configuration de l’extension Content Analytics Tag [](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/content-analytics/overview).
+Vous ne pouvez pas modifier la propriété Balises d’une configuration existante. Pour mettre à jour une propriété Tags associée à une configuration existante, utilisez la configuration de l’extension Content Analytics Tag [&#128279;](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/content-analytics/overview).
 
 Vous pouvez toutefois modifier les pages et les ressources à inclure ou à exclure.
 
