@@ -7,7 +7,7 @@ hidefromtoc: true
 role: User
 badgePremium: label="Beta"
 exl-id: 12fbb760-936d-4e30-958f-764febca5ae7
-source-git-commit: d0067d8271b7628f0d174d1fa647ba1b4558ffb4
+source-git-commit: 804668db5e104d1a1de7d5d9ce0c92a9bb1980dc
 workflow-type: tm+mt
 source-wordcount: '732'
 ht-degree: 2%
@@ -45,7 +45,7 @@ Ne prenez pas en compte les rapports en temps réel pour les cas d’utilisation
 
 ## Latences
 
-La manière dont vous collectez les données détermine la latence en temps réel des rapports en temps réel pour Customer Journey Analytics . L’illustration et le tableau ci-dessous montrent les latences approximatives pour divers scénarios de collecte de données lors de l’utilisation de rapports standard et en temps réel.
+La manière dont vous collectez les données détermine la latence en temps réel des rapports en temps réel pour Customer Journey Analytics. L’illustration et le tableau ci-dessous montrent les latences approximatives pour divers scénarios de collecte de données lors de l’utilisation de rapports standard et en temps réel.
 
 L’illustration souligne également que les rapports en temps réel utilisent un jeu de données consolidé complètement distinct du [jeu de données consolidé (combiné)](/help/connections/combined-dataset.md) utilisé pour les rapports standard. Utilisez le bouton (bascule) [Actualisation en temps réel](use-real-time.md) pour basculer entre :
 
@@ -56,10 +56,10 @@ L’illustration souligne également que les rapports en temps réel utilisent u
 
 | | Collecte de données | Latence des rapports en temps réel | Latence de création de rapports standard |
 |:---:|---|--:|--:|
-| 1 | SDK/API d’Edge Network dans Edge Network | &approx; &lt; 00h:06m:30s | &approx; &lt; 01h:35m:00s |
-| 2 | Connecteurs de diffusion en continu | &approx; &lt; 00h:16m:30s | &approx; &lt; 01h:45m:00s |
-| 3 | Connecteur source Adobe Analytics | &approx; &lt; 00h:16m:30s | &approx; &lt; 01h:45m:00s |
-| 4 | Autres connecteurs source dans les connecteurs source (y compris les données par lot) | &approx; &lt; 24h:01m:30s | &approx; &lt; 25h:30m:00s |
+| 1 | SDK/API d’Edge Network dans Edge Network | &amp;approx; &lt; 00h:06m:30s | &amp;approx; &lt; 01h:35m:00s |
+| 2 | Connecteurs de diffusion en continu | &amp;approx; &lt; 00h:16m:30s | &amp;approx; &lt; 01h:45m:00s |
+| 3 | Connecteur source Adobe Analytics | &amp;approx; &lt; 00h:16m:30s | &amp;approx; &lt; 01h:45m:00s |
+| 4 | Autres connecteurs source dans les connecteurs source (y compris les données par lot) | &amp;approx; &lt; 24h:01m:30s | &amp;approx; &lt; 25h:30m:00s |
 
 ## Limites
 
