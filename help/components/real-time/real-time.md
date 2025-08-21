@@ -7,10 +7,10 @@ hidefromtoc: true
 role: User
 badgePremium: label="Beta"
 exl-id: 12fbb760-936d-4e30-958f-764febca5ae7
-source-git-commit: 2dd78dc120fc2bf48d3a59e28631e4ddf605b0c3
+source-git-commit: b34cf8d95080cb333cd497450f5881f0418b8ae9
 workflow-type: tm+mt
-source-wordcount: '733'
-ht-degree: 2%
+source-wordcount: '723'
+ht-degree: 4%
 
 ---
 
@@ -54,12 +54,12 @@ L’illustration souligne également que les rapports en temps réel utilisent u
 
 ![Création de rapports en temps réel](assets/real-time-reporting-latencies.svg){zoomable="yes"}
 
-| | Collecte de données | Latence des rapports en temps réel | Latence de création de rapports standard |
+| | Collecte de données | Rapport en temps réel <br/> latence (approx. inférieur à) | <br/> standard de latence pour les rapports (approx. inférieur à) |
 |:---:|---|--:|--:|
-| 1 | SDK/API d’Edge Network dans Edge Network | &approx; &lt; 00h:06m:30s | &approx; &lt; 01h:35m:00s |
-| 2 | Connecteurs de diffusion en continu | &approx; &lt; 00h:16m:30s | &approx; &lt; 01h:45m:00s |
-| 3 | Connecteur source Adobe Analytics | &approx; &lt; 00h:16m:30s | &approx; &lt; 01h:45m:00s |
-| 4 | Autres connecteurs source dans les connecteurs source (y compris les données par lot) | &approx; &lt; 24h:01m:30s | &approx; &lt; 25h:30m:00s |
+| 1 | SDK/API d’Edge Network dans Edge Network | 7 minutes | 95 minutes |
+| 2 | Connecteurs de diffusion en continu | 17 minutes | 105 minutes |
+| 3 | Connecteur source Adobe Analytics | 17 minutes | 105 minutes |
+| 4 | Autres connecteurs source dans les connecteurs source (y compris les données par lot) | 25 heures | 25 heures |
 
 
 ## Limites
