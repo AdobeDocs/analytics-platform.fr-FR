@@ -7,10 +7,10 @@ hidefromtoc: true
 role: User
 badgePremium: label="Beta"
 exl-id: 6e7dba80-5fb9-4554-b989-85eb54a4bd6a
-source-git-commit: b833914e7066fa660f856737d6b8a6392aae2feb
+source-git-commit: 2461804f788b7a1417c4d7faa1d7133d8808cad5
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 14%
+source-wordcount: '225'
+ht-degree: 12%
 
 ---
 
@@ -30,13 +30,13 @@ Pour utiliser les rapports en temps réel, activez le bouton (bascule) **[!UICON
 * [Attribution](/help/analysis-workspace/c-panels/attribution.md)
 * [Élément suivant ou précédent](/help/analysis-workspace/c-panels/next-previous.md)
 
-Un message contenant la date et l’heure de la dernière actualisation des données s’affiche. Par exemple : [!UICONTROL &#x200B; *Dernière actualisation à 19 :55*].
+Un message contenant la date et l’heure de la dernière actualisation des données s’affiche. Par exemple : [!UICONTROL  *Dernière actualisation à 19 :55*].
 
 Sélectionnez la période en temps réel sur laquelle vous souhaitez créer des rapports dans le menu déroulant. Les options disponibles sont les suivantes :
 
 * [!UICONTROL 15 dernières minutes]
 * [!UICONTROL 30 dernières minutes]
-* [!UICONTROL Dernière heure &#x200B;]
+* [!UICONTROL Dernière heure ]
 * [!UICONTROL 8 dernières heures]
 * [!UICONTROL Dernières 24 heures]
 
@@ -47,3 +47,5 @@ Toutes les visualisations du panneau sont désormais mises à jour chaque minute
 ![Actualisation en temps réel](assets/real-time-refresh.gif)
 
 Au bout de 30 minutes, ou dès que l’onglet du navigateur devient inactif, le bouton **[!UICONTROL Actualisation en temps réel]** est automatiquement désactivé et les mises à jour en temps réel sont arrêtées.
+
+Dès que le bouton (bascule) Actualisation en temps réel est désactivé, le panneau (et toutes les visualisations qu’il contient) revient à [utiliser les données et fonctionnalités de création de rapports standard de Customer Journey Analytics](real-time.md#how-it-works).

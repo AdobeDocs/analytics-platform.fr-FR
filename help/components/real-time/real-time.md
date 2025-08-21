@@ -7,7 +7,7 @@ hidefromtoc: true
 role: User
 badgePremium: label="Beta"
 exl-id: 12fbb760-936d-4e30-958f-764febca5ae7
-source-git-commit: b34cf8d95080cb333cd497450f5881f0418b8ae9
+source-git-commit: 2461804f788b7a1417c4d7faa1d7133d8808cad5
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 4%
@@ -42,17 +42,18 @@ Vous souhaitez valider, par exemple :
 
 Ne prenez pas en compte les rapports en temps réel pour les cas d’utilisation de la surveillance des opérations. Par exemple, pour répondre à la question de savoir si un site fonctionne correctement. Comme le bouton (bascule) [ Actualisation en temps réel ](use-real-time.md) se désactive automatiquement au bout de 30 minutes et que l’actualisation du rapport en temps réel cesse, vous ne devez pas utiliser un rapport en temps réel comme source fiable pour ces cas d’utilisation.
 
+## Fonctionnement
 
-## Latences
-
-La manière dont vous collectez les données détermine la latence des rapports en temps réel dans Customer Journey Analytics. L’illustration et le tableau ci-dessous montrent les latences approximatives pour divers scénarios de collecte de données lors de l’utilisation de rapports en temps réel et (à titre de comparaison) standard.
-
-L’illustration souligne également que les rapports en temps réel utilisent un jeu de données consolidé complètement distinct du [jeu de données consolidé (combiné)](/help/connections/combined-dataset.md) utilisé pour les rapports standard. Utilisez le bouton (bascule) [Actualisation en temps réel](use-real-time.md) pour basculer entre :
+Les rapports en temps réel utilisent un jeu de données consolidé complètement distinct du [jeu de données consolidé (combiné)](/help/connections/combined-dataset.md) utilisé pour les rapports standard. Utilisez le bouton (bascule) [Actualisation en temps réel](use-real-time.md) pour basculer entre :
 
 * Création de rapports en temps réel sur un jeu de données consolidé contenant jusqu’à 24 heures de données en continu.
 * Création de rapports standard sur le jeu de données consolidé qui contient jusqu’à 13 mois de données glissantes (ou plus si vous disposez d’une licence pour le module complémentaire de capacité de données étendue).
 
 ![Création de rapports en temps réel](assets/real-time-reporting-latencies.svg){zoomable="yes"}
+
+### Latences
+
+La manière dont vous collectez les données détermine la latence des rapports en temps réel dans Customer Journey Analytics. L’illustration ci-dessus et le tableau ci-dessous montrent les latences approximatives pour divers scénarios de collecte de données lors de l’utilisation de rapports en temps réel et (à titre de comparaison) standard.
 
 | | Collecte de données | Rapport en temps réel <br/> latence (approx. inférieur à) | <br/> standard de latence pour les rapports (approx. inférieur à) |
 |:---:|---|--:|--:|
