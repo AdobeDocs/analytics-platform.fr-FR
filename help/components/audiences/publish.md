@@ -5,7 +5,7 @@ exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
 source-git-commit: f3bd60d6a371a16e606d9af60e3359d8128a3c9f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2389'
 ht-degree: 100%
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="components_audiences_refreshfrequency"
 >title="Fréquence d’actualisation"
->abstract="Découvrez la fréquence à laquelle l’appartenance d’une audience est réévaluée.<br/>Les audiences uniqes ne sont évaluées qu’une seule fois."
+>abstract="Découvrez la fréquence à laquelle l’abonnement d’une audience est réévaluée.<br/>Les audiences uniqes ne sont évaluées qu’une seule fois."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -130,7 +130,7 @@ Tenez compte des points suivants lorsque vous utilisez des audiences publiées d
 
 * L’audience dans Experience Platform partage le même nom et la même description que l’audience Customer Journey Analytics. Le nom est ajouté avec l’identifiant d’audience Customer Journey Analytics afin de s’assurer que l’audience est unique.
 * Toute modification apportée au nom ou à la description de l’audience dans Customer Journey Analytics est répercutée dans Experience Platform.
-* Si une audience est supprimée dans Customer Journey Analytics, elle reste disponible dans Experience Platform jusqu’à l’expiration de son appartenance à un profil. L’appartenance à un profil expire après 420 jours pour les audiences ponctuelles et après 16 jours pour les audiences récurrentes.
+* Si une audience est supprimée dans Customer Journey Analytics, elle reste disponible dans Experience Platform jusqu’à l’expiration de son abonnement à un profil. L’abonnement à un profil expire après 420 jours pour les audiences ponctuelles et après 16 jours pour les audiences récurrentes.
 
 ## Considérations relatives à la latence {#latency}
 
@@ -183,14 +183,14 @@ Il peut y avoir incohérences dans le nombre d’audiences entre Customer Journ
 
 #### Estimations et nombres déterministes
 
-La méthodologie de calcul du nombre de membres de l’audience diffère entre les deux applications, comme décrit ci-dessous.
+La méthodologie de calcul du nombre d’appartenances à une audience diffère entre les deux applications, comme décrit ci-dessous.
 
 * **Customer Journey Analytics** : la mesure **[!UICONTROL Nombre total de personnes]** dans Customer Journey Analytics est une valeur estimée. Cela signifie que le nombre est une estimation basée sur les règles de l’audience et qu’il peut varier entre les intervalles d’actualisation.
 * **Real-Time Customer Data Platform** : le nombre dans Real-Time Customer Data Platform est déterministe, en fonction des tâches d’évaluation quotidiennes, et fixe au moment où l’audience termine sa publication sur le portail d’audiences.
 
 #### Période et taux de publication
 
-Les audiences publient sur Real-Time Customer Data Platform à un taux de 1 500 enregistrements par seconde (RPS). Par exemple, la publication complète d’une audience de 20 millions de membres prendra environ 3,7 heures (20 millions/1 500 RPS/3 600 secondes par heure). Pendant ce temps, il est probable de constater des différences dans le nombre de membres de l’audience entre les deux applications.
+Les audiences publient sur Real-Time Customer Data Platform à un taux de 1 500 enregistrements par seconde (RPS). Par exemple, la publication complète d’une audience de 20 millions de membres prendra environ 3,7 heures (20 millions/1 500 RPS/3 600 secondes par heure). Pendant ce temps, il est probable de constater des différences dans le nombre d’appartenances à une audience entre les deux applications.
 
 #### Fragmentation du profil
 
