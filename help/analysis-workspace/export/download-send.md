@@ -4,10 +4,10 @@ title: Téléchargement De Projets Et De Données
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
 role: User
-source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
+source-git-commit: 1cb9e18f79e8ca49b63aa7d8117ce6c61a020454
 workflow-type: tm+mt
-source-wordcount: '1184'
-ht-degree: 25%
+source-wordcount: '1246'
+ht-degree: 22%
 
 ---
 
@@ -20,33 +20,42 @@ Vous pouvez télécharger des projets et des données Analysis Workspace sur vot
 
 D’autres méthodes d’exportation des données Customer Journey Analytics sont décrites dans la [présentation de l’exportation](/help/analysis-workspace/export/export-project-overview.md).
 
-## Télécharger au format CSV ou PDF {#download-project}
+## Télécharger un projet sous la forme d’un fichier PDF ou CSV {#download-project}
 
 ![Menu déroulant Projet avec les options Télécharger au format CSV et Télécharger au format PDF mises en surbrillance.](assets/download-project.png)
 
+### Télécharger un projet sous forme de fichier PDF
+
 Tenez compte des points suivants lorsque vous téléchargez un projet en tant que PDF :
 
-* Le téléchargement peut prendre plusieurs minutes, car le projet est réexécuté sur les serveurs Adobe pour effectuer le rendu au format PDF. Ne quittez pas le projet tant qu’il n’a pas été téléchargé dans votre navigateur.  Vous pouvez continuer à apporter des modifications au projet pendant le rendu du téléchargement. Si le rendu d’un PDF dure plus de 5 minutes, vous êtes invité à [envoyer le PDF par e-mail](../curate-share/send-schedule-files.md) à la place.
+* Ne quittez pas le projet tant qu’il n’a pas été téléchargé sur votre station de travail. Le téléchargement peut prendre plusieurs minutes, car le projet est réexécuté sur les serveurs Adobe pour que le PDF s’affiche. Vous pouvez continuer à apporter des modifications au projet pendant le rendu du téléchargement. Si le rendu d’un PDF dure plus de 5 minutes, vous êtes invité à [envoyer le PDF par e-mail](../curate-share/send-schedule-files.md) à la place.
 * Les téléchargements sont générés en une seule page sans pagination.
-* Les PDF contiennent ce qui est visible dans la page du navigateur dans Analysis Workspace. Vous devez dimensionner automatiquement les visualisations et les panneaux aux dimensions personnalisées pour éviter la troncation du contenu. Sélectionnez ![Redimensionner](/help/assets/icons/Resize.svg) pour redimensionner automatiquement un panneau ou une visualisation aux dimensions personnalisées.
-* [Hyperliens](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md) dans les tableaux à structure libre sous forme de liens hypertexte dans le PDF téléchargé.
-
-
+* Le PDF contient les éléments visibles dans la page du navigateur d’Analysis Workspace. Pour éviter que le contenu ne soit tronqué, sélectionnez ![Redimensionner](/help/assets/icons/Resize.svg) pour redimensionner automatiquement les visualisations ou les panneaux aux dimensions personnalisées.
+* Vous pouvez cliquer sur les [hyperliens](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md) des tableaux à structure libre dans le PDF téléchargé.
 
 Pour télécharger un projet sous la forme d’un fichier PDF :
 
 1. Sélectionnez **[!UICONTROL Projet]** > **[!UICONTROL Télécharger PDF]**.
-Une barre verte avec le message ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Votre téléchargement a été demandé. Veuillez patienter.]** s’affiche.
 
-1. Dès que votre téléchargement est prêt, une barre verte contenant le message ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL *Nom du projet *PDF est prête.]**&#x200B;apparaît.
-Sélectionnez&#x200B;**[!UICONTROL Télécharger]**&#x200B;pour télécharger le PDF. La manière exacte dont le PDF est présenté ou téléchargé dépend de la configuration de votre navigateur pour gérer les documents PDF.
+   Une barre verte s’affiche avec le message suivant : ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Votre téléchargement a été demandé. Veuillez patienter.]**
 
+1. Dès que votre téléchargement est prêt, une barre verte apparaît avec le message suivant : ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL *Nom du projet *PDF est prêt.]**
 
-Pour télécharger un projet sous la forme d’un fichier CSV :
+1. Sélectionnez **[!UICONTROL Télécharger]** sur la barre verte.
 
-* Sélectionnez **[!UICONTROL Projet]** > **[!UICONTROL Télécharger CSV]**. Le projet est directement téléchargé vers le dossier de téléchargement configuré dans le cadre de la configuration de votre navigateur. Le nom du fichier se compose de *nom du projet* - *nom de la suite de rapports* - *date*, par exemple `Example Project - Omni-Channel - Luma - Jun 30, 2025.csv`.
+   Selon les paramètres de votre navigateur, le PDF est automatiquement téléchargé vers le dossier que vous avez précédemment configuré, ou vous êtes invité à choisir un dossier dans lequel le PDF sera téléchargé.
 
-## Copier dans le presse-papiers {#copy-data}
+   Le nom du fichier se compose de *nom du projet* - *nom de la suite de rapports* - *date*. Par exemple : `Example Project - Omni-Channel - Luma - Jun 30, 2025.pdf`.
+
+### Téléchargement d’un projet au format CSV
+
+1. Sélectionnez **[!UICONTROL Projet]** > **[!UICONTROL Télécharger CSV]**.
+
+   Selon les paramètres de votre navigateur, le fichier CSV est automatiquement téléchargé dans un dossier que vous avez précédemment configuré, ou vous êtes invité à choisir un dossier dans lequel le fichier CSV sera téléchargé.
+
+   Le nom du fichier se compose de *nom du projet* - *nom de la suite de rapports* - *date*. Par exemple : `Example Project - Omni-Channel - Luma - Jun 30, 2025.csv`.
+
+## Copier les données d’une visualisation dans le presse-papiers {#copy-data}
 
 L&#39;option **[!UICONTROL Copier dans le presse-papiers]** du menu contextuel permet de copier rapidement des données d&#39;Analysis Workspace et de les coller dans un outil tiers.
 
@@ -60,7 +69,7 @@ L&#39;option **[!UICONTROL Copier dans le presse-papiers]** du menu contextuel p
 
 ![Option Copier la sélection dans le presse-papiers. ](assets/copy-clipboard.png){zoomable="yes"}
 
-## Téléchargement au format CSV {#download-data}
+## Télécharger des données dans une visualisation sous la forme d’un fichier CSV {#download-data}
 
 Les options Télécharger au format CSV du menu contextuel vous permettent de télécharger un tableau de données ou la source de données de toute visualisation au format CSV.
 
@@ -107,8 +116,8 @@ Les fonctionnalités suivantes d’un tableau à structure libre sont appliquée
 
 Les notifications suivantes s’affichent au fur et à mesure des téléchargements du fichier :
 
-* Un bleu **[!UICONTROL _Nom de la table _-_Dimension _.csv a été demandé._x _% terminé]**&#x200B;indiquant la progression. Pour annuler le téléchargement à tout moment, sélectionnez **[!UICONTROL Annuler le téléchargement]**. Sélectionnez ![CrossSize100](/help/assets/icons/CrossSize100.svg) si vous souhaitez fermer le message, ce qui n’annule pas le téléchargement.
-* Un **[!UICONTROL _Nom de la table _vert -_Dimension _.csv a été téléchargé]**&#x200B;notification d’achèvement une fois le téléchargement du fichier terminé. Le fichier est téléchargé dans le dossier des téléchargements configuré pour votre navigateur.
+* Un bleu **[!UICONTROL _Nom de la table _-_Dimension _.csv a été demandé._x _% terminé]**indiquant la progression. Pour annuler le téléchargement à tout moment, sélectionnez **[!UICONTROL Annuler le téléchargement]**. Sélectionnez ![CrossSize100](/help/assets/icons/CrossSize100.svg) si vous souhaitez fermer le message, ce qui n’annule pas le téléchargement.
+* Un **[!UICONTROL _Nom de la table _vert -_Dimension _.csv a été téléchargé]**notification d’achèvement une fois le téléchargement du fichier terminé. Le fichier est téléchargé dans le dossier des téléchargements configuré pour votre navigateur.
 
 Si vous demandez plusieurs téléchargements à la fois, vous recevez une notification indiquant que chaque téléchargement supplémentaire est mis en file d’attente jusqu’à ce que le téléchargement précédent soit terminé.
 
