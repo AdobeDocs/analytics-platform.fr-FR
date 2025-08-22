@@ -116,8 +116,8 @@ Les fonctionnalités suivantes d’un tableau à structure libre sont appliquée
 
 Les notifications suivantes s’affichent au fur et à mesure des téléchargements du fichier :
 
-* Un bleu **[!UICONTROL _Nom de la table _-_Dimension _.csv a été demandé._x _% terminé]**indiquant la progression. Pour annuler le téléchargement à tout moment, sélectionnez **[!UICONTROL Annuler le téléchargement]**. Sélectionnez ![CrossSize100](/help/assets/icons/CrossSize100.svg) si vous souhaitez fermer le message, ce qui n’annule pas le téléchargement.
-* Un **[!UICONTROL _Nom de la table _vert -_Dimension _.csv a été téléchargé]**notification d’achèvement une fois le téléchargement du fichier terminé. Le fichier est téléchargé dans le dossier des téléchargements configuré pour votre navigateur.
+* Un bleu **[!UICONTROL _Nom de la table _-_Dimension _.csv a été demandé._x _% terminé]**&#x200B;indiquant la progression. Pour annuler le téléchargement à tout moment, sélectionnez **[!UICONTROL Annuler le téléchargement]**. Sélectionnez ![CrossSize100](/help/assets/icons/CrossSize100.svg) si vous souhaitez fermer le message, ce qui n’annule pas le téléchargement.
+* Un **[!UICONTROL _Nom de la table _vert -_Dimension _.csv a été téléchargé]**&#x200B;notification d’achèvement une fois le téléchargement du fichier terminé. Le fichier est téléchargé dans le dossier des téléchargements configuré pour votre navigateur.
 
 Si vous demandez plusieurs téléchargements à la fois, vous recevez une notification indiquant que chaque téléchargement supplémentaire est mis en file d’attente jusqu’à ce que le téléchargement précédent soit terminé.
 
