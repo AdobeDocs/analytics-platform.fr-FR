@@ -5,10 +5,10 @@ title: Aperçu des visualisations
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
-source-git-commit: 9c05319ceacb7287af7f15cfe56b8048a718559d
+source-git-commit: 4599a058cef79a28bd6f9b788c2b202c8235298d
 workflow-type: tm+mt
-source-wordcount: '1622'
-ht-degree: 95%
+source-wordcount: '1738'
+ht-degree: 89%
 
 ---
 
@@ -67,6 +67,22 @@ Voici les types de visualisation disponibles dans Analysis Workspace :
    * Utilisez le menu Workspace **[!UICONTROL Insérer]** pour insérer une visualisation.
 
    * Dans le menu contextuel d’un tableau à structure libre, sélectionnez **[!UICONTROL Visualiser]**. Sélectionnez ensuite la visualisation dans le sous-menu. En fonction de la sélection en cours dans le tableau, Workspace détermine la visualisation à proposer et interprète les données pour créer la visualisation demandée.
+
+Lorsque vous ajoutez une visualisation simple, par exemple une visualisation [Ligne](line.md) de [Barre](bar.md), la visualisation utilise le tableau à structure libre le plus proche comme source de données. Vous pouvez toujours modifier la [source de données](#data-source) d’une de vos visualisations.
+
+
+## Gestion des visualisations
+
+Vous pouvez gérer une visualisation en pointant la souris sur la visualisation ou en la sélectionnant.
+
+![Gérer la visualisation](assets/manage-visualization.png)
+
+* Pour réduire une visualisation, sélectionnez ![ChevronDown](/help/assets/icons/ChevronDown.svg).
+* Pour afficher une visualisation réduite, sélectionnez ![ChevronLeft](/help/assets/icons/ChevronLeft.svg).
+* Pour supprimer une visualisation, sélectionnez ![CrossSize400](/help/assets/icons/CrossSize400.svg). Pour annuler, sélectionnez **[!UICONTROL Modifier]** > **[!UICONTROL Annuler]** (**[!UICONTROL *cmd+z *]**|**[!UICONTROL * ctrl+z *]**).
+* Pour rétablir la hauteur par défaut d’une visualisation, sélectionnez ![ImageResize](/help/assets/icons/Resize.svg).
+* Pour déplacer une visualisation dans un panneau, faites-la glisser et déposez-la chaque fois qu’une ![ Déplacer ](/help/assets/icons/Move.svg) est visible (généralement lorsque vous passez la souris sur l’en-tête).
+
 
 
 ## Légende
