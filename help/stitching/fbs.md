@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: e5cb55e7-aed0-4598-a727-72e6488f5aa8
-source-git-commit: 98432804b71805c3714423dff577bbf80d5c92d1
+source-git-commit: 1ee282d0bf91c1a2f27073d0755cf404148d4d5b
 workflow-type: tm+mt
-source-wordcount: '1779'
+source-wordcount: '1784'
 ht-degree: 15%
 
 ---
@@ -21,7 +21,7 @@ Dans l’assemblage basé sur les champs, vous spécifiez un jeu de données d�
 
 ## IdentityMap
 
-L’assemblage basé sur les champs prend en charge l’utilisation du groupe de champs [`identityMap`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/schema/composition#identity) dans les scénarios suivants :
+L’assemblage basé sur les champs prend en charge l’utilisation du groupe de champs [`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity) dans les scénarios suivants :
 
 - Utilisation de l’identité principale dans `identityMap`’espace de noms pour définir l’ID persistant :
    - Si plusieurs identités principales sont trouvées dans différents espaces de noms, les identités des espaces de noms sont triées par ordre lexigraphique et la première identité est sélectionnée.
@@ -57,10 +57,10 @@ L’assemblage basé sur les champs prend en charge l’utilisation du groupe de
 
 
 - Utilisation de `identityMap`’espace de noms pour définir persistentID ou transientID, ou les deux :
-   - Si plusieurs valeurs pour persistantID ou transientID sont trouvées dans un espace de noms `identityMap`, la première valeur disponible au niveau lexicographique est utilisée.
+   - Si plusieurs valeurs pour persistentID ou transientID sont trouvées dans un espace de noms `identityMap`, la première valeur disponible lexicographique est utilisée.
    - Les espaces de noms pour persistentID et transientID doivent s’exclure mutuellement.
 
-  Dans l’exemple ci-dessous, les espaces de noms et les identités génèrent une liste d’identités triées pour l’espace de noms sélectionné (ECID), et finalement l’identité sélectionnée.
+  Dans l’exemple ci-dessous, vous avez sélectionné ECID comme espace de noms à utiliser pour le groupement basé sur les champs. Cette sélection entraîne une liste d’identités triées, et finalement l’identité sélectionnée.
 
   <table style="table-layout:auto">
      <tr>
@@ -120,7 +120,7 @@ Prenons l’exemple suivant, où Robert enregistre différents événements dans
 
 *Données telles qu’elles s’affichaient le jour de leur collecte :*
 
-| Événement | Horodatage | ID persistant (ID de cookie) | ID temporaire (ID de connexion) | ID groupé (après le groupement dynamique) |
+| Événement | Date et heure | ID persistant (ID de cookie) | ID temporaire (ID de connexion) | ID groupé (après le groupement dynamique) |
 |---|---|---|---|---|
 | 1 | 12/05/2023 12:01 | `246` ![flèche droite](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | - | **`246`** |
 | 2 | 12/05/2023 12:02 | `246` | `Bob` ![flèche droite](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` |
@@ -142,7 +142,7 @@ L’attribution fonctionne lorsque la variable personnalisée d’identification
 
 Les données différées (données dont l’horodatage date de plus de 24 heures) sont traitées selon le principe du « meilleur effort », tout en donnant la priorité à l’assemblage des données actuelles pour une qualité maximale.
 
-+++
++++ 
 
 ### Étape 2 : assemblage de lectures
 
@@ -154,7 +154,7 @@ Le tableau suivant représente les mêmes données que ci-dessus, mais affiche d
 
 *Les mêmes données après relecture :*
 
-| Événement | Horodatage | ID persistant (ID de cookie) | ID temporaire (ID de connexion) | ID groupé (après le groupement dynamique) | ID groupé (après relecture) |
+| Événement | Date et heure | ID persistant (ID de cookie) | ID temporaire (ID de connexion) | ID groupé (après le groupement dynamique) | ID groupé (après relecture) |
 |---|---|---|---|---|---|
 | 1 | 12/05/2023 12:01 | `246` | - | `246` | **`Bob`** |
 | 2 | 12/05/2023 12:02 | `246` | `Bob` ![flèche droite](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` | `Bob` ![Flèche vers le haut](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) |
@@ -174,7 +174,7 @@ Le tableau suivant représente les mêmes données que ci-dessus, mais affiche d
 
 L’attribution fonctionne lorsque la variable personnalisée d’identification est liée à un appareil. Dans l’exemple ci-dessus, les événements 1 et 10 sont assemblés à la suite de la relecture, laissant uniquement les événements 8 et 9 désassemblés. Et réduire la mesure Personnes (cumulative) à 2.
 
-+++
++++ 
 
 ### Étape 3 : demande d&#39;accès à des informations personnelles
 
@@ -186,7 +186,7 @@ Le tableau suivant représente les mêmes données que ci-dessus, mais montre l�
 
 *Les mêmes données après une demande d’accès à des informations personnelles pour Bob :*
 
-| Événement | Horodatage | ID persistant (ID de cookie) | ID temporaire (ID de connexion) | ID groupé (après le groupement dynamique) | ID groupé (après relecture) | ID temporaire (ID de connexion) | ID groupé (après demande d’accès à des informations personnelles) |
+| Événement | Date et heure | ID persistant (ID de cookie) | ID temporaire (ID de connexion) | ID groupé (après le groupement dynamique) | ID groupé (après relecture) | ID temporaire (ID de connexion) | ID groupé (après demande d’accès à des informations personnelles) |
 |---|---|---|---|---|---|---|---|
 | 1 | 12/05/2023 12:01 | `246` | - | `246` | **`Bob`** | - | `246` |
 | 2 | 12/05/2023 12:02 | `246` | Bob ![flèche droite](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` | `Bob` ![Flèche vers le haut](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) | <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> | `246` |
@@ -202,7 +202,7 @@ Le tableau suivant représente les mêmes données que ci-dessus, mais montre l�
 | 12 | 12/05/2023 12:12 | `81911` | - | **`Bob`** | `Bob` | - | `81911` |
 | | | appareils **3** | | **4 people**:<br/>246, `Bob`, `3579`, `81911` | **2 personnes**:<br/>Bob, `3579` |  | **3 personnes**:<br/>`246`, `3579`, `81911` |
 
-+++
++++ 
 
 ## Conditions préalables
 
@@ -214,7 +214,7 @@ Les conditions préalables suivantes s’appliquent spécifiquement au groupemen
    - Identifiant **transitoire**, disponible uniquement sur certaines lignes. Par exemple, un nom d’utilisateur ou une adresse e-mail chiffré une fois qu’un visiteur s’authentifie. Vous pouvez utiliser pratiquement n’importe quel identifiant de votre choix. Le groupement prend en compte ce champ pour contenir les informations de l’ID de personne réel. Pour de meilleurs résultats d’assemblage, un identifiant temporaire doit être envoyé dans les événements du jeu de données au moins une fois pour chaque identifiant persistant. Si vous prévoyez d’inclure ce jeu de données dans une connexion Customer Journey Analytics, il est préférable que les autres jeux de données aient également un identifiant commun similaire.
 
 <!--
-- Both columns (persistent ID and transient ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
+- Both columns (persistent ID and transient ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
 
 -->
 
