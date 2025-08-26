@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: e5cb55e7-aed0-4598-a727-72e6488f5aa8
-source-git-commit: 1ee282d0bf91c1a2f27073d0755cf404148d4d5b
+source-git-commit: 00f6eeac173ad606885fce5567c82db8a9d107de
 workflow-type: tm+mt
-source-wordcount: '1784'
+source-wordcount: '1781'
 ht-degree: 15%
 
 ---
@@ -21,9 +21,9 @@ Dans l’assemblage basé sur les champs, vous spécifiez un jeu de données d�
 
 ## IdentityMap
 
-L’assemblage basé sur les champs prend en charge l’utilisation du groupe de champs [`identityMap`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/schema/composition#identity) dans les scénarios suivants :
+L’assemblage basé sur les champs prend en charge l’utilisation du groupe de champs [`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity) dans les scénarios suivants :
 
-- Utilisation de l’identité principale dans `identityMap`’espace de noms pour définir l’ID persistant :
+- Utilisation de l’identité principale dans les espaces de noms d’`identityMap` pour définir l’ID persistant :
    - Si plusieurs identités principales sont trouvées dans différents espaces de noms, les identités des espaces de noms sont triées par ordre lexigraphique et la première identité est sélectionnée.
    - Si plusieurs identités principales sont trouvées dans un seul espace de noms, la première identité principale disponible au niveau lexicographique est sélectionnée.
 
@@ -60,7 +60,7 @@ L’assemblage basé sur les champs prend en charge l’utilisation du groupe de
    - Si plusieurs valeurs pour persistentID ou transientID sont trouvées dans un espace de noms `identityMap`, la première valeur disponible lexicographique est utilisée.
    - Les espaces de noms pour persistentID et transientID doivent s’exclure mutuellement.
 
-  Dans l’exemple ci-dessous, vous avez sélectionné ECID comme espace de noms à utiliser pour le groupement basé sur les champs. Cette sélection entraîne une liste d’identités triées, et finalement l’identité sélectionnée.
+  Dans l’exemple ci-dessous, vous avez sélectionné ECID comme espace de noms à utiliser. Cette sélection entraîne une liste d’identités triées, et finalement l’identité sélectionnée.
 
   <table style="table-layout:auto">
      <tr>
@@ -94,7 +94,7 @@ L’assemblage effectue au moins deux passages aux données d’un jeu de donné
 
 - **Assemblage en direct** : tente d’assembler chaque accès (événement) au fur et à mesure qu’il arrive. Les accès provenant d’appareils qui sont « nouveaux » dans le jeu de données (ne se sont jamais authentifiés) ne sont généralement pas regroupés à ce niveau. Les accès provenant d’appareils déjà reconnus sont immédiatement regroupés.
 
-- **Groupement des relectures** : « relit » les données en fonction des identifiants uniques (ID transitoires) qu’il a appris. C’est à cette étape que les accès provenant d’appareils inconnus précédemment (identifiants persistants) sont regroupés (en identifiants transitoires). La relecture est déterminée par deux paramètres : **fréquence** et **intervalle de recherche en amont**. Adobe propose les combinaisons de paramètres suivantes :
+- **Groupement des relectures** : *relit* les données en fonction des identifiants uniques (ID transitoires) qu’il a appris. C’est à cette étape que les accès provenant d’appareils inconnus précédemment (identifiants persistants) sont regroupés (en identifiants transitoires). La relecture est déterminée par deux paramètres : **fréquence** et **intervalle de recherche en amont**. Adobe propose les combinaisons de paramètres suivantes :
    - **Recherche en amont quotidienne à une fréquence quotidienne** : les données sont relues tous les jours avec un intervalle de recherche en amont de 24 heures. Cette option présente un avantage car les relectures sont beaucoup plus fréquentes, mais les visiteurs non authentifiés doivent s’authentifier le jour même où ils visitent votre site.
    - **Recherche en amont hebdomadaire à une fréquence hebdomadaire** : les données sont relues une fois par semaine avec un intervalle de recherche en amont hebdomadaire (voir [options](#options)). Cette option présente un avantage qui permet aux sessions non authentifiées de disposer d’un temps d’authentification beaucoup moins stricte. Toutefois, les données désassemblées datant de moins d’une semaine ne sont pas retraitées avant la prochaine relecture hebdomadaire.
    - **Recherche en amont bihebdomadaire sur une fréquence hebdomadaire** : les données sont relues une fois par semaine avec un intervalle de recherche en amont bihebdomadaire (voir [options](#options)). Cette option présente un avantage qui permet aux sessions non authentifiées de disposer d’un temps d’authentification beaucoup moins stricte. Toutefois, les données désassemblées datant de moins de deux semaines ne sont pas retraitées avant la prochaine relecture hebdomadaire.
@@ -214,7 +214,7 @@ Les conditions préalables suivantes s’appliquent spécifiquement au groupemen
    - Identifiant **transitoire**, disponible uniquement sur certaines lignes. Par exemple, un nom d’utilisateur ou une adresse e-mail chiffré une fois qu’un visiteur s’authentifie. Vous pouvez utiliser pratiquement n’importe quel identifiant de votre choix. Le groupement prend en compte ce champ pour contenir les informations de l’ID de personne réel. Pour de meilleurs résultats d’assemblage, un identifiant temporaire doit être envoyé dans les événements du jeu de données au moins une fois pour chaque identifiant persistant. Si vous prévoyez d’inclure ce jeu de données dans une connexion Customer Journey Analytics, il est préférable que les autres jeux de données aient également un identifiant commun similaire.
 
 <!--
-- Both columns (persistent ID and transient ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
+- Both columns (persistent ID and transient ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
 
 -->
 
