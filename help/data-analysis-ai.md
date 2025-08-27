@@ -5,18 +5,14 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: 82b36895fe5186f0133c128d434470ea7f875677
+source-git-commit: c8d9eddd1ce11975dec16f715a5f5888cd4d6ffa
 workflow-type: tm+mt
-source-wordcount: '2371'
+source-wordcount: '2316'
 ht-degree: 98%
 
 ---
 
 # Visualiser des données avec l’agent Data Insights
-
->[!AVAILABILITY]
->
->La fonctionnalité décrite dans cet article est disponible pour tous les clients et clientes éligibles dans le cadre d’une mise à jour échelonnée commençant le 28 mai 2025 et peut ne pas encore être disponible dans votre environnement. Cette note sera supprimée lorsque la fonctionnalité sera disponible. Pour plus d’informations sur le processus de mise à jour de Customer Journey Analytics, consultez [Mise à jour des fonctionnalités de Customer Journey Analytics](/help/release-notes/releases.md).
 
 >[!AVAILABILITY]
 >
@@ -246,7 +242,7 @@ Vous trouverez ci-dessous les bonnes pratiques pour votre configuration de Custo
 >[!MORELIKETHIS]
 >
 >[Paramètres de composant](/help/data-views/component-settings/overview.md)
->&#x200B;>[Dictionnaire de données](/help/components/data-dictionary/data-dictionary-overview.md)
->&#x200B;>[Approuver une mesure calculée](/help/components/calc-metrics/cm-workflow/cm-approving.md)
->&#x200B;>[Partager des segments](/help/components/segments/seg-share.md)
+>>[Dictionnaire de données](/help/components/data-dictionary/data-dictionary-overview.md)
+>>[Approuver une mesure calculée](/help/components/calc-metrics/cm-workflow/cm-approving.md)
+>>[Partager des segments](/help/components/segments/seg-share.md)
 >
