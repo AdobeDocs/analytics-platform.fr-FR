@@ -14,4 +14,4 @@ ht-degree: 0%
 
 Adobe Advertising est intégré à Adobe Customer Journey Analytics pour le partage de données et la création de rapports bidirectionnels.
 
-Pour plus d’informations, voir [Présentation de l’intégration entre Adobe Advertising et Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/advertising/integrations/customer-journey-analytics/overview).
+Pour plus d’informations, voir [Présentation de l’intégration entre Adobe Advertising et Customer Journey Analytics](https://experienceleague.adobe.com/fr/docs/advertising/integrations/customer-journey-analytics/overview).
