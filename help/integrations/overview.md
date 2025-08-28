@@ -4,10 +4,10 @@ description: Découvrez comment intégrer des données provenant d’autres solu
 exl-id: f89d07e9-100e-4f82-9486-35bc9c748b19
 feature: Experience Platform Integration
 role: User, Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 1718379e1ea6baffef8f4da045662e95a47e1480
 workflow-type: tm+mt
-source-wordcount: '123'
-ht-degree: 100%
+source-wordcount: '144'
+ht-degree: 93%
 
 ---
 
@@ -21,3 +21,17 @@ La plupart des workflows impliquent les étapes suivantes :
 2. [Créez une connexion](/help/connections/create-connection.md) dans Customer Journey Analytics avec le jeu de données souhaité.
 3. [Créez une vue de données](/help/data-views/create-dataview.md) contenant les dimensions et mesures souhaitées à utiliser dans les rapports.
 4. Exécutez des rapports dans Analysis Workspace en fonction des dimensions et des mesures configurées dans la vue de données.
+
+Voici une liste de certaines des intégrations disponibles :
+
+* [Adobe Analytics](/help/integrations/aa.md)
+
+* [Target](/help/integrations/at.md)
+
+* [Adobe Advertising](/help/integrations/advertising.md)
+
+* [Journey Optimizer](/help/integrations/ajo.md)
+
+* [Gestion des décisions](/help/integrations/ajo-od.md)
+
+* [IA dédiée aux clients](/help/integrations/customer-ai.md)
