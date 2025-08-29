@@ -5,7 +5,7 @@ exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 96d6882c31a5e130219986d156c8e6eda84ec325
+source-git-commit: 9e263d638d483194424a492b0494672ef0f62e71
 workflow-type: tm+mt
 source-wordcount: '3739'
 ht-degree: 55%
@@ -40,7 +40,7 @@ Les informations suivantes décrivent les paramètres utilisés par un composant
 | Paramètre | Description/Cas d’utilisation |
 | --- | --- |
 | [!UICONTROL Type de composant] | Obligatoire. Permet de modifier un composant de Mesure en Dimension ou inversement. La modification de la sélection de cette liste déroulante déplace le composant vers sa zone de composants incluse respective. |
-| [!UICONTROL &#x200B; Nom du composant &#x200B;] | Obligatoire. Permet de définir le nom convivial qui apparaîtra dans Analysis Workspace. Vous pouvez renommer un composant pour lui donner un nom spécifique à la vue de données. |
+| [!UICONTROL  Nom du composant ] | Obligatoire. Permet de définir le nom convivial qui apparaîtra dans Analysis Workspace. Vous pouvez renommer un composant pour lui donner un nom spécifique à la vue de données. |
 | [!UICONTROL Description] | Facultatif, mais recommandé. Fournit des informations sur le composant à d’autres utilisateurs. |
 | [!UICONTROL Balises] | Facultatif. Permet de baliser le composant avec des balises personnalisées ou prêtes à l’emploi pour faciliter la recherche/le filtrage dans l’interface utilisateur d’Analysis Workspace. |
 | [!UICONTROL Libellés de contexte] | Facultatif. Menu déroulant des libellés [contextuels](#context-labels) définis par le système disponibles pouvant être appliqués à un composant. |
