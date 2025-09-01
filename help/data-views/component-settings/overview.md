@@ -5,9 +5,9 @@ exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 9e263d638d483194424a492b0494672ef0f62e71
+source-git-commit: aa635d52007a3032d8c3f90a779d1b70213dee9e
 workflow-type: tm+mt
-source-wordcount: '3739'
+source-wordcount: '3738'
 ht-degree: 55%
 
 ---
@@ -40,7 +40,7 @@ Les informations suivantes décrivent les paramètres utilisés par un composant
 | Paramètre | Description/Cas d’utilisation |
 | --- | --- |
 | [!UICONTROL Type de composant] | Obligatoire. Permet de modifier un composant de Mesure en Dimension ou inversement. La modification de la sélection de cette liste déroulante déplace le composant vers sa zone de composants incluse respective. |
-| [!UICONTROL &#x200B; Nom du composant &#x200B;] | Obligatoire. Permet de définir le nom convivial qui apparaîtra dans Analysis Workspace. Vous pouvez renommer un composant pour lui donner un nom spécifique à la vue de données. |
+| [!UICONTROL  Nom du composant ] | Obligatoire. Permet de définir le nom convivial qui apparaîtra dans Analysis Workspace. Vous pouvez renommer un composant pour lui donner un nom spécifique à la vue de données. |
 | [!UICONTROL Description] | Facultatif, mais recommandé. Fournit des informations sur le composant à d’autres utilisateurs. |
 | [!UICONTROL Balises] | Facultatif. Permet de baliser le composant avec des balises personnalisées ou prêtes à l’emploi pour faciliter la recherche/le filtrage dans l’interface utilisateur d’Analysis Workspace. |
 | [!UICONTROL Libellés de contexte] | Facultatif. Menu déroulant des libellés [contextuels](#context-labels) définis par le système disponibles pouvant être appliqués à un composant. |
@@ -90,7 +90,7 @@ Les avantages des libellés de contexte sont les suivants :
 * **Cohérence** : tous les membres de votre organisation qui travaillent sur un ou plusieurs projets basés sur une vue de données qui utilise des libellés de contexte adoptent le même comportement.
 * **Visibilité des fonctionnalités et des modèles** : certaines visualisations et fonctionnalités n’apparaissent que lorsque le libellé de contexte approprié est attribué. Par exemple :
 
-   * Une visualisation [Carte](/help/analysis-workspace/visualizations/map.md) ne s’affiche correctement que lorsque Customer Journey Analytics sait quels champs représentent la latitude et la longitude.
+   * Une visualisation [Carte](/help/analysis-workspace/visualizations/map.md) ne s’affiche correctement que lorsque Customer Journey Analytics sait quels composants représentent la latitude et la longitude.
    * Des [modèles](/help/analysis-workspace/templates/use-templates.md) spécifiques ne sont visibles que lorsque les libellés de contexte corrects sont appliqués et que les composants associés sont disponibles.
 
 Des libellés de contexte peuvent être requis dans les cas suivants :
@@ -105,7 +105,7 @@ Des libellés de contexte peuvent être requis dans les cas suivants :
 
   **Remarque** : la visualisation des cartes est en phase de test limité de la publication et peut ne pas encore être disponible dans votre environnement.
 
-* Lorsque vous utilisez des [modèles fournis par Adobe](/help/analysis-workspace/templates/use-templates.md). Certains modèles fournis par Adobe peuvent ne pas fonctionner, car certains composants ne figurent pas dans votre vue de données.
+* Pour afficher les [modèles fournis par Adobe](/help/analysis-workspace/templates/use-templates.md). Certains modèles fournis par Adobe peuvent ne pas fonctionner, car certains composants ne figurent pas dans votre vue de données.
 
   Pour chaque composant manquant, un libellé de contexte correspondant est disponible dans votre vue de données. Vous devez ajouter le libellé de contexte correspondant à un composant qui se trouve déjà dans votre vue de données. Ou vous devez ajouter un nouveau composant à votre vue de données et ajouter le libellé de contexte au composant (s’il n’est pas déjà fourni automatiquement).
 
