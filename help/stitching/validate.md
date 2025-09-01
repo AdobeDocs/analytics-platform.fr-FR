@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: b9b73926-6502-4a48-ba73-c784f80950d3
-source-git-commit: a37542e4df80048c0750964bb979d77625813ebe
+source-git-commit: d9a65774fa5ab8c6b7fdd018f5d345dc7eb9e9de
 workflow-type: tm+mt
 source-wordcount: '1181'
 ht-degree: 0%
@@ -46,7 +46,7 @@ En outre, vous devez ajouter deux mesures d’assemblage basées sur la présenc
 
 1. Utilisez le champ contenant l’ID de personne du jeu de données groupé pour configurer une mesure qui définit si un ID de personne est défini. Ajoutez cet ID de personne même si vous utilisez un groupement basé sur des graphiques, car l’ID de personne permet d’établir une ligne de base. Si l’ID de personne n’est pas contenu dans le jeu de données, votre ligne de base est de 0 %.
 
-   Dans l’exemple ci-dessous, `personalEmail.address` sert d’identité et est utilisé pour créer la mesure **[!UICONTROL _Ensemble d’e-mails]**.
+   Dans l’exemple ci-dessous, `personalEmail.address` sert d’identité et est utilisé pour créer la mesure **[!UICONTROL _Email set]** .
    ![Mesure définie pour les e-mails](assets/emailset-metric.png)
 
 1. Utilisez `stitchedID.namespae.code` champ pour créer une dimension **[!UICONTROL Espace de noms d’e-mail assemblé]**. Veillez à spécifier les paramètres du composant [Inclure/Exclure les valeurs](/help/data-views/component-settings/include-exclude-values.md) afin de ne prendre en compte que les valeurs de l’espace de noms vers lequel vous essayez d’élever des lignes de données.
