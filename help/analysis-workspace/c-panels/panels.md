@@ -5,9 +5,9 @@ feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
 source-git-commit: 4599a058cef79a28bd6f9b788c2b202c8235298d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2193'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -75,21 +75,21 @@ Vous pouvez effectuer les opérations suivantes :
 * Sélectionnez ![AddCircle](/help/assets/icons/AddCircle.svg) **à l&#39;extérieur** du dernier panneau de votre espace de travail pour ajouter un autre [panneau vierge](blank-panel.md).
 
 
-## Gestion d’un panneau
+## Gérer un panneau
 
-Vous pouvez gérer un panneau des manières suivantes :
+Vous pouvez gérer un panneau des façons suivantes :
 
 ![Gérer le panneau](assets/manage-panel.png)
 
 * Pour réduire un panneau, sélectionnez ![ChevronDown](/help/assets/icons/ChevronDown.svg).
 * Pour afficher un panneau réduit, sélectionnez ![ChevronLeft](/help/assets/icons/ChevronLeft.svg).
-* Pour supprimer un panneau, sélectionnez ![CrossSize400](/help/assets/icons/CrossSize200.svg). Pour annuler, sélectionnez **[!UICONTROL Modifier]** > **[!UICONTROL Annuler]** (**[!UICONTROL *cmd+z *]**|**[!UICONTROL * ctrl+z *]**).
-* Pour déplacer un panneau, faites-le glisser et déposez-le chaque fois qu’un ![ Déplacer ](/help/assets/icons/Move.svg) est visible (généralement lorsque vous passez la souris sur l’en-tête).
+* Pour supprimer un panneau, sélectionnez ![CrossSize400](/help/assets/icons/CrossSize200.svg). Pour annuler, sélectionnez **[!UICONTROL Modifier]** > **[!UICONTROL Annuler]** (**[!UICONTROL *cmd+z *]**|**[!UICONTROL * ctrl+z *]**).
+* Pour déplacer un panneau, faites-le glisser et déposez-le à chaque fois que la mention ![Déplacer](/help/assets/icons/Move.svg) est visible (généralement lorsque vous passez la souris sur l’en-tête).
 
 
 ## Vue de données
 
-Chaque panneau est associé à une [vue de données](/help/data-views/data-views.md), identifiée par le ![Données](/help/assets/icons/Data.svg) **[!UICONTROL *nom de la vue de données *]**&#x200B;dans le menu déroulant en haut à droite du panneau.
+Chaque panneau est associé à une [vue de données](/help/data-views/data-views.md), identifiée par le ![Données](/help/assets/icons/Data.svg) **[!UICONTROL *nom de la vue de données *]**dans le menu déroulant en haut à droite du panneau.
 
 Lorsque vous créez un projet Workspace vierge, la vue de données par défaut du panneau initial correspond à la dernière vue de données avec laquelle vous avez travaillé dans Customer Journey Analytics.
 
@@ -167,7 +167,7 @@ Pour en savoir plus, consultez [Segments rapides](/help/components/segments/seg-
 
 >[!BEGINSHADEBOX]
 
-Voir ![VidéoConsultée](/help/assets/icons/VideoCheckedOut.svg) [Segments déroulants](https://video.tv.adobe.com/v/327485?quality=12&learn=on&captions=fre_fr){target="_blank"} pour une vidéo de démonstration.
+Voir ![VidéoConsultée](/help/assets/icons/VideoCheckedOut.svg) [Segments déroulants](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 
