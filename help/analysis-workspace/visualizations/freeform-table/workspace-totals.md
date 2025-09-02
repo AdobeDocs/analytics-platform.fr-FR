@@ -16,7 +16,7 @@ ht-degree: 88%
 >[!CONTEXTUALHELP]
 >id="workspace_freeformtable_grandtotal"
 >title="Total général"
->abstract="Le total général n’est pas pris en charge pour les tableaux ou les ventilations avec des lignes statiques."
+>abstract="Le total général n’est pas pris en charge pour les tableaux ou les répartitions avec des lignes statiques."
 
 
 Dans les tableaux à structure libre, une ligne de total s’affiche à chaque niveau de répartition et peut afficher deux totaux :
