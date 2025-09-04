@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 50599b36d333cae3735c6d4fd1b0af6fcabe9177
-workflow-type: ht
-source-wordcount: '735'
-ht-degree: 100%
+source-git-commit: 9774e0e3af024823a03dbcd8d6766877f55e95d8
+workflow-type: tm+mt
+source-wordcount: '792'
+ht-degree: 95%
 
 ---
 
@@ -68,6 +68,20 @@ Veillez à ne pas confondre le groupement avec ce qui suit :
 - Fusion de plusieurs jeux de données. Le groupement s’applique à un seul jeu de données. La fusion des jeux de données se produit suite à la configuration d’une connexion Customer Journey Analytics et à la sélection du même ID de personne dans les jeux de données sélectionnés dans la connexion.
 
 - Jointure de deux jeux de données. Dans Customer Journey Analytics, une jointure est souvent utilisée pour les recherches ou les classifications dans Analysis Workspace. Bien que le groupement utilise la fonctionnalité de jointure, le processus lui-même implique plus de jointures.
+
+
+## Jeux de données Journey Optimizer
+
+L’assemblage prend en charge les jeux de données Journey Optimizer générés automatiquement suivants :
+
+- Événements d’étape de Parcours AJO
+- Jeu de données d’événement d’activité entrante AJO
+- Jeu de données de surfaces AJO
+- Jeu De Données D’Événement De Retour De Message AJO* Jeu De Données D’Événement D’Expérience De Suivi Des Notifications Push AJO
+- Jeu de données d’événement d’expérience de suivi d’e-mail AJO
+- Jeu de données d’événement de feedback en Cci AJO
+- Jeu De Données D’Événement De Retour D’Informations Sur Les Activités AJO Live
+- Jeu de données d’événement de décision AJO ExD
 
 >[!MORELIKETHIS]
 >

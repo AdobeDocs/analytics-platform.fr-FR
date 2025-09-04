@@ -3,16 +3,16 @@ title: Notes de mise à jour actuelles de Customer Journey Analytics
 description: Afficher les dernières notes de mise à jour de Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: a54029648c9295e7a81243cb44e8fd1a85db294a
+source-git-commit: f09937e6babca5549b9b78e9c90462673750a4b3
 workflow-type: tm+mt
-source-wordcount: '1057'
-ht-degree: 98%
+source-wordcount: '1077'
+ht-degree: 96%
 
 ---
 
 # Notes de mise à jour de la version actuelle d’Adobe Customer Journey Analytics (août 2025)
 
-**Dernière mise à jour** : 14 août 2025
+**Dernière mise à jour** : vendredi 4 septembre 2025
 
 
 Ces notes de mise à jour portent sur la période du 13 août au 16 septembre 2025. Les mises à jour d’Adobe Customer Journey Analytics suivent un [modèle de diffusion continue](releases.md) qui permet une approche plus évolutive et plus progressive du déploiement des fonctionnalités. Par conséquent, ces notes de mise à jour sont mises à jour plusieurs fois par mois. Veuillez les vérifier régulièrement.
@@ -21,6 +21,7 @@ Ces notes de mise à jour portent sur la période du 13 août au 16 septembre�
 
 | Fonctionnalité | Description | [Le déploiement commence](releases.md) | [Disponibilité générale](releases.md) |
 | ----------- | ---------- | ------- | ---- |
+| **Mises à jour de l’interface Utilisation** | L’interface [Utilisation](/help/connections/manage-connections.md#usage) ajoute désormais des informations sur le volume des données de base et la taille moyenne des lignes. | | vendredi 4 septembre 2025 |
 | **Visualisation des cartes** | La visualisation des cartes est une visualisation d’Analysis Workspace qui permet de créer une carte visuelle de n’importe quelle mesure (y compris les mesures calculées). Elle s’avère utile pour identifier et comparer les données de mesure de différentes régions géographiques.<p>Auparavant, la visualisation des cartes n’était disponible que dans Adobe Analytics.</p><p>La visualisation des cartes dans Customer Journey Analytics contient les améliorations suivantes par rapport à la visualisation des cartes dans Adobe Analytics :</p><ul><li>Utilisation de n’importe quel segment de votre vue de données comme source de données.</li><li>Précision jusqu’à un mètre en configurant la dimension dans votre vue de données.</li><li>Nouvel outil de sélection permettant de créer un segment, une audience, une tendance ou une répartition à partir de n’importe quelle zone sélectionnée dans la visualisation.</li></ul><p>Pour plus d’informations, consultez la section [Carte](/help/analysis-workspace/visualizations/map.md).</p> | 13 août 2025 | 25 août 2025 |
 | **Modèles B2B** | Si vous disposez d’une licence pour Customer Journey Analytics B2B Edition, les modèles B2B supplémentaires suivants sont désormais disponibles dans l’interface d’utilisation des modèles Adobe : <ul><li>Vue d’ensemble de l’engagement des comptes B2B</li><li>Vue d’ensemble de l’engagement des opportunités B2B</li><li>Activité du groupe d’achat B2B</li></ul><p>Pour plus d’informations, voir [Modèles B2B](/help/analysis-workspace/templates/use-templates.md#b2b-templates) dans [Utiliser des modèles](/help/analysis-workspace/templates/use-templates.md).</p> |  | 15 août 2025 |
 | **Les projets téléchargés au format PDF sont enregistrés sur votre poste de travail.** | Lors du téléchargement d’un projet au format PDF, le fichier est enregistré dans le dossier des téléchargements de votre poste de travail. <p>Auparavant, le téléchargement d’un projet au format PDF ouvrait le fichier PDF dans un nouvel onglet du navigateur avec une URL unique.</p><p>Pour plus d’informations, consultez la section [Téléchargement de projets et de données](/help/analysis-workspace/export/download-send.md).</p> |  | 25 août 2025 |
