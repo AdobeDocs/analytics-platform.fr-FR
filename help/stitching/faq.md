@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
 role: Admin
-source-git-commit: 1a003b38ef26eb811b19cd091c6e089f33ddb6f6
+source-git-commit: c4aea74807be15af56413522d9e6fbf5f18a37a0
 workflow-type: tm+mt
-source-wordcount: '1918'
-ht-degree: 28%
+source-wordcount: '2041'
+ht-degree: 26%
 
 ---
 
@@ -23,8 +23,8 @@ Voici quelques questions fréquentes sur le groupement :
 Vous pouvez utiliser une visualisation de flux avec la dimension Identifiant du jeu de données.
 
 1. Connectez-vous à [Customer Journey Analytics](https://analytics.adobe.com) et créez un projet Workspace vierge.
-2. Sélectionnez l’onglet **[!UICONTROL ** Visualisations **]** à gauche, puis faites glisser une visualisation **[!UICONTROL **&#x200B; Flux &#x200B;**]** vers la zone de travail à droite.
-3. Sélectionnez l’onglet **[!UICONTROL ** Composants **]** à gauche, puis faites glisser la dimension **[!UICONTROL ** Identifiant du jeu de données **]** vers l’emplacement central intitulé **[!UICONTROL **&#x200B; Dimension ou Élément &#x200B;**]**.
+2. Sélectionnez l’onglet **[!UICONTROL ** Visualisations **]** à gauche, puis faites glisser une visualisation **[!UICONTROL ** Flux **]** vers la zone de travail à droite.
+3. Sélectionnez l’onglet **[!UICONTROL ** Composants **]** à gauche, puis faites glisser la dimension **[!UICONTROL ** Identifiant du jeu de données **]** vers l’emplacement central intitulé **[!UICONTROL ** Dimension ou Élément **]**.
 4. Ce rapport de flux est interactif. Pour développer les flux sur les pages suivantes ou précédentes, sélectionnez l’une des valeurs. Utilisez le menu contextuel pour développer ou réduire des colonnes. Il est également possible d’utiliser différentes dimensions dans le même rapport de flux.
 
 Si vous souhaitez renommer des éléments de dimension Identifiant du jeu de données, vous pouvez utiliser un jeu de données de recherche.
@@ -81,7 +81,7 @@ L’analyse cross-canal est un cas d’utilisation spécifique à Customer Journ
 
 +++
 
-## Confidentialité   
+## Confidentialité
 
 +++ Comment l’assemblage gère-t-il les demandes d’accès à des informations personnelles ?
 
@@ -181,7 +181,7 @@ Si le champ ID persistant est vide sur un événement d’un jeu de données ass
 
 Attention à la « réduction d’une personne », qui se produit lorsque le groupement est appliqué aux données qui utilisent des valeurs d’espace réservé pour les ID temporaires. Dans l’exemple de tableau ci-dessous, les ID de personne non définis provenant d’un jeu de données provenant d’un système CRM sont renseignés avec la valeur « Non défini », ce qui entraîne une représentation incorrecte des personnes.
 
-| Événement | Horodatage | ID persistant (ID de cookie) | ID temporaire (ID de connexion) | ID groupé (après relecture) |
+| Événement | Date et heure | ID persistant (ID de cookie) | ID temporaire (ID de connexion) | ID groupé (après relecture) |
 |---|---|---|---|---|
 | 1 | 12/05/2023 12:01 | 123 | - | **Cory** |
 | 2 | 12/05/2023 12:02 | 123 | Cory | **Cory** |
@@ -242,4 +242,37 @@ Pas si vous suivez les étapes décrites ci-dessus. Sinon, veuillez demander une
 
 +++
 
+## Activation d’un jeu de données pour Identity Service
 
++++ Comment activer un jeu de données pour Identity Service uniquement ? 
+
+Vous devez vous assurer qu’un jeu de données est activé pour qu’Identity Service puisse l’utiliser dans un groupement basé sur des graphiques.
+
+Il n’est pas nécessaire d’être titulaire d’une licence pour que Real-Time Customer Data Platform puisse utiliser le groupement basé sur les graphiques. L’assemblage basé sur des graphiques est basé sur un graphique d’identités disponible et non sur des profils clients en temps réel.
+
+Pour activer un jeu de données pour Identity Service uniquement, envoyez une requête `POST` au point d’entrée `/datasets` qui utilise uniquement la balise `unifiedIdentity` . Par exemple :
+
+```shell
+curl -X POST \
+  https://platform.adobe.io/data/foundation/catalog/dataSets \
+  -H 'Content-Type: application/json' \
+  -H 'Authorization: Bearer {ACCESS_TOKEN}' \
+  -H 'x-api-key: {API_KEY}' \
+  -H 'x-gw-ims-org-id: {ORG_ID}' \
+  -H 'x-sandbox-name: {SANDBOX_NAME}' \
+  -d '{
+    "schemaRef": {
+        "id": "https://ns.adobe.com/{TENANT_ID}/schemas/31670881463308a46f7d2cb09762715",
+        "contentType": "application/vnd.adobe.xed-full-notext+json; version=1"
+    },
+    "tags": {
+       "unifiedIdentity": ["enabled:true"]
+    }
+  }'
+```
+
+Toute utilisation de la balise `unifiedProfile` dans la requête, tant que vous ne disposez pas d’une licence pour le profil de données client en temps réel, renvoie une erreur.
+
+Voir [Créer un jeu de données activé pour Profil et Identité](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/enable-for-profile#create-a-dataset-enabled-for-profile-and-identity) pour plus d’informations.
+
++++ 

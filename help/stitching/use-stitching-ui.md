@@ -7,9 +7,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
-source-git-commit: 4bca14492374939cd1ea6508c774720db61a6283
+source-git-commit: c4aea74807be15af56413522d9e6fbf5f18a37a0
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '368'
 ht-degree: 3%
 
 ---
@@ -44,9 +44,19 @@ Pour activer le groupement, dans la section Jeu de données d’événement de l
    * Activez **[!UICONTROL Utiliser l’espace de noms d’identité principal]** pour utiliser l’espace de noms d’identité principal.
    * Sélectionnez un espace de noms dans le menu déroulant **[!UICONTROL Espace de noms]**.
 
-   Si vous sélectionnez **[!UICONTROL Graphique d’identités]** pour l’ID de personne, vous devez sélectionner un espace de noms. Avant cela, une boîte de dialogue **[!UICONTROL Modifier en graphique d’identités]** s’affiche pour vous assurer que vous avez terminé la configuration du graphique d’identités avant d’utiliser le graphique d’identités pour le groupement. Sélectionnez **[!UICONTROL Continuer]** pour continuer.
+
+   Si vous sélectionnez **[!UICONTROL Graphique d’identités]** pour l’ID de personne, vous devez sélectionner un espace de noms.
+
+   >[!NOTE]
+   >
+   >Vous devez être autorisé à utiliser le graphique d’identité.
+   >
+
+   Avant cela, une boîte de dialogue **[!UICONTROL Modifier en graphique d’identité]** s’affiche pour vous assurer que vous avez [terminé la configuration du graphique d’identité pour le jeu de données](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service) avant d’utiliser le graphique d’identité pour le groupement. Sélectionnez **[!UICONTROL Continuer]** pour continuer.
 
    * Sélectionnez un espace de noms dans le menu déroulant **[!UICONTROL Espace de noms]**.
 
 
-1. Sélectionnez un intervalle de recherche en amont dans le menu déroulant **[!UICONTROL Intervalle de recherche en amont]**. Les options disponibles sont **[!UICONTROL 1 jour]**, **[!UICONTROL 7 jours]**, **[!UICONTROL 14 jours]** ou **[!UICONTROL 30 jours]**.
+1. Sélectionnez un intervalle de recherche en amont dans le menu déroulant **[!UICONTROL Intervalle de recherche en amont]**. Les options disponibles dépendent du package Customer Journey Analytics auquel vous avez droit.
+
+Une fois que vous avez enregistré une connexion contenant des jeux de données activés pour la combinaison d’identités, le processus de combinaison de chaque jeu de données commence lorsque l’ingestion des données de ce jeu de données commence.
