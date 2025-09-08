@@ -5,9 +5,9 @@ exl-id: f89d07e9-100e-4f82-9486-35bc9c748b19
 feature: Experience Platform Integration
 role: User, Admin
 source-git-commit: 1718379e1ea6baffef8f4da045662e95a47e1480
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '144'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -22,16 +22,16 @@ La plupart des workflows impliquent les étapes suivantes :
 3. [Créez une vue de données](/help/data-views/create-dataview.md) contenant les dimensions et mesures souhaitées à utiliser dans les rapports.
 4. Exécutez des rapports dans Analysis Workspace en fonction des dimensions et des mesures configurées dans la vue de données.
 
-Voici une liste de certaines des intégrations disponibles :
+Voici une liste de certaines des intégrations disponibles :
 
 * [Adobe Analytics](/help/integrations/aa.md)
 
 * [Target](/help/integrations/at.md)
 
-* [Adobe Advertising](/help/integrations/advertising.md)
+* [Adobe Advertising](/help/integrations/advertising.md)
 
 * [Journey Optimizer](/help/integrations/ajo.md)
 
 * [Gestion des décisions](/help/integrations/ajo-od.md)
 
-* [IA dédiée aux clients](/help/integrations/customer-ai.md)
+* [IA dédiée aux clientes et clients](/help/integrations/customer-ai.md)
