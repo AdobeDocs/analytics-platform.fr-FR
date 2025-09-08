@@ -7,7 +7,7 @@ feature: Release Notes
 source-git-commit: 7c285d6ed154c5d865c96a7c1b3cc697e73bf456
 workflow-type: tm+mt
 source-wordcount: '5411'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -22,9 +22,9 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | **Septembre 2025** | |
 | Interface d’utilisation | Ajout de la documentation relative à la mise à jour de l’[interface d’utilisation](/help/connections/manage-connections.md#usage) dans Connexions. |
 | Assemblage de jeux de données Journey Optimizer | Documentation [liste des jeux de données Parcours Optimizer générés automatiquement](/help/stitching/overview.md#journey-optimizer-datasets) qui peuvent être utilisés dans le groupement. |
-| Libellés de contexte | Ajout d’informations générales supplémentaires sur l’utilisation et l’objectif des [libellés de contexte](/help/data-views/component-settings/overview.md#context-labels) dans les composants de vue de données. |
+| Étiquettes de contexte | Ajout d’informations générales supplémentaires sur l’utilisation et l’objectif des [étiquettes de contexte](/help/data-views/component-settings/overview.md#context-labels) dans les composants de vue de données. |
 | **Août 2025** | |
-| Nouvelle intégration avec Adobe Advertising | Ajout d’informations sur l’[intégration à Adobe Advertising](/help/integrations/advertising.md). |
+| Nouvelle intégration à Adobe Advertising | Ajout d’informations sur l’[intégration à Adobe Advertising](/help/integrations/advertising.md). |
 | Nouvelles fonctions de champs dérivés | Documentation sur les nouvelles fonctions de champs dérivés : [Mathématiques de date](/help/data-views/derived-fields/derived-fields.md#date-math), [Profondeur](/help/data-views/derived-fields/derived-fields.md#depth) et [Typecast](/help/data-views/derived-fields/derived-fields.md#typecast). |
 | **Juillet 2025** | |
 | Débogueur | Nouvel article sur l’activation, l’utilisation et la désactivation du débogueur de projet dans Analysis Workspace. |
