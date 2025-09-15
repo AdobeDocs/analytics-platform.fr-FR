@@ -6,9 +6,9 @@ feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
 source-git-commit: 9774e0e3af024823a03dbcd8d6766877f55e95d8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '792'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -72,22 +72,22 @@ Veillez à ne pas confondre le groupement avec ce qui suit :
 
 ## Jeux de données Journey Optimizer
 
-L’assemblage prend en charge les jeux de données Journey Optimizer générés automatiquement suivants :
+L’assemblage prend en charge les jeux de données Journey Optimizer suivants, générés automatiquement :
 
-- Événements d’étape de Parcours AJO
+- Événements d’étape de parcours AJO
 - Jeu de données d’événement d’activité entrante AJO
 - Jeu de données de surfaces AJO
-- Jeu De Données D’Événement De Retour De Message AJO* Jeu De Données D’Événement D’Expérience De Suivi Des Notifications Push AJO
+- Jeu de données d’événement de commentaires de message AJO* Jeu de données d’événement d’expérience de suivi des notifications push AJO
 - Jeu de données d’événement d’expérience de suivi d’e-mail AJO
-- Jeu de données d’événement de feedback en Cci AJO
-- Jeu De Données D’Événement De Retour D’Informations Sur Les Activités AJO Live
-- Jeu de données d’événement de décision AJO ExD
+- Jeu de données d’événement de commentaires en Cci AJO
+- Jeu de données d’événement de commentaires des activités en direct AJO
+- Jeu de données d’événement de décision ExD AJO
 
 >[!MORELIKETHIS]
 >
 >[Groupement basé sur les champs](fbs.md)
->&#x200B;>[Groupement basé sur les graphes](gbs.md)
->&#x200B;>[Utiliser le groupement](use-stitching.md)
->&#x200B;>[Valider le groupement](validate.md)
->&#x200B;>[Questions fréquentes sur le groupement](faq.md)
+>>[Groupement basé sur les graphes](gbs.md)
+>>[Utiliser le groupement](use-stitching.md)
+>>[Valider le groupement](validate.md)
+>>[Questions fréquentes sur le groupement](faq.md)
 

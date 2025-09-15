@@ -5,9 +5,9 @@ exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
 source-git-commit: 7c285d6ed154c5d865c96a7c1b3cc697e73bf456
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5411'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -20,8 +20,8 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Fonctionnalité | Description |
 | --- | --- |
 | **Septembre 2025** | |
-| Interface d’utilisation | Ajout de la documentation relative à la mise à jour de l’[interface d’utilisation](/help/connections/manage-connections.md#usage) dans Connexions. |
-| Assemblage de jeux de données Journey Optimizer | Documentation [liste des jeux de données Parcours Optimizer générés automatiquement](/help/stitching/overview.md#journey-optimizer-datasets) qui peuvent être utilisés dans le groupement. |
+| Interface Utilisation | Ajout de la documentation relative à la mise à jour de l’[interface Utilisation](/help/connections/manage-connections.md#usage) dans Connexions. |
+| Assemblage de jeux de données Journey Optimizer | Documentation de la [liste des jeux de données Journey Optimizer générés automatiquement](/help/stitching/overview.md#journey-optimizer-datasets) qui peuvent être utilisés dans l’assemblage. |
 | Étiquettes de contexte | Ajout d’informations générales supplémentaires sur l’utilisation et l’objectif des [étiquettes de contexte](/help/data-views/component-settings/overview.md#context-labels) dans les composants de vue de données. |
 | **Août 2025** | |
 | Nouvelle intégration à Adobe Advertising | Ajout d’informations sur l’[intégration à Adobe Advertising](/help/integrations/advertising.md). |
