@@ -5,10 +5,10 @@ title: Exporter Des Tables Complètes Vers Le Cloud
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: c16fc1a239c9ce1b701b3d03539bc9696f1c6489
+source-git-commit: e3037b3981ce128f67165d6caca0b4dc5df04773
 workflow-type: tm+mt
-source-wordcount: '2297'
-ht-degree: 78%
+source-wordcount: '2449'
+ht-degree: 74%
 
 ---
 
@@ -29,7 +29,7 @@ D’autres méthodes d’export de rapports Customer Journey Analytics sont é
 
 ## Comprendre les exports de tableaux complets
 
-Vous pouvez exporter des tableaux complets d’Analysis Workspace vers des fournisseurs cloud tels que Google, Azure, Amazon et Adobe.
+Vous pouvez exporter des tableaux complets d’Analysis Workspace vers des fournisseurs de services cloud tels que Google, Azure, Amazon et Adobe.
 
 [Les avantages de l’exports de tableaux complets vers le cloud](#advantages-of-exporting-to-the-cloud) incluent la possibilité d’exporter des millions de lignes, d’inclure des mesures calculées, de structurer la sortie des données en valeurs concaténées, etc.
 
@@ -59,6 +59,43 @@ Procédez comme suit lors de l’export de tableaux complets vers le cloud :
 >id="export-manifest"
 >title="Fichier de manifeste "
 >abstract="Lorsqu’il est activé, un fichier de manifeste est inclus dans toute diffusion d’export réussie. Le fichier de manifeste vous permet de confirmer que tous les fichiers ont bien été diffusés."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-export-details"
+>title="Détails"
+>abstract="Spécifiez le nom de l’export. Vous pouvez également ajouter une description et des balises. Ces informations permettent d’identifier l’exportation dans le tableau des exportations et dans les notifications par e-mail."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-export-data-structure"
+>title="Structure des données"
+>abstract="Il s’agit du tableau à structure libre que vous exportez. Vous pouvez modifier la structure des données en faisant glisser des composants du panneau de gauche vers le tableau. Vous pouvez appliquer un filtre en faisant glisser un composant dans la zone de filtre. Le projet se met à jour dynamiquement lorsque vous ajoutez des composants à la zone de travail."
+
+<!-- markdownlint-enable MD034 -->ß
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-export-schedule"
+>title="Planifier"
+>abstract="Sélectionnez la fréquence à laquelle l’exportation doit avoir lieu. Sélectionnez Envoyer maintenant (une seule fois) pour lancer l’exportation immédiatement. Les exportations planifiées sont lancées à la date et à l’heure que vous spécifiez. "
+
+<!-- markdownlint-enable MD034 -->
+
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-export-destination"
+>title="Destination"
+>abstract="Sélectionnez le compte cloud et l’emplacement où vous souhaitez que les données soient envoyées. Vous pouvez choisir un compte et un emplacement existants ou sélectionner « Ajouter nouveau » pour les créer. Spécifiez les utilisateurs et les groupes à avertir en cas d’échec ou d’expiration des exportations."
 
 <!-- markdownlint-enable MD034 -->
 
