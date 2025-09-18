@@ -2,14 +2,11 @@
 description: Découvrez comment utiliser les rapports en temps réel dans Analysis Workspace.
 title: Utilisation Des Rapports En Temps Réel
 feature: Real-time Reporting
-hide: true
-hidefromtoc: true
 role: User
-badgePremium: label="Beta"
 exl-id: 6e7dba80-5fb9-4554-b989-85eb54a4bd6a
-source-git-commit: 2461804f788b7a1417c4d7faa1d7133d8808cad5
+source-git-commit: d8ff5191ea96b8871f6aaba1fc28211c22a13e0d
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '224'
 ht-degree: 12%
 
 ---
@@ -30,13 +27,13 @@ Pour utiliser les rapports en temps réel, activez le bouton (bascule) **[!UICON
 * [Attribution](/help/analysis-workspace/c-panels/attribution.md)
 * [Élément suivant ou précédent](/help/analysis-workspace/c-panels/next-previous.md)
 
-Un message contenant la date et l’heure de la dernière actualisation des données s’affiche. Par exemple : [!UICONTROL &#x200B; *Dernière actualisation à 19 :55*].
+Un message contenant la date et l’heure de la dernière actualisation des données s’affiche. Par exemple : [!UICONTROL  *Dernière actualisation à 19 :55*].
 
 Sélectionnez la période en temps réel sur laquelle vous souhaitez créer des rapports dans le menu déroulant. Les options disponibles sont les suivantes :
 
 * [!UICONTROL 15 dernières minutes]
 * [!UICONTROL 30 dernières minutes]
-* [!UICONTROL Dernière heure &#x200B;]
+* [!UICONTROL Dernière heure ]
 * [!UICONTROL 8 dernières heures]
 * [!UICONTROL Dernières 24 heures]
 

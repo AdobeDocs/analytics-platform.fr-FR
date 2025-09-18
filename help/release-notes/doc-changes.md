@@ -4,10 +4,10 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 7c285d6ed154c5d865c96a7c1b3cc697e73bf456
-workflow-type: ht
-source-wordcount: '5411'
-ht-degree: 100%
+source-git-commit: d8ff5191ea96b8871f6aaba1fc28211c22a13e0d
+workflow-type: tm+mt
+source-wordcount: '5422'
+ht-degree: 99%
 
 ---
 
@@ -20,6 +20,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Fonctionnalité | Description |
 | --- | --- |
 | **Septembre 2025** | |
+| Créer des rapports en temps réel | Ajout de la documentation sur la [création de rapports en temps réel](/help/components/real-time/real-time.md) dans Customer Journey Analytics. |
 | Interface Utilisation | Ajout de la documentation relative à la mise à jour de l’[interface Utilisation](/help/connections/manage-connections.md#usage) dans Connexions. |
 | Assemblage de jeux de données Journey Optimizer | Documentation de la [liste des jeux de données Journey Optimizer générés automatiquement](/help/stitching/overview.md#journey-optimizer-datasets) qui peuvent être utilisés dans l’assemblage. |
 | Étiquettes de contexte | Ajout d’informations générales supplémentaires sur l’utilisation et l’objectif des [étiquettes de contexte](/help/data-views/component-settings/overview.md#context-labels) dans les composants de vue de données. |

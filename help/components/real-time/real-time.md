@@ -2,21 +2,18 @@
 description: Découvrez les fonctionnalités de reporting en temps réel dans Customer Journey Analytics.
 title: Rapports En Temps Réel - Aperçu
 feature: Real-time Reporting
-hide: true
-hidefromtoc: true
 role: User
-badgePremium: label="Beta"
 exl-id: 12fbb760-936d-4e30-958f-764febca5ae7
-source-git-commit: 2461804f788b7a1417c4d7faa1d7133d8808cad5
+source-git-commit: d8ff5191ea96b8871f6aaba1fc28211c22a13e0d
 workflow-type: tm+mt
-source-wordcount: '723'
-ht-degree: 4%
+source-wordcount: '722'
+ht-degree: 7%
 
 ---
 
 # Création de rapports en temps réel - Aperçu
 
-Les rapports en temps réel dans Customer Journey Analytics affichent et mettent à jour en temps réel les données et les visualisations au sein d’un ou de plusieurs panneaux dans Analysis Workspace.
+Les rapports en temps réel dans Customer Journey Analytics affichent et mettent à jour en temps réel les données et les visualisations au sein d’un ou de plusieurs panneaux dans Analysis Workspace.
 
 {{release-limited-testing}}
 
@@ -49,7 +46,7 @@ Les rapports en temps réel utilisent un jeu de données consolidé complètemen
 * Création de rapports en temps réel sur un jeu de données consolidé contenant jusqu’à 24 heures de données en continu.
 * Création de rapports standard sur le jeu de données consolidé qui contient jusqu’à 13 mois de données glissantes (ou plus si vous disposez d’une licence pour le module complémentaire de capacité de données étendue).
 
-![Création de rapports en temps réel](assets/real-time-reporting-latencies.svg){zoomable="yes"}
+![Rapports en temps réel](assets/real-time-reporting-latencies.svg){zoomable="yes"}
 
 ### Latences
 
