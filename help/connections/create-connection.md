@@ -435,7 +435,7 @@ Les types de jeux de données répertoriés ci-dessus peuvent également être b
 
 | Type de jeu de données | Description | Date et heure | Schéma | ID de personne |
 |---|---|---|---|---|
-| **[!UICONTROL Ad hoc]** | Données ad hoc basées sur un [schéma ad hoc](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/api/ad-hoc) avec des champs dont l’espace de noms n’est utilisé que par un seul jeu de données. | En fonction du type de jeu de données que vous sélectionnez pour le jeu de données ad hoc. | Tout schéma ad hoc basé sur une classe en fonction du comportement *ad hoc* | En fonction du type de jeu de données que vous sélectionnez pour le jeu de données ad hoc. |
+| **[!UICONTROL Ad hoc]** | Données ad hoc basées sur un [schéma ad hoc](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/api/ad-hoc) avec des champs dont l’espace de noms n’est utilisé que par un seul jeu de données. | En fonction du type de jeu de données que vous sélectionnez pour le jeu de données ad hoc. | Tout schéma ad hoc basé sur une classe en fonction du comportement *ad hoc* | En fonction du type de jeu de données que vous sélectionnez pour le jeu de données ad hoc. |
 | **[!UICONTROL Modèle]** | Données basées sur un modèle basées sur un schéma basé sur un modèle. | En fonction du type de jeu de données que vous sélectionnez pour le jeu de données basé sur un modèle. | Tout schéma basé sur un modèle. | En fonction du type de jeu de données que vous sélectionnez pour le jeu de données basé sur un modèle. |
 
 
@@ -774,5 +774,5 @@ Ce calcul est effectué pour chaque jeu de données de la connexion.
 >[!MORELIKETHIS]
 >
 >* [Présentation de l’ingestion des données](/help/data-ingestion/data-ingestion.md)
->* Blog : [utilisation des jeux de données d’événement, de recherche et de profil dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-to-leverage-event-lookup-and-profile-datasets-in-adobe/ba-p/681478)
+>* Blog : [utilisation des jeux de données d’événement, de recherche et de profil dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-to-leverage-event-lookup-and-profile-datasets-in-adobe/ba-p/681478?profile.language=fr)
 
