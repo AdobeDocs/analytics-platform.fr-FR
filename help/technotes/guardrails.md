@@ -5,16 +5,16 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 88956946aabb74d94cd84a8b4ef30d9eb1044ebd
+source-git-commit: 1af81040d144ab1717b9453756d0d5b92d489d56
 workflow-type: tm+mt
-source-wordcount: '1900'
+source-wordcount: '1933'
 ht-degree: 11%
 
 ---
 
 # Mécanismes de sécurisation de Customer Journey Analytics
 
-Ce document fournit des limites pour divers composants de Customer Journey Analytics. Pour les mécanismes de sécurisation, les paramètres de définition de la portée et les droits, reportez-vous aux sections [Description du produit pour Customer Journey Analytics](https://helpx.adobe.com/fr/legal/product-descriptions/customer-journey-analytics.html?lang=fr), [Description du produit pour le module complémentaire Adobe Analytics : Customer Journey Analytics](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html?lang=fr) ou [Description du produit pour Customer Journey Analytics B2B edition](https://helpx.adobe.com/fr/legal/product-descriptions/customer-journey-analytics-b2b.html?lang=fr).
+Ce document fournit des limites pour divers composants de Customer Journey Analytics. Pour les mécanismes de sécurisation, les paramètres de définition de la portée et les droits, reportez-vous aux sections [Description du produit pour Customer Journey Analytics](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html?lang=fr), [Description du produit pour le module complémentaire Adobe Analytics : Customer Journey Analytics](https://helpx.adobe.com/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html?lang=fr) ou [Description du produit pour Customer Journey Analytics B2B edition](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics-b2b.html?lang=fr).
 
 ## Types de limite
 
@@ -94,7 +94,7 @@ Image size - 2 - System-enforced Guardrail - Maximim upload size per image in MB
 
 {style="table-layout:auto"}
 
-Consultez également la section Experience Platform [Mécanismes de sécurisation de Real-time Customer Data Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/rtcdp/guardrails/overview).
+Consultez également la section Experience Platform [Mécanismes de sécurisation de Real-time Customer Data Platform](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/guardrails/overview).
 
 
 ## Expiration automatisée des jeux de données
@@ -139,7 +139,7 @@ Consultez également la section Experience Platform [Mécanismes de sécurisatio
 
 {style="table-layout:auto"}
 
-Consultez également la section Experience Platform [ Mécanismes de sécurisation pour l’ingestion de données](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=fr).
+Consultez également la section Experience Platform [ Mécanismes de sécurisation pour l’ingestion de données](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html).
 
 
 ## Exportation des données des destinations
@@ -151,7 +151,7 @@ Consultez également la section Experience Platform [ Mécanismes de sécurisati
 
 {style="table-layout:auto"}
 
-Consultez également la section Experience Platform [ Mécanismes de sécurisation d’exportation de jeux de données ](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/guardrails#dataset-exports)
+Consultez également la section Experience Platform [ Mécanismes de sécurisation d’exportation de jeux de données ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports)
 
 
 ## Zone d’atterrissage des données
@@ -258,7 +258,7 @@ Consultez également la section Experience Platform [ Mécanismes de sécurisati
 
 >[!NOTE]
 >
->Les délais de traitement ci-dessous sont des mécanismes de sécurisation, et non des accords de niveau de service (SLA) contractuels. La latence varie en fonction de la configuration du client, des volumes de données et des applications clientes. Les temps de traitement réels sont souvent plus rapides. Consultez votre contrat Customer Journey Analytics pour connaître les conditions contractuelles et les contrats de niveau de service spécifiques. Voir Experience Platform [Mécanismes de sécurisation pour l’ingestion de données](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=fr) pour plus d’informations.
+>Les délais de traitement ci-dessous sont des mécanismes de sécurisation, et non des accords de niveau de service (SLA) contractuels. La latence varie en fonction de la configuration du client, des volumes de données et des applications clientes. Les temps de traitement réels sont souvent plus rapides. Consultez votre contrat Customer Journey Analytics pour connaître les conditions contractuelles et les contrats de niveau de service spécifiques. Voir Experience Platform [Mécanismes de sécurisation pour l’ingestion de données](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html) pour plus d’informations.
 
 | Flux de données | Latence attendue |
 |---|---|
@@ -272,5 +272,12 @@ Consultez également la section Experience Platform [ Mécanismes de sécurisati
 | Renvoi du connecteur Adobe Analytics Source de moins de 10 milliards d’événements (maximum de 13 mois de données historiques) | &lt; 4 semaines |
 | Publication d’audiences dans le profil client en temps réel, y compris la création automatique du segment de diffusion en continu et la possibilité pour le segment d’être prêt à recevoir les données. | ≈ 60 minutes |
 | Fréquence d’actualisation des audiences | Actualisation unique : latence inférieure à 5 minutes.<br/>Actualisation toutes les 4 heures, tous les jours, toutes les semaines, tous les mois (la latence va de pair avec le taux d’actualisation). |
+
+| Latences de création de rapports en temps réel | Latence attendue |
+|---|---|
+| SDK/API d’Edge Network dans Edge Network | &lt; 7 minutes |
+| Connecteurs de diffusion en continu | &lt; 17 minutes |
+| Connecteur source Adobe Analytics | &lt; 17 minutes |
+| Autres connecteurs source (y compris les données par lots) | &lt; 25 heures |
 
 {style="table-layout:auto"}

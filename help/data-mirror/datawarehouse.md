@@ -7,7 +7,8 @@ role: Admin
 hide: true
 hidefromtoc: true
 badgePremium: label="Beta"
-source-git-commit: 9bd124ad651274b48052edc56bfb72358aa2d79a
+exl-id: 92cffcc5-d7a7-47f5-869d-1fc665594bf4
+source-git-commit: b585187f112c2081a8e51bd84d9f95e75ceebdc3
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 0%
@@ -15,6 +16,8 @@ ht-degree: 0%
 ---
 
 # Configuration des solutions natives Data Warehouse
+
+{{release-limited-testing}}
 
 Pour prendre en charge Experience Platform Data Mirror for Customer Journey Analytics, les données que vous souhaitez utiliser à partir des trois solutions natives d’entrepôt de données prises en charge ([[!DNL Azure Databricks]](#azure-databricks), [[!DNL Google BigQuery]](#google-bigquery), [[!DNL Snowflake]](#snowflake)) doivent être activées pour la capture de données de modification.
 
@@ -53,8 +56,8 @@ Pour plus d’informations, consultez le guide [[!DNL Azure Databricks]  sur l�
 
 Lisez la documentation suivante pour savoir comment activer la capture de données de modification pour votre connexion source [!DNL Azure Databricks] :
 
-* [Créer une connexion  [!DNL Azure Databricks]  base](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/api-tutorials/create/databases/databricks).
-* [Créer une connexion source pour une base de données](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
+* [Créer une connexion  [!DNL Azure Databricks]  base](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/databricks).
+* [Créer une connexion source pour une base de données](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
 
 ## [!DNL Google BigQuery]
 
@@ -64,8 +67,8 @@ Pour plus d’informations, consultez le guide sur les instructions de langage d
 
 Lisez la documentation suivante pour savoir comment activer la capture de données de modification pour votre connexion source [!DNL Google BigQuery] :
 
-* [Créer une connexion  [!DNL Google BigQuery]  base](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/api-tutorials/create/databases/bigquery).
-* [Créer une connexion source pour une base de données](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
+* [Créer une connexion  [!DNL Google BigQuery]  base](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/bigquery).
+* [Créer une connexion source pour une base de données](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
 
 ## [!DNL Snowflake]
 
@@ -81,11 +84,11 @@ Pour plus d’informations, consultez le guide [[!DNL Snowflake]  sur l’utilis
 
 Lisez la documentation suivante pour savoir comment activer la capture de données de modification pour votre connexion source [!DNL Snowflake] :
 
-* [Créer une connexion  [!DNL Snowflake]  base](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/api-tutorials/create/databases/snowflake).
-* [Créer une connexion source pour une base de données](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
+* [Créer une connexion  [!DNL Snowflake]  base](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/snowflake).
+* [Créer une connexion source pour une base de données](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
 
 
 >[!MORELIKETHIS]
 >
->Guide de démarrage rapide de [Data Mirror : mise en miroir et utilisation de données basées sur des modèles](data-mirror.md)
+>Guide de démarrage rapide de [Data Mirror : mise en miroir et utilisation de données basées sur des modèles](model-based.md)
 >

@@ -7,15 +7,17 @@ role: Admin
 hide: true
 hidefromtoc: true
 badgePremium: label="Beta"
-source-git-commit: 9bd124ad651274b48052edc56bfb72358aa2d79a
+exl-id: 17f72954-085c-46a8-bc28-6af0a4eb159a
+source-git-commit: a6cdade9790ef4bc222eb5979b7370f7403b5ad5
 workflow-type: tm+mt
-source-wordcount: '2272'
+source-wordcount: '2271'
 ht-degree: 14%
 
 ---
 
-
 # Mettre en miroir et utiliser des données basées sur des modèles
+
+{{release-limited-testing}}
 
 Ce guide de démarrage rapide explique comment utiliser la fonctionnalité [Experience Platform Data Mirror for Customer Journey Analytics](data-mirror.md) pour mettre en miroir des données basées sur des modèles à partir d’une solution native d’entrepôt de données dans Adobe Experience Platform. Utilisez ensuite ces données dans Customer Journey Analytics.
 
@@ -172,7 +174,7 @@ Définissez un schéma qui modélise ces données. Configurer le schéma :
 
      ![Descripteur de version](assets/platform-schema-id.png)
 
-   * Le champ **[!UICONTROL personid]** est configuré, avec **[!UICONTROL timestamp]** comme clé de Principal **&#x200B;**. Sélectionnez ![Ajouter](/help/assets/icons/Add.svg) **[!UICONTROL Créer une clé primaire composite]** pour créer une clé composite.
+   * Le champ **[!UICONTROL personid]** est configuré, avec **[!UICONTROL timestamp]** comme clé de Principal ****. Sélectionnez ![Ajouter](/help/assets/icons/Add.svg) **[!UICONTROL Créer une clé primaire composite]** pour créer une clé composite.
 
      ![ Clé composite ](assets/platform-schema-compositekey.png)
 
@@ -180,12 +182,12 @@ Définissez un schéma qui modélise ces données. Configurer le schéma :
 
      ![Descripteur de personne](assets/platform-schema-personid.png)
 
-   * Le champ **[!UICONTROL timestamp]** est configuré, ainsi que le champ **[!UICONTROL personid]** en tant que **[!UICONTROL clé de Principal &#x200B;]**&#x200B;y. Le champ **[!UICONTROL horodatage]** est également configuré en tant que **[!UICONTROL descripteur d’horodatage]**. Il vous suffit de définir un champ en tant que **[!UICONTROL descripteur d’horodatage]** pour les données basées sur un modèle de série temporelle.
+   * Le champ **[!UICONTROL timestamp]** est configuré, ainsi que le champ **[!UICONTROL personid]** comme clé de Principal ****. Le champ **[!UICONTROL horodatage]** est également configuré en tant que **[!UICONTROL descripteur d’horodatage]**. Il vous suffit de définir un champ en tant que **[!UICONTROL descripteur d’horodatage]** pour les données basées sur un modèle de série temporelle.
 
      ![Descripteur d’horodatage](assets/platform-schema-timestamp.png)
 
 
-   Si vous avez correctement défini la clé de Principal **&#x200B;**, le descripteur de version **&#x200B;**&#x200B;et le descripteur d’horodatage **&#x200B;**, l’avertissement au-dessus de la définition du schéma disparaît.
+   Si vous avez correctement défini la clé de Principal ****, le descripteur de version **** et le descripteur d’horodatage ****, l’avertissement au-dessus de la définition du schéma disparaît.
 
 1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer le schéma.
 
@@ -218,7 +220,7 @@ L’assistant d’ajout de données vous guide tout au long des étapes suivante
 
    1. Sélectionnez **[!UICONTROL Suivant]**.
 
-  Consultez la documentation d’Experience Platform pour plus d’informations sur la connexion et l’authentification lorsque vous utilisez le connecteur [Azure Databricks](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/databases/databricks) ou [Snowflake](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/databases/snowflake).
+  Consultez la documentation d’Experience Platform pour plus d’informations sur la connexion et l’authentification lorsque vous utilisez le connecteur [Azure Databricks](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks) ou [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake).
 
 
 ### Sélectionner les données
