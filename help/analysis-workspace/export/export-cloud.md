@@ -5,10 +5,10 @@ title: Exporter Des Tables Complètes Vers Le Cloud
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: e3037b3981ce128f67165d6caca0b4dc5df04773
+source-git-commit: 0b6afd5639234f6305c99267d3b1624279c97368
 workflow-type: tm+mt
-source-wordcount: '2449'
-ht-degree: 74%
+source-wordcount: '2482'
+ht-degree: 73%
 
 ---
 
@@ -56,15 +56,6 @@ Procédez comme suit lors de l’export de tableaux complets vers le cloud :
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="export-manifest"
->title="Fichier de manifeste "
->abstract="Lorsqu’il est activé, un fichier de manifeste est inclus dans toute diffusion d’export réussie. Le fichier de manifeste vous permet de confirmer que tous les fichiers ont bien été diffusés."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
 >id="cja-export-details"
 >title="Détails"
 >abstract="Spécifiez le nom de l’export. Vous pouvez également ajouter une description et des balises. Ces informations permettent d’identifier l’exportation dans le tableau des exportations et dans les notifications par e-mail."
@@ -78,7 +69,16 @@ Procédez comme suit lors de l’export de tableaux complets vers le cloud :
 >title="Structure des données"
 >abstract="Il s’agit du tableau à structure libre que vous exportez. Vous pouvez modifier la structure des données en faisant glisser des composants du panneau de gauche vers le tableau. Vous pouvez appliquer un filtre en faisant glisser un composant dans la zone de filtre. Le projet se met à jour dynamiquement lorsque vous ajoutez des composants à la zone de travail."
 
-<!-- markdownlint-enable MD034 -->ß
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="export-manifest"
+>title="Fichier de manifeste "
+>abstract="Lorsque cette option est sélectionnée, un fichier manifeste est inclus dans toute diffusion d’exportation réussie. Le fichier de manifeste vous permet de confirmer que tous les fichiers ont bien été diffusés."
+
+<!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
 
@@ -96,6 +96,15 @@ Procédez comme suit lors de l’export de tableaux complets vers le cloud :
 >id="cja-export-destination"
 >title="Destination"
 >abstract="Sélectionnez le compte cloud et l’emplacement où vous souhaitez que les données soient envoyées. Vous pouvez choisir un compte et un emplacement existants ou sélectionner « Ajouter nouveau » pour les créer. Spécifiez les utilisateurs et les groupes à avertir en cas d’échec ou d’expiration des exportations."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-export-file-format"
+>title="Format du fichier"
+>abstract="Lors du choix du format de fichier Parquet, certains caractères spéciaux inclus dans les noms des composants sont remplacés par un trait de soulignement (_). Consultez le lien ci-dessous pour obtenir la liste complète des caractères remplacés."
 
 <!-- markdownlint-enable MD034 -->
 
