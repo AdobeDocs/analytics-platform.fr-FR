@@ -5,10 +5,10 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: 8eb57617cc089dee0df73171feb1118f35d4c960
+source-git-commit: cd92bde10b9cb473c4df791e91296a2a43b2ad84
 workflow-type: tm+mt
-source-wordcount: '2381'
-ht-degree: 98%
+source-wordcount: '2463'
+ht-degree: 94%
 
 ---
 
@@ -163,6 +163,14 @@ Enfin, examinons le chiffre d’affaires par catégorie de produits.
 
 ![Anneau](/help/assets/ai-asst-result3.png)
 
+## Accès à Data Insights Agent dans toutes les applications Experience Cloud
+
+Adobe Experience Platform Agent Orchestrator vous permet d’accéder aux fonctionnalités de Data Insights Agent dans plusieurs applications Adobe Experience Cloud, telles que Adobe Journey Optimizer et Real-Time CDP.
+
+Agent Orchestrator interprète votre requête, détermine les agents spécialisés nécessaires et les orchestre pour fournir la réponse appropriée. Il effectue le suivi du contexte dans les interactions à plusieurs tours, de sorte que vous puissiez tirer parti naturellement des requêtes précédentes.
+
+Pour plus d&#39;informations, voir [Adobe Experience Platform Agent Orchestrator](http://www.adobe.com/go/agent-orchestrator-home).
+
 ## Exemples de prompts de visualisation de données
 
 Vous trouverez ci-dessous quelques exemples de prompts courants et les visualisations utilisées par l’agent Data Insights pour répondre à ces invites.
@@ -251,7 +259,7 @@ Vous trouverez ci-dessous les bonnes pratiques pour votre configuration de Custo
 >[!MORELIKETHIS]
 >
 >[Paramètres de composant](/help/data-views/component-settings/overview.md)
->&#x200B;>[Dictionnaire de données](/help/components/data-dictionary/data-dictionary-overview.md)
->&#x200B;>[Approuver une mesure calculée](/help/components/calc-metrics/cm-workflow/cm-approving.md)
->&#x200B;>[Partager des segments](/help/components/segments/seg-share.md)
+>>[Dictionnaire de données](/help/components/data-dictionary/data-dictionary-overview.md)
+>>[Approuver une mesure calculée](/help/components/calc-metrics/cm-workflow/cm-approving.md)
+>>[Partager des segments](/help/components/segments/seg-share.md)
 >
