@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 badgePremium: label="Beta"
 exl-id: 87593d7d-9456-48f8-8d39-5c3d95fe51ec
-source-git-commit: 8946f1bc57cc856adeac4ee0a96799040f7e698c
+source-git-commit: 578e19d8a8205bdfa034900c45d7d4a2d8f6a797
 workflow-type: tm+mt
-source-wordcount: '458'
+source-wordcount: '471'
 ht-degree: 3%
 
 ---
@@ -29,7 +29,7 @@ Vous trouverez ci-dessous des détails à prendre en compte lors de la configura
 
 ## Schéma
 
-Vous devez créer un schéma basé sur un modèle qui modélise la table native de l’entrepôt de données que vous souhaitez mettre en miroir. Lorsque vous créez le schéma basé sur le modèle, assurez-vous que les exigences suivantes sont remplies :
+Vous devez créer un [schéma basé sur un modèle](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/model-based){target="_blank"} qui modélise la table native de l’entrepôt de données que vous souhaitez mettre en miroir. Lorsque vous créez le schéma basé sur le modèle, assurez-vous que les exigences suivantes sont remplies :
 
 * Lorsque vous êtes invité à indiquer le type de schéma basé sur un modèle, veillez à sélectionner l&#39;option manuelle .
 * Sélectionnez le schéma approprié pour le type de données. Notez qu’Experience Platform Data Mirror est principalement utilisé pour les données de série temporelle (par exemple, les données d’événement).
@@ -55,9 +55,9 @@ Pour configurer le connecteur source vers les solutions natives d’entrepôt de
 
 Pour l’authentification par rapport à la solution native d’entrepôt de données prise en charge, consultez la documentation Experience Platform appropriée :
 
-* [briques de données Azure](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/databases/databricks)
-* [Google BigQuery](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/databases/bigquery)
-* [Snowflake](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/databases/snowflake)
+* [briques de données Azure](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks)
+* [Google BigQuery](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/bigquery)
+* [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake)
 
 
 ### Sélectionner les données
@@ -93,4 +93,5 @@ Une fois la configuration du connecteur source terminée, un flux de données es
 >[!MORELIKETHIS]
 >
 >Guide de démarrage rapide de [Data Mirror : mise en miroir et utilisation de données basées sur des modèles](model-based.md)
->
+>>[Data Mirror (documentation Experience Platform)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview)
+>>[Schémas basés sur des modèles (documentation Experience Platform)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/model-based)
