@@ -3,14 +3,14 @@ title: Notes de mise à jour actuelles de Customer Journey Analytics
 description: Afficher les dernières notes de mise à jour de Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 3131a16f6f80b039e026ef2a291bbfd15a42ac19
+source-git-commit: 017bf3cb720ed153476d17db92e0eeca156e6b61
 workflow-type: tm+mt
-source-wordcount: '887'
-ht-degree: 92%
+source-wordcount: '886'
+ht-degree: 91%
 
 ---
 
-# Notes de mise à jour de la version actuelle d’Adobe Customer Journey Analytics (septembre 2025)
+# Notes de mise à jour actuelles de Customer Journey Analytics (septembre 2025)
 
 **Dernière mise à jour** : mercredi 23 septembre 2025
 
@@ -37,7 +37,7 @@ Ces notes de mise à jour portent sur la période allant de septembre jusqu’à
 **Content Analytics** :
 **Analyse guidée** :
 **Plateforme** :
-**Report Builder &#x200B;** : AN-387741, AN-386777, AN-388720, AN-389343
+**Report Builder ** : AN-387741, AN-386777, AN-388720, AN-389343
 **Reporting** : AN-391439, AN-391228, AN-393620, AN-393640, AN-391334, AN-393304
 **Segmentation** :
 **Rapports planifiés** : AN-391150, AN-390474

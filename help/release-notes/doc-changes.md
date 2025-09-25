@@ -4,9 +4,9 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: d8ff5191ea96b8871f6aaba1fc28211c22a13e0d
+source-git-commit: 4621b5059333c5ee4f7d41014d0e4eff17ef33bf
 workflow-type: tm+mt
-source-wordcount: '5422'
+source-wordcount: '5439'
 ht-degree: 99%
 
 ---
@@ -20,6 +20,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Fonctionnalité | Description |
 | --- | --- |
 | **Septembre 2025** | |
+| Dates antérieures à 1900 | Ajout d’une [note](/help/connections/create-connection.md#datasets) sur la manière dont les dates antérieures à 1900 sont gérées par Customer Journey Analytics. |
 | Créer des rapports en temps réel | Ajout de la documentation sur la [création de rapports en temps réel](/help/components/real-time/real-time.md) dans Customer Journey Analytics. |
 | Interface Utilisation | Ajout de la documentation relative à la mise à jour de l’[interface Utilisation](/help/connections/manage-connections.md#usage) dans Connexions. |
 | Assemblage de jeux de données Journey Optimizer | Documentation de la [liste des jeux de données Journey Optimizer générés automatiquement](/help/stitching/overview.md#journey-optimizer-datasets) qui peuvent être utilisés dans l’assemblage. |
