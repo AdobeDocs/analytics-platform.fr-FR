@@ -4,32 +4,24 @@ title: Panneau Expérimentation
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: 7e32ae7aa757a8ca47732416f0f883033611ea94
-workflow-type: ht
-source-wordcount: '2179'
-ht-degree: 100%
+source-git-commit: b013518d8f1782219dd2cf9e5b5a89b877e3b92d
+workflow-type: tm+mt
+source-wordcount: '2175'
+ht-degree: 98%
 
 ---
 
 # Panneau Expérimentation {#experimentation-panel}
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="workspace_experimentation_button"
 >title="Expérimentation"
 >abstract="Créez un panneau pour comparer des variantes d’expérience utilisateur, de marketing ou de messages. Et de déterminer quelle variante est la meilleure pour obtenir un résultat spécifique."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="workspace_experimentation_panel"
 >title="Expérimentation"
 >abstract="Comparez différentes expériences d’utilisation, variantes de marketing ou de messages pour déterminer le meilleur moyen d’obtenir un résultat spécifique. Spécifiez l’expérience, la variante de contrôle à comparer, la mesure de succès et la mesure de normalisation. Vous pouvez éventuellement définir des limites supérieure et inférieure pour le degré de confiance."
-
-<!-- markdownlint-enable MD034 -->
 
 
 >[!BEGINSHADEBOX]
@@ -102,9 +94,9 @@ Pour utiliser le panneau Expérimentation, procédez comme suit :
    | Paramètre | Définition |
    | --- | --- |
    | **[!UICONTROL Période]** | La période du panneau Expérimentation est automatiquement définie, en fonction du premier accès reçu dans Customer Journey Analytics pour l’expérience sélectionnée. Si nécessaire, vous pouvez limiter ou étendre la période à des délais plus spécifiques. |
-   | **[!UICONTROL Expérience]** | Un ensemble de variantes sur une expérience qui ont été proposées aux utilisateurs et utilisatrices finaux afin de déterminer laquelle il est préférable de conserver à perpétuité. Une expérience est composée de deux variantes ou plus, dont l’une est considérée comme la variante de contrôle. Ce paramètre est pré-renseigné avec des dimensions qui ont été étiquetées avec le libellé **[!UICONTROL Expérience]** dans les vues de données et l’équivalent des 3 derniers mois de données d’expérience. |
+   | **[!UICONTROL Expérience]** | Un ensemble de variantes sur une expérience qui ont été proposées aux utilisateurs et utilisatrices finaux afin de déterminer laquelle il est préférable de conserver à perpétuité. Une expérience est composée de deux variantes ou plus, dont l’une est considérée comme la variante de contrôle. Ce paramètre est pré-renseigné avec des dimensions qui ont été étiquetées avec le libellé **[!UICONTROL Expérience]** dans les vues de données et l’équivalent des 6 derniers mois de données d’expérience. |
    | **[!UICONTROL Variante de contrôle]** | Une, deux ou plusieurs modifications de l’expérience d’un utilisateur final qui sont comparées dans le but d’identifier la meilleure alternative. Une variante doit être sélectionnée comme contrôle, et une seule variante peut être considérée comme la variante de contrôle. Ce paramètre est pré-renseigné avec les dimensions qui ont été étiquetées avec le libellé **[!UICONTROL Variante]** dans les vues de données. Ce paramètre récupère les données de variante associées à cette expérience. |
-   | **[!UICONTROL Mesure de succès]** ➊ | La mesure ou les mesures avec lesquelles une personne compare des variantes. La variante ayant le résultat le plus souhaitable pour la mesure de conversion (la plus élevée ou la plus faible) est déclarée *variante la plus performante* d’une expérience. Vous pouvez ajouter jusqu’à 5 mesures. |
+   | **[!UICONTROL Mesures de succès]** ➊ | La mesure ou les mesures avec lesquelles une personne compare des variantes. La variante ayant le résultat le plus souhaitable pour la mesure de conversion (la plus élevée ou la plus faible) est déclarée *variante la plus performante* d’une expérience. Vous pouvez ajouter jusqu’à 5 mesures. |
    | **[!UICONTROL Mesure de normalisation]** ➋ | La base (**[!UICONTROL Compte global]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, **[!UICONTROL Compte]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, **[!UICONTROL Opportunité]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, **[!UICONTROL Groupe d’achat]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, **[!UICONTROL Personnes]**, **[!UICONTROL Sessions]** ou **[!UICONTROL Événements]**) sur laquelle un test s’exécute. Par exemple, un test peut comparer les taux de conversion de plusieurs variantes où le **[!UICONTROL Taux de conversion]** est calculé en tant que page vue. |
    | **[!UICONTROL Inclure les limites supérieure/inférieure de confiance]** | Activez cette option pour afficher les limites supérieure et inférieure des niveaux de confiance. |
 
@@ -132,7 +124,7 @@ Pour chaque mesure de succès sélectionnée, une visualisation [Tableau à stru
 
 2. **Variante la plus performante** : lorsqu’une expérience est déclarée concluante, la variante ayant le taux de conversion le plus élevé est étiquetée comme variante la plus performante. Notez que cette variante doit être la variante de référence ou de contrôle, ou l’une des variantes qui dépasse le seuil de 95 % de degré de confiance valide *à tout moment* (avec des corrections Benjamini-Hochberg appliquées).
 
-3. **Taux de conversion** : le taux de conversion qui s’affiche est un ratio de la valeur de la mesure de succès ➊ par rapport à la valeur de la mesure de normalisation ➋. Notez que cette valeur peut parfois être supérieure à 1, si la mesure n’est pas binaire (1 ou 0 pour chaque unité de l’expérience).
+3. **Taux de conversion** : le taux de conversion qui s’affiche est un ratio de la valeur de la mesure de succès ➊ à la valeur de la mesure de normalisation ➋. Notez que cette valeur peut parfois être supérieure à 1, si la mesure n’est pas binaire (1 ou 0 pour chaque unité de l’expérience).
 
 4. **Effet élévateur** : la synthèse du rapport d’expérience affiche l’effet élévateur sur la ligne de base, qui est une mesure de l’amélioration en pourcentage du taux de conversion d’une variante donnée par rapport à la ligne de base. Défini précisément, il s’agit de la différence de performance entre une variante donnée et la ligne de base, divisée par les performances de la ligne de base, exprimée en pourcentage.
 
@@ -188,8 +180,8 @@ Les mesures calculées qui ne sont pas compatibles avec le panneau Expérimentat
 
 ## Utiliser des mesures calculées dans le panneau Expérimentation
 
-Consultez cet article de blog pour plus d’informations sur [l’utilisation de mesures calculées dans le panneau Expérimentation](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119?profile.language=fr).
+Consultez cet article de blog pour plus d’informations sur [l’utilisation de mesures calculées dans le panneau Expérimentation](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119).
 
 >[!MORELIKETHIS]
->[Maîtrise de l’expérimentation Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/mastering-adobe-customer-journey-analytics-experimentation-your/ba-p/732338?profile.language=fr)
+>[Maîtrise de l’expérimentation Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/mastering-adobe-customer-journey-analytics-experimentation-your/ba-p/732338)
 >
