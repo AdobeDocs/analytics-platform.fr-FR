@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 badgePremium: label="Beta"
 exl-id: 17f72954-085c-46a8-bc28-6af0a4eb159a
-source-git-commit: a6cdade9790ef4bc222eb5979b7370f7403b5ad5
+source-git-commit: e5975a7bb60f4a2386997024c4615f95be648363
 workflow-type: tm+mt
-source-wordcount: '2271'
+source-wordcount: '2268'
 ht-degree: 14%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 14%
 
 {{release-limited-testing}}
 
-Ce guide de démarrage rapide explique comment utiliser la fonctionnalité [Experience Platform Data Mirror for Customer Journey Analytics](data-mirror.md) pour mettre en miroir des données basées sur des modèles à partir d’une solution native d’entrepôt de données dans Adobe Experience Platform. Utilisez ensuite ces données dans Customer Journey Analytics.
+Ce guide de démarrage rapide explique comment utiliser [Experience Platform Data Mirror for Customer Journey Analytics](data-mirror.md) pour mettre en miroir des données basées sur des modèles à partir d’une solution native d’entrepôt de données dans Adobe Experience Platform. Utilisez ensuite ces données dans Customer Journey Analytics.
 
 Pour accomplir ce cas d’utilisation, vous devez :
 
@@ -117,12 +117,12 @@ Pour Experience Platform Data Mirror for Customer Journey Analytics, les tables 
    SET OPTIONS (enable_change_history = TRUE);
    ```
 
-Les données du tableau dans votre solution native d’entrepôt de données sont prêtes pour la fonctionnalité Experience Platform Data Mirror for Customer Journey Analytics .
+Les données du tableau dans votre solution native d’entrepôt de données sont prêtes pour Experience Platform Data Mirror for Customer Journey Analytics.
 
 
 ## Configurer un schéma
 
-Pour refléter les données dans Experience Platform, vous devez d’abord définir le schéma des données. Toutes les données que vous souhaitez mettre en miroir dans Experience Platform et qui utilisent la fonctionnalité Experience Platform Data Mirror for Customer Journey Analytics doivent être conformes à un schéma basé sur un modèle.
+Pour refléter les données dans Experience Platform, vous devez d’abord définir le schéma des données. Toutes les données que vous souhaitez mettre en miroir dans Experience Platform et qui utilisent Experience Platform Data Mirror for Customer Journey Analytics doivent être conformes à un schéma basé sur un modèle.
 
 Définissez un schéma qui modélise ces données. Configurer le schéma :
 
@@ -141,7 +141,7 @@ Définissez un schéma qui modélise ces données. Configurer le schéma :
    1. Saisissez une **[!UICONTROL Description]**. Par exemple : `Sample event feed schema for a model-based schema`.
    1. Sélectionnez **[!UICONTROL Série temporelle]** comme **[!UICONTROL Comportement du schéma]**. Sélectionnez **[!UICONTROL Série temporelle]** pour les données basées sur une série temporelle et **[!UICONTROL Enregistrement]** pour les données basées sur un enregistrement. Le comportement définit la structure du schéma et les propriétés qui sont incluses.
 
-      La fonctionnalité Experience Platform Data Mirror for Customer Journey Analytics est principalement utilisée pour les données de série temporelle (par exemple, les données d’événement).
+      Experience Platform Data Mirror for Customer Journey Analytics est principalement utilisé pour les données de série temporelle (par exemple, les données d’événement).
 
       ![Configuration du schéma](assets/model-based-create-schema.png)
 
@@ -174,7 +174,7 @@ Définissez un schéma qui modélise ces données. Configurer le schéma :
 
      ![Descripteur de version](assets/platform-schema-id.png)
 
-   * Le champ **[!UICONTROL personid]** est configuré, avec **[!UICONTROL timestamp]** comme clé de Principal **&#x200B;**. Sélectionnez ![Ajouter](/help/assets/icons/Add.svg) **[!UICONTROL Créer une clé primaire composite]** pour créer une clé composite.
+   * Le champ **[!UICONTROL personid]** est configuré, avec **[!UICONTROL timestamp]** comme clé de Principal ****. Sélectionnez ![Ajouter](/help/assets/icons/Add.svg) **[!UICONTROL Créer une clé primaire composite]** pour créer une clé composite.
 
      ![ Clé composite ](assets/platform-schema-compositekey.png)
 
@@ -182,12 +182,12 @@ Définissez un schéma qui modélise ces données. Configurer le schéma :
 
      ![Descripteur de personne](assets/platform-schema-personid.png)
 
-   * Le champ **[!UICONTROL timestamp]** est configuré, ainsi que le champ **[!UICONTROL personid]** comme clé de Principal **&#x200B;**. Le champ **[!UICONTROL horodatage]** est également configuré en tant que **[!UICONTROL descripteur d’horodatage]**. Il vous suffit de définir un champ en tant que **[!UICONTROL descripteur d’horodatage]** pour les données basées sur un modèle de série temporelle.
+   * Le champ **[!UICONTROL timestamp]** est configuré, ainsi que le champ **[!UICONTROL personid]** comme clé de Principal ****. Le champ **[!UICONTROL horodatage]** est également configuré en tant que **[!UICONTROL descripteur d’horodatage]**. Il vous suffit de définir un champ en tant que **[!UICONTROL descripteur d’horodatage]** pour les données basées sur un modèle de série temporelle.
 
      ![Descripteur d’horodatage](assets/platform-schema-timestamp.png)
 
 
-   Si vous avez correctement défini la clé de Principal **&#x200B;**, le descripteur de version **&#x200B;**&#x200B;et le descripteur d’horodatage **&#x200B;**, l’avertissement au-dessus de la définition du schéma disparaît.
+   Si vous avez correctement défini la clé de Principal ****, le descripteur de version **** et le descripteur d’horodatage ****, l’avertissement au-dessus de la définition du schéma disparaît.
 
 1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer le schéma.
 
@@ -220,7 +220,7 @@ L’assistant d’ajout de données vous guide tout au long des étapes suivante
 
    1. Sélectionnez **[!UICONTROL Suivant]**.
 
-  Consultez la documentation d’Experience Platform pour plus d’informations sur la connexion et l’authentification lorsque vous utilisez le connecteur [Azure Databricks](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/databases/databricks) ou [Snowflake](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/databases/snowflake).
+  Consultez la documentation d’Experience Platform pour plus d’informations sur la connexion et l’authentification lorsque vous utilisez le connecteur [Azure Databricks](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks) ou [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake).
 
 
 ### Sélectionner les données
@@ -351,6 +351,8 @@ Créer une vue de données :
       1. Sélectionnez **[!UICONTROL Jeux de données d’événement]**.
       1. Sélectionnez **[!UICONTROL Champs ad hoc et basés sur un modèle]**.
       1. Faites glisser et déposez des champs des schémas basés sur des modèles sur **[!UICONTROL MESURES]** ou **[!UICONTROL DIMENSIONS]**.
+
+         ![Ajouter un champ basé sur un modèle en tant que composants](assets/cja-add-dataset-folder-dv.png)
 
    1. Définissez des champs dérivés pour les champs qui n’ont pas le type approprié, qui ne sont pas au format approprié ou que vous souhaitez modifier pour d’autres raisons. Par exemple, pour **[!UICONTROL Montant des revenus]**.
 

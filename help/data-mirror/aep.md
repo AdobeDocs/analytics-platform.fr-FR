@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 badgePremium: label="Beta"
 exl-id: 87593d7d-9456-48f8-8d39-5c3d95fe51ec
-source-git-commit: b585187f112c2081a8e51bd84d9f95e75ceebdc3
+source-git-commit: 8946f1bc57cc856adeac4ee0a96799040f7e698c
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '458'
 ht-degree: 3%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 {{release-limited-testing}}
 
-La fonctionnalité Experience Platform Data Mirror pour Customer Journey Analytics nécessite la configuration appropriée de plusieurs composants d’Experience Platform :
+Experience Platform Data Mirror for Customer Journey Analytics nécessite la configuration appropriée de plusieurs composants Experience Platform :
 
 * schéma
 * jeu de données
@@ -32,7 +32,7 @@ Vous trouverez ci-dessous des détails à prendre en compte lors de la configura
 Vous devez créer un schéma basé sur un modèle qui modélise la table native de l’entrepôt de données que vous souhaitez mettre en miroir. Lorsque vous créez le schéma basé sur le modèle, assurez-vous que les exigences suivantes sont remplies :
 
 * Lorsque vous êtes invité à indiquer le type de schéma basé sur un modèle, veillez à sélectionner l&#39;option manuelle .
-* Sélectionnez le schéma approprié pour le type de données. Notez que la fonctionnalité Data Mirror est principalement utilisée pour les données de série temporelle (par exemple, les données d’événement).
+* Sélectionnez le schéma approprié pour le type de données. Notez qu’Experience Platform Data Mirror est principalement utilisé pour les données de série temporelle (par exemple, les données d’événement).
 
 * Définir les champs de votre schéma et leurs attributs
 * Configurez les attributs requis pour les champs dans un schéma basé sur un modèle :
@@ -55,9 +55,9 @@ Pour configurer le connecteur source vers les solutions natives d’entrepôt de
 
 Pour l’authentification par rapport à la solution native d’entrepôt de données prise en charge, consultez la documentation Experience Platform appropriée :
 
-* [briques de données Azure](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/databases/databricks)
-* [Google BigQuery](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/databases/bigquery)
-* [Snowflake](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/databases/snowflake)
+* [briques de données Azure](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks)
+* [Google BigQuery](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/bigquery)
+* [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake)
 
 
 ### Sélectionner les données

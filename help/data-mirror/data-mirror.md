@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 badgePremium: label="Beta"
 exl-id: f40e1263-1f4a-416c-a045-15fbe68ce509
-source-git-commit: a6cdade9790ef4bc222eb5979b7370f7403b5ad5
+source-git-commit: 3cd771669370a58230fc4806e2b7fb2fc16444b9
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '394'
 ht-degree: 1%
 
 ---
@@ -21,39 +21,34 @@ ht-degree: 1%
 
 Data Mirror est une fonctionnalité d’Experience Platform qui permet l’ingestion de modifications au niveau des lignes de bases de données externes dans le lac de données à l’aide de schémas basés sur des modèles. Il préserve les relations de données, applique l’unicité et prend en charge le contrôle de version sans nécessiter de processus d’extraction, de transformation et de chargement (ETL) en amont.
 
-Utilisez Data Mirror pour synchroniser les insertions, les mises à jour et les suppressions (données modifiables) à partir de solutions natives d’entrepôt de données externes telles que [!DNL Snowflake], [!DNL Azure Databricks] ou [!DNL Google BigQuery] directement dans Experience Platform. Data Mirror vous aide à préserver la structure du modèle de base de données et l’intégrité des données lorsque vous importez des données dans Experience Platform.
-
+Utilisez Experience Platform Data Mirror pour synchroniser les insertions, les mises à jour et les suppressions (données modifiables) de solutions natives d’entrepôt de données externes ([!DNL Snowflake], [!DNL Azure Databricks] ou [!DNL Google BigQuery]) directement avec les données d’Experience Platform. Data Mirror vous aide à préserver la structure du modèle de base de données et l’intégrité des données lorsque vous importez des données dans Experience Platform.
 
 ## Fonctionnalités et avantages
 
 Data Mirror offre les fonctionnalités essentielles suivantes pour la synchronisation des bases de données :
 
-* **Application de la clé de Principal**. Garantit l’unicité dans les jeux de données et empêche les enregistrements en double lors de l’ingestion.
-* **Ingestion des modifications au niveau des lignes**. Prend en charge les modifications de données granulaires, notamment les upserts et les suppressions avec contrôle de précision.
-* **Relations de schéma**. Active les relations de clés étrangères et primaires entre les jeux de données via des descripteurs.
-* **Gestion des événements dans le désordre**. Les processus modifient les événements à l’aide des descripteurs de version et d’horodatage, même s’ils arrivent hors séquence.
-* **Intégration entrepôt direct**. Se connecte aux entrepôts de données cloud pris en charge pour la synchronisation des modifications en temps réel.
+* **Application de la clé de Principal.** Garantit l’unicité dans les jeux de données et empêche les enregistrements en double lors de l’ingestion.
+* **Ingestion des modifications au niveau des lignes.** Prend en charge les modifications de données granulaires, y compris les upserts et les suppressions avec contrôle de précision.
+* **Relations de schéma.** Active les relations de clés étrangères et primaires entre les jeux de données par le biais de descripteurs.
+* **Gestion des événements dans le désordre.Les processus** changent d’événement à l’aide de descripteurs de version et d’horodatage, même lorsqu’ils arrivent hors séquence.
+* **Intégration d’entrepôt direct.** Se connecte aux entrepôts de données cloud pris en charge pour la synchronisation des modifications en temps réel.
 
 Utilisez Data Mirror pour ingérer des modifications directement à partir de vos systèmes sources, appliquer l’intégrité des schémas et rendre les données disponibles pour les workflows d’analyse, d’orchestration des parcours et de conformité. Data Mirror élimine les processus ETL en amont complexes et accélère la mise en œuvre en permettant la mise en miroir directe des modèles de base de données existants. Cette élimination peut améliorer la gouvernance des données grâce à un contrôle précis des suppressions et des opérations d’hygiène des données.
 
-<!-- Add link when AEP docs are ready... -->
-
 Consultez également la documentation d’Experience Platform sur Data Mirror.
-
 
 ## Data Mirror pour Customer Journey Analytics
 
 >[!NOTE]
 >
->La fonctionnalité Experience Platform Data Mirror pour Customer Journey Analytics est disponible en version bêta **publique** jusqu’au 25 mars 2026. Pendant la période Beta, les mises à jour de capture de données de modification (CDC) sont limitées à 10 millions de droits de modification de lignes par jour pour Customer Journey Analytics. Adobe se réserve le droit de mettre fin à l’accès en version bêta de la fonctionnalité Experience Platform Data Mirror si votre entreprise dépasse cette limite. Pour plus d’informations sur cette fonctionnalité, notamment ses implications en matière de facturation, consultez cette section de la documentation d’Experience League.
+>La fonctionnalité Experience Platform Data Mirror pour Customer Journey Analytics est disponible en version bêta **publique** jusqu’au 25 mars 2026. Pendant la période Beta, les mises à jour de capture de données de modification (CDC) sont limitées à 10 millions de droits de modification de lignes par jour pour Customer Journey Analytics. Adobe se réserve le droit de mettre fin à l’accès en version bêta de la fonctionnalité Experience Platform Data Mirror si votre entreprise dépasse cette limite. Pour demander l’accès à cette fonctionnalité, contactez l’équipe de votre compte Adobe.
 >
 
-La fonctionnalité Experience Platform Data Mirror for Customer Journey Analytics est disponible pour certaines solutions natives d’entrepôt de données ([!DNL Azure Databricks], [!DNL Google BigQuery] et [!DNL Snowflake]). La version Customer Journey Analytics de la fonctionnalité Data Mirror nécessite une configuration et un paramétrage appropriés de plusieurs composants :
+Experience Platform Data Mirror for Customer Journey Analytics est disponible pour certaines solutions natives d’entrepôt de données ([!DNL Azure Databricks], [!DNL Google BigQuery] et [!DNL Snowflake]). La version Customer Journey Analytics d’Experience Platform Data Mirror nécessite la configuration appropriée des applications ou composants suivants :
 
-* [Solution native Data Warehouse](datawarehouse.md)
+* [Solutions natives Data Warehouse](datawarehouse.md)
 * [Experience Platform](aep.md)
 * [Customer Journey Analytics](cja.md)
-
 
 >[!MORELIKETHIS]
 >
