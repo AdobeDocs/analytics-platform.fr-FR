@@ -4,11 +4,9 @@ description: Découvrez comment configurer des solutions natives d’entrepôt d
 solution: Customer Journey Analytics
 feature: Basics
 role: Admin
-hide: true
-hidefromtoc: true
 badgePremium: label="Beta"
 exl-id: 92cffcc5-d7a7-47f5-869d-1fc665594bf4
-source-git-commit: b585187f112c2081a8e51bd84d9f95e75ceebdc3
+source-git-commit: edf7bdac87d9bed48244ad80521bbbf83c48f7b6
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 0%
@@ -56,8 +54,8 @@ Pour plus d’informations, consultez le guide [[!DNL Azure Databricks]  sur l�
 
 Lisez la documentation suivante pour savoir comment activer la capture de données de modification pour votre connexion source [!DNL Azure Databricks] :
 
-* [Créer une connexion  [!DNL Azure Databricks]  base](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/api-tutorials/create/databases/databricks).
-* [Créer une connexion source pour une base de données](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
+* [Créer une connexion  [!DNL Azure Databricks]  base](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/databricks).
+* [Créer une connexion source pour une base de données](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
 
 ## [!DNL Google BigQuery]
 
@@ -67,8 +65,8 @@ Pour plus d’informations, consultez le guide sur les instructions de langage d
 
 Lisez la documentation suivante pour savoir comment activer la capture de données de modification pour votre connexion source [!DNL Google BigQuery] :
 
-* [Créer une connexion  [!DNL Google BigQuery]  base](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/api-tutorials/create/databases/bigquery).
-* [Créer une connexion source pour une base de données](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
+* [Créer une connexion  [!DNL Google BigQuery]  base](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/bigquery).
+* [Créer une connexion source pour une base de données](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
 
 ## [!DNL Snowflake]
 
@@ -84,8 +82,8 @@ Pour plus d’informations, consultez le guide [[!DNL Snowflake]  sur l’utilis
 
 Lisez la documentation suivante pour savoir comment activer la capture de données de modification pour votre connexion source [!DNL Snowflake] :
 
-* [Créer une connexion  [!DNL Snowflake]  base](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/api-tutorials/create/databases/snowflake).
-* [Créer une connexion source pour une base de données](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
+* [Créer une connexion  [!DNL Snowflake]  base](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/snowflake).
+* [Créer une connexion source pour une base de données](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
 
 
 >[!MORELIKETHIS]

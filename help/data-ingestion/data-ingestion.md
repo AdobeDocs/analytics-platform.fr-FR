@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: ead96b72-40f1-4ce9-8d91-c8ceea6c4458
 role: Admin
-source-git-commit: 8071e8d5e1ab7e9cfc5037d710361a4d10285704
-workflow-type: ht
-source-wordcount: '957'
-ht-degree: 100%
+source-git-commit: ec56bc657961b2e4e8318ab14cd676288398462f
+workflow-type: tm+mt
+source-wordcount: '1089'
+ht-degree: 85%
 
 ---
 
@@ -20,23 +20,30 @@ Plusieurs options s’offrent à vous lors de l’ingestion de données dans Cus
 >
 >Dans tous les scénarios, les données que vous souhaitez _utiliser_ dans Customer Journey Analytics sont en réalité _ingérées_ dans Adobe Experience Platform.
 
-Consultez l’architecture de Customer Journey Analytics de haut niveau présentée précédemment dans la [Présentation](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-overview.html) :
 
-![Architecture de Customer Journey Analytics expliquée dans cette section.](./assets/cja-architecture.png)
+L’architecture de haut niveau de Customer Journey Analytics est présentée ici :
 
-Le jeu de données dans l’architecture ci-dessus peut provenir de diverses sources :
+![Architecture de Customer Journey Analytics](/help/getting-started/assets/cja-overview.svg)
 
-- Données par lot
+Cette architecture illustre la manière dont Customer Parcours Analytics vous permet d’effectuer les opérations suivantes :
 
-- Données de flux
+* Combinez plusieurs jeux de données ![Données](/help/assets/icons/Data.svg) dans une [connexion](/help/connections/overview.md).
+* Définissez et configurez des dimensions ![Dimensions](/help/assets/icons/Dimensions.svg) et des mesures ![Événement](/help/assets/icons/Event.svg) dans une [vue de données](/help/data-views/data-views.md) en fonction des champs disponibles à partir des jeux de données que vous avez définis dans votre connexion.
+* Créez des rapports ![ViewTable](/help/assets/icons/ViewTable.svg) et des visualisations (ligne ![Ligne](/help/assets/icons/GraphTrend.svg) et zone ![Zone](/help/assets/icons/GraphAreaStacked.svg)) dans les [projets](/help/analysis-workspace/home.md) en fonction des dimensions et des mesures de vos vues de données.
 
-- Données provenant d’un déploiement d’Adobe Analytics actuel
+Les jeux de données de l’architecture peuvent provenir de diverses sources :
 
-- Données provenant du suivi de votre site web/application mobile à l’aide du SDK Web/mobile Adobe Experience Platform
+* Données par lot
 
-- Données provenant du suivi d’une application de bureau, d’un jeu de console, d’un décodeur ou d’un appareil IoT à l’aide de l’API Adobe Experience Platform Edge Network Server, ou
+* Données de flux
 
-- Données provenant d’un fournisseur de données tiers pour lequel Adobe fournit un connecteur source
+* Données provenant d’un déploiement d’Adobe Analytics actuel
+
+* Données provenant du suivi de votre site web/application mobile à l’aide du SDK Web/mobile Adobe Experience Platform
+
+* Données provenant du suivi d’une application de bureau, d’un jeu de console, d’un décodeur ou d’un appareil IoT à l’aide de l’API Adobe Experience Platform Edge Network Server, ou
+
+* Données provenant d’un fournisseur de données tiers pour lequel Adobe fournit un connecteur source
 
 De plus, il est possible de disposer de plusieurs de ces jeux de données.
 
@@ -48,11 +55,11 @@ Vous pouvez désormais ingérer vos données d’événement dans Customer Jour
 
 Notez que cette fonctionnalité diffère en fonction du package SKU acheté par votre entreprise :
 
-- Ingestion de priorité de base : données datant de 24 heures dans un traitement SLT de 90 minutes (disponible pour **CJA Foundation** et **CJA Select**).
+* Ingestion de priorité de base : données datant de 24 heures dans un traitement SLT de 90 minutes (disponible pour **CJA Foundation** et **CJA Select**).
 
-- Ingestion de priorité intermédiaire : données datant de 72 heures dans un traitement SLT de 90 minutes (disponible pour **CJA Prime**).
+* Ingestion de priorité intermédiaire : données datant de 72 heures dans un traitement SLT de 90 minutes (disponible pour **CJA Prime**).
 
-- Ingestion de priorité avancée : données datant d’une semaine dans un traitement SLT de 90 minutes (disponible pour **CJA Ultimate**).
+* Ingestion de priorité avancée : données datant d’une semaine dans un traitement SLT de 90 minutes (disponible pour **CJA Ultimate**).
 
 ## Ingérer et utiliser des données à partir d’Adobe Analytics classique
 
@@ -99,7 +106,13 @@ Vous disposez de données provenant d’une source prise en charge par un connec
 
 Consultez [Ingérer et utiliser des données à l’aide des connecteurs source](./sources.md) pour plus d’informations.
 
+## Ingérer et utiliser des données ad hoc
+
+Vous disposez de données ad hoc qui ne nécessitent qu’un seul jeu de données dans Experience Platform et ne nécessitent pas la configuration d’un schéma de modèle de données d’expérience (XDM). Ce scénario est appelé schéma ad hoc. Les schémas ad hoc sont utilisés dans divers workflows d’ingestion de données pour Experience Platform, notamment dans l’ingestion de fichiers CSV et dans la création de certains types de connexions sources.
+
+Voir [ Ingérer et utiliser des données ad hoc](./adhoc.md)
+
 >[!MORELIKETHIS]
 >
->Blog : [en savoir plus sur le traitement et l’ingestion des données dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-closer-look-at-data-processing-amp-ingestion-in-adobe-customer/ba-p/665091?profile.language=fr)
+>Blog : [en savoir plus sur le traitement et l’ingestion des données dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-closer-look-at-data-processing-amp-ingestion-in-adobe-customer/ba-p/665091)
 
