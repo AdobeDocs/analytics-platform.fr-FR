@@ -1,14 +1,14 @@
 ---
-title: Guide de démarrage rapide de Customer Journey Analytics
+title: Guide de démarrage rapide de Customer Journey Analytics
 description: Découvrez les conditions préalables et le workflow requis pour implémenter Customer Journey Analytics.
 exl-id: cab218c0-009c-4669-9dfb-f8872a7f066b
 solution: Customer Journey Analytics
 feature: Basics
 role: User
 source-git-commit: 6aa6605d12263110ad41523bf838d7a8702f89a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '786'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
