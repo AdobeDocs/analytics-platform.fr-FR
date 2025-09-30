@@ -4,9 +4,9 @@ title: Utiliser des modèles
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: f41162d1c4c44f79c59585d1311cd2e431725103
-workflow-type: ht
-source-wordcount: '20276'
+source-git-commit: cae339ebc5d2609a7a93e63e874c4e7d611f2cad
+workflow-type: tm+mt
+source-wordcount: '20424'
 ht-degree: 100%
 
 ---
@@ -591,6 +591,16 @@ Les modèles suivants sont disponibles :
 
 
 <!--Both AA and CJA-->
+
+>[!CONTEXTUALHELP]
+>id="template--audienceOverview"
+>title="Permet d’afficher le pays d’origine des personnes consultant le site."
+>abstract="**Cela peut vous aider** à mieux comprendre les pays les plus populaires d’où proviennent les personnes accédant à votre site.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme utiliser les données pour vous concentrer sur les efforts marketing dans ces pays ou vous assurer que l’expérience de votre site est optimale dans les pays qui ont des langues principales différentes.<br/>Ce modèle utilise la dimension Pays."
+
+>[!CONTEXTUALHELP]
+>id="template--consentPolicyOverview"
+>title="Permet d’afficher le pays d’origine des personnes consultant le site."
+>abstract="**Cela peut vous aider** à mieux comprendre les pays les plus populaires d’où proviennent les personnes accédant à votre site.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme utiliser les données pour vous concentrer sur les efforts marketing dans ces pays ou vous assurer que l’expérience de votre site est optimale dans les pays qui ont des langues principales différentes.<br/>Ce modèle utilise la dimension Pays."
 
 >[!CONTEXTUALHELP]
 >id="template--countryGeoReport"
