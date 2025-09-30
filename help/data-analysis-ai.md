@@ -259,7 +259,7 @@ Vous trouverez ci-dessous les bonnes pratiques pour votre configuration de Custo
 >[!MORELIKETHIS]
 >
 >[Paramètres de composant](/help/data-views/component-settings/overview.md)
->>[Dictionnaire de données](/help/components/data-dictionary/data-dictionary-overview.md)
->>[Approuver une mesure calculée](/help/components/calc-metrics/cm-workflow/cm-approving.md)
->>[Partager des segments](/help/components/segments/seg-share.md)
+>&#x200B;>[Dictionnaire de données](/help/components/data-dictionary/data-dictionary-overview.md)
+>&#x200B;>[Approuver une mesure calculée](/help/components/calc-metrics/cm-workflow/cm-approving.md)
+>&#x200B;>[Partager des segments](/help/components/segments/seg-share.md)
 >
