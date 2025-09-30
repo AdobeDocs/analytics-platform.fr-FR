@@ -4,10 +4,10 @@ description: Découvrez comment afficher et gérer les journaux d’audit de Cus
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
 role: Admin
-source-git-commit: 9ed7b541ebb1a89b286040c4ea96025b08029499
-workflow-type: ht
-source-wordcount: '953'
-ht-degree: 100%
+source-git-commit: 2ef96ad194f8c7acec35bd7635c650af4370531a
+workflow-type: tm+mt
+source-wordcount: '967'
+ht-degree: 98%
 
 ---
 
@@ -35,6 +35,8 @@ ht-degree: 100%
 Pour accroître la transparence et la visibilité des activités exécutées dans le système, Adobe Customer Journey Analytics vous permet de contrôler l’activité des utilisateurs et utilisatrices pour différents services et fonctionnalités sous la forme de « journaux d’audit ». Ces logs constituent un journal d’audit qui peut vous aider à résoudre les problèmes et à vous conformer efficacement aux politiques de gestion des données d’entreprise et aux exigences réglementaires, telles que la Health Insurance Portability and Accountability Act (HIPAA).
 
 Pour faire simple, un journal d’audit indique **qui** a effectué **quelle** action et **quand**. Chaque action enregistrée dans un journal contient des métadonnées qui indiquent le type d’action, la date et l’heure, l’ID d’e-mail de l’utilisateur qui a exécuté l’action et des attributs supplémentaires liés au type d’action.
+
+Les journaux d’audit sont conservés pendant 90 jours. Ensuite, les journaux d’audit sont automatiquement supprimés.
 
 Cette rubrique traite des journaux d’audit dans Customer Journey Analytics, notamment de la manière de les afficher et de les gérer dans l’interface d’utilisation.
 
