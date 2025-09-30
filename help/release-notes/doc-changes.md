@@ -21,7 +21,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | --- | --- |
 | **Septembre 2025** | |
 | Dates antérieures à 1900 | Ajout d’une [note](/help/connections/create-connection.md#datasets) sur la manière dont les dates antérieures à 1900 sont gérées par Customer Journey Analytics. |
-| Créer des rapports en temps réel | Ajout de la documentation sur la [création de rapports en temps réel](/help/components/real-time/real-time.md) dans Customer Journey Analytics. |
+| Créer des rapports en temps réel | Ajout de la documentation sur la [création de rapports en temps réel](/help/components/real-time/real-time.md) dans Customer Journey Analytics. |
 | Interface Utilisation | Ajout de la documentation relative à la mise à jour de l’[interface Utilisation](/help/connections/manage-connections.md#usage) dans Connexions. |
 | Assemblage de jeux de données Journey Optimizer | Documentation de la [liste des jeux de données Journey Optimizer générés automatiquement](/help/stitching/overview.md#journey-optimizer-datasets) qui peuvent être utilisés dans l’assemblage. |
 | Étiquettes de contexte | Ajout d’informations générales supplémentaires sur l’utilisation et l’objectif des [étiquettes de contexte](/help/data-views/component-settings/overview.md#context-labels) dans les composants de vue de données. |
