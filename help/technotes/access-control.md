@@ -6,10 +6,10 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 8da8d22d35e0b4a77da010d0ba5fb230946ccce5
+source-git-commit: b76a877d6ae20a111e5d2476a5045b34a9208ccf
 workflow-type: tm+mt
-source-wordcount: '1560'
-ht-degree: 23%
+source-wordcount: '1530'
+ht-degree: 22%
 
 ---
 
@@ -41,7 +41,6 @@ Les administrateurs de produit sont autorisés à effectuer la plupart des tâch
 
 Les administrateurs de produit disposent par défaut des autorisations nécessaires pour effectuer les tâches suivantes :
 
-* Créer, mettre à jour et supprimer des vues de données
 * Mettre à jour et supprimer des projets, des segments, des mesures calculées, des audiences, des annotations ou des segments créés par d’autres utilisateurs
 * Partager des projets Workspace avec tous les utilisateurs.
 * Gérez les activités de rapports dans le [Gestionnaire des activités de rapports](/help/reporting-activity-manager/reporting-activity-overview.md)
@@ -51,31 +50,30 @@ Les administrateurs de produit disposent par défaut des autorisations nécessai
 
 En plus d’être ajouté en tant qu’administrateur de produit dans le profil de produit **Customer Journey Analytics** dans [Admin Console](https://adminconsole.adobe.com/enterprise/), vous devez disposer d’autorisations supplémentaires pour effectuer les tâches suivantes dans Customer Journey Analytics :
 
-* Créer, mettre à jour et supprimer des données [Connexions](/help/connections/overview.md)
+* Créer, mettre à jour et supprimer des [vues de données](/help/data-views/data-views.md).
+* Créer, mettre à jour et supprimer des [connexions](/help/connections/overview.md)
 
   Pour effectuer cette tâche, les utilisateurs doivent faire partie d&#39;un **profil de produit Experience Platform** qui fournit les autorisations suivantes :
 
   | Catégorie | Autorisation | Description |
   |---|---|---|
-  | [!UICONTROL Sandbox] | [!UICONTROL Au moins un] | Accès aux sandbox appropriés pour les connexions CJA. |
+  | [!UICONTROL Sandbox] | [!UICONTROL Au moins un] | Accès aux sandbox appropriés pour les connexions. |
   | [!UICONTROL Modélisation des données] | [!UICONTROL Affichage des schémas] | Accès en lecture seule aux schémas et aux ressources associées. |
   | [!UICONTROL Modélisation des données] | [!UICONTROL Gestion des schémas] | Accès pour lire, créer, modifier et supprimer des schémas et des ressources associées. |
   | [!UICONTROL Gestion des données] | [!UICONTROL Affichage des jeux de données] | Accès en lecture seule aux jeux de données et aux schémas. |
-  | [!UICONTROL Gestion des données] | [!UICONTROL Gestion des jeux de données] | Accès à la lecture, la création, la modification et la suppression des jeux de données. Accès en lecture seule aux schémas. |
-  | [!UICONTROL Ingestion des données] | [!UICONTROL Gestion des sources] | Accès à la lecture, la création, la modification et la désactivation des sources. |
   | [!UICONTROL Identity Management] | [!UICONTROL Affichages des espaces de noms d’identité] | Accès en lecture seule aux espaces de noms d’identité. |
 
-  Pour plus d’informations sur les autorisations Experience Platform, voir [Gestion des autorisations pour un profil de produit](https://experienceleague.adobe.com/fr/docs/experience-platform/access-control/ui/permissions).
+  Pour plus d’informations sur les autorisations Experience Platform, voir [Gestion des autorisations pour un profil de produit](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions).
 
 
-* Si Adobe Journey Optimizer a été intégré à CJA où il existe des connexions AJO, les autorisations Parcours doivent également être ajoutées pour accéder à Connexions :
+* Si Journey Optimizer est intégré à Customer Journey Analytics où existent des connexions Journey Optimizer, les autorisations Parcours doivent également être ajoutées pour accéder aux connexions :
 
   | Catégorie | Autorisation | Description |
   |---|---|---|
   | [!UICONTROL Parcours] | [!UICONTROL Afficher les événements de Parcours, les sources de données et les actions] | Accès en lecture seule aux événements de parcours, aux actions personnalisées de parcours et aux sources de données de parcours. |
   | [!UICONTROL Parcours] | [!UICONTROL Gérer les événements Parcours, les sources de données et les actions] | Lire, créer, modifier et supprimer des événements, des sources ou des actions. |
-  | [!UICONTROL Parcours] | [!UICONTROL Afficher les Parcours &#x200B;] | Accès en lecture seule aux parcours. |
-  | [!UICONTROL Parcours] | [!UICONTROL Gérer les Parcours &#x200B;] | Lecture, création, modification et suppression des parcours. |
+  | [!UICONTROL Parcours] | [!UICONTROL Afficher les Parcours ] | Accès en lecture seule aux parcours. |
+  | [!UICONTROL Parcours] | [!UICONTROL Gérer les Parcours ] | Lecture, création, modification et suppression des parcours. |
 
 * Exporter des jeux de données vers des [destinations](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/activate/export-datasets)
 
@@ -86,18 +84,18 @@ En plus d’être ajouté en tant qu’administrateur de produit dans le profil 
   | [!UICONTROL Destinations] | [!UICONTROL Gérer les destinations] | Accès à la lecture, la création et la suppression des connexions de destination et des comptes de destination. |
   | [!UICONTROL Destinations] | [!UICONTROL Activation des destinations] | Autoriser les utilisateurs à activer des segments vers des destinations existantes. Active l’étape de mappage dans le workflow d’activation. Cette autorisation nécessite également d’accorder l’autorisation Afficher les destinations à l’utilisateur ou l’utilisatrice qui souhaite activer des données vers les destinations. |
 
-  Pour plus d’informations sur les autorisations Experience Platform, voir [Gestion des autorisations pour un profil de produit](https://experienceleague.adobe.com/fr/docs/experience-platform/access-control/ui/permissions).
+  Pour plus d’informations sur les autorisations Experience Platform, voir [Gestion des autorisations pour un profil de produit](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions).
 
 * Utiliser l’extension [BI](../data-views/bi-extension.md)
 
   Pour que les utilisateurs puissent utiliser l’extension BI, un administrateur de produit
 
-   * doit s’assurer que les autorisations Experience Platform de l’utilisateur incluent un rôle disposant de la ressource Query Service avec les options Gérer les requêtes et Gérer l’intégration de Query Service . Pour plus d’informations sur les autorisations Experience Platform, voir [Gestion des autorisations pour un profil de produit](https://experienceleague.adobe.com/fr/docs/experience-platform/access-control/ui/permissions).
+   * doit s’assurer que les autorisations Experience Platform de l’utilisateur incluent un rôle disposant de la ressource Query Service avec les options Gérer les requêtes et Gérer l’intégration de Query Service . Pour plus d’informations sur les autorisations Experience Platform, voir [Gestion des autorisations pour un profil de produit](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions).
 
      | Catégorie | Autorisation | Description |
      |---|---|---| 
-     | [!UICONTROL Query Service] | [!UICONTROL Gestion des requêtes] | Accès à la lecture, la création, la modification et la suppression des requêtes SQL structurées pour les données Platform. |
-     | [!UICONTROL Query Service] | [!UICONTROL Gestion de lʼintégration de Query Service] | Accès à la création, la mise à jour et la suppression des informations dʼidentification sans date dʼexpiration pour lʼaccès à Query Service. |
+     | [!UICONTROL Service de requêtes] | [!UICONTROL Gestion des requêtes] | Accès à la lecture, la création, la modification et la suppression des requêtes SQL structurées pour les données Platform. |
+     | [!UICONTROL Service de requêtes] | [!UICONTROL Gestion de lʼintégration de Query Service] | Accès à la création, la mise à jour et la suppression des informations dʼidentification sans date dʼexpiration pour lʼaccès à Query Service. |
 
    * doit s’assurer que l’utilisateur dispose des autorisations Customer Journey Analytics appropriées :
       * l’autorisation d’accéder aux vues de données appropriées. Voir [!UICONTROL Vues de données] dans [Accès au niveau utilisateur](#user-level-access).
@@ -131,7 +129,7 @@ L’onglet **[!UICONTROL Autorisations]** fait partie de chaque profil de produi
 | [!UICONTROL Outils de reporting] | [!UICONTROL Affichage de lʼaudience] | Autoriser les utilisateurs à afficher les [audiences](/help/components/audiences/audiences-overview.md). |
 | [!UICONTROL Outils de reporting] | [!UICONTROL Création dʼaudiences] | Autoriser les utilisateurs à créer des [audiences](/help/components/audiences/audiences-overview.md) |
 | [!UICONTROL Outils de reporting] | [!UICONTROL Accès aux journaux d’audit] | Appliquez la vérification des autorisations sur l’[API](https://developer.adobe.com/cja-apis/docs/endpoints/auditlogs/) et l’interface utilisateur des journaux d’audit. |
-| [!UICONTROL Outils de reporting] | [!UICONTROL Partager les liens du projet avec tout le monde] | Autoriser les utilisateurs [à partager des projets avec tout le monde.](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/curate-share/share-projects) |
+| [!UICONTROL Outils de reporting] | [!UICONTROL Partager les liens du projet avec tout le monde] | Autoriser les utilisateurs [à partager des projets avec tout le monde.](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/curate-share/share-projects) |
 | [!UICONTROL Outils de reporting] | [!UICONTROL Prévisions] | Autoriser les utilisateurs à accéder à la fonctionnalité [Prévision](../analysis-workspace/c-forecast/forecasting.md) d’Analysis Workspace |
 | [!UICONTROL Outils de reporting] | [!UICONTROL Assistant IA : connaissance des produits] | Autoriser les utilisateurs à accéder à l’[assistant AI](../ai-assistant.md) pour acquérir des connaissances sur les produits. |
 | [!UICONTROL Outils de reporting] | [!UICONTROL Légendes intelligentes] | Autoriser les utilisateurs à accéder aux [Légendes intelligentes](/help/analysis-workspace/visualizations/intelligent-captions.md). |
