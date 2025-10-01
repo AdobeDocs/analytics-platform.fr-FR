@@ -8,7 +8,7 @@ role: User
 source-git-commit: 0b6afd5639234f6305c99267d3b1624279c97368
 workflow-type: tm+mt
 source-wordcount: '2482'
-ht-degree: 73%
+ht-degree: 78%
 
 ---
 
@@ -58,7 +58,7 @@ Procédez comme suit lors de l’export de tableaux complets vers le cloud :
 >[!CONTEXTUALHELP]
 >id="cja-export-details"
 >title="Détails"
->abstract="Spécifiez le nom de l’export. Vous pouvez également ajouter une description et des balises. Ces informations permettent d’identifier l’exportation dans le tableau des exportations et dans les notifications par e-mail."
+>abstract="Spécifiez le nom de l’export. Vous pouvez également ajouter une description et des balises. Ces informations permettent d’identifier l’export dans le tableau des exports et dans les notifications par e-mail."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -67,7 +67,7 @@ Procédez comme suit lors de l’export de tableaux complets vers le cloud :
 >[!CONTEXTUALHELP]
 >id="cja-export-data-structure"
 >title="Structure des données"
->abstract="Il s’agit du tableau à structure libre que vous exportez. Vous pouvez modifier la structure des données en faisant glisser des composants du panneau de gauche vers le tableau. Vous pouvez appliquer un filtre en faisant glisser un composant dans la zone de filtre. Le projet se met à jour dynamiquement lorsque vous ajoutez des composants à la zone de travail."
+>abstract="Ceci est le tableau à structure libre que vous exportez. Vous pouvez modifier la structure des données en faisant glisser des composants du panneau de gauche vers le tableau. Vous pouvez appliquer un filtre en faisant glisser un composant dans la zone de filtre. Le projet se met à jour dynamiquement lorsque vous ajoutez des composants à la zone de travail."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -85,7 +85,7 @@ Procédez comme suit lors de l’export de tableaux complets vers le cloud :
 >[!CONTEXTUALHELP]
 >id="cja-export-schedule"
 >title="Planifier"
->abstract="Sélectionnez la fréquence à laquelle l’exportation doit avoir lieu. Sélectionnez Envoyer maintenant (une seule fois) pour lancer l’exportation immédiatement. Les exportations planifiées sont lancées à la date et à l’heure que vous spécifiez. "
+>abstract="Sélectionnez la fréquence à laquelle l’export doit avoir lieu. Sélectionnez Envoyer maintenant (une seule fois) pour lancer l’export immédiatement. Les exports planifiés sont lancés à la date et à l’heure que vous spécifiez. "
 
 <!-- markdownlint-enable MD034 -->
 
@@ -95,7 +95,7 @@ Procédez comme suit lors de l’export de tableaux complets vers le cloud :
 >[!CONTEXTUALHELP]
 >id="cja-export-destination"
 >title="Destination"
->abstract="Sélectionnez le compte cloud et l’emplacement où vous souhaitez que les données soient envoyées. Vous pouvez choisir un compte et un emplacement existants ou sélectionner « Ajouter nouveau » pour les créer. Spécifiez les utilisateurs et les groupes à avertir en cas d’échec ou d’expiration des exportations."
+>abstract="Sélectionnez le compte cloud et l’emplacement où vous souhaitez que les données soient envoyées. Vous pouvez choisir un compte et un emplacement existants ou sélectionner « Ajouter » pour les créer. Spécifiez les utilisateurs, les utilisatrices et les groupes à avertir en cas d’échec ou d’expiration des exports."
 
 <!-- markdownlint-enable MD034 -->
 
