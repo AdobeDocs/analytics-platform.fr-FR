@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
 role: Admin
-source-git-commit: c4aea74807be15af56413522d9e6fbf5f18a37a0
+source-git-commit: c60c68e6065e877d0fa4a92dbfe8dd54a2dfb4fe
 workflow-type: tm+mt
-source-wordcount: '2041'
+source-wordcount: '2046'
 ht-degree: 26%
 
 ---
@@ -23,8 +23,8 @@ Voici quelques questions fréquentes sur le groupement :
 Vous pouvez utiliser une visualisation de flux avec la dimension Identifiant du jeu de données.
 
 1. Connectez-vous à [Customer Journey Analytics](https://analytics.adobe.com) et créez un projet Workspace vierge.
-2. Sélectionnez l’onglet **[!UICONTROL ** Visualisations **]** à gauche, puis faites glisser une visualisation **[!UICONTROL **&#x200B; Flux &#x200B;**]** vers la zone de travail à droite.
-3. Sélectionnez l’onglet **[!UICONTROL ** Composants **]** à gauche, puis faites glisser la dimension **[!UICONTROL ** Identifiant du jeu de données **]** vers l’emplacement central intitulé **[!UICONTROL **&#x200B; Dimension ou Élément &#x200B;**]**.
+2. Sélectionnez l’onglet **[!UICONTROL ** Visualisations **]** à gauche, puis faites glisser une visualisation **[!UICONTROL ** Flux **]** vers la zone de travail à droite.
+3. Sélectionnez l’onglet **[!UICONTROL ** Composants **]** à gauche, puis faites glisser la dimension **[!UICONTROL ** Identifiant du jeu de données **]** vers l’emplacement central intitulé **[!UICONTROL ** Dimension ou Élément **]**.
 4. Ce rapport de flux est interactif. Pour développer les flux sur les pages suivantes ou précédentes, sélectionnez l’une des valeurs. Utilisez le menu contextuel pour développer ou réduire des colonnes. Il est également possible d’utiliser différentes dimensions dans le même rapport de flux.
 
 Si vous souhaitez renommer des éléments de dimension Identifiant du jeu de données, vous pouvez utiliser un jeu de données de recherche.
@@ -217,7 +217,7 @@ D’autres mesures peuvent être similaires dans Customer Journey Analytics et A
 
 +++ Customer Journey Analytics peut-il utiliser les champs de carte des identités ?
 
-Non, Customer Journey Analytics ne peut actuellement pas utiliser les champs de carte des identités pour le groupement.
+Oui, Customer Journey Analytics peut utiliser les champs de carte des identités pour le groupement [basé sur les champs](/help/stitching/fbs.md#identitymap) et [basé sur les graphiques](/help/stitching/gbs.md#identitymap).
 
 +++
 
@@ -229,7 +229,7 @@ Les données n’ont pas besoin d’être réingérées dans Experience Platform
 
 1. Configurez le nouveau jeu de données groupé basé sur des graphiques.
 1. Configurez le nouveau jeu de données dans le cadre d’une nouvelle connexion dans Customer Journey Analytics.
-1. Changer votre vue de données existante pour utiliser la nouvelle connexion (et, à ce titre, le nouveau jeu de données groupé basé sur des graphiques)
+1. Changer votre vue de données existante pour utiliser la nouvelle connexion (et, à ce titre, le nouveau jeu de données groupé basé sur des graphiques).
 1. Supprimez l’ancienne connexion qui utilisait le jeu de données groupé basé sur les champs.
 
 +++
@@ -273,6 +273,6 @@ curl -X POST \
 
 Toute utilisation de la balise `unifiedProfile` dans la requête, tant que vous ne disposez pas d’une licence pour le profil de données client en temps réel, renvoie une erreur.
 
-Voir [Créer un jeu de données activé pour Profil et Identité](https://experienceleague.adobe.com/fr/docs/experience-platform/catalog/datasets/enable-for-profile#create-a-dataset-enabled-for-profile-and-identity) pour plus d’informations.
+Voir [Créer un jeu de données activé pour Profil et Identité](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/enable-for-profile#create-a-dataset-enabled-for-profile-and-identity) pour plus d’informations.
 
 +++ 
