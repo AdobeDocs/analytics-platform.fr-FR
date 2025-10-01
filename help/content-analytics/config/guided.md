@@ -140,7 +140,7 @@ Votre configuration nécessite la sélection d’une [Vue de données](/help/dat
    Vous pouvez effectuer les actions suivantes :
 
    * Pour rechercher une vue de données spécifique, utilisez le champ ![Recherche](/help/assets/icons/Search.svg).
-   * Pour filtrer la liste des vues de données disponibles, sélectionnez ![&#x200B; Afficher le filtre &#x200B;](/help/assets/icons/Filter.svg). Vous pouvez filtrer la liste par [!UICONTROL Connexion], [!UICONTROL Propriétaire] et [!UICONTROL Sandbox].<br/>Utilisez ![Masquer](/help/assets/icons/Filter.svg) **[!UICONTROL Masquer les segments]** pour masquer le volet de segments.
+   * Pour filtrer la liste des vues de données disponibles, sélectionnez ![ Afficher le filtre ](/help/assets/icons/Filter.svg). Vous pouvez filtrer la liste par [!UICONTROL Connexion], [!UICONTROL Propriétaire] et [!UICONTROL Sandbox].<br/>Utilisez ![Masquer](/help/assets/icons/Filter.svg) **[!UICONTROL Masquer les segments]** pour masquer le volet de segments.
    * Pour définir les colonnes à afficher dans le tableau, sélectionnez ![Paramètres des colonnes](/help/assets/icons/ColumnSetting.svg). Sélectionnez les colonnes à afficher dans la boîte de dialogue **[!UICONTROL Personnaliser le tableau]** et sélectionnez **[!UICONTROL Appliquer]** pour appliquer les modifications.
 
 1. Sélectionnez ![SelectBox](/help/assets/icons/SelectBox.svg) la vue de données que vous souhaitez utiliser.
@@ -231,7 +231,7 @@ Pour modifier des expériences existantes ou nouvelles dans une configuration im
    * Le processus générant des attributs d’expérience à partir des données d’événement Content Analytics
    * Modèle de rapport dans Customer Journey Analytics.
 
-* Sélectionnez ![Modifier](/help/assets/icons/Edit.svg) **[!UICONTROL Modifier]** pour modifier plus en détail la configuration de la collecte de données pour les expériences dans Content Analytics. Vous pouvez modifier les paramètres de l’[extension Adobe Content Analytics](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) dans la propriété Balise, associée à la configuration sélectionnée.
+* Sélectionnez ![Modifier](/help/assets/icons/Edit.svg) **[!UICONTROL Modifier]** pour modifier plus en détail la configuration de la collecte de données pour les expériences dans Content Analytics. Vous pouvez modifier les paramètres de l’[extension Adobe Content Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) dans la propriété Balise, associée à la configuration sélectionnée.
 
 
 ### Collecte de données {#onboarding-data-collection}
@@ -324,13 +324,13 @@ Dans une nouvelle configuration, vous devez définir si vous souhaitez utiliser 
 
 #### Configuration existante {#existing-configuration}
 
-Vous ne pouvez pas modifier la propriété Balises d’une configuration existante. Pour mettre à jour une propriété Tags associée à une configuration existante, utilisez la configuration de l’extension Content Analytics Tag [&#128279;](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/content-analytics/overview).
+Vous ne pouvez pas modifier la propriété Balises d’une configuration existante. Pour mettre à jour une propriété Tags associée à une configuration existante, utilisez la configuration de l’extension Content Analytics Tag [](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/content-analytics/overview).
 
 Vous pouvez toutefois modifier les pages et les ressources à inclure ou à exclure.
 
-* Pour modifier les pages à inclure ou à exclure lors de la collecte de données pour Content Analytics, sélectionnez ![Modifier](/help/assets/icons/Edit.svg) **[!UICONTROL Modifier]** sous **[!UICONTROL Expérience]**. Vous accédez à l’[extension Adobe Content Analytics](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) associée à la propriété Balises pour la configuration Content Analytics actuelle. Vous pouvez modifier l’expression régulière pour inclure ou exclure des pages. Veillez à [publier](#publish) vos modifications.
+* Pour modifier les pages à inclure ou à exclure lors de la collecte de données pour Content Analytics, sélectionnez ![Modifier](/help/assets/icons/Edit.svg) **[!UICONTROL Modifier]** sous **[!UICONTROL Expérience]**. Vous accédez à l’[extension Adobe Content Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) associée à la propriété Balises pour la configuration Content Analytics actuelle. Vous pouvez modifier l’expression régulière pour inclure ou exclure des pages. Veillez à [publier](#publish) vos modifications.
 
-* Pour modifier les ressources à inclure ou à exclure lors de la collecte de données pour Content Analytics, sélectionnez ![Modifier](/help/assets/icons/Edit.svg) **[!UICONTROL Modifier]** sous **[!UICONTROL Ressource]**. Ceci vous redirige vers l’[extension Adobe Content Analytics](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) associée à la propriété Balises pour la configuration Content Analytics actuelle. Vous pouvez modifier l’expression régulière pour inclure ou exclure des ressources. Veillez à [publier](#publish) vos modifications.
+* Pour modifier les ressources à inclure ou à exclure lors de la collecte de données pour Content Analytics, sélectionnez ![Modifier](/help/assets/icons/Edit.svg) **[!UICONTROL Modifier]** sous **[!UICONTROL Ressource]**. Ceci vous redirige vers l’[extension Adobe Content Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) associée à la propriété Balises pour la configuration Content Analytics actuelle. Vous pouvez modifier l’expression régulière pour inclure ou exclure des ressources. Veillez à [publier](#publish) vos modifications.
 
 ### Résumé {#summary}
 
