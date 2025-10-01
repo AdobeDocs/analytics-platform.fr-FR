@@ -53,7 +53,7 @@ Utilisez l’[extension Adobe Content Analytics](https://experienceleague.adob
 
   Vous pouvez activer ou désactiver des expériences et modifier les combinaisons d’expressions régulières et de paramètres de requête afin de déterminer comment s’effectue le rendu du contenu sur votre site web.
 
-* [Segmentation des événements](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting){target="_blank"}
+* [Segmentation des événements](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting){target="_blank"}
 
   Vous pouvez modifier les expressions régulières pour modifier la manière dont vous segmentez les pages et les ressources.
 
@@ -97,7 +97,7 @@ Content Analytics gère les identités de la manière suivante :
 * Le groupement basé sur les champs n’est pas pris en charge, car le schéma est détenu par le système. Vous ne pouvez donc pas ajouter un autre champ au schéma pour prendre en charge le groupement basé sur les champs
 
 
-Pour vous assurer que les données d’identité Content Analytics et les données d’identité des données Adobe Experience Platform Web SDK sont correctement regroupées au niveau du champ, vous devez apporter des modifications au SDK Web [activé avant l’envoi de l’événement](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/onbeforeeventsend){target="_blank"} le rappel .
+Pour vous assurer que les données d’identité Content Analytics et les données d’identité des données Adobe Experience Platform Web SDK sont correctement regroupées au niveau du champ, vous devez apporter des modifications au SDK Web [activé avant l’envoi de l’événement](https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/commands/configure/onbeforeeventsend){target="_blank"} le rappel .
 
 1. Accédez à la propriété **[!UICONTROL Tags]** qui contient l’extension Adobe Experience Platform Web SDK et l’extension Adobe Content Analytics.
 1. Sélectionnez ![Plug](/help/assets/icons/Plug.svg) **[!UICONTROL Extensions]**.
