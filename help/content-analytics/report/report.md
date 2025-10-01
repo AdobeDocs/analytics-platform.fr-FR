@@ -65,7 +65,7 @@ Pour utiliser le modèle :
 
 1. Sélectionnez **[!UICONTROL Workspace]** dans le menu principal.
 1. Vérifiez que vous avez sélectionné une vue de données déjà configurée pour l’analyse du contenu.
-1. Recherchez ou utilisez des segments (**[!UICONTROL Web]** pour **[!UICONTROL Canal]** et **[!UICONTROL Engagement]** pour **[!UICONTROL Cas d’utilisation]**s) pour rechercher et sélectionner le modèle **[!UICONTROL Content Analytics]**.
+1. Recherchez ou utilisez des segments (**[!UICONTROL Web]** pour **[!UICONTROL Canal]** et **[!UICONTROL Engagement]** pour **[!UICONTROL Cas d’utilisation]**&#x200B;s) pour rechercher et sélectionner le modèle **[!UICONTROL Content Analytics]**.
 1. Sélectionnez **[!UICONTROL Utiliser le modèle]**.
 1. Dans la boîte de dialogue **[!UICONTROL Configurer votre modèle]**, sélectionnez une mesure dans la boîte de dialogue **[!UICONTROL Sélectionner une mesure de conversion]**. Par exemple, **[!UICONTROL CTR des ressource]**.
 1. Sélectionnez **[!UICONTROL Continuer]**.
@@ -155,5 +155,5 @@ Vous pouvez ventiler n’importe quelle ressource par dimensions pour mieux comp
 >[!MORELIKETHIS]
 >
 >[Composants de l’analyse du contenu](components.md)
->>[Utiliser des modèles](/help/analysis-workspace/templates/use-templates.md#web-engagement)
+>&#x200B;>[Utiliser des modèles](/help/analysis-workspace/templates/use-templates.md#web-engagement)
 >
