@@ -16,7 +16,7 @@ ht-degree: 85%
 
 Cet article explique, à un niveau général, comment configurer Content Analytics.
 
-Avant de configurer Content Analytics, vous devez vous assurer que les [ conditions préalables ](#prerequisites) sont remplies, que vous disposez des [contrôle d’accès](#access-control) requis et que vous connaissez les [ limitations](#limitations).
+Avant de configurer Content Analytics, vous devez vous assurer que les [&#x200B; conditions préalables &#x200B;](#prerequisites) sont remplies, que vous disposez des [contrôle d’accès](#access-control) requis et que vous connaissez les [&#x200B; limitations](#limitations).
 
 
 Étapes de haut niveau

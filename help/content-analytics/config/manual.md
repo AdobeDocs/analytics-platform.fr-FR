@@ -65,7 +65,7 @@ Après avoir apporté des modifications dans l’extension Adobe Content Analy
 >[!MORELIKETHIS]
 >
 >[Configuration guidée](guided.md)
->>[Vue d’ensemble de la publication des balises de collecte de données](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/publish/overview)
+>&#x200B;>[Vue d’ensemble de la publication des balises de collecte de données](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/publish/overview)
 >
 
 
@@ -105,7 +105,7 @@ Pour vous assurer que les données d’identité Content Analytics et les donné
 1. Sélectionnez **[!UICONTROL Configurer]**.
 1. Dans la section **[!UICONTROL Instances SDK]**, faites défiler l’écran jusqu’à **[!UICONTROL Collecte de données]** - **[!UICONTROL Activé avant le rappel d’envoi d’événement]**.
 
-   ![ Activé avant le rappel d’envoi d’événement ](/help/content-analytics/assets/onbeforeeventsendcallback.png)
+   ![&#x200B; Activé avant le rappel d’envoi d’événement &#x200B;](/help/content-analytics/assets/onbeforeeventsendcallback.png)
 
 1. Sélectionnez **[!UICONTROL &lt;/> Fournir le code de rappel d’envoi d’événement avant l’événement]**.
 1. Ajoutez le code suivant :
@@ -119,7 +119,7 @@ Pour vous assurer que les données d’identité Content Analytics et les donné
    }
    ```
 
-   ![ Activé avant le rappel d’envoi d’événement ](/help/content-analytics/assets/onbeforeeventsendcallbackcode.png)
+   ![&#x200B; Activé avant le rappel d’envoi d’événement &#x200B;](/help/content-analytics/assets/onbeforeeventsendcallbackcode.png)
 
 1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer le code.
 1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer l’extension.
