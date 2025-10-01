@@ -5,14 +5,32 @@ title: Configurer des emplacements d’export cloud
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
 role: User, Admin
-source-git-commit: 882e280da3f65e297abccd475d381832fd236843
+source-git-commit: 5adcab1df932f5c8af1f140fb6707f2d56726ae3
 workflow-type: tm+mt
-source-wordcount: '1915'
-ht-degree: 20%
+source-wordcount: '2030'
+ht-degree: 19%
 
 ---
 
-# Configurer des emplacements d’export cloud
+# Configurer des emplacements d’export cloud {#configure-cloud-export-locations}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-export-prefix"
+>title="Préfixe"
+>abstract="Le dossier racine dans le conteneur dans lequel vous souhaitez placer les données. Spécifiez un nom de dossier statique, puis ajoutez une barre oblique à la suite du nom pour créer le dossier. Par exemple, `folder_name/`"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-export-file-name"
+>title="Nom et chemin du fichier"
+>abstract="Spécifiez un nom de fichier personnalisé dynamique à utiliser pour les exportations automatisées envoyées à cet emplacement. Vous pouvez également faire précéder le nom du fichier d’un chemin d’accès au fichier personnalisé dynamique. &lt;br\>Utilisez des variables dans le nom et le chemin du fichier pour les rendre dynamiques. &lt;br\>Par exemple, si vous spécifiez `${yyyy}/${mm}/${dd}/my-report-${instance_id}-${idx}`, une exportation automatiquement envoyée vers cette destination le 15 janvier 2026 aurait le chemin d’accès au fichier et le nom suivants : `[prefix_folder_name]/2026/01/15/my-report-[UUID]-1.csv` &lt;br\>Cliquez sur le lien ci-dessous pour obtenir une liste des variables disponibles."
+
+<!-- markdownlint-enable MD034 -->
 
 Avant de pouvoir exporter des rapports Customer Journey Analytics vers une destination cloud (depuis Analysis Workspace, comme décrit dans [Exporter des rapports Customer Journey Analytics vers le cloud](/help/analysis-workspace/export/export-cloud.md) ou depuis Report Builder, comme décrit dans [Exporter des rapports depuis Report Builder](/help/report-builder/report-builder-export.md)), comme décrit dans [Exporter des rapports Customer Journey Analytics vers le cloud](/help/analysis-workspace/export/export-cloud.md), vous devez ajouter et configurer l’emplacement où vous souhaitez que les données soient envoyées.
 
@@ -88,11 +106,11 @@ Pour plus d’informations sur la gestion des emplacements existants, notamment 
 
    1. Ouvrez l’explorateur de stockage Azure [Microsoft](https://azure.microsoft.com/en-us/products/storage/storage-explorer/).
 
-   1. Accédez à [!UICONTROL **Comptes de stockage**] > [!UICONTROL **(Conteneurs attachés)**] > [!UICONTROL **Conteneurs Blob**] > **[!UICONTROL cjaexport-_number_]**>*** your_container_name &#x200B;***.
+   1. Accédez à [!UICONTROL **Comptes de stockage**] > [!UICONTROL **(Conteneurs attachés)**] > [!UICONTROL **Conteneurs Blob**] > **[!UICONTROL cjaexport-_number_]**>*** your_container_name ***.
 
       >[!NOTE]
       >
-      >Le nom de dossier **[!UICONTROL cjaexport-_number_]**&#x200B;est le nom par défaut fourni par Azure Storage Explorer. Si une seule connexion est associée à votre URI SAS (ce qui est normal), le nom de ce dossier est **[!UICONTROL cjaexport-1]**.
+      >Le nom de dossier **[!UICONTROL cjaexport-_number_]**est le nom par défaut fourni par Azure Storage Explorer. Si une seule connexion est associée à votre URI SAS (ce qui est normal), le nom de ce dossier est **[!UICONTROL cjaexport-1]**.
 
 
       ![Accès aux fichiers dans l’explorateur de stockage Azure](assets/azure-storage-explorer-access.png)
