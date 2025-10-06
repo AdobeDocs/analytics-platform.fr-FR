@@ -6,9 +6,9 @@ feature: Basics
 exl-id: ead96b72-40f1-4ce9-8d91-c8ceea6c4458
 role: Admin
 source-git-commit: ec56bc657961b2e4e8318ab14cd676288398462f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1089'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -23,15 +23,15 @@ Plusieurs options s’offrent à vous lors de l’ingestion de données dans Cus
 
 L’architecture de haut niveau de Customer Journey Analytics est présentée ici :
 
-![Architecture de Customer Journey Analytics](/help/getting-started/assets/cja-overview.svg)
+![Architecture Customer Journey Analytics](/help/getting-started/assets/cja-overview.svg)
 
-Cette architecture illustre la manière dont Customer Parcours Analytics vous permet d’effectuer les opérations suivantes :
+Cette architecture illustre la manière dont Customer Journey Analytics vous permet d’effectuer les opérations suivantes :
 
 * Combinez plusieurs jeux de données ![Données](/help/assets/icons/Data.svg) dans une [connexion](/help/connections/overview.md).
-* Définissez et configurez des dimensions ![Dimensions](/help/assets/icons/Dimensions.svg) et des mesures ![Événement](/help/assets/icons/Event.svg) dans une [vue de données](/help/data-views/data-views.md) en fonction des champs disponibles à partir des jeux de données que vous avez définis dans votre connexion.
-* Créez des rapports ![ViewTable](/help/assets/icons/ViewTable.svg) et des visualisations (ligne ![Ligne](/help/assets/icons/GraphTrend.svg) et zone ![Zone](/help/assets/icons/GraphAreaStacked.svg)) dans les [projets](/help/analysis-workspace/home.md) en fonction des dimensions et des mesures de vos vues de données.
+* Définissez et configurez des dimensions ![Dimensions](/help/assets/icons/Dimensions.svg) et des métriques ![Événement](/help/assets/icons/Event.svg) dans une [vue de données](/help/data-views/data-views.md) en fonction des champs disponibles dans les jeux de données que vous avez définis dans votre connexion.
+* Créez des rapports ![ViewTable](/help/assets/icons/ViewTable.svg) et des visualisations (comme une ligne ![Ligne](/help/assets/icons/GraphTrend.svg) et une zone ![Zone](/help/assets/icons/GraphAreaStacked.svg)) dans les [projets](/help/analysis-workspace/home.md) en fonction des dimensions et des métriques de vos vues de données.
 
-Les jeux de données de l’architecture peuvent provenir de diverses sources :
+Les jeux de données dans l’architecture peut provenir de diverses sources :
 
 * Données par lot
 
@@ -108,11 +108,11 @@ Consultez [Ingérer et utiliser des données à l’aide des connecteurs source]
 
 ## Ingérer et utiliser des données ad hoc
 
-Vous disposez de données ad hoc qui ne nécessitent qu’un seul jeu de données dans Experience Platform et ne nécessitent pas la configuration d’un schéma de modèle de données d’expérience (XDM). Ce scénario est appelé schéma ad hoc. Les schémas ad hoc sont utilisés dans divers workflows d’ingestion de données pour Experience Platform, notamment dans l’ingestion de fichiers CSV et dans la création de certains types de connexions sources.
+Vous disposez de données ad hoc qui ne nécessitent qu’un seul jeu de données dans Experience Platform et ne requièrent pas la configuration d’un schéma de modèle de données d’expérience (XDM). Ce scénario est appelé un schéma ad hoc. Les schémas ad hoc sont utilisés dans plusieurs workflows d’ingestion de données différents pour Experience Platform, notamment dans l’ingestion de fichiers CSV et dans la création de certains types de connexions sources.
 
 Voir [ Ingérer et utiliser des données ad hoc](./adhoc.md)
 
 >[!MORELIKETHIS]
 >
->Blog : [en savoir plus sur le traitement et l’ingestion des données dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-closer-look-at-data-processing-amp-ingestion-in-adobe-customer/ba-p/665091?profile.language=fr)
+>Blog : [en savoir plus sur le traitement et l’ingestion des données dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-closer-look-at-data-processing-amp-ingestion-in-adobe-customer/ba-p/665091)
 

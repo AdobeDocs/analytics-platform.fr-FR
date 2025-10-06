@@ -6,9 +6,9 @@ feature: Content Analytics
 role: Admin
 exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
 source-git-commit: a3d974733eef42050b0ba8dcce4ebcccf649faa7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '640'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ Utilisez l’[extension Adobe Content Analytics](https://experienceleague.adob
 
   Vous pouvez activer ou désactiver des expériences et modifier les combinaisons d’expressions régulières et de paramètres de requête afin de déterminer comment s’effectue le rendu du contenu sur votre site web.
 
-* [Segmentation des événements](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting){target="_blank"}
+* [Segmentation d’événement](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting){target="_blank"}
 
   Vous pouvez modifier les expressions régulières pour modifier la manière dont vous segmentez les pages et les ressources.
 
@@ -65,7 +65,7 @@ Après avoir apporté des modifications dans l’extension Adobe Content Analy
 >[!MORELIKETHIS]
 >
 >[Configuration guidée](guided.md)
->&#x200B;>[Vue d’ensemble de la publication des balises de collecte de données](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/publish/overview)
+>>[Vue d’ensemble de la publication des balises de collecte de données](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/publish/overview)
 >
 
 
@@ -90,25 +90,25 @@ window.adobe.getContentExperienceVersion = () => {
 
 ## Identités
 
-Content Analytics gère les identités de la manière suivante :
+Content Analytics gère les identités de la manière suivante :
 
 * L’ECID est automatiquement renseigné dans la partie `identityMap` du schéma Content Analytics.
 * Si vous avez besoin d’autres valeurs d’identité dans le `identityMap`, vous devez définir ces valeurs dans le rappel `onBeforeEventSend` dans l’extension Web SDK.
-* Le groupement basé sur les champs n’est pas pris en charge, car le schéma est détenu par le système. Vous ne pouvez donc pas ajouter un autre champ au schéma pour prendre en charge le groupement basé sur les champs
+* Le groupement basé sur les champs n’est pas pris en charge, car le schéma est détenu par le système. Vous ne pouvez donc pas ajouter un autre champ au schéma pour prendre en charge le groupement basé sur les champs.
 
 
-Pour vous assurer que les données d’identité Content Analytics et les données d’identité des données Adobe Experience Platform Web SDK sont correctement regroupées au niveau du champ, vous devez apporter des modifications au SDK Web [activé avant l’envoi de l’événement](https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/commands/configure/onbeforeeventsend){target="_blank"} le rappel .
+Pour vous assurer que les données d’identité Content Analytics et les données d’identité des données du SDK Web Adobe Experience Platform sont correctement regroupées au niveau du champ, vous devez apporter des modifications au rappel [onBeforeEventSend](https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/commands/configure/onbeforeeventsend){target="_blank"} du SDK Web.
 
-1. Accédez à la propriété **[!UICONTROL Tags]** qui contient l’extension Adobe Experience Platform Web SDK et l’extension Adobe Content Analytics.
+1. Accédez à la propriété **[!UICONTROL Balises]** qui contient l’extension du SDK Web Adobe Experience Platform et l’extension Adobe Content Analytics.
 1. Sélectionnez ![Plug](/help/assets/icons/Plug.svg) **[!UICONTROL Extensions]**.
-1. Sélectionnez l’extension **[!UICONTROL Adobe Experience Platform Web SDK]**.
+1. Sélectionnez l’extension **[!UICONTROL SDK Web Adobe Experience Platform]**.
 1. Sélectionnez **[!UICONTROL Configurer]**.
-1. Dans la section **[!UICONTROL Instances SDK]**, faites défiler l’écran jusqu’à **[!UICONTROL Collecte de données]** - **[!UICONTROL Activé avant le rappel d’envoi d’événement]**.
+1. Dans la section **[!UICONTROL Instances SDK]**, faites défiler l’écran jusqu’à **[!UICONTROL Collecte de données]** - Rappel **[!UICONTROL OnBeforeEventSend]**.
 
-   ![&#x200B; Activé avant le rappel d’envoi d’événement &#x200B;](/help/content-analytics/assets/onbeforeeventsendcallback.png)
+   ![Rappel OnBeforeEventSend](/help/content-analytics/assets/onbeforeeventsendcallback.png)
 
-1. Sélectionnez **[!UICONTROL &lt;/> Fournir le code de rappel d’envoi d’événement avant l’événement]**.
-1. Ajoutez le code suivant :
+1. Sélectionnez **[!UICONTROL &lt;/> Fournir le code du rappel OnBeforeEventSend]**.
+1. Ajoutez le code suivant :
 
    ```javascript
    window.adobeContentAnalytics?.forwardEvent(content);
@@ -119,11 +119,11 @@ Pour vous assurer que les données d’identité Content Analytics et les donné
    }
    ```
 
-   ![&#x200B; Activé avant le rappel d’envoi d’événement &#x200B;](/help/content-analytics/assets/onbeforeeventsendcallbackcode.png)
+   ![Rappel OnBeforeEventSend](/help/content-analytics/assets/onbeforeeventsendcallbackcode.png)
 
 1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer le code.
 1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer l’extension.
-1. [Publier](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/publish/overview) les mises à jour de la propriété Tags.
+1. [Publiez](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/publish/overview) les mises à jour de la propriété Balises.
 
 
 

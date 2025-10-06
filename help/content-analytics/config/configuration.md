@@ -6,9 +6,9 @@ feature: Content Analytics
 role: Admin
 exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
 source-git-commit: f149a2bd7f184f4e8f6e67979649e2d9f609d603
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '599'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -16,10 +16,10 @@ ht-degree: 85%
 
 Cet article explique, à un niveau général, comment configurer Content Analytics.
 
-Avant de configurer Content Analytics, vous devez vous assurer que les [&#x200B; conditions préalables &#x200B;](#prerequisites) sont remplies, que vous disposez des [contrôle d’accès](#access-control) requis et que vous connaissez les [&#x200B; limitations](#limitations).
+Avant de configurer Content Analytics, vous devez vous assurer que les [conditions préalables](#prerequisites) sont remplies, que vous disposez du [contrôle d’accès](#access-control) requis et que vous connaissez les [limites](#limitations).
 
 
-Étapes de haut niveau
+Étapes générales
 
 ![Configuration de Content Analytics](../assets/aca-configuration.svg){zoomable="yes"}
 
@@ -68,7 +68,7 @@ Cet accès implique ce qui suit :
 
 ## Limites
 
-Le schéma utilisé pour les données d’événement Content Analytics appartient au système. Un schéma détenu par le système ne peut pas être modifié, ce qui implique :
+Le schéma utilisé pour les données d’événement Content Analytics appartient au système. Un schéma détenu par le système ne peut pas être modifié, ce qui implique les points suivants :
 
 * Vous ne pouvez pas inclure de groupes de champs pour la prise en charge de fonctionnalités telles que la géolocalisation, la détection de robots ou la recherche d’appareils.
 * Vous ne pouvez pas ajouter d’identifiant spécifique pour prendre en charge le [groupement basé sur les champs](/help/stitching/fbs.md).
