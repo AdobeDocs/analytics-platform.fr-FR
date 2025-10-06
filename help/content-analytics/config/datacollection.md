@@ -8,7 +8,7 @@ exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
 source-git-commit: e8cba64e706a456861fd8392ce9260b7a1c4636b
 workflow-type: tm+mt
 source-wordcount: '622'
-ht-degree: 76%
+ht-degree: 97%
 
 ---
 
@@ -31,7 +31,7 @@ Les définitions suivantes sont utilisées dans le cadre de cet article :
 
 ## Fonctionnalité
 
-Content Analytics nécessite qu’Experience Platform Edge Network Web SDK collecte des données d’événement de contenu. Cette collecte de données d’événement est associée à la collecte de données (existantes) de données d’événement comportemental par le biais de mécanismes tels qu’Experience Platform Edge Network (Web SDK, API du serveur) ou le connecteur source Analytics (par exemple, à l’aide d’AppMeasurement).
+Content Analytics nécessite que le SDK Web Experience Platform Edge Network collecte des données d’événement de contenu. Cette collecte de données d’événement est associée à la collecte de données (existantes) de données d’événement comportemental par le biais de mécanismes tels qu’Experience Platform Edge Network (SDK Web, API du serveur) ou le connecteur source Analytics (par exemple, à l’aide d’AppMeasurement).
 
 La bibliothèque Content Analytics collecte des données lorsque :
 
@@ -81,9 +81,9 @@ Un clic sur une expérience est enregistré lorsque :
 * Tout clic se produit sur un lien d’une page pour laquelle des expériences sont activées.
 
 
-### Déclencheur d’envoi d’un événement Content Analytics
+### Déclencheur pour envoyer un événement Content Analytics
 
-Pour réduire le nombre d’appels quittant la page, Content Analytics collecte des informations mais ne les envoie pas immédiatement. Les informations d’interaction de contenu sont collectées et un événement contenant ces informations n’est envoyé que lorsque l’un des déclencheurs suivants se produit :
+Pour réduire le nombre d’appels quittant la page, Content Analytics collecte des informations mais ne les envoie pas immédiatement. Les informations d’interaction de contenu sont collectées et un événement contenant ces informations n’est envoyé que lorsque l’un des déclencheurs suivants se produit :
 
 * Le SDK Web ou AppMeasurement envoie un événement.
 * La visibilité passe à masquée, par exemple :
@@ -97,7 +97,7 @@ Pour réduire le nombre d’appels quittant la page, Content Analytics collecte 
 
 >[!NOTE]
 >
->Les événements Content Analytics supplémentaires affectent probablement toute définition de taux de rebond basée sur le nombre d&#39;événements dans une session ou une page.
+>Les événements Content Analytics supplémentaires influencent probablement toute définition de taux de rebond basée sur le nombre d’événements dans une session ou sur une page.
 >
 
 

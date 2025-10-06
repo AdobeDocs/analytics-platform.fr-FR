@@ -8,7 +8,7 @@ exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
 source-git-commit: e8cba64e706a456861fd8392ce9260b7a1c4636b
 workflow-type: tm+mt
 source-wordcount: '2694'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -140,7 +140,7 @@ Votre configuration nécessite la sélection d’une [Vue de données](/help/dat
    Vous pouvez effectuer les actions suivantes :
 
    * Pour rechercher une vue de données spécifique, utilisez le champ ![Recherche](/help/assets/icons/Search.svg).
-   * Pour filtrer la liste des vues de données disponibles, sélectionnez ![&#x200B; Afficher le filtre &#x200B;](/help/assets/icons/Filter.svg). Vous pouvez filtrer la liste par [!UICONTROL Connexion], [!UICONTROL Propriétaire] et [!UICONTROL Sandbox].<br/>Utilisez ![Masquer](/help/assets/icons/Filter.svg) **[!UICONTROL Masquer les segments]** pour masquer le volet de segments.
+   * Pour filtrer la liste des vues de données disponibles, sélectionnez ![Afficher le filtre](/help/assets/icons/Filter.svg). Vous pouvez filtrer la liste par [!UICONTROL Connexion], [!UICONTROL Propriétaire] et [!UICONTROL Sandbox].<br/>Utilisez ![Masquer](/help/assets/icons/Filter.svg) **[!UICONTROL Masquer les segments]** pour masquer le volet de segment.
    * Pour définir les colonnes à afficher dans le tableau, sélectionnez ![Paramètres des colonnes](/help/assets/icons/ColumnSetting.svg). Sélectionnez les colonnes à afficher dans la boîte de dialogue **[!UICONTROL Personnaliser le tableau]** et sélectionnez **[!UICONTROL Appliquer]** pour appliquer les modifications.
 
 1. Sélectionnez ![SelectBox](/help/assets/icons/SelectBox.svg) la vue de données que vous souhaitez utiliser.
@@ -296,7 +296,7 @@ Dans une nouvelle configuration, vous devez définir si vous souhaitez utiliser 
   ![Balise existante de la collecte de données Content Analytics](../assets/aca-configuration-datacollection-existingtag.png)
 
    1. Sélectionnez **[!UICONTROL Choisir existant]**.
-   2. Sélectionnez une propriété existante dans le menu déroulant **[!UICONTROL Propriété des balises]**. Vous pouvez commencer à saisir pour rechercher et limiter les options disponibles. Vous ne pouvez pas sélectionner de propriété de balise déjà utilisée par une autre configuration Content Analytics mise en œuvre.
+   2. Sélectionnez une propriété existante dans le menu déroulant **[!UICONTROL Propriété Balises]**. Vous pouvez commencer à saisir pour rechercher et limiter les options disponibles. Vous ne pouvez pas sélectionner de propriété de balise déjà utilisée par une autre configuration Content Analytics mise en œuvre.
 
 
 * Pour créer une propriété de balise, procédez comme suit :
@@ -313,7 +313,7 @@ Dans une nouvelle configuration, vous devez définir si vous souhaitez utiliser 
 
 * Indiquer les ressources à inclure ou exclure lors de la collecte de données pour Content Analytics.
 
-  Spécifiez une chaîne d’expression régulière pour **[!UICONTROL Ressources à inclure ou à exclure]**. <br/>Par exemple : `^(?!.*(logo\.jpg)).*$` d’exclure toutes les images JPEG de logo de Content Analytics.
+  Spécifiez une chaîne d’expression régulière pour **[!UICONTROL Ressources à inclure ou à exclure]**. <br/>Par exemple, `^(?!.*(logo\.jpg)).*$` pour exclure toutes les images JPEG des logos de Content Analytics.
 
 >[!IMPORTANT]
 >
@@ -324,7 +324,7 @@ Dans une nouvelle configuration, vous devez définir si vous souhaitez utiliser 
 
 #### Configuration existante {#existing-configuration}
 
-Vous ne pouvez pas modifier la propriété Balises d’une configuration existante. Pour mettre à jour une propriété Tags associée à une configuration existante, utilisez la configuration de l’extension Content Analytics Tag [&#128279;](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/content-analytics/overview).
+Vous ne pouvez pas modifier la propriété Balises d’une configuration existante. Pour mettre à jour une propriété de balise associée à une configuration existante, utilisez la [configuration de l’extension Balise Content Analytics](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/content-analytics/overview).
 
 Vous pouvez toutefois modifier les pages et les ressources à inclure ou à exclure.
 
