@@ -38,7 +38,7 @@ Ces notes de mise à jour portent sur la période allant de septembre jusqu’à
 **Content Analytics** :
 **Analyse guidée** :
 **Plateforme** :
-**Report Builder ** : AN-387741, AN-386777, AN-388720, AN-389343
+**Report Builder &#x200B;** : AN-387741, AN-386777, AN-388720, AN-389343
 **Reporting** : AN-391439, AN-391228, AN-393620, AN-393640, AN-391334, AN-393304
 **Segmentation** :
 **Rapports planifiés** : AN-391150, AN-390474
