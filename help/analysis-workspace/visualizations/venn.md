@@ -4,10 +4,10 @@ title: Venn
 feature: Visualizations
 exl-id: a0162164-a0cf-45b9-99b6-2a115e9a4e57
 role: User
-source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+source-git-commit: 973e999b611d578da12018e60becf48efd7a76f8
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 89%
+source-wordcount: '207'
+ht-degree: 70%
 
 ---
 
@@ -25,12 +25,18 @@ ht-degree: 89%
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente la visualisation Venn dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consultez [Venn](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/venn) pour la_ version ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** de cet article._
+_Cet article présente la visualisation Venn dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consultez [Venn](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/venn) pour la_ version ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 
 
 La visualisation ![Type](/help/assets/icons/TwoDots.svg) **[!UICONTROL Venn]** vous permet de faire glisser jusqu’à 3 filtres et une mesure (à partir du panneau Composants) pour créer un diagramme de Venn.
+
+>[!NOTE]
+>
+>Analysis Workspace utilise des diagrammes de Venn proportionnels à la surface. Les diagrammes de Venn avec trois cercles ou plus représentés en deux dimensions ne peuvent pas toujours être dessinés avec des proportions parfaites.
+> 
+>Workspace tente d’obtenir le Venn le plus proche, mais les résultats peuvent ne pas toujours être précis visuellement.
 
 ![Visualisation Venn qui comprend trois filtres.](assets/venn.png)
 
@@ -48,7 +54,7 @@ To normalize the Venn diagram (take the size out of it), go select ![Setting](/h
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisation Venn](https://video.tv.adobe.com/v/3416882/?quality=12&learn=on&captions=fre_fr){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisation Venn](https://video.tv.adobe.com/v/335798/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 
@@ -56,7 +62,7 @@ Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisat
 >[!MORELIKETHIS]
 >
 >[Ajouter une visualisation à un panneau](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->&#x200B;>[Paramètres de visualisation](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->&#x200B;>[Menu contextuel de visualisation](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>>[Paramètres de visualisation](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>>[Menu contextuel de visualisation](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
 

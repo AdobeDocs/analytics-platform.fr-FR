@@ -6,18 +6,22 @@ feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
 role: User
-source-git-commit: c91ee21a3d4e20e3bdaeb75f2011ede6eee6cba0
+source-git-commit: 973e999b611d578da12018e60becf48efd7a76f8
 workflow-type: tm+mt
-source-wordcount: '793'
-ht-degree: 50%
+source-wordcount: '799'
+ht-degree: 51%
 
 ---
 
 # Envoyer et planifier des projets
 
-Vous pouvez envoyer des projets Customer Journey Analytics sous forme de fichiers à des utilisateurs sélectionnés par e-mail. Vous pouvez envoyer des fichiers ad hoc ou configurer les projets à envoyer selon un planning. Les projets peuvent être envoyés au format CSV ou PDF.
+Vous pouvez envoyer des projets Customer Journey Analytics sous forme de fichiers à des utilisateurs sélectionnés par e-mail. Vous pouvez envoyer des fichiers ad hoc ou configurer les projets à envoyer selon un planning.
 
-Toutes les balises appliquées au projet sont automatiquement appliquées à l’export.
+Tenez compte des points suivants lors de l’envoi de fichiers :
+
+* Les fichiers peuvent être envoyés au format CSV ou PDF.
+
+* Toutes les balises appliquées au projet sont automatiquement appliquées à l’export.
 
 D’autres méthodes d’export des données Customer Journey Analytics sont également disponibles, comme décrit dans la section [Vue d’ensemble de l’export](/help/analysis-workspace/export/export-project-overview.md).
 
@@ -40,7 +44,7 @@ Pour envoyer un fichier aux destinataires par e-mail :
 
 ## Planifier l’export de fichier {#schedule}
 
-Pour envoyer un fichier selon un planning aux destinataires par e-mail
+Pour envoyer un fichier selon un planning aux destinataires par e-mail :
 
 1. Sélectionnez **[!UICONTROL Partager] > [!UICONTROL Planifier l’exportation de fichier]**.
 1. Spécifiez le type de fichier :
@@ -86,7 +90,7 @@ Pour envoyer un fichier selon un planning aux destinataires par e-mail
 
 Adobe utilise le mot de passe pour chiffrer les projets planifiés, qu’ils soient envoyés au format .pdf ou .csv.
 
-Une fois que votre entreprise a acheté et activé le SKU Healthcare Shield, l’invitation à créer un mot de passe pour un projet planifié s’affiche dans les cas suivants :
+Une fois que votre entreprise a acheté et activé le SKU Healthcare Shield, le prompt qui vous invite à créer un mot de passe pour un projet planifié s’affiche dans les cas suivants :
 
 * Lorsqu’une personne crée un projet planifié.
 
@@ -99,7 +103,7 @@ Les exigences relatives au mot de passe sont conformes à la norme Adobe, qui re
 ### Protéger un nouveau projet planifié par mot de passe
 
 1. Une fois le projet enregistré, accédez à **[!UICONTROL Partager]** > **[!UICONTROL Envoyer le fichier maintenant]** ou **[!UICONTROL Partager]** > **[!UICONTROL Envoyer le fichier selon le calendrier]**.
-1. Suivez les instructions ci-dessus, sous [Envoyer le fichier maintenant](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html?lang=fr#now) ou [Envoyer le fichier selon le calendrier](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html?lang=fr#schedule).
+1. Suivez les instructions ci-dessus, sous [Envoyer le fichier maintenant](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html#now) ou [Envoyer le fichier selon le calendrier](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html#schedule).
 
 ### Protéger un projet planifié existant par mot de passe
 
