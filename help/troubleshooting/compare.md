@@ -17,7 +17,7 @@ ht-degree: 4%
 
 Lorsque votre entreprise adopte Customer Journey Analytics, il est possible de noter certaines différences de données entre Adobe Analytics et Customer Journey Analytics. Ces différences sont normales et peuvent se produire pour plusieurs raisons. Customer Journey Analytics est conçu pour vous permettre de remédier à certaines des limites imposées à vos données dans Adobe Analytics. Cette flexibilité peut entraîner des différences dans la façon dont Customer Journey Analytics interprète les données. Utilisez cet article pour comprendre les différences potentielles entre la façon dont Customer Journey Analytics et Adobe Analytics traitent vos données.
 
-Cette page suppose que vous ingérez des données Adobe Analytics dans Adobe Experience Platform à l’aide du [ connecteur source Analytics ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr), puis que vous avez créé une [connexion](/help/connections/overview.md) et [vue de données](/help/data-views/data-views.md) dans Customer Journey Analytics.
+Cette page suppose que vous ingérez des données Adobe Analytics dans Adobe Experience Platform à l’aide du [&#x200B; connecteur source Analytics &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr), puis que vous avez créé une [connexion](/help/connections/overview.md) et [vue de données](/help/data-views/data-views.md) dans Customer Journey Analytics.
 
 ![Flux de données d’Adobe Analytics par le biais du connecteur de données vers Adobe Experience Platform et vers Customer Journey Analytics à l’aide des connexions Customer Journey Analytics.](assets/compare.png)
 
