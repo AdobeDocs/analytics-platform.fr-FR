@@ -6,9 +6,9 @@ feature: Use Cases
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 1cf0d957d62d60979982320f45b4fdadcc7458b8
+source-git-commit: 38be574621e4fc384f9fdeac94fc071f0cdd132b
 workflow-type: tm+mt
-source-wordcount: '1219'
+source-wordcount: '1217'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ Cet article de cas d’utilisation explique comment utiliser la fonctionnalité 
 
 Pour détecter le trafic généré par LLM et par l’IA, faites la distinction entre :
 
-* **robots LLM** : collectent des données pour l’entraînement et la récupération de la génération augmentée (RAG).
+* **robots LLM** : collectez des données pour l’entraînement et la récupération de la génération augmentée (RAG).
 * **Agents AI** : fonctionnent comme des interfaces qui exécutent des tâches au nom de l’homme. Les agents d’IA préfèrent interagir par le biais d’API, qui contournent les méthodes de suivi Web Analytics. Néanmoins, vous pouvez toujours analyser une partie significative du trafic généré par l’IA via les sites web.
 
 Trois méthodes de détection principales courantes pour identifier et surveiller le trafic généré par LLM et par l’IA sont les suivantes :
@@ -35,9 +35,9 @@ Le tableau suivant illustre la manière dont les méthodes de détection peuvent
 
 | Scénario | Identification de l&#39;agent utilisateur | Classification de référent | Détection des paramètres de requête |
 |---|---|---|---|
-| **Formation d’un modèle** | L’agent (`GPTBot`, `ClaudeBot`, etc.) peut être identifié lors de l’implémentation de la journalisation côté serveur. | Aucune classification n’est possible. Les robots d’exploration AI ne génèrent pas de référents pendant la formation. | La détection est impossible. Les robots d’exploration AI n’ajoutent pas de paramètres pendant l’entraînement. |
+| **Formation d&#39;un modèle** | L’agent (`GPTBot`, `ClaudeBot`, etc.) peut être identifié lors de l’implémentation de la journalisation côté serveur. | Aucune classification n’est possible. Les robots d’exploration AI ne génèrent pas de référents pendant la formation. | La détection est impossible. Les robots d’exploration AI n’ajoutent pas de paramètres pendant l’entraînement. |
 | **Navigation de l’agent** | L’agent (`ChatGPT-User`, `claude-web`) peut être identifié lorsque la journalisation côté serveur capture les en-têtes. | La classification est possible si l’agent navigue depuis une interface d’IA avec la conservation des référents. | La détection est parfois possible si le service d’IA ajoute des paramètres de tracking. |
-| **Récupération-Génération augmentée (RAG) pour répondre à la requête** | L’agent (`OAI-SearchBot`, `PerplexityBot`) peut être identifié à l’aide de la journalisation côté serveur. | Aucune classification n’est généralement possible, car les opérations RAG contournent souvent les mécanismes référents. | La détection est rarement possible, sauf si elle est spécifiquement mise en œuvre par le fournisseur d’IA. |
+| **Récupération de la génération augmentée (RAG) pour répondre à la requête** | L’agent (`OAI-SearchBot`, `PerplexityBot`) peut être identifié à l’aide de la journalisation côté serveur. | Aucune classification n’est généralement possible, car les opérations RAG contournent souvent les mécanismes référents. | La détection est rarement possible, sauf si elle est spécifiquement mise en œuvre par le fournisseur d’IA. |
 | **L’utilisateur clique jusqu’au** | L’agent ne peut pas être identifié. L’agent AI apparaît comme un agent utilisateur normal. | La classification est possible lorsque les utilisateurs cliquent sur des liens à partir des interfaces d’IA ([chatgpt.com](https://chatgpt.com), [claude.ai](https://claude.ai), etc.). | La détection est possible lorsque les services d’IA ajoutent des paramètres UTM aux liens sortants. |
 | **Conditions de visibilité du trafic** | Nécessite une intégration de journalisation côté serveur avec Customer Journey Analytics ou le balisage côté serveur pour l’identification de l’agent. | La classification dépend des politiques de référent de la plateforme AI et de la transmission correcte des en-têtes HTTP. | La détection nécessite la conservation des paramètres par le biais de redirections et la collecte appropriée des paramètres d’URL. |
 
@@ -259,7 +259,7 @@ Pour configurer les méthodes de détection et les signaux de détection, utilis
 
 Utilisez les fonctions de champ dérivé [Case When](/help/data-views/derived-fields/derived-fields.md#case-when) pour définir un champ dérivé qui identifie les agents utilisateur LLM/AI.
 
-![&#x200B; Identification de l’agent utilisateur LLM/AI &#x200B;](assets/aitraffic-useragents.png){zoomable="yes"}
+![ Identification de l’agent utilisateur LLM/AI ](assets/aitraffic-useragents.png){zoomable="yes"}
 
 
 #### Détection des paramètres de requête LLM/AI
@@ -287,12 +287,12 @@ Configurez des segments dédiés qui vous aident à identifier les événements,
 
 Utilisez les champs dérivés et les segments pour générer des rapports et des analyses sur le trafic généré par LLM et par l’IA. Par exemple, consultez le projet annoté ci-dessous.
 
-![&#x200B; Projet de Workspace du trafic généré par LLM et l’IA &#x200B;](assets/aitraffic-workspace.png){zoomable="yes"}
+![ Projet de Workspace du trafic généré par LLM et l’IA ](assets/aitraffic-workspace.png){zoomable="yes"}
 
 
 
 >[!MORELIKETHIS]
 >
->Cet article de cas pratique est basé sur l’article de blog de Brian Au : [Tracking and Analysing LLM and AI-Generated Traffic in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967?profile.language=fr)
+>Cet article de cas d’utilisation est basé sur l’article de blog [Tracking et analyse du trafic généré par LLM et par l’IA dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967).
 >
 >
