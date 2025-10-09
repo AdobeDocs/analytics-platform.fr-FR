@@ -293,6 +293,6 @@ Utilisez les champs dérivés et les segments pour générer des rapports et des
 
 >[!MORELIKETHIS]
 >
->Cet article de cas d’utilisation est basé sur l’article de blog [Tracking et analyse du trafic généré par LLM et par l’IA dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967).
+>Cet article de cas d’utilisation est basé sur l’article de blog [Tracking et analyse du trafic généré par LLM et par l’IA dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967?profile.language=fr).
 >
 >
