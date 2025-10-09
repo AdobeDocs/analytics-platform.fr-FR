@@ -6,9 +6,9 @@ feature: Content Analytics
 role: User
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
 source-git-commit: e8cba64e706a456861fd8392ce9260b7a1c4636b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1300'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Pour commencer à créer des rapports à partir de zéro sur l’analyse du cont
 1. [Créez un projet](/help/analysis-workspace/build-workspace-project/create-projects.md) ou [ouvrez un projet existant](/help/analysis-workspace/build-workspace-project/open-projects.md) dans Workspace.
 1. Veillez à [sélectionner une vue de données](/help/analysis-workspace/c-panels/panels.md#data-view) pour la création de rapports sur l’analyse du contenu. La création de rapports sur l’analyse du contenu n’est disponible que pour les vues de données [configurées](/help/content-analytics/config/configuration.md) pour l’analyse du contenu.
 1. Faites glisser une visualisation ![Tableau](/help/assets/icons/Table.svg) [Tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) sur la zone de travail.
-1. Utilisez des [composants Content Analytics spécifiques](components.md) et d’autres [composants génériques](/help/components/overview.md) (tels que les segments, les périodes, les annotations) pour créer vos informations Content Analytics.
+1. Utilisez des [composants d’analyse du contenu spécifiques](components.md) et d’autres [composants](/help/components/overview.md) génériques (tels que des segments, des périodes, des annotations) pour créer vos informations d’analyse du contenu.
 
 ## Miniatures
 
@@ -57,7 +57,7 @@ Pour ouvrir la prévisualisation avec les détails suivants :
 
 ## Modèle
 
-Un modèle [template](/help/analysis-workspace/templates/use-templates.md) Content Analytics est disponible pour vous aider à identifier le contenu et les attributs de contenu qui présentent les meilleures performances. Le modèle fait partie du [cas d’utilisation du canal web et de l’engagement](/help/analysis-workspace/templates/use-templates.md#web-engagement) et décrit les performances de votre contenu à un niveau granulaire. Vous pouvez examiner les performances de ressources individuelles ou d’attributs spécifiques.
+Un [modèle](/help/analysis-workspace/templates/use-templates.md) d’analyse du contenu est disponible pour vous permettre d’identifier le contenu et les attributs de contenu qui présentent les meilleures performances. Le modèle fait partie du [cas d’utilisation du canal web et de l’engagement](/help/analysis-workspace/templates/use-templates.md#web-engagement) et décrit les performances de votre contenu à un niveau granulaire. Vous pouvez examiner les performances de ressources individuelles ou d’attributs spécifiques.
 
 En fonction de ce que vous apprendrez, vous pourrez effectuer un certain nombre d’opérations, comme promouvoir des ressources hautement performantes sur votre page d’accueil, personnaliser le contenu de segments spécifiques afin d’inclure des attributs hautement performants ou retirer du contenu qui commence à devenir obsolète.
 
@@ -65,7 +65,7 @@ Pour utiliser le modèle :
 
 1. Sélectionnez **[!UICONTROL Workspace]** dans le menu principal.
 1. Vérifiez que vous avez sélectionné une vue de données déjà configurée pour l’analyse du contenu.
-1. Recherchez ou utilisez des segments (**[!UICONTROL Web]** pour **[!UICONTROL Canal]** et **[!UICONTROL Engagement]** pour **[!UICONTROL Cas d’utilisation]**&#x200B;s) pour rechercher et sélectionner le modèle **[!UICONTROL Content Analytics]**.
+1. Recherchez ou utilisez des segments (**[!UICONTROL Web]** pour **[!UICONTROL Canal]** et **[!UICONTROL Engagement]** pour **[!UICONTROL Cas d’utilisation]**) pour trouver et sélectionner le modèle **[!UICONTROL Analyse de contenu]**.
 1. Sélectionnez **[!UICONTROL Utiliser le modèle]**.
 1. Dans la boîte de dialogue **[!UICONTROL Configurer votre modèle]**, sélectionnez une mesure dans la boîte de dialogue **[!UICONTROL Sélectionner une mesure de conversion]**. Par exemple, **[!UICONTROL CTR des ressource]**.
 1. Sélectionnez **[!UICONTROL Continuer]**.
@@ -155,5 +155,5 @@ Vous pouvez ventiler n’importe quelle ressource par dimensions pour mieux comp
 >[!MORELIKETHIS]
 >
 >[Composants de l’analyse du contenu](components.md)
->&#x200B;>[Utiliser des modèles](/help/analysis-workspace/templates/use-templates.md#web-engagement)
+>>[Utiliser des modèles](/help/analysis-workspace/templates/use-templates.md#web-engagement)
 >

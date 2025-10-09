@@ -6,9 +6,9 @@ feature: Content Analytics
 role: Admin, User
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
 source-git-commit: e8cba64e706a456861fd8392ce9260b7a1c4636b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '836'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -47,8 +47,8 @@ L’analyse du contenu utilise les données d’affichage d’images web dans le
 
 1. Lorsqu’une personne visite un site [configuré pour Content Analytics](config/configuration.md) le SDK web Experience Platform enregistre les impressions et les interactions avec le contenu.
 1. Le service d’identités et de fonctionnalités traite ces interactions. Ce processus consiste en un service de récupération qui revisite les versions publiques des URL configurées qui définissent les interactions. Pour toutes ces URL récupérées, le service d’identités identifie de manière unique les expériences et les ressources. Le service de fonctionnalités applique des services d’IA et de ML pour identifier des expériences ainsi que des métadonnées et attributs de ressources.
-1. Les résultats de ces services ([composants, attributs et identités](/help/content-analytics/report/components.md)) sont utilisés pour mettre à jour les jeux de données Content Analytics spécifiques pertinents dans Experience Platform.
-1. Les données Content Analytics, ainsi que les données comportementales et d’autres données de recherche, peuvent être utilisées dans une configuration Customer Journey Analytics ([Connexion](/help/connections/overview.md), [Vue de données](/help/data-views/data-views.md) et [Workspace](/help/analysis-workspace/home.md)). Cette configuration constitue la base des informations uniques au niveau global sur votre contenu. <br/>Vous pouvez démarrer rapidement vos rapports et analyses Content Analytics à l’aide du [modèle Content Analytics](/help/content-analytics/report/report.md#template).
+1. Les résultats de ces services ([composants, attributs et identités](/help/content-analytics/report/components.md)) sont utilisés pour mettre à jour les jeux de données Content Analytics spécifiques dans Experience Platform.
+1. Les données Content Analytics, ainsi que les données comportementales et d’autres données de recherche, peuvent ensuite être utilisées dans une configuration Customer Journey Analytics ([Connexion](/help/connections/overview.md), [Vue de données](/help/data-views/data-views.md) et [Espace de travail](/help/analysis-workspace/home.md)). Cette configuration constitue la base des informations uniques au niveau global sur votre contenu. <br/>Vous pouvez démarrer rapidement vos rapports et analyses Content Analytics à l’aide du [modèle Content Analytics](/help/content-analytics/report/report.md#template).
 
 
 >[!NOTE]
@@ -67,7 +67,7 @@ L’analyse du contenu utilise les données d’affichage d’images web dans le
 >[!MORELIKETHIS]
 >
 >[Création de rapports Content Analytics](report/report.md)
->&#x200B;>[Configurer Content Analytics](config/configuration.md)
->&#x200B;>[Calcul des rebonds et du taux de rebond dans Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446?profile.language=fr#M454)
+>>[Configurer Content Analytics](config/configuration.md)
+>>[Calcul des rebonds et du taux de rebond dans Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446#M454)
 >
 

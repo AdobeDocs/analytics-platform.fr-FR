@@ -6,9 +6,9 @@ feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
 source-git-commit: e8cba64e706a456861fd8392ce9260b7a1c4636b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2694'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -82,17 +82,17 @@ Chaque configuration nécessite un nom unique. Par exemple : `Example Content A
 >[!CONTEXTUALHELP]
 >id="ac_onboarding_dataview_button"
 >title="Vue de données"
->abstract="Pour la configuration de Content Analytics, vous devez sélectionner une vue de données existante. Vous pouvez ainsi fusionner vos données Content Analytics avec d’autres données."
+>abstract="Pour la configuration de Content Analytics, vous devez sélectionner une vue de données existante. Vous pouvez ainsi fusionner vos données d’analyse de contenu avec d’autres données."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header"
 >title="Vue de données"
->abstract="Sélectionnez dans Customer Journey Analytics une vue de données existante avec laquelle vous souhaitez fusionner vos données Content Analytics."
+>abstract="Dans Customer Journey Analytics, sélectionnez une vue de données existante avec laquelle fusionner vos données d’analyse de contenu."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header_alt"
 >title="Vue de données"
->abstract="Sélectionnez dans Customer Journey Analytics une vue de données existante avec laquelle vous souhaitez fusionner vos données Content Analytics.<br/>"
+>abstract="Dans Customer Journey Analytics, sélectionnez une vue de données existante avec laquelle fusionner vos données d’analyse de contenu.<br/>"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_change_dialog"
@@ -236,7 +236,7 @@ Pour modifier des expériences existantes ou nouvelles dans une configuration im
 
 ### Collecte de données {#onboarding-data-collection}
 
-Dans cette section, vous allez configurer la manière de collecter vos données Content Analytics.
+Dans cette section, vous allez configurer la façon de collecter vos données d’analyse de contenu.
 
 <!-- markdownlint-disable MD034 -->
 
