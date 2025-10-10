@@ -79,7 +79,7 @@ Vous pouvez gérer une visualisation en pointant la souris sur la visualisation 
 
 * Pour réduire une visualisation, sélectionnez ![ChevronDown](/help/assets/icons/ChevronDown.svg).
 * Pour afficher une visualisation réduite, sélectionnez ![ChevronLeft](/help/assets/icons/ChevronLeft.svg).
-* Pour supprimer une visualisation, sélectionnez ![CrossSize400](/help/assets/icons/CrossSize400.svg). Pour annuler, sélectionnez **[!UICONTROL Modifier]** > **[!UICONTROL Annuler]** (**[!UICONTROL *cmd+z *]**|**[!UICONTROL * ctrl+z *]**).
+* Pour supprimer une visualisation, sélectionnez ![CrossSize400](/help/assets/icons/CrossSize400.svg). Pour annuler, sélectionnez **[!UICONTROL Modifier]** > **[!UICONTROL Annuler]** (**[!UICONTROL *cmd+z *]**|**[!UICONTROL * ctrl+z *]**).
 * Pour rétablir la hauteur par défaut d’une visualisation, sélectionnez ![ImageResize](/help/assets/icons/Resize.svg).
 * Pour déplacer une visualisation dans un panneau, faites-la glisser et déposez-la chaque fois qu’une ![ Déplacer ](/help/assets/icons/Move.svg) est visible (généralement lorsque vous passez la souris sur l’en-tête).
 

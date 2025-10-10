@@ -115,11 +115,11 @@ Chaque étape fournit une explication générale d’un processus plus détaill�
 
    +++
 
-+++ API
+   +++ API
 
    1. Utilisez l’API Edge Network pour envoyer des données au train de données souhaité.
 
-+++
+   +++
 
 1. [Validez que votre implémentation du SDK web envoie des données à un jeu de données](/help/getting-started/cja-upgrade/cja-upgrade-dataset-ingestion.md){target="_blank"}.
 

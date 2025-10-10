@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: ae66cd06-7ec1-4174-a3cf-939c3a66b840
 source-git-commit: 720751130d0f66bddffd13c6f160a85fcc7a7206
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1648'
 ht-degree: 100%
 
@@ -62,7 +62,7 @@ Ces composants de visualisation intègrent des fonctionnalités intelligentes te
 
 * Les **Fonctionnalités d’analyse virtuelle** par exemple les [Détection des anomalies](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) qui utilisent des algorithmes prédictifs et le machine learning pour fournir des informations sur les comportements inhabituels de vos données.
 
-* Les **Fonctionnalités d’analyse avancées** qui sont spécifiquement axées sur les informations du parcours client, comme les [diagrammes de flux](/help/analysis-workspace/visualizations/c-flow/flow.md), le [panneau d’attributions](/help/analysis-workspace/c-panels/attribution.md), les [diagrammes d’abandons](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) et les [ventilations de dimensions](/help/components/dimensions/t-breakdown-fa.md). Voici quelques exemples de visualisations prêtes à l’emploi :
+* Les **Fonctionnalités d’analyse avancées** qui sont spécifiquement axées sur les informations du parcours client, comme les [diagrammes de flux](/help/analysis-workspace/visualizations/c-flow/flow.md), le [panneau d’attributions](/help/analysis-workspace/c-panels/attribution.md), les [diagrammes d’abandons](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) et les [répartitions de dimensions](/help/components/dimensions/t-breakdown-fa.md). Voici quelques exemples de visualisations prêtes à l’emploi :
 
    * [Analyse de la fidélisation client via des tableaux de cohortes/latence](/help/analysis-workspace/visualizations/cohort-table/cohort-use-cases.md), où vous glissez-déposez simplement des mesures/dimensions dans un créateur et où vous terminez en moins de 30 secondes,
 

@@ -1,12 +1,12 @@
 ---
-title: Présentation des dimensions
-description: Découvrez les dimensions et leur utilisation dans Customer Journey Analytics.
+title: Vue d’ensemble des dimensions
+description: Découvrez les dimensions et leur utilisation dans Customer Journey Analytics.
 feature: Dimensions
 exl-id: 3592808b-17fd-401d-ab12-ff0308b21f45
 source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
 workflow-type: tm+mt
 source-wordcount: '235'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -48,6 +48,6 @@ Les administrateurs ou les administratrices de Customer Journey Analytics peuven
 
 >[!MORELIKETHIS]
 >
->[Découvrez des informations précises sur les clients et les clientes avec la fonctionnalité Profondeur de l’événement](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/discover-deeper-customer-insights-with-adobe-customer-journey/ba-p/753947?profile.language=fr#M576).
+>[Découvrez des informations précises sur les clients et les clientes avec la fonctionnalité Profondeur de l’événement](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/discover-deeper-customer-insights-with-adobe-customer-journey/ba-p/753947#M576).
 >
 

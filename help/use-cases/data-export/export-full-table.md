@@ -1,6 +1,6 @@
 ---
-title: Customer Journey Analytics Exporter le tableau complet
-description: Décrit comment utiliser la fonctionnalité Exporter le tableau complet pour valider vos données ou utiliser vos données pour l’IA/ML.
+title: Table complète d’exportation Customer Journey Analytics
+description: Décrit comment utiliser la fonctionnalité Exporter une table complète pour valider vos données ou utiliser vos données pour l'IA/ML.
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
@@ -14,19 +14,19 @@ ht-degree: 6%
 
 # Exporter le tableau complet
 
-Cet article décrit comment [!DNL Customer Journey Analytics BI extension] peut être utilisé pour mettre en oeuvre le [cas d’utilisation d’exportation de données](overview.md) suivant :
+Cet article décrit comment le [!DNL Customer Journey Analytics BI extension] peut être utilisé pour implémenter le cas d’utilisation d’exportation de données [ suivant ](overview.md) :
 
 - Validation des données
 - Préparation à l’IA/ML
 
 ## Introduction
 
-L’export de données à l’aide de [!DNL Customer Journey Analytics Full Table Export] vous permet d’exporter des données de vos tables à structure libre dans Customer Journey Analytics Analysis Workspace.
+L’exportation de données à l’aide de [!DNL Customer Journey Analytics Full Table Export] vous permet d’exporter des données de vos tableaux à structure libre dans Customer Journey Analytics Analysis Workspace.
 
-![Extension BI](../assets/export-full-table.svg)
+Extension ![BI](../assets/export-full-table.svg)
 
 ## Informations supplémentaires
 
 Vous pouvez directement exporter le contenu complet de tout tableau à structure libre que vous créez dans Analysis Workspace vers des destinations cloud désignées à l’aide de la fonctionnalité Exporter le tableau complet .
 
-Pour plus d’informations, consultez la documentation détaillée sur [Export des rapports de Customer Journey Analytics vers le cloud](/help/analysis-workspace/export/export-cloud.md).
+Pour plus d’informations, consultez la documentation détaillée sur la [Exporter des rapports Customer Journey Analytics vers le cloud](/help/analysis-workspace/export/export-cloud.md).

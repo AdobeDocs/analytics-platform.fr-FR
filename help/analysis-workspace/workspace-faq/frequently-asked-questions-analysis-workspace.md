@@ -1,20 +1,20 @@
 ---
-description: Découvrez la configuration requise pour Analysis Workspace.
+description: Découvrez les exigences pour Analysis Workspace.
 keywords: Analysis Workspace
-title: Configuration requise
+title: Exigences
 feature: Workspace Basics
 exl-id: ea2ea8d6-8327-4168-b81a-f4945b572cbb
 role: Admin
 source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '147'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
-# Configuration requise
+# Exigences
 
-Les conditions requises pour exécuter Analysis Workspace sont les suivantes :
+Les exigences pour exécuter Analysis Workspace sont les suivantes :
 
 | Exigence | Description |
 |--- |--- |

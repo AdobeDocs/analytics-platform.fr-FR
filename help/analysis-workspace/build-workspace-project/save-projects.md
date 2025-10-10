@@ -11,7 +11,7 @@ ht-degree: 95%
 
 ---
 
-# Enregistrement des projets {#save-projects}
+# Enregistrer des projets {#save-projects}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -88,7 +88,7 @@ Une fois votre projet ouvert dans Analysis Workspace, sélectionnez **[!UICONTR
 
 
 <!-- Cannot find this option in CJA 
-| **[!UICONTROL Save as template]** | Save your project as a [custom template](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html?lang=fr) that becomes available to your organization under **[!UICONTROL Project > New]** | 
+| **[!UICONTROL Save as template]** | Save your project as a [custom template](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) that becomes available to your organization under **[!UICONTROL Project > New]** | 
 -->
 
 ## Enregistrement automatique

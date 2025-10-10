@@ -69,7 +69,7 @@ La barre de filtrage affiche ➌ les filtres actifs appliqués à partir du pann
 
 ### Panneau Filtrer
 
-Vous pouvez filtrer la liste des mesures calculées à l’aide du ![ du panneau de gauche ](/help/assets/icons/Filter.svg)Filtrer **&#x200B;**&#x200B;Filtrer➍. Le panneau de filtrage affiche le type de filtre et le nombre de mesures calculées qui respectent le filtre spécifique. Sélectionnez ![Filtrer](/help/assets/icons/Filter.svg) pour afficher ou masquer le panneau Filtrer.
+Vous pouvez filtrer la liste des mesures calculées à l’aide du ![ du panneau de gauche ](/help/assets/icons/Filter.svg)Filtrer **** Filtrer➍. Le panneau de filtrage affiche le type de filtre et le nombre de mesures calculées qui respectent le filtre spécifique. Sélectionnez ![Filtrer](/help/assets/icons/Filter.svg) pour afficher ou masquer le panneau Filtrer.
 
 Voir [Filtrer la liste des mesures calculées](cm-filter.md) pour plus d’informations.
 

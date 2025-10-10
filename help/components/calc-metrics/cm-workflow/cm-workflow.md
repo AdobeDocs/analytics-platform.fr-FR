@@ -25,12 +25,12 @@ Vous pouvez créer une mesure calculée des manières suivantes :
 * **B**. Dans un projet Workspace, dans le panneau de gauche Composants , sélectionnez ![Ajouter](/help/assets/icons/Add.svg) à ![Événement](/help/assets/icons/Event.svg) **Mesures**.
 * **C**. Dans un projet Workspace, dans le menu contextuel de l’en-tête de colonne des mesures, sélectionnez **[!UICONTROL Créer une mesure à partir de la sélection]**. Dans le sous-menu, vous pouvez sélectionner une fonction ou sélectionner **[!UICONTROL Ouvrir dans le créateur de mesures calculées]**. <br/>Si vous sélectionnez une fonction, la mesure calculée est définie comme mesure de projet uniquement. Lorsque vous modifiez cette mesure par la suite, dans la fenêtre contextuelle [Informations sur le composant](/help/components/use-components-in-workspace.md#component-info), une notification s’affiche dans le [Créateur de mesures calculées](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
 * **D**. Dans un projet Workspace, sélectionnez **[!UICONTROL Composants]** dans le menu, puis sélectionnez **[!UICONTROL Créer une mesure]**.
-* **&#x200B;**. Dans un projet Workspace, utilisez le raccourci **[!UICONTROL maj+cmd+c]** (macOS) ou **[!UICONTROL maj+ctrl+c]** (Windows).
+* ****. Dans un projet Workspace, utilisez le raccourci **[!UICONTROL maj+cmd+c]** (macOS) ou **[!UICONTROL maj+ctrl+c]** (Windows).
 
 Pour définir la nouvelle mesure calculée, utilisez le [créateur de mesures calculées](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
 
 
-## Processus
+## Workflow
 
 Avant de créer des mesures calculées, prenez soigneusement en compte le workflow suivant :
 

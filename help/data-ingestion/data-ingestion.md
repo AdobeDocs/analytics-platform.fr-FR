@@ -6,7 +6,7 @@ feature: Basics
 exl-id: ead96b72-40f1-4ce9-8d91-c8ceea6c4458
 role: Admin
 source-git-commit: ec56bc657961b2e4e8318ab14cd676288398462f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 100%
 
@@ -114,5 +114,5 @@ Voir [ Ingérer et utiliser des données ad hoc](./adhoc.md)
 
 >[!MORELIKETHIS]
 >
->Blog : [en savoir plus sur le traitement et l’ingestion des données dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-closer-look-at-data-processing-amp-ingestion-in-adobe-customer/ba-p/665091?profile.language=fr)
+>Blog : [en savoir plus sur le traitement et l’ingestion des données dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-closer-look-at-data-processing-amp-ingestion-in-adobe-customer/ba-p/665091)
 

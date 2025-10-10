@@ -9,7 +9,7 @@ exl-id: f40e1263-1f4a-416c-a045-15fbe68ce509
 source-git-commit: 25d0647c6a764d8f4306a5c049a7a68e0426cef9
 workflow-type: tm+mt
 source-wordcount: '404'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -33,7 +33,7 @@ Data Mirror offre les fonctionnalités essentielles suivantes pour la synchronis
 
 Utilisez Data Mirror pour ingérer des modifications directement à partir de vos systèmes sources, appliquer l’intégrité des schémas et rendre les données disponibles pour les workflows d’analyse, d’orchestration des parcours et de conformité. Data Mirror élimine les processus ETL en amont complexes et accélère la mise en œuvre en permettant la mise en miroir directe des modèles de base de données existants. Cette élimination peut améliorer la gouvernance des données grâce à un contrôle précis des suppressions et des opérations d’hygiène des données.
 
-Consultez également la [documentation d’Experience Platform sur Data Mirror](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-mirror/overview){target="_blank"}.
+Consultez également la [documentation d’Experience Platform sur Data Mirror](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview){target="_blank"}.
 
 ## Data Mirror pour Customer Journey Analytics
 
@@ -44,12 +44,12 @@ Consultez également la [documentation d’Experience Platform sur Data Mirror](
 
 Experience Platform Data Mirror for Customer Journey Analytics est disponible pour certaines solutions natives d’entrepôt de données ([!DNL Azure Databricks], [!DNL Google BigQuery] et [!DNL Snowflake]). La version Customer Journey Analytics d’Experience Platform Data Mirror nécessite la configuration appropriée des applications ou composants suivants :
 
-* [Solutions natives Data Warehouse](datawarehouse.md)
+* [Solutions natives de l’entrepôt de données](datawarehouse.md)
 * [Experience Platform](aep.md)
 * [Customer Journey Analytics](cja.md)
 
 >[!MORELIKETHIS]
 >
 >Guide de démarrage rapide de [Data Mirror : mise en miroir et utilisation de données basées sur des modèles](model-based.md)
->&#x200B;>[Data Mirror (documentation Experience Platform)](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-mirror/overview)
->&#x200B;>[Schémas basés sur des modèles (documentation Experience Platform)](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/schema/model-based)
+>>[Data Mirror (documentation Experience Platform)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview)
+>>[Schémas basés sur des modèles (documentation Experience Platform)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/model-based)

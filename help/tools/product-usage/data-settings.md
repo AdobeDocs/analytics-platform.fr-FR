@@ -3,7 +3,7 @@ title: Paramètres des données dʼutilisation des produits
 description: Activez, désactivez ou configurez les paramètres d’utilisation du produit.
 exl-id: 85e2b515-78e6-41e8-9947-369b1e65e4fd
 source-git-commit: e7534a1943307f5bbc92a845ddffe0651794b854
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 100%
 
@@ -20,7 +20,7 @@ La page _Paramètres des données_ gère la configuration de l’utilisation du 
 
 Les paramètres suivants sont disponibles sur cette page :
 
-* **[!UICONTROL Activer l’utilisation du produit]** : active/désactive la disponibilité de la collecte de données d’utilisation du produit. Si vous activez l’utilisation du produit, puis le désactivez à l’avenir, le jeu de données, la connexion et la vue de données ne sont pas supprimés. Lorsqu’il est désactivé, le suivi est globalement désactivé pour votre organisation.
+* **[!UICONTROL Activer l’utilisation du produit]** : active/désactive la disponibilité de la collecte de données d’utilisation du produit. Si vous activez l’utilisation du produit, puis le désactivez à l’avenir, le jeu de données, la connexion et la vue de données ne sont pas supprimés. Lorsqu’il est désactivé, le suivi est globalement désactivé pour votre organisation.
 * **[!UICONTROL Sandbox]** : détermine le sandbox Adobe Experience Platform dans lequel sont créés le schéma et le jeu de données. Le sandbox que vous choisissez n’a aucune incidence sur la collecte de données d’utilisation des produits. Si vous modifiez ce paramètre de sandbox, toutes les données existantes sont supprimées. Un nouveau jeu de données, une nouvelle connexion et une nouvelle vue de données sont créés dans le sandbox sélectionné.
 * **[!UICONTROL Remplacer la fenêtre de conservation des données]** : chaque jeu de données a une fenêtre de conservation des données par défaut. Si ce paramètre est désactivé, l’utilisation du produit suit cette période par défaut. Vous pouvez activer ce paramètre si vous souhaitez réduire la durée de conservation des données. Réduire la période de conservation des données permet la réduction des coûts et le respect des règles de confidentialité spécifiques aux employées et employés. Vous ne pouvez pas étendre la conservation des données au-delà de la fenêtre de conservation des données par défaut du jeu de données.
 

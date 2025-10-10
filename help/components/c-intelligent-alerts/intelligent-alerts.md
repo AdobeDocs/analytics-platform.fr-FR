@@ -1,13 +1,13 @@
 ---
-description: Découvrez comment utiliser les alertes pour permettre un contrôle granulaire des notifications et l’intégration à la détection des anomalies.
-title: Présentation des alertes
+description: Découvrez comment utiliser les alertes pour un contrôle granulaire des notifications et leur intégration à la détection des anomalies.
+title: Vue d’ensemble des alertes
 feature: Workspace Basics
 role: User, Admin
 exl-id: 029be0c8-ec78-4bb7-a6cd-bb303b5ac82a
 source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
 workflow-type: tm+mt
 source-wordcount: '357'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -24,7 +24,7 @@ Grâce aux alertes, vous pouvez effectuer ce qui suit :
 * créer des alertes « empilées » qui présentent plusieurs mesures dans une seule alerte
 * Créer des alertes en fonction des anomalies (seuils de 90 %, 95 %, 99 %, 99,75 % et 99,9 % ; pourcentage de modification ; supérieur/inférieur) (disponible uniquement pour les clientes et clients Customer Journey Analytics avec un forfait Select, Prime ou Ultimate)
 
-Le tutoriel vidéo suivant présente une vue d’ensemble de base des alertes : [Alertes](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/data-science/intelligent-alerts.html?lang=fr) (5:34).
+Le tutoriel vidéo suivant présente un aperçu de base des alertes : [Alertes](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/data-science/intelligent-alerts.html?lang=fr) (5:34)
 
 ## Comprendre en quoi les alertes diffèrent
 

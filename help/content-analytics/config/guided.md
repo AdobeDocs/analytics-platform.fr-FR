@@ -6,7 +6,7 @@ feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
 source-git-commit: e8cba64e706a456861fd8392ce9260b7a1c4636b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2694'
 ht-degree: 100%
 
@@ -307,7 +307,7 @@ Dans une nouvelle configuration, vous devez définir si vous souhaitez utiliser 
    1. Spécifiez un **[!UICONTROL Nom de balise]**, par exemple `ACA Test for Documentation`.
    1. Spécifiez des **[!UICONTROL Domaines]**, par exemple `example.com`.
 
-* Indiquez les pages à inclure ou exclure lors de la collecte de données pour l’analyse du contenu.
+* Indiquez les pages à inclure ou exclure lors de la collecte de données pour Content Analytics.
 
   Spécifiez une chaîne d’expression régulière pour **[!UICONTROL Pages à inclure/exclure]**. <br/>Par exemple, `^(?!.*documentation).*` pour exclure toutes les pages de documentation de Content Analytics.
 

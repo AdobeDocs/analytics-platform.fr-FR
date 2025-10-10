@@ -38,7 +38,7 @@ Vous pouvez également définir un [ taux de rebond à l’aide de champs dériv
 
 Les champs dérivés font partie d’une vue de données qui a l’avantage que tous les utilisateurs et utilisatrices ne peuvent pas remplacer ou modifier la définition d’une mesure Taux de rebond . Cet avantage a également introduit une limitation. Les utilisateurs qui n’ont pas accès à une vue de données ne peuvent pas utiliser de champs dérivés et doivent avoir recours à des segments et à des mesures calculées pour définir un taux de rebond.
 
-Pour plus d’informations sur le calcul des rebonds et du taux de rebond dans Customer Journey Analytics, consultez cet [ article de blog ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446?profile.language=fr).
+Pour plus d’informations sur le calcul des rebonds et du taux de rebond dans Customer Journey Analytics, consultez cet [ article de blog ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446).
 
 +++
 
@@ -47,7 +47,7 @@ Pour plus d’informations sur le calcul des rebonds et du taux de rebond dans C
 
 Vous souhaitez définir une mesure calculée qui calcule uniquement les pages vues pour les pages qui ont été visitées au cours de plus de 100 sessions.
 
-+++ Détails
++++ Détails 
 
 ![Pages vues conditionnelles](assets/conditional-page-views.png)
 

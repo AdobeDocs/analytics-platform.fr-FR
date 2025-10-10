@@ -1,14 +1,14 @@
 ---
 description: Découvrez comment organiser vos projets dans des dossiers dans Analysis Workspace.
 keywords: Analysis Workspace
-title: Présentation des dossiers
+title: Vue d’ensemble des dossiers
 feature: Workspace Basics
 exl-id: e12e271e-ce15-4535-bb48-1976395cf755
 role: User
 source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
 source-wordcount: '419'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

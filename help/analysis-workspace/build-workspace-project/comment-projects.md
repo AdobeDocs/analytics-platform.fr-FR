@@ -7,13 +7,13 @@ exl-id: 05f69a1c-31c2-40d8-ae8b-a084169897b1
 source-git-commit: 518bebc18611136873fce5c23dd7041afafe1220
 workflow-type: tm+mt
 source-wordcount: '1857'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # Ajout et gestion de commentaires dans les projets {#comment-on-projects}
 
-Les commentaires dans Analysis Workspace vous permettent de partager des informations et de poser des questions dans le cadre d’un projet Analysis Workspace. Cela peut rationaliser les discussions sur les données, en maintenant les conversations dans le contexte des données qui font l’objet de discussions.
+Les commentaires dans Analysis Workspace vous permettent de partager des informations et de poser des questions dans le cadre d’un projet Analysis Workspace. Vous pouvez ainsi optimiser les discussions sur les données, ce qui permet de conserver les conversations dans le contexte spécifique des données concernées.
 
 >[!NOTE]
 >
@@ -149,9 +149,9 @@ Pour inclure une autre personne dans votre commentaire :
 
 ## Recevoir des notifications sur les commentaires
 
-Les propriétaires de projet et [personnes spécifiques que vous mentionnez](#include-others-in-a-comment) reçoivent des notifications en fonction de leurs paramètres de notification Adobe Experience Cloud. Par défaut, ils reçoivent une notification in-app, visible à partir de l’icône [notification Experience Cloud](https://experienceleague.adobe.com/fr/docs/core-services/interface/features/account-preferences#view-notifications) ![icône de notification Experience Cloud](assets/experience-cloud-notification.svg) dans Customer Journey Analytics.
+Les propriétaires de projet et [personnes spécifiques que vous mentionnez](#include-others-in-a-comment) reçoivent des notifications en fonction de leurs paramètres de notification Adobe Experience Cloud. Par défaut, ils reçoivent une notification in-app, visible à partir de l’icône [notification Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#view-notifications) ![icône de notification Experience Cloud](assets/experience-cloud-notification.svg) dans Customer Journey Analytics.
 
-De plus, les utilisateurs peuvent configurer les paramètres de notification d’Experience Cloud pour recevoir des notifications par e-mail et des notifications Slack en [s’abonnant aux notifications par e-mail](https://experienceleague.adobe.com/fr/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) et [s’abonnant aux notifications Slack](https://experienceleague.adobe.com/fr/docs/core-services/interface/features/account-preferences#slack).
+De plus, les utilisateurs peuvent configurer les paramètres de notification d’Experience Cloud pour recevoir des notifications par e-mail et des notifications Slack en [s’abonnant aux notifications par e-mail](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) et [s’abonnant aux notifications Slack](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#slack).
 
 ## Placer un badge pour un commentaire existant
 

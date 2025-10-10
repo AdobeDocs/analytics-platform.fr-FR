@@ -6,11 +6,11 @@ exl-id: f0c9387f-16a4-40c5-9bed-73b871efd22e
 source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '102'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
-# Marquer les mesures calculées comme favori
+# Marquer des mesures calculées en tant que favoris
 
 Vous pouvez marquer une mesure calculée comme favori. Pour marquer les mesures calculées en tant que favori, vous pouvez organiser votre mesure calculée. Tous les utilisateurs peuvent préférer les mesures calculées.
 

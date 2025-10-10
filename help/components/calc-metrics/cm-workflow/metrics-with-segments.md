@@ -90,7 +90,7 @@ Répétez les étapes ci-dessus pour la version internationale de votre mesure c
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Utiliser une mesure calculée segmentée comme mesure sans implémentation](https://video.tv.adobe.com/v/37941?quality=12&learn=on&captions=fre_fr){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Utiliser une mesure calculée segmentée comme mesure sans implémentation](https://video.tv.adobe.com/v/25407?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 

@@ -15,7 +15,7 @@ Les mesures et dimensions partagées fournissent un emplacement central pour gé
 
 Bien que les dimensions et mesures partagées permettent d’utiliser des composants communs dans de nombreuses vues de données, elles ne peuvent pas être partagées entre connexions.
 
-## Processus
+## Workflow
 
 La plupart des entreprises utilisent le workflow global suivant pour dédupliquer et gérer les dimensions et les mesures au fil du temps :
 

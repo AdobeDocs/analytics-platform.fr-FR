@@ -9,7 +9,7 @@ solution: Customer Journey Analytics
 source-git-commit: 7d3300336a955facc230f335d1452096700ea98b
 workflow-type: tm+mt
 source-wordcount: '777'
-ht-degree: 23%
+ht-degree: 24%
 
 ---
 
@@ -114,7 +114,7 @@ Pour créer le bloc de données, sélectionnez les composants du rapport et pers
 >[!MORELIKETHIS]
 >
 >[Sélectionner une vue de données](select-data-view.md)
->[Sélectionnez une période](select-date-range.md)
->[Filtrer les dimensions ](filter-dimensions.md)
->[Utiliser les segments](work-with-filters.md)
+>>[Sélectionnez une période](select-date-range.md)
+>>[Filtrer les dimensions ](filter-dimensions.md)
+>>[Utiliser les segments](work-with-filters.md)
 >

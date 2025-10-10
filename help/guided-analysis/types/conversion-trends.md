@@ -6,7 +6,7 @@ keywords: Product Analytics
 exl-id: 75501e77-a172-48b4-9c91-b12d39e93c37
 role: User
 source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '536'
 ht-degree: 100%
 
@@ -27,7 +27,7 @@ ht-degree: 100%
 L’analyse ![Tendances de conversion](/help/assets/icons/ConversionTrends.svg) **[!UICONTROL Tendances de conversion]** fournit une visualisation des tendances des taux de conversion au fil du temps. L’axe horizontal est un intervalle de temps, tandis que l’axe vertical représente le taux de conversion.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3423486/?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3421662/?quality=12&learn=on)
 
 
 ## Cas d’utilisation

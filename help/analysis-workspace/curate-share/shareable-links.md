@@ -1,6 +1,6 @@
 ---
 description: Découvrez comment créer des liens partageables vers des projets ou des visualisations.
-keywords: Partage de projets Analysis Workspace
+keywords: Partage Analysis Workspace
 title: Créer des liens partageables
 exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
 feature: Curate and Share

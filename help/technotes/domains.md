@@ -12,7 +12,7 @@ ht-degree: 20%
 
 # Domaines utilisés par Customer Journey Analytics
 
-Certaines configurations de pare-feu bloquent les domaines sur lesquels Customer Journey Analytics s’appuie pour son interface de produit. Vous pouvez utiliser cette liste de domaines pour modifier les paramètres réseau de votre entreprise afin d’autoriser l’accès aux produits au sein de votre entreprise. Adobe recommande d’autoriser ces domaines à travers le pare-feu de votre entreprise pour une expérience optimale.
+Certaines configurations de pare-feu bloquent les domaines sur lesquels Customer Journey Analytics s’appuie pour son interface de produit. Vous pouvez utiliser cette liste de domaines pour modifier les paramètres réseau de votre organisation afin d’autoriser l’accès aux produits depuis votre organisation. Adobe recommande d’autoriser ces domaines par le biais du pare-feu de votre entreprise pour une expérience optimale.
 
 | Technologie | Domaine |
 | --- | --- |
@@ -21,17 +21,17 @@ Certaines configurations de pare-feu bloquent les domaines sur lesquels Customer
 | Amazon CloudFront | `d30ln29764hddd.cloudfront.net` |
 | Gainsight | `esp.aptrinsic.com`, `esp-m.aptrinsic.com` |
 | LaunchDarkly | `app.launchdarkly.com` |
-| Stockage Azure Blob de Microsoft® | `awaascicdprodva7.blob.core.windows.net` |
-| Microsoft® Azure CDN | `aauicdnva7.azureedge.net` |
+| Stockage Azure Blob Microsoft® | `awaascicdprodva7.blob.core.windows.net` |
+| Réseau CDN Azure Microsoft® | `aauicdnva7.azureedge.net` |
 
 {style="table-layout:auto"}
 
 ## Domaines Adobe Experience Cloud
 
-Outre les domaines ci-dessus, le Adobe Experience Cloud s’appuie sur plusieurs domaines pour la collecte de données et l’exportation de rapports. Voir [Domaines utilisés par Adobe Experience Cloud](https://experienceleague.adobe.com/fr/docs/core-services/interface/data-collection/domains) pour cette liste de domaines.
+En plus des domaines ci-dessus, le Adobe Experience Cloud s’appuie sur plusieurs domaines pour la collecte de données et l’exportation de rapports. Voir [Domaines utilisés par le Adobe Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/domains) pour cette liste de domaines.
 
 >[!MORELIKETHIS]
 >
->[Adresses IP utilisées par le Customer Journey Analytics](ip-addresses.md)
+>[Adresses IP utilisées par Customer Journey Analytics](ip-addresses.md)
 >
->[Domaines utilisés par Adobe Experience Cloud](https://experienceleague.adobe.com/fr/docs/core-services/interface/data-collection/domains)
+>[Domaines utilisés par le Adobe Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/domains)

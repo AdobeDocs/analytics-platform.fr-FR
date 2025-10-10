@@ -233,7 +233,7 @@ Configurer le flux de données :
 
 Le flux de données est maintenant configuré pour transférer les données collectées depuis l’application mobile vers le jeu de données dans Adobe Experience Platform.
 
-Consultez [Présentation des flux de données](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=fr) pour plus d’informations sur la configuration d’un flux de données et la gestion des données sensibles.
+Consultez [Présentation des flux de données](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) pour plus d’informations sur la configuration d’un flux de données et la gestion des données sensibles.
 
 
 

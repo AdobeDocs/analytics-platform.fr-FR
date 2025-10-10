@@ -4,12 +4,12 @@ description: Découvrez comment développer des comptes clés à l’aide de Cus
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-badgePremium: label="B2B edition"
+badgePremium: label="B2B Edition"
 exl-id: f5294af8-b8dc-4239-b0f7-5c20d39007ee
 source-git-commit: 3c13ae26a9ef48454467fc21b8faaa9e078c7f9f
 workflow-type: tm+mt
 source-wordcount: '277'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -21,13 +21,13 @@ Lorsque vous envisagez la manière d’augmenter les comptes clés par le biais 
 
 ## Progression de l’étape de vente
 
-Vous souhaitez générer et distribuer des rapports de conversion de leads ad hoc et comprendre comment les comptes progressent dans l’entonnoir des ventes.
+Vous souhaitez générer et distribuer des rapports de conversion de leads ad hoc et comprendre comment les comptes progressent via le funnel des ventes.
 
 La visualisation [Abandons](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) vous permet de visualiser les taux de conversion et de déperdition entre des étapes prédéfinies dans un parcours séquentiel.
 
 ### Exemple
 
-Vous souhaitez voir les retombées de la partie supérieure de l’entonnoir des ventes (du prospect à l’opportunité) pour les comptes.
+Vous souhaitez voir les retombées de la partie supérieure du funnel de ventes (du prospect à l’opportunité) pour les comptes.
 
 1. [Création et configuration d’une visualisation Abandons](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md).
 1. Sélectionnez ![Paramètre](/help/assets/icons/Setting.svg) pour sélectionner **[!UICONTROL Compte]** comme **[!UICONTROL Conteneur d’abandons]**.

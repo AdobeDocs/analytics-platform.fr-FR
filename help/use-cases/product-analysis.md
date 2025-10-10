@@ -17,7 +17,7 @@ Customer Journey Analytics fournit aux équipes les outils nécessaires pour ana
 
 * **Gérer les données de produit à grande échelle** : ingérez, transformez et gérez facilement les données de produit pour répondre aux besoins de votre entreprise, en garantissant des informations fiables.
 * **Mesurer l’acquisition et l’activation** : suivez la manière dont les nouveaux utilisateurs découvrent votre produit et participent aux premiers événements porteurs de valeur.
-* **Mesurer l’engagement et l’adoption** : comprenez comment les utilisateurs progressent dans l’entonnoir du produit, identifiez les points de friction et suivez l’adoption des fonctionnalités clés.
+* **Mesurer l’engagement et l’adoption** : comprenez comment les utilisateurs progressent dans la funnel du produit, identifiez les points de friction et suivez l’adoption des fonctionnalités clés.
 * **Mesurer le taux de rétention et de perte de clientèle** : analysez le taux de rétention des utilisateurs au fil du temps, identifiez les indicateurs de perte de clientèle et élaborez des stratégies pour réduire le taux de chute et accroître la fidélité.
 * **Informations sur les produits d’action** : transformez les informations basées sur les données en stratégies exploitables pour améliorer l’expérience utilisateur et stimuler la croissance durable des produits.
 * **Partagez des informations avec votre organisation** : communiquez les résultats clés entre les équipes afin d’aligner les efforts, de favoriser la collaboration et de vous assurer que tout le monde travaille à l’atteinte des objectifs communs pour les produits et l’entreprise.
@@ -43,7 +43,7 @@ Les fonctionnalités suivantes de Adobe Experience Platform et Customer Journey 
 
 ## Acquisition et activation des mesures
 
-La croissance du produit repose sur des informations exploitables en amont, qui attirent de nouveaux utilisateurs, révèlent les chemins de conversion et éliminent les frictions le long du parcours.
+La croissance du produit repose sur des informations exploitables issues de la haute technologie funnel qui attirent de nouveaux utilisateurs, révèlent les chemins de conversion et éliminent les frictions le long du parcours.
 
 * L’acquisition permet de suivre les nouveaux utilisateurs qui accèdent à votre produit, y compris la manière dont ils arrivent et les efforts les plus ou les moins efficaces.
 * L’activation surveille les nouveaux utilisateurs qui interagissent avec votre premier événement de valeur, défini en fonction de vos objectifs spécifiques.
@@ -60,7 +60,7 @@ Les fonctionnalités suivantes de Customer Journey Analytics vous permettent de 
 
 ## Mesurer l’engagement et l’adoption
 
-L’acquisition de nouveaux utilisateurs étend la partie supérieure de votre entonnoir de produit. L’engagement se concentre sur l’orientation de ces utilisateurs et utilisatrices vers le bas de l’entonnoir et sur l’élimination des obstacles à leur réussite. Leur succès stimule directement le succès de votre entreprise.
+L’acquisition de nouveaux utilisateurs étend la partie supérieure de votre funnel de produit. L’engagement se concentre sur l’orientation de ces utilisateurs et utilisatrices vers le bas du funnel et sur la suppression des obstacles à leur réussite. Leur succès stimule directement le succès de votre entreprise.
 
 ![Analyse de l’engagement](/help/guided-analysis/assets/feature-matrix.png)
 
@@ -69,7 +69,7 @@ Les fonctionnalités suivantes de Customer Journey Analytics vous aident à suiv
 * [Analyse guidée : engagement](/help/guided-analysis/types/engagement.md)
 * [Analyse guidée : Tendances](/help/guided-analysis/types/trends.md)
 * [Analyse guidée : Fréquence](/help/guided-analysis/types/frequency.md)
-* [Analyse guidée : entonnoir](/help/guided-analysis/types/funnel.md)
+* [Analyse guidée : Funnel](/help/guided-analysis/types/funnel.md)
 * [Analyse guidée : Tendances de conversion](/help/guided-analysis/types/conversion-trends.md)
 * [Analyse guidée : impact des versions](/help/guided-analysis/types/release-impact.md)
 * [Analyse guidée : impact de la première utilisation&#x200B;](/help/guided-analysis/types/first-use-impact.md)
@@ -99,8 +99,8 @@ Les fonctionnalités suivantes d’Experience Cloud vous permettent d’agir eff
 * [Créer et publier des audiences](/help/components/audiences/publish.md)&#x200B; pour activation à partir de Customer Journey Analytics
 * Activer les audiences par le biais des produits Experience Cloud :
    * [Exécutez des expériences](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/content-management/content-experiment/get-started-experiment) dans AJO et Adobe Target, et mesurez l’impact des variations dans Customer Journey Analytics à l’aide du [panneau Expérimentation](/help/analysis-workspace/c-panels/experimentation.md)
-   * [Diffuser des engagements in-app](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/channels/in-app/get-started-in-app) aux utilisateurs dans AJO
-* [Activer des audiences](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/activate/activation-overview) vers des destinations externes avec la plateforme de données clients en temps réel d’Adobe&#x200B;
+   * [Diffuser des engagements in-app](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/in-app/get-started-in-app) aux utilisateurs dans AJO
+* [Activer des audiences](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activation-overview) vers des destinations externes avec la plateforme de données clients en temps réel d’Adobe&#x200B;
 
 ## Partagez des informations avec l’organisation&#x200B;
 

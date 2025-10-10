@@ -4,12 +4,12 @@ description: En savoir plus sur les cas d’utilisation standard de Customer Jou
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User, Admin
-badgePremium: label="B2B edition"
+badgePremium: label="B2B Edition"
 exl-id: 7c16cc62-5032-44a2-92e4-4a1c320f17aa
 source-git-commit: 3c13ae26a9ef48454467fc21b8faaa9e078c7f9f
 workflow-type: tm+mt
 source-wordcount: '371'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
@@ -37,7 +37,7 @@ Les rôles clés qui bénéficient de l’analyse que Customer Journey Analytics
 
 En fonction des personnes ci-dessus et de leurs exigences, les cas d’utilisation suivants sont identifiés :
 
-### Optimisation du marketing de compte
+### Optimiser le marketing de compte
 
 Analysez et explorez l’impact marketing :
 

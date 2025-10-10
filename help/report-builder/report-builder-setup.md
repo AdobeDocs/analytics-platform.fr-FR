@@ -17,7 +17,7 @@ ht-degree: 26%
 
 Cet article décrit les conditions requises pour utiliser Report Builder for Customer Journey Analytics dans Microsoft Excel. Découvrez également comment installer et configurer le complément.
 
-## Configuration requise
+## Exigences
 
 Report Builder pour Customer Journey Analytics est pris en charge dans les systèmes d’exploitation et navigateurs web ci-après.
 
@@ -66,7 +66,7 @@ Si l’onglet **[!UICONTROL Store]** n’est pas affiché :
 
 1. Cochez la case en regard de **[!UICONTROL Activer les expériences connectées facultatives]**.
 
-1. Relancez Excel.
+1. Redémarrez Excel.
 
 Si votre entreprise bloque l’accès au magasin Microsoft :
 

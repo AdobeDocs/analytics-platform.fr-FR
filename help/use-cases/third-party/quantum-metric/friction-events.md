@@ -38,7 +38,7 @@ Ce cas d’utilisation nécessite un champ de schéma dédié vers lequel envoye
 
 ## Étape 2 : capturer des événements de friction à l’aide de l’extension de balise Quantum Metric
 
-Voir [Extension Quantum Metric](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/catalog/analytics/quantum-metric) dans le guide des destinations Adobe Experience Platform pour obtenir des instructions sur la configuration de vos balises afin d’inclure des données de mesure quantique. L’utilisation de cette extension transmet plus de lignes dans un jeu de données existant.
+Voir [Extension Quantum Metric](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric) dans le guide des destinations Adobe Experience Platform pour obtenir des instructions sur la configuration de vos balises afin d’inclure des données de mesure quantique. L’utilisation de cette extension transmet plus de lignes dans un jeu de données existant.
 
 Utilisez les balises dans la collecte de données Adobe Experience Platform pour définir manuellement le nom de l’événement de friction afin qu’il puisse être inclus dans l’objet XDM et analysé. Pour ce faire, vous pouvez utiliser le code personnalisé de la règle :
 
@@ -78,5 +78,5 @@ Grâce aux données d’événement de friction de mesure quantique collectées 
 Les idées d’analyse possibles sont les suivantes :
 
 * Données d’événement de friction de tendance au fil du temps
-* Dans une visualisation des abandons ou des entonnoirs, ajoutez des événements Customer Journey Analytics comme certaines étapes et des événements de frottement de mesure quantique comme d’autres. Ce rapport vous permet de voir où les visiteurs rencontrent le plus souvent des problèmes.
+* Dans une visualisation Abandons ou funnel, ajoutez des événements Customer Journey Analytics comme certaines étapes et des événements de frottement de mesure quantique comme d’autres. Ce rapport vous permet de voir où les visiteurs rencontrent le plus souvent des problèmes.
 * Créez et appliquez un segment pour les visiteurs qui subissent des événements de friction afin d’effectuer une analyse plus approfondie

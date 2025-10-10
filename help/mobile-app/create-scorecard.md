@@ -29,7 +29,7 @@ Les informations suivantes indiquent aux curateurs et curatrices des données Cu
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Créer une carte de performance mobile](https://video.tv.adobe.com/v/3409729?quality=12&learn=on&captions=fre_fr){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Créer une carte de performance mobile](https://video.tv.adobe.com/v/343458?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 
@@ -212,7 +212,7 @@ Les diapositives détaillées personnalisées vous permettent d’être encore p
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Vues détaillées personnalisées](https://video.tv.adobe.com/v/3413787?quality=12&learn=on&captions=fre_fr){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Vues détaillées personnalisées](https://video.tv.adobe.com/v/3410002?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 
@@ -257,7 +257,7 @@ Regardez la vidéo pour en savoir plus sur la création d’histoires de donnée
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Histoires de données pour un projet de carte de performance mobile](https://video.tv.adobe.com/v/3420560/?quality=12&learn=on&captions=fre_fr){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Histoires de données pour un projet de carte de performance mobile](https://video.tv.adobe.com/v/3416392/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 

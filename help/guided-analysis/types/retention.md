@@ -6,9 +6,9 @@ keywords: Product Analytics
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
 source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
-workflow-type: ht
-source-wordcount: '1259'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1261'
+ht-degree: 97%
 
 ---
 
@@ -30,7 +30,7 @@ L’analyse ![Rétention](/help/assets/icons/Retention.svg) **[!UICONTROL Réten
 
 Dans cette analyse, l’axe X du graphique représente le temps écoulé depuis l’événement de début initial d’une personne et l’axe Y représente le pourcentage d’utilisateurs et d’utilisatrices qui interagissent avec un ou plusieurs événements de retour. Vous pouvez afficher à la fois la rétention et l’attrition sur des durées, et les durées affichées peuvent être personnalisées à l’aide des paramètres de requête. Sous le graphique, un tableau fournit des données agrégées avec la possibilité d’afficher des cohortes individuelles, c’est-à-dire un groupe de personnes qui ont effectué l’événement de début à la même date.
 
->[!VIDEO](https://video.tv.adobe.com/v/3435780/?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3430503/?quality=12&learn=on)
 
 
 ## Cas d’utilisation
@@ -60,7 +60,7 @@ Le rail de requête vous permet de configurer les composants suivants :
    * **[!UICONTROL Chaque]** : période que vous souhaitez pour chaque regroupement de durée. Les options incluent ce qui suit :
       * **[!UICONTROL Jour/Semaine/Mois]** : les options disponibles dépendent de la période sélectionnée. Ces options sont identiques au paramètre **[!UICONTROL Intervalle]** lors de la sélection de la période et mettent automatiquement à jour ce paramètre.
       * **[!UICONTROL Intervalles personnalisés]** : cette option est disponible uniquement pour le paramètre « Chaque». Vous pouvez ainsi comptabiliser les utilisateurs et utilisatrices sur une période plus longue, par exemple, du 7e au 10e jour au lieu du 7e jour uniquement.
-   * **[!UICONTROL Paramètres de durée]** : permet de contrôler les compartiments de durée affichés sur le graphique et le tableau. Une durée est la période postérieure à l’événement de début pendant laquelle l’événement de retour s’est produit. Note : les utilisateurs et utilisatrices qui remplissent les critères pour les compartiments de durée sont basés sur le temps écoulé, et non sur les jours du calendrier. Par exemple, si une personne se qualifie pour un événement à 23 h 55 le 6 septembre, puis pour un événement de retour à 00 h 05 le 7 septembre, elle n’apparaîtra pas dans le compartiment de durée d’une journée. Une période complète de 24 heures doit s’écouler avant que la personne ne soit qualifiée pour l’intervalle de durée d’une journée. Les intervalles de durée disponibles dépendent de la période que vous avez définie.
+   * **[!UICONTROL Paramètres de durée]** : permet de contrôler les compartiments de durée affichés sur le graphique et le tableau. Une durée est la période postérieure à l’événement de début pendant laquelle l’événement de retour s’est produit. Note : les utilisateurs et utilisatrices qui remplissent les critères pour les compartiments de durée sont basés sur le temps écoulé, et non sur les jours du calendrier. Par exemple, si un utilisateur est éligible à un événement à 11 :55 le 6 septembre, puis à un événement retour à 12 :05 le 7 septembre, il n’apparaît pas dans l’intervalle de durée d’un jour. Une période complète de 24 heures doit s’écouler avant que la personne ne soit qualifiée pour l’intervalle de durée d’une journée. Les intervalles de durée disponibles dépendent de la période que vous avez définie.
       * **[!UICONTROL Durées automatiques]** définit automatiquement les compartiments de durée en fonction de la longueur de la période et de la proximité par rapport au jour en cours de la période.
       * **[!UICONTROL Durées personnalisées]** vous permet de personnaliser les quatre compartiments de durée affichés sur le graphique et le tableau.
 * **[!UICONTROL Segments]** : segments que vous souhaitez mesurer. Chaque segment sélectionné ajoute une ligne à la table de cohorte. Vous pouvez inclure jusqu’à trois segments.

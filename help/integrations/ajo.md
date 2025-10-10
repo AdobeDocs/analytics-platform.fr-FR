@@ -5,7 +5,7 @@ exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
 source-git-commit: 9149a072dc8af3fac0d5272fe84baabca7fb6058
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3514'
 ht-degree: 100%
 
@@ -46,7 +46,7 @@ La connexion porte le nom **[!UICONTROL Connexion AJO activée (*nom du sandbox*
 | [!UICONTROL Jeu de données d’entité AJO] | [!UICONTROL Schéma d’enregistrement d’entité AJO] | [!UICONTROL Rechercher] | [!UICONTROL Autre] | - | ` _id` | `_experience. decisioning. propositions. scopeDetails. correlationID` | ![Status Green](assets/../../connections/assets/status-green.svg) Activé | ![Status Gray](assets/../../connections/assets/status-gray.svg) Désactivé |
 | [!UICONTROL Événements d’étape de parcours] | [!UICONTROL Schéma d’événement d’étape de parcours pour Journey Orchestration] | [!UICONTROL Événement] | [!UICONTROL Autre] | [!UICONTROL  IdentityMap(\&lt;primary\>)] | - | - | ![Status Green](assets/../../connections/assets/status-green.svg) Activé | ![Status Gray](assets/../../connections/assets/status-gray.svg) Désactivé |
 | [!UICONTROL Jeu de données d’événement d’expérience de tracking d’e-mail AJO] | [!UICONTROL Schéma d’événement d’expérience de tracking d’e-mail AJO] | [!UICONTROL Événement] | [!UICONTROL Autre] | [!UICONTROL IdentityMap(\&lt;primary\>)] | - | - | ![Status Green](assets/../../connections/assets/status-green.svg) Activé | ![Status Gray](assets/../../connections/assets/status-gray.svg) Désactivé |
-| [!UICONTROL Jeu de données d’événement de message de feedback AJO] | [!UICONTROL Jeu de données d’événement de message de feedback AJO] | [!UICONTROL Événement] | [!UICONTROL Autre] | [!UICONTROL IdentityMap(\&lt;primary\>)] | - | - | ![Status Green](assets/../../connections/assets/status-green.svg) Activé | ![Status Gray](assets/../../connections/assets/status-gray.svg) Désactivé |
+| [!UICONTROL Jeu de données d’événement de message de feedback AJO] | [!UICONTROL Schéma d’événement de commentaire aux messages AJO] | [!UICONTROL Événement] | [!UICONTROL Autre] | [!UICONTROL IdentityMap(\&lt;primary\>)] | - | - | ![Status Green](assets/../../connections/assets/status-green.svg) Activé | ![Status Gray](assets/../../connections/assets/status-gray.svg) Désactivé |
 | [!UICONTROL Jeu de données d’événement d’expérience de tracking de notifications push AJO] | [!UICONTROL Schéma d’événement d’expérience de tracking de notifications push AJO] | [!UICONTROL Événement] | [!UICONTROL Autre] | [!UICONTROL IdentityMap(\&lt;primary\>)] | - | - | ![Status Green](assets/../../connections/assets/status-green.svg) Activé | ![Status Gray](assets/../../connections/assets/status-gray.svg) Désactivé |
 
 

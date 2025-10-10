@@ -4,7 +4,8 @@ keywords: Analysis Workspace
 feature: Workspace Basics
 title: Débogueur de projet
 role: User
-source-git-commit: ae8c1fb127accae53ab9363a8cceedd5221a245b
+exl-id: 1335ec1f-5597-4e23-8228-3d477534de43
+source-git-commit: 695d5f686d10fc39b1b3d717a19fd6e874d81b33
 workflow-type: tm+mt
 source-wordcount: '466'
 ht-degree: 3%
@@ -17,7 +18,7 @@ Le débogueur de projet vous aide, ainsi que le support Adobe, à résoudre les 
 
 >[!NOTE]
 >
->Pour utiliser le débogueur, vous devez avoir un accès **Modifier** ou **Copier** [ au projet](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-25744).
+>Pour utiliser le débogueur, vous devez avoir un accès **Modifier** ou **Copier** [ au projet](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25744).
 >
 
 
@@ -96,6 +97,3 @@ Pour désactiver le débogueur :
 1. Sélectionnez **[!UICONTROL Aide]** > **[!UICONTROL Désactiver le débogueur]** dans le menu du projet Analysis Workspace.
 1. Sélectionnez **[!UICONTROL OK]** dans la boîte de dialogue **[!UICONTROL Désactiver le débogueur]**.
 1. Confirmez lorsque le navigateur vous invite à recharger la page ou le site.
-
-
-

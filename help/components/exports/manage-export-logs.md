@@ -1,5 +1,5 @@
 ---
-description: Gestion des journaux des exportations existantes
+description: Gérer les journaux pour les exportations existantes
 keywords: Analysis Workspace
 title: Gérer les journaux d’export
 feature: Components
@@ -8,67 +8,67 @@ role: User
 source-git-commit: ad43b199d4174894f0e428bcaf1748ca80bddb45
 workflow-type: tm+mt
 source-wordcount: '837'
-ht-degree: 5%
+ht-degree: 8%
 
 ---
 
 # Gérer les journaux d’export
 
-Les journaux d’exportation fournissent des détails sur chaque exportation et sont générés chaque fois que des données Analysis Workspace sont exportées vers le cloud. (Pour plus d’informations sur la manière dont les données peuvent être exportées vers le cloud, voir [Export des rapports de Customer Journey Analytics vers le cloud](/help/analysis-workspace/export/export-cloud.md).)
+Les journaux d’exportation fournissent des détails sur chaque exportation et sont générés chaque fois que des données Analysis Workspace sont exportées vers le cloud. (Pour plus d’informations sur la manière dont les données peuvent être exportées vers le cloud, voir [ Exporter des rapports Customer Journey Analytics vers le cloud](/help/analysis-workspace/export/export-cloud.md).)
 
-Pour les exportations planifiées, les journaux reflètent les paramètres d’exportation tels qu’ils étaient lors de l’envoi du journal. Les journaux ne peuvent pas être supprimés.
+Pour les exportations planifiées, les journaux reflètent les paramètres d’exportation tels qu’ils étaient lorsque le journal a été envoyé. Les journaux ne peuvent pas être supprimés.
 
 ## Afficher les journaux d’exportation
 
 1. Dans Customer Journey Analytics, sélectionnez [!UICONTROL **Composants**] > [!UICONTROL **Exports**].
 
-1. Sélectionnez l’onglet [!UICONTROL **Logs**] .
+1. Sélectionnez l’onglet [!UICONTROL **Journaux**].
 
-   ![Fenêtre d’exportation affichant l’onglet Journaux](assets/export-logs-tab.png)
+   ![Fenêtre Exporter affichant l’onglet Logs](assets/export-logs-tab.png)
 
-   Les détails de chaque journal sont affichés dans les colonnes disponibles.
+   Les détails de chaque journal s’affichent dans les colonnes disponibles.
 
 1. Effectuez l’une des opérations suivantes :
 
-   * [Personnalisez les colonnes affichées](#configure-columns).
+   * [Personnaliser les colonnes](#configure-columns) affichées.
 
-   * Sélectionnez l’ **icône d’informations** ![ icône d’informations](assets/information-icon.png) en regard du nom du journal pour afficher l’exportation associée au journal.
+   * Sélectionnez l’icône **Informations** ![Informations](assets/information-icon.png) en regard du nom du journal pour afficher l’exportation associée au journal.
 
-   * Sélectionnez l’ **icône Modifier l’exportation** ![icône d’information](assets/edit-export-icon.png) en regard du nom du journal pour modifier l’exportation associée au journal.
+   * Sélectionnez l’icône **Modifier l’icône d’exportation** ![Icône d’information](assets/edit-export-icon.png) en regard du nom du journal pour modifier l’exportation associée au journal.
 
-     Pour plus d’informations sur la modification d’une exportation, voir [Export des rapports de Customer Journey Analytics vers le cloud](/help/analysis-workspace/export/export-cloud.md).
+     Pour plus d’informations sur la modification d’une exportation, voir [Exporter des rapports Customer Journey Analytics vers le cloud](/help/analysis-workspace/export/export-cloud.md).
 
-## Filtrage et recherche de journaux
+## Filtrer et rechercher des journaux
 
-Pour trouver les informations dont vous avez besoin, vous pouvez filtrer la liste des logs ou rechercher un log.
+Pour trouver les informations dont vous avez besoin, vous pouvez filtrer la liste des journaux ou rechercher un journal.
 
-### Filtrage de la liste des logs
+### Filtrer la liste des logs
 
 1. Dans Customer Journey Analytics, sélectionnez [!UICONTROL **Composants**] > [!UICONTROL **Exports**].
 
-1. Sélectionnez l’onglet [!UICONTROL **Logs**] .
+1. Sélectionnez l’onglet [!UICONTROL **Journaux**].
 
-1. Sélectionnez l&#39;icône **Filtre** .
+1. Sélectionnez l’icône **Filtrer**.
 
-   ![Fenêtre Exportations présentant la liste Filtrer par type de compte](assets/export-log-filters.png)
+   ![Fenêtre Exports affichant la liste Filtrer par type de compte](assets/export-log-filters.png)
 
    Vous pouvez filtrer selon les critères suivants :
 
    | Filtre | Description |
    |---------|----------|
-   | [!UICONTROL **Export ID**] | Indiquez l’ID d’exportation du journal d’exportation que vous souhaitez afficher. |
-   | [!UICONTROL **Type de compte**] | Type de compte auquel le journal est associé. Les types de compte suivants sont disponibles : <ul><li>[!UICONTROL **Zone d’entrée de données AEP**]</li><li>[!UICONTROL **&lbrace;Amazon S3 Role ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Plateforme cloud Google**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. |
-   | [!UICONTROL **Statut**] | État de l’exportation. Les statuts suivants sont disponibles : <ul><li>[!UICONTROL **En attente**] : une instance spécifique d&#39;un export a été démarrée mais n&#39;est pas encore terminée.<p>La réexécution d’une exportation dont l’état est En attente retarde le processus d’exportation.</p></li><li>[!UICONTROL **Completed**] : une instance spécifique d’un export est en cours de traitement et est disponible dans le compte d’export.</li><li>[!UICONTROL **Échec**]<p>Différentes situations peuvent entraîner l’échec de l’exportation. Passez la souris sur l’état Échec pour afficher les détails sur l’échec.<p>Pour plus d’informations sur les raisons possibles d’un échec, voir [Dépannage des exports ayant échoué](/help/components/exports/troubleshoot-exports.md).</p> |
+   | [!UICONTROL **ID d’exportation**] | Indiquez l’ID d’exportation du journal d’exportation à afficher. |
+   | [!UICONTROL **Type de compte**] | Type de compte auquel le journal est associé. Les types de compte disponibles sont les suivants : <ul><li>[!UICONTROL **Zone de destination des données AEP**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **RBAC Azure**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. |
+   | [!UICONTROL **Statut**] | Statut de l’exportation. Les statuts suivants sont disponibles : <ul><li>[!UICONTROL **En attente**] : une instance spécifique d’une exportation a été démarrée, mais n’est pas encore terminée.<p>La réexécution d’une exportation dont le statut est En attente retarde le processus d’exportation.</p></li><li>[!UICONTROL **Terminé**] : le traitement d’une instance spécifique d’une exportation est terminé et elle est disponible dans le compte d’exportation.</li><li>[!UICONTROL **Échec**]<p>Plusieurs situations peuvent entraîner l’échec d’une exportation. Passez la souris sur le statut En échec pour afficher les détails de l’échec.<p>Pour plus d’informations sur les raisons possibles d’un échec, voir [Dépannage des exportations ayant échoué](/help/components/exports/troubleshoot-exports.md).</p> |
 
    {style="table-layout:auto"}
 
-### Recherche de journaux
+### Rechercher des journaux
 
 1. Dans Customer Journey Analytics, sélectionnez [!UICONTROL **Composants**] > [!UICONTROL **Exports**].
 
-1. Sélectionnez l’onglet [!UICONTROL **Logs**] .
+1. Sélectionnez l’onglet [!UICONTROL **Journaux**].
 
-1. Dans le champ de recherche, commencez à saisir les informations associées au journal que vous recherchez. Vous pouvez rechercher des données dans n’importe quelle colonne du tableau.
+1. Dans le champ de recherche, commencez à saisir toutes les informations associées au journal que vous recherchez. Vous pouvez rechercher des données à partir de n’importe quelle colonne disponible dans le tableau.
 
 <!-- removed for MVP: Retry an export You can re-run the export associated with the selected log, using the data as it was on the day the log was originally exported. This is useful when selecting a log that show a failed export or when selecting a log that was accidentally deleted. 
 
@@ -84,57 +84,57 @@ This option is not available when selecting multiple logs. -->
 
 ## Modification d’un export
 
-Vous pouvez éditer l&#39;export associé à un journal spécifique.
+Vous pouvez modifier l’exportation associée à un journal spécifique.
 
 Cette option n’est pas disponible lors de la sélection de plusieurs journaux.
 
 1. Dans Customer Journey Analytics, sélectionnez [!UICONTROL **Composants**] > [!UICONTROL **Exports**].
 
-1. Sélectionnez l’onglet [!UICONTROL **Logs**] .
+1. Sélectionnez l’onglet [!UICONTROL **Journaux**].
 
-1. Localisez le journal associé à l’exportation que vous souhaitez modifier.
+1. Recherchez le journal associé à l’exportation que vous souhaitez modifier.
 
-1. Sélectionnez l&#39;icône **Modifier l&#39;export** ![icône exporter le journal](assets/export-icon.png) en regard du nom du journal.
+1. Sélectionnez l’icône **Modifier l’exportation** ![icône du journal d’exportation](assets/export-icon.png) en regard du nom du journal.
 
    Ou
 
    Cochez la case en regard du journal, puis sélectionnez [!UICONTROL **Modifier l’exportation**].
 
-## Configuration des colonnes
+## Configurer les colonnes
 
-Vous pouvez ajouter ou supprimer des colonnes dans l’onglet [!UICONTROL Journaux] pour configurer les informations affichées.
+Vous pouvez ajouter ou supprimer des colonnes sur l’onglet [!UICONTROL Journaux] pour configurer les informations affichées.
 
-Sélectionnez un en-tête de colonne pour trier les journaux en fonction de cette colonne. Par défaut, les logs sont triés par date et heure de début de l&#39;export.
+Sélectionnez un en-tête de colonne pour trier les journaux en fonction de cette colonne. Par défaut, les journaux sont triés par date et heure de début de l’exportation.
 
-Pour configurer des colonnes sur l’onglet [!UICONTROL Logs] :
+Pour configurer les colonnes de l’onglet [!UICONTROL Journaux] :
 
 1. Dans Customer Journey Analytics, sélectionnez [!UICONTROL **Composants**] > [!UICONTROL **Exports**].
 
-1. Sélectionnez l’onglet [!UICONTROL **Logs**] .
+1. Sélectionnez l’onglet [!UICONTROL **Journaux**].
 
-1. Sélectionnez l&#39;icône **Personnaliser la table** ![ ](assets/customize-table-icon.png) dans le coin supérieur droit de la page [!UICONTROL Journaux].
+1. Sélectionnez l’icône **Personnaliser le tableau** ![Personnaliser le tableau](assets/customize-table-icon.png) dans le coin supérieur droit de la page [!UICONTROL Journaux].
 
    Les colonnes suivantes sont disponibles :
 
    | Colonne disponible | Description |
    |---------|----------|
-   | Nom de l’export | Nom de l’exportation. Les utilisateurs donnent un nom aux exportations lorsqu’ils les créent, comme décrit dans la section [Exporter les rapports des Customer Journey Analytics vers le cloud](/help/analysis-workspace/export/export-cloud.md). |
-   | ID d’exportation | L’identifiant automatiquement attribué à l’exportation lors de sa création. <!-- True? --> |
-   | ID d’instance | L’identifiant de l’instance du Customer Journey Analytics. <!-- True? --> |
-   | Nom de la vue de données | Nom de la vue de données associée à l’exportation. Les utilisateurs peuvent sélectionner la vue de données lors de la création de l’exportation, comme décrit dans la section [Exporter les rapports du Customer Journey Analytics vers le cloud](/help/analysis-workspace/export/export-cloud.md). |
-   | Nombre de fichiers | Le nombre de fichiers inclus dans l’exportation. |
-   | Taille | Taille de l’exportation.<p>La taille du fichier est calculée avec une base de 1 024, qui est parfois représentée sous la forme de KIB et MIB. Si votre fournisseur de cloud calcule la taille avec une base de 1 000, il se peut que la taille affichée dans votre fournisseur de cloud soit légèrement différente de celle affichée ici.</p> |
+   | Nom de l’export | Nom de l’exportation. Les utilisateurs nomment les exports au moment de leur création, comme décrit dans la section [Exporter des rapports Customer Journey Analytics vers le cloud](/help/analysis-workspace/export/export-cloud.md). |
+   | ID d’exportation | ID automatiquement attribué à l’exportation lors de sa création. <!-- True? --> |
+   | ID d’instance | Identifiant de l’instance Customer Journey Analytics. <!-- True? --> |
+   | Nom de la vue de données | Nom de la vue de données associée à l’exportation. Les utilisateurs peuvent sélectionner la vue de données lors de la création de l’exportation, comme décrit dans la section [Exporter des rapports Customer Journey Analytics vers le cloud](/help/analysis-workspace/export/export-cloud.md). |
+   | Nombre de fichiers | Nombre de fichiers inclus dans l’exportation. |
+   | Taille | Taille de l’exportation.<p>La taille de fichier est calculée avec une base de 1 024, qui est parfois représentée par KIB et MIB. Si votre fournisseur de cloud calcule la taille avec une base de 1 000, il se peut que la taille affichée dans votre fournisseur de cloud soit légèrement différente de celle affichée ici.</p> |
    | Emplacement | Emplacement sur le compte où les données ont été exportées. |
-   | Compte | Le compte sur lequel les données ont été exportées. |
-   | État | État de l’exportation. Les états disponibles sont [!UICONTROL En attente], [!UICONTROL Délivrés] et [!UICONTROL Échec]. |
+   | Compte | Compte sur lequel les données ont été exportées. |
+   | État | Statut de l’exportation. Les statuts disponibles sont [!UICONTROL En attente], [!UICONTROL Diffusé] et [!UICONTROL Échec]. |
    | Date de diffusion | Date à laquelle l’exportation a eu lieu. |
-   | Type de compte | Type de compte cloud sur lequel les données ont été exportées. Les types de compte disponibles sont [!UICONTROL Amazon S3 Role ARN], [!UICONTROL Google Cloud Platform], [!UICONTROL Azure SAS], [!UICONTROL Azure RBAC], [!UICONTROL Snowflake] et [!UICONTROL Adobe Experience Platform]. |
+   | Type de compte | Type de compte cloud sur lequel les données ont été exportées. Les types de compte disponibles sont les suivants : [!UICONTROL ARN du rôle Amazon S3] [!UICONTROL Google Cloud Platform], [!UICONTROL Azure SAS], [!UICONTROL Azure RBAC], [!UICONTROL Snowflake] et [!UICONTROL Adobe Experience Platform]. |
    | Nombre de lignes | Nombre de lignes incluses dans le tableau exporté. |
 
    {style="table-layout:auto"}
 
-1. Assurez-vous que toutes les colonnes à afficher sont sélectionnées. Les colonnes sélectionnées apparaissent sur la page [!UICONTROL Journaux] et affichent les informations pertinentes.
+1. Assurez-vous que toutes les colonnes que vous souhaitez afficher sont sélectionnées. Les colonnes sélectionnées s’affichent sur la page [!UICONTROL Journaux] et affichent les informations pertinentes.
 
 ## Afficher les journaux d’audit
 
-Les exportations de tables complètes sont également suivies dans les [journaux d’audit de Customer Journey Analytics](/help/privacy/audit-log.md). <!-- Need to see what the Component Type for full-table export will be and add it here. Also, under "Event type captured by audit logs" there would be a new event type called "Full-table export". 4 actions would be "Create, Delete, Edit, Export" and "API_Request"? Also information about the locations. Probably have a different component for the location credentials.-->
+Les exportations de table complète sont également suivies dans les journaux d’audit [Customer Journey Analytics](/help/privacy/audit-log.md). <!-- Need to see what the Component Type for full-table export will be and add it here. Also, under "Event type captured by audit logs" there would be a new event type called "Full-table export". 4 actions would be "Create, Delete, Edit, Export" and "API_Request"? Also information about the locations. Probably have a different component for the location credentials.-->

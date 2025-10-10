@@ -1,5 +1,5 @@
 ---
-description: Découvrez comment définir des périodes personnalisées dans Analysis Workspace.
+description: Découvrez comment définir des périodes personnalisées dans Analysis Workspace.
 keywords: Analysis Workspace
 title: Exemples de périodes personnalisées
 feature: Calendar
@@ -8,7 +8,7 @@ role: User
 source-git-commit: 28a657a0a93325a745dcf51c706cc488f599a6e0
 workflow-type: tm+mt
 source-wordcount: '112'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
@@ -16,26 +16,26 @@ ht-degree: 3%
 
 Cet article présente d’autres exemples de périodes personnalisées.
 
-## Il y a deux mois
+## 2 derniers mois
 
 +++ Détails
 
-Vous souhaitez définir une période personnalisée qui a été définie il y a deux mois. Vous utilisez l’un des paramètres prédéfinis.
+Vous souhaitez définir une période personnalisée qui couvre les deux derniers mois. Vous utilisez l’un des paramètres prédéfinis.
 
-![Il y a 2 derniers mois](assets/date-range-example-simple.png)
+![2 derniers mois](assets/date-range-example-simple.png)
 
 +++
 
 
-## En cours jusqu&#39;à la fin de la semaine dernière
+## En cours jusqu’à la fin de la semaine dernière
 
 +++ Détails
 
-Vous souhaitez définir une période qui définit la période entre le jour en cours il y a une semaine et la fin de cette même semaine dernière. Par exemple, si nous sommes le mercredi 11 septembre 2024. Vous souhaitez une période comprise entre le mercredi 4 septembre 2024 et le samedi 7 septembre 2024.
+Vous souhaitez définir une période qui couvre le jour en cours la semaine précédente et la fin de cette même semaine précédente. Par exemple, si nous sommes le mercredi 11 septembre 2024, vous souhaitez une période comprise entre le mercredi 4 septembre 2024 et le samedi 7 septembre 2024.
 
 ![Exemple de période](assets/date-range-example.png)
 
-+++
++++ 
 
 <!--
 ## Example: Use a 7-day rolling date range

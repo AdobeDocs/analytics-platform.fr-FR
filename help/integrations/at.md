@@ -13,11 +13,11 @@ ht-degree: 41%
 
 # Rapports Target
 
-La création de rapports Target dans Customer Journey Analytics vous permet de mesurer les activités Adobe Target et d’en créer des rapports directement dans Customer Journey Analytics. Cette fonctionnalité est comparable à ce qui est effectué dans Adobe Analytics (AA) via Analytics for Target (A4T), mais avec la connectivité à Adobe Experience Platform (AEP).
+Le compte rendu des performances de Target dans Customer Journey Analytics vous permet de mesurer les activités d’Adobe Target et d’en générer des rapports directement dans Customer Journey Analytics. Cette fonctionnalité est comparable à ce qui est effectué dans Adobe Analytics (AA) via Analytics for Target (A4T), mais avec la connectivité à Adobe Experience Platform (AEP).
 
-En ajoutant le jeu de données de recherche de classification cible (disponible par défaut dans Experience Platform) dans une connexion Customer Journey Analytics, les utilisateurs sont désormais bien exposés aux outils de création de rapports Target, à l’attribution de commandes Target et à d’autres fonctionnalités. Avec seulement quelques préparations mineures et des ajustements apportés dans la vue de données du Customer Journey Analytics, ces activités peuvent être immédiatement disponibles pour tout utilisateur qui souhaite envoyer des données Target directement dans CJA.
+En ajoutant le jeu de données de recherche de classification de Target (disponible par défaut dans Experience Platform) dans une connexion Customer Journey Analytics, les utilisateurs sont désormais correctement exposés aux outils de reporting de Target, à l’attribution d’ordre cible et à d’autres fonctionnalités. Avec seulement quelques préparations mineures et ajustements dans la vue de données Customer Journey Analytics, ces activités peuvent être mises immédiatement à la disposition de tout utilisateur qui souhaite envoyer des données Target directement dans CJA.
 
-## Avantages du Principal
+## avantages du Principal
 
 * Les personnes spécialisées dans le marketing peuvent appliquer dynamiquement les mesures de succès de Customer Journey Analytics aux rapports d’activité de Target, à tout moment. Il n’est pas nécessaire de spécifier tous les éléments avant d’exécuter l’activité.
 * Les personnes spécialisées dans le marketing peuvent tirer parti des fonctionnalités de Customer Journey Analytics, telles que le panneau Expérimentation, pour analyser davantage la personnalisation de leur site web.
@@ -27,9 +27,9 @@ En ajoutant le jeu de données de recherche de classification cible (disponible 
 
 Une fois que le jeu de données d’événement de classification cible a été ajouté à une connexion CJA, quelques ajustements mineurs doivent être effectués dans la vue de données CJA une fois que ces composants ont été ajoutés en tant que dimensions, notamment :
 
-* La définition de la persistance comme étant similaire à la manière dont elle est suivie dans Target (contactez un consultant Target ou le client pour vérifier les paramètres appropriés).
+* Définir la persistance de façon à ce qu’elle soit similaire au suivi dans Target (consultez un consultant Target ou le client pour vous assurer que les paramètres appropriés sont définis).
 
-* Définissez la persistance sur ALL, ce qui permet le suivi simultané de plusieurs activités Target et de ne pas les remplacer par des activités antérieures ou futures.
+* Définition de la persistance sur ALL, ce qui permet le suivi simultané de plusieurs activités Target et de ne pas les remplacer par des activités antérieures ou futures.
 
 ## Informations plus détaillées
 

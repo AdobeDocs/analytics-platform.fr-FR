@@ -8,12 +8,12 @@ role: User
 source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
 source-wordcount: '306'
-ht-degree: 88%
+ht-degree: 89%
 
 ---
 
 
-# Annotations des cartes de performance mobiles
+# Annotations de carte de performance mobile
 
 Vous pouvez afficher les annotations créées dans Analysis Workspace dans les cartes de performance mobiles. Les annotations dans les cartes de performance mobiles vous permettent de partager les nuances et informations des données contextuelles de votre organisation et de vos campagnes.
 

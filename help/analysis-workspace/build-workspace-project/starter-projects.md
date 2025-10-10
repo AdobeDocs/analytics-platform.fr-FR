@@ -3,14 +3,15 @@ description: Découvrez comment démarrer rapidement un projet en fonction de sc
 title: Démarrage rapide de projets
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 084c995658a5cf698d253f1c15229f621a8c55d5
+exl-id: 464032a1-6dae-4df5-b4db-b277788e88c2
+source-git-commit: c44e625f3a60ced481960fc05f92296a311343f4
 workflow-type: tm+mt
 source-wordcount: '75'
-ht-degree: 8%
+ht-degree: 12%
 
 ---
 
-# Démarrage rapide de projets
+# Démarrer rapidement des projets
 
 Vous pouvez démarrer rapidement un projet avec des panneaux et des visualisations pertinents. Pour ce faire, utilisez des modèles (ou des modèles d’entreprise) dans Analysis Workspace. Les modèles fournissent des informations rapides sur les scénarios de création de rapports les plus courants.
 
@@ -19,4 +20,3 @@ Pour plus d’informations sur l’utilisation de modèles dans Customer Journey
 * [Utiliser des modèles](/help/analysis-workspace/templates/use-templates.md)
 
 * [Créer et gérer des modèles](/help/analysis-workspace/templates/create-templates.md)
-

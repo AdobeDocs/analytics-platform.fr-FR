@@ -6,7 +6,7 @@ exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
 source-git-commit: 518bebc18611136873fce5c23dd7041afafe1220
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '4015'
 ht-degree: 100%
 
@@ -146,7 +146,7 @@ Cliquez sur les titres des sections liées pour plus d’informations et de cont
 | | Afficher les totaux généraux | Ce total représente tous les événements qui ont été collectés. Il est parfois appelé *total de la vue de données*. Lorsqu’un segment est appliqué au niveau du panneau ou dans le tableau à structure libre, ce total s’ajuste pour refléter tous les événements qui correspondent aux critères du segment. Le total général n’est pas pris en charge pour les tableaux ou les répartitions avec des [lignes statiques](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md). |
 | | Afficher les graphiques sparkline | Afficher ou masquer les graphiques en courbes au bas du graphique. Lorsqu’elle est masquée, la légende ne fait plus référence visuellement aux lignes. |
 | | Nombre | Détermine si une cellule affiche/masque la valeur numérique pour la mesure. Par exemple, si la mesure est Pages vues, la valeur numérique correspond au nombre de pages vues pour l’élément de ligne. |
-| | Pourcentage | Détermine si une cellule affiche/masque la valeur de pourcentage pour la mesure. Par exemple, si la mesure est Pages vues, la valeur de pourcentage correspond au nombre de pages vues pour l’élément de ligne, divisé par le nombre total de pages vues pour la colonne.  Note : vous pouvez afficher les pourcentages supérieurs à 100 %, pour plus de précision. Vous pouvez également rehausser le plafond supérieur à 1 000 % afin de garantir que les colonnes puissent s’adapter à une largeur trop importante. |
+| | Pourcentage | Détermine si une cellule affiche/masque la valeur de pourcentage pour la mesure. Par exemple, si la mesure est Pages vues, la valeur de pourcentage correspond au nombre de pages vues pour l’élément de ligne, divisé par le nombre total de pages vues pour la colonne.  Note : vous pouvez afficher les pourcentages supérieurs à 100 %, pour plus de précision. Vous pouvez également rehausser la limite supérieure à 1 000 % afin de garantir que les colonnes puissent s’adapter à une largeur trop importante. |
 | | Afficher les anomalies <!-- This setting was moved from the "Project" tab. this is already in the tool/docs under "Freeform table, But the doc doesn't give a definition. --> | Détermine si la détection des anomalies est exécutée sur les valeurs de cette colonne. |
 | | Afficher la prévision | Détermine si les valeurs de prévision sont affichées automatiquement pour la première colonne de mesures dans un tableau à structure libre de série temporelle que vous créez. |
 | | Interpréter zéro comme n’étant pas une valeur | Pour les cellules dont la valeur est 0, détermine s’il convient d’afficher un 0 ou une cellule vierge. Ce paramètre est utile lorsque vous examinez les données pour chaque jour d’un mois et que certains jours n’ont pas encore eu lieu.  Des cellules vierges peuvent être affichées au lieu de 0 pour les dates futures. Les diagrammes respectent également ce paramètre (c.-à-d. qu’ils n’affichent pas une ligne ou une barre avec des valeurs 0 lorsque ce paramètre est activé). |

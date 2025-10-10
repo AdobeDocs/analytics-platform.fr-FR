@@ -1,6 +1,6 @@
 ---
-title: Création d’une propriété de balise et ajout de l’extension Web SDK
-description: Découvrez comment créer une propriété de balise et ajouter l’extension Web SDK
+title: Créer une propriété de balise et ajouter l’extension SDK web
+description: Découvrir comment créer une propriété de balise et ajouter l’extension SDK web
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -8,7 +8,7 @@ exl-id: 13b413fd-2103-427a-b251-5b3a19046bdb
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '115'
-ht-degree: 60%
+ht-degree: 80%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 60%
 
 Vous pouvez installer le SDK web Platform en installant le package NPM afin de contrôler le processus de création pour le SDK web JavaScript d’Adobe Experience Platform.
 
-1. Suivez les informations de la section [Option 3 : Utilisation du package NPM](https://experienceleague.adobe.com/fr/docs/experience-platform/edge/fundamentals/installing-the-sdk#option-3-using-the-npm-package) dans [Installation de Web SDK](https://experienceleague.adobe.com/fr/docs/experience-platform/edge/fundamentals/installing-the-sdk) dans le Guide de Web SDK.
+1. Suivez les informations de la section [Option 3 : Utilisation du package NPM](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/installing-the-sdk#option-3-using-the-npm-package) dans [Installation de Web SDK](https://experienceleague.adobe.com/fr/docs/experience-platform/edge/fundamentals/installing-the-sdk) dans le Guide de Web SDK.
 
 {{upgrade-final-step}}
 

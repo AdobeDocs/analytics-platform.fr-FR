@@ -24,7 +24,7 @@ La fonction de planification vous permet également de configurer la protection 
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Schedule Workbooks](https://video.tv.adobe.com/v/3417504/?quality=12&learn=on&captions=fre_fr){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Schedule Workbooks](https://video.tv.adobe.com/v/3413079/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 
@@ -129,7 +129,7 @@ Dans les deux cas, un toast de confirmation s’affiche au bas du hub Report Bui
 
 Pour annuler l’envoi du classeur, sélectionnez **[!UICONTROL Annuler]**.
 
-## Gestion des classeurs planifiés
+## Gérer les classeurs planifiés
 
 Pour plus d’informations sur la gestion des classeurs déjà planifiés, voir [ Gérer les classeurs planifiés ](/help/report-builder/manage-schedules-reportbuilder.md).
 

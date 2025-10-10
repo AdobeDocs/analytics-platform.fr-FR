@@ -365,7 +365,7 @@ Vous pouvez lier des valeurs à des dimensions définies sur des événements pr
    }
    ```
 
-1. Il trouve un appareil photo qui lui plaît et lʼajoute au panier.
+1. Il clique sur un appareil photo qui lui plaît et lʼajoute au panier.
 
    ```json
    {
@@ -387,7 +387,7 @@ Vous pouvez lier des valeurs à des dimensions définies sur des événements pr
    }
    ```
 
-1. Il trouve une ceinture à sa taille et lʼajoute au panier.
+1. Il clique sur une ceinture à sa taille et lʼajoute au panier.
 
    ```json
    {
@@ -440,4 +440,4 @@ Cependant, si vous liez `product_finding_method` à la mesure Ajouts au panier, 
 
 >[!MORELIKETHIS]
 >
->Tutoriel [Lier des dimensions dans les vues de données](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views.html?lang=fr)
+>Tutoriel [Lier des dimensions dans les vues de données](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views.html)

@@ -22,12 +22,12 @@ Un appareil partagé est un appareil utilisé par plusieurs personnes. Les scén
 
 Lorsque deux personnes utilisent le même appareil et effectuent toutes deux un achat authentifié, les exemples de données d’événement peuvent ressembler à ceci :
 
-| Événement | Horodatage | Nom de la page | ID d’appareil | Adresse électronique |
+| Événement | Date et heure | Nom de la page | ID d’appareil | Adresse électronique |
 |--:|---|---|---|---|
 | 1 | 12/05/2023 12:01 | Page d’accueil | `1234` | |
-| 2 | 12/05/2023 12:02 | Page de produit | `1234` | |
+| 2 | 12/05/2023 12:02 | Page produit | `1234` | |
 | 3 | 12/05/2023 12:03 | Succès de la commande | `1234` | `ryan@a.com` |
-| 4 | 12/05/2023 12:07 | Page de produit | `1234` | |
+| 4 | 12/05/2023 12:07 | Page produit | `1234` | |
 | 5 | 12/05/2023 12:08 | Succès de la commande | `1234` | `cassidy@a.com` |
 
 Comme vous pouvez le voir dans ce tableau, une fois que l’authentification se produit sur les événements 3 et 5, un lien commence à se former entre un identifiant d’appareil et un identifiant de personne. Pour comprendre l’impact de tout effort marketing au niveau d’une personne, ces événements non authentifiés doivent être attribués à la bonne personne.
@@ -49,16 +49,16 @@ L’assemblage peut attribuer des données d’appareil partagées à l’aide d
 
 ### Attribution de dernière authentification
 
-Last-auth attribue toutes les activités inconnues d’un appareil partagé à l’utilisateur qui s’est authentifié pour la dernière fois. Le service d’identités Experience Platform crée le graphique en fonction de l’attribution de la dernière authentification et, à ce titre, est utilisé dans le groupement basé sur les graphiques. Pour plus d’informations, consultez [Règles de liaison des graphiques d’identités](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/features/identity-graph-linking-rules/identity-optimization-algorithm#identity-optimization-algorithm-details) .
+Last-auth attribue toutes les activités inconnues d’un appareil partagé à l’utilisateur qui s’est authentifié pour la dernière fois. Experience Platform Identity Service crée le graphique en fonction de l’attribution de la dernière authentification et, à ce titre, est utilisé dans le groupement basé sur les graphiques. Pour plus d’informations, consultez [Règles de liaison des graphiques d’identités](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/identity-optimization-algorithm#identity-optimization-algorithm-details) .
 
 Lorsque l’attribution Dernière authentification est utilisée dans le groupement, les identifiants groupés se résolvent comme illustré dans le tableau ci-dessous.
 
-| Horodatage | Nom de la page | ID d’appareil | Adresse électronique | ID regroupé |
+| Date et heure | Nom de la page | ID d’appareil | Adresse électronique | ID regroupé |
 |---|---|---|---|---|
 | 12/05/2023 12:01 | Page d’accueil | `1234` | | `cassidy@a.com` |
-| 12/05/2023 12:02 | Page de produit | `1234` | | `cassidy@a.com` |
+| 12/05/2023 12:02 | Page produit | `1234` | | `cassidy@a.com` |
 | 12/05/2023 12:03 | Succès de la commande | `1234` | `ryan@a.com` | `cassidy@a.com` |
-| 12/05/2023 12:07 | Page de produit | `1234` | | `cassidy@a.com` |
+| 12/05/2023 12:07 | Page produit | `1234` | | `cassidy@a.com` |
 | 12/05/2023 12:08 | Succès de la commande | `1234` | `cassidy@a.com` | `cassidy@a.com` |
 | 13/05/2023 11:08 | Page d’accueil | `1234` | | `cassidy@a.com` |
 
@@ -69,12 +69,12 @@ La division de l’appareil attribue une activité anonyme d’un appareil parta
 
 Lorsque l’attribution fractionnée de l’appareil est utilisée dans le groupement, les identifiants groupés se résolvent comme illustré dans le tableau ci-dessous.
 
-| Horodatage | Nom de la page | ID d’appareil | Adresse électronique | ID regroupé |
+| Date et heure | Nom de la page | ID d’appareil | Adresse électronique | ID regroupé |
 |---|---|---|---|---|
 | 12/05/2023 12:01 | Page d’accueil | `1234` | | `ryan@a.com` |
-| 12/05/2023 12:02 | Page de produit | `1234` | | `ryan@a.com` |
+| 12/05/2023 12:02 | Page produit | `1234` | | `ryan@a.com` |
 | 12/05/2023 12:03 | Succès de la commande | `1234` | `ryan@a.com` | `ryan@a.com` |
-| 12/05/2023 12:07 | Page de produit | `1234` | | `ryan@a.com` |
+| 12/05/2023 12:07 | Page produit | `1234` | | `ryan@a.com` |
 | 12/05/2023 12:08 | Succès de la commande | `1234` | `cassidy@a.com` | `cassidy@a.com` |
 | 13/05/2023 11:08 | Page d’accueil | `1234` | | `cassidy@a.com` |
 
@@ -123,7 +123,7 @@ Pour comprendre l’exposition des appareils partagés, vous pouvez envisager d�
 
 2. **Attribution d’événements aux appareils partagés**
 
-   Pour les appareils partagés identifiés, déterminez le nombre total d’événements qui peuvent être attribués à ces appareils. Cette attribution fournit des informations sur l’impact des appareils partagés sur vos données et sur les implications pour l’analyse.
+   Pour les appareils partagés identifiés, déterminez le nombre total d’événements qui peuvent être attribués à ces appareils. Cette attribution permet à insight de comprendre l’impact des appareils partagés sur vos données et les implications pour l’analyse.
 
    ```sql
    SELECT COUNT(*) AS total_events,

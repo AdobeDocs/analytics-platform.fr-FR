@@ -1,6 +1,6 @@
 ---
 title: Utiliser des tableaux d’objets
-description: Découvrez comment les rapports Customer Journey Analytics sur les hiérarchies de données.
+description: Découvrez comment Customer Journey Analytics crée des rapports sur les hiérarchies de données.
 exl-id: 59318da7-5408-4a9d-82aa-8bcbec7f7364
 solution: Customer Journey Analytics
 feature: Use Cases
@@ -14,13 +14,13 @@ ht-degree: 61%
 
 # Utilisation de tableaux d’objets
 
-Certains schémas de plateforme peuvent avoir des tableaux d’objets. Adobe Customer Journey Analytics prend en charge l’ingestion et la création de rapports de tableaux d’objets dans les données d’événement, de recherche et de profil. Un des exemples les plus courants est celui du panier, qui contient plusieurs produits. Chaque produit a un nom, un SKU, une catégorie, un prix, une quantité et toute autre dimension dont vous souhaitez effectuer le suivi. Toutes ces facettes ont des exigences distinctes, mais doivent toutes tenir dans le même accès.
+Certains schémas de plateforme peuvent avoir des tableaux d’objets. Adobe Customer Journey Analytics prend en charge l’ingestion et le compte rendu des performances des tableaux d’objets dans les données d’événement, de recherche et de profil. Un des exemples les plus courants est celui du panier, qui contient plusieurs produits. Chaque produit a un nom, un SKU, une catégorie, un prix, une quantité et toute autre dimension dont vous souhaitez effectuer le suivi. Toutes ces facettes ont des exigences distinctes, mais doivent toutes tenir dans le même accès.
 
-Dans les versions précédentes d’Adobe Analytics, cet exploit a été accompli à l’aide de la variable `products`. Il s’agissait d’une chaîne concaténée séparée par des points-virgules (`;`) pour séparer les facettes d’un produit, tandis que des virgules (`,`) délimitaient les produits. C’était la seule variable avec une prise en charge limitée des « tableaux d’objets ». Les variables à plusieurs valeurs, telles que les variables de liste, peuvent prendre en charge l’équivalent de tableaux, mais elles ne peuvent pas prendre en charge les « tableaux d’objets ». Customer Journey Analytics développe ce concept en prenant en charge des hiérarchies arbitrairement profondes au sein d’une seule ligne de données, une fonctionnalité qui n’est disponible dans aucune version précédente d’Adobe Analytics.
+Dans les versions précédentes d’Adobe Analytics, cet exploit a été accompli à l’aide de la variable `products`. Il s’agissait d’une chaîne concaténée séparée par des points-virgules (`;`) pour séparer les facettes d’un produit, tandis que des virgules (`,`) délimitaient les produits. C’était la seule variable avec une prise en charge limitée des « tableaux d’objets ». Les variables à plusieurs valeurs, telles que les variables de liste, peuvent prendre en charge l’équivalent de tableaux, mais elles ne peuvent pas prendre en charge les « tableaux d’objets ». Customer Journey Analytics développe ce concept en prenant en charge des hiérarchies arbitrairement profondes au sein d’une seule ligne de données, une fonctionnalité indisponible dans les versions précédentes d’Adobe Analytics.
 
-## Même exemple d’événement
+## Exemple d’événement identique
 
-L’événement suivant est un objet JSON qui représente l’achat d’un client à partir d’une machine à laver et d’un sèche-linge.
+L’événement suivant est un objet JSON qui représente un achat d’une machine à laver et d’un sèche-linge par un client.
 
 ```json
 {
@@ -82,9 +82,9 @@ Lors de la création d’une vue de données, les dimensions et mesures suivante
    * produit : garantie
    * produit : garantie : chiffre d’affaires
 
-### Exemples d’événements identiques (comportement des rapports)
+### Exemples d’événements identiques (comportement de création de rapports)
 
-En utilisant uniquement l’événement ci-dessus, les tableaux suivants affichent les rapports Workspace avec certaines combinaisons de dimensions et de mesures.
+En utilisant uniquement l’événement ci-dessus, les tableaux suivants présentent les rapports Workspace avec certaines combinaisons de dimensions et de mesures.
 
 | `product : name` | `product : orders` | `product : revenue` |
 | --- | --- | --- |
@@ -144,7 +144,7 @@ Si vous souhaitez obtenir un rapport sur le seul chiffre d’affaires lié à la
 | `extended` | `50` |
 | `Total` | `250` |
 
-Customer Journey Analytics examine ces parties de l’événement pour générer le rapport :
+Customer Journey Analytics examine les parties suivantes de l’événement pour générer le rapport :
 
 ```diff
 {
@@ -246,7 +246,7 @@ Notez les commandes auxquelles aucun nom n’est associé. Il s’agit des comma
 
 ### Combinaison de mesures
 
-Customer Journey Analytics ne combine pas nativement des mesures portant le même nom si elles se trouvent à différents niveaux d’objet.
+Customer Journey Analytics ne combine pas nativement des mesures dotées du même nom si elles se trouvent à différents niveaux d’objet.
 
 | `product : category` | `product : revenue` | `product : warranty : revenue` |
 | --- | --- | --- |
@@ -270,5 +270,5 @@ L’application de cette mesure calculée affiche les résultats souhaités :
 
 ## Limites
 
-Des limites s’appliquent aux tableaux dans les données utilisées par Customer Journey Analytics et modélisées dans le cadre d’un schéma dans Experience Platform. Voir [Limites de modèle de données](https://experienceleague.adobe.com/fr/docs/experience-platform/profile/guardrails#data-model-limits) et [Limites de taille de données](https://experienceleague.adobe.com/fr/docs/experience-platform/profile/guardrails#data-size-limits) dans les [ garde-fous par défaut pour la segmentation et les données de profil client en temps réel](https://experienceleague.adobe.com/fr/docs/experience-platform/profile/guardrails).
+Des limitations s’appliquent aux tableaux dans les données utilisées par Customer Journey Analytics et modélisées dans le cadre d’un schéma dans Experience Platform. Consultez les sections [Limites du modèle de données](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-model-limits) et [Limites de taille des données](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-size-limits) dans le [Mécanismes de sécurisation par défaut pour les données et la segmentation du profil client en temps réel](https://experienceleague.adobe.com/fr/docs/experience-platform/profile/guardrails).
 

@@ -1,22 +1,22 @@
 ---
-description: Explique les facteurs qui influencent la cohérence des mesures et du nombre d’adhésions à l’audience entre Real-time Customer Data Platform (Real-Time CDP) et Customer Journey Analytics.
-title: Cohérence des mesures et des adhésions à l’audience
+description: Explique les facteurs qui influencent la cohérence des mesures et du nombre d’appartenances à une audience entre Real-time Customer Data Platform (Real-Time CDP) et Customer Journey Analytics.
+title: Cohérence des mesures et des appartenances à une audience
 role: Admin
 feature: Basics
 exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
 source-git-commit: 7c906e30d54362713f5013c8661ee523938d4b0f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 100%
 
 ---
 
 
-# Cohérence des mesures et des adhésions à l’audience
+# Cohérence des mesures et des appartenances à une audience
 
-Dans des scénarios réels, la cohérence des mesures et du nombre d’adhésions à l’audience dans Real-time Customer Data Platform (Real-Time CDP) et Customer Journey Analytics ne peut pas être garantie. Ce document en explique la raison.
+Dans des scénarios réels, la cohérence des mesures et du nombre d’appartenances à une audience dans Real-time Customer Data Platform (Real-Time CDP) et Customer Journey Analytics ne peut pas être garantie. Ce document en explique la raison.
 
-Lors de la comparaison du nombre d’adhésions à l’audience entre Real-Time CDP et Customer Journey Analytics, il est important de garder à l’esprit les différentes fonctions de ces deux outils. Real-Time CDP utilise les données de profil client pour cibler les expériences numériques des clientes et clients individuels, tandis que Customer Journey Analytics est conçu pour aider les utilisateurs et utilisatrices à comprendre les modèles dans les mesures et segments commerciaux clés. Bien que la publication d’audiences de Customer Journey Analytics vers Real-Time CDP permette à l’utilisateur ou à l’utilisatrice de ces outils d’« activer » facilement et nativement une information, en tirant parti des enseignements obtenus dans Customer Journey Analytics, les fonctions de ces deux outils restent fondamentalement différentes.
+Lors de la comparaison du nombre d’appartenances à une audience entre Real-Time CDP et Customer Journey Analytics, il est important de garder à l’esprit les différentes fonctions de ces deux outils. Real-Time CDP utilise les données de profil client pour cibler les expériences numériques des clientes et clients individuels, tandis que Customer Journey Analytics est conçu pour aider les utilisateurs et utilisatrices à comprendre les modèles dans les mesures et segments commerciaux clés. Bien que la publication d’audiences de Customer Journey Analytics vers Real-Time CDP permette à l’utilisateur ou à l’utilisatrice de ces outils d’« activer » facilement et nativement une information, en tirant parti des enseignements obtenus dans Customer Journey Analytics, les fonctions de ces deux outils restent fondamentalement différentes.
 
 ## Différences dans les configurations d’identité
 

@@ -7,15 +7,15 @@ hide: true
 hidefromtoc: true
 exl-id: d9d7f186-9077-4372-94ad-8dd5b97779ca
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '897'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
 # Étape 3 : envoyer les données à Adobe Experience Platform lors de la mise à niveau
 
-+++Développez cette section pour voir où les informations de cette page s’inscrivent dans le processus de mise à niveau plus général. Vérifiez que toutes les étapes de mise à niveau précédentes sont terminées.
++++Développez cette section pour voir la place des informations de cette page dans un processus de mise à niveau plus large. Vérifiez que toutes les étapes de mise à niveau précédentes sont terminées.
 
 Avant de poursuivre cette section, assurez-vous d’avoir effectué toutes les tâches de mise à niveau précédentes.
 

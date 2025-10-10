@@ -1,13 +1,13 @@
 ---
-description: Utilisez le calendrier et les périodes pour spécifier des périodes dans Analysis Workspace.
-title: Présentation des périodes
+description: Utilisez le calendrier et les périodes pour spécifier des périodes dans Analysis Workspace.
+title: Vue d’ensemble des périodes
 feature: Calendar
 exl-id: 99b31bd9-32f1-4da1-9e47-6d90c66282c5
 role: User
 source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
 workflow-type: tm+mt
 source-wordcount: '532'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Les composants de période vous permettent de définir et de remplacer les param
 
 +++ View a video illustrating use of calendar and date ranges
 
->[!VIDEO](https://video.tv.adobe.com/v/327346?format=jpeg&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/24136?format=jpeg)
 
 {{videoaa}}
 +++
@@ -47,8 +47,8 @@ Vous pouvez également utiliser une période dans un tableau à structure libre 
 Vous utilisez une période comme vous [utiliseriez n’importe quel composant](/help/components/overview.md#analysis-workspace-components). Vous faites glisser la période à partir du panneau du composant ![Calendrier](/help/assets/icons/Calendar.svg) **[!UICONTROL Périodes]** et déposez le composant sur :
 
 - **[!UICONTROL Calendrier]** : vous ![Basculer](/help/assets/icons/Switch.svg) **[!UICONTROL Remplacez]** la configuration actuelle du calendrier par la période.
-- **En-tête de colonne de mesure** : vous ![Basculer](/help/assets/icons/Switch.svg) **[!UICONTROL Remplacez]** la mesure, ![Ajouter](/help/assets/icons/Add.svg)**[!UICONTROL Ajoutez &#x200B;]**&#x200B;la période en tant que mesure ou ![Filtrer](/help/assets/icons/Filter.svg)**[!UICONTROL &#x200B; Filtrez &#x200B;]**&#x200B;la mesure à l’aide du composant de période.
-- **En-tête de colonne Dimension** : vous ![Basculer](/help/assets/icons/Switch.svg) **[!UICONTROL Remplacez]** les dimensions actuelles. La nouvelle dimension s’intitule désormais **[!UICONTROL Périodes]**. Une fois que la dimension est Périodes, vous pouvez ![Ajouter](/help/assets/icons/Add.svg)**[!UICONTROL Ajouter &#x200B;]**&#x200B;des périodes supplémentaires en tant qu’éléments de dimension.
+- **En-tête de colonne de mesure** : vous ![Basculer](/help/assets/icons/Switch.svg) **[!UICONTROL Remplacez]** la mesure, ![Ajouter](/help/assets/icons/Add.svg)**[!UICONTROL Ajoutez ]**la période en tant que mesure ou ![Filtrer](/help/assets/icons/Filter.svg)**[!UICONTROL  Filtrez ]**la mesure à l’aide du composant de période.
+- **En-tête de colonne Dimension** : vous ![Basculer](/help/assets/icons/Switch.svg) **[!UICONTROL Remplacez]** les dimensions actuelles. La nouvelle dimension s’intitule désormais **[!UICONTROL Périodes]**. Une fois que la dimension est Périodes, vous pouvez ![Ajouter](/help/assets/icons/Add.svg)**[!UICONTROL Ajouter ]**des périodes supplémentaires en tant qu’éléments de dimension.
 - **Élément de dimension** : vous effectuez une ![Répartition](/help/assets/icons/Breakdown.svg) **[!UICONTROL Répartition]** de l’élément de dimension spécifique par période.
 
 Vous pouvez également ajouter une colonne de période directement dans une visualisation de tableau à structure libre :

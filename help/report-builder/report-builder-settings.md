@@ -9,11 +9,11 @@ solution: Customer Journey Analytics
 source-git-commit: 9794779894fbecb433c16d108c555c5f81a4b491
 workflow-type: tm+mt
 source-wordcount: '258'
-ht-degree: 29%
+ht-degree: 31%
 
 ---
 
-# Paramètres de Report Builder
+# Paramètres de Report Builder
 
 Utilisez le volet **Paramètres** pour configurer les paramètres au niveau de l’application, tels que la langue affichée par l’interface utilisateur ou si vous souhaitez travailler ou non en mode hors ligne. Les paramètres sont appliqués immédiatement et ils sont définis pour toutes les sessions suivantes jusqu’à ce qu’ils soient modifiés.
 

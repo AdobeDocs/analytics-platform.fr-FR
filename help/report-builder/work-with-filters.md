@@ -13,7 +13,7 @@ ht-degree: 6%
 
 ---
 
-# Utilisation des segments
+# Utiliser des segments
 
 Vous pouvez appliquer des segments lorsque vous créez un bloc de données ou lorsque vous sélectionnez **[!UICONTROL Modifier le bloc de données]** dans le panneau **[!UICONTROL Commandes]**.
 

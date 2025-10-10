@@ -1,5 +1,5 @@
 ---
-description: Découvrez comment le créateur de segments fournit une zone de travail pour faire glisser et déposer des mesures, des dimensions, des segments et des événements vers les visiteurs du segment en fonction de la logique de hiérarchie de conteneur, des règles et des opérateurs. Découvrez comment créer et enregistrer des segments simples ou complexes qui identifient les attributs et les actions des visiteurs sur les visites et les accès aux pages.
+description: Découvrez comment le créateur de segments fournit une zone de travail pour faire glisser et déposer des mesures, des dimensions, des segments et des événements vers les visiteurs du segment en fonction de la logique de hiérarchie de conteneur, des règles et des opérateurs. Découvrez comment créer et enregistrer des segments simples ou complexes qui identifient les attributs et actions des visiteurs et visiteuses entre les visites et accès aux pages.
 title: Créer des segments
 feature: Filters, Segments
 role: User
@@ -7,7 +7,7 @@ exl-id: 160021f1-6942-4682-9114-d375307d9912
 source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '1570'
-ht-degree: 87%
+ht-degree: 88%
 
 ---
 

@@ -55,5 +55,5 @@ Le service ne fait aucune hypothèse sur les données utilisateur. Par exemple, 
 ## Références
 
 1. Taylor, Sean J. et Benjamin Letham : *Prévision à grande échelle.* The American Statistician 72.1 (2018) : 37-45.
-1. Triebe, Oskar et al.: *Neuralprophet : Prévision explicable à grande échelle.Préimpression arXiv*:2111.15397(2021).
+1. Triebe, Oskar et al.: *Neuralprophet : Prévision explicable à grande échelle.Préimpression arXiv* :2111.15397(2021).
 1. Zhang et Arbor : détection des anomalies de séries temporelles *.* demande de brevet US #18/057883.

@@ -7,7 +7,7 @@ exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
 source-git-commit: ab0e6f0578cbc6f856c2b0a46b1231cce145b84c
 workflow-type: tm+mt
 source-wordcount: '2761'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
@@ -42,11 +42,11 @@ ht-degree: 11%
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente la visualisation des cartes dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Voir [Map](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) pour la version_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** de cet article._
+_Cet article présente la visualisation des cartes dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Voir [Map](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) pour la version_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 
-La visualisation ![Globe](/help/assets/icons/Globe.svg) **[!UICONTROL Map]** d’Analysis Workspace vous permet de créer une carte visuelle de n’importe quelle mesure (y compris les mesures calculées). Il est utile pour identifier et comparer des données de mesure dans différentes régions géographiques.
+La visualisation ![Globe](/help/assets/icons/Globe.svg) **[!UICONTROL Map]** d’Analysis Workspace vous permet de créer une carte visuelle de n’importe quelle mesure (y compris les mesures calculées). Elle s’avère utile pour identifier et comparer les données de mesure de différentes régions géographiques.
 
 ## Conditions préalables
 

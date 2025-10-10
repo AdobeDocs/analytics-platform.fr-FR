@@ -40,7 +40,7 @@ Les informations suivantes décrivent les paramètres utilisés par un composant
 | Paramètre | Description/Cas d’utilisation |
 | --- | --- |
 | [!UICONTROL Type de composant] | Obligatoire. Permet de modifier un composant de Mesure en Dimension ou inversement. La modification de la sélection de cette liste déroulante déplace le composant vers sa zone de composants incluse respective. |
-| [!UICONTROL &#x200B; Nom du composant &#x200B;] | Obligatoire. Permet de définir le nom convivial qui apparaîtra dans Analysis Workspace. Vous pouvez renommer un composant pour lui donner un nom spécifique à la vue de données. |
+| [!UICONTROL  Nom du composant ] | Obligatoire. Permet de définir le nom convivial qui apparaîtra dans Analysis Workspace. Vous pouvez renommer un composant pour lui donner un nom spécifique à la vue de données. |
 | [!UICONTROL Description] | Facultatif, mais recommandé. Fournit des informations sur le composant à d’autres utilisateurs. |
 | [!UICONTROL Balises] | Facultatif. Permet de baliser le composant avec des balises personnalisées ou prêtes à l’emploi pour faciliter la recherche/le filtrage dans l’interface utilisateur d’Analysis Workspace. |
 | [!UICONTROL Libellés de contexte] | Facultatif. Menu déroulant des libellés [contextuels](#context-labels) définis par le système disponibles pouvant être appliqués à un composant. |
@@ -59,12 +59,12 @@ Les informations suivantes décrivent les paramètres utilisés par un composant
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Paramètres du type de composant](https://video.tv.adobe.com/v/3412935/?quality=12&learn=on&captions=fre_fr){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Paramètres du type de composant](https://video.tv.adobe.com/v/333112/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 
 
-## Libellés de contexte
+## Étiquettes de contexte
 
 Les libellés de contexte sont des balises définies par le système appliquées aux composants dans une vue de données. Lorsque des libellés de contexte sont appliqués aux composants (dimension ou mesures), Customer Journey Analytics a pour instruction d’utiliser automatiquement ces composants libellés de contexte dans certaines visualisations ou fonctionnalités.
 

@@ -7,7 +7,7 @@ exl-id: f0ac3752-9244-4d9e-807b-e6471e6aa55b
 source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
 workflow-type: tm+mt
 source-wordcount: '1290'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 La visualisation de la zone de travail des Parcours vous permet d’analyser les parcours que vous fournissez à vos utilisateurs et clientes, et d’obtenir des informations détaillées à leur sujet.
 
-Pour en savoir plus sur la zone de travail de Parcours, consultez la présentation de la zone de travail de Parcours [&#128279;](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) et [Configurer une visualisation de zone de travail de Parcours ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
+Pour en savoir plus sur la zone de travail de Parcours, consultez la présentation de la zone de travail de Parcours [](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) et [Configurer une visualisation de zone de travail de Parcours ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
 
 Les informations suivantes peuvent vous aider à résoudre les problèmes liés aux résultats inattendus que vous pouvez voir, tels que les nœuds qui apparaissent plus tard dans le parcours et qui affichent un pourcentage ou un nombre plus élevé que les nœuds qui apparaissent plus tôt dans le parcours.
 
@@ -23,7 +23,7 @@ Les informations suivantes peuvent vous aider à résoudre les problèmes liés 
 
 Il est possible dans la zone de travail du Parcours pour les nœuds qui arrivent plus tard dans le parcours d’afficher un pourcentage ou un nombre plus élevé que pour les nœuds qui arrivent plus tôt dans le parcours.
 
-En d’autres termes, contrairement aux visualisations Abandons , qui sont toujours en forme d’entonnoir (avec une participation décroissante à chaque étape), les visualisations de la zone de travail du Parcours peuvent présenter une participation plus élevée aux étapes ultérieures du parcours que dans les étapes précédentes.
+En d’autres termes, contrairement aux visualisations Abandons , qui sont toujours en forme de funnel (avec une participation décroissante à chaque étape), les visualisations de la zone de travail du Parcours peuvent avoir une plus grande participation aux étapes ultérieures du parcours que dans les étapes précédentes.
 
 Cela peut se produire dans les scénarios suivants :
 
@@ -87,7 +87,7 @@ Bien que les nombres affichés sur chaque nœud d’un parcours restent constant
 
 Les sections ci-dessous montrent comment les pourcentages peuvent changer pour le même parcours, selon l’option sélectionnée dans le champ **[!UICONTROL Valeur de pourcentage]** :
 
-+++Pourcentage du nœud de démarrage
++++Pourcentage du nœud de départ
 
 Les nœuds de ce parcours contiennent les statistiques suivantes lorsque le champ **[!UICONTROL Valeur de pourcentage]** est défini sur **[!UICONTROL Pourcentage du nœud de début]** :
 

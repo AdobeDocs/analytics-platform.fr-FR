@@ -1,5 +1,5 @@
 ---
-description: Que sont les cartes de performance et
+description: Que sont les cartes de performance de tableaux de bord et
 title: Guide d’édition des tableaux de bord Analytics
 feature: Analytics Dashboards
 role: User, Admin

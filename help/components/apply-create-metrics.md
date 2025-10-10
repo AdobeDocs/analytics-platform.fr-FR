@@ -6,7 +6,7 @@ exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
 role: User
 source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '867'
 ht-degree: 6%
 
 ---
@@ -90,7 +90,7 @@ Pour créer une mesure calculée pour un seul projet :
 
    * [!UICONTROL **Colonne min**] : crée une colonne qui affiche la plus petite valeur du jeu d’éléments de dimension pour la colonne. Elle utilise la fonction [Column Minimum](/help/components/calc-metrics/cm-functions.md#column-minimum).
 
-   * [!UICONTROL **Somme des colonnes**] : crée une colonne qui ajoute toutes les valeurs numériques d’une mesure dans une colonne (sur l’ensemble des éléments d’une dimension). Elle utilise la fonction [Column Sum](/help/components/calc-metrics/cm-functions.md#column-sum).
+   * [!UICONTROL **Somme des colonnes**]:Creates nouvelle colonne qui ajoute toutes les valeurs numériques d’une mesure dans une colonne (sur l’ensemble des éléments d’une dimension). Elle utilise la fonction [Column Sum](/help/components/calc-metrics/cm-functions.md#column-sum).
 
    Lorsque deux colonnes sont sélectionnées, les options suivantes sont disponibles :
 

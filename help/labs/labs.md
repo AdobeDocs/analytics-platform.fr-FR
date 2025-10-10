@@ -13,11 +13,11 @@ ht-degree: 81%
 
 # Guide d’utilisation de [!UICONTROL Labs]
 
-[!UICONTROL Labs] permet de concevoir plus rapidement des prototypes à partir d’idées au stade précoce. Il s’agit d’une combinaison d’outils et de processus qui accélèrent le développement de manière transparente en s’orientant sur le client. Il permet aux utilisateurs d’interagir avec des technologies émergentes, de découvrir de précieuses informations, et d’influencer le développement et les priorités des fonctionnalités futures. Vous pouvez utiliser Labs pour obtenir un accès anticipé aux innovations Adobe Customer Journey Analytics et pour évaluer les fonctionnalités à venir dans le cadre de vos propres cas d’utilisation professionnels et de vos propres données.
+[!UICONTROL Labs] permet de concevoir plus rapidement des prototypes à partir d’idées au stade précoce. Il s’agit d’une combinaison d’outils et de processus qui accélèrent le développement de manière transparente en s’orientant sur le client. Il permet aux utilisateurs d’interagir avec des technologies émergentes, de découvrir de précieuses informations, et d’influencer le développement et les priorités des fonctionnalités futures. Vous pouvez utiliser Labs pour accéder rapidement aux innovations d’Adobe Customer Journey Analytics et pour évaluer les fonctionnalités à venir dans le cadre de vos propres cas d’utilisation professionnels et de vos propres données.
 
 >[!IMPORTANT]
 >
->Customer Journey Analytics Labs n’est pas un service prêt pour les HIPAA et ne peut pas être utilisé pour traiter des données personnelles sensibles, y compris les données d’intégrité autorisées (telles que les informations d’intégrité personnelles ou les informations d’identification personnelles) que votre organisation peut autrement être autorisée à utiliser dans Customer Journey Analytics.
+>Customer Journey Analytics Labs n’est pas un service conforme à la loi HIPAA et ne peut pas être utilisé pour traiter des données personnelles sensibles, y compris les données de santé autorisées (telles que des informations de santé personnelles ou des informations d’identification personnelles), que votre organisation pourrait autrement être autorisée à utiliser dans Customer Journey Analytics.
 
 ## Configuration requise
 
@@ -31,7 +31,7 @@ Pour accéder à [!UICONTROL Labs] :
 
 1. Si vous ne disposez pas encore d’un accès à [!UICONTROL Workspace] et à [!UICONTROL Labs], demandez-en l’autorisation à votre administrateur.
 
-1. Dans Customer Journey Analytics, cliquez sur l’onglet **[!UICONTROL Labs]** .
+1. Dans Customer Journey Analytics, cliquez sur l’onglet **[!UICONTROL Labs]**.
 
 ## Évaluer un prototype
 
@@ -65,7 +65,7 @@ Pour lancer et évaluer un prototype :
 
 1. Pour essayer un prototype différent ou pour quitter l’environnement de prototype, cliquez sur **[!UICONTROL Quitter le prototype]** en haut à droite de l’écran, puis complétez l’enquête brève au sujet du prototype. Toute modification apportée à un projet de prototype est perdue lorsque vous quittez l’environnement du prototype.
 
-   ![ Fenêtre de commentaires de cheminement intelligent ](assets/short-survey.png)
+   ![Fenêtre Commentaires sur le cheminement intelligent](assets/short-survey.png)
 
 1. Cliquez sur **[!UICONTROL Soumettre]** pour revenir au portail principal des Aperçus.
 

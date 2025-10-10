@@ -13,7 +13,7 @@ ht-degree: 21%
 
 ---
 
-# Gestion des blocs de données
+# Gérer les blocs de données
 
 Vous pouvez afficher et gérer tous les blocs de données d’un classeur à l’aide du [!UICONTROL Gestionnaire de blocs de données]. Le [!UICONTROL Gestionnaire de blocs de données] fournit des fonctionnalités de recherche, de filtrage et de tri qui vous permettent de localiser des blocs de données spécifiques. Après avoir sélectionné un ou plusieurs blocs de données, vous pouvez modifier, supprimer ou actualiser les blocs de données sélectionnés.
 

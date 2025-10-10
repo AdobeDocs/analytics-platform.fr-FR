@@ -6,7 +6,7 @@ keywords: Product Analytics
 exl-id: 2c512184-2d79-4c41-8229-a09e440179ea
 role: User
 source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '674'
 ht-degree: 100%
 
@@ -26,7 +26,7 @@ ht-degree: 100%
 L’analyse ![FirstUse](/help/assets/icons/FirstUse.svg) **[!UICONTROL Impact de la première utilisation]** présente une comparaison des performances des indicateurs clés avant et après la première utilisation d’une fonctionnalité de produit par une personne. L’axe horizontal de ce rapport est un intervalle de temps relatif avant et après l’événement, tandis que l’axe vertical mesure les indicateurs clés souhaités. Une barre verticale située au milieu du graphique représente le jour 0 correspondant au moment où une fonctionnalité est utilisée pour la première fois par une personne donnée. Comme les utilisateurs et utilisatrices n’adoptent pas toujours les fonctionnalités le même jour et que vos déploiements peuvent potentiellement s’étendre sur plusieurs jours, le jour 0 peut avoir une signification différente pour chaque personne.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3423495/?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3421661/?quality=12&learn=on)
 
 
 ## Cas d’utilisation

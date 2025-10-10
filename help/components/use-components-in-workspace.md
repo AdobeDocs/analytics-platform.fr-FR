@@ -1,17 +1,17 @@
 ---
-description: Découvrez comment utiliser des composants dans un projet dans Analysis Workspace
-title: Utilisation De Composants Dans Un Projet
+description: Découvrir comment utiliser des composants dans un projet dans Analysis Workspace
+title: Utiliser des composants dans un projet
 feature: Components
 role: User
 exl-id: 97bdfb9e-a27e-4a6b-b6cc-21a292398037
 source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '952'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Utilisation de composants dans un projet
+# Utiliser des composants dans un projet
 
 Les composants représentent les données réelles de n’importe quel projet dans Analysis Workspace. Les composants comprennent les dimensions, les mesures, les segments et les périodes. Vous pouvez ajouter des composants à un projet en les faisant glisser dans des visualisations ou des panneaux.
 

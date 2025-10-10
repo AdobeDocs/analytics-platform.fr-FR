@@ -48,6 +48,6 @@ Lorsque vous utilisez une valeur numérique comme dimension, vous pouvez :
 
 >[!MORELIKETHIS]
 >
->[Manuel complet de gestion de l’absence de valeur dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/the-complete-playbook-for-handling-no-value-in-adobe-cja/ba-p/756696?profile.language=fr#M598).
+>[Manuel complet de gestion de l’absence de valeur dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/the-complete-playbook-for-handling-no-value-in-adobe-cja/ba-p/756696#M598).
 
 

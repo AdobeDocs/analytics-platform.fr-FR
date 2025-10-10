@@ -14,7 +14,7 @@ ht-degree: 100%
 
 # [!UICONTROL Tableaux de bord] Analytics - Aperçu
 
-Les **tableaux de bord [!UICONTROL Analytics]** fournissent des informations à tout moment et où que vous soyez à partir de Customer Journey Analytics. L’application permet aux utilisateurs et utilisatrices mobiles d’accéder à des cartes de performance intuitives. Les cartes de performance mobiles sont un ensemble de mesures clés et d’autres composants présentés sous la forme d’une disposition de type mosaïque sur laquelle vous pouvez appuyer pour obtenir des ventilations plus détaillées ainsi que des rapports de tendances. L’application mobile est prise en charge aussi bien sur les systèmes d’exploitation iOS qu’Android.
+Les **tableaux de bord [!UICONTROL Analytics]** fournissent des informations à tout moment et où que vous soyez à partir de Customer Journey Analytics. L’application permet aux utilisateurs et utilisatrices mobiles d’accéder à des cartes de performance intuitives. Les cartes de performance mobiles sont un ensemble de mesures clés et d’autres composants présentés sous la forme d’une disposition de type mosaïque sur laquelle vous pouvez appuyer pour obtenir des répartitions plus détaillées ainsi que des rapports de tendances. L’application mobile est prise en charge aussi bien sur les systèmes d’exploitation iOS qu’Android.
 
 >[!NOTE]
 >

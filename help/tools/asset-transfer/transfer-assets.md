@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 exl-id: c5ed81ea-1d55-4193-9bb1-a2a93ebde91f
 source-git-commit: 3e521cb4ef532d57b9f408fc12dcf138f130f059
-workflow-type: ht
-source-wordcount: '831'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '830'
+ht-degree: 98%
 
 ---
 
@@ -31,7 +31,7 @@ Le transfert de ressources nécessite l’autorisation de l’administrateur ou 
 
    >[!IMPORTANT]
    >
-   >Vous pouvez uniquement effectuer un transfert d’une personne à une autre. Les transferts d’une personne à plusieurs, et inversement, ne sont pas pris en charge.
+   >Vous pouvez uniquement effectuer un transfert 1:1 d’un utilisateur à un autre. Les transferts d’une personne à plusieurs, et inversement, ne sont pas pris en charge.
 
 
 1. Une fois que vous avez sélectionné un utilisateur ou une utilisatrice, l’option Transférer les ressources s’affiche en bas de l’écran.

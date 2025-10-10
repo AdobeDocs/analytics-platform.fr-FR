@@ -8,7 +8,7 @@ exl-id: 417443ae-a1ab-483b-a8fd-cff5ee8b6263
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '1147'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -21,7 +21,7 @@ Ces données de résumé peuvent ensuite être utilisées pour présenter des in
 >[!NOTE]
 >
 >Les données de résumé sont des données de série temporelle provenant d’un jeu de données de résumé. Ce jeu de données de résumé est basé sur un schéma qui utilise la classe XDM Mesures de résumé comme classe de base.
->Seules les données de série temporelle basées sur une heure ou une journée sont prises en charge.
+>>Seules les données de série temporelle basées sur une heure ou une journée sont prises en charge.
 
 >[!TIP]
 >
@@ -116,7 +116,7 @@ Le fuseau horaire de vos données de résumé est défini au niveau du schéma d
   | 2024-07-29T01:00:00 | `America/`<br/>`Los_Angeles` | 2024-07-28T18:00:00 | PST | 2024-07-28T18:00:00 |
   | 2024-07-30T01:00:00-05:00 | `Australia/`<br/>`Sydney` | 2024-07-30T17:00:00 | CET | 2024-07-30T08:00:00 |
 
-  Pour les fuseaux horaires avec un décalage de 30 minutes (par exemple, IST, Heure standard de l’Inde), le décalage de 30 minutes est ignoré lors de la création de rapports sur les données de résumé. Par exemple : 12 h 30 est rapporté comme 12 h 00.
+  Pour les fuseaux horaires avec un décalage de 30 minutes (par exemple, IST, Heure standard de l’Inde), le décalage de 30 minutes est ignoré lors de la création de rapports sur les données de résumé. Par exemple : 12:30 est signalé comme 12:00.
 
 
 Pour vous assurer que le fuseau horaire approprié est utilisé pour vos données de résumé granulaires horaires, vous devez vous assurer que le schéma utilisé pour les données de résumé comporte le fuseau horaire approprié configuré.
@@ -154,5 +154,5 @@ Assurez-vous que les paramètres des composants pour un groupe de données de r�
 >[!MORELIKETHIS]
 >
 >- Consultez l’article [Utiliser des données de résumé](/help/use-cases/data-views/summary-data.md) pour obtenir un exemple de cas d’utilisation détaillé sur l’utilisation des données de résumé et la création de rapports les concernant.
->- Blog : [comment les données de résumé améliorent les jeux de données Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-summary-data-enhances-adobe-customer-journey-analytics/ba-p/704635?profile.language=fr)
+>- Blog : [comment les données de résumé améliorent les jeux de données Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-summary-data-enhances-adobe-customer-journey-analytics/ba-p/704635)
 

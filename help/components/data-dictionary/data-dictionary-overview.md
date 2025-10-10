@@ -5,7 +5,7 @@ feature: Components
 role: User, Admin
 exl-id: 8e4b8169-7c7f-4a58-a6c6-70efb0c86ce8
 source-git-commit: f940e5cba11df0ff158093a503213ff1641b1c5d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 100%
 
@@ -30,7 +30,7 @@ Les administrateurs et administratrices d’Analytics sont responsables du trait
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dictionnaire de données pour Analysis Workspace](https://video.tv.adobe.com/v/3422282/?quality=12&learn=on&captions=fre_fr){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dictionnaire de données pour Analysis Workspace](https://video.tv.adobe.com/v/3418028/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 

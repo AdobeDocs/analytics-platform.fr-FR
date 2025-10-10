@@ -4,7 +4,7 @@ description: Découvrez comment configurer Customer Journey Analytics B2B editio
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-badgePremium: label="B2B edition"
+badgePremium: label="B2B Edition"
 exl-id: f959a77b-ccfb-43f2-93bb-b330e73d59ac
 source-git-commit: 3c13ae26a9ef48454467fc21b8faaa9e078c7f9f
 workflow-type: tm+mt
@@ -17,7 +17,7 @@ ht-degree: 13%
 
 Cet article décrit une configuration type du B2B edition Customer Journey Analytics pour prendre en charge les cas d’utilisation suivants :
 
-* [Optimisation du marketing de compte](optimize-account-marketing.md)
+* [Optimiser le marketing de compte](optimize-account-marketing.md)
 * [Développer les comptes clés](grow-key-accounts.md)
 * [Créer la valeur du produit](build-product-value.md)
 

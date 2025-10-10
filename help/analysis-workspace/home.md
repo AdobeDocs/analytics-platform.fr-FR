@@ -7,7 +7,7 @@ exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
 source-git-commit: 9056b8b172ae7a2267bf12de4b2355d1a1364b32
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1490'
 ht-degree: 100%
 
@@ -19,7 +19,7 @@ Analysis Workspace vous permet de créer rapidement des analyses pour recueilli
 
 >[!BEGINSHADEBOX]
 
-Voir la vidéo de démonstration ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Vue d’ensemble d’Analysis Workspace](https://video.tv.adobe.com/v/3424559/?quality=12&learn=on&captions=fre_fr){target="_blank"}.
+Voir la vidéo de démonstration ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Vue d’ensemble d’Analysis Workspace](https://video.tv.adobe.com/v/26266/?quality=12&learn=on){target="_blank"}.
 
 {{videoaa}}
 

@@ -44,7 +44,7 @@ Les libellés de données que vous ou d’autres personnes créez dans Experienc
 
 {style="table-layout:auto"}
 
-## Filtrer les libellés de gouvernance des données dans les vues de données
+## Filtrer les étiquettes de gouvernance des données dans les vues de données
 
 Dans l’éditeur des vues de données, sélectionnez l’icône [!UICONTROL Filtre] dans le rail de gauche et filtrez les composants des vues de données en fonction de la **[!UICONTROL Gouvernance des données]** et du type de **[!UICONTROL Libellé]** :
 

@@ -1,6 +1,6 @@
 ---
-title: Composants de l’analyse du contenu
-description: Détails sur les composants spécifiques de l’analyse du contenu, tels que les dimensions, les mesures (calculées) et les champs dérivés.
+title: Composants de Content Analytics
+description: Détails sur les composants Content Analytics spécifiques, tels que les dimensions, les mesures (calculées) et les champs dérivés.
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: User
@@ -12,9 +12,9 @@ ht-degree: 100%
 
 ---
 
-# Composants de l’analyse du contenu
+# Composants de Content Analytics
 
-L’analyse du contenu ajoute les catégories de composants suivantes (dimensions, mesures (calculées), champs dérivés) aux composants déjà disponibles dans Customer Journey Analytics :
+Content Analytics ajoute les catégories de composants suivantes (dimensions, mesures (calculées), champs dérivés) aux composants déjà disponibles dans Customer Journey Analytics :
 
 * [Métadonnées de l’expérience](#experience-metadata)
 * [Attributs de l’expérience](#experience-attributes)

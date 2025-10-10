@@ -5,7 +5,7 @@ feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
 source-git-commit: 4599a058cef79a28bd6f9b788c2b202c8235298d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2193'
 ht-degree: 100%
 
@@ -79,7 +79,7 @@ Vous pouvez effectuer les opérations suivantes :
 
 Vous pouvez gérer un panneau des façons suivantes :
 
-![Gérer le panneau](assets/manage-panel.png)
+![Gérer un panneau](assets/manage-panel.png)
 
 * Pour réduire un panneau, sélectionnez ![ChevronDown](/help/assets/icons/ChevronDown.svg).
 * Pour afficher un panneau réduit, sélectionnez ![ChevronLeft](/help/assets/icons/ChevronLeft.svg).
@@ -167,7 +167,7 @@ Pour en savoir plus, consultez [Segments rapides](/help/components/segments/seg-
 
 >[!BEGINSHADEBOX]
 
-Voir ![VidéoConsultée](/help/assets/icons/VideoCheckedOut.svg) [Segments déroulants](https://video.tv.adobe.com/v/327485?quality=12&learn=on&captions=fre_fr){target="_blank"} pour une vidéo de démonstration.
+Voir ![VidéoConsultée](/help/assets/icons/VideoCheckedOut.svg) [Segments déroulants](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 

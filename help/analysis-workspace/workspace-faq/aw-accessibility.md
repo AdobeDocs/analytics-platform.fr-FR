@@ -1,13 +1,13 @@
 ---
-description: Découvrez les fonctionnalités de prise en charge de l’accessibilité dans Analysis Workspace.
-title: Accessibilité Dans Analysis Workspace
+description: Découvrez les fonctionnalités de prise en charge de l’accessibilité dans Analysis Workspace.
+title: Accessibilité dans Analysis Workspace
 feature: Workspace Basics
 exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
 role: User
 source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '546'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ L’accessibilité consiste à rendre les produits utilisables pour les personne
 La navigation dans [!UICONTROL Analysis Workspace] s’effectue de haut en bas et de gauche à droite. Les éléments de navigation suivants facilitent l’accessibilité :
 
 * La touche **[!UICONTROL Tab]** active des raccourcis de repère, pour se déplacer entre des sections plus grandes dans Workspace. Dans le panneau de gauche, la touche **[!UICONTROL Tab]** vous permet également de passer d’une option déplaçable à la suivante.
-* Les ◀︎ et ▶︎ se déplacent entre des éléments individuels une fois que la touche **[!UICONTROL Tab]** a mis en surbrillance un élément.
+* Les touches ◀ et ▶ permettent de se déplacer entre les éléments individuels après que la touche **[!UICONTROL Tab]** a mis en surbrillance un élément.
 * La touche **[!UICONTROL F6]** permet d’accéder au premier panneau du projet et de se déplacer parmi les visualisations de ce panneau. Puis, il passe au panneau suivant du projet et répète la même opération.
 * Des indicateurs d’élément actif sont présents afin que les utilisateurs et les utilisatrices malvoyants disposent d’une indication claire mettant en évidence l’élément de l’interface utilisateur actuellement actif. L’indicateur est une bordure bleue pour le panneau actif. Et un arrière-plan gris pour la fonctionnalité sélectionnée récemment et la sélection dans la fonctionnalité. Dans cet exemple, [!UICONTROL Composants] et la dimension Page ont été récemment sélectionnés.
 
@@ -54,7 +54,7 @@ La navigation dans [!UICONTROL Analysis Workspace] s’effectue de haut en bas e
 
 ### Raccourcis clavier (touches de raccourci)
 
-[!UICONTROL Analysis Workspace] offre un ensemble riche de [raccourcis clavier (touches d’accès rapide)](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md) pour un workflow plus transparent.
+[!UICONTROL Analysis Workspace] offre un vaste ensemble de [raccourcis clavier (touches de raccourci)](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md) pour un workflow plus fluide.
 
 ## Prise en charge des lecteurs d’écran et des loupes
 

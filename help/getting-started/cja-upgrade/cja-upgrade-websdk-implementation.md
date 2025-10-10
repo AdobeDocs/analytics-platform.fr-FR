@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 94a2bf2f-ad84-4f35-af8f-b8a5d9e5c607
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 100%
 
@@ -69,6 +69,6 @@ Il existe trois manières prises en charge d’utiliser le SDK web Adobe Exper
 
 * [Bibliothèque JavaScript SDK web](https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/install/library) : référencez un fichier de bibliothèque hébergé sur un réseau CDN ou hébergez le fichier de bibliothèque à l’aide de votre propre infrastructure. Effectuez des appels à la bibliothèque dans le code de votre site.
 
-* [NPM](https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/install/npm) : installez le SDK web sur votre site à l’aide du gestionnaire de packages NPM.
+* [NPM](https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/install/npm) : installez le SDK web sur votre site à l’aide du gestionnaire de modules NPM.
 
 Pour plus d’informations, consultez [Vue d’ensemble de l’installation du SDK web](https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/install/overview) dans le guide du SDK web Experience Platform.

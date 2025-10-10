@@ -238,7 +238,7 @@ Créer un connecteur source d’API HTTP :
 
 Vous pouvez copier l’URL du point d’entrée de flux continu et l’utiliser pour configurer l’application de fidélité afin de diffuser des données dans le jeu de données de fidélité d’Adobe Experience Platform.
 
-Consultez [Créer une connexion en continu d’API HTTP à l’aide de l’interface utilisateur](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html?lang=fr) pour un tutoriel beaucoup plus complet expliquant :
+Consultez [Créer une connexion en continu d’API HTTP à l’aide de l’interface utilisateur](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html) pour un tutoriel beaucoup plus complet expliquant :
 
 - comment utiliser l’authentification,
 - comment mapper des données lorsque les données entrantes ne sont pas compatibles avec le schéma XDM ; et

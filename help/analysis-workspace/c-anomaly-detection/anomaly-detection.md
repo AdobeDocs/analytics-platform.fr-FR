@@ -1,19 +1,19 @@
 ---
 description: Découvrez la détection des anomalies des données dans Analysis Workspace.
-title: Présentation de la détection des anomalies
+title: Vue d’ensemble de la détection des anomalies
 feature: Anomaly Detection
 exl-id: f706cdb9-bc80-42b9-9450-4f68bdb3fd85
 role: User
 source-git-commit: e07b901f66a59aba1a7a517443eec73387d23c57
 workflow-type: tm+mt
 source-wordcount: '174'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
-# Détection des anomalies - Aperçu
+# Vue d’ensemble de la détection des anomalies
 
-Dans Analysis Workspace vous pouvez afficher et analyser les anomalies de données de manière contextuelle.
+Dans Analysis Workspace vous pouvez afficher et analyser les anomalies de données de manière contextuelle.
 
 [Tutoriel vidéo sur la détection des anomalies](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/data-science/anomaly-detection-in-analysis-workspace.html?lang=fr) (4:53)
 

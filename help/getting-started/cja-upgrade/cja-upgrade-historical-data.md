@@ -8,15 +8,15 @@ hide: true
 hidefromtoc: true
 exl-id: 1d17151b-3a12-468e-9a4f-9e5994599570
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '673'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
 # Étape 4 : conserver les données historiques lors de la mise à niveau
 
-+++Développez cette section pour voir où les informations de cette page s’inscrivent dans le processus de mise à niveau plus général. Vérifiez que toutes les étapes de mise à niveau précédentes sont terminées.
++++Développez cette section pour voir la place des informations de cette page dans un processus de mise à niveau plus large. Vérifiez que toutes les étapes de mise à niveau précédentes sont terminées.
 
 Avant de poursuivre cette section, assurez-vous d’avoir effectué toutes les tâches de mise à niveau précédentes.
 

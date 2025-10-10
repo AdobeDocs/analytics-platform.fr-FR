@@ -8,15 +8,15 @@ hide: true
 hidefromtoc: true
 exl-id: 9559ba10-cbaf-4243-9c85-a0a5f6e3bbff
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2981'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
 # Étape 2 : choisir votre chemin de mise à niveau
 
-+++Développez cette section pour voir où les informations de cette page s’inscrivent dans le processus de mise à niveau plus général. Vérifiez que toutes les étapes de mise à niveau précédentes sont terminées.
++++Développez cette section pour voir la place des informations de cette page dans un processus de mise à niveau plus large. Vérifiez que toutes les étapes de mise à niveau précédentes sont terminées.
 
 Avant de poursuivre cette section, assurez-vous d’avoir effectué toutes les tâches de mise à niveau précédentes.
 
@@ -112,7 +112,7 @@ Vous trouverez ci-dessous les chemins de mise à niveau disponibles pour les org
 
 #### Chemins de mise à niveau
 
-+++Nouvelle implémentation du SDK web d’Experience Platform
++++Nouvelle implémentation du SDK web Experience Platform
 
 | Avantages | Inconvénients |
 |----------|---------|
@@ -122,7 +122,7 @@ Vous trouverez ci-dessous les chemins de mise à niveau disponibles pour les org
 
 +++
 
-+++Migrer Adobe Analytics vers le SDK web d’Experience Platform
++++Migration d’Adobe Analytics vers Experience Platform Web SDK
 
 | Avantages | Inconvénients |
 |----------|---------|
@@ -150,7 +150,7 @@ Lors du choix de ce chemin de mise à niveau, vous devez également choisir votr
 
 #### Chemin de mise à niveau
 
-+++Configurer l’implémentation du SDK web Adobe Analytics pour envoyer des données à Customer Journey Analytics
++++Configurer l’implémentation du SDK web Adobe Analytics pour envoyer des données à Platform
 
 | Avantages | Inconvénients |
 |----------|---------|
@@ -166,7 +166,7 @@ Si vous choisissez le chemin de mise à niveau qui vous permet de configurer l�
 
 Vous pouvez choisir d’utiliser votre schéma Adobe Analytics existant ou de le mettre à jour vers votre propre schéma XDM, afin de mieux vous aligner sur les besoins de votre entreprise lorsque vous commencez à utiliser d’autres services Platform.
 
-+++Utiliser le schéma Adobe Analytics avec l’implémentation du SDK web Adobe Analytics
++++Utilisation du schéma Adobe Analytics avec l’implémentation d’Adobe Analytics Web SDK
 
 | Avantages | Inconvénients |
 |----------|---------|
@@ -174,7 +174,7 @@ Vous pouvez choisir d’utiliser votre schéma Adobe Analytics existant ou de l
 
 +++
 
-+++Utiliser votre propre schéma XDM avec l’implémentation du SDK web d’Adobe Analytics
++++Utiliser votre propre schéma XDM avec l’implémentation Adobe Analytics Web SDK
 
 | Avantages | Inconvénients |
 |----------|---------|

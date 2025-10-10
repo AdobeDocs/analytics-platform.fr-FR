@@ -31,7 +31,7 @@ Ce workflow utilise le connecteur source Analytics et varie selon que vous utili
 
 [Le SDK Web d’Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=fr) est une bibliothèque JavaScript côté client qui permet aux clients d’Adobe Experience Cloud d’interagir avec les différents services d’Experience Cloud à travers Adobe Experience Platform Edge Network.
 
-1. [Configurez l’extension SDK Web Adobe Experience Platform dans les balises ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/sdk/overview.html?lang=fr) pour envoyer des données à Adobe Experience Cloud à partir de propriétés web, par l’intermédiaire de l’Edge Network Adobe Experience Platform.
+1. [Configurez l’extension Adobe Experience Platform Web SDK dans les balises](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/sdk/overview.html?lang=fr) pour envoyer des données au Adobe Experience Cloud à partir de propriétés web via Adobe Experience Platform Edge Network.
 1. Utilisez [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html?lang=fr) pour créer une ou plusieurs [connexions](/help/connections/create-connection.md) et [vues de données](/help/data-views/data-views.md) qui informeront votre reporting cross-canal.
 
 ## Ingestion des données par lots et en flux continu
@@ -50,9 +50,9 @@ Adobe Experience Platform rassemble des données provenant de plusieurs source
 
 ## Intégration des données Google Analytics à analyser dans Customer Journey Analytics
 
-Consultez ce tutoriel sur la façon d’[analyser les données Google Analytics à l’aide de Customer Journey Analytics](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/module12/ex5.html?lang=fr) pour obtenir des instructions détaillées.
+Consultez ce tutoriel sur la façon d’[analyser les données Google Analytics à l’aide de Customer Journey Analytics](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/module12/ex5.html) pour obtenir des instructions détaillées.
 
-## Utilisez l’API d’insertion de données en bloc pour intégrer des données dans Analytics, puis effectuez une ingestion via le connecteur source Analytics dans Experience Platform
+## Utilisez l’API Bulk Data Insertion pour importer des données dans Analytics, puis les ingérer via le connecteur source Analytics dans Experience Platform
 
 1. [Utilisez l’API d’insertion de données en bloc](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/bdia.md) pour envoyer des données de collecte côté serveur à Adobe Analytics. Elle vous permet d’envoyer des fichiers au format CSV contenant des données d’événement.
 1. [Créez un connecteur source Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr) pour importer ces données client dans Adobe Experience Platform.

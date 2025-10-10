@@ -8,7 +8,7 @@ exl-id: 6a0de7db-689d-448d-b8e0-90af4a5ee325
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '1806'
-ht-degree: 84%
+ht-degree: 85%
 
 ---
 
@@ -42,7 +42,7 @@ Les diapositives détaillées personnalisées vous permettent d’être encore p
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Vues détaillées personnalisées](https://video.tv.adobe.com/v/3413787?quality=12&learn=on&captions=fre_fr){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Vues détaillées personnalisées](https://video.tv.adobe.com/v/3410002?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 
@@ -86,7 +86,7 @@ Regardez la vidéo pour en savoir plus sur la création d’histoires de donnée
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Histoires de données pour les projets de cartes de performance mobiles](https://video.tv.adobe.com/v/3420560/?quality=12&learn=on&captions=fre_fr){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Histoires de données pour les projets de cartes de performance mobiles](https://video.tv.adobe.com/v/3416392/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 
@@ -109,7 +109,7 @@ Pour supprimer une diapositive, appuyez sur l’icône de corbeille.
 
 ### Personnaliser une histoire de données {#customize-data-story}
 
-Les histoires de données vous permettent de personnaliser chaque élément, afin de partager uniquement les informations que vous souhaitez partager, et d’exclure tout ce dont vous n’avez pas besoin. Vous pouvez personnaliser les mosaïques et les diapositives individuelles pour ajouter des segments, afficher des répartitions, modifier la disposition et modifier les visualisations.
+Les histoires de données vous permettent de personnaliser chaque élément, afin de partager uniquement les informations que vous souhaitez partager, et d’exclure tout ce dont vous n’avez pas besoin. Vous pouvez personnaliser les mosaïques et les diapositives en ajoutant des segments, en affichant les répartitions et en modifiant la disposition et les visualisations.
 
 **Pour personnaliser les mosaïques**
 

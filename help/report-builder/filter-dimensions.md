@@ -14,7 +14,7 @@ ht-degree: 33%
 ---
 
 
-# Filtrer les dimensions
+# Filtrer des dimensions
 
 Par défaut, chaque élément de dimension du tableau renvoie les 10 premiers éléments de cette dimension.
 

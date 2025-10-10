@@ -15,7 +15,7 @@ ht-degree: 2%
 
 Vous trouverez ici les réponses aux questions les plus fréquemment posées sur l’attribution.
 
-+++## Quel est l’élément de ligne *Aucun* lors de l’utilisation de l’attribution ?
++++## Quel est l&#39;élément de ligne *Aucun* lors de l&#39;utilisation de l&#39;attribution ?
 
 L’élément de ligne *Aucun* est un élément fourre-tout qui représente toutes les conversions qui se sont produites sans aucun point de contact dans l’intervalle de recherche en amont. Pour réduire le nombre de conversions attribuées à l’élément de ligne *Aucune*, essayez d’utiliser un intervalle de recherche en amont plus long.
 

@@ -30,7 +30,7 @@ L’attribution vous donne la possibilité de personnaliser la façon dont les �
 
 Par exemple :
 
-1. Une personne sur votre site clique sur un lien de référencement payant vers l’une de vos pages de produits. La personne ajoute le produit au panier, mais ne l’achète pas.
+1. Une personne sur votre site clique sur un lien de référencement payant vers l’une de vos pages produits. La personne ajoute le produit au panier, mais ne l’achète pas.
 2. Le lendemain, elle voit un message d’une personne de son entourage sur les médias sociaux. Elle clique sur le lien, puis effectue l’achat.
 
 Dans certains rapports, vous voudrez peut-être attribuer la commande au référencement payant. Dans d’autres rapports, vous voudrez peut-être attribuer la commande à Social. Attribution vous permet de contrôler cet aspect des rapports.

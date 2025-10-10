@@ -51,7 +51,7 @@ ht-degree: 99%
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente la visualisation Zone de travail de parcours dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**.<br/>Il n’existe aucune visualisation équivalente dans **Adobe Analytics**._
+_Cet article présente la visualisation Zone de travail de parcours dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**.<br/>Il n’existe aucune visualisation équivalente dans **Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
@@ -263,5 +263,5 @@ Vous pouvez créer des analyses dans la zone de travail de parcours en fonction 
 
 >[!MORELIKETHIS]
 >
-> * [Guide pour la visualisation de la zone de travail de parcours dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-guide-to-journey-canvas-visualization-in-adobe-customer/ba-p/737857?profile.language=fr)
+> * [Guide pour la visualisation de la zone de travail de parcours dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-guide-to-journey-canvas-visualization-in-adobe-customer/ba-p/737857)
 

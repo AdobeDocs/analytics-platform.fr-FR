@@ -7,8 +7,8 @@ feature: Data Views
 role: User
 source-git-commit: 0e9dc47b80db142801a94dcbf31470d99a610949
 workflow-type: tm+mt
-source-wordcount: '1358'
-ht-degree: 30%
+source-wordcount: '1357'
+ht-degree: 29%
 
 ---
 
@@ -108,15 +108,15 @@ Vous pouvez déterminer si une session est bien la toute première session d’u
 
 * Quel pourcentage de vos commandes provient de nouvelles sessions ou de sessions récurrentes ?
 
-* Pour un canal marketing ou une campagne spécifique, ciblez-vous les nouveaux utilisateurs ou les utilisateurs récurrents ? Comment ce choix influence-t-il les taux de conversion ?
+* Pour un canal marketing donné, ou une campagne spécifique, est-ce que vous ciblez les personnes qui découvrent le service pour la première fois ou celles qui le connaissent déjà ? Comment ce choix influence-t-il les taux de conversion ?
 
 Une dimension et deux mesures facilitent cette création de rapports :
 
-* [Type de session](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dataviews/component-reference) - Cette dimension possède deux valeurs : [!UICONTROL Nouveau] et [!UICONTROL Récurrent]. L’élément de ligne [!UICONTROL Nouveau] comprend tout le comportement (c’est-à-dire les mesures par rapport à cette dimension) d’une session déterminée comme étant la première session définie d’une personne. Tous les autres éléments sont inclus dans l’élément de ligne [!UICONTROL Récurrent] (en supposant que tous ceux-ci appartiennent à une session). Les mesures qui ne font partie d’aucune session se retrouvent dans le compartiment « Non applicable » pour cette dimension.
+* [Type de session](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference) - Cette dimension possède deux valeurs : [!UICONTROL Nouveau] et [!UICONTROL Récurrent]. L’élément de ligne [!UICONTROL Nouveau] comprend tout le comportement (c’est-à-dire les mesures par rapport à cette dimension) d’une session déterminée comme étant la première session définie d’une personne. Tous les autres éléments sont inclus dans l’élément de ligne [!UICONTROL Récurrent] (en supposant que tous ceux-ci appartiennent à une session). Les mesures qui ne font partie d’aucune session se retrouvent dans le compartiment « Non applicable » pour cette dimension.
 
-* [Premières sessions](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dataviews/component-reference) La mesure Premières sessions est définie comme la première session d’une personne dans la fenêtre de création de rapports.
+* [Premières sessions](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference) La mesure Premières sessions est définie comme la première session d’une personne dans la fenêtre de création de rapports.
 
-* [Sessions récurrentes](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dataviews/component-reference) la mesure Sessions récurrentes correspond au nombre de sessions qui n’ont pas été la première session d’une personne.—>
+* [Sessions récurrentes](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference) la mesure Sessions récurrentes correspond au nombre de sessions qui n’ont pas été la première session d’une personne.—>
 
 Pour accéder aux composants :
 
@@ -135,13 +135,13 @@ Les schémas d’Adobe Experience Platform contiennent des champs [!UICONTROL 
 
 * Pour le format de date, si vous sélectionnez **[!UICONTROL Jour]** dans le format **[!UICONTROL Jour, mois, année]**, la date s’affiche de la manière suivante dans les rapports : 23 août 2022.
 
-* Pour le format de date et heure, si vous sélectionnez **[!UICONTROL Minute de la journée]** dans le format **[!UICONTROL Heure:minute]**, l’heure s’affiche de la manière suivante : 20:20.
+* Pour le format de date et heure, si vous sélectionnez **[!UICONTROL Minute de la journée]** avec le format **[!UICONTROL Heure:Minute]**, la sortie peut ressembler à : 20:20.
 
 Les dates postérieures au 1er janvier 1900 (à l’exception du 1er janvier 1970) et les valeurs de date et d’heure postérieures au 1er janvier 2000 00:00:00 sont prises en charge.
 
 ### Cas d’utilisation de date et date-heure
 
-* Date : une agence de voyages collecte la date de départ des voyages dans un champ de leurs données. L’entreprise souhaite disposer d’un rapport comparant le [!UICONTROL &#x200B; Jour de la semaine &#x200B;] pour toutes les dates de départ collectées afin de déterminer laquelle est la plus populaire. Et la société aimerait faire de même pour le [!UICONTROL Mois de l’année].
+* Date : une agence de voyages collecte la date de départ des voyages dans un champ de leurs données. L’entreprise souhaite disposer d’un rapport comparant le [!UICONTROL  Jour de la semaine ] pour toutes les dates de départ collectées afin de déterminer laquelle est la plus populaire. Et la société aimerait faire de même pour le [!UICONTROL Mois de l’année].
 
 * Date et heure : une société de vente au détail collecte l’heure de chacun de ses achats dans les points de vente (POS). Sur un mois donné, l’entreprise souhaite déterminer les périodes de plus forte affluence en [!UICONTROL Heure de la journée].
 

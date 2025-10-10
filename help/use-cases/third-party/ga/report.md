@@ -18,7 +18,7 @@ Une fois les données disponibles dans Customer Journey Analytics, les exemple
 
 ## Visualisation des données web et dʼapplication sous forme de jeux de données combinés
 
-Ce diagramme de Venn montre le chevauchement des utilisateurs de votre site web (à partir de vos données Google Analytics) et de votre application mobile (à partir de vos données Firebase) et de votre centre dʼappel. Vous pouvez également consulter les produits les plus performants, pas seulement sur le web, mais également dans lʼapplication mobile. Vous pouvez même obtenir le chiffre dʼaffaires total des deux à lʼaide dʼune mesure calculée. Remarquez que les principaux produits racontent une autre histoire lorsque vous regardez les chiffres dʼaffaires combinés. Sans les jeux de données combinés, vous nʼauriez jamais su que la « casquette en sergé » était si performante.
+Ce diagramme de Venn montre le chevauchement des utilisateurs de votre site web (à partir de vos données Google Analytics) et de votre application mobile (à partir de vos données Firebase) et de votre centre dʼappel. Vous pouvez également consulter les produits les plus performants, pas seulement sur le web, mais également dans lʼapplication mobile. Vous pouvez même obtenir le chiffre dʼaffaires total des deux à lʼaide dʼune mesure calculée. Remarquez que les principaux produits racontent une autre histoire lorsque vous regardez les chiffres dʼaffaires combinés. Sans les jeux de données combinés, vous nʼauriez jamais su que la « casquette en sergé » était si performante.
 
 ![Jeux de données combinés](../../assets/combined-datasets.png)
 
@@ -38,7 +38,7 @@ En appliquant une répartition de dimension de « Raison de l’appel », l’
 
 Vous pouvez consulter les pages du site Web qui ont envoyé des appels au centre d’appel. Ce rapport permet de savoir où se trouvent les expériences moins performantes sur le site Web et dʼaider vos responsables de produits à résoudre ces problèmes. L’exemple suivant utilise une mesure calculée avec un modèle d’attribution de participation pour filtrer les données en ne retenant que les sessions qui se sont terminées par un appel au centre d’appels.
 
-L’exemple suivant montre que les pages « Panier » et « Informations sur la commande » génèrent la plupart des appels.
+L’exemple suivant montre que les pages « Shopping Cart » (« Panier ») et « Checkout Information » (« Informations sur le passage en caisse ») génèrent la plupart des appels.
 
 ![Pages de contribution](../../assets/contributing-pages.png)
 

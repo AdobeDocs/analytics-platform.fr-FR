@@ -1,44 +1,44 @@
 ---
-title: Création de rapports sur l’analyse du contenu
-description: Création de rapports sur l’analyse du contenu
+title: Création de rapports sur Content Analytics
+description: Création de rapports sur Content Analytics
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: User
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
 source-git-commit: e8cba64e706a456861fd8392ce9260b7a1c4636b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1300'
 ht-degree: 100%
 
 ---
 
-# Vue d’ensemble de la création de rapports sur l’analyse du contenu
+# Vue d’ensemble de la création de rapports sur Content Analytics
 
-Vous créez des rapports, effectuez des analyses et obtenez des informations sur l’analyse du contenu dans [Analysis Workspace](/help/analysis-workspace/home.md). Un [modèle](#template) Workspace spécifique est disponible afin que vous puissiez immédiatement accéder à un projet Workspace prérempli avec des informations pertinentes sur le contenu.
+Vous créez des rapports, effectuez des analyses et obtenez des informations sur Content Analytics dans [Analysis Workspace](/help/analysis-workspace/home.md). Un [modèle](#template) Workspace spécifique est disponible afin que vous puissiez immédiatement accéder à un projet Workspace prérempli avec des informations pertinentes sur le contenu.
 
-Pour commencer à créer des rapports à partir de zéro sur l’analyse du contenu :
+Pour commencer à créer des rapports à partir de zéro sur Content Analytics :
 
 1. [Créez un projet](/help/analysis-workspace/build-workspace-project/create-projects.md) ou [ouvrez un projet existant](/help/analysis-workspace/build-workspace-project/open-projects.md) dans Workspace.
-1. Veillez à [sélectionner une vue de données](/help/analysis-workspace/c-panels/panels.md#data-view) pour la création de rapports sur l’analyse du contenu. La création de rapports sur l’analyse du contenu n’est disponible que pour les vues de données [configurées](/help/content-analytics/config/configuration.md) pour l’analyse du contenu.
+1. Veillez à [sélectionner une vue de données](/help/analysis-workspace/c-panels/panels.md#data-view) pour la création de rapports sur Content Analytics. La création de rapports sur Content Analytics n’est disponible que pour les vues de données [configurées](/help/content-analytics/config/configuration.md) pour Content Analytics.
 1. Faites glisser une visualisation ![Tableau](/help/assets/icons/Table.svg) [Tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) sur la zone de travail.
 1. Utilisez des [composants d’analyse du contenu spécifiques](components.md) et d’autres [composants](/help/components/overview.md) génériques (tels que des segments, des périodes, des annotations) pour créer vos informations d’analyse du contenu.
 
 ## Miniatures
 
-En fonction des dimensions spécifiques à l’analyse du contenu que vous utilisez dans votre projet, des miniatures s’affichent pour les ressources et les dimensions.
+En fonction des dimensions spécifiques à Content Analytics que vous utilisez dans votre projet, des miniatures s’affichent pour les ressources et les dimensions.
 
-![Miniatures de l’analyse du contenu](../assets/aca-thumbnails.png)
+![Miniatures Content Analytics](../assets/aca-thumbnails.png)
 
-Par défaut, des miniatures s’affichent pour les dimensions d’analyse du contenu pertinentes. Pour configurer l’affichage de miniatures pour une dimension d’analyse du contenu :
+Par défaut, des miniatures s’affichent pour les dimensions Content Analytics pertinentes. Pour configurer l’affichage de miniatures pour une dimension Content Analytics :
 
-* Pointez sur la ligne d’en-tête d’une dimension d’analyse du contenu. Par exemple, **[!UICONTROL ID de la ressource]** ou **[!UICONTROL ID d’expérience]**.
+* Pointez sur la ligne d’en-tête d’une dimension Content Analytics. Par exemple, **[!UICONTROL ID de la ressource]** ou **[!UICONTROL ID d’expérience]**.
 * Sélectionnez ![Paramètre](/help/assets/icons/Setting.svg).
 * Dans la fenêtre contextuelle **[!UICONTROL Paramètres de la ligne]**, sous **[!UICONTROL Paramètres]**, cochez ou décochez la case **[!UICONTROL Afficher les miniatures]**.
 
 
 ## Prévisualisations
 
-Pour les lignes d’une dimension d’analyse du contenu qui affichent des miniatures, vous pouvez ouvrir une fenêtre contextuelle de prévisualisation.
+Pour les lignes d’une dimension Content Analytics qui affichent des miniatures, vous pouvez ouvrir une fenêtre contextuelle de prévisualisation.
 
 Pour ouvrir la prévisualisation avec les détails suivants :
 
@@ -46,7 +46,7 @@ Pour ouvrir la prévisualisation avec les détails suivants :
 
   | Prévisualisation de l’expérience | Prévisualisation de la ressource |
   |---|---|
-  | ![Prévisualisation de l’expérience d’analyse du contenu](../assets/aca-experience-preview.png) | ![Prévisualisation de la ressource d’analyse du contenu](../assets/aca-asset-preview.png) |
+  | ![Prévisualisation de l’expérience Content Analytics](../assets/aca-experience-preview.png) | ![Prévisualisation de la ressource Content Analytics](../assets/aca-asset-preview.png) |
   | Nom de la dimension (par exemple, **[!UICONTROL ID d’expérience])** | Nom de la dimension de ressource (par exemple, **[!UICONTROL ID de ressource])** |
   | **[!UICONTROL Impressions (toutes périodes)]** : nombre d’impressions pour l’expérience. | **[!UICONTROL Impressions (toutes périodes)]** : nombre d’impressions pour la ressource. |
   | **[!UICONTROL Ressources]** : nombre de ressources que contient cette expérience. <br/>Sélectionnez ![Répartition](/help/assets/icons/Breakdown.svg) **[!UICONTROL Répartition]** pour examiner les ressources. | **[!UICONTROL Expériences]** : nombre d’expériences dans lesquelles cette ressource apparaît. <br/>Sélectionnez ![Répartition](/help/assets/icons/Breakdown.svg) **[!UICONTROL Répartition]** pour examiner les ressources. |
@@ -64,13 +64,13 @@ En fonction de ce que vous apprendrez, vous pourrez effectuer un certain nombre 
 Pour utiliser le modèle :
 
 1. Sélectionnez **[!UICONTROL Workspace]** dans le menu principal.
-1. Vérifiez que vous avez sélectionné une vue de données déjà configurée pour l’analyse du contenu.
+1. Vérifiez que vous avez sélectionné une vue de données déjà configurée pour Content Analytics.
 1. Recherchez ou utilisez des segments (**[!UICONTROL Web]** pour **[!UICONTROL Canal]** et **[!UICONTROL Engagement]** pour **[!UICONTROL Cas d’utilisation]**) pour trouver et sélectionner le modèle **[!UICONTROL Analyse de contenu]**.
 1. Sélectionnez **[!UICONTROL Utiliser le modèle]**.
 1. Dans la boîte de dialogue **[!UICONTROL Configurer votre modèle]**, sélectionnez une mesure dans la boîte de dialogue **[!UICONTROL Sélectionner une mesure de conversion]**. Par exemple, **[!UICONTROL CTR des ressource]**.
 1. Sélectionnez **[!UICONTROL Continuer]**.
 
-Un projet **[!UICONTROL Vue d’ensemble de l’analyse du contenu]** s’ouvre dans [Analysis Workspace](/help/analysis-workspace/home.md). Le projet se compose de quatre [panneaux](/help/analysis-workspace/c-panels/panels.md). Chaque panneau fournit des [tableaux à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) et des [visualisations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) pour répondre à une question spécifique :
+Un projet **[!UICONTROL Vue d’ensemble de Content Analytics]** s’ouvre dans [Analysis Workspace](/help/analysis-workspace/home.md). Le projet se compose de quatre [panneaux](/help/analysis-workspace/c-panels/panels.md). Chaque panneau fournit des [tableaux à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) et des [visualisations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) pour répondre à une question spécifique :
 
 * **Quel est le contenu le plus performant ?**
 Ce panneau vous permet de comprendre quelles expériences et quelles ressources de ces expériences génèrent de l’engagement et des conversions. Les expériences sont des pages web complètes, capturées à un moment spécifique. Une expérience peut contenir du texte et plusieurs ressources d’image. Une ressource est une image.
@@ -81,7 +81,7 @@ Ce panneau vous permet de comprendre quelles expériences et quelles ressources 
 
      >[!NOTE]
      >
-     >Ces visualisations s’affichent uniquement lorsque vous avez [inclus des expériences](/help/content-analytics/config/guided.md#experience-capture-and-definition) dans votre configuration d’analyse du contenu.
+     >Ces visualisations s’affichent uniquement lorsque vous avez [inclus des expériences](/help/content-analytics/config/guided.md#experience-capture-and-definition) dans votre configuration Content Analytics.
      > 
 
       * **CTR de l’expérience** : visualisation de la [synthèse des modifications](/help/analysis-workspace/visualizations/summary-number-change.md) représentant le CTR de l’expérience.
@@ -100,7 +100,7 @@ Visualisation en [barre horizontale](/help/analysis-workspace/visualizations/hor
 Visualisation en [graphique de dispersion](/help/analysis-workspace/visualizations/scatterplot.md) qui présente un graphique de dispersion des vues de ressources par rapport aux conversions de ressources.
 
 * **Quels sont les attributs de ressources qui contribuent aux conversions ?**
-L’analyse du contenu utilise l’IA et GenAI pour attribuer automatiquement chaque métadonnée de ressource, comme les sujets, les scènes, les couleurs du premier plan, etc. Un attribut est une balise de métadonnées affectée par l’IA décrivant le contenu d’une ressource ou d’une expérience. Par exemple : <code>couleur de premier plan : rouge</code> est un attribut affecté automatiquement. Les visualisations vous permettent d’identifier les attributs de vos ressources qui contribuent le plus aux conversions.
+Content Analytics utilise l’IA et l’IA générative (GenAI) pour attribuer automatiquement chaque métadonnée de ressource, comme les sujets, les scènes, les couleurs du premier plan, etc. Un attribut est une balise de métadonnées affectée par l’IA décrivant le contenu d’une ressource ou d’une expérience. Par exemple : <code>couleur de premier plan : rouge</code> est un attribut affecté automatiquement. Les visualisations vous permettent d’identifier les attributs de vos ressources qui contribuent le plus aux conversions.
 
   Le panneau se compose des visualisations suivantes :
 
@@ -119,7 +119,7 @@ Exemple de [tableau à structure libre](/help/analysis-workspace/visualizations/
 
   >[!NOTE]
   >
-  >Ce panneau s’affiche uniquement lorsque vous avez [inclus des expériences](/help/content-analytics/config/guided.md#experience-capture-and-definition) dans votre configuration d’analyse du contenu.
+  >Ce panneau s’affiche uniquement lorsque vous avez [inclus des expériences](/help/content-analytics/config/guided.md#experience-capture-and-definition) dans votre configuration Content Analytics.
   > 
 
   Alors que les attributs de ressource se concentrent sur les qualités visuelles des images, les attributs d’expérience se concentrent sur le texte de votre page. Les visualisations ci-dessous vous permettent de découvrir quels attributs d’expérience contribuent à la conversion. Ces attributs sont également automatiquement affectés à l’aide des modèles d’IA et GenAI.
@@ -154,6 +154,6 @@ Vous pouvez ventiler n’importe quelle ressource par dimensions pour mieux comp
 
 >[!MORELIKETHIS]
 >
->[Composants de l’analyse du contenu](components.md)
+>[Composants de Content Analytics](components.md)
 >>[Utiliser des modèles](/help/analysis-workspace/templates/use-templates.md#web-engagement)
 >

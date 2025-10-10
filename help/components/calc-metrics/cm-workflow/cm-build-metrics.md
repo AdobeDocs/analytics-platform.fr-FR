@@ -1,12 +1,12 @@
 ---
-description: Découvrez le créateur de mesures calculées qui fournit une zone de travail pour faire glisser et déposer des dimensions, des mesures, des segments et des fonctions permettant de créer des mesures personnalisées en fonction de la logique de hiérarchie des conteneurs, des règles et des opérateurs.
-title: Création de mesures
+description: Découvrez le créateur de mesures calculées qui fournit une zone de travail dans laquelle faire glisser et déposer des dimensions, des mesures, des segments et des fonctions pour créer des mesures personnalisées en fonction de la logique de hiérarchie des conteneurs, des règles et des opérateurs.
+title: Créer des mesures
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
 source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '1613'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -200,5 +200,5 @@ Pour supprimer un conteneur, sélectionnez ![Fermer](/help/assets/icons/Close.sv
 >[!MORELIKETHIS]
 >
 >[Utilisation des fonctions](cm-using-functions.md)
->&#x200B;>[Segments](/help/components/segments/seg-overview.md)
+>>[Segments](/help/components/segments/seg-overview.md)
 >

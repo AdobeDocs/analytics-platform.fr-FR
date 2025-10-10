@@ -1,13 +1,13 @@
 ---
-description: Obtenez des réponses aux questions courantes sur Analysis Workspace.
-title: 'Questions fréquentes '
+description: Obtenez des réponses à des questions courantes sur Analysis Workspace.
+title: Questions fréquentes
 feature: Workspace Basics
 exl-id: d7233b26-9887-4b71-ad46-3c6ffe27d904
 role: User
 source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '232'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 

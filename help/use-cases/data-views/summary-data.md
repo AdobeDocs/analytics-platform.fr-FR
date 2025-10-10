@@ -7,7 +7,7 @@ role: Admin
 exl-id: 80139806-618a-46ff-b2c4-32d7bb85a526
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
-source-wordcount: '5202'
+source-wordcount: '5021'
 ht-degree: 15%
 
 ---
@@ -27,7 +27,7 @@ Le cas d’utilisation fournit des exemples de données pour les données de ré
 
 Vous utilisez les exemples de données de résumé suivants pour ce cas d’utilisation, qui montrent les données de résumé pour l’exécution de campagnes sur Facebook.
 
-+++Données récapitulatives
++++Données de résumé
 
 | _id | nom_campagne | coût | impression | campaign_id | network | ad_group | timestamp |
 |---|---|---:|---:|---|---|---|---|
@@ -278,7 +278,7 @@ Les données de recherche sont disponibles dans l’exemple de jeu de données d
 | 17 | def321 | def-adgroup | Campagne 321 |
 | 18 | ghi321 | ghi-adgroup | Campagne 321 |
 
-[![DataDownload](/help/assets/icons/DataDownload.svg) Télécharger des exemples de données de recherche](./assets/lookup-data.csv)
+[![DataDownload](/help/assets/icons/DataDownload.svg)](./assets/lookup-data.csv)
 +++
 
 >[!INFO]
@@ -376,7 +376,7 @@ Pour charger vos données d’exemple dans ce jeu de données :
    1. Vous pouvez éventuellement sélectionner ![Aperçu](/help/assets/icons/Preview.svg) **[!UICONTROL Prévisualiser les données]** pour ouvrir une boîte de dialogue avec un aperçu des données une fois chargées dans le jeu de données.
    1. Sélectionnez **[!UICONTROL Terminer]**.
 
-Dans **[!UICONTROL Sources]** > **[!UICONTROL Flux de données - XX/XX/XXXX, XX:XX]**, le statut de votre chargement s’affiche. Actualisez pour voir les mises à jour du chargement. En cas de réussite, vos exemples de données sont chargés dans Experience Platform.
+Dans **[!UICONTROL Sources]** > **[!UICONTROL Flux de données - XX/XX/XXXX, XX:XX XX]**, le statut de votre chargement s’affiche. Actualisez pour voir les mises à jour du chargement. En cas de réussite, vos exemples de données sont chargés dans Experience Platform.
 
 
 
@@ -526,7 +526,7 @@ Pour que vous puissiez générer des rapports sur les données correctes dans Wo
             1. Sélectionnez **[!UICONTROL 30 jours]** dans le menu déroulant **[!UICONTROL Intervalle de recherche en amont]**.
          1. Développez ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Format]**.
             1. Sélectionnez **[!UICONTROL Décimal]** dans le menu déroulant **[!UICONTROL Format]**.
-            1. Sélectionnez **[!UICONTROL ▲ Bon (vert)]** dans le menu déroulant **[!UICONTROL Afficher la tendance à la hausse sous forme de]**.
+            1. Sélectionnez **[!UICONTROL ▲bon (vert)]** dans le menu déroulant **[!UICONTROL Afficher la tendance à la hausse sous forme de]**.
 
       1. Sélectionnez **[!UICONTROL Enregistrer et continuer]**.
 
@@ -603,4 +603,4 @@ Votre projet final doit ressembler à celui illustré ci-dessous.
 >[!MORELIKETHIS]
 >
 >[Données de résumé](/help/data-views/summary-data.md)
->[Résumé des paramètres des composants de groupe de données](/help/data-views/component-settings/summary-data-group.md)
+>>[Résumé des paramètres des composants de groupe de données](/help/data-views/component-settings/summary-data-group.md)

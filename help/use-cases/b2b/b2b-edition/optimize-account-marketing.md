@@ -4,16 +4,16 @@ description: Découvrez comment optimiser le marketing de compte à l’aide de 
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-badgePremium: label="B2B edition"
+badgePremium: label="B2B Edition"
 exl-id: d5e44546-ea82-42eb-98df-19d51c71e9be
 source-git-commit: 3c13ae26a9ef48454467fc21b8faaa9e078c7f9f
 workflow-type: tm+mt
 source-wordcount: '709'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# Optimisation du marketing de compte
+# Optimiser le marketing de compte
 
 Une commercialisation efficace basée sur les comptes nécessite une compréhension approfondie du parcours d&#39;achat au niveau du compte. Vous pouvez ainsi déterminer les activités marketing les plus efficaces pour conclure une affaire.
 
@@ -49,8 +49,8 @@ Une visualisation de zone de travail de parcours vous permet d’effectuer les o
 Vous souhaitez visualiser le parcours d’un formulaire de prospect à un formulaire fermé.
 
 1. Visualisation [Création et configuration d’une zone de travail de Parcours ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
-1. Configurez **[!UICONTROL Compte]** comme mesure de Principal **&#x200B;**.
-1. Veillez à sélectionner **[!UICONTROL Compte]** comme conteneur de zone de travail de Parcours **&#x200B;**.
+1. Configurez **[!UICONTROL Compte]** comme mesure de Principal ****.
+1. Veillez à sélectionner **[!UICONTROL Compte]** comme conteneur de zone de travail de Parcours ****.
 
    ![Cas d’utilisation B2B - optimiser le marketing de compte - Zone de travail de parcours - Configuration](assets/b2b-uc-optimize-marketing-journey-canvas-config.png)
 
