@@ -32,7 +32,7 @@ Supposons également que vous réalisiez les actions suivantes :
 
 - Créez une connexion source Analytics (sans utiliser la fonction de préparation des données) qui ingère la **suite de rapports A** dans le lac de données Adobe Experience Platform sous la forme **jeu de données A**.
 - Créez une connexion source Analytics (sans utiliser la fonction de préparation des données) qui ingère **suite de rapports B** dans le lac de données Adobe Experience Platform sous la forme **jeu de données B**.
-- Créez une connexion Customer Journey Analytics [](/help/connections/create-connection.md) appelée **Toutes les suites de rapports** qui combine les jeux de données A et B.
+- Créez une connexion Customer Journey Analytics [&#128279;](/help/connections/create-connection.md) appelée **Toutes les suites de rapports** qui combine les jeux de données A et B.
 - Créez une vue de données [Customer Journey Analytics](/help/data-views/create-dataview.md) appelée **Vue globale** qui repose sur la connexion Toutes les suites de rapports.
 
 Sans utiliser la fonctionnalité de préparation des données pour résoudre les différences de schéma entre les jeux de données A et B, les eVars de la vue de données Vue globale mélangeront les valeurs :

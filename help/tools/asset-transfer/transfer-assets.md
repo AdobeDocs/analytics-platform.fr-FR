@@ -94,7 +94,7 @@ Un transfert peut avoir trois conséquences :
 
 L’un des principaux cas d’utilisation du transfert de ressources concerne la mise à niveau d’Adobe Analytics vers Customer Journey Analytics.
 
-La fonctionnalité [Migration des composants ](https://experienceleague.adobe.com/fr/docs/analytics/admin/admin-tools/component-migration/component-migration) d’Adobe Analytics vous permet de migrer les projets détenus appartenant à des administrateurs et administratrices vers d’autres administrateurs et administratrices. Tous les composants qui constituent ces projets sont ensuite recréés dans Customer Journey Analytics et l’administrateur ou l’administratrice destinataire possède tous ces composants, quelle que soit la personne qui les a créés.
+La fonctionnalité [Migration des composants &#x200B;](https://experienceleague.adobe.com/fr/docs/analytics/admin/admin-tools/component-migration/component-migration) d’Adobe Analytics vous permet de migrer les projets détenus appartenant à des administrateurs et administratrices vers d’autres administrateurs et administratrices. Tous les composants qui constituent ces projets sont ensuite recréés dans Customer Journey Analytics et l’administrateur ou l’administratrice destinataire possède tous ces composants, quelle que soit la personne qui les a créés.
 
 Cet outil de transfert de ressources permet par la suite aux administrateurs et administratrices de réaffecter des composants à leurs propriétaires légitimes, qu’il s’agisse ou non d’administrateurs ou d’administratrices.
 

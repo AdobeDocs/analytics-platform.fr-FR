@@ -40,7 +40,7 @@ Pour accéder aux fonctionnalités de carte thermique de Quantum Metric, vous de
 1. Cliquez sur **[!UICONTROL Créer]**.
 1. Testez l’un des liens pour voir s’il s’ouvre dans l’URL avec l’extension Quantum Metric visible. Ces liens s’ouvrent dans un nouvel onglet afin que votre projet Workspace reste ouvert.
 
-![ Carte thermique ](assets/heatmap.png)
+![&#x200B; Carte thermique &#x200B;](assets/heatmap.png)
 
 ## Étape 2 : affichage des cartes thermiques en cliquant sur les liens dans Customer Journey Analytics
 

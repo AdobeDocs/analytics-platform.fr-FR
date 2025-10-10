@@ -33,7 +33,7 @@ Cela est dû aux raisons suivantes :
 
 * Un retard dans la diffusion des données par lots aux jeux de données Platform
 
-  Bien que certaines données puissent être disponibles pour générer des rapports plus tôt, toutes les données [ par lots sont ingérées dans un jeu de données Platform](/help/data-ingestion/data-ingestion.md#ingest-and-use-batch-data.), généralement entre 3 et 9 heures après l’heure de l’événement de données. Pour que les alertes soient exactes, l’ingestion des données doit être terminée et toutes les données par lot disponibles dans le jeu de données . <!--3 to 9 hours is a sweet spot, what we are suggesting.  -->
+  Bien que certaines données puissent être disponibles pour générer des rapports plus tôt, toutes les données [&#x200B; par lots sont ingérées dans un jeu de données Platform](/help/data-ingestion/data-ingestion.md#ingest-and-use-batch-data.), généralement entre 3 et 9 heures après l’heure de l’événement de données. Pour que les alertes soient exactes, l’ingestion des données doit être terminée et toutes les données par lot disponibles dans le jeu de données . <!--3 to 9 hours is a sweet spot, what we are suggesting.  -->
 
 Pour ces raisons, l’ingestion des données des différents types de données d’événement pouvant être ingérées n’est terminée qu’après un certain délai, généralement entre 3 et 9 heures après l’heure de l’événement de données. Pour que les alertes soient précises, les données d’événement d’une plage d’événements donnée doivent être complètes, ce qui signifie qu’Adobe ne reçoit plus de données d’événement pour la plage d’événements spécifiée.
 

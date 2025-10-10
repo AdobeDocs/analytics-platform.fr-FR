@@ -29,7 +29,7 @@ Cet article explique un exemple plus complexe de mesure calculée. Ces mesures c
 
       1. Sélectionnez **[!UICONTROL Appliquer]**.
 
-      ![ Modèle d’attribution de colonne ](assets/complex-calculated-metric.png)
+      ![&#x200B; Modèle d’attribution de colonne &#x200B;](assets/complex-calculated-metric.png)
 
 1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer la mesure calculée.
 

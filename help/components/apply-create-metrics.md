@@ -32,14 +32,14 @@ Adobe propose plusieurs types de mesures à utiliser dans Analysis Workspace :
   Contrairement à Adobe Analytics, Customer Journey Analytics vous permet de définir des mesures standard de manière flexible dans le cadre d’une connexion et d’une vue de données.
 
    * **Personnes** : dans Customer Journey Analytics, la mesure Personnes correspond au nombre distinct des ID de personne. Selon ce que vous choisissez comme ID de personne lorsque vous configurez des jeux de données dans votre connexion, la mesure Personnes peut signifier différentes choses.
-   * **Sessions** : la mesure Sessions dans Customer Journey Analytics est ce que vous définissez dans le cadre de la configuration des paramètres Sessions dans votre vue de données. Voir [ Paramètres de session ](/help/data-views/session-settings.md).
+   * **Sessions** : la mesure Sessions dans Customer Journey Analytics est ce que vous définissez dans le cadre de la configuration des paramètres Sessions dans votre vue de données. Voir [&#x200B; Paramètres de session &#x200B;](/help/data-views/session-settings.md).
    * **Événements** : la mesure Événements dans Customer Journey Analytics se compose des événements qui font partie de tout jeu de données d’événement que vous avez configuré dans le cadre de votre connexion.
 
   Voir [Mesures standard](#standard-metrics) pour obtenir la liste complète des mesures standard.
 
 * **Mesures calculées** ![Calculateur](/help/assets/icons/Calculator.svg) : mesures définies par l’utilisateur ou l’utilisatrice et basées sur des mesures standard, des nombres statiques ou des fonctions algorithmiques.
 
-* **Modèles de mesures calculées** ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg) : mesures définies par Adobe qui se comportent de la même manière que les mesures calculées. Vous pouvez les utiliser tels quels dans les projets Workspace ou enregistrer une copie pour personnaliser la logique. Voir [ Mesures calculées par défaut ](calc-metrics/cm-workflow/../default-calcmetrics.md).
+* **Modèles de mesures calculées** ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg) : mesures définies par Adobe qui se comportent de la même manière que les mesures calculées. Vous pouvez les utiliser tels quels dans les projets Workspace ou enregistrer une copie pour personnaliser la logique. Voir [&#x200B; Mesures calculées par défaut &#x200B;](calc-metrics/cm-workflow/../default-calcmetrics.md).
 
 Vous pouvez voir si une mesure est approuvée ![icône Approuvée](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg) ou non. Si vous souhaitez plus de détails sur une mesure, pointez sur la mesure, puis sélectionnez ![Icône Infos](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg). Voir [Informations sur les composants](use-components-in-workspace.md#component-info) pour plus d’informations.
 
@@ -52,7 +52,7 @@ Liste complète des mesures standard dans Customer Journey Analytics :
 
 ## Créer des mesures calculées
 
-Les mesures calculées vous permettent de configurer facilement la manière dont les mesures sont liées les unes aux autres, à l’aide d’opérateurs simples ou de fonctions statistiques. Consultez [ Présentation des mesures calculées ](/help/components/calc-metrics/calc-metr-overview.md) pour plus d’informations.
+Les mesures calculées vous permettent de configurer facilement la manière dont les mesures sont liées les unes aux autres, à l’aide d’opérateurs simples ou de fonctions statistiques. Consultez [&#x200B; Présentation des mesures calculées &#x200B;](/help/components/calc-metrics/calc-metr-overview.md) pour plus d’informations.
 
 Il existe plusieurs façons de créer des mesures calculées. La méthode que vous choisissez détermine si la mesure calculée est disponible dans la liste des composants de tous les projets ou uniquement dans le projet dans lequel elle a été créée.
 

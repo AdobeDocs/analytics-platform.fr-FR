@@ -71,7 +71,7 @@ Configurer le schéma :
 
    1. Saisissez un **[!UICONTROL nom d’affichage de schéma]** pour votre schéma et (facultatif) une **[!UICONTROL description]**.
 
-      ![Fenêtre Créer un schéma présentant les champs pour nommer votre schéma ](./assets/create-pr-schema-wizard-step-2.png)
+      ![Fenêtre Créer un schéma présentant les champs pour nommer votre schéma &#x200B;](./assets/create-pr-schema-wizard-step-2.png)
 
    1. Sélectionnez **[!UICONTROL Terminer]**.
 
@@ -212,7 +212,7 @@ Configurer un connecteur source :
 
 Consultez [Ingérer et utiliser des données à partir d’Adobe Analytics classique](./analytics.md) pour plus d’informations sur l’utilisation du connecteur source Adobe Analytics.
 
-Consultez [ Ingérer et utiliser des données de flux ](./streaming.md) pour plus d’informations sur l’utilisation du connecteur source d’API HTTP.
+Consultez [&#x200B; Ingérer et utiliser des données de flux &#x200B;](./streaming.md) pour plus d’informations sur l’utilisation du connecteur source d’API HTTP.
 
 Consultez [Présentation des connecteurs source](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html#terms-and-conditions) pour obtenir un aperçu des connecteurs source, ainsi que des liens vers des informations supplémentaires pour chaque connecteur.
 
