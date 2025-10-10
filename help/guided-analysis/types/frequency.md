@@ -25,7 +25,7 @@ ht-degree: 100%
 
 L’analyse ![Fréquence](/help/assets/icons/Histogram.svg) **[!UICONTROL Fréquence]** regroupe les données d’événement en fonction de la fréquence des événements dans votre produit. L’axe vertical de cette analyse contient des compartiments qui représentent la fréquence de l’événement. L’axe horizontal mesure le nombre d’utilisateurs et utilisatrices ou de sessions pour chaque compartiment.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428089/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3435804/?quality=12&learn=on&captions=fre_fr)
 
 ## Cas d’utilisation
 

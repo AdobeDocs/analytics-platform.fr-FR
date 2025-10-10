@@ -33,7 +33,7 @@ Les fonctionnalités qui s’affichent en haut de cette visualisation indiquent 
 * Les fonctionnalités situées dans le coin inférieur gauche de la matrice sont vos fonctionnalités **à faible impact** ; elles ne sont pas largement adoptées ni fréquemment utilisées.
 * Les fonctions en bas à droite de la matrice sont vos fonctions **ponctuelles** ; elles sont largement adoptées, mais ne sont pas fréquemment utilisées.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429489/&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447469?captions=fre_fr)
 
 
 ## Cas d’utilisation
