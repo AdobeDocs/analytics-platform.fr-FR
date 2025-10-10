@@ -4,10 +4,10 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 4621b5059333c5ee4f7d41014d0e4eff17ef33bf
-workflow-type: ht
-source-wordcount: '5439'
-ht-degree: 100%
+source-git-commit: 8862bfdf873c4c3c5e795f3b299040b3dc253647
+workflow-type: tm+mt
+source-wordcount: '5487'
+ht-degree: 99%
 
 ---
 
@@ -19,6 +19,8 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 
 | Fonctionnalité | Description |
 | --- | --- |
+| **Octobre 2025** | |
+| Rapport sur la gestion du cycle de vie des informations et le trafic généré par l’IA | Ajout d’un [article de cas d’utilisation](/help/use-cases/ai-traffic.md) sur la création de rapports sur le trafic LLM et généré par l’IA à l’aide de champs dérivés comme base. Cet article est basé sur l’article de blog [Tracking et analyse du trafic généré par LLM et par l’IA dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967). |
 | **Septembre 2025** | |
 | Dates antérieures à 1900 | Ajout d’une [note](/help/connections/create-connection.md#datasets) sur la manière dont les dates antérieures à 1900 sont gérées par Customer Journey Analytics. |
 | Créer des rapports en temps réel | Ajout de la documentation sur la [création de rapports en temps réel](/help/components/real-time/real-time.md) dans Customer Journey Analytics. |
@@ -45,7 +47,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Mesures et dimensions partagées | Ajout d’une documentation sur la fonctionnalité [Mesures et dimensions partagées](/help/data-views/shared-metrics-dimensions/smd-overview.md). |
 | Report Builder | Révision et mise à jour de la documentation sur [Report Builder](/help/report-builder/rb-overview.md). |
 | Afficher et gérer l’utilisation | Modification de la documentation concernant l’[affichage](/help/connections/manage-connections.md#usage) et la [gestion](/help/technotes/estimate-usage.md) de l’utilisation de Customer Journey Analytics |
-| Analyse du contenu Adobe | L’[analyse du contenu](/help/content-analytics/content-analytics.md) vous permet d’examiner rapidement et facilement de grands volumes de données de contenu pour repérer des tendances, détecter des anomalies, identifier la lassitude liée au contenu et obtenir des informations issues de l’exposition du contenu. |
+| Adobe Content Analytics | [Content Analytics](/help/content-analytics/content-analytics.md) vous permet d’examiner rapidement et facilement de grands volumes de données de contenu pour repérer des tendances, détecter des anomalies, identifier la lassitude liée au contenu et obtenir des informations issues de l’exposition du contenu. |
 | Mise à jour des champs XDM pour la collecte des données des médias en streaming dans Adobe Experience Platform | Lors de la collecte de données des médias en streaming dans Adobe Experience Platform, les chemins d’accès aux champs XDM affichés dans la section « Chemin d’accès au champ XDM » de la documentation des paramètres des médias de streaming ne doivent plus être utilisés. Ces chemins d’accès aux champs se trouvent sur les pages suivantes et sont marqués comme « obsolètes » : [Paramètres audio et vidéo](https://experienceleague.adobe.com/fr/docs/media-analytics/using/implementation/variables/audio-video-parameters), [Paramètres de publicité](https://experienceleague.adobe.com/fr/docs/media-analytics/using/implementation/variables/ad-parameters), [Paramètres de chapitre](https://experienceleague.adobe.com/fr/docs/media-analytics/using/implementation/variables/chapter-parameters), [Paramètres d’état du lecteur](https://experienceleague.adobe.com/fr/docs/media-analytics/using/implementation/variables/player-state-parameters) et [Paramètres de qualité](https://experienceleague.adobe.com/fr/docs/media-analytics/using/implementation/variables/quality-parameters). |
 | Media Collection : mises à jour du connecteur source Adobe pour le nouveau XDM de création de rapports multimédia | Le connecteur source Analytics mappe automatiquement les données de médias en streaming dans Adobe Analytics aux mêmes champs utilisés par le SDK web. Auparavant, les données étaient mappées à la fois à l’ancien et au nouvel emplacement, mais seul le nouvel emplacement sera utilisé à l’avenir. [En savoir plus](https://experienceleague.adobe.com/fr/docs/analytics/implementation/aep-edge/xdm-var-mapping) |
 | Modification de terminologie : « filtres » devient « segments » | Auparavant, Adobe Customer Journey Analytics appelait les segments « filtres ». Cette terminologie est désormais conforme à celle d’Adobe Analytics. Les « filtres » sont désormais appelés « segments ». (Bien entendu, les filtres de recherche sont toujours appelés « filtres ».) L’interface d’utilisation et la documentation ont été mises à jour. |

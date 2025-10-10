@@ -4,11 +4,9 @@ description: Découvrez comment utiliser les champs dérivés comme base pour cr
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-hide: true
-hidefromtoc: true
-source-git-commit: 38be574621e4fc384f9fdeac94fc071f0cdd132b
+source-git-commit: 8862bfdf873c4c3c5e795f3b299040b3dc253647
 workflow-type: tm+mt
-source-wordcount: '1217'
+source-wordcount: '1275'
 ht-degree: 1%
 
 ---
@@ -17,6 +15,11 @@ ht-degree: 1%
 # Rapport sur le trafic généré par LLM et IA
 
 Cet article de cas d’utilisation explique comment utiliser la fonctionnalité de champs dérivés de Customer Journey Analytics comme base pour créer des rapports sur le trafic LLM (Large Language Model) et généré par l’IA.
+
+>[!NOTE]
+>
+>L’efficacité des [méthodes de détection](#detection-methods), [signatures de détection](#detection-signatures) et [stratégies d’implémentation](#implementation) dépend de votre méthode de collecte de données spécifique, de la couverture du jeu de données Experience Platform et de l’implémentation de Customer Journey Analytics. Les résultats peuvent varier en fonction de votre environnement technique, des politiques de gouvernance des données et de votre approche de mise en œuvre. Lors de l’utilisation d’Experience Edge, vous devez choisir entre enregistrer la chaîne brute de l’agent utilisateur ou collecter des informations sur l’appareil.
+>
 
 ## Méthodes de détection
 
@@ -30,6 +33,7 @@ Trois méthodes de détection principales courantes pour identifier et surveille
 * **Identification de l’agent utilisateur** : lorsqu’une requête est envoyée à votre serveur, l’en-tête User-Agent HTTP est extrait et analysé par rapport aux modèles d’agent et de robot d’exploration AI connus. Cette méthode côté serveur nécessite l’accès aux en-têtes HTTP et est plus efficace lorsqu’elle est implémentée au niveau de la couche de collecte de données.
 * **Classification de référent** : l’en-tête référent HTTP contient l’URL de la page web précédente qui pointait vers la requête en cours. Cet en-tête s’affiche lorsque les utilisateurs cliquent sur votre site à partir d’interfaces web telles que ChatGPT ou Perplexity.
 * **Détection des paramètres de requête** : les services d’IA peuvent ajouter des paramètres d’URL (en particulier des paramètres UTM) aux liens. Ces paramètres persistent dans l’URL et peuvent être détectés par le biais d’implémentations d’analyse standard, ce qui rend ces paramètres d’URL des indicateurs précieux même dans les scénarios de suivi côté client.
+
 
 Le tableau suivant illustre la manière dont les méthodes de détection peuvent être utilisées dans différents scénarios d’interaction LLM et AI.
 
@@ -248,32 +252,428 @@ Depuis août 2025, les signaux spécifiques suivants peuvent être identifiés p
 
 ## Implémentation
 
-Vous pouvez créer des rapports sur le trafic généré par LLM et l’IA dans une configuration Customer Journey Analytics standard (connexion, vue de données, projet d’espace de travail) par le biais de la configuration spécifique des [champs dérivés](#derived-fields), [segments](#segments) et [projets d’espace de travail](#workspace-project).
+Vous pouvez créer des rapports sur le trafic généré par LLM et par l’IA dans une configuration Customer Journey Analytics standard ([connexion](/help/connections/overview.md), [vues de données](/help/data-views/data-views.md) et [projets d’espace de travail](/help/analysis-workspace/home.md)) par le biais de la configuration spécifique des [champs dérivés](#derived-fields), [segments](#segments) et [projets d’espace de travail](#workspace-project).
 
 
 ### Champs dérivés
 
-Pour configurer les méthodes de détection et les signaux de détection, utilisez les champs dérivés comme base. Par exemple, définissez des champs dérivés pour l’identification de l’agent utilisateur, la détection des paramètres de requête et la classification des référents.
+Pour configurer les méthodes de détection et les signaux de détection, utilisez les champs dérivés comme base. Par exemple, définissez les champs dérivés pour [identification de l’agent utilisateur](#user-agent-identification), [détection des paramètres de requête](#query-parameter-detection) et [classification du référent](#referrer-classification).
 
 #### Identification de l’agent utilisateur LLM/AI
 
 Utilisez les fonctions de champ dérivé [Case When](/help/data-views/derived-fields/derived-fields.md#case-when) pour définir un champ dérivé qui identifie les agents utilisateur LLM/AI.
 
-![&#x200B; Identification de l’agent utilisateur LLM/AI &#x200B;](assets/aitraffic-useragents.png){zoomable="yes"}
+![ Identification de l’agent utilisateur LLM/AI ](assets/aitraffic-useragents.png){zoomable="yes"}
 
 
 #### Détection des paramètres de requête LLM/AI
 
-Utilisez les fonctions de champ dérivé [Analyse d’URL](/help/data-views/derived-fields/derived-fields.md#url-parse) et [Classifier](/help/data-views/derived-fields/derived-fields.md#classify) pour définir un champ dérivé qui détecte la détection des paramètres UTM.
+Utilisez les fonctions de champ dérivé [Analyse d’URL](/help/data-views/derived-fields/derived-fields.md#url-parse) et [Classifier](/help/data-views/derived-fields/derived-fields.md#classify) pour définir un champ dérivé qui détecte les paramètres de requête.
 
 ![Détection des paramètres UTM LLM/AI](assets/aitraffic-utmparams.png){zoomable="yes"}
 
 
 #### Classification de référent LLM/AI
 
-Utilisez les fonctions d’analyse d’URL et de classification des champs dérivés pour définir un champ dérivé qui classe les référents.
+Utilisez les fonctions de champ dérivé [Analyse d’URL](/help/data-views/derived-fields/derived-fields.md#url-parse) et [Classifier](/help/data-views/derived-fields/derived-fields.md#classify) pour définir un champ dérivé qui classe les référents.
 
-![Classification de référent LLM/AI](assets/aitraffic-utmparams.png){zoomable="yes"}
+(assets/aitraffic-referrers.png
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+){zoomable="yes"}
 
 
 ### Segments
@@ -287,12 +687,12 @@ Configurez des segments dédiés qui vous aident à identifier les événements,
 
 Utilisez les champs dérivés et les segments pour générer des rapports et des analyses sur le trafic généré par LLM et par l’IA. Par exemple, consultez le projet annoté ci-dessous.
 
-![&#x200B; Projet de Workspace du trafic généré par LLM et l’IA &#x200B;](assets/aitraffic-workspace.png){zoomable="yes"}
+![ Projet de Workspace du trafic généré par LLM et l’IA ](assets/aitraffic-workspace.png){zoomable="yes"}
 
 
 
 >[!MORELIKETHIS]
 >
->Cet article de cas d’utilisation est basé sur l’article de blog [Tracking et analyse du trafic généré par LLM et par l’IA dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967?profile.language=fr).
+>Cet article de cas d’utilisation est basé sur l’article de blog [Tracking et analyse du trafic généré par LLM et par l’IA dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967).
 >
 >
