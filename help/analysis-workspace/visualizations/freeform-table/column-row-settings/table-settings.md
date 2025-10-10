@@ -90,4 +90,4 @@ Les options de menu contextuel supplémentaires suivantes sont disponibles lors 
 
 ## Modifier la hauteur des lignes
 
-Vous pouvez définir la [densité d’affichage](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density) d’un projet sur **[!UICONTROL Compact]**, **[!UICONTROL Confortable]** et **[!UICONTROL Développé]**.
+Vous pouvez définir la [densité d’affichage](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density) d’un projet sur **[!UICONTROL Compact]**, **[!UICONTROL Confortable]** et **[!UICONTROL Développé]**.

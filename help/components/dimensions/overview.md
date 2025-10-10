@@ -48,6 +48,6 @@ Les administrateurs ou les administratrices de Customer Journey Analytics peuven
 
 >[!MORELIKETHIS]
 >
->[Découvrez des informations précises sur les clients et les clientes avec la fonctionnalité Profondeur de l’événement](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/discover-deeper-customer-insights-with-adobe-customer-journey/ba-p/753947#M576).
+>[Découvrez des informations précises sur les clients et les clientes avec la fonctionnalité Profondeur de l’événement](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/discover-deeper-customer-insights-with-adobe-customer-journey/ba-p/753947?profile.language=fr#M576).
 >
 

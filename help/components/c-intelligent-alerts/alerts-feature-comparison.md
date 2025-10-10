@@ -47,6 +47,6 @@ Pour plus d’informations sur la manière d’ajuster le délai et sur les fact
 
 ## Création d’une alerte
 
-Dans Analysis Workspace d’Adobe Analytics, vous pouvez [créer des alertes depuis Analysis Workspace de plusieurs façons](https://experienceleague.adobe.com/en/docs/analytics/components/alerts/alert-builder). Dans Customer Journey Analytics, vous pouvez uniquement [créer une alerte](alert-builder.md) dans Analysis Workspace à partir d’une sélection dans un tableau à structure libre.
+Dans Analysis Workspace d’Adobe Analytics, vous pouvez [créer des alertes depuis Analysis Workspace de plusieurs façons](https://experienceleague.adobe.com/fr/docs/analytics/components/alerts/alert-builder). Dans Customer Journey Analytics, vous pouvez uniquement [créer une alerte](alert-builder.md) dans Analysis Workspace à partir d’une sélection dans un tableau à structure libre.
 
 Adobe Analytics et Customer Journey Analytics prennent en charge la création d’alertes par le biais du [gestionnaire d’alertes](alert-manager.md)

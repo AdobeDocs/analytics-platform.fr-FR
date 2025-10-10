@@ -17,7 +17,7 @@ Adobe Customer Journey Analytics est hébergé dans des centres de données d’
 
 Lors de la mise en service, les clients désignent la zone géographique dans laquelle leurs données Adobe Experience Platform seront stockées. Les données ingérées dans CJA à partir du lac de données Adobe Experience Platform seront stockées dans la même région.
 
-Voir [Collecte de données régionales](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/rdc) dans la documentation de Adobe Experience Cloud pour plus d’informations.
+Voir [Collecte de données régionales](https://experienceleague.adobe.com/fr/docs/core-services/interface/data-collection/rdc) dans la documentation de Adobe Experience Cloud pour plus d’informations.
 
 ## Azure
 
