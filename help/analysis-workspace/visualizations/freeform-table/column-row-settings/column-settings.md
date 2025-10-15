@@ -18,7 +18,7 @@ Grâce aux [!UICONTROL paramètres des colonnes], vous pouvez configurer la mise
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Paramètres des lignes et des colonnes dans un tableau à structure libre](https://video.tv.adobe.com/v/328500/?quality=12&learn=on&captions=fre_fr){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Paramètres des lignes et des colonnes dans un tableau à structure libre](https://video.tv.adobe.com/v/40382/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 
@@ -38,7 +38,7 @@ Vous pouvez modifier les paramètres pour plusieurs colonnes à la fois. Sélect
 | **[!UICONTROL Afficher le total général]** | Affichez une somme côté serveur de la colonne. Le total général déduplique les mesures telles que les sessions ou les personnes. |
 | **[!UICONTROL Afficher les graphiques sparkline]** | Affichez un graphique en courbes dans l’en-tête des colonnes. |
 | **[!UICONTROL Nombre]** | Déterminez si une cellule affiche/masque la valeur numérique pour la mesure. Par exemple, si la mesure est Pages vues, la valeur numérique correspond au nombre de pages vues pour l’élément de ligne. |
-| **[!UICONTROL Pour cent]** | Déterminez si une cellule affiche/masque la valeur de pourcentage pour la mesure. Par exemple, si la mesure est Pages vues, la valeur de pourcentage correspond au nombre de pages vues pour l’élément de ligne, divisé par le nombre total de pages vues pour la colonne. Remarque : des pourcentages supérieurs à 100 % sont possibles pour garantir l’exactitude. La limite supérieure peut passer à 1 000 % pour éviter que la largeur des colonnes ne devienne trop grande. |
+| **[!UICONTROL Pourcentage]** | Déterminez si une cellule affiche/masque la valeur de pourcentage pour la mesure. Par exemple, si la mesure est Pages vues, la valeur de pourcentage correspond au nombre de pages vues pour l’élément de ligne, divisé par le nombre total de pages vues pour la colonne. Remarque : des pourcentages supérieurs à 100 % sont possibles pour garantir l’exactitude. La limite supérieure peut passer à 1 000 % pour éviter que la largeur des colonnes ne devienne trop grande. |
 | **[!UICONTROL Afficher les anomalies]** | Déterminez si la détection des anomalies est exécutée sur les valeurs de cette colonne. |
 | **[!UICONTROL Afficher la prévision]** | Déterminez si les valeurs de prévision sont affichées dans cette colonne. |
 | **[!UICONTROL Renvoyer à la ligne le texte d’en-tête]** | Renvoyez à la ligne le texte de l’en-tête dans les tableaux à structure libre afin de rendre les en-têtes plus lisibles et les tableaux plus faciles à partager. Le renvoi à la ligne est utile pour le rendu PDF et pour les mesures dont le nom est long. Activé par défaut. |

@@ -469,7 +469,7 @@ Pour que vous puissiez générer des rapports sur les données correctes dans Wo
          |---|---|---|---|
          | Groupe publicitaire (recherche) | Exemple de jeu de données de recherche | Chaîne | *_tenant*.ad_group |
          | Groupe publicitaire (résumé) | Exemple de jeu de données de résumé | Chaîne | *_tenant*.ad_group |
-         | ID de campagne | Exemple de jeu de données de résumé | Chaîne | *_tenant*.campaign_id |
+         | Identifiant De La Campagne | Exemple de jeu de données de résumé | Chaîne | *_tenant*.campaign_id |
          | Nom De La Campagne (Recherche) | Exemple de jeu de données de recherche | Chaîne | *_tenant*.campaign_name |
          | Nom De La Campagne (Résumé) | Exemple de jeu de données de résumé | Chaîne | *_tenant*.campaign_name |
          | Réseau | Exemple de jeu de données de résumé | Chaîne | *_tenant*.network |
@@ -603,4 +603,4 @@ Votre projet final doit ressembler à celui illustré ci-dessous.
 >[!MORELIKETHIS]
 >
 >[Données de résumé](/help/data-views/summary-data.md)
->&#x200B;>[Résumé des paramètres des composants de groupe de données](/help/data-views/component-settings/summary-data-group.md)
+>>[Résumé des paramètres des composants de groupe de données](/help/data-views/component-settings/summary-data-group.md)

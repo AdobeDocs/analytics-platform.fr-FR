@@ -41,7 +41,7 @@ De la même manière que pour l’analyse [Active](active-growth.md), les utilis
 >
 >Les utilisateurs et utilisatrices réguliers ne sont pas pris en compte dans ce calcul, car ils ne représentent aucun gain ni aucune perte pour les utilisateurs et utilisatrices.
 
->[!VIDEO](https://video.tv.adobe.com/v/3423460/?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3421664/?quality=12&learn=on)
 
 
 ## Cas d’utilisation

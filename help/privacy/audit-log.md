@@ -52,7 +52,7 @@ Dans Customer Journey Analytics, accédez à **[!UICONTROL Outils]** > **[!UIC
 
 Le journal d’audit pour aujourd’hui et hier s’affiche par défaut.
 
-![Journal d’audit mis en surbrillance aujourd’hui et hier. &#x200B;](assets/audit_ui.png)
+![Journal d’audit mis en surbrillance aujourd’hui et hier. ](assets/audit_ui.png)
 
 Vous pouvez sélectionner les colonnes visibles en accédant au sélecteur de colonnes en haut à droite.
 
@@ -60,7 +60,7 @@ Vous pouvez sélectionner les colonnes visibles en accédant au sélecteur de co
 
 Double-cliquez sur le bouton info (i) en regard d’une description.
 
-![Journal d’audit mettant en surbrillance le bouton d’informations. &#x200B;](assets/info-button-audit.png)
+![Journal d’audit mettant en surbrillance le bouton d’informations. ](assets/info-button-audit.png)
 
 Les éléments suivants s’affichent :
 

@@ -29,12 +29,12 @@ L’analyse ![Chronologie](/help/assets/icons/Timeline.svg) **[!UICONTROL Chrono
 >[!NOTE]
 >
 >L’analyse [!UICONTROL Chronologie] nécessite que le composant standard **[!UICONTROL ID de personne]** soit disponible dans la [vue de données](/help/data-views/component-reference.md#optional). L’inclusion de l’ID de personne dans une vue de données est gérée par votre administrateur ou administratrice Customer Journey Analytics, ce qui permet à votre organisation de contrôler entièrement la confidentialité des personnes pouvant accéder à ces données.
->&#x200B;><br/>Si aucune vue de données n’est associée au composant [!UICONTROL ID de personne], le message suivant s’affiche :
+>><br/>Si aucune vue de données n’est associée au composant [!UICONTROL ID de personne], le message suivant s’affiche :
 >
 >* **Admins** : *la propriété PersonID est requise pour cette analyse. Ajoutez l’ID de personne à la vue de données.*
 >* **Non-admins** : *La propriété PersonID est requise pour cette analyse. Contactez votre administrateur ou administratrice Customer Journey Analytics pour ajouter l’ID de personne à la vue de données.*
 
->[!VIDEO](https://video.tv.adobe.com/v/3435769/?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3427810/?quality=12&learn=on)
 
 
 
@@ -54,7 +54,7 @@ Consultez [Interface](../overview.md#interface) pour une vue d’ensemble de l�
 
 Le rail de requête vous permet de configurer les composants suivants :
 
-* **[!UICONTROL Dimension]** : dimension pour laquelle vous souhaitez afficher les valeurs diffusées. Le flux au centre affiche les valeurs de la dimension sélectionnée. Vous pouvez également appliquer des filtres pour réduire le flux à des données plus pertinentes. Les opérateurs valides pour le filtre comprennent [!UICONTROL Est égal à], [!UICONTROL N’est pas égal à], [!UICONTROL Commence par], [!UICONTROL Se termine par], [!UICONTROL Contient], [!UICONTROL Ne contient pas &#x200B;], [!UICONTROL Existe] et [!UICONTROL N’existe pas].
+* **[!UICONTROL Dimension]** : dimension pour laquelle vous souhaitez afficher les valeurs diffusées. Le flux au centre affiche les valeurs de la dimension sélectionnée. Vous pouvez également appliquer des filtres pour réduire le flux à des données plus pertinentes. Les opérateurs valides pour le filtre comprennent [!UICONTROL Est égal à], [!UICONTROL N’est pas égal à], [!UICONTROL Commence par], [!UICONTROL Se termine par], [!UICONTROL Contient], [!UICONTROL Ne contient pas ], [!UICONTROL Existe] et [!UICONTROL N’existe pas].
 * **[!UICONTROL Segments]** : segments que vous souhaitez analyser. Le segment sélectionné filtre vos données pour se concentrer uniquement sur les personnes qui correspondent à vos critères de segment. Si vous souhaitez limiter l’analyse à un ID de personne spécifique, vous pouvez le filtrer dans le panneau de droite. Un segment est pris en charge pour cette analyse.
 
 ### Paramètres du graphique

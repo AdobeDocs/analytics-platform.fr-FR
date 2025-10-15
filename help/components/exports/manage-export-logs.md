@@ -14,7 +14,7 @@ ht-degree: 8%
 
 # Gérer les journaux d’export
 
-Les journaux d’exportation fournissent des détails sur chaque exportation et sont générés chaque fois que des données Analysis Workspace sont exportées vers le cloud. (Pour plus d’informations sur la manière dont les données peuvent être exportées vers le cloud, voir [&#x200B; Exporter des rapports Customer Journey Analytics vers le cloud](/help/analysis-workspace/export/export-cloud.md).)
+Les journaux d’exportation fournissent des détails sur chaque exportation et sont générés chaque fois que des données Analysis Workspace sont exportées vers le cloud. (Pour plus d’informations sur la manière dont les données peuvent être exportées vers le cloud, voir [ Exporter des rapports Customer Journey Analytics vers le cloud](/help/analysis-workspace/export/export-cloud.md).)
 
 Pour les exportations planifiées, les journaux reflètent les paramètres d’exportation tels qu’ils étaient lorsque le journal a été envoyé. Les journaux ne peuvent pas être supprimés.
 

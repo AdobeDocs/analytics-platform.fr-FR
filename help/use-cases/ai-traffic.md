@@ -12,7 +12,7 @@ ht-degree: 1%
 ---
 
 
-# Rapport sur le trafic généré par LLM et IA
+# Créer un rapport sur le trafic généré par LLM et IA
 
 Cet article de cas d’utilisation explique comment utiliser la fonctionnalité de champs dérivés de Customer Journey Analytics comme base pour créer des rapports sur le trafic LLM (Large Language Model) et généré par l’IA.
 
@@ -263,7 +263,7 @@ Pour configurer les méthodes de détection et les signaux de détection, utilis
 
 Utilisez les fonctions de champ dérivé [Case When](/help/data-views/derived-fields/derived-fields.md#case-when) pour définir un champ dérivé qui identifie les agents utilisateur LLM/AI.
 
-![&#x200B; Identification de l’agent utilisateur LLM/AI &#x200B;](assets/aitraffic-useragents.png){zoomable="yes"}
+![ Identification de l’agent utilisateur LLM/AI ](assets/aitraffic-useragents.png){zoomable="yes"}
 
 
 #### Détection des paramètres de requête LLM/AI
@@ -291,12 +291,12 @@ Configurez des segments dédiés qui vous aident à identifier les événements,
 
 Utilisez les champs dérivés et les segments pour générer des rapports et des analyses sur le trafic généré par LLM et par l’IA. Par exemple, consultez le projet annoté ci-dessous.
 
-![&#x200B; Projet de Workspace du trafic généré par LLM et l’IA &#x200B;](assets/aitraffic-workspace.png){zoomable="yes"}
+![ Projet de Workspace du trafic généré par LLM et l’IA ](assets/aitraffic-workspace.png){zoomable="yes"}
 
 
 
 >[!MORELIKETHIS]
 >
->Cet article de cas d’utilisation est basé sur l’article de blog [Tracking et analyse du trafic généré par LLM et par l’IA dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967?profile.language=fr).
+>Cet article de cas d’utilisation est basé sur l’article de blog [Tracking et analyse du trafic généré par LLM et par l’IA dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967).
 >
 >

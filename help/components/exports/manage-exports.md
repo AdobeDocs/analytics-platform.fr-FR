@@ -64,7 +64,7 @@ Vous pouvez modifier les propriétés, le format, la planification et les inform
 
    La boîte de dialogue [!UICONTROL **Exporter le tableau complet**] s’affiche.
 
-1. Mettez à jour l’une des options disponibles. Pour plus d’informations sur chaque option, voir [&#x200B; Exporter des tables complètes depuis Analysis Workspace &#x200B;](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace) dans [&#x200B; Exporter des rapports Customer Journey Analytics vers le cloud](/help/analysis-workspace/export/export-cloud.md).
+1. Mettez à jour l’une des options disponibles. Pour plus d’informations sur chaque option, voir [ Exporter des tables complètes depuis Analysis Workspace ](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace) dans [ Exporter des rapports Customer Journey Analytics vers le cloud](/help/analysis-workspace/export/export-cloud.md).
 
 ## Dupliquer une exportation
 

@@ -21,7 +21,7 @@ Ces données de résumé peuvent ensuite être utilisées pour présenter des in
 >[!NOTE]
 >
 >Les données de résumé sont des données de série temporelle provenant d’un jeu de données de résumé. Ce jeu de données de résumé est basé sur un schéma qui utilise la classe XDM Mesures de résumé comme classe de base.
->&#x200B;>Seules les données de série temporelle basées sur une heure ou une journée sont prises en charge.
+>>Seules les données de série temporelle basées sur une heure ou une journée sont prises en charge.
 
 >[!TIP]
 >
@@ -154,5 +154,5 @@ Assurez-vous que les paramètres des composants pour un groupe de données de r�
 >[!MORELIKETHIS]
 >
 >- Consultez l’article [Utiliser des données de résumé](/help/use-cases/data-views/summary-data.md) pour obtenir un exemple de cas d’utilisation détaillé sur l’utilisation des données de résumé et la création de rapports les concernant.
->- Blog : [comment les données de résumé améliorent les jeux de données Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-summary-data-enhances-adobe-customer-journey-analytics/ba-p/704635?profile.language=fr)
+>- Blog : [comment les données de résumé améliorent les jeux de données Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-summary-data-enhances-adobe-customer-journey-analytics/ba-p/704635)
 

@@ -42,7 +42,7 @@ Examinez l’exemple suivant. Vous disposez de deux jeux de données d’événe
 | --- | --- | --- | --- | ---: |
 | user_847 | 2 Jan 12:26 PM | Jaune | Cercle | 8,5 |
 | user_847 | 2 Jan 13:01 | Rouge | | |
-| alternateid_656 | 2 janv. 8:58 PM | Rouge | Square | 4.2 |
+| alternateid_656 | 2 janv. 8:58 PM | Rouge | Square | 4,2 |
 | alternateid_656 | 2 Jan 9:03 PM | | Triangle | 3,1 |
 
 Lorsque vous créez une connexion à l’aide de ces deux jeux de données d’événements et que vous avez identifié
@@ -61,7 +61,7 @@ le jeu de données combiné suivant est utilisé pour la création de rapports.
 | user_847 | 2 Jan 12:31 PM | | Tortue | | 4 | |
 | user_847 | 2 Jan 12:44 PM | | | | 2 | |
 | user_847 | 2 Jan 13:01 | Rouge | | | | |
-| alternateid_656 | 2 janv. 8:58 PM | Rouge | | Square | | 4.2 |
+| alternateid_656 | 2 janv. 8:58 PM | Rouge | | Square | | 4,2 |
 | alternateid_656 | 2 Jan 9:03 PM | | | Triangle | | 3,1 |
 
 Pour illustrer l’importance des chemins de schéma, considérez ce scénario. Dans le premier jeu de données, `string_color` est basé sur le chemin de schéma `_experience.whatever.string_color` et dans le second jeu de données sur le chemin de schéma `_experience.somethingelse.string_color`. Dans ce scénario, les données ne sont **pas** fusionnées en une colonne dans le jeu de données combiné résultant. Au lieu de cela, le résultat se compose de deux colonnes `string_color` dans le jeu de données combiné :
@@ -75,7 +75,7 @@ Pour illustrer l’importance des chemins de schéma, considérez ce scénario. 
 | user_847 | 2 Jan 12:31 PM | | | Tortue |  | 4 | |
 | user_847 | 2 Jan 12:44 PM | | | | | 2 | |
 | user_847 | 2 Jan 13:01 | | Rouge | | | | |
-| alternateid_656 | 2 janv. 8:58 PM | | Rouge | | Square | | 4.2 |
+| alternateid_656 | 2 janv. 8:58 PM | | Rouge | | Square | | 4,2 |
 | alternateid_656 | 2 Jan 9:03 PM | | | | Triangle | | 3,1 |
 
 Ce jeu de données d’événements combiné est utilisé dans les rapports. Peu importe le jeu de données d’où provient une ligne. Customer Journey Analytics traite toutes les données comme si elles se trouvaient dans le même jeu de données. Si un ID de personne correspondant apparaît dans les deux jeux de données, ils sont considérés comme la même personne unique. Si un ID de personne correspondant apparaît dans les deux jeux de données avec un horodatage dans les 30 minutes, il est considéré comme faisant partie de la même session. Les champs ayant des chemins de schéma identiques sont fusionnés.

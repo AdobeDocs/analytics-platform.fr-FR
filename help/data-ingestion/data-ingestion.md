@@ -114,5 +114,5 @@ Voir [ Ingérer et utiliser des données ad hoc](./adhoc.md)
 
 >[!MORELIKETHIS]
 >
->Blog : [en savoir plus sur le traitement et l’ingestion des données dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-closer-look-at-data-processing-amp-ingestion-in-adobe-customer/ba-p/665091?profile.language=fr)
+>Blog : [en savoir plus sur le traitement et l’ingestion des données dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-closer-look-at-data-processing-amp-ingestion-in-adobe-customer/ba-p/665091)
 

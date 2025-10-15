@@ -33,7 +33,7 @@ Data Mirror offre les fonctionnalités essentielles suivantes pour la synchronis
 
 Utilisez Data Mirror pour ingérer des modifications directement à partir de vos systèmes sources, appliquer l’intégrité des schémas et rendre les données disponibles pour les workflows d’analyse, d’orchestration des parcours et de conformité. Data Mirror élimine les processus ETL en amont complexes et accélère la mise en œuvre en permettant la mise en miroir directe des modèles de base de données existants. Cette élimination peut améliorer la gouvernance des données grâce à un contrôle précis des suppressions et des opérations d’hygiène des données.
 
-Consultez également la [documentation d’Experience Platform sur Data Mirror](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-mirror/overview){target="_blank"}.
+Consultez également la [documentation d’Experience Platform sur Data Mirror](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview){target="_blank"}.
 
 ## Data Mirror pour Customer Journey Analytics
 
@@ -51,5 +51,5 @@ Experience Platform Data Mirror for Customer Journey Analytics est disponible po
 >[!MORELIKETHIS]
 >
 >Guide de démarrage rapide de [Data Mirror : mise en miroir et utilisation de données basées sur des modèles](model-based.md)
->&#x200B;>[Data Mirror (documentation Experience Platform)](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-mirror/overview)
->&#x200B;>[Schémas basés sur des modèles (documentation Experience Platform)](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/schema/model-based)
+>>[Data Mirror (documentation Experience Platform)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview)
+>>[Schémas basés sur des modèles (documentation Experience Platform)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/model-based)

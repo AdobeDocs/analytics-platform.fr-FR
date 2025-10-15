@@ -1,13 +1,13 @@
 ---
 description: Découvrez comment la visualisation des abandons dans Analysis Workspace vous permet de combiner et de faire correspondre des dimensions et des mesures comme points de contact dans les entonnoirs et les workflows. Découvrez comment cela offre davantage de flexibilité pour définir les étapes utilisateur sur lesquelles vous souhaitez en savoir plus.
-title: Abandons interdimensionnels
+title: Abandon Interdimensionnel
 feature: Visualizations
 exl-id: 7975324c-4efc-4c36-bc83-dcde85d2febc
 role: User
 source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
 source-wordcount: '225'
-ht-degree: 7%
+ht-degree: 6%
 
 ---
 

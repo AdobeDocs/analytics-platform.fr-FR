@@ -20,7 +20,7 @@ En liant les relectures de session de Quantum Metric aux données de CJA, les cl
 
 Ces étapes supposent que vous utilisiez les balises dans la collecte de données Adobe Experience Platform. Vous pouvez adapter ces méthodes de collecte de données vers une implémentation manuelle de Web SDK si votre entreprise n’utilise pas de balises.
 
-Pour plus d’informations, consultez la documentation de l’[extension de balise Quantum Metric](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/catalog/analytics/quantum-metric).
+Pour plus d’informations, consultez la documentation de l’[extension de balise Quantum Metric](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric).
 
 ## Étape 1 : créer un champ de schéma pour s’adapter à l’ID de session Quantum Metric
 
@@ -114,4 +114,4 @@ Chaque ID de session est désormais un lien cliquable. Voir [Créer des liens hy
 
 Une fois que vous avez trouvé un segment intéressant que vous souhaitez explorer, vous pouvez l’appliquer au panneau qui comprend vos liens d’ID de session. Le tableau renvoie toutes les sessions de ce segment et vous pouvez cliquer sur l’une d’entre elles pour l’explorer davantage dans la mesure quantique.
 
-Pour plus d’informations[&#x200B; consultez le &#x200B;](https://www.quantummetric.com/resources/ebook/the-enterprise-guide-to-session-replay) Guide d’entreprise sur la relecture de session sur Quantum Metric . Vous pouvez également contacter votre représentant du service clientèle de Quantum Metric ou soumettre une demande par le biais du portail [Quantum Metric Customer Request](https://community.quantummetric.com/s/public-support-page).
+Pour plus d’informations[ consultez le ](https://www.quantummetric.com/resources/ebook/the-enterprise-guide-to-session-replay) Guide d’entreprise sur la relecture de session sur Quantum Metric . Vous pouvez également contacter votre représentant du service clientèle de Quantum Metric ou soumettre une demande par le biais du portail [Quantum Metric Customer Request](https://community.quantummetric.com/s/public-support-page).

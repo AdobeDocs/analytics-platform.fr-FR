@@ -49,7 +49,7 @@ Cela a un impact sur l’exportation des données à partir d’Adobe Analytics 
 
 Dans Customer Journey Analytics, les événements ne sont pas collectés dans l’ordre et un ID de personne est utilisé au lieu d’un ID d’appareil, ce qui permet à Customer Journey Analytics de mettre à jour l’attribution et la sessionnalisation au moment du rapport. Ce type de collecte de données offre une certaine flexibilité, notamment :
 
-* L’assemblage peut _relire_ des données quotidiennes ou hebdomadaires, associant des événements anonymes à des événements connus. Voir [&#x200B; Assemblage &#x200B;](../../stitching/overview.md) pour plus d’informations.
+* L’assemblage peut _relire_ des données quotidiennes ou hebdomadaires, associant des événements anonymes à des événements connus. Voir [ Assemblage ](../../stitching/overview.md) pour plus d’informations.
 * La sessionnalisation et les valeurs persistantes changent à chaque fois
    * de nouvelles données sont collectées ou
    * l’assemblage ajoute des événements à l’historique d’une personne.

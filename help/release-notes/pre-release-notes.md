@@ -23,10 +23,10 @@ Ces notes de mise à jour portent sur la période du 2 juin 2025 au 15 juille
 Reportez-vous à la documentation suivante pour les notes de mise à jour de Adobe Experience Platform et de ses autres applications :
 
 * [Adobe Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/release-notes/pre-release-notes)
-* [Adobe Journey Optimizer](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/whats-new/release-notes?lang=en)
-* [Adobe Journey Optimizer B2B](https://experienceleague.adobe.com/fr/docs/journey-optimizer-b2b/user/release-notes?lang=en)
-* [Composition d’audiences fédérées](https://experienceleague.adobe.com/fr/docs/federated-audience-composition/using/release-notes?lang=en)
-* [Collaboration dans Real-Time CDP](https://experienceleague.adobe.com/fr/docs/real-time-cdp-collaboration/using/latest?lang=en)
+* [Adobe Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/whats-new/release-notes?lang=en)
+* [Adobe Journey Optimizer B2B](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/release-notes?lang=en)
+* [Composition d’audiences fédérées](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/release-notes?lang=en)
+* [Collaboration dans Real-Time CDP](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/latest?lang=en)
 
 ## Fonctionnalités nouvelles ou mises à jour
 

@@ -16,7 +16,7 @@ ht-degree: 6%
 
 Ce cas d’utilisation décrit comment utiliser la puissance des champs dérivés pour définir des objectifs pour une dimension spécifique, puis utiliser ces objectifs dans votre projet Workspace.
 
-Si vous ne connaissez pas les champs dérivés, reportez-vous aux sections [tutoriel](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/derived-fields-in-cja.html?lang=fr) et [documentation](../data-views/derived-fields/derived-fields.md) pour une introduction.
+Si vous ne connaissez pas les champs dérivés, reportez-vous aux sections [tutoriel](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/derived-fields-in-cja.html) et [documentation](../data-views/derived-fields/derived-fields.md) pour une introduction.
 
 
 ## Définir les objectifs
@@ -32,7 +32,7 @@ Vous souhaitez définir explicitement des objectifs pour vos commandes de certif
 
 1. Définissez des valeurs statiques, à l’aide d’une RÈGLE CASE WHEN, pour chaque mois, en définissant une **[!UICONTROL valeur numérique personnalisée]**. Consultez la règle Objectifs mensuels du produit ci-dessous.
 
-   ![&#x200B; Objectifs mensuels du produit &#x200B;](assets/goals-derived-field-product-goals-1.png)
+   ![ Objectifs mensuels du produit ](assets/goals-derived-field-product-goals-1.png)
 
 
 ### Objectifs de chiffre d’affaires des canaux marketing
@@ -47,7 +47,7 @@ Vous souhaitez définir un objectif de chiffre d’affaires mensuel pour chacun 
 
 1. Définissez explicitement des valeurs statiques, représentant les objectifs de chiffre d’affaires mensuels, pour les canaux marketing spécifiques dans une règle CASE WHEN finale, en définissant une **[!UICONTROL valeur numérique personnalisée]**. Voir la règle de [!DNL Monthly Goal] ci-dessous.
 
-   ![&#x200B; Objectifs mensuels &#x200B;](assets/goals-derived-field-marketing-channel-2.png)
+   ![ Objectifs mensuels ](assets/goals-derived-field-marketing-channel-2.png)
 
 
 

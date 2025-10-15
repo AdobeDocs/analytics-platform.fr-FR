@@ -10,7 +10,7 @@ exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
 source-git-commit: c4aea74807be15af56413522d9e6fbf5f18a37a0
 workflow-type: tm+mt
 source-wordcount: '368'
-ht-degree: 3%
+ht-degree: 1%
 
 ---
 
@@ -32,14 +32,14 @@ Pour activer le groupement, dans la section Jeu de données d’événement de l
 
 1. Sélectionnez un ID persistant dans le menu déroulant **[!UICONTROL ID persistant]**.
 
-   Si vous sélectionnez **[!UICONTROL Mappage d’identités]** pour l’identifiant persistant, vous devez sélectionner un espace de noms . Vous disposez de deux options :
+   Si vous sélectionnez **[!UICONTROL Mappage d’identités]** pour l’identifiant persistant, vous devez sélectionner un espace de noms . Vous disposez de deux options :
 
    * Activez **[!UICONTROL Utiliser l’espace de noms d’identité principal]** pour utiliser l’espace de noms d’identité principal.
    * Sélectionnez un espace de noms dans le menu déroulant **[!UICONTROL Espace de noms]**.
 
 1. Sélectionnez un ID de personne dans le menu déroulant **[!UICONTROL ID de personne]**.
 
-   Si vous sélectionnez **[!UICONTROL Mappage d’identités]** pour l’ID de personne, vous devez sélectionner un espace de noms. Vous disposez de deux options :
+   Si vous sélectionnez **[!UICONTROL Mappage d’identités]** pour l’ID de personne, vous devez sélectionner un espace de noms. Vous disposez de deux options :
 
    * Activez **[!UICONTROL Utiliser l’espace de noms d’identité principal]** pour utiliser l’espace de noms d’identité principal.
    * Sélectionnez un espace de noms dans le menu déroulant **[!UICONTROL Espace de noms]**.

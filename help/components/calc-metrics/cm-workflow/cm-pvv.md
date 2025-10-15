@@ -27,7 +27,7 @@ Les informations suivantes expliquent comment créer une mesure *Pages vues par 
 1. Vous pouvez afficher un **[!UICONTROL Aperçu]** de la mesure pendant que vous la créez.
 1. **[!UICONTROL Compatibilité des produits]** indique si la mesure calculée est compatible partout dans Customer Journey Analytics (à l’exclusion de l’expérimentation).
 
-   ![&#x200B; Mesure calculée simple &#x200B;](assets/simple-calculated-metric.png)
+   ![ Mesure calculée simple ](assets/simple-calculated-metric.png)
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
 
    Notez que la formule **[!UICONTROL Résumé]** se met à jour chaque fois que vous apportez une modification à la définition de mesure.

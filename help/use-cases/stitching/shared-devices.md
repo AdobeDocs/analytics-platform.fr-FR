@@ -42,14 +42,14 @@ The order success (purchase) events assign the data accurately to the correct em
 
 ## Améliorer l’analyse centrée sur la personne
 
-Le processus de groupement résout ce problème d’attribution en ajoutant l’identifiant de personne sélectionné (dans l’exemple de données, l’e-mail) aux événements où cet identifiant n’existe pas. L’assemblage tire parti d’un mappage entre les ID d’appareil et les ID de personne pour s’assurer que le trafic authentifié et non authentifié peut être utilisé dans l’analyse, en restant centré sur la personne. Voir [&#x200B; Assemblage &#x200B;](/help/stitching/overview.md) pour plus d’informations.
+Le processus de groupement résout ce problème d’attribution en ajoutant l’identifiant de personne sélectionné (dans l’exemple de données, l’e-mail) aux événements où cet identifiant n’existe pas. L’assemblage tire parti d’un mappage entre les ID d’appareil et les ID de personne pour s’assurer que le trafic authentifié et non authentifié peut être utilisé dans l’analyse, en restant centré sur la personne. Voir [ Assemblage ](/help/stitching/overview.md) pour plus d’informations.
 
 L’assemblage peut attribuer des données d’appareil partagées à l’aide de l’attribution dernière authentification ou de l’attribution partage d’appareil. Toutes les tentatives d’assemblage d’événements non authentifiés à un utilisateur connu sont non déterministes.
 
 
 ### Attribution de dernière authentification
 
-Last-auth attribue toutes les activités inconnues d’un appareil partagé à l’utilisateur qui s’est authentifié pour la dernière fois. Experience Platform Identity Service crée le graphique en fonction de l’attribution de la dernière authentification et, à ce titre, est utilisé dans le groupement basé sur les graphiques. Pour plus d’informations, consultez [Règles de liaison des graphiques d’identités](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/features/identity-graph-linking-rules/identity-optimization-algorithm#identity-optimization-algorithm-details) .
+Last-auth attribue toutes les activités inconnues d’un appareil partagé à l’utilisateur qui s’est authentifié pour la dernière fois. Experience Platform Identity Service crée le graphique en fonction de l’attribution de la dernière authentification et, à ce titre, est utilisé dans le groupement basé sur les graphiques. Pour plus d’informations, consultez [Règles de liaison des graphiques d’identités](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/identity-optimization-algorithm#identity-optimization-algorithm-details) .
 
 Lorsque l’attribution Dernière authentification est utilisée dans le groupement, les identifiants groupés se résolvent comme illustré dans le tableau ci-dessous.
 

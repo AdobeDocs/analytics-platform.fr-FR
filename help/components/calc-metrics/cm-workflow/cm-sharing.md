@@ -1,12 +1,12 @@
 ---
 description: Découvrez comment partager des mesures avec l’ensemble de votre organisation, des groupes ou des utilisateurs individuels.
-title: Partager des mesures calculées
+title: Partage des mesures calculées
 feature: Calculated Metrics
 exl-id: b2a3e4e3-f0aa-4505-b3f5-7d9f14dc1640
 source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '319'
-ht-degree: 6%
+ht-degree: 5%
 
 ---
 

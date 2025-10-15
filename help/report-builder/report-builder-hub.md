@@ -19,7 +19,7 @@ Le hub Report Builder est le volet de droite qui s’affiche dans votre classeur
 
 Utilisez le centre Report Builder pour créer, mettre à jour, supprimer et gérer des blocs de données.
 
-Le hub Report Builder contient les boutons ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Create]**, ![TableManage](/help/assets/icons/TableManage.svg) **[!UICONTROL Manage]** et ![Calendar](/help/assets/icons/Calendar.svg)Schedule **[!UICONTROL , le panneau]** Commands **[!UICONTROL et le panneau]** Quick edit **&#x200B;**.
+Le hub Report Builder contient les boutons ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Create]**, ![TableManage](/help/assets/icons/TableManage.svg) **[!UICONTROL Manage]** et ![Calendar](/help/assets/icons/Calendar.svg)Schedule **[!UICONTROL , le panneau]** Commands **[!UICONTROL et le panneau]** Quick edit ****.
 
 ![hub Report Builder](assets/hub51.png){zoomable="yes"}
 
@@ -70,6 +70,6 @@ Le lien **Segments** affiche une liste récapitulative des segments utilisés pa
 >[!MORELIKETHIS]
 >
 >[Sélectionner une vue de données](select-data-view.md)
->&#x200B;>[Sélectionnez une période](select-date-range.md)
->&#x200B;>[Utiliser des filtres](work-with-filters.md)
+>>[Sélectionnez une période](select-date-range.md)
+>>[Utiliser des filtres](work-with-filters.md)
 >

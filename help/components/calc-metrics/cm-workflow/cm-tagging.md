@@ -1,12 +1,12 @@
 ---
 description: Découvrez comment baliser les mesures calculées pour organiser vos mesures calculées.
-title: Baliser les mesures calculées
+title: Balisage des mesures calculées
 feature: Calculated Metrics
 exl-id: 25c9299b-34ae-475f-8e7f-5cc8540dab8a
 source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '170'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 

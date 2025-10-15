@@ -1,13 +1,13 @@
 ---
 description: Découvrez comment utiliser les paramètres de ligne et comment ces paramètres varient en fonction du composant que vous avez fait glisser vers un tableau à structure libre dans Analysis Workspace.
-title: Configurations des lignes
+title: Paramètres de ligne
 feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 role: User
 source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
 source-wordcount: '1056'
-ht-degree: 87%
+ht-degree: 86%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 87%
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Paramètres de ligne et de colonne dans un tableau à structure libre](https://video.tv.adobe.com/v/328500/?quality=12&learn=on&captions=fre_fr){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Paramètres de ligne et de colonne dans un tableau à structure libre](https://video.tv.adobe.com/v/40382/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 
@@ -71,7 +71,7 @@ Les options de menu contextuel supplémentaires suivantes sont disponibles lors 
 | **[!UICONTROL Sélection de tendances]** | Créez une visualisation sous forme de graphique linéaire de tendance pour la sélection. |
 | **[!UICONTROL Afficher uniquement les lignes sélectionnées]** | Affichez uniquement les lignes sélectionnées dans la visualisation. |
 | **[!UICONTROL Afficher toutes les lignes]** | Affichez toutes les lignes de la visualisation. |
-| **[!UICONTROL Création d’un segment d’après une sélection]** | Ouvrez le **[!UICONTROL Créateur de segments]** pour créer un segment à partir de la sélection. |
+| **[!UICONTROL Créer un segment à partir de la sélection]** | Ouvrez le **[!UICONTROL Créateur de segments]** pour créer un segment à partir de la sélection. |
 | **[!UICONTROL Créer une audience à partir de la sélection]** | Ouvrez la boîte de dialogue **[!UICONTROL Créer une audience]** pour créer une audience à partir de la sélection. |
 
 Les options de menu contextuel supplémentaires suivantes sont disponibles lors de la sélection d’un en-tête de colonne de mesure.
@@ -85,9 +85,9 @@ Les options de menu contextuel supplémentaires suivantes sont disponibles lors 
 | **[!UICONTROL Comparer le modèle d’attribution]** | Spécifiez un nouveau modèle d’attribution et comparez-le au modèle d’attribution de la colonne sélectionnée. Une nouvelle colonne est ajoutée avec les nouvelles mesures de modèle d’attribution. Une colonne Changement en pourcentage est également ajoutée à des fins de comparaison. |
 | **[!UICONTROL Réinitialiser les largeurs de colonne]** | Rétablissez la largeur par défaut des colonnes. |
 | **[!UICONTROL Créer une annotation à partir d’une sélection]** | Ouvrez les **[!UICONTROL Détails de l’annotation]** pour ajouter une annotation. |
-| **[!UICONTROL Création d’un segment d’après une sélection]** | Ouvrez le **[!UICONTROL Créateur de segments]** pour créer un segment à partir de la sélection. |
+| **[!UICONTROL Créer un segment à partir de la sélection]** | Ouvrez le **[!UICONTROL Créateur de segments]** pour créer un segment à partir de la sélection. |
 | **[!UICONTROL Créer une audience à partir de la sélection]** | Ouvrez la boîte de dialogue **[!UICONTROL Créer une audience]** pour créer une audience à partir de la sélection. |
 
 ## Modifier la hauteur des lignes
 
-Vous pouvez définir la [densité d’affichage](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density) d’un projet sur **[!UICONTROL Compact]**, **[!UICONTROL Confortable]** et **[!UICONTROL Développé]**.
+Vous pouvez définir la [densité d’affichage](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density) d’un projet sur **[!UICONTROL Compact]**, **[!UICONTROL Confortable]** et **[!UICONTROL Développé]**.

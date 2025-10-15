@@ -87,7 +87,7 @@ Configurer le schéma :
 
    1. Dans la boîte de dialogue [!UICONTROL Ajouter des groupes de champs], sélectionnez le groupe de champs **[!UICONTROL Lumière aveuglante]** dans la liste. Ce groupe de champs est créé pour suivre les progrès de l’utilisateur lors de la lecture d’un jeu fictif intitulé Lumière aveuglante sur une console.
 
-      ![&#x200B; Groupe de champs Lumière aveuglante &#x200B;](assets/schema-fieldgroup-blindinglight.png)
+      ![ Groupe de champs Lumière aveuglante ](assets/schema-fieldgroup-blindinglight.png)
 
       Vous pouvez sélectionner le bouton Aperçu pour afficher un aperçu des champs qui font partie de ce groupe de champs, comme `scores > afterMatch`.
 
@@ -272,7 +272,7 @@ curl -X POST "https://server.adobedc.net/ee/v2/interact?dataStreamId={DATASTREAM
 
 Dans l’exemple de requête POST, `{DATASTREAM_ID}` pointe vers l’identifiant de l’exemple de flux de données que vous avez configuré précédemment. `{sandbox}` est le nom unique de votre sandbox qui identifie le chemin d’accès au groupe de champs personnalisé Lumière aveuglante .
 
-Voir [Collecte de données interactive](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html?lang=fr) et [Collecte de données non interactive](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/non-interactive-data-collection.html?lang=fr) pour plus d’informations sur l’utilisation de l’API du serveur Edge Network.
+Voir [Collecte de données interactive](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html?lang=fr) et [Collecte de données non interactive](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/non-interactive-data-collection.html) pour plus d’informations sur l’utilisation de l’API du serveur Edge Network.
 
 ## Configurer une connexion
 

@@ -31,7 +31,7 @@ Pour démarrer la collecte de données pour une configuration Content Analytics
 
 Pour arrêter la collecte de données pour une configuration Content Analytics implémentée, procédez comme suit :
 
-1. Supprimez le [code incorporé](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/publish/environments/environments) dans l’élément `<head>` des pages de votre environnement de développement, d’évaluation ou de production, dans le cadre de Content Analytics.
+1. Supprimez le [code intégré](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/publish/environments/environments) dans l’élément `<head>` des pages de votre environnement de développement, d’évaluation ou de production, dans le cadre de Content Analytics.
 1. [Supprimez](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/publish/overview) la propriété Balises associée à votre configuration Content Analytics.
 
 

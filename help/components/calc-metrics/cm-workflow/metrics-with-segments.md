@@ -1,6 +1,6 @@
 ---
 description: Découvrez comment segmenter des mesures individuelles, ce qui vous permet d’effectuer des comparaisons de mesures dans la même visualisation.
-title: Mesures segmentées
+title: Mesures Segmentées
 feature: Calculated Metrics
 exl-id: 37cc93df-9f51-42b3-918f-ed5864991621
 source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
@@ -90,7 +90,7 @@ Répétez les étapes ci-dessus pour la version internationale de votre mesure c
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Utiliser une mesure calculée segmentée comme mesure sans implémentation](https://video.tv.adobe.com/v/37941?quality=12&learn=on&captions=fre_fr){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Utiliser une mesure calculée segmentée comme mesure sans implémentation](https://video.tv.adobe.com/v/25407?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 

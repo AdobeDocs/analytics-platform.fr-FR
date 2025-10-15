@@ -112,9 +112,9 @@ Pour plus d’informations sur la gestion des comptes existants, notamment l’a
 
       1. Si ce n’est pas déjà fait, téléchargez l’explorateur de stockage Azure [Microsoft](https://azure.microsoft.com/en-us/products/storage/storage-explorer/).
 
-      1. Dans la documentation de Adobe Experience Platform, suivez les étapes décrites dans [Connexion de votre conteneur Data Landing Zone à l’explorateur de stockage Azure](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=fr#connect-your-data-landing-zone-container-to-azure-storage-explorer).
+      1. Dans la documentation de Adobe Experience Platform, suivez les étapes décrites dans [Connexion de votre conteneur Data Landing Zone à l’explorateur de stockage Azure](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#connect-your-data-landing-zone-container-to-azure-storage-explorer).
 
-         Vous pouvez ignorer les tâches décrites dans les sections [Récupérer les informations d’identification pour votre zone d’atterrissage de données](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=fr#retrieve-dlz-credentials) et [Mettre à jour les informations d’identification de la zone d’atterrissage de données](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=fr#update-dlz-credentials), car l’URI que vous avez copié contient ces informations d’identification.
+         Vous pouvez ignorer les tâches décrites dans les sections [Récupérer les informations d’identification pour votre zone d’atterrissage de données](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#retrieve-dlz-credentials) et [Mettre à jour les informations d’identification de la zone d’atterrissage de données](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#update-dlz-credentials), car l’URI que vous avez copié contient ces informations d’identification.
 
       1. Lorsque vous consultez la documentation de Adobe Experience Platform et que vous accédez au champ [!UICONTROL **URL SAS du conteneur Blob**], collez l’URI SAS que vous avez copié à l’étape 3.
 
@@ -122,7 +122,7 @@ Pour plus d’informations sur la gestion des comptes existants, notamment l’a
          >
          >Vous devez effectuer cette action tous les 7 jours, car l’URI SAS expire 7 jours après sa création. Vous pouvez créer un script pour automatiser ce processus.
 
-         ![Fenêtre Informations de connexion affichant le champ URL SAS &#x200B;](assets/blob-container-sas-uri.png)
+         ![Fenêtre Informations de connexion affichant le champ URL SAS ](assets/blob-container-sas-uri.png)
 
    1. Sélectionnez [!UICONTROL **Suivant**] > [!UICONTROL **Se connecter**].
 
@@ -280,7 +280,7 @@ Pour plus d’informations sur la gestion des comptes existants, notamment l’a
 
    | Champ | Fonction |
    |---------|----------|
-   | [!UICONTROL **Identifiant du compte**] | Identifie de manière unique un compte Snowflake au sein de votre organisation, ainsi que dans l’ensemble du réseau mondial de plateformes cloud et de régions cloud prises en charge par Snowflake. <p>Vous devez obtenir l’identifiant du compte à partir de votre compte Snowflake, puis coller les informations ici.</p><p>Pour savoir où obtenir ces informations, consultez la page [&#x200B; Identifiants de compte dans la documentation de Snowflake](https://docs.snowflake.com/en/user-guide/admin-account-identifier).</p> |
+   | [!UICONTROL **Identifiant du compte**] | Identifie de manière unique un compte Snowflake au sein de votre organisation, ainsi que dans l’ensemble du réseau mondial de plateformes cloud et de régions cloud prises en charge par Snowflake. <p>Vous devez obtenir l’identifiant du compte à partir de votre compte Snowflake, puis coller les informations ici.</p><p>Pour savoir où obtenir ces informations, consultez la page [ Identifiants de compte dans la documentation de Snowflake](https://docs.snowflake.com/en/user-guide/admin-account-identifier).</p> |
    | [!UICONTROL **Utilisateur ou utilisatrice**] | Nom d’utilisateur qui sera utilisé pour la connexion. Nous vous recommandons de créer un nouvel utilisateur qui sera utilisé spécifiquement pour Adobe. Indiquez le nom ici, puis créez un utilisateur du même nom dans Snowflake. Vous pouvez créer un utilisateur dans Snowflake à l’aide de la commande `CREATE USER`.  <p>Pour plus d’informations, voir [Commandes utilisateur, rôle et privilège](https://docs.snowflake.com/en/sql-reference/commands-user-role).</p> |
    | [!UICONTROL **Rôle**] | Rôle qui sera attribué à l’utilisateur. Nous vous recommandons de créer un rôle qui sera utilisé spécifiquement pour Adobe. Spécifiez le rôle ici, puis créez un rôle dans Snowflake avec le même nom et accordez le rôle à l’utilisateur. Vous pouvez créer un rôle dans Snowflake à l’aide de la commande `CREATE ROLE`. <p>Pour plus d’informations, voir [Commandes utilisateur, rôle et privilège](https://docs.snowflake.com/en/sql-reference/commands-user-role).</p> |
 
@@ -302,7 +302,7 @@ Pour plus d’informations sur la gestion des comptes existants, notamment l’a
    CREATE USER <your_adobe_user> RSA_PUBLIC_KEY = '<your_public_key>';
    ```
 
-   Pour plus d’informations, consultez la page [&#x200B; Authentification par paire de clés et rotation de paire de clés dans la documentation de Snowflake](https://docs.snowflake.com/en/user-guide/key-pair-auth).
+   Pour plus d’informations, consultez la page [ Authentification par paire de clés et rotation de paire de clés dans la documentation de Snowflake](https://docs.snowflake.com/en/user-guide/key-pair-auth).
 
 1. Sélectionnez [!UICONTROL **OK**].
 

@@ -26,7 +26,7 @@ Cette fonctionnalité est particulièrement utile lors de la création de liens 
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Créerdes liens hypertextes dans un tableau à structure libre](https://video.tv.adobe.com/v/3445782/?quality=12&learn=on&captions=fre_fr){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Créerdes liens hypertextes dans un tableau à structure libre](https://video.tv.adobe.com/v/3430411/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 

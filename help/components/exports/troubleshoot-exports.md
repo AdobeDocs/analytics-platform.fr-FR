@@ -8,7 +8,7 @@ role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '390'
-ht-degree: 8%
+ht-degree: 7%
 
 ---
 
@@ -20,7 +20,7 @@ Lorsque vous [exportez des tables complètes d’Analysis Workspace vers des des
 
 Les exportations peuvent échouer pour différentes raisons. Le tableau suivant décrit certaines des raisons les plus courantes, avec des actions que vous pouvez entreprendre pour résoudre les échecs :
 
-| Motif de l’échec | Action suggérée | Informations supplémentaires |
+| Raison de l’échec | Action suggérée | Informations supplémentaires |
 |---------|----------|---------|
 | Informations non valides sur le lieu ou le compte | Assurez-vous que vos informations d’identification et autres informations sont correctes pour le compte et l’emplacement cloud vers lesquels vous exportez. | [Configurer des comptes d’exportation cloud](/help/components/exports/cloud-export-accounts.md) et [Configurer des emplacements d’exportation cloud](/help/components/exports/cloud-export-locations.md). |
 | Une dimension ou une mesure du rapport a été supprimée de la vue de données | Contactez votre administrateur système pour voir quels composants ont été supprimés de la vue de données. Vous devrez peut-être utiliser une autre vue de données pour votre exportation ou supprimer de votre tableau les composants qui ne sont plus disponibles. | [Exporter des rapports Customer Journey Analytics vers le cloud](/help/analysis-workspace/export/export-cloud.md) |

@@ -99,8 +99,8 @@ Les fonctionnalités suivantes d’Experience Cloud vous permettent d’agir eff
 * [Créer et publier des audiences](/help/components/audiences/publish.md)&#x200B; pour activation à partir de Customer Journey Analytics
 * Activer les audiences par le biais des produits Experience Cloud :
    * [Exécutez des expériences](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/content-management/content-experiment/get-started-experiment) dans AJO et Adobe Target, et mesurez l’impact des variations dans Customer Journey Analytics à l’aide du [panneau Expérimentation](/help/analysis-workspace/c-panels/experimentation.md)
-   * [Diffuser des engagements in-app](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/channels/in-app/get-started-in-app) aux utilisateurs dans AJO
-* [Activer des audiences](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/activate/activation-overview) vers des destinations externes avec la plateforme de données clients en temps réel d’Adobe&#x200B;
+   * [Diffuser des engagements in-app](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/in-app/get-started-in-app) aux utilisateurs dans AJO
+* [Activer des audiences](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activation-overview) vers des destinations externes avec la plateforme de données clients en temps réel d’Adobe&#x200B;
 
 ## Partagez des informations avec l’organisation&#x200B;
 

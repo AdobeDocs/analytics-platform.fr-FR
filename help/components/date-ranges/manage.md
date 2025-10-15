@@ -1,5 +1,5 @@
 ---
-title: Gérer les plages de dates
+title: Gérer les périodes
 description: Découvrez comment gérer les périodes dans Analysis Workspace.
 feature: Calendar
 exl-id: 694758c4-d740-4fd7-9fb0-3ff7f6b25a3d
@@ -7,7 +7,7 @@ role: User
 source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
 workflow-type: tm+mt
 source-wordcount: '603'
-ht-degree: 30%
+ht-degree: 29%
 
 ---
 
@@ -23,7 +23,7 @@ Vous pouvez partager, filtrer, baliser, approuver, copier, partager et supprimer
 
 Le gestionnaire de périodes comporte les éléments d’interface suivants :
 
-![&#x200B; Interface des périodes &#x200B;](assets/date-ranges-manager.png)
+![ Interface des périodes ](assets/date-ranges-manager.png)
 
 ### Liste des périodes
 
@@ -92,7 +92,7 @@ Vous pouvez modifier une période de deux manières :
 
 * Dans un projet Workspace, utilisez l’icône [Informations sur le composant](/help/components/use-components-in-workspace.md#component-info).
 
-* Dans la liste [[!UICONTROL Périodes] , choisissez &#x200B;](#date-ranges-list) titre de la période.
+* Dans la liste [[!UICONTROL Périodes] , choisissez ](#date-ranges-list) titre de la période.
 
 Vous utilisez le [créateur de périodes](/help/components/date-ranges/create.md#date-range-builder) pour modifier la période.
 

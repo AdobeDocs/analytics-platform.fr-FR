@@ -9,7 +9,7 @@ exl-id: f959a77b-ccfb-43f2-93bb-b330e73d59ac
 source-git-commit: 3c13ae26a9ef48454467fc21b8faaa9e078c7f9f
 workflow-type: tm+mt
 source-wordcount: '1727'
-ht-degree: 13%
+ht-degree: 10%
 
 ---
 
@@ -326,31 +326,31 @@ Une fois les données ingérées dans Customer Journey Analytics, vous souhaitez
 
 Par défaut, tous les [composants standard](/help/data-views/component-reference.md) sont déjà inclus dans votre vue de données. Ces composants standard incluent les mesures spécifiques B2B pour les comptes, les groupes d’achats, les comptes globaux et les opportunités.
 
-1. Ajoutez toutes les dimensions d’événement que vous avez définies dans la [référence de conception de solution](#solution-design-reference) aux composants de dimension dans votre vue de données. Par exemple, le champ **[!UICONTROL Nom de l’événement]**, qui représente la dimension **[!UICONTROL Nom de l’événement]**. Veillez à configurer le composant de dimension via les [&#x200B; Paramètres des composants &#x200B;](/help/data-views/component-settings/overview.md).
+1. Ajoutez toutes les dimensions d’événement que vous avez définies dans la [référence de conception de solution](#solution-design-reference) aux composants de dimension dans votre vue de données. Par exemple, le champ **[!UICONTROL Nom de l’événement]**, qui représente la dimension **[!UICONTROL Nom de l’événement]**. Veillez à configurer le composant de dimension via les [ Paramètres des composants ](/help/data-views/component-settings/overview.md).
 
    ![Vue de données B2B - Composants - Dimensions d’événement](assets/b2b-dataview-components-event-dimensions.png)
 
-1. Ajoutez toutes les mesures d’événement que vous avez définies dans la [référence de conception de solution](#solution-design-reference) aux composants de mesures de votre vue de données. Par exemple, le champ **[!UICONTROL qualifié SQL]**, qui représente la mesure **[!UICONTROL qualifié SQL]**. Veillez à configurer le composant de dimension via les [&#x200B; Paramètres des composants &#x200B;](/help/data-views/component-settings/overview.md).
+1. Ajoutez toutes les mesures d’événement que vous avez définies dans la [référence de conception de solution](#solution-design-reference) aux composants de mesures de votre vue de données. Par exemple, le champ **[!UICONTROL qualifié SQL]**, qui représente la mesure **[!UICONTROL qualifié SQL]**. Veillez à configurer le composant de dimension via les [ Paramètres des composants ](/help/data-views/component-settings/overview.md).
 
    ![Vue de données B2B - Composants - Mesures d’événement](assets/b2b-dataview-components-event-metrics.png)
 
-1. Ajoutez toutes les dimensions de compte que vous avez définies dans la [référence de conception de solution](#solution-design-reference) aux composants de dimension dans votre vue de données. Par exemple, le champ **[!UICONTROL Industrie]**, qui représente la dimension **[!UICONTROL Industrie]**. Veillez à configurer le composant de dimension via les [&#x200B; Paramètres des composants &#x200B;](/help/data-views/component-settings/overview.md).
+1. Ajoutez toutes les dimensions de compte que vous avez définies dans la [référence de conception de solution](#solution-design-reference) aux composants de dimension dans votre vue de données. Par exemple, le champ **[!UICONTROL Industrie]**, qui représente la dimension **[!UICONTROL Industrie]**. Veillez à configurer le composant de dimension via les [ Paramètres des composants ](/help/data-views/component-settings/overview.md).
 
    ![Vue de données B2B - Composants - Dimensions de compte](assets/b2b-dataview-components-account-dimensions.png)
 
-1. Ajoutez toutes les mesures de compte que vous avez définies dans la [référence de conception de solution](#solution-design-reference) aux composants de mesures dans votre vue de données. Par exemple, le champ **[!UICONTROL Number_of_Employees]**, qui représente la mesure **[!UICONTROL Number_of_Employees]**. Veillez à configurer le composant de dimension via les [&#x200B; Paramètres des composants &#x200B;](/help/data-views/component-settings/overview.md).
+1. Ajoutez toutes les mesures de compte que vous avez définies dans la [référence de conception de solution](#solution-design-reference) aux composants de mesures dans votre vue de données. Par exemple, le champ **[!UICONTROL Number_of_Employees]**, qui représente la mesure **[!UICONTROL Number_of_Employees]**. Veillez à configurer le composant de dimension via les [ Paramètres des composants ](/help/data-views/component-settings/overview.md).
 
    ![Vue de données B2B - Composants - Mesures de compte](assets/b2b-dataview-components-account-metrics.png)
 
-1. Ajoutez toutes les dimensions de personne que vous avez définies dans la [référence de conception de solution](#solution-design-reference) aux composants de dimension dans votre vue de données. Par exemple, le champ **[!UICONTROL Category_1_Affinity_Level]**, qui représente la dimension **[!UICONTROL Category_1_Affinity_Level]**. Veillez à configurer le composant de dimension via les [&#x200B; Paramètres des composants &#x200B;](/help/data-views/component-settings/overview.md).
+1. Ajoutez toutes les dimensions de personne que vous avez définies dans la [référence de conception de solution](#solution-design-reference) aux composants de dimension dans votre vue de données. Par exemple, le champ **[!UICONTROL Category_1_Affinity_Level]**, qui représente la dimension **[!UICONTROL Category_1_Affinity_Level]**. Veillez à configurer le composant de dimension via les [ Paramètres des composants ](/help/data-views/component-settings/overview.md).
 
    ![Vue de données B2B - Composants - Dimensions de compte](assets/b2b-dataview-components-person-dimensions.png)
 
-1. Ajoutez toutes les mesures de personne que vous avez définies dans la [référence de conception de solution](#solution-design-reference) aux composants de mesure dans votre vue de données. Par exemple, le champ **[!UICONTROL Category_1_Affinity_Score]**, qui représente la mesure **[!UICONTROL Category_1_Affinity_Score]**. Veillez à configurer le composant de dimension via les [&#x200B; Paramètres des composants &#x200B;](/help/data-views/component-settings/overview.md).
+1. Ajoutez toutes les mesures de personne que vous avez définies dans la [référence de conception de solution](#solution-design-reference) aux composants de mesure dans votre vue de données. Par exemple, le champ **[!UICONTROL Category_1_Affinity_Score]**, qui représente la mesure **[!UICONTROL Category_1_Affinity_Score]**. Veillez à configurer le composant de dimension via les [ Paramètres des composants ](/help/data-views/component-settings/overview.md).
 
    ![Vue de données B2B - Composants - Mesures de compte](assets/b2b-dataview-components-person-metrics.png)
 
-1. Ajoutez toutes les dimensions SKU que vous avez définies dans le [référence de conception de solution](#solution-design-reference) aux composants de dimension dans votre vue de données. Par exemple, le champ **[!UICONTROL Catégorie de services]**, qui représente la dimension **[!UICONTROL Catégorie de services]**. Veillez à configurer le composant de dimension via les [&#x200B; Paramètres des composants &#x200B;](/help/data-views/component-settings/overview.md).
+1. Ajoutez toutes les dimensions SKU que vous avez définies dans le [référence de conception de solution](#solution-design-reference) aux composants de dimension dans votre vue de données. Par exemple, le champ **[!UICONTROL Catégorie de services]**, qui représente la dimension **[!UICONTROL Catégorie de services]**. Veillez à configurer le composant de dimension via les [ Paramètres des composants ](/help/data-views/component-settings/overview.md).
 
    ![Vue de données B2B - Composants - Dimensions de compte](assets/b2b-dataview-components-sku-dimensions.png)
 
@@ -384,4 +384,4 @@ Par exemple :
 
 ## Autre
 
-Vous pouvez éventuellement définir d’autres composants pour vos cas d’utilisation, tels que [&#x200B; mesures calculées](/help/components/calc-metrics/calc-metr-overview.md), [&#x200B; périodes](/help/components/date-ranges/overview.md) ou [&#x200B; alertes](/help/components/c-intelligent-alerts/intelligent-alerts.md).
+Vous pouvez éventuellement définir d’autres composants pour vos cas d’utilisation, tels que [ mesures calculées](/help/components/calc-metrics/calc-metr-overview.md), [ périodes](/help/components/date-ranges/overview.md) ou [ alertes](/help/components/c-intelligent-alerts/intelligent-alerts.md).

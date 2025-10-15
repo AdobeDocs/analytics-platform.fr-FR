@@ -45,4 +45,4 @@ Conformément au CCPA, le Service Confidentialité reçoit les demandes de refus
 
 >[!MORELIKETHIS]
 >
->* [Blog : comment maintenir une gouvernance efficace dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/bg-p/adobe-analytics-blogs/page/4?profile.language=fr)
+>* [Blog : comment maintenir une gouvernance efficace dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/bg-p/adobe-analytics-blogs/page/4)

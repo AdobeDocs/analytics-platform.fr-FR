@@ -94,7 +94,7 @@ Pour supprimer un emplacement :
 
 1. Dans la boîte de dialogue Supprimer l’emplacement , assurez-vous que l’emplacement n’est associé à aucune exportation avant de confirmer la suppression.
 
-   ![&#x200B; Boîte de dialogue de confirmation Supprimer l’emplacement &#x200B;](assets/delete-location-confirmation-dialog.png)
+   ![ Boîte de dialogue de confirmation Supprimer l’emplacement ](assets/delete-location-confirmation-dialog.png)
 
 1. Sélectionnez à nouveau [!UICONTROL **Supprimer**] pour confirmer.
 

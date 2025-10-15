@@ -7,7 +7,7 @@ role: User
 source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
 workflow-type: tm+mt
 source-wordcount: '253'
-ht-degree: 94%
+ht-degree: 93%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 94%
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente le panneau vierge de_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_.<br/>_Voir le [panneau vierge](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/panels/blank-panel) de la version_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** de cet article._
+_Cet article présente le panneau vierge de_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_Voir le [panneau vierge](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/panels/blank-panel) de la version_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 

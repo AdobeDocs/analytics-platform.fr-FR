@@ -51,7 +51,7 @@ Par exemple, vous pouvez remplacer un segment existant par un nouveau segment da
 
    ![Icône de modification de crayon](./assets/image56.png){zoomable="yes"}
 
-1. Sélectionnez ![&#x200B; Modifier &#x200B;](/help/assets/icons/Edit.svg) pour afficher la fenêtre **[!UICONTROL Modification rapide]**.
+1. Sélectionnez ![ Modifier ](/help/assets/icons/Edit.svg) pour afficher la fenêtre **[!UICONTROL Modification rapide]**.
 
    ![Fenêtre Modification rapide](./assets/image58.png){zoomable="yes"}
 
