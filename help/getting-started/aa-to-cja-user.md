@@ -93,7 +93,7 @@ Les mesures calculées portent le même nom entre Adobe Analytics et Customer Jo
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Déplacement des mesures calculées d’Adobe Analytics vers Customer Journey Analytics](https://video.tv.adobe.com/v/31788?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration sur le déplacement des mesures calculées.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Déplacement des mesures calculées d’Adobe Analytics vers Customer Journey Analytics](https://video.tv.adobe.com/v/33728?captions=fre_fr&quality=12&learn=on){target="_blank"} pour une vidéo de démonstration sur le déplacement des mesures calculées.
 
 >[!ENDSHADEBOX]
 
@@ -120,7 +120,7 @@ Customer Journey Analytics étend le concept d’identité au-delà des ECID pou
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Utilisation d’une identité dans Customer Journey Analytics](https://video.tv.adobe.com/v/30750/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Utilisation d’une identité dans Customer Journey Analytics](https://video.tv.adobe.com/v/32935/?captions=fre_fr&quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 

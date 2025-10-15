@@ -19,7 +19,7 @@ Les informations suivantes fournissent aux utilisateurs en charge de l’exécut
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Aider les cadres à accéder aux cartes de performance mobiles](https://video.tv.adobe.com/v/343460/){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Aider les cadres à accéder aux cartes de performance mobiles](https://video.tv.adobe.com/v/3444838?captions=fre_fr){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 

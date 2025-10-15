@@ -55,7 +55,7 @@ La [!UICONTROL Table de cohorte] est disponible pour tous les clientes et client
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analyse des cohortes dans Analysis Workspace](https://video.tv.adobe.com/v/23990/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analyse des cohortes dans Analysis Workspace](https://video.tv.adobe.com/v/3430072/?captions=fre_fr&quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 

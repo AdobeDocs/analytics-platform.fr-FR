@@ -43,7 +43,7 @@ La visualisation ![GraphScatter](/help/assets/icons/GraphScatter.svg) **[!UICONT
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisation Dispersion](https://video.tv.adobe.com/v/334459/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisation Dispersion](https://video.tv.adobe.com/v/3416860/?captions=fre_fr&quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 

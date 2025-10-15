@@ -108,7 +108,7 @@ Consultez [Utilisation de dimensions et de mesures de liaison dans Customer Jour
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimensions de liaison](https://video.tv.adobe.com/v/342694/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimensions de liaison](https://video.tv.adobe.com/v/3409292/?captions=fre_fr&quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 

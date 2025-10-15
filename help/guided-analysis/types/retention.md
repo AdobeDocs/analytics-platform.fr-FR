@@ -30,7 +30,7 @@ L’analyse ![Rétention](/help/assets/icons/Retention.svg) **[!UICONTROL Réten
 
 Dans cette analyse, l’axe X du graphique représente le temps écoulé depuis l’événement de début initial d’une personne et l’axe Y représente le pourcentage d’utilisateurs et d’utilisatrices qui interagissent avec un ou plusieurs événements de retour. Vous pouvez afficher à la fois la rétention et l’attrition sur des durées, et les durées affichées peuvent être personnalisées à l’aide des paramètres de requête. Sous le graphique, un tableau fournit des données agrégées avec la possibilité d’afficher des cohortes individuelles, c’est-à-dire un groupe de personnes qui ont effectué l’événement de début à la même date.
 
->[!VIDEO](https://video.tv.adobe.com/v/3430503/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3435780/?captions=fre_fr&quality=12&learn=on)
 
 
 ## Cas d’utilisation

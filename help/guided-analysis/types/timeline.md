@@ -34,7 +34,7 @@ L’analyse ![Chronologie](/help/assets/icons/Timeline.svg) **[!UICONTROL Chrono
 >* **Admins** : *la propriété PersonID est requise pour cette analyse. Ajoutez l’ID de personne à la vue de données.*
 >* **Non-admins** : *La propriété PersonID est requise pour cette analyse. Contactez votre administrateur ou administratrice Customer Journey Analytics pour ajouter l’ID de personne à la vue de données.*
 
->[!VIDEO](https://video.tv.adobe.com/v/3427810/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3435769/?captions=fre_fr&quality=12&learn=on)
 
 
 
