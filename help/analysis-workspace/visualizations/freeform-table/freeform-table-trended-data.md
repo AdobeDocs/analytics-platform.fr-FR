@@ -44,7 +44,7 @@ Selon la manière dont et le moment où la visualisation en ligne a été ajout�
 
 1. Sélectionnez le point en regard du nom de la visualisation, sélectionnez l’onglet **[!UICONTROL Source de données]**, puis sélectionnez le nom du tableau à structure libre que vous souhaitez connecter à la visualisation en ligne.
 
-   ![ visualisation en ligne connectée aux tableaux à structure libre ](assets/table-line-viz.png)
+   ![&#x200B; visualisation en ligne connectée aux tableaux à structure libre &#x200B;](assets/table-line-viz.png)
 
 ### Choisissez les données incluses dans la visualisation en ligne
 

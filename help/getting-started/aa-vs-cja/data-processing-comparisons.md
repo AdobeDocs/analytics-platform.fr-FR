@@ -22,7 +22,7 @@ Dans Adobe Analytics, le traitement au moment du rapport représente généralem
 
 ![Traitement au moment de la collecte Adobe Analytics](../assets/aa-processing.png)
 
-En revanche, Customer Journey Analytics est conçu pour nécessiter un traitement initial minimal de la collecte avant l’organisation et le stockage des données. L’architecture sous-jacente de Customer Journey Analytics est conçue pour fonctionner avec les données stockées au moment du rapport. Customer Journey Analytics offre sa puissante fonctionnalité de traitement de la période de rapport, et pas seulement dans Analysis Workspace. D’autres fonctionnalités de traitement de la période de rapport sont disponibles par le biais de la définition de [composants](/help/data-views/component-settings/overview.md) et [ champs dérivés](/help/data-views/derived-fields/derived-fields.md) dans vos vues de données.
+En revanche, Customer Journey Analytics est conçu pour nécessiter un traitement initial minimal de la collecte avant l’organisation et le stockage des données. L’architecture sous-jacente de Customer Journey Analytics est conçue pour fonctionner avec les données stockées au moment du rapport. Customer Journey Analytics offre sa puissante fonctionnalité de traitement de la période de rapport, et pas seulement dans Analysis Workspace. D’autres fonctionnalités de traitement de la période de rapport sont disponibles par le biais de la définition de [composants](/help/data-views/component-settings/overview.md) et [&#x200B; champs dérivés](/help/data-views/derived-fields/derived-fields.md) dans vos vues de données.
 
 ![Traitement au moment du rapport de Customer Journey Analytics](../assets/cja-processing.png)
 

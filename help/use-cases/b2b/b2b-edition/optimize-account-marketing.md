@@ -36,7 +36,7 @@ Customer Journey Analytics B2B edition peut vous aider à optimiser le marketing
 
 Vous souhaitez identifier les expériences, en ligne et hors ligne, qui ont le plus d’impact sur les opportunités clôturées.
 
-Utilisez la visualisation [Zone de travail de Parcours ](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) pour mapper chaque interaction entre les comptes, les opportunités, les groupes d’achats, les campagnes et les canaux, afin d’obtenir des informations sur ce qui fonctionne dans le marketing de votre compte et sur les améliorations que vous pouvez apporter.
+Utilisez la visualisation [Zone de travail de Parcours &#x200B;](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) pour mapper chaque interaction entre les comptes, les opportunités, les groupes d’achats, les campagnes et les canaux, afin d’obtenir des informations sur ce qui fonctionne dans le marketing de votre compte et sur les améliorations que vous pouvez apporter.
 
 Une visualisation de zone de travail de parcours vous permet d’effectuer les opérations suivantes :
 
@@ -48,16 +48,16 @@ Une visualisation de zone de travail de parcours vous permet d’effectuer les o
 
 Vous souhaitez visualiser le parcours d’un formulaire de prospect à un formulaire fermé.
 
-1. Visualisation [Création et configuration d’une zone de travail de Parcours ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
-1. Configurez **[!UICONTROL Compte]** comme mesure de Principal ****.
-1. Veillez à sélectionner **[!UICONTROL Compte]** comme conteneur de zone de travail de Parcours ****.
+1. Visualisation [Création et configuration d’une zone de travail de Parcours &#x200B;](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
+1. Configurez **[!UICONTROL Compte]** comme mesure de Principal **&#x200B;**.
+1. Veillez à sélectionner **[!UICONTROL Compte]** comme conteneur de zone de travail de Parcours **&#x200B;**.
 
    ![Cas d’utilisation B2B - optimiser le marketing de compte - Zone de travail de parcours - Configuration](assets/b2b-uc-optimize-marketing-journey-canvas-config.png)
 
 1. Sélectionnez la **[!UICONTROL Version]**.
 1. Faites glisser et déposez des nœuds sur la zone de travail et connectez les nœuds pour illustrer le parcours de compte. Par exemple : de **[!UICONTROL Formulaire de prospect : étape 1]** formulaire à **[!UICONTROL Opportunité. Créé]**.
 
-   ![Cas d’utilisation B2B - optimiser le marketing de compte - Zone de travail de parcours ](assets/b2b-uc-optimize-marketing-journey-canvas.png)
+   ![Cas d’utilisation B2B - optimiser le marketing de compte - Zone de travail de parcours &#x200B;](assets/b2b-uc-optimize-marketing-journey-canvas.png)
 
 
 ## Segmentation des cohortes

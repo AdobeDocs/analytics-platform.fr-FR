@@ -603,4 +603,4 @@ Votre projet final doit ressembler à celui illustré ci-dessous.
 >[!MORELIKETHIS]
 >
 >[Données de résumé](/help/data-views/summary-data.md)
->>[Résumé des paramètres des composants de groupe de données](/help/data-views/component-settings/summary-data-group.md)
+>&#x200B;>[Résumé des paramètres des composants de groupe de données](/help/data-views/component-settings/summary-data-group.md)

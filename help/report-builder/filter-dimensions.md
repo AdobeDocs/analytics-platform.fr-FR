@@ -22,7 +22,7 @@ Pour modifier les éléments de dimension renvoyés pour chaque dimension :
 
 1. Sélectionnez une cellule dans le bloc de données.
 
-1. Sélectionnez ![ Modifier ](/help/assets/icons/Edit.svg) **[!UICONTROL Modifier le bloc de données]** dans le panneau **[!UICONTROL Commandes]**.
+1. Sélectionnez ![&#x200B; Modifier &#x200B;](/help/assets/icons/Edit.svg) **[!UICONTROL Modifier le bloc de données]** dans le panneau **[!UICONTROL Commandes]**.
 
 1. Sélectionnez **[!UICONTROL Suivant]** pour afficher l’onglet **[!UICONTROL Dimensions]**.
 

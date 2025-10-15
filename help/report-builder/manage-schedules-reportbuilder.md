@@ -48,7 +48,7 @@ Utilisez ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) pour définir le
    |---|---|
    | ![Modifier](/help/assets/icons/Edit.svg) | Modifiez la planification d’un classeur sélectionné. |
    | ![Historique](/help/assets/icons/History.svg) | Afficher l’historique des classeurs sélectionnés. |
-   | ![ Pause ](/help/assets/icons/Pause.svg) | Mettre en pause le planning des classeurs sélectionnés. |
+   | ![&#x200B; Pause &#x200B;](/help/assets/icons/Pause.svg) | Mettre en pause le planning des classeurs sélectionnés. |
    | ![Lecture](/help/assets/icons/Play.svg) | Reprenez la planification des classeurs sélectionnés. |
    | ![Télécharger](/help/assets/icons/Download.svg) | Téléchargez le classeur sélectionné dans un nouveau classeur. |
    | ![Supprimer](/help/assets/icons/Delete.svg) | Supprimez la planification des classeurs sélectionnés. |

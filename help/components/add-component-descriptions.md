@@ -19,7 +19,7 @@ Les administrateurs et administratrices de Customer Journey Analytics peuvent aj
 
 ## Vue de données
 
-Vous pouvez ajouter une description à un composant que vous avez ajouté à votre vue de données. Voir [ Paramètres des composants ](/help/data-views/component-settings/overview.md).
+Vous pouvez ajouter une description à un composant que vous avez ajouté à votre vue de données. Voir [&#x200B; Paramètres des composants &#x200B;](/help/data-views/component-settings/overview.md).
 
 ## Dictionnaire de données
 
@@ -32,5 +32,5 @@ Pour obtenir des informations générales sur le dictionnaire de données, consu
 >[!MORELIKETHIS]
 >
 >[Paramètres des composants de la vue de données](/help/data-views/component-settings/overview.md)
->>[Entrées du composant Dictionnaire de données](/help/components/data-dictionary/edit-entries-data-dictionary.md)
+>&#x200B;>[Entrées du composant Dictionnaire de données](/help/components/data-dictionary/edit-entries-data-dictionary.md)
 >

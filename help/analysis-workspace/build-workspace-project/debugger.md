@@ -18,7 +18,7 @@ Le débogueur de projet vous aide, ainsi que le support Adobe, à résoudre les 
 
 >[!NOTE]
 >
->Pour utiliser le débogueur, vous devez avoir un accès **Modifier** ou **Copier** [ au projet](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25744).
+>Pour utiliser le débogueur, vous devez avoir un accès **Modifier** ou **Copier** [&#x200B; au projet](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25744).
 >
 
 

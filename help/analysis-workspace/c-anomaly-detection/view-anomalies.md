@@ -24,7 +24,7 @@ Vous pouvez afficher les anomalies dans un tableau à structure libre de série 
 
 1. Le tableau présente les anomalies comme suit :
 
-   ![ Anomalies détectées ](assets/anomaly-detected.png)
+   ![&#x200B; Anomalies détectées &#x200B;](assets/anomaly-detected.png)
 
    Un ◥ s’affiche dans le coin supérieur droit de chaque ligne où une anomalie des données est détectée.
 

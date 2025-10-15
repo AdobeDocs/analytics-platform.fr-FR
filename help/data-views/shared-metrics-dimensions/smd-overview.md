@@ -34,7 +34,7 @@ Accéder à cette interface utilisateur affiche toutes les dimensions et mesures
 
 Directement au-dessous de ces deux boutons, quatre cartes de présentation sont visibles :
 
-![ Aperçu des cartes de présentation ](assets/overview-cards.png)
+![&#x200B; Aperçu des cartes de présentation &#x200B;](assets/overview-cards.png)
 
 * **Mesures** : nombre total de mesures disponibles à partager dans les vues de données pour cette connexion. Chaque connexion peut contenir jusqu’à 10 000 mesures partagées.
 * **Dimensions** : nombre total de dimensions disponibles pour être partagées entre les vues de données pour cette connexion. Chaque connexion peut contenir jusqu’à 10 000 dimensions partagées.

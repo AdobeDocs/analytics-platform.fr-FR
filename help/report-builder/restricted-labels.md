@@ -34,7 +34,7 @@ Deux politiques définies par Adobe sont affichées dans Customer Journey Analyt
 
 Les composants soumis à ces politiques sont grisés et possèdent une icône ![InfoOutline](/help/assets/icons/InfoOutline.svg). Lorsque vous pointez sur l’icône d’informations, une note s’affiche pour indiquer les éléments suivants : **[!UICONTROL Des politiques ont été appliquées à ce champ pour interdire l’utilisation de ces données]**.
 
-Pour plus d’informations, voir [ Étiquettes et politiques ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-governance).
+Pour plus d’informations, voir [&#x200B; Étiquettes et politiques &#x200B;](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-governance).
 
 
 ![Note de politique indiquant l’utilisation interdite des données.](assets/restricted-label.png){zoomable="yes"}

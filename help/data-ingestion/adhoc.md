@@ -94,7 +94,7 @@ Dans l’interface **[!UICONTROL Schémas]** > **[!UICONTROL Exemples de donnée
 
 - Sélectionnez l’objet de nom du client le plus élevé sous **[!UICONTROL Schémas]** > **[!UICONTROL Exemples de données à partir de CSV - schéma ad hoc - XXXXXXXXXXX]** pour afficher les champs dans l’objet . Les champs dans l’objet représentent la structure du fichier CSV. Le schéma est créé automatiquement en fonction du chargement des données ad hoc.
 
-  ![ Schéma ad hoc ](dataset/../assets/adhoc-schema.png)
+  ![&#x200B; Schéma ad hoc &#x200B;](dataset/../assets/adhoc-schema.png)
 
   >[!NOTE]
   >
@@ -151,7 +151,7 @@ Créer une connexion :
 
    1. Sélectionnez **[!UICONTROL Enregistrer]**.
 
-Consultez [ Paramètres de jeu de données ad hoc ](/help/connections/create-connection.md#adhoc-dataset) pour plus d’informations sur les paramètres disponibles pour les jeux de données ad hoc.
+Consultez [&#x200B; Paramètres de jeu de données ad hoc &#x200B;](/help/connections/create-connection.md#adhoc-dataset) pour plus d’informations sur les paramètres disponibles pour les jeux de données ad hoc.
 
 >[!IMPORTANT]
 >

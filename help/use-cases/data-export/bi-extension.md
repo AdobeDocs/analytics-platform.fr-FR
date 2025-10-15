@@ -14,7 +14,7 @@ ht-degree: 50%
 
 # Extension BI
 
-Cet article décrit comment le [!DNL Customer Journey Analytics BI extension] peut être utilisé pour implémenter le cas d’utilisation d’exportation de données [ suivant ](overview.md) :
+Cet article décrit comment le [!DNL Customer Journey Analytics BI extension] peut être utilisé pour implémenter le cas d’utilisation d’exportation de données [&#x200B; suivant &#x200B;](overview.md) :
 
 - Lac de données, Data Warehouse ou outils de BI
 

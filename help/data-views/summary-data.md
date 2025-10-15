@@ -21,7 +21,7 @@ Ces données de résumé peuvent ensuite être utilisées pour présenter des in
 >[!NOTE]
 >
 >Les données de résumé sont des données de série temporelle provenant d’un jeu de données de résumé. Ce jeu de données de résumé est basé sur un schéma qui utilise la classe XDM Mesures de résumé comme classe de base.
->>Seules les données de série temporelle basées sur une heure ou une journée sont prises en charge.
+>&#x200B;>Seules les données de série temporelle basées sur une heure ou une journée sont prises en charge.
 
 >[!TIP]
 >
