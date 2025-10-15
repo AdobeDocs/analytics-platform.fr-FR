@@ -20,7 +20,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Fonctionnalité | Description |
 | --- | --- |
 | **Octobre 2025** | |
-| Créer un rapport sur le trafic généré par LLM et IA | Ajout d’un [article de cas d’utilisation](/help/use-cases/ai-traffic.md) sur la création de rapports sur le trafic généré par LLM et l’IA à l’aide de champs dérivés comme base. Cet article est basé sur l’article de blog [Tracking et analyse du trafic généré par LLM et par l’IA dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967). |
+| Créer un rapport sur le trafic généré par LLM et IA | Ajout d’un [article de cas d’utilisation](/help/use-cases/ai-traffic.md) sur la création de rapports sur le trafic généré par LLM et l’IA à l’aide de champs dérivés comme base. Cet article est basé sur l’article de blog [Tracking et analyse du trafic généré par LLM et par l’IA dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967?profile.language=fr). |
 | **Septembre 2025** | |
 | Dates antérieures à 1900 | Ajout d’une [note](/help/connections/create-connection.md#datasets) sur la manière dont les dates antérieures à 1900 sont gérées par Customer Journey Analytics. |
 | Créer des rapports en temps réel | Ajout de la documentation sur la [création de rapports en temps réel](/help/components/real-time/real-time.md) dans Customer Journey Analytics. |

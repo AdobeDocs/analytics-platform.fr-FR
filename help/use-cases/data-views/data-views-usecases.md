@@ -112,11 +112,11 @@ Vous pouvez déterminer si une session est bien la toute première session d’u
 
 Une dimension et deux mesures facilitent cette création de rapports :
 
-* [Type de session](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference) - Cette dimension possède deux valeurs : [!UICONTROL Nouveau] et [!UICONTROL Récurrent]. L’élément de ligne [!UICONTROL Nouveau] comprend tout le comportement (c’est-à-dire les mesures par rapport à cette dimension) d’une session déterminée comme étant la première session définie d’une personne. Tous les autres éléments sont inclus dans l’élément de ligne [!UICONTROL Récurrent] (en supposant que tous ceux-ci appartiennent à une session). Les mesures qui ne font partie d’aucune session se retrouvent dans le compartiment « Non applicable » pour cette dimension.
+* [Type de session](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dataviews/component-reference) - Cette dimension possède deux valeurs : [!UICONTROL Nouveau] et [!UICONTROL Récurrent]. L’élément de ligne [!UICONTROL Nouveau] comprend tout le comportement (c’est-à-dire les mesures par rapport à cette dimension) d’une session déterminée comme étant la première session définie d’une personne. Tous les autres éléments sont inclus dans l’élément de ligne [!UICONTROL Récurrent] (en supposant que tous ceux-ci appartiennent à une session). Les mesures qui ne font partie d’aucune session se retrouvent dans le compartiment « Non applicable » pour cette dimension.
 
-* [Premières sessions](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference) La mesure Premières sessions est définie comme la première session d’une personne dans la fenêtre de création de rapports.
+* [Premières sessions](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dataviews/component-reference) La mesure Premières sessions est définie comme la première session d’une personne dans la fenêtre de création de rapports.
 
-* [Sessions récurrentes](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference) la mesure Sessions récurrentes correspond au nombre de sessions qui n’ont pas été la première session d’une personne.—>
+* [Sessions récurrentes](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dataviews/component-reference) la mesure Sessions récurrentes correspond au nombre de sessions qui n’ont pas été la première session d’une personne.—>
 
 Pour accéder aux composants :
 

@@ -40,7 +40,7 @@ La création d’un connecteur source pour les données de mesure quantique cré
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
 >[!NOTE]
->Bien que vous puissiez ajouter des données de mesure quantique à la même connexion que le reste de vos données Customer Journey Analytics, ces données ne peuvent pas être regroupées sans un ID de personne commun entre les deux jeux de données. Si ce comportement est souhaité, Adobe recommande d’utiliser l’extension [Tag](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric) au lieu du connecteur source.
+>Bien que vous puissiez ajouter des données de mesure quantique à la même connexion que le reste de vos données Customer Journey Analytics, ces données ne peuvent pas être regroupées sans un ID de personne commun entre les deux jeux de données. Si ce comportement est souhaité, Adobe recommande d’utiliser l’extension [Tag](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/catalog/analytics/quantum-metric) au lieu du connecteur source.
 
 ## Étape 3 : création d’une vue de données dans Customer Journey Analytics
 
