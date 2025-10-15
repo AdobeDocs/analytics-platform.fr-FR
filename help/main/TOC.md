@@ -490,7 +490,7 @@ ht-degree: 99%
       + [Utiliser des données de résumé](/help/use-cases/data-views/summary-data.md)
       + [Cas d’utilisation de l’extension BI](/help/use-cases/data-views/bi-extension-usecases.md)
    + Champs dérivés {#derived-fields}
-      + [Rapport sur le trafic généré par LLM et IA](/help/use-cases/ai-traffic.md)
+      + [Créer un rapport sur le trafic généré par LLM et IA](/help/use-cases/ai-traffic.md)
       + [Créer un rapport sur les objectifs](../use-cases/goals-using-derived-fields.md)
    + Analyse de produit {#product-analysis}
       + [Analyse de produit](/help/use-cases/product-analysis.md)
@@ -514,7 +514,7 @@ ht-degree: 99%
    + [Guide d’utilisation de Labs](../labs/labs.md)
 
 + Résolution des problèmes {#troubleshooting}
-   + [Comparaison des données du connecteur Source](../troubleshooting/compare.md)
+   + [Comparer les données du connecteur source](../troubleshooting/compare.md)
    + [Cohérence des mesures et des audiences](../troubleshooting/consistency-rcdp-cja.md)
    + [Absence d’autorisations](../troubleshooting/lack-of-permissions.md)
 
