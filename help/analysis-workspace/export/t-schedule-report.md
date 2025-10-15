@@ -86,7 +86,7 @@ Pour envoyer un fichier selon un planning aux destinataires par e-mail :
 
 >[!NOTE]
 >
->L’option de protection par mot de passe d’un projet planifié s’affiche uniquement pour les clientes et clients CJA qui ont acheté le module complémentaire [Healthcare Shield](https://business.adobe.com/solutions/industries/healthcare.html).
+>L’option de protection par mot de passe d’un projet planifié s’affiche uniquement pour les clientes et clients CJA qui ont acheté le module complémentaire [Healthcare Shield](https://business.adobe.com/fr/solutions/industries/healthcare.html).
 
 Adobe utilise le mot de passe pour chiffrer les projets planifiés, qu’ils soient envoyés au format .pdf ou .csv.
 
