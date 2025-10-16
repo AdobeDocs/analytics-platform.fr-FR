@@ -32,7 +32,7 @@ La solution intermédiaire comprend les étapes suivantes :
 1. [Sélectionnez des audiences (interface utilisateur d’Experience Platform)](#select-audiences).
 1. [Créez un jeu de données activé pour le profil (API Experience Platform)](#create-a-profile-enabled-dataset).
 1. [Exporter des audiences (API Experience Platform)](#export-audiences).
-1. [ Transformer la sortie (interface utilisateur d’Experience Platform, etc.)](#transform-the-output)
+1. [&#x200B; Transformer la sortie (interface utilisateur d’Experience Platform, etc.)](#transform-the-output)
 1. [Création d’un schéma et d’un jeu de données (interface utilisateur d’Experience Platform)](#create-a-schema-and-dataset)
 1. [Ajouter ou modifier une connexion (interface utilisateur de Customer Journey Analytics)](#add-or-edit-a-connection).
 1. [Configurer une vue de données (interface utilisateur de Customer Journey Analytics)](#configure-a-data-view).
@@ -170,7 +170,7 @@ où
 
 +++
 
-Utilisez l’API [ Segmentation Service pour vérifier le statut de la tâche d’exportation](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/api/export-jobs#get).
+Utilisez l’API [&#x200B; Segmentation Service pour vérifier le statut de la tâche d’exportation](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/api/export-jobs#get).
 
 +++ Récupération d’une requête de tâche d’exportation spécifique
 
@@ -337,9 +337,9 @@ Dans l’interface utilisateur d’Experience Platform :
    1. (facultatif) Saisissez une **[!UICONTROL Description]**.
    1. Sélectionnez **[!UICONTROL Terminer]**.
 1. Configurez votre schéma pour qu’il contienne un groupe de champs personnalisés (nommé, par exemple, **[!UICONTROL Appartenance à une audience]**) qui contient deux champs nommés **[!UICONTROL audienceMembershipId]** et **[!UICONTROL audienceMembershipName]**.
-1. Assurez-vous que le champ **[!UICONTROL personID]** est une **[!UICONTROL Identité]**, une **[!UICONTROL Identité de Principal]** et qu’il contient **[!UICONTROL E-mail]** comme I**[!UICONTROL espace de noms d’identité]**.
+1. Assurez-vous que le champ **[!UICONTROL personID]** est une **[!UICONTROL Identité]**, une **[!UICONTROL Identité de Principal]** et qu’il contient **[!UICONTROL E-mail]** comme I&#x200B;**[!UICONTROL espace de noms d’identité]**.
 
-   ![ Segment à exporter ](assets/segment-for-export.png)
+   ![&#x200B; Segment à exporter &#x200B;](assets/segment-for-export.png)
 
 1. **[!UICONTROL Appliquer]** toutes les modifications. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer le schéma.
 
