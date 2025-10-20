@@ -91,7 +91,7 @@ Les paramètres suivants régissent l’accès à l’agent Data Insights dans C
 
    1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les autorisations.
 
-  Pour plus d’informations sur le contrôle d’accès, voir [Contrôle d’accès ](/help/technotes/access-control.md#access-control).
+  Pour plus d’informations sur le contrôle d’accès, voir [Contrôle d’accès &#x200B;](/help/technotes/access-control.md#access-control).
 
 ## Accès à l’agent Data Insights dans l’assistant IA
 
@@ -259,7 +259,7 @@ Vous trouverez ci-dessous les bonnes pratiques pour votre configuration de Custo
 >[!MORELIKETHIS]
 >
 >[Paramètres de composant](/help/data-views/component-settings/overview.md)
->>[Dictionnaire de données](/help/components/data-dictionary/data-dictionary-overview.md)
->>[Approuver une mesure calculée](/help/components/calc-metrics/cm-workflow/cm-approving.md)
->>[Partager des segments](/help/components/segments/seg-share.md)
+>&#x200B;>[Dictionnaire de données](/help/components/data-dictionary/data-dictionary-overview.md)
+>&#x200B;>[Approuver une mesure calculée](/help/components/calc-metrics/cm-workflow/cm-approving.md)
+>&#x200B;>[Partager des segments](/help/components/segments/seg-share.md)
 >
