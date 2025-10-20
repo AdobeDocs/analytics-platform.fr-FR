@@ -5,10 +5,10 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: cd92bde10b9cb473c4df791e91296a2a43b2ad84
+source-git-commit: bb44ba8d36a2c21c789f0df6a84ea0432ca20029
 workflow-type: tm+mt
-source-wordcount: '2463'
-ht-degree: 100%
+source-wordcount: '2461'
+ht-degree: 99%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 >[!AVAILABILITY]
 >
->L’agent Data Insights est disponible pour les clientes et clients éligibles pour une durée limitée. L’accès à l’agent Data Insights prendra fin le 30 novembre 2025. Pour continuer à utiliser l’agent Data Insights sans interruption, contactez votre représentant ou représentante de compte Adobe pour en savoir plus sur les licences associées.
+>L’agent Data Insights est disponible pour les clientes et clients éligibles pour une durée limitée. L’accès à l’agent Data Insights prendra fin le 30 novembre 2025. Pour continuer à utiliser Data Insights Agent sans interruption, contactez votre représentant de compte Adobe pour en savoir plus sur les licences Data Insights Agent.
 
 L’agent Data Insights, accessible à partir de l’[Assistant IA](/help/ai-assistant.md) dans Customer Journey Analytics, est un agent de conversation d’IA générative qui répond rapidement et efficacement aux questions sur vos données. Il crée des visualisations pertinentes dans Analysis Workspace en utilisant les composants de votre vue de données et vos données réelles.
 

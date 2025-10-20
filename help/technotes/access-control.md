@@ -6,7 +6,7 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: a00c7b0bf4b6e7bd8b6a7949606c5de7430fae4e
+source-git-commit: 3b0c182bbf4e7a0880287a9a95ea848e6b633430
 workflow-type: tm+mt
 source-wordcount: '1530'
 ht-degree: 22%
@@ -63,7 +63,7 @@ En plus d’être ajouté en tant qu’administrateur de produit dans le profil 
   | [!UICONTROL Gestion des données] | [!UICONTROL Affichage des jeux de données] | Accès en lecture seule aux jeux de données et aux schémas. |
   | [!UICONTROL Identity Management] | [!UICONTROL Affichages des espaces de noms d’identité] | Accès en lecture seule aux espaces de noms d’identité. |
 
-  Pour plus d’informations sur les autorisations Experience Platform, voir [Gestion des autorisations pour un profil de produit](https://experienceleague.adobe.com/fr/docs/experience-platform/access-control/ui/permissions).
+  Pour plus d’informations sur les autorisations Experience Platform, voir [Gestion des autorisations pour un profil de produit](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions).
 
 
 * Si Journey Optimizer est intégré à Customer Journey Analytics où existent des connexions Journey Optimizer, les autorisations Parcours doivent également être ajoutées pour accéder aux connexions :
@@ -72,8 +72,8 @@ En plus d’être ajouté en tant qu’administrateur de produit dans le profil 
   |---|---|---|
   | [!UICONTROL Parcours] | [!UICONTROL Afficher les événements de Parcours, les sources de données et les actions] | Accès en lecture seule aux événements de parcours, aux actions personnalisées de parcours et aux sources de données de parcours. |
   | [!UICONTROL Parcours] | [!UICONTROL Gérer les événements Parcours, les sources de données et les actions] | Lire, créer, modifier et supprimer des événements, des sources ou des actions. |
-  | [!UICONTROL Parcours] | [!UICONTROL Afficher les Parcours &#x200B;] | Accès en lecture seule aux parcours. |
-  | [!UICONTROL Parcours] | [!UICONTROL Gérer les Parcours &#x200B;] | Lecture, création, modification et suppression des parcours. |
+  | [!UICONTROL Parcours] | [!UICONTROL Afficher les Parcours ] | Accès en lecture seule aux parcours. |
+  | [!UICONTROL Parcours] | [!UICONTROL Gérer les Parcours ] | Lecture, création, modification et suppression des parcours. |
 
 * Exporter des jeux de données vers des [destinations](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/activate/export-datasets)
 
@@ -84,13 +84,13 @@ En plus d’être ajouté en tant qu’administrateur de produit dans le profil 
   | [!UICONTROL Destinations] | [!UICONTROL Gérer les destinations] | Accès à la lecture, la création et la suppression des connexions de destination et des comptes de destination. |
   | [!UICONTROL Destinations] | [!UICONTROL Activation des destinations] | Autoriser les utilisateurs à activer des segments vers des destinations existantes. Active l’étape de mappage dans le workflow d’activation. Cette autorisation nécessite également d’accorder l’autorisation Afficher les destinations à l’utilisateur ou l’utilisatrice qui souhaite activer des données vers les destinations. |
 
-  Pour plus d’informations sur les autorisations Experience Platform, voir [Gestion des autorisations pour un profil de produit](https://experienceleague.adobe.com/fr/docs/experience-platform/access-control/ui/permissions).
+  Pour plus d’informations sur les autorisations Experience Platform, voir [Gestion des autorisations pour un profil de produit](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions).
 
 * Utiliser l’extension [BI](../data-views/bi-extension.md)
 
   Pour que les utilisateurs puissent utiliser l’extension BI, un administrateur de produit
 
-   * doit s’assurer que les autorisations Experience Platform de l’utilisateur incluent un rôle disposant de la ressource Query Service avec les options Gérer les requêtes et Gérer l’intégration de Query Service . Pour plus d’informations sur les autorisations Experience Platform, voir [Gestion des autorisations pour un profil de produit](https://experienceleague.adobe.com/fr/docs/experience-platform/access-control/ui/permissions).
+   * doit s’assurer que les autorisations Experience Platform de l’utilisateur incluent un rôle disposant de la ressource Query Service avec les options Gérer les requêtes et Gérer l’intégration de Query Service . Pour plus d’informations sur les autorisations Experience Platform, voir [Gestion des autorisations pour un profil de produit](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions).
 
      | Catégorie | Autorisation | Description |
      |---|---|---| 
@@ -129,7 +129,7 @@ L’onglet **[!UICONTROL Autorisations]** fait partie de chaque profil de produi
 | [!UICONTROL Outils de reporting] | [!UICONTROL Affichage de lʼaudience] | Autoriser les utilisateurs à afficher les [audiences](/help/components/audiences/audiences-overview.md). |
 | [!UICONTROL Outils de reporting] | [!UICONTROL Création dʼaudiences] | Autoriser les utilisateurs à créer des [audiences](/help/components/audiences/audiences-overview.md) |
 | [!UICONTROL Outils de reporting] | [!UICONTROL Accès aux journaux d’audit] | Appliquez la vérification des autorisations sur l’[API](https://developer.adobe.com/cja-apis/docs/endpoints/auditlogs/) et l’interface utilisateur des journaux d’audit. |
-| [!UICONTROL Outils de reporting] | [!UICONTROL Partager les liens du projet avec tout le monde] | Autoriser les utilisateurs [à partager des projets avec tout le monde.](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/curate-share/share-projects) |
+| [!UICONTROL Outils de reporting] | [!UICONTROL Partager les liens du projet avec tout le monde] | Autoriser les utilisateurs [à partager des projets avec tout le monde.](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/curate-share/share-projects) |
 | [!UICONTROL Outils de reporting] | [!UICONTROL Prévisions] | Autoriser les utilisateurs à accéder à la fonctionnalité [Prévision](../analysis-workspace/c-forecast/forecasting.md) d’Analysis Workspace |
 | [!UICONTROL Outils de reporting] | [!UICONTROL Assistant IA : connaissance des produits] | Autoriser les utilisateurs à accéder à l’[assistant AI](../ai-assistant.md) pour acquérir des connaissances sur les produits. |
 | [!UICONTROL Outils de reporting] | [!UICONTROL Légendes intelligentes] | Autoriser les utilisateurs à accéder aux [Légendes intelligentes](/help/analysis-workspace/visualizations/intelligent-captions.md). |
@@ -137,6 +137,8 @@ L’onglet **[!UICONTROL Autorisations]** fait partie de chaque profil de produi
 | [!UICONTROL Outils de vues de données] | [!UICONTROL Extension CJA BI] | Autoriser les utilisateurs à utiliser l’extension [BI](../data-views/bi-extension.md). |
 
 {style="table-layout:auto"}
+
+<!-- add this:  [!UICONTROL Reporting Tools] -[!UICONTROL Data storytelling] - Let users [generate slide presentations based on Workspace projects.](/help/analysis-workspace/curate-share/generate-slides.md) -  -->
 
 ## Traitement du projet Workspace
 

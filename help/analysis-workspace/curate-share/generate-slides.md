@@ -6,18 +6,62 @@ feature: Curate and Share
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 680799fdf18703acbd0569e25b41e6ecbc154d62
+source-git-commit: 9e23382800326440ed2a583e80029c9f27bb2494
 workflow-type: tm+mt
-source-wordcount: '501'
-ht-degree: 3%
+source-wordcount: '1134'
+ht-degree: 4%
 
 ---
 
 # Storytelling de données : génération de présentations de diapositives à partir de rapports Workspace {#generate-powerpoint}
 
-Vous pouvez générer automatiquement des présentations .pptx à partir de projets Analysis Workspace. Lors de la génération de présentations, Customer Journey Analytics identifie automatiquement les informations clés et les convertit en diapositives prêtes à l’emploi des parties prenantes.
+Les utilisateurs disposant [des autorisations nécessaires](#permission-requirements-to-generate-slides) peuvent générer automatiquement des présentations .pptx à partir de projets Analysis Workspace. Lors de la génération de ces présentations de diapositives, Customer Journey Analytics crée automatiquement une histoire à partir de vos données en identifiant les informations clés et en les convertissant en diapositives prêtes pour les parties prenantes.
 
-Cette fonctionnalité réduit le temps et les efforts requis pour rechercher des résultats dans vos projets Workspace. Elle vous permet également de créer rapidement des récits à l’intention des dirigeants et de communiquer l’impact commercial.
+Cette fonctionnalité réduit le temps et les efforts requis pour rechercher des résultats dans vos projets Workspace. Elle vous permet également de créer rapidement des récits à l’intention de la direction et de communiquer l’impact commercial aux parties prenantes.
+
+Cette histoire de données générée automatiquement permet aux analystes de se concentrer sur l’exploration des données, tandis que Customer Journey Analytics traite et formate les résultats de l’analyste pour l’utilisation par les parties prenantes.
+
+## Comprendre les histoires de données dans les présentations de diapositives
+
+Analysis Workspace utilise l’IA générative pour créer des histoires de données dans les présentations de diapositives. Ces histoires de données complètent une analyse pour un projet Workspace donné en fournissant un contexte supplémentaire, en faisant apparaître les points forts importants et en donnant des idées pour les étapes suivantes. découvrez les tendances cachées, les anomalies, les facteurs contributifs et les principaux moteurs
+
+### Valeur supplémentaire fournie par les histoires de données
+
+Les histoires de données complètent une analyse pour un projet Workspace donné en :
+
+* Ajout d’un contexte
+
+* Mise en évidence d’informations importantes
+
+* Signaler des tendances cachées, des anomalies et d’autres facteurs contributifs
+
+* Identification des principaux moteurs
+
+* Suggérer des étapes à suivre
+
+### Éléments de projet qui façonnent les histoires de données
+
+Analysis Workspace crée des histoires de données en tenant compte des éléments de projet suivants :
+
+* Relations interdimensionnelles et intermétriques
+
+* Les éléments individuels qui forment la base de l’analyse : dimensions, mesures, filtres, structure des tableaux à structure libre, visualisations et panneaux
+
+* Les noms donnés aux panneaux, tableaux et visualisations
+
+* Ordre des mesures dans un tableau à structure libre (pour déterminer la priorité)
+
+* Synthèse des chiffres et synthèse des textes (pour déterminer les mesures qui doivent être mises en évidence dans le récit des données)
+
+### Éléments de présentation d’une histoire de données
+
+Les histoires de données se composent d’un résumé exécutif, de diapositives détaillées et de séparateurs de section.
+
+**Résumé analytique :** donne la priorité aux informations les plus précieuses et rédige une histoire globale d’une durée comprise entre 1 et 5 phrases.
+
+**Diapositives détaillées :** génère des informations relatives aux tableaux, panneaux ou visualisations d’un projet Workspace. Les informations se composent de tendances, de saisons, d’anomalies et de corrélations.
+
+**Diviseurs de section :** divise les informations avec des séparateurs de section nommés et placés de manière appropriée.
 
 ## Générer une présentation .pptx basée sur un projet Workspace
 
@@ -39,9 +83,13 @@ Cette fonctionnalité réduit le temps et les efforts requis pour rechercher des
 
 <!-- markdownlint-enable MD034 -->
 
-1. Accédez au projet Workspace contenant les données que vous souhaitez utiliser comme base de votre présentation.
+1. Accédez au projet Workspace qui contient les données que vous souhaitez utiliser comme base de votre présentation de diapositives.
 
 1. Sélectionnez **[!UICONTROL Générer des diapositives]** dans le coin supérieur droit de la page.
+
+   La boîte de dialogue Générer des diapositives s’affiche.
+
+   ![Boîte de dialogue Générer des diapositives](assets/generate-slides.png)
 
 1. Indiquez les informations suivantes :
 
@@ -54,22 +102,71 @@ Cette fonctionnalité réduit le temps et les efforts requis pour rechercher des
    | **[!UICONTROL Annotations]** | |
    | **[!UICONTROL Mettre en gras les composants]** | Sélectionnez jusqu’à 5 mesures et 5 dimensions dans vos visualisations, sur lesquelles vous souhaitez mettre l’accent dans la présentation.<p>Lorsque aucun accent n’est mis, les composants s’affichent dans les présentations comme suit :<ul><li>**Mesures et dimensions :** italique</li><li>**Éléments Dimension :** guillemets</li></ul></p><p>Lorsque l’accent est mis, les composants s’affichent dans les présentations comme suit :</p><ul><li>**Mesures et dimensions :** italiques et gras</li><li>**Éléments Dimension :** gras lorsque la dimension correspondante est mise en évidence<p>Une couleur est également appliquée à l’élément de dimension lorsque celui-ci est mis en surbrillance dans le graphique.</p></li></ul> |
 
-(Conditionnel) Sélectionnez **[!UICONTROL Thème par défaut]** si vous souhaitez que vos diapositives soient générées avec le thème par défaut.
+1. (Conditionnel) Sélectionnez **[!UICONTROL Thème par défaut]** si vous souhaitez générer rapidement des diapositives en moins d’étapes et si aucun thème d’entreprise n’est requis pour votre présentation de diapositives.
 
-1. Choisissez d’utiliser un thème par défaut ou de charger un modèle personnalisé :
+   Il vous suffit de choisir le thème de couleur de votre présentation en sélectionnant la couleur souhaitée.
 
-   * **[!UICONTROL Thème par défaut]** :
+   ![Générer des diapositives avec le thème par défaut](assets/generate-slides-default-theme.png)
 
-   * **[!UICONTROL Charger le modèle]** :
+1. (Conditionnel) Sélectionnez **[!UICONTROL Charger le modèle]** si la présentation des diapositives doit correspondre à un thème d’entreprise. Cette option nécessite de charger un modèle personnalisé et d’appliquer vos styles personnalisés.
 
+   ![Générer des diapositives avec un modèle personnalisé](assets/generate-slides-upload-template.png)
 
+   Pour charger un modèle personnalisé, effectuez l’une des opérations suivantes :
 
+   * (Recommandé) Téléchargez un modèle vierge et modifiez-le.
 
+      1. Téléchargez ce modèle vierge. <!--add link-->
+
+      1. Appliquez vos styles personnalisés au modèle vierge.
+
+      1. Chargez à nouveau le modèle sans modifier le nom de la disposition principale.
+
+   * Chargez directement un modèle personnalisé.
+
+      1. À partir de votre système de fichiers, faites glisser votre modèle personnalisé vers la zone de dépôt.
+
+         Ou
+
+         Sélectionnez **[!UICONTROL Parcourir]**, puis recherchez et sélectionnez votre modèle personnalisé dans le système de fichiers.
+
+         Assurez-vous que le fichier chargé contient des dispositions principales avec les noms suivants : « Title_Slide », « Section_Divider », « Title_Text », « Title_Chart », « Title_Two_Content_Mixed », « Title_Three_Content_Mixed »
+
+         Les fichiers .pptx et .potx d’une taille maximale de 25 Mo sont pris en charge.
+
+1. Sélectionnez **[!UICONTROL Exporter PPT]**.
+
+1. (Recommandé) Passez en revue et modifiez la présentation .ppt et apportez les modifications nécessaires, comme décrit dans la section suivante, [Modifier les diapositives d&#39;une présentation générée précédemment](#edit-slides-from-a-previously-generated-presentation).
 
 ## Modifier les diapositives d&#39;une présentation générée précédemment
 
 
 ## Télécharger une présentation .pptx générée
+
+
+
+## Exigences d’autorisation pour générer des diapositives
+
+>[!AVAILABILITY]
+>
+>Si votre entreprise ne dispose pas de l’accès nécessaire pour générer des présentations de diapositives à partir d’un projet Workspace, contactez votre représentant de compte Adobe pour en savoir plus sur les licences.
+>
+>Cette fonctionnalité est activée par défaut pour tous les utilisateurs des organisations qui disposent des licences requises.
+
+Les administrateurs de profil de produit dont les organisations disposent d’une licence pour générer des diapositives peuvent désactiver l’accès si nécessaire.
+
+Dans [!UICONTROL Adobe Admin Console], l&#39;autorisation [!UICONTROL Outils de création de rapports] **[!UICONTROL storytelling de données]** détermine l&#39;accès à cette fonctionnalité. Un [administrateur de profil de produit](https://helpx.adobe.com/fr/enterprise/using/manage-product-profiles.html) doit suivre les étapes suivantes dans [!UICONTROL Admin Console] s’il souhaite désactiver l’accès :
+1. Accédez à **[!UICONTROL Admin Console]** > **[!UICONTROL Produits et services]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Profils de produit]**.
+1. Sélectionnez le titre du profil de produit pour lequel vous souhaitez fournir l’accès à [!UICONTROL Data storytelling].
+1. Dans le profil de produit spécifique, sélectionnez **[!UICONTROL Autorisations]**.
+1. Sélectionnez ![Modifier](/help/assets/icons/Edit.svg) pour modifier les **[!UICONTROL Outils de création des rapports]**.
+1. Sélectionnez ![AddCircle](/help/assets/icons/RemoveCircle.svg) pour supprimer **Data storytelling** des **[!UICONTROL Éléments d’autorisation inclus]**.
+
+   <!--add screenshot of permission in the admin console-->
+
+1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les autorisations.
+
+Pour plus d’informations, voir [Accès au niveau de l’utilisateur](/help/technotes/access-control.md#user-level-access) dans [Contrôle d’accès](/help/technotes/access-control.md#access-control).
 
 ## Éléments et fonctionnalités de projet non pris en charge {#unsupported}
 
