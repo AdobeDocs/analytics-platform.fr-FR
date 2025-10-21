@@ -490,7 +490,7 @@ ht-degree: 99%
       + [Utiliser des données de résumé](/help/use-cases/data-views/summary-data.md)
       + [Cas d’utilisation de l’extension BI](/help/use-cases/data-views/bi-extension-usecases.md)
    + Champs dérivés {#derived-fields}
-      + [Créer un rapport sur le trafic généré par LLM et IA](/help/use-cases/ai-traffic.md)
+      + [Créer un rapport sur le trafic généré par LLM et IA](/help/use-cases/ai-traffic.md)
       + [Créer un rapport sur les objectifs](../use-cases/goals-using-derived-fields.md)
    + Analyse de produit {#product-analysis}
       + [Analyse de produit](/help/use-cases/product-analysis.md)
