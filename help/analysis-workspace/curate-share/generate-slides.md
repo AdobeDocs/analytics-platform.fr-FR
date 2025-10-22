@@ -6,24 +6,24 @@ feature: Curate and Share
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: f6e64e850b8c416817b76697d869c10adb9b544b
+source-git-commit: 4d7ecc3eaba93424d43d0f4c312aeec78016395f
 workflow-type: tm+mt
-source-wordcount: '1177'
+source-wordcount: '1494'
 ht-degree: 4%
 
 ---
 
 # Storytelling de données : génération de présentations de diapositives à partir de rapports Workspace {#generate-powerpoint}
 
-Les utilisateurs disposant [des autorisations nécessaires](#permission-requirements-to-generate-slides) peuvent générer automatiquement des présentations .pptx à partir de projets Analysis Workspace. Lors de la génération de ces présentations de diapositives, Customer Journey Analytics crée automatiquement une histoire à partir de vos données en identifiant les informations clés et en les convertissant en diapositives prêtes pour les parties prenantes.
+Les utilisateurs disposant [des autorisations nécessaires](#permission-requirements-to-generate-slides) peuvent générer automatiquement des présentations .pptx basées sur des projets Analysis Workspace. Lors de la génération de ces présentations de diapositives, Customer Journey Analytics crée automatiquement une histoire à partir de vos données en identifiant les informations clés et en les convertissant en diapositives prêtes pour les parties prenantes.
 
-Cette histoire de données générée automatiquement réduit le temps, les efforts et l’expertise requis pour rechercher des résultats dans un projet Workspace. Les analystes peuvent se concentrer davantage sur l’exploration des données, tout en permettant à Customer Journey Analytics de créer et de formater le récit exécutif et de communiquer l’impact commercial aux parties prenantes.
+Cette histoire de données générée réduit le temps, les efforts et l’expertise requis pour rechercher des résultats dans un projet Workspace. Les analystes peuvent se concentrer davantage sur l’exploration des données, tout en permettant à Customer Journey Analytics de créer et de formater le récit exécutif et de communiquer l’impact commercial aux parties prenantes.
 
 ## Comprendre les histoires de données dans les présentations de diapositives
 
-Analysis Workspace utilise l’IA générative pour créer un récit basé sur vos données Workspace, dans un format de présentation des diapositives.
+Une **histoire de données** est le récit que Customer Journey Analytics crée en fonction de vos données Workspace. À l’aide de l’IA générative, Customer Journey Analytics identifie les thèmes importants dans les panneaux et les visualisations que vous choisissez d’inclure dans votre présentation de diapositives. Il génère des informations, puis passe par un processus de déduplication et de notation afin d’identifier un sous-ensemble d’informations à utiliser pour créer l’histoire des données.
 
-Les sections suivantes décrivent la valeur supplémentaire apportée par les histoires de données, les éléments nécessaires d’un projet qui contribuent à façonner le récit et les éléments clés inclus dans chaque sortie de présentation.
+Les sections suivantes décrivent la valeur supplémentaire que fournissent les histoires de données, les éléments nécessaires d’un projet qui aident à façonner le récit et les éléments clés inclus dans la sortie de présentation .pptx.
 
 ### Valeur supplémentaire fournie par les histoires de données
 
@@ -37,11 +37,9 @@ Les histoires de données complètent une analyse pour un projet Workspace donn�
 
 * Fournir des conseils sur la validité des données dans un contexte donné
 
-* Évaluer si certaines variables sont sous-évaluées ou surévaluées.
+* Évaluer si certaines variables sont sous-évaluées ou surévaluées
 
 * Signaler des tendances cachées, des anomalies et d’autres facteurs contributifs
-
-* Identification des principaux moteurs
 
 * Suggérer des étapes à suivre
 
@@ -51,7 +49,7 @@ Analysis Workspace crée des histoires de données en tenant compte des élémen
 
 * Relations interdimensionnelles et intermétriques
 
-* Les éléments individuels qui forment la base de l’analyse : dimensions, mesures, filtres, structure des tableaux à structure libre, visualisations et panneaux
+* Les éléments individuels qui forment la base de l’analyse (dimensions, mesures, filtres, structure des tableaux à structure libre, visualisations et panneaux)
 
 * Les noms donnés aux panneaux, tableaux et visualisations
 
@@ -61,7 +59,9 @@ Analysis Workspace crée des histoires de données en tenant compte des élémen
 
 ### Éléments de présentation d’une histoire de données
 
-Les histoires de données se composent d’un résumé exécutif, de diapositives détaillées et de séparateurs de section.
+Les histoires de données se composent d’une diapositive de titre, d’une diapositive de résumé exécutif, de diapositives détaillées et de séparateurs de section.
+
+**Diapositive de titre :** affiche le titre et le nom du présentateur que vous spécifiez. Les informations affichées dans les notes du conférencier décrivent le processus de création du thème et du récit, le nombre d’informations générées et utilisées, et les panneaux utilisés.
 
 **Résumé analytique :** donne la priorité aux informations les plus précieuses et rédige une histoire globale d’une durée comprise entre 1 et 5 phrases.
 
@@ -104,11 +104,11 @@ Les histoires de données se composent d’un résumé exécutif, de diapositive
    | **[!UICONTROL Titre de la couverture]** | Indiquez un titre pour la présentation. Ce titre s&#39;affiche sur la diapositive de titre de la présentation. |
    | **[!UICONTROL Inclure le nom du présentateur]** | Spécifiez le nom du présentateur. Ce nom apparaît sur la diapositive de titre de la présentation, sous le titre de couverture. |
    | **[!UICONTROL Panneaux et visualisations à inclure]** | Choisissez les panneaux et la visualisation à inclure dans la présentation. Vous pouvez inclure jusqu’à 50 visualisations.<p>La plupart des panneaux et des visualisations sont pris en charge. Pour plus d’informations sur les panneaux et les visualisations non pris en charge, voir [Éléments et fonctionnalités de projet non pris en charge](#unsupported-project-elements-and-features).</p> |
-   | **[!UICONTROL Descriptions des panneaux et des visualisations]** | |
-   | **[!UICONTROL Annotations]** | |
-   | **[!UICONTROL Mettre en gras les composants]** | Sélectionnez jusqu’à 5 mesures et 5 dimensions dans vos visualisations, sur lesquelles vous souhaitez mettre l’accent dans la présentation.<p>Lorsque aucun accent n’est mis, les composants s’affichent dans les présentations comme suit :<ul><li>**Mesures et dimensions :** italique</li><li>**Éléments Dimension :** guillemets</li></ul></p><p>Lorsque l’accent est mis, les composants s’affichent dans les présentations comme suit :</p><ul><li>**Mesures et dimensions :** italiques et gras</li><li>**Éléments Dimension :** gras lorsque la dimension correspondante est mise en évidence<p>Une couleur est également appliquée à l’élément de dimension lorsque celui-ci est mis en surbrillance dans le graphique.</p></li></ul> |
+   | **[!UICONTROL Descriptions des panneaux et des visualisations]** | Choisissez d’inclure des descriptions de panneau et de visualisation dans votre présentation de diapositives générée. |
+   | **[!UICONTROL Annotations]** | Choisissez si les annotations sont visibles dans la présentation de diapositives générée. Pour plus d’informations sur les annotations, consultez [Présentation des annotations](/help/components/annotations/overview.md). |
+   | **[!UICONTROL Mettre en gras les composants]** | Sélectionnez jusqu’à 5 mesures et 5 dimensions dans vos visualisations, sur lesquelles vous souhaitez mettre l’accent dans la présentation. Les composants que vous choisissez sont mieux classés et reçoivent plus de poids lors de la création des thèmes et du récit global de l’histoire des données. <p>Lorsque aucun accent n’est mis, les composants s’affichent dans les présentations comme suit :<ul><li>**Mesures et dimensions :** italique</li><li>**Éléments Dimension :** guillemets</li></ul></p><p>Lorsque l’accent est mis, les composants s’affichent dans les présentations comme suit :</p><ul><li>**Mesures et dimensions :** italiques et gras</li><li>**Éléments Dimension :** gras lorsque la dimension correspondante est mise en évidence<p>Une couleur est également appliquée à l’élément de dimension lorsque celui-ci est mis en surbrillance dans le graphique.</p></li></ul> |
 
-1. (Conditionnel) Sélectionnez **[!UICONTROL Thème par défaut]** si vous souhaitez générer rapidement des diapositives en moins d’étapes et si aucun thème d’entreprise n’est requis pour votre présentation de diapositives.
+1. (Conditionnel) Sélectionnez **[!UICONTROL Thème par défaut]** si vous souhaitez générer des diapositives en moins d’étapes et si aucun thème d’entreprise n’est requis pour votre présentation de diapositives.
 
    Il vous suffit de choisir le thème de couleur de votre présentation en sélectionnant la couleur souhaitée.
 
@@ -122,11 +122,25 @@ Les histoires de données se composent d’un résumé exécutif, de diapositive
 
    * (Recommandé) Téléchargez un modèle vierge et modifiez-le.
 
-      1. Téléchargez ce modèle vierge. <!--add link-->
+      1. Téléchargez [ce modèle vierge](https://d30ln29764hddd.cloudfront.net/deploy/builds/data-storytelling.2025-10-20T15:10:19/resources/components/Blank.potx?).
 
       1. Appliquez vos styles personnalisés au modèle vierge.
 
-      1. Chargez à nouveau le modèle sans modifier le nom de la disposition principale.
+      1. Chargez à nouveau le modèle sans modifier les noms de disposition principaux :
+
+         À partir de votre système de fichiers, faites glisser votre modèle vierge auquel vos styles personnalisés sont appliqués dans la zone de dépôt.
+
+         Ou
+
+         Sélectionnez **[!UICONTROL Parcourir]**, puis recherchez et sélectionnez le modèle vierge auquel vos styles personnalisés sont appliqués à partir du système de fichiers.
+
+      1. Dans la section **[!UICONTROL Mappage de disposition]**, chaque disposition de diapositive utilisée dans les présentations générées est automatiquement mappée à une diapositive de votre thème chargé. Vérifiez que les sélections sont correctes.
+
+         ![Mappage de disposition](assets/generate-slides-layout-mapping.png)
+
+      1. (Conditionnel) Si une disposition de diapositive n&#39;est pas mappée correctement, sélectionnez **[!UICONTROL Modifier la sélection]** au-dessus de la diapositive choisie dans la présentation chargée, puis choisissez la diapositive correspondant à la disposition.
+
+         Répétez ce processus pour chaque diapositive qui n’a pas été mappée correctement.
 
    * Chargez directement un modèle personnalisé.
 
@@ -136,20 +150,23 @@ Les histoires de données se composent d’un résumé exécutif, de diapositive
 
          Sélectionnez **[!UICONTROL Parcourir]**, puis recherchez et sélectionnez votre modèle personnalisé dans le système de fichiers.
 
-         Assurez-vous que le fichier chargé contient des dispositions principales avec les noms suivants : « Title_Slide », « Section_Divider », « Title_Text », « Title_Chart », « Title_Two_Content_Mixed », « Title_Three_Content_Mixed »
+         Assurez-vous que le fichier chargé comporte des dispositions principales avec les noms suivants : « Title_Slide », « Section_Divider », « Title_Text », « Title_Chart », « Title_Two_Content_Mixed », « Title_Three_Content_Mixed ».
 
          Les fichiers .pptx et .potx d’une taille maximale de 25 Mo sont pris en charge.
 
+      1. Dans la section **[!UICONTROL Mappage de disposition]**, chaque disposition de diapositive utilisée dans les présentations générées est automatiquement mappée à une diapositive de votre thème chargé. Vérifiez que les sélections sont correctes.
+
+         ![Modèle personnalisé de mappage de disposition](assets/generate-slides-layout-mapping-custom-template.png)
+
+      1. (Conditionnel) Si une disposition de diapositive n&#39;est pas mappée correctement, sélectionnez **[!UICONTROL Modifier la sélection]** au-dessus de la diapositive choisie dans la présentation chargée, puis choisissez la diapositive correspondant à la disposition.
+
+         Répétez ce processus pour chaque diapositive qui n’a pas été mappée correctement.
+
 1. Sélectionnez **[!UICONTROL Exporter PPT]**.
 
-1. (Recommandé) Passez en revue et modifiez la présentation .ppt et apportez les modifications nécessaires, comme décrit dans la section suivante, [Modifier les diapositives d&#39;une présentation générée précédemment](#edit-slides-from-a-previously-generated-presentation).
+   La présentation .pptx est automatiquement téléchargée sur votre station de travail.
 
-## Modifier les diapositives d&#39;une présentation générée précédemment
-
-
-## Télécharger une présentation .pptx générée
-
-
+1. (Recommandé) Ouvrez la présentation .pptx et passez-la en revue. Apportez les modifications nécessaires.
 
 ## Exigences d’autorisation pour générer des diapositives
 
