@@ -4,9 +4,9 @@ title: Rapports En Temps Réel - Aperçu
 feature: Real-time Reporting
 role: User
 exl-id: 12fbb760-936d-4e30-958f-764febca5ae7
-source-git-commit: d8ff5191ea96b8871f6aaba1fc28211c22a13e0d
+source-git-commit: 0e5a64e78e5a471f8b7c9fc32fdbae2b2e70230a
 workflow-type: tm+mt
-source-wordcount: '722'
+source-wordcount: '780'
 ht-degree: 7%
 
 ---
@@ -14,8 +14,6 @@ ht-degree: 7%
 # Création de rapports en temps réel - Aperçu
 
 Les rapports en temps réel dans Customer Journey Analytics affichent et mettent à jour en temps réel les données et les visualisations au sein d’un ou de plusieurs panneaux dans Analysis Workspace.
-
-{{release-limited-testing}}
 
 {{ultimate-package}}
 
@@ -37,7 +35,7 @@ Vous souhaitez valider, par exemple :
    * Lorsque votre nouvelle page de produits est entrée en ligne, collectez-vous des données client à partir de la page ?
    * Votre événement multimédia en direct se passe-t-il correctement ?
 
-Ne prenez pas en compte les rapports en temps réel pour les cas d’utilisation de la surveillance des opérations. Par exemple, pour répondre à la question de savoir si un site fonctionne correctement. Comme le bouton (bascule) [&#x200B; Actualisation en temps réel &#x200B;](use-real-time.md) se désactive automatiquement au bout de 30 minutes et que l’actualisation du rapport en temps réel cesse, vous ne devez pas utiliser un rapport en temps réel comme source fiable pour ces cas d’utilisation.
+Ne prenez pas en compte les rapports en temps réel pour les cas d’utilisation de la surveillance des opérations. Par exemple, pour répondre à la question de savoir si un site fonctionne correctement. Comme le bouton (bascule) [ Actualisation en temps réel ](use-real-time.md) se désactive automatiquement au bout de 30 minutes et que l’actualisation du rapport en temps réel cesse, vous ne devez pas utiliser un rapport en temps réel comme source fiable pour ces cas d’utilisation.
 
 ## Fonctionnement
 
@@ -59,6 +57,7 @@ La manière dont vous collectez les données détermine la latence des rapports 
 | 3 | Connecteur source Adobe Analytics | 17 minutes | 105 minutes |
 | 4 | Autres connecteurs source dans les connecteurs source (y compris les données par lot) | 25 heures | 25 heures |
 
+Si une interruption de service se produit pendant plus d’une demi-heure, les données en temps réel ne sont pas renvoyées avec des données une fois les problèmes résolus. Au lieu de cela, la création de rapports en temps réel récupère des données en temps réel à partir du moment où les services recommencent à fonctionner. Aucune donnée n’est perdue pendant cette période et toujours disponible en utilisant les fonctionnalités de création de rapports standard en dehors de la création de rapports en temps réel.
 
 ## Limites
 
