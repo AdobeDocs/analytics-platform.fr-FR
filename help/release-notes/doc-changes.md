@@ -4,9 +4,9 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: c32c57a1a62edc5b1c78ffe2b6782d575c98cfdd
+source-git-commit: 297f6c27e63cc675c0f765dcd9b0b5b846bfa8c7
 workflow-type: tm+mt
-source-wordcount: '5506'
+source-wordcount: '5529'
 ht-degree: 99%
 
 ---
@@ -21,7 +21,8 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | --- | --- |
 | **Octobre 2025** | |
 | Ingérer et utiliser des audiences Experience Platform | Mise à jour de l’article de cas d’utilisation sur la [ingestion et utilisation d’audiences Experience Platform](/help/use-cases/data-ingestion/ingest-aep-segments.md). |
-| Créer un rapport sur le trafic généré par LLM et IA | Ajout d’un [article de cas d’utilisation](/help/use-cases/ai-traffic.md) sur la création de rapports sur le trafic généré par LLM et IA à l’aide de champs dérivés comme base. Cet article s’appuie sur l’article de blog [Suivi et analyse du trafic généré par LLM et par IA dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967?profile.language=fr). |
+| Préparation de votre organisation à la mise à niveau vers Customer Journey Analytics | Ajout d’informations sur la [préparation d’une organisation à la mise à niveau vers Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-org-readiness.md). |
+| Créer un rapport sur le trafic généré par LLM et IA | Ajout d’un [article de cas d’utilisation](/help/use-cases/ai-traffic.md) sur la création de rapports sur le trafic généré par LLM et IA à l’aide de champs dérivés comme base. Cet article s’appuie sur l’article de blog [Suivi et analyse du trafic généré par LLM et par IA dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967). |
 | **Septembre 2025** | |
 | Dates antérieures à 1900 | Ajout d’une [note](/help/connections/create-connection.md#datasets) sur la manière dont les dates antérieures à 1900 sont gérées par Customer Journey Analytics. |
 | Créer des rapports en temps réel | Ajout de la documentation sur la [création de rapports en temps réel](/help/components/real-time/real-time.md) dans Customer Journey Analytics. |
@@ -94,7 +95,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | **Août 2024** | |
 | Exemple de projet B2B | Ajout d’un [cas d’utilisation](/help/use-cases/b2b/example.md) expliquant comment paramétrer, configurer et générer des rapports sur les données B2B au niveau du profil (personne) dans Customer Journey Analytics, à l’aide de la nouvelle fonctionnalité [Transformer les jeux de données pour les recherches B2B](/help/connections/transform-datasets-b2b-lookups.md). |
 | Mise à jour des cas d’utilisation d’export de données | Ajout d’exemples de requêtes plus détaillés à [Query Service (Data Distiller) et Exporter des jeux de données](/help/use-cases/data-export/queryservice-export-datasets.md) pour illustrer comment appliquer correctement l’attribution entre les sessions à l’aide d’un intervalle de recherche en amont. |
-| Données de résumé | Ajout d’une documentation sur les [données récapitulatives](/help/data-views/summary-data.md) et les [&#x200B; paramètres du composant de groupe de données récapitulatives](/help/data-views/component-settings/summary-data-group.md) et d’un [cas d’utilisation de données récapitulatives](/help/use-cases/data-views/summary-data.md). |
+| Données de résumé | Ajout d’une documentation sur les [données récapitulatives](/help/data-views/summary-data.md) et les [ paramètres du composant de groupe de données récapitulatives](/help/data-views/component-settings/summary-data-group.md) et d’un [cas d’utilisation de données récapitulatives](/help/use-cases/data-views/summary-data.md). |
 | **Juillet 2024** | |
 | Ajout d’informations à propos des mesures calculées rapides | Mise à jour des informations dans [Mesures](/help/components/apply-create-metrics.md) afin de clarifier la différence entre les [mesures calculées créées dans le créateur de mesures calculées](/help/components/apply-create-metrics.md#create-calculated-metrics-for-all-projects) et [celles créées sous forme de mesures calculées rapides dans un seul projet](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project). Ajout également d’informations supplémentaires sur les mesures calculées rapides.<p>Les mesures calculées créées dans le créateur de mesures calculées sont disponibles dans la liste des composants et peuvent être appliquées aux projets dans l’ensemble de l’organisation, tandis que les mesures calculées qui sont créées sous forme de mesures calculées rapides ne sont disponibles que dans le projet dans lequel elles ont été créées.</p><p>Mise à jour des informations dans [Créer des mesures](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) pour effectuer des clarifications similaires.</p> |
 | Fonction de déduplication des champs dérivés | Ajout d’une documentation sur la fonction de [Déduplication](/help/data-views/derived-fields/derived-fields.md#deduplicate) des champs dérivés. |

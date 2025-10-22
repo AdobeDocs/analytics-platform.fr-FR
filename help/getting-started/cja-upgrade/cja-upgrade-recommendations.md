@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
-source-git-commit: 105b235c1a4791fd59cf65ae7f543a5fc08fc55d
+source-git-commit: 2a43c4b1d4154c6127b485c512009a46411da049
 workflow-type: tm+mt
-source-wordcount: '3281'
+source-wordcount: '3290'
 ht-degree: 99%
 
 ---
@@ -68,6 +68,8 @@ Une fois que vous disposez de suffisamment de données historiques à l’aide d
 Les étapes suivantes décrivent le processus recommandé pour effectuer la mise à niveau d’Adobe Analytics vers Customer Journey Analytics.
 
 Chaque étape fournit une explication générale d’un processus plus détaillé. Suivez le lien de chaque étape et effectuez les tâches associées, puis revenez à cette page et passez à l’étape suivante du processus.
+
+1. [Préparez votre entreprise à la mise à niveau vers Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-org-readiness.md).
 
 1. [Planifiez l’architecture de votre schéma XDM](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md){target="_blank"}.
 
