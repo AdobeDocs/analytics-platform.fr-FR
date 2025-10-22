@@ -35,7 +35,7 @@ Vous souhaitez valider, par exemple :
    * Lorsque votre nouvelle page de produits est entrée en ligne, collectez-vous des données client à partir de la page ?
    * Votre événement multimédia en direct se passe-t-il correctement ?
 
-Ne prenez pas en compte les rapports en temps réel pour les cas d’utilisation de la surveillance des opérations. Par exemple, pour répondre à la question de savoir si un site fonctionne correctement. Comme le bouton (bascule) [ Actualisation en temps réel ](use-real-time.md) se désactive automatiquement au bout de 30 minutes et que l’actualisation du rapport en temps réel cesse, vous ne devez pas utiliser un rapport en temps réel comme source fiable pour ces cas d’utilisation.
+Ne prenez pas en compte les rapports en temps réel pour les cas d’utilisation de la surveillance des opérations. Par exemple, pour répondre à la question de savoir si un site fonctionne correctement. Comme le bouton (bascule) [&#x200B; Actualisation en temps réel &#x200B;](use-real-time.md) se désactive automatiquement au bout de 30 minutes et que l’actualisation du rapport en temps réel cesse, vous ne devez pas utiliser un rapport en temps réel comme source fiable pour ces cas d’utilisation.
 
 ## Fonctionnement
 
