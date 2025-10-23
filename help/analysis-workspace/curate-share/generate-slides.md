@@ -4,7 +4,7 @@ keywords: Analysis Workspace
 title: Génération de présentations à partir de rapports Workspace
 feature: Curate and Share
 role: User
-source-git-commit: 3807ad0beac3656c1f3bd886611fbe4470a6e7c5
+source-git-commit: 99adae279a21c827579ebc3b58b336a9f0e3e8a4
 workflow-type: tm+mt
 source-wordcount: '1535'
 ht-degree: 4%
@@ -12,6 +12,10 @@ ht-degree: 4%
 ---
 
 # Storytelling de données : génération de présentations de diapositives à partir de rapports Workspace {#generate-powerpoint}
+
+{{release-limited-testing}}
+
+<!-- also remove lmited testing note from: /help/technotes/access-control.md -->
 
 Les utilisateurs disposant [des autorisations nécessaires](#permission-requirements-to-generate-slides) peuvent générer automatiquement des présentations .pptx basées sur des projets Analysis Workspace. Lors de la génération de ces présentations de diapositives, Customer Journey Analytics crée automatiquement une histoire à partir de vos données en identifiant les informations clés et en les convertissant en diapositives prêtes pour les parties prenantes.
 
