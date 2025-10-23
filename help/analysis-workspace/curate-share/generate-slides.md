@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Génération de présentations à partir de rapports Workspace
 feature: Curate and Share
 role: User
-source-git-commit: 99adae279a21c827579ebc3b58b336a9f0e3e8a4
+source-git-commit: f13a02c2741cf32c25edd11f969a7644f724b612
 workflow-type: tm+mt
-source-wordcount: '1535'
+source-wordcount: '1542'
 ht-degree: 4%
 
 ---
@@ -155,6 +155,8 @@ Les histoires de données se composent d’une diapositive de titre, d’une dia
          Sélectionnez **[!UICONTROL Parcourir]**, puis recherchez et sélectionnez votre modèle personnalisé dans le système de fichiers.
 
          Assurez-vous que le fichier chargé comporte des dispositions principales avec les noms suivants : « Title_Slide », « Section_Divider », « Title_Text », « Title_Chart », « Title_Two_Content_Mixed », « Title_Three_Content_Mixed ».
+
+         Jusqu’à 15 dispositions principales sont prises en charge.
 
          Les fichiers .pptx et .potx d’une taille maximale de 25 Mo sont pris en charge.
 
