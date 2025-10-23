@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Génération de présentations à partir de rapports Workspace
 feature: Curate and Share
 role: User
-source-git-commit: f13a02c2741cf32c25edd11f969a7644f724b612
+source-git-commit: 62ef107c52a96178fbf9e41fee49db757488525b
 workflow-type: tm+mt
-source-wordcount: '1542'
-ht-degree: 4%
+source-wordcount: '1506'
+ht-degree: 3%
 
 ---
 
@@ -106,9 +106,10 @@ Les histoires de données se composent d’une diapositive de titre, d’une dia
    | **[!UICONTROL Titre de la couverture]** | Indiquez un titre pour la présentation. Ce titre s&#39;affiche sur la diapositive de titre de la présentation. |
    | **[!UICONTROL Inclure le nom du présentateur]** | Spécifiez le nom du présentateur. Ce nom apparaît sur la diapositive de titre de la présentation, sous le titre de couverture. |
    | **[!UICONTROL Panneaux et visualisations à inclure]** | Choisissez les panneaux et la visualisation à inclure dans la présentation. Vous pouvez inclure jusqu’à 50 visualisations.<p>La plupart des panneaux et des visualisations sont pris en charge. Pour plus d’informations sur les panneaux et les visualisations non pris en charge, voir [Éléments et fonctionnalités de projet non pris en charge](#unsupported-project-elements-and-features).</p> |
-   | **[!UICONTROL Descriptions des panneaux et des visualisations]** | Choisissez d’inclure des descriptions de panneau et de visualisation dans votre présentation de diapositives générée. |
-   | **[!UICONTROL Annotations]** | Choisissez si les annotations sont visibles dans la présentation de diapositives générée. Pour plus d’informations sur les annotations, consultez [Présentation des annotations](/help/components/annotations/overview.md). |
    | **[!UICONTROL Mettre en gras les composants]** | Dans les visualisations, sélectionnez les mesures et dimensions à mettre en évidence dans la présentation. Les composants que vous choisissez sont mieux classés et reçoivent plus de poids lors de la création des thèmes et du récit global de l’histoire des données. <p>Lorsque aucun accent n’est mis, les composants s’affichent dans les présentations comme suit :<ul><li>**Mesures et dimensions :** italique</li><li>**Éléments Dimension :** guillemets</li></ul></p><p>Lorsque l’accent est mis, les composants s’affichent dans les présentations comme suit :</p><ul><li>**Mesures et dimensions :** italiques et gras</li><li>**Éléments Dimension :** gras lorsque la dimension correspondante est mise en évidence<p>Une couleur est également appliquée à l’élément de dimension lorsque celui-ci est mis en surbrillance dans le graphique.</p></li></ul> |
+
+   <!-- add this later: - **[!UICONTROL Panel and visualization descriptions]** - Choose whether to include panel and visualization descriptions in your generated slide presentation. - 
+   - **[!UICONTROL Annotations]** - Choose whether annotations are visible in your generated slide presentation. For more information about annotations, see [Annotations overview](/help/components/annotations/overview.md).  -  -->
 
 1. (Conditionnel) Sélectionnez **[!UICONTROL Thème par défaut]** si vous souhaitez générer des diapositives en moins d’étapes et si aucun thème d’entreprise n’est requis pour votre présentation de diapositives.
 
