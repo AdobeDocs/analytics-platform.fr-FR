@@ -52,7 +52,7 @@ Lorsque vous activez Utilisation du produit, les dimensions suivantes sont dispo
    * [!UICONTROL Partage de projet]
    * [!UICONTROL Exécuter le panneau Expérimentation]
    * [!UICONTROL Enregistrer le projet]
-   * [!UICONTROL Carte de performance enregistrée ]
+   * [!UICONTROL Carte de performance enregistrée &#x200B;]
    * [!UICONTROL Envoyer un fichier]
    * [!UICONTROL Envoyer le fichier selon le planning]
    * [!UICONTROL Partager le projet avec tout le monde]
