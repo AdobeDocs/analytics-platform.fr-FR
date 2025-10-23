@@ -4,11 +4,9 @@ keywords: Analysis Workspace
 title: Génération de présentations à partir de rapports Workspace
 feature: Curate and Share
 role: User
-hide: true
-hidefromtoc: true
-source-git-commit: 4d7ecc3eaba93424d43d0f4c312aeec78016395f
+source-git-commit: 3807ad0beac3656c1f3bd886611fbe4470a6e7c5
 workflow-type: tm+mt
-source-wordcount: '1494'
+source-wordcount: '1535'
 ht-degree: 4%
 
 ---
@@ -35,8 +33,6 @@ Les histoires de données complètent une analyse pour un projet Workspace donn�
 
 * Mise en évidence d’informations importantes
 
-* Fournir des conseils sur la validité des données dans un contexte donné
-
 * Évaluer si certaines variables sont sous-évaluées ou surévaluées
 
 * Signaler des tendances cachées, des anomalies et d’autres facteurs contributifs
@@ -54,6 +50,8 @@ Analysis Workspace crée des histoires de données en tenant compte des élémen
 * Les noms donnés aux panneaux, tableaux et visualisations
 
 * Ordre des mesures dans un tableau à structure libre (pour déterminer la priorité)
+
+* Ordre des visualisations dans un panneau (pour déterminer la priorité)
 
 * Synthèse des chiffres et synthèse des textes (pour déterminer les mesures qui doivent être mises en évidence dans le récit des données)
 
@@ -106,7 +104,7 @@ Les histoires de données se composent d’une diapositive de titre, d’une dia
    | **[!UICONTROL Panneaux et visualisations à inclure]** | Choisissez les panneaux et la visualisation à inclure dans la présentation. Vous pouvez inclure jusqu’à 50 visualisations.<p>La plupart des panneaux et des visualisations sont pris en charge. Pour plus d’informations sur les panneaux et les visualisations non pris en charge, voir [Éléments et fonctionnalités de projet non pris en charge](#unsupported-project-elements-and-features).</p> |
    | **[!UICONTROL Descriptions des panneaux et des visualisations]** | Choisissez d’inclure des descriptions de panneau et de visualisation dans votre présentation de diapositives générée. |
    | **[!UICONTROL Annotations]** | Choisissez si les annotations sont visibles dans la présentation de diapositives générée. Pour plus d’informations sur les annotations, consultez [Présentation des annotations](/help/components/annotations/overview.md). |
-   | **[!UICONTROL Mettre en gras les composants]** | Sélectionnez jusqu’à 5 mesures et 5 dimensions dans vos visualisations, sur lesquelles vous souhaitez mettre l’accent dans la présentation. Les composants que vous choisissez sont mieux classés et reçoivent plus de poids lors de la création des thèmes et du récit global de l’histoire des données. <p>Lorsque aucun accent n’est mis, les composants s’affichent dans les présentations comme suit :<ul><li>**Mesures et dimensions :** italique</li><li>**Éléments Dimension :** guillemets</li></ul></p><p>Lorsque l’accent est mis, les composants s’affichent dans les présentations comme suit :</p><ul><li>**Mesures et dimensions :** italiques et gras</li><li>**Éléments Dimension :** gras lorsque la dimension correspondante est mise en évidence<p>Une couleur est également appliquée à l’élément de dimension lorsque celui-ci est mis en surbrillance dans le graphique.</p></li></ul> |
+   | **[!UICONTROL Mettre en gras les composants]** | Dans les visualisations, sélectionnez les mesures et dimensions à mettre en évidence dans la présentation. Les composants que vous choisissez sont mieux classés et reçoivent plus de poids lors de la création des thèmes et du récit global de l’histoire des données. <p>Lorsque aucun accent n’est mis, les composants s’affichent dans les présentations comme suit :<ul><li>**Mesures et dimensions :** italique</li><li>**Éléments Dimension :** guillemets</li></ul></p><p>Lorsque l’accent est mis, les composants s’affichent dans les présentations comme suit :</p><ul><li>**Mesures et dimensions :** italiques et gras</li><li>**Éléments Dimension :** gras lorsque la dimension correspondante est mise en évidence<p>Une couleur est également appliquée à l’élément de dimension lorsque celui-ci est mis en surbrillance dans le graphique.</p></li></ul> |
 
 1. (Conditionnel) Sélectionnez **[!UICONTROL Thème par défaut]** si vous souhaitez générer des diapositives en moins d’étapes et si aucun thème d’entreprise n’est requis pour votre présentation de diapositives.
 
@@ -115,6 +113,8 @@ Les histoires de données se composent d’une diapositive de titre, d’une dia
    ![Générer des diapositives avec le thème par défaut](assets/generate-slides-default-theme.png)
 
 1. (Conditionnel) Sélectionnez **[!UICONTROL Charger le modèle]** si la présentation des diapositives doit correspondre à un thème d’entreprise. Cette option nécessite de charger un modèle personnalisé et d’appliquer vos styles personnalisés.
+
+   Le modèle personnalisé le plus récent que vous avez chargé est stocké localement dans le cache de votre navigateur et est disponible lors de la génération de futures présentations de diapositives.
 
    ![Générer des diapositives avec un modèle personnalisé](assets/generate-slides-upload-template.png)
 
@@ -173,8 +173,8 @@ Les histoires de données se composent d’une diapositive de titre, d’une dia
 >[!AVAILABILITY]
 >
 >Si votre entreprise ne dispose pas de l’accès nécessaire pour générer des présentations de diapositives à partir d’un projet Workspace, contactez votre représentant de compte Adobe pour en savoir plus sur les licences.
->
->Cette fonctionnalité est activée par défaut pour tous les utilisateurs des organisations qui disposent des licences requises.
+
+La possibilité de générer des diapositives est activée par défaut pour tous les utilisateurs des organisations qui disposent de la licence requise.
 
 Les administrateurs de profil de produit dont les organisations disposent d’une licence pour générer des diapositives peuvent désactiver l’accès si nécessaire.
 
@@ -205,19 +205,27 @@ Les éléments et fonctionnalités Analysis Workspace suivants utilisés dans un
 
   La plupart des visualisations peuvent être incluses dans les diapositives générées à partir d’un projet Workspace. Toutefois, les visualisations suivantes ne peuvent pas être incluses et s’affichent en grisé lorsque les options de configuration sont affichées :
 
-   * Table de cohorte
-
-   * Zone de travail de parcours
+   * Zone
 
    * Puces
 
+   * Table de cohorte
+
    * Combo
+
+   * Abandon
+
+   * Flux
+
+   * Zone de travail de parcours
 
    * Nuage de points
 
    * Plan en arborescence
 
 * Répartitions
+
+  Les données relatives aux répartitions sont incluses dans les présentations générées, mais elles s’affichent au même niveau que les éléments de dimension.
 
 * Analyses guidées
 
