@@ -5,23 +5,23 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 exl-id: 7729c1b9-b3ed-4662-a446-2088389bbd97
-source-git-commit: 4ce2eb397e15dcb081f7b9695ba2332a3eb17659
+source-git-commit: d1097ca5f981623283a7d02200d5023548046429
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '470'
 ht-degree: 4%
 
 ---
 
 # Transformer les jeux de données pour les recherches B2B
 
-Pour prendre en charge les recherches basées sur la personne sur les données B2B (y compris les comptes, les opportunités, les listes marketing et les campagnes), la transformation des jeux de données de recherche B2B est requise.
+Pour prendre en charge les recherches basées sur la personne sur les données B2B (y compris les comptes, les opportunités, les listes marketing et les campagnes), la transformation des jeux de données de recherche B2B peut améliorer la précision des données.
 
 Cette transformation n’est disponible que pour les jeux de données contenant des données pour les schémas de recherche B2B, en fonction des classes suivantes :
 
-* [Relation avec la personne du compte professionnel XDM](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/classes/b2b/business-account-person-relation)
-* [Relation de la personne avec l’opportunité commerciale XDM](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/classes/b2b/business-opportunity-person-relation)
-* [Membres de la liste marketing professionnelle XDM](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
-* [Membres de la campagne commerciale XDM](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/classes/b2b/business-campaign-members)
+* [Relation avec la personne du compte professionnel XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-account-person-relation)
+* [Relation de la personne avec l’opportunité commerciale XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-opportunity-person-relation)
+* [Membres de la liste marketing professionnelle XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
+* [Membres de la campagne commerciale XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-campaign-members)
 
 >[!NOTE]
 >

@@ -5,24 +5,24 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: e8ebf5e7-0b80-4d46-8a5f-b7ae832eda4f
 role: User
-source-git-commit: 1bfebb53fbe056ed6320380178c8b1ce8f7079f1
+source-git-commit: d1097ca5f981623283a7d02200d5023548046429
 workflow-type: tm+mt
-source-wordcount: '1276'
-ht-degree: 13%
+source-wordcount: '1373'
+ht-degree: 12%
 
 ---
 
 # Exemple de projet B2B basé sur les personnes
 
-Cet article illustre un cas d’utilisation dans lequel vous souhaitez générer correctement des rapports dans Customer Journey Analytics sur les données de personne dans le contexte d’une configuration B2B standard basée sur la personne. Une telle configuration est facilitée par le [B2B edition Real-Time CDP](https://experienceleague.adobe.com/fr/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview).  Le cas d’utilisation explique comment configurer et générer des rapports sur les données B2B basées sur le niveau du profil (personne) dans Customer Journey Analytics.
+Cet article illustre un cas d’utilisation dans lequel vous souhaitez générer correctement des rapports dans Customer Journey Analytics sur les données de personne dans le contexte d’une configuration B2B standard basée sur la personne. Une telle configuration est facilitée par le [B2B edition Real-Time CDP](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview).  Le cas d’utilisation explique comment configurer et générer des rapports sur les données B2B basées sur le niveau du profil (personne) dans Customer Journey Analytics.
 
-[!BADGE B2B edition &#x200B;]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} une section distincte pour les cas d’utilisation de création de rapports basés sur les comptes est publiée avec la version de [Customer Journey Analytics B2B edition](/help/getting-started/cja-b2b-edition.md).
+[!BADGE B2B edition ]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} une section distincte pour les cas d’utilisation de création de rapports basés sur les comptes est publiée avec la version de [Customer Journey Analytics B2B edition](/help/getting-started/cja-b2b-edition.md).
 
 ## Connexion
 
 Définissez votre connexion pour inclure tous les jeux de données B2B pertinents d’Experience Platform. Jeux de données que vous pouvez envisager d’ajouter à votre connexion :
 
-| Jeu de données | Schéma | Type de schéma | Classe de base | Description |
+| Jeu de données (facultatif) | Schéma | Type de schéma | Classe de base | Description |
 |---|---|---|---|---|
 | Jeu De Données D’Activité B2B | Schéma D’Activité B2B | Événement | XDM ExperienceEvent | Un ExperienceEvent est un enregistrement factuel de ce qui s’est produit, y compris le moment de survenue et l’identité de la personne concernée. Les modèles ExperienceEvent peuvent être explicites (actions humaines directement observables) ou implicites (obtenus sans action humaine directe), et sont enregistrés sans agrégation ni interprétation. Les événements d’expérience sont essentiels pour l’analyse de domaine temporel, car ils permettent l’observation et l’analyse des modifications qui se produisent dans une fenêtre de temps donnée, ainsi que la comparaison entre plusieurs fenêtres de temps pour suivre les tendances. |
 | Jeu De Données De Personnes B2B | Schéma de personne B2B | Profile | XDM Individual Profile | Un profil individuel XDM constitue une représentation unique des attributs et des centres d’intérêt des individus identifiés et partiellement identifiés. Les profils moins identifiés peuvent contenir uniquement des signaux comportementaux anonymes, tels que des cookies de navigateur, tandis que les profils hautement identifiés peuvent contenir des informations personnelles détaillées, telles que le nom, la date de naissance, l’emplacement et l’adresse e-mail. À mesure qu’un profil se développe, il devient un solide référentiel d’informations personnelles, d’informations d’identification, de coordonnées et de préférences de communication pour une personne. |
@@ -43,7 +43,7 @@ Définissez votre connexion pour inclure tous les jeux de données B2B pertinent
 -->
 
 
-La relation entre les schémas de recherche B2B, le schéma de profil et le schéma d’événement est définie dans la configuration B2B d’Experience Platform. Voir Schémas dans [Real-Time Customer Data Platform B2B edition](https://experienceleague.adobe.com/fr/docs/experience-platform/rtcdp/schemas/b2b) et [Définir une relation multiple-à-un entre deux schémas dans Real-Time Customer Data Platform B2B edition](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/tutorials/relationship-b2b).
+La relation entre les schémas de recherche B2B, le schéma de profil et le schéma d’événement est définie dans la configuration B2B d’Experience Platform. Voir Schémas dans [Real-Time Customer Data Platform B2B edition](https://experienceleague.adobe.com/fr/docs/experience-platform/rtcdp/schemas/b2b) et [Définir une relation multiple-à-un entre deux schémas dans Real-Time Customer Data Platform B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/relationship-b2b).
 
 
 Pour garantir une configuration appropriée d’une connexion qui prend en charge les recherches basées sur la personne de vos données B2B, utilisez l’illustration suivante pour obtenir un aperçu et procédez comme suit :
@@ -52,24 +52,30 @@ Pour garantir une configuration appropriée d’une connexion qui prend en charg
 
 1. Ajoutez des jeux de données du tableau ci-dessus à votre connexion.
 1. Pour chaque jeu de données de recherche que vous ajoutez à votre connexion, vous devez définir explicitement la relation avec un jeu de données d’événement à l’aide de la **[!UICONTROL Clé]** et de la **[!UICONTROL Clé correspondante]** dans la boîte de dialogue **[!UICONTROL Modifier le jeu de données]**.
-1. Pour chaque jeu de données de recherche que vous souhaitez transformer pour les recherches B2B basées sur la personne, activez **[!UICONTROL Transformer le jeu de données]** afin de vous assurer que les données sont transformées pour les recherches basées sur la personne. Consultez [&#x200B; Transformer des jeux de données pour les recherches B2B &#x200B;](/help/connections/transform-datasets-b2b-lookups.md) pour plus d’informations.
+1. Pour chaque jeu de données de recherche que vous souhaitez transformer pour les recherches B2B basées sur la personne, activez **[!UICONTROL Transformer le jeu de données]** afin de vous assurer que les données sont transformées pour les recherches basées sur la personne. Consultez [ Transformer des jeux de données pour les recherches B2B ](/help/connections/transform-datasets-b2b-lookups.md) pour plus d’informations.
 
    ![Key - Clé correspondante](assets/key-matchingkey.png)
 
-   Le tableau ci-dessous présente un exemple de présentation des valeurs [!UICONTROL ID de personne], [!UICONTROL Clé] et [!UICONTROL Clé correspondante] pour chacun des jeux de données.
+   Le tableau ci-dessous présente un exemple de présentation des valeurs d’exemple [!UICONTROL ID de personne], [!UICONTROL Clé] et [!UICONTROL Clé correspondante] pour chacun des jeux de données.
 
-   | Jeu de données | ID de personne | Clé | Clé correspondante<br/>(dans le jeu de données de l’événement) |
+   >[!IMPORTANT]
+   >
+   >Les valeurs de **ID de personne**, **Clé** et **Clé correspondante** dans le tableau ci-dessous sont des **exemples de valeurs** et peuvent être différentes dans votre environnement spécifique.
+   >
+
+
+   | Jeu de données (facultatif) | ID de personne | Clé <br/> | Clé correspondante<br/>(dans le jeu de données de l’événement)<br/> |
    |---|---|---|---| 
    | Jeu De Données D’Activité B2B | SourceKey <br/>**personKey.sourceKey** | | |
    | Jeu De Données De Personnes B2B | SourceKey <br/>**b2b.personKey.sourceKey** | | |
-   | Jeu De Données De Compte B2B | | SourceKey <br/>**accountKey.sourceKey**&#x200B;❶ | SourceKey<br>(Jeu de données de personne B2B)<br/>**b2b.accountKey.sourceKey**&#x200B;❶ |
-   | Jeu de données d’opportunité B2B | | Source Key <br/>**opportunitéKey.sourceKey**&#x200B;❷ | SourceKey<br/>(jeu de données de relation d’opportunité B2B)<br/>**opportunitéKey.sourceKey**&#x200B;❷ |
-   | Jeu De Données De Campagne B2B | | SourceKey <br/>**campaignKey.sourceKey**&#x200B;❸ | SourceKey<br/>(jeu de données de membre de campagne B2B)<br/>**campaignKey.sourceKey**&#x200B;❸<br/> |
-   | Jeu De Données De Liste Marketing B2B | | SourceKey <br/>**marketingListKey.sourceKey**&#x200B;❹ | SourceKey<br/>(jeu de données de membre de la liste marketing B2B)<br/>**marketingListKey.sourceKey**&#x200B;❹ |
-   | Jeu De Données Relation Personne-Compte B2B | | SourceKey <br/>**personKey.sourceKey**&#x200B;❺ | Clé Source<br/>(jeux de données d’événements)<br/>**personKey.sourceKey**&#x200B;❺ |
-   | Jeu De Données De Relation De La Personne Avec L’Opportunité B2B | | SourceKey <br/>**personKey.sourceKe** y❻ | Clé Source<br/>(jeux de données d’événements)<br/>**personKey.sourceKey**&#x200B;❻ |
-   | Jeu De Données De Membre De Campagne B2B | | SourceKey <br/>**personKey.sourceKey**&#x200B;❼ | Clé Source<br/>(jeux de données d’événements)<br/>**personKey.sourceKey**&#x200B;❼ |
-   | Jeu De Données De Membre De La Liste Marketing B2B | | SourceKey <br/>**personKey.sourceKey**&#x200B;❽ | Clé Source<br/>(jeux de données d’événements)<br/>**personKey.sourceKey**&#x200B;❽ |
+   | Jeu De Données De Compte B2B | | SourceKey <br/>**accountKey.sourceKey**❶ | SourceKey<br>(Jeu de données de personne B2B)<br/>**b2b.accountKey.sourceKey**❶ |
+   | Jeu de données d’opportunité B2B | | Source Key <br/>**opportunitéKey.sourceKey**❷ | SourceKey<br/>(jeu de données de relation d’opportunité B2B)<br/>**opportunitéKey.sourceKey**❷ |
+   | Jeu De Données De Campagne B2B | | SourceKey <br/>**campaignKey.sourceKey**❸ | SourceKey<br/>(jeu de données de membre de campagne B2B)<br/>**campaignKey.sourceKey**❸<br/> |
+   | Jeu De Données De Liste Marketing B2B | | SourceKey <br/>**marketingListKey.sourceKey**❹ | SourceKey<br/>(jeu de données de membre de la liste marketing B2B)<br/>**marketingListKey.sourceKey**❹ |
+   | Jeu De Données Relation Personne-Compte B2B | | SourceKey <br/>**personKey.sourceKey**❺ | Clé Source<br/>(jeux de données d’événements)<br/>**personKey.sourceKey**❺ |
+   | Jeu De Données De Relation De La Personne Avec L’Opportunité B2B | | SourceKey <br/>**personKey.sourceKe** y❻ | Clé Source<br/>(jeux de données d’événements)<br/>**personKey.sourceKey**❻ |
+   | Jeu De Données De Membre De Campagne B2B | | SourceKey <br/>**personKey.sourceKey**❼ | Clé Source<br/>(jeux de données d’événements)<br/>**personKey.sourceKey**❼ |
+   | Jeu De Données De Membre De La Liste Marketing B2B | | SourceKey <br/>**personKey.sourceKey**❽ | Clé Source<br/>(jeux de données d’événements)<br/>**personKey.sourceKey**❽ |
 
 {style="table-layout:auto"}
 
@@ -84,6 +90,11 @@ Vous pouvez, par exemple, ajouter les composants suivants à votre vue de donné
 
 +++Mesures 
 
+>[!IMPORTANT]
+>
+>Les mesures et leurs valeurs (**Nom du composant**, **Jeu de données**, **Type de jeu de données** et **[!UICONTROL Chemin d’accès au schéma])** dans le tableau ci-dessous sont des **exemples**. Définissez des mesures B2B pertinentes (nom du composant, jeu de données, type de données et chemin d’accès au schéma) pour votre situation spécifique.
+>
+
 | Nom du composant | Jeu de données | Type de données | Chemin du schéma |
 |---|---|---|---|
 | Chiffre d’affaires du compte annuel | Jeu De Données De Compte B2B | Double | accountOrganization.annualRevenue.amount |
@@ -97,6 +108,11 @@ Vous pouvez, par exemple, ajouter les composants suivants à votre vue de donné
 +++
 
 +++Dimensions
+
+>[!IMPORTANT]
+>
+>Les dimensions et leurs valeurs (**Nom du composant**, **Jeu de données**, **Type de jeu de données** et **[!UICONTROL Chemin d’accès au schéma])** dans le tableau ci-dessous sont **exemples**. Définissez des dimensions B2B pertinentes (nom du composant, jeu de données, type de données et chemin d’accès au schéma) pour votre situation spécifique.
+>
 
 | Nom du composant | Jeu de données | Type de données | Chemin du schéma |
 |---|---|---|---|
