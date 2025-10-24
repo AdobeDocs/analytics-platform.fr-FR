@@ -1,8 +1,8 @@
 ---
-source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+source-git-commit: 7d354ce65f72838c007d2b9faf02848d86fd7c0f
 workflow-type: tm+mt
-source-wordcount: '4947'
-ht-degree: 100%
+source-wordcount: '4990'
+ht-degree: 98%
 
 ---
 # Extraits
@@ -128,7 +128,7 @@ Un modèle d’attribution détermine les éléments de dimension crédités pou
 
 Un conteneur d’attribution définit la portée souhaitée pour l’attribution. Les options possibles sont les suivantes :
 
-* **Session :** recherche en amont jusqu’au début d’une session au cours de laquelle une conversion s’est produite. Les intervalles de recherche en amont des sessions respectent la [délai d’expiration de session](/help/data-views/create-dataview.md#session-settings) modifiée dans une vue de données.
+* **Session :** recherche en amont jusqu’au début d’une session au cours de laquelle une conversion s’est produite. Les intervalles de recherche en amont de session respectent le [délai d’expiration de session](/help/data-views/create-dataview.md#session-settings) modifié dans une vue de données. Lorsque **[!UICONTROL Session]** est sélectionné, l’intervalle de recherche en amont [Attribution](#atribution-lookback-window) est automatiquement défini sur **[!UICONTROL Intervalle de création de rapports]** et ne peut pas être modifié.
 * **Personne** : examine les conversions à partir de la portée du conteneur de personnes.
 * **Compte global** [!BADGE B2B Edition]{type=Informative} : examine les conversions à partir de la portée du conteneur de comptes globaux.
 * **Comptes** [!BADGE B2B Edition]{type=Informative} : examine les conversions à partir de la portée du conteneur de personnes.
@@ -139,6 +139,7 @@ Un conteneur d’attribution définit la portée souhaitée pour l’attribution
 
 Un intervalle de recherche en amont des attributions correspond à la durée pendant laquelle une conversion doit effectuer une recherche en amont pour englober les points de contact. Si un élément de dimension est défini en dehors de l’intervalle de recherche en amont, la valeur n’est incluse dans aucun calcul d’attribution.
 
+* **[!UICONTROL Intervalle de création de rapports]** : remonte au début de l’intervalle de création de rapports à partir du moment où la conversion a eu lieu.
 * **14 jours** : remonte jusqu’à 14 jours en arrière à partir du moment où la conversion a eu lieu.
 * **30 jours** : remonte jusqu’à 30 jours en arrière à partir du moment où la conversion a eu lieu.
 * **60 jours** : remonte jusqu’à 60 jours en arrière à partir du moment où la conversion a eu lieu.
@@ -154,13 +155,13 @@ Examinez l’exemple suivant :
 1. Le 18 septembre, la personne arrive de nouveau sur votre site par le biais d’un lien sur les médias sociaux qu’une personne de son entourage lui a envoyé. Ils ajoutent plusieurs articles à leur panier, mais n’achètent rien.
 1. Le 24 septembre, votre équipe marketing leur envoie un courrier électronique contenant un bon pour certains articles de leur panier. Ils appliquent le bon, mais se rendent sur plusieurs autres sites pour voir s’il existe d’autres bons. Ils en trouvent un autre par le biais d’une annonce d’affichage, puis effectuent un achat de 50 $.
 
-Selon votre modèle d’attribution, le conteneur et les canaux reçoivent un crédit différent. Voir le tableau ci-dessous pour obtenir des exemples :
+Selon votre intervalle de création de rapports (par exemple, du 10 au 24 septembre), le modèle d’attribution, le conteneur et les canaux reçoivent un crédit différent. Voir le tableau ci-dessous pour obtenir des exemples :
 
 | Modèle | Conteneur | Intervalle de recherche en amont | Explication |
 |---|---|---|---|
-| Première touche | Session | 30 jours | L’attribution ne s’intéresse qu’à la troisième visite. Entre l’e-mail et l’affichage, l’e-mail était le premier. Dès lors, il reçoit 100 % du crédit pour l’achat de 50 $. |
+| Première touche | Session | Intervalle de rapport | L’attribution ne s’intéresse qu’à la troisième visite. Entre l’e-mail et l’affichage, l’e-mail était le premier. Dès lors, il reçoit 100 % du crédit pour l’achat de 50 $. |
 | Première touche | Personne | 30 jours | L’attribution examine les trois visites. Le référencement payant a été le premier. Il obtient donc un crédit de 100 % pour l’achat de 50 $. |
-| Linéaire | Session | 30 jours | Le crédit est divisé entre l’e-mail et l’affichage. Ces deux canaux reçoivent chacun un crédit de 25 $. |
+| Linéaire | Session | Intervalle de rapport | Le crédit est divisé entre l’e-mail et l’affichage. Ces deux canaux reçoivent chacun un crédit de 25 $. |
 | Linéaire | Personne | 30 jours | Le crédit est divisé entre le référencement payant, les réseaux sociaux, les e-mails et l’affichage. Chaque canal reçoit un crédit de 12,50 $ pour cet achat. |
 | En forme de J | Personne | 30 jours | Le crédit est divisé entre le référencement payant, les réseaux sociaux, les e-mails et l’affichage.<ul><li>Un crédit de 60 % est accordé à l’affichage, pour un montant de 30 $.</li><li>Un crédit de 20 % est accordé au référencement payant, pour un montant de 10 $.</li><li>Les 20 % restants sont répartis entre les réseaux sociaux et le courrier électronique, soit 5 $ à chacun.</li></ul> |
 | Atténuation temporelle | Personne | 30 jours | <ul><li>Intervalle de zéro jour entre le point de contact de l’affichage et la conversion. `2^(-0/7) = 1`</li><li>Intervalle de zéro jour entre le point de contact de l’e-mail et la conversion. `2^(-0/7) = 1`</li><li>Intervalle de six jours entre le point de contact de réseaux sociaux et la conversion. `2^(-6/7) = 0.552`</li><li>Intervalle de neuf jours entre le point de contact du référencement payant et la conversion. `2^(-9/7) = 0.41`</li>La normalisation de ces valeurs entraîne les résultats suivants :<ul><li>Affichage : 33,8 %, gain de 16,88 $</li><li>Courrier électronique : 33,8 %, gain de 16,88 $</li><li>Réseaux sociaux : 18,6 %, gain de 9,32 $</li><li>Référencement payant : 13,8 %, gain de 6,92 $</li></ul></li></ul> |
