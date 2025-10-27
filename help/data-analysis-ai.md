@@ -5,10 +5,10 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: bb44ba8d36a2c21c789f0df6a84ea0432ca20029
+source-git-commit: e4b7f1da451a7ec9171fbb623e0e79e916827fd8
 workflow-type: tm+mt
-source-wordcount: '2461'
-ht-degree: 99%
+source-wordcount: '2489'
+ht-degree: 93%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 99%
 
 >[!AVAILABILITY]
 >
->L’agent Data Insights est disponible pour les clientes et clients éligibles pour une durée limitée. L’accès à l’agent Data Insights prendra fin le 30 novembre 2025. Pour continuer à utiliser Data Insights Agent sans interruption, contactez votre représentant de compte Adobe pour en savoir plus sur les licences Data Insights Agent.
+>L’agent Data Insights est disponible pour les clientes et clients éligibles pour une durée limitée. L’accès à l’agent Data Insights prendra fin le 30 novembre 2025. Pour continuer à utiliser l’agent Data Insights sans interruption, contactez votre représentant ou représentante de compte Adobe afin d’en savoir plus sur les licences associées.
 
 L’agent Data Insights, accessible à partir de l’[Assistant IA](/help/ai-assistant.md) dans Customer Journey Analytics, est un agent de conversation d’IA générative qui répond rapidement et efficacement aux questions sur vos données. Il crée des visualisations pertinentes dans Analysis Workspace en utilisant les composants de votre vue de données et vos données réelles.
 
@@ -64,34 +64,39 @@ Les paramètres suivants régissent l’accès à l’agent Data Insights dans C
 
    1. Dans la ligne **[!UICONTROL Outils de création de rapports]** du tableau fourni, sélectionnez l’icône de modification ![Modifier](/help/assets/icons/Edit.svg).
    1. Recherchez ou faites défiler l’écran jusqu’à **[!UICONTROL Assistant IA : connaissance du produit]**, puis sélectionnez l’icône plus ![CercleAjouter](/help/assets/icons/AddCircle.svg) en regard de cette autorisation.
+   1. Faites défiler l’écran jusqu’à ou recherchez **[!UICONTROL Data Insights Agent]**, puis sélectionnez l’icône plus ![AddCircle](/help/assets/icons/AddCircle.svg) en regard de cette autorisation.
 
-      L’autorisation **[!UICONTROL Assistant IA : connaissance du produit]** est ajoutée à la colonne **[!UICONTROL Éléments d’autorisation inclus]**.
+      L’autorisation **[!UICONTROL Assistant IA : connaissance du produit]** et l’autorisation **[!UICONTROL Data Insights Agent]** sont ajoutées à la colonne **[!UICONTROL Éléments d’autorisation inclus]**.
 
       ![Ajouter une autorisation](assets/ai-assistant-permissions.png)
 
-   1. Sélectionnez l’onglet **[!UICONTROL Outils des vues de données]**, puis sélectionnez l’icône plus ![Cercle d’ajout](/help/assets/icons/AddCircle.svg) en regard de l’autorisation **[!UICONTROL Agent Data Insights]**.
-
-      L’autorisation **[!UICONTROL Agent Data Insights]** est ajoutée à la colonne **[!UICONTROL Éléments d’autorisation inclus]**.
-
-      ![Ajoutez une autorisation](assets/ai-assistant-permissions-dataviewtools.png).
-
-   1. Sélectionnez l’onglet **[!UICONTROL Vues de données]** pour choisir les vues de données à activer pour l’agent Data Insights.
-
-      >[!IMPORTANT]
-      >
-      >Tenez compte des points suivants lorsque vous activez les vues de données :
-      >* Vous pouvez activer un maximum de 50 vues de données par organisation IMS. Si vous activez plus de 50 vues de données pour tous les profils de produit pour une organisation donnée, l’agent Data Insights utilisera les 50 vues de données les plus employées.
-      >* L’agent Data Insights peut référencer les vues de données incluses à un moment donné le jour même de leur activation dans l’Admin Console.
-
-   1. Recherchez ou faites défiler jusqu’aux vues de données à activer, puis sélectionnez l’icône plus ![CercleAjouter](/help/assets/icons/AddCircle.svg) en regard du nom de chaque vue de données.
-
-      Chaque vue de données ajoutée est visible dans la colonne **[!UICONTROL Éléments d’autorisation inclus]**.
-
-      ![Ajoutez une autorisation](assets/ai-assistant-permissions-dataviews.png).
-
    1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les autorisations.
 
-  Pour plus d’informations sur le contrôle d’accès, voir [Contrôle d’accès &#x200B;](/help/technotes/access-control.md#access-control).
+  Pour plus d’informations sur le contrôle d’accès, voir [Contrôle d’accès ](/help/technotes/access-control.md#access-control).
+
+* **Accès aux vues de données** : les vues de données doivent être activées pour Data Insights Agent.
+
+  >[!IMPORTANT]
+  >
+  >Tenez compte des points suivants lorsque vous activez les vues de données :
+  >* Vous pouvez activer un maximum de 50 vues de données par organisation IMS. Si vous activez plus de 50 vues de données pour tous les profils de produit pour une organisation donnée, l’agent Data Insights utilisera les 50 vues de données les plus employées.
+  >* Le Data Insights Agent peut référencer les vues de données incluses à un moment donné le jour même de leur activation.
+
+  Pour activer les vues de données pour Data Insights Agent :
+
+   1. Dans Customer Journey Analytics, sélectionnez **[!UICONTROL Gestion des données]** > **[!UICONTROL Vues des données]**.
+
+   1. Sélectionnez une ou plusieurs vues de données à activer pour Data Insights Agent, puis sélectionnez **[!UICONTROL Activer pour Data Insights Agent]**.
+
+      ![Activer les vues de données pour Data Insights Agent](assets/data-view-enable-dia.png)
+
+  Pour afficher le nombre de vues de données activées pour Data Insights Agent dans votre organisation IMS :
+
+   1. Dans Customer Journey Analytics, sélectionnez **[!UICONTROL Gestion des données]** > **[!UICONTROL Vues des données]**.
+
+   1. Sélectionnez l’icône d’informations en haut de la colonne **[!UICONTROL Data Insights Agent]**.
+
+      Icône d’informations de Data Insights Agent ![](assets/data-insights-agent-tooltip.png)
 
 ## Accès à l’agent Data Insights dans l’assistant IA
 
@@ -139,9 +144,9 @@ Ensuite, vous voulez comparer vos revenus par région.
 
 **Prompt :** dans la fenêtre de prompt, saisissez *« Affiche le chiffre d’affaires par région. »*
 
-**Réponse :** l’agent Data Insights comprend intelligemment que par « région », vous entendez « région des clientes et clients ». Il génère un graphique à barres qui présente au mieux le chiffre d’affaires par région :
+**Réponse :** l’agent Data Insights comprend intelligemment que par « région », vous entendez « région des clientes et clients ». Il génère un graphique en barres qui présente au mieux le chiffre d’affaires par région :
 
-![Graphique à barres](/help/assets/ai-asst-result2.png)
+![Graphique en barres](/help/assets/ai-asst-result2.png)
 
 ### Exemple 3
 
@@ -151,7 +156,7 @@ Ensuite, en plus d’analyser le chiffre d’affaires par région, vous souhaite
 
 **Réponse :** le graphique à **[!UICONTROL barres]** reste la réponse la plus concise, mais la mesure de bénéfice a été ajoutée sous la forme d’une colonne dans le tableau à structure libre :
 
-![Graphique à barres](/help/assets/ai-asst-result4.png)
+![Graphique en barres](/help/assets/ai-asst-result4.png)
 
 ### Exemple 4
 
@@ -259,7 +264,7 @@ Vous trouverez ci-dessous les bonnes pratiques pour votre configuration de Custo
 >[!MORELIKETHIS]
 >
 >[Paramètres de composant](/help/data-views/component-settings/overview.md)
->&#x200B;>[Dictionnaire de données](/help/components/data-dictionary/data-dictionary-overview.md)
->&#x200B;>[Approuver une mesure calculée](/help/components/calc-metrics/cm-workflow/cm-approving.md)
->&#x200B;>[Partager des segments](/help/components/segments/seg-share.md)
+>>[Dictionnaire de données](/help/components/data-dictionary/data-dictionary-overview.md)
+>>[Approuver une mesure calculée](/help/components/calc-metrics/cm-workflow/cm-approving.md)
+>>[Partager des segments](/help/components/segments/seg-share.md)
 >
