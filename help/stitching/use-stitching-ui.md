@@ -6,16 +6,16 @@ feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
 badgePremium: label="Beta" type="Informative"
-source-git-commit: 0afe57047e2038f1acd9f88a1e7992da9a2819b1
+source-git-commit: 23b890ec6a3266d1ca0621b09264f1d6a2f82645
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '808'
 ht-degree: 3%
 
 ---
 
 # Utilisation du groupement
 
-Vous pouvez activer le regroupement sur un ou plusieurs jeux de données d’événement que vous avez configurés dans le cadre de votre connexion. Le nombre de jeux de données d’événements que vous pouvez activer pour le groupement est déterminé par le package Customer Journey Analytics sous licence que vous possédez.
+Vous pouvez activer le regroupement sur un ou plusieurs jeux de données d’événement que vous avez configurés dans le cadre de votre connexion. Le package Customer Journey Analytics sous licence détermine le nombre de jeux de données d’événement que vous pouvez activer pour le regroupement .
 
 {{release-limited-testing}}
 
@@ -25,7 +25,7 @@ Vous pouvez activer le groupement dans le cadre de l’[paramètres du jeu de do
 
 Pour activer le groupement sur un jeu de données d’événement dans l’interface utilisateur de connexions :
 
-* Le schéma sur lequel est basé le jeu de données doit avoir défini :
+* Le schéma sur lequel est basé le jeu de données doit comporter :
 
    * plusieurs champs configurés en tant qu’identité et qui vous permettent de sélectionner différentes valeurs pour un identifiant persistant et un identifiant de personne.
    * au moins un champ marqué comme identité principale avec un espace de noms associé si vous souhaitez utiliser le mappage d’identités et l’espace de noms d’identité principal pour l’ID persistant ou l’ID de personne.
@@ -57,7 +57,7 @@ Si vous remplissez les conditions préalables, vous pouvez effectuer des contrô
 
      Où ce qui suit est vrai :
 
-      * `{PERSISTENT_ID_FIELD}` est le champ de l’ID persistant. Par exemple : `identityMap.ecid[0]`.
+      * `{PERSISTENT_ID_FIELD}` est le champ de l’identifiant persistant. Par exemple : `identityMap.ecid[0]`.
       * `{DATASET_TABLE_NAME}` est le nom de la table du jeu de données d’événement.
       * `{FORMAT_STRING}` est la chaîne de format du champ d’horodatage. Par exemple : `MM/DD/YY HH12:MI AM`.
       * `{START_DATE} `est la date de début. Par exemple : `2024-01-01 00:00:00`.
@@ -127,7 +127,7 @@ Pour activer le groupement, dans la section Jeu de données d’événement de l
 
    >[!NOTE]
    >
-   >Vous devez être autorisé à utiliser le graphique d’identité.
+   >Assurez-vous que vous êtes autorisé à utiliser le graphique d’identité.
    >
 
    Avant cela, une boîte de dialogue **[!UICONTROL Modifier en graphique d’identité]** s’affiche pour vous assurer que vous avez [terminé la configuration du graphique d’identité pour le jeu de données](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service) avant d’utiliser le graphique d’identité pour le groupement. Sélectionnez **[!UICONTROL Continuer]** pour continuer.
@@ -141,7 +141,7 @@ Une fois que vous avez enregistré une connexion contenant des jeux de données 
 
 ## Limites
 
-En plus des limites de groupement [basées sur les champs](/help/stitching/fbs.md#limitations) et [basées sur les graphiques](/help/stitching/gbs.md#limitations), les limites suivantes s’appliquent lorsque vous activez le groupement dans l’interface Connexions :
+En plus des [limitations du groupement basées sur les champs](/help/stitching/fbs.md#limitations) et [limitations du groupement basé sur les graphiques](/help/stitching/gbs.md#limitations), les limitations suivantes s’appliquent lorsque vous activez le groupement dans l’interface Connexions :
 
-* Vous ne pouvez assembler un jeu de données d’événement qu’une seule fois dans le cadre d’une connexion unique. Vous ne pouvez pas définir le même jeu de données d’événement plusieurs fois et utiliser une configuration de groupement distincte pour chaque instance. Si vous souhaitez appliquer différentes configurations de groupement sur le même jeu de données, utilisez une connexion distincte pour chaque configuration.
+* Vous ne pouvez assembler un jeu de données d’événement qu’une seule fois dans le cadre d’une connexion unique. Vous ne pouvez pas définir le même jeu de données d’événement plus d’une fois et utiliser une configuration de groupement distincte pour chaque instance. Si vous souhaitez appliquer différentes configurations de groupement sur le même jeu de données, utilisez une connexion distincte pour chaque configuration.
 
