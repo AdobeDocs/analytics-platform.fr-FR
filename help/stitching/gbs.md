@@ -1,21 +1,21 @@
 ---
-title: Groupement basé sur les graphes
-description: Explication du groupement basé sur les graphiques
+title: Groupement basé sur les graphiques
+description: Explique le concept et le fonctionnement du groupement basé sur les graphiques
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: ea5c9114-1fc3-4686-b184-2850acb42b5c
-source-git-commit: c4aea74807be15af56413522d9e6fbf5f18a37a0
+source-git-commit: 359fe2a718ccef816377083aceb2652b4a905072
 workflow-type: tm+mt
-source-wordcount: '1553'
-ht-degree: 7%
+source-wordcount: '1549'
+ht-degree: 5%
 
 ---
 
-# Groupement basé sur les graphes
+# Groupement basé sur les graphiques
 
 
-Dans le groupement basé sur les graphiques, vous spécifiez un jeu de données d’événement, ainsi que l’identifiant persistant (cookie) et l’espace de noms de l’identifiant temporaire (ID de personne) pour ce jeu de données. L’assemblage basé sur des graphiques crée une colonne pour l’ID assemblé dans le nouveau jeu de données assemblé. Elle utilise ensuite l’identifiant persistant pour interroger le graphique d’identités d’Experience Platform Identity Service, à l’aide de l’espace de noms spécifié, afin de mettre à jour l’identifiant assemblé.
+Dans le groupement basé sur les graphiques, vous spécifiez un jeu de données d’événement, ainsi que l’identifiant persistant (cookie) et l’espace de noms de l’identifiant de personne pour ce jeu de données. Le groupement basé sur les graphiques ajoute une nouvelle colonne pour l’ID groupé au jeu de données d’événement. Elle utilise ensuite l’identifiant persistant pour interroger le graphique d’identités d’Experience Platform Identity Service, à l’aide de l’espace de noms spécifié, afin de mettre à jour l’identifiant assemblé.
 
 >[!NOTE]
 >
@@ -97,10 +97,10 @@ Le groupement basé sur les graphiques prend en charge l’utilisation du groupe
 
 L’assemblage effectue au moins deux passages aux données d’un jeu de données donné.
 
-- **Assemblage en direct** : tente d’assembler chaque accès (événement) au fur et à mesure qu’il arrive, à l’aide de l’identifiant persistant pour rechercher l’identifiant transitoire de l’espace de noms sélectionné en interrogeant le graphique d’identité. Si l’ID transitoire est disponible à partir de la recherche, il est immédiatement regroupé.
+- **Assemblage en direct** : tente d’assembler chaque accès (événement) au fur et à mesure qu’il arrive, à l’aide de l’identifiant persistant pour rechercher l’identifiant de personne pour l’espace de noms sélectionné en interrogeant le graphique d’identité. Si l’ID de personne est disponible à partir de la recherche, il est immédiatement regroupé.
 
 - **Groupement de relecture** : *relit* les données en fonction des identités mises à jour à partir du graphique d’identités. À cette étape, les accès provenant d’appareils inconnus précédemment (identifiants persistants) sont regroupés, car le graphique d’identité a résolu l’identité d’un espace de noms. La relecture est déterminée par deux paramètres : **fréquence** et **intervalle de recherche en amont**. Adobe propose les combinaisons de paramètres suivantes :
-   - **Recherche en amont quotidienne à une fréquence quotidienne** : les données sont relues tous les jours avec un intervalle de recherche en amont de 24 heures. Cette option présente un avantage car les relectures sont beaucoup plus fréquentes, mais les visiteurs non authentifiés doivent s’authentifier le jour même où ils visitent votre site.
+   - **Recherche en amont quotidienne à une fréquence quotidienne** : les données sont relues tous les jours avec un intervalle de recherche en amont de 24 heures. Cette option présente l’avantage que les relectures sont beaucoup plus fréquentes, mais les profils non authentifiés doivent s’authentifier le jour même de leur visite sur votre site.
    - **Recherche en amont hebdomadaire à une fréquence hebdomadaire** : les données sont relues une fois par semaine avec un intervalle de recherche en amont hebdomadaire (voir [options](#options)). Cette option présente un avantage qui permet aux sessions non authentifiées de disposer d’un temps d’authentification beaucoup moins stricte. Toutefois, les données désassemblées datant de moins d’une semaine ne sont pas retraitées avant la prochaine relecture hebdomadaire.
    - **Recherche en amont bihebdomadaire sur une fréquence hebdomadaire** : les données sont relues une fois par semaine avec un intervalle de recherche en amont bihebdomadaire (voir [options](#options)). Cette option présente un avantage qui permet aux sessions non authentifiées de disposer d’un temps d’authentification beaucoup moins stricte. Toutefois, les données désassemblées datant de moins de deux semaines ne sont pas retraitées avant la prochaine relecture hebdomadaire.
    - **Recherche en amont mensuelle à une fréquence hebdomadaire** : les données sont relues chaque semaine avec un intervalle de recherche en amont mensuel (voir [options](#options)). Cette option présente un avantage qui permet aux sessions non authentifiées de disposer d’un temps d’authentification beaucoup moins stricte. Toutefois, les données désassemblées datant de moins d’un mois ne sont pas retraitées avant la prochaine relecture hebdomadaire.
@@ -112,14 +112,14 @@ L’assemblage effectue au moins deux passages aux données d’un jeu de donné
   >Le processus de désassemblage, dans le cadre des demandes d’accès à des informations personnelles, change début 2025. Le processus de désassemblage actuel réassemble les événements à l’aide de la dernière version des identités connues. Cette réaffectation d&#39;événements à une autre identité pourrait avoir des conséquences juridiques indésirables. Pour résoudre ces problèmes, à partir de 2025, le nouveau processus d’assemblage met à jour les événements qui font l’objet de la demande d’accès à des informations personnelles avec l’identifiant persistant.
   > 
 
-Les données au-delà de l’intervalle de recherche en amont ne sont pas relues. Un visiteur doit s’authentifier dans un intervalle de recherche en amont donné pour qu’une visite non authentifiée et une visite authentifiée soient identifiées ensemble. Une fois qu’un appareil est reconnu, il est assemblé en direct à partir de ce moment.
+Les données au-delà de l’intervalle de recherche en amont ne sont pas relues. Un profil doit s’authentifier dans un intervalle de recherche en amont donné pour qu’une visite non authentifiée et une visite authentifiée soient identifiées ensemble. Une fois qu’un appareil est reconnu, il est assemblé en direct à partir de ce moment.
 
 Tenez compte des deux graphiques d’identités suivants pour la `246` et la `3579` des identifiants persistants, de la manière dont ces graphiques d’identités sont mis à jour au fil du temps et de la manière dont ces mises à jour affectent les étapes du groupement basé sur les graphiques.
 
 ![Graphique d’identités 246](assets/identity-graph-246.svg)
 ![Graphique d’identités 3579](assets/identity-graph-3579.svg)
 
-Vous pouvez afficher un graphique d’identités au fil du temps pour un profil spécifique à l’aide de la [visionneuse de graphiques d’identités](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/features/identity-graph-viewer). Consultez également la section [Logique de liaison du service d’identités](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/features/identity-linking-logic) pour mieux comprendre la logique utilisée lors de la liaison d’identités.
+Vous pouvez afficher un graphique d’identités au fil du temps pour un profil spécifique à l’aide de la [visionneuse de graphiques d’identités](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-viewer). Consultez également la section [Logique de liaison du service d’identités](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-linking-logic) pour mieux comprendre la logique utilisée lors de la liaison d’identités.
 
 ### Étape 1 : Assemblage dynamique
 
@@ -207,9 +207,9 @@ Le tableau suivant représente les mêmes données que ci-dessus, mais montre l�
 
 Les conditions préalables suivantes s’appliquent spécifiquement au groupement basé sur les graphiques :
 
-- Le jeu de données d’événement dans Adobe Experience Platform auquel vous souhaitez appliquer le groupement doit comporter une colonne qui identifie un visiteur sur chaque ligne, à savoir l’**identifiant persistant**. Il peut s’agir, par exemple, d’un identifiant visiteur généré par une bibliothèque Adobe Analytics AppMeasurement ou d’un ECID généré par Experience Platform Identity Service.
+- Le jeu de données d’événement dans Adobe Experience Platform auquel vous souhaitez appliquer le groupement doit comporter une colonne qui identifie un profil sur chaque ligne, l’**identifiant persistant**. Il peut s’agir, par exemple, d’un identifiant visiteur généré par une bibliothèque Adobe Analytics AppMeasurement ou d’un ECID généré par Experience Platform Identity Service.
 - L’identifiant persistant doit également être [défini en tant qu’identité](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/ui/fields/identity) dans le schéma .
-- Le graphique d’identités d’Experience Platform Identity Service doit comporter un espace de noms (par exemple `Email` ou `Phone`) que vous souhaitez utiliser lors du groupement pour résoudre l’**ID transitoire**. Voir [Experience Platform Identity Service](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/home) pour plus d’informations.
+- Le graphique d’identités d’Experience Platform Identity Service doit comporter un espace de noms (par exemple `Email` ou `Phone`) que vous souhaitez utiliser lors du groupement pour résoudre l’**ID de personne**. Voir [Experience Platform Identity Service](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/home) pour plus d’informations.
 
 >[!NOTE]
 >
@@ -220,10 +220,10 @@ Les conditions préalables suivantes s’appliquent spécifiquement au groupemen
 
 Les restrictions suivantes s’appliquent spécifiquement au groupement basé sur les graphiques :
 
-- Les dates et heures ne sont pas prises en compte lors de l’interrogation de l’ID temporaire à l’aide de l’espace de noms spécifié. Il est donc possible qu’un identifiant persistant soit associé à un identifiant temporaire d’un enregistrement qui a un horodatage antérieur.
+- Les dates et heures ne sont pas prises en compte lors de l’interrogation de l’ID de personne avec l’espace de noms spécifié. Il est donc possible qu’un ID persistant soit associé à un ID de personne provenant d’un enregistrement qui a un horodatage antérieur.
 - Dans les scénarios d’appareils partagés, où l’espace de noms du graphique contient plusieurs identités, la première identité lexicographique est utilisée. Si les limites et priorités d’espace de noms sont configurées dans le cadre de la publication des règles de liaison de graphiques, l’identité du dernier utilisateur authentifié est utilisée. Voir [Appareils partagés](/help/use-cases/stitching/shared-devices.md) pour plus d’informations.
 - Il existe une limite stricte de trois mois de renvoi d’identités dans le graphique d’identités. Utilisez le remplissage d’identités si vous n’utilisez pas une application Experience Platform, telle que Real-time Customer Data Platform, pour renseigner le graphique d’identité.
-- Les mécanismes de sécurisation [Identity Service](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/guardrails) s’appliquent. Voir, par exemple, les [limites statiques](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/guardrails#static-limits) suivantes :
+- Les mécanismes de sécurisation [Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails) s’appliquent. Voir, par exemple, les [limites statiques](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails#static-limits) suivantes :
    - Nombre maximal d’identités dans un graphique : 50.
    - Nombre maximal de liens vers une identité pour une ingestion par lots unique : 50.
    - Nombre maximal d’identités dans un enregistrement XDM pour l’ingestion de graphiques : 20.

@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: b9b73926-6502-4a48-ba73-c784f80950d3
-source-git-commit: d9a65774fa5ab8c6b7fdd018f5d345dc7eb9e9de
+source-git-commit: 359fe2a718ccef816377083aceb2652b4a905072
 workflow-type: tm+mt
 source-wordcount: '1181'
 ht-degree: 0%
@@ -44,7 +44,7 @@ Pour le plan de mesure de validation de l’assemblage, vous devez vous assurer 
 
 En outre, vous devez ajouter deux mesures d’assemblage basées sur la présence de valeurs dans une dimension.
 
-1. Utilisez le champ contenant l’ID de personne du jeu de données groupé pour configurer une mesure qui définit si un ID de personne est défini. Ajoutez cet ID de personne même si vous utilisez un groupement basé sur des graphiques, car l’ID de personne permet d’établir une ligne de base. Si l’ID de personne n’est pas contenu dans le jeu de données, votre ligne de base est de 0 %.
+1. Utilisez le champ contenant l’ID de personne du jeu de données groupé pour configurer une mesure qui définit si un ID de personne est défini. Ajoutez cet ID de personne même si vous utilisez un groupement basé sur des graphiques, car l’ID de personne permet d’établir une référence. Si l’ID de personne n’est pas contenu dans le jeu de données, votre ligne de base est de 0 %.
 
    Dans l’exemple ci-dessous, `personalEmail.address` sert d’identité et est utilisé pour créer la mesure **[!UICONTROL _Email set]** .
    ![Mesure définie pour les e-mails](assets/emailset-metric.png)
@@ -62,14 +62,14 @@ Une fois ces deux dimensions ajoutées à la vue de données, utilisez [tableaux
 
 Dans le tableau **[!UICONTROL Dimension d’espace de noms groupé**], vous voyez généralement deux lignes pour chaque jeu de données. Une ligne qui représente le moment où le processus de groupement a dû utiliser la méthode de secours (ECID). L’autre ligne affiche les événements associés à l’espace de noms d’identité souhaité (e-mail).
 
-Pour le tableau **[!UICONTROL dimension d’ID groupé**], vous voyez les valeurs brutes qui proviennent des événements. Dans ce tableau, vous constatez que les valeurs oscillent entre l’ID persistant et l’ID de personne souhaité.
+Pour le tableau **[!UICONTROL dimension d’ID groupé**], vous voyez les valeurs brutes qui proviennent des événements. Dans ce tableau, vous constatez que les valeurs oscillent entre l’identifiant persistant et l’identifiant de personne souhaité.
 
 ![Vérifier les dimensions assemblées](assets/check-data-on-stitching.png)
 
 
 ## Rapports centrés sur l’appareil ou sur la personne
 
-Lorsque vous créez une connexion, vous devez définir le champ ou l’identité utilisé pour l’ID de personne. Par exemple, sur un jeu de données web, si vous choisissez un identifiant d’appareil en tant qu’identifiant de personne, vous créez des rapports centrés sur l’appareil et vous perdez la possibilité de joindre ces données à d’autres canaux hors ligne. Si vous sélectionnez un champ ou une identité cross-canal, par exemple un e-mail, vous perdez tous les événements non authentifiés. Pour comprendre cet impact, vous devez déterminer quelle partie du trafic n’est pas authentifiée et quelle partie du trafic est authentifiée.
+Lorsque vous créez une connexion, vous devez définir le champ ou l’identité utilisé pour l’ID de personne. Par exemple, sur un jeu de données web, si vous choisissez un identifiant d’appareil comme identifiant de personne, vous créez des rapports centrés sur l’appareil et vous perdez la possibilité de joindre ces données à d’autres canaux hors ligne. Si vous sélectionnez un champ ou une identité cross-canal, par exemple un e-mail, vous perdez tous les événements non authentifiés. Pour comprendre cet impact, vous devez déterminer quelle partie du trafic n’est pas authentifiée et quelle partie du trafic est authentifiée.
 
 1. Créez une mesure calculée **[!UICONTROL Événements non authentifiés sur le total]**. Définissez la règle dans le créateur de règles comme suit :
    ![Total des événements non authentifiés](assets/calcmetric-unauthenticatedeventsovertotal.png)

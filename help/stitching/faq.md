@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
 role: Admin
-source-git-commit: 4cea79a6ba26a2e4f06bfc9c60fdfc03341a7d60
+source-git-commit: 359fe2a718ccef816377083aceb2652b4a905072
 workflow-type: tm+mt
-source-wordcount: '2084'
-ht-degree: 25%
+source-wordcount: '2069'
+ht-degree: 23%
 
 ---
 
@@ -23,8 +23,8 @@ Voici quelques questions fréquentes sur le groupement :
 Vous pouvez utiliser une visualisation de flux avec la dimension Identifiant du jeu de données.
 
 1. Connectez-vous à [Customer Journey Analytics](https://analytics.adobe.com) et créez un projet Workspace vierge.
-2. Sélectionnez l’onglet **[!UICONTROL ** Visualisations **]** à gauche, puis faites glisser une visualisation **[!UICONTROL **&#x200B; Flux &#x200B;**]** vers la zone de travail à droite.
-3. Sélectionnez l’onglet **[!UICONTROL ** Composants **]** à gauche, puis faites glisser la dimension **[!UICONTROL ** Identifiant du jeu de données **]** vers l’emplacement central intitulé **[!UICONTROL **&#x200B; Dimension ou Élément &#x200B;**]**.
+2. Sélectionnez l’onglet **[!UICONTROL ** Visualisations **]** à gauche, puis faites glisser une visualisation **[!UICONTROL ** Flux **]** vers la zone de travail à droite.
+3. Sélectionnez l’onglet **[!UICONTROL ** Composants **]** à gauche, puis faites glisser la dimension **[!UICONTROL ** Identifiant du jeu de données **]** vers l’emplacement central intitulé **[!UICONTROL ** Dimension ou Élément **]**.
 4. Ce rapport de flux est interactif. Pour développer les flux sur les pages suivantes ou précédentes, sélectionnez l’une des valeurs. Utilisez le menu contextuel pour développer ou réduire des colonnes. Il est également possible d’utiliser différentes dimensions dans le même rapport de flux.
 
 Si vous souhaitez renommer des éléments de dimension Identifiant du jeu de données, vous pouvez utiliser un jeu de données de recherche.
@@ -33,7 +33,7 @@ Si vous souhaitez renommer des éléments de dimension Identifiant du jeu de don
 
 ## Replay
 
-+++ Jusqu’à combien de temps en arrière l’assemblage des visiteurs rejoue-t-il ?
++++ Depuis combien de temps l’assemblage des profils de relecture remonte-t-il ?
 
 L’intervalle de recherche en amont pour la recomposition des données dépend de la fréquence de relecture des données souhaitée. Par exemple, si vous configurez le groupement pour lire les données une fois par semaine, l’intervalle de recherche en amont pour la recomposition des données est de sept jours. Si vous configurez le groupement pour la relecture quotidienne des données, l’intervalle de recherche en amont pour la recomposition des données est d’un jour.
 
@@ -45,7 +45,7 @@ L’intervalle de recherche en amont pour la recomposition des données dépend 
 
 Dans certains cas, il est possible que plusieurs personnes se connectent à partir du même appareil. Par exemple, un appareil partagé à la maison, des ordinateurs partagés dans une bibliothèque ou un kiosque dans un magasin de vente au détail.
 
-L’identifiant transitoire a priorité sur l’identifiant persistant, de sorte que les appareils partagés sont considérés comme des personnes distinctes (même s’ils proviennent du même appareil).
+L’ID de personne remplace l’ID persistant, de sorte que les appareils partagés sont considérés comme des personnes distinctes (même s’ils proviennent du même appareil).
 
 Voir le cas d’utilisation [Appareils partagés](/help/use-cases/stitching/shared-devices.md) pour plus d’informations.
 
@@ -57,7 +57,7 @@ Voir le cas d’utilisation [Appareils partagés](/help/use-cases/stitching/shar
 
 Dans certains cas, un utilisateur individuel peut être associé à un grand nombre d’identifiants persistants. Par exemple, un individu efface fréquemment les cookies du navigateur ou utilise le mode privé/incognito du navigateur.
 
-Pour le groupement basé sur les champs, le nombre d’identifiants persistants n’est pas pertinent en faveur de l’identifiant transitoire. Un seul utilisateur peut appartenir à un nombre illimité d’appareils sans que cela n’ait d’incidence sur la capacité de Customer Journey Analytics à regrouper les appareils.
+Pour le groupement basé sur les champs, le nombre d’ID persistants n’est pas pertinent en faveur de l’ID de personne. Un seul utilisateur peut appartenir à un nombre illimité d’appareils sans que cela n’ait d’incidence sur la capacité de Customer Journey Analytics à regrouper les appareils.
 
 Pour le groupement basé sur les graphiques, une seule personne peut avoir de nombreux identifiants persistants dans le graphique d’identité. Le groupement basé sur les graphiques utilise l’identifiant persistant en fonction de l’espace de noms spécifié. S’il existe d’autres identifiants persistants pour le même espace de noms, le premier identifiant persistant lexicographique est utilisé.
 
@@ -77,7 +77,7 @@ L’assemblage en direct est disponible environ une semaine après l’activatio
 
 L’[analyse entre appareils](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=fr) est une fonctionnalité spécifique à Adobe Analytics traditionnel qui vous permet de comprendre le comportement des personnes sur plusieurs appareils. Elle offre deux workflows pour lier les données de l’appareil : l’assemblage basé sur les champs et le graphique d’appareil.
 
-L’analyse cross-canal est un cas d’utilisation spécifique à Customer Journey Analytics qui vous permet de comprendre le comportement des personnes à la fois sur plusieurs appareils et plusieurs canaux. Il regroupe l’ID de personne d’un jeu de données, ce qui permet de combiner facilement ce jeu de données avec d’autres. Cette fonctionnalité s’exécute de la même manière que le groupement basé sur les champs d’analyses entre appareils. Toutefois, son implémentation est différente en raison de l’architecture des données qui diffère entre Analytics classique et Customer Journey Analytics. Voir les sections [&#x200B; Assemblage &#x200B;](overview.md) et le cas d’utilisation [&#x200B; Analyse cross-canal &#x200B;](../use-cases/cross-channel/cross-channel.md) pour plus d’informations.
+L’analyse cross-canal est un cas d’utilisation spécifique à Customer Journey Analytics qui vous permet de comprendre le comportement des personnes à la fois sur plusieurs appareils et plusieurs canaux. Il regroupe l’ID de personne d’un jeu de données, ce qui permet de combiner facilement ce jeu de données avec d’autres. Cette fonctionnalité s’exécute de la même manière que le groupement basé sur les champs d’analyses entre appareils. Toutefois, son implémentation est différente en raison de l’architecture des données qui diffère entre Analytics classique et Customer Journey Analytics. Voir les sections [ Assemblage ](overview.md) et le cas d’utilisation [ Analyse cross-canal ](../use-cases/cross-channel/cross-channel.md) pour plus d’informations.
 
 +++
 
@@ -94,20 +94,20 @@ Adobe gère les demandes d’accès à des informations personnelles conforméme
 
 À titre d’illustration, imaginez les données suivantes pour les identités, les événements avant et après l’assemblage.
 
-| Mappage d’identités | Id | timestamp | identifiant persistant | espace de noms persistant | id transitoire | espace de noms transitoire |
+| Mappage d’identités | Id | timestamp | identifiant persistant | espace de noms persistant | E/S de la personne | espace de noms de la personne |
 |---|---|---|---|---|---|---|
 |  | 1 | ts1 | 123 | ecid | Bob | CustId |
 |  | 2 | ts2 | 123 | ecid | Alex | CustId |
 
 
-| Jeu de données d’événements | Id | timestamp | identifiant persistant | espace de noms persistant | id transitoire | espace de noms transitoire |
+| Jeu de données d’événements | Id | timestamp | identifiant persistant | espace de noms persistant | ID de personne | espace de noms de la personne |
 |---|---|---|---|---|---|---|
 | | 1 | ts0 | 123 | ecid | | |
 | | 2 | ts1 | 123 | ecid | Bob | CustId |
 | | 3 | ts2 | 123 | ecid | Alex | CustId |
 
 
-| Jeu de données groupé | Id | timestamp | identifiant persistant | espace de noms persistant | id transitoire | espace de noms transitoire | ID regroupé | Espace de noms groupé |
+| Jeu de données groupé | Id | timestamp | identifiant persistant | espace de noms persistant | ID de personne | espace de noms de la personne | ID assemblé | espace de noms assemblé |
 |---|---|---|---|---|---|---|---|---|
 | | 1 | ts0 | 123 | ecid | | | Bob | CustId |
 | | 2 | ts1 | 123 | ecid | Bob | CustId | Bob | CustId |
@@ -118,20 +118,20 @@ Adobe gère les demandes d’accès à des informations personnelles conforméme
 
 Lorsqu’une demande d’accès à des informations personnelles est reçue pour un client avec CustID Bob, les lignes comportant des entrées barrées sont supprimées. D’autres événements sont regroupés à l’aide du mappage d’identités. Par exemple, le premier identifiant assemblé dans le jeu de données assemblé est mis à jour sur **Alex**.
 
-| Mappage d’identités | Id | timestamp | identifiant persistant | espace de noms persistant | id transitoire | espace de noms transitoire |
+| Mappage d’identités | Id | timestamp | identifiant persistant | espace de noms persistant | ID de personne | espace de noms de la personne |
 |:---:|---|---|---|---|---|---|
 | ![DeleteOutline](/help/assets/icons/DeleteOutline.svg) | ~~1~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ |
 |  | 2 | ts2 | 123 | ecid | Alex | CustId |
 
 
-| Jeu de données d’événements | Id | timestamp | identifiant persistant | espace de noms persistant | id transitoire | espace de noms transitoire |
+| Jeu de données d’événements | Id | timestamp | identifiant persistant | espace de noms persistant | ID de personne | espace de noms de la personne |
 |:---:|---|---|---|---|---|---|
 | | 1 | ts0 | 123 | ecid | | |
 | ![DeleteOutline](/help/assets/icons/DeleteOutline.svg) | ~~2~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ |
 | | 3 | ts2 | 123 | ecid | Alex | CustId |
 
 
-| Jeu de données groupé | Id | timestamp | identifiant persistant | espace de noms persistant | id transitoire | espace de noms transitoire | ID regroupé | Espace de noms groupé |
+| Jeu de données groupé | Id | timestamp | identifiant persistant | espace de noms persistant | ID de personne | espace de noms de la personne | ID assemblé | espace de noms assemblé |
 |:---:|---|---|---|---|---|---|---|---|
 | | 1 | ts0 | 123 | ecid | | | **Alex** | CustId |
 | ![DeleteOutline](/help/assets/icons/DeleteOutline.svg) | ~~2~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ | ~~Bob~~ | ~~CustId~~ |
@@ -142,20 +142,20 @@ Lorsqu’une demande d’accès à des informations personnelles est reçue pour
 
 Lorsqu’une demande d’accès à des informations personnelles est reçue pour un client avec CustID Bob, les lignes comportant des entrées barrées sont supprimées. D’autres événements sont regroupés à l’aide de l’identifiant persistant. Par exemple, le premier identifiant assemblé dans le jeu de données assemblé est mis à jour à **123**.
 
-| Mappage d’identités | Id | timestamp | identifiant persistant | espace de noms persistant | id transitoire | espace de noms transitoire |
+| Mappage d’identités | Id | timestamp | identifiant persistant | espace de noms persistant | ID de personne | espace de noms de la personne |
 |:---:|---|---|---|---|---|---|
 | ![DeleteOutline](/help/assets/icons/DeleteOutline.svg) | ~~1~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ |
 |  | 2 | ts2 | 123 | ecid | Alex | CustId |
 
 
-| Jeu de données d’événements | Id | timestamp | identifiant persistant | espace de noms persistant | id transitoire | espace de noms transitoire |
+| Jeu de données d’événements | Id | timestamp | identifiant persistant | espace de noms persistant | ID de personne | espace de noms de la personne |
 |:---:|---|---|---|---|---|---|
 | | 1 | ts0 | 123 | ecid | | |
 | ![DeleteOutline](/help/assets/icons/DeleteOutline.svg) | ~~2~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ |
 | | 3 | ts2 | 123 | ecid | Alex | CustId |
 
 
-| Jeu de données groupé | Id | timestamp | identifiant persistant | espace de noms persistant | id transitoire | espace de noms transitoire | ID regroupé | Espace de noms groupé |
+| Jeu de données groupé | Id | timestamp | identifiant persistant | espace de noms persistant | ID de personne | espace de noms de la personne | ID assemblé | espace de noms assemblé |
 |:---:|---|---|---|---|---|---|---|---|
 | | 1 | ts0 | 123 | ecid | | | **123** | ecid |
 | ![DeleteOutline](/help/assets/icons/DeleteOutline.svg) | ~~2~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ | ~~Bob~~ | ~~CustId~~ |
@@ -165,23 +165,23 @@ Lorsqu’une demande d’accès à des informations personnelles est reçue pour
 
 ## Valeurs d’ID persistantes vides
 
-+++ Que se passe-t-il si le champ de lʼidentifiant persistant dʼun ou de plusieurs événements est vide ?
++++ Que se passe-t-il si le champ d’identifiant persistant dans un ou plusieurs événements est vide ?
 
-Si le champ ID persistant est vide sur un événement d’un jeu de données assemblé , l’ID assemblé de cet événement est déterminé de l’une des deux façons suivantes :
+Si le champ d’identifiant persistant est vide sur un événement d’un jeu de données assemblé , l’identifiant assemblé pour cet événement est déterminé de l’une des deux façons suivantes :
 
-* Si le champ ID transitoire n’est pas vide, Customer Journey Analytics utilise la valeur de l’ID transitoire comme ID d’assemblage.
-* Si le champ ID temporaire est vide, Customer Journey Analytics laisse également vide l’ID groupé. Dans ce cas, l’ID persistant, l’ID temporaire et l’ID groupé sont tous vides pour l’événement. Ces types d’événements sont ignorés de toute connexion Customer Journey Analytics utilisant le jeu de données assemblé là où l’ID assemblé a été choisi comme ID de personne.
+* Si le champ ID transitoire n’est pas vide, Customer Journey Analytics utilise la valeur de l’ID transitoire comme ID assemblé.
+* Si le champ ID temporaire est vide, Customer Journey Analytics laisse également vide l’ID assemblé. Dans ce cas, l’identifiant persistant, l’identifiant temporaire et l’identifiant assemblé sont tous vides pour l’événement. Ces types d’événements sont ignorés de toute connexion Customer Journey Analytics utilisant le jeu de données assemblé là où l’ID assemblé a été choisi comme ID de personne.
 
 +++
 
 
-## Valeurs d’ID transitoires non définies
+## Valeurs d’ID de personne non définies
 
-+++ Que se passe-t-il si le champ ID transitoire d’un ou plusieurs événements comporte des valeurs d’espace réservé, telles que `Undefined` ?
++++ Que se passe-t-il si le champ ID de personne dans un ou plusieurs événements comporte des valeurs d’espace réservé, telles que `Undefined` ?
 
 Attention à la « réduction d’une personne », qui se produit lorsque le groupement est appliqué aux données qui utilisent des valeurs d’espace réservé pour les ID temporaires. Dans l’exemple de tableau ci-dessous, les ID de personne non définis provenant d’un jeu de données provenant d’un système CRM sont renseignés avec la valeur « Non défini », ce qui entraîne une représentation incorrecte des personnes.
 
-| Événement | Date et heure | ID persistant (ID de cookie) | ID temporaire (ID de connexion) | ID groupé (après relecture) |
+| Événement | Date et heure | ID persistant (ID de cookie) | ID transitoire | ID groupé (après relecture) |
 |---|---|---|---|---|
 | 1 | 12/05/2023 12:01 | 123 | - | **Cory** |
 | 2 | 12/05/2023 12:02 | 123 | Cory | **Cory** |
@@ -227,10 +227,10 @@ Oui, Customer Journey Analytics peut utiliser les champs de carte des identités
 
 Les données n’ont pas besoin d’être réingérées dans Experience Platform, mais elles devront être reconfigurées dans Customer Journey Analytics. Procédez comme suit :
 
-1. Configurez le nouveau jeu de données groupé basé sur les graphiques à l’aide du groupement basé sur les graphiques.
+1. Configurez le nouveau jeu de données groupé basé sur des graphiques à l’aide du groupement basé sur les graphiques.
 1. Créez une nouvelle connexion temporaire avec une très petite fenêtre temporelle de données.
 1. Configurez le nouveau jeu de données basé sur un graphique dans le cadre de cette connexion temporaire.
-1. Vérifiez avec cette nouvelle connexion temporaire si le groupement basé sur les graphiques fonctionne correctement.
+1. Vérifiez avec cette nouvelle connexion temporaire si l’assemblage basé sur les graphiques fonctionne correctement.
 1. Si le groupement basé sur les graphiques fonctionne comme prévu, demandez un renvoi supplémentaire pour le jeu de données basé sur les graphiques, puis remplacez le jeu de données basé sur les champs dans votre connexion d’origine par le nouveau jeu de données basé sur les graphiques.
 1. Supprimez la connexion temporaire.
 
@@ -275,6 +275,6 @@ curl -X POST \
 
 Toute utilisation de la balise `unifiedProfile` dans la requête, tant que vous ne disposez pas d’une licence pour le profil de données client en temps réel, renvoie une erreur.
 
-Voir [Créer un jeu de données activé pour Profil et Identité](https://experienceleague.adobe.com/fr/docs/experience-platform/catalog/datasets/enable-for-profile#create-a-dataset-enabled-for-profile-and-identity) pour plus d’informations.
+Voir [Créer un jeu de données activé pour Profil et Identité](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/enable-for-profile#create-a-dataset-enabled-for-profile-and-identity) pour plus d’informations.
 
 +++ 
