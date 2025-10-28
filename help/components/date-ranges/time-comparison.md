@@ -4,22 +4,28 @@ title: Comparaison des dates
 feature: Calendar
 exl-id: 08113536-658f-486b-ac56-6c531240c3c2
 role: User
-source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
+source-git-commit: 5a9cb206076755d5b34a8ec9108ca88a9468bfe3
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 100%
+source-wordcount: '757'
+ht-degree: 86%
 
 ---
 
 # Comparaison des dates
 
-Dans Analysis Workspace, appliquez une comparaison de dates commune à partir de n’importe quelle colonne contenant une période, par exemple : année par année, trimestre par trimestre, mois par mois, etc.
+Dans Analysis Workspace, la comparaison de dates vous permet de prendre n’importe quelle colonne contenant une période et de créer une comparaison de dates commune, par exemple : année par année, trimestre par trimestre, mois par mois, etc.
 
 ## Comparer des périodes
 
 Une analyse ne peut pas avoir lieu sans contexte. Il arrive souvent que ce contexte découle d’une période précédente. Par exemple, la question *Dans quelle mesure votre situation est-elle meilleure ou pire qu’à la même époque l’année dernière ?* est essentielle pour bien comprendre vos activités. La comparaison des dates inclut automatiquement une colonne *différence*, qui présente le pourcentage de changement par rapport à une période donnée.
 
 1. Créez un [tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md), avec les dimensions et mesures à comparer sur une certaine période.
+1. Définissez la période sur le panneau ou la colonne pour déterminer la période de comparaison, et s’il s’agit d’une comparaison de temps fixe ou variable.
+
+   Pour créer une comparaison des heures flottante, définissez la période du panneau ou de la colonne sur une période flottante (par exemple, **[!UICONTROL 7 derniers jours]**, **[!UICONTROL 30 derniers jours]**, etc.).
+
+   Pour créer une comparaison d’heures fixe, définissez la période du panneau ou de la colonne sur une période personnalisée.
+
 1. Ouvrez le menu contextuel d’une ligne de tableau et sélectionnez **[!UICONTROL Comparer des périodes]**.
 
    ![Ligne de tableau avec l’option Comparer des périodes sélectionnée](assets/compare-time.png)
