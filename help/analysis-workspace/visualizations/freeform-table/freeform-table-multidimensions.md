@@ -5,52 +5,24 @@ feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: bff352181392c19b6c4fe70893a016179fb77f06
+source-git-commit: ec07eb5dced013eac3d1088f2f49dcea23894395
 workflow-type: tm+mt
-source-wordcount: '969'
+source-wordcount: '1028'
 ht-degree: 2%
 
 ---
 
-# Inclure plusieurs dimensions dans un tableau à structure libre
+# Inclure plusieurs colonnes de dimensions dans un tableau à structure libre
 
 {{release-limited-testing}}
 
 Vous pouvez inclure jusqu’à 5 colonnes de dimension dans un tableau à structure libre, ce qui vous permet d’afficher plusieurs éléments de dimension côte à côte. Chaque ligne d’éléments de dimension agit comme un seul élément concaténé.
 
-Vous pouvez trier les colonnes des dimensions (ainsi que les colonnes des mesures) pour une analyse plus complète et personnalisée.
+Vous pouvez appliquer des filtres, un tri, des répartitions, etc. aux tableaux à structure libre à plusieurs colonnes de dimensions afin de créer une analyse plus complète et personnalisée.
 
-## Plusieurs colonnes et répartitions de dimension
+## Ajouter plusieurs colonnes de dimension
 
-Analysis Workspace propose les méthodes suivantes pour ajouter plusieurs dimensions dans un tableau à structure libre :
-
-* Inclure plusieurs colonnes de dimension (comme décrit dans cet article)
-
-* [Ajouter des répartitions](/help/components/dimensions/t-breakdown-fa.md)
-
-Ces deux méthodes vous permettent d’analyser les dimensions par rapport à d’autres dimensions. Cependant, il existe des différences importantes, et les deux méthodes peuvent être utilisées dans le même tableau pour une analyse encore plus approfondie.
-
-Plusieurs colonnes de dimension vous permettent d’effectuer les opérations suivantes :
-
-* Mettre en corrélation des lignes de données sur plusieurs dimensions et mesures.
-
-* Afficher les données uniquement lorsqu’elles s’appliquent à chaque colonne de dimension du tableau. Pour ce faire, utilisez le filtre de colonne pour désélectionner le paramètre **[!UICONTROL Inclure « Aucune valeur »]** sur chaque colonne de dimension.
-
-  Pour plus d’informations, voir [Filtrer et trier des tableaux](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
-
-* Triez les données en fonction de plusieurs colonnes de dimensions et de mesures.
-
-  Pour plus d’informations, voir [Filtrer et trier des tableaux](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
-
-Les répartitions vous permettent de :
-
-* Afficher les éléments de dimension pour un seul élément
-
-* Afficher les principaux éléments de dimension pour un seul
-
-## Ajouter des colonnes de dimension
-
-Vous pouvez ajouter des colonnes de dimension une par une ou en bloc.
+Vous pouvez ajouter plusieurs colonnes de dimension une par une ou en bloc.
 
 1. Dans Analysis Workspace, créez un tableau à structure libre.
 
@@ -70,13 +42,15 @@ Vous pouvez ajouter des colonnes de dimension une par une ou en bloc.
 
 ## Filtrer des tableaux
 
+Vous pouvez appliquer des filtres à une ou plusieurs colonnes de dimension dans un tableau à structure libre.
+
 Pour plus d’informations sur le filtrage des tableaux, voir [Filtrer les tableaux](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md#filter-tables) dans [Filtrer et trier les tableaux](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
 
 ## Trier des tableaux {#sort-tables}
 
-<!--At GA, move this section into the "Filter and sort tables" article and replace the current "Sort tables" section. Change the "Filter tables" section above to "Filter and sort tables" and link to the other article. Also add row to Guardrails article. -->
+<!--At GA, move this section into the "Filter and sort tables" article and replace the current "Sort tables" section. Change the "Filter tables" section above to "Filter and sort tables" and link to the other article. Also add row to Guardrails -->
 
-Vous pouvez trier les données d’un tableau à structure libre selon n’importe quelle colonne d’Analysis Workspace qui est une dimension ou une mesure.
+Vous pouvez trier les données d’un tableau à structure libre selon n’importe quelle colonne d’Analysis Workspace, qu’il s’agisse de dimensions ou de mesures.
 
 Par défaut, les dimensions sont triées par ordre croissant et les mesures sont triées par ordre décroissant.
 
@@ -108,7 +82,7 @@ Pour trier les données des tableaux en fonction de plusieurs colonnes :
 
 1. Sélectionnez **[!UICONTROL Tri avancé]**.
 
-   ![&#x200B; Boîte de dialogue Tri avancé &#x200B;](assets/sort-advanced-dialog.png)
+   ![ Boîte de dialogue Tri avancé ](assets/sort-advanced-dialog.png)
 
 1. Dans la boîte de dialogue Tri avancé , effectuez l’une des opérations suivantes :
 
@@ -134,7 +108,7 @@ L’icône de tri reste visible lorsque le tri est appliqué à une colonne. Une
 
 Lorsque vous triez des données pour plusieurs colonnes, les données sont triées en fonction de la priorité que vous attribuez à chaque colonne. La numérotation de priorité s’affiche en regard de l’icône de tri ![icône de priorité de tri](assets/sort-priority-icon.png).
 
-La colonne avec la priorité principale détermine l’ordre principal, la colonne avec la priorité secondaire détermine l’ordre lorsque des lignes ont la même valeur dans la colonne principale, la colonne avec la priorité tertiaire détermine l’ordre lorsque des lignes ont la même valeur dans les colonnes principale et secondaire, etc.
+La colonne ayant la priorité principale détermine l&#39;ordre principal ; la colonne ayant la priorité secondaire détermine l&#39;ordre dans lequel les lignes ont la même valeur dans la colonne principale ; la colonne ayant la priorité tertiaire détermine l&#39;ordre dans lequel les lignes ont la même valeur dans les colonnes principale et secondaire ; et ainsi de suite.
 
 Prenons l’exemple d’un tableau avec les colonnes suivantes :
 
@@ -156,9 +130,37 @@ En attribuant une priorité de tri à chaque colonne, vous pouvez contrôler exa
 
 ![exemple multi-tri](assets/dimensions-multiple-sort.png)
 
-## Ajouter des répartitions à un tableau avec plusieurs colonnes de dimension
+## Plusieurs colonnes et répartitions de dimension
 
-Lorsque vous ajoutez une répartition à un tableau qui comporte plusieurs colonnes de dimensions, la répartition s’étend sur tous les éléments de dimension de la ligne où elle est ajoutée.
+Analysis Workspace propose les méthodes suivantes pour ajouter plusieurs dimensions dans un tableau à structure libre :
+
+* Inclure plusieurs colonnes de dimension (comme décrit dans cet article)
+
+* [Ajouter des répartitions](/help/components/dimensions/t-breakdown-fa.md)
+
+Ces deux méthodes vous permettent d’analyser les dimensions par rapport à d’autres dimensions. Cependant, il existe des différences importantes, et les deux méthodes peuvent être utilisées dans le même tableau pour une analyse encore plus approfondie.
+
+### Différences entre les colonnes et les répartitions de dimension
+
+Plusieurs colonnes de dimension vous permettent d’effectuer les opérations suivantes :
+
+* Concaténer des éléments de dimension dans des lignes de données distinctes sur plusieurs dimensions.
+
+* Incluez les éléments de dimension dans des lignes concaténées uniquement lorsque les éléments de dimension s’appliquent à chaque colonne de dimension du tableau. Pour ce faire, utilisez le filtre de colonne pour désélectionner le paramètre **[!UICONTROL Inclure « Aucune valeur »]** sur chaque colonne de dimension.
+
+  Pour plus d’informations, voir [Tri des tableaux sur plusieurs colonnes (tri avancé)](#sort-tables-by-multiple-columns-advanced-sorting).
+
+* Triez les données en fonction de plusieurs colonnes de dimensions et de mesures pour afficher davantage de données personnalisées.
+
+  Pour plus d’informations, voir [Tri des tableaux en fonction de plusieurs colonnes (tri avancé)](#sort-tables-by-multiple-columns-advanced-sorting)
+
+Les répartitions vous permettent de :
+
+* Ventilez un élément de dimension dans le tableau à structure libre par une dimension secondaire. Vous pouvez afficher jusqu’à 200 éléments de dimension pour la dimension secondaire.
+
+### Ajouter des répartitions à un tableau avec plusieurs colonnes de dimension
+
+Lorsque vous ajoutez une répartition à un tableau qui comporte plusieurs colonnes de dimension, la répartition s’étend sur tous les éléments de dimension de la ligne où vous l’ajoutez.
 
 Vous pouvez ajouter une répartition comme décrit dans la section [Répartir les dimensions](/help/components/dimensions/t-breakdown-fa.md).
 
