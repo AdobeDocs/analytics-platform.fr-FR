@@ -5,7 +5,7 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: e4b7f1da451a7ec9171fbb623e0e79e916827fd8
+source-git-commit: 77f350923bb750bf99fe4080e44968f9a52cd7da
 workflow-type: tm+mt
 source-wordcount: '2489'
 ht-degree: 93%
@@ -72,7 +72,7 @@ Les paramètres suivants régissent l’accès à l’agent Data Insights dans C
 
    1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les autorisations.
 
-  Pour plus d’informations sur le contrôle d’accès, voir [Contrôle d’accès &#x200B;](/help/technotes/access-control.md#access-control).
+  Pour plus d’informations sur le contrôle d’accès, voir [Contrôle d’accès ](/help/technotes/access-control.md#access-control).
 
 * **Accès aux vues de données** : les vues de données doivent être activées pour Data Insights Agent.
 
@@ -264,7 +264,7 @@ Vous trouverez ci-dessous les bonnes pratiques pour votre configuration de Custo
 >[!MORELIKETHIS]
 >
 >[Paramètres de composant](/help/data-views/component-settings/overview.md)
->&#x200B;>[Dictionnaire de données](/help/components/data-dictionary/data-dictionary-overview.md)
->&#x200B;>[Approuver une mesure calculée](/help/components/calc-metrics/cm-workflow/cm-approving.md)
->&#x200B;>[Partager des segments](/help/components/segments/seg-share.md)
+>>[Dictionnaire de données](/help/components/data-dictionary/data-dictionary-overview.md)
+>>[Approuver une mesure calculée](/help/components/calc-metrics/cm-workflow/cm-approving.md)
+>>[Partager des segments](/help/components/segments/seg-share.md)
 >
