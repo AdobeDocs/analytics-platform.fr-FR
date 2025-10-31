@@ -4,10 +4,10 @@ title: Paramètres de colonne
 feature: Visualizations
 exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
 role: User
-source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+source-git-commit: e8bb2df72cd223713bf63f0e85ea9c9e444cb3e5
 workflow-type: tm+mt
-source-wordcount: '891'
-ht-degree: 94%
+source-wordcount: '910'
+ht-degree: 84%
 
 ---
 
@@ -18,7 +18,7 @@ Grâce aux [!UICONTROL paramètres des colonnes], vous pouvez configurer la mise
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Paramètres des lignes et des colonnes dans un tableau à structure libre](https://video.tv.adobe.com/v/328500/?captions=fre_fr&quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Paramètres des lignes et des colonnes dans un tableau à structure libre](https://video.tv.adobe.com/v/40382/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 
@@ -43,8 +43,8 @@ Vous pouvez modifier les paramètres pour plusieurs colonnes à la fois. Sélect
 | **[!UICONTROL Afficher la prévision]** | Déterminez si les valeurs de prévision sont affichées dans cette colonne. |
 | **[!UICONTROL Renvoyer à la ligne le texte d’en-tête]** | Renvoyez à la ligne le texte de l’en-tête dans les tableaux à structure libre afin de rendre les en-têtes plus lisibles et les tableaux plus faciles à partager. Le renvoi à la ligne est utile pour le rendu PDF et pour les mesures dont le nom est long. Activé par défaut. |
 | **[!UICONTROL Interpréter zéro comme n’étant pas une valeur]** | Pour les cellules dont la valeur est 0, déterminez s’il convient d’afficher un 0 ou une cellule vierge. Ce paramètre est utile lorsque vous examinez les données pour chaque jour d’un mois et que certains jours n’ont pas encore eu lieu. Des cellules vierges peuvent être affichées au lieu de 0 pour les dates futures. Les graphiques respectent également ce paramètre (en d’autres termes, ils n’affichent pas de ligne ou de barre avec des valeurs 0). |
-| **[!UICONTROL Arrière-plan]** | Déterminez si une cellule affiche/masque toute la mise en forme de cellule, y compris le graphique à barres et la mise en forme conditionnelle. |
-| **[!UICONTROL Graphique à barres]** | Affichez un graphique à barres horizontales représentant la valeur de la cellule par rapport au total de la colonne. |
+| **[!UICONTROL Arrière-plan]** | Déterminez si une cellule affiche/masque toute la mise en forme de cellule, y compris le graphique en barres et la mise en forme conditionnelle. |
+| **[!UICONTROL Graphique en barres]** | Affichez un graphique en barres horizontales représentant la valeur de la cellule par rapport au total de la colonne. |
 | **[!UICONTROL Mise en forme conditionnelle]** | Utilisez la mise en forme conditionnelle. Voir la [section](#conditional-formatting) ci-dessous. |
 | **[!UICONTROL Aperçu des cellules de tableau]** | Aperçu de l’aspect de chaque cellule après application des options de mise en forme actuellement sélectionnées. |
 | **[!UICONTROL Utiliser le modèle d’attribution différent du modèle par défaut]** | Utilisez un modèle d’attribution différent du modèle par défaut. Voir la [section](#use-non-default-attribution-model) ci-dessous. |
@@ -88,13 +88,11 @@ Vous pouvez remplacer le modèle d’attribution par défaut configuré dans [Vu
 
 >[!NOTE]
 >
->Tenez compte des points suivants lors de la mise à jour de l’attribution d’un composant à un modèle d’attribution autre que celui par défaut :
+>Tenez compte des points suivants lors de l’activation d’un modèle d’attribution autre que celui par défaut sur une mesure :
 >
->* **Lors de l’utilisation du composant dans un rapport avec *une seule dimension* :** l’attribution du composant ignore le modèle d’attribution lorsqu’un modèle d’attribution autre que celui par défaut est utilisé.
+>* **Lors de l’utilisation de la mesure dans un rapport avec *une seule dimension* :** l’attribution de la mesure remplace le modèle d’attribution défini sur la dimension. Par exemple, une mesure avec une attribution « première touche » remplace une attribution de dimension « le plus récent ».
 >
->* **Lors de l’utilisation du composant dans un rapport avec *plusieurs dimensions* :** l’attribution du composant conserve le modèle d’attribution lorsqu’un modèle d’attribution différent du modèle par défaut est utilisé.
->
->   Plusieurs dimensions sont disponibles uniquement lors de l’[export de données vers le cloud](/help/analysis-workspace/export/export-cloud.md).
+>* **Lors de l’utilisation de la mesure dans un rapport avec *plusieurs dimensions* :** l’attribution de la mesure est appliquée en plus du modèle d’attribution pour chaque dimension. Par exemple, une mesure avec une attribution « Première touche » est appliquée en plus d’une attribution de dimension « Le plus récent ».
 >
 > Pour plus d’informations sur l’attribution, consultez [Paramètres des composants de persistance](/help/data-views/component-settings/persistence.md).
 

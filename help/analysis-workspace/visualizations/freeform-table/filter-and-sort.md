@@ -4,20 +4,20 @@ title: Filtrer Et Trier
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: a16043f1bb15deba1332ed39438214597647b9b4
+source-git-commit: 1d760139bd988097486e5c151364f291ad8e243d
 workflow-type: tm+mt
-source-wordcount: '1132'
-ht-degree: 72%
+source-wordcount: '1133'
+ht-degree: 65%
 
 ---
 
-# Filtrer et trier
+# Filtrer et trier des tableaux
 
 Les tableaux à structure libre dans Analysis Workspace sont la base de l’analyse de données interactive. Ils peuvent donc contenir des milliers de lignes d’informations. Le filtrage et le tri des données peuvent constituer des éléments essentiels à l’amélioration de l’affichage des informations les plus importantes.
 
 <!--The following video covers filter and sort options in Analysis Workspace, in addition to pagination options:
 
->[!VIDEO](https://video.tv.adobe.com/v/327341?captions=fre_fr)-->
+>[!VIDEO](https://video.tv.adobe.com/v/23968)-->
 
 ## Filtrer des tableaux
 
@@ -43,11 +43,11 @@ Vous pouvez rapidement exclure des lignes spécifiques du tableau sans avoir à 
 >
 >Lorsque vous excluez des lignes comme décrit dans cette section, une règle [!UICONTROL Toujours exclure les éléments] est automatiquement ajoutée dans la boîte de dialogue de filtre [!UICONTROL Avancé]. Vous pouvez afficher la règle appliquée en sélectionnant l’icône ![Filtrer](/help/assets/icons/Filter.svg) Filtrer, puis [**[!UICONTROL Afficher les paramètres avancés]**](#apply-a-simple-or-advanced-filter-to-a-table).
 
-Pour exclure des lignes spécifiques d’un tableau à structure libre, procédez comme suit :
+Pour exclure des lignes spécifiques d’un tableau à structure libre :
 
 1. Pointez sur la ligne à exclure, puis sélectionnez ![Fermer](/help/assets/icons/Close.svg).
 
-   Maintenez la touche ***Maj*** enfoncée pour sélectionner une plage de lignes ou la touche ***Cmd*** (sous Mac) ou la touche ***Ctrl*** (sous Windows) enfoncée pour sélectionner plusieurs lignes.
+   Maintenez la touche ***Maj*** enfoncée pour sélectionner une plage de lignes ou la touche ***Commande*** (sous Mac) ou la touche ***Ctrl*** (sous Windows) enfoncée pour sélectionner plusieurs lignes.
 
 <!--### Right-click > Delete selected rows
 
@@ -59,9 +59,9 @@ Note: this option does not seem to work. AN-338422
    This action will remove the rows from the table and apply a table filter.-->
 
 
-### Appliquer un filtre simple ou avancé à un tableau
+### Appliquer un filtrage simple ou avancé à un tableau
 
-Pour filtrer les données dans les tableaux à structure libre :
+Pour filtrer les données dans les tableaux à structure libre :
 
 1. Pointez sur la colonne contenant les données à filtrer. <!--only some types of columns show the filter... Which? Just Dimensions?-->
 
@@ -75,7 +75,7 @@ Pour filtrer les données dans les tableaux à structure libre :
 
    | Option | Fonction |
    |---------|----------|
-   | [!UICONTROL **Inclure « Aucune valeur »**] | Sélectionnez cette option pour afficher une ligne **[!UICONTROL Aucune valeur]** dans le tableau pour les données qui n’ont aucune valeur pour la dimension sélectionnée. Désélectionnez cette option pour masquer la ligne **[!UICONTROL Aucune valeur]**. |
+   | [!UICONTROL **Inclure « Aucune valeur »**] | Sélectionnez cette option pour afficher une ligne **[!UICONTROL Aucune valeur]** dans le tableau pour les données qui n’ont aucune valeur pour la dimension sélectionnée. Désélectionnez cette option pour masquer les lignes **[!UICONTROL Aucune valeur]**.<!-- Add at multi dim GA: When tables include multiple dimension columns, you can deselect this option to show data only when it applies to each dimension column in the table.--> |
    | [!UICONTROL **Mot ou expression de recherche**] | Spécifiez un mot ou une expression à utiliser comme filtre. Seules les lignes contenant le mot ou l’expression exacte spécifié(e) sont affichées. |
 
 

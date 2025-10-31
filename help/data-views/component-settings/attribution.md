@@ -5,10 +5,10 @@ exl-id: bc7ae6e3-7c9b-4994-97ce-690f3bdcbee5
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 7d354ce65f72838c007d2b9faf02848d86fd7c0f
+source-git-commit: 2fd79da264d60bb90e1193ead2eee67602404b4c
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 93%
+source-wordcount: '435'
+ht-degree: 63%
 
 ---
 
@@ -33,19 +33,17 @@ Par exemple :
 
 Dans certains rapports, vous voudrez peut-être attribuer la commande au référencement payant. Dans d’autres rapports, vous voudrez peut-être attribuer la commande à Social. Attribution vous permet de contrôler cet aspect des rapports.
 
-## Définir le modèle d’attribution par défaut d’un composant
+## Définir un modèle d’attribution de composant
 
-Vous pouvez définir un modèle d’attribution par défaut pour une mesure donnée en mettant à jour le paramètre de la mesure dans la vue de données. Cela remplace le modèle d’attribution de la mesure chaque fois qu’il est utilisé dans Analysis Workspace.
+Vous pouvez modifier le modèle d’attribution par défaut d’un composant donné en mettant à jour le paramètre du composant dans la vue de données. Cela remplace le modèle d’attribution du composant chaque fois qu’il est utilisé dans Analysis Workspace.
 
 >[!NOTE]
 >
->Tenez compte des points suivants lors de l’activation de l’attribution sur une mesure :
+>Tenez compte des points suivants lors de l’activation d’un modèle d’attribution autre que celui par défaut sur une mesure :
 >
->* **Lors de l’utilisation du composant dans un rapport avec *une seule dimension* :** l’attribution du composant ignore le modèle d’attribution lorsqu’un modèle d’attribution différent du modèle par défaut est utilisé.
+>* **Lors de l’utilisation de la mesure dans un rapport avec *une seule dimension* :** l’attribution de la mesure remplace le modèle d’attribution défini sur la dimension. Par exemple, une mesure avec une attribution « première touche » remplace une attribution de dimension « le plus récent ».
 >
->* **Lors de l’utilisation du composant dans un rapport avec *plusieurs dimensions* :** l’attribution du composant conserve le modèle d’attribution lorsqu’un modèle d’attribution différent du modèle par défaut est utilisé.
->
->   Plusieurs dimensions sont disponibles uniquement lors de l’[export de données vers le cloud](/help/analysis-workspace/export/export-cloud.md).
+>* **Lors de l’utilisation de la mesure dans un rapport avec *plusieurs dimensions* :** l’attribution de la mesure est appliquée en plus du modèle d’attribution pour chaque dimension. Par exemple, une mesure avec une attribution « Première touche » est appliquée en plus d’une attribution de dimension « Le plus récent ».
 >
 > Pour plus d’informations sur l’attribution, consultez [Paramètres des composants de persistance](/help/data-views/component-settings/persistence.md).
 
