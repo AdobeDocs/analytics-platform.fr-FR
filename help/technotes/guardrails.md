@@ -5,16 +5,16 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 2fd79da264d60bb90e1193ead2eee67602404b4c
+source-git-commit: 9263a0c868c6cfe140e38df43d72ff497c2fc931
 workflow-type: tm+mt
-source-wordcount: '1992'
-ht-degree: 10%
+source-wordcount: '2068'
+ht-degree: 11%
 
 ---
 
 # Mécanismes de sécurisation de Customer Journey Analytics
 
-Ce document fournit des limites pour divers composants de Customer Journey Analytics. Pour les mécanismes de sécurisation, les paramètres de définition de la portée et les droits, reportez-vous aux sections [Description du produit pour Customer Journey Analytics](https://helpx.adobe.com/fr/legal/product-descriptions/customer-journey-analytics.html?lang=fr), [Description du produit pour le module complémentaire Adobe Analytics : Customer Journey Analytics](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html?lang=fr) ou [Description du produit pour Customer Journey Analytics B2B edition](https://helpx.adobe.com/fr/legal/product-descriptions/customer-journey-analytics-b2b.html?lang=fr).
+Ce document fournit des limites pour divers composants de Customer Journey Analytics. Pour les mécanismes de sécurisation, les paramètres de définition de la portée et les droits, reportez-vous aux sections [Description du produit pour Customer Journey Analytics](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html?lang=fr), [Description du produit pour le module complémentaire Adobe Analytics : Customer Journey Analytics](https://helpx.adobe.com/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html?lang=fr) ou [Description du produit pour Customer Journey Analytics B2B edition](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics-b2b.html?lang=fr).
 
 ## Types de limite
 
@@ -54,6 +54,10 @@ Certaines des fonctionnalités et leur valeur associée pour la limite dépenden
 | Visualisations par panneau | 25 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de [visualisations](../analysis-workspace/home.md#visualizations) par panneau. |
 | Champs dérivés par tableau à structure libre | 5 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de champs dérivés différents dans un seul tableau à structure libre. |
 | Commentaires par projet | 1 000 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de commentaires par projet. |
+| Commentaires par projet | 1 000 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de commentaires par projet. |
+| Réponses par commentaire | 100 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximum de réponses par commentaire. |
+| Images par commentaire | 5 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal d’images par commentaire. |
+| Taille de l’image | 2 | Mécanisme de sécurisation mis en œuvre par le système | Taille maximale de chargement par image en Mo. |
 | Réponses par commentaire | 100 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximum de réponses par commentaire. |
 | Images par commentaire | 5 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal d’images par commentaire. |
 | Taille de l’image | 2 | Mécanisme de sécurisation mis en œuvre par le système | Taille maximale de chargement par image en Mo |
@@ -62,8 +66,6 @@ Certaines des fonctionnalités et leur valeur associée pour la limite dépenden
 
 
 <!-- at flatview GA, add: - Dimension columns per freeform table - 5 - System-enforced Guardrail - Maximum number of dimensions per freeform table. -->
-
-
 
 <!--
 
@@ -83,14 +85,14 @@ Certaines des fonctionnalités et leur valeur associée pour la limite dépenden
 |---|--:|---|---|
 | Segments d’audience | 20 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de [segments](../components/segments/seg-overview.md) par audience. |
 | Nombre d’identités d’audience | 20 million | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal d’identités par audience. |
-| Fréquence d’actualisation de l’audience | 4 | Mécanisme de sécurisation mis en œuvre par le système | Fréquence maximale en heures pendant laquelle une [&#x200B; audience &#x200B;](../components/audiences/audiences-overview.md) peut être actualisée. |
+| Fréquence d’actualisation de l’audience | 4 | Mécanisme de sécurisation mis en œuvre par le système | Fréquence maximale en heures pendant laquelle une [ audience ](../components/audiences/audiences-overview.md) peut être actualisée. |
 | Intervalle De Recherche En Amont De L’Actualisation D’Audience | 90 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de jours pour l’intervalle de recherche en amont de l’actualisation. |
 | Actualisation de la date d’expiration de l’audience | 13 | Mécanisme de sécurisation mis en œuvre par le système | Le nombre maximal de mois pendant lesquels l’audience cesse d’être actualisée à partir de la date de création. Les clients peuvent prolonger ce délai de 13 mois supplémentaires. |
 | Nombre d’audiences en cours d’actualisation | 75 150 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal d’audiences en cours d’actualisation. La valeur varie en fonction du package Customer Journey Analytics (voir Description du produit). |
 
 {style="table-layout:auto"}
 
-Consultez également la section Experience Platform [Mécanismes de sécurisation de Real-time Customer Data Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/rtcdp/guardrails/overview).
+Consultez également la section Experience Platform [Mécanismes de sécurisation de Real-time Customer Data Platform](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/guardrails/overview).
 
 
 ## Expiration automatisée des jeux de données
@@ -135,7 +137,7 @@ Consultez également la section Experience Platform [Mécanismes de sécurisatio
 
 {style="table-layout:auto"}
 
-Consultez également la section Experience Platform [&#x200B; Mécanismes de sécurisation pour l’ingestion de données](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=fr).
+Consultez également la section Experience Platform [ Mécanismes de sécurisation pour l’ingestion de données](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html).
 
 
 ## Exportation des données des destinations
@@ -147,7 +149,7 @@ Consultez également la section Experience Platform [&#x200B; Mécanismes de sé
 
 {style="table-layout:auto"}
 
-Consultez également la section Experience Platform [&#x200B; Mécanismes de sécurisation d’exportation de jeux de données &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/guardrails#dataset-exports)
+Consultez également la section Experience Platform [ Mécanismes de sécurisation d’exportation de jeux de données ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports)
 
 
 ## Zone d’atterrissage des données
@@ -250,11 +252,20 @@ Consultez également la section Experience Platform [&#x200B; Mécanismes de sé
 | Vues des données | 50 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de vues de données activables pour le Data Insights Agent. Lorsque d’autres vues de données sont activées, seules les vues de données les plus utilisées sont disponibles pour le Data Insights Agent. Ce mécanisme de sécurisation n’a aucune incidence sur les [mécanismes de sécurisation définissant le nombre maximal de vues de données que vous pouvez définir pour une connexion ou au sein de votre organisation](#connections-data-views-projects). |
 
 
+## Customer Journey Analytics B2B Edition
+
+| Nom | Valeur | Type de limite | Description |
+|---|--:|---|---|
+| Lignes à déclarer du profil professionnel (BPP) | 1 million | Mécanisme de sécurisation des performances | Nombre moyen de lignes à déclarer pour 1 000 profils professionnels à déclarer |
+
+
+
+
 ## Latences
 
 >[!NOTE]
 >
->Les délais de traitement ci-dessous sont des mécanismes de sécurisation, et non des accords de niveau de service (SLA) contractuels. La latence varie en fonction de la configuration du client, des volumes de données et des applications clientes. Les temps de traitement réels sont souvent plus rapides. Consultez votre contrat Customer Journey Analytics pour connaître les conditions contractuelles et les contrats de niveau de service spécifiques. Voir Experience Platform [Mécanismes de sécurisation pour l’ingestion de données](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=fr) pour plus d’informations.
+>Les délais de traitement ci-dessous sont des mécanismes de sécurisation, et non des accords de niveau de service (SLA) contractuels. La latence varie en fonction de la configuration du client, des volumes de données et des applications clientes. Les temps de traitement réels sont souvent plus rapides. Consultez votre contrat Customer Journey Analytics pour connaître les conditions contractuelles et les contrats de niveau de service spécifiques. Voir Experience Platform [Mécanismes de sécurisation pour l’ingestion de données](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html) pour plus d’informations.
 
 | Flux de données | Latence attendue |
 |---|---|
