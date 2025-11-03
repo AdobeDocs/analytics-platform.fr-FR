@@ -5,9 +5,9 @@ feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: ec07eb5dced013eac3d1088f2f49dcea23894395
+source-git-commit: f7a90a42d3c8bea99af2e69e3f86d9ad4e2041bf
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1274'
 ht-degree: 2%
 
 ---
@@ -16,9 +16,26 @@ ht-degree: 2%
 
 {{release-limited-testing}}
 
-Vous pouvez inclure jusqu’à 5 colonnes de dimension dans un tableau à structure libre, ce qui vous permet d’afficher plusieurs éléments de dimension côte à côte. Chaque ligne d’éléments de dimension agit comme un seul élément concaténé.
+Vous pouvez inclure jusqu’à 5 colonnes de dimension dans un tableau à structure libre, ce qui vous permet d’afficher plusieurs éléments de dimension côte à côte. Chaque ligne d’éléments de dimension se comporte comme un seul élément de dimension concaténé.
 
-Vous pouvez appliquer des filtres, un tri, des répartitions, etc. aux tableaux à structure libre à plusieurs colonnes de dimensions afin de créer une analyse plus complète et personnalisée.
+Vous pouvez appliquer des filtres, un tri, des répartitions, etc. aux tableaux à structure libre à plusieurs colonnes de dimensions afin de créer une analyse personnalisée et plus approfondie.
+
+## Éléments de dimension concaténés
+
+Lorsque vous ajoutez plusieurs colonnes de dimension à un tableau à structure libre, chaque ligne d’éléments de dimension se comporte comme un seul élément de dimension concaténé. Cette fonctionnalité vous permet d’afficher les données de mesure pour des combinaisons spécifiques de dimensions.
+
+Prenons l’exemple d’un tableau à structure libre dont les dimensions sont _Ville_, _Type d’appareil_ et _Jour du mois_ et la mesure est _Événements_. Les 3 éléments de dimension de la première ligne de ce tableau deviennent un seul élément de dimension concaténé montrant qu&#39;il y a eu 2 056 événements qui ont eu lieu à Mumbai à partir de téléphones portables le 30ème jour du mois.
+
+| Dimension : Ville | Dimension : type d’appareil | Dimension : Jour du mois | Mesure : Événements |
+|---------|----------|---------|---------|
+| Bombay | Téléphone portable | 30 | 2 056 |
+| New York | Tablette | 31 | 1 761 |
+| Bangalore | Bureau | 1 | 1 666 |
+| Delhi | Téléphone portable | 14 | 1 396 |
+
+Voici comment apparaît ce tableau dans Analysis Workspace :
+
+![Exemple multidimension](assets/multi-dim-example.png)
 
 ## Ajouter plusieurs colonnes de dimension
 
@@ -39,6 +56,8 @@ Vous pouvez ajouter plusieurs colonnes de dimension une par une ou en bloc.
      Pour sélectionner plusieurs dimensions, maintenez la touche ***Commande*** (sous Mac) ou la touche ***Ctrl*** enfoncée (sous Windows).
 
      ![Faire glisser plusieurs dimensions](assets/dimensions-add-multiple.png)
+
+1. Affichez chaque ligne du tableau en tant qu’élément de dimension unique. Pour plus d’informations, voir [Affichage des éléments de dimension concaténés](#view-concatenated-dimension-items).
 
 ## Filtrer des tableaux
 
@@ -82,7 +101,7 @@ Pour trier les données des tableaux en fonction de plusieurs colonnes :
 
 1. Sélectionnez **[!UICONTROL Tri avancé]**.
 
-   ![&#x200B; Boîte de dialogue Tri avancé &#x200B;](assets/sort-advanced-dialog.png)
+   ![ Boîte de dialogue Tri avancé ](assets/sort-advanced-dialog.png)
 
 1. Dans la boîte de dialogue Tri avancé , effectuez l’une des opérations suivantes :
 
@@ -160,9 +179,21 @@ Les répartitions vous permettent de :
 
 ### Ajouter des répartitions à un tableau avec plusieurs colonnes de dimension
 
-Lorsque vous ajoutez une répartition à un tableau qui comporte plusieurs colonnes de dimension, la répartition s’étend sur tous les éléments de dimension de la ligne où vous l’ajoutez.
+Lorsque vous ajoutez une répartition à un tableau qui comporte plusieurs colonnes de dimension, la répartition s’applique à l’élément de dimension concaténé (sur toutes les colonnes de dimension) sur la ligne où vous l’ajoutez.
 
-Vous pouvez ajouter une répartition comme décrit dans la section [Répartir les dimensions](/help/components/dimensions/t-breakdown-fa.md).
+De plus, vous pouvez ajouter plusieurs colonnes de dimension dans une répartition. Chaque ligne d’éléments de dimension dans la répartition se comporte également comme un seul élément de dimension concaténé.
+
+<!-- update screenshot to show the breakdown, and include this introductory sentence: "For example, you can break down the first dimension item in this table by a new concatenated dimension item that shows... " -->
+
+![exemple multi-tri](assets/dimensions-multiple-sort.png)
+
+Pour plus d’informations sur l’ajout d’une répartition, voir [Répartition des dimensions](/help/components/dimensions/t-breakdown-fa.md).
+
+## Créer un segment basé sur un élément de dimension qui s’étend sur plusieurs colonnes de dimension
+
+Lorsque vous créez un segment basé sur un élément de dimension qui s’étend sur plusieurs colonnes de dimension, chaque élément de dimension est inclus dans la définition de segment, avec les opérateurs Et qui les rejoignent.
+
+Pour plus d’informations sur la création d’un segment, voir [Créer des segments](/help/components/segments/seg-create.md).
 
 ## Dimensions non prises en charge {#unsupported}
 
