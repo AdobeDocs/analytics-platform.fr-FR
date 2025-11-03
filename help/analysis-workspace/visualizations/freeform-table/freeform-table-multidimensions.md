@@ -5,9 +5,9 @@ feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: f7a90a42d3c8bea99af2e69e3f86d9ad4e2041bf
+source-git-commit: 9314f7d88834a67efb61d0cc0cceef1ccd2fb9cb
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1276'
 ht-degree: 2%
 
 ---
@@ -18,13 +18,13 @@ ht-degree: 2%
 
 Vous pouvez inclure jusqu’à 5 colonnes de dimension dans un tableau à structure libre, ce qui vous permet d’afficher plusieurs éléments de dimension côte à côte. Chaque ligne d’éléments de dimension se comporte comme un seul élément de dimension concaténé.
 
-Vous pouvez appliquer des filtres, un tri, des répartitions, etc. aux tableaux à structure libre à plusieurs colonnes de dimensions afin de créer une analyse personnalisée et plus approfondie.
+Vous pouvez appliquer des filtres, un tri, des répartitions, etc. aux tableaux à structure libre à plusieurs colonnes de dimensions afin de créer une analyse plus approfondie et plus personnalisée.
 
 ## Éléments de dimension concaténés
 
-Lorsque vous ajoutez plusieurs colonnes de dimension à un tableau à structure libre, chaque ligne d’éléments de dimension se comporte comme un seul élément de dimension concaténé. Cette fonctionnalité vous permet d’afficher les données de mesure pour des combinaisons spécifiques de dimensions.
+Lorsque vous [ajoutez plusieurs colonnes de dimension à un tableau à structure libre](#add-multiple-dimension-columns), chaque ligne d’éléments de dimension se comporte comme un seul élément de dimension concaténé. Cette fonctionnalité vous permet d’afficher les données de mesure pour des combinaisons spécifiques de dimensions.
 
-Prenons l’exemple d’un tableau à structure libre dont les dimensions sont _Ville_, _Type d’appareil_ et _Jour du mois_ et la mesure est _Événements_. Les 3 éléments de dimension de la première ligne de ce tableau deviennent un seul élément de dimension concaténé montrant qu&#39;il y a eu 2 056 événements qui ont eu lieu à Mumbai à partir de téléphones portables le 30ème jour du mois.
+Prenons l’exemple d’un tableau à structure libre dont les colonnes de dimension sont _Ville_, _Type d’appareil_ et _Jour du mois_ et la mesure est _Événements_. Les 3 éléments de dimension de la première ligne de ce tableau deviennent un seul élément de dimension concaténé montrant qu&#39;il y a eu 2 056 événements qui ont eu lieu à Mumbai à partir de téléphones portables le 30ème jour du mois.
 
 | Dimension : Ville | Dimension : type d’appareil | Dimension : Jour du mois | Mesure : Événements |
 |---------|----------|---------|---------|
@@ -57,13 +57,13 @@ Vous pouvez ajouter plusieurs colonnes de dimension une par une ou en bloc.
 
      ![Faire glisser plusieurs dimensions](assets/dimensions-add-multiple.png)
 
-1. Affichez chaque ligne du tableau en tant qu’élément de dimension unique. Pour plus d’informations, voir [Affichage des éléments de dimension concaténés](#view-concatenated-dimension-items).
+1. Affichez chaque ligne du tableau en tant qu’élément de dimension unique. Pour plus d’informations, voir [Éléments de dimension concaténés](#view-concatenated-dimension-items).
 
 ## Filtrer des tableaux
 
 Vous pouvez appliquer des filtres à une ou plusieurs colonnes de dimension dans un tableau à structure libre.
 
-Pour plus d’informations sur le filtrage des tableaux, voir [Filtrer les tableaux](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md#filter-tables) dans [Filtrer et trier les tableaux](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
+Pour plus d’informations sur le filtrage des tableaux, voir [Filtrer les tableaux](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md#filter-tables) dans [Filtrer et trier les tableaux à structure libre](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
 
 ## Trier des tableaux {#sort-tables}
 
@@ -101,7 +101,7 @@ Pour trier les données des tableaux en fonction de plusieurs colonnes :
 
 1. Sélectionnez **[!UICONTROL Tri avancé]**.
 
-   ![&#x200B; Boîte de dialogue Tri avancé &#x200B;](assets/sort-advanced-dialog.png)
+   ![ Boîte de dialogue Tri avancé ](assets/sort-advanced-dialog.png)
 
 1. Dans la boîte de dialogue Tri avancé , effectuez l’une des opérations suivantes :
 
