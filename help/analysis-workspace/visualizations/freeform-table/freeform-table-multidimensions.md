@@ -5,7 +5,7 @@ feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 9314f7d88834a67efb61d0cc0cceef1ccd2fb9cb
+source-git-commit: ad8026237d73784dfe154e7bc0b32a06a3a66eb3
 workflow-type: tm+mt
 source-wordcount: '1276'
 ht-degree: 2%
@@ -89,7 +89,7 @@ Pour trier les données des tableaux selon une seule colonne :
 
 ### Trier des tableaux sur plusieurs colonnes (tri avancé)
 
-{{release-limited-testing-section}}
+<!-- add this back in when move this section back to the filter and sort article: {{release-limited-testing-section}} -->
 
 #### Appliquer le tri à plusieurs colonnes
 
@@ -101,7 +101,7 @@ Pour trier les données des tableaux en fonction de plusieurs colonnes :
 
 1. Sélectionnez **[!UICONTROL Tri avancé]**.
 
-   ![&#x200B; Boîte de dialogue Tri avancé &#x200B;](assets/sort-advanced-dialog.png)
+   ![ Boîte de dialogue Tri avancé ](assets/sort-advanced-dialog.png)
 
 1. Dans la boîte de dialogue Tri avancé , effectuez l’une des opérations suivantes :
 
@@ -175,7 +175,7 @@ Plusieurs colonnes de dimension vous permettent d’effectuer les opérations su
 
 Les répartitions vous permettent de :
 
-* Ventilez un élément de dimension dans le tableau à structure libre par une dimension secondaire. Vous pouvez afficher jusqu’à 200 éléments de dimension pour la dimension secondaire.
+* Ventilez un élément de dimension dans le tableau à structure libre par une dimension secondaire. Vous pouvez afficher jusqu’à 400 éléments de dimension pour la dimension secondaire.
 
 ### Ajouter des répartitions à un tableau avec plusieurs colonnes de dimension
 
