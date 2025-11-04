@@ -101,7 +101,7 @@ Pour trier les données des tableaux en fonction de plusieurs colonnes :
 
 1. Sélectionnez **[!UICONTROL Tri avancé]**.
 
-   ![ Boîte de dialogue Tri avancé ](assets/sort-advanced-dialog.png)
+   ![&#x200B; Boîte de dialogue Tri avancé &#x200B;](assets/sort-advanced-dialog.png)
 
 1. Dans la boîte de dialogue Tri avancé , effectuez l’une des opérations suivantes :
 
