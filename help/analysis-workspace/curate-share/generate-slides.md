@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Génération de présentations à partir de rapports Workspace
 feature: Curate and Share
 role: User
-source-git-commit: 62ef107c52a96178fbf9e41fee49db757488525b
+source-git-commit: 87e3b3cfdf765a57ecdb70921696013bcba4feac
 workflow-type: tm+mt
-source-wordcount: '1506'
+source-wordcount: '1585'
 ht-degree: 3%
 
 ---
@@ -105,7 +105,7 @@ Les histoires de données se composent d’une diapositive de titre, d’une dia
    |---------|----------|
    | **[!UICONTROL Titre de la couverture]** | Indiquez un titre pour la présentation. Ce titre s&#39;affiche sur la diapositive de titre de la présentation. |
    | **[!UICONTROL Inclure le nom du présentateur]** | Spécifiez le nom du présentateur. Ce nom apparaît sur la diapositive de titre de la présentation, sous le titre de couverture. |
-   | **[!UICONTROL Panneaux et visualisations à inclure]** | Choisissez les panneaux et la visualisation à inclure dans la présentation. Vous pouvez inclure jusqu’à 50 visualisations.<p>La plupart des panneaux et des visualisations sont pris en charge. Pour plus d’informations sur les panneaux et les visualisations non pris en charge, voir [Éléments et fonctionnalités de projet non pris en charge](#unsupported-project-elements-and-features).</p> |
+   | **[!UICONTROL Panneaux et visualisations à inclure]** | Choisissez les panneaux et la visualisation à inclure dans la présentation. Vous pouvez inclure jusqu’à 50 visualisations.<p>Si une visualisation est grisée, elle est suivie du texte **[!UICONTROL (non pris en charge)]** ou **[!UICONTROL (données limitées)]**.</p><ul><li>**Non pris en charge** : la plupart des panneaux et des visualisations sont pris en charge. Pour plus d’informations sur les panneaux et les visualisations non pris en charge, voir [Éléments et fonctionnalités de projet non pris en charge](#unsupported-project-elements-and-features).</li><li>**Données limitées** : la visualisation contient un composant dont l’exportation est limitée par une politique de gouvernance des données appliquée par votre organisation. Contactez votre administrateur système pour voir quels composants ne peuvent pas être exportés, puis supprimez les composants restreints avant de générer des diapositives.</li></ul> |
    | **[!UICONTROL Mettre en gras les composants]** | Dans les visualisations, sélectionnez les mesures et dimensions à mettre en évidence dans la présentation. Les composants que vous choisissez sont mieux classés et reçoivent plus de poids lors de la création des thèmes et du récit global de l’histoire des données. <p>Lorsque aucun accent n’est mis, les composants s’affichent dans les présentations comme suit :<ul><li>**Mesures et dimensions :** italique</li><li>**Éléments Dimension :** guillemets</li></ul></p><p>Lorsque l’accent est mis, les composants s’affichent dans les présentations comme suit :</p><ul><li>**Mesures et dimensions :** italiques et gras</li><li>**Éléments Dimension :** gras lorsque la dimension correspondante est mise en évidence<p>Une couleur est également appliquée à l’élément de dimension lorsque celui-ci est mis en surbrillance dans le graphique.</p></li></ul> |
 
    <!-- add this later: - **[!UICONTROL Panel and visualization descriptions]** - Choose whether to include panel and visualization descriptions in your generated slide presentation. - 
@@ -235,5 +235,9 @@ Les éléments et fonctionnalités Analysis Workspace suivants utilisés dans un
   Les données relatives aux répartitions sont incluses dans les présentations générées, mais elles s’affichent au même niveau que les éléments de dimension.
 
 * Analyses guidées
+
+* Composants dont l’exportation est limitée par une politique de gouvernance des données
+
+  Pour plus d’informations, voir [Dépannage des exportations ayant échoué](/help/components/exports/troubleshoot-exports.md).
 
 
