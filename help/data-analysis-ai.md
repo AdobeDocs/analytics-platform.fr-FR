@@ -8,7 +8,7 @@ exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
 source-git-commit: ad8026237d73784dfe154e7bc0b32a06a3a66eb3
 workflow-type: tm+mt
 source-wordcount: '2491'
-ht-degree: 92%
+ht-degree: 98%
 
 ---
 
@@ -64,39 +64,39 @@ Les paramètres suivants régissent l’accès à l’agent Data Insights dans C
 
    1. Dans la ligne **[!UICONTROL Outils de création de rapports]** du tableau fourni, sélectionnez l’icône de modification ![Modifier](/help/assets/icons/Edit.svg).
    1. Recherchez ou faites défiler l’écran jusqu’à **[!UICONTROL Assistant IA : connaissance du produit]**, puis sélectionnez l’icône plus ![CercleAjouter](/help/assets/icons/AddCircle.svg) en regard de cette autorisation.
-   1. Faites défiler l’écran jusqu’à ou recherchez **[!UICONTROL Data Insights Agent]**, puis sélectionnez l’icône plus ![AddCircle](/help/assets/icons/AddCircle.svg) en regard de cette autorisation.
+   1. Recherchez ou faites défiler l’écran jusqu’à **[!UICONTROL Agent Data Insights]**, puis sélectionnez l’icône plus ![CercleAjouter](/help/assets/icons/AddCircle.svg) en regard de cette autorisation.
 
-      L’autorisation **[!UICONTROL Assistant IA : connaissance du produit]** et l’autorisation **[!UICONTROL Data Insights Agent]** sont ajoutées à la colonne **[!UICONTROL Éléments d’autorisation inclus]**.
+      L’autorisation **[!UICONTROL Assistant IA : connaissance du produit]** et l’autorisation **[!UICONTROL Agent Data Insights]** sont ajoutées à la colonne **[!UICONTROL Éléments d’autorisation inclus]**.
 
       ![Ajouter une autorisation](assets/ai-assistant-permissions.png)
 
    1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les autorisations.
 
-  Pour plus d’informations sur le contrôle d’accès, voir [Contrôle d’accès &#x200B;](/help/technotes/access-control.md#access-control).
+  Pour plus d’informations sur le contrôle d’accès, voir [Contrôle d’accès ](/help/technotes/access-control.md#access-control).
 
-* **Accès aux vues de données** : les vues de données doivent être activées pour Data Insights Agent.
+* **Accès aux vues de données** : les vues de données doivent être activées pour l’agent Data Insights.
 
   >[!IMPORTANT]
   >
   >Tenez compte des points suivants lorsque vous activez les vues de données :
   >* Vous pouvez activer un maximum de 50 vues de données par organisation IMS. Si vous activez plus de 50 vues de données pour tous les profils de produit pour une organisation donnée, l’agent Data Insights utilisera les 50 vues de données les plus employées.
-  >* Le Data Insights Agent peut référencer les vues de données incluses à un moment donné le jour même de leur activation.
+  >* L’agent Data Insights peut référencer les vues de données incluses à un moment donné le jour même de leur activation.
 
-  Pour activer les vues de données pour Data Insights Agent :
+  Pour activer les vues de données pour l’agent Data Insights :
 
-   1. Dans Customer Journey Analytics, sélectionnez **[!UICONTROL Gestion des données]** > **[!UICONTROL Vues des données]**.
+   1. Dans Customer Journey Analytics, sélectionnez **[!UICONTROL Gestion des données]** > **[!UICONTROL Vues de données]**.
 
-   1. Sélectionnez une ou plusieurs vues de données à activer pour Data Insights Agent, puis sélectionnez **[!UICONTROL Activer pour Data Insights Agent]**.
+   1. Sélectionnez une ou plusieurs vues de données à activer pour l’agent Data Insights, puis sélectionnez **[!UICONTROL Activer pour l’agent Data Insights]**.
 
-      ![Activer les vues de données pour Data Insights Agent](assets/data-view-enable-dia.png)
+      ![Activer les vues de données pour l’agent Data Insights](assets/data-view-enable-dia.png)
 
-  Pour afficher le nombre de vues de données activées pour Data Insights Agent dans votre organisation IMS :
+  Pour afficher le nombre de vues de données activées pour l’agent Data Insights dans votre organisation IMS :
 
-   1. Dans Customer Journey Analytics, sélectionnez **[!UICONTROL Gestion des données]** > **[!UICONTROL Vues des données]**.
+   1. Dans Customer Journey Analytics, sélectionnez **[!UICONTROL Gestion des données]** > **[!UICONTROL Vues de données]**.
 
-   1. Sélectionnez l’icône d’informations en haut de la colonne **[!UICONTROL Data Insights Agent]**.
+   1. Sélectionnez l’icône d’informations en haut de la colonne **[!UICONTROL Agent Data Insights]**.
 
-      Icône d’informations de Data Insights Agent ![](assets/data-insights-agent-tooltip.png)
+      ![Icône d’informations de l’agent Data Insights](assets/data-insights-agent-tooltip.png)
 
 ## Accès à l’agent Data Insights dans l’assistant IA
 

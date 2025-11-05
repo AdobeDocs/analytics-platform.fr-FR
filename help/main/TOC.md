@@ -437,9 +437,9 @@ ht-degree: 99%
 
 + Groupement {#stitching}
    + [Vue d’ensemble](/help/stitching/overview.md)
-   + [Groupement basé sur les champs](/help/stitching/fbs.md)
-   + [Groupement basé sur les graphiques](/help/stitching/gbs.md)
-   + [Assemblage des demandes](/help/stitching/use-stitching.md)
+   + [Rapprochement basé sur les champs](/help/stitching/fbs.md)
+   + [Rapprochement basé sur les graphiques](/help/stitching/gbs.md)
+   + [Demander un rapprochement](/help/stitching/use-stitching.md)
    + [Utilisation du groupement](/help/stitching/use-stitching-ui.md)
    + [Créer et gérer des jeux de données groupés](/help/stitching/stitching-ui.md)
    + [Valider le groupement](/help/stitching/validate.md)
