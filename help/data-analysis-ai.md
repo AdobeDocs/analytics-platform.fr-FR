@@ -16,7 +16,7 @@ ht-degree: 98%
 
 >[!AVAILABILITY]
 >
->L’agent Data Insights est disponible pour les clientes et clients éligibles pour une durée limitée. Data Insights Agent est accessible jusqu’au 28 février 2026. Pour continuer à utiliser Data Insights Agent au-delà de cette date sans interruption, contactez votre représentant de compte Adobe pour en savoir plus sur les licences Adobe Experience Platform Agent Orchestrator.
+>L’agent Data Insights est disponible pour les clientes et clients éligibles pour une durée limitée. L’accès à l’agent Data Insights prendra fin le 28 février 2026. Pour continuer à utiliser Data Insights Agent au-delà de cette date sans interruption, contactez votre représentant de compte Adobe pour en savoir plus sur les licences Adobe Experience Platform Agent Orchestrator.
 
 L’agent Data Insights, accessible à partir de l’[Assistant IA](/help/ai-assistant.md) dans Customer Journey Analytics, est un agent de conversation d’IA générative qui répond rapidement et efficacement aux questions sur vos données. Il crée des visualisations pertinentes dans Analysis Workspace en utilisant les composants de votre vue de données et vos données réelles.
 
@@ -72,7 +72,7 @@ Les paramètres suivants régissent l’accès à l’agent Data Insights dans C
 
    1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les autorisations.
 
-  Pour plus d’informations sur le contrôle d’accès, voir [Contrôle d’accès &#x200B;](/help/technotes/access-control.md#access-control).
+  Pour plus d’informations sur le contrôle d’accès, voir [Contrôle d’accès ](/help/technotes/access-control.md#access-control).
 
 * **Accès aux vues de données** : les vues de données doivent être activées pour l’agent Data Insights.
 
