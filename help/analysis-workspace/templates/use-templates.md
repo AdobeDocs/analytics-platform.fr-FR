@@ -4,10 +4,10 @@ title: Utiliser des modèles
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: e8cba64e706a456861fd8392ce9260b7a1c4636b
+source-git-commit: d6477006dfa8134521516b6e0665ff487236c10a
 workflow-type: tm+mt
-source-wordcount: '20424'
-ht-degree: 100%
+source-wordcount: '20761'
+ht-degree: 98%
 
 ---
 
@@ -97,7 +97,7 @@ Pour personnaliser un modèle et l’enregistrer en tant que projet, procédez c
 
 1. Sélectionnez le modèle à afficher. Par exemple, sous [!UICONTROL **Les plus populaires**], sélectionnez le modèle [!UICONTROL **Pages**].
 
-   Le modèle Pages, comme affiché dans Analysis Workspace, affiche deux [visualisations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) ([Graphique à barres](/help/analysis-workspace/visualizations/bar.md) et [Synthèse des chiffres](/help/analysis-workspace/visualizations/summary-number-change.md)) ainsi qu’un [Tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md). La mesure utilisée est Occurrences.
+   Le modèle Pages, tel qu’affiché dans Analysis Workspace, contient deux [visualisations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) ([Graphique en barres](/help/analysis-workspace/visualizations/bar.md) et [Synthèse des chiffres](/help/analysis-workspace/visualizations/summary-number-change.md)) ainsi qu’un [Tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md). La mesure utilisée est Occurrences.
 
    <!--update screenshot. The following is AA -->
 
@@ -1063,7 +1063,22 @@ Les modèles suivants sont disponibles :
 | **Rapport de vue d’ensemble de Journey Optimizer** | Affichez un résumé exhaustif des mesures de trafic et d’engagement pour l’ensemble des campagnes et des parcours de votre environnement.<p>**Cela peut vous aider** à mieux comprendre l’efficacité générale de vos campagnes et parcours. </p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme ajuster vos campagnes et parcours en fonction du niveau d’engagement de votre audience cible.</p> |
 | **Abonnements Journey Optimizer** | Affichez les abonnements et désabonnements des profils associés à des listes spécifiques.<p>**Cela peut vous aider** à mieux comprendre l’efficacité de différentes initiatives et campagnes d’abonnement pour stimuler l’engagement et générer des conversions.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme ajuster vos campagnes d’abonnement en fonction des niveaux d’engagement de votre audience cible.</p> |
 
+### Brand Concierge {#brand-concierge-templates}
 
+>[!CONTEXTUALHELP]
+>id="template--brand-concierge-b2c"
+>title="Analysez l’interaction client à travers les schémas de conversation, les commentaires des utilisateurs et l’efficacité de vos recommandations."
+>abstract="**Cela peut vous aider** à identifier les schémas d’engagement, à évaluer la qualité de la conversation, à suivre les tendances de satisfaction des clients et à mesurer l’efficacité des recommandations de liens.<br/>**En fonction de ce que vous avez appris** vous pouvez effectuer un certain nombre de tâches, comme affiner les réponses de votre agent d’IA, développer du contenu ciblé pour les problèmes fréquents, améliorer les algorithmes de recommandation ou créer des parcours spécialisés pour différents segments d’utilisateurs."
+
+>[!CONTEXTUALHELP]
+>id="template--brand-concierge--concierge"
+>title="Suivez le cycle de vie complet des demandes de réunion B2B. Surveillez les taux de conversion, les performances des consultants et identifiez vos canaux de génération de leads les plus efficaces."
+>abstract="**Cela peut vous aider** à suivre les taux de conversion des réunions, à identifier les membres de l’équipe les plus performants, à comprendre les tendances saisonnières du comportement de réservation et à identifier les pages qui génèrent les demandes de réunion les plus importantes.<br/>**En fonction de ce que vous avez appris** vous pouvez faire un certain nombre de choses, comme optimiser votre processus de demande de réunion, redistribuer les ressources vers des pages à conversion élevée, développer une formation ciblée pour les consultants ayant des taux de réservation plus faibles, ou mettre en œuvre de nouvelles stratégies pour réduire les réunions manquées."
+
+| Nom du modèle | Pourquoi utiliser ce modèle <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+| --- | --- | 
+| Présentation de [!UICONTROL **Brand Concierge**] | Analysez l’interaction client à travers les schémas de conversation, les commentaires des utilisateurs et l’efficacité de vos recommandations. <p>**Cela peut vous aider** à identifier les schémas d’engagement, à évaluer la qualité de la conversation, à suivre les tendances de satisfaction des clients et à mesurer l’efficacité des recommandations de liens.</p><p>**En fonction de ce que vous avez appris** vous pouvez effectuer un certain nombre de tâches, comme affiner les réponses de votre agent d’IA, développer du contenu ciblé pour les problèmes fréquents, améliorer les algorithmes de recommandation ou créer des parcours spécialisés pour différents segments d’utilisateurs.</p> |
+| **Réunions B2B Brand Concierge** | Suivez le cycle de vie complet des demandes de réunion B2B. Surveillez les taux de conversion, évaluez les performances de réservation des consultants et identifiez vos canaux de génération de leads les plus efficaces. <p>**Cela peut vous aider** à suivre les taux de conversion des réunions, à identifier les membres de l’équipe les plus performants, à comprendre les tendances saisonnières du comportement de réservation et à identifier les URL de pages qui génèrent les demandes de réunion les plus importantes. </p><p>**En fonction de ce que vous avez appris** vous pouvez effectuer un certain nombre de tâches, comme optimiser votre processus de demande de réunion, redistribuer les ressources vers des URL de page à conversion élevée, développer une formation ciblée pour les consultants ayant des taux de réservation plus faibles, ou mettre en œuvre de nouvelles stratégies pour réduire les réunions manquées.</p> |
 
 
 ### Modèles B2B {#b2b-templates}
