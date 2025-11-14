@@ -4,14 +4,14 @@ description: Apprenez à gérer les audiences dans Customer Journey Analytics
 exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
 feature: Audiences
 role: User
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 4717a85b9a3c7dc2cbdd8c625ebb5862cbfccd58
 workflow-type: tm+mt
-source-wordcount: '766'
-ht-degree: 100%
+source-wordcount: '769'
+ht-degree: 97%
 
 ---
 
-# Gérer des audiences
+# Gérer les audiences publiées
 
 Les audiences peuvent être gérées dans Customer Journey Analytics en utilisant **[!UICONTROL Composants]** > **[!UICONTROL Audiences]**.
 
@@ -35,7 +35,7 @@ La liste des audiences ➊ affiche les audiences existantes.
 
 Pour afficher la liste des audiences, procédez comme suit :
 
-1. Dans Customer Journey Analytics, sélectionnez **[!UICONTROL Composants]** > **[!UICONTROL Audiences]**.
+1. Dans Customer Journey Analytics, sélectionnez **[!UICONTROL Composants]** > **[!UICONTROL Audiences publiées]**.
 
 1. (Facultatif) Utilisez ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) pour configurer les colonnes à afficher.
 
@@ -62,7 +62,7 @@ Vous pouvez modifier les paramètres d’une audience à tout moment. Lorsque vo
 
 Pour modifier une audience, procédez comme suit :
 
-1. Dans Customer Journey Analytics, sélectionnez **[!UICONTROL Composants]** > **[!UICONTROL Audiences]**.
+1. Dans Customer Journey Analytics, sélectionnez **[!UICONTROL Composants]** > **[!UICONTROL Audiences publiées]**.
 
    La page Audiences s’affiche.
 

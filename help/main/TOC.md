@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 2fd79da264d60bb90e1193ead2eee67602404b4c
-workflow-type: ht
-source-wordcount: '1311'
-ht-degree: 100%
+source-git-commit: 0c3dfd54dc0cee912cab18644fa984b2be5a26a7
+workflow-type: tm+mt
+source-wordcount: '1321'
+ht-degree: 99%
 
 ---
 
@@ -138,7 +138,6 @@ ht-degree: 100%
    + [Jeu de données d’événements combinés](../connections/combined-dataset.md)
    + [Recherches standard](../connections/standard-lookups.md)
    + [Recherches B2B](../connections/transform-datasets-b2b-lookups.md)
-
 + Vues des données {#cja-dataviews}
    + [Vue d’ensemble des vues de données](../data-views/data-views.md)
    + [Création ou modification d’une vue de données](../data-views/create-dataview.md)
@@ -163,7 +162,9 @@ ht-degree: 100%
    + Mesures et dimensions partagées{#shared-metrics-dimensions}
       + [Vue d’ensemble](/help/data-views/shared-metrics-dimensions/smd-overview.md)
       + [Éditeur](/help/data-views/shared-metrics-dimensions/shared-component-editor.md)
-
+   + Analyse de l’audience {#audience-analysis}
+      + [Vue d’ensemble](/help/connections/audience-analysis/audience-analysis-overview.md)
+      + [Analyse des audiences à partir de RTCDP](/help/connections/audience-analysis/analyze-audiences.md)
 + Outils {#tools}
    + Transfert de ressources {#asset-transfer}
       + [Transférer des ressources](../tools/asset-transfer/transfer-assets.md)
@@ -335,10 +336,10 @@ ht-degree: 100%
       + [Gestion des annotations](../components/annotations/manage-annotations.md)
       + [Affichage des annotations](../components/annotations/view-annotations.md)
       + [Annotations de carte de performance mobile](../components/annotations/mobile-annotations.md)
-   + Audiences {#audiences}
-      + [Présentation des audiences](../components/audiences/audiences-overview.md)
+   + Publication dʼaudiences {#audiences}
+      + [Vue d’ensemble de la publication des audiences](../components/audiences/audiences-overview.md)
       + [Créer et publier des audiences](../components/audiences/publish.md)
-      + [Gérer des audiences](../components/audiences/manage.md)
+      + [Gérer les audiences publiées](../components/audiences/manage.md)
    + Dimensions {#dimensions}
       + [Vue d’ensemble](../components/dimensions/overview.md)
       + [Aperçu des dimensions](../components/dimensions/view-dimensions.md)

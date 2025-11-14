@@ -4,10 +4,10 @@ title: Utiliser des modèles
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 8b9f45bc68fd90c2b15a91d547256c18d0d7142b
+source-git-commit: 0e282bc341588032fadee45cc128663cf557b21f
 workflow-type: tm+mt
-source-wordcount: '20687'
-ht-degree: 98%
+source-wordcount: '20775'
+ht-degree: 97%
 
 ---
 
@@ -591,6 +591,11 @@ Les modèles suivants sont disponibles :
 
 
 <!--Both AA and CJA-->
+
+>[!CONTEXTUALHELP]
+>id="template--audienceOverview"
+>title="Affichez les audiences représentées parmi les personnes qui visitent votre site."
+>abstract="**Cela peut vous aider** entre autres à mieux comprendre les informations générales sur les audiences, leur origine (RTCDP, Customer Journey Analytics, etc.), le chevauchement des audiences.<br/>**En fonction de ce que vous avez appris** vous pouvez effectuer un certain nombre de tâches, comme utiliser les données pour vous concentrer sur les efforts marketing pour ces audiences spécifiques, ou créer des expériences personnalisées pour les clients qui s’étendent sur plusieurs audiences.<br/> Ce modèle utilise les dimensions Nom de l’audience, Origine de l’audience, Nom de l’audience sortie et Origine de l’audience sortie ."
 
 >[!CONTEXTUALHELP]
 >id="template--consentPolicyOverview"

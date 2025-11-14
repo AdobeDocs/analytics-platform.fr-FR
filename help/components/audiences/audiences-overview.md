@@ -4,16 +4,18 @@ description: En savoir plus sur le concept de publication d’audience dans Cust
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
 feature: Audiences
 role: User, Admin
-source-git-commit: be062e350a8c1989be41aeb2774471a3fe1bf524
+source-git-commit: ff301a4c76c547bf52e0dfaef5258fd183411c73
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 100%
+source-wordcount: '434'
+ht-degree: 94%
 
 ---
 
 # Vue d’ensemble de la publication des audiences
 
-Vous pouvez désormais créer et publier des audiences découvertes dans Customer Journey Analytics dans le [profil client en temps réel](https://experienceleague.adobe.com/fr/docs/experience-platform/profile/home.html) dans Adobe Experience Platform pour le ciblage et la personnalisation des clientes et clients.
+Vous pouvez créer et publier des audiences découvertes dans Customer Journey Analytics dans le [profil client en temps réel](https://experienceleague.adobe.com/fr/docs/experience-platform/profile/home.html) dans Adobe Experience Platform pour le ciblage et la personnalisation des clients.
+
+<!-- add this when Audience Analysis releases: (For information about ingesting audience membership data from Experience Platform Profile datasets into a Customer Journey Analytics connection, see [Audience analysis overview](/help/connections/audience-analysis/audience-analysis-overview.md).) -->
 
 La publication d’audiences offre un moyen clair d’activer et d’agir sur les informations trouvées dans Customer Journey Analytics. Ces actions peuvent inclure les éléments suivants :
 
