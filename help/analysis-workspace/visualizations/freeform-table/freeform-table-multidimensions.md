@@ -5,9 +5,9 @@ feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: ad8026237d73784dfe154e7bc0b32a06a3a66eb3
+source-git-commit: 77acfaf2d186e7fe7d6b9d973af5dedb3956f5d5
 workflow-type: tm+mt
-source-wordcount: '1276'
+source-wordcount: '1277'
 ht-degree: 2%
 
 ---
@@ -57,7 +57,7 @@ Vous pouvez ajouter plusieurs colonnes de dimension une par une ou en bloc.
 
      ![Faire glisser plusieurs dimensions](assets/dimensions-add-multiple.png)
 
-1. Affichez chaque ligne du tableau en tant qu’élément de dimension unique. Pour plus d’informations, voir [Éléments de dimension concaténés](#view-concatenated-dimension-items).
+1. Affichez chaque ligne du tableau en tant qu’élément de dimension unique. Pour plus d’informations, voir [Éléments de dimension concaténés](#concatenated-dimension-items).
 
 ## Filtrer des tableaux
 
@@ -101,7 +101,7 @@ Pour trier les données des tableaux en fonction de plusieurs colonnes :
 
 1. Sélectionnez **[!UICONTROL Tri avancé]**.
 
-   ![&#x200B; Boîte de dialogue Tri avancé &#x200B;](assets/sort-advanced-dialog.png)
+   ![ Boîte de dialogue Tri avancé ](assets/sort-advanced-dialog.png)
 
 1. Dans la boîte de dialogue Tri avancé , effectuez l’une des opérations suivantes :
 
@@ -181,11 +181,11 @@ Les répartitions vous permettent de :
 
 Lorsque vous ajoutez une répartition à un tableau qui comporte plusieurs colonnes de dimension, la répartition s’applique à l’élément de dimension concaténé (sur toutes les colonnes de dimension) sur la ligne où vous l’ajoutez.
 
+![exemple de répartition multitri](assets/dimensions-multiple-sort-breakdown.png)
+
 De plus, vous pouvez ajouter plusieurs colonnes de dimension dans une répartition. Chaque ligne d’éléments de dimension dans la répartition se comporte également comme un seul élément de dimension concaténé.
 
-<!-- update screenshot to show the breakdown, and include this introductory sentence: "For example, you can break down the first dimension item in this table by a new concatenated dimension item that shows... " -->
-
-![exemple multi-tri](assets/dimensions-multiple-sort.png)
+<!-- Add a screenshot of a breakdown with multiple cllumns, then add this sentence: "For example, you can break down the first dimension item in this table by a new concatenated dimension item that shows..." -->
 
 Pour plus d’informations sur l’ajout d’une répartition, voir [Répartition des dimensions](/help/components/dimensions/t-breakdown-fa.md).
 
