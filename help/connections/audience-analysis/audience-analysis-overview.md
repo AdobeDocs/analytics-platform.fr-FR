@@ -6,10 +6,10 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: ff301a4c76c547bf52e0dfaef5258fd183411c73
+source-git-commit: 3654d452f2bc4fec5f53854307536b3b8679eac3
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 0%
+source-wordcount: '522'
+ht-degree: 4%
 
 ---
 
@@ -17,7 +17,36 @@ ht-degree: 0%
 
 <!-- add hidden text in this article when this feature releases: /help/components/audiences/audiences-overview.md -->
 
-Vous pouvez ingérer des données d’appartenance à une audience à partir de jeux de données Profil Experience Platform dans une connexion Customer Journey Analytics. (Pour plus d’informations sur la création et la publication d’audiences découvertes dans Customer Journey Analytics vers Adobe Experience Platform pour le ciblage et la personnalisation des clients, voir [Présentation de la publication d’audiences](/help/components/audiences/audiences-overview.md))
+>[!NOTE]
+>
+>L’analyse de l’audience est différente de la publication d’audience, qui vous permet de créer et de publier des audiences découvertes dans Customer Journey Analytics sur Adobe Experience Platform pour le ciblage et la personnalisation des clients. Pour plus d’informations sur la publication d’audiences, voir [Présentation de la publication d’audiences](/help/components/audiences/audiences-overview.md).
+
+L’analyse de l’audience vous permet d’ingérer des données d’appartenance à une audience à partir de jeux de données Profil Experience Platform dans une connexion Customer Journey Analytics. Les audiences deviennent disponibles en tant que nouvelles dimensions à utiliser dans Analysis Workspace.
+
+Le diagramme suivant et le tableau associé présentent une représentation de haut niveau de la manière dont une configuration d’analyse de l’audience dans Customer Journey Analytics rend les données d’audience d’Experience Platform disponibles dans Analysis Workspace :
+
+![Présentation de l’analyse de l’audience](assets/audience-analysis-overview.png)
+
+| Nombre | Fonctionnalité | Fonction |
+|---------|----------|---------|
+| 1 | Configuration de l’analyse de l’audience | Interface de configuration de Customer Journey Analytics utilisée pour configurer l’analyse des audiences. |
+| 2 | Sandbox | Doit contenir le jeu de données de profil que vous souhaitez ajouter à votre connexion. |
+| 3 | Jeu de données de profil | Doit inclure les données d’audience Experience Platform que vous souhaitez analyser. Ce jeu de données de profil est ajouté à la connexion que vous sélectionnez. |
+| 4 | Politique de fusion | Politique de fusion associée aux audiences Experience Platform que vous souhaitez analyser. |
+| 5 | Données de profil | Données de profil associées à la politique de fusion que vous sélectionnez. Ces données sont disponibles dans les jeux de données Experience Platform. |
+| 6 | Nouveau jeu de données de recherche | Fournit des noms conviviaux pour les nouvelles dimensions d’audience créées. Le jeu de données de recherche est automatiquement créé et ajouté à la connexion, ainsi que le jeu de données de profil que vous sélectionnez. |
+| 7 | Connexion | La connexion à laquelle vous souhaitez ajouter le jeu de données de profil que vous sélectionnez. |
+| 8 | Nouvelles dimensions d’audience | Nouvelles dimensions d’audience<!--and metrics?--> qui représentent les audiences Experience Platform incluses dans le jeu de données de profil que vous avez sélectionné et qui sont disponibles pour la création de rapports dans Analysis Workspace. Ces dimensions sont automatiquement créées. |
+| 9 | Vues des données | Vues de données sélectionnées associées à votre connexion. Il s’agit des vues de données que vous souhaitez utiliser lors de l’analyse des données d’audience Experience Platform dans Analysis Workspace. Ces vues de données sont automatiquement configurées avec les données d’audience Experience Platform pour la création de rapports. |
+| 10 | Analysis Workspace | Zone de Customer Journey Analytics dans laquelle vous créez des rapports qui incluent les audiences Experience Platform ingérées. |
+
+## Configuration de l’analyse de l’audience
+
+Lorsque vous configurez l’analyse de l’audience, vous sélectionnez le sandbox et la politique de fusion associés aux audiences Experience Platform que vous souhaitez analyser. Customer Journey Analytics crée un jeu de données de recherche, puis ajoute automatiquement le jeu de données de recherche et le jeu de données de profil à la connexion que vous choisissez.
+
+Pour plus d’informations, voir [Configuration de l’analyse de l’audience](/help/connections/audience-analysis/audience-analysis-configure.md).
+
+## Analyse des données d’audience dans Customer Journey Analytics
 
 Grâce aux données d’audience disponibles dans Customer Journey Analytics, vous pouvez obtenir des informations exploitables sur le comportement des membres de l’audience sur divers canaux.
 
@@ -26,4 +55,15 @@ Vous pouvez, par exemple, suivre le comportement de clients individuels qui ont 
 * Clics publicitaires de l’e-mail au site qui ont finalement abouti à un achat
 
 * Membres de l’audience qui ont finalement effectué un achat en magasin
+
+Pour plus d’informations, voir [Analyse des audiences Experience Platform dans Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).
+
+
+
+
+
+
+
+
+
 

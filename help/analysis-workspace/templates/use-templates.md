@@ -4,7 +4,7 @@ title: Utiliser des modèles
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 0e282bc341588032fadee45cc128663cf557b21f
+source-git-commit: 6cb72495bd190a31f0cb1533f0b33a0929d8a35b
 workflow-type: tm+mt
 source-wordcount: '20775'
 ht-degree: 97%
@@ -482,6 +482,13 @@ Les modèles suivants sont disponibles :
 
 ### Web : audience {#web-audience}
 
+<!--CJA only-->
+
+>[!CONTEXTUALHELP]
+>id="template--audienceOverview"
+>title="Affichez les audiences représentées parmi les personnes qui visitent votre site."
+>abstract="**Cela peut vous aider** entre autres à mieux comprendre les informations générales sur les audiences, leur origine (RTCDP, Customer Journey Analytics, etc.), le chevauchement des audiences.<br/>**En fonction de ce que vous avez appris** vous pouvez effectuer un certain nombre de tâches, comme utiliser les données pour vous concentrer sur les efforts marketing pour ces audiences spécifiques, ou créer des expériences personnalisées pour les clients qui s’étendent sur plusieurs audiences.<br/> Ce modèle utilise les dimensions Nom de l’audience, Origine de l’audience, Nom de l’audience sortie et Origine de l’audience sortie ."
+
 <!--AA only-->
 
 >[!CONTEXTUALHELP]
@@ -593,11 +600,6 @@ Les modèles suivants sont disponibles :
 <!--Both AA and CJA-->
 
 >[!CONTEXTUALHELP]
->id="template--audienceOverview"
->title="Affichez les audiences représentées parmi les personnes qui visitent votre site."
->abstract="**Cela peut vous aider** entre autres à mieux comprendre les informations générales sur les audiences, leur origine (RTCDP, Customer Journey Analytics, etc.), le chevauchement des audiences.<br/>**En fonction de ce que vous avez appris** vous pouvez effectuer un certain nombre de tâches, comme utiliser les données pour vous concentrer sur les efforts marketing pour ces audiences spécifiques, ou créer des expériences personnalisées pour les clients qui s’étendent sur plusieurs audiences.<br/> Ce modèle utilise les dimensions Nom de l’audience, Origine de l’audience, Nom de l’audience sortie et Origine de l’audience sortie ."
-
->[!CONTEXTUALHELP]
 >id="template--consentPolicyOverview"
 >title="Permet d’afficher le pays d’origine des personnes consultant le site."
 >abstract="**Cela peut vous aider** à mieux comprendre les pays les plus populaires d’où proviennent les personnes accédant à votre site.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme utiliser les données pour vous concentrer sur les efforts marketing dans ces pays ou vous assurer que l’expérience de votre site est optimale dans les pays qui ont des langues principales différentes.<br/>Ce modèle utilise la dimension Pays."
@@ -649,6 +651,8 @@ Les modèles suivants sont disponibles :
 
 
 Les modèles suivants sont disponibles :
+
+<!--need to add audience overview: - **[!UICONTROL Audience overview]** - View which audiences are represented among the people visiting your site.<p>**This can help you** better understand general information about the audiences, where the audiences originated (RTCDP, Customer Journey Analytics, and so forth), audience overlap, and more.</p><p>**Based on what you learn, you might** do any number of things, like use the data to focus on marketing efforts for these specific audiences, or create tailored experiences for customers who span multiple audiences.</p><p>This template uses the Audience Name, Audience Origin, Exited Audience Name, and Exited Audience Origin dimensions.</p> - -->
 
 | Nom du modèle | Pourquoi utiliser ce modèle <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- | 
@@ -1005,7 +1009,7 @@ Les modèles suivants sont disponibles :
 
 >[!CONTEXTUALHELP]
 >id="cja-template--survey"
->title="Affichez l’interaction client pour vos questionnaires. Affichez le nombre de débuts et d’achèvements, les questions et réponses principales, ainsi que le nombre de participantes et participants nouveaux et réguliers."
+>title="Affichez l’engagement client pour vos questionnaires. Affichez le nombre de débuts et d’achèvements, les questions et réponses principales, ainsi que le nombre de participantes et participants nouveaux et réguliers."
 >abstract="**Cela peut vous aider** à mieux comprendre les niveaux d’engagement et le taux de succès de vos questionnaires.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre de tâches, comme ajuster les futurs questionnaires pour en améliorer la participation."
 
 >[!CONTEXTUALHELP]
@@ -1021,7 +1025,7 @@ Les modèles suivants sont disponibles :
 | [!UICONTROL **Tableau de bord du centre dʼappel**] | Affichez les données du centre d’appel, notamment pourquoi les clientes et clients ont appelé et combien de fois. <p>**Cela peut vous aider** à mieux comprendre où les clientes et clients rencontrent des problèmes et où les ressources du centre d’appel sont dépensées.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre de tâches, comme résoudre les problèmes de produit qui entraînent une augmentation du trafic du centre d’appel, ce qui améliore finalement la rentabilité du produit.</p> |
 | **Point de vente** | Affichez les données sur les transactions de point de vente (POS), y compris le chiffre d’affaires généré, les commandes passées et les unités vendues. Ce modèle inclut également des visualisations qui affichent des informations sur les principaux magasins, les principaux produits et les principales catégories de produits, ainsi que sur les ventes en ligne et hors ligne. <p>**Cela peut vous aider** à mieux comprendre quels sont vos produits les plus vendus dans les magasins et en ligne.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre de tâches, comme affecter plus de ressources marketing à vos produits et canaux dont les performances sont les meilleures.</p><p>Ce modèle utilise les mesures Utilisateurs et utilisatrices, Chiffre d’affaires et Commandes.</p> |
 | **Analyse des e-mails Journey Optimizer** | Découvrez comment les e-mails que vous concevez et envoyez à l’aide d’Adobe Journey Optimizer génèrent des abonnements, des membres du programme de fidélité et des opportunités de vente croisée. <p>**Cela peut vous aider** à mieux comprendre l’efficacité des e-mails que vous concevez et envoyez à l’aide d’Adobe Journey Optimizer.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre de tâches, comme ajuster votre stratégie en matière d’e-mails pour une campagne par e-mail donnée.</p> |
-| **Enquête** | Affichez l’interaction client pour vos questionnaires. Affichez le nombre de débuts et d’achèvements, les questions et réponses principales, ainsi que le nombre de participantes et participants nouveaux et réguliers.<p>**Cela peut vous aider** à mieux comprendre les niveaux d’engagement et le taux de succès de vos questionnaires.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre de tâches, comme ajuster les futurs questionnaires pour en améliorer la participation.</p><p>Ce modèle utilise les mesures Utilisateurs et utilisatrices, Événements, Début du questionnaire, Fin du questionnaire et Taux d’achèvement du questionnaire.</p> |
+| **Enquête** | Affichez l’engagement client pour vos questionnaires. Affichez le nombre de débuts et d’achèvements, les questions et réponses principales, ainsi que le nombre de participantes et participants nouveaux et réguliers.<p>**Cela peut vous aider** à mieux comprendre les niveaux d’engagement et le taux de succès de vos questionnaires.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre de tâches, comme ajuster les futurs questionnaires pour en améliorer la participation.</p><p>Ce modèle utilise les mesures Utilisateurs et utilisatrices, Événements, Début du questionnaire, Fin du questionnaire et Taux d’achèvement du questionnaire.</p> |
 | **Vue d’ensemble de l’utilisation du produit** | Observez comment votre organisation utilise Customer Journey Analytics.<p>**Cela peut vous aider** à mieux comprendre le nombre de personnes de votre organisation qui utilisent Customer Journey Analytics, ainsi que la fréquence et les tendances d’utilisation au fil du temps. Vous pouvez également voir le nombre de projets créés et les détails de ces projets. Voyez les composants, les visualisations et les panneaux les plus utilisés, entre autres statistiques d’utilisation. [En savoir plus](/help/tools/product-usage/usage-overview.md)</p><p>**Sur la base de ce que vous avez appris, vous pouvez** effectuer un certain nombre d’opérations, comme supprimer des projets ou des composants inutilisés, ou former les utilisateurs et utilisatrices aux fonctionnalités les plus populaires.</p> |
 
 ### Journey Optimizer {#AJO-templates}
