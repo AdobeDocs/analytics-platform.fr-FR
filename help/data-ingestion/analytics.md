@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5cbfa922-6d6e-453a-9558-abfcfb80449d
 role: Admin
-source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
+source-git-commit: 9c4ae8174086559ee552c5ffc95a8a7b0009f126
 workflow-type: tm+mt
-source-wordcount: '1181'
+source-wordcount: '1193'
 ht-degree: 79%
 
 ---
@@ -20,7 +20,7 @@ Ce guide de démarrage rapide explique comment utiliser les données collectées
 >
 >Vous disposez d’une licence Adobe Analytics et l’avez déployée sur un ou plusieurs de vos sites Web, en utilisant l’une des méthodes de mise en œuvre documentées :
 >
->- [Mise en œuvre d’Analytics à l’aide d’Experience Platform Edge](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/overview.html?lang=fr)
+>- [Mise en œuvre d’Analytics à l’aide d’Experience Platform Edge](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/overview.html)
 >
 >- [Mise en œuvre d’Analytics à l’aide de l’extension Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html?lang=fr)
 >
@@ -56,7 +56,7 @@ Créer un connecteur source Adobe Analytics :
 
    ![Fenêtre Adobe Experience Platform avec les sources sélectionnées et les applications Adobe et Ajouter des données en surbrillance.](./assets/sources-overview.png)
 
-4. Sélectionnez **[!UICONTROL Suite de rapports]**. Dans la liste des suites de rapports, sélectionnez celle que vous souhaitez utiliser.
+4. Sélectionnez **[!UICONTROL Suite de rapports]**. Dans la liste des suites de rapports, sélectionnez celle que vous souhaitez utiliser.<br/> Vous pouvez également utiliser ![Rechercher](/help/assets/icons/Search.svg) **[!UICONTROL _Rechercher_]** pour rechercher une suite de rapports.
 
    ![Fenêtre Adobe Experience Platform affichant la liste Suites de rapports](./assets/report-suites.png)
 
