@@ -1,8 +1,8 @@
 ---
-source-git-commit: 7d354ce65f72838c007d2b9faf02848d86fd7c0f
+source-git-commit: b2a13524760f9d466696534bc8b9691f3b4dfb8a
 workflow-type: tm+mt
-source-wordcount: '4990'
-ht-degree: 98%
+source-wordcount: '5005'
+ht-degree: 99%
 
 ---
 # Extraits
@@ -128,7 +128,7 @@ Un modèle d’attribution détermine les éléments de dimension crédités pou
 
 Un conteneur d’attribution définit la portée souhaitée pour l’attribution. Les options possibles sont les suivantes :
 
-* **Session :** recherche en amont jusqu’au début d’une session au cours de laquelle une conversion s’est produite. Les intervalles de recherche en amont de session respectent le [délai d’expiration de session](/help/data-views/create-dataview.md#session-settings) modifié dans une vue de données. Lorsque **[!UICONTROL Session]** est sélectionné, l’intervalle de recherche en amont [Attribution](#atribution-lookback-window) est automatiquement défini sur **[!UICONTROL Intervalle de création de rapports]** et ne peut pas être modifié.
+* **Session :** recherche en amont jusqu’au début d’une session au cours de laquelle une conversion s’est produite. Les intervalles de recherche en amont des sessions respectent le [délai d’expiration de session](/help/data-views/create-dataview.md#session-settings) modifié dans une vue de données. Lorsque l’option **[!UICONTROL Session]** est sélectionnée, l’[intervalle de recherche en amont Attribution](#atribution-lookback-window) est automatiquement défini sur **[!UICONTROL Intervalle de rapport]** et ne peut pas être modifié.
 * **Personne** : examine les conversions à partir de la portée du conteneur de personnes.
 * **Compte global** [!BADGE B2B Edition]{type=Informative} : examine les conversions à partir de la portée du conteneur de comptes globaux.
 * **Comptes** [!BADGE B2B Edition]{type=Informative} : examine les conversions à partir de la portée du conteneur de personnes.
@@ -139,7 +139,7 @@ Un conteneur d’attribution définit la portée souhaitée pour l’attribution
 
 Un intervalle de recherche en amont des attributions correspond à la durée pendant laquelle une conversion doit effectuer une recherche en amont pour englober les points de contact. Si un élément de dimension est défini en dehors de l’intervalle de recherche en amont, la valeur n’est incluse dans aucun calcul d’attribution.
 
-* **[!UICONTROL Intervalle de création de rapports]** : remonte au début de l’intervalle de création de rapports à partir du moment où la conversion a eu lieu.
+* **[!UICONTROL Intervalle de rapport]** : remonte au début de l’intervalle de rapport, à partir du moment où la conversion a eu lieu.
 * **14 jours** : remonte jusqu’à 14 jours en arrière à partir du moment où la conversion a eu lieu.
 * **30 jours** : remonte jusqu’à 30 jours en arrière à partir du moment où la conversion a eu lieu.
 * **60 jours** : remonte jusqu’à 60 jours en arrière à partir du moment où la conversion a eu lieu.
@@ -155,7 +155,7 @@ Examinez l’exemple suivant :
 1. Le 18 septembre, la personne arrive de nouveau sur votre site par le biais d’un lien sur les médias sociaux qu’une personne de son entourage lui a envoyé. Ils ajoutent plusieurs articles à leur panier, mais n’achètent rien.
 1. Le 24 septembre, votre équipe marketing leur envoie un courrier électronique contenant un bon pour certains articles de leur panier. Ils appliquent le bon, mais se rendent sur plusieurs autres sites pour voir s’il existe d’autres bons. Ils en trouvent un autre par le biais d’une annonce d’affichage, puis effectuent un achat de 50 $.
 
-Selon votre intervalle de création de rapports (par exemple, du 10 au 24 septembre), le modèle d’attribution, le conteneur et les canaux reçoivent un crédit différent. Voir le tableau ci-dessous pour obtenir des exemples :
+Selon votre intervalle de rapport (par exemple, du 10 au 24 septembre), le modèle d’attribution, le conteneur et les canaux reçoivent un crédit différent. Voir le tableau ci-dessous pour obtenir des exemples :
 
 | Modèle | Conteneur | Intervalle de recherche en amont | Explication |
 |---|---|---|---|
@@ -286,3 +286,11 @@ Utilisez les informations suivantes pour choisir la visualisation qui répond le
 | [!UICONTROL Débuts de session] | Nombre dʼévénements qui étaient le premier événement dʼune session. Lorsquʼelle est utilisée dans une définition de filtre (par exemple, « [!UICONTROL Débuts de session] existe »), cette mesure ne segmente que le premier événement de chaque session.<p>Ce composant doit être inclus dans votre vue de données pour que la [mesure calculée](/help/components/calc-metrics/default-calcmetrics.md) suivante soit disponible dans Workspace : <ul><li>Taux de début de session</li></p> |
 | [!UICONTROL Sessions] | En fonction des paramètres de session de la vue de données. |
 | [!UICONTROL Durée (secondes)] | Additionne le temps entre deux valeurs différentes pour une dimension.<p>Ce composant doit être inclus dans votre vue de données pour que la [mesure calculée](/help/components/calc-metrics/default-calcmetrics.md) suivante soit disponible dans Workspace : <ul><li>Durée par personne</li><li>Durée par session</li></p> |
+
+
+## Basé sur un modèle relationnel {#relational-model-based}
+
+>[!INFO]
+>
+>Dans l’interface de Customer Journey Analytics, les jeux de données **[!UICONTROL relationnels]** peuvent être libellés comme **[!UICONTROL basés sur un modèle]**.
+>

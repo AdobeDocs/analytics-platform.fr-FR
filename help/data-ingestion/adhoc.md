@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Basics
 role: Admin
 exl-id: 17b5842f-dc81-481f-8b21-dc90a133adcf
-source-git-commit: edf7bdac87d9bed48244ad80521bbbf83c48f7b6
+source-git-commit: c9d7a4596a842ab7d949364e3469747d20ca15b4
 workflow-type: tm+mt
 source-wordcount: '1623'
 ht-degree: 24%
@@ -94,11 +94,11 @@ Dans l’interface **[!UICONTROL Schémas]** > **[!UICONTROL Exemples de donnée
 
 - Sélectionnez l’objet de nom du client le plus élevé sous **[!UICONTROL Schémas]** > **[!UICONTROL Exemples de données à partir de CSV - schéma ad hoc - XXXXXXXXXXX]** pour afficher les champs dans l’objet . Les champs dans l’objet représentent la structure du fichier CSV. Le schéma est créé automatiquement en fonction du chargement des données ad hoc.
 
-  ![&#x200B; Schéma ad hoc &#x200B;](dataset/../assets/adhoc-schema.png)
+  ![ Schéma ad hoc ](dataset/../assets/adhoc-schema.png)
 
   >[!NOTE]
   >
-  >Le workflow définit tous les champs du schéma comme étant de type Chaîne. Vous ne pouvez pas modifier ce type ultérieurement. Si vous avez besoin de plus de flexibilité dans la définition d’un schéma ad hoc, pensez à [utiliser l’API pour créer un schéma ad hoc](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/tutorials/ad-hoc) puis à utiliser le workflow [Créer un jeu de données à partir d’un schéma](https://experienceleague.adobe.com/fr/docs/experience-platform/catalog/datasets/user-guide#schema).
+  >Le workflow définit tous les champs du schéma comme étant de type Chaîne. Vous ne pouvez pas modifier ce type ultérieurement. Si vous avez besoin de plus de flexibilité dans la définition d’un schéma ad hoc, pensez à [utiliser l’API pour créer un schéma ad hoc](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/tutorials/ad-hoc) puis à utiliser le workflow [Créer un jeu de données à partir d’un schéma](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide#schema).
   > 
 
 
@@ -151,11 +151,11 @@ Créer une connexion :
 
    1. Sélectionnez **[!UICONTROL Enregistrer]**.
 
-Consultez [&#x200B; Paramètres de jeu de données ad hoc &#x200B;](/help/connections/create-connection.md#adhoc-dataset) pour plus d’informations sur les paramètres disponibles pour les jeux de données ad hoc.
+Consultez [ Paramètres de jeu de données ad hoc ](/help/connections/create-connection.md#adhoc-dataset) pour plus d’informations sur les paramètres disponibles pour les jeux de données ad hoc.
 
 >[!IMPORTANT]
 >
->En plus de la recommandation générale de ne pas utiliser de jeux de données et de schémas ad hoc pour les données de série temporelle, vous ne pouvez pas utiliser le workflow **[!UICONTROL Créer un jeu de données à partir de CSV]** pour les données de série temporelle. Ce workflow définit tous les champs comme étant de type Chaîne que vous ne pouvez pas modifier par la suite. Lorsque vous ajoutez un jeu de données basé sur une série temporelle (événement ou résumé) à une connexion, ce type de jeu de données nécessite la définition d’au moins un champ de type DateTime.<br/>Si vous devez utiliser des données de série temporelle ad hoc, pensez à [utiliser l’API pour créer un schéma ad hoc](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/tutorials/ad-hoc#token_type=bearer&expires_in=43197438) puis à utiliser le workflow [Créer un jeu de données à partir d’un schéma](https://experienceleague.adobe.com/fr/docs/experience-platform/catalog/datasets/user-guide#schema).
+>En plus de la recommandation générale de ne pas utiliser de jeux de données et de schémas ad hoc pour les données de série temporelle, vous ne pouvez pas utiliser le workflow **[!UICONTROL Créer un jeu de données à partir de CSV]** pour les données de série temporelle. Ce workflow définit tous les champs comme étant de type Chaîne que vous ne pouvez pas modifier par la suite. Lorsque vous ajoutez un jeu de données basé sur une série temporelle (événement ou résumé) à une connexion, ce type de jeu de données nécessite la définition d’au moins un champ de type DateTime.<br/>Si vous devez utiliser des données de série temporelle ad hoc, pensez à [utiliser l’API pour créer un schéma ad hoc](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/ad-hoc#token_type=bearer&expires_in=43197438) puis à utiliser le workflow [Créer un jeu de données à partir d’un schéma](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide#schema).
 
 
 Après avoir créé une [connexion](/help/connections/overview.md), vous pouvez effectuer diverses tâches de gestion, telles que [sélectionner et combiner des jeux de données](/help/connections/combined-dataset.md), [vérifier le statut des jeux de données d’une connexion et le statut de l’ingestion des données](/help/connections/manage-connections.md) etc.
@@ -185,7 +185,7 @@ Créer une vue de données :
    1. Ajoutez n’importe quel champ de schéma et/ou composant standard que vous souhaitez inclure dans les zones de composant **[!UICONTROL MESURES]** ou **[!UICONTROL DIMENSIONS]**. Veillez à ajouter les champs pertinents du jeu de données contenant les données ad hoc. Pour accéder à ces champs :
 
       1. Sélectionnez **[!UICONTROL Jeux de données d’événement]**.
-      1. Sélectionnez **[!UICONTROL Champs ad hoc et basés sur un modèle]**.
+      1. Sélectionnez **[!UICONTROL Champs ad hoc et relationnels]**.
 
          ![Vue de données - Composants ad hoc](assets/cja-dataview-components-adhoc.png)
 

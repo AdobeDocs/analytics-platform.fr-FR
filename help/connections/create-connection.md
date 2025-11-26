@@ -5,7 +5,7 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: c1d0775ad7fc1c340a70e57e0f805349d21c639c
+source-git-commit: b2a13524760f9d466696534bc8b9691f3b4dfb8a
 workflow-type: tm+mt
 source-wordcount: '8027'
 ht-degree: 61%
@@ -115,7 +115,7 @@ L’expérience de workflow de création et de modification de connexion apporte
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Créer et modifier une connexion](https://video.tv.adobe.com/v/3409299/?captions=fre_fr&quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Créer et modifier une connexion](https://video.tv.adobe.com/v/343044/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 
@@ -182,8 +182,8 @@ Sur l’écran **[!UICONTROL Connexions]** > **[!UICONTROL *Nom de la connexion 
    | **[!UICONTROL ID de personne]** | ID de personne utilisé pour prendre en charge les rapports des personnes pour le jeu de données. |
    | **[!UICONTROL Clé]** | Clé utilisée pour un jeu de données de recherche. |
    | **[!UICONTROL Clé correspondante]** | La clé correspondante utilisée pour un jeu de données de recherche. |
-   | **[!UICONTROL Importer de nouvelles données]** | Statut de l’import des nouvelles données pour le jeu de données : <p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _ activés]**&#x200B;si le jeu de données est configuré pour importer de nouvelles données, et<p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _x désactivés_]** si le jeu de données est configuré pour ne pas importer de nouvelles données. |
-   | **[!UICONTROL Renvoyer les données]** | Statut des données de renvoi pour le jeu de données.<p>![Statut rouge](assets/status-red.svg) **[!UICONTROL _x _renvois ayant échoué]**&#x200B;pour le nombre de renvois ayant échoué,<p>![Statut rouge](assets/status-orange.svg) **[!UICONTROL _x _renvois en cours de traitement]**&#x200B;pour le nombre de renvois en cours de traitement,<p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _renvois terminés]**&#x200B;pour le nombre de renvois terminés, et<p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _Désactivé_]** au cas où aucun renvoi n’est configuré. |
+   | **[!UICONTROL Importer de nouvelles données]** | Statut de l’import des nouvelles données pour le jeu de données : <p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _ activés]**si le jeu de données est configuré pour importer de nouvelles données, et<p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _x désactivés_]** si le jeu de données est configuré pour ne pas importer de nouvelles données. |
+   | **[!UICONTROL Renvoyer les données]** | Statut des données de renvoi pour le jeu de données.<p>![Statut rouge](assets/status-red.svg) **[!UICONTROL _x _renvois ayant échoué]**pour le nombre de renvois ayant échoué,<p>![Statut rouge](assets/status-orange.svg) **[!UICONTROL _x _renvois en cours de traitement]**pour le nombre de renvois en cours de traitement,<p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _renvois terminés]**pour le nombre de renvois terminés, et<p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _Désactivé_]** au cas où aucun renvoi n’est configuré. |
 
    Vous pouvez rechercher un jeu de données spécifique à l’aide du champ ![Rechercher](/help/assets/icons/Search.svg).
 
@@ -228,8 +228,8 @@ Sur l’écran **[!UICONTROL Connexions]** > **[!UICONTROL *Nom de la connexion 
    | **[!UICONTROL ID de personne]** | ID de personne utilisé pour prendre en charge les rapports des personnes pour le jeu de données. |
    | **[!UICONTROL Clé]** | Clé utilisée pour un jeu de données de recherche. |
    | **[!UICONTROL Clé correspondante]** | La clé correspondante utilisée pour un jeu de données de recherche. |
-   | **[!UICONTROL Importer de nouvelles données]** | Statut de l’import des nouvelles données pour le jeu de données : <p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _ activés]**&#x200B;si le jeu de données est configuré pour importer de nouvelles données, et<p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _x désactivés_]** si le jeu de données est configuré pour ne pas importer de nouvelles données. |
-   | **[!UICONTROL Renvoyer les données]** | Statut des données de renvoi pour le jeu de données.<p>![Statut rouge](assets/status-red.svg) **[!UICONTROL _x _renvois ayant échoué]**&#x200B;pour le nombre de renvois ayant échoué,<p>![Statut rouge](assets/status-orange.svg) **[!UICONTROL _x _renvois en cours de traitement]**&#x200B;pour le nombre de renvois en cours de traitement,<p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _renvois terminés]**&#x200B;pour le nombre de renvois terminés, et<p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _Désactivé_]** au cas où aucun renvoi n’est configuré. |
+   | **[!UICONTROL Importer de nouvelles données]** | Statut de l’import des nouvelles données pour le jeu de données : <p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _ activés]**si le jeu de données est configuré pour importer de nouvelles données, et<p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _x désactivés_]** si le jeu de données est configuré pour ne pas importer de nouvelles données. |
+   | **[!UICONTROL Renvoyer les données]** | Statut des données de renvoi pour le jeu de données.<p>![Statut rouge](assets/status-red.svg) **[!UICONTROL _x _renvois ayant échoué]**pour le nombre de renvois ayant échoué,<p>![Statut rouge](assets/status-orange.svg) **[!UICONTROL _x _renvois en cours de traitement]**pour le nombre de renvois en cours de traitement,<p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _renvois terminés]**pour le nombre de renvois terminés, et<p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _Désactivé_]** au cas où aucun renvoi n’est configuré. |
 
    Vous pouvez rechercher un jeu de données spécifique à l’aide du champ ![Rechercher](/help/assets/icons/Search.svg).
 
@@ -242,6 +242,9 @@ Vous [ajoutez un ou plusieurs jeux de données](#add-datasets) ou [modifiez des 
 >Les valeurs antérieures à l’année 1900 pour les champs Date et Date et heure d’une ligne dans n’importe quel type de jeu de données sont remplacées par la valeur `null` avant l’ingestion de la ligne.<br/>Les lignes d’un événement ou d’un jeu de données de résumé dont la valeur d’horodatage est antérieure à l’année 1900 sont supprimées de l’ingestion.
 
 
+{{relational-model-based}}
+
+
 >[!CONTEXTUALHELP]
 >id="cja_connection_primaryid"
 >title="ID principal"
@@ -250,7 +253,7 @@ Vous [ajoutez un ou plusieurs jeux de données](#add-datasets) ou [modifiez des 
 >[!CONTEXTUALHELP]
 >id="cja_connection_optionalcontainers"
 >title="Conteneurs facultatifs"
->abstract="Sélectionnez des conteneurs supplémentaires.<br/><br/>**[!UICONTROL Compte global &#x200B;]** : permet la configuration de comptes globaux dans une connexion.<br/>**[!UICONTROL Opportunité]** : permet la configuration des opportunités dans une connexion.<br/>**[!UICONTROL Groupe d’achat &#x200B;]** : permet la configuration des groupes d’achat dans une connexion."
+>abstract="Sélectionnez des conteneurs supplémentaires.<br/><br/>**[!UICONTROL Compte global ]** : permet la configuration de comptes globaux dans une connexion.<br/>**[!UICONTROL Opportunité]** : permet la configuration des opportunités dans une connexion.<br/>**[!UICONTROL Groupe d’achat ]** : permet la configuration des groupes d’achat dans une connexion."
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_accountid"
@@ -315,7 +318,7 @@ Vous [ajoutez un ou plusieurs jeux de données](#add-datasets) ou [modifiez des 
 >[!CONTEXTUALHELP]
 >id="connection_optionalcontainers"
 >title="Conteneurs facultatifs"
->abstract="Sélectionnez des conteneurs supplémentaires.<br/><br/>**[!UICONTROL Compte global &#x200B;]** : permet la configuration de comptes globaux dans une connexion.<br/>**[!UICONTROL Opportunité]** : permet la configuration des opportunités dans une connexion.<br/>**[!UICONTROL Groupe d’achat &#x200B;]** : permet la configuration des groupes d’achat dans une connexion."
+>abstract="Sélectionnez des conteneurs supplémentaires.<br/><br/>**[!UICONTROL Compte global ]** : permet la configuration de comptes globaux dans une connexion.<br/>**[!UICONTROL Opportunité]** : permet la configuration des opportunités dans une connexion.<br/>**[!UICONTROL Groupe d’achat ]** : permet la configuration des groupes d’achat dans une connexion."
 
 >[!CONTEXTUALHELP]
 >id="connection_personid"
@@ -355,7 +358,7 @@ Vous [ajoutez un ou plusieurs jeux de données](#add-datasets) ou [modifiez des 
 >[!CONTEXTUALHELP]
 >id="connection_matchingkeytype"
 >title="Type de clé correspondante"
->abstract="Sélectionnez le mode de jointure : en fonction d’un champ ou d’un conteneur correspondant.<br/><br/>**[!UICONTROL Correspondance par champ &#x200B;]** : sélectionnez un champ à joindre à l’un des jeux de données d’événement. Si cette liste est vide, vous n’avez probablement pas ajouté ni configuré de jeu de données d’événement.<br/>**[!UICONTROL Conteneur correspondant]** : sélectionnez un conteneur à utiliser à joindre à l’un des jeux de données d’événement."
+>abstract="Sélectionnez le mode de jointure : en fonction d’un champ ou d’un conteneur correspondant.<br/><br/>**[!UICONTROL Correspondance par champ ]** : sélectionnez un champ à joindre à l’un des jeux de données d’événement. Si cette liste est vide, vous n’avez probablement pas ajouté ni configuré de jeu de données d’événement.<br/>**[!UICONTROL Conteneur correspondant]** : sélectionnez un conteneur à utiliser à joindre à l’un des jeux de données d’événement."
 
 >[!CONTEXTUALHELP]
 >id="connection_importnewdata"
@@ -424,7 +427,7 @@ Pour chaque jeu de données que vous avez ajouté à cette connexion, [!UICONTRO
 
 >[!IMPORTANT]
 >
->Ajoutez au moins un jeu de données d’événement ou de résumé (standard ou de type ad hoc ou basé sur un modèle) à votre connexion.
+>Ajoutez au moins un jeu de données d’événement ou de résumé (standard ou de type ad hoc ou relationnel) à votre connexion.
 
 Il existe différents types de jeux de données : [!UICONTROL Événement] données, [!UICONTROL Profil] données, [!UICONTROL Recherche] données et [!UICONTROL Résumé] données, chacun basé sur son schéma XDM correspondant.
 
@@ -432,15 +435,15 @@ Il existe différents types de jeux de données : [!UICONTROL Événement] donn�
 |---|---|---|---|---|
 | **[!UICONTROL Événement]** | Données qui représentent les événements dans le temps. Par exemple, visites web, interactions, transactions, données de point de vente, données d’enquête, données d’impression, etc. Ces données peuvent être des données de flux de clics typiques, avec un ID client ou un ID de cookie et un horodatage. Avec les données d’événement, vous disposez d’une flexibilité quant à l’ID utilisé comme ID de personne. | Définissez sur le champ de date et heure par défaut des schémas basés sur un événement dans [!UICONTROL Experience Platform]. | Tout schéma intégré ou personnalisé basé sur une classe XDM avec le comportement *série temporelle*. Par exemple, *Événement d’expérience XDM* ou *Événement de décision XDM*. | Vous pouvez choisir l&#39;ID de personne ou l&#39;ID de compte [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} à inclure. Chaque schéma du jeu de données défini dans Experience Platform peut disposer de son propre jeu d’une ou de plusieurs identités définies et associées à un espace de noms d’identité. N’importe laquelle de ces identités peut être utilisée comme ID de personne ou ID de compte [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}. Par exemple, l’ID de cookie, l’ID regroupé, l’ID utilisateur, le code de suivi, l’ID de compte [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, etc. |
 | **[!UICONTROL Recherche]** | Vous pouvez ajouter des jeux de données en tant que recherches de champs dans tous les types de jeux de données : Profil, Recherche et Événement (ce dernier a toujours été pris en charge). Cette fonctionnalité supplémentaire accroît la capacité de Customer Journey Analytics à prendre en charge des modèles de données complexes, y compris B2B. Ces données sont utilisées pour rechercher des valeurs ou des clés trouvées dans vos données d’événement, de profil ou de recherche. Vous pouvez ajouter jusqu’à deux niveaux de recherche. (Notez que les [champs dérivés](/help/data-views/derived-fields/derived-fields.md) ne peuvent pas être utilisés comme clés de correspondance pour les recherches dans les connexions.) Vous pouvez, par exemple, charger des données de recherche qui mappent les identifiants numériques de vos données d’événement avec des noms de produits. Voir l’[exemple B2B](/help/use-cases/b2b/example.md). | S.O. | Tout schéma intégré ou personnalisé basé sur une classe XDM avec le comportement *Record*, à l’exception de la classe *XDM Individual Profile*. | S.O. |
-| **[!UICONTROL Profil]** | Données appliquées à vos comptes, personnes, utilisateurs et utilisatrices ou clientes et clients dans les données [!UICONTROL Événement]. Vous permet, par exemple, de charger des données CRM à propos de vos clients. | S.O. | Tout schéma intégré ou personnalisé basé sur la classe *XDM Individual Profile*. | Vous pouvez choisir l’ID de personne/l’ID de compte [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} à inclure. Chaque jeu de données (à l’exception des jeux de données de résumé) défini dans [!DNL Experience Platform] dispose de son propre jeu d’un ou de plusieurs ID de personne ou ID de compte [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} définis. Par exemple, l’ID de cookie, l’ID regroupé, l’ID utilisateur, le code de suivi, l’ID de compte, etc.<br>![ID de personne &#x200B;](assets/person-id.png)**Note** : si vous créez une connexion qui comprend des jeux de données avec des ID différents, les rapports le reflèteront. Pour fusionner des jeux de données, vous devez utiliser le même ID de personne ou ID de compte [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}. |
+| **[!UICONTROL Profil]** | Données appliquées à vos comptes, personnes, utilisateurs et utilisatrices ou clientes et clients dans les données [!UICONTROL Événement]. Vous permet, par exemple, de charger des données CRM à propos de vos clients. | S.O. | Tout schéma intégré ou personnalisé basé sur la classe *XDM Individual Profile*. | Vous pouvez choisir l’ID de personne/l’ID de compte [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} à inclure. Chaque jeu de données (à l’exception des jeux de données de résumé) défini dans [!DNL Experience Platform] dispose de son propre jeu d’un ou de plusieurs ID de personne ou ID de compte [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} définis. Par exemple, l’ID de cookie, l’ID regroupé, l’ID utilisateur, le code de suivi, l’ID de compte, etc.<br>![ID de personne ](assets/person-id.png)**Note** : si vous créez une connexion qui comprend des jeux de données avec des ID différents, les rapports le reflèteront. Pour fusionner des jeux de données, vous devez utiliser le même ID de personne ou ID de compte [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}. |
 | **Résumé** | Données de série temporelle qui ne sont pas associées à un ID de personne individuel. Les données de résumé représentent des données agrégées à un niveau d’agrégation différent, par exemple des campagnes. Vous pouvez utiliser ces données dans Customer Journey Analytics pour prendre en charge divers cas d’utilisation. Voir la section [Données de résumé](/help/data-views/summary-data.md) pour plus d’informations. | Défini automatiquement sur le champ d’horodatage par défaut des schémas de mesures récapitulatives basées sur un événement d’Experience Platform. Seule la granularité horaire ou quotidienne est prise en charge. | Tout schéma intégré ou personnalisé basé sur la classe *Mesures récapitulatives XDM*. | S.O. |
 
-Les types de jeux de données répertoriés ci-dessus peuvent également être basés sur un schéma ad hoc ou basé sur un modèle au lieu d’un schéma XDM générique.
+Les types de jeux de données répertoriés ci-dessus peuvent également être basés sur un schéma ad hoc ou relationnel au lieu d’un schéma XDM générique.
 
 | Type de jeu de données | Description | Date et heure | Schéma | ID de personne |
 |---|---|---|---|---|
-| **[!UICONTROL Ad hoc]** | Données ad hoc basées sur un [schéma ad hoc](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/api/ad-hoc) avec des champs dont l’espace de noms n’est utilisé que par un seul jeu de données. | En fonction du type de jeu de données que vous sélectionnez pour le jeu de données ad hoc. | Tout schéma ad hoc basé sur une classe en fonction du comportement *ad hoc* | En fonction du type de jeu de données que vous sélectionnez pour le jeu de données ad hoc. |
-| **[!UICONTROL Modèle]** | Données basées sur un modèle basées sur un schéma basé sur un modèle. | En fonction du type de jeu de données que vous sélectionnez pour le jeu de données basé sur un modèle. | Tout schéma basé sur un modèle. | En fonction du type de jeu de données que vous sélectionnez pour le jeu de données basé sur un modèle. |
+| **[!UICONTROL Ad hoc]** | Données ad hoc basées sur un [schéma ad hoc](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/api/ad-hoc) avec des champs dont l’espace de noms n’est utilisé que par un seul jeu de données. | En fonction du type de jeu de données que vous sélectionnez pour le jeu de données ad hoc. | Tout schéma ad hoc basé sur une classe en fonction du comportement *ad hoc* | En fonction du type de jeu de données que vous sélectionnez pour le jeu de données ad hoc. |
+| **[!UICONTROL Modèle]** | Données relationnelles basées sur un schéma relationnel. | En fonction du type de jeu de données que vous sélectionnez pour le jeu de données relationnel. | Tout schéma relationnel. | En fonction du type de jeu de données que vous sélectionnez pour le jeu de données relationnel. |
 
 
 ### Ajouter des jeux de données
@@ -459,7 +462,7 @@ Vous pouvez ajouter un ou plusieurs jeux de données Experience Platform lors de
    | Colonne | Description |
    |---|---|
    | **[!UICONTROL Jeu de données]** | Nom du jeu de données. Sélectionnez le nom pour vous diriger vers le jeu de données dans Experience Platform. Sélectionnez ![Info](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) pour afficher une fenêtre contextuelle contenant plus de détails sur le jeu de données. Vous pouvez sélectionner **[!UICONTROL Modifier dans Platform]** pour modifier le jeu de données directement dans Experience Platform. |
-   | **[!UICONTROL Type de jeu de données]** | Le type de jeu de données : [Événement](#event-dataset), [Profil](#profile-dataset), [Recherche](#lookup-dataset), [Résumé](#summary-dataset), [Ad hoc](#ad-hoc-dataset) ou [Model](#model-based-dataset). |
+   | **[!UICONTROL Type de jeu de données]** | Le type de jeu de données : [Événement](#event-dataset), [Profil](#profile-dataset), [Recherche](#lookup-dataset), [Résumé](#summary-dataset), [Ad hoc](#ad-hoc-dataset) ou [Relationnel](#relational-dataset). |
    | **[!UICONTROL Nombre d’enregistrements]** | Total des enregistrements du mois précédent pour le jeu de données dans Experience Platform. |
    | **[!UICONTROL Schéma]** | Schéma du jeu de données. Sélectionnez le nom pour vous diriger vers le schéma dans Experience Platform. |
    | **[!UICONTROL Dernier lot]** | État du dernier lot ingéré dans Experience Platform. Voir [États des lots](https://experienceleague.adobe.com/fr/docs/experience-platform/ingestion/batch/troubleshooting#batch-states) pour plus d’informations. |
@@ -470,7 +473,7 @@ Vous pouvez ajouter un ou plusieurs jeux de données Experience Platform lors de
    * Pour rechercher un jeu de données spécifique, utilisez le champ de recherche ![Rechercher](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg).
    * Pour basculer entre l’affichage ou le masquage des jeux de données sélectionnés, sélectionnez ![Sélectionner](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SelectBoxAll_18_N.svg), **[!UICONTROL Masquer la sélection]** ou **[!UICONTROL Afficher la sélection]**.
    * Pour supprimer un jeu de données de la liste des jeux de données sélectionnés, utilisez ![Fermer](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg). Pour supprimer tous les jeux de données sélectionnés, sélectionnez **[!UICONTROL Effacer tout]**.
-   * Pour afficher les détails d’un jeu de données, sélectionnez ![&#x200B; InfoOutline &#x200B;](/help/assets/icons/InfoOutline.svg).
+   * Pour afficher les détails d’un jeu de données, sélectionnez ![ InfoOutline ](/help/assets/icons/InfoOutline.svg).
 
 
 1. Sélectionnez un ou plusieurs jeux de données, puis sélectionnez **[!UICONTROL Suivant]**. Au moins un événement ou un jeu de données de résumé doit faire partie de la connexion.
@@ -489,7 +492,7 @@ Vous pouvez ajouter un ou plusieurs jeux de données Experience Platform lors de
 Pour modifier un jeu de données déjà configuré pour une connexion, accédez à l’interface **[!UICONTROL Connexions]** > **[!UICONTROL _Nom de la connexion_]** :
 
 1. Sélectionnez ![Plus](/help/assets/icons/More.svg) pour le jeu de données répertorié dans le tableau du jeu de données à modifier
-1. Sélectionnez ![&#x200B; Modifier &#x200B;](/help/assets/icons/Edit.svg) **[!UICONTROL Modifier le jeu de données]**.
+1. Sélectionnez ![ Modifier ](/help/assets/icons/Edit.svg) **[!UICONTROL Modifier le jeu de données]**.
 
 1. Configurez le [paramètres du jeu de données](#dataset-settings) dans la boîte de dialogue **[!UICONTROL Modifier le jeu de données : _Nom du jeu de données_]**.
 
@@ -497,9 +500,9 @@ Pour modifier un jeu de données déjà configuré pour une connexion, accédez 
 
    >[!NOTE]
    >
-   >Vous ne pouvez pas modifier le **[!UICONTROL Type de jeu de données]**, **[!UICONTROL ID de personne]**, **[!UICONTROL Espace de noms d’identité]** et **[!UICONTROL Horodatage]** pour un jeu de données [ad hoc](#ad-hoc-dataset) ou [basé sur un modèle](#model-based-dataset) qui fait partie d’une connexion enregistrée. Pour modifier l’un de ces paramètres :
+   >Vous ne pouvez pas modifier le **[!UICONTROL Type de jeu de données]**, **[!UICONTROL ID de personne]**, **[!UICONTROL Espace de noms d’identité]** et **[!UICONTROL Horodatage]** pour un jeu de données [ad hoc](#ad-hoc-dataset) ou [relationnel](#relational-dataset) qui fait partie d’une connexion enregistrée. Pour modifier l’un de ces paramètres :
    >
-   >1. Supprimez le jeu de données ad hoc ou basé sur un modèle existant de la connexion.
+   >1. Supprimez le jeu de données ad hoc ou relationnel existant de la connexion.
    >1. Ajoutez le même jeu de données avec les paramètres mis à jour à la connexion.
    >
 
@@ -631,33 +634,33 @@ Les paramètres spécifiques d’un jeu de données de résumé sont les suivant
 
 >[!NOTE]
 >
->Bien que sa configuration et sa sélection soient possibles, vous devez éviter, pour des raisons de performances, d’utiliser un jeu de données ad hoc pour les données de série temporelle (événement, résumé). Les jeux de données basés sur modèle ou XDM génériques sont beaucoup plus adaptés aux données de série temporelle que les jeux de données ad hoc.
+>Bien que sa configuration et sa sélection soient possibles, vous devez éviter, pour des raisons de performances, d’utiliser un jeu de données ad hoc pour les données de série temporelle (événement, résumé). Les jeux de données XDM relationnels ou génériques sont beaucoup plus adaptés aux données de série temporelle que les jeux de données ad hoc.
 
 Les paramètres spécifiques à un jeu de données ad hoc sont les suivants :
 
 | Paramètre | Type de jeu de données sélectionné | Description |
 |---|---|---|
 | **[!UICONTROL Type de jeu de données]** | S.O. | Type de données dans le jeu de données ad hoc. Les valeurs possibles sont les suivantes : **[!UICONTROL Événement]**, **[!UICONTROL Profil]**, **[!UICONTROL Recherche]** et **[!UICONTROL Résumé]**. |
-| **[!UICONTROL ID de personne]** | Événement, Profil | Sélectionnez un champ dans le schéma ad hoc ou basé sur un modèle qui représente l’ID de personne. Ce champ peut être n’importe quel champ du jeu de données. Faites votre choix entre **[!UICONTROL Champs d’espace de noms d’identité]** ou **[!UICONTROL Champs de non-identité]**. <br/>Vous ne pouvez sélectionner un identifiant parmi les **[!UICONTROL Espaces de noms d’identité]** que si un ou plusieurs champs du schéma ad hoc sont étiquetés comme identité et possèdent un espace de noms d’identité. |
+| **[!UICONTROL ID de personne]** | Événement, Profil | Sélectionnez un champ dans le schéma ad hoc ou relationnel qui représente l’ID de personne. Ce champ peut être n’importe quel champ du jeu de données. Faites votre choix entre **[!UICONTROL Champs d’espace de noms d’identité]** ou **[!UICONTROL Champs de non-identité]**. <br/>Vous ne pouvez sélectionner un identifiant parmi les **[!UICONTROL Espaces de noms d’identité]** que si un ou plusieurs champs du schéma ad hoc sont étiquetés comme identité et possèdent un espace de noms d’identité. |
 | **[!UICONTROL Espace de noms d’identité]** | Événement | Sélectionnez un espace de noms d’identité si vous avez sélectionné un ID de personne dans les champs **[!UICONTROL Non-identité]**. |
 | **[!UICONTROL Date et heure]** | Événement, Résumé | Sélectionnez un champ dans le schéma ad hoc qui représente le champ d’horodatage. Ce champ peut être n’importe lequel des champs disponibles de type `DateTime`. |
 | **[!UICONTROL Clé]** | Recherche | Clé à utiliser pour un jeu de données de recherche.<br/>Si un enregistrement ne contient pas de valeur pour la clé que vous avez sélectionnée pour le jeu de données de recherche, l’enregistrement est ignoré. |
 | **[!UICONTROL Clé correspondante]** | Recherche | La clé correspondante à joindre à l’un des jeux de données d’événement ou de recherche. Si cette liste est vide, vous n’avez probablement pas ajouté ou configuré d’événement ou de jeu de données de recherche. |
 
 
-#### Jeu de données basé sur un modèle
+#### Jeu de données relationnel
 
 >[!NOTE]
 >
->Les jeux de données basés sur des modèles sont principalement utilisés pour prendre en charge la fonctionnalité Experience Platform Data Mirror for Customer Journey Analytics à venir.
+>Les jeux de données relationnels sont principalement utilisés pour prendre en charge la fonctionnalité Experience Platform Data Mirror for Customer Journey Analytics à venir.
 >
 
-Les paramètres spécifiques d’un jeu de données basé sur un modèle sont les suivants :
+Les paramètres spécifiques à un jeu de données relationnel sont les suivants :
 
 | Paramètre | Type de jeu de données sélectionné | Description |
 |---|---|---|
-| **[!UICONTROL Type de jeu de données]** | S.O. | Type de données dans le jeu de données basé sur un modèle.<br/>Si le jeu de données contient des données de série temporelle, les valeurs possibles sont les suivantes : **[!UICONTROL Événement]** et **[!UICONTROL Résumé]**. <br/>Si le jeu de données contient des données d’enregistrement, les valeurs possibles sont les suivantes : **[!UICONTROL Profil]** et **[!UICONTROL Recherche]**. |
-| **[!UICONTROL ID de personne]** | Événement, Profil | Sélectionnez un champ dans le schéma basé sur le modèle qui représente l’ID de personne. La sélection se limite à la liste des champs du schéma basé sur un modèle qui sont marqués comme Identité et qui possèdent un espace de noms d’identité. |
+| **[!UICONTROL Type de jeu de données]** | S.O. | Type de données dans le jeu de données relationnel.<br/>Si le jeu de données contient des données de série temporelle, les valeurs possibles sont les suivantes : **[!UICONTROL Événement]** et **[!UICONTROL Résumé]**. <br/>Si le jeu de données contient des données d’enregistrement, les valeurs possibles sont les suivantes : **[!UICONTROL Profil]** et **[!UICONTROL Recherche]**. |
+| **[!UICONTROL ID de personne]** | Événement, Profil | Sélectionnez un champ dans le schéma relationnel qui représente l’ID de personne. La sélection se limite à la liste des champs du schéma relationnel qui sont marqués comme Identité et qui possèdent un espace de noms d’identité. |
 | **[!UICONTROL Date et heure]** | Événement, Résumé | Champ défini comme descripteur d’horodatage dans le schéma. Ce champ est automatiquement renseigné. |
 | **[!UICONTROL Clé]** | Recherche | Clé à utiliser pour un jeu de données de recherche.<br/>Si un enregistrement ne contient pas de valeur pour la clé que vous avez sélectionnée pour le jeu de données de recherche, l’enregistrement est ignoré. |
 | **[!UICONTROL Clé correspondante]** | Recherche | Clé correspondante à joindre à l’un des jeux de données d’événement. Si cette liste est vide, vous n’avez probablement pas ajouté ou configuré d’événement ou de jeu de données de recherche. |
@@ -672,7 +675,7 @@ Chaque (type de jeu de données) possède les paramètres communs suivants :
 
 ### Réingérer les données
 
-Vous avez parfois besoin de réingérer des données provenant d’un ou de plusieurs jeux de données dans une connexion. Pour les jeux de données ad hoc ou basés sur un modèle, vous devez [supprimer puis ajouter à nouveau le jeu de données](#edit-a-dataset). Pour d’autres jeux de données, vous pouvez mettre à jour les paramètres. Pour ce faire, procédez comme suit :
+Vous avez parfois besoin de réingérer des données provenant d’un ou de plusieurs jeux de données dans une connexion. Pour les jeux de données ad hoc ou relationnels, vous devez [supprimer, puis ajouter à nouveau le jeu de données](#edit-a-dataset). Pour d’autres jeux de données, vous pouvez mettre à jour les paramètres. Pour ce faire, procédez comme suit :
 
 1. Pour le jeu de données pour lequel vous souhaitez ingérer à nouveau des données :
 
@@ -697,7 +700,7 @@ Lorsque vous supprimez un jeu de données, vous êtes averti des implications de
 
 ### Renvois précédents
 
-Lorsque vous sélectionnez ![Historique](/help/assets/icons/History.svg) **[!UICONTROL Renvois précédents]** dans l’interface, une boîte de dialogue **[!UICONTROL Renvois précédents : _Nom du jeu de données_]**&#x200B;affiche les renvois les plus récents du jeu de données.
+Lorsque vous sélectionnez ![Historique](/help/assets/icons/History.svg) **[!UICONTROL Renvois précédents]** dans l’interface, une boîte de dialogue **[!UICONTROL Renvois précédents : _Nom du jeu de données_]**affiche les renvois les plus récents du jeu de données.
 
 
 ## Vue d’ensemble de la connexion {#preview}
@@ -778,5 +781,5 @@ Ce calcul est effectué pour chaque jeu de données de la connexion.
 >[!MORELIKETHIS]
 >
 >* [Présentation de l’ingestion des données](/help/data-ingestion/data-ingestion.md)
->* Blog : [utilisation des jeux de données d’événement, de recherche et de profil dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-to-leverage-event-lookup-and-profile-datasets-in-adobe/ba-p/681478?profile.language=fr)
+>* Blog : [utilisation des jeux de données d’événement, de recherche et de profil dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-to-leverage-event-lookup-and-profile-datasets-in-adobe/ba-p/681478)
 

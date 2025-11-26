@@ -6,7 +6,7 @@ feature: Basics
 role: Admin
 badgePremium: label="Beta"
 exl-id: 87593d7d-9456-48f8-8d39-5c3d95fe51ec
-source-git-commit: edf7bdac87d9bed48244ad80521bbbf83c48f7b6
+source-git-commit: b2a13524760f9d466696534bc8b9691f3b4dfb8a
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 3%
@@ -27,13 +27,13 @@ Vous trouverez ci-dessous des détails à prendre en compte lors de la configura
 
 ## Schéma
 
-Vous devez créer un [schéma basé sur un modèle](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/schema/model-based){target="_blank"} qui modélise la table native de l’entrepôt de données que vous souhaitez mettre en miroir. Lorsque vous créez le schéma basé sur le modèle, assurez-vous que les exigences suivantes sont remplies :
+Vous devez créer un [schéma relationnel](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/schema/relational){target="_blank"} qui est la table native de l’entrepôt de données que vous souhaitez mettre en miroir. Lorsque vous créez le schéma relationnel, assurez-vous que les exigences suivantes sont remplies :
 
-* Lorsque vous êtes invité à indiquer le type de schéma basé sur un modèle, veillez à sélectionner l&#39;option manuelle .
+* Lorsque vous êtes invité à indiquer le type de schéma relationnel, veillez à sélectionner l’option manuelle .
 * Sélectionnez le schéma approprié pour le type de données. Notez qu’Experience Platform Data Mirror est principalement utilisé pour les données de série temporelle (par exemple, les données d’événement).
 
 * Définir les champs de votre schéma et leurs attributs
-* Configurez les attributs requis pour les champs dans un schéma basé sur un modèle :
+* Configurez les attributs requis pour les champs dans un schéma relationnel :
 
    * clé primaire
    * identifiant de version
@@ -42,7 +42,7 @@ Vous devez créer un [schéma basé sur un modèle](https://experienceleague.ado
 ## Jeu de données
 
 Vous pouvez configurer d’avance un jeu de données pour votre schéma ou créer un jeu de données lors de la configuration de votre connecteur source.
-Lorsque vous créez un jeu de données à l’avance ou sélectionnez un jeu de données, assurez-vous que les données utilisent un [schéma](#schema) basé sur un modèle que vous avez créé précédemment.
+Lorsque vous créez un jeu de données à l’avance ou sélectionnez un jeu de données, assurez-vous que les données utilisent un [schéma](#schema) relationnel que vous avez créé précédemment.
 
 
 ## Connecteur source
@@ -53,9 +53,9 @@ Pour configurer le connecteur source vers les solutions natives d’entrepôt de
 
 Pour l’authentification par rapport à la solution native d’entrepôt de données prise en charge, consultez la documentation Experience Platform appropriée :
 
-* [briques de données Azure](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/databases/databricks)
-* [Google BigQuery](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/databases/bigquery)
-* [Snowflake](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/databases/snowflake)
+* [briques de données Azure](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks)
+* [Google BigQuery](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/bigquery)
+* [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake)
 
 
 ### Sélectionner les données
@@ -67,12 +67,12 @@ Une fois la connexion à votre solution native d’entrepôt de données établi
 
 Assurez-vous d’activer la capture des données de modification. Un panneau d’informations s’affiche, expliquant les exigences relatives à la capture de données de modification.
 
-Spécifiez un jeu de données nouveau ou existant basé sur le schéma basé sur un modèle que vous avez créé précédemment. Spécifiez et sélectionnez d’autres options dans l’interface Détails du flux de données.
+Spécifiez un jeu de données nouveau ou existant basé sur le schéma relationnel que vous avez créé précédemment. Spécifiez et sélectionnez d’autres options dans l’interface Détails du flux de données.
 
 
 ### Mappage
 
-Mappez les champs de la table dans la solution native de l’entrepôt de données aux champs que vous avez spécifiés pour le schéma basé sur le modèle.
+Mappez les champs de la table dans la solution native de l’entrepôt de données aux champs que vous avez spécifiés pour le schéma relationnel.
 
 
 ### Planification
@@ -90,6 +90,6 @@ Une fois la configuration du connecteur source terminée, un flux de données es
 
 >[!MORELIKETHIS]
 >
->Guide de démarrage rapide de [Data Mirror : mise en miroir et utilisation de données basées sur des modèles](model-based.md)
->&#x200B;>[Data Mirror (documentation Experience Platform)](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-mirror/overview)
->&#x200B;>[Schémas basés sur des modèles (documentation Experience Platform)](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/schema/model-based)
+>Guide de démarrage rapide de [Data Mirror : mise en miroir et utilisation des données relationnelles](relational.md)
+>[Data Mirror (documentation Experience Platform)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview)
+>[Schémas relationnels (documentation Experience Platform)](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/schema/relational)
