@@ -4,7 +4,7 @@ description: Importez les données générées par Adobe Journey Optimizer et 
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: 9149a072dc8af3fac0d5272fe84baabca7fb6058
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '3514'
 ht-degree: 100%
@@ -28,14 +28,14 @@ Lorsque vous avez activé la création de rapports de Customer Journey Analyti
 La connexion porte le nom **[!UICONTROL Connexion AJO activée (*nom du sandbox*)]** et contient les valeurs prêtes à l’emploi suivantes pour la configuration et les jeux de données :
 
 | **Paramètres de connexion** | Valeur |
-|---|---| 
+|---|---|
 | [!UICONTROL Nom de la connexion] | `AJO Enabled Connection (`_`sandbox name`_`)` |
 | [!UICONTROL Description de la connexion] | [!UICONTROL *Décrivez votre connexion ici.*] |
 | [!UICONTROL Balises] | [!UICONTROL *Sélectionner les balises*] |
 
 
 | **Paramètres des données** | Valeur |
-|---|---| 
+|---|---|
 | [!UICONTROL Activer la fenêtre dynamique de données] | Activé. [!UICONTROL Nombre de mois sélectionnés] `13`. |
 | [!UICONTROL Sandbox] | [!UICONTROL *Nom du sandbox*] (désactivé ; vous ne pouvez pas modifier ce paramètre). |
 | [!UICONTROL Nombre moyen d’événements quotidiens] | Moins de 1 million (désactivé, vous ne pouvez pas modifier ce paramètre). |

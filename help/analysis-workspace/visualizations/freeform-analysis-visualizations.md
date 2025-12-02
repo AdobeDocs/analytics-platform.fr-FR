@@ -5,7 +5,7 @@ title: Aperçu des visualisations
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
-source-git-commit: 4599a058cef79a28bd6f9b788c2b202c8235298d
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '1738'
 ht-degree: 89%
@@ -14,17 +14,17 @@ ht-degree: 89%
 
 # Visualisations - Aperçu
 
-Workspace offre une variété de visualisations pour créer des représentations visuelles de vos données. Par exemple, des graphiques à barres, des graphiques en anneau, des histogrammes, des graphiques en courbes, des cartes, des nuages de points, etc.
+Workspace offre une variété de visualisations pour créer des représentations visuelles de vos données. Par exemple, des graphiques en barres, des graphiques en anneau, des histogrammes, des graphiques en courbes, des cartes, des nuages de points, etc.
 
 ## Types
 
 Voici les types de visualisation disponibles dans Analysis Workspace :
 
 | Icône | Nom | Description |
-| :---: | --- | ---| 
+| :---: | --- | ---|
 | ![GraphArea](/help/assets/icons/GraphArea.svg) | [Surface](/help/analysis-workspace/visualizations/area.md) | Visualisation sous forme de graphique de surface. Semblable à un graphique linéaire, mais avec une zone colorée sous la ligne. Utilisez un diagramme de surface si vous avez plusieurs mesures et souhaitez visualiser la zone exprimée par l’intersection de plusieurs mesures. |
-| ![Graphique à barres verticales](/help/assets/icons/GraphBarVertical.svg) | [Barre](/help/analysis-workspace/visualizations/bar.md) | Visualisation Graphique à barre avec des barres verticales représentant plusieurs valeurs pour une ou plusieurs mesures. |
-| ![Graphique à barres verticales](/help/assets/icons/GraphBarVerticalStacked.svg) | [Barres empilées](/help/analysis-workspace/visualizations/bar.md) | Visualisation Graphique à barres empilées avec des barres verticales représentant plusieurs valeurs pour une ou plusieurs mesures. |
+| ![Graphique à barres verticales](/help/assets/icons/GraphBarVertical.svg) | [Barre](/help/analysis-workspace/visualizations/bar.md) | Visualisation Graphique en barres avec des barres verticales représentant plusieurs valeurs pour une ou plusieurs mesures. |
+| ![Graphique à barres verticales](/help/assets/icons/GraphBarVerticalStacked.svg) | [Barres empilées](/help/analysis-workspace/visualizations/bar.md) | Visualisation Graphique en barres empilées avec des barres verticales représentant plusieurs valeurs pour une ou plusieurs mesures. |
 | ![Graphique à puces](/help/assets/icons/GraphBullet.svg)</p> | [Puces](/help/analysis-workspace/visualizations/bullet-graph.md) | Visualisation Graphique à puces affichant comment comparer ou mesurer une valeur qui vous intéresse par rapport à d’autres plages de performances (objectifs). |
 | ![ChiffresTexte](/help/assets/icons/TextNumbered.svg) | [Table de cohorte](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | Une visualisation Cohorte est un groupe de personnes partageant des caractéristiques communes au cours d’une période spécifique. Une table de cohorte est utile pour les analyses de la rétention, de lʼattrition ou de la latence. |
 | ![Combo](/help/assets/icons/ComboChart.svg) | [Combo](combo-charts.md) | Une visualisation Graphique combo facilite la création rapide d’une visualisation de comparaison sans qu’il soit nécessaire de créer un tableau au préalable. |
@@ -81,7 +81,7 @@ Vous pouvez gérer une visualisation en pointant la souris sur la visualisation 
 * Pour afficher une visualisation réduite, sélectionnez ![ChevronLeft](/help/assets/icons/ChevronLeft.svg).
 * Pour supprimer une visualisation, sélectionnez ![CrossSize400](/help/assets/icons/CrossSize400.svg). Pour annuler, sélectionnez **[!UICONTROL Modifier]** > **[!UICONTROL Annuler]** (**[!UICONTROL *cmd+z *]**|**[!UICONTROL * ctrl+z *]**).
 * Pour rétablir la hauteur par défaut d’une visualisation, sélectionnez ![ImageResize](/help/assets/icons/Resize.svg).
-* Pour déplacer une visualisation dans un panneau, faites-la glisser et déposez-la chaque fois qu’une ![&#x200B; Déplacer &#x200B;](/help/assets/icons/Move.svg) est visible (généralement lorsque vous passez la souris sur l’en-tête).
+* Pour déplacer une visualisation dans un panneau, faites-la glisser et déposez-la chaque fois qu’une ![ Déplacer ](/help/assets/icons/Move.svg) est visible (généralement lorsque vous passez la souris sur l’en-tête).
 
 
 

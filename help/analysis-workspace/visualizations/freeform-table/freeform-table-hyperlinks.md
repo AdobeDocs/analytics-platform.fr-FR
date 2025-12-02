@@ -4,7 +4,7 @@ description: Découvrez comment créer des liens hypertexte pour les éléments 
 feature: Visualizations
 role: User
 exl-id: 24fc2d24-b8c2-4664-8b9c-beda284f9033
-source-git-commit: f7a90a42d3c8bea99af2e69e3f86d9ad4e2041bf
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '1602'
 ht-degree: 97%
@@ -26,7 +26,7 @@ Cette fonctionnalité est particulièrement utile lors de la création de liens 
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Créerdes liens hypertextes dans un tableau à structure libre](https://video.tv.adobe.com/v/3445782/?captions=fre_fr&quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Créerdes liens hypertextes dans un tableau à structure libre](https://video.tv.adobe.com/v/3430411/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 

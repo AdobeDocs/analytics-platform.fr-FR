@@ -5,7 +5,7 @@ title: Gestion des emplacements et des comptes d’exportation cloud
 feature: Components
 exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
 role: User, Admin
-source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '1371'
 ht-degree: 3%
@@ -94,7 +94,7 @@ Pour supprimer un emplacement :
 
 1. Dans la boîte de dialogue Supprimer l’emplacement , assurez-vous que l’emplacement n’est associé à aucune exportation avant de confirmer la suppression.
 
-   ![&#x200B; Boîte de dialogue de confirmation Supprimer l’emplacement &#x200B;](assets/delete-location-confirmation-dialog.png)
+   ![ Boîte de dialogue de confirmation Supprimer l’emplacement ](assets/delete-location-confirmation-dialog.png)
 
 1. Sélectionnez à nouveau [!UICONTROL **Supprimer**] pour confirmer.
 

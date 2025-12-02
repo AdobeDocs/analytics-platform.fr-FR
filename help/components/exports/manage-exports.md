@@ -5,7 +5,7 @@ title: Gérer des exports
 feature: Components
 exl-id: 0c21802a-c46f-41be-9356-d836c038b174
 role: User
-source-git-commit: 6f8a43acfba23d6faeff078873742315f1506699
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '1029'
 ht-degree: 6%
@@ -64,7 +64,7 @@ Vous pouvez modifier les propriétés, le format, la planification et les inform
 
    La boîte de dialogue [!UICONTROL **Exporter le tableau complet**] s’affiche.
 
-1. Mettez à jour l’une des options disponibles. Pour plus d’informations sur chaque option, voir [&#x200B; Exporter des tables complètes depuis Analysis Workspace &#x200B;](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace) dans [&#x200B; Exporter des rapports Customer Journey Analytics vers le cloud](/help/analysis-workspace/export/export-cloud.md).
+1. Mettez à jour l’une des options disponibles. Pour plus d’informations sur chaque option, voir [ Exporter des tables complètes depuis Analysis Workspace ](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace) dans [ Exporter des rapports Customer Journey Analytics vers le cloud](/help/analysis-workspace/export/export-cloud.md).
 
 ## Dupliquer une exportation
 

@@ -4,10 +4,10 @@ title: Carte
 feature: Visualizations
 role: User, Admin
 exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
-source-git-commit: ab0e6f0578cbc6f856c2b0a46b1231cce145b84c
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '2761'
-ht-degree: 12%
+ht-degree: 13%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 12%
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente la visualisation des cartes dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Voir [Map](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) pour la version_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** de cet article._
+_Cet article présente la visualisation des cartes dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Voir [Map](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) pour la version_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 
@@ -63,7 +63,7 @@ Les libellés de contexte sont requis pour que la visualisation des cartes fonct
 
 Pour ajouter ces libellés de contexte :
 
-1. Dans Customer Journey Analytics, sélectionnez **[!UICONTROL Gestion des données]** > **[!UICONTROL Vues des données]**.
+1. Dans Customer Journey Analytics, sélectionnez **[!UICONTROL Gestion des données]** > **[!UICONTROL Vues de données]**.
 
 1. Sur la page Vues des données , sélectionnez la vue de données contenant les données à analyser dans la visualisation des cartes.
 
@@ -107,7 +107,7 @@ Vous trouverez ci-dessous les modèles et le libellé de contexte requis. Sans c
 
 Pour ajouter ces libellés de contexte :
 
-1. Dans Customer Journey Analytics, sélectionnez **[!UICONTROL Gestion des données]** > **[!UICONTROL Vues des données]**.
+1. Dans Customer Journey Analytics, sélectionnez **[!UICONTROL Gestion des données]** > **[!UICONTROL Vues de données]**.
 
 1. Sur la page Vues de données , sélectionnez la vue de données contenant les données à analyser avec les modèles préconfigurés qui utilisent la visualisation de carte. Dans cette vue de données, sélectionnez cinq dimensions : une avec les données du pays, une avec les données de la région, une avec les données de la ville, une avec les données de l’État et une avec les données de la DMA. Ensuite, libellez ces dimensions avec le libellé de contexte correspondant.
 
@@ -270,7 +270,7 @@ Pour configurer les paramètres de la visualisation des cartes :
 
 Si vous disposez de jeux de données personnalisés avec une précision élevée, vous pouvez configurer la visualisation des cartes afin d’obtenir une précision de localisation d’un seul mètre.
 
-1. Dans Customer Journey Analytics, sélectionnez **[!UICONTROL Gestion des données]** > **[!UICONTROL Vues des données]**.
+1. Dans Customer Journey Analytics, sélectionnez **[!UICONTROL Gestion des données]** > **[!UICONTROL Vues de données]**.
 
 1. Sélectionnez la vue de données qui contient les dimensions que vous souhaitez configurer pour utiliser des emplacements plus précis.
 

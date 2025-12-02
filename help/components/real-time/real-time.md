@@ -4,7 +4,7 @@ title: Rapports En Temps Réel - Aperçu
 feature: Real-time Reporting
 role: User
 exl-id: 12fbb760-936d-4e30-958f-764febca5ae7
-source-git-commit: 59d48b84ddd34ef161ec0b11f023ccccf9b2e892
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '810'
 ht-degree: 6%
@@ -40,7 +40,7 @@ Vous souhaitez valider, par exemple :
    * Lorsque votre nouvelle page de produits est entrée en ligne, collectez-vous des données client à partir de la page ?
    * Votre événement multimédia en direct se passe-t-il correctement ?
 
-Ne prenez pas en compte les rapports en temps réel pour les cas d’utilisation de la surveillance des opérations. Par exemple, pour répondre à la question de savoir si un site fonctionne correctement. Comme le bouton (bascule) [&#x200B; Actualisation en temps réel &#x200B;](use-real-time.md) se désactive automatiquement au bout de 30 minutes et que l’actualisation du rapport en temps réel cesse, vous ne devez pas utiliser un rapport en temps réel comme source fiable pour ces cas d’utilisation.
+Ne prenez pas en compte les rapports en temps réel pour les cas d’utilisation de la surveillance des opérations. Par exemple, pour répondre à la question de savoir si un site fonctionne correctement. Comme le bouton (bascule) [ Actualisation en temps réel ](use-real-time.md) se désactive automatiquement au bout de 30 minutes et que l’actualisation du rapport en temps réel cesse, vous ne devez pas utiliser un rapport en temps réel comme source fiable pour ces cas d’utilisation.
 
 ## Fonctionnement
 

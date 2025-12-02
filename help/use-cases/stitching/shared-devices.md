@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: a7d14968-33a2-46a8-8e32-fb6716650d0a
-source-git-commit: 359fe2a718ccef816377083aceb2652b4a905072
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '657'
 ht-degree: 7%
@@ -42,14 +42,14 @@ The order success (purchase) events assign the data accurately to the correct em
 
 ## Améliorer l’analyse centrée sur la personne
 
-Le processus de groupement résout ce problème d’attribution en ajoutant l’identifiant de personne sélectionné (dans l’exemple de données, l’e-mail) aux événements où cet identifiant n’existe pas. L’assemblage tire parti d’un mappage entre les ID d’appareil et les ID de personne pour s’assurer que le trafic authentifié et non authentifié peut être utilisé dans l’analyse, en restant centré sur la personne. Voir [&#x200B; Assemblage &#x200B;](/help/stitching/overview.md) pour plus d’informations.
+Le processus de groupement résout ce problème d’attribution en ajoutant l’identifiant de personne sélectionné (dans l’exemple de données, l’e-mail) aux événements où cet identifiant n’existe pas. L’assemblage tire parti d’un mappage entre les ID d’appareil et les ID de personne pour s’assurer que le trafic authentifié et non authentifié peut être utilisé dans l’analyse, en restant centré sur la personne. Voir [ Assemblage ](/help/stitching/overview.md) pour plus d’informations.
 
 L’assemblage peut attribuer des données d’appareil partagées à l’aide de l’attribution dernière authentification ou de l’attribution partage d’appareil. Toutes les tentatives d’assemblage d’événements non authentifiés à un utilisateur connu sont non déterministes.
 
 
 ### Attribution de dernière authentification
 
-Last-auth attribue toutes les activités inconnues d’un appareil partagé à l’utilisateur qui s’est authentifié pour la dernière fois. Experience Platform Identity Service crée le graphique en fonction de l’attribution de la dernière authentification et, à ce titre, est utilisé dans le groupement basé sur le graphique. Pour plus d’informations, consultez [Règles de liaison des graphiques d’identités](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/features/identity-graph-linking-rules/identity-optimization-algorithm#identity-optimization-algorithm-details) .
+Last-auth attribue toutes les activités inconnues d’un appareil partagé à l’utilisateur qui s’est authentifié pour la dernière fois. Experience Platform Identity Service crée le graphique en fonction de l’attribution de la dernière authentification et, à ce titre, est utilisé dans le groupement basé sur le graphique. Pour plus d’informations, consultez [Règles de liaison des graphiques d’identités](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/identity-optimization-algorithm#identity-optimization-algorithm-details) .
 
 Lorsque l’attribution Dernière authentification est utilisée dans le groupement, les identifiants groupés se résolvent comme illustré dans le tableau ci-dessous.
 
@@ -90,10 +90,10 @@ When using ECID reset, Stitched IDs resolve as shown in the table below.
 
 | Timestamp | Page name | Device ID | Email | Stitched ID |
 |---|---|---|---|---|
-| 2023-05-12 12:01 | Home page | `1234` | | `ryan@a.com`| 
-| 2023-05-12 12:02 | Product page  | `1234` | |`ryan@a.com` | 
+| 2023-05-12 12:01 | Home page | `1234` | | `ryan@a.com`|
+| 2023-05-12 12:02 | Product page  | `1234` | |`ryan@a.com` |
 | 2023-05-12 12:03 | Order success | `1234` | `ryan@a.com` | `ryan@a.com` |
-| 2023-05-12 12:07 | Product page  | 5678  | | `cassidy@a.com` | 
+| 2023-05-12 12:07 | Product page  | 5678  | | `cassidy@a.com` |
 | 2023-05-12 12:08 | Order success | 5678 |  `cassidy@a.com` | `cassidy@a.com` |
 | 2023-05-13 11:08 | Home page | 5678 | | `cassidy@a.com` |
 

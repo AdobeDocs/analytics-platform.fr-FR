@@ -6,7 +6,7 @@ feature: Basics
 role: Admin
 badgePremium: label="Beta"
 exl-id: 17f72954-085c-46a8-bc28-6af0a4eb159a
-source-git-commit: b2a13524760f9d466696534bc8b9691f3b4dfb8a
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '2268'
 ht-degree: 14%
@@ -173,20 +173,20 @@ Définissez un schéma qui modélise ces données. Configurer le schéma :
 
      ![Descripteur de version](assets/platform-schema-id.png)
 
-   * Le champ **[!UICONTROL personid]** est configuré, avec **[!UICONTROL timestamp]** comme clé de Principal **&#x200B;**. Sélectionnez ![Ajouter](/help/assets/icons/Add.svg) **[!UICONTROL Créer une clé primaire composite]** pour créer une clé composite.
+   * Le champ **[!UICONTROL personid]** est configuré, avec **[!UICONTROL timestamp]** comme clé de Principal ****. Sélectionnez ![Ajouter](/help/assets/icons/Add.svg) **[!UICONTROL Créer une clé primaire composite]** pour créer une clé composite.
 
-     ![&#x200B; Clé composite &#x200B;](assets/platform-schema-compositekey.png)
+     ![ Clé composite ](assets/platform-schema-compositekey.png)
 
      Le champ **[!UICONTROL personid]** est également configuré en tant qu’**[!UICONTROL Identité]**, avec **[!UICONTROL CRMID]** comme **[!UICONTROL Espace de noms d’identité]**.
 
      ![Descripteur de personne](assets/platform-schema-personid.png)
 
-   * Le champ **[!UICONTROL timestamp]** est configuré, ainsi que le champ **[!UICONTROL personid]** comme clé de Principal **&#x200B;**. Le champ **[!UICONTROL horodatage]** est également configuré en tant que **[!UICONTROL descripteur d’horodatage]**. Il vous suffit de définir un champ en tant que **[!UICONTROL descripteur d’horodatage]** pour les données relationnelles de série temporelle.
+   * Le champ **[!UICONTROL timestamp]** est configuré, ainsi que le champ **[!UICONTROL personid]** comme clé de Principal ****. Le champ **[!UICONTROL horodatage]** est également configuré en tant que **[!UICONTROL descripteur d’horodatage]**. Il vous suffit de définir un champ en tant que **[!UICONTROL descripteur d’horodatage]** pour les données relationnelles de série temporelle.
 
      ![Descripteur d’horodatage](assets/platform-schema-timestamp.png)
 
 
-   Si vous avez correctement défini la clé de Principal **&#x200B;**, le descripteur de version **&#x200B;**&#x200B;et le descripteur d’horodatage **&#x200B;**, l’avertissement au-dessus de la définition du schéma disparaît.
+   Si vous avez correctement défini la clé de Principal ****, le descripteur de version **** et le descripteur d’horodatage ****, l’avertissement au-dessus de la définition du schéma disparaît.
 
 1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer le schéma.
 
@@ -219,7 +219,7 @@ L’assistant d’ajout de données vous guide tout au long des étapes suivante
 
    1. Sélectionnez **[!UICONTROL Suivant]**.
 
-  Consultez la documentation d’Experience Platform pour plus d’informations sur la connexion et l’authentification lorsque vous utilisez le connecteur [Azure Databricks](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/databases/databricks) ou [Snowflake](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/databases/snowflake).
+  Consultez la documentation d’Experience Platform pour plus d’informations sur la connexion et l’authentification lorsque vous utilisez le connecteur [Azure Databricks](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks) ou [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake).
 
 
 ### Sélectionner les données

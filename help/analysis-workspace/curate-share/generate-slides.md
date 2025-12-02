@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Génération de présentations à partir de rapports Workspace
 feature: Curate and Share
 role: User
-source-git-commit: 87e3b3cfdf765a57ecdb70921696013bcba4feac
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '1585'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -86,7 +86,7 @@ Les histoires de données se composent d’une diapositive de titre, d’une dia
 
 >[!CONTEXTUALHELP]
 >id="cja-presentation-emphasized-components"
->title="Composants mis en évidence"
+>title="Composants mis en avant"
 >abstract="Sélectionnez jusqu’à 5 mesures et 5 dimensions dans vos visualisations, sur lesquelles vous souhaitez mettre l’accent dans la présentation. Les mesures que vous choisissez s’affichent en italique, les dimensions en gras et les éléments de dimension en contraste de couleur."
 
 <!-- markdownlint-enable MD034 -->
@@ -157,9 +157,9 @@ Les histoires de données se composent d’une diapositive de titre, d’une dia
 
          Assurez-vous que le fichier chargé comporte des dispositions principales avec les noms suivants : « Title_Slide », « Section_Divider », « Title_Text », « Title_Chart », « Title_Two_Content_Mixed », « Title_Three_Content_Mixed ».
 
-         Jusqu’à 15 dispositions principales sont prises en charge.
+         Jusqu’à 15 dispositions principales sont prises en charge.
 
-         Les fichiers .pptx et .potx d’une taille maximale de 25 Mo sont pris en charge.
+         Les fichiers .pptx et .potx d’une taille maximale de 25 Mo sont pris en charge.
 
       1. Dans la section **[!UICONTROL Mappage de disposition]**, chaque disposition de diapositive utilisée dans les présentations générées est automatiquement mappée à une diapositive de votre thème chargé. Vérifiez que les sélections sont correctes.
 

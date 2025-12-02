@@ -4,7 +4,7 @@ title: Gérer les alertes
 feature: Workspace Basics
 role: User, Admin
 exl-id: 174c3ebd-a77b-4403-ae9a-bb0cff4bcca6
-source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 22%
@@ -71,7 +71,7 @@ La barre de filtrage affiche ➌ les filtres actifs appliqués à partir du pann
 
 ### Panneau Filtrer
 
-Vous pouvez filtrer la liste des alertes à l’aide du ![&#x200B; du panneau de gauche &#x200B;](/help/assets/icons/Filter.svg)Filtrer **&#x200B;**&#x200B;Filtrer➍. Le panneau de filtrage affiche le type de filtre et le nombre d’alertes qui respectent le filtre spécifique.
+Vous pouvez filtrer la liste des alertes à l’aide du ![ du panneau de gauche ](/help/assets/icons/Filter.svg)Filtrer **** Filtrer➍. Le panneau de filtrage affiche le type de filtre et le nombre d’alertes qui respectent le filtre spécifique.
 
 
 1. Sélectionnez ![Filtrer](/help/assets/icons/Filter.svg) pour ouvrir le panneau Filtres. Si vous avez besoin de plus d’espace pour la liste des alertes, vous pouvez sélectionner ![Filtrer](/help/assets/icons/Filter.svg) une fois de plus pour fermer le panneau.

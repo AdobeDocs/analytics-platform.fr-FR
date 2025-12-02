@@ -4,7 +4,7 @@ title: Gestion des segments
 exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
 feature: Filters, Segments
 role: User
-source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '930'
 ht-degree: 31%
@@ -28,14 +28,14 @@ Vous pouvez [partager](seg-share.md), [segment](seg-filter.md), [balise](seg-tag
 
 Le gestionnaire de segments comporte les éléments d’interface suivants :
 
-![&#x200B; Interface des segments &#x200B;](assets/filters-manager.png)
+![ Interface des segments ](assets/filters-manager.png)
 
 ### Liste des segments
 
 La liste des segments affiche ➊ tous les segments que vous possédez, les segments qui ont été étendus à tous vos projets et les segments qui ont été partagés avec vous. La liste comporte les colonnes suivantes :
 
 | Colonne | Description |
-| --- | --- | 
+| --- | --- |
 | ![Contour en forme d’étoile](/help/assets/icons/StarOutline.svg) | Sélectionnez pour favoriser ![Étoile](/help/assets/icons/Star.svg) ou annuler la préférence ![ÉtoileContour](/help/assets/icons/StarOutline.svg) un segment. Voir [Marquer le segment comme favori](/help/components/segments/seg-favorite.md) |
 | **[!UICONTROL Titre et description]** | Pour modifier le segment, sélectionnez le lien de titre, qui ouvre le [créateur de segments](seg-builder.md). Un segment partagé est indiqué par la mention ![Partager](/help/assets/icons/ShareAlt.svg). |
 | **[!UICONTROL Vue de données]** | Vues de données auxquelles ce segment s’applique. |
@@ -70,6 +70,6 @@ La barre de filtrage affiche ➌ les segments actifs appliqués à partir du pan
 
 ### Panneau Filtrer
 
-Vous pouvez filtrer la liste des segments à l’aide du ![&#x200B; du panneau de gauche &#x200B;](/help/assets/icons/Filter.svg)Filtrer **&#x200B;**&#x200B;Filtrer➍. Le panneau de filtrage affiche le type de filtre et le nombre de segments qui respectent le filtre spécifique. Sélectionnez ![Filtrer](/help/assets/icons/Filter.svg) pour activer/désactiver l’affichage du panneau Filtre.
+Vous pouvez filtrer la liste des segments à l’aide du ![ du panneau de gauche ](/help/assets/icons/Filter.svg)Filtrer **** Filtrer➍. Le panneau de filtrage affiche le type de filtre et le nombre de segments qui respectent le filtre spécifique. Sélectionnez ![Filtrer](/help/assets/icons/Filter.svg) pour activer/désactiver l’affichage du panneau Filtre.
 
 Voir [Filtrer la liste des segments](seg-filter.md) pour plus d’informations.
