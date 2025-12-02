@@ -33,13 +33,13 @@ Pour créer des rapports sur les données Marketo Engage dans Customer Journey A
 
 +++ &#x200B;1. Mapper les champs de données source Marketo à leurs cibles XDM
 
-Mappez les objets [Personnes](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) et [Activités](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) à leurs champs cibles de schéma XDM respectifs.
+Mappez les objets [Personnes](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) et [Activités](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) à leurs champs cibles de schéma XDM respectifs.
 
 +++
 
 +++ &#x200B;2. Ingestion de données Marketo dans Adobe Experience Platform
 
-Utilisez le [connecteur Marketo Engage](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo) pour importer les données de Marketo dans Experience Platform et les tenir à jour à l’aide des applications connectées à Platform.
+Utilisez le [connecteur Marketo Engage](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo) pour importer les données de Marketo dans Experience Platform et les tenir à jour à l’aide des applications connectées à Platform.
 
 +++
 
