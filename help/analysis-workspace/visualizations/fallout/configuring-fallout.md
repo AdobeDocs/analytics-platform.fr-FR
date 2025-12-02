@@ -47,7 +47,7 @@ Vous pouvez effectuer un cheminement sur des dimensions, des mesures et des segm
 
 1. Vous pouvez également **limiter les points de contact individuels pour le prochain événement** au sein du chemin (par opposition à un aspect *définitif*). Chaque point de contact est assorti d’un sélecteur avec les options **[!UICONTROL Chemin définitif]** et **[!UICONTROL Prochain événement]**, comme illustré ici :
 
-   ![Vue Toutes les visites présentant l’option Chemin définitif mise en surbrillance. ](assets/fallout-nexthit.png)
+   ![Vue Toutes les visites présentant l’option Chemin définitif mise en surbrillance. &#x200B;](assets/fallout-nexthit.png)
 
    | Option | Description |
    |---|---|

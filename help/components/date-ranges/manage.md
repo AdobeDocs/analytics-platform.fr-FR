@@ -23,7 +23,7 @@ Vous pouvez partager, filtrer, baliser, approuver, copier, partager et supprimer
 
 Le gestionnaire de périodes comporte les éléments d’interface suivants :
 
-![ Interface des périodes ](assets/date-ranges-manager.png)
+![&#x200B; Interface des périodes &#x200B;](assets/date-ranges-manager.png)
 
 ### Liste des périodes
 
@@ -92,7 +92,7 @@ Vous pouvez modifier une période de deux manières :
 
 * Dans un projet Workspace, utilisez l’icône [Informations sur le composant](/help/components/use-components-in-workspace.md#component-info).
 
-* Dans la liste [[!UICONTROL Périodes] , choisissez ](#date-ranges-list) titre de la période.
+* Dans la liste [[!UICONTROL Périodes] , choisissez &#x200B;](#date-ranges-list) titre de la période.
 
 Vous utilisez le [créateur de périodes](/help/components/date-ranges/create.md#date-range-builder) pour modifier la période.
 
