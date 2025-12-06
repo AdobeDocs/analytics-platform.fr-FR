@@ -6,9 +6,9 @@ feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
 badgePremium: label="Beta" type="Informative"
-source-git-commit: 23b890ec6a3266d1ca0621b09264f1d6a2f82645
+source-git-commit: 6ebd1604e01af068228d7a5e4a78fdccf852f480
 workflow-type: tm+mt
-source-wordcount: '808'
+source-wordcount: '827'
 ht-degree: 3%
 
 ---
@@ -30,7 +30,7 @@ Pour activer le groupement sur un jeu de données d’événement dans l’inter
    * plusieurs champs configurés en tant qu’identité et qui vous permettent de sélectionner différentes valeurs pour un identifiant persistant et un identifiant de personne.
    * au moins un champ marqué comme identité principale avec un espace de noms associé si vous souhaitez utiliser le mappage d’identités et l’espace de noms d’identité principal pour l’ID persistant ou l’ID de personne.
 
-* Le jeu de données d’événement doit être [activé pour Identity Service](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service) si vous souhaitez utiliser le graphique d’identités et le groupement basé sur les graphiques.
+* Si vous souhaitez utiliser le groupement basé sur les graphiques et que vous prévoyez que le jeu de données d’événement contribuera au graphique d’identités, vous devez [activer le jeu de données pour le service d’identités](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service). Un jeu de données contribue au graphique d’identités lorsque le jeu de données contient des ID de personne pertinents en regard des ID persistants.
 
 
 ## Contrôles en amont
@@ -55,7 +55,7 @@ Si vous remplissez les conditions préalables, vous pouvez effectuer des contrô
        AND TO_TIMESTAMP(timestamp, 'FORMAT_STRING') < TIMESTAMP '{END_DATE}';
      ```
 
-     Où ce qui suit est vrai :
+     Où :
 
       * `{PERSISTENT_ID_FIELD}` est le champ de l’identifiant persistant. Par exemple : `identityMap.ecid[0]`.
       * `{DATASET_TABLE_NAME}` est le nom de la table du jeu de données d’événement.
@@ -80,7 +80,7 @@ Si vous remplissez les conditions préalables, vous pouvez effectuer des contrô
        AND TO_TIMESTAMP(timestamp, 'FORMAT_STRING') < TIMESTAMP '{END_DATE}';
      ```
 
-     Où ce qui suit est vrai :
+     Où :
 
       * `{PERSON_ID_FIELD}` est le champ de l’ID de personne. Par exemple : `identityMap.crmId[0]`.
       * `{DATASET_TABLE_NAME}` est le nom de la table du jeu de données d’événement.
@@ -137,7 +137,7 @@ Pour activer le groupement, dans la section Jeu de données d’événement de l
 
 1. Sélectionnez un intervalle de recherche en amont dans le menu déroulant **[!UICONTROL Intervalle de recherche en amont]**. Les options disponibles dépendent du package Customer Journey Analytics auquel vous avez droit.
 
-Une fois que vous avez enregistré une connexion contenant des jeux de données activés pour la combinaison d’identités, le processus de combinaison de chaque jeu de données commence lorsque l’ingestion des données de ce jeu de données commence.
+Une fois que vous avez enregistré une connexion, le processus de groupement des jeux de données activés pour le groupement se déclenche lorsque l’ingestion des données de ces jeux de données commence
 
 ## Limites
 
