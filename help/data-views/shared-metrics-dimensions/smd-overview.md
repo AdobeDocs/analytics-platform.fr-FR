@@ -2,9 +2,9 @@
 title: Mesures et dimensions partagées - Aperçu
 description: Utilisez la même dimension ou la même référence de mesure dans plusieurs vues de données.
 exl-id: 998a9f9b-cfa7-4b97-b32b-d50e35d01b39
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 1de8b8f40a7e1be0de0e6cbed5cc57ff834f2377
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1282'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Accéder à cette interface utilisateur affiche toutes les dimensions et mesures
 
 Directement au-dessous de ces deux boutons, quatre cartes de présentation sont visibles :
 
-![&#x200B; Aperçu des cartes de présentation &#x200B;](assets/overview-cards.png)
+![ Aperçu des cartes de présentation ](assets/overview-cards.png)
 
 * **Mesures** : nombre total de mesures disponibles à partager dans les vues de données pour cette connexion. Chaque connexion peut contenir jusqu’à 10 000 mesures partagées.
 * **Dimensions** : nombre total de dimensions disponibles pour être partagées entre les vues de données pour cette connexion. Chaque connexion peut contenir jusqu’à 10 000 dimensions partagées.
@@ -80,7 +80,7 @@ Toutes les dimensions et mesures partagées sont affichées sous les quatre cart
    * **[!UICONTROL Groupe de données de résumé]** : paramètres du [groupe de données de résumé](/help/data-views/component-settings/summary-data-group.md) du composant.
    * **[!UICONTROL Date de création]** : date à laquelle le composant a été créé ou importé.
    * **[!UICONTROL Dernière modification]** : si le composant a été modifié après sa création, date de sa dernière modification.
-* **[!UICONTROL Historique des tâches]** : sélectionnez l’icône ![Historique](/help/assets/icons/History.svg) pour ouvrir une fenêtre modale qui affiche toutes les instances d’importation de dimensions et de mesures à partir de vues de données individuelles.
+* **[!UICONTROL Historique des tâches]** : si vous importez ou partagez un grand nombre de composants, une tâche est automatiquement créée. Sélectionnez l’icône ![Icône Historique](/help/assets/icons/History.svg) pour ouvrir une fenêtre modale qui affiche toutes les instances d’importation de dimensions et de mesures à partir de vues de données individuelles. Si aucune de vos actions d’importation ou de partage n’est suffisamment volumineuse pour déclencher une tâche, ce bouton n’apparaît pas.
 
 ## Modifier des composants ou partager des composants avec des vues de données
 
