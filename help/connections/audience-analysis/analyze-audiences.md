@@ -6,22 +6,24 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 2b91c0592ac4ec0e0b5ffa3db91758466563abaf
+source-git-commit: f23775342a29d758b478206a77386e18a58312a6
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---
 
 # Analyse des audiences Experience Platform dans Customer Journey Analytics {#analyze-audiences-RTCDP}
 
-Vous pouvez commencer à analyser les audiences Experience Platform dans Customer Journey Analytics après [création d’une configuration d’analyse d’audience](/help/connections/audience-analysis/audience-analysis-configure.md), lorsque les données d’audience sont disponibles en tant que nouvelles dimensions dans Analysis Workspace.
+Après avoir [créé une configuration d’analyse d’audience](/help/connections/audience-analysis/audience-analysis-configure.md), les données d’audience sont disponibles sous la forme de nouvelles dimensions dans les vues de données où vous les configurez pour les créer. Vous pouvez utiliser les nouvelles dimensions d’audience n’importe où dans Analysis Workspace si vous avez accès à une vue de données dans laquelle les dimensions d’analyse d’audience ont été ajoutées.
+
+## Utiliser le modèle de présentation de l’audience
 
 Un modèle de présentation des audiences est disponible dans Customer Journey Analytics.
 
 <!-- Can you also use the new audience dimensions in any project, regardless of whether it's a template? I assume so -->
 
-<!-- What are the names of the new dimensions? Are they customized to whatever your audience names are in AEP, or are they always the same? -->
+<!-- What are the names of the new dimensions? Are they customized to whatever your audience names are in AEP, or are they always the same? Are they the dimensions available in the Audience overview template? (Audience Name, Audience Origin, Exited Audience Name, Exited Audience Origin; Audience Description, Exited Audience Description). Metrics included (Distinct Audiences) -->
 
 Pour plus d’informations sur l’accès au modèle de présentation de l’audience, voir [Accès et exécution d’un modèle](/help/analysis-workspace/templates/use-templates.md#access-and-run-a-template) dans [Utilisation de modèles](/help/analysis-workspace/templates/use-templates.md).
 
@@ -49,7 +51,7 @@ Sélectionnez jusqu’à trois audiences dans le tableau de ce panneau pour voir
 
 Affiche les données de toutes les audiences sorties avec des événements d’utilisation associés à la vue de données sélectionnée. Les données sont toujours affichées pour hier. Par conséquent, la modification de la période du panneau génère des données inexactes. Les « audiences sorties » sont des audiences dans lesquelles les personnes ayant des événements d’utilisation ont quitté hier.
 
-Utilisez le tableau de ce panneau pour mieux comprendre le comportement de l’audience. Faites glisser la dimension Description de l’audience existante de la vue de données sélectionnée et ajoutez-la en tant que répartition. Vous pouvez également utiliser toute autre dimension ou mesure d’interaction (telle que Page, Action, etc.) comme répartition.
+Utilisez le tableau de ce panneau pour mieux comprendre le comportement de l’audience. Faites glisser la dimension Description de l’audience sortie de la vue de données sélectionnée et ajoutez-la en tant que répartition. Vous pouvez également utiliser toute autre dimension ou mesure d’interaction (telle que Page, Action, etc.) comme répartition.
 
 ## Panneau des principales origines d’audience sorties
 

@@ -6,9 +6,9 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 2b91c0592ac4ec0e0b5ffa3db91758466563abaf
+source-git-commit: f23775342a29d758b478206a77386e18a58312a6
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '678'
 ht-degree: 4%
 
 ---
@@ -19,7 +19,10 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->L’analyse de l’audience est différente de la publication d’audience, qui vous permet de créer et de publier des audiences découvertes dans Customer Journey Analytics sur Adobe Experience Platform pour le ciblage et la personnalisation des clients. Pour plus d’informations sur la publication d’audiences, voir [Présentation de la publication d’audiences](/help/components/audiences/audiences-overview.md).
+>Comprenez la différence entre l’analyse de l’audience et la publication d’audience :
+>
+>* **Analyse de l’audience** : vous permet d’ingérer des données d’appartenance à une audience à partir de jeux de données Profil Experience Platform dans une connexion Customer Journey Analytics.
+>* **Publication d’audiences** : permet de créer et de publier des audiences découvertes dans Customer Journey Analytics sur Adobe Experience Platform pour le ciblage et la personnalisation des clients. Pour plus d’informations sur la publication d’audiences, voir [Présentation de la publication d’audiences](/help/components/audiences/audiences-overview.md).
 
 L’analyse de l’audience vous permet d’ingérer des données d’appartenance à une audience à partir de jeux de données Profil Experience Platform dans une connexion Customer Journey Analytics. Les audiences deviennent disponibles en tant que nouvelles dimensions à utiliser dans Analysis Workspace.
 
@@ -46,6 +49,12 @@ Lorsque vous configurez l’analyse de l’audience, vous sélectionnez le sandb
 
 Pour plus d’informations, voir [Configuration de l’analyse de l’audience](/help/connections/audience-analysis/audience-analysis-configure.md).
 
+## Gestion des configurations d’analyse d’audience
+
+Vous pouvez gérer les configurations d’analyse des audiences après leur création. Vous pouvez afficher, modifier et supprimer des configurations.
+
+Pour plus d’informations sur la gestion des configurations d’analyse d’audience existantes, voir [Gérer les configurations d’analyse d’audience](/help/connections/audience-analysis/audience-analysis-manage.md).
+
 ## Analyse des données d’audience dans Customer Journey Analytics
 
 Grâce aux données d’audience disponibles dans Customer Journey Analytics, vous pouvez obtenir des informations exploitables sur le comportement des membres de l’audience sur divers canaux.
@@ -57,6 +66,16 @@ Vous pouvez, par exemple, suivre le comportement de clients individuels qui ont 
 * Membres de l’audience qui ont finalement effectué un achat en magasin
 
 Pour plus d’informations, voir [Analyse des audiences Experience Platform dans Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).
+
+## Rôle d’analyse d’audience et exigences d’autorisation
+
+Les rôles Customer Journey Analytics suivants et les autorisations Experience Platform sont requis pour l’analyse de l’audience :
+
+| Fonctionnalité | Exigences de rôle ou d’autorisation pour Customer Journey Analytics | Exigences d’autorisation pour Experience Platform |
+|---------|----------|----------|
+| [Créer des configurations d’analyse d’audience](/help/connections/audience-analysis/audience-analysis-configure.md) | Administrateur système | <ul><li>Jeux de données : autorisations de lecture</li><li>Schémas : lecture, écriture</li><li>et Espaces de noms d’identité : lisez .</li></ul> |
+| [Affichage des dimensions d’analyse d’audience dans la vue de données](/help/connections/audience-analysis/audience-analysis-configure.md#view-audience-dimensions-in-the-data-view) | Administrateur de profil de produit pour le profil de produit auquel la vue de données est affectée <p>Pour plus d’informations, voir [Contrôle d’accès](/help/technotes/access-control.md).</p> | S.O. |
+| Utilisation des dimensions d’analyse d’audience dans Analysis Workspace | Accès à une vue de données dans laquelle les dimensions d’analyse d’audience ont été ajoutées | S.O. |
 
 
 
