@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Génération de présentations à partir de rapports Workspace
 feature: Curate and Share
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 6b8a9fd25aaf83eaad3bc9cba0ce9349afb5471c
 workflow-type: tm+mt
-source-wordcount: '1585'
+source-wordcount: '1627'
 ht-degree: 4%
 
 ---
@@ -230,14 +230,18 @@ Les éléments et fonctionnalités Analysis Workspace suivants utilisés dans un
 
    * Plan en arborescence
 
-* Répartitions
-
-  Les données relatives aux répartitions sont incluses dans les présentations générées, mais elles s’affichent au même niveau que les éléments de dimension.
-
 * Analyses guidées
 
 * Composants dont l’exportation est limitée par une politique de gouvernance des données
 
   Pour plus d’informations, voir [Dépannage des exportations ayant échoué](/help/components/exports/troubleshoot-exports.md).
+
+## Éléments et fonctionnalités du projet avec une prise en charge limitée
+
+* Répartitions
+
+  Dans le cadre du processus de déduplication et de notation lors de la génération d’informations pertinentes, chaque répartition au sein d’un tableau à structure libre est analysée indépendamment et seules les 5 premières répartitions au sein d’un seul tableau à structure libre sont analysées.
+
+  Seul le premier niveau d’une répartition est pris en charge. Une répartition d’une répartition n’est pas incluse dans la présentation.
 
 
