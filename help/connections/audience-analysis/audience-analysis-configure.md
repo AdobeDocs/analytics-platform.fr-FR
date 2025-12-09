@@ -135,6 +135,6 @@ Pour afficher les dimensions d’analyse d’audience dans la vue de données :
 
 1. Utilisez les dimensions Analyse de l’audience dans Analysis Workspace.
 
-   Les utilisateurs autorisés à utiliser la vue de données dans Analysis Workspace peuvent voir les nouvelles dimensions et les utiliser dans leurs analyses. Pour plus d’informations sur l’utilisation des dimensions d’analyse d’audience dans Analysis Workspace, voir [ Analyser des audiences Experience Platform dans Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).
+   Les utilisateurs autorisés à utiliser la vue de données dans Analysis Workspace peuvent voir les nouvelles dimensions et les utiliser dans leurs analyses. Pour plus d’informations sur l’utilisation des dimensions d’analyse d’audience dans Analysis Workspace, voir [&#x200B; Analyser des audiences Experience Platform dans Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).
 
 
