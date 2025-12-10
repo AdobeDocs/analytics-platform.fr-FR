@@ -19,7 +19,7 @@ La création dʼune vue de données implique soit la création de mesures et de 
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Créer ou modifier une vue de données](https://video.tv.adobe.com/v/35110/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Créer ou modifier une vue de données](https://video.tv.adobe.com/v/345542/?captions=fre_fr&quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 
