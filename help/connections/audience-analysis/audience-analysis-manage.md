@@ -6,7 +6,7 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: f23775342a29d758b478206a77386e18a58312a6
+source-git-commit: 996d7d7bb0c0da566a926f9a3a4c465baca69a9a
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 2%
@@ -19,7 +19,7 @@ Après avoir [créé des configurations d’analyse d’audience](/help/connecti
 
 Seuls les administrateurs système peuvent gérer les configurations d’analyse d’audience.
 
-Pour plus d’informations sur l’analyse de l’audience, voir [&#x200B; Présentation de l’analyse de l’audience](/help/connections/audience-analysis/audience-analysis-overview.md).
+Pour plus d’informations sur l’analyse de l’audience, voir [ Présentation de l’analyse de l’audience](/help/connections/audience-analysis/audience-analysis-overview.md).
 
 ## Affichage et filtrage des configurations existantes
 
@@ -43,7 +43,7 @@ Pour afficher vos configurations d’analyse d’audience existantes :
 
    * **[!UICONTROL Statut]** : le statut de la configuration. Les statuts possibles sont Terminé, En cours ou Échec. <!--true?-->
 
-   Vous pouvez masquer des colonnes en sélectionnant l’icône Colonne ![icône Colonne](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg), en désélectionnant les colonnes à masquer, puis en sélectionnant **[!UICONTROL Appliquer]**.
+   Vous pouvez masquer des colonnes en sélectionnant l’icône Colonne ![icône Colonne](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg), en désactivant les colonnes à masquer, puis en sélectionnant **[!UICONTROL Appliquer]**.
 
 1. (Facultatif) Pour filtrer la liste des configurations, sélectionnez l’icône **Filtrer** ![Filtre d’analyse d’audience](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg), puis filtrez selon l’un des critères suivants :
 

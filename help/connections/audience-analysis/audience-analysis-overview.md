@@ -6,7 +6,7 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: f23775342a29d758b478206a77386e18a58312a6
+source-git-commit: 996d7d7bb0c0da566a926f9a3a4c465baca69a9a
 workflow-type: tm+mt
 source-wordcount: '678'
 ht-degree: 4%
@@ -32,12 +32,12 @@ Le diagramme suivant et le tableau associé présentent une représentation de h
 
 | Nombre | Fonctionnalité | Fonction |
 |---------|----------|---------|
-| 1 | Configuration de l’analyse de l’audience | Interface de configuration de Customer Journey Analytics utilisée pour configurer l’analyse des audiences. |
+| 1 | Configuration de l’analyse de l’audience | Interface de configuration de Customer Journey Analytics utilisée pour configurer l’analyse de l’audience. |
 | 2 | Sandbox | Doit contenir le jeu de données de profil que vous souhaitez ajouter à votre connexion. |
 | 3 | Jeu de données de profil | Doit inclure les données d’audience Experience Platform que vous souhaitez analyser. Ce jeu de données de profil est ajouté à la connexion que vous sélectionnez. |
 | 4 | Politique de fusion | Politique de fusion associée aux audiences Experience Platform que vous souhaitez analyser. |
 | 5 | Données de profil | Données de profil associées à la politique de fusion que vous sélectionnez. Ces données sont disponibles dans les jeux de données Experience Platform. |
-| 6 | Nouveau jeu de données de recherche | Fournit des noms conviviaux pour les nouvelles dimensions d’audience créées. Le jeu de données de recherche est automatiquement créé et ajouté à la connexion, ainsi que le jeu de données de profil que vous sélectionnez. |
+| 6 | Nouveau jeu de données de recherche | Fournit des noms conviviaux pour les nouvelles dimensions d’audience créées. <p>Le jeu de données de recherche est automatiquement créé et ajouté à la connexion, ainsi que le jeu de données de profil que vous sélectionnez.</p> |
 | 7 | Connexion | La connexion à laquelle vous souhaitez ajouter le jeu de données de profil que vous sélectionnez. |
 | 8 | Nouvelles dimensions d’audience | Nouvelles dimensions d’audience<!--and metrics?--> qui représentent les audiences Experience Platform incluses dans le jeu de données de profil que vous avez sélectionné et qui sont disponibles pour la création de rapports dans Analysis Workspace. Ces dimensions sont automatiquement créées. |
 | 9 | Vues des données | Vues de données sélectionnées associées à votre connexion. Il s’agit des vues de données que vous souhaitez utiliser lors de l’analyse des données d’audience Experience Platform dans Analysis Workspace. Ces vues de données sont automatiquement configurées avec les données d’audience Experience Platform pour la création de rapports. |
@@ -73,7 +73,7 @@ Les rôles Customer Journey Analytics suivants et les autorisations Experience P
 
 | Fonctionnalité | Exigences de rôle ou d’autorisation pour Customer Journey Analytics | Exigences d’autorisation pour Experience Platform |
 |---------|----------|----------|
-| [Créer des configurations d’analyse d’audience](/help/connections/audience-analysis/audience-analysis-configure.md) | Administrateur système | <ul><li>Jeux de données : autorisations de lecture</li><li>Schémas : lecture, écriture</li><li>et Espaces de noms d’identité : lisez .</li></ul> |
+| [Créer des configurations d’analyse d’audience](/help/connections/audience-analysis/audience-analysis-configure.md) | Administrateur système | <ul><li>Jeux de données : autorisations de lecture</li><li>Schémas : lecture, écriture</li><li>Espaces de noms d’identité : lecture</li></ul> |
 | [Affichage des dimensions d’analyse d’audience dans la vue de données](/help/connections/audience-analysis/audience-analysis-configure.md#view-audience-dimensions-in-the-data-view) | Administrateur de profil de produit pour le profil de produit auquel la vue de données est affectée <p>Pour plus d’informations, voir [Contrôle d’accès](/help/technotes/access-control.md).</p> | S.O. |
 | Utilisation des dimensions d’analyse d’audience dans Analysis Workspace | Accès à une vue de données dans laquelle les dimensions d’analyse d’audience ont été ajoutées | S.O. |
 
