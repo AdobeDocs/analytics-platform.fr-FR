@@ -4,7 +4,7 @@ keywords: Analysis Workspace
 title: Génération de présentations à partir de rapports Workspace
 feature: Curate and Share
 role: User
-source-git-commit: 6b8a9fd25aaf83eaad3bc9cba0ce9349afb5471c
+source-git-commit: 1ec10a006578bc5ddf5f08501f8d72a9623245d5
 workflow-type: tm+mt
 source-wordcount: '1627'
 ht-degree: 4%
@@ -125,49 +125,53 @@ Les histoires de données se composent d’une diapositive de titre, d’une dia
 
    Pour charger un modèle personnalisé, effectuez l’une des opérations suivantes :
 
-   * (Recommandé) Téléchargez un modèle vierge et modifiez-le.
+   +++(Recommandé) Télécharger un modèle vierge et le modifier
 
-      1. Téléchargez [ce modèle vierge](https://d30ln29764hddd.cloudfront.net/deploy/builds/data-storytelling.2025-10-20T15:10:19/resources/components/Blank.potx?).
+   1. Téléchargez [ce modèle vierge](https://d30ln29764hddd.cloudfront.net/deploy/builds/data-storytelling.2025-10-20T15:10:19/resources/components/Blank.potx?).
 
-      1. Appliquez vos styles personnalisés au modèle vierge.
+   1. Appliquez vos styles personnalisés au modèle vierge.
 
-      1. Chargez à nouveau le modèle sans modifier les noms de disposition principaux :
+   1. Chargez à nouveau le modèle sans modifier les noms de disposition principaux :
 
-         À partir de votre système de fichiers, faites glisser votre modèle vierge auquel vos styles personnalisés sont appliqués dans la zone de dépôt.
+      À partir de votre système de fichiers, faites glisser votre modèle vierge auquel vos styles personnalisés sont appliqués dans la zone de dépôt.
 
-         Ou
+      Ou
 
-         Sélectionnez **[!UICONTROL Parcourir]**, puis recherchez et sélectionnez le modèle vierge auquel vos styles personnalisés sont appliqués à partir du système de fichiers.
+      Sélectionnez **[!UICONTROL Parcourir]**, puis recherchez et sélectionnez le modèle vierge auquel vos styles personnalisés sont appliqués à partir du système de fichiers.
 
-      1. Dans la section **[!UICONTROL Mappage de disposition]**, chaque disposition de diapositive utilisée dans les présentations générées est automatiquement mappée à une diapositive de votre thème chargé. Vérifiez que les sélections sont correctes.
+   1. Dans la section **[!UICONTROL Mappage de disposition]**, chaque disposition de diapositive utilisée dans les présentations générées est automatiquement mappée à une diapositive de votre thème chargé. Vérifiez que les sélections sont correctes.
 
-         ![Mappage de disposition](assets/generate-slides-layout-mapping.png)
+      ![Mappage de disposition](assets/generate-slides-layout-mapping.png)
 
-      1. (Conditionnel) Si une disposition de diapositive n&#39;est pas mappée correctement, sélectionnez **[!UICONTROL Modifier la sélection]** au-dessus de la diapositive choisie dans la présentation chargée, puis choisissez la diapositive correspondant à la disposition.
+   1. (Conditionnel) Si une disposition de diapositive n&#39;est pas mappée correctement, sélectionnez **[!UICONTROL Modifier la sélection]** au-dessus de la diapositive choisie dans la présentation chargée, puis choisissez la diapositive correspondant à la disposition.
 
-         Répétez ce processus pour chaque diapositive qui n’a pas été mappée correctement.
+      Répétez ce processus pour chaque diapositive qui n’a pas été mappée correctement.
 
-   * Chargez directement un modèle personnalisé.
+   +++
 
-      1. À partir de votre système de fichiers, faites glisser votre modèle personnalisé vers la zone de dépôt.
+   +++Chargement direct d’un modèle personnalisé 
 
-         Ou
+   1. À partir de votre système de fichiers, faites glisser votre modèle personnalisé vers la zone de dépôt.
 
-         Sélectionnez **[!UICONTROL Parcourir]**, puis recherchez et sélectionnez votre modèle personnalisé dans le système de fichiers.
+      Ou
 
-         Assurez-vous que le fichier chargé comporte des dispositions principales avec les noms suivants : « Title_Slide », « Section_Divider », « Title_Text », « Title_Chart », « Title_Two_Content_Mixed », « Title_Three_Content_Mixed ».
+      Sélectionnez **[!UICONTROL Parcourir]**, puis recherchez et sélectionnez votre modèle personnalisé dans le système de fichiers.
 
-         Jusqu’à 15 dispositions principales sont prises en charge.
+      Assurez-vous que le fichier chargé comporte des dispositions principales avec les noms suivants : « Title_Slide », « Section_Divider », « Title_Text », « Title_Chart », « Title_Two_Content_Mixed », « Title_Three_Content_Mixed ».
 
-         Les fichiers .pptx et .potx d’une taille maximale de 25 Mo sont pris en charge.
+      Jusqu’à 15 dispositions principales sont prises en charge.
 
-      1. Dans la section **[!UICONTROL Mappage de disposition]**, chaque disposition de diapositive utilisée dans les présentations générées est automatiquement mappée à une diapositive de votre thème chargé. Vérifiez que les sélections sont correctes.
+      Les fichiers .pptx et .potx d’une taille maximale de 25 Mo sont pris en charge.
 
-         ![Modèle personnalisé de mappage de disposition](assets/generate-slides-layout-mapping-custom-template.png)
+   1. Dans la section **[!UICONTROL Mappage de disposition]**, chaque disposition de diapositive utilisée dans les présentations générées est automatiquement mappée à une diapositive de votre thème chargé. Vérifiez que les sélections sont correctes.
 
-      1. (Conditionnel) Si une disposition de diapositive n&#39;est pas mappée correctement, sélectionnez **[!UICONTROL Modifier la sélection]** au-dessus de la diapositive choisie dans la présentation chargée, puis choisissez la diapositive correspondant à la disposition.
+      ![Modèle personnalisé de mappage de disposition](assets/generate-slides-layout-mapping-custom-template.png)
 
-         Répétez ce processus pour chaque diapositive qui n’a pas été mappée correctement.
+   1. (Conditionnel) Si une disposition de diapositive n&#39;est pas mappée correctement, sélectionnez **[!UICONTROL Modifier la sélection]** au-dessus de la diapositive choisie dans la présentation chargée, puis choisissez la diapositive correspondant à la disposition.
+
+      Répétez ce processus pour chaque diapositive qui n’a pas été mappée correctement.
+
+   +++
 
 1. Sélectionnez **[!UICONTROL Exporter PPT]**.
 
