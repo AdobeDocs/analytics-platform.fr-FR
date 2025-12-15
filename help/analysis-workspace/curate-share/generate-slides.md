@@ -4,7 +4,7 @@ keywords: Analysis Workspace
 title: Génération de présentations à partir de rapports Workspace
 feature: Curate and Share
 role: User
-source-git-commit: 1ec10a006578bc5ddf5f08501f8d72a9623245d5
+source-git-commit: 8ddfc194c873bdb3fe12f3aeb04c01bcad83d0a5
 workflow-type: tm+mt
 source-wordcount: '1627'
 ht-degree: 4%
@@ -159,7 +159,7 @@ Les histoires de données se composent d’une diapositive de titre, d’une dia
 
       Assurez-vous que le fichier chargé comporte des dispositions principales avec les noms suivants : « Title_Slide », « Section_Divider », « Title_Text », « Title_Chart », « Title_Two_Content_Mixed », « Title_Three_Content_Mixed ».
 
-      Jusqu’à 15 dispositions principales sont prises en charge.
+      Jusqu’à 25 dispositions principales sont prises en charge.
 
       Les fichiers .pptx et .potx d’une taille maximale de 25 Mo sont pris en charge.
 
