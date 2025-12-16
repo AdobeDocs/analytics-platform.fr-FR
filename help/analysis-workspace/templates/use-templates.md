@@ -4,7 +4,7 @@ title: Utiliser des modèles
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 3fb94d920b240247f13050cf091423335a3d74ec
+source-git-commit: 11a550e0cd67db106e2dd399843c4cf0923467ad
 workflow-type: tm+mt
 source-wordcount: '20775'
 ht-degree: 97%
@@ -1070,12 +1070,12 @@ Les modèles suivants sont disponibles :
 ### Brand Concierge {#brand-concierge-templates}
 
 >[!CONTEXTUALHELP]
->id="template--brand-concierge-b2c"
+>id="template--brand-concierge--concierge"
 >title="Analysez l’interaction client à travers les schémas de conversation, les commentaires des utilisateurs et l’efficacité de vos recommandations."
 >abstract="**Cela peut vous aider** à identifier les schémas d’engagement, à évaluer la qualité de la conversation, à suivre les tendances de satisfaction des clients et à mesurer l’efficacité des recommandations de liens.<br/>**En fonction de ce que vous avez appris** vous pouvez effectuer un certain nombre de tâches, comme affiner les réponses de votre agent d’IA, développer du contenu ciblé pour les problèmes fréquents, améliorer les algorithmes de recommandation ou créer des parcours spécialisés pour différents segments d’utilisateurs."
 
 >[!CONTEXTUALHELP]
->id="template--brand-concierge--concierge"
+>id="template--brand-concierge--meeting"
 >title="Suivez le cycle de vie complet des demandes de réunion B2B. Surveillez les taux de conversion, les performances des consultants et identifiez vos canaux de génération de leads les plus efficaces."
 >abstract="**Cela peut vous aider** à suivre les taux de conversion des réunions, à identifier les membres de l’équipe les plus performants, à comprendre les tendances saisonnières du comportement de réservation et à identifier les pages qui génèrent les demandes de réunion les plus importantes.<br/>**En fonction de ce que vous avez appris** vous pouvez faire un certain nombre de choses, comme optimiser votre processus de demande de réunion, redistribuer les ressources vers des pages à conversion élevée, développer une formation ciblée pour les consultants ayant des taux de réservation plus faibles, ou mettre en œuvre de nouvelles stratégies pour réduire les réunions manquées."
 
