@@ -22,7 +22,7 @@ L’agent Data Insights, accessible à partir de l’[Assistant IA](/help/ai-a
 
 Utiliser l’agent Data Insights pour répondre à des questions sur des données dans Analysis Workspace peut vous faire gagner énormément de temps, que vous auriez sinon consacré à créer manuellement des visualisations dans Analysis Workspace et à vous familiariser avec les composants de votre vue de données.
 
-![Agent Data Insights dans l’Assistant IA](assets/cja-ai-asst-da.gif)
+![Agent Data Insights dans l’assistant IA](assets/cja-ai-asst-da.gif)
 
 ## Fonctionnalités incluses ou non dans les capacités de traitement
 
@@ -42,17 +42,17 @@ Utiliser l’agent Data Insights pour répondre à des questions sur des donnée
 >[!CONTEXTUALHELP]
 >id="cja-enable-data-insights-data-view"
 >title="Activer pour l’agent Data Insights"
->abstract="Cette option active cette vue de données pour une utilisation avec l’agent Data Insights. L’agent Data Insights est un agent de conversation d’IA générative accessible à partir de l’assistant IA dans Customer Journey Analytics. Il vous permet d’analyser rapidement vos données à l’aide d’invites textuelles. Il crée des visualisations pertinentes dans Analysis Workspace en utilisant les composants de votre vue de données et vos données réelles."
+>abstract="Cette option active cette vue de données pour une utilisation avec l’agent Data Insights. L’agent Data Insights est un agent de conversation d’IA générative accessible à partir de l’assistant IA dans Customer Journey Analytics. Il vous permet d’analyser rapidement vos données à l’aide d’invites textuelles. Il crée des visualisations pertinentes dans Analysis Workspace en utilisant les composants de votre vue de données et vos données réelles."
 
 <!-- markdownlint-enable MD034 -->
 
 Les paramètres suivants régissent l’accès à l’agent Data Insights dans Customer Journey Analytics :
 
-* **Accès à la solution** : l’agent Data Insights est disponible pour tous les clients et clientes Customer Journey Analytics dans le cadre d’un programme en accès limité jusqu’au 30 novembre 2025. Il n’est pas disponible dans Adobe Analytics.
+* **Accès à la solution** : l’agent Data Insights est disponible pour l’ensemble des clientes et des clients Customer Journey Analytics dans le cadre d’un programme en accès limité jusqu’au 30 novembre 2025. Il n’est pas disponible dans Adobe Analytics.
 
-* **Accès contractuel** : si vous ne pouvez pas utiliser l’agent Data Insights dans l’Assistant IA, contactez l’administrateur ou l’administratrice de votre entreprise ou l’équipe Adobe en charge des comptes. Avant que votre entreprise puisse utiliser l’agent Data Insights, vous devez accepter certaines conditions juridiques liées à l’IA générative.
+* **Accès contractuel** : si vous ne pouvez pas utiliser l’agent Data Insights dans l’assistant IA, contactez l’administrateur ou l’administratrice de votre entreprise ou l’équipe Adobe en charge des comptes. Avant que votre entreprise puisse utiliser l’agent Data Insights, vous devez accepter certaines conditions juridiques liées à l’IA générative.
 
-* **Autorisations** : les autorisations nécessaires doivent être accordées dans l’[!UICONTROL Adobe Admin Console] avant que les utilisateurs et utilisatrices puissent accéder à l’agent Data Insights.
+* **Autorisations** : les autorisations nécessaires doivent être accordées dans [!UICONTROL Adobe Admin Console] avant que les utilisateurs et utilisatrices puissent accéder à l’agent Data Insights.
 
   Pour accorder des autorisations, [un administrateur ou une administratrice de profil de produit](https://helpx.adobe.com/fr/enterprise/using/manage-product-profiles.html) doit effectuer les étapes suivantes dans l’[!UICONTROL Admin Console] :
    1. Dans l’**[!UICONTROL Admin Console]**, sélectionnez l’onglet **[!UICONTROL Produits]** pour afficher la page **[!UICONTROL Tous les produits et services]**.
@@ -98,7 +98,7 @@ Les paramètres suivants régissent l’accès à l’agent Data Insights dans C
 
       ![Icône d’informations de l’agent Data Insights](assets/data-insights-agent-tooltip.png)
 
-## Accès à l’agent Data Insights dans l’assistant IA
+## Accès à l’agent Data Insights dans l’assistant IA
 
 1. Accédez à [experience.adobe.com](https://experience.adobe.com/) et connectez-vous avec votre Adobe ID.
 
@@ -170,7 +170,7 @@ Enfin, examinons le chiffre d’affaires par catégorie de produits.
 
 ## Accès à l’agent Data Insights dans les applications Experience Cloud
 
-Adobe Experience Platform Agent Orchestrator vous permet d’accéder aux fonctionnalités de l’agent Data Insights dans plusieurs applications Adobe Experience Cloud, telles que Adobe Journey Optimizer et Real-Time CDP.
+Adobe Experience Platform Agent Orchestrator vous permet d’accéder aux fonctionnalités de l’agent Data Insights dans plusieurs applications Adobe Experience Cloud, comme Adobe Journey Optimizer et Real-Time CDP.
 
 Agent Orchestrator interprète votre requête, détermine les agents spécialisés nécessaires et les orchestre pour fournir la réponse appropriée. Il effectue le suivi du contexte dans les interactions à plusieurs tours, de sorte que vous puissiez tirer parti naturellement des requêtes précédentes.
 
@@ -178,7 +178,7 @@ Pour plus d’informations, consultez [Adobe Experience Platform Agent Orchestra
 
 ## Exemples de prompts de visualisation de données
 
-Vous trouverez ci-dessous quelques exemples de prompts courants et les visualisations utilisées par l’agent Data Insights pour répondre à ces invites.
+Vous trouverez ci-dessous quelques exemples de prompts courants et les visualisations utilisées par l’agent Data Insights pour répondre à ces prompts.
 
 | Exemple de prompt | Visualisation attendue |
 | --- | --- |
@@ -211,7 +211,7 @@ Pour obtenir les meilleurs résultats, tenez compte des recommandations suivante
 
 Consultez le tableau ci-dessous pour obtenir des exemples de termes et d’expressions que vous pouvez utiliser dans les prompts avec l’agent Data Insights, ainsi que les types de réponses attendus.
 
-Ces exemples ont été conçus pour vous aider à vous familiariser avec la manière dont des mots ou des structures spécifiques peuvent influencer la sortie de l’agent Data Insight, afin de garantir des informations plus précises et plus utiles. L’agent Data Insights utilise l’IA générative. Les visualisations ou les données sélectionnées peuvent donc varier légèrement d’un prompt à l’autre.
+Ces exemples ont été conçus pour vous aider à vous familiariser avec la manière dont des mots ou des structures spécifiques peuvent influencer la sortie de l’agent Data Insight, afin de garantir des informations plus précises et plus utiles. L’agent Data Insights utilise l’IA générative. Les visualisations ou les données sélectionnées peuvent donc varier légèrement d’un prompt à l’autre.
 
 | Résultat souhaité | Exemples de termes et d’expressions |
 | --- | --- |
