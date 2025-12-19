@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: e5cb55e7-aed0-4598-a727-72e6488f5aa8
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 90a285fcd96866974087c53d402e85b4a2d83ccf
 workflow-type: tm+mt
-source-wordcount: '1776'
-ht-degree: 9%
+source-wordcount: '1713'
+ht-degree: 10%
 
 ---
 
@@ -122,17 +122,17 @@ Prenons l’exemple suivant, où Robert enregistre différents événements dans
 
 | Événement | Date et heure | ID persistant (ID de cookie) | ID de personne | ID groupé (après le groupement dynamique) |
 |---|---|---|---|---|
-| 1 | 12/05/2023 12:01 | `246` ![flèche droite](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | - | **`246`** |
-| 2 | 12/05/2023 12:02 | `246` | `Bob` ![flèche droite](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` |
-| 3 | 12/05/2023 12:03 | `246` | `Bob` ![flèche droite](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` ![Flèche vers le bas](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) |
+| 1 | 12/05/2023 12:01 | `246` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | - | **`246`** |
+| 2 | 12/05/2023 12:02 | `246` | `Bob` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` |
+| 3 | 12/05/2023 12:03 | `246` | `Bob` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` ![ArrowDown](/help/assets/icons/ArrowDown.svg) |
 | 4 | 12/05/2023 12:04 | `246` | - | **`Bob`** |
-| 5 | 12/05/2023 12:05 | `246` | `Bob` ![flèche droite](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` ![Flèche vers le bas](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) |
+| 5 | 12/05/2023 12:05 | `246` | `Bob` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` ![Flèche vers le bas](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) |
 | 6 | 12/05/2023 12:06 | `246` | - | **`Bob`** |
-| 7 | 12/05/2023 12:07 | `246` | `Bob` ![flèche droite](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` |
-| 8 | 12/05/2023 12:03 | `3579` ![flèche droite](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | - | **`3579`** |
-| 9 | 12/05/2023 12:09 | `3579` ![flèche droite](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | - | **`3579`** |
-| 10 | 12/05/2023 12:02 | `81911` ![flèche droite](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | - | **`81911`** |
-| 11 | 12/05/2023 12:05 | `81911` | `Bob` ![flèche droite](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` ![Flèche vers le bas](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) |
+| 7 | 12/05/2023 12:07 | `246` | `Bob` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` |
+| 8 | 12/05/2023 12:03 | `3579` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | - | **`3579`** |
+| 9 | 12/05/2023 12:09 | `3579` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | - | **`3579`** |
+| 10 | 12/05/2023 12:02 | `81911` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | - | **`81911`** |
+| 11 | 12/05/2023 12:05 | `81911` | `Bob` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` ![ArrowDown](/help/assets/icons/ArrowDown.svg) |
 | 12 | 12/05/2023 12:12 | `81911` | - | **`Bob`** |
 | | | appareils **3** | | **4 personnes**:<br/>`246`, `Bob`, `3579`, `81911` |
 
@@ -157,16 +157,16 @@ Le tableau suivant représente les mêmes données que ci-dessus, mais affiche d
 | Événement | Date et heure | ID persistant (ID de cookie) | ID de personne | ID groupé (après le groupement dynamique) | ID groupé (après relecture) |
 |---|---|---|---|---|---|
 | 1 | 12/05/2023 12:01 | `246` | - | `246` | **`Bob`** |
-| 2 | 12/05/2023 12:02 | `246` | `Bob` ![flèche droite](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` | `Bob` ![Flèche vers le haut](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) |
-| 3 | 12/05/2023 12:03 | `246` | `Bob` ![flèche droite](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` ![Flèche vers le bas](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) | `Bob` |
+| 2 | 12/05/2023 12:02 | `246` | `Bob` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` | `Bob` ![ArrowUp](/help/assets/icons/ArrowUp.svg) |
+| 3 | 12/05/2023 12:03 | `246` | `Bob` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` | Bob |
 | 4 | 12/05/2023 12:04 | `246` | - | **`Bob`** | `Bob` |
-| 5 | 12/05/2023 12:05 | `246` | `Bob` ![flèche droite](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` ![Flèche vers le bas](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) | `Bob` |
+| 5 | 12/05/2023 12:05 | `246` | `Bob` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` ![ArrowDown](/help/assets/icons/ArrowDown.svg) | `Bob` |
 | 6 | 12/05/2023 12:06 | `246` | - | **`Bob`** | `Bob` |
-| 7 | 12/05/2023 12:07 | `246` | `Bob` ![flèche droite](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` | `Bob` |
-| 8 | 12/05/2023 12:03 | `3579` ![flèche droite](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | - | **`3579`** | **`3579`** |
-| 9 | 12/05/2023 12:09 | `3579` ![flèche droite](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | - | **`3579`** | **`3579`** |
+| 7 | 12/05/2023 12:07 | `246` | `Bob` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` | `Bob` |
+| 8 | 12/05/2023 12:03 | `3579` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | - | **`3579`** | **`3579`** |
+| 9 | 12/05/2023 12:09 | `3579` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | - | **`3579`** | **`3579`** |
 | 10 | 12/05/2023 12:02 | `81911` | - | `81911` | **`Bob`** |
-| 11 | 12/05/2023 12:05 | `81911` | `Bob` ![flèche droite](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` ![Flèche vers le bas](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) | `Bob` ![Flèche vers le haut](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) |
+| 11 | 12/05/2023 12:05 | `81911` | `Bob` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` ![ArrowDown](/help/assets/icons/ArrowDown.svg) | `Bob` ![ArrowUp](/help/assets/icons/ArrowUp.svg) |
 | 12 | 12/05/2023 12:12 | `81911` | - | **`Bob`** | `Bob` |
 | | | appareils **3** | | **4 personnes**:<br/>`246`, `Bob`, `3579`, `81911` | **2 personnes**:<br/>`Bob`, `3579` |
 
@@ -189,16 +189,16 @@ Le tableau suivant représente les mêmes données que ci-dessus, mais montre l�
 | Événement | Date et heure | ID persistant (ID de cookie) | ID de personne | ID groupé (après le groupement dynamique) | ID groupé (après relecture) | ID de personne | ID groupé (après demande d’accès à des informations personnelles) |
 |---|---|---|---|---|---|---|---|
 | 1 | 12/05/2023 12:01 | `246` | - | `246` | **`Bob`** | - | `246` |
-| 2 | 12/05/2023 12:02 | `246` | Bob ![flèche droite](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` | `Bob` ![Flèche vers le haut](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) | <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> | `246` |
-| 3 | 12/05/2023 12:03 | `246` | Bob ![flèche droite](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` ![Flèche vers le bas](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) | `Bob` | <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> | `246` |
+| 2 | 12/05/2023 12:02 | `246` | Bob ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` | `Bob` ![Flèche vers le haut](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) | `246` |
+| 3 | 12/05/2023 12:03 | `246` | Bob ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` ![ArrowDown](/help/assets/icons/ArrowDown.svg) | `Bob` | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) | `246` |
 | 4 | 12/05/2023 12:04 | `246` | - | **`Bob`** | `Bob` | - | `246` |
-| 5 | 12/05/2023 12:05 | `246` | Bob ![flèche droite](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` ![Flèche vers le bas](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) | `Bob` | <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> | `246` |
+| 5 | 12/05/2023 12:05 | `246` | Bob ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` ![ArrowDown](/help/assets/icons/ArrowDown.svg) | `Bob` | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) | `246` |
 | 6 | 12/05/2023 12:06 | `246` | - | **`Bob`** | `Bob` | - | `246` |
-| 7 | 12/05/2023 12:07 | `246` | `Bob` ![flèche droite](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` | `Bob` | <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> | `246` |
-| 8 | 12/05/2023 12:03 | `3579` ![flèche droite](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | - | **`3579`** | **`3579`** | - | `3579` |
-| 9 | 12/05/2023 12:09 | `3579` ![flèche droite](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | - | **`3579`** | **`3579`** | - | `3579` |
+| 7 | 12/05/2023 12:07 | `246` | `Bob` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` | `Bob` | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) | `246` |
+| 8 | 12/05/2023 12:03 | `3579` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | - | **`3579`** | **`3579`** | - | `3579` |
+| 9 | 12/05/2023 12:09 | `3579` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | - | **`3579`** | **`3579`** | - | `3579` |
 | 10 | 12/05/2023 12:02 | `81911` | - | `81911` | **`Bob`** | - | `81911` |
-| 11 | 12/05/2023 12:05 | `81911` | `Bob` ![flèche droite](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` ![Flèche vers le bas](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) | `Bob` ![Flèche vers le haut](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) | <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> | `81911` |
+| 11 | 12/05/2023 12:05 | `81911` | `Bob` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` ![ArrowDown](/help/assets/icons/ArrowDown.svg) | `Bob` ![ArrowUp](/help/assets/icons/ArrowUp.svg) | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) | `81911` |
 | 12 | 12/05/2023 12:12 | `81911` | - | **`Bob`** | `Bob` | - | `81911` |
 | | | appareils **3** | | **4 people**:<br/>246, `Bob`, `3579`, `81911` | **2 personnes**:<br/>Bob, `3579` |  | **3 personnes**:<br/>`246`, `3579`, `81911` |
 
@@ -214,7 +214,7 @@ Les conditions préalables suivantes s’appliquent spécifiquement au groupemen
    - Un **ID de personne**, un identifiant disponible uniquement sur certaines lignes. Par exemple, un nom d’utilisateur ou une adresse e-mail haché une fois qu’un profil s’authentifie. Vous pouvez utiliser pratiquement n’importe quel identifiant de votre choix. Le groupement prend en compte ce champ pour contenir les informations de l’ID de personne réel. Pour de meilleurs résultats d’assemblage, un ID de personne doit être envoyé dans les événements du jeu de données au moins une fois pour chaque ID persistant. Si vous prévoyez d’inclure ce jeu de données dans une connexion Customer Journey Analytics, il est préférable que les autres jeux de données aient également un identifiant commun similaire.
 
 <!--
-- Both columns (persistent ID and person ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
+- Both columns (persistent ID and person ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
 
 -->
 

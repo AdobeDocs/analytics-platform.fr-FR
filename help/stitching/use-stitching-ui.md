@@ -6,9 +6,9 @@ feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
 badgePremium: label="Beta" type="Informative"
-source-git-commit: 6ebd1604e01af068228d7a5e4a78fdccf852f480
+source-git-commit: c67225619153218e3dca1eacea204f2b033dfb14
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '820'
 ht-degree: 3%
 
 ---
@@ -30,8 +30,7 @@ Pour activer le groupement sur un jeu de données d’événement dans l’inter
    * plusieurs champs configurés en tant qu’identité et qui vous permettent de sélectionner différentes valeurs pour un identifiant persistant et un identifiant de personne.
    * au moins un champ marqué comme identité principale avec un espace de noms associé si vous souhaitez utiliser le mappage d’identités et l’espace de noms d’identité principal pour l’ID persistant ou l’ID de personne.
 
-* Si vous souhaitez utiliser le groupement basé sur les graphiques et que vous prévoyez que le jeu de données d’événement contribuera au graphique d’identités, vous devez [activer le jeu de données pour le service d’identités](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service). Un jeu de données contribue au graphique d’identités lorsque le jeu de données contient des ID de personne pertinents en regard des ID persistants.
-
+* Si vous souhaitez utiliser le groupement basé sur les graphiques et que vous prévoyez que le jeu de données d’événement contribuera au graphique d’identités (car le jeu de données contient les ID de personne pertinents en regard des ID persistants), vous devez [activer le jeu de données pour le service d’identités](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service).
 
 ## Contrôles en amont
 
