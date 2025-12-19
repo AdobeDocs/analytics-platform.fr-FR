@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: ea5c9114-1fc3-4686-b184-2850acb42b5c
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: dd4ebd86cbb6640575a0eb05aa00aadfa2c7c410
 workflow-type: tm+mt
 source-wordcount: '1549'
 ht-degree: 5%
@@ -114,12 +114,11 @@ L’assemblage effectue au moins deux passages aux données d’un jeu de donné
 
 Les données au-delà de l’intervalle de recherche en amont ne sont pas relues. Un profil doit s’authentifier dans un intervalle de recherche en amont donné pour qu’une visite non authentifiée et une visite authentifiée soient identifiées ensemble. Une fois qu’un appareil est reconnu, il est assemblé en direct à partir de ce moment.
 
-Tenez compte des deux graphiques d’identités suivants pour la `246` et la `3579` des identifiants persistants, de la manière dont ces graphiques d’identités sont mis à jour au fil du temps et de la manière dont ces mises à jour affectent les étapes du groupement basé sur les graphiques.
+Tenez compte des deux mises à jour du graphique d’identités suivantes au fil du temps pour le visiteur A (avec l’ID persistant `246`) et le visiteur B (avec l’ID persistant `3579`), et de la manière dont ces mises à jour affectent les étapes du groupement basé sur les graphiques.
 
-![Graphique d’identités 246](assets/identity-graph-246.svg)
-![Graphique d’identités 3579](assets/identity-graph-3579.svg)
+![Graphique d’identités 3579](assets/identity-graphs.svg)
 
-Vous pouvez afficher un graphique d’identités au fil du temps pour un profil spécifique à l’aide de la [visionneuse de graphiques d’identités](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/features/identity-graph-viewer). Consultez également la section [Logique de liaison du service d’identités](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/features/identity-linking-logic) pour mieux comprendre la logique utilisée lors de la liaison d’identités.
+Vous pouvez afficher un graphique d’identités au fil du temps pour un profil spécifique à l’aide de la [visionneuse de graphiques d’identités](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-viewer). Consultez également la section [Logique de liaison du service d’identités](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-linking-logic) pour mieux comprendre la logique utilisée lors de la liaison d’identités.
 
 ### Étape 1 : Assemblage dynamique
 
@@ -223,7 +222,7 @@ Les restrictions suivantes s’appliquent spécifiquement au groupement basé su
 - Les dates et heures ne sont pas prises en compte lors de l’interrogation de l’ID de personne avec l’espace de noms spécifié. Il est donc possible qu’un ID persistant soit associé à un ID de personne provenant d’un enregistrement qui a un horodatage antérieur.
 - Dans les scénarios d’appareils partagés, où l’espace de noms du graphique contient plusieurs identités, la première identité lexicographique est utilisée. Si les limites et priorités d’espace de noms sont configurées dans le cadre de la publication des règles de liaison de graphiques, l’identité du dernier utilisateur authentifié est utilisée. Voir [Appareils partagés](/help/use-cases/stitching/shared-devices.md) pour plus d’informations.
 - Il existe une limite stricte de trois mois de renvoi d’identités dans le graphique d’identités. Utilisez le remplissage d’identités si vous n’utilisez pas une application Experience Platform, telle que Real-time Customer Data Platform, pour renseigner le graphique d’identité.
-- Les mécanismes de sécurisation [Identity Service](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/guardrails) s’appliquent. Voir, par exemple, les [limites statiques](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/guardrails#static-limits) suivantes :
+- Les mécanismes de sécurisation [Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails) s’appliquent. Voir, par exemple, les [limites statiques](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails#static-limits) suivantes :
    - Nombre maximal d’identités dans un graphique : 50.
    - Nombre maximal de liens vers une identité pour une ingestion par lots unique : 50.
    - Nombre maximal d’identités dans un enregistrement XDM pour l’ingestion de graphiques : 20.
