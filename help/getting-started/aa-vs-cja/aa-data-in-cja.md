@@ -14,7 +14,7 @@ ht-degree: 86%
 
 # Utilisation des données de suite de rapports Adobe Analytics
 
-Les clients Adobe Analytics peuvent facilement exploiter leurs suites de rapports dans Experience Platform et Customer Journey Analytics à l’aide du [ connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). La discussion suivante explique comment procéder.
+Les clients Adobe Analytics peuvent facilement exploiter leurs suites de rapports dans Experience Platform et Customer Journey Analytics à l’aide du [&#x200B; connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). La discussion suivante explique comment procéder.
 
 >[!IMPORTANT]
 >
