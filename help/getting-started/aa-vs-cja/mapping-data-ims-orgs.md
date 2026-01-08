@@ -1,0 +1,62 @@
+---
+title: Mappage des données Analytics de plusieurs organisations IMS
+description: Découvrez comment demander à mapper des données de suites de rapports de plusieurs organisations IMS sources à une organisation IMS de destination.
+role: Admin
+solution: Customer Journey Analytics
+feature: Adobe Analytics Integration,Administration
+hide: true
+hidefromtoc: true
+source-git-commit: 3c34bd50c12b370f5e9f95ac5d6357de4f63e5f6
+workflow-type: tm+mt
+source-wordcount: '745'
+ht-degree: 1%
+
+---
+
+# Mappage des données Analytics de plusieurs organisations IMS
+
+Le connecteur source Analytics peut uniquement ingérer des données à partir de suites de rapports Adobe Analytics qui appartiennent à la même organisation que celle pour laquelle vous êtes autorisé à utiliser Customer Journey Analytics. La fonctionnalité de mappage des données Analytics de plusieurs organisations IMS fournit une solution à cette limitation. La procédure d’activation de cette fonctionnalité est décrite dans cet article.
+
+
+## Scénario
+
+Les privilèges d’accès sont attribués à plusieurs organisations IMS et vous disposez de données Analytics dans plusieurs suites de rapports de ces organisations IMS. Cette configuration peut être le résultat de :
+
+* acquisitions ou fusions
+* exigences de structure organisationnelle
+* contraintes de déploiement régional
+
+Par défaut, vous ne pouvez pas créer de rapports sur la combinaison de données provenant de plusieurs suites de rapports réparties entre plusieurs organisations IMS dans Customer Journey Analytics. La raison de cette limitation est que l’ingestion de données à partir d’Adobe Analytics dans Experience Platform par le biais du connecteur source Analytics ne prend en charge que l’ingestion de données appartenant à une seule organisation IMS. L’organisation IMS pour laquelle vous disposez d’autorisations et que vous utilisez pour vous connecter à Adobe Analytics, Experience Platform et Customer Journey Analytics.
+
+Grâce à la fonctionnalité *mapper les données Analytics de plusieurs organisations IMS* vous pouvez demander à Adobe de mapper les données. Cette fonctionnalité utilise le connecteur source Analytics pour mapper les données des suites de rapports qui se trouvent dans plusieurs organisations IMS *source* aux jeux de données qui font partie d’une organisation IMS *destination*. Par exemple :
+
+| Illustration | Explication |
+|---|---|
+| ![Mappage des données entre plusieurs organisations IMS](/help/getting-started/assets/map-data-across-ims-orgs.svg) | Ce mappage vous permet de créer des rapports sur les suites de rapports qui existent dans l’organisation IMS 1, l’organisation IMS 2 et l’organisation IMS 3 à partir d’une connexion dans Customer Journey Analytics configurée dans l’organisation IMS 3. |
+
+{style="table-layout:fixed"}
+
+## Utilisation
+
+Pour configurer et activer la fonctionnalité *mappage des données Analytics de plusieurs organisations IMS*, vous devez demander le mappage via votre gestionnaire de compte Adobe. Pour ce faire, procédez comme suit :
+
+1. En tant qu’administrateur de l’organisation IMS de destination, demandez des e-mails d’approbation à l’administrateur de l’organisation IMS source pour laquelle vous souhaitez mapper les suites de rapports. Vous pouvez utiliser le texte suivant comme modèle d’e-mail pour demander l’approbation des administrateurs de l’organisation IMS source.
+
+   | Exemple de modèle d’e-mail |
+   | --- |
+   | *Représentant de nom de société*, pour accorder à l’organisation de destination sélectionnée l’accès aux organisations IMS suivantes (liste des organisations IMS sources), nous devons nous assurer qu’un administrateur de chaque organisation IMS soumet son approbation pour autoriser l’accès à ses données. Nous nous assurons ainsi que les autorisations d’accès aux données de toute organisation IMS affectée sont respectées. Pour vous assurer que nous disposons des autorisations appropriées, demandez à un administrateur Adobe enregistré de chaque organisation d’administration de répondre à cet e-mail avec son nom et l’organisation IMS qu’il représente, en disant « J’approuve » pour indiquer qu’il approuve l’affichage des données de cette organisation IMS dans l’organisation de destination [liste de l’organisation IMS de destination]. Notez que cet administrateur doit être un administrateur enregistré dans le système Adobe en tant qu’administrateur pour cette organisation IMS. |
+
+1. Envoyez un e-mail en tant qu’administrateur de l’organisation IMS de destination au gestionnaire de compte Adobe qui demande le mappage des suites de rapports de plusieurs organisations IMS sources à l’organisation IMS de destination. Joignez les e-mails d’approbation que vous avez reçus des administrateurs de l’organisation IMS source.
+
+Une fois que le gestionnaire de compte reçoit l’e-mail avec la demande de mappage des données Analytics de plusieurs organisations, la demande est examinée dans Adobe. Le gestionnaire de compte vous contacte pour toute question supplémentaire, formation facultative et autres informations.
+
+Une fois approuvé, le mappage demandé est créé et vous en êtes informé. Le nom de l’organisation IMS source est ajouté au nom de la suite de rapports dans la [liste des suites de rapports Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#select-data) dans Experience Platform.
+
+## Limites et risques
+
+Les restrictions suivantes s’appliquent à la fonctionnalité *mappage des données Analytics de plusieurs organisations IMS* :
+
+* Vous ne pouvez connecter une suite de rapports qu’une seule fois entre plusieurs organisations.
+* Vous devez supprimer toutes les connexions pour une organisation IMS définie comme organisation IMS de destination dans un mappage avant de pouvoir demander la suppression du mappage.
+* Les ECID ne sont pas compatibles entre les organisations IMS sources mappées et ne sont pas compatibles avec l’organisation IMS de destination.
+* Un utilisateur disposant des autorisations suffisantes pour configurer le connecteur source Analytics dans l’organisation IMS de destination peut ingérer des données Analytics à partir de n’importe quelle organisation IMS source mappée. Aucune autorisation n’est vérifiée pour cet utilisateur ou cette utilisatrice pour l’une des organisations IMS sources.
