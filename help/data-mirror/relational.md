@@ -6,9 +6,9 @@ feature: Basics
 role: Admin
 badgePremium: label="Beta"
 exl-id: 17f72954-085c-46a8-bc28-6af0a4eb159a
-source-git-commit: 0e86227915404fe62fcd1f27e95eb3b1bb673030
+source-git-commit: cd3baec708f1811a7cbc37dfe0a9c3af75eb97c3
 workflow-type: tm+mt
-source-wordcount: '2268'
+source-wordcount: '2351'
 ht-degree: 14%
 
 ---
@@ -169,26 +169,32 @@ Définissez un schéma qui modélise ces données. Configurer le schéma :
    | `trackingcode` | `Tracking Code` | **[!UICONTROL Chaîne]** | |
 
 
-   * Le champ **[!UICONTROL id]** est configuré comme **[!UICONTROL descripteur de version]**.
+   * Le champ **[!UICONTROL id]** est configuré en tant que descripteur **[!UICONTROL Version]**.
 
      ![Descripteur de version](assets/platform-schema-id.png)
 
-   * Le champ **[!UICONTROL personid]** est configuré, avec **[!UICONTROL timestamp]** comme clé de Principal **&#x200B;**. Sélectionnez ![Ajouter](/help/assets/icons/Add.svg) **[!UICONTROL Créer une clé primaire composite]** pour créer une clé composite.
+     Dans un scénario réel, vous pouvez utiliser un champ plus approprié comme [descripteur de version](aep.md#schema). Par exemple, un champ qui effectue le suivi d’une heure de dernière modification.
 
-     ![&#x200B; Clé composite &#x200B;](assets/platform-schema-compositekey.png)
+   * Le champ **[!UICONTROL personid]** est configuré, avec **[!UICONTROL timestamp]** comme clé de Principal ****. Sélectionnez ![Ajouter](/help/assets/icons/Add.svg) **[!UICONTROL Créer une clé primaire composite]** pour créer une clé composite.
+
+     ![ Clé composite ](assets/platform-schema-compositekey.png)
 
      Le champ **[!UICONTROL personid]** est également configuré en tant qu’**[!UICONTROL Identité]**, avec **[!UICONTROL CRMID]** comme **[!UICONTROL Espace de noms d’identité]**.
 
      ![Descripteur de personne](assets/platform-schema-personid.png)
 
-   * Le champ **[!UICONTROL timestamp]** est configuré, ainsi que le champ **[!UICONTROL personid]** comme clé de Principal **&#x200B;**. Le champ **[!UICONTROL horodatage]** est également configuré en tant que **[!UICONTROL descripteur d’horodatage]**. Il vous suffit de définir un champ en tant que **[!UICONTROL descripteur d’horodatage]** pour les données relationnelles de série temporelle.
+     Le champ **[!UICONTROL personid]** n’a pas besoin d’être la clé de Principal ****. Dans un scénario réel, vous disposez probablement d’un champ différent pour effectuer le suivi de la clé primaire, distinct de l’**[!UICONTROL personid]**.
+
+   * Le champ **[!UICONTROL timestamp]** est configuré, ainsi que le champ **[!UICONTROL personid]** comme clé de Principal ****. Le champ **[!UICONTROL horodatage]** est également configuré en tant que **[!UICONTROL descripteur d’horodatage]**. Il vous suffit de définir un champ en tant que **[!UICONTROL descripteur d’horodatage]** pour les données relationnelles de série temporelle.
 
      ![Descripteur d’horodatage](assets/platform-schema-timestamp.png)
 
 
-   Si vous avez correctement défini la clé de Principal **&#x200B;**, le descripteur de version **&#x200B;**&#x200B;et le descripteur d’horodatage **&#x200B;**, l’avertissement au-dessus de la définition du schéma disparaît.
+   Si vous avez correctement défini la clé de Principal ****, le descripteur de version **** et le descripteur d’horodatage ****, l’avertissement au-dessus de la définition du schéma disparaît.
 
 1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer le schéma.
+
+De la même manière, vous pouvez configurer un [schéma](aep.md#schema) relationnel basé sur les enregistrements. Par exemple, pour contenir des données de profil et de recherche.
 
 
 ## Utiliser un connecteur source
@@ -219,7 +225,7 @@ L’assistant d’ajout de données vous guide tout au long des étapes suivante
 
    1. Sélectionnez **[!UICONTROL Suivant]**.
 
-  Consultez la documentation d’Experience Platform pour plus d’informations sur la connexion et l’authentification lorsque vous utilisez le connecteur [Azure Databricks](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/databases/databricks) ou [Snowflake](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/databases/snowflake).
+  Consultez la documentation d’Experience Platform pour plus d’informations sur la connexion et l’authentification lorsque vous utilisez le connecteur [Azure Databricks](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks) ou [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake).
 
 
 ### Sélectionner les données
@@ -254,7 +260,7 @@ L’assistant d’ajout de données vous guide tout au long des étapes suivante
 
 À l’étape **[!UICONTROL Mappage]** :
 
-1. Mappez les champs . Du schéma dans Google BigQuery (**[!UICONTROL données Source]**) aux champs du schéma que vous avez défini dans Experience Platform (**[!UICONTROL champs cibles]**).
+1. Mappez les champs du schéma dans Google BigQuery (**[!UICONTROL données Source]**) aux champs du schéma que vous avez défini dans Experience Platform (**[!UICONTROL champs cibles]**).
 
    ![Experience Platform - Connecteur Source - Mappage](assets/platform-sources-mapping.png)
 
