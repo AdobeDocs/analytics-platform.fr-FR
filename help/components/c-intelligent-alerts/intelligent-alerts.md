@@ -27,7 +27,7 @@ Selon votre package Customer Journey Analytics, vous pouvez également décle
    * Modification des mesures selon un pourcentage spécifique.
    * Mesures supérieures, inférieures ou égales à une valeur spécifique. (disponible uniquement pour les clients Adobe Analytics avec un package Select, Prime ou Ultimate)
 
-Ce [tutoriel vidéo](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/data-science/intelligent-alerts) fournit un aperçu de base des alertes.
+Ce [tutoriel vidéo](https://experienceleague.adobe.com/fr/docs/analytics-learn/tutorials/data-science/intelligent-alerts) fournit un aperçu de base des alertes.
 
 
 
