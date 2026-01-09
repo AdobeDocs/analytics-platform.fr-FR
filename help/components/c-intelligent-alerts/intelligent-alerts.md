@@ -4,10 +4,10 @@ title: Vue d’ensemble des alertes
 feature: Workspace Basics
 role: User, Admin
 exl-id: 029be0c8-ec78-4bb7-a6cd-bb303b5ac82a
-source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
+source-git-commit: 65e46a5d2a6759dd83b24bba2d1d4ee283b907c9
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 96%
+source-wordcount: '465'
+ht-degree: 58%
 
 ---
 
@@ -15,16 +15,21 @@ ht-degree: 96%
 
 Les alertes dans Customer Journey Analytics envoient un avertissement en fonction de pourcentages ou de points de données spécifiques modifiés.
 
-Selon votre package Customer Journey Analytics, vous pouvez également déclencher les alertes en fonction des seuils d’anomalie. Les alertes (ou « alertes intelligentes »), fournissent des contrôles granulaires qui s’intègrent à la [détection des anomalies](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) et se déclenchent lorsque vous en avez le plus besoin.
+Selon votre package Customer Journey Analytics, vous pouvez également déclencher les alertes en fonction des seuils d’anomalie. Ces alertes (également appelées *Alertes intelligentes*) fournissent des commandes granulaires qui s’intègrent à la [Détection des anomalies](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) et se déclenchent lorsque vous en avez le plus besoin.
 
-Grâce aux alertes, vous pouvez effectuer ce qui suit :
+* Prévisualisez la fréquence de déclenchement d’une alerte.
+* Envoyer des alertes par e-mail ou par SMS, avec des liens pour générer automatiquement les projets Analysis Workspace.
+* Créez des alertes *empilées* qui capturent plusieurs mesures dans une seule alerte.
+* Créer des alertes en fonction de :
+   * Anomalies des mesures qui existent, sont supérieures ou inférieures aux valeurs de seuil attendues.
 
-* prévisualiser le nombre de fois où une alerte sera déclenchée ;
-* envoyer des alertes par courrier électronique ou par SMS, avec des liens vers des projets Analysis Workspace générés automatiquement ;
-* créer des alertes « empilées » qui présentent plusieurs mesures dans une seule alerte
-* Créer des alertes en fonction des anomalies (seuils de 90 %, 95 %, 99 %, 99,75 % et 99,9 % ; pourcentage de modification ; supérieur/inférieur) (disponible uniquement pour les clientes et clients Customer Journey Analytics avec un forfait Select, Prime ou Ultimate)
+     [Détection des anomalies](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) crée une valeur attendue ainsi qu’une limite supérieure et inférieure à l’aide des données historiques. Si la valeur de la mesure réelle dépasse la limite supérieure ou est inférieure à la limite inférieure définie comme valeur de seuil, cet événement est considéré comme une anomalie au niveau de confiance du seuil et déclenche l’alerte. Un seuil plus élevé (par exemple : 99 % ou 99,9 %) implique une bande plus large, ce qui entraîne moins d’alertes provoquées par des anomalies plus extrêmes. Un seuil inférieur (par exemple : 90 %) implique une bande plus étroite, ce qui entraîne plus d’alertes provoquées par des anomalies moins extrêmes.
+   * Modification des mesures selon un pourcentage spécifique.
+   * Mesures supérieures, inférieures ou égales à une valeur spécifique. (disponible uniquement pour les clients Adobe Analytics avec un package Select, Prime ou Ultimate)
 
-Le tutoriel vidéo suivant présente un aperçu de base des alertes : [Alertes](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/data-science/intelligent-alerts.html?lang=fr) (5:34)
+Ce [tutoriel vidéo](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/data-science/intelligent-alerts) fournit un aperçu de base des alertes.
+
+
 
 ## Comprendre en quoi les alertes diffèrent
 
