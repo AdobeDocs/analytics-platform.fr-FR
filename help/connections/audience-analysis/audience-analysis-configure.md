@@ -6,10 +6,10 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 996d7d7bb0c0da566a926f9a3a4c465baca69a9a
+source-git-commit: 840bf65d186178fb944041ff486e95ba60dc6037
 workflow-type: tm+mt
-source-wordcount: '1294'
-ht-degree: 13%
+source-wordcount: '1305'
+ht-degree: 12%
 
 ---
 
@@ -74,14 +74,14 @@ Pour créer une configuration d’analyse d’audience :
    | Champ | Description |
    |---------|----------|
    | **[!UICONTROL Nom]** | Attribuez un nom à la configuration. |
-   | **[!UICONTROL Sandbox]** | Sélectionnez la sandbox Experience Platform qui contient le jeu de données de profil que vous souhaitez ajouter à votre connexion. <p>Adobe Experience Platform fournit des [sandbox](https://experienceleague.adobe.com/fr/docs/experience-platform/sandbox/home) qui divisent une instance de plateforme unique en environnements virtuels distincts pour favoriser le développement et l’évolution d’applications d’expérience digitale. Vous pouvez considérer les sandbox comme des « silos de données » contenant des jeux de données. Les sandbox permettent de contrôler l’accès aux jeux de données.</p> |
+   | **[!UICONTROL Sandbox]** | Sélectionnez la sandbox Experience Platform qui contient le jeu de données de profil que vous souhaitez ajouter à votre connexion. Un seul sandbox peut prendre en charge jusqu’à 100 configurations d’analyse d’audience. <p>Adobe Experience Platform fournit des [sandbox](https://experienceleague.adobe.com/fr/docs/experience-platform/sandbox/home) qui divisent une instance de plateforme unique en environnements virtuels distincts pour favoriser le développement et l’évolution d’applications d’expérience digitale. Vous pouvez considérer les sandbox comme des « silos de données » contenant des jeux de données. Les sandbox permettent de contrôler l’accès aux jeux de données.</p> |
 
 1. Dans la section **[!UICONTROL Jeu de données de profil]**, spécifiez les informations suivantes :
 
    | Champ | Description |
    |---------|----------|
    | **[!UICONTROL Politique de fusion]** | Sélectionnez la politique de fusion qui correspond au jeu de données de profils que vous souhaitez utiliser pour l’analyse de l’audience. <p>Les politiques de fusion déterminent la manière dont Adobe Experience Platform combine les données de profil de plusieurs jeux de données en profils clients unifiés utilisés pour la création d’audiences. La politique de fusion que vous sélectionnez affecte les attributs du profil inclus dans vos audiences. Chaque jour, un instantané de ces données est généré dans Experience Platform. Cet instantané fournit une vue statique des données à un moment spécifique dans le temps et n’inclut aucune donnée d’événement.</p><p>Sélectionnez la politique de fusion **[!UICONTROL Par défaut basée sur le temps]** si plusieurs politiques de fusion s’affichent et que vous ne savez pas laquelle choisir. Vous pouvez également consulter votre équipe de données pour mieux comprendre les audiences associées à chaque politique de fusion.</p> |
-   | **[!UICONTROL Jeu de données du profil]** | Le jeu de données de profil associé à la politique de fusion que vous avez sélectionnée. Ce jeu de données de profil inclut les données d’audience Experience Platform que vous souhaitez analyser. Ce jeu de données de profil est ajouté à la connexion que vous sélectionnez.<p>Une fois que vous avez choisi une politique de fusion, l’exportation de l’instantané du profil s’affiche. Par exemple : `Profile-Snapshot-Export-abbc7093-80f4-4b49-b96e-e743397d763f`.</p><p>Pour plus d’informations, voir [Jeux de données d’attributs de profil](https://experienceleague.adobe.com/fr/docs/experience-platform/dashboards/query#profile-attribute-datasets) dans le guide des tableaux de bord d’Experience Platform.</p> |
+   | **[!UICONTROL Jeu de données du profil]** | Le jeu de données de profil associé à la politique de fusion que vous avez sélectionnée. Ce jeu de données de profil inclut les données d’audience Experience Platform que vous souhaitez analyser. Ce jeu de données de profil est ajouté à la connexion que vous sélectionnez.<p>Une fois que vous avez choisi une politique de fusion, l’exportation de l’instantané du profil s’affiche. Par exemple : `Profile-Snapshot-Export-abbc7093-80f4-4b49-b96e-e743397d763f`.</p><p>Pour plus d’informations, voir [Jeux de données d’attributs de profil](https://experienceleague.adobe.com/en/docs/experience-platform/dashboards/query#profile-attribute-datasets) dans le guide des tableaux de bord d’Experience Platform.</p> |
 
 1. Dans la section **[!UICONTROL Connexion]**, cliquez sur **[!UICONTROL Sélectionner une connexion]**.
 
@@ -105,7 +105,10 @@ Pour créer une configuration d’analyse d’audience :
 
 1. Sélectionnez **[!UICONTROL Créer]** pour créer la configuration.
 
-   Comme le jeu de données profil est mis à jour une fois par jour, les audiences sont disponibles dans les vues de données Customer Journey Analytics le lendemain de la création de la configuration de l’analyse de l’audience.
+   >[!IMPORTANT]
+   >
+   >Comme le jeu de données profil est mis à jour une fois par jour, les audiences sont disponibles dans les vues de données Customer Journey Analytics le lendemain de la création de la configuration de l’analyse de l’audience.
+
 
 1. Au bout de 24 heures, [affichez les dimensions d’audience dans la vue de données](#view-audience-dimensions-in-the-data-view) pour vérifier que les dimensions d’audience sont disponibles dans les vues de données que vous avez sélectionnées.
 
@@ -135,6 +138,6 @@ Pour afficher les dimensions d’analyse d’audience dans la vue de données :
 
 1. Utilisez les dimensions Analyse de l’audience dans Analysis Workspace.
 
-   Les utilisateurs et utilisatrices qui ont accès à la vue de données dans Analysis Workspace peuvent désormais voir les nouvelles dimensions et les utiliser dans leurs analyses. Pour plus d’informations sur l’utilisation des dimensions d’analyse d’audience dans Analysis Workspace, voir [&#x200B; Analyser des audiences Experience Platform dans Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).
+   Les utilisateurs et utilisatrices qui ont accès à la vue de données dans Analysis Workspace peuvent désormais voir les nouvelles dimensions et les utiliser dans leurs analyses. Pour plus d’informations sur l’utilisation des dimensions d’analyse d’audience dans Analysis Workspace, voir [ Analyser des audiences Experience Platform dans Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).
 
 

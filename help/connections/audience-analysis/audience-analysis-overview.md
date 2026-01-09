@@ -6,9 +6,9 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 996d7d7bb0c0da566a926f9a3a4c465baca69a9a
+source-git-commit: 840bf65d186178fb944041ff486e95ba60dc6037
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '675'
 ht-degree: 4%
 
 ---
@@ -41,11 +41,14 @@ Le diagramme suivant et le tableau associé présentent une représentation de h
 | 7 | Connexion | La connexion à laquelle vous souhaitez ajouter le jeu de données de profil que vous sélectionnez. |
 | 8 | Nouvelles dimensions d’audience | Nouvelles dimensions d’audience<!--and metrics?--> qui représentent les audiences Experience Platform incluses dans le jeu de données de profil que vous avez sélectionné et qui sont disponibles pour la création de rapports dans Analysis Workspace. Ces dimensions sont automatiquement créées. |
 | 9 | Vues des données | Vues de données sélectionnées associées à votre connexion. Il s’agit des vues de données que vous souhaitez utiliser lors de l’analyse des données d’audience Experience Platform dans Analysis Workspace. Ces vues de données sont automatiquement configurées avec les données d’audience Experience Platform pour la création de rapports. |
-| 10 | Analysis Workspace | Zone de Customer Journey Analytics dans laquelle vous créez des rapports qui incluent les audiences Experience Platform ingérées. |
 
 ## Configuration de l’analyse de l’audience
 
 Lorsque vous configurez l’analyse de l’audience, vous sélectionnez le sandbox et la politique de fusion associés aux audiences Experience Platform que vous souhaitez analyser. Customer Journey Analytics crée un jeu de données de recherche, puis ajoute automatiquement le jeu de données de recherche et le jeu de données de profil à la connexion que vous choisissez.
+
+>[!NOTE]
+>
+>Les audiences sont disponibles dans les vues de données Customer Journey Analytics le lendemain de la création de la configuration de l’analyse de l’audience.
 
 Pour plus d’informations, voir [Configuration de l’analyse de l’audience](/help/connections/audience-analysis/audience-analysis-configure.md).
 
