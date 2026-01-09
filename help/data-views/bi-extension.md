@@ -48,7 +48,7 @@ Vous pouvez également effectuer les opérations suivantes :
 
 Pour utiliser des informations d’identification n’expirant pas, procédez comme suit :
 
-* Créez des [informations d’identification non expirantes dans Experience Platform](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/bi-extension#non-expiring-credentials).
+* Créez des [informations d’identification non expirantes dans Experience Platform](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dataviews/bi-extension#non-expiring-credentials).
 * Accordez l’accès aux informations d’identification non expirantes en suivant les étapes mentionnées dans [Informations d’identification arrivant à expiration](#Expiring-credentials).
 
 Consultez [Contrôle d’accès du parcours client](../technotes/access-control.md) pour plus d’informations, en particulier les [autorisations supplémentaires d’administration de produit](../technotes/access-control.md#product-admin-additional-permissions) et les [autorisations de Customer Journey Analytics dans Admin Console](../technotes/access-control.md#customer-journey-analytics-permissions-in-admin-console).
