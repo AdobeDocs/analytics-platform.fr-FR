@@ -6,10 +6,10 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 840bf65d186178fb944041ff486e95ba60dc6037
+source-git-commit: 9d9c4dbba13f61af4a47bbb0f87533fb950976bc
 workflow-type: tm+mt
-source-wordcount: '675'
-ht-degree: 4%
+source-wordcount: '708'
+ht-degree: 3%
 
 ---
 
@@ -80,7 +80,13 @@ Les rôles Customer Journey Analytics suivants et les autorisations Experience P
 | [Affichage des dimensions d’analyse d’audience dans la vue de données](/help/connections/audience-analysis/audience-analysis-configure.md#view-audience-dimensions-in-the-data-view) | Administrateur de profil de produit pour le profil de produit auquel la vue de données est affectée <p>Pour plus d’informations, voir [Contrôle d’accès](/help/technotes/access-control.md).</p> | S.O. |
 | Utilisation des dimensions d’analyse d’audience dans Analysis Workspace | Accès à une vue de données dans laquelle les dimensions d’analyse d’audience ont été ajoutées | S.O. |
 
+## Limites de l’analyse de l’audience
 
+Tenez compte des limites suivantes lors de la [configuration de l’analyse de l’audience](/help/connections/audience-analysis/audience-analysis-configure.md) :
+
+* Un seul sandbox peut prendre en charge jusqu’à 100 configurations d’analyse d’audience.
+
+* Une connexion ne peut être associée qu’à une seule configuration d’analyse d’audience.
 
 
 
