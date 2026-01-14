@@ -5,7 +5,7 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: f932110a-ca9d-40d1-9459-064ef9cd23da
-source-git-commit: b94c60c9832bc699212dda97ad634e8d3260c45c
+source-git-commit: 5808de9b39d3c8fa5632755958ddb887c081b203
 workflow-type: tm+mt
 source-wordcount: '1467'
 ht-degree: 9%
@@ -25,7 +25,7 @@ ht-degree: 9%
 
 {{upgrade-note-step}}
 
-Adobe recommande de créer un schéma [Modèle de données d’expérience](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/home) (XDM) personnalisé pour Customer Journey Analytics lors de l’implémentation de la [collecte de données Adobe Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/collection/home). La création de ce schéma est généralement effectuée avant toute modification d’implémentation ou modification de code. Un schéma personnalisé vous permet de concevoir un contrat de données concis et spécifique à une organisation, sans hériter des contraintes d’Adobe Analytics. Voir [Choisir votre schéma pour Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md) pour en savoir plus sur les types de schémas disponibles pour votre organisation.
+Adobe recommande de créer un schéma [Modèle de données d’expérience](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/home) (XDM) personnalisé pour Customer Journey Analytics lors de l’implémentation de la [collecte de données Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/collection/home). La création de ce schéma est généralement effectuée avant toute modification d’implémentation ou modification de code. Un schéma personnalisé vous permet de concevoir un contrat de données concis et spécifique à une organisation, sans hériter des contraintes d’Adobe Analytics. Voir [Choisir votre schéma pour Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md) pour en savoir plus sur les types de schémas disponibles pour votre organisation.
 
 Les schémas sont destinés à être des versions optimisées de la manière dont vous souhaitez que vos données soient structurées à long terme. Les modifications apportées aux schémas sont coûteuses car elles ont un impact sur la collecte de données, la validation et les services en aval. Vous pouvez ajouter des éléments aux schémas au fil du temps en fonction des besoins de l’entreprise. Toutefois, les champs de schéma ne peuvent pas être supprimés une fois que les données commencent à y circuler.
 
@@ -34,7 +34,7 @@ Les schémas sont destinés à être des versions optimisées de la manière don
 Le pipeline de données pour Customer Journey Analytics contient des zones distinctes pour la collecte et l’interprétation des données. Lors de la mise à niveau à partir d’Adobe Analytics, une erreur courante est d’essayer de recréer des props et des eVars avec leurs comportements dans XDM. Utilisez plutôt le SDK Web pour collecter les données et utiliser [Vues de données](/help/data-views/data-views.md) pour déterminer comment ces données sont interprétées dans les rapports.
 
 | Calque | objectif du Principal | Flexibilité | Ce qui appartient | Ce qui n’appartient pas |
-|---|---|---|---|
+|---|---|---|---|---|
 | **Schéma XDM** | Définir la structure et la signification durables des données collectées | Rigide ; considéré comme des points de données immuables | Forme Événement et entité, signification du champ, relations, valeurs autorisées, réutilisation sur plusieurs canaux | « emplacements » numérotés (eVar1/prop1), logique d’attribution/de persistance, solutions de contournement spécifiques aux rapports |
 | **Vues de données** | Définir le comportement des données collectées dans l’analyse | Flexible ; peut être modifié librement et peut réinterpréter les données de manière rétroactive | Paramètres des composants, comportement d’attribution et de persistance, champs dérivés, mesures filtrées, mesures calculées | Signification fondamentale des champs ; cette signification doit être stable dans le schéma. |
 
@@ -108,9 +108,9 @@ Lors de l’architecture d’un schéma, tenez compte des faits. Par exemple, `e
 
 Certaines organisations doivent continuer à générer des rapports Adobe Analytics lors de la mise à niveau vers Customer Journey Analytics. Vous pouvez maintenir la parité sans introduire d’artefacts spécifiques d’Analytics dans votre conception de schéma à long terme à l’aide de l’approche suivante :
 
-1. **Utiliser des chemins d’accès aux champs XDM reconnus et automatiquement mappés par Adobe Analytics :** lorsque vous envoyez des champs XDM reconnus par Edge Network à Adobe Analytics, ils sont [&#x200B; mappés automatiquement](https://experienceleague.adobe.com/fr/docs/analytics/implementation/aep-edge/xdm-var-mapping) sans configuration supplémentaire.
+1. **Utiliser des chemins d’accès aux champs XDM reconnus et automatiquement mappés par Adobe Analytics :** lorsque vous envoyez des champs XDM reconnus par Edge Network à Adobe Analytics, ils sont [ mappés automatiquement](https://experienceleague.adobe.com/fr/docs/analytics/implementation/aep-edge/xdm-var-mapping) sans configuration supplémentaire.
 1. **Utiliser des champs XDM personnalisés pour les concepts spécifiques à une organisation :** tous les champs XDM qui ne sont pas automatiquement mappés à une variable Analytics sont transférés en tant que [variables de données contextuelles](https://experienceleague.adobe.com/fr/docs/analytics/implementation/vars/page-vars/contextdata) dans Adobe Analytics.
-1. **Utilisez les règles de traitement Adobe Analytics pour mapper ces variables de données contextuelles aux props/eVars:** [règles de traitement](https://experienceleague.adobe.com/fr/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) pour vous permettre de mapper n’importe quel champ XDM personnalisé dans n’importe quelle eVar ou prop. Ce concept prend en charge le reporting de parité dans Adobe Analytics tout en gardant votre schéma propre et centré sur Customer Journey Analytics.
+1. **Utilisez les règles de traitement Adobe Analytics pour mapper ces variables de données contextuelles aux props/eVars:** [règles de traitement](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) pour vous permettre de mapper n’importe quel champ XDM personnalisé dans n’importe quelle eVar ou prop. Ce concept prend en charge le reporting de parité dans Adobe Analytics tout en gardant votre schéma propre et centré sur Customer Journey Analytics.
 
 ## Identifier les parties prenantes et définir la propriété
 
@@ -128,7 +128,7 @@ Définissez un propriétaire clair pour les modifications de schéma. Un schéma
 La conception du schéma doit refléter les attentes en matière de confidentialité et de gouvernance, conformément aux politiques de confidentialité de votre organisation. Tenez compte des points suivants lors de la conception de votre schéma :
 
 * Collectez uniquement les éléments nécessaires pour prendre en charge les cas d’utilisation définis.
-* Assurez-vous que les exigences en matière de consentement et d’utilisation des données sont prises en compte dans votre stratégie de collecte. Pour plus d’informations[&#x200B; voir &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/landing/governance-privacy-security/consent/sdk) Utilisation de Web SDK pour traiter les données de consentement client.
+* Assurez-vous que les exigences en matière de consentement et d’utilisation des données sont prises en compte dans votre stratégie de collecte. Pour plus d’informations[ voir ](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/consent/sdk) Utilisation de Web SDK pour traiter les données de consentement client.
 * Tenez compte de la manière dont les champs sensibles sont étiquetés et contrôlés dans les outils de gouvernance de Adobe Experience Platform. Voir [Adobe Customer Journey Analytics et gouvernance des données](/help/privacy/privacy-overview.md) pour plus d’informations.
 
 ## Étapes suivantes
