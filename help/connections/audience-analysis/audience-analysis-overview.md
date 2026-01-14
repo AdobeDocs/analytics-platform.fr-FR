@@ -6,9 +6,9 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 9d9c4dbba13f61af4a47bbb0f87533fb950976bc
+source-git-commit: ca2adce7be8a28fa72323915473a8c2283741889
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '728'
 ht-degree: 3%
 
 ---
@@ -46,7 +46,9 @@ Le diagramme suivant et le tableau associé présentent une représentation de h
 
 Lorsque vous configurez l’analyse de l’audience, vous sélectionnez le sandbox et la politique de fusion associés aux audiences Experience Platform que vous souhaitez analyser. Customer Journey Analytics crée un jeu de données de recherche, puis ajoute automatiquement le jeu de données de recherche et le jeu de données de profil à la connexion que vous choisissez.
 
->[!NOTE]
+>[!IMPORTANT]
+>
+>Les données d’audience sont retraitées et générées chaque nuit, ce qui rend les données d’audience exactes pour analyse uniquement pour la journée précédente (« hier »).
 >
 >Les audiences sont disponibles dans les vues de données Customer Journey Analytics le lendemain de la création de la configuration de l’analyse de l’audience.
 

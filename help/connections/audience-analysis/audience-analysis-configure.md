@@ -6,9 +6,9 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 840bf65d186178fb944041ff486e95ba60dc6037
+source-git-commit: 7926f043c9e2808a083f8947fa0882c0faa4051d
 workflow-type: tm+mt
-source-wordcount: '1305'
+source-wordcount: '1383'
 ht-degree: 12%
 
 ---
@@ -53,6 +53,12 @@ ht-degree: 12%
 
 L’analyse de l’audience vous permet d’ingérer des données d’appartenance à une audience à partir de jeux de données Profil Experience Platform dans une connexion Customer Journey Analytics. Les audiences deviennent disponibles en tant que nouvelles dimensions à utiliser dans Analysis Workspace. Pour obtenir des informations d’aperçu plus détaillées sur l’analyse de l’audience, voir [Présentation de l’analyse des audiences](/help/connections/audience-analysis/audience-analysis-overview.md).
 
+>[!IMPORTANT]
+>
+>Les données d’audience sont retraitées et générées chaque nuit, ce qui rend les données d’audience exactes pour analyse uniquement pour la journée précédente (« hier »).
+>
+>Les audiences sont disponibles dans les vues de données Customer Journey Analytics le lendemain de la création de la configuration de l’analyse de l’audience.
+
 ## Création d’une configuration d’analyse d’audience
 
 Lors de la création d’une configuration d’analyse d’audience, vous sélectionnez le sandbox et la politique de fusion associés aux audiences Experience Platform que vous souhaitez analyser. Customer Journey Analytics crée un jeu de données de recherche, puis ajoute automatiquement le jeu de données de recherche et le jeu de données de profil à la connexion que vous choisissez.
@@ -81,7 +87,7 @@ Pour créer une configuration d’analyse d’audience :
    | Champ | Description |
    |---------|----------|
    | **[!UICONTROL Politique de fusion]** | Sélectionnez la politique de fusion qui correspond au jeu de données de profils que vous souhaitez utiliser pour l’analyse de l’audience. <p>Les politiques de fusion déterminent la manière dont Adobe Experience Platform combine les données de profil de plusieurs jeux de données en profils clients unifiés utilisés pour la création d’audiences. La politique de fusion que vous sélectionnez affecte les attributs du profil inclus dans vos audiences. Chaque jour, un instantané de ces données est généré dans Experience Platform. Cet instantané fournit une vue statique des données à un moment spécifique dans le temps et n’inclut aucune donnée d’événement.</p><p>Sélectionnez la politique de fusion **[!UICONTROL Par défaut basée sur le temps]** si plusieurs politiques de fusion s’affichent et que vous ne savez pas laquelle choisir. Vous pouvez également consulter votre équipe de données pour mieux comprendre les audiences associées à chaque politique de fusion.</p> |
-   | **[!UICONTROL Jeu de données du profil]** | Le jeu de données de profil associé à la politique de fusion que vous avez sélectionnée. Ce jeu de données de profil inclut les données d’audience Experience Platform que vous souhaitez analyser. Ce jeu de données de profil est ajouté à la connexion que vous sélectionnez.<p>Une fois que vous avez choisi une politique de fusion, l’exportation de l’instantané du profil s’affiche. Par exemple : `Profile-Snapshot-Export-abbc7093-80f4-4b49-b96e-e743397d763f`.</p><p>Pour plus d’informations, voir [Jeux de données d’attributs de profil](https://experienceleague.adobe.com/fr/docs/experience-platform/dashboards/query#profile-attribute-datasets) dans le guide des tableaux de bord d’Experience Platform.</p> |
+   | **[!UICONTROL Jeu de données du profil]** | Le jeu de données de profil associé à la politique de fusion que vous avez sélectionnée. Ce jeu de données de profil inclut les données d’audience Experience Platform que vous souhaitez analyser. Ce jeu de données de profil est ajouté à la connexion que vous sélectionnez.<p>Une fois que vous avez choisi une politique de fusion, l’exportation de l’instantané du profil s’affiche. Par exemple : `Profile-Snapshot-Export-abbc7093-80f4-4b49-b96e-e743397d763f`.</p><p>Pour plus d’informations, voir [Jeux de données d’attributs de profil](https://experienceleague.adobe.com/en/docs/experience-platform/dashboards/query#profile-attribute-datasets) dans le guide des tableaux de bord d’Experience Platform.</p> |
 
 1. Dans la section **[!UICONTROL Connexion]**, cliquez sur **[!UICONTROL Sélectionner une connexion]**.
 
@@ -93,9 +99,10 @@ Pour créer une configuration d’analyse d’audience :
 
    | Champ | Description |
    |---------|----------|
-   | **[!UICONTROL ID de personne]** | Sélectionnez un champ dans le schéma qui représente l’ID de personne. La sélection est limitée à la liste des champs du schéma qui sont marqués comme Identité et qui possèdent un espace de noms d’identité.<p>Si aucun ID de personne n’est disponible, cela signifie qu’un ou plusieurs ID de personne n’ont pas été définis dans le schéma. Voir [Définir des champs d’identité dans l’interface utilisateur](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/ui/fields/identity) pour plus d’informations.</p> |
-   | **[!UICONTROL Utiliser l’espace de noms d’identité principal]** | Cette option s’affiche si vous sélectionnez **[!UICONTROL Mappage d’identités]** pour l’ID de personne.<p>Activez cette option si vous souhaitez que Customer Journey Analytics recherche l’identité dans le mappage d’identités marquée par un attribut primary=true, puis utilise cette identité comme ID de personne pour cette ligne. Cette identité est la clé primaire utilisée dans Experience Platform pour le partitionnement. Cette identité est également le candidat idéal pour une utilisation en tant qu’ID de personne Customer Journey Analytics (selon la configuration du jeu de données dans une connexion Customer Journey Analytics).</p> |
+   | **[!UICONTROL ID de personne]** | Sélectionnez un champ dans le schéma qui représente l’ID de personne.<p>La sélection est limitée à la liste des champs du schéma qui sont marqués comme Identité et qui possèdent un espace de noms d’identité. **[!UICONTROL IdentityMap]** est sélectionné par défaut et convient à la plupart des configurations. </p><p>Si aucun ID de personne n’est disponible, cela signifie qu’un ou plusieurs ID de personne n’ont pas été définis dans le schéma. Voir [Définir des champs d’identité dans l’interface utilisateur](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/ui/fields/identity) pour plus d’informations.</p> |
+   | **[!UICONTROL Utiliser l’espace de noms d’identité principal]** | Cette option s’affiche si vous sélectionnez **[!UICONTROL Mappage d’identités]** pour l’ID de personne. <p>Activez cette option si vous souhaitez que Customer Journey Analytics recherche l’identité dans le mappage d’identités marquée par un attribut primary=true, puis utilise cette identité comme ID de personne pour cette ligne. Cette identité est la clé primaire utilisée dans Experience Platform pour le partitionnement. Cette identité est également le candidat idéal pour une utilisation en tant qu’ID de personne Customer Journey Analytics (selon la configuration du jeu de données dans une connexion Customer Journey Analytics).</p> |
    | **[!UICONTROL Espace de noms d’identité]** | Cette option s’affiche si vous sélectionnez **[!UICONTROL Mappage d’identités]** pour l’ID de personne. Cette option est désactivée si vous utilisez l’espace de noms d’identifiant de Principal. <p>Les espaces de noms d’identité sont un composant du [service d’identités d’Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/features/namespaces). Les espaces de noms servent d’indicateurs pour le contexte auquel une identité se rapporte. Si vous spécifiez un espace de noms, Customer Journey Analytics recherche cette clé d’espace de noms dans le mappage d’identités de chaque ligne et utilise l’identité sous cet espace de noms comme ID de personne pour cette ligne. Comme Customer Journey Analytics ne peut pas analyser complètement le jeu de données de toutes les lignes pour déterminer les espaces de noms présents, tous les espaces de noms possibles s’affichent dans le menu déroulant. Vous devez savoir quels espaces de noms sont spécifiés dans les données ; ces derniers ne sont pas détectés automatiquement.</p> |
+   | **[!UICONTROL ID de compte]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | (affiché uniquement pour les connexions basées sur un compte) Identifiant de compte utilisé pour prendre en charge les rapports basés sur un compte pour le jeu de données . |
 
 1. Dans la section **[!UICONTROL Vues de données]**, cliquez sur **[!UICONTROL Sélectionner les vues de données]**.
 
@@ -138,6 +145,6 @@ Pour afficher les dimensions d’analyse d’audience dans la vue de données :
 
 1. Utilisez les dimensions Analyse de l’audience dans Analysis Workspace.
 
-   Les utilisateurs et utilisatrices qui ont accès à la vue de données dans Analysis Workspace peuvent désormais voir les nouvelles dimensions et les utiliser dans leurs analyses. Pour plus d’informations sur l’utilisation des dimensions d’analyse d’audience dans Analysis Workspace, voir [&#x200B; Analyser des audiences Experience Platform dans Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).
+   Les utilisateurs et utilisatrices qui ont accès à la vue de données dans Analysis Workspace peuvent désormais voir les nouvelles dimensions et les utiliser dans leurs analyses. Pour plus d’informations sur l’utilisation des dimensions d’analyse d’audience dans Analysis Workspace, voir [ Analyser des audiences Experience Platform dans Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).
 
 
