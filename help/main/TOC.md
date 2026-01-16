@@ -9,9 +9,9 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 6fcc35bf240821359c705d71efdeb91a5810136f
+source-git-commit: d117ba255151f730e0b5e4958ee56f5ffc88ade9
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1321'
 ht-degree: 99%
 
 ---
@@ -368,7 +368,7 @@ ht-degree: 99%
       + [Utiliser les segments](/help/components/segments/seg-use.md)
    + Mesures calculées {#cja-calcmetrics}
       + [Vue d’ensemble](../components/calc-metrics/calc-metr-overview.md)
-      + Workflow {#cm-workflow}
+      + Processus {#cm-workflow}
          + [Créer des mesures calculées](../components/calc-metrics/cm-workflow/cm-workflow.md)
          + [Rechercher des mesures](../components/calc-metrics/cm-workflow/cm-finding.md)
          + [Créer des mesures calculées](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
@@ -446,7 +446,6 @@ ht-degree: 99%
    + [Rapprochement basé sur les graphiques](/help/stitching/gbs.md)
    + [Demander un rapprochement](/help/stitching/use-stitching.md)
    + [Utilisation du groupement](/help/stitching/use-stitching-ui.md)
-   + [Créer et gérer des jeux de données groupés](/help/stitching/stitching-ui.md)
    + [Valider le groupement](/help/stitching/validate.md)
    + [Questions fréquentes](/help/stitching/faq.md)
 
@@ -536,4 +535,4 @@ ht-degree: 99%
    + [Optimiser les performances](../technotes/optimizing-performance.md)
    + [Gérer l’utilisation](../technotes/estimate-usage.md)
 
-+ [API Customer Journey Analytics](https://developer.adobe.com/cja-apis/docs/?lang=fr)
++ [API Customer Journey Analytics](https://developer.adobe.com/cja-apis/docs/)

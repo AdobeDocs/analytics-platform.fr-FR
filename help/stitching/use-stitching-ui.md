@@ -6,9 +6,9 @@ feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
 badgePremium: label="Beta" type="Informative"
-source-git-commit: c67225619153218e3dca1eacea204f2b033dfb14
+source-git-commit: 3479227eb703583255d40de3d07d071ad2f89950
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '894'
 ht-degree: 3%
 
 ---
@@ -144,3 +144,11 @@ En plus des [limitations du groupement basées sur les champs](/help/stitching/f
 
 * Vous ne pouvez assembler un jeu de données d’événement qu’une seule fois dans le cadre d’une connexion unique. Vous ne pouvez pas définir le même jeu de données d’événement plus d’une fois et utiliser une configuration de groupement distincte pour chaque instance. Si vous souhaitez appliquer différentes configurations de groupement sur le même jeu de données, utilisez une connexion distincte pour chaque configuration.
 
+
+## Migration
+
+Le groupement activé dans l’interface de connexions peut coexister sans problème avec le groupement basé sur les requêtes.
+
+Par exemple, vous disposez de jeux de données assemblés web dans le lac de données à la suite de requêtes d’assemblage antérieures ou actuelles. Vous pouvez ajouter des données groupées à partir d’un jeu de données de centre d’appels à l’aide de l’interface Connexions pour combiner ces données avec les données web.
+
+À la fin, Adobe migrera automatiquement vos jeux de données groupés basés sur les requêtes vers la nouvelle expérience de groupement dans les connexions.
