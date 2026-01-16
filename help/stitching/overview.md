@@ -61,7 +61,7 @@ Vous pouvez activer le rapprochement de deux manières différentes :
 >
 >- Si vous supprimez le jeu de données source, le jeu de données groupé cesse le traitement et est supprimé par le système.
 >
->- Les libellés d’utilisation des données ne sont pas propagés automatiquement au schéma du jeu de données groupé. Si des libellés d’utilisation des données sont appliqués au schéma du jeu de données source, vous devez appliquer manuellement ces libellés d’utilisation des données au schéma du jeu de données groupé. Consultez [Gérer les libellés d’utilisation des données dans Experience Platform ](https://experienceleague.adobe.com/fr/docs/experience-platform/data-governance/labels/overview) pour plus d’informations.
+>- Les libellés d’utilisation des données ne sont pas propagés automatiquement au schéma du jeu de données groupé. Si des libellés d’utilisation des données sont appliqués au schéma du jeu de données source, vous devez appliquer manuellement ces libellés d’utilisation des données au schéma du jeu de données groupé. Consultez [Gérer les libellés d’utilisation des données dans Experience Platform &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/data-governance/labels/overview) pour plus d’informations.
 
 L’analyse cross-canal est une fonctionnalité innovante et robuste, mais son utilisation a ses limites.
 
