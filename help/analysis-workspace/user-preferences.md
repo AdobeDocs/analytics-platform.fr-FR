@@ -5,10 +5,10 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 0a307bb43c780479df1cdc751fdadfc82f9dda55
 workflow-type: tm+mt
-source-wordcount: '4015'
-ht-degree: 100%
+source-wordcount: '4044'
+ht-degree: 99%
 
 ---
 
@@ -50,14 +50,11 @@ Les préférences générales s’appliquent à votre expérience Customer Jour
 >title="Exiger une authentification Experience Cloud"
 >abstract="Si vous activez cette option, les personnes qui ont accès à un projet à partir de l’option **[!UICONTROL Partager avec tout le monde]** dans Analysis Workspace doivent s’authentifier à l’aide de leurs informations d’identification Experience Cloud."
 
-<!-- markdownlint-enable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_projectcommenting"
 >title="Autoriser les commentaires sur les projets"
 >abstract="Lorsque cette option est activée, une zone de commentaires est disponible dans le rail de droite de chaque projet dans Analysis Workspace."
 
-<!-- markdownlint-enable MD034 -->
 
 Vous pouvez mettre à jour les préférences de la société qui s’appliquent aux utilisateurs et utilisatrices et aux projets de votre organisation. Pour plus d’informations sur l’accès à ces préférences, consultez [Mettre à jour les préférences](#update-preferences).
 
@@ -93,6 +90,12 @@ Vous pouvez personnaliser ces préférences pour tous les nouveaux projets Analy
 
 Certaines de ces préférences peuvent également être personnalisées pour des projets individuels dans Analysis Workspace, comme décrit dans la section [Vue d’ensemble des projets](/help/analysis-workspace/build-workspace-project/freeform-overview.md).
 
+>[!IMPORTANT]
+>
+>Vous ne pouvez plus définir le format des nombres dans la section **[!UICONTROL Projet et analyses]** > **[!UICONTROL Données]** des **[!UICONTROL Préférences utilisateur]**. Le format des nombres est automatiquement déterminé par la [langue par défaut configurée](https://experienceleague.adobe.com/en/docs/core-services/interface/features/browser-language) pour l’utilisateur connecté.
+>
+
+
 | Section | Préférence | Options |
 | --- | --- | --- |
 | **Afficher** | | |
@@ -103,7 +106,6 @@ Certaines de ces préférences peuvent également être personnalisées pour des
 |  | [Calendrier](/help/analysis-workspace/c-panels/panels.md#calendar) | Effectuez une sélection dans une liste de : <ul><li>Plages fournies par Adobe (par défaut, ce mois-ci)</li><li>Vous pouvez activer [!UICONTROL Rendre les composants de période liés par défaut au calendrier du panneau].</li></ul> |
 |  | [Type de panneau](/help/analysis-workspace/c-panels/panels.md#panel-types) | <ul><li>À structure libre (par défaut)</li><li>Vide</li><li>Quick Insights</li></ul> |
 |  | Comptage des instances | Activez [!UICONTROL Compter les instances répétées] pour déterminer si les instances répétées sont comptées dans les rapports. Par exemple, lorsque cette option est activée, plusieurs vues consécutives sur une même page sont traitées comme plusieurs vues de pages. Lorsque cette option est désactivée, plusieurs vues consécutives sur une même page sont comptabilisées comme une seule vue de page. <p>**Remarque :** ce paramètre affecte uniquement certaines mesures (telles que Sessions) et ne s’applique pas aux visualisations de flux ou d’abandons.</p> |
-|  | Format du nombre | <ul><li>1 000,00 (par défaut)</li><li>1.000,00</li><li>1 000,00</li></ul> |
 |  | Caractère séparateur CSV | <ul><li>Virgule (par défaut)</li><li>Point-virgule</li><li>Deux-points</li><li>Tube</li><li>Point</li><li>un espace</li><li>Tabulation</li></ul> |
 |  | Affichage des annotations | Indiquez si les annotations sont visibles dans les projets. Pour plus d’informations sur les annotations, consultez [Présentation des annotations](/help/components/annotations/overview.md). |
 
@@ -194,7 +196,7 @@ Cliquez sur les titres des sections liées pour plus d’informations et de cont
 | | Nombre max d’éléments | Réduit le nombre d’éléments sur l’axe X pour toutes les visualisations. Cela peut s’avérer utile si vous disposez d’un jeu de données volumineux. |
 | | Afficher l’axe double (le cas échéant) | S’applique seulement s’il existe deux mesures : vous pouvez afficher un axe Y sur la gauche (pour une mesure) et un sur la droite (pour l’autre mesure). Cela sʼavère utile lorsque les mesures tracées ont des dimensions très différentes. |
 | | Normalisation (le cas échéant) | Exprime les mesures en proportions égales. Cela sʼavère utile lorsque les mesures tracées ont des dimensions très différentes. |
-| | Ancrer l’axe Y sur zéro | Si toutes les valeurs tracées sur le graphique sont nettement supérieures à zéro, la base de l’axe Y est par défaut non nulle. Si cette option est activée, l’axe Y est obligatoirement ancré à zéro (et le graphique est retracé). |
+| | Ancrer l’axe Y sur zéro | Si toutes les valeurs tracées sur le graphique sont nettement supérieures à zéro, la configuration par défaut du graphique met à jour le bas de l’axe Y sur une valeur différente de zéro. Si cette option est activée, l’axe Y est obligatoirement ancré à zéro (et le graphique est retracé). |
 | | Ancrer les anomalies sur l’échelle de l’axe Y | L’axe Y sera mis à l’échelle selon les valeurs d’anomalies. |
 | **[Ligne](/help/analysis-workspace/visualizations/line.md)** | | |
 | | Pourcentages | Affiche les valeurs en pourcentages pour les visualisations Ligne. |
