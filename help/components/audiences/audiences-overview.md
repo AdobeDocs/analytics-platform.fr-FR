@@ -4,29 +4,23 @@ description: En savoir plus sur le concept de publication d’audience dans Cust
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
 feature: Audiences
 role: User, Admin
-source-git-commit: 3f369122863df4f3fc339730ced8c193360d07c6
+source-git-commit: e59bb52d5e9d79ba72036d5a00ed8abc69dcf735
 workflow-type: tm+mt
-source-wordcount: '434'
-ht-degree: 94%
+source-wordcount: '517'
+ht-degree: 79%
 
 ---
 
 # Vue d’ensemble de la publication des audiences
 
-<!--
-
 >[!NOTE]
 >
->Understand the difference between audience analysis and audience publishing:
+>Comprenez la différence entre l’analyse de l’audience et la publication d’audience :
 >
->* **Audience analysis**: Allows you to ingest audience membership data from Experience Platform Profile datasets into a Customer Journey Analytics connection. For information about audience analysis, see [Audience analysis overview](/help/connections/audience-analysis/audience-analysis-overview.md).
->* **Audience publishing**: Allows you to create and publish audiences discovered in Customer Journey Analytics to Adobe Experience Platform for customer targeting and personalization. 
+>* **Analyse de l’audience** : vous permet d’ingérer des données d’appartenance à une audience à partir de jeux de données Profil Experience Platform dans une connexion Customer Journey Analytics. Pour plus d’informations sur l’analyse de l’audience, voir [ Présentation de l’analyse de l’audience](/help/connections/audience-analysis/audience-analysis-overview.md).
+>* **Publication d’audiences** : permet de créer et de publier des audiences découvertes dans Customer Journey Analytics sur Adobe Experience Platform pour le ciblage et la personnalisation des clients.
 
--->
-
-Vous pouvez créer et publier des audiences découvertes dans Customer Journey Analytics dans le [profil client en temps réel](https://experienceleague.adobe.com/fr/docs/experience-platform/profile/home.html) dans Adobe Experience Platform pour le ciblage et la personnalisation des clients.
-
-<!-- add this when Audience Analysis releases: (For information about ingesting audience membership data from Experience Platform Profile datasets into a Customer Journey Analytics connection, see [Audience analysis overview](/help/connections/audience-analysis/audience-analysis-overview.md).) -->
+Vous pouvez créer et publier des audiences découvertes dans Customer Journey Analytics dans le [profil client en temps réel](https://experienceleague.adobe.com/fr/docs/experience-platform/profile/home.html) dans Adobe Experience Platform pour le ciblage et la personnalisation des clients. (Pour plus d’informations sur l’ingestion de données d’appartenance à une audience à partir de jeux de données Profil Experience Platform dans une connexion Customer Journey Analytics, voir [Présentation de l’analyse de l’audience](/help/connections/audience-analysis/audience-analysis-overview.md).)
 
 La publication d’audiences offre un moyen clair d’activer et d’agir sur les informations trouvées dans Customer Journey Analytics. Ces actions peuvent inclure les éléments suivants :
 
