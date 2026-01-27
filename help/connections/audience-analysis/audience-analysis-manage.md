@@ -17,7 +17,7 @@ Après avoir [créé des configurations d’analyse d’audience](/help/connecti
 
 Seuls les administrateurs système peuvent gérer les configurations d’analyse d’audience.
 
-Pour plus d’informations sur l’analyse de l’audience, voir [ Présentation de l’analyse de l’audience](/help/connections/audience-analysis/audience-analysis-overview.md).
+Pour plus d’informations sur l’analyse de l’audience, voir [&#x200B; Présentation de l’analyse de l’audience](/help/connections/audience-analysis/audience-analysis-overview.md).
 
 ## Affichage et filtrage des configurations existantes
 
