@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: b9b73926-6502-4a48-ba73-c784f80950d3
-source-git-commit: 359fe2a718ccef816377083aceb2652b4a905072
+source-git-commit: 99b434e62d859c96bfda53731f3f8a0750850501
 workflow-type: tm+mt
-source-wordcount: '1181'
+source-wordcount: '1191'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,12 @@ Bien que ces méthodes d’analyse puissent être utilisées pour le groupement 
 >
 >L’assemblage (validation de) d’un ou de plusieurs jeux de données contribue finalement à une meilleure analyse et à de meilleures informations. Cependant, cet article ne traite pas de la valeur globale d’une configuration Customer Journey Analytics dans laquelle tous les jeux de données d’Experience Platform sont alignés sur le même espace de noms d’identité. Et que tous ces jeux de données sont joliment associés pour effectuer une analyse sur l’ensemble d’un parcours client.
 
+
+>[!BEGINSHADEBOX]
+
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Activation et validation du groupement](https://video.tv.adobe.com/v/3478120?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+
+>[!ENDSHADEBOX]
 
 ## Conditions préalables relatives aux vues de données
 
