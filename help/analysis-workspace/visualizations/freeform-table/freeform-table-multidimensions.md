@@ -3,7 +3,7 @@ title: Inclure plusieurs dimensions dans un tableau à structure libre
 description: Découvrez comment inclure plusieurs dimensions dans un tableau à structure libre
 feature: Visualizations
 role: User
-source-git-commit: e51dced9ac7886ae8d087ca3b2fc6ac2755c3ac6
+source-git-commit: 696bd0db44949162307d8ce7d2debed351a76cd6
 workflow-type: tm+mt
 source-wordcount: '829'
 ht-degree: 2%
@@ -116,3 +116,4 @@ Les combinaisons de dimensions suivantes ne sont pas prises en charge. Analysis 
 * Dimensions multiples provenant de champs référençant différents [tableaux d’objets](/help/use-cases/object-arrays.md) utilisés ensemble dans le même tableau à structure libre.
 
   Plusieurs dimensions sont autorisées ensemble dans le même tableau à structure libre si elles référencent le même tableau d’objets.
+

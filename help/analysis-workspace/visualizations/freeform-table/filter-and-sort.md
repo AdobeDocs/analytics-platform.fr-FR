@@ -4,10 +4,10 @@ title: Filtrer Et Trier
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: e51dced9ac7886ae8d087ca3b2fc6ac2755c3ac6
+source-git-commit: 696bd0db44949162307d8ce7d2debed351a76cd6
 workflow-type: tm+mt
-source-wordcount: '1577'
-ht-degree: 45%
+source-wordcount: '1575'
+ht-degree: 46%
 
 ---
 
@@ -17,7 +17,7 @@ Les tableaux à structure libre dans Analysis Workspace sont la base de l’ana
 
 <!--The following video covers filter and sort options in Analysis Workspace, in addition to pagination options:
 
->[!VIDEO](https://video.tv.adobe.com/v/327341?captions=fre_fr)-->
+>[!VIDEO](https://video.tv.adobe.com/v/23968)-->
 
 ## Filtrer des tableaux
 
@@ -164,7 +164,7 @@ Pour trier les données des tableaux en fonction de plusieurs colonnes :
 
 1. Sélectionnez **[!UICONTROL Tri avancé]**.
 
-   ![&#x200B; Boîte de dialogue Tri avancé &#x200B;](assets/sort-advanced-dialog.png)
+   ![ Boîte de dialogue Tri avancé ](assets/sort-advanced-dialog.png)
 
 1. Dans la boîte de dialogue Tri avancé , effectuez l’une des opérations suivantes :
 
@@ -188,7 +188,7 @@ L’icône de tri reste visible lorsque le tri est appliqué à une colonne. Une
 
 #### Priorité de tri
 
-Lorsque vous triez des données pour plusieurs colonnes, les données sont triées en fonction de la priorité que vous attribuez à chaque colonne. La numérotation de priorité s’affiche en regard de l’icône de tri ![icône de priorité de tri](assets/sort-priority-icon.png).
+Lorsque vous triez des données pour plusieurs colonnes, les données sont triées en fonction de la priorité que vous attribuez à chaque colonne. La numérotation de priorité s’affiche en regard de l’icône de tri ![SortOrderDown](/help/assets/icons/SortOrderDown.svg)<sup>➊</sup>.
 
 La colonne ayant la priorité principale détermine l&#39;ordre principal ; la colonne ayant la priorité secondaire détermine l&#39;ordre dans lequel les lignes ont la même valeur dans la colonne principale ; la colonne ayant la priorité tertiaire détermine l&#39;ordre dans lequel les lignes ont la même valeur dans les colonnes principale et secondaire ; et ainsi de suite.
 
