@@ -4,10 +4,10 @@ title: Filtrer Et Trier
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: e51dced9ac7886ae8d087ca3b2fc6ac2755c3ac6
 workflow-type: tm+mt
-source-wordcount: '1134'
-ht-degree: 65%
+source-wordcount: '1577'
+ht-degree: 45%
 
 ---
 
@@ -17,7 +17,7 @@ Les tableaux à structure libre dans Analysis Workspace sont la base de l’ana
 
 <!--The following video covers filter and sort options in Analysis Workspace, in addition to pagination options:
 
->[!VIDEO](https://video.tv.adobe.com/v/327341?captions=fre_fr)-->
+>[!VIDEO](https://video.tv.adobe.com/v/23968)-->
 
 ## Filtrer des tableaux
 
@@ -132,6 +132,82 @@ Voir [Présentation de la segmentation](/help/components/segments/seg-overview.m
 
 ## Trier des tableaux
 
-Vous pouvez trier les données d’un tableau à structure libre selon n’importe quelle colonne d’Analysis Workspace qui est une dimension ou une mesure. Une flèche indique le mode de tri des données (**↓** pour l’ordre descendant ou **↑** pour l’ordre ascendant).
+Dans Analysis Workspace, vous pouvez trier les données d’un tableau à structure libre selon n’importe quelle colonne, qu’il s’agisse de dimensions ou de mesures. Vous pouvez même trier par plusieurs colonnes en même temps.
 
-![Tri](assets/sorting.gif)
+Par défaut, les dimensions sont triées par ordre croissant et les mesures sont triées par ordre décroissant.
+
+### Trier les tableaux par colonne
+
+Lorsque vous triez les données d’une seule colonne comme décrit dans cette section, tout [tri avancé](#sort-tables-by-multiple-columns-advanced-sorting) appliqué au tableau est supprimé.
+
+Pour trier les données des tableaux selon une seule colonne :
+
+1. Placez le pointeur de la souris sur l’en-tête de la colonne à trier, puis sélectionnez l’icône **Trier** ![Trier](/help/assets/icons/SortOrderDown.svg) lorsqu’elle s’affiche.
+
+   ![Menu déroulant Tri](assets/sort-dropdown-menu.png)
+
+1. Sélectionnez **[!UICONTROL Croissant]** ou **[!UICONTROL Décroissant]**.
+
+   L’icône de tri reste visible lorsque le tri est appliqué à la colonne. Une flèche indique le mode de tri des données (![Tri](/help/assets/icons/SortOrderUp.svg) pour l’ordre croissant ou ![Tri](/help/assets/icons/SortOrderDown.svg) pour l’ordre décroissant).
+
+### Trier des tableaux sur plusieurs colonnes (tri avancé)
+
+{{release-limited-testing-section}}
+
+#### Appliquer le tri à plusieurs colonnes
+
+Pour trier les données des tableaux en fonction de plusieurs colonnes :
+
+1. Placez le pointeur de la souris sur l’en-tête d’une colonne à trier, puis sélectionnez l’icône **Trier** ![Trier](/help/assets/icons/SortOrderDown.svg) lorsqu’elle s’affiche.
+
+   ![Menu déroulant Tri](assets/sort-dropdown-menu.png)
+
+1. Sélectionnez **[!UICONTROL Tri avancé]**.
+
+   ![ Boîte de dialogue Tri avancé ](assets/sort-advanced-dialog.png)
+
+1. Dans la boîte de dialogue Tri avancé , effectuez l’une des opérations suivantes :
+
+   * Ajoutez les colonnes qui ne sont pas encore triées en sélectionnant le bouton **[!UICONTROL Ajouter une colonne de tri]**.
+
+   * Supprimez les colonnes que vous ne souhaitez plus trier en sélectionnant l’icône **Supprimer** ![Supprimer](/help/assets/icons/Close.svg).
+
+   * Faire glisser les colonnes plus haut ou plus bas dans la liste pour ajuster la priorité de tri.
+
+     Pour plus d’informations, voir [Priorité de tri](#sort-priority).
+
+   * Modifiez la valeur de tri en sélectionnant **[!UICONTROL Croissant]** ou **[!UICONTROL Décroissant]** dans le menu déroulant.
+
+   * Sélectionnez une autre colonne en sélectionnant le menu déroulant Nom de la colonne .
+
+1. Sélectionnez **[!UICONTROL Appliquer]**.
+
+L’icône de tri reste visible lorsque le tri est appliqué à une colonne. Une flèche indique le mode de tri des données (![Tri](/help/assets/icons/SortOrderUp.svg) pour l’ordre croissant ou ![Tri](/help/assets/icons/SortOrderDown.svg) pour l’ordre décroissant).
+
+![exemple multi-tri](assets/dimensions-multiple-sort.png)
+
+#### Priorité de tri
+
+Lorsque vous triez des données pour plusieurs colonnes, les données sont triées en fonction de la priorité que vous attribuez à chaque colonne. La numérotation de priorité s’affiche en regard de l’icône de tri ![icône de priorité de tri](assets/sort-priority-icon.png).
+
+La colonne ayant la priorité principale détermine l&#39;ordre principal ; la colonne ayant la priorité secondaire détermine l&#39;ordre dans lequel les lignes ont la même valeur dans la colonne principale ; la colonne ayant la priorité tertiaire détermine l&#39;ordre dans lequel les lignes ont la même valeur dans les colonnes principale et secondaire ; et ainsi de suite.
+
+Prenons l’exemple d’un tableau avec les colonnes suivantes :
+
+* Jour du mois (dimension)
+
+* Heure de la journée (dimension)
+
+* Événements (mesure)
+
+Vous pouvez attribuer une priorité de tri à chaque colonne, comme suit :
+
+| Nom de la colonne (composant) | Type de composant | Priorité de tri |
+|---------|----------|---------|
+| Jour du mois | Dimension | 1 |
+| Heure de la journée | Dimension | 2 |
+| Événements | Mesure | 3 |
+
+En attribuant une priorité de tri à chaque colonne, vous pouvez contrôler exactement l’affichage des données dans le tableau. Dans cet exemple, les informations sont d’abord triées par Jour du mois, puis par Heure de la journée et enfin par Événements.
+
+![exemple multi-tri](assets/dimensions-multiple-sort.png)

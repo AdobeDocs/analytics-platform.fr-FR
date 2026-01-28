@@ -3,11 +3,9 @@ title: Inclure plusieurs dimensions dans un tableau à structure libre
 description: Découvrez comment inclure plusieurs dimensions dans un tableau à structure libre
 feature: Visualizations
 role: User
-hide: true
-hidefromtoc: true
-source-git-commit: 77acfaf2d186e7fe7d6b9d973af5dedb3956f5d5
+source-git-commit: e51dced9ac7886ae8d087ca3b2fc6ac2755c3ac6
 workflow-type: tm+mt
-source-wordcount: '1277'
+source-wordcount: '829'
 ht-degree: 2%
 
 ---
@@ -59,95 +57,11 @@ Vous pouvez ajouter plusieurs colonnes de dimension une par une ou en bloc.
 
 1. Affichez chaque ligne du tableau en tant qu’élément de dimension unique. Pour plus d’informations, voir [Éléments de dimension concaténés](#concatenated-dimension-items).
 
-## Filtrer des tableaux
+## Filtrer et trier des tableaux
 
-Vous pouvez appliquer des filtres à une ou plusieurs colonnes de dimension dans un tableau à structure libre.
+Vous pouvez appliquer un filtrage et un tri aux colonnes d’un tableau à structure libre. Vous pouvez trier les données d’un tableau à structure libre selon n’importe quelle colonne, qu’il s’agisse de dimensions ou de mesures. Vous pouvez même trier par plusieurs colonnes en même temps.
 
-Pour plus d’informations sur le filtrage des tableaux, voir [Filtrer les tableaux](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md#filter-tables) dans [Filtrer et trier les tableaux à structure libre](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
-
-## Trier des tableaux {#sort-tables}
-
-<!--At GA, move this section into the "Filter and sort tables" article and replace the current "Sort tables" section. Change the "Filter tables" section above to "Filter and sort tables" and link to the other article. Also add row to Guardrails -->
-
-Vous pouvez trier les données d’un tableau à structure libre selon n’importe quelle colonne d’Analysis Workspace, qu’il s’agisse de dimensions ou de mesures.
-
-Par défaut, les dimensions sont triées par ordre croissant et les mesures sont triées par ordre décroissant.
-
-### Trier les tableaux par colonne
-
-Lorsque vous triez les données d’une seule colonne comme décrit dans cette section, tout [tri avancé](#sort-tables-by-multiple-columns-advanced-sorting) appliqué au tableau est supprimé.
-
-Pour trier les données des tableaux selon une seule colonne :
-
-1. Placez le pointeur de la souris sur l’en-tête de la colonne à trier, puis sélectionnez l’icône **Trier** ![Trier](/help/assets/icons/SortOrderDown.svg) lorsqu’elle s’affiche.
-
-   ![Menu déroulant Tri](assets/sort-dropdown-menu.png)
-
-1. Sélectionnez **[!UICONTROL Croissant]** ou **[!UICONTROL Décroissant]**.
-
-   L’icône de tri reste visible lorsque le tri est appliqué à la colonne. Une flèche indique le mode de tri des données (![Tri](/help/assets/icons/SortOrderUp.svg) pour l’ordre croissant ou ![Tri](/help/assets/icons/SortOrderDown.svg) pour l’ordre décroissant).
-
-### Trier des tableaux sur plusieurs colonnes (tri avancé)
-
-<!-- add this back in when move this section back to the filter and sort article: {{release-limited-testing-section}} -->
-
-#### Appliquer le tri à plusieurs colonnes
-
-Pour trier les données des tableaux en fonction de plusieurs colonnes :
-
-1. Placez le pointeur de la souris sur l’en-tête d’une colonne à trier, puis sélectionnez l’icône **Trier** ![Trier](/help/assets/icons/SortOrderDown.svg) lorsqu’elle s’affiche.
-
-   ![Menu déroulant Tri](assets/sort-dropdown-menu.png)
-
-1. Sélectionnez **[!UICONTROL Tri avancé]**.
-
-   ![&#x200B; Boîte de dialogue Tri avancé &#x200B;](assets/sort-advanced-dialog.png)
-
-1. Dans la boîte de dialogue Tri avancé , effectuez l’une des opérations suivantes :
-
-   * Ajoutez les colonnes qui ne sont pas encore triées en sélectionnant le bouton **[!UICONTROL Ajouter une colonne de tri]**.
-
-   * Supprimez les colonnes que vous ne souhaitez plus trier en sélectionnant l’icône **Supprimer** ![Supprimer](/help/assets/icons/Close.svg).
-
-   * Faire glisser les colonnes plus haut ou plus bas dans la liste pour ajuster la priorité de tri.
-
-     Pour plus d’informations, voir [Priorité de tri](#sort-priority).
-
-   * Modifiez la valeur de tri en sélectionnant **[!UICONTROL Croissant]** ou **[!UICONTROL Décroissant]** dans le menu déroulant.
-
-   * Sélectionnez une autre colonne en sélectionnant le menu déroulant Nom de la colonne .
-
-1. Sélectionnez **[!UICONTROL Appliquer]**.
-
-L’icône de tri reste visible lorsque le tri est appliqué à une colonne. Une flèche indique le mode de tri des données (![Tri](/help/assets/icons/SortOrderUp.svg) pour l’ordre croissant ou ![Tri](/help/assets/icons/SortOrderDown.svg) pour l’ordre décroissant).
-
-![exemple multi-tri](assets/dimensions-multiple-sort.png)
-
-#### Priorité de tri
-
-Lorsque vous triez des données pour plusieurs colonnes, les données sont triées en fonction de la priorité que vous attribuez à chaque colonne. La numérotation de priorité s’affiche en regard de l’icône de tri ![icône de priorité de tri](assets/sort-priority-icon.png).
-
-La colonne ayant la priorité principale détermine l&#39;ordre principal ; la colonne ayant la priorité secondaire détermine l&#39;ordre dans lequel les lignes ont la même valeur dans la colonne principale ; la colonne ayant la priorité tertiaire détermine l&#39;ordre dans lequel les lignes ont la même valeur dans les colonnes principale et secondaire ; et ainsi de suite.
-
-Prenons l’exemple d’un tableau avec les colonnes suivantes :
-
-* Jour du mois (dimension)
-
-* Heure de la journée (dimension)
-
-* Événements (mesure)
-
-Vous pouvez attribuer une priorité de tri à chaque colonne, comme suit :
-
-| Nom de la colonne (composant) | Type de composant | Priorité de tri |
-|---------|----------|---------|
-| Jour du mois | Dimension | 1 |
-| Heure de la journée | Dimension | 2 |
-| Événements | Mesure | 3 |
-
-En attribuant une priorité de tri à chaque colonne, vous pouvez contrôler exactement l’affichage des données dans le tableau. Dans cet exemple, les informations sont d’abord triées par Jour du mois, puis par Heure de la journée et enfin par Événements.
-
-![exemple multi-tri](assets/dimensions-multiple-sort.png)
+Pour plus d’informations, voir [Filtrer et trier les tableaux à structure libre](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
 
 ## Plusieurs colonnes et répartitions de dimension
 
