@@ -4,10 +4,10 @@ description: Page de destination de Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: d8ff5191ea96b8871f6aaba1fc28211c22a13e0d
+source-git-commit: b8c9acfe8fef4543557f87c81079babdc8097b64
 workflow-type: tm+mt
-source-wordcount: '843'
-ht-degree: 100%
+source-wordcount: '620'
+ht-degree: 91%
 
 ---
 
@@ -23,7 +23,23 @@ Découvrez les améliorations les plus récentes apportées au produit et à la 
 
 >[!BEGINTABS]
 
->[!TAB Rapports en temps réel*]
+>[!TAB Assemblage dans les connexions]
+
+Vous pouvez désormais configurer et activer le groupement sur les jeux de données d’événement directement dans l’interface utilisateur de Customer Journey Analytics Connections.
+
+[![Image](assets/learn-more-button.svg)](/help/stitching/use-stitching-ui.md)
+
+*_Vous devez disposer au moins du package Select pour activer le groupement._*
+
+
+>[!TAB Analyse de l’audience]
+
+L’analyse de l’audience vous permet d’ingérer des données d’appartenance à une audience à partir de jeux de données Profil Experience Platform dans une connexion Customer Journey Analytics.
+
+[![Image](assets/learn-more-button.svg)](/help/connections/audience-analysis/analyze-audiences.md)
+
+
+>[!TAB Rapports en temps réel]
 
 Les rapports en temps réel dans Customer Journey Analytics affichent et mettent à jour en temps réel les données et les visualisations au sein d’un ou de plusieurs panneaux dans Analysis Workspace.
 
@@ -31,95 +47,19 @@ Les rapports en temps réel dans Customer Journey Analytics affichent et mette
 
 *_Vous devez disposer du package Ultimate pour la création de rapports en temps réel._*
 
+
 >[!TAB B2B Edition]
 
 Customer Journey Analytics B2B Edition permet aux sociétés B2B d’aligner leurs équipes marketing, ventes et produits en fournissant des informations de compte exploitables qui stimulent l’augmentation des revenus. Le compte étant placé au centre du modèle de données, toutes les analyses se concentrent sur le parcours du compte.
 
 [![Image](assets/learn-more-button.svg)](/help/getting-started/cja-b2b-edition.md)
 
->[!TAB Fonctions de champs dérivés]
 
-Nouvelles fonctions de champs dérivés : [Mathématiques de date](/help/data-views/derived-fields/derived-fields.md#date-math), [Profondeur](/help/data-views/derived-fields/derived-fields.md#depth) et [Typecast](/help/data-views/derived-fields/derived-fields.md#typecast).
-
-[![Image](assets/learn-more-button.svg)](/help/data-views/derived-fields/derived-fields.md)
-
->[!TAB Content Analytics]
+>[!TAB Content Analytics]
 
 Content Analytics vous permet d’examiner rapidement et facilement de grands volumes de données de contenu pour repérer des tendances, détecter des anomalies, identifier la lassitude liée au contenu et obtenir des informations issues de l’exposition du contenu.
 
 [![Image](assets/learn-more-button.svg)](/help/content-analytics/content-analytics.md)
-
->[!TAB Profondeur de l’événement]
-
-La profondeur de l’événement est une nouvelle dimension standard qui offre de nouvelles façons de mesurer et de mieux comprendre le positionnement des événements dans les sessions client. La dimension Profondeur de l’événement permet un suivi et une analyse détaillés de l’endroit où des événements spécifiques se produisent dans le flux séquentiel des interactions utilisateur au sein d’une session.
-
-[![Image](assets/learn-more-button.svg)](/help/components/dimensions/overview.md#standard-dimensions)
-
-
->[!TAB Dimensions et mesures partagées]
-
-Les dimensions et mesures partagées fournissent un emplacement central où gérer les dimensions et mesures qui peuvent être utilisées dans un certain nombre de vues de données. Ces composants sont particulièrement utiles aux entreprises qui utilisent plusieurs vues de données, en particulier si ces vues de données ont des paramètres de composant en commun.
-
-[![Image](assets/learn-more-button.svg)](/help/data-views/shared-metrics-dimensions/smd-overview.md)
-
-
-<!--
->[!TAB AI Assistant] 
-
-AI Assistant is a conversational experience that allows practitioners to perform tasks at a fast pace - whether its understanding concepts, troubleshooting problems, or searching through information. It also allows non-experts to perform expert tasks and increases the overall quality of work.
-
-[![image](assets/learn-more-button.svg)](/help/ai-assistant.md)
-
-
->[!TAB Guided Analysis] 
-
-Guided Analysis is now available directly from within Analysis Workspace, enabling users to create dashboards with comprehensive insights from panels, visualizations, and guided analyses.
-
-[![image](assets/learn-more-button.svg)](/help/guided-analysis/overview.md)
-
-
-
->[!TAB Intelligent captions v2] 
-
-Intelligent captions are now supported, with additional interface improvements, for [Line](/help/analysis-workspace/visualizations/line.md) (including multi-line), [Bar](/help/analysis-workspace/visualizations/bar.md), [Horizontal bar](/help/analysis-workspace/visualizations/horizontal-bar.md), [Area](/help/analysis-workspace/visualizations/area.md) (including multiple Area lines), [Donut](/help/analysis-workspace/visualizations/donut.md), [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md), and [Flow](/help/analysis-workspace/visualizations/c-flow/flow.md) visualizations.
-
-[![image](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
-
-
->[!TAB Alerts] 
-
-Alerts allow you to be notified based on changed percentages or specific data points. You can preview how often an alert will trigger, send alerts by email or SMS, create stacked alerts, and more.
-
-[![image](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
-
-
->[!TAB Summary data] 
-
-Allows you to bring in time-series data that does not have a person ID. This time-series data can be used to support various use cases, such as 
-
-- Presenting high-level performance indicators as part of or next to event-level data. 
-- Uploading targets or goals at an hourly or daily basis, then positioning these targets or goals against event-level metrics. 
-
-[![image](assets/learn-more-button.svg)](/help/data-views/summary-data.md)
-
--->
-
->[!TAB Groupement basé sur les graphiques*]
-
-Grâce au groupement basé sur les graphiques, vous pouvez utiliser le graphique d’identité depuis le service d’identité d’Experience Platform pour obtenir une meilleure vue du parcours client en : <ul><li>associant des jeux de données avec différents identifiants sans avoir à extraire, transformer et charger des données supplémentaires pour refléter un seul identifiant ;</li> <li>améliorant la couverture de l’identité préférée ou dorée pour un jeu de données unique en partageant des identités entre les jeux de données ;</li><li>alignant des profils créés dans Real-time Customer Data Platform et Journey Optimizer avec les personnes dans Customer Journey Analytics.</li></ul>
-
-[![Image](assets/learn-more-button.svg)](/help/stitching/overview.md#graph-based-stitching)
-
-*_Vous devez disposer du package Prime pour le groupement basé sur les graphiques._*
-
->[!TAB Extension BI*]
-
-L’extension BI permet à SQL d’accéder aux vues de données que vous avez définies dans Customer Journey Analytics. Vous pouvez désormais utiliser votre outil de BI favori (Power BI Desktop, Tableau Desktop, Looker, Jupyter Notebook et RStudio) pour créer des rapports et des tableaux de bord en fonction des vues de données que les utilisateurs et utilisatrices de Customer Journey Analytics utilisent lors de la création de leurs projets Analysis Workspace. Des [cas d’utilisation](/help/use-cases/data-views/bi-extension-usecases.md) sont fournis.
-
-[![Image](assets/learn-more-button.svg)](/help/data-views/bi-extension.md)
-
-*_Vous devez disposer du package Select ou d’une version supérieure pour utiliser l’extension BI._*
-
 
 >[!ENDTABS]
 
@@ -196,7 +136,7 @@ Comprenez les différences entre Customer Journey Analytics et Adobe Analytic
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td><strong>Customer Journey Analytics</strong><br/>
-<a href="https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/overview" target="_blank">Tutoriels</a> - <a href="https://helpx.adobe.com/fr/legal/product-descriptions/customer-journey-analytics.html?lang=fr" target="_blank">Description du produit Customer Journey Analytics</a> - <a href="https://helpx.adobe.com/fr/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html?lang=fr" target="_blank">Description du produit Adobe Analytics (module complémentaire Customer Journey Analytics)</a> - <a href="https://helpx.adobe.com/fr/legal/product-descriptions/customer-journey-analytics-b2b.html?lang=fr" target="_blank">Description du produit Customer Journey Analytics B2B Edition</a> - <a href="https://developer.adobe.com/cja-apis/docs/?lang=fr" target="_blank">API Customer Journey Analytics</a> - <a href="/help/ai-assistant.md">Assistant IA</a>
+<a href="https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/overview" target="_blank">Tutoriels</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html?lang=fr" target="_blank">Description du produit Customer Journey Analytics</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html?lang=fr" target="_blank">Description du produit Adobe Analytics (module complémentaire Customer Journey Analytics)</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics-b2b.html?lang=fr" target="_blank">Description du produit Customer Journey Analytics B2B Edition</a> - <a href="https://developer.adobe.com/cja-apis/docs/" target="_blank">API Customer Journey Analytics</a> - <a href="/help/ai-assistant.md">Assistant IA</a>
 </td>
 <td><strong>Ingestion des données</strong><br/><a href="/help/data-ingestion/data-ingestion.md">Vue d’ensemble</a> - <a href="/help/data-ingestion/analytics.md">Analytics</a> - <a href="/help/data-ingestion/aepwebsdk.md">SDK Web</a> - <a href="/help/data-ingestion/aepmobilesdk.md">SDK Mobile</a> - <a href="/help/data-ingestion/batch.md">Lot</a> - <a href="/help/data-ingestion/streaming.md">Streaming</a> - <a href="/help/data-ingestion/sources.md">Sources</a> - <a href="/help/data-ingestion/serverapi.md">API du serveur</a>
 </td>

@@ -6,7 +6,7 @@ feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
 badgePremium: label="Beta" type="Informative"
-source-git-commit: 32997d0fd9801099a75287f63197d3b4c2ba81ef
+source-git-commit: 92754044cad67627987b0912367eddc48d1aee89
 workflow-type: tm+mt
 source-wordcount: '938'
 ht-degree: 3%
@@ -16,8 +16,6 @@ ht-degree: 3%
 # Utilisation du groupement
 
 Vous pouvez activer le regroupement sur un ou plusieurs jeux de données d’événement que vous avez configurés dans le cadre de votre connexion. Le package Customer Journey Analytics sous licence détermine le nombre de jeux de données d’événement que vous pouvez activer pour le regroupement .
-
-{{release-limited-testing}}
 
 Vous pouvez activer le groupement dans le cadre de l’[paramètres du jeu de données](/help/connections/create-connection.md#dataset-settings) pour un jeu de données d’événement lorsque vous [créez une connexion](/help/connections/create-connection.md) ou lorsque vous [modifiez une connexion](/help/connections/manage-connections.md#edit-a-connection).
 
@@ -140,7 +138,7 @@ Une fois que vous avez enregistré une connexion, le processus de groupement des
 
 >[!CAUTION]
 >
->Pour les jeux de données activés pour le groupement dans l’interface Connexions, le statut de renvoi est immédiatement et incorrectement signalé comme ![Statut vert](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _renvois terminés]**&#x200B;pour le nombre de renvois terminés. Utilisez d’autres méthodes pour vérifier si les données du jeu de données groupé sont renvoyées.
+>Pour les jeux de données activés pour le groupement dans l’interface Connexions, le statut de renvoi est immédiatement et incorrectement signalé comme ![Statut vert](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _renvois terminés]**pour le nombre de renvois terminés. Utilisez d’autres méthodes pour vérifier si les données du jeu de données groupé sont renvoyées.
 >
 
 
