@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: d117ba255151f730e0b5e4958ee56f5ffc88ade9
+source-git-commit: a8c158e66b66f2110df12fac794b2223f1922b1f
 workflow-type: tm+mt
-source-wordcount: '1321'
-ht-degree: 99%
+source-wordcount: '1363'
+ht-degree: 96%
 
 ---
 
@@ -195,7 +195,7 @@ ht-degree: 99%
          + [Ajouter ou déplacer des projets](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
       + [Touches de raccourci](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
       + [Palettes de couleurs](../analysis-workspace/build-workspace-project/color-palettes.md)
-      + [Densité de la vue](../analysis-workspace/build-workspace-project/view-density.md)
+      + [Afficher la densité](../analysis-workspace/build-workspace-project/view-density.md)
       + [Débogueur](../analysis-workspace/build-workspace-project/debugger.md)
    + Modèles {#templates}
       + [Utiliser des modèles](../analysis-workspace/templates/use-templates.md)
@@ -494,7 +494,24 @@ ht-degree: 99%
       + [Cas dʼutilisation des vues de données](/help/use-cases/data-views/data-views-usecases.md)
       + [Utiliser des dimensions et des mesures de liaison](/help/use-cases/data-views/binding-dimensions-metrics.md)
       + [Utiliser des données de résumé](/help/use-cases/data-views/summary-data.md)
-      + [Cas d’utilisation de l’extension BI](/help/use-cases/data-views/bi-extension-usecases.md)
+      + Extension BI {#bi-extension}
+         + [Cas d’utilisation](/help/use-cases/data-views/bi-extension-usecases.md)
+         + [Connecter et répertorier les vues de données](/help/use-cases/data-views/bi-extension/connect-and-validate.md)
+         + [Tendance quotidienne](/help/use-cases/data-views/bi-extension/daily-trend.md)
+         + [Tendance horaire](/help/use-cases/data-views/bi-extension/hourly-trend.md)
+         + [Tendance mensuelle](/help/use-cases/data-views/bi-extension/monthly-trend.md)
+         + [Classement sur une seule dimension](/help/use-cases/data-views/bi-extension/single-dimension-ranked.md)
+         + [Classement de plusieurs dimensions](/help/use-cases/data-views/bi-extension/multiple-dimension-ranked.md)
+         + [Compter les valeurs de dimension distinctes](/help/use-cases/data-views/bi-extension/count-distinct-dimension-values.md)
+         + [Utilisation de noms de périodes pour le filtrage](/help/use-cases/data-views/bi-extension/use-date-range-names-to-filter.md)
+         + [Utiliser des noms de segment pour segmenter](/help/use-cases/data-views/bi-extension/use-segment-names-to-segment.md)
+         + [Utilisation des valeurs de dimension pour segmenter](/help/use-cases/data-views/bi-extension/use-dimension-values-to-segment.md)
+         + [Tri](/help/use-cases/data-views/bi-extension/sort.md)
+         + [Limites](/help/use-cases/data-views/bi-extension/limits.md)
+         + [Transformations](/help/use-cases/data-views/bi-extension/transformations.md)
+         + [Visualisations](/help/use-cases/data-views/bi-extension/visualizations.md)
+         + [Avertissements](/help/use-cases/data-views/bi-extension/caveats.md)
+
    + Champs dérivés {#derived-fields}
       + [Créer un rapport sur le trafic généré par LLM et IA](/help/use-cases/ai-traffic.md)
       + [Créer un rapport sur les objectifs](../use-cases/goals-using-derived-fields.md)
