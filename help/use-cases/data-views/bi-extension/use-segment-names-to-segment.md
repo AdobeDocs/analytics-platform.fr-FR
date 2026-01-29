@@ -153,7 +153,7 @@ Vous devriez voir une visualisation et un tableau similaires à ceux présentés
 
 >[!TAB RStudio]
 
-1. Saisissez les instructions suivantes entre ` ```{r} ` et ` ``` ` dans un nouveau bloc. Veillez à utiliser le nom de filtre approprié. Par exemple : `Fishing Products`.
+1. Saisissez les instructions suivantes entre ` ` ``{r} ` et ` `` ` ` dans un nouveau bloc. Veillez à utiliser le nom de filtre approprié. Par exemple : `Fishing Products`.
 
    ```R
    ## Dimension filtered by name

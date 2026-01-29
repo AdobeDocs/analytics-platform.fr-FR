@@ -18,7 +18,7 @@ Ensuite, vous souhaitez utiliser le nouveau segment pour générer des rapports 
 
 +++ Customer Journey Analytics
 
-Créez un segment avec la **** Titre`Hunting Products` dans Customer Journey Analytics.
+Créez un segment avec la **&#x200B;**&#x200B;Titre`Hunting Products` dans Customer Journey Analytics.
 
 ![Customer Journey Analytics Utilise Des Valeurs Dimension Pour Segmenter](../assets/cja-hunting-products.png)
 
@@ -154,7 +154,7 @@ Une visualisation s’affiche **[!UICONTROL Erreur de récupération des donnée
 
 >[!TAB RStudio]
 
-1. Saisissez les instructions suivantes entre ` ```{r} ` et ` ``` ` dans un nouveau bloc. Veillez à utiliser une catégorie appropriée. Par exemple, `Hunting`.
+1. Saisissez les instructions suivantes entre ` ` ``{r} ` et ` `` ` ` dans un nouveau bloc. Veillez à utiliser une catégorie appropriée. Par exemple, `Hunting`.
 
    ```R
    ## Dimension 1 Filtered by Dimension 2 value

@@ -60,7 +60,7 @@ Lorsque vous parcourez les cas d’utilisation, remplacez ces exemples d’objet
       1. Sélectionnez **[!UICONTROL OK]**.
    1. Dans la boîte de dialogue **[!UICONTROL Base de données PostgreSQL]** - **[!UICONTROL Base de données]** :
       ![Utilisateur et mot de passe du bureau PowerBI](../assets/powerbi-userpassword.png)
-      1. Utilisez ![Copier](/help/assets/icons/Copy.svg) pour copier les valeurs **[!UICONTROL Nom d’utilisateur]** et **[!UICONTROL Mot de passe]** à partir du panneau Experience Platform **[!UICONTROL Requête]** **[!UICONTROL Informations d’identification arrivant à expiration]** dans les champs **[!UICONTROL Nom d’utilisateur]** et **[!UICONTROL Mot de passe]**. Si vous utilisez des informations d’identification [ non expirantes](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect), utilisez le mot de passe correspondant.
+      1. Utilisez ![Copier](/help/assets/icons/Copy.svg) pour copier les valeurs **[!UICONTROL Nom d’utilisateur]** et **[!UICONTROL Mot de passe]** à partir du panneau Experience Platform **[!UICONTROL Requête]** **[!UICONTROL Informations d’identification arrivant à expiration]** dans les champs **[!UICONTROL Nom d’utilisateur]** et **[!UICONTROL Mot de passe]**. Si vous utilisez des informations d’identification [&#x200B; non expirantes](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect), utilisez le mot de passe correspondant.
       1. Assurez-vous que le menu déroulant **[!UICONTROL Sélectionner le niveau auquel appliquer ces paramètres]** est défini sur le **[!UICONTROL Serveur]** que vous avez défini précédemment.
       1. Sélectionnez **[!UICONTROL Connexion]**.
    1. Dans la boîte de dialogue **[!UICONTROL Navigateur]**, les vues de données sont récupérées. Cette récupération peut prendre un certain temps. Une fois la récupération effectuée, les éléments suivants s’affichent dans Power BI Desktop.
@@ -115,7 +115,7 @@ Power BI Desktop prend en charge les scénarios suivants pour le paramètre `FLA
       1. Utilisez ![Copier](/help/assets/icons/Copy.svg) pour copier et coller la **[!UICONTROL Base de données]** du panneau **[!UICONTROL Requête]** **[!UICONTROL Informations d’identification arrivant à expiration]** d’Experience Platform vers la **[!UICONTROL Base de données]**. Ajoutez `%3FFLATTEN` à la valeur que vous collez. Par exemple : `prod:cja%3FFLATTEN`.
       1. Sélectionnez **[!UICONTROL Nom d’utilisateur et mot de passe]** dans le menu déroulant **[!UICONTROL Authentification]**.
       1. Utilisez ![Copier](/help/assets/icons/Copy.svg) pour copier et coller le **[!UICONTROL Nom d’utilisateur]** du panneau **[!UICONTROL Requête]** **[!UICONTROL Informations d’identification arrivant à expiration]** d’Experience Platform dans le **[!UICONTROL Nom d’utilisateur]**.
-      1. Utilisez ![Copier](/help/assets/icons/Copy.svg) pour copier et coller le **[!UICONTROL Mot de passe]** du panneau Experience Platform **[!UICONTROL Requête]** **[!UICONTROL Informations d’identification arrivant à expiration]** dans le **[!UICONTROL Mot de passe]**. Si vous utilisez des informations d’identification [ non expirantes](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect), utilisez le mot de passe correspondant.
+      1. Utilisez ![Copier](/help/assets/icons/Copy.svg) pour copier et coller le **[!UICONTROL Mot de passe]** du panneau Experience Platform **[!UICONTROL Requête]** **[!UICONTROL Informations d’identification arrivant à expiration]** dans le **[!UICONTROL Mot de passe]**. Si vous utilisez des informations d’identification [&#x200B; non expirantes](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect), utilisez le mot de passe correspondant.
       1. Assurez-vous que la case **[!UICONTROL Exiger SSL]** est cochée.
       1. Sélectionnez **[!UICONTROL Se connecter]**.
 
@@ -341,7 +341,7 @@ Le notebook Jupyter prend en charge les scénarios suivants pour le paramètre `
 
 1. Démarrez RStudio.
 1. Créez un nouveau fichier R Markdown ou téléchargez [cet exemple de fichier R Markdown](../assets/BI-Extension.Rmd.zip).
-1. Dans votre premier bloc, saisissez les instructions suivantes entre ` ```{r} ` et ` ``` `. Utilisez ![Copier](/help/assets/icons/Copy.svg) pour copier et coller des valeurs du panneau Experience Platform **[!UICONTROL Requête]** **[!UICONTROL Informations d’identification arrivant à expiration]** dans les valeurs requises pour les différents paramètres, tels que `host`, `dbname` et `user`. Par exemple :
+1. Dans votre premier bloc, saisissez les instructions suivantes entre ` ` ``{r} ` et ` `` ` `. Utilisez ![Copier](/help/assets/icons/Copy.svg) pour copier et coller des valeurs du panneau Experience Platform **[!UICONTROL Requête]** **[!UICONTROL Informations d’identification arrivant à expiration]** dans les valeurs requises pour les différents paramètres, tels que `host`, `dbname` et `user`. Par exemple :
 
    ```R
    library(rstudioapi)
@@ -362,7 +362,7 @@ Le notebook Jupyter prend en charge les scénarios suivants pour le paramètre `
 
    ![Étape 1 de la configuration RStudio](../assets/rstudio-config-step1.png)
 
-1. Créez un bloc et saisissez les instructions suivantes entre ` ``` {r} ` et ` ``` `.
+1. Créez un bloc et saisissez les instructions suivantes entre ` ` `` {r} ` et ` `` ` `.
 
    ```R
    con <- dbConnect(
@@ -379,7 +379,7 @@ Le notebook Jupyter prend en charge les scénarios suivants pour le paramètre `
 1. Exécutez le bloc. Vous ne devriez voir aucune sortie si la connexion est réussie.
 
 
-1. Créez un bloc et saisissez les instructions suivantes entre ` ``` {r} ` et ` ``` `.
+1. Créez un bloc et saisissez les instructions suivantes entre ` ` `` {r} ` et ` `` ` `.
 
    ```R
    views <- dbListTables(con)
@@ -389,7 +389,7 @@ Le notebook Jupyter prend en charge les scénarios suivants pour le paramètre `
 1. Exécutez le bloc. Vous devriez voir `character(0)` comme seule sortie.
 
 
-1. Créez un bloc et saisissez les instructions suivantes entre ` ``` {r} ` et ` ``` `.
+1. Créez un bloc et saisissez les instructions suivantes entre ` ` `` {r} ` et ` `` ` `.
 
    ```R
    glimpse(dv)

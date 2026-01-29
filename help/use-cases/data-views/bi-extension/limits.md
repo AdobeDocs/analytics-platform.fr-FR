@@ -260,7 +260,7 @@ La requête est exécutée par l’extension BI, comme défini dans le notebook 
 
 >[!TAB RStudio]
 
-1. Saisissez les instructions suivantes entre ` ```{r} ` et ` ``` ` dans un nouveau bloc.
+1. Saisissez les instructions suivantes entre ` ` ``{r} ` et ` `` ` ` dans un nouveau bloc.
 
    ```R
    ## Dimension 1 Limited

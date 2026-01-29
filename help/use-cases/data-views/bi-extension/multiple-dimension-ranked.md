@@ -49,7 +49,7 @@ Exemple de panneau **[!UICONTROL Classement multiple par Dimension]** pour le ca
    1. Sélectionnez **[!UICONTROL somme des achats]**
 
 1. Pour modifier le graphique à barres verticales en tableau, assurez-vous que le tableau est sélectionné et sélectionnez **[!UICONTROL Matrice]** dans le volet **[!UICONTROL Visualisations]**.
-   * Faites glisser **[!UICONTROL product_name]** depuis **[!UICONTROL Columns]** et déposez le champ sous **[!UICONTROL product_category]**y dans **[!UICONTROL Rows]** dans le volet **[!UICONTROL Visualisation]**.
+   * Faites glisser **[!UICONTROL product_name]** depuis **[!UICONTROL Columns]** et déposez le champ sous **[!UICONTROL product_category]**&#x200B;y dans **[!UICONTROL Rows]** dans le volet **[!UICONTROL Visualisation]**.
 
 1. Pour limiter le nombre de produits affichés dans le tableau, sélectionnez **[!UICONTROL product_name is (All)]** dans le volet **[!UICONTROL Filtres]**.
 
@@ -244,7 +244,7 @@ Vous devriez voir une visualisation et un tableau similaires à ceux présentés
 
 >[!TAB RStudio]
 
-1. Saisissez les instructions suivantes entre ` ```{r} ` et ` ``` ` dans un nouveau bloc.
+1. Saisissez les instructions suivantes entre ` ` ``{r} ` et ` `` ` ` dans un nouveau bloc.
 
    ```R
    ## Multiple dimensions ranked

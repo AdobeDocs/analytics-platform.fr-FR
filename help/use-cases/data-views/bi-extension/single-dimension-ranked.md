@@ -178,7 +178,7 @@ Exemple de panneau **[!UICONTROL Classement sur un seul Dimension]** pour le cas
    1. Sélectionnez l’onglet **[!UICONTROL Série]**.
    1. Faites défiler la page vers le bas pour afficher **[!UICONTROL Achats]** et remplacez **[!UICONTROL Type]** par **[!UICONTROL Ligne]**.
    1. Sélectionnez l’onglet **[!UICONTROL Y]**.
-   1. Faites glisser **[!UICONTROL Achats]** du conteneur **[!UICONTROL Gauche 1]** jusqu’à l’emplacement où il est indiqué **[!UICONTROL *Faites glisser la série ici pour créer un nouvel axe gauche *]**. Cette action crée un conteneur**[!UICONTROL  Left 2 ]**.
+   1. Faites glisser **[!UICONTROL Achats]** du conteneur **[!UICONTROL Gauche 1]** jusqu’à l’emplacement où il est indiqué **[!UICONTROL *Faites glisser la série ici pour créer un nouvel axe gauche *]**. Cette action crée un conteneur&#x200B;**[!UICONTROL &#x200B; Left 2 &#x200B;]**.
       ![Configuration de la visualisation de recherche](../assets/uc5-looker-visualization.png)
    1. Sélectionnez ![CrossSize75](/help/assets/icons/CrossSize75.svg) en regard de **[!UICONTROL Modifier]** pour masquer la boîte de dialogue contextuelle
 
@@ -214,7 +214,7 @@ Vous devriez voir une visualisation et un tableau similaires à ceux présentés
 
 >[!TAB RStudio]
 
-1. Saisissez les instructions suivantes entre ` ```{r} ` et ` ``` ` dans un nouveau bloc.
+1. Saisissez les instructions suivantes entre ` ` ``{r} ` et ` `` ` ` dans un nouveau bloc.
 
    ```R
    library(tidyr)

@@ -18,7 +18,7 @@ Dans ce cas d’utilisation, vous souhaitez obtenir le nombre distinct de noms d
 
 +++ Customer Journey Analytics
 
-Pour générer des rapports sur un nombre distinct de noms de produit, configurez une mesure calculée dans Customer Journey Analytics, avec les **** Titre`Product Name (Count Distinct)` **[!UICONTROL et]** Id externe`product_name_count_distinct`.
+Pour générer des rapports sur un nombre distinct de noms de produit, configurez une mesure calculée dans Customer Journey Analytics, avec les **&#x200B;**&#x200B;Titre`Product Name (Count Distinct)` **[!UICONTROL et]** Id externe`product_name_count_distinct`.
 
 ![Mesure calculée Nom du produit Customer Journey Analytics (nombre distinct)](../assets/cja-calc-metric-distinct-count-product-names.png)
 
@@ -159,7 +159,7 @@ Vous devriez voir une visualisation et un tableau similaires à ceux présentés
 
 >[!TAB RStudio]
 
-1. Saisissez les instructions suivantes entre ` ```{r} ` et ` ``` ` dans un nouveau bloc.
+1. Saisissez les instructions suivantes entre ` ` ``{r} ` et ` `` ` ` dans un nouveau bloc.
 
    ```R
    ## Count Distinct
