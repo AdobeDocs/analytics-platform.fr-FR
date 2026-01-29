@@ -6,9 +6,9 @@ feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
 badgePremium: label="Beta" type="Informative"
-source-git-commit: 3479227eb703583255d40de3d07d071ad2f89950
+source-git-commit: 32997d0fd9801099a75287f63197d3b4c2ba81ef
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '938'
 ht-degree: 3%
 
 ---
@@ -136,7 +136,13 @@ Pour activer le groupement, dans la section Jeu de données d’événement de l
 
 1. Sélectionnez un intervalle de recherche en amont dans le menu déroulant **[!UICONTROL Intervalle de recherche en amont]**. Les options disponibles dépendent du package Customer Journey Analytics auquel vous avez droit.
 
-Une fois que vous avez enregistré une connexion, le processus de groupement des jeux de données activés pour le groupement se déclenche lorsque l’ingestion des données de ces jeux de données commence
+Une fois que vous avez enregistré une connexion, le processus de groupement des jeux de données activés pour le groupement se déclenche lorsque l’ingestion des données de ces jeux de données commence.
+
+>[!CAUTION]
+>
+>Pour les jeux de données activés pour le groupement dans l’interface Connexions, le statut de renvoi est immédiatement et incorrectement signalé comme ![Statut vert](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _renvois terminés]**pour le nombre de renvois terminés. Utilisez d’autres méthodes pour vérifier si les données du jeu de données groupé sont renvoyées.
+>
+
 
 ## Limites
 
