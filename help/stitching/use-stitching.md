@@ -48,12 +48,12 @@ Le package Customer Journey Analytics auquel vous avez droit détermine les mét
    - Si le jeu de données ne prend pas en charge `identityMap` :
       - Pour le groupement basé sur les champs, le nom de colonne de l’ID de personne pour le jeu de données souhaité (l’identifiant de personne, qui agit également comme un lien entre les jeux de données dans le contexte d’une connexion).
       - Pour le groupement basé sur un graphique, espace de noms d’identité à utiliser pour interroger le graphique d’identité.
-   - Votre préférence en termes d’intervalle de recherche en amont et de fréquence de relecture. Consultez votre package Customer Journey Analytics pour connaître les [ options ](#options) disponibles.
+   - Votre préférence en termes d’intervalle de recherche en amont et de fréquence de relecture. Consultez votre package Customer Journey Analytics pour connaître les [&#x200B; options &#x200B;](#options) disponibles.
    - Nom de la sandbox.
 
 
 2. Le service clientèle d’Adobe travaille avec l’ingénierie Adobe pour activer le groupement à la réception de votre demande. Une fois activé, un jeu de données recréé contenant une colonne d’ID groupée s’affiche dans Adobe Experience Platform. Le service clientèle d’Adobe peut fournir l’identifiant du nouveau jeu de données.
-3. Lorsqu’il est activé pour la première fois, Adobe fournit un renvoi de données assemblées. Consultez votre package Customer Journey Analytics pour connaître l’option [ disponible ](#options).
+3. Lorsqu’il est activé pour la première fois, Adobe fournit un renvoi de données assemblées. Consultez votre package Customer Journey Analytics pour connaître l’option [&#x200B; disponible &#x200B;](#options).
 
 4. Si vous souhaitez utiliser le jeu de données groupé dans une analyse cross-canal, vous devez ajouter le jeu de données groupé à une [connexion](../connections/overview.md) dans Customer Journey Analytics. Ajoutez ensuite tous les autres jeux de données requis pour l’analyse cross-canal et sélectionnez l’ID de personne approprié pour chaque jeu de données.
 
