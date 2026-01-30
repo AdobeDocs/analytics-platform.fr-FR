@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: d117ba255151f730e0b5e4958ee56f5ffc88ade9
+source-git-commit: 9ace0679796c3a813b1fbd97c62c20faf64db211
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 88%
@@ -49,8 +49,8 @@ L’analyse cross-canal vous est utile si vous combinez un ou plusieurs des jeux
 
 Vous pouvez activer le rapprochement de deux manières différentes :
 
-- [Demande d’activation du groupement](/help/stitching/use-stitching.md). Une fois approuvé, un jeu de données en double est créé pour le jeu de données pour lequel vous avez demandé un groupement. Ce jeu de données en double contient une colonne supplémentaire avec l’identifiant assemblé. Vous devez créer une connexion ou en modifier une existante qui inclut le jeu de données assemblé pour utiliser les données assemblées dans Customer Journey Analytics.
-- [Activer l’assemblage dans l’interface Connexions](/help/stitching/use-stitching-ui.md) [!BADGE Beta]{type=Informative}. Lorsque vous configurez le groupement pour un jeu de données dans l’interface Connexions, le groupement se produit « à la volée », lors de l’ingestion des données de ce jeu de données dans Customer Journey Analytics.
+- [Demande d’activation du groupement](/help/stitching/use-stitching.md) (obsolète). Une fois approuvé, un jeu de données en double est créé pour le jeu de données pour lequel vous avez demandé un groupement. Ce jeu de données en double contient une colonne supplémentaire avec l’identifiant assemblé. Vous devez créer une connexion ou en modifier une existante qui inclut le jeu de données assemblé pour utiliser les données assemblées dans Customer Journey Analytics.
+- [Activer l’assemblage dans l’interface Connexions](/help/stitching/use-stitching-ui.md). Lorsque vous configurez le groupement pour un jeu de données dans l’interface Connexions, le groupement se produit « à la volée », lors de l’ingestion des données de ce jeu de données dans Customer Journey Analytics.
 
 ## Limites
 
@@ -61,7 +61,7 @@ Vous pouvez activer le rapprochement de deux manières différentes :
 >
 >- Si vous supprimez le jeu de données source, le jeu de données groupé cesse le traitement et est supprimé par le système.
 >
->- Les libellés d’utilisation des données ne sont pas propagés automatiquement au schéma du jeu de données groupé. Si des libellés d’utilisation des données sont appliqués au schéma du jeu de données source, vous devez appliquer manuellement ces libellés d’utilisation des données au schéma du jeu de données groupé. Consultez [Gérer les libellés d’utilisation des données dans Experience Platform &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/data-governance/labels/overview) pour plus d’informations.
+>- Les libellés d’utilisation des données ne sont pas propagés automatiquement au schéma du jeu de données groupé. Si des libellés d’utilisation des données sont appliqués au schéma du jeu de données source, vous devez appliquer manuellement ces libellés d’utilisation des données au schéma du jeu de données groupé. Consultez [Gérer les libellés d’utilisation des données dans Experience Platform ](https://experienceleague.adobe.com/fr/docs/experience-platform/data-governance/labels/overview) pour plus d’informations.
 
 L’analyse cross-canal est une fonctionnalité innovante et robuste, mais son utilisation a ses limites.
 
