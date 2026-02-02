@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: 5cd838f7-e394-4a67-9d2e-e1d08a864ca0
 role: User
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 39d3a233166e2ce2035df2ce821dd16181e5e13e
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 6%
@@ -32,7 +32,7 @@ Vous souhaitez définir explicitement des objectifs pour vos commandes de certif
 
 1. Définissez des valeurs statiques, à l’aide d’une RÈGLE CASE WHEN, pour chaque mois, en définissant une **[!UICONTROL valeur numérique personnalisée]**. Consultez la règle Objectifs mensuels du produit ci-dessous.
 
-   ![&#x200B; Objectifs mensuels du produit &#x200B;](assets/goals-derived-field-product-goals-1.png)
+   ![ Objectifs mensuels du produit ](assets/goals-derived-field-product-goals-1.png)
 
 
 ### Objectifs de chiffre d’affaires des canaux marketing
@@ -47,7 +47,7 @@ Vous souhaitez définir un objectif de chiffre d’affaires mensuel pour chacun 
 
 1. Définissez explicitement des valeurs statiques, représentant les objectifs de chiffre d’affaires mensuels, pour les canaux marketing spécifiques dans une règle CASE WHEN finale, en définissant une **[!UICONTROL valeur numérique personnalisée]**. Voir la règle de [!DNL Monthly Goal] ci-dessous.
 
-   ![&#x200B; Objectifs mensuels &#x200B;](assets/goals-derived-field-marketing-channel-2.png)
+   ![ Objectifs mensuels ](assets/goals-derived-field-marketing-channel-2.png)
 
 
 
@@ -67,7 +67,9 @@ Pour utiliser des objectifs dans votre projet Workspace, vous utilisez la foncti
 
 Vous pouvez utiliser ces mesures calculées pour créer des rapports sur la progression dans les tableaux à structure libre et les visualisations. Par exemple :
 
-![Tableau à structure libre présentant les objectifs de revenus marketing](assets/freeform-table-product-order-goals.png)
+![Tableau à structure libre présentant les objectifs de revenus marketing](assets/freeform-table-marketing-channel-revenue-goals.png)
+
+
 
 
 ### Objectifs de chiffre d’affaires des canaux marketing
@@ -82,4 +84,4 @@ Vous pouvez utiliser ces mesures calculées pour créer des rapports sur la prog
 
 Vous pouvez utiliser ces mesures calculées pour créer des rapports sur la progression dans les tableaux à structure libre et les visualisations. Par exemple :
 
-![Tableau à structure libre présentant les objectifs de revenus marketing](assets/freeform-table-marketing-channel-revenue-goals.png)
+![Tableau à structure libre présentant les objectifs de revenus marketing](assets/freeform-table-product-order-goals.png)
