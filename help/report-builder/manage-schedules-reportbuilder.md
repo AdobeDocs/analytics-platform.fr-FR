@@ -1,15 +1,15 @@
 ---
-title: Comment gérer les classeurs planifiés dans Report Builder dans Adobe Analytics
-description: Découvrez comment gérer les classeurs planifiés dans Report Builder pour sécuriser les destinations
+title: Gestion Des Classeurs Planifiés Dans Report Builder
+description: Découvrez comment gérer les classeurs planifiés dans Report Builder.
 role: User, Admin
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 0a0427d9-223e-410b-a8ef-8601390d88aa
-source-git-commit: 755a5223deb0845079ea98a7371a2f8acb69ea4b
+source-git-commit: 31d3b40ad7a081aefa4297d7f4a3b986711ead03
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 3%
+source-wordcount: '326'
+ht-degree: 4%
 
 ---
 
@@ -48,7 +48,7 @@ Utilisez ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) pour définir le
    |---|---|
    | ![Modifier](/help/assets/icons/Edit.svg) | Modifiez la planification d’un classeur sélectionné. |
    | ![Historique](/help/assets/icons/History.svg) | Afficher l’historique des classeurs sélectionnés. |
-   | ![&#x200B; Pause &#x200B;](/help/assets/icons/Pause.svg) | Mettre en pause le planning des classeurs sélectionnés. |
+   | ![Pause](/help/assets/icons/Pause.svg) | Mettre en pause le planning des classeurs sélectionnés. |
    | ![Lecture](/help/assets/icons/Play.svg) | Reprenez la planification des classeurs sélectionnés. |
    | ![Télécharger](/help/assets/icons/Download.svg) | Téléchargez le classeur sélectionné dans un nouveau classeur. |
    | ![Supprimer](/help/assets/icons/Delete.svg) | Supprimez la planification des classeurs sélectionnés. |

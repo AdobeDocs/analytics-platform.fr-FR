@@ -1,15 +1,15 @@
 ---
 title: Exporter des rapports depuis Report Builder
-description: Décrit comment exporter des données de Report Builder vers des destinations sécurisées
+description: Découvrez comment exporter des données de Report Builder vers des destinations sécurisées.
 role: User, Admin
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 1d5d87d8-1920-406b-8cce-41b89b7ae70b
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: cc20ddf5da5787af0a29b5d18c00abff816071d2
 workflow-type: tm+mt
-source-wordcount: '1304'
-ht-degree: 38%
+source-wordcount: '1303'
+ht-degree: 39%
 
 ---
 
@@ -19,7 +19,7 @@ Vous pouvez exporter des classeurs Customer Journey Analytics de Report Builder 
 
 [Les avantages de l’exportation des rapports de Report Builder vers le cloud](#advantages-of-exporting-to-the-cloud) incluent la possibilité d’utiliser des rapports dans des outils tiers ou de les combiner avec des données externes.
 
-Avant d’exporter des classeurs de Report Builder vers une destination cloud, assurez-vous que vos blocs de données, votre environnement et vos autorisations répondent aux [&#x200B; exigences d’exportation &#x200B;](#export-requirements).
+Avant d’exporter des classeurs de Report Builder vers une destination cloud, assurez-vous que vos blocs de données, votre environnement et vos autorisations répondent aux [ exigences d’exportation ](#export-requirements).
 
 ## Comprendre le processus d’exportation
 
@@ -49,17 +49,15 @@ Pour exporter des rapports depuis Report Builder :
 
 1. Sélectionnez [!UICONTROL **Planifier**].
 
-<!-- add screenshot -->
-
 1. Dans l’onglet **[!UICONTROL Classeurs]**, sélectionnez l’icône plus pour créer un planning
-
-   ![Onglet Plannings de Report Builder](assets/report-builder-schedule-cloud.png)
 
    Ou
 
    Pour exporter le classeur selon un planning que vous avez déjà créé, sélectionnez le planning dans la liste des plannings, puis sélectionnez **[!UICONTROL Envoyer selon le planning]**.
 
 1. Dans le panneau de droite [!UICONTROL **Adobe Report Builder**], spécifiez les informations suivantes pour continuer à créer un planning :
+
+   ![Onglet Plannings de Report Builder](assets/report-builder-schedule-cloud.png)
 
    | Nom du champ | Fonction |
    |---------|----------|
@@ -71,8 +69,8 @@ Pour exporter des rapports depuis Report Builder :
    | **[!UICONTROL Protéger le classeur par mot de passe]** | Indiquez un mot de passe pour protéger le fichier exporté afin que seules les personnes disposant du mot de passe puissent y accéder. <p>Les mots de passe doivent comporter au moins 8 caractères, au moins 1 chiffre et 1 caractère spécial (par exemple `!`, `@`, `#` et `$`).</p> |
    | **[!UICONTROL Adresse électronique]** | Sélectionnez cette option pour envoyer le fichier à une adresse e-mail spécifique. Pour plus d’informations, consultez [Planification de classeurs par partage via e-mail](/help/report-builder/schedule-reportbuilder.md). |
    | **[!UICONTROL Autres diffusions]** | Sélectionnez cette option pour envoyer le fichier à un compte cloud, puis utilisez les menus déroulants **[!UICONTROL Compte]** et **[!UICONTROL Emplacement]** décrits ci-dessous pour sélectionner le compte et l’emplacement. |
-   | **[!UICONTROL Compte]** | Sélectionnez le compte d’export dans le cloud où vous souhaitez que les données soient envoyées. <p>Si vous n’avez pas encore configuré de compte cloud à utiliser, vous pouvez également configurer un nouveau compte :<ol><li>Sélectionnez [!UICONTROL **Ajouter un compte**], puis spécifiez les informations suivantes :<ul><li>[!UICONTROL **Nom du compte d’emplacement**] : spécifiez un nom pour le compte d’emplacement. Ce nom apparaît lors de la création d’un emplacement. </li><li>[!UICONTROL **Description de compte d’emplacement**] : fournissez une brève description du compte pour le différencier des autres comptes du même type de compte.</li><li>**[!UICONTROL Rendre le compte disponible pour tous les utilisateurs de votre organisation]** : sélectionnez cette option pour permettre à d’autres utilisateurs de votre organisation d’utiliser le compte. Tenez compte des points suivants lors du partage de comptes :<ul><li>Les comptes que vous partagez ne peuvent pas être annulés.</li><li>Les comptes partagés ne peuvent être modifiés que par le propriétaire du compte.</li><li>Tout le monde peut créer un emplacement pour le compte partagé.</li></ul></li><li>[!UICONTROL **Type de compte**] : sélectionnez le type de compte cloud vers lequel vous exportez. Les types de compte disponibles sont ARN de rôle Amazon S3, Google Cloud Platform, Azure SAS et Azure RBAC.</li></ul><li>Pour terminer la configuration de votre compte, sélectionnez le lien ci-dessous, correspondant au [!UICONTROL **type de compte**] sélectionné :<ul><li>[Amazon S3 Role ARN](/help/components/exports/cloud-export-accounts.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-accounts.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-accounts.md#azure-sas)</li><li>[RBAC Azure](/help/components/exports/cloud-export-accounts.md#azure-rbac)</li></ul></ol> |
-   | **[!UICONTROL Emplacement]** | Sélectionnez l’emplacement sur le compte où vous souhaitez que les données d’export soient envoyées.<p>Si vous n’avez pas encore configuré l’emplacement que vous souhaitez utiliser sur le compte que vous avez sélectionné, vous pouvez configurer un nouvel emplacement :<ol><li>Sélectionnez [!UICONTROL **Ajouter un emplacement**], puis spécifiez les informations suivantes : <ul><li>[!UICONTROL **Nom**] : nom de l’emplacement.</li><li>[!UICONTROL **Description**] : fournissez une brève description de l’emplacement pour le différencier des autres emplacements sur le compte compte.</li><li>**[!UICONTROL Rendre l’emplacement disponible pour tous les utilisateurs de votre organisation]** : sélectionnez cette option pour permettre à d’autres utilisateurs de votre organisation d’utiliser l’emplacement. Tenez compte des points suivants lors du partage de comptes :<ul><li>Les emplacements partagés ne peuvent pas être annulés.</li><li>Les emplacements partagés ne peuvent être modifiés que par le propriétaire du compte.</li><li>Les emplacements ne peuvent être partagés que si le compte auquel l’emplacement est associé est également partagé.</li></ul></li><li>[!UICONTROL **Compte d’emplacement**] : sélectionnez le compte sur lequel vous souhaitez créer l’emplacement.</li></ul><li>Pour terminer la configuration de votre emplacement, sélectionnez le lien ci-dessous, qui correspond au type de compte que vous avez sélectionné dans le champ [!UICONTROL **Compte d’emplacement**] :<ul><li>[Amazon S3 Role ARN](/help/components/exports/cloud-export-locations.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-locations.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-locations.md#azure-sas)</li><li>[RBAC Azure](/help/components/exports/cloud-export-locations.md#azure-rbac)</li></ul> |
+   | **[!UICONTROL Compte]** | Sélectionnez le compte d’exportation cloud vers lequel vous souhaitez que les données soient envoyées. <p>Si vous n’avez pas encore configuré de compte cloud à utiliser, vous pouvez également configurer un nouveau compte :<ol><li>Sélectionnez [!UICONTROL **Ajouter un compte**], puis spécifiez les informations suivantes :<ul><li>[!UICONTROL **Nom du compte d’emplacement**] : spécifiez un nom pour le compte d’emplacement. Ce nom apparaît lors de la création d’un emplacement. </li><li>[!UICONTROL **Description de compte d’emplacement**] : fournissez une brève description du compte pour le différencier des autres comptes du même type de compte.</li><li>**[!UICONTROL Rendre le compte disponible pour tous les utilisateurs de votre organisation]** : sélectionnez cette option pour permettre à d’autres utilisateurs de votre organisation d’utiliser le compte. Tenez compte des points suivants lors du partage de comptes :<ul><li>Les comptes que vous partagez ne peuvent pas être annulés.</li><li>Les comptes partagés ne peuvent être modifiés que par la personne propriétaire du compte.</li><li>N’importe qui peut créer un emplacement pour le compte partagé.</li></ul></li><li>[!UICONTROL **Type de compte**] : sélectionnez le type de compte cloud vers lequel vous exportez. Les types de compte disponibles sont ARN de rôle Amazon S3, Google Cloud Platform, Azure SAS et Azure RBAC.</li></ul><li>Pour terminer la configuration de votre compte, sélectionnez le lien ci-dessous, correspondant au [!UICONTROL **type de compte**] sélectionné :<ul><li>[Amazon S3 Role ARN](/help/components/exports/cloud-export-accounts.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-accounts.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-accounts.md#azure-sas)</li><li>[RBAC Azure](/help/components/exports/cloud-export-accounts.md#azure-rbac)</li></ul></ol> |
+   | **[!UICONTROL Emplacement]** | Sélectionnez l’emplacement sur le compte où vous souhaitez que les données d’export soient envoyées.<p>Si vous n’avez pas encore configuré l’emplacement que vous souhaitez utiliser sur le compte que vous avez sélectionné, vous pouvez configurer un nouvel emplacement :<ol><li>Sélectionnez [!UICONTROL **Ajouter un emplacement**], puis spécifiez les informations suivantes : <ul><li>[!UICONTROL **Nom**] : nom de l’emplacement.</li><li>[!UICONTROL **Description**] : fournissez une brève description de l’emplacement pour le différencier des autres emplacements sur le compte compte.</li><li>**[!UICONTROL Rendre l’emplacement disponible pour tous les utilisateurs de votre organisation]** : sélectionnez cette option pour permettre à d’autres utilisateurs de votre organisation d’utiliser l’emplacement. Tenez compte des points suivants lors du partage de comptes :<ul><li>Les emplacements partagés ne peuvent pas être annulés.</li><li>Les emplacements partagés ne peuvent être modifiés que par le propriétaire du compte.</li><li>Les emplacements ne peuvent être partagés que si le compte auquel l’emplacement est associé est également partagé.</li></ul></li><li>[!UICONTROL **Compte d’emplacement**] : sélectionnez le compte sur lequel vous souhaitez créer l’emplacement.</li></ul><li>Pour terminer la configuration de votre emplacement, sélectionnez le lien ci-dessous, qui correspond au type de compte que vous avez sélectionné dans le champ [!UICONTROL **Compte d’emplacement**] :<ul><li>[Amazon S3 Role ARN](/help/components/exports/cloud-export-locations.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-locations.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-locations.md#azure-sas)</li><li>[RBAC Azure](/help/components/exports/cloud-export-locations.md#azure-rbac)</li></ul> |
    | **[!UICONTROL Afficher les options de planification]** | Sélectionnez cette option pour afficher des options supplémentaires pour planifier l’exportation. Ne sélectionnez pas cette option si vous souhaitez envoyer l’exportation une seule fois. Lorsque cette option est désélectionnée, l’exportation est lancée immédiatement. |
    | **[!UICONTROL À partir du]** | Jour et heure auxquels l’export planifié doit commencer. <p>Cette option n’est disponible que lors du choix d’une fréquence d’export planifié.</p> |
    | **[!UICONTROL Se terminant le]** | Jour et heure d’expiration de l’export planifié. L’export planifié ne s’exécute plus après la date et l’heure que vous avez définies. <p>Cette option n’est disponible que lors du choix d’une fréquence d’export planifié.</p> |
@@ -111,8 +109,6 @@ L’export de données Customer Journey Analytics vers le cloud vous permet d�
 * Exportez les blocs de données qui incluent plusieurs dimensions.
 
 ## Exigences d’export {#export-requirements}
-
-### Configuration minimale requise
 
 Assurez-vous que vos blocs de données, votre environnement et vos autorisations répondent aux exigences suivantes :
 

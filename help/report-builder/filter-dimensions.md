@@ -1,15 +1,15 @@
 ---
-title: Filtrage des dimensions dans Report Builder
-description: Décrit comment utiliser des dimensions de filtre dans Report Builder pour Customer Journey Analytics
+title: Filtrage Des Dimensions Dans Report Builder
+description: Découvrez comment filtrer les dimensions dans Report Builder.
 role: User
 feature: Report Builder
 type: Documentation
 exl-id: 5730d5f3-de76-429f-81f5-ebe6b62a9480
 solution: Customer Journey Analytics
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: a18b628f02889911c7663c32f31ef3c3bec3cf2e
 workflow-type: tm+mt
-source-wordcount: '995'
-ht-degree: 33%
+source-wordcount: '990'
+ht-degree: 34%
 
 ---
 
@@ -22,7 +22,7 @@ Pour modifier les éléments de dimension renvoyés pour chaque dimension :
 
 1. Sélectionnez une cellule dans le bloc de données.
 
-1. Sélectionnez ![&#x200B; Modifier &#x200B;](/help/assets/icons/Edit.svg) **[!UICONTROL Modifier le bloc de données]** dans le panneau **[!UICONTROL Commandes]**.
+1. Sélectionnez ![ Modifier ](/help/assets/icons/Edit.svg) **[!UICONTROL Modifier le bloc de données]** dans le panneau **[!UICONTROL Commandes]**.
 
 1. Sélectionnez **[!UICONTROL Suivant]** pour afficher l’onglet **[!UICONTROL Dimensions]**.
 

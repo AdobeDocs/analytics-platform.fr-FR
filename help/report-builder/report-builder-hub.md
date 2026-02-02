@@ -1,15 +1,15 @@
 ---
-title: Qu’est-ce que le centre Report Builder dans Customer Journey Analytics ?
-description: Décrit les composants du centre Report Builder
+title: Centre Report Builder
+description: En savoir plus sur le hub Report Builder.
 role: User
 feature: Report Builder
 type: Documentation
 exl-id: 119bd0b5-0d07-407f-b6e9-ef43352bad31
 solution: Customer Journey Analytics
-source-git-commit: 065cf61d80ceb3c921ea666ba299e56fb044335b
+source-git-commit: 1e19e0c79617d27c7039b695c70ca5026fcaf357
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 27%
+source-wordcount: '534'
+ht-degree: 25%
 
 ---
 
@@ -19,7 +19,7 @@ Le hub Report Builder est le volet de droite qui s’affiche dans votre classeur
 
 Utilisez le centre Report Builder pour créer, mettre à jour, supprimer et gérer des blocs de données.
 
-Le hub Report Builder contient les boutons ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Create]**, ![TableManage](/help/assets/icons/TableManage.svg) **[!UICONTROL Manage]** et ![Calendar](/help/assets/icons/Calendar.svg)Schedule **[!UICONTROL , le panneau]** Commands **[!UICONTROL et le panneau]** Quick edit **&#x200B;**.
+Le hub Report Builder contient les boutons ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Create]**, ![TableManage](/help/assets/icons/TableManage.svg) **[!UICONTROL Manage]** et ![Calendar](/help/assets/icons/Calendar.svg)Schedule **[!UICONTROL , le panneau]** Commands **[!UICONTROL et le panneau]** Quick edit ****.
 
 ![hub Report Builder](assets/hub51.png){zoomable="yes"}
 
@@ -39,7 +39,7 @@ Utilisez le panneau **[!UICONTROL Commandes]** pour accéder aux commandes compa
 | ![Modifier](/help/assets/icons/Edit.svg) **[!UICONTROL Modifier le bloc de données]** | La ou les cellules sélectionnées font partie d’un seul bloc de données. | Permet de modifier un bloc de données. |
 | ![Actualiser](/help/assets/icons/Refresh.svg) **[!UICONTROL Actualiser le bloc de données]** | La sélection contient au moins un bloc de données. La commande actualise uniquement les blocs de données de la sélection. | Permet d’actualiser un ou plusieurs blocs de données. |
 | ![DocumentRefresh](/help/assets/icons/DocumentRefresh.svg) **[!UICONTROL Actualiser tous les blocs de données]** | Le classeur contient un ou plusieurs blocs de données. | Permet d’actualiser tous les blocs de données du classeur |
-| ![Envoyer](/help/assets/icons/Send.svg) **[!UICONTROL Envoyer le classeur]** | Le classeur contient un ou plusieurs blocs de données. | Permet d’envoyer le classeur sous forme de fichier par e-mail. |
+| ![Envoyer](/help/assets/icons/Send.svg) **[!UICONTROL Envoyer le classeur]** | Le classeur contient un ou plusieurs blocs de données. | Utilisez pour [envoyer le classeur en tant que fichier par e-mail](schedule-reportbuilder.md). |
 | ![Copier](/help/assets/icons/Copy.svg) **[!UICONTROL Copier le bloc de données]** | La cellule ou la plage de cellules sélectionnée fait partie d’un ou de plusieurs blocs de données. | Permet de copier un bloc de données. |
 | ![Couper](/help/assets/icons/Cut.svg) **[!UICONTROL Couper le bloc]** | La cellule ou la plage de cellules sélectionnée fait partie d’un ou de plusieurs blocs de données. | Utilisez pour couper un bloc de données. |
 | ![Supprimer](/help/assets/icons/Delete.svg) **[!UICONTROL Supprimer le bloc de données]** | La ou les cellules sélectionnées font partie d’un seul bloc de données. | Utiliser pour supprimer un bloc de données |
@@ -70,6 +70,6 @@ Le lien **Segments** affiche une liste récapitulative des segments utilisés pa
 >[!MORELIKETHIS]
 >
 >[Sélectionner une vue de données](select-data-view.md)
->&#x200B;>[Sélectionnez une période](select-date-range.md)
->&#x200B;>[Utiliser des filtres](work-with-filters.md)
+>[Sélectionnez une période](select-date-range.md)
+>[Utiliser des filtres](work-with-filters.md)
 >

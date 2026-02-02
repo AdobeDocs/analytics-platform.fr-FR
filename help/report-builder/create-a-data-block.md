@@ -1,15 +1,15 @@
 ---
-title: Création d’un bloc de données à l’aide de Report Builder dans Customer Journey Analytics
-description: Décrit comment créer un bloc de données.
+title: Création D’Un Bloc De Données Dans Report Builder
+description: Découvrez comment créer un bloc de données.
 role: User
 feature: Report Builder
 type: Documentation
 exl-id: 46382621-d5e1-41d6-865c-782ec28a21fa
 solution: Customer Journey Analytics
-source-git-commit: 7d3300336a955facc230f335d1452096700ea98b
+source-git-commit: 31d3b40ad7a081aefa4297d7f4a3b986711ead03
 workflow-type: tm+mt
-source-wordcount: '777'
-ht-degree: 24%
+source-wordcount: '771'
+ht-degree: 23%
 
 ---
 
@@ -23,7 +23,7 @@ Configurez les paramètres initiaux du bloc de données : son emplacement, les v
 
 1. Sélectionnez ![AjouterCercle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Créer]**.
 
-   ![Capture d’écran affichant l’option Créer un bloc de données &#x200B;](./assets/create-data-block.png){zoomable="yes"}
+   ![Capture d’écran affichant l’option Créer un bloc de données ](./assets/create-data-block.png){zoomable="yes"}
 
 
 1. Définissez lʼ&#x200B;**[!UICONTROL Emplacement du bloc de données]**.
@@ -48,7 +48,7 @@ Configurez les paramètres initiaux du bloc de données : son emplacement, les v
 
    Sélectionnez **[!UICONTROL À partir de la cellule]** pour définir des données de début et de fin en fonction d&#39;une cellule de la feuille active.
 
-   Pour plus d’informations sur les options de période, voir [&#x200B; Sélectionner une période &#x200B;](select-date-range.md).
+   Pour plus d’informations sur les options de période, voir [ Sélectionner une période ](select-date-range.md).
 
 1. Sélectionnez **[!UICONTROL Suivant]**.
 
@@ -114,7 +114,7 @@ Pour créer le bloc de données, sélectionnez les composants du rapport et pers
 >[!MORELIKETHIS]
 >
 >[Sélectionner une vue de données](select-data-view.md)
->&#x200B;>[Sélectionnez une période](select-date-range.md)
->&#x200B;>[Filtrer les dimensions &#x200B;](filter-dimensions.md)
->&#x200B;>[Utiliser les segments](work-with-filters.md)
+>[Sélectionnez une période](select-date-range.md)
+>[Filtrer les dimensions ](filter-dimensions.md)
+>[Utiliser les segments](work-with-filters.md)
 >

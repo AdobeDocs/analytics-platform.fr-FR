@@ -1,14 +1,14 @@
 ---
-title: Comment sélectionner une vue de données dans Report Builder
-description: Décrit comment sélectionner des vues de données dans Adobe Report Builder
+title: Sélectionner Une Vue De Données Dans Report Builder
+description: Découvrez comment sélectionner une vue de données dans Report Builder.
 role: User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: bf765144-34f8-465b-b06d-53e4ca91014a
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 31d3b40ad7a081aefa4297d7f4a3b986711ead03
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '381'
 ht-degree: 1%
 
 ---

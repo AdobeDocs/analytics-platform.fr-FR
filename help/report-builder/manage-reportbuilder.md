@@ -1,15 +1,15 @@
 ---
-title: Comment gérer les blocs de données à l’aide de Report Builder dans Customer Journey Analytics
-description: Décrit comment utiliser la fonction de gestion dans Report Builder
+title: Gestion Des Blocs De Données Dans Report Builder
+description: Découvrez comment gérer les blocs de données dans Report Builder.
 role: User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 70103020-a4a9-43be-933c-bde5a6d088c8
-source-git-commit: 22b06eaf9f224188699aa241de1d1daad8a14619
+source-git-commit: 31d3b40ad7a081aefa4297d7f4a3b986711ead03
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 21%
+source-wordcount: '517'
+ht-degree: 17%
 
 ---
 
@@ -43,7 +43,7 @@ Utilisez le champ ![Recherche](/help/assets/icons/Search.svg) **[!UICONTROL _Rec
 
 ## Modifier les blocs de données
 
-Vous pouvez modifier les vues de données et les blocs de données des périodes. Ou les segments appliqués aux blocs de données.
+Vous pouvez modifier les vues de données et les périodes des blocs de données. Ou les segments appliqués aux blocs de données.
 
 Par exemple, vous pouvez remplacer un segment existant par un nouveau segment dans un ou plusieurs blocs de données.
 
@@ -51,7 +51,7 @@ Par exemple, vous pouvez remplacer un segment existant par un nouveau segment da
 
    ![Icône de modification de crayon](./assets/image56.png){zoomable="yes"}
 
-1. Sélectionnez ![&#x200B; Modifier &#x200B;](/help/assets/icons/Edit.svg) pour afficher la fenêtre **[!UICONTROL Modification rapide]**.
+1. Sélectionnez ![ Modifier ](/help/assets/icons/Edit.svg) pour afficher la fenêtre **[!UICONTROL Modification rapide]**.
 
    ![Fenêtre Modification rapide](./assets/image58.png){zoomable="yes"}
 

@@ -1,15 +1,15 @@
 ---
-title: Que sont les libellés restreints dans Report Builder ?
-description: Décrit les libellés restreints dans Report Builder
+title: Libellés Restreints Dans Report Builder
+description: Découvrez les libellés restreints dans Report Builder.
 role: User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 99c3c66e-928e-4363-a6a9-bbcab792337a
-source-git-commit: 22b06eaf9f224188699aa241de1d1daad8a14619
+source-git-commit: 31d3b40ad7a081aefa4297d7f4a3b986711ead03
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 44%
+source-wordcount: '315'
+ht-degree: 40%
 
 ---
 
@@ -23,7 +23,7 @@ En outre, lorsque des données sont exportées à partir de Customer Journey A
 
 Cette intégration vous permet de gérer la conformité. Les gestionnaires de données de votre entreprise peuvent définir des politiques pour restreindre l’utilisation. Par conséquent, vos utilisateurs et utilisatrices Customer Journey Analytics peuvent utiliser les données de manière plus sécurisée, tout en sachant qu’elles sont conformes aux politiques définies par les gestionnaires de données.
 
-Pour plus d’informations, voir [Customer Journey Analytics et gouvernance des données](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-privacy/privacy-overview)
+Pour plus d’informations, voir [Customer Journey Analytics et gouvernance des données](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-privacy/privacy-overview)
 
 ## Afficher les données limitées
 
@@ -34,7 +34,7 @@ Deux politiques définies par Adobe sont affichées dans Customer Journey Analyt
 
 Les composants soumis à ces politiques sont grisés et possèdent une icône ![InfoOutline](/help/assets/icons/InfoOutline.svg). Lorsque vous pointez sur l’icône d’informations, une note s’affiche pour indiquer les éléments suivants : **[!UICONTROL Des politiques ont été appliquées à ce champ pour interdire l’utilisation de ces données]**.
 
-Pour plus d’informations, voir [&#x200B; Étiquettes et politiques &#x200B;](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dataviews/data-governance).
+Pour plus d’informations, voir [ Étiquettes et politiques ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-governance).
 
 
 ![Note de politique indiquant l’utilisation interdite des données.](assets/restricted-label.png){zoomable="yes"}

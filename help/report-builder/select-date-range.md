@@ -1,15 +1,15 @@
 ---
-title: Comment sélectionner une période dans Report Builder dans Customer Journey Analytics
-description: Décrit comment utiliser le calendrier, les dates flottantes et les expressions personnalisées dans Report Builder for Customer Journey Analytics
+title: Sélectionner Une Plage De Données Dans Report Builder
+description: Découvrez comment sélectionner une période dans Report Builder.
 role: User
 feature: Report Builder
 type: Documentation
 exl-id: 7252214f-a7d6-451b-99c9-d39e8e47120b
 solution: Customer Journey Analytics
-source-git-commit: 9794779894fbecb433c16d108c555c5f81a4b491
+source-git-commit: 31d3b40ad7a081aefa4297d7f4a3b986711ead03
 workflow-type: tm+mt
-source-wordcount: '867'
-ht-degree: 49%
+source-wordcount: '853'
+ht-degree: 50%
 
 ---
 
