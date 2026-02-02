@@ -1,14 +1,14 @@
 ---
 title: Vue d’ensemble du groupement
-description: Vue d’ensemble du groupement
+description: Découvrez les concepts, les avantages, les conditions préalables et les limites de la combinaison d’identités.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 9ace0679796c3a813b1fbd97c62c20faf64db211
+source-git-commit: a94f3fe6821d96c76b759efa3e7eedc212252c5f
 workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 88%
+source-wordcount: '799'
+ht-degree: 71%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 88%
 
 >[!NOTE]
 >
->Vous devez disposer du package **Select** ou d’un package supérieur (pour le [groupement basé sur les champs](fbs.md)) ou du package **Prime** ou d’un package supérieur (pour le [groupement basé sur les graphes](gbs.md)) pour utiliser la fonctionnalité décrite dans cette section. Contactez votre administrateur ou administratrice si vous ne savez pas de quel package Customer Journey Analytics vous disposez.
+>Vous devez disposer du package Customer Journey Analytics **Select** ou d’une version ultérieure (pour le [groupement basé sur les champs](fbs.md)) ou du package **Prime** Customer Journey Analytics ou d’une version ultérieure (pour le [groupement basé sur les graphiques](gbs.md)) pour utiliser la fonctionnalité décrite dans cette section. Contactez votre administrateur ou administratrice si vous ne savez pas de quel package Customer Journey Analytics vous disposez.
 
 Le groupement d’identités (ou groupement) est une puissante fonctionnalité qui élève la capacité d’un jeu de données d’événement à l’analyse cross-canal. L’analyse cross-canal est un cas d’utilisation principal pour Customer Journey Analytics. L’analyse cross-canal vous permet de combiner et d’exécuter facilement des rapports sur plusieurs jeux de données de différents canaux, en fonction d’un identifiant commun (ID de personne).
 
@@ -24,7 +24,7 @@ Lorsque vous combinez des jeux de données avec des identifiants de personne sim
 
 Malheureusement, tous les jeux de données basés sur un événement qui font partie de votre connexion dans Customer Journey Analytics ne sont pas suffisamment alimentées en données pour prendre en charge cette attribution dès le départ. En particulier, les jeux de données d’expérience web ou mobiles ne disposent souvent pas d’informations d’ID de personne pour tous les événements.
 
-Le rapprochement permet de recomposer les identités dans les lignes d’un jeu de données, en s’assurant que l’ID de personne (ID regroupé) est disponible sur chaque événement. Le rapprochement examine les données utilisateur des sessions authentifiées et non authentifiées afin de déterminer la valeur de l’ID de personne commun qui peut être utilisée en tant qu’ID rapproché. Cette recomposition permet de résoudre des enregistrements disparates en un seul identifiant rapproché pour une analyse au niveau de la personne plutôt qu’au niveau de l’appareil ou du cookie.
+L’assemblage des clés d’identité dans les lignes d’un jeu de données pour s’assurer que l’ID de personne (ID assemblé) est disponible sur chaque événement. Le rapprochement examine les données utilisateur des sessions authentifiées et non authentifiées afin de déterminer la valeur de l’ID de personne commun qui peut être utilisée en tant qu’ID rapproché. Cette recomposition résout les enregistrements disparates en un seul identifiant assemblé pour une analyse au niveau de la personne, plutôt qu’au niveau de l’appareil ou du cookie.
 
 Customer Journey Analytics prend en charge deux types de groupement : le [groupement basé sur les champs](fbs.md) et le [groupement basé sur les graphes](gbs.md).
 
@@ -36,7 +36,7 @@ Customer Journey Analytics prend en charge deux types de groupement : le [group
 
 Avant d’utiliser le groupement, veillez à ce que votre organisation dispose des éléments suivants :
 
-- Le groupement inclut la fusion des données d’utilisateur et d’utilisatrice authentifiées et non authentifiées. Veillez à respecter les lois et réglementations en vigueur, y compris lʼobtention des autorisations dʼutilisateur et d’utilisatrice final nécessaires, avant d’activer le groupement sur un jeu de données d’événement. Voir [Définir des champs d’identité dans l’interface utilisateur](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/ui/fields/identity) pour plus d’informations.
+- Le groupement inclut la fusion des données d’utilisateur et d’utilisatrice authentifiées et non authentifiées. Veillez à respecter les lois et réglementations applicables, y compris l’obtention des autorisations nécessaires de l’utilisateur final, avant d’activer le groupement sur un jeu de données d’événement.
 
 - Importez les données de votre choix dans Adobe Experience Platform :
 
@@ -50,24 +50,15 @@ L’analyse cross-canal vous est utile si vous combinez un ou plusieurs des jeux
 Vous pouvez activer le rapprochement de deux manières différentes :
 
 - [Demande d’activation du groupement](/help/stitching/use-stitching.md) (obsolète). Une fois approuvé, un jeu de données en double est créé pour le jeu de données pour lequel vous avez demandé un groupement. Ce jeu de données en double contient une colonne supplémentaire avec l’identifiant assemblé. Vous devez créer une connexion ou en modifier une existante qui inclut le jeu de données assemblé pour utiliser les données assemblées dans Customer Journey Analytics.
-- [Activer l’assemblage dans l’interface Connexions](/help/stitching/use-stitching-ui.md). Lorsque vous configurez le groupement pour un jeu de données dans l’interface Connexions, le groupement se produit « à la volée », lors de l’ingestion des données de ce jeu de données dans Customer Journey Analytics.
+- [Activer l’assemblage dans l’interface Connexions](/help/stitching/use-stitching-ui.md). Lorsque vous configurez le groupement pour un jeu de données dans l’interface Connexions, le groupement se produit à la volée, lors de l’ingestion des données de ce jeu de données dans Customer Journey Analytics.
 
 ## Limites
-
->[!IMPORTANT]
->
->
->- Appliquez également toute modification que vous apportez au schéma du jeu de données d’événement source au nouveau schéma du jeu de données groupé.
->
->- Si vous supprimez le jeu de données source, le jeu de données groupé cesse le traitement et est supprimé par le système.
->
->- Les libellés d’utilisation des données ne sont pas propagés automatiquement au schéma du jeu de données groupé. Si des libellés d’utilisation des données sont appliqués au schéma du jeu de données source, vous devez appliquer manuellement ces libellés d’utilisation des données au schéma du jeu de données groupé. Consultez [Gérer les libellés d’utilisation des données dans Experience Platform &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/data-governance/labels/overview) pour plus d’informations.
 
 L’analyse cross-canal est une fonctionnalité innovante et robuste, mais son utilisation a ses limites.
 
 - Seuls les jeux de données dʼévénement sont pris en charge. D’autres jeux de données, tels que les jeux de données de recherche, ne sont pas pris en charge.
 - Lʼanalyse cross-canal ne transforme pas le champ utilisé pour le groupement de quelque manière que ce soit. Le groupement basé sur les champs utilise la valeur du champ spécifié telle quʼelle existe dans le jeu de données non groupé au sein du lac de données.
-- Le processus de groupement respecte la casse. Par exemple, si le mot « Bob » apparaît dʼabord dans le champ et que le mot « BOB » apparaît ensuite, ces ID seront considérés comme deux personnes distinctes.
+- Le processus de groupement respecte la casse. Par exemple, les valeurs d’identité `Bob` et `BOB` sont traitées comme deux personnes distinctes.
 
 Veillez à ne pas confondre le groupement avec ce qui suit :
 

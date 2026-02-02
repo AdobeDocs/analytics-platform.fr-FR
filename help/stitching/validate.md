@@ -1,13 +1,13 @@
 ---
-title: Valider le groupement
-description: Validation du groupement
+title: Valider l’assemblage
+description: Découvrez comment valider le groupement.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: b9b73926-6502-4a48-ba73-c784f80950d3
-source-git-commit: 99b434e62d859c96bfda53731f3f8a0750850501
+source-git-commit: a94f3fe6821d96c76b759efa3e7eedc212252c5f
 workflow-type: tm+mt
-source-wordcount: '1191'
+source-wordcount: '1193'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Bien que ces méthodes d’analyse puissent être utilisées pour le groupement 
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Activation et validation du groupement](https://video.tv.adobe.com/v/3478122?captions=fre_fr&quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Activation et validation du groupement](https://video.tv.adobe.com/v/3478120?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 
@@ -55,7 +55,7 @@ En outre, vous devez ajouter deux mesures d’assemblage basées sur la présenc
    Dans l’exemple ci-dessous, `personalEmail.address` sert d’identité et est utilisé pour créer la mesure **[!UICONTROL _Email set]** .
    ![Mesure définie pour les e-mails](assets/emailset-metric.png)
 
-1. Utilisez `stitchedID.namespae.code` champ pour créer une dimension **[!UICONTROL Espace de noms d’e-mail assemblé]**. Veillez à spécifier les paramètres du composant [Inclure/Exclure les valeurs](/help/data-views/component-settings/include-exclude-values.md) afin de ne prendre en compte que les valeurs de l’espace de noms vers lequel vous essayez d’élever des lignes de données.
+1. Utilisez `stitchedID.namespae.code` champ pour créer une dimension **[!UICONTROL Espace de noms d’e-mail assemblé]**. Veillez à spécifier [Inclure/Exclure les valeurs dans les paramètres du composant](/help/data-views/component-settings/include-exclude-values.md) afin de ne prendre en compte que les valeurs de l’espace de noms vers lequel vous essayez d’élever des lignes de données.
    1. Sélectionnez **[!UICONTROL Définir les valeurs d’inclusion/exclusion]**.
    1. Sélectionnez **[!UICONTROL Si tous les critères sont remplis]** comme **[!UICONTROL Correspondance]**.
    1. Spécifiez **[!UICONTROL Est égal]** `email` comme **[!UICONTROL Critère]** pour sélectionner les événements qui ont été élevés dans l’espace de noms E-mail.

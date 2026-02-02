@@ -1,20 +1,20 @@
 ---
-title: Rapprochement basé sur les champs
-description: Explication du concept et du fonctionnement du groupement basé sur les champs
+title: Groupement basé sur les champs
+description: Explique le concept et le fonctionnement du groupement basé sur les champs.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: e5cb55e7-aed0-4598-a727-72e6488f5aa8
-source-git-commit: 90a285fcd96866974087c53d402e85b4a2d83ccf
+source-git-commit: a94f3fe6821d96c76b759efa3e7eedc212252c5f
 workflow-type: tm+mt
-source-wordcount: '1713'
+source-wordcount: '1711'
 ht-degree: 10%
 
 ---
 
-# Rapprochement basé sur les champs
+# Groupement basé sur les champs
 
-Dans l’assemblage basé sur les champs, vous spécifiez un jeu de données d’événement ainsi que l’identifiant persistant (cookie) et l’identifiant de personne pour ce jeu de données. Le groupement basé sur les champs ajoute une nouvelle colonne d’ID groupé au jeu de données d’événement et met à jour cet ID groupé en fonction des lignes qui possèdent un ID de personne pour cet ID persistant spécifique. <br/>Vous pouvez utiliser l’assemblage basé sur les champs lors de l’utilisation de Customer Journey Analytics en tant que solution autonome (vous n’avez pas accès au service d’identités Experience Platform et au graphique d’identités associé). Ou, lorsque vous ne souhaitez pas utiliser le graphique d’identité disponible.
+Dans le groupement basé sur les champs, vous spécifiez un jeu de données d’événement ainsi que l’identifiant persistant (cookie) et l’identifiant de personne pour ce jeu de données. Le groupement basé sur les champs ajoute une nouvelle colonne d’ID groupé au jeu de données d’événement et met à jour cet ID groupé en fonction des lignes qui possèdent un ID de personne pour cet ID persistant spécifique. <br/>Vous pouvez utiliser l’assemblage basé sur les champs lors de l’utilisation de Customer Journey Analytics en tant que solution autonome (vous n’avez pas accès au service d’identités Experience Platform et au graphique d’identités associé). Ou, lorsque vous ne souhaitez pas utiliser le graphique d’identité disponible.
 
 ![Rapprochement basé sur les champs](/help/stitching/assets/fbs.png)
 
@@ -24,7 +24,7 @@ Dans l’assemblage basé sur les champs, vous spécifiez un jeu de données d�
 L’assemblage basé sur les champs prend en charge l’utilisation du groupe de champs [`identityMap`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/schema/composition#identity) dans les scénarios suivants :
 
 - Utilisation de l’identité principale dans les espaces de noms d’`identityMap` pour définir l’ID persistant :
-   - Si plusieurs identités principales sont trouvées dans différents espaces de noms, les identités des espaces de noms sont triées par ordre lexigraphique et la première identité est sélectionnée.
+   - Si plusieurs identités principales sont trouvées dans différents espaces de noms, les identités des espaces de noms sont triées par ordre lexicographique et la première identité est sélectionnée.
    - Si plusieurs identités principales sont trouvées dans un seul espace de noms, la première identité principale disponible au niveau lexicographique est sélectionnée.
 
   Dans l’exemple ci-dessous, les espaces de noms et les identités génèrent une liste d’identités principales triées, et finalement l’identité sélectionnée.
@@ -94,7 +94,7 @@ L’assemblage effectue au moins deux passages aux données d’un jeu de donné
 
 - **Assemblage en direct** : tente d’assembler chaque accès (événement) au fur et à mesure qu’il arrive. Les accès des appareils qui sont *nouveaux* au jeu de données (ne se sont jamais authentifiés) ne sont généralement pas regroupés à ce niveau. Les accès provenant d’appareils déjà reconnus sont immédiatement regroupés.
 
-- **Groupement des relectures** : *relit* les données en fonction d’identifiants uniques (ID de personne). C’est à cette étape que les accès provenant d’appareils auparavant inconnus (identifiants persistants) sont regroupés (en identifiants de personne). La relecture est déterminée par deux paramètres : **fréquence** et **intervalle de recherche en amont**. Adobe propose les combinaisons de paramètres suivantes :
+- **Groupement des relectures** : *relit* les données en fonction d’identifiants uniques (ID de personne). C’est à cette étape que les accès provenant d’appareils auparavant inconnus (identifiants persistants) sont regroupés (en identifiants de personne). Deux paramètres déterminent la relecture : **fréquence** et **intervalle de recherche en amont**. Adobe propose les combinaisons de paramètres suivantes :
    - **Recherche en amont quotidienne à une fréquence quotidienne** : les données sont relues tous les jours avec un intervalle de recherche en amont de 24 heures. Cette option présente l’avantage que les relectures sont beaucoup plus fréquentes, mais les profils non authentifiés doivent s’authentifier le jour même de leur visite sur votre site.
    - **Recherche en amont hebdomadaire à une fréquence hebdomadaire** : les données sont relues une fois par semaine avec un intervalle de recherche en amont hebdomadaire (voir [options](#options)). Cette option présente un avantage qui permet aux sessions non authentifiées de disposer d’un temps d’authentification beaucoup moins stricte. Toutefois, les données désassemblées datant de moins d’une semaine ne sont pas retraitées avant la prochaine relecture hebdomadaire.
    - **Recherche en amont bihebdomadaire sur une fréquence hebdomadaire** : les données sont relues une fois par semaine avec un intervalle de recherche en amont bihebdomadaire (voir [options](#options)). Cette option présente un avantage qui permet aux sessions non authentifiées de disposer d’un temps d’authentification beaucoup moins stricte. Toutefois, les données désassemblées datant de moins de deux semaines ne sont pas retraitées avant la prochaine relecture hebdomadaire.
@@ -108,7 +108,7 @@ L’assemblage effectue au moins deux passages aux données d’un jeu de donné
   > 
 
 
-Les données au-delà de l’intervalle de recherche en amont ne sont pas relues. Un profil doit s’authentifier dans un intervalle de recherche en amont donné pour qu’une visite non authentifiée et une visite authentifiée soient identifiées ensemble. Une fois qu’un appareil est reconnu, il est assemblé en direct à partir de ce moment.
+Les données au-delà de l’intervalle de recherche en amont ne sont pas relues. Un profil doit être authentifié dans un intervalle de recherche en amont donné pour qu’une visite non authentifiée et une visite authentifiée soient identifiées ensemble. Une fois qu’un appareil est reconnu, il est assemblé en direct à partir de ce moment.
 
 ### Étape 1 : Assemblage dynamique
 
@@ -214,7 +214,7 @@ Les conditions préalables suivantes s’appliquent spécifiquement au groupemen
    - Un **ID de personne**, un identifiant disponible uniquement sur certaines lignes. Par exemple, un nom d’utilisateur ou une adresse e-mail haché une fois qu’un profil s’authentifie. Vous pouvez utiliser pratiquement n’importe quel identifiant de votre choix. Le groupement prend en compte ce champ pour contenir les informations de l’ID de personne réel. Pour de meilleurs résultats d’assemblage, un ID de personne doit être envoyé dans les événements du jeu de données au moins une fois pour chaque ID persistant. Si vous prévoyez d’inclure ce jeu de données dans une connexion Customer Journey Analytics, il est préférable que les autres jeux de données aient également un identifiant commun similaire.
 
 <!--
-- Both columns (persistent ID and person ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
+- Both columns (persistent ID and person ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
 
 -->
 
@@ -223,11 +223,11 @@ Les conditions préalables suivantes s’appliquent spécifiquement au groupemen
 Les restrictions suivantes s’appliquent spécifiquement au groupement basé sur les champs :
 
 - Les fonctionnalités de recomposition actuelles sont limitées à une seule étape (identifiant persistant en identifiant de personne). La recréation en plusieurs étapes (par exemple, l’ID persistant vers un ID de personne, puis vers un autre ID de personne) n’est pas prise en charge.
-- Si un appareil est partagé par plusieurs personnes et que le nombre total de transitions entre les utilisateurs dépasse 50 000, Customer Journey Analytics cesse d’assembler les données de cet appareil.
+- Si plusieurs personnes partagent un appareil et que le nombre total de transitions entre les utilisateurs dépasse 50 000, Customer Journey Analytics cesse d’assembler les données de cet appareil.
 - Les mappages d’identifiants personnalisés utilisés dans votre organisation ne sont pas pris en charge.
 - Le groupement est sensible à la casse. Pour les jeux de données générés par le biais du connecteur source Analytics, Adobe recommande de vérifier les règles VISTA ou les règles de traitement qui s’appliquent au champ d’ID de personne. Cette révision permet de s’assurer qu’aucune de ces règles n’introduit de nouvelles formes du même ID. Par exemple, vous devez vous assurer qu’aucune règle VISTA ou de traitement n’introduit de minuscules dans le champ d’ID de personne sur une partie seulement des événements.
 - L’assemblage ne combine ni ne concatène les champs.
 - Le champ ID de personne doit contenir un seul type d’ID (identifiants provenant d’un seul espace de noms). Par exemple, le champ ID de personne ne doit pas contenir de combinaison d’ID de connexion et d’ID d’e-mail.
 - Si plusieurs événements se produisent avec le même horodatage pour le même ID persistant, mais avec des valeurs différentes dans le champ ID de personne , l’assemblage sélectionne l’ID par ordre alphabétique. Ainsi, si l’ID persistant A comporte deux événements avec le même horodatage et que l’un des événements spécifie Bob et que l’autre spécifie Ann, l’assemblage sélectionne Ann.
 - Faites attention aux scénarios où les ID de personne contiennent des valeurs d’espace réservé, par exemple `Undefined`. Voir la [FAQ](faq.md) pour plus d’informations.
-- Vous ne pouvez pas utiliser le même espace de noms à la fois pour l’ID persistant et l’ID de personne. Les espaces de noms doivent s’exclure mutuellement.
+- Vous ne pouvez pas utiliser le même espace de noms pour l’ID persistant et l’ID de personne. Les espaces de noms doivent s’exclure mutuellement.
