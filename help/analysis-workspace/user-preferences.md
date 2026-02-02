@@ -5,10 +5,10 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 0a307bb43c780479df1cdc751fdadfc82f9dda55
+source-git-commit: bc708b34814550b89f6c9916d8bc48850008c1dc
 workflow-type: tm+mt
-source-wordcount: '4044'
-ht-degree: 99%
+source-wordcount: '4015'
+ht-degree: 100%
 
 ---
 
@@ -90,10 +90,12 @@ Vous pouvez personnaliser ces préférences pour tous les nouveaux projets Analy
 
 Certaines de ces préférences peuvent également être personnalisées pour des projets individuels dans Analysis Workspace, comme décrit dans la section [Vue d’ensemble des projets](/help/analysis-workspace/build-workspace-project/freeform-overview.md).
 
+<!--
 >[!IMPORTANT]
 >
->Vous ne pouvez plus définir le format des nombres dans la section **[!UICONTROL Projet et analyses]** > **[!UICONTROL Données]** des **[!UICONTROL Préférences utilisateur]**. Le format des nombres est automatiquement déterminé par la [langue par défaut configurée](https://experienceleague.adobe.com/fr/docs/core-services/interface/features/browser-language) pour l’utilisateur connecté.
+>You can no longer define the number format in the **[!UICONTROL Project & Analyses]** > **[!UICONTROL Data]** section of **[!UICONTROL User preferences]**. The number format is automatically determined by the [default language that is configured](https://experienceleague.adobe.com/en/docs/core-services/interface/features/browser-language) for the logged in user.
 >
+-->
 
 
 | Section | Préférence | Options |
@@ -106,6 +108,7 @@ Certaines de ces préférences peuvent également être personnalisées pour des
 |  | [Calendrier](/help/analysis-workspace/c-panels/panels.md#calendar) | Effectuez une sélection dans une liste de : <ul><li>Plages fournies par Adobe (par défaut, ce mois-ci)</li><li>Vous pouvez activer [!UICONTROL Rendre les composants de période liés par défaut au calendrier du panneau].</li></ul> |
 |  | [Type de panneau](/help/analysis-workspace/c-panels/panels.md#panel-types) | <ul><li>À structure libre (par défaut)</li><li>Vide</li><li>Quick Insights</li></ul> |
 |  | Comptage des instances | Activez [!UICONTROL Compter les instances répétées] pour déterminer si les instances répétées sont comptées dans les rapports. Par exemple, lorsque cette option est activée, plusieurs vues consécutives sur une même page sont traitées comme plusieurs vues de pages. Lorsque cette option est désactivée, plusieurs vues consécutives sur une même page sont comptabilisées comme une seule vue de page. <p>**Remarque :** ce paramètre affecte uniquement certaines mesures (telles que Sessions) et ne s’applique pas aux visualisations de flux ou d’abandons.</p> |
+|  | Format du nombre | <ul><li>1 000,00 (par défaut)</li><li>1.000,00</li><li>1 000,00</li></ul> |
 |  | Caractère séparateur CSV | <ul><li>Virgule (par défaut)</li><li>Point-virgule</li><li>Deux-points</li><li>Tube</li><li>Point</li><li>un espace</li><li>Tabulation</li></ul> |
 |  | Affichage des annotations | Indiquez si les annotations sont visibles dans les projets. Pour plus d’informations sur les annotations, consultez [Présentation des annotations](/help/components/annotations/overview.md). |
 
