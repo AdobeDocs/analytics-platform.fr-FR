@@ -19,7 +19,7 @@ Vous pouvez exporter des classeurs Customer Journey Analytics de Report Builder 
 
 [Les avantages de l’exportation des rapports de Report Builder vers le cloud](#advantages-of-exporting-to-the-cloud) incluent la possibilité d’utiliser des rapports dans des outils tiers ou de les combiner avec des données externes.
 
-Avant d’exporter des classeurs de Report Builder vers une destination cloud, assurez-vous que vos blocs de données, votre environnement et vos autorisations répondent aux [ exigences d’exportation ](#export-requirements).
+Avant d’exporter des classeurs de Report Builder vers une destination cloud, assurez-vous que vos blocs de données, votre environnement et vos autorisations répondent aux [&#x200B; exigences d’exportation &#x200B;](#export-requirements).
 
 ## Comprendre le processus d’exportation
 

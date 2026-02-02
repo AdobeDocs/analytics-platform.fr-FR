@@ -131,5 +131,5 @@ Pour annuler l’envoi du classeur, sélectionnez **[!UICONTROL Annuler]**.
 
 ## Gérer les classeurs planifiés
 
-Pour plus d’informations sur la gestion des classeurs déjà planifiés, voir [ Gérer les classeurs planifiés ](/help/report-builder/manage-schedules-reportbuilder.md).
+Pour plus d’informations sur la gestion des classeurs déjà planifiés, voir [&#x200B; Gérer les classeurs planifiés &#x200B;](/help/report-builder/manage-schedules-reportbuilder.md).
 
