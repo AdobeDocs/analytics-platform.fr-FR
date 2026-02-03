@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: e8cba64e706a456861fd8392ce9260b7a1c4636b
+source-git-commit: a2715ff9869796858dec16d3b8b422ef0c9325aa
 workflow-type: tm+mt
-source-wordcount: '2694'
-ht-degree: 100%
+source-wordcount: '2776'
+ht-degree: 97%
 
 ---
 
@@ -331,6 +331,18 @@ Vous pouvez toutefois modifier les pages et les ressources à inclure ou à excl
 * Pour modifier les pages à inclure ou à exclure lors de la collecte de données pour Content Analytics, sélectionnez ![Modifier](/help/assets/icons/Edit.svg) **[!UICONTROL Modifier]** sous **[!UICONTROL Expérience]**. Vous accédez à l’[extension Adobe Content Analytics](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) associée à la propriété Balises pour la configuration Content Analytics actuelle. Vous pouvez modifier l’expression régulière pour inclure ou exclure des pages. Veillez à [publier](#publish) vos modifications.
 
 * Pour modifier les ressources à inclure ou à exclure lors de la collecte de données pour Content Analytics, sélectionnez ![Modifier](/help/assets/icons/Edit.svg) **[!UICONTROL Modifier]** sous **[!UICONTROL Ressource]**. Ceci vous redirige vers l’[extension Adobe Content Analytics](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) associée à la propriété Balises pour la configuration Content Analytics actuelle. Vous pouvez modifier l’expression régulière pour inclure ou exclure des ressources. Veillez à [publier](#publish) vos modifications.
+
+
+### Remplacements d’en-têtes
+
+Vous pouvez éventuellement spécifier dans la section **[!UICONTROL Remplacements d’en-tête]** un nom d’en-tête et une valeur d’en-tête secrète.  Cette configuration de remplacement d’en-tête garantit que Content Analytics envoie des en-têtes HTTP personnalisés pour contourner les technologies de détection de robots ou de trafic de point de contrôle que vous avez implémentées.
+
+![Section remplacements de l’en-tête](/help/content-analytics/assets/aca-configuration-header-overrides.png)
+
+1. Activez **[!UICONTROL Configurer les remplacements d’en-tête]**.
+1. Saisissez le **[!UICONTROL Nom de l’en-tête]**. Par exemple : `x-asset-service`.
+1. Saisissez la **[!UICONTROL valeur d’en-tête]**. Tout ce que vous spécifiez est secret et non visible dans l’interface utilisateur (sauf si vous choisissez explicitement de divulguer ![Visibilité](/help/assets/icons/Visibility.svg) la valeur lors de la saisie).
+
 
 ### Résumé {#summary}
 
