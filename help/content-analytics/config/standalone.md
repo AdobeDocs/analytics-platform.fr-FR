@@ -172,7 +172,7 @@ Dans l’interface Autorisations , vous pouvez vérifier les rôles et les autor
 1. Dans l’écran de bienvenue, dans **[!UICONTROL Accès rapide]**, sélectionnez **[!UICONTROL Afficher tout]**.
 1. Activez l’épingle ![PinOn](/help/assets/icons/PinOn.svg) pour **[!UICONTROL Autorisations]** afin que **[!UICONTROL Autorisations]** soit disponible dans **[!UICONTROL Accès rapide]** pour une utilisation ultérieure.
 1. Sélectionnez **[!UICONTROL Autorisations]**.
-1. Sélectionnez ![ Utilisateur ](/help/assets/icons/User.svg) **[!UICONTROL Rôles]**.
+1. Sélectionnez ![&#x200B; Utilisateur &#x200B;](/help/assets/icons/User.svg) **[!UICONTROL Rôles]**.
 1. Sélectionnez le rôle spécifique à vérifier (par exemple, **[!UICONTROL Tous les accès de production par défaut]**). Sélectionnez **[!UICONTROL Afficher tout]** pour afficher toutes les autorisations.
 1. Dans l’écran **[!UICONTROL Détails]** :
    1. Vérifiez les **[!UICONTROL Ressources]** répertoriées dans **[!UICONTROL Autorisations]**.
@@ -182,7 +182,7 @@ Dans l’interface Autorisations , vous pouvez vérifier les rôles et les autor
    1. Pour ajouter une ressource manquante, sélectionnez **[!UICONTROL Nom de la ressource]** ![Ajouter](/help/assets/icons/Add.svg) dans le rail de gauche **[!UICONTROL Ressources]** > **[!UICONTROL Adobe Experience Platform]**.
    1. Pour ajouter une autorisation manquante, sélectionnez ![ChevronDown](/help/assets/icons/ChevronDown.svg) dans la ressource à laquelle il manque l’autorisation dans le panneau principal, puis sélectionnez l’autorisation manquante.
 
-      ![ Interface des autorisations ](/help/content-analytics/assets/aep-permissions-ui.png)
+      ![&#x200B; Interface des autorisations &#x200B;](/help/content-analytics/assets/aep-permissions-ui.png)
 
    Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer toute mise à jour.
 

@@ -39,7 +39,7 @@ Assurez-vous de répondre à toutes les exigences suivantes avant d’utiliser l
 
 - Une implémentation fonctionnelle qui collecte des données dans le lac de données d’Experience Platform.
 - Accès au module complémentaire Distiller de données pour vous assurer que vous êtes autorisé à exécuter des requêtes par lots. Voir [Package Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/packaging) pour plus d’informations.
-- Accès à la fonctionnalité Exporter les jeux de données , disponible lorsque vous avez acheté le package Real-Time CDP Prime ou Ultimate, Adobe Journey Optimizer ou Customer Journey Analytics. Consultez [ Exporter des jeux de données vers des destinations d’espace de stockage ](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/activate/export-datasets) pour plus d’informations.
+- Accès à la fonctionnalité Exporter les jeux de données , disponible lorsque vous avez acheté le package Real-Time CDP Prime ou Ultimate, Adobe Journey Optimizer ou Customer Journey Analytics. Consultez [&#x200B; Exporter des jeux de données vers des destinations d’espace de stockage &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/activate/export-datasets) pour plus d’informations.
 - Une ou plusieurs destinations configurées (par exemple : Amazon S3, Google Cloud Storage) vers lesquelles vous pouvez exporter les données brutes de votre flux de données.
 
 
@@ -60,9 +60,9 @@ Vous pouvez utiliser toutes les fonctionnalités du langage SQL ANSI standard po
 
 #### Colonnes de flux de données
 
-Les champs XDM que vous pouvez utiliser dans votre requête dépendent de la définition de schéma sur laquelle vos jeux de données sont basés. Assurez-vous de comprendre le schéma sous-jacent au jeu de données. Pour plus d’informations, consultez le [ Guide de l’interface utilisateur des jeux de données ](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide).
+Les champs XDM que vous pouvez utiliser dans votre requête dépendent de la définition de schéma sur laquelle vos jeux de données sont basés. Assurez-vous de comprendre le schéma sous-jacent au jeu de données. Pour plus d’informations, consultez le [&#x200B; Guide de l’interface utilisateur des jeux de données &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide).
 
-Pour vous aider à définir le mappage entre les colonnes des flux de données et les champs XDM, voir [Mappage des champs Analytics](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics). Consultez également la [ Présentation de l’interface utilisateur des schémas ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/overview#defining-xdm-fields) pour plus d’informations sur la gestion des ressources XDM, y compris les schémas, les classes, les groupes de champs et les types de données.
+Pour vous aider à définir le mappage entre les colonnes des flux de données et les champs XDM, voir [Mappage des champs Analytics](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics). Consultez également la [&#x200B; Présentation de l’interface utilisateur des schémas &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/overview#defining-xdm-fields) pour plus d’informations sur la gestion des ressources XDM, y compris les schémas, les classes, les groupes de champs et les types de données.
 
 Par exemple, si vous souhaitez utiliser *nom de page* dans le cadre de votre flux de données :
 
@@ -129,7 +129,7 @@ Pour rechercher des données à partir d’autres jeux de données, vous utilise
 
 #### Calculs
 
-Pour effectuer des calculs sur des champs (colonnes), utilisez les fonctions SQL standard (par exemple `COUNT(*)`) ou les [opérateurs et fonctions mathématiques et statistiques](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/spark-sql-functions#math) faisant partie de Spark SQL. En outre, les [ fonctions de fenêtre ](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/adobe-defined-functions#window-functions) prennent en charge la mise à jour des agrégations et le renvoi d’éléments uniques pour chaque ligne dans un sous-ensemble ordonné. Voir [Exemples](#examples) pour savoir comment utiliser ces fonctions.
+Pour effectuer des calculs sur des champs (colonnes), utilisez les fonctions SQL standard (par exemple `COUNT(*)`) ou les [opérateurs et fonctions mathématiques et statistiques](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/spark-sql-functions#math) faisant partie de Spark SQL. En outre, les [&#x200B; fonctions de fenêtre &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/adobe-defined-functions#window-functions) prennent en charge la mise à jour des agrégations et le renvoi d’éléments uniques pour chaque ligne dans un sous-ensemble ordonné. Voir [Exemples](#examples) pour savoir comment utiliser ces fonctions.
 
 #### Structure de données imbriquées
 
@@ -356,7 +356,7 @@ Veillez à définir le jeu de données de sortie dans le cadre de la propriété
 
 ## Exporter les jeux de données
 
-Une fois que vous avez créé et planifié votre requête, et vérifié les résultats, vous pouvez exporter les jeux de données bruts vers des destinations d’espace de stockage. Cette exportation figure dans la terminologie des destinations Experience Platform, appelée destinations d’exportation de jeu de données. Consultez [ Exporter des jeux de données vers des destinations d’espace de stockage ](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/activate/export-datasets) pour une présentation.
+Une fois que vous avez créé et planifié votre requête, et vérifié les résultats, vous pouvez exporter les jeux de données bruts vers des destinations d’espace de stockage. Cette exportation figure dans la terminologie des destinations Experience Platform, appelée destinations d’exportation de jeu de données. Consultez [&#x200B; Exporter des jeux de données vers des destinations d’espace de stockage &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/activate/export-datasets) pour une présentation.
 
 Les destinations suivantes de stockage dans le cloud sont prises en charge :
 
