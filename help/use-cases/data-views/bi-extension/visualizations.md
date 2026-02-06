@@ -4,7 +4,8 @@ description: Cas d’utilisation des visualisations pour l’extension BI dans d
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: cb0102923f10f39becd40cc4187d2e11fb8c4e2f
+exl-id: a357facb-d536-4c81-847c-a6f0d3f041e7
+source-git-commit: 20ead546897ad517840f95a5ec4dcd7f830afe8c
 workflow-type: tm+mt
 source-wordcount: '789'
 ht-degree: 25%
@@ -47,7 +48,7 @@ Pour la plupart des visualisations Customer Journey Analytics, Power BI Desktop 
 | ![GraphHistogram](/help/assets/icons/Histogram.svg) | [Histogramme](/help/analysis-workspace/visualizations/histogram.md) |  |
 | ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) | [Barre horizontale](/help/analysis-workspace/visualizations/horizontal-bar.md) | [Graphique à barres groupées](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#bar-and-column-charts) |
 | ![GraphBarHorizontalStacked](/help/assets/icons/GraphBarHorizontalStacked.svg) | [Barres empilées horizontales](/help/analysis-workspace/visualizations/horizontal-bar.md) | [Graphique à barres empilées et Graphique à barres empilées 100 %](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#bar-and-column-charts) |
-| ![Branch3](/help/assets/icons/Branch3.svg) | [Zone de travail de parcours](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) | [&#x200B; Arborescence de décomposition &#x200B;](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#decomposition-tree) |
+| ![Branch3](/help/assets/icons/Branch3.svg) | [Zone de travail de parcours](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) | [ Arborescence de décomposition ](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#decomposition-tree) |
 | ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) | [Résumé des mesures clés](/help/analysis-workspace/visualizations/key-metric.md) |  |
 | ![GraphTrend](/help/assets/icons/GraphTrend.svg) | [Ligne](/help/analysis-workspace/visualizations/line.md) | [Graphique linéaire](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#line-charts) |
 | ![Nuage de points](/help/assets/icons/GraphScatter.svg) | [Dispersion](/help/analysis-workspace/visualizations/scatterplot.md) | [Graphique de dispersion](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#scatter) |
@@ -189,7 +190,7 @@ Pour la plupart des visualisations Customer Journey Analytics, Looker offre des 
 | ![Combo](/help/assets/icons/ComboChart.svg) | [Combo](/help/analysis-workspace/visualizations/combo-charts.md) | [Personnalisation des visualisations](https://cloud.google.com/looker/docs/creating-visualizations#customizing_visualizations_with_chart_settings) |
 | ![Graphique à anneaux](/help/assets/icons/GraphDonut.svg) | [Anneau](/help/analysis-workspace/visualizations/donut.md) | [Anneau](https://cloud.google.com/looker/docs/donut-multiples-options) |
 | ![Entonnoir de conversion](/help/assets/icons/ConversionFunnel.svg) | [Abandon](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | [Entonnoir](https://cloud.google.com/looker/docs/funnel-options) |
-| ![GraphPathing](/help/assets/icons/GraphPathing.svg) | [Flux](/help/analysis-workspace/visualizations/c-flow/flow.md) | [&#x200B; Sankey &#x200B;](https://cloud.google.com/looker/docs/sankey) |
+| ![GraphPathing](/help/assets/icons/GraphPathing.svg) | [Flux](/help/analysis-workspace/visualizations/c-flow/flow.md) | [ Sankey ](https://cloud.google.com/looker/docs/sankey) |
 | ![ViewTable](/help/assets/icons/ViewTable.svg)</p> | [Tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | [Tableau](https://cloud.google.com/looker/docs/table-options) |
 | ![GraphHistogram](/help/assets/icons/Histogram.svg) | [Histogramme](/help/analysis-workspace/visualizations/histogram.md) | |
 | ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) | [Barre horizontale](/help/analysis-workspace/visualizations/horizontal-bar.md) | [Graphique à barres](https://cloud.google.com/looker/docs/bar-options) |
@@ -203,7 +204,7 @@ Pour la plupart des visualisations Customer Journey Analytics, Looker offre des 
 | ![123](/help/assets/icons/123.svg)</p> | [Numéro de résumé](/help/analysis-workspace/visualizations/summary-number-change.md) | [Valeur unique](https://cloud.google.com/looker/docs/single-value-options) |
 | ![Texte](/help/assets/icons/Text.svg) | [Texte](/help/analysis-workspace/visualizations/text.md) | [Valeur unique](https://cloud.google.com/looker/docs/single-value-options) |
 | ![ModernGridView](/help/assets/icons/ModernGridView.svg) | [Plan en arborescence](/help/analysis-workspace/visualizations/treemap.md) | [Plan en arborescence](https://cloud.google.com/looker/docs/treemap) |
-| ![Type](/help/assets/icons/TwoDots.svg) | [&#x200B; Diagramme de Venn &#x200B;](/help/analysis-workspace/visualizations/venn.md) | [&#x200B; Diagramme de Venn &#x200B;](https://cloud.google.com/looker/docs/venn) |
+| ![Type](/help/assets/icons/TwoDots.svg) | [ Diagramme de Venn ](/help/analysis-workspace/visualizations/venn.md) | [ Diagramme de Venn ](https://cloud.google.com/looker/docs/venn) |
 
 >[!TAB Notebook Jupyter]
 
@@ -216,3 +217,4 @@ La comparaison des fonctionnalités de visualisation de **ggplot2**, le package 
 
 >[!ENDTABS]
 
++++
