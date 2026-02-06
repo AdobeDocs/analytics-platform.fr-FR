@@ -5,16 +5,20 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: e5cb55e7-aed0-4598-a727-72e6488f5aa8
-source-git-commit: a94f3fe6821d96c76b759efa3e7eedc212252c5f
+source-git-commit: b5afcfe2cac8aa12d7f4d0cf98658149707123e3
 workflow-type: tm+mt
-source-wordcount: '1711'
-ht-degree: 10%
+source-wordcount: '1797'
+ht-degree: 9%
 
 ---
 
 # Groupement basé sur les champs
 
-Dans le groupement basé sur les champs, vous spécifiez un jeu de données d’événement ainsi que l’identifiant persistant (cookie) et l’identifiant de personne pour ce jeu de données. Le groupement basé sur les champs ajoute une nouvelle colonne d’ID groupé au jeu de données d’événement et met à jour cet ID groupé en fonction des lignes qui possèdent un ID de personne pour cet ID persistant spécifique. <br/>Vous pouvez utiliser l’assemblage basé sur les champs lors de l’utilisation de Customer Journey Analytics en tant que solution autonome (vous n’avez pas accès au service d’identités Experience Platform et au graphique d’identités associé). Ou, lorsque vous ne souhaitez pas utiliser le graphique d’identité disponible.
+Dans le groupement basé sur les champs, vous spécifiez un jeu de données d’événement ainsi que l’identifiant persistant (cookie) et l’identifiant de personne pour ce jeu de données. L’assemblage basé sur les champs tente de rendre les informations de l’ID de personne disponibles pour l’analyse des données Customer Journey Analytics, pour tout événement anonyme provenant d’un ID persistant spécifique.  Ces informations sont récupérées à partir des lignes qui possèdent un ID de personne pour cet ID persistant spécifique.
+
+Si les informations de l’ID de personne ne peuvent pas être récupérées pour un événement, l’ID persistant est utilisé à la place pour cet événement *désassemblé*. Par conséquent, dans une [vue de données](/help/data-views/data-views.md) associée à une [connexion](/help/connections/overview.md) qui contient le jeu de données activé pour le groupement, le composant ID de personne contient soit la valeur de l’ID de personne, soit la valeur de l’ID persistant au niveau de l’événement.
+
+Vous pouvez utiliser l’assemblage basé sur les champs lors de l’utilisation de Customer Journey Analytics en tant que solution autonome (vous n’avez pas accès au service d’identités d’Experience Platform et au graphique d’identités associé). Ou, lorsque vous ne souhaitez pas utiliser le graphique d’identité disponible.
 
 ![Rapprochement basé sur les champs](/help/stitching/assets/fbs.png)
 
@@ -120,7 +124,7 @@ Prenons l’exemple suivant, où Robert enregistre différents événements dans
 
 *Données telles qu’elles s’affichaient le jour de leur collecte :*
 
-| Événement | Date et heure | ID persistant (ID de cookie) | ID de personne | ID groupé (après le groupement dynamique) |
+| Événement | Date et heure | ID persistant (ID de cookie) | ID de personne | ID résultant (après assemblage dynamique) |
 |---|---|---|---|---|
 | 1 | 12/05/2023 12:01 | `246` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | - | **`246`** |
 | 2 | 12/05/2023 12:02 | `246` | `Bob` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` |
@@ -138,7 +142,7 @@ Prenons l’exemple suivant, où Robert enregistre différents événements dans
 
 Les accès authentifiés et non authentifiés sur les nouveaux appareils sont (temporairement) comptabilisés comme des personnes distinctes. Les événements non authentifiés sur les appareils reconnus sont assemblés en direct.
 
-L’attribution fonctionne lorsque la variable personnalisée d’identification est liée à un appareil. Dans l’exemple ci-dessus, tous les événements, à l’exception des événements 1, 8, 9 et 10, sont assemblés en direct (ils utilisent tous l’identifiant `Bob`). L’assemblage en direct « résout » l’identifiant assemblé pour les événements 4, 6 et 12.
+L’attribution fonctionne lorsque la variable personnalisée d’identification est liée à un appareil. Dans l’exemple ci-dessus, tous les événements, à l’exception des événements 1, 8, 9 et 10, sont assemblés en direct (ils utilisent tous l’identifiant `Bob`). L’assemblage en direct « résout » l’identifiant obtenu pour les événements 4, 6 et 12.
 
 Les données différées (données dont l’horodatage date de plus de 24 heures) sont traitées selon le principe du « meilleur effort », tout en donnant la priorité à l’assemblage des données actuelles pour une qualité maximale.
 
@@ -154,7 +158,7 @@ Le tableau suivant représente les mêmes données que ci-dessus, mais affiche d
 
 *Les mêmes données après relecture :*
 
-| Événement | Date et heure | ID persistant (ID de cookie) | ID de personne | ID groupé (après le groupement dynamique) | ID groupé (après relecture) |
+| Événement | Date et heure | ID persistant (ID de cookie) | ID de personne | ID résultant (après assemblage dynamique) | Identifiant obtenu (après relecture) |
 |---|---|---|---|---|---|
 | 1 | 12/05/2023 12:01 | `246` | - | `246` | **`Bob`** |
 | 2 | 12/05/2023 12:02 | `246` | `Bob` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` | `Bob` ![ArrowUp](/help/assets/icons/ArrowUp.svg) |
@@ -178,7 +182,7 @@ L’attribution fonctionne lorsque la variable personnalisée d’identification
 
 ### Étape 3 : demande d&#39;accès à des informations personnelles
 
-Lorsque vous recevez une demande d’accès à des informations personnelles, l’ID regroupé est supprimé dans tous les enregistrements pour l’utilisateur faisant l’objet de la demande d’accès à des informations personnelles.
+Lorsque vous recevez une demande d’accès à des informations personnelles, toute information d’identifiant définie par le processus de groupement sur la valeur d’ID de personne est mise à jour dans tous les enregistrements vers une valeur d’ID persistant pour l’utilisateur faisant l’objet de la demande d’accès à des informations personnelles.
 
 +++ Détails
 
@@ -186,7 +190,7 @@ Le tableau suivant représente les mêmes données que ci-dessus, mais montre l�
 
 *Les mêmes données après une demande d’accès à des informations personnelles pour Bob :*
 
-| Événement | Date et heure | ID persistant (ID de cookie) | ID de personne | ID groupé (après le groupement dynamique) | ID groupé (après relecture) | ID de personne | ID groupé (après demande d’accès à des informations personnelles) |
+| Événement | Date et heure | ID persistant (ID de cookie) | ID de personne | ID résultant (après assemblage dynamique) | Identifiant obtenu (après relecture) | ID de personne | Identifiant obtenu (après demande d’accès à des informations personnelles) |
 |---|---|---|---|---|---|---|---|
 | 1 | 12/05/2023 12:01 | `246` | - | `246` | **`Bob`** | - | `246` |
 | 2 | 12/05/2023 12:02 | `246` | Bob ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` | `Bob` ![Flèche vers le haut](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) | `246` |
@@ -214,7 +218,7 @@ Les conditions préalables suivantes s’appliquent spécifiquement au groupemen
    - Un **ID de personne**, un identifiant disponible uniquement sur certaines lignes. Par exemple, un nom d’utilisateur ou une adresse e-mail haché une fois qu’un profil s’authentifie. Vous pouvez utiliser pratiquement n’importe quel identifiant de votre choix. Le groupement prend en compte ce champ pour contenir les informations de l’ID de personne réel. Pour de meilleurs résultats d’assemblage, un ID de personne doit être envoyé dans les événements du jeu de données au moins une fois pour chaque ID persistant. Si vous prévoyez d’inclure ce jeu de données dans une connexion Customer Journey Analytics, il est préférable que les autres jeux de données aient également un identifiant commun similaire.
 
 <!--
-- Both columns (persistent ID and person ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
+- Both columns (persistent ID and person ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
 
 -->
 

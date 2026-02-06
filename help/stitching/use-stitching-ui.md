@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
-source-git-commit: cbb18e9d0990d5df64995c2dabe8362c7c37bb45
+source-git-commit: d1ba2d203738ca9bf74d17bb93712eff26f88f25
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '962'
 ht-degree: 5%
 
 ---
@@ -58,7 +58,7 @@ Si vous remplissez les conditions préalables, vous pouvez effectuer des contrô
 
 
    * **ID de personne**
-      * Pour le groupement basé sur les graphiques, assurez-vous que le graphique d’identités contient des fragments qui lient les valeurs d’identifiant de l’espace de noms d’identifiant persistant et de l’espace de noms d’identifiant de personne de votre choix. Vous pouvez exécuter un test en accédant à la visionneuse de graphiques d’identité [d’Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} et interroger le graphique à l’aide de certaines valeurs d’identifiant persistant de test. Vérifiez si ces valeurs d’ID persistantes sont liées aux valeurs d’ID de personne dans le graphique.
+      * Pour le groupement basé sur les graphiques, assurez-vous que le graphique d’identités contient des fragments qui lient les valeurs d’identifiant de l’espace de noms d’identifiant persistant et de l’espace de noms d’identifiant de personne de votre choix. Vous pouvez exécuter un test en accédant à la visionneuse de graphiques d’identité [d’Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} et interroger le graphique à l’aide de certaines valeurs d’identifiant persistant de test. Vérifiez si ces valeurs d’ID persistantes sont liées aux valeurs d’ID de personne dans le graphique.
       * Pour le groupement basé sur les champs, interrogez 7 jours de données lorsque le champ de votre ID de personne n’est pas nul et divisez par une interrogation de 7 jours de données pour tous les événements de votre jeu de données. Ce pourcentage devrait idéalement être supérieur à 5 %.
 
         Exemple de requête à utiliser pour la vérification :
@@ -91,7 +91,12 @@ Si vous remplissez les conditions préalables, vous pouvez effectuer des contrô
 >id="connection_changeto_identitygraph"
 >title="Modification du graphique d’identité"
 >abstract="Assurez-vous d’avoir terminé la configuration du graphique d’identité avant d’utiliser le graphique d’identité pour l’assemblage."
->additional-url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/stitching/gbs" text="Rapprochement basé sur les graphiques"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/gbs" text="Rapprochement basé sur les graphiques"
+
+>[!CONTEXTUALHELP]
+>id="connection_stitching_personid"
+>title="ID de personne"
+>abstract="Sélectionnez un ID de personne (l’identifiant unique d’une personne) parmi les identités disponibles. Si vous souhaitez utiliser le groupement basé sur les graphiques, sélectionnez **[!UICONTROL Graphique d’identités]**."
 
 Pour activer le groupement, dans la section Jeu de données d’événement de la boîte de dialogue **[!UICONTROL Ajouter des jeux de données]** ou **[!UICONTROL Modifier le jeu de données]** :
 
@@ -136,7 +141,7 @@ Une fois que vous avez enregistré une connexion, le processus de groupement des
 
 >[!CAUTION]
 >
->Pour les jeux de données activés pour le groupement dans l’interface Connexions, le statut de renvoi est immédiatement et incorrectement signalé comme ![Statut vert](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _renvois terminés]**&#x200B;pour le nombre de renvois terminés. Utilisez d’autres méthodes pour vérifier si les données du jeu de données groupé sont renvoyées.
+>Pour les jeux de données activés pour le groupement dans l’interface Connexions, le statut de renvoi est immédiatement et incorrectement signalé comme ![Statut vert](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _renvois terminés]**pour le nombre de renvois terminés. Utilisez d’autres méthodes pour vérifier si les données du jeu de données groupé sont renvoyées.
 >
 
 

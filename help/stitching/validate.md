@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: b9b73926-6502-4a48-ba73-c784f80950d3
-source-git-commit: a94f3fe6821d96c76b759efa3e7eedc212252c5f
+source-git-commit: d1ba2d203738ca9bf74d17bb93712eff26f88f25
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1241'
 ht-degree: 0%
 
 ---
@@ -33,9 +33,15 @@ Bien que ces méthodes d’analyse puissent être utilisées pour le groupement 
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Activation et validation du groupement](https://video.tv.adobe.com/v/3478122?captions=fre_fr&quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Activation et validation du groupement](https://video.tv.adobe.com/v/3478120?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
+
+>[!IMPORTANT]
+>
+>Cet article décrit comment valider le groupement de données [demandé via Adobe](/help/stitching/use-stitching.md) et implémenté à l’aide d’une colonne d’identité groupée ajoutée à un jeu de données groupé en double. Il est prévu que l’article soit bientôt mis à jour avec des détails sur la validation du groupement [activé via l’interface utilisateur de connexions](/help/stitching/use-stitching-ui.md).
+
+
 
 ## Conditions préalables relatives aux vues de données
 

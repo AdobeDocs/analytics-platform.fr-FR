@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 9bebfaf7e10762bc7382d8b0d55148ee23698dd9
+source-git-commit: d1ba2d203738ca9bf74d17bb93712eff26f88f25
 workflow-type: tm+mt
-source-wordcount: '965'
-ht-degree: 60%
+source-wordcount: '982'
+ht-degree: 54%
 
 ---
 
@@ -24,7 +24,7 @@ Lorsque vous combinez des jeux de données avec des identifiants de personne sim
 
 Malheureusement, tous les jeux de données basés sur un événement qui font partie de votre connexion dans Customer Journey Analytics ne sont pas suffisamment alimentées en données pour prendre en charge cette attribution dès le départ. En particulier, les jeux de données d’expérience web ou mobiles ne disposent souvent pas d’informations d’ID de personne pour tous les événements.
 
-L’assemblage des clés d’identité dans les lignes d’un jeu de données pour s’assurer que l’ID de personne (ID assemblé) est disponible sur chaque événement. Le rapprochement examine les données utilisateur des sessions authentifiées et non authentifiées afin de déterminer la valeur de l’ID de personne commun qui peut être utilisée en tant qu’ID rapproché. Cette recomposition résout les enregistrements disparates en un seul identifiant assemblé pour une analyse au niveau de la personne, plutôt qu’au niveau de l’appareil ou du cookie.
+L’assemblage de nouvelles clés des identités dans les lignes d’un jeu de données pour s’assurer que les informations de l’ID de personne souhaité sont disponibles sur le plus grand nombre possible d’événements. L’assemblage examine les données utilisateur des sessions authentifiées et non authentifiées afin de déterminer la valeur d’ID de personne commune qui peut être utilisée. Cette nouvelle génération de clés résout les enregistrements disparates en un seul ID de personne pour une analyse au niveau de la personne, plutôt qu’au niveau de l’appareil ou du cookie. Cependant, si une valeur d’ID de personne commune ne peut pas être déterminée, la valeur d’ID persistante est utilisée à la place.
 
 Customer Journey Analytics prend en charge deux types de groupement : le [groupement basé sur les champs](fbs.md) et le [groupement basé sur les graphes](gbs.md).
 
@@ -43,10 +43,9 @@ Avant d’utiliser le groupement, veillez à ce que votre organisation dispose d
    - Pour les données Adobe Analytics, consultez [Utiliser les données de suite de rapports Adobe Analytics dans Customer Journey Analytics](/help/getting-started/aa-vs-cja/aa-data-in-cja.md).
    - Pour d’autres types de données, consultez [Créer un schéma](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/tutorials/create-schema-ui) et [Ingérer des données](https://experienceleague.adobe.com/fr/docs/experience-platform/ingestion/home) dans la documentation d’Adobe Experience Platform.
 
-L’analyse cross-canal vous est utile si vous combinez un ou plusieurs des jeux de données groupés avec d’autres jeux de données, tels que les données de centre d’appel, dans le cadre de la définition de votre connexion Customer Journey Analytics. Cette configuration de connexion suppose que ces autres jeux de données contiennent déjà un ID de personne sur chaque ligne, similaire à l’ID groupé.
+L’analyse cross-canal vous est utile si vous combinez un ou plusieurs des jeux de données groupés avec d’autres jeux de données, tels que les données de centre d’appel, dans le cadre de la définition de votre connexion Customer Journey Analytics. Cette configuration de connexion suppose que ces autres jeux de données contiennent déjà un ID de personne provenant du même espace de noms sur le plus grand nombre possible de lignes.
 
 Une fois que votre organisation répond aux [conditions préalables](overview.md#prerequisites) génériques, comprend les [limitations](overview.md#limitations) courantes, ainsi que les conditions préalables et les limites spécifiques aux méthodes de groupement ([basées sur les champs](fbs.md) et [basées sur les graphiques](gbs.md)), vous pouvez suivre les étapes suivantes pour demander et commencer à utiliser le groupement dans Customer Journey Analytics.
-
 
 ## Limites
 
@@ -65,7 +64,7 @@ Veillez à ne pas confondre le groupement avec ce qui suit :
 
 ## Options
 
-Le package Customer Journey Analytics auquel vous avez droit détermine les méthodes de groupement disponibles, les options relatives à la durée de renvoi initiale, l’intervalle de recherche en amont, la fréquence de relecture et le nombre maximal de jeux de données autorisés pour le groupement. Voir la description du produit [Customer Journey Analytics](https://helpx.adobe.com/fr/legal/product-descriptions/customer-journey-analytics.html?lang=fr) pour plus d’informations. Déterminez les options disponibles avant d’activer le groupement.
+Le package Customer Journey Analytics auquel vous avez droit détermine les méthodes de groupement disponibles, les options relatives à la durée de renvoi initiale, l’intervalle de recherche en amont, la fréquence de relecture et le nombre maximal de jeux de données autorisés pour le groupement. Voir la description du produit [Customer Journey Analytics](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html?lang=fr) pour plus d’informations. Déterminez les options disponibles avant d’activer le groupement.
 
 | | Customer Journey Analytics<br/>Select | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>Ultimate |
 |---|---|---|---|

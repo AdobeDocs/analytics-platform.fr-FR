@@ -5,16 +5,18 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: ea5c9114-1fc3-4686-b184-2850acb42b5c
-source-git-commit: a94f3fe6821d96c76b759efa3e7eedc212252c5f
+source-git-commit: b5afcfe2cac8aa12d7f4d0cf98658149707123e3
 workflow-type: tm+mt
-source-wordcount: '1685'
-ht-degree: 5%
+source-wordcount: '1741'
+ht-degree: 4%
 
 ---
 
 # Rapprochement basé sur les graphiques
 
-Dans le groupement basé sur les graphiques, vous spécifiez un jeu de données d’événement. Et pour ce jeu de données d’événement, vous spécifiez l’identifiant persistant (cookie) et l’espace de noms d’assemblage souhaité à partir du graphique d’identité contenant les valeurs d’identifiant de personne. Le groupement basé sur les graphiques ajoute une nouvelle colonne pour l’ID groupé au jeu de données d’événement. L’ID persistant est utilisé pour interroger le graphique d’identités à partir du service d’identités Experience Platform, à l’aide de l’espace de noms d’assemblage spécifié, afin de mettre à jour l’ID assemblé.
+Dans le groupement basé sur les graphiques, vous spécifiez un jeu de données d’événement, l’identifiant persistant (cookie) de ce jeu de données et l’espace de noms d’identifiant de personne souhaité à partir du graphique d’identité. Le groupement basé sur les graphiques tente de rendre les informations d’ID de personne disponibles pour l’analyse des données Customer Journey Analytics sur n’importe quel événement. L’ID persistant est utilisé pour interroger le graphique d’identité à partir d’Experience Platform Identity Service afin d’obtenir l’ID de personne à partir de l’espace de noms spécifié.
+
+Si les informations de l’ID de personne ne peuvent pas être récupérées pour un événement, l’ID persistant est utilisé à la place pour cet événement *désassemblé*. Par conséquent, dans une [vue de données](/help/data-views/data-views.md) associée à une [connexion](/help/connections/overview.md) qui contient le jeu de données activé pour le groupement, le composant de vue de données ID de personne contient la valeur de l’ID de personne ou la valeur de l’ID persistant au niveau de l’événement.
 
 
 ![Assemblage basé sur les graphiques](/help/stitching/assets/gbs.png)
@@ -112,7 +114,7 @@ Tenez compte des deux mises à jour du graphique d’identités suivantes au fil
 
 ![Graphique d’identités 3579](assets/identity-graphs.svg)
 
-Vous pouvez afficher un graphique d’identités au fil du temps pour un profil spécifique à l’aide de la [visionneuse de graphiques d’identités](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/features/identity-graph-viewer). Consultez également la section [Logique de liaison du service d’identités](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/features/identity-linking-logic) pour mieux comprendre la logique utilisée lors de la liaison d’identités.
+Vous pouvez afficher un graphique d’identités au fil du temps pour un profil spécifique à l’aide de la [visionneuse de graphiques d’identités](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-viewer). Consultez également la section [Logique de liaison du service d’identités](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-linking-logic) pour mieux comprendre la logique utilisée lors de la liaison d’identités.
 
 ### Étape 1 : Assemblage dynamique
 
@@ -120,7 +122,7 @@ L’assemblage en direct tente d’assembler chaque événement, lors de la coll
 
 +++ Détails
 
-| | Heure | ID persistant <br/>`ECID` | Espace de noms <br/>`Email` ![DataMapping](/help/assets/icons/DataMapping.svg) | ID groupé (après le groupement dynamique) |
+| | Heure | ID persistant <br/>`ECID` | Espace de noms <br/>`Email` ![DataMapping](/help/assets/icons/DataMapping.svg) | ID résultant (après assemblage dynamique) |
 |--:|---|---|---|---|
 | 1 | 12/05/2023 11:00 | `246` | `246` ![Branche1](/help/assets/icons/Branch1.svg) *non défini* | `246` |
 | 2 | 12/05/2023 14:00 | `246` | `246` ![Branche1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` |
@@ -132,8 +134,8 @@ L’assemblage en direct tente d’assembler chaque événement, lors de la coll
 
 {style="table-layout:auto"}
 
-Vous pouvez voir comment l’identifiant assemblé est résolu pour chaque événement. En fonction de la durée, de l’identifiant persistant et de la recherche du graphique d’identité pour l’espace de noms spécifié (au même moment).
-Lorsque la recherche est résolue sur plusieurs identifiants assemblés (comme pour l’événement 7), le premier identifiant lexicographique renvoyé par le graphique d’identité est sélectionné (`a.b@yahoo.co.uk` dans l’exemple).
+Vous pouvez voir comment l’identifiant obtenu est résolu pour chaque événement. Selon la durée, l’identifiant persistant et la recherche du graphique d’identité pour l’espace de noms d’ID de personne spécifié.
+Lorsque la recherche est résolue sur plusieurs identifiants résultants (comme pour l’événement 7), le premier identifiant lexicographique renvoyé par le graphique d’identité est sélectionné (`a.b@yahoo.co.uk` dans l’exemple).
 
 +++
 
@@ -145,7 +147,7 @@ Lorsque la recherche est résolue sur plusieurs identifiants assemblés (comme p
 
 Avec un groupement de relecture se produisant au 13/05/2023 16:30, avec une configuration d’intervalle de recherche en amont de 24 heures, certains événements de l’exemple sont regroupés à nouveau (indiqué par ![Relecture](/help/assets/icons/Replay.svg)).
 
-| | Heure | ID persistant <br/>`ECID` | Espace de noms <br/>`Email` ![DataMapping](/help/assets/icons/DataMapping.svg) | ID groupé <br/>(après le groupement dynamique) | ID groupé <br/>(après relecture de 24 heures) |
+| | Heure | ID persistant <br/>`ECID` | Espace de noms <br/>`Email` ![DataMapping](/help/assets/icons/DataMapping.svg) | ID résultant <br/>(après assemblage dynamique) | ID résultant <br/>(après relecture 24 heures) |
 |---|---|---|---|---|---|
 | 2 | 12/05/2023 14:00 | `246` | `246` ![Branche1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `bob.a@gmail.com` |
 | 3 | 12/05/2023 15:00 | `246` | `246` ![Branche1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `bob.a@gmail.com` |
@@ -160,7 +162,7 @@ Avec un groupement de relecture se produisant au 13/05/2023 16:30, avec une conf
 Avec le groupement de relecture qui se produit au 13/05/2023 16:30, avec une configuration d’intervalle de recherche en amont de 7 jours, tous les événements de l’exemple sont regroupés à nouveau.
 
 
-| | Heure | ID persistant <br/>`ECID` | Espace de noms <br/>`Email` ![DataMapping](/help/assets/icons/DataMapping.svg) | ID groupé <br/>(après le groupement dynamique) | ID groupé <br/>(après relecture 7 jours) |
+| | Heure | ID persistant <br/>`ECID` | Espace de noms <br/>`Email` ![DataMapping](/help/assets/icons/DataMapping.svg) | ID résultant <br/>(après assemblage dynamique) | ID résultant <br/>(après relecture 7 jours) |
 |---|---|---|---|---|---|
 | ![Relire](/help/assets/icons/Replay.svg) 1 | 12/05/2023 11:00 | `246` | `246` ![Branche1](/help/assets/icons/Branch1.svg) *non défini* | `246` | `a.b@yahoo.co.uk` |
 | ![Relire](/help/assets/icons/Replay.svg) 2 | 12/05/2023 14:00 | `246` | `246` ![Branche1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
@@ -176,13 +178,13 @@ Avec le groupement de relecture qui se produit au 13/05/2023 16:30, avec une con
 
 ### Étape 3 : demande d&#39;accès à des informations personnelles
 
-Lorsque vous recevez une demande d’accès à des informations personnelles, l’ID regroupé est supprimé dans tous les enregistrements pour l’utilisateur faisant l’objet de la demande d’accès à des informations personnelles.
+Lorsque vous recevez une demande d’accès à des informations personnelles, l’ID obtenu est supprimé dans tous les enregistrements pour l’utilisateur faisant l’objet de la demande d’accès à des informations personnelles.
 
 +++ Détails
 
 Le tableau suivant représente les mêmes données que ci-dessus, mais montre l’effet qu’une demande d’accès à des informations personnelles (par exemple, au 2023-05-13 18:00) a sur les exemples d’événements.
 
-| | Heure | ID persistant <br/>`ECID` | Espace de noms <br/>`Email` ![DataMapping](/help/assets/icons/DataMapping.svg) | ID groupé (après demande d’accès à des informations personnelles) |
+| | Heure | ID persistant <br/>`ECID` | Espace de noms <br/>`Email` ![DataMapping](/help/assets/icons/DataMapping.svg) | Identifiant obtenu (après demande d’accès à des informations personnelles) |
 |--:|---|---|---|---|
 | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) 1 | 12/05/2023 11:00 | `246` | `246` ![Branche1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk` | `246` |
 | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) 2 | 12/05/2023 14:00 | `246` | `246`![Branche1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk` | `246` |
@@ -204,10 +206,10 @@ Les conditions préalables suivantes s’appliquent spécifiquement au groupemen
 - Le graphique d’identités d’Experience Platform Identity Service doit être configuré au niveau de la sandbox, avant d’activer le groupement basé sur les graphiques.
    - Le graphique d’identité doit comporter un espace de noms (par exemple `Email` ou `Phone`) que vous souhaitez utiliser lors du groupement pour résoudre l’ID de personne.
    - Le graphique d’identités doit être renseigné avec des informations d’identités de tous les jeux de données pertinents (de type *événement* ou *profil* et qui contiennent au moins deux espaces de noms utiles avec des valeurs d’identifiant).
-   - Tous les jeux de données contenant ces identités pertinentes doivent être [&#x200B; activés pour l’ingestion de données de graphique d’identités](faq.md#enable-a-dataset-for-the-identity-service). Cette activation garantit que les identités entrantes sont ajoutées au graphique au fil du temps à partir de toutes les sources nécessaires.
+   - Tous les jeux de données contenant ces identités pertinentes doivent être [ activés pour l’ingestion de données de graphique d’identités](faq.md#enable-a-dataset-for-the-identity-service). Cette activation garantit que les identités entrantes sont ajoutées au graphique au fil du temps à partir de toutes les sources nécessaires.
    - Si vous utilisez déjà le profil de données client en temps réel ou Adobe Journey Optimizer depuis un certain temps, le graphique doit déjà être configuré dans une certaine mesure.<br/>Si le renvoi du groupement historique est également requis pour le jeu de données activé avec le groupement basé sur les graphiques, le graphique doit déjà contenir des identités historiques pour l’ensemble de la période, afin d’obtenir les résultats de groupement souhaités.
 - Si vous souhaitez utiliser le groupement basé sur des graphiques et que vous prévoyez que le jeu de données d’événement contribuera au graphique d’identité, vous devez [activer le jeu de données pour le service d’identités](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service).
-- L’ID persistant et l’ID de personne peuvent être utilisés avec [identityMap](#identitymap). Ou l’identifiant persistant et l’identifiant de personne peuvent être des champs du schéma XDM, auquel cas les champs doivent être [définis comme une identité](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/ui/fields/identity?lang=en) dans le schéma .
+- L’ID persistant et l’ID de personne peuvent être utilisés avec [identityMap](#identitymap). Ou l’identifiant persistant et l’identifiant de personne peuvent être des champs du schéma XDM, auquel cas les champs doivent être [définis comme une identité](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity?lang=en) dans le schéma .
 
 >[!NOTE]
 >
@@ -221,7 +223,7 @@ Les restrictions suivantes s’appliquent spécifiquement au groupement basé su
 - Les dates et heures ne sont pas prises en compte lors de l’interrogation de l’ID de personne avec l’espace de noms spécifié. Il est donc possible qu’un ID persistant soit associé à un ID de personne provenant d’un enregistrement qui a un horodatage antérieur.
 - Dans les scénarios d’appareils partagés, où l’espace de noms du graphique contient plusieurs identités, la première identité lexicographique est utilisée. Si les limites et priorités d’espace de noms sont configurées dans le cadre de la publication des règles de liaison de graphiques, l’identité du dernier utilisateur authentifié est utilisée. Voir [Appareils partagés](/help/use-cases/stitching/shared-devices.md) pour plus d’informations.
 - Il existe une limite stricte de trois mois de renvoi d’identités dans le graphique d’identités. Utilisez le remplissage d’identités si vous n’utilisez pas une application Experience Platform, telle que Real-time Customer Data Platform, pour renseigner le graphique d’identité.
-- Les mécanismes de sécurisation [Identity Service](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/guardrails) s’appliquent. Voir, par exemple, les [limites statiques](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/guardrails#static-limits) suivantes :
+- Les mécanismes de sécurisation [Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails) s’appliquent. Voir, par exemple, les [limites statiques](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails#static-limits) suivantes :
    - Nombre maximal d’identités dans un graphique : 50.
    - Nombre maximal de liens vers une identité pour une ingestion par lots unique : 50.
    - Nombre maximal d’identités dans un enregistrement XDM pour l’ingestion de graphiques : 20.
