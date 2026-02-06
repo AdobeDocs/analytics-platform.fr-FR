@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: ea5c9114-1fc3-4686-b184-2850acb42b5c
-source-git-commit: 4c5376171afe7ee830c52cc1066d0645a1adbc5d
+source-git-commit: 4cb54c684c76c2581b1f3f9aa00fcb743d7c6387
 workflow-type: tm+mt
 source-wordcount: '1741'
 ht-degree: 4%
@@ -97,9 +97,9 @@ L’assemblage effectue au moins deux passages aux données d’un jeu de donné
 
 - **Groupement de relecture** : *relit* les données en fonction des identités mises à jour à partir du graphique d’identités. À cette étape, les accès provenant d’appareils inconnus précédemment (identifiants persistants) sont regroupés, car le graphique d’identité a résolu l’identité d’un espace de noms. Deux paramètres déterminent la relecture : **fréquence** et **intervalle de recherche en amont**. Adobe propose les combinaisons de paramètres suivantes :
    - **Recherche en amont quotidienne à une fréquence quotidienne** : les données sont relues tous les jours avec un intervalle de recherche en amont de 24 heures. Cette option présente l’avantage que les relectures sont beaucoup plus fréquentes, mais les profils non authentifiés doivent s’authentifier le jour même de leur visite sur votre site.
-   - **Recherche en amont hebdomadaire à une fréquence hebdomadaire** : les données sont relues une fois par semaine avec un intervalle de recherche en amont hebdomadaire (voir [options](#options)). Cette option présente un avantage qui permet aux sessions non authentifiées de disposer d’un temps d’authentification beaucoup moins stricte. Toutefois, les données désassemblées datant de moins d’une semaine ne sont pas retraitées avant la prochaine relecture hebdomadaire.
-   - **Recherche en amont bihebdomadaire sur une fréquence hebdomadaire** : les données sont relues une fois par semaine avec un intervalle de recherche en amont bihebdomadaire (voir [options](#options)). Cette option présente un avantage qui permet aux sessions non authentifiées de disposer d’un temps d’authentification beaucoup moins stricte. Toutefois, les données désassemblées datant de moins de deux semaines ne sont pas retraitées avant la prochaine relecture hebdomadaire.
-   - **Recherche en amont mensuelle à une fréquence hebdomadaire** : les données sont relues chaque semaine avec un intervalle de recherche en amont mensuel (voir [options](#options)). Cette option présente un avantage qui permet aux sessions non authentifiées de disposer d’un temps d’authentification beaucoup moins stricte. Toutefois, les données désassemblées datant de moins d’un mois ne sont pas retraitées avant la prochaine relecture hebdomadaire.
+   - **Recherche en amont hebdomadaire à une fréquence hebdomadaire** : les données sont relues une fois par semaine avec un intervalle de recherche en amont hebdomadaire (voir [options](overview.md#options)). Cette option présente un avantage qui permet aux sessions non authentifiées de disposer d’un temps d’authentification beaucoup moins stricte. Toutefois, les données désassemblées datant de moins d’une semaine ne sont pas retraitées avant la prochaine relecture hebdomadaire.
+   - **Recherche en amont bihebdomadaire sur une fréquence hebdomadaire** : les données sont relues une fois par semaine avec un intervalle de recherche en amont bihebdomadaire (voir [options](overview.md#options)). Cette option présente un avantage qui permet aux sessions non authentifiées de disposer d’un temps d’authentification beaucoup moins stricte. Toutefois, les données désassemblées datant de moins de deux semaines ne sont pas retraitées avant la prochaine relecture hebdomadaire.
+   - **Recherche en amont mensuelle à une fréquence hebdomadaire** : les données sont relues chaque semaine avec un intervalle de recherche en amont mensuel (voir [options](overview.md#options)). Cette option présente un avantage qui permet aux sessions non authentifiées de disposer d’un temps d’authentification beaucoup moins stricte. Toutefois, les données désassemblées datant de moins d’un mois ne sont pas retraitées avant la prochaine relecture hebdomadaire.
 
 - **Confidentialité** : lorsque des demandes liées à la confidentialité sont reçues, en plus de supprimer l’identité demandée du jeu de données source, tout regroupement de cette identité sur des événements non authentifiés doit être annulé. En outre, l’identité doit être supprimée du graphique d’identités afin d’éviter tout groupement futur basé sur les graphiques pour cette identité spécifique.
 
@@ -114,7 +114,7 @@ Tenez compte des deux mises à jour du graphique d’identités suivantes au fil
 
 ![Graphique d’identités 3579](assets/identity-graphs.svg)
 
-Vous pouvez afficher un graphique d’identités au fil du temps pour un profil spécifique à l’aide de la [visionneuse de graphiques d’identités](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/features/identity-graph-viewer). Consultez également la section [Logique de liaison du service d’identités](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/features/identity-linking-logic) pour mieux comprendre la logique utilisée lors de la liaison d’identités.
+Vous pouvez afficher un graphique d’identités au fil du temps pour un profil spécifique à l’aide de la [visionneuse de graphiques d’identités](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-viewer). Consultez également la section [Logique de liaison du service d’identités](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-linking-logic) pour mieux comprendre la logique utilisée lors de la liaison d’identités.
 
 ### Étape 1 : Assemblage dynamique
 
@@ -206,10 +206,10 @@ Les conditions préalables suivantes s’appliquent spécifiquement au groupemen
 - Le graphique d’identités d’Experience Platform Identity Service doit être configuré au niveau de la sandbox, avant d’activer le groupement basé sur les graphiques.
    - Le graphique d’identité doit comporter un espace de noms (par exemple `Email` ou `Phone`) que vous souhaitez utiliser lors du groupement pour résoudre l’ID de personne.
    - Le graphique d’identités doit être renseigné avec des informations d’identités de tous les jeux de données pertinents (de type *événement* ou *profil* et qui contiennent au moins deux espaces de noms utiles avec des valeurs d’identifiant).
-   - Tous les jeux de données contenant ces identités pertinentes doivent être [&#x200B; activés pour l’ingestion de données de graphique d’identités](faq.md#enable-a-dataset-for-the-identity-service). Cette activation garantit que les identités entrantes sont ajoutées au graphique au fil du temps à partir de toutes les sources nécessaires.
+   - Tous les jeux de données contenant ces identités pertinentes doivent être [ activés pour l’ingestion de données de graphique d’identités](faq.md#enable-a-dataset-for-the-identity-service). Cette activation garantit que les identités entrantes sont ajoutées au graphique au fil du temps à partir de toutes les sources nécessaires.
    - Si vous utilisez déjà le profil de données client en temps réel ou Adobe Journey Optimizer depuis un certain temps, le graphique doit déjà être configuré dans une certaine mesure.<br/>Si le renvoi du groupement historique est également requis pour le jeu de données activé avec le groupement basé sur les graphiques, le graphique doit déjà contenir des identités historiques pour l’ensemble de la période, afin d’obtenir les résultats de groupement souhaités.
 - Si vous souhaitez utiliser le groupement basé sur des graphiques et que vous prévoyez que le jeu de données d’événement contribuera au graphique d’identité, vous devez [activer le jeu de données pour le service d’identités](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service).
-- L’ID persistant et l’ID de personne peuvent être utilisés avec [identityMap](#identitymap). Ou l’identifiant persistant et l’identifiant de personne peuvent être des champs du schéma XDM, auquel cas les champs doivent être [définis comme une identité](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/ui/fields/identity?lang=en) dans le schéma .
+- L’ID persistant et l’ID de personne peuvent être utilisés avec [identityMap](#identitymap). Ou l’identifiant persistant et l’identifiant de personne peuvent être des champs du schéma XDM, auquel cas les champs doivent être [définis comme une identité](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity?lang=en) dans le schéma .
 
 >[!NOTE]
 >
@@ -223,7 +223,7 @@ Les restrictions suivantes s’appliquent spécifiquement au groupement basé su
 - Les dates et heures ne sont pas prises en compte lors de l’interrogation de l’ID de personne avec l’espace de noms spécifié. Il est donc possible qu’un ID persistant soit associé à un ID de personne provenant d’un enregistrement qui a un horodatage antérieur.
 - Dans les scénarios d’appareils partagés, où l’espace de noms du graphique contient plusieurs identités, la première identité lexicographique est utilisée. Si les limites et priorités d’espace de noms sont configurées dans le cadre de la publication des règles de liaison de graphiques, l’identité du dernier utilisateur authentifié est utilisée. Voir [Appareils partagés](/help/use-cases/stitching/shared-devices.md) pour plus d’informations.
 - Il existe une limite stricte de trois mois de renvoi d’identités dans le graphique d’identités. Utilisez le remplissage d’identités si vous n’utilisez pas une application Experience Platform, telle que Real-time Customer Data Platform, pour renseigner le graphique d’identité.
-- Les mécanismes de sécurisation [Identity Service](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/guardrails) s’appliquent. Voir, par exemple, les [limites statiques](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/guardrails#static-limits) suivantes :
+- Les mécanismes de sécurisation [Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails) s’appliquent. Voir, par exemple, les [limites statiques](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails#static-limits) suivantes :
    - Nombre maximal d’identités dans un graphique : 50.
    - Nombre maximal de liens vers une identité pour une ingestion par lots unique : 50.
    - Nombre maximal d’identités dans un enregistrement XDM pour l’ingestion de graphiques : 20.
