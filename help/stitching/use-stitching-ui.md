@@ -91,7 +91,7 @@ Si vous remplissez les conditions préalables, vous pouvez effectuer des contrô
 >id="connection_changeto_identitygraph"
 >title="Modification du graphique d’identité"
 >abstract="Assurez-vous d’avoir terminé la configuration du graphique d’identité avant d’utiliser le graphique d’identité pour l’assemblage."
->additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/gbs" text="Rapprochement basé sur les graphiques"
+>additional-url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/stitching/gbs" text="Rapprochement basé sur les graphiques"
 
 >[!CONTEXTUALHELP]
 >id="connection_stitching_personid"
