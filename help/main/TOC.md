@@ -9,9 +9,9 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 16486ded009a9dbd9170240c0941853a4deec0af
+source-git-commit: 7835d4c5b46177ece4a146df8f0d4abb9605c670
 workflow-type: tm+mt
-source-wordcount: '1362'
+source-wordcount: '1365'
 ht-degree: 96%
 
 ---
@@ -147,6 +147,7 @@ ht-degree: 96%
 + Vues des données {#cja-dataviews}
    + [Vue d’ensemble des vues de données](../data-views/data-views.md)
    + [Création ou modification d’une vue de données](../data-views/create-dataview.md)
+   + [Gestion des vues de données](/help/data-views/manage-dataviews.md)
    + [Paramètres de session](../data-views/session-settings.md)
    + Paramètres de composant {#component-settings}
       + [Présentation des paramètres de composant](../data-views/component-settings/overview.md)
@@ -290,7 +291,7 @@ ht-degree: 96%
       + [Questions fréquentes](../analysis-workspace/workspace-faq/faq.md)
       + [Optimiser les performances](../analysis-workspace/workspace-faq/optimizing-performance.md)
       + [Erreur et résolution des problèmes](../analysis-workspace/workspace-faq/error-messages.md)
-      + [Limites](../analysis-workspace/workspace-faq/aw-limitations.md)
+      + [Restrictions](../analysis-workspace/workspace-faq/aw-limitations.md)
       + [Exigences](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
       + [Accessibilité](../analysis-workspace/workspace-faq/aw-accessibility.md)
 
@@ -340,7 +341,7 @@ ht-degree: 96%
       + [Gestion des annotations](../components/annotations/manage-annotations.md)
       + [Affichage des annotations](../components/annotations/view-annotations.md)
       + [Annotations de carte de performance mobile](../components/annotations/mobile-annotations.md)
-   + Publication dʼaudiences {#audiences}
+   + Publication des audiences {#audiences}
       + [Vue d’ensemble de la publication des audiences](../components/audiences/audiences-overview.md)
       + [Créer et publier des audiences](../components/audiences/publish.md)
       + [Gérer les audiences publiées](../components/audiences/manage.md)
@@ -368,7 +369,7 @@ ht-degree: 96%
       + [Utiliser les segments](/help/components/segments/seg-use.md)
    + Mesures calculées {#cja-calcmetrics}
       + [Vue d’ensemble](../components/calc-metrics/calc-metr-overview.md)
-      + Processus {#cm-workflow}
+      + Workflow {#cm-workflow}
          + [Créer des mesures calculées](../components/calc-metrics/cm-workflow/cm-workflow.md)
          + [Rechercher des mesures](../components/calc-metrics/cm-workflow/cm-finding.md)
          + [Créer des mesures calculées](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
@@ -442,8 +443,8 @@ ht-degree: 96%
 
 + Groupement {#stitching}
    + [Vue d’ensemble](/help/stitching/overview.md)
-   + [Rapprochement basé sur les champs](/help/stitching/fbs.md)
-   + [Rapprochement basé sur les graphiques](/help/stitching/gbs.md)
+   + [Regroupement basé sur les champs](/help/stitching/fbs.md)
+   + [Groupement basé sur les graphiques](/help/stitching/gbs.md)
    + [Demander un rapprochement](/help/stitching/use-stitching.md)
    + [Activer le rapprochement](/help/stitching/use-stitching-ui.md)
    + [Valider le groupement](/help/stitching/validate.md)
@@ -518,7 +519,7 @@ ht-degree: 96%
    + Analyse de produit {#product-analysis}
       + [Analyse de produit](/help/use-cases/product-analysis.md)
    + Groupement {#stitching}
-      + [Périphériques partagés](/help/use-cases/stitching/shared-devices.md)
+      + [Appareils partagés](/help/use-cases/stitching/shared-devices.md)
    + Données tierces {#third-party}
       + [Vue d’ensemble](/help/use-cases/third-party/overview.md)
       + Google Analytics {#ga}
@@ -552,4 +553,4 @@ ht-degree: 96%
    + [Optimiser les performances](../technotes/optimizing-performance.md)
    + [Gérer l’utilisation](../technotes/estimate-usage.md)
 
-+ [API Customer Journey Analytics](https://developer.adobe.com/cja-apis/docs/)
++ [API Customer Journey Analytics](https://developer.adobe.com/cja-apis/docs/?lang=fr)

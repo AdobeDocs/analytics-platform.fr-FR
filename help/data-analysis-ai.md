@@ -5,10 +5,10 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: 518f2aeac309a34016146b7a4da7823b6fd84cac
+source-git-commit: cb5baf2ec8d3ad4449a9b08d0a025a2d39a11425
 workflow-type: tm+mt
-source-wordcount: '2494'
-ht-degree: 100%
+source-wordcount: '2451'
+ht-degree: 98%
 
 ---
 
@@ -82,21 +82,10 @@ Les paramètres suivants régissent l’accès à l’agent Data Insights dans C
   >* Vous pouvez activer un maximum de 50 vues de données par organisation IMS. Si vous activez plus de 50 vues de données pour tous les profils de produit pour une organisation donnée, l’agent Data Insights utilisera les 50 vues de données les plus employées.
   >* L’agent Data Insights peut référencer les vues de données incluses à un moment donné le jour même de leur activation.
 
-  Pour activer les vues de données pour l’agent Data Insights :
+  Pour activer les vues de données pour Data Insights Agent, reportez-vous aux paramètres [AI d’une vue de données](/help/data-views/create-dataview.md#ai-settings).
 
-   1. Dans Customer Journey Analytics, sélectionnez **[!UICONTROL Gestion des données]** > **[!UICONTROL Vues de données]**.
+  Vous pouvez utiliser les [informations de la colonne Data Insights Agent dans les vues de données](/help/data-views/manage-dataviews.md#manage-data-views) pour afficher le nombre de vues de données activées pour Data Insights Agent dans votre organisation IMS.
 
-   1. Sélectionnez une ou plusieurs vues de données à activer pour l’agent Data Insights, puis sélectionnez **[!UICONTROL Activer pour l’agent Data Insights]**.
-
-      ![Activer les vues de données pour l’agent Data Insights](assets/data-view-enable-dia.png)
-
-  Pour afficher le nombre de vues de données activées pour l’agent Data Insights dans votre organisation IMS :
-
-   1. Dans Customer Journey Analytics, sélectionnez **[!UICONTROL Gestion des données]** > **[!UICONTROL Vues de données]**.
-
-   1. Sélectionnez l’icône d’informations en haut de la colonne **[!UICONTROL Agent Data Insights]**.
-
-      ![Icône d’informations de l’agent Data Insights](assets/data-insights-agent-tooltip.png)
 
 ## Accès à l’agent Data Insights dans l’assistant IA
 
