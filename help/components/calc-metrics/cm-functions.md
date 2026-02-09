@@ -4,10 +4,10 @@ description: Découvrez les fonctions de base des mesures calculées.
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: e2e87bc3d9f26b01f250d88b924c730fe4edac7b
 workflow-type: tm+mt
-source-wordcount: '1868'
-ht-degree: 100%
+source-wordcount: '3608'
+ht-degree: 51%
 
 ---
 
@@ -58,6 +58,14 @@ Un autre scénario consiste à utiliser deux mesures intéressantes, l’une aya
 |---|---|
 | metric | Mesure pour laquelle vous souhaitez calculer la valeur absolue. |
 
+**Cas d’utilisation** : assurez-vous que tous les résultats sont positifs lors de l’analyse des mesures qui peuvent produire des valeurs négatives, telles que des deltas de revenus ou des modifications en pourcentage. Cela permet de se concentrer sur l’ampleur du changement sans tenir compte de la direction.
+
+**Dans le créateur de mesures calculées** : encapsulez votre mesure ou expression dans la fonction **Valeur absolue**, par exemple : **Valeur absolue**(Chiffre d’affaires actuel - Chiffre d’affaires précédent). Toutes les différences négatives sont ainsi converties en valeurs positives.
+
+>[!TIP]
+>
+>Utilisez cette option pour mesurer les différences absolues entre deux périodes ou segments, que les performances aient augmenté ou diminué.
+>
 
 ## Column Maximum {#column-maximum}
 
@@ -79,6 +87,14 @@ Renvoie la valeur la plus grande d’un ensemble d’éléments de dimension pou
 | metric | Nécessite au moins une mesure, mais peut prendre n’importe quel nombre de mesures en tant que paramètres. |
 | include_zeros | Inclut ou non des valeurs nulles dans les calculs. |
 
+**Cas d’utilisation** : identifier la valeur la plus élevée dans une répartition, telle que le jour où le nombre de visites est le plus élevé ou le produit dont le chiffre d’affaires est le plus élevé. Cela permet de mettre en évidence la performance maximale entre les catégories.
+
+**Dans le créateur de mesures calculées** : appliquez **Colonne maximale** à une mesure telle que *Chiffre d’affaires* ou *Visites* lors de la répartition par *Jour* ou *Produit*. La fonction renvoie la plus grande valeur de cette colonne pour chaque ligne.
+
+>[!TIP]
+>
+>Utilisez une instruction [IF](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-adv-functions#if) telle que **IF**(*Revenue* = **Column Maximum***(Revenue*), 1, 0) pour mettre en surbrillance l’élément le plus performant de votre répartition.
+>
 
 ## Column Minimum {#column-minimum}
 
@@ -101,6 +117,15 @@ Renvoie la valeur la plus petite d’un ensemble d’éléments de dimension pou
 | metric | Nécessite au moins une mesure, mais peut prendre n’importe quel nombre de mesures en tant que paramètres. |
 | include_zeros | Inclut ou non des valeurs nulles dans les calculs. |
 
+**Cas d’utilisation** : identifier la valeur la moins performante dans une répartition, par exemple la campagne avec le moins de conversions ou le jour avec le revenu le plus faible. Cela permet de faire rapidement apparaître les segments peu performants.
+
+**Dans le créateur de mesures calculées** : appliquez **minimum de colonne** à une mesure telle que *Chiffre d’affaires* ou *Taux de conversion* lors de la répartition par *Campagne* ou *Jour*. La fonction renvoie la plus petite valeur de cette colonne pour chaque ligne.
+
+>[!TIP]
+>
+>Utilisez une instruction [IF](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-adv-functions#if) telle que **IF**(*Revenue* = **Column Minimum***(Revenue*), 1, 0) pour mettre en surbrillance l’élément le moins performant de votre répartition.
+>
+
 
 ## Column Sum {#column-sum}
 
@@ -121,6 +146,15 @@ Ajoute toutes les valeurs numériques d’une mesure dans une colonne (sur l’e
 | Argument | Description |
 |---|---|
 | metric | Nécessite au moins une mesure, mais peut prendre n’importe quel nombre de mesures en tant que paramètres. |
+
+**Cas d’utilisation** : calculez le total de toutes les valeurs dans une répartition, telles que le chiffre d’affaires total sur tous les produits ou le nombre total de visites sur tous les jours. Cela s’avère utile lorsque vous avez besoin d’un total global à comparer aux valeurs de lignes individuelles.
+
+**Dans le créateur de mesures calculées** : appliquez **somme des colonnes** à une mesure telle que *Chiffre d’affaires* ou *Visites* tout en répartissant par *Produit* ou *Jour*. La fonction renvoie le total de toutes les valeurs de cette colonne pour chaque ligne.
+
+>[!TIP]
+>
+>À utiliser lorsque vous avez besoin d’une référence au total global pour calculer des parts ou des pourcentages de performance totale.
+>
 
 
 ## Count {#count}
@@ -143,6 +177,14 @@ Ajoute toutes les valeurs numériques d’une mesure dans une colonne (sur l’e
 |---|---|
 | metric | Mesure que vous souhaitez compter. |
 
+**Cas d’utilisation** : comptez le nombre de points de données inclus dans un calcul, tel que le nombre de jours dans une période ou le nombre de produits dans une répartition. Cela s’avère utile lorsque vous devez connaître le nombre d’éléments qui contribuent à une valeur agrégée.
+
+**Dans le créateur de mesures calculées** : appliquez **Nombre** à une mesure telle que *Visites* ou *Chiffre d’affaires* pour renvoyer le nombre total de lignes (ou de points de données) inclus dans la répartition ou la période en cours.
+
+>[!TIP]
+>
+>Utilisez avec **Somme des colonnes** pour calculer manuellement les moyennes (par exemple, **Somme des colonnes**(*Chiffre d’affaires*) / **Compte**(Chiffre d’affaires)).
+>
 
 ## Exponent {#exponent}
 
@@ -162,6 +204,15 @@ Ajoute toutes les valeurs numériques d’une mesure dans une colonne (sur l’e
 | Argument | Description |
 |---|---|
 | metric | Exposant appliqué à la base e. |
+
+**Cas d’utilisation** : augmentez un nombre ou une mesure à une puissance spécifiée, par exemple en mettant au carré une valeur ou en appliquant un facteur de croissance exponentielle. Cela s’avère utile lors de la modélisation des tendances de croissance ou de la mise à l’échelle exponentielle d’une mesure.
+
+**Dans le créateur de mesures calculées** : utilisez **Exposant** avec une mesure et une valeur de puissance. Par exemple : **Exposant**(*Visites*, 2) met au carré la mesure *Visites*.
+
+>[!TIP]
+>
+>Combinez-la avec **Logarithme** pour une modélisation avancée ou pour lisser les données très variables lors de la comparaison des modèles de croissance.
+>
 
 
 ## Mean {#mean}
@@ -185,6 +236,14 @@ Ajoute toutes les valeurs numériques d’une mesure dans une colonne (sur l’e
 | metric | Mesure pour laquelle vous souhaitez obtenir la moyenne. |
 | include_zeros | Inclut ou non des valeurs nulles dans les calculs. |
 
+**Cas d’utilisation** : calculez la moyenne arithmétique d’un ensemble de valeurs, telles que le chiffre d’affaires quotidien moyen ou le nombre moyen de visites par campagne. Cela permet d’établir une ligne de base pour comparer des valeurs individuelles au sein d’un jeu de données.
+
+**Dans le créateur de mesures calculées** : appliquez **Moyenne** à une mesure telle que *Chiffre d’affaires* ou *Visites* pour renvoyer la valeur moyenne pour tous les points de données dans la répartition ou la période sélectionnée.
+
+>[!TIP]
+>
+>Utilisez pour comprendre les tendances globales des performances ou combinez-les avec **Écart type** pour mesurer la cohérence autour de la moyenne.
+>
 
 ## Median {#median}
 
@@ -206,6 +265,15 @@ Ajoute toutes les valeurs numériques d’une mesure dans une colonne (sur l’e
 |---|---|
 | metric | Mesure pour laquelle vous souhaitez calculer la médiane. |
 | include_zeros | Inclut ou non des valeurs nulles dans les calculs. |
+
+**Cas d’utilisation** : identifier la valeur médiane dans un ensemble de données, comme le chiffre d’affaires quotidien médian ou les pages vues médianes par visite. Cela s’avère utile lorsque vous souhaitez réduire l’impact des valeurs aberrantes et voir la tendance centrale de vos données.
+
+**Dans le créateur de mesures calculées** : appliquez la valeur médiane à une mesure telle que Recettes ou Pages vues pour renvoyer la valeur du point médian pour tous les points de données de la répartition ou de la période sélectionnée.
+
+>[!TIP]
+>
+>Utilisez au lieu de **Moyenne** lorsque vos données contiennent des valeurs maximales ou minimales extrêmes susceptibles de fausser la moyenne.
+>
 
 
 ## Modulo {#modulo}
@@ -229,7 +297,16 @@ Renvoie le reste après la division de x par y à l’aide d’une division eucl
 | metric_X | Première mesure que vous souhaitez diviser. |
 | metric_Y | Deuxième mesure que vous souhaitez diviser. |
 
-### Exemples
+**Cas pratique** : renvoyez le reste après avoir divisé un nombre par un autre. Cela peut s’avérer utile pour les modèles cycliques ou répétés, comme l’identification de chaque énième jour ou campagne dans une séquence.
+
+**Dans le créateur de mesures calculées** : utilisez **Modulo** avec deux entrées numériques. Par exemple : **Modulo**(*Nombre de jours*, 7) renvoie le reste après avoir divisé le nombre de jours par sept, ce qui peut aider à regrouper les données par semaine.
+
+>[!TIP]
+>
+>Associez cette option à une logique conditionnelle pour mettre en évidence les intervalles récurrents ou pour segmenter les données en fonction de cycles répétés.
+>
+
+### Plus d’exemples
 
 La valeur de renvoi comporte le même signe que l’entrée (ou est égale à zéro).
 
@@ -267,7 +344,14 @@ MODULO(MODULO(x,y)+y,y)
 | k | Colonne de mesures qui définit l’étendue relative. |
 | include_zeros | Inclut ou non des valeurs nulles dans les calculs. |
 
+**Cas d’utilisation** : identifier la valeur en dessous de laquelle un pourcentage donné de points de données se situe, comme le 90e centile du chiffre d’affaires quotidien ou des pages vues. Cela permet de mesurer la distribution et de détecter des valeurs aberrantes hautement performantes.
 
+**Dans le créateur de mesures calculées** : appliquez **centile** à une mesure telle que *Revenu* ou *Visites*, puis spécifiez la valeur de centile souhaitée (par exemple, **Percentile**(*Revenue*, 90)). Le résultat indique le seuil en dessous duquel 90 % des points de données sont détectés.
+
+>[!TIP]
+>
+>Utilisez pour définir des références de performances ou pour filtrer les jours, les campagnes ou les produits les plus performants.
+>
 
 ## Power Operator {#power-operator}
 
@@ -289,6 +373,14 @@ Renvoie x élevé à la puissance y.
 | metric_X | Mesure que vous souhaitez augmenter à la puissance metric_Y. |
 | metric_Y | Puissance vers laquelle vous souhaitez augmenter metric_X. |
 
+**Cas d’utilisation** : augmenter un nombre ou une mesure à la puissance d’un autre, par exemple en mettant une valeur au carré ou en appliquant un poids exponentiel. Cela s’avère utile pour modéliser la croissance, mettre à l’échelle les valeurs ou effectuer des transformations mathématiques avancées.
+
+**Dans le créateur de mesures calculées** : utilisez **Power Operator** entre deux valeurs numériques ou mesures. Par exemple : *Revenue* ^ 2 élève la valeur *Revenue* à la deuxième puissance.
+
+>[!TIP]
+>
+>Similaire à la fonction **Exposant**, mais exprimée en tant qu’opérateur mathématique, ce qui permet d’obtenir des formules plus compactes dans les mesures calculées.
+>
 
 ## Quartile {#quartile}
 
@@ -312,6 +404,14 @@ Renvoie x élevé à la puissance y.
 | Quartile | Indique la valeur de quartile à renvoyer. |
 | include_zeros | Inclut ou non des valeurs nulles dans les calculs. |
 
+**Cas d’utilisation** : divisez un jeu de données en quatre parties égales pour comprendre comment les valeurs sont distribuées, par exemple en identifiant les 25 % de jours les plus riches par chiffre d’affaires ou visites. Cela permet de segmenter les performances en groupes classés pour une comparaison plus approfondie.
+
+**Dans le créateur de mesures calculées** : appliquez **Quartile** à une mesure telle que *Revenus* ou *Visites*, et spécifiez le quartile à renvoyer (par exemple, **Quartile**(*Revenue*, 3) pour trouver le seuil du troisième quartile, ou les 25 % supérieurs).
+
+>[!TIP]
+>
+>Utilisez pour regrouper les valeurs en niveaux de performances tels que les campagnes ou produits à faibles, moyennes et hautes performances.
+>
 
 ## Round {#round}
 
@@ -333,7 +433,16 @@ Un arrondi sans paramètre de *nombre* est identique à un paramètre de *nombre
 | mesure | Mesure que vous souhaitez arrondir. |
 | Number | Nombre de chiffres après la virgule à renvoyer. (Si négatif, renvoie des 0 à gauche de la décimale.) |
 
-### Exemples
+**Cas d’utilisation** : simplifiez les résultats numériques en les arrondissant à un nombre spécifié de décimales. Cela s’avère utile pour créer des visualisations plus épurées ou pour faciliter la lecture des mesures calculées dans les rapports.
+
+**Dans le créateur de mesures calculées** : appliquez **arrondi** à une mesure ou à une expression et spécifiez le nombre de décimales. Par exemple : **Round**(*Taux de conversion*, 2) arrondit la valeur à deux décimales.
+
+>[!TIP]
+>
+>Utilisez pour normaliser le formatage des mesures dans les rapports, en particulier lors de l’affichage de pourcentages ou de valeurs monétaires.
+>
+
+### Plus d’exemples
 
 ```
 ROUND( 314.15, 0) = 314
@@ -357,6 +466,14 @@ ROUND( 314.15, -2) = 300
 
 Renvoie le nombre de lignes pour une colonne donnée (nombre d’éléments uniques signalés dans une dimension). L’option *Valeurs uniques dépassées* est comptabilisée en tant que 1.
 
+**Cas d’utilisation** : comptez le nombre total de lignes renvoyées dans une répartition ou un jeu de données, tel que le nombre de jours, de campagnes ou de produits inclus dans un rapport. Cela permet de comprendre le nombre d’éléments qui contribuent à votre analyse.
+
+**Dans le créateur de mesures calculées** : appliquez le **nombre de lignes** pour renvoyer le nombre total de lignes dans la répartition ou le segment actif. Par exemple, lors de l’affichage de *Chiffre d’affaires* par *Produit*, **Nombre de lignes** renvoie le nombre de produits affichés.
+
+>[!TIP]
+>
+>Utilisez avec d’autres fonctions telles que **Somme des colonnes** pour calculer manuellement des moyennes (par exemple, **Somme des colonnes**(*Chiffre d’affaires*) / **Nombre de lignes**()).
+>
 
 ## Row Max {#row-max}
 
@@ -378,6 +495,14 @@ Maximum des colonnes de chaque ligne.
 | metric | Nécessite au moins une mesure, mais peut prendre n’importe quel nombre de mesures en tant que paramètres. |
 | include_zeros | Inclut ou non des valeurs nulles dans les calculs. |
 
+**Cas d’utilisation** : identifier la valeur la plus élevée pour toutes les mesures d’une seule ligne, par exemple déterminer quelle mesure (par exemple, *Revenu*, *Commandes* ou *Visites*) a la valeur la plus élevée pour un jour ou un segment spécifique. Cela permet de mettre en évidence les pistes de mesure dans chaque ligne de données.
+
+**Dans le créateur de mesures calculées** : appliquez **Nombre maximal de lignes** lorsque plusieurs mesures sont incluses dans une mesure calculée. Par exemple : **Nombre maximal de lignes**(*Chiffre d’affaires*, *Commandes*, *Visites*) renvoie la valeur la plus élevée parmi ces mesures pour chaque ligne.
+
+>[!TIP]
+>
+>Permet de comparer les mesures associées côte à côte et d’identifier celle qui contribue le plus aux performances dans chaque ligne.
+>
 
 ## Row Min {#row-min}
 
@@ -399,7 +524,14 @@ Minimum des colonnes de chaque ligne.
 | metric | Nécessite au moins une mesure, mais peut prendre n’importe quel nombre de mesures en tant que paramètres. |
 | include_zeros | Inclut ou non des valeurs nulles dans les calculs. |
 
+**Cas d’utilisation** : identifier la valeur la plus faible pour toutes les mesures d’une seule ligne, par exemple déterminer la mesure (par exemple, *Revenu*, *Commandes* ou *Visites*) ayant la valeur la plus faible pour un jour ou un segment particulier. Cela permet de repérer la mesure la moins performante dans chaque ligne de données.
 
+**Dans le créateur de mesures calculées** : appliquez le **minimum de ligne** lors de la comparaison de plusieurs mesures. Par exemple : **Ligne Minimum**(*Revenu*, *Commandes*, *Visites*) renvoie la plus petite valeur parmi ces mesures pour chaque ligne.
+
+>[!TIP]
+>
+>Combinez cette fonction avec la fonction Maximum de ligne pour calculer des plages de performances ou mettre en évidence des mesures peu performantes dans une comparaison côte à côte.
+>
 
 ## Row Sum {#row-sum}
 
@@ -420,6 +552,14 @@ Somme des colonnes de chaque ligne.
 |---|---|
 | metric | Nécessite au moins une mesure, mais peut prendre n’importe quel nombre de mesures en tant que paramètres. |
 
+**Cas d’utilisation** : ajoutez les valeurs de plusieurs mesures dans une seule ligne, telles que la somme *Revenu* et *Taxe* pour calculer la valeur totale du mouvement, ou combinez *Visites* à partir de différentes sources. Cela permet de consolider les mesures associées en un seul total.
+
+**Dans le créateur de mesures calculées** : appliquez **somme des lignes** pour combiner plusieurs mesures. Par exemple : **Somme des lignes**(*Revenus*, *Taxes*) ajoute ces deux mesures pour chaque ligne de votre répartition.
+
+>[!TIP]
+>
+>Permet de créer des totaux combinés ou de regrouper des indicateurs de performances associés en une seule mesure calculée.
+>
 
 ## Square Root {#square-root}
 
@@ -441,6 +581,14 @@ Somme des colonnes de chaque ligne.
 |---|---|
 | metric | Mesure pour laquelle vous souhaitez obtenir la racine carrée. |
 
+**Cas d’utilisation** : renvoyez la racine carrée d’un nombre ou d’une mesure, par exemple la recherche de la racine de la variance lors du calcul de l’écart type ou de la normalisation des valeurs dans un jeu de données. Cela s’avère utile pour les calculs statistiques ou de transformation de données avancés.
+
+**Dans le créateur de mesures calculées** : appliquez **racine carrée** à une mesure ou à une expression. Par exemple : **Racine carrée**(Variance(*Revenue*)) renvoie l’écart type de *Revenue*.
+
+>[!TIP]
+>
+>À utiliser lorsque vous devez mettre les mesures à l’échelle proportionnellement ou pour prendre en charge d’autres fonctions statistiques qui reposent sur des valeurs racines.
+>
 
 ## Standard Deviation {#standard-deviation}
 
@@ -462,6 +610,14 @@ Somme des colonnes de chaque ligne.
 | | Mesure pour laquelle vous souhaitez calculer l’écart type. |
 | include_zeros | Inclut ou non des valeurs nulles dans les calculs. |
 
+**Cas d’utilisation** : mesurez l’écart des valeurs par rapport à la moyenne, par exemple en évaluant la cohérence du chiffre d’affaires quotidien ou des visites au fil du temps. Cela permet d’identifier la volatilité, la stabilité ou les fluctuations inhabituelles des performances.
+
+**Dans le créateur de mesures calculées** : appliquez l’**écart type** à une mesure telle que *Chiffre d’affaires* ou *Visites* pour calculer la répartition des valeurs dans la répartition ou la période sélectionnée. Par exemple : **Écart type**(*Chiffre d’affaires*) indique dans quelle mesure le chiffre d’affaires quotidien s’écarte de la moyenne.
+
+>[!TIP]
+>
+>Utilisez avec *Moyenne* pour détecter des anomalies ou comparer la cohérence des performances entre les campagnes, les produits ou les segments.
+>
 
 ## Variance {#variance}
 
@@ -483,6 +639,14 @@ Somme des colonnes de chaque ligne.
 | metric | Mesure pour laquelle vous souhaitez calculer la variance. |
 | include_zeros | Inclut ou non des valeurs nulles dans les calculs. |
 
+**Cas d’utilisation** : mesurez l’écart moyen des valeurs d’un jeu de données, par exemple en analysant la variation du chiffre d’affaires quotidien ou de la durée de session au fil du temps. Cela permet de quantifier le degré de cohérence ou de fluctuation des performances.
+
+**Dans le créateur de mesures calculées** : appliquez **Variance** à une mesure telle que *Chiffre d’affaires* ou *Temps passé par visite* pour calculer l’écart carré moyen par rapport à la moyenne. Par exemple : **Variance**(*Revenue*) indique dans quelle mesure les valeurs de chiffre d’affaires diffèrent de la moyenne sur la plage sélectionnée.
+
+>[!TIP]
+>
+>Utilisez cette option avec **Écart type** pour mieux comprendre la variabilité des données et identifier les zones de performances imprévisibles.
+>
 
 L’équation pour la VARIANCE est la suivante :
 
@@ -607,7 +771,7 @@ MEAN(metric)
 
 ## Median (Table) 
 
-Returns the median for a metric in a column. The median is the number in the middle of a set of numbers—that is, half the numbers have values that are greater than or equal to the median, and half are less than or equal to the median.
+Returns the median for a metric in a column. The median is the number in the middle of a set of numbers-that is, half the numbers have values that are greater than or equal to the median, and half are less than or equal to the median.
 
 ```
 MEDIAN(metric)
