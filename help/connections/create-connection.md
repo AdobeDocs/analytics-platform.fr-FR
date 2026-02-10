@@ -836,5 +836,5 @@ Ce calcul est effectué pour chaque jeu de données de la connexion.
 >[!MORELIKETHIS]
 >
 >* [Vue d’ensemble de l’ingestion de données](/help/data-ingestion/data-ingestion.md)
->* Blog : [utilisation des jeux de données d’événement, de recherche et de profil dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-to-leverage-event-lookup-and-profile-datasets-in-adobe/ba-p/681478)
+>* Blog : [utilisation des jeux de données d’événement, de recherche et de profil dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-to-leverage-event-lookup-and-profile-datasets-in-adobe/ba-p/681478?profile.language=fr)
 
