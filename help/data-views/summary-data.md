@@ -1,14 +1,14 @@
 ---
-title: Données de résumé
-description: Détails et informations sur l’utilisation et la configuration des données de résumé dans une vue de données.
+title: Données récapitulatives
+description: Découvrez les détails et les informations sur l’utilisation et la configuration des données de résumé dans une vue de données.
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 exl-id: 417443ae-a1ab-483b-a8fd-cff5ee8b6263
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
 workflow-type: tm+mt
-source-wordcount: '1147'
-ht-degree: 97%
+source-wordcount: '1150'
+ht-degree: 96%
 
 ---
 
@@ -154,5 +154,5 @@ Assurez-vous que les paramètres des composants pour un groupe de données de r�
 >[!MORELIKETHIS]
 >
 >- Consultez l’article [Utiliser des données de résumé](/help/use-cases/data-views/summary-data.md) pour obtenir un exemple de cas d’utilisation détaillé sur l’utilisation des données de résumé et la création de rapports les concernant.
->- Blog : [comment les données de résumé améliorent les jeux de données Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-summary-data-enhances-adobe-customer-journey-analytics/ba-p/704635?profile.language=fr)
+>- Blog : [comment les données de résumé améliorent les jeux de données Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-summary-data-enhances-adobe-customer-journey-analytics/ba-p/704635)
 

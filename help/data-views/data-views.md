@@ -1,14 +1,14 @@
 ---
-title: Vue d’ensemble des vues de données
-description: Une vue de données indique la manière dont vous souhaitez interpréter les éléments de données dans la connexion Customer Journey Analytics, tels que les mesures, les dimensions, les sessions, etc.
+title: Présentation des vues de données
+description: Découvrez comment une vue de données indique la manière dont vous souhaitez interpréter les éléments de données dans la connexion Customer Journey Analytics, tels que les mesures, les dimensions, les sessions, etc.
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 7835d4c5b46177ece4a146df8f0d4abb9605c670
+source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
 workflow-type: tm+mt
-source-wordcount: '1094'
-ht-degree: 95%
+source-wordcount: '1096'
+ht-degree: 93%
 
 ---
 
@@ -67,7 +67,7 @@ Les vues de données vous permettent de modifier directement les paramètres des
 
 * Avant de pouvoir créer des vues de données, vous devez [configurer une ou plusieurs connexions aux jeux de données Experience Platform](/help/connections/create-connection.md).
 * Pour créer ou gérer une vue de données, vous devez disposer dʼun [ensemble dʼautorisations dans Adobe Admin Console](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-overview).
-* Si vous utilisez le [connecteur source Adobe Analytics](/help/data-ingestion/analytics.md) ou possédez des connaissances sur Adobe Analytics, vous souhaiterez peut-être comprendre la façon dont les champs de vos schémas et jeux de données se rapportent à leurs équivalents Adobe Analytics. Pour en savoir plus, consultez [Mappages des champs Analytics &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics).
+* Si vous utilisez le [connecteur source Adobe Analytics](/help/data-ingestion/analytics.md) ou possédez des connaissances sur Adobe Analytics, vous souhaiterez peut-être comprendre la façon dont les champs de vos schémas et jeux de données se rapportent à leurs équivalents Adobe Analytics. Pour en savoir plus, consultez [Mappages des champs Analytics ](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics).
 
 ## Paramètres des vue de données que vous pouvez remplacer dans Espace de travail {#settings-override}
 

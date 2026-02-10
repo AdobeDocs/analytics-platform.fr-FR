@@ -4,13 +4,13 @@ description: Découvrez comment gérer les vues de données.
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: cb5baf2ec8d3ad4449a9b08d0a025a2d39a11425
+exl-id: c5cf15ab-3eb1-4e6b-93a3-3d89694ca0ea
+source-git-commit: c7cf7250f30e2f6023aa7690391aea149ba12eff
 workflow-type: tm+mt
-source-wordcount: '883'
-ht-degree: 11%
+source-wordcount: '923'
+ht-degree: 10%
 
 ---
-
 
 # Gestion des vues de données
 
@@ -29,7 +29,7 @@ Les colonnes et icônes suivantes sont disponibles dans le tableau :
 | --- | --- |
 | **[!UICONTROL Nom]** | Nom de la vue de données. |
 | ![Informations](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) | Pour afficher des informations sur la vue de données, sélectionnez ![InfoOutline](/help/assets/icons/InfoOutline.svg) en regard du nom de la vue de données.<br/>Une fenêtre pop-up affiche des détails sur la vue de données. |
-| ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) | Sélectionnez ![Plus](/help/assets/icons/More.svg) pour ouvrir un menu contextuel. Vous pouvez sélectionner :<br/>![Modifier](/help/assets/icons/Edit.svg) **[!UICONTROL Modifier]** pour [modifier](#edit-data-views) une vue de données.<br/>![Copier](/help/assets/icons/Copy.svg) **[!UICONTROL Copier]** pour [copier une vue de données](#copy-data-views).<br/>![Supprimer](/help/assets/icons/Delete.svg) **[!UICONTROL Supprimer]** pour [supprimer](#delete-data-views) une vue de données.<br/>![FichierCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Exporter au format CSV]** pour [exporter les détails de la vue de données dans un fichier CSV](#export-data-views-to-csv).<br/>![ProjectAdd](/help/assets/icons/ProjectAdd.svg) **[!UICONTROL Créer un projet]** pour [créer un projet Workspace](#create-project-from-data-views) pour la vue de données. |
+| ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) | Sélectionnez ![Plus](/help/assets/icons/More.svg) pour ouvrir un menu contextuel. Vous pouvez sélectionner :<br/>![Modifier](/help/assets/icons/Edit.svg) **[!UICONTROL Modifier]** pour [modifier](#edit-data-views) une vue de données.<br/>![Copier](/help/assets/icons/Copy.svg) **[!UICONTROL Copier]** pour [copier une vue de données](#copy-data-views).<br/>![Supprimer](/help/assets/icons/Delete.svg) **[!UICONTROL Supprimer]** pour [supprimer](#delete-data-views) une vue de données.<br/>![FichierCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Exporter au format CSV]** pour [exporter les détails de la vue de données dans un fichier CSV](#export-data-views-to-csv).<br/>![ProjectAdd](/help/assets/icons/ProjectAdd.svg) **[!UICONTROL Créer un projet]** pour [créer un projet Workspace](#create-project-from-data-views) pour la vue de données.<br/>![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Activer pour Data Insights Agent]** pour activer une vue de données pour Data Insights Agent.<br/>![RemoveCircle](/help/assets/icons/RemoveCircle.svg) **[!UICONTROL Désactiver pour Data Insights Agent]** pour désactiver une vue de données pour Data Insights Agent. |
 | **[!UICONTROL Connexion]** | Nom de la connexion associée à la vue de données. |
 | **[!UICONTROL Sandbox]** | Nom du sandbox associé à la vue de données. |
 | **[!UICONTROL Propriétaire]** | Propriétaire de la vue de données. |
@@ -44,7 +44,7 @@ Pour configurer les colonnes à afficher dans le tableau, sélectionnez ![Column
 
 ## Rechercher des vues de données
 
-Vous pouvez rechercher rapidement une vue de données à l’aide de la zone Rechercher ![Rechercher](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg).
+Vous pouvez rechercher rapidement une vue de données à l’aide de la zone ![Rechercher](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg).
 
 ## Filtrer les vues de données
 
@@ -58,6 +58,8 @@ Pour appliquer un filtre à la liste des vues de données, sélectionnez l&#39;i
 | **[!UICONTROL Intégrations]** | Seules les vues de données avec les intégrations sélectionnées s’affichent. |
 | **[!UICONTROL Utiliser dans CJA]** | Sélectionnez **[!UICONTROL Activé]** pour afficher uniquement les vues de données activées pour une utilisation avec Customer Journey Analytics. Sélectionnez **[!UICONTROL Désactivé]** pour afficher uniquement les vues de données qui ne sont pas encore activées pour une utilisation avec Customer Journey Analytics. |
 
+
+Sélectionnez ![Filtrer](/help/assets/icons/Filter.svg) **[!UICONTROL Masquer les filtres]** pour masquer le volet de filtrage.
 
 ## Créer une vue de données
 
@@ -82,7 +84,7 @@ Vous pouvez également effectuer les opérations suivantes :
 Si vous souhaitez copier une vue de données :
 
 1. Sélectionnez ![Plus](/help/assets/icons/More.svg) en regard du nom de la vue de données.
-1. Sélectionnez ![&#x200B; Copier &#x200B;](/help/assets/icons/Copy.svg) **[!UICONTROL Copier]** dans le menu contextuel.
+1. Sélectionnez ![ Copier ](/help/assets/icons/Copy.svg) **[!UICONTROL Copier]** dans le menu contextuel.
 
 Vous pouvez également effectuer les opérations suivantes :
 
@@ -152,4 +154,3 @@ Vous pouvez également effectuer les opérations suivantes :
 
 1. Sélectionnez une ou plusieurs lignes de la vue de données désactivées ou activées pour le Data Insights Agent.
 1. Sélectionnez ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Enable for Data Insights Agent]** ou ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) **[!UICONTROL Disable for Data Insights Agent]** dans la barre d’actions bleue.
-

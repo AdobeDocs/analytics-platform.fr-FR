@@ -1,10 +1,11 @@
 ---
-title: Analyse des audiences Experience Platform dans Customer Journey Analytics
+title: Analyse Des Audiences Experience Platform Dans Customer Journey Analytics
 description: Découvrez comment analyser les audiences Experience Platform dans Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Audiences
 role: Admin
-source-git-commit: e59bb52d5e9d79ba72036d5a00ed8abc69dcf735
+exl-id: 095cae34-1337-464a-9682-3c899295c0a8
+source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 0%
@@ -56,11 +57,3 @@ Utilisez le tableau de ce panneau pour mieux comprendre le comportement de l’a
 Indique l’emplacement de création initial de chaque audience qui a été fermée, que ce soit dans RTCDP, Customer Journey Analytics, etc.
 
 Utilisez le tableau de ce panneau pour mieux comprendre comment l’origine de l’audience peut affecter d’autres facteurs. Faites glisser la dimension Nom de l’audience sortie de la vue de données sélectionnée et ajoutez-la en tant que répartition. Vous pouvez également utiliser toute autre dimension ou mesure d’interaction (telle que Page, Action, etc.) comme répartition.
-
-
-
-
-
-
-
-

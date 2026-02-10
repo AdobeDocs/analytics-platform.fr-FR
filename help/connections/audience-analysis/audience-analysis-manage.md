@@ -1,10 +1,11 @@
 ---
-title: Gestion des configurations d’analyse d’audience
+title: Gérer les configurations de l’analyse de l’audience
 description: Découvrez comment gérer les configurations d’analyse d’audience
 solution: Customer Journey Analytics
 feature: Audiences
 role: Admin
-source-git-commit: e59bb52d5e9d79ba72036d5a00ed8abc69dcf735
+exl-id: 0d38a779-a29f-41c9-81b4-f5523eeae93f
+source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 2%
@@ -17,7 +18,7 @@ Après avoir [créé des configurations d’analyse d’audience](/help/connecti
 
 Seuls les administrateurs système peuvent gérer les configurations d’analyse d’audience.
 
-Pour plus d’informations sur l’analyse de l’audience, voir [&#x200B; Présentation de l’analyse de l’audience](/help/connections/audience-analysis/audience-analysis-overview.md).
+Pour plus d’informations sur l’analyse de l’audience, voir [ Présentation de l’analyse de l’audience](/help/connections/audience-analysis/audience-analysis-overview.md).
 
 ## Affichage et filtrage des configurations existantes
 
@@ -78,7 +79,3 @@ Pour supprimer une configuration d’analyse d’audience existante :
    ![Page principale de l’analyse de l’audience](assets/audience-analysis-manage-configurations.png)
 
 1. Cochez la case en regard de la configuration à supprimer, puis sélectionnez **[!UICONTROL Supprimer]**.
-
-
-
-

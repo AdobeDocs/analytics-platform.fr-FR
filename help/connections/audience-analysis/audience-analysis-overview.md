@@ -4,7 +4,8 @@ description: Découvrez comment analyser les audiences de RTCDP dans Customer Jo
 solution: Customer Journey Analytics
 feature: Audiences
 role: Admin
-source-git-commit: e59bb52d5e9d79ba72036d5a00ed8abc69dcf735
+exl-id: 1e962f52-6b56-4671-afea-d58dae67e8a8
+source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 3%
@@ -85,11 +86,3 @@ Tenez compte des limites suivantes lors de la [configuration de l’analyse de l
 * Un seul sandbox peut prendre en charge jusqu’à 100 configurations d’analyse d’audience.
 
 * Une connexion ne peut être associée qu’à une seule configuration d’analyse d’audience.
-
-
-
-
-
-
-
-

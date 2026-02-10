@@ -1,14 +1,14 @@
 ---
-title: Ajout de recherches standard à vos jeux de données
-description: Utilisez les recherches standard pour augmenter le nombre de rapports avec des dimensions utiles dans Customer Journey Analytics.
+title: Ajouter Des Recherches Standard À Vos Jeux De Données
+description: Découvrez comment utiliser les recherches standard pour augmenter le nombre de rapports avec des dimensions utiles dans Customer Journey Analytics.
 exl-id: ab91659b-a1e6-4f6b-8976-410cf894d1a0
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 47%
+source-wordcount: '433'
+ht-degree: 42%
 
 ---
 
