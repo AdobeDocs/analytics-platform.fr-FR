@@ -1580,10 +1580,10 @@ Vous souhaitez capturer une partie d’une URL et l’utiliser comme identifiant
 
 | URL de la page |
 |---|
-| `https://business.adobe.com/products/analytics/adobe-analytics-benefits.html` |
-| `https://business.adobe.com/products/analytics/adobe-analytics.html` |
-| `https://business.adobe.com/products/experience-platform/customer-journey-analytics.html` |
-| `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html` |
+| `https://business.adobe.com/fr/products/analytics/adobe-analytics-benefits.html` |
+| `https://business.adobe.com/fr/products/analytics/adobe-analytics.html` |
+| `https://business.adobe.com/fr/products/experience-platform/customer-journey-analytics.html` |
+| `https://business.adobe.com/fr/products/experience-platform/adobe-experience-platform.html` |
 
 {style="table-layout:auto"}
 
@@ -2089,7 +2089,7 @@ Les restrictions suivantes s’appliquent à la fonctionnalité Champ dérivé e
 
 - Vous pouvez utiliser un maximum de dix champs de schéma différents (champs standard non inclus) lors de la définition de règles pour un champ dérivé.
    - À partir de ce maximum de dix champs de schéma différents, seul un maximum de trois champs de schéma de recherche ou de profil sont autorisés.
-- Vous pouvez avoir un nombre maximum de champs dérivés par connexion Customer Journey Analytics en fonction du package pour lequel vous disposez d’une licence. Pour plus d’informations, consultez la [description du produit](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html?lang=fr){target="_blank"}.
+- Vous pouvez avoir un nombre maximum de champs dérivés par connexion Customer Journey Analytics en fonction du package pour lequel vous disposez d’une licence. Pour plus d’informations, consultez la [description du produit](https://helpx.adobe.com/fr/legal/product-descriptions/customer-journey-analytics.html?lang=fr){target="_blank"}.
 
 
 ### Résumé des limitations de fonction
