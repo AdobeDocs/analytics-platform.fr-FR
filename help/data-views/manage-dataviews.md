@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 exl-id: c5cf15ab-3eb1-4e6b-93a3-3d89694ca0ea
-source-git-commit: c7cf7250f30e2f6023aa7690391aea149ba12eff
+source-git-commit: e65dd6f71c75c06aac078c22ea7d77eed75cd381
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '922'
 ht-degree: 10%
 
 ---
@@ -35,7 +35,7 @@ Les colonnes et icônes suivantes sont disponibles dans le tableau :
 | **[!UICONTROL Propriétaire]** | Propriétaire de la vue de données. |
 | **[!UICONTROL Data Insights Agent]** ![InfoOutline](/help/assets/icons/InfoOutline.svg) | Indique si le paramètre [Data Insights Agent](/help/data-analysis-ai.md) est **[!UICONTROL Activé]** ou **[!UICONTROL Désactivé]** pour la vue de données. <br/>Sélectionnez ![InfoOutline](/help/assets/icons/InfoOutline.svg) pour afficher un pop-up avec le statut **[!UICONTROL Data Insights Agent]** dans vos vues de données. <br/>![Utilisation de Data Insights Agent](/help/data-views/assets/data-views-dia-status.png) |
 | **[!UICONTROL Intégrations]** | Répertorier les intégrations à d’autres solutions. Par exemple : Adobe Audience Analysis, Content Analytics, Brand Concierge, Journey Optimizer, GenStudio et Usage Analytics. |
-| **[!UICONTROL Utiliser dans CJA]** | Indiquez si la vue de données est utilisée dans Customer Journey Analytics. Cette valeur n’est **[!UICONTROL Désactivée]** que pour les vues de données générées automatiquement dans le cadre de l’intégration de Adobe Journey Optimizer. |
+| **[!UICONTROL Utiliser dans CJA]** | Indique si la vue de données est utilisée dans Customer Journey Analytics. Cette valeur n’est **[!UICONTROL Désactivée]** que pour les vues de données générées automatiquement dans le cadre de l’intégration de Adobe Journey Optimizer. |
 | **[!UICONTROL Date de création]** | Date et heure de création de la vue de données. |
 | **[!UICONTROL Dernière modification]** | Date et heure de la dernière modification de la vue de données. |
 
@@ -84,7 +84,7 @@ Vous pouvez également effectuer les opérations suivantes :
 Si vous souhaitez copier une vue de données :
 
 1. Sélectionnez ![Plus](/help/assets/icons/More.svg) en regard du nom de la vue de données.
-1. Sélectionnez ![&#x200B; Copier &#x200B;](/help/assets/icons/Copy.svg) **[!UICONTROL Copier]** dans le menu contextuel.
+1. Sélectionnez ![ Copier ](/help/assets/icons/Copy.svg) **[!UICONTROL Copier]** dans le menu contextuel.
 
 Vous pouvez également effectuer les opérations suivantes :
 
