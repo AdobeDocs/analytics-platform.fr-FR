@@ -84,7 +84,7 @@ Vous pouvez également effectuer les opérations suivantes :
 Si vous souhaitez copier une vue de données :
 
 1. Sélectionnez ![Plus](/help/assets/icons/More.svg) en regard du nom de la vue de données.
-1. Sélectionnez ![ Copier ](/help/assets/icons/Copy.svg) **[!UICONTROL Copier]** dans le menu contextuel.
+1. Sélectionnez ![&#x200B; Copier &#x200B;](/help/assets/icons/Copy.svg) **[!UICONTROL Copier]** dans le menu contextuel.
 
 Vous pouvez également effectuer les opérations suivantes :
 
