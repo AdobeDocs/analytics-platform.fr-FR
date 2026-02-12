@@ -3,9 +3,10 @@ title: Inclure plusieurs dimensions dans un tableau à structure libre
 description: Découvrez comment inclure plusieurs dimensions dans un tableau à structure libre
 feature: Visualizations
 role: User
-source-git-commit: 696bd0db44949162307d8ce7d2debed351a76cd6
+exl-id: 66ebb4fc-feb2-4fa7-a107-37508cca4748
+source-git-commit: 14718476695dcf121c94ba4cb8b2c39e5874342d
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '836'
 ht-degree: 2%
 
 ---
@@ -109,11 +110,12 @@ Lorsque vous créez un segment basé sur un élément de dimension qui s’éten
 
 Pour plus d’informations sur la création d’un segment, voir [Créer des segments](/help/components/segments/seg-create.md).
 
-## Dimensions non prises en charge {#unsupported}
+## Dimensions et fonctionnalités non prises en charge {#unsupported}
 
-Les combinaisons de dimensions suivantes ne sont pas prises en charge. Analysis Workspace les interdit ou affiche un message d’erreur une fois ajoutées :
+Les combinaisons et fonctions de dimensions suivantes ne sont pas prises en charge lors de l’utilisation de plusieurs colonnes de dimensions. Analysis Workspace interdit leur utilisation ou affiche un message d’erreur :
 
 * Dimensions multiples provenant de champs référençant différents [tableaux d’objets](/help/use-cases/object-arrays.md) utilisés ensemble dans le même tableau à structure libre.
 
   Plusieurs dimensions sont autorisées ensemble dans le même tableau à structure libre si elles référencent le même tableau d’objets.
 
+* [Éléments de dimension statiques](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md#static-dimension-items).
