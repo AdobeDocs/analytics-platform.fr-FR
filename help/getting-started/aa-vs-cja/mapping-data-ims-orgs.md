@@ -5,7 +5,7 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Adobe Analytics Integration,Administration
 exl-id: c109742b-c1c5-45b3-971f-f8dcf814ec37
-source-git-commit: 888420e8cd11cd447fec99257b213669edd345c1
+source-git-commit: ff0a5eb5b04f604eff41a18b05199b517d1a2d14
 workflow-type: tm+mt
 source-wordcount: '1073'
 ht-degree: 1%
@@ -51,7 +51,7 @@ Pour configurer et activer la fonctionnalité *Mappage de données entre service
 
 Une fois que le gestionnaire de compte Adobe reçoit l’e-mail avec la demande de mappage des données Analytics de plusieurs organisations, la demande est examinée dans Adobe. Le gestionnaire de compte Adobe vous contacte pour toute question supplémentaire, formation facultative et autres informations.
 
-Une fois approuvé, le mappage demandé est créé et vous en êtes informé. Le nom de l’organisation IMS source est ajouté au nom de la suite de rapports dans la [liste des suites de rapports Analytics](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#select-data) dans Experience Platform.
+Une fois approuvé, le mappage demandé est créé et vous en êtes informé. Le nom de l’organisation IMS source est ajouté au nom de la suite de rapports dans la [liste des suites de rapports Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#select-data) dans Experience Platform.
 
 
 ## Restrictions
@@ -69,9 +69,9 @@ Vous pouvez prendre en compte les rubriques suivantes avant de demander la fonct
 
 ### Profils
 
-Une fois la fonctionnalité de *mappage de données Cross-IMS* approuvée, vous pouvez ajouter des données à Experience Platform pour une ou plusieurs suites de rapports dans l’organisation IMS de destination. Pour ce faire, vous devez configurer le [&#x200B; connecteur source Analytics &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics?lang=fr). Les jeux de données cibles sont ensuite créés dans Experience Platform. Dans le cadre de cette configuration et de ce processus, vous avez la possibilité d’envoyer des données de profil d’une ou de plusieurs suites de rapports au service Profil.
+Une fois la fonctionnalité de *mappage de données Cross-IMS* approuvée, vous pouvez ajouter des données à Experience Platform pour une ou plusieurs suites de rapports dans l’organisation IMS de destination. Pour ce faire, vous devez configurer le [ connecteur source Analytics ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics?lang=fr). Les jeux de données cibles sont ensuite créés dans Experience Platform. Dans le cadre de cette configuration et de ce processus, vous avez la possibilité d’envoyer des données de profil d’une ou de plusieurs suites de rapports au service Profil.
 
-Estimez le nombre total de profils résultant de la configuration et du processus, comme indiqué ci-dessus. Assurez-vous que le nombre total se situe dans la limite du nombre de profils auxquels vous avez contractuellement droit pour l’organisation de destination. Appliquez [&#x200B; règles et conditions de filtrage &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#filtering-for-profile){target="_blank"} pour inclure ou exclure des données de manière sélective de l’ingestion vers le service Profil. Ou désactivez l’option permettant d’envoyer des données de profil au service Profil pour les suites de rapports pertinentes.
+Estimez le nombre total de profils résultant de la configuration et du processus, comme indiqué ci-dessus. Assurez-vous que le nombre total se situe dans la limite du nombre de profils auxquels vous avez contractuellement droit pour l’organisation de destination. Appliquez [ règles et conditions de filtrage ](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#filtering-for-profile){target="_blank"} pour inclure ou exclure des données de manière sélective de l’ingestion vers le service Profil. Ou désactivez l’option permettant d’envoyer des données de profil au service Profil pour les suites de rapports pertinentes.
 
 
 #### Groupement
@@ -88,3 +88,4 @@ Un utilisateur disposant des autorisations suffisantes pour configurer le connec
 ### Rapport sur les données
 
 La fonction *Mappage de données entre services IMS* n’est qu’une première étape pour vous assurer que vous pouvez utiliser les données dans le cadre d’un Customer Journey Analytics [connexion](/help/connections/overview.md), d’une ou de plusieurs [vues de données](/help/data-views/data-views.md) et [projets d’espace de travail](/help/analysis-workspace/home.md). Vous devez examiner attentivement les données que vous avez désormais disponibles dans une organisation IMS. Tenez également compte de fonctionnalités telles que la préparation des données, les champs dérivés, les tables de recherche supplémentaires, etc. avant de pouvoir créer des rapports corrects sur ces données.
+
