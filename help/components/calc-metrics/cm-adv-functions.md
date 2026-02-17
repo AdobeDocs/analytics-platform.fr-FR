@@ -4,9 +4,9 @@ description: Découvrez les fonctions de mesures calculées avancées.
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: fa66083b922c903f6a7b0608d91f26e85bd8374f
+source-git-commit: a5e07891b23184dfe5d4c3f1b2c4b36b6884fb72
 workflow-type: tm+mt
-source-wordcount: '5272'
+source-wordcount: '5294'
 ht-degree: 99%
 
 ---
@@ -1351,11 +1351,11 @@ Renvoie Pi : 3,14159...
 >[!CONTEXTUALHELP]
 >id="functions-waskr-variance-estimate"
 >title="Variance de l’échantillon"
->abstract="Calcule une estimation de l&#39;écart d&#39;échantillon à l&#39;aide de la formule `(sum(metric^2) / (N - 1)) - (sum(metric))^2/(N*(N-1))`. où `N` correspond au nombre de conteneurs de normalisation. <br/>Ceci est utilisé dans le cadre des calculs de confiance *valides à tout moment*. En règle générale, cette fonction n’est pas utile seule, mais elle peut être utilisée pour vérifier les calculs ou pour effectuer des calculs de confiance *manuellement*."
+>abstract="Calcule une estimation de la variance de l’échantillon à l’aide de la formule (sum(metric^2) / (N - 1)) - (sum(metric))^2/(N*(N-1)). où N est le nombre du conteneur de normalisation. <br/>Ceci est utilisé dans le cadre des calculs de confiance *valides à tout moment*. En règle générale, cette fonction n’est pas utile seule, mais elle peut être utilisée pour vérifier les calculs ou pour effectuer des calculs de confiance *manuellement*."
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL VARIANCE D’ÉCHANTILLONNAGE(conteneur-normalisation, mesure-succès)]**
 
-Calcule une estimation de l&#39;écart d&#39;échantillon à l&#39;aide de la formule `(sum(metric^2) / (N - 1)) - (sum(metric))^2/(N*(N-1))`. où `N` correspond au nombre de conteneurs de normalisation.<br/>Ceci est utilisé dans le cadre des calculs de confiance *valides à tout moment*. En règle générale, cette fonction n’est pas utile seule, mais elle peut être utilisée pour vérifier les calculs ou pour effectuer des calculs de confiance *manuellement*.
+Calcule une estimation de la variance de l’échantillon à l’aide de la formule (sum(metric^2) / (N - 1)) - (sum(metric))^2/(N*(N-1)). où N est le nombre du conteneur de normalisation.<br/>Ceci est utilisé dans le cadre des calculs de confiance *valides à tout moment*. En règle générale, cette fonction n’est pas utile seule, mais elle peut être utilisée pour vérifier les calculs ou pour effectuer des calculs de confiance *manuellement*.
 
 | Argument | Description |
 | --- | --- |
