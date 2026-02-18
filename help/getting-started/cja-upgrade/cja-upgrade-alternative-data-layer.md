@@ -43,7 +43,7 @@ ht-degree: 50%
 
 {{upgrade-note}}
 
-Lors de la mise à niveau vers Customer Journey Analytics, Adobe [recommande une nouvelle implémentation du SDK web Experience Platform](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md). Cependant, en fonction de plusieurs facteurs, tels que les contraintes de calendrier et de ressources, les étapes de mise à niveau recommandées peuvent ne pas être pratiques pour votre organisation.
+Lors de la mise à niveau vers Customer Journey Analytics, Adobe [recommande une nouvelle implémentation du SDK web Experience Platform](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md). Cependant, en fonction de plusieurs facteurs, tels que les contraintes de chronologie et de ressources, les étapes de mise à niveau recommandées peuvent ne pas être pratiques pour votre organisation.
 
 Vous pouvez envoyer l’intégralité de la couche de données à Customer Journey Analytics au lieu de collecter des données avec l’objet XDM. Cependant, cette alternative introduit une complexité supplémentaire au fil du temps.
 

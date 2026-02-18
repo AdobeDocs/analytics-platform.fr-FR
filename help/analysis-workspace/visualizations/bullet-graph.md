@@ -33,7 +33,7 @@ ht-degree: 90%
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente la visualisation Puces dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consultez [Puces](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph) pour la_ version ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** de cet article._
+_Cet article présente la visualisation Puces dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consultez [Puces](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph) pour la_ version ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 
@@ -45,7 +45,7 @@ Le graphique à puces présente une mesure principale unique (par exemple, le ch
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisation sous forme de graphiques à puces](https://video.tv.adobe.com/v/41508/?captions=fre_fr&quality=12/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisation sous forme de graphiques à puces](https://video.tv.adobe.com/v/23989/?quality=12/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 
@@ -58,12 +58,12 @@ Vous pouvez définir des paramètres spécifiques pour une visualisation [!UICON
 
 | Paramètre | Description |
 |---|---|
-| **[!UICONTROL Options de puces]** | Spécifiez des valeurs pour **[!UICONTROL Objectif élevé]**, **[!UICONTROL Objectif intermédiaire]** et **[!UICONTROL Objectif faible]** dans la visualisation [!UICONTROL Puces]. L’<br/>**[!UICONTROL objectif élevé&#x200B;]**&#x200B;est votre objectif principal. L’**[!UICONTROL &#x200B; objectif faible &#x200B;]**&#x200B;et l’**[!UICONTROL &#x200B; objectif moyen &#x200B;]**&#x200B;créent des plages sous l’objectif élevé. Remarque : si vous cochez l’option&#x200B;**[!UICONTROL &#x200B; Pourcentages &#x200B;]**, saisissez les objectifs sous forme de nombres entiers. Par exemple `20` si votre objectif est de vingt pour cent. |
+| **[!UICONTROL Options de puces]** | Spécifiez des valeurs pour **[!UICONTROL Objectif élevé]**, **[!UICONTROL Objectif intermédiaire]** et **[!UICONTROL Objectif faible]** dans la visualisation [!UICONTROL Puces]. L’<br/>**[!UICONTROL objectif élevé&#x200B;]**est votre objectif principal. L’**[!UICONTROL  objectif faible ]**et l’**[!UICONTROL  objectif moyen ]**créent des plages sous l’objectif élevé. Remarque : si vous cochez l’option**[!UICONTROL  Pourcentages ]**, saisissez les objectifs sous forme de nombres entiers. Par exemple `20` si votre objectif est de vingt pour cent. |
 
 >[!MORELIKETHIS]
 >
 >[Ajouter une visualisation à un panneau](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->&#x200B;>[Paramètres de visualisation](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->&#x200B;>[Menu contextuel de visualisation](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>[Paramètres de visualisation](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[Menu contextuel de visualisation](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
 

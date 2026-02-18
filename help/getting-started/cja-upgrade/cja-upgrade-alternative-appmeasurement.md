@@ -34,7 +34,7 @@ ht-degree: 58%
 
 {{upgrade-note}}
 
-Lors de la mise à niveau vers Customer Journey Analytics, Adobe [recommande une nouvelle implémentation du SDK web Experience Platform](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md). Cependant, en fonction de plusieurs facteurs, tels que les contraintes de calendrier et de ressources, les étapes de mise à niveau recommandées peuvent ne pas être pratiques pour votre organisation.
+Lors de la mise à niveau vers Customer Journey Analytics, Adobe [recommande une nouvelle implémentation du SDK web Experience Platform](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md). Cependant, en fonction de plusieurs facteurs, tels que les contraintes de chronologie et de ressources, les étapes de mise à niveau recommandées peuvent ne pas être pratiques pour votre organisation.
 
 Vous pouvez utiliser la logique de collecte de données de l’extension AppMeasurement ou Analytics avec le SDK Web afin d’envoyer des données à Platform et à Customer Journey Analytics, au lieu de collecter des données avec l’objet XDM. Cependant, cette alternative introduit une complexité supplémentaire au fil du temps.
 
@@ -70,7 +70,7 @@ Les étapes de base pour migrer une implémentation d’Adobe Analytics (AppMeas
 
    1. Envoyez toutes vos variables au format AppMeasurement via l’objet de données.
 
-      Pour plus d’informations, voir [Mappage des variables d’objet de données à Adobe Analytics](https://experienceleague.adobe.com/fr/docs/analytics/implementation/aep-edge/data-var-mapping).
+      Pour plus d’informations, voir [Mappage des variables d’objet de données à Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping).
 
    1. Choisissez votre schéma.
 
@@ -96,7 +96,7 @@ Les étapes de base pour migrer une implémentation d’Adobe Analytics (AppMeas
 
    1. Utilisez le mappage des flux de données pour mapper tous les champs de l’objet de données à votre schéma XDM.
 
-      Pour plus d’informations, consultez [Mappage](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/data-prep?lang=en#mapping) dans [Préparation des données pour la collecte de données](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/data-prep) dans la documentation d’Experience Platform.
+      Pour plus d’informations, consultez [Mappage](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep?lang=en#mapping) dans [Préparation des données pour la collecte de données](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) dans la documentation d’Experience Platform.
 
 {{upgrade-final-step}}.
 
