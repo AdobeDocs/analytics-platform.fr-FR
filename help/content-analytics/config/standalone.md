@@ -82,7 +82,7 @@ Vous avez besoin d’un administrateur système ou d’un administrateur de prod
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Gérer les utilisateurs pour un profil de produit](https://video.tv.adobe.com/v/333860/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Gérer les utilisateurs pour un profil de produit](https://video.tv.adobe.com/v/3475943/?captions=fre_fr&quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 
 >[!ENDSHADEBOX]
