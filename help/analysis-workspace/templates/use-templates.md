@@ -4,10 +4,10 @@ title: Utiliser des modèles
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 9b941deb424d92744bea99f6ea01f6434d6bc19f
+source-git-commit: 02aa4b4c9b357efca3d620bb72d8a505153bc079
 workflow-type: tm+mt
-source-wordcount: '20935'
-ht-degree: 97%
+source-wordcount: '21006'
+ht-degree: 96%
 
 ---
 
@@ -15,15 +15,15 @@ ht-degree: 97%
 
 Les modèles (ou modèles d’entreprise) dans Analysis Workspace fournissent un aperçu rapide sur les scénarios de création de rapports les plus courants. Voici quelques exemples de questions auxquelles vous pouvez répondre à l’aide de modèles :
 
-* Nombre de visiteurs sur votre site
-* Nombre de ces visites qui sont uniques (comptabilisées une seule fois)
-* Leur acheminement vers le site (s’ils ont suivi un lien ou se sont rendus directement dessus)
-* Mots-clés utilisés par les visiteurs pour rechercher le contenu du site
-* Leur durée passée sur une page donnée ou sur le site entier
-* Liens sur lesquels les visiteurs ont cliqué et le moment où ils ont quitté le site
-* Les canaux marketing les plus efficaces pour générer des recettes ou des événements de conversion
-* Le temps passé à regarder une vidéo
-* Les navigateurs et appareils utilisés pour consulter votre site
+* Nombre de personnes qui visitent votre site.
+* Nombre de ces visiteurs et visiteuses qui sont des visiteurs et visiteuses uniques (comptabilisés une seule fois).
+* comment ils sont arrivés sur le site (par exemple, s’ils ont suivi un lien ou s’ils y sont venus directement) ;
+* Mots-clés utilisés par les visiteurs et visiteuses pour rechercher du contenu sur le site.
+* Durée pendant laquelle les visiteurs et visiteuses sont restés sur une page donnée ou sur l’ensemble du site.
+* Les liens sur lesquels les visiteurs et visiteuses ont cliqué et le moment où ils ont quitté le site.
+* Les canaux marketing les plus efficaces pour générer du chiffre d’affaires ou des événements de conversion.
+* Combien de temps ils ont passé à regarder une vidéo ?
+* Les navigateurs et appareils utilisés pour visiter votre site.
 
 Les informations suivantes décrivent comment accéder aux modèles à partir de l’onglet [!UICONTROL Modèles] dans Analysis Workspace.
 
@@ -1117,11 +1117,15 @@ Les modèles suivants sont disponibles :
 
 ### Modèles Mix Modeler {#mix-modeler-templates}
 
+Les modèles suivants sont disponibles :
+
+| Nom du modèle | Pourquoi utiliser ce modèle <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+| --- | --- |
+| [!UICONTROL **Informations sur le modèle incrémentiel de Mix Modeler**] | Affichez les informations des modèles sélectionnés générés par Mix Modeler.<p>**Cela peut vous aider** afin de mieux comprendre les informations incrémentielles des modèles générés dans Mix Modeler. <p>**En vous basant sur ces informations** vous serez en mesure de :<ul><li>Visualisez et quantifiez l’impact des activités marketing de votre organisation.</li><li>Identifiez les canaux les plus performants.</li><li>Identifiez les canaux qui peuvent nécessiter une optimisation.</li></ul></p> |
+
 <!-- CJA only -->
 
 >[!CONTEXTUALHELP]
->id="template--mixModelerReport"
+>id="template--mixmodeler-incremental-models-insights"
 >title="Affichez les informations des modèles sélectionnés générés par Mix Modeler."
 >abstract="**Cela peut vous aider** afin de mieux comprendre les informations incrémentielles des modèles générés dans Mix Modeler. <br/>**En vous basant sur ces informations** vous serez en mesure de :<ul><li>Visualisez et quantifiez l’impact des activités marketing de votre organisation.</li><li>Identifiez les canaux les plus performants.</li><li>Identifiez les canaux qui peuvent nécessiter une optimisation.</li></ul>"
-
-
