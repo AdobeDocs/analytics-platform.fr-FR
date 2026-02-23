@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: b9b73926-6502-4a48-ba73-c784f80950d3
-source-git-commit: 0eb3fec2e52fe0850c5f42777edbdb5d981988fb
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '1726'
+source-wordcount: '1727'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Bien que ces méthodes d’analyse puissent être utilisées pour le groupement 
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Activation et validation du groupement](https://video.tv.adobe.com/v/3478122?captions=fre_fr&quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Activation et validation du groupement](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/visitor-id/stitching-enablement-and-validation){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 
@@ -84,7 +84,7 @@ Vous obtiendrez des informations supplémentaires en définissant deux mesures c
 
 * **[!UICONTROL Taux d’authentification des emails]**. Cette mesure calculée détermine le taux d’authentification avant le processus de groupement.
 
-  ![&#x200B; Définition de la mesure calculée Taux d’authentification des e-mails &#x200B;](/help/stitching/assets/cm-email-authentication-rate.png)
+  ![ Définition de la mesure calculée Taux d’authentification des e-mails ](/help/stitching/assets/cm-email-authentication-rate.png)
 
 * **[!UICONTROL Taux d’authentification groupée]**. Cette mesure calculée détermine le taux d’authentification après le processus de groupement.
 

@@ -5,10 +5,10 @@ title: Table Des Matières
 feature: Workspace Basics
 role: User
 exl-id: 4eb7de7a-ec40-4a59-afc4-94131e91a35f
-source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 88%
+source-wordcount: '210'
+ht-degree: 89%
 
 ---
 
@@ -18,7 +18,7 @@ Vous pouvez afficher la table des matières d’un projet dans Analysis Workspa
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Créer une table des matières](https://video.tv.adobe.com/v/35025/?captions=fre_fr&quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Créer une table des matières](https://experienceleague.adobe.com/fr/docs/analytics-learn/tutorials/analysis-workspace/navigating-workspace-projects/create-a-toc-in-analysis-workspace){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 
@@ -46,4 +46,4 @@ Pour afficher la table des matières d’un projet, procédez comme suit :
 
 >[!MORELIKETHIS]
 >
->* [Simplifier la navigation dans les tableaux de bord avec la nouvelle fonctionnalité Table des matières d’Adobe Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/simplify-dashboard-navigation-with-the-new-table-of-contents/ba-p/731284?profile.language=fr)
+>* [Simplifier la navigation dans les tableaux de bord avec la nouvelle fonctionnalité Table des matières d’Adobe Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/simplify-dashboard-navigation-with-the-new-table-of-contents/ba-p/731284)

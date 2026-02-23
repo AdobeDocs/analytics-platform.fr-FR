@@ -5,9 +5,9 @@ feature: Analytics Dashboards
 role: User, Admin
 solution: Customer Journey Analytics
 exl-id: 6a0de7db-689d-448d-b8e0-90af4a5ee325
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '1806'
+source-wordcount: '1808'
 ht-degree: 85%
 
 ---
@@ -24,7 +24,7 @@ Lorsque vous cliquez sur une vignette dans le créateur de cartes de performance
 
 ## Afficher les diapositives détaillées {#view-detail-slides}
 
-Si vous cliquez sur les vignettes, une fenêtre pop-up dynamique monte comment l’utilisateur en charge de l’exécution voit la diapositive détaillée dans l’application. Vous pouvez ajouter des dimensions pour ventiler vos données selon vos besoins. Si aucune dimension n’a été appliquée, la dimension de répartition sera **heure** ou **jours**, en fonction de la période par défaut.
+Si vous cliquez sur les vignettes, une fenêtre pop-up dynamique monte comment la personne en charge de l’exécution voit la diapositive détaillée dans l’application. Vous pouvez ajouter des dimensions pour ventiler vos données selon vos besoins. Si aucune dimension n’a été appliquée, la dimension de répartition sera **heure** ou **jours**, en fonction de la période par défaut.
 
 Les répartitions affinent votre analyse en répartissant les mesures par éléments de dimension, tels que :
 
@@ -42,7 +42,7 @@ Les diapositives détaillées personnalisées vous permettent d’être encore p
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Vues détaillées personnalisées](https://video.tv.adobe.com/v/3413787?captions=fre_fr&quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Vues détaillées personnalisées](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/visitor-id/stitching-enablement-and-validation){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 
@@ -86,7 +86,7 @@ Regardez la vidéo pour en savoir plus sur la création d’histoires de donnée
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Histoires de données pour les projets de cartes de performance mobiles](https://video.tv.adobe.com/v/3420560/?captions=fre_fr&quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Histoires de données pour les projets de cartes de performance mobiles](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 
@@ -229,7 +229,7 @@ Pour afficher des légendes intelligentes dans une carte de performance mobile :
 
 1. Appuyez sur l’icône bleue en haut à droite pour générer les légendes. Les légendes s’affichent sous le graphique linéaire.
 
-   ![&#x200B; Légende intelligente dans la visualisation en ligne &#x200B;](assets/caption2.png)
+   ![ Légende intelligente dans la visualisation en ligne ](assets/caption2.png)
 
 1. Balayez vers la droite pour afficher toutes les légendes intelligentes.
 

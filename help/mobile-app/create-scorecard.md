@@ -5,9 +5,9 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '2698'
+source-wordcount: '2701'
 ht-degree: 98%
 
 ---
@@ -29,7 +29,7 @@ Les informations suivantes indiquent aux curateurs et curatrices des données Cu
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Créer une carte de performance mobile](https://video.tv.adobe.com/v/3409729?captions=fre_fr&quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Créer une carte de performance mobile](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 
@@ -79,7 +79,7 @@ Pour implémenter le modèle de carte de performance, procédez comme suit :
 
 1. Pour ajouter une nouvelle tuile à votre carte de performance, faites glisser une mesure depuis le panneau de gauche et déposez-la dans la zone **[!UICONTROL Faire glisser et déposer les mesures ici]**. Vous pouvez également insérer une mesure entre deux mosaïques en utilisant un workflow similaire.
 
-   ![Fenêtre de nouvelle carte de performance mobile avec une flèche pointant vers une mesure (Nouveau KPI) déposée dans la carte de performance. &#x200B;](assets/build_list.png)
+   ![Fenêtre de nouvelle carte de performance mobile avec une flèche pointant vers une mesure (Nouveau KPI) déposée dans la carte de performance. ](assets/build_list.png)
 
 
 1. Depuis chaque mosaïque, vous pouvez accéder à une vue détaillée qui affiche des informations supplémentaires sur la mesure comme les éléments principaux pour une liste de dimensions associées.
@@ -193,7 +193,7 @@ Lorsque vous cliquez sur une vignette dans le créateur de cartes de performance
 
 ## Afficher les diapositives détaillées {#view-detail-slides}
 
-Si vous cliquez sur les vignettes, une fenêtre pop-up dynamique monte comment l’utilisateur en charge de l’exécution voit la diapositive détaillée dans l’application. Vous pouvez ajouter des dimensions pour ventiler vos données selon vos besoins. Si aucune dimension n’a été appliquée, la dimension de répartition sera **heure** ou **jours**, en fonction de la période par défaut.
+Si vous cliquez sur les vignettes, une fenêtre pop-up dynamique monte comment la personne en charge de l’exécution voit la diapositive détaillée dans l’application. Vous pouvez ajouter des dimensions pour ventiler vos données selon vos besoins. Si aucune dimension n’a été appliquée, la dimension de répartition sera **heure** ou **jours**, en fonction de la période par défaut.
 
 Les répartitions affinent votre analyse en répartissant les mesures par éléments de dimension, tels que :
 
@@ -212,7 +212,7 @@ Les diapositives détaillées personnalisées vous permettent d’être encore p
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Vues détaillées personnalisées](https://video.tv.adobe.com/v/3413787?captions=fre_fr&quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Vues détaillées personnalisées](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/visitor-id/stitching-enablement-and-validation){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 
@@ -257,7 +257,7 @@ Regardez la vidéo pour en savoir plus sur la création d’histoires de donnée
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Histoires de données pour un projet de carte de performance mobile](https://video.tv.adobe.com/v/3420560/?captions=fre_fr&quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Histoires de données pour un projet de carte de performance mobile](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 

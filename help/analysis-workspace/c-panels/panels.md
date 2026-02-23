@@ -4,10 +4,10 @@ title: Vue d’ensemble des panneaux
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '2193'
-ht-degree: 100%
+source-wordcount: '2194'
+ht-degree: 99%
 
 ---
 
@@ -24,10 +24,10 @@ Les types de panneau suivants sont disponibles dans Analysis Workspace pour [!U
 | [Panneau vierge](/help/analysis-workspace/c-panels/blank-panel.md) | Faites votre choix parmi les panneaux et visualisations disponibles pour démarrer votre analyse. |
 | [Attribution](attribution.md) | Comparez et visualisez rapidement de nombreux modèles d’attribution en utilisant n’importe quelle dimension ou mesure de conversion. |
 | [Expérimentation](experimentation.md) | Comparez différentes expériences utilisateur, variantes de marketing ou de messagerie pour déterminer le meilleur moyen d’obtenir un résultat spécifique. |
-| [Structure libre](freeform-panel.md) | Effectuez des comparaisons et des répartitions illimitées, puis ajoutez des visualisations pour raconter une histoire riche en données. |
+| [Tableau à structure libre](freeform-panel.md) | Effectuez des comparaisons et des répartitions illimitées, puis ajoutez des visualisations pour raconter une histoire riche en données. |
 | [Audience moyenne par minute de média](average-minute-audience-panel.md) | Analysez l’audience moyenne par minute pour un élément spécifique de contenu ou au cours d’une période personnalisée. |
-| [Visionneuses simultanées de médias](media-concurrent-viewers.md) | Analysez les visionneuses au fil du temps, avec des informations sur la simultanéité la plus élevée, et sur la capacité à ventiler et à comparer. |
-| [Temps passé à lire des médias](/help/analysis-workspace/c-panels/media-playback-time-spent.md) | L’analyse du temps de lecture permet de déterminer où se produisent les pics d’audience mais aussi où des abandons ont eu lieu. |
+| [Visionneuses simultanées de médias ](media-concurrent-viewers.md) | Analysez les visionneuses au fil du temps, avec des informations sur la simultanéité la plus élevée, et sur la capacité à ventiler et à comparer. |
+| [Temps de lecture du média](/help/analysis-workspace/c-panels/media-playback-time-spent.md) | L’analyse du temps de lecture permet de déterminer où se produisent les pics d’audience mais aussi où des abandons ont eu lieu. |
 | [Élément suivant ou précédent](next-previous.md) | Affiche les pages visitées suivantes ou précédentes. |
 | [Aperçu rapide](quickinsight.md) | Construisez rapidement un tableau à structure libre et une visualisation d’accompagnement afin d’analyser et de mettre en évidence les informations plus rapidement. |
 
@@ -57,7 +57,7 @@ Vous pouvez effectuer les opérations suivantes :
   |---|---|
   | ![Tableau](/help/assets/icons/Table.svg) | [Tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) |
   | ![Ligne](/help/assets/icons/GraphTrend.svg) | [Ligne](/help/analysis-workspace/visualizations/line.md) |
-  | ![Graphique à barres verticales](/help/assets/icons/GraphBarVertical.svg) | [Barre](/help/analysis-workspace/visualizations/bar.md) |
+  | ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) | [Barre](/help/analysis-workspace/visualizations/bar.md) |
   | ![123](/help/assets/icons/123.svg) | [Numéro de résumé](/help/analysis-workspace/visualizations/summary-number-change.md) |
   | ![Texte](/help/assets/icons/Text.svg) | [Texte](/help/analysis-workspace/visualizations/text.md) |
   | ![Entonnoir de conversion](/help/assets/icons/ConversionFunnel.svg) | [Abandon](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) |
@@ -167,7 +167,7 @@ Pour en savoir plus, consultez [Segments rapides](/help/components/segments/seg-
 
 >[!BEGINSHADEBOX]
 
-Voir ![VidéoConsultée](/help/assets/icons/VideoCheckedOut.svg) [Segments déroulants](https://video.tv.adobe.com/v/327485?captions=fre_fr&quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+Voir ![VidéoConsultée](/help/assets/icons/VideoCheckedOut.svg) [Segments déroulants](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 

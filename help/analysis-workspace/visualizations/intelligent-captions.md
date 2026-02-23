@@ -4,9 +4,9 @@ title: Légendes intelligentes
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '758'
 ht-degree: 100%
 
 ---
@@ -28,7 +28,7 @@ Les légendes intelligentes sont conçues pour les personnes suivantes :
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Légendes intelligentes](https://video.tv.adobe.com/v/3443140/?captions=fre_fr&quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Légendes intelligentes](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/intelligent-captions){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 

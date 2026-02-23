@@ -6,9 +6,9 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 7429d8f9-1e8f-4fbd-8b04-cbe7adbff3e2
-source-git-commit: 31d3b40ad7a081aefa4297d7f4a3b986711ead03
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '858'
+source-wordcount: '859'
 ht-degree: 14%
 
 ---
@@ -24,7 +24,7 @@ La fonction de planification vous permet également de configurer la protection 
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Schedule Workbooks](https://video.tv.adobe.com/v/3417504/?captions=fre_fr&quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Schedule Workbooks](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/exporting/report-builder/schedule-cja-workbooks-using-report-builder){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 
@@ -131,5 +131,5 @@ Pour annuler l’envoi du classeur, sélectionnez **[!UICONTROL Annuler]**.
 
 ## Gérer les classeurs planifiés
 
-Pour plus d’informations sur la gestion des classeurs déjà planifiés, voir [&#x200B; Gérer les classeurs planifiés &#x200B;](/help/report-builder/manage-schedules-reportbuilder.md).
+Pour plus d’informations sur la gestion des classeurs déjà planifiés, voir [ Gérer les classeurs planifiés ](/help/report-builder/manage-schedules-reportbuilder.md).
 

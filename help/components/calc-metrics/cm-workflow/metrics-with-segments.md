@@ -3,9 +3,9 @@ description: Découvrez comment segmenter des mesures individuelles, ce qui vous
 title: Mesures Segmentées
 feature: Calculated Metrics
 exl-id: 37cc93df-9f51-42b3-918f-ed5864991621
-source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '491'
 ht-degree: 1%
 
 ---
@@ -90,7 +90,7 @@ Répétez les étapes ci-dessus pour la version internationale de votre mesure c
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Utiliser une mesure calculée segmentée comme mesure sans implémentation](https://video.tv.adobe.com/v/37941?captions=fre_fr&quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Utiliser une mesure calculée segmentée comme mesure sans implémentation](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-segmented-metrics){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 

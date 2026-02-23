@@ -1,12 +1,12 @@
 ---
-title: Dispersion
+title: Nuage de points
 description: Découvrez comment créer et interpréter des visualisations Nuage de points dans Analysis Workspace pour analyser les relations entre les éléments de dimension et jusqu’à trois mesures.
 feature: Visualizations
 exl-id: c01386c9-c51f-46f3-b1a2-41a8d8996d04
 role: User
-source-git-commit: a625c0b505802eb91d04e21223f1b429bdf9117b
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '232'
 ht-degree: 65%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 65%
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente la visualisation Dispersion dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consultez [Dispersion](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/scatterplot) pour la_ version![&#x200B; &#x200B;](/help/assets/icons/AdobeAnalytics.svg)AdobeAnalytics _&#x200B;**Adobe Analytics** de cet article._
+_Cet article présente la visualisation Dispersion dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consultez [Dispersion](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/scatterplot) pour la_ version![ ](/help/assets/icons/AdobeAnalytics.svg)AdobeAnalytics _**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 
@@ -40,7 +40,7 @@ La visualisation ![GraphScatter](/help/assets/icons/GraphScatter.svg) **[!UICONT
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisation Dispersion](https://video.tv.adobe.com/v/3416860/?captions=fre_fr&quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisation Dispersion](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/use-scatterplot-visualizations){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 

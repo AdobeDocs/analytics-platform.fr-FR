@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 exl-id: a4f97458-9934-4a98-8005-fa1ba7831101
 role: User
-source-git-commit: be617c59cd2fced0031fda1130b86e638bee8f68
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '716'
+source-wordcount: '717'
 ht-degree: 93%
 
 ---
@@ -41,7 +41,7 @@ De la même manière que pour l’analyse [Active](active-growth.md), les utilis
 >
 >Les utilisateurs et utilisatrices réguliers ne sont pas pris en compte dans ce calcul, car ils ne représentent aucun gain ni aucune perte pour les utilisateurs et utilisatrices.
 
->[!VIDEO](https://video.tv.adobe.com/v/3423460/?captions=fre_fr&quality=12&learn=on)
+>[!VIDEO](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/net-growth)
 
 
 ## Cas d’utilisation

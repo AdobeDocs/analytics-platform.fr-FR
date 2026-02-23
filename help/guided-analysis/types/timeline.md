@@ -5,10 +5,10 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 role: User
 exl-id: d3da9257-a133-46c8-8fac-1a33d3372bb7
-source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '577'
-ht-degree: 100%
+source-wordcount: '578'
+ht-degree: 99%
 
 ---
 
@@ -34,7 +34,7 @@ L’analyse ![Chronologie](/help/assets/icons/Timeline.svg) **[!UICONTROL Chrono
 >* **Admins** : *la propriété PersonID est requise pour cette analyse. Ajoutez l’ID de personne à la vue de données.*
 >* **Non-admins** : *La propriété PersonID est requise pour cette analyse. Contactez votre administrateur ou administratrice Customer Journey Analytics pour ajouter l’ID de personne à la vue de données.*
 
->[!VIDEO](https://video.tv.adobe.com/v/3435769/?captions=fre_fr&quality=12&learn=on)
+>[!VIDEO](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/timeline)
 
 
 

@@ -5,10 +5,10 @@ exl-id: c8b0b71f-8ed3-4aad-a0f8-4d5ad8d7a7bd
 feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 role: User
-source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '670'
-ht-degree: 100%
+source-wordcount: '679'
+ht-degree: 98%
 
 ---
 
@@ -25,7 +25,12 @@ ht-degree: 100%
 
 L’analyse ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL Entonnoir ]**fournit une représentation visuelle d’un parcours critique d’une personne dans votre produit. L’axe horizontal représente chaque étape qu’une personne doit franchir. L’axe vertical représente le pourcentage d’utilisateurs et d’utilisatrices ou de sessions à chaque étape. Toutes les étapes doivent être effectuées dans l’ordre souhaité, mais peuvent l’être à tout moment dans la fenêtre de création de rapports.
 
->[!VIDEO](https://video.tv.adobe.com/v/3431276/?captions=fre_fr&quality=12&learn=on){width="90%"}
+>[!BEGINSHADEBOX]
+
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analyse du frottement du Funnel](https://video.tv.adobe.com/v/3421663/?quality=12&learn=onn){target="_blank"} pour une vidéo de démonstration.
+
+>[!ENDSHADEBOX]
+
 
 ## Cas d’utilisation
 

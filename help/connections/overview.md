@@ -5,16 +5,16 @@ solution: Customer Journey Analytics
 feature: Connections
 exl-id: 012371d7-aaef-4018-95ee-5c52083e9d8f
 role: Admin
-source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 97%
+source-wordcount: '260'
+ht-degree: 93%
 
 ---
 
 # Présentation des connexions
 
-Les connexions permettent aux administrateurs et administratrices de produits Customer Journey Analytics de définir les sources de données [!DNL &#x200B; Experience Platform], telles que les jeux de données d’événement, de recherche, de profil et de résumé, qui sont ingérées. Les connexions sont la base de Customer Journey Analytics et déterminent la disponibilité des données (champs) que vous pouvez définir dans une [vue de données](/help/data-views/data-views.md) sous forme de dimension ou de mesures.
+Les connexions permettent aux administrateurs et administratrices de produits Customer Journey Analytics de définir les sources de données [!DNL  Experience Platform], telles que les jeux de données d’événement, de recherche, de profil et de résumé, qui sont ingérées. Les connexions sont la base de Customer Journey Analytics et déterminent la disponibilité des données (champs) que vous pouvez définir dans une [vue de données](/help/data-views/data-views.md) sous forme de dimension ou de mesures.
 
 >[!IMPORTANT]
 >
@@ -25,15 +25,11 @@ Les connexions permettent aux administrateurs et administratrices de produits Cu
 
 ![Workflow Connexions](assets/connection-workflow.png)
 
-<!-- Outdated interface 
-
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Configuring connections](https://video.tv.adobe.com/v/35111/?quality=12&learn=on){target="_blank"} for a demo video.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Connexion aux sources de données](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/connections/connecting-customer-journey-analytics-to-data-sources-in-platform){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
-
--->
 
 À un niveau élevé, le workflow Connexions vous permet d’effectuer les opérations suivantes :
 

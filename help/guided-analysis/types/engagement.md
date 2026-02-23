@@ -5,10 +5,10 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 role: User
 exl-id: 8a48ad3b-fa30-497e-8306-f8d881b1a335
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '748'
-ht-degree: 100%
+source-wordcount: '756'
+ht-degree: 98%
 
 ---
 
@@ -33,8 +33,11 @@ Les fonctionnalités qui s’affichent en haut de cette visualisation indiquent 
 * Les fonctionnalités situées dans le coin inférieur gauche de la matrice sont vos fonctionnalités **à faible impact** ; elles ne sont pas largement adoptées ni fréquemment utilisées.
 * Les fonctions en bas à droite de la matrice sont vos fonctions **ponctuelles** ; elles sont largement adoptées, mais ne sont pas fréquemment utilisées.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447469?captions=fre_fr)
+>[!BEGINSHADEBOX]
 
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analyse de l’engagement](https://video.tv.adobe.com/v/3429489/&learn=on){target="_blank"} pour une vidéo de démonstration.
+
+>[!ENDSHADEBOX]
 
 ## Cas d’utilisation
 
@@ -43,7 +46,7 @@ Les cas d’utilisation de cette analyse sont les suivants :
 * **Engagement par fonctionnalité** : vous pouvez établir une corrélation directe entre l’engagement et l’adoption d’une fonctionnalité spécifique. Comprendre les fonctionnalités les plus utilisées peut aider à déterminer les fonctionnalités dans lesquelles investir davantage.
 * **Découvrir les fonctionnalités sous-utilisées** : les fonctionnalités avec un faible nombre d’utilisateurs et utilisatrices actifs mais une utilisation élevée peuvent indiquer une fonctionnalité prédominante, qui a de la valeur, mais n’est pas découverte ou utilisée par la population plus large. Envisagez d’améliorer la capacité de découverte de ces fonctionnalités afin que plus d’utilisateurs et d’utilisatrices les exploitent.
 * **Améliorer les fonctionnalités populaires** : les fonctionnalités avec un nombre élevé d’utilisateurs et utilisatrices actifs mais une faible utilisation peuvent indiquer qu’une fonctionnalité est très demandée, mais sous-utilisée. Ces situations présentent des opportunités pour en savoir plus de vos utilisateurs et utilisatrices sur les améliorations qui rendraient la fonctionnalité plus utile pour eux.
-* **Créer des segments basés sur des fonctionnalités** : affichez l’utilisation des fonctionnalités de cette manière pour demander des opportunités d’analyse supplémentaires. Créez un segment pour tout point du graphique afin d’explorer plus en détail ce groupe d’utilisateurs et utilisatrices et d’appliquer ces enseignements à votre stratégie d’interaction client.
+* **Créer des segments basés sur des fonctionnalités** : affichez l’utilisation des fonctionnalités de cette manière pour demander des opportunités d’analyse supplémentaires. Créez un segment pour tout point du graphique afin d’explorer plus en détail ce groupe d’utilisateurs et utilisatrices et d’appliquer ces enseignements à votre stratégie d’engagement client.
 * **Tests A/B d’adoption des fonctionnalités** : comparez l’utilisation de plusieurs fonctionnalités sur différents groupes d’utilisateurs et utilisatrices. Ajoutez des segments dans le rail de requête pour déterminer la différence d’utilisation des fonctionnalités entre les groupes d’utilisateurs et utilisatrices clés.
 
 ## Interface

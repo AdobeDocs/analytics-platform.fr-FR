@@ -5,9 +5,9 @@ exl-id: 53ef7485-9cae-4663-bf61-4eb77c126830
 feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 role: User
-source-git-commit: be617c59cd2fced0031fda1130b86e638bee8f68
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '678'
 ht-degree: 92%
 
 ---
@@ -31,7 +31,7 @@ L’analyse ![PeopleGroup](/help/assets/icons/PeopleGroup.svg) **[!UICONTROL Cro
 Tous les utilisateurs et utilisatrices actifs (nouveaux + conservés + récurrents) apparaissent en teinte turquoise au-dessus de l’axe horizontal, tandis que tous les utilisateurs et utilisatrices inactifs apparaissent en orange au-dessous de l’axe horizontal.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3423393/?captions=fre_fr&quality=12&learn=on)
+>[!VIDEO](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/active-growth)
 
 ## Cas d’utilisation
 

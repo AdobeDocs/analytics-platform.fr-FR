@@ -5,9 +5,9 @@ feature: Analytics Dashboards
 role: User
 exl-id: 12901a76-cb88-45a5-81e9-59fb310328be
 solution: Customer Journey Analytics
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '1297'
+source-wordcount: '1298'
 ht-degree: 73%
 
 ---
@@ -19,7 +19,7 @@ Les informations suivantes fournissent aux utilisateurs en charge de l’exécut
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Aider les cadres à accéder aux cartes de performance mobiles](https://video.tv.adobe.com/v/3444838?captions=fre_fr){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Aider les cadres à accéder aux cartes de performance mobiles](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/dashboards/assist-executives-to-access-mobile-scorecards){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 
@@ -124,7 +124,7 @@ Pour utiliser les tableaux de bord :
 
    ![Segment](assets/segment_filter.png)
 
-1. Obtenez les mises à jour de [!UICONTROL Fiche d’évaluation]. Si une [!UICONTROL Carte de performance] n’inclut pas toutes les mesures ou répartitions qui peuvent vous intéresser, contactez votre équipe Customer Journey Analytics pour mettre à jour la Carte de performance. Une fois la fiche mise à jour, vous pouvez tirer sur la fiche à l’écran pour l’actualiser et charger les données récemment ajoutées.
+1. Obtenez les mises à jour de [!UICONTROL Fiche d’évaluation]. Si une [!UICONTROL Carte de performance] n’inclut pas toutes les mesures ou répartitions qui peuvent vous intéresser, contactez votre équipe Customer Journey Analytics pour mettre à jour la Carte de performance. Une fois la carte mise à jour, vous pouvez tirer sur la carte à l’écran pour l’actualiser et charger les données récemment ajoutées.
 
 1. Pour faire part de vos commentaires sur cette application :
 

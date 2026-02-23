@@ -6,10 +6,10 @@ feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '1490'
-ht-degree: 100%
+source-wordcount: '1491'
+ht-degree: 99%
 
 ---
 
@@ -19,7 +19,7 @@ Analysis Workspace vous permet de créer rapidement des analyses pour recueilli
 
 >[!BEGINSHADEBOX]
 
-Voir la vidéo de démonstration ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Vue d’ensemble d’Analysis Workspace](https://video.tv.adobe.com/v/3424559/?captions=fre_fr&quality=12&learn=on){target="_blank"}.
+Voir la vidéo de démonstration ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Vue d’ensemble d’Analysis Workspace](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/analysis-workspace-overview){target="_blank"}.
 
 {{videoaa}}
 

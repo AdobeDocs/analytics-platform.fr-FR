@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
-source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '1261'
+source-wordcount: '1262'
 ht-degree: 97%
 
 ---
@@ -30,7 +30,7 @@ L’analyse ![Rétention](/help/assets/icons/Retention.svg) **[!UICONTROL Réten
 
 Dans cette analyse, l’axe X du graphique représente le temps écoulé depuis l’événement de début initial d’une personne et l’axe Y représente le pourcentage d’utilisateurs et d’utilisatrices qui interagissent avec un ou plusieurs événements de retour. Vous pouvez afficher à la fois la rétention et l’attrition sur des durées, et les durées affichées peuvent être personnalisées à l’aide des paramètres de requête. Sous le graphique, un tableau fournit des données agrégées avec la possibilité d’afficher des cohortes individuelles, c’est-à-dire un groupe de personnes qui ont effectué l’événement de début à la même date.
 
->[!VIDEO](https://video.tv.adobe.com/v/3435780/?captions=fre_fr&quality=12&learn=on)
+>[!VIDEO](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/retention)
 
 
 ## Cas d’utilisation
@@ -40,7 +40,7 @@ Les cas d’utilisation de cette analyse sont les suivants :
 * **Analyse des cohortes** : regroupez les utilisateurs et utilisatrices en cohortes en fonction des actions qu’ils entreprennent, telles que les inscriptions ou les achats. Vous pouvez comparer la rétention de ces groupes et déterminer comment améliorer l’expérience des clientes et clients de chaque groupe.
 * **Adéquation du produit au marché** : mesurez l’utilisation régulière de votre produit et visualisez-la sous la forme de courbes de rétention. Une rétention plus importante signifie une meilleure adéquation du produit au marché, et l’aplatissement de votre courbe indique le temps nécessaire pour atteindre votre adéquation. Affichez cette analyse à un niveau global ou répartissez-la par fonctionnalité de produit individuel pour obtenir des informations plus précises.
 * **Analyse des services d’abonnement** : si votre produit utilise un abonnement ou un autre type de modèle de chiffre d’affaires récurrent, vous pouvez voir le pourcentage d’utilisateurs et d’utilisatrices qui tirent le meilleur parti de votre produit. Vous pouvez identifier certaines qualités et certains comportements dont ces utilisateurs et utilisatrices font preuve.
-* **Interaction client** : évaluez la manière dont certains types d’utilisateurs et d’utilisatrices interagissent avec votre produit et comparez côte à côte la fréquence à laquelle ils reviennent. Un segment donné avec une rétention plus faible que les autres peut vous donner des informations sur l’amélioration des expériences potentiellement décevantes qu’ils peuvent avoir.
+* **Engagement client** : évaluez l’engagement de certains types d’utilisateurs et d’utilisatrices avec votre produit et comparez côte à côte la fréquence à laquelle ils reviennent. Un segment donné avec une rétention plus faible que les autres peut vous donner des informations sur l’amélioration des expériences potentiellement décevantes qu’ils peuvent avoir.
 
 ## Interface
 

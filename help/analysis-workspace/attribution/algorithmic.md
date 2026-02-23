@@ -4,9 +4,9 @@ description: Comprenez les détails du modèle d’attribution algorithmique.
 feature: Attribution
 role: User, Admin
 exl-id: dd2b2a5b-9c36-4534-999f-f96604f29eab
-source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '279'
 ht-degree: 42%
 
 ---
@@ -18,7 +18,7 @@ Le [modèle d’attribution](models.md) algorithmique dans Analysis Workspace di
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Attribution algorithmique](https://video.tv.adobe.com/v/40046?captions=fre_fr&quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Attribution algorithmique](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/attribution-iq/algorithmic-model-in-attribution-iq){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 

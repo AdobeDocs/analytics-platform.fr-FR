@@ -5,10 +5,10 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 exl-id: 27eaa7c7-f1e1-4cf1-9d59-67ac552eb430
 role: User
-source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '657'
-ht-degree: 100%
+source-wordcount: '658'
+ht-degree: 99%
 
 ---
 
@@ -25,16 +25,16 @@ ht-degree: 100%
 
 L’analyse ![Fréquence](/help/assets/icons/Histogram.svg) **[!UICONTROL Fréquence]** regroupe les données d’événement en fonction de la fréquence des événements dans votre produit. L’axe vertical de cette analyse contient des compartiments qui représentent la fréquence de l’événement. L’axe horizontal mesure le nombre d’utilisateurs et utilisatrices ou de sessions pour chaque compartiment.
 
->[!VIDEO](https://video.tv.adobe.com/v/3435804/?captions=fre_fr&quality=12&learn=on)
+>[!VIDEO](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/frequency)
 
 ## Cas d’utilisation
 
 Les cas d’utilisation de cette analyse sont les suivants :
 
-* **Engagement** : suivez l’engagement des utilisateurs et utilisatrices envers n’importe quel événement de votre produit. Vous pouvez cliquer sur n’importe quelle partie du graphique à barres pour l’enregistrer en tant que segment. Les segments pour les compartiments à faible engagement peuvent vous aider à déterminer pourquoi les utilisateurs et utilisatrices n’interagissent pas avec l’événement à la fréquence souhaitée. Les segments pour les compartiments à engagement élevé peuvent vous aider à comprendre pourquoi les utilisateurs et utilisatrices interagissent souvent avec l’événement. À partir de là, vous pouvez encourager d’autres utilisateurs et utilisatrices à adopter un comportement similaire.
+* **Engagement** : suivez l’engagement des utilisateurs et utilisatrices envers n’importe quel événement de votre produit. Vous pouvez cliquer sur n’importe quelle partie du graphique en barres pour l’enregistrer en tant que segment. Les segments pour les compartiments à faible engagement peuvent vous aider à déterminer pourquoi les utilisateurs et utilisatrices n’interagissent pas avec l’événement à la fréquence souhaitée. Les segments pour les compartiments à engagement élevé peuvent vous aider à comprendre pourquoi les utilisateurs et utilisatrices interagissent souvent avec l’événement. À partir de là, vous pouvez encourager d’autres utilisateurs et utilisatrices à adopter un comportement similaire.
 * **Fidélisation des clientes** : définissez l’événement sur Commandes et la mesure sur Utilisateurs et utilisatrices. Cette analyse vous permet de regrouper les utilisateurs et utilisatrices en fonction du nombre de fois qu’ils ont effectué un achat sur votre site au cours de la période spécifiée.
 * **Optimisation de l’assistance** : affichez le nombre d’appels d’assistance ou de cas ouverts par personne pour déterminer les utilisateurs et utilisatrices qui rencontrent le plus de problèmes. Vous pouvez ensuite créer un segment afin de vous concentrer sur leur expérience et de les aider à identifier et résoudre leurs problèmes.
-* **Services d’abonnement** : les utilisateurs et utilisatrices peu engagés sont plus susceptibles de faire l’objet de l’attrition. Comprendre le comportement des utilisateurs et utilisatrices à fort engagement peut contribuer à encourager un comportement similaire chez les utilisateurs et utilisatrices à faible engagement, ce qui les rend moins susceptibles d’annuler leur abonnement.
+* **Services d’abonnement** : les utilisateurs et utilisatrices dont l’engagement est faible présentent un risque plus élevé d’attrition. Comprendre le comportement des utilisateurs et utilisatrices à fort engagement peut contribuer à encourager un comportement similaire chez les utilisateurs et utilisatrices à faible engagement, ce qui les rend moins susceptibles d’annuler leur abonnement.
 
 ## Interface
 

@@ -1,13 +1,13 @@
 ---
 title: Analyse des tendances
-description: Mesurez l’interaction client au fil du temps.
+description: Mesurez l’engagement client au fil du temps.
 exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 role: User
-source-git-commit: e42f04eaa06a761803e76b64a5a16674fb4af57d
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '836'
 ht-degree: 92%
 
 ---
@@ -19,20 +19,20 @@ ht-degree: 92%
 >[!CONTEXTUALHELP]
 >id="workspace_guidedanalysis_trends_button"
 >title="Tendances"
->abstract="Mesurez l’interaction client au fil du temps."
+>abstract="Mesurez l’engagement client au fil du temps."
 
 <!-- markdownlint-enable MD034 -->
 
 L’analyse ![GraphTrend](/help/assets/icons/GraphTrend.svg) **[!UICONTROL Tendances]** fournit des informations précieuses sur les performances de votre produit ou le comportement de vos utilisateurs et utilisatrices au fil du temps. L’axe horizontal de ce rapport est un intervalle de temps, tandis que l’axe vertical mesure les événements souhaités.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3423439/?captions=fre_fr&quality=12&learn=on)
+>[!VIDEO](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/trends)
 
 ## Cas d’utilisation
 
 Les cas d’utilisation de cette analyse sont les suivants :
 
-* **Évaluer les performances du produit** : les tendances vous permettent d’évaluer les performances globales de votre produit sur une période donnée. En analysant des mesures telles que l’interaction client, l’adoption ou les taux de conversion, vous pouvez déterminer si les performances de votre produit s’améliorent, stagnent ou déclinent.
+* **Évaluer les performances du produit** : les tendances vous permettent d’évaluer les performances globales de votre produit sur une période donnée. En analysant des mesures telles que l’engagement client, l’adoption ou les taux de conversion, vous pouvez déterminer si les performances de votre produit s’améliorent, stagnent ou déclinent.
 * **Adoption de fonctionnalités** : les tendances vous permettent de comprendre comment les utilisateurs et utilisatrices adoptent les nouvelles fonctionnalités ou mises à jour que vous publiez. Vous pouvez déterminer les fonctionnalités les plus populaires et celles qui doivent être améliorées. Ces informations vous permettent de prendre des décisions basées sur les données concernant les fonctionnalités autour desquelles prioriser vos efforts de développement.
 * **Comportement des utilisateurs et utilisatrices** : les tendances peuvent fournir des informations sur le comportement des utilisateurs et utilisatrices au fil du temps. En examinant les actions spécifiques effectuées par les utilisateurs et utilisatrices, vous pouvez identifier des modèles sur lesquels les utilisateurs et utilisatrices risquent de décrocher. Vous pouvez combiner les informations de cette analyse avec [Entonnoir](funnel.md) pour obtenir encore plus d’informations sur le comportement.
 * **Tests et expérimentation A/B** : si vous exécutez des tests A/B dans votre produit, vous pouvez utiliser les tendances pour évaluer quels tests sont les plus réussis au fil du temps.

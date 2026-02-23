@@ -1,13 +1,13 @@
 ---
-title: Présentation d’Attribution
+title: Vue d’ensemble d’attribution
 description: Découvrez le concept d’attribution du crédit d’un événement de succès à plusieurs éléments de dimension.
 feature: Attribution
 role: User, Admin
 exl-id: 47a3523b-d9eb-4272-84b8-090b921cba13
-source-git-commit: b70409de112ba8247df8fc6f74f20a9370cda1e1
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 86%
+source-wordcount: '466'
+ht-degree: 99%
 
 ---
 
@@ -20,7 +20,7 @@ Attribution permet aux analystes de personnaliser la manière dont les élément
 
 Dans certains rapports, vous voudrez peut-être attribuer la commande au référencement payant. Dans d’autres rapports, vous voudrez peut-être attribuer la commande à Social. Attribution vous permet de contrôler cet aspect des rapports. Toutes les entreprises disposant d’Adobe Analytics Ultimate, Prime, Select ou Foundation peuvent en bénéficier. Si vous vous demandez quel type de contrat vous avez conclu avec Adobe, contactez l’équipe Adobe en charge des comptes de votre entreprise.
 
-## Valeur de l’attribution
+## Valeur d’attribution
 
 Un parcours client donné n’est pas linéaire et est souvent imprévisible. Chaque client a son propre rythme. Il lui arrive souvent de revenir sur ses pas, de s’arrêter, de redémarrer ou d’adopter un autre comportement non linéaire. En raison de ces actions organiques, il est difficile de connaître l’impact des efforts marketing tout au long du parcours client. Cela complique également les efforts visant à relier plusieurs canaux de données.
 
@@ -53,28 +53,28 @@ Attribution propose les fonctionnalités suivantes :
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Attribution dans les tableaux à structure libre](https://video.tv.adobe.com/v/39107?captions=fre_fr&quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Attribution dans les tableaux à structure libre](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/attribution-iq/using-attribution-iq-in-freeform-tables){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Attribution dans les mesures calculées](https://video.tv.adobe.com/v/41477?captions=fre_fr&quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Attribution dans les mesures calculées](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/attribution-iq/attribution-iq-in-calculated-metrics){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Utilisation du panneau Attribution](https://video.tv.adobe.com/v/39110?captions=fre_fr&quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Utilisation du panneau Attribution](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/panels/build-the-attribution-panel){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Ajout de comparaisons côte à côte de modèles d’attribution](https://video.tv.adobe.com/v/327793?captions=fre_fr&quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Ajout de comparaisons côte à côte de modèles d’attribution](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/attribution-iq/adding-side-by-side-comparisons-of-attribution-iq-models){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 

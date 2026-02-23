@@ -4,9 +4,9 @@ description: Découvrez comment utiliser et interpréter le panneau d’observat
 feature: Panels
 exl-id: a442fb9c-165f-4136-95e2-ce92b9280c25
 role: User
-source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+source-git-commit: 2a4e0bbaedbb335e0282baa932d808cd12b1eb8c
 workflow-type: tm+mt
-source-wordcount: '1175'
+source-wordcount: '1176'
 ht-degree: 98%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 98%
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente le panneau Visiteurs et visiteuses simultanés de médias dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_.<br/>_Consultez [panneau Visiteurs et visiteuses simultanés de médias](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers) pour la_ version ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** de cet article._
+_Cet article présente le panneau Visiteurs et visiteuses simultanés de médias dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_Consultez [panneau Visiteurs et visiteuses simultanés de médias](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers) pour la_ version ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 
@@ -55,7 +55,7 @@ Dans Analysis Workspace, les visiteurs et visiteuses simultanés représentent 
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Panneau Visiteurs et visiteuses simultanés de médias](https://video.tv.adobe.com/v/35025/?captions=fre_fr&quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Panneau Visiteurs et visiteuses simultanés de médias](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 
@@ -130,6 +130,6 @@ Un tableau à structure libre n’est pas disponible dans cet affichage. Pour af
 >[!MORELIKETHIS]
 >
 >[Créer un panneau](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
->&#x200B;>[Panneau Temps de lecture de média](media-playback-time-spent.md)
->&#x200B;>[Panneau Audience moyenne par minute de média](average-minute-audience-panel.md)
+>[Panneau Temps de lecture de média](media-playback-time-spent.md)
+>[Panneau Audience moyenne par minute de média](average-minute-audience-panel.md)
 >

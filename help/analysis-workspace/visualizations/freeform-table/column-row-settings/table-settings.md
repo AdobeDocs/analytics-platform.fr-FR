@@ -4,9 +4,9 @@ title: Paramètres de ligne
 feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1057'
 ht-degree: 84%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 84%
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Paramètres de ligne et de colonne dans un tableau à structure libre](https://video.tv.adobe.com/v/328500/?captions=fre_fr&quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Paramètres de ligne et de colonne dans un tableau à structure libre](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 
@@ -90,4 +90,4 @@ Les options de menu contextuel supplémentaires suivantes sont disponibles lors 
 
 ## Modifier la hauteur des lignes
 
-Vous pouvez définir la [densité d’affichage](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density) d’un projet sur **[!UICONTROL Compact]**, **[!UICONTROL Confortable]** et **[!UICONTROL Développé]**.
+Vous pouvez définir la [densité d’affichage](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density) d’un projet sur **[!UICONTROL Compact]**, **[!UICONTROL Confortable]** et **[!UICONTROL Développé]**.

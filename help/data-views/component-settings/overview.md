@@ -5,10 +5,10 @@ exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: aa635d52007a3032d8c3f90a779d1b70213dee9e
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '3738'
-ht-degree: 55%
+source-wordcount: '3739'
+ht-degree: 56%
 
 ---
 
@@ -40,7 +40,7 @@ Les informations suivantes décrivent les paramètres utilisés par un composant
 | Paramètre | Description/Cas d’utilisation |
 | --- | --- |
 | [!UICONTROL Type de composant] | Obligatoire. Permet de modifier un composant de Mesure en Dimension ou inversement. La modification de la sélection de cette liste déroulante déplace le composant vers sa zone de composants incluse respective. |
-| [!UICONTROL &#x200B; Nom du composant &#x200B;] | Obligatoire. Permet de définir le nom convivial qui apparaîtra dans Analysis Workspace. Vous pouvez renommer un composant pour lui donner un nom spécifique à la vue de données. |
+| [!UICONTROL  Nom du composant ] | Obligatoire. Permet de définir le nom convivial qui apparaîtra dans Analysis Workspace. Vous pouvez renommer un composant pour lui donner un nom spécifique à la vue de données. |
 | [!UICONTROL Description] | Facultatif, mais recommandé. Fournit des informations sur le composant à d’autres utilisateurs. |
 | [!UICONTROL Balises] | Facultatif. Permet de baliser le composant avec des balises personnalisées ou prêtes à l’emploi pour faciliter la recherche/le filtrage dans l’interface utilisateur d’Analysis Workspace. |
 | [!UICONTROL Libellés de contexte] | Facultatif. Menu déroulant des libellés [contextuels](#context-labels) définis par le système disponibles pouvant être appliqués à un composant. |
@@ -59,7 +59,7 @@ Les informations suivantes décrivent les paramètres utilisés par un composant
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Paramètres du type de composant](https://video.tv.adobe.com/v/3412935/?captions=fre_fr&quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Paramètres du type de composant](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/data-views/component-type-settings-in-data-views){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 
@@ -468,7 +468,7 @@ Les groupes de libellés de contexte suivants sont disponibles, chacun avec une 
 | Reprise de message (AJO) | Nombre de reprises. |
 | Statut du message (AJO) | Statut du message (par exemple, envoyé, rebond, erreur, etc.) |
 | Type de message (AJO) | Si le message est de type marketing ou transactionnel. |
-| Statut des commentaires sur les messages (obsolètes) | Statut du retour d’informations. |
+| Statut du feedback sur les messages (obsolète) | Statut du feedback. |
 | Entrées de nœud | True si l’événement d’étape était un événement d’entrée de nœud pour un profil. |
 | ID du nœud | Identifiant du nœud de parcours. |
 | Nom du nœud | Nom du nœud du parcours. |
