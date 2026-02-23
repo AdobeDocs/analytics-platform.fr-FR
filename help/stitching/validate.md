@@ -84,7 +84,7 @@ Vous obtiendrez des informations supplémentaires en définissant deux mesures c
 
 * **[!UICONTROL Taux d’authentification des emails]**. Cette mesure calculée détermine le taux d’authentification avant le processus de groupement.
 
-  ![ Définition de la mesure calculée Taux d’authentification des e-mails ](/help/stitching/assets/cm-email-authentication-rate.png)
+  ![&#x200B; Définition de la mesure calculée Taux d’authentification des e-mails &#x200B;](/help/stitching/assets/cm-email-authentication-rate.png)
 
 * **[!UICONTROL Taux d’authentification groupée]**. Cette mesure calculée détermine le taux d’authentification après le processus de groupement.
 

@@ -229,7 +229,7 @@ Pour afficher des légendes intelligentes dans une carte de performance mobile :
 
 1. Appuyez sur l’icône bleue en haut à droite pour générer les légendes. Les légendes s’affichent sous le graphique linéaire.
 
-   ![ Légende intelligente dans la visualisation en ligne ](assets/caption2.png)
+   ![&#x200B; Légende intelligente dans la visualisation en ligne &#x200B;](assets/caption2.png)
 
 1. Balayez vers la droite pour afficher toutes les légendes intelligentes.
 
