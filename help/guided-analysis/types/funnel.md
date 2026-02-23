@@ -27,7 +27,7 @@ L’analyse ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg)**[!UICO
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analyse du frottement du Funnel](https://video.tv.adobe.com/v/3421663/?quality=12&learn=onn){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analyse du frottement du Funnel](https://video.tv.adobe.com/v/3431276/?captions=fre_fr&quality=12&learn=onn){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 
