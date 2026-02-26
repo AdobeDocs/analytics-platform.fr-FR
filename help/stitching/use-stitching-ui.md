@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
-source-git-commit: d1ba2d203738ca9bf74d17bb93712eff26f88f25
+source-git-commit: c6ccbdf89c51deef33b562a053b9c3b4bc626497
 workflow-type: tm+mt
 source-wordcount: '962'
 ht-degree: 5%
@@ -91,7 +91,7 @@ Si vous remplissez les conditions préalables, vous pouvez effectuer des contrô
 >id="connection_changeto_identitygraph"
 >title="Modification du graphique d’identité"
 >abstract="Assurez-vous d’avoir terminé la configuration du graphique d’identité avant d’utiliser le graphique d’identité pour l’assemblage."
->additional-url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/stitching/gbs" text="Rapprochement basé sur les graphiques"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/gbs" text="Groupement basé sur les graphiques"
 
 >[!CONTEXTUALHELP]
 >id="connection_stitching_personid"
@@ -112,14 +112,14 @@ Pour activer le groupement, dans la section Jeu de données d’événement de l
 
    Si vous sélectionnez **[!UICONTROL Mappage d’identités]** pour l’identifiant persistant, vous devez sélectionner un espace de noms . Vous disposez de deux options :
 
-   * Activez **[!UICONTROL Utiliser l’espace de noms d’identité principal]** pour utiliser l’espace de noms d’identité principal.
+   * Sélectionnez **[!UICONTROL Utiliser l’espace de noms d’identité principal]** pour utiliser l’espace de noms d’identité principal.
    * Sélectionnez un espace de noms dans le menu déroulant **[!UICONTROL Espace de noms]**.
 
 1. Sélectionnez un ID de personne dans le menu déroulant **[!UICONTROL ID de personne]**.
 
    Si vous sélectionnez **[!UICONTROL Mappage d’identités]** pour l’ID de personne, vous devez sélectionner un espace de noms. Vous disposez de deux options :
 
-   * Activez **[!UICONTROL Utiliser l’espace de noms d’identité principal]** pour utiliser l’espace de noms d’identité principal.
+   * Sélectionnez **[!UICONTROL Utiliser l’espace de noms d’identité principal]** pour utiliser l’espace de noms d’identité principal.
    * Sélectionnez un espace de noms dans le menu déroulant **[!UICONTROL Espace de noms]**.
 
 
@@ -141,7 +141,7 @@ Une fois que vous avez enregistré une connexion, le processus de groupement des
 
 >[!CAUTION]
 >
->Pour les jeux de données activés pour le groupement dans l’interface Connexions, le statut de renvoi est immédiatement et incorrectement signalé comme ![Statut vert](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _renvois terminés]**&#x200B;pour le nombre de renvois terminés. Utilisez d’autres méthodes pour vérifier si les données du jeu de données groupé sont renvoyées.
+>Pour les jeux de données activés pour le groupement dans l’interface Connexions, le statut de renvoi est immédiatement et incorrectement signalé comme ![Statut vert](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _renvois terminés]**pour le nombre de renvois terminés. Utilisez d’autres méthodes pour vérifier si les données du jeu de données groupé sont renvoyées.
 >
 
 
