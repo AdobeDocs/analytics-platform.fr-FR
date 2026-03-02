@@ -5,9 +5,9 @@ title: Aperçu des visualisations
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 211dbd80b21f84ab616569c0d847dcc97f13661c
 workflow-type: tm+mt
-source-wordcount: '1738'
+source-wordcount: '1751'
 ht-degree: 89%
 
 ---
@@ -23,8 +23,8 @@ Voici les types de visualisation disponibles dans Analysis Workspace :
 | Icône | Nom | Description |
 | :---: | --- | ---|
 | ![GraphArea](/help/assets/icons/GraphArea.svg) | [Surface](/help/analysis-workspace/visualizations/area.md) | Visualisation sous forme de graphique de surface. Semblable à un graphique linéaire, mais avec une zone colorée sous la ligne. Utilisez un diagramme de surface si vous avez plusieurs mesures et souhaitez visualiser la zone exprimée par l’intersection de plusieurs mesures. |
-| ![Graphique à barres verticales](/help/assets/icons/GraphBarVertical.svg) | [Barre](/help/analysis-workspace/visualizations/bar.md) | Visualisation Graphique en barres avec des barres verticales représentant plusieurs valeurs pour une ou plusieurs mesures. |
-| ![Graphique à barres verticales](/help/assets/icons/GraphBarVerticalStacked.svg) | [Barres empilées](/help/analysis-workspace/visualizations/bar.md) | Visualisation Graphique en barres empilées avec des barres verticales représentant plusieurs valeurs pour une ou plusieurs mesures. |
+| ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) | [Barre](/help/analysis-workspace/visualizations/bar.md) | Visualisation Graphique en barres avec des barres verticales représentant plusieurs valeurs pour une ou plusieurs mesures. |
+| ![GraphBarVertical](/help/assets/icons/GraphBarVerticalStacked.svg) | [Barres empilées](/help/analysis-workspace/visualizations/bar.md) | Visualisation Graphique en barres empilées avec des barres verticales représentant plusieurs valeurs pour une ou plusieurs mesures. |
 | ![Graphique à puces](/help/assets/icons/GraphBullet.svg)</p> | [Puces](/help/analysis-workspace/visualizations/bullet-graph.md) | Visualisation Graphique à puces affichant comment comparer ou mesurer une valeur qui vous intéresse par rapport à d’autres plages de performances (objectifs). |
 | ![ChiffresTexte](/help/assets/icons/TextNumbered.svg) | [Table de cohorte](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | Une visualisation Cohorte est un groupe de personnes partageant des caractéristiques communes au cours d’une période spécifique. Une table de cohorte est utile pour les analyses de la rétention, de lʼattrition ou de la latence. |
 | ![Combo](/help/assets/icons/ComboChart.svg) | [Combo](combo-charts.md) | Une visualisation Graphique combo facilite la création rapide d’une visualisation de comparaison sans qu’il soit nécessaire de créer un tableau au préalable. |
@@ -49,6 +49,12 @@ Voici les types de visualisation disponibles dans Analysis Workspace :
 <!-- Add beneath Horizontal bar in the table above: | [Journey canvas](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) | Similar to Fallout, Journey canvas shows where persons left (fell out) and continued through (fell through) a predefined sequence of pages. <p>Unlike Fallout, Journey canvas supports not only linear journeys, but any number of entry points and paths. Furthermore, journeys can be created in Adobe Journey Optimizer and then analyzed in Journey canvas.</p> | -->
 
 ## Ajouter des visualisations à un panneau
+
+>[!BEGINSHADEBOX]
+
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Ajouter des visualisations au panneau à structure libre](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/panels/add-components-to-the-freeform-panel){target="_blank"} pour une vidéo de démonstration.
+
+>[!ENDSHADEBOX]
 
 1. Ouvrez le projet Workspace dans lequel vous souhaitez ajouter une visualisation.
 
@@ -81,7 +87,7 @@ Vous pouvez gérer une visualisation en pointant la souris sur la visualisation 
 * Pour afficher une visualisation réduite, sélectionnez ![ChevronLeft](/help/assets/icons/ChevronLeft.svg).
 * Pour supprimer une visualisation, sélectionnez ![CrossSize400](/help/assets/icons/CrossSize400.svg). Pour annuler, sélectionnez **[!UICONTROL Modifier]** > **[!UICONTROL Annuler]** (**[!UICONTROL *cmd+z *]**|**[!UICONTROL * ctrl+z *]**).
 * Pour rétablir la hauteur par défaut d’une visualisation, sélectionnez ![ImageResize](/help/assets/icons/Resize.svg).
-* Pour déplacer une visualisation dans un panneau, faites-la glisser et déposez-la chaque fois qu’une ![&#x200B; Déplacer &#x200B;](/help/assets/icons/Move.svg) est visible (généralement lorsque vous passez la souris sur l’en-tête).
+* Pour déplacer une visualisation dans un panneau, faites-la glisser et déposez-la chaque fois qu’une ![ Déplacer ](/help/assets/icons/Move.svg) est visible (généralement lorsque vous passez la souris sur l’en-tête).
 
 
 

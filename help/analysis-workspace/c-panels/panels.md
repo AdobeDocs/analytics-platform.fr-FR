@@ -4,9 +4,9 @@ title: Vue d’ensemble des panneaux
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+source-git-commit: 211dbd80b21f84ab616569c0d847dcc97f13661c
 workflow-type: tm+mt
-source-wordcount: '2194'
+source-wordcount: '2205'
 ht-degree: 99%
 
 ---
@@ -26,7 +26,7 @@ Les types de panneau suivants sont disponibles dans Analysis Workspace pour [!U
 | [Expérimentation](experimentation.md) | Comparez différentes expériences utilisateur, variantes de marketing ou de messagerie pour déterminer le meilleur moyen d’obtenir un résultat spécifique. |
 | [Tableau à structure libre](freeform-panel.md) | Effectuez des comparaisons et des répartitions illimitées, puis ajoutez des visualisations pour raconter une histoire riche en données. |
 | [Audience moyenne par minute de média](average-minute-audience-panel.md) | Analysez l’audience moyenne par minute pour un élément spécifique de contenu ou au cours d’une période personnalisée. |
-| [Visionneuses simultanées de médias &#x200B;](media-concurrent-viewers.md) | Analysez les visionneuses au fil du temps, avec des informations sur la simultanéité la plus élevée, et sur la capacité à ventiler et à comparer. |
+| [Visionneuses simultanées de médias ](media-concurrent-viewers.md) | Analysez les visionneuses au fil du temps, avec des informations sur la simultanéité la plus élevée, et sur la capacité à ventiler et à comparer. |
 | [Temps de lecture du média](/help/analysis-workspace/c-panels/media-playback-time-spent.md) | L’analyse du temps de lecture permet de déterminer où se produisent les pics d’audience mais aussi où des abandons ont eu lieu. |
 | [Élément suivant ou précédent](next-previous.md) | Affiche les pages visitées suivantes ou précédentes. |
 | [Aperçu rapide](quickinsight.md) | Construisez rapidement un tableau à structure libre et une visualisation d’accompagnement afin d’analyser et de mettre en évidence les informations plus rapidement. |
@@ -89,7 +89,7 @@ Vous pouvez gérer un panneau des façons suivantes :
 
 ## Vue de données
 
-Chaque panneau est associé à une [vue de données](/help/data-views/data-views.md), identifiée par le ![Données](/help/assets/icons/Data.svg) **[!UICONTROL *nom de la vue de données *]**&#x200B;dans le menu déroulant en haut à droite du panneau.
+Chaque panneau est associé à une [vue de données](/help/data-views/data-views.md), identifiée par le ![Données](/help/assets/icons/Data.svg) **[!UICONTROL *nom de la vue de données *]**dans le menu déroulant en haut à droite du panneau.
 
 Lorsque vous créez un projet Workspace vierge, la vue de données par défaut du panneau initial correspond à la dernière vue de données avec laquelle vous avez travaillé dans Customer Journey Analytics.
 
@@ -167,7 +167,7 @@ Pour en savoir plus, consultez [Segments rapides](/help/components/segments/seg-
 
 >[!BEGINSHADEBOX]
 
-Voir ![VidéoConsultée](/help/assets/icons/VideoCheckedOut.svg) [Segments déroulants](https://experienceleague.adobe.com/fr/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters){target="_blank"} pour une vidéo de démonstration.
+Voir ![VidéoConsultée](/help/assets/icons/VideoCheckedOut.svg) [Segments déroulants](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 
@@ -225,6 +225,12 @@ Pour créer un segment déroulant dynamique, procédez comme suit :
 Notez que les segments déroulants dynamiques ne sont pas disponibles pour les mesures, les segments ou les périodes.
 
 Un segment déroulant dynamique permet d’obtenir les mêmes options de menu contextuel que les segments déroulants statiques.
+
+>[!BEGINSHADEBOX]
+
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segments déroulants dynamiques](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/tips-and-tricks/dynamic-drop-downs){target="_blank"} pour une vidéo de démonstration.
+
+>[!ENDSHADEBOX]
 
 
 ## Menu contextuel

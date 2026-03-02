@@ -5,10 +5,10 @@ title: Créer des liens partageables
 exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
 feature: Curate and Share
 role: User
-source-git-commit: 084c995658a5cf698d253f1c15229f621a8c55d5
+source-git-commit: 211dbd80b21f84ab616569c0d847dcc97f13661c
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 53%
+source-wordcount: '338'
+ht-degree: 39%
 
 ---
 
@@ -35,14 +35,15 @@ Vous pouvez également partager un lien vers une partie spécifique d’un proje
 * Dans le menu contextuel d’un en-tête de panneau, sélectionnez **[!UICONTROL Obtenir le lien du panneau]**
 * Dans le menu contextuel d’un en-tête de visualisation, sélectionnez **[!UICONTROL Obtenir le lien de la visualisation]**
 
-[Regardez la vidéo](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html?lang=fr) sur les méthodes de création de liens et utilisez-les pour diriger les destinataires vers des parties spécifiques de votre projet.
+>[!BEGINSHADEBOX]
+
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Lien à l’intérieur ou à l’extérieur de votre projet](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html?lang=fr){target="_blank"} pour une vidéo de démonstration.
+
+>[!ENDSHADEBOX]
 
 ![Menu déroulant après avoir cliqué avec le bouton droit sur l’en-tête avec le lien Obtenir la visualisation en surbrillance.](assets/get-visualization-link.png)
 
 ## Utilisation de liens dans une table des matières {#TOC}
 
-Pour tirer parti des différentes options de lien, il est conseillé de toujours inclure une table des matières dans la partie supérieure de votre projet Workspace. Dans la table des matières, vous pouvez créer des liens vers d’autres projets pertinents, des panneaux et des visualisations spécifiques. Cela facilite la navigation pour le destinataire du projet.
+Une astuce pour tirer parti des différentes options de lien consiste à toujours inclure une [table des matières](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md) en haut de votre projet Workspace. Dans la table des matières, vous pouvez créer des liens vers d’autres projets pertinents, des panneaux et des visualisations spécifiques. Cela facilite la navigation pour le destinataire du projet.
 
-[Regardez la vidéo](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/navigating-workspace-projects/create-a-toc-in-analysis-workspace.html?lang=fr) sur les méthodes de création d’une table des matières à l’aide de liens et de l’éditeur de texte enrichi de Workspace.
-
-![Un projet Table des matières.](assets/toc.png)
