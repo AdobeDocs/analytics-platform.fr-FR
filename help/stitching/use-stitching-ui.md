@@ -91,7 +91,7 @@ Si vous remplissez les conditions préalables, vous pouvez effectuer des contrô
 >id="connection_changeto_identitygraph"
 >title="Modification du graphique d’identité"
 >abstract="Assurez-vous d’avoir terminé la configuration du graphique d’identité avant d’utiliser le graphique d’identité pour l’assemblage."
->additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/gbs" text="Groupement basé sur les graphiques"
+>additional-url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/stitching/gbs" text="Groupement basé sur les graphiques"
 
 >[!CONTEXTUALHELP]
 >id="connection_stitching_personid"
@@ -123,8 +123,8 @@ Si vous remplissez les conditions préalables, vous pouvez effectuer des contrô
 >id="connection_stitchingmetrics_badids"
 >title="ID incorrects"
 >abstract="Les identifiants incorrects sont des valeurs d’identifiant qui affectent considérablement les données de rapport."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16444" text="ID incorrects"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16444" text="Assemblage et ID incorrects"
+>additional-url="https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-16444" text="ID incorrects"
+>additional-url="https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-16444" text="Assemblage et ID incorrects"
 
 
 Pour activer le groupement, dans la section Jeu de données d’événement de la boîte de dialogue **[!UICONTROL Ajouter des jeux de données]** ou **[!UICONTROL Modifier le jeu de données]** :
