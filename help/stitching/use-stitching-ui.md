@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
-source-git-commit: c6ccbdf89c51deef33b562a053b9c3b4bc626497
+source-git-commit: a220eaf24ff877537f86027e3d93ec30772438e5
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 5%
+source-wordcount: '1142'
+ht-degree: 4%
 
 ---
 
@@ -91,12 +91,41 @@ Si vous remplissez les conditions préalables, vous pouvez effectuer des contrô
 >id="connection_changeto_identitygraph"
 >title="Modification du graphique d’identité"
 >abstract="Assurez-vous d’avoir terminé la configuration du graphique d’identité avant d’utiliser le graphique d’identité pour l’assemblage."
->additional-url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/stitching/gbs" text="Groupement basé sur les graphiques"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/gbs" text="Groupement basé sur les graphiques"
 
 >[!CONTEXTUALHELP]
 >id="connection_stitching_personid"
 >title="ID de personne"
 >abstract="Sélectionnez un ID de personne (l’identifiant unique d’une personne) parmi les identités disponibles. Si vous souhaitez utiliser le groupement basé sur les graphiques, sélectionnez **[!UICONTROL Graphique d’identités]**."
+
+>[!CONTEXTUALHELP]
+>id="connection_stitchingmetrics"
+>title="Assemblage des mesures"
+>abstract="Les mesures d’assemblage sont calculées à l’aide d’un ensemble échantillon de données des 7 derniers jours (sans inclure les données d’aujourd’hui)."
+
+>[!CONTEXTUALHELP]
+>id="connection_stitchingmetrics_gbs_personidcoverage"
+>title="Couverture de l’ID de personne"
+>abstract="Couverture de l’ID de personne sélectionné utilisé pour l’identification pendant le processus de groupement (en direct et en relecture).<br/>Pour de meilleurs résultats d’assemblage, une relation (ID persistant, ID de personne) doit être présente dans le graphique d’identité pour chaque ID persistant."
+
+>[!CONTEXTUALHELP]
+>id="connection_stitchingmetrics_fbs_personidcoverage"
+>title="Couverture de l’ID de personne"
+>abstract="Couverture de l’ID de personne sélectionné utilisé pour l’identification pendant le processus de groupement (en direct et en relecture).<br/>Pour de meilleurs résultats d’assemblage, l’ID de personne (informations utilisateur) doit être envoyé sur au moins un événement pour chaque ID persistant (informations sur l’appareil)."
+
+>[!CONTEXTUALHELP]
+>id="connection_stitchingmetrics_persistentidcoverage"
+>title="Couverture de l’ID persistant"
+>abstract="Cette valeur est utilisée pour l’identification pendant le processus de groupement (en direct et en relecture), au cas où une valeur d’ID de personne ne peut pas être détectée. <br/>Les événements sans ID persistant et sans ID de personne sont supprimés des données. Pour de meilleurs résultats d’assemblage, un identifiant persistant doit être présent sur tous les événements."
+
+
+>[!CONTEXTUALHELP]
+>id="connection_stitchingmetrics_badids"
+>title="ID incorrects"
+>abstract="Les identifiants incorrects sont des valeurs d’identifiant qui affectent considérablement les données de rapport."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16444" text="ID incorrects"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16444" text="Assemblage et ID incorrects"
+
 
 Pour activer le groupement, dans la section Jeu de données d’événement de la boîte de dialogue **[!UICONTROL Ajouter des jeux de données]** ou **[!UICONTROL Modifier le jeu de données]** :
 
@@ -141,7 +170,7 @@ Une fois que vous avez enregistré une connexion, le processus de groupement des
 
 >[!CAUTION]
 >
->Pour les jeux de données activés pour le groupement dans l’interface Connexions, le statut de renvoi est immédiatement et incorrectement signalé comme ![Statut vert](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _renvois terminés]**&#x200B;pour le nombre de renvois terminés. Utilisez d’autres méthodes pour vérifier si les données du jeu de données groupé sont renvoyées.
+>Pour les jeux de données activés pour le groupement dans l’interface Connexions, le statut de renvoi est immédiatement et incorrectement signalé comme ![Statut vert](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _renvois terminés]**pour le nombre de renvois terminés. Utilisez d’autres méthodes pour vérifier si les données du jeu de données groupé sont renvoyées.
 >
 
 
