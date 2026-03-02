@@ -3,10 +3,10 @@ description: Découvrez le créateur de mesures calculées qui fournit une zone 
 title: Créer des mesures
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: fa6654e85fd4055d41f42145fa5a4f917a8875c4
 workflow-type: tm+mt
-source-wordcount: '1613'
-ht-degree: 100%
+source-wordcount: '1677'
+ht-degree: 93%
 
 ---
 
@@ -58,16 +58,18 @@ La boîte de dialogue du **[!UICONTROL Créateur de mesures calculées]** permet
    | **[!UICONTROL Nombres de décimales]** | Spécifiez le nombre de décimales pour le format sélectionné. Activé uniquement lorsque le format sélectionné est Décimal, Devise et Pourcentage. |
    | **[!UICONTROL Afficher la tendance à la hausse sous forme de]** | Indiquez si une tendance à la hausse de la mesure calculée s’affiche sous la forme ▲ **[!UICONTROL Bon (Vert)]** ou ▼ **[!UICONTROL Mauvais (Rouge)]**. |
    | **[!UICONTROL Devise]** | Spécifiez la devise de la mesure calculée. Activé uniquement lorsque le format sélectionné est Devise. |
-   | **[!UICONTROL Étiquettes]** | Organisez la mesure calculée en créant ou en appliquant une ou plusieurs balises. Commencez à saisir du texte pour rechercher les balises existantes que vous pouvez sélectionner. Ou appuyez sur **[!UICONTROL ENTRÉE]** pour ajouter une nouvelle balise. Sélectionnez ![CrossSize75](/help/assets/icons/CrossSize75.svg) pour supprimer une étiquette. |
+   | **[!UICONTROL Balises]** | Organisez la mesure calculée en créant ou en appliquant une ou plusieurs balises. Commencez à saisir du texte pour rechercher les balises existantes que vous pouvez sélectionner. Ou appuyez sur **[!UICONTROL ENTRÉE]** pour ajouter une nouvelle balise. Sélectionnez ![CrossSize75](/help/assets/icons/CrossSize75.svg) pour supprimer une étiquette. |
    | **[!UICONTROL Aperçu]** | La prévisualisation couvre les 90 derniers jours et permet de déterminer si vous avez correctement défini votre mesure. |
    | **[!UICONTROL Résumé]** | Affiche un résumé de la définition de la mesure calculée. <br/>Par exemple : ![Événement](/help/assets/icons/Event.svg) **[!UICONTROL Nombre total de commandes]** ![Diviser](/help/assets/icons/Divide.svg) ![Événement](/help/assets/icons/Event.svg) **[!UICONTROL Sessions]**. |
    | **[!UICONTROL Définition]** ![Obligatoire](/help/assets/icons/Required.svg) | Définissez votre segment à l’aide du [créateur de définitions](#definition-builder). |
 
 1. Pour vérifier si votre définition de mesure calculée est correcte, utilisez la **[!UICONTROL Prévisualisation]** des résultats de la mesure calculée mise à jour en permanence. La **[!UICONTROL Prévisualisation]** couvre les 90 derniers jours et évalue en continu la définition de votre mesure calculée.
 
-   Le **[!UICONTROL Compatibilité des produits]** indique si la mesure calculée peut être utilisée dans l’expérimentation. Les valeurs possibles sont les suivantes :
+   Le **[!UICONTROL Compatibilité des produits]** indique si la mesure calculée peut être utilisée dans le cadre d’expériences et d’exportations de tables complètes. Les valeurs possibles sont les suivantes :
    * **[!UICONTROL Partout dans Customer Journey Analytics]** : la mesure calculée peut être utilisée dans l’ensemble de Customer Journey Analytics.
-   * **[!UICONTROL Partout dans Customer Journey Analytics (à l’exclusion de l’expérimentation)]** : la mesure calculée peut être utilisée dans tout Customer Journey Analytics, sauf dans le panneau Expérimentation.
+   * **[!UICONTROL Non compatible dans :]**
+      * **[!UICONTROL Expérimentation]** : la mesure calculée peut être utilisée dans l’ensemble de Customer Journey Analytics, sauf dans le panneau Expérimentation.
+      * **[!UICONTROL Exportation complète des tables]** : la mesure calculée peut être utilisée dans l’ensemble de Customer Journey Analytics, sauf lors de l’exportation de tables complètes à partir de Workspace. Certaines fonctions ne sont pas prises en charge lors de l’exportation de tableaux complets. Si vous avez besoin d’inclure la mesure calculée lors de l’exportation de tables complètes, utilisez une fonction prise en charge. Pour plus d’informations, voir [Fonctions de mesures calculées non prises en charge](/help/analysis-workspace/export/export-cloud.md#unsupported-calculated-metric-functions) dans [Exporter des tables complètes vers le cloud](/help/analysis-workspace/export/export-cloud.md).
 
 1. Sélectionnez :
    * **[!UICONTROL Enregistrez]** pour enregistrer la mesure calculée.

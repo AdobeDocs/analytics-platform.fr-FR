@@ -5,16 +5,16 @@ title: Gestion des emplacements et des comptes d’exportation cloud
 feature: Components
 exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
 role: User, Admin
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 25a5c42153e28493321d87fa5227fcf44c244bb6
 workflow-type: tm+mt
-source-wordcount: '1371'
+source-wordcount: '1392'
 ht-degree: 3%
 
 ---
 
 # Gestion des emplacements et des comptes d’exportation cloud
 
-Vous pouvez afficher, modifier et supprimer des emplacements d’exportation dans le cloud.
+Vous pouvez afficher, modifier et supprimer des emplacements et des comptes d’exportation dans le cloud.
 
 Pour plus d’informations sur la création d’un emplacement, voir [Configuration des emplacements d’exportation dans le cloud](/help/components/exports/cloud-export-locations.md).
 
@@ -30,7 +30,7 @@ Pour trouver les informations dont vous avez besoin, vous pouvez soit filtrer su
 
 1. Sélectionnez l’icône **Filtrer**.
 
-   <!-- add screenshot -->
+   ![Icône Filtrer sur la page Emplacements](assets/locations-filter-icon.png)
 
    Vous pouvez filtrer selon les critères suivants :
 
@@ -48,6 +48,8 @@ Pour trouver les informations dont vous avez besoin, vous pouvez soit filtrer su
 
 1. Sélectionnez l’onglet [!UICONTROL **Emplacements**].
 
+   ![Page Emplacements](assets/locations-manager.png)
+
 1. (Conditionnel) Si vous êtes un administrateur système, vous pouvez activer l’option [!UICONTROL **Afficher les emplacements pour tous les utilisateurs**] pour afficher les emplacements créés par tous les utilisateurs de votre organisation.
 
 1. Dans le champ de recherche, commencez à saisir toutes les informations associées à l’emplacement que vous recherchez. Vous pouvez rechercher des données à partir de n’importe quelle colonne disponible dans le tableau.
@@ -62,13 +64,13 @@ Pour modifier un emplacement :
 
 1. Sélectionnez l’onglet [!UICONTROL **Emplacements**].
 
+   ![Fenêtre Exports affichant l’onglet Emplacements et la liste des emplacements.](assets/locations-manager.png)
+
 1. (Conditionnel) Si vous êtes un administrateur système, vous pouvez activer l’option [!UICONTROL **Afficher les emplacements pour tous les utilisateurs**] pour afficher les emplacements créés par tous les utilisateurs de votre organisation.
 
 1. Sélectionnez l’emplacement à modifier.
 
-   ![Fenêtre Exports affichant l’onglet Emplacements et la liste des emplacements.](assets/locations-edit.png)
-
-1. Sélectionnez [!UICONTROL **Modifier**].
+1. Sélectionnez [!UICONTROL **Modifier**] en bas de l’écran.
 
 1. Apportez les modifications souhaitées, puis sélectionnez [!UICONTROL **Enregistrer**].
 
@@ -82,19 +84,19 @@ Pour supprimer un emplacement :
 
 1. Sélectionnez l’onglet [!UICONTROL **Emplacements**].
 
+   ![Fenêtre Exports affichant l’onglet Emplacements et la liste des emplacements.](assets/locations-manager.png)
+
 1. (Conditionnel) Si vous êtes un administrateur système, vous pouvez activer l’option [!UICONTROL **Afficher les emplacements pour tous les utilisateurs**] pour afficher les emplacements créés par tous les utilisateurs de votre organisation.
 
 1. Sélectionnez un ou plusieurs emplacements à supprimer.
 
-   ![Fenêtre Exports affichant l’onglet Emplacements et la liste des emplacements](assets/locations-edit.png)
-
-1. Sélectionnez [!UICONTROL **Supprimer**].
+1. Sélectionnez [!UICONTROL **Supprimer**] en bas de l’écran.
 
    La boîte de dialogue Supprimer l’emplacement s’affiche.
 
 1. Dans la boîte de dialogue Supprimer l’emplacement , assurez-vous que l’emplacement n’est associé à aucune exportation avant de confirmer la suppression.
 
-   ![&#x200B; Boîte de dialogue de confirmation Supprimer l’emplacement &#x200B;](assets/delete-location-confirmation-dialog.png)
+   ![ Boîte de dialogue de confirmation Supprimer l’emplacement ](assets/delete-location-confirmation-dialog.png)
 
 1. Sélectionnez à nouveau [!UICONTROL **Supprimer**] pour confirmer.
 
@@ -110,9 +112,9 @@ Pour modifier un compte :
 
    ![Fenêtre Exports affichant l’onglet Comptes d’emplacement](assets/account-add.png)
 
-1. (Conditionnel) Si vous êtes un administrateur système, vous pouvez activer l’option [!UICONTROL **Afficher les comptes de tous les utilisateurs**] pour afficher les emplacements créés par tous les utilisateurs de votre organisation.
+1. (Conditionnel) Si vous êtes un administrateur système, vous pouvez activer l’option [!UICONTROL **Afficher les comptes de tous les utilisateurs**] pour afficher les comptes créés par tous les utilisateurs de votre organisation.
 
-1. Sélectionnez [!UICONTROL **Afficher les détails**] sur le compte que vous souhaitez modifier.
+1. Sélectionnez [!UICONTROL **Modifier les détails**] sur le compte que vous souhaitez modifier.
 
 1. Apportez les modifications souhaitées, puis sélectionnez [!UICONTROL **Enregistrer**].
 
@@ -128,9 +130,9 @@ Pour afficher les clés associées à un compte d’exportation :
 
    ![Fenêtre Exports affichant l’onglet Comptes d’emplacement](assets/account-add.png)
 
-1. (Conditionnel) Si vous êtes un administrateur système, vous pouvez activer l’option [!UICONTROL **Afficher les comptes de tous les utilisateurs**] pour afficher les emplacements créés par tous les utilisateurs de votre organisation.
+1. (Conditionnel) Si vous êtes un administrateur système, vous pouvez activer l’option [!UICONTROL **Afficher les comptes de tous les utilisateurs**] pour afficher les comptes créés par tous les utilisateurs de votre organisation.
 
-1. Sélectionnez l’icône en forme de 3 points sur le compte à modifier, puis sélectionnez [!UICONTROL **Clés du compte**].
+1. Sélectionnez l’icône en forme de 3 points sur le compte à modifier, puis sélectionnez [!UICONTROL **Afficher les clés**].
 
 ## Supprimer des comptes
 
@@ -140,9 +142,9 @@ Pour afficher les clés associées à un compte d’exportation :
 
    ![Fenêtre Exports affichant l’onglet Comptes d’emplacement](assets/account-add.png)
 
-1. (Conditionnel) Si vous êtes un administrateur système, vous pouvez activer l’option [!UICONTROL **Afficher les comptes de tous les utilisateurs**] pour afficher les emplacements créés par tous les utilisateurs de votre organisation.
+1. (Conditionnel) Si vous êtes un administrateur système, vous pouvez activer l’option [!UICONTROL **Afficher les comptes de tous les utilisateurs**] pour afficher les comptes créés par tous les utilisateurs de votre organisation.
 
-1. Sélectionnez l’icône en forme de 3 points sur le compte à modifier, puis sélectionnez [!UICONTROL **Supprimer le compte**].
+1. Sélectionnez l’icône en forme de point 3 sur le compte à supprimer, puis sélectionnez [!UICONTROL **Supprimer le compte**].
 
 1. Sélectionnez à nouveau [!UICONTROL **Supprimer**] dans la boîte de dialogue de confirmation.
 
@@ -156,23 +158,23 @@ Les administrateurs système peuvent empêcher les utilisateurs de créer des co
 
 Par défaut, tous les utilisateurs de l’organisation peuvent créer des comptes et modifier les comptes qu’ils créent dans votre environnement Customer Journey Analytics, comme décrit dans la section [configuration des comptes d’exportation dans le cloud](/help/components/exports/cloud-export-accounts.md).
 
-Vous pouvez empêcher des utilisateurs de créer des comptes. Dans ce cas, les utilisateurs peuvent toujours utiliser les comptes qu’ils ont déjà créés, mais ils ne peuvent plus les modifier. Vous pouvez supprimer les comptes créés par les utilisateurs, comme décrit dans la section [Supprimer un compte](#delete-an-account).
+Vous pouvez empêcher des utilisateurs de créer des comptes. Dans ce cas, les utilisateurs peuvent toujours utiliser les comptes qu’ils ont déjà créés, mais ils ne peuvent plus les modifier. Vous pouvez supprimer les comptes créés par les utilisateurs, comme décrit dans la section [Supprimer un compte](#delete-accounts).
 
 Pour empêcher tous les utilisateurs de créer et de modifier des comptes :
 
 1. Dans Customer Journey Analytics, sélectionnez **[!UICONTROL Composants]** > **[!UICONTROL Exports]**, puis sélectionnez l’onglet [!UICONTROL **Paramètres d’administration**].
 
-1. Dans la section [!UICONTROL **Comptes d’emplacement**], désélectionnez l’option [!UICONTROL **Autoriser les utilisateurs à créer et gérer des comptes d’emplacement**].
+1. Dans la section [!UICONTROL **Comptes d’emplacement**] désélectionnez l’option [!UICONTROL **Autoriser les utilisateurs à créer et gérer des comptes d’emplacement**].
 
 1. Sélectionnez [!UICONTROL **Enregistrer**].
 
-1. (Facultatif) Supprimez les comptes que les utilisateurs ont créés et que vous ne souhaitez plus qu’ils utilisent, comme décrit dans la section [Supprimer un compte](#delete-an-account).
+1. (Facultatif) Supprimez les comptes que les utilisateurs ont créés et que vous ne souhaitez plus qu’ils utilisent, comme décrit dans la section [Supprimer un compte](#delete-accounts).
 
 ### Configurer si les utilisateurs peuvent créer et modifier des emplacements
 
 Par défaut, tous les utilisateurs de l’organisation peuvent créer des emplacements et modifier les emplacements qu’ils créent dans votre environnement Customer Journey Analytics, comme décrit dans la section [configurer des emplacements d’exportation dans le cloud](/help/components/exports/cloud-export-locations.md).
 
-Vous pouvez empêcher les utilisateurs de créer des emplacements. Dans ce cas, les utilisateurs peuvent toujours utiliser les emplacements qu’ils ont déjà créés, mais ils ne peuvent plus les modifier. Vous pouvez supprimer les emplacements créés par les utilisateurs, comme décrit dans la section [Supprimer des emplacements](#delete-a-location).
+Vous pouvez empêcher les utilisateurs de créer des emplacements. Dans ce cas, les utilisateurs peuvent toujours utiliser les emplacements qu’ils ont déjà créés, mais ils ne peuvent plus les modifier. Vous pouvez supprimer les emplacements créés par les utilisateurs, comme décrit dans la section [Supprimer des emplacements](#delete-locations).
 
 Pour empêcher tous les utilisateurs de créer et de modifier des emplacements :
 
@@ -182,9 +184,9 @@ Pour empêcher tous les utilisateurs de créer et de modifier des emplacements :
 
 1. Sélectionnez [!UICONTROL **Enregistrer**].
 
-1. (Facultatif) Supprimez les emplacements créés par les utilisateurs et que vous ne souhaitez plus que ceux-ci utilisent, comme décrit dans la section [Supprimer un emplacement](#delete-a-location).
+1. (Facultatif) Supprimez les emplacements créés par les utilisateurs et que vous ne souhaitez plus que ceux-ci utilisent, comme décrit dans la section [Supprimer un emplacement](#delete-locations).
 
-### Limiter les types de comptes que les utilisateurs peuvent créer et utiliser
+### Limiter les types de compte que les utilisateurs peuvent créer et utiliser
 
 Vous pouvez limiter les types de compte que voient les utilisateurs dans les cas suivants :
 
@@ -207,7 +209,7 @@ Pour supprimer des comptes :
 
 1. Recherchez les comptes du type de compte que vous prévoyez de limiter et qui sont utilisés pour les exportations planifiées.
 
-1. Supprimez les comptes, comme décrit dans la section [Supprimer un compte](#delete-an-account).
+1. Supprimez les comptes, comme décrit dans la section [Supprimer un compte](#delete-accounts).
 
 1. Passez à la section suivante, [Limitation des types de comptes disponibles pour les utilisateurs](#limit-the-account-types-that-are-available-to-users).
 

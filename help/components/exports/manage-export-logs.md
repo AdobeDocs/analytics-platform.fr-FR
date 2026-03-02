@@ -5,16 +5,16 @@ title: Gérer les journaux d’export
 feature: Components
 exl-id: 6d676a0a-b117-421e-9a90-8c550f08d474
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: bf76b8688dc0c463c032dd94e88450fed5488949
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 8%
+source-wordcount: '936'
+ht-degree: 7%
 
 ---
 
 # Gérer les journaux d’export
 
-Les journaux d’exportation fournissent des détails sur chaque exportation et sont générés chaque fois que des données Analysis Workspace sont exportées vers le cloud. (Pour plus d’informations sur la manière dont les données peuvent être exportées vers le cloud, voir [&#x200B; Exporter des rapports Customer Journey Analytics vers le cloud](/help/analysis-workspace/export/export-cloud.md).)
+Les journaux d’exportation fournissent des détails sur chaque exportation et sont générés chaque fois que des données Analysis Workspace sont exportées vers le cloud. (Pour plus d’informations sur la manière dont les données peuvent être exportées vers le cloud, voir [ Exporter des rapports Customer Journey Analytics vers le cloud](/help/analysis-workspace/export/export-cloud.md).)
 
 Pour les exportations planifiées, les journaux reflètent les paramètres d’exportation tels qu’ils étaient lorsque le journal a été envoyé. Les journaux ne peuvent pas être supprimés.
 
@@ -30,11 +30,13 @@ Pour les exportations planifiées, les journaux reflètent les paramètres d’e
 
 1. Effectuez l’une des opérations suivantes :
 
+   * Les administrateurs système peuvent activer l’option **[!UICONTROL Afficher les journaux pour tous les utilisateurs]**. Lorsque cette option est activée, tous les journaux s’affichent, quel que soit l’utilisateur ou l’utilisatrice qui a créé l’exportation.
+
    * [Personnaliser les colonnes](#configure-columns) affichées.
 
    * Sélectionnez l’icône **Informations** ![Informations](assets/information-icon.png) en regard du nom du journal pour afficher l’exportation associée au journal.
 
-   * Sélectionnez l’icône **Modifier l’icône d’exportation** ![Icône d’information](assets/edit-export-icon.png) en regard du nom du journal pour modifier l’exportation associée au journal.
+   * Sélectionnez l’icône **Modifier l’icône d’exportation** ![Modifier l’icône d’exportation](/help/assets/icons/Edit.svg) en regard du nom du journal pour modifier l’exportation associée au journal.
 
      Pour plus d’informations sur la modification d’une exportation, voir [Exporter des rapports Customer Journey Analytics vers le cloud](/help/analysis-workspace/export/export-cloud.md).
 
@@ -56,9 +58,9 @@ Pour trouver les informations dont vous avez besoin, vous pouvez filtrer la list
 
    | Filtre | Description |
    |---------|----------|
-   | [!UICONTROL **ID d’exportation**] | Indiquez l’ID d’exportation du journal d’exportation à afficher. |
+   | [!UICONTROL **ID d’exportation**] | Spécifiez l’ID d’exportation du journal d’exportation que vous souhaitez afficher. |
    | [!UICONTROL **Type de compte**] | Type de compte auquel le journal est associé. Les types de compte disponibles sont les suivants : <ul><li>[!UICONTROL **Zone de destination des données AEP**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **RBAC Azure**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. |
-   | [!UICONTROL **Statut**] | Statut de l’exportation. Les statuts suivants sont disponibles : <ul><li>[!UICONTROL **En attente**] : une instance spécifique d’une exportation a été démarrée, mais n’est pas encore terminée.<p>La réexécution d’une exportation dont le statut est En attente retarde le processus d’exportation.</p></li><li>[!UICONTROL **Terminé**] : le traitement d’une instance spécifique d’une exportation est terminé et elle est disponible dans le compte d’exportation.</li><li>[!UICONTROL **Échec**]<p>Plusieurs situations peuvent entraîner l’échec d’une exportation. Passez la souris sur le statut En échec pour afficher les détails de l’échec.<p>Pour plus d’informations sur les raisons possibles d’un échec, voir [Dépannage des exportations ayant échoué](/help/components/exports/troubleshoot-exports.md).</p> |
+   | [!UICONTROL **Statut**] | Statut de l’exportation. Les statuts suivants sont disponibles : <ul><li>[!UICONTROL **En attente**] : une instance spécifique d’une exportation a été démarrée, mais n’est pas encore terminée.<p>La réexécution d’une exportation dont le statut est En attente retarde le processus d’exportation.</p></li><li>[!UICONTROL **Terminé**] : le traitement d’une instance spécifique d’une exportation est terminé et elle est disponible dans le compte d’exportation.</li><li>[!UICONTROL **Échec**]<p>Plusieurs situations peuvent entraîner l’échec d’une exportation. Passez la souris sur le statut En échec pour afficher les détails de l’échec.</p><p>Pour plus d’informations sur les raisons possibles d’un échec, voir [Dépannage des exportations ayant échoué](/help/components/exports/troubleshoot-exports.md).</p></li></ul> |
 
    {style="table-layout:auto"}
 
@@ -94,19 +96,27 @@ Cette option n’est pas disponible lors de la sélection de plusieurs journaux.
 
 1. Recherchez le journal associé à l’exportation que vous souhaitez modifier.
 
-1. Sélectionnez l’icône **Modifier l’exportation** ![icône du journal d’exportation](assets/export-icon.png) en regard du nom du journal.
+1. Sélectionnez l’icône **Modifier l’exportation** ![Modifier l’icône du journal d’exportation](/help/assets/icons/Edit.svg) en regard du nom du journal.
 
    Ou
 
    Cochez la case en regard du journal, puis sélectionnez [!UICONTROL **Modifier l’exportation**].
 
+## Réexécution d’une exportation terminée ou ayant échoué
+
+Vous pouvez réexécuter une ou plusieurs exportations associées à des journaux d’exportation spécifiques. Pour réexécuter une exportation, le journal d’exportation doit avoir le statut Terminé ou En échec et dater de 7 jours au maximum.
+
+1. Cochez la case en regard d’une ou de plusieurs tâches d’exportation à réexécuter.
+
+1. Sélectionnez **[!UICONTROL Réexécuter]**.
+
 ## Configurer les colonnes
 
-Vous pouvez ajouter ou supprimer des colonnes sur l’onglet [!UICONTROL Journaux] pour configurer les informations affichées.
+Vous pouvez ajouter ou supprimer des colonnes dans l’onglet [!UICONTROL Journaux] pour configurer les informations affichées.
 
 Sélectionnez un en-tête de colonne pour trier les journaux en fonction de cette colonne. Par défaut, les journaux sont triés par date et heure de début de l’exportation.
 
-Pour configurer les colonnes de l’onglet [!UICONTROL Journaux] :
+Pour configurer des colonnes dans l’onglet [!UICONTROL Journaux] :
 
 1. Dans Customer Journey Analytics, sélectionnez [!UICONTROL **Composants**] > [!UICONTROL **Exports**].
 
@@ -123,12 +133,13 @@ Pour configurer les colonnes de l’onglet [!UICONTROL Journaux] :
    | ID d’instance | Identifiant de l’instance Customer Journey Analytics. <!-- True? --> |
    | Nom de la vue de données | Nom de la vue de données associée à l’exportation. Les utilisateurs peuvent sélectionner la vue de données lors de la création de l’exportation, comme décrit dans la section [Exporter des rapports Customer Journey Analytics vers le cloud](/help/analysis-workspace/export/export-cloud.md). |
    | Nombre de fichiers | Nombre de fichiers inclus dans l’exportation. |
-   | Taille | Taille de l’exportation.<p>La taille de fichier est calculée avec une base de 1 024, qui est parfois représentée par KIB et MIB. Si votre fournisseur de cloud calcule la taille avec une base de 1 000, il se peut que la taille affichée dans votre fournisseur de cloud soit légèrement différente de celle affichée ici.</p> |
+   | Taille | Taille de l’exportation.<p>La taille de fichier est calculée avec une base de 1 024, qui est parfois représentée par KiB et MiB. Si votre fournisseur de cloud calcule la taille avec une base de 1 000, il se peut que la taille affichée dans votre fournisseur de cloud soit légèrement différente de celle affichée ici.</p> |
    | Emplacement | Emplacement sur le compte où les données ont été exportées. |
    | Compte | Compte sur lequel les données ont été exportées. |
-   | État | Statut de l’exportation. Les statuts disponibles sont [!UICONTROL En attente], [!UICONTROL Diffusé] et [!UICONTROL Échec]. |
+   | État | Statut de l’exportation. Les statuts disponibles sont [!UICONTROL En attente], [!UICONTROL Terminé] et [!UICONTROL En échec]. |
    | Date de diffusion | Date à laquelle l’exportation a eu lieu. |
-   | Type de compte | Type de compte cloud sur lequel les données ont été exportées. Les types de compte disponibles sont les suivants : [!UICONTROL ARN du rôle Amazon S3] [!UICONTROL Google Cloud Platform], [!UICONTROL Azure SAS], [!UICONTROL Azure RBAC], [!UICONTROL Snowflake] et [!UICONTROL Adobe Experience Platform]. |
+   | Date de début | Date de début de l’exportation. |
+   | Type de compte | Type de compte cloud sur lequel les données ont été exportées. Les types de compte disponibles sont les suivants : [!UICONTROL Amazon S3 Role ARN], [!UICONTROL Google Cloud Platform], [!UICONTROL Azure SAS], [!UICONTROL Azure RBAC], [!UICONTROL Snowflake] et [!UICONTROL AEP Data Landing Zone]. |
    | Nombre de lignes | Nombre de lignes incluses dans le tableau exporté. |
 
    {style="table-layout:auto"}
