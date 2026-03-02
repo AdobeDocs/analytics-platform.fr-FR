@@ -67,7 +67,7 @@ Vous pouvez modifier les propriétés, le format, la planification et les inform
 
    La boîte de dialogue [!UICONTROL **Exporter le tableau complet**] s’affiche.
 
-1. Mettez à jour l’une des options disponibles. Pour plus d’informations sur chaque option, voir [ Exporter des tables complètes depuis Analysis Workspace ](/help/analysis-workspace/export/export-cloud.md#export-full-tables) dans [ Exporter des rapports Customer Journey Analytics vers le cloud](/help/analysis-workspace/export/export-cloud.md).
+1. Mettez à jour l’une des options disponibles. Pour plus d’informations sur chaque option, voir [&#x200B; Exporter des tables complètes depuis Analysis Workspace &#x200B;](/help/analysis-workspace/export/export-cloud.md#export-full-tables) dans [&#x200B; Exporter des rapports Customer Journey Analytics vers le cloud](/help/analysis-workspace/export/export-cloud.md).
 
 ## Renouveler une exportation
 
@@ -81,7 +81,7 @@ Vous pouvez renouveler une ou plusieurs exportations planifiées avant ou après
 
    La boîte de dialogue [!UICONTROL **Exporter le tableau complet**] s’affiche. <!--check process from here. -->
 
-1. Mettez à jour l’une des options disponibles. Pour plus d’informations sur chaque option, voir [ Exporter des tables complètes depuis Analysis Workspace ](/help/analysis-workspace/export/export-cloud.md#export-full-tables) dans [ Exporter des rapports Customer Journey Analytics vers le cloud](/help/analysis-workspace/export/export-cloud.md).
+1. Mettez à jour l’une des options disponibles. Pour plus d’informations sur chaque option, voir [&#x200B; Exporter des tables complètes depuis Analysis Workspace &#x200B;](/help/analysis-workspace/export/export-cloud.md#export-full-tables) dans [&#x200B; Exporter des rapports Customer Journey Analytics vers le cloud](/help/analysis-workspace/export/export-cloud.md).
 
 ## Dupliquer une exportation
 
@@ -174,7 +174,7 @@ Sélectionnez un en-tête de colonne pour trier les exportations en fonction de 
 
 ## Créer un export à partir de la page Exports
 
-Vous pouvez effectuer une exportation à partir d’Analysis Workspace, comme décrit dans la section [ Exporter des tables complètes vers le cloud ](/help/analysis-workspace/export/export-cloud.md) ou à partir de la page Exports, comme décrit dans cette section.
+Vous pouvez effectuer une exportation à partir d’Analysis Workspace, comme décrit dans la section [&#x200B; Exporter des tables complètes vers le cloud &#x200B;](/help/analysis-workspace/export/export-cloud.md) ou à partir de la page Exports, comme décrit dans cette section.
 
 Pour commencer à créer une exportation à partir de la page Exportations :
 
@@ -182,6 +182,6 @@ Pour commencer à créer une exportation à partir de la page Exportations :
 
 1. Dans l’onglet [!UICONTROL **Exports**], sélectionnez **[!UICONTROL Ajouter un export]**.
 
-1. Renseignez les champs disponibles pour créer votre exportation. Pour plus d’informations sur chaque champ, ainsi que sur les composants, les fonctions de mesures calculées et les autres fonctionnalités prises en charge, consultez la section [ Exporter des tables complètes vers le cloud](/help/analysis-workspace/export/export-cloud.md).
+1. Renseignez les champs disponibles pour créer votre exportation. Pour plus d’informations sur chaque champ, ainsi que sur les composants, les fonctions de mesures calculées et les autres fonctionnalités prises en charge, consultez la section [&#x200B; Exporter des tables complètes vers le cloud](/help/analysis-workspace/export/export-cloud.md).
 
 
