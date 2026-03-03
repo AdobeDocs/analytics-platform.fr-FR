@@ -35,7 +35,7 @@ Vous pouvez exporter des tableaux complets d’Analysis Workspace vers des four
 
 Lorsque vous exportez des tableaux complets, tenez compte des points suivants :
 
-* Avant d’exporter des données vers le cloud, assurez-vous que vos tables, votre environnement et vos autorisations répondent aux [&#x200B; exigences minimales d’exportation &#x200B;](#minimum-requirements).
+* Avant d’exporter des données vers le cloud, assurez-vous que vos tables, votre environnement et vos autorisations répondent aux [ exigences minimales d’exportation ](#minimum-requirements).
 
 * Certains [fonctionnalités](#unsupported-features) et certains [composants](#unsupported-components) ne sont pas pris en charge lors de l’export de tableaux complets vers le cloud.
 
