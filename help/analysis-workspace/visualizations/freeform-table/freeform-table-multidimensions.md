@@ -4,7 +4,7 @@ description: Découvrez comment inclure plusieurs dimensions dans un tableau à 
 feature: Visualizations
 role: User
 exl-id: 66ebb4fc-feb2-4fa7-a107-37508cca4748
-source-git-commit: 14718476695dcf121c94ba4cb8b2c39e5874342d
+source-git-commit: 39af20da14a5fb96fe01db31af5fc37b7e4aee16
 workflow-type: tm+mt
 source-wordcount: '836'
 ht-degree: 2%
@@ -12,8 +12,6 @@ ht-degree: 2%
 ---
 
 # Inclure plusieurs colonnes de dimensions dans un tableau à structure libre
-
-{{release-limited-testing}}
 
 Vous pouvez inclure jusqu’à 5 colonnes de dimension dans un tableau à structure libre, ce qui vous permet d’afficher plusieurs éléments de dimension côte à côte. Chaque ligne d’éléments de dimension se comporte comme un seul élément de dimension concaténé.
 

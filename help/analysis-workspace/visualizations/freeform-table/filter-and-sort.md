@@ -4,7 +4,7 @@ title: Filtrer Et Trier
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+source-git-commit: 39af20da14a5fb96fe01db31af5fc37b7e4aee16
 workflow-type: tm+mt
 source-wordcount: '1575'
 ht-degree: 47%
@@ -149,8 +149,6 @@ Pour trier les données des tableaux selon une seule colonne :
 
 ### Trier des tableaux sur plusieurs colonnes (tri avancé)
 
-{{release-limited-testing-section}}
-
 #### Appliquer le tri à plusieurs colonnes
 
 Pour trier les données des tableaux en fonction de plusieurs colonnes :
@@ -161,7 +159,7 @@ Pour trier les données des tableaux en fonction de plusieurs colonnes :
 
 1. Sélectionnez **[!UICONTROL Tri avancé]**.
 
-   ![&#x200B; Boîte de dialogue Tri avancé &#x200B;](assets/sort-advanced-dialog.png)
+   ![ Boîte de dialogue Tri avancé ](assets/sort-advanced-dialog.png)
 
 1. Dans la boîte de dialogue Tri avancé , effectuez l’une des opérations suivantes :
 
