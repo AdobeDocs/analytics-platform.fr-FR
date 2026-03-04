@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
-source-git-commit: 7d78b955b26d2fcc166d277f9ddf220ff2e03d36
+source-git-commit: 1744d625f2f18202fb7096b0fd904ee26399db34
 workflow-type: tm+mt
-source-wordcount: '1145'
+source-wordcount: '1150'
 ht-degree: 4%
 
 ---
@@ -91,7 +91,7 @@ Si vous remplissez les conditions préalables, vous pouvez effectuer des contrô
 >id="connection_changeto_identitygraph"
 >title="Modification du graphique d’identité"
 >abstract="Assurez-vous d’avoir terminé la configuration du graphique d’identité avant d’utiliser le graphique d’identité pour l’assemblage."
->additional-url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/stitching/gbs" text="Groupement basé sur les graphiques"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/gbs" text="Groupement basé sur les graphiques"
 
 >[!CONTEXTUALHELP]
 >id="connection_stitching_personid"
@@ -101,7 +101,7 @@ Si vous remplissez les conditions préalables, vous pouvez effectuer des contrô
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics"
 >title="Assemblage des mesures"
->abstract="Les mesures d’assemblage sont calculées à l’aide d’un ensemble échantillon de données, à partir de toutes les données ingérées au cours des 7 derniers jours.<br>En règle générale, cela diffère des exemples de données."
+>abstract="Les mesures d’assemblage sont calculées à l’aide d’un ensemble échantillon de données, à partir de toutes les données ingérées au cours des 7 derniers jours.<br>Elle diffère normalement des exemples de données utilisés dans le tableau **[!UICONTROL Aperçu]**."
 
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics_gbs_personidcoverage"
@@ -123,7 +123,7 @@ Si vous remplissez les conditions préalables, vous pouvez effectuer des contrô
 >id="connection_stitchingmetrics_badids"
 >title="ID incorrects"
 >abstract="Les identifiants incorrects sont des valeurs d’identifiant qui affectent considérablement les données de rapport."
->additional-url="https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-16444" text="ID incorrects"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16444" text="ID incorrects"
 
 
 Pour activer le groupement, dans la section Jeu de données d’événement de la boîte de dialogue **[!UICONTROL Ajouter des jeux de données]** ou **[!UICONTROL Modifier le jeu de données]** :
@@ -169,7 +169,7 @@ Une fois que vous avez enregistré une connexion, le processus de groupement des
 
 >[!CAUTION]
 >
->Pour les jeux de données activés pour le groupement dans l’interface Connexions, le statut de renvoi est immédiatement et incorrectement signalé comme ![Statut vert](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _renvois terminés]**&#x200B;pour le nombre de renvois terminés. Utilisez d’autres méthodes pour vérifier si les données du jeu de données groupé sont renvoyées.
+>Pour les jeux de données activés pour le groupement dans l’interface Connexions, le statut de renvoi est immédiatement et incorrectement signalé comme ![Statut vert](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _renvois terminés]**pour le nombre de renvois terminés. Utilisez d’autres méthodes pour vérifier si les données du jeu de données groupé sont renvoyées.
 >
 
 
