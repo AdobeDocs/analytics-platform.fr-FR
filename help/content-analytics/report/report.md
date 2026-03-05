@@ -67,7 +67,7 @@ Des miniatures s’affichent lorsque vous pointez sur un point de données dans 
 
 Vous pouvez ouvrir une fenêtre contextuelle d’aperçu. Pour ce faire, procédez comme suit :
 
-* Sélectionnez ![ InfoOutline ](/help/assets/icons/InfoOutline.svg) dans un [tableau à structure libre](#freeform-table).
+* Sélectionnez ![&#x200B; InfoOutline &#x200B;](/help/assets/icons/InfoOutline.svg) dans un [tableau à structure libre](#freeform-table).
 * Sélectionnez une barre spécifique dans une visualisation [barre](#bar-and-horizontal-bar) ou [barre horizontale](#bar-and-horizontal-bar) ou un point de données dans une visualisation [nuage de points](#scatter).
 
 
