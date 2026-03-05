@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
+source-git-commit: 79b3ca663af6c383eed7ec81e9c430855669d19b
 workflow-type: tm+mt
-source-wordcount: '3249'
-ht-degree: 89%
+source-wordcount: '3462'
+ht-degree: 84%
 
 ---
 
@@ -48,8 +48,31 @@ Vous pouvez également effectuer les opérations suivantes :
 
 Pour utiliser des informations d’identification n’expirant pas, procédez comme suit :
 
-* Créez des [informations d’identification non expirantes dans Experience Platform](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dataviews/bi-extension#non-expiring-credentials).
-* Accordez l’accès aux informations d’identification non expirantes en suivant les étapes mentionnées dans [Informations d’identification arrivant à expiration](#Expiring-credentials).
+1. Créez des [informations d’identification non expirantes dans Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials#non-expiring-credentials). Si vous souhaitez utiliser des informations d’identification non expirantes existantes, assurez-vous que ces informations d’identification sont [ migrées vers OAuth](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials#migrate-credentials).
+
+1. Assurez-vous que les informations d’identification non expirantes sont disponibles pour le produit et les profils de produit Customer Journey Analytics. Vous devez être administrateur système pour que l’organisation puisse exécuter les étapes suivantes.
+   1. Sélectionnez **[!UICONTROL Admin Console]** dans ![App](/help/assets/icons/Apps.svg).
+   1. Vérifiez que les informations d’identification non expirantes sont ajoutées à la liste des informations d’identification d’API.
+      1. Sélectionnez **[!UICONTROL Utilisateurs]** dans le menu supérieur.
+      1. Sélectionnez **[!UICONTROL Informations d’identification de l’API]** dans le rail de gauche.
+      1. Les informations d’identification non expirantes nouvelles ou migrées doivent être répertoriées et commencer par **[!UICONTROL EQS-...]**.
+
+      1. Assurez-vous que les informations d’identification d’API non expirantes ont accès au produit et aux profils Customer Journey Analytics.
+
+         1. Sélectionnez ![ProductDetails](/help/assets/icons/ProductDetails.svg) pour les informations d’identification d’API non expirantes **[!UICONTROL EQS-...]**.
+         1. Dans le volet d’informations du produit **[!UICONTROL EQS-...]**, sélectionnez ![Plus](/help/assets/icons/More.svg) et sélectionnez **[!UICONTROL Modifier les informations d’identification d’API]**.
+         1. Dans la boîte de dialogue **[!UICONTROL Modifier les informations d’identification de l’API]**, validez le **[!UICONTROL Profils attribués]**. Si aucun produit Customer Journey Analytics n’est répertorié :
+            1. Sélectionnez ![Ajouter](/help/assets/icons/Add.svg) puis **[!UICONTROL Customer Journey Analytics]**.
+            1. Sélectionnez un ou plusieurs profils de produit qui contiennent les utilisateurs auxquels vous souhaitez accorder l’accès pour Query Service et l’extension BI.
+            1. Sélectionnez **[!UICONTROL Appliquer]**.
+
+1. Vérifiez que les informations d’identification d’API non expirantes s’affichent dans Experience Platform Query Service.
+
+   1. Sélectionnez **[!UICONTROL Experience Platform]** dans ![App](/help/assets/icons/Apps.svg).
+   1. Sélectionnez **[!UICONTROL Requêtes]** dans le rail de gauche.
+   1. Sélectionnez **[!UICONTROL Informations d’identification]** dans le menu supérieur.
+   1. Vos informations d’identification d’API non expirantes doivent s’afficher, en utilisant le nom que vous avez fourni à l’étape 1, dans la liste **[!UICONTROL Informations d’identification non expirantes]**.
+
 
 Consultez [Contrôle d’accès du parcours client](../technotes/access-control.md) pour plus d’informations, en particulier les [autorisations supplémentaires d’administration de produit](../technotes/access-control.md#product-admin-additional-permissions) et les [autorisations de Customer Journey Analytics dans Admin Console](../technotes/access-control.md#customer-journey-analytics-permissions-in-admin-console).
 
@@ -66,9 +89,9 @@ Vous pouvez utiliser cette fonctionnalité directement dans les instructions SQL
 
 Dans Adobe Experience Platform :
 
-1. Sélectionnez **[!UICONTROL ** Requêtes **]** dans **[!UICONTROL **&#x200B; Gestion des données &#x200B;**]** depuis le rail de gauche.
+1. Sélectionnez **[!UICONTROL ** Requêtes **]** dans **[!UICONTROL ** Gestion des données **]** depuis le rail de gauche.
 
-1. Sélectionnez ![Créer une requête](assets/Smock_AddCircle_18_N.svg) **[!UICONTROL **&#x200B; Créer une requête &#x200B;**]**.
+1. Sélectionnez ![Créer une requête](assets/Smock_AddCircle_18_N.svg) **[!UICONTROL ** Créer une requête **]**.
 
 1. Sélectionnez la base de données `cja` de votre sandbox dans la liste des bases de données du menu déroulant **[!UICONTROL Base de données]**. Par exemple `prod:cja`.
 
@@ -81,13 +104,13 @@ Dans Adobe Experience Platform :
 
 1. Recherchez et copiez vos informations d’identification PostgresSQL dans Adobe Experience Platform :
 
-   1. Sélectionnez **[!UICONTROL ** Requêtes **]** depuis le rail de gauche (sous **[!UICONTROL **&#x200B; Gestion des données &#x200B;**]**).
+   1. Sélectionnez **[!UICONTROL ** Requêtes **]** depuis le rail de gauche (sous **[!UICONTROL ** Gestion des données **]**).
 
-   1. Sélectionnez **[!UICONTROL **&#x200B; Informations d’identification &#x200B;**]** dans la barre supérieure.
+   1. Sélectionnez **[!UICONTROL ** Informations d’identification **]** dans la barre supérieure.
 
    1. Sélectionnez la base de données `cja` de votre sandbox dans la liste des bases de données du menu déroulant **[!UICONTROL Base de données]**. Par exemple `prod:cja`.
 
-   1. Pour copier la chaîne de commande, utilisez ![Copier](assets/Smock_Copy_18_N.svg) dans la section **[!UICONTROL **&#x200B; Commande PSQL &#x200B;**]**.
+   1. Pour copier la chaîne de commande, utilisez ![Copier](assets/Smock_Copy_18_N.svg) dans la section **[!UICONTROL ** Commande PSQL **]**.
 
 1. Ouvrez une fenêtre de commande ou de terminal.
 
@@ -106,9 +129,9 @@ Actuellement, l’[!DNL Customer Journey Analytics BI extension] est prise en ch
 
 1. Recherchez les détails de vos informations d’identification PostgresSQL dans Adobe Experience Platform :
 
-   1. Sélectionnez **[!UICONTROL ** Requêtes **]** depuis le rail de gauche (sous **[!UICONTROL **&#x200B; Gestion des données &#x200B;**]**).
+   1. Sélectionnez **[!UICONTROL ** Requêtes **]** depuis le rail de gauche (sous **[!UICONTROL ** Gestion des données **]**).
 
-   1. Sélectionnez **[!UICONTROL **&#x200B; Informations d’identification &#x200B;**]** dans la barre supérieure.
+   1. Sélectionnez **[!UICONTROL ** Informations d’identification **]** dans la barre supérieure.
 
    1. Sélectionnez la base de données `cja` de votre sandbox dans la liste des bases de données du menu déroulant **[!UICONTROL Base de données]**. Par exemple `prod:cja`.
 
@@ -116,28 +139,28 @@ Actuellement, l’[!DNL Customer Journey Analytics BI extension] est prise en ch
 
 1. Dans Power BI :
 
-   1. Dans la fenêtre principale, sélectionnez **[!UICONTROL **&#x200B; Obtenir des données &#x200B;**]** dans la barre d’outils supérieure.
+   1. Dans la fenêtre principale, sélectionnez **[!UICONTROL ** Obtenir des données **]** dans la barre d’outils supérieure.
 
    1. Sélectionnez **[!UICONTROL Plus...]** dans le rail de gauche.
 
-   1. Sur l’écran **Obtenir des données**, recherchez `PostgresSQL` et sélectionnez la **[!UICONTROL **&#x200B; base de données PostgresSQL &#x200B;**]** dans la liste.
+   1. Sur l’écran **Obtenir des données**, recherchez `PostgresSQL` et sélectionnez la **[!UICONTROL ** base de données PostgresSQL **]** dans la liste.
 
-   1. Dans la boîte de dialogue **[!UICONTROL **&#x200B; Base de données PostgressSQL &#x200B;**]**, réalisez les actions suivantes :
+   1. Dans la boîte de dialogue **[!UICONTROL ** Base de données PostgressSQL **]**, réalisez les actions suivantes :
 
-      1. Collez le paramètre **[!UICONTROL ** Hôte **]** des [!UICONTROL Informations d’identification] des requêtes Experience Platform dans le champ de texte **[!UICONTROL **&#x200B; Serveur &#x200B;**]**.
+      1. Collez le paramètre **[!UICONTROL ** Hôte **]** des [!UICONTROL Informations d’identification] des requêtes Experience Platform dans le champ de texte **[!UICONTROL ** Serveur **]**.
 
-      1. Collez le paramètre **[!UICONTROL ** Base de données **]** des [!UICONTROL Informations d’identification] des requêtes Experience Platform dans le champ de texte **[!UICONTROL **&#x200B; Base de données &#x200B;**]**.
+      1. Collez le paramètre **[!UICONTROL ** Base de données **]** des [!UICONTROL Informations d’identification] des requêtes Experience Platform dans le champ de texte **[!UICONTROL ** Base de données **]**.
 
-         Ajoutez `?FLATTEN` au paramètre **[!UICONTROL **&#x200B; Base de données &#x200B;**]**, de sorte à lire `prod:cja?FLATTEN`, par exemple. Voir [Aplatissement des structures de données imbriquées à utiliser avec des outils de BI tiers](https://experienceleague.adobe.com/fr/docs/experience-platform/query/key-concepts/flatten-nested-data) pour plus d’informations.
+         Ajoutez `?FLATTEN` au paramètre **[!UICONTROL ** Base de données **]**, de sorte à lire `prod:cja?FLATTEN`, par exemple. Voir [Aplatissement des structures de données imbriquées à utiliser avec des outils de BI tiers](https://experienceleague.adobe.com/fr/docs/experience-platform/query/key-concepts/flatten-nested-data) pour plus d’informations.
 
       1. Lorsque le mode **[!UICONTROL Connectivité des données]** vous est proposé, sélectionnez **[!UICONTROL DirectQuery]**.
 
       1. Vous devez fournir un **[!UICONTROL Nom d’utilisateur ou d’utilisatrice]** et un **[!UICONTROL Mot de passe]**. Utilisez les mêmes paramètres d’[!UICONTROL Informations d’identification] que pour les requêtes Experience Platform.
 
 
-   1. Une fois la connexion établie, les tableaux des vue de données de Customer Journey Analytics s’affichent dans le **[!UICONTROL **&#x200B; Navigateur &#x200B;**]** de Power BI.
+   1. Une fois la connexion établie, les tableaux des vue de données de Customer Journey Analytics s’affichent dans le **[!UICONTROL ** Navigateur **]** de Power BI.
 
-   1. Sélectionnez les tableaux des vues de données à utiliser, puis sélectionnez **[!UICONTROL **&#x200B; Charger &#x200B;**]**.
+   1. Sélectionnez les tableaux des vues de données à utiliser, puis sélectionnez **[!UICONTROL ** Charger **]**.
 
    Toutes les dimensions et mesures associées à un ou plusieurs tableaux sélectionnés s’affichent dans le volet de droite et sont prêtes à être utilisées dans vos visualisations.
 
@@ -149,9 +172,9 @@ Actuellement, l’[!DNL Customer Journey Analytics BI extension] est prise en ch
 
 1. Recherchez les détails de vos informations d’identification PostgresSQL dans Adobe Experience Platform :
 
-   1. Sélectionnez **[!UICONTROL ** Requêtes **]** depuis le rail de gauche (sous **[!UICONTROL **&#x200B; Gestion des données &#x200B;**]**).
+   1. Sélectionnez **[!UICONTROL ** Requêtes **]** depuis le rail de gauche (sous **[!UICONTROL ** Gestion des données **]**).
 
-   1. Sélectionnez **[!UICONTROL **&#x200B; Informations d’identification &#x200B;**]** dans la barre supérieure.
+   1. Sélectionnez **[!UICONTROL ** Informations d’identification **]** dans la barre supérieure.
 
    1. Sélectionnez la base de données `cja` de votre sandbox dans la liste des bases de données du menu déroulant **[!UICONTROL Base de données]**. Par exemple `prod:cja`.
 
@@ -159,29 +182,29 @@ Actuellement, l’[!DNL Customer Journey Analytics BI extension] est prise en ch
 
 1. Dans Tableau Desktop :
 
-   1. Sélectionnez **[!UICONTROL ** Plus **]** depuis **[!UICONTROL **&#x200B; Vers un serveur &#x200B;**]** dans le rail de gauche.
+   1. Sélectionnez **[!UICONTROL ** Plus **]** depuis **[!UICONTROL ** Vers un serveur **]** dans le rail de gauche.
 
-   1. Sélectionnez **[!UICONTROL **&#x200B; PostgresSQL &#x200B;**]** dans la liste.
+   1. Sélectionnez **[!UICONTROL ** PostgresSQL **]** dans la liste.
 
    1. Dans la boîte de dialogue [!UICONTROL PostgresSQL], réalisez les actions suivantes :
 
-      1. Collez le paramètre **[!UICONTROL ** Hôte **]** des [!UICONTROL Informations d’identification] des requêtes Experience Platform dans le champ de texte **[!UICONTROL **&#x200B; Serveur &#x200B;**]**.
+      1. Collez le paramètre **[!UICONTROL ** Hôte **]** des [!UICONTROL Informations d’identification] des requêtes Experience Platform dans le champ de texte **[!UICONTROL ** Serveur **]**.
 
-      1. Collez le paramètre **[!UICONTROL ** Port **]** des [!UICONTROL Informations d’identification] des requêtes Experience Platform dans le champ de texte **[!UICONTROL **&#x200B; Port &#x200B;**]**.
+      1. Collez le paramètre **[!UICONTROL ** Port **]** des [!UICONTROL Informations d’identification] des requêtes Experience Platform dans le champ de texte **[!UICONTROL ** Port **]**.
 
-      1. Collez le paramètre **[!UICONTROL ** Base de données **]** des [!UICONTROL Informations d’identification] des requêtes Experience Platform dans le champ de texte **[!UICONTROL **&#x200B; Base de données &#x200B;**]**.
+      1. Collez le paramètre **[!UICONTROL ** Base de données **]** des [!UICONTROL Informations d’identification] des requêtes Experience Platform dans le champ de texte **[!UICONTROL ** Base de données **]**.
 
-         Ajoutez `%3FFLATTEN` au paramètre **[!UICONTROL **&#x200B; Base de données &#x200B;**]**, de sorte à lire `prod:cja%3FFLATTEN`, par exemple. Voir [Aplatissement des structures de données imbriquées à utiliser avec des outils de BI tiers](https://experienceleague.adobe.com/fr/docs/experience-platform/query/key-concepts/flatten-nested-data) pour plus d’informations.
+         Ajoutez `%3FFLATTEN` au paramètre **[!UICONTROL ** Base de données **]**, de sorte à lire `prod:cja%3FFLATTEN`, par exemple. Voir [Aplatissement des structures de données imbriquées à utiliser avec des outils de BI tiers](https://experienceleague.adobe.com/fr/docs/experience-platform/query/key-concepts/flatten-nested-data) pour plus d’informations.
 
-      1. Sélectionnez **[!UICONTROL ** Nom d’utilisateur ou d’utilisatrice et mot de passe **]** dans la liste **[!UICONTROL **&#x200B; Authentification &#x200B;**]**.
+      1. Sélectionnez **[!UICONTROL ** Nom d’utilisateur ou d’utilisatrice et mot de passe **]** dans la liste **[!UICONTROL ** Authentification **]**.
 
-      1. Collez le paramètre **[!UICONTROL ** Nom d’utilisateur ou d’utilisatrice **]** des [!UICONTROL Informations d’identification] des requêtes Experience Platform dans le champ de texte **[!UICONTROL **&#x200B; Nom d’utilisateur ou d’utilisatrice &#x200B;**]**.
+      1. Collez le paramètre **[!UICONTROL ** Nom d’utilisateur ou d’utilisatrice **]** des [!UICONTROL Informations d’identification] des requêtes Experience Platform dans le champ de texte **[!UICONTROL ** Nom d’utilisateur ou d’utilisatrice **]**.
 
-      1. Collez le paramètre **[!UICONTROL ** Mot de passe **]** des [!UICONTROL Informations d’identification] des requêtes Experience Platform dans le champ de texte **[!UICONTROL **&#x200B; Mot de passe &#x200B;**]**.
+      1. Collez le paramètre **[!UICONTROL ** Mot de passe **]** des [!UICONTROL Informations d’identification] des requêtes Experience Platform dans le champ de texte **[!UICONTROL ** Mot de passe **]**.
 
-      1. Sélectionnez **[!UICONTROL **&#x200B; Se connecter &#x200B;**]**.
+      1. Sélectionnez **[!UICONTROL ** Se connecter **]**.
 
-   1. Les vues de données Customer Journey Analytics s’affichent sous forme de tableaux dans la liste **[!UICONTROL **&#x200B; Tableau &#x200B;**]**.
+   1. Les vues de données Customer Journey Analytics s’affichent sous forme de tableaux dans la liste **[!UICONTROL ** Tableau **]**.
 
    1. Faites glisser les tableaux à utiliser sur la zone de travail.
 
@@ -195,9 +218,9 @@ Actuellement, l’[!DNL Customer Journey Analytics BI extension] est prise en ch
 
 1. Recherchez les détails de vos informations d’identification PostgresSQL dans Adobe Experience Platform :
 
-   1. Sélectionnez **[!UICONTROL ** Requêtes **]** depuis le rail de gauche (sous **[!UICONTROL **&#x200B; Gestion des données &#x200B;**]**).
+   1. Sélectionnez **[!UICONTROL ** Requêtes **]** depuis le rail de gauche (sous **[!UICONTROL ** Gestion des données **]**).
 
-   1. Sélectionnez **[!UICONTROL **&#x200B; Informations d’identification &#x200B;**]** dans la barre supérieure.
+   1. Sélectionnez **[!UICONTROL ** Informations d’identification **]** dans la barre supérieure.
 
    1. Sélectionnez la base de données `cja` de votre sandbox dans la liste des bases de données du menu déroulant **[!UICONTROL Base de données]**. Par exemple `prod:cja`.
 
@@ -222,9 +245,9 @@ Actuellement, l’[!DNL Customer Journey Analytics BI extension] est prise en ch
 
 1. Recherchez les détails de vos informations d’identification PostgresSQL dans Adobe Experience Platform :
 
-   1. Sélectionnez **[!UICONTROL ** Requêtes **]** depuis le rail de gauche (sous **[!UICONTROL **&#x200B; Gestion des données &#x200B;**]**).
+   1. Sélectionnez **[!UICONTROL ** Requêtes **]** depuis le rail de gauche (sous **[!UICONTROL ** Gestion des données **]**).
 
-   1. Sélectionnez **[!UICONTROL **&#x200B; Informations d’identification &#x200B;**]** dans la barre supérieure.
+   1. Sélectionnez **[!UICONTROL ** Informations d’identification **]** dans la barre supérieure.
 
    1. Sélectionnez la base de données `cja` de votre sandbox dans la liste des bases de données du menu déroulant **[!UICONTROL Base de données]**. Par exemple `prod:cja`.
 
@@ -246,9 +269,9 @@ Actuellement, l’[!DNL Customer Journey Analytics BI extension] est prise en ch
 
 1. Recherchez les détails de vos informations d’identification PostgresSQL dans Adobe Experience Platform :
 
-   1. Sélectionnez **[!UICONTROL ** Requêtes **]** depuis le rail de gauche (sous **[!UICONTROL **&#x200B; Gestion des données &#x200B;**]**).
+   1. Sélectionnez **[!UICONTROL ** Requêtes **]** depuis le rail de gauche (sous **[!UICONTROL ** Gestion des données **]**).
 
-   1. Sélectionnez **[!UICONTROL **&#x200B; Informations d’identification &#x200B;**]** dans la barre supérieure.
+   1. Sélectionnez **[!UICONTROL ** Informations d’identification **]** dans la barre supérieure.
 
    1. Sélectionnez la base de données `cja` de votre sandbox dans la liste des bases de données du menu déroulant **[!UICONTROL Base de données]**. Par exemple `prod:cja`.
 
