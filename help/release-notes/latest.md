@@ -3,23 +3,24 @@ title: Notes de mise à jour actuelles de Customer Journey Analytics
 description: Afficher les dernières notes de mise à jour de Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 26b61e62c853c3ddb0dad9e1d710c839a49314e4
+source-git-commit: 3d58f4dccdc7b9ea6f936cc924a30cc06b2317d1
 workflow-type: tm+mt
-source-wordcount: '1228'
-ht-degree: 31%
+source-wordcount: '1255'
+ht-degree: 30%
 
 ---
 
 # Notes de mise à jour actuelles de Customer Journey Analytics (février 2026)
 
-**Dernière mise à jour** : vendredi 12 février 2026
+**Dernière mise à jour** : 5 mars 2026
 
 Ces notes de mise à jour couvrent la période de publication de février 2026. Les mises à jour d’Adobe Customer Journey Analytics suivent un [modèle de diffusion continue](releases.md) qui permet une approche plus évolutive et plus progressive du déploiement des fonctionnalités. Par conséquent, ces notes de mise à jour sont mises à jour plusieurs fois par mois. Veuillez les vérifier régulièrement.
 
 ## Fonctionnalités nouvelles ou mises à jour
 
 | Fonctionnalité et description | [Le déploiement commence](releases.md) | [Disponibilité générale](releases.md) |
-| ----------- | ------- | ---- |
+| ----------- | -------: | ----:|
+| **Miniatures et aperçus Content Analytics supplémentaires**<p>Les aperçus et miniatures Content Analytics sont désormais pris en charge dans les visualisations sous forme de barres (empilées), barres horizontales (empilées) et nuages de points. | vendredi 5 mars 2026 | À confirmer |
 | **Remplacements d’en-tête** <p>Vous pouvez spécifier un nom d’en-tête et une valeur d’en-tête secrète dans Content Analytics. Cette [configuration de remplacement de l’en-tête](/help/content-analytics/config/guided.md#header-overrides) garantit que Content Analytics envoie des en-têtes HTTP personnalisés pour contourner les technologies de détection des robots ou de contrôle du trafic que vous avez implémentées.</p> |  | mardi 2 février 2026 |
 | **Combiner des suites de rapports provenant de plusieurs organisations IMS**<p>Vous pouvez utiliser Analytics Source Connector pour combiner des suites de rapports issues de plusieurs organisations IMS. Cette fonctionnalité [mappage de données entre les IMS](/help/getting-started/aa-vs-cja/mapping-data-ims-orgs.md) permet aux organisations d’avoir une vue combinée de leurs données client, même lorsque ces données client sont réparties sur plusieurs organisations IMS. <p>**Remarque :** cette configuration n’est disponible qu’en envoyant une demande à l’assistance clientèle d’Adobe.</p> |  | vendredi 12 février 2026 |
 | **Inclure plusieurs colonnes de dimension dans un tableau à structure libre**<p>Vous pouvez désormais inclure jusqu’à 5 colonnes de dimension dans un tableau à structure libre, ce qui vous permet d’afficher plusieurs éléments de dimension côte à côte. Chaque ligne d’éléments de dimension se comporte comme un seul élément de dimension concaténé.</p><p>Vous pouvez appliquer des filtres, un tri, des répartitions, etc. aux tableaux à structure libre à plusieurs colonnes de dimensions afin de créer une analyse plus approfondie et plus personnalisée.</p><p>Auparavant, vous pouviez inclure une seule colonne de dimension dans un tableau à structure libre.</p><p>Pour plus d’informations, voir [Inclure plusieurs colonnes de dimensions dans un tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table-multidimensions.md).</p> | jeudi 28 janvier 2026 | jeudi 4 mars 2026 <p>(Initialement prévu pour le 18 février 2026)</p> |
