@@ -48,7 +48,7 @@ Vous pouvez également effectuer les opérations suivantes :
 
 Pour utiliser des informations d’identification n’expirant pas, procédez comme suit :
 
-1. Créez des [informations d’identification non expirantes dans Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials#non-expiring-credentials). Si vous souhaitez utiliser des informations d’identification non expirantes existantes, assurez-vous que ces informations d’identification sont [&#x200B; migrées vers OAuth](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials#migrate-credentials).
+1. Créez des [informations d’identification non expirantes dans Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/query/ui/credentials#non-expiring-credentials). Si vous souhaitez utiliser des informations d’identification non expirantes existantes, assurez-vous que ces informations d’identification sont [&#x200B; migrées vers OAuth](https://experienceleague.adobe.com/fr/docs/experience-platform/query/ui/credentials#migrate-credentials).
 
 1. Assurez-vous que les informations d’identification non expirantes sont disponibles pour le produit et les profils de produit Customer Journey Analytics. Vous devez être administrateur système pour que l’organisation puisse exécuter les étapes suivantes.
    1. Sélectionnez **[!UICONTROL Admin Console]** dans ![App](/help/assets/icons/Apps.svg).
