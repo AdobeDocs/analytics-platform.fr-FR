@@ -4,10 +4,10 @@ description: Découvrez les fonctions de mesures calculées avancées.
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: a5e07891b23184dfe5d4c3f1b2c4b36b6884fb72
+source-git-commit: 76b4ac60c8e3ae2dd62f86a35bdf1c582f60b10f
 workflow-type: tm+mt
-source-wordcount: '5294'
-ht-degree: 99%
+source-wordcount: '5286'
+ht-degree: 98%
 
 ---
 
@@ -433,14 +433,14 @@ Renvoie la moyenne des n derniers éléments de la colonne x. Si n > 0, addi
 >[!CONTEXTUALHELP]
 >id="functions-ls-corr-exp"
 >title="Régression exponentielle : coefficient de corrélation"
->abstract="Régression exponentielle : Y = a exp(X) + b. Renvoie le coefficient de corrélation."
+>abstract="Régression exponentielle : Y = b * exp(aX). Renvoie le coefficient de corrélation."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION EXPONENTIELLE : COEFFICIENT DE CORRÉLATION(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE Tableau]{type="Neutral"} Régression exponentielle : Y = a exp(X) + b. Renvoie le coefficient de corrélation.
+[!BADGE Tableau]{type="Neutral"} Régression exponentielle : Y = b * exp(aX). Renvoie le coefficient de corrélation.
 
 
 | Argument | Description |
@@ -456,14 +456,14 @@ Renvoie la moyenne des n derniers éléments de la colonne x. Si n > 0, addi
 >[!CONTEXTUALHELP]
 >id="functions-ls-pred-exp"
 >title="Régression exponentielle : Y prédit"
->abstract="Régression exponentielle : Y = a exp(X) + b. Renvoie Y."
+>abstract="Régression exponentielle : Y = b * exp(aX). Renvoie Y."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION EXPONENTIELLE : PRÉDITE Y(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE Ligne]{type="Neutral"} Régression exponentielle : Y = a exp(X) + b. Renvoie Y.
+[!BADGE Ligne]{type="Neutral"} Régression exponentielle : Y = b * exp(aX). Renvoie Y.
 
 
 | Argument | Description |
@@ -480,14 +480,14 @@ Renvoie la moyenne des n derniers éléments de la colonne x. Si n > 0, addi
 >[!CONTEXTUALHELP]
 >id="functions-ls-intercept-exp"
 >title="Régression exponentielle : ordonnée à l’origine"
->abstract="Régression exponentielle : Y = a exp(X) + b. Renvoie b."
+>abstract="Régression exponentielle : Y = b * exp(aX). Renvoie b."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION EXPONENTIELLE : INTERCEPTER(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE Tableau]{type="Neutral"} Régression exponentielle : Y = a exp(X) + b. Renvoie b.
+[!BADGE Tableau]{type="Neutral"} Régression exponentielle : Y = b * exp(aX). Renvoie b.
 
 | Argument | Description |
 |---|---|
@@ -503,14 +503,14 @@ Renvoie la moyenne des n derniers éléments de la colonne x. Si n > 0, addi
 >[!CONTEXTUALHELP]
 >id="functions-ls-slope-exp"
 >title="Régression exponentielle : inclinaison"
->abstract="Régression exponentielle : Y = a exp(X) + b. Renvoie a."
+>abstract="Régression exponentielle : Y = b * exp(aX). Renvoie a."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION EXPONENTIELLE : PENTE(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE Tableau]{type="Neutral"} Régression exponentielle : Y = a exp(X) + b. Renvoie a.
+[!BADGE Tableau]{type="Neutral"} Régression exponentielle : Y = b * exp(aX). Renvoie a.
 
 
 | Argument | Description |
