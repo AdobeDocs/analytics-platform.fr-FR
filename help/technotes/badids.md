@@ -47,7 +47,7 @@ L’interface de connexion de Customer Journey Analytics offre des informations 
 * Vous pouvez voir **[!UICONTROL Mauvais ID]** (ou **[!UICONTROL BAVID]**) comme raisons possibles pour ignorer des enregistrements dans la boîte de dialogue **[!UICONTROL Vérifier les détails ignorés]**. Utilisez **[!UICONTROL Vérifier les détails]** (le cas échéant) ci-dessous **[!UICONTROL Enregistrements ignorés]** dans l’écran [détails d’une connexion](/help/connections/create-connection.md).
 * Pour un jeu de données activé pour le groupement, l’[**[!UICONTROL Aperçu du jeu de données]**](/help/stitching/use-stitching-ui.md#bad-ids) affiche **[!UICONTROL ID incorrects]** dans le cadre des **[!UICONTROL mesures de groupement]**. Cette mesure peut vous aider à identifier les cas possibles de Mauvais ID. Toutefois, sachez que cette mesure est calculée sur la base d’un ensemble limité de données.
 
-Reportez-vous à la section [ Exposition des ID incorrects ](#bad-ids-exposure) pour vous aider à identifier la présence d’ID incorrects pour un jeu de données que vous prévoyez d’utiliser dans une connexion (que le groupement soit activé ou non).
+Reportez-vous à la section [&#x200B; Exposition des ID incorrects &#x200B;](#bad-ids-exposure) pour vous aider à identifier la présence d’ID incorrects pour un jeu de données que vous prévoyez d’utiliser dans une connexion (que le groupement soit activé ou non).
 
 
 ## Exposition
