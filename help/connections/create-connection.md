@@ -5,10 +5,10 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: dfcae178e02a2a235abb17e502e83d87e95f40db
+source-git-commit: 5e6f62010797d47758cec7f97ffa414968f75731
 workflow-type: tm+mt
-source-wordcount: '8802'
-ht-degree: 97%
+source-wordcount: '9759'
+ht-degree: 89%
 
 ---
 
@@ -77,7 +77,7 @@ ht-degree: 97%
 >[!CONTEXTUALHELP]
 >id="connection_change_personid"
 >title="Modifier les paramètres d’identité "
->abstract="Un paramètre de changement d’identité supprime les données de connexion de ce jeu de données, une fois que vous avez enregistré les modifications dans l’interface Connexions. Vous devrez ingérer à nouveau les données du jeu de données en fonction des nouveaux paramètres.<br/><br/>Un délai dans la création de rapports est possible jusqu’à ce que le processus de suppression soit terminé."
+>abstract="Un paramètre de changement d’identité supprime les données de connexion de ce jeu de données, une fois que vous avez enregistré les modifications dans l’interface Connexions. Vous devrez démarrer manuellement un renvoi de données pour le jeu de données, en fonction des nouveaux paramètres.<br/><br/>Un délai dans la création de rapports est possible jusqu’à ce que le processus de suppression soit terminé."
 
 >[!CONTEXTUALHELP]
 >id="connection_change_accountid"
@@ -117,32 +117,32 @@ ht-degree: 97%
 >[!CONTEXTUALHELP]
 >id="connections_useincja_exl_ajo"
 >title="Utiliser cette connexion dans Customer Journey Analytics"
->abstract="Cette option permet d’exploiter les fonctionnalités de reporting avancé de Customer Journey Analytics avec votre connexion Journey Optimizer. Ces fonctionnalités vous permettent de réaliser les actions suivantes :<ul><li>Effectuer une analyse approfondie des données Journey Optimizer dans Customer Journey Analytics</li><li>Modifiez la connexion Journey Optimizer et les vues de données associées.</li><li>Analysez les événements de parcours, les chemins de conversation et les performances de la campagne.</li></ul>**Lorsque cette option est activée, chaque ligne de données de la connexion est comptabilisée chaque mois dans les lignes de données de licence pour Customer Journey Analytics et apparaît dans l’interface d’utilisation Utilisation des connexions.**<br><br/> Explorez cette option uniquement si vous êtes à l’aise avec l’utilisation supplémentaire de lignes de données dans Customer Journey Analytics. [En savoir plus](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/integrations/ajo){target="_blank"}."
+>abstract="Cette option permet d’exploiter les fonctionnalités de reporting avancé de Customer Journey Analytics avec votre connexion Journey Optimizer. Ces fonctionnalités vous permettent de réaliser les actions suivantes :<ul><li>Effectuer une analyse approfondie des données Journey Optimizer dans Customer Journey Analytics</li><li>Modifiez la connexion Journey Optimizer et les vues de données associées.</li><li>Analysez les événements de parcours, les chemins de conversation et les performances de la campagne.</li></ul>**Lorsque cette option est activée, chaque ligne de données de la connexion est comptabilisée chaque mois dans les lignes de données de licence pour Customer Journey Analytics. et apparaît dans l’interface utilisateur d’utilisation des connexions.**<br><br/> Explorez cette option uniquement si vous êtes à l’aise avec l’utilisation supplémentaire de lignes de données dans Customer Journey Analytics. [En savoir plus](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/integrations/ajo){target="_blank"}."
 
 >[!CONTEXTUALHELP]
 >id="connections_disableuseincja_exl_ajo"
 >title="Supprimer cette connexion de Customer Journey Analytics"
->abstract="Cette connexion Journey Optimizer est en cours d’utilisation dans Customer Journey Analytics. Les connexions vous permettent d’effectuer les opérations suivantes :<ul><li>Effectuer une analyse approfondie des données Journey Optimizer dans Customer Journey Analytics</li><li>Modifiez la connexion Journey Optimizer et les vues de données associées.</li><li>Analysez les événements de parcours, les chemins de conversation et les performances de la campagne.</li></ul>**Si vous supprimez la connexion, une analyse approfondie dans Customer Journey Analytics n’est plus possible. La connexion et les vues de données associées sont réinitialisées à leur état par défaut et ne peuvent plus être modifiées.**<br/><br/>**La facturation de cette connexion dans Customer Journey Analytics inclut le mois complet pendant lequel la connexion est supprimée.**<br/><br/> La connexion reste activée dans Journey Optimizer. [En savoir plus](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/integrations/ajo){target="_blank"}."
+>abstract="Cette connexion Journey Optimizer est actuellement utilisée dans Customer Journey Analytics. La connexion vous permet d’effectuer les opérations suivantes :<ul><li>Effectuer une analyse approfondie des données Journey Optimizer dans Customer Journey Analytics</li><li>Modifiez la connexion Journey Optimizer et les vues de données associées.</li><li>Analysez les événements de parcours, les chemins de conversation et les performances de la campagne.</li></ul>**Si vous supprimez la connexion, une analyse approfondie dans Customer Journey Analytics n’est plus possible. La connexion et les vues de données associées sont réinitialisées à leur état par défaut et ne peuvent plus être modifiées.**<br/><br/>**La facturation de cette connexion dans Customer Journey Analytics inclut le mois complet pendant lequel la connexion est supprimée.**<br/><br/> La connexion reste activée dans Journey Optimizer. [En savoir plus](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/integrations/ajo){target="_blank"}."
 
 >[!CONTEXTUALHELP]
 >id="connections_useincja_exl_brand_concierge"
 >title="Utiliser cette connexion dans Customer Journey Analytics"
->abstract="Cette option vous permet de tirer profit des fonctionnalités de reporting avancé de Customer Journey Analytics avec votre connexion Brand Concierge. Ces fonctionnalités vous permettent d’effectuer les opérations suivantes :<ul><li>Effectuer une analyse approfondie des données Brand Concierge dans Customer Journey Analytics.</li><li>Modifier la connexion Brand Concierge et les vues de données associées.</li><li>Analyser les mesures d’engagement conversationnel, de sentiment et de conversion.</li></ul>**Lorsque cette option est activée, chaque ligne de données de la connexion est comptabilisée chaque mois dans les lignes de données de licence pour Customer Journey Analytics et apparaît dans l’interface d’utilisation Utilisation des connexions.**<br><br/> Explorez cette option uniquement si vous êtes à l’aise avec l’utilisation supplémentaire de lignes de données dans Customer Journey Analytics. [En savoir plus](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/templates/use-templates#brand-concierge-templates){target="_blank"}."
+>abstract="Cette option vous permet de tirer profit des fonctionnalités de reporting avancé de Customer Journey Analytics avec votre connexion Brand Concierge. Ces fonctionnalités vous permettent d’effectuer les opérations suivantes :<ul><li>Effectuez une analyse approfondie des données Brand Concierge dans Customer Journey Analytics.</li><li>Modifier la connexion Brand Concierge et les vues de données associées.</li><li>Analyser les mesures d’engagement conversationnel, de sentiment et de conversion.</li></ul>**Lorsque cette option est activée, chaque ligne de données de la connexion est comptabilisée chaque mois dans les lignes de données de licence pour Customer Journey Analytics. et apparaît dans l’interface utilisateur d’utilisation des connexions.**<br><br/> Explorez cette option uniquement si vous êtes à l’aise avec l’utilisation supplémentaire de lignes de données dans Customer Journey Analytics. [En savoir plus](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/templates/use-templates#brand-concierge-templates){target="_blank"}."
 
 >[!CONTEXTUALHELP]
 >id="connections_disableuseincja_exl_brand_concierge"
 >title="Supprimer cette connexion de Customer Journey Analytics"
->abstract="Cette connexion Brand Concierge est en cours d’utilisation dans Customer Journey Analytics. Les connexions vous permettent d’effectuer les opérations suivantes :<ul><li>Effectuer une analyse approfondie des données Brand Concierge dans Customer Journey Analytics.</li><li>Modifier la connexion Brand Concierge et les vues de données associées.</li><li>Analyser les mesures d’engagement conversationnel, de sentiment et de conversion.</li></ul>**Si vous supprimez la connexion, une analyse approfondie dans Customer Journey Analytics n’est plus possible. La connexion et les vues de données associées sont réinitialisées à leur état par défaut et ne peuvent plus être modifiées.**<br/><br/>**La facturation de cette connexion dans Customer Journey Analytics inclut le mois complet pendant lequel la connexion est supprimée.**<br/><br/> La connexion reste activée dans Brand Concierge. [En savoir plus](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/templates/use-templates#brand-concierge-templates){target="_blank"}."
+>abstract="Cette connexion Brand Concierge est actuellement utilisée dans Customer Journey Analytics. La connexion vous permet d’effectuer les opérations suivantes :<ul><li>Effectuez une analyse approfondie des données Brand Concierge dans Customer Journey Analytics.</li><li>Modifier la connexion Brand Concierge et les vues de données associées.</li><li>Analyser les mesures d’engagement conversationnel, de sentiment et de conversion.</li></ul>**Si vous supprimez la connexion, une analyse approfondie dans Customer Journey Analytics n’est plus possible. La connexion et les vues de données associées sont réinitialisées à leur état par défaut et ne peuvent plus être modifiées.**<br/><br/>**La facturation de cette connexion dans Customer Journey Analytics inclut le mois complet pendant lequel la connexion est supprimée.**<br/><br/> La connexion reste activée dans Brand Concierge. [En savoir plus](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/templates/use-templates#brand-concierge-templates){target="_blank"}."
 
 >[!CONTEXTUALHELP]
 >id="connections_useincja_exl_product_usage"
 >title="Utiliser cette connexion dans Customer Journey Analytics"
->abstract="Cette option vous permet de tirer profit des fonctionnalités de reporting avancé de Customer Journey Analytics avec votre connexion d’utilisation des produits. Ces fonctionnalités vous permettent d’effectuer les opérations suivantes :<ul><li>Effectuer une analyse approfondie des données d’utilisation des produits dans Customer Journey Analytics.</li><li>Modifier la connexion d’utilisation des produits et les vues de données associées.</li></ul>**Lorsque cette option est activée, chaque ligne de données de la connexion est comptabilisée chaque mois dans les lignes de données de licence pour Customer Journey Analytics et apparaît dans l’interface d’utilisation Utilisation des connexions.**<br><br/> Explorez cette option uniquement si vous êtes à l’aise avec l’utilisation supplémentaire de lignes de données dans Customer Journey Analytics. [En savoir plus](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/tools/product-usage/usage-overview){target="_blank"}."
+>abstract="Cette option vous permet de tirer profit des fonctionnalités de reporting avancé de Customer Journey Analytics avec votre connexion d’utilisation des produits. Ces fonctionnalités vous permettent d’effectuer les opérations suivantes :<ul><li>Effectuer une analyse approfondie des données d’utilisation des produits dans Customer Journey Analytics.</li><li>Modifier la connexion d’utilisation des produits et les vues de données associées.</li></ul>**Lorsque cette option est activée, chaque ligne de données de la connexion est comptabilisée chaque mois dans les lignes de données de licence pour Customer Journey Analytics. et apparaît dans l’interface utilisateur d’utilisation des connexions.**<br><br/> Explorez cette option uniquement si vous êtes à l’aise avec l’utilisation supplémentaire de lignes de données dans Customer Journey Analytics. [En savoir plus](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/tools/product-usage/usage-overview){target="_blank"}."
 
 >[!CONTEXTUALHELP]
 >id="connections_disableuseincja_exl_product_usage"
 >title="Supprimer cette connexion de Customer Journey Analytics"
->abstract="Cette connexion d’utilisation des produits est en cours d’utilisation dans Customer Journey Analytics. Les connexions vous permettent d’effectuer les opérations suivantes :<ul><li>Effectuer une analyse approfondie des données d’utilisation des produits dans Customer Journey Analytics.</li><li>Modifier la connexion d’utilisation des produits et les vues de données associées.</li></ul>**Si vous supprimez la connexion, une analyse approfondie dans Customer Journey Analytics n’est plus possible. La connexion et les vues de données associées sont réinitialisées à leur état par défaut et ne peuvent plus être modifiées.**<br/><br/>**La facturation de cette connexion dans Customer Journey Analytics inclut le mois complet pendant lequel la connexion est supprimée.**<br/><br/> La connexion reste activée pour l’utilisation des produits. [En savoir plus](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/tools/product-usage/usage-overview){target="_blank"}."
+>abstract="Cette connexion d’utilisation du produit est actuellement utilisée dans Customer Journey Analytics. La connexion vous permet d’effectuer les opérations suivantes :<ul><li>Effectuer une analyse approfondie des données d’utilisation des produits dans Customer Journey Analytics.</li><li>Modifier la connexion d’utilisation des produits et les vues de données associées.</li></ul>**Si vous supprimez la connexion, une analyse approfondie dans Customer Journey Analytics n’est plus possible. La connexion et les vues de données associées sont réinitialisées à leur état par défaut et ne peuvent plus être modifiées.**<br/><br/>**La facturation de cette connexion dans Customer Journey Analytics inclut le mois complet pendant lequel la connexion est supprimée.**<br/><br/> La connexion reste activée pour l’utilisation des produits. [En savoir plus](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/tools/product-usage/usage-overview){target="_blank"}."
 
 >[!CONTEXTUALHELP]
 >id="connections_useincja_legal_section_section"
@@ -179,7 +179,7 @@ L’expérience de workflow de création et de modification de connexion apporte
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Connexion aux sources de données](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/connections/connecting-customer-journey-analytics-to-data-sources-in-platform){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Connexion aux sources de données](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/connections/connecting-customer-journey-analytics-to-data-sources-in-platform){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 
@@ -247,8 +247,8 @@ Sur l’écran **[!UICONTROL Connexions]** > **[!UICONTROL *Nom de la connexion
    | **[!UICONTROL ID de personne]** | ID de personne utilisé pour prendre en charge les rapports des personnes pour le jeu de données. |
    | **[!UICONTROL Clé]** | Clé utilisée pour un jeu de données de recherche. |
    | **[!UICONTROL Clé correspondante]** | Clé correspondante utilisée pour un jeu de données de recherche. |
-   | **[!UICONTROL Importer de nouvelles données]** | Statut de l’import des nouvelles données pour le jeu de données : <p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _ activés]**&#x200B;si le jeu de données est configuré pour importer de nouvelles données, et<p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _x désactivés_]** si le jeu de données est configuré pour ne pas importer de nouvelles données. |
-   | **[!UICONTROL Renvoyer les données]** | Statut des données de renvoi pour le jeu de données.<p>![Statut rouge](assets/status-red.svg) **[!UICONTROL _x _renvois ayant échoué]**&#x200B;pour le nombre de renvois ayant échoué,<p>![Statut rouge](assets/status-orange.svg) **[!UICONTROL _x _renvois en cours de traitement]**&#x200B;pour le nombre de renvois en cours de traitement,<p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _renvois terminés]**&#x200B;pour le nombre de renvois terminés, et<p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _Désactivé_]** au cas où aucun renvoi n’est configuré. |
+   | **[!UICONTROL Importer de nouvelles données]** | Statut de l’import des nouvelles données pour le jeu de données : <p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _ activés]**si le jeu de données est configuré pour importer de nouvelles données, et<p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _x désactivés_]** si le jeu de données est configuré pour ne pas importer de nouvelles données. |
+   | **[!UICONTROL Renvoyer les données]** | Statut des données de renvoi pour le jeu de données.<p>![Statut rouge](assets/status-red.svg) **[!UICONTROL _x _renvois ayant échoué]**pour le nombre de renvois ayant échoué,<p>![Statut rouge](assets/status-orange.svg) **[!UICONTROL _x _renvois en cours de traitement]**pour le nombre de renvois en cours de traitement,<p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _renvois terminés]**pour le nombre de renvois terminés, et<p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _Désactivé_]** au cas où aucun renvoi n’est configuré. |
 
    Vous pouvez rechercher un jeu de données spécifique à l’aide du champ ![Rechercher](/help/assets/icons/Search.svg).
 
@@ -293,8 +293,8 @@ Sur l’écran **[!UICONTROL Connexions]** > **[!UICONTROL *Nom de la connexion
    | **[!UICONTROL ID de personne]** | ID de personne utilisé pour prendre en charge les rapports des personnes pour le jeu de données. |
    | **[!UICONTROL Clé]** | Clé utilisée pour un jeu de données de recherche. |
    | **[!UICONTROL Clé correspondante]** | Clé correspondante utilisée pour un jeu de données de recherche. |
-   | **[!UICONTROL Importer de nouvelles données]** | Statut de l’import des nouvelles données pour le jeu de données : <p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _ activés]**&#x200B;si le jeu de données est configuré pour importer de nouvelles données, et<p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _x désactivés_]** si le jeu de données est configuré pour ne pas importer de nouvelles données. |
-   | **[!UICONTROL Renvoyer les données]** | Statut des données de renvoi pour le jeu de données.<p>![Statut rouge](assets/status-red.svg) **[!UICONTROL _x _renvois ayant échoué]**&#x200B;pour le nombre de renvois ayant échoué,<p>![Statut rouge](assets/status-orange.svg) **[!UICONTROL _x _renvois en cours de traitement]**&#x200B;pour le nombre de renvois en cours de traitement,<p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _renvois terminés]**&#x200B;pour le nombre de renvois terminés, et<p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _Désactivé_]** au cas où aucun renvoi n’est configuré. |
+   | **[!UICONTROL Importer de nouvelles données]** | Statut de l’import des nouvelles données pour le jeu de données : <p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _ activés]**si le jeu de données est configuré pour importer de nouvelles données, et<p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _x désactivés_]** si le jeu de données est configuré pour ne pas importer de nouvelles données. |
+   | **[!UICONTROL Renvoyer les données]** | Statut des données de renvoi pour le jeu de données.<p>![Statut rouge](assets/status-red.svg) **[!UICONTROL _x _renvois ayant échoué]**pour le nombre de renvois ayant échoué,<p>![Statut rouge](assets/status-orange.svg) **[!UICONTROL _x _renvois en cours de traitement]**pour le nombre de renvois en cours de traitement,<p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _renvois terminés]**pour le nombre de renvois terminés, et<p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _Désactivé_]** au cas où aucun renvoi n’est configuré. |
 
    Vous pouvez rechercher un jeu de données spécifique à l’aide du champ ![Rechercher](/help/assets/icons/Search.svg).
 
@@ -318,7 +318,7 @@ Vous [ajoutez un ou plusieurs jeux de données](#add-datasets) ou [modifiez des 
 >[!CONTEXTUALHELP]
 >id="cja_connection_optionalcontainers"
 >title="Conteneurs facultatifs"
->abstract="Sélectionnez des conteneurs supplémentaires.<br/><br/>**[!UICONTROL Compte global &#x200B;]** : permet la configuration de comptes globaux dans une connexion.<br/>**[!UICONTROL Opportunité]** : permet la configuration des opportunités dans une connexion.<br/>**[!UICONTROL Groupe d’achat &#x200B;]** : permet la configuration des groupes d’achat dans une connexion."
+>abstract="Sélectionnez des conteneurs supplémentaires.<br/><br/>**[!UICONTROL Compte global ]** : permet la configuration de comptes globaux dans une connexion.<br/>**[!UICONTROL Opportunité]** : permet la configuration des opportunités dans une connexion.<br/>**[!UICONTROL Groupe d’achat ]** : permet la configuration des groupes d’achat dans une connexion."
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_accountid"
@@ -383,7 +383,7 @@ Vous [ajoutez un ou plusieurs jeux de données](#add-datasets) ou [modifiez des 
 >[!CONTEXTUALHELP]
 >id="connection_optionalcontainers"
 >title="Conteneurs facultatifs"
->abstract="Sélectionnez des conteneurs supplémentaires.<br/><br/>**[!UICONTROL Compte global &#x200B;]** : permet la configuration de comptes globaux dans une connexion.<br/>**[!UICONTROL Opportunité]** : permet la configuration des opportunités dans une connexion.<br/>**[!UICONTROL Groupe d’achat &#x200B;]** : permet la configuration des groupes d’achat dans une connexion."
+>abstract="Sélectionnez des conteneurs supplémentaires.<br/><br/>**[!UICONTROL Compte global ]** : permet la configuration de comptes globaux dans une connexion.<br/>**[!UICONTROL Opportunité]** : permet la configuration des opportunités dans une connexion.<br/>**[!UICONTROL Groupe d’achat ]** : permet la configuration des groupes d’achat dans une connexion."
 
 >[!CONTEXTUALHELP]
 >id="connection_personid"
@@ -423,7 +423,7 @@ Vous [ajoutez un ou plusieurs jeux de données](#add-datasets) ou [modifiez des 
 >[!CONTEXTUALHELP]
 >id="connection_matchingkeytype"
 >title="Type de clé correspondante"
->abstract="Sélectionnez le mode de jointure : en fonction d’un champ ou d’un conteneur correspondant.<br/><br/>**[!UICONTROL Correspondance par champ &#x200B;]** : sélectionnez un champ à joindre à l’un des jeux de données d’événement. Si cette liste est vide, vous n’avez probablement pas ajouté ni configuré de jeu de données d’événement.<br/>**[!UICONTROL Conteneur correspondant]** : sélectionnez un conteneur à utiliser à joindre à l’un des jeux de données d’événement."
+>abstract="Sélectionnez le mode de jointure : en fonction d’un champ ou d’un conteneur correspondant.<br/><br/>**[!UICONTROL Correspondance par champ ]** : sélectionnez un champ à joindre à l’un des jeux de données d’événement. Si cette liste est vide, vous n’avez probablement pas ajouté ni configuré de jeu de données d’événement.<br/>**[!UICONTROL Conteneur correspondant]** : sélectionnez un conteneur à utiliser à joindre à l’un des jeux de données d’événement."
 
 >[!CONTEXTUALHELP]
 >id="connection_importnewdata"
@@ -454,7 +454,7 @@ Vous [ajoutez un ou plusieurs jeux de données](#add-datasets) ou [modifiez des 
 >[!CONTEXTUALHELP]
 >id="connection_stitching_dialog"
 >title="Combinaison d’identités"
->abstract="L’assemblage des identités dérive les informations d’identité utilisateur d’un jeu de données ou du graphique d’identités. Ce processus peut inclure la fusion de données d’utilisation provenant de sessions authentifiées et non authentifiées.<br/><br/>Il vous incombe de vous conformer aux lois et règlements applicables. Cette conformité implique que vous obteniez les autorisations d’utilisateur final nécessaires avant d’activer le groupement sur un jeu de données."
+>abstract="L’assemblage des identités dérive les informations d’identité utilisateur d’un jeu de données ou du graphique d’identités. Ce processus peut inclure la fusion de données d’utilisation provenant de sessions authentifiées et non authentifiées.<br/><br/>Il vous incombe de vous conformer aux lois et règlements applicables. Cette conformité implique que vous obteniez les autorisations pour l’utilisation finale avant d’activer l’assemblage sur un jeu de données."
 >additional-url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/stitching/overview" text="Vue d’ensemble du groupement"
 
 >[!CONTEXTUALHELP]
@@ -466,7 +466,7 @@ Vous [ajoutez un ou plusieurs jeux de données](#add-datasets) ou [modifiez des 
 >[!CONTEXTUALHELP]
 >id="connection_lookbackwindow"
 >title="Fenêtre de relecture"
->abstract="Sélectionnez la période appropriée pour la fenêtre de relecture à utiliser dans le groupement."
+>abstract="Sélectionnez la période appropriée pour la fenêtre de relecture à utiliser dans l’assemblage."
 >additional-url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/stitching/overview" text="Vue d’ensemble du groupement"
 
 >[!CONTEXTUALHELP]
@@ -494,9 +494,9 @@ Il existe différents types de jeux de données : données d’[!UICONTROL Év�
 
 | Type de jeu de données | Description | Date et heure | Schéma | ID de personne <br/> ID de compte [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} |
 |---|---|---|---|---|
-| **[!UICONTROL Événement]** | Données qui représentent les événements dans le temps. Par exemple, visites web, interactions, transactions, données de point de vente, données d’enquête, données d’impression, etc. Ces données peuvent être des données de flux de clics typiques, avec un ID client ou un ID de cookie et un horodatage. Avec les données d’événement, vous disposez d’une flexibilité quant à l’ID utilisé comme ID de personne. | Définissez sur le champ d’horodatage par défaut des schémas basés sur un événement dans [!UICONTROL Experience Platform]. | Tout schéma intégré ou personnalisé basé sur une classe XDM avec le comportement *Série temporelle*. Par exemple, *Événement d’expérience XDM* ou *Événement de décision XDM*. | Vous pouvez choisir l’ID de personne ou l’ID de compte [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} que vous souhaitez inclure. Chaque schéma du jeu de données défini dans Experience Platform peut disposer de son propre jeu d’une ou de plusieurs identités définies et associées à un espace de noms d’identité. N’importe laquelle de ces identités peut être utilisée comme ID de personne ou ID de compte [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}. Par exemple, ID de cookie, ID groupé, ID d’utilisation, code de suivi, ID de compte [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, etc. |
+| **[!UICONTROL Événement]** | Données qui représentent les événements dans le temps. Par exemple, visites web, interactions, transactions, données de point de vente, données d’enquête, données d’impression, etc. Ces données peuvent être des données de flux de clics typiques, avec un ID client ou un ID de cookie et un horodatage. Les données d’événement vous offrent la possibilité d’utiliser l’ID comme ID de personne. | Définissez sur le champ d’horodatage par défaut des schémas basés sur un événement dans [!UICONTROL Experience Platform]. | Tout schéma intégré ou personnalisé basé sur une classe XDM avec le comportement *Série temporelle*. Par exemple, *Événement d’expérience XDM* ou *Événement de décision XDM*. | Vous pouvez choisir l’ID de personne ou l’ID de compte [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} que vous souhaitez inclure. Chaque schéma de jeu de données défini dans Experience Platform peut avoir son propre jeu d’une ou de plusieurs identités définies et associées à un espace de noms d’identité. N’importe laquelle de ces identités peut être utilisée comme ID de personne ou ID de compte [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}. Par exemple, ID de cookie, ID groupé, ID d’utilisation, code de suivi, ID de compte [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, etc. |
 | **[!UICONTROL Recherche]** | Vous pouvez ajouter des jeux de données en tant que recherches de champs dans tous les types de jeux de données : Profil, Recherche et Événement (ce dernier a toujours été pris en charge). Cette fonctionnalité supplémentaire accroît la capacité de Customer Journey Analytics à prendre en charge des modèles de données complexes, y compris B2B. Ces données sont utilisées pour rechercher des valeurs ou des clés trouvées dans vos données d’événement, de profil ou de recherche. Vous pouvez ajouter jusqu’à trois niveaux de recherche. (Notez que les [champs dérivés](/help/data-views/derived-fields/derived-fields.md) ne peuvent pas être utilisés comme clés de correspondance pour les recherches dans les connexions.) Vous pouvez, par exemple, charger des données de recherche qui mappent les identifiants numériques de vos données d’événement avec des noms de produits. Voir l’[exemple B2B](/help/use-cases/b2b/example.md). | S.O. | Tout schéma intégré ou personnalisé basé sur une classe XDM avec le comportement *Enregistrement*, à l’exception de la classe *Profil XDM individuel*. | S.O. |
-| **[!UICONTROL Profil]** | Données appliquées à vos comptes, personnes, utilisateurs et utilisatrices ou clientes et clients dans les données [!UICONTROL Événement]. Vous permet, par exemple, de charger des données CRM à propos de vos clients. | S.O. | Tout schéma intégré ou personnalisé basé sur la classe *Profil XDM individuel*. | Vous pouvez choisir l’identifiant de personne/l’identifiant de compte [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} à inclure. Chaque jeu de données (à l’exception des jeux de données de résumé) défini dans [!DNL Experience Platform] dispose de son propre jeu d’un ou de plusieurs ID de personne ou ID de compte [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} définis. Par exemple, l’identifiant de cookie, l’identifiant assemblé, l’identifiant d’utilisateur ou d’utilisatrice, le code de suivi, l’identifiant de compte, etc.<br>![ID de personne &#x200B;](assets/person-id.png)**Note** : si vous créez une connexion qui comprend des jeux de données avec des ID différents, les rapports le reflèteront. Pour fusionner des jeux de données, vous devez utiliser le même ID de personne ou ID de compte [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}. |
+| **[!UICONTROL Profil]** | Données appliquées à vos comptes, personnes, utilisateurs et utilisatrices ou clientes et clients dans les données [!UICONTROL Événement]. Vous permet, par exemple, de charger des données CRM à propos de vos clients. | S.O. | Tout schéma intégré ou personnalisé basé sur la classe *Profil XDM individuel*. | Vous pouvez choisir l’identifiant de personne/l’identifiant de compte [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} à inclure. Chaque jeu de données (à l’exception des jeux de données de résumé) défini dans [!DNL Experience Platform] dispose de son propre jeu d’un ou de plusieurs ID de personne ou ID de compte [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} définis. Par exemple, l’identifiant de cookie, l’identifiant assemblé, l’identifiant d’utilisateur ou d’utilisatrice, le code de suivi, l’identifiant de compte, etc.<br>![ID de personne ](assets/person-id.png)**Note** : si vous créez une connexion qui comprend des jeux de données avec des ID différents, les rapports le reflèteront. Pour fusionner des jeux de données, vous devez utiliser le même ID de personne ou ID de compte [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}. |
 | **Résumé** | Données de série temporelle qui ne sont pas liées à un identifiant de personne individuel. Les données de résumé représentent des données agrégées à un niveau d’agrégation différent, par exemple des campagnes. Vous pouvez utiliser ces données dans Customer Journey Analytics pour prendre en charge divers cas d’utilisation. Voir la section [Données de résumé](/help/data-views/summary-data.md) pour plus d’informations. | Automatiquement défini sur le champ d’horodatage par défaut à partir des schémas de mesure de résumé basés sur un événement dans Experience Platform. Seule la granularité horaire ou quotidienne est prise en charge. | Tout schéma intégré ou personnalisé basé sur la classe *Mesure de résumé XDM*. | S.O. |
 
 Les types de jeux de données répertoriés ci-dessus peuvent également être basés sur un schéma ad hoc ou relationnel au lieu d’un schéma XDM générique.
@@ -508,6 +508,75 @@ Les types de jeux de données répertoriés ci-dessus peuvent également être b
 
 
 ### Ajouter des jeux de données
+
+Vous pouvez ajouter un ou plusieurs jeux de données Experience Platform lorsque vous créez ou modifiez une connexion.
+
+#### Pour les connexions basées sur la personne
+
+1. Dans l’interface **[!UICONTROL Connexion]** > **[!UICONTROL _Nom de la connexion_]**, sélectionnez ![DataAdd](/help/assets/icons/DataAdd.svg) **[!UICONTROL Ajouter des jeux de données]**.
+
+1. À l’étape ➊ **[!UICONTROL Sélectionner les jeux de données]**, une liste des jeux de données Experience Platform s’affiche.
+
+   ![Sélection de jeux de données](assets/select-datasets.png)
+
+   Pour chaque jeu de données, la liste affiche les éléments suivants :
+
+   | Colonne | Description |
+   |---|---|
+   | **[!UICONTROL Jeu de données]** | Nom du jeu de données. Sélectionnez le nom pour vous diriger vers le jeu de données dans Experience Platform. Sélectionnez ![Info](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) pour afficher une fenêtre contextuelle contenant plus de détails sur le jeu de données. Vous pouvez sélectionner **[!UICONTROL Modifier dans Platform]** pour modifier le jeu de données directement dans Experience Platform. |
+   | **[!UICONTROL Type de jeu de données]** | Le type de jeu de données : [Événement](#event-dataset), [Profil](#profile-dataset), [Recherche](#lookup-dataset), [Résumé](#summary-dataset), [Ad hoc](#ad-hoc-dataset) ou [Relationnel](#relational-dataset). |
+   | **[!UICONTROL Nombre d’enregistrements]** | Total des enregistrements du mois précédent pour le jeu de données dans Experience Platform. |
+   | **[!UICONTROL Schéma]** | Schéma du jeu de données. Sélectionnez le nom pour vous diriger vers le schéma dans Experience Platform. |
+   | **[!UICONTROL Dernier lot]** | État du dernier lot ingéré dans Experience Platform. Voir [États des lots](https://experienceleague.adobe.com/fr/docs/experience-platform/ingestion/batch/troubleshooting#batch-states) pour plus d’informations. |
+   | **[!UICONTROL Identifiant du jeu de données]** | ID du jeu de données. |
+   | **[!UICONTROL Dernière mise à jour]** | Dernier horodatage mis à jour du jeu de données. |
+
+   * Pour modifier les colonnes affichées de la liste des jeux de données, sélectionnez ![Paramètres des colonnes](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg) et sélectionnez les colonnes à afficher dans la boîte de dialogue [!UICONTROL Personnaliser le tableau].
+   * Pour rechercher un jeu de données spécifique, utilisez le champ de recherche ![Rechercher](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg).
+   * Pour basculer entre l’affichage ou le masquage des jeux de données sélectionnés, sélectionnez ![Sélectionner](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SelectBoxAll_18_N.svg), **[!UICONTROL Masquer la sélection]** ou **[!UICONTROL Afficher la sélection]**.
+   * Pour supprimer un jeu de données de la liste des jeux de données sélectionnés, utilisez ![Fermer](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg). Pour supprimer tous les jeux de données sélectionnés, sélectionnez **[!UICONTROL Effacer tout]**.
+   * Pour afficher les détails d’un jeu de données, sélectionnez ![Aperçu des informations](/help/assets/icons/InfoOutline.svg).
+
+
+1. Sélectionnez un ou plusieurs jeux de données, puis sélectionnez **[!UICONTROL Suivant]**. Au moins un jeu de données Événement ou Résumé doit faire partie de la connexion.
+
+1. Configurez les [paramètres de chaque jeu de données sélectionné](#dataset-settings), un par un, à l’étape ➋ **[!UICONTROL Paramètres des jeux de données]** de la boîte de dialogue **[!UICONTROL Ajouter des jeux de données]**.
+
+   ![Ajouter des jeux de données](assets/add-dataset.png)
+
+   * Pour supprimer un jeu de données de la connexion, sélectionnez ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) **[!UICONTROL Remove]**.
+   * Pour revenir en arrière, sélectionnez **[!UICONTROL Précédent]**.
+   * Pour annuler l’ajout de jeux de données à une connexion, sélectionnez **[!UICONTROL Annuler]**.
+
+1. Vous devez spécifier tous les paramètres requis pour les jeux de données sélectionnés avant de pouvoir continuer. Si une entrée requise est manquante, un nombre rouge indique le nombre de jeux de données d’un type spécifique manquants pour cette entrée requise. Un ![AlertRed](/help/assets/icons/AlertRed.svg) et une explication en rouge identifient les champs obligatoires qui n&#39;ont pas d&#39;entrée ou de valeur sélectionnée. Une fois que vous avez configuré tous les paramètres requis pour tous les jeux de données, sélectionnez **[!UICONTROL Suivant]**.
+1. Dans ❸**[!UICONTROL Aperçu des jeux de données]** vous voyez un aperçu de chaque jeu de données basé sur un simple jeu de données provenant de données récemment ingérées.
+
+   ![Prévisualisation d’un jeu de données lors de l’ajout de jeux de données dans le cadre d’une connexion](/help/connections/assets/add-dataset-preview.png)
+
+   * Pour afficher les espaces de noms de chacune des colonnes du tableau, activez **[!UICONTROL Afficher l’espace de noms de colonne]**.
+   * Pour effectuer une recherche dans les données d’exemple, utilisez ![Rechercher](/help/assets/icons/Search.svg).
+   * Pour configurer les colonnes à afficher, sélectionnez ![ColumnSetting](/help/assets/icons/ColumnSetting.svg). <br/>Dans la boîte de dialogue **[!UICONTROL Personnaliser le tableau]** :
+      1. Sélectionnez les colonnes à afficher dans le tableau.
+      1. Sélectionnez **[!UICONTROL Appliquer]** pour appliquer la sélection ou **[!UICONTROL Annuler]** pour annuler la sélection.
+   * Pour afficher les données des colonnes qui contiennent des données de tableau ou d’objet, sélectionnez **[!UICONTROL Valeurs]**.
+
+   Le volet **[!UICONTROL Informations sur le jeu de données]** affiche des détails sur le jeu de données. Sélectionnez la valeur de **[!UICONTROL Schéma]** ou **[!UICONTROL Jeu de données]** pour ouvrir l’interface correspondante dans Experience Platform dans un nouvel onglet du navigateur.
+
+   * Pour supprimer un jeu de données de la connexion, sélectionnez ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) **[!UICONTROL Remove]**.
+   * Pour revenir en arrière, sélectionnez **[!UICONTROL Précédent]**.
+   * Pour annuler l’ajout de jeux de données à une connexion, sélectionnez **[!UICONTROL Annuler]**.
+
+
+1. Sélectionnez **[!UICONTROL Ajouter des jeux de données]** pour ajouter les jeux de données configurés à la connexion.
+
+>[!NOTE]
+>Pour les clients pour lesquels Customer Journey Analytics est déployé sur AWS, il n’existe pas d’étape d’aperçu distincte pour les jeux de données ❸. L’aperçu fait partie des paramètres du jeu de données ❷.
+>
+
+
+
+
+#### Pour les connexions basées sur un compte
 
 Vous pouvez ajouter un ou plusieurs jeux de données Experience Platform lorsque vous créez ou modifiez une connexion.
 
@@ -541,7 +610,7 @@ Vous pouvez ajouter un ou plusieurs jeux de données Experience Platform lorsque
 
 1. Configurez les [paramètres de chaque jeu de données sélectionné](#dataset-settings), un par un, à l’étape ➋ **[!UICONTROL Paramètres des jeux de données]** de la boîte de dialogue **[!UICONTROL Ajouter des jeux de données]**.
 
-   ![Ajouter des jeux de données](assets/add-dataset.png)
+   ![Ajouter des jeux de données](assets/add-dataset-b2b.png)
 
 1. Sélectionnez **[!UICONTROL Ajouter des jeux de données]** pour ajouter les jeux de données configurés à la connexion. Vous recevez une notification lorsque vous n’avez pas fourni tous les paramètres requis pour chacun des jeux de données à ajouter.
 
@@ -552,12 +621,60 @@ Vous pouvez ajouter un ou plusieurs jeux de données Experience Platform lorsque
 
 Pour modifier un jeu de données déjà configuré pour une connexion, accédez à l’interface **[!UICONTROL Connexions]** > **[!UICONTROL _Nom de la connexion_]** :
 
-1. Sélectionnez ![Plus](/help/assets/icons/More.svg) pour le jeu de données répertorié dans le tableau du jeu de données à modifier.
+
+#### Pour les connexions basées sur la personne
+
+1. Sélectionnez ![ Modifier ](/help/assets/icons/Edit.svg) **[!UICONTROL Modifier la connexion]**.
+1. Sélectionnez ![Plus](/help/assets/icons/More.svg) pour le jeu de données répertorié dans le tableau du jeu de données que vous souhaitez modifier.
+1. Sélectionnez ![Modifier](/help/assets/icons/Edit.svg) **[!UICONTROL Modifier le jeu de données]**.
+
+1. Dans ❶ **[!UICONTROL Paramètres du jeu de données]**, configurez le [paramètres du jeu de données](#dataset-settings) dans la boîte de dialogue **[!UICONTROL Modifier le jeu de données : _Nom du jeu de données_]**.
+
+   ![Modifier le jeu de données](assets/edit-dataset-b2c.png)
+
+   Si vous apportez des modifications, veillez à spécifier tous les paramètres requis pour le jeu de données avant de continuer. Si l’entrée requise est manquante, vous ne pouvez pas continuer. Un ![AlertRed](/help/assets/icons/AlertRed.svg) et une explication en rouge identifient les champs obligatoires qui n&#39;ont pas d&#39;entrée ou de valeur sélectionnée.
+
+   >[!NOTE]
+   >
+   >Vous ne pouvez pas modifier le **[!UICONTROL Type de jeu de données]**, l’**[!UICONTROL ID de personne]**, l’**[!UICONTROL Espace de noms d’identité]** ni la **[!UICONTROL date et heure]** d’un jeu de données [ad hoc](#ad-hoc-dataset) ou [relationnel](#relational-dataset) faisant partie d’une connexion enregistrée. Pour modifier l’un de ces paramètres :
+   >
+   >1. Supprimez le jeu de données ad hoc ou relationnel existant de la connexion.
+   >1. Ajoutez le même jeu de données avec les paramètres mis à jour à la connexion.
+   >
+
+   Pour supprimer le jeu de données de la connexion, sélectionnez ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) **[!UICONTROL Remove]**.
+
+   Une fois que vous avez configuré tous les paramètres requis pour le jeu de données, sélectionnez **[!UICONTROL Suivant]**.
+
+1. Dans ❷**[!UICONTROL Aperçu des jeux de données]** vous voyez un aperçu de chaque jeu de données basé sur un simple jeu de données provenant de données récemment ingérées.
+
+   ![Prévisualisation d’un jeu de données lors de l’ajout de jeux de données dans le cadre d’une connexion](/help/connections/assets/add-dataset-preview.png)
+
+   * Pour afficher les espaces de noms de chacune des colonnes du tableau, activez **[!UICONTROL Afficher l’espace de noms de colonne]**.
+   * Pour effectuer une recherche dans les données d’exemple, utilisez ![Rechercher](/help/assets/icons/Search.svg).
+   * Pour configurer les colonnes à afficher, sélectionnez ![ColumnSetting](/help/assets/icons/ColumnSetting.svg). <br/>Dans la boîte de dialogue **[!UICONTROL Personnaliser le tableau]** :
+      1. Sélectionnez les colonnes à afficher dans le tableau.
+      1. Sélectionnez **[!UICONTROL Appliquer]** pour appliquer la sélection ou **[!UICONTROL Annuler]** pour annuler la sélection.
+   * Pour afficher les données des colonnes qui contiennent des données de tableau ou d’objet, sélectionnez **[!UICONTROL Valeurs]**.
+
+   Le volet **[!UICONTROL Informations sur le jeu de données]** affiche des détails sur le jeu de données. Sélectionnez la valeur de **[!UICONTROL Schéma]** ou **[!UICONTROL Jeu de données]** pour ouvrir l’interface correspondante dans Experience Platform dans un nouvel onglet du navigateur.
+
+   * Pour supprimer un jeu de données de la connexion, sélectionnez ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) **[!UICONTROL Remove]**.
+   * Pour revenir en arrière, sélectionnez **[!UICONTROL Précédent]**.
+   * Pour annuler l’ajout de jeux de données à une connexion, sélectionnez **[!UICONTROL Annuler]**.
+
+1. Sélectionnez **[!UICONTROL Appliquer]** pour appliquer les paramètres du jeu de données. Sélectionnez **[!UICONTROL Annuler]** pour annuler.
+
+
+#### Pour les connexions basées sur un compte
+
+1. Sélectionnez ![ Modifier ](/help/assets/icons/Edit.svg) **[!UICONTROL Modifier la connexion]**.
+1. Sélectionnez ![Plus](/help/assets/icons/More.svg) pour le jeu de données répertorié dans le tableau du jeu de données que vous souhaitez modifier.
 1. Sélectionnez ![Modifier](/help/assets/icons/Edit.svg) **[!UICONTROL Modifier le jeu de données]**.
 
 1. Configurez le [paramètres du jeu de données](#dataset-settings) dans la boîte de dialogue **[!UICONTROL Modifier le jeu de données : _Nom du jeu de données_]**.
 
-   ![Modifier le jeu de données](assets/edit-dataset.png)
+   ![Modifier le jeu de données](assets/edit-dataset-b2b.png)
 
    >[!NOTE]
    >
@@ -568,7 +685,6 @@ Pour modifier un jeu de données déjà configuré pour une connexion, accédez 
    >
 
 1. Sélectionnez **[!UICONTROL Appliquer]** pour appliquer les paramètres du jeu de données. Sélectionnez **[!UICONTROL Annuler]** pour annuler.
-
 
 ### Paramètres des jeux de données
 
@@ -762,7 +878,7 @@ Lorsque vous supprimez un jeu de données, un avertissement s’affiche concerna
 
 ### Renvois précédents
 
-Lorsque vous sélectionnez ![Historique](/help/assets/icons/History.svg) **[!UICONTROL Renvois précédents]** dans l’interface, une boîte de dialogue **[!UICONTROL Renvois précédents : _Nom du jeu de données_]**&#x200B;affiche les renvois les plus récents du jeu de données.
+Lorsque vous sélectionnez ![Historique](/help/assets/icons/History.svg) **[!UICONTROL Renvois précédents]** dans l’interface, une boîte de dialogue **[!UICONTROL Renvois précédents : _Nom du jeu de données_]**affiche les renvois les plus récents du jeu de données.
 
 
 ## Prévisualisation de la connexion {#preview}
@@ -780,7 +896,7 @@ Pour afficher une carte des relations entre les jeux de données qui font partie
 
 ![Carte de la connexion](assets/connectionmap.png)
 
-Cette carte vous permet de mieux comprendre la façon dont vous avez défini votre connexion et configuré la relation entre vos jeux de données d’événement, de profil, de recherche et de synthèse à l’aide de conteneurs et d’identifiants.
+Cette carte vous permet de mieux comprendre comment vous avez défini votre connexion. Ainsi que la manière dont vous avez configuré la relation entre vos jeux de données d’événement, de profil, de recherche et de résumé, à l’aide de conteneurs et d’identifiants.
 
 
 ## Utilisation des champs numériques comme clés et valeurs de recherche {#numeric}
@@ -818,8 +934,8 @@ Ce tableau présente les deux options de configuration lorsque des cas extrêmes
 
 | Option | Aucun ID n’est présent dans la carte des identités | Plusieurs ID, dont aucun n’est marqué comme principal | Plusieurs ID sont marqués comme principaux | ID unique, marqué comme principal ou non | Espace de noms non valide avec un ID marqué comme principal |
 |---|---|---|---|---|---|
-| **[!UICONTROL Utiliser l’espace de noms d’identité principal] coché**<br/>![&#x200B; Utiliser l’espace de noms d’identité principal](assets/use-primary-identity-namespace.png) | Customer Journey Analytics supprime la ligne. | Customer Journey Analytics supprime la ligne, car aucun ID principal n’est spécifié. | Tous les identifiants marqués comme principaux, sous tous les espaces de noms, sont extraits dans une liste. Ils sont ensuite triés par ordre alphabétique. Avec ce nouveau tri, le premier espace de noms avec son premier ID est utilisé comme ID de personne. | L’ID unique est utilisé comme ID de personne. | Même si l’espace de noms peut être non valide (il n’est pas présent dans Adobe Experience Platform), Customer Journey Analytics utilise l’ID principal sous cet espace de noms comme ID de personne. |
-| **[!UICONTROL Espace de noms de carte des identités spécifique] sélectionné**<br/>![&#x200B; Ne pas utiliser l’espace de noms d’identité principal](assets/not-use-primary-identity-namespace.png) | Customer Journey Analytics supprime la ligne. | Tous les identifiants sous l’espace de noms sélectionné sont extraits dans une liste et le premier est utilisé comme ID de personne. | Tous les identifiants sous l’espace de noms sélectionné sont extraits dans une liste et le premier est utilisé comme ID de personne. | Tous les identifiants sous l’espace de noms sélectionné sont extraits dans une liste et le premier est utilisé comme ID de personne. | Tous les identifiants sous l’espace de noms sélectionné sont extraits dans une liste et le premier est utilisé comme ID de personne. (Seul un espace de noms valide peut être sélectionné au moment de la création de la connexion. Il n’est donc pas possible qu’un espace de noms/ID non valide soit utilisé comme ID de personne). |
+| **[!UICONTROL Utiliser l’espace de noms d’identité principal] coché**<br/>![ Utiliser l’espace de noms d’identité principal](assets/use-primary-identity-namespace.png) | Customer Journey Analytics supprime la ligne. | Customer Journey Analytics supprime la ligne, car aucun ID principal n’est spécifié. | Tous les identifiants marqués comme principaux, sous tous les espaces de noms, sont extraits dans une liste. Ils sont ensuite triés par ordre alphabétique. Avec ce nouveau tri, le premier espace de noms avec son premier ID est utilisé comme ID de personne. | L’ID unique est utilisé comme ID de personne. | Même si l’espace de noms peut être non valide (il n’est pas présent dans Adobe Experience Platform), Customer Journey Analytics utilise l’ID principal sous cet espace de noms comme ID de personne. |
+| **[!UICONTROL Espace de noms de carte des identités spécifique] sélectionné**<br/>![ Ne pas utiliser l’espace de noms d’identité principal](assets/not-use-primary-identity-namespace.png) | Customer Journey Analytics supprime la ligne. | Tous les identifiants sous l’espace de noms sélectionné sont extraits dans une liste et le premier est utilisé comme ID de personne. | Tous les identifiants sous l’espace de noms sélectionné sont extraits dans une liste et le premier est utilisé comme ID de personne. | Tous les identifiants sous l’espace de noms sélectionné sont extraits dans une liste et le premier est utilisé comme ID de personne. | Tous les identifiants sous l’espace de noms sélectionné sont extraits dans une liste et le premier est utilisé comme ID de personne. (Seul un espace de noms valide peut être sélectionné au moment de la création de la connexion. Il n’est donc pas possible qu’un espace de noms/ID non valide soit utilisé comme ID de personne). |
 
 {style="table-layout:auto"}
 
@@ -843,5 +959,5 @@ Ce calcul est effectué pour chaque jeu de données de la connexion.
 >[!MORELIKETHIS]
 >
 >* [Vue d’ensemble de l’ingestion de données](/help/data-ingestion/data-ingestion.md)
->* Blog : [utilisation des jeux de données d’événement, de recherche et de profil dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-to-leverage-event-lookup-and-profile-datasets-in-adobe/ba-p/681478?profile.language=fr)
+>* Blog : [utilisation des jeux de données d’événement, de recherche et de profil dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/how-to-leverage-event-lookup-and-profile-datasets-in-adobe-customer-journey-analytics-12699)
 

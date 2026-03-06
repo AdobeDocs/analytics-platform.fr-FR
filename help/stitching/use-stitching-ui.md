@@ -1,14 +1,14 @@
 ---
 title: Activer l’assemblage
-description: Découvrez comment activer le groupement dans l’interface utilisateur de connexions.
+description: Activez la combinaison d’identités pour les jeux de données d’événements dans Customer Journey Analytics. Découvrez comment configurer les identifiants persistants, les identifiants de personne et les fenêtres de relecture dans l’interface utilisateur de Connexions pour regrouper les données.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
-source-git-commit: 1744d625f2f18202fb7096b0fd904ee26399db34
+source-git-commit: b7b2a1f3eb1c149caf65ab3e4321e4f4347695cc
 workflow-type: tm+mt
-source-wordcount: '1150'
-ht-degree: 4%
+source-wordcount: '1724'
+ht-degree: 5%
 
 ---
 
@@ -58,7 +58,7 @@ Si vous remplissez les conditions préalables, vous pouvez effectuer des contrô
 
 
    * **ID de personne**
-      * Pour le groupement basé sur les graphiques, assurez-vous que le graphique d’identités contient des fragments qui lient les valeurs d’identifiant de l’espace de noms d’identifiant persistant et de l’espace de noms d’identifiant de personne de votre choix. Vous pouvez exécuter un test en accédant à la visionneuse de graphiques d’identité [d’Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} et interroger le graphique à l’aide de certaines valeurs d’identifiant persistant de test. Vérifiez si ces valeurs d’ID persistantes sont liées aux valeurs d’ID de personne dans le graphique.
+      * Pour le groupement basé sur les graphiques, assurez-vous que le graphique d’identités contient des fragments qui lient les valeurs d’identifiant de l’espace de noms d’identifiant persistant et de l’espace de noms d’identifiant de personne de votre choix. Vous pouvez exécuter un test en accédant à la visionneuse de graphiques d’identités [d’Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} et interroger le graphique à l’aide d’exemples de valeurs d’ID persistantes. Vérifiez si ces valeurs d’ID persistantes sont liées aux valeurs d’ID de personne dans le graphique.
       * Pour le groupement basé sur les champs, interrogez 7 jours de données lorsque le champ de votre ID de personne n’est pas nul et divisez par une interrogation de 7 jours de données pour tous les événements de votre jeu de données. Ce pourcentage devrait idéalement être supérieur à 5 %.
 
         Exemple de requête à utiliser pour la vérification :
@@ -87,6 +87,8 @@ Si vous remplissez les conditions préalables, vous pouvez effectuer des contrô
 
 ## Activer l’assemblage d’identités {#enable-identity-stitching}
 
+Vous pouvez activer la combinaison d’identités lorsque vous [ajoutez](/help/connections/create-connection.md#add-datasets) ou [modifiez](/help/connections/create-connection.md#edit-a-dataset) un jeu de données d’événement dans une connexion basée sur une personne. L’assemblage des identités n’est pas disponible pour les connexions basées sur des comptes.
+
 >[!CONTEXTUALHELP]
 >id="connection_changeto_identitygraph"
 >title="Modification du graphique d’identité"
@@ -101,7 +103,7 @@ Si vous remplissez les conditions préalables, vous pouvez effectuer des contrô
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics"
 >title="Assemblage des mesures"
->abstract="Les mesures d’assemblage sont calculées à l’aide d’un ensemble échantillon de données, à partir de toutes les données ingérées au cours des 7 derniers jours.<br>Elle diffère normalement des exemples de données utilisés dans le tableau **[!UICONTROL Aperçu]**."
+>abstract="Les mesures d’assemblage sont calculées à l’aide d’un ensemble échantillon de données, à partir de toutes les données ingérées au cours des 7 derniers jours.<br>Cet exemple de jeu de données diffère généralement des exemples de données utilisés dans le tableau **[!UICONTROL Aperçu]**."
 
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics_gbs_personidcoverage"
@@ -123,10 +125,12 @@ Si vous remplissez les conditions préalables, vous pouvez effectuer des contrô
 >id="connection_stitchingmetrics_badids"
 >title="ID incorrects"
 >abstract="Les identifiants incorrects sont des valeurs d’identifiant qui affectent considérablement les données de rapport."
->additional-url="https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-16444" text="ID incorrects"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16444" text="ID incorrects"
 
 
-Pour activer le groupement, dans la section Jeu de données d’événement de la boîte de dialogue **[!UICONTROL Ajouter des jeux de données]** ou **[!UICONTROL Modifier le jeu de données]** :
+### Paramètres des jeux de données
+
+Pour activer le groupement, dans la section Jeu de données d’événement **[!UICONTROL Paramètres des jeux de données]** de la boîte de dialogue **[!UICONTROL Ajouter des jeux de données]** ou **[!UICONTROL Modifier le jeu de données]** :
 
 ![Options de combinaison d’identités lorsque vous activez cette fonction](assets/identity-stitching-ui.png)
 
@@ -158,18 +162,74 @@ Pour activer le groupement, dans la section Jeu de données d’événement de l
    >Assurez-vous que vous êtes autorisé à utiliser le graphique d’identité.
    >
 
-   Avant cela, une boîte de dialogue **[!UICONTROL Modifier le graphique d’identité]** s’affiche pour vous assurer que vous avez terminé la configuration du graphique d’identité pour le jeu de données dans le cadre des conditions préalables basées sur le [graphique](/help/stitching/gbs.md#prerequisites) avant d’utiliser le graphique d’identité pour le groupement. Sélectionnez **[!UICONTROL Continuer]** pour continuer.
+   Avant cela, une boîte de dialogue **[!UICONTROL Modifier en graphique d’identité]** s’affiche pour vous assurer que vous avez terminé la configuration du graphique d’identité pour le jeu de données. Cette configuration fait partie des [conditions préalables basées sur les graphiques](/help/stitching/gbs.md#prerequisites) avant de pouvoir utiliser le graphique d’identités pour le groupement. Sélectionnez **[!UICONTROL Continuer]** pour continuer.
 
    * Sélectionnez un espace de noms dans le menu déroulant **[!UICONTROL Espace de noms]**.
 
-
 1. Sélectionnez une fenêtre de relecture dans le menu déroulant **[!UICONTROL Fenêtre de relecture]**. Les options disponibles dépendent du package Customer Journey Analytics auquel vous avez droit.
 
-Une fois que vous avez enregistré une connexion, le processus de groupement des jeux de données activés pour le groupement se déclenche lorsque l’ingestion des données de ces jeux de données commence.
+1. Sélectionnez **[!UICONTROL Suivant]** pour afficher un aperçu du jeu de données d’événement sujet au groupement.
+
+
+### Aperçu des jeux de données
+
+Outre l’interface standard **[!UICONTROL Aperçu des jeux de données]**, deux panneaux d’informations supplémentaires sont disponibles lors de l’[ajout](/help/connections/create-connection.md#add-datasets) ou de la [modification](/help/connections/create-connection.md#edit-a-dataset) de jeux de données dans une connexion basée sur une personne.
+
+>[!NOTE]
+>Pour les clients pour lesquels Customer Journey Analytics est déployé sur AWS, cette fonctionnalité est en attente de publication.
+>
+
+![Options de combinaison d’identités lorsque vous activez cette fonction](assets/identity-stitching-ui-preview.png)
+
+#### Assemblage des mesures
+
+
+
+Les **[!UICONTROL mesures d’assemblage]** sont calculées à l’aide d’un jeu d’échantillons de données, à partir de toutes les données ingérées au cours des 7 derniers jours. Cet exemple de jeu de données diffère généralement des exemples de données utilisés dans le tableau **[!UICONTROL Aperçu]**. Les mesures d’assemblage fournissent des détails sur :
+
+* **[!UICONTROL Couverture de l’ID de personne]** : couverture de l’ID de personne sélectionné utilisé pour l’identification pendant le processus de groupement (en direct et en relecture).
+   * Pour obtenir de meilleurs résultats d’assemblage basés sur les champs, un ID de personne (informations utilisateur) doit être envoyé sur au moins un événement pour chaque ID persistant (informations sur l’appareil).
+   * Pour obtenir de meilleurs résultats d’assemblage basés sur des graphiques, une relation (identifiant persistant, ID de personne) doit être présente dans le graphique d’identité pour chaque identifiant persistant.
+
+  La couverture de l’ID de personne s’affiche sous forme de pourcentage et est comparée à ce qui est recommandé dans une configuration de développement stable ou de production. Plus cette valeur de couverture est élevée, meilleurs sont les résultats du groupement avec l’ID de personne sélectionné.
+
+* **[!UICONTROL Couverture d’ID persistante]** : cette valeur est utilisée à des fins d’identification pendant le processus de groupement (en direct et en lecture), au cas où une valeur d’ID de personne ne peut pas être détectée. Les événements sans ID persistant et sans ID de personne sont supprimés des données. Pour de meilleurs résultats d’assemblage, un identifiant persistant doit être présent sur tous les événements.
+
+  La couverture de l’ID persistant s’affiche sous la forme d’un pourcentage et est comparée à la valeur minimale recommandée pour une configuration de développement stable ou de production.
+
+
+#### ID incorrects
+
+>[!INFO]
+>
+>Dans l’interface de Customer Journey Analytics, les BAVID sont également appelés BAVID.
+> 
+
+Dans Customer Journey Analytics, un ID incorrect est un identifiant :
+
+* avec une valeur d’ID spécifique qui provient d’un ID persistant ou d’un champ d’ID de personne dans les jeux de données activés pour le groupement, **et**
+* est sur plus d’un million (1 000 000) d’événements dans les données de connexion, au cours d’un mois.
+
+Lorsqu’une valeur d’ID est marquée comme ID incorrect, tous les événements futurs contenant cette valeur d’ID sont ignorés des données de connexion et n’apparaissent pas dans les rapports.
+
+Exemples de cas d’utilisation d’ID incorrects :
+
+* Le champ d’ID de personne (par exemple, `undefined`) contient des valeurs personnalisées ou d’espace réservé. Ces valeurs peuvent également affecter [l’assemblage et la qualité des données de rapport](/help/stitching/faq.md#undefined-person-id-values).
+* Dans une configuration d’assemblage basée sur les champs, si plusieurs personnes partagent un appareil et que le nombre total de transitions entre les utilisateurs dépasse 50 000. Dans ce scénario, le processus de groupement s’arrête pour utiliser les informations d’ID de personne pour cet appareil et utilise uniquement les informations d’ID persistantes à la place. Par conséquent, tous les événements du jeu de données de cet appareil sont envoyés dans des données de connexion avec l’identité d’identifiant persistante, avec un risque élevé de provoquer une situation d’ID incorrects.
+
+
+>[!NOTE]
+>Les **[!UICONTROL mesures d’assemblage]**, y compris les **[!UICONTROL ID incorrects]** sont calculées sur la base d’un ensemble limité de données. Pour identifier la présence d’ID incorrects pour un jeu de données que vous prévoyez d’utiliser pour le groupement, reportez-vous à la note technique [ID incorrects](/help/technotes/badids.md).
+>
+
+
+### Enregistrer
+
+Une fois que vous avez enregistré une connexion, le processus de groupement pour les jeux de données activés est lancé dès que l’ingestion des données de ces jeux de données commence.
 
 >[!CAUTION]
 >
->Pour les jeux de données activés pour le groupement dans l’interface Connexions, le statut de renvoi est immédiatement et incorrectement signalé comme ![Statut vert](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _renvois terminés]**&#x200B;pour le nombre de renvois terminés. Utilisez d’autres méthodes pour vérifier si les données du jeu de données groupé sont renvoyées.
+>Pour les jeux de données activés pour le groupement dans l’interface Connexions, le statut de renvoi est immédiatement et incorrectement signalé comme ![Statut vert](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _renvois terminés]**pour le nombre de renvois terminés. Utilisez d’autres méthodes pour vérifier si les données du jeu de données groupé sont renvoyées.
 >
 
 

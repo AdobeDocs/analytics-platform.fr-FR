@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 4e6cacb9-4eca-4dfb-bce4-e69850507596
-source-git-commit: 153828839bbed493ae12c4969c69195b4beeaab1
+source-git-commit: bf4ff740d8d57fe1001b58e1c227644b8ad057cf
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 91%
+source-wordcount: '517'
+ht-degree: 92%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 91%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-stitch-customer-care"
->title="Activer le groupement pour un ou plusieurs jeux de données"
+>title="Activer le groupement pour les jeux de données pertinents"
 >abstract="Si un champ contient un identifiant qui existe dans plusieurs jeux de données mais n’est pas l’identifiant principal, vous pouvez utiliser le groupement pour élever les données dans un ou plusieurs de ces jeux de données."
 
 <!-- markdownlint-enable MD034 -->

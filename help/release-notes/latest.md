@@ -3,9 +3,9 @@ title: Notes de mise à jour actuelles de Customer Journey Analytics
 description: Afficher les dernières notes de mise à jour de Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 3d58f4dccdc7b9ea6f936cc924a30cc06b2317d1
+source-git-commit: fd8c539ae3bb0efc30a7fde7ff8d13a866263a91
 workflow-type: tm+mt
-source-wordcount: '1255'
+source-wordcount: '1291'
 ht-degree: 30%
 
 ---
@@ -20,6 +20,7 @@ Ces notes de mise à jour couvrent la période de publication de février 2026. 
 
 | Fonctionnalité et description | [Le déploiement commence](releases.md) | [Disponibilité générale](releases.md) |
 | ----------- | -------: | ----:|
+| **Reconception de l’aperçu des jeux de données dans Connexions**<p>Lorsque vous [ajoutez](/help/connections/create-connection.md#add-datasets) ou [modifiez](/help/connections/create-connection.md#edit-a-dataset) des jeux de données dans une connexion basée sur une personne, l’expérience pour prévisualiser les données est améliorée. Pour regrouper des jeux de données activés, des [mesures de regroupement](/help/stitching/use-stitching-ui.md#stitching-metrics) et [ID incorrects](/help/stitching/use-stitching-ui.md#bad-ids) supplémentaires sont disponibles. | samedi 6 mars 2026 | samedi 6 mars 2026 |
 | **Miniatures et aperçus Content Analytics supplémentaires**<p>Les aperçus et miniatures Content Analytics sont désormais pris en charge dans les visualisations sous forme de barres (empilées), barres horizontales (empilées) et nuages de points. | vendredi 5 mars 2026 | À confirmer |
 | **Remplacements d’en-tête** <p>Vous pouvez spécifier un nom d’en-tête et une valeur d’en-tête secrète dans Content Analytics. Cette [configuration de remplacement de l’en-tête](/help/content-analytics/config/guided.md#header-overrides) garantit que Content Analytics envoie des en-têtes HTTP personnalisés pour contourner les technologies de détection des robots ou de contrôle du trafic que vous avez implémentées.</p> |  | mardi 2 février 2026 |
 | **Combiner des suites de rapports provenant de plusieurs organisations IMS**<p>Vous pouvez utiliser Analytics Source Connector pour combiner des suites de rapports issues de plusieurs organisations IMS. Cette fonctionnalité [mappage de données entre les IMS](/help/getting-started/aa-vs-cja/mapping-data-ims-orgs.md) permet aux organisations d’avoir une vue combinée de leurs données client, même lorsque ces données client sont réparties sur plusieurs organisations IMS. <p>**Remarque :** cette configuration n’est disponible qu’en envoyant une demande à l’assistance clientèle d’Adobe.</p> |  | vendredi 12 février 2026 |
