@@ -8,7 +8,7 @@ exl-id: a3f6db1e-0444-4804-98bf-c5c10ba2e7ea
 source-git-commit: 968fef4fa6a967c9654f594e662bc9bbd7ae2ab4
 workflow-type: tm+mt
 source-wordcount: '1698'
-ht-degree: 4%
+ht-degree: 9%
 
 ---
 
@@ -80,7 +80,7 @@ Les histoires de données se composent d’une diapositive de titre, d’une dia
 >[!CONTEXTUALHELP]
 >id="cja-powerpoint-include-visualizations"
 >title="Panneaux et visualisations inclus"
->abstract="Choisissez les panneaux et les visualisations que vous souhaitez inclure dans la présentation. Vous pouvez inclure jusqu’à 50 visualisations."
+>abstract="Choisissez les panneaux et les visualisations que vous souhaitez inclure dans la présentation. Vous pouvez inclure jusqu’à 50 visualisations."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -89,7 +89,7 @@ Les histoires de données se composent d’une diapositive de titre, d’une dia
 >[!CONTEXTUALHELP]
 >id="cja-presentation-emphasized-components"
 >title="Composants mis en avant"
->abstract="Sélectionnez jusqu’à 5 mesures et 5 dimensions dans vos visualisations, sur lesquelles vous souhaitez mettre l’accent dans la présentation. Les mesures que vous choisissez s’affichent en italique, les dimensions en gras et les éléments de dimension en contraste de couleur."
+>abstract="Choisissez jusqu’à 5 mesures et 5 dimensions dans vos visualisations que vous souhaitez mettre en avant dans la présentation. Les mesures que vous choisissez s’affichent en italique, les dimensions en gras et les éléments de dimension dans une couleur contrastante."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -107,7 +107,7 @@ Les histoires de données se composent d’une diapositive de titre, d’une dia
    |---------|----------|
    | **[!UICONTROL Titre de la couverture]** | Indiquez un titre pour la présentation. Ce titre s&#39;affiche sur la diapositive de titre de la présentation. |
    | **[!UICONTROL Inclure le nom du présentateur]** | Spécifiez le nom du présentateur. Ce nom apparaît sur la diapositive de titre de la présentation, sous le titre de couverture. |
-   | **[!UICONTROL Panneaux et visualisations inclus]** | Choisissez les panneaux et la visualisation à inclure dans la présentation. Vous pouvez inclure jusqu’à 50 visualisations.<p>Si une visualisation est grisée, elle est suivie du texte **[!UICONTROL (non pris en charge)]** ou **[!UICONTROL (données limitées)]**.</p><ul><li>**Non pris en charge** : la plupart des panneaux et des visualisations sont pris en charge. Pour plus d’informations sur les panneaux et les visualisations non pris en charge, voir [Éléments et fonctionnalités de projet non pris en charge](#unsupported-project-elements-and-features).</li><li>**Données limitées** : la visualisation contient un composant dont l’exportation est limitée par une politique de gouvernance des données appliquée par votre organisation. Contactez votre administrateur système pour voir quels composants ne peuvent pas être exportés, puis supprimez les composants restreints avant de générer des diapositives.</li></ul> |
+   | **[!UICONTROL Panneaux et visualisations inclus]** | Choisissez les panneaux et la visualisation à inclure dans la présentation. Vous pouvez inclure jusqu’à 50 visualisations.<p>Si une visualisation est grisée, elle est suivie du texte **[!UICONTROL (non pris en charge)]** ou **[!UICONTROL (données limitées)]**.</p><ul><li>**Non pris en charge** : la plupart des panneaux et des visualisations sont pris en charge. Pour plus d’informations sur les panneaux et les visualisations non pris en charge, voir [Éléments et fonctionnalités de projet non pris en charge](#unsupported-project-elements-and-features).</li><li>**Données limitées** : la visualisation contient un composant dont l’exportation est limitée par une politique de gouvernance des données appliquée par votre organisation. Contactez votre administrateur système pour voir quels composants ne peuvent pas être exportés, puis supprimez les composants restreints avant de générer des diapositives.</li></ul> |
    | **[!UICONTROL Mettre en gras les composants]** | Dans les visualisations, sélectionnez les mesures et dimensions à mettre en évidence dans la présentation. Les composants que vous choisissez sont mieux classés et reçoivent plus de poids lors de la création des thèmes et du récit global de l’histoire des données. <p>Lorsque aucun accent n’est mis, les composants s’affichent dans les présentations comme suit :<ul><li>**Mesures et dimensions :** italique</li><li>**Éléments Dimension :** guillemets</li></ul></p><p>Lorsque l’accent est mis, les composants s’affichent dans les présentations comme suit :</p><ul><li>**Mesures et dimensions :** italiques et gras</li><li>**Éléments Dimension :** gras lorsque la dimension correspondante est mise en évidence<p>Une couleur est également appliquée à l’élément de dimension lorsque celui-ci est mis en surbrillance dans le graphique.</p></li></ul> |
 
    <!-- add this later: - **[!UICONTROL Panel and visualization descriptions]** - Choose whether to include panel and visualization descriptions in your generated slide presentation. - 

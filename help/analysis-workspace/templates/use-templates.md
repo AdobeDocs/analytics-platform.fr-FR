@@ -7,7 +7,7 @@ exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
 source-git-commit: 02aa4b4c9b357efca3d620bb72d8a505153bc079
 workflow-type: tm+mt
 source-wordcount: '21006'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -486,7 +486,7 @@ Les modèles suivants sont disponibles :
 
 >[!CONTEXTUALHELP]
 >id="template--audienceOverview"
->title="Affichez les audiences représentées parmi les personnes qui visitent votre site."
+>title="Permet d’aɑficher les audiences représentées parmi les personnes qui visitent votre site."
 >abstract="**Cela peut vous aider** entre autres à mieux comprendre les informations générales sur les audiences, leur origine (RTCDP, Customer Journey Analytics, etc.), le chevauchement des audiences.<br/>**En fonction de ce que vous avez appris** vous pouvez effectuer un certain nombre de tâches, comme utiliser les données pour vous concentrer sur les efforts marketing pour ces audiences spécifiques, ou créer des expériences personnalisées pour les clients qui s’étendent sur plusieurs audiences.<br/> Ce modèle utilise les dimensions Nom de l’audience, Origine de l’audience, Nom de l’audience sortie et Origine de l’audience sortie ."
 
 <!--AA only-->
@@ -654,7 +654,7 @@ Les modèles suivants sont disponibles :
 
 | Nom du modèle | Pourquoi utiliser ce modèle <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
-| **[!UICONTROL Présentation des audiences]** | Affichez les audiences représentées parmi les personnes qui visitent votre site.<p>**Cela peut vous aider** entre autres à mieux comprendre les informations générales sur les audiences, leur origine (RTCDP, Customer Journey Analytics, etc.), le chevauchement des audiences.</p><p>**En fonction de ce que vous avez appris** vous pouvez effectuer un certain nombre de tâches, comme utiliser les données pour vous concentrer sur les efforts marketing pour ces audiences spécifiques, ou créer des expériences personnalisées pour les clients qui s’étendent sur plusieurs audiences.</p><p>Ce modèle utilise les dimensions Nom de l’audience, Origine de l’audience, Nom de l’audience sortie et Origine de l’audience sortie .</p><p>Pour plus d’informations, voir [Analyse des audiences Experience Platform dans Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).</p> |
+| **[!UICONTROL Présentation des audiences]** | Permet d’aɑficher les audiences représentées parmi les personnes qui visitent votre site.<p>**Cela peut vous aider** entre autres à mieux comprendre les informations générales sur les audiences, leur origine (RTCDP, Customer Journey Analytics, etc.), le chevauchement des audiences.</p><p>**En fonction de ce que vous avez appris** vous pouvez effectuer un certain nombre de tâches, comme utiliser les données pour vous concentrer sur les efforts marketing pour ces audiences spécifiques, ou créer des expériences personnalisées pour les clients qui s’étendent sur plusieurs audiences.</p><p>Ce modèle utilise les dimensions Nom de l’audience, Origine de l’audience, Nom de l’audience sortie et Origine de l’audience sortie .</p><p>Pour plus d’informations, voir [Analyse des audiences Experience Platform dans Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).</p> |
 | [!UICONTROL **Visiteurs et visiteuses nouveaux et récurrents**] | Affichez une comparaison des nouveaux visiteurs et visiteuses par rapport aux visiteurs et visiteuses réguliers. <p>**Cela peut vous aider** à mieux comprendre l’efficacité de votre site pour fidéliser la clientèle ou le taux d’acquisition de nouveaux clients et clientes.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre de tâches, comme proposer des incitations pour les futurs achats aux nouveaux visiteurs et visiteuses afin de les encourager à revenir.</p><!-- This template uses the --> |
 | **ID de personne** | Affichez le comportement individuel des utilisateurs et utilisatrices sur différents canaux.<p>**Cela peut vous aider** à mieux comprendre l’ensemble du parcours client et les interactions entre plusieurs points de contact.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre de tâches, comme personnaliser les efforts marketing pour mieux cibler les préférences des utilisateurs et utilisatrices.</p><!-- This template uses the --> |
 | **Pays géographiques** | Permet d’afficher le pays d’origine des personnes consultant le site.<p>**Cela peut vous aider** à mieux comprendre les pays les plus populaires d’où proviennent les personnes accédant à votre site.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme utiliser les données pour vous concentrer sur les efforts marketing dans ces pays ou vous assurer que l’expérience de votre site est optimale dans les pays qui ont des langues principales différentes.</p><p>Ce modèle utilise la dimension Pays. </p> |
@@ -1070,17 +1070,17 @@ Les modèles suivants sont disponibles :
 
 >[!CONTEXTUALHELP]
 >id="template--brand-concierge--concierge"
->title="Analysez l’interaction client à travers les schémas de conversation, les commentaires des utilisateurs et l’efficacité de vos recommandations."
+>title="Analysez l’interaction clientèle à travers les schémas de conversation, les commentaires des utilisateurs et utilisatrices, et l’efficacité de vos recommandations."
 >abstract="**Cela peut vous aider** à identifier les schémas d’engagement, à évaluer la qualité de la conversation, à suivre les tendances de satisfaction des clients et à mesurer l’efficacité des recommandations de liens.<br/>**En fonction de ce que vous avez appris** vous pouvez effectuer un certain nombre de tâches, comme affiner les réponses de votre agent d’IA, développer du contenu ciblé pour les problèmes fréquents, améliorer les algorithmes de recommandation ou créer des parcours spécialisés pour différents segments d’utilisateurs."
 
 >[!CONTEXTUALHELP]
 >id="template--brand-concierge--meeting"
->title="Suivez le cycle de vie complet des demandes de réunion B2B. Surveillez les taux de conversion, les performances des consultants et identifiez vos canaux de génération de leads les plus efficaces."
+>title="Suivez le cycle de vie complet des demandes de réunion B2B. Surveillez les taux de conversion, les performances des consultantes et consultants, et identifiez vos canaux de génération de leads les plus efficaces."
 >abstract="**Cela peut vous aider** à suivre les taux de conversion des réunions, à identifier les membres de l’équipe les plus performants, à comprendre les tendances saisonnières du comportement de réservation et à identifier les pages qui génèrent les demandes de réunion les plus importantes.<br/>**En fonction de ce que vous avez appris** vous pouvez faire un certain nombre de choses, comme optimiser votre processus de demande de réunion, redistribuer les ressources vers des pages à conversion élevée, développer une formation ciblée pour les consultants ayant des taux de réservation plus faibles, ou mettre en œuvre de nouvelles stratégies pour réduire les réunions manquées."
 
 | Nom du modèle | Pourquoi utiliser ce modèle <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
-| Présentation de [!UICONTROL **Brand Concierge**] | Analysez l’interaction client à travers les schémas de conversation, les commentaires des utilisateurs et l’efficacité de vos recommandations. <p>**Cela peut vous aider** à identifier les schémas d’engagement, à évaluer la qualité de la conversation, à suivre les tendances de satisfaction des clients et à mesurer l’efficacité des recommandations de liens.</p><p>**En fonction de ce que vous avez appris** vous pouvez effectuer un certain nombre de tâches, comme affiner les réponses de votre agent d’IA, développer du contenu ciblé pour les problèmes fréquents, améliorer les algorithmes de recommandation ou créer des parcours spécialisés pour différents segments d’utilisateurs.</p> |
+| Présentation de [!UICONTROL **Brand Concierge**] | Analysez l’interaction clientèle à travers les schémas de conversation, les commentaires des utilisateurs et utilisatrices, et l’efficacité de vos recommandations. <p>**Cela peut vous aider** à identifier les schémas d’engagement, à évaluer la qualité de la conversation, à suivre les tendances de satisfaction des clients et à mesurer l’efficacité des recommandations de liens.</p><p>**En fonction de ce que vous avez appris** vous pouvez effectuer un certain nombre de tâches, comme affiner les réponses de votre agent d’IA, développer du contenu ciblé pour les problèmes fréquents, améliorer les algorithmes de recommandation ou créer des parcours spécialisés pour différents segments d’utilisateurs.</p> |
 | **Réunions B2B Brand Concierge** | Suivez le cycle de vie complet des demandes de réunion B2B. Surveillez les taux de conversion, évaluez les performances de réservation des consultants et identifiez vos canaux de génération de leads les plus efficaces. <p>**Cela peut vous aider** à suivre les taux de conversion des réunions, à identifier les membres de l’équipe les plus performants, à comprendre les tendances saisonnières du comportement de réservation et à identifier les URL de pages qui génèrent les demandes de réunion les plus importantes. </p><p>**En fonction de ce que vous avez appris** vous pouvez effectuer un certain nombre de tâches, comme optimiser votre processus de demande de réunion, redistribuer les ressources vers des URL de page à conversion élevée, développer une formation ciblée pour les consultants ayant des taux de réservation plus faibles, ou mettre en œuvre de nouvelles stratégies pour réduire les réunions manquées.</p> |
 
 
@@ -1115,17 +1115,17 @@ Les modèles suivants sont disponibles :
 | [!UICONTROL **Activité du groupe d’achat B2B**] | Visualisez l’activité du groupe d’achat dans chaque compte pour informer le compte et les diffusions marketing du groupe d’achat.<p>**Cela peut vous aider** à visualiser les groupes d’achat, et les personnes au sein de ces groupes d’achat, qui sont les plus engagés, ce qui met en évidence les lacunes en matière de participation du groupe.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme essayer de dialoguer davantage avec les personnes au sein des groupes d’achat qui ne semblent pas impliquées.</p> |
 
 
-### Modèles Mix Modeler {#mix-modeler-templates}
+### Modèles Mix Modeler {#mix-modeler-templates}
 
 Les modèles suivants sont disponibles :
 
 | Nom du modèle | Pourquoi utiliser ce modèle <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
-| [!UICONTROL **Informations sur le modèle incrémentiel de Mix Modeler**] | Affichez les informations des modèles sélectionnés générés par Mix Modeler.<p>**Cela peut vous aider** afin de mieux comprendre les informations incrémentielles des modèles générés dans Mix Modeler. <p>**En vous basant sur ces informations** vous serez en mesure de :<ul><li>Visualisez et quantifiez l’impact des activités marketing de votre organisation.</li><li>Identifiez les canaux les plus performants.</li><li>Identifiez les canaux qui peuvent nécessiter une optimisation.</li></ul></p> |
+| [!UICONTROL **Informations sur le modèle incrémentiel de Mix Modeler**] | Affichez les informations des modèles sélectionnés générés par Mix Modeler.<p>**Cela peut vous aider** afin de mieux comprendre les informations incrémentielles des modèles générés dans Mix Modeler. <p>**En vous basant sur ces informations** vous serez en mesure de :<ul><li>visualiser et quantifier l’impact des activités marketing de votre organisation ;</li><li>identifier les canaux les plus performants ;</li><li>identifier les canaux qui peuvent nécessiter une optimisation.</li></ul></p> |
 
 <!-- CJA only -->
 
 >[!CONTEXTUALHELP]
 >id="template--mixmodeler-incremental-models-insights"
->title="Affichez les informations des modèles sélectionnés générés par Mix Modeler."
->abstract="**Cela peut vous aider** afin de mieux comprendre les informations incrémentielles des modèles générés dans Mix Modeler. <br/>**En vous basant sur ces informations** vous serez en mesure de :<ul><li>Visualisez et quantifiez l’impact des activités marketing de votre organisation.</li><li>Identifiez les canaux les plus performants.</li><li>Identifiez les canaux qui peuvent nécessiter une optimisation.</li></ul>"
+>title="Affichez les informations des modèles sélectionnés générés par Mix Modeler."
+>abstract="**Cela peut vous aider** afin de mieux comprendre les informations incrémentielles des modèles générés dans Mix Modeler. <br/>**En vous basant sur ces informations** vous serez en mesure de :<ul><li>visualiser et quantifier l’impact des activités marketing de votre organisation ;</li><li>identifier les canaux les plus performants ;</li><li>identifier les canaux qui peuvent nécessiter une optimisation.</li></ul>"

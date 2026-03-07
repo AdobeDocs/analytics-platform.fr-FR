@@ -8,7 +8,7 @@ role: User
 source-git-commit: c4a7884ae05d9290b2974483474ba8326492d014
 workflow-type: tm+mt
 source-wordcount: '3234'
-ht-degree: 55%
+ht-degree: 56%
 
 ---
 
@@ -35,7 +35,7 @@ Vous pouvez exporter des tableaux complets d’Analysis Workspace vers des four
 
 Lorsque vous exportez des tableaux complets, tenez compte des points suivants :
 
-* Avant d’exporter des données vers le cloud, assurez-vous que vos tables, votre environnement et vos autorisations répondent aux [&#x200B; exigences minimales d’exportation &#x200B;](#minimum-requirements).
+* Avant d’exporter des données vers le cloud, assurez-vous que vos tables, votre environnement et vos autorisations répondent aux [ exigences minimales d’exportation ](#minimum-requirements).
 
 * Certains [fonctionnalités](#unsupported-features) et certains [composants](#unsupported-components) ne sont pas pris en charge lors de l’export de tableaux complets vers le cloud.
 
@@ -76,7 +76,7 @@ Procédez comme suit lors de l’export de tableaux complets vers le cloud :
 >[!CONTEXTUALHELP]
 >id="export-manifest"
 >title="Inclure le fichier manifeste"
->abstract="Lorsque cette option est sélectionnée, un fichier manifeste est inclus dans toute diffusion d’exportation réussie. Le fichier de manifeste vous permet de confirmer que tous les fichiers ont bien été diffusés."
+>abstract="Lorsque cette option est sélectionnée, un fichier manifeste est inclus dans toute diffusion d’export réussie. Le fichier de manifeste vous permet de confirmer que tous les fichiers ont bien été diffusés."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -104,7 +104,7 @@ Procédez comme suit lors de l’export de tableaux complets vers le cloud :
 >[!CONTEXTUALHELP]
 >id="cja-export-file-format"
 >title="Format du fichier"
->abstract="Lors du choix du format de fichier Parquet, certains caractères spéciaux inclus dans les noms des composants sont remplacés par un trait de soulignement (_). Consultez le lien ci-dessous pour obtenir la liste complète des caractères remplacés."
+>abstract="Lors du choix du format de fichier parquet, certains caractères spéciaux inclus dans les noms des composants sont remplacés par un trait de soulignement (_). Consultez le lien ci-dessous pour obtenir la liste complète des caractères remplacés."
 
 <!-- markdownlint-enable MD034 -->
 
