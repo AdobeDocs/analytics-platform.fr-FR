@@ -108,7 +108,7 @@ Lors de l’architecture d’un schéma, tenez compte des faits. Par exemple, `e
 
 Certaines organisations doivent continuer à générer des rapports Adobe Analytics lors de la mise à niveau vers Customer Journey Analytics. Vous pouvez maintenir la parité sans introduire d’artefacts spécifiques d’Analytics dans votre conception de schéma à long terme à l’aide de l’approche suivante :
 
-1. **Utiliser des chemins d’accès aux champs XDM reconnus et automatiquement mappés par Adobe Analytics :** lorsque vous envoyez des champs XDM reconnus par Edge Network à Adobe Analytics, ils sont [ mappés automatiquement](https://experienceleague.adobe.com/fr/docs/analytics/implementation/aep-edge/xdm-var-mapping) sans configuration supplémentaire.
+1. **Utiliser des chemins d’accès aux champs XDM reconnus et automatiquement mappés par Adobe Analytics :** lorsque vous envoyez des champs XDM reconnus par Edge Network à Adobe Analytics, ils sont [&#x200B; mappés automatiquement](https://experienceleague.adobe.com/fr/docs/analytics/implementation/aep-edge/xdm-var-mapping) sans configuration supplémentaire.
 1. **Utiliser des champs XDM personnalisés pour les concepts spécifiques à une organisation :** tous les champs XDM qui ne sont pas automatiquement mappés à une variable Analytics sont transférés en tant que [variables de données contextuelles](https://experienceleague.adobe.com/fr/docs/analytics/implementation/vars/page-vars/contextdata) dans Adobe Analytics.
 1. **Utilisez les règles de traitement Adobe Analytics pour mapper ces variables de données contextuelles aux props/eVars:** [règles de traitement](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) pour vous permettre de mapper n’importe quel champ XDM personnalisé dans n’importe quelle eVar ou prop. Ce concept prend en charge le reporting de parité dans Adobe Analytics tout en gardant votre schéma propre et centré sur Customer Journey Analytics.
 
@@ -128,7 +128,7 @@ Définissez un propriétaire clair pour les modifications de schéma. Un schéma
 La conception du schéma doit refléter les attentes en matière de confidentialité et de gouvernance, conformément aux politiques de confidentialité de votre organisation. Tenez compte des points suivants lors de la conception de votre schéma :
 
 * Collectez uniquement les éléments nécessaires pour prendre en charge les cas d’utilisation définis.
-* Assurez-vous que les exigences en matière de consentement et d’utilisation des données sont prises en compte dans votre stratégie de collecte. Pour plus d’informations[ voir ](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/consent/sdk) Utilisation de Web SDK pour traiter les données de consentement client.
+* Assurez-vous que les exigences en matière de consentement et d’utilisation des données sont prises en compte dans votre stratégie de collecte. Pour plus d’informations[&#x200B; voir &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/consent/sdk) Utilisation de Web SDK pour traiter les données de consentement client.
 * Tenez compte de la manière dont les champs sensibles sont étiquetés et contrôlés dans les outils de gouvernance de Adobe Experience Platform. Voir [Adobe Customer Journey Analytics et gouvernance des données](/help/privacy/privacy-overview.md) pour plus d’informations.
 
 ## Étapes suivantes
