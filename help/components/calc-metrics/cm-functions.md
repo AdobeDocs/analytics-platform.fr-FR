@@ -93,7 +93,7 @@ Renvoie la valeur la plus grande d’un ensemble d’éléments de dimension pou
 
 >[!TIP]
 >
->Utilisez une instruction [IF](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-adv-functions#if) telle que **IF**(*Revenue* = **Column Maximum***(Revenue*), 1, 0) pour mettre en surbrillance l’élément le plus performant de votre répartition.
+>Utilisez une instruction [IF](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-adv-functions#if) telle que **IF**(*Revenue* = **Column Maximum***(Revenue*), 1, 0) pour mettre en surbrillance l’élément le plus performant de votre répartition.
 >
 
 ## Column Minimum {#column-minimum}
@@ -123,7 +123,7 @@ Renvoie la valeur la plus petite d’un ensemble d’éléments de dimension pou
 
 >[!TIP]
 >
->Utilisez une instruction [IF](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-adv-functions#if) telle que **IF**(*Revenue* = **Column Minimum***(Revenue*), 1, 0) pour mettre en surbrillance l’élément le moins performant de votre répartition.
+>Utilisez une instruction [IF](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-adv-functions#if) telle que **IF**(*Revenue* = **Column Minimum***(Revenue*), 1, 0) pour mettre en surbrillance l’élément le moins performant de votre répartition.
 >
 
 
