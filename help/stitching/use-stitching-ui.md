@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
-source-git-commit: b7b2a1f3eb1c149caf65ab3e4321e4f4347695cc
+source-git-commit: 53099bd891d939260a95cffc66e7857167901902
 workflow-type: tm+mt
-source-wordcount: '1724'
+source-wordcount: '1804'
 ht-degree: 5%
 
 ---
@@ -98,7 +98,7 @@ Vous pouvez activer la combinaison d’identités lorsque vous [ajoutez](/help/c
 >[!CONTEXTUALHELP]
 >id="connection_stitching_personid"
 >title="ID de personne"
->abstract="Sélectionnez un ID de personne (l’identifiant unique d’une personne) parmi les identités disponibles. Si vous souhaitez utiliser le groupement basé sur les graphiques, sélectionnez **[!UICONTROL Graphique d’identités]**."
+>abstract="Sélectionnez un ID de personne (l’identifiant unique d’une personne) parmi les identités disponibles. Si votre licence comprend un groupement basé sur des graphiques et que vous souhaitez utiliser cette méthode de groupement, sélectionnez **[!UICONTROL Graphique d’identité]**."
 
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics"
@@ -125,7 +125,7 @@ Vous pouvez activer la combinaison d’identités lorsque vous [ajoutez](/help/c
 >id="connection_stitchingmetrics_badids"
 >title="ID incorrects"
 >abstract="Les identifiants incorrects sont des valeurs d’identifiant qui affectent considérablement les données de rapport."
->additional-url="https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-16444" text="ID incorrects"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16444" text="ID incorrects"
 
 
 ### Paramètres des jeux de données
@@ -172,6 +172,11 @@ Pour activer le groupement, dans la section Jeu de données d’événement **[!
 
 
 ### Aperçu des jeux de données
+
+>[!AVAILABILITY]
+>
+>L’interface améliorée **[!UICONTROL Aperçu du jeu de données]** (y compris les **[!UICONTROL Mesures d’assemblage]** et **[!UICONTROL ID incorrects]**) décrite dans cette section se trouve dans la phase de test limité de la publication et peut ne pas encore être disponible dans votre environnement. S’il n’est pas disponible, l’aperçu du jeu de données s’affiche dans l’interface **[!UICONTROL Paramètres du jeu de données]**. Cette note sera supprimée lorsque la fonctionnalité sera disponible. Pour plus d’informations sur le processus de mise à jour de Customer Journey Analytics, consultez [Mise à jour des fonctionnalités de Customer Journey Analytics](/help/release-notes/releases.md).
+>
 
 Outre l’interface standard **[!UICONTROL Aperçu des jeux de données]**, deux panneaux d’informations supplémentaires sont disponibles lors de l’[ajout](/help/connections/create-connection.md#add-datasets) ou de la [modification](/help/connections/create-connection.md#edit-a-dataset) de jeux de données dans une connexion basée sur une personne.
 
@@ -229,7 +234,7 @@ Une fois que vous avez enregistré une connexion, le processus de groupement pou
 
 >[!CAUTION]
 >
->Pour les jeux de données activés pour le groupement dans l’interface Connexions, le statut de renvoi est immédiatement et incorrectement signalé comme ![Statut vert](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _renvois terminés]**&#x200B;pour le nombre de renvois terminés. Utilisez d’autres méthodes pour vérifier si les données du jeu de données groupé sont renvoyées.
+>Pour les jeux de données activés pour le groupement dans l’interface Connexions, le statut de renvoi est immédiatement et incorrectement signalé comme ![Statut vert](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _renvois terminés]**pour le nombre de renvois terminés. Utilisez d’autres méthodes pour vérifier si les données du jeu de données groupé sont renvoyées.
 >
 
 
