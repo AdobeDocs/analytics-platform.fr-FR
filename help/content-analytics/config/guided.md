@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: a2715ff9869796858dec16d3b8b422ef0c9325aa
+source-git-commit: b48858ea8e54bd9f6e7725f1ed0f0086020aab5f
 workflow-type: tm+mt
-source-wordcount: '2776'
-ht-degree: 97%
+source-wordcount: '3251'
+ht-degree: 85%
 
 ---
 
@@ -114,7 +114,52 @@ Chaque configuration nécessite un nom unique. Par exemple : `Example Content A
 >title="Nouvelle vue de données"
 >abstract="Vous avez sélectionné une nouvelle vue de données pour cette configuration. La nouvelle vue de données sera mise à jour afin d’inclure les mesures et dimensions de Content Analytics. Les mesures et dimensions similaires seront supprimées de la vue de données existante.<br/>Si une autre connexion est associée à la nouvelle vue de données, la connexion est mise à jour pour inclure les jeux de données Content Analytics. Notez que les jeux de données Content Analytics ne sont pas supprimés de la configuration existante."
 
-<!-- markdownlint-enable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="ac_onboarding_dataviews_button"
+>title="Vue de données"
+>abstract="Pour la configuration de Content Analytics, vous devez sélectionner une ou plusieurs vues de données. Vous pouvez ainsi fusionner vos données d’analyse de contenu avec d’autres données."
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_dataviewsheader"
+>title="Vues des données"
+>abstract="Sélectionnez une ou plusieurs vues de données Customer Journey Analytics avec lesquelles vous souhaitez fusionner vos données Content Analytics."
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_dataviews_header_alt"
+>title="Vue de données"
+>abstract="Sélectionnez une ou plusieurs vues de données Customer Journey Analytics avec lesquelles vous souhaitez fusionner vos données Content Analytics.<br/>"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_dataviews_new_dialog"
+>title="Vues de données sélectionnées"
+>abstract="Vous avez modifié les vues de données sélectionnées pour cette configuration. Les vues de données sélectionnées seront mises à jour pour inclure les mesures et dimensions Content Analytics. Ces mesures et dimensions seront supprimées des vues de données sélectionnées précédemment qui ne sont plus sélectionnées.<br/><br/>Si une autre connexion est associée aux vues de données sélectionnées, la connexion est mise à jour pour inclure les jeux de données Content Analytics. Les jeux de données de l’analyse du contenu ne sont pas supprimés de la connexion sélectionnée à l’origine.<br/><br/>Toutes les vues de données sélectionnées héritent des canaux qui font partie de cette configuration."
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_dataviews_change_dialog"
+>title="Vues de données sélectionnées"
+>abstract="Vous avez modifié les vues de données sélectionnées pour cette configuration. Les vues de données sélectionnées seront mises à jour pour inclure les mesures et dimensions Content Analytics. Ces mesures et dimensions seront supprimées des vues de données sélectionnées précédemment qui ne sont plus sélectionnées.<br/><br/>Si une autre connexion est associée aux vues de données sélectionnées, la connexion est mise à jour pour inclure les jeux de données Content Analytics. Les jeux de données de l’analyse du contenu ne sont pas supprimés de la connexion sélectionnée à l’origine.<br/><br/>Toutes les vues de données sélectionnées héritent des canaux qui font partie de cette configuration."
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_dataviews_current_cleanup_labels_dialog"
+>title="Vues de données sélectionnées"
+>abstract="Vous avez modifié les vues de données sélectionnées pour cette configuration. Les vues de données sélectionnées seront mises à jour pour inclure les mesures et dimensions Content Analytics. Ces mesures et dimensions seront supprimées des vues de données précédemment sélectionnées qui ne sont plus sélectionnées.<br/><br/>Si une autre connexion est associée aux vues de données sélectionnées, la connexion est mise à jour pour inclure les jeux de données Content Analytics. Les jeux de données de l’analyse du contenu ne sont pas supprimés de la connexion sélectionnée à l’origine.<br/><br/>Toutes les vues de données sélectionnées héritent des canaux qui font partie de cette configuration."
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_dataviews_prev_cleanup_labels_dialog"
+>title="Vues de données sélectionnées"
+>abstract="Vous avez modifié les vues de données sélectionnées pour cette configuration. Les vues de données sélectionnées seront mises à jour pour inclure les mesures et dimensions Content Analytics. Ces mesures et dimensions seront supprimées des vues de données précédemment sélectionnées qui ne sont plus sélectionnées.<br/><br/>Si une autre connexion est associée aux vues de données sélectionnées, la connexion est mise à jour pour inclure les jeux de données Content Analytics. Les jeux de données de l’analyse du contenu ne sont pas supprimés de la connexion sélectionnée à l’origine.<br/><br/>Toutes les vues de données sélectionnées héritent des canaux qui font partie de cette configuration."
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_channels_button"
+>title="Canaux"
+>abstract="Activez et configurez un ou plusieurs canaux pour la configuration."
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_channels_header"
+>title="Canaux"
+>abstract="Activez et configurez un ou plusieurs canaux pour la configuration. Toutes les vues de données faisant partie de la configuration héritent des canaux activés."
+
 
 Votre configuration nécessite la sélection d’une [Vue de données](/help/data-views/data-views.md).
 
