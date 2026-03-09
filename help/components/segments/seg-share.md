@@ -4,10 +4,10 @@ title: Partager des segments
 feature: Filters, Segments
 exl-id: c8559c7b-f886-4046-9bd6-80778882afcc
 role: User
-source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
+source-git-commit: 81e08ecb593b6ba789c479d0e648cbe7ba0a82d6
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 6%
+source-wordcount: '320'
+ht-degree: 5%
 
 ---
 
@@ -31,6 +31,8 @@ Pour partager un ou plusieurs segments :
    1. Sélectionnez une ou plusieurs options dans la section **[!UICONTROL Organisation]** ou **[!UICONTROL Groupes]** ou recherchez et sélectionnez une ou plusieurs personnes. Les options disponibles dépendent de votre rôle.
 
    1. Sélectionnez **[!UICONTROL Enregistrer]** pour partager les segments. Sélectionnez **[!UICONTROL Annuler]** pour annuler.
+
+Si vous avez accès aux segments partagés, vous pouvez les utiliser dans des projets ou dans le cadre des [paramètres d’une vue de données](/help/data-views/session-settings.md).
 
 ## Bonnes pratiques
 

@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Data Views
 exl-id: 25710bf1-ec85-4a7d-a404-54549013cc2c
 role: Admin
-source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
+source-git-commit: 81e08ecb593b6ba789c479d0e648cbe7ba0a82d6
 workflow-type: tm+mt
-source-wordcount: '465'
-ht-degree: 82%
+source-wordcount: '532'
+ht-degree: 65%
 
 ---
 
@@ -34,9 +34,9 @@ Pour définir le contexte d’une session dans une vue de données, procédez co
 
 1. Sélectionnez **[!UICONTROL Vues de données]**, éventuellement dans **[!UICONTROL Gestion des données]**, dans la navigation principale de l’interface d’utilisation de Customer Journey Analytics.
 
-2. Créez une nouvelle vue de données ou modifiez en une existante. Consultez [Créer ou modifier une vue de données](create-dataview.md) pour plus d’informations.
+1. Créez une nouvelle vue de données ou modifiez en une existante. Consultez [Créer ou modifier une vue de données](create-dataview.md) pour plus d’informations.
 
-3. Sélectionnez l’onglet **[!UICONTROL Paramètres]**. Sous [!UICONTROL Paramètres de session] :
+1. Sélectionnez l’onglet **[!UICONTROL Paramètres]**. Sous [!UICONTROL Paramètres de session] :
 
    1. Saisissez une valeur pour **[!UICONTROL Délai d’expiration de session]** en [!UICONTROL minutes], [!UICONTROL heures], [!UICONTROL jours] ou [!UICONTROL semaines]. Le délai d’expiration de la session détermine la durée pendant laquelle une session peut être inactive (aucun événement ne se produit) avant de démarrer une nouvelle session.
 
@@ -44,8 +44,11 @@ Pour définir le contexte d’une session dans une vue de données, procédez co
 
       Appliquez un long délai d’expiration de session (3 mois, par exemple) si vous combinez des données en ligne et hors ligne et souhaitez analyser si les clientes et les clients qui ont acheté un ou plusieurs produits ont appelé votre service clientèle dans les trois premiers mois suivant leur achat.
 
+   1. Sélectionnez un segment dans le menu déroulant **[!UICONTROL Ajouter des segments]** si vous souhaitez segmenter une vue de données. Vous pouvez également faire glisser un segment depuis ![Segmentation](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segments]** dans le volet de gauche de l’**[!UICONTROL _Déposez un segment ici_]**.
 
-   2. Sélectionnez une mesure dans la liste **[!UICONTROL Déposer une mesure ici]** liste sous **[!UICONTROL Démarrer une nouvelle session avec une mesure]**. Vous pouvez également faire glisser et déposer une mesure à partir du volet de gauche sur le **[!UICONTROL champ Déposer une mesure]**. La mesure sélectionnée définit le début d’une nouvelle session. Vous pouvez définir plusieurs mesures.
+      Seuls les segments partagés répertoriés et auxquels vous avez accès peuvent être évalués en fonction des composants que vous avez définis pour la vue de données.
+
+   1. Sélectionnez une mesure dans le menu déroulant **[!UICONTROL Démarrer une nouvelle session avec une mesure]** . Vous pouvez également faire glisser une mesure depuis ![Événement](/help/assets/icons/Event.svg) **[!UICONTROL Mesures]** dans le volet gauche du **[!UICONTROL _Déposer une mesure ici_]**. La mesure sélectionnée définit le début d’une nouvelle session. Vous pouvez définir plusieurs mesures.
 
       Vous pouvez utiliser n’importe quel type de mesure pour définir une nouvelle session. Par exemple, imaginez que vous souhaitiez définir une nouvelle session chaque fois qu’un profil lance votre application mobile. Dans **[!UICONTROL Vue de données]** > **[!UICONTROL Composants]**, définissez un composant de type mesure, nommé **[!UICONTROL Launch]**, en fonction d’un champ de schéma **[!UICONTROL appInteraction]** **[!UICONTROL Name]**. Vous spécifiez en outre le composant de mesure **[!UICONTROL Launch]** pour ne comptabiliser la valeur que lorsque la valeur correspond à `launch`.
 
@@ -57,4 +60,4 @@ Pour définir le contexte d’une session dans une vue de données, procédez co
 
 
 
-4. Sélectionnez **[!UICONTROL Enregistrer]** ou **[!UICONTROL Enregistrer et terminer]** pour enregistrer les paramètres de session.
+1. Sélectionnez **[!UICONTROL Enregistrer]** ou **[!UICONTROL Enregistrer et terminer]** pour enregistrer les paramètres de session.
