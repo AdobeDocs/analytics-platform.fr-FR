@@ -6,9 +6,10 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 974d8a269be15d3ea6fbbcf96f2ab5457d9c9554
+exl-id: 4f465e71-f1b5-4f38-a1db-645550856849
+source-git-commit: d14163794fd4d31b29bfc6f55622d839b67ab3d7
 workflow-type: tm+mt
-source-wordcount: '1484'
+source-wordcount: '1486'
 ht-degree: 1%
 
 ---
@@ -61,7 +62,7 @@ Comprenez comment une audience spécifique se comporte dans un canal donné (par
 
    * Comparez l’audience à une non-audience (ou à une autre audience) sur des mesures telles que les sessions, le taux de conversion, le chiffre d’affaires par personne.
 
-1. Apportez vos informations aux stratégies d’optimisation des canaux (par exemple, les règles de ciblage, l’optimisation du contenu ou des offres).
+1. Utilisez les informations générées pour affiner les stratégies d’optimisation des canaux (par exemple, les règles de ciblage, le réglage du contenu ou des offres).
 
 #### Considérations relatives à la résolution des identités
 
@@ -142,4 +143,3 @@ Comprenez le comportement des clients qui ont récemment quitté une audience cl
 | Cas d’utilisation | Question commerciale principale | Prise en compte de la résolution d’identité | Organisations à authentification élevée ou à espace de noms unique (événements dont l’ID de personne est déjà inférieur à 1, par exemple connexion /CRM) | Organisations fragmentées / à plusieurs espaces de noms (événements sous ECID + CRM + autres). |
 |---------|----------|---------|---------|---------|
 | Audiences quittées - analyse de l’attrition | _« Qui vient de quitter un public clé ? »_ <p>_« Qu&#39;ont-ils fait à la sortie ? »_</p> | La sortie de l’audience est suivie à l’ID de personne utilisé pour la configuration de la connexion et de l’audience. | Les sorties mesurées sur un identifiant de connexion/CRM stable tendent à refléter un véritable changement de comportement. <p>Lorsqu’une personne laisse une audience sur cet identifiant, cela signifie généralement un changement réel (perte de clientèle, rétrogradation, inactivité).</p><p>Vous pouvez analyser leur comportement récent pour affiner les parcours et reconquérir les offres en toute confiance.</p> | Les sorties ne sont visibles que lorsque les profils et les événements partagent l’identifiant configuré ; elles nécessitent donc une interprétation attentive.<p>Utilisez les cohortes sorties comme un indice ou un signal fort, mais il est recommandé de vérifier avec d’autres points de données avant de prendre des décisions critiques.</p> |
-
