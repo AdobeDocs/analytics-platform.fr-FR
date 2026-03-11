@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: fc1961f3191b80c0351c8935fc331d7605f37f13
+source-git-commit: 6e7776cbaf99d5b2031b0fb3872c331852443b74
 workflow-type: tm+mt
-source-wordcount: '3393'
+source-wordcount: '3419'
 ht-degree: 81%
 
 ---
@@ -431,6 +431,16 @@ Vous pouvez toutefois modifier les pages et les ressources à inclure ou à excl
 
 
 ### Remplacements d’en-têtes
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_header_overrides_boldheader"
+>title="Remplacements d’en-têtes"
+>abstract="**Remplacements d’en-tête**"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_header_overrides_header"
+>title="Remplacements d’en-têtes"
+>abstract="Fonctionnalité avancée permettant de contourner la détection des robots ou le trafic de point de contrôle. Content Analytics inclut vos en-têtes HTTP personnalisés lors de l’appel de vos points d’entrée."
 
 Vous pouvez éventuellement spécifier dans la section **[!UICONTROL Remplacements d’en-tête]** un nom d’en-tête et une valeur d’en-tête secrète.  Cette configuration de remplacement d’en-tête garantit que Content Analytics envoie des en-têtes HTTP personnalisés pour contourner les technologies de détection de robots ou de trafic de point de contrôle que vous avez implémentées.
 
