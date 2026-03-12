@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 6e7776cbaf99d5b2031b0fb3872c331852443b74
+source-git-commit: 359b0364b1de82d6e49c6ba8e7222d459c9825b8
 workflow-type: tm+mt
-source-wordcount: '3419'
+source-wordcount: '3432'
 ht-degree: 81%
 
 ---
@@ -68,7 +68,15 @@ L’assistant de configuration guidé se compose de quatre sections ([Détails]
 >title="Détails"
 >abstract="Ce guide définit les exigences nécessaires à la configuration de l’analyse du contenu. Attribuez un nom à cette configuration."
 
-<!-- markdownlint-enable MD034 -->
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_connection_boldheader"
+>title="Connexion"
+>abstract="**Connexion**"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_connection_header"
+>title="Connexion"
+>abstract="Sélectionnez une connexion existante à partir de Customer Journey Analytics avec laquelle vous souhaitez fusionner vos données Content Analytics."
 
 Chaque configuration nécessite un nom unique. Par exemple : `Example Content Analytics configuration`. Le nom est requis pour enregistrer ou implémenter une configuration.
 
@@ -356,32 +364,32 @@ Dans cette section, vous allez configurer la façon de collecter vos données d�
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_experience_locations_boldheader"
 >title="Collecte de données d’emplacements d’expériences mobiles"
->abstract="**Emplacements d’expérience à inclure/exclure**"
+>abstract="**Emplacements d’expérience à exclure**"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_experience_locations_header"
 >title="Collecte de données d’emplacements d’expériences mobiles"
->abstract="Indiquez quels emplacements d’expérience doivent être **inclus** ou **exclus** lors de la collecte de données pour Content Analytics."
+>abstract="Indiquez quels emplacements d’expérience doivent être **exclus** lors de la collecte de données pour Content Analytics."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_locations_boldheader"
 >title="Collecte de données d’emplacements de ressources mobiles"
->abstract="**Emplacements des ressources à inclure/exclure**"
+>abstract="**Emplacements des ressources à exclure**"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_locations_header"
 >title="Collecte de données d’emplacements de ressources mobiles"
->abstract="Indiquez quels emplacements de ressources doivent être **inclus** ou **exclus** lors de la collecte de données pour Content Analytics."
+>abstract="Indiquez quels emplacements de ressources doivent être **exclus** lors de la collecte de données pour Content Analytics."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_urls_boldheader"
 >title="Collecte de données d’URL de ressources mobiles"
->abstract="**URL des ressources à inclure/exclure**"
+>abstract="**URL des ressources à exclure**"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_urls_header"
 >title="Collecte de données d’URL de ressources mobiles"
->abstract="Indiquez quelles URL de ressource doivent être **incluses** ou **exclues** lors de la collecte de données pour Content Analytics."
+>abstract="Indiquez quelles URL de ressources doivent être **exclues** lors de la collecte de données pour Content Analytics."
 
 
 #### Nouvelle configuration {#new-configuration}
