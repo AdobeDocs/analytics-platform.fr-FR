@@ -5,10 +5,10 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: bc708b34814550b89f6c9916d8bc48850008c1dc
+source-git-commit: c84e18bcaf7687deada7086bfe1a85a4b83f216b
 workflow-type: tm+mt
 source-wordcount: '4015'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -30,7 +30,7 @@ Vous pouvez configurer les préférences suivantes :
 
 ### Préférences générales
 
-Les préférences générales s’appliquent à votre expérience Customer Journey Analytics dans le navigateur. Pour plus d’informations sur l’accès à ces préférences, consultez [Mettre à jour les préférences](#update-preferences).
+Les préférences générales s’appliquent à votre expérience Customer Journey Analytics dans le navigateur. Pour plus d’informations sur l’accès à ces préférences, voir [Modifier les préférences](#edit-preferences).
 
 | Préférence | Options |
 | --- | --- |
@@ -56,7 +56,7 @@ Les préférences générales s’appliquent à votre expérience Customer Jour
 >abstract="Lorsque cette option est activée, une zone de commentaires est disponible dans le rail de droite de chaque projet dans Analysis Workspace."
 
 
-Vous pouvez mettre à jour les préférences de la société qui s’appliquent aux utilisateurs et utilisatrices et aux projets de votre organisation. Pour plus d’informations sur l’accès à ces préférences, consultez [Mettre à jour les préférences](#update-preferences).
+Vous pouvez mettre à jour les préférences de la société qui s’appliquent aux utilisateurs et utilisatrices et aux projets de votre organisation. Pour plus d’informations sur l’accès à ces préférences, voir [Modifier les préférences](#edit-preferences).
 
 | Section | Préférence | Options |
 | --- | --- | --- |
@@ -86,14 +86,14 @@ Vous pouvez mettre à jour les préférences de la société qui s’appliquent 
 >title="Palette séquentielle"
 >abstract="Appliquée à l’analyse guidée des tendances de fréquence (barres empilées). Cette palette a une signification numérique allant du plus clair au plus foncé."
 
-Vous pouvez personnaliser ces préférences pour tous les nouveaux projets Analysis Workspace, les nouveaux panneaux Analysis Workspace et les nouvelles analyses guidées. Pour plus d’informations sur l’accès à ces préférences, consultez [Mettre à jour les préférences](#update-preferences).
+Vous pouvez personnaliser ces préférences pour tous les nouveaux projets Analysis Workspace, les nouveaux panneaux Analysis Workspace et les nouvelles analyses guidées. Pour plus d’informations sur l’accès à ces préférences, voir [Modifier les préférences](#edit-preferences).
 
 Certaines de ces préférences peuvent également être personnalisées pour des projets individuels dans Analysis Workspace, comme décrit dans la section [Vue d’ensemble des projets](/help/analysis-workspace/build-workspace-project/freeform-overview.md).
 
 <!--
 >[!IMPORTANT]
 >
->You can no longer define the number format in the **[!UICONTROL Project & Analyses]** > **[!UICONTROL Data]** section of **[!UICONTROL User preferences]**. The number format is automatically determined by the [default language that is configured](https://experienceleague.adobe.com/fr/docs/core-services/interface/features/browser-language) for the logged in user.
+>You can no longer define the number format in the **[!UICONTROL Project & Analyses]** > **[!UICONTROL Data]** section of **[!UICONTROL User preferences]**. The number format is automatically determined by the [default language that is configured](https://experienceleague.adobe.com/en/docs/core-services/interface/features/browser-language) for the logged in user.
 >
 -->
 
@@ -132,7 +132,7 @@ Certaines de ces préférences peuvent également être personnalisées pour des
 >abstract="Sélectionnez la mesure par défaut à utiliser pour les tableaux à structure libre. Si la vue de données sélectionnée ne contient pas la mesure par défaut sélectionnée, le tableau passe automatiquement à une autre mesure principale."
 
 
-Vous pouvez personnaliser les préférences du tableau à structure libre pour tous les nouveaux projets que vous créez dans Analysis Workspace. Pour plus d’informations sur l’accès à ces préférences, consultez [Préférences de mise à jour](#update-preferences).
+Vous pouvez personnaliser les préférences du tableau à structure libre pour tous les nouveaux projets que vous créez dans Analysis Workspace. Pour plus d’informations sur l’accès à ces préférences, voir [Modifier les préférences](#edit-preferences).
 
 Certaines de ces préférences peuvent également être personnalisées pour des tableaux individuels.
 
@@ -185,7 +185,7 @@ Cliquez sur les titres des sections liées pour plus d’informations et de cont
 >abstract="Sélectionnez le conteneur par défaut à utiliser pour les visualisations de [!UICONTROL zone de travail de parcours]. Si la vue de données sélectionnée ne contient pas le conteneur par défaut sélectionné, la visualisation [!UICONTROL Zone de travail de parcours] passe automatiquement à un autre conteneur principal."
 
 
-Vous pouvez mettre à jour les préférences de visualisation pour tous les nouveaux projets que vous créez dans Analysis Workspace. Pour plus d’informations sur l’accès à ces préférences, consultez [Préférences de mise à jour](#update-preferences).
+Vous pouvez mettre à jour les préférences de visualisation pour tous les nouveaux projets que vous créez dans Analysis Workspace. Pour plus d’informations sur l’accès à ces préférences, voir [Modifier les préférences](#edit-preferences).
 
 Certaines de ces préférences peuvent également être personnalisées pour des visualisations individuelles.
 
