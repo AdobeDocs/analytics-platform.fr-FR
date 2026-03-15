@@ -101,17 +101,17 @@ Pour plus d’informations sur la gestion des emplacements existants, notamment 
 
 1. Sélectionnez [!UICONTROL **Enregistrer**].
 
-1. Vous pouvez désormais exporter des données d’Analysis Workspace vers le compte et l’emplacement que vous avez configurés. Pour plus d’informations sur l’exportation de données vers le cloud, voir [&#x200B; Exporter des données de projet vers le cloud](/help/analysis-workspace/export/export-cloud.md).
+1. Vous pouvez désormais exporter des données d’Analysis Workspace vers le compte et l’emplacement que vous avez configurés. Pour plus d’informations sur l’exportation de données vers le cloud, voir [ Exporter des données de projet vers le cloud](/help/analysis-workspace/export/export-cloud.md).
 
 1. Le moyen le plus simple d’accéder à vos données dans la zone d’atterrissage de données d’AEP consiste à utiliser l’explorateur de stockage Azure de Microsoft. L’Explorateur de stockage est le même outil que celui utilisé dans les instructions pour configurer le compte de zone d’atterrissage de données [AEP](/help/components/exports/cloud-export-accounts.md#aep-data-landing-zone).
 
-   1. Ouvrez l’Explorateur de stockage Microsoft Azure [&#128279;](https://azure.microsoft.com/en-us/products/storage/storage-explorer/).
+   1. Ouvrez l’Explorateur de stockage Microsoft Azure [](https://azure.microsoft.com/en-us/products/storage/storage-explorer/).
 
-   1. Accédez à [!UICONTROL **Comptes de stockage**] > [!UICONTROL **(Conteneurs attachés)**] > [!UICONTROL **Conteneurs Blob**] > **[!UICONTROL cjaexport-_number_]**>*** your_container_name &#x200B;***.
+   1. Accédez à [!UICONTROL **Comptes de stockage**] > [!UICONTROL **(Conteneurs attachés)**] > [!UICONTROL **Conteneurs Blob**] > **[!UICONTROL cjaexport-_number_]**>*** your_container_name ***.
 
       >[!NOTE]
       >
-      >Le nom de dossier **[!UICONTROL cjaexport-_number_]**&#x200B;est le nom par défaut fourni par l’Explorateur de stockage Azure. Si une seule connexion est associée à votre URI SAS (ce qui est normal), le nom de ce dossier est **[!UICONTROL cjaexport-1]**.
+      >Le nom de dossier **[!UICONTROL cjaexport-_number_]**est le nom par défaut fourni par l’Explorateur de stockage Azure. Si une seule connexion est associée à votre URI SAS (ce qui est normal), le nom de ce dossier est **[!UICONTROL cjaexport-1]**.
 
 
       ![Accès aux fichiers dans l’explorateur de stockage Azure](assets/azure-storage-explorer-access.png)
@@ -138,7 +138,7 @@ Pour plus d’informations sur la gestion des emplacements existants, notamment 
 
 1. Sélectionnez [!UICONTROL **Enregistrer**].
 
-1. Vous pouvez désormais exporter des données d’Analysis Workspace vers le compte et l’emplacement que vous avez configurés. Pour plus d’informations sur l’exportation de données vers le cloud, voir [&#x200B; Exporter des données de projet vers le cloud](/help/analysis-workspace/export/export-cloud.md).
+1. Vous pouvez désormais exporter des données d’Analysis Workspace vers le compte et l’emplacement que vous avez configurés. Pour plus d’informations sur l’exportation de données vers le cloud, voir [ Exporter des données de projet vers le cloud](/help/analysis-workspace/export/export-cloud.md).
 
 ### Google Cloud Platform
 
@@ -160,7 +160,7 @@ Pour plus d’informations sur la gestion des emplacements existants, notamment 
 
 1. Sélectionnez [!UICONTROL **Enregistrer**].
 
-1. Vous pouvez désormais exporter des données d’Analysis Workspace vers le compte et l’emplacement que vous avez configurés. Pour plus d’informations sur l’exportation de données vers le cloud, voir [&#x200B; Exporter des données de projet vers le cloud](/help/analysis-workspace/export/export-cloud.md).
+1. Vous pouvez désormais exporter des données d’Analysis Workspace vers le compte et l’emplacement que vous avez configurés. Pour plus d’informations sur l’exportation de données vers le cloud, voir [ Exporter des données de projet vers le cloud](/help/analysis-workspace/export/export-cloud.md).
 
 ### SAS Azure
 
@@ -182,7 +182,7 @@ Pour plus d’informations sur la gestion des emplacements existants, notamment 
 
 1. Sélectionnez [!UICONTROL **Enregistrer**].
 
-1. Vous pouvez désormais exporter des données d’Analysis Workspace vers le compte et l’emplacement que vous avez configurés. Pour plus d’informations sur l’exportation de données vers le cloud, voir [&#x200B; Exporter des données de projet vers le cloud](/help/analysis-workspace/export/export-cloud.md).
+1. Vous pouvez désormais exporter des données d’Analysis Workspace vers le compte et l’emplacement que vous avez configurés. Pour plus d’informations sur l’exportation de données vers le cloud, voir [ Exporter des données de projet vers le cloud](/help/analysis-workspace/export/export-cloud.md).
 
 ### RBAC Azure
 
@@ -205,7 +205,7 @@ Pour plus d’informations sur la gestion des emplacements existants, notamment 
 
 1. Sélectionnez [!UICONTROL **Enregistrer**].
 
-1. Vous pouvez désormais exporter des données d’Analysis Workspace vers le compte et l’emplacement que vous avez configurés. Pour plus d’informations sur l’exportation de données vers le cloud, voir [&#x200B; Exporter des données de projet vers le cloud](/help/analysis-workspace/export/export-cloud.md).
+1. Vous pouvez désormais exporter des données d’Analysis Workspace vers le compte et l’emplacement que vous avez configurés. Pour plus d’informations sur l’exportation de données vers le cloud, voir [ Exporter des données de projet vers le cloud](/help/analysis-workspace/export/export-cloud.md).
 
 ### Snowflake
 
@@ -221,7 +221,7 @@ Pour plus d’informations sur la gestion des emplacements existants, notamment 
    |---------|----------|
    | [!UICONTROL **DB**] | La base de données spécifiée doit être existante. Le rôle que vous avez créé doit disposer de droits pour accéder à cette base de données.<p>Base de données associée au nom de l’étape.</p><p>Vous pouvez accorder des privilèges de ce rôle à la base de données dans Snowflake à l’aide de la commande suivante : `GRANT USAGE ON DATABASE <your_database> TO ROLE <your_role>;`</p> <p>Pour plus d’informations, consultez la page [Base de données, schéma et commandes de partage) de la documentation de Snowflake](https://docs.snowflake.com/en/sql-reference/commands-database).</p> |
    | [!UICONTROL **Schéma**] | Le schéma spécifié doit être un schéma existant. Le rôle que vous avez créé doit disposer de privilèges pour accéder à ce schéma.<p>Il s’agit du schéma associé au nom de l’étape.</p><p>Vous pouvez accorder au rôle que vous avez créé des privilèges sur le schéma dans Snowflake à l’aide de la commande suivante : `GRANT USAGE ON SCHEMA <your_database>.<your_schema> TO ROLE <your_role>;`</p><p>Pour plus d’informations, consultez la page [Base de données, schéma et commandes de partage) de la documentation de Snowflake](https://docs.snowflake.com/en/sql-reference/commands-database).</p> |
-   | [!UICONTROL **Nom de l’étape**] | Nom de l’étape interne dans laquelle les fichiers de données sont stockés dans Snowflake.<p>Assurez-vous que le rôle que vous avez spécifié sur le compte dispose d’un accès en lecture et écriture à ce nom d’étape. (Puisque vous accordez un accès en lecture et écriture, nous vous recommandons d’utiliser une étape utilisée uniquement par Adobe.)</p><p>Vous pouvez accorder un accès en lecture et écriture au nom de l’étape dans Snowflake à l’aide de la commande suivante : `GRANT READ, WRITE ON STAGE <your_database>.<your_schema>.<your_stage_name> TO ROLE <your_role>;`</p> <p>Pour plus d’informations sur l’octroi de privilèges à un rôle, voir [Octroi de privilèges dans la documentation de Snowflake](https://docs.snowflake.com/en/sql-reference/sql/grant-privilege).</p> <p>Pour plus d’informations sur le nom de l’étape, consultez la page [&#x200B; Choix d’une étape interne pour les fichiers locaux dans la documentation de Snowflake](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> |
+   | [!UICONTROL **Nom de l’étape**] | Nom de l’étape interne dans laquelle les fichiers de données sont stockés dans Snowflake.<p>Assurez-vous que le rôle que vous avez spécifié sur le compte dispose d’un accès en lecture et écriture à ce nom d’étape. (Puisque vous accordez un accès en lecture et écriture, nous vous recommandons d’utiliser une étape utilisée uniquement par Adobe.)</p><p>Vous pouvez accorder un accès en lecture et écriture au nom de l’étape dans Snowflake à l’aide de la commande suivante : `GRANT READ, WRITE ON STAGE <your_database>.<your_schema>.<your_stage_name> TO ROLE <your_role>;`</p> <p>Pour plus d’informations sur l’octroi de privilèges à un rôle, voir [Octroi de privilèges dans la documentation de Snowflake](https://docs.snowflake.com/en/sql-reference/sql/grant-privilege).</p> <p>Pour plus d’informations sur le nom de l’étape, consultez la page [ Choix d’une étape interne pour les fichiers locaux dans la documentation de Snowflake](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> |
    | [!UICONTROL **Chemin de l’étape**] | Chemin d’accès à l’emplacement où les fichiers de données sont stockés dans Snowflake. <p>Pour plus d’informations, consultez la page [Choix d’une étape interne pour les fichiers locaux ) de la documentation de Snowflake](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> |
    | [!UICONTROL **Nom et chemin du fichier**] | Indiquez un nom de fichier personnalisé dynamique à utiliser pour les exports automatisés envoyés à cet emplacement. Vous pouvez également faire précéder le nom du fichier d’un chemin d’accès au fichier personnalisé dynamique. <p>Cette option vous permet d’automatiser la création des noms de fichier et le placement des dossiers, de sorte que les noms de fichier soient prévisibles et organisés en dossiers de manière logique. Par exemple, les noms de fichier peuvent être nommés en fonction du jour de leur diffusion, puis placés dans des dossiers qui correspondent à chaque mois.</p><p>Utilisez l’une des variables suivantes dans le nom de fichier et le chemin d’accès pour la rendre dynamique :</p><ul><li>**{yyyy}** : année civile à 4 chiffres (sensible à la casse)</li><li>**{yy}** : année civile à 2 chiffres (sensible à la casse)</li><li>**{MM}** : mois à 2 chiffres (sensible à la casse)</li><li>**{dd}** : jour à 2 chiffres (sensible à la casse)</li><li>**{HH}** : heure à 2 chiffres (sensible à la casse)</li><li>**{mm}** : minutes à 2 chiffres (sensible à la casse)</li><li>**{ss}** : secondes à 2 chiffres (sensible à la casse)</li><li>**{fff}** : nanosecondes à 3 chiffres (sensible à la casse)</li><li>**{instance_id}** : UUID de requête (instance)</li><li>**{export_id}** : UUID de l&#39;export (planning)</li><li>**{idx}** : index démarré à partir de 0 (incrémenté pour chaque fichier)</li><li>**{total}** : nombre total de fichiers pour l&#39;ensemble de la tâche de transfert</li><li>**{completion_millis}** : heure de transfert en millisecondes</li></ul></p><p>Par exemple, si vous spécifiez `${yyyy}/${MM}/${dd}/my-report-${instance_id} -${idx}`, une exportation automatiquement envoyée vers cette destination le 15 janvier 2026 aura le chemin et le nom de fichier suivants : [prefix_folder_name]/2026/01/15/my-report-[UUID]-1.csv</p> |
 
@@ -229,4 +229,4 @@ Pour plus d’informations sur la gestion des emplacements existants, notamment 
 
 1. Sélectionnez [!UICONTROL **Enregistrer**].
 
-1. Vous pouvez désormais exporter des données d’Analysis Workspace vers le compte et l’emplacement que vous avez configurés. Pour plus d’informations sur l’exportation de données vers le cloud, voir [&#x200B; Exporter des données de projet vers le cloud](/help/analysis-workspace/export/export-cloud.md).
+1. Vous pouvez désormais exporter des données d’Analysis Workspace vers le compte et l’emplacement que vous avez configurés. Pour plus d’informations sur l’exportation de données vers le cloud, voir [ Exporter des données de projet vers le cloud](/help/analysis-workspace/export/export-cloud.md).
