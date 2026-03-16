@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
-source-git-commit: 1e0d028db957743416bc7840f5a3682206a3edf3
+source-git-commit: 1ad1698f10dd026b0bd5e67599ef35ab3c552286
 workflow-type: tm+mt
-source-wordcount: '1808'
-ht-degree: 5%
+source-wordcount: '1800'
+ht-degree: 6%
 
 ---
 
@@ -103,7 +103,7 @@ Vous pouvez activer la combinaison d’identités lorsque vous [ajoutez](/help/c
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics"
 >title="Assemblage des mesures"
->abstract="Les mesures d’assemblage sont calculées à l’aide d’un échantillon de données dont la date et l’heure des événements au cours des 7 derniers jours.<br>Cet exemple de jeu de données diffère généralement des exemples de données utilisés dans le tableau **[!UICONTROL Aperçu]**."
+>abstract="Les mesures d’assemblage sont calculées à l’aide d’un exemple de jeu de données avec des horodatages d’événement des 7 derniers jours.<br>Cet exemple de jeu de données diffère généralement des exemples de données utilisés dans le tableau **[!UICONTROL Aperçu]**."
 
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics_gbs_personidcoverage"
@@ -125,7 +125,7 @@ Vous pouvez activer la combinaison d’identités lorsque vous [ajoutez](/help/c
 >id="connection_stitchingmetrics_badids"
 >title="ID incorrects"
 >abstract="Les identifiants incorrects sont des valeurs d’identifiant qui affectent considérablement les données de rapport."
->additional-url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/technotes/badids" text="ID incorrects"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/badids" text="ID incorrects"
 
 
 ### Paramètres des jeux de données
@@ -188,7 +188,7 @@ Outre l’interface standard **[!UICONTROL Aperçu des jeux de données]**, deux
 
 #### Assemblage des mesures
 
-Les **[!UICONTROL mesures d’assemblage]** sont calculées à l’aide d’un échantillon de données dont la date et l’heure des événements au cours des 7 derniers jours.. Cet exemple de jeu de données diffère généralement des exemples de données utilisés dans le tableau **[!UICONTROL Aperçu]**. Les mesures d’assemblage fournissent des détails sur :
+Les **[!UICONTROL mesures d’assemblage]** sont calculées à l’aide d’un échantillon de données avec des horodatages d’événement des 7 derniers jours. Cet exemple de jeu de données diffère généralement des exemples de données utilisés dans le tableau **[!UICONTROL Aperçu]**. Les mesures d’assemblage fournissent des détails sur :
 
 * **[!UICONTROL Couverture de l’ID de personne]** : couverture de l’ID de personne sélectionné utilisé pour l’identification pendant le processus de groupement (en direct et en relecture).
    * Pour obtenir de meilleurs résultats d’assemblage basés sur les champs, un ID de personne (informations utilisateur) doit être envoyé sur au moins un événement pour chaque ID persistant (informations sur l’appareil).
@@ -232,7 +232,7 @@ Une fois que vous avez enregistré une connexion, le processus de groupement pou
 
 >[!CAUTION]
 >
->Pour les jeux de données activés pour le groupement dans l’interface Connexions, le statut de renvoi est immédiatement et incorrectement signalé comme ![Statut vert](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _renvois terminés]**&#x200B;pour le nombre de renvois terminés. Utilisez d’autres méthodes pour vérifier si les données du jeu de données groupé sont renvoyées.
+>Pour les jeux de données activés pour le groupement dans l’interface Connexions, le statut de renvoi est immédiatement et incorrectement signalé comme ![Statut vert](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _renvois terminés]**pour le nombre de renvois terminés. Utilisez d’autres méthodes pour vérifier si les données du jeu de données groupé sont renvoyées.
 >
 
 
