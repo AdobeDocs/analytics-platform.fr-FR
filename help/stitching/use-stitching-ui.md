@@ -125,7 +125,7 @@ Vous pouvez activer la combinaison d’identités lorsque vous [ajoutez](/help/c
 >id="connection_stitchingmetrics_badids"
 >title="ID incorrects"
 >abstract="Les identifiants incorrects sont des valeurs d’identifiant qui affectent considérablement les données de rapport."
->additional-url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/technotes/badids" text="ID incorrects"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/badids" text="ID incorrects"
 
 
 ### Paramètres des jeux de données
@@ -232,7 +232,7 @@ Une fois que vous avez enregistré une connexion, le processus de groupement pou
 
 >[!CAUTION]
 >
->Pour les jeux de données activés pour le groupement dans l’interface Connexions, le statut de renvoi est immédiatement et incorrectement signalé comme ![Statut vert](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _renvois terminés]**&#x200B;pour le nombre de renvois terminés. Utilisez d’autres méthodes pour vérifier si les données du jeu de données groupé sont renvoyées.
+>Pour les jeux de données activés pour le groupement dans l’interface Connexions, le statut de renvoi est immédiatement et incorrectement signalé comme ![Statut vert](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _renvois terminés]**pour le nombre de renvois terminés. Utilisez d’autres méthodes pour vérifier si les données du jeu de données groupé sont renvoyées.
 >
 
 
