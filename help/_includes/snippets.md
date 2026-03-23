@@ -1,8 +1,8 @@
 ---
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 51c9a7aa620f54bec3f0e4ad2d007dd52ecd12f4
 workflow-type: tm+mt
-source-wordcount: '5005'
-ht-degree: 99%
+source-wordcount: '5228'
+ht-degree: 95%
 
 ---
 # Extraits
@@ -64,7 +64,7 @@ Cette vidéo présente la fonctionnalité dans Adobe Analytics. Toutefois, cett
 
 | Balises | Description |
 |---|---|
-| ![Étiquettes](/help/assets/filter-tag.png){width="300"} | La section **[!UICONTROL Balises]** permet de filtrer par balise. <ul><li>Vous pouvez utiliser ![Rechercher](/help/assets/icons/Search.svg) *Rechercher des balises* pour rechercher les balises que vous souhaitez utiliser pour filtrer.</li><li>Vous pouvez sélectionnez plusieurs balises. Les balises disponibles dépendent des sélections effectuées dans d’autres sections du panneau Filtrer.</li><li>Les chiffres indiquent ce qui suit :<ul><li>**(1)** : nombre de balises sélectionnées (si une ou plusieurs balises sont sélectionnées).</li><li>**2︎⃣** : nombre de balises disponibles pour les éléments résultant du filtre actuel.</li><li>7︎⃣ : nombre d’éléments associés à la balise spécifique.</li></ul></li></ul> |
+| ![Balises](/help/assets/filter-tag.png){width="300"} | La section **[!UICONTROL Balises]** permet de filtrer par balise. <ul><li>Vous pouvez utiliser ![Rechercher](/help/assets/icons/Search.svg) *Rechercher des balises* pour rechercher les balises que vous souhaitez utiliser pour filtrer.</li><li>Vous pouvez sélectionnez plusieurs balises. Les balises disponibles dépendent des sélections effectuées dans d’autres sections du panneau Filtrer.</li><li>Les chiffres indiquent ce qui suit :<ul><li>**(1)** : nombre de balises sélectionnées (si une ou plusieurs balises sont sélectionnées).</li><li>**2︎⃣** : nombre de balises disponibles pour les éléments résultant du filtre actuel.</li><li>7︎⃣ : nombre d’éléments associés à la balise spécifique.</li></ul></li></ul> |
 
 
 ## Section Filtre de la vue de données {#dataviewfiltersection}
@@ -294,3 +294,25 @@ Utilisez les informations suivantes pour choisir la visualisation qui répond le
 >
 >Dans l’interface de Customer Journey Analytics, les jeux de données **[!UICONTROL relationnels]** peuvent être libellés comme **[!UICONTROL basés sur un modèle]**.
 >
+
+## Intervalle de recherche en amont du flux de données CJA {#cja-df-lookback}
+
+Étant donné que Customer Journey Analytics utilise l’attribution à la période de rapport pour chaque composant, il n’applique pas le concept de persistance au-delà de son intervalle de recherche en amont. Cette colonne de flux de données Analytics fait référence au comportement au niveau du visiteur qui s’étend à l’ensemble de l’historique du visiteur. Plus l’intervalle de recherche en amont est long pour ce composant dans Customer Journey Analytics, plus il peut correspondre étroitement à la fonctionnalité Adobe Analytics.
+
+## Colonnes de publication du flux de données CJA {#cja-df-post}
+
+Cette colonne de flux de données Analytics contient une version prétraitée et une version post-traitée (un préfixe de `post_`). Les colonnes comportant le préfixe `post_` contiennent la valeur qui est finalement utilisée dans les rapports. Le tableau suivant compare les propriétés de ces colonnes :
+
+| Valeur de colonne prétraitée | Valeur de colonne post-traitée |
+| --- | --- |
+| Tel qu&#39;il a été collecté | Utilisé dans le reporting |
+| Avant les règles de traitement | Règles après traitement |
+| Avant les règles VISTA | Après les règles VISTA |
+| Aucune affectation appliquée | L’affectation s’applique |
+
+La plupart des organisations utilisent uniquement `post_` colonnes lorsqu’elles sont disponibles.
+
+Dans la mesure où Customer Journey Analytics ne comporte pas de concept de pré-traitement et de post-traitement, il est difficile de recréer les deux colonnes dans les flux de données CJA. Si vous souhaitez des approximations de ces colonnes, vous pouvez utiliser la même colonne avec des paramètres d’attribution distincts appliqués :
+
+* **Colonne prétraitée** : aucune attribution
+* **Colonne post-traitée** : appliquez les mêmes paramètres d’attribution et d’expiration que sa variable Analytics dans les paramètres de la vue de données. La plupart des composants utilisent une attribution de « Dernière » et une expiration de « Visite ».
