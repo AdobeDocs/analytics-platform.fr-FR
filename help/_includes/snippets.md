@@ -325,4 +325,4 @@ Cette colonne de flux de données Analytics contient des données qui ne peuvent
 
 ## Agent utilisateur du flux de données CJA {#cja-df-ua}
 
-Vous ne pouvez pas collecter simultanément les informations sur l’agent utilisateur et les informations de recherche de l’appareil. La population de ces dimensions s’exclut mutuellement. Vous devez choisir si vous souhaitez collecter directement l’agent utilisateur ou les informations de recherche d’appareil (en fonction de l’agent utilisateur) lors de la [Configuration d’un flux de données](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#geolocation-device-lookup).
+Vous ne pouvez pas collecter simultanément les informations sur l’agent utilisateur et les informations de recherche de l’appareil. La population de ces dimensions s’exclut mutuellement. Vous devez choisir si vous souhaitez collecter directement l’agent utilisateur ou les informations de recherche d’appareil (en fonction de l’agent utilisateur) lors de la [Configuration d’un flux de données](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/configure#geolocation-device-lookup).
