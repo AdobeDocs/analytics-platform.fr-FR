@@ -19,7 +19,7 @@ Cette référence est conçue pour aider les ingénieurs de données à ajuster 
 
 >[!NOTE]
 >
->Cette référence inclut uniquement les colonnes considérées comme actuelles par Adobe, en fonction de la [référence des colonnes de flux de données Analytics](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference). Si vous utilisez activement une colonne de flux de données Analytics qui ne figure pas dans ce tableau, consultez le document de conception de solution de votre entreprise pour déterminer son meilleur équivalent dans Customer Journey Analytics.
+>Cette référence inclut uniquement les colonnes considérées comme actuelles par Adobe, en fonction de la [référence des colonnes de flux de données Analytics](https://experienceleague.adobe.com/fr/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference). Si vous utilisez activement une colonne de flux de données Analytics qui ne figure pas dans ce tableau, consultez le document de conception de solution de votre entreprise pour déterminer son meilleur équivalent dans Customer Journey Analytics.
 
 +++**`accept_language`**
 
