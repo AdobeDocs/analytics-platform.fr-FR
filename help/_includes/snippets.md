@@ -1,8 +1,8 @@
 ---
-source-git-commit: 51c9a7aa620f54bec3f0e4ad2d007dd52ecd12f4
+source-git-commit: 62b3ad7d3f458eb1edd6906c26a3b8c0c053d64b
 workflow-type: tm+mt
-source-wordcount: '5228'
-ht-degree: 95%
+source-wordcount: '5312'
+ht-degree: 93%
 
 ---
 # Extraits
@@ -301,7 +301,7 @@ Utilisez les informations suivantes pour choisir la visualisation qui répond le
 
 ## Colonnes de publication du flux de données CJA {#cja-df-post}
 
-Cette colonne de flux de données Analytics contient une version prétraitée et une version post-traitée (un préfixe de `post_`). Les colonnes comportant le préfixe `post_` contiennent la valeur qui est finalement utilisée dans les rapports. Le tableau suivant compare les propriétés de ces colonnes :
+Cette colonne de flux de données Analytics contient une version prétraitée et une version post-traitée (un préfixe de `post_`). Les colonnes comportant le préfixe `post_` contiennent la valeur qui est finalement utilisée dans les rapports. La plupart des organisations utilisent uniquement `post_` colonnes lorsqu’elles sont disponibles. Le tableau suivant compare les propriétés de ces colonnes :
 
 | Valeur de colonne prétraitée | Valeur de colonne post-traitée |
 | --- | --- |
@@ -310,9 +310,15 @@ Cette colonne de flux de données Analytics contient une version prétraitée et
 | Avant les règles VISTA | Après les règles VISTA |
 | Aucune affectation appliquée | L’affectation s’applique |
 
-La plupart des organisations utilisent uniquement `post_` colonnes lorsqu’elles sont disponibles.
-
-Dans la mesure où Customer Journey Analytics ne comporte pas de concept de pré-traitement et de post-traitement, il est difficile de recréer les deux colonnes dans les flux de données CJA. Si vous souhaitez des approximations de ces colonnes, vous pouvez utiliser la même colonne avec des paramètres d’attribution distincts appliqués :
+Dans la mesure où Customer Journey Analytics ne comporte pas de concept de pré-traitement et de post-traitement, il est difficile de recréer les deux colonnes dans les flux de données CJA. Si vous souhaitez des approximations de ces colonnes, vous pouvez faire glisser plusieurs fois le même champ XDM dans la colonne dimensions pour créer plusieurs composants avec différents paramètres d’attribution :
 
 * **Colonne prétraitée** : aucune attribution
 * **Colonne post-traitée** : appliquez les mêmes paramètres d’attribution et d’expiration que sa variable Analytics dans les paramètres de la vue de données. La plupart des composants utilisent une attribution de « Dernière » et une expiration de « Visite ».
+
+## Colonnes de recherche de flux de données CJA {#cja-df-lookup}
+
+Cette colonne de flux de données Analytics utilise une table de recherche pour identifier la valeur souhaitée. Dans Customer Journey Analytics, la valeur est fournie directement sans tables de recherche. Assurez-vous que votre workflow prend en charge la valeur finale plutôt qu’une valeur de recherche intermédiaire.
+
+## Colonnes non applicables du flux de données de CJA {#cja-df-na}
+
+Cette colonne de flux de données Analytics contient des données qui ne peuvent pas être traduites en équivalent Customer Journey Analytics en raison de différences d’architecture des données.
