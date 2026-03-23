@@ -20,7 +20,7 @@ Cette référence permet aux ingénieurs de données d’évaluer les colonnes d
 
 >[!NOTE]
 >
->Cette référence inclut uniquement les colonnes considérées comme actuelles par Adobe, en fonction de la [référence des colonnes de flux de données Analytics](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference). Si vous utilisez activement une colonne de flux de données Analytics qui ne figure pas dans ce tableau, consultez le document de conception de solution de votre entreprise pour déterminer son meilleur équivalent dans Customer Journey Analytics.
+>Cette référence inclut uniquement les colonnes considérées comme actuelles par Adobe, en fonction de la [référence des colonnes de flux de données Analytics](https://experienceleague.adobe.com/fr/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference). Si vous utilisez activement une colonne de flux de données Analytics qui ne figure pas dans ce tableau, consultez le document de conception de solution de votre entreprise pour déterminer son meilleur équivalent dans Customer Journey Analytics.
 
 +++**`accept_language`**
 
@@ -360,7 +360,7 @@ Cette colonne correspond probablement à des dizaines de mesures distinctes, sel
 
 {{cja-df-post}}
 
-Si votre schéma utilise le groupe de champs [[!UICONTROL Détails &#x200B;]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details), certaines mesures peuvent directement correspondre aux champs XDM suivants :
+Si votre schéma utilise le groupe de champs [[!UICONTROL Détails &#x200B;]](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/field-groups/event/commerce-details), certaines mesures peuvent directement correspondre aux champs XDM suivants :
 
 * **Passages en caisse** : `xdm.commerce.checkouts.value`
 * **Ajouts au panier** : `xdm.commerce.productListAdds.value`
@@ -373,7 +373,7 @@ Si votre schéma utilise le groupe de champs [[!UICONTROL Détails &#x200B;]](ht
 Certaines mesures peuvent utiliser la sérialisation des événements, ce qui permet à Adobe Analytics de contrôler entièrement la déduplication. Vous pouvez utiliser le paramètre de composant [Déduplication des mesures](/help/data-views/component-settings/metric-deduplication.md) pour atteindre la parité de déduplication.
 
 * Si votre mesure déduplique par visite dans Adobe Analytics, vous pouvez définir la portée de la déduplication sur session dans les paramètres des composants de cette mesure.
-* Si votre mesure se déduplique par identifiant d’événement dans Adobe Analytics, il est probable que l’objet XDM de cette mesure contienne un champ `value` et `id`. Si votre schéma utilise le groupe de champs [[!UICONTROL Détails &#x200B;]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details), ces mesures résident probablement dans ces champs XDM, que vous pouvez définir dans le champ **[!UICONTROL Identifiant de déduplication]** dans les paramètres des composants de la mesure :
+* Si votre mesure se déduplique par identifiant d’événement dans Adobe Analytics, il est probable que l’objet XDM de cette mesure contienne un champ `value` et `id`. Si votre schéma utilise le groupe de champs [[!UICONTROL Détails &#x200B;]](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/field-groups/event/commerce-details), ces mesures résident probablement dans ces champs XDM, que vous pouvez définir dans le champ **[!UICONTROL Identifiant de déduplication]** dans les paramètres des composants de la mesure :
 
    * **Passages en caisse** : `xdm.commerce.checkouts.id`
    * **Ajouts au panier** : `xdm.commerce.productListAdds.id`
