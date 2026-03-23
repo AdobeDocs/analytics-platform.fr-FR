@@ -1,7 +1,7 @@
 ---
-source-git-commit: 62b3ad7d3f458eb1edd6906c26a3b8c0c053d64b
+source-git-commit: b0be8b726c4fab1bf9bb5f9462be84f39bdf184a
 workflow-type: tm+mt
-source-wordcount: '5312'
+source-wordcount: '5360'
 ht-degree: 93%
 
 ---
@@ -322,3 +322,7 @@ Cette colonne de flux de données Analytics utilise une table de recherche pour 
 ## Colonnes non applicables du flux de données de CJA {#cja-df-na}
 
 Cette colonne de flux de données Analytics contient des données qui ne peuvent pas être traduites en équivalent Customer Journey Analytics en raison de différences d’architecture des données.
+
+## Agent utilisateur du flux de données CJA {#cja-df-ua}
+
+Vous ne pouvez pas collecter simultanément les informations sur l’agent utilisateur et les informations de recherche de l’appareil. La population de ces dimensions s’exclut mutuellement. Vous devez choisir si vous souhaitez collecter directement l’agent utilisateur ou les informations de recherche d’appareil (en fonction de l’agent utilisateur) lors de la [Configuration d’un flux de données](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#geolocation-device-lookup).
