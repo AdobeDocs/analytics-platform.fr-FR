@@ -4,10 +4,10 @@ title: Modifier les entrées de composant
 feature: Components
 role: Admin
 exl-id: 2d232811-e34a-4667-819c-cbe2a3e72702
-source-git-commit: f940e5cba11df0ff158093a503213ff1641b1c5d
+source-git-commit: 8e4808f99e0610a450e0a29fb218ae4c7d77052b
 workflow-type: tm+mt
-source-wordcount: '1254'
-ht-degree: 67%
+source-wordcount: '1252'
+ht-degree: 62%
 
 ---
 
@@ -29,7 +29,19 @@ Pour modifier un composant dans le dictionnaire de données :
 
 1. (Facultatif) Dans le champ de recherche, commencez à saisir le nom du composant à modifier.
 
-   Le type de composant peut être identifié à la fois par couleur et par icône. **Les dimensions** ![icône Dimension](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) sont orange, **les segments** ![icône Segment](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) sont bleus, **les périodes** ![icône Période](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) sont violettes et **les mesures** ![icône Mesure](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) sont vertes. L’icône Adobe indique soit un modèle de mesure calculée, soit un modèle de segment. L’icône du calculateur ![icône Calculateur](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) indique une mesure calculée qui a été créée par un administrateur ou une administratrice Analytics de votre entreprise.
+   Le type de composant peut être identifié par couleur et icône.
+
+   * **Les dimensions** icône ![Dimension](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) sont orange
+
+   * **Segments** ![icône de segment](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) sont bleus
+
+   * **périodes** ![icône de période](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) sont violettes
+
+   * **Mesures** ![icône de mesure](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) sont verts
+
+   * L’icône **** l’icône ![Adobe](assets/default-calc-metric-icon.png) indique soit un modèle de mesure calculée, soit un modèle de segment
+
+   * **Icône Calculateur** ![Icône Calculateur](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) indique une mesure calculée qui a été créée par un administrateur ou une administratrice Analytics de votre entreprise
 
 1. (Facultatif) Sélectionnez l’icône **Filtrer** ![icône du filtre du dictionnaire de données](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg), puis sélectionnez l’une des options de filtre suivantes pour filtrer la liste des composants :
 
@@ -46,7 +58,7 @@ Pour modifier un composant dans le dictionnaire de données :
    | **[!UICONTROL Description manquante]** | Afficher uniquement les composants qui n’ont pas encore de description dans le champ de description. Cette option est réservée à l’administration. |
    | **[!UICONTROL Afficher les doublons]** | Afficher uniquement les composants portant le même nom ou la même description qu’un autre composant de la vue de données sélectionnée. Cela inclut les composants que vous créez, ainsi que ceux fournis par Adobe. Les noms ou descriptions doivent correspondre exactement pour apparaître comme des doublons. Cette option est réservée à l’administration. |
    | **[!UICONTROL Aucune donnée récente]** | Afficher uniquement les composants qui n’ont collecté aucune donnée au cours des 90 derniers jours. Cette option est réservée à l’administration. |
-   | **[!UICONTROL Création Adobe]** <!-- I don't see this option--> | Afficher uniquement les composants créés par Adobe. Par exemple, **[!UICONTROL Adobe Target]**. Les composants créés par l’administration ou une autre personne de votre organisation ne s’affichent pas. |
+   | **[!UICONTROL Création Adobe]** <!-- I don't see this option--> | Afficher uniquement les composants créés par Adobe. Par exemple, ****. Les composants créés par l’administration ou une autre personne de votre organisation ne s’affichent pas. |
 
    {style="table-layout:auto"}
 
