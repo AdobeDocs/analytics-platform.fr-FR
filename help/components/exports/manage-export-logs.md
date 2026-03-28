@@ -14,7 +14,7 @@ ht-degree: 7%
 
 # Gérer les journaux d’export
 
-Les journaux d’exportation fournissent des détails sur chaque exportation et sont générés chaque fois que des données Analysis Workspace sont exportées vers le cloud. (Pour plus d’informations sur la manière dont les données peuvent être exportées vers le cloud, voir [ Exporter des rapports Customer Journey Analytics vers le cloud](/help/analysis-workspace/export/export-cloud.md).)
+Les journaux d’exportation fournissent des détails sur chaque exportation et sont générés chaque fois que des données Analysis Workspace sont exportées vers le cloud. (Pour plus d’informations sur la manière dont les données peuvent être exportées vers le cloud, voir [&#x200B; Exporter des rapports Customer Journey Analytics vers le cloud](/help/analysis-workspace/export/export-cloud.md).)
 
 Pour les exportations planifiées, les journaux reflètent les paramètres d’exportation tels qu’ils étaient lorsque le journal a été envoyé. Les journaux ne peuvent pas être supprimés.
 
@@ -152,4 +152,4 @@ Pour configurer des colonnes dans l’onglet [!UICONTROL Journaux] :
 
 ## Afficher les journaux d’audit
 
-Les exportations de table complète sont également suivies dans les journaux d’audit [](/help/privacy/audit-log.md). <!-- Need to see what the Component Type for full-table export will be and add it here. Also, under "Event type captured by audit logs" there would be a new event type called "Full-table export". 4 actions would be "Create, Delete, Edit, Export" and "API_Request"? Also information about the locations. Probably have a different component for the location credentials.-->
+Les exportations de table complète sont également suivies dans les journaux d’audit [&#128279;](/help/privacy/audit-log.md). <!-- Need to see what the Component Type for full-table export will be and add it here. Also, under "Event type captured by audit logs" there would be a new event type called "Full-table export". 4 actions would be "Create, Delete, Edit, Export" and "API_Request"? Also information about the locations. Probably have a different component for the location credentials.-->
