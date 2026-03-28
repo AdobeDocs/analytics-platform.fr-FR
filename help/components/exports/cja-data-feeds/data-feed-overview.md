@@ -5,7 +5,8 @@ title: Flux de données Analytics - Vue d’ensemble
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: b0b86424399ea79deca8f1d522d52354dfaaa8c7
+exl-id: 991a7861-cbde-4d55-935c-d56c8031853e
+source-git-commit: 50b82943d4c59f612240ffc8d83a8a08f09b8331
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 40%
@@ -37,12 +38,14 @@ Les ressources suivantes vous aident à comprendre le workflow de base de l’ob
 * Bonnes pratiques relatives aux flux de données <!--add link--> : bonnes pratiques pour la création et la gestion des flux de données.
 * Créer un flux de données <!--add link--> : détails techniques pour la création d’un flux de données, expliquant plus en détail les champs individuels
 * Gérer les flux de données <!--add link--> : en savoir plus sur la navigation dans l’interface des flux de données
-* Contenu du flux de données <!--add link--> : comprendre ce qui se trouve dans le <!-- Is this still the output users can download from the destination? I aske Jun. --> de fichiers compressé.
+* Contenu du flux de données <!--add link--> : comprendre ce qui se trouve dans le fichier compressé
 * Définitions des colonnes de données <!--add link--> : liste complète de toutes les colonnes disponibles.
+
+<!-- Is this still the output users can download from the destination? I aske Jun. -->
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Navigation dans l’interface du flux de données](https://video.tv.adobe.com/v/3428562?captions=fre_fr&quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Navigation dans l’interface du flux de données](https://video.tv.adobe.com/v/25452?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 
@@ -50,6 +53,6 @@ Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Navigation
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Rechercher votre identifiant de flux de données](https://video.tv.adobe.com/v/3418480?captions=fre_fr&quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Rechercher votre identifiant de flux de données](https://video.tv.adobe.com/v/335747?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]

@@ -4,7 +4,7 @@ title: Filtrer Et Trier
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: 39af20da14a5fb96fe01db31af5fc37b7e4aee16
+source-git-commit: 873247c643b3be4bb561955af84dd4bbb4e1d81f
 workflow-type: tm+mt
 source-wordcount: '1575'
 ht-degree: 47%
@@ -46,14 +46,17 @@ Pour exclure des lignes spécifiques d’un tableau à structure libre :
 
    Maintenez la touche ***Maj*** enfoncée pour sélectionner une plage de lignes ou la touche ***Commande*** (sous Mac) ou la touche ***Ctrl*** (sous Windows) enfoncée pour sélectionner plusieurs lignes.
 
-<!--### Right-click > Delete selected rows
+<!--
+### Right-click > Delete selected rows
 
 Note: this option does not seem to work. AN-338422
 
 1. Select 1 or more rows. 
 1. Right-click and select **[!UICONTROL Delete Selected Rows]**. 
 
-   This action will remove the rows from the table and apply a table filter.-->
+   This action will remove the rows from the table and apply a table filter
+ 
+-->
 
 
 ### Appliquer un filtrage simple ou avancé à un tableau
@@ -159,7 +162,7 @@ Pour trier les données des tableaux en fonction de plusieurs colonnes :
 
 1. Sélectionnez **[!UICONTROL Tri avancé]**.
 
-   ![&#x200B; Boîte de dialogue Tri avancé &#x200B;](assets/sort-advanced-dialog.png)
+   ![ Boîte de dialogue Tri avancé ](assets/sort-advanced-dialog.png)
 
 1. Dans la boîte de dialogue Tri avancé , effectuez l’une des opérations suivantes :
 

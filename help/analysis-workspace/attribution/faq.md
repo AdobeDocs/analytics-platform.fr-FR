@@ -4,7 +4,7 @@ description: Obtenez des réponses aux questions fréquentes sur l’attribution
 feature: Attribution
 role: User, Admin
 exl-id: 8e05957a-f954-4e61-aeed-cd2bd2fe11f8
-source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
+source-git-commit: 873247c643b3be4bb561955af84dd4bbb4e1d81f
 workflow-type: tm+mt
 source-wordcount: '184'
 ht-degree: 2%
@@ -45,7 +45,8 @@ In this example, Entries and Bounce rate would not show data from August 31. The
 +++
 -->
 
-<!-- not relevant anymore due to introduction of separation of container and lookback window 
+<!--
+not relevant anymore due to introduction of separation of container and lookback window 
 +++## When should I use a visit, visitor, or custom attribution lookback?
 
 The choice of attribution lookback depends on your use case. If conversions typically take longer than a single visit, a visitor or custom lookback is recommended. For longer conversion cycles, custom lookback windows are best as they are the only type that can pull in data from prior to the reporting window.
@@ -64,7 +65,7 @@ Attribution is recalculated at report runtime, so there is no difference between
 
 +++## Les modèles d’attribution sont-ils disponibles dans d’autres fonctionnalités Analytics ?
 
-Oui. Les modèles d’attribution sont également disponibles dans le cadre des paramètres des composants pour un composant de mesure dans une vue de données. Voir [&#x200B; Paramètres des composants : attribution](/help/data-views/component-settings/attribution.md). Pour les composants de dimension, vous pouvez utiliser la persistance. La persistance est la possibilité pour une valeur de dimension donnée d’attribuer une mesure au-delà de l’événement sur lequel elle est définie. Elle combine l’attribution et l’expiration. Voir [Paramètres des composants de persistance](/help/data-views/component-settings/persistence.md) pour plus d’informations
+Oui. Les modèles d’attribution sont également disponibles dans le cadre des paramètres des composants pour un composant de mesure dans une vue de données. Voir [ Paramètres des composants : attribution](/help/data-views/component-settings/attribution.md). Pour les composants de dimension, vous pouvez utiliser la persistance. La persistance est la possibilité pour une valeur de dimension donnée d’attribuer une mesure au-delà de l’événement sur lequel elle est définie. Elle combine l’attribution et l’expiration. Voir [Paramètres des composants de persistance](/help/data-views/component-settings/persistence.md) pour plus d’informations
 
 +++
 

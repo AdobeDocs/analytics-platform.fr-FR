@@ -6,7 +6,7 @@ feature: Components
 hide: true
 hidefromtoc: true
 exl-id: d0a9e697-1e48-4cfb-8613-2f932bf5015b
-source-git-commit: 9403a4c6d0e0389de19aa4627d9d952f0c31f1a2
+source-git-commit: b9efb621523f8bbfbb3afe7db4db2e60fcddd34c
 workflow-type: tm+mt
 source-wordcount: '1060'
 ht-degree: 2%
@@ -54,11 +54,11 @@ Les composants sont inclus dans le schéma de vue de données de l’une des man
 
 Les différences de traitement des données entre Adobe Analytics et Customer Journey Analytics affectent les colonnes de flux de données disponibles à l’exportation, comme suit :
 
-* **&#x200B;**&#x200B;: de nombreux champs de flux de données sont exportés sous la forme de deux colonnes distinctes : l’une contenant des données prétraitées et l’autre des données post-traitées. (Les données post-traitées incluent la logique côté serveur, les règles de traitement, les règles VISTA, les règles de persistance des dimensions, etc.)
+* **** : de nombreux champs de flux de données sont exportés sous la forme de deux colonnes distinctes : l’une contenant des données prétraitées et l’autre des données post-traitées. (Les données post-traitées incluent la logique côté serveur, les règles de traitement, les règles VISTA, les règles de persistance des dimensions, etc.)
 
   Comme Adobe Analytics exporte les données de certains champs dans deux colonnes distinctes (une pour les données prétraitées et une pour les données post-traitées), Adobe Analytics contient plus de colonnes de flux de données que Customer Journey Analytics. Gardez cela en tête lors du mappage des champs.
 
-* **&#x200B;**&#x200B;: les champs sont disponibles pour les flux de données après leur création dans la vue de données. En règle générale, les champs des vues de données Customer Journey Analytics incluent uniquement les données post-traitées. Cependant, vous pouvez généralement faire une estimation de la version prétraitée d’Adobe Analytics d’un champ en créant une deuxième version du champ dans la vue de données Customer Journey Analytics et en le configurant pour qu’il expire au moment de l’accès.
+* **** : les champs sont disponibles pour les flux de données après leur création dans la vue de données. En règle générale, les champs des vues de données Customer Journey Analytics incluent uniquement les données post-traitées. Cependant, vous pouvez généralement faire une estimation de la version prétraitée d’Adobe Analytics d’un champ en créant une deuxième version du champ dans la vue de données Customer Journey Analytics et en le configurant pour qu’il expire au moment de l’accès.
 
 ## Colonnes non utilisées
 

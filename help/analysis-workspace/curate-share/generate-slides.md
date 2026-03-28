@@ -5,7 +5,7 @@ title: Génération de présentations à partir de rapports Workspace
 feature: Curate and Share
 role: User
 exl-id: a3f6db1e-0444-4804-98bf-c5c10ba2e7ea
-source-git-commit: d14163794fd4d31b29bfc6f55622d839b67ab3d7
+source-git-commit: b9efb621523f8bbfbb3afe7db4db2e60fcddd34c
 workflow-type: tm+mt
 source-wordcount: '1696'
 ht-degree: 9%
@@ -110,8 +110,10 @@ Les histoires de données se composent d’une diapositive de titre, d’une dia
    | **[!UICONTROL Panneaux et visualisations inclus]** | Choisissez les panneaux et la visualisation à inclure dans la présentation. Vous pouvez inclure jusqu’à 50 visualisations.<p>Si une visualisation est grisée, elle est suivie du texte **[!UICONTROL (non pris en charge)]** ou **[!UICONTROL (données limitées)]**.</p><ul><li>**Non pris en charge** : la plupart des panneaux et des visualisations sont pris en charge. Pour plus d’informations sur les panneaux et les visualisations non pris en charge, voir [Éléments et fonctionnalités de projet non pris en charge](#unsupported-project-elements-and-features).</li><li>**Données limitées** : la visualisation contient un composant dont l’exportation est limitée par une politique de gouvernance des données appliquée par votre organisation. Contactez votre administrateur système pour voir quels composants ne peuvent pas être exportés, puis supprimez les composants restreints avant de générer des diapositives.</li></ul> |
    | **[!UICONTROL Mettre en gras les composants]** | Dans les visualisations, sélectionnez les mesures et dimensions à mettre en évidence dans la présentation. Les composants que vous choisissez sont mieux classés et reçoivent plus de poids lors de la création des thèmes et du récit global de l’histoire des données. <p>Lorsque aucun accent n’est mis, les composants s’affichent dans les présentations comme suit :<ul><li>**Mesures et dimensions :** italique</li><li>**Éléments Dimension :** guillemets</li></ul></p><p>Lorsque l’accent est mis, les composants s’affichent dans les présentations comme suit :</p><ul><li>**Mesures et dimensions :** italiques et gras</li><li>**Éléments Dimension :** gras lorsque la dimension correspondante est mise en évidence<p>Une couleur est également appliquée à l’élément de dimension lorsque celui-ci est mis en surbrillance dans le graphique.</p></li></ul> |
 
-   <!-- add this later: - **[!UICONTROL Panel and visualization descriptions]** - Choose whether to include panel and visualization descriptions in your generated slide presentation. - 
-   - **[!UICONTROL Annotations]** - Choose whether annotations are visible in your generated slide presentation. For more information about annotations, see [Annotations overview](/help/components/annotations/overview.md).  -  -->
+   <!-- 
+   add this later: - **[!UICONTROL Panel and visualization descriptions]** - Choose whether to include panel and visualization descriptions in your generated slide presentation. - 
+   - **[!UICONTROL Annotations]** - Choose whether annotations are visible in your generated slide presentation. For more information about annotations, see [Annotations overview](/help/components/annotations/overview.md).  -  
+   -->
 
 1. (Conditionnel) Sélectionnez **[!UICONTROL Thème par défaut]** si vous souhaitez générer des diapositives en moins d’étapes et si aucun thème d’entreprise n’est requis pour votre présentation de diapositives.
 
@@ -191,7 +193,7 @@ La possibilité de générer des diapositives est activée par défaut pour tous
 
 Les administrateurs de profil de produit dont les organisations disposent d’une licence pour générer des diapositives peuvent désactiver l’accès si nécessaire.
 
-Dans [!UICONTROL Adobe Admin Console], l&#39;autorisation [!UICONTROL Outils de création de rapports] **[!UICONTROL storytelling de données]** détermine l&#39;accès à cette fonctionnalité. Un [administrateur de profil de produit](https://helpx.adobe.com/fr/enterprise/using/manage-product-profiles.html) doit suivre les étapes suivantes dans [!UICONTROL Admin Console] s’il souhaite désactiver l’accès :
+Dans , l&#39;autorisation [!UICONTROL Outils de création de rapports] **[!UICONTROL storytelling de données]** détermine l&#39;accès à cette fonctionnalité. Un [administrateur de profil de produit](https://helpx.adobe.com/fr/enterprise/using/manage-product-profiles.html) doit suivre les étapes suivantes dans [!UICONTROL Admin Console] s’il souhaite désactiver l’accès :
 1. Accédez à **[!UICONTROL Admin Console]** > **[!UICONTROL Produits et services]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Profils de produit]**.
 1. Sélectionnez le titre du profil de produit pour lequel vous souhaitez fournir l’accès à [!UICONTROL Data storytelling].
 1. Dans le profil de produit spécifique, sélectionnez **[!UICONTROL Autorisations]**.

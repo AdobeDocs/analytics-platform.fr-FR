@@ -5,7 +5,7 @@ title: Exporter Des Tables Complètes Vers Le Cloud
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: c4a7884ae05d9290b2974483474ba8326492d014
+source-git-commit: b9efb621523f8bbfbb3afe7db4db2e60fcddd34c
 workflow-type: tm+mt
 source-wordcount: '3234'
 ht-degree: 56%
@@ -35,7 +35,7 @@ Vous pouvez exporter des tableaux complets d’Analysis Workspace vers des four
 
 Lorsque vous exportez des tableaux complets, tenez compte des points suivants :
 
-* Avant d’exporter des données vers le cloud, assurez-vous que vos tables, votre environnement et vos autorisations répondent aux [&#x200B; exigences minimales d’exportation &#x200B;](#minimum-requirements).
+* Avant d’exporter des données vers le cloud, assurez-vous que vos tables, votre environnement et vos autorisations répondent aux [ exigences minimales d’exportation ](#minimum-requirements).
 
 * Certains [fonctionnalités](#unsupported-features) et certains [composants](#unsupported-components) ne sont pas pris en charge lors de l’export de tableaux complets vers le cloud.
 
