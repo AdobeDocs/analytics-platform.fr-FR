@@ -1,13 +1,13 @@
 ---
-description: Découvrez les panneaux et comment les utiliser dans Analysis Workspace.
-title: Vue d’ensemble des panneaux
+description: Découvrez comment utiliser les panneaux dans Analysis Workspace pour organiser vos rapports, filtrer ou ventiler les données et définir la plage de données.
+title: Présentation Des Panneaux Dans Analysis Workspace
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: 211dbd80b21f84ab616569c0d847dcc97f13661c
+source-git-commit: d89c9dd2ab42ada9d0af259c21a77f183384b680
 workflow-type: tm+mt
-source-wordcount: '2205'
-ht-degree: 99%
+source-wordcount: '2682'
+ht-degree: 43%
 
 ---
 
@@ -26,8 +26,8 @@ Les types de panneau suivants sont disponibles dans Analysis Workspace pour [!U
 | [Expérimentation](experimentation.md) | Comparez différentes expériences utilisateur, variantes de marketing ou de messagerie pour déterminer le meilleur moyen d’obtenir un résultat spécifique. |
 | [Tableau à structure libre](freeform-panel.md) | Effectuez des comparaisons et des répartitions illimitées, puis ajoutez des visualisations pour raconter une histoire riche en données. |
 | [Audience moyenne par minute de média](average-minute-audience-panel.md) | Analysez l’audience moyenne par minute pour un élément spécifique de contenu ou au cours d’une période personnalisée. |
-| [Visionneuses simultanées de médias &#x200B;](media-concurrent-viewers.md) | Analysez les visionneuses au fil du temps, avec des informations sur la simultanéité la plus élevée, et sur la capacité à ventiler et à comparer. |
-| [Temps de lecture du média](/help/analysis-workspace/c-panels/media-playback-time-spent.md) | L’analyse du temps de lecture permet de déterminer où se produisent les pics d’audience mais aussi où des abandons ont eu lieu. |
+| [Visionneuses simultanées de médias ](media-concurrent-viewers.md) | Analysez les visionneuses au fil du temps, avec des informations sur la simultanéité la plus élevée, et sur la capacité à ventiler et à comparer. |
+| [Temps de lecture du média](/help/analysis-workspace/c-panels/media-playback-time-spent.md) | Analysez le temps de lecture pour déterminer où se produit le pic d’accès simultanés ou où des abandons ont lieu. |
 | [Élément suivant ou précédent](next-previous.md) | Affiche les pages visitées suivantes ou précédentes. |
 | [Aperçu rapide](quickinsight.md) | Construisez rapidement un tableau à structure libre et une visualisation d’accompagnement afin d’analyser et de mettre en évidence les informations plus rapidement. |
 
@@ -53,7 +53,7 @@ Vous pouvez effectuer les opérations suivantes :
 
   ![Fenêtre contextuelle affichant les visualisations possibles](assets/blank-panel.png)
 
-  | Sélectionnez... | Pour créer un/une... |
+  | Sélectionner... | Pour créer un/une... |
   |---|---|
   | ![Tableau](/help/assets/icons/Table.svg) | [Tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) |
   | ![Ligne](/help/assets/icons/GraphTrend.svg) | [Ligne](/help/analysis-workspace/visualizations/line.md) |
@@ -84,12 +84,12 @@ Vous pouvez gérer un panneau des façons suivantes :
 * Pour réduire un panneau, sélectionnez ![ChevronDown](/help/assets/icons/ChevronDown.svg).
 * Pour afficher un panneau réduit, sélectionnez ![ChevronLeft](/help/assets/icons/ChevronLeft.svg).
 * Pour supprimer un panneau, sélectionnez ![CrossSize400](/help/assets/icons/CrossSize200.svg). Pour annuler, sélectionnez **[!UICONTROL Modifier]** > **[!UICONTROL Annuler]** (**[!UICONTROL *cmd+z *]**|**[!UICONTROL * ctrl+z *]**).
-* Pour déplacer un panneau, faites-le glisser et déposez-le à chaque fois que la mention ![Déplacer](/help/assets/icons/Move.svg) est visible (généralement lorsque vous passez la souris sur l’en-tête).
+* Pour déplacer un panneau, faites-le glisser et déposez-le chaque fois qu’un ![ Déplacer ](/help/assets/icons/Move.svg) est visible (généralement lorsque vous passez la souris sur l’en-tête).
 
 
 ## Vue de données
 
-Chaque panneau est associé à une [vue de données](/help/data-views/data-views.md), identifiée par le ![Données](/help/assets/icons/Data.svg) **[!UICONTROL *nom de la vue de données *]**&#x200B;dans le menu déroulant en haut à droite du panneau.
+Chaque panneau est associé à une [vue de données](/help/data-views/data-views.md). Vous pouvez identifier le ![Data](/help/assets/icons/Data.svg) **[!UICONTROL *nom de la vue de données *]**dans le menu déroulant en haut à droite du panneau.
 
 Lorsque vous créez un projet Workspace vierge, la vue de données par défaut du panneau initial correspond à la dernière vue de données avec laquelle vous avez travaillé dans Customer Journey Analytics.
 
@@ -124,19 +124,19 @@ Vous pouvez également sélectionner un **[!UICONTROL paramètre prédéfini]** 
 1. Vous pouvez également sélectionner **[!UICONTROL Afficher les paramètres avancés]** pour :
 
    * Spécifier une **[!UICONTROL heure de départ]** et une **[!UICONTROL heure de fin]** différentes de celles par défaut, à savoir `12:00 AM` (`0:00`) et `11:59 PM` (`23:59`). Les heures de fin comprennent toujours 59 secondes. Pour une période qui s’étend sur plusieurs jours, l’heure de début s’applique au premier jour de la période et l’heure de fin s’applique au dernier jour de la période. Utilisez **[!UICONTROL (Réinitialiser les heures)]** pour réinitialiser les heures de début et de fin à leurs valeurs par défaut.
-   * **[!UICONTROL Faire correspondre les composants de la période au calendrier du panneau]**. Si cette option est désactivée, les composants de période utilisés dans le panneau se rapportent à l’heure actuelle. Si cette option est activée, les composants de période utilisés dans le panneau correspondent au calendrier de panneau.
+   * **[!UICONTROL Faire correspondre les composants de la période au calendrier du panneau]**. Si cette option est désactivée, les composants de période utilisés dans le panneau sont relatifs à l’heure actuelle. Si cette option est activée, les composants de période utilisés dans le panneau sont relatifs au calendrier du panneau.
    * **[!UICONTROL Utilisation de dates glissantes]**. Si cette option est activée, les périodes prédéfinies telles que **[!UICONTROL 7 derniers jours complets]** se mettent dynamiquement à jour en fonction de l’évolution de la date et de l’heure actuelles. Si cette option est désactivée, ces paramètres prédéfinis ne sont pas mis à jour une fois appliqués.
 
      ![Dates mobiles](assets/calendar-rolling.png)
 
-     Vous pouvez sélectionner le texte entre parenthèses (par exemple : **[!UICONTROL début fixe - dates glissantes chaque jour]**) pour étendre le panneau et spécifier des détails pour **[!UICONTROL Début]** et **[!UICONTROL Fin]**.
+     Vous pouvez sélectionner le texte entre crochets (par exemple, **[!UICONTROL début fixe - roulement quotidien]**) pour étendre le panneau et spécifier des détails pour **[!UICONTROL Début]** et **[!UICONTROL Fin]**.
 
       1. Sélectionnez **[!UICONTROL Début de]**, **[!UICONTROL Fin de]** ou **[!UICONTROL Jour fixe]**.
       1. Lorsque vous avez sélectionné **[!UICONTROL Début de]** ou **[!UICONTROL Fin de]**, vous pouvez créer une expression complète. Par exemple : **[!UICONTROL Fin de]** **[!UICONTROL l’année en cours]** **[!UICONTROL plus]** `1` **[!UICONTROL jour]**. Sélectionnez la valeur appropriée pour chaque partie de l’expression.
          * Sélectionnez une valeur pour la période actuelle. Par exemple, **[!UICONTROL année en cours]**.
          * Sélectionnez une valeur pour le calcul supplémentaire. Par exemple, **[!UICONTROL plus]**.
-         * Lorsque vous avez spécifié un calcul supplémentaire, indiquez une valeur. Par exemple `1`.
-         * Lorsque vous avez spécifié un calcul supplémentaire, sélectionnez la période à utiliser pour le calcul. Par exemple, **[!UICONTROL jour]**.
+         * Lorsque vous avez spécifié un calcul supplémentaire, indiquez une valeur. Par exemple : `1`.
+         * Lorsque vous avez spécifié un calcul supplémentaire, sélectionnez la période à utiliser pour le calcul. Par exemple, **[!UICONTROL day]**.
 
      Sélectionnez **[!UICONTROL Masquer les détails]** pour masquer les détails du calcul des dates glissantes.
 
@@ -146,89 +146,145 @@ Sélectionnez **[!UICONTROL Appliquer à tous les panneaux]** pour appliquer la 
 
 ## Zone de dépôt {#dropzone}
 
-La zone de dépôt des panneaux vous permet d’appliquer des segments et des segments déroulants à tous les tableaux et visualisations d’un panneau. Vous pouvez appliquer un ou plusieurs segments à un panneau.
+La zone de dépôt du panneau, intitulée **[!UICONTROL _Déposer un composant pour filtrer ou répartir les données_]**, vous permet de filtrer ou de répartir les données du panneau. Les segments ou les répartitions que vous utilisez pour filtrer ou répartir les données s’appliquent à tous les tableaux à structure libre et visualisations du panneau.
 
-### Segments
+Les segments et les répartitions vous permettent d’interagir avec les données de manière contrôlée. Par exemple, vous pouvez ajouter un menu déroulant de segment pour les types d’appareils mobiles afin de filtrer le panneau en sélectionnant Tablette, Téléphone mobile ou Bureau.
 
-Faites glisser un segment à partir du panneau de gauche vers la zone de dépôt du panneau pour commencer la segmentation de votre panneau. Répétez cette procédure pour ajouter des segments supplémentaires au panneau. Les segments s’affichent côte à côte en haut du panneau.
+Les segments peuvent également être utilisés pour consolider de nombreux projets en un seul. Par exemple, si vous disposez de différentes versions du même projet auxquelles est appliqué un segment de pays différent, vous pouvez consolider toutes les versions en un seul projet et ajouter un menu déroulant Segment de pays .
 
-![Le panneau de gauche affiche les mesures disponibles et la mesure client ou cliente mobile déposée dans la zone de dépôt du panneau.](assets/segment-filter.png)
+L’illustration ci-dessous présente les différentes variantes des segments (rapides) ou des répartitions qui se produisent lorsque vous ajoutez des composants à la zone de dépôt.
 
-#### Segments rapides
+![Zone de dépôt d’un panneau](assets/panel-drop-zone.png)
 
-Vous pouvez également faire glisser les composants qui ne sont pas des segments directement vers la zone de dépôt pour créer des segments rapides, ce qui vous permet de gagner du temps et vous évite de passer par le [créateur de segments](/help/components/segments/seg-builder.md). Les segments ainsi créés sont automatiquement définis comme des segments de niveau événement. Cette définition peut être rapidement modifiée en sélectionnant l’option ![Modifier](/help/assets/icons/Edit.svg) à côté du nom du segment.
+### Ajouter ou remplacer
+
+Pour ajouter ou remplacer des segments ou des répartitions (rapides) :
+
+1. Sélectionnez un ou plusieurs composants dans le rail Composants . Utilisez ⇧+![Sélectionner](/help/assets/icons/Select.svg) ou ^+![Sélectionner](/help/assets/icons/Select.svg) pour sélectionner plusieurs composants.
+1. Faites glisser la sélection vers la zone de dépôt, intitulée **[!UICONTROL _Déposez un composant pour filtrer ou répartir les données_]** les ❶, ou sur un composant existant déjà placé à proximité de la zone de dépôt.
+1. Vous disposez de deux options lorsque vous voyez ![Ajouter](/help/assets/icons/Add.svg) **[!UICONTROL Ajouter (appuyez sur « Maj » pour créer une liste déroulante)]** ou ![Basculer](/help/assets/icons/Switch.svg) **[!UICONTROL Remplacer (appuyez sur « Maj » pour ajouter à la liste déroulante)]** :
+
+   ![Ajouter ou remplacer dans la zone de dépôt](assets/add-or-replace-to-drop-zone.png)
+
+   * Déposez la sélection pour créer les composants suivants :
+      * [Segment](#segment) pour tous les composants de segment que vous ❷.
+      * [Segment rapide](#quick-segment) pour tous les composants hors segment (périodes, mesures, dimensions, éléments de dimension) que vous ❸.
+   * Déposez la sélection **tout en maintenant la touche enfoncée** ⇧ (maj) pour créer les composants suivants :
+      * Segment statique [menu déroulant](#drop-down-menu) avec des éléments sur lesquels filtrer pour les segments sélectionnés que vous ❹.
+      * Segment statique [menu déroulant](#drop-down-menu) avec des éléments sur lesquels filtrer pour les périodes sélectionnées que vous ❺.
+      * Segment statique [menu déroulant](#drop-down-menu) avec des éléments sur lesquels filtrer les mesures sélectionnées que vous ❻.
+      * Segment statique [menu déroulant](#drop-down-menu) ou répartition [menu déroulant](#drop-down-menu) avec des éléments sur lesquels filtrer ou répartir pour la dimension sélectionnée *éléments* que vous ❼.
+      * Segment dynamique [menu déroulant](#drop-down-menu) ou répartition [menu déroulant](#drop-down-menu) avec des éléments sur lesquels filtrer ou répartir pour les dimensions sélectionnées que vous ❽.
 
 
-Pour en savoir plus, consultez [Segments rapides](/help/components/segments/seg-quick.md).
+### Segment
 
-![Segments ad hoc rendus publics et déposés dans la zone de dépôt](assets/adhoc-segment-filter.png)
+Tout composant de segment que vous déposez est utilisé pour segmenter le panneau. Utilisez des segments pour obtenir des informations segmentées sur les données et les visualisations de votre panneau.
 
-### Segments déroulants
+### Segment rapide
+
+Tout composant non lié au segment (dimension, élément de dimension, mesure, période) déposé définit un [segment rapide](#quick-segment) pour segmenter le panneau. Utilisez n’importe quel composant non-segment pour créer un segment rapide sans utiliser le [créateur de segments](/help/components/segments/seg-builder.md). Un segment ainsi créé est automatiquement défini en tant que segment au niveau de l’événement et intitulé **[!UICONTROL Segment rapide]** par défaut.
+
+Vous pouvez également utiliser ![FilterAdd](/help/assets/icons/FilterAdd.svg) pour créer un segment rapide.
+
+Voir [Segments rapides](/help/components/segments/seg-quick.md) pour savoir comment créer et gérer des segments rapides.
+
+
+### Menu déroulant
+
+Un menu déroulant créé lorsque vous maintenez la touche enfoncée ⇧ permet d’effectuer les opérations suivantes :
+
+* contiennent une liste [statique](#static) ou [dynamique](#dynamic) d’éléments.
+* vous devez [filtrer un panneau](#filter) ou [répartir un panneau](#breakdown).
+
+
+#### Statique
+
+Des menus déroulants statiques sont créés pour les dimensions sélectionnées *éléments* mesures, segments et périodes). Les éléments d’un menu déroulant statique sont basés sur les composants sélectionnés que vous déposez et les éléments ne changent pas lorsque vous ajoutez ou remplacez des composants.
+
+
+#### Dynamique
+
+Les menus déroulants dynamiques sont créés uniquement lorsque vous déposez des composants de dimension. Les menus déroulants dynamiques sont indiqués par ![FilterRefresh](/help/assets/icons/FilterRefresh.svg) dans le libellé.
+
+Les éléments disponibles dans un menu déroulant dynamique sont basés sur :
+
+* les données obtenues à partir des éléments sélectionnés dans d’autres menus déroulants, segments et segments rapides dans la zone de dépôt du panneau ; et
+* les données disponibles dans la plage de rapports du panneau.
+
+Par exemple, vous pouvez ajouter deux menus déroulants dynamiques à l’aide d’une dimension pays et d’une dimension villes . Lorsque vous sélectionnez un pays dans le menu déroulant **[!UICONTROL Pays]**, le menu déroulant **[!UICONTROL Villes]** s’ajuste de manière dynamique pour afficher uniquement les villes du pays sélectionné. Lorsque vous disposez de menus déroulants statiques supplémentaires, les éléments sélectionnés dans ces menus déroulants affectent également les éléments disponibles dans les menus déroulants dynamiques. Les éléments sélectionnés dans les menus déroulants dynamiques n’affectent pas les éléments disponibles dans les menus déroulants statiques.
+
+
+#### Filtrer un panneau
+
+Pour tout composant de mesure, de segment ou de période que vous déposez **tout en maintenant la touche enfoncée** ⇧, un menu déroulant de segment est créé. Ce menu déroulant vous permet de filtrer le panneau en fonction des éléments disponibles pour le composant déposé.
+
+Pour tout composant *dimension* que vous déposez **tout en maintenant la touche enfoncée** ⇧, un menu déroulant de segment est créé. Ce menu déroulant vous permet de filtrer le panneau en fonction des éléments disponibles pour les éléments de dimension déposés (menu déroulant [statique](#static) segment) ou le composant de dimension (menu déroulant [dynamique](#dynamic) segment). Pour configurer explicitement le menu déroulant afin de filtrer à l’aide de segments :
+
+* Sélectionnez ![Répartition](/help/assets/icons/Breakdown.svg) et sélectionnez ![Filtrer](/help/assets/icons/Filter.svg) dans le menu contextuel du ❾ de composant.
+
+
+#### Répartition d’un panneau
+
+Pour tout composant *dimension* que vous déposez **tout en maintenant la touche enfoncée** ⇧, un menu déroulant de segment est créé. Vous pouvez configurer le menu déroulant pour qu’il répartisse à la place. Pour configurer explicitement le menu déroulant afin de le répartir à l’aide de répartitions :
+
+* Sélectionnez ![Filtrer](/help/assets/icons/Filter.svg) et sélectionnez l’option ![Répartition](/help/assets/icons/Breakdown.svg) dans le menu contextuel du ❾ de composant.
+
+>[!IMPORTANT]
+>
+>Les répartitions ne sont disponibles que pour les dimensions et les éléments de dimension, et non pour les segments, les périodes ou les mesures.
+>
+
+
+
+#### Segments ou répartitions
+
+Pensez à ventiler un panneau au lieu de filtrer un panneau (à l’aide de segments) dans les scénarios suivants :
+
+* Si vous utilisez des mesures activées pour l’attribution dans votre panneau, les segments effacent souvent vos mesures activées pour l’attribution. Les répartitions sont appliquées à un autre point de la requête exécutée pour récupérer les données de votre panneau. Par conséquent, les répartitions n’effacent pas ces mesures activées pour les attributs.
+
+  Par exemple, consultez la différence entre la mesure basée sur les attributs **[!UICONTROL Chiffre d’affaires en ligne]** lors de l’utilisation d’un segment **[!UICONTROL Luma : Catégorie de produits]** ![Filtrer](/help/assets/icons/Filter.svg) **[!UICONTROL Femmes]** et d’un segment **[!UICONTROL Luma : Catégorie de produits]**![Breakdown](/help/assets/icons/Breakdown.svg)Women ****.
+
+  ![Mesures basées sur les attributs : filtre ou répartition](assets/attribute-filter-breakdown.png)
+
+* Si vous utilisez une dimension de niveau sous-événement dans un menu déroulant de répartition, les répartitions s’exécutent à ce niveau de sous-événement. Au lieu de cela, les segments dans un menu déroulant segments s’exécutent au niveau de l’événement.
+
+  Par exemple, consultez la différence entre la mesure **[!UICONTROL Chiffre d’affaires en ligne]** lors de l’utilisation d’un segment **[!UICONTROL Luma : Sous-catégorie de produits]** ![Filtre](/help/assets/icons/Filter.svg) **[!UICONTROL Tops]** et d’un segment **[!UICONTROL Luma : Sous-catégorie de produits]** ![Breakdown](/help/assets/icons/Breakdown.svg)Tops ****. La répartition exécute la requête explicitement au niveau du sous-événement, tandis que le segment exécute la requête au niveau de l’événement.
+
+  ![Mesures basées sur un sous-événement : filtre ou répartition](assets/sub-event-filter-breakdown.png)
+
+### Gérer
+
+Vous pouvez gérer les composants de la zone de dépôt comme suit :
+
+| Que faire dans la zone de dépôt du panneau... | Comment faire... |
+|---|---|
+| Pour supprimer un segment ou un segment rapide. | Sélectionnez ![CrossSize300](/help/assets/icons/CrossSize300.svg) dans le composant. |
+| Pour supprimer un élément sélectionné d&#39;un menu déroulant. | Sélectionnez ![CrossSize100](/help/assets/icons/CrossSize100.svg) dans l’élément. |
+| Pour supprimer tous les éléments sélectionnés d&#39;un menu déroulant. | Sélectionnez ![CrossSize200](/help/assets/icons/CrossSize200.svg) dans le menu déroulant. |
+| Pour modifier le libellé d’un composant. | Pointez sur le libellé du composant et sélectionnez ![ Modifier ](/help/assets/icons/Edit.svg). |
+| Pour supprimer le libellé d’un composant. | Pointez sur le libellé du composant et sélectionnez **[!UICONTROL Supprimer le libellé]** dans le menu contextuel du composant. |
+| Pour supprimer le composant de la zone de dépôt. | Sélectionnez **[!UICONTROL Liste déroulante Supprimer]** dans le menu contextuel du composant. |
+| Pour obtenir des informations sur un segment ou un segment rapide. | Pointez sur le composant et sélectionnez ![Infos](/help/assets/icons/Info.svg) pour ouvrir le dictionnaire de données avec des informations sur le composant. |
+| Pour obtenir des informations sur le composant qui définit un menu déroulant. | Pointez dans le menu déroulant et sélectionnez ![InfoOutline](/help/assets/icons/InfoOutline.svg) pour ouvrir le dictionnaire de données avec des informations sur le composant. |
+| Pour modifier un segment rapide. | Passez la souris sur le segment rapide, puis sélectionnez ![ Modifier ](/help/assets/icons/Edit.svg). Voir [Segments rapides](/help/components/segments/seg-quick.md) pour plus d’informations. |
+| Pour exiger une sélection pour un menu déroulant. | Sélectionnez **[!UICONTROL Exiger une sélection]** dans le menu contextuel du composant. |
+| Pour n’autoriser aucun filtre pour un menu déroulant. | Sélectionnez **[!UICONTROL N’autoriser aucun filtre]** dans le menu contextuel du composant. |
+| Pour réinitialiser tous les composants et effacer toutes les sélections pour les menus déroulants | Sélectionnez **[!UICONTROL Réinitialiser tout]**. |
+
+
 
 >[!BEGINSHADEBOX]
 
-Voir ![VidéoConsultée](/help/assets/icons/VideoCheckedOut.svg) [Segments déroulants](https://experienceleague.adobe.com/fr/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Utilisation de filtres dans Analysis Workspace](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 
 >[!ENDSHADEBOX]
 
-
-#### Segments déroulants statiques
-
-Les segments déroulants statiques vous permettent d’interagir avec les données de manière contrôlée. Par exemple, vous pouvez ajouter un segment de menu déroulant pour les types d’appareil mobile afin de segmenter le panneau par tablette, téléphone mobile ou poste de travail.
-
-Les segments déroulants statiques peuvent également être utilisés pour consolider plusieurs projets en un seul. Par exemple, si vous avez plusieurs versions d’un même projet avec des segments Pays différents, vous pouvez les fusionner en un seul projet et ajouter un segment de menu déroulant Pays.
-
-![Segments déroulants statiques affichant le segment Canal de marché « Direct » en surbrillance.](assets/dropdown-filter-intro.png)
-
-##### Créer des segments déroulants statiques
-
-* Pour les segments déroulants qui utilisent des éléments de dimension, sélectionnez une dimension dans le panneau de gauche et faites-la glisser vers la zone de dépôt du panneau en maintenant la touche ⇧ (*Maj*) enfoncée. Cette action crée un segment déroulant avec tous les éléments de dimension associés à cette dimension.
-
-  Ou, si vous souhaitez que le segment déroulant comprenne uniquement des éléments de dimension spécifiques associés à une dimension, cliquez sur l’icône de flèche vers la droite à côté de la dimension souhaitée dans le panneau de gauche. Cette action affiche tous les éléments de dimension disponibles. Sélectionnez plusieurs éléments de dimension dans cette liste à l’aide de ⇧+![Sélectionner](/help/assets/icons/Select.svg) (*Maj* + *Sélectionner*) ou ^+![Sélectionner](/help/assets/icons/Select.svg) (*Ctrl* + *Sélectionner*), puis déposez-les dans la zone de dépôt du panneau **tout en maintenant la touche** ⇧ enfoncée.
-
-* Pour les segments déroulants qui utilisent un seul type de composant (par exemple, uniquement des dimensions, des segments ou des mesures), sélectionnez plusieurs éléments du même type dans le panneau de gauche à l’aide de ⇧+![Sélectionner](/help/assets/icons/Select.svg) ou ^+![Sélectionner](/help/assets/icons/Select.svg). Déposez ensuite les éléments dans la zone de dépôt du panneau **tout en maintenant la touche** ⇧ enfoncée.
-
-  Un seul segment déroulant est créé avec les composants que vous avez sélectionnés.
-
-* Pour les segments déroulants utilisant un mélange de types de composants (par exemple, 2 mesures et 3 segments), sélectionnez plusieurs composants à l’aide de ⇧+![Sélectionner](/help/assets/icons/Select.svg) ou ^+![Sélectionner](/help/assets/icons/Select.svg). Déposez la sélection dans la zone de dépôt du panneau **tout en maintenant la touche** ⇧ enfoncée. Dans ce contexte, tous les types de composants sont traités comme des segments déroulants distincts. Par exemple, si vous incluez à la fois des mesures et des éléments de dimension dans votre sélection, deux segments déroulants distincts sont créés : un segment déroulant incluant des éléments de dimension et un autre incluant des mesures.
-
-Un segment déroulant fournit les options de menu contextuel suivantes :
-
-* **[!UICONTROL Supprimer le segment déroulant]** : supprime le segment déroulant du panneau.
-* **[!UICONTROL Supprimer le libellé]** : supprime le texte affiché au-dessus d’un segment déroulant. Pour modifier le libellé, pointez dessus et sélectionnez ![Modifier le libellé du segment déroulant](/help/assets/icons/Edit.svg).
-* **[!UICONTROL Ajouter un libellé]** : lorsque vous ajoutez un segment déroulant à un projet, un libellé est automatiquement défini sur le nom du composant. Si vous supprimez le libellé, vous pouvez l’ajouter à nouveau avec cette option.
-* **[!UICONTROL Exiger une sélection]** : nécessite qu’un segment soit défini sur le panneau.
-
-##### Utiliser des segments déroulants statiques
-
-Pour segmenter le panneau, les utilisateurs et les utilisatrices peuvent utiliser le menu de segments déroulants de l’une des façons suivantes :
-
-* Appliquez un seul segment au panneau en sélectionnant le segment dans le segment déroulant.
-
-* Appliquez plusieurs segments au panneau en sélectionnant plusieurs segments dans le segment déroulant. Le panneau est segmenté pour inclure l’un des segments sélectionnés.
-
-
-#### Segments déroulants dynamiques
-
-Les segments déroulants dynamiques vous permettent de déterminer les valeurs disponibles en fonction des données dans la plage de rapports du panneau et des valeurs dans d’autres segments déroulants. Vous pouvez par exemple créer deux listes déroulantes dynamiques à l’aide d’une dimension Pays et d’une dimension Villes. Lorsque vous sélectionnez un pays dans le menu déroulant **[!UICONTROL Pays]**, le menu déroulant **[!UICONTROL Villes]** s’adapte de manière dynamique pour n’afficher que les villes de ce pays.
-
-Ce même concept s’applique à toutes les dimensions. Seuls les éléments de dimension qui apparaissent dans la période du panneau et les segments sélectionnés sont visibles. Les éléments de dimension sélectionnés dans les segments déroulants statiques affectent les valeurs disponibles dans les segments déroulants dynamiques. Cependant, l’inverse n’est pas vrai : les éléments de dimension sélectionnés dans les segments déroulants dynamiques n’affectent pas les valeurs disponibles dans les segments déroulants statiques.
-
-La sélection manuelle d’éléments de dimension est possible si vous prévoyez qu’un élément de dimension donné sera collecté ultérieurement. Vous pouvez également effacer un segment déroulant dynamique afin qu’il ne contienne aucune valeur, permettant ainsi à d’autres segments déroulants dynamiques de contenir plus de valeurs. Sélectionnez **[!UICONTROL Réinitialiser tous]** pour effacer la sélection de tous les segments déroulants de ce panneau.
-
-Pour créer un segment déroulant dynamique, procédez comme suit :
-
-* Glissez-déposez une seule dimension dans la zone de dépôt du panneau **tout en maintenant la touche** ⇧ enfoncée.
-
-Notez que les segments déroulants dynamiques ne sont pas disponibles pour les mesures, les segments ou les périodes.
-
-Un segment déroulant dynamique permet d’obtenir les mêmes options de menu contextuel que les segments déroulants statiques.
-
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segments déroulants dynamiques](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/tips-and-tricks/dynamic-drop-downs){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Filtres déroulants dynamiques](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/tips-and-tricks/dynamic-drop-downs){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 
