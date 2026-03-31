@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Audiences
 role: Admin
 exl-id: 1e962f52-6b56-4671-afea-d58dae67e8a8
-source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
+source-git-commit: ac86664e0136563d904021c72347fb544cda4a6d
 workflow-type: tm+mt
-source-wordcount: '728'
-ht-degree: 3%
+source-wordcount: '749'
+ht-degree: 4%
 
 ---
 
@@ -39,7 +39,7 @@ Le diagramme suivant et le tableau associé présentent une représentation de h
 | 8 | Nouvelles dimensions d’audience | Nouvelles dimensions d’audience<!--and metrics?--> qui représentent les audiences Experience Platform incluses dans le jeu de données de profil que vous avez sélectionné et qui sont disponibles pour la création de rapports dans Analysis Workspace. Ces dimensions sont automatiquement créées. |
 | 9 | Vues des données | Vues de données sélectionnées associées à votre connexion. Il s’agit des vues de données que vous souhaitez utiliser lors de l’analyse des données d’audience Experience Platform dans Analysis Workspace. Ces vues de données sont automatiquement configurées avec les données d’audience Experience Platform pour la création de rapports. |
 
-## Configuration de l’analyse de l’audience
+## Configurer l’analyse de l’audience
 
 Lorsque vous configurez l’analyse de l’audience, vous sélectionnez le sandbox et la politique de fusion associés aux audiences Experience Platform que vous souhaitez analyser. Customer Journey Analytics crée un jeu de données de recherche, puis ajoute automatiquement le jeu de données de recherche et le jeu de données de profil à la connexion que vous choisissez.
 
@@ -78,6 +78,10 @@ Les rôles Customer Journey Analytics suivants et les autorisations Experience P
 | [Créer des configurations d’analyse d’audience](/help/connections/audience-analysis/audience-analysis-configure.md) | Administrateur système | <ul><li>Jeux de données : autorisations de lecture</li><li>Schémas : lecture, écriture</li><li>Espaces de noms d’identité : lecture</li></ul> |
 | [Affichage des dimensions d’analyse d’audience dans la vue de données](/help/connections/audience-analysis/audience-analysis-configure.md#view-audience-dimensions-in-the-data-view) | Administrateur de profil de produit pour le profil de produit auquel la vue de données est affectée <p>Pour plus d’informations, voir [Contrôle d’accès](/help/technotes/access-control.md).</p> | S.O. |
 | Utilisation des dimensions d’analyse d’audience dans Analysis Workspace | Accès à une vue de données dans laquelle les dimensions d’analyse d’audience ont été ajoutées | S.O. |
+
+## Cas d’utilisation de l’analyse de l’audience
+
+Pour obtenir des exemples de cas d’utilisation qui mettent en évidence la valeur fournie par Audience Analysis, voir [Cas d’utilisation d’Audience Analysis](/help/connections/audience-analysis/audience-analysis-use-cases.md).
 
 ## Limites de l’analyse de l’audience
 
