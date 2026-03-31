@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
-source-git-commit: 1ad1698f10dd026b0bd5e67599ef35ab3c552286
+source-git-commit: 3524a7f62fa509c477e60d4d586ed2de52191b73
 workflow-type: tm+mt
-source-wordcount: '1800'
-ht-degree: 6%
+source-wordcount: '1727'
+ht-degree: 4%
 
 ---
 
@@ -58,7 +58,7 @@ Si vous remplissez les conditions préalables, vous pouvez effectuer des contrô
 
 
    * **ID de personne**
-      * Pour le groupement basé sur les graphiques, assurez-vous que le graphique d’identités contient des fragments qui lient les valeurs d’identifiant de l’espace de noms d’identifiant persistant et de l’espace de noms d’identifiant de personne de votre choix. Vous pouvez exécuter un test en accédant à la visionneuse de graphiques d’identités [d’Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} et interroger le graphique à l’aide d’exemples de valeurs d’ID persistantes. Vérifiez si ces valeurs d’ID persistantes sont liées aux valeurs d’ID de personne dans le graphique.
+      * Pour le groupement basé sur les graphiques, assurez-vous que le graphique d’identités contient des fragments qui lient les valeurs d’identifiant de l’espace de noms d’identifiant persistant et de l’espace de noms d’identifiant de personne de votre choix. Vous pouvez exécuter un test en accédant à la visionneuse de graphiques d’identités [d’](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} et interroger le graphique à l’aide d’exemples de valeurs d’ID persistantes. Vérifiez si ces valeurs d’ID persistantes sont liées aux valeurs d’ID de personne dans le graphique.
       * Pour le groupement basé sur les champs, interrogez 7 jours de données lorsque le champ de votre ID de personne n’est pas nul et divisez par une interrogation de 7 jours de données pour tous les événements de votre jeu de données. Ce pourcentage devrait idéalement être supérieur à 5 %.
 
         Exemple de requête à utiliser pour la vérification :
@@ -125,7 +125,7 @@ Vous pouvez activer la combinaison d’identités lorsque vous [ajoutez](/help/c
 >id="connection_stitchingmetrics_badids"
 >title="ID incorrects"
 >abstract="Les identifiants incorrects sont des valeurs d’identifiant qui affectent considérablement les données de rapport."
->additional-url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/technotes/badids" text="ID incorrects"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/badids" text="ID incorrects"
 
 
 ### Paramètres des jeux de données
@@ -172,11 +172,6 @@ Pour activer le groupement, dans la section Jeu de données d’événement **[!
 
 
 ### Aperçu des jeux de données
-
->[!AVAILABILITY]
->
->L’interface améliorée **[!UICONTROL Aperçu du jeu de données]** (y compris les **[!UICONTROL Mesures d’assemblage]** et **[!UICONTROL ID incorrects]**) décrite dans cette section se trouve dans la phase de test limité de la publication et peut ne pas encore être disponible dans votre environnement. S’il n’est pas disponible, l’aperçu du jeu de données s’affiche dans l’interface **[!UICONTROL Paramètres du jeu de données]**. Cette note sera supprimée lorsque la fonctionnalité sera disponible. Pour plus d’informations sur le processus de mise à jour de Customer Journey Analytics, consultez [Mise à jour des fonctionnalités de Customer Journey Analytics](/help/release-notes/releases.md).
->
 
 Outre l’interface standard **[!UICONTROL Aperçu des jeux de données]**, deux panneaux d’informations supplémentaires sont disponibles lors de l’[ajout](/help/connections/create-connection.md#add-datasets) ou de la [modification](/help/connections/create-connection.md#edit-a-dataset) de jeux de données dans une connexion basée sur une personne.
 
@@ -232,7 +227,7 @@ Une fois que vous avez enregistré une connexion, le processus de groupement pou
 
 >[!CAUTION]
 >
->Pour les jeux de données activés pour le groupement dans l’interface Connexions, le statut de renvoi est immédiatement et incorrectement signalé comme ![Statut vert](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _renvois terminés]**&#x200B;pour le nombre de renvois terminés. Utilisez d’autres méthodes pour vérifier si les données du jeu de données groupé sont renvoyées.
+>Pour les jeux de données activés pour le groupement dans l’interface Connexions, le statut de renvoi est immédiatement et incorrectement signalé comme ![Statut vert](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _renvois terminés]**pour le nombre de renvois terminés. Utilisez d’autres méthodes pour vérifier si les données du jeu de données groupé sont renvoyées.
 >
 
 
