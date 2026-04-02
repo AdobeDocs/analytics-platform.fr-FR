@@ -4,10 +4,10 @@ description: Page de destination de Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: 3afb60a60b7fd1acb414244dffdb6a6493792f9c
+source-git-commit: efdb05a28813b774ae276de4d9c59656e78618ba
 workflow-type: tm+mt
-source-wordcount: '628'
-ht-degree: 79%
+source-wordcount: '701'
+ht-degree: 71%
 
 ---
 
@@ -22,6 +22,18 @@ Customer Journey Analytics vous permet de contrôler la manière dont vous con
 Découvrez les améliorations les plus récentes apportées au produit et à la documentation de Customer Journey Analytics. Pour obtenir une liste complète des fonctionnalités, des améliorations et des correctifs, consultez les [notes de mise à jour](../release-notes/latest.md) détaillées. Accédez à la [page des mises à jour de la documentation](../release-notes/doc-changes.md) pour connaître les dernières modifications.
 
 >[!BEGINTABS]
+
+>[!TAB Répartition des panneaux]
+
+Vous pouvez désormais répartir un panneau dans Analysis Workspace. Il existe des scénarios dans lesquels une répartition des données et des visualisations dans un panneau est préférable au-dessus de l’application de segments à un panneau.
+
+[![Image](assets/learn-more-button.svg)](/help/analysis-workspace/c-panels/panels.md#break-down-a-panel)
+
+>[!TAB Plusieurs colonnes de dimension]
+
+Vous pouvez inclure jusqu’à 5 colonnes de dimension dans un tableau à structure libre, ce qui vous permet d’afficher plusieurs éléments de dimension côte à côte. Chaque ligne d’éléments de dimension se comporte comme un seul élément de dimension concaténé.
+
+[![Image](assets/learn-more-button.svg)](/help/analysis-workspace/visualizations/freeform-table/freeform-table-multidimensions.md)
 
 >[!TAB Assemblage dans les connexions]
 
@@ -89,7 +101,7 @@ Commencez par lire le contenu des liens ci-dessous pour vous familiariser avec l
     </td>
     <td>
     <a href="/help/content-analytics/content-analytics.md"><img src="./assets/content-analytics.png"></a>
-    <div><strong>Content Analytics</strong><br/>Comprenez comment le contenu, en regard du comportement, affecte les indicateurs de performances clés. Obtenez des informations plus précises sur les données de parcours des clients.</div>
+    <div><strong></strong><br/>Comprenez comment le contenu, en regard du comportement, affecte les indicateurs de performances clés. Obtenez des informations plus précises sur les données de parcours des clients.</div>
     </td>
   </tr>
   <tr style="border: 0;">
@@ -142,7 +154,7 @@ Comprenez les différences entre Customer Journey Analytics et Adobe Analytic
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td><strong>Customer Journey Analytics</strong><br/>
-<a href="https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/overview" target="_blank">Tutoriels</a> - <a href="https://helpx.adobe.com/fr/legal/product-descriptions/customer-journey-analytics.html?lang=fr" target="_blank">Description du produit Customer Journey Analytics</a> - <a href="https://helpx.adobe.com/fr/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html?lang=fr" target="_blank">Description du produit Adobe Analytics (module complémentaire Customer Journey Analytics)</a> - <a href="https://helpx.adobe.com/fr/legal/product-descriptions/customer-journey-analytics-b2b.html?lang=fr" target="_blank">Description du produit Customer Journey Analytics B2B Edition</a> - <a href="https://developer.adobe.com/cja-apis/docs/" target="_blank">API Customer Journey Analytics</a> - <a href="/help/ai-assistant.md">Assistant IA</a>
+<a href="https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/overview" target="_blank">Tutoriels</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html?lang=fr" target="_blank">Description du produit Customer Journey Analytics</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html?lang=fr" target="_blank">Description du produit Adobe Analytics (module complémentaire Customer Journey Analytics)</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics-b2b.html?lang=fr" target="_blank">Description du produit Customer Journey Analytics B2B Edition</a> - <a href="https://developer.adobe.com/cja-apis/docs/" target="_blank">API Customer Journey Analytics</a> - <a href="/help/ai-assistant.md">Assistant IA</a>
 </td>
 <td><strong>Ingestion des données</strong><br/><a href="/help/data-ingestion/data-ingestion.md">Vue d’ensemble</a> - <a href="/help/data-ingestion/analytics.md">Analytics</a> - <a href="/help/data-ingestion/aepwebsdk.md">SDK Web</a> - <a href="/help/data-ingestion/aepmobilesdk.md">SDK Mobile</a> - <a href="/help/data-ingestion/batch.md">Lot</a> - <a href="/help/data-ingestion/streaming.md">Streaming</a> - <a href="/help/data-ingestion/sources.md">Sources</a> - <a href="/help/data-ingestion/serverapi.md">API du serveur</a>
 </td>
