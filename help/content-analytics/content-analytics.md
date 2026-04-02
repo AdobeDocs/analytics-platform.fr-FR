@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
-source-git-commit: 58254cab90d907ad9675c30dfc1b835910214b3a
+source-git-commit: b85f6cd32fc5e097dc2ec5604fca18f50bfcf288
 workflow-type: tm+mt
-source-wordcount: '854'
-ht-degree: 96%
+source-wordcount: '861'
+ht-degree: 99%
 
 ---
 
@@ -41,7 +41,7 @@ Content Analytics utilise les termes clés suivants :
 
 ## Fonctionnement
 
-Content Analytics utilise les données d’affichage d’images web dans les jeux de données d’événement d’Experience Platform pour [collecter des données d’événement de contenu](config/datacollection.md). Ces événements d’expérience de contenu nécessitent que les données soient collectées avec Experience Platform Edge Network (Web SDK, API du serveur). Les données comportementales peuvent être collectées avec Web SDK ou le connecteur Source Analytics.
+Content Analytics utilise les données d’affichage d’images web dans les jeux de données d’événement d’Experience Platform pour [collecter des données d’événement de contenu](config/datacollection.md). Ces événements d’expérience de contenu nécessitent que les données soient collectées avec Experience Platform Edge Network (SDK Web, API du serveur). Les données comportementales peuvent être collectées avec le SDK Web ou le connecteur Source d’Analytics.
 
 ![Content Analytics - Fonctionnement](assets/aca-overview.gif)
 
@@ -63,11 +63,16 @@ Content Analytics utilise les données d’affichage d’images web dans les jeu
 >Si vous disposez d’une licence pour le module complémentaire Privacy and Security Shield, sachez que les expériences et les ressources (toutes les données générées à partir de celles-ci), dans le cadre de Content Analytics, ne sont pas couvertes par l’étiquetage DULE ou les clés gérées par les clientes et les clients. En outre, Content Analytics n’est pas un service conforme à la loi HIPAA.
 >
 
+>[!IMPORTANT]
+>
+>Content Analytics prend uniquement en charge la fonctionnalité en anglais.
+>
+
 
 >[!MORELIKETHIS]
 >
 >[Création de rapports Content Analytics](report/report.md)
->&#x200B;>[Configurer Content Analytics](config/configuration.md)
->&#x200B;>[Calcul des rebonds et du taux de rebond dans Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446?profile.language=fr#M454)
+>[Configurer Content Analytics](config/configuration.md)
+>[Calcul des rebonds et du taux de rebond dans Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446#M454)
 >
 
