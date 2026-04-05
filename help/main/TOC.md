@@ -1,17 +1,10 @@
 ---
-git-repo: https://github.com/AdobeDocs/analytics-platform.fr-FR
-cloud: Experience Cloud
-product: adobe analytics
-sub-product: customer journey
-solution: Customer Journey Analytics
-type: Documentation
-index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: ee7989a36c9d25468dee5b1b2902ed2757e3a4b7
+source-git-commit: bac8472ed61d2c7421fb43957c22d18edaac67ec
 workflow-type: tm+mt
-source-wordcount: '1390'
+source-wordcount: '1389'
 ht-degree: 95%
 
 ---

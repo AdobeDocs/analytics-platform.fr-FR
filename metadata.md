@@ -1,20 +1,25 @@
 ---
 cloud: Experience Cloud
+solution: Customer Journey Analytics
+type: Documentation
 git-repo: https://github.com/AdobeDocs/analytics-platform.fr-FR
 description: Ce fichier comprend des métadonnées au niveau du référentiel qui sont transmises aux fichiers TOC.md du guide de l’utilisateur dans le référentiel.
 feature-set: Customer Journey Analytics
+landing-page-name: customer-journey-analytics
+landing-page-breadcrumb-title: Customer Journey Analytics
 role: User, Admin
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+index: true
+source-git-commit: b718ec4452a8ea394cb3d0969f49b18a667dcf3a
 workflow-type: tm+mt
-source-wordcount: '127'
-ht-degree: 84%
+source-wordcount: '125'
+ht-degree: 86%
 
 ---
 
 
-# Métadonnées pour une utilisation interne
+# Métadonnées à usage interne
 
-Le fichier metadata.md comprend des métadonnées de niveau référentiel qui sont transmises aux fichiers TOC.md du guide de l’utilisateur dans le référentiel. Si vous souhaitez modifier le contenu du fichier metadata.md pour un guide de l’utilisateur, faites-le dans le fichier TOC.md.
+Le fichier metadata.md comprend des métadonnées au niveau du référentiel qui sont transmises aux fichiers TOC.md du guide de l’utilisateur dans le référentiel. Si vous souhaitez modifier du contenu metadata.md pour n’importe quel guide de l’utilisateur, effectuez vos modifications dans n’importe quel fichier TOC.md.
 
 | métadonnées | utilisation |
 |--- |--- |
