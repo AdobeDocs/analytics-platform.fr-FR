@@ -3,10 +3,10 @@ title: Notes de mise à jour actuelles de Customer Journey Analytics
 description: Afficher les dernières notes de mise à jour de Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 701279f92877ee186160f901f0d4df74fd42f547
+source-git-commit: 7fc7475001505749cf59aa82a62e5abb7e81ea97
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 36%
+source-wordcount: '594'
+ht-degree: 41%
 
 ---
 
@@ -20,8 +20,8 @@ Ces notes de mise à jour couvrent la période de publication d’avril 2026. Le
 
 | Fonctionnalité et description | [Le déploiement commence](releases.md) | [Disponibilité générale](releases.md) |
 | -----------|-----------|-----------|
-| **Prise en charge de l’italien**<br/> Les paramètres régionaux italiens (it-IT) sont désormais pris en charge dans Analysis Workspace dans Customer Journey Analytics. <p>Customer Journey Analytics prend en charge toutes les langues prises en charge dans l’interface utilisateur d’Experience Platform, comme décrit dans la section [Prise en charge des navigateurs et des langues pour l’interface utilisateur d’Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/landing/platform-ui/browser-language-support#language-support).</p><p>Vous pouvez [modifier votre langue par défaut](https://experienceleague.adobe.com/fr/docs/experience-platform/landing/platform-ui/browser-language-support#change-default-language) dans Experience Platform.</p> | | jeudi 8 avril 2026 |
-| **Validation des données dans l’agent d’ingénierie Adobe** <br/>De nouvelles compétences en validation des données sont disponibles dans Data Engineering Agent. Ces compétences aident les équipes à évaluer rapidement la qualité des données directement dans Adobe Experience Platform, avant que les données ne soient analysées dans Customer Journey Analytics. <p>Les compétences de validation des données permettent une validation à la demande, au niveau du champ et du jeu de données, associant des résumés statistiques à la détection intelligente des valeurs non valides ou anormales. </p><p>L’utilisation des compétences de validation des données réduit les efforts d’assurance qualité manuels et accélère l’intégration et les transformations de données fiables dans les workflows d’ingénierie des données.</p><p>(Lien vers la documentation à suivre.)<!--For more information, see [Data Engineering Agent]() (will be in this repo: https://experienceleague.adobe.com/fr/docs/experience-cloud-ai/experience-cloud-ai/agents/cja-data-insights-agent).--></p> | | Fin avril 2026 <p>(Version initialement prévue pour le mercredi 31 mars 2026)</p> |
+| **Prise en charge de l’italien**<br/> Les paramètres régionaux italiens (it-IT) sont désormais pris en charge dans Analysis Workspace dans Customer Journey Analytics. <p>Customer Journey Analytics prend en charge toutes les langues prises en charge dans l’interface utilisateur d’Experience Platform, comme décrit dans la section [Prise en charge des navigateurs et des langues pour l’interface utilisateur d’Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/browser-language-support#language-support).</p><p>Vous pouvez [modifier votre langue par défaut](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/browser-language-support#change-default-language) dans Experience Platform.</p> | | jeudi 8 avril 2026 |
+| **Validation des données dans l’agent d’ingénierie Adobe** <br/>De nouvelles compétences en validation des données sont disponibles dans Data Engineering Agent. Ces compétences aident les équipes à évaluer rapidement la qualité des données directement dans Adobe Experience Platform, avant que les données ne soient analysées dans Customer Journey Analytics. <p>Les compétences de validation des données permettent une validation à la demande, au niveau du champ et du jeu de données, associant des résumés statistiques à la détection intelligente des valeurs non valides ou anormales. </p><p>L’utilisation des compétences de validation des données réduit les efforts d’assurance qualité manuels et accélère l’intégration et les transformations de données fiables dans les workflows d’ingénierie des données.</p><p>(Lien vers la documentation à suivre.)<!--For more information, see [Data Engineering Agent]() (will be in this repo: https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/cja-data-insights-agent).--></p> | | Fin avril 2026 <p>(Version initialement prévue pour le mercredi 31 mars 2026)</p> |
 | **Serveurs MCP pour Customer Journey Analytics** <br/>Vous pouvez désormais lier Customer Journey Analytics à vos workflows agentiques existants à l’aide du protocole MCP (Model Context Protocol). Vous pouvez demander des rapports et des informations en utilisant le langage naturel.<p>(Lien vers la documentation à suivre.)</p> | | Fin avril 2026 |
 | **Services de médias en flux continu : prennent en charge les données de planning** <br/>Vous pouvez désormais charger les données de planning du contenu multimédia en flux continu précédent pour suivre plus facilement et plus précisément l’audience.<p>Les éléments suivants sont des exemples de contenu en direct qui sont pris en charge avec le chargement de données de planning :</p><ul><li>Plateformes FAST (Free Ad Supported TV)</li><li>Flux locaux</li><li>Sports en direct</li></ul><p>Le chargement des données de planning vous permet de suivre les audiences des programmes individuels qui ont été diffusés pendant la période que vous avez indiquée dans le fichier de chargement. Vous pouvez même recueillir des données d’audience pour des sujets ou des segments de programme spécifiques.</p><p>Ces fonctionnalités sont disponibles quelle que soit la manière dont vous avez mis en œuvre Streaming Media Collection.</p><p>Auparavant, il était difficile de relier avec précision une session donnée à des programmes spécifiques lors de l’analyse du contenu en direct, et il n’était pas possible de relier une session donnée à des sujets individuels ou à des segments de programmes.</p><p>Pour plus d’informations, voir [Charger des données de planning pour suivre le contenu en direct](https://experienceleague.adobe.com/fr/docs/media-analytics/using/media-use-cases/track-schedule-data)</p> | 29 octobre 2025 | Premier semestre 2026<p>(Version initialement prévue pour le 29 octobre 2025)</p> |
 | **Rapports sur les API à plusieurs dimensions**<br/> Générez des rapports sur plusieurs dimensions dans une seule requête API et effectuez des recherches au niveau des dimensions. [En savoir plus](https://developer.adobe.com/cja-apis/docs/endpoints/reporting/multidim) | | Mars 2026 |
@@ -29,7 +29,7 @@ Ces notes de mise à jour couvrent la période de publication d’avril 2026. Le
 
 ## Correctifs dans Customer Journey Analytics
 
-**&#x200B;**&#x200B;: AN-442813, AN-442410, AN-442231, AN-441943, AN-441717, AN-434855, AN-429777, AN-429048, AN-428892, AN-428189, AN-425215
+**** : AN-442813, AN-442410, AN-442231, AN-441943, AN-441717, AN-434855, AN-429777, AN-429048, AN-428892, AN-428189, AN-425215
 **Composants** :
 **Connexions** : AN-442824, AN-440937, AN-440092, AN-429781
 **Content Analytics**:
@@ -43,13 +43,6 @@ Ces notes de mise à jour couvrent la période de publication d’avril 2026. Le
 **Rapports planifiés** :
 **Mesures et dimensions partagées** :
 **Autre** : AN-423359, AN-406242, AN-397985
-
-
-## Avis importants à l’intention des administrateurs et administratrices de Customer Journey Analytics
-
-| Avis | Ajout ou mise à jour des avis | Description |
-| --- | --- | --- |
-| **Suppression des suites de chiffrement TLS 1.2** | jeudi 11 février 2026 | Avis aux administrateurs : Adobe prévoit de supprimer la prise en charge des suites de chiffrement TLS 1.2 suivantes des serveurs de collecte de données Adobe le 27 mai 2026.<ul><li>`TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA`</li><li>`TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA`</li><li>`TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA`</li><li>`TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA`</li><li>`TLS_RSA_WITH_AES_128_CBC_SHA`</li><li>`TLS_RSA_WITH_AES_256_CBC_SHA`</li></ul><p>Aucune action du client n’est requise pour la plupart des implémentations. Cette modification affecte principalement les données Analytics envoyées à partir d’applications natives héritées qui utilisent des bibliothèques TLS obsolètes, ainsi qu’un petit nombre de visiteurs web sur des navigateurs ou des systèmes d’exploitation obsolètes. La suppression de la prise en charge de ces suites de chiffrement améliore la sécurité et aligne Adobe sur les normes de chiffrement modernes. Moins de 0,1 % du trafic de collecte de données repose actuellement sur ces suites de chiffrement.</p> |
 
 ## Ressources connexes
 
