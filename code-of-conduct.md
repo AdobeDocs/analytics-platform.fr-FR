@@ -1,6 +1,8 @@
 ---
 source-git-commit: 46e050f3acb874d9276e43092f12daa7c013b778
-translation-type: tm+mt
+workflow-type: tm+mt
+source-wordcount: '427'
+ht-degree: 100%
 
 ---
 # Code de conduite Adobe
@@ -35,7 +37,7 @@ Les personnes qui assurent la maintenance du projet ont le droit et la responsab
 
 ## Portée
 
-Ce Code de conduite s’applique à la fois au sein des espaces du projet ainsi que dans les espaces publics lorsqu’un individu représente le projet ou sa communauté. Exemples de représentation d’un projet ou d’une communauté : utilisation d’une adresse e-mail officielle du projet, publication de messages sur les médias sociaux avec un compte officiel, ou intervention pour représenter le projet au cours d’un événement en ligne ou hors ligne. La représentation d’un projet pourra être définie et clarifiée de manière plus précise par les responsables du projet.
+Ce Code de conduite s’applique à la fois au sein des espaces du projet ainsi que dans les espaces publics lorsqu’un individu représente le projet ou sa communauté. Parmi les exemples de représentation d’un projet ou d’une communauté, citons l’utilisation d’une adresse e-mail officielle d’un projet, la publication par le biais d’un compte de médias sociaux officiel ou la fonction de représentant désigné à un événement en ligne ou hors ligne. La représentation d’un projet pourra être définie et clarifiée de manière plus précise par les responsables du projet.
 
 ## Application
 
@@ -46,4 +48,5 @@ Les membres du projet qui ne suivent ou qui n’appliquent pas le présent Code 
 
 ## Attribution
 
-Le présent Code de conduite est une adaptation de la [Convention du contributeur](https://contributor-covenant.org), version 1.4, disponible à l’adresse [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)
+Ce Code de conduite est adapté du[Contributor Covenant](https://contributor-covenant.org), version 1.4,
+disponible à l’adresse [https://www.contributor-covenant.org/fr/version/1/4/code-of-conduct](https://www.contributor-covenant.org/fr/version/1/4/code-of-conduct)
