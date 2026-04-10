@@ -3,9 +3,8 @@ title: Notes de mise à jour préliminaires de Customer Journey Analytics
 description: Afficher les dernières notes de mise à jour préliminaires de Customer Journey Analytics
 feature: Release Notes
 hide: true
-hidefromtoc: true
 exl-id: 61982e38-b43a-41b5-85e0-59ed374463a9
-source-git-commit: 9a489831ebbb579a2f0e368426dfed73b1ee5962
+source-git-commit: efa2cada4b26d71cce22c0d0e8662b6dd04f38f4
 workflow-type: tm+mt
 source-wordcount: '519'
 ht-degree: 80%
@@ -23,10 +22,10 @@ Ces notes de mise à jour portent sur la période du 2 juin 2025 au 15 juille
 Reportez-vous à la documentation suivante pour les notes de mise à jour de Adobe Experience Platform et de ses autres applications :
 
 * [Adobe Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/release-notes/pre-release-notes)
-* [Adobe Journey Optimizer](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/whats-new/release-notes?lang=en)
-* [Adobe Journey Optimizer B2B](https://experienceleague.adobe.com/fr/docs/journey-optimizer-b2b/user/release-notes?lang=en)
-* [Composition d’audiences fédérées](https://experienceleague.adobe.com/fr/docs/federated-audience-composition/using/release-notes?lang=en)
-* [Collaboration dans Real-Time CDP](https://experienceleague.adobe.com/fr/docs/real-time-cdp-collaboration/using/latest?lang=en)
+* [Adobe Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/whats-new/release-notes?lang=en)
+* [Adobe Journey Optimizer B2B](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/release-notes?lang=en)
+* [Composition d’audiences fédérées](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/release-notes?lang=en)
+* [Collaboration dans Real-Time CDP](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/latest?lang=en)
 
 ## Fonctionnalités nouvelles ou mises à jour
 

@@ -4,10 +4,9 @@ description: Utilisez Quantum Metric pour la collecte de données relatives aux 
 role: User, Admin
 solution: Customer Journey Analytics
 feature: Use Cases
-hidefromtoc: true
 hide: true
 exl-id: ea8795fe-f5aa-458f-9e01-53ff1ffe6372
-source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
+source-git-commit: efa2cada4b26d71cce22c0d0e8662b6dd04f38f4
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 1%
@@ -25,10 +24,10 @@ CJA déverrouille le contrôle de la période de rapport sur les données AEM, l
 ## Étape 1 : Créer un connecteur source Quantum Metric
 
 1. Connectez-vous à [experience.adobe.com](https://experience.adobe.com).
-1. Accédez à [!UICONTROL Experience Platform] > [!UICONTROL Connexions] > [!UICONTROL Sources].
+1. Accédez à  > [!UICONTROL Connexions] > [!UICONTROL Sources].
 1. Ajoutez le connecteur source Quantum Metric et suivez les invites jusqu’à la fin.
 
-Voir [Connecteurs source Adobe Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/home) pour plus d’informations.
+Voir [Connecteurs source ](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/home) pour plus d’informations.
 
 ## Étape 2 : création d’une connexion dans Customer Journey Analytics
 
@@ -40,7 +39,7 @@ La création d’un connecteur source pour les données de mesure quantique cré
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
 >[!NOTE]
->Bien que vous puissiez ajouter des données de mesure quantique à la même connexion que le reste de vos données Customer Journey Analytics, ces données ne peuvent pas être regroupées sans un ID de personne commun entre les deux jeux de données. Si ce comportement est souhaité, Adobe recommande d’utiliser l’extension [Tag](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/catalog/analytics/quantum-metric) au lieu du connecteur source.
+>Bien que vous puissiez ajouter des données de mesure quantique à la même connexion que le reste de vos données Customer Journey Analytics, ces données ne peuvent pas être regroupées sans un ID de personne commun entre les deux jeux de données. Si ce comportement est souhaité, Adobe recommande d’utiliser l’extension [Tag](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric) au lieu du connecteur source.
 
 ## Étape 3 : création d’une vue de données dans Customer Journey Analytics
 

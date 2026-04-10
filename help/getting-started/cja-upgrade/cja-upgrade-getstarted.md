@@ -5,9 +5,8 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 hide: true
-hidefromtoc: true
 exl-id: fd3b36ab-72c1-469a-b2c7-419813c82425
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: efa2cada4b26d71cce22c0d0e8662b6dd04f38f4
 workflow-type: tm+mt
 source-wordcount: '721'
 ht-degree: 100%
@@ -30,7 +29,7 @@ Voici quelques-uns des avantages clés : (Pour obtenir une liste complète, ain
 
 * [Création de rapports multicanaux](/help/getting-started/aa-to-cja-user.md#changes-to-data-architecture)
 
-  Customer Journey Analytics est associé à la capacité d’Experience Platform à contenir tous types et schémas de données. Collectez et créez des rapports sur les données de plusieurs canaux, tels que les systèmes numériques (web), de point de vente, mobiles, CRM, etc.
+  Customer Journey Analytics est associé à la capacité d’Experience Platform à contenir tous types et schémas de données. Collectez et créez des rapports sur les données de plusieurs canaux, tels que les systèmes numériques (web), de point de vente, mobiles, CRM, etc.
 
 * [Transformations de la période de rapport dans les vues de données](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md#customer-journey-analytics-data-views)
 
