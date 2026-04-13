@@ -50,7 +50,7 @@ Exemple de panneau **[!UICONTROL Classement multiple par Dimension]** pour le ca
    1. Sélectionnez **[!UICONTROL somme des achats]**
 
 1. Pour modifier le graphique à barres verticales en tableau, assurez-vous que le tableau est sélectionné et sélectionnez **[!UICONTROL Matrice]** dans le volet **[!UICONTROL Visualisations]**.
-   * Faites glisser **[!UICONTROL product_name]** depuis **[!UICONTROL Columns]** et déposez le champ sous **[!UICONTROL product_category]**y dans **[!UICONTROL Rows]** dans le volet **[!UICONTROL Visualisation]**.
+   * Faites glisser **[!UICONTROL product_name]** depuis **[!UICONTROL Columns]** et déposez le champ sous **[!UICONTROL product_category]**&#x200B;y dans **[!UICONTROL Rows]** dans le volet **[!UICONTROL Visualisation]**.
 
 1. Pour limiter le nombre de produits affichés dans le tableau, sélectionnez **[!UICONTROL product_name is (All)]** dans le volet **[!UICONTROL Filtres]**.
 
@@ -63,7 +63,7 @@ Exemple de panneau **[!UICONTROL Classement multiple par Dimension]** pour le ca
 
 1. Pour ventiler chaque catégorie dans le tableau, sélectionnez **[!UICONTROL +]** au niveau de la catégorie de produits. Votre bureau Power BI doit se présenter comme suit :
 
-   ![Tableau de matrice de classement de plusieurs dimensions de bureau ](../assets/uc6-powerbi-data.png)
+   ![Tableau de matrice de classement de plusieurs dimensions de bureau &#x200B;](../assets/uc6-powerbi-data.png)
 
 1. Sélectionnez **[!UICONTROL Accueil]** dans le menu supérieur, puis sélectionnez **[!UICONTROL Nouveau visuel]**. Un nouvel élément visuel est ajouté à votre rapport.
 
@@ -77,7 +77,7 @@ Exemple de panneau **[!UICONTROL Classement multiple par Dimension]** pour le ca
 
    Votre bureau Power BI doit se présenter comme suit :
 
-   ![Arborescence Classement de plusieurs dimensions de l’appli de bureau ](../assets/uc6-powerbi-treemap.png)
+   ![Arborescence Classement de plusieurs dimensions de l’appli de bureau &#x200B;](../assets/uc6-powerbi-treemap.png)
 
 1. Sélectionnez **[!UICONTROL Accueil]** dans le menu supérieur, puis sélectionnez **[!UICONTROL Nouveau visuel]**. Un nouvel élément visuel est ajouté à votre rapport.
 

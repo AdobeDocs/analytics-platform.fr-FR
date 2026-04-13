@@ -19,13 +19,13 @@ Ensuite, vous souhaitez utiliser le nouveau segment pour générer des rapports 
 
 +++ Customer Journey Analytics
 
-Créez un segment avec la **** Titre`Hunting Products` dans Customer Journey Analytics.
+Créez un segment avec la **&#x200B;**&#x200B;Titre`Hunting Products` dans Customer Journey Analytics.
 
 ![Customer Journey Analytics Utilise Des Valeurs Dimension Pour Segmenter](../assets/cja-hunting-products.png)
 
 Vous pouvez ensuite utiliser ce segment dans un exemple **[!UICONTROL Utilisation des valeurs Dimension à filtrer]** panneau pour le cas d’utilisation :
 
-![Valeurs De Nombre Distinct ](../assets/cja-using-dimension-values-to-filter.png)
+![Valeurs De Nombre Distinct &#x200B;](../assets/cja-using-dimension-values-to-filter.png)
 
 +++
 

@@ -21,7 +21,7 @@ Dans ce cas d’utilisation, vous souhaitez afficher un tableau et une visualisa
 
 Exemple de panneau **[!UICONTROL Tendance mensuelle]** pour le cas d’utilisation :
 
-![Visualisation des tendances mensuelles de ](../assets/cja_monthly_trend.png)
+![Visualisation des tendances mensuelles de &#x200B;](../assets/cja_monthly_trend.png)
 
 +++
 

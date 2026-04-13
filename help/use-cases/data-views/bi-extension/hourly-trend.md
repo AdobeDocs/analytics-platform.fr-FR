@@ -23,7 +23,7 @@ Dans ce cas d’utilisation, vous souhaitez afficher un tableau et une visualisa
 
 Exemple de panneau **[!UICONTROL Tendance horaire]** pour le cas d’utilisation :
 
-![Visualisations des tendances horaires de ](../assets/cja_hourly_trend.png)
+![Visualisations des tendances horaires de &#x200B;](../assets/cja_hourly_trend.png)
 
 +++
 

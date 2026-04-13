@@ -21,7 +21,7 @@ Dans ce cas d’utilisation, vous souhaitez afficher un tableau et une visualisa
 
 Exemple de panneau **[!UICONTROL Classement sur un seul Dimension]** pour le cas d’utilisation :
 
-![Visualisation de classement sur une seule dimension de ](../assets/cja-single-dimension-ranked.png)
+![Visualisation de classement sur une seule dimension de &#x200B;](../assets/cja-single-dimension-ranked.png)
 
 +++
 
@@ -179,7 +179,7 @@ Exemple de panneau **[!UICONTROL Classement sur un seul Dimension]** pour le cas
    1. Sélectionnez l’onglet **[!UICONTROL Série]**.
    1. Faites défiler la page vers le bas pour afficher **[!UICONTROL Achats]** et remplacez **[!UICONTROL Type]** par **[!UICONTROL Ligne]**.
    1. Sélectionnez l’onglet **[!UICONTROL Y]**.
-   1. Faites glisser **[!UICONTROL Achats]** du conteneur **[!UICONTROL Gauche 1]** jusqu’à l’emplacement où il est indiqué **[!UICONTROL *Faites glisser la série ici pour créer un nouvel axe gauche *]**. Cette action crée un conteneur**[!UICONTROL  Left 2 ]**.
+   1. Faites glisser **[!UICONTROL Achats]** du conteneur **[!UICONTROL Gauche 1]** jusqu’à l’emplacement où il est indiqué **[!UICONTROL *Faites glisser la série ici pour créer un nouvel axe gauche *]**. Cette action crée un conteneur&#x200B;**[!UICONTROL &#x200B; Left 2 &#x200B;]**.
       ![Configuration de la visualisation de recherche](../assets/uc5-looker-visualization.png)
    1. Sélectionnez ![CrossSize75](/help/assets/icons/CrossSize75.svg) en regard de **[!UICONTROL Modifier]** pour masquer la boîte de dialogue contextuelle
 

@@ -24,7 +24,7 @@ Examinez le segment que vous souhaitez utiliser dans Customer Journey Analytics.
 
 Vous pouvez ensuite utiliser ce segment dans un exemple **[!UICONTROL Utilisation des noms de segment pour le segment]** panneau pour le cas d’utilisation :
 
-![Valeurs De Nombre Distinct ](../assets/cja-using-filter-names-to-filter.png)
+![Valeurs De Nombre Distinct &#x200B;](../assets/cja-using-filter-names-to-filter.png)
 
 +++
 

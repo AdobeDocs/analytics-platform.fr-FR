@@ -18,13 +18,13 @@ Dans ce cas d’utilisation, vous souhaitez utiliser une période que vous avez 
 
 +++ Customer Journey Analytics
 
-Pour générer des rapports à l’aide d’une période, configurez une période dans Customer Journey Analytics, avec l’**** Titre`Last Year 2023`.
+Pour générer des rapports à l’aide d’une période, configurez une période dans Customer Journey Analytics, avec l’**&#x200B;** Titre`Last Year 2023`.
 
 ![Customer Journey Analytics Utilisez des noms de périodes pour filtrer](../assets/cja-daterange.png)
 
 Vous pouvez ensuite utiliser cette période dans un exemple **[!UICONTROL Utilisation des noms de période pour le filtrage]** panneau pour le cas d’utilisation :
 
-![Valeurs De Nombre Distinct ](../assets/cja-using-date-range-filter-names-to-filter.png)
+![Valeurs De Nombre Distinct &#x200B;](../assets/cja-using-date-range-filter-names-to-filter.png)
 
 Notez que la période définie dans la visualisation de tableau à structure libre prévaut sur la période appliquée au panneau.
 
@@ -81,7 +81,7 @@ Notez que la période définie dans la visualisation de tableau à structure lib
 1. Dans la boîte de dialogue **[!UICONTROL Ajouter un filtre]** :
    1. Sélectionnez **[!UICONTROL ‣ Cc Vue De Données]**
    1. Dans la liste des champs, sélectionnez **[!UICONTROL ‣ Daterange Name]**.
-1. Spécifiez le filtre **[!UICONTROL Nom de plage de dates de la vue de données Cc]** tel quel **** et sélectionnez **[!UICONTROL Année dernière 2023]** dans la liste de valeurs.
+1. Spécifiez le filtre **[!UICONTROL Nom de plage de dates de la vue de données Cc]** tel quel **&#x200B;**&#x200B;et sélectionnez **[!UICONTROL Année dernière 2023]** dans la liste de valeurs.
 1. Dans la section **[!UICONTROL ‣ Cr Vue des données]** rail de gauche :
    1. Sélectionnez **[!UICONTROL Mois de la période]**, puis **[!UICONTROL Mois]**.
    1. Sélectionnez **[!UICONTROL Nombre]** sous **[!UICONTROL MESURES]** dans le rail de gauche (en bas).

@@ -19,13 +19,13 @@ Dans ce cas d’utilisation, vous souhaitez obtenir le nombre distinct de noms d
 
 +++ Customer Journey Analytics
 
-Pour générer des rapports sur un nombre distinct de noms de produit, configurez une mesure calculée dans Customer Journey Analytics, avec les **** Titre`Product Name (Count Distinct)` **[!UICONTROL et]** Id externe`product_name_count_distinct`.
+Pour générer des rapports sur un nombre distinct de noms de produit, configurez une mesure calculée dans Customer Journey Analytics, avec les **&#x200B;**&#x200B;Titre`Product Name (Count Distinct)` **[!UICONTROL et]** Id externe`product_name_count_distinct`.
 
 ![Mesure calculée Nom du produit Customer Journey Analytics (nombre distinct)](../assets/cja-calc-metric-distinct-count-product-names.png)
 
 Vous pouvez ensuite utiliser cette mesure dans un exemple de panneau **[!UICONTROL Compter les valeurs Dimension distinctes]** pour le cas d’utilisation :
 
-![Valeurs De Nombre Distinct ](../assets/cja-count-distinct-dimension-values.png)
+![Valeurs De Nombre Distinct &#x200B;](../assets/cja-count-distinct-dimension-values.png)
 
 +++
 
@@ -54,7 +54,7 @@ Vous pouvez ensuite utiliser cette mesure dans un exemple de panneau **[!UICONTR
 
    Votre bureau Power BI doit se présenter comme suit :
 
-   ![Tableau distinct de décompte multiple de bureau ](../assets/uc7-powerbi-table.png)
+   ![Tableau distinct de décompte multiple de bureau &#x200B;](../assets/uc7-powerbi-table.png)
 
 1. Sélectionnez la visualisation du tableau. Dans le menu contextuel, sélectionnez **[!UICONTROL Copier]** > **[!UICONTROL Copier visuel]**.
 1. Collez la visualisation à l’aide de **[!UICONTROL ctrl+v]**. La copie exacte de la visualisation chevauche la visualisation originale. Déplacez-le vers la droite dans la zone du rapport.
@@ -62,7 +62,7 @@ Vous pouvez ensuite utiliser cette mesure dans un exemple de panneau **[!UICONTR
 
    Votre bureau Power BI doit se présenter comme suit :
 
-   ![Tableau distinct de décompte multiple de bureau ](../assets/uc7-powerbi-final.png)
+   ![Tableau distinct de décompte multiple de bureau &#x200B;](../assets/uc7-powerbi-final.png)
 
 Vous pouvez également utiliser la fonctionnalité Comptage distinct de Power BI.
 
