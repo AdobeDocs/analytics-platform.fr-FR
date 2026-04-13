@@ -43,7 +43,7 @@ Pour créer un regroupement de dimensions, procédez comme suit :
 1. Sélectionnez une dimension.
 1. Sélectionnez ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Groupe de données Résumé]**.
 1. Activez **[!UICONTROL Créer un regroupement]**.
-1. Sélectionnez dans le menu déroulant **** une dimension que vous souhaitez regrouper avec la dimension sélectionnée à la première étape. Notez que seules les dimensions que vous avez déjà ajoutées à la vue de données sont disponibles dans le menu déroulant.
+1. Sélectionnez dans le menu déroulant **&#x200B;**&#x200B;une dimension que vous souhaitez regrouper avec la dimension sélectionnée à la première étape. Notez que seules les dimensions que vous avez déjà ajoutées à la vue de données sont disponibles dans le menu déroulant.
 1. Vous pouvez éventuellement activer l’option **[!UICONTROL Masquer dans les rapports]** pour masquer la dimension regroupée des rapports. L’activation de cette option est similaire à la configuration de **[!UICONTROL Masquer dans les rapports]** sur la dimension regroupée séparément. Consultez [Paramètres de composant](overview.md) pour en savoir plus.
 1. Si vous le souhaitez, pour ajouter des dimensions supplémentaires au regroupement, sélectionnez ![Ajouter](/help/assets/icons/Add.svg) **[!UICONTROL Ajouter une dimension au groupe]**.<br/>Vous pouvez ajouter jusqu’à neuf dimensions, car un groupe de données de résumé est limité à dix dimensions.
 

@@ -31,7 +31,7 @@ ht-degree: 93%
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente le panneau Attribution dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_Consultez [panneau Attribution](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/panels/attribution) pour la_ version ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
+_Cet article présente le panneau Attribution dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_.<br/>_Consultez [panneau Attribution](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/panels/attribution) pour la_ version ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 

@@ -72,7 +72,7 @@ Les paramètres suivants régissent l’accès à l’agent Data Insights dans C
 
    1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les autorisations.
 
-  Pour plus d’informations sur le contrôle d’accès, voir [Contrôle d’accès ](/help/technotes/access-control.md#access-control).
+  Pour plus d’informations sur le contrôle d’accès, voir [Contrôle d’accès &#x200B;](/help/technotes/access-control.md#access-control).
 
 * **Accès aux vues de données** : les vues de données doivent être activées pour l’agent Data Insights.
 

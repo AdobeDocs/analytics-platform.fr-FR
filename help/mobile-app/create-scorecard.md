@@ -79,7 +79,7 @@ Pour implémenter le modèle de carte de performance, procédez comme suit :
 
 1. Pour ajouter une nouvelle tuile à votre carte de performance, faites glisser une mesure depuis le panneau de gauche et déposez-la dans la zone **[!UICONTROL Faire glisser et déposer les mesures ici]**. Vous pouvez également insérer une mesure entre deux mosaïques en utilisant un workflow similaire.
 
-   ![Fenêtre de nouvelle carte de performance mobile avec une flèche pointant vers une mesure (Nouveau KPI) déposée dans la carte de performance. ](assets/build_list.png)
+   ![Fenêtre de nouvelle carte de performance mobile avec une flèche pointant vers une mesure (Nouveau KPI) déposée dans la carte de performance. &#x200B;](assets/build_list.png)
 
 
 1. Depuis chaque mosaïque, vous pouvez accéder à une vue détaillée qui affiche des informations supplémentaires sur la mesure comme les éléments principaux pour une liste de dimensions associées.
