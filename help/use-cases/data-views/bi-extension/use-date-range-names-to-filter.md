@@ -4,7 +4,8 @@ description: Utilisez les noms de période pour filtrer les cas d’utilisation 
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 0962f64e9bc0fed89f52191bebe6dd0e14bde61d
+exl-id: a10818ec-a25c-4e4e-a551-14ff501750fa
+source-git-commit: 0299762a2c901852ba6b0940093809a116fa6b11
 workflow-type: tm+mt
 source-wordcount: '611'
 ht-degree: 1%
@@ -23,7 +24,7 @@ Pour générer des rapports à l’aide d’une période, configurez une périod
 
 Vous pouvez ensuite utiliser cette période dans un exemple **[!UICONTROL Utilisation des noms de période pour le filtrage]** panneau pour le cas d’utilisation :
 
-![Valeurs De Nombre Distinct Customer Journey Analytics](../assets/cja-using-date-range-filter-names-to-filter.png)
+![Valeurs De Nombre Distinct &#x200B;](../assets/cja-using-date-range-filter-names-to-filter.png)
 
 Notez que la période définie dans la visualisation de tableau à structure libre prévaut sur la période appliquée au panneau.
 
@@ -38,7 +39,7 @@ Notez que la période définie dans la visualisation de tableau à structure lib
 
 >[!BEGINTABS]
 
->[!TAB Bureau Power BI]
+>[!TAB Bureau ]
 
 1. Dans le volet **[!UICONTROL Données]** :
    1. Sélectionnez **[!UICONTROL daterangemonth]**.
