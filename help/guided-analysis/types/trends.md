@@ -26,7 +26,7 @@ ht-degree: 92%
 L’analyse ![GraphTrend](/help/assets/icons/GraphTrend.svg) **[!UICONTROL Tendances]** fournit des informations précieuses sur les performances de votre produit ou le comportement de vos utilisateurs et utilisatrices au fil du temps. L’axe horizontal de ce rapport est un intervalle de temps, tandis que l’axe vertical mesure les événements souhaités.
 
 
->[!VIDEO](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/trends)
+>[!VIDEO](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/guided-analysis/trends)
 
 ## Cas d’utilisation
 
