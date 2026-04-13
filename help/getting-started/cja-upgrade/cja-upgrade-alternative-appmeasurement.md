@@ -70,7 +70,7 @@ Les étapes de base pour migrer une implémentation d’Adobe Analytics (AppMeas
 
    1. Envoyez toutes vos variables au format AppMeasurement via l’objet de données.
 
-      Pour plus d’informations, voir [Mappage des variables d’objet de données à Adobe Analytics](https://experienceleague.adobe.com/fr/docs/analytics/implementation/aep-edge/data-var-mapping).
+      Pour plus d’informations, voir [Mappage des variables d’objet de données à Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping).
 
    1. Choisissez votre schéma.
 
@@ -96,7 +96,7 @@ Les étapes de base pour migrer une implémentation d’Adobe Analytics (AppMeas
 
    1. Utilisez le mappage des flux de données pour mapper tous les champs de l’objet de données à votre schéma XDM.
 
-      Pour plus d’informations, consultez [Mappage](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/data-prep?lang=en#mapping) dans [Préparation des données pour la collecte de données](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/data-prep) dans la documentation d’Experience Platform.
+      Pour plus d’informations, consultez [Mappage](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep?lang=en#mapping) dans [Préparation des données pour la collecte de données](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) dans la documentation d’Experience Platform.
 
 {{upgrade-final-step}}.
 

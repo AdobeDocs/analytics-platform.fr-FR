@@ -20,7 +20,7 @@ ht-degree: 65%
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente la visualisation Dispersion dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consultez [Dispersion](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/scatterplot) pour la_ version![&#x200B; &#x200B;](/help/assets/icons/AdobeAnalytics.svg)AdobeAnalytics _&#x200B;**Adobe Analytics** de cet article._
+_Cet article présente la visualisation Dispersion dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consultez [Dispersion](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/scatterplot) pour la_ version![ ](/help/assets/icons/AdobeAnalytics.svg)AdobeAnalytics _**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 
@@ -40,7 +40,7 @@ La visualisation ![GraphScatter](/help/assets/icons/GraphScatter.svg) **[!UICONT
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisation Dispersion](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/use-scatterplot-visualizations){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisation Dispersion](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/use-scatterplot-visualizations){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 

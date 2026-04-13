@@ -1,6 +1,6 @@
 ---
 title: Surveiller l’ingestion des jeux de données lors de la mise à niveau vers Customer Journey Analytics
-description: Découvrir comment conserver les données historiques lors de la mise à niveau vers Customer Journey Analytics
+description: Découvrez comment surveiller l’ingestion des jeux de données lors de la mise à niveau vers Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics

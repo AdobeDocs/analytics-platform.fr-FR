@@ -72,7 +72,7 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-data-warehouse"
->title="Data Warehouse"
+>title="Entrepôt de données"
 >abstract="Exportez les données traitées par Adobe Analytics dans un format de feuille de calcul."
 
 <!-- markdownlint-enable MD034 -->

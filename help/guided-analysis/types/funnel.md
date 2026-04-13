@@ -23,11 +23,11 @@ ht-degree: 98%
 
 <!-- markdownlint-enable MD034 -->
 
-L’analyse ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL Entonnoir &#x200B;]**&#x200B;fournit une représentation visuelle d’un parcours critique d’une personne dans votre produit. L’axe horizontal représente chaque étape qu’une personne doit franchir. L’axe vertical représente le pourcentage d’utilisateurs et d’utilisatrices ou de sessions à chaque étape. Toutes les étapes doivent être effectuées dans l’ordre souhaité, mais peuvent l’être à tout moment dans la fenêtre de création de rapports.
+L’analyse ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL Entonnoir ]**fournit une représentation visuelle d’un parcours critique d’une personne dans votre produit. L’axe horizontal représente chaque étape qu’une personne doit franchir. L’axe vertical représente le pourcentage d’utilisateurs et d’utilisatrices ou de sessions à chaque étape. Toutes les étapes doivent être effectuées dans l’ordre souhaité, mais peuvent l’être à tout moment dans la fenêtre de création de rapports.
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analyse du frottement du Funnel](https://video.tv.adobe.com/v/3431276/?captions=fre_fr&quality=12&learn=onn){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analyse du frottement du Funnel](https://video.tv.adobe.com/v/3421663/?quality=12&learn=onn){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 
