@@ -4,9 +4,10 @@ description: Cas d’utilisation des dimensions Comptage de valeurs distinctes p
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 0962f64e9bc0fed89f52191bebe6dd0e14bde61d
+exl-id: 6a05bce1-542c-40d3-bbb0-4a8e561438c9
+source-git-commit: a0251638e66d5a2524418fc17f56dddc4e48accd
 workflow-type: tm+mt
-source-wordcount: '950'
+source-wordcount: '949'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ Pour générer des rapports sur un nombre distinct de noms de produit, configure
 
 Vous pouvez ensuite utiliser cette mesure dans un exemple de panneau **[!UICONTROL Compter les valeurs Dimension distinctes]** pour le cas d’utilisation :
 
-![Valeurs De Nombre Distinct Customer Journey Analytics](../assets/cja-count-distinct-dimension-values.png)
+![Valeurs De Nombre Distinct &#x200B;](../assets/cja-count-distinct-dimension-values.png)
 
 +++
 
@@ -37,7 +38,7 @@ Vous pouvez ensuite utiliser cette mesure dans un exemple de panneau **[!UICONTR
 
 >[!BEGINTABS]
 
->[!TAB Bureau Power BI]
+>[!TAB Bureau ]
 
 1. Pour vous assurer que la période s’applique à toutes les visualisations, effectuez un glisser-déposer de **[!UICONTROL daterangeday]** du volet **[!UICONTROL Données]** vers **[!UICONTROL Filtres]** sur cette page.
    1. Sélectionnez le **[!UICONTROL daterangeday is (All)]** dans **[!UICONTROL Filtres sur cette page]**.
@@ -53,7 +54,7 @@ Vous pouvez ensuite utiliser cette mesure dans un exemple de panneau **[!UICONTR
 
    Votre bureau Power BI doit se présenter comme suit :
 
-   ![Tableau distinct de décompte multiple de bureau Power BI](../assets/uc7-powerbi-table.png)
+   ![Tableau distinct de décompte multiple de bureau &#x200B;](../assets/uc7-powerbi-table.png)
 
 1. Sélectionnez la visualisation du tableau. Dans le menu contextuel, sélectionnez **[!UICONTROL Copier]** > **[!UICONTROL Copier visuel]**.
 1. Collez la visualisation à l’aide de **[!UICONTROL ctrl+v]**. La copie exacte de la visualisation chevauche la visualisation originale. Déplacez-le vers la droite dans la zone du rapport.
@@ -61,7 +62,7 @@ Vous pouvez ensuite utiliser cette mesure dans un exemple de panneau **[!UICONTR
 
    Votre bureau Power BI doit se présenter comme suit :
 
-   ![Tableau distinct de décompte multiple de bureau Power BI](../assets/uc7-powerbi-final.png)
+   ![Tableau distinct de décompte multiple de bureau &#x200B;](../assets/uc7-powerbi-final.png)
 
 Vous pouvez également utiliser la fonctionnalité Comptage distinct de Power BI.
 
@@ -159,7 +160,7 @@ Vous devriez voir une visualisation et un tableau similaires à ceux présentés
 
 >[!TAB RStudio]
 
-1. Saisissez les instructions suivantes entre ` ` ``{r} ` et ` `` ` ` dans un nouveau bloc.
+1. Saisissez le bloc de code suivant dans un nouveau bloc.
 
    ```R
    ## Count Distinct
@@ -177,4 +178,3 @@ Vous devriez voir une visualisation et un tableau similaires à ceux présentés
 >[!ENDTABS]
 
 +++
-

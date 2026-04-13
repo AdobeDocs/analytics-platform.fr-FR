@@ -4,9 +4,10 @@ description: Cas d’utilisation de tendance quotidien pour l’extension BI dan
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 0962f64e9bc0fed89f52191bebe6dd0e14bde61d
+exl-id: 09810072-1be4-4c78-8c84-b33db1872dbc
+source-git-commit: a0251638e66d5a2524418fc17f56dddc4e48accd
 workflow-type: tm+mt
-source-wordcount: '808'
+source-wordcount: '807'
 ht-degree: 0%
 
 ---
@@ -20,7 +21,7 @@ Dans ce cas d’utilisation, vous souhaitez afficher un tableau et une visualisa
 
 Exemple de panneau **[!UICONTROL Tendance quotidienne]** pour le cas d’utilisation :
 
-![Panneau Tendance quotidienne de Customer Journey Analytics](../assets/cja_daily_trend.png)
+![Panneau Tendance quotidienne de &#x200B;](../assets/cja_daily_trend.png)
 
 +++
 
@@ -33,7 +34,7 @@ Exemple de panneau **[!UICONTROL Tendance quotidienne]** pour le cas d’utilisa
 
 >[!BEGINTABS]
 
->[!TAB Bureau Power BI]
+>[!TAB Bureau ]
 
 1. Dans le volet **[!UICONTROL Données]** :
    1. Sélectionnez **[!UICONTROL daterangeday]**.
@@ -152,7 +153,7 @@ Vous devriez voir une visualisation et un tableau similaires à ceux présentés
 
 >[!TAB RStudio]
 
-1. Saisissez les instructions suivantes entre ` ` ``{r} ` et ` `` ` ` dans un nouveau bloc.
+1. Saisissez le bloc de code suivant dans un nouveau bloc.
 
    ```R
    ## Daily Events

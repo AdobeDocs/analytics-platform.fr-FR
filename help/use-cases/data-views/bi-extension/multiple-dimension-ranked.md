@@ -4,9 +4,10 @@ description: Cas d’utilisation avec classement de dimensions multiples pour l�
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 0962f64e9bc0fed89f52191bebe6dd0e14bde61d
+exl-id: 7c8d01ac-47a3-4348-83ef-fea66695fbb2
+source-git-commit: a0251638e66d5a2524418fc17f56dddc4e48accd
 workflow-type: tm+mt
-source-wordcount: '1533'
+source-wordcount: '1532'
 ht-degree: 1%
 
 ---
@@ -33,7 +34,7 @@ Exemple de panneau **[!UICONTROL Classement multiple par Dimension]** pour le ca
 
 >[!BEGINTABS]
 
->[!TAB Bureau Power BI]
+>[!TAB Bureau ]
 
 1. Pour vous assurer que la période s’applique à toutes les visualisations, effectuez un glisser-déposer de **[!UICONTROL daterangeday]** du volet **[!UICONTROL Données]** vers **[!UICONTROL Filtres sur cette page]**.
    1. Sélectionnez le **[!UICONTROL daterangeday is (All)]** dans **[!UICONTROL Filtres sur cette page]**.
@@ -62,7 +63,7 @@ Exemple de panneau **[!UICONTROL Classement multiple par Dimension]** pour le ca
 
 1. Pour ventiler chaque catégorie dans le tableau, sélectionnez **[!UICONTROL +]** au niveau de la catégorie de produits. Votre bureau Power BI doit se présenter comme suit :
 
-   ![Tableau de matrice de classement de plusieurs dimensions de bureau Power BI](../assets/uc6-powerbi-data.png)
+   ![Tableau de matrice de classement de plusieurs dimensions de bureau &#x200B;](../assets/uc6-powerbi-data.png)
 
 1. Sélectionnez **[!UICONTROL Accueil]** dans le menu supérieur, puis sélectionnez **[!UICONTROL Nouveau visuel]**. Un nouvel élément visuel est ajouté à votre rapport.
 
@@ -76,7 +77,7 @@ Exemple de panneau **[!UICONTROL Classement multiple par Dimension]** pour le ca
 
    Votre bureau Power BI doit se présenter comme suit :
 
-   ![Arborescence Classement de plusieurs dimensions de l’appli de bureau Power BI](../assets/uc6-powerbi-treemap.png)
+   ![Arborescence Classement de plusieurs dimensions de l’appli de bureau &#x200B;](../assets/uc6-powerbi-treemap.png)
 
 1. Sélectionnez **[!UICONTROL Accueil]** dans le menu supérieur, puis sélectionnez **[!UICONTROL Nouveau visuel]**. Un nouvel élément visuel est ajouté à votre rapport.
 
@@ -244,7 +245,7 @@ Vous devriez voir une visualisation et un tableau similaires à ceux présentés
 
 >[!TAB RStudio]
 
-1. Saisissez les instructions suivantes entre ` ` ``{r} ` et ` `` ` ` dans un nouveau bloc.
+1. Saisissez le bloc de code suivant dans un nouveau bloc.
 
    ```R
    ## Multiple dimensions ranked
