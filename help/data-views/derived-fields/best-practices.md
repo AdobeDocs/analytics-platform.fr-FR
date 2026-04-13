@@ -61,7 +61,7 @@ Cette section traite des segments par défaut de la vue de données qui font ré
 
 ## Cas trop complexe lorsque les chaînes de règles
 
-Cette section traite des chaînes trop complexes de règles [Cas ](./derived-fields.md#case-when).
+Cette section traite des chaînes trop complexes de règles [Cas &#x200B;](./derived-fields.md#case-when).
 
 Customer Journey Analytics applique des [limites de fonction et d’opérateur](derived-fields.md#limitations) explicites par champ dérivé (par exemple, le nombre maximal d’opérateurs, le nombre maximal de fonctions par type). Les fonctions trop complexes et les chaînes au sein des fonctions sont plus difficiles à gérer et plus susceptibles de contenir des erreurs.
 
@@ -161,7 +161,7 @@ Customer Journey Analytics permet de contraindre des champs numériques aux dime
    * Définissez le type de composant sur **[!UICONTROL Mesure]** dans la vue de données.
    * Si le composant représente une mesure de sous-ensemble (par exemple, **[!UICONTROL Extraire les pages vues]**), utilisez une mesure filtrée dans la vue de données plutôt qu’une chaîne dérivée plus une mesure calculée en haut.
 * Si la sortie est un libellé :
-   * Définissez le type de composant sur **** puis configurez les paramètres [attribution](/help/data-views/component-settings/attribution.md) et [persistance](/help/data-views/component-settings/persistence.md) en conséquence.
+   * Définissez le type de composant sur **&#x200B;**&#x200B;puis configurez les paramètres [attribution](/help/data-views/component-settings/attribution.md) et [persistance](/help/data-views/component-settings/persistence.md) en conséquence.
 
 ## Pièges de la logique des canaux marketing et des campagnes
 
@@ -279,7 +279,7 @@ Cette section traite de la surexploitation des fonctions [Suivant](./derived-fie
 ### Modèles
 
 * Un champ dérivé utilise plusieurs fois des fonctions [Suivant ou Précédent](./derived-fields.md#next-or-previous) (ce qui est proche de la limite documentée par champ).
-* [ Suivant ou Précédent ](./derived-fields.md#next-or-previous) est utilisé pour implémenter une logique de persistance (par exemple : transférer une campagne vers l’avant) au lieu d’utiliser la persistance de la vue de données.
+* [&#x200B; Suivant ou Précédent &#x200B;](./derived-fields.md#next-or-previous) est utilisé pour implémenter une logique de persistance (par exemple : transférer une campagne vers l’avant) au lieu d’utiliser la persistance de la vue de données.
 
 ### Diagnostic des risques : qualité des données, maintenance élevée
 
@@ -359,4 +359,4 @@ Vérifiez également la configuration de la vue de données pour chaque composan
 
 ### Recommandations
 
-* Ajustez le [ modèle d’attribution et l’expiration ](/help/data-views/component-settings/persistence.md) sur cette dimension pour aligner le nom et le comportement. Par exemple, une dimension de champ dérivé nommée `Original Source` doit utiliser l’attribution Première touche avec l’expiration définie sur Personne.
+* Ajustez le [&#x200B; modèle d’attribution et l’expiration &#x200B;](/help/data-views/component-settings/persistence.md) sur cette dimension pour aligner le nom et le comportement. Par exemple, une dimension de champ dérivé nommée `Original Source` doit utiliser l’attribution Première touche avec l’expiration définie sur Personne.
