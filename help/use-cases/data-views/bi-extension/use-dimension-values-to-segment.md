@@ -4,9 +4,10 @@ description: Utilisez des valeurs de dimension pour segmenter le cas d’utilisa
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 0962f64e9bc0fed89f52191bebe6dd0e14bde61d
+exl-id: 8557b424-4a5e-4996-8e2f-cf1bcafe64c5
+source-git-commit: a0251638e66d5a2524418fc17f56dddc4e48accd
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '796'
 ht-degree: 0%
 
 ---
@@ -18,13 +19,13 @@ Ensuite, vous souhaitez utiliser le nouveau segment pour générer des rapports 
 
 +++ Customer Journey Analytics
 
-Créez un segment avec la **&#x200B;**&#x200B;Titre`Hunting Products` dans Customer Journey Analytics.
+Créez un segment avec la **** Titre`Hunting Products` dans Customer Journey Analytics.
 
 ![Customer Journey Analytics Utilise Des Valeurs Dimension Pour Segmenter](../assets/cja-hunting-products.png)
 
 Vous pouvez ensuite utiliser ce segment dans un exemple **[!UICONTROL Utilisation des valeurs Dimension à filtrer]** panneau pour le cas d’utilisation :
 
-![Valeurs De Nombre Distinct Customer Journey Analytics](../assets/cja-using-dimension-values-to-filter.png)
+![Valeurs De Nombre Distinct ](../assets/cja-using-dimension-values-to-filter.png)
 
 +++
 
@@ -37,7 +38,7 @@ Vous pouvez ensuite utiliser ce segment dans un exemple **[!UICONTROL Utilisatio
 
 >[!BEGINTABS]
 
->[!TAB Bureau Power BI]
+>[!TAB Bureau ]
 
 1. Sélectionnez **[!UICONTROL Accueil]** dans le menu, puis sélectionnez **[!UICONTROL Actualiser]** dans la barre d’outils. Vous devez actualiser la connexion pour sélectionner le nouveau filtre que vous venez de définir dans Customer Journey Analytics.
 
@@ -69,7 +70,7 @@ Une visualisation s’affiche **[!UICONTROL Erreur de récupération des donnée
 
 ![AlertRed](/help/assets/icons/AlertRed.svg) Tableau Desktop ne prend pas en charge la récupération de la liste dynamique des catégories de produits depuis Customer Journey Analytics. À la place, ce cas d’utilisation utilise le filtre nouvellement créé pour **[!UICONTROL Produits de chasse]** et utilise les critères de nom du filtre.
 
-1. Dans la vue **[!UICONTROL Source de données]**, sous **[!UICONTROL Données]**, dans le menu contextuel de **[!UICONTROL cc_data_view(prod:cja%3FFLATTEN)]**, sélectionnez **[!UICONTROL Actualiser]**. Vous devez actualiser la connexion pour sélectionner le nouveau filtre que vous venez de définir dans Customer Journey Analytics.
+1. Dans la vue Source de données **[!UICONTROL , sous]** Données **[!UICONTROL , dans le menu contextuel de]** cc_data_view(prod **[!UICONTROL %3FFLATTEN):cja, sélectionnez]** Actualiser **[!UICONTROL .]** Vous devez actualiser la connexion pour sélectionner le nouveau filtre que vous venez de définir dans Customer Journey Analytics.
 1. Sélectionnez l’onglet **[!UICONTROL Feuille 1]** en bas pour basculer depuis **[!UICONTROL Source de données]**. Dans la vue **[!UICONTROL Feuille 1]** :
    1. Faites glisser l’entrée **[!UICONTROL Nom du filtre]** de la liste **[!UICONTROL Tableaux]** dans le plateau **[!UICONTROL Filtres]**.
    1. Dans la boîte de dialogue **[!UICONTROL Filtrer \[Nom du filtre\]]**, assurez-vous que **[!UICONTROL Sélectionner dans la liste]** est sélectionné, puis sélectionnez **[!UICONTROL Produits de chasse]** dans la liste. Sélectionnez **[!UICONTROL Appliquer]** et **[!UICONTROL OK]**.
@@ -154,7 +155,7 @@ Une visualisation s’affiche **[!UICONTROL Erreur de récupération des donnée
 
 >[!TAB RStudio]
 
-1. Saisissez les instructions suivantes entre ` ` ``{r} ` et ` `` ` ` dans un nouveau bloc. Veillez à utiliser une catégorie appropriée. Par exemple, `Hunting`.
+1. Saisissez le bloc de code suivant dans un nouveau bloc. Veillez à utiliser une catégorie appropriée. Par exemple, `Hunting`.
 
    ```R
    ## Dimension 1 Filtered by Dimension 2 value
@@ -173,4 +174,3 @@ Une visualisation s’affiche **[!UICONTROL Erreur de récupération des donnée
 >[!ENDTABS]
 
 +++
-

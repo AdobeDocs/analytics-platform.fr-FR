@@ -4,9 +4,10 @@ description: Cas d’utilisation de tendance mensuelle pour l’extension BI dan
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 0962f64e9bc0fed89f52191bebe6dd0e14bde61d
+exl-id: 9be5180e-6926-431e-aa70-61cb98130ef6
+source-git-commit: a0251638e66d5a2524418fc17f56dddc4e48accd
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '799'
 ht-degree: 0%
 
 ---
@@ -20,7 +21,7 @@ Dans ce cas d’utilisation, vous souhaitez afficher un tableau et une visualisa
 
 Exemple de panneau **[!UICONTROL Tendance mensuelle]** pour le cas d’utilisation :
 
-![Visualisation des tendances mensuelles de Customer Journey Analytics](../assets/cja_monthly_trend.png)
+![Visualisation des tendances mensuelles de ](../assets/cja_monthly_trend.png)
 
 +++
 
@@ -33,7 +34,7 @@ Exemple de panneau **[!UICONTROL Tendance mensuelle]** pour le cas d’utilisati
 
 >[!BEGINTABS]
 
->[!TAB Bureau Power BI]
+>[!TAB Bureau ]
 
 1. Dans le volet **[!UICONTROL Données]** :
    1. Sélectionnez **[!UICONTROL daterangemonth]**.
@@ -154,7 +155,7 @@ Vous devriez voir une visualisation et un tableau similaires à ceux présentés
 
 >[!TAB RStudio]
 
-1. Saisissez les instructions suivantes entre ` ` ``{r} ` et ` `` ` ` dans un nouveau bloc.
+1. Saisissez le bloc de code suivant dans un nouveau bloc.
 
    ```R
    ## Hourly Events

@@ -4,9 +4,10 @@ description: Utilisez des noms de segment pour segmenter le cas d’utilisation 
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 0962f64e9bc0fed89f52191bebe6dd0e14bde61d
+exl-id: bd0ff42b-7136-41b8-9dcd-75ab3ac8a523
+source-git-commit: a0251638e66d5a2524418fc17f56dddc4e48accd
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '679'
 ht-degree: 1%
 
 ---
@@ -23,7 +24,7 @@ Examinez le segment que vous souhaitez utiliser dans Customer Journey Analytics.
 
 Vous pouvez ensuite utiliser ce segment dans un exemple **[!UICONTROL Utilisation des noms de segment pour le segment]** panneau pour le cas d’utilisation :
 
-![Valeurs De Nombre Distinct Customer Journey Analytics](../assets/cja-using-filter-names-to-filter.png)
+![Valeurs De Nombre Distinct ](../assets/cja-using-filter-names-to-filter.png)
 
 +++
 
@@ -36,7 +37,7 @@ Vous pouvez ensuite utiliser ce segment dans un exemple **[!UICONTROL Utilisatio
 
 >[!BEGINTABS]
 
->[!TAB Bureau Power BI]
+>[!TAB Bureau ]
 
 1. Dans le volet **[!UICONTROL Données]** :
    1. Sélectionnez **[!UICONTROL daterange]**.
@@ -153,7 +154,7 @@ Vous devriez voir une visualisation et un tableau similaires à ceux présentés
 
 >[!TAB RStudio]
 
-1. Saisissez les instructions suivantes entre ` ` ``{r} ` et ` `` ` ` dans un nouveau bloc. Veillez à utiliser le nom de filtre approprié. Par exemple : `Fishing Products`.
+1. Saisissez le bloc de code suivant dans un nouveau bloc. Veillez à utiliser le nom de filtre approprié. Par exemple : `Fishing Products`.
 
    ```R
    ## Dimension filtered by name

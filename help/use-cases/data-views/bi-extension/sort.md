@@ -4,9 +4,10 @@ description: Cas d’utilisation de tri pour l’extension BI dans divers outils
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 0962f64e9bc0fed89f52191bebe6dd0e14bde61d
+exl-id: bac873a8-9003-400d-9f52-fcf734c2f56b
+source-git-commit: a0251638e66d5a2524418fc17f56dddc4e48accd
 workflow-type: tm+mt
-source-wordcount: '734'
+source-wordcount: '733'
 ht-degree: 1%
 
 ---
@@ -33,7 +34,7 @@ Panneau de tri de Customer Journey Analytics ![](../assets/cja-sort.png)
 
 >[!BEGINTABS]
 
->[!TAB Bureau Power BI]
+>[!TAB Bureau ]
 
 1. Dans le volet **[!UICONTROL Données]** :
    1. Sélectionnez **[!UICONTROL daterange]**.
@@ -195,7 +196,7 @@ GROUP BY 1
       1. Sélectionnez **[!UICONTROL Décimales]** dans le menu déroulant **[!UICONTROL Format]** et assurez-vous que `0` est saisi dans **[!UICONTROL Décimales]**.
          ![Champ de mesure personnalisé de recherche](../assets/uc5-looker-customfield.png)
       1. Sélectionnez **[!UICONTROL Enregistrer]**.
-1. Veillez à sélectionner **[!UICONTROL ↓]** (**[!UICONTROL Décroissant, Ordre de tri : 1]**) dans la colonne **[!UICONTROL Chiffre d’affaires d’achat]**.
+1. Veillez à sélectionner ↓**[!UICONTROL (]** Décroissant, Ordre de tri : 1 **[!UICONTROL ) dans la colonne]** Chiffre d’affaires d’achat **[!UICONTROL .]**
 1. Sélectionnez **[!UICONTROL Exécuter]**.
 1. Sélectionnez **[!UICONTROL ‣ Visualisation]**.
 
@@ -245,7 +246,7 @@ La requête est exécutée par l’extension BI, comme défini dans le notebook 
 
 >[!TAB RStudio]
 
-1. Saisissez les instructions suivantes entre ` ` ``{r} ` et ` `` ` ` dans un nouveau bloc.
+1. Saisissez le bloc de code suivant dans un nouveau bloc.
 
    ```R
    ## Dimension 1 Sorted

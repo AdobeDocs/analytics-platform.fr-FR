@@ -4,9 +4,10 @@ description: Cas d’utilisation avec classement à une seule dimension pour l�
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 0962f64e9bc0fed89f52191bebe6dd0e14bde61d
+exl-id: e66ad7c4-0d49-41fe-a9fc-661fd31e8c68
+source-git-commit: a0251638e66d5a2524418fc17f56dddc4e48accd
 workflow-type: tm+mt
-source-wordcount: '1324'
+source-wordcount: '1323'
 ht-degree: 1%
 
 ---
@@ -20,7 +21,7 @@ Dans ce cas d’utilisation, vous souhaitez afficher un tableau et une visualisa
 
 Exemple de panneau **[!UICONTROL Classement sur un seul Dimension]** pour le cas d’utilisation :
 
-![Visualisation de classement sur une seule dimension de Customer Journey Analytics](../assets/cja-single-dimension-ranked.png)
+![Visualisation de classement sur une seule dimension de ](../assets/cja-single-dimension-ranked.png)
 
 +++
 
@@ -33,7 +34,7 @@ Exemple de panneau **[!UICONTROL Classement sur un seul Dimension]** pour le cas
 
 >[!BEGINTABS]
 
->[!TAB Bureau Power BI]
+>[!TAB Bureau ]
 
 1. Dans le volet **[!UICONTROL Données]** :
    1. Sélectionnez **[!UICONTROL daterange]**.
@@ -178,7 +179,7 @@ Exemple de panneau **[!UICONTROL Classement sur un seul Dimension]** pour le cas
    1. Sélectionnez l’onglet **[!UICONTROL Série]**.
    1. Faites défiler la page vers le bas pour afficher **[!UICONTROL Achats]** et remplacez **[!UICONTROL Type]** par **[!UICONTROL Ligne]**.
    1. Sélectionnez l’onglet **[!UICONTROL Y]**.
-   1. Faites glisser **[!UICONTROL Achats]** du conteneur **[!UICONTROL Gauche 1]** jusqu’à l’emplacement où il est indiqué **[!UICONTROL *Faites glisser la série ici pour créer un nouvel axe gauche *]**. Cette action crée un conteneur&#x200B;**[!UICONTROL &#x200B; Left 2 &#x200B;]**.
+   1. Faites glisser **[!UICONTROL Achats]** du conteneur **[!UICONTROL Gauche 1]** jusqu’à l’emplacement où il est indiqué **[!UICONTROL *Faites glisser la série ici pour créer un nouvel axe gauche *]**. Cette action crée un conteneur**[!UICONTROL  Left 2 ]**.
       ![Configuration de la visualisation de recherche](../assets/uc5-looker-visualization.png)
    1. Sélectionnez ![CrossSize75](/help/assets/icons/CrossSize75.svg) en regard de **[!UICONTROL Modifier]** pour masquer la boîte de dialogue contextuelle
 
@@ -214,7 +215,7 @@ Vous devriez voir une visualisation et un tableau similaires à ceux présentés
 
 >[!TAB RStudio]
 
-1. Saisissez les instructions suivantes entre ` ` ``{r} ` et ` `` ` ` dans un nouveau bloc.
+1. Saisissez le bloc de code suivant dans un nouveau bloc.
 
    ```R
    library(tidyr)
@@ -240,4 +241,3 @@ Vous devriez voir une visualisation et un tableau similaires à ceux présentés
 >[!ENDTABS]
 
 +++
-

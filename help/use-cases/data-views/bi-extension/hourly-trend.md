@@ -4,9 +4,10 @@ description: Cas d’utilisation de tendance horaire pour l’extension BI dans 
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 0962f64e9bc0fed89f52191bebe6dd0e14bde61d
+exl-id: facce2d4-b729-46c0-a049-8f730220d8d2
+source-git-commit: a0251638e66d5a2524418fc17f56dddc4e48accd
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '650'
 ht-degree: 1%
 
 ---
@@ -22,7 +23,7 @@ Dans ce cas d’utilisation, vous souhaitez afficher un tableau et une visualisa
 
 Exemple de panneau **[!UICONTROL Tendance horaire]** pour le cas d’utilisation :
 
-![Visualisations des tendances horaires de Customer Journey Analytics](../assets/cja_hourly_trend.png)
+![Visualisations des tendances horaires de ](../assets/cja_hourly_trend.png)
 
 +++
 
@@ -35,7 +36,7 @@ Exemple de panneau **[!UICONTROL Tendance horaire]** pour le cas d’utilisation
 
 >[!BEGINTABS]
 
->[!TAB Bureau Power BI]
+>[!TAB Bureau ]
 
 ![AlertRed](/help/assets/icons/AlertRed.svg) Power BI ne comprend **pas** comment gérer les champs date-heure. Par conséquent, les dimensions telles que **[!UICONTROL daterangehour]** et **[!UICONTROL daterangeminute]** ne sont pas prises en charge.
 
@@ -127,7 +128,7 @@ Vous devriez voir une visualisation et un tableau similaires à ceux présentés
 
 >[!TAB RStudio]
 
-1. Saisissez les instructions suivantes entre ` ` ``{r} ` et ` `` ` ` dans un nouveau bloc.
+1. Saisissez le bloc de code suivant dans un nouveau bloc.
 
    ```R
    ## Hourly Events
