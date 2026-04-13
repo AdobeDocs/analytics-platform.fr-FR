@@ -1,8 +1,8 @@
 ---
 source-git-commit: b0be8b726c4fab1bf9bb5f9462be84f39bdf184a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5360'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 # Extraits
@@ -292,32 +292,32 @@ Utilisez les informations suivantes pour choisir la visualisation qui répond le
 
 >[!INFO]
 >
->Dans l’interface de Customer Journey Analytics, les jeux de données **[!UICONTROL relationnels]** peuvent être libellés comme **[!UICONTROL basés sur un modèle]**.
+>Dans l’interface de Customer Journey Analytics, les jeux de données **[!UICONTROL relationnels]** peuvent être libellés comme **[!UICONTROL basés sur un modèle]**.
 >
 
 ## Intervalle de recherche en amont du flux de données CJA {#cja-df-lookback}
 
-Étant donné que Customer Journey Analytics utilise l’attribution à la période de rapport pour chaque composant, il n’applique pas le concept de persistance au-delà de son intervalle de recherche en amont. Cette colonne de flux de données Analytics fait référence au comportement au niveau du visiteur qui s’étend à l’ensemble de l’historique du visiteur. Plus l’intervalle de recherche en amont est long pour ce composant dans Customer Journey Analytics, plus il peut correspondre étroitement à la fonctionnalité Adobe Analytics.
+Étant donné que Customer Journey Analytics utilise une attribution au moment du reporting pour chaque composant, il n’applique pas le concept de persistance au-delà de son intervalle de recherche en amont. Cette colonne de flux de données Analytics fait référence au comportement au niveau du visiteur ou de la visiteuse, qui s’étend à l’ensemble de son historique. Plus l’intervalle de recherche en amont est long pour ce composant dans Customer Journey Analytics, plus il peut correspondre étroitement à la fonctionnalité Adobe Analytics.
 
 ## Colonnes de publication du flux de données CJA {#cja-df-post}
 
-Cette colonne de flux de données Analytics contient une version prétraitée et une version post-traitée (un préfixe de `post_`). Les colonnes comportant le préfixe `post_` contiennent la valeur qui est finalement utilisée dans les rapports. La plupart des organisations utilisent uniquement `post_` colonnes lorsqu’elles sont disponibles. Le tableau suivant compare les propriétés de ces colonnes :
+Cette colonne de flux de données Analytics contient une version prétraitée et une version post-traitée (un préfixe `post_`). Les colonnes dont le préfixe est `post_` contiennent la valeur qui est finalement utilisée dans les rapports. La plupart des organisations utilisent uniquement les colonnes `post_` lorsqu’elles sont disponibles. Le tableau suivant compare les propriétés de ces colonnes :
 
 | Valeur de colonne prétraitée | Valeur de colonne post-traitée |
 | --- | --- |
-| Tel qu&#39;il a été collecté | Utilisé dans le reporting |
-| Avant les règles de traitement | Règles après traitement |
+| Tel que collecté | Utilisé dans les rapports |
+| Avant les règles de traitement | Après les règles de traitement |
 | Avant les règles VISTA | Après les règles VISTA |
-| Aucune affectation appliquée | L’affectation s’applique |
+| Aucun affectation appliquée | L’affectation s’applique |
 
-Dans la mesure où Customer Journey Analytics ne comporte pas de concept de pré-traitement et de post-traitement, il est difficile de recréer les deux colonnes dans les flux de données CJA. Si vous souhaitez des approximations de ces colonnes, vous pouvez faire glisser plusieurs fois le même champ XDM dans la colonne dimensions pour créer plusieurs composants avec différents paramètres d’attribution :
+Dans la mesure où Customer Journey Analytics ne comporte pas de concept de pré-traitement et de post-traitement, il est difficile de recréer les deux colonnes dans les flux de données CJA. Si vous souhaitez des approximations de ces colonnes, vous pouvez faire glisser plusieurs fois le même champ XDM dans la colonne des dimensions pour créer plusieurs composants avec différents paramètres d’attribution :
 
-* **Colonne prétraitée** : aucune attribution
-* **Colonne post-traitée** : appliquez les mêmes paramètres d’attribution et d’expiration que sa variable Analytics dans les paramètres de la vue de données. La plupart des composants utilisent une attribution de « Dernière » et une expiration de « Visite ».
+* **Colonne prétraitée** : aucune attribution
+* **Colonne post-traitée** : appliquez les mêmes paramètres d’attribution et d’expiration que ceux de sa variable Analytics dans les paramètres de la vue de données. La plupart des composants utilisent une attribution « Dernière » et une expiration « Visite ».
 
 ## Colonnes de recherche de flux de données CJA {#cja-df-lookup}
 
-Cette colonne de flux de données Analytics utilise une table de recherche pour identifier la valeur souhaitée. Dans Customer Journey Analytics, la valeur est fournie directement sans tables de recherche. Assurez-vous que votre workflow prend en charge la valeur finale plutôt qu’une valeur de recherche intermédiaire.
+Cette colonne de flux de données Analytics utilise une table de recherche pour identifier la valeur souhaitée. Dans Customer Journey Analytics, la valeur est fournie directement sans tables de recherche. Assurez-vous que votre processus prend en charge la valeur finale plutôt qu’une valeur de recherche intermédiaire.
 
 ## Colonnes non applicables du flux de données de CJA {#cja-df-na}
 
@@ -325,4 +325,4 @@ Cette colonne de flux de données Analytics contient des données qui ne peuvent
 
 ## Agent utilisateur du flux de données CJA {#cja-df-ua}
 
-Vous ne pouvez pas collecter simultanément les informations sur l’agent utilisateur et les informations de recherche de l’appareil. La population de ces dimensions s’exclut mutuellement. Vous devez choisir si vous souhaitez collecter directement l’agent utilisateur ou les informations de recherche d’appareil (en fonction de l’agent utilisateur) lors de la [Configuration d’un flux de données](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/configure#geolocation-device-lookup).
+Vous ne pouvez pas collecter simultanément les informations sur l’agent utilisateur et les informations de recherche de l’appareil. La population de ces dimensions s’exclut mutuellement. Vous devez choisir si vous souhaitez collecter directement les informations de l’agent utilisateur ou de recherche d’appareil (en fonction de l’agent utilisateur) lors de la [configuration d’un flux de données](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/configure#geolocation-device-lookup).
