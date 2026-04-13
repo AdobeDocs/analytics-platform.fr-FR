@@ -82,7 +82,7 @@ Pour appliquer un filtre à la liste des connexions, sélectionnez ![Filtrer](/h
 | **[!UICONTROL Jeux de données]** | Seules les connexions associées aux jeux de données que vous sélectionnez s’affichent. |
 | **[!UICONTROL Propriétaire]** | Seules les connexions appartenant aux personnes que vous sélectionnez s’affichent. |
 | **[!UICONTROL Sandbox]** | Seules les connexions disponibles dans les sandbox que vous sélectionnez s’affichent. |
-| **[!UICONTROL Type de connexion]** | Filtrez les connexions **[!UICONTROL B2B edition]** basées sur **[!UICONTROL personne]** ou sur [!BADGE compte]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}. |
+| **[!UICONTROL Type de connexion]** | Filtrez les connexions **&#x200B;**&#x200B;basées sur **[!UICONTROL personne]** ou sur [!BADGE compte]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}. |
 | **[!UICONTROL Utiliser dans CJA]** | Sélectionnez **[!UICONTROL Activé]** pour afficher uniquement les connexions activées pour une utilisation avec Customer Journey Analytics. Sélectionnez **[!UICONTROL Désactivé]** pour afficher uniquement les connexions qui ne sont pas encore activées pour une utilisation avec Customer Journey Analytics. |
 | **[!UICONTROL Intégrations]** | Seules les connexions avec les intégrations sélectionnées s’affichent. |
 

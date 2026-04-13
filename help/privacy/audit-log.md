@@ -48,7 +48,7 @@ Pour afficher et exporter les journaux d’audit, l’autorisation de contrôle 
 
 ## Afficher le journal d’audit dans l’interface utilisateur
 
-Dans Customer Journey Analytics, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Journaux d’audit]**.
+Dans Customer Journey Analytics, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Journaux d’audit]**.
 
 Le journal d’audit pour aujourd’hui et hier s’affiche par défaut.
 

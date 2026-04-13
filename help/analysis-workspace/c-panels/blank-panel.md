@@ -61,7 +61,7 @@ Vous pouvez effectuer les opérations suivantes :
   |---|---|
   | ![Tableau](/help/assets/icons/Table.svg) | [Tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) |
   | ![Ligne](/help/assets/icons/GraphTrend.svg) | [Ligne](/help/analysis-workspace/visualizations/line.md) |
-  | ![Graphique à barres verticales](/help/assets/icons/GraphBarVertical.svg) | [Barre](/help/analysis-workspace/visualizations/bar.md) |
+  | ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) | [Barre](/help/analysis-workspace/visualizations/bar.md) |
   | ![123](/help/assets/icons/123.svg) | [Numéro de résumé](/help/analysis-workspace/visualizations/summary-number-change.md) |
   | ![Texte](/help/assets/icons/Text.svg) | [Texte](/help/analysis-workspace/visualizations/text.md) |
   | ![Entonnoir de conversion](/help/assets/icons/ConversionFunnel.svg) | [Abandon](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) |

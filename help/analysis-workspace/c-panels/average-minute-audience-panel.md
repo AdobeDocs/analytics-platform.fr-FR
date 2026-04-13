@@ -187,6 +187,6 @@ Le panneau Audience moyenne par minute de média utilise uniquement la mesure d�
 >[!MORELIKETHIS]
 >
 > [Créer un panneau](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
-> &#x200B;> [Panneau Visiteurs et visiteuses simultanés de médias](media-concurrent-viewers.md)
-> &#x200B;> [Panneau Temps de lecture de média](media-playback-time-spent.md)
+> [Panneau Visiteurs et visiteuses simultanés de médias](media-concurrent-viewers.md)
+> [Panneau Temps de lecture de média](media-playback-time-spent.md)
 >
