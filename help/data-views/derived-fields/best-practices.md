@@ -6,9 +6,9 @@ feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
 hide: true
-source-git-commit: afb577bb72f2528c15acbc30794c900ea62b51b6
+source-git-commit: e5dea7e234585bd28a00df95342879dcba5b932f
 workflow-type: tm+mt
-source-wordcount: '2655'
+source-wordcount: '2741'
 ht-degree: 1%
 
 ---
@@ -61,7 +61,7 @@ Cette section traite des segments par défaut de la vue de données qui font ré
 
 ## Cas trop complexe lorsque les chaînes de règles
 
-Cette section traite des chaînes trop complexes de règles [Cas &#x200B;](./derived-fields.md#case-when).
+Cette section traite des chaînes trop complexes de règles [Cas ](./derived-fields.md#case-when).
 
 Customer Journey Analytics applique des [limites de fonction et d’opérateur](derived-fields.md#limitations) explicites par champ dérivé (par exemple, le nombre maximal d’opérateurs, le nombre maximal de fonctions par type). Les fonctions trop complexes et les chaînes au sein des fonctions sont plus difficiles à gérer et plus susceptibles de contenir des erreurs.
 
@@ -132,7 +132,7 @@ Cette section traite de l’utilisation incorrecte des champs dérivés. Surtout
 
 * Rogner/Minuscules : utilisez les paramètres des composants [Sous-chaîne](/help/data-views/component-settings/substring.md) et [Comportement](/help/data-views/component-settings/behavior.md), sauf si vous avez besoin de transformations à plusieurs étapes.
 * Exclusion de valeur : utilisez [Inclure les valeurs d’exclusion](/help/data-views/component-settings/include-exclude-values.md) pour les mesures ou les valeurs de dimension au niveau du composant de vue de données, et non dans un champ dérivé.
-* Attribution et persistance : évitez de simuler des dimensions dans un champ dérivé avec une logique [suivante ou précédente](./derived-fields.md#next-or-previous) ou une autre logique séquentielle. Utilisez les paramètres de vue de données [Attribution](/help/data-views/component-settings/attribution.md) et [Persistance](/help/data-views/component-settings/persistence.md) pour les dimensions.
+* Attribution et persistance : utilisez les paramètres de la vue de données [Persistance](/help/data-views/component-settings/persistence.md) (**[!UICONTROL Modèle d’attribution]** et **[!UICONTROL Expiration]**) pour les dimensions au lieu de les simuler dans un champ dérivé avec [Suivant ou Précédent](./derived-fields.md#next-or-previous) ou une autre logique séquentielle.
 * Groupement numérique : conservez le champ dérivé numérique et laissez la vue de données créer une dimension regroupée par-dessus, plutôt que des libellés de plage de codage en dur dans une chaîne [Cas quand](./derived-fields.md#case-when).
 * Logique conditionnelle : convertissez la logique d’indicateur simple 0 ou 1 en :
    * la mesure d’origine avec la logique de filtre des valeurs d’inclusion ou d’exclusion appliquée dans Analysis Workspace.
@@ -161,7 +161,7 @@ Customer Journey Analytics permet de contraindre des champs numériques aux dime
    * Définissez le type de composant sur **[!UICONTROL Mesure]** dans la vue de données.
    * Si le composant représente une mesure de sous-ensemble (par exemple, **[!UICONTROL Extraire les pages vues]**), utilisez une mesure filtrée dans la vue de données plutôt qu’une chaîne dérivée plus une mesure calculée en haut.
 * Si la sortie est un libellé :
-   * Définissez le type de composant sur **&#x200B;**&#x200B;puis configurez les paramètres [attribution](/help/data-views/component-settings/attribution.md) et [persistance](/help/data-views/component-settings/persistence.md) en conséquence.
+   * Définissez le type de composant sur **** et configurez les paramètres [Persistance](/help/data-views/component-settings/persistence.md) (**[!UICONTROL Modèle d’affectation]** et **[!UICONTROL Expiration]**) en conséquence.
 
 ## Pièges de la logique des canaux marketing et des campagnes
 
@@ -279,17 +279,17 @@ Cette section traite de la surexploitation des fonctions [Suivant](./derived-fie
 ### Modèles
 
 * Un champ dérivé utilise plusieurs fois des fonctions [Suivant ou Précédent](./derived-fields.md#next-or-previous) (ce qui est proche de la limite documentée par champ).
-* [&#x200B; Suivant ou Précédent &#x200B;](./derived-fields.md#next-or-previous) est utilisé pour implémenter une logique de persistance (par exemple : transférer une campagne vers l’avant) au lieu d’utiliser la persistance de la vue de données.
+* [ Suivant ou Précédent ](./derived-fields.md#next-or-previous) est utilisé pour implémenter une logique de persistance (par exemple : transférer une campagne vers l’avant) au lieu d’utiliser la persistance de la vue de données.
 
 ### Diagnostic des risques : qualité des données, maintenance élevée
 
 * Complexité et fragilité : une logique séquentielle lourde est plus difficile à raisonner et peut être rompue si les règles de sessionisation ou l&#39;ordre changent.
-* Redondance avec attribution ou persistance : certains cas d’utilisation (par exemple, l’attribution du canal Dernière touche sur une session) sont mieux couverts par les paramètres d’attribution de la vue de données.
+* Redondance avec la persistance de dimension : certains cas d’utilisation (par exemple, le canal Dernière touche sur une session) sont mieux couverts par les paramètres de vue de données [Persistance](/help/data-views/component-settings/persistence.md) (**[!UICONTROL modèle d’affectation]**) sur la dimension.
 
 ### Recommandations
 
-* Pour les modèles qui ressemblent à l’attribution standard, utilisez les paramètres de dimension [attribution](/help/data-views/component-settings/attribution.md) et [persistance](/help/data-views/component-settings/persistence.md) dans la vue de données au lieu de les simuler avec [Suivant ou Précédent](./derived-fields.md#next-or-previous).
-* Réservez la mention [Suivant ou Précédent](./derived-fields.md#next-or-previous) au chemin d’accès avancé à plusieurs étapes ou à l’étiquetage funnel que l’attribution seule ne peut pas atteindre (par exemple : concaténation de séquence de canal).
+* Pour les modèles qui ressemblent à la persistance standard (par exemple, transférer une valeur sur une session ou une personne), utilisez les paramètres [Persistance](/help/data-views/component-settings/persistence.md) de la dimension (**[!UICONTROL Modèle d’affectation]** et **[!UICONTROL Expiration]**) dans la vue de données au lieu de simuler ces modèles avec [Suivant ou Précédent](./derived-fields.md#next-or-previous).
+* Réservez la mention [Suivant ou Précédent](./derived-fields.md#next-or-previous) pour le chemin d’accès avancé à plusieurs étapes ou l’étiquetage funnel que la persistance des dimensions ne peut pas atteindre seule (par exemple : concaténation de séquence de canal).
 
 ## Ignorer le contexte de session et de niveau personne
 
@@ -350,13 +350,15 @@ Vérifiez également la configuration de la vue de données pour chaque composan
 ### Modèles
 
 * Une dimension dérivée possède une attribution par défaut (par exemple : Dernière touche avec expiration de session), mais le nom du champ dérivé implique une sémantique différente (par exemple : `First Campaign of Visit`, `Original Source`).
+* Une dimension dérivée possède les paramètres par défaut [Persistance](/help/data-views/component-settings/persistence.md) (par exemple : **[!UICONTROL Affectation la plus récente]** avec **[!UICONTROL Session]** expiration), mais le nom de la dimension dérivée implique une sémantique différente (par exemple : `First Campaign of Visit` ou `Original Source`).
 
 
 ### Diagnostic des risques : qualité des données
 
-* Incohérence sémantique : le libellé de la dimension suggère un comportement [attribution](/help/data-views/component-settings/attribution.md) ou [expiration](/help/data-views/component-settings/persistence.md) différent (par exemple : première touche ou source-originale) de celui qui est réellement configuré.
-* Cette incohérence augmente le risque que les analystes interprètent mal les rapports ou comparent des composants qui semblent similaires par nom, mais utilisent des modèles d’attribution différents.
+* Incohérence sémantique : le libellé de la dimension suggère un comportement d’attribution ou d’expiration différent (par exemple, attribution d’origine ou expiration au niveau de la personne) de ce qui est réellement configuré.
+* Cette incohérence augmente le risque que les analystes interprètent mal les rapports ou comparent des composants qui semblent similaires par leur nom, mais utilisent des modèles d’attribution différents.
 
 ### Recommandations
 
-* Ajustez le [&#x200B; modèle d’attribution et l’expiration &#x200B;](/help/data-views/component-settings/persistence.md) sur cette dimension pour aligner le nom et le comportement. Par exemple, une dimension de champ dérivé nommée `Original Source` doit utiliser l’attribution Première touche avec l’expiration définie sur Personne.
+* Ajustez le [ modèle d’attribution et l’expiration ](/help/data-views/component-settings/persistence.md) sur cette dimension pour aligner le nom et le comportement. Par exemple, une dimension de champ dérivé nommée `Original Source` doit utiliser l’attribution Première touche avec l’expiration définie sur Personne.
+* Ajustez les paramètres **[!UICONTROL Modèle d’affectation]** et **[!UICONTROL Expiration]** dans les paramètres [Persistance](/help/data-views/component-settings/persistence.md) de la dimension pour aligner le nom et le comportement. Par exemple, `Original Source` devez définir le **[!UICONTROL Modèle d’affectation]** sur **[!UICONTROL Original]** avec **[!UICONTROL Expiration]** défini sur **[!UICONTROL Personne]**.
