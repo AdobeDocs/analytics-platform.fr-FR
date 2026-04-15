@@ -6,7 +6,7 @@ feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
 hide: true
-source-git-commit: 4dd1e90a377c0939048397a0ec4af08123d324c1
+source-git-commit: 97339504546df94b6962170eb4bbae184193885c
 workflow-type: tm+mt
 source-wordcount: '2741'
 ht-degree: 1%
@@ -362,4 +362,3 @@ Vérifiez également la configuration de la vue de données pour chaque composan
 
 * Ajustez le [&#x200B; modèle d’attribution et l’expiration &#x200B;](/help/data-views/component-settings/persistence.md) sur cette dimension pour aligner le nom et le comportement. Par exemple, une dimension de champ dérivé nommée `Original Source` doit utiliser l’attribution Première touche avec l’expiration définie sur Personne.
 * Ajustez les paramètres **[!UICONTROL Modèle d’affectation]** et **[!UICONTROL Expiration]** dans les paramètres [Persistance](/help/data-views/component-settings/persistence.md) de la dimension pour aligner le nom et le comportement. Par exemple, `Original Source` devez définir le **[!UICONTROL Modèle d’affectation]** sur **[!UICONTROL Original]** avec **[!UICONTROL Expiration]** défini sur **[!UICONTROL Personne]**.
-
