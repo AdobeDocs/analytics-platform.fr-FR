@@ -533,7 +533,7 @@ ht-degree: 94%
          + [Lier des lectures de session](/help/use-cases/third-party/quantum-metric/tie-session-replays.md)
          + [Utiliser des cartes thermiques](/help/use-cases/third-party/quantum-metric/heatmap.md)
          + [Ajouter des événements de friction](/help/use-cases/third-party/quantum-metric/friction-events.md)
-         + {hide-from-toc}[Connecteur ](/help/use-cases/third-party/quantum-metric/source-connector.md)
+         + {hide-from-toc}[Connecteur &#x200B;](/help/use-cases/third-party/quantum-metric/source-connector.md)
 
 + Labs {#labs}
    + [Guide d’utilisation de Labs](../labs/labs.md)
