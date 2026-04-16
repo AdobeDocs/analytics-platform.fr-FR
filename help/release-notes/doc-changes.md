@@ -4,10 +4,10 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: a4287ab5b341f156d039b4bc35dc03482ba3f60c
+source-git-commit: 6ae1f8ccca5321b2ebab775cc12775c64377613e
 workflow-type: tm+mt
-source-wordcount: '5819'
-ht-degree: 96%
+source-wordcount: '5856'
+ht-degree: 95%
 
 ---
 
@@ -20,6 +20,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Fonctionnalité | Description |
 |---|---|
 | **Avril 2026** | |
+| Ajout d’une documentation manquante pour deux jeux de données qui peuvent être inclus lors de l’intégration de Journey Optimizer | [Deux jeux de données supplémentaires non liés aux profils et générés par le système](/help/integrations/ajo.md#high-throughput-add-on-datasets) sont inclus dans la connexion lorsque le module complémentaire de messagerie transactionnelle à haut débit est activé pour votre organisation IMS. |
 | Mise à jour des cas d’utilisation de l’analyse des cohortes | Sur la base des commentaires, des exemples Analysis Workspace ont été ajoutés aux cas d’utilisation de l’analyse des cohortes. |
 | **Mars 2026** | |
 | Répartition d’un panneau | Restructuration de la documentation autour de la [zone de dépôt pour un panneau](/help/analysis-workspace/c-panels/panels.md#drop-zone) afin de prendre en charge la nouvelle fonctionnalité [répartition](/help/analysis-workspace/c-panels/panels.md#break-down-a-panel). |

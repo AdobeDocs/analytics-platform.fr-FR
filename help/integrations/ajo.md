@@ -4,10 +4,10 @@ description: Importez les données générées par Adobe Journey Optimizer et 
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 830e16ecd4c43da114c63af51e4bb6e88bbb4ff8
 workflow-type: tm+mt
-source-wordcount: '3514'
-ht-degree: 100%
+source-wordcount: '3770'
+ht-degree: 93%
 
 ---
 
@@ -25,7 +25,7 @@ Lorsque vous avez activé la création de rapports de Customer Journey Analyti
 
 ### Connexion
 
-La connexion porte le nom **[!UICONTROL Connexion AJO activée (*nom du sandbox*)]** et contient les valeurs prêtes à l’emploi suivantes pour la configuration et les jeux de données :
+La connexion porte le nom **[!UICONTROL Connexion activée pour AJO (*nom du sandbox*)]** et possède les valeurs prêtes à l’emploi suivantes pour la configuration et les jeux de données :
 
 | **Paramètres de connexion** | Valeur |
 |---|---|
@@ -44,17 +44,33 @@ La connexion porte le nom **[!UICONTROL Connexion AJO activée (*nom du sandbox*
 | Nom du jeu de données | Schéma | Type de jeu de données | Type de source de données | ID de personne | Clé | Clé correspondante | Importer de nouvelles données | Renvoyer les données |
 |---|---|---|---|---|---|---|---|---|
 | [!UICONTROL Jeu de données d’entité AJO] | [!UICONTROL Schéma d’enregistrement d’entité AJO] | [!UICONTROL Rechercher] | [!UICONTROL Autre] | - | ` _id` | `_experience. decisioning. propositions. scopeDetails. correlationID` | ![Status Green](assets/../../connections/assets/status-green.svg) Activé | ![Status Gray](assets/../../connections/assets/status-gray.svg) Désactivé |
-| [!UICONTROL Événements d’étape de parcours] | [!UICONTROL Schéma d’événement d’étape de parcours pour Journey Orchestration] | [!UICONTROL Événement] | [!UICONTROL Autre] | [!UICONTROL  IdentityMap(\&lt;primary\>)] | - | - | ![Status Green](assets/../../connections/assets/status-green.svg) Activé | ![Status Gray](assets/../../connections/assets/status-gray.svg) Désactivé |
+| [!UICONTROL Événements d’étape de parcours] | [!UICONTROL Schéma d’événement d’étape de parcours pour Journey Orchestration] | [!UICONTROL Événement] | [!UICONTROL Autre] | [!UICONTROL &#x200B; IdentityMap(\&lt;primary\>)] | - | - | ![Status Green](assets/../../connections/assets/status-green.svg) Activé | ![Status Gray](assets/../../connections/assets/status-gray.svg) Désactivé |
 | [!UICONTROL Jeu de données d’événement d’expérience de tracking d’e-mail AJO] | [!UICONTROL Schéma d’événement d’expérience de tracking d’e-mail AJO] | [!UICONTROL Événement] | [!UICONTROL Autre] | [!UICONTROL IdentityMap(\&lt;primary\>)] | - | - | ![Status Green](assets/../../connections/assets/status-green.svg) Activé | ![Status Gray](assets/../../connections/assets/status-gray.svg) Désactivé |
 | [!UICONTROL Jeu de données d’événement de message de feedback AJO] | [!UICONTROL Schéma d’événement de commentaire aux messages AJO] | [!UICONTROL Événement] | [!UICONTROL Autre] | [!UICONTROL IdentityMap(\&lt;primary\>)] | - | - | ![Status Green](assets/../../connections/assets/status-green.svg) Activé | ![Status Gray](assets/../../connections/assets/status-gray.svg) Désactivé |
 | [!UICONTROL Jeu de données d’événement d’expérience de tracking de notifications push AJO] | [!UICONTROL Schéma d’événement d’expérience de tracking de notifications push AJO] | [!UICONTROL Événement] | [!UICONTROL Autre] | [!UICONTROL IdentityMap(\&lt;primary\>)] | - | - | ![Status Green](assets/../../connections/assets/status-green.svg) Activé | ![Status Gray](assets/../../connections/assets/status-gray.svg) Désactivé |
+| [!UICONTROL Jeu de données d’événement de retour de message AJO - Hors profil] <br/>(voir la section [Jeux de données complémentaires à haut débit](#high-throughput-add-on-datasets) ci-dessous) | [!UICONTROL Schéma d’événement de commentaire aux messages AJO] | [!UICONTROL Événement] | [!UICONTROL Autre] | [!UICONTROL IdentityMap(\&lt;primary\>)] | - | - | ![Status Green](assets/../../connections/assets/status-green.svg) Activé | ![Status Gray](assets/../../connections/assets/status-gray.svg) Désactivé |
+| [!UICONTROL Jeu de données d’événement d’expérience de suivi d’e-mail AJO - Hors profil] <br/>(voir la section [Jeux de données complémentaires à haut débit](#high-throughput-add-on-datasets) ci-dessous) | [!UICONTROL Schéma d’événement d’expérience de tracking d’e-mail AJO] | [!UICONTROL Événement] | [!UICONTROL Autre] | [!UICONTROL IdentityMap(\&lt;primary\>)] | - | - | ![Status Green](assets/../../connections/assets/status-green.svg) Activé | ![Status Gray](assets/../../connections/assets/status-gray.svg) Désactivé |
 
+#### Jeux de données complémentaires à haut débit
+
+Lorsque le module complémentaire de messagerie transactionnelle à haut débit est activé pour votre organisation IMS, deux jeux de données supplémentaires générés par le système et ne concernant pas les profils sont inclus dans la connexion :
+
+* Jeu De Données D’Événement De Retour De Message AJO - Non Profil
+
+* Jeu De Données D’Événement D’Expérience De Suivi D’E-Mail AJO - Non Profil
+
+Lorsque le module complémentaire de messagerie transactionnelle à haut débit est activé, deux nouveaux widgets sont disponibles dans les rapports Journey Optimizer au niveau global (sandbox) (ils ne sont pas disponibles au niveau de chaque campagne) :
+
+* **[!UICONTROL Widget de latence P95 mobile de 7 jours]** : affiche la latence P95 sous la forme d’une valeur unique, y compris la variation en pourcentage par rapport à la semaine précédente.
+* **[!UICONTROL Widget continu de débit P95 de 7 jours]** : affiche le débit P95 sous la forme d’une valeur unique, y compris la modification en pourcentage par rapport à la semaine précédente.
+
+Pour plus d’informations sur ces jeux de données et le module complémentaire de messagerie transactionnelle à débit élevé, voir [Activer le mode à débit élevé pour les campagnes déclenchées par API](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/campaigns/api-triggered-campaigns/api-triggered-high-throughput) dans la documentation de Adobe Journey Optimizer.
 
 ### Vue de données
 
 La vue de données porte le nom **Vue de données AJO activée (*nom du sandbox*)**.
 
-- Dans l’onglet **[!UICONTROL Configurer]**, les valeurs suivantes sont prêtes à l’emploi.
+* Dans l’onglet **[!UICONTROL Configurer]**, les valeurs suivantes sont prêtes à l’emploi.
 
   | Paramètres | Valeur |
   |---|---|
@@ -83,13 +99,13 @@ La vue de données porte le nom **Vue de données AJO activée (*nom du sandbox*
   | [!UICONTROL Premier jour de la semaine] | Dimanche |
 
 
-- Dans l’onglet **Composants** :
-   - Toutes les mesures et dimensions qui comportent [!UICONTROL (AJO)] sont ajoutées automatiquement à leur nom dans le cadre de cette configuration automatique.
-   - Certaines mesures ou dimensions, qui ont été ajoutées automatiquement, sont basées sur des champs dérivés. Ces champs dérivés sont spécifiquement créés pour cette intégration. Par exemple, la mesure [!UICONTROL Clics sur la page de destination (AJO)] est basée sur le champ dérivé [!UICONTROL Clics sur la page de destination].
-   - Certaines mesures ou dimensions possèdent une configuration supplémentaire. Par exemple, les paramètres [!UICONTROL Format] et [!UICONTROL Valeurs d’inclusion et d’exclusion] sont appliqués pour le [!UICONTROL Taux de plaintes relatives au spam (AJO)].
-   - Toutes les mesures et dimensions automatiquement ajoutées possèdent un libellé de contexte nommé `:`*`name_of_metric_or_dimension`*. Par exemple, la mesure [!UICONTROL Clics sur la page de destination (AJO)] possède le libellé de contexte `:Landing page clicks (AJO)`.
+* Dans l’onglet **Composants** :
+   * Toutes les mesures et dimensions qui comportent [!UICONTROL (AJO)] sont ajoutées automatiquement à leur nom dans le cadre de cette configuration automatique.
+   * Certaines mesures ou dimensions, qui ont été ajoutées automatiquement, sont basées sur des champs dérivés. Ces champs dérivés sont spécifiquement créés pour cette intégration. Par exemple, la mesure [!UICONTROL Clics sur la page de destination (AJO)] est basée sur le champ dérivé [!UICONTROL Clics sur la page de destination].
+   * Certaines mesures ou dimensions possèdent une configuration supplémentaire. Par exemple, les paramètres [!UICONTROL Format] et [!UICONTROL Valeurs d’inclusion et d’exclusion] sont appliqués pour le [!UICONTROL Taux de plaintes relatives au spam (AJO)].
+   * Toutes les mesures et dimensions automatiquement ajoutées possèdent un libellé de contexte nommé `:`*`name_of_metric_or_dimension`*. Par exemple, la mesure [!UICONTROL Clics sur la page de destination (AJO)] possède le libellé de contexte `:Landing page clicks (AJO)`.
 
-- Dans l’onglet **[!UICONTROL Paramètres]**, aucune valeur de configuration spécifique n’est appliquée.
+* Dans l’onglet **[!UICONTROL Paramètres]**, aucune valeur de configuration spécifique n’est appliquée.
 
 >[!IMPORTANT]
 >
@@ -117,6 +133,8 @@ Sélectionnez et configurez les jeux de données suivants :
 | Jeu de données d’événement d’expérience de tracking de notifications push AJO | Événement | ID de personne : `IdentityMap` | Contient des événements de suivi de notifications push tels que « [!UICONTROL Lancements d’application] ». |
 | Événements d’étape de parcours | Événement | ID de personne : `_experience.journeyOrchestration.`<br>`stepEvents.profileID` | Contient des événements indiquant les profils ayant participé à chaque nœud du parcours. |
 | Jeu de données d’entité AJO | Recherche | Clé : `_id`<br>clé correspondante : `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | Contient des classifications qui associent des métadonnées de parcours et de campagne à toutes les données d’événement Journey Optimizer. |
+| Jeu De Données D’Événement De Retour De Message AJO - Non Profil | Événement | ID de personne : `IdentityMap` | Contient des événements de retour de diffusion de messages ne concernant pas les profils. Disponible uniquement lorsque le [module complémentaire de messagerie transactionnelle à débit élevé](#high-throughput-add-on-datasets) est activé. |
+| Jeu De Données D’Événement D’Expérience De Suivi D’E-Mail AJO - Non Profil | Événement | ID de personne : `IdentityMap` | Contient des événements d’expérience de suivi d’e-mail hors profil. Disponible uniquement lorsque le [module complémentaire de messagerie transactionnelle à débit élevé](#high-throughput-add-on-datasets) est activé. |
 
 {style="table-layout:auto"}
 
@@ -220,7 +238,7 @@ Vous pouvez créer les mesures suivantes dans une vue de données pour obtenir u
 | Fin du parcours (AJO) | True si l’étape actuelle entraînait la fin d’une instance du parcours. Il s’agit de la dernière étape d’un parcours pour un profil donné qui a été exécutée avec succès. | Événements d’étape de parcours | `_experience.journeyOrchestration.`<br/>`stepEvents.instanceEnded` | Type de composant : mesure |
 | Entrées du parcours (AJO) | True si l’événement d’étape était un événement d’entrée de parcours pour un profil. | Événements d’étape de parcours | Champs dérivés | Type de composant : mesure (champ dérivé) |
 | Sorties du parcours (AJO) | True si l’étape actuelle entraînait la fin d’une instance du parcours. Il s’agit de la dernière étape d’un parcours pour un profil donné qui a été exécutée avec succès. | Événements d’étape de parcours | `_experience.journeyOrchestration.`<br/>`stepEvents.instanceEnded` | Type de composant : mesure |
-| Échecs du parcours (AJO) | Indique l’état actuel de l’étape dont l’exécution est terminée. Valeurs possibles : `Transitions` (l’étape suivante se produit sur une transition d’événement), `EndStep` (la dernière étape de cette instance de parcours a été exécutée), `Error` (cette étape a rencontré une condition d’erreur, mettant fin à l’instance de parcours actuelle), `TimedOut` (l’étape actuelle s’est terminée en raison d’un délai d’attente lors d’une récupération ou d’une action). | Événements d’étape de parcours | `_experience.journeyOrchestration.`<br/>`stepEvents.stepStatus` | Type de composant : mesure |
+| Échecs du parcours (AJO) | Indique l’état actuel de l’étape dont l’exécution est terminée. Valeurs possibles : `Transitions` (l’étape suivante se produit sur une transition d’événement), `EndStep` (la dernière étape de cette instance de parcours a été exécutée), `Error` (cette étape a rencontré une condition d’erreur, mettant fin à l’instance de parcours actuelle), `TimedOut` (l’étape actuelle s’est terminée en raison d’une temporisation lors d’une récupération ou d’une action). | Événements d’étape de parcours | `_experience.journeyOrchestration.`<br/>`stepEvents.stepStatus` | Type de composant : mesure |
 | Clics sur la page de destination (AJO) | Nombre total de clics sur la page de destination. | Jeu de données d’événement d’expérience de suivi d’e-mail AJO | Champs dérivés | Type de composant : mesure (champ dérivé) |
 | Conversions de pages de destination (AJO) | Nombre total de conversions sur la page de destination. | Jeu de données d’événement d’expérience de suivi d’e-mail AJO | `_experience.customerJourneyManagement.`<br/>`messageInteraction.interactionType` | Type de composant : mesure |
 | Vues de la page de destination (AJO) | Nombre total de vues sur la page de destination. | Jeu de données d’événement d’expérience de suivi d’e-mail AJO | `_experience.customerJourneyManagement.`<br/>`messageInteraction.interactionType` | Type de composant : mesure |
