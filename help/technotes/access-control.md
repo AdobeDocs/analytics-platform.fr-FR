@@ -6,10 +6,10 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 81e08ecb593b6ba789c479d0e648cbe7ba0a82d6
+source-git-commit: 3cf3e24fc6c2ea2392e0c5bb97df17f25a023f4d
 workflow-type: tm+mt
-source-wordcount: '1554'
-ht-degree: 96%
+source-wordcount: '1568'
+ht-degree: 95%
 
 ---
 
@@ -132,8 +132,9 @@ L’onglet **[!UICONTROL Autorisations]** s’affiche sur chaque profil de produ
 | [!UICONTROL Outils de création de rapports] | [!UICONTROL Partager les liens du projet avec tout le monde] | Autoriser le [partage du projet avec tout le monde.](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/curate-share/share-projects) |
 | [!UICONTROL Outils de création de rapports] | [!UICONTROL Prévisions] | Autoriser l’accès à la fonctionnalité [Prévision](../analysis-workspace/c-forecast/forecasting.md) d’Analysis Workspace |
 | [!UICONTROL Outils de création de rapports] | [!UICONTROL Assistant IA : connaissances du produit] | Autoriser l’accès à l’[assistant AI](../ai-assistant.md) pour acquérir des connaissances sur les produits. |
-| [!UICONTROL Outils de création de rapports] | [!UICONTROL Agent Data Insights] | Autoriser les utilisateurs à accéder à [Data Insights Agent](../data-analysis-ai.md) pour les informations de données pilotées par l’IA. |
+| [!UICONTROL Outils de création de rapports] | [!UICONTROL Agent Data Insights] | Autoriser les utilisateurs à accéder à [&#128279;](../data-analysis-ai.md) pour les informations de données pilotées par l’IA. |
 | [!UICONTROL Outils de création de rapports] | [!UICONTROL Légendes intelligentes] | Autoriser l’accès aux [légendes intelligentes](/help/analysis-workspace/visualizations/intelligent-captions.md). |
+| [!UICONTROL Outils de création de rapports] | [!UICONTROL Accès MCP] | Autoriser les utilisateurs à accéder au serveur MCP [&#128279;](https://developer.adobe.com/analytics-mcp/docs/cja/). |
 | [!UICONTROL Outils des vues de données] | [!UICONTROL Export du tableau complet] | Autorise l’[export des tableaux complets dans le cloud](/help/analysis-workspace/export/export-cloud.md) |
 | [!UICONTROL Outils des vues de données] | [!UICONTROL Extension BI de CJA] | Autoriser l’utilisation de l’extension [BI](../data-views/bi-extension.md). |
 
