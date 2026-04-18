@@ -6,7 +6,7 @@ feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
 hide: true
-source-git-commit: 01e2c7668bf31d9a3ed1ee55d8692a3616f5de4d
+source-git-commit: ee6eb18fc2a720e61670c571847bacf836b0b039
 workflow-type: tm+mt
 source-wordcount: '2741'
 ht-degree: 1%
@@ -61,7 +61,7 @@ Cette section traite des segments par défaut de la vue de données qui font ré
 
 ## Cas trop complexe lorsque les chaînes de règles
 
-Cette section traite des chaînes trop complexes de règles [Cas &#x200B;](./derived-fields.md#case-when).
+Cette section traite des chaînes trop complexes de règles [Cas ](./derived-fields.md#case-when).
 
 Customer Journey Analytics applique des [limites de fonction et d’opérateur](derived-fields.md#limitations) explicites par champ dérivé (par exemple, le nombre maximal d’opérateurs, le nombre maximal de fonctions par type). Les fonctions trop complexes et les chaînes au sein des fonctions sont plus difficiles à gérer et plus susceptibles de contenir des erreurs.
 
@@ -161,7 +161,7 @@ Customer Journey Analytics permet de contraindre des champs numériques aux dime
    * Définissez le type de composant sur **[!UICONTROL Mesure]** dans la vue de données.
    * Si le composant représente une mesure de sous-ensemble (par exemple, **[!UICONTROL Extraire les pages vues]**), utilisez une mesure filtrée dans la vue de données plutôt qu’une chaîne dérivée plus une mesure calculée en haut.
 * Si la sortie est un libellé :
-   * Définissez le type de composant sur **&#x200B;**&#x200B;et configurez les paramètres [Persistance](/help/data-views/component-settings/persistence.md) (**[!UICONTROL Modèle d’affectation]** et **[!UICONTROL Expiration]**) en conséquence.
+   * Définissez le type de composant sur **** et configurez les paramètres [Persistance](/help/data-views/component-settings/persistence.md) (**[!UICONTROL Modèle d’affectation]** et **[!UICONTROL Expiration]**) en conséquence.
 
 ## Pièges de la logique des canaux marketing et des campagnes
 
@@ -279,7 +279,7 @@ Cette section traite de la surexploitation des fonctions [Suivant](./derived-fie
 ### Modèles
 
 * Un champ dérivé utilise plusieurs fois des fonctions [Suivant ou Précédent](./derived-fields.md#next-or-previous) (ce qui est proche de la limite documentée par champ).
-* [&#x200B; Suivant ou Précédent &#x200B;](./derived-fields.md#next-or-previous) est utilisé pour implémenter une logique de persistance (par exemple : transférer une campagne vers l’avant) au lieu d’utiliser la persistance de la vue de données.
+* [ Suivant ou Précédent ](./derived-fields.md#next-or-previous) est utilisé pour implémenter une logique de persistance (par exemple : transférer une campagne vers l’avant) au lieu d’utiliser la persistance de la vue de données.
 
 ### Diagnostic des risques : qualité des données, maintenance élevée
 
@@ -360,6 +360,5 @@ Vérifiez également la configuration de la vue de données pour chaque composan
 
 ### Recommandations
 
-* Ajustez le [&#x200B; modèle d’attribution et l’expiration &#x200B;](/help/data-views/component-settings/persistence.md) sur cette dimension pour aligner le nom et le comportement. Par exemple, une dimension de champ dérivé nommée `Original Source` doit utiliser l’attribution Première touche avec l’expiration définie sur Personne.
+* Ajustez le [ modèle d’attribution et l’expiration ](/help/data-views/component-settings/persistence.md) sur cette dimension pour aligner le nom et le comportement. Par exemple, une dimension de champ dérivé nommée `Original Source` doit utiliser l’attribution Première touche avec l’expiration définie sur Personne.
 * Ajustez les paramètres **[!UICONTROL Modèle d’affectation]** et **[!UICONTROL Expiration]** dans les paramètres [Persistance](/help/data-views/component-settings/persistence.md) de la dimension pour aligner le nom et le comportement. Par exemple, `Original Source` devez définir le **[!UICONTROL Modèle d’affectation]** sur **[!UICONTROL Original]** avec **[!UICONTROL Expiration]** défini sur **[!UICONTROL Personne]**.
-
