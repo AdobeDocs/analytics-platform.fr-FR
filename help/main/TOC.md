@@ -2,9 +2,9 @@
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 35d365dec8bc9afdfd55405dbcfa082280515b18
+source-git-commit: 8fe31fe0603c2b17fee930011cce915df3c76200
 workflow-type: tm+mt
-source-wordcount: '1392'
+source-wordcount: '1398'
 ht-degree: 94%
 
 ---
@@ -533,7 +533,7 @@ ht-degree: 94%
          + [Lier des lectures de session](/help/use-cases/third-party/quantum-metric/tie-session-replays.md)
          + [Utiliser des cartes thermiques](/help/use-cases/third-party/quantum-metric/heatmap.md)
          + [Ajouter des événements de friction](/help/use-cases/third-party/quantum-metric/friction-events.md)
-         + {hide-from-toc}[Connecteur &#x200B;](/help/use-cases/third-party/quantum-metric/source-connector.md)
+         + {hide-from-toc}[Connecteur ](/help/use-cases/third-party/quantum-metric/source-connector.md)
 
 + Labs {#labs}
    + [Guide d’utilisation de Labs](../labs/labs.md)
@@ -557,3 +557,4 @@ ht-degree: 94%
    + [Gérer l’utilisation](../technotes/estimate-usage.md)
 
 + [API Customer Journey Analytics](https://developer.adobe.com/cja-apis/docs/?lang=fr)
++ [Serveur Customer Journey Analytics MCP](https://developer.adobe.com/analytics-mcp/docs/cja/)
