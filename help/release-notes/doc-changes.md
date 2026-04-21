@@ -4,9 +4,9 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 6ae1f8ccca5321b2ebab775cc12775c64377613e
+source-git-commit: 68c9d38f4fe60a9b8e661309698ba0ec38e2ea9b
 workflow-type: tm+mt
-source-wordcount: '5856'
+source-wordcount: '5874'
 ht-degree: 95%
 
 ---
@@ -20,6 +20,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Fonctionnalité | Description |
 |---|---|
 | **Avril 2026** | |
+| Instructions relatives aux champs dérivés | Ajout d’un article avec des [directives](/help/use-cases/data-views/derived-fields/guidelines.md) (bonnes pratiques, mécanismes de sécurisation et pièges courants) pour l’utilisation des champs dérivés. |
 | Ajout d’une documentation manquante pour deux jeux de données qui peuvent être inclus lors de l’intégration de Journey Optimizer | [Deux jeux de données supplémentaires non liés aux profils et générés par le système](/help/integrations/ajo.md#high-throughput-add-on-datasets) sont inclus dans la connexion lorsque le module complémentaire de messagerie transactionnelle à haut débit est activé pour votre organisation IMS. |
 | Mise à jour des cas d’utilisation de l’analyse des cohortes | Sur la base des commentaires, des exemples Analysis Workspace ont été ajoutés aux cas d’utilisation de l’analyse des cohortes. |
 | **Mars 2026** | |
@@ -48,7 +49,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Configuration de l’attribution | Mises à jour supplémentaires pour refléter les nouvelles options de configuration de l’attribution pour le modèle, le conteneur et l’intervalle de recherche en amont. |
 | Ingérer et utiliser des audiences Experience Platform | Mise à jour de l’article sur les cas d’utilisation relatif à [l’ingestion et l’utilisation d’audiences Experience Platform](/help/use-cases/data-ingestion/ingest-aep-segments.md). |
 | Préparer votre organisation à la mise à niveau vers Customer Journey Analytics | Ajout d’informations sur la manière de [préparer une organisation à la mise à niveau vers Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-org-readiness.md). |
-| Créer un rapport sur le trafic généré par LLM et IA | Ajout d’un [article de cas d’utilisation](/help/use-cases/ai-traffic.md) sur la création de rapports sur le trafic généré par LLM et IA à l’aide de champs dérivés comme base. Cet article s’appuie sur l’article de blog [Suivi et analyse du trafic généré par LLM et par IA dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967?profile.language=fr). |
+| Créer un rapport sur le trafic généré par LLM et IA | Ajout d’un [article de cas d’utilisation](/help/use-cases/data-views/derived-fields/ai-traffic.md) sur la création de rapports sur le trafic généré par LLM et IA à l’aide de champs dérivés comme base. Cet article s’appuie sur l’article de blog [Suivi et analyse du trafic généré par LLM et par IA dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967?profile.language=fr). |
 | **Septembre 2025** | |
 | Dates antérieures à 1900 | Ajout d’une [note](/help/connections/create-connection.md#datasets) sur la manière dont les dates antérieures à 1900 sont gérées par Customer Journey Analytics. |
 | Créer des rapports en temps réel | Ajout de la documentation sur la [création de rapports en temps réel](/help/components/real-time/real-time.md) dans Customer Journey Analytics. |
@@ -178,7 +179,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Mises à jour de la conversion des devises | Clarification de la documentation sur la façon de [configurer la conversion des devises](/help/data-views/component-settings/format.md). |
 | Mises à jour de la documentation sur la détection des anomalies | La documentation relative à la détection des anomalies se trouvait auparavant dans une section sur Virtual Analyst. Les modifications suivantes ont été apportées : <ul><li>Le terme Virtual Analyst a été supprimé de la documentation.</li><li>La section sur la [Détection des anomalies](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) a été déplacée directement sous la section Analysis Workspace.</li></ul> |
 | **Octobre 2023** | |
-| Utilisation d’un champ dérivé pour définir des objectifs/cibles | Ajout d’un article sur les [cas d’utilisation](../use-cases/goals-using-derived-fields.md) illustrant comment utiliser des champs dérivés pour définir des objectifs/cibles et créer des rapports à leur sujet. |
+| Utilisation d’un champ dérivé pour définir des objectifs/cibles | Ajout d’un article sur les [cas d’utilisation](/help/use-cases/data-views/derived-fields/goals-using-derived-fields.md) illustrant comment utiliser des champs dérivés pour définir des objectifs/cibles et créer des rapports à leur sujet. |
 | Exporter des tableaux complets dans le cloud | Ajout d’une documentation sur l’export de tableaux complets avec des millions de lignes Workspace vers des destinations cloud. <p>L’export de tableaux complets permet une diffusion unique ou planifiée de tableaux de données conçus dans Workspace avec une prise en charge allant jusqu’à cinq répartitions, cinq mesures, segments et mesures calculées, le tout dans un tableau concaténé. Il s’agit de l’évolution des rapports des entrepôts de données dans Adobe Analytics, avec de nombreuses nouvelles fonctionnalités souvent demandées et qui ne sont pas disponibles dans les entrepôts de données aujourd’hui.</p><p>Pour plus d’informations, consultez [Export des rapports Customer Journey Analytics dans le cloud](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/export-cloud.html?lang=fr). |
 | Gestionnaire des activités de rapport | Ajout de documentation pour le Gestionnaire des activités de rapports. <p>Le Gestionnaire des activités de rapport vous permet d’afficher la capacité de création de rapports pour chaque connexion de votre organisation. Il offre aux administrateurs et administratrices une visibilité détaillée sur la consommation de rapports et permet de diagnostiquer et de résoudre facilement les problèmes de capacité pendant les heures de pointe de création de rapports.</p> <p>Les nouveaux articles suivants ont été ajoutés :<ul><li>[Vue d’ensemble du Gestionnaire des activités de rapport](/help/reporting-activity-manager/reporting-activity-overview.md)</li><li>[Afficher l’activité de rapports dans le Gestionnaire d’activités de rapports](/help/reporting-activity-manager/reporting-activity.md)</li><li>[Annuler les requêtes dans le Gestionnaire d’activités de rapports](/help/reporting-activity-manager/reporting-activity-cancel-requests.md)</ul> |
 | Nouvelles colonnes sur les pages de gestion | Documentation sur de nouvelles colonnes désormais disponibles dans le [gestionnaire de mesures calculées](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-manager.html?lang=fr) et le [gestionnaire de segments](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/manage-filters.html?lang=fr). |

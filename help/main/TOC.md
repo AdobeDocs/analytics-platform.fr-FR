@@ -2,7 +2,7 @@
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 01e2c7668bf31d9a3ed1ee55d8692a3616f5de4d
+source-git-commit: 35d365dec8bc9afdfd55405dbcfa082280515b18
 workflow-type: tm+mt
 source-wordcount: '1392'
 ht-degree: 94%
@@ -159,7 +159,6 @@ ht-degree: 94%
    + [Référence de composant standard](../data-views/component-reference.md)
    + [Extension BI](../data-views/bi-extension.md)
    + [Champs dérivés](../data-views/derived-fields/derived-fields.md)
-   + {hide-from-toc}[Bonnes pratiques - masquées](/help/data-views/derived-fields/best-practices.md)
    + [Données de résumé](../data-views/summary-data.md)
    + [Libellés et politiques](../data-views/data-governance.md)
    + Mesures et dimensions partagées{#shared-metrics-dimensions}
@@ -514,9 +513,10 @@ ht-degree: 94%
          + [Visualisations](/help/use-cases/data-views/bi-extension/visualizations.md)
          + [Avertissements](/help/use-cases/data-views/bi-extension/caveats.md)
 
-   + Champs dérivés {#derived-fields}
-      + [Créer un rapport sur le trafic généré par LLM et IA](/help/use-cases/ai-traffic.md)
-      + [Créer un rapport sur les objectifs](../use-cases/goals-using-derived-fields.md)
+      + Champs dérivés {#derived-fields}
+         + [Instructions relatives aux champs dérivés](/help/use-cases/data-views/derived-fields/guidelines.md)
+         + [Créer un rapport sur le trafic généré par LLM et IA](/help/use-cases/data-views/derived-fields/ai-traffic.md)
+         + [Créer un rapport sur les objectifs](/help/use-cases/data-views/derived-fields/goals-using-derived-fields.md)
    + Analyse de produit {#product-analysis}
       + [Analyse de produit](/help/use-cases/product-analysis.md)
    + Groupement {#stitching}

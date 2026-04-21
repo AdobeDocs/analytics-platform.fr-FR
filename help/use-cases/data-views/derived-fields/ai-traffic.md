@@ -4,13 +4,13 @@ description: Découvrez comment utiliser les champs dérivés comme base pour cr
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+exl-id: 29857457-3fbb-441c-8761-91712b9df20f
+source-git-commit: aa29067a244c588e6d830f0a039db90e99eaf5d3
 workflow-type: tm+mt
 source-wordcount: '1277'
 ht-degree: 1%
 
 ---
-
 
 # Créer un rapport sur le trafic généré par LLM et IA
 
@@ -25,12 +25,12 @@ Cet article de cas d’utilisation explique comment utiliser la fonctionnalité 
 
 Pour détecter le trafic généré par LLM et par l’IA, faites la distinction entre :
 
-* **robots LLM** : collectez des données pour l’entraînement et la récupération de la génération augmentée (RAG).
+* robots d&#39;exploration LLM **: collecter des données pour l&#39;entraînement et la récupération de la génération augmentée (RAG).**
 * **Agents AI** : fonctionnent comme des interfaces qui exécutent des tâches au nom de l’homme. Les agents d’IA préfèrent interagir par le biais d’API, qui contournent les méthodes de suivi Web Analytics. Néanmoins, vous pouvez toujours analyser une partie significative du trafic généré par l’IA via les sites web.
 
 Trois méthodes de détection principales courantes pour identifier et surveiller le trafic généré par LLM et par l’IA sont les suivantes :
 
-* **Identification de l’agent utilisateur** : lorsqu’une requête est envoyée à votre serveur, l’en-tête User-Agent HTTP est extrait et analysé par rapport aux modèles d’agent et de robot d’exploration AI connus. Cette méthode côté serveur nécessite l’accès aux en-têtes HTTP et est plus efficace lorsqu’elle est implémentée au niveau de la couche de collecte de données.
+* **Identification de l’agent utilisateur** : lorsqu’une requête est envoyée à votre serveur, l’en-tête User-Agent HTTP est extrait et analysé par rapport aux modèles de robot d&#39;exploration d’IA et d’agent connus. Cette méthode côté serveur nécessite l’accès aux en-têtes HTTP et est plus efficace lorsqu’elle est implémentée au niveau de la couche de collecte de données.
 * **Classification de référent** : l’en-tête référent HTTP contient l’URL de la page web précédente qui pointait vers la requête en cours. Cet en-tête s’affiche lorsque les utilisateurs cliquent sur votre site à partir d’interfaces web telles que ChatGPT ou Perplexity.
 * **Détection des paramètres de requête** : les services d’IA peuvent ajouter des paramètres d’URL (en particulier des paramètres UTM) aux liens. Ces paramètres persistent dans l’URL et peuvent être détectés par le biais d’implémentations d’analyse standard, ce qui rend ces paramètres d’URL des indicateurs précieux même dans les scénarios de suivi côté client.
 
@@ -39,7 +39,7 @@ Le tableau suivant illustre la manière dont les méthodes de détection peuvent
 
 | Scénario | Identification de l&#39;agent utilisateur | Classification de référent | Détection des paramètres de requête |
 |---|---|---|---|
-| **Formation d&#39;un modèle** | L’agent (`GPTBot`, `ClaudeBot`, etc.) peut être identifié lors de l’implémentation de la journalisation côté serveur. | Aucune classification n’est possible. Les robots d’exploration AI ne génèrent pas de référents pendant la formation. | La détection est impossible. Les robots d’exploration AI n’ajoutent pas de paramètres pendant l’entraînement. |
+| **Formation d&#39;un modèle** | L’agent (`GPTBot`, `ClaudeBot`, etc.) peut être identifié lors de l’implémentation de la journalisation côté serveur. | Aucune classification n’est possible. Les robots d&#39;exploration d’IA ne génèrent pas de référents pendant la formation. | La détection est impossible. Les robots d&#39;exploration d’IA n’ajoutent pas de paramètres pendant l’entraînement. |
 | **Navigation de l’agent** | L’agent (`ChatGPT-User`, `claude-web`) peut être identifié lorsque la journalisation côté serveur capture les en-têtes. | La classification est possible si l’agent navigue depuis une interface d’IA avec la conservation des référents. | La détection est parfois possible si le service d’IA ajoute des paramètres de tracking. |
 | **Récupération de la génération augmentée (RAG) pour répondre à la requête** | L’agent (`OAI-SearchBot`, `PerplexityBot`) peut être identifié à l’aide de la journalisation côté serveur. | Aucune classification n’est généralement possible, car les opérations RAG contournent souvent les mécanismes référents. | La détection est rarement possible, sauf si elle est spécifiquement mise en œuvre par le fournisseur d’IA. |
 | **L’utilisateur clique jusqu’au** | L’agent ne peut pas être identifié. L’agent AI apparaît comme un agent utilisateur normal. | La classification est possible lorsque les utilisateurs cliquent sur des liens à partir des interfaces d’IA ([chatgpt.com](https://chatgpt.com), [claude.ai](https://claude.ai), etc.). | La détection est possible lorsque les services d’IA ajoutent des paramètres UTM aux liens sortants. |
@@ -63,7 +63,7 @@ Depuis août 2025, les signaux spécifiques suivants peuvent être identifiés p
 <table>
 <thead>
 <tr>
-<th>Crawler</th>
+<th>Robot d'exploration</th>
 <th>Chaîne de l’agent utilisateur</th>
 <th>Objectif/Comportement</th>
 </tr>
@@ -72,7 +72,7 @@ Depuis août 2025, les signaux spécifiques suivants peuvent être identifiés p
 <tr>
 <td><strong>GPTBot</strong></td>
 <td><code>Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; GPTBot/1.1; +<a href="https://openai.com/gptbot" target="_blank" rel="noopener nofollow noreferrer">https://openai.com/gptbot</a></code></td>
-<td><a href="https://platform.openai.com/docs/bots/" target="_blank" rel="noopener nofollow noreferrer">Robot d’exploration web principal d’OpenAI pour la formation au ChatGPT et aux modèles de langue</a></td>
+<td><a href="https://platform.openai.com/docs/bots/" target="_blank" rel="noopener nofollow noreferrer">Robot d'exploration web principal d’OpenAI pour la formation au ChatGPT et aux modèles de langue</a></td>
 </tr>
 <tr>
 <td><strong>ChatGPT-User</strong></td>
@@ -87,12 +87,12 @@ Depuis août 2025, les signaux spécifiques suivants peuvent être identifiés p
 <tr>
 <td><strong>OAI-SearchBot</strong></td>
 <td><code>Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; OAI-SearchBot/1.0; +<a href="https://openai.com/searchbot" target="_blank" rel="noopener nofollow noreferrer">https://openai.com/searchbot</a></code></td>
-<td><a href="https://platform.openai.com/docs/bots/" target="_blank" rel="noopener nofollow noreferrer">L'explorateur de recherche de ChatGPT pour découvrir du contenu</a></td>
+<td><a href="https://platform.openai.com/docs/bots/" target="_blank" rel="noopener nofollow noreferrer">Le robot d'exploration de recherche de ChatGPT pour découvrir du contenu</a></td>
 </tr>
 <tr>
 <td><strong>ClaudeBot</strong></td>
 <td><code>Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ClaudeBot/1.0; +claudebot@anthropic.com</code></td>
-<td><a href="https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler" target="_blank" rel="noopener nofollow noreferrer">Robot d'Anthropic pour la formation et la mise à jour de l'assistant Claude AI</a></td>
+<td><a href="https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler" target="_blank" rel="noopener nofollow noreferrer">Robot d'exploration d'Anthropic pour la formation et la mise à jour de l'assistant Claude AI</a></td>
 </tr>
 <tr>
 <td><strong>Claude-User</strong></td>
@@ -107,7 +107,7 @@ Depuis août 2025, les signaux spécifiques suivants peuvent être identifiés p
 <tr>
 <td><strong>PerplexityBot</strong></td>
 <td><code>Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; PerplexityBot/1.0; +<a href="https://www.perplexity.ai/perplexitybot" target="_blank" rel="noopener nofollow noreferrer">https://perplexity.ai/perplexitybot</a>)</code></td>
-<td><a href="https://docs.perplexity.ai/guides/bots" target="_blank" rel="noopener nofollow noreferrer">Explorateur Perplexity.ai pour l’indexation des données web en temps réel</a></td>
+<td><a href="https://docs.perplexity.ai/guides/bots" target="_blank" rel="noopener nofollow noreferrer">Robot d'exploration de Perplexity.ai pour l’indexation des données web en temps réel</a></td>
 </tr>
 <tr>
 <td><strong>Perplexity-User</strong></td>
@@ -117,12 +117,12 @@ Depuis août 2025, les signaux spécifiques suivants peuvent être identifiés p
 <tr>
 <td><strong>Google-Extended</strong></td>
 <td><code>Mozilla/5.0 (compatible; Google-Extended/1.0; +<a href="https://support.google.com/webmasters/answer/182072" target="_blank" rel="noopener nofollow noreferrer">http://www.google.com/bot.html</a>)</code></td>
-<td><a href="https://blog.google/technology/ai/an-update-on-web-publisher-controls/" target="_blank" rel="noopener nofollow noreferrer">Robot de recherche centré sur l’IA pour Google pour Gemini distinct de Google standard</a></td>
+<td><a href="https://blog.google/technology/ai/an-update-on-web-publisher-controls/" target="_blank" rel="noopener nofollow noreferrer">Le robot d'exploration centré sur l’IA de Google pour Gemini est distinct du googlebot standard</a></td>
 </tr>
 <tr>
 <td><strong>BingBot</strong></td>
 <td><code>Mozilla/5.0 (compatible; BingBot/1.0; +<a href="http://www.bing.com/bot.html" target="_blank" rel="noopener nofollow noreferrer">http://www.bing.com/bot.html</a>)</code></td>
-<td>Robot de recherche Microsoft alimentant la recherche Bing et le chat Bing (copilote)</td>
+<td>robot d'exploration Microsoft alimentant la recherche Bing et le chat Bing (Copilote)</td>
 </tr>
 <tr>
 <td><strong>DuckAssistBot</strong></td>
@@ -132,7 +132,7 @@ Depuis août 2025, les signaux spécifiques suivants peuvent être identifiés p
 <tr>
 <td><strong>YouBot</strong></td>
 <td><code>Mozilla/5.0 (compatible; YouBot (+<a href="http://www.you.com" target="_blank" rel="noopener nofollow noreferrer">http://www.you.com</a>))</code></td>
-<td>Explorateur derrière l’assistant de recherche et de navigateur d’IA de You.com</td>
+<td>Robot d'exploration derrière Recherche optimisée par l'IA et l’assistant de navigateur de You.com</td>
 </tr>
 <tr>
 <td><strong>meta-externalagent</strong></td>
@@ -142,17 +142,17 @@ Depuis août 2025, les signaux spécifiques suivants peuvent être identifiés p
 <tr>
 <td><strong>Amazonbot</strong></td>
 <td><code>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/600.2.5 (KHTML, like Gecko) Version/8.0.2 Safari/600.2.5 (Amazonbot/0.1; +<a href="https://developer.amazon.com/amazonbot" target="_blank" rel="noopener nofollow noreferrer">https://developer.amazon.com/support/amazonbot</a>)</code></td>
-<td><a href="https://developer.amazon.com/amazonbot" target="_blank" rel="noopener nofollow noreferrer">Explorateur Amazon pour les applications de recherche et d’IA</a></td>
+<td><a href="https://developer.amazon.com/amazonbot" target="_blank" rel="noopener nofollow noreferrer">robot d'exploration Amazon pour la recherche et les applications d’IA</a></td>
 </tr>
 <tr>
 <td><strong>Applebot</strong></td>
 <td><code>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Safari/605.1.15 (Applebot/0.1; +<a href="https://support.apple.com/kb/HT6619" target="_blank" rel="noopener nofollow noreferrer">http://www.apple.com/go/applebot</a>)</code></td>
-<td><a href="https://support.apple.com/en-us/119829" target="_blank" rel="noopener nofollow noreferrer">Robot d’exploration Apple pour Spotlight, Siri et Safari</a></td>
+<td><a href="https://support.apple.com/en-us/119829" target="_blank" rel="noopener nofollow noreferrer">robot d'exploration Apple pour Spotlight, Siri et Safari</a></td>
 </tr>
 <tr>
 <td><strong>Applebot-Extended</strong></td>
 <td><code>Mozilla/5.0 (compatible; Applebot-Extended/1.0; +<a href="https://www.apple.com/bot.html" target="_blank" rel="noopener nofollow noreferrer">http://www.apple.com/bot.html</a>)</code></td>
-<td><a href="https://support.apple.com/en-us/119829" target="_blank" rel="noopener nofollow noreferrer">Robot d’exploration axé sur l’IA d’Apple pour les futurs modèles d’IA (opt-in)</a></td>
+<td><a href="https://support.apple.com/en-us/119829" target="_blank" rel="noopener nofollow noreferrer">robot d'exploration Apple axé sur l’IA pour les futurs modèles d’IA (opt-in)</a></td>
 </tr>
 <tr>
 <td><strong>Bytespider</strong></td>
@@ -212,7 +212,7 @@ Depuis août 2025, les signaux spécifiques suivants peuvent être identifiés p
 <tr >
 <td>Perplexity AI</td>
 <td>perplexity.ai</td>
-<td>Trafic provenant de la recherche par l’IA avec des citations</td>
+<td>Trafic provenant de Recherche optimisée par l'IA avec des citations</td>
 </tr>
 <tr>
 <td>META AI</td>
