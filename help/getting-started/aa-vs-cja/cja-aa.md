@@ -5,9 +5,9 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 3294e1516f9478348743d0f1e9761b8b3497b1d2
 workflow-type: tm+mt
-source-wordcount: '2709'
+source-wordcount: '2708'
 ht-degree: 100%
 
 ---
@@ -88,7 +88,7 @@ Le tableau suivant répertorie les fonctionnalités disponibles dans Customer Jo
 
 | Fonctionnalité | Notes |
 | --- | --- |
-| **Advertising Cloud** | Vous pouvez [collecter des données historiques pour les ID AMO et les ID EF à utiliser dans Customer Journey Analytics](https://experienceleague.adobe.com/fr/docs/advertising/integrations/analytics/planning/rvars-to-evars). |
+| **Publicité** | Vous pouvez [collecter des données historiques pour les ID AMO et les ID EF à utiliser dans Customer Journey Analytics](https://experienceleague.adobe.com/fr/docs/advertising/integrations/analytics/planning/rvars-to-evars). |
 | **Alertes** | Le processus d’[utilisation des alertes dans Customer Journey Analytics](/help/components/c-intelligent-alerts/alerts-feature-comparison.md) est presque identique à celui des alertes dans Adobe Analytics. <p>Toutefois, en raison du délai de collecte de données dans Customer Journey Analytics, les alertes horaires ne sont pas disponibles. Dans Customer Journey Analytics, les alertes peuvent être configurées tous les jours, toutes les semaines ou tous les mois.</p> |
 | **Analytics for Target (A4T)** | L’[intégration entre Adobe Customer Journey Analytics et Target](https://experienceleague.adobe.com/fr/docs/target/using/integrate/cja/target-reporting-in-cja) fournit des outils puissants d’analyse et de gain de temps destinés à votre programme d’optimisation. |
 | **Publication dʼaudiences** | Pris en charge si une licence est associée à la plateforme de données clients ou aux produits Journey Optimizer d’Adobe. La [publication d’audiences](/help/components/audiences/audiences-overview.md) envoie des audiences au profil client en temps réel dans Experience Platform. |
