@@ -5,9 +5,9 @@ title: Fonctionnalité Comparaison des flux de données dans Customer Journey An
 feature: Components
 hide: true
 exl-id: 32b71016-7c53-409f-9ce4-521a40e2eb96
-source-git-commit: efa2cada4b26d71cce22c0d0e8662b6dd04f38f4
+source-git-commit: d79c6d883f436d97925e007f453879e20b4fcc04
 workflow-type: tm+mt
-source-wordcount: '2021'
+source-wordcount: '2059'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ Les flux de données dans Customer Journey Analytics et Adobe Analytics vous per
 
 ## Fonctionnalité Comparer les flux de données
 
-| **Options et concepts de configuration** | **Description** | **Customer Journey Analytics** | **Adobe Analytics** |
+| **Options et concepts de configuration** | **Description** | **Customer Journey Analytics** | **Adobe Analytics** |
 |---------|----------|---------|---------|
 | Entrée de données | Type de données qui peut être collecté et inclus dans les flux de données. | Prend en charge l’entrée de données cross-canal, y compris les données web, les données de centre d’appels, les données de point de vente, etc. | Prend uniquement en charge l’entrée de données web et mobile. |
 | Traitement des données | Les données doivent souvent être traitées avant d’être utiles pour la création de rapports, et ce traitement affecte la fonctionnalité des flux de données. Les données sont traitées à différentes étapes, selon que vous utilisez Customer Journey Analytics ou Adobe Analytics. | Les données sont traitées au moment du rapport. De ce fait, de nombreuses fonctions de création de rapports de Customer Journey Analytics peuvent être utilisées pour modifier les données historiques, comme le groupement, les champs dérivés, la préparation des données, la segmentation et la fenêtre de création de rapports. | Les données sont traitées au moment de la collecte. Par conséquent, les fonctionnalités de création de rapports telles que les règles de traitement, les règles VISTA, l’assemblage et la segmentation n’affectent pas les données historiques. |

@@ -4,10 +4,10 @@ title: Vue d’ensemble de la zone de travail de parcours
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+source-git-commit: 73238f03021b14567c20c686ab72d84afbaa9f81
 workflow-type: tm+mt
-source-wordcount: '1996'
-ht-degree: 100%
+source-wordcount: '2022'
+ht-degree: 96%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 100%
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente la visualisation Zone de travail de parcours dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**.<br/>Il n’existe aucune visualisation équivalente dans **Adobe Analytics**._
+_Cet article présente la visualisation de la zone de travail de Parcours dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**.<br/>Il n’existe aucune visualisation équivalente dans **Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
@@ -59,7 +59,7 @@ La visualisation Zone de travail de parcours vous permet d’analyser les parcou
 
 Vous pouvez [créer des analyses de parcours d’utilisation](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) en utilisant n’importe quelle combinaison d’événements, d’éléments de dimension, de segments et de périodes pour créer des nœuds de parcours. Connectez les nœuds pour créer le flux du parcours et inclure plusieurs chemins et points de décision. Faites glisser des nœuds sur la zone de travail pour réorganiser les événements et les conditions du parcours. Les données sont mises à jour en temps réel au fur et à mesure des modifications.
 
-[Les nœuds sont connectés](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#logic-when-connecting-nodes) en tant que « chemin définitif », ce qui signifie que les visiteurs et visiteuses sont comptabilisés tant qu’ils passent finalement d’un nœud à l’autre, quels que soient les événements qui se produisent entre les 2 nœuds. Le temps imparti aux utilisateurs et utilisatrices pour se déplacer sur le chemin est déterminé par le paramètre du conteneur.
+[&#x200B; Les nœuds sont connectés &#x200B;](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#logic-when-connecting-nodes) en tant que « chemin éventuel », ce qui signifie que les visiteurs sont comptabilisés tant qu’ils passent finalement d’un nœud à l’autre, quels que soient les événements qui se produisent entre les deux nœuds. Le temps imparti aux utilisateurs et utilisatrices pour se déplacer sur le chemin est déterminé par le paramètre du conteneur.
 
 ![Zone de travail de parcours](assets/journey-canvas.png)
 
@@ -200,13 +200,13 @@ Tenez compte des comportements suivants pour comprendre la synchronisation entre
 
 * **La modification d’un parcours dans la zone de travail du parcours entraîne l’arrêt de la synchronisation.**
 
-  Les modifications apportées à un parcours dans Journey Optimizer sont synchronisées avec la zone de travail du parcours [uniquement si le parcours n’a pas été modifié de manière significative dans la zone de travail du parcours](#differences-after-modifying-a-journey-in-journey-canvas). Une fois que vous avez modifié un parcours dans la zone de travail de parcours, les modifications que vous apportez au parcours dans Journey Optimizer ne sont pas répercutées dans la zone de travail de parcours. Pour que les modifications soient répercutées dans la zone de travail de parcours, vous pouvez supprimer et [recréer le parcours dans la zone de travail de parcours ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
+  Les modifications apportées à un parcours dans Journey Optimizer sont synchronisées avec la zone de travail du parcours [uniquement si le parcours n’a pas été modifié de manière significative dans la zone de travail du parcours](#differences-after-modifying-a-journey-in-journey-canvas). Une fois que vous avez modifié un parcours dans la zone de travail de parcours, les modifications que vous apportez au parcours dans Journey Optimizer ne sont pas répercutées dans la zone de travail de parcours. Pour que les modifications soient répercutées dans la zone de travail de parcours, vous pouvez supprimer et [recréer le parcours dans la zone de travail de parcours &#x200B;](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
 
 * **Pour utiliser un lien « Partager avec tout le monde », le projet doit être enregistré dans Customer Journey Analytics une fois les modifications apportées dans Journey Optimizer**.
 
   Lorsque vous utilisez un lien « Partager avec tout le monde », les modifications apportées dans Journey Optimizer ne sont pas répercutées dans la zone de travail du parcours tant que le projet n’est pas enregistré dans Customer Journey Analytics.
 
-  Pour plus d’informations sur les liens « Partager avec tout le monde », consultez [Partager un projet avec tout le monde (sans connexion requise)](/help/analysis-workspace/curate-share/share-projects.md#share-a-project-with-anyone-no-login-required) dans [Partager des projets](/help/analysis-workspace/curate-share/share-projects.md).
+  Pour plus d’informations sur les liens « Partager avec tout le monde », voir [Partager un projet avec tout le monde (aucune connexion requise)](/help/analysis-workspace/curate-share/share-projects.md#share-a-project-with-anyone-no-login-required) dans [Partager des projets](/help/analysis-workspace/curate-share/share-projects.md).
 
 ### Différences après modification d’un parcours dans la zone de travail de parcours {#differences-after-modifying}
 
