@@ -150,7 +150,7 @@ Vous pouvez collecter ces données à l’aide de la chaîne de contexte [`highE
 * **Nom du navigateur** : `xdm.environment.browserDetails.userAgentClientHints.brand`
 * **Version du navigateur** : `xdm.environment.browserDetails.userAgentClientHints.version`
 
-Voir [ Indications du client de l’agent utilisateur](https://experienceleague.adobe.com/en/docs/experience-platform/collection/use-cases/client-hints) pour plus d’informations.
+Voir [&#x200B; Indications du client de l’agent utilisateur](https://experienceleague.adobe.com/en/docs/experience-platform/collection/use-cases/client-hints) pour plus d’informations.
 
 {{cja-df-ua}}
 
@@ -437,7 +437,7 @@ Indicateur qui détermine si l’accès est exclu de la création de rapports. L
 
 Customer Journey Analytics ne respecte pas les « accès exclus » prêts à l’emploi. Cependant, vous pouvez recréer cette fonctionnalité si vous disposez d’un champ XDM qui signale certains accès à exclure :
 
-1. Assurez-vous que le champ XDM qui signale les accès exclus est inclus en tant que composant (dimension ou mesure, selon la configuration de cet indicateur). L’option [ Masquer le composant dans les rapports ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/overview) est probablement bénéfique pour ce champ.
+1. Assurez-vous que le champ XDM qui signale les accès exclus est inclus en tant que composant (dimension ou mesure, selon la configuration de cet indicateur). L’option [&#x200B; Masquer le composant dans les rapports &#x200B;](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/overview) est probablement bénéfique pour ce champ.
 1. Dans [Paramètres de la vue de données](/help/data-views/session-settings.md), sélectionnez le menu déroulant **[!UICONTROL Ajouter un segment]** et sélectionnez **[!UICONTROL Créer un segment]**.
 1. Créez un segment qui exclut tous les événements où votre composant d’accès d’exclusion existe ou contient des valeurs que vous souhaitez exclure.
 1. Sélectionnez **[!UICONTROL Enregistrer]** à la fois sur le segment et sur la vue de données.
