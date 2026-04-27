@@ -2,9 +2,9 @@
 title: Vue d’ensemble de l’utilisation du produit
 description: Affichez des informations et des rapports sur la manière dont votre organisation utilise Customer Journey Analytics.
 exl-id: 3806ca7c-ee90-4222-9ffd-2e791c4550e5
-source-git-commit: 22f3059ffef5df76028f36ffa00da8f98956dee1
+source-git-commit: 73238f03021b14567c20c686ab72d84afbaa9f81
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '660'
 ht-degree: 91%
 
 ---
@@ -54,7 +54,7 @@ Lorsque vous activez Utilisation du produit, les dimensions suivantes sont dispo
    * [!UICONTROL Partage de projet]
    * [!UICONTROL Exécuter le panneau Expérimentation]
    * [!UICONTROL Enregistrer le projet]
-   * [!UICONTROL Carte de performance enregistrée &#x200B;]
+   * [!UICONTROL Carte de performance enregistrée ]
    * [!UICONTROL Envoyer un fichier]
    * [!UICONTROL Envoyer le fichier selon le planning]
    * [!UICONTROL Partager le projet avec tout le monde]
@@ -89,7 +89,7 @@ Lorsque vous activez Utilisation du produit, les dimensions suivantes sont dispo
    * [!UICONTROL Attribution]
    * [!UICONTROL Panneau vierge]
    * [!UICONTROL Expérimentation]
-   * [!UICONTROL Structure libre]
+   * [!UICONTROL Tableau à structure libre]
    * [!UICONTROL Élément suivant ou précédent]
    * [!UICONTROL Aperçu rapide]
    * [!UICONTROL Tendances]
@@ -110,7 +110,7 @@ Lorsque vous activez Utilisation du produit, les dimensions suivantes sont dispo
    * [!UICONTROL Table de cohorte]
    * [!UICONTROL Abandon]
    * [!UICONTROL Flux]
-   * [!UICONTROL Petit rapport de Zone de travail de parcours]
+   * [!UICONTROL Parcours du petit rapport sur la zone de travail]
    * [!UICONTROL Surface]
    * [!UICONTROL Aires empilées]
    * [!UICONTROL Barre]

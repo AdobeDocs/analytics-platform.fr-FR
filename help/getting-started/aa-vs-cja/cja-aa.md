@@ -5,9 +5,9 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 3294e1516f9478348743d0f1e9761b8b3497b1d2
+source-git-commit: 73238f03021b14567c20c686ab72d84afbaa9f81
 workflow-type: tm+mt
-source-wordcount: '2708'
+source-wordcount: '3109'
 ht-degree: 100%
 
 ---
@@ -37,7 +37,7 @@ Le tableau suivant répertorie les fonctionnalités disponibles dans Customer Jo
 | **Prévisions** | La [prévision](/help/analysis-workspace/c-forecast/forecasting.md) est une fonctionnalité d’IA/ML qui inclut une prédiction statistique pour les données de série temporelle en fonction des données historiques qui existent déjà dans Customer Journey Analytics. Les prévisions peuvent apparaître dans les tableaux à structure libre et dans les visualisations des graphiques linéaires. |
 | **Analyse guidée** | [L’analyse guidée](/help/guided-analysis/overview.md) permet aux utilisateurs et aux utilisatrices d’obtenir des données et des informations en libre-service de haute qualité sur le parcours client au moyen de workflows guidés, établis à partir des données cross-canal de Customer Journey Analytics. |
 | **Légendes intelligentes** | Les [sous-titres intelligents](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/visualizations/intelligent-captions) utilisent le machine learning avancé et l’IA générative pour fournir des informations précieuses en langage naturel aux visualisations Workspace. Les légendes intelligentes sont prises en charge pour les visualisations suivantes : Ligne, Multiligne, Barre, Barre horizontale, Anneau, Zone, Flux et Abandon. |
-| **Zone de travail du parcours** | La [zone de travail du parcours](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/journey-canvas?lang=fr) est une visualisation dans Analysis Workspace qui vous permet d’analyser la manière dont les personnes poursuivent ou abandonnent un parcours défini. |
+| **Zone de travail de parcours** | La [zone de travail du parcours](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/journey-canvas?lang=fr) est une visualisation dans Analysis Workspace qui vous permet d’analyser la manière dont les personnes poursuivent ou abandonnent un parcours défini. |
 | **Utilisation du produit** | [Utilisation du produit](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/tools/product-usage/usage-overview) indique comment votre entreprise utilise Customer Journey Analytics. |
 | **Transformations au moment du rapport** | Les [vues de données](/help/data-views/data-views.md) dans Customer Journey Analytics vous permettent d’interpréter plus en détail les données d’une connexion. Vous pouvez modifier ou supprimer des données sans modifier votre implémentation. Utilisez des sous-chaînes pour manipuler les dimensions. Créez des mesures à partir de n’importe quelle valeur ou filtrez les sous-événements. Toutes ces transformations sont faites de manière non destructive. Adobe Analytics offre des fonctionnalités limitées par le biais de suites de rapports virtuelles et de durées de session personnalisées. |
 | **Mesures et dimensions partagées entre les vues de données** | Les mesures et dimensions partagées vous permettent d’[appliquer des paramètres de dimensions et de mesures à plusieurs vues de données](/help/data-views/shared-metrics-dimensions/smd-overview.md). Les modifications apportées à une dimension ou à une mesure partagée s’appliquent à toutes les instances de cette dimension ou mesure dans toutes les vues de données concernées. |

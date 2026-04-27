@@ -4,9 +4,9 @@ description: Déterminez comment prendre une colonne de flux de données Adobe A
 feature: Components
 hide: true
 exl-id: 81d6e79e-8324-4726-9a48-10177b0a91b1
-source-git-commit: efa2cada4b26d71cce22c0d0e8662b6dd04f38f4
+source-git-commit: d79c6d883f436d97925e007f453879e20b4fcc04
 workflow-type: tm+mt
-source-wordcount: '3768'
+source-wordcount: '3912'
 ht-degree: 48%
 
 ---
@@ -19,7 +19,7 @@ Cette référence permet aux ingénieurs de données d’évaluer les colonnes d
 
 >[!NOTE]
 >
->Cette référence inclut uniquement les colonnes considérées comme actuelles par Adobe, en fonction de la [référence des colonnes de flux de données Analytics](https://experienceleague.adobe.com/fr/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference). Si vous utilisez activement une colonne de flux de données Analytics qui ne figure pas dans ce tableau, consultez le document de conception de solution de votre entreprise pour déterminer son meilleur équivalent dans Customer Journey Analytics.
+>Cette référence inclut uniquement les colonnes considérées comme actuelles par Adobe, en fonction de la [référence des colonnes de flux de données Analytics](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference). Si vous utilisez activement une colonne de flux de données Analytics qui ne figure pas dans ce tableau, consultez le document de conception de solution de votre entreprise pour déterminer son meilleur équivalent dans Customer Journey Analytics.
 
 +++**`accept_language`**
 
@@ -108,7 +108,7 @@ La dimension Code de suivi .
 
 +++**`carrier`**
 
-Indique l’opérateur de téléphonie mobile.
+Définit l’opérateur de téléphonie mobile.
 
 {{cja-df-lookup}}
 
@@ -140,7 +140,7 @@ Indications du client collectées via l’API JavaScript User-Agent Client Hints
 
 Dans Adobe Analytics, les indications du client étaient incluses sous la forme d’une chaîne concaténée dans cette colonne. Il s’agit d’une approche plus moderne que la colonne `user_agent`.
 
-Vous pouvez collecter ces données à l’aide de la chaîne de contexte [`highEntropyUserAgentHints`](https://experienceleague.adobe.com/fr/docs/experience-platform/collection/js/commands/configure/context) lors de la configuration de Web SDK. Plusieurs champs XDM sont renseignés au lieu d’une longue chaîne concaténée :
+Vous pouvez collecter ces données à l’aide de la chaîne de contexte [`highEntropyUserAgentHints`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/context) lors de la configuration de Web SDK. Plusieurs champs XDM sont renseignés au lieu d’une longue chaîne concaténée :
 
 * **Version du système d’exploitation** : `xdm.environment.browserDetails.userAgentClientHints.platformVersion`
 * **Architecture** : `xdm.environment.browserDetails.userAgentClientHints.architecture`
@@ -150,7 +150,7 @@ Vous pouvez collecter ces données à l’aide de la chaîne de contexte [`highE
 * **Nom du navigateur** : `xdm.environment.browserDetails.userAgentClientHints.brand`
 * **Version du navigateur** : `xdm.environment.browserDetails.userAgentClientHints.version`
 
-Voir [&#x200B; Indications du client de l’agent utilisateur](https://experienceleague.adobe.com/fr/docs/experience-platform/collection/use-cases/client-hints) pour plus d’informations.
+Voir [ Indications du client de l’agent utilisateur](https://experienceleague.adobe.com/en/docs/experience-platform/collection/use-cases/client-hints) pour plus d’informations.
 
 {{cja-df-ua}}
 
@@ -212,7 +212,7 @@ Version du SDK client ou de l’API utilisée pour compiler et envoyer la demand
 
 +++**`color`**
 
-Identifiant de profondeur de couleur en fonction de la valeur de la colonne `c_color`.
+Identifiant d’intensité des couleurs basé sur la valeur de la colonne `c_color`.
 
 {{cja-df-lookup}}
 
@@ -228,7 +228,7 @@ Identifiant numérique représentant la dimension Type de connexion .
 
 +++**`cookies`**
 
-La dimension Prise en charge des cookies .<br>Y : activé<br>N : désactivé<br>U : inconnu
+La prise en charge des cookies dimension.<br>Y : Activé<br>N : Désactivé<br>U : Inconnu
 
 {{cja-df-post}}
 
@@ -272,7 +272,7 @@ Taux de change au moment de la transaction. Adobe travaille en partenariat avec 
 
 +++**`customer_perspective`**
 
-Détermine si l’accès est un accès en arrière-plan mobile.
+Détermine si l’accès est un accès mobile en arrière-plan.
 
 {{cja-df-post}}
 
@@ -296,7 +296,7 @@ Customer Journey Analytics ne propose pas le concept de suites de rapports horod
 
 Identifiant visiteur ou visiteuse personnalisé, si défini avec `visitorID`.
 
-Customer Journey Analytics prend en charge un nombre illimité d’identités à l’aide de [`identityMap`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/field-groups/profile/identitymap). Si votre organisation utilise des identités personnalisées, elles se trouvent probablement dans le mappage d’identités.
+Customer Journey Analytics prend en charge un nombre illimité d’identités à l’aide de [`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap). Si votre organisation utilise des identités personnalisées, elles se trouvent probablement dans le mappage d’identités.
 
 {{cja-df-post}}
 
@@ -362,7 +362,7 @@ Répertorie chaque événement compté comme double.
 
 {{cja-df-na}}
 
-Customer Journey Analytics ne dispose pas d’un champ unique qui agit comme un indicateur de déduplication pour toutes les mesures. Au lieu de cela, chaque mesure contient ses propres [paramètres des composants de déduplication des mesures](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication). Il n’existe donc pas de champ équivalent dans Customer Journey Analytics pour cette colonne de flux de données Adobe Analytics.
+Customer Journey Analytics ne dispose pas d’un champ unique qui agit comme un indicateur de déduplication pour toutes les mesures. Au lieu de cela, chaque mesure contient ses propres [paramètres des composants de déduplication des mesures](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication). Il n’existe donc pas de champ équivalent dans Customer Journey Analytics pour cette colonne de flux de données Adobe Analytics.
 
 +++
 
@@ -370,7 +370,7 @@ Customer Journey Analytics ne dispose pas d’un champ unique qui agit comme un 
 
 Indicateur signifiant que l’événement d’achat pour cet accès doit être ignoré, car il s’agit d’un double.
 
-Bien qu’il n’y ait pas de traduction directe de cette colonne de flux de données Analytics, sa fonctionnalité d’action pour dédupliquer les achats existe toujours. Si vous utilisez le groupe de champs [[!UICONTROL Détails &#x200B;]](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/field-groups/event/commerce-details), vous pouvez définir les paramètres du composant [Déduplication des mesures](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication) où l’**[!UICONTROL ID de déduplication]** est `xdm.commerce.purchases.id`.
+Bien qu’il n’y ait pas de traduction directe de cette colonne de flux de données Analytics, sa fonctionnalité d’action pour dédupliquer les achats existe toujours. Si vous utilisez le groupe de champs [[!UICONTROL Détails Commerce]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details), vous pouvez définir les paramètres du composant [Déduplication des mesures](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication) où l’**[!UICONTROL ID de déduplication]** est `xdm.commerce.purchases.id`.
 
 Si une traduction directe est requise lorsque vous souhaitez un indicateur pour les achats en double, vous pouvez utiliser un [champ dérivé](/help/data-views/derived-fields/derived-fields.md) à l’aide de la fonction **Dédupliquer** dans l’ensemble de règles.
 
@@ -386,7 +386,7 @@ Identifiant EF, utilisé dans les intégrations Adobe Advertising.
 
 +++**`evar1 - evar250`**
 
-Variables personnalisées 1-250. Utilisé dans les dimensions eVar. Chaque organisation utilise les eVars différemment. Le meilleur outil pour obtenir plus d’informations sur la façon dont votre organisation renseigne les eVars respectifs serait un document de conception de solution spécifique à votre organisation.
+Variables personnalisées 1-250. Utilisé dans les dimensions eVar. Chaque organisation utilise les eVars différemment. Pour plus d’informations sur la manière dont votre entreprise remplit les eVars respectives, le meilleur endroit serait un document de conception de solution spécifique à votre entreprise.
 
 {{cja-df-post}}
 
@@ -405,7 +405,7 @@ Cette colonne correspond probablement à des dizaines de mesures distinctes, sel
 
 {{cja-df-post}}
 
-Si votre schéma utilise le groupe de champs [[!UICONTROL Détails &#x200B;]](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/field-groups/event/commerce-details), certaines mesures peuvent directement correspondre aux champs XDM suivants :
+Si votre schéma utilise le groupe de champs [[!UICONTROL Détails Commerce]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details), certaines mesures peuvent directement correspondre aux champs XDM suivants :
 
 * **Passages en caisse** : `xdm.commerce.checkouts.value`
 * **Ajouts au panier** : `xdm.commerce.productListAdds.value`
@@ -418,7 +418,7 @@ Si votre schéma utilise le groupe de champs [[!UICONTROL Détails &#x200B;]](ht
 Certaines mesures peuvent utiliser la sérialisation des événements, ce qui permet à Adobe Analytics de contrôler entièrement la déduplication. Vous pouvez utiliser le paramètre de composant [Déduplication des mesures](/help/data-views/component-settings/metric-deduplication.md) pour atteindre la parité de déduplication.
 
 * Si votre mesure déduplique par visite dans Adobe Analytics, vous pouvez définir la portée de la déduplication sur session dans les paramètres des composants de cette mesure.
-* Si votre mesure se déduplique par identifiant d’événement dans Adobe Analytics, il est probable que l’objet XDM de cette mesure contienne un champ `value` et `id`. Si votre schéma utilise le groupe de champs [[!UICONTROL Détails &#x200B;]](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/field-groups/event/commerce-details), ces mesures résident probablement dans ces champs XDM, que vous pouvez définir dans le champ **[!UICONTROL Identifiant de déduplication]** dans les paramètres des composants de la mesure :
+* Si votre mesure se déduplique par identifiant d’événement dans Adobe Analytics, il est probable que l’objet XDM de cette mesure contienne un champ `value` et `id`. Si votre schéma utilise le groupe de champs [[!UICONTROL Détails Commerce]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details), ces mesures résident probablement dans ces champs XDM, que vous pouvez définir dans le champ **[!UICONTROL Identifiant de déduplication]** dans les paramètres des composants de la mesure :
 
    * **Passages en caisse** : `xdm.commerce.checkouts.id`
    * **Ajouts au panier** : `xdm.commerce.productListAdds.id`
@@ -437,7 +437,7 @@ Indicateur qui détermine si l’accès est exclu de la création de rapports. L
 
 Customer Journey Analytics ne respecte pas les « accès exclus » prêts à l’emploi. Cependant, vous pouvez recréer cette fonctionnalité si vous disposez d’un champ XDM qui signale certains accès à exclure :
 
-1. Assurez-vous que le champ XDM qui signale les accès exclus est inclus en tant que composant (dimension ou mesure, selon la configuration de cet indicateur). L’option [&#x200B; Masquer le composant dans les rapports &#x200B;](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dataviews/component-settings/overview) est probablement bénéfique pour ce champ.
+1. Assurez-vous que le champ XDM qui signale les accès exclus est inclus en tant que composant (dimension ou mesure, selon la configuration de cet indicateur). L’option [ Masquer le composant dans les rapports ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/overview) est probablement bénéfique pour ce champ.
 1. Dans [Paramètres de la vue de données](/help/data-views/session-settings.md), sélectionnez le menu déroulant **[!UICONTROL Ajouter un segment]** et sélectionnez **[!UICONTROL Créer un segment]**.
 1. Créez un segment qui exclut tous les événements où votre composant d’accès d’exclusion existe ou contient des valeurs que vous souhaitez exclure.
 1. Sélectionnez **[!UICONTROL Enregistrer]** à la fois sur le segment et sur la vue de données.
@@ -472,7 +472,7 @@ La dimension Domaine référent d’origine . Basée sur `first_hit_referrer`. L
 
 +++**`first_hit_ref_type`**
 
-Identifiant numérique qui représente le type de référent du tout premier référent du visiteur.
+Identifiant numérique représentant le type de référent du tout premier référent du visiteur ou de la visiteuse.
 
 {{cja-df-lookup}}
 
@@ -558,7 +558,7 @@ L’adresse IPv6 compressée, si disponible. Mutuellement exclusif à `ip`. Si c
 
 +++**`javascript`**
 
-Identifiant de recherche de la version de JavaScript, basé sur `j_jscript`.
+Identifiant de recherche de la version JavaScript, basé sur `j_jscript`.
 
 {{cja-df-lookup}}
 
@@ -923,7 +923,7 @@ Résolution de l’appareil mobile. `[Width] x [Height]` en pixels.
 +++
 
 +++**`mobile_id`**
-Si l’utilisateur utilise un appareil mobile, il s’agit alors de l’identifiant numérique de l’appareil.
+Si l’utilisateur ou l’utilisatrice a recours à un appareil mobile, il s’agit alors de l’identifiant numérique de l’appareil.
 
 {{cja-df-lookup}}
 
@@ -937,7 +937,7 @@ Indicateur signifiant que le visiteur ou la visiteuse est unique pour le mois en
 
 +++**`mvvar1`** - **`mvvar3`**
 
-Valeurs des variables de liste. Contient une liste délimitée de valeurs personnalisées en fonction de l’implémentation. Les colonnes `post_mvvar1` - `post_mvvar3` remplacent le délimiteur dʼorigine par `--**--`.
+Valeurs de variable de liste. Contient une liste délimitée de valeurs personnalisées en fonction de l’implémentation. Les colonnes `post_mvvar1` - `post_mvvar3` remplacent le délimiteur dʼorigine par `--**--`.
 
 {{cja-df-post}}
 
@@ -991,7 +991,7 @@ Similaire à `pagename`, sauf qu’il ne retourne pas à `page_url`. Seule la co
 
 +++**`page_event`**
 
-Type d’accès envoyé dans la demande d’image (accès standard, lien de téléchargement, lien personnalisé, lien de sortie).
+Le type d’accès qui est envoyé dans la demande d’image (accès standard, lien de téléchargement, lien personnalisé, lien de sortie).
 
 {{cja-df-post}}
 
@@ -1025,7 +1025,7 @@ La dimension Pages introuvables , généralement utilisée pour les pages 404.
 
 +++**`page_url`**
 
-**`page_url`** : URL de l’accès. Utilise un type de données de texte.<br>**`post_page_url`**: supprimé pour les demandes d’image de suivi de liens (`tl()`).
+**`page_url`** : URL de l’accès. Utilise un type de données text.<br>**`post_page_url`**: supprimé pour les demandes d’image de suivi de liens (`tl()`).
 
 {{cja-df-post}}
 
@@ -1110,7 +1110,7 @@ La dimension Domaine référent . Basé sur la colonne `referrer`.
 +++**`ref_type`**
 
 
-Identifiant numérique représentant le type de référence pour l’accès. Utilisé dans la dimension Type de référent .<br>1 : à l’intérieur de votre site<br>2 : autres sites web<br>3 : moteurs de recherche<br>4 : disque dur<br>5 : USENET<br>6 : dactylographié/mis en signet (pas de référent)<br>7 : e-mail<br>8 : pas de JavaScript<br>9 : réseaux sociaux<br>10 : outils d’IA conversationnelle
+Identifiant numérique représentant le type de référence pour l’accès. Utilisé dans la dimension de type Référent.<br>1 : à l’intérieur de votre site<br>2 : autres sites web<br>3 : moteurs de recherche<br>4 : disque dur<br>5 : USENET<br>6 : dactylographié/mis en signet (pas de référent)<br>7 : e-mail<br>8 : pas de JavaScript<br>9 : réseaux sociaux<br>10 : outils d’IA conversationnelle
 
 +++
 
@@ -1646,7 +1646,7 @@ Si l’identifiant visiteur ou visiteuse a été récemment généré, fournit l
 
 +++**`visid_type`**
 
-Uniquement destinée à un usage interne. Utilisée en interne par Adobe pour les optimisations de traitement. Identifiant numérique représentant la méthode utilisée pour identifier le visiteur ou la visiteuse.<br>`0` : identifiant visiteur personnalisé ou inconnu/non applicable <br>`1` : solution de secours de l’IP et de l’agent utilisateur <br>`2` : en-tête de l’abonné mobile HTTP <br>`3` : valeur du cookie hérité (`s_vi`) <br>`4` : valeur du cookie de secours (`s_fid`) <br>`5` : Service d’identités
+Uniquement destinée à un usage interne. Utilisée en interne par Adobe pour les optimisations de traitement. Identifiant numérique qui représente la méthode utilisée pour identifier le visiteur. <br>`0` : Identifiant visiteur personnalisé ou Inconnu/non applicable <br>`1` : <br>`2` de secours de l’IP et de l’agent utilisateur : en-tête de l’abonné mobile HTTP <br>`3` : valeur du cookie hérité (`s_vi`) <br>`4` : valeur du cookie de secours (`s_fid`) <br>`5` : Service d’identités
 
 {{cja-df-post}}
 
@@ -1654,7 +1654,7 @@ Uniquement destinée à un usage interne. Utilisée en interne par Adobe pour le
 
 +++**`visit_keywords`**
 
-La dimension Mot-clé de recherche . Cette colonne utilise une limite de caractères non standard de varchar(244) pour s’adapter à la logique d’arrière-plan utilisée par Adobe. La colonne post-traitée est `**post_keywords**` et non `**post_visit_keywords**`.
+La dimension Mot-clé de recherche . Cette colonne utilise une limite de caractères non standard pour varchar(244) pour s’adapter à la logique de back-end utilisée par Adobe. La colonne post-traitée est `**post_keywords**` et non `**post_visit_keywords**`.
 
 {{cja-df-post}}
 
@@ -1686,7 +1686,7 @@ Basé sur la colonne `visit_referrer`. Le premier domaine référent de la visit
 
 +++**`visit_ref_type`**
 
-Identifiant numérique qui représente le type de référent du premier référent de la visite.
+Identifiant numérique, représentant le type de référent du tout premier référent de la visite.
 
 {{cja-df-lookup}}
 
@@ -1694,7 +1694,7 @@ Identifiant numérique qui représente le type de référent du premier référe
 
 +++**`visit_search_engine`**
 
-Identifiant numérique qui représente le premier moteur de recherche de la visite.
+Identifiant numérique du premier moteur de recherche de la visite.
 
 {{cja-df-lookup}}
 
