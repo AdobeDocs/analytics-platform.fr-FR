@@ -1602,7 +1602,7 @@ Vous souhaitez capturer une partie d’une URL et l’utiliser comme identifiant
 |---|
 | `https://business.adobe.com/fr/products/analytics/adobe-analytics-benefits.html` |
 | `https://business.adobe.com/fr/products/analytics/adobe-analytics.html` |
-| `https://business.adobe.com/products/experience-platform/customer-journey-analytics.html` |
+| `https://business.adobe.com/fr/products/experience-platform/customer-journey-analytics.html` |
 | `https://business.adobe.com/fr/products/experience-platform/adobe-experience-platform.html` |
 
 {style="table-layout:auto"}
