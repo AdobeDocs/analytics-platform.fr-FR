@@ -7,8 +7,8 @@ feature: Basics
 exl-id: 4e6cacb9-4eca-4dfb-bce4-e69850507596
 source-git-commit: bf4ff740d8d57fe1001b58e1c227644b8ad057cf
 workflow-type: tm+mt
-source-wordcount: '517'
-ht-degree: 93%
+source-wordcount: '591'
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 93%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-stitch-customer-care"
 >title="Activer le groupement pour les jeux de données pertinents"
->abstract="Si un champ contient un identifiant qui existe dans plusieurs jeux de données mais n’est pas l’identifiant principal, vous pouvez utiliser le groupement pour élever les données dans un ou plusieurs de ces jeux de données."
+>abstract="Si un champ contient un identifiant qui existe dans plusieurs jeux de données mais n’est pas l’identifiant principal, vous pouvez utiliser l’assemblage pour transférer les données dans un ou plusieurs de ces jeux de données."
 
 <!-- markdownlint-enable MD034 -->
 
