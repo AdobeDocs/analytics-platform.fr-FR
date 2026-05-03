@@ -124,7 +124,7 @@ Vous pouvez activer la combinaison d’identités lorsque vous [ajoutez](/help/c
 >id="connection_stitchingmetrics_badids"
 >title="ID incorrects"
 >abstract="Les ID incorrects sont des valeurs d’ID qui affectent considérablement les données de rapport."
->additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/badids" text="ID incorrects"
+>additional-url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/technotes/badids" text="ID incorrects"
 
 
 ### Paramètres des jeux de données
