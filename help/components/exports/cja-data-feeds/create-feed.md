@@ -3,10 +3,10 @@ title: Créer un flux de données
 description: Apprenez comment créer un flux de données et découvrez les informations sur les fichiers à fournir à Adobe.
 hide: true
 feature: Components
-source-git-commit: 728aa97d87e9b9e125fbfbbaf0ce890bc3ab34fc
+source-git-commit: a565bc01f47255b98436a52c00a933a6f845e9ec
 workflow-type: tm+mt
-source-wordcount: '2422'
-ht-degree: 21%
+source-wordcount: '2477'
+ht-degree: 20%
 
 ---
 
@@ -48,6 +48,15 @@ Avant de créer un flux de données, il est important de comprendre les bases de
 >id="aa_datafeed_notify"
 >title="Avertir une fois l’opération terminée"
 >abstract="Indiquez une ou plusieurs adresses e-mail auxquelles une notification doit être envoyée après l’envoi du flux de données. Plusieurs adresses e-mail doivent être séparées par une virgule."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa_datafeed_lookback_date_range"
+>title="Période de recherche en amont"
+>abstract="Contrôle le retour en arrière de Customer Journey Analytics lors du traitement de la diffusion du flux de données.<br/>Ce paramètre ne modifie pas la fenêtre de fréquence (heure ou jour). Toutefois, la période de recherche en amont peut influencer les données diffusées. La qualification du segment, le calcul de session et la persistance de dimension sont tous affectés par la période de recherche en amont."
 
 <!-- markdownlint-enable MD034 -->
 
