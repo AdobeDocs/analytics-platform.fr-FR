@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
-source-git-commit: d42f0eb658f26d16bd21bb6ca47d5dd7c228e614
+source-git-commit: 2816ea67c009d461fb05393741b74979dd65a212
 workflow-type: tm+mt
 source-wordcount: '1788'
 ht-degree: 14%
@@ -248,3 +248,4 @@ Le groupement activé dans l’interface de connexion peut coexister sans probl�
 Par exemple, vous disposez de jeux de données assemblés web dans le lac de données à la suite de requêtes d’assemblage antérieures ou actuelles. Vous pouvez ajouter des données groupées à partir d’un jeu de données de centre d’appels à l’aide de l’interface Connexions pour combiner ces données avec les données web.
 
 À la fin, Adobe migrera vos jeux de données groupés basés sur les requêtes vers la nouvelle expérience de groupement dans les connexions.
+
