@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: b3988dcc0568245bc6aed7aa80cf1c636c61fc7d
+source-git-commit: da88f281e0b7657306c6c90851d615860721fe16
 workflow-type: tm+mt
-source-wordcount: '3432'
-ht-degree: 81%
+source-wordcount: '3511'
+ht-degree: 79%
 
 ---
 
@@ -26,8 +26,8 @@ Pour accéder à la configuration de Content Analytics :
 
 Dans l’écran **[!UICONTROL Configurations de Content Analytics]**, un tableau des configurations existantes de Content Analytics s’affiche.
 
-![Configurations de Content Analytics](../assets/aca-configuration-table.png)
-Pour chaque configuration, les détails suivants sont disponibles :
+![Configurations Content Analytics](../assets/aca-configuration-table.png)
+Pour chaque configuration, les détails suivants sont disponibles :
 
 | Colonne | Description |
 |---|---|
@@ -36,7 +36,7 @@ Pour chaque configuration, les détails suivants sont disponibles :
 | **[!UICONTROL Date de création]** | Date et heure de création de la configuration. |
 | **[!UICONTROL Date de modification]** | Date et heure de la dernière modification de la configuration. |
 | **[!UICONTROL Sandbox]** | Sandbox au sein de l’organisation dans lequel Content Analytics est configuré et implémenté (ou le sera à l’avenir). |
-| **[!UICONTROL Statut]** | Statut de la configuration. Le statut peut être <br/>![Statut Gris](/help/assets/icons/StatusGray.svg) **[!UICONTROL Brouillon]** : la configuration est enregistrée pour une utilisation ultérieure et n’est pas déployée.<br/>![StatusRed](/help/assets/icons/StatusRed.svg) **[!UICONTROL Échec]** : la configuration a échoué. Vous pouvez sélectionner **[!UICONTROL Modifier]** pour obtenir des informations sur l’échec. Adobe gère de manière proactive toute mise en œuvre ayant échoué. Vous pouvez contacter l’assistance clientèle pour plus d’informations.<br/>![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL Terminée]** : la configuration est terminée et a été implémentée avec succès. |
+| **[!UICONTROL Statut]** | Statut de la configuration. Le statut peut être :<br/>![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL Draft]** : la configuration est enregistrée pour une utilisation ultérieure et n’est pas déployée.<br/>![StatusRed](/help/assets/icons/StatusRed.svg) **[!UICONTROL Failed]** : la configuration a échoué. Vous pouvez sélectionner **[!UICONTROL Modifier]** pour obtenir des informations sur l’échec. Adobe gère de manière proactive toute mise en œuvre ayant échoué. Vous pouvez contacter l’assistance clientèle pour plus d’informations.<br/>![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL Complete]** : la configuration a été terminée et mise en œuvre avec succès. |
 
 Vous pouvez utiliser ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) pour personnaliser le tableau. Sélectionnez les colonnes à afficher dans la boîte de dialogue **[!UICONTROL Personnaliser le tableau]** et sélectionnez **[!UICONTROL Appliquer]** pour appliquer les modifications.
 
@@ -193,7 +193,7 @@ Votre configuration nécessite la sélection d’une [Vue de données](/help/dat
    Vous pouvez effectuer les actions suivantes :
 
    * Pour rechercher une vue de données spécifique, utilisez le champ ![Recherche](/help/assets/icons/Search.svg).
-   * Pour filtrer la liste des vues de données disponibles, sélectionnez ![Afficher le filtre](/help/assets/icons/Filter.svg). Vous pouvez filtrer la liste par [!UICONTROL Connexion], [!UICONTROL Propriétaire] et [!UICONTROL Sandbox].<br/>Utilisez ![Masquer](/help/assets/icons/Filter.svg) **[!UICONTROL Masquer les segments]** pour masquer le volet de segment.
+   * Pour filtrer la liste des vues de données disponibles, sélectionnez ![Afficher le filtre](/help/assets/icons/Filter.svg). Vous pouvez filtrer la liste sur [!UICONTROL Connexion], [!UICONTROL Propriétaire] et [!UICONTROL Sandbox].<br/>Utilisez ![Masquer](/help/assets/icons/Filter.svg) **[!UICONTROL Masquer les segments]** pour masquer le volet des segments.
    * Pour définir les colonnes à afficher dans le tableau, sélectionnez ![Paramètres des colonnes](/help/assets/icons/ColumnSetting.svg). Sélectionnez les colonnes à afficher dans la boîte de dialogue **[!UICONTROL Personnaliser le tableau]** et sélectionnez **[!UICONTROL Appliquer]** pour appliquer les modifications.
 
 1. Sélectionnez ![SelectBox](/help/assets/icons/SelectBox.svg) la vue de données que vous souhaitez utiliser.
@@ -519,3 +519,4 @@ Pour commencer à collecter des données pour votre configuration Content Analy
 >
 >[Configuration manuelle](manual.md)
 >
+
