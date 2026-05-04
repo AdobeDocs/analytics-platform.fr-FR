@@ -3,10 +3,10 @@ title: Créer un flux de données
 description: Apprenez comment créer un flux de données et découvrez les informations sur les fichiers à fournir à Adobe.
 hide: true
 feature: Components
-source-git-commit: 728aa97d87e9b9e125fbfbbaf0ce890bc3ab34fc
+source-git-commit: a565bc01f47255b98436a52c00a933a6f845e9ec
 workflow-type: tm+mt
-source-wordcount: '2422'
-ht-degree: 21%
+source-wordcount: '2477'
+ht-degree: 20%
 
 ---
 
@@ -51,11 +51,20 @@ Avant de créer un flux de données, il est important de comprendre les bases de
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa_datafeed_lookback_date_range"
+>title="Période de recherche en amont"
+>abstract="Contrôle le retour en arrière de Customer Journey Analytics lors du traitement de la diffusion du flux de données.<br/>Ce paramètre ne modifie pas la fenêtre de fréquence (heure ou jour). Toutefois, la période de recherche en amont peut influencer les données diffusées. La qualification du segment, le calcul de session et la persistance de dimension sont tous affectés par la période de recherche en amont."
+
+<!-- markdownlint-enable MD034 -->
+
 <!-- added help for Dynamic lookups to this page: help/export/analytics-data-feed/c-df-contents/dynamic-lookups.md -->
 
 1. Connectez-vous à [experiencecloud.adobe.com](https://experiencecloud.adobe.com) à l’aide de vos identifiants Adobe ID.
 
-1. Sélectionnez l’icône des 9 carrés dans le coin supérieur droit, puis sélectionnez [!UICONTROL **&#x200B;**].
+1. Sélectionnez l’icône des 9 carrés dans le coin supérieur droit, puis sélectionnez [!UICONTROL ****].
 
 1. Dans la barre de navigation supérieure, accédez à [!UICONTROL **Admin**] > [!UICONTROL **Flux de données**].
 
