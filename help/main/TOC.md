@@ -2,10 +2,10 @@
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 8fe31fe0603c2b17fee930011cce915df3c76200
+source-git-commit: f59958b9d290138480fe4b5588d1b5660250be12
 workflow-type: tm+mt
-source-wordcount: '1398'
-ht-degree: 94%
+source-wordcount: '1427'
+ht-degree: 93%
 
 ---
 
@@ -406,10 +406,11 @@ ht-degree: 94%
       + [Gérer les journaux d’export](/help/components/exports/manage-export-logs.md)
       + [Résoudre les problèmes d’export](/help/components/exports/troubleshoot-exports.md)
       + Flux de données {#cja-data-feeds}
-         + {hide-from-toc}[Aperçu des flux de données](/help/components/exports/cja-data-feeds/data-feed-overview.md)
+         + {hide-from-toc}[Présentation des flux de données](/help/components/exports/cja-data-feeds/data-feed-overview.md)
          + {hide-from-toc}[Comparer les flux de données Adobe Analytics](/help/components/exports/cja-data-feeds/df-comparison.md)
          + {hide-from-toc}[Préparer le mappage des colonnes](/help/components/exports/cja-data-feeds/df-column-mapping-prep.md)
          + {hide-from-toc}[Mapper les colonnes](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)
+         + {hide-from-toc}[Créer un flux de données](/help/components/exports/cja-data-feeds/create-feed.md)
    + Dictionnaire de données {#data-dictionary}
       + [Vue d’ensemble](../components/data-dictionary/data-dictionary-overview.md)
       + [Afficher des informations sur les composants dans le dictionnaire de données](../components/data-dictionary/view-data-dictionary.md)
@@ -533,7 +534,7 @@ ht-degree: 94%
          + [Lier des lectures de session](/help/use-cases/third-party/quantum-metric/tie-session-replays.md)
          + [Utiliser des cartes thermiques](/help/use-cases/third-party/quantum-metric/heatmap.md)
          + [Ajouter des événements de friction](/help/use-cases/third-party/quantum-metric/friction-events.md)
-         + {hide-from-toc}[Connecteur &#x200B;](/help/use-cases/third-party/quantum-metric/source-connector.md)
+         + {hide-from-toc}[Connecteur ](/help/use-cases/third-party/quantum-metric/source-connector.md)
 
 + Labs {#labs}
    + [Guide d’utilisation de Labs](../labs/labs.md)
@@ -556,5 +557,5 @@ ht-degree: 94%
    + [Optimiser les performances](../technotes/optimizing-performance.md)
    + [Gérer l’utilisation](../technotes/estimate-usage.md)
 
-+ [API Customer Journey Analytics](https://developer.adobe.com/cja-apis/docs/?lang=fr)
-+ [Serveur Customer Journey Analytics MCP](https://developer.adobe.com/analytics-mcp/docs/cja/)
++ [API Customer Journey Analytics](https://developer.adobe.com/cja-apis/docs/)
++ [Serveur MCP Customer Journey Analytics](https://developer.adobe.com/analytics-mcp/docs/cja/)
