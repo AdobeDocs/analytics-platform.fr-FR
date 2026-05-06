@@ -1,13 +1,13 @@
 ---
 description: Découvrez comment synchroniser un tableau à structure libre ou une source de données avec la visualisation correspondante.
 keywords: Analysis Workspace;Synchroniser une visualisation avec une source de données
-title: Gestion des sources de données
+title: Gérer les sources de données
 feature: Visualizations
 exl-id: f9e89bef-0e78-49c7-8b7b-1fefd709c0cd
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 28ad4be7b5ff3c58f51fdb882d9b273f53bcea2a
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '437'
 ht-degree: 89%
 
 ---
@@ -28,7 +28,6 @@ ht-degree: 89%
 >id="workspace_freeformtable_showtable"
 >title="Afficher le tableau"
 >abstract="Sélectionnez **[!UICONTROL Afficher le tableau]** pour générer une nouvelle source de données pour votre visualisation actuelle, distincte de la source de données d’origine."
-
 
 La synchronisation des visualisations vous permet de contrôler le tableau à structure libre ou la source de données qui correspond à une visualisation.
 
