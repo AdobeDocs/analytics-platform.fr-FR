@@ -6,7 +6,7 @@ feature: Basics
 role: Admin
 badgePremium: label="Beta"
 hide: true
-source-git-commit: 19351a7155eda77d1768b486c7e39dcf7cdba935
+source-git-commit: 93f38f57021bf66cacd700ce6fbc46338fd6a034
 workflow-type: tm+mt
 source-wordcount: '672'
 ht-degree: 1%
@@ -56,7 +56,7 @@ Par conséquent, les demandes d’accès à des informations personnelles ne doi
 
 Le service d’hygiène fonctionne sur des *identités principales*, mais les tables de la base de données externe mises en miroir ont des *clés principales* et non des identités principales.
 
-La différence entre les identités principales et les clés primaires a pour conséquence que les suppressions d’hygiène ne peuvent pas être exécutées directement sur les tables relationnelles. Par conséquent, vous devez :
+La différence entre les identités principales et les clés primaires a pour conséquence que les suppressions d’hygiène ne peuvent pas être exécutées directement sur ces tables relationnelles. Par conséquent, vous devez :
 
 * Supprimez les données dans leurs propres tables source au sein de la solution Data Warehouse et assurez-vous que les opérations de suppression sont effectuées via CDC (ou la colonne de modification manuelle).
 * Envoyez des demandes d’hygiène et de confidentialité dans Adobe pour tous les jeux de données basés sur XDM en aval avec des informations d’identité (par exemple : vues Customer Journey Analytics, jeux de données Real-Time Customer Data Platform, jeux de données spécifiques à Adobe Journey Optimizer, etc.).
@@ -68,7 +68,7 @@ La différence entre l’identité principale et la clé principale introduit un
 
 ## Différences de gouvernance
 
-Dans XDM [schémas](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/schema/composition) et les concepts sous-jacents tels que [groupes de champs](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/schema/composition#field-group), un [champ](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/schema/composition#field) défini au sein d’un groupe de champs propage ses libellés dans tous les jeux de données où le groupe de champs est utilisé. Par exemple, un champ d’e-mail `emailID` dans un `identities` de groupe de champs est libellé de la même manière dans tous les jeux de données où le `identities` de groupe de champs est utilisé.
+Dans XDM [schémas](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/schema/composition) et les concepts sous-jacents tels que [groupes de champs](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#field-group), un [champ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#field) défini au sein d’un groupe de champs propage ses libellés dans tous les jeux de données où le groupe de champs est utilisé. Par exemple, un champ d’e-mail `emailID` dans un `identities` de groupe de champs est libellé de la même manière dans tous les jeux de données où le `identities` de groupe de champs est utilisé.
 
 Dans un schéma relationnel, le nom d’une colonne est indépendant. Une colonne nommée `email` dans le tableau `customers` est indépendante et distincte d&#39;une colonne nommée `email` dans un tableau `prospects`. Ce comportement implique que les libellés (tels que les libellés d’utilisation DULE et les politiques) doivent être appliqués individuellement aux champs des jeux de données mis en miroir. En fonction de l’exemple ci-dessus, vous devez appliquer des libellés à la fois au champ `email` du jeu de données `customers` et au champ `email` du jeu de données `prospects`.
 
