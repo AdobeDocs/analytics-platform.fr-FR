@@ -6,7 +6,7 @@ feature: Basics
 role: Admin
 badgePremium: label="Beta"
 hide: true
-source-git-commit: 19351a7155eda77d1768b486c7e39dcf7cdba935
+source-git-commit: 93f38f57021bf66cacd700ce6fbc46338fd6a034
 workflow-type: tm+mt
 source-wordcount: '672'
 ht-degree: 1%
@@ -56,7 +56,7 @@ Par conséquent, les demandes d’accès à des informations personnelles ne doi
 
 Le service d’hygiène fonctionne sur des *identités principales*, mais les tables de la base de données externe mises en miroir ont des *clés principales* et non des identités principales.
 
-La différence entre les identités principales et les clés primaires a pour conséquence que les suppressions d’hygiène ne peuvent pas être exécutées directement sur les tables relationnelles. Par conséquent, vous devez :
+La différence entre les identités principales et les clés primaires a pour conséquence que les suppressions d’hygiène ne peuvent pas être exécutées directement sur ces tables relationnelles. Par conséquent, vous devez :
 
 * Supprimez les données dans leurs propres tables source au sein de la solution Data Warehouse et assurez-vous que les opérations de suppression sont effectuées via CDC (ou la colonne de modification manuelle).
 * Envoyez des demandes d’hygiène et de confidentialité dans Adobe pour tous les jeux de données basés sur XDM en aval avec des informations d’identité (par exemple : vues Customer Journey Analytics, jeux de données Real-Time Customer Data Platform, jeux de données spécifiques à Adobe Journey Optimizer, etc.).
