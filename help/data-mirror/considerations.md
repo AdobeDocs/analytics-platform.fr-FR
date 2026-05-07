@@ -6,7 +6,7 @@ feature: Basics
 role: Admin
 badgePremium: label="Beta"
 hide: true
-source-git-commit: 664d14beaa6bc8b01169cef9d50b2ca3a2de44d8
+source-git-commit: 80083aad28e6efd0d9498264cb540d9f2898f2bc
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 1%
@@ -28,7 +28,21 @@ Stratégie recommandée pour les colonnes du tableau source :
 
 * Assurez-vous que toutes les colonnes pertinentes sont définies initialement.
 * Mappez chaque colonne dont vous pensez avoir besoin au départ.
-* Si une nouvelle colonne est identifiée comme nécessaire, supprimez le jeu de données actuel et configurez à nouveau le connecteur avec la colonne mise à jour. Cela permet de s’assurer que les données sont renvoyées plus efficacement et plus rapidement.
+
+Si vous souhaitez ajouter une nouvelle colonne, il existe deux options, selon que le renvoi rétroactif est obligatoire :
+
+* Renvoi rétroactif :
+
+   * Supprimez le jeu de données actuel.
+   * Configurez à nouveau le connecteur avec la colonne mise à jour.
+
+  Cela permet de s’assurer que les données sont renvoyées plus efficacement et plus rapidement.
+
+* Aucun renvoi rétroactif :
+
+   * Ajoutez la colonne dans la table source.
+   * Ajoutez la colonne dans le schéma du jeu de données cible.
+   * Mettez à jour le mappage pour inclure le nouveau champ (colonne) de la table source au jeu de données cible.
 
 Cette stratégie :
 
@@ -36,14 +50,6 @@ Cette stratégie :
 * Permet de mieux prévoir le volume des modifications par rapport à l’ajout ou la modification ultérieure des colonnes.
 * Cela permet de limiter les coûts de calcul potentiels du côté de la base de données externe, car l’entrepôt de données peut interpréter la nouvelle colonne comme une mise à jour de toutes les lignes.
 
-Pour gérer les nouvelles colonnes des tables de l’entrepôt de données externe, procédez comme suit :
-
-1. Créez un schéma avec la colonne ajoutée.
-1. Configurez un nouveau connecteur source qui introduit les données.
-1. Chargez le renvoi de manière appropriée.
-1. Utilisez les modifications du CDC à l’avenir.
-
-Cette approche minimise l&#39;impact sur les deux parties.
 
 ## Privacy Service
 
