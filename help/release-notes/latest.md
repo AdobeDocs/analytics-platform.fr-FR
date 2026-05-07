@@ -30,7 +30,7 @@ Ces notes de mise à jour couvrent la période des versions d’avril 2026. Les
 
 ## Correctifs dans Customer Journey Analytics
 
-**** : AN-442813, AN-442410, AN-442231, AN-441943, AN-441717, AN-434855, AN-429777, AN-429048, AN-428892, AN-428189, AN-425215
+**&#x200B;**&#x200B;: AN-442813, AN-442410, AN-442231, AN-441943, AN-441717, AN-434855, AN-429777, AN-429048, AN-428892, AN-428189, AN-425215
 **Composants** :
 **Connexions** : AN-442824, AN-440937, AN-440092, AN-429781
 **Content Analytics**:
@@ -38,7 +38,7 @@ Ces notes de mise à jour couvrent la période des versions d’avril 2026. Les
 **Exports** :
 **Vues de données** : AN-442809, AN-434824, AN-434210, AN-424000
 **Mise en œuvre** :
-**** : AN-441136, AN-438147, AN-425150
+**&#x200B;**&#x200B;: AN-441136, AN-438147, AN-425150
 **Reporting** : AN-443900, AN-441811, AN-441506, AN-440919, AN-440545, AN-440505, AN-440300
 **Segmentation** :
 **Rapports planifiés** :
