@@ -41,8 +41,8 @@ Content Analytics nécessite Experience Platform Edge Network Web SDK (pour le c
 La bibliothèque Content Analytics collecte des données lorsque :
 
 * Content Analytics est inclus dans la bibliothèque de balises chargée sur la page ou utilisée dans l’application mobile.
-* L’URL de la page et l’URL de la ressource sont configurées dans l’extension web [](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/content-analytics/overview){target="_blank"}, qui fait partie de la bibliothèque de balises incluse.
-* L’URL de la ressource, l’emplacement de la ressource ou l’emplacement de l’expérience ne sont pas exclus dans l’extension mobile Content Analytics [](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/).
+* L’URL de la page et l’URL de la ressource sont configurées dans l’extension web [&#128279;](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/content-analytics/overview){target="_blank"}, qui fait partie de la bibliothèque de balises incluse.
+* L’URL de la ressource, l’emplacement de la ressource ou l’emplacement de l’expérience ne sont pas exclus dans l’extension mobile Content Analytics [&#128279;](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/).
 
 
 ## Événement Content Analytics
@@ -61,7 +61,7 @@ Un événement Content Analytics comprend les éléments suivants :
 Les événements Content Analytics sont collectés comme une séquence des éléments suivants :
 
 1. Un [affichage enregistré ou clic](#recorded-view-or-click).
-1. Déclencheur [ pour envoyer un événement Content Analytics](#trigger-to-send-a-content-analytics-event).
+1. Déclencheur [&#x200B; pour envoyer un événement Content Analytics](#trigger-to-send-a-content-analytics-event).
 
 Content Analytics collecte les données de cette manière pour refléter cette séquence, au lieu de collecter une vue ou un clic séparément à partir de l’événement qui suit immédiatement. Cette méthode de collecte des données d’analyse de contenu réduit également la quantité de données collectées.
 

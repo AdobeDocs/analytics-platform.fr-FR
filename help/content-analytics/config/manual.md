@@ -41,7 +41,7 @@ Pour arrêter la collecte de données pour une configuration Content Analytics i
 
 * Pour **mobile** :
 
-   1. Supprimez l’extension [](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/) de votre application.
+   1. Supprimez l’extension [&#128279;](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/) de votre application.
    1. Supprimez la propriété de balises mobiles associée à votre configuration Content Analytics.
 
 Suivez le [flux de publication](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/publish/overview){target="_blank"} pour appliquer les modifications.
@@ -54,7 +54,7 @@ Vous pouvez apporter des modifications mineures à une configuration implément�
 
 ### Web
 
-Vous utilisez l’extension web [](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/content-analytics/overview) dans la propriété Tags associée à votre configuration Content Analytics pour apporter des modifications aux artefacts suivants :
+Vous utilisez l’extension web [&#128279;](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/content-analytics/overview) dans la propriété Tags associée à votre configuration Content Analytics pour apporter des modifications aux artefacts suivants :
 
 * [Sandbox et train de données](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-datastreams){target="_blank"}.
 
@@ -77,7 +77,7 @@ Après avoir apporté des modifications à l’extension web Adobe Content Analy
 
 ### Mobile
 
-Vous utilisez l’[extension mobile ](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/) dans la propriété Tags associée à votre configuration Content Analytics pour apporter des modifications supplémentaires.
+Vous utilisez l’[extension mobile &#x200B;](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/) dans la propriété Tags associée à votre configuration Content Analytics pour apporter des modifications supplémentaires.
 
 Après avoir apporté des modifications à l’extension web Adobe Content Analytics, utilisez le [flux de publication](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/publish/overview){target="_blank"} pour commencer à collecter des données.
 
