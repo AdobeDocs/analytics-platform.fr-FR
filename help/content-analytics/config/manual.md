@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
-source-git-commit: a3d974733eef42050b0ba8dcce4ebcccf649faa7
+source-git-commit: a593221a9eb81d747777aedb323fd44a32c470be
 workflow-type: tm+mt
-source-wordcount: '640'
-ht-degree: 100%
+source-wordcount: '719'
+ht-degree: 64%
 
 ---
 
@@ -22,25 +22,38 @@ Les actions de configuration manuelles suivantes sont disponibles :
 
 Pour démarrer la collecte de données pour une configuration Content Analytics implémentée, procédez comme suit :
 
-1. Suivez le [flux de publication](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/publish/overview){target="_blank"}. Publiez la bibliothèque pour la propriété Balises contenant votre configuration Content Analytics.
+1. Suivez le [flux de publication](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/publish/overview){target="_blank"}. Publiez la bibliothèque pour les propriétés de balises contenant votre configuration Content Analytics.
 
-1. [Installez](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/publish/environments/environments#installation) le code incorporé dans l’élément `<head>` des pages dans votre environnement de développement, d’évaluation ou de publication, dans le cadre de Content Analytics.
+1. En fonction des canaux que vous avez configurés :
 
+   * Pour **web** : [installez](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/publish/environments/environments#installation) le code incorporé dans l’élément `<head>` des pages dans votre environnement de développement, d’évaluation ou de publication, sous réserve de Content Analytics.
+   * Pour **mobile** : consultez le guide d’extension [Adobe Content Analytics spécifique à une solution](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/) dans la [documentation d’Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/home/) sur la configuration et l’instrumentation de votre application mobile pour Content Analytics.
 
 ## Arrêter la collecte de données
 
-Pour arrêter la collecte de données pour une configuration Content Analytics implémentée, procédez comme suit :
+Pour arrêter la collecte de données pour une configuration Content Analytics implémentée, en fonction des canaux que vous avez configurés :
 
-1. Supprimez le [code intégré](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/publish/environments/environments) dans l’élément `<head>` des pages de votre environnement de développement, d’évaluation ou de production, dans le cadre de Content Analytics.
-1. [Supprimez](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/publish/overview) la propriété Balises associée à votre configuration Content Analytics.
+* Pour **web** :
 
+   1. Supprimez le [code intégré](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/publish/environments/environments) dans l’élément `<head>` des pages de votre environnement de développement, d’évaluation ou de production, dans le cadre de Content Analytics.
+   1. Supprimez la propriété de balises web associée à votre configuration Content Analytics.
+
+* Pour **mobile** :
+
+   1. Supprimez l’extension [&#128279;](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/) de votre application.
+   1. Supprimez la propriété de balises mobiles associée à votre configuration Content Analytics.
+
+Suivez le [flux de publication](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/publish/overview){target="_blank"} pour appliquer les modifications.
 
 
 ## Modifier la collecte de données
 
 Vous pouvez apporter des modifications mineures à une configuration implémentée à l’aide de l’[assistant de configuration guidée](guided.md). Par exemple, modifiez la vue de données ou activez ou désactivez des expériences.
 
-Utilisez l’[extension Adobe Content Analytics](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/content-analytics/overview) dans la propriété Balises associée à votre configuration Content Analytics pour apporter des modifications aux artefacts suivants :
+
+### Web
+
+Vous utilisez l’extension web [&#128279;](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/content-analytics/overview) dans la propriété Tags associée à votre configuration Content Analytics pour apporter des modifications aux artefacts suivants :
 
 * [Sandbox et train de données](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-datastreams){target="_blank"}.
 
@@ -53,23 +66,27 @@ Utilisez l’[extension Adobe Content Analytics](https://experienceleague.adob
 
   Vous pouvez activer ou désactiver des expériences et modifier les combinaisons d’expressions régulières et de paramètres de requête afin de déterminer comment s’effectue le rendu du contenu sur votre site web.
 
-* [Segmentation d’événement](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting){target="_blank"}
+* [Segmentation des événements](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting){target="_blank"}
 
   Vous pouvez modifier les expressions régulières pour modifier la manière dont vous segmentez les pages et les ressources.
 
 
-Après avoir apporté des modifications dans l’extension Adobe Content Analytics, veillez à utiliser le [flux de publication](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/publish/overview){target="_blank"} pour démarrer la collecte de données en fonction des modifications apportées.
+Après avoir apporté des modifications à l’extension web Adobe Content Analytics, utilisez le [flux de publication](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/publish/overview){target="_blank"} pour commencer à collecter des données.
 
 
+### Mobile
 
->[!MORELIKETHIS]
->
->[Configuration guidée](guided.md)
->>[Vue d’ensemble de la publication des balises de collecte de données](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/publish/overview)
->
+Vous utilisez l’[extension mobile &#x200B;](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/) dans la propriété Tags associée à votre configuration Content Analytics pour apporter des modifications supplémentaires.
+
+Après avoir apporté des modifications à l’extension web Adobe Content Analytics, utilisez le [flux de publication](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/publish/overview){target="_blank"} pour commencer à collecter des données.
 
 
 ## Contrôle de version
+
+>[!NOTE]
+>
+>Cette section s’applique uniquement à Content Analytics pour le canal web.
+
 
 Si vous souhaitez collecter des expériences Content Analytics, pensez à implémenter le contrôle de version pour vous assurer que les nouvelles expériences (modifications apportées à votre page web) sont correctement collectées.
 
@@ -88,44 +105,8 @@ window.adobe.getContentExperienceVersion = () => {
 };
 ```
 
-## Identités
-
-Content Analytics gère les identités de la manière suivante :
-
-* L’ECID est automatiquement renseigné dans la partie `identityMap` du schéma Content Analytics.
-* Si vous avez besoin d’autres valeurs d’identité dans le `identityMap`, vous devez définir ces valeurs dans le rappel `onBeforeEventSend` dans l’extension Web SDK.
-* Le groupement basé sur les champs n’est pas pris en charge, car le schéma est détenu par le système. Vous ne pouvez donc pas ajouter un autre champ au schéma pour prendre en charge le groupement basé sur les champs.
-
-
-Pour vous assurer que les données d’identité Content Analytics et les données d’identité des données du SDK Web Adobe Experience Platform sont correctement regroupées au niveau du champ, vous devez apporter des modifications au rappel [onBeforeEventSend](https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/commands/configure/onbeforeeventsend){target="_blank"} du SDK Web.
-
-1. Accédez à la propriété **[!UICONTROL Balises]** qui contient l’extension du SDK Web Adobe Experience Platform et l’extension Adobe Content Analytics.
-1. Sélectionnez ![Plug](/help/assets/icons/Plug.svg) **[!UICONTROL Extensions]**.
-1. Sélectionnez l’extension **[!UICONTROL SDK Web Adobe Experience Platform]**.
-1. Sélectionnez **[!UICONTROL Configurer]**.
-1. Dans la section **[!UICONTROL Instances SDK]**, faites défiler l’écran jusqu’à **[!UICONTROL Collecte de données]** - Rappel **[!UICONTROL OnBeforeEventSend]**.
-
-   ![Rappel OnBeforeEventSend](/help/content-analytics/assets/onbeforeeventsendcallback.png)
-
-1. Sélectionnez **[!UICONTROL &lt;/> Fournir le code du rappel OnBeforeEventSend]**.
-1. Ajoutez le code suivant :
-
-   ```javascript
-   window.adobeContentAnalytics?.forwardEvent(content);
-   
-   content.xdm.identityMap = _satellite.getVar('identityMap');
-   if ((content.xdm.eventType === "content.contentEngagement") && (_satellite.getVar('identityMap') != null)) {
-      return true;
-   }
-   ```
-
-   ![Rappel OnBeforeEventSend](/help/content-analytics/assets/onbeforeeventsendcallbackcode.png)
-
-1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer le code.
-1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer l’extension.
-1. [Publiez](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/publish/overview) les mises à jour de la propriété Balises.
-
-
-
-
-
+>[!MORELIKETHIS]
+>
+>[Configuration guidée](guided.md)
+>[Vue d’ensemble de la publication des balises de collecte de données](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/publish/overview)
+>

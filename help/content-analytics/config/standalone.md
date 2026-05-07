@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 35d63b7d-f35a-4a88-ae14-96724d32a931
-source-git-commit: 1930e9da5d1cc8b5fb7ddc592535f035e4842a7b
+source-git-commit: beb2e35354d3da1fe6d22f4221e30ff0ccde3138
 workflow-type: tm+mt
-source-wordcount: '2540'
-ht-degree: 6%
+source-wordcount: '2631'
+ht-degree: 10%
 
 ---
 
@@ -23,7 +23,7 @@ Content Analytics est accordé sous licence en tant que produit autonome, mais l
 
 Avant de commencer la configuration de Content Analytics autonome, vous devez :
 
-* Compréhension de base des concepts d’analyse web, connaissance des systèmes de gestion des balises et des bases de JavaScript.
+* Posséder une compréhension de base des concepts d’analyses web et mobiles, une connaissance des systèmes de gestion des balises et des bases de JavaScript. Pour Content Analytics pour le canal mobile, vous devez disposer de compétences en développement d’applications mobiles.
 * Planifiez 4 à 6 heures pour la configuration initiale, ainsi que du temps supplémentaire pour tester et valider la configuration.
 
 ## Terminologie
@@ -39,7 +39,7 @@ Ce guide utilise plusieurs termes techniques, issus d’Experience Platform et d
 | **Sandbox** | Experience Platform fournit des [sandbox](https://experienceleague.adobe.com/fr/docs/experience-platform/sandbox/home) qui divisent une instance Experience Platform unique en environnements virtuels distincts pour favoriser le développement et l’évolution d’applications d’expérience digitale. Content Analytics utilise généralement le sandbox *de production*. |
 | **Connexion** | [Connexions](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-connections/overview) définissez les jeux de données Experience Platform à ingérer. Une connexion définit le lien entre votre jeu de données (où les données sont stockées dans AEP) et Customer Journey Analytics (où vous les analysez). Une connexion rend les données collectées disponibles pour la création de rapports. |
 | **Vue de données** | Une [vue de données](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dataviews/data-views) est un conteneur qui vous permet de déterminer comment interpréter les données d’une connexion. Une vue de données spécifie toutes les dimensions et mesures pour lesquelles vous pouvez créer des rapports. Une vue de données est semblable à une configuration qui détermine les lignes et colonnes disponibles que vous pouvez utiliser dans votre analyse. |
-| **Analysis Workspace** | [Analysis Workspace](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/home) est une interface de navigateur par glisser-déposer que vous utilisez pour créer vos rapports et analyses Content Analytics. |
+| **Analysis Workspace** | [&#128279;](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/home) est une interface de navigateur par glisser-déposer que vous utilisez pour créer vos rapports et analyses Content Analytics. |
 | **Expérience** | Dans Content Analytics, une [expérience](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/content-analytics/content-analytics#terminology) fait référence à tout le contenu textuel d’une page web qui peut être capturé et analysé en fonction de l’URL de la page. |
 | **Ressource** | Dans Content Analytics, une [ressource](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/content-analytics/content-analytics#terminology) est un élément de contenu individuel et unique, comme une image. |
 
@@ -48,12 +48,12 @@ Ce guide utilise plusieurs termes techniques, issus d’Experience Platform et d
 
 Cette configuration vous guide dans la configuration de toutes les applications requises pour disposer d’une implémentation Content Analytics **autonome** fonctionnelle. Vous pouvez diviser la configuration en trois phases, où chaque phase s’appuie sur la précédente :
 
-**Phase 1** - [Préparation de votre environnement](#prepare-your-environment). Au cours de cette phase, vous devez configurer les autorisations utilisateur et vérifier votre infrastructure de données. Sans ces autorisations et cette structure de données appropriées, vous ne pouvez pas effectuer les étapes restantes. Les étapes impliquées sont les suivantes :
+**Phase 1** - [Préparation de votre environnement](#prepare-your-environment). Au cours de cette phase, vous devez configurer les autorisations utilisateur et vérifier votre infrastructure de données. Avec ces autorisations et cette structure de données appropriées, vous pouvez effectuer les étapes restantes. Les étapes impliquées sont les suivantes :
 
 1. **Configurez le contrôle d’accès et les autorisations** pour prendre en charge la configuration et l’implémentation de Content Analytics.
 1. **Configurer un schéma et un jeu de données** pour définir le modèle (schéma) des données à partir desquelles vous souhaitez collecter des informations d’analyse de contenu et l’emplacement de la collecte de ces données (jeu de données).
 
-**Phase 2** - [Configurer la collecte de données](#configure-data-collection). Au cours de cette phase, vous créez le pipeline qui capture les données du contenu de votre site web. Ainsi, Content Analytics sait quel contenu les visiteurs et visiteuses interagissent avec votre contenu.
+**Phase 2** - [Configurer la collecte de données](#configure-data-collection). Au cours de cette phase, vous créez le pipeline qui capture les données du contenu de votre site web. Ainsi, Content Analytics sait avec quel contenu les visiteurs et visiteuses s’engagent.
 
 1. **Configurer un flux de données** pour configurer la manière dont les données collectées sont acheminées vers le jeu de données.
 1. **Utiliser les balises de site web** pour configurer des règles et des éléments de données par rapport aux données de la couche de données sur le site web et pour vous assurer que les données sont envoyées au flux de données configuré.
@@ -73,7 +73,7 @@ Au cours de cette phase, vous devez configurer les autorisations utilisateur et 
 
 ### Configuration du contrôle d’accès et des autorisations
 
-Cette section documente l’accès dont vous avez besoin au produit, les profils de produit et les autorisations requises pour configurer et configurer un Content Analytics autonome. Bien que vous ne soyez intéressé que par les fonctionnalités de Content Analytics, vous avez toujours besoin d’un accès et d’autorisations pour d’autres produits Experience Platform afin que ces fonctionnalités fonctionnent correctement.
+Cette section décrit l’accès dont vous avez besoin aux produits, aux profils de produit et aux autorisations requises pour configurer et configurer un Content Analytics autonome. Bien que vous ne soyez intéressé que par les fonctionnalités de Content Analytics, vous avez toujours besoin d’un accès et d’autorisations pour d’autres produits Experience Platform afin que ces fonctionnalités fonctionnent correctement.
 
 #### Contrôle d’accès
 
@@ -96,14 +96,14 @@ Vous devez être un administrateur de produit pour les produits et profils de pr
 * Collecte de données dʼAdobe Experience Platform
    * Tous les accès à la collecte de données par défaut
 
-* Adobe Experience Platform Privacy Service 
+* Adobe Experience Platform Privacy Service
 
 * Customer Journey Analytics (Personnalisé)
    * Customer Journey Analytics (ou tout autre profil de produit configuré par défaut)
 
 Vous définissez l’accès administrateur de produit via l’Admin Console :
 
-1. Accédez à [Admin Console](https://adminconsole.adobe.com).
+1. Accédez à [&#128279;](https://adminconsole.adobe.com).
 1. Sélectionnez **[!UICONTROL Produits]**.
 1. Sélectionnez le produit spécifique.
 1. Sélectionnez l’onglet **[!UICONTROL Administrateurs]**.
@@ -113,7 +113,7 @@ Vous définissez l’accès administrateur de produit via l’Admin Console :
 
 Vous définissez l’accès administrateur de profil de produit via Admin Console :
 
-1. Accédez à [Admin Console](https://adminconsole.adobe.com).
+1. Accédez à [&#128279;](https://adminconsole.adobe.com).
 1. Sélectionnez **[!UICONTROL Produits]**.
 1. Sélectionnez le produit spécifique. Vérifiez que vous disposez déjà d’un accès d’administrateur de produit.
 1. Sélectionnez **[!UICONTROL Profils de produit]**.
@@ -164,7 +164,7 @@ Pour Content Analytics, vous devez vérifier si les ressources suivantes et les 
       * Afficher Sandbox
 
 
-Dans l’interface Autorisations , vous pouvez vérifier les rôles et les autorisations associées. Et quels utilisateurs appartiennent au rôle.
+Dans l’interface Autorisations , vous pouvez vérifier les rôles et les autorisations associées. L’interface affiche également les utilisateurs et utilisatrices appartenant au rôle.
 
 1. Accédez à Experience Platform pour votre organisation.
 1. Dans l’écran de bienvenue, dans **[!UICONTROL Accès rapide]**, sélectionnez **[!UICONTROL Afficher tout]**.
@@ -200,32 +200,26 @@ Pour Content Analytics, vous devez vérifier si les autorisations de profil de p
    * Toutes les vues de données disponibles.
 
 * Outils de création de rapports
-   * Accès aux analyses guidées ?
    * Création des mesures calculées
    * Création de segment
-   * Accès aux laboratoires ?
    * Création d’annotation
-   * Création d’une audience ?
-   * Vue Audience ?
    * Accès aux journaux d’audit
    * Partager les liens du projet avec tout le monde
    * Prévisions
    * Assistant IA : connaissances du produit
    * Agent Data Insights
    * Légendes intelligentes
-   * Storytelling de données ?
 
 * Outils des vues de données
-   * Exportation de table complète ?
-   * Extension CJA BI ?
+   * Export du tableau complet
 
 Pour vérifier et mettre à jour ces autorisations pour Customer Journey Analytics :
 
-1. Accédez à [Admin Console](https://adminconsole.adobe.com).
+1. Accédez à [&#128279;](https://adminconsole.adobe.com).
 1. Sélectionnez **[!UICONTROL Produits]**.
-1. Sélectionnez le produit **[!UICONTROL Customer Journey Analytics]**.
+1. Sélectionnez le produit **&#x200B;**.
 1. Sélectionnez **[!UICONTROL Profils de produit]**.
-1. Sélectionnez le profil de produit configuré par défaut disponible pour Customer Journey Analytics. Par exemple : **[!UICONTROL Customer Journey Analytics]**.
+1. Sélectionnez le profil de produit configuré par défaut disponible pour Customer Journey Analytics. Par exemple : **&#x200B;**.
 1. Dans l’écran du profil de produit, sélectionnez **[!UICONTROL Autorisations]**.
 1. Sélectionnez l’un des boutons ![Modifier](/help/assets/icons/Edit.svg) pour modifier les autorisations. Dans la boîte de dialogue **[!UICONTROL Modifier les autorisations pour Customer Journey Analytics]** :
 
@@ -240,7 +234,7 @@ Pour vérifier et mettre à jour ces autorisations pour Customer Journey Analyti
 
 ### Configurer le schéma et le jeu de données
 
-Pour collecter des données à partir de votre site web, sous réserve des informations Content Analytics, vous devez d’abord définir le type de données à collecter. Et aussi comment ces données sont stockées. Ces deux concepts sont expliqués dans la section [Configurer un schéma et un jeu de données](/help/data-ingestion/aepwebsdk.md#set-up-a-schema-and-dataset) du guide de démarrage rapide [Ingérer des données via le SDK Web Adobe Experience Platform](/help/data-ingestion/aepwebsdk.md).
+Pour collecter des données à partir de votre site web à des fins d’informations sur Content Analytics, vous devez d’abord définir le type de données à collecter. Vous devez également définir la manière dont ces données sont stockées. Ces deux concepts sont expliqués dans les sections [Configurer un schéma et un jeu de données](/help/data-ingestion/aepwebsdk.md#set-up-a-schema-and-dataset) dans le guide de démarrage rapide [Ingérer des données via le SDK Web Adobe Experience Platform](/help/data-ingestion/aepwebsdk.md) et [Ingérer des données via le SDK Mobile Adobe Experience Platform](/help/data-ingestion/aepmobilesdk.md).
 
 
 ## Configurer la collecte de données
@@ -254,14 +248,14 @@ Vous avez défini les données à collecter et la manière de les stocker. L’�
 
 ### Utiliser des balises
 
-Vous avez défini les données à collecter (schéma), comment stocker ces données (jeu de données) et comment les données collectées sur le site web sont acheminées vers le jeu de données (flux de données). L’étape suivante consiste à baliser votre site web pour configurer des règles et des éléments de données par rapport aux données de la couche de données sur votre site web. Le balisage de votre site web garantit que les données sont envoyées au flux de données configuré. Le balisage de votre site web à l’aide de balises est expliqué dans la section [Utiliser les balises](/help/data-ingestion/aepwebsdk.md#use-tags) du guide de démarrage rapide [Ingérer des données via le SDK web Adobe Experience Platform](/help/data-ingestion/aepwebsdk.md).
+Vous avez défini les données à collecter (schéma), comment stocker ces données (jeu de données) et comment les données collectées sur le site web sont acheminées vers le jeu de données (flux de données). L’étape suivante consiste à baliser votre site web pour configurer des règles et des éléments de données par rapport aux données de la couche de données sur votre site web. Le balisage de votre site web garantit que les données sont envoyées au flux de données configuré. Le balisage de votre site web à l’aide de balises est expliqué dans la section Utilisation des balises dans les guides de démarrage rapide [Web SDK](/help/data-ingestion/aepwebsdk.md#use-tags) et [Mobile SDK](/help/data-ingestion/aepmobilesdk.md#use-tags).
 
 
 ### Déployer et valider
 
-Vous pouvez désormais déployer le code dans la version de développement du site Web dans la balise `<head>`. Une fois déployé, votre site web commence à collecter des données dans Adobe Experience Platform. Ces données sont ensuite soumises à Content Analytics.
+Vous pouvez désormais déployer le code dans la version de développement du site Web dans la balise `<head>`. Une fois déployé, le site Web commence à collecter des données dans Adobe Experience Platform. Ces données sont ensuite soumises à Content Analytics.
 
-Validez la mise en œuvre, corrigez-la si nécessaire, puis déployez-la dans l’environnement d’évaluation et de production à l’aide du processus de publication des balises
+Validez la mise en œuvre, corrigez-la si nécessaire, puis déployez-la dans l’environnement d’évaluation et de production à l’aide du processus de publication des balises.
 
 
 ## Configurer des rapports
@@ -270,12 +264,12 @@ Au cours de cette phase, vous rendez les données collectées disponibles pour a
 
 ### Configurer une connexion à votre jeu de données
 
-Pour générer des rapports sur les données collectées et configurer ces données pour Content Analytics, vous devez configurer une connexion dans Customer Journey Analytics. La connexion se connecte au jeu de données qui contient les données collectées. La configuration d’une connexion est expliquée dans la section [Configurer une connexion](../../data-ingestion/aepwebsdk.md#set-up-a-connection) du guide de démarrage rapide [Ingérer des données via le SDK Web Adobe Experience Platform](/help/data-ingestion/aepwebsdk.md).
+Pour générer des rapports sur les données collectées et configurer ces données pour Content Analytics, vous devez configurer une connexion dans Customer Journey Analytics. La connexion se connecte au jeu de données qui contient les données collectées. Voir [Configurer une connexion](../../data-ingestion/aepwebsdk.md#set-up-a-connection) dans les guides de démarrage rapide [Web SDK](/help/data-ingestion/aepwebsdk.md) et [Mobile SDK](/help/data-ingestion/aepmobilesdk.md#set-up-a-connection).
 
 
 ### Configurer une vue de données
 
-La dernière étape avant de pouvoir configurer Content Analytics consiste à définir une vue de données. Une vue de données est un conteneur spécifique à Customer Journey Analytics qui vous permet de déterminer comment interpréter les données d’une connexion. Une vue de données vous permet de définir des mesures et des dimensions à partir des données d’un ou de plusieurs jeux de données auxquels Customer Journey Analytics est connecté. La configuration d’une vue de données est expliquée dans la section [Configurer une vue de données](/help/data-ingestion/aepwebsdk.md#set-up-a-data-view) du guide de démarrage rapide [Ingérer des données via Adobe Experience Platform Web SDK](/help/data-ingestion/aepwebsdk.md).
+La dernière étape avant de pouvoir configurer Content Analytics consiste à définir une vue de données. Une vue de données est un conteneur spécifique à Customer Journey Analytics qui vous permet de déterminer comment interpréter les données d’une connexion. Une vue de données vous permet de définir des mesures et des dimensions à partir des données d’un ou de plusieurs jeux de données auxquels Customer Journey Analytics est connecté. Voir [Configurer une vue de données](/help/data-ingestion/aepwebsdk.md#set-up-a-data-view) dans les guides de démarrage rapide [Web SDK](/help/data-ingestion/aepwebsdk.md) et [Mobile SDK](/help/data-ingestion/aepmobilesdk.md#set-up-a-data-view).
 
 
 ### Configurer Content Analytics
@@ -284,7 +278,7 @@ Tout est désormais en place pour configurer Content Analytics.
 
 #### Configuration guidée
 
-Utilisez l’assistant [configuration guidée](guided.md) et sélectionnez la vue de données que vous avez créée dans le cadre de l’étape [Configurer une vue de données](#set-up-a-data-view). Cette sélection garantit que Content Analytics est configuré et implémenté en plus des données que vous collectez sur votre site web.
+Utilisez l’assistant [configuration guidée](guided.md) et sélectionnez la vue de données que vous avez créée dans le cadre de l’étape [Configurer une vue de données](#set-up-a-data-view). Cette sélection garantit que Content Analytics est configuré et implémenté en plus des données que vous collectez sur votre site web et votre application mobile.
 
 Notez que l’assistant de configuration guidé configure les objets Content Analytics spécifiques supplémentaires suivants :
 
@@ -297,7 +291,6 @@ Notez que l’assistant de configuration guidé configure les objets Content Ana
   >Veillez à sélectionner l’option permettant de créer une propriété New Tags dans le cadre de l’étape [Collecte de données](guided.md#new-configuration-1) de l’assistant.
   >
 
-
 #### Configuration manuelle
 
 Pour implémenter Content Analytics pour votre site web, vous devez publier la propriété Content Analytics Tags [manuellement](manual.md).
@@ -305,4 +298,4 @@ Pour implémenter Content Analytics pour votre site web, vous devez publier la p
 
 ### Configurer un projet
 
-Configurez un projet dans Customer Journey Analytics pour créer vos [rapports et visualisations Content Analytics](/help/content-analytics/report/report.md). Vous pouvez également utiliser un modèle [Content Analytics](/help/content-analytics/report/report.md#template) pour commencer.
+Configurez un projet dans Customer Journey Analytics pour créer vos [rapports et visualisations Content Analytics](/help/content-analytics/report/report.md). Vous pouvez également utiliser un modèle [&#128279;](/help/content-analytics/report/report.md#template) pour commencer.

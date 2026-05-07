@@ -5,8 +5,8 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: Use Cases
 hide: true
-exl-id: ea8795fe-f5aa-458f-9e01-53ff1ffe6372
-source-git-commit: d79c6d883f436d97925e007f453879e20b4fcc04
+exl-id: a8795fe-f5aa-458f-9e01-53ff1ffe6372
+source-git-commit: d8d82830188a24bc01bac35c22a27c7f12f9e615
 workflow-type: tm+mt
 source-wordcount: '435'
 ht-degree: 4%
@@ -24,10 +24,10 @@ CJA déverrouille le contrôle de la période de rapport sur les données AEM, l
 ## Étape 1 : Créer un connecteur source Quantum Metric
 
 1. Connectez-vous à [experience.adobe.com](https://experience.adobe.com).
-1. Accédez à [!UICONTROL Experience Platform] > [!UICONTROL Connexions] > [!UICONTROL Sources].
+1. Accédez à  > [!UICONTROL Connexions] > [!UICONTROL Sources].
 1. Ajoutez le connecteur source Quantum Metric et suivez les invites jusqu’à la fin.
 
-Voir [Connecteurs source Adobe Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/home) pour plus d’informations.
+Voir [Connecteurs source &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/home) pour plus d’informations.
 
 ## Étape 2 : création d’une connexion dans Customer Journey Analytics
 

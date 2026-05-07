@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: User
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-source-git-commit: 93ef16462842a819c3b980d557abaaf0cd547b6c
+source-git-commit: 21bf687f3cff101ee1b3e4be3d870de270f82e89
 workflow-type: tm+mt
-source-wordcount: '1473'
-ht-degree: 77%
+source-wordcount: '1410'
+ht-degree: 47%
 
 ---
 
@@ -18,7 +18,7 @@ Vous créez des rapports, effectuez des analyses et obtenez des informations sur
 
 Pour créer entièrement votre propre rapport Content Analytics, procédez comme suit :
 
-1. [Créez un projet](/help/analysis-workspace/build-workspace-project/create-projects.md) ou [ouvrez un projet existant](/help/analysis-workspace/build-workspace-project/open-projects.md) dans Workspace.
+1. Créez un [projet](/help/analysis-workspace/build-workspace-project/create-projects.md) ou ouvrez un [projet existant](/help/analysis-workspace/build-workspace-project/open-projects.md) dans Workspace.
 1. Veillez à [sélectionner une vue de données](/help/analysis-workspace/c-panels/panels.md#data-view) pour la création de rapports sur Content Analytics. La création de rapports sur Content Analytics n’est disponible que pour les vues de données [configurées](/help/content-analytics/config/configuration.md) pour Content Analytics.
 1. Faites glisser une visualisation ![Tableau](/help/assets/icons/Table.svg) [Tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) sur la zone de travail.
 1. Utilisez des [composants d’analyse du contenu spécifiques](components.md) et d’autres [composants](/help/components/overview.md) génériques (tels que des segments, des périodes, des annotations) pour créer vos informations d’analyse du contenu.
@@ -62,7 +62,7 @@ Des miniatures s’affichent lorsque vous pointez sur un point de données dans 
 
 >[!AVAILABILITY]
 >
->La fonctionnalité de visualisations sous forme de barres et nuages de points décrite dans cette section se trouve dans la phase de tests limités de la publication et peut ne pas encore être disponible dans votre environnement. Cette note sera supprimée lorsque la fonctionnalité sera disponible. Pour plus d’informations sur le processus de mise à jour de Customer Journey Analytics, consultez [Mise à jour des fonctionnalités de Customer Journey Analytics](/help/release-notes/releases.md).
+>Les visualisations à barres et en nuage de points décrites dans cette section font l’objet de tests limités et peuvent ne pas être disponibles dans votre environnement. Cette note est supprimée lorsque la fonctionnalité est disponible. Pour plus d’informations sur le processus de mise à jour de Customer Journey Analytics, consultez [Mise à jour des fonctionnalités de Customer Journey Analytics](/help/release-notes/releases.md).
 >
 
 Vous pouvez ouvrir une fenêtre contextuelle d’aperçu. Pour ce faire, procédez comme suit :
@@ -99,18 +99,18 @@ Pour utiliser le modèle :
 1. Dans la boîte de dialogue **[!UICONTROL Configurer votre modèle]**, sélectionnez une mesure dans la boîte de dialogue **[!UICONTROL Sélectionner une mesure de conversion]**. Par exemple, **[!UICONTROL CTR des ressource]**.
 1. Sélectionnez **[!UICONTROL Continuer]**.
 
-Un projet **[!UICONTROL Vue d’ensemble de Content Analytics]** s’ouvre dans [Analysis Workspace](/help/analysis-workspace/home.md). Le projet se compose de quatre [panneaux](/help/analysis-workspace/c-panels/panels.md). Chaque panneau fournit des [tableaux à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) et des [visualisations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) pour répondre à une question spécifique :
+Un projet **[!UICONTROL Vue d’ensemble de Content Analytics]** s’ouvre dans [Analysis Workspace](/help/analysis-workspace/home.md). Le projet se compose de quatre [panneaux](/help/analysis-workspace/c-panels/panels.md), où chaque panneau fournit [tableaux à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) et [visualisations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) pour répondre à une question spécifique. Vous pouvez utiliser la répartition **[!UICONTROL Canal de contenu]** pour [répartir](/help/analysis-workspace/c-panels/panels.md#break-down-a-panel) le panneau du canal de contenu qui vous intéresse : **[!UICONTROL web]** ou **[!UICONTROL mobile]**.
+
+Les quatre panneaux sont les suivants :
 
 * **Quel est le contenu le plus performant ?**
-Ce panneau vous permet de comprendre quelles expériences et quelles ressources de ces expériences génèrent de l’engagement et des conversions. Les expériences sont des pages web complètes, capturées à un moment spécifique. Une expérience peut contenir du texte et plusieurs ressources d’image. Une ressource est une image.
-
-  Le panneau se compose des visualisations suivantes :
+Ce panneau identifie les expériences et les ressources qui génèrent l’engagement et la conversion. Les expériences sont des pages web complètes capturées à un moment spécifique ou une combinaison de texte, de ressources et d’appels à l’action définis dans une application mobile.
 
    * **Expériences**
 
      >[!NOTE]
      >
-     >Ces visualisations ne s’affichent dans votre modèle que lorsque vous avez configuré pour [inclure des expériences](/help/content-analytics/config/guided.md#experience-capture-and-definition) dans votre configuration Content Analytics.
+     >Ces visualisations ne s’affichent dans votre modèle que lorsque vous avez configuré le système pour [inclure des expériences](/help/content-analytics/config/guided.md#experience-capture-and-definition) dans votre configuration Content Analytics.
      > 
 
       * **Experience CTR** : visualisation [synthèse des modifications](/help/analysis-workspace/visualizations/summary-number-change.md) qui affiche Experience CTR.
@@ -119,30 +119,28 @@ Ce panneau vous permet de comprendre quelles expériences et quelles ressources 
 
    * **Ressources**
 
-      * **CTR des ressources**
-Visualisation de la [synthèse des modifications](/help/analysis-workspace/visualizations/summary-number-change.md) qui affiche le CTR des ressources.
-      * **Ressources générant le plus de conversion**
-Visualisation en [barre horizontale](/help/analysis-workspace/visualizations/horizontal-bar.md) qui représente les ressources générant le plus de conversions en fonction de la mesure de conversion sélectionnée.
+      * **Taux de clics des ressources**
+Visualisation [résumé des modifications](/help/analysis-workspace/visualizations/summary-number-change.md) qui affiche le taux de clics de la ressource.
+      * **Principales conversions de ressources**
+Visualisation [barre horizontale](/help/analysis-workspace/visualizations/horizontal-bar.md) qui affiche les principales ressources à convertir en fonction de la mesure de conversion sélectionnée.
       * **Ressources les plus performantes**
-[Tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) (comprenant des [miniatures](#thumbnails) et des [prévisualisations](#previews)) pour les ressources les plus performantes.
-      * **Ressources : vues et conversion**
-Visualisation en [graphique de dispersion](/help/analysis-workspace/visualizations/scatterplot.md) qui présente un graphique de dispersion des vues de ressources par rapport aux conversions de ressources.
+Un [tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) (comprenant des [miniatures](#thumbnails) et des [aperçus](#previews)) pour les ressources les plus performantes.
+Assets - vues par rapport à la conversion.
+Visualisation [en graphique de dispersion](/help/analysis-workspace/visualizations/scatterplot.md) qui présente un graphique de dispersion des vues de ressources en fonction des conversions de ressources.
 
 * **Quels sont les attributs de ressources qui contribuent aux conversions ?**
-Content Analytics utilise l’IA et GenAI pour affecter automatiquement chaque ressource [métadonnées](/help/content-analytics/report/components.md#asset-metadata) et [attributs](/help/content-analytics/report/components.md#asset-attributes) comme les sujets, les scènes, les couleurs de premier plan, etc. Un attribut est une balise de métadonnées affectée par l’IA décrivant le contenu d’une ressource ou d’une expérience. Par exemple : <code>couleur de premier plan : rouge</code> est un attribut affecté automatiquement. Les visualisations vous permettent d’identifier les attributs de vos ressources qui contribuent le plus aux conversions.
+Content Analytics utilise l’IA et GenAI pour affecter automatiquement des métadonnées et des attributs, tels que les objets, les scènes et les couleurs de premier plan, à chaque ressource.
 
-  Le panneau se compose des visualisations suivantes :
-
-   * **Attributs de ressources générant le plus de conversions**
-[Barre horizontale](/help/analysis-workspace/visualizations/horizontal-bar.md) qui représente les attributs de ressources générant le plus de conversions en fonction de la mesure de conversion sélectionnée.
-   * **Attributs d’expérience générant le plus de conversions par rapport aux 30 derniers jours**
-Visualisation en [barre horizontale](/help/analysis-workspace/visualizations/horizontal-bar.md) qui représente les attributs d’expérience générant le plus de conversions comparés aux 30 derniers jours, en fonction de la mesure de conversion sélectionnée.
-   * **Données des attributs de ressources générant le plus de conversions**
-[Tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) qui représente les attributs de ressources générant le plus de conversions en fonction de la mesure de conversion sélectionnée. Sélectionnez une ligne dans le tableau pour mettre à jour la visualisation Tendance des attributs.
+   * **Principaux attributs de ressource de conversion**
+Une [barre horizontale](/help/analysis-workspace/visualizations/horizontal-bar.md) qui affiche les attributs de ressource de conversion supérieurs en fonction de la mesure de conversion sélectionnée.
+   * **Meilleure conversion des attributs de ressource par rapport aux 30 jours précédents**
+Visualisation [barre horizontale](/help/analysis-workspace/visualizations/horizontal-bar.md) qui affiche les principaux attributs de ressource de conversion, par rapport aux 30 jours précédents, en fonction de la mesure de conversion sélectionnée.
+   * **Principale conversion des données d’attribut des ressources**
+Un [tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) qui affiche les principaux attributs de conversion en fonction de la mesure de conversion sélectionnée. Sélectionnez une ligne dans le tableau pour mettre à jour la visualisation Tendance des attributs.
    * **Tendance des attributs**
-Visualisation en [ligne](/help/analysis-workspace/visualizations/line.md) qui représente la tendance des attributs pour l’attribut de ressource générant le plus de conversions sélectionné.
-   * **Couleur du premier plan de la ressource**
-Exemple de [tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) qui compare les performances des éléments d’une seule catégorie d’attributs de ressource : Couleurs du premier plan. Vous pouvez remplacer cet attribut de ressource par d’autres dimensions de catégorie d’attributs de ressource.
+Visualisation [en ligne](/help/analysis-workspace/visualizations/line.md) montrant la tendance de l’attribut de la ressource de conversion la plus élevée sélectionnée.
+   * **Couleur de premier plan des ressources**
+Exemple [tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) qui compare les performances des éléments d’une seule catégorie d’attributs de ressource : Couleurs de premier plan. Vous pouvez remplacer cet attribut de ressource par d’autres dimensions de catégorie d’attributs de ressource.
 
 * **Quels sont les attributs d’expérience qui contribuent aux conversions ?**
 
@@ -155,34 +153,32 @@ Exemple de [tableau à structure libre](/help/analysis-workspace/visualizations/
 
   Le panneau se compose des visualisations suivantes :
 
-   * **Attributs d’expérience générant le plus de conversions**
-Visualisation en [barre horizontale](/help/analysis-workspace/visualizations/horizontal-bar.md) qui représente les attributs d’expérience générant le plus de conversions en fonction de la mesure de conversion sélectionnée.
-   * **Attributs d’expérience générant le plus de conversions par rapport aux 30 derniers jours**
-Visualisation en [barre horizontale](/help/analysis-workspace/visualizations/horizontal-bar.md) qui représente les attributs d’expérience générant le plus de conversions, comparés aux 30 derniers jours, en fonction de la mesure de conversion sélectionnée.
-   * **Données des attributs d’expérience générant le plus de conversions**
-[Tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) qui représente les expériences générant le plus de conversions en fonction de la mesure de conversion sélectionnée. Sélectionnez une ligne dans le tableau pour mettre à jour la visualisation en lignes.
+   * **Principaux attributs d’expérience de conversion**
+Visualisation [barre horizontale](/help/analysis-workspace/visualizations/horizontal-bar.md) qui affiche les attributs d’expérience de conversion supérieurs en fonction de la mesure de conversion sélectionnée.
+Principaux attributs d’expérience de conversion par rapport aux 30 jours précédents
+Visualisation [barre horizontale](/help/analysis-workspace/visualizations/horizontal-bar.md) qui affiche les principaux attributs d’expérience de conversion, par rapport aux 30 jours précédents, en fonction de la mesure de conversion sélectionnée.
+   * **Top conversion des données d’attribut d’expérience**
+Un [tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) qui affiche les principales expériences de conversion en fonction de la mesure de conversion sélectionnée. Sélectionnez une ligne dans le tableau pour mettre à jour la visualisation en lignes.
    * **Ligne**
-Visualisation [en lignes](/help/analysis-workspace/visualizations/line.md) montrant la tendance de l’attribut d’expérience générant le plus de conversions sélectionné.
-   * **Mots-clés de l’experience**
-[Tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) montrant les principaux mots-clés de l’expérience en fonction de la mesure de conversion sélectionnée.
+Visualisation [en ligne](/help/analysis-workspace/visualizations/line.md) montrant la tendance de l’attribut d’expérience de conversion le plus élevé sélectionné.
+   * **Mots-clés d’expérience**
+Un [tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) présentant les principaux mots-clés d’expérience en fonction de la mesure de conversion sélectionnée.
 
 * **Où les ressources apparaissent-elles sur mon site ?**
-Panneau composé d’un tableau à structure libre qui détaille l’emplacement des ressources les plus consultées sur votre site. Cette analyse vous permet de comprendre quelles pages ou sections bénéficient le plus de vos ressources les plus performantes et où optimiser l’emplacement.
-
-  Le panneau se compose d’une visualisation :
+Ce tableau à structure libre détaille l’emplacement des ressources les plus consultées. Utilisez cette analyse pour identifier les pages hautement performantes et optimiser l’emplacement des ressources.
 
    * **Où les ressources les plus consultées apparaissent-elles ?**
-Vous pouvez ventiler n’importe quelle ressource par dimensions pour mieux comprendre où cette image apparaît.
+Vous pouvez ventiler n’importe quelle ressource par dimension afin de mieux comprendre où cette image s’affiche.
 
      Dans l’exemple de [tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) (comprenant des [miniatures](#thumbnails) et des [prévisualisations](#previews)), **[!UICONTROL ID de perception de ressource]** est utilisé à la place de [!UICONTROL ID de ressource]. Parfois, la même image peut être dupliquée sur votre site avec une autre URL d’image. L’attribut [!UICONTROL ID de perception de ressource] permet de regrouper ces doublons sous un seul ID.
 
-     Étant donné que les ressources peuvent changer sur une page, chaque ressource est ventilée par **[!UICONTROL ID d’expérience]** afin d’identifier la version de la page sur laquelle la ressource est apparue. Vous pouvez remplacer l’[!UICONTROL ID d’expérience] par d’autres dimensions qui vous permettant de déterminer l’emplacement d’une ressource sur votre site. Par exemple, [!UICONTROL Nom de la page], [!UICONTROL URL de la page] ou [!UICONTROL Section du site].
+     Étant donné que les ressources peuvent changer sur une page, le système répartit chaque ressource par **[!UICONTROL Experience Id]** afin d’identifier la version de la page où la ressource s’est affichée. Vous pouvez remplacer l’[!UICONTROL ID d’expérience] par d’autres dimensions qui vous permettant de déterminer l’emplacement d’une ressource sur votre site. Par exemple, [!UICONTROL Nom de la page], [!UICONTROL URL de la page] ou [!UICONTROL Section du site].
 
      Vous pouvez également remplacer l’[!UICONTROL ID de perception de ressource] par l’[!UICONTROL ID de ressource] pour obtenir un enregistrement de l’emplacement où des URL d’images spécifiques sont référencées.
 
 
 >[!MORELIKETHIS]
 >
->[Composants de Content Analytics](components.md)
+>[Composants Content Analytics](components.md)
 >[Utiliser des modèles](/help/analysis-workspace/templates/use-templates.md#web-engagement)
 >

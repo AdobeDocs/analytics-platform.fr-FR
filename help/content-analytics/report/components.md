@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: User
 exl-id: 79bf235a-6f6e-4b04-bcd8-1ff884536648
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 21bf687f3cff101ee1b3e4be3d870de270f82e89
 workflow-type: tm+mt
-source-wordcount: '910'
-ht-degree: 100%
+source-wordcount: '1020'
+ht-degree: 88%
 
 ---
 
@@ -18,10 +18,10 @@ Content Analytics ajoute les catégories de composants suivantes (dimensions, me
 
 * [Métadonnées de l’expérience](#experience-metadata)
 * [Attributs de l’expérience](#experience-attributes)
-* [Événements de l’expérience](#experience-events)
+* [Événements d’expérience](#experience-events)
 * [Métadonnées de la ressource](#asset-metadata)
 * [Attributs de la ressource](#asset-attributes)
-* [Événements des ressources](#asset-events)
+* [Événements de la ressource](#asset-events)
 * [Mesures calculées](#calculated-metrics)
 
 Dans les tableaux ci-dessous, ![généré par l’IA](/help/assets/icons/AI.svg) indique une paire attribut/valeur générée par l’IA ou le machine learning.
@@ -30,8 +30,12 @@ Dans les tableaux ci-dessous, ![généré par l’IA](/help/assets/icons/AI.svg)
 
 | Titre | Description | Type |
 |---|---|---|
-| Canal d’expérience | Canal de l’expérience. | Dimension |
-| ID d’expérience | ID unique de l’expérience. | Dimension |
+| SOURCE DE L’ID | Pour Content Analytics, la valeur est `ContentAnalytics`. | Dimension |
+| Canal | Canal de l’expérience. La valeur est soit `Web` soit `Mobile`. | Dimension |
+| ID d’expérience de contenu | ID unique de l’expérience. <br>Pour **web** : URL de la page web. <br/>Pour **web granulaire** : hachage calculé côté client en fonction de la payload du contenu (textes, images, ctas) avec préfixe `web-`. <br/>Pour **mobile** : hachage calculé côté client en fonction de la payload du contenu (textes, images, ctas) avec le préfixe `mobile-`. | Dimension |
+| Source d’expérience de contenu | Pour **web** : URL de la page web.<br/>Pour **mobile** : nom d’écran transmis par le biais du SDK mobile Experience Platform. | Dimension |
+| Canal d’expérience (obsolète) | Canal de l’expérience. La valeur est soit `Web` soit `Mobile`. | Dimension |
+| Extras d’expérience | Toutes les autres données supplémentaires que vous souhaitez suivre. Comme l’identifiant externe ou l’emplacement. | Dimension |
 | URL de miniature de l’expérience | URL de la miniature de l’expérience. | Dimension |
 | Profondeur horizontale de l’expérience en pourcentage | Valeur quantifiable de la profondeur horizontale en pourcentage de l’expérience. | Dimension<br/>Champ dérivé |
 | Profondeur verticale de l’expérience en pourcentage | Valeur quantifiable de la profondeur verticale en pourcentage de l’expérience. | Dimension<br/>Champ dérivé |
@@ -62,7 +66,7 @@ Dans les tableaux ci-dessous, ![généré par l’IA](/help/assets/icons/AI.svg)
 {style="table-layout:fixed"}
 
 
-## Événements de l’expérience
+## Événements d’expérience
 
 | Titre | Description | Type |
 |---|---|---|
@@ -77,12 +81,14 @@ Dans les tableaux ci-dessous, ![généré par l’IA](/help/assets/icons/AI.svg)
 | Titre | Description | Type |
 |---|---|---|
 | ID de ressource | Identifiant unique de la ressource. Le binaire de la ressource détermine son unicité. Si le binaire de la ressource change, l’identifiant change. L’ID unique peut être l’URL, mais il peut également s’agir d’un hachage créé. | Dimension |
+| Source de la ressource | | Dimension |
 | Chemin HTML de la ressource | Chemin HTML concaténé pour la ressource. | Dimension |
 | URL du lien de la ressource | Ancre de page la plus proche pour la ressource. | Dimension |
 | Largeur d’affichage de la ressource | Largeur d’affichage de la ressource de contenu. | Dimension |
 | Hauteur d’affichage de la ressource | Hauteur d’affichage de la ressource de contenu. | Dimension |
 | Gauche absolue de la ressource | Gauche absolue de la ressource de contenu. | Dimension |
 | Première position absolue de la ressource | Première position absolue de la ressource de contenu. | Dimension |
+| Extras de ressources | Toutes les autres données supplémentaires que vous souhaitez suivre. Comme l’identifiant externe ou l’emplacement. | Dimension |
 
 {style="table-layout:fixed"}
 
@@ -140,7 +146,7 @@ Dans les tableaux ci-dessous, ![généré par l’IA](/help/assets/icons/AI.svg)
 | Titre | Description | Type |
 |---|---|---|
 | Taux de clic publicitaire sur la ressource | Clics sur la ressource/Vues de la ressource | Mesure calculée |
-| Taux de clic publicitaire sur l’expérience | Clics sur l’expérience/Vues de l’expérience | Mesure calculée |
+| Taux de clic publicitaire d’expérience | Clics sur l’expérience/Vues de l’expérience | Mesure calculée |
 
 {style="table-layout:fixed"}
 
