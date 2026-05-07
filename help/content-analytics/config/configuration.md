@@ -1,16 +1,17 @@
 ---
 title: Configurer Content Analytics
-description: Vue d’ensemble de la manière de configurer Content Analytics
+description: Découvrez comment configurer Content Analytics pour le canal web et mobile.
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
-source-git-commit: beb2e35354d3da1fe6d22f4221e30ff0ccde3138
+source-git-commit: b8b0237a092b37d28bec56bba05c30a853097d4f
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 77%
+source-wordcount: '776'
+ht-degree: 76%
 
 ---
+
 
 # Configurer Content Analytics
 
@@ -39,12 +40,12 @@ Avant de configurer Content Analytics, assurez-vous de remplir les conditions p
 ### Web
 
 * Vous avez placé sur la liste autorisée l’agent utilisateur et l’adresse IP du service de fonctionnalité utilisé dans Content Analytics. La chaîne de l’agent utilisateur à configurer est : <code>AdobeFeaturization/1.0</code>.
-* Si vous avez implémenté le [SDK web à l’aide de JavaScript](https://experienceleague.adobe.com/fr/docs/experience-platform/collection/js/install/library){target="_blank"} pour la collecte régulière de données comportementales, assurez-vous d’utiliser le nom par défaut <code>alloy</code> pour la bibliothèque JavaScript.
+* Si vous avez implémenté le [SDK web à l’aide de JavaScript](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/install/library){target="_blank"} pour la collecte régulière de données comportementales, assurez-vous d’utiliser le nom par défaut <code>alloy</code> pour la bibliothèque JavaScript.
 * Vous disposez d’un rôle d’administration de produit Customer Journey Analytics, avec des autorisations supplémentaires pour gérer les connexions et les vues de données.
 * Si vous décidez de collecter des expériences Content Analytics, assurez-vous de configurer et de mettre à jour le contrôle de version de Content Analytics en fonction des modifications apportées à vos pages web.
 * Vous devez disposer des [autorisations pour la collecte de données](https://experienceleague.adobe.com/fr/docs/experience-platform/collection/permissions){target="_blank"} :
-   * Autorisations [&#128279;](https://experienceleague.adobe.com/fr/docs/experience-platform/collection/permissions#adobe-experience-platform-permissions){target="_blank"}.
-   * Autorisations de la collecte de données [&#128279;](https://experienceleague.adobe.com/fr/docs/experience-platform/collection/permissions#adobe-experience-platform-data-collection-permissions){target="_blank"}.
+   * Autorisations [](https://experienceleague.adobe.com/fr/docs/experience-platform/collection/permissions#adobe-experience-platform-permissions){target="_blank"}.
+   * Autorisations de la collecte de données [](https://experienceleague.adobe.com/fr/docs/experience-platform/collection/permissions#adobe-experience-platform-data-collection-permissions){target="_blank"}.
 * Vous avez soigneusement examiné les options de configuration importantes suivantes :
 
    * Votre site est adapté à la création de rapports d’expérience. La création de rapports d’expérience n’est possible que si les conditions suivantes sont remplies :
@@ -58,8 +59,8 @@ Avant de configurer Content Analytics, assurez-vous de remplir les conditions p
 * Assurez-vous que les extensions [Experience Platform Edge Network](https://developer.adobe.com/client-sdks/edge/edge-network/) et [Experience Platform Identity for Edge Network](https://developer.adobe.com/client-sdks/edge/identity-for-edge-network/) sont activées pour l’application mobile.
 * Vous disposez d’un rôle d’administration de produit Customer Journey Analytics, avec des autorisations supplémentaires pour gérer les connexions et les vues de données.
 * Vous devez disposer des [autorisations pour la collecte de données](https://experienceleague.adobe.com/fr/docs/experience-platform/collection/permissions){target="_blank"} :
-   * Autorisations [&#128279;](https://experienceleague.adobe.com/fr/docs/experience-platform/collection/permissions#adobe-experience-platform-permissions){target="_blank"}.
-   * Autorisations de la collecte de données [&#128279;](https://experienceleague.adobe.com/fr/docs/experience-platform/collection/permissions#adobe-experience-platform-data-collection-permissions){target="_blank"}.
+   * Autorisations [](https://experienceleague.adobe.com/fr/docs/experience-platform/collection/permissions#adobe-experience-platform-permissions){target="_blank"}.
+   * Autorisations de la collecte de données [](https://experienceleague.adobe.com/fr/docs/experience-platform/collection/permissions#adobe-experience-platform-data-collection-permissions){target="_blank"}.
 
 
 

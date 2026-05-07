@@ -5,12 +5,13 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: User
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-source-git-commit: 21bf687f3cff101ee1b3e4be3d870de270f82e89
+source-git-commit: f29a55379d83fc9bdd89c82f0b27c4321a139908
 workflow-type: tm+mt
 source-wordcount: '1410'
 ht-degree: 47%
 
 ---
+
 
 # Vue d’ensemble de la création de rapports sur Content Analytics
 
@@ -67,7 +68,7 @@ Des miniatures s’affichent lorsque vous pointez sur un point de données dans 
 
 Vous pouvez ouvrir une fenêtre contextuelle d’aperçu. Pour ce faire, procédez comme suit :
 
-* Sélectionnez ![&#x200B; InfoOutline &#x200B;](/help/assets/icons/InfoOutline.svg) dans un [tableau à structure libre](#freeform-table).
+* Sélectionnez ![ InfoOutline ](/help/assets/icons/InfoOutline.svg) dans un [tableau à structure libre](#freeform-table).
 * Sélectionnez une barre spécifique dans une visualisation [barre](#bar-and-horizontal-bar) ou [barre horizontale](#bar-and-horizontal-bar) ou un point de données dans une visualisation [nuage de points](#scatter).
 
 

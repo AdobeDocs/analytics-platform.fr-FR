@@ -1,16 +1,17 @@
 ---
-title: Vue d’ensemble de Content Analytics
-description: Vue d’ensemble de Content Analytics
+title: Vue d’ensemble de Content Analytics
+description: Découvrez la valeur et la terminologie de Content Analytics, ainsi que le fonctionnement de Content Analytics.
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
-source-git-commit: 21bf687f3cff101ee1b3e4be3d870de270f82e89
+source-git-commit: b8b0237a092b37d28bec56bba05c30a853097d4f
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 56%
+source-wordcount: '905'
+ht-degree: 55%
 
 ---
+
 
 # Vue d’ensemble de Content Analytics
 
@@ -73,6 +74,6 @@ Content Analytics utilise des données d’affichage d’images web et mobiles d
 >
 >Création de rapports [Content Analytics](report/report.md)
 >[Configurer Content Analytics](config/configuration.md)
->[Calcul des rebonds et du taux de rebond dans Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/calculating-bounces-bounce-rate-in-adobe-customer-journey-analytics-options-and-implications-12722?profile.language=fr)
+>[Calcul des rebonds et du taux de rebond dans Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/calculating-bounces-bounce-rate-in-adobe-customer-journey-analytics-options-and-implications-12722)
 >
 

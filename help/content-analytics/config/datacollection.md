@@ -1,16 +1,17 @@
 ---
-title: Collecte de données dans Content Analytics
-description: Vue d’ensemble de la collecte de données dans Content Analytics
+title: Collecte de données Content Analytics
+description: Découvrez comment les données sont collectées dans Content Analytics.
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
-source-git-commit: a593221a9eb81d747777aedb323fd44a32c470be
+source-git-commit: b8b0237a092b37d28bec56bba05c30a853097d4f
 workflow-type: tm+mt
-source-wordcount: '1095'
-ht-degree: 53%
+source-wordcount: '1093'
+ht-degree: 52%
 
 ---
+
 
 # Collecte de données dans Content Analytics
 
@@ -40,8 +41,8 @@ Content Analytics nécessite Experience Platform Edge Network Web SDK (pour le c
 La bibliothèque Content Analytics collecte des données lorsque :
 
 * Content Analytics est inclus dans la bibliothèque de balises chargée sur la page ou utilisée dans l’application mobile.
-* L’URL de la page et l’URL de la ressource sont configurées dans l’extension web [&#128279;](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/content-analytics/overview){target="_blank"}, qui fait partie de la bibliothèque de balises incluse.
-* L’URL de la ressource, l’emplacement de la ressource ou l’emplacement de l’expérience ne sont pas exclus dans l’extension mobile Content Analytics [&#128279;](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/).
+* L’URL de la page et l’URL de la ressource sont configurées dans l’extension web [](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/content-analytics/overview){target="_blank"}, qui fait partie de la bibliothèque de balises incluse.
+* L’URL de la ressource, l’emplacement de la ressource ou l’emplacement de l’expérience ne sont pas exclus dans l’extension mobile Content Analytics [](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/).
 
 
 ## Événement Content Analytics
@@ -60,7 +61,7 @@ Un événement Content Analytics comprend les éléments suivants :
 Les événements Content Analytics sont collectés comme une séquence des éléments suivants :
 
 1. Un [affichage enregistré ou clic](#recorded-view-or-click).
-1. Déclencheur [&#x200B; pour envoyer un événement Content Analytics](#trigger-to-send-a-content-analytics-event).
+1. Déclencheur [ pour envoyer un événement Content Analytics](#trigger-to-send-a-content-analytics-event).
 
 Content Analytics collecte les données de cette manière pour refléter cette séquence, au lieu de collecter une vue ou un clic séparément à partir de l’événement qui suit immédiatement. Cette méthode de collecte des données d’analyse de contenu réduit également la quantité de données collectées.
 
@@ -119,7 +120,7 @@ Content Analytics gère les identités du canal web de la manière suivante :
 * Le groupement basé sur les champs n’est pas pris en charge, car le schéma est détenu par le système. Vous ne pouvez donc pas ajouter un autre champ au schéma pour prendre en charge le groupement basé sur les champs.
 
 
-Pour vous assurer que les données d’identité Content Analytics et les données d’identité des données Web SDK sont correctement regroupées au niveau du champ, modifiez l’option de rappel de la SDK Web [activé avant l’envoi de l’événement](https://experienceleague.adobe.com/fr/docs/experience-platform/collection/js/commands/configure/onbeforeeventsend){target="_blank"}.
+Pour vous assurer que les données d’identité Content Analytics et les données d’identité des données Web SDK sont correctement regroupées au niveau du champ, modifiez l’option de rappel de la SDK Web [activé avant l’envoi de l’événement](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/onbeforeeventsend){target="_blank"}.
 
 1. Accédez à la propriété **[!UICONTROL Balises]** qui contient l’extension du SDK Web Adobe Experience Platform et l’extension Adobe Content Analytics.
 1. Sélectionnez ![Plug](/help/assets/icons/Plug.svg) **[!UICONTROL Extensions]**.
