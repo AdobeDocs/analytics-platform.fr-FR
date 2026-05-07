@@ -73,6 +73,6 @@ Content Analytics utilise des données d’affichage d’images web et mobiles d
 >
 >Création de rapports [Content Analytics](report/report.md)
 >[Configurer Content Analytics](config/configuration.md)
->[Calcul des rebonds et du taux de rebond dans Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/calculating-bounces-bounce-rate-in-adobe-customer-journey-analytics-options-and-implications-12722)
+>[Calcul des rebonds et du taux de rebond dans Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/calculating-bounces-bounce-rate-in-adobe-customer-journey-analytics-options-and-implications-12722?profile.language=fr)
 >
 
