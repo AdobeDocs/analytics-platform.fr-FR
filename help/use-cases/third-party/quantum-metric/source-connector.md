@@ -27,7 +27,7 @@ CJA déverrouille le contrôle de la période de rapport sur les données AEM, l
 1. Accédez à  > [!UICONTROL Connexions] > [!UICONTROL Sources].
 1. Ajoutez le connecteur source Quantum Metric et suivez les invites jusqu’à la fin.
 
-Voir [Connecteurs source ](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/home) pour plus d’informations.
+Voir [Connecteurs source &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/home) pour plus d’informations.
 
 ## Étape 2 : création d’une connexion dans Customer Journey Analytics
 
