@@ -2,7 +2,7 @@
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 503037d04843b3a61800ff95c4aa7469f37d2571
+source-git-commit: 725ec404666d706801f06eb4ea46628b02506d59
 workflow-type: tm+mt
 source-wordcount: '1429'
 ht-degree: 92%
@@ -125,7 +125,7 @@ ht-degree: 92%
       + [Experience Platform](/help/data-mirror/aep.md)
       + [Customer Journey Analytics](/help/data-mirror/cja.md)
    + [Guide de démarrage rapide](/help/data-mirror/relational.md)
-   + {hide-from-toc}[Considérations](/help/data-mirror/considerations.md)
+   + [Considérations](/help/data-mirror/considerations.md)
 
 + Connexions {#cja-connections}
    + [Vue d’ensemble des connexions](../connections/overview.md)
@@ -301,7 +301,7 @@ ht-degree: 92%
       + [Configuration guidée](/help/content-analytics/config/guided.md)
       + [Configuration manuelle](/help/content-analytics/config/manual.md)
       + [Configuration autonome](/help/content-analytics/config/standalone.md)
-      + {hide-from-toc}[&#x200B; Configuration agnostique des balises &#x200B;](/help/content-analytics/config/tag-agnostic.md)
+      + {hide-from-toc}[ Configuration agnostique des balises ](/help/content-analytics/config/tag-agnostic.md)
       + [Collecte de données](/help/content-analytics/config/datacollection.md)
 
 + Tableaux de bord Analytics {#cja-dashboards}
@@ -536,7 +536,7 @@ ht-degree: 92%
          + [Lier des lectures de session](/help/use-cases/third-party/quantum-metric/tie-session-replays.md)
          + [Utiliser des cartes thermiques](/help/use-cases/third-party/quantum-metric/heatmap.md)
          + [Ajouter des événements de friction](/help/use-cases/third-party/quantum-metric/friction-events.md)
-         + {hide-from-toc}[Connecteur &#x200B;](/help/use-cases/third-party/quantum-metric/source-connector.md)
+         + {hide-from-toc}[Connecteur ](/help/use-cases/third-party/quantum-metric/source-connector.md)
 
 + Labs {#labs}
    + [Guide d’utilisation de Labs](../labs/labs.md)
