@@ -4,9 +4,9 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 64b96d8b0917975f19c353e26d9e6437d1b4e5ac
+source-git-commit: 43beba33f185e81fcebb4c18acfaa1c236ccd0c7
 workflow-type: tm+mt
-source-wordcount: '6869'
+source-wordcount: '6886'
 ht-degree: 95%
 
 ---
@@ -21,6 +21,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Fonctionnalité | Description |
 |---|---|
 | **Mai 2026** | |
+| Considérations relatives à Data Mirror | [Documentation](/help/data-mirror/considerations.md) qui décrit les facteurs à prendre en compte lors de la configuration de [jeux de données Data Mirror](/help/data-mirror/data-mirror.md). |
 | Canal mobile Content Analytics | Mises à jour de la documentation de [&#128279;](/help/content-analytics/content-analytics.md) pour décrire les fonctionnalités et la configuration du canal mobile Content Analytics. |
 | **Avril 2026** | |
 | Instructions relatives aux champs dérivés | Ajout d’un article avec des [directives](/help/use-cases/data-views/derived-fields/guidelines.md) (bonnes pratiques, mécanismes de sécurisation et pièges courants) pour l’utilisation des champs dérivés. |
