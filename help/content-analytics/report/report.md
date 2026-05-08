@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: User
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-source-git-commit: f29a55379d83fc9bdd89c82f0b27c4321a139908
+source-git-commit: 8c4bd397aa2863c7365778cb545ec42d9b0f4528
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1419'
 ht-degree: 47%
 
 ---
@@ -68,7 +68,7 @@ Des miniatures s’affichent lorsque vous pointez sur un point de données dans 
 
 Vous pouvez ouvrir une fenêtre contextuelle d’aperçu. Pour ce faire, procédez comme suit :
 
-* Sélectionnez ![&#x200B; InfoOutline &#x200B;](/help/assets/icons/InfoOutline.svg) dans un [tableau à structure libre](#freeform-table).
+* Sélectionnez ![ InfoOutline ](/help/assets/icons/InfoOutline.svg) dans un [tableau à structure libre](#freeform-table).
 * Sélectionnez une barre spécifique dans une visualisation [barre](#bar-and-horizontal-bar) ou [barre horizontale](#bar-and-horizontal-bar) ou un point de données dans une visualisation [nuage de points](#scatter).
 
 
@@ -100,7 +100,11 @@ Pour utiliser le modèle :
 1. Dans la boîte de dialogue **[!UICONTROL Configurer votre modèle]**, sélectionnez une mesure dans la boîte de dialogue **[!UICONTROL Sélectionner une mesure de conversion]**. Par exemple, **[!UICONTROL CTR des ressource]**.
 1. Sélectionnez **[!UICONTROL Continuer]**.
 
-Un projet **[!UICONTROL Vue d’ensemble de Content Analytics]** s’ouvre dans [Analysis Workspace](/help/analysis-workspace/home.md). Le projet se compose de quatre [panneaux](/help/analysis-workspace/c-panels/panels.md), où chaque panneau fournit [tableaux à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) et [visualisations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) pour répondre à une question spécifique. Vous pouvez utiliser la répartition **[!UICONTROL Canal de contenu]** pour [répartir](/help/analysis-workspace/c-panels/panels.md#break-down-a-panel) le panneau du canal de contenu qui vous intéresse : **[!UICONTROL web]** ou **[!UICONTROL mobile]**.
+Un projet **[!UICONTROL Vue d’ensemble de Content Analytics]** s’ouvre dans [Analysis Workspace](/help/analysis-workspace/home.md). Le projet se compose de quatre [panneaux](/help/analysis-workspace/c-panels/panels.md), où chaque panneau fournit [tableaux à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) et [visualisations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) pour répondre à une question spécifique.
+
+Vous pouvez utiliser la répartition **[!UICONTROL Canal de contenu]** pour [répartir](/help/analysis-workspace/c-panels/panels.md#break-down-a-panel) le panneau du canal de contenu qui vous intéresse : **[!UICONTROL web]** ou **[!UICONTROL mobile]**.
+
+![Répartition sur le canal de contenu dans le panneau dans Analysis Workspace](/help/content-analytics/assets/aca-content-channel-selector.png)
 
 Les quatre panneaux sont les suivants :
 
