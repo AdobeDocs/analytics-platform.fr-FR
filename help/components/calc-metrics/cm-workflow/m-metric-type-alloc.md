@@ -3,10 +3,10 @@ description: Découvrez le type de mesure et l’attribution.
 title: Type de mesure et attribution
 feature: Calculated Metrics
 exl-id: da73a9ba-542e-436c-bdb2-b629b5b6f760
-source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 100%
+source-wordcount: '620'
+ht-degree: 99%
 
 ---
 
@@ -162,7 +162,7 @@ Consultez [Exemple](#example) pour un exemple d’utilisation d’un modèle d�
 
 >[!MORELIKETHIS]
 >
->[Paramètres des composants d’attribution](/help/data-views/component-settings/attribution.md)
+>[Paramètres des composants : attribution](/help/data-views/component-settings/attribution.md)
 >[Mesure de participation](participation-metric.md)
 >
 

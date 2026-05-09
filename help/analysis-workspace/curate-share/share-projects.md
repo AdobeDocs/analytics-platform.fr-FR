@@ -5,10 +5,10 @@ title: Partager des projets
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
-source-git-commit: 211dbd80b21f84ab616569c0d847dcc97f13661c
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '2092'
-ht-degree: 99%
+source-wordcount: '2185'
+ht-degree: 96%
 
 ---
 
@@ -106,7 +106,7 @@ Si des modifications n’ont pas enregistrées, on vous invite d’abord à enre
 
    Ou
 
-   Sélectionnez **[!UICONTROL Traiter et partager]** pour appliquer automatiquement le traitement du projet. (Si le projet a déjà été partagé, sélectionnez **[!UICONTROL Traitement et mise à jour]**.) En savoir plus sur le [traitement du projet](curate.md).
+   Sélectionnez **[!UICONTROL Traiter et partager]** pour appliquer automatiquement le traitement du projet. (Si le projet a déjà été partagé, sélectionnez **[!UICONTROL Traiter et mettre à jour]**.) En savoir plus sur le [traitement du projet](curate.md).
 
 
 ## Partager un lien vers un projet

@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: f932110a-ca9d-40d1-9459-064ef9cd23da
-source-git-commit: 5808de9b39d3c8fa5632755958ddb887c081b203
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '1467'
-ht-degree: 9%
+source-wordcount: '1545'
+ht-degree: 10%
 
 ---
 
@@ -128,7 +128,7 @@ Définissez un propriétaire clair pour les modifications de schéma. Un schéma
 La conception du schéma doit refléter les attentes en matière de confidentialité et de gouvernance, conformément aux politiques de confidentialité de votre organisation. Tenez compte des points suivants lors de la conception de votre schéma :
 
 * Collectez uniquement les éléments nécessaires pour prendre en charge les cas d’utilisation définis.
-* Assurez-vous que les exigences en matière de consentement et d’utilisation des données sont prises en compte dans votre stratégie de collecte. Pour plus d’informations[&#x200B; voir &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/landing/governance-privacy-security/consent/sdk) Utilisation de Web SDK pour traiter les données de consentement client.
+* Assurez-vous que les exigences en matière de consentement et d’utilisation des données sont prises en compte dans votre stratégie de collecte. Pour plus d’informations[&#128279;](https://experienceleague.adobe.com/fr/docs/experience-platform/landing/governance-privacy-security/consent/sdk) voir  Utilisation de Web SDK pour traiter les données de consentement client.
 * Tenez compte de la manière dont les champs sensibles sont étiquetés et contrôlés dans les outils de gouvernance de Adobe Experience Platform. Voir [Adobe Customer Journey Analytics et gouvernance des données](/help/privacy/privacy-overview.md) pour plus d’informations.
 
 ## Étapes suivantes

@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: bc6c7568-8bd2-4ee1-ab1b-9fa1f6138811
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '1631'
+source-wordcount: '1664'
 ht-degree: 100%
 
 ---
@@ -29,7 +29,7 @@ Après avoir [créé la balise et ajouté l’extension SDK web](/help/getting-s
 
 ## Configurer les éléments de données
 
-Les éléments de données sont les blocs de construction de votre dictionnaire de données (ou mappage de données). Utilisez des éléments de données pour recueillir, organiser et diffuser des données dans les technologies marketing et publicitaires. Vous configurez des éléments de données dans la balise qui peuvent être lus à partir de la couche de données et être utilisés pour diffuser des données dans Adobe Experience Platform. (Pour plus d’informations sur les éléments de données, consultez [Éléments de données](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/ui/data-elements) dans la documentation sur les balises.)
+Les éléments de données sont les blocs de construction de votre dictionnaire de données (ou mappage de données). Utilisez des éléments de données pour recueillir, organiser et diffuser des données dans les technologies marketing et publicitaires. Vous configurez des éléments de données dans la balise qui peuvent être lus à partir de la couche de données et être utilisés pour diffuser des données dans Adobe Experience Platform. (Pour plus d’informations sur les éléments de données, consultez [Éléments de données](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/ui/data-elements) dans la documentation sur les balises.)
 
 Les sections suivantes décrivent les éléments de données suggérés et d’autres éléments de données courants que vous pouvez configurer.
 
@@ -265,7 +265,7 @@ Définir une règle :
 
 Après avoir défini des éléments de données et des règles, vous devez créer et publier votre balise. Lorsque vous créez une version de bibliothèque, vous devez l’affecter à un environnement. Les extensions, règles et éléments de données de la version sont ensuite compilés et placés dans l’environnement attribué. Chaque environnement fournit un code intégré unique qui vous permet d’intégrer la version qui lui est assignée dans votre site.
 
-Les balises Adobe Experience Platform prennent en charge les processus de publication simples à complexes qui doivent s’adapter au déploiement du SDK web Adobe Experience Platform. Consultez [Présentation de la publication](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=fr) pour plus d’informations.
+Les balises Adobe Experience Platform prennent en charge les processus de publication simples à complexes qui doivent s’adapter au déploiement du SDK Web Adobe Experience Platform. Consultez [Présentation de la publication](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=fr) pour plus d’informations.
 
 Créer et publier la balise :
 

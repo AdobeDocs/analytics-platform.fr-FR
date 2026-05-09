@@ -4,10 +4,10 @@ description: Découvrez comment publier des audiences à partir de Customer Jou
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: 4717a85b9a3c7dc2cbdd8c625ebb5862cbfccd58
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '2391'
-ht-degree: 99%
+source-wordcount: '2478'
+ht-degree: 98%
 
 ---
 
@@ -206,7 +206,7 @@ Les audiences Customer Journey Analytics ne sont pas incluses dans la tâche d
 * **Nombres déterministes dans Real-Time Customer Data Platform** : le nombre dans Real-Time Customer Data Platform est fixe et ne change que lors de la prochaine période de publication.
 * **Fragmentation de profil** : notez que les profils existants dans Real-Time Customer Data Platform peuvent ne pas contribuer au nombre de nouveaux profils lors de l’import depuis Customer Journey Analytics.
 
-Si vous faites la différence entre ces éléments, vous pouvez mieux comprendre et gérer les données de votre audience dans Customer Journey Analytics et Real-Time Customer Data Platform.--->
+En différenciant clairement ces aspects, vous pouvez mieux comprendre et gérer les données de votre audience dans Customer Journey Analytics et Real-Time Customer Data Platform.—>
 
 ## Questions fréquentes {#faq}
 

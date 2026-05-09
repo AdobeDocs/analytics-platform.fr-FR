@@ -4,10 +4,10 @@ title: Anneau
 feature: Visualizations
 exl-id: 97b846a6-3a38-48c7-b686-b792bb882fdb
 role: User
-source-git-commit: 211dbd80b21f84ab616569c0d847dcc97f13661c
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '129'
-ht-degree: 86%
+source-wordcount: '151'
+ht-degree: 70%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 86%
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente la visualisation Anneau dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consultez [Anneau](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/donut) pour la_ version ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** de cet article._
+_Cet article présente la visualisation en anneau dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Voir [Anneau](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/donut) pour la version_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 

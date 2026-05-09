@@ -4,10 +4,10 @@ title: Panneau vierge
 feature: Panels
 exl-id: b65d0031-b4c0-4400-8d67-9416f3c993b6
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 93%
+source-wordcount: '266'
+ht-degree: 85%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 93%
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente le panneau vierge de_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_.<br/>_Voir le [panneau vierge](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/panels/blank-panel) de la version_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** de cet article._
+_Cet article présente le panneau vierge dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_.<br/>_Voir [Panneau vierge](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/panels/blank-panel) pour la version_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 

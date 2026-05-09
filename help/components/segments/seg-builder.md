@@ -4,9 +4,9 @@ title: Créer des segments
 feature: Filters, Segments
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '1571'
+source-wordcount: '1691'
 ht-degree: 88%
 
 ---

@@ -4,9 +4,9 @@ title: Enregistrer les projets
 feature: Workspace Basics
 role: User
 exl-id: d751057e-6a5f-4605-abc1-9259a1f95a28
-source-git-commit: 873247c643b3be4bb561955af84dd4bbb4e1d81f
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '860'
 ht-degree: 95%
 
 ---

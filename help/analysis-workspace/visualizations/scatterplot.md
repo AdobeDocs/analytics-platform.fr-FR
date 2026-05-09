@@ -4,10 +4,10 @@ description: Découvrez comment créer et interpréter des visualisations Nuage 
 feature: Visualizations
 exl-id: c01386c9-c51f-46f3-b1a2-41a8d8996d04
 role: User
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 65%
+source-wordcount: '254'
+ht-degree: 51%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 65%
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente la visualisation Dispersion dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consultez [Dispersion](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/scatterplot) pour la_ version![&#x200B; &#x200B;](/help/assets/icons/AdobeAnalytics.svg)AdobeAnalytics _&#x200B;**Adobe Analytics** de cet article._
+_Cet article documente la visualisation Dispersion dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Voir [Dispersion](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/scatterplot) pour la version_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 

@@ -4,10 +4,10 @@ title: Puces
 feature: Visualizations
 exl-id: b560389a-1149-4e16-b45a-0c6a1f7d0e1f
 role: User
-source-git-commit: 211dbd80b21f84ab616569c0d847dcc97f13661c
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 90%
+source-wordcount: '297'
+ht-degree: 82%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 90%
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente la visualisation Puces dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consultez [Puces](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph) pour la_ version ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** de cet article._
+_Cet article présente la visualisation par puces dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Voir [Puces](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph) pour la version_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 

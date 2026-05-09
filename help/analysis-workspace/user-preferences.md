@@ -5,9 +5,9 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: c84e18bcaf7687deada7086bfe1a85a4b83f216b
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '4015'
+source-wordcount: '4356'
 ht-degree: 98%
 
 ---
@@ -74,17 +74,17 @@ Vous pouvez mettre à jour les préférences de la société qui s’appliquent 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_categoricalpalette"
 >title="Palette catégorielle"
->abstract="Appliquée à de nombreuses visualisations dans Analysis Workspace et l’analyse guidée. Chaque couleur représente une valeur catégorielle distincte."
+>abstract="Appliquée à de nombreuses visualisations dans Analysis Workspace et l’analyse guidée. Chaque couleur représente une valeur de catégorie."
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_divergingpalette"
 >title="Palette divergente"
->abstract="Appliquée à la table de cohorte dans Analysis Workspace et l’analyse guidée par la croissance des utilisateurs et des utilisatrices. Cette palette a une signification numérique avec deux extrêmes et une ligne de base au milieu."
+>abstract="Appliquée à la table de cohorte dans Analysis Workspace et à l’analyse guidée Croissance des utilisateurs et des utilisatrices. Cette palette a une signification numérique, avec deux extrêmes et une ligne de base au milieu."
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_sequentialpalette"
 >title="Palette séquentielle"
->abstract="Appliquée à l’analyse guidée des tendances de fréquence (barres empilées). Cette palette a une signification numérique allant du plus clair au plus foncé."
+>abstract="Appliquée à l’analyse guidée Tendances de fréquence (barre empilée). Cette palette a une signification numérique allant du clair au foncé."
 
 Vous pouvez personnaliser ces préférences pour tous les nouveaux projets Analysis Workspace, les nouveaux panneaux Analysis Workspace et les nouvelles analyses guidées. Pour plus d’informations sur l’accès à ces préférences, voir [Modifier les préférences](#edit-preferences).
 
@@ -101,15 +101,15 @@ Certaines de ces préférences peuvent également être personnalisées pour des
 | Section | Préférence | Options |
 | --- | --- | --- |
 | **Afficher** | | |
-|  | [Afficher la densité](/help/analysis-workspace/build-workspace-project/view-density.md) | Choisissez la quantité de contenu à afficher à l’écran en réduisant l’espacement vertical du panneau de gauche, des tableaux à structure libre et des tables de cohorte. <ul><li>Compact</li><li>Confortable</li><li>Développé (par défaut)</li></ul> |
+|  | [Afficher la densité](/help/analysis-workspace/build-workspace-project/view-density.md) | Choisissez la quantité de contenu à afficher à l’écran en réduisant l’espacement vertical du panneau de gauche, des tableaux à structure libre et des tables de cohorte. <ul><li>Compacte</li><li>Confortable</li><li>Développé (par défaut)</li></ul> |
 | | [Palette de couleurs](/help/analysis-workspace/build-workspace-project/color-palettes.md) | Sélectionnez les palettes de couleurs de visualisation utilisées dans Analysis Workspace et les analyses guidées. <ul><li> Palette catégorielle : appliquée à de nombreuses visualisations dans Analysis Workspace et l’analyse guidée. Chaque couleur représente une valeur catégorielle distincte. Choisissez parmi les options fournies par Adobe ou saisissez une palette personnalisée définie par des valeurs hexadécimales délimitées par des virgules.</li><li> Palette divergente : appliquée à la table de cohorte dans Analysis Workspace et à l’analyse guidée Croissance des utilisateurs et des utilisatrices. Cette palette a une signification numérique, avec deux extrêmes et une ligne de base au milieu.<li> Palette séquentielle : appliquée à l’analyse guidée Tendances de fréquence (barre empilée). Cette palette a une signification numérique allant du clair au foncé.</li></ul> |
 | **Données** | | |
 |  | [Vue de données](/help/analysis-workspace/c-panels/panels.md#data-view) | Choisissez les données exploitées par les tableaux et les visualisations. <ul><li>La plus récente (par défaut)</li><li>Vue de données spécifique sélectionnée dans une liste</li></ul> |
 |  | [Calendrier](/help/analysis-workspace/c-panels/panels.md#calendar) | Effectuez une sélection dans une liste de : <ul><li>Plages fournies par Adobe (par défaut, ce mois-ci)</li><li>Vous pouvez activer [!UICONTROL Rendre les composants de période liés par défaut au calendrier du panneau].</li></ul> |
 |  | [Type de panneau](/help/analysis-workspace/c-panels/panels.md#panel-types) | <ul><li>À structure libre (par défaut)</li><li>Vide</li><li>Quick Insights</li></ul> |
 |  | Comptage des instances | Activez [!UICONTROL Compter les instances répétées] pour déterminer si les instances répétées sont comptées dans les rapports. Par exemple, lorsque cette option est activée, plusieurs vues consécutives sur une même page sont traitées comme plusieurs vues de pages. Lorsque cette option est désactivée, plusieurs vues consécutives sur une même page sont comptabilisées comme une seule vue de page. <p>**Remarque :** ce paramètre affecte uniquement certaines mesures (telles que Sessions) et ne s’applique pas aux visualisations de flux ou d’abandons.</p> |
-|  | Format du nombre | <ul><li>1 000,00 (par défaut)</li><li>1.000,00</li><li>1 000,00</li></ul> |
-|  | Caractère séparateur CSV | <ul><li>Virgule (par défaut)</li><li>Point-virgule</li><li>Deux-points</li><li>Tube</li><li>Point</li><li>un espace</li><li>Tabulation</li></ul> |
+|  | Format du nombre | <ul><li>1 000,00 (par défaut)</li><li>1 000,00</li><li>1 000,00</li></ul> |
+|  | Caractère de séparation CSV (valeurs séparées par des virgules) | <ul><li>Virgule (par défaut)</li><li>Point-virgule</li><li>Deux points</li><li>Tube</li><li>Période</li><li>Espace</li><li>Tabulation</li></ul> |
 |  | Affichage des annotations | Indiquez si les annotations sont visibles dans les projets. Pour plus d’informations sur les annotations, consultez [Présentation des annotations](/help/components/annotations/overview.md). |
 
 
@@ -141,7 +141,7 @@ Cliquez sur les titres des sections liées pour plus d’informations et de cont
 | Section | Préférence | Options |
 | --- | --- | --- |
 | **Tableau** | | |
-| | Type de tableau | <ul><li>Tableau à structure libre</li><li>Créateur de tableaux</li></ul> |
+| | Type de tableau | <ul><li>Structure libre</li><li>Créateur de tableaux</li></ul> |
 | | Mesure par défaut du tableau | <ul><li>Événements</li><li>Sessions</li><li>Personnes</li></ul> |
 | | Dimension du tableau par défaut | Sélectionnez l’option Minute, Heure, Jour, Semaine, Mois, Trimestre ou Année. |
 | | Aligner les dates | Sélectionnez cette option pour harmoniser les dates de chaque colonne afin qu’elles commencent toutes à partir de la même ligne. |
@@ -236,7 +236,7 @@ Cliquez sur les titres des sections liées pour plus d’informations et de cont
 | **[Flux](/help/analysis-workspace/visualizations/c-flow/create-flow.md)** | | |
 | | Conteneur | Sélectionnez un conteneur favori pour l’analyse. Le conteneur favori vous permet de comprendre l’engagement du compte à différents niveaux de conteneur B2B [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, l’engagement de la personne au niveau de la personne (entre les sessions) ou de limiter l’analyse à une seule session. <p>Les options disponibles sont les suivantes :</p> <ul><li>Comptes globaux [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}</li><li>Comptes [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}</li><li>Groupes d’achat [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}</li><li>Opportunités [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}</li><li>Session</li><li>Personne</li></ul> |
 | | Développer les étiquettes | Habituellement, les étiquettes sur les éléments de flux sont tronquées pour gagner de l’espace à l’écran, mais vous pouvez afficher l’étiquette complète en cochant cette case. Valeur par défaut = non coché. |
-| | Inclure des instances de répétition | Les visualisations Flux sont basées sur des instances d’une dimension. Ce paramètre vous donne la possibilité d’inclure ou d’exclure des instances de répétition, telles que des actualisations de page. Toutefois, les répétitions ne peuvent pas être supprimées des visualisations de flux qui incluent des dimensions à valeurs multiples, comme des listVars, listProps, s.product, eVars de marchandisage, etc. Valeur par défaut = non coché. |
+| | Inclure des instances de répétition | Les visualisations Flux sont basées sur des instances d’une dimension. Ce paramètre vous donne la possibilité d’inclure ou d’exclure des instances de répétition, telles que des actualisations de page. Toutefois, les répétitions ne peuvent pas être supprimées des visualisations de flux qui incluent des dimensions à valeurs multiples, telles que listVars, listProps, s.product, eVars de marchandisage, etc. Valeur par défaut = non coché. |
 | | Afficher les infobulles | Détermine si les infobulles contenant les données du nœud s’affichent lorsque vous survolez les nœuds dans une visualisation en flux. |
 | | Nombre de colonnes | Détermine le nombre de colonnes souhaité dans le diagramme Flux. |
 | | Éléments développés par colonne | Nombre d’éléments à inclure dans chaque colonne. |
@@ -248,7 +248,7 @@ Cliquez sur les titres des sections liées pour plus d’informations et de cont
 | | Nombre d’intervalles | Sélectionnez le nombre de périodes (compartiments) dans la visualisation. Il ne peut pas y avoir plus de 50 intervalles. <p>Pour plus d’informations, consultez [Histogramme](/help/analysis-workspace/visualizations/histogram.md).</p> |
 | | Méthode de comptage | Choisissez l’une des options suivantes : <ul><li>Accès</li><li>Session</li><li>Personne</li></ul> <p>Par exemple, lorsque vous l’utilisez avec les pages vues, vous pouvez choisir les pages vues par personne, les pages vues par visite ou les pages vues par événement. Pour l’accès, la mesure « Occurrences » est utilisée comme mesure de l’axe Y dans un tableau à structure libre.</p> |
 | **[Synthèse des modifications](/help/analysis-workspace/visualizations/summary-number-change.md)** | | |
-| | Valeur | <!-- Seem to be basically the same options as in "Number value options" --> <ul><li>Changement en pourcentage</li><li>Différence brute</li></ul> |
+| | Valeur | <!-- Seem to be basically the same options as in "Number value options" --> <ul><li>Pourcentage de modification</li><li>Différence brute</li></ul> |
 | | Pourcentages | Affiche les valeurs en pourcentages pour les visualisations Synthèse des modifications. |
 | | Légende visible | Permet de masquer le texte de légende détaillé pour la visualisation Synthèse des modifications. |
 | **[Synthèse des chiffres](/help/analysis-workspace/visualizations/summary-number-change.md)** | | |

@@ -4,10 +4,10 @@ description: Découvrez comment utiliser et interpréter le panneau d’audience
 feature: Panels
 role: User, Admin
 exl-id: c55b5534-a9a6-47f1-8b43-c8c0b8686c53
-source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '1681'
-ht-degree: 91%
+source-wordcount: '1708'
+ht-degree: 88%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 91%
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente le panneau Audience moyenne par minute de média dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_.<br/>_Consultez [panneau Audience moyenne par minute de média](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel) pour la_ version ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** de cet article._
+_Cet article présente le panneau d’audience moyenne par minute de média dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_.<br/>_Voir [Panneau d’audience moyenne par minute de média](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel) pour la version_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 
@@ -81,7 +81,7 @@ Utilisez les paramètres d’entrée décrits dans cette section pour configurer
 
    | Paramètre | Description |
    |---------|------------|
-   | **Période du panneau** | La période par défaut du panneau est [!UICONTROL **Ce mois-ci**]. Vous pouvez la modifier pour afficher un seul jour ou plusieurs mois à la fois. <br></br> La visualisation est limitée à 1440 lignes de données (par exemple, 24 heures à une granularité au niveau des minutes). Si une combinaison de période et de granularité génère plus de 1 440 lignes, la granularité est automatiquement mise à jour pour s’adapter à la période complète. |
+   | **Période du panneau** | La période par défaut du panneau est [!UICONTROL **Ce mois-ci**]. Vous pouvez la modifier pour afficher un seul jour ou plusieurs mois à la fois. <br></br> La visualisation est limitée à 1 440 lignes de données (par exemple, 24 heures à une granularité au niveau des minutes). Si une combinaison de période et de granularité génère plus de 1 440 lignes, la granularité est automatiquement mise à jour pour s’adapter à la période complète. |
    | [!UICONTROL **Déposer une mesure ici (ou tout autre composant)**] | Comme les autres panneaux, ce paramètre segmente vos sélections en fonction des segments que vous avez créés. Il s’agit d’une excellente manière d’examiner des plateformes spécifiques, des diffusions en direct ou d’autres segments de médias courants. |
    | [!UICONTROL **Calculer la mesure pour**] | Choisissez si vous souhaitez afficher l’audience moyenne par minute pour un [**[!UICONTROL Contenu spécifique]**](#specific-content). Ou si vous souhaitez afficher l’audience moyenne par minute pour une [**[!UICONTROL période personnalisée]**](#custom-time-period).<br/><br/>Sélectionnez [!UICONTROL **Période personnalisée**] : <ul><li>Si la durée n’est pas disponible, ou </li><li>Si vous souhaitez afficher l’audience moyenne par minute pour une série temporelle composée de plusieurs éléments de contenu, ou</li><li>Pour le contenu sans durée attribuée spécifique (par exemple pendant un flux ou un événement en direct)</li></ul></li></li></ul> <p>Ce paramètre modifie le workflow et la sortie du rapport.</p> |
 
@@ -130,7 +130,7 @@ Utilisez les paramètres d’entrée décrits dans cette section pour configurer
    |---------|------------|
    | **[!UICONTROL Paramètres du tableau]** | Le paramètre par défaut affiche les valeurs de calcul dans le tableau, où apparaissent le numérateur et le dénominateur de l’audience moyenne par minute sous forme des colonnes précédentes du tableau. Lorsque cette option est désélectionnée, ces deux colonnes laissent seulement apparaître l’audience moyenne par minute près de la période. |
 
-1. Sélectionnez [!UICONTROL **Créer**] pour terminer la création du panneau d’audience moyenne par minute de média.
+1. Sélectionnez [!UICONTROL **Créer**] pour terminer la création du panneau Audience moyenne par minute de média.
 
 1. Continuez avec [Sortie de panneau](#panel-output) pour plus d’informations sur l’utilisation du panneau Audience moyenne par minute de média.
 
@@ -187,6 +187,6 @@ Le panneau Audience moyenne par minute de média utilise uniquement la mesure d�
 >[!MORELIKETHIS]
 >
 > [Créer un panneau](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
-> [Panneau Visiteurs et visiteuses simultanés de médias](media-concurrent-viewers.md)
+> [Panneau des visionneuses simultanées de médias](media-concurrent-viewers.md)
 > [Panneau Temps de lecture de média](media-playback-time-spent.md)
 >

@@ -3,9 +3,9 @@ description: Découvrez le créateur de mesures calculées qui fournit une zone 
 title: Créer des mesures
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: fa6654e85fd4055d41f42145fa5a4f917a8875c4
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '1677'
+source-wordcount: '1693'
 ht-degree: 93%
 
 ---

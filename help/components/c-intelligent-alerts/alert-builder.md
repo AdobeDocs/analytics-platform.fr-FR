@@ -4,9 +4,9 @@ title: Créer des alertes
 feature: Workspace Basics
 role: User, Admin
 exl-id: 5b4b2e2b-0a73-48df-a40c-98d2c47f94c8
-source-git-commit: 65e46a5d2a6759dd83b24bba2d1d4ee283b907c9
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '997'
 ht-degree: 71%
 
 ---

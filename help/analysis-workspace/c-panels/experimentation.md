@@ -4,10 +4,10 @@ title: Panneau Expérimentation
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: b013518d8f1782219dd2cf9e5b5a89b877e3b92d
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '2175'
-ht-degree: 98%
+source-wordcount: '2318'
+ht-degree: 94%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 98%
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente le panneau Expérimentation dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consultez [Panneau Analytics for Target](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/panels/a4t-panel) pour plus d’informations sur l’analyse des activités et des expériences Adobe Target dans_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._
+_Cet article présente le panneau Expérimentation dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consultez [Panneau Analytics for Target](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/panels/a4t-panel) pour plus d’informations sur l’analyse des activités et expériences Adobe Target dans_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
@@ -107,7 +107,7 @@ Pour utiliser le panneau Expérimentation, procédez comme suit :
 
 Le panneau Expérimentation renvoie un riche ensemble de données et de visualisations pour vous aider à mieux comprendre les performances de vos expériences. En haut du panneau, des visualisations [Synthèse des modifications](../visualizations/summary-number-change.md) vous rappellent les paramètres du panneau que vous avez sélectionnés. À tout moment, vous pouvez modifier le panneau en sélectionnant l’icône de modification en forme de crayon dans le coin supérieur droit.
 
-Vous obtenez également un résumé textuel qui indique si l’expérience est concluante ou non et résume le résultat. La conclusion repose sur la signification statistique (consultez [Méthodologie statistique](#adobes-statistical-methodology)). Vous pouvez afficher des nombres de synthèse pour la variante la plus performante avec l’effet élévateur et le degré de confiance les plus élevés.
+Vous obtenez également un résumé textuel qui indique si l’expérience est concluante ou non et résume le résultat. La conclusion repose sur la signification statistique (voir [Méthodologie statistique](#adobes-statistical-methodology).) Vous pouvez afficher des nombres de synthèse pour la variante la plus performante avec l’effet élévateur et le degré de confiance les plus élevés.
 
 Pour chaque mesure de succès sélectionnée, une visualisation [Tableau à structure libre](../visualizations/freeform-table/freeform-table.md) et une visualisation [Ligne](../visualizations/line.md) de taux de conversion s’affichent.
 
@@ -146,7 +146,7 @@ Une séquence de confiance à 95 % inclura la valeur « True » de la mesure 
 
 Customer Journey Analytics permet aux analystes de sélectionner n’importe quelle dimension comme expérience. Mais comment interpréter une analyse où la dimension choisie comme expérience n’est pas une dimension pour laquelle les personnes sont randomisées ?
 
-Prenons l’exemple d’une publicité qu’une personne voit. Il se peut que vous souhaitiez mesurer le changement dans certaines mesures (par exemple, le revenu moyen) si vous décidez de montrer la *publicité B* au lieu de la *publicité A* aux personnes. L’effet causal de l’affichage de la publicité B, au lieu de la publicité A, est d’une importance capitale pour parvenir à la décision marketing. Cet effet causal peut être mesuré comme le revenu moyen sur l’ensemble de la population, si vous remplacez le statu quo de l’affichage de la publicité A par la stratégie alternative d’affichage de la publicité B.
+Prenons l’exemple d’une publicité qu’une personne voit. Il se peut que vous souhaitiez mesurer le changement dans certaines mesures (par exemple, le revenu moyen) si vous décidez d’afficher les personnes *ad B* au lieu de *ad A*. L’effet causal de l’affichage de la publicité B, au lieu de la publicité A, est d’une importance capitale pour la décision de commercialisation. Cet effet causal peut être mesuré comme le revenu moyen sur l’ensemble de la population, si vous remplacez le statu quo de l’affichage de la publicité A par la stratégie alternative d’affichage de la publicité B.
 
 Les tests A/B sont la référence dans l’industrie pour mesurer objectivement les effets de telles interventions. La principale raison pour laquelle un test A/B donne lieu à une estimation causale est due à la randomisation des personnes pour recevoir l’une des variantes possibles.
 

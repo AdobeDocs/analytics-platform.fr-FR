@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Audiences
 role: Admin
 exl-id: 0db3f6f7-9d7e-41bf-8eb5-02e439bab10a
-source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '1355'
-ht-degree: 29%
+source-wordcount: '1391'
+ht-degree: 32%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 29%
 >[!CONTEXTUALHELP]
 >id="cja-audience-analysis-sandbox"
 >title="Sandbox"
->abstract="Sélectionnez le sandbox qui contient les jeux de données de profil Experience Platform appropriés. Ces jeux de données doivent contenir les données d’audience pour lesquelles vous souhaitez créer des rapports dans Analysis Workspace. "
+>abstract="Sélectionnez le sandbox qui contient les jeux de données de profil Experience Platform appropriés. Ces jeux de données doivent contenir les données d’audience pour lesquelles vous souhaitez créer des rapports dans Analysis Workspace. "
 
 <!-- markdownlint-enable MD034 -->
 
@@ -98,7 +98,7 @@ Pour créer une configuration d’analyse d’audience :
 
    | Champ | Description |
    |---------|----------|
-   | **[!UICONTROL ID de personne]** | Sélectionnez un champ dans le schéma qui représente l’ID de personne.<p>La sélection est limitée à la liste des champs du schéma qui sont marqués comme Identité et qui possèdent un espace de noms d’identité. **[!UICONTROL IdentityMap]** est sélectionné par défaut et convient à la plupart des configurations. </p><p>Si aucun ID de personne n’est disponible, cela signifie qu’un ou plusieurs ID de personne n’ont pas été définis dans le schéma. Voir [Définir des champs d’identité dans l’interface utilisateur](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/ui/fields/identity) pour plus d’informations.</p> |
+   | **[!UICONTROL ID de personne]** | Sélectionnez un champ dans le schéma qui représente l’identifiant de personne.<p>La sélection est limitée à la liste des champs du schéma qui sont marqués comme Identité et qui possèdent un espace de noms d’identité. **[!UICONTROL IdentityMap]** est sélectionné par défaut et convient à la plupart des configurations. </p><p>Si aucun ID de personne n’est disponible, cela signifie qu’un ou plusieurs ID de personne n’ont pas été définis dans le schéma. Voir [Définir des champs d’identité dans l’interface utilisateur](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/ui/fields/identity) pour plus d’informations.</p> |
    | **[!UICONTROL Utiliser l’espace de noms d’identité principal]** | Cette option s’affiche si vous sélectionnez **[!UICONTROL Mappage d’identités]** pour l’ID de personne. <p>Activez cette option si vous souhaitez que Customer Journey Analytics trouve l’identité dans le mappage d’identité signalée par un attribut primary=true, puis l’utilise comme identifiant de personne pour cette ligne. Cette identité est la clé primaire utilisée dans Experience Platform pour le partitionnement. Cette identité est également le candidat idéal pour l’utilisation en tant qu’ID de personne Customer Journey Analytics (selon la manière dont le jeu de données est configuré dans une connexion Customer Journey Analytics).</p> |
    | **[!UICONTROL Espace de noms d’identité]** | Cette option s’affiche si vous sélectionnez **[!UICONTROL Mappage d’identités]** pour l’ID de personne. Cette option est désactivée si vous utilisez l’espace de noms d’identifiant de Principal. <p>Les espaces de noms d’identité sont un composant du [service d’identités d’Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/features/namespaces). Les espaces de noms servent d’indicateurs pour le contexte auquel une identité se rapporte. Si vous spécifiez un espace de noms, Customer Journey Analytics recherche cette clé d’espace de noms dans le mappage d’identités de chaque ligne et utilise l’identité sous cet espace de noms comme ID de personne pour cette ligne. Comme Customer Journey Analytics ne peut pas analyser complètement le jeu de données de toutes les lignes pour déterminer les espaces de noms présents, tous les espaces de noms possibles s’affichent dans le menu déroulant. Vous devez savoir quels espaces de noms sont spécifiés dans les données ; ces derniers ne sont pas détectés automatiquement.</p> |
 

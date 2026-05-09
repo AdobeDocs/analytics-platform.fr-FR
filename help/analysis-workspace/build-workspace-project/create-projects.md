@@ -4,9 +4,9 @@ title: Créer des projets
 feature: Workspace Basics
 role: User
 exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
-source-git-commit: 518bebc18611136873fce5c23dd7041afafe1220
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '459'
 ht-degree: 100%
 
 ---
@@ -50,12 +50,12 @@ Maintenant que vous avez créé un projet Workspace vierge, assurez-vous de conn
 >[!CONTEXTUALHELP]
 >id="workspace_project_countrepeatinstances"
 >title="Comptage des instances répétées"
->abstract="Ce paramètre indique si les instances répétées sont comptabilisées dans les rapports.<br/><br/>Remarque : ce paramètre ne s’applique pas aux visualisations de flux ou d’abandons."
+>abstract="Indique si les instances répétées sont comptabilisées dans les rapports.<br/><br/>Note : ce paramètre ne s’applique pas aux visualisations Flux ou Abandons."
 
 >[!CONTEXTUALHELP]
 >id="workspace_project_repeatinstances"
 >title="Comptage des instances répétées"
->abstract="Ce paramètre indique si les instances répétées sont comptabilisées dans les rapports.<br/>Remarque : ce paramètre ne s’applique pas aux visualisations de flux ou d’abandons."
+>abstract="Indique si les instances répétées sont comptabilisées dans les rapports.<br/>Note : ce paramètre ne s’applique pas aux visualisations Flux ou Abandons."
 
 
 >[!CONTEXTUALHELP]

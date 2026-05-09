@@ -4,9 +4,9 @@ title: Créer et gérer des modèles
 feature: Workspace Basics
 role: User, Admin
 exl-id: 23cdf02f-56a1-4465-ae7f-b3a1bcad28af
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '1851'
+source-wordcount: '1888'
 ht-degree: 100%
 
 ---
@@ -57,7 +57,7 @@ Pour plus d’informations sur la façon dont les utilisateurs et utilisatrices 
 
 Les administrateurs et administratrices peuvent modifier ou supprimer des modèles d’entreprise.
 
-1. Dans Analysis Workspace, sélectionnez l’onglet [!UICONTROL **Workspace**] puis, sous **[!UICONTROL Modèles]** dans le rail de gauche, sélectionnez les modèles **[!UICONTROL _login_company_name _]**.
+1. Dans Analysis Workspace, sélectionnez l’onglet [!UICONTROL **Workspace**] puis, sous **[!UICONTROL Modèles]** dans le rail de gauche, sélectionnez les modèles **[!UICONTROL _login _company_name_]**.
 
 1. Si vous affichez des modèles dans une vue Colonnes ![icône de vue Colonnes](assets/column-view-icon.png), procédez comme suit :
 
@@ -100,7 +100,7 @@ Les administrateurs et administratrices peuvent modifier ou supprimer des modèl
    | **[!UICONTROL Activité Journey Optimizer]** | Choisissez l’activité Journey Optimizer à associer à ce modèle. <p>Laissez ce champ vide si vous souhaitez que ce modèle soit associé à toutes les activités du type d’activité sélectionné.</p><p>Ce champ s’affiche uniquement si **[!UICONTROL Journey Optimizer]** est sélectionné dans le champ **[!UICONTROL Cas d’utilisation]**.</p> |
    | **[!UICONTROL Balises]** | Spécifiez les balises à appliquer au modèle. Les personnes peuvent filtrer la liste des modèles en fonction des balises que vous ajoutez. |
 
-1. Sélectionnez [!UICONTROL **Enregistrer en tant que modèle**]/
+1. Sélectionnez [!UICONTROL **Enregistrer en tant que modèle**].
 
 ## Renommer, baliser ou approuver des modèles
 

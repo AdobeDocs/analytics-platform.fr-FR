@@ -4,10 +4,10 @@ title: Histogramme
 feature: Visualizations
 exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
 role: User
-source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 90%
+source-wordcount: '486'
+ht-degree: 83%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 90%
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente la visualisation Histogramme dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consultez [Histogramme](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/histogram) pour la_ version ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** de cet article._
+_Cet article présente la visualisation de l’histogramme dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Voir [Histogramme](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/histogram) pour la version_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 
@@ -52,7 +52,7 @@ Dans le cadre de la visualisation, des paramètres d’histogramme spécifiques 
 | Paramètres de l’histogramme | Description |
 |---|---|
 | **[!UICONTROL Compartiment de début]** | Détermine par quel intervalle commence l’histogramme. « 1 » par défaut. Peut être défini sur 0 à l’infini (aucun nombre négatif). |
-| **[!UICONTROL Compartiments de mesure]** | Permet d’augmenter ou de réduire le nombre de plages de données (compartiments). Le nombre maximal de compartiments est de 50. |
+| **[!UICONTROL Compartiments de mesure]** | Permet d’augmenter ou de réduire le nombre de plages de données (intervalles). Il ne peut pas y avoir plus de 50 intervalles. |
 | **[!UICONTROL Taille du compartiment de mesure]** | Permet de définir la taille de chaque intervalle. Vous pouvez par exemple modifier la taille de l’intervalle d’une page vue à deux pages vues. |
 | **[!UICONTROL Méthode de comptage]** | Faites votre choix parmi **[!UICONTROL Compte global]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, **[!UICONTROL Compte]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, **[!UICONTROL Groupe d’achat]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, **[!UICONTROL Opportunité]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, **[!UICONTROL Personne]**, **[!UICONTROL Session]** ou **[!UICONTROL Événement]**. Par exemple, pages vues par compte [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} ou pages vues par personne ou pages vues par événement. |
 
