@@ -5,9 +5,9 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: 684f7e95e872ed3cc56a12725dd63459ed488ecc
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '2548'
+source-wordcount: '2592'
 ht-degree: 89%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 89%
 
 >[!AVAILABILITY]
 >
->L’agent Data Insights est disponible pour les clientes et clients éligibles pour une durée limitée. L’accès à l’agent Data Insights prendra fin le mercredi 31 mars 2026. Pour continuer à utiliser l’agent Data Insights sans interruption au-delà de cette date, contactez votre représentant ou représentante de compte Adobe afin d’en savoir plus sur les licences Agent Orchestrator d’Adobe Experience Platform.
+>L’agent Data Insights est disponible pour les clientes et clients éligibles pour une durée limitée. Data Insights Agent est accessible jusqu’au 31 mars 2026. Pour continuer à utiliser l’agent Data Insights sans interruption au-delà de cette date, contactez votre représentant ou représentante de compte Adobe afin d’en savoir plus sur les licences Agent Orchestrator d’Adobe Experience Platform.
 
 L’agent Data Insights, accessible à partir de l’[Assistant IA](/help/ai-assistant.md) dans Customer Journey Analytics, est un agent de conversation d’IA générative qui répond rapidement et efficacement aux questions sur vos données. Il crée des visualisations pertinentes dans Analysis Workspace à l’aide de composants de votre vue de données et de vos données réelles.
 
@@ -28,7 +28,7 @@ L’utilisation de Data Insights Agent pour répondre aux questions relatives au
 
 | Fonctionnalité | Incluse dans les capacités de traitement | Hors des capacités de traitement |
 | --- | --- | --- |
-| **Types de visualisations** | <ul><li>Graphique linéaire</li><li>Multiligne</li><li>Tableau à structure libre</li><li>Barres</li><li>Anneau</li><li>Synthèse des chiffres</li></ul> | <ul><li>Flux</li><li>Abandon</li><li>Table de cohortes</li><li>Surface et aires empilées</li><li>Barres empilées</li><li>Puces</li><li>Combo</li><li>Histogramme</li><li>Barres horizontales et barres empilées horizontales</li><li>Synthèse des mesures clés</li><li>Nuage de points</li><li>Synthèse des modifications</li><li>Texte</li><li>Plan en arborescence</li><li>Venn</li><li>Analyse guidée : croissance active, tendances de conversion, engagement, impact de la première utilisation, fréquence, entonnoir, croissance nette, impact sur la publication, rétention, chronologie, tendances</li></ul> |
+| **Types de visualisations** | <ul><li>Graphique linéaire</li><li>Multiligne</li><li>Tableau à structure libre</li><li>Barre</li><li>Anneau</li><li>Nombre de résumés</li></ul> | <ul><li>Flux</li><li>Abandon</li><li>Table de cohorte</li><li>Surface et aires empilées</li><li>Barres empilées</li><li>Puce</li><li>Combiné</li><li>Histogramme</li><li>Barres horizontales et barres empilées horizontales</li><li>Résumé des mesures clés</li><li>Graphique de dispersion</li><li>Modification de la synthèse</li><li>Texte</li><li>Treemap</li><li>Venn</li><li>Analyse guidée : croissance active, tendances de conversion, engagement, impact de la première utilisation, fréquence, entonnoir, croissance nette, impact sur la publication, rétention, chronologie, tendances</li></ul> |
 | **Actions Workspace et fonctionnalités de l’agent** | <ul><li>Créer et mettre à jour des visualisations<p>Génère un tableau à structure libre et les visualisations associées (ligne, barre, anneau, etc.).</p><p>Par exemple, *Quel est le bénéfice sur l’ensemble des SKU de février à mai ?*</p></li><li>Poser des questions à la suite du prompt initial<p>Répondez à un prompt dans le contexte de prompts précédents. Par exemple :</p> <ul><li>Prompt 1 : *Indique la tendance des événements à partir de mars.*</li><li>Prompt 2 : *Montre-moi les données de mars à avril à la place*</li></ul> </li><li>Détection de prompt hors des capacités de traitement<p>Si vous envoyez un prompt hors des capacités de traitement, par exemple *Exporte ce projet*, l’agent Data Insights vous informe que la question est hors des capacités de traitement.</p></li></ul> | <ul><li>Partager</li><li>Exporter</li><li>Télécharger</li><li>Gestion les préférences d’utilisateur et d’utilisatrice</li><li>Gérer la vue de données</li><li>Application des tableaux de bord Analytics</li><li>Attribution</li><li>Résumé ou réponse en ligne<p>L’agent Data Insights ne peut pas répondre en ligne dans le rail de conversation avec une réponse résumée d’un prompt d’utilisateur ou d’utilisatrice. Voici des exemples de prompts hors de portée : *Résume les informations de ma dernière invite* et *Résume les points forts de la visualisation en ligne.*</p></li></ul> |
 | **Questions de clarification** | Si vous posez une question à laquelle l’agent Data Insights ne peut pas répondre en raison d’un manque de contexte ou si votre question est trop générique, l’agent Data Insights vous répond par une question de clarification ou en suggérant des options. <p>Les questions de clarification suivantes sont des exemples de questions liées aux composants :</p><ul><li>Mesure : *de quelle mesure « chiffre d’affaires » parlez-vous ?*</li><li>Dimension : *Sur laquelle des « régions » ci-dessous voulez-vous vous concentrer ?*</li><li>Segment : *quel segment « Compte » voulez-vous appliquer ?*</li><li>Période : *par « mois dernier », entendez-vous le dernier mois complet ou les 30 derniers jours ?*</li></ul><p>La question de clarification suivante est un exemple de question liée aux éléments de dimension :</p> <ul><li>De quel « nom de magasin » parlez-vous ? (Par exemple, magasin n° 5274, magasin n° 2949 etc.)</li></ul> | Les questions de clarification sont limitées aux composants et aux éléments de dimension. L’agent Data Insights ne peut pas clarifier des éléments tels que les vues de données, les visualisations, la granularité des données, la comparaison et la portée. Lorsque des questions de clarification ne peuvent pas être utilisées, l’agent se contente de répondre à la demande la plus probable. S’il renvoie une visualisation ou une granularité de données inattendue, vous pouvez poser une question complémentaire ou ajuster la visualisation et les données. |
 | **Vérifiabilité et exactitude des données** | La vérifiabilité et l’exactitude des données peuvent être confirmées en affichant le tableau à structure libre et la visualisation des données générés. <p>Par exemple, si vous demandez à l’agent Data Insights d’*établir la tendance des commandes du mois dernier*, vous pouvez confirmer que la mesure correcte (« commandes ») et la période (« mois dernier ») ont été sélectionnées dans le panneau, la visualisation des données et le tableau à structure libre nouvellement générés.</p> | L’agent Data Insights ne répond pas en vous informant des composants ou des visualisations qui ont été ajoutés. |
@@ -72,7 +72,7 @@ Les paramètres suivants régissent l’accès à l’agent Data Insights dans C
 
    1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les autorisations.
 
-  Pour plus d’informations sur le contrôle d’accès, voir [Contrôle d’accès &#x200B;](/help/technotes/access-control.md#access-control).
+  Pour plus d’informations sur le contrôle d’accès, voir [Contrôle d’accès ](/help/technotes/access-control.md#access-control).
 
 * **Accès aux vues de données** : les vues de données doivent être activées pour l’agent Data Insights.
 
@@ -178,7 +178,7 @@ Adobe Experience Platform Agent Orchestrator vous permet d’accéder aux foncti
 
 Agent Orchestrator interprète votre requête, détermine les agents spécialisés nécessaires et les orchestre pour fournir la réponse appropriée. Il effectue le suivi du contexte dans les interactions à plusieurs tours, de sorte que vous puissiez tirer parti naturellement des requêtes précédentes.
 
-Pour plus d’informations, consultez [Adobe Experience Platform Agent Orchestrator](https://business.adobe.com/fr/products/experience-platform/agent-orchestrator.html).
+Pour plus d’informations, consultez [Adobe Experience Platform Agent Orchestrator](https://business.adobe.com/products/experience-platform/agent-orchestrator.html).
 
 ## Exemples de prompts de visualisation de données
 
@@ -267,8 +267,8 @@ Vous trouverez ci-dessous les bonnes pratiques pour votre configuration de Custo
 
 >[!MORELIKETHIS]
 >
->[Paramètres de composant](/help/data-views/component-settings/overview.md)
+>[Paramètres des composants](/help/data-views/component-settings/overview.md)
 >[Dictionnaire de données](/help/components/data-dictionary/data-dictionary-overview.md)
->[Approuver une mesure calculée](/help/components/calc-metrics/cm-workflow/cm-approving.md)
+>[Approuver la mesure calculée](/help/components/calc-metrics/cm-workflow/cm-approving.md)
 >[Partager des segments](/help/components/segments/seg-share.md)
 >

@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 exl-id: c39ee568-97f6-4925-ae18-3d4a9dfdb6f5
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '378'
 ht-degree: 89%
 
 ---
@@ -43,7 +43,7 @@ Pour créer un regroupement de dimensions, procédez comme suit :
 1. Sélectionnez une dimension.
 1. Sélectionnez ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Groupe de données Résumé]**.
 1. Activez **[!UICONTROL Créer un regroupement]**.
-1. Sélectionnez dans le menu déroulant **&#x200B;**&#x200B;une dimension que vous souhaitez regrouper avec la dimension sélectionnée à la première étape. Notez que seules les dimensions que vous avez déjà ajoutées à la vue de données sont disponibles dans le menu déroulant.
+1. Sélectionnez dans le menu déroulant **** une dimension que vous souhaitez regrouper avec la dimension sélectionnée à la première étape. Notez que seules les dimensions que vous avez déjà ajoutées à la vue de données sont disponibles dans le menu déroulant.
 1. Vous pouvez éventuellement activer l’option **[!UICONTROL Masquer dans les rapports]** pour masquer la dimension regroupée des rapports. L’activation de cette option est similaire à la configuration de **[!UICONTROL Masquer dans les rapports]** sur la dimension regroupée séparément. Consultez [Paramètres de composant](overview.md) pour en savoir plus.
 1. Si vous le souhaitez, pour ajouter des dimensions supplémentaires au regroupement, sélectionnez ![Ajouter](/help/assets/icons/Add.svg) **[!UICONTROL Ajouter une dimension au groupe]**.<br/>Vous pouvez ajouter jusqu’à neuf dimensions, car un groupe de données de résumé est limité à dix dimensions.
 

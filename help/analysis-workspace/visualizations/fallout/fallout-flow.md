@@ -4,10 +4,10 @@ title: Présentation des abandons
 feature: Visualizations
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
 role: User
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '359'
-ht-degree: 96%
+source-wordcount: '389'
+ht-degree: 87%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 96%
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente la visualisation Abandons dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consultez [Abandons](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow) pour la_ version ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** de cet article._
+_Cet article présente la visualisation des abandons dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Voir [Abandon](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow) pour la version_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 
@@ -34,7 +34,7 @@ Une visualisation ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) *
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Créer un rapport de visualisation Abandons](https://experienceleague.adobe.com/fr/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/fallout-visualization){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Créer un rapport de visualisation Abandons](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/fallout-visualization){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 
@@ -55,7 +55,7 @@ Vous pouvez, par exemple, effectuer le suivi des points d’abandon d’une pers
 
 ## Choisissez entre les visualisations Abandons, Flux et Zone de travail de parcours.
 
-La visualisation Abandons présente des similitudes avec la [visualisation Flux](/help/analysis-workspace/visualizations/c-flow/flow.md) et la [visualisation Zone de travail de parcours &#x200B;](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md).
+La visualisation Abandons présente des similitudes avec la [visualisation Flux](/help/analysis-workspace/visualizations/c-flow/flow.md) et la [visualisation Zone de travail de parcours ](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md).
 
 ### Comprendre les différences
 

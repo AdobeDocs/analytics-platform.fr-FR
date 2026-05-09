@@ -4,10 +4,10 @@ description: Découvrez comment créer des annotations dans Analysis Workspace.
 feature: Components
 exl-id: 68fef9b3-dc47-4e56-bea6-d1c4c39fb51b
 role: User, Admin
-source-git-commit: 50b82943d4c59f612240ffc8d83a8a08f09b8331
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 91%
+source-wordcount: '877'
+ht-degree: 85%
 
 ---
 
@@ -21,10 +21,10 @@ Vous pouvez créer une annotation de la manière suivante :
 
 ![Création d’une annotation](assets/create-annotation.png)
 
-* **A**. Dans l’interface principale, sélectionnez **[!UICONTROL Composants]**, puis **[!UICONTROL Annotations]**. Sélectionnez ![AddCircle](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL Ajouter]**] dans le [[!UICONTROL gestionnaire d’annotations]](/help/components/annotations/manage-annotations.md).
-* **B**. Dans un projet Workspace, dans le menu contextuel d’une visualisation, sélectionnez **[!UICONTROL Créer une annotation d’après la sélection]**.
+* **A** Dans l’interface principale, sélectionnez **[!UICONTROL Composants]** puis **[!UICONTROL Annotations]**. Sélectionnez ![AddCircle](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL Ajouter]**] dans le [[!UICONTROL gestionnaire d’annotations]](/help/components/annotations/manage-annotations.md).
+* **B**. Dans un projet Workspace, dans le menu contextuel d’une visualisation, sélectionnez **[!UICONTROL Créer une annotation à partir de la sélection]**.
 * **C**. Dans un projet Workspace, dans le menu contextuel d’un graphique linéaire, sélectionnez **[!UICONTROL Annoter la sélection]**.
-* **D**. Dans un projet Workspace, sélectionnez **[!UICONTROL Composants]** dans le menu, puis **[!UICONTROL Créer une annotation]**.
+* **J**. Dans un projet Workspace, sélectionnez **[!UICONTROL Composants]** dans le menu, puis sélectionnez **[!UICONTROL Créer une annotation]**.
 * **E**.  Dans un projet Workspace, utilisez le raccourci **[!UICONTROL Ctrl+Maj+O]** (Windows) ou **[!UICONTROL Shift+Commande+O]** (macOS)
 
 Pour définir l’annotation, vous utilisez le [[!UICONTROL créateur d’annotations]](#annotation-builder).

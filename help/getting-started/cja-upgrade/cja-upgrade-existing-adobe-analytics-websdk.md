@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 1459a512-bfa8-4805-97e8-5b6acc6e4ac9
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '998'
-ht-degree: 66%
+source-wordcount: '1050'
+ht-degree: 65%
 
 ---
 
@@ -42,7 +42,7 @@ Tenez compte des avantages et des inconvénients suivants de la configuration de
 
 1. Commencez à envoyer des données d’Edge Network vers Platform. Envoyez toutes vos variables au format AppMeasurement via l’objet de données.
 
-   Pour plus d’informations, voir [Mappage des variables d’objet de données à Adobe Analytics](https://experienceleague.adobe.com/fr/docs/analytics/implementation/aep-edge/data-var-mapping).
+   Pour plus d’informations, voir [Mappage des variables d’objet de données à Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping).
 
 1. Choisissez votre schéma.
 
@@ -68,6 +68,6 @@ Tenez compte des avantages et des inconvénients suivants de la configuration de
 
 1. Utilisez le mappage des flux de données pour mapper tous les champs de l’objet de données à votre schéma XDM.
 
-   Pour plus d’informations, consultez [Mappage](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/data-prep?lang=en#mapping) dans [Préparation des données pour la collecte de données](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/data-prep) dans la documentation d’Experience Platform.
+   Pour plus d’informations, consultez [Mappage](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep?lang=en#mapping) dans [Préparation des données pour la collecte de données](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) dans la documentation d’Experience Platform.
 
 {{upgrade-final-step}}

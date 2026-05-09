@@ -4,10 +4,10 @@ title: Configurer Une Visualisation Des Abandons
 feature: Visualizations
 exl-id: 3d888673-d7b1-45ef-bd3a-97b98466fb0e
 role: User
-source-git-commit: 295e4c9b3b9dff5ba650456c3f62817b30fe1e3d
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '914'
-ht-degree: 46%
+source-wordcount: '921'
+ht-degree: 43%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 46%
 
 Vous pouvez spécifier des **points de contact** pour créer une séquence d’abandons multidimensionnelle. Dans de nombreux cas, un point de contact est une page de votre site. Ils ne se limitent toutefois pas à cela. Vous pouvez par exemple ajouter des événements, tels que des unités, ainsi que des personnes uniques et des visites récurrentes. Vous pouvez aussi ajouter des dimensions, telles qu’une catégorie, un type de navigateur ou un terme de recherche interne.
 
-Il est possible en outre d’ajouter des segments dans un point de contact, par exemple pour comparer les utilisateurs d’iOS à ceux d’Android. Faites glisser les segments à comparer en haut de l’abandon pour ajouter des informations sur ces segments au rapport sur les abandons. Si vous souhaitez n’afficher que ces segments, vous pouvez supprimer la ligne de base Toutes les personnes.
+Il est possible en outre d’ajouter des segments dans un point de contact, Par exemple, vous pouvez comparer des segments, tels que les utilisateurs d’iOS et d’Android. Faites glisser les segments à comparer en haut de l’abandon pour ajouter des informations sur ces segments au rapport sur les abandons. Si vous souhaitez n’afficher que ces segments, vous pouvez supprimer la ligne de base Toutes les personnes.
 
 Les visualisations des abandons ne comportent aucune limitation quant au nombre de points de contact que vous pouvez ajouter ou au nombre de composants que vous pouvez utiliser.
 

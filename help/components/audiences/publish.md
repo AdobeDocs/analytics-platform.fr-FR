@@ -4,10 +4,10 @@ description: Découvrez comment publier des audiences à partir de Customer Jou
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: 4717a85b9a3c7dc2cbdd8c625ebb5862cbfccd58
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '2391'
-ht-degree: 99%
+source-wordcount: '2478'
+ht-degree: 98%
 
 ---
 
@@ -72,7 +72,7 @@ Lisez cette [vue d’ensemble](/help/components/audiences/audiences-overview.md)
    | Méthode de création | Détails |
    | --- | --- |
    | Depuis l’interface **[!UICONTROL Audiences publiées]** | Sélectionnez **[!UICONTROL Composants]** > **[!UICONTROL Audiences publiées]** dans le menu Customer Journey Analytics principal. L’interface Audiences s’affiche. Sélectionnez **[!UICONTROL Créer une audience]** et le [!UICONTROL créateur d’audiences] s’ouvre. |
-   | Depuis une visualisation dans Analysis Workspace | De nombreuses visualisations dans Analysis Workspace vous permettent de créer une audience à l’aide du menu contextuel. Par exemple, vous pouvez sélectionner **[!UICONTROL Créer une audience]** dans le menu contextuel d’un élément dans un [Tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) ou d’un nœud dans une [Zone de travail de parcours](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md).<p>L’utilisation de cette méthode préremplit le segment dans le créateur d’audiences avec la dimension ou l’élément de dimension que vous avez sélectionné.</p><p>Les visualisations suivantes vous permettent de créer une audience à l’aide du menu de clic droit :</p><ul><li>[Table de cohorte](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)</li><li>[Abandon](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)</li><li>[Flux](/help/analysis-workspace/visualizations/c-flow/flow.md)</li><li>[Tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)</li><li>[Zone de travail de parcours](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)</li><li>[Carte &#x200B;](/help/analysis-workspace/visualizations/map.md#create-an-audience-from-the-map-visualization)<br/>**Remarque :** cette visualisation se trouve dans la phase de test limité de la publication et peut ne pas encore être disponible dans votre environnement.</li><li>[Venn](/help/analysis-workspace/visualizations/venn.md)</li></ul><p>**Note :** les audiences ne peuvent pas inclure de mesures calculées. Si vous essayez de créer une audience qui contient une mesure calculée, la mesure calculée n’est pas incluse dans la définition de l’audience.</p> |
+   | Depuis une visualisation dans Analysis Workspace | De nombreuses visualisations dans Analysis Workspace vous permettent de créer une audience à l’aide du menu contextuel. Par exemple, vous pouvez sélectionner **[!UICONTROL Créer une audience]** dans le menu contextuel d’un élément dans un [Tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) ou d’un nœud dans une [Zone de travail de parcours](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md).<p>L’utilisation de cette méthode préremplit le segment dans le créateur d’audiences avec la dimension ou l’élément de dimension que vous avez sélectionné.</p><p>Les visualisations suivantes vous permettent de créer une audience à l’aide du menu de clic droit :</p><ul><li>[Table de cohorte](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)</li><li>[Abandon](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)</li><li>[Flux](/help/analysis-workspace/visualizations/c-flow/flow.md)</li><li>[Tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)</li><li>[Zone de travail de parcours](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)</li><li>[Carte ](/help/analysis-workspace/visualizations/map.md#create-an-audience-from-the-map-visualization)<br/>**Remarque :** cette visualisation se trouve dans la phase de test limité de la publication et peut ne pas encore être disponible dans votre environnement.</li><li>[Venn](/help/analysis-workspace/visualizations/venn.md)</li></ul><p>**Note :** les audiences ne peuvent pas inclure de mesures calculées. Si vous essayez de créer une audience qui contient une mesure calculée, la mesure calculée n’est pas incluse dans la définition de l’audience.</p> |
    | À partir de l’interface d’utilisation de création/modification de segment | Cochez la case qui indique : **[!UICONTROL Créer une audience à partir de ce segment]**. L’utilisation de cette méthode préremplit le segment. Pour plus d’informations, consultez [Créer des segments](/help/components/segments/seg-create.md). |
 
    {style="table-layout:auto"}
@@ -206,7 +206,7 @@ Les audiences Customer Journey Analytics ne sont pas incluses dans la tâche d
 * **Nombres déterministes dans Real-Time Customer Data Platform** : le nombre dans Real-Time Customer Data Platform est fixe et ne change que lors de la prochaine période de publication.
 * **Fragmentation de profil** : notez que les profils existants dans Real-Time Customer Data Platform peuvent ne pas contribuer au nombre de nouveaux profils lors de l’import depuis Customer Journey Analytics.
 
-Si vous faites la différence entre ces éléments, vous pouvez mieux comprendre et gérer les données de votre audience dans Customer Journey Analytics et Real-Time Customer Data Platform.--->
+En différenciant clairement ces aspects, vous pouvez mieux comprendre et gérer les données de votre audience dans Customer Journey Analytics et Real-Time Customer Data Platform.—>
 
 ## Questions fréquentes {#faq}
 

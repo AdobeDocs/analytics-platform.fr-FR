@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 902e5890-f970-4f1a-b091-9c3e51a987db
-source-git-commit: 3dc53d6955eab3048ebf8a7c9d232b4b5739c6bd
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '1252'
+source-wordcount: '1294'
 ht-degree: 100%
 
 ---
@@ -24,12 +24,12 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-create-default-aa"
 >title="Créer un schéma à l’aide du groupe de champs Adobe Analytics ExperienceEvent"
->abstract="Utilisez le groupe de champs « Adobe Analytics ExperienceEvent » pour créer un schéma dans Adobe Experience Platform contenant tous les champs utilisés par Adobe Analytics.<br><br>La création d’un schéma basé sur le groupe de champs Adobe Analytics ExperienceEvent est simple et ne prend que quelques minutes."
+>abstract="Utilisez le groupe de champs « Adobe Analytics ExperienceEvent » pour créer un schéma dans Adobe Experience Platform contenant tous les champs utilisés par Adobe Analytics.<br><br>La création d’un schéma basé sur le groupe de champ Adobe Analytics ExperienceEvent est simple et ne prend que quelques minutes."
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-profile"
 >title="Activer votre schéma pour le profil"
->abstract="Activez le profil dans votre schéma à utiliser Adobe Real-Time CDP. Cette étape s’affiche, car vous avez sélectionné la volonté d’intégration à Adobe Real-Time CDP.<br><br>Comme cette étape implique de cliquer sur une seule case, elle ne prend que quelques minutes."
+>abstract="Activez le profil dans votre schéma à utiliser Adobe Real-Time CDP. Cette étape apparaît car vous avez communiqué votre désir d’intégration à Adobe Real-Time CDP.<br><br>Comme cette étape implique de cliquer sur une seule case, elle ne prend que quelques minutes."
 
 <!-- markdownlint-enable MD034 -->
 

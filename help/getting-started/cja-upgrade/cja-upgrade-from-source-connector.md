@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 4c0eef7d-7b0e-43b5-8126-d84d4fffd80c
-source-git-commit: 5faf9668475818773c645b69915ddd5182500aea
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '539'
 ht-degree: 100%
 
 ---
@@ -60,7 +60,7 @@ Voici le processus de haut niveau pour passer de l’utilisation exclusive du co
 
       ![Champs de schéma de recherche](assets/schema-mapping.png)
 
-   1. Dans le **[!UICONTROL champ Source]**, sélectionnez un champ Adobe Analytics dans le groupe de champs Modèle ExperienceEvent Adobe Analytics. Ensuite, dans le **[!UICONTROL champ Cible]**, sélectionnez le champ XDM vers lequel vous souhaitez le mapper.
+   1. Dans le **[!UICONTROL champ Source]** sélectionnez un champ Adobe Analytics dans le groupe de champs Modèle ExperienceEvent Adobe Analytics. Ensuite, dans le **[!UICONTROL champ Cible]**, sélectionnez le champ XDM vers lequel vous souhaitez le mapper.
 
    1. Répétez cette procédure pour chaque champ du groupe de champs Modèle ExperienceEvent Adobe Analytics que vous utilisez pour collecter des données dans Adobe Analytics.
 
@@ -68,7 +68,7 @@ Voici le processus de haut niveau pour passer de l’utilisation exclusive du co
 
    Pour plus d’informations, consultez [Ajouter le jeu de données de votre connecteur source Analytics actuel à la connexion](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md).
 
-1. (Le cas échéant) Si vous utilisez des jeux de données de recherche, vous devez créer le jeu de données de recherche et l’ajouter à votre connexion. Pour plus d’informations, consultez [Créer des jeux de données de recherche pour classer des données dans Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md).
+1. (Le cas échéant) Si vous utilisez des jeux de données de recherche, vous devez créer le jeu de données de recherche et l’ajouter à votre connexion. Pour plus d’informations, consultez [Créer des jeux données de recherche pour classifier des données dans Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md).
 
 1. Supprimez votre connecteur source Analytics d’origine. <!-- need to add steps somewhere about how to do this -->
 

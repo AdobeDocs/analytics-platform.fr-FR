@@ -5,10 +5,10 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 exl-id: 93e6e4f1-bbe4-4a6c-8ec3-54d1f9a8b847
 role: User
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '531'
-ht-degree: 99%
+source-wordcount: '545'
+ht-degree: 97%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 99%
 
 L’analyse ![Version](/help/assets/icons/Release.svg) **[!UICONTROL Impact de la nouvelle version]** présente une comparaison des performances des indicateurs clés avant et après une date donnée. L’axe horizontal de ce rapport est un intervalle de temps, tandis que l’axe vertical mesure les indicateurs clés souhaités. Une barre verticale située au milieu du graphique représente la date à laquelle vous souhaitez effectuer une comparaison, avant et après. Cette date représente généralement un changement notable du produit par rapport auquel vous souhaitez mesurer, tel qu’une mise à jour du produit ou un lancement de campagne.
 
->[!VIDEO](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/guided-analysis/release-impact)
+>[!VIDEO](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/release-impact)
 
 ## Cas d’utilisation
 

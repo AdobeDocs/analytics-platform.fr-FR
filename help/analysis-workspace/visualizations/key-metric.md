@@ -4,10 +4,10 @@ title: Synthèse des mesures clés
 feature: Visualizations
 exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
 role: User
-source-git-commit: a85cc758f414c8c9f702ed83d1dd2675bf29a30f
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '948'
-ht-degree: 94%
+source-wordcount: '960'
+ht-degree: 91%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 94%
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente la visualisation Synthèse des mesures clés dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consultez [Synthèse des mesures clés](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/key-metric) pour la_ version ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** de cet article._
+_Cet article présente la visualisation du résumé des mesures clés dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Voir [Résumé des mesures clés](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/key-metric) pour la version ![AdobeAnalytics_ _**Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) de cet article.** _
 
 >[!ENDSHADEBOX]
 
@@ -139,7 +139,7 @@ Dans le cadre des paramètres de visualisation, des paramètres spécifiques de 
 | **[!UICONTROL Afficher le pourcentage de comparaison ainsi que la tendance]** | Afficher ou masquer les données de comparaison. Lorsqu’ils sont masqués, les objets de modification de graphique en courbes de comparaison et de modification de résumé sont n’apparaissent pas dans la vue. |
 | **[!UICONTROL Afficher le nombre total]** | Afficher ou masquer la synthèse des chiffres |
 | **[!UICONTROL Afficher la différence brute]** | Afficher ou masquer la différence brute entre la valeur totale de la mesure dans la période Principale et la période secondaire |
-| **[!UICONTROL Abréger la valeur]** | Sélectionnez **[!UICONTROL Abréger la valeur]** pour abréger intelligemment la valeur numérique. Lorsque cette option est sélectionnée, saisissez un nombre pour définir le montant de l’abréviation. Par exemple :<br/><table><tr><td>**Valeur d’origine**</td><td>**Abréviation**</td><td>**Résultat**</td></tr><tr><td>12 011 141,25 $</td><td>Non sélectionné</td><td align="right">12 011 141,25 $</td></tr><tr><td>12 011 141,25 $</td><td>Sélectionné, défini sur 1</td><td align="right">12 M $</td></tr><tr><td>12 011 141,25 $</td><td>Sélectionné, défini sur 2</td><td align="right">12,0 M $</td></tr><tr><td>12 011 141,25 $</td><td>Sélectionné, défini sur 2</td><td align="right">12,011 M $</td></tr><tr><td>12 011 141,25 $</td><td>Sélectionné, défini sur 3</td><td align="right">12,011 M $</td></tr></table> |
+| **[!UICONTROL Abréger la valeur]** | Sélectionnez **[!UICONTROL Abréger la valeur]** pour abréger intelligemment la valeur numérique. Lorsque cette option est sélectionnée, saisissez un nombre pour définir le montant de l’abréviation. Par exemple :<br/><table><tr><td>**Valeur d’origine**</td><td>**Abréviation**</td><td>**Résultat**</td></tr><tr><td>$12,011,141.25</td><td>Non sélectionné</td><td align="right">$12,011,141.25</td></tr><tr><td>$12,011,141.25</td><td>Sélectionné, défini sur 1</td><td align="right">12 M $</td></tr><tr><td>$12,011,141.25</td><td>Sélectionné, défini sur 2</td><td align="right">12,0 M $</td></tr><tr><td>$12,011,141.25</td><td>Sélectionné, défini sur 2</td><td align="right">12,011 M $</td></tr><tr><td>$12,011,141.25</td><td>Sélectionné, défini sur 3</td><td align="right">12,011 M $</td></tr></table> |
 
 ## Modifier la visualisation
 
@@ -147,7 +147,7 @@ Une fois la visualisation créée, vous pouvez modifier la configuration d’ori
 
 1. Sélectionnez ![Modifier](/help/assets/icons/Edit.svg) dans le coin supérieur droit de la visualisation.
 
-   Vous revenez maintenant à la vue de configuration [&#x200B; d’origine](#configure).
+   Vous revenez maintenant à la vue de configuration [ d’origine](#configure).
 
 1. Modifiez la mesure, la période Principale, la période de comparaison ou le segment selon vos préférences.
 

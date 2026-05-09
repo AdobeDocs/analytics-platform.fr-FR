@@ -4,10 +4,10 @@ title: Carte
 feature: Visualizations
 role: User, Admin
 exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
-source-git-commit: 211dbd80b21f84ab616569c0d847dcc97f13661c
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '2770'
-ht-degree: 13%
+source-wordcount: '2815'
+ht-degree: 14%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 13%
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente la visualisation des cartes dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Voir [Map](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) pour la version_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** de cet article._
+_Cet article présente la visualisation des cartes dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Voir [Map](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) pour la version_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 
@@ -109,7 +109,7 @@ Vous trouverez ci-dessous les modèles et le libellé de contexte requis. Sans c
 | Régions géographiques | [!UICONTROL Géo : Région géographique] |
 | Villes géographiques | [!UICONTROL Géo : Ville géographique] |
 | États américains géographiques | [!UICONTROL Géo : État géographique] |
-| DMA États-Unis géographiques | [!UICONTROL Géo : Dma Géographique] |
+| Géosegmentation - DMA États-Unis | [!UICONTROL Géo : Dma Géographique] |
 
 Pour ajouter ces libellés de contexte :
 
@@ -149,7 +149,7 @@ La visualisation des cartes dans Customer Journey Analytics diffère de la visua
 
 | Fonctionnalité | Customer Journey Analytics | Adobe Analytics |
 |---------|----------|---------|
-| Source de données | Utilisez n’importe quel segment disponible dans votre vue de données comme source de données. | Propose les options suivantes : <ul><li>Lat/long pour mobiles</li><li>Dimension géographique <br/> représente les données de segmentation géographique relatives à l’emplacement du visiteur en fonction de son adresse IP. </li></ul> |
+| Source de données | Utilisez n’importe quel segment disponible dans votre vue de données comme source de données. | Propose les options suivantes : <ul><li>Lat./long. mobile</li><li>Dimension géographique <br/> représente les données de segmentation géographique relatives à l’emplacement du visiteur en fonction de son adresse IP. </li></ul> |
 | Précision | Pour les jeux de données avec une précision élevée, vous pouvez configurer les dimensions dans votre vue de données pour afficher jusqu’à 5 décimales. Cela permet à la visualisation de la carte d’être précise à moins d’un mètre. <p>Pour plus d’informations, voir [Configurer des emplacements précis pour les dimensions](#configure-precise-locations-for-dimensions).</p> | Les données sont exactes au niveau [!UICONTROL Pays], [!UICONTROL Région] et [!UICONTROL Ville]. (Elle n’atteint pas le niveau de la DMA ou du code postal.) |
 | Création d’un segment à partir d’une sélection | Créez un segment en fonction d’une zone spécifique que vous sélectionnez dans la visualisation de carte. <p>Pour plus d’informations, voir [Création d’un segment à partir de la visualisation des cartes](#create-a-segment-from-the-map-visualization).</p> | Créez un segment basé sur les données rapportées dans la visualisation des cartes en général. |
 | Création d’une audience à partir d’une sélection | Créez une audience basée sur une zone spécifique que vous sélectionnez dans la visualisation de carte. <p>Pour plus d’informations, voir [Création d’une audience à partir de la visualisation de carte](#create-an-audience-from-the-map-visualization). | Impossible de créer une audience à partir de la visualisation de carte. |

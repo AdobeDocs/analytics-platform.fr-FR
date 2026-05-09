@@ -5,10 +5,10 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 exl-id: 2c512184-2d79-4c41-8229-a09e440179ea
 role: User
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '675'
-ht-degree: 99%
+source-wordcount: '692'
+ht-degree: 97%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 99%
 L’analyse ![FirstUse](/help/assets/icons/FirstUse.svg) **[!UICONTROL Impact de la première utilisation]** présente une comparaison des performances des indicateurs clés avant et après la première utilisation d’une fonctionnalité de produit par une personne. L’axe horizontal de ce rapport est un intervalle de temps relatif avant et après l’événement, tandis que l’axe vertical mesure les indicateurs clés souhaités. Une barre verticale située au milieu du graphique représente le jour 0 correspondant au moment où une fonctionnalité est utilisée pour la première fois par une personne donnée. Comme les utilisateurs et utilisatrices n’adoptent pas toujours les fonctionnalités le même jour et que vos déploiements peuvent potentiellement s’étendre sur plusieurs jours, le jour 0 peut avoir une signification différente pour chaque personne.
 
 
->[!VIDEO](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/guided-analysis/first-use-impact)
+>[!VIDEO](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/first-use-impact)
 
 
 ## Cas d’utilisation
@@ -51,7 +51,7 @@ Consultez [Interface](../overview.md#interface) pour une vue d’ensemble de l�
 Le rail de requête vous permet de configurer les composants suivants :
 
 * **[!UICONTROL Vue]** : basculez entre cette analyse et [Version](release-impact.md).
-* **[!UICONTROL Indicateurs clés]** : événements que vous souhaitez mesurer par utilisateur et utilisatrice. Chaque indicateur clé sélectionné est représenté sous la forme d’une ligne colorée. Une ligne représentant l’événement est ajoutée au tableau. Vous pouvez inclure jusqu’à trois événements.
+* **[!UICONTROL Indicateurs clés]** : événements que vous souhaitez mesurer par personne. Chaque indicateur clé sélectionné est représenté sous la forme d’une ligne colorée. Une ligne représentant l’événement est ajoutée au tableau. Vous pouvez inclure jusqu’à trois événements.
 * **[!UICONTROL Compté comme]** : méthode de comptage à appliquer aux événements sélectionnés. Les options incluent [!UICONTROL Événements par utilisateur ou utilisatrice], [!UICONTROL Événements], [!UICONTROL Sessions] et [!UICONTROL Utilisateurs et utilisatrices].
 * **[!UICONTROL Facteurs]** : cette analyse comporte deux facteurs :
    * **[!UICONTROL Date]** : date à laquelle vous souhaitez commencer à rechercher le premier événement d’utilisation qui s’est produit.
@@ -69,7 +69,7 @@ L’analyse [!UICONTROL Impact de la première utilisation] propose les paramèt
 Les sélections de date dans l’analyse [!UICONTROL Impact de la première utilisation] fonctionnent différemment des autres analyses, car l’analyse tourne autour de la date spécifiée dans le rail de requête. Les options disponibles sont les suivantes :
 
 * **[!UICONTROL Intervalle]** : granularité de la date selon laquelle vous souhaitez afficher les données de tendance. Les options valides sont les suivantes : [!UICONTROL Quotidien], [!UICONTROL Hebdomadaire], [!UICONTROL Mensuel] et [!UICONTROL Trimestriel]. La modification de l’intervalle affecte les options disponibles pour la période avant et après.
-* **[!UICONTROL Période avant et après]** : durée de l’analyse avant et après le premier événement d’utilisation spécifié dans le rail de requête. Les options disponibles dépendent de l’[!UICONTROL intervalle] sélectionné.
+* **[!UICONTROL Période avant et après]** : durée de l’analyse avant et après le premier événement d’utilisation spécifié dans le rail de requête. Les options disponibles dépendent de l’[!UICONTROL Intervalle] sélectionné.
 
 <!--
 ## Example

@@ -5,10 +5,10 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '2701'
-ht-degree: 98%
+source-wordcount: '2770'
+ht-degree: 95%
 
 ---
 
@@ -29,7 +29,7 @@ Les informations suivantes indiquent aux curateurs et curatrices des données Cu
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Créer une carte de performance mobile](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Créer une carte de performance mobile](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 
@@ -79,7 +79,7 @@ Pour implémenter le modèle de carte de performance, procédez comme suit :
 
 1. Pour ajouter une nouvelle tuile à votre carte de performance, faites glisser une mesure depuis le panneau de gauche et déposez-la dans la zone **[!UICONTROL Faire glisser et déposer les mesures ici]**. Vous pouvez également insérer une mesure entre deux mosaïques en utilisant un workflow similaire.
 
-   ![Fenêtre de nouvelle carte de performance mobile avec une flèche pointant vers une mesure (Nouveau KPI) déposée dans la carte de performance. &#x200B;](assets/build_list.png)
+   ![Fenêtre de nouvelle carte de performance mobile avec une flèche pointant vers une mesure (Nouveau KPI) déposée dans la carte de performance. ](assets/build_list.png)
 
 
 1. Depuis chaque mosaïque, vous pouvez accéder à une vue détaillée qui affiche des informations supplémentaires sur la mesure comme les éléments principaux pour une liste de dimensions associées.
@@ -257,7 +257,7 @@ Regardez la vidéo pour en savoir plus sur la création d’histoires de donnée
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Histoires de données pour un projet de carte de performance mobile](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Histoires de données pour un projet de carte de performance mobile](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 
@@ -270,14 +270,14 @@ Créez votre histoire de données en ajoutant plusieurs diapositives détaillée
 
 1. Commencez par un projet de carte de performance mobile.
 1. Sélectionnez une mosaïque à partir de laquelle vous souhaitez créer une histoire.
-   ![Création d’une histoire de données](assets/data-story1.png)
+   ![Créer une histoire de données](assets/data-story1.png)
    ![Création d’icônes d’histoire de données](assets/create-data-story.png){width=".50%"}
 1. Ajoutez des diapositives pour élaborer votre histoire de données. Votre première diapositive est générée par défaut.
 Pour ajouter de nouvelles diapositives, pointez ou cliquez sur une diapositive, puis sélectionnez l’une des options disponibles :
    * Appuyez sur le signe « + » pour créer une diapositive.
    * Appuyez sur l’icône de duplication pour dupliquer la diapositive existante.
 1. Si vous créez une diapositive vierge, faites glisser et déposez des composants depuis le rail de gauche ou choisissez une disposition pour remplir automatiquement la diapositive avec les données de la mosaïque.
-   ![Création d’une histoire de données.](assets/data-story2.png)
+   ![Créer une histoire de données](assets/data-story2.png)
 Pour supprimer une diapositive, appuyez sur l’icône de corbeille.
 
 ### Personnaliser une histoire de données {#customize-data-story}
@@ -289,8 +289,8 @@ Les histoires de données vous permettent de personnaliser chaque élément, afi
 1. Appuyez sur une mosaïque. La mosaïque sélectionnée est entourée en bleu et le panneau de droite affiche ses propriétés.
 1. Modifiez le titre, le type de graphique et d’autres options de mosaïque.
 1. Faites glisser un composant sur la mosaïque.
-   ![Création d’une histoire de données.](assets/data-story3.png)
-Lorsque vous faites glisser et déposez un composant, tel qu’une visualisation, sur une mosaïque, le composant est appliqué à toutes les diapositives de l’histoire de données.
+   ![Créer une histoire de données](assets/data-story3.png)
+Lorsque vous faites glisser et déposez un composant, tel qu’une visualisation, sur une mosaïque, le composant est appliqué à toutes les diapositives du récit des données.
 1. Pour appliquer une modification uniquement au titre, maintenez la touche Maj enfoncée pour appliquer la modification.
    ![Création d’une histoire de données](assets/data-story4.png)
 
@@ -310,8 +310,8 @@ Une fois votre histoire de données créée, appuyez sur le bouton **Prévisuali
 La barre de navigation affiche des icônes reflétant le contenu de chaque diapositive. La barre de navigation permet d’accéder facilement à une diapositive spécifique si vous disposez de nombreuses diapositives.
 
 Pour accéder à une autre mosaïque ou diapositive, appuyez sur la barre de navigation.
-![Création d’une histoire de données](assets/data-story5.png)
-![Création d’une histoire de données](assets/data-story-nav.png){width="45%"}
+![Créer une histoire de données](assets/data-story5.png)
+![Créer une histoire de données](assets/data-story-nav.png){width="45%"}
 
 Pour naviguer d’avant en arrière, utilisez les flèches de votre clavier ou sélectionnez un composant et maintenez-le à gauche ou à droite de l’écran pour le faire défiler.
 

@@ -5,10 +5,10 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 exl-id: 27eaa7c7-f1e1-4cf1-9d59-67ac552eb430
 role: User
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '658'
-ht-degree: 99%
+source-wordcount: '671'
+ht-degree: 98%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 99%
 
 L’analyse ![Fréquence](/help/assets/icons/Histogram.svg) **[!UICONTROL Fréquence]** regroupe les données d’événement en fonction de la fréquence des événements dans votre produit. L’axe vertical de cette analyse contient des compartiments qui représentent la fréquence de l’événement. L’axe horizontal mesure le nombre d’utilisateurs et utilisatrices ou de sessions pour chaque compartiment.
 
->[!VIDEO](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/guided-analysis/frequency)
+>[!VIDEO](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/frequency)
 
 ## Cas d’utilisation
 

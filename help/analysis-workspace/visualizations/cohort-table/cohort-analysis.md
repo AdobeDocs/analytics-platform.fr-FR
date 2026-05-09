@@ -4,10 +4,10 @@ description: Découvrez comment approfondir les données relatives à votre audi
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 role: User
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '720'
-ht-degree: 94%
+source-wordcount: '754'
+ht-degree: 92%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 94%
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente la Table de cohorte dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consultez [Table de cohorte](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis) pour la_ version ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** de cet article._
+_Cet article présente le tableau de cohortes dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Voir [Tableau de cohortes](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis) pour la version_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 
@@ -86,7 +86,7 @@ Une table de cohorte d’[!UICONTROL attrition] est l’opposé d’un tableau d
 
 ![Tableau d’attrition montrant les unités et le pourcentage de personnes qui ne répondaient pas aux critères de retour pour une cohorte.](assets/churn-report.png)
 
-### Calcul glissant
+### Calcul évolutif
 
 Vous pouvez calculer la rétention ou l’attrition en fonction de la colonne précédente, et non de la colonne incluse, que l’on appelle calcul glissant.
 

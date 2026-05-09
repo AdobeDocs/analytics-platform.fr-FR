@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 0bf35c67-c8ae-4349-93fb-b9806c1064a8
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '1302'
-ht-degree: 58%
+source-wordcount: '1381'
+ht-degree: 59%
 
 ---
 
@@ -40,7 +40,7 @@ Vous pouvez utiliser la logique de collecte de données de l’extension AppMeas
 
 ## Avantages et inconvénients
 
-Cette méthode s’exclut mutuellement lors de l’[envoi de l’intégralité de la couche de données à Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-alternative-appmeasurement.md), car les deux méthodes effectuent la même tâche. (Cette méthode est préférable à l’envoi de l’ensemble de la couche de données à Adobe. Elle est plus précise, car les props et les evars passent tous par les données.__adobe.analytics._nom-variable_.)
+Cette méthode s’exclut mutuellement lors de l’[envoi de l’intégralité de la couche de données à Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-alternative-appmeasurement.md), car les deux méthodes effectuent la même tâche. (Cette méthode est préférable à l’envoi de l’ensemble de la couche de données à Adobe. Elle est plus précise, car les props et les evars passent tous par data.__ adobe.analytics._variable-name_.)
 
 Tenez compte des avantages et des inconvénients suivants de l’utilisation de cette alternative de mise à niveau :
 
@@ -62,15 +62,15 @@ Les étapes de base pour migrer une implémentation d’Adobe Analytics (AppMeas
 
    Pour plus d’informations sur la procédure à suivre, consultez les articles suivants de la documentation d’Adobe Analytics :
 
-   * [Migration vers Web SDK à l’aide de balises](https://experienceleague.adobe.com/fr/docs/analytics/implementation/aep-edge/web-sdk/analytics-extension-to-web-sdk)
+   * [Migrer vers le SDK web à l’aide de balises](https://experienceleague.adobe.com/fr/docs/analytics/implementation/aep-edge/web-sdk/analytics-extension-to-web-sdk)
 
-   * [Migration vers Web SDK à l’aide de JavaScript](https://experienceleague.adobe.com/fr/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk)
+   * [Migrer vers le SDK web à l’aide de JavaScript](https://experienceleague.adobe.com/fr/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk)
 
 1. Commencez à envoyer des données d’Edge Network vers Platform.
 
    1. Envoyez toutes vos variables au format AppMeasurement via l’objet de données.
 
-      Pour plus d’informations, voir [Mappage des variables d’objet de données à Adobe Analytics](https://experienceleague.adobe.com/fr/docs/analytics/implementation/aep-edge/data-var-mapping).
+      Pour plus d’informations, voir [Mappage des variables d’objet de données à Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping).
 
    1. Choisissez votre schéma.
 
@@ -96,7 +96,7 @@ Les étapes de base pour migrer une implémentation d’Adobe Analytics (AppMeas
 
    1. Utilisez le mappage des flux de données pour mapper tous les champs de l’objet de données à votre schéma XDM.
 
-      Pour plus d’informations, consultez [Mappage](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/data-prep?lang=en#mapping) dans [Préparation des données pour la collecte de données](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/data-prep) dans la documentation d’Experience Platform.
+      Pour plus d’informations, consultez [Mappage](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep?lang=en#mapping) dans [Préparation des données pour la collecte de données](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) dans la documentation d’Experience Platform.
 
 {{upgrade-final-step}}.
 

@@ -4,9 +4,9 @@ description: Découvrez comment afficher et gérer les journaux d’audit de Cus
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
 role: Admin
-source-git-commit: 2ef96ad194f8c7acec35bd7635c650af4370531a
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '967'
+source-wordcount: '999'
 ht-degree: 98%
 
 ---
@@ -52,7 +52,7 @@ Dans Customer Journey Analytics, accédez à **[!UICONTROL Outils]** > **[!UI
 
 Le journal d’audit pour aujourd’hui et hier s’affiche par défaut.
 
-![Journal d’audit mis en surbrillance aujourd’hui et hier. &#x200B;](assets/audit_ui.png)
+![Journal d’audit mis en surbrillance aujourd’hui et hier. ](assets/audit_ui.png)
 
 Vous pouvez sélectionner les colonnes visibles en accédant au sélecteur de colonnes en haut à droite.
 
@@ -60,7 +60,7 @@ Vous pouvez sélectionner les colonnes visibles en accédant au sélecteur de co
 
 Double-cliquez sur le bouton info (i) en regard d’une description.
 
-![Journal d’audit mettant en surbrillance le bouton d’informations. &#x200B;](assets/info-button-audit.png)
+![Journal d’audit mettant en surbrillance le bouton d’informations. ](assets/info-button-audit.png)
 
 Les éléments suivants s’affichent :
 

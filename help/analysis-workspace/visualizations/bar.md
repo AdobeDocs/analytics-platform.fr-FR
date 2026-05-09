@@ -4,10 +4,10 @@ title: Barres Et Barres Empilées
 feature: Visualizations
 exl-id: a4458694-0c90-4e44-88d5-575737a61c36
 role: User
-source-git-commit: 211dbd80b21f84ab616569c0d847dcc97f13661c
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '211'
-ht-degree: 87%
+source-wordcount: '234'
+ht-degree: 68%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 87%
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente les visualisations Barres et Barres empilées dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consultez [Barres et Barres empilées](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/bar) pour la_ version ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** de cet article._
+_Cet article présente les visualisations à barres et à barres empilées dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Voir [Barres et barres empilées](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/bar) pour la version ![AdobeAnalytics_ _**Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) de cet article.** _
 
 
 >[!ENDSHADEBOX]
@@ -63,7 +63,7 @@ Utilisez l’option **[!UICONTROL Empilé à 100 %]** dans ![Paramètre](/help
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisation de zone](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-bar-visualizations){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisation de zone](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-bar-visualizations){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 

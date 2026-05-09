@@ -4,10 +4,10 @@ description: Découvrez les fonctions de base des mesures calculées.
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 role: User
-source-git-commit: 211f0411d0bf70288cbd46bb219fce7ae99fe03d
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '3599'
-ht-degree: 51%
+source-wordcount: '3641'
+ht-degree: 50%
 
 ---
 
@@ -93,7 +93,7 @@ Renvoie la valeur la plus grande d’un ensemble d’éléments de dimension pou
 
 >[!TIP]
 >
->Utilisez une instruction [IF](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-adv-functions#if) telle que **IF**(*Revenue* = **Column Maximum***(Revenue*), 1, 0) pour mettre en surbrillance l’élément le plus performant de votre répartition.
+>Utilisez une instruction [IF](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-adv-functions#if) telle que **IF**(*Revenue* = **Column Maximum***(Revenue*), 1, 0) pour mettre en surbrillance l’élément le plus performant de votre répartition.
 >
 
 ## Column Minimum {#column-minimum}
@@ -123,7 +123,7 @@ Renvoie la valeur la plus petite d’un ensemble d’éléments de dimension pou
 
 >[!TIP]
 >
->Utilisez une instruction [IF](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-adv-functions#if) telle que **IF**(*Revenue* = **Column Minimum***(Revenue*), 1, 0) pour mettre en surbrillance l’élément le moins performant de votre répartition.
+>Utilisez une instruction [IF](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-adv-functions#if) telle que **IF**(*Revenue* = **Column Minimum***(Revenue*), 1, 0) pour mettre en surbrillance l’élément le moins performant de votre répartition.
 >
 
 
@@ -199,7 +199,7 @@ Ajoute toutes les valeurs numériques d’une mesure dans une colonne (sur l’e
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENT(metric)]**
 
-[!BADGE Row]{type="Neutral"} Renvoie *e* élevé à la puissance d’un nombre donné. La constante *e* est égale à 2,71828182845904, la base du logarithme népérien. EXPONENT est l’inverse de LN, le logarithme népérien d’un nombre.
+[!BADGE Row]{type="Neutral"} Renvoie *e* élevé à la puissance d’un nombre donné. La constante *e* est égale à 2,71828182845904, la base du logarithme naturel. EXPONENT est l’inverse de LN, le logarithme népérien d’un nombre.
 
 | Argument | Description |
 |---|---|
@@ -430,7 +430,7 @@ Un arrondi sans paramètre de *nombre* est identique à un paramètre de *nombre
 
 | Argument | Description |
 |---|---|
-| mesure | Mesure que vous souhaitez arrondir. |
+| metric | Mesure que vous souhaitez arrondir. |
 | Number | Nombre de chiffres après la virgule à renvoyer. (Si négatif, renvoie des 0 à gauche de la décimale.) |
 
 **Cas d’utilisation** : simplifiez les résultats numériques en les arrondissant à un nombre spécifié de décimales. Cela s’avère utile pour créer des visualisations plus épurées ou pour faciliter la lecture des mesures calculées dans les rapports.

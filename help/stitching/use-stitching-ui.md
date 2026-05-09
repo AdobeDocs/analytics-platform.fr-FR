@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
-source-git-commit: 2816ea67c009d461fb05393741b74979dd65a212
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
 source-wordcount: '1788'
 ht-degree: 14%
@@ -124,7 +124,7 @@ Vous pouvez activer la combinaison d’identités lorsque vous [ajoutez](/help/c
 >id="connection_stitchingmetrics_badids"
 >title="ID incorrects"
 >abstract="Les ID incorrects sont des valeurs d’ID qui affectent considérablement les données de rapport."
->additional-url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/technotes/badids" text="ID incorrects"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/badids" text="ID incorrects"
 
 
 ### Paramètres des jeux de données
@@ -230,7 +230,7 @@ Une fois que vous avez enregistré une connexion, le processus de groupement pou
 
 >[!CAUTION]
 >
->Pour les jeux de données activés pour le groupement dans l’interface Connexions, le statut de renvoi est immédiatement et incorrectement signalé comme ![Statut vert](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _renvois terminés]**&#x200B;pour le nombre de renvois terminés. Utilisez d’autres méthodes pour vérifier si les données du jeu de données groupé sont renvoyées.
+>Pour les jeux de données activés pour le groupement dans l’interface Connexions, le statut de renvoi est immédiatement et incorrectement signalé comme ![Statut vert](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _renvois terminés]**pour le nombre de renvois terminés. Utilisez d’autres méthodes pour vérifier si les données du jeu de données groupé sont renvoyées.
 >
 
 

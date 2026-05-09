@@ -4,10 +4,10 @@ title: Aires (empilées)
 feature: Visualizations
 exl-id: d9662b29-fc41-4074-8cf6-031202994ece
 role: User
-source-git-commit: 211dbd80b21f84ab616569c0d847dcc97f13661c
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '204'
-ht-degree: 90%
+source-wordcount: '226'
+ht-degree: 70%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 90%
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente les visualisations Surface et Aires empilées dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consultez [Surface et Aires empilées](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/area) pour la_ version ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** de cet article._
+_Cet article présente les visualisations Surface et Aires empilées dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Voir [Aires et aires empilées](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/area) pour la version_ AdobeAnalytics![ _**Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) de cet article.** _
 
 >[!ENDSHADEBOX]
 
@@ -63,7 +63,7 @@ Utilisez l’option **[!UICONTROL Empilé à 100 %]** dans ![Paramètre](/help
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisation de zone](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-area-visualizations){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisation de zone](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-area-visualizations){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 

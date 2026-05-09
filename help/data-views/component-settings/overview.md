@@ -5,10 +5,10 @@ exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '3739'
-ht-degree: 56%
+source-wordcount: '3784'
+ht-degree: 53%
 
 ---
 
@@ -40,7 +40,7 @@ Les informations suivantes décrivent les paramètres utilisés par un composant
 | Paramètre | Description/Cas d’utilisation |
 | --- | --- |
 | [!UICONTROL Type de composant] | Obligatoire. Permet de modifier un composant de Mesure en Dimension ou inversement. La modification de la sélection de cette liste déroulante déplace le composant vers sa zone de composants incluse respective. |
-| [!UICONTROL &#x200B; Nom du composant &#x200B;] | Obligatoire. Permet de définir le nom convivial qui apparaîtra dans Analysis Workspace. Vous pouvez renommer un composant pour lui donner un nom spécifique à la vue de données. |
+| [!UICONTROL  Nom du composant ] | Obligatoire. Permet de définir le nom convivial qui apparaîtra dans Analysis Workspace. Vous pouvez renommer un composant pour lui donner un nom spécifique à la vue de données. |
 | [!UICONTROL Description] | Facultatif, mais recommandé. Fournit des informations sur le composant à d’autres utilisateurs. |
 | [!UICONTROL Balises] | Facultatif. Permet de baliser le composant avec des balises personnalisées ou prêtes à l’emploi pour faciliter la recherche/le filtrage dans l’interface utilisateur d’Analysis Workspace. |
 | [!UICONTROL Libellés de contexte] | Facultatif. Menu déroulant des libellés [contextuels](#context-labels) définis par le système disponibles pouvant être appliqués à un composant. |
@@ -59,7 +59,7 @@ Les informations suivantes décrivent les paramètres utilisés par un composant
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Paramètres du type de composant](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/data-views/component-type-settings-in-data-views){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Paramètres du type de composant](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/data-views/component-type-settings-in-data-views){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 
@@ -404,7 +404,7 @@ Les groupes de libellés de contexte suivants sont disponibles, chacun avec une 
 | ID de corrélation | ID de corrélation. |
 | Nombre d’offres (AJO) | Nombre d’éléments d’offre dans la proposition. |
 | Clé de liaison de l’élément de décision | Identifiant composite qui combine l’ID d’élément avec l’ID de requête Experience Decisioning, ce qui permet la persistance des données dans les interactions. |
-| Fournisseur de décision (AJO) | Le fournisseur qui a été invité à prendre la décision. Cette dimension est utilisée lorsque plusieurs services peuvent prendre des décisions pour le même emplacement ou la même activité. |
+| Fournisseur de décision (AJO) | Fournisseur à qui la décision a été demandée. Cette dimension est utilisée lorsque plusieurs services peuvent prendre des décisions pour le même emplacement ou la même activité. |
 | Fournisseur de décision (conservé) (AJO) | Fournisseur de décision avec liaison de persistance activée. |
 | Identifiant de politique de décision (AJO) | Identifiant de la politique de décision utilisée lors de la décision des éléments à inclure dans cette proposition. |
 | Mesure de déduplication (AJO) | Mesure de déduplication. |
@@ -427,7 +427,7 @@ Les groupes de libellés de contexte suivants sont disponibles, chacun avec une 
 | Rejets entrants (AJO) | Nombre total d’ignorances sur les canaux entrants. |
 | Impressions entrantes (AJO) | Nombre total d’impressions sur les canaux entrants. |
 | Envois entrants (AJO) | Nombre total d’envois sur les canaux entrants. |
-| Déclenché entrant (AJO) | La proposition a été choisie pour être affichée par le SDK Adobe. D’autres facteurs peuvent empêcher son affichage réel. |
+| Déclenché entrant (AJO) | La proposition a été choisie pour être affichée par Adobe SDK. D’autres facteurs peuvent l’empêcher de s’afficher réellement. |
 | Optimisé pour l’heure d’envoi (AJO) | L&#39;exécution du message est-elle SendTimeOptimized ? |
 | Est un parcours de test | L’événement fait-il partie de l’exécution d’un parcours de test ? |
 | Message de test (AJO) | Le message est-il envoyé en tant qu’exécution de test ? |
@@ -444,7 +444,7 @@ Les groupes de libellés de contexte suivants sont disponibles, chacun avec une 
 | Nom de la règle d’exclusion du parcours | Nom de la règle à l’origine du refus d’entrée dans le parcours. |
 | Exclusions du parcours (AJO) | Indiquez si l’événement d’étape en cours a entraîné l’abandon du parcours pour un profil. Cela se produit généralement en raison de l’application de règles de limitation ou de simultanéité, qui empêchent toute progression ultérieure dans le parcours. |
 | Type de sortie du parcours (AJO) | Type de sortie survenu pour l’instance de parcours. |
-| Échecs du parcours | Indique l’état actuel de l’étape qui a terminé son exécution. |
+| Échecs du parcours | Indique l’état actuel de l’étape dont l’exécution est terminée. |
 | ID du parcours | Identifiant du parcours. |
 | Nom du parcours | Nom du parcours. |
 | Nom et version du parcours | Nom et version du parcours. |
@@ -500,13 +500,13 @@ Les groupes de libellés de contexte suivants sont disponibles, chacun avec une 
 | Type de message SMS (AJO) | Fournisseur SMS, par exemple : inbound, inboundReply ou send. |
 | Fournisseur de SMS (AJO) | Fournisseur de SMS, par exemple Sinch ou Twilio. |
 | Taux de plaintes relatives au spam (AJO) | Nombre total de plaintes pour spam. |
-| Nom de la stratégie (AJO) | Nom de stratégie. Nom de stratégie duquel l’élément a été dérivé. |
+| Nom de la stratégie (AJO) | Nom de la stratégie. Nom de la stratégie d&#39;où provient l&#39;élément. |
 | Nom de stratégie (conservé) (AJO) | Nom de la stratégie pour laquelle la liaison de persistance est activée. |
 | Ajouts à la liste d’abonnements (AJO) | Nombre total d’ajouts à une liste d’abonnements. |
 | ID de liste d’abonnements (AJO) | Identifiant unique de la liste d’abonnements. |
 | Suppressions de la liste d’abonnements (AJO) | Nombre total de suppressions d’une liste d’abonnements. |
 | Surface (AJO) | Surface du canal sur laquelle le message a été affiché. |
-| Ciblés (obsolètes) | Nombre de fois où une proposition a été ciblée sur une personne. Il s’agit du nombre de fois où une proposition a été envisagée d’être affichée pour une personne. |
+| Ciblés (obsolètes) | Nombre de fois où une proposition a été ciblée sur une personne. Il s&#39;agit du nombre de fois où une proposition a été envisagée pour être présentée à une personne. |
 | Nom de la règle de ciblage (AJO) | Nom de la règle de ciblage. |
 | Événement de test (AJO) | Événement de test. |
 | Temps jusqu’au début | Heure de début. |

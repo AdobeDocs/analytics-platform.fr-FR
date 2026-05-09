@@ -3,7 +3,7 @@ title: Créer un flux de données
 description: Apprenez comment créer un flux de données et découvrez les informations sur les fichiers à fournir à Adobe.
 hide: true
 feature: Components
-source-git-commit: 54a7f59847b752a4e898b488a90520e8b31d3622
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
 source-wordcount: '2439'
 ht-degree: 19%
@@ -55,7 +55,7 @@ Avant de créer un flux de données, il est important de comprendre les bases de
 
 1. Connectez-vous à [experiencecloud.adobe.com](https://experiencecloud.adobe.com) à l’aide de vos identifiants Adobe ID.
 
-1. Sélectionnez l’icône des 9 carrés dans le coin supérieur droit, puis sélectionnez [!UICONTROL **&#x200B;**].
+1. Sélectionnez l’icône des 9 carrés dans le coin supérieur droit, puis sélectionnez [!UICONTROL ****].
 
 1. Dans la barre de navigation supérieure, accédez à [!UICONTROL **Admin**] > [!UICONTROL **Flux de données**].
 

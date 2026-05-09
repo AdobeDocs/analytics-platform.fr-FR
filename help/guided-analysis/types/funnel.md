@@ -5,9 +5,9 @@ exl-id: c8b0b71f-8ed3-4aad-a0f8-4d5ad8d7a7bd
 feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 role: User
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '679'
+source-wordcount: '694'
 ht-degree: 98%
 
 ---
@@ -23,11 +23,11 @@ ht-degree: 98%
 
 <!-- markdownlint-enable MD034 -->
 
-L’analyse ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL Entonnoir &#x200B;]**&#x200B;fournit une représentation visuelle d’un parcours critique d’une personne dans votre produit. L’axe horizontal représente chaque étape qu’une personne doit franchir. L’axe vertical représente le pourcentage d’utilisateurs et d’utilisatrices ou de sessions à chaque étape. Toutes les étapes doivent être effectuées dans l’ordre souhaité, mais peuvent l’être à tout moment dans la fenêtre de création de rapports.
+L’analyse ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL Entonnoir ]**fournit une représentation visuelle d’un parcours critique d’une personne dans votre produit. L’axe horizontal représente chaque étape qu’une personne doit franchir. L’axe vertical représente le pourcentage d’utilisateurs et d’utilisatrices ou de sessions à chaque étape. Toutes les étapes doivent être effectuées dans l’ordre souhaité, mais peuvent l’être à tout moment dans la fenêtre de création de rapports.
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analyse du frottement du Funnel](https://video.tv.adobe.com/v/3431276/?captions=fre_fr&quality=12&learn=onn){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analyse du frottement du Funnel](https://video.tv.adobe.com/v/3421663/?quality=12&learn=onn){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 
