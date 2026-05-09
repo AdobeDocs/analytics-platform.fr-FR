@@ -25,9 +25,9 @@ ht-degree: 92%
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente la visualisation Combo dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._
+_Cet article présente la visualisation Combo dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._
 
-_Consultez [Combo](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/combo-charts) pour la_ version ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
+_Consultez [Combo](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/combo-charts) pour la_ version ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 
@@ -68,7 +68,7 @@ Gardez les éléments suivants à l’esprit :
 
    La sortie ressemble à ce qui suit :
 
-   ![Graphique combo affichant la période en cours dans un graphique en barres et la période de comparaison dans le graphique en courbes ](assets/combo-output.png)
+   ![Graphique combo affichant la période en cours dans un graphique en barres et la période de comparaison dans le graphique en courbes &#x200B;](assets/combo-output.png)
 
    La période en cours s’affiche dans le graphique en barres. Le graphique en courbes représente la période de comparaison. Les points sur le graphique en courbes sont appelés *haltères*.
 
