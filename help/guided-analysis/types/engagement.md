@@ -35,7 +35,7 @@ Les fonctionnalités qui s’affichent en haut de cette visualisation indiquent 
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analyse de l’engagement](https://video.tv.adobe.com/v/3429489/&learn=on){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analyse de l’engagement](https://video.tv.adobe.com/v/3447469?captions=fre_fr){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 
