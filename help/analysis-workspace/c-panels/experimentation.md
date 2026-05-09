@@ -180,8 +180,8 @@ Les mesures calculées qui ne sont pas compatibles avec le panneau Expérimentat
 
 ## Utiliser des mesures calculées dans le panneau Expérimentation
 
-Consultez cet article de blog pour plus d’informations sur [l’utilisation de mesures calculées dans le panneau Expérimentation](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119).
+Consultez cet article de blog pour plus d’informations sur [l’utilisation de mesures calculées dans le panneau Expérimentation](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119?profile.language=fr).
 
 >[!MORELIKETHIS]
->[Maîtrise de l’expérimentation Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/mastering-adobe-customer-journey-analytics-experimentation-your/ba-p/732338)
+>[Maîtrise de l’expérimentation Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/mastering-adobe-customer-journey-analytics-experimentation-your/ba-p/732338?profile.language=fr)
 >
