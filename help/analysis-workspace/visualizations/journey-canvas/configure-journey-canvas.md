@@ -4,16 +4,34 @@ title: Configurer une visualisation de zone de travail de parcours
 feature: Visualizations
 role: User
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553
-source-git-commit: 73238f03021b14567c20c686ab72d84afbaa9f81
+TQID: https://experienceleague.adobe.com/pC3wjv6Q7RHRfDfHq75CP2Lqd-HzN-s7iLZ9t4N4ZR0
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: aff2ef09-fc60-4018-9197-e2befd623064
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 5513a755345188e6f7ff5d4c566d807d09e25f68
 workflow-type: tm+mt
-source-wordcount: '6252'
-ht-degree: 98%
+source-wordcount: 6457
+ht-degree: 91%
 
 ---
 
 # Configurer une visualisation de zone de travail de parcours
 
-La visualisation de la zone de travail de parcours vous permet d’analyser les parcours de vos utilisateurs, de vos utilisatrices et de votre clientèle, ou encore d’obtenir des informations détaillées à leur sujet.
+La visualisation Zone de travail de parcours vous permet d’analyser les parcours que vous fournissez à vos utilisateurs et utilisatrices et à votre clientèle, et d’obtenir des informations détaillées à leur sujet.
 
 ![Zone de travail de parcours](assets/journey-canvas.png)
 
@@ -436,6 +454,8 @@ L’option permettant d’appliquer une répartition à vos données est disponi
 
 * Plusieurs flèches entre les nœuds
 
+* Données sur les abandons (lorsque l’abandon est affiché sur un nœud)
+
 Tenez compte des points suivants lors de l’application d’une répartition :
 
 * Les répartitions sont appliquées à la mesure principale. Le projet secondaire ne sera pas affecté.
@@ -446,15 +466,17 @@ Tenez compte des points suivants lors de l’application d’une répartition :
 
 * Les données de répartition sont mises à jour si des modifications sont apportées plus tôt dans le parcours.
 
-#### Appliquer une répartition à un ou plusieurs nœuds ou flèches
+#### Appliquer une répartition aux nœuds, flèches ou données d’abandon
 
-1. Dans une visualisation de la zone de travail de parcours, sélectionnez un ou plusieurs nœuds auxquels appliquer une répartition, puis cliquez avec le bouton droit sur l’un des nœuds sélectionnés.
+1. Dans une visualisation de zone de travail de Parcours, effectuez l’une des opérations suivantes :
 
-   Ou
+   * Cliquez avec le bouton droit sur l’abandon qui provient d’un nœud (lorsque l’abandon est affiché) pour lequel vous souhaitez appliquer une répartition.
 
-   Dans une visualisation de la zone de travail de parcours, sélectionnez une ou plusieurs flèches comprises entre 2 nœuds auxquels vous souhaitez appliquer la répartition, puis cliquez avec le bouton droit sur l’une des flèches sélectionnées.
+   * Sélectionnez un ou plusieurs nœuds auxquels vous souhaitez appliquer une répartition, puis cliquez avec le bouton droit sur l’un des nœuds sélectionnés.
 
-   Pour sélectionner plusieurs nœuds ou flèches, maintenez la touche Commande (sous Mac) ou Ctrl (sous Windows) enfoncée.
+   * Sélectionnez une ou plusieurs flèches parmi les 2 nœuds auxquels vous souhaitez appliquer une répartition, puis cliquez avec le bouton droit sur l’une des flèches sélectionnées.
+
+     Pour sélectionner plusieurs nœuds ou flèches, maintenez la touche Commande (sous Mac) ou Ctrl (sous Windows) enfoncée.
 
 1. Sélectionnez [!UICONTROL **Répartition**].
 
@@ -496,17 +518,21 @@ L’option permettant de créer une audience est disponible pour les objets suiv
 
 * Plusieurs flèches entre les nœuds
 
+* Données sur les abandons (lorsque l’abandon est affiché sur un nœud)
+
 Lorsque vous créez une audience à partir de plusieurs nœuds ou flèches, ces derniers sont associés à l’opérateur OR.
 
 Pour créer une audience :
 
-1. Dans une visualisation de la zone de travail de parcours, sélectionnez un ou plusieurs nœuds où créer une audience, puis cliquez avec le bouton droit sur l’un des nœuds sélectionnés.
+1. Dans une visualisation de zone de travail de Parcours, effectuez l’une des opérations suivantes :
 
-   Ou
+   * Cliquez avec le bouton droit sur l’abandon qui provient d’un nœud (lorsque l’abandon est affiché) pour lequel vous souhaitez créer une audience.
 
-   Dans une visualisation de la zone de travail de parcours, sélectionnez une ou plusieurs flèches entre 2 nœuds où créer une audience, puis cliquez avec le bouton droit sur l’une des flèches sélectionnées.
+   * Sélectionnez un ou plusieurs nœuds pour lesquels vous souhaitez créer une audience, puis cliquez avec le bouton droit sur l’un des nœuds sélectionnés.
 
-   Pour sélectionner plusieurs nœuds ou flèches, maintenez la touche Commande (sous Mac) ou Ctrl (sous Windows) enfoncée.
+   * Sélectionnez une ou plusieurs flèches entre 2 nœuds pour lesquels vous souhaitez créer une audience, puis cliquez avec le bouton droit sur l’une des flèches sélectionnées.
+
+     Pour sélectionner plusieurs nœuds ou flèches, maintenez la touche Commande (sous Mac) ou Ctrl (sous Windows) enfoncée.
 
    >[!NOTE]
    >
@@ -530,21 +556,33 @@ L’option Tendance est disponible pour les objets suivants sur la zone de trava
 
 * Plusieurs flèches entre les nœuds
 
+* Données sur les abandons (lorsque l’abandon est affiché sur un nœud)
+
 Pour afficher les données de tendance :
 
-1. Dans une visualisation de zone de travail de parcours, sélectionnez un ou plusieurs nœuds pour lesquels afficher les données de tendance, puis cliquez avec le bouton droit sur l’un des nœuds sélectionnés.
+1. Dans une visualisation de zone de travail de Parcours, effectuez l’une des opérations suivantes :
 
-   Ou
+   * Cliquez avec le bouton droit sur l’abandon qui provient d’un nœud (lorsque l’abandon est affiché) pour lequel vous souhaitez afficher les données de tendance.
 
-   Dans une visualisation de la zone de travail de parcours, sélectionnez une ou plusieurs flèches entre 2 nœuds pour lesquels afficher les données de tendance, puis cliquez avec le bouton droit sur l’une des flèches sélectionnées.
+   * Sélectionnez un ou plusieurs nœuds pour lesquels vous souhaitez afficher les données de tendance, puis cliquez avec le bouton droit sur l’un des nœuds sélectionnés.
 
-   Pour sélectionner plusieurs nœuds ou flèches, maintenez la touche Commande (sous Mac) ou Ctrl (sous Windows) enfoncée.
+   * Sélectionnez une ou plusieurs flèches entre 2 nœuds pour lesquels vous souhaitez afficher les données de tendance, puis cliquez avec le bouton droit sur l’une des flèches sélectionnées.
+
+     Pour sélectionner plusieurs nœuds ou flèches, maintenez la touche Commande (sous Mac) ou Ctrl (sous Windows) enfoncée.
 
 1. Sélectionnez [!UICONTROL **Tendance**].
 
-### Créer un segment en fonction d’un nœud ou d’une flèche
+### Créer un segment en fonction d’un nœud, d’une flèche ou de données d’abandons
 
-Vous pouvez créer un segment à partir d’un nœud ou d’une flèche dans un parcours. Une fois le segment créé, vous pouvez l’utiliser n’importe où dans Analysis Workspace.
+L’option permettant de créer un segment est disponible pour les objets suivants sur la zone de travail :
+
+* Nœuds individuels
+
+* Flèches entre les nœuds
+
+* Données sur les abandons (lorsque l’abandon est affiché sur un nœud)
+
+Une fois le segment créé, vous pouvez l’utiliser n’importe où dans Analysis Workspace.
 
 Les segments créés à partir de la zone de travail de parcours utilisent la [segmentation séquentielle](/help/components/segments/seg-sequential-build.md). Cela signifie que le segment utilise l’opérateur THEN pour lier la séquence d’événements (le parcours) par laquelle les personnes ont transité, menant au nœud ou à la flèche sélectionné(e). Tous les événements correspondant au nœud ou à la flèche sélectionné sont inclus dans le segment.
 
@@ -552,11 +590,11 @@ Si vous créez un segment basé sur un nœud qui contient plusieurs chemins d’
 
 Pour créer un segment, procédez comme suit :
 
-1. Dans une visualisation de zone de travail de parcours, cliquez avec le bouton droit sur le nœud ou la flèche que vous souhaitez utiliser pour créer le segment.
+1. Dans une visualisation de zone de travail de Parcours, cliquez avec le bouton droit sur le nœud, la flèche ou les données d’abandons que vous souhaitez utiliser pour créer le segment.
 
-1. Sélectionnez [!UICONTROL **Créer un segment à partir du nœud**] ou [!UICONTROL **Créer un segment à partir de la flèche**].
+1. Sélectionnez [!UICONTROL **Créer un segment à partir du nœud**], [!UICONTROL **Créer un segment à partir d’une flèche**] ou [!UICONTROL **Créer un segment à partir d’un abandon**].
 
-   Le créateur de segment s’affiche. Dans la section [!UICONTROL **Définition**], la définition de segment est créée en fonction du nœud ou de la flèche que vous avez sélectionné(e) et de son contexte dans le parcours.
+   Le créateur de segment s’affiche. Dans la section [!UICONTROL **Définition**], la définition de segment est créée en fonction du nœud, de la flèche ou de l’abandon que vous avez sélectionné, ainsi que de son contexte dans le parcours.
 
 1. Indiquez un titre pour le segment et apportez toute autre modification. Pour plus d’informations sur la création d’un segment, voir [Créateur de segments](/help/components/segments/seg-builder.md).
 
@@ -571,6 +609,22 @@ Pour supprimer des nœuds dans la zone de travail du parcours :
 1. Dans une visualisation de la zone de travail de parcours, sélectionnez un ou plusieurs nœuds à supprimer, puis cliquez avec le bouton droit sur l’un des nœuds sélectionnés.
 
 1. Sélectionnez [!UICONTROL **Supprimer**].
+
+### Exclure les nœuds
+
+Lorsque vous excluez un nœud d’un parcours, les données du parcours sont mises à jour afin d’exclure les parcours qui sont passés par ce nœud. La définition de segment du parcours est également mise à jour afin d’exclure les parcours qui ont passé par ce nœud.
+
+Pour exclure un nœud d’un parcours :
+
+1. Dans une visualisation de zone de travail de Parcours, cliquez avec le bouton droit sur le nœud à exclure.
+
+1. Sélectionnez [!UICONTROL **Exclure du parcours**].
+
+Pour réinclure un nœud exclu dans le parcours :
+
+1. Dans une visualisation de zone de travail de Parcours, cliquez avec le bouton droit sur le nœud exclu.
+
+1. Sélectionnez [!UICONTROL **Supprimer l’exclusion de parcours**].
 
 ### Supprimer les flèches entre les nœuds
 

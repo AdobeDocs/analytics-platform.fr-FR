@@ -5,9 +5,9 @@ title: Préparation du mappage des colonnes de flux de données d’Adobe Analyt
 feature: Components
 hide: true
 exl-id: d0a9e697-1e48-4cfb-8613-2f932bf5015b
-source-git-commit: d79c6d883f436d97925e007f453879e20b4fcc04
+source-git-commit: 4ffcb03421c0e3a31803fad7734d935078169778
 workflow-type: tm+mt
-source-wordcount: '1088'
+source-wordcount: '1092'
 ht-degree: 3%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 3%
 
 Customer Journey Analytics offre une architecture plus flexible qu’Adobe Analytics pour déterminer les colonnes qui peuvent être incluses dans un flux de données. La plupart des entreprises doivent s’attendre à exporter des colonnes de flux de données de Customer Journey Analytics différentes de celles exportées à partir d’Adobe Analytics. Ces différences sont dues aux facteurs suivants :
 
-* **[Architecture du schéma](#schema-architecture)** : les colonnes de flux de données d’Adobe Analytics sont dérivées des variables Analytics, tandis que les colonnes de flux de données de Customer Journey Analytics sont dérivées du schéma de la vue de données.
+* **[Architecture du schéma de flux de données](#schema-architecture)** : les colonnes de flux de données d’Adobe Analytics sont dérivées des variables Analytics, tandis que les colonnes de flux de données de Customer Journey Analytics sont dérivées de la configuration de la vue de données.
 
 * **[Traitement des données](#data-processing)** : il existe des différences fondamentales de traitement des données entre Adobe Analytics et Customer Journey Analytics, en particulier l’existence de colonnes pré- et post-traitées pour de nombreuses colonnes d’Adobe Analytics.
 
@@ -28,7 +28,7 @@ Avant de commencer à mapper les colonnes de flux de données Adobe Analytics au
 
 Après avoir consulté ces informations, suivez les instructions de mappage pour chaque colonne de flux de données Adobe Analytics que vous prévoyez de conserver dans Customer Journey Analytics, comme décrit dans la section [Référence des colonnes de données](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md).
 
-## Architecture des schémas
+## Architecture du schéma de flux de données
 
 Customer Journey Analytics offre une architecture plus flexible qu’Adobe Analytics pour déterminer les colonnes disponibles à inclure dans un flux de données :
 
@@ -40,24 +40,24 @@ Il est facile d’inclure toutes les colonnes, comme le font de nombreux clients
 
 ### Architecture de Customer Journey Analytics
 
-Tous les composants inclus dans le schéma de vue de données peuvent être inclus en tant que colonnes de flux de données. Pour plus d’informations sur ce processus pour chaque colonne de flux de données Adobe Analytics potentielle, voir [Référence des colonnes de données](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md).
+Tous les composants inclus dans la configuration des vues de données peuvent être inclus en tant que colonnes de flux de données. Pour plus d’informations sur ce processus pour chaque colonne de flux de données Adobe Analytics potentielle, voir [Référence des colonnes de données](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md).
 
-Les composants sont inclus dans le schéma de vue de données de l’une des manières décrites dans le tableau suivant :
+Les composants sont inclus dans la configuration de la vue de données de l’une des manières décrites dans le tableau suivant :
 
-| Méthode à inclure dans le schéma de la vue de données | Informations supplémentaires |
+| Méthode à inclure dans la configuration de la vue de données | Informations supplémentaires |
 |---------|----------|
-| Les champs de schéma XDM sont traités comme des composants dans la vue de données | Les champs qui existent dans votre schéma XDM font partie du schéma de vue de données dans Customer Journey Analytics après avoir été traités en tant que composants dans la vue de données. <p>Le nombre de champs disponibles par défaut dans votre schéma XDM Customer Journey Analytics peut varier en fonction de la manière dont les données sont collectées pour votre implémentation Customer Journey Analytics, comme suit :</p><ul><li>**Nouvelles implémentations de Web SDK** : si votre implémentation de Customer Journey Analytics utilise un schéma personnalisé, de nombreuses colonnes existant dans les flux de données Adobe Analytics n’existent probablement pas dans Customer Journey Analytics. De même, Customer Journey Analytics peut contenir des champs qui n’existent pas dans les flux de données Adobe Analytics.<p>Si possible, consultez l’équipe ou la personne qui a conçu le schéma XDM pour l’implémentation Customer Journey Analytics de votre organisation. La plupart des décisions concernant les champs Adobe Analytics nécessaires dans Customer Journey Analytics ont été prises lors de la création du schéma XDM. Pour plus d’informations, consultez [Concevoir le schéma à utiliser avec Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md).</p></li><li>**Implémentations du connecteur Source Analytics** : les mappages de champs un-à-un existent par défaut pour de nombreuses colonnes de flux de données, car le connecteur Source Analytics utilise le groupe de champs Événement d’expérience Analytics dans le schéma XDM. Pour plus d’informations sur les champs Adobe Analytics mappés aux champs de ce groupe de champs, consultez [Mappages de champs Analytics](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics) dans la documentation d’Experience Platform.</li></ul> |
+| Les champs de schéma XDM sont traités comme des composants dans la vue de données | Les champs qui existent dans votre schéma XDM font partie de la configuration de la vue de données dans Customer Journey Analytics après avoir été traités en tant que composants dans la vue de données. <p>Le nombre de champs disponibles par défaut dans votre schéma XDM Customer Journey Analytics peut varier en fonction de la manière dont les données sont collectées pour votre implémentation Customer Journey Analytics, comme suit :</p><ul><li>**Nouvelles implémentations de Web SDK** : si votre implémentation de Customer Journey Analytics utilise un schéma personnalisé, de nombreuses colonnes existant dans les flux de données Adobe Analytics n’existent probablement pas dans Customer Journey Analytics. De même, Customer Journey Analytics peut contenir des champs qui n’existent pas dans les flux de données Adobe Analytics.<p>Si possible, consultez l’équipe ou la personne qui a conçu le schéma XDM pour l’implémentation Customer Journey Analytics de votre organisation. La plupart des décisions concernant les champs Adobe Analytics nécessaires dans Customer Journey Analytics ont été prises lors de la création du schéma XDM. Pour plus d’informations, consultez [Concevoir le schéma à utiliser avec Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md).</p></li><li>**Implémentations du connecteur Source Analytics** : les mappages de champs un-à-un existent par défaut pour de nombreuses colonnes de flux de données, car le connecteur Source Analytics utilise le groupe de champs Événement d’expérience Analytics dans le schéma XDM. Pour plus d’informations sur les champs Adobe Analytics mappés aux champs de ce groupe de champs, consultez [Mappages de champs Analytics](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics) dans la documentation d’Experience Platform.</li></ul> |
 | Les composants sont créés dans la vue de données à l’aide de champs dérivés | Vous pouvez créer des composants directement dans une vue de données, créant ainsi des colonnes de flux de données qui ne sont pas disponibles dans le schéma XDM. |
 
 ## Traitement des données
 
 Les différences de traitement des données entre Adobe Analytics et Customer Journey Analytics affectent les colonnes de flux de données disponibles à l’exportation, comme suit :
 
-* **Adobe Analytics** : de nombreux champs de flux de données sont exportés sous la forme de deux colonnes distinctes : l’une contenant des données prétraitées et l’autre des données post-traitées. (Les données post-traitées incluent la logique côté serveur, les règles de traitement, les règles VISTA, les règles de persistance des dimensions, etc.)
+* **&#x200B;**&#x200B;: de nombreux champs de flux de données sont exportés sous la forme de deux colonnes distinctes : l’une contenant des données prétraitées et l’autre des données post-traitées. (Les données post-traitées incluent la logique côté serveur, les règles de traitement, les règles VISTA, les règles de persistance des dimensions, etc.)
 
   Comme Adobe Analytics exporte les données de certains champs dans deux colonnes distinctes (une pour les données prétraitées et une pour les données post-traitées), Adobe Analytics contient plus de colonnes de flux de données que Customer Journey Analytics. Gardez cela en tête lors du mappage des champs.
 
-* **Customer Journey Analytics** : les champs sont disponibles pour les flux de données après leur création dans la vue de données. En règle générale, les champs des vues de données Customer Journey Analytics incluent uniquement les données post-traitées. Cependant, vous pouvez généralement faire une estimation de la version prétraitée d’Adobe Analytics d’un champ en créant une deuxième version du champ dans la vue de données Customer Journey Analytics et en le configurant pour qu’il expire au moment de l’accès.
+* **&#x200B;**&#x200B;: les champs sont disponibles pour les flux de données après leur création dans la vue de données. En règle générale, les champs des vues de données Customer Journey Analytics incluent uniquement les données post-traitées. Cependant, vous pouvez généralement faire une estimation de la version prétraitée d’Adobe Analytics d’un champ en créant une deuxième version du champ dans la vue de données Customer Journey Analytics et en le configurant pour qu’il expire au moment de l’accès.
 
 ## Colonnes non utilisées
 
@@ -69,7 +69,7 @@ Identifiez les colonnes de flux de données Adobe Analytics que votre organisati
 
 * **Identifier les champs qui s’appliquent à votre organisation** : bien que tous les clients Adobe Analytics n’exportent pas toutes les colonnes disponibles, de nombreux clients exportent plus qu’ils n’utilisent réellement.
 
-  Avant de commencer à exporter des flux de données à partir de Customer Journey Analytics, vous devez d’abord déterminer quelles colonnes de flux de données Adobe Analytics votre organisation utilise actuellement, puis vous assurer que ces composants existent dans votre schéma de vue de données Customer Journey Analytics. Pour collecter ces informations, contactez les équipes ou les personnes de votre entreprise qui utilisent le contenu des flux de données pour Adobe Analytics.
+  Avant de commencer à exporter des flux de données à partir de Customer Journey Analytics, vous devez d’abord déterminer quelles colonnes de flux de données Adobe Analytics votre organisation utilise actuellement, puis vous assurer que ces composants existent dans la configuration de vos vues de données Customer Journey Analytics. Pour collecter ces informations, contactez les équipes ou les personnes de votre entreprise qui utilisent le contenu des flux de données pour Adobe Analytics.
 
 ## Colonnes cross-canal
 
