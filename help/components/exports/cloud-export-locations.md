@@ -5,10 +5,21 @@ title: Configurer des emplacements d’export cloud
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
 role: User, Admin
-source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
+TQID: https://experienceleague.adobe.com/7Ajjn92O63TWPEgA5ddJZ7aOgm22T8C00lLZ-UcRFt4
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '3307'
-ht-degree: 23%
+source-wordcount: 3307
+ht-degree: 25%
 
 ---
 
@@ -28,7 +39,7 @@ ht-degree: 23%
 >[!CONTEXTUALHELP]
 >id="cja-export-file-name"
 >title="Nom et chemin d’accès du fichier"
->abstract="Indiquez un nom de fichier personnalisé dynamique à utiliser pour les exports automatisés envoyés à cet emplacement. Vous pouvez également faire précéder le nom du fichier d’un chemin d’accès au fichier personnalisé dynamique. <br/>Utilisez des variables dans le nom et le chemin du fichier pour les rendre dynamiques. <br/>Par exemple, si vous spécifiez `${yyyy}/${MM}/${dd}/my-report-${instance_id}-${idx}`, une exportation automatiquement envoyée vers cette destination le 15 janvier 2026 aura le chemin et le nom de fichier suivants : `[prefix_folder_name]/2026/01/15/my-report-[UUID]-1.csv` <br/>Cliquez sur le lien ci-dessous pour obtenir une liste des variables disponibles."
+>abstract="Indiquez un nom de fichier personnalisé dynamique à utiliser pour les exports automatisés envoyés à cet emplacement. Vous pouvez également faire précéder le nom du fichier d’un chemin d’accès au fichier personnalisé dynamique. <br/>Utilisez des variables dans le nom du fichier et le chemin d’accès au fichier pour les rendre dynamiques. <br/>Par exemple, si vous indiquez `${yyyy}/${MM}/${dd}/my-report-${instance_id}-${idx}`, un export automatiquement envoyé à cette destination le 15 janvier 2026 aura le chemin d’accès au fichier et le nom de fichier suivants : `[prefix_folder_name]/2026/01/15/my-report-[UUID]-1.csv`. <br/> Cliquez sur le lien ci-dessous pour obtenir une liste des variables disponibles."
 
 <!-- markdownlint-enable MD034 -->
 

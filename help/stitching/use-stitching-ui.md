@@ -5,10 +5,19 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
-source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
+TQID: https://experienceleague.adobe.com/Nj-IePDbHxBtgiSxEAobJ0DGlJSaiTwpTXIPtCxDTHw
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2:
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: caf1e4497d5dbe370ce23481ee1fbf1b6db59bf6
 workflow-type: tm+mt
-source-wordcount: '1788'
-ht-degree: 14%
+source-wordcount: 1788
+ht-degree: 20%
 
 ---
 
@@ -97,12 +106,12 @@ Vous pouvez activer la combinaison d’identités lorsque vous [ajoutez](/help/c
 >[!CONTEXTUALHELP]
 >id="connection_stitching_personid"
 >title="ID de personne"
->abstract="Sélectionnez un ID de personne (l’identifiant unique d’une personne) parmi les identités disponibles. Si votre licence comprend un groupement basé sur des graphiques et que vous souhaitez utiliser cette méthode de groupement, sélectionnez **[!UICONTROL Graphique d’identité]**."
+>abstract="Sélectionnez un ID de personne (l’identifiant unique d’une personne) parmi les identités disponibles. Si votre licence inclut un rapprochement basé sur les graphiques et que vous souhaitez utiliser la méthode de rapprochement, sélectionnez **[!UICONTROL Graphique d’identités]**."
 
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics"
 >title="Mesures de l’assemblage"
->abstract="Les mesures d’assemblage sont calculées à l’aide d’un exemple de jeu de données avec des horodatages d’événement des 7 derniers jours.<br>Cet exemple de jeu de données diffère généralement des exemples de données utilisés dans le tableau **[!UICONTROL Aperçu]**."
+>abstract="Les mesures de rapprochement sont calculées à l’aide d’un exemple de jeu de données avec des dates et heures d’événement des 7 derniers jours.<br>Cet exemple de jeu de données diffère généralement des exemples de données utilisés dans le tableau **[!UICONTROL Aperçu]**."
 
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics_gbs_personidcoverage"
@@ -117,7 +126,7 @@ Vous pouvez activer la combinaison d’identités lorsque vous [ajoutez](/help/c
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics_persistentidcoverage"
 >title="Couverture d’ID persistant"
->abstract="Cette valeur est utilisée pour l’identification pendant le processus de groupement (en direct et en relecture), au cas où une valeur d’ID de personne ne peut pas être détectée. <br/>Les événements sans ID persistant et sans ID de personne sont supprimés des données. Pour des résultats d’assemblage optimaux, un ID persistant doit être présent sur tous les événements."
+>abstract="Cette valeur est utilisée pour l’identification pendant le processus d’assemblage (en direct et en relecture), au cas où une valeur d’ID de personne ne puisse pas être détectée. <br/>Les événements sans ID persistant et sans ID de personne sont supprimés des données. Pour des résultats d’assemblage optimaux, un ID persistant doit être présent sur tous les événements."
 
 
 >[!CONTEXTUALHELP]
