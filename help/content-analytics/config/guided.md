@@ -6,22 +6,14 @@ feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
 TQID: https://experienceleague.adobe.com/qfRVeaFTYitZOsleqfzxYsSlo5YZrTjdFqJSjIza-hg
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: add42fb00c3ce65d9c40bb023bd6bf8bdd397ee1
 workflow-type: tm+mt
 source-wordcount: 4111
-ht-degree: 46%
+ht-degree: 61%
 
 ---
 
@@ -92,7 +84,7 @@ L’assistant de configuration guidé se compose de quatre sections ([Détails](
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_connection_header"
 >title="Connexion"
->abstract="Sélectionnez une connexion existante à partir de Customer Journey Analytics avec laquelle vous souhaitez fusionner vos données Content Analytics."
+>abstract="Dans Customer Journey Analytics, sélectionnez une connexion existante avec laquelle fusionner vos données Content Analytics."
 
 Chaque configuration nécessite un nom unique. Par exemple : `Example Content Analytics configuration`. Le nom est requis pour enregistrer ou implémenter une configuration.
 
@@ -164,37 +156,37 @@ Si vous avez déjà sélectionné une connexion, mais que vous souhaitez la modi
 >[!CONTEXTUALHELP]
 >id="ac_onboarding_dataviews_button"
 >title="Vue de données"
->abstract="Pour la configuration de Content Analytics, vous devez sélectionner une ou plusieurs vues de données. Vous pouvez ainsi fusionner vos données d’analyse de contenu avec d’autres données."
+>abstract="Pour la configuration de Content Analytics, vous devez sélectionner une ou plusieurs vues de données. Vous pouvez ainsi fusionner vos données d’analyse de contenu avec d’autres données."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_header"
 >title="Vues des données"
->abstract="Sélectionnez une ou plusieurs vues de données Customer Journey Analytics avec lesquelles vous souhaitez fusionner vos données Content Analytics."
+>abstract="Dans Customer Journey Analytics, sélectionnez une ou plusieurs vues de données existantes avec lesquelles fusionner vos données Content Analytics."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_header_alt"
 >title="Vues des données"
->abstract="Sélectionnez une ou plusieurs vues de données Customer Journey Analytics avec lesquelles vous souhaitez fusionner vos données Content Analytics.<br/>"
+>abstract="Dans Customer Journey Analytics, sélectionnez une ou plusieurs vues de données existantes avec lesquelles fusionner vos données Content Analytics.<br/>"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_new_dialog"
 >title="Vues de données sélectionnées"
->abstract="Vous avez modifié les vues de données sélectionnées pour cette configuration. Les vues de données sélectionnées seront mises à jour pour inclure les mesures et dimensions Content Analytics. Ces mesures et dimensions seront supprimées des vues de données sélectionnées précédemment qui ne sont plus sélectionnées.<br/><br/>Si une autre connexion est associée aux vues de données sélectionnées, la connexion est mise à jour pour inclure les jeux de données Content Analytics. Les jeux de données de l’analyse du contenu ne sont pas supprimés de la connexion sélectionnée à l’origine.<br/><br/>Toutes les vues de données sélectionnées héritent des canaux qui font partie de cette configuration."
+>abstract="Vous avez modifié les vues de données sélectionnées pour cette configuration. Les vues de données sélectionnées seront mises à jour afin d’inclure les mesures et dimensions de Content Analytics. Ces mesures et dimensions seront supprimées des vues de données précédemment sélectionnées qui ne sont plus sélectionnées.<br/><br/>Si une autre connexion est associée aux vues de données sélectionnées, la connexion est mise à jour pour inclure les jeux de données Content Analytics. Les jeux de données de l’analyse du contenu ne sont pas supprimés de la connexion sélectionnée à l’origine.<br/><br/>Toutes les vues de données sélectionnées héritent des canaux qui font partie de cette configuration."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_change_dialog"
 >title="Vues de données sélectionnées"
->abstract="Vous avez modifié les vues de données sélectionnées pour cette configuration. Les vues de données sélectionnées seront mises à jour pour inclure les mesures et dimensions Content Analytics. Ces mesures et dimensions seront supprimées des vues de données sélectionnées précédemment qui ne sont plus sélectionnées.<br/><br/>Si une autre connexion est associée aux vues de données sélectionnées, la connexion est mise à jour pour inclure les jeux de données Content Analytics. Les jeux de données de l’analyse du contenu ne sont pas supprimés de la connexion sélectionnée à l’origine.<br/><br/>Toutes les vues de données sélectionnées héritent des canaux qui font partie de cette configuration."
+>abstract="Vous avez modifié les vues de données sélectionnées pour cette configuration. Les vues de données sélectionnées seront mises à jour afin d’inclure les mesures et dimensions de Content Analytics. Ces mesures et dimensions seront supprimées des vues de données précédemment sélectionnées qui ne sont plus sélectionnées.<br/><br/>Si une autre connexion est associée aux vues de données sélectionnées, la connexion est mise à jour pour inclure les jeux de données Content Analytics. Les jeux de données de l’analyse du contenu ne sont pas supprimés de la connexion sélectionnée à l’origine.<br/><br/>Toutes les vues de données sélectionnées héritent des canaux qui font partie de cette configuration."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_current_cleanup_labels_dialog"
 >title="Vues de données sélectionnées"
->abstract="Vous avez modifié les vues de données sélectionnées pour cette configuration. Les vues de données sélectionnées seront mises à jour pour inclure les mesures et dimensions Content Analytics. Ces mesures et dimensions seront supprimées des vues de données précédemment sélectionnées qui ne sont plus sélectionnées.<br/><br/>Si une autre connexion est associée aux vues de données sélectionnées, la connexion est mise à jour pour inclure les jeux de données Content Analytics. Les jeux de données de l’analyse du contenu ne sont pas supprimés de la connexion sélectionnée à l’origine.<br/><br/>Toutes les vues de données sélectionnées héritent des canaux qui font partie de cette configuration."
+>abstract="Vous avez modifié les vues de données sélectionnées pour cette configuration. Les vues de données sélectionnées seront mises à jour afin d’inclure les mesures et dimensions de Content Analytics. Ces mesures et dimensions seront supprimées des vues de données précédemment sélectionnées qui ne sont plus sélectionnées.<br/><br/>Si une autre connexion est associée aux vues de données sélectionnées, la connexion est mise à jour pour inclure les jeux de données Content Analytics. Les jeux de données de l’analyse du contenu ne sont pas supprimés de la connexion sélectionnée à l’origine.<br/><br/>Toutes les vues de données sélectionnées héritent des canaux qui font partie de cette configuration."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_prev_cleanup_labels_dialog"
 >title="Vues de données sélectionnées"
->abstract="Vous avez modifié les vues de données sélectionnées pour cette configuration. Les vues de données sélectionnées seront mises à jour pour inclure les mesures et dimensions Content Analytics. Ces mesures et dimensions seront supprimées des vues de données précédemment sélectionnées qui ne sont plus sélectionnées.<br/><br/>Si une autre connexion est associée aux vues de données sélectionnées, la connexion est mise à jour pour inclure les jeux de données Content Analytics. Les jeux de données de l’analyse du contenu ne sont pas supprimés de la connexion sélectionnée à l’origine.<br/><br/>Toutes les vues de données sélectionnées héritent des canaux qui font partie de cette configuration."
+>abstract="Vous avez modifié les vues de données sélectionnées pour cette configuration. Les vues de données sélectionnées seront mises à jour afin d’inclure les mesures et dimensions de Content Analytics. Ces mesures et dimensions seront supprimées des vues de données précédemment sélectionnées qui ne sont plus sélectionnées.<br/><br/>Si une autre connexion est associée aux vues de données sélectionnées, la connexion est mise à jour pour inclure les jeux de données Content Analytics. Les jeux de données de l’analyse du contenu ne sont pas supprimés de la connexion sélectionnée à l’origine.<br/><br/>Toutes les vues de données sélectionnées héritent des canaux qui font partie de cette configuration."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_channels_button"
@@ -250,27 +242,27 @@ Vous pouvez ensuite configurer le canal de manière plus détaillée. Cette conf
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_experience_locations_header"
 >title="Collecte de données d’emplacements d’expériences mobiles"
->abstract="Indiquez quels emplacements d’expérience doivent être **exclus** lors de la collecte de données pour Content Analytics. Veillez à exclure les emplacements d’expérience personnellement identifiables."
+>abstract="Indiquez les emplacements d’expériences à **exclure** lors de la collecte de données pour Content Analytics. Veillez à exclure les emplacements d’expérience personnellement identifiables."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_locations_boldheader"
 >title="Collecte de données d’emplacements de ressources mobiles"
->abstract="**Emplacements des ressources à exclure**"
+>abstract="**Emplacements de ressources à exclure**"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_locations_header"
 >title="Collecte de données d’emplacements de ressources mobiles"
->abstract="Indiquez quels emplacements de ressources doivent être **exclus** lors de la collecte de données pour Content Analytics. Veillez à exclure les emplacements de ressources personnellement identifiables."
+>abstract="Indiquez les emplacements de ressources à **exclure** lors de la collecte de données pour Content Analytics. Veillez à exclure les emplacements de ressources personnellement identifiables."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_urls_boldheader"
 >title="Collecte de données d’URL de ressources mobiles"
->abstract="**URL des ressources à exclure**"
+>abstract="**URL de ressources à exclure**"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_urls_header"
 >title="Collecte de données d’URL de ressources mobiles"
->abstract="Indiquez quelles URL de ressources doivent être **exclues** lors de la collecte de données pour Content Analytics. Veillez à exclure les URL de ressources personnellement identifiables."
+>abstract="Indiquez les URL de ressources à **exclure** lors de la collecte de données pour Content Analytics. Veillez à exclure les URL de ressources personnellement identifiables."
 
 Pour le canal mobile, vous pouvez configurer les options [capture et définition d’expérience](#experience-capture-and-definition), [collecte de données](#data-collection) et [remplacements d’en-tête](#header-overrides).
 
@@ -370,7 +362,7 @@ Pour le canal web, vous pouvez configurer [la capture et la définition d’exp�
 >id="aca_onboarding_datacollection_button"
 >title="Collecte de données"
 >abstract="Définissez la propriété de balise à utiliser ou créez-en une. Définissez également les pages et les ressources à inclure ou à exclure à l’aide d’expressions régulières.<br/>Pour une implémentation indépendante des balises, sélectionnez **[!UICONTROL Créer]**.  Une propriété Tags est créée, mais vous n’êtes pas tenu de l’utiliser."
->additional-url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/content-analytics/configuration/tags-agnostic" text="Bibliothèque JavaScript Content Analytics"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/configuration/tags-agnostic" text="Bibliothèque JavaScript Content Analytics"
 
 
 >[!CONTEXTUALHELP]
@@ -386,7 +378,7 @@ Pour le canal web, vous pouvez configurer [la capture et la définition d’exp�
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_pages_excluded_header"
 >title="Collecte de données"
->abstract="Indiquez quelles pages doivent être **incluses** ou **exclues** lors de la collecte de données pour Content Analytics. Veillez à exclure les pages personnellement identifiables."
+>abstract="Indiquez les pages à **inclure** ou **exclure** lors de la collecte de données pour Content Analytics. Veillez à exclure les pages personnellement identifiables."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_assets_excluded_boldheader"
@@ -396,7 +388,7 @@ Pour le canal web, vous pouvez configurer [la capture et la définition d’exp�
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_assets_excluded_header"
 >title="Collecte de données"
->abstract="Indiquez quelles ressources doivent être **incluses** ou **exclues** lors de la collecte de données pour Content Analytics. Veillez à exclure les ressources personnellement identifiables."
+>abstract="Indiquez les ressources à **inclure** ou **exclure** lors de la collecte de données pour Content Analytics. Veillez à exclure les ressources personnellement identifiables."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_experiences_edit_button"
@@ -424,7 +416,7 @@ Pour le canal web, vous pouvez configurer [la capture et la définition d’exp�
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_web_pages_header"
 >title="Collecte de données de pages web"
->abstract="Indiquez quelles pages doivent être **incluses** ou **exclues** lors de la collecte de données pour Content Analytics."
+>abstract="Indiquez les pages à **inclure** ou **exclure** lors de la collecte de données pour Content Analytics."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_web_assets_boldheader"
@@ -434,7 +426,7 @@ Pour le canal web, vous pouvez configurer [la capture et la définition d’exp�
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_web_assets_header"
 >title="Collecte de données de ressources web"
->abstract="Indiquez quelles ressources doivent être **incluses** ou **exclues** lors de la collecte de données pour Content Analytics. Veillez à exclure les ressources personnellement identifiables."
+>abstract="Indiquez les ressources à **inclure** ou **exclure** lors de la collecte de données pour Content Analytics. Veillez à exclure les ressources personnellement identifiables."
 
 
 ##### Capture et définition de l’expérience {#web-experience-capture-and-definition}
@@ -507,7 +499,7 @@ Pour configurer la collecte de données :
       1. Spécifiez un **[!UICONTROL Nom de balise]**, par exemple `ACA Test for Documentation`.
       1. Spécifiez des **[!UICONTROL Domaines]**, par exemple `example.com`.
 
-     Utilisez une nouvelle propriété Tags si vous souhaitez créer une implémentation indépendante des balises pour le canal web à l’aide de la bibliothèque JavaScript Content Analytics [&#128279;](/help/content-analytics/config/tags-agnostic.md). La propriété Tags est créée, mais vous n’utiliserez pas la propriété dans l’implémentation agnostique. Toutefois, l’implémentation agnostique nécessite que vous ayez exécuté l’assistant de configuration guidée au moins une fois.
+     Utilisez une nouvelle propriété Tags si vous souhaitez créer une implémentation indépendante des balises pour le canal web à l’aide de la bibliothèque JavaScript Content Analytics [](/help/content-analytics/config/tags-agnostic.md). La propriété Tags est créée, mais vous n’utiliserez pas la propriété dans l’implémentation agnostique. Toutefois, l’implémentation agnostique nécessite que vous ayez exécuté l’assistant de configuration guidée au moins une fois.
 
 * Indiquez les pages à inclure ou exclure lors de la collecte de données pour Content Analytics. Veillez à exclure les pages personnellement identifiables.
 
@@ -523,12 +515,12 @@ Pour configurer la collecte de données :
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_header_overrides_boldheader"
 >title="Remplacements d’en-têtes"
->abstract="**Remplacements d’en-tête**"
+>abstract="**Remplacements d’en-têtes**"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_header_overrides_header"
 >title="Remplacements d’en-têtes"
->abstract="Fonctionnalité avancée permettant de contourner la détection des robots ou le trafic de point de contrôle. Content Analytics inclut vos en-têtes HTTP personnalisés lors de l’appel de vos points d’entrée."
+>abstract="Fonctionnalité avancée permettant de contourner la détection des robots ou de filtrer le trafic. Content Analytics inclut vos en-têtes HTTP personnalisés lors de l’appel de vos points d’entrée."
 
 <!-- needs modification for mobile channel -->
 
