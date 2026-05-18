@@ -18,10 +18,10 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 8fc9bde3d0b9eebfcc8185aff78ce0f7f2e7704f
+source-git-commit: add42fb00c3ce65d9c40bb023bd6bf8bdd397ee1
 workflow-type: tm+mt
-source-wordcount: 4074
-ht-degree: 47%
+source-wordcount: 4111
+ht-degree: 46%
 
 ---
 
@@ -369,7 +369,9 @@ Pour le canal web, vous pouvez configurer [la capture et la définition d’exp�
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_button"
 >title="Collecte de données"
->abstract="Définissez la propriété de balise à utiliser ou créez-en une. Définissez également les pages et les ressources à inclure ou à exclure à l’aide d’expressions régulières."
+>abstract="Définissez la propriété de balise à utiliser ou créez-en une. Définissez également les pages et les ressources à inclure ou à exclure à l’aide d’expressions régulières.<br/>Pour une implémentation indépendante des balises, sélectionnez **[!UICONTROL Créer]**.  Une propriété Tags est créée, mais vous n’êtes pas tenu de l’utiliser."
+>additional-url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/content-analytics/configuration/tags-agnostic" text="Bibliothèque JavaScript Content Analytics"
+
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_tag_header"
