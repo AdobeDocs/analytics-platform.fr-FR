@@ -5,10 +5,26 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 647f192a-e317-4011-92bc-a8bb8494a3c7
 solution: Customer Journey Analytics
-source-git-commit: d8286e34edba128113ba99602ba24eea67c5dea8
+TQID: https://experienceleague.adobe.com/78Bp5YSZg7Qs-qBnCfIoS6mjxda7CAglDG19Qq07Fw4
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: b743a5d9-dc51-41ed-8b2f-86a1f8de430f
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: b21c7889-c659-4a99-a779-de1bae57e47e
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 14557a59902110b1768d61e621adfb3f76ee9930
 workflow-type: tm+mt
-source-wordcount: '711'
-ht-degree: 69%
+source-wordcount: 720
+ht-degree: 65%
 
 ---
 
@@ -18,7 +34,7 @@ Dans certains cas, les utilisateurs en charge de l’exécution peuvent avoir be
 
 ## Vérifiez que les utilisateurs de l’application ont accès à Adobe Analytics
 
-1. Configurez de nouveaux utilisateurs dans [Admin Console dʼExperience Cloud](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html?lang=fr).
+1. Configurez de nouveaux utilisateurs dans l’[CX Enterprise Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html?lang=fr).
 
 1. Pour pouvoir partager des cartes de performance, vous devez accorder aux utilisateurs de l’application les autorisations d’accès aux composants de la carte de performance tels qu’Analysis Workspace, aux vues de données sur lesquelles les cartes de performance sont basées, ainsi qu’aux segments, mesures et dimensions.
 
@@ -59,7 +75,7 @@ Une fois téléchargés et installés, les utilisateurs en charge de l’exécut
 
    Lʼécran **[!UICONTROL Choisir une société]** sʼaffiche. Cet écran répertorie les entreprises connectées auxquelles l’utilisateur en charge de l’exécution appartient.
 
-1. Invitez-les ensuite à appuyer sur le nom de la société de connexion ou de lʼorganisation Experience Cloud auquel la carte de performance que vous avez créée sʼapplique.
+1. Demandez-leur d’appuyer sur le nom de la société de connexion ou de l’organisation CX Enterprise qui s’applique à la carte de performance que vous avez partagée.
 
    La liste des Cartes de performance affiche alors toutes les cartes de performance partagées avec la personne en charge de lʼexécution pour cette société de connexion.
 

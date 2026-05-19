@@ -3,10 +3,19 @@ title: Domaines utilisés par Customer Journey Analytics
 description: Si le pare-feu de votre entreprise bloque les adresses IP qui proviennent d’Adobe, utilisez cette liste pour mettre à jour les paramètres du pare-feu.
 role: Admin
 exl-id: 0c3e7b2e-cb48-4e14-ae18-65258ebce1b4
-source-git-commit: 8ffbca5dd83987a90d7b744d236e0556314000dd
+TQID: https://experienceleague.adobe.com/d-nNfumskelDKrgCPQpyoZIagJrGcniXyQgACaHh5tA
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 0145475e18cfbc3ae3a83e5e3838cdec02b57bda
 workflow-type: tm+mt
-source-wordcount: '152'
-ht-degree: 20%
+source-wordcount: 163
+ht-degree: 16%
 
 ---
 
@@ -21,17 +30,17 @@ Certaines configurations de pare-feu bloquent les domaines sur lesquels Customer
 | Amazon CloudFront | `d30ln29764hddd.cloudfront.net` |
 | Gainsight | `esp.aptrinsic.com`, `esp-m.aptrinsic.com` |
 | LaunchDarkly | `app.launchdarkly.com` |
-| Stockage Azure Blob Microsoft® | `awaascicdprodva7.blob.core.windows.net` |
-| Réseau CDN Azure Microsoft® | `aauicdnva7.azureedge.net` |
+| ® Stockage d’objets blob Azure | `awaascicdprodva7.blob.core.windows.net` |
+| ® réseau CDN Azure | `aauicdnva7.azureedge.net` |
 
 {style="table-layout:auto"}
 
-## Domaines Adobe Experience Cloud
+## Domaines d’entreprise CX
 
-En plus des domaines ci-dessus, le Adobe Experience Cloud s’appuie sur plusieurs domaines pour la collecte de données et l’exportation de rapports. Voir [Domaines utilisés par le Adobe Experience Cloud](https://experienceleague.adobe.com/fr/docs/core-services/interface/data-collection/domains) pour cette liste de domaines.
+Outre les domaines ci-dessus, CX Enterprise s’appuie sur plusieurs domaines pour la collecte de données et l’exportation de rapports. Voir [Domaines utilisés par CX Enterprise](https://experienceleague.adobe.com/fr/docs/core-services/interface/data-collection/domains) pour cette liste de domaines.
 
 >[!MORELIKETHIS]
 >
 >[Adresses IP utilisées par Customer Journey Analytics](ip-addresses.md)
 >
->[Domaines utilisés par le Adobe Experience Cloud](https://experienceleague.adobe.com/fr/docs/core-services/interface/data-collection/domains)
+>[Domaines utilisés par CX Enterprise](https://experienceleague.adobe.com/fr/docs/core-services/interface/data-collection/domains)
