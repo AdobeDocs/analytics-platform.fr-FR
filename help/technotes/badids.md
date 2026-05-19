@@ -4,13 +4,20 @@ description: Comprendre les BAVID (Bad ID) dans Customer Journey Analytics Déco
 solution: Customer Journey Analytics
 feature: Basics
 role: Admin
-source-git-commit: b7b2a1f3eb1c149caf65ab3e4321e4f4347695cc
+exl-id: 4f71fbf2-290b-4076-b2ad-b086c2b854d9
+autotag-review: '2026-05-19T06:53:00.572Z'
+TQID: 'https://experienceleague.adobe.com/6vut30l-BSIxhTK96Tt3BG01q-rjHagcmer0WZ2GL-c'
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2: id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 0%
+source-wordcount: 632
+ht-degree: 2%
 
 ---
-
 
 # ID incorrects
 
@@ -47,7 +54,7 @@ L’interface de connexion de Customer Journey Analytics offre des informations 
 * Vous pouvez voir **[!UICONTROL Mauvais ID]** (ou **[!UICONTROL BAVID]**) comme raisons possibles pour ignorer des enregistrements dans la boîte de dialogue **[!UICONTROL Vérifier les détails ignorés]**. Utilisez **[!UICONTROL Vérifier les détails]** (le cas échéant) ci-dessous **[!UICONTROL Enregistrements ignorés]** dans l’écran [détails d’une connexion](/help/connections/create-connection.md).
 * Pour un jeu de données activé pour le groupement, l’[**[!UICONTROL Aperçu du jeu de données]**](/help/stitching/use-stitching-ui.md#bad-ids) affiche **[!UICONTROL ID incorrects]** dans le cadre des **[!UICONTROL mesures de groupement]**. Cette mesure peut vous aider à identifier les cas possibles de Mauvais ID. Toutefois, sachez que cette mesure est calculée sur la base d’un ensemble limité de données.
 
-Reportez-vous à la section [&#x200B; Exposition des ID incorrects &#x200B;](#bad-ids-exposure) pour vous aider à identifier la présence d’ID incorrects pour un jeu de données que vous prévoyez d’utiliser dans une connexion (que le groupement soit activé ou non).
+Reportez-vous à la section [ Exposition des ID incorrects ](#bad-ids-exposure) pour vous aider à identifier la présence d’ID incorrects pour un jeu de données que vous prévoyez d’utiliser dans une connexion (que le groupement soit activé ou non).
 
 
 ## Exposition

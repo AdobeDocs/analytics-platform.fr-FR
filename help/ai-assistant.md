@@ -5,13 +5,19 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 7a4f15c4-7fd6-4a6a-9b83-7c1f3b95be16
-source-git-commit: 82b36895fe5186f0133c128d434470ea7f875677
+autotag-review: '2026-05-19T07:16:56.858Z'
+TQID: 'https://experienceleague.adobe.com/v5QCNZReBnq8uFMSUSJz1VBbzm2J8ztbr8mciozSY0E'
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: ae3aff40-b2f6-4df1-8c01-0b0720d1510fid: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b4489fa2-c6d6-4934-a3a0-e7b4e196f986
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: d00e9f03-e50b-4162-b143-0c0817c937c2id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: 660
 ht-degree: 100%
 
 ---
-
 
 # Assistant IA pour Adobe Customer Journey Analytics
 
@@ -41,7 +47,7 @@ L’Assistant IA pour Customer Journey Analytics est disponible pour tous les ni
 
 ## Analyse des données
 
-L’agent Data Insights, accessible à partir de l’Assistant d’IA dans Customer Journey Analytics, est un agent de conversation d’IA générative qui répond rapidement et efficacement aux questions sur vos données. Il crée des visualisations pertinentes dans Analysis Workspace en utilisant les composants de votre vue de données et vos données réelles.
+L’agent Data Insights, accessible à partir de l’assistant IA dans Customer Journey Analytics, est un agent de conversation d’IA générative qui répond rapidement et efficacement aux questions sur vos données. Il crée des visualisations pertinentes dans Analysis Workspace en utilisant les composants de votre vue de données et vos données réelles.
 
 Pour plus d’informations sur l’utilisation de l’agent Data Insights dans l’Assistant IA, voir la section [Visualiser les données avec l’agent Data Insights](/help/data-analysis-ai.md).
 

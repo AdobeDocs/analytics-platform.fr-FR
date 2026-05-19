@@ -4,9 +4,16 @@ description: Incluez les données générées par la gestion des décisions Adob
 exl-id: fde45264-46cf-4c68-9872-7fb739748f21
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+autotag-review: '2026-05-19T07:19:20.352Z'
+TQID: 'https://experienceleague.adobe.com/n3xsScsv43IG-tOQhgNjeqB2UmWzbIVw7sv5CcpZPd0'
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+subfeature_v2: id: df066828-d385-4da6-af58-80137fb27d7b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: d00e9f03-e50b-4162-b143-0c0817c937c2id: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: 753
 ht-degree: 100%
 
 ---
@@ -16,13 +23,13 @@ ht-degree: 100%
 
 La [gestion des décisions](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html?lang=fr) Adobe Journey Optimizer facilite la personnalisation avec une bibliothèque centrale d’offres marketing et un moteur de décision qui applique des règles et des contraintes aux profils en temps réel riches créés par Adobe Experience Platform afin de vous aider à envoyer à vos clientes et clients la bonne offre au bon moment.
 
-La gestion des décisions fait partie d’Adobe Journey Optimizer et est intégrée à celui-ci. Elle peut également être utilisée indépendamment des campagnes et parcours définis dans Adobe Journey Optimizer, en utilisant la prise en charge de l’[API](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/api-reference/getting-started.html?lang=fr) riche.
+La gestion des décisions fait partie d’Adobe Journey Optimizer et est intégrée à celui-ci. Elle peut également être utilisée indépendamment des campagnes et parcours définis dans Adobe Journey Optimizer, en utilisant la prise en charge de l’[API](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/api-reference/getting-started.html) riche.
 
 Vous pouvez importer les données générées par la gestion des décisions afin d’effectuer une analyse avancée dans Customer Journey Analytics en procédant comme suit :
 
 ## Envoyer des données de la gestion des décisions vers Adobe Experience Platform
 
-Adobe Experience Platform sert de source de données centrale et de lien entre la gestion des décisions et Customer Journey Analytics. Les données de la gestion des décisions sont collectées dans Experience Platform **automatiquement** ou dans le cadre d’**événements d’expérience envoyés explicitement** (par exemple, impressions ou clics). Pour plus d’informations, voir [Prise en main avec les collectes de données](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/collect-event-data/data-collection.html?lang=fr).
+Adobe Experience Platform sert de source de données centrale et de lien entre la gestion des décisions et Customer Journey Analytics. Les données de la gestion des décisions sont collectées dans Experience Platform **automatiquement** ou dans le cadre d’**événements d’expérience envoyés explicitement** (par exemple, impressions ou clics). Pour plus d’informations, voir [Prise en main avec les collectes de données](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/collect-event-data/data-collection.html).
 
 ## Créer une connexion
 
@@ -54,12 +61,12 @@ Vous pouvez créer les dimensions suivantes dans une vue de données pour obteni
 
 | Dimension | Élément de schéma | Paramètres de composant |
 | --- | --- | --- |
-| Nom de l’activité | `_experience.decisioning.`<br/>`propositionDetails.activity.name` | Type de composant : dimension |
-| Identifiant de conteneur | `_experience.decisioning.containerID` | Type de composant : dimension |
-| Identifiant de corrélation | `_experience.decisioning.`<br/>`propositions.scopeDetails.correlationID` | Type de composant : dimension |
-| Nom de l’option de décision | `_experience.decisioning.`<br/>`propositionDetails.selections.name` | Type de composant : dimension |
-| Nom de l’option de décision de secours | `_experience.decisioning.`<br/>`propositionDetails.fallback.name` | Type de composant : dimension |
-| Nom de l’emplacement | `_experience.decisioning.`<br/>`propositionDetails.placement.name` | Type de composant : dimension |
+| Nom de l’activité | `_experience.decisioning.`<br/>`propositionDetails.activity.name` | Type de composant : Dimension |
+| Identifiant de conteneur | `_experience.decisioning.containerID` | Type de composant : Dimension |
+| Identifiant de corrélation | `_experience.decisioning.`<br/>`propositions.scopeDetails.correlationID` | Type de composant : Dimension |
+| Nom de l’option de décision | `_experience.decisioning.`<br/>`propositionDetails.selections.name` | Type de composant : Dimension |
+| Nom de l’option de décision de secours | `_experience.decisioning.`<br/>`propositionDetails.fallback.name` | Type de composant : Dimension |
+| Nom de l’emplacement | `_experience.decisioning.`<br/>`propositionDetails.placement.name` | Type de composant : Dimension |
 
 {style="table-layout:auto"}
 

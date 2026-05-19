@@ -4,9 +4,16 @@ title: Puces
 feature: Visualizations
 exl-id: b560389a-1149-4e16-b45a-0c6a1f7d0e1f
 role: User
-source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
+autotag-review: '2026-05-19T08:01:11.240Z'
+TQID: 'https://experienceleague.adobe.com/G3lsqQvpMi7qfHIF0n5bymHloch0SaHuqwpl-3T04Fs'
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2: id: ddf59f64-0e46-4986-a525-056acc143c70
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: 297
 ht-degree: 82%
 
 ---
@@ -33,7 +40,7 @@ ht-degree: 82%
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente la visualisation par puces dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Voir [Puces](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph) pour la version_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** de cet article._
+_Cet article présente la visualisation par puces dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Voir [Puces](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph) pour la version_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 
@@ -45,7 +52,7 @@ Le graphique à puces présente une mesure principale unique (par exemple, le ch
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisation sous forme de graphiques à puces](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-bullet-graph-visualizations){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisation sous forme de graphiques à puces](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-bullet-graph-visualizations){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 
@@ -56,7 +63,7 @@ Vous pouvez définir des paramètres spécifiques pour une visualisation [!UICON
 
 | Paramètre | Description |
 |---|---|
-| **[!UICONTROL Options de puces]** | Spécifiez des valeurs pour **[!UICONTROL Objectif élevé]**, **[!UICONTROL Objectif intermédiaire]** et **[!UICONTROL Objectif faible]** dans la visualisation [!UICONTROL Puces]. L’<br/>**[!UICONTROL objectif élevé&#x200B;]**&#x200B;est votre objectif principal. L’**[!UICONTROL &#x200B; objectif faible &#x200B;]**&#x200B;et l’**[!UICONTROL &#x200B; objectif moyen &#x200B;]**&#x200B;créent des plages sous l’objectif élevé. Remarque : si vous cochez l’option&#x200B;**[!UICONTROL &#x200B; Pourcentages &#x200B;]**, saisissez les objectifs sous forme de nombres entiers. Par exemple `20` si votre objectif est de vingt pour cent. |
+| **[!UICONTROL Options de puces]** | Spécifiez des valeurs pour **[!UICONTROL Objectif élevé]**, **[!UICONTROL Objectif intermédiaire]** et **[!UICONTROL Objectif faible]** dans la visualisation [!UICONTROL Puces]. L’<br/>**[!UICONTROL objectif élevé&#x200B;]**est votre objectif principal. L’**[!UICONTROL  objectif faible ]**et l’**[!UICONTROL  objectif moyen ]**créent des plages sous l’objectif élevé. Remarque : si vous cochez l’option**[!UICONTROL  Pourcentages ]**, saisissez les objectifs sous forme de nombres entiers. Par exemple `20` si votre objectif est de vingt pour cent. |
 
 >[!MORELIKETHIS]
 >

@@ -4,9 +4,16 @@ title: Combo
 feature: Visualizations
 exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
 role: User
-source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
+autotag-review: '2026-05-19T08:32:13.517Z'
+TQID: 'https://experienceleague.adobe.com/xXpUD-E71BVVe0WOQ-tbLILq1c5kRN-Jy2xHufxBfBk'
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2: id: ddf59f64-0e46-4986-a525-056acc143c70
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: 617
 ht-degree: 92%
 
 ---
@@ -25,9 +32,9 @@ ht-degree: 92%
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente la visualisation Combo dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._
+_Cet article présente la visualisation Combo dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._
 
-_Consultez [Combo](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/combo-charts) pour la_ version ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** de cet article._
+_Consultez [Combo](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/combo-charts) pour la_ version ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 
@@ -68,7 +75,7 @@ Gardez les éléments suivants à l’esprit :
 
    La sortie ressemble à ce qui suit :
 
-   ![Graphique combo affichant la période en cours dans un graphique en barres et la période de comparaison dans le graphique en courbes &#x200B;](assets/combo-output.png)
+   ![Graphique combo affichant la période en cours dans un graphique en barres et la période de comparaison dans le graphique en courbes ](assets/combo-output.png)
 
    La période en cours s’affiche dans le graphique en barres. Le graphique en courbes représente la période de comparaison. Les points sur le graphique en courbes sont appelés *haltères*.
 

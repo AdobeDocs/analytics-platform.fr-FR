@@ -4,10 +4,17 @@ description: Découvrez comment configurer votre implémentation afin d’envoye
 exl-id: 58854f4b-ae28-424e-a2cf-0e76219cb802
 feature: Use Cases
 role: Admin
-source-git-commit: 8262539078c57e32bc3195ef669325fa4889bea0
+autotag-review: '2026-05-19T09:49:39.181Z'
+TQID: 'https://experienceleague.adobe.com/xav7bGdbGLjYXm70GJBSxnDMfNDZpYp5qij1IqkaZSY'
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+subfeature_v2: id: e1bd5a34-b16e-477b-84cc-247fa0793f4b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d00e9f03-e50b-4162-b143-0c0817c937c2id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '226'
-ht-degree: 89%
+source-wordcount: 259
+ht-degree: 90%
 
 ---
 
@@ -17,8 +24,8 @@ Cette page se concentre sur la manière d’ingérer vos données dynamiques Goo
 
 La configuration de la collecte de données implique les étapes suivantes :
 
-1. Implémentez les [Balises pour Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr). Voir [Guide de démarrage rapide](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html?lang=fr) pour qu’une implémentation de base soit opérationnelle.
-1. Installez l‘[Extension de la couche de données Google](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/google-data-layer/overview.html?lang=fr). Cette extension sert d’alternative à l’installation de l’extension du SDK Web, orientée spécifiquement vers une couche de données Google.
-1. [Créez un flux de données](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=fr) dans la collecte de données Adobe Experience Platform. Configurez le flux de données pour envoyer des données à Adobe Experience Platform. Vous devez actuellement mapper chaque objet de la couche de données Google à un champ XDM applicable ici. Adobe prévoit de simplifier ce workflow de mappage à l’avenir.
+1. Implémentez les [Balises pour Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr). Voir [Guide de démarrage rapide](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html) pour qu’une implémentation de base soit opérationnelle.
+1. Installez l‘[Extension de la couche de données Google](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/google-data-layer/overview.html). Cette extension sert d’alternative à l’installation de l’extension du SDK Web, orientée spécifiquement vers une couche de données Google.
+1. [Créez un flux de données](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) dans la collecte de données Adobe Experience Platform. Configurez le flux de données pour envoyer des données à Adobe Experience Platform. Vous devez actuellement mapper chaque objet de la couche de données Google à un champ XDM applicable ici. Adobe prévoit de simplifier ce workflow de mappage à l’avenir.
 
 Une fois que vous avez implémenté et publié les balises souhaitées sur votre site, vous pouvez passer à [créer une connexion](/help/connections/create-connection.md), puis [créer une vue de données](/help/data-views/create-dataview.md).

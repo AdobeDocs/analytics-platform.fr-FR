@@ -5,9 +5,16 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: User
 exl-id: 55666295-6161-4fbc-b326-231cb5780d4f
-source-git-commit: a0251638e66d5a2524418fc17f56dddc4e48accd
+autotag-review: '2026-05-19T09:45:14.371Z'
+TQID: 'https://experienceleague.adobe.com/afndJsKLHQSCIa9cdTcVUoBRGrU2wBRUYZ4QijVOiE0'
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: f24857a4-4b64-4b25-b237-d43026362144
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '784'
+source-wordcount: 788
 ht-degree: 1%
 
 ---
@@ -212,8 +219,8 @@ GROUP BY 1
 1. Dans la section **[!UICONTROL ‣ Cr Vue des données]** rail de gauche :
    1. Sélectionnez **[!UICONTROL Nom du produit]**.
    1. Sélectionnez **[!UICONTROL Nombre]** sous **[!UICONTROL MESURES]** dans le rail de gauche (en bas).
-1. Veillez à sélectionner ↓**[!UICONTROL (]** Décroissant, Ordre de tri : 1 **[!UICONTROL ) dans la colonne]** Chiffre d’affaires d’achat **[!UICONTROL .]**
-1. Veillez à sélectionner ↓**[!UICONTROL (]** Décroissant, Ordre de tri : 1 **[!UICONTROL ) dans la colonne]** Chiffre d’affaires d’achat **[!UICONTROL .]**
+1. Veillez à sélectionner ↓]**(**[!UICONTROL  Décroissant, Ordre de tri : 1 ]**) dans la colonne**[!UICONTROL  Chiffre d’affaires d’achat ]**.**[!UICONTROL 
+1. Veillez à sélectionner ↓]**(**[!UICONTROL  Décroissant, Ordre de tri : 1 ]**) dans la colonne**[!UICONTROL  Chiffre d’affaires d’achat ]**.**[!UICONTROL 
 1. Sélectionnez **[!UICONTROL Exécuter]**.
 1. Sélectionnez **[!UICONTROL ‣ Visualisation]**.
 

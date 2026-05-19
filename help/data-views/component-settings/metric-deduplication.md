@@ -5,9 +5,16 @@ exl-id: ced0c637-5cbe-47a4-897a-eb79961986a3
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
+autotag-review: '2026-05-19T09:10:57.728Z'
+TQID: 'https://experienceleague.adobe.com/bCgBjD9r0cQ3O73fEip-EQHItMHQSX-2AECydDxR9Ms'
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: e1471301-a189-438e-8d48-264a8db508a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: 342
 ht-degree: 79%
 
 ---
@@ -31,7 +38,7 @@ La déduplication de la mesure vous permet de configurer une mesure pour ne comp
 | Paramètre | Description |
 | --- | --- |
 | [!UICONTROL Déduplication des mesures] | Case à cocher vous permettant dʼactiver la déduplication de la mesure. Option désactivée par défaut. |
-| [!UICONTROL Portée de la déduplication] | Permet de déterminer la période sur laquelle porte le contrôle unique.<br/>**[!UICONTROL Compte global &#x200B;]**: seule la première occurrence de la mesure dans la fenêtre du compte rendu des performances est comptabilisée.<br/>**[!UICONTROL Compte]** : seule la première occurrence de la mesure dans la fenêtre du compte rendu des performances est comptabilisée.<br/>**[!UICONTROL Opportunité&#x200B;]**: seule la première occurrence de la mesure dans la fenêtre du compte rendu des performances est comptabilisée.<br/>**[!UICONTROL Groupe d’achats]** : seule la première occurrence de la mesure dans la fenêtre du compte rendu des performances est comptabilisée.<br/>**[!UICONTROL Personne &#x200B;]**: seule la première occurrence de la mesure dans la fenêtre du compte rendu des performances est comptabilisée.<br>**[!UICONTROL Session]** : seule la première occurrence de la mesure de la session est comptabilisée.<br> |
+| [!UICONTROL Portée de la déduplication] | Permet de déterminer la période sur laquelle porte le contrôle unique.<br/>**[!UICONTROL Compte global ]**: seule la première occurrence de la mesure dans la fenêtre du compte rendu des performances est comptabilisée.<br/>**[!UICONTROL Compte]** : seule la première occurrence de la mesure dans la fenêtre du compte rendu des performances est comptabilisée.<br/>**[!UICONTROL Opportunité&#x200B;]**: seule la première occurrence de la mesure dans la fenêtre du compte rendu des performances est comptabilisée.<br/>**[!UICONTROL Groupe d’achats]** : seule la première occurrence de la mesure dans la fenêtre du compte rendu des performances est comptabilisée.<br/>**[!UICONTROL Personne ]**: seule la première occurrence de la mesure dans la fenêtre du compte rendu des performances est comptabilisée.<br>**[!UICONTROL Session]** : seule la première occurrence de la mesure de la session est comptabilisée.<br> |
 | [!UICONTROL ID de la déduplication] | Permet dʼappliquer la déduplication de la mesure en fonction dʼune dimension, et non de la mesure elle-même. Utile pour appliquer la déduplication à des dimensions telles que lʼID dʼachat. |
 | [!UICONTROL Valeur à conserver] | <ul><li>**Conserver la première instance** : utilisez cette option lorsque l’instance initiale de la mesure est valide. La plus courante serait probablement une confirmation d’achat. Même si quelqu’un recharge par inadvertance la page et que nous obtenons une autre instance d’une confirmation d’achat, l’événement initial reste valide.</li><li>**Conserver la dernière instance** : utilisez cette option dans les cas où la dernière instance est plus logique à collecter. Exemple : quelqu’un met à jour son profil en ligne. Nous ne voulons compter qu’une seule de ces mises à jour par session. Cependant, cette personne peut mettre à jour son profil plusieurs fois au cours de la session. Si nous conservons la première instance, il peut y avoir des activités qui ne sont pas liées à l’événement. En ce cas, il est plus logique de conserver la dernière instance.</li></ul> |
 

@@ -4,16 +4,23 @@ title: Résolution des problèmes liés à la zone de travail de parcours
 feature: Visualizations
 role: User
 exl-id: f0ac3752-9244-4d9e-807b-e6471e6aa55b
-source-git-commit: 73238f03021b14567c20c686ab72d84afbaa9f81
+autotag-review: '2026-05-19T08:43:53.628Z'
+TQID: 'https://experienceleague.adobe.com/E0LdSu06SM3c1ZBnOcIz352mqIkTN7dXfH9qC1BM-4g'
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2: id: ddf59f64-0e46-4986-a525-056acc143c70
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: d00e9f03-e50b-4162-b143-0c0817c937c2id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '1303'
+source-wordcount: 1303
 ht-degree: 93%
 
 ---
 
 # Résolution des problèmes liés à la zone de travail de parcours
 
-La visualisation de la zone de travail de parcours vous permet d’analyser les parcours de vos utilisateurs, de vos utilisatrices et de votre clientèle, ou encore d’obtenir des informations détaillées à leur sujet.
+La visualisation Zone de travail de parcours vous permet d’analyser les parcours que vous fournissez à vos utilisateurs et utilisatrices et à votre clientèle, et d’obtenir des informations détaillées à leur sujet.
 
 Pour en savoir plus sur la zone de travail de parcours, consultez [Vue d’ensemble de la zone de travail de parcours](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) et [Configurer une visualisation de la zone de travail de parcours](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
 
@@ -51,7 +58,7 @@ Supposons maintenant que la personne A revisite le site lors d’une session ul
 
 Dans cet exemple, le paramètre de conteneur du parcours « Personne » joue un rôle essentiel pour déterminer si l’événement sur le troisième nœud (« payer ») est comptabilisé lors de la session suivante.
 
-Si le paramètre du conteneur avait été défini sur « Session », l’événement qui s’était produit uniquement sur le troisième nœud lors de la visite suivante n’aurait pas été comptabilisé dans le parcours, car les statistiques affichées dans le parcours seraient limitées à une seule session définie pour une personne donnée. Pour en savoir plus sur le paramètre de conteneur, consultez [Commencer à créer une visualisation de zone de travail de Parcours &#x200B;](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#begin-building-a-journey-canvas-visualization) dans l’article [Configurer une visualisation de zone de travail de Parcours &#x200B;](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
+Si le paramètre du conteneur avait été défini sur « Session », l’événement qui s’était produit uniquement sur le troisième nœud lors de la visite suivante n’aurait pas été comptabilisé dans le parcours, car les statistiques affichées dans le parcours seraient limitées à une seule session définie pour une personne donnée. Pour en savoir plus sur le paramètre de conteneur, consultez [Commencer à créer une visualisation de zone de travail de Parcours ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#begin-building-a-journey-canvas-visualization) dans l’article [Configurer une visualisation de zone de travail de Parcours ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
 
 <!-- The time allotted for users to move along the path is determined by the container setting. Because "Person" is selected as the container setting in this example, people who followed the journey's path in one session (moving from Node 1 to Node 2 and to Node 3) met the criteria of the journey. On any subsequent visits to the site, any event they have that matches any node on the journey is counted on that node. -->
 

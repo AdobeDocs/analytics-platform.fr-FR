@@ -5,10 +5,17 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 50b82943d4c59f612240ffc8d83a8a08f09b8331
+autotag-review: '2026-05-19T06:30:45.150Z'
+TQID: 'https://experienceleague.adobe.com/Qyb6t5w-DTcecgqvhUE6NplDrlPmW2lzhk0RWbf7g-g'
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b743a5d9-dc51-41ed-8b2f-86a1f8de430fid: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d00e9f03-e50b-4162-b143-0c0817c937c2id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '1456'
-ht-degree: 98%
+source-wordcount: 1539
+ht-degree: 94%
 
 ---
 
@@ -24,7 +31,7 @@ Toute la partie concernant les rapports n’a pas vraiment changé.
 
 * Vous pouvez utiliser [Analysis Workspace](/help/analysis-workspace/home.md) pour analyser vos données. Workspace a le même mode de fonctionnement que sur la version standard d’Adobe Analytics.
 * La même version des [tableaux de bord Adobe Analytics](/help/mobile-app/home.md) est disponible et fonctionne de la même manière, que ce soit avec Customer Journey Analytics ou Adobe Analytics.
-* [Report Builder](/help/report-builder/rb-overview.md) a une nouvelle interface et fonctionne sur MS Windows, macOS et la version web d’Excel. (Avant cette version de Report Builder, vous ne pouviez pas l’utiliser sur Mac à moins de l’exécuter sur VMware.) Cette version ne prend pas encore en charge les demandes de données AA traditionnelles.
+* [Report Builder](/help/report-builder/rb-overview.md) a une nouvelle interface et fonctionne sur MS Windows, macOS et la version web d’Excel. (Avant cette version de Report Builder, vous ne pouviez pas l’utiliser dans sur Mac à moins de l’exécuter sur VMware.) Cette version ne prend pas encore en charge les demandes de données AA traditionnelles.
 
 ## Modification des rapports
 
@@ -69,7 +76,7 @@ Consultez [Cas dʼutilisation des vues de données](/help/use-cases/data-views/d
 
 ## Modification du concept des eVars et des props
 
-Le concept des [!UICONTROL eVars], des [!UICONTROL props] et des [!UICONTROL événements] dans la version standard d’Adobe Analytics n’existe plus dans [!UICONTROL Customer Journey Analytics]. Dans Adobe Analytics, les eVars et les props stockent les descriptions du contenu, des clients, des campagnes, etc. et les événements comptabilisent des éléments tels que les revenus, les abonnements ou les prospects générés. Customer Journey Analytics conserve les deux types de données, et vous pouvez y accéder de la même manière : à partir du rail de gauche dans Analysis Workspace, sous Dimensions ou Métriques.
+Le concept des [!UICONTROL eVars], des [!UICONTROL props] et des [!UICONTROL événements] dans la version standard d’Adobe Analytics n’existe plus dans [!UICONTROL Customer Journey Analytics]. Dans Adobe Analytics, les eVars et les props stockent les descriptions du contenu, des clients, des campagnes, etc. Les événements comptabilisent des éléments tels que les revenus, les abonnements ou les prospects générés. Customer Journey Analytics conserve les deux types de données, et vous pouvez y accéder de la même manière : à partir du rail de gauche dans Analysis Workspace, sous Dimensions ou Métriques.
 
 Un nombre illimité d’éléments de schéma est disponible dans Customer Journey Analytics, dont les dimensions, les métriques et les champs de liste. Ils sont mappés à un nombre illimité d’éléments de schéma, dont les dimensions, les métriques et les champs de liste au sein d’Experience Platform. Tous les paramètres de visite et d’attribution appliqués après le traitement des règles dans Adobe Analytics s’appliquent désormais au moment de la requête dans Customer Journey Analytics.
 
@@ -121,7 +128,7 @@ Customer Journey Analytics étend le concept d’identité au-delà des ECID pou
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Utilisation d’une identité dans Customer Journey Analytics](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/visitor-id/understanding-how-customer-journey-analytics-uses-identity){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Utilisation d’une identité dans Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/visitor-id/understanding-how-customer-journey-analytics-uses-identity){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 

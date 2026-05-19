@@ -5,17 +5,14 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: e5cb55e7-aed0-4598-a727-72e6488f5aa8
-TQID: https://experienceleague.adobe.com/xqNEj5V-fQTo-8j5S9Ad-5ZezRjjr8kdt2Xmx0U8xDI
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
+autotag-review: '2026-05-19T09:20:59.053Z'
+TQID: 'https://experienceleague.adobe.com/V2OisDuYtD0SxUo8OlCEMKJ5wYEWS7nfxOp2IOMQWJQ'
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: faea9abd-7024-4c5e-a5b4-87919e09b24b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: d00e9f03-e50b-4162-b143-0c0817c937c2id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 1902
 ht-degree: 82%
@@ -137,7 +134,7 @@ Prenons l’exemple suivant, où Bob enregistre différents événements dans le
 | Événement | Date et heure | ID persistant (ID de cookie) | ID de personne | ID résultant (après assemblage dynamique) |
 |---|---|---|---|---|
 | 1 | 2023-05-12 12:01 | `246` ![Flèche vers la droite](/help/assets/icons/ArrowRight.svg) | - | **`246`** |
-| 2 | 12/05/2023 12:02 | `246` | `Bob` ![Flèche vers la droite](/help/assets/icons/ArrowRight.svg) | `Bob` |
+| 2 | 2023-05-12 12:02 | `246` | `Bob` ![Flèche vers la droite](/help/assets/icons/ArrowRight.svg) | `Bob` |
 | 3 | 2023-05-12 12:03 | `246` | `Bob` ![Flèche vers la droite](/help/assets/icons/ArrowRight.svg) | `Bob` ![Flèche vers le bas](/help/assets/icons/ArrowDown.svg) |
 | 4 | 2023-05-12 12:04 | `246` | - | **`Bob`** |
 | 5 | 2023-05-12 12:05 | `246` | `Bob` ![Flèche vers la droite](/help/assets/icons/ArrowRight.svg) | `Bob` ![Flèche vers le bas](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) |
@@ -171,7 +168,7 @@ Le tableau suivant représente les mêmes données que ci-dessus, mais affiche d
 | Événement | Date et heure | ID persistant (ID de cookie) | ID de personne | ID résultant (après assemblage dynamique) | Identifiant obtenu (après relecture) |
 |---|---|---|---|---|---|
 | 1 | 2023-05-12 12:01 | `246` | - | `246` | **`Bob`** |
-| 2 | 12/05/2023 12:02 | `246` | `Bob` ![Flèche vers la droite](/help/assets/icons/ArrowRight.svg) | `Bob` | `Bob` ![Flèche vers le haut](/help/assets/icons/ArrowUp.svg) |
+| 2 | 2023-05-12 12:02 | `246` | `Bob` ![Flèche vers la droite](/help/assets/icons/ArrowRight.svg) | `Bob` | `Bob` ![Flèche vers le haut](/help/assets/icons/ArrowUp.svg) |
 | 3 | 2023-05-12 12:03 | `246` | `Bob` ![Flèche vers la droite](/help/assets/icons/ArrowRight.svg) | `Bob` | Bob |
 | 4 | 2023-05-12 12:04 | `246` | - | **`Bob`** | `Bob` |
 | 5 | 2023-05-12 12:05 | `246` | `Bob` ![Flèche vers la droite](/help/assets/icons/ArrowRight.svg) | `Bob` ![Flèche vers le bas](/help/assets/icons/ArrowDown.svg) | `Bob` |
@@ -203,7 +200,7 @@ Le tableau suivant représente les mêmes données que ci-dessus, mais montre l�
 | Événement | Date et heure | ID persistant (ID de cookie) | ID de personne | ID résultant (après assemblage dynamique) | Identifiant obtenu (après relecture) | ID de personne | Identifiant obtenu (après demande d’accès à des informations personnelles) |
 |---|---|---|---|---|---|---|---|
 | 1 | 2023-05-12 12:01 | `246` | - | `246` | **`Bob`** | - | `246` |
-| 2 | 12/05/2023 12:02 | `246` | Bob ![Flèche vers la droite](/help/assets/icons/ArrowRight.svg) | `Bob` | `Bob` ![Flèche vers le haut](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) | ![Cercle - Suppression](/help/assets/icons/RemoveCircle.svg) | `246` |
+| 2 | 2023-05-12 12:02 | `246` | Bob ![Flèche vers la droite](/help/assets/icons/ArrowRight.svg) | `Bob` | `Bob` ![Flèche vers le haut](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) | ![Cercle - Suppression](/help/assets/icons/RemoveCircle.svg) | `246` |
 | 3 | 2023-05-12 12:03 | `246` | Bob ![Flèche vers la droite](/help/assets/icons/ArrowRight.svg) | `Bob` ![Flèche vers le bas](/help/assets/icons/ArrowDown.svg) | `Bob` | ![Cercle - Suppression](/help/assets/icons/RemoveCircle.svg) | `246` |
 | 4 | 2023-05-12 12:04 | `246` | - | **`Bob`** | `Bob` | - | `246` |
 | 5 | 2023-05-12 12:05 | `246` | Bob ![Flèche vers la droite](/help/assets/icons/ArrowRight.svg) | `Bob` ![Flèche vers le bas](/help/assets/icons/ArrowDown.svg) | `Bob` | ![Cercle - Suppression](/help/assets/icons/RemoveCircle.svg) | `246` |
@@ -228,7 +225,7 @@ Les conditions préalables suivantes s’appliquent spécifiquement au groupemen
    - Un **identifiant de personne**, un identifiant présent sur certaines lignes seulement. Par exemple, un nom d’utilisatation ou une adresse e-mail chiffré(e) une fois qu’une personne s’authentifie. Vous pouvez utiliser pratiquement n’importe quel identifiant de votre choix. Le mécanisme de groupement considère que ce champ contient l’identifiant réel de la personne. Pour obtenir les meilleurs résultats de groupement, un identifiant de personne doit être transmis dans les événements du jeu de données au moins une fois pour chaque identifiant persistant. Si vous prévoyez d’inclure ce jeu de données dans une connexion Customer Journey Analytics, il est préférable que les autres jeux de données aient également un identifiant commun similaire.
 
 <!--
-- Both columns (persistent ID and person ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
+- Both columns (persistent ID and person ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
 
 -->
 
