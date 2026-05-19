@@ -5,14 +5,29 @@ exl-id: 59318da7-5408-4a9d-82aa-8bcbec7f7364
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
-source-git-commit: aff01f4fc3520d461ca800382cc24d8d948d9cbc
+autotag-review: '2026-05-19T09:33:58.249Z'
+TQID: 'https://experienceleague.adobe.com/FJOAnB2Dumw9txeabYMfrIqE1uihee-TcA8ZFcAbU2Y'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2:
+  - id: e8abc408-b05c-427f-9e37-f8b033a6b3c3
+  - id: bfef374d-acfd-4c57-bf74-a2b36053c545
+  - id: cf731116-8803-4027-85aa-9c0a126e8321
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 61%
+source-wordcount: 518
+ht-degree: 59%
 
 ---
 
-# Utilisation de tableaux d’objets
+# Utiliser des tableaux d’objets
 
 Certains schémas de plateforme peuvent avoir des tableaux d’objets. Adobe Customer Journey Analytics prend en charge l’ingestion et le compte rendu des performances des tableaux d’objets dans les données d’événement, de recherche et de profil. Un des exemples les plus courants est celui du panier, qui contient plusieurs produits. Chaque produit a un nom, un SKU, une catégorie, un prix, une quantité et toute autre dimension dont vous souhaitez effectuer le suivi. Toutes ces facettes ont des exigences distinctes, mais doivent toutes tenir dans le même accès.
 
@@ -268,7 +283,7 @@ L’application de cette mesure calculée affiche les résultats souhaités :
 
 
 
-## Limites
+## Restrictions
 
 Des limitations s’appliquent aux tableaux dans les données utilisées par Customer Journey Analytics et modélisées dans le cadre d’un schéma dans Experience Platform. Consultez les sections [Limites du modèle de données](https://experienceleague.adobe.com/fr/docs/experience-platform/profile/guardrails#data-model-limits) et [Limites de taille des données](https://experienceleague.adobe.com/fr/docs/experience-platform/profile/guardrails#data-size-limits) dans le [Mécanismes de sécurisation par défaut pour les données et la segmentation du profil client en temps réel](https://experienceleague.adobe.com/fr/docs/experience-platform/profile/guardrails).
 

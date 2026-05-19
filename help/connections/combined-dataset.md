@@ -5,13 +5,27 @@ exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
+autotag-review: '2026-05-19T08:52:44.354Z'
+TQID: 'https://experienceleague.adobe.com/2aw2GDyFlHdR577R8ntg2Q2MYB8zHtr5dc7CWZd4LX0'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: 951
 ht-degree: 33%
 
 ---
-
 
 # Jeu de données d’événements combinés
 
@@ -66,7 +80,7 @@ le jeu de données combiné suivant est utilisé pour la création de rapports.
 
 Pour illustrer l’importance des chemins de schéma, considérez ce scénario. Dans le premier jeu de données, `string_color` est basé sur le chemin de schéma `_experience.whatever.string_color` et dans le second jeu de données sur le chemin de schéma `_experience.somethingelse.string_color`. Dans ce scénario, les données ne sont **pas** fusionnées en une colonne dans le jeu de données combiné résultant. Au lieu de cela, le résultat se compose de deux colonnes `string_color` dans le jeu de données combiné :
 
-| identifiant | timestamp | _expérience.<br/>peu importe.<br/>string_color | _expérience.<br/> autre chose.<br/>string_color | string_animal | string_shape | metric_a | metric_b |
+| identifiant | timestamp | _experience.<br/>what.<br/>string_color | _experience.<br/>somethingelse.<br/>string_color | string_animal | string_shape | metric_a | metric_b |
 |---|---|---|---|---|---|---:|---:|
 | user_310 | 1 Jan 7:02 | Rouge | | Renard | | | |
 | user_310 | 1 Jan 7:04 | | | | | 2 | |

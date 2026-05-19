@@ -5,10 +5,24 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: User
 exl-id: a357facb-d536-4c81-847c-a6f0d3f041e7
-source-git-commit: 20ead546897ad517840f95a5ec4dcd7f830afe8c
+autotag-review: '2026-05-19T09:42:01.927Z'
+TQID: 'https://experienceleague.adobe.com/ENlUXhLFg20Jrf28iUbb82Ux2WHJw7uh-t4J3zlmaqE'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2:
+  - id: f24857a4-4b64-4b25-b237-d43026362144
+  - id: ddf59f64-0e46-4986-a525-056acc143c70
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '789'
-ht-degree: 25%
+source-wordcount: 1332
+ht-degree: 15%
 
 ---
 
@@ -27,7 +41,7 @@ Customer Journey Analytics comporte plusieurs visualisations. Consultez [Visuali
 
 >[!BEGINTABS]
 
->[!TAB Bureau Power BI]
+>[!TAB Bureau ]
 
 ## Comparaison
 
@@ -42,7 +56,7 @@ Pour la plupart des visualisations Customer Journey Analytics, Power BI Desktop 
 | ![ChiffresTexte](/help/assets/icons/TextNumbered.svg) | [Table de cohorte](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) |  |
 | ![Combo](/help/assets/icons/ComboChart.svg) | [Combo](/help/analysis-workspace/visualizations/combo-charts.md) | [Graphique en courbes et histogrammes empilés, et Graphique en courbes et histogramme organisé en grappes](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#combo-charts) |
 | ![Graphique à anneaux](/help/assets/icons/GraphDonut.svg) | [Anneau](/help/analysis-workspace/visualizations/donut.md) | [Graphique en anneau](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#doughnut-charts) |
-| ![Entonnoir de conversion](/help/assets/icons/ConversionFunnel.svg) | [Abandon](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | [Funnel](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#funnel-charts). |
+| ![Entonnoir de conversion](/help/assets/icons/ConversionFunnel.svg) | [Abandon](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | [&#128279;](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#funnel-charts). |
 | ![GraphPathing](/help/assets/icons/GraphPathing.svg) | [Flux](/help/analysis-workspace/visualizations/c-flow/flow.md) | Arborescence de décomposition ? |
 | ![ViewTable](/help/assets/icons/ViewTable.svg)</p> | [Tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | [Tableau](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#tables) et [Matrice](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#matrix) |
 | ![GraphHistogram](/help/assets/icons/Histogram.svg) | [Histogramme](/help/analysis-workspace/visualizations/histogram.md) |  |
@@ -64,11 +78,11 @@ Pour la plupart des visualisations Customer Journey Analytics, Power BI Desktop 
 
 Power BI prend en charge un [mode d’exploration](https://learn.microsoft.com/en-us/power-bi/consumer/end-user-drill) pour explorer les détails détaillés de certaines visualisations. Dans l’exemple ci-dessous, vous analysez le chiffre d’affaires des achats pour les catégories de produits. Dans le menu contextuel d’une barre représentant une catégorie de produits, vous pouvez sélectionner **[!UICONTROL Analyser en profondeur]**.
 
-![Zoom Power BI](../assets/uc15-powerbi-drilldown.png)
+![Zoom &#x200B;](../assets/uc15-powerbi-drilldown.png)
 
 L’analyse en profondeur met à jour la visualisation avec le chiffre d’affaires des achats des produits de la catégorie de produits sélectionnée.
 
-![Exploration vers le haut de Power BI](../assets/uc15-powerbi-drillup.png)
+![Exploration vers le haut de &#x200B;](../assets/uc15-powerbi-drillup.png)
 
 L’analyse aboutit à la requête SQL suivante qui utilise une clause `WHERE` :
 

@@ -5,10 +5,27 @@ role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
 feature: Experience Platform Integration
-source-git-commit: ed7e9a6c34c5f8ba9ba4f75be05768409cbc158d
+autotag-review: '2026-05-19T09:14:55.236Z'
+TQID: 'https://experienceleague.adobe.com/4SG79HyhFS5kr-kXXVGb-cTI8j3St6CwztOW-x1xXi8'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+subfeature_v2:
+  - id: cbde176d-5423-4c67-8a87-bc8faefd3a44
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '960'
-ht-degree: 97%
+source-wordcount: 983
+ht-degree: 93%
 
 ---
 
@@ -35,7 +52,7 @@ L’IA dédiée aux clientes et clients s’intègre à Customer Journey Anal
    * Exemple : une personne spécialisée dans le marketing d’une chaîne d’hôtels souhaite savoir les clientes et clients d’hôtels qui ont été initialement identifiés comme des clientes et clients ayant une faible propension à acheter un billet de spectacle, mais qui sont devenus au fil du temps des clientes et clients ayant une forte propension à acheter un billet de spectacle.
 * **examiner la répartition de la propension** ;
    * Cas pratique : comprendre la répartition des scores de propension pour plus de précision dans la définition des segments.
-   * Exemple : un détaillant ou une détaillante souhaite lancer une promotion spécifique pour proposer une réduction de 50 $ sur un produit. Il est possible que la personne souhaite n’exécuter qu’une promotion très limitée en raison du budget, etc. Elle analyse les données et décide de ne cibler que les clientes et clients atteignant au moins un score de 80 %.
+   * Exemple : un détaillant ou une détaillante souhaite lancer une promotion spécifique pour proposer une réduction de 50 $ sur un produit. Il se peut qu’il souhaite n’exécuter qu’une promotion très limitée en raison du budget, etc. Ils analysent les données et décident de ne cibler que les plus de 80 % de leurs clients.
 * **examiner la propension pour accomplir une action visant une cohorte particulière au fil du temps**.
    * Cas d’utilisation : suivre une cohorte spécifique au fil du temps.
    * Exemple : une personne spécialisée dans le marketing d’une chaîne d’hôtels souhaite suivre son niveau bronze par rapport à son niveau argent ou encore son niveau argent par rapport à son niveau or au fil du temps. Ensuite, elle peut voir la propension de chaque cohorte à réserver l’hôtel au fil du temps.
@@ -57,7 +74,7 @@ Dans Customer Journey Analytics, vous pouvez désormais [établir une ou plusi
 
 >[!IMPORTANT]
 >
->Chaque instance IA dédiée aux clientes et clients possède deux jeux de données de sortie si le bouton (bascule) est activé pour activer les scores pour Customer Journey Analytics lors de la configuration à l’étape 1. Un jeu de données de sortie apparaît au format Profil et un autre au format XDM Experience Event.
+>Chaque instance IA dédiée aux clientes et clients possède deux jeux de données de sortie si le bouton (bascule) est activé pour activer les scores pour Customer Journey Analytics lors de la configuration à l’étape 1. Un jeu de données de sortie apparaît au format XDM Profil et un autre au format XDM Événement d’expérience.
 
 ![Scores CAI](assets/cai-scores.png)
 
@@ -67,7 +84,7 @@ Voici un exemple de schéma XDM que Customer Journey Analytics apporterait dan
 
 ![Schéma CAI](assets/cai-schema.png)
 
-(Notez que l’exemple est un jeu de données de profil ; le même ensemble d’objets de schéma ferait partie d’un jeu de données d’événement d’expérience dont Customer Journey Analytics s’emparerait. Le jeu de données Événement d’expérience inclurait des horodatages comme la date du score.) Chaque client noté dans ce modèle aurait un score, une date de score, etc.  associé.
+(Notez que l’exemple est un jeu de données de profil ; le même ensemble d’objets de schéma ferait partie d’un jeu de données d’événement d’expérience dont Customer Journey Analytics s’emparerait. Le jeu de données Événement d’expérience inclurait des horodatages comme la date du score.) Chaque client noté dans ce modèle est associé à un score, une date de score, etc.
 
 ## Étape 3 : Créer des vues de données basées sur ces connexions
 
@@ -81,7 +98,7 @@ Dans Customer Journey Analytics Workspace, créez un nouveau projet et extray
 
 ### Établir une tendance des scores de propension
 
-Voici un exemple de projet Workspace avec des données CAI qui calcule la tendance des scores de propension d’un segment d’utilisateurs au fil du temps, sous la forme d’un graphique à barres empilées :
+Voici un exemple de projet Workspace avec des données CAI qui calcule la tendance des scores de propension d’un segment d’utilisateurs au fil du temps, sous la forme d’un graphique en barres empilées :
 
 ![Intervalles de scores](assets/workspace-scores.png)
 
@@ -99,7 +116,7 @@ Ce diagramme de flux présente le flux d’entrée de la propension des clients 
 
 ### Répartition des scores de propension
 
-Ce graphique à barres présente la répartition des scores de propension :
+Ce graphique en barres présente la répartition des scores de propension :
 
 ![Répartition](assets/distribution.png)
 

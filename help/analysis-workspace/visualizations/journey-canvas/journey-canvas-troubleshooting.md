@@ -4,16 +4,31 @@ title: Résolution des problèmes liés à la zone de travail de parcours
 feature: Visualizations
 role: User
 exl-id: f0ac3752-9244-4d9e-807b-e6471e6aa55b
-source-git-commit: 73238f03021b14567c20c686ab72d84afbaa9f81
+autotag-review: '2026-05-19T08:43:53.628Z'
+TQID: 'https://experienceleague.adobe.com/E0LdSu06SM3c1ZBnOcIz352mqIkTN7dXfH9qC1BM-4g'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2:
+  - id: ddf59f64-0e46-4986-a525-056acc143c70
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '1303'
+source-wordcount: 1303
 ht-degree: 93%
 
 ---
 
 # Résolution des problèmes liés à la zone de travail de parcours
 
-La visualisation de la zone de travail de parcours vous permet d’analyser les parcours de vos utilisateurs, de vos utilisatrices et de votre clientèle, ou encore d’obtenir des informations détaillées à leur sujet.
+La visualisation Zone de travail de parcours vous permet d’analyser les parcours que vous fournissez à vos utilisateurs et utilisatrices et à votre clientèle, et d’obtenir des informations détaillées à leur sujet.
 
 Pour en savoir plus sur la zone de travail de parcours, consultez [Vue d’ensemble de la zone de travail de parcours](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) et [Configurer une visualisation de la zone de travail de parcours](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
 

@@ -5,10 +5,29 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: a7d14968-33a2-46a8-8e32-fb6716650d0a
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+autotag-review: '2026-05-19T09:47:24.777Z'
+TQID: 'https://experienceleague.adobe.com/8Xq8mUchtogMLiEuPVv-DWpkWtD5ubJGSQm2SRaZmps'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2:
+  - id: faea9abd-7024-4c5e-a5b4-87919e09b24b
+  - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '657'
-ht-degree: 7%
+source-wordcount: 726
+ht-degree: 16%
 
 ---
 
@@ -24,11 +43,11 @@ Lorsque deux personnes utilisent le même appareil et effectuent toutes deux un 
 
 | Événement | Date et heure | Nom de la page | ID d’appareil | Adresse électronique |
 |--:|---|---|---|---|
-| 1 | 12/05/2023 12:01 | Page d’accueil | `1234` | |
-| 2 | 12/05/2023 12:02 | Page produit | `1234` | |
-| 3 | 12/05/2023 12:03 | Succès de la commande | `1234` | `ryan@a.com` |
-| 4 | 12/05/2023 12:07 | Page produit | `1234` | |
-| 5 | 12/05/2023 12:08 | Succès de la commande | `1234` | `cassidy@a.com` |
+| 1 | 2023-05-12 12:01 | Page d’accueil | `1234` | |
+| 2 | 2023-05-12 12:02 | Page produit | `1234` | |
+| 3 | 2023-05-12 12:03 | Succès de la commande | `1234` | `ryan@a.com` |
+| 4 | 2023-05-12 12:07 | Page produit | `1234` | |
+| 5 | 2023-05-12 12:08 | Succès de la commande | `1234` | `cassidy@a.com` |
 
 Comme vous pouvez le voir dans ce tableau, une fois que l’authentification se produit sur les événements 3 et 5, un lien commence à se former entre un identifiant d’appareil et un identifiant de personne. Pour comprendre l’impact de tout effort marketing au niveau d’une personne, ces événements non authentifiés doivent être attribués à la bonne personne.
 
@@ -55,12 +74,12 @@ Lorsque l’attribution Dernière authentification est utilisée dans le groupem
 
 | Date et heure | Nom de la page | ID d’appareil | Adresse électronique | ID regroupé |
 |---|---|---|---|---|
-| 12/05/2023 12:01 | Page d’accueil | `1234` | | `cassidy@a.com` |
-| 12/05/2023 12:02 | Page produit | `1234` | | `cassidy@a.com` |
-| 12/05/2023 12:03 | Succès de la commande | `1234` | `ryan@a.com` | `cassidy@a.com` |
-| 12/05/2023 12:07 | Page produit | `1234` | | `cassidy@a.com` |
-| 12/05/2023 12:08 | Succès de la commande | `1234` | `cassidy@a.com` | `cassidy@a.com` |
-| 13/05/2023 11:08 | Page d’accueil | `1234` | | `cassidy@a.com` |
+| 2023-05-12 12:01 | Page d’accueil | `1234` | | `cassidy@a.com` |
+| 2023-05-12 12:02 | Page produit | `1234` | | `cassidy@a.com` |
+| 2023-05-12 12:03 | Succès de la commande | `1234` | `ryan@a.com` | `cassidy@a.com` |
+| 2023-05-12 12:07 | Page produit | `1234` | | `cassidy@a.com` |
+| 2023-05-12 12:08 | Succès de la commande | `1234` | `cassidy@a.com` | `cassidy@a.com` |
+| 2023-05-13 11:08 | Page d’accueil | `1234` | | `cassidy@a.com` |
 
 
 ### Device-split
@@ -71,12 +90,12 @@ Lorsque l’attribution fractionnée de l’appareil est utilisée dans le group
 
 | Date et heure | Nom de la page | ID d’appareil | Adresse électronique | ID regroupé |
 |---|---|---|---|---|
-| 12/05/2023 12:01 | Page d’accueil | `1234` | | `ryan@a.com` |
-| 12/05/2023 12:02 | Page produit | `1234` | | `ryan@a.com` |
-| 12/05/2023 12:03 | Succès de la commande | `1234` | `ryan@a.com` | `ryan@a.com` |
-| 12/05/2023 12:07 | Page produit | `1234` | | `ryan@a.com` |
-| 12/05/2023 12:08 | Succès de la commande | `1234` | `cassidy@a.com` | `cassidy@a.com` |
-| 13/05/2023 11:08 | Page d’accueil | `1234` | | `cassidy@a.com` |
+| 2023-05-12 12:01 | Page d’accueil | `1234` | | `ryan@a.com` |
+| 2023-05-12 12:02 | Page produit | `1234` | | `ryan@a.com` |
+| 2023-05-12 12:03 | Succès de la commande | `1234` | `ryan@a.com` | `ryan@a.com` |
+| 2023-05-12 12:07 | Page produit | `1234` | | `ryan@a.com` |
+| 2023-05-12 12:08 | Succès de la commande | `1234` | `cassidy@a.com` | `cassidy@a.com` |
+| 2023-05-13 11:08 | Page d’accueil | `1234` | | `cassidy@a.com` |
 
 
 <!--

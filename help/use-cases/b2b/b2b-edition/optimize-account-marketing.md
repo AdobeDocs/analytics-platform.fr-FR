@@ -6,9 +6,24 @@ feature: Use Cases
 role: User
 badgePremium: label="B2B Edition"
 exl-id: d5e44546-ea82-42eb-98df-19d51c71e9be
-source-git-commit: 3c13ae26a9ef48454467fc21b8faaa9e078c7f9f
+autotag-review: '2026-05-19T09:35:54.646Z'
+TQID: 'https://experienceleague.adobe.com/A0jSmg-0wGH3D-ZEUVTYVJf9ZXfUZdvfaBviAAXY00M'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+  - id: d3f42e9e-bb51-4077-a732-358b801d8b29
+feature_v2:
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2:
+  - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: 720
 ht-degree: 1%
 
 ---
@@ -40,7 +55,7 @@ Utilisez la visualisation [Zone de travail de Parcours &#x200B;](/help/analysis-
 
 Une visualisation de zone de travail de parcours vous permet d’effectuer les opérations suivantes :
 
-* Voir l&#39;histoire complète. Par exemple, vous pouvez afficher le chemin d’accès détaillé d’un compte ou d’un groupe d’achats à forte valeur spécifique à ** qui comprend toutes les interactions en ligne et hors ligne connues.
+* Voir l&#39;histoire complète. Par exemple, vous pouvez afficher le chemin d’accès détaillé d’un compte ou d’un groupe d’achats à forte valeur spécifique à *qui comprend toutes les interactions en ligne et hors ligne connues.*
 * Mettez en contexte les moments clés qui précèdent ou suivent des jalons importants (par exemple : un déclencheur de prospect qualifié par marketing ou la création d’opportunités).
 * Prend en charge le personnel des ventes via l’historique des interactions de la visualisation sur des comptes spécifiques. Une telle visualisation permet des conversations pertinentes.
 
@@ -83,7 +98,7 @@ Vous souhaitez afficher les cohortes mensuelles d’opportunités closes.
 
    ![Cas d’utilisation B2B - segmentation de cohorte - tableau de cohorte - configuration](assets/b2b-uc-optimize-marketing-cohort-table-config.png)
 
-1. Sélectionnez **[!UICONTROL Créer]**. Consultez ci-dessous un exemple de tableau de cohortes.
+1. Sélectionnez la **[!UICONTROL Version]**. Consultez ci-dessous un exemple de tableau de cohortes.
 
    ![Cas d’utilisation B2B - segmentation de cohorte - tableau de cohorte](assets/b2b-uc-optimize-marketing-cohort-table.png)
 
