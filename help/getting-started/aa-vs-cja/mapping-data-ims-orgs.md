@@ -6,10 +6,15 @@ solution: Customer Journey Analytics
 feature: Adobe Analytics Integration,Administration
 exl-id: c109742b-c1c5-45b3-971f-f8dcf814ec37
 TQID: https://experienceleague.adobe.com/6qERpivKabPPCynMGNKrLhhOMcROnlp7HKpbvXpzNSg
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: d76b9e53-27fb-4597-933f-419cc0dd46db
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
 workflow-type: tm+mt
 source-wordcount: 1127
@@ -74,9 +79,9 @@ Vous pouvez prendre en compte les rubriques suivantes avant de demander la fonct
 
 ### Profils
 
-Une fois la fonctionnalité de *mappage de données Cross-IMS* approuvée, vous pouvez ajouter des données à Experience Platform pour une ou plusieurs suites de rapports dans l’organisation IMS de destination. Pour ce faire, vous devez configurer le [ connecteur source Analytics ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics?lang=fr). Les jeux de données cibles sont ensuite créés dans Experience Platform. Dans le cadre de cette configuration et de ce processus, vous avez la possibilité d’envoyer des données de profil d’une ou de plusieurs suites de rapports au service Profil.
+Une fois la fonctionnalité de *mappage de données Cross-IMS* approuvée, vous pouvez ajouter des données à Experience Platform pour une ou plusieurs suites de rapports dans l’organisation IMS de destination. Pour ce faire, vous devez configurer le [&#x200B; connecteur source Analytics &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics?lang=fr). Les jeux de données cibles sont ensuite créés dans Experience Platform. Dans le cadre de cette configuration et de ce processus, vous avez la possibilité d’envoyer des données de profil d’une ou de plusieurs suites de rapports au service Profil.
 
-Estimez le nombre total de profils résultant de la configuration et du processus, comme indiqué ci-dessus. Assurez-vous que le nombre total se situe dans la limite du nombre de profils auxquels vous avez contractuellement droit pour l’organisation de destination. Appliquez [ règles et conditions de filtrage ](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#filtering-for-profile){target="_blank"} pour inclure ou exclure des données de manière sélective de l’ingestion vers le service Profil. Ou désactivez l’option permettant d’envoyer des données de profil au service Profil pour les suites de rapports pertinentes.
+Estimez le nombre total de profils résultant de la configuration et du processus, comme indiqué ci-dessus. Assurez-vous que le nombre total se situe dans la limite du nombre de profils auxquels vous avez contractuellement droit pour l’organisation de destination. Appliquez [&#x200B; règles et conditions de filtrage &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#filtering-for-profile){target="_blank"} pour inclure ou exclure des données de manière sélective de l’ingestion vers le service Profil. Ou désactivez l’option permettant d’envoyer des données de profil au service Profil pour les suites de rapports pertinentes.
 
 
 #### Groupement

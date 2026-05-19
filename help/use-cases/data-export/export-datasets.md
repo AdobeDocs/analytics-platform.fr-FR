@@ -6,9 +6,12 @@ feature: Use Cases
 role: Admin
 exl-id: b861f765-b18d-4be2-b4c7-c66186d37d99
 TQID: https://experienceleague.adobe.com/0R5S0Bmx8nJxyCRFycmkEm0KN-43zlRYEDHdKSO-IR4
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
 workflow-type: tm+mt
 source-wordcount: 1187
@@ -18,7 +21,7 @@ ht-degree: 6%
 
 # Exporter les jeux de données
 
-Cet article décrit comment le [!DNL Customer Journey Analytics Export datasets] peut être utilisé pour implémenter le cas d’utilisation d’exportation de données [ suivant ](overview.md) :
+Cet article décrit comment le [!DNL Customer Journey Analytics Export datasets] peut être utilisé pour implémenter le cas d’utilisation d’exportation de données [&#x200B; suivant &#x200B;](overview.md) :
 
 - Sauvegarde des données
 
@@ -30,7 +33,7 @@ Extension ![BI](../assets/export-datasets.png)
 
 ## Informations supplémentaires
 
-Vous pouvez exporter des jeux de données bruts du lac de données dans Experience Platform vers des destinations d’espace de stockage. Cette exportation figure dans la terminologie des destinations Experience Platform, appelée destinations d’exportation de jeu de données. Consultez [ Exporter des jeux de données vers des destinations d’espace de stockage ](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/activate/export-datasets) pour une présentation.
+Vous pouvez exporter des jeux de données bruts du lac de données dans Experience Platform vers des destinations d’espace de stockage. Cette exportation figure dans la terminologie des destinations Experience Platform, appelée destinations d’exportation de jeu de données. Consultez [&#x200B; Exporter des jeux de données vers des destinations d’espace de stockage &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/activate/export-datasets) pour une présentation.
 
 Les destinations suivantes de stockage dans le cloud sont prises en charge :
 
