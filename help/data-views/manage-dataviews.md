@@ -7,11 +7,19 @@ role: Admin
 exl-id: c5cf15ab-3eb1-4e6b-93a3-3d89694ca0ea
 autotag-review: '2026-05-19T10:45:24.919Z'
 TQID: 'https://experienceleague.adobe.com/fPYOLKGTjiZDeSWLRhvkywKht8Yoq4k54EOcazJw74M'
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
-subfeature_v2: id: e1471301-a189-438e-8d48-264a8db508a6
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: d00e9f03-e50b-4162-b143-0c0817c937c2id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+subfeature_v2:
+  - id: e1471301-a189-438e-8d48-264a8db508a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 933
@@ -36,11 +44,11 @@ Les colonnes et icônes suivantes sont disponibles dans le tableau :
 | --- | --- |
 | **[!UICONTROL Nom]** | Nom de la vue de données. |
 | ![Informations](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) | Pour afficher des informations sur la vue de données, sélectionnez ![InfoOutline](/help/assets/icons/InfoOutline.svg) en regard du nom de la vue de données.<br/>Une fenêtre pop-up affiche des détails sur la vue de données. |
-| ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) | Sélectionnez ![Plus](/help/assets/icons/More.svg) pour ouvrir un menu contextuel. Vous pouvez sélectionner :<br/>![Modifier](/help/assets/icons/Edit.svg) **[!UICONTROL Modifier]** pour [modifier](#edit-data-views) une vue de données.<br/>![Copier](/help/assets/icons/Copy.svg) **[!UICONTROL Copier]** pour [copier une vue de données](#copy-data-views).<br/>![Supprimer](/help/assets/icons/Delete.svg) **[!UICONTROL Supprimer]** pour [supprimer](#delete-data-views) une vue de données.<br/>![FichierCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Exporter au format CSV]** pour [exporter les détails de la vue de données dans un fichier CSV](#export-data-views-to-csv).<br/>![ProjetAjouter](/help/assets/icons/ProjectAdd.svg)Créer un nouveau projet Workspace **[!UICONTROL pour la vue de données.]** AjouterCercle[Activer pour Data Insights Agent](#create-project-from-data-views) pour activer une vue de données pour le Data Insights Agent.<br/>![SupprimerCercle](/help/assets/icons/AddCircle.svg)Désactiver pour Data Insights Agent **** <br/>![ ](/help/assets/icons/RemoveCircle.svg) **** pour désactiver une vue de données pour le Data Insights Agent. |
+| ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) | Sélectionnez ![Plus](/help/assets/icons/More.svg) pour ouvrir un menu contextuel. Vous pouvez sélectionner :<br/>![Modifier](/help/assets/icons/Edit.svg) **[!UICONTROL Modifier]** pour [modifier](#edit-data-views) une vue de données.<br/>![Copier](/help/assets/icons/Copy.svg) **[!UICONTROL Copier]** pour [copier une vue de données](#copy-data-views).<br/>![Supprimer](/help/assets/icons/Delete.svg) **[!UICONTROL Supprimer]** pour [supprimer](#delete-data-views) une vue de données.<br/>![FichierCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Exporter au format CSV]** pour [exporter les détails de la vue de données dans un fichier CSV](#export-data-views-to-csv).<br/>![ProjetAjouter](/help/assets/icons/ProjectAdd.svg)Créer un nouveau projet Workspace **[!UICONTROL pour la vue de données.]** AjouterCercle[Activer pour Data Insights Agent](#create-project-from-data-views) pour activer une vue de données pour le Data Insights Agent.<br/>![SupprimerCercle](/help/assets/icons/AddCircle.svg)Désactiver pour Data Insights Agent **&#x200B;**&#x200B;<br/>![&#x200B; &#x200B;](/help/assets/icons/RemoveCircle.svg) **&#x200B;**&#x200B;pour désactiver une vue de données pour le Data Insights Agent. |
 | **[!UICONTROL Connexion]** | Nom de la connexion associée à la vue de données. |
 | **[!UICONTROL Sandbox]** | Nom du sandbox associé à la vue de données. |
 | **[!UICONTROL Propriétaire]** | Propriétaire de la vue de données. |
-| **** ![InfoOutline](/help/assets/icons/InfoOutline.svg) | Indique si le paramètre [](/help/data-analysis-ai.md) est **[!UICONTROL Activé]** ou **[!UICONTROL Désactivé]** pour la vue de données. <br/>Sélectionnez ![InfoOutline](/help/assets/icons/InfoOutline.svg) pour afficher un pop-up avec le statut **[!UICONTROL Data Insights Agent]** dans vos vues de données. <br/>![Utilisation de ](/help/data-views/assets/data-views-dia-status.png) |
+| **&#x200B;**&#x200B;![InfoOutline](/help/assets/icons/InfoOutline.svg) | Indique si le paramètre [&#128279;](/help/data-analysis-ai.md) est **[!UICONTROL Activé]** ou **[!UICONTROL Désactivé]** pour la vue de données. <br/>Sélectionnez ![InfoOutline](/help/assets/icons/InfoOutline.svg) pour afficher un pop-up avec le statut **[!UICONTROL Data Insights Agent]** dans vos vues de données. <br/>![Utilisation de &#x200B;](/help/data-views/assets/data-views-dia-status.png) |
 | **[!UICONTROL Intégrations]** | Répertorier les intégrations à d’autres solutions. Par exemple : Adobe Audience Analysis, Content Analytics, Brand Concierge, Journey Optimizer, GenStudio et Usage Analytics. |
 | **[!UICONTROL Utiliser dans CJA]** | Indique si la vue de données est utilisée dans Customer Journey Analytics. Cette valeur n’est **[!UICONTROL Désactivée]** que pour les vues de données générées automatiquement dans le cadre de l’intégration de Adobe Journey Optimizer. |
 | **[!UICONTROL Date de création]** | Date et heure de création de la vue de données. |
@@ -91,7 +99,7 @@ Vous pouvez également effectuer les opérations suivantes :
 Si vous souhaitez copier une vue de données :
 
 1. Sélectionnez ![Plus](/help/assets/icons/More.svg) en regard du nom de la vue de données.
-1. Sélectionnez ![ Copier ](/help/assets/icons/Copy.svg) **[!UICONTROL Copier]** dans le menu contextuel.
+1. Sélectionnez ![&#x200B; Copier &#x200B;](/help/assets/icons/Copy.svg) **[!UICONTROL Copier]** dans le menu contextuel.
 
 Vous pouvez également effectuer les opérations suivantes :
 
@@ -152,7 +160,7 @@ Vous pouvez également effectuer les opérations suivantes :
 
 ## Activation ou désactivation des vues de données pour Data Insights Agent
 
-Vous pouvez activer ou désactiver une vue de données pour le [](/help/data-analysis-ai.md).
+Vous pouvez activer ou désactiver une vue de données pour le [&#128279;](/help/data-analysis-ai.md).
 
 1. Sélectionnez ![Plus](/help/assets/icons/More.svg) en regard du nom de la vue de données.
 1. Sélectionnez ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Enable for Data Insights Agent]** ou ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) **[!UICONTROL Disable for Data Insights Agent]** dans le menu contextuel.

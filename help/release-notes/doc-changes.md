@@ -6,11 +6,33 @@ solution: Customer Journey Analytics
 feature: Release Notes
 autotag-review: '2026-05-19T11:00:09.733Z'
 TQID: 'https://experienceleague.adobe.com/hHcvSYqGtYuKbPLvtu2qALBNLA0cogWxEUYxu-ktUvM'
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: b743a5d9-dc51-41ed-8b2f-86a1f8de430fid: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4id: d76b9e53-27fb-4597-933f-419cc0dd46dbid: e634a07b-b7ca-4af3-a124-3024ce559e17id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5eid: eb00932f-4d46-46bc-b1d8-10de7588db8d
-subfeature_v2: id: a8e39571-4463-4aa3-8b3f-4e2341ecf3b3
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bcc5edb5-84c3-4940-9f84-ed88b6c16274id: c1579802-ddd4-4214-8a91-97b2066abe11id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d00e9f03-e50b-4162-b143-0c0817c937c2id: d3cdead0-685a-4489-9250-4bb709942f66id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: eddd9b14-83bd-4ff4-9072-54a4a484abb7id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: b743a5d9-dc51-41ed-8b2f-86a1f8de430f
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+  - id: e634a07b-b7ca-4af3-a124-3024ce559e17
+  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+subfeature_v2:
+  - id: a8e39571-4463-4aa3-8b3f-4e2341ecf3b3
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 6915
@@ -28,9 +50,9 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Fonctionnalité | Description |
 |---|---|
 | **Mai 2026** | |
-| Bibliothèque JavaScript pour Content Analytics | Documentation sur la mise en œuvre de Content Analytics pour le canal web à l’aide de la bibliothèque JavaScript Content Analytics [](/help/content-analytics/config/tags-agnostic.md) sans nécessiter de balises de collecte de données Experience Platform. |
+| Bibliothèque JavaScript pour Content Analytics | Documentation sur la mise en œuvre de Content Analytics pour le canal web à l’aide de la bibliothèque JavaScript Content Analytics [&#128279;](/help/content-analytics/config/tags-agnostic.md) sans nécessiter de balises de collecte de données Experience Platform. |
 | Considérations relatives à Data Mirror | [Documentation](/help/data-mirror/considerations.md) qui décrit les facteurs à prendre en compte lors de la configuration de [jeux de données Data Mirror](/help/data-mirror/data-mirror.md). |
-| Canal mobile Content Analytics | Mises à jour de la documentation de [](/help/content-analytics/content-analytics.md) pour décrire les fonctionnalités et la configuration du canal mobile Content Analytics. |
+| Canal mobile Content Analytics | Mises à jour de la documentation de [&#128279;](/help/content-analytics/content-analytics.md) pour décrire les fonctionnalités et la configuration du canal mobile Content Analytics. |
 | **Avril 2026** | |
 | Instructions relatives aux champs dérivés | Ajout d’un article avec des [directives](/help/use-cases/data-views/derived-fields/guidelines.md) (bonnes pratiques, mécanismes de sécurisation et pièges courants) pour l’utilisation des champs dérivés. |
 | Ajout d’une documentation manquante pour deux jeux de données qui peuvent être inclus lors de l’intégration de Journey Optimizer | [Deux jeux de données supplémentaires non liés aux profils et générés par le système](/help/integrations/ajo.md#high-throughput-add-on-datasets) sont inclus dans la connexion lorsque le module complémentaire de messagerie transactionnelle à haut débit est activé pour votre organisation IMS. |
@@ -134,7 +156,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | **Août 2024** | |
 | Exemple de projet B2B | Ajout d’un [cas d’utilisation](/help/use-cases/b2b/example.md) expliquant comment paramétrer, configurer et générer des rapports sur les données B2B au niveau du profil (personne) dans Customer Journey Analytics, à l’aide de la nouvelle fonctionnalité [Transformer les jeux de données pour les recherches B2B](/help/connections/transform-datasets-b2b-lookups.md). |
 | Mise à jour des cas d’utilisation d’export de données | Ajout d’exemples de requêtes plus détaillés au [service de requête (Data Distiller) et Exporter des jeux de données](/help/use-cases/data-export/queryservice-export-datasets.md) pour illustrer comment appliquer correctement l’attribution entre les sessions à l’aide d’un intervalle de recherche en amont. |
-| Données de résumé | Ajout d’une documentation sur les [données récapitulatives](/help/data-views/summary-data.md) et les [ paramètres du composant de groupe de données récapitulatives](/help/data-views/component-settings/summary-data-group.md) et d’un [cas d’utilisation de données récapitulatives](/help/use-cases/data-views/summary-data.md). |
+| Données de résumé | Ajout d’une documentation sur les [données récapitulatives](/help/data-views/summary-data.md) et les [&#x200B; paramètres du composant de groupe de données récapitulatives](/help/data-views/component-settings/summary-data-group.md) et d’un [cas d’utilisation de données récapitulatives](/help/use-cases/data-views/summary-data.md). |
 | **Juillet 2024** | |
 | Ajout d’informations à propos des mesures calculées rapides | Mise à jour des informations dans [Mesures](/help/components/apply-create-metrics.md) afin de clarifier la différence entre les [mesures calculées créées dans le créateur de mesures calculées](/help/components/apply-create-metrics.md#create-calculated-metrics-for-all-projects) et [celles créées sous forme de mesures calculées rapides dans un seul projet](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project). Ajout également d’informations supplémentaires sur les mesures calculées rapides.<p>Les mesures calculées créées dans le créateur de mesures calculées sont disponibles dans la liste des composants et peuvent être appliquées aux projets dans l’ensemble de l’organisation, tandis que les mesures calculées qui sont créées sous forme de mesures calculées rapides ne sont disponibles que dans le projet dans lequel elles ont été créées.</p><p>Mise à jour des informations dans [Créer des mesures](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) pour effectuer des clarifications similaires.</p> |
 | Fonction de déduplication des champs dérivés | Ajout d’une documentation sur la fonction de [Déduplication](/help/data-views/derived-fields/derived-fields.md#deduplicate) des champs dérivés. |
