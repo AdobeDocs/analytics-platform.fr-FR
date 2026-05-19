@@ -4,7 +4,7 @@ description: Déterminez comment prendre une colonne de flux de données Adobe A
 feature: Components
 hide: true
 exl-id: 81d6e79e-8324-4726-9a48-10177b0a91b1
-source-git-commit: d79c6d883f436d97925e007f453879e20b4fcc04
+source-git-commit: 5771edbe491ceeeaf487dd5eeb2ffb67ef880f96
 workflow-type: tm+mt
 source-wordcount: '3912'
 ht-degree: 48%
@@ -370,7 +370,7 @@ Customer Journey Analytics ne dispose pas d’un champ unique qui agit comme un 
 
 Indicateur signifiant que l’événement d’achat pour cet accès doit être ignoré, car il s’agit d’un double.
 
-Bien qu’il n’y ait pas de traduction directe de cette colonne de flux de données Analytics, sa fonctionnalité d’action pour dédupliquer les achats existe toujours. Si vous utilisez le groupe de champs [[!UICONTROL Détails Commerce]](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/field-groups/event/commerce-details), vous pouvez définir les paramètres du composant [Déduplication des mesures](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication) où l’**[!UICONTROL ID de déduplication]** est `xdm.commerce.purchases.id`.
+Bien qu’il n’y ait pas de traduction directe de cette colonne de flux de données Analytics, sa fonctionnalité d’action pour dédupliquer les achats existe toujours. Si vous utilisez le groupe de champs [[!UICONTROL Détails &#x200B;]](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/field-groups/event/commerce-details), vous pouvez définir les paramètres du composant [Déduplication des mesures](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication) où l’**[!UICONTROL ID de déduplication]** est `xdm.commerce.purchases.id`.
 
 Si une traduction directe est requise lorsque vous souhaitez un indicateur pour les achats en double, vous pouvez utiliser un [champ dérivé](/help/data-views/derived-fields/derived-fields.md) à l’aide de la fonction **Dédupliquer** dans l’ensemble de règles.
 
@@ -405,7 +405,7 @@ Cette colonne correspond probablement à des dizaines de mesures distinctes, sel
 
 {{cja-df-post}}
 
-Si votre schéma utilise le groupe de champs [[!UICONTROL Détails Commerce]](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/field-groups/event/commerce-details), certaines mesures peuvent directement correspondre aux champs XDM suivants :
+Si votre schéma utilise le groupe de champs [[!UICONTROL Détails &#x200B;]](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/field-groups/event/commerce-details), certaines mesures peuvent directement correspondre aux champs XDM suivants :
 
 * **Passages en caisse** : `xdm.commerce.checkouts.value`
 * **Ajouts au panier** : `xdm.commerce.productListAdds.value`
@@ -418,7 +418,7 @@ Si votre schéma utilise le groupe de champs [[!UICONTROL Détails Commerce]](ht
 Certaines mesures peuvent utiliser la sérialisation des événements, ce qui permet à Adobe Analytics de contrôler entièrement la déduplication. Vous pouvez utiliser le paramètre de composant [Déduplication des mesures](/help/data-views/component-settings/metric-deduplication.md) pour atteindre la parité de déduplication.
 
 * Si votre mesure déduplique par visite dans Adobe Analytics, vous pouvez définir la portée de la déduplication sur session dans les paramètres des composants de cette mesure.
-* Si votre mesure se déduplique par identifiant d’événement dans Adobe Analytics, il est probable que l’objet XDM de cette mesure contienne un champ `value` et `id`. Si votre schéma utilise le groupe de champs [[!UICONTROL Détails Commerce]](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/field-groups/event/commerce-details), ces mesures résident probablement dans ces champs XDM, que vous pouvez définir dans le champ **[!UICONTROL Identifiant de déduplication]** dans les paramètres des composants de la mesure :
+* Si votre mesure se déduplique par identifiant d’événement dans Adobe Analytics, il est probable que l’objet XDM de cette mesure contienne un champ `value` et `id`. Si votre schéma utilise le groupe de champs [[!UICONTROL Détails &#x200B;]](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/field-groups/event/commerce-details), ces mesures résident probablement dans ces champs XDM, que vous pouvez définir dans le champ **[!UICONTROL Identifiant de déduplication]** dans les paramètres des composants de la mesure :
 
    * **Passages en caisse** : `xdm.commerce.checkouts.id`
    * **Ajouts au panier** : `xdm.commerce.productListAdds.id`

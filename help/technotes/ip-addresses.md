@@ -5,10 +5,19 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5c52986c-7ff3-45b5-9039-2bfb6529238c
 role: Admin
-source-git-commit: 0e4ea634a604a65484a57f5af8021badb86a865a
+TQID: https://experienceleague.adobe.com/y9JHTZnh51-jd-WNj8p6OBmkB5iOIT6vZ2ouHUKtHAI
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 5771edbe491ceeeaf487dd5eeb2ffb67ef880f96
 workflow-type: tm+mt
-source-wordcount: '188'
-ht-degree: 34%
+source-wordcount: 196
+ht-degree: 32%
 
 ---
 
@@ -16,7 +25,7 @@ ht-degree: 34%
 
 Certaines configurations de pare-feu bloquent les adresses IP en provenance des serveurs de collecte de données d’Adobe ou des serveurs responsables de l’accès aux données. Vous pouvez utiliser cette liste de plages pour modifier les paramètres de pare-feu de votre entreprise afin d’autoriser l’accès et d’envoyer des données depuis votre entreprise.
 
-Placer sur la liste autorisée Cette page comprend des adresses IP que vous devez ajouter à votre pour que les systèmes sortants fonctionnent, comme l’[exportation de données vers un fournisseur de cloud](/help/analysis-workspace/export/export-cloud.md).
+Cette page comprend des adresses IP que vous devez ajouter à votre pour que les systèmes sortants fonctionnent, comme l’[exportation de données vers un fournisseur de cloud](/help/analysis-workspace/export/export-cloud.md).
 
 >[!IMPORTANT]
 >
@@ -144,4 +153,4 @@ Placer sur la liste autorisée Cette page comprend des adresses IP que vous deve
 >
 >[Domaines utilisés par Customer Journey Analytics](domains.md)
 >
->[Adresses IP utilisées par le Adobe Experience Cloud](https://experienceleague.adobe.com/fr/docs/core-services/interface/data-collection/ip-addresses)
+>[Adresses IP utilisées par CX Enterprise](https://experienceleague.adobe.com/fr/docs/core-services/interface/data-collection/ip-addresses)
