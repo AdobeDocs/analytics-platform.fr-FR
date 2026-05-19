@@ -50,7 +50,7 @@ Adobe Experience Platform rassemble des données provenant de plusieurs source
 
 ## Intégration des données Google Analytics à analyser dans Customer Journey Analytics
 
-Consultez ce tutoriel sur la façon d’[analyser les données Google Analytics à l’aide de Customer Journey Analytics](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/module12/ex5.html) pour obtenir des instructions détaillées.
+Consultez ce tutoriel sur la façon d’[analyser les données Google Analytics à l’aide de Customer Journey Analytics](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/module12/ex5.html?lang=fr) pour obtenir des instructions détaillées.
 
 ## Utilisez l’API Bulk Data Insertion pour importer des données dans Analytics, puis les ingérer via le connecteur source Analytics dans Experience Platform
 

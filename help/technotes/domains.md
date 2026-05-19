@@ -37,10 +37,10 @@ Certaines configurations de pare-feu bloquent les domaines sur lesquels Customer
 
 ## Domaines d’entreprise CX
 
-Outre les domaines ci-dessus, CX Enterprise s’appuie sur plusieurs domaines pour la collecte de données et l’exportation de rapports. Voir [Domaines utilisés par CX Enterprise](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/domains) pour cette liste de domaines.
+Outre les domaines ci-dessus, CX Enterprise s’appuie sur plusieurs domaines pour la collecte de données et l’exportation de rapports. Voir [Domaines utilisés par CX Enterprise](https://experienceleague.adobe.com/fr/docs/core-services/interface/data-collection/domains) pour cette liste de domaines.
 
 >[!MORELIKETHIS]
 >
 >[Adresses IP utilisées par Customer Journey Analytics](ip-addresses.md)
 >
->[Domaines utilisés par CX Enterprise](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/domains)
+>[Domaines utilisés par CX Enterprise](https://experienceleague.adobe.com/fr/docs/core-services/interface/data-collection/domains)
