@@ -5,16 +5,21 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 669a1305-3e37-4ca2-8178-a89a27958e5d
-source-git-commit: 9fef1fddbb4b51efb9282e3ef13501bd498a4546
+TQID: https://experienceleague.adobe.com/erSJs1i9L6I0gv9Gujg5CneSV-0P4trb7DKl8H03WCo
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
 workflow-type: tm+mt
-source-wordcount: '154'
+source-wordcount: 154
 ht-degree: 50%
 
 ---
 
 # Extension BI
 
-Cet article décrit comment le [!DNL Customer Journey Analytics BI extension] peut être utilisé pour implémenter le cas d’utilisation d’exportation de données [&#x200B; suivant &#x200B;](overview.md) :
+Cet article décrit comment le [!DNL Customer Journey Analytics BI extension] peut être utilisé pour implémenter le cas d’utilisation d’exportation de données [ suivant ](overview.md) :
 
 - Lac de données, Data Warehouse ou outils de BI
 
@@ -22,7 +27,7 @@ Cet article décrit comment le [!DNL Customer Journey Analytics BI extension] pe
 
 L’exportation de données à l’aide de l’[!DNL Customer Journey Analytics BI extension] vous permet d’exporter des données de vos vues de données Customer Journey Analytics.
 
-Extension ![BI](../assets/bi-extension.svg)
+Extension ![BI](../assets/bi-extension.png)
 
 ## Informations supplémentaires
 

@@ -4,9 +4,15 @@ title: Rapports En Temps Réel - Aperçu
 feature: Real-time Reporting
 role: User
 exl-id: 12fbb760-936d-4e30-958f-764febca5ae7
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+TQID: https://experienceleague.adobe.com/Nvg6DVqDq-IwyPJgyDH2nOmNG41-aCRAYohlj7tjrj4
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
 workflow-type: tm+mt
-source-wordcount: '810'
+source-wordcount: 855
 ht-degree: 6%
 
 ---
@@ -40,7 +46,7 @@ Vous souhaitez valider, par exemple :
    * Lorsque votre nouvelle page de produits est entrée en ligne, collectez-vous des données client à partir de la page ?
    * Votre événement multimédia en direct se passe-t-il correctement ?
 
-Ne prenez pas en compte les rapports en temps réel pour les cas d’utilisation de la surveillance des opérations. Par exemple, pour répondre à la question de savoir si un site fonctionne correctement. Comme le bouton (bascule) [&#x200B; Actualisation en temps réel &#x200B;](use-real-time.md) se désactive automatiquement au bout de 30 minutes et que l’actualisation du rapport en temps réel cesse, vous ne devez pas utiliser un rapport en temps réel comme source fiable pour ces cas d’utilisation.
+Ne prenez pas en compte les rapports en temps réel pour les cas d’utilisation de la surveillance des opérations. Par exemple, pour répondre à la question de savoir si un site fonctionne correctement. Comme le bouton (bascule) [ Actualisation en temps réel ](use-real-time.md) se désactive automatiquement au bout de 30 minutes et que l’actualisation du rapport en temps réel cesse, vous ne devez pas utiliser un rapport en temps réel comme source fiable pour ces cas d’utilisation.
 
 ## Fonctionnement
 
@@ -49,7 +55,7 @@ Les rapports en temps réel utilisent un jeu de données consolidé complètemen
 * Création de rapports en temps réel sur un jeu de données consolidé contenant jusqu’à 24 heures de données en continu.
 * Création de rapports standard sur le jeu de données consolidé qui contient jusqu’à 13 mois de données glissantes (ou plus si vous disposez d’une licence pour le module complémentaire de capacité de données étendue).
 
-![Reporting en temps réel](assets/real-time-reporting-latencies.svg){zoomable="yes"}
+![Rapports en temps réel](assets/real-time-reporting-latencies.png){zoomable="yes"}
 
 ### Latences
 
@@ -68,7 +74,7 @@ Si une interruption de service se produit pendant plus d’une demi-heure, les d
 
 Gardez à l’esprit les limites suivantes pour les rapports en temps réel :
 
-* Les rapports en temps réel ne génèrent que des rapports sur les données disponibles sur une période mobile de 24 heures. Données qui sont supérieures à   L’ancienne version de 24 heures n’est pas disponible pour les rapports en temps réel. Une fois que l’option [actualisation en temps réel](use-real-time.md) d’un rapport est désactivée ou automatiquement désactivée, toutes les données pertinentes sont à nouveau disponibles à partir du [jeu de données consolidé](/help/connections/combined-dataset.md) généralement utilisé pour la création de rapports dans Customer Journey Analytics.
+* Les rapports en temps réel ne génèrent que des rapports sur les données disponibles sur une période mobile de 24 heures. Les données de plus de 24 heures ne sont pas disponibles pour la création de rapports en temps réel. Une fois que l’option [actualisation en temps réel](use-real-time.md) d’un rapport est désactivée ou automatiquement désactivée, toutes les données pertinentes sont à nouveau disponibles à partir du [jeu de données consolidé](/help/connections/combined-dataset.md) généralement utilisé pour la création de rapports dans Customer Journey Analytics.
 * Attribution, segmentation, mesures calculées, etc. ne fonctionnent que sur les données disponibles au cours de la période glissante de 24 heures. Par exemple, un segment *Visiteurs réguliers* inclut très peu de personnes dans un rapport en temps réel, car le rapport inclut uniquement les personnes qui ont consulté plusieurs fois au cours des dernières 24 heures. Une limitation similaire s’applique lorsque vous créez un rapport en temps réel sur les personnes qui ont cliqué précédemment sur une campagne qui n’est plus active.
 * Les rapports en temps réel fonctionnent mieux sur les données au niveau de l’événement et de la session. Soyez prudent lorsque vous utilisez les rapports en temps réel pour les données au niveau de la personne. Puisque seuls les événements de la période de 24 heures variable sont disponibles pour les rapports en temps réel, l’historique des événements d’une personne est également limité à cette fenêtre. Tenez compte des préférences en matière de données au niveau de l’événement et de la session lorsque vous sélectionnez une dimension et des mesures (calculées). Et lorsque vous utilisez des fonctionnalités telles que les répartitions, suivant ou précédent, et plus encore dans votre panneau Actualisation en temps réel activée .
 * Vous ne pouvez pas combiner le groupement avec les rapports en temps réel. Les rapports en temps réel portent sur les données au niveau des événements et des sessions, et sont moins pertinents pour les données basées sur les personnes.

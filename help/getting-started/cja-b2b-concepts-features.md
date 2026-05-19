@@ -6,13 +6,18 @@ feature: Basics
 role: User, Admin
 badgePremium: label="B2B Edition"
 exl-id: df2cc922-d214-49b9-8fdb-443cc1dac05b
-source-git-commit: a9c22cfd7077fd9e1ac4b9ea4ec0e016e9d2425b
+TQID: https://experienceleague.adobe.com/pXiDvk--5tAJYGj8lfq7KQfVLQqVOePbBZqCXT10rZ0
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
 workflow-type: tm+mt
-source-wordcount: '1468'
+source-wordcount: 1485
 ht-degree: 2%
 
 ---
-
 
 # Concepts et fonctions de B2B edition
 
@@ -39,7 +44,7 @@ Customer Journey Analytics repose sur le concept de trois conteneurs : Personne,
 
 Vous pouvez redéfinir la manière dont ces conteneurs sont nommés lorsque vous configurez une vue de données, mais la hiérarchie et les relations entre les conteneurs sont prédéterminées. Le conteneur Session est généré en fonction de la manière dont vous définissez une session dans le [Paramètres de session](/help/data-views/session-settings.md) dans votre vue de données.
 
-![B2C](assets/b2c-containers.svg){zoomable="yes"}
+![B2C](assets/b2c-containers.png){zoomable="yes"}
 
 
 ### Conteneurs B2B
@@ -48,14 +53,14 @@ Dans Customer Journey Analytics B2B edition, un conteneur Compte est ajouté à 
 
 La hiérarchie et les relations entre les conteneurs sont prédéterminées. L’opportunité, le groupe d’achats et la personne sont tous des conteneurs frères du conteneur Compte . Dans cette hiérarchie, le conteneur de sessions entre le conteneur de personnes et le conteneur d’événements est généré en fonction de la manière dont vous définissez une session dans les [Paramètres de session](/help/data-views/session-settings.md) dans votre vue de données. D’autres conteneurs de sessions, par exemple entre le conteneur Compte et le conteneur Événement , ne sont actuellement pas générés et pris en charge. Consultez le tableau ci-dessous pour une description et une utilisation de base des conteneurs B2B.
 
-![B2B](assets/b2b-containers.svg){zoomable="yes"}
+![B2B](assets/b2b-containers.png){zoomable="yes"}
 
 | Conteneur B2B | Description<br/>Cas d’utilisation de base |
 |---|---|
 | Compte | Une entreprise qui est un client ou un client potentiel de votre entreprise. L&#39;entreprise peut être une filiale ou une division d&#39;une organisation plus grande. Le compte représente l&#39;organisation à laquelle vous vendez et que vous souhaitez suivre au niveau de cette organisation. |
 | Compte global (facultatif) | Société mère principale d&#39;un groupe de sociétés liées. Un compte global n&#39;a pas de société mère, mais peut avoir des filiales ou des divisions appartenant au compte global. Lorsque le conteneur Compte global est configuré dans votre connexion, un compte qui n’a pas de parent ou de filiale doit être répertorié dans les champs Compte et Compte global . |
 | Opportunité (facultatif) | Ensemble de produits et de services qui sont vendus ensemble. Une opportunité impliquait souvent différentes étapes du cycle de vente jusqu&#39;à la clôture de la vente.<br>Vous utiliseriez les données pour mesurer la progression de l’opportunité via le funnel de ventes. Par exemple, un rapport qui fournit des détails sur les principales opportunités qui sont passées de l’étape 3 à l’étape 4. |
-| Groupe d&#39;achat (facultatif) | Ensemble de personnes au sein d’une organisation qui participent au processus de prise de décision pour l’achat d’un produit ou d’un service. <br/>Vous pouvez utiliser les données des groupes d&#39;achats pour effectuer le suivi des groupes d&#39;achats via la gestion de campagnes. Par exemple, créez un segment d’audience de groupes d’achats clés.<br/> Vous souhaitez très probablement effectuer une recherche à partir du groupe d&#39;achat dans les données de profil, afin de pouvoir créer des rapports sur les personnes d&#39;un groupe d&#39;achat. |
+| Groupe d&#39;achat (facultatif) | Ensemble de personnes au sein d’une organisation qui participent au processus de prise de décision pour l’achat d’un produit ou d’un service. <br/>Vous pouvez utiliser les données des groupes d&#39;achats pour effectuer le suivi des groupes d&#39;achats via la gestion de campagnes. Par exemple, créez un segment d’audience de groupes d’achats clés.<br/> Vous souhaitez probablement effectuer une recherche à partir du groupe d&#39;achat dans les données de profil, afin de pouvoir créer des rapports sur les personnes d&#39;un groupe d&#39;achat. |
 | Personne | Personne, souvent identifiée par une adresse e-mail unique, qui a interagi avec l’entreprise. <br/>Vous pouvez utiliser les données de profil pour identifier les personnes qui travaillent pour un compte. Par exemple : ciblez toutes les personnes d’un compte qui se sont inscrites à une conférence. |
 
 >[!IMPORTANT]
@@ -74,7 +79,7 @@ Vous pouvez utiliser les conteneurs B2B pour des fonctionnalités B2B spécifiqu
 
 * **Attribution** : vous pouvez utiliser les nouveaux conteneurs B2B dans [panneau d’attribution](/help/analysis-workspace/c-panels/attribution.md), dans [paramètres des composants d’attribution](/help/data-views/component-settings/attribution.md), dans [mesures calculées](/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md) ou dans [colonnes d’un tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md). Les recherches en amont de comptes sont étendues à 13 mois.
 
-* **Visualisations** : les visualisations [Abandon](/help/analysis-workspace/visualizations/fallout/fallout-flow.md), [Flux](/help/analysis-workspace/visualizations/c-flow/flow.md), [Zone de travail de Parcours &#x200B;](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) et [Tableau de cohorte](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) prennent en charge les nouveaux conteneurs B2B. Par exemple : vous pouvez utiliser les nouveaux conteneurs pour comprendre comment les groupes d’achats consomment du contenu ou comment les cohortes d’opportunités se rapprochent de la conclusion d’une vente.
+* **Visualisations** : les visualisations [Abandon](/help/analysis-workspace/visualizations/fallout/fallout-flow.md), [Flux](/help/analysis-workspace/visualizations/c-flow/flow.md), [Zone de travail de Parcours ](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) et [Tableau de cohorte](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) prennent en charge les nouveaux conteneurs B2B. Par exemple : vous pouvez utiliser les nouveaux conteneurs pour comprendre comment les groupes d’achats consomment du contenu ou comment les cohortes d’opportunités se rapprochent de la conclusion d’une vente.
 Vous pouvez également définir le conteneur par défaut pour ces visualisations dans les [préférences utilisateur](/help/analysis-workspace/user-preferences.md#visualizations-preferences).
 
 Les segments, l’attribution et les visualisations ainsi que les conteneurs B2B vous aident à obtenir des analyses et des informations B2B approfondies.
@@ -87,13 +92,13 @@ Le B2B de Customer Journey Analytics fait la distinction entre les types de donn
 | Type de données | Série temporelle | Enregistrements de conteneur | Enregistrements de champ |
 |---|---|---|---|
 | **Jeux de données** | **Jeux de données d’événements**<br/> Par exemple :<ul><li>Analyse numérique</li><li>Événements CRM</li><li>Événements en personne</li><li>Données du centre d’appels</li></ul> | **Jeux de données de profil**<br/> Par exemple :<ul><li>Enregistrements CRM</li><li>Enregistrements B2B AJO</li><li>Enregistrements CDP</li><ul> | **Classifications**<br/> Par exemple :<ul><li>Enregistrements de campagne</li><li>Enregistrements de listes marketing</li><li>Métadonnées de contenu</li><li>Enregistrements de produit</li></ul> |
-| Exigences | **Horodatage**<br> Chaque enregistrement nécessite :<ul><li>ID de compte</li><li>Identifiant de compte global (facultatif)</li></ul> | **Identifiant de compte**<br> Les enregistrements ont besoin d&#39;un identifiant de conteneur, comme :<ul><li>Compte</li><li>Personne</li><li>Opportunité</li><li>Groupe d’achat</li></ul> | **Clé correspondante**<br> Les enregistrements ont besoin d&#39;un identifiant contenu dans un conteneur ou un jeu de données d&#39;événement, comme :<ul><li>ID de campagne</li><li>Identifiant de contenu</li><li>ID de produit</li></ul> |
+| Exigences | **Horodatage**<br> Chaque enregistrement nécessite :<ul><li>Identifiant de compte</li><li>Identifiant de compte global (facultatif)</li></ul> | **Identifiant de compte**<br> Les enregistrements ont besoin d&#39;un identifiant de conteneur, comme :<ul><li>Compte</li><li>Personne</li><li>Opportunité</li><li>Groupe d’achat</li></ul> | **Clé correspondante**<br> Les enregistrements ont besoin d&#39;un identifiant contenu dans un conteneur ou un jeu de données d&#39;événement, comme :<ul><li>Identifiant de la campagne</li><li>ID de contenu</li><li>ID de produit</li></ul> |
 
 {style="table-layout:fixed"}
 
 Exemple de connexion basée sur un compte dans Customer Journey Analytics B2B edition :
 
-![Exemple de connexion basée sur un compte](assets/b2b-datasets.svg)
+![Exemple de connexion basée sur un compte](assets/b2b-datasets.png)
 
 Customer Journey Analytics B2B edition propose l’interface [Carte des connexions](/help/connections/create-connection.md#connection-map) pour vous donner un aperçu des relations entre les jeux de données dans votre connexion.
 
