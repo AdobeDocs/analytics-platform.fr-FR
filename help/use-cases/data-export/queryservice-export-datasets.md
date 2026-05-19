@@ -5,9 +5,24 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 14a90758-91eb-4610-8802-1edfdb8b9689
-source-git-commit: 20ead546897ad517840f95a5ec4dcd7f830afe8c
+TQID: https://experienceleague.adobe.com/J-5oxLDw4sLVFcXYQhN5cpTkH76C5wAfWFECrIydb-s
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
 workflow-type: tm+mt
-source-wordcount: '2642'
+source-wordcount: 3355
 ht-degree: 10%
 
 ---
@@ -30,7 +45,7 @@ L’exportation de données à l’aide de Query Service (Data Distiller) et de 
 - la définition d’une **requête planifiée** qui génère les données de votre flux de données en tant que jeu de données de sortie ![jeu de données de sortie](../assets/output-dataset.svg), à l’aide de **Query Service**.
 - en définissant une **exportation planifiée de jeu de données** qui exporte le jeu de données de sortie vers une destination d’espace de stockage, à l’aide de **exportation de jeu de données**.
 
-![Flux de données](../assets/queryservice-export-datasets.svg)
+![Flux de données](../assets/queryservice-export-datasets.png)
 
 
 ## Conditions préalables
@@ -49,7 +64,7 @@ Experience Platform Query Service vous permet d’interroger et de joindre n’i
 
 Vous pouvez utiliser Query Service [interface utilisateur](https://experienceleague.adobe.com/fr/docs/experience-platform/query/ui/overview), un [client connecté par le biais du protocole PostgresQL](https://experienceleague.adobe.com/fr/docs/experience-platform/query/clients/overview) ou [API RESTful](https://experienceleague.adobe.com/fr/docs/experience-platform/query/api/getting-started) pour créer et planifier des requêtes qui collectent les données de votre flux de données.
 
-### Créer une requête
+### Créer la requête
 
 Vous pouvez utiliser toutes les fonctionnalités du langage SQL ANSI standard pour les instructions SELECT et d’autres commandes limitées afin de créer et d’exécuter des requêtes qui génèrent les données de votre flux de données. Voir [Syntaxe SQL](https://experienceleague.adobe.com/fr/docs/experience-platform/query/sql/syntax) pour plus d’informations. Au-delà de cette syntaxe SQL, Adobe prend en charge :
 
@@ -107,7 +122,7 @@ Selon l’implémentation de , les données au niveau de l’accès généraleme
 | `geo\_*` | `placeContext.geo.* ` | chaîne, nombre | Données de géolocalisation, comme le pays, la région, la ville, etc |
 | `event_list` | `commerce.purchases`, `commerce.productViews`, `commerce.productListOpens`, `commerce.checkouts`, `commerce.productListAdds`, `commerce.productListRemovals`, `commerce.productListViews`, `_experience.analytics.event101to200.*`, ..., `_experience.analytics.event901_1000.*` | string | Événements commerciaux et personnalisés standard déclenchés sur l’accès. |
 | `page_event` | `web.webInteraction.type` | string | Le type d’accès qui est envoyé dans la demande d’image (accès standard, lien de téléchargement, lien de sortie ou lien personnalisé sur lequel le visiteur a cliqué). |
-| `page_event` | `web.webInteraction.linkClicks.value` | Nombre | Le type d’accès qui est envoyé dans la demande d’image (accès standard, lien de téléchargement, lien de sortie ou lien personnalisé sur lequel le visiteur a cliqué). |
+| `page_event` | `web.webInteraction.linkClicks.value` | number | Le type d’accès qui est envoyé dans la demande d’image (accès standard, lien de téléchargement, lien de sortie ou lien personnalisé sur lequel le visiteur a cliqué). |
 | `page_event_var_1` | `web.webInteraction.URL` | string | Variable utilisée uniquement dans les demandes d’image de suivi de liens. Cette variable contient l’URL du lien de téléchargement, de sortie ou personnalisé sur lequel a cliqué l’utilisateur. |
 | `page_event_var_2` | `web.webInteraction.name` | string | Variable utilisée uniquement dans les demandes d’image de suivi de liens. Répertorie le nom personnalisé du lien, s’il est spécifié. |
 | `paid_search` | `search.isPaid` | booléen | Indicateur défini si l’accès correspond à la détection des référencements payants. |
@@ -121,7 +136,7 @@ Les données collectées dans les jeux de données via Experience Platform Edge 
 
 Voir [Comparer le traitement des données dans Adobe Analytics et Customer Journey Analytics](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/data-processing-comparisons) pour un aperçu des différences de traitement des données.
 
-Le type de données de colonne de préfixe `post_`, lorsqu’il est collecté dans le lac de données Experience Platform, nécessite toutefois des transformations avancées avant de pouvoir être utilisé avec succès dans un cas d’utilisation de flux de données. L’exécution de ces transformations avancées dans vos requêtes implique l’utilisation de [fonctions définies par Adobe](https://experienceleague.adobe.com/fr/docs/experience-platform/query/sql/adobe-defined-functions) pour la transformation en sessions, l’attribution et la déduplication. Voir [Exemples](#examples) pour savoir comment utiliser ces fonctions.
+Le type de données de colonne de préfixe `post_`, lorsqu’il est collecté dans le lac de données Experience Platform, nécessite toutefois des transformations avancées avant de pouvoir être utilisé avec succès dans un cas d’utilisation de flux de données. L’exécution de ces transformations avancées dans vos requêtes implique l’utilisation de [fonctions définies par &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/query/sql/adobe-defined-functions) pour la transformation en sessions, l’attribution et la déduplication. Voir [Exemples](#examples) pour savoir comment utiliser ces fonctions.
 
 #### Recherches
 
@@ -362,8 +377,8 @@ Les destinations suivantes de stockage dans le cloud sont prises en charge :
 
 - [Azure Data Lake Storage Gen2](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/catalog/cloud-storage/adls-gen2)
 - [Zone d’atterrissage des données](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone)
-- [Google Cloud Storage](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/catalog/cloud-storage/google-cloud-storage)
-- [Amazon S3](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/catalog/cloud-storage/amazon-s3)
+- [Google Cloud Storage](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/catalog/cloud-storage/google-cloud-storage)
+- [Amazon S3](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/catalog/cloud-storage/amazon-s3)
 - [Azure Blob](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/catalog/cloud-storage/azure-blob)
 - [SFTP](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/catalog/cloud-storage/sftp)
 

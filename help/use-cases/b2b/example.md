@@ -5,10 +5,22 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: e8ebf5e7-0b80-4d46-8a5f-b7ae832eda4f
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+TQID: https://experienceleague.adobe.com/vtwD-kgpmITrgGmc3SsY-xLkukMLtfwiyDWqc-OAQsI
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
 workflow-type: tm+mt
-source-wordcount: '1373'
-ht-degree: 12%
+source-wordcount: 1417
+ht-degree: 13%
 
 ---
 
@@ -48,7 +60,7 @@ La relation entre les schémas de recherche B2B, le schéma de profil et le sch�
 
 Pour garantir une configuration appropriée d’une connexion qui prend en charge les recherches basées sur la personne de vos données B2B, utilisez l’illustration suivante pour obtenir un aperçu et procédez comme suit :
 
-![Schémas B2B annotés](assets/b2b-schemas-annotated.svg)
+![Schémas B2B annotés](assets/b2b-schemas-annotated.png)
 
 1. Ajoutez des jeux de données du tableau ci-dessus à votre connexion.
 1. Pour chaque jeu de données de recherche que vous ajoutez à votre connexion, vous devez définir explicitement la relation avec un jeu de données d’événement à l’aide de la **[!UICONTROL Clé]** et de la **[!UICONTROL Clé correspondante]** dans la boîte de dialogue **[!UICONTROL Modifier le jeu de données]**.
@@ -72,10 +84,10 @@ Pour garantir une configuration appropriée d’une connexion qui prend en charg
    | Jeu de données d’opportunité B2B | | Source Key <br/>**opportunitéKey.sourceKey**&#x200B;❷ | SourceKey<br/>(jeu de données de relation d’opportunité B2B)<br/>**opportunitéKey.sourceKey**&#x200B;❷ |
    | Jeu De Données De Campagne B2B | | SourceKey <br/>**campaignKey.sourceKey**&#x200B;❸ | SourceKey<br/>(jeu de données de membre de campagne B2B)<br/>**campaignKey.sourceKey**&#x200B;❸<br/> |
    | Jeu De Données De Liste Marketing B2B | | SourceKey <br/>**marketingListKey.sourceKey**&#x200B;❹ | SourceKey<br/>(jeu de données de membre de la liste marketing B2B)<br/>**marketingListKey.sourceKey**&#x200B;❹ |
-   | Jeu De Données Relation Personne-Compte B2B | | SourceKey <br/>**personKey.sourceKey**&#x200B;❺ | Clé Source<br/>(jeux de données d’événements)<br/>**personKey.sourceKey**&#x200B;❺ |
-   | Jeu De Données De Relation De La Personne Avec L’Opportunité B2B | | SourceKey <br/>**personKey.sourceKe** y❻ | Clé Source<br/>(jeux de données d’événements)<br/>**personKey.sourceKey**&#x200B;❻ |
-   | Jeu De Données De Membre De Campagne B2B | | SourceKey <br/>**personKey.sourceKey**&#x200B;❼ | Clé Source<br/>(jeux de données d’événements)<br/>**personKey.sourceKey**&#x200B;❼ |
-   | Jeu De Données De Membre De La Liste Marketing B2B | | SourceKey <br/>**personKey.sourceKey**&#x200B;❽ | Clé Source<br/>(jeux de données d’événements)<br/>**personKey.sourceKey**&#x200B;❽ |
+   | Jeu De Données Relation Personne-Compte B2B | | SourceKey <br/>**personKey.sourceKey**&#x200B;❺ | Clé <br/>(jeux de données d’événements)<br/>**personKey.sourceKey**&#x200B;❺ |
+   | Jeu De Données De Relation De La Personne Avec L’Opportunité B2B | | SourceKey <br/>**personKey.sourceKe** y❻ | Clé <br/>(jeux de données d’événements)<br/>**personKey.sourceKey**&#x200B;❻ |
+   | Jeu De Données De Membre De Campagne B2B | | SourceKey <br/>**personKey.sourceKey**&#x200B;❼ | Clé <br/>(jeux de données d’événements)<br/>**personKey.sourceKey**&#x200B;❼ |
+   | Jeu De Données De Membre De La Liste Marketing B2B | | SourceKey <br/>**personKey.sourceKey**&#x200B;❽ | Clé <br/>(jeux de données d’événements)<br/>**personKey.sourceKey**&#x200B;❽ |
 
 {style="table-layout:auto"}
 
@@ -99,11 +111,11 @@ Vous pouvez, par exemple, ajouter les composants suivants à votre vue de donné
 |---|---|---|---|
 | Chiffre d’affaires du compte annuel | Jeu De Données De Compte B2B | Double | accountOrganization.annualRevenue.amount |
 | Nombre d’employés | Jeu De Données De Compte B2B | Nombre entier | accountOrganization.numberOfEmployees |
-| Coût réel de la campagne | Jeu De Données De Campagne B2B | Double | actualCost.amount |
+| Coût réel de la campagne | Jeu De Données De Campagne B2B | Double | realCost.amount |
 | Coût budgété de la campagne | Jeu De Données De Campagne B2B | Double | budgetedCost.amount |
 | Chiffre d’affaires d’opportunité attendu | Jeu de données d’opportunité B2B | Double | expectedRevenue.amount |
 | Chiffre d’affaires de campagne attendu | Jeu De Données De Campagne B2B | Double | expectedRevenue.amount |
-| Montant de l’opportunité | Jeu de données d’opportunité B2B | Double | opportunityAmount.amount |
+| Montant de l’opportunité | Jeu de données d’opportunité B2B | Double | opportunitéAmount.amount |
 
 +++
 

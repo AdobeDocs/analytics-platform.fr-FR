@@ -5,10 +5,17 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: b861f765-b18d-4be2-b4c7-c66186d37d99
-source-git-commit: 9fef1fddbb4b51efb9282e3ef13501bd498a4546
+TQID: https://experienceleague.adobe.com/0R5S0Bmx8nJxyCRFycmkEm0KN-43zlRYEDHdKSO-IR4
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
 workflow-type: tm+mt
-source-wordcount: '848'
-ht-degree: 7%
+source-wordcount: 1187
+ht-degree: 6%
 
 ---
 
@@ -22,7 +29,7 @@ Cet article décrit comment le [!DNL Customer Journey Analytics Export datasets]
 
 L’exportation de données à l’aide de [!DNL Experience Platform Export datasets] vous permet d’exporter des données de vos vues de données Customer Journey Analytics vers n’importe quelle destination d’espace de stockage.
 
-Extension ![BI](../assets/export-datasets.svg)
+Extension ![BI](../assets/export-datasets.png)
 
 ## Informations supplémentaires
 
@@ -32,8 +39,8 @@ Les destinations suivantes de stockage dans le cloud sont prises en charge :
 
 - [Azure Data Lake Storage Gen2](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/catalog/cloud-storage/adls-gen2)
 - [Zone d’atterrissage des données](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone)
-- [Google Cloud Storage](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/catalog/cloud-storage/google-cloud-storage)
-- [Amazon S3](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/catalog/cloud-storage/amazon-s3#changelog)
+- [Google Cloud Storage](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/catalog/cloud-storage/google-cloud-storage)
+- [Amazon S3](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/catalog/cloud-storage/amazon-s3#changelog)
 - [Azure Blob](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/catalog/cloud-storage/azure-blob#changelog)
 - [SFTP](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/catalog/cloud-storage/sftp#changelog)
 

@@ -5,10 +5,17 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 exl-id: 7729c1b9-b3ed-4662-a446-2088389bbd97
-source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
+TQID: https://experienceleague.adobe.com/I7-bKS2jErVibrBHHfItc9oivAy1TJaVtKs7U3pSS78
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 3%
+source-wordcount: 521
+ht-degree: 10%
 
 ---
 
@@ -18,10 +25,10 @@ Pour prendre en charge les recherches basées sur la personne sur les données B
 
 Cette transformation n’est disponible que pour les jeux de données contenant des données pour les schémas de recherche B2B, en fonction des classes suivantes :
 
-* [Relation avec la personne du compte professionnel XDM](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/classes/b2b/business-account-person-relation)
-* [Relation de la personne avec l’opportunité commerciale XDM](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/classes/b2b/business-opportunity-person-relation)
-* [Membres de la liste marketing professionnelle XDM](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
-* [Membres de la campagne commerciale XDM](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/classes/b2b/business-campaign-members)
+* [Relation Personne/Compte d’entreprise XDM](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/classes/b2b/business-account-person-relation)
+* [Relation Personne/XDM Business Opportunity](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/classes/b2b/business-opportunity-person-relation)
+* [Membres de la liste XDM Business Marketing](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
+* [Membres de XDM Business Campaign](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/classes/b2b/business-campaign-members)
 
 >[!NOTE]
 >
@@ -52,7 +59,7 @@ Pour activer la transformation pour un jeu de données de recherche B2B :
 
 * Sélectionnez **[!UICONTROL Transformer le jeu de données pour les recherches B2B]**.
 
-  Cette option transforme le jeu de données afin qu’il puisse être utilisé pour les recherches basées sur la personne dans les scénarios B2B.
+  Cette option transforme le jeu de données afin qu’il puisse être utilisé pour les recherches basées sur les personnes dans les scénarios B2B.
 
 
   >[!IMPORTANT]
@@ -71,4 +78,4 @@ Les jeux de données non transformés, pour les schémas basés sur les quatre c
 
 La transformation modifie le jeu de données de chacune des quatre classes de schéma (orange dans l’illustration ci-dessous) de sorte que pour chaque identifiant de personne, un tableau (d’objet) soit créé pour les données pertinentes (comptes, opportunités, listes marketing ou campagnes) dans les jeux de données de recherche (rose dans l’illustration ci-dessous). Cette transformation permet un fonctionnement correct des recherches basées sur l’ID de personne.
 
-![Schémas B2B](./assets/b2b-schemas.svg)
+![Schémas B2B](./assets/b2b-schemas.png)
