@@ -6,30 +6,14 @@ role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
 autotag-review: '2026-05-19T09:53:18.849Z'
 TQID: 'https://experienceleague.adobe.com/wZ8vtE4BFc1ahBKdblSEAXBofZBPObbSJi4bA9MtxPY'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-  - id: c18d9e03-ac7d-4811-9c92-3e92ddc70ade
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: c36ff804490eb79387a50feedaedc36a611fcd20
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bcc5edb5-84c3-4940-9f84-ed88b6c16274id: c18d9e03-ac7d-4811-9c92-3e92ddc70adeid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d00e9f03-e50b-4162-b143-0c0817c937c2id: d3cdead0-685a-4489-9250-4bb709942f66id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 347135b036e8232f3c93c57c845f6c5491a75918
 workflow-type: tm+mt
-source-wordcount: 21144
+source-wordcount: 21131
 ht-degree: 98%
 
 ---
@@ -406,7 +390,7 @@ Les modèles suivants sont disponibles :
 >[!CONTEXTUALHELP]
 >id="template--content-analytics"
 >title="Découvrez le contenu et les attributs de contenu les plus performants."
->abstract="**Cela peut vous aider** à découvrir comment votre contenu se comporte à un niveau granulaire. Vous pouvez examiner les performances de ressources individuelles ou d’attributs spécifiques. Content Analytics utilise l’IA pour générer automatiquement des attributs et baliser votre contenu avec ceux-ci. <a href="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/content-analytics/content-analytics" target="_blank">En savoir plus.</a><br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre de tâches, comme promouvoir des ressources hautement performantes sur votre page d’accueil, personnaliser le contenu pour des segments spécifiques afin d’inclure des attributs hautement performants ou remplacer le contenu qui a commencé à devenir obsolète."
+>abstract="**Cela peut vous aider** à découvrir comment votre contenu se comporte à un niveau granulaire. Vous pouvez examiner les performances de ressources individuelles ou d’attributs spécifiques. Content Analytics utilise l’IA pour générer automatiquement des attributs et baliser votre contenu avec ceux-ci.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre de tâches, comme promouvoir des ressources hautement performantes sur votre page d’accueil, personnaliser le contenu pour des segments spécifiques afin d’inclure des attributs hautement performants ou remplacer le contenu qui a commencé à devenir obsolète."
 
 
 Les modèles suivants sont disponibles :
@@ -1103,7 +1087,7 @@ Les modèles suivants sont disponibles :
 
 | Nom du modèle | Pourquoi utiliser ce modèle <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
-| Présentation de [!UICONTROL **&#x200B;**] | Analysez l’interaction clientèle à travers les schémas de conversation, les commentaires des utilisateurs et utilisatrices, et l’efficacité de vos recommandations. <p>**Cela peut vous aider** à identifier les schémas d’engagement, à évaluer la qualité de la conversation, à suivre les tendances de satisfaction client et à mesurer l’efficacité des recommandations de liens.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme affiner les réponses de votre agent IA, développer du contenu ciblé pour les problèmes fréquents, améliorer les algorithmes de recommandation ou créer des parcours spécialisés pour différents segments d’utilisateurs et d’utilisatrices.</p> |
+| Présentation de [!UICONTROL ****] | Analysez l’interaction clientèle à travers les schémas de conversation, les commentaires des utilisateurs et utilisatrices, et l’efficacité de vos recommandations. <p>**Cela peut vous aider** à identifier les schémas d’engagement, à évaluer la qualité de la conversation, à suivre les tendances de satisfaction client et à mesurer l’efficacité des recommandations de liens.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme affiner les réponses de votre agent IA, développer du contenu ciblé pour les problèmes fréquents, améliorer les algorithmes de recommandation ou créer des parcours spécialisés pour différents segments d’utilisateurs et d’utilisatrices.</p> |
 | **Réunions B2B** | Suivez le cycle de vie complet des demandes de réunion B2B. Surveillez les taux de conversion, évaluez les performances de réservation des consultants et identifiez vos canaux de génération de leads les plus efficaces. <p>**Cela peut vous aider** à suivre les taux de conversion des réunions, à identifier les membres de l’équipe les plus performants, à comprendre les tendances saisonnières du comportement de réservation et à identifier les URL de pages qui génèrent les demandes de réunion les plus importantes. </p><p>**En fonction de ce que vous avez appris** vous pouvez effectuer un certain nombre de tâches, comme optimiser votre processus de demande de réunion, redistribuer les ressources vers des URL de page à conversion élevée, développer une formation ciblée pour les consultants ayant des taux de réservation plus faibles, ou mettre en œuvre de nouvelles stratégies pour réduire les réunions manquées.</p> |
 
 
