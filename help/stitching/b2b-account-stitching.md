@@ -20,9 +20,9 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: ff99ee131e9bae9fc2815fb54e5b5c14577450f7
+source-git-commit: 5964c5f87364e5ba78e866d753819d7e7f605b30
 workflow-type: tm+mt
-source-wordcount: 994
+source-wordcount: 1169
 ht-degree: 2%
 
 ---
@@ -39,7 +39,7 @@ Sans assemblage de comptes, tout événement qui ne contient pas d’identifiant
 
 L’assemblage de comptes effectue les opérations suivantes sur vos jeux de données :
 
-* **Élever l’identité de la personne** : l’ID de personne sur chaque événement est élevé à l’espace de noms d’identité de votre choix à l’aide du graphique d’identité.
+* **Élever l’identité de la personne** : l’ID de personne sur chaque événement est élevé à l’espace de noms d’identité configuré à l’aide du graphique d’identité.
 * **Ajouter les informations de compte manquantes** : pour les événements contenant un ID de personne, le [mappage personne à compte](#prerequisites) est utilisé pour dériver et ajouter les informations de compte. Toutes les informations de compte sur l’événement lui-même sont utilisées comme méthode de secours.
 
 ## Conditions préalables
@@ -54,11 +54,44 @@ Avant d’activer l’assemblage de comptes B2B, préparez les jeux de données 
 >
 >Le champ ID de personne de votre jeu de données **[!UICONTROL personne à compte]** doit être marqué comme une identité dans votre schéma.
 
-## Activer l’assemblage des comptes
+## Activer l’assemblage des comptes {#enable-account-stitching}
 
 Vous activez et configurez l’assemblage des comptes B2B au niveau de la connexion, puis activez l’assemblage des comptes sur des jeux de données d’événement individuels au sein de cette connexion.
 
-### Configurer les paramètres d’assemblage B2B
+### Configurer les paramètres d’assemblage B2B {#configure-b2b-stitching-settings}
+
+>[!CONTEXTUALHELP]
+>id="connection_b2b_stitching_open_configuration"
+>title="Configurer l’assemblage des comptes B2B"
+>abstract="Sélectionnez **[!UICONTROL Ouvrir la configuration de groupement B2B]** pour configurer le groupement de comptes B2B. Si la connexion n’est pas encore enregistrée, la configuration est étiquetée avec **[!UICONTROL _Modifications non enregistrées_]**."
+
+>[!CONTEXTUALHELP]
+>id="connection_b2b_stitching_person_identifier_namespace"
+>title="Espace de noms de l’identifiant de personne"
+>abstract="Sélectionnez un espace de noms d’identifiant de personne, par exemple E-mail, auquel vous souhaitez élever tout ID de personne."
+
+>[!CONTEXTUALHELP]
+>id="connection_b2b_stitching_person_to_account_dataset"
+>title="Jeu de données de personne à compte"
+>abstract="Sélectionnez le jeu de données de recherche qui mappe les ID de personne aux ID de compte."
+
+>[!CONTEXTUALHELP]
+>id="connection_b2b_stitching_person"
+>title="Personne"
+>abstract="Sélectionnez le champ du jeu de données contenant l’ID de personne. Ce champ doit être marqué comme une identité et ne peut pas être identique au champ **[!UICONTROL Compte]** ou **[!UICONTROL Heure de début]**."
+
+>[!CONTEXTUALHELP]
+>id="connection_b2b_stitching_account"
+>title="Compte"
+>abstract="Sélectionnez le champ du jeu de données contenant l’identifiant de compte. Ce champ ne peut pas être identique au champ **[!UICONTROL Personne]** ou **[!UICONTROL Heure de début]**."
+
+>[!CONTEXTUALHELP]
+>id="connection_b2b_stitching_start_time"
+>title="Heure de début"
+>abstract="Sélectionnez un champ d’horodatage qui indique le moment où la relation personne à compte est devenue active."
+>additional-url=""
+>additional-url=""
+
 
 1. Dans Customer Journey Analytics, accédez à **[!UICONTROL Connexions]** et [créer une connexion](/help/connections/create-connection.md#create-a-connection) ou [modifier une connexion existante](/help/connections/create-connection.md#edit-a-connection).
 
@@ -85,9 +118,9 @@ Vous activez et configurez l’assemblage des comptes B2B au niveau de la connex
       | Champ | Obligatoire | Description |
       |---|:---:|---|
       | **[!UICONTROL Jeu de données Personne à compte]** | ![Obligatoire](/help/assets/icons/Required.svg) | Sélectionnez la recherche (jeu de données d’enregistrement ou de série non temporelle) qui mappe les personnes aux comptes. |
-      | **[!UICONTROL Champ Personne]** | ![Obligatoire](/help/assets/icons/Required.svg) | Sélectionnez le champ du jeu de données contenant l’ID de personne. Ce champ doit être marqué comme une identité et ne peut pas être identique au champ **[!UICONTROL Compte]** ou **[!UICONTROL Heure de début]**. |
-      | **[!UICONTROL Champ de compte]** | ![Obligatoire](/help/assets/icons/Required.svg) | Sélectionnez le champ du jeu de données contenant l’identifiant de compte. Ce champ ne peut pas être identique au champ **[!UICONTROL Personne]** ou **[!UICONTROL Heure de début]**. |
-      | **Champ Heure de début** | | Sélectionnez un champ d’horodatage qui indique le moment où la relation personne à compte est devenue active. |
+      | **[!UICONTROL Personne]** | ![Obligatoire](/help/assets/icons/Required.svg) | Sélectionnez le champ du jeu de données contenant l’ID de personne. Ce champ doit être marqué comme une identité et ne peut pas être identique au champ **[!UICONTROL Compte]** ou **[!UICONTROL Heure de début]**. |
+      | **[!UICONTROL Compte]** | ![Obligatoire](/help/assets/icons/Required.svg) | Sélectionnez le champ du jeu de données contenant l’identifiant de compte. Ce champ ne peut pas être identique au champ **[!UICONTROL Personne]** ou **[!UICONTROL Heure de début]**. |
+      | **Heure de début** | | Sélectionnez un champ d’horodatage qui indique le moment où la relation personne à compte est devenue active. |
 
       >[!NOTE]
       >
@@ -99,6 +132,15 @@ Vous activez et configurez l’assemblage des comptes B2B au niveau de la connex
 
 
 ### Activer l’assemblage B2B sur les jeux de données d’événement
+
+
+>[!CONTEXTUALHELP]
+>id="connection_b2b_stitching_enable_person_to_account"
+>title="Activer l’assemblage des comptes de personne à personne"
+>abstract="Si cette option est activée, ce jeu de données utilise l’assemblage de comptes B2B. L’ID de personne sélectionné est utilisé pour rechercher l’ID de compte en fonction du jeu de données personne à compte.<br/>Si désactivé, ce jeu de données n’utilise *pas* l’assemblage de comptes B2B."
+>additional-url=""
+>additional-url=""
+
 
 Après avoir configuré l’assemblage B2B au niveau de la connexion, vous devez activer l’assemblage de comptes B2B individuellement pour chaque jeu de données d’événement que vous souhaitez assembler.
 
