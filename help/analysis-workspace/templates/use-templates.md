@@ -27,7 +27,7 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: bdc5b3671b5810419b13a42b0ba138f9dffc34cb
+source-git-commit: 18fb93e93ec714e6a9d64010309eba0f2ff5593a
 workflow-type: tm+mt
 source-wordcount: 21144
 ht-degree: 98%
@@ -406,7 +406,7 @@ Les modèles suivants sont disponibles :
 >[!CONTEXTUALHELP]
 >id="template--content-analytics"
 >title="Découvrez le contenu et les attributs de contenu les plus performants."
->abstract="**Cela peut vous aider** à découvrir comment votre contenu se comporte à un niveau granulaire. Vous pouvez examiner les performances de ressources individuelles ou d’attributs spécifiques. Content Analytics utilise l’IA pour générer automatiquement des attributs et baliser votre contenu avec ceux-ci. [Informations supplémentaires](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/content-analytics/content-analytics){target="_blank"}.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre de tâches, comme promouvoir des ressources hautement performantes sur votre page d’accueil, personnaliser le contenu pour des segments spécifiques afin d’inclure des attributs hautement performants ou remplacer le contenu qui a commencé à devenir obsolète."
+>abstract="**Cela peut vous aider** à découvrir comment votre contenu se comporte à un niveau granulaire. Vous pouvez examiner les performances de ressources individuelles ou d’attributs spécifiques. Content Analytics utilise l’IA pour générer automatiquement des attributs et baliser votre contenu avec ceux-ci. [Informations supplémentaires](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/content-analytics/content-analytics).<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre de tâches, comme promouvoir des ressources hautement performantes sur votre page d’accueil, personnaliser le contenu pour des segments spécifiques afin d’inclure des attributs hautement performants ou remplacer le contenu qui a commencé à devenir obsolète."
 
 
 Les modèles suivants sont disponibles :
