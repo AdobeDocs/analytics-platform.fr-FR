@@ -5,10 +5,26 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 80139806-618a-46ff-b2c4-32d7bb85a526
-source-git-commit: b54083d85c0e07605c567a8d44824884cdc18c4d
+TQID: https://experienceleague.adobe.com/ST-1vL8gbeSqaYYHakxjYWcDOryNucEVHiONAQk7gU4
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '5014'
-ht-degree: 15%
+source-wordcount: 4858
+ht-degree: 16%
 
 ---
 
@@ -50,7 +66,7 @@ Vous utilisez les exemples de données de résumé suivants pour ce cas d’util
 | 17 | Campagne 321 | 20 | 2500 | def321 | facebook | def-adgroup | 2024-07-:20:39.000Z |
 | 18 | Campagne 321 | 15 | 2250 | ghi321 | facebook | ghi-adgroup | 2024-07-:20:39.000Z |
 
-[![DataDownload](/help/assets/icons/DataDownload.svg)](./assets/summary-data.csv)
+[![DataDownload](/help/assets/icons/DataDownload.svg) Télécharger des exemples de données de résumé](./assets/summary-data.csv)
 
 +++
 
@@ -249,7 +265,7 @@ Les données d’événement sont disponibles dans l’exemple de jeu de donnée
 | 2024-07-:15:39+00:00 | 178 | page de confirmation | person-142def654 |  | 1 | 174,25 |
 | 2024-07-:15:39+00:00 | 179 | Page d’accueil | person-143ghi654 | ghi654 |  |  |
 
-[![DataDownload](/help/assets/icons/DataDownload.svg)](./assets/event-data.csv)
+[![DataDownload](/help/assets/icons/DataDownload.svg) Télécharger des exemples de données d’événement](./assets/event-data.csv)
 
 +++
 
@@ -278,7 +294,7 @@ Les données de recherche sont disponibles dans l’exemple de jeu de données d
 | 17 | def321 | def-adgroup | Campagne 321 |
 | 18 | ghi321 | ghi-adgroup | Campagne 321 |
 
-[![DataDownload](/help/assets/icons/DataDownload.svg)](./assets/lookup-data.csv)
+[![DataDownload](/help/assets/icons/DataDownload.svg) Télécharger des exemples de données de recherche](./assets/lookup-data.csv)
 +++
 
 >[!INFO]
@@ -293,7 +309,7 @@ Un schéma récapitulatif des données est nécessaire dans Experience Platform.
 
 Pour créer un schéma de synthèse dans Experience Platform :
 
-1. Sélectionnez **&#x200B;**&#x200B;dans le champ   ![App](/help/assets/icons/Apps.svg)   sélecteur d’applications.
+1. Sélectionnez **&#x200B;**&#x200B;dans le sélecteur d’applications ![App](/help/assets/icons/Apps.svg).
 1. Sélectionnez **[!UICONTROL Schémas]** dans le rail de gauche.
 1. Sélectionnez ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Create schema]**.
 1. Sélectionnez **[!UICONTROL Manuel]** dans la boîte de dialogue **[!UICONTROL Créer un schéma]**. Utilisez ensuite **[!UICONTROL Sélectionner]** pour continuer.
@@ -342,7 +358,7 @@ Pour stocker vos données de résumé dans Experience Platform, vous devez d’a
 
 Pour créer un jeu de données, procédez comme suit :
 
-1. Sélectionnez **&#x200B;**&#x200B;dans le champ   ![App](/help/assets/icons/Apps.svg)   sélecteur d’applications.
+1. Sélectionnez **&#x200B;**&#x200B;dans le sélecteur d’applications ![App](/help/assets/icons/Apps.svg).
 1. Sélectionnez **[!UICONTROL Jeux de données]** dans le rail de gauche.
 1. Sélectionnez ![AjouterCercle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Créer un jeu de données]**.
 1. Dans l’écran **[!UICONTROL Jeux de données]** > **[!UICONTROL Créer des jeux de données]**, sélectionnez **[!UICONTROL Créer un jeu de données à partir d’un schéma]**.
@@ -356,7 +372,7 @@ Un écran affiche les détails de votre nouveau jeu de données.
 
 Pour charger vos données d’exemple dans ce jeu de données :
 
-1. Sélectionnez **&#x200B;**&#x200B;dans le champ   ![App](/help/assets/icons/Apps.svg)   sélecteur d’applications.
+1. Sélectionnez **&#x200B;**&#x200B;dans le sélecteur d’applications ![App](/help/assets/icons/Apps.svg).
 1. Sélectionnez **[!UICONTROL Workflows]** dans le rail de gauche.
    1. Sélectionnez **[!UICONTROL Mapper CSV à un schéma XDM]** dans les options **[!UICONTROL Ingestion des données]** de l’écran **[!UICONTROL Workflows]**.
    1. Sélectionnez **[!UICONTROL Launch]** dans le panneau **[!UICONTROL Mapper CSV à un schéma XDM]**.
@@ -386,7 +402,7 @@ Dans **[!UICONTROL Sources]** > **[!UICONTROL Flux de données - XX/XX/XXXX, XX:
 Pour utiliser vos données d’exemple dans Customer Journey Analytics, vous devez créer une connexion qui inclut l’Exemple de jeu de données de résumé à partir d’Experience Platform.
 
 
-1. Sélectionnez **&#x200B;**&#x200B;dans le champ   ![App](/help/assets/icons/Apps.svg)   sélecteur d’applications.
+1. Sélectionnez **&#x200B;**&#x200B;dans le sélecteur d’applications ![App](/help/assets/icons/Apps.svg).
 1. Sélectionnez **[!UICONTROL Connexions]**, éventuellement à partir de **[!UICONTROL Gestion des données]**, dans le menu supérieur.
 1. Sélectionnez **[!UICONTROL Créer une connexion]**.
 1. Dans **[!UICONTROL Connexions]** > **[!UICONTROL Connexion sans titre]** :
@@ -427,7 +443,7 @@ Les données des jeux de données sont ajoutées à Customer Journey Analytics, 
 
 Au bout d’un certain temps, vérifiez que les données de vos jeux de données sont correctement chargées dans Customer Journey Analytics.
 
-1. Sélectionnez **&#x200B;**&#x200B;dans le champ   ![App](/help/assets/icons/Apps.svg)   sélecteur d’applications.
+1. Sélectionnez **&#x200B;**&#x200B;dans le sélecteur d’applications ![App](/help/assets/icons/Apps.svg).
 1. Sélectionnez **[!UICONTROL Connexions]**, éventuellement à partir de **[!UICONTROL Gestion des données]**, dans le menu supérieur.
 1. Sélectionnez votre connexion, par exemple **[!UICONTROL Exemple de connexion à l’aide de données récapitulatives]**.
 1. Sélectionnez une période appropriée dans les détails **[!UICONTROL Connexion]** > **[!UICONTROL Exemple de connexion à l’aide de données de résumé]**.
@@ -442,7 +458,7 @@ Dans la liste des **[!UICONTROL Jeux de données]**, les valeurs de la colonne *
 
 Pour que vous puissiez générer des rapports sur les données correctes dans Workspace, vous devez créer une vue de données contenant les mesures et dimensions pertinentes.
 
-1. Sélectionnez **&#x200B;**&#x200B;dans le champ   ![App](/help/assets/icons/Apps.svg)   sélecteur d’applications.
+1. Sélectionnez **&#x200B;**&#x200B;dans le sélecteur d’applications ![App](/help/assets/icons/Apps.svg).
 1. Sélectionnez **[!UICONTROL Vues de données]**, éventuellement à partir de **[!UICONTROL Gestion des données]**, dans le menu supérieur.
 1. Sélectionnez **[!UICONTROL Créer une vue de données]**.
 1. Dans **[!UICONTROL Vues de données]**, parcourez les écrans de l’assistant pour configurer votre vue de données.
@@ -468,7 +484,7 @@ Pour que vous puissiez générer des rapports sur les données correctes dans Wo
          | Nom du composant | Jeu de données | Type de données de schéma | Chemin du schéma |
          |---|---|---|---|
          | Groupe publicitaire (recherche) | Exemple de jeu de données de recherche | Chaîne | *_tenant*.ad_group |
-         | Groupe publicitaire | Exemple de jeu de données de résumé | Chaîne | *_tenant*.ad_group |
+         | Groupe d&#39;annonces | Exemple de jeu de données de résumé | Chaîne | *_tenant*.ad_group |
          | Identifiant De La Campagne | Exemple de jeu de données de résumé | Chaîne | *_tenant*.campaign_id |
          | Nom De La Campagne (Recherche) | Exemple de jeu de données de recherche | Chaîne | *_tenant*.campaign_name |
          | Nom de la campagne | Exemple de jeu de données de résumé | Chaîne | *_tenant*.campaign_name |
@@ -541,7 +557,7 @@ Vous avez maintenant configuré votre vue de données pour créer des rapports a
 
 Pour créer des rapports sur vos données de synthèse, créez un projet dans Analysis Workspace.
 
-1. Sélectionnez **&#x200B;**&#x200B;dans le champ   ![App](/help/assets/icons/Apps.svg)   sélecteur d’applications.
+1. Sélectionnez **&#x200B;**&#x200B;dans le sélecteur d’applications ![App](/help/assets/icons/Apps.svg).
 1. Sélectionnez **&#x200B;**&#x200B;dans le menu supérieur.
 1. Sélectionnez **[!UICONTROL Créer un projet]**.
 1. Sélectionnez **[!UICONTROL Projet Workspace vierge]** dans la boîte de dialogue avec les options de création d’un projet Workspace vierge.
@@ -602,5 +618,5 @@ Votre projet final doit ressembler à celui illustré ci-dessous.
 
 >[!MORELIKETHIS]
 >
->[Données de résumé](/help/data-views/summary-data.md)
+>[Données récapitulatives](/help/data-views/summary-data.md)
 >[Résumé des paramètres des composants de groupe de données](/help/data-views/component-settings/summary-data-group.md)

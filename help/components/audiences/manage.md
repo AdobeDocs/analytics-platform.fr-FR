@@ -4,9 +4,19 @@ description: Apprenez à gérer les audiences dans Customer Journey Analytics
 exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
 feature: Audiences
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+TQID: https://experienceleague.adobe.com/SVEj1knpMzmtkIlwAYSb6o0PYBR9wf7JbrLMcMM2V8g
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: 774
 ht-degree: 97%
 
 ---
@@ -123,4 +133,4 @@ Le panneau Filtrer se compose des sections suivantes.
 
 | Balises | Description |
 |---|---|
-| ![Étiquettes](/help/components/audiences/assets/audiences-filter-tags.png){width="300"} | La section **[!UICONTROL Balises]** permet de filtrer par balise. <ul><li>Utilisez la fonction ![Rechercher](/help/assets/icons/Search.svg) pour rechercher les balises à utiliser pour le filtrage. |
+| ![Balises](/help/components/audiences/assets/audiences-filter-tags.png){width="300"} | La section **[!UICONTROL Balises]** permet de filtrer par balise. <ul><li>Utilisez la fonction ![Rechercher](/help/assets/icons/Search.svg) pour rechercher les balises à utiliser pour le filtrage. |

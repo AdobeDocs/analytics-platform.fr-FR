@@ -4,10 +4,21 @@ title: Comparaison des dates
 feature: Calendar
 exl-id: 08113536-658f-486b-ac56-6c531240c3c2
 role: User
-source-git-commit: 5a9cb206076755d5b34a8ec9108ca88a9468bfe3
+TQID: https://experienceleague.adobe.com/LhPSvchJbDMPV-HmGSA2JaBZxoPQ7UyEKd7GMS-33UU
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '757'
-ht-degree: 86%
+source-wordcount: 770
+ht-degree: 90%
 
 ---
 
@@ -17,14 +28,14 @@ Dans Analysis Workspace, la comparaison de dates vous permet de prendre n’impo
 
 ## Comparer des périodes
 
-Une analyse ne peut pas avoir lieu sans contexte. Il arrive souvent que ce contexte découle d’une période précédente. Par exemple, la question *Dans quelle mesure votre situation est-elle meilleure ou pire qu’à la même époque l’année dernière ?* est essentielle pour bien comprendre vos activités. La comparaison des dates inclut automatiquement une colonne *différence*, qui présente le pourcentage de changement par rapport à une période donnée.
+Une analyse ne peut pas avoir lieu sans contexte. Il arrive souvent que ce contexte découle d’une période précédente. Par exemple, la question *Dans quelle mesure votre situation s’est-elle améliorée ou détériorée par rapport à la même période l’an dernier ?* est essentiel à la compréhension de votre entreprise. La comparaison des dates inclut automatiquement une colonne *différence*, qui présente le pourcentage de changement par rapport à une période donnée.
 
 1. Créez un [tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md), avec les dimensions et mesures à comparer sur une certaine période.
-1. Définissez la période sur le panneau ou la colonne pour déterminer la période de comparaison, et s’il s’agit d’une comparaison de temps fixe ou variable.
+1. Définissez la période sur le panneau ou la colonne pour déterminer la période de comparaison, et s’il s’agit d’une comparaison de temps fixe ou flottante.
 
-   Pour créer une comparaison des heures flottante, définissez la période du panneau ou de la colonne sur une période flottante (par exemple, **[!UICONTROL 7 derniers jours]**, **[!UICONTROL 30 derniers jours]**, etc.).
+   Pour créer une comparaison de temps flottante, définissez la période du panneau ou de la colonne sur une période flottante (par exemple, **[!UICONTROL 7 derniers jours]**, **[!UICONTROL 30 derniers jours]**, etc.).
 
-   Pour créer une comparaison d’heures fixe, définissez la période du panneau ou de la colonne sur une période personnalisée.
+   Pour créer une comparaison de temps fixe, définissez la période du panneau ou de la colonne sur une période personnalisée.
 
 1. Ouvrez le menu contextuel d’une ligne de tableau et sélectionnez **[!UICONTROL Comparer des périodes]**.
 
@@ -44,7 +55,7 @@ Une analyse ne peut pas avoir lieu sans contexte. Il arrive souvent que ce conte
 
    >[!NOTE]
    >
-   >Lorsque vous sélectionnez un nombre de jours personnalisé (par exemple, du 7 au 20 octobre, soit 14 jours), seules deux options sont proposées : **[!UICONTROL 14 jours précédant cette période]** et **[!UICONTROL Période personnalisée à cette période]**.
+   >Lorsque vous sélectionnez un nombre de jours personnalisé (par exemple, du 7 au 20 octobre, soit 14 jours), seules deux options sont proposées : **[!UICONTROL 14 jours précédant cette période]** et **[!UICONTROL Période personnalisée à cette période]**.
 
 1. La comparaison qui en résulte ressemble à ceci :
 
@@ -64,7 +75,7 @@ Vous pouvez désormais ajouter une période à chaque colonne d’un tableau, ce
 
    | Option | Description |
    |---|---|
-   | **[!UICONTROL *x* semaines/mois/trimestres/années précédant cette période]** | Ajoute une colonne avec la semaine/le mois/etc. précédant immédiatement cette période. |
+   | **[!UICONTROL *x* semaines/mois/trimestres/années précédant cette période]** | Ajoutez une colonne avec la semaine/le mois/etc. juste avant cette période. |
    | **[!UICONTROL Ces *x* semaines/mois/trimestres/années l’année dernière à cette période]** | Ajoute la même période il y a un an. |
    | **[!UICONTROL Période personnalisée à cette période]** | Permet de créer une période personnalisée. |
 

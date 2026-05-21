@@ -5,9 +5,22 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 1f5b2a42-162e-45a7-9fd4-8c1557f48bb8
 role: Admin
-source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
+TQID: https://experienceleague.adobe.com/xuzVDUksBsFfN8ZvuDhAuYSR7n30DKZJeNMTUskkG9w
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '2054'
+source-wordcount: 2054
 ht-degree: 99%
 
 ---
@@ -170,7 +183,7 @@ Lorsque vous sélectionnez l’onglet [!UICONTROL **Demande**], les colonnes sui
 | [!UICONTROL **Durée d’exécution**] | Durée d’exécution de la requête. |
 | [!UICONTROL **Heure de début**] | Heure à laquelle le traitement de la demande a commencé (en fonction de l’heure locale de l’administrateur ou de l’administratrice). |
 | [!UICONTROL **Temps d’attente**] | Durée pendant laquelle la demande a été en attente avant d’être traitée. Cette valeur est généralement à « 0 » lorsque la capacité est suffisante. |
-| [!UICONTROL **Application**] | Les applications prises en charge par le [!UICONTROL Gestionnaire des activités de rapport] sont les suivantes : <ul><li>Interface utilisateur d’Analysis Workspace</li><li>Projets planifiés d’espace de travail</li><li>Report Builder</li><li>Interfaces d’utilisation des créateurs : Segment, Mesures calculées, Annotations, Audiences, etc.</li><li>Appels API à partir de la version d’API 2.0</li><li>Alertes<li>Export du tableau complet</li><li>Liens de partage avec tout le monde</li><li>Analyse guidée</li><li>Toute autre application interrogeant le moteur de création de rapports Analytics</li></li></ul><p>**Note :** si la valeur de cette colonne est [!UICONTROL **Inconnu**], cela signifie que les métadonnées de la demande ne sont pas disponibles pour l’utilisateur ou l’utilisatrice.</p> |
+| [!UICONTROL **Application**] | Les applications prises en charge par le [!UICONTROL Gestionnaire des activités de rapport] sont les suivantes : <ul><li>Interface utilisateur d’Analysis Workspace</li><li>Projets planifiés d’espace de travail</li><li>Report Builder</li><li>Interfaces d’utilisation des créateurs : Segment, Mesures calculées, Annotations, Audiences, etc.</li><li>Appels API à partir de la version d’API 2.0</li><li>Alertes<li>Export du tableau complet</li><li>Liens de partage avec tout le monde</li><li>Analyse guidée</li><li>Toute autre application interrogeant le moteur de création de rapports Analytics</li></li></ul><p>**Note :** si la valeur de cette colonne est [!UICONTROL **Inconnu**], cela signifie que les métadonnées de la requête ne sont pas disponibles pour l’utilisateur ou l’utilisatrice.</p> |
 | [!UICONTROL **Utilisateur ou utilisatrice**] | Personne qui a lancé la demande. <p>**Note :** si la valeur de cette colonne est [!UICONTROL **Inconnu**], cela signifie que les métadonnées de la requête ne sont pas disponibles pour l’utilisateur ou l’utilisatrice.</p> |
 | [!UICONTROL **Projet**] | Noms de projets Workspace enregistrés, ID de rapports d’API, etc. (Les métadonnées peuvent varier d’une application à l’autre.)<p>**Note :** si la valeur de cette colonne est [!UICONTROL **Inconnu**], cela signifie que le projet n’a pas été enregistré ou que les métadonnées de la requête ne sont pas disponibles pour l’utilisateur ou l’utilisatrice.</p> |
 | [!UICONTROL **Statut**] | Indicateurs de statut : <ul><li>**En cours d’exécution** : la demande est en cours de traitement.</li><li>**En attente** : la demande est en attente de traitement.</li></ul> |

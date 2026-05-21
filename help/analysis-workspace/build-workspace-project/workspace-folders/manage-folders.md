@@ -5,13 +5,21 @@ title: Gérer les dossiers
 feature: Workspace Basics
 exl-id: dcc78e0e-49d6-40bf-a606-9a7f3f19911c
 role: User
-source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+TQID: https://experienceleague.adobe.com/YNvjUk6kW4s7DwgpQSnU5R5ifPnpsavl0EJ84qqvAXI
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2:
+  - id: a8b1c240-f315-46e3-b813-f545c4279dd1
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '428'
-ht-degree: 86%
+source-wordcount: 431
+ht-degree: 81%
 
 ---
-
 
 # Gestion des dossiers
 
@@ -72,11 +80,11 @@ Pour supprimer des dossiers dans Workspace,
 
    1. Sélectionnez **[!UICONTROL Supprimer]** dans les [actions](/help/analysis-workspace/build-workspace-project/freeform-overview.md#actions) disponibles dans le menu contextuel ![Plus](/help/assets/icons/More.svg) du dossier sélectionné, ou dans la barre d’actions bleue.
 
-   1. Dans la boîte de dialogue **[!UICONTROL Souhaitez-vous confirmer ?]**, sélectionnez **[!UICONTROL OK]** pour supprimer les dossiers.
+   1. Dans le **[!UICONTROL Êtes-vous sûr(e) ?]** , sélectionnez **[!UICONTROL OK]** pour supprimer les dossiers.
 
 * Sélectionnez le dossier que vous souhaitez supprimer.
 
    1. Sélectionnez **[!UICONTROL Supprimer le dossier]** dans ![Plus](/help/assets/icons/More.svg) dans la [zone de titre](/help/analysis-workspace/build-workspace-project/freeform-overview.md#title-area).
 
-   1. Dans la boîte de dialogue **[!UICONTROL Supprimer *nom* du dossier ?]**, sélectionnez **[!UICONTROL OK]**.
+   1. Dans le dossier **[!UICONTROL Supprimer *nom* ?]** , sélectionnez **[!UICONTROL OK]**.
 

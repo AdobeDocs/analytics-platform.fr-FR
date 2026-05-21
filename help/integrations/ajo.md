@@ -4,10 +4,25 @@ description: Importez les données générées par Adobe Journey Optimizer et 
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: 830e16ecd4c43da114c63af51e4bb6e88bbb4ff8
+TQID: https://experienceleague.adobe.com/kmZ-AYMcKxwZftFSqJQpTH3zDTDT1CxlNw-MVO6Ikn4
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '3770'
-ht-degree: 93%
+source-wordcount: 3841
+ht-degree: 90%
 
 ---
 
@@ -230,7 +245,7 @@ Vous pouvez créer les mesures suivantes dans une vue de données pour obtenir u
 | Mesure de déduplication (AJO) | Mesure de déduplication | Jeu de données d’événement d’expérience de suivi de notification push AJO, événements d’étape de parcours, jeu de données d’événement de commentaires sur les messages AJO, jeu de données d’événement d’expérience de suivi d’e-mail AJO | `_id` | Type de composant : mesure |
 | Diffusé (AJO) | Nombre total de messages diffusés. | Jeu de données d’événement d’expérience de suivi de notification push AJO, événements d’étape de parcours, jeu de données d’événement de commentaires sur les messages AJO, jeu de données d’événement d’expérience de suivi d’e-mail AJO | Champs dérivés | Type de composant : mesure (champ dérivé) |
 | Refusé (AJO) | Compte chaque fois que le message in-app est fermé par le SDK Adobe, quelle que soit l’action choisie par la personne finale pour le fermer. | Jeu de données d’événement d’expérience de suivi de notification push AJO, événements d’étape de parcours, jeu de données d’événement de commentaires sur les messages AJO, jeu de données d’événement d’expérience de suivi d’e-mail AJO | `_experience.decisioning.`<br/>`propositionEventType.dismiss` | Type de composant : mesure |
-| Affichages (AJO) | Ce nombre indique les affichages des messages AJO. Cela inclut les ouvertures d’e-mail, les affichages web et les affichages in-app. Les plateformes mobiles ne signalent pas les SMS et les affichages de messages push. Elles ne sont donc pas comptabilisées. | Jeu de données d’événement de suivi de notification push AJO, événements d’étape de parcours, jeu de données d’événement d’expérience de suivi d’e-mail AJO, jeu de données d’événement de commentaires pour les messages AJO | Champs dérivés | Type de composant : mesure (champ dérivé) |
+| Affichages (AJO) | Ce nombre affiche les messages AJO. Cela inclut les ouvertures d’e-mail, les affichages web et les affichages in-app. Les plateformes mobiles ne signalent pas les affichages de SMS et de messages push, ils ne sont donc pas comptabilisés. | Jeu de données d’événement de suivi de notification push AJO, événements d’étape de parcours, jeu de données d’événement d’expérience de suivi d’e-mail AJO, jeu de données d’événement de commentaires pour les messages AJO | Champs dérivés | Type de composant : mesure (champ dérivé) |
 | Ouvertures d’e-mail (AJO) | Nombre total d’ouvertures d’e-mail | Jeu de données d’événement d’expérience de suivi d’e-mail AJO | `_experience.customerJourneyManagement.`<br/>`messageInteraction.interactionType` | Type de composant : mesure |
 | Clics entrants (AJO) | Nombre total de clics sur les canaux entrants | Jeu de données d’événement d’expérience de suivi de notification push AJO, événements d’étape de parcours, jeu de données d’événement de commentaires sur les messages AJO, jeu de données d’événement d’expérience de suivi d’e-mail AJO | `_experience.decisioning.`<br/>`propositionEventType.interact` | Type de composant : mesure |
 | Rejets entrants (AJO) | Nombre total de rejets sur les canaux entrants | Jeu de données d’événement d’expérience de suivi de notification push AJO, événements d’étape de parcours, jeu de données d’événement de commentaires sur les messages AJO, jeu de données d’événement d’expérience de suivi d’e-mail AJO | `_experience.decisioning.`<br/>`propositionEventType.dismiss` | Type de composant : mesure |
@@ -254,8 +269,8 @@ Vous pouvez créer les mesures suivantes dans une vue de données pour obtenir u
 | Taux de plaintes relatives au spam (AJO) | Nombre total de plaintes relatives au spam | Jeu de données d’événement d’expérience de suivi d’e-mail AJO | `_experience.customerJourneyManagement.`<br/>`messageInteraction.interactionType` | Type de composant : mesure |
 | Ajouts à la liste d’abonnements (AJO) | Nombre total d’ajouts à la liste d’abonnements. | Jeu de données d’événement d’expérience de suivi d’e-mail AJO | Champs dérivés | Type de composant : mesure (champ dérivé) |
 | Suppressions de la liste d’abonnements (AJO) | Nombre total de suppressions de la liste d’abonnements. | Jeu de données d’événement d’expérience de suivi d’e-mail AJO | Champs dérivés | Type de composant : mesure (champ dérivé) |
-| Ciblé (AJO) | Nombre de fois où une proposition a été ciblée sur une personne. Il s’agit du nombre de fois où une proposition a été envisagée d’être affichée pour une personne. | Jeu de données d’événement d’expérience de suivi de notification push AJO, événements d’étape de parcours, jeu de données d’événement de commentaires sur les messages AJO, jeu de données d’événement d’expérience de suivi d’e-mail AJO | Champs dérivés | Type de composant : mesure (champ dérivé) |
-| Déclenché (AJO) | La proposition a été choisie pour être affichée par le SDK Adobe. D’autres facteurs peuvent empêcher son affichage réel. | Jeu de données d’événement d’expérience de suivi de notification push AJO, événements d’étape de parcours, jeu de données d’événement de commentaires sur les messages AJO, jeu de données d’événement d’expérience de suivi d’e-mail AJO | `_experience.decisioning.`<br/>`propositionEventType.trigger` | Type de composant : mesure |
+| Ciblé (AJO) | Nombre de fois où une proposition a été ciblée sur une personne. Il s&#39;agit du nombre de fois où une proposition a été envisagée pour être présentée à une personne. | Jeu de données d’événement d’expérience de suivi de notification push AJO, événements d’étape de parcours, jeu de données d’événement de commentaires sur les messages AJO, jeu de données d’événement d’expérience de suivi d’e-mail AJO | Champs dérivés | Type de composant : mesure (champ dérivé) |
+| Déclenché (AJO) | La proposition a été choisie pour être affichée par Adobe SDK. D’autres facteurs peuvent l’empêcher de s’afficher réellement. | Jeu de données d’événement d’expérience de suivi de notification push AJO, événements d’étape de parcours, jeu de données d’événement de commentaires sur les messages AJO, jeu de données d’événement d’expérience de suivi d’e-mail AJO | `_experience.decisioning.`<br/>`propositionEventType.trigger` | Type de composant : mesure |
 | Visiteurs et visiteuses uniques dans l’expérience (AJO) | Visiteurs et visiteuses uniques dans l’expérience | Jeu de données d’entité AJO | `_experience.customerJourneyManagement.`<br/>`entities.experiment.experimentId` | Type de composant : mesure |
 | Désabonnements (AJO) | Nombre total de désabonnements | Jeu de données d’événement d’expérience de suivi d’e-mail AJO | `_experience.customerJourneyManagement.`<br/>`messageInteraction.interactionType` | Type de composant : mesure |
 

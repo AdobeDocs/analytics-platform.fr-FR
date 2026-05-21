@@ -4,9 +4,21 @@ description: Découvrez comment gérer les annotations dans Workspace.
 feature: Components
 exl-id: 12f2cc2f-477c-4f16-afdd-b0db84725b32
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+TQID: https://experienceleague.adobe.com/46ewVgVmZKjyURw5hEa6au2KwLloRJCPXi3axy1bu6Q
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+  - id: fa6ac035-8403-478b-9ce1-3fe29d211fca
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: 765
 ht-degree: 91%
 
 ---
@@ -40,7 +52,7 @@ La ➊ Liste des annotations affiche toutes les annotations que vous possédez, 
 | **[!UICONTROL Vue de données]** | Les vues de données auxquelles cette annotation s’applique. |
 | **[!UICONTROL Propriétaire]** | La personne propriétaire de l’annotation. En tant qu’utilisateur ou utilisatrice, vous ne pouvez consulter que les annotations que vous possédez ou celles qui ont été partagées avec vous. |
 | **[!UICONTROL Période appliquée]** | La date ou la période à laquelle cette annotation s’applique. |
-| **[!UICONTROL Étiquettes]** | Les étiquettes de cette annotation. |
+| **[!UICONTROL Balises]** | Les étiquettes de cette annotation. |
 | **[!UICONTROL Partagé avec]** | Les individus ou les groupes avec lesquels vous avez partagé l’annotation. Sélectionnez cette option pour ouvrir la boîte de dialogue **[!UICONTROL Partager le composant]**. |
 | **[!UICONTROL Date de modification]** | Affiche la date et l’heure de la dernière modification de l’annotation. |
 
@@ -69,7 +81,7 @@ La barre de filtres affiche ➌ les filtres actifs (le cas échéant). Vous pouv
 
 ### Panneau Filtrer
 
-Vous pouvez filtrer les annotations à l’aide du **[!UICONTROL du panneau de gauche]** Filtrer➍. Le panneau Filtrer affiche le type de filtre et le nombre d’annotations qui correspondent au filtre. Sélectionnez ![Filtrer](/help/assets/icons/Filter.svg) pour afficher ou masquer le panneau Filtrer.
+Vous pouvez filtrer les annotations à l’aide du ➍ du panneau de gauche **[!UICONTROL Filtrer]**. Le panneau Filtrer affiche le type de filtre et le nombre d’annotations qui correspondent au filtre. Sélectionnez ![Filtrer](/help/assets/icons/Filter.svg) pour afficher ou masquer le panneau Filtrer.
 
 Pour filtrer la liste des filtres :
 

@@ -4,10 +4,28 @@ title: Affichage des informations sur les composants
 feature: Components
 role: User, Admin
 exl-id: 1e538679-12e0-487c-917f-2ff2f1cc8436
-source-git-commit: 5319c0aafa5c92215176044a35953ac1e183eb53
+TQID: https://experienceleague.adobe.com/b-y-D9Ba6SlV0tW8D1btQLWYU32HpKrgG3DIftie1W8
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+  - id: df28738e-9c71-4aa8-929e-edde22340cc6
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '1324'
-ht-degree: 59%
+source-wordcount: 1364
+ht-degree: 60%
 
 ---
 
@@ -31,7 +49,7 @@ Pour afficher des informations sur un composant dans le dictionnaire de données
 
 1. (Facultatif) Dans le champ de recherche, commencez à saisir le nom du composant à afficher.
 
-   Le type de composant peut être identifié par couleur et icône.
+   Le type de composant peut être identifié à la fois par couleur et par icône.
 
    * **Les dimensions** icône ![Dimension](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) sont orange
 
@@ -54,7 +72,7 @@ Pour afficher des informations sur un composant dans le dictionnaire de données
    | [!UICONTROL **Dimensions**] | Afficher uniquement les composants qui sont des dimensions. (Cette option est également disponible dans l’onglet [!UICONTROL **Segments rapides**] lorsque vous accédez au dictionnaire de données pour la première fois). |
    | [!UICONTROL **Mesures**] | Afficher uniquement les composants qui sont des mesures. (Cette option est également disponible dans l’onglet [!UICONTROL **Segments rapides**] lorsque vous accédez au dictionnaire de données pour la première fois). |
    | [!UICONTROL **Segments**] | Afficher uniquement les composants qui sont des segments. (Cette option est également disponible dans l’onglet [!UICONTROL **Segments rapides**] lorsque vous accédez au dictionnaire de données pour la première fois). |
-   | [!UICONTROL **Périodes**] | Afficher uniquement les composants qui sont des périodes. (Cette option est également disponible dans l’onglet [!UICONTROL **Segments rapides**] lorsque vous accédez au dictionnaire de données pour la première fois). |
+   | [!UICONTROL **périodes**] | Afficher uniquement les composants qui sont des périodes. (Cette option est également disponible dans l’onglet [!UICONTROL **Segments rapides**] lorsque vous accédez au dictionnaire de données pour la première fois). |
    | [!UICONTROL **Tout afficher**] | Permet d’afficher tous les composants. Cette option est réservée à l’administration. |
    | [!UICONTROL **Non approuvé**] | Permet de n’afficher que les composants qui n’ont pas encore été marqués comme approuvés par l’administration. Cette option est utile pour l’administration pour identifier les composants qui doivent être examinés et approuvés. Cette option est réservée à l’administration. |
    | [!UICONTROL **Description manquante**] | Afficher uniquement les composants qui n’ont pas encore de description dans le champ de description. Cette option est réservée à l’administration. |
@@ -86,7 +104,7 @@ Pour afficher des informations sur un composant dans le dictionnaire de données
    | [!UICONTROL **Libellé de contexte**] | Ce champ s’affiche uniquement si le libellé de contexte du composant a été mis à jour dans la vue de données. <p>Pour plus d’informations, voir la section [Paramètres des composants](/help/data-views/component-settings/overview.md). </p> |
    | [!UICONTROL **Description**] | Décrit la fonction prévue du composant. (Ces informations sont ajoutées par l’administration Analytics, comme décrit dans la section [Ajouter des descriptions de composant](/help/components/add-component-descriptions.md)). |
    | [!UICONTROL **Fréquemment utilisé avec**] | <p>Affiche les composants les plus couramment utilisés avec le composant que vous visualisez actuellement.</p><p>Jusqu’à 5 composants peuvent s’afficher parmi les 5 types de composants principaux : mesure, mesure calculée, Dimension, segment et période.</p><p>Cette liste est basée sur les données des 90 derniers jours. Seuls les composants que vous êtes en droit de consulter s’affichent.</p><p>L’administration peut personnaliser les composants visibles par les utilisateurs et utilisatrices au sein de cette section en sélectionnant les composants souhaités dans les champs déroulants [!UICONTROL **Toujours inclure**] et [!UICONTROL **Toujours exclure**]. Avant de procéder à la sélection des composants visibles par les utilisateurs et utilisatrices, appliquez le segment **Tout afficher** afin de vous assurer de voir tous les composants, non partagés avec vous, qui ont pu être ajoutés par un autre administrateur ou une autre administratrice.<!-- Soon we will make it so any fields that an admin doesn't have access to will be greyed out, and then they can enable the Show all segment to make it editable. --></p> |
-   | [!UICONTROL **Similaire à**] | <p>Permet d’afficher les composants dotés de noms similaires au composant que vous visualisez actuellement.</p><p>Jusqu’à 5 composants peuvent s’afficher parmi les 5 types de composants principaux : mesure, mesure calculée, Dimension, segment et période.</p><p>Seuls les composants que vous êtes autorisé à consulter s’affichent.</p><p>Tous les composants en double de votre vue de données s’afficheront ici. L’administration d’Analytics doit identifier et supprimer tous les composants en double, comme décrit dans la section [Surveiller l’intégrité du dictionnaire de données](/help/components/data-dictionary/monitor-data-dictionary-health.md).</p><p>L’administration peut personnaliser les composants visibles par les utilisateurs et utilisatrices au sein de cette section en sélectionnant les composants souhaités dans les champs déroulants [!UICONTROL **Toujours inclure**] et [!UICONTROL **Toujours exclure**]. Avant de procéder à la sélection des composants visibles par les utilisateurs et utilisatrices, appliquez le segment **Tout afficher** afin de vous assurer de voir tous les composants, non partagés avec vous, qui ont pu être ajoutés par un autre administrateur ou une autre administratrice.<!-- Soon we will make it so any fields that an admin doesn't have access to will be greyed out, and then they can enable the Show all segment to make it editable. --></p><p>**Remarque :** actuellement, la section **Similaire à** comprend uniquement les composants que vous créez, et non ceux fournis par Adobe. Les composants fournis par Adobe seront ajoutés dans une version ultérieure.</p> |
+   | [!UICONTROL **Similaire à**] | <p>Permet d’afficher les composants dotés de noms similaires au composant que vous visualisez actuellement.</p><p>Jusqu’à 5 composants peuvent s’afficher parmi les 5 types de composants principaux : mesure, mesure calculée, Dimension, segment et période.</p><p>Seuls les composants que vous êtes en droit de consulter s’affichent.</p><p>Tous les composants en double de votre vue de données s’afficheront ici. L’administration d’Analytics doit identifier et supprimer tous les composants en double, comme décrit dans la section [Surveiller l’intégrité du dictionnaire de données](/help/components/data-dictionary/monitor-data-dictionary-health.md).</p><p>L’administration peut personnaliser les composants visibles par les utilisateurs et utilisatrices au sein de cette section en sélectionnant les composants souhaités dans les champs déroulants [!UICONTROL **Toujours inclure**] et [!UICONTROL **Toujours exclure**]. Avant de procéder à la sélection des composants visibles par les utilisateurs et utilisatrices, appliquez le segment **Tout afficher** afin de vous assurer de voir tous les composants, non partagés avec vous, qui ont pu être ajoutés par un autre administrateur ou une autre administratrice.<!-- Soon we will make it so any fields that an admin doesn't have access to will be greyed out, and then they can enable the Show all segment to make it editable. --></p><p>**Remarque :** actuellement, la section **Similaire à** comprend uniquement les composants que vous créez, et non ceux fournis par Adobe. Les composants fournis par Adobe seront ajoutés dans une version ultérieure.</p> |
    | [!UICONTROL **Compatibilité des produits**] | Indique où, dans Customer Journey Analytics, cette mesure calculée peut être utilisée. <p>Les valeurs possibles sont les suivantes :</p><ul><li>[!UICONTROL **Partout dans Customer Journey Analytics**] : la mesure calculée peut être utilisée dans l’ensemble de Customer Journey Analytics, y compris dans Analysis Workspace, Report Builder, etc.</li><li>[!UICONTROL **Partout dans Customer Journey Analytics (à l’exclusion de l’expérimentation)**] : la mesure calculée peut être utilisée dans tout Customer Journey Analytics, sauf dans le panneau Expérimentation.</li> <p>Pour plus d’informations sur les critères qui déterminent si une mesure calculée peut être utilisée avec l’expérimentation, voir [Utiliser des mesures calculées dans le panneau Expérimentation](/help/analysis-workspace/c-panels/experimentation.md#use-calculated-metrics-in-the-experimentation-panel) dans [panneau Expérimentation](/help/analysis-workspace/c-panels/experimentation.md).</p></ul> |
    | [!UICONTROL **Balises**] | Affiche toutes les balises associées au composant. L’administration peut ajouter des balises lors de la modification du composant. |
    | [!UICONTROL **Type de composant**] | Indique le type du composant : dimension, mesure, segment ou période. |

@@ -5,9 +5,16 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: User
 exl-id: 6a05bce1-542c-40d3-bbb0-4a8e561438c9
-source-git-commit: a0251638e66d5a2524418fc17f56dddc4e48accd
+TQID: https://experienceleague.adobe.com/vExsuq2Xwl-heKZr5aPc-4p97LrgnIDCU0GQ3ps3PII
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '949'
+source-wordcount: 953
 ht-degree: 0%
 
 ---
@@ -19,7 +26,7 @@ Dans ce cas d’utilisation, vous souhaitez obtenir le nombre distinct de noms d
 
 +++ Customer Journey Analytics
 
-Pour générer des rapports sur un nombre distinct de noms de produit, configurez une mesure calculée dans Customer Journey Analytics, avec les **&#x200B;**&#x200B;Titre`Product Name (Count Distinct)` **[!UICONTROL et]** Id externe`product_name_count_distinct`.
+Pour générer des rapports sur un nombre distinct de noms de produit, configurez une mesure calculée dans Customer Journey Analytics, avec les `product_name_count_distinct` **[!UICONTROL Titre]** `Product Name (Count Distinct)` et **[!UICONTROL Id externe]**.
 
 ![Mesure calculée Nom du produit Customer Journey Analytics (nombre distinct)](../assets/cja-calc-metric-distinct-count-product-names.png)
 

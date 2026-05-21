@@ -4,9 +4,21 @@ description: Découvrez comment transférer des composants d’une personne à l
 role: Admin
 solution: Customer Journey Analytics
 exl-id: c5ed81ea-1d55-4193-9bb1-a2a93ebde91f
-source-git-commit: 3e521cb4ef532d57b9f408fc12dcf138f130f059
+TQID: https://experienceleague.adobe.com/jjqF5CYG0y7OfRA9oGihAQwXQCOW00gkiEwwbfH3jrU
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+  - id: e4a0bad2-b448-47f1-9fa6-222ebdb3b5b0
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: 856
 ht-degree: 98%
 
 ---
@@ -63,8 +75,7 @@ Le transfert de ressources nécessite l’autorisation de l’administrateur ou 
 
    >[!IMPORTANT]
    >
-   >Ne fermez pas l’écran pendant le transfert pour éviter l’interruption du processus.
-   >Cela garantit une expérience de transfert fluide.
+   >Ne fermez pas l’écran pendant le transfert pour éviter l’interruption du processus. Cela garantit une expérience de transfert fluide.
 
 ## Résultats du transfert
 
@@ -80,7 +91,7 @@ Un transfert peut avoir trois conséquences :
 
 - Services dépendants à l’origine des échecs : le transfert de ressources interagit avec un service différent pour chaque type de composant (par exemple, problèmes réseau, problèmes de service en aval), ce qui peut entraîner un échec partiel ou complet, ou des échecs intermittents.
 
-- Composant manquant ou transféré par une autre personne administratrice : un composant a été supprimé par une autre personne ou transféré par une autre personne administratrice à quelqu’un d’autre, alors qu’une tâche de transfert de ressources était toujours en cours.
+- Composant manquant ou transféré par une autre personne en charge de l’administration : un composant a été supprimé par une autre personne ou transféré par une autre personne en charge de l’administration à quelqu’un d’autre, alors qu’une tâche de transfert de ressources était toujours en cours.
 
 - Le corps POST de l’API ne se remplit pas correctement : un composant peut ne pas être envoyé dans le corps POST de l’API lorsque plusieurs types de composants sont sélectionnés.
 

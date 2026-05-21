@@ -4,10 +4,35 @@ title: Optimisation des performances d’Analysis Workspace
 feature: Workspace Basics
 role: User, Admin
 exl-id: 226afef7-00da-4ac2-be4e-e19995621c61
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+TQID: https://experienceleague.adobe.com/gJaQPkkWeGrjTxlsBV5UoaY8H9quRqc-XrJAxRMSeEU
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: a8b1c240-f315-46e3-b813-f545c4279dd1
+  - id: aff2ef09-fc60-4018-9197-e2befd623064
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+  - id: c38ed341-fab2-46df-9d72-88d8166edebb
+  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+  - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+  - id: e4a0bad2-b448-47f1-9fa6-222ebdb3b5b0
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '2470'
-ht-degree: 42%
+source-wordcount: 2547
+ht-degree: 41%
 
 ---
 
@@ -51,7 +76,7 @@ Les facteurs de navigateur sont les suivants :
 | Vitesse de calcul | La vitesse à laquelle votre ordinateur effectue un test de traitement. La valeur recommandée est inférieure à 750 millisecondes. | Votre matériel ainsi que les programmes simultanés ont un impact sur ce facteur. | Ouvrez le Gestionnaire de tâches (PC) ou le Moniteur d’activité (Mac) de votre ordinateur pour déterminer si des programmes peuvent être fermés. Fermez ensuite les onglets inutilisés du navigateur ou d’autres programmes. <br><br>Si ces actions n’aident pas, discutez des détails matériels avec votre équipe informatique. |
 | Mémoire utilisée | Disponible pour Google Chrome uniquement. Chaque onglet Workspace d’un navigateur Google Chrome partage 4 Go de mémoire au total. Cette mémoire utilisée représente le pourcentage de cette allocation de mémoire qui est consommé par le projet en cours. La consigne est de 3 500 Mo, c’est-à-dire le moment où Workspace commence à afficher les erreurs de mémoire. | Le fait de travailler sur plusieurs onglets ou de télécharger 50000 lignes de données contribue à augmenter l’utilisation de la mémoire. | Si vous recevez une erreur de mémoire, fermez les autres onglets Workspace et/ou exécutez 50 000 téléchargements de ligne, un à la fois. |
 | Stockage local utilisé | Données stockées localement sur votre ordinateur en vue d’être utilisées dans le navigateur. Chaque origine (par exemple, experience.adobe.com) dispose d’une allocation de 10 Mo. | Analysis Workspace utilise l’enregistrement local pour plusieurs fonctions, notamment pour stocker des projets enregistrés automatiquement (existants), des paramètres utilisateur et des indicateurs de fonctionnalité. | Pour vous assurer que les fonctionnalités d’Analysis Workspace ne sont pas perturbées, effacez le stockage local pour le domaine experience.adobe.com. |
-| Vitesse de rendu | Le nombre d’images par seconde désigne le nombre d’images par seconde pendant lequel le navigateur dessine la page sur votre écran. 24 i/s est généralement ce que l’œil humain peut observer. Si l’iOS est inférieur à 24 i/s, vous constatez des problèmes de rendu dans Workspace. | FPS est affecté par le multitâche sur de nombreux projets Workspace à la fois et par la taille du projet en cours de visualisation. D’autres programmes exécutés sur votre ordinateur peuvent avoir un impact, comme la diffusion en continu, les scanneurs en arrière-plan, etc. De plus, votre matériel a un impact sur ce facteur. | Ouvrez le Gestionnaire de tâches (PC) ou le Moniteur d’activité (Mac) de votre ordinateur pour déterminer si des programmes peuvent être fermés. Fermez ensuite les onglets inutilisés du navigateur ou d’autres programmes. <br><br>Si ces actions n’aident pas, discutez des détails matériels avec votre équipe informatique. |
+| Vitesse de rendu | Le nombre d’images par seconde désigne le nombre d’images par seconde pendant lequel le navigateur dessine la page sur votre écran. 24 i/s est généralement ce que l’œil humain peut observer. Si l’iOS est inférieur à 24 i/s, vous constatez des problèmes de rendu dans Workspace. | FPS est affecté par le multitâche sur de nombreux projets Workspace à la fois et par la taille du projet en cours de visualisation. D&#39;autres programmes exécutés sur votre ordinateur peuvent avoir un impact, tels que la diffusion en continu, les scanners en arrière-plan, etc. De plus, votre matériel a un impact sur ce facteur. | Ouvrez le Gestionnaire de tâches (PC) ou le Moniteur d’activité (Mac) de votre ordinateur pour déterminer si des programmes peuvent être fermés. Fermez ensuite les onglets inutilisés du navigateur ou d’autres programmes. <br><br>Si ces actions n’aident pas, discutez des détails matériels avec votre équipe informatique. |
 
 ## Facteurs du projet
 

@@ -5,10 +5,26 @@ solution: Customer Journey Analytics
 feature: Basics
 role: Admin
 exl-id: 17b5842f-dc81-481f-8b21-dc90a133adcf
-source-git-commit: c9d7a4596a842ab7d949364e3469747d20ca15b4
+TQID: https://experienceleague.adobe.com/eqmDvuaNGFj8q2pfKNCzf5-affyrUTYP7MA5UgsRrCI
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+  - id: c38ed341-fab2-46df-9d72-88d8166edebb
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '1623'
-ht-degree: 24%
+source-wordcount: 1674
+ht-degree: 27%
 
 ---
 
@@ -76,7 +92,7 @@ Pour démarrer le workflow :
 
       1. Sélectionnez **[!UICONTROL Terminer]**.
 
-Une fois les données préparées et chargées, vous êtes redirigé vers **[!UICONTROL Jeux de données]** dans l’interface d’Experience Platform.<br/> L’activité **[!UICONTROL Jeu de données]** s’affiche pour votre **[!UICONTROL Exemple de données à partir d’un jeu de données CSV]** avec le statut ![StatutOrange](/help/assets/icons/StatusOrange.svg) **[!UICONTROL Traitement]**.
+Une fois les données préparées et chargées, vous êtes redirigé vers **[!UICONTROL Jeux de données]** dans l’interface d’Experience Platform.<br/> Le **[!UICONTROL Activité du jeu de données]** s’affiche pour votre **[!UICONTROL Exemple de données à partir d’un jeu de données CSV]** avec le statut ![StatutOrange](/help/assets/icons/StatusOrange.svg) **[!UICONTROL Traitement]**.
 
 ![Activité du jeu de données pour les données ad hoc](assets/datasets-dataset-activity.png)
 
@@ -182,7 +198,7 @@ Créer une vue de données :
 
 1. À l’étape **[!UICONTROL Composants]** :
 
-   1. Ajoutez n’importe quel champ de schéma et/ou composant standard que vous souhaitez inclure dans les zones de composant **[!UICONTROL MESURES]** ou **[!UICONTROL DIMENSIONS]**. Veillez à ajouter les champs pertinents du jeu de données contenant les données ad hoc. Pour accéder à ces champs :
+   1. Ajoutez n’importe quel champ de schéma et/ou composant standard que vous voulez inclure dans les zones de composant **[!UICONTROL MESURES]** ou **[!UICONTROL DIMENSIONS]**. Veillez à ajouter les champs pertinents du jeu de données contenant les données ad hoc. Pour accéder à ces champs :
 
       1. Sélectionnez **[!UICONTROL Jeux de données d’événement]**.
       1. Sélectionnez **[!UICONTROL Champs ad hoc et relationnels]**.

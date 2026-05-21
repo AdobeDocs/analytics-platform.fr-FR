@@ -5,10 +5,31 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 976170212fb9904a32db93368fbda5f143f4a462
+TQID: https://experienceleague.adobe.com/vNCqAk1-4e34AJrXqzHJgrTDtly-FZTqOGRISjkX5Q8
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '2281'
-ht-degree: 10%
+source-wordcount: 2441
+ht-degree: 12%
 
 ---
 
@@ -88,7 +109,7 @@ Certaines des fonctionnalités et leur valeur associée pour la limite dépenden
 | Fréquence d’actualisation de l’audience | 4 | Mécanisme de sécurisation mis en œuvre par le système | Fréquence maximale en heures pendant laquelle une [&#x200B; audience &#x200B;](../components/audiences/audiences-overview.md) peut être actualisée. |
 | Intervalle De Recherche En Amont De L’Actualisation D’Audience | 90 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de jours pour l’intervalle de recherche en amont de l’actualisation. |
 | Actualisation de la date d’expiration de l’audience | 13 | Mécanisme de sécurisation mis en œuvre par le système | Le nombre maximal de mois pendant lesquels l’audience cesse d’être actualisée à partir de la date de création. Les clients peuvent prolonger ce délai de 13 mois supplémentaires. |
-| Nombre d’audiences en cours d’actualisation | 75 150 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal d’audiences en cours d’actualisation. La valeur varie en fonction du package Customer Journey Analytics (voir Description du produit). |
+| Nombre d’audiences en cours d’actualisation | 75, 150 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal d’audiences en cours d’actualisation. La valeur varie en fonction du package Customer Journey Analytics (voir Description du produit). |
 
 {style="table-layout:auto"}
 
@@ -134,7 +155,7 @@ Consultez également la section Experience Platform [Mécanismes de sécurisatio
 | Chaînes uniques | 10 millions - 1 milliard | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de clés uniques par jeu de données de recherche. Dépend du package Customer Journey Analytics (voir Description du produit).<ul><li>Fondation : 10 millions.</li><li>Sélectionner : 100 millions.</li><li>Prime : 250 millions.</li><li>Ultimate : 1 milliard</li><ul> |
 | Lignes par personne | 1 million | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de lignes par ID de personne unique au cours d’un mois donné dans une connexion. |
 | Lignes par jour | 2,5 milliards | Mécanisme de sécurisation des performances | Nombre moyen maximal de lignes par jour dans une connexion. |
-| Lignes par connexion par an | Varie selon le centre de données affecté (voir la description pour plus d’informations). | Mécanisme de sécurisation des performances | Limite de lignes par an dans une connexion. Les limites répertoriées ci-dessous sont effectives à compter du 20 janvier 2026 et peuvent augmenter au fil du temps pour autoriser plus de lignes par connexion. <p>La limite des lignes varie comme suit en fonction du centre de données affecté :</p><ul><li>**ÉTATS-UNIS Azure (valeur par défaut pour les clients américains)** : environ 500 milliards (environ 42 milliards par mois)</li><li>**ÉTATS-UNIS AWS (disponible sur demande pour les clients américains)** : environ 30 milliards (environ 2,5 milliards par mois)</li><li>**Amsterdam** : Environ 200 milliards (environ 16,5 milliards par mois)</li><li>**Tous les autres centres de données** : 25 milliards (environ 2 milliards par mois)</li></ul><p>Si vous prévoyez de dépasser ces limites et souhaitez éviter tout problème de dégradation des performances, contactez l’équipe de votre compte Adobe pour discuter des autres configurations.</p><p>Les entreprises peuvent choisir leur centre de données lors de la mise en œuvre initiale d’AEP+Apps. Cette décision est généralement basée sur les propres exigences de résidence des données de chaque client. Tous les cas d’utilisation AEP+Apps (et pas seulement les volumes de lignes dans Customer Journey Analytics) doivent être pris en compte lors du choix d’un centre de données.</p><p>Pour plus d’informations sur l’affichage du centre de données qui vous est affecté, consultez [Emplacements d’hébergement Customer Journey Analytics](/help/technotes/data-centers.md).</p> |
+| Lignes par connexion par an | Varie selon le centre de données affecté (voir la description pour plus d’informations). | Mécanisme de sécurisation des performances | Limite de lignes par an dans une connexion. Les limites répertoriées ci-dessous sont effectives à compter du 20 janvier 2026 et peuvent augmenter au fil du temps pour autoriser plus de lignes par connexion. <p>La limite des lignes varie comme suit en fonction du centre de données affecté :</p><ul><li>**ÉTATS-UNIS Azure (valeur par défaut pour les clients américains)** : environ 500 milliards (environ 42 milliards par mois)</li><li>**ÉTATS-UNIS AWS (disponible sur demande pour les clients américains)** : environ 30 milliards (environ 2,5 milliards par mois)</li><li>**Amsterdam** : Environ 200 milliards (environ 16,5 milliards par mois)</li><li>**Tous les autres centres de données** : 25 milliards (environ 2 milliards par mois)</li></ul><p>Si vous prévoyez de dépasser ces limites et souhaitez éviter tout problème de dégradation des performances, contactez l’équipe de votre compte Adobe pour discuter des autres configurations.</p><p>Les entreprises peuvent choisir leur centre de données lors de la mise en œuvre initiale d’AEP+Apps. Cette décision est généralement basée sur les propres exigences de résidence des données de chaque client. Tous les cas d’utilisation AEP+Apps (et pas seulement les volumes de lignes dans Customer Journey Analytics) doivent être pris en compte lors du choix d’un centre de données.</p><p>Pour plus d’informations sur l’affichage du centre de données qui vous est affecté, consultez [Emplacements d’hébergement &#x200B;](/help/technotes/data-centers.md).</p> |
 | Taille de ligne | 2 | Mécanisme de sécurisation des performances/mécanisme de sécurisation mis en œuvre par le système | Taille moyenne en kilo-octets par ligne de données ingérées dans Customer Journey Analytics (limite conditionnelle). Une limite statique pour la taille des lignes est déterminée par les mécanismes de sécurisation pour l’ingestion des données dans Experience Platform. |
 
 {style="table-layout:auto"}
@@ -271,12 +292,12 @@ Consultez également la section Experience Platform [&#x200B; Mécanismes de sé
 
 | Flux de données | Latence attendue |
 |---|---|
-| Connecteur Adobe Analytics vers Adobe Analytics Source (activé A4T) | &lt; 30 minutes |
+| Connecteur Adobe Analytics vers Adobe Analytics Source (activé A4T) | &lt; 30 minutes |
 | Connecteur Source Adobe Analytics au profil client en temps réel (A4T non activé) | &lt; 2 minutes |
-| Connecteur Adobe Analytics Source au profil client en temps réel (activé pour A4T) | &lt; 30 minutes |
+| Connecteur Adobe Analytics Source au profil client en temps réel (activé pour A4T) | &lt; 30 minutes |
 | Ingestion de données dans le lac de données à partir d’Edge Network ou ingestion par flux | &lt; 60 minutes |
 | Ingestion de données dans le lac de données à partir du connecteur Adobe Analytics Source | &lt; 2,25 heures |
-| Ingestion de données dans Customer Journey Analytics à partir du lac de données | &lt; 90 minutes |
+| Ingestion de données dans Customer Journey Analytics à partir du lac de données | &lt; 90 minutes |
 | Groupement (fonctionnalité facultative ; voir [présentation du groupement](../stitching/overview.md) pour plus d’informations) | &lt; 4 heures |
 | Renvoi du connecteur Adobe Analytics Source de moins de 10 milliards d’événements (maximum de 13 mois de données historiques) | &lt; 4 semaines |
 | Publication d’audiences dans le profil client en temps réel, y compris la création automatique du segment de diffusion en continu et la possibilité pour le segment d’être prêt à recevoir les données. | ≈ 60 minutes |
@@ -284,9 +305,9 @@ Consultez également la section Experience Platform [&#x200B; Mécanismes de sé
 
 | Latences de création de rapports en temps réel | Latence attendue |
 |---|---|
-| SDK/API d’Edge Network dans Edge Network | &lt; 7 minutes |
-| Connecteurs de diffusion en continu | &lt; 17 minutes |
-| Connecteur source Adobe Analytics | &lt; 17 minutes |
+| SDK/API d’Edge Network dans Edge Network | &lt; 7 minutes |
+| Connecteurs de diffusion en continu | &lt; 17 minutes |
+| Connecteur source Adobe Analytics | &lt; 17 minutes |
 | Autres connecteurs source (y compris les données par lots) | &lt; 25 heures |
 
 {style="table-layout:auto"}
