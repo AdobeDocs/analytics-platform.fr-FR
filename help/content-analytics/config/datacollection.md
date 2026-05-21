@@ -133,7 +133,7 @@ Content Analytics gère les identités du canal web de la manière suivante :
 * Le groupement basé sur les champs n’est pas pris en charge, car le schéma est détenu par le système. Vous ne pouvez donc pas ajouter un autre champ au schéma pour prendre en charge le groupement basé sur les champs.
 
 
-Pour vous assurer que les données d’identité Content Analytics et les données d’identité des données Web SDK sont correctement regroupées au niveau du champ, modifiez l’option de rappel de la SDK Web [activé avant l’envoi de l’événement](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/onbeforeeventsend){target="_blank"}.
+Pour vous assurer que les données d’identité Content Analytics et les données d’identité des données Web SDK sont correctement regroupées au niveau du champ, modifiez l’option de rappel de la SDK Web [activé avant l’envoi de l’événement](https://experienceleague.adobe.com/fr/docs/experience-platform/collection/js/commands/configure/onbeforeeventsend){target="_blank"}.
 
 1. Accédez à la propriété **[!UICONTROL Balises]** qui contient l’extension du SDK Web Adobe Experience Platform et l’extension Adobe Content Analytics.
 1. Sélectionnez ![Plug](/help/assets/icons/Plug.svg) **[!UICONTROL Extensions]**.

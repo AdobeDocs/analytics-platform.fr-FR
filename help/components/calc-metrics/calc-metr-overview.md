@@ -33,7 +33,7 @@ Les mesures calculées sont des mesures personnalisées que vous pouvez créer �
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Présentation des mesures calculées](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/components/calc-metrics/introduction-to-calculated-metrics-in-customer-journey-analytics){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Présentation des mesures calculées](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/components/calc-metrics/introduction-to-calculated-metrics-in-customer-journey-analytics){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 
