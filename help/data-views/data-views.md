@@ -5,10 +5,16 @@ exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
+TQID: https://experienceleague.adobe.com/WNPt241AppdCZVtsYmyLM2mRa2nqvrfYFbIP6K5NR1U
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: c38ed341-fab2-46df-9d72-88d8166edebbid: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '1096'
-ht-degree: 93%
+source-wordcount: 1124
+ht-degree: 88%
 
 ---
 
@@ -20,7 +26,7 @@ Une vue de données est un conteneur spécifique à Customer Journey Analytics q
 >
 >Les paramètres que vous sélectionnez ou modifiez dans une vue de données sont rétroactifs et non destructifs. En d’autres termes, ils ne modifient pas définitivement vos données sous-jacentes.
 
-Vous pouvez créer différentes vues de données pour la même connexion, avec des ensembles de composants très différents (dimensions/mesures). Vous pouvez également créer des vues de données avec des paramètres différents pour le délai d’expiration des visites, lʼattribution, etc. Par exemple, vous pouvez avoir une vue de données où toutes les dimensions sont définies sur [!UICONTROL Dernière touche] et, simultanément, une autre vue de données (basée sur le même jeu de données) où toutes les dimensions sont définies sur [!UICONTROL Première touche].
+Vous pouvez créer différentes vues de données pour la même connexion, avec des ensembles de composants très différents (dimensions/mesures). Vous pouvez également créer des vues de données avec différents paramètres pour le délai de visite, l’attribution, etc. Par exemple, vous pouvez avoir une vue de données où toutes les dimensions sont définies sur [!UICONTROL Dernière touche] et, simultanément, une autre vue de données (basée sur le même jeu de données) où toutes les dimensions sont définies sur [!UICONTROL Première touche].
 
 Les projets Espace de travail dans Customer Journey Analytics reposent sur des vues de données.
 
@@ -46,7 +52,7 @@ Les vues de données vous permettent de modifier directement les paramètres des
 * Vous pouvez afficher d’autres informations relatives aux schémas à propos des composants. Par exemple :
 
    * de quel type de jeu de données (événement, profil, recherche, résumé) provient le composant,
-   * le type de schéma (chaîne, entier, etc.) d’où il provient ; et
+   * le type de schéma (chaîne, entier, etc.) elle provient de, et
    * le chemin d’accès au schéma (le champ XDM sur lequel il est basé).
 
 * Vous pouvez baliser un composant pour faciliter sa recherche dans Workspace.
@@ -67,7 +73,7 @@ Les vues de données vous permettent de modifier directement les paramètres des
 
 * Avant de pouvoir créer des vues de données, vous devez [configurer une ou plusieurs connexions aux jeux de données Experience Platform](/help/connections/create-connection.md).
 * Pour créer ou gérer une vue de données, vous devez disposer dʼun [ensemble dʼautorisations dans Adobe Admin Console](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-overview).
-* Si vous utilisez le [connecteur source Adobe Analytics](/help/data-ingestion/analytics.md) ou possédez des connaissances sur Adobe Analytics, vous souhaiterez peut-être comprendre la façon dont les champs de vos schémas et jeux de données se rapportent à leurs équivalents Adobe Analytics. Pour en savoir plus, consultez [Mappages des champs Analytics &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics).
+* Si vous utilisez le [connecteur source Adobe Analytics](/help/data-ingestion/analytics.md) ou possédez des connaissances sur Adobe Analytics, vous souhaiterez peut-être comprendre la façon dont les champs de vos schémas et jeux de données se rapportent à leurs équivalents Adobe Analytics. Pour en savoir plus, consultez [Mappages des champs Analytics ](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics).
 
 ## Paramètres des vue de données que vous pouvez remplacer dans Espace de travail {#settings-override}
 

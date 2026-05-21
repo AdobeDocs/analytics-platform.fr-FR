@@ -5,10 +5,16 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 6bfb7254-5bb7-45c6-86a2-0651a0d222fa
 role: Admin
-source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
+TQID: https://experienceleague.adobe.com/aInqrIT7Z22NV6kkdJkydpPNEEP46Xbc4CQZxXzzcNk
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: c38ed341-fab2-46df-9d72-88d8166edebbid: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d3cdead0-685a-4489-9250-4bb709942f66id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '2356'
-ht-degree: 61%
+source-wordcount: 2447
+ht-degree: 62%
 
 ---
 
@@ -64,7 +70,7 @@ Configurer le schéma :
 
       >[!INFO]
       >
-      >    Un schéma d’événement d’expérience est utilisé pour modéliser le _comportement_ d’un profil (par exemple, nom de scène, bouton sur lequel appuyer pour ajouter au panier). Un schéma de profil individuel est utilisé pour modéliser les _attributs_ de profil (nom, e-mail, sexe, etc.).
+      >    Un schéma d’événement d’expérience est utilisé pour modéliser le _comportement_ d’un profil (par exemple, nom de scène, bouton sur lequel appuyer pour ajouter au panier). Un schéma de profil individuel est utilisé pour modéliser les _attributs_ de profil (nom, e-mail, genre, etc.).
 
    1. Sélectionnez **[!UICONTROL Suivant]**.
 
@@ -87,7 +93,7 @@ Configurer le schéma :
 
    1. Dans la boîte de dialogue [!UICONTROL Ajouter des groupes de champs], sélectionnez le groupe de champs **[!UICONTROL Lumière aveuglante]** dans la liste. Ce groupe de champs est créé pour suivre les progrès de l’utilisateur lors de la lecture d’un jeu fictif intitulé Lumière aveuglante sur une console.
 
-      ![&#x200B; Groupe de champs Lumière aveuglante &#x200B;](assets/schema-fieldgroup-blindinglight.png)
+      ![ Groupe de champs Lumière aveuglante ](assets/schema-fieldgroup-blindinglight.png)
 
       Vous pouvez sélectionner le bouton Aperçu pour afficher un aperçu des champs qui font partie de ce groupe de champs, comme `scores > afterMatch`.
 
@@ -272,7 +278,7 @@ curl -X POST "https://server.adobedc.net/ee/v2/interact?dataStreamId={DATASTREAM
 
 Dans l’exemple de requête POST, `{DATASTREAM_ID}` pointe vers l’identifiant de l’exemple de flux de données que vous avez configuré précédemment. `{sandbox}` est le nom unique de votre sandbox qui identifie le chemin d’accès au groupe de champs personnalisé Lumière aveuglante .
 
-Voir [Collecte de données interactive](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html?lang=fr) et [Collecte de données non interactive](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/non-interactive-data-collection.html?lang=fr) pour plus d’informations sur l’utilisation de l’API du serveur Edge Network.
+Voir [Collecte de données interactive](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html?lang=fr) et [Collecte de données non interactive](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/non-interactive-data-collection.html) pour plus d’informations sur l’utilisation de l’API du serveur Edge Network.
 
 ## Configurer une connexion
 

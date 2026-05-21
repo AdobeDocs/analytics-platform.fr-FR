@@ -4,9 +4,14 @@ title: Opérateurs
 exl-id: 744c7450-d6e9-4f78-a306-fe725ea0fa18
 feature: Filters, Segments
 role: User
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+TQID: https://experienceleague.adobe.com/16SJDNJiR49Ztw0jGO8Jj3iIuoDZJKFWmGDtK26P1Ps
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '1191'
+source-wordcount: 1215
 ht-degree: 38%
 
 ---
@@ -32,7 +37,7 @@ Le seul caractère générique pris en charge pour les opérateurs qui le font e
 Par exemple, vous avez un nom de page appelé *Mon produit cool*.
 
 * La règle de segment **[!UICONTROL Nom de page]** **[!UICONTROL correspond]** `* product` correspond au nom de page ci-dessus.
-* Cependant, la règle **[!UICONTROL Nom de la page]** **[!UICONTROL correspond]** `My \* product` correspond uniquement au nom de la page *Mon * Produit*.
+* Cependant, la règle **[!UICONTROL Nom de la page]** **[!UICONTROL correspond]** `My \* product` correspond uniquement au nom de la page *Mon* Produit*.
 
 ## Opérateurs standard
 
@@ -82,6 +87,6 @@ Vous pouvez segmenter un nombre d’éléments distinct dans une dimension. Exem
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Nombre de dimensions distinct](https://experienceleague.adobe.com/fr/docs/analytics-learn/tutorials/components/calculated-metrics/approximate-count-distinct-function-in-calculated-metrics){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Nombre de dimensions distinct](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/components/calculated-metrics/approximate-count-distinct-function-in-calculated-metrics){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]

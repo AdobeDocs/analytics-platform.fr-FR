@@ -5,10 +5,16 @@ solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: 79b3ca663af6c383eed7ec81e9c430855669d19b
+TQID: https://experienceleague.adobe.com/RrX-gp2IY-Ny1D1yzR2whV2GuU98mysma8tQmUEubF8
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '3462'
-ht-degree: 84%
+source-wordcount: 3756
+ht-degree: 82%
 
 ---
 
@@ -48,10 +54,10 @@ Vous pouvez également effectuer les opérations suivantes :
 
 Pour utiliser des informations d’identification n’expirant pas, procédez comme suit :
 
-1. Créez des [informations d’identification non expirantes dans Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/query/ui/credentials#non-expiring-credentials). Si vous souhaitez utiliser des informations d’identification non expirantes existantes, assurez-vous que ces informations d’identification sont [&#x200B; migrées vers OAuth](https://experienceleague.adobe.com/fr/docs/experience-platform/query/ui/credentials#migrate-credentials).
+1. Créez des [informations d’identification non expirantes dans Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials#non-expiring-credentials). Si vous souhaitez utiliser des informations d’identification non expirantes existantes, assurez-vous que ces informations d’identification sont [ migrées vers OAuth](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials#migrate-credentials).
 
 1. Assurez-vous que les informations d’identification non expirantes sont disponibles pour le produit et les profils de produit Customer Journey Analytics. Vous devez être administrateur système pour que l’organisation puisse exécuter les étapes suivantes.
-   1. Sélectionnez **[!UICONTROL Admin Console]** dans ![App](/help/assets/icons/Apps.svg).
+   1. Sélectionnez **** dans ![App](/help/assets/icons/Apps.svg).
    1. Vérifiez que les informations d’identification non expirantes sont ajoutées à la liste des informations d’identification d’API.
       1. Sélectionnez **[!UICONTROL Utilisateurs]** dans le menu supérieur.
       1. Sélectionnez **[!UICONTROL Informations d’identification de l’API]** dans le rail de gauche.
@@ -68,7 +74,7 @@ Pour utiliser des informations d’identification n’expirant pas, procédez co
 
 1. Vérifiez que les informations d’identification d’API non expirantes s’affichent dans Experience Platform Query Service.
 
-   1. Sélectionnez **[!UICONTROL Experience Platform]** dans ![App](/help/assets/icons/Apps.svg).
+   1. Sélectionnez **** dans ![App](/help/assets/icons/Apps.svg).
    1. Sélectionnez **[!UICONTROL Requêtes]** dans le rail de gauche.
    1. Sélectionnez **[!UICONTROL Informations d’identification]** dans le menu supérieur.
    1. Vos informations d’identification d’API non expirantes doivent s’afficher, en utilisant le nom que vous avez fourni à l’étape 1, dans la liste **[!UICONTROL Informations d’identification non expirantes]**.
@@ -89,9 +95,9 @@ Vous pouvez utiliser cette fonctionnalité directement dans les instructions SQL
 
 Dans Adobe Experience Platform :
 
-1. Sélectionnez **[!UICONTROL ** Requêtes **]** dans **[!UICONTROL **&#x200B; Gestion des données &#x200B;**]** depuis le rail de gauche.
+1. Sélectionnez **[!UICONTROL ** Requêtes **]** dans **[!UICONTROL ** Gestion des données **]** depuis le rail de gauche.
 
-1. Sélectionnez ![Créer une requête](assets/Smock_AddCircle_18_N.svg) **[!UICONTROL **&#x200B; Créer une requête &#x200B;**]**.
+1. Sélectionnez ![Créer une requête](assets/Smock_AddCircle_18_N.svg) **[!UICONTROL ** Créer une requête **]**.
 
 1. Sélectionnez la base de données `cja` de votre sandbox dans la liste des bases de données du menu déroulant **[!UICONTROL Base de données]**. Par exemple `prod:cja`.
 
@@ -104,13 +110,13 @@ Dans Adobe Experience Platform :
 
 1. Recherchez et copiez vos informations d’identification PostgresSQL dans Adobe Experience Platform :
 
-   1. Sélectionnez **[!UICONTROL ** Requêtes **]** depuis le rail de gauche (sous **[!UICONTROL **&#x200B; Gestion des données &#x200B;**]**).
+   1. Sélectionnez **[!UICONTROL ** Requêtes **]** depuis le rail de gauche (sous **[!UICONTROL ** Gestion des données **]**).
 
-   1. Sélectionnez **[!UICONTROL **&#x200B; Informations d’identification &#x200B;**]** dans la barre supérieure.
+   1. Sélectionnez **[!UICONTROL ** Informations d’identification **]** dans la barre supérieure.
 
    1. Sélectionnez la base de données `cja` de votre sandbox dans la liste des bases de données du menu déroulant **[!UICONTROL Base de données]**. Par exemple `prod:cja`.
 
-   1. Pour copier la chaîne de commande, utilisez ![Copier](assets/Smock_Copy_18_N.svg) dans la section **[!UICONTROL **&#x200B; Commande PSQL &#x200B;**]**.
+   1. Pour copier la chaîne de commande, utilisez ![Copier](assets/Smock_Copy_18_N.svg) dans la section **[!UICONTROL ** Commande PSQL **]**.
 
 1. Ouvrez une fenêtre de commande ou de terminal.
 
@@ -129,9 +135,9 @@ Actuellement, l’[!DNL Customer Journey Analytics BI extension] est prise en ch
 
 1. Recherchez les détails de vos informations d’identification PostgresSQL dans Adobe Experience Platform :
 
-   1. Sélectionnez **[!UICONTROL ** Requêtes **]** depuis le rail de gauche (sous **[!UICONTROL **&#x200B; Gestion des données &#x200B;**]**).
+   1. Sélectionnez **[!UICONTROL ** Requêtes **]** depuis le rail de gauche (sous **[!UICONTROL ** Gestion des données **]**).
 
-   1. Sélectionnez **[!UICONTROL **&#x200B; Informations d’identification &#x200B;**]** dans la barre supérieure.
+   1. Sélectionnez **[!UICONTROL ** Informations d’identification **]** dans la barre supérieure.
 
    1. Sélectionnez la base de données `cja` de votre sandbox dans la liste des bases de données du menu déroulant **[!UICONTROL Base de données]**. Par exemple `prod:cja`.
 
@@ -139,28 +145,28 @@ Actuellement, l’[!DNL Customer Journey Analytics BI extension] est prise en ch
 
 1. Dans Power BI :
 
-   1. Dans la fenêtre principale, sélectionnez **[!UICONTROL **&#x200B; Obtenir des données &#x200B;**]** dans la barre d’outils supérieure.
+   1. Dans la fenêtre principale, sélectionnez **[!UICONTROL ** Obtenir des données **]** dans la barre d’outils supérieure.
 
    1. Sélectionnez **[!UICONTROL Plus...]** dans le rail de gauche.
 
-   1. Sur l’écran **Obtenir des données**, recherchez `PostgresSQL` et sélectionnez la **[!UICONTROL **&#x200B; base de données PostgresSQL &#x200B;**]** dans la liste.
+   1. Sur l’écran **Obtenir des données**, recherchez `PostgresSQL` et sélectionnez la **[!UICONTROL ** base de données PostgresSQL **]** dans la liste.
 
-   1. Dans la boîte de dialogue **[!UICONTROL **&#x200B; Base de données PostgressSQL &#x200B;**]**, réalisez les actions suivantes :
+   1. Dans la boîte de dialogue **[!UICONTROL ** Base de données PostgressSQL **]**, réalisez les actions suivantes :
 
-      1. Collez le paramètre **[!UICONTROL ** Hôte **]** des [!UICONTROL Informations d’identification] des requêtes Experience Platform dans le champ de texte **[!UICONTROL **&#x200B; Serveur &#x200B;**]**.
+      1. Collez le paramètre **[!UICONTROL ** Hôte **]** des [!UICONTROL Informations d’identification] des requêtes Experience Platform dans le champ de texte **[!UICONTROL ** Serveur **]**.
 
-      1. Collez le paramètre **[!UICONTROL ** Base de données **]** des [!UICONTROL Informations d’identification] des requêtes Experience Platform dans le champ de texte **[!UICONTROL **&#x200B; Base de données &#x200B;**]**.
+      1. Collez le paramètre **[!UICONTROL ** Base de données **]** des [!UICONTROL Informations d’identification] des requêtes Experience Platform dans le champ de texte **[!UICONTROL ** Base de données **]**.
 
-         Ajoutez `?FLATTEN` au paramètre **[!UICONTROL **&#x200B; Base de données &#x200B;**]**, de sorte à lire `prod:cja?FLATTEN`, par exemple. Voir [Aplatissement des structures de données imbriquées à utiliser avec des outils de BI tiers](https://experienceleague.adobe.com/fr/docs/experience-platform/query/key-concepts/flatten-nested-data) pour plus d’informations.
+         Ajoutez `?FLATTEN` au paramètre **[!UICONTROL ** Base de données **]**, de sorte à lire `prod:cja?FLATTEN`, par exemple. Voir [Aplatissement des structures de données imbriquées à utiliser avec des outils de BI tiers](https://experienceleague.adobe.com/fr/docs/experience-platform/query/key-concepts/flatten-nested-data) pour plus d’informations.
 
       1. Lorsque le mode **[!UICONTROL Connectivité des données]** vous est proposé, sélectionnez **[!UICONTROL DirectQuery]**.
 
       1. Vous devez fournir un **[!UICONTROL Nom d’utilisateur ou d’utilisatrice]** et un **[!UICONTROL Mot de passe]**. Utilisez les mêmes paramètres d’[!UICONTROL Informations d’identification] que pour les requêtes Experience Platform.
 
 
-   1. Une fois la connexion établie, les tableaux des vue de données de Customer Journey Analytics s’affichent dans le **[!UICONTROL **&#x200B; Navigateur &#x200B;**]** de Power BI.
+   1. Une fois la connexion établie, les tableaux des vue de données de Customer Journey Analytics s’affichent dans le **[!UICONTROL ** Navigateur **]** de Power BI.
 
-   1. Sélectionnez les tableaux des vues de données à utiliser, puis sélectionnez **[!UICONTROL **&#x200B; Charger &#x200B;**]**.
+   1. Sélectionnez les tableaux des vues de données à utiliser, puis sélectionnez **[!UICONTROL ** Charger **]**.
 
    Toutes les dimensions et mesures associées à un ou plusieurs tableaux sélectionnés s’affichent dans le volet de droite et sont prêtes à être utilisées dans vos visualisations.
 
@@ -172,9 +178,9 @@ Actuellement, l’[!DNL Customer Journey Analytics BI extension] est prise en ch
 
 1. Recherchez les détails de vos informations d’identification PostgresSQL dans Adobe Experience Platform :
 
-   1. Sélectionnez **[!UICONTROL ** Requêtes **]** depuis le rail de gauche (sous **[!UICONTROL **&#x200B; Gestion des données &#x200B;**]**).
+   1. Sélectionnez **[!UICONTROL ** Requêtes **]** depuis le rail de gauche (sous **[!UICONTROL ** Gestion des données **]**).
 
-   1. Sélectionnez **[!UICONTROL **&#x200B; Informations d’identification &#x200B;**]** dans la barre supérieure.
+   1. Sélectionnez **[!UICONTROL ** Informations d’identification **]** dans la barre supérieure.
 
    1. Sélectionnez la base de données `cja` de votre sandbox dans la liste des bases de données du menu déroulant **[!UICONTROL Base de données]**. Par exemple `prod:cja`.
 
@@ -182,29 +188,29 @@ Actuellement, l’[!DNL Customer Journey Analytics BI extension] est prise en ch
 
 1. Dans Tableau Desktop :
 
-   1. Sélectionnez **[!UICONTROL ** Plus **]** depuis **[!UICONTROL **&#x200B; Vers un serveur &#x200B;**]** dans le rail de gauche.
+   1. Sélectionnez **[!UICONTROL ** Plus **]** depuis **[!UICONTROL ** Vers un serveur **]** dans le rail de gauche.
 
-   1. Sélectionnez **[!UICONTROL **&#x200B; PostgresSQL &#x200B;**]** dans la liste.
+   1. Sélectionnez **[!UICONTROL ** PostgresSQL **]** dans la liste.
 
    1. Dans la boîte de dialogue [!UICONTROL PostgresSQL], réalisez les actions suivantes :
 
-      1. Collez le paramètre **[!UICONTROL ** Hôte **]** des [!UICONTROL Informations d’identification] des requêtes Experience Platform dans le champ de texte **[!UICONTROL **&#x200B; Serveur &#x200B;**]**.
+      1. Collez le paramètre **[!UICONTROL ** Hôte **]** des [!UICONTROL Informations d’identification] des requêtes Experience Platform dans le champ de texte **[!UICONTROL ** Serveur **]**.
 
-      1. Collez le paramètre **[!UICONTROL ** Port **]** des [!UICONTROL Informations d’identification] des requêtes Experience Platform dans le champ de texte **[!UICONTROL **&#x200B; Port &#x200B;**]**.
+      1. Collez le paramètre **[!UICONTROL ** Port **]** des [!UICONTROL Informations d’identification] des requêtes Experience Platform dans le champ de texte **[!UICONTROL ** Port **]**.
 
-      1. Collez le paramètre **[!UICONTROL ** Base de données **]** des [!UICONTROL Informations d’identification] des requêtes Experience Platform dans le champ de texte **[!UICONTROL **&#x200B; Base de données &#x200B;**]**.
+      1. Collez le paramètre **[!UICONTROL ** Base de données **]** des [!UICONTROL Informations d’identification] des requêtes Experience Platform dans le champ de texte **[!UICONTROL ** Base de données **]**.
 
-         Ajoutez `%3FFLATTEN` au paramètre **[!UICONTROL **&#x200B; Base de données &#x200B;**]**, de sorte à lire `prod:cja%3FFLATTEN`, par exemple. Voir [Aplatissement des structures de données imbriquées à utiliser avec des outils de BI tiers](https://experienceleague.adobe.com/fr/docs/experience-platform/query/key-concepts/flatten-nested-data) pour plus d’informations.
+         Ajoutez `%3FFLATTEN` au paramètre **[!UICONTROL ** Base de données **]**, de sorte à lire `prod:cja%3FFLATTEN`, par exemple. Voir [Aplatissement des structures de données imbriquées à utiliser avec des outils de BI tiers](https://experienceleague.adobe.com/fr/docs/experience-platform/query/key-concepts/flatten-nested-data) pour plus d’informations.
 
-      1. Sélectionnez **[!UICONTROL ** Nom d’utilisateur ou d’utilisatrice et mot de passe **]** dans la liste **[!UICONTROL **&#x200B; Authentification &#x200B;**]**.
+      1. Sélectionnez **[!UICONTROL ** Nom d’utilisateur ou d’utilisatrice et mot de passe **]** dans la liste **[!UICONTROL ** Authentification **]**.
 
-      1. Collez le paramètre **[!UICONTROL ** Nom d’utilisateur ou d’utilisatrice **]** des [!UICONTROL Informations d’identification] des requêtes Experience Platform dans le champ de texte **[!UICONTROL **&#x200B; Nom d’utilisateur ou d’utilisatrice &#x200B;**]**.
+      1. Collez le paramètre **[!UICONTROL ** Nom d’utilisateur ou d’utilisatrice **]** des [!UICONTROL Informations d’identification] des requêtes Experience Platform dans le champ de texte **[!UICONTROL ** Nom d’utilisateur ou d’utilisatrice **]**.
 
-      1. Collez le paramètre **[!UICONTROL ** Mot de passe **]** des [!UICONTROL Informations d’identification] des requêtes Experience Platform dans le champ de texte **[!UICONTROL **&#x200B; Mot de passe &#x200B;**]**.
+      1. Collez le paramètre **[!UICONTROL ** Mot de passe **]** des [!UICONTROL Informations d’identification] des requêtes Experience Platform dans le champ de texte **[!UICONTROL ** Mot de passe **]**.
 
-      1. Sélectionnez **[!UICONTROL **&#x200B; Se connecter &#x200B;**]**.
+      1. Sélectionnez **[!UICONTROL ** Se connecter **]**.
 
-   1. Les vues de données Customer Journey Analytics s’affichent sous forme de tableaux dans la liste **[!UICONTROL **&#x200B; Tableau &#x200B;**]**.
+   1. Les vues de données Customer Journey Analytics s’affichent sous forme de tableaux dans la liste **[!UICONTROL ** Tableau **]**.
 
    1. Faites glisser les tableaux à utiliser sur la zone de travail.
 
@@ -218,9 +224,9 @@ Actuellement, l’[!DNL Customer Journey Analytics BI extension] est prise en ch
 
 1. Recherchez les détails de vos informations d’identification PostgresSQL dans Adobe Experience Platform :
 
-   1. Sélectionnez **[!UICONTROL ** Requêtes **]** depuis le rail de gauche (sous **[!UICONTROL **&#x200B; Gestion des données &#x200B;**]**).
+   1. Sélectionnez **[!UICONTROL ** Requêtes **]** depuis le rail de gauche (sous **[!UICONTROL ** Gestion des données **]**).
 
-   1. Sélectionnez **[!UICONTROL **&#x200B; Informations d’identification &#x200B;**]** dans la barre supérieure.
+   1. Sélectionnez **[!UICONTROL ** Informations d’identification **]** dans la barre supérieure.
 
    1. Sélectionnez la base de données `cja` de votre sandbox dans la liste des bases de données du menu déroulant **[!UICONTROL Base de données]**. Par exemple `prod:cja`.
 
@@ -245,9 +251,9 @@ Actuellement, l’[!DNL Customer Journey Analytics BI extension] est prise en ch
 
 1. Recherchez les détails de vos informations d’identification PostgresSQL dans Adobe Experience Platform :
 
-   1. Sélectionnez **[!UICONTROL ** Requêtes **]** depuis le rail de gauche (sous **[!UICONTROL **&#x200B; Gestion des données &#x200B;**]**).
+   1. Sélectionnez **[!UICONTROL ** Requêtes **]** depuis le rail de gauche (sous **[!UICONTROL ** Gestion des données **]**).
 
-   1. Sélectionnez **[!UICONTROL **&#x200B; Informations d’identification &#x200B;**]** dans la barre supérieure.
+   1. Sélectionnez **[!UICONTROL ** Informations d’identification **]** dans la barre supérieure.
 
    1. Sélectionnez la base de données `cja` de votre sandbox dans la liste des bases de données du menu déroulant **[!UICONTROL Base de données]**. Par exemple `prod:cja`.
 
@@ -269,9 +275,9 @@ Actuellement, l’[!DNL Customer Journey Analytics BI extension] est prise en ch
 
 1. Recherchez les détails de vos informations d’identification PostgresSQL dans Adobe Experience Platform :
 
-   1. Sélectionnez **[!UICONTROL ** Requêtes **]** depuis le rail de gauche (sous **[!UICONTROL **&#x200B; Gestion des données &#x200B;**]**).
+   1. Sélectionnez **[!UICONTROL ** Requêtes **]** depuis le rail de gauche (sous **[!UICONTROL ** Gestion des données **]**).
 
-   1. Sélectionnez **[!UICONTROL **&#x200B; Informations d’identification &#x200B;**]** dans la barre supérieure.
+   1. Sélectionnez **[!UICONTROL ** Informations d’identification **]** dans la barre supérieure.
 
    1. Sélectionnez la base de données `cja` de votre sandbox dans la liste des bases de données du menu déroulant **[!UICONTROL Base de données]**. Par exemple `prod:cja`.
 
@@ -389,8 +395,8 @@ HAVING m1 > 100</code></pre>
             </td>
         </tr>
         <tr>
-            <td>Valeurs de dimension
-distinctes, top </td>
+            <td>Distinct, haut 
+valeurs de dimension </td>
             <td>
                 <pre><code>SELECT DISTINCT dim1 FROM dv1</code></pre>
                 <pre><code>SELECT dim1 AS dv1
@@ -414,8 +420,8 @@ WHERE `timestamp` BETWEEN '2022-01-01' AND '2022-01-02'</code></pre>
             </td>
         </tr>
         <tr>
-            <td>Répartitions
-multi-dimensions
+            <td>Multi-dimension
+répartitions
 et top-distincts </td>
             <td>
                 <pre><code>SELECT dim1, dim2, SUM(metric1) AS m1
@@ -432,9 +438,9 @@ FROM dv1</code></pre>
             </td>
         </tr>
         <tr>
-            <td>Sous-sélection :
-filtrer les résultats
-supplémentaires </td>
+            <td>Sous-sélectionner :
+Filtrer les éléments supplémentaires
+résultats </td>
             <td>
                 <pre><code>SELECT dim1, m1
 FROM (
@@ -446,8 +452,8 @@ OÙ dim1 dans ('A', 'B')</code></pre>
             </td>
         </tr>
         <tr>
-            <td>Sous-sélection :
-interrogation dans les
+            <td>Sous-sélectionner :
+Requête sur
 vues de données </td>
             <td>
                 <pre><code>SELECT key, SUM(m1) AS total
@@ -469,10 +475,10 @@ ORDER BY total</code></pre>
             </td>
         </tr>
         <tr>
-            <td>Sous-sélection :
-sources en niveaux,
-filtrage et
-agrégation </td>
+            <td>Sous-sélectionner : 
+Source superposée, 
+le filtrage, 
+et agrégation </td>
             <td>Niveaux utilisant les sous-sélections :
 <pre><code>SELECT rows.dim1, SUM(rows.m1) AS total
 FROM (
@@ -500,10 +506,10 @@ GROUP BY rows.item</code></pre>
         </td>
         </tr>
         <tr>
-            <td>Sélectionne l’emplacement où
-les mesures sont antérieures
-ou sont mélangées avec
-les dimensions. </td>
+            <td>Sélectionne où le
+les mesures viennent avant
+ ou sont mélangés à
+les dimensions </td>
             <td>
                 <pre><code>SELECT SUM(metric1) AS m1, dim1
 FROM dv1
@@ -663,7 +669,7 @@ Ces fonctions peuvent être utilisées sur les dimensions des clauses `SELECT` e
 | [Trimestre](https://spark.apache.org/docs/latest/api/sql/index.html#quarter) | ``SELECT QUARTER(`timestamp`)`` | Générez une identité de dimension dynamique sur le champ transmis. |
 | [Heure](https://spark.apache.org/docs/latest/api/sql/index.html#hour) | ``SELECT HOUR(`timestamp`)`` | Générez une identité de dimension dynamique sur le champ transmis. Utilisez l’identifiant de l’élément au lieu de la valeur, car vous avez besoin du numéro et non du nom convivial. |
 | [Minute](https://spark.apache.org/docs/latest/api/sql/index.html#minute) | ``SELECT MINUTE(`timestamp`)`` | Générez une identité de dimension dynamique sur le champ transmis. |
-| [Extraire](https://spark.apache.org/docs/latest/api/sql/index.html#extract) | ``SELECT EXTRACT(MONTH FROM `timestamp`)`` | Générez une identité de dimension dynamique sur le champ transmis. Utilisez l’ID d’élément au lieu de la valeur de certaines parties de cette fonction, car vous avez besoin du numéro et non du nom convivial.<br/>Les parties prises en charge sont les suivantes :<br>- Mots-clés : `YEAR`, `MONTH`, `DAYOFMONTH`, `DAYOFWEEK`, `DAYOFYEAR`, `WEEK`, `QUARTER`, `HOUR`, `MINUTE`.<br/>- Chaînes : `'YEAR'`, `'Y'`, `'MONTH'`, `'M'`, `'DAYOFMONTH'`, `'DAY'`, `'D'`, `'DAYOFWEEK'`, `'DOW'`, `'DAYOFYEAR'`, `'DOY'`, `'WEEK'`, `'WOY`, `'W'`, `'QUARTER'`, `'QOY'`, `'Q'`, `'HOUR'` ou `'MINUTE'`. |
+| [Extraire](https://spark.apache.org/docs/latest/api/sql/index.html#extract) | ``SELECT EXTRACT(MONTH FROM `timestamp`)`` | Générez une identité de dimension dynamique sur le champ transmis. Utilisez l’ID d’élément au lieu de la valeur de certaines parties de cette fonction, car vous avez besoin du numéro et non du nom convivial.<br/>Les parties prises en charge sont les suivantes : <br>- Mots-clés : `YEAR`, `MONTH`, `DAYOFMONTH`, `DAYOFWEEK`, `DAYOFYEAR`, `WEEK`, `QUARTER`, `HOUR`, `MINUTE`.<br/>- Chaînes : `'YEAR'`, `'Y'`, `'MONTH'`, `'M'`, `'DAYOFMONTH'`, `'DAY'`, `'D'`, `'DAYOFWEEK'`, `'DOW'`, `'DAYOFYEAR'`, `'DOY'`, `'WEEK'`, `'WOY`, `'W'`, `'QUARTER'`, `'QOY'`, `'Q'` ou `'HOUR'` `'MINUTE'`. |
 | [Date (partie)](https://spark.apache.org/docs/latest/api/sql/index.html#date_part) | ``SELECT DATE_PART('month', `timestamp`)`` | Générez une identité de dimension dynamique sur le champ transmis. Utilisez l’ID d’élément au lieu de la valeur de certaines parties de cette fonction, car vous avez besoin du numéro et non du nom convivial.<br/>Les parties de chaîne prises en charge sont les suivantes : `'YEAR'`, `'Y'`, `'MONTH'`, `'M'`, `'DAYOFMONTH'`, `'DAY'`, `'D'`, `'DAYOFWEEK'`, `'DOW'`, `'DAYOFYEAR'`, `'DOY'`, `'WEEK'`, `'WOY`&#39;, `'W'`, `'QUARTER'`, `'QOY'`, `'Q'`, `'HOUR'` ou `'MINUTE'`. |
 | [Date (tronquée)](https://spark.apache.org/docs/latest/api/sql/index.html#date_trunc) | ``SELECT DATE_TRUNC('quarter', `timestamp`)`` | Générez une identité de dimension dynamique sur le champ transmis.<br/>Les granularités de chaîne prises en charge sont les suivantes : `'YEAR'`, `'Y'`, `'MONTH'`, `'M'`, `'DAYOFMONTH'`, `'DAY'`, `'D'`, `'DAYOFWEEK'`, `'DOW'`, `'DAYOFYEAR'`, `'DOY'`, `'WEEK'`, `'WOY`, `'W'`, `'QUARTER'`, `'QOY'`, `'Q'`, `'HOUR'` ou `'MINUTE'`. |
 
@@ -675,6 +681,6 @@ Certaines fonctionnalités SQL ne sont que partiellement prises en charge avec l
 
 | Fonction | Exemple | Détails |
 |---|---|---|
-| MIN() ET MAX() | ``MIN(daterange)`` ou <br/> ``MAX(daterange)`` | `MIN()` sur `timestamp`, `daterange` ou tout autre `daterangeX` comme `daterangeday` renvoie 2 ans plus tôt.<br/><br/> `MAX()` sur `timestamp`, `daterange` ou tout autre `daterangeX` comme `daterangeday` renvoie la date/l’heure actuelle.<br/><br/>`MIN()` ou `MAX()` sur une autre dimension, mesure ou expression renvoie 0. |
+| MIN() ET MAX() | ``MIN(daterange)`` ou <br/> ``MAX(daterange)`` | `MIN()` sur `timestamp`, `daterange` ou tout autre `daterangeX` comme `daterangeday` renvoie 2 ans plus tôt.<br/><br/> `MAX()` sur `timestamp`, `daterange` ou l’un des `daterangeX` tels que `daterangeday` renvoie la date/l’heure actuelle.<br/><br/>`MIN()` ou `MAX()` sur une autre dimension, mesure ou expression renvoie 0. |
 
 {style="table-layout:auto"}

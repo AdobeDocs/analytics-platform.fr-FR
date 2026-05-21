@@ -4,10 +4,16 @@ title: Utiliser des composants dans un projet
 feature: Components
 role: User
 exl-id: 97bdfb9e-a27e-4a6b-b6cc-21a292398037
-source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
+TQID: https://experienceleague.adobe.com/kXVC79sHZMIdUELOC6KjtT7tJdh9pVySu-jApef-8lk
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: df28738e-9c71-4aa8-929e-edde22340cc6id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 100%
+source-wordcount: 954
+ht-degree: 92%
 
 ---
 
@@ -95,15 +101,15 @@ Les [segments](/help/components/segments/seg-overview.md) vous permettent d’id
 
 Vous pouvez utiliser des segments dans Analysis Workspace de l’une des manières suivantes :
 
-* Ajouter des segments à un panneau
+* Ajout de segments à un panneau
 Lorsque vous ajoutez des segments à un panneau, les segments s’appliquent à tout le contenu du panneau.
 Pour plus d’informations sur l’utilisation de la zone de dépôt des segments sur un panneau pour segmenter votre panneau, voir [Zone de dépôt](/help/analysis-workspace/c-panels/panels.md#drop-zone) dans [Vue d’ensemble des panneaux](/help/analysis-workspace/c-panels/panels.md).
 
-* Ajouter des segments à une visualisation
+* Ajout de segments à une visualisation
 Lorsque vous ajoutez des segments à une colonne d’un tableau à structure libre, les segments s’appliquent à tout le contenu de la colonne du tableau. Vous pouvez également ajouter des segments dans le cadre d’une visualisation des abandons.
 
-* Utiliser des segments dans des composants
-Lorsque vous définissez des composants tels que des [mesures calculées](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md), des [annotations](/help/components/annotations/create-annotations.md#annotation-builder), voire des [segments](/help/components/segments/seg-builder.md), vous pouvez utiliser des segments dans le cadre de la définition.
+* Utilisation de segments dans les composants
+Lorsque vous définissez des composants tels que [mesures calculées](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md), [annotations](/help/components/annotations/create-annotations.md#annotation-builder) ou même [segments](/help/components/segments/seg-builder.md) vous pouvez utiliser des segments dans le cadre de la définition.
 
 
 ### Ajouter des périodes à un projet

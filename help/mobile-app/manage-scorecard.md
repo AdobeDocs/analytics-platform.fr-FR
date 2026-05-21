@@ -5,10 +5,16 @@ feature: Analytics Dashboards
 role: User, Admin
 solution: Customer Journey Analytics
 exl-id: 6a0de7db-689d-448d-b8e0-90af4a5ee325
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+TQID: https://experienceleague.adobe.com/Sb4kVGW3EHe85km5NDp-qWQu8MIeW5v2gwrYNTmNevY
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b743a5d9-dc51-41ed-8b2f-86a1f8de430fid: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b21c7889-c659-4a99-a779-de1bae57e47eid: bc7a5a86-1a70-451f-985c-037b65f091d1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: e1e0219c-f879-479f-8427-888ed2a6e9c2id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '1808'
-ht-degree: 85%
+source-wordcount: 1849
+ht-degree: 81%
 
 ---
 
@@ -86,7 +92,7 @@ Regardez la vidéo pour en savoir plus sur la création d’histoires de donnée
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Histoires de données pour les projets de cartes de performance mobiles](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Histoires de données pour les projets de cartes de performance mobiles](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 
@@ -97,14 +103,14 @@ Créez votre histoire de données en ajoutant plusieurs diapositives détaillée
 
 1. Commencez par un projet de carte de performance mobile.
 1. Sélectionnez une mosaïque à partir de laquelle vous souhaitez créer une histoire.
-   ![Création d’une histoire de données](assets/data-story1.png)
+   ![Créer une histoire de données](assets/data-story1.png)
    ![Création d’icônes d’histoire de données](assets/create-data-story.png){width=".50%"}
 1. Ajoutez des diapositives pour élaborer votre histoire de données. Votre première diapositive est générée par défaut.
 Pour ajouter de nouvelles diapositives, pointez ou cliquez sur une diapositive, puis sélectionnez l’une des options disponibles :
    * Appuyez sur le signe « + » pour créer une diapositive.
    * Appuyez sur l’icône de duplication pour dupliquer la diapositive existante.
 1. Si vous créez une diapositive vierge, faites glisser et déposez des composants depuis le rail de gauche ou choisissez une disposition pour remplir automatiquement la diapositive avec les données de la mosaïque.
-   ![Création d’une histoire de données.](assets/data-story2.png)
+   ![Créer une histoire de données](assets/data-story2.png)
 Pour supprimer une diapositive, appuyez sur l’icône de corbeille.
 
 ### Personnaliser une histoire de données {#customize-data-story}
@@ -116,8 +122,8 @@ Les histoires de données vous permettent de personnaliser chaque élément, afi
 1. Appuyez sur une mosaïque. La mosaïque sélectionnée est entourée en bleu et le panneau de droite affiche ses propriétés.
 1. Modifiez le titre, le type de graphique et d’autres options de mosaïque.
 1. Faites glisser un composant sur la mosaïque.
-   ![Création d’une histoire de données.](assets/data-story3.png)
-Lorsque vous faites glisser et déposez un composant, tel qu’une visualisation, sur une mosaïque, le composant est appliqué à toutes les diapositives de l’histoire de données.
+   ![Créer une histoire de données](assets/data-story3.png)
+Lorsque vous faites glisser et déposez un composant, tel qu’une visualisation, sur une mosaïque, le composant est appliqué à toutes les diapositives du récit des données.
 1. Pour appliquer une modification uniquement au titre, maintenez la touche Maj enfoncée pour appliquer la modification.
    ![Création d’une histoire de données](assets/data-story4.png)
 
@@ -137,8 +143,8 @@ Une fois votre histoire de données créée, appuyez sur le bouton **Prévisuali
 La barre de navigation affiche des icônes reflétant le contenu de chaque diapositive. La barre de navigation permet d’accéder facilement à une diapositive spécifique si vous disposez de nombreuses diapositives.
 
 Pour accéder à une autre mosaïque ou diapositive, appuyez sur la barre de navigation.
-![Création d’une histoire de données](assets/data-story5.png)
-![Création d’une histoire de données](assets/data-story-nav.png){width="45%"}
+![Créer une histoire de données](assets/data-story5.png)
+![Créer une histoire de données](assets/data-story-nav.png){width="45%"}
 
 Pour naviguer d’avant en arrière, utilisez les flèches de votre clavier ou sélectionnez un composant et maintenez-le à gauche ou à droite de l’écran pour le faire défiler.
 
@@ -229,7 +235,7 @@ Pour afficher des légendes intelligentes dans une carte de performance mobile :
 
 1. Appuyez sur l’icône bleue en haut à droite pour générer les légendes. Les légendes s’affichent sous le graphique linéaire.
 
-   ![&#x200B; Légende intelligente dans la visualisation en ligne &#x200B;](assets/caption2.png)
+   ![ Légende intelligente dans la visualisation en ligne ](assets/caption2.png)
 
 1. Balayez vers la droite pour afficher toutes les légendes intelligentes.
 

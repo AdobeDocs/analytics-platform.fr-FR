@@ -5,10 +5,16 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
 role: Admin
-source-git-commit: 1bba52c332f1594b0b07466b499e24b5c62726fd
+TQID: https://experienceleague.adobe.com/0y2eqwQxkHefcODFhxXCuioMnL-YCXm21335Z2upPB0
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '2219'
-ht-degree: 81%
+source-wordcount: 2341
+ht-degree: 79%
 
 ---
 
@@ -23,8 +29,8 @@ Voici quelques questions fréquentes à propos de l’assemblage :
 Vous pouvez utiliser une visualisation de flux avec la dimension Identifiant du jeu de données.
 
 1. Connectez-vous à [Customer Journey Analytics](https://analytics.adobe.com) et créez un projet Workspace vierge.
-2. Cliquez sur l’onglet **[!UICONTROL ** Visualisations **]** à gauche, puis faites glisser une visualisation **[!UICONTROL **&#x200B; Flux &#x200B;**]** dans la zone de travail à droite.
-3. Cliquez sur l’onglet **[!UICONTROL ** Composants **]** à gauche, puis faites glisser la dimension **[!UICONTROL ** Identifiant de jeu de données **]** dans l’emplacement central intitulé **[!UICONTROL **&#x200B; Dimension ou élément &#x200B;**]**.
+2. Cliquez sur l’onglet **[!UICONTROL ** Visualisations **]** à gauche, puis faites glisser une visualisation **[!UICONTROL ** Flux **]** dans la zone de travail à droite.
+3. Cliquez sur l’onglet **[!UICONTROL ** Composants **]** à gauche, puis faites glisser la dimension **[!UICONTROL ** Identifiant de jeu de données **]** dans l’emplacement central intitulé **[!UICONTROL ** Dimension ou élément **]**.
 4. Ce rapport de flux est interactif. Pour étendre les flux aux pages suivantes ou précédentes, sélectionnez l’une des valeurs. Utilisez le menu contextuel pour développer ou réduire des colonnes. Il est également possible d’utiliser différentes dimensions dans le même rapport de flux.
 
 Si vous souhaitez renommer des éléments de dimension Identifiant du jeu de données, vous pouvez utiliser un jeu de données de recherche.
@@ -42,7 +48,7 @@ La période de relecture dépend de la fréquence souhaitée de relecture des do
 +++ Quand le processus de relecture s’exécute-t-il exactement ?
 
 * La relecture **hebdomadaire** commence chaque **samedi** nuit (fuseau horaire du client) et les données sont mises à jour dans les rapports Customer Journey Analytics avant le lundi matin.
-* La relecture **quotidienne** s’exécute vers 3 **&#x200B;**&#x200B;(fuseau horaire du client) et les données sont mises à jour dans les rapports Customer Journey Analytics dès le matin.
+* La relecture **quotidienne** s’exécute vers 3 **** (fuseau horaire du client) et les données sont mises à jour dans les rapports Customer Journey Analytics dès le matin.
 
 >[!IMPORTANT]
 >
@@ -87,7 +93,7 @@ Le regroupement en direct est disponible environ une semaine après l’activati
 
 +++ Quelle est la différence entre l’analyse entre appareils (une fonctionnalité classique d’Analytics) et l’analyse cross-canal ?
 
-L’[analyse entre appareils](https://experienceleague.adobe.com/fr/docs/analytics/components/cda/overview) est une fonctionnalité classique, spécifique à Adobe Analytics qui vous permet de comprendre le comportement des personnes sur plusieurs périphériques. Elle offre deux workflows pour lier les données de l’appareil : le regroupement basé sur les champs et le graphique d’appareil.
+L’[analyse entre appareils](https://experienceleague.adobe.com/en/docs/analytics/components/cda/overview) est une fonctionnalité classique, spécifique à Adobe Analytics qui vous permet de comprendre le comportement des personnes sur plusieurs périphériques. Elle offre deux workflows pour lier les données de l’appareil : le regroupement basé sur les champs et le graphique d’appareil.
 
 L’analyse cross-canal est un cas d’utilisation spécifique à Customer Journey Analytics qui vous permet de comprendre le comportement des personnes à la fois sur les appareils et les canaux. Elle assemble l’ID de personne d’un jeu de données, ce qui permet de combiner facilement ce jeu de données avec d’autres. Cette fonctionnalité s’exécute de la même manière que l’assemblage basé sur les champs de l’analyse entre appareils, avec cependant une implémentation distincte en raison de l’architecture des données qui diffère entre la version classique d’Analytics et Customer Journey Analytics. Pour plus d’informations, voir [Assemblage](overview.md) et le cas d’utilisation [Analyse cross-canal](../use-cases/cross-channel/cross-channel.md).
 
@@ -196,7 +202,7 @@ Attention au cas de « réduction de personne », qui se produit lorsqu’un a
 | Événement | Date et heure | ID persistant (ID de cookie) | Identifiant temporaire | identifiant obtenu (après relecture) |
 |---|---|---|---|---|
 | 1 | 2023-05-12 12:01 | 123 | - | **Cory** |
-| 2 | 12/05/2023 12:02 | 123 | Cory | **Cory** |
+| 2 | 2023-05-12 12:02 | 123 | Cory | **Cory** |
 | 3 | 2023-05-12 12:03 | 456 | Non défini | **Non défini** |
 | 4 | 2023-05-12 12:04 | 456 | - | **Non défini** |
 | 5 | 2023-05-12 12:05 | 789 | Non défini | **Non défini** |
@@ -217,11 +223,11 @@ Certaines mesures de Customer Journey Analytics sont similaires à celles d’An
 
 | **Données groupées de Customer Journey Analytics** | **Données non groupées de Customer Journey Analytics** | **Adobe Analytics** | **Analytics Ultimate avec CDA** |
 | ----- | ----- | ----- | ----- |
-| **Personnes** = nombre d’ID de personne distincts où l’ID obtenu est choisi comme ID de personne. Le nombre de **Personnes** peut être plus ou moins élevé que les **Visiteurs ou visiteuses uniques** dans Adobe Analytics classique, en fonction du résultat du processus de regroupement. | **Personnes** = nombre d’identifiants de personne distincts en fonction de la colonne sélectionnée en tant qu’identifiant de personne. Les **personnes** présentes dans les jeux de données du connecteur de source Analytics sont semblables aux **visiteurs et visiteuses uniques** dans Adobe Analytics classique, si `endUserIDs._experience.aaid.id` est sélectionné en tant qu’identifiant de personne dans Customer Journey Analytics. | **Visiteurs uniques** = nombre dʼidentifiants de visiteur distincts. Le nombre de **Visiteurs uniques** peut être différent du nombre d’**ECID** distincts. | Voir [Personnes](https://experienceleague.adobe.com/fr/docs/analytics/components/metrics/people). |
-| **Sessions** : définies en fonction des paramètres de session dans la vue de données Customer Journey Analytics. Le processus dʼassemblage peut combiner des sessions individuelles provenant de plusieurs appareils en une seule session. | **Sessions** : défini en fonction des paramètres de session spécifiés dans la vue de données Customer Journey Analytics. | **Visites** : voir [Visites](https://experienceleague.adobe.com/fr/docs/analytics/components/metrics/visits). | **Visites** : défini en fonction des paramètres de session réglés dans la [suite de rapports virtuelle CDA](https://experienceleague.adobe.com/fr/docs/analytics/components/cda/setup). |
-| **Événements** = nombre de lignes dans les données groupées dans Customer Journey Analytics. Cette mesure est généralement proche des **Occurrences** dans Adobe Analytics classique. Consultez toutefois les questions fréquentes ci-dessus concernant les lignes avec un identifiant persistant vide. | **Événements** = nombre de lignes dans les données non groupées dans Customer Journey Analytics. Cette mesure est généralement proche des **Occurrences** dans Adobe Analytics classique. Notez toutefois que si des événements possèdent un identifiant de personne vide dans les données non assemblées du lac de données Experience Platform, ces événements ne sont pas inclus dans Customer Journey Analytics. | **Occurrences** : voir [Occurrences](https://experienceleague.adobe.com/fr/docs/analytics/components/metrics/occurrences). | **Occurrences** : voir [Occurrences](https://experienceleague.adobe.com/fr/docs/analytics/components/metrics/occurrences). |
+| **Personnes** = nombre d’ID de personne distincts où l’ID obtenu est choisi comme ID de personne. Le nombre de **Personnes** peut être plus ou moins élevé que les **Visiteurs ou visiteuses uniques** dans Adobe Analytics classique, en fonction du résultat du processus de regroupement. | **Personnes** = nombre d’identifiants de personne distincts en fonction de la colonne sélectionnée en tant qu’identifiant de personne. Les **personnes** présentes dans les jeux de données du connecteur de source Analytics sont semblables aux **visiteurs et visiteuses uniques** dans Adobe Analytics classique, si `endUserIDs._experience.aaid.id` est sélectionné en tant qu’identifiant de personne dans Customer Journey Analytics. | **Visiteurs uniques** = nombre dʼidentifiants de visiteur distincts. Le nombre de **Visiteurs uniques** peut être différent du nombre d’**ECID** distincts. | Voir [Personnes](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/people). |
+| **Sessions** : définies en fonction des paramètres de session dans la vue de données Customer Journey Analytics. Le processus dʼassemblage peut combiner des sessions individuelles provenant de plusieurs appareils en une seule session. | **Sessions** : défini en fonction des paramètres de session spécifiés dans la vue de données Customer Journey Analytics. | **Visites** : voir [Visites](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/visits). | **Visites** : défini en fonction des paramètres de session réglés dans la [suite de rapports virtuelle CDA](https://experienceleague.adobe.com/en/docs/analytics/components/cda/setup). |
+| **Événements** = nombre de lignes dans les données groupées dans Customer Journey Analytics. Cette mesure est généralement proche des **Occurrences** dans Adobe Analytics classique. Consultez toutefois les questions fréquentes ci-dessus concernant les lignes avec un identifiant persistant vide. | **Événements** = nombre de lignes dans les données non groupées dans Customer Journey Analytics. Cette mesure est généralement proche des **Occurrences** dans Adobe Analytics classique. Notez toutefois que si des événements possèdent un identifiant de personne vide dans les données non assemblées du lac de données Experience Platform, ces événements ne sont pas inclus dans Customer Journey Analytics. | **Occurrences** : voir [Occurrences](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/occurrences). | **Occurrences** : voir [Occurrences](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/occurrences). |
 
-Dʼautres mesures peuvent être similaires dans Customer Journey Analytics et Adobe Analytics. Par exemple, le nombre total (1-100) dʼ[événements personnalisés](https://experienceleague.adobe.com/fr/docs/analytics/components/metrics/custom-events) Adobe Analytics est en principe très similaire dans Adobe Analytics classique et Customer Journey Analytics (à la fois pour les événements assemblés et non assemblés). [Les différences de fonctionnalités](/help/getting-started/aa-vs-cja/cja-aa.md), telles que la déduplication des événements entre Customer Journey Analytics et Adobe Analytics, peuvent entraîner des incohérences entre les deux produits.
+Dʼautres mesures peuvent être similaires dans Customer Journey Analytics et Adobe Analytics. Par exemple, le nombre total (1-100) dʼ[événements personnalisés](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/custom-events) Adobe Analytics est en principe très similaire dans Adobe Analytics classique et Customer Journey Analytics (à la fois pour les événements assemblés et non assemblés). [Les différences de fonctionnalités](/help/getting-started/aa-vs-cja/cja-aa.md), telles que la déduplication des événements entre Customer Journey Analytics et Adobe Analytics, peuvent entraîner des incohérences entre les deux produits.
 
 +++
 
@@ -281,7 +287,7 @@ curl -X PATCH \
 
 Si vous ne disposez pas d’une licence Real-Time CDP, toute utilisation de la balise `unifiedProfile` dans la requête renvoie une erreur.
 
-Consultez [Créer un jeu de données activé pour Profil et Identité](https://experienceleague.adobe.com/fr/docs/experience-platform/catalog/datasets/enable-for-profile#enable-the-dataset) pour plus d’informations.
+Consultez [Créer un jeu de données activé pour Profil et Identité](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/enable-for-profile#enable-the-dataset) pour plus d’informations.
 
 +++ 
 

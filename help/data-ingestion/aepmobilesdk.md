@@ -5,10 +5,16 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: fb48b031-e093-4490-b457-69dbb5debe8d
 role: Admin
-source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
+TQID: https://experienceleague.adobe.com/rbgqDkQLPbw-EfhMyUL-eVXZZ1cxMXiQmvU7Si2WCZ8
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: c38ed341-fab2-46df-9d72-88d8166edebbid: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7id: df28738e-9c71-4aa8-929e-edde22340cc6id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '3390'
-ht-degree: 62%
+source-wordcount: 3536
+ht-degree: 63%
 
 ---
 
@@ -64,7 +70,7 @@ Configurer le schéma :
 
       >[!INFO]
       >
-      >    Un schéma d’événement d’expérience est utilisé pour modéliser le _comportement_ d’un profil (par exemple, nom de scène, bouton sur lequel appuyer pour ajouter au panier). Un schéma de profil individuel est utilisé pour modéliser les _attributs_ de profil (nom, e-mail, sexe, etc.).
+      >    Un schéma d’événement d’expérience est utilisé pour modéliser le _comportement_ d’un profil (par exemple, nom de scène, bouton sur lequel appuyer pour ajouter au panier). Un schéma de profil individuel est utilisé pour modéliser les _attributs_ de profil (nom, e-mail, genre, etc.).
 
    1. Sélectionnez **[!UICONTROL Suivant]**.
 
@@ -87,11 +93,11 @@ Configurer le schéma :
 
    1. Dans la boîte de dialogue [!UICONTROL Ajouter des groupes de champs], sélectionnez le groupe de champs **[!UICONTROL ExperienceEvent AEP Mobile SDK]** dans la liste.
 
-      ![Groupe de champs Détails du cycle de vie mobile AEP](./assets/select-aepmobilesdk-experienceevent.png)
+      ![Groupe de champs Détails du cycle de vie mobile ](./assets/select-aepmobilesdk-experienceevent.png)
 
       Vous pouvez sélectionner le bouton Aperçu pour afficher un aperçu des champs qui font partie de ce groupe de champs, comme `application > name`.
 
-      ![Aperçu du groupe de champs Détails du cycle de vie mobile AEP](./assets/aepmobilesdk-experienceevent-preview.png)
+      ![Aperçu du groupe de champs Détails du cycle de vie mobile ](./assets/aepmobilesdk-experienceevent-preview.png)
 
       Sélectionnez **[!UICONTROL Précédent]** pour fermer l’aperçu.
 
@@ -233,7 +239,7 @@ Configurer le flux de données :
 
 Le flux de données est maintenant configuré pour transférer les données collectées depuis l’application mobile vers le jeu de données dans Adobe Experience Platform.
 
-Consultez [Présentation des flux de données](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=fr) pour plus d’informations sur la configuration d’un flux de données et la gestion des données sensibles.
+Consultez [Présentation des flux de données](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) pour plus d’informations sur la configuration d’un flux de données et la gestion des données sensibles.
 
 
 
@@ -274,7 +280,7 @@ Création et configuration de l’extension Adobe Experience Platform Mobile SDK
 
    ![Configuration de l’extension AEP Mobile SDK](./assets/aepmobilesdk-extension-datastream.png)
 
-1. Entrez votre **[!UICONTROL domaine Edge Network]** sous [!UICONTROL Configuration du domaine]. Utilisez généralement `<organizationName>.data.adobedc.net`.
+1. Entrez votre **[!UICONTROL domaine]** sous [!UICONTROL Configuration du domaine]. Utilisez généralement `<organizationName>.data.adobedc.net`.
 
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
 

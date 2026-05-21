@@ -4,10 +4,15 @@ title: Techniques statistiques
 feature: Visualizations
 role: User
 exl-id: f042a6dd-6af5-4bdd-afc9-07546d8ded6e
-source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
+TQID: https://experienceleague.adobe.com/hbfehTAPC7nw96Wdm47bdX-D5c4cfTCeCtlHlINBBxI
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: d13dba12-733d-4914-8d92-d643658bbe5d
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 6%
+source-wordcount: 552
+ht-degree: 5%
 
 ---
 
@@ -39,7 +44,7 @@ Les données historiques requises pour une granularité temporelle différente :
 | Granularité | Données historiques requises |
 |---|--:|
 | Minute | 3 jours |
-| Heure  | 2 semaines |
+| Heure | 2 semaines |
 | Jour | 8 semaines |
 | Semaine | 2 ans |
 | Mois | 2 ans |
@@ -54,6 +59,6 @@ Le service ne fait aucune hypothèse sur les données utilisateur. Par exemple, 
 
 ## Références
 
-1. Taylor, Sean J. et Benjamin Letham : *Prévision à grande échelle.* The American Statistician 72.1 (2018) : 37-45.
-1. Triebe, Oskar et al.: *Neuralprophet : Prévision explicable à grande échelle.Préimpression arXiv* :2111.15397(2021).
-1. Zhang et Arbor : détection des anomalies de séries temporelles *.* demande de brevet US #18/057883.
+1. Taylor, Sean J. et Benjamin Letham : *Prévision à grande échelle*. The American Statistician 72.1 (2018) : 37-45.
+1. Triebe, Oskar, et al. : *Neuralprophet : Explicable predicasting at scale.* Préimpression arXiv arXiv:2111.15397(2021).
+1. Zhang et Arbor : *détection des anomalies de séries temporelles.* Demande de brevet américain #18/057883.

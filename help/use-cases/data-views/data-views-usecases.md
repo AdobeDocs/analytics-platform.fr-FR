@@ -5,10 +5,16 @@ exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 0e9dc47b80db142801a94dcbf31470d99a610949
+TQID: https://experienceleague.adobe.com/qEgO-lqYk8ipVP99IBazrKAb7Jer-AN96-PY-f1KdPQ
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '1357'
-ht-degree: 29%
+source-wordcount: 1443
+ht-degree: 26%
 
 ---
 
@@ -18,7 +24,7 @@ Ces cas pratiques illustrent la flexibilité et la puissance des vues de donnée
 
 ## Utiliser des mesures de dimensions de liaison
 
-Voir le cas d’utilisation [&#x200B; Utiliser des mesures de dimensions de liaison &#x200B;](binding-dimensions-metrics.md) pour plus d’informations.
+Voir le cas d’utilisation [ Utiliser des mesures de dimensions de liaison ](binding-dimensions-metrics.md) pour plus d’informations.
 
 ## Utiliser des données de résumé
 
@@ -39,7 +45,7 @@ Par exemple, lors de la création d’une vue de données, vous pouvez créer un
 1. Ouvrez la section **[!UICONTROL Inclure/exclure des valeurs]** et spécifiez ce qui suit :
    1. Activez **[!UICONTROL Définir les valeurs d’inclusion et d’exclusion]**.
    1. Sélectionnez **[!UICONTROL Si tous les critères sont satisfaits]** dans **[!UICONTROL Correspondre]**.
-   1. Spécifiez `confirmation`. Le texte du **[!UICONTROL page_title]** indique que cette page est liée au passage d’une commande. Une fois que vous avez examiné tous les titres de page répondant à ces critères, un `1` est comptabilisé pour chaque instance. Le résultat est une nouvelle mesure (qui n’est pas une mesure calculée). Une mesure qui a inclus/exclu des valeurs peut être utilisée partout où une autre mesure peut être utilisée. Ces mesures fonctionnent avec l’attribution, les segments et partout ailleurs où vous pouvez utiliser des mesures standard.
+   1. Spécifiez `confirmation`. Le texte du **[!UICONTROL page_title]** indique que cette page est liée au passage d’une commande. Une fois que vous avez examiné tous les titres de page répondant à ces critères, un `1` est comptabilisé pour chaque instance. Le résultat est une nouvelle mesure (et non une mesure calculée). Une mesure qui contient des valeurs incluses/exclues peut être utilisée partout où une autre mesure peut être utilisée. Ces mesures fonctionnent avec l’attribution, les segments et partout ailleurs où vous pouvez utiliser des mesures standard.
 
    ![Dimension vers la mesure](../assets/string-to-metric.gif){width=100%}
 1. Vous pouvez également définir un modèle dʼattribution pour cette mesure, tel que [!UICONTROL Dernière touche], avec un [!UICONTROL intervalle de recherche en amont] de [!UICONTROL Session].
@@ -60,7 +66,7 @@ Auparavant, les entiers étaient automatiquement traités comme des mesures dans
 
 ## Utiliser des dimensions numériques en tant que mesures dans les diagrammes de flux {#numeric}
 
-Vous pouvez utiliser une dimension numérique pour obtenir des mesures dans votre visualisation Flux de .
+Vous pouvez utiliser une dimension numérique pour obtenir des mesures dans votre visualisation Flux de ].[!UICONTROL 
 
 1. Sous lʼonglet [Composants](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dataviews/create-dataview) dans les Vues de données, faites glisser le champ de schéma [!UICONTROL Canaux marketing] dans la zone [!UICONTROL Mesures] sous [!UICONTROL Composants inclus].
 2. Dans le compte rendu des performances Espace de travail, ce flux affiche les [!UICONTROL Canaux marketing] qui convergent vers les [!UICONTROL Commandes] :
@@ -74,12 +80,12 @@ Cette fonctionnalité s’applique spécifiquement aux champs basés sur des tab
 Par exemple, utilisez la fonctionnalité d’inclusion/exclusion dans les vues de données pour vous concentrer uniquement sur les produits qui ont généré des ventes de plus de 50 $. Ainsi, si vous avez une commande qui comprend un achat de produit à 50 $ et un achat de produit à 25 $, la fonctionnalité d’inclusion/exclusion supprime l’achat du produit à 25 $, et non la commande entière.
 
 1. Sous lʼonglet [Composants](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dataviews/create-dataview) dans les Vues de données, faites glisser le champ de schéma **[!UICONTROL Chiffre dʼaffaires]** dans la zone **[!UICONTROL Mesures]** sous [!UICONTROL Composants inclus].
-1. Sélectionnez la mesure et configurez les éléments suivants sur le côté droit :
+1. Sélectionnez la mesure et configurez les éléments suivants sur le côté droit :
 a. Sous **[!UICONTROL Format]**, sélectionnez **[!UICONTROL Devise]**.
 b. Sous **[!UICONTROL Devise]**, sélectionnez **[!UICONTROL USD]**.
-c. Sous **[!UICONTROL Inclure/Exclure des valeurs]**, cochez la case en regard de **[!UICONTROL Définir des valeurs dʼinclusion/exclusion]**.
-d. Sous **[!UICONTROL Correspond à]**, sélectionnez **[!UICONTROL Si tous les critères sont remplis]**.
-e. Sous **[!UICONTROL Critères]**, sélectionnez **[!UICONTROL Est supérieur ou égal à]**.
+c. Sous **[!UICONTROL Inclure/exclure des valeurs]**, cochez la case en regard de **[!UICONTROL Définir les valeurs d’inclusion/exclusion]**.
+d. Sous **[!UICONTROL Correspondance]**, sélectionnez **[!UICONTROL Si tous les critères sont remplis]**.
+e. Sous **[!UICONTROL Critères]**, sélectionnez **[!UICONTROL est supérieur ou égal à]**.
 f. Spécifiez `50` comme valeur.
 
 Ces nouveaux paramètres vous permettent dʼafficher uniquement les chiffres dʼaffaires de grande valeur et de filtrer ceux inférieurs à 50 $.
@@ -112,11 +118,11 @@ Vous pouvez déterminer si une session est bien la toute première session d’u
 
 Une dimension et deux mesures facilitent cette création de rapports :
 
-* [Type de session](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dataviews/component-reference) - Cette dimension possède deux valeurs : [!UICONTROL Nouveau] et [!UICONTROL Récurrent]. L’élément de ligne [!UICONTROL Nouveau] comprend tout le comportement (c’est-à-dire les mesures par rapport à cette dimension) d’une session déterminée comme étant la première session définie d’une personne. Tous les autres éléments sont inclus dans l’élément de ligne [!UICONTROL Récurrent] (en supposant que tous ceux-ci appartiennent à une session). Les mesures qui ne font partie d’aucune session se retrouvent dans le compartiment « Non applicable » pour cette dimension.
+* [Type de session](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference) - Cette dimension possède deux valeurs : [!UICONTROL Nouveau] et [!UICONTROL Récurrent]. L’élément de ligne [!UICONTROL Nouveau] comprend tout le comportement (c’est-à-dire les mesures par rapport à cette dimension) d’une session déterminée comme étant la première session définie d’une personne. Tous les autres éléments sont inclus dans l’élément de ligne [!UICONTROL Récurrent] (en supposant que tous ceux-ci appartiennent à une session). Les mesures qui ne font partie d’aucune session se retrouvent dans le compartiment « Non applicable » pour cette dimension.
 
-* [Premières sessions](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dataviews/component-reference) La mesure Premières sessions est définie comme la première session d’une personne dans la fenêtre de création de rapports.
+* [Premières sessions](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference) La mesure Premières sessions est définie comme la première session d’une personne dans la fenêtre de création de rapports.
 
-* [Sessions récurrentes](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dataviews/component-reference) la mesure Sessions récurrentes correspond au nombre de sessions qui n’ont pas été la première session d’une personne.—>
+* [Sessions récurrentes](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference) la mesure Sessions récurrentes correspond au nombre de sessions qui n’ont pas été la première session d’une personne.—>
 
 Pour accéder aux composants :
 
@@ -141,12 +147,12 @@ Les dates postérieures au 1er janvier 1900 (à l’exception du 1er janvier 197
 
 ### Cas d’utilisation de date et date-heure
 
-* Date : une agence de voyages collecte la date de départ des voyages dans un champ de leurs données. L’entreprise souhaite disposer d’un rapport comparant le [!UICONTROL &#x200B; Jour de la semaine &#x200B;] pour toutes les dates de départ collectées afin de déterminer laquelle est la plus populaire. Et la société aimerait faire de même pour le [!UICONTROL Mois de l’année].
+* Date : une agence de voyages collecte la date de départ des voyages dans un champ de leurs données. L’entreprise souhaite disposer d’un rapport comparant le [!UICONTROL  Jour de la semaine ] pour toutes les dates de départ collectées afin de déterminer laquelle est la plus populaire. Et la société aimerait faire de même pour le [!UICONTROL Mois de l’année].
 
 * Date et heure : une société de vente au détail collecte l’heure de chacun de ses achats dans les points de vente (POS). Sur un mois donné, l’entreprise souhaite déterminer les périodes de plus forte affluence en [!UICONTROL Heure de la journée].
 
 >[!MORELIKETHIS]
 >
->[&#x200B; Date et Date et heure dans le paramètre du composant Format &#x200B;](/help/data-views/component-settings/format.md)
+>[ Date et Date et heure dans le paramètre du composant Format ](/help/data-views/component-settings/format.md)
 >
 

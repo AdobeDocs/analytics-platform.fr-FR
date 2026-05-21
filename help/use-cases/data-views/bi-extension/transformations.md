@@ -5,9 +5,14 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: User
 exl-id: 2022a841-fc2a-4a76-8d91-8227e7a2130a
-source-git-commit: a0251638e66d5a2524418fc17f56dddc4e48accd
+TQID: https://experienceleague.adobe.com/Z-D08miremjia0hNYhh6SSFe7YpiCqkl0gH-BLNPG6k
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '1676'
+source-wordcount: 1691
 ht-degree: 0%
 
 ---
@@ -35,22 +40,22 @@ Vous utilisez des composants tels que [Filtres](/help/components/segments/seg-ov
 
 >[!TAB Bureau ]
 
-Les objets Customer Journey Analytics sont disponibles dans le volet **[!UICONTROL Données]** et sont récupérés à partir du tableau que vous avez sélectionné dans Power BI Desktop. Par exemple, **[!UICONTROL public.cc_data_view]**. Le nom de la table est identique à l’ID externe que vous avez défini pour votre vue de données dans Customer Journey Analytics. Par exemple, la vue de données avec les **&#x200B;**&#x200B;Titre`C&C - Data View` **[!UICONTROL et]** ID externe`cc_data_view`.
+Les objets Customer Journey Analytics sont disponibles dans le volet **[!UICONTROL Données]** et sont récupérés à partir du tableau que vous avez sélectionné dans Power BI Desktop. Par exemple, **[!UICONTROL public.cc_data_view]**. Le nom de la table est identique à l’ID externe que vous avez défini pour votre vue de données dans Customer Journey Analytics. Par exemple, la vue de données avec les `cc_data_view` **[!UICONTROL Titre]** `C&C - Data View` et **[!UICONTROL ID externe]**.
 
 **Dimensions**
 Les dimensions Customer Journey Analytics sont identifiées par l’[!UICONTROL ID de composant]. L’[!UICONTROL ID de composant] est défini dans votre vue de données Customer Journey Analytics. Par exemple, la dimension **[!UICONTROL Nom du produit]** dans Customer Journey Analytics comporte un [!UICONTROL ID de composant] **[!UICONTROL nom_produit]**, qui est le nom de la dimension dans Power BI Desktop.
 Les dimensions de période de Customer Journey Analytics, telles que **[!UICONTROL Jour]**, **[!UICONTROL Semaine]**, **[!UICONTROL Mois]**, etc. sont disponibles sous la forme **[!UICONTROL daterangeday]**, **[!UICONTROL daterangeweek]**, **[!UICONTROL daterangemonth]**, etc.
 
 **Mesures**
-Les mesures Customer Journey Analytics sont identifiées par l’[!UICONTROL ID de composant]. L’[!UICONTROL ID de composant] est défini dans votre vue de données Customer Journey Analytics. Par exemple, la mesure **[!UICONTROL Chiffre d’affaires d’achat]** dans Customer Journey Analytics comporte un [!UICONTROL ID de composant] **[!UICONTROL purchase_revenue]**, qui est le nom de la mesure dans Power BI Desktop. Un ∑**[!UICONTROL indique les mesures.]** Lorsque vous utilisez une mesure dans n’importe quelle visualisation, la mesure est renommée **[!UICONTROL Somme de *mesure *]**.
+Les mesures Customer Journey Analytics sont identifiées par l’[!UICONTROL ID de composant]. L’[!UICONTROL ID de composant] est défini dans votre vue de données Customer Journey Analytics. Par exemple, la mesure **[!UICONTROL Chiffre d’affaires d’achat]** dans Customer Journey Analytics comporte un [!UICONTROL ID de composant] **[!UICONTROL purchase_revenue]**, qui est le nom de la mesure dans Power BI Desktop. Un ∑]**indique les mesures.**[!UICONTROL  Lorsque vous utilisez une mesure dans n’importe quelle visualisation, la mesure est renommée **[!UICONTROL Somme de *mesure *]**.
 
 **Filtres**
 Les filtres que vous définissez dans Customer Journey Analytics sont disponibles dans le champ **[!UICONTROL filterName]**. Lorsque vous utilisez un champ **[!UICONTROL filterName]** dans Power BI Desktop, vous pouvez spécifier le filtre à utiliser.
 
 **Mesures calculées**
-Les mesures calculées que vous définissez dans Customer Journey Analytics sont identifiées par l’[!UICONTROL ID externe] que vous avez défini pour la mesure calculée. Par exemple, la mesure calculée **[!UICONTROL Nom du produit (nombre distinct)]** comporte [!UICONTROL ID externe] **[!UICONTROL nom_produit_nombre_distinct]** et s’affiche sous la forme **[!UICONTROL cm_nom_produit_nombre_distinct]**&#x200B;t dans Power BI Desktop.
+Les mesures calculées que vous définissez dans Customer Journey Analytics sont identifiées par l’[!UICONTROL ID externe] que vous avez défini pour la mesure calculée. Par exemple, la mesure calculée **[!UICONTROL Nom du produit (nombre distinct)]** comporte [!UICONTROL ID externe] **[!UICONTROL nom_produit_nombre_distinct]** et s’affiche sous la forme **[!UICONTROL cm_nom_produit_nombre_distinct]**t dans Power BI Desktop.
 
-**périodes**
+**Périodes**
 Les périodes que vous définissez dans Customer Journey Analytics sont disponibles dans le champ **[!UICONTROL daterangeName]**. Lorsque vous utilisez un champ **[!UICONTROL daterangeName]**, vous pouvez spécifier la période à utiliser.
 
 **Transformations personnalisées**
@@ -110,7 +115,7 @@ limit 1000001
 
 >[!TAB  Tableau Desktop ]
 
-Les objets Customer Journey Analytics sont disponibles dans la barre latérale **[!UICONTROL Données]** lorsque vous travaillez dans une feuille. et sont récupérés à partir du tableau que vous avez sélectionné dans le cadre de la page **[!UICONTROL Source de données]** de Tableau. Par exemple, **[!UICONTROL cc_data_view]**. Le nom de la table est identique à l’ID externe que vous avez défini pour votre vue de données dans Customer Journey Analytics. Par exemple, la vue de données avec les **&#x200B;**&#x200B;Titre`C&C - Data View` **[!UICONTROL et]** ID externe`cc_data_view`.
+Les objets Customer Journey Analytics sont disponibles dans la barre latérale **[!UICONTROL Données]** lorsque vous travaillez dans une feuille. et sont récupérés à partir du tableau que vous avez sélectionné dans le cadre de la page **[!UICONTROL Source de données]** de Tableau. Par exemple, **[!UICONTROL cc_data_view]**. Le nom de la table est identique à l’ID externe que vous avez défini pour votre vue de données dans Customer Journey Analytics. Par exemple, la vue de données avec les `cc_data_view` **[!UICONTROL Titre]** `C&C - Data View` et **[!UICONTROL ID externe]**.
 
 **Dimensions**
 Les dimensions de Customer Journey Analytics sont identifiées par le [!UICONTROL nom du composant]. Le [!UICONTROL nom du composant] est défini dans votre vue de données Customer Journey Analytics. Par exemple, la dimension **[!UICONTROL Nom du produit]** dans Customer Journey Analytics comporte un [!UICONTROL Nom du composant] **[!UICONTROL Nom du produit]**, qui est le nom de la dimension dans Tableau. Toutes les dimensions sont identifiées par **[!UICONTROL Abc]**.
@@ -125,7 +130,7 @@ Les filtres que vous définissez dans Customer Journey Analytics sont disponible
 **Mesures calculées**
 Les mesures calculées que vous définissez dans Customer Journey Analytics sont identifiées par le [!UICONTROL Titre] que vous avez défini pour la mesure calculée. Par exemple, la mesure calculée **[!UICONTROL Nom du produit (Nombre distinct)]** comporte [!UICONTROL Titre] **[!UICONTROL Nom du produit (Nombre distinct)]** et s’affiche sous la forme **[!UICONTROL Cm Nom du produit Nombre distinct]** dans le tableau.
 
-**périodes**
+**Périodes**
 Les périodes que vous définissez dans Customer Journey Analytics sont disponibles dans le champ **[!UICONTROL Nom de la période]**. Lorsque vous utilisez un champ **[!UICONTROL Nom de la période]**, vous pouvez spécifier la période à utiliser.
 
 **Transformations personnalisées**
@@ -158,14 +163,14 @@ HAVING ((SUM("cc_data_view"."purchase_revenue") >= 999999.99999998999) AND (SUM(
 
 >[!TAB Looker]
 
-Les objets Customer Journey Analytics sont disponibles dans l’interface **[!UICONTROL Explorer]**. Les et sont récupérés dans le cadre de la configuration de votre connexion, projet et modèle dans Looker. Par exemple, **[!UICONTROL cc_data_view]**. Le nom de la vue est identique à l’ID externe que vous avez défini pour votre vue de données dans Customer Journey Analytics. Par exemple, la vue de données avec les **&#x200B;**&#x200B;Titre`C&C - Data View` **[!UICONTROL et]** ID externe`cc_data_view`.
+Les objets Customer Journey Analytics sont disponibles dans l’interface **[!UICONTROL Explorer]**. Les et sont récupérés dans le cadre de la configuration de votre connexion, projet et modèle dans Looker. Par exemple, **[!UICONTROL cc_data_view]**. Le nom de la vue est identique à l’ID externe que vous avez défini pour votre vue de données dans Customer Journey Analytics. Par exemple, la vue de données avec les `cc_data_view` **[!UICONTROL Titre]** `C&C - Data View` et **[!UICONTROL ID externe]**.
 
 **Dimensions**
 Les dimensions de Customer Journey Analytics sont répertoriées sous la forme **[!UICONTROL DIMENSION]** dans le rail de gauche **[!UICONTROL Vue de données Cc]**. La dimension est définie dans la vue de données Customer Journey Analytics. Par exemple, la dimension **[!UICONTROL Nom du produit]** dans Customer Journey Analytics comporte un **[!UICONTROL DIMENSION]** **[!UICONTROL Nom du produit]**, qui est le nom de la dimension dans l’outil de recherche.
 Les dimensions de période de Customer Journey Analytics, telles que **[!UICONTROL Jour]**, **[!UICONTROL Semaine]**, **[!UICONTROL Mois]**, etc. sont disponibles sous la forme **[!UICONTROL Date du jour de date]**, **[!UICONTROL Date de la semaine de date]**, **[!UICONTROL Date du mois de date]**, etc.  Lorsque vous utilisez une dimension de période, vous devez sélectionner une définition de date ou d’heure appropriée. Par exemple, **[!UICONTROL Année]**, **[!UICONTROL Trimestre]**, **[!UICONTROL Mois]**, **[!UICONTROL Date]**.
 
 **Mesures**
-Les mesures provenant de Customer Journey Analytics sont répertoriées sous la forme **[!UICONTROL DIMENSION]** dans le rail de gauche **[!UICONTROL Vue de données Cc]**. Par exemple, la mesure **[!UICONTROL Chiffre d’affaires d’achat]** dans Customer Journey Analytics comporte un **[!UICONTROL DIMENSION]** **[!UICONTROL Chiffre d’affaires d’achat]**. Pour utiliser réellement comme mesure, créez un champ de mesure personnalisé comme illustré dans les exemples ci-dessus ou utilisez le raccourci sur une dimension. Par exemple, ⋮**[!UICONTROL , sélectionnez]** Agrégat **[!UICONTROL , puis]** Somme **[!UICONTROL ..]**
+Les mesures provenant de Customer Journey Analytics sont répertoriées sous la forme **[!UICONTROL DIMENSION]** dans le rail de gauche **[!UICONTROL Vue de données Cc]**. Par exemple, la mesure **[!UICONTROL Chiffre d’affaires d’achat]** dans Customer Journey Analytics comporte un **[!UICONTROL DIMENSION]** **[!UICONTROL Chiffre d’affaires d’achat]**. Pour utiliser réellement comme mesure, créez un champ de mesure personnalisé comme illustré dans les exemples ci-dessus ou utilisez le raccourci sur une dimension. Par exemple, ⋮]**, sélectionnez**[!UICONTROL  Agrégat ]**, puis**[!UICONTROL  Somme ]**..**[!UICONTROL 
 
 **Filtres**
 Les filtres que vous définissez dans Customer Journey Analytics sont disponibles dans le champ **[!UICONTROL Nom du filtre]**. Lorsque vous utilisez un champ **[!UICONTROL Nom du filtre]** dans le Looker, vous pouvez spécifier le filtre à utiliser.
@@ -173,7 +178,7 @@ Les filtres que vous définissez dans Customer Journey Analytics sont disponible
 **Mesures calculées**
 Les mesures calculées que vous définissez dans Customer Journey Analytics sont identifiées par le [!UICONTROL Titre] que vous avez défini pour la mesure calculée. Par exemple, la mesure calculée **[!UICONTROL Nom du produit (Nombre distinct)]** comporte [!UICONTROL Titre] **[!UICONTROL Nom du produit (Nombre distinct)]** et s’affiche sous la forme **[!UICONTROL Cm Nom du produit Nombre distinct]** dans l’outil de recherche.
 
-**périodes**
+**Périodes**
 Les périodes que vous définissez dans Customer Journey Analytics sont disponibles dans le champ **[!UICONTROL Nom de la période]**. Lorsque vous utilisez un champ **[!UICONTROL Nom de la période]**, vous pouvez spécifier la période à utiliser.
 
 **Transformations personnalisées**

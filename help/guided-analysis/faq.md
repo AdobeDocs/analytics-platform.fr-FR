@@ -5,10 +5,16 @@ exl-id: b6f92d47-6c09-4338-9dc5-b30bbfbe9f7f
 feature: Guided Analysis
 keywords: Product Analytics
 role: User
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+TQID: https://experienceleague.adobe.com/4fwNjSWPcLFNewlSHjxJq6MVWQY1Lc0-CpSomNkU69M
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 100%
+source-wordcount: 443
+ht-degree: 89%
 
 ---
 
@@ -60,9 +66,9 @@ L’analyse guidée et [Analysis Workspace](../analysis-workspace/home.md) s’
 
 Bien qu’[Analysis Workspace](../analysis-workspace/home.md) et l’analyse guidée utilisent les mêmes données sous-jacentes, la manière dont chaque outil vous permet de formuler des requêtes sur ces données est différente.
 
-* **Analysis Workspace est une expérience centrée sur la dimension.** Les tableaux comprennent généralement des lignes dimensionnelles, tandis que les colonnes sont généralement des mesures. Des segments peuvent être appliqués à la fois aux lignes et aux colonnes pour obtenir les données souhaitées.
+* **Analysis Workspace est une expérience centrée sur les dimensions.** Les tableaux se composent généralement de lignes dimensionnelles, tandis que les colonnes sont généralement des mesures. Des segments peuvent être appliqués à la fois aux lignes et aux colonnes pour obtenir les données souhaitées.
 
-* **L’analyse guidée est une expérience centrée sur l’événement et l’utilisateur ou l’utilisatrice.** Chaque analyse commence par sélectionner des événements, puis des dimensions et des segments peuvent être ajoutés pour affiner ces données d’événement.
+* **L’analyse guidée est une expérience centrée sur l’utilisateur et l’événement.** Chaque analyse commence par la sélection d’événements, puis des dimensions et des segments peuvent être ajoutés pour affiner ces données d’événement.
 
 ![Vues d’Analysis Workspace et d’analyse guidée](assets/structure.png){style="border:1px solid gray"}
 

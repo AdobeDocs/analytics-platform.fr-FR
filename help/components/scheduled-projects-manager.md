@@ -4,9 +4,15 @@ title: Projets planifiés
 feature: Components
 exl-id: fa7c5a0f-4983-40ee-b9c1-3e10aab3fc28
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+TQID: https://experienceleague.adobe.com/MOIr6V7GnwTw8-luvhS14IrE7PKspoVOCRXYGBnAUxA
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: c38ed341-fab2-46df-9d72-88d8166edebb
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: 794
 ht-degree: 41%
 
 ---
@@ -76,18 +82,18 @@ Le panneau Filtrer se compose des sections suivantes.
 
 | Balises | Description |
 |---|---|
-| ![Étiquettes](/help/components/assets/scheduledprojects-filter-tags.png){width="300"} | La section **[!UICONTROL Balises]** permet de filtrer par balise. <ul><li>Vous utilisez ![Rechercher](/help/assets/icons/Search.svg) **[!UICONTROL Rechercher des balises]** pour rechercher les balises que vous souhaitez utiliser pour filtrer.</li><li>Vous pouvez sélectionnez plusieurs balises. Les balises disponibles dépendent des sélections effectuées dans d’autres sections du panneau Filtrer.</li><li>Les chiffres indiquent ce qui suit :<ul><li>7︎⃣ : nombre de projets planifiés associés à la balise spécifique.</li></ul></li></ul> |
+| ![Balises](/help/components/assets/scheduledprojects-filter-tags.png){width="300"} | La section **[!UICONTROL Balises]** permet de filtrer par balise. <ul><li>Vous utilisez ![Rechercher](/help/assets/icons/Search.svg) **[!UICONTROL Rechercher des balises]** pour rechercher les balises que vous souhaitez utiliser pour filtrer.</li><li>Vous pouvez sélectionnez plusieurs balises. Les balises disponibles dépendent des sélections effectuées dans d’autres sections du panneau Filtrer.</li><li>Les chiffres indiquent ce qui suit :<ul><li>⃣ : nombre de projets planifiés associés à la balise spécifique.</li></ul></li></ul> |
 
 
 ### Propriétaires
 
 | Propriétaire | Description |
 |---|---|
-| ![Propriétaires](/help/components/assets/scheduledprojects-filter-owners.png){width="300"} | La section **[!UICONTROL Propriétaire]** vous permet de filtrer les propriétaires. <ul><li>Utilisez ![Rechercher](/help/assets/icons/Search.svg) *Rechercher des propriétaires* pour rechercher les propriétaires que vous souhaitez utiliser pour filtrer.</li><li>Vous pouvez sélectionner plusieurs propriétaires. Les propriétaires disponibles dépendent des sélections effectuées dans d’autres sections du panneau Filtrer.</li><li>Les chiffres indiquent ce qui suit :<ul><li>4︎⃣ : nombre de projets planifiés associés au propriétaire spécifique.</li></ul></li></ul> |
+| ![Propriétaires](/help/components/assets/scheduledprojects-filter-owners.png){width="300"} | La section **[!UICONTROL Propriétaire]** vous permet de filtrer les propriétaires. <ul><li>Utilisez ![Rechercher](/help/assets/icons/Search.svg) *Rechercher des propriétaires* pour rechercher les propriétaires que vous souhaitez utiliser pour filtrer.</li><li>Vous pouvez sélectionner plusieurs propriétaires. Les propriétaires disponibles dépendent des sélections effectuées dans d’autres sections du panneau Filtrer.</li><li>Les chiffres indiquent ce qui suit :<ul><li>⃣ : nombre de projets planifiés associés au propriétaire spécifique.</li></ul></li></ul> |
 
 
 ### Autres filtres
 
 | Autres filtres | Description |
 |---|---|
-| ![Autres filtres](/help/components/assets/scheduledprojects-filter-otherfilters.png){width="300"} | La section **[!UICONTROL Autres filtres]** vous permet de filtrer selon un autre filtre prédéfini.<ul><li>Vous pouvez sélectionner l’une ou plusieurs des options suivantes :<ul><li> **[!UICONTROL Expiré]** : filtrez les projets planifiés ayant expiré.</li><li>**[!UICONTROL Échec]** : filtrez les projets planifiés pour lesquels la planification a échoué.</li></ul>Ce que vous pouvez sélectionner dépend de votre rôle et de vos autorisations.</li><li>Vous pouvez sélectionner plusieurs filtres. Les autres filtres disponibles dépendent des sélections effectuées dans d’autres sections du panneau Filtrer.</li><li>Les chiffres indiquent ce qui suit :<ul><li>4︎⃣ : nombre de projets planifiés associés à l’autre filtre spécifique.</li></ul></li></ul> |
+| ![Autres filtres](/help/components/assets/scheduledprojects-filter-otherfilters.png){width="300"} | La section **[!UICONTROL Autres filtres]** vous permet de filtrer selon un autre filtre prédéfini.<ul><li>Vous pouvez sélectionner l’une ou plusieurs des options suivantes :<ul><li> **[!UICONTROL Expiré]** : filtrez les projets planifiés ayant expiré.</li><li>**[!UICONTROL Échec]** : filtrez les projets planifiés pour lesquels la planification a échoué.</li></ul>Ce que vous pouvez sélectionner dépend de votre rôle et de vos autorisations.</li><li>Vous pouvez sélectionner plusieurs filtres. Les autres filtres disponibles dépendent des sélections effectuées dans d’autres sections du panneau Filtrer.</li><li>Les chiffres indiquent ce qui suit :<ul><li>⃣ : nombre de projets planifiés associés à l’autre filtre spécifique.</li></ul></li></ul> |

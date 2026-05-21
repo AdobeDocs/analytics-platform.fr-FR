@@ -4,9 +4,15 @@ title: Erreurs et résolution des problèmes
 feature: Workspace Basics
 exl-id: 792c3b2e-bd24-4e98-b9ea-983c1189d52e
 role: User
-source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
+TQID: https://experienceleague.adobe.com/sRztp43YkOt8oCDqPJH17s5jc9ukMa1NJsl9ZpOY-MQ
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2: id: a8b1c240-f315-46e3-b813-f545c4279dd1id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: 588
 ht-degree: 100%
 
 ---
@@ -22,7 +28,7 @@ Certains messages d’erreur courants peuvent s’afficher lorsque vous utilisez
 | Message d’erreur | Pourquoi l’erreur se produit-elle ? | Optimisation |
 | --- | --- | --- |
 | [!UICONTROL La vue de données fait l’objet de rapports exceptionnellement lourds. Veuillez réessayer ultérieurement.] | Votre organisation tente d’exécuter trop de requêtes simultanées sur une vue de données spécifique. Les facteurs à l’origine de cette erreur sont les demandes d’API, les projets planifiés, les rapports planifiés, les alertes planifiées et les utilisateurs et utilisatrices qui effectuent simultanément des demandes de création de rapports. | Répartissez vos requêtes et vos plannings pour la vue de données de manière plus uniforme tout au long de la journée.<p>Les administrateurs et les administratrices peuvent utiliser le [Gestionnaire des activités de rapport pour identifier et annuler des requêtes](/help/reporting-activity-manager/reporting-activity-overview.md) qui consomment de la capacité de création de rapports.</p> |
-| [!UICONTROL Ce rapport est trop complexe. Veuillez consulter les bonnes pratiques pour créer des rapports Analysis Workspace.] | Votre requête de création de rapports est trop volumineuse et ne peut pas être exécutée. Les facteurs à l’origine de cette erreur sont les expirations de délai en raison de la complexité de la requête. | Simplifiez votre requête. Par exemple, raccourcissez la période, simplifiez les critères de segmentation ou supprimez certaines colonnes ou lignes de votre tableau. Vous pouvez également envisager de diviser le tableau en plusieurs requêtes distinctes. |
+| [!UICONTROL Ce rapport est trop complexe. Veuillez consulter les bonnes pratiques pour créer des rapports Analysis Workspace.] | Votre requête de création de rapports est trop volumineuse et ne peut pas être exécutée. Les facteurs à l’origine de cette erreur sont les temporisations en raison de la complexité de la requête. | Simplifiez votre requête. Par exemple, raccourcissez la période, simplifiez les critères de segmentation ou supprimez certaines colonnes ou lignes de votre tableau. Vous pouvez également envisager de diviser le tableau en plusieurs requêtes distinctes. |
 | [!UICONTROL La vue des données dépasse actuellement sa capacité de reporting. Veuillez simplifier la demande ou réessayer plus tard.] | Votre organisation tente d’exécuter trop de requêtes simultanées sur une vue de données spécifique. Les facteurs à l’origine de cette erreur sont les requêtes API, les projets planifiés, et les utilisateurs et les utilisatrices qui effectuent simultanément des demandes de création de rapports. | Répartissez vos requêtes et vos plannings pour la vue de données de manière plus uniforme tout au long de la journée. |
 | [!UICONTROL Une erreur système s’est produite. Veuillez soumettre un ticket à l’assistance clientèle sous **[!UICONTROL Aide > Envoyer le ticket d’assistance]** en incluant votre code d’erreur.] | Adobe rencontre un problème qui doit être résolu. | Envoyez le code d’erreur à l’Assistance clientèle. |
 | [!UICONTROL Erreur 500 : Échec du chargement de la page] | Les problèmes liés à votre réseau local, tels que les [paramètres du pare-feu](/help/technotes/ip-addresses.md) de la société, sont un facteur contribuant à cette erreur. En outre, Adobe peut rencontrer un problème qui doit être résolu. | Essayez de vous reconnecter après quelques minutes. Si le problème persiste, envoyez le code d’ID d’instance EIM à l’assistance clientèle. |

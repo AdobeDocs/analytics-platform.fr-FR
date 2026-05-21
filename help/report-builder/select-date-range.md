@@ -6,10 +6,15 @@ feature: Report Builder
 type: Documentation
 exl-id: 7252214f-a7d6-451b-99c9-d39e8e47120b
 solution: Customer Journey Analytics
-source-git-commit: 31d3b40ad7a081aefa4297d7f4a3b986711ead03
+TQID: https://experienceleague.adobe.com/g7-pu7H2LQVNRShRj5Jr6gGWYfB-eMxoLRexdfBUGiE
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: cb6c7d24-631f-46e5-9e39-3a2705f73962id: f2ef16dc-055a-4bb7-baa5-7039653f3966
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '853'
-ht-degree: 50%
+source-wordcount: 859
+ht-degree: 52%
 
 ---
 
@@ -128,7 +133,7 @@ Le tableau suivant dresse une liste dʼexemples dʼexpressions de date.
 
 ## Période à partir dʼune cellule
 
-La période peut être spécifiée dans les cellules des feuilles de calcul. Utilisez l’option **[!UICONTROL Période à partir de la cellule]** pour choisir les dates de début et de fin du bloc de données dans les cellules sélectionnées. Lorsque vous sélectionnez l’option **[!UICONTROL À partir de la cellule]**, le panneau affiche les champs **[!UICONTROL De]** et **[!UICONTROL À]** dans lesquels vous pouvez saisir l’emplacement d’une cellule ou utiliser ![DataBlockSelector](/help/assets/icons/DataBlockSelector.svg) pour sélectionner la cellule sélectionnée.
+La période peut être spécifiée dans les cellules des feuilles de calcul. Utilisez lʼoption **[!UICONTROL Période à partir dʼune cellule]** pour choisir la date de début et de fin du bloc de données à partir des cellules sélectionnées. Lorsque vous sélectionnez l’option **[!UICONTROL À partir de la cellule]**, le panneau affiche les champs **[!UICONTROL De]** et **[!UICONTROL À]** dans lesquels vous pouvez saisir l’emplacement d’une cellule ou utiliser ![DataBlockSelector](/help/assets/icons/DataBlockSelector.svg) pour sélectionner la cellule sélectionnée.
 
 ![Sélectionner de la cellule Sheet1!H4 à Sheet1!I4](./assets/date-range-from-cell.png){zoomable="yes"}
 

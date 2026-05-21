@@ -5,9 +5,15 @@ exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
+TQID: https://experienceleague.adobe.com/Ozf-XAsirDMkZLIQCX4SLGD7SvKinu3O4fwJ4ifgSvQ
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+subfeature_v2: id: ad333ea6-e90d-4c8f-8d61-9f8690784d6fid: ad5685a0-8296-4a0c-814c-658c10b4af12id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: c38ed341-fab2-46df-9d72-88d8166edebb
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: bcc5edb5-84c3-4940-9f84-ed88b6c16274id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '3784'
+source-wordcount: 3784
 ht-degree: 53%
 
 ---
@@ -40,7 +46,7 @@ Les informations suivantes décrivent les paramètres utilisés par un composant
 | Paramètre | Description/Cas d’utilisation |
 | --- | --- |
 | [!UICONTROL Type de composant] | Obligatoire. Permet de modifier un composant de Mesure en Dimension ou inversement. La modification de la sélection de cette liste déroulante déplace le composant vers sa zone de composants incluse respective. |
-| [!UICONTROL &#x200B; Nom du composant &#x200B;] | Obligatoire. Permet de définir le nom convivial qui apparaîtra dans Analysis Workspace. Vous pouvez renommer un composant pour lui donner un nom spécifique à la vue de données. |
+| [!UICONTROL  Nom du composant ] | Obligatoire. Permet de définir le nom convivial qui apparaîtra dans Analysis Workspace. Vous pouvez renommer un composant pour lui donner un nom spécifique à la vue de données. |
 | [!UICONTROL Description] | Facultatif, mais recommandé. Fournit des informations sur le composant à d’autres utilisateurs. |
 | [!UICONTROL Balises] | Facultatif. Permet de baliser le composant avec des balises personnalisées ou prêtes à l’emploi pour faciliter la recherche/le filtrage dans l’interface utilisateur d’Analysis Workspace. |
 | [!UICONTROL Libellés de contexte] | Facultatif. Menu déroulant des libellés [contextuels](#context-labels) définis par le système disponibles pouvant être appliqués à un composant. |
@@ -59,7 +65,7 @@ Les informations suivantes décrivent les paramètres utilisés par un composant
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Paramètres du type de composant](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/data-views/component-type-settings-in-data-views){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Paramètres du type de composant](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/data-views/component-type-settings-in-data-views){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 
