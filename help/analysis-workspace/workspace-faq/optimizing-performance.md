@@ -5,11 +5,30 @@ feature: Workspace Basics
 role: User, Admin
 exl-id: 226afef7-00da-4ac2-be4e-e19995621c61
 TQID: https://experienceleague.adobe.com/gJaQPkkWeGrjTxlsBV5UoaY8H9quRqc-XrJAxRMSeEU
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: a8b1c240-f315-46e3-b813-f545c4279dd1id: aff2ef09-fc60-4018-9197-e2befd623064id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: c38ed341-fab2-46df-9d72-88d8166edebbid: cb6c7d24-631f-46e5-9e39-3a2705f73962id: d3c978ee-1ff0-4475-968a-721e2dd99ef1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817afid: e4a0bad2-b448-47f1-9fa6-222ebdb3b5b0
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: a8b1c240-f315-46e3-b813-f545c4279dd1
+  - id: aff2ef09-fc60-4018-9197-e2befd623064
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+  - id: c38ed341-fab2-46df-9d72-88d8166edebb
+  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+  - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+  - id: e4a0bad2-b448-47f1-9fa6-222ebdb3b5b0
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 2547
@@ -70,7 +89,7 @@ Les facteurs du projet sont les suivants :
 | Visualisations développées (sur le total des visualisations) | Nombre de tableaux et de visualisations développés par rapport au total du projet, y compris les sources de données masquées. La ligne directrice est de 15. | Après avoir pris des mesures pour simplifier votre projet, réduisez les visualisations de votre projet qui n’ont pas besoin d’être affichées au chargement. Classez par ordre de priorité les éléments visuels qui sont les plus importants pour le consommateur du rapport et décomposez les éléments visuels associés dans un panneau ou projet distinct et plus détaillé, au besoin. |
 | Nombre de cellules à structure libre | Le nombre total de cellules de tableau à structure libre dans le projet, calculé par lignes * colonnes dans tous les tableaux. Ce nombre exclut les sources de données masquées. La ligne directrice est de 4000. | Réduisez le nombre de colonnes dans votre tableau en conservant uniquement les points de données les plus pertinents. Réduisez le nombre de lignes du tableau en ajustant le nombre de lignes affichées, en appliquant un filtre de tableau ou en appliquant un segment. |
 | Composants disponibles | Le nombre total de composants récupérés dans le rail gauche du projet, dans toutes les suites de rapports du projet. Ce nombre a une incidence sur la vitesse de chargement du rail de gauche et sur la vitesse à laquelle les résultats de recherche sont renvoyés. La ligne directrice est de 2000. | Contactez l’administrateur de votre produit au sujet de la création d’une suite de rapports virtuelle organisée dotée d’un ensemble de composants plus personnalisé. |
-| Composants utilisés | Le nombre total de composants utilisés dans le projet. La ligne directrice est de 100. | Le nombre de composants utilisés n’influe pas directement sur les performances. Cependant, la complexité de ces composants contribue aux performances du projet. Consultez les optimisations dans la section [ facteurs supplémentaires ](#additional-factors) ci-dessous. |
+| Composants utilisés | Le nombre total de composants utilisés dans le projet. La ligne directrice est de 100. | Le nombre de composants utilisés n’influe pas directement sur les performances. Cependant, la complexité de ces composants contribue aux performances du projet. Consultez les optimisations dans la section [&#x200B; facteurs supplémentaires &#x200B;](#additional-factors) ci-dessous. |
 | Période la plus longue | Ce facteur affiche la période la plus longue utilisée dans le projet. La ligne directrice est d’un an. | Si possible, n’extrayez que les données dont vous avez besoin. Limitez le calendrier du panneau aux dates pertinentes pour votre analyse. Vous pouvez également utiliser des composants de période (composants violets) dans vos tableaux à structure libre. Les périodes utilisées dans un tableau remplacent les périodes du panneau. Par exemple, vous pouvez ajouter le mois dernier, la semaine dernière et hier aux colonnes du tableau pour demander ces périodes spécifiques. Pour en savoir plus sur l’utilisation des périodes dans Analysis Workspace, [regardez cette vidéo](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/calendar-and-date-ranges/using-date-ranges-and-comparisons-in-analysis-workspace). <br><br>En outre, réduisez le nombre de comparaisons d’une année à l’autre utilisées dans le projet. Lorsqu’une comparaison d’une année sur l’autre est calculée, elle examine l’ensemble des 13 mois de données entre les mois ciblés. Cette comparaison a le même impact que la modification de la période du panneau sur 13 mois. |
 
 ## Facteurs de requête

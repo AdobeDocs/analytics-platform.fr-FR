@@ -5,11 +5,20 @@ exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
 TQID: https://experienceleague.adobe.com/kmZ-AYMcKxwZftFSqJQpTH3zDTDT1CxlNw-MVO6Ikn4
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: cb6c7d24-631f-46e5-9e39-3a2705f73962id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 3841
@@ -50,7 +59,7 @@ La connexion porte le nom **[!UICONTROL Connexion activée pour AJO (*nom du san
 | Nom du jeu de données | Schéma | Type de jeu de données | Type de source de données | ID de personne | Clé | Clé correspondante | Importer de nouvelles données | Renvoyer les données |
 |---|---|---|---|---|---|---|---|---|
 | [!UICONTROL Jeu de données d’entité AJO] | [!UICONTROL Schéma d’enregistrement d’entité AJO] | [!UICONTROL Rechercher] | [!UICONTROL Autre] | - | ` _id` | `_experience. decisioning. propositions. scopeDetails. correlationID` | ![Status Green](assets/../../connections/assets/status-green.svg) Activé | ![Status Gray](assets/../../connections/assets/status-gray.svg) Désactivé |
-| [!UICONTROL Événements d’étape de parcours] | [!UICONTROL Schéma d’événement d’étape de parcours pour Journey Orchestration] | [!UICONTROL Événement] | [!UICONTROL Autre] | [!UICONTROL  IdentityMap(\&lt;primary\>)] | - | - | ![Status Green](assets/../../connections/assets/status-green.svg) Activé | ![Status Gray](assets/../../connections/assets/status-gray.svg) Désactivé |
+| [!UICONTROL Événements d’étape de parcours] | [!UICONTROL Schéma d’événement d’étape de parcours pour Journey Orchestration] | [!UICONTROL Événement] | [!UICONTROL Autre] | [!UICONTROL &#x200B; IdentityMap(\&lt;primary\>)] | - | - | ![Status Green](assets/../../connections/assets/status-green.svg) Activé | ![Status Gray](assets/../../connections/assets/status-gray.svg) Désactivé |
 | [!UICONTROL Jeu de données d’événement d’expérience de tracking d’e-mail AJO] | [!UICONTROL Schéma d’événement d’expérience de tracking d’e-mail AJO] | [!UICONTROL Événement] | [!UICONTROL Autre] | [!UICONTROL IdentityMap(\&lt;primary\>)] | - | - | ![Status Green](assets/../../connections/assets/status-green.svg) Activé | ![Status Gray](assets/../../connections/assets/status-gray.svg) Désactivé |
 | [!UICONTROL Jeu de données d’événement de message de feedback AJO] | [!UICONTROL Schéma d’événement de commentaire aux messages AJO] | [!UICONTROL Événement] | [!UICONTROL Autre] | [!UICONTROL IdentityMap(\&lt;primary\>)] | - | - | ![Status Green](assets/../../connections/assets/status-green.svg) Activé | ![Status Gray](assets/../../connections/assets/status-gray.svg) Désactivé |
 | [!UICONTROL Jeu de données d’événement d’expérience de tracking de notifications push AJO] | [!UICONTROL Schéma d’événement d’expérience de tracking de notifications push AJO] | [!UICONTROL Événement] | [!UICONTROL Autre] | [!UICONTROL IdentityMap(\&lt;primary\>)] | - | - | ![Status Green](assets/../../connections/assets/status-green.svg) Activé | ![Status Gray](assets/../../connections/assets/status-gray.svg) Désactivé |

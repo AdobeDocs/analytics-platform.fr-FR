@@ -7,11 +7,20 @@ role: Admin
 badgePremium: label="Beta"
 exl-id: 17f72954-085c-46a8-bc28-6af0a4eb159a
 TQID: https://experienceleague.adobe.com/DhV4VNrG4WR1iQP9VqjvV16iEpfShbBir7N1JfeRbCM
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: c38ed341-fab2-46df-9d72-88d8166edebbid: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+  - id: c38ed341-fab2-46df-9d72-88d8166edebb
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 2356
@@ -181,22 +190,22 @@ Définissez un schéma qui modélise ces données. Configurer le schéma :
 
      Dans un scénario réel, vous pouvez utiliser un champ plus approprié comme [descripteur de version](aep.md#schema). Par exemple, un champ qui effectue le suivi d’une heure de dernière modification.
 
-   * Le champ **[!UICONTROL personid]** est configuré, avec **[!UICONTROL timestamp]** comme clé de Principal ****. Sélectionnez ![Ajouter](/help/assets/icons/Add.svg) **[!UICONTROL Créer une clé primaire composite]** pour créer une clé composite.
+   * Le champ **[!UICONTROL personid]** est configuré, avec **[!UICONTROL timestamp]** comme clé de Principal **&#x200B;**. Sélectionnez ![Ajouter](/help/assets/icons/Add.svg) **[!UICONTROL Créer une clé primaire composite]** pour créer une clé composite.
 
-     ![ Clé composite ](assets/platform-schema-compositekey.png)
+     ![&#x200B; Clé composite &#x200B;](assets/platform-schema-compositekey.png)
 
      Le champ **[!UICONTROL personid]** est également configuré en tant qu’**[!UICONTROL Identité]**, avec **[!UICONTROL CRMID]** comme **[!UICONTROL Espace de noms d’identité]**.
 
      ![Descripteur de personne](assets/platform-schema-personid.png)
 
-     Le champ **[!UICONTROL personid]** n’a pas besoin d’être la clé de Principal ****. Dans un scénario réel, vous disposez probablement d’un champ différent pour effectuer le suivi de la clé primaire, distinct de l’**[!UICONTROL personid]**.
+     Le champ **[!UICONTROL personid]** n’a pas besoin d’être la clé de Principal **&#x200B;**. Dans un scénario réel, vous disposez probablement d’un champ différent pour effectuer le suivi de la clé primaire, distinct de l’**[!UICONTROL personid]**.
 
-   * Le champ **[!UICONTROL timestamp]** est configuré, ainsi que le champ **[!UICONTROL personid]** comme clé de Principal ****. Le champ **[!UICONTROL horodatage]** est également configuré en tant que **[!UICONTROL descripteur d’horodatage]**. Il vous suffit de définir un champ en tant que **[!UICONTROL descripteur d’horodatage]** pour les données relationnelles de série temporelle.
+   * Le champ **[!UICONTROL timestamp]** est configuré, ainsi que le champ **[!UICONTROL personid]** comme clé de Principal **&#x200B;**. Le champ **[!UICONTROL horodatage]** est également configuré en tant que **[!UICONTROL descripteur d’horodatage]**. Il vous suffit de définir un champ en tant que **[!UICONTROL descripteur d’horodatage]** pour les données relationnelles de série temporelle.
 
      ![Descripteur d’horodatage](assets/platform-schema-timestamp.png)
 
 
-   Si vous avez correctement défini la clé de Principal ****, le descripteur de version **** et le descripteur d’horodatage ****, l’avertissement au-dessus de la définition du schéma disparaît.
+   Si vous avez correctement défini la clé de Principal **&#x200B;**, le descripteur de version **&#x200B;**&#x200B;et le descripteur d’horodatage **&#x200B;**, l’avertissement au-dessus de la définition du schéma disparaît.
 
 1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer le schéma.
 
