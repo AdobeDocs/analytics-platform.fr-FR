@@ -4,10 +4,22 @@ description: Découvrez comment utiliser des éléments de dimension dynamiques 
 feature: Visualizations
 exl-id: 7806f535-15c7-40f4-955a-724d9752969d
 role: User
-source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+TQID: https://experienceleague.adobe.com/q9X-MNr4r3Xrs16gAgH6-F3yrRDJP73xfXdd8BcFg84
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+  - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '544'
-ht-degree: 88%
+source-wordcount: 549
+ht-degree: 77%
 
 ---
 
@@ -21,9 +33,9 @@ Les éléments de dimension dynamiques changent avec le temps et dépendent de l
 
 Lorsque vous déposez une dimension dans un tableau à structure libre, des lignes dynamiques sont renvoyées. Elles représentent les éléments principaux qui correspondent à la dimension pour une mesure et une période données. Vous pouvez également déposer une dimension dans des colonnes de tableau à structure libre et la dimension se développe automatiquement dans les 5 premiers éléments de dimension.
 
-Par exemple, lorsque vous faites glisser la dimension Type de navigateur vers le tableau, les premiers éléments de dimension Type de navigateur (par exemple, Microsoft, Apple, Google, etc.) sont renvoyés de manière dynamique dans les lignes du tableau. Si vous les déposez dans une colonne, les 5 premiers éléments de la dimension Type de navigateur sont dynamiquement renvoyés.
+Par exemple, lorsque vous faites glisser la dimension Type de navigateur dans le tableau, les principaux éléments de dimension Type de navigateur (par exemple, Microsoft, Apple, Google, etc.) revenir dynamiquement aux lignes du tableau. Si vous les déposez dans une colonne, les 5 premiers éléments de la dimension Type de navigateur sont dynamiquement renvoyés.
 
-Les éléments de dimension dynamiques comportent les options de filtre de ligne ![Filtrer](/help/assets/icons/Filter.svg) et ![Fermer](/help/assets/icons/Close.svg), et ne comportent **pas** de verrou ![LockClosed](/help/assets/icons/LockClosed.svg). <!--do they have the lock icon? --> Lorsque vous cliquez sur ![Fermer](/help/assets/icons/Close.svg) en regard d’un élément de dimension dynamique, un filtre est automatiquement appliqué. Pour plus d’informations sur l’application de filtres aux tableaux, voir [Filtrer et trier des tableaux](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
+Les éléments de dimension dynamiques comportent l’option de filtre de ligne ![Filtrer](/help/assets/icons/Filter.svg) et un ![Fermer](/help/assets/icons/Close.svg), et ne comportent **pas** de verrou ![LockClosed](/help/assets/icons/LockClosed.svg). <!--do they have the lock icon? --> Lorsque vous cliquez sur ![Fermer](/help/assets/icons/Close.svg) en regard d’un élément de dimension dynamique, un filtre est automatiquement appliqué. Pour plus d’informations sur l’application de filtres aux tableaux, voir [Filtrer et trier des tableaux](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
 
 
 ![Tableau à structure libre mettant en surbrillance l’icône de filtre.](assets/dynamic-items.png)

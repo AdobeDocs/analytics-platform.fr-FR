@@ -5,10 +5,24 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: cb5a4f98-9869-4410-8df2-b2f2c1ee8c57
 role: Admin
-source-git-commit: a30b4286207eb72f7674bb4f6ba4cf0a1aecd280
+TQID: https://experienceleague.adobe.com/cyNvsdN-bSBY2VqCdxAZvWhyTx8--sOUMifbuYrZKTM
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '1588'
-ht-degree: 11%
+source-wordcount: 1680
+ht-degree: 14%
 
 ---
 
@@ -18,11 +32,11 @@ Ce cas pratique explore une solution intermédiaire pour ingérer des audiences 
 
 ## Conditions préalables
 
-* Accès à [Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/access-control/home), en particulier au profil client en temps réel.
+* Accès à [&#128279;](https://experienceleague.adobe.com/fr/docs/experience-platform/access-control/home), en particulier au profil client en temps réel.
 * Accès à la création et à la gestion d’Experience Platform [schémas](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/home) et [jeux de données](https://experienceleague.adobe.com/fr/docs/experience-platform/catalog/datasets/overview).
 * Accès à [Experience Platform Query Service](https://experienceleague.adobe.com/fr/docs/experience-platform/query/home) (et possibilité d’écrire du code SQL).
 * Accès à un outil qui peut effectuer certaines transformations des données.
-* Accédez à Customer Journey Analytics. Vous devez être un administrateur de produit [Customer Journey Analytics](/help/technotes/access-control.md) pour créer et modifier des connexions Customer Journey Analytics et des vues de données.
+* Accédez à Customer Journey Analytics. Vous devez être un administrateur de produit [&#128279;](/help/technotes/access-control.md) pour créer et modifier des connexions Customer Journey Analytics et des vues de données.
 * [Authentification et accès aux API Experience Platform (API Catalog Service et API Segmentation Service)](https://experienceleague.adobe.com/fr/docs/experience-platform/landing/platform-apis/api-authentication). Vous devez créer un projet dans Developer Console de l’entreprise et de la sandbox et vous assurer que vous disposez des informations requises pour envoyer des appels API avec succès.
 
 ## Étapes
@@ -84,7 +98,7 @@ curl -X POST \
 }'
 ```
 
-Où ce qui suit est vrai :
+Où :
 
 * `DATASET_NAME` est le nom convivial du jeu de données. Par exemple : `Segment Export Job Dataset for CJA`.
 
@@ -94,7 +108,7 @@ Où ce qui suit est vrai :
 ["@/dataSets/{DATASET_ID}"]
 ```
 
-Où ce qui suit est vrai :
+Où :
 
 * `DATASET_ID` est l’identifiant du jeu de données créé.
 
@@ -243,7 +257,7 @@ FROM (
 WHERE value.status = 'realized' AND (key = '{AUDIENCE_ID_1}' OR key = 'AUDIENCE_ID_2' OR key = 'AUDIENCE_ID_3')
 ```
 
-Où ce qui suit est vrai :
+Où :
 
 * `IDENTITY_TO_USE_AS_PERSON_ID` est l’un des champs que vous avez définis dans le cadre de la tâche d’exportation. Par exemple : `_demoemea.identification.core.email`.
 * `DATASET_TABLE_NAME` est le nom de la table du jeu de données.
@@ -270,7 +284,7 @@ Le résultat de la requête, au format JSON, doit ressembler à ceci :
 ]
 ```
 
-Où ce qui suit est vrai :
+Où :
 
 * `PERSON_ID_x` valeurs d’identifiant correspondent à l’identifiant que vous souhaitez utiliser comme ID de personne. Par exemple, `john.doe@gmail.com` lorsque vous utilisez l’e-mail.
 * `AUDIENCE_ID_x` sont les identifiants de l’audience.
@@ -306,7 +320,7 @@ Le fichier JSON final doit se présenter comme suit :
 ]
 ```
 
-Où ce qui suit est vrai :
+Où :
 
 * `TENANT_NAME` est le nom du client. Par exemple : `_demoemea`.
 * `PERSON_ID_x` valeurs d’identifiant correspondent à l’identifiant que vous souhaitez utiliser comme ID de personne. Par exemple, `john.doe@gmail.com` lorsque vous utilisez l’e-mail.

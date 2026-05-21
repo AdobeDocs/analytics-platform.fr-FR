@@ -5,10 +5,23 @@ exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 0e9dc47b80db142801a94dcbf31470d99a610949
+TQID: https://experienceleague.adobe.com/qEgO-lqYk8ipVP99IBazrKAb7Jer-AN96-PY-f1KdPQ
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '1357'
-ht-degree: 29%
+source-wordcount: 1443
+ht-degree: 26%
 
 ---
 
@@ -39,7 +52,7 @@ Par exemple, lors de la création d’une vue de données, vous pouvez créer un
 1. Ouvrez la section **[!UICONTROL Inclure/exclure des valeurs]** et spécifiez ce qui suit :
    1. Activez **[!UICONTROL Définir les valeurs d’inclusion et d’exclusion]**.
    1. Sélectionnez **[!UICONTROL Si tous les critères sont satisfaits]** dans **[!UICONTROL Correspondre]**.
-   1. Spécifiez `confirmation`. Le texte du **[!UICONTROL page_title]** indique que cette page est liée au passage d’une commande. Une fois que vous avez examiné tous les titres de page répondant à ces critères, un `1` est comptabilisé pour chaque instance. Le résultat est une nouvelle mesure (qui n’est pas une mesure calculée). Une mesure qui a inclus/exclu des valeurs peut être utilisée partout où une autre mesure peut être utilisée. Ces mesures fonctionnent avec l’attribution, les segments et partout ailleurs où vous pouvez utiliser des mesures standard.
+   1. Spécifiez `confirmation`. Le texte du **[!UICONTROL page_title]** indique que cette page est liée au passage d’une commande. Une fois que vous avez examiné tous les titres de page répondant à ces critères, un `1` est comptabilisé pour chaque instance. Le résultat est une nouvelle mesure (et non une mesure calculée). Une mesure qui contient des valeurs incluses/exclues peut être utilisée partout où une autre mesure peut être utilisée. Ces mesures fonctionnent avec l’attribution, les segments et partout ailleurs où vous pouvez utiliser des mesures standard.
 
    ![Dimension vers la mesure](../assets/string-to-metric.gif){width=100%}
 1. Vous pouvez également définir un modèle dʼattribution pour cette mesure, tel que [!UICONTROL Dernière touche], avec un [!UICONTROL intervalle de recherche en amont] de [!UICONTROL Session].
@@ -74,12 +87,12 @@ Cette fonctionnalité s’applique spécifiquement aux champs basés sur des tab
 Par exemple, utilisez la fonctionnalité d’inclusion/exclusion dans les vues de données pour vous concentrer uniquement sur les produits qui ont généré des ventes de plus de 50 $. Ainsi, si vous avez une commande qui comprend un achat de produit à 50 $ et un achat de produit à 25 $, la fonctionnalité d’inclusion/exclusion supprime l’achat du produit à 25 $, et non la commande entière.
 
 1. Sous lʼonglet [Composants](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dataviews/create-dataview) dans les Vues de données, faites glisser le champ de schéma **[!UICONTROL Chiffre dʼaffaires]** dans la zone **[!UICONTROL Mesures]** sous [!UICONTROL Composants inclus].
-1. Sélectionnez la mesure et configurez les éléments suivants sur le côté droit :
+1. Sélectionnez la mesure et configurez les éléments suivants sur le côté droit :
 a. Sous **[!UICONTROL Format]**, sélectionnez **[!UICONTROL Devise]**.
 b. Sous **[!UICONTROL Devise]**, sélectionnez **[!UICONTROL USD]**.
-c. Sous **[!UICONTROL Inclure/Exclure des valeurs]**, cochez la case en regard de **[!UICONTROL Définir des valeurs dʼinclusion/exclusion]**.
-d. Sous **[!UICONTROL Correspond à]**, sélectionnez **[!UICONTROL Si tous les critères sont remplis]**.
-e. Sous **[!UICONTROL Critères]**, sélectionnez **[!UICONTROL Est supérieur ou égal à]**.
+c. Sous **[!UICONTROL Inclure/exclure des valeurs]**, cochez la case en regard de **[!UICONTROL Définir les valeurs d’inclusion/exclusion]**.
+d. Sous **[!UICONTROL Correspondance]**, sélectionnez **[!UICONTROL Si tous les critères sont remplis]**.
+e. Sous **[!UICONTROL Critères]**, sélectionnez **[!UICONTROL est supérieur ou égal à]**.
 f. Spécifiez `50` comme valeur.
 
 Ces nouveaux paramètres vous permettent dʼafficher uniquement les chiffres dʼaffaires de grande valeur et de filtrer ceux inférieurs à 50 $.

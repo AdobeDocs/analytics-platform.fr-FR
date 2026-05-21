@@ -6,10 +6,25 @@ feature: Basics
 role: Admin
 badgePremium: label="Beta"
 exl-id: 17f72954-085c-46a8-bc28-6af0a4eb159a
-source-git-commit: cd3baec708f1811a7cbc37dfe0a9c3af75eb97c3
+TQID: https://experienceleague.adobe.com/DhV4VNrG4WR1iQP9VqjvV16iEpfShbBir7N1JfeRbCM
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+  - id: c38ed341-fab2-46df-9d72-88d8166edebb
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '2351'
-ht-degree: 14%
+source-wordcount: 2356
+ht-degree: 15%
 
 ---
 
@@ -53,26 +68,26 @@ Dans [!DNL Google BigQuery], les exemples de données suivants sont stockés et 
 
 | timestamp | identifiant | pagename | personid | trackingcode | commandes | montant du chiffre d’affaires |
 | :---                      |  ---: | :---              | :---            | :---          |   ---: | :---           |
-| 2025-03-06T19:15:39+00:00 | 10001 | Page d’accueil | person-1abc123 | abc123 |        |                |
-| 2025-03-06T19:15:39+00:00 | 10002 | page de confirmation | person-1abc123 |               | 1 | 174,25 |
-| 2025-03-06T19:15:39+00:00 | 10003 | Page d’accueil | person-2def123 | def123 |        |                |
-| 2025-03-06T19:15:39+00:00 | 10004 | Page d’accueil | person-3ghi123 | ghi123 |        |                |
-| 2025-03-06T19:15:39+00:00 | 10005 | page de confirmation | person-3ghi123 |               | 1 | 149,25 |
-| 2025-03-06T19:15:39+00:00 | 10006 | Page d’accueil | person-4abc456 | abc456 |        |                |
-| 2025-03-06T19:15:39+00:00 | 10007 | Page d’accueil | person-5def456 | def456 |        |                |
-| 2025-03-06T19:15:39+00:00 | 10008 | Page d’accueil | person-6ghi456 | ghi456 |        |                |
-| 2025-03-06T19:15:39+00:00 | 10009 | page de confirmation | person-6ghi456 |               | 1 | 159,25 |
-| 2025-03-06T19:15:39+00:00 | 10010 | Page d’accueil | person-7abc789 | abc789 |        |                |
-| 2025-03-06T19:15:39+00:00 | 10011 | Page d’accueil | person-8def789 | def789 |        |                |
-| 2025-03-06T19:15:39+00:00 | 10012 | Page d’accueil | person-9ghi789 | ghi789 |        |                |
-| 2025-03-06T19:15:39+00:00 | 10013 | page de confirmation | person-9ghi789 |               | 1 | 124,25 |
-| 2025-03-06T19:15:39+00:00 | 10014 | Page d’accueil | person-10abc987 | abc987 |        |                |
-| 2025-03-06T19:15:39+00:00 | 10015 | Page d’accueil | person-11def987 | def987 |        |                |
-| 2025-03-06T19:15:39+00:00 | 10016 | Page d’accueil | person-12ghi987 | ghi987 |        |                |
-| 2025-03-06T19:15:39+00:00 | 10017 | Page d’accueil | person-13abc654 | abc654 |        |                |
-| 2025-03-06T19:15:39+00:00 | 10018 | Page d’accueil | person-14def654 | def654 |        |                |
-| 2025-03-06T19:15:39+00:00 | 10019 | Page d’accueil | person-15ghi654 | ghi654 |        |                |
-| 2025-03-06T19:15:39+00:00 | 10020 | page de confirmation | person-15ghi654 |               | 1 | 174,25 |
+| 2025-03-:15:39+00:00 | 10001 | Page d’accueil | person-1abc123 | abc123 |        |                |
+| 2025-03-:15:39+00:00 | 10002 | page de confirmation | person-1abc123 |               | 1 | 174,25 |
+| 2025-03-:15:39+00:00 | 10003 | Page d’accueil | person-2def123 | def123 |        |                |
+| 2025-03-:15:39+00:00 | 10004 | Page d’accueil | person-3ghi123 | ghi123 |        |                |
+| 2025-03-:15:39+00:00 | 10005 | page de confirmation | person-3ghi123 |               | 1 | 149,25 |
+| 2025-03-:15:39+00:00 | 10006 | Page d’accueil | person-4abc456 | abc456 |        |                |
+| 2025-03-:15:39+00:00 | 10007 | Page d’accueil | person-5def456 | def456 |        |                |
+| 2025-03-:15:39+00:00 | 10008 | Page d’accueil | person-6ghi456 | ghi456 |        |                |
+| 2025-03-:15:39+00:00 | 10009 | page de confirmation | person-6ghi456 |               | 1 | 159,25 |
+| 2025-03-:15:39+00:00 | 10010 | Page d’accueil | person-7abc789 | abc789 |        |                |
+| 2025-03-:15:39+00:00 | 10011 | Page d’accueil | person-8def789 | def789 |        |                |
+| 2025-03-:15:39+00:00 | 10012 | Page d’accueil | person-9ghi789 | ghi789 |        |                |
+| 2025-03-:15:39+00:00 | 10013 | page de confirmation | person-9ghi789 |               | 1 | 124,25 |
+| 2025-03-:15:39+00:00 | 10014 | Page d’accueil | person-10abc987 | abc987 |        |                |
+| 2025-03-:15:39+00:00 | 10015 | Page d’accueil | person-11def987 | def987 |        |                |
+| 2025-03-:15:39+00:00 | 10016 | Page d’accueil | person-12ghi987 | ghi987 |        |                |
+| 2025-03-:15:39+00:00 | 10017 | Page d’accueil | person-13abc654 | abc654 |        |                |
+| 2025-03-:15:39+00:00 | 10018 | Page d’accueil | person-14def654 | def654 |        |                |
+| 2025-03-:15:39+00:00 | 10019 | Page d’accueil | person-15ghi654 | ghi654 |        |                |
+| 2025-03-:15:39+00:00 | 10020 | page de confirmation | person-15ghi654 |               | 1 | 174,25 |
 
 +++
 
@@ -204,7 +219,7 @@ Vous utilisez un connecteur source pour connecter la solution native de l’entr
 Dans l’interface d’Experience Platform :
 
 1. Sélectionnez **[!UICONTROL Sources]**.
-1. Sélectionnez ou recherchez **[!UICONTROL BigQuery Google]**.
+1. Sélectionnez ou recherchez **[!UICONTROL BigQuery]**.
 1. Sélectionnez **[!UICONTROL Ajouter des données]**.
 
 L’assistant d’ajout de données vous guide tout au long des étapes suivantes pour connecter les données du tableau de [!DNL Google BigQuery] à Experience Platform.
@@ -351,7 +366,7 @@ Créer une vue de données :
 
 4. À l’étape **[!UICONTROL Composants]** :
 
-   1. Ajoutez n’importe quel champ de schéma et/ou composant standard que vous souhaitez inclure dans les zones de composant **[!UICONTROL MESURES]** ou **[!UICONTROL DIMENSIONS]**. Veillez à ajouter les champs pertinents du jeu de données contenant les données mises en miroir. Pour accéder à ces champs :
+   1. Ajoutez n’importe quel champ de schéma et/ou composant standard que vous voulez inclure dans les zones de composant **[!UICONTROL MESURES]** ou **[!UICONTROL DIMENSIONS]**. Veillez à ajouter les champs pertinents du jeu de données contenant les données mises en miroir. Pour accéder à ces champs :
 
       1. Sélectionnez **[!UICONTROL Jeux de données d’événement]**.
       1. Sélectionnez **[!UICONTROL Champs ad hoc et relationnels]**.

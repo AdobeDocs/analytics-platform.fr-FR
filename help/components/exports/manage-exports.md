@@ -5,9 +5,21 @@ title: Gérer des exports
 feature: Components
 exl-id: 0c21802a-c46f-41be-9356-d836c038b174
 role: User
-source-git-commit: d0fa233aa5359064e9e0afea1a5384f5e38d017e
+TQID: https://experienceleague.adobe.com/a63XlsGElfxDW1-EqB2l1iMdTtMlk7OaVBuLvS8QH7E
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '1277'
+source-wordcount: 1281
 ht-degree: 5%
 
 ---

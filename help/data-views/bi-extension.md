@@ -5,10 +5,27 @@ solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: 79b3ca663af6c383eed7ec81e9c430855669d19b
+TQID: https://experienceleague.adobe.com/RrX-gp2IY-Ny1D1yzR2whV2GuU98mysma8tQmUEubF8
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+  - id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '3462'
-ht-degree: 84%
+source-wordcount: 3756
+ht-degree: 82%
 
 ---
 
@@ -51,7 +68,7 @@ Pour utiliser des informations d’identification n’expirant pas, procédez co
 1. Créez des [informations d’identification non expirantes dans Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/query/ui/credentials#non-expiring-credentials). Si vous souhaitez utiliser des informations d’identification non expirantes existantes, assurez-vous que ces informations d’identification sont [&#x200B; migrées vers OAuth](https://experienceleague.adobe.com/fr/docs/experience-platform/query/ui/credentials#migrate-credentials).
 
 1. Assurez-vous que les informations d’identification non expirantes sont disponibles pour le produit et les profils de produit Customer Journey Analytics. Vous devez être administrateur système pour que l’organisation puisse exécuter les étapes suivantes.
-   1. Sélectionnez **[!UICONTROL Admin Console]** dans ![App](/help/assets/icons/Apps.svg).
+   1. Sélectionnez **&#x200B;**&#x200B;dans ![App](/help/assets/icons/Apps.svg).
    1. Vérifiez que les informations d’identification non expirantes sont ajoutées à la liste des informations d’identification d’API.
       1. Sélectionnez **[!UICONTROL Utilisateurs]** dans le menu supérieur.
       1. Sélectionnez **[!UICONTROL Informations d’identification de l’API]** dans le rail de gauche.
@@ -68,7 +85,7 @@ Pour utiliser des informations d’identification n’expirant pas, procédez co
 
 1. Vérifiez que les informations d’identification d’API non expirantes s’affichent dans Experience Platform Query Service.
 
-   1. Sélectionnez **[!UICONTROL Experience Platform]** dans ![App](/help/assets/icons/Apps.svg).
+   1. Sélectionnez **&#x200B;**&#x200B;dans ![App](/help/assets/icons/Apps.svg).
    1. Sélectionnez **[!UICONTROL Requêtes]** dans le rail de gauche.
    1. Sélectionnez **[!UICONTROL Informations d’identification]** dans le menu supérieur.
    1. Vos informations d’identification d’API non expirantes doivent s’afficher, en utilisant le nom que vous avez fourni à l’étape 1, dans la liste **[!UICONTROL Informations d’identification non expirantes]**.
@@ -389,8 +406,8 @@ HAVING m1 > 100</code></pre>
             </td>
         </tr>
         <tr>
-            <td>Valeurs de dimension
-distinctes, top </td>
+            <td>Distinct, haut 
+valeurs de dimension </td>
             <td>
                 <pre><code>SELECT DISTINCT dim1 FROM dv1</code></pre>
                 <pre><code>SELECT dim1 AS dv1
@@ -414,8 +431,8 @@ WHERE `timestamp` BETWEEN '2022-01-01' AND '2022-01-02'</code></pre>
             </td>
         </tr>
         <tr>
-            <td>Répartitions
-multi-dimensions
+            <td>Multi-dimension
+répartitions
 et top-distincts </td>
             <td>
                 <pre><code>SELECT dim1, dim2, SUM(metric1) AS m1
@@ -432,9 +449,9 @@ FROM dv1</code></pre>
             </td>
         </tr>
         <tr>
-            <td>Sous-sélection :
-filtrer les résultats
-supplémentaires </td>
+            <td>Sous-sélectionner :
+Filtrer les éléments supplémentaires
+résultats </td>
             <td>
                 <pre><code>SELECT dim1, m1
 FROM (
@@ -446,8 +463,8 @@ OÙ dim1 dans ('A', 'B')</code></pre>
             </td>
         </tr>
         <tr>
-            <td>Sous-sélection :
-interrogation dans les
+            <td>Sous-sélectionner :
+Requête sur
 vues de données </td>
             <td>
                 <pre><code>SELECT key, SUM(m1) AS total
@@ -469,10 +486,10 @@ ORDER BY total</code></pre>
             </td>
         </tr>
         <tr>
-            <td>Sous-sélection :
-sources en niveaux,
-filtrage et
-agrégation </td>
+            <td>Sous-sélectionner : 
+Source superposée, 
+le filtrage, 
+et agrégation </td>
             <td>Niveaux utilisant les sous-sélections :
 <pre><code>SELECT rows.dim1, SUM(rows.m1) AS total
 FROM (
@@ -500,10 +517,10 @@ GROUP BY rows.item</code></pre>
         </td>
         </tr>
         <tr>
-            <td>Sélectionne l’emplacement où
-les mesures sont antérieures
-ou sont mélangées avec
-les dimensions. </td>
+            <td>Sélectionne où le
+les mesures viennent avant
+ ou sont mélangés à
+les dimensions </td>
             <td>
                 <pre><code>SELECT SUM(metric1) AS m1, dim1
 FROM dv1
@@ -663,7 +680,7 @@ Ces fonctions peuvent être utilisées sur les dimensions des clauses `SELECT` e
 | [Trimestre](https://spark.apache.org/docs/latest/api/sql/index.html#quarter) | ``SELECT QUARTER(`timestamp`)`` | Générez une identité de dimension dynamique sur le champ transmis. |
 | [Heure](https://spark.apache.org/docs/latest/api/sql/index.html#hour) | ``SELECT HOUR(`timestamp`)`` | Générez une identité de dimension dynamique sur le champ transmis. Utilisez l’identifiant de l’élément au lieu de la valeur, car vous avez besoin du numéro et non du nom convivial. |
 | [Minute](https://spark.apache.org/docs/latest/api/sql/index.html#minute) | ``SELECT MINUTE(`timestamp`)`` | Générez une identité de dimension dynamique sur le champ transmis. |
-| [Extraire](https://spark.apache.org/docs/latest/api/sql/index.html#extract) | ``SELECT EXTRACT(MONTH FROM `timestamp`)`` | Générez une identité de dimension dynamique sur le champ transmis. Utilisez l’ID d’élément au lieu de la valeur de certaines parties de cette fonction, car vous avez besoin du numéro et non du nom convivial.<br/>Les parties prises en charge sont les suivantes :<br>- Mots-clés : `YEAR`, `MONTH`, `DAYOFMONTH`, `DAYOFWEEK`, `DAYOFYEAR`, `WEEK`, `QUARTER`, `HOUR`, `MINUTE`.<br/>- Chaînes : `'YEAR'`, `'Y'`, `'MONTH'`, `'M'`, `'DAYOFMONTH'`, `'DAY'`, `'D'`, `'DAYOFWEEK'`, `'DOW'`, `'DAYOFYEAR'`, `'DOY'`, `'WEEK'`, `'WOY`, `'W'`, `'QUARTER'`, `'QOY'`, `'Q'`, `'HOUR'` ou `'MINUTE'`. |
+| [Extraire](https://spark.apache.org/docs/latest/api/sql/index.html#extract) | ``SELECT EXTRACT(MONTH FROM `timestamp`)`` | Générez une identité de dimension dynamique sur le champ transmis. Utilisez l’ID d’élément au lieu de la valeur de certaines parties de cette fonction, car vous avez besoin du numéro et non du nom convivial.<br/>Les parties prises en charge sont les suivantes : <br>- Mots-clés : `YEAR`, `MONTH`, `DAYOFMONTH`, `DAYOFWEEK`, `DAYOFYEAR`, `WEEK`, `QUARTER`, `HOUR`, `MINUTE`.<br/>- Chaînes : `'YEAR'`, `'Y'`, `'MONTH'`, `'M'`, `'DAYOFMONTH'`, `'DAY'`, `'D'`, `'DAYOFWEEK'`, `'DOW'`, `'DAYOFYEAR'`, `'DOY'`, `'WEEK'`, `'WOY`, `'W'`, `'QUARTER'`, `'QOY'`, `'Q'` ou `'HOUR'` `'MINUTE'`. |
 | [Date (partie)](https://spark.apache.org/docs/latest/api/sql/index.html#date_part) | ``SELECT DATE_PART('month', `timestamp`)`` | Générez une identité de dimension dynamique sur le champ transmis. Utilisez l’ID d’élément au lieu de la valeur de certaines parties de cette fonction, car vous avez besoin du numéro et non du nom convivial.<br/>Les parties de chaîne prises en charge sont les suivantes : `'YEAR'`, `'Y'`, `'MONTH'`, `'M'`, `'DAYOFMONTH'`, `'DAY'`, `'D'`, `'DAYOFWEEK'`, `'DOW'`, `'DAYOFYEAR'`, `'DOY'`, `'WEEK'`, `'WOY`&#39;, `'W'`, `'QUARTER'`, `'QOY'`, `'Q'`, `'HOUR'` ou `'MINUTE'`. |
 | [Date (tronquée)](https://spark.apache.org/docs/latest/api/sql/index.html#date_trunc) | ``SELECT DATE_TRUNC('quarter', `timestamp`)`` | Générez une identité de dimension dynamique sur le champ transmis.<br/>Les granularités de chaîne prises en charge sont les suivantes : `'YEAR'`, `'Y'`, `'MONTH'`, `'M'`, `'DAYOFMONTH'`, `'DAY'`, `'D'`, `'DAYOFWEEK'`, `'DOW'`, `'DAYOFYEAR'`, `'DOY'`, `'WEEK'`, `'WOY`, `'W'`, `'QUARTER'`, `'QOY'`, `'Q'`, `'HOUR'` ou `'MINUTE'`. |
 
@@ -675,6 +692,6 @@ Certaines fonctionnalités SQL ne sont que partiellement prises en charge avec l
 
 | Fonction | Exemple | Détails |
 |---|---|---|
-| MIN() ET MAX() | ``MIN(daterange)`` ou <br/> ``MAX(daterange)`` | `MIN()` sur `timestamp`, `daterange` ou tout autre `daterangeX` comme `daterangeday` renvoie 2 ans plus tôt.<br/><br/> `MAX()` sur `timestamp`, `daterange` ou tout autre `daterangeX` comme `daterangeday` renvoie la date/l’heure actuelle.<br/><br/>`MIN()` ou `MAX()` sur une autre dimension, mesure ou expression renvoie 0. |
+| MIN() ET MAX() | ``MIN(daterange)`` ou <br/> ``MAX(daterange)`` | `MIN()` sur `timestamp`, `daterange` ou tout autre `daterangeX` comme `daterangeday` renvoie 2 ans plus tôt.<br/><br/> `MAX()` sur `timestamp`, `daterange` ou l’un des `daterangeX` tels que `daterangeday` renvoie la date/l’heure actuelle.<br/><br/>`MIN()` ou `MAX()` sur une autre dimension, mesure ou expression renvoie 0. |
 
 {style="table-layout:auto"}
