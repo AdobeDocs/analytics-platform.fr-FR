@@ -4,9 +4,14 @@ description: Apprenez à gérer les audiences dans Customer Journey Analytics
 exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
 feature: Audiences
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+TQID: https://experienceleague.adobe.com/SVEj1knpMzmtkIlwAYSb6o0PYBR9wf7JbrLMcMM2V8g
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: 774
 ht-degree: 97%
 
 ---
@@ -80,9 +85,9 @@ Voici des actions courantes du gestionnaire de projets planifiés : Vous pouvez
 
 | Icône | Action | Description |
 |:---:|---|---|
-| ![Étiquettes](/help/assets/icons/Labels.svg) | **[!UICONTROL Étiquette]** | Balisez les audiences sélectionnées. Dans la boîte de dialogue **[!UICONTROL Mettre à jour les balises : *nom de l’audience *]**, sélectionnez des balises dans le menu déroulant ou saisissez une ou plusieurs nouvelles balises. Sélectionnez&#x200B;**[!UICONTROL Enregistrer &#x200B;]**&#x200B;pour enregistrer. |
+| ![Étiquettes](/help/assets/icons/Labels.svg) | **[!UICONTROL Étiquette]** | Balisez les audiences sélectionnées. Dans la boîte de dialogue **[!UICONTROL Mettre à jour les balises : *nom de l’audience *]**, sélectionnez des balises dans le menu déroulant ou saisissez une ou plusieurs nouvelles balises. Sélectionnez**[!UICONTROL Enregistrer ]**pour enregistrer. |
 | ![Supprimer](/help/assets/icons/Delete.svg) | **[!UICONTROL Supprimer]** | Supprimez l’audience sélectionnée. |
-| ![Modifier](/help/assets/icons/Edit.svg) | **[!UICONTROL Renommer]** | Renommez l’audience sélectionnée. Utilisez la boîte de dialogue **[!UICONTROL Renommer : *nom de l’audience *]**&#x200B;pour renommer l’audience et sélectionnez&#x200B;**[!UICONTROL Enregistrer &#x200B;]**&#x200B;pour enregistrer. |
+| ![Modifier](/help/assets/icons/Edit.svg) | **[!UICONTROL Renommer]** | Renommez l’audience sélectionnée. Utilisez la boîte de dialogue **[!UICONTROL Renommer : *nom de l’audience *]**pour renommer l’audience et sélectionnez**[!UICONTROL Enregistrer ]**pour enregistrer. |
 
 Les actions suivantes sont disponibles à partir de la barre d’actions bleue lors de la sélection d’un ou de plusieurs projets planifiés.
 
@@ -123,4 +128,4 @@ Le panneau Filtrer se compose des sections suivantes.
 
 | Balises | Description |
 |---|---|
-| ![Étiquettes](/help/components/audiences/assets/audiences-filter-tags.png){width="300"} | La section **[!UICONTROL Balises]** permet de filtrer par balise. <ul><li>Utilisez la fonction ![Rechercher](/help/assets/icons/Search.svg) pour rechercher les balises à utiliser pour le filtrage. |
+| ![Balises](/help/components/audiences/assets/audiences-filter-tags.png){width="300"} | La section **[!UICONTROL Balises]** permet de filtrer par balise. <ul><li>Utilisez la fonction ![Rechercher](/help/assets/icons/Search.svg) pour rechercher les balises à utiliser pour le filtrage. |

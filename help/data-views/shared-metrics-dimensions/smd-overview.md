@@ -2,20 +2,26 @@
 title: Mesures et dimensions partagées - Aperçu
 description: Utilisez la même dimension ou la même référence de mesure dans plusieurs vues de données.
 exl-id: 998a9f9b-cfa7-4b97-b32b-d50e35d01b39
-source-git-commit: 1de8b8f40a7e1be0de0e6cbed5cc57ff834f2377
+TQID: https://experienceleague.adobe.com/5sjpTMocv3547Xqg4VD6C5Gp-cRzNmyHTI5iE6P-JGA
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '1282'
-ht-degree: 0%
+source-wordcount: 1292
+ht-degree: 3%
 
 ---
 
 # Mesures et dimensions partagées - Aperçu
 
-Les mesures et dimensions partagées fournissent un emplacement central pour gérer les dimensions et mesures qui peuvent être utilisées dans un certain nombre de vues de données. Ces composants sont particulièrement utiles aux organisations qui utilisent plusieurs vues de données, en particulier si ces vues de données partagent des paramètres de composant communs. Les modifications apportées aux mesures et dimensions partagées s’appliquent instantanément à toutes les vues de données avec lesquelles elles sont partagées. Lors de la modification d’une vue de données individuelle, les dimensions et mesures partagées peuvent être identifiées par une icône ![Composant partagé](/help/assets/icons/CCLibrary.svg) en regard du nom du composant.
+Les mesures et dimensions partagées fournissent un emplacement central pour gérer les dimensions et mesures qui peuvent être utilisées dans un certain nombre de vues de données. Ces composants sont particulièrement utiles aux entreprises qui utilisent plusieurs vues de données, en particulier si ces vues de données ont des paramètres de composant en commun. Les modifications apportées aux mesures et dimensions partagées s’appliquent instantanément à toutes les vues de données avec lesquelles elles sont partagées. Lors de la modification d’une vue de données individuelle, les dimensions et mesures partagées peuvent être identifiées par une icône ![Composant partagé](/help/assets/icons/CCLibrary.svg) en regard du nom du composant.
 
 Bien que les dimensions et mesures partagées permettent d’utiliser des composants communs dans de nombreuses vues de données, elles ne peuvent pas être partagées entre connexions.
 
-## Workflow
+## Processus
 
 La plupart des entreprises utilisent le workflow global suivant pour dédupliquer et gérer les dimensions et les mesures au fil du temps :
 
@@ -25,7 +31,7 @@ La plupart des entreprises utilisent le workflow global suivant pour déduplique
 
 ## Gestionnaire [!UICONTROL Mesures et dimensions partagées]
 
-**[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Vues de données]** > **[!UICONTROL Mesures et dimensions partagées]**
+**** > **[!UICONTROL Vues de données]** > **[!UICONTROL Mesures et dimensions partagées]**
 
 Accéder à cette interface utilisateur affiche toutes les dimensions et mesures actuelles qui peuvent être partagées dans plusieurs vues de données. Le coin supérieur droit contient deux boutons permettant d’ajouter des composants à cette interface :
 
@@ -34,7 +40,7 @@ Accéder à cette interface utilisateur affiche toutes les dimensions et mesures
 
 Directement au-dessous de ces deux boutons, quatre cartes de présentation sont visibles :
 
-![&#x200B; Aperçu des cartes de présentation &#x200B;](assets/overview-cards.png)
+![ Aperçu des cartes de présentation ](assets/overview-cards.png)
 
 * **Mesures** : nombre total de mesures disponibles à partager dans les vues de données pour cette connexion. Chaque connexion peut contenir jusqu’à 10 000 mesures partagées.
 * **Dimensions** : nombre total de dimensions disponibles pour être partagées entre les vues de données pour cette connexion. Chaque connexion peut contenir jusqu’à 10 000 dimensions partagées.
@@ -53,7 +59,7 @@ Toutes les dimensions et mesures partagées sont affichées sous les quatre cart
    * **[!UICONTROL Doublons]** : affichez uniquement les composants ayant le même ID de composant qu’un autre composant. Ces filtres sont identiques à la révision des composants à l’aide des cartes de présentation.
 * **Rechercher** : utilisez l’icône ![Rechercher](../../assets/icons/Search.svg) pour rechercher un composant par nom.
 * **[!UICONTROL Connexion]** : menu déroulant qui modifie la [connexion](/help/connections/overview.md). Les dimensions et mesures partagées sont toujours spécifiques à une seule connexion.
-* **[!UICONTROL Personnaliser le tableau]** : sélectionnez l’icône ![Personnaliser le tableau](/help/assets/icons/ColumnSetting.svg) pour afficher ou masquer les colonnes du tableau. Les options disponibles sont les suivantes :
+* **[!UICONTROL Personnaliser le tableau]** : sélectionnez l’icône ![Personnaliser le tableau](/help/assets/icons/ColumnSetting.svg) pour afficher ou masquer les colonnes du tableau. Les options disponibles sont les suivantes :
    * **[!UICONTROL Nom du champ]** : le nom de la dimension ou de la mesure partagée. Ce champ est toujours visible.
    * **[!UICONTROL Type]** : indique si le composant est une dimension ou une mesure. Ce champ est toujours visible.
    * **[!UICONTROL Type de jeu de données]** : le type de jeu de données. La plupart des jeux de données sont des jeux de données d’événement.

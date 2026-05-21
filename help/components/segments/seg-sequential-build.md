@@ -3,9 +3,15 @@ description: Découvrez les segments séquentiels qui utilisent l’opérateur T
 title: Segments séquentiels
 feature: Filters, Segments
 exl-id: 64cb10b5-36f0-42c8-b687-ae5de5ced8b5
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+TQID: https://experienceleague.adobe.com/TqLnqudV-SrIk7SdMT7dUeNBAwaa5FkoZocUkwrod6g
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '2461'
+source-wordcount: 2491
 ht-degree: 4%
 
 ---
@@ -18,7 +24,7 @@ Vous créez des segments séquentiels à l’aide de l’opérateur logique [!UI
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmentation séquentielle](https://experienceleague.adobe.com/fr/docs/analytics-learn/tutorials/components/segmentation/sequential-segmentation){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmentation séquentielle](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/components/segmentation/sequential-segmentation){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 
@@ -82,16 +88,16 @@ Identifiez toutes les sessions au cours desquelles une personne visite une page 
 
 ## [!UICONTROL Après] et [!UICONTROL Dans]
 
-Vous pouvez utiliser ![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL After]** et ![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL Within]** l’opérateur **[!UICONTROL Then]** pour définir des [contraintes de temps ou &#x200B;](#time-constraints)contraintes supplémentaires pour les événements, les sessions ou les dimensions[&#x200B; &#x200B;](#event-session-and-dimension-constraints).
+Vous pouvez utiliser ![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL After]** et ![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL Within]** l’opérateur **[!UICONTROL Then]** pour définir des [contraintes de temps ou ](#time-constraints)contraintes supplémentaires pour les événements, les sessions ou les dimensions[ ](#event-session-and-dimension-constraints).
 
 ### Contraintes de temps
 
 Pour appliquer des contraintes de temps à l’opérateur **[!UICONTROL Then]** :
 
-1. Sélectionnez ![&#x200B; Horloge &#x200B;](/help/assets/icons/Clock.svg).
+1. Sélectionnez ![ Horloge ](/help/assets/icons/Clock.svg).
 1. Sélectionnez **[!UICONTROL Dans]** ou **[!UICONTROL Après]** dans le menu contextuel.
 1. Spécifiez une période (**[!UICONTROL Minute]**, **[!UICONTROL Heure]**, jusqu’à **[!UICONTROL Années]**).
-1. Sélectionnez le ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL *nombre *]**&#x200B;pour ouvrir une fenêtre contextuelle qui vous permet de saisir ou de spécifier un nombre à l’aide de&#x200B;**[!UICONTROL -]**&#x200B;ou&#x200B;**[!UICONTROL +]**.
+1. Sélectionnez le ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL *nombre *]**pour ouvrir une fenêtre contextuelle qui vous permet de saisir ou de spécifier un nombre à l’aide de**[!UICONTROL -]**ou**[!UICONTROL +]**.
 
 Pour supprimer une contrainte de temps, utilisez ![CrossSize75](/help/assets/icons/CrossSize75.svg).
 
@@ -101,7 +107,7 @@ Le tableau ci-dessous explique plus en détail les opérateurs de contrainte de 
 |--- |--- |
 | **[!UICONTROL Après]** | L’opérateur [!UICONTROL After] est utilisé pour spécifier une limite minimale de temps entre deux points de contrôle. Lors de la définition des valeurs Après, le délai commence à courir lorsque le segment est appliqué. Par exemple, si l’opérateur [!UICONTROL After] est défini sur un conteneur pour identifier les personnes qui visitent la page A, mais ne reviennent pas sur la page B avant un jour, ce jour commence lorsque le visiteur quitte la page A.  Pour que le visiteur soit inclus dans le segment, un minimum de 1 440 minutes (un jour) doit s’écouler après avoir quitté la page A pour afficher la page B. |
 | **[!UICONTROL Dans]** | L’opérateur [!UICONTROL Within] permet de spécifier une limite maximale de temps entre deux points de contrôle. Par exemple, si l’opérateur [!UICONTROL Within] est défini sur un conteneur pour identifier les personnes qui visitent la page A, puis reviennent visiter la page B dans la journée, alors ce jour commence lorsque la personne quitte la page A. Pour être inclus dans le segment, la personne dispose d’une durée maximale d’un jour avant d’ouvrir la page B. Pour que la personne soit incluse dans le segment, l’ouverture de la page B doit avoir lieu dans un délai maximal de 1 440 minutes (un jour) après avoir quitté la page A pour afficher la page B. |
-| **[!UICONTROL Après mais dans]** | Lors de l’utilisation des opérateurs [!UICONTROL After] et [!UICONTROL Within], les deux opérateurs commencent et se terminent en parallèle, et non de manière séquentielle. <br/>Par exemple, vous créez un segment dont le conteneur est défini sur : `After = 1 Week(s) and Within = 2 Week(s)`.<br/>Les conditions d’identification des visiteurs dans ce segment sont remplies uniquement entre une et deux semaines. Les deux conditions sont appliquées à partir de la première page vue. |
+| **[!UICONTROL Après mais dans]** | Lors de l’utilisation des opérateurs [!UICONTROL After] et [!UICONTROL Within], les deux opérateurs commencent et se terminent en parallèle, et non de manière séquentielle. <br/>Par exemple, vous créez un segment en définissant le conteneur sur : `After = 1 Week(s) and Within = 2 Week(s)`.<br/>Les conditions d’identification des visiteurs dans ce segment sont remplies uniquement entre une et deux semaines. Les deux conditions sont appliquées à partir de la première page vue. |
 
 
 #### Exemples
@@ -110,27 +116,27 @@ Quelques exemples d’utilisation des contraintes de temps.
 
 ##### Opérateur [!UICONTROL After]
 
-Identifiez les personnes qui ont consulté une page, puis une autre page uniquement après deux semaines. Par exemple, les personnes qui ont visité la page d’accueil, mais les femmes | Chaussures page seulement après deux semaines.
+Identifiez les personnes qui ont consulté une page, puis une autre page uniquement après deux semaines. Par exemple, les personnes qui ont visité la page d’accueil, mais la page Femmes | Chaussures uniquement après deux semaines.
 
 ![Séquence après](assets/sequence-after.png)
 
-Si une page vue de l’Accueil se produit le 1er juin 2024 à 00:01, une page vue est alors affichée pour les femmes | Les chaussures correspondent tant que la page vue a lieu après le 15 juin 2024 00:01.
+Si une page vue de l’Accueil est affichée le 1er juin 2024, à 00:01, la page Femmes | Chaussures sera affichée aussi longtemps que cette page vue sera affichée après le 15 juin 2024 00:01.
 
 ##### Opérateur [!UICONTROL Within]
 
-Identifiez les personnes qui ont visité une page, puis une autre page dans les cinq minutes. Par exemple, les personnes qui ont visité la page d’accueil, puis les femmes | Page de chaussures dans les 5 minutes.
+Identifiez les personnes qui ont visité une page, puis une autre page dans les cinq minutes. Par exemple, les personnes qui ont visité la page d’accueil , puis la page Femmes | Chaussures dans les 5 minutes.
 
 ![Séquence dans](assets/sequence-within.png)
 
-Si une page vue de l’Accueil se produit le 1er juin 2024, à l’adresse 12:01, une page vue de la page Femmes s’affiche | Les chaussures correspondent si cette page vue est antérieure au 15 juin 2024 12:16.
+Si une page vue de l’Accueil est affichée le 1er juin 2024, à l’adresse 12:01, la page Femmes | Chaussures sera affichée aussi longtemps que cette page vue est affichée avant le 15 juin 2024 12:16.
 
 ##### Opérateur [!UICONTROL After] but [!UICONTROL Within]
 
-Identifiez les personnes qui ont visité une page, puis ont visité une autre page après deux semaines, mais dans un délai d’un mois. Par exemple, les personnes qui ont visité la page d’accueil, puis, après deux semaines et dans un délai d’un mois, les femmes | Page Chaussures.
+Identifiez les personnes qui ont visité une page, puis ont visité une autre page après deux semaines, mais dans un délai d’un mois. Par exemple, les personnes qui ont visité la page d’accueil, puis, après deux semaines et dans un délai d’un mois, la page Femmes | Chaussures .
 
 ![Séquence après mais dans](assets/sequence-afterbutwithin.png)
 
-Toutes les personnes qui accèdent à la page d’accueil le 1er juin 2024 et qui reviennent visiter les femmes | Page de chaussures postérieure au 15 juin 2019 00:01, mais antérieure au 1er juillet 2019 pour le segment.
+Toutes les personnes qui accèdent à la page d’accueil le 1er juin 2024 et qui reviennent pour visiter la page Femmes | Chaussures après le 15 juin 2019 00:01 mais avant le 1er juillet 2019 sont éligibles pour le segment.
 
 
 ### Contraintes [!UICONTROL Event], [!UICONTROL Session] et [!UICONTROL Dimension]
@@ -139,7 +145,7 @@ Les contraintes ![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL After]** et
 
 #### Exemple
 
-Vous trouverez ci-dessous un exemple de segment séquentiel recherchant des personnes qui ont visité une page de catégorie de produits (Femmes) | Chaussures), suivie d’une page de passage en caisse (passage en caisse | Merci) sur une seule page.
+Vous trouverez ci-dessous un exemple de segment séquentiel recherchant des personnes qui ont visité une page de catégorie de produits (Femmes | Chaussures), suivi d’une page de passage en caisse (Passage en caisse | Merci) dans une page.
 
 ![Segment de séquence dans](assets/sequence-filter-within.png)
 
@@ -154,11 +160,11 @@ Les exemples de séquences suivants correspondent ou ne correspondent pas :
 
 Vous pouvez spécifier les données à inclure dans votre segment séquentiel ou dans un conteneur séquentiel qui fait partie de votre segment séquentiel.
 
-### [!UICONTROL &#x200B; Tout le monde &#x200B;] {#include_everyone}
+### [!UICONTROL  Tout le monde ] {#include_everyone}
 
 Pour créer un segment séquentiel qui inclut tout le monde, sélectionnez l’option ![UserGroup](/help/assets/icons/UserGroup.svg) **[!UICONTROL Inclure tout le monde]**.
 
-Le segment séquentiel identifie les données qui correspondent au modèle donné dans son ensemble.  Vous trouverez ci-dessous un exemple de segment de séquence de base recherchant des personnes qui ont visité une page de catégorie de produits (Femmes) | Chaussures), suivie d’une page de passage en caisse (passage en caisse | Merci). Le segment est défini sur ![UserGroup](/help/assets/icons/UserGroup.svg) **[!UICONTROL Inclure tout le monde]**.
+Le segment séquentiel identifie les données qui correspondent au modèle donné dans son ensemble.  Vous trouverez ci-dessous un exemple de segment de séquence de base recherchant les personnes qui ont visité une page de catégorie de produits (Femmes | Chaussures), suivie d’une page de passage en caisse (Passage en caisse | Merci). Le segment est défini sur ![UserGroup](/help/assets/icons/UserGroup.svg) **[!UICONTROL Inclure tout le monde]**.
 
 ![Les segments séquentiels incluent tout le monde](assets/sequence-include-everyone.png)
 
@@ -210,7 +216,7 @@ Lors de la création de rapports sur les sections de site à l’aide de ces tro
 
 ## [!UICONTROL Exclure]
 
-Les définitions de segment incluent toutes les données, sauf si vous excluez spécifiquement les données ![Utilisateur](/help/assets/icons/User.svg) [!UICONTROL Personne], ![Visite](/help/assets/icons/Visit.svg) [!UICONTROL Session] ou ![PageWeb](/help/assets/icons/WebPage.svg) [!UICONTROL Event] à l’aide de **[!UICONTROL Exclude]**.
+Les définitions de segment incluent toutes les données, sauf si vous excluez spécifiquement les données ![Utilisateur](/help/assets/icons/User.svg) [!UICONTROL Personne], ![Visite](/help/assets/icons/Visit.svg) [!UICONTROL Session] ou ![PageWeb](/help/assets/icons/WebPage.svg)[!UICONTROL Event] à l’aide de **[!UICONTROL Exclude]**.
 
 [!UICONTROL Exclure] vous permet d’ignorer les données courantes et de créer des segments avec plus de focus. Exclure permet également de créer des segments excluant des groupes de personnes spécifiques. Par exemple, pour définir un segment qui spécifie les personnes ayant passé des commandes, puis excluant ce groupe de personnes afin d’identifier *non-acheteurs*. Une bonne pratique consiste à créer des règles qui utilisent une définition large plutôt que d’essayer d’utiliser [!UICONTROL Exclure] pour cibler des personnes spécifiques qui correspondent à des valeurs d’inclusion spécifiques.
 
@@ -274,7 +280,7 @@ Voici des exemples d’utilisation du conteneur Groupe logique .
 
 Identifiez les personnes qui ont visité une page, puis consulté chaque page d’un autre ensemble de pages dans n’importe quel ordre. Par exemple, les personnes qui ont visité la page d’accueil, puis ont visité chacune des pages Hommes, Femmes et Enfants, quel que soit l’ordre.
 
-Vous pouvez créer ce segment sans [!UICONTROL &#x200B; Groupe logique &#x200B;], mais la construction sera complexe et laborieuse. Spécifiez chaque séquence de pages que le visiteur peut afficher. Pour plus de clarté, seul le premier conteneur est ouvert ![ChevronDown](/help/assets/icons/ChevronDown.svg) et les autres conteneurs sont fermés ![ChevronRight](/help/assets/icons/ChevronRight.svg). Vous pouvez dériver le contenu des autres conteneurs par les titres.
+Vous pouvez créer ce segment sans [!UICONTROL  Groupe logique ], mais la construction sera complexe et laborieuse. Spécifiez chaque séquence de pages que le visiteur peut afficher. Pour plus de clarté, seul le premier conteneur est ouvert ![ChevronDown](/help/assets/icons/ChevronDown.svg) et les autres conteneurs sont fermés ![ChevronRight](/help/assets/icons/ChevronRight.svg). Vous pouvez dériver le contenu des autres conteneurs par les titres.
 
 ![Exemple n’utilisant pas de groupe logique](assets/logicgroup-example-notusing.png)
 
@@ -284,7 +290,7 @@ Vous pouvez utiliser [!UICONTROL Groupe logique] pour simplifier la création de
 
 #### Première correspondance
 
-Identifiez les personnes qui ont visité une page ou une autre, puis qui ont visité une autre page. Par exemple, les personnes qui ont visité la page Femmes ou la page Hommes, puis qui ont visité le passage en caisse | Page de remerciement.
+Identifiez les personnes qui ont visité une page ou une autre, puis qui ont visité une autre page. Par exemple, les personnes qui ont consulté la page Femmes ou la page Hommes, puis qui ont consulté la page Passage en caisse | Merci.
 
 ![Exemple d’utilisation de la première correspondance avec un groupe logique](assets/logicgroup-example-firstmatch.png)
 
@@ -315,4 +321,4 @@ An example of a complex sequential segment if you want to find the persons that
 Dernier exemple : vous souhaitez identifier les personnes qui ont appris quelque chose sur une page produit spécifique, sans que ces personnes n’aient jamais été contactées par votre campagne Donnez le pouvoir pour que vous bougiez. Et lors de leur première visite dans votre boutique en ligne, ils ont consulté la page d&#39;accueil, mais n&#39;ont pas examiné plus loin les produits de fitness (équipement) de la catégorie Hommes. Cependant, lors de la session suivante, directement après cela, ils sont allés sur une page produit et ont passé une commande en ligne sans passer par la page d&#39;accueil au préalable.
 
 
-![&#x200B; Exemple de segment séquentiel complexe &#x200B;](assets/sequential-complex.png)
+![ Exemple de segment séquentiel complexe ](assets/sequential-complex.png)

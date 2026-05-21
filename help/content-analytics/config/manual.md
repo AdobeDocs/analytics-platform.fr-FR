@@ -5,9 +5,15 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
-source-git-commit: b8b0237a092b37d28bec56bba05c30a853097d4f
+TQID: https://experienceleague.adobe.com/McecE-5AGq-IVw-rdkZpV5WgTvax-gubrpQk0ow4JJc
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ad5685a0-8296-4a0c-814c-658c10b4af12
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: d9715c3da9893e1c47b702acb4daef5e666bedd7
 workflow-type: tm+mt
-source-wordcount: '720'
+source-wordcount: 720
 ht-degree: 62%
 
 ---
@@ -41,7 +47,7 @@ Pour arrêter la collecte de données pour une configuration Content Analytics i
 
 * Pour **mobile** :
 
-   1. Supprimez l’extension [&#128279;](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/) de votre application.
+   1. Supprimez l’extension [](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/) de votre application.
    1. Supprimez la propriété de balises mobiles associée à votre configuration Content Analytics.
 
 Suivez le [flux de publication](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/publish/overview){target="_blank"} pour appliquer les modifications.
@@ -54,7 +60,7 @@ Vous pouvez apporter des modifications mineures à une configuration implément�
 
 ### Web
 
-Vous utilisez l’extension web [&#128279;](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/content-analytics/overview) dans la propriété Tags associée à votre configuration Content Analytics pour apporter des modifications aux artefacts suivants :
+Vous utilisez l’extension web [](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/content-analytics/overview) dans la propriété Tags associée à votre configuration Content Analytics pour apporter des modifications aux artefacts suivants :
 
 * [Sandbox et train de données](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-datastreams){target="_blank"}.
 
@@ -77,7 +83,7 @@ Après avoir apporté des modifications à l’extension web Adobe Content Analy
 
 ### Mobile
 
-Vous utilisez l’[extension mobile &#x200B;](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/) dans la propriété Tags associée à votre configuration Content Analytics pour apporter des modifications supplémentaires.
+Vous utilisez l’[extension mobile ](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/) dans la propriété Tags associée à votre configuration Content Analytics pour apporter des modifications supplémentaires.
 
 Après avoir apporté des modifications à l’extension web Adobe Content Analytics, utilisez le [flux de publication](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/publish/overview){target="_blank"} pour commencer à collecter des données.
 

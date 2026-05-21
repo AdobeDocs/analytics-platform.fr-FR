@@ -6,9 +6,14 @@ feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
 role: User
-source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
+TQID: https://experienceleague.adobe.com/9PqVAdD1FP8I5rNimNfSoUrVNOTmMAXaPgMMsYT8gGQ
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: c38ed341-fab2-46df-9d72-88d8166edebbid: cb6c7d24-631f-46e5-9e39-3a2705f73962
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: 838
 ht-degree: 50%
 
 ---
@@ -86,7 +91,7 @@ Pour envoyer un fichier selon un planning aux destinataires par e-mail :
 
 >[!NOTE]
 >
->L’option de protection par mot de passe d’un projet planifié s’affiche uniquement pour les clientes et clients CJA qui ont acheté le module complémentaire [Healthcare Shield](https://business.adobe.com/fr/solutions/industries/healthcare.html).
+>L’option de protection par mot de passe d’un projet planifié s’affiche uniquement pour les clientes et clients CJA qui ont acheté le module complémentaire [Healthcare Shield](https://business.adobe.com/solutions/industries/healthcare.html).
 
 Adobe utilise le mot de passe pour chiffrer les projets planifiés, qu’ils soient envoyés au format .pdf ou .csv.
 
@@ -103,7 +108,7 @@ Les exigences relatives au mot de passe sont conformes à la norme Adobe, qui re
 ### Protéger un nouveau projet planifié par mot de passe
 
 1. Une fois le projet enregistré, accédez à **[!UICONTROL Partager]** > **[!UICONTROL Envoyer le fichier maintenant]** ou **[!UICONTROL Partager]** > **[!UICONTROL Envoyer le fichier selon le calendrier]**.
-1. Suivez les instructions ci-dessus, sous [Envoyer le fichier maintenant](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html?lang=fr#now) ou [Envoyer le fichier selon le calendrier](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html?lang=fr#schedule).
+1. Suivez les instructions ci-dessus, sous [Envoyer le fichier maintenant](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html#now) ou [Envoyer le fichier selon le calendrier](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html#schedule).
 
 ### Protéger un projet planifié existant par mot de passe
 

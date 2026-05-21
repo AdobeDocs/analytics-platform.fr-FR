@@ -6,9 +6,15 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 3cf3e24fc6c2ea2392e0c5bb97df17f25a023f4d
+TQID: https://experienceleague.adobe.com/-Zv1B2pvTFAAgwV1uAV6ik65jtKVRBsF-2rc0tCHuUs
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2: id: a4cd176f-aea0-45b8-80e6-7f1b931e5847id: a67cb189-a535-41f6-afa2-448f39c4759fid: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: bf2b169f-d8b2-488a-97b9-f3bc9532e35cid: bfa38d8a-4e93-4fd8-8cd8-e72c589e3af8id: c38ed341-fab2-46df-9d72-88d8166edebbid: cc092ab1-90ba-4bbc-b4c6-6249d87daf5cid: d13dba12-733d-4914-8d92-d643658bbe5did: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e0cfe18a-f68c-495b-bafc-f6bcc0392d6cid: e1471301-a189-438e-8d48-264a8db508a6id: e44e560d-5e5c-4a5f-9a87-eb8adbb817afid: e8abc408-b05c-427f-9e37-f8b033a6b3c3id: f24857a4-4b64-4b25-b237-d43026362144id: fa6ac035-8403-478b-9ce1-3fe29d211fca
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b23e006f-0a29-4f1d-8fd0-77aa56f3d12bid: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '1568'
+source-wordcount: 1661
 ht-degree: 95%
 
 ---
@@ -126,15 +132,15 @@ L’onglet **[!UICONTROL Autorisations]** s’affiche sur chaque profil de produ
 | [!UICONTROL Outils de création de rapports] | [!UICONTROL Accès aux laboratoires] | Autoriser l’accès à l’onglet [Labs](/help/labs/labs.md) dans Customer Journey Analytics. |
 | [!UICONTROL Outils de création de rapports] | [!UICONTROL Création d’annotation] | Autoriser la création des [annotations](/help/components/annotations/overview.md). Les personnes peuvent uniquement baliser, partager, supprimer et renommer les annotations qu’elles créent ou auxquelles elles ont accès. |
 | [!UICONTROL Outils de création de rapports] | [!UICONTROL Affichage de lʼaudience] | Autoriser l’affichage des [audiences](/help/components/audiences/audiences-overview.md). |
-| [!UICONTROL Outils de création de rapports] | [!UICONTROL Création dʼaudiences] | Autoriser les utilisateurs à créer des [audiences](/help/components/audiences/audiences-overview.md) Nécessite [Gérer les segments](https://experienceleague.adobe.com/fr/docs/experience-platform/access-control/home) dans Adobe Experience Platform. |
+| [!UICONTROL Outils de création de rapports] | [!UICONTROL Création dʼaudiences] | Autoriser la création des [audiences](/help/components/audiences/audiences-overview.md). Nécessite [Gérer les segments](https://experienceleague.adobe.com/fr/docs/experience-platform/access-control/home) dans Adobe Experience Platform. |
 | [!UICONTROL Outils de création de rapports] | [!UICONTROL Mise en récit des données] | Autoriser à [générer des présentations de diapositives basées sur des projets Workspace.](/help/analysis-workspace/curate-share/generate-slides.md) |
 | [!UICONTROL Outils de création de rapports] | [!UICONTROL Accès aux journaux d’audit] | Appliquer la vérification des autorisations sur l’[API](https://developer.adobe.com/cja-apis/docs/endpoints/auditlogs/) et l’interface d’utilisation des journaux d’audit. |
 | [!UICONTROL Outils de création de rapports] | [!UICONTROL Partager les liens du projet avec tout le monde] | Autoriser le [partage du projet avec tout le monde.](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/curate-share/share-projects) |
 | [!UICONTROL Outils de création de rapports] | [!UICONTROL Prévisions] | Autoriser l’accès à la fonctionnalité [Prévision](../analysis-workspace/c-forecast/forecasting.md) d’Analysis Workspace |
 | [!UICONTROL Outils de création de rapports] | [!UICONTROL Assistant IA : connaissances du produit] | Autoriser l’accès à l’[assistant AI](../ai-assistant.md) pour acquérir des connaissances sur les produits. |
-| [!UICONTROL Outils de création de rapports] | [!UICONTROL Agent Data Insights] | Autoriser les utilisateurs à accéder à [&#128279;](../data-analysis-ai.md) pour les informations de données pilotées par l’IA. |
+| [!UICONTROL Outils de création de rapports] | [!UICONTROL Agent Data Insights] | Autoriser les utilisateurs à accéder à [](../data-analysis-ai.md) pour les informations de données pilotées par l’IA. |
 | [!UICONTROL Outils de création de rapports] | [!UICONTROL Légendes intelligentes] | Autoriser l’accès aux [légendes intelligentes](/help/analysis-workspace/visualizations/intelligent-captions.md). |
-| [!UICONTROL Outils de création de rapports] | [!UICONTROL Accès MCP] | Autoriser les utilisateurs à accéder au serveur MCP [&#128279;](https://developer.adobe.com/analytics-mcp/docs/cja/). |
+| [!UICONTROL Outils de création de rapports] | [!UICONTROL Accès MCP] | Autoriser les utilisateurs à accéder au serveur MCP [](https://developer.adobe.com/analytics-mcp/docs/cja/). |
 | [!UICONTROL Outils des vues de données] | [!UICONTROL Export du tableau complet] | Autorise l’[export des tableaux complets dans le cloud](/help/analysis-workspace/export/export-cloud.md) |
 | [!UICONTROL Outils des vues de données] | [!UICONTROL Extension BI de CJA] | Autoriser l’utilisation de l’extension [BI](../data-views/bi-extension.md). |
 

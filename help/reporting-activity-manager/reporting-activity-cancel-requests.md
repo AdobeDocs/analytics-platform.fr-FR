@@ -5,9 +5,15 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 87da2447-f114-432a-9f63-e660c2541d0f
 role: Admin
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+TQID: https://experienceleague.adobe.com/Rzq3IeZudRcTRC60v2RsijL-g-rno7xPS6Lc5jZlMbs
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '1497'
+source-wordcount: 1497
 ht-degree: 100%
 
 ---
@@ -180,7 +186,7 @@ Pour annuler des demandes par application, procédez comme suit :
 
    <!-- add screenshot -->
 
-1. Sélectionne [!UICONTROL **Annuler les demandes**].
+1. Sélectionnez [!UICONTROL **Annuler les demandes**].
 
    La boîte de dialogue [!UICONTROL **Annuler _x_ demandes de rapport de x projets**] s’affiche.
 
@@ -188,7 +194,7 @@ Pour annuler des demandes par application, procédez comme suit :
 
 1. (Facultatif) Pour restreindre les demandes futures pour une période donnée, procédez comme suit :
 
-   1. Activer l’option pour [!UICONTROL **Restreindre les demandes ultérieures**]
+   1. Activer l’option pour [!UICONTROL **Restreindre les demandes suivantes**]
 
       ![Annulation d’1 demande affichant l’option Restreindre les demandes ultérieures par application sélectionnée.](assets/restrict-subsequent-requests-application.png)
 

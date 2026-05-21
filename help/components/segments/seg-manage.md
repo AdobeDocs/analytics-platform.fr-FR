@@ -4,10 +4,15 @@ title: Gestion des segments
 exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
 feature: Filters, Segments
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+TQID: https://experienceleague.adobe.com/Qzg97F1FVB6RSdjM8YISl47HYWtkQihxrOzLVO-4kOo
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: e44e560d-5e5c-4a5f-9a87-eb8adbb817afid: e4a0bad2-b448-47f1-9fa6-222ebdb3b5b0id: f2ef16dc-055a-4bb7-baa5-7039653f3966id: fa6ac035-8403-478b-9ce1-3fe29d211fca
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '930'
-ht-degree: 31%
+source-wordcount: 932
+ht-degree: 33%
 
 ---
 
@@ -28,7 +33,7 @@ Vous pouvez [partager](seg-share.md), [segment](seg-filter.md), [balise](seg-tag
 
 Le gestionnaire de segments comporte les éléments d’interface suivants :
 
-![&#x200B; Interface des segments &#x200B;](assets/filters-manager.png)
+![ Interface des segments ](assets/filters-manager.png)
 
 ### Liste des segments
 
@@ -58,7 +63,7 @@ Vous pouvez agir sur les segments à l’aide de la barre d’actions ➋. La ba
 | ![Recherche](/help/assets/icons/Search.svg) [!UICONTROL *Recherche par titre*] | Lorsqu’aucun segment n’est sélectionné dans la liste, recherchez des segments à l’aide de ce champ de recherche. |
 | ![Label](/help/assets/icons/Label.svg) **[!UICONTROL Étiquette]** | Balisez les segments sélectionnés. Dans la boîte de dialogue **[!UICONTROL Baliser le segment]**, sélectionnez ou désélectionnez les balises des segments sélectionnés. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les balises des segments sélectionnés. Voir [Balisage de segments](/help/components/segments/seg-tag.md) pour plus d’informations. |
 | ![Partager](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Partager]** | Partagez les segments sélectionnés. Dans la boîte de dialogue **[!UICONTROL Partager le segment]**, vous pouvez ![Rechercher](/help/assets/icons/Search.svg) *Rechercher des individus ou des groupes* ou sélectionner **[!UICONTROL Organisation]** ou **[!UICONTROL Groupes]**. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les détails de partage pour les segments sélectionnés. Voir [Partager des segments](seg-share.md) pour plus d’informations. |
-| ![Supprimer](/help/assets/icons/Delete.svg) **[!UICONTROL Supprimer]** | Supprimez les segments sélectionnés. Vous êtes invité à confirmer l’opération. <br/>Lorsque vous supprimez un segment, gardez à l’esprit que : <ul><li>Les rapports planifiés et les projets auxquels ce segment est appliqué continuent à fonctionner normalement.</li><li> Les rapports planifiés ne sont pas mis à jour lorsque vous modifiez un segment portant le même nom.</li> </ul> |
+| ![Supprimer](/help/assets/icons/Delete.svg) **[!UICONTROL Supprimer]** | Supprimez les segments sélectionnés. Il vous est demandé de confirmer. <br/>Lorsque vous supprimez un segment, gardez à l’esprit que : <ul><li>Les rapports planifiés et les projets auxquels ce segment est appliqué continuent à fonctionner normalement.</li><li> Les rapports planifiés ne sont pas mis à jour lorsque vous modifiez un segment portant le même nom.</li> </ul> |
 | ![Modifier](/help/assets/icons/Edit.svg) **[!UICONTROL Renommer]** | Renommez un seul segment sélectionné. Lorsque cette option est sélectionnée, vous pouvez renommer le segment en ligne. |
 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Approuver]** | Valider les segments sélectionnés. Voir [Approuver les segments](seg-approve.md) pour plus d’informations. |
 | ![Copier](/help/assets/icons/Copy.svg) **[!UICONTROL Copier]** | Copiez le segment sélectionné. Les nouveaux segments sont créés avec les mêmes nom et suffixe `(Copy)`. |
@@ -70,6 +75,6 @@ La barre de filtrage affiche ➌ les segments actifs appliqués à partir du pan
 
 ### Panneau Filtrer
 
-Vous pouvez filtrer la liste des segments à l’aide du ![&#x200B; du panneau de gauche &#x200B;](/help/assets/icons/Filter.svg)Filtrer **&#x200B;**&#x200B;Filtrer➍. Le panneau de filtrage affiche le type de filtre et le nombre de segments qui respectent le filtre spécifique. Sélectionnez ![Filtrer](/help/assets/icons/Filter.svg) pour activer/désactiver l’affichage du panneau Filtre.
+Vous pouvez filtrer la liste des segments à l’aide du ➍ du panneau de gauche ![Filtrer](/help/assets/icons/Filter.svg) **[!UICONTROL Filtrer]**. Le panneau de filtrage affiche le type de filtre et le nombre de segments qui respectent le filtre spécifique. Sélectionnez ![Filtrer](/help/assets/icons/Filter.svg) pour activer/désactiver l’affichage du panneau Filtre.
 
 Voir [Filtrer la liste des segments](seg-filter.md) pour plus d’informations.

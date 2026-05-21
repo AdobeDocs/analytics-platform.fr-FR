@@ -5,9 +5,15 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: f932110a-ca9d-40d1-9459-064ef9cd23da
-source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
+TQID: https://experienceleague.adobe.com/oNFeGuF3o7WGgp6nxSFv1GAVMcXL3Pt9N3isQo0r6TA
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: d095671a-1355-40aa-8b5f-06c33c68080bid: d3cdead0-685a-4489-9250-4bb709942f66id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '1545'
+source-wordcount: 1545
 ht-degree: 10%
 
 ---
@@ -25,7 +31,7 @@ ht-degree: 10%
 
 {{upgrade-note-step}}
 
-Adobe recommande de créer un schéma [Modèle de données d’expérience](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/home) (XDM) personnalisé pour Customer Journey Analytics lors de l’implémentation de la [collecte de données Adobe Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/collection/home). La création de ce schéma est généralement effectuée avant toute modification d’implémentation ou modification de code. Un schéma personnalisé vous permet de concevoir un contrat de données concis et spécifique à une organisation, sans hériter des contraintes d’Adobe Analytics. Voir [Choisir votre schéma pour Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md) pour en savoir plus sur les types de schémas disponibles pour votre organisation.
+Adobe recommande de créer un schéma [Modèle de données d’expérience](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/home) (XDM) personnalisé pour Customer Journey Analytics lors de l’implémentation de la [collecte de données Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/collection/home). La création de ce schéma est généralement effectuée avant toute modification d’implémentation ou modification de code. Un schéma personnalisé vous permet de concevoir un contrat de données concis et spécifique à une organisation, sans hériter des contraintes d’Adobe Analytics. Voir [Choisir votre schéma pour Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md) pour en savoir plus sur les types de schémas disponibles pour votre organisation.
 
 Les schémas sont destinés à être des versions optimisées de la manière dont vous souhaitez que vos données soient structurées à long terme. Les modifications apportées aux schémas sont coûteuses car elles ont un impact sur la collecte de données, la validation et les services en aval. Vous pouvez ajouter des éléments aux schémas au fil du temps en fonction des besoins de l’entreprise. Toutefois, les champs de schéma ne peuvent pas être supprimés une fois que les données commencent à y circuler.
 
@@ -108,9 +114,9 @@ Lors de l’architecture d’un schéma, tenez compte des faits. Par exemple, `e
 
 Certaines organisations doivent continuer à générer des rapports Adobe Analytics lors de la mise à niveau vers Customer Journey Analytics. Vous pouvez maintenir la parité sans introduire d’artefacts spécifiques d’Analytics dans votre conception de schéma à long terme à l’aide de l’approche suivante :
 
-1. **Utiliser des chemins d’accès aux champs XDM reconnus et automatiquement mappés par Adobe Analytics :** lorsque vous envoyez des champs XDM reconnus par Edge Network à Adobe Analytics, ils sont [&#x200B; mappés automatiquement](https://experienceleague.adobe.com/fr/docs/analytics/implementation/aep-edge/xdm-var-mapping) sans configuration supplémentaire.
+1. **Utiliser des chemins d’accès aux champs XDM reconnus et automatiquement mappés par Adobe Analytics :** lorsque vous envoyez des champs XDM reconnus par Edge Network à Adobe Analytics, ils sont [ mappés automatiquement](https://experienceleague.adobe.com/fr/docs/analytics/implementation/aep-edge/xdm-var-mapping) sans configuration supplémentaire.
 1. **Utiliser des champs XDM personnalisés pour les concepts spécifiques à une organisation :** tous les champs XDM qui ne sont pas automatiquement mappés à une variable Analytics sont transférés en tant que [variables de données contextuelles](https://experienceleague.adobe.com/fr/docs/analytics/implementation/vars/page-vars/contextdata) dans Adobe Analytics.
-1. **Utilisez les règles de traitement Adobe Analytics pour mapper ces variables de données contextuelles aux props/eVars:** [règles de traitement](https://experienceleague.adobe.com/fr/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) pour vous permettre de mapper n’importe quel champ XDM personnalisé dans n’importe quelle eVar ou prop. Ce concept prend en charge le reporting de parité dans Adobe Analytics tout en gardant votre schéma propre et centré sur Customer Journey Analytics.
+1. **Utilisez les règles de traitement Adobe Analytics pour mapper ces variables de données contextuelles aux props/eVars:** [règles de traitement](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) pour vous permettre de mapper n’importe quel champ XDM personnalisé dans n’importe quelle eVar ou prop. Ce concept prend en charge le reporting de parité dans Adobe Analytics tout en gardant votre schéma propre et centré sur Customer Journey Analytics.
 
 ## Identifier les parties prenantes et définir la propriété
 
@@ -128,7 +134,7 @@ Définissez un propriétaire clair pour les modifications de schéma. Un schéma
 La conception du schéma doit refléter les attentes en matière de confidentialité et de gouvernance, conformément aux politiques de confidentialité de votre organisation. Tenez compte des points suivants lors de la conception de votre schéma :
 
 * Collectez uniquement les éléments nécessaires pour prendre en charge les cas d’utilisation définis.
-* Assurez-vous que les exigences en matière de consentement et d’utilisation des données sont prises en compte dans votre stratégie de collecte. Pour plus d’informations[&#128279;](https://experienceleague.adobe.com/fr/docs/experience-platform/landing/governance-privacy-security/consent/sdk) voir  Utilisation de Web SDK pour traiter les données de consentement client.
+* Assurez-vous que les exigences en matière de consentement et d’utilisation des données sont prises en compte dans votre stratégie de collecte. Pour plus d’informations](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/consent/sdk) voir [ Utilisation de Web SDK pour traiter les données de consentement client.
 * Tenez compte de la manière dont les champs sensibles sont étiquetés et contrôlés dans les outils de gouvernance de Adobe Experience Platform. Voir [Adobe Customer Journey Analytics et gouvernance des données](/help/privacy/privacy-overview.md) pour plus d’informations.
 
 ## Étapes suivantes

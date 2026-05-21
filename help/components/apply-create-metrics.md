@@ -4,10 +4,15 @@ title: Mesures
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
 role: User
-source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
+TQID: https://experienceleague.adobe.com/e0vvc9JN5k-KPI2zVAezIjdgViKdAcLJEAx0QUV-tAA
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '867'
-ht-degree: 6%
+source-wordcount: 885
+ht-degree: 9%
 
 ---
 
@@ -32,14 +37,14 @@ Adobe propose plusieurs types de mesures à utiliser dans Analysis Workspace :
   Contrairement à Adobe Analytics, Customer Journey Analytics vous permet de définir des mesures standard de manière flexible dans le cadre d’une connexion et d’une vue de données.
 
    * **Personnes** : dans Customer Journey Analytics, la mesure Personnes correspond au nombre distinct des ID de personne. Selon ce que vous choisissez comme ID de personne lorsque vous configurez des jeux de données dans votre connexion, la mesure Personnes peut signifier différentes choses.
-   * **Sessions** : la mesure Sessions dans Customer Journey Analytics est ce que vous définissez dans le cadre de la configuration des paramètres Sessions dans votre vue de données. Voir [&#x200B; Paramètres de session &#x200B;](/help/data-views/session-settings.md).
+   * **Sessions** : la mesure Sessions dans Customer Journey Analytics est ce que vous définissez dans le cadre de la configuration des paramètres Sessions dans votre vue de données. Voir [ Paramètres de session ](/help/data-views/session-settings.md).
    * **Événements** : la mesure Événements dans Customer Journey Analytics se compose des événements qui font partie de tout jeu de données d’événement que vous avez configuré dans le cadre de votre connexion.
 
   Voir [Mesures standard](#standard-metrics) pour obtenir la liste complète des mesures standard.
 
 * **Mesures calculées** ![Calculateur](/help/assets/icons/Calculator.svg) : mesures définies par l’utilisateur ou l’utilisatrice et basées sur des mesures standard, des nombres statiques ou des fonctions algorithmiques.
 
-* **Modèles de mesures calculées** ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg) : mesures définies par Adobe qui se comportent de la même manière que les mesures calculées. Vous pouvez les utiliser tels quels dans les projets Workspace ou enregistrer une copie pour personnaliser la logique. Voir [&#x200B; Mesures calculées par défaut &#x200B;](calc-metrics/cm-workflow/../default-calcmetrics.md).
+* **Modèles de mesures calculées** ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg) : mesures définies par Adobe qui se comportent de la même manière que les mesures calculées. Vous pouvez les utiliser tels quels dans les projets Workspace ou enregistrer une copie pour personnaliser la logique. Voir [ Mesures calculées par défaut ](calc-metrics/cm-workflow/../default-calcmetrics.md).
 
 Vous pouvez voir si une mesure est approuvée ![icône Approuvée](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg) ou non. Si vous souhaitez plus de détails sur une mesure, pointez sur la mesure, puis sélectionnez ![Icône Infos](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg). Voir [Informations sur les composants](use-components-in-workspace.md#component-info) pour plus d’informations.
 
@@ -52,7 +57,7 @@ Liste complète des mesures standard dans Customer Journey Analytics :
 
 ## Créer des mesures calculées
 
-Les mesures calculées vous permettent de configurer facilement la manière dont les mesures sont liées les unes aux autres, à l’aide d’opérateurs simples ou de fonctions statistiques. Consultez [&#x200B; Présentation des mesures calculées &#x200B;](/help/components/calc-metrics/calc-metr-overview.md) pour plus d’informations.
+Les mesures calculées vous permettent de configurer facilement la manière dont les mesures sont liées les unes aux autres, à l’aide d’opérateurs simples ou de fonctions statistiques. Consultez [ Présentation des mesures calculées ](/help/components/calc-metrics/calc-metr-overview.md) pour plus d’informations.
 
 Il existe plusieurs façons de créer des mesures calculées. La méthode que vous choisissez détermine si la mesure calculée est disponible dans la liste des composants de tous les projets ou uniquement dans le projet dans lequel elle a été créée.
 

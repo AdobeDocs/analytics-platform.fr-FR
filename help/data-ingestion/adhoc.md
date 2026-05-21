@@ -5,10 +5,16 @@ solution: Customer Journey Analytics
 feature: Basics
 role: Admin
 exl-id: 17b5842f-dc81-481f-8b21-dc90a133adcf
-source-git-commit: c9d7a4596a842ab7d949364e3469747d20ca15b4
+TQID: https://experienceleague.adobe.com/eqmDvuaNGFj8q2pfKNCzf5-affyrUTYP7MA5UgsRrCI
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: c38ed341-fab2-46df-9d72-88d8166edebbid: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: e1e0219c-f879-479f-8427-888ed2a6e9c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '1623'
-ht-degree: 24%
+source-wordcount: 1674
+ht-degree: 27%
 
 ---
 
@@ -76,7 +82,7 @@ Pour démarrer le workflow :
 
       1. Sélectionnez **[!UICONTROL Terminer]**.
 
-Une fois les données préparées et chargées, vous êtes redirigé vers **[!UICONTROL Jeux de données]** dans l’interface d’Experience Platform.<br/> L’activité **[!UICONTROL Jeu de données]** s’affiche pour votre **[!UICONTROL Exemple de données à partir d’un jeu de données CSV]** avec le statut ![StatutOrange](/help/assets/icons/StatusOrange.svg) **[!UICONTROL Traitement]**.
+Une fois les données préparées et chargées, vous êtes redirigé vers **[!UICONTROL Jeux de données]** dans l’interface d’Experience Platform.<br/> Le **[!UICONTROL Activité du jeu de données]** s’affiche pour votre **[!UICONTROL Exemple de données à partir d’un jeu de données CSV]** avec le statut ![StatutOrange](/help/assets/icons/StatusOrange.svg) **[!UICONTROL Traitement]**.
 
 ![Activité du jeu de données pour les données ad hoc](assets/datasets-dataset-activity.png)
 
@@ -94,7 +100,7 @@ Dans l’interface **[!UICONTROL Schémas]** > **[!UICONTROL Exemples de donnée
 
 - Sélectionnez l’objet de nom du client le plus élevé sous **[!UICONTROL Schémas]** > **[!UICONTROL Exemples de données à partir de CSV - schéma ad hoc - XXXXXXXXXXX]** pour afficher les champs dans l’objet . Les champs dans l’objet représentent la structure du fichier CSV. Le schéma est créé automatiquement en fonction du chargement des données ad hoc.
 
-  ![&#x200B; Schéma ad hoc &#x200B;](dataset/../assets/adhoc-schema.png)
+  ![ Schéma ad hoc ](dataset/../assets/adhoc-schema.png)
 
   >[!NOTE]
   >
@@ -151,11 +157,11 @@ Créer une connexion :
 
    1. Sélectionnez **[!UICONTROL Enregistrer]**.
 
-Consultez [&#x200B; Paramètres de jeu de données ad hoc &#x200B;](/help/connections/create-connection.md#adhoc-dataset) pour plus d’informations sur les paramètres disponibles pour les jeux de données ad hoc.
+Consultez [ Paramètres de jeu de données ad hoc ](/help/connections/create-connection.md#adhoc-dataset) pour plus d’informations sur les paramètres disponibles pour les jeux de données ad hoc.
 
 >[!IMPORTANT]
 >
->En plus de la recommandation générale de ne pas utiliser de jeux de données et de schémas ad hoc pour les données de série temporelle, vous ne pouvez pas utiliser le workflow **[!UICONTROL Créer un jeu de données à partir de CSV]** pour les données de série temporelle. Ce workflow définit tous les champs comme étant de type Chaîne que vous ne pouvez pas modifier par la suite. Lorsque vous ajoutez un jeu de données basé sur une série temporelle (événement ou résumé) à une connexion, ce type de jeu de données nécessite la définition d’au moins un champ de type DateTime.<br/>Si vous devez utiliser des données de série temporelle ad hoc, pensez à [utiliser l’API pour créer un schéma ad hoc](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/tutorials/ad-hoc#token_type=bearer&expires_in=43197438) puis à utiliser le workflow [Créer un jeu de données à partir d’un schéma](https://experienceleague.adobe.com/fr/docs/experience-platform/catalog/datasets/user-guide#schema).
+>En plus de la recommandation générale de ne pas utiliser de jeux de données et de schémas ad hoc pour les données de série temporelle, vous ne pouvez pas utiliser le workflow **[!UICONTROL Créer un jeu de données à partir de CSV]** pour les données de série temporelle. Ce workflow définit tous les champs comme étant de type Chaîne que vous ne pouvez pas modifier par la suite. Lorsque vous ajoutez un jeu de données basé sur une série temporelle (événement ou résumé) à une connexion, ce type de jeu de données nécessite la définition d’au moins un champ de type DateTime.<br/>Si vous devez utiliser des données de série temporelle ad hoc, pensez à [utiliser l’API pour créer un schéma ad hoc](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/ad-hoc#token_type=bearer&expires_in=43197438) puis à utiliser le workflow [Créer un jeu de données à partir d’un schéma](https://experienceleague.adobe.com/fr/docs/experience-platform/catalog/datasets/user-guide#schema).
 
 
 Après avoir créé une [connexion](/help/connections/overview.md), vous pouvez effectuer diverses tâches de gestion, telles que [sélectionner et combiner des jeux de données](/help/connections/combined-dataset.md), [vérifier le statut des jeux de données d’une connexion et le statut de l’ingestion des données](/help/connections/manage-connections.md) etc.
@@ -182,7 +188,7 @@ Créer une vue de données :
 
 1. À l’étape **[!UICONTROL Composants]** :
 
-   1. Ajoutez n’importe quel champ de schéma et/ou composant standard que vous souhaitez inclure dans les zones de composant **[!UICONTROL MESURES]** ou **[!UICONTROL DIMENSIONS]**. Veillez à ajouter les champs pertinents du jeu de données contenant les données ad hoc. Pour accéder à ces champs :
+   1. Ajoutez n’importe quel champ de schéma et/ou composant standard que vous voulez inclure dans les zones de composant **[!UICONTROL MESURES]** ou **[!UICONTROL DIMENSIONS]**. Veillez à ajouter les champs pertinents du jeu de données contenant les données ad hoc. Pour accéder à ces champs :
 
       1. Sélectionnez **[!UICONTROL Jeux de données d’événement]**.
       1. Sélectionnez **[!UICONTROL Champs ad hoc et relationnels]**.
