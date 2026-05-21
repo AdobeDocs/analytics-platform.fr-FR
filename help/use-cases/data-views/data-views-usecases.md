@@ -6,11 +6,18 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: User
 TQID: https://experienceleague.adobe.com/qEgO-lqYk8ipVP99IBazrKAb7Jer-AN96-PY-f1KdPQ
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
 source-git-commit: null
 workflow-type: tm+mt
 source-wordcount: 1443
@@ -24,7 +31,7 @@ Ces cas pratiques illustrent la flexibilité et la puissance des vues de donnée
 
 ## Utiliser des mesures de dimensions de liaison
 
-Voir le cas d’utilisation [ Utiliser des mesures de dimensions de liaison ](binding-dimensions-metrics.md) pour plus d’informations.
+Voir le cas d’utilisation [&#x200B; Utiliser des mesures de dimensions de liaison &#x200B;](binding-dimensions-metrics.md) pour plus d’informations.
 
 ## Utiliser des données de résumé
 
@@ -66,7 +73,7 @@ Auparavant, les entiers étaient automatiquement traités comme des mesures dans
 
 ## Utiliser des dimensions numériques en tant que mesures dans les diagrammes de flux {#numeric}
 
-Vous pouvez utiliser une dimension numérique pour obtenir des mesures dans votre visualisation Flux de ].[!UICONTROL 
+Vous pouvez utiliser une dimension numérique pour obtenir des mesures dans votre visualisation Flux de .
 
 1. Sous lʼonglet [Composants](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dataviews/create-dataview) dans les Vues de données, faites glisser le champ de schéma [!UICONTROL Canaux marketing] dans la zone [!UICONTROL Mesures] sous [!UICONTROL Composants inclus].
 2. Dans le compte rendu des performances Espace de travail, ce flux affiche les [!UICONTROL Canaux marketing] qui convergent vers les [!UICONTROL Commandes] :
@@ -147,12 +154,12 @@ Les dates postérieures au 1er janvier 1900 (à l’exception du 1er janvier 197
 
 ### Cas d’utilisation de date et date-heure
 
-* Date : une agence de voyages collecte la date de départ des voyages dans un champ de leurs données. L’entreprise souhaite disposer d’un rapport comparant le [!UICONTROL  Jour de la semaine ] pour toutes les dates de départ collectées afin de déterminer laquelle est la plus populaire. Et la société aimerait faire de même pour le [!UICONTROL Mois de l’année].
+* Date : une agence de voyages collecte la date de départ des voyages dans un champ de leurs données. L’entreprise souhaite disposer d’un rapport comparant le [!UICONTROL &#x200B; Jour de la semaine &#x200B;] pour toutes les dates de départ collectées afin de déterminer laquelle est la plus populaire. Et la société aimerait faire de même pour le [!UICONTROL Mois de l’année].
 
 * Date et heure : une société de vente au détail collecte l’heure de chacun de ses achats dans les points de vente (POS). Sur un mois donné, l’entreprise souhaite déterminer les périodes de plus forte affluence en [!UICONTROL Heure de la journée].
 
 >[!MORELIKETHIS]
 >
->[ Date et Date et heure dans le paramètre du composant Format ](/help/data-views/component-settings/format.md)
+>[&#x200B; Date et Date et heure dans le paramètre du composant Format &#x200B;](/help/data-views/component-settings/format.md)
 >
 
