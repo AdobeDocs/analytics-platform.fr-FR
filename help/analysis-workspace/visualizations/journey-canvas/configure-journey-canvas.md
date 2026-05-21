@@ -22,10 +22,10 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 5513a755345188e6f7ff5d4c566d807d09e25f68
+source-git-commit: c6b215f9fe718d0d3e8f81b7f55421c909b69c5a
 workflow-type: tm+mt
-source-wordcount: 6457
-ht-degree: 91%
+source-wordcount: 6499
+ht-degree: 90%
 
 ---
 
@@ -87,6 +87,15 @@ Voir [Vue d’ensemble de la zone de travail de parcours](/help/analysis-workspa
 
 
 ## Configurer les paramètres de visualisation
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_journeycanvas_percentage_value"
+>title="Choisir le mode de calcul des pourcentages"
+>abstract="Les pourcentages affichés sur chaque nœud sont basés sur les mesures principales et secondaires que vous configurez. Vous pouvez choisir si les pourcentages se rapportent au nœud de départ, au nœud précédent ou à toutes les données de la suite de rapports."
+
+<!-- markdownlint-enable MD034 -->
 
 Plusieurs options de configuration sont disponibles dans l’en-tête de la zone de travail de parcours.
 
