@@ -6,11 +6,19 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 role: User
 TQID: https://experienceleague.adobe.com/Mq-IJRaA3-aplBEJe2XmorAD696XzmOj69YcpotF1dU
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: cb6c7d24-631f-46e5-9e39-3a2705f73962
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: bcc5edb5-84c3-4940-9f84-ed88b6c16274id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 7f8ab656c7dbf508b2a78fd2022592faf883c56e
 workflow-type: tm+mt
 source-wordcount: 849
@@ -52,7 +60,7 @@ Le rail de requête vous permet de configurer les composants suivants :
 
 * **[!UICONTROL Vue]** : basculez entre cette analyse et [Fréquence](frequency.md).
 * **[!UICONTROL Événements et mesures]** : événements ou mesures que vous souhaitez mesurer. Chaque sélection est représentée sous la forme d’une série de graphiques et d’une ligne de tableau. Les événements et les mesures ne peuvent pas être combinés dans la requête ; une fois que vous avez effectué votre première sélection, les sélections de requête restantes doivent être du même type. Vous pouvez inclure un maximum de cinq sélections.
-* **[!UICONTROL Compté comme]** : méthode de comptage à appliquer aux événements sélectionnés. <ul><li>**[!UICONTROL Options]** incluent [!UICONTROL Utilisateurs], [!UICONTROL Événements], [!UICONTROL Sessions], [!UICONTROL Pourcentage d’utilisateurs], [!UICONTROL Événements par session] et [!UICONTROL Événements par utilisateur].</li><li>[!BADGE ]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} Des options **[!UICONTROL B2B supplémentaires]** sont disponibles pour Customer Journey Analytics B2B edition : [!UICONTROL Comptes globaux], [!UICONTROL Comptes], [!UICONTROL Groupes d’achats], [!UICONTROL Opportunités], [!UICONTROL Pourcentage de comptes globaux], [!UICONTROL Pourcentage de comptes], [!UICONTROL Pourcentage de groupes d’achats], [!UICONTROL Pourcentage d’opportunités], [!UICONTROL Événements par compte global], [!UICONTROL Événements par compte], [!UICONTROL Événements par groupe d’achats] et [!UICONTROL Événements par opportunité].</li></ul>Les options Comptabilisé comme s’appliquent uniquement aux requêtes d’événement et sont supprimées pour les requêtes de mesure.
+* **[!UICONTROL Compté comme]** : méthode de comptage à appliquer aux événements sélectionnés. <ul><li>**[!UICONTROL Options]** incluent [!UICONTROL Utilisateurs], [!UICONTROL Événements], [!UICONTROL Sessions], [!UICONTROL Pourcentage d’utilisateurs], [!UICONTROL Événements par session] et [!UICONTROL Événements par utilisateur].</li><li>{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} Des options **[!UICONTROL B2B supplémentaires]** sont disponibles pour Customer Journey Analytics B2B edition : [!UICONTROL Comptes globaux], [!UICONTROL Comptes], [!UICONTROL Groupes d’achats], [!UICONTROL Opportunités], [!UICONTROL Pourcentage de comptes globaux], [!UICONTROL Pourcentage de comptes], [!UICONTROL Pourcentage de groupes d’achats], [!UICONTROL Pourcentage d’opportunités], [!UICONTROL Événements par compte global], [!UICONTROL Événements par compte], [!UICONTROL Événements par groupe d’achats] et [!UICONTROL Événements par opportunité].</li></ul>Les options Comptabilisé comme s’appliquent uniquement aux requêtes d’événement et sont supprimées pour les requêtes de mesure.
 * **[!UICONTROL Segments]** : segments que vous souhaitez mesurer. Chaque segment sélectionné double le nombre de séries de graphiques et de lignes de tableau. Vous pouvez inclure un maximum de cinq segments.
 * **[!UICONTROL Propriété de répartition]** : répartit les lignes de la série de graphiques et du tableau selon les valeurs de la propriété sélectionnée. Une seule propriété de répartition est prise en charge. Les 20 premières valeurs apparaissent dans le tableau, et jusqu’à dix valeurs peuvent être affichées dans le graphique. Vous pouvez masquer ou afficher une ligne dans le graphique en appuyant sur l’icône ![Icône afficher/masquer](../assets/hide-in-chart.png).
 
