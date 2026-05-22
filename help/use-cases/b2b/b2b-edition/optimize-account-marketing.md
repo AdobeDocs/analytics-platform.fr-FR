@@ -8,19 +8,11 @@ badgePremium: label="B2B Edition"
 exl-id: d5e44546-ea82-42eb-98df-19d51c71e9be
 autotag-review: '2026-05-19T09:35:54.646Z'
 TQID: 'https://experienceleague.adobe.com/A0jSmg-0wGH3D-ZEUVTYVJf9ZXfUZdvfaBviAAXY00M'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-  - id: d3f42e9e-bb51-4077-a732-358b801d8b29
-feature_v2:
-  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
-subfeature_v2:
-  - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7id: d3f42e9e-bb51-4077-a732-358b801d8b29
+feature_v2: id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2: id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d00e9f03-e50b-4162-b143-0c0817c937c2id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 720
@@ -51,7 +43,7 @@ Customer Journey Analytics B2B edition peut vous aider à optimiser le marketing
 
 Vous souhaitez identifier les expériences, en ligne et hors ligne, qui ont le plus d’impact sur les opportunités clôturées.
 
-Utilisez la visualisation [Zone de travail de Parcours &#x200B;](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) pour mapper chaque interaction entre les comptes, les opportunités, les groupes d’achats, les campagnes et les canaux, afin d’obtenir des informations sur ce qui fonctionne dans le marketing de votre compte et sur les améliorations que vous pouvez apporter.
+Utilisez la visualisation [Zone de travail de Parcours ](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) pour mapper chaque interaction entre les comptes, les opportunités, les groupes d’achats, les campagnes et les canaux, afin d’obtenir des informations sur ce qui fonctionne dans le marketing de votre compte et sur les améliorations que vous pouvez apporter.
 
 Une visualisation de zone de travail de parcours vous permet d’effectuer les opérations suivantes :
 
@@ -63,16 +55,16 @@ Une visualisation de zone de travail de parcours vous permet d’effectuer les o
 
 Vous souhaitez visualiser le parcours d’un formulaire de prospect à un formulaire fermé.
 
-1. Visualisation [Création et configuration d’une zone de travail de Parcours &#x200B;](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
-1. Configurez **[!UICONTROL Compte]** comme mesure de Principal **&#x200B;**.
-1. Veillez à sélectionner **[!UICONTROL Compte]** comme conteneur de zone de travail de Parcours **&#x200B;**.
+1. Visualisation [Création et configuration d’une zone de travail de Parcours ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
+1. Configurez **[!UICONTROL Compte]** comme mesure de Principal ****.
+1. Veillez à sélectionner **[!UICONTROL Compte]** comme conteneur de zone de travail de Parcours ****.
 
    ![Cas d’utilisation B2B - optimiser le marketing de compte - Zone de travail de parcours - Configuration](assets/b2b-uc-optimize-marketing-journey-canvas-config.png)
 
 1. Sélectionnez la **[!UICONTROL Version]**.
 1. Faites glisser et déposez des nœuds sur la zone de travail et connectez les nœuds pour illustrer le parcours de compte. Par exemple : de **[!UICONTROL Formulaire de prospect : étape 1]** formulaire à **[!UICONTROL Opportunité. Créé]**.
 
-   ![Cas d’utilisation B2B - optimiser le marketing de compte - Zone de travail de parcours &#x200B;](assets/b2b-uc-optimize-marketing-journey-canvas.png)
+   ![Cas d’utilisation B2B - optimiser le marketing de compte - Zone de travail de parcours ](assets/b2b-uc-optimize-marketing-journey-canvas.png)
 
 
 ## Segmentation des cohortes
