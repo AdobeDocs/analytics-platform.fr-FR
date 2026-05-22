@@ -7,17 +7,11 @@ role: User
 exl-id: bd0ff42b-7136-41b8-9dcd-75ab3ac8a523
 autotag-review: '2026-05-19T09:41:27.809Z'
 TQID: 'https://experienceleague.adobe.com/HHYHHD44U3-m-AgX7rugqZ8uW4DOLVKQzQTvLORH99I'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-subfeature_v2:
-  - id: f24857a4-4b64-4b25-b237-d43026362144
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: f24857a4-4b64-4b25-b237-d43026362144
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 681
@@ -37,7 +31,7 @@ Examinez le segment que vous souhaitez utiliser dans Customer Journey Analytics.
 
 Vous pouvez ensuite utiliser ce segment dans un exemple **[!UICONTROL Utilisation des noms de segment pour le segment]** panneau pour le cas d’utilisation :
 
-![Valeurs De Nombre Distinct &#x200B;](../assets/cja-using-filter-names-to-filter.png)
+![Valeurs De Nombre Distinct ](../assets/cja-using-filter-names-to-filter.png)
 
 +++
 

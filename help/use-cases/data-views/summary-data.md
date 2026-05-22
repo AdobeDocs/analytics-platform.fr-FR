@@ -6,21 +6,11 @@ feature: Use Cases
 role: Admin
 exl-id: 80139806-618a-46ff-b2c4-32d7bb85a526
 TQID: https://experienceleague.adobe.com/ST-1vL8gbeSqaYYHakxjYWcDOryNucEVHiONAQk7gU4
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: cb6c7d24-631f-46e5-9e39-3a2705f73962id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 4858
@@ -35,7 +25,7 @@ Ce cas pratique a pour but de vous aider à comprendre comment utiliser les donn
 - [Ingérer](#ingest) données de résumé et autres sources de données dans Experience Platform.
 - Configurez votre [Connexion](#connection) pour les données de résumé et d’autres sources de données.
 - Configurez votre [vue de données](#data-view) pour combiner vos sources de données.
-- Effectuez un rapport et une analyse dans [&#128279;](#workspace) sur vos données combinées.
+- Effectuez un rapport et une analyse dans [](#workspace) sur vos données combinées.
 
 Le cas d’utilisation fournit des exemples de données pour les données de résumé, les données d’événement et les données de recherche. Toutes les données contiennent des valeurs aléatoires.
 
@@ -309,7 +299,7 @@ Un schéma récapitulatif des données est nécessaire dans Experience Platform.
 
 Pour créer un schéma de synthèse dans Experience Platform :
 
-1. Sélectionnez **&#x200B;**&#x200B;dans le sélecteur d’applications ![App](/help/assets/icons/Apps.svg).
+1. Sélectionnez **** dans le sélecteur d’applications ![App](/help/assets/icons/Apps.svg).
 1. Sélectionnez **[!UICONTROL Schémas]** dans le rail de gauche.
 1. Sélectionnez ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Create schema]**.
 1. Sélectionnez **[!UICONTROL Manuel]** dans la boîte de dialogue **[!UICONTROL Créer un schéma]**. Utilisez ensuite **[!UICONTROL Sélectionner]** pour continuer.
@@ -358,7 +348,7 @@ Pour stocker vos données de résumé dans Experience Platform, vous devez d’a
 
 Pour créer un jeu de données, procédez comme suit :
 
-1. Sélectionnez **&#x200B;**&#x200B;dans le sélecteur d’applications ![App](/help/assets/icons/Apps.svg).
+1. Sélectionnez **** dans le sélecteur d’applications ![App](/help/assets/icons/Apps.svg).
 1. Sélectionnez **[!UICONTROL Jeux de données]** dans le rail de gauche.
 1. Sélectionnez ![AjouterCercle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Créer un jeu de données]**.
 1. Dans l’écran **[!UICONTROL Jeux de données]** > **[!UICONTROL Créer des jeux de données]**, sélectionnez **[!UICONTROL Créer un jeu de données à partir d’un schéma]**.
@@ -372,7 +362,7 @@ Un écran affiche les détails de votre nouveau jeu de données.
 
 Pour charger vos données d’exemple dans ce jeu de données :
 
-1. Sélectionnez **&#x200B;**&#x200B;dans le sélecteur d’applications ![App](/help/assets/icons/Apps.svg).
+1. Sélectionnez **** dans le sélecteur d’applications ![App](/help/assets/icons/Apps.svg).
 1. Sélectionnez **[!UICONTROL Workflows]** dans le rail de gauche.
    1. Sélectionnez **[!UICONTROL Mapper CSV à un schéma XDM]** dans les options **[!UICONTROL Ingestion des données]** de l’écran **[!UICONTROL Workflows]**.
    1. Sélectionnez **[!UICONTROL Launch]** dans le panneau **[!UICONTROL Mapper CSV à un schéma XDM]**.
@@ -402,7 +392,7 @@ Dans **[!UICONTROL Sources]** > **[!UICONTROL Flux de données - XX/XX/XXXX, XX:
 Pour utiliser vos données d’exemple dans Customer Journey Analytics, vous devez créer une connexion qui inclut l’Exemple de jeu de données de résumé à partir d’Experience Platform.
 
 
-1. Sélectionnez **&#x200B;**&#x200B;dans le sélecteur d’applications ![App](/help/assets/icons/Apps.svg).
+1. Sélectionnez **** dans le sélecteur d’applications ![App](/help/assets/icons/Apps.svg).
 1. Sélectionnez **[!UICONTROL Connexions]**, éventuellement à partir de **[!UICONTROL Gestion des données]**, dans le menu supérieur.
 1. Sélectionnez **[!UICONTROL Créer une connexion]**.
 1. Dans **[!UICONTROL Connexions]** > **[!UICONTROL Connexion sans titre]** :
@@ -443,7 +433,7 @@ Les données des jeux de données sont ajoutées à Customer Journey Analytics, 
 
 Au bout d’un certain temps, vérifiez que les données de vos jeux de données sont correctement chargées dans Customer Journey Analytics.
 
-1. Sélectionnez **&#x200B;**&#x200B;dans le sélecteur d’applications ![App](/help/assets/icons/Apps.svg).
+1. Sélectionnez **** dans le sélecteur d’applications ![App](/help/assets/icons/Apps.svg).
 1. Sélectionnez **[!UICONTROL Connexions]**, éventuellement à partir de **[!UICONTROL Gestion des données]**, dans le menu supérieur.
 1. Sélectionnez votre connexion, par exemple **[!UICONTROL Exemple de connexion à l’aide de données récapitulatives]**.
 1. Sélectionnez une période appropriée dans les détails **[!UICONTROL Connexion]** > **[!UICONTROL Exemple de connexion à l’aide de données de résumé]**.
@@ -458,7 +448,7 @@ Dans la liste des **[!UICONTROL Jeux de données]**, les valeurs de la colonne *
 
 Pour que vous puissiez générer des rapports sur les données correctes dans Workspace, vous devez créer une vue de données contenant les mesures et dimensions pertinentes.
 
-1. Sélectionnez **&#x200B;**&#x200B;dans le sélecteur d’applications ![App](/help/assets/icons/Apps.svg).
+1. Sélectionnez **** dans le sélecteur d’applications ![App](/help/assets/icons/Apps.svg).
 1. Sélectionnez **[!UICONTROL Vues de données]**, éventuellement à partir de **[!UICONTROL Gestion des données]**, dans le menu supérieur.
 1. Sélectionnez **[!UICONTROL Créer une vue de données]**.
 1. Dans **[!UICONTROL Vues de données]**, parcourez les écrans de l’assistant pour configurer votre vue de données.
@@ -522,7 +512,7 @@ Pour que vous puissiez générer des rapports sur les données correctes dans Wo
 
          1. Développez ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Summary Data Group]**.
          1. Activez **[!UICONTROL Créer un regroupement]**.
-         1. Sélectionnez **[!UICONTROL Nom de la campagne (champ dérivé de la recherche)]** dans le menu déroulant **[!UICONTROL Dimension]**. Cette étape permet de s’assurer que le nom de la campagne (recherche) de l’exemple de jeu de données de recherche peut être utilisé en toute sécurité dans les rapports (voir [&#128279;](#workspace)).
+         1. Sélectionnez **[!UICONTROL Nom de la campagne (champ dérivé de la recherche)]** dans le menu déroulant **[!UICONTROL Dimension]**. Cette étape permet de s’assurer que le nom de la campagne (recherche) de l’exemple de jeu de données de recherche peut être utilisé en toute sécurité dans les rapports (voir [](#workspace)).
 
       1. Sélectionnez la mesure **[!UICONTROL Recettes]** dans la liste **[!UICONTROL Mesures]**. Dans le panneau des composants :
 
@@ -557,8 +547,8 @@ Vous avez maintenant configuré votre vue de données pour créer des rapports a
 
 Pour créer des rapports sur vos données de synthèse, créez un projet dans Analysis Workspace.
 
-1. Sélectionnez **&#x200B;**&#x200B;dans le sélecteur d’applications ![App](/help/assets/icons/Apps.svg).
-1. Sélectionnez **&#x200B;**&#x200B;dans le menu supérieur.
+1. Sélectionnez **** dans le sélecteur d’applications ![App](/help/assets/icons/Apps.svg).
+1. Sélectionnez **** dans le menu supérieur.
 1. Sélectionnez **[!UICONTROL Créer un projet]**.
 1. Sélectionnez **[!UICONTROL Projet Workspace vierge]** dans la boîte de dialogue avec les options de création d’un projet Workspace vierge.
 1. Sélectionnez **[!UICONTROL Créer]**.
