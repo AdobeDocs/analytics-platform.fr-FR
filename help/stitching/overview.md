@@ -7,16 +7,11 @@ exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
 autotag-review: '2026-05-19T09:24:34.962Z'
 TQID: 'https://experienceleague.adobe.com/Y7Q0pAx9s4p2YxrcfVKsvJcppHFmtNCKAgA0oCc0CeA'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-subfeature_v2:
-  - id: faea9abd-7024-4c5e-a5b4-87919e09b24b
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: faea9abd-7024-4c5e-a5b4-87919e09b24b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 1022
@@ -76,7 +71,7 @@ Veillez à ne pas confondre le groupement avec ce qui suit :
 
 ## Options
 
-Le package Customer Journey Analytics auquel vous avez droit détermine les méthodes de groupement disponibles, les options relatives à la durée de renvoi initiale, l’intervalle de recherche en amont, la fréquence de relecture et le nombre maximal de jeux de données autorisés pour le groupement. Voir la description du produit [&#128279;](https://helpx.adobe.com/fr/legal/product-descriptions/customer-journey-analytics.html?lang=fr) pour plus d’informations. Déterminez les options disponibles avant d’activer le groupement.
+Le package Customer Journey Analytics auquel vous avez droit détermine les méthodes de groupement disponibles, les options relatives à la durée de renvoi initiale, l’intervalle de recherche en amont, la fréquence de relecture et le nombre maximal de jeux de données autorisés pour le groupement. Voir la description du produit [](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html?lang=fr) pour plus d’informations. Déterminez les options disponibles avant d’activer le groupement.
 
 | | <br/>Select | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>Ultimate |
 |---|---|---|---|
@@ -108,7 +103,7 @@ L’assemblage prend en charge les jeux de données Journey Optimizer suivants,
 
 >[!MORELIKETHIS]
 >
->[&#x200B; Groupement basé sur les champs](fbs.md)
+>[ Groupement basé sur les champs](fbs.md)
 >[Rapprochement basé sur les graphiques](gbs.md)
 >[Utilisation du groupement](use-stitching.md)
 >[Valider le groupement](validate.md)

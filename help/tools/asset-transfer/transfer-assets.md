@@ -5,17 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 exl-id: c5ed81ea-1d55-4193-9bb1-a2a93ebde91f
 TQID: https://experienceleague.adobe.com/jjqF5CYG0y7OfRA9oGihAQwXQCOW00gkiEwwbfH3jrU
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-  - id: e4a0bad2-b448-47f1-9fa6-222ebdb3b5b0
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: e44e560d-5e5c-4a5f-9a87-eb8adbb817afid: e4a0bad2-b448-47f1-9fa6-222ebdb3b5b0
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 856
@@ -105,7 +98,7 @@ Un transfert peut avoir trois conséquences :
 
 L’un des principaux cas d’utilisation du transfert de ressources concerne la mise à niveau d’Adobe Analytics vers Customer Journey Analytics.
 
-La fonctionnalité [Migration des composants &#x200B;](https://experienceleague.adobe.com/fr/docs/analytics/admin/admin-tools/component-migration/component-migration) d’Adobe Analytics vous permet de migrer les projets détenus appartenant à des administrateurs et administratrices vers d’autres administrateurs et administratrices. Tous les composants qui constituent ces projets sont ensuite recréés dans Customer Journey Analytics et l’administrateur ou l’administratrice destinataire possède tous ces composants, quelle que soit la personne qui les a créés.
+La fonctionnalité [Migration des composants ](https://experienceleague.adobe.com/fr/docs/analytics/admin/admin-tools/component-migration/component-migration) d’Adobe Analytics vous permet de migrer les projets détenus appartenant à des administrateurs et administratrices vers d’autres administrateurs et administratrices. Tous les composants qui constituent ces projets sont ensuite recréés dans Customer Journey Analytics et l’administrateur ou l’administratrice destinataire possède tous ces composants, quelle que soit la personne qui les a créés.
 
 Cet outil de transfert de ressources permet par la suite aux administrateurs et administratrices de réaffecter des composants à leurs propriétaires légitimes, qu’il s’agisse ou non d’administrateurs ou d’administratrices.
 
