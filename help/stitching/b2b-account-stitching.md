@@ -20,9 +20,9 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 5964c5f87364e5ba78e866d753819d7e7f605b30
+source-git-commit: d95b7e2710fac7ce851c1c5ecba229a4221f08ac
 workflow-type: tm+mt
-source-wordcount: 1169
+source-wordcount: 1178
 ht-degree: 2%
 
 ---
@@ -137,7 +137,7 @@ Vous activez et configurez l’assemblage des comptes B2B au niveau de la connex
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_enable_person_to_account"
 >title="Activer l’assemblage des comptes de personne à personne"
->abstract="Si cette option est activée, ce jeu de données utilise l’assemblage de comptes B2B. L’ID de personne sélectionné est utilisé pour rechercher l’ID de compte en fonction du jeu de données personne à compte.<br/>Si désactivé, ce jeu de données n’utilise *pas* l’assemblage de comptes B2B."
+>abstract="Si cette option est activée, ce jeu de données utilise l’assemblage de comptes B2B. Sélectionnez un **[!UICONTROL ID de personne]** obligatoire pour rechercher l’ID de compte en fonction du jeu de données de personne à compte.<br/>Si désactivé, ce jeu de données n’utilise *pas* l’assemblage de comptes B2B et vous devez sélectionner un **[!UICONTROL ID de compte]** obligatoire à la place."
 >additional-url=""
 >additional-url=""
 
