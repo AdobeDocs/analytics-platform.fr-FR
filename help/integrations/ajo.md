@@ -79,7 +79,7 @@ Lorsque le module complémentaire de messagerie transactionnelle à haut débit 
 * **[!UICONTROL Widget de latence P95 mobile de 7 jours]** : affiche la latence P95 sous la forme d’une valeur unique, y compris la variation en pourcentage par rapport à la semaine précédente.
 * **[!UICONTROL Widget continu de débit P95 de 7 jours]** : affiche le débit P95 sous la forme d’une valeur unique, y compris la modification en pourcentage par rapport à la semaine précédente.
 
-Pour plus d’informations sur ces jeux de données et le module complémentaire de messagerie transactionnelle à débit élevé, voir [Activer le mode à débit élevé pour les campagnes déclenchées par API](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/api-triggered-campaigns/api-triggered-high-throughput) dans la documentation de Adobe Journey Optimizer.
+Pour plus d’informations sur ces jeux de données et le module complémentaire de messagerie transactionnelle à débit élevé, voir [Activer le mode à débit élevé pour les campagnes déclenchées par API](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/campaigns/api-triggered-campaigns/api-triggered-high-throughput) dans la documentation de Adobe Journey Optimizer.
 
 ### Vue de données
 
