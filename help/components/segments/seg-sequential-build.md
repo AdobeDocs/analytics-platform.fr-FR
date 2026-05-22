@@ -4,20 +4,11 @@ title: Segments séquentiels
 feature: Filters, Segments
 exl-id: 64cb10b5-36f0-42c8-b687-ae5de5ced8b5
 TQID: https://experienceleague.adobe.com/TqLnqudV-SrIk7SdMT7dUeNBAwaa5FkoZocUkwrod6g
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 2491
@@ -33,7 +24,7 @@ Vous créez des segments séquentiels à l’aide de l’opérateur logique [!UI
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmentation séquentielle](https://experienceleague.adobe.com/fr/docs/analytics-learn/tutorials/components/segmentation/sequential-segmentation){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmentation séquentielle](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/components/segmentation/sequential-segmentation){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 
@@ -97,16 +88,16 @@ Identifiez toutes les sessions au cours desquelles une personne visite une page 
 
 ## [!UICONTROL Après] et [!UICONTROL Dans]
 
-Vous pouvez utiliser ![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL After]** et ![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL Within]** l’opérateur **[!UICONTROL Then]** pour définir des [contraintes de temps ou &#x200B;](#time-constraints)contraintes supplémentaires pour les événements, les sessions ou les dimensions[&#x200B; &#x200B;](#event-session-and-dimension-constraints).
+Vous pouvez utiliser ![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL After]** et ![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL Within]** l’opérateur **[!UICONTROL Then]** pour définir des [contraintes de temps ou ](#time-constraints)contraintes supplémentaires pour les événements, les sessions ou les dimensions[ ](#event-session-and-dimension-constraints).
 
 ### Contraintes de temps
 
 Pour appliquer des contraintes de temps à l’opérateur **[!UICONTROL Then]** :
 
-1. Sélectionnez ![&#x200B; Horloge &#x200B;](/help/assets/icons/Clock.svg).
+1. Sélectionnez ![ Horloge ](/help/assets/icons/Clock.svg).
 1. Sélectionnez **[!UICONTROL Dans]** ou **[!UICONTROL Après]** dans le menu contextuel.
 1. Spécifiez une période (**[!UICONTROL Minute]**, **[!UICONTROL Heure]**, jusqu’à **[!UICONTROL Années]**).
-1. Sélectionnez le ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL *nombre *]**&#x200B;pour ouvrir une fenêtre contextuelle qui vous permet de saisir ou de spécifier un nombre à l’aide de&#x200B;**[!UICONTROL -]**&#x200B;ou&#x200B;**[!UICONTROL +]**.
+1. Sélectionnez le ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL *nombre *]**pour ouvrir une fenêtre contextuelle qui vous permet de saisir ou de spécifier un nombre à l’aide de**[!UICONTROL -]**ou**[!UICONTROL +]**.
 
 Pour supprimer une contrainte de temps, utilisez ![CrossSize75](/help/assets/icons/CrossSize75.svg).
 
@@ -169,7 +160,7 @@ Les exemples de séquences suivants correspondent ou ne correspondent pas :
 
 Vous pouvez spécifier les données à inclure dans votre segment séquentiel ou dans un conteneur séquentiel qui fait partie de votre segment séquentiel.
 
-### [!UICONTROL &#x200B; Tout le monde &#x200B;] {#include_everyone}
+### [!UICONTROL  Tout le monde ] {#include_everyone}
 
 Pour créer un segment séquentiel qui inclut tout le monde, sélectionnez l’option ![UserGroup](/help/assets/icons/UserGroup.svg) **[!UICONTROL Inclure tout le monde]**.
 
@@ -225,7 +216,7 @@ Lors de la création de rapports sur les sections de site à l’aide de ces tro
 
 ## [!UICONTROL Exclure]
 
-Les définitions de segment incluent toutes les données, sauf si vous excluez spécifiquement les données ![Utilisateur](/help/assets/icons/User.svg) [!UICONTROL Personne], ![Visite](/help/assets/icons/Visit.svg) [!UICONTROL Session] ou ![PageWeb](/help/assets/icons/WebPage.svg) [!UICONTROL Event] à l’aide de **[!UICONTROL Exclude]**.
+Les définitions de segment incluent toutes les données, sauf si vous excluez spécifiquement les données ![Utilisateur](/help/assets/icons/User.svg) [!UICONTROL Personne], ![Visite](/help/assets/icons/Visit.svg) [!UICONTROL Session] ou ![PageWeb](/help/assets/icons/WebPage.svg)[!UICONTROL Event] à l’aide de **[!UICONTROL Exclude]**.
 
 [!UICONTROL Exclure] vous permet d’ignorer les données courantes et de créer des segments avec plus de focus. Exclure permet également de créer des segments excluant des groupes de personnes spécifiques. Par exemple, pour définir un segment qui spécifie les personnes ayant passé des commandes, puis excluant ce groupe de personnes afin d’identifier *non-acheteurs*. Une bonne pratique consiste à créer des règles qui utilisent une définition large plutôt que d’essayer d’utiliser [!UICONTROL Exclure] pour cibler des personnes spécifiques qui correspondent à des valeurs d’inclusion spécifiques.
 
@@ -289,7 +280,7 @@ Voici des exemples d’utilisation du conteneur Groupe logique .
 
 Identifiez les personnes qui ont visité une page, puis consulté chaque page d’un autre ensemble de pages dans n’importe quel ordre. Par exemple, les personnes qui ont visité la page d’accueil, puis ont visité chacune des pages Hommes, Femmes et Enfants, quel que soit l’ordre.
 
-Vous pouvez créer ce segment sans [!UICONTROL &#x200B; Groupe logique &#x200B;], mais la construction sera complexe et laborieuse. Spécifiez chaque séquence de pages que le visiteur peut afficher. Pour plus de clarté, seul le premier conteneur est ouvert ![ChevronDown](/help/assets/icons/ChevronDown.svg) et les autres conteneurs sont fermés ![ChevronRight](/help/assets/icons/ChevronRight.svg). Vous pouvez dériver le contenu des autres conteneurs par les titres.
+Vous pouvez créer ce segment sans [!UICONTROL  Groupe logique ], mais la construction sera complexe et laborieuse. Spécifiez chaque séquence de pages que le visiteur peut afficher. Pour plus de clarté, seul le premier conteneur est ouvert ![ChevronDown](/help/assets/icons/ChevronDown.svg) et les autres conteneurs sont fermés ![ChevronRight](/help/assets/icons/ChevronRight.svg). Vous pouvez dériver le contenu des autres conteneurs par les titres.
 
 ![Exemple n’utilisant pas de groupe logique](assets/logicgroup-example-notusing.png)
 
@@ -330,4 +321,4 @@ An example of a complex sequential segment if you want to find the persons that
 Dernier exemple : vous souhaitez identifier les personnes qui ont appris quelque chose sur une page produit spécifique, sans que ces personnes n’aient jamais été contactées par votre campagne Donnez le pouvoir pour que vous bougiez. Et lors de leur première visite dans votre boutique en ligne, ils ont consulté la page d&#39;accueil, mais n&#39;ont pas examiné plus loin les produits de fitness (équipement) de la catégorie Hommes. Cependant, lors de la session suivante, directement après cela, ils sont allés sur une page produit et ont passé une commande en ligne sans passer par la page d&#39;accueil au préalable.
 
 
-![&#x200B; Exemple de segment séquentiel complexe &#x200B;](assets/sequential-complex.png)
+![ Exemple de segment séquentiel complexe ](assets/sequential-complex.png)
