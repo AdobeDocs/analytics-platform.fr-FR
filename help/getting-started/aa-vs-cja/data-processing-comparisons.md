@@ -5,11 +5,20 @@ exl-id: e3deedb2-0171-4fc2-9127-b9543603d4f0
 feature: Basics
 role: User
 TQID: https://experienceleague.adobe.com/Gr0XohCP1P57crLYW34oL-tr9kFuC6E-VxjWYtqEEdA
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 1332
@@ -28,7 +37,7 @@ Dans Adobe Analytics, le traitement au moment du rapport représente généralem
 
 ![Traitement au moment de la collecte Adobe Analytics](../assets/aa-processing.png)
 
-En revanche, Customer Journey Analytics est conçu pour nécessiter un traitement initial minimal de la collecte avant l’organisation et le stockage des données. L’architecture sous-jacente de Customer Journey Analytics est conçue pour fonctionner avec les données stockées au moment du rapport. Customer Journey Analytics offre sa puissante fonctionnalité de traitement de la période de rapport, et pas seulement dans Analysis Workspace. D’autres fonctionnalités de traitement de la période de rapport sont disponibles par le biais de la définition de [composants](/help/data-views/component-settings/overview.md) et [ champs dérivés](/help/data-views/derived-fields/derived-fields.md) dans vos vues de données.
+En revanche, Customer Journey Analytics est conçu pour nécessiter un traitement initial minimal de la collecte avant l’organisation et le stockage des données. L’architecture sous-jacente de Customer Journey Analytics est conçue pour fonctionner avec les données stockées au moment du rapport. Customer Journey Analytics offre sa puissante fonctionnalité de traitement de la période de rapport, et pas seulement dans Analysis Workspace. D’autres fonctionnalités de traitement de la période de rapport sont disponibles par le biais de la définition de [composants](/help/data-views/component-settings/overview.md) et [&#x200B; champs dérivés](/help/data-views/derived-fields/derived-fields.md) dans vos vues de données.
 
 ![Traitement au moment du rapport de Customer Journey Analytics](../assets/cja-processing.png)
 
@@ -65,7 +74,7 @@ Les étapes de traitement des données effectuées par Adobe Analytics et Custom
 
 | Fonctionnalité | Appliqué au moment du traitement | Appliqué au moment du rapport | Non disponible | Notes |
 | --- | --- | --- | --- | --- |
-| Création de rapports [](https://experienceleague.adobe.com/fr/docs/analytics)<br/>(sans inclure les fonctionnalités d’attribution avancées ni les suites de rapports virtuelles avec traitement de la période des rapports) | <ul><li>[Règles de traitement](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules)</li><li>[Règles VISTA](https://experienceleague.adobe.com/en/docs/analytics/technotes/terms)</li><li>[Règles des canaux marketing](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-rules) au niveau des accès</li><li>Règles des canaux marketing au niveau des visites (voir note)</li><li>Définition de visite</li><li>Logique d’attribution</li></ul> | <ul><li>Logique de segment</li><li>Mesures calculées</li></ul> | <ul><li>Analyses entre appareils (voir note)</li></ul> | <ul><li>Les analyses entre appareils nécessitent l’utilisation de suites de rapports virtuelles avec le traitement de la période de rapport.</li><li>Les « règles des canaux marketing au niveau des visites » incluent les éléments suivants : **Est la première page de la visite**, **Remplacer le canal Dernière touche**, et **Expiration du canal marketing**. (Voir la [documentation](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-usecases/aa-data/marketing-channels).)</li></ul> |
+| Création de rapports [&#128279;](https://experienceleague.adobe.com/fr/docs/analytics)<br/>(sans inclure les fonctionnalités d’attribution avancées ni les suites de rapports virtuelles avec traitement de la période des rapports) | <ul><li>[Règles de traitement](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules)</li><li>[Règles VISTA](https://experienceleague.adobe.com/en/docs/analytics/technotes/terms)</li><li>[Règles des canaux marketing](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-rules) au niveau des accès</li><li>Règles des canaux marketing au niveau des visites (voir note)</li><li>Définition de visite</li><li>Logique d’attribution</li></ul> | <ul><li>Logique de segment</li><li>Mesures calculées</li></ul> | <ul><li>Analyses entre appareils (voir note)</li></ul> | <ul><li>Les analyses entre appareils nécessitent l’utilisation de suites de rapports virtuelles avec le traitement de la période de rapport.</li><li>Les « règles des canaux marketing au niveau des visites » incluent les éléments suivants : **Est la première page de la visite**, **Remplacer le canal Dernière touche**, et **Expiration du canal marketing**. (Voir la [documentation](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-usecases/aa-data/marketing-channels).)</li></ul> |
 | [Data Warehouse](https://experienceleague.adobe.com/fr/docs/analytics/export/data-warehouse/data-warehouse) Adobe Analytics | <ul><li>Règles de traitement</li><li>Règles VISTA</li><li>Règles des canaux marketing au niveau des accès</li><li>Règles des canaux marketing au niveau des visites</li><li>Définition de visite</li><li>Logique d’attribution</li></ul> | <ul><li>Logique de segment</li></ul> | <ul><li>Mesures calculées</li><li>Analyses entre appareils</li></ul> |     |
 | [Flux de données](https://experienceleague.adobe.com/fr/docs/analytics/export/analytics-data-feed/data-feed-overview) Adobe Analytics | <ul><li>Règles de traitement</li><li>Règles VISTA</li><li>Règles des canaux marketing au niveau des accès</li><li>Règles des canaux marketing au niveau des visites</li><li>Définition de visite (champ visitnum)</li><li>Logique d’attribution (dans les colonnes « Post »)</li></ul> |   | <ul><li>Logique de segment</li><li>Mesures calculées</li><li>Analyses entre appareils</li></ul> | <ul><li>Les mappages d’ID pour certaines colonnes liées aux canaux marketing dans les flux de données ne sont pas inclus dans les flux de données. (Voir la [documentation sur les flux de données](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference).)</li></ul> |
 | [Livestream](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/live-stream-api/getting_started.md) Adobe Analytics | <ul><li> Règles de traitement</li><li>Règles VISTA</li><ul> |   | <ul><li>Règles des canaux marketing au niveau des accès</li><li>Règles des canaux marketing au niveau des visites</li><li>Logique de visite</li><li>Logique d’attribution</li><li>Logique de segment</li><li>Mesures calculées</li><li>Analyses entre appareils</li></ul> |  |
