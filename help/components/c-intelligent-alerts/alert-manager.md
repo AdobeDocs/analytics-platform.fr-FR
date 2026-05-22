@@ -20,10 +20,10 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: de8f8e06f074fdcb0219ce7286785d870c2093b4
 workflow-type: tm+mt
-source-wordcount: 599
-ht-degree: 22%
+source-wordcount: 589
+ht-degree: 23%
 
 ---
 
@@ -45,7 +45,9 @@ Le gestionnaire d’alertes comporte les éléments d’interface suivants :
 
 ### Liste des alertes
 
-La liste des alertes affiche ➊ toutes les alertes que vous possédez, celles qui ont été incluses dans tous vos projets et celles qui ont été partagées avec vous. La liste comporte les colonnes suivantes :
+La liste des alertes affiche ➊ les alertes que vous avez créées. Si vous êtes un administrateur, toutes les alertes s’affichent.
+
+La liste comporte les colonnes suivantes :
 
 | Colonne | Description |
 |---|---|
@@ -54,7 +56,7 @@ La liste des alertes affiche ➊ toutes les alertes que vous possédez, celles q
 | **[!UICONTROL Type]** | Indique si l’alerte est une alerte de données Customer Journey Analytics ou une alerte d’utilisation de l’appel au serveur. |
 | **[!UICONTROL Activé]** | Indique si l’alerte est activée ou désactivée. |
 | **[!UICONTROL Vue de données]** | Vues de données auxquelles cette alerte s’applique. |
-| **[!UICONTROL Propriétaire]** | Propriétaire de l’alerte. En tant que non-administrateur, vous ne voyez que les alertes que vous possédez ou celles qui sont partagées avec vous. |
+| **[!UICONTROL Propriétaire]** | Propriétaire de l’alerte. En tant que non-administrateur, vous ne voyez que les alertes que vous possédez. Un administrateur peut voir toutes les alertes. |
 | **[!UICONTROL Balises]** | Balises pour cette alerte. |
 | **[!UICONTROL Date d’expiration]** | Date et heure d’expiration de l’alerte. |
 | **[!UICONTROL Date de modification]** | Date et heure de la dernière modification de l’alerte. |

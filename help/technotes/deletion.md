@@ -22,9 +22,9 @@ subfeature_v2:
   - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: de8f8e06f074fdcb0219ce7286785d870c2093b4
 workflow-type: tm+mt
-source-wordcount: 965
+source-wordcount: 997
 ht-degree: 9%
 
 ---
@@ -51,6 +51,7 @@ Tenez compte des implications suivantes avant de supprimer des jeux de données 
 
 | Action | Implications |
 | --- | --- |
+| Supprimer un ou plusieurs enregistrements d’un jeu de données dans  | Les enregistrements sont supprimés des connexions Customer Journey Analytics pour lesquelles le jeu de données est défini dans le cadre de la configuration de la connexion. |
 | Supprimer un jeu de données dans  | Le flux de données de ce jeu de données dans Experience Platform s’arrête à toutes les connexions qui incluent ce jeu de données. Toutes les données de ce jeu de données sont automatiquement supprimées des connexions Customer Journey Analytics associées. |
 | Supprimer un lot d’un jeu de données dans  | Si un lot est supprimé d’un jeu de données , le même lot est supprimé de toutes les connexions [!UICONTROL Customer Journey Analytics] qui contiennent ce lot spécifique. [!UICONTROL Customer Journey Analytics] est averti des lots supprimés dans [!UICONTROL Adobe Experience Platform]. |
 | Supprimez un lot d’ **pendant son ingestion** dans [!UICONTROL Customer Journey Analytics] | Si le jeu de données ne contient qu’un seul lot, aucune des données ou données partielles de ce lot n’apparaît dans [!UICONTROL Customer Journey Analytics]. L’ingestion est restaurée. Si, par exemple, le jeu de données contient 5 lots et que 3 d’entre eux ont déjà été ingérés lors de la suppression du quatrième lot, les données de ces 3 lots apparaissent dans . |
