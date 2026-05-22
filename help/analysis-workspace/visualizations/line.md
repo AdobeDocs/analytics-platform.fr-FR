@@ -6,17 +6,11 @@ exl-id: b68aa8dc-2c96-4c49-8d3c-d94804aab479
 role: User
 autotag-review: '2026-05-19T08:29:43.526Z'
 TQID: 'https://experienceleague.adobe.com/ekT5diDY2vDPhjZ5I2oe-lgqjQ--Ri-bO-UljZUUmJw'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-subfeature_v2:
-  - id: ddf59f64-0e46-4986-a525-056acc143c70
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2: id: ddf59f64-0e46-4986-a525-056acc143c70
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 566
@@ -38,7 +32,7 @@ ht-degree: 83%
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente la visualisation Ligne dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Voir [Ligne](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/line) pour la version_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** de cet article._
+_Cet article présente la visualisation Ligne dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Voir [Ligne](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/line) pour la version_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 
@@ -55,7 +49,7 @@ Dans le cadre des [paramètres de visualisation](freeform-analysis-visualization
 | Paramètre | Description |
 |---|---|
 | **[!UICONTROL Granularité]** | Faites votre choix dans le menu déroulant granularité pour modifier une visualisation des tendances de quotidienne à hebdomadaire en mensuelle, etc. La granularité est également mise à jour dans le tableau de la source de données. |
-| **[!UICONTROL Affichage min]** <br/>**[!UICONTROL Affichage max &#x200B;]** | Vous pouvez superposer un libellé de valeur minimale et maximale pour mettre en surbrillance les valeurs minimale et maximale d’une mesure. Les valeurs min/max sont dérivées des points de données visibles dans la visualisation, et non du jeu complet de valeurs dans une dimension.<br/>![Recouvrement avec les libellés de valeur minimale et maximale.](assets/min-max-labels.png) |
+| **[!UICONTROL Affichage min]** <br/>**[!UICONTROL Affichage max ]** | Vous pouvez superposer un libellé de valeur minimale et maximale pour mettre en surbrillance les valeurs minimale et maximale d’une mesure. Les valeurs min/max sont dérivées des points de données visibles dans la visualisation, et non du jeu complet de valeurs dans une dimension.<br/>![Recouvrement avec les libellés de valeur minimale et maximale.](assets/min-max-labels.png) |
 | **[!UICONTROL Afficher la courbe de tendance]** | Vous pouvez choisir d’ajouter une régression ou une courbe de tendance de moyenne glissante à votre série de lignes. Les courbes de tendance permettent d’illustrer plus clairement un schéma dans les données. Lorsque cette option est sélectionnée, sélectionnez un modèle dans la liste. Consultez [Modèles](#models) pour obtenir une vue d’ensemble et une description des modèles disponibles.<br/>![Courbe de tendance linéaire](assets/show-linear-trendline.png).<p>**CONSEIL :** il est recommandé d’appliquer des tendances aux données qui n’incluent pas les dates d’aujourd’hui (données partielles) ou de demain. Les dates d’aujourd’hui ou futures biaisent la courbe de tendance. Toutefois, si vous devez inclure des dates futures, supprimez les zéros des données afin dʼéviter que ces jours ne soient faussés. Accédez au tableau de la source de données de la visualisation, choisissez votre colonne de mesures et activez **[!UICONTROL Paramètres des colonnes]** > **[!UICONTROL Interpréter zéro comme n’étant pas une valeur]**.</p> |
 
 ### Modèles
