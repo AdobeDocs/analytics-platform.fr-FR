@@ -7,19 +7,11 @@ role: Admin
 badgePremium: label="Beta"
 autotag-review: '2026-05-19T06:55:09.938Z'
 TQID: 'https://experienceleague.adobe.com/uZjXZUKUMeXLxxpTRrkCZrPsGhxseSxOtJ9X0ZjG5wU'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-subfeature_v2:
-  - id: bfef374d-acfd-4c57-bf74-a2b36053c545
-  - id: e1471301-a189-438e-8d48-264a8db508a6
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: bfef374d-acfd-4c57-bf74-a2b36053c545id: e1471301-a189-438e-8d48-264a8db508a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: d00e9f03-e50b-4162-b143-0c0817c937c2id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 832
@@ -89,7 +81,7 @@ La différence entre l’identité principale et la clé principale introduit un
 
 ## Différences de gouvernance
 
-Dans XDM [schémas](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/schema/composition) et les concepts sous-jacents tels que [groupes de champs](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/schema/composition#field-group), un [champ](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/schema/composition#field) défini au sein d’un groupe de champs propage ses libellés dans tous les jeux de données où le groupe de champs est utilisé. Par exemple, un champ d’e-mail `emailID` dans un `identities` de groupe de champs est libellé de la même manière dans tous les jeux de données où le `identities` de groupe de champs est utilisé.
+Dans XDM [schémas](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/schema/composition) et les concepts sous-jacents tels que [groupes de champs](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#field-group), un [champ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#field) défini au sein d’un groupe de champs propage ses libellés dans tous les jeux de données où le groupe de champs est utilisé. Par exemple, un champ d’e-mail `emailID` dans un `identities` de groupe de champs est libellé de la même manière dans tous les jeux de données où le `identities` de groupe de champs est utilisé.
 
 Dans un schéma relationnel, le nom d’une colonne est indépendant. Une colonne nommée `email` dans le tableau `customers` est indépendante et distincte d&#39;une colonne nommée `email` dans un tableau `prospects`. Ce comportement implique que les libellés (tels que les libellés d’utilisation DULE et les politiques) doivent être appliqués individuellement aux champs des jeux de données mis en miroir. En fonction de l’exemple ci-dessus, vous devez appliquer des libellés à la fois au champ `email` du jeu de données `customers` et au champ `email` du jeu de données `prospects`.
 
@@ -110,5 +102,5 @@ Les schémas relationnels présentent les considérations suivantes en ce qui co
 
 Les considérations suivantes s’appliquent aux clés et champs système :
 
-* La clé primaire, le descripteur de version et le descripteur d’horodatage doivent être des champs de niveau racine dans le schéma XDM relationnel. Utilisez le [mappage de champs](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema) lors de l’ingestion pour prendre en charge cette exigence.
-* Vous pouvez omettre les champs sources appropriés pendant la [phase de mappage](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema).
+* La clé primaire, le descripteur de version et le descripteur d’horodatage doivent être des champs de niveau racine dans le schéma XDM relationnel. Utilisez le [mappage de champs](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema) lors de l’ingestion pour prendre en charge cette exigence.
+* Vous pouvez omettre les champs sources appropriés pendant la [phase de mappage](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema).

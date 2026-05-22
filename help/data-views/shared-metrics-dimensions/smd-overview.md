@@ -3,20 +3,11 @@ title: Mesures et dimensions partagées - Aperçu
 description: Utilisez la même dimension ou la même référence de mesure dans plusieurs vues de données.
 exl-id: 998a9f9b-cfa7-4b97-b32b-d50e35d01b39
 TQID: https://experienceleague.adobe.com/5sjpTMocv3547Xqg4VD6C5Gp-cRzNmyHTI5iE6P-JGA
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 1292
@@ -40,7 +31,7 @@ La plupart des entreprises utilisent le workflow global suivant pour déduplique
 
 ## Gestionnaire [!UICONTROL Mesures et dimensions partagées]
 
-**&#x200B;**&#x200B;> **[!UICONTROL Vues de données]** > **[!UICONTROL Mesures et dimensions partagées]**
+**** > **[!UICONTROL Vues de données]** > **[!UICONTROL Mesures et dimensions partagées]**
 
 Accéder à cette interface utilisateur affiche toutes les dimensions et mesures actuelles qui peuvent être partagées dans plusieurs vues de données. Le coin supérieur droit contient deux boutons permettant d’ajouter des composants à cette interface :
 
@@ -49,7 +40,7 @@ Accéder à cette interface utilisateur affiche toutes les dimensions et mesures
 
 Directement au-dessous de ces deux boutons, quatre cartes de présentation sont visibles :
 
-![&#x200B; Aperçu des cartes de présentation &#x200B;](assets/overview-cards.png)
+![ Aperçu des cartes de présentation ](assets/overview-cards.png)
 
 * **Mesures** : nombre total de mesures disponibles à partager dans les vues de données pour cette connexion. Chaque connexion peut contenir jusqu’à 10 000 mesures partagées.
 * **Dimensions** : nombre total de dimensions disponibles pour être partagées entre les vues de données pour cette connexion. Chaque connexion peut contenir jusqu’à 10 000 dimensions partagées.
