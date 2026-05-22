@@ -19,10 +19,10 @@ role_v2:
 topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 7f8ab656c7dbf508b2a78fd2022592faf883c56e
 workflow-type: tm+mt
-source-wordcount: 861
-ht-degree: 91%
+source-wordcount: 849
+ht-degree: 92%
 
 ---
 
@@ -39,8 +39,7 @@ ht-degree: 91%
 
 L’analyse ![GraphTrend](/help/assets/icons/GraphTrend.svg) **[!UICONTROL Tendances]** fournit des informations précieuses sur les performances de votre produit ou le comportement de vos utilisateurs et utilisatrices au fil du temps. L’axe horizontal de ce rapport est un intervalle de temps, tandis que l’axe vertical mesure les événements souhaités.
 
-
->[!VIDEO](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/guided-analysis/trends)
+>[!VIDEO](https://video.tv.adobe.com/v/3423439/?captions=fre_fr&quality=12&learn=on)
 
 ## Cas d’utilisation
 

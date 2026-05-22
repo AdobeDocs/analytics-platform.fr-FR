@@ -20,10 +20,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 7f8ab656c7dbf508b2a78fd2022592faf883c56e
 workflow-type: tm+mt
-source-wordcount: 694
-ht-degree: 98%
+source-wordcount: 685
+ht-degree: 100%
 
 ---
 
@@ -38,14 +38,9 @@ ht-degree: 98%
 
 <!-- markdownlint-enable MD034 -->
 
-L’analyse ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL Entonnoir &#x200B;]**&#x200B;fournit une représentation visuelle d’un parcours critique d’une personne dans votre produit. L’axe horizontal représente chaque étape qu’une personne doit franchir. L’axe vertical représente le pourcentage d’utilisateurs et d’utilisatrices ou de sessions à chaque étape. Toutes les étapes doivent être effectuées dans l’ordre souhaité, mais peuvent l’être à tout moment dans la fenêtre de création de rapports.
+L’analyse ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL Entonnoir ]**fournit une représentation visuelle d’un parcours critique d’une personne dans votre produit. L’axe horizontal représente chaque étape qu’une personne doit franchir. L’axe vertical représente le pourcentage d’utilisateurs et d’utilisatrices ou de sessions à chaque étape. Toutes les étapes doivent être effectuées dans l’ordre souhaité, mais peuvent l’être à tout moment dans la fenêtre de création de rapports.
 
->[!BEGINSHADEBOX]
-
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analyse du frottement du Funnel](https://video.tv.adobe.com/v/3431276/?captions=fre_fr&quality=12&learn=onn){target="_blank"} pour une vidéo de démonstration.
-
->[!ENDSHADEBOX]
-
+>[!VIDEO](https://video.tv.adobe.com/v/3431276/?captions=fre_fr&quality=12&learn=on)
 
 ## Cas d’utilisation
 

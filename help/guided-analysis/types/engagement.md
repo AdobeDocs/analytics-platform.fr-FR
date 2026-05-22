@@ -16,10 +16,10 @@ subfeature_v2:
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 7f8ab656c7dbf508b2a78fd2022592faf883c56e
 workflow-type: tm+mt
-source-wordcount: 766
-ht-degree: 98%
+source-wordcount: 758
+ht-degree: 100%
 
 ---
 
@@ -44,11 +44,7 @@ Les fonctionnalités qui s’affichent en haut de cette visualisation indiquent 
 * Les fonctionnalités situées dans le coin inférieur gauche de la matrice sont vos fonctionnalités **à faible impact** ; elles ne sont pas largement adoptées ni fréquemment utilisées.
 * Les fonctions en bas à droite de la matrice sont vos fonctions **ponctuelles** ; elles sont largement adoptées, mais ne sont pas fréquemment utilisées.
 
->[!BEGINSHADEBOX]
-
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analyse de l’engagement](https://video.tv.adobe.com/v/3447469?captions=fre_fr){target="_blank"} pour une vidéo de démonstration.
-
->[!ENDSHADEBOX]
+>[!VIDEO](https://video.tv.adobe.com/v/3447469/?captions=fre_fr&quality=12&learn=on)
 
 ## Cas d’utilisation
 
