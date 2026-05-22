@@ -6,11 +6,19 @@ feature: Use Cases
 exl-id: cb5a4f98-9869-4410-8df2-b2f2c1ee8c57
 role: Admin
 TQID: https://experienceleague.adobe.com/cyNvsdN-bSBY2VqCdxAZvWhyTx8--sOUMifbuYrZKTM
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5cid: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 1680
@@ -24,11 +32,11 @@ Ce cas pratique explore une solution intermédiaire pour ingérer des audiences 
 
 ## Conditions préalables
 
-* Accès à [](https://experienceleague.adobe.com/fr/docs/experience-platform/access-control/home), en particulier au profil client en temps réel.
+* Accès à [&#128279;](https://experienceleague.adobe.com/fr/docs/experience-platform/access-control/home), en particulier au profil client en temps réel.
 * Accès à la création et à la gestion d’Experience Platform [schémas](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/home) et [jeux de données](https://experienceleague.adobe.com/fr/docs/experience-platform/catalog/datasets/overview).
 * Accès à [Experience Platform Query Service](https://experienceleague.adobe.com/fr/docs/experience-platform/query/home) (et possibilité d’écrire du code SQL).
 * Accès à un outil qui peut effectuer certaines transformations des données.
-* Accédez à Customer Journey Analytics. Vous devez être un administrateur de produit [](/help/technotes/access-control.md) pour créer et modifier des connexions Customer Journey Analytics et des vues de données.
+* Accédez à Customer Journey Analytics. Vous devez être un administrateur de produit [&#128279;](/help/technotes/access-control.md) pour créer et modifier des connexions Customer Journey Analytics et des vues de données.
 * [Authentification et accès aux API Experience Platform (API Catalog Service et API Segmentation Service)](https://experienceleague.adobe.com/fr/docs/experience-platform/landing/platform-apis/api-authentication). Vous devez créer un projet dans Developer Console de l’entreprise et de la sandbox et vous assurer que vous disposez des informations requises pour envoyer des appels API avec succès.
 
 ## Étapes
@@ -38,7 +46,7 @@ La solution intermédiaire comprend les étapes suivantes :
 1. [Sélectionnez des audiences (interface utilisateur d’Experience Platform)](#select-audiences).
 1. [Créez un jeu de données activé pour le profil (API Experience Platform)](#create-a-profile-enabled-dataset).
 1. [Exporter des audiences (API Experience Platform)](#export-audiences).
-1. [ Transformer la sortie (interface utilisateur d’Experience Platform, etc.)](#transform-the-output)
+1. [&#x200B; Transformer la sortie (interface utilisateur d’Experience Platform, etc.)](#transform-the-output)
 1. [Création d’un schéma et d’un jeu de données (interface utilisateur d’Experience Platform)](#create-a-schema-and-dataset)
 1. [Ajouter ou modifier une connexion (interface utilisateur de Customer Journey Analytics)](#add-or-edit-a-connection).
 1. [Configurer une vue de données (interface utilisateur de Customer Journey Analytics)](#configure-a-data-view).
@@ -176,7 +184,7 @@ où
 
 +++
 
-Utilisez l’API [ Segmentation Service pour vérifier le statut de la tâche d’exportation](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/api/export-jobs#get).
+Utilisez l’API [&#x200B; Segmentation Service pour vérifier le statut de la tâche d’exportation](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/api/export-jobs#get).
 
 +++ Récupération d’une requête de tâche d’exportation spécifique
 
@@ -345,9 +353,9 @@ Dans l’interface utilisateur d’Experience Platform :
    1. (facultatif) Saisissez une **[!UICONTROL Description]**.
    1. Sélectionnez **[!UICONTROL Terminer]**.
 1. Configurez votre schéma pour qu’il contienne un groupe de champs personnalisés (nommé, par exemple, **[!UICONTROL Appartenance à une audience]**) qui contient deux champs nommés **[!UICONTROL audienceMembershipId]** et **[!UICONTROL audienceMembershipName]**.
-1. Assurez-vous que le champ **[!UICONTROL personID]** est une **[!UICONTROL Identité]**, une **[!UICONTROL Identité de Principal]** et qu’il contient **[!UICONTROL E-mail]** comme I**[!UICONTROL espace de noms d’identité]**.
+1. Assurez-vous que le champ **[!UICONTROL personID]** est une **[!UICONTROL Identité]**, une **[!UICONTROL Identité de Principal]** et qu’il contient **[!UICONTROL E-mail]** comme I&#x200B;**[!UICONTROL espace de noms d’identité]**.
 
-   ![ Segment à exporter ](assets/segment-for-export.png)
+   ![&#x200B; Segment à exporter &#x200B;](assets/segment-for-export.png)
 
 1. **[!UICONTROL Appliquer]** toutes les modifications. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer le schéma.
 
