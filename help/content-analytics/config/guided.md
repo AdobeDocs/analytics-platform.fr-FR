@@ -28,7 +28,7 @@ topic_v2:
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 4111
-ht-degree: 61%
+ht-degree: 63%
 
 ---
 
@@ -160,7 +160,7 @@ Si vous avez déjà sélectionné une connexion, mais que vous souhaitez la modi
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_prev_cleanup_labels_dialog"
 >title="Nettoyer la vue de données précédente"
->abstract="Vous avez sélectionné une nouvelle vue de données. La configuration Content Analytics de la vue de données sélectionnée précédemment est supprimée."
+>abstract="Vous avez sélectionné une nouvelle vue de données. La configuration Content Analytics de la vue de données sélectionnée précédente est supprimée."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_new_dialog"
