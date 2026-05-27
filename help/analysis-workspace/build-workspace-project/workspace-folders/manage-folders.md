@@ -6,10 +6,14 @@ feature: Workspace Basics
 exl-id: dcc78e0e-49d6-40bf-a606-9a7f3f19911c
 role: User
 TQID: https://experienceleague.adobe.com/YNvjUk6kW4s7DwgpQSnU5R5ifPnpsavl0EJ84qqvAXI
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
-subfeature_v2: id: a8b1c240-f315-46e3-b813-f545c4279dd1
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2:
+  - id: a8b1c240-f315-46e3-b813-f545c4279dd1
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 431
@@ -30,13 +34,13 @@ Pour renommer des dossiers dans Workspace :
 * Sélectionnez un dossier que vous souhaitez renommer dans la [liste des projets](/help/analysis-workspace/build-workspace-project/freeform-overview.md#project-list).
 
    1. Sélectionnez **[!UICONTROL Renommer]** dans les [actions](/help/analysis-workspace/build-workspace-project/freeform-overview.md#actions) disponibles dans le menu contextuel ![Plus](/help/assets/icons/More.svg) du dossier sélectionné, ou dans la barre d’actions bleue.
-   1. Dans la boîte de dialogue **[!UICONTROL Renommer : *nom de dossier *]**, saisissez un nouveau nom et sélectionnez**[!UICONTROL Enregistrer ]**.
+   1. Dans la boîte de dialogue **[!UICONTROL Renommer : *nom de dossier *]**, saisissez un nouveau nom et sélectionnez&#x200B;**[!UICONTROL Enregistrer &#x200B;]**.
 
 * Dans le dossier que vous souhaitez renommer.
 
    1. Sélectionnez **[!UICONTROL Renommer le dossier]** dans ![Plus](/help/assets/icons/More.svg) dans la [zone de titre](/help/analysis-workspace/build-workspace-project/freeform-overview.md#title-area).
 
-   1. Dans la boîte de dialogue **[!UICONTROL Renommer : *nom de dossier *]**, saisissez un nouveau nom et sélectionnez**[!UICONTROL Enregistrer ]**.
+   1. Dans la boîte de dialogue **[!UICONTROL Renommer : *nom de dossier *]**, saisissez un nouveau nom et sélectionnez&#x200B;**[!UICONTROL Enregistrer &#x200B;]**.
 
 
 ## Déplacement des dossiers
