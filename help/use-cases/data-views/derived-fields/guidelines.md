@@ -7,11 +7,27 @@ exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
 autotag-review: '2026-05-19T11:02:42.011Z'
 TQID: 'https://experienceleague.adobe.com/k0nhhAy1CuLa7bEhu1XGqjsQdn9nEAnGb1LbMMeiCLM'
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4id: d76b9e53-27fb-4597-933f-419cc0dd46db
-subfeature_v2: id: f3ca85c1-72de-4df2-97ed-05753cd77c47id: e1471301-a189-438e-8d48-264a8db508a6
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b4dd41a7-ccf8-4e9d-918e-acaab534a307id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d00e9f03-e50b-4162-b143-0c0817c937c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2:
+  - id: f3ca85c1-72de-4df2-97ed-05753cd77c47
+  - id: e1471301-a189-438e-8d48-264a8db508a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 2842
@@ -82,7 +98,7 @@ Cette section traite des segments par défaut de la vue de données qui font ré
 
 ## Cas trop complexe lorsque les chaînes de règles
 
-Cette section traite des chaînes trop complexes de règles [Cas ](/help/data-views/derived-fields/derived-fields.md#case-when).
+Cette section traite des chaînes trop complexes de règles [Cas &#x200B;](/help/data-views/derived-fields/derived-fields.md#case-when).
 
 Customer Journey Analytics applique des [limites de fonction et d’opérateur](/help/data-views/derived-fields/derived-fields.md#limitations) explicites par champ dérivé (par exemple, le nombre maximal d’opérateurs, le nombre maximal de fonctions par type). Les fonctions trop complexes et les chaînes au sein des fonctions sont plus difficiles à gérer et plus susceptibles de contenir des erreurs.
 
@@ -182,7 +198,7 @@ Customer Journey Analytics permet de contraindre des champs numériques aux dime
    * Définissez le type de composant sur **[!UICONTROL Mesure]** dans la vue de données.
    * Si le composant représente une mesure de sous-ensemble (par exemple, **[!UICONTROL Extraire les pages vues]**), utilisez une mesure filtrée dans la vue de données plutôt qu’une chaîne dérivée plus une mesure calculée en haut.
 * Si la sortie est un libellé :
-   * Définissez le type de composant sur **** et configurez les paramètres [Persistance](/help/data-views/component-settings/persistence.md) (**[!UICONTROL Modèle d’affectation]** et **[!UICONTROL Expiration]**) en conséquence.
+   * Définissez le type de composant sur **&#x200B;**&#x200B;et configurez les paramètres [Persistance](/help/data-views/component-settings/persistence.md) (**[!UICONTROL Modèle d’affectation]** et **[!UICONTROL Expiration]**) en conséquence.
 
 ## Pièges de la logique des canaux marketing et des campagnes
 
@@ -300,7 +316,7 @@ Cette section traite de la surexploitation des fonctions [Suivant](/help/data-vi
 **Modèles**
 
 * Un champ dérivé utilise plusieurs fois des fonctions [Suivant ou Précédent](/help/data-views/derived-fields/derived-fields.md#next-or-previous) (ce qui est proche de la limite documentée par champ).
-* [ Suivant ou Précédent ](/help/data-views/derived-fields/derived-fields.md#next-or-previous) est utilisé pour implémenter une logique de persistance (par exemple : transférer une campagne vers l’avant) au lieu d’utiliser la persistance de la vue de données.
+* [&#x200B; Suivant ou Précédent &#x200B;](/help/data-views/derived-fields/derived-fields.md#next-or-previous) est utilisé pour implémenter une logique de persistance (par exemple : transférer une campagne vers l’avant) au lieu d’utiliser la persistance de la vue de données.
 
 **Diagnostic des risques : qualité des données, maintenance élevée**
 
@@ -343,7 +359,7 @@ Cette section décrit les implications liées à l’atteinte ou à l’approche
 
 >[!NOTE]
 >
->Dans la mesure du possible, réduisez la dépendance aux champs à cardinalité élevée dans les champs dérivés complexes (par exemple : utilisez des clés normalisées ou des classifications groupées) pour limiter le coût des requêtes et la probabilité d’atteindre les limites [ opérateur ou fonction ](/help/data-views/derived-fields/derived-fields.md#limitations).
+>Dans la mesure du possible, réduisez la dépendance aux champs à cardinalité élevée dans les champs dérivés complexes (par exemple : utilisez des clés normalisées ou des classifications groupées) pour limiter le coût des requêtes et la probabilité d’atteindre les limites [&#x200B; opérateur ou fonction &#x200B;](/help/data-views/derived-fields/derived-fields.md#limitations).
 
 CustomCustomer Parcours Analytics [documents](/help/data-views/derived-fields/derived-fields.md#limitations) nombre maximal de fonctions et d’opérateurs par champ dérivé, y compris les limites par type de fonction.motifs**
 
@@ -379,5 +395,5 @@ Vérifiez également la configuration de la vue de données pour chaque composan
 
 **Recommandations**
 
-* Ajustez le [ modèle d’attribution et l’expiration ](/help/data-views/component-settings/persistence.md) sur cette dimension pour aligner le nom et le comportement. Par exemple, une dimension de champ dérivé nommée `Original Source` doit utiliser l’attribution Première touche avec l’expiration définie sur Personne.
+* Ajustez le [&#x200B; modèle d’attribution et l’expiration &#x200B;](/help/data-views/component-settings/persistence.md) sur cette dimension pour aligner le nom et le comportement. Par exemple, une dimension de champ dérivé nommée `Original Source` doit utiliser l’attribution Première touche avec l’expiration définie sur Personne.
 * Ajustez les paramètres **[!UICONTROL Modèle d’affectation]** et **[!UICONTROL Expiration]** dans les paramètres [Persistance](/help/data-views/component-settings/persistence.md) de la dimension pour aligner le nom et le comportement. Par exemple, `Original Source` devez définir le **[!UICONTROL Modèle d’affectation]** sur **[!UICONTROL Original]** avec **[!UICONTROL Expiration]** défini sur **[!UICONTROL Personne]**.
