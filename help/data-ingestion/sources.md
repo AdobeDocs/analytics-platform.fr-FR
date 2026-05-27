@@ -6,23 +6,11 @@ feature: Basics
 exl-id: 813d3213-86b3-431a-821c-174e5e36d032
 role: Admin
 TQID: https://experienceleague.adobe.com/tkPB8BHD6t3LiIhTiLyoQYH-Ucknl1YyUm5MOcxujBY
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: c38ed341-fab2-46df-9d72-88d8166edebb
-  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: c38ed341-fab2-46df-9d72-88d8166edebbid: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: e1e0219c-f879-479f-8427-888ed2a6e9c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 2150
@@ -89,7 +77,7 @@ Configurer le schéma :
 
    1. Saisissez un **[!UICONTROL nom d’affichage de schéma]** pour votre schéma et (facultatif) une **[!UICONTROL description]**.
 
-      ![Fenêtre Créer un schéma présentant les champs pour nommer votre schéma &#x200B;](./assets/create-pr-schema-wizard-step-2.png)
+      ![Fenêtre Créer un schéma présentant les champs pour nommer votre schéma ](./assets/create-pr-schema-wizard-step-2.png)
 
    1. Sélectionnez **[!UICONTROL Terminer]**.
 
@@ -194,11 +182,11 @@ En fonction de la source des données de fidélité, choisissez le connecteur so
 
 Vous pouvez ingérer des données provenant de diverses sources. Voici quelques-unes des nombreuses sources disponibles :
 
-- Applications Adobe (les connecteurs source incluent [Adobe Analytics](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/analytics), [Adobe Audience Manager](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/audience-manager), etc.).
+- Applications Adobe (les connecteurs source incluent [Adobe Analytics](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/analytics), [Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/audience-manager), etc.).
 
-- Stockage dans le cloud (les connecteurs source comprennent [Amazon S3](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/cloud-storage/s3), [Azure Blob](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/cloud-storage/blob), etc.)
+- Stockage dans le cloud (les connecteurs source comprennent [Amazon S3](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/s3), [Azure Blob](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/blob), etc.)
 
-- Bases de données (les connecteurs source comprennent [&#128279;](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/databases/snowflake), [Microsoft SQL Server](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/databases/sql-server), etc.)
+- Bases de données (les connecteurs source comprennent [](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake), [Microsoft SQL Server](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/sql-server), etc.)
 
 Configurer un connecteur source :
 
@@ -230,9 +218,9 @@ Configurer un connecteur source :
 
 Consultez [Ingérer et utiliser des données à partir d’Adobe Analytics classique](./analytics.md) pour plus d’informations sur l’utilisation du connecteur source Adobe Analytics.
 
-Consultez [&#x200B; Ingérer et utiliser des données de flux &#x200B;](./streaming.md) pour plus d’informations sur l’utilisation du connecteur source d’API HTTP.
+Consultez [ Ingérer et utiliser des données de flux ](./streaming.md) pour plus d’informations sur l’utilisation du connecteur source d’API HTTP.
 
-Consultez [Présentation des connecteurs source](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=fr#terms-and-conditions) pour obtenir un aperçu des connecteurs source, ainsi que des liens vers des informations supplémentaires pour chaque connecteur.
+Consultez [Présentation des connecteurs source](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html#terms-and-conditions) pour obtenir un aperçu des connecteurs source, ainsi que des liens vers des informations supplémentaires pour chaque connecteur.
 
 
 ## Configurer une connexion
