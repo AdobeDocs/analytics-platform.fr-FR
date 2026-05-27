@@ -6,11 +6,28 @@ hide: true
 exl-id: 81d6e79e-8324-4726-9a48-10177b0a91b1
 autotag-review: '2026-05-19T09:53:49.596Z'
 TQID: 'https://experienceleague.adobe.com/Yt2CmGRpO6s8natf9s-KLsMBKHc-qdSQHvi3UyPyLgg'
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: ae3aff40-b2f6-4df1-8c01-0b0720d1510fid: b3197353-f189-4932-8378-3f3bc40e6071id: ce577701-5b9e-4fe4-8fa3-4eedea976da4id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5eid: eb00932f-4d46-46bc-b1d8-10de7588db8d
-subfeature_v2: id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d00e9f03-e50b-4162-b143-0c0817c937c2id: d3cdead0-685a-4489-9250-4bb709942f66id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: ae3aff40-b2f6-4df1-8c01-0b0720d1510f
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+subfeature_v2:
+  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 3912
@@ -157,7 +174,7 @@ Vous pouvez collecter ces données à l’aide de la chaîne de contexte [`highE
 * **Nom du navigateur** : `xdm.environment.browserDetails.userAgentClientHints.brand`
 * **Version du navigateur** : `xdm.environment.browserDetails.userAgentClientHints.version`
 
-Voir [ Indications du client de l’agent utilisateur](https://experienceleague.adobe.com/en/docs/experience-platform/collection/use-cases/client-hints) pour plus d’informations.
+Voir [&#x200B; Indications du client de l’agent utilisateur](https://experienceleague.adobe.com/en/docs/experience-platform/collection/use-cases/client-hints) pour plus d’informations.
 
 {{cja-df-ua}}
 
@@ -377,7 +394,7 @@ Customer Journey Analytics ne dispose pas d’un champ unique qui agit comme un 
 
 Indicateur signifiant que l’événement d’achat pour cet accès doit être ignoré, car il s’agit d’un double.
 
-Bien qu’il n’y ait pas de traduction directe de cette colonne de flux de données Analytics, sa fonctionnalité d’action pour dédupliquer les achats existe toujours. Si vous utilisez le groupe de champs [[!UICONTROL Détails ]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details), vous pouvez définir les paramètres du composant [Déduplication des mesures](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication) où l’**[!UICONTROL ID de déduplication]** est `xdm.commerce.purchases.id`.
+Bien qu’il n’y ait pas de traduction directe de cette colonne de flux de données Analytics, sa fonctionnalité d’action pour dédupliquer les achats existe toujours. Si vous utilisez le groupe de champs [[!UICONTROL Détails &#x200B;]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details), vous pouvez définir les paramètres du composant [Déduplication des mesures](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication) où l’**[!UICONTROL ID de déduplication]** est `xdm.commerce.purchases.id`.
 
 Si une traduction directe est requise lorsque vous souhaitez un indicateur pour les achats en double, vous pouvez utiliser un [champ dérivé](/help/data-views/derived-fields/derived-fields.md) à l’aide de la fonction **Dédupliquer** dans l’ensemble de règles.
 
@@ -412,7 +429,7 @@ Cette colonne correspond probablement à des dizaines de mesures distinctes, sel
 
 {{cja-df-post}}
 
-Si votre schéma utilise le groupe de champs [[!UICONTROL Détails ]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details), certaines mesures peuvent directement correspondre aux champs XDM suivants :
+Si votre schéma utilise le groupe de champs [[!UICONTROL Détails &#x200B;]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details), certaines mesures peuvent directement correspondre aux champs XDM suivants :
 
 * **Passages en caisse** : `xdm.commerce.checkouts.value`
 * **Ajouts au panier** : `xdm.commerce.productListAdds.value`
@@ -425,7 +442,7 @@ Si votre schéma utilise le groupe de champs [[!UICONTROL Détails ]](https://ex
 Certaines mesures peuvent utiliser la sérialisation des événements, ce qui permet à Adobe Analytics de contrôler entièrement la déduplication. Vous pouvez utiliser le paramètre de composant [Déduplication des mesures](/help/data-views/component-settings/metric-deduplication.md) pour atteindre la parité de déduplication.
 
 * Si votre mesure déduplique par visite dans Adobe Analytics, vous pouvez définir la portée de la déduplication sur session dans les paramètres des composants de cette mesure.
-* Si votre mesure se déduplique par identifiant d’événement dans Adobe Analytics, il est probable que l’objet XDM de cette mesure contienne un champ `value` et `id`. Si votre schéma utilise le groupe de champs [[!UICONTROL Détails ]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details), ces mesures résident probablement dans ces champs XDM, que vous pouvez définir dans le champ **[!UICONTROL Identifiant de déduplication]** dans les paramètres des composants de la mesure :
+* Si votre mesure se déduplique par identifiant d’événement dans Adobe Analytics, il est probable que l’objet XDM de cette mesure contienne un champ `value` et `id`. Si votre schéma utilise le groupe de champs [[!UICONTROL Détails &#x200B;]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details), ces mesures résident probablement dans ces champs XDM, que vous pouvez définir dans le champ **[!UICONTROL Identifiant de déduplication]** dans les paramètres des composants de la mesure :
 
    * **Passages en caisse** : `xdm.commerce.checkouts.id`
    * **Ajouts au panier** : `xdm.commerce.productListAdds.id`
@@ -444,7 +461,7 @@ Indicateur qui détermine si l’accès est exclu de la création de rapports. L
 
 Customer Journey Analytics ne respecte pas les « accès exclus » prêts à l’emploi. Cependant, vous pouvez recréer cette fonctionnalité si vous disposez d’un champ XDM qui signale certains accès à exclure :
 
-1. Assurez-vous que le champ XDM qui signale les accès exclus est inclus en tant que composant (dimension ou mesure, selon la configuration de cet indicateur). L’option [ Masquer le composant dans les rapports ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/overview) est probablement bénéfique pour ce champ.
+1. Assurez-vous que le champ XDM qui signale les accès exclus est inclus en tant que composant (dimension ou mesure, selon la configuration de cet indicateur). L’option [&#x200B; Masquer le composant dans les rapports &#x200B;](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/overview) est probablement bénéfique pour ce champ.
 1. Dans [Paramètres de la vue de données](/help/data-views/session-settings.md), sélectionnez le menu déroulant **[!UICONTROL Ajouter un segment]** et sélectionnez **[!UICONTROL Créer un segment]**.
 1. Créez un segment qui exclut tous les événements où votre composant d’accès d’exclusion existe ou contient des valeurs que vous souhaitez exclure.
 1. Sélectionnez **[!UICONTROL Enregistrer]** à la fois sur le segment et sur la vue de données.
