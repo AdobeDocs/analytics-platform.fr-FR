@@ -7,11 +7,17 @@ role: User
 exl-id: d122a415-fb22-48f7-9377-8349dba274e5
 autotag-review: '2026-05-19T09:45:42.786Z'
 TQID: 'https://experienceleague.adobe.com/snwj7xbkzdBzHE073kpVyfNQ0iWxHBrxhm58NJOiwy8'
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: b3197353-f189-4932-8378-3f3bc40e6071
-subfeature_v2: id: f24857a4-4b64-4b25-b237-d43026362144
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: d00e9f03-e50b-4162-b143-0c0817c937c2
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2:
+  - id: f24857a4-4b64-4b25-b237-d43026362144
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: 65ddb8af8bf2fdb45eaaef0ad5d824314c35087e
 workflow-type: tm+mt
 source-wordcount: 1963
@@ -33,7 +39,7 @@ Les instructions se rapportent à un exemple d’environnement avec les objets s
 * Mesures : **[!UICONTROL Chiffre d’affaires d’achat]** 🅓 et **[!UICONTROL Achats]** 🅔.
 * Filtre : **[!UICONTROL Produits de la pêche]** 🅕.
 
-![Configuration de base de ](../assets/cja-base.png)
+![Configuration de base de &#x200B;](../assets/cja-base.png)
 
 Lorsque vous parcourez les cas d’utilisation, remplacez ces exemples d’objets par des objets appropriés à votre environnement spécifique.
 
@@ -68,16 +74,16 @@ Lorsque vous parcourez les cas d’utilisation, remplacez ces exemples d’objet
       1. Sélectionnez **[!UICONTROL OK]**.
    1. Dans la boîte de dialogue **[!UICONTROL Base de données PostgreSQL]** - **[!UICONTROL Base de données]** :
       ![Utilisateur et mot de passe du bureau PowerBI](../assets/powerbi-userpassword.png)
-      1. Utilisez ![Copier](/help/assets/icons/Copy.svg) pour copier les valeurs **[!UICONTROL Nom d’utilisateur]** et **[!UICONTROL Mot de passe]** à partir du panneau Experience Platform **[!UICONTROL Requête]** **[!UICONTROL Informations d’identification arrivant à expiration]** dans les champs **[!UICONTROL Nom d’utilisateur]** et **[!UICONTROL Mot de passe]**. Si vous utilisez des informations d’identification [ non expirantes](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect), utilisez le mot de passe correspondant.
+      1. Utilisez ![Copier](/help/assets/icons/Copy.svg) pour copier les valeurs **[!UICONTROL Nom d’utilisateur]** et **[!UICONTROL Mot de passe]** à partir du panneau Experience Platform **[!UICONTROL Requête]** **[!UICONTROL Informations d’identification arrivant à expiration]** dans les champs **[!UICONTROL Nom d’utilisateur]** et **[!UICONTROL Mot de passe]**. Si vous utilisez des informations d’identification [&#x200B; non expirantes](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect), utilisez le mot de passe correspondant.
       1. Assurez-vous que le menu déroulant **[!UICONTROL Sélectionner le niveau auquel appliquer ces paramètres]** est défini sur le **[!UICONTROL Serveur]** que vous avez défini précédemment.
       1. Sélectionnez **[!UICONTROL Connexion]**.
    1. Dans la boîte de dialogue **[!UICONTROL Navigateur]**, les vues de données sont récupérées. Cette récupération peut prendre un certain temps. Une fois la récupération effectuée, les éléments suivants s’affichent dans Power BI Desktop.
-      ![Données de chargement de bureau ](../assets/powerbi-navigator-load.png)
+      ![Données de chargement de bureau &#x200B;](../assets/powerbi-navigator-load.png)
       1. Sélectionnez **[!UICONTROL public.cc_data_view]** dans la liste du panneau de gauche.
       1. Vous disposez de deux options :
          1. Sélectionnez **[!UICONTROL Charger]** pour continuer et terminer la configuration.
          1. Sélectionnez **[!UICONTROL Transformer les données]**. Une boîte de dialogue s’affiche, dans laquelle vous pouvez éventuellement appliquer des transformations dans le cadre de la configuration.
-            ![Données de transformation de bureau ](../assets/powerbi-transform-data.png)
+            ![Données de transformation de bureau &#x200B;](../assets/powerbi-transform-data.png)
             * Sélectionnez **[!UICONTROL Fermer et appliquer]**.
    1. Au bout d’un certain temps, **[!UICONTROL public.cc_data_view]** s’affiche dans le volet **[!UICONTROL Data]**. Sélectionnez ![ChevronRight](/help/assets/icons/ChevronRight.svg) pour afficher les dimensions et les mesures.
       ![Données Du Serveur De Bureau Power BI Chargées](../assets/powerbi-navigator-loaded.png)
@@ -123,12 +129,12 @@ Power BI Desktop prend en charge les scénarios suivants pour le paramètre `FLA
       1. Utilisez ![Copier](/help/assets/icons/Copy.svg) pour copier et coller la **[!UICONTROL Base de données]** du panneau **[!UICONTROL Requête]** **[!UICONTROL Informations d’identification arrivant à expiration]** d’Experience Platform vers la **[!UICONTROL Base de données]**. Ajoutez `%3FFLATTEN` à la valeur que vous collez. Par exemple : `prod:cja%3FFLATTEN`.
       1. Sélectionnez **[!UICONTROL Nom d’utilisateur et mot de passe]** dans le menu déroulant **[!UICONTROL Authentification]**.
       1. Utilisez ![Copier](/help/assets/icons/Copy.svg) pour copier et coller le **[!UICONTROL Nom d’utilisateur]** du panneau **[!UICONTROL Requête]** **[!UICONTROL Informations d’identification arrivant à expiration]** d’Experience Platform dans le **[!UICONTROL Nom d’utilisateur]**.
-      1. Utilisez ![Copier](/help/assets/icons/Copy.svg) pour copier et coller le **[!UICONTROL Mot de passe]** du panneau Experience Platform **[!UICONTROL Requête]** **[!UICONTROL Informations d’identification arrivant à expiration]** dans le **[!UICONTROL Mot de passe]**. Si vous utilisez des informations d’identification [ non expirantes](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect), utilisez le mot de passe correspondant.
+      1. Utilisez ![Copier](/help/assets/icons/Copy.svg) pour copier et coller le **[!UICONTROL Mot de passe]** du panneau Experience Platform **[!UICONTROL Requête]** **[!UICONTROL Informations d’identification arrivant à expiration]** dans le **[!UICONTROL Mot de passe]**. Si vous utilisez des informations d’identification [&#x200B; non expirantes](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect), utilisez le mot de passe correspondant.
       1. Assurez-vous que la case **[!UICONTROL Exiger SSL]** est cochée.
       1. Sélectionnez **[!UICONTROL Se connecter]**.
 
       Une boîte de dialogue **[!UICONTROL Progression de la demande]** s&#39;affiche alors que Tableau Desktop valide la connexion.
-   1. Dans la fenêtre principale, comme dans la page Source de données ]**, dans le volet de gauche :**[!UICONTROL 
+   1. Dans la fenêtre principale, comme dans la page Source de données **, dans le volet de gauche :**
       * Nom de la connexion, sous **[!UICONTROL Connexions]**.
       * Nom de la base de données, sous **[!UICONTROL Base de données]**.
       * Liste des tableaux, sous **[!UICONTROL Tableau]**.
@@ -188,7 +194,7 @@ Tableau Desktop prend en charge les scénarios suivants pour le paramètre `FLAT
       1. Sélectionnez **[!UICONTROL Tester]** pour tester la connexion. Une bannière devrait s’afficher en haut de l’écran avec un message comme **[!UICONTROL Succès, peut connecter JDBC ...]**.
       1. Sélectionnez **[!UICONTROL Connexion]** pour établir et enregistrer la connexion.
    1. La nouvelle connexion s’affiche dans l’interface **[!UICONTROL Connexions]**.
-   1. Sélectionnez ←**dans**[!UICONTROL  Admin ]**pour accéder à la navigation principale dans le rail de gauche.**
+   1. Sélectionnez ←**dans**&#x200B;[!UICONTROL &#x200B; Admin &#x200B;]&#x200B;**pour accéder à la navigation principale dans le rail de gauche.**
    1. Sélectionnez **[!UICONTROL Développer]**.
    1. Sélectionnez **[!UICONTROL Projets]**.
    1. Sélectionnez **[!UICONTROL Nouveau modèle]** dans les projets LookML.
