@@ -18,9 +18,9 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: 65ddb8af8bf2fdb45eaaef0ad5d824314c35087e
 workflow-type: tm+mt
-source-wordcount: 2021
+source-wordcount: 1963
 ht-degree: 11%
 
 ---
@@ -355,7 +355,7 @@ Le notebook Jupyter prend en charge les scénarios suivants pour le paramètre `
 
 1. Démarrez RStudio.
 1. Créez un nouveau fichier R Markdown ou téléchargez [cet exemple de fichier R Markdown](../assets/BI-Extension.Rmd.zip).
-1. Dans votre premier bloc, saisissez les instructions suivantes entre ` ` ``{r} ` et ` `` ` `. Utilisez ![Copier](/help/assets/icons/Copy.svg) pour copier et coller des valeurs du panneau Experience Platform **[!UICONTROL Requête]** **[!UICONTROL Informations d’identification arrivant à expiration]** dans les valeurs requises pour les différents paramètres, tels que `host`, `dbname` et `user`. Par exemple :
+1. Dans votre premier bloc, saisissez les instructions suivantes. Utilisez ![Copier](/help/assets/icons/Copy.svg) pour copier et coller des valeurs du panneau Experience Platform **[!UICONTROL Requête]** **[!UICONTROL Informations d’identification arrivant à expiration]** dans les valeurs requises pour les différents paramètres, tels que `host`, `dbname` et `user`. Par exemple :
 
    ```R
    library(rstudioapi)
@@ -376,7 +376,7 @@ Le notebook Jupyter prend en charge les scénarios suivants pour le paramètre `
 
    ![Étape 1 de la configuration RStudio](../assets/rstudio-config-step1.png)
 
-1. Créez un bloc et saisissez les instructions suivantes entre ` ` `` {r} ` et ` `` ` `.
+1. Créez un bloc et saisissez les instructions suivantes.
 
    ```R
    con <- dbConnect(
@@ -393,7 +393,7 @@ Le notebook Jupyter prend en charge les scénarios suivants pour le paramètre `
 1. Exécutez le bloc. Vous ne devriez voir aucune sortie si la connexion est réussie.
 
 
-1. Créez un bloc et saisissez les instructions suivantes entre ` ` `` {r} ` et ` `` ` `.
+1. Créez un bloc et saisissez les instructions suivantes.
 
    ```R
    views <- dbListTables(con)
@@ -403,7 +403,7 @@ Le notebook Jupyter prend en charge les scénarios suivants pour le paramètre `
 1. Exécutez le bloc. Vous devriez voir `character(0)` comme seule sortie.
 
 
-1. Créez un bloc et saisissez les instructions suivantes entre ` ` `` {r} ` et ` `` ` `.
+1. Créez un bloc et saisissez les instructions suivantes.
 
    ```R
    glimpse(dv)

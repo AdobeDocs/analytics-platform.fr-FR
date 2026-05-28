@@ -20,9 +20,9 @@ topic_v2:
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: df1ab1af7757ef012b4c233e6206ee6c6cde6686
 workflow-type: tm+mt
-source-wordcount: 832
+source-wordcount: 889
 ht-degree: 1%
 
 ---
@@ -112,3 +112,7 @@ Les considérations suivantes s’appliquent aux clés et champs système :
 
 * La clé primaire, le descripteur de version et le descripteur d’horodatage doivent être des champs de niveau racine dans le schéma XDM relationnel. Utilisez le [mappage de champs](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema) lors de l’ingestion pour prendre en charge cette exigence.
 * Vous pouvez omettre les champs sources appropriés pendant la [phase de mappage](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema).
+
+## Taille de lot des données en miroir
+
+Pour tout jeu de données mis en miroir configuré dans le cadre d’une connexion, vous devez vous assurer que chacun des lots à ingérer pour ingérer des données pour le jeu de données mis en miroir ne dépasse pas 100GB. Pour plus d’informations, consultez la section [&#x200B; Mécanismes de sécurisation pour l’ingestion par lots &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/ingestion/guardrails#guardrails-for-batch-ingestion){target="_blank"}.
