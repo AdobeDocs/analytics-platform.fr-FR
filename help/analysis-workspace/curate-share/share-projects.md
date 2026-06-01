@@ -28,7 +28,7 @@ topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 0145475e18cfbc3ae3a83e5e3838cdec02b57bda
 workflow-type: tm+mt
-source-wordcount: 2181
+source-wordcount: 2168
 ht-degree: 89%
 
 ---
@@ -102,8 +102,8 @@ Pour partager un rôle de projet spécifique avec des utilisateurs et utilisatri
 
    Ou
 
-   Pour partager un projet individuel uniquement, vous pouvez ouvrir le projet que vous souhaitez partager, puis sélectionner **[!UICONTROL Partager]** > **[!UICONTROL Partager avec les utilisateurs et utilisatrices Workspace]**.
-Si des modifications n’ont pas enregistrées, on vous invite d’abord à enregistrer votre projet.
+   Pour partager un projet individuel uniquement, vous pouvez ouvrir le projet que vous souhaitez partager, puis sélectionner **[!UICONTROL Partager]** > **[!UICONTROL Partager avec les utilisateurs de Workspace]**.
+Si des modifications ne sont pas enregistrées, on vous invitera d’abord à enregistrer votre projet.
 
    La boîte de dialogue Partage de projets s’affiche. Les sections [!UICONTROL **Partager par lien**] et [!UICONTROL **Paramètres**] de la boîte de dialogue ne sont visibles que lors du partage d’un seul projet.
 
@@ -152,8 +152,8 @@ Pour partager le lien du projet avec les utilisateurs et utilisatrices de votre 
 
 >[!CONTEXTUALHELP]
 >id="workspace_share_with_anyone_require_aec_authentication"
->title="Exiger une authentification CX Enterprise"
->abstract="Votre entreprise exige que les utilisateurs se connectent à CX Enterprise pour utiliser ce lien."
+>title="Exiger une authentification CX Enterprise"
+>abstract="Votre organisation exige que les utilisateurs et utilisatrices se connectent à CX Enterprise pour utiliser ce lien."
 
 
 Vous pouvez accorder un [accès en lecture seule](/help/analysis-workspace/curate-share/view-only-projects.md) vers les projets Analysis Workspace à des personnes qui n’ont pas accès à Customer Journey Analytics. Cet accès accordé peut inclure ce qui suit :
