@@ -6,31 +6,15 @@ feature: Use Cases
 exl-id: ef8a2d08-848b-4072-b400-7b24955a085b
 role: Admin
 TQID: https://experienceleague.adobe.com/UXeVx5LF0ww0guz-62swqmGapSfjiTduYjojcZqqIYQ
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-  - id: f2ef16dc-055a-4bb7-baa5-7039653f3966
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: f2ef16dc-055a-4bb7-baa5-7039653f3966
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: d00e9f03-e50b-4162-b143-0c0817c937c2id: e0eb8757-182f-49f3-94a4-1587d16f5094id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: e430f26e2b6357a288adb4389a266f26acab68c4
 workflow-type: tm+mt
-source-wordcount: 1129
-ht-degree: 14%
+source-wordcount: 1448
+ht-degree: 8%
 
 ---
 
@@ -51,38 +35,76 @@ Voir [comparaison des rapports](#reporting-comparison) pour plus d’information
 >
 
 
-Pour créer des rapports sur les données Marketo Engage dans Customer Journey Analytics :
+Pour créer des rapports sur les données Marketo Engage dans Customer Journey Analytics, procédez comme suit :
 
-+++ &#x200B;1. Mapper les champs de données sources Marketo à leurs cibles XDM
++++Sélectionner la stratégie d’ID
 
-Mappez les objets [Personnes](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) et [Activités](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) à leurs champs cibles de schéma XDM respectifs.
+Si vous souhaitez ingérer des données d’activité Marketo dans Customer Journey Analytics, vous devez sélectionner une stratégie d’identifiant appropriée pour vous assurer que les données Marketo peuvent être liées aux données Customer Journey Analytics.
+
+Les données Marketo ne contiennent pas d’ECID de manière native, mais le champ ECID peut être ajouté en tant que champ personnalisé collecté avec la bibliothèque `munchkin.js`. Cet ajout crée un identifiant partagé entre Marketo et les données web Customer Parcours Analytics existantes.
+
+Pour lier les données Marketo et Customer Journey Analytics, utilisez le [groupement basé sur les graphiques](/help/stitching/gbs.md) sur les jeux de données appropriés. Vous pouvez utiliser plusieurs identifiants disponibles en fonction de votre implémentation :
+
+* ECID, fourni par Experience Platform Identity Service
+* Courriel
+* Munchkin ID, fourni par Marketo Engage
+* ID de revendeur
+* Dunn &amp; Bradstreet Duns\#
+* ID Demandbase
+* (potentiellement d’autres)
+
+L’assemblage basé sur les graphiques offre les avantages suivants :
+
+* Conserve un identifiant persistant sur les événements web.
+* Utilise le graphique d’identités pour résoudre les identités connues (comme les e-mails) si possible.
+* S’il n’existe aucune correspondance déterministe, le groupement basé sur les graphiques revient à l’identifiant persistant, au lieu de supprimer l’événement.
+
+L’assemblage basé sur les graphiques est une solution viable pour lier les données Marketo et Customer Journey Analytics, car :
+
+* Les données d’événement web possèdent un identifiant persistant sur chaque ligne (par exemple, ECID).
+* Les données Marketo comportent des identifiants fiables dans les données avec l’identifiant Munckin, l’ECID et l’adresse e-mail.
+* L’assemblage basé sur les graphiques relie de manière déterministe l’ECID à l’ID Munchkin, à l’adresse e-mail ou à tout autre identifiant disponible dans les données Marketo.
+* L’assemblage basé sur des graphiques utilise les règles de liaison et les espaces de noms du graphique d’identités configurés explicitement.
+
+Pour vérifier cette stratégie d’ID, vous devez exécuter un pilote de groupement contrôlé basé sur les graphiques.
+
+1. Ajoutez ECID en tant que champ personnalisé dans Marketo et ajoutez le champ personnalisé au code JavaScript côté client munckin.js pour la collecte de données Marketo Engage.
+1. Configurez une connexion temporaire au Parcours client qui comprend au moins un jeu de données Marketo et un jeu de données d’événement web.
+1. Définissez une plage de données étroite pour importer une quantité limitée mais représentable de données.
+1. Vérifier l’assemblage à travers la configuration d’une vue de données et de rapports dans Workspace. Pour plus d’informations, reportez-vous aux étapes ci-dessous.
 
 +++
 
-+++ &#x200B;2. Ingestion de données Marketo dans Adobe Experience Platform
++++Mapper les champs de données sources Marketo à leurs cibles XDM
 
-Utilisez le [connecteur Marketo Engage](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo) pour importer les données de Marketo dans Experience Platform et les tenir à jour à l’aide des applications connectées à Platform.
+Mappez les objets [Personnes](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) et [Activités](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) à leurs champs cibles de schéma XDM respectifs.
 
 +++
 
-+++ &#x200B;3. Configurer une connexion à ce jeu de données dans Customer Journey Analytics
++++Ingestion de données Marketo dans Adobe Experience Platform
+
+Utilisez le connecteur [](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo) pour importer les données de Marketo dans Experience Platform et les tenir à jour à l’aide des applications Experience Platform.
+
++++
+
++++ Configurer une connexion à ce jeu de données dans Customer Journey Analytics
 
 Pour générer des rapports sur des jeux de données Experience Platform, vous devez d’abord établir une connexion entre les jeux de données dans Experience Platform et Customer Journey Analytics. Voir [Créer ou modifier une connexion](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-connections/create-connection).
 
 +++
 
 
-+++ &#x200B;4. Créer une ou plusieurs vues de données
++++Créer une ou plusieurs vues de données
 
 Une [vue de données](/help/data-views/data-views.md) est un conteneur spécifique à Customer Journey Analytics qui vous permet de déterminer comment interpréter les données d’une connexion. Elle spécifie toutes les dimensions et mesures disponibles dans Analysis Workspace, soit dans le cas qui nous intéresse, les mesures et dimensions spécifiques à Marketo. Elle spécifie également les colonnes à partir desquelles ces dimensions et mesures obtiennent leurs données. Les vues de données sont définies en vue de la création de comptes rendus des performances dans Analysis Workspace.
 
 +++ 
 
-+++ &#x200B;5. Rapport dans Analysis Workspace
++++Rapport dans Analysis Workspace
 
 Voici un cas pratique que vous pouvez explorer : Combien de visites de pages web par prospect avez-vous eues en avril-juin 2020 ?
 
-1. Ouvrez [Analytics Workspace](/help/analysis-workspace/home.md) et créez un projet.
+1. Ouvrez [Analytics Workspace](/help/analysis-workspace/home.md) et créez un projet.
 Les clients disposant de la plateforme de données clients B2B/B2P peuvent effectuer une analyse de type B2C dans Customer Journey Analytics. Les objets B2B ne sont pas encore disponibles.
 
 1. Créez un [segment](/help/components/segments/seg-create.md) pour les pages vues web comme suit - Type d’événement = web.webpagedetails.pageViews :
