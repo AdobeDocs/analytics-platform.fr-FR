@@ -93,13 +93,13 @@ Pour vérifier cette stratégie d’ID, vous devez exécuter un pilote de groupe
 
 +++Mapper les champs de données sources Marketo à leurs cibles XDM
 
-Mappez les objets [Personnes](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) et [Activités](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) à leurs champs cibles de schéma XDM respectifs.
+Mappez les objets [Personnes](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) et [Activités](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) à leurs champs cibles de schéma XDM respectifs.
 
 +++
 
 +++Ingestion de données Marketo dans Adobe Experience Platform
 
-Utilisez le connecteur [&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo) pour importer les données de Marketo dans Experience Platform et les tenir à jour à l’aide des applications Experience Platform.
+Utilisez le connecteur [&#128279;](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo) pour importer les données de Marketo dans Experience Platform et les tenir à jour à l’aide des applications Experience Platform.
 
 +++
 
