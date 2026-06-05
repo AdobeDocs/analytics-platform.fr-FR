@@ -2,9 +2,9 @@
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 4fc2712ae694afa75141ef32dea3114d297a34b8
+source-git-commit: 0fd598843588818965d0e0cb80a9e653271efa8a
 workflow-type: tm+mt
-source-wordcount: '1431'
+source-wordcount: '1437'
 ht-degree: 92%
 
 ---
@@ -454,6 +454,10 @@ ht-degree: 92%
    + [Valider le groupement](/help/stitching/validate.md)
    + [Questions fréquentes](/help/stitching/faq.md)
 
++ Rapports sur la population totale {#tpr}
+   + {hide-from-toc}[Vue d’ensemble](/help/tpr/tpr.md)
+   + {hide-from-toc}[Recherches partagées](/help/tpr/shared-lookups.md)
+
 + Intégrations Adobe {#integrations}
    + [Vue d’ensemble](/help/integrations/overview.md)
    + [Intégrer Adobe Analytics](/help/integrations/aa.md)
@@ -537,7 +541,7 @@ ht-degree: 92%
          + [Lier des lectures de session](/help/use-cases/third-party/quantum-metric/tie-session-replays.md)
          + [Utiliser des cartes thermiques](/help/use-cases/third-party/quantum-metric/heatmap.md)
          + [Ajouter des événements de friction](/help/use-cases/third-party/quantum-metric/friction-events.md)
-         + {hide-from-toc}[Connecteur &#x200B;](/help/use-cases/third-party/quantum-metric/source-connector.md)
+         + {hide-from-toc}[Connecteur ](/help/use-cases/third-party/quantum-metric/source-connector.md)
 
 + Labs {#labs}
    + [Guide d’utilisation de Labs](../labs/labs.md)
