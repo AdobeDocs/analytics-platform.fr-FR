@@ -23,10 +23,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: dcc1be6e0c0e0dab19b4067232e48dc175011ed1
 workflow-type: tm+mt
-source-wordcount: 3784
-ht-degree: 53%
+source-wordcount: 4127
+ht-degree: 48%
 
 ---
 
@@ -173,19 +173,19 @@ Les groupes de libellés de contexte suivants sont disponibles, chacun avec une 
 
 | Nom | Description |
 |------|-------------|
-| Identifiant de contenu | Identifiant du contenu. |
-| Temps passé sur le contenu | Durée du contenu. |
-| Épisode | Épisode. |
-| Type d’événement | Type d’événement. |
-| Passé sur le média | Durée du média. |
-| Saison | Saison. |
-| Secondes depuis le dernier appel | Secondes Depuis Le Dernier Appel. |
-| Programme | Afficher. |
-| Temps jusqu’au début | Heure de début. |
-| Durée totale de la mémoire tampon | Durée totale de la mémoire tampon. |
-| Durée totale de pause | Durée totale de pause. |
-| Durée de la vidéo | Durée de la vidéo. |
-| Nom de la vidéo | Nom de la vidéo. |
+| [Identifiant du contenu](https://experienceleague.adobe.com/fr/docs/media-analytics/using/reporting/dimensions/content) | Identifiant unique du contenu en cours de lecture. Active le bouton radio **[!UICONTROL ID de contenu]** dans le panneau [Audience moyenne par minute de média](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
+| [Durée du contenu](https://experienceleague.adobe.com/fr/docs/media-analytics/using/reporting/metrics/content-time-spent) | Durée de visionnage du contenu, hors publicités. alimente le paramètre avancé **[!UICONTROL Temps passé sur le contenu]** dans le panneau [Audience moyenne par minute de média](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
+| [Épisode](https://experienceleague.adobe.com/fr/docs/media-analytics/using/reporting/dimensions/episode) | Numéro d’épisode dans une série. Active le filtrage par épisode dans le panneau [&#x200B; Audience moyenne par minute de média &#x200B;](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
+| Type d’événement | Type d’événement multimédia, par exemple `media.play` ou `media.ping`. Obligatoire pour que Customer Journey Analytics calcule la mesure dérivée [Visionneuses simultanées de médias](/help/analysis-workspace/c-panels/media-concurrent-viewers.md). |
+| [Durée des médias](https://experienceleague.adobe.com/fr/docs/media-analytics/using/reporting/metrics/media-time-spent) | Durée totale incluant le contenu, les publicités, la mise en mémoire tampon et la mise en pause. alimente le panneau [Temps de lecture de média](/help/analysis-workspace/c-panels/media-playback-time-spent.md) et le paramètre avancé **[!UICONTROL Temps de média]** dans le panneau [Audience moyenne par minute de média](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
+| [&#x200B; Saison &#x200B;](https://experienceleague.adobe.com/fr/docs/media-analytics/using/reporting/dimensions/season) | Numéro de saison dans une série. Active le filtrage par saison dans le panneau [&#x200B; Audience moyenne par minute de média &#x200B;](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
+| Secondes depuis le dernier appel | Temps en secondes depuis le ping de pulsation précédent. Obligatoire pour que Customer Journey Analytics calcule la mesure dérivée [Observateurs simultanés de médias](/help/analysis-workspace/c-panels/media-concurrent-viewers.md) qui identifie quand une session est toujours active. |
+| [Afficher](https://experienceleague.adobe.com/fr/docs/media-analytics/using/reporting/dimensions/show) | Nom du programme ou de la série. Active le filtrage par émission dans le panneau [Audience moyenne par minute de média](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
+| [Heure de commencer](https://experienceleague.adobe.com/fr/docs/media-analytics/using/reporting/metrics/time-to-start) | Durée entre la sélection du contenu et le début de la lecture. Inclus dans le calcul [&#x200B; Temps de lecture de média &#x200B;](/help/analysis-workspace/c-panels/media-playback-time-spent.md). |
+| [Durée totale de la mémoire tampon](https://experienceleague.adobe.com/fr/docs/media-analytics/using/reporting/metrics/total-buffer-duration) | Temps total passé en mémoire tampon au cours d’une session. Inclus dans le calcul [&#x200B; Temps de lecture de média &#x200B;](/help/analysis-workspace/c-panels/media-playback-time-spent.md). |
+| [Durée totale de la pause](https://experienceleague.adobe.com/fr/docs/media-analytics/using/reporting/metrics/total-pause-duration) | Temps total passé en pause au cours d’une session. Inclus dans le calcul [&#x200B; Temps de lecture de média &#x200B;](/help/analysis-workspace/c-panels/media-playback-time-spent.md). |
+| [Durée de la vidéo](https://experienceleague.adobe.com/fr/docs/media-analytics/using/reporting/dimensions/content-length) | Durée du contenu en secondes. Obligatoire pour le mode **[!UICONTROL Contenu spécifique]** dans le panneau [Audience moyenne par minute de média](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
+| [Nom de la vidéo](https://experienceleague.adobe.com/fr/docs/media-analytics/using/reporting/dimensions/content-name) | Nom d’affichage du contenu. Active le bouton radio **[!UICONTROL Nom de la vidéo]** dans le panneau [Audience moyenne par minute de média](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
 
 +++
 
