@@ -24,7 +24,7 @@ topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 3b6264a1e159632e5a3246554c055488cfc6b39b
+source-git-commit: 632179a04d3fa05943ff1cc15c3670e7a81b3ea2
 workflow-type: tm+mt
 source-wordcount: 5863
 ht-degree: 93%
@@ -485,7 +485,7 @@ Lorsqu’une ligne de jeu de données est sélectionnée dans le tableau des jeu
 >abstract="Le nombre total de démarrages mensuels de médias disponibles au cours des 13 derniers mois pour le mois en cours, avec un pourcentage de changement par rapport au mois précédent.  Par exemple, le 1er février 2024, le nombre indique le nombre total de démarrages de média disponibles avec un horodatage d’événement compris entre janvier 2023 et janvier 2024."
 
 >[!CONTEXTUALHELP]
->id="△△ "
+>id="connections_breakdown_monthlymediastarts"
 >title="Démarrages mensuels des médias"
 >abstract="Les démarrages mensuels des médias sont des valeurs instantanées et non des totaux agrégés. Ces valeurs sont mises à jour de manière dynamique en fonction du dernier mois de la période sélectionnée. Si un client ou une cliente sélectionne Janvier - Mars, les valeurs reflètent l’instantané de mars."
 
