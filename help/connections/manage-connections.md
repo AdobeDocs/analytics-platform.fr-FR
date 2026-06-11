@@ -24,10 +24,10 @@ topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: 4882eaa340d1139b8f93affb645219c999d293f0
 workflow-type: tm+mt
-source-wordcount: 5351
-ht-degree: 97%
+source-wordcount: 5865
+ht-degree: 93%
 
 ---
 
@@ -295,7 +295,7 @@ Le tableau des jeux de données affiche les colonnes suivantes pour chaque jeu d
 | **[!UICONTROL Lots ajoutés]** | Nombre de lots qui ont été ajoutés à une connexion au cours de la période sélectionnée. |
 | **[!UICONTROL Dernier ajout]** | Date et heure du dernier lot ajouté à une connexion. |
 | **[!UICONTROL Type de source de données]** | Type de source. Vous définissez le type de source lorsque vous ajoutez un jeu de données à une connexion. |
-| **[!UICONTROL Type de jeu de données]** | [Type de jeu de données](create-connection.md#dataset-types). Le type peut être **[!UICONTROL Événement]**, **[!UICONTROL Profil]**, **[!UICONTROL Recherche]** ou **[!UICONTROL Synthèse]**. Un jeu de données ad hoc ou relationnel est identifié par **[!UICONTROL (ad hoc)]** ou **[!UICONTROL (relationnel)]**. Par exemple, **[!UICONTROL Événement (ad hoc)]** ou **[!UICONTROL Recherche (relationnelle)]**. |
+| **[!UICONTROL Type de jeu de données]** | [Type de jeu de données](create-connection.md#dataset-types). Le type peut être **[!UICONTROL Événement]**, **[!UICONTROL Profil]**, **[!UICONTROL Recherche]**, **[!UICONTROL Résumé]**. Un jeu de données ad hoc ou relationnel est identifié par **[!UICONTROL (ad hoc)]** ou **[!UICONTROL (relationnel)]**. Par exemple, **[!UICONTROL Événement (ad hoc)]** ou **[!UICONTROL Recherche (relationnelle)]**. |
 | **[!UICONTROL Assemblé]** | Si un jeu de données est [activé pour le groupement dans l’interface utilisateur de connexion](/help/stitching/use-stitching-ui.md), la valeur est **[!UICONTROL true]**. Sinon, la valeur est **[!UICONTROL false]**. Les jeux de données groupés qui sont le résultat de la procédure [requête d’assemblage](/help/stitching//use-stitching.md) ne sont pas identifiés comme groupés dans ce tableau et ont par défaut une valeur de **[!UICONTROL false]**. |
 | **[!UICONTROL Schéma]** | Schéma Experience Platform sur lequel est basé ce jeu de données. |
 | **[!UICONTROL Importer de nouvelles données]** | Statut de l’import des nouvelles données pour le jeu de données : <p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _ activés]**&#x200B;si le jeu de données est configuré pour importer de nouvelles données, et<p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _x désactivés_]** si le jeu de données est configuré pour ne pas importer de nouvelles données. |
@@ -325,7 +325,7 @@ Lorsqu’aucun jeu de données individuel n’est sélectionné dans le tableau 
 | [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Conteneurs &#x200B;]** | Conteneurs configurés pour la connexion. |
 | **[!UICONTROL Vues de données utilisant la connexion]** | Vues de données qui utilisent cette connexion. |
 | **[!UICONTROL Importer de nouvelles données]** | Statut de l’import de nouvelles données pour les jeux de données : <p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _activés]**&#x200B;pour le nombre de jeux de données configurés pour importer de nouvelles données, et<p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _x désactivés_]** pour le nombre de jeux de données pour lesquels le nouvel import de données est désactivé. |
-| **[!UICONTROL Renvoyer les données]** | Statut des données de renvoi pour les jeux de données.<p>![Statut rouge](assets/status-red.svg) **[!UICONTROL _x _renvois ont échoué]**&#x200B;pour le nombre de renvois ayant échoué dans les jeux de données,<p>![Statut rouge](assets/status-orange.svg) **[!UICONTROL _x _renvois en cours de traitement]**&#x200B;pour le nombre de renvois en cours de traitement dans les jeux de données,<p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _ renvois terminés]**&#x200B;pour le nombre de renvois terminés pour les jeux de données, et<p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _Désactivé_]** au cas où aucun renvoi n’est défini pour les jeux de données dans la connexion. |
+| **[!UICONTROL Renvoyer les données]** | Statut des données de renvoi pour les jeux de données.<p>![Statut rouge](assets/status-red.svg) **[!UICONTROL _x _renvois ayant échoué]**&#x200B;pour le nombre de renvois ayant échoué dans les jeux de données,<p>![Statut rouge](assets/status-orange.svg) **[!UICONTROL _x _renvois en cours de traitement]**&#x200B;pour le nombre de renvois en cours de traitement dans les jeux de données,<p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _renvois terminés]**&#x200B;pour le nombre de renvois terminés pour les jeux de données, et<p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _Désactivé_]** au cas où aucun renvoi n’est défini pour les jeux de données dans la connexion. |
 | **[!UICONTROL Transformer les données]** | Statut de transformation des jeux de données de recherche B2B applicables. Voir [Transformer des jeux de données pour les recherches B2B](transform-datasets-b2b-lookups.md) pour plus d’informations.<p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _activés]**&#x200B;pour le nombre de jeux de données activés pour la transformation. |
 | **[!UICONTROL Créé par]** | Nom de la personne qui a créé la connexion. |
 | **[!UICONTROL Dernière modification]** | Date et heure de la dernière modification apportée à la connexion. |
@@ -352,7 +352,7 @@ Lorsqu’une ligne de jeu de données est sélectionnée dans le tableau des jeu
 | **[!UICONTROL Importer de nouvelles données]** | Statut de l’import des nouvelles données pour le jeu de données : <p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _ activés]**&#x200B;si le jeu de données est configuré pour importer de nouvelles données, et<p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _x désactivés_]** si le jeu de données est configuré pour ne pas importer de nouvelles données. |
 | **[!UICONTROL Renvoyer les données]** | Statut des données de renvoi pour le jeu de données.<p>![Statut rouge](assets/status-red.svg) **[!UICONTROL _x _renvois ayant échoué]**&#x200B;pour le nombre de renvois ayant échoué,<p>![Statut rouge](assets/status-orange.svg) **[!UICONTROL _x _renvois en cours de traitement]**&#x200B;pour le nombre de renvois en cours de traitement,<p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _renvois terminés]**&#x200B;pour le nombre de renvois terminés, et<p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _Désactivé_]** au cas où aucun renvoi n’est configuré.<p>Pour afficher une boîte de dialogue avec une vue d’ensemble des renvois précédents pour le jeu de données, sélectionnez <img src="./assets/pastbackfill.svg" alt="Renvois précédents" width="15"/> **[!UICONTROL Renvois précédents]**. |
 | **[!UICONTROL Type de source de données]** | Type de source de données tel que défini lors de l’ajout du jeu de données à la connexion. |
-| **[!UICONTROL Type de jeu de données]** | [Type de jeu de données](create-connection.md#dataset-types). Le type peut être **[!UICONTROL Événement]**, **[!UICONTROL Profil]**, **[!UICONTROL Recherche]** ou **[!UICONTROL Synthèse]**. Un jeu de données ad hoc ou relationnel est identifié par **[!UICONTROL (ad hoc)]** ou **[!UICONTROL (relationnel)]**. Par exemple, **[!UICONTROL Événement (ad hoc)]** ou **[!UICONTROL Recherche (relationnelle)]**. |
+| **[!UICONTROL Type de jeu de données]** | [Type de jeu de données](create-connection.md#dataset-types). Le type peut être **[!UICONTROL Événement]**, **[!UICONTROL Profil]**, **[!UICONTROL Recherche]**, **[!UICONTROL Résumé]**. Un jeu de données ad hoc ou relationnel est identifié par **[!UICONTROL (ad hoc)]** ou **[!UICONTROL (relationnel)]**. Par exemple, **[!UICONTROL Événement (ad hoc)]** ou **[!UICONTROL Recherche (relationnelle)]**. |
 | **[!UICONTROL Schéma]** | Schéma Experience Platform sur lequel est basé ce jeu de données. |
 | **[!UICONTROL Identifiant du jeu de données]** | Identifiant de jeu de données tel que généré dans Experience Platform. |
 
@@ -431,6 +431,63 @@ Lorsqu’une ligne de jeu de données est sélectionnée dans le tableau des jeu
 >id="connections_breakdown_cumulativereportablerows"
 >title="Lignes cumulées sur lesquelles effectuer des rapports"
 >abstract="Les lignes cumulées sur lesquelles effectuer des rapports sont des valeurs instantanées et non des totaux agrégés. Ces valeurs sont mises à jour de manière dynamique en fonction du dernier mois de la période sélectionnée. Si un client ou une cliente sélectionne Janvier - Mars, les valeurs reflètent l’instantané de mars."
+
+
+>[!CONTEXTUALHELP]
+>id="connections_extendeddatacapacitiyrows"
+>title="Lignes de capacité de données étendue"
+>abstract="Nombre total de lignes disponibles sur une période de plus de 13 mois pour le mois en cours, avec un pourcentage de variation par rapport au mois précédent. Par exemple, le 1er février 2024, le nombre affiche le nombre total de lignes disponibles avec un horodatage d’événement antérieur à janvier 2023."
+
+>[!CONTEXTUALHELP]
+>id="connections_breakdown_extendeddatacapacityrows"
+>title="Lignes de capacité de données étendue"
+>abstract="Les lignes de capacité de données étendue sont des valeurs d’instantané, et non des totaux agrégés. Ces valeurs sont mises à jour de manière dynamique en fonction du dernier mois de la période sélectionnée. Si un client ou une cliente sélectionne Janvier - Mars, les valeurs reflètent l’instantané de mars."
+
+>[!CONTEXTUALHELP]
+>id="connections_aca_corereportablerows"
+>title="Lignes principales à signaler de Content Analytics"
+>abstract="Nombre total de lignes spécifiques à Content Analytics disponibles au cours des 13 derniers mois pour le mois en cours, avec une modification en pourcentage par rapport au mois précédent.  Par exemple, le 1er février 2024, le nombre affiche le nombre total de lignes disponibles avec un horodatage d’événement de janvier 2023 à janvier 2024."
+
+>[!CONTEXTUALHELP]
+>id="connections_usage_aca_monthlyreportablerows"
+>title="Lignes du Content Analytics mensuel"
+>abstract="Effectue le suivi du nombre de lignes Content Analytics disponibles pour la création de rapports. Les lignes sur lesquelles effectuer des rapports sont les lignes ingérées moins les lignes ignorées et supprimées lors de l’ingestion. Les lignes sur lesquelles effectuer des rapports servent de mesure clé pour la facturation et l’utilisation des données."
+
+>[!CONTEXTUALHELP]
+>id="connections_breakdown_aca_corereportablerows"
+>title="Lignes principales à signaler de Content Analytics"
+>abstract="Les lignes principales à signaler de Content Analytics sont des valeurs instantanées et non des totaux agrégés. Ces valeurs sont mises à jour de manière dynamique en fonction du dernier mois de la période sélectionnée. Si un client ou une cliente sélectionne Janvier - Mars, les valeurs reflètent l’instantané de mars."
+
+
+>[!CONTEXTUALHELP]
+>id="connections_b2b_correportablebpp"
+>title="Lignes à signaler du profil professionnel principal"
+>abstract="Nombre total de lignes à déclarer de profil professionnel disponibles au cours des 13 derniers mois pour le mois en cours, avec une variation en pourcentage par rapport au mois précédent.  Par exemple, le 1er février 2024, le nombre affiche le nombre total de lignes disponibles avec un horodatage d’événement de janvier 2023 à janvier 2024."
+
+>[!CONTEXTUALHELP]
+>id="connections_b2b_historicalreportablebpp"
+>title="Lignes à signaler historiques du profil d&#39;entreprise"
+>abstract="Nombre total de lignes à déclarer de profil professionnel disponibles sur une période de plus de 13 mois pour le mois en cours, avec une variation en pourcentage par rapport au mois précédent. Par exemple, le 1er février 2024, le nombre affiche le nombre total de lignes disponibles avec un horodatage d’événement antérieur à janvier 2023."
+
+>[!CONTEXTUALHELP]
+>id="connections_breakdown_b2b_corereportablebpp"
+>title="Lignes à signaler du profil d&#39;entreprise principal"
+>abstract="Les lignes à déclarer du profil métier principal sont des valeurs d’instantané, et non des totaux agrégés. Ces valeurs sont mises à jour de manière dynamique en fonction du dernier mois de la période sélectionnée. Si un client ou une cliente sélectionne Janvier - Mars, les valeurs reflètent l’instantané de mars."
+
+>[!CONTEXTUALHELP]
+>id="connections_breakdown_b2b_historicalreportablebpp"
+>title="Lignes à signaler historiques du profil d&#39;entreprise"
+>abstract="Les lignes à signaler de profil métier historique sont des valeurs instantanées et non des totaux agrégés. Ces valeurs sont mises à jour de manière dynamique en fonction du dernier mois de la période sélectionnée. Si un client ou une cliente sélectionne Janvier - Mars, les valeurs reflètent l’instantané de mars."
+
+>[!CONTEXTUALHELP]
+>id="connections_monthlymediastarts"
+>title="Démarrages mensuels des médias"
+>abstract="Le nombre total de démarrages mensuels de médias disponibles au cours des 13 derniers mois pour le mois en cours, avec un pourcentage de changement par rapport au mois précédent.  Par exemple, le 1er février 2024, le nombre indique le nombre total de démarrages de média disponibles avec un horodatage d’événement compris entre janvier 2023 et janvier 2024."
+
+>[!CONTEXTUALHELP]
+>id="△△ "
+>title="Démarrages mensuels des médias"
+>abstract="Les démarrages mensuels des médias sont des valeurs instantanées et non des totaux agrégés. Ces valeurs sont mises à jour de manière dynamique en fonction du dernier mois de la période sélectionnée. Si un client ou une cliente sélectionne Janvier - Mars, les valeurs reflètent l’instantané de mars."
 
 
 L’interface [!UICONTROL Utilisation] indique l’utilisation des lignes ingérées et pouvant faire l’objet d’un rapport sur toutes les connexions. Si cette option n’est pas sélectionnée, sélectionnez l’onglet **[!UICONTROL Utilisation]** pour accéder à l’interface.
@@ -520,6 +577,6 @@ L’interface Utilisation se compose de deux panneaux :
 
 >[!MORELIKETHIS]
 >
->Tutoriel [Afficher, résoudre les problèmes et modifier les paramètres de connexion](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/connections/connections-details-experience-in-cja).
->[Gérer l’utilisation de Customer Journey Analytics](/help/technotes/estimate-usage.md)
+>Tutoriel [Affichage, dépannage et modification &#x200B;](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/connections/connections-details-experience-in-cja) paramètres de connexion.
+>[Gérer l’utilisation de Customer Journey Analytics](/help/technotes/estimate-usage.md)
 >
