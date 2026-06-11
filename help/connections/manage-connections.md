@@ -24,9 +24,9 @@ topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 4882eaa340d1139b8f93affb645219c999d293f0
+source-git-commit: 3b6264a1e159632e5a3246554c055488cfc6b39b
 workflow-type: tm+mt
-source-wordcount: 5865
+source-wordcount: 5863
 ht-degree: 93%
 
 ---
@@ -63,8 +63,8 @@ L’affichage [!UICONTROL Connexions] a deux interfaces : [[!UICONTROL Liste]](
 L’interface **[!UICONTROL Liste]** est l’interface par défaut pour Connexions. Si cette option n’est pas sélectionnée, sélectionnez l’onglet **[!UICONTROL Liste]** pour accéder à l’interface.
 
 L’interface **[!UICONTROL Liste]** affiche un tableau de toutes les connexions disponibles.
-
-![Vue en liste](assets/list-view.png)
+△
+![vue liste](assets/list-view.png)
 
 Les colonnes ou icônes suivantes sont disponibles dans le tableau.
 
@@ -434,7 +434,7 @@ Lorsqu’une ligne de jeu de données est sélectionnée dans le tableau des jeu
 
 
 >[!CONTEXTUALHELP]
->id="connections_extendeddatacapacitiyrows"
+>id="connections_extendeddatacapacityrows"
 >title="Lignes de capacité de données étendue"
 >abstract="Nombre total de lignes disponibles sur une période de plus de 13 mois pour le mois en cours, avec un pourcentage de variation par rapport au mois précédent. Par exemple, le 1er février 2024, le nombre affiche le nombre total de lignes disponibles avec un horodatage d’événement antérieur à janvier 2023."
 
@@ -460,7 +460,7 @@ Lorsqu’une ligne de jeu de données est sélectionnée dans le tableau des jeu
 
 
 >[!CONTEXTUALHELP]
->id="connections_b2b_correportablebpp"
+>id="connections_b2b_coreportablebpp"
 >title="Lignes à signaler du profil professionnel principal"
 >abstract="Nombre total de lignes à déclarer de profil professionnel disponibles au cours des 13 derniers mois pour le mois en cours, avec une variation en pourcentage par rapport au mois précédent.  Par exemple, le 1er février 2024, le nombre affiche le nombre total de lignes disponibles avec un horodatage d’événement de janvier 2023 à janvier 2024."
 
