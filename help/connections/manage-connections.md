@@ -24,10 +24,10 @@ topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 632179a04d3fa05943ff1cc15c3670e7a81b3ea2
+source-git-commit: ffa7a6d6502dc687b5bbd0aafe4b7e7ec82313fe
 workflow-type: tm+mt
-source-wordcount: 5863
-ht-degree: 93%
+source-wordcount: 5831
+ht-degree: 91%
 
 ---
 
@@ -420,17 +420,17 @@ Lorsqu’une ligne de jeu de données est sélectionnée dans le tableau des jeu
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_corereportablerows"
 >title="Lignes de base à déclarer"
->abstract="Les lignes principales sur lesquelles effectuer des rapports sont des valeurs instantanées et non des totaux agrégés. Ces valeurs sont mises à jour de manière dynamique en fonction du dernier mois de la période sélectionnée. Si un client ou une cliente sélectionne Janvier - Mars, les valeurs reflètent l’instantané de mars."
+>abstract="Les lignes principales sur lesquelles effectuer des rapports sont des valeurs instantanées et non des totaux agrégés. Ces valeurs sont mises à jour de manière dynamique en fonction du dernier mois de la période sélectionnée. Les valeurs reflètent l’instantané du mois sélectionné."
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_historicalreportablerows"
 >title="Lignes historiques à inclure dans un rapport"
->abstract="Les lignes historiques sur lesquelles effectuer des rapports sont des valeurs instantanées et non des totaux agrégés. Ces valeurs sont mises à jour de manière dynamique en fonction du dernier mois de la période sélectionnée. Si un client ou une cliente sélectionne Janvier - Mars, les valeurs reflètent l’instantané de mars."
+>abstract="Les lignes historiques sur lesquelles effectuer des rapports sont des valeurs instantanées et non des totaux agrégés. Ces valeurs sont mises à jour de manière dynamique en fonction du dernier mois de la période sélectionnée. Les valeurs reflètent l’instantané du mois sélectionné."
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_cumulativereportablerows"
 >title="Lignes cumulées sur lesquelles effectuer des rapports"
->abstract="Les lignes cumulées sur lesquelles effectuer des rapports sont des valeurs instantanées et non des totaux agrégés. Ces valeurs sont mises à jour de manière dynamique en fonction du dernier mois de la période sélectionnée. Si un client ou une cliente sélectionne Janvier - Mars, les valeurs reflètent l’instantané de mars."
+>abstract="Les lignes cumulées sur lesquelles effectuer des rapports sont des valeurs instantanées et non des totaux agrégés. Ces valeurs sont mises à jour de manière dynamique en fonction du dernier mois de la période sélectionnée. Les valeurs reflètent l’instantané du mois sélectionné."
 
 
 >[!CONTEXTUALHELP]
@@ -441,7 +441,7 @@ Lorsqu’une ligne de jeu de données est sélectionnée dans le tableau des jeu
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_extendeddatacapacityrows"
 >title="Lignes de capacité de données étendue"
->abstract="Les lignes de capacité de données étendue sont des valeurs d’instantané, et non des totaux agrégés. Ces valeurs sont mises à jour de manière dynamique en fonction du dernier mois de la période sélectionnée. Si un client ou une cliente sélectionne Janvier - Mars, les valeurs reflètent l’instantané de mars."
+>abstract="Les lignes de capacité de données étendue sont des valeurs d’instantané, et non des totaux agrégés. Ces valeurs sont mises à jour de manière dynamique en fonction du dernier mois de la période sélectionnée. Les valeurs reflètent l’instantané du mois sélectionné."
 
 >[!CONTEXTUALHELP]
 >id="connections_aca_corereportablerows"
@@ -456,7 +456,7 @@ Lorsqu’une ligne de jeu de données est sélectionnée dans le tableau des jeu
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_aca_corereportablerows"
 >title="Lignes principales à signaler de Content Analytics"
->abstract="Les lignes principales à signaler de Content Analytics sont des valeurs instantanées et non des totaux agrégés. Ces valeurs sont mises à jour de manière dynamique en fonction du dernier mois de la période sélectionnée. Si un client ou une cliente sélectionne Janvier - Mars, les valeurs reflètent l’instantané de mars."
+>abstract="Les lignes principales à signaler de Content Analytics sont des valeurs instantanées et non des totaux agrégés. Ces valeurs sont mises à jour de manière dynamique en fonction du dernier mois de la période sélectionnée. Les valeurs reflètent l’instantané du mois sélectionné."
 
 
 >[!CONTEXTUALHELP]
@@ -472,12 +472,12 @@ Lorsqu’une ligne de jeu de données est sélectionnée dans le tableau des jeu
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_b2b_corereportablebpp"
 >title="Lignes à signaler du profil d&#39;entreprise principal"
->abstract="Les lignes à déclarer du profil métier principal sont des valeurs d’instantané, et non des totaux agrégés. Ces valeurs sont mises à jour de manière dynamique en fonction du dernier mois de la période sélectionnée. Si un client ou une cliente sélectionne Janvier - Mars, les valeurs reflètent l’instantané de mars."
+>abstract="Les lignes à déclarer du profil métier principal sont des valeurs d’instantané, et non des totaux agrégés. Ces valeurs sont mises à jour de manière dynamique en fonction du dernier mois de la période sélectionnée. Les valeurs reflètent l’instantané du mois sélectionné."
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_b2b_historicalreportablebpp"
 >title="Lignes à signaler historiques du profil d&#39;entreprise"
->abstract="Les lignes à signaler de profil métier historique sont des valeurs instantanées et non des totaux agrégés. Ces valeurs sont mises à jour de manière dynamique en fonction du dernier mois de la période sélectionnée. Si un client ou une cliente sélectionne Janvier - Mars, les valeurs reflètent l’instantané de mars."
+>abstract="Les lignes à signaler de profil métier historique sont des valeurs instantanées et non des totaux agrégés. Ces valeurs sont mises à jour de manière dynamique en fonction du dernier mois de la période sélectionnée. Les valeurs reflètent l’instantané du mois sélectionné."
 
 >[!CONTEXTUALHELP]
 >id="connections_monthlymediastarts"
@@ -487,7 +487,7 @@ Lorsqu’une ligne de jeu de données est sélectionnée dans le tableau des jeu
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_monthlymediastarts"
 >title="Démarrages mensuels des médias"
->abstract="Les démarrages mensuels des médias sont des valeurs instantanées et non des totaux agrégés. Ces valeurs sont mises à jour de manière dynamique en fonction du dernier mois de la période sélectionnée. Si un client ou une cliente sélectionne Janvier - Mars, les valeurs reflètent l’instantané de mars."
+>abstract="Les démarrages mensuels des médias sont des valeurs instantanées et non des totaux agrégés. Ces valeurs sont mises à jour de manière dynamique en fonction du dernier mois de la période sélectionnée. Les valeurs reflètent l’instantané du mois sélectionné."
 
 
 L’interface [!UICONTROL Utilisation] indique l’utilisation des lignes ingérées et pouvant faire l’objet d’un rapport sur toutes les connexions. Si cette option n’est pas sélectionnée, sélectionnez l’onglet **[!UICONTROL Utilisation]** pour accéder à l’interface.
