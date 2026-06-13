@@ -2,10 +2,10 @@
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 0fd598843588818965d0e0cb80a9e653271efa8a
+source-git-commit: 2125f1a16ffed79f77757120c5679dd4defa1638
 workflow-type: tm+mt
-source-wordcount: '1437'
-ht-degree: 92%
+source-wordcount: '1449'
+ht-degree: 91%
 
 ---
 
@@ -104,6 +104,11 @@ ht-degree: 92%
       + [Identités Analytics](../getting-started/aa-vs-cja/aaid-ecid-adc.md)
    + [Évolution à partir d’Adobe Analytics](../getting-started/aa-to-cja.md)
    + [Guide de l’utilisateur pour les utilisateurs et utilisatrices d’Adobe Analytics](../getting-started/aa-to-cja-user.md)
+   + Transition à partir de Google Analytics 4 {#ga-to-cja}
+      + [Vue d’ensemble](/help/getting-started/ga-to-cja/home.md)
+      + [Modèle de données](/help/getting-started/ga-to-cja/data-model.md)
+      + [Équivalents de rapport](/help/getting-started/ga-to-cja/reports.md)
+      + [Différences de données](/help/getting-started/ga-to-cja/compare-data.md)
 
 + Ingestion de données {#cja-data-ingestion}
    + [Vue d’ensemble](../data-ingestion/data-ingestion.md)
@@ -541,7 +546,7 @@ ht-degree: 92%
          + [Lier des lectures de session](/help/use-cases/third-party/quantum-metric/tie-session-replays.md)
          + [Utiliser des cartes thermiques](/help/use-cases/third-party/quantum-metric/heatmap.md)
          + [Ajouter des événements de friction](/help/use-cases/third-party/quantum-metric/friction-events.md)
-         + {hide-from-toc}[Connecteur &#x200B;](/help/use-cases/third-party/quantum-metric/source-connector.md)
+         + {hide-from-toc}[Connecteur ](/help/use-cases/third-party/quantum-metric/source-connector.md)
 
 + Labs {#labs}
    + [Guide d’utilisation de Labs](../labs/labs.md)
