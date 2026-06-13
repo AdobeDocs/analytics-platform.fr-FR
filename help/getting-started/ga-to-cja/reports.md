@@ -234,7 +234,7 @@ Faites glisser l’une de ces dimensions du panneau Composants vers un [[!UICONT
 
 >[!NOTE]
 >
->Les navigateurs modernes ayant réduit le détail de la chaîne Agent-utilisateur, des valeurs complètes et précises dépendent de la collecte de [User-Agent Client Hints](https://experienceleague.adobe.com/en/docs/experience-platform/collection/use-cases/client-hints) dans votre configuration de Web SDK.
+>Les navigateurs modernes ayant réduit le détail de la chaîne Agent-utilisateur, des valeurs complètes et précises dépendent de la collecte de [User-Agent Client Hints](https://experienceleague.adobe.com/fr/docs/experience-platform/collection/use-cases/client-hints) dans votre configuration de Web SDK.
 
 +++
 
