@@ -5,10 +5,14 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7e4b9a2f-1c5d-4b8a-e3f9-6d2c8b7a4051
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
 source-git-commit: 2125f1a16ffed79f77757120c5679dd4defa1638
 workflow-type: tm+mt
 source-wordcount: 1300
@@ -103,7 +107,7 @@ GA4 étant défini par défaut sur l’attribution pilotée par les données, al
 
 Lorsque les chiffres diffèrent plus que prévu, trois chemins d’audit sont disponibles :
 
-* **** : l’outil de validation intégré au produit Adobe confirme que les événements XDM se déclenchent correctement, atteignent Edge Network et sont écrits dans les jeux de données Platform. Utilisez cet outil pour vérifier votre implémentation avant de comparer les numéros de rapport.
+* **&#x200B;**&#x200B;: l’outil de validation intégré au produit Adobe confirme que les événements XDM se déclenchent correctement, atteignent Edge Network et sont écrits dans les jeux de données Platform. Utilisez cet outil pour vérifier votre implémentation avant de comparer les numéros de rapport.
 * **Prévisualisations des jeux de données** : dans l’interface utilisateur de Platform, vous pouvez prévisualiser les lignes brutes de n’importe quel jeu de données. Comparez-les à l’exportation DebugView ou BigQuery de GA4 pour vérifier la précision au niveau du champ.
-* **** : en cas d’incohérences persistantes et inexpliquées, votre équipe de compte Adobe peut organiser un audit formel de la mise en œuvre avec un consultant Adobe.
+* **&#x200B;**&#x200B;: en cas d’incohérences persistantes et inexpliquées, votre équipe de compte Adobe peut organiser un audit formel de la mise en œuvre avec un consultant Adobe.
 * **Révision de l’ingestion** : si vous pensez que la différence provient de la manière dont les données GA ont été importées dans Platform plutôt que dans les définitions de rapports, consultez la configuration de l’ingestion dans [Migration des données depuis Google Analytics](/help/use-cases/third-party/ga/overview.md).

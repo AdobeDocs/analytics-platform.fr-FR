@@ -5,11 +5,17 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: c2d8f4a1-7b3e-4c9f-a5d2-8e1b6c3f9072
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
-subfeature_v2: id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: b1f5d324-a668-4e51-a59b-6fc0862d7310
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2:
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
 source-git-commit: 2125f1a16ffed79f77757120c5679dd4defa1638
 workflow-type: tm+mt
 source-wordcount: 3200
@@ -49,7 +55,7 @@ Dans Analysis Workspace, appliquez un modèle d’attribution **[!UICONTROL Prem
 2. Cliquez avec le bouton droit sur un en-tête de colonne de mesure et sélectionnez **[!UICONTROL Utiliser un modèle d’attribution autre que celui par défaut]**.
 3. Sélectionnez **[!UICONTROL Première touche]** avec un intervalle de recherche en amont approprié à votre analyse.
 
-Vous pouvez également utiliser le panneau [[!UICONTROL Attribution] ](/help/analysis-workspace/c-panels/attribution.md) pour une comparaison côte à côte des performances des canaux Première touche et Dernière touche.
+Vous pouvez également utiliser le panneau [[!UICONTROL Attribution] &#x200B;](/help/analysis-workspace/c-panels/attribution.md) pour une comparaison côte à côte des performances des canaux Première touche et Dernière touche.
 
 +++
 
@@ -74,7 +80,7 @@ Les répartitions de GA4 correspondent à ces dimensions Customer Journey Analyt
 
 Les rapports Attribution de GA4 (sous Advertising) montrent comment différents canaux contribuent aux conversions et permettent de comparer les modèles et d’analyser les chemins de conversion.
 
-Dans Analysis Workspace, utilisez le panneau [[!UICONTROL Attribution] ](/help/analysis-workspace/c-panels/attribution.md) :
+Dans Analysis Workspace, utilisez le panneau [[!UICONTROL Attribution] &#x200B;](/help/analysis-workspace/c-panels/attribution.md) :
 
 1. Sélectionnez l’icône Panneaux et faites glisser un panneau **[!UICONTROL Attribution]** sur la zone de travail.
 2. Faites glisser la dimension **[!UICONTROL Canal marketing]** vers la zone **[!UICONTROL Ajouter Dimension]**.
@@ -368,7 +374,7 @@ Dans Customer Journey Analytics, la mesure équivalente est **[!UICONTROL Évén
 
 +++Sessions → Sessions
 
-Les **Sessions** de GA4 et les **[!UICONTROL Sessions]** de Customer Journey Analytics mesurent toutes deux le nombre de sessions dans une période. Les nombres peuvent différer en raison de règles de définition de session différentes. Pour plus d’informations](compare-data.md#sessions) voir [Pourquoi les données GA4 et Customer Journey Analytics diffèrent-elles ?
+Les **Sessions** de GA4 et les **[!UICONTROL Sessions]** de Customer Journey Analytics mesurent toutes deux le nombre de sessions dans une période. Les nombres peuvent différer en raison de règles de définition de session différentes. Pour plus d’informations[&#128279;](compare-data.md#sessions) voir Pourquoi les données GA4 et Customer Journey Analytics diffèrent-elles ?
 
 +++
 
