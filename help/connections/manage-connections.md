@@ -24,9 +24,9 @@ topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: ffa7a6d6502dc687b5bbd0aafe4b7e7ec82313fe
+source-git-commit: 4d42c345b98683ef7d4b802262bd7f0f24b45692
 workflow-type: tm+mt
-source-wordcount: 5831
+source-wordcount: 5868
 ht-degree: 91%
 
 ---
@@ -488,6 +488,13 @@ Lorsqu’une ligne de jeu de données est sélectionnée dans le tableau des jeu
 >id="connections_breakdown_monthlymediastarts"
 >title="Démarrages mensuels des médias"
 >abstract="Les démarrages mensuels des médias sont des valeurs instantanées et non des totaux agrégés. Ces valeurs sont mises à jour de manière dynamique en fonction du dernier mois de la période sélectionnée. Les valeurs reflètent l’instantané du mois sélectionné."
+
+
+>[!CONTEXTUALHELP]
+>id="connections_breakdown_aca_monthlyreportablerows"
+>title="Lignes du Content Analytics mensuel"
+>abstract="Les lignes de Content Analytics mensuelles sont des valeurs d’instantané, et non des totaux agrégés. Ces valeurs sont mises à jour de manière dynamique en fonction du dernier mois de la période sélectionnée. Les valeurs reflètent l’instantané du mois sélectionné."
+
 
 
 L’interface [!UICONTROL Utilisation] indique l’utilisation des lignes ingérées et pouvant faire l’objet d’un rapport sur toutes les connexions. Si cette option n’est pas sélectionnée, sélectionnez l’onglet **[!UICONTROL Utilisation]** pour accéder à l’interface.
