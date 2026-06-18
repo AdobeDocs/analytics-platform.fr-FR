@@ -26,10 +26,10 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: 9c87ce4fb30c7d1d66ce88174443369ef44a7377
 workflow-type: tm+mt
-source-wordcount: 528
-ht-degree: 0%
+source-wordcount: 623
+ht-degree: 3%
 
 ---
 
@@ -64,7 +64,7 @@ Toutes les connexions existantes sont considérées [connexions basées sur la p
 
 Pour implémenter des fonctionnalités B2B dans votre implémentation existante, procédez comme suit :
 
-1. Modélisez vos données B2B. Customer Journey Analytics B2B edition suppose au moins des données d’événement de série temporelle basées sur le compte et bénéficie de données d’enregistrement de profil ou de recherche supplémentaires. Telles que les données de compte, les données de groupe d’achats, les données d’opportunité, les données de membre de la liste marketing, etc.
+1. Modélisez vos données B2B. Vous pouvez utiliser le [modèle de données d’expérience (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=fr) d’Adobe pour normaliser les données B2B et définir des schémas pour vos données B2B.<br/>Vous pouvez baser vos schémas sur les [classes standard fournies dans Real-time CDP B2B edition](https://experienceleague.adobe.com/fr/docs/experience-platform/rtcdp/schemas/b2b) ou utiliser vos propres classes et schémas personnalisés. Les articles [cas d’utilisation](/help/use-cases/b2b/b2b-edition/use-cases-overview.md) utilisent des classes et des schémas de B2B edition Real-time CDP. Toutefois, une licence Real-time CDP B2B edition n’est pas nécessaire pour utiliser les classes et schémas standard. <br/>Customer Journey Analytics B2B edition suppose au moins des données d’événement de série temporelle basées sur le compte et bénéficie de données d’enregistrement de profil ou de recherche supplémentaires. Telles que les données de compte, les données de groupe d’achats, les données d’opportunité, les données de membre de la liste marketing, etc.
 
    * Définissez l’identifiant que vous souhaitez utiliser comme identifiant de compte principal (Identifiant de compte). Souvent, un CRM existant ou un autre outil (par exemple : Demandbase) vous aide à déterminer cet identifiant.
    * Identifiez des identifiants supplémentaires pour les autres données B2B que vous prévoyez d’utiliser : identifiant de compte global, identifiant d’opportunité, identifiant de groupe d’achats et identifiant de personne.

@@ -23,10 +23,10 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
+source-git-commit: 9c87ce4fb30c7d1d66ce88174443369ef44a7377
 workflow-type: tm+mt
-source-wordcount: 1485
-ht-degree: 2%
+source-wordcount: 1545
+ht-degree: 3%
 
 ---
 
@@ -95,6 +95,9 @@ Vous pouvez également définir le conteneur par défaut pour ces visualisations
 
 Les segments, l’attribution et les visualisations ainsi que les conteneurs B2B vous aident à obtenir des analyses et des informations B2B approfondies.
 
+## Schémas
+
+L’éditeur B2B de Customer Journey Analytics utilise le [modèle de données d’expérience (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=fr) d’Adobe pour normaliser les données B2B et définir des schémas pour vos données B2B. Vous pouvez baser vos schémas sur les [classes standard fournies dans Real-time CDP B2B edition](https://experienceleague.adobe.com/fr/docs/experience-platform/rtcdp/schemas/b2b) ou utiliser vos propres classes et schémas personnalisés. Les articles [cas d’utilisation](/help/use-cases/b2b/b2b-edition/use-cases-overview.md) utilisent des classes et des schémas de B2B edition Real-time CDP. Toutefois, une licence Real-time CDP B2B edition n’est pas nécessaire pour utiliser les classes et schémas standard.
 
 ## Jeux de données
 
@@ -103,7 +106,7 @@ Le B2B de Customer Journey Analytics fait la distinction entre les types de donn
 | Type de données | Série temporelle | Enregistrements de conteneur | Enregistrements de champ |
 |---|---|---|---|
 | **Jeux de données** | **Jeux de données d’événements**<br/> Par exemple :<ul><li>Analyse numérique</li><li>Événements CRM</li><li>Événements en personne</li><li>Données du centre d’appels</li></ul> | **Jeux de données de profil**<br/> Par exemple :<ul><li>Enregistrements CRM</li><li>Enregistrements B2B AJO</li><li>Enregistrements CDP</li><ul> | **Classifications**<br/> Par exemple :<ul><li>Enregistrements de campagne</li><li>Enregistrements de listes marketing</li><li>Métadonnées de contenu</li><li>Enregistrements de produit</li></ul> |
-| Exigences | **Horodatage**<br> Chaque enregistrement nécessite :<ul><li>Identifiant de compte</li><li>Identifiant de compte global (facultatif)</li></ul> | **Identifiant de compte**<br> Les enregistrements ont besoin d&#39;un identifiant de conteneur, comme :<ul><li>Compte</li><li>Personne</li><li>Opportunité</li><li>Groupe d’achat</li></ul> | **Clé correspondante**<br> Les enregistrements ont besoin d&#39;un identifiant contenu dans un conteneur ou un jeu de données d&#39;événement, comme :<ul><li>Identifiant de la campagne</li><li>ID de contenu</li><li>ID de produit</li></ul> |
+| Exigences | **Horodatage**<br> Chaque enregistrement nécessite :<ul><li>ID de compte</li><li>Identifiant de compte global (facultatif)</li></ul> | **Identifiant de compte**<br> Les enregistrements ont besoin d&#39;un identifiant de conteneur, comme :<ul><li>Compte</li><li>Personne</li><li>Opportunité</li><li>Groupe d’achat</li></ul> | **Clé correspondante**<br> Les enregistrements ont besoin d&#39;un identifiant contenu dans un conteneur ou un jeu de données d&#39;événement, comme :<ul><li>ID de campagne</li><li>Identifiant de contenu</li><li>ID de produit</li></ul> |
 
 {style="table-layout:fixed"}
 
