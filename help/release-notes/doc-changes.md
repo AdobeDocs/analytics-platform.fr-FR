@@ -6,37 +6,15 @@ solution: Customer Journey Analytics
 feature: Release Notes
 autotag-review: '2026-05-19T11:00:09.733Z'
 TQID: 'https://experienceleague.adobe.com/hHcvSYqGtYuKbPLvtu2qALBNLA0cogWxEUYxu-ktUvM'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b743a5d9-dc51-41ed-8b2f-86a1f8de430f
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
-  - id: e634a07b-b7ca-4af3-a124-3024ce559e17
-  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
-  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
-subfeature_v2:
-  - id: a8e39571-4463-4aa3-8b3f-4e2341ecf3b3
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b743a5d9-dc51-41ed-8b2f-86a1f8de430fid: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4id: d76b9e53-27fb-4597-933f-419cc0dd46dbid: e634a07b-b7ca-4af3-a124-3024ce559e17id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5eid: eb00932f-4d46-46bc-b1d8-10de7588db8d
+subfeature_v2: id: a8e39571-4463-4aa3-8b3f-4e2341ecf3b3
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bcc5edb5-84c3-4940-9f84-ed88b6c16274id: c1579802-ddd4-4214-8a91-97b2066abe11id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d00e9f03-e50b-4162-b143-0c0817c937c2id: d3cdead0-685a-4489-9250-4bb709942f66id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: eddd9b14-83bd-4ff4-9072-54a4a484abb7id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 50c7bb7b18b45b5ffac0eebacca2bb0d2ed0c28d
 workflow-type: tm+mt
 source-wordcount: 6944
-ht-degree: 94%
+ht-degree: 99%
 
 ---
 
@@ -51,25 +29,25 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 |---|---|
 | **Juin 2026** | |
 | Nouveau guide GA4 | Ajout de la section [Transition de Google Analytics 4 vers Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/ga-to-cja/home). |
-| **Mai 2026** | |
-| Bibliothèque JavaScript pour Content Analytics | Documentation sur la mise en œuvre de Content Analytics pour le canal web à l’aide de la bibliothèque JavaScript Content Analytics [&#128279;](/help/content-analytics/config/tags-agnostic.md) sans nécessiter de balises de collecte de données Experience Platform. |
+| **Mai 2026** | |
+| Bibliothèque JavaScript pour Content Analytics | Documentation sur la mise en œuvre de Content Analytics pour le canal web à l’aide de la [bibliothèque JavaScript Content Analytics](/help/content-analytics/config/tags-agnostic.md) sans nécessiter de balises de collecte de données Experience Platform. |
 | Considérations relatives à Data Mirror | [Documentation](/help/data-mirror/considerations.md) qui décrit les facteurs à prendre en compte lors de la configuration de [jeux de données Data Mirror](/help/data-mirror/data-mirror.md). |
-| Canal mobile Content Analytics | Mises à jour de la documentation de [&#128279;](/help/content-analytics/content-analytics.md) pour décrire les fonctionnalités et la configuration du canal mobile Content Analytics. |
+| Canal mobile Content Analytics | Mises à jour de la [documentation Content Analytics](/help/content-analytics/content-analytics.md) pour décrire les fonctionnalités et la configuration du canal mobile Content Analytics. |
 | **Avril 2026** | |
-| Instructions relatives aux champs dérivés | Ajout d’un article avec des [directives](/help/use-cases/data-views/derived-fields/guidelines.md) (bonnes pratiques, mécanismes de sécurisation et pièges courants) pour l’utilisation des champs dérivés. |
+| Directives relatives aux champs dérivés | Ajout d’un article avec des [directives](/help/use-cases/data-views/derived-fields/guidelines.md) (bonnes pratiques, mécanismes de sécurisation et pièges courants) pour l’utilisation des champs dérivés. |
 | Ajout d’une documentation manquante pour deux jeux de données qui peuvent être inclus lors de l’intégration de Journey Optimizer | [Deux jeux de données supplémentaires non liés aux profils et générés par le système](/help/integrations/ajo.md#high-throughput-add-on-datasets) sont inclus dans la connexion lorsque le module complémentaire de messagerie transactionnelle à haut débit est activé pour votre organisation IMS. |
 | Mise à jour des cas d’utilisation de l’analyse des cohortes | Sur la base des commentaires, des exemples Analysis Workspace ont été ajoutés aux cas d’utilisation de l’analyse des cohortes. |
 | **Mars 2026** | |
-| Répartition d’un panneau | Restructuration de la documentation autour de la [zone de dépôt pour un panneau](/help/analysis-workspace/c-panels/panels.md#drop-zone) afin de prendre en charge la nouvelle fonctionnalité [répartition](/help/analysis-workspace/c-panels/panels.md#break-down-a-panel). |
-| Note technique sur les BAD ID (BAVID) | Nouvelle note technique [sur les ID incorrects](/help/technotes/badids.md). La note technique explique la définition d’un ID incorrect, où sont utilisés les ID incorrects dans l’interface de Customer Journey Analytics et comment rechercher des ID incorrects dans les données de votre connexion. |
+| Répartition d’un panneau | Restructuration de la documentation autour de la [zone de dépôt pour un panneau](/help/analysis-workspace/c-panels/panels.md#drop-zone) afin de prendre en charge la nouvelle fonctionnalité de [répartition](/help/analysis-workspace/c-panels/panels.md#break-down-a-panel). |
+| Note technique sur les ID incorrects (BAVID) | Nouvelle note technique [sur les ID incorrects](/help/technotes/badids.md). La note technique explique la définition d’un ID incorrect, où sont utilisés les ID incorrects dans l’interface de Customer Journey Analytics et comment rechercher des ID incorrects dans les données de votre connexion. |
 | Aperçu de la reconception des jeux de données dans Connexions | Mise à jour de la documentation pour une expérience d’aperçu des données améliorée lorsque vous [ajoutez](/help/connections/create-connection.md#add-datasets) ou [modifiez](/help/connections/create-connection.md#edit-a-dataset) des jeux de données dans des connexions basées sur une personne, y compris la documentation sur les [informations d’aperçu de groupement](/help/stitching/use-stitching-ui.md#datasets-preview) supplémentaires pour les jeux de données activés pour le groupement. |
 | Miniatures et aperçus Content Analytics | Documentation sur les [miniatures](/help/content-analytics/report/report.md#thumbnails) et [aperçus](/help/content-analytics/report/report.md#previews) pour des visualisations supplémentaires dans Content Analytics. |
 | **Février 2026** | |
-| Remplacements d’en-têtes | Documentation sur la configuration supplémentaire [remplacements d’en-tête](/help/content-analytics/config/guided.md#header-overrides) pour Content Analytics. |
-| Mécanisme de sécurisation des mesures calculées | Mise à jour de la [mécanisme de sécurisation pour le nombre maximal de mesures calculées pour une organisation](/help/technotes/guardrails.md#segments-and-calculated-metrics). Le maximum est maintenant de 50 000. |
+| Remplacements d’en-têtes | Documentation sur la configuration supplémentaire des [remplacements d’en-tête](/help/content-analytics/config/guided.md#header-overrides) pour Content Analytics. |
+| Mécanisme de sécurisation des mesures calculées | Mise à jour du [mécanisme de sécurisation pour le nombre maximal de mesures calculées d’une organisation](/help/technotes/guardrails.md#segments-and-calculated-metrics). Le maximum est maintenant de 50 000. |
 | Content Analytics autonome | Ajout de la documentation relative à une [configuration autonome de Content Analytics](/help/content-analytics/config/standalone.md). |
 | **Janvier 2026** | |
-| Concevoir un schéma | Ajout d’informations détaillées et de contexte au [Concevoir votre schéma en vue de son utilisation avec Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md). |
+| Concevoir un schéma | Ajout d’informations et de contexte détaillés dans [Concevoir le schéma à utiliser avec Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md). |
 
 
 ## 2025
@@ -77,7 +55,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Fonctionnalité | Description |
 | --- | --- |
 | **Décembre 2025** | |
-| Implications des modifications apportées aux sandbox | Ajout des implications d’une suppression ou d’une réinitialisation de sandbox à l’article [Implications de suppression et de réinitialisation](/help/technotes/deletion.md). |
+| Implications des modifications apportées aux sandbox | Ajout des implications d’une suppression ou d’une réinitialisation de sandbox à l’article [Implications de la suppression et de la réinitialisation](/help/technotes/deletion.md). |
 | **Novembre 2025** | |
 | Mécanisme de sécurisation pour les lignes par jour dans une connexion | Ajout d’[informations sur le mécanisme de sécurisation pour les limites de transfert de données](/help/technotes/guardrails.md) concernant le nombre moyen maximal de lignes par jour dans une connexion. |
 | **Octobre 2025** | |
@@ -85,7 +63,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Configuration de l’attribution | Mises à jour supplémentaires pour refléter les nouvelles options de configuration de l’attribution pour le modèle, le conteneur et l’intervalle de recherche en amont. |
 | Ingérer et utiliser des audiences Experience Platform | Mise à jour de l’article sur les cas d’utilisation relatif à [l’ingestion et l’utilisation d’audiences Experience Platform](/help/use-cases/data-ingestion/ingest-aep-segments.md). |
 | Préparer votre organisation à la mise à niveau vers Customer Journey Analytics | Ajout d’informations sur la manière de [préparer une organisation à la mise à niveau vers Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-org-readiness.md). |
-| Créer un rapport sur le trafic généré par LLM et IA | Ajout d’un [article de cas d’utilisation](/help/use-cases/data-views/derived-fields/ai-traffic.md) sur la création de rapports sur le trafic généré par LLM et IA à l’aide de champs dérivés comme base. Cet article s’appuie sur l’article de blog [Suivi et analyse du trafic généré par LLM et par IA dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967?profile.language=fr). |
+| Créer un rapport sur le trafic généré par LLM et IA | Ajout d’un [article de cas d’utilisation](/help/use-cases/data-views/derived-fields/ai-traffic.md) sur la création de rapports sur le trafic généré par LLM et IA à l’aide de champs dérivés comme base. Cet article s’appuie sur l’article de blog [Suivi et analyse du trafic généré par LLM et par IA dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967). |
 | **Septembre 2025** | |
 | Dates antérieures à 1900 | Ajout d’une [note](/help/connections/create-connection.md#datasets) sur la manière dont les dates antérieures à 1900 sont gérées par Customer Journey Analytics. |
 | Créer des rapports en temps réel | Ajout de la documentation sur la [création de rapports en temps réel](/help/components/real-time/real-time.md) dans Customer Journey Analytics. |
@@ -115,7 +93,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Adobe Content Analytics | [Content Analytics](/help/content-analytics/content-analytics.md) vous permet d’examiner rapidement et facilement de grands volumes de données de contenu pour repérer des tendances, détecter des anomalies, identifier la lassitude liée au contenu et obtenir des informations issues de l’exposition du contenu. |
 | Mise à jour des champs XDM pour la collecte des données des médias en streaming dans Adobe Experience Platform | Lors de la collecte de données des médias en streaming dans Adobe Experience Platform, les chemins d’accès aux champs XDM affichés dans la section « Chemin d’accès au champ XDM » de la documentation des paramètres des médias de streaming ne doivent plus être utilisés. Ces chemins d’accès aux champs se trouvent sur les pages suivantes et sont marqués comme « Obsolètes » : [Paramètres audio et vidéo](https://experienceleague.adobe.com/fr/docs/media-analytics/using/implementation/variables/audio-video-parameters), [Paramètres d’annonce publicitaire](https://experienceleague.adobe.com/fr/docs/media-analytics/using/implementation/variables/ad-parameters), [Paramètres de chapitre](https://experienceleague.adobe.com/fr/docs/media-analytics/using/implementation/variables/chapter-parameters), [Paramètres d’état du lecteur](https://experienceleague.adobe.com/fr/docs/media-analytics/using/implementation/variables/player-state-parameters) et [Paramètres de qualité](https://experienceleague.adobe.com/fr/docs/media-analytics/using/implementation/variables/quality-parameters). |
 | Media Collection : mises à jour du connecteur source Adobe pour le nouveau XDM de création de rapports multimédia | Le connecteur source Analytics mappe automatiquement les données de médias en streaming dans Adobe Analytics aux mêmes champs utilisés par le SDK web. Auparavant, les données étaient mappées à la fois à l’ancien et au nouvel emplacement, mais seul le nouvel emplacement sera utilisé à l’avenir. [En savoir plus](https://experienceleague.adobe.com/fr/docs/analytics/implementation/aep-edge/xdm-var-mapping) |
-| Modification de terminologie : « filtres » devient « segments » | Auparavant, Adobe Customer Journey Analytics appelait les segments « filtres ». Cette terminologie est désormais conforme à celle d’Adobe Analytics. Les « filtres » sont désormais appelés « segments ». (Bien entendu, les filtres de recherche sont toujours appelés « filtres ».) L’interface utilisateur et la documentation ont été mises à jour. |
+| Modification de terminologie : « filtres » devient « segments » | Auparavant, Adobe Customer Journey Analytics appelait les segments « filtres ». Cette terminologie est désormais conforme à celle d’Adobe Analytics. Les « filtres » sont désormais appelés « segments ». (Bien entendu, les filtres de recherche sont toujours appelés « filtres ».) L’interface d’utilisation et la documentation ont été mises à jour. |
 | **Mars 2025** | |
 | Cas d’utilisation de Quantum Metric | Ajout de cas d’utilisation pour la collecte de données à partir de [Quantum Metric](/help/use-cases/third-party/quantum-metric/qm-overview.md). |
 | Modèle d’utilisation du produit | Un nouveau modèle d’espace de travail vous permet de voir comment le produit Customer Journey Analytics est utilisé au sein de votre organisation. [En savoir plus](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/templates/use-templates). |
@@ -158,7 +136,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | **Août 2024** | |
 | Exemple de projet B2B | Ajout d’un [cas d’utilisation](/help/use-cases/b2b/example.md) expliquant comment paramétrer, configurer et générer des rapports sur les données B2B au niveau du profil (personne) dans Customer Journey Analytics, à l’aide de la nouvelle fonctionnalité [Transformer les jeux de données pour les recherches B2B](/help/connections/transform-datasets-b2b-lookups.md). |
 | Mise à jour des cas d’utilisation d’export de données | Ajout d’exemples de requêtes plus détaillés au [service de requête (Data Distiller) et Exporter des jeux de données](/help/use-cases/data-export/queryservice-export-datasets.md) pour illustrer comment appliquer correctement l’attribution entre les sessions à l’aide d’un intervalle de recherche en amont. |
-| Données de résumé | Ajout d’une documentation sur les [données récapitulatives](/help/data-views/summary-data.md) et les [&#x200B; paramètres du composant de groupe de données récapitulatives](/help/data-views/component-settings/summary-data-group.md) et d’un [cas d’utilisation de données récapitulatives](/help/use-cases/data-views/summary-data.md). |
+| Données de résumé | Ajout d’une documentation sur les [données récapitulatives](/help/data-views/summary-data.md) et les [ paramètres du composant de groupe de données récapitulatives](/help/data-views/component-settings/summary-data-group.md) et d’un [cas d’utilisation de données récapitulatives](/help/use-cases/data-views/summary-data.md). |
 | **Juillet 2024** | |
 | Ajout d’informations à propos des mesures calculées rapides | Mise à jour des informations dans [Mesures](/help/components/apply-create-metrics.md) afin de clarifier la différence entre les [mesures calculées créées dans le créateur de mesures calculées](/help/components/apply-create-metrics.md#create-calculated-metrics-for-all-projects) et [celles créées sous forme de mesures calculées rapides dans un seul projet](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project). Ajout également d’informations supplémentaires sur les mesures calculées rapides.<p>Les mesures calculées créées dans le créateur de mesures calculées sont disponibles dans la liste des composants et peuvent être appliquées aux projets dans l’ensemble de l’organisation, tandis que les mesures calculées qui sont créées sous forme de mesures calculées rapides ne sont disponibles que dans le projet dans lequel elles ont été créées.</p><p>Mise à jour des informations dans [Créer des mesures](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) pour effectuer des clarifications similaires.</p> |
 | Fonction de déduplication des champs dérivés | Ajout d’une documentation sur la fonction de [Déduplication](/help/data-views/derived-fields/derived-fields.md#deduplicate) des champs dérivés. |
@@ -362,7 +340,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Septembre 2021 | Documentation [Calendriers client](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=fr#calendar) |
 | Septembre 2021 | Documentation [Champs booléens](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/behavior.html?lang=fr) |
 | Septembre 2021 | Répartition des paramètres des composants dans les vues de données dans des fichiers individuels :<ul><li>Présentation des paramètres des [[!UICONTROL Composants]](/help/data-views/component-settings/overview.md)</li><li>Paramètres des composants : [[!UICONTROL attribution]](/help/data-views/component-settings/attribution.md)</li><li>Paramètres des composants : [[!UICONTROL comportement]](/help/data-views/component-settings/behavior.md)</li><li>Paramètres des composants : [[!UICONTROL mise en page]](/help/data-views/component-settings/format.md)</li><li>Paramètres des composants : [[!UICONTROL inclusion/exclusion]](/help/data-views/component-settings/include-exclude-values.md)</li><li>Paramètres des composants : [[!UICONTROL déduplication des mesures]](/help/data-views/component-settings/metric-deduplication.md)</li><li>Paramètres des composants : [[!UICONTROL aucune valeur]](/help/data-views/component-settings/no-value-options.md)</li><li>Paramètres des composants : [[!UICONTROL persistance]](/help/data-views/component-settings/persistence.md)</li><li>Paramètres des composants : [[!UICONTROL regroupement des valeurs]](/help/data-views/component-settings/value-bucketing.md)</li></ul> |
-| Septembre 2021 | Nouvelle section sur les [implications de la fusion de suites de rapports](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=fr#6.-considerations-when-merging-report-suites-in-cja) dans Customer Journey Analytics. |
+| Septembre 2021 | Nouvelle section sur les [implications de la fusion de suites de rapports](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-faq.html#6.-considerations-when-merging-report-suites-in-cja) dans Customer Journey Analytics. |
 | **Août 2021** | |
 | Août 2021 | Nouvelle section sur l’amélioration de l’expérience des [Connexions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=fr) dans Customer Journey Analytics. |
 | Août 2021 | Nouvelle section sur la [sensibilité à la casse dans les dimensions de vues de données](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=fr#configure-behavior-settings). |
