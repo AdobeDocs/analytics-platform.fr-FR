@@ -19,9 +19,9 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 402
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -35,9 +35,9 @@ Les mises à jour de Customer Journey Analytics fonctionnent sur un modèle de
 
 * **Tests limités** : la mise à jour par étapes commence par un test réalisé par les utilisateurs et utilisatrices internes d’Adobe. Elle est ensuite mise à la disposition d’un petit groupe de comptes clients afin de s’assurer que la fonctionnalité répond aux besoins et aux attentes des clientes et clients.
 
-* **Début du déploiement** : le déploiement d’une mise à jour par phases commence par la phase Tests limités. La mise à jour passe à une disponibilité de 0 % à 100 % pour les clients en quelques mois. Le déploiement échelonné s’effectue au niveau de l’organisation de l’entreprise CX, de sorte que tous les utilisateurs autorisés d’une organisation bénéficient de la même expérience.
+* **Début du déploiement** : le déploiement d’une mise à jour par phases commence par la phase Tests limités. La mise à jour passe à une disponibilité de 0 % à 100 % pour les clients en quelques mois. Le déploiement par phases se produit au niveau de l’organisation CX Enterprise, de sorte que tous les personnes autorisées d’une même organisation bénéficient de la même expérience.
 
-* **Disponibilité générale (GA)** : la fonctionnalité est disponible à 100 % des organisations CX Grands comptes autorisées et la publication des fonctionnalités est terminée.
+* **Disponibilité générale** : la fonctionnalité est disponible pour 100 % des organisations CX Enterprise autorisées et la mise à jour est terminée.
 
 Selon les mises à jour de fonctionnalité, la chronologie peut varier entre la mise en production et la disponibilité générale. L’objectif est que la mise à jour soit courte, afin qu’elle atteigne la disponibilité générale dans un délai de 2 mois à compter de la mise en production.
 
