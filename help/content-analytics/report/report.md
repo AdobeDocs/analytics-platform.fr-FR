@@ -22,10 +22,10 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 236959f0e060e35a285777f40b8d1ef90855ed5c
+source-git-commit: 537fc30db0f6e6bddc54df7bbcc04d802226958f
 workflow-type: tm+mt
-source-wordcount: 1438
-ht-degree: 46%
+source-wordcount: 1215
+ht-degree: 51%
 
 ---
 
@@ -74,18 +74,11 @@ Des miniatures s’affichent lorsque vous pointez sur un point de données dans 
 
 ### Ligne
 
-{{release-limited-testing-section}}
-
 ![Miniatures Content Analytics pour la ligne](/help/content-analytics/assets/aca-line-thumbnail.png)
 
 Des miniatures s’affichent lorsque vous pointez sur un point de données dans une [ligne](/help/analysis-workspace/visualizations/line.md).
 
 ## Prévisualisations
-
->[!AVAILABILITY]
->
->Les visualisations à barres et en nuage de points décrites dans cette section font l’objet de tests limités et peuvent ne pas être disponibles dans votre environnement. Cette note est supprimée lorsque la fonctionnalité est disponible. Pour plus d’informations sur le processus de mise à jour de Customer Journey Analytics, consultez [Mise à jour des fonctionnalités de Customer Journey Analytics](/help/release-notes/releases.md).
->
 
 Vous pouvez ouvrir une fenêtre contextuelle d’aperçu. Pour ce faire, procédez comme suit :
 
@@ -129,7 +122,7 @@ Vous pouvez utiliser la répartition **[!UICONTROL Canal de contenu]** pour [ré
 
 Les quatre panneaux sont les suivants :
 
-* **Quel est le contenu le plus performant ?**
+* **Quel est le contenu le plus performant ?**
 Ce panneau identifie les expériences et les ressources qui génèrent l’engagement et la conversion. Les expériences sont des pages web complètes capturées à un moment spécifique ou une combinaison de texte, de ressources et d’appels à l’action définis dans une application mobile.
 
    * **Expériences**
@@ -154,7 +147,7 @@ Un [tableau à structure libre](/help/analysis-workspace/visualizations/freeform
 Assets - vues par rapport à la conversion.
 Visualisation [en graphique de dispersion](/help/analysis-workspace/visualizations/scatterplot.md) qui présente un graphique de dispersion des vues de ressources en fonction des conversions de ressources.
 
-* **Quels sont les attributs de ressources qui contribuent aux conversions ?**
+* **Quels attributs de ressource contribuent aux conversions ?**
 Content Analytics utilise l’IA et GenAI pour affecter automatiquement des métadonnées et des attributs, tels que les objets, les scènes et les couleurs de premier plan, à chaque ressource.
 
    * **Principaux attributs de ressource de conversion**
@@ -179,7 +172,7 @@ Exemple [tableau à structure libre](/help/analysis-workspace/visualizations/fre
 
   Le panneau se compose des visualisations suivantes :
 
-   * **Principaux attributs d’expérience de conversion**
+   * **Top conversion des attributs d’expérience**
 Visualisation [barre horizontale](/help/analysis-workspace/visualizations/horizontal-bar.md) qui affiche les attributs d’expérience de conversion supérieurs en fonction de la mesure de conversion sélectionnée.
 Principaux attributs d’expérience de conversion par rapport aux 30 jours précédents
 Visualisation [barre horizontale](/help/analysis-workspace/visualizations/horizontal-bar.md) qui affiche les principaux attributs d’expérience de conversion, par rapport aux 30 jours précédents, en fonction de la mesure de conversion sélectionnée.
@@ -190,10 +183,10 @@ Visualisation [en ligne](/help/analysis-workspace/visualizations/line.md) montra
    * **Mots-clés d’expérience**
 Un [tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) présentant les principaux mots-clés d’expérience en fonction de la mesure de conversion sélectionnée.
 
-* **Où les ressources apparaissent-elles sur mon site ?**
+* **Où les ressources apparaissent-elles sur mon site ?**
 Ce tableau à structure libre détaille l’emplacement des ressources les plus consultées. Utilisez cette analyse pour identifier les pages hautement performantes et optimiser l’emplacement des ressources.
 
-   * **Où les ressources les plus consultées apparaissent-elles ?**
+   * **Où les ressources les plus consultées apparaissent-elles ?**
 Vous pouvez ventiler n’importe quelle ressource par dimension afin de mieux comprendre où cette image s’affiche.
 
      Dans l’exemple de [tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) (comprenant des [miniatures](#thumbnails) et des [prévisualisations](#previews)), **[!UICONTROL ID de perception de ressource]** est utilisé à la place de [!UICONTROL ID de ressource]. Parfois, la même image peut être dupliquée sur votre site avec une autre URL d’image. L’attribut [!UICONTROL ID de perception de ressource] permet de regrouper ces doublons sous un seul ID.
@@ -205,6 +198,6 @@ Vous pouvez ventiler n’importe quelle ressource par dimension afin de mieux co
 
 >[!MORELIKETHIS]
 >
->[Composants Content Analytics](components.md)
+>[Composants &#x200B;](components.md)
 >[Utiliser des modèles](/help/analysis-workspace/templates/use-templates.md#web-engagement)
 >
