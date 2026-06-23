@@ -27,7 +27,7 @@ topic_v2:
 source-git-commit: 4d42c345b98683ef7d4b802262bd7f0f24b45692
 workflow-type: tm+mt
 source-wordcount: 5868
-ht-degree: 91%
+ht-degree: 95%
 
 ---
 
@@ -436,7 +436,7 @@ Lorsqu’une ligne de jeu de données est sélectionnée dans le tableau des jeu
 >[!CONTEXTUALHELP]
 >id="connections_extendeddatacapacityrows"
 >title="Lignes de capacité de données étendue"
->abstract="Nombre total de lignes disponibles sur une période de plus de 13 mois pour le mois en cours, avec un pourcentage de variation par rapport au mois précédent. Par exemple, le 1er février 2024, le nombre affiche le nombre total de lignes disponibles avec un horodatage d’événement antérieur à janvier 2023."
+>abstract="Nombre total de lignes disponibles sur une période de plus de 13 mois pour le mois en cours, avec un pourcentage de variation par rapport au mois précédent. Par exemple, le 1er février 2024, le nombre affiche le nombre total de lignes disponibles avec une date et heure d’événement antérieur à janvier 2023."
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_extendeddatacapacityrows"
@@ -445,54 +445,54 @@ Lorsqu’une ligne de jeu de données est sélectionnée dans le tableau des jeu
 
 >[!CONTEXTUALHELP]
 >id="connections_aca_corereportablerows"
->title="Lignes principales à signaler de Content Analytics"
->abstract="Nombre total de lignes spécifiques à Content Analytics disponibles au cours des 13 derniers mois pour le mois en cours, avec une modification en pourcentage par rapport au mois précédent.  Par exemple, le 1er février 2024, le nombre affiche le nombre total de lignes disponibles avec un horodatage d’événement de janvier 2023 à janvier 2024."
+>title="Principales lignes Content Analytics pour le reporting"
+>abstract="Nombre total de lignes spécifiques à Content Analytics disponibles au cours des 13 derniers mois pour le mois en cours, avec un pourcentage de variation par rapport au mois précédent.  Par exemple, le 1er février 2024, le nombre affiche le nombre total de lignes disponibles avec une date et heure d’événement de janvier 2023 à janvier 2024."
 
 >[!CONTEXTUALHELP]
 >id="connections_usage_aca_monthlyreportablerows"
->title="Lignes du Content Analytics mensuel"
->abstract="Effectue le suivi du nombre de lignes Content Analytics disponibles pour la création de rapports. Les lignes sur lesquelles effectuer des rapports sont les lignes ingérées moins les lignes ignorées et supprimées lors de l’ingestion. Les lignes sur lesquelles effectuer des rapports servent de mesure clé pour la facturation et l’utilisation des données."
+>title="Lignes Content Analytics mensuelles"
+>abstract="Cette option effectue le suivi du nombre de lignes Content Analytics disponibles pour la création de rapports. Les lignes sur lesquelles effectuer des rapports sont les lignes ingérées moins les lignes ignorées et supprimées lors de l’ingestion. Les lignes sur lesquelles effectuer des rapports servent de mesure clé pour la facturation et l’utilisation des données."
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_aca_corereportablerows"
->title="Lignes principales à signaler de Content Analytics"
->abstract="Les lignes principales à signaler de Content Analytics sont des valeurs instantanées et non des totaux agrégés. Ces valeurs sont mises à jour de manière dynamique en fonction du dernier mois de la période sélectionnée. Les valeurs reflètent l’instantané du mois sélectionné."
+>title="Principales lignes Content Analytics pour le reporting"
+>abstract="Les principales lignes Content Analytics pour le reporting sont des valeurs instantanées et non des totaux agrégés. Ces valeurs sont mises à jour de manière dynamique en fonction du dernier mois de la période sélectionnée. Les valeurs reflètent l’instantané du mois sélectionné."
 
 
 >[!CONTEXTUALHELP]
 >id="connections_b2b_coreportablebpp"
->title="Lignes à signaler du profil professionnel principal"
->abstract="Nombre total de lignes à déclarer de profil professionnel disponibles au cours des 13 derniers mois pour le mois en cours, avec une variation en pourcentage par rapport au mois précédent.  Par exemple, le 1er février 2024, le nombre affiche le nombre total de lignes disponibles avec un horodatage d’événement de janvier 2023 à janvier 2024."
+>title="Principales lignes de profil professionnel pour le reporting"
+>abstract="Nombre total de lignes de profil professionnel pour le reporting disponibles au cours des 13 derniers mois pour le mois en cours, avec un pourcentage de variation par rapport au mois précédent.  Par exemple, le 1er février 2024, le nombre affiche le nombre total de lignes disponibles avec une date et heure d’événement de janvier 2023 à janvier 2024."
 
 >[!CONTEXTUALHELP]
 >id="connections_b2b_historicalreportablebpp"
->title="Lignes à signaler historiques du profil d&#39;entreprise"
->abstract="Nombre total de lignes à déclarer de profil professionnel disponibles sur une période de plus de 13 mois pour le mois en cours, avec une variation en pourcentage par rapport au mois précédent. Par exemple, le 1er février 2024, le nombre affiche le nombre total de lignes disponibles avec un horodatage d’événement antérieur à janvier 2023."
+>title="Lignes de profil professionnel historiques pour le reporting"
+>abstract="Nombre total de lignes de profil professionnel pour le reporting disponibles sur une période de plus de 13 mois pour le mois en cours, avec un pourcentage de variation par rapport au mois précédent. Par exemple, le 1er février 2024, le nombre affiche le nombre total de lignes disponibles avec une date et heure d’événement antérieur à janvier 2023."
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_b2b_corereportablebpp"
->title="Lignes à signaler du profil d&#39;entreprise principal"
->abstract="Les lignes à déclarer du profil métier principal sont des valeurs d’instantané, et non des totaux agrégés. Ces valeurs sont mises à jour de manière dynamique en fonction du dernier mois de la période sélectionnée. Les valeurs reflètent l’instantané du mois sélectionné."
+>title="Principales lignes de profil professionnel pour le reporting"
+>abstract="Les principales lignes de profil professionnel pour le reporting sont des valeurs instantanées et non des totaux agrégés. Ces valeurs sont mises à jour de manière dynamique en fonction du dernier mois de la période sélectionnée. Les valeurs reflètent l’instantané du mois sélectionné."
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_b2b_historicalreportablebpp"
->title="Lignes à signaler historiques du profil d&#39;entreprise"
->abstract="Les lignes à signaler de profil métier historique sont des valeurs instantanées et non des totaux agrégés. Ces valeurs sont mises à jour de manière dynamique en fonction du dernier mois de la période sélectionnée. Les valeurs reflètent l’instantané du mois sélectionné."
+>title="Lignes de profil professionnel historiques pour le reporting"
+>abstract="Les lignes historiques de profil professionnel pour le reporting sont des valeurs instantanées et non des totaux agrégés. Ces valeurs sont mises à jour de manière dynamique en fonction du dernier mois de la période sélectionnée. Les valeurs reflètent l’instantané du mois sélectionné."
 
 >[!CONTEXTUALHELP]
 >id="connections_monthlymediastarts"
->title="Démarrages mensuels des médias"
->abstract="Le nombre total de démarrages mensuels de médias disponibles au cours des 13 derniers mois pour le mois en cours, avec un pourcentage de changement par rapport au mois précédent.  Par exemple, le 1er février 2024, le nombre indique le nombre total de démarrages de média disponibles avec un horodatage d’événement compris entre janvier 2023 et janvier 2024."
+>title="Démarrages média mensuels"
+>abstract="Nombre total de démarrages média mensuels disponibles au cours des 13 derniers mois pour le mois en cours, avec un pourcentage de variation par rapport au mois précédent.  Par exemple, le 1er février 2024, le nombre affiche le nombre total de démarrages média disponibles avec une date et heure d’événement de janvier 2023 à janvier 2024."
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_monthlymediastarts"
->title="Démarrages mensuels des médias"
->abstract="Les démarrages mensuels des médias sont des valeurs instantanées et non des totaux agrégés. Ces valeurs sont mises à jour de manière dynamique en fonction du dernier mois de la période sélectionnée. Les valeurs reflètent l’instantané du mois sélectionné."
+>title="Démarrages média mensuels"
+>abstract="Les démarrages média mensuels sont des valeurs instantanées et non des totaux agrégés. Ces valeurs sont mises à jour de manière dynamique en fonction du dernier mois de la période sélectionnée. Les valeurs reflètent l’instantané du mois sélectionné."
 
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_aca_monthlyreportablerows"
->title="Lignes du Content Analytics mensuel"
+>title="Lignes Content Analytics mensuelles"
 >abstract="Les lignes de Content Analytics mensuelles sont des valeurs d’instantané, et non des totaux agrégés. Ces valeurs sont mises à jour de manière dynamique en fonction du dernier mois de la période sélectionnée. Les valeurs reflètent l’instantané du mois sélectionné."
 
 
