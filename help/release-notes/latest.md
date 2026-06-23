@@ -27,16 +27,16 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 537fc30db0f6e6bddc54df7bbcc04d802226958f
+source-git-commit: 9d0d572a176bf61f2b02ba1c98f0fc4202797692
 workflow-type: tm+mt
-source-wordcount: 229
-ht-degree: 51%
+source-wordcount: 298
+ht-degree: 39%
 
 ---
 
 # Notes de mise à jour actuelles de Customer Journey Analytics (juin 2026)
 
-**Dernière mise à jour** : 22 juin 2026
+**Dernière mise à jour** : 23 juin 2026
 
 Ces notes de mise à jour couvrent la période de publication de juin 2026. Les mises à jour d’Adobe Customer Journey Analytics suivent un [modèle de diffusion continue](releases.md) qui permet une approche plus évolutive et plus progressive du déploiement des fonctionnalités. Par conséquent, ces notes de mise à jour sont mises à jour plusieurs fois par mois. Veuillez les vérifier régulièrement.
 
@@ -45,6 +45,7 @@ Ces notes de mise à jour couvrent la période de publication de juin 2026. Les 
 | Fonctionnalité et description | [Le déploiement commence](releases.md) | [Disponibilité générale](releases.md) |
 | -----------|-----------|-----------|
 | **Data Mirror** <br/>[Data Mirror](/help/data-mirror/data-mirror.md) est une fonctionnalité d’Experience Platform qui permet l’ingestion de modifications au niveau des lignes (capture de données de modification) à partir de solutions d’entrepôt de données externes ([!DNL Snowflake], [!DNL Azure Databricks] et [!DNL Google BigQuery]) dans Customer Journey Analytics à l’aide de schémas relationnels. Il préserve les relations de données, applique l’unicité et prend en charge le contrôle de version sans nécessiter de processus d’extraction, de transformation et de chargement (ETL) en amont. | 25 mars 2026 | 17 Juin 2026 |
+| **Valider vos données dans l’assistant AI** <br/>Vous pouvez utiliser l’assistant AI pour [valider la qualité des données de vos jeux de données Adobe Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-cloud-ai/experience-cloud-ai/agents/data-validation). Optimisée par Agent Orchestrator, la fonctionnalité de validation des données peut effectuer des validations statistiques et sémantiques sur les jeux de données, analyser les champs des jeux de données, identifier les problèmes de qualité des données et renvoyer des résumés en langage naturel avec des informations exploitables. | | 22 Juin 2026 |
 
 ### Correctifs dans Customer Journey Analytics
 
