@@ -25,10 +25,10 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: e557971b741732dae55ba56ee4a44c039a5e3d78
 workflow-type: tm+mt
-source-wordcount: 4111
-ht-degree: 64%
+source-wordcount: 4177
+ht-degree: 63%
 
 ---
 
@@ -546,6 +546,13 @@ Vous pouvez éventuellement spécifier dans la section **[!UICONTROL Remplacemen
 1. Activez **[!UICONTROL Configurer les remplacements d’en-tête]**.
 1. Saisissez le **[!UICONTROL Nom de l’en-tête]**. Par exemple : `x-asset-service`.
 1. Saisissez la **[!UICONTROL valeur d’en-tête]**. Tout ce que vous spécifiez est secret et non visible dans l’interface utilisateur (sauf si vous choisissez explicitement de divulguer ![Visibilité](/help/assets/icons/Visibility.svg) la valeur lors de la saisie).
+
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_paidmedia_adplatforms_nosourceconnectors"
+>title="Aucun connecteur source"
+>abstract="Paid Media nécessite des connecteurs source Experience Platform pour vos éditeurs d’annonces publicitaires. Aucun connecteur Google Ads ou Meta Ads n’est disponible dans ce sandbox. Configurez un ou plusieurs de ces connecteurs dans l’interface **&#x200B;**&#x200B;> **[!UICONTROL Sources]** et revenez à cette étape pour continuer la configuration des médias achetés Content Analytics."
+>additional-url="https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/advertising/ads" text="Source Google Ads"
 
 #### Enregistrer {#web-save}
 
