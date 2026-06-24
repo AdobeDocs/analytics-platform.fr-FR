@@ -552,7 +552,7 @@ Vous pouvez éventuellement spécifier dans la section **[!UICONTROL Remplacemen
 >id="aca_onboarding_paidmedia_adplatforms_nosourceconnectors"
 >title="Aucun connecteur source"
 >abstract="Paid Media nécessite des connecteurs source Experience Platform pour vos éditeurs d’annonces publicitaires. Aucun connecteur Google Ads ou Meta Ads n’est disponible dans ce sandbox. Configurez un ou plusieurs de ces connecteurs dans l’interface **&#x200B;**&#x200B;> **[!UICONTROL Sources]** et revenez à cette étape pour continuer la configuration des médias achetés Content Analytics."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/advertising/ads" text="Source Google Ads"
+>additional-url="https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/advertising/ads" text="Source Google Ads"
 
 #### Enregistrer {#web-save}
 
