@@ -25,7 +25,7 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: e557971b741732dae55ba56ee4a44c039a5e3d78
+source-git-commit: 6af3e9063dc192814c888e786ca61ff1703aedf5
 workflow-type: tm+mt
 source-wordcount: 4177
 ht-degree: 63%
@@ -554,7 +554,7 @@ Vous pouvez éventuellement spécifier dans la section **[!UICONTROL Remplacemen
 >abstract="Paid Media nécessite des connecteurs source Experience Platform pour vos éditeurs d’annonces publicitaires. Aucun connecteur Google Ads ou Meta Ads n’est disponible dans ce sandbox. Configurez un ou plusieurs de ces connecteurs dans l’interface **&#x200B;**&#x200B;> **[!UICONTROL Sources]** et revenez à cette étape pour continuer la configuration des médias achetés Content Analytics."
 >additional-url="https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/advertising/ads" text="Source Google Ads"
 
-#### Enregistrer {#web-save}
+##### Enregistrer {#web-save}
 
 Après avoir spécifié les détails du canal web, sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer la configuration. Sélectionnez **[!UICONTROL Annuler]** pour annuler la configuration.
 
