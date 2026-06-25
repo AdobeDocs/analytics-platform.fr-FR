@@ -18,9 +18,9 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: 8c577ff8508f15944ced77aaf20b692c911fdd3e
 workflow-type: tm+mt
-source-wordcount: 934
+source-wordcount: 933
 ht-degree: 2%
 
 ---
@@ -45,7 +45,7 @@ Les flux de données dans Customer Journey Analytics et Adobe Analytics vous per
 | **Mesures calculées**<br/> | Non disponible | Non disponible |
 | **Modèle de persistance** | Flexible. Les paramètres de persistance de la vue de données (attribution et expiration) sont appliqués au moment du rapport lorsque le flux est généré. Prend en charge tous les paramètres d’attribution disponibles dans une vue de données : **Original**, **Le plus récent**, **Tous**, **Premier connu** et **Dernier connu**. | Seuls les modèles d’attribution **la plus récente (dernière touche)** et **valeur d’origine (première touche)** sont représentés. L’affectation linéaire est gérée de la même manière que la dernière touche. |
 | **Format du fichier de sortie** | Parquet<p>Prend en charge de manière native des données imbriquées et structurées complexes. Les listes de produits sont représentées sous la forme de tableaux structurés/objets imbriqués. </p><p>Nécessite un outil de lecture prenant en compte le parquet, tel que BigQuery, Snowflake ou Apache Spark.</p> | TSV<p>Lignes plates et lisibles par l’utilisateur. ne prend pas en charge les données structurées de manière native ; les champs complexes tels que les listes de produits doivent être codés en tant que chaînes délimitées propriétaires nécessitant une logique d’analyse personnalisée ;</p> |
-| **Destinations des diffusions** | Amazon S3, Azure RBAC, Azure SAS, Google Cloud Platform, Snowflake. | Amazon S3, Azure RBAC, Azure SAS, Google Cloud Platform. Prend également en charge **SFTP**. |
+| **Destinations des diffusions** | Amazon S3, Azure RBAC, Azure SAS, Google Cloud Platform. | Amazon S3, Azure RBAC, Azure SAS, Google Cloud Platform. Prend également en charge **SFTP**. |
 
 {style="table-layout:auto"}
 
