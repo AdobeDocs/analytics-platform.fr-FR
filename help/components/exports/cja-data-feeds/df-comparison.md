@@ -7,20 +7,14 @@ hide: true
 exl-id: 32b71016-7c53-409f-9ce4-521a40e2eb96
 autotag-review: '2026-05-19T08:44:26.806Z'
 TQID: 'https://experienceleague.adobe.com/R7c5-VutwSkyghNvwC2gZv2KUEJoa263AN0Tkdg3w4o'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: 9c3546c33914feb7a00b5bb78a575dd511cabb5f
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: 840107d7c99277b0d75a5344b59109c6690b0596
 workflow-type: tm+mt
-source-wordcount: 933
+source-wordcount: 954
 ht-degree: 2%
 
 ---
@@ -35,7 +29,7 @@ Les flux de données dans Customer Journey Analytics et Adobe Analytics vous per
 | **Traitement des données**<br/> Les données sont traitées à différentes étapes, en fonction du produit que vous utilisez. | Les données sont traitées au **moment du rapport** et de nombreuses fonctionnalités de création de rapports peuvent donc être utilisées pour modifier les données historiques, comme le groupement, les champs dérivés et la segmentation. | Les données sont traitées au **moment de la collecte**. Par conséquent, les fonctionnalités de création de rapports telles que les règles de traitement et les règles VISTA n’affectent pas les données historiques. |
 | **Fréquence de diffusion**<br/> Détermine la fréquence d’envoi du flux de données et la période incluse dans le flux. | **Quotidien** (de minuit à minuit dans le fuseau horaire de la vue de données) ou **Horaire**. | **Quotidien** (de minuit à minuit dans le fuseau horaire de la suite de rapports) ou **Horaire**. Les flux de 15 minutes sont possibles, mais ne sont pas disponibles par défaut. |
 | **Accès en retard**<br/> Accès dont l’horodatage appartient à une fenêtre de fréquence de diffusion précédente, mais qui arrivent après l’expiration de cette fenêtre. <p>Par exemple, les accès tardifs peuvent provenir d’une application mobile qui met en mémoire tampon les événements hors ligne et les envoie lorsqu’elle se reconnecte.</p> | Le paramètre **Délai de traitement** contrôle la durée pendant laquelle le système attend la fermeture de la fenêtre de fréquence avant de déclencher l’exportation, ce qui laisse un temps supplémentaire pour l’arrivée des données retardées. | Les accès en retard peuvent être **inclus ou exclus** via l’option de configuration **Accès en retard**. <p>Le paramètre **Intervalle de recherche en amont** contrôle l’intervalle de temps écoulé par le système pour inclure les données différées.</p> |
-| **Accès dans le désordre**<br/> Accès dont les horodatages ne correspondent pas à l’ordre dans lequel ils ont été reçus. | Étant donné que Customer Journey Analytics accepte les données en flux continu et par lots, il n’existe aucune garantie que les événements pour une personne donnée arriveront dans l’ordre d’horodatage. Customer Journey Analytics réorganise les données par horodatage par personne au moment du rapport. <p>Le paramètre **Délai de traitement** permet de réduire les événements dans le désordre dans la sortie du flux de données en donnant plus de temps aux données par lots d’arriver avant l’exportation. L’ordre des événements dans la diffusion n’est pas garanti.</p><p>**Important** : le consommateur final des données de votre flux de données doit être en mesure de gérer les horodatages dans le désordre, par personne, car la commande des accès dans la diffusion du flux de données n’est pas garantie.</p> | Adobe Analytics exige que les données arrivent dans l’ordre par visiteur au moment de la collecte, mais l’ordre des accès dans la diffusion du flux de données n’est pas garanti.</p> |
+| **Accès dans le désordre**<br/> Accès dont les horodatages ne correspondent pas à l’ordre dans lequel ils ont été reçus. | Étant donné que Customer Journey Analytics accepte les données en flux continu et par lots, il n’existe aucune garantie que les événements pour une personne donnée arriveront dans l’ordre d’horodatage. Bien que Customer Journey Analytics réorganise les données par horodatage et par personne, il ne peut exporter que les données qui sont arrivées. Cela signifie que les accès en retard peuvent être exportés après les accès avec un horodatage ultérieur.<p>Le paramètre **Délai de traitement** permet de réduire les événements dans le désordre dans la sortie du flux de données en donnant plus de temps aux données par lots d’arriver avant l’exportation. L’ordre des événements dans la diffusion n’est pas garanti.</p><p>**Important** : le consommateur final des données de votre flux de données doit être en mesure de gérer les horodatages dans le désordre, par personne, car la commande des accès dans la diffusion du flux de données n’est pas garantie.</p> | Adobe Analytics exige que les données arrivent dans l’ordre par visiteur au moment de la collecte, mais l’ordre des accès dans la diffusion du flux de données n’est pas garanti.</p> |
 | **Fenêtre de renvoi**<br/> Exporte les données historiques comprises entre deux dates antérieures. | Limité à la fenêtre dynamique de données de la connexion. | Limité à la limite de conservation des données de la suite de rapports : **25 mois** par défaut. |
 | **Segmentation** | Les segments peuvent être appliqués aux flux de données via le segment de la vue de données, un segment spécifique au flux, ou les deux. | Les segments ne peuvent pas être appliqués. |
 | **Assemblage** | Pris en charge. Active la résolution d’identité entre appareils, en liant les événements entre appareils à une seule personne. | Non pris en charge. Les données groupées ne peuvent pas être exportées via les flux de données Adobe Analytics. |
