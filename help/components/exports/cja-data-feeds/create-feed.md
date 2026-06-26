@@ -18,7 +18,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: 2c37660458afef6d0202370f3b595b4d907173ef
+source-git-commit: 9c3546c33914feb7a00b5bb78a575dd511cabb5f
 workflow-type: tm+mt
 source-wordcount: 2675
 ht-degree: 29%
@@ -228,4 +228,5 @@ Avant de créer un flux de données, il est important de comprendre les bases de
    | [!UICONTROL **Activer le manifeste**] | Choisissez d’inclure un fichier manifeste avec chaque diffusion de flux de données. Le fichier manifeste contient des informations pour chaque fichier inclus dans le flux de données. |
 
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
+
 
