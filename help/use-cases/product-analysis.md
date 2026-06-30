@@ -122,8 +122,8 @@ Les fonctionnalités suivantes de CX Enterprise vous permettent d’agir efficac
 * [Création et publication d’audiences](/help/components/audiences/publish.md) pour activation à partir de Customer Journey Analytics
 * Activer les audiences via les produits CX Enterprise :
    * [Exécutez des expériences](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/content-management/content-experiment/get-started-experiment) dans AJO et Adobe Target, et mesurez l’impact des variations dans Customer Journey Analytics à l’aide du [panneau Expérimentation](/help/analysis-workspace/c-panels/experimentation.md)
-   * [Diffuser des engagements in-app](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/in-app/get-started-in-app) aux utilisateurs dans AJO.
-* [Activer des audiences](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activation-overview) vers des destinations externes avec la plateforme de données clients en temps réel d’Adobe.
+   * [Diffuser des engagements in-app](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/channels/in-app/get-started-in-app) aux utilisateurs dans AJO.
+* [Activer des audiences](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/activate/activation-overview) vers des destinations externes avec la plateforme de données clients en temps réel d’Adobe.
 
 ## Partager des informations avec l’organisation
 
