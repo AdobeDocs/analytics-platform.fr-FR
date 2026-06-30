@@ -25,10 +25,10 @@ topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 14557a59902110b1768d61e621adfb3f76ee9930
+source-git-commit: 28cfbe249f20361bf56f0a6216bc715dae5a6d3a
 workflow-type: tm+mt
-source-wordcount: 894
-ht-degree: 5%
+source-wordcount: 896
+ht-degree: 6%
 
 ---
 
@@ -54,15 +54,15 @@ Des données précises sur les produits sont la pierre angulaire d&#39;une analy
 Les fonctionnalités suivantes de Adobe Experience Platform et Customer Journey Analytics vous permettent d’ingérer et de gérer vos données de produit à grande échelle :
 
 * Adobe Experience Platform
-   * [Jeux de données &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/catalog/datasets/overview)
-   * [Préparation des données &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/data-prep/home)
-   * [Distiller de données&#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/query/data-distiller/overview)
+   * [Jeux de données](https://experienceleague.adobe.com/fr/docs/experience-platform/catalog/datasets/overview)
+   * [Préparation des données](https://experienceleague.adobe.com/fr/docs/experience-platform/data-prep/home)
+   * [Data Distiller](https://experienceleague.adobe.com/fr/docs/experience-platform/query/data-distiller/overview)
 * Customer Journey Analytics
-   * [Connexions &#x200B;](/help/connections/overview.md)
+   * [Connexions](/help/connections/overview.md)
    * [Vues de données](/help/data-views/data-views.md), y compris [champs dérivés&#x200B;](/help/data-views/derived-fields/derived-fields.md)
-   * [Segments &#x200B;](/help/components/segments/seg-overview.md)
+   * [Segments](/help/components/segments/seg-overview.md)
    * [Mesures calculées](/help/components/calc-metrics/calc-metr-overview.md)
-   * [Analyse guidée &#x200B; : frise chronologique&#x200B;](/help/guided-analysis/types/timeline.md)
+   * [Analyse guidée : Chronologie](/help/guided-analysis/types/timeline.md)
 
 ## Acquisition et activation des mesures
 
@@ -75,10 +75,10 @@ La croissance du produit repose sur des informations exploitables issues de la h
 
 Les fonctionnalités suivantes de Customer Journey Analytics vous permettent de mesurer efficacement l’acquisition et l’activation :
 
-* [Analyse guidée &#x200B; : Croissance active](/help/guided-analysis/types/active-growth.md)
+* [Analyse guidée : Croissance active](/help/guided-analysis/types/active-growth.md)
 * [Analyse guidée : Croissance nette](/help/guided-analysis/types/net-growth.md)
 * [Analyse guidée : Tendances](/help/guided-analysis//types/trends.md)
-* [Panneau Attribution &#x200B;](/help/analysis-workspace/c-panels/attribution.md)
+* [Panneau Attribution](/help/analysis-workspace/c-panels/attribution.md)
 * [Tableau à structure libre](/help/analysis-workspace/c-panels/freeform-panel.md) qui inclut la dimension de canal marketing (création à l’aide d’un [champ dérivé](/help/data-views/derived-fields/derived-fields.md))
 
 ## Mesurer l’engagement et l’adoption
@@ -95,9 +95,9 @@ Les fonctionnalités suivantes de Customer Journey Analytics vous aident à suiv
 * [Analyse guidée : Funnel](/help/guided-analysis/types/funnel.md)
 * [Analyse guidée : Tendances de conversion](/help/guided-analysis/types/conversion-trends.md)
 * [Analyse guidée : impact des versions](/help/guided-analysis/types/release-impact.md)
-* [Analyse guidée : impact de la première utilisation&#x200B;](/help/guided-analysis/types/first-use-impact.md)
+* [Analyse guidée : impact de la première utilisation](/help/guided-analysis/types/first-use-impact.md)
 * [Analyse guidée : Chronologie](/help/guided-analysis/types/timeline.md)
-* [Tableaux à structure libre &#x200B;](/help/analysis-workspace/c-panels/freeform-panel.md)
+* [Tableaux à structure libre](/help/analysis-workspace/c-panels/freeform-panel.md)
 * [Flux](/help/analysis-workspace/visualizations/c-flow/flow.md)
 
 ## Mesurer la rétention et l’attrition
@@ -108,10 +108,10 @@ La rétention mesure le nombre d’utilisateurs qui continuent à utiliser le pr
 
 Les fonctionnalités suivantes de Customer Journey Analytics vous permettent de suivre efficacement la rétention et l’attrition :
 
-* [Analyse guidée : rétention](/help/guided-analysis/types/retention.md)&#x200B;
+* [Analyse guidée : Rétention](/help/guided-analysis/types/retention.md)
 * [Analyse guidée : Croissance active](/help/guided-analysis/types/active-growth.md)
 * [Analyse guidée : Croissance nette](/help/guided-analysis/types/net-growth.md)
-* [Tableau de cohortes &#x200B;](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
+* [Table de cohorte](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
 
 ## Informations sur les produits exploitables
 
@@ -119,13 +119,13 @@ Les informations n’offrent de valeur que lorsqu’elles pilotent l’action. C
 
 Les fonctionnalités suivantes de CX Enterprise vous permettent d’agir efficacement sur les insights :
 
-* [Créer et publier des audiences](/help/components/audiences/publish.md)&#x200B; pour activation à partir de Customer Journey Analytics
+* [Création et publication d’audiences](/help/components/audiences/publish.md) pour activation à partir de Customer Journey Analytics
 * Activer les audiences via les produits CX Enterprise :
    * [Exécutez des expériences](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/content-management/content-experiment/get-started-experiment) dans AJO et Adobe Target, et mesurez l’impact des variations dans Customer Journey Analytics à l’aide du [panneau Expérimentation](/help/analysis-workspace/c-panels/experimentation.md)
-   * [Diffuser des engagements in-app](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/channels/in-app/get-started-in-app) aux utilisateurs dans AJO
-* [Activer des audiences](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/activate/activation-overview) vers des destinations externes avec la plateforme de données clients en temps réel d’Adobe&#x200B;
+   * [Diffuser des engagements in-app](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/channels/in-app/get-started-in-app) aux utilisateurs dans AJO.
+* [Activer des audiences](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/activate/activation-overview) vers des destinations externes avec la plateforme de données clients en temps réel d’Adobe.
 
-## Partagez des informations avec l’organisation&#x200B;
+## Partager des informations avec l’organisation
 
 Communiquez les résultats clés entre les équipes afin d’aligner les efforts, de favoriser la collaboration et de vous assurer que tout le monde travaille à l’atteinte des objectifs communs des produits et des entreprises.
 

@@ -26,10 +26,10 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 0145475e18cfbc3ae3a83e5e3838cdec02b57bda
+source-git-commit: 28cfbe249f20361bf56f0a6216bc715dae5a6d3a
 workflow-type: tm+mt
-source-wordcount: 2168
-ht-degree: 89%
+source-wordcount: 2183
+ht-degree: 90%
 
 ---
 
@@ -102,8 +102,7 @@ Pour partager un rôle de projet spécifique avec des utilisateurs et utilisatri
 
    Ou
 
-   Pour partager un projet individuel uniquement, vous pouvez ouvrir le projet que vous souhaitez partager, puis sélectionner **[!UICONTROL Partager]** > **[!UICONTROL Partager avec les utilisateurs de Workspace]**.
-Si des modifications ne sont pas enregistrées, on vous invitera d’abord à enregistrer votre projet.
+   Pour partager un projet individuel uniquement, vous pouvez ouvrir le projet que vous souhaitez partager, puis sélectionner **[!UICONTROL Partager]** > **[!UICONTROL Partager avec les utilisateurs et utilisatrices Workspace]**.Si des modifications n’ont pas enregistrées, on vous invite d’abord à enregistrer votre projet.
 
    La boîte de dialogue Partage de projets s’affiche. Les sections [!UICONTROL **Partager par lien**] et [!UICONTROL **Paramètres**] de la boîte de dialogue ne sont visibles que lors du partage d’un seul projet.
 
@@ -203,9 +202,9 @@ Pour partager un projet Analysis Workspace avec tout le monde, procédez comme 
 
 1. Indiquez si l’option de sécurité suivante doit être activée (cette option peut être contrôlée par votre administrateur ou administratrice Customer Journey Analytics) :
 
-   * **[!UICONTROL Exiger une authentification CX Enterprise]:**
+   * **[!UICONTROL Exiger une authentification Experience Cloud] :**
 
-     Lorsque cette option est activée, les seuls utilisateurs pouvant accéder au projet sont ceux qui peuvent se connecter à l’organisation CX Enterprise dans laquelle le projet que vous partagez a été créé. Toutefois, les personnes avec lesquelles vous partagez vos données n’ont pas nécessairement besoin d’avoir accès à Customer Journey Analytics.
+     Lorsque cette option est activée, les seuls utilisateurs pouvant accéder au projet sont ceux qui peuvent se connecter à l’organisation CX Enterprise (Experience Cloud) dans laquelle le projet que vous partagez a été créé. Toutefois, les personnes avec lesquelles vous partagez vos données n’ont pas nécessairement besoin d’avoir accès à Customer Journey Analytics.
 
      Les administrateurs et administratrices de Customer Journey Analytics peuvent configurer cette préférence pour l’entreprise, comme décrit dans [Préférences](/help/analysis-workspace/user-preferences.md). Selon la manière dont les administrateurs et administratrices ont configuré cette option, vous pouvez rencontrer les scénarios suivants :
 

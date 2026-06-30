@@ -15,10 +15,10 @@ subfeature_v2:
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 14557a59902110b1768d61e621adfb3f76ee9930
+source-git-commit: 28cfbe249f20361bf56f0a6216bc715dae5a6d3a
 workflow-type: tm+mt
-source-wordcount: 606
-ht-degree: 29%
+source-wordcount: 590
+ht-degree: 25%
 
 ---
 
@@ -105,15 +105,7 @@ Vous pouvez modifier une période de deux manières :
 
 * Dans la liste [[!UICONTROL Périodes] , choisissez &#x200B;](#date-ranges-list) titre de la période.
 
-Vous utilisez le [créateur de périodes](/help/components/date-ranges/create.md#date-range-builder) pour modifier la période.
-
-
-
-
-Utilisez le gestionnaire de périodes pour partager, renommer ou supprimer des périodes. Pour accéder au gestionnaire de dates :
-
-1. Connectez-vous à [analytics.adobe.com](https://analytics.adobe.com) à lʼaide de vos identifiants Adobe ID.
-1. Accédez à [!UICONTROL Composants] > [!UICONTROL Périodes].
+Utilisez le [créateur de périodes](/help/components/date-ranges/create.md#date-range-builder) pour modifier la période.Utilisez le [gestionnaire de périodes](/help/components/date-ranges/manage.md) pour partager, renommer ou supprimer des périodes.
 
 
 <!--

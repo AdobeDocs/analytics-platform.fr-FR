@@ -45,10 +45,10 @@ topic_v2:
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 14557a59902110b1768d61e621adfb3f76ee9930
+source-git-commit: 28cfbe249f20361bf56f0a6216bc715dae5a6d3a
 workflow-type: tm+mt
 source-wordcount: 3109
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -136,7 +136,7 @@ Le tableau suivant répertorie les fonctionnalités disponibles dans Customer Jo
 | **Créateur de règles de classification** | Pris en charge à l’aide des [sous-chaînes](/help/data-views/component-settings/substring.md) dans Customer Journey Analytics. Utilise des manipulations de chaînes lors de la génération des rapports plutôt que des jeux de données de recherche. |
 | **Durée de session personnalisée** | La durée de session peut être configurée via les [Paramètres de session](../../data-views/create-dataview.md#session-settings) dans une vue Données. Voir [Paramètres de session](../../data-views/session-settings.md) pour plus d’informations. <br/>La gestion des événements d’arrière-plan mobile est prise en charge par le SDK Mobile Adobe Experience Platform. Voir [Cycle de vie du réseau Edge](https://developer.adobe.com/client-sdks/documentation/lifecycle-for-edge-network/) pour plus d’informations. |
 | **Conversion de devises** | Prise en charge dans le cadre du [formatage d’un composant de mesure](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dataviews/component-settings/format) dans une vue de données. |
-| **Attributs du client** | Les jeux de données de profil sont l’équivalent de l’attribution de clientèle. Les jeux de données de profil ne sont pas automatiquement importés à partir de l’expérience client Entreprise, mais ils doivent être chargés vers Experience Platform avant d’être disponibles dans Customer Journey Analytics. |
+| **Attributs du client** | Les jeux de données de profil sont l’équivalent de l’attribution de clientèle. Les jeux de données de profil ne sont pas automatiquement importés à partir d’Experience Cloud, mais doivent être chargés sur Experience Platform avant d’être disponibles dans Customer Journey Analytics. |
 | **Flux de données** | L’export des données de première génération des jeux de données est disponible via l’[API Experience Platform Data Access](https://experienceleague.adobe.com/fr/docs/experience-platform/data-access/api) et via les [Destinations Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/activate/export-datasets). Ces options permettent d’exporter au niveau de l’événement ou de la ligne toutes les données collectées ou ingérées dans le lac de données Experience Platform. Les colonnes de données de post-traitement ne sont pas disponibles, car les colonnes « post » sont calculées au moment de la requête. L’export de colonnes « post » est disponible via la création de rapports. |
 | **Création de rapports d’entrepôt de données** | [L’export de tableaux complets Customer Journey Analytics](/help/analysis-workspace/export/export-cloud.md) correspond à l’évolution des rapports des entrepôts de données dans Adobe Analytics, avec de nombreuses nouvelles fonctionnalités souvent demandées et qui ne sont pas disponibles dans les entrepôts de données aujourd’hui. |
 | **Entrées, sorties et dimensions et mesures du temps passé** | Prises en charge (les entrées et les sorties sont désormais appelées Débuts de session et fins de session) et sont calculées d’une manière légèrement différente. |
