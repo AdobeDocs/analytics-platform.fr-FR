@@ -26,8 +26,8 @@ topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 4d42c345b98683ef7d4b802262bd7f0f24b45692
 workflow-type: tm+mt
-source-wordcount: 5868
-ht-degree: 95%
+source-wordcount: 5884
+ht-degree: 97%
 
 ---
 
@@ -62,8 +62,7 @@ L’affichage [!UICONTROL Connexions] a deux interfaces : [[!UICONTROL Liste]](
 
 L’interface **[!UICONTROL Liste]** est l’interface par défaut pour Connexions. Si cette option n’est pas sélectionnée, sélectionnez l’onglet **[!UICONTROL Liste]** pour accéder à l’interface.
 
-L’interface **[!UICONTROL Liste]** affiche un tableau de toutes les connexions disponibles.
-△
+L’interface **[!UICONTROL Liste]** affiche un tableau de toutes les connexions disponibles.△
 ![vue liste](assets/list-view.png)
 
 Les colonnes ou icônes suivantes sont disponibles dans le tableau.
@@ -493,7 +492,7 @@ Lorsqu’une ligne de jeu de données est sélectionnée dans le tableau des jeu
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_aca_monthlyreportablerows"
 >title="Lignes Content Analytics mensuelles"
->abstract="Les lignes de Content Analytics mensuelles sont des valeurs d’instantané, et non des totaux agrégés. Ces valeurs sont mises à jour de manière dynamique en fonction du dernier mois de la période sélectionnée. Les valeurs reflètent l’instantané du mois sélectionné."
+>abstract="Les lignes Content Analytics mensuelles sont des valeurs d’instantané, et non des totaux agrégés. Ces valeurs sont mises à jour de manière dynamique en fonction du dernier mois de la période sélectionnée. Les valeurs reflètent l’instantané du mois sélectionné."
 
 
 
@@ -584,6 +583,5 @@ L’interface Utilisation se compose de deux panneaux :
 
 >[!MORELIKETHIS]
 >
->Tutoriel [Affichage, dépannage et modification &#x200B;](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/connections/connections-details-experience-in-cja) paramètres de connexion.
->[Gérer l’utilisation de Customer Journey Analytics](/help/technotes/estimate-usage.md)
+>Tutoriel [Afficher, résoudre les problèmes et modifier les paramètres de connexion](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/connections/connections-details-experience-in-cja).Gérer l’utilisation de Customer Journey Analytics&rbrack;(/help/technotes/estimate-usage.md)
 >
