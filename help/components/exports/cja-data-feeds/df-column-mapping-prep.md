@@ -21,7 +21,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: 66a8a96da6710d20b01b9315fe87ba38c54c2511
 workflow-type: tm+mt
 source-wordcount: 1092
 ht-degree: 3%
@@ -29,6 +29,8 @@ ht-degree: 3%
 ---
 
 # Préparer le mappage des colonnes de flux de données d’Adobe Analytics vers Customer Journey Analytics
+
+{{release-limited-testing}}
 
 Customer Journey Analytics offre une architecture plus flexible qu’Adobe Analytics pour déterminer les colonnes qui peuvent être incluses dans un flux de données. La plupart des entreprises doivent s’attendre à exporter des colonnes de flux de données de Customer Journey Analytics différentes de celles exportées à partir d’Adobe Analytics. Ces différences sont dues aux facteurs suivants :
 
