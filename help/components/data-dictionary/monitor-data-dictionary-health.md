@@ -14,10 +14,10 @@ subfeature_v2:
   - id: df28738e-9c71-4aa8-929e-edde22340cc6
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: b7493ad9283b5830c36b8e3ac942bf9295b693f8
+source-git-commit: 7c679fcbf52d2a5832d16bf138bd197f11f4ceb7
 workflow-type: tm+mt
-source-wordcount: 461
-ht-degree: 88%
+source-wordcount: 434
+ht-degree: 87%
 
 ---
 
@@ -39,9 +39,7 @@ ht-degree: 88%
 >[!CONTEXTUALHELP]
 >id="datadictionary_share_primary"
 >title="Partager le composant principal"
->abstract="Lorsque cette option est sélectionnée, le composant principal est partagé avec toutes les personnes ayant accès aux composants en double (les propriétaires et les personnes avec lesquelles les composants sont partagés). Ces personnes peuvent ensuite sélectionner le composant principal dans la liste des composants pour les projets futurs. Cependant, elles ne peuvent pas modifier le composant, même si elles étaient propriétaires d’un composant en double qui a été consolidé. <br/>Cette option est disponible uniquement lorsque le composant principal est un segment, une mesure calculée ou une période. Les mesures et dimensions sont toujours disponibles pour l’ensemble des utilisateurs et utilisatrices."
->
->When this option is deselected, the primary component still replaces duplicates in existing projects and segments, but users who didn't previously have access to it can't access it from the component list for future projects. "
+>abstract="Lorsque cette option est sélectionnée, le composant principal est partagé avec toutes les personnes ayant accès aux composants en double (les propriétaires et les personnes avec lesquelles les composants sont partagés). Ces personnes peuvent ensuite sélectionner le composant principal dans la liste des composants pour les projets futurs. Cependant, elles ne peuvent pas modifier le composant, même si elles étaient propriétaires d’un composant en double qui a été consolidé."
 
 <!-- markdownlint-disable MD034 -->
 
