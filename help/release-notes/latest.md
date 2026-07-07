@@ -3,6 +3,7 @@ title: Notes de mise à jour actuelles de Customer Journey Analytics
 description: Afficher les dernières notes de mise à jour de Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
+hold: true
 TQID: https://experienceleague.adobe.com/EQKhna8E33DddZQGWe3ASBKMY9r-UsfuUcJg7DMwH0w
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
@@ -27,25 +28,28 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 9c3546c33914feb7a00b5bb78a575dd511cabb5f
+source-git-commit: b27408ce620b9dc62c06e4dc6dda00b2aef1c46d
 workflow-type: tm+mt
-source-wordcount: 615
-ht-degree: 44%
+source-wordcount: 746
+ht-degree: 38%
 
 ---
 
-# Notes de mise à jour actuelles de Customer Journey Analytics (juin 2026)
+# Notes de mise à jour actuelles de Customer Journey Analytics (juillet 2026)
 
-**Dernière mise à jour** : 25 juin 2026
+**Dernière mise à jour** : 8 juillet 2026
 
-Ces notes de mise à jour couvrent la période de publication de juin 2026. Les mises à jour d’Adobe Customer Journey Analytics suivent un [modèle de diffusion continue](releases.md) qui permet une approche plus évolutive et plus progressive du déploiement des fonctionnalités. Par conséquent, ces notes de mise à jour sont mises à jour plusieurs fois par mois. Veuillez les vérifier régulièrement.
+Ces notes de mise à jour couvrent la période de publication de juillet 2026. Les mises à jour d’Adobe Customer Journey Analytics suivent un [modèle de diffusion continue](releases.md) qui permet une approche plus évolutive et plus progressive du déploiement des fonctionnalités. Par conséquent, ces notes de mise à jour sont mises à jour plusieurs fois par mois. Veuillez les vérifier régulièrement.
 
 ## Fonctionnalités nouvelles ou mises à jour
 
 | Fonctionnalité et description | [Le déploiement commence](releases.md) | [Disponibilité générale](releases.md) |
 | -----------|-----------|-----------|
-| **Data Mirror** <br/>[Data Mirror](/help/data-mirror/data-mirror.md) est une fonctionnalité d’Experience Platform qui permet l’ingestion de modifications au niveau des lignes (capture de données de modification) à partir de solutions d’entrepôt de données externes ([!DNL Snowflake], [!DNL Azure Databricks] et [!DNL Google BigQuery]) dans Customer Journey Analytics à l’aide de schémas relationnels. Il préserve les relations de données, applique l’unicité et prend en charge le contrôle de version sans nécessiter de processus d’extraction, de transformation et de chargement (ETL) en amont. | 25 mars 2026 | 17 Juin 2026 |
-| **Valider vos données dans l’assistant AI** <br/>Vous pouvez utiliser l’assistant AI pour [valider la qualité des données de vos jeux de données Adobe Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-cloud-ai/experience-cloud-ai/agents/data-validation). Optimisée par Agent Orchestrator, la fonctionnalité de validation des données peut effectuer des validations statistiques et sémantiques sur les jeux de données, analyser les champs des jeux de données, identifier les problèmes de qualité des données et renvoyer des résumés en langage naturel avec des informations exploitables. | | 22 Juin 2026 |
+| **Analyse sous-événement** <br/>L&#39;analyse sous-événement permet d&#39;analyser les données à un niveau plus granulaire que le niveau de l&#39;événement. Au lieu de filtrer des événements entiers, vous pouvez segmenter des conteneurs individuels au sein d’un événement. <p>Par exemple, vous pouvez segmenter une catégorie de produits spécifique sans inclure tous les autres produits achetés dans la même commande. Vous pouvez également définir des objets ou des tableaux qui font partie de vos données d’événement en tant que conteneurs distincts dans une vue de données.</p> | 8 juillet | Fin juillet 2026 |
+| **CJA B2B : la prise en charge des jeux de données ad hoc et relationnels** <br/>Les jeux de données ad hoc et relationnels sont désormais également pris en charge dans les connexions basées sur le compte B2B de CJA.<p>(Lien vers la documentation à suivre.)</p> | | 20 Juillet 2026 |
+| **Données de média payantes** <br/>Le média payant est ajouté comme troisième canal pour Content Analytics.<p>(Lien vers la documentation à suivre.)</p> | | 31 juillet 2026 |
+| **Mise à jour de l’interface utilisateur d’utilisation des connexions** <br/>Vous pouvez afficher les détails d’utilisation de chaque module individuel, tels que Customer Journey Analytics et Customer Journey Analytics B2B edition. De plus, vous pouvez ventiler les rapports d’utilisation pour chacun des modules par mois.<p>(Lien vers la documentation à suivre.)</p> | | 31 juillet 2026 |
+| **Coworker d’entreprise CX : valider vos données lors de la migration d’Adobe Analytics vers Customer Journey Analytics** <br/>Une nouvelle compétence dans le Coworker d’entreprise CX vous permet de valider les données de votre implémentation Customer Journey Analytics par rapport aux données de votre implémentation Adobe Analytics existante. <p>Cette compétence compare automatiquement chaque dimension, mesure et tendance, puis génère des informations et des recommandations pilotées par l’IA que vous pouvez implémenter pour faciliter votre migration vers Customer Journey Analytics.</p><p>(Lien vers la documentation à suivre.)</p> | | Fin juillet 2026 |
 
 ### Correctifs dans Customer Journey Analytics
 
