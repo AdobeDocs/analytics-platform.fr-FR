@@ -3,7 +3,6 @@ title: Notes de mise à jour actuelles de Customer Journey Analytics
 description: Afficher les dernières notes de mise à jour de Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-hold: true
 TQID: https://experienceleague.adobe.com/EQKhna8E33DddZQGWe3ASBKMY9r-UsfuUcJg7DMwH0w
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
@@ -28,10 +27,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: b27408ce620b9dc62c06e4dc6dda00b2aef1c46d
+source-git-commit: ce00cd801894776f2128a86504f5c78afe438986
 workflow-type: tm+mt
-source-wordcount: 746
-ht-degree: 38%
+source-wordcount: 655
+ht-degree: 44%
 
 ---
 
@@ -45,29 +44,30 @@ Ces notes de mise à jour couvrent la période de publication de juillet 2026. L
 
 | Fonctionnalité et description | [Le déploiement commence](releases.md) | [Disponibilité générale](releases.md) |
 | -----------|-----------|-----------|
-| **Analyse sous-événement** <br/>L&#39;analyse sous-événement permet d&#39;analyser les données à un niveau plus granulaire que le niveau de l&#39;événement. Au lieu de filtrer des événements entiers, vous pouvez segmenter des conteneurs individuels au sein d’un événement. <p>Par exemple, vous pouvez segmenter une catégorie de produits spécifique sans inclure tous les autres produits achetés dans la même commande. Vous pouvez également définir des objets ou des tableaux qui font partie de vos données d’événement en tant que conteneurs distincts dans une vue de données.</p> | 8 juillet | Fin juillet 2026 |
-| **CJA B2B : la prise en charge des jeux de données ad hoc et relationnels** <br/>Les jeux de données ad hoc et relationnels sont désormais également pris en charge dans les connexions basées sur le compte B2B de CJA.<p>(Lien vers la documentation à suivre.)</p> | | 20 Juillet 2026 |
-| **Données de média payantes** <br/>Le média payant est ajouté comme troisième canal pour Content Analytics.<p>(Lien vers la documentation à suivre.)</p> | | 31 juillet 2026 |
-| **Mise à jour de l’interface utilisateur d’utilisation des connexions** <br/>Vous pouvez afficher les détails d’utilisation de chaque module individuel, tels que Customer Journey Analytics et Customer Journey Analytics B2B edition. De plus, vous pouvez ventiler les rapports d’utilisation pour chacun des modules par mois.<p>(Lien vers la documentation à suivre.)</p> | | 31 juillet 2026 |
-| **Coworker d’entreprise CX : valider vos données lors de la migration d’Adobe Analytics vers Customer Journey Analytics** <br/>Une nouvelle compétence dans le Coworker d’entreprise CX vous permet de valider les données de votre implémentation Customer Journey Analytics par rapport aux données de votre implémentation Adobe Analytics existante. <p>Cette compétence compare automatiquement chaque dimension, mesure et tendance, puis génère des informations et des recommandations pilotées par l’IA que vous pouvez implémenter pour faciliter votre migration vers Customer Journey Analytics.</p><p>(Lien vers la documentation à suivre.)</p> | | Fin juillet 2026 |
+| **Analyse sous-événement** <br/>L&#39;analyse sous-événement permet d&#39;analyser les données à un niveau plus granulaire que le niveau de l&#39;événement. Au lieu de filtrer des événements entiers, vous pouvez segmenter des conteneurs individuels au sein d’un événement. <p>Par exemple, vous pouvez segmenter une catégorie de produits spécifique sans inclure tous les autres produits achetés dans la même commande. Vous pouvez également définir des objets ou des tableaux qui font partie de vos données d’événement en tant que conteneurs distincts dans une vue de données.</p> | 15 juillet 2026 | Fin juillet 2026 |
+| **B2B edition : la prise en charge des jeux de données ad hoc et relationnels** <br/>Les jeux de données ad hoc et relationnels sont désormais également pris en charge dans les connexions basées sur les comptes dans Customer Journey Analytics B2B edition.<p>(Lien vers la documentation à suivre.)</p> | | 20 Juillet 2026 |
+| **Content Analytics : Paid media data** <br/>Paid media est désormais disponible en tant que troisième canal pour Content Analytics.<p>(Lien vers la documentation à suivre.)</p> | | 31 juillet 2026 |
+| **Mise à jour de l’interface utilisateur d’utilisation des connexions** <br/>Vous pouvez désormais afficher les détails d’utilisation de chaque module individuel, tels que Customer Journey Analytics ou Customer Journey Analytics B2B edition. En outre, vous pouvez désormais ventiler les rapports d’utilisation de chacun des modules par mois.<p>(Lien vers la documentation à suivre.)</p> | | 31 juillet 2026 |
+| **Coworker d’entreprise CX : valider vos données lors de la migration d’Adobe Analytics vers Customer Journey Analytics** <br/>Une nouvelle compétence dans le Coworker d’entreprise CX vous permet de valider les données de votre implémentation Customer Journey Analytics par rapport aux données de votre implémentation Adobe Analytics existante. <p>Cette compétence compare automatiquement chaque dimension, mesure et tendance individuellement selon les besoins. Il peut également comparer toutes les suites de rapports Adobe Analytics à toutes les vues de données Customer Journey Analytics. Les compétences génèrent ensuite des informations et des recommandations pilotées par l’IA que vous pouvez mettre en œuvre pour faciliter votre migration vers Customer Journey Analytics.</p><p>(Lien vers la documentation à suivre.)</p> | | Fin juillet 2026 |
 
 ### Correctifs dans Customer Journey Analytics
 
-**&#x200B;**&#x200B;: AN-456858, AN-455865, AN-455706, AN-455592, AN-455484, AN-455180, AN-454999, AN-454170, AN-454145, AN-453793, AN-452921, AN-452009, AN-451958, AN-451643, AN-451600, AN-451525, AN-451477, AN-451262, AN-451161, AN-450772, AN-443594 434416
+**&#x200B;**&#x200B;: AN-457527, AN-451161, AN-459034, AN-458071, AN-458398
 **Composants** :
-**Connexions** : AN-457065, AN-453705
-**&#x200B;**&#x200B;: AN-451203, AN-447596
+**Connexions** : AN-457065
+**Content Analytics** :
 **Analyse guidée** :
-**Exports** : AN-452006, AN-451989, AN-440567
-**Vues des données** : AN-451198
+**Exports** :
+**Vues des données** : AN-453201
+**Ingestion des données** :
 **Mise en œuvre** :
-**&#x200B;**&#x200B;: AN-440912, AN-457586, AN-457533, AN-455713, AN-455623, AN-455063, AN-454512, AN-454053, AN-453977, AN-453781, AN-453683, AN-451974, AN-451735, AN-451731, AN-451190, AN-449813, AN-447173, AN-447139, AN-446184, AN-445794, AN-445354 442819
-**Reporting** : AN-454589, AN-454517, AN-453982, AN-451822, AN-451497, AN-451463, AN-451259, AN-451215, AN-450661, AN-447699, AN-448375, AN-447692, AN-
+**&#x200B;**&#x200B;: AN-457533, AN-453683
+**Reporting** : AN-457607, AN-447692, AN-451259, AN-455713
 **Segmentation** :
-**Rapports planifiés** : AN-451980, AN-451882, AN-450715
+**Rapports planifiés** : AN-450715
 **Dimensions et mesures partagées** :
-**Analyse de l’audience** : AN-449656, AN-450400
-**Autre** : AN-457063, AN-454140, AN-453937, AN-453825, AN-452959, AN-452934, AN-452296, AN-451781, AN-450974
+**Analyse de l’audience** :
+**autres** : AN-457063,
 
 ## Fonctionnalités reportées
 
