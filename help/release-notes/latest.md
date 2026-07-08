@@ -1,5 +1,5 @@
 ---
-title: Notes de mise à jour actuelles de Customer Journey Analytics
+title: Notes de mise à jour actuelles de Customer Journey Analytics
 description: Afficher les dernières notes de mise à jour de Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
@@ -27,10 +27,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: ce00cd801894776f2128a86504f5c78afe438986
+source-git-commit: 4dd845eaf5f101e21a8e754ac588cb837398b975
 workflow-type: tm+mt
-source-wordcount: 655
-ht-degree: 44%
+source-wordcount: 666
+ht-degree: 41%
 
 ---
 
@@ -44,10 +44,10 @@ Ces notes de mise à jour couvrent la période de publication de juillet 2026. L
 
 | Fonctionnalité et description | [Le déploiement commence](releases.md) | [Disponibilité générale](releases.md) |
 | -----------|-----------|-----------|
-| **Analyse sous-événement** <br/>L&#39;analyse sous-événement permet d&#39;analyser les données à un niveau plus granulaire que le niveau de l&#39;événement. Au lieu de filtrer des événements entiers, vous pouvez segmenter des conteneurs individuels au sein d’un événement. <p>Par exemple, vous pouvez segmenter une catégorie de produits spécifique sans inclure tous les autres produits achetés dans la même commande. Vous pouvez également définir des objets ou des tableaux qui font partie de vos données d’événement en tant que conteneurs distincts dans une vue de données.</p> | 15 juillet 2026 | Fin juillet 2026 |
+| **Analyse sous-événement** <br/>L&#39;analyse sous-événement permet d&#39;analyser les données à un niveau plus granulaire que le niveau de l&#39;événement. Au lieu de filtrer des événements entiers, vous pouvez segmenter des conteneurs individuels au sein d’un événement. <p>Par exemple, vous pouvez segmenter une catégorie de produits spécifique sans inclure tous les autres produits achetés dans la même commande. Vous pouvez également définir des objets ou des tableaux qui font partie de vos données d’événement en tant que conteneurs distincts dans une vue de données.</p><p>(Lien vers la documentation à suivre.)</p> | 15 juillet 2026 | Fin juillet 2026 |
 | **B2B edition : la prise en charge des jeux de données ad hoc et relationnels** <br/>Les jeux de données ad hoc et relationnels sont désormais également pris en charge dans les connexions basées sur les comptes dans Customer Journey Analytics B2B edition.<p>(Lien vers la documentation à suivre.)</p> | | 20 Juillet 2026 |
 | **Content Analytics : Paid media data** <br/>Paid media est désormais disponible en tant que troisième canal pour Content Analytics.<p>(Lien vers la documentation à suivre.)</p> | | 31 juillet 2026 |
-| **Mise à jour de l’interface utilisateur d’utilisation des connexions** <br/>Vous pouvez désormais afficher les détails d’utilisation de chaque module individuel, tels que Customer Journey Analytics ou Customer Journey Analytics B2B edition. En outre, vous pouvez désormais ventiler les rapports d’utilisation de chacun des modules par mois.<p>(Lien vers la documentation à suivre.)</p> | | 31 juillet 2026 |
+| **Mise à jour de l’interface d’utilisation des connexions** <br/>dans l’interface d’utilisation lors de la gestion des connexions, vous pouvez désormais voir les détails d’utilisation de chaque module individuel, tels que Customer Journey Analytics ou Customer Journey Analytics B2B edition. <p>En outre, vous pouvez désormais ventiler les rapports d’utilisation de chacun des modules par mois.</p><p>(Lien vers la documentation à suivre.)</p> | | 31 juillet 2026 |
 | **Coworker d’entreprise CX : valider vos données lors de la migration d’Adobe Analytics vers Customer Journey Analytics** <br/>Une nouvelle compétence dans le Coworker d’entreprise CX vous permet de valider les données de votre implémentation Customer Journey Analytics par rapport aux données de votre implémentation Adobe Analytics existante. <p>Cette compétence compare automatiquement chaque dimension, mesure et tendance individuellement selon les besoins. Il peut également comparer toutes les suites de rapports Adobe Analytics à toutes les vues de données Customer Journey Analytics. Les compétences génèrent ensuite des informations et des recommandations pilotées par l’IA que vous pouvez mettre en œuvre pour faciliter votre migration vers Customer Journey Analytics.</p><p>(Lien vers la documentation à suivre.)</p> | | Fin juillet 2026 |
 
 ### Correctifs dans Customer Journey Analytics
@@ -67,13 +67,13 @@ Ces notes de mise à jour couvrent la période de publication de juillet 2026. L
 **Rapports planifiés** : AN-450715
 **Dimensions et mesures partagées** :
 **Analyse de l’audience** :
-**autres** : AN-457063,
+**Autre** : AN-457063
 
 ## Fonctionnalités reportées
 
 | Fonctionnalité et description | [Le déploiement commence](releases.md) | [Disponibilité générale](releases.md) |
 | -----------|-----------|-----------|
-| **Services de médias en streaming : prise en charge des données de planning** <br/>Vous pouvez désormais charger des données planifiées antérieures de contenu de médias en streaming et en direct afin de suivre l’audience plus facilement et avec plus de précision.<p>Les éléments suivants sont des exemples de contenu en direct qui sont pris en charge avec le chargement de données de planning :</p><ul><li>Plateformes FAST (Free Ad Supported TV)</li><li>Flux locaux</li><li>Sports en direct</li></ul><p>Le chargement des données de planning vous permet de suivre les audiences des programmes individuels qui ont été diffusés pendant la période que vous avez indiquée dans le fichier de chargement. Vous pouvez même recueillir des données d’audience pour des sujets ou des segments de programme spécifiques.</p><p>Ces fonctionnalités sont disponibles quelle que soit la manière dont vous avez mis en œuvre Streaming Media Collection.</p><p>Auparavant, il était difficile de relier avec précision une session donnée à des programmes spécifiques lors de l’analyse du contenu en direct, et il n’était pas possible de relier une session donnée à des sujets individuels ou à des segments de programmes.</p><p>Pour plus d’informations, voir [Charger des données de planning pour suivre le contenu en direct](https://experienceleague.adobe.com/fr/docs/media-analytics/using/media-use-cases/track-schedule-data) | 29 octobre 2025 | À confirmer<p>(Initialement prévu pour le 29 octobre 2025)</p> |
+| **Services de médias en streaming : prise en charge des données de planning** <br/>Vous pouvez désormais charger des données planifiées antérieures de contenu de médias en streaming et en direct afin de suivre l’audience plus facilement et avec plus de précision.<p>Les éléments suivants sont des exemples de contenu en direct qui sont pris en charge avec le chargement de données de planning :</p><ul><li>Plateformes FAST (Free Ad Supported TV)</li><li>Flux locaux</li><li>Sports en direct</li></ul><p>Le chargement des données de planning vous permet de suivre les audiences des programmes individuels qui ont été diffusés pendant la période que vous avez indiquée dans le fichier de chargement. Vous pouvez même recueillir des données d’audience pour des sujets ou des segments de programme spécifiques.</p><p>Ces fonctionnalités sont disponibles quelle que soit la manière dont vous avez mis en œuvre Streaming Media Collection.</p><p>Auparavant, il était difficile de relier avec précision une session donnée à des programmes spécifiques lors de l’analyse du contenu en direct, et il n’était pas possible de relier une session donnée à des sujets individuels ou à des segments de programmes.</p><p>Pour plus d’informations, voir [Chargement des données de planning pour suivre le contenu en direct](https://experienceleague.adobe.com/fr/docs/media-analytics/using/media-use-cases/track-schedule-data). | 29 octobre 2025 | À confirmer<p>(Initialement prévu pour le 29 octobre 2025)</p> |
 
 >[!MORELIKETHIS]
 >
