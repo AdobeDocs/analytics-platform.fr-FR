@@ -20,10 +20,10 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: 9efc51843684b8cad96d01f7ada99eafc5950b42
 workflow-type: tm+mt
-source-wordcount: 624
-ht-degree: 96%
+source-wordcount: 632
+ht-degree: 90%
 
 ---
 
@@ -39,7 +39,7 @@ L’AAID est transformé en `HEX(post_visid_high) + "-" + HEX(post_visid_low)` d
 
 ## ECID
 
-L’ECID (ID Experience Cloud), également parfois appelé MCID (ID Marketing Cloud), est un champ d’identifiant de l’appareil distinct qui est renseigné dans Adobe Analytics lorsqu’Analytics est implémenté à l’aide du [Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=fr). L’ECID est représenté par la colonne `mcvisid` dans les flux de données Adobe Analytics.
+L’ECID (ID Experience Cloud), également parfois appelé MCID (ID Marketing Cloud), est un champ d’identifiant de l’appareil distinct qui est renseigné dans Adobe Analytics lorsqu’Analytics est implémenté à l’aide du [Service d’identification des visiteurs](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=fr) (AppMeasurement) ou du service d’identification Experience Platform (SDK Web). L’ECID est représenté par la colonne `mcvisid` dans les flux de données Adobe Analytics.
 
 Si un ECID existe sur un événement, l’AAID peut être basé sur l’ECID selon que le [délai de grâce](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/grace-period.html?lang=fr) d’Analytics est configuré ou non. Voir également : [Requêtes d’ID Analytics et Experience Cloud](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/legacy-analytics.html?lang=fr).
 
@@ -65,8 +65,7 @@ Les éléments situés entre &lt;> chevrons représentent les endroits où les v
 
 Dans le mappage d’identité :
 
-* En présence d’un ECID, l’identité est marquée comme l’identité principale de l’événement. Remarque : dans ce cas, l’AAID peut se baser sur l’ECID conformément aux informations ci-dessus.
-Dans le cas contraire, l’AAID est marqué comme étant l’identité principale de l’événement.
+* En présence d’un ECID, l’identité est marquée comme l’identité principale de l’événement. Remarque : dans ce cas, l’AAID peut se baser sur l’ECID conformément aux informations ci-dessus.Dans le cas contraire, l’AAID est marqué comme étant l’identité principale de l’événement.
 * L’AACUSTOMID n’est jamais marqué comme l’ID principal de l’événement. Cependant, en présence d’un AACUSTOMID, l’AAID est basé sur l’AACUSTOMID conformément au processus décrit ci-dessus.
 
 Lorsque l’identité ou les identités sont copiées dans `identityMap`, `endUserIDs._experience.mcid.namespace.code` est également défini sur le même événement :

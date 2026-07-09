@@ -19,10 +19,10 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: 9efc51843684b8cad96d01f7ada99eafc5950b42
 workflow-type: tm+mt
-source-wordcount: 1664
-ht-degree: 100%
+source-wordcount: 1377
+ht-degree: 95%
 
 ---
 
@@ -47,9 +47,9 @@ Les éléments de données sont les blocs de construction de votre dictionnaire 
 
 Les sections suivantes décrivent les éléments de données suggérés et d’autres éléments de données courants que vous pouvez configurer.
 
-Il existe différents types d’éléments de données. Vous pouvez configurer deux éléments de données courants : l’un qui capture le nom de la page que les personnes consultent sur votre site et l’autre qui capture l’Experience Cloud ID de chaque personne qui visite votre site.
+Il existe différents types d’éléments de données. Un élément de données courant que vous pouvez configurer est celui qui capture le nom de la page que les personnes consultent sur votre site.
 
-Après avoir configuré ces deux éléments de données, vous pouvez configurer des éléments de données supplémentaires pour les données spécifiques que vous souhaitez capturer.
+Après avoir configuré l’élément de données nom de page, vous pouvez configurer des éléments de données supplémentaires pour les données spécifiques que vous souhaitez capturer.
 
 Enfin, après avoir défini tous les éléments de données de votre choix, vous devez les affecter au [schéma que vous avez créé](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) précédemment. Pour ce faire, définissez un autre élément de données XDM qui fournit une représentation du schéma XDM.
 
@@ -93,55 +93,11 @@ Pour créer un élément de données de nom de page, procédez comme suit :
 
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
 
-   Vous devez maintenant configurer un élément de données faisant référence à Experience Cloud ID qui est automatiquement fourni par le SDK Web Adobe Experience Platform et disponible via l’extension du service Experience Cloud ID.
-
-1. Continuez avec [élément de données ECID](#ecid-data-element).
-
-#### Élément de données ECID
-
-Un élément de données courant qui s’applique à la plupart des organisations est un élément de données qui capture l’Experience Cloud ID de chaque personne qui visite votre site.
-
-Pour créer un élément de données ECID, procédez comme suit :
-
-1. Connectez-vous à experiencecloud.adobe.com à l’aide de vos identifiants Adobe ID.
-
-1. Dans Adobe Experience Platform, accédez à **[!UICONTROL Collecte de données]** > **[!UICONTROL Balises]**.
-
-1. Sélectionnez la balise que vous venez de créer dans la liste de [!UICONTROL Propriétés de balise] pour l’ouvrir.
-
-1. (Le cas échéant) Installez l’extension du service Experience Cloud ID si elle n’est pas déjà installée :
-
-   1. Sélectionnez **[!UICONTROL Extensions]** dans le rail de gauche.
-
-   1. L’onglet **[!UICONTROL Installé]** est sélectionné par défaut. Si la tuile **[!UICONTROL Service Experience Cloud ID]** est répertoriée, passez à l’étape 5.
-
-   1. Si la tuile **[!UICONTROL Service Experience Cloud ID]** n’est pas répertoriée, sélectionnez l’onglet **[!UICONTROL Catalogue]**.
-
-   1. Dans le champ de recherche, recherchez **[!UICONTROL Service Experience Cloud ID]**, puis sélectionnez la tuile lorsqu’elle apparaît
-
-   1. Sélectionnez **[!UICONTROL Installer]** > **[!UICONTROL Enregistrer]**.
-
-1. Sélectionnez **[!UICONTROL Éléments de données]** dans le rail de gauche.
-
-1. Sélectionnez **[!UICONTROL Ajouter un élément de données]**.
-
-1. Dans la boîte de dialogue **[!UICONTROL Créer un élément de données]**, spécifiez les informations suivantes :
-
-   * **[!UICONTROL Nom]** : nom de votre élément de données. Par exemple `ECID`.
-
-   * **[!UICONTROL Extension]** : sélectionnez **[!UICONTROL Service Experience Cloud ID]** dans la liste.
-
-   * **[!UICONTROL Type d’élément de données]** : sélectionnez **[!UICONTROL ECID]** dans la liste.
-
-     ![Élément de données ECID](assets/ecid-dataelement.png)
-
-1. Sélectionnez **[!UICONTROL Enregistrer]**.
-
 1. Continuez avec [Création d’éléments de données supplémentaires](#create-additional-data-elements).
 
 ### Créer des éléments de données supplémentaires
 
-Créez un élément de données pour chaque type de données que vous souhaitez collecter. Utilisez le même processus décrit dans [Élément de données Nom de page](#page-name-data-element) et [Élément de données ECID](#ecid-data-element) pour créer chaque élément de données supplémentaire.
+Créez un élément de données pour chaque type de données que vous souhaitez collecter. Utilisez le même processus décrit dans [Élément de données Nom de page](#page-name-data-element) pour créer chaque élément de données supplémentaire.
 
 Les éléments de données que vous créez doivent avoir un champ de corrélation dans votre schéma.
 
@@ -200,12 +156,6 @@ Définir un élément de données d’objet XDM :
    * **[!UICONTROL Sandbox]** : sélectionnez le sandbox dans la liste.
 
    * **[!UICONTROL Schéma]** : sélectionnez le schéma dans la liste.
-
-1. Mappez l’attribut `identification > core > ecid`, défini dans le schéma sur l’élément de données ECID. Sélectionnez l’icône de cylindre pour choisir facilement l’élément de données ECID dans la liste d’éléments de données.
-
-   ![Choisir un élément de données ECID](assets/pick-ecid-dataelement.png)
-
-   ![Mapper l’élément de données ECID](assets/map-ecid.png)
 
 1. Mappez l’attribut `web > webPageDetails > name`, défini dans le schéma sur l’élément de données Nom de page.
 
