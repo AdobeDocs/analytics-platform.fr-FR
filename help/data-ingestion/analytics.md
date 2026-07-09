@@ -38,7 +38,7 @@ Ce guide de démarrage rapide explique comment utiliser les données collectées
 >
 >Vous disposez d’une licence Adobe Analytics et l’avez déployée sur un ou plusieurs de vos sites web, en utilisant l’une des méthodes d’implémentation documentées :
 >
->- [Mise en œuvre d’Analytics à l’aide d’Experience Platform Edge](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/overview.html)
+>- [Mise en œuvre d’Analytics à l’aide d’Experience Platform Edge](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/overview.html?lang=fr)
 >- [Mise en œuvre d’Analytics à l’aide de l’extension Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html?lang=fr)
 >- [Mise en œuvre d’Analytics à l’aide de JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=fr)
 
