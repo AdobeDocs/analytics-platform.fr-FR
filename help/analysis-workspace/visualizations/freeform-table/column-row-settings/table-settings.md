@@ -6,18 +6,11 @@ exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 role: User
 hold: true
 TQID: https://experienceleague.adobe.com/qQKmobJ4J1RPezRG-hk38l7JNioIshzjMaKXWVoUWsM
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 5da7d5ec554e61244e839fb1affebc0be9ecb109
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: cb6c7d24-631f-46e5-9e39-3a2705f73962id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 8a63b9948d58c4057db7fa74b36e9d0e0210f946
 workflow-type: tm+mt
 source-wordcount: 1596
 ht-degree: 56%
@@ -38,7 +31,7 @@ Les paramètres des lignes varient selon le composant déposé dans le tableau. 
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Paramètres de ligne et de colonne dans un tableau à structure libre](https://experienceleague.adobe.com/fr/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Paramètres de ligne et de colonne dans un tableau à structure libre](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 
@@ -114,7 +107,7 @@ Les options de menu contextuel supplémentaires suivantes sont disponibles lors 
 
 ## Modifier la hauteur des lignes
 
-Vous pouvez définir la [densité d’affichage](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density) d’un projet sur **[!UICONTROL Compact]**, **[!UICONTROL Confortable]** et **[!UICONTROL Développé]**.
+Vous pouvez définir la [densité d’affichage](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density) d’un projet sur **[!UICONTROL Compact]**, **[!UICONTROL Confortable]** et **[!UICONTROL Développé]**.
 
 
 ## Exemple de classifications intégrées
@@ -152,11 +145,11 @@ Cet exemple illustre comment utiliser les options de menu contextuel **[!UICONTR
 
    1. Sélectionnez **[!UICONTROL Créer en tant que champ dérivé]** dans le menu contextuel pour toute ligne sélectionnée dans le tableau modifié.
 
-      ![Sélectionnez l’option de menu Créer comme champ dérivé &#x200B;](assets/context-derived.png)
+      ![Sélectionnez l’option de menu Créer comme champ dérivé ](assets/context-derived.png)
 
    1. Inspectez, éventuellement modifiez et enregistrez la définition du champ dérivé en fonction de toutes les modifications apportées dans le tableau.
 
-      ![&#x200B; Boîte de dialogue Créer un champ dérivé &#x200B;](assets/dialog-derived.png)
+      ![ Boîte de dialogue Créer un champ dérivé ](assets/dialog-derived.png)
 
 * Réinitialiser le tableau à structure libre à l’état avant les modifications.
 
@@ -164,4 +157,3 @@ Cet exemple illustre comment utiliser les options de menu contextuel **[!UICONTR
    1. Sélectionnez **[!UICONTROL Réinitialiser les lignes renommées]** dans la fenêtre contextuelle **[!UICONTROL Lignes renommées]**.
 
       ![Réinitialiser le tableau à structure libre](assets/popup-reset.png)
-
