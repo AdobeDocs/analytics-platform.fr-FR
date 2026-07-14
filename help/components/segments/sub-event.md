@@ -3,13 +3,12 @@ title: Analyse Des Sous-Événements
 description: Découvrez comment l’analyse des sous-événements vous permet de filtrer des produits individuels ou d’autres conteneurs au sein d’un événement dans Customer Parcours Analytics, en éliminant le fond perdu d’attribution dans les rapports de produit.
 feature: Segmentation
 hold: true
-feature_v2:
-  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
-subfeature_v2:
-  - id: a544b409-2610-410d-a842-474ac1d0d54e
-source-git-commit: b4bec7c8e476bc2dbffce42bd52ff535b90dcb86
+hide: true
+feature_v2: id: c153fd90-23e1-4614-81d3-3cc7571227f7
+subfeature_v2: id: a544b409-2610-410d-a842-474ac1d0d54e
+source-git-commit: 53fa238b78adc0acabbba3059342e51ba9c23aac
 workflow-type: tm+mt
-source-wordcount: 564
+source-wordcount: 565
 ht-degree: 0%
 
 ---
@@ -32,9 +31,9 @@ Dans l’analyse de sous-événement, la logique d’exclusion se comporte diff�
 
 ## Exemple
 
-Vous souhaitez uniquement mesurer le chiffre d’affaires de la catégorie des suites professionnelles. Sans analyse des sous-événements, l’application d’un segment pour les suites professionnelles inclut le chiffre d’affaires de chaque produit sur une commande (événement) qui contient au moins un produit appartenant à la catégorie des suites professionnelles. Avec l’analyse des sous-événements, vous définissez le filtre au niveau du produit et ne renvoyez que les recettes des produits de la catégorie des suites professionnelles.
+Vous ne voulez mesurer les revenus provenant que de la catégorie des combinaisons professionnelles. Sans analyse des sous-événements, l’application d’un segment pour les suites professionnelles inclut le chiffre d’affaires de chaque produit sur une commande (événement) qui contient au moins un produit appartenant à la catégorie des suites professionnelles. Avec l’analyse des sous-événements, vous définissez le filtre au niveau du produit et ne renvoyez que les recettes des produits de la catégorie des suites professionnelles.
 
-Vous souhaitez également mesurer les recettes en ligne de toutes les autres catégories, à l’exception de la catégorie Hommes.
+Vous devez également mesurer les revenus en ligne de toutes les autres catégories, à l&#39;exception de la catégorie des costumes professionnels.
 
 >[!BEGINTABS]
 
