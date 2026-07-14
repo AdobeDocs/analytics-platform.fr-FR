@@ -4,11 +4,9 @@ description: Découvrez comment l’analyse des sous-événements vous permet de
 feature: Segmentation
 hold: true
 hide: true
-feature_v2:
-  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
-subfeature_v2:
-  - id: a544b409-2610-410d-a842-474ac1d0d54e
-source-git-commit: 53fa238b78adc0acabbba3059342e51ba9c23aac
+feature_v2: id: c153fd90-23e1-4614-81d3-3cc7571227f7
+subfeature_v2: id: a544b409-2610-410d-a842-474ac1d0d54e
+source-git-commit: c504a631398d14479c9a2b70d9ef43ac88e35704
 workflow-type: tm+mt
 source-wordcount: 565
 ht-degree: 0%
@@ -49,7 +47,7 @@ Par conséquent, toutes les commandes contenant au moins une **[!UICONTROL suite
 
 >[!TAB Analyse des sous-événements]
 
-Dans le créateur de segments ou dans le cadre d’un **[!UICONTROL segment rapide]**, vous spécifiez pour **[!UICONTROL Inclure]** le **[!UICONTROL Dimension]** **[!UICONTROL product_category]** **[!UICONTROL est égal à]** **[!UICONTROL Suites professionnelles]** sur le conteneur **[!UICONTROL Products]**.
+Dans le créateur de segments ou dans le cadre d’un **[!UICONTROL segment rapide]**, vous spécifiez pour **[!UICONTROL Inclure]** le **[!UICONTROL Dimension]** **[!UICONTROL product_category]** **[!UICONTROL est égal à]** **[!UICONTROL Vues professionnelles]** dans le conteneur **[!UICONTROL Products]**.
 
 ![Panneau présentant la segmentation au niveau des sous-événements pour les suites professionnelles de catégorie de produit](./assets/product-category-segmentation-subevents.png)
 
