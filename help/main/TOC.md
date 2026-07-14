@@ -2,10 +2,10 @@
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 2125f1a16ffed79f77757120c5679dd4defa1638
+source-git-commit: 6b2b6fbf16c7aa7a7a31bb46ac63e4150bf2cfc8
 workflow-type: tm+mt
-source-wordcount: '1449'
-ht-degree: 91%
+source-wordcount: '1452'
+ht-degree: 92%
 
 ---
 
@@ -369,6 +369,7 @@ ht-degree: 91%
       + [Gérer les segments](/help/components/segments/seg-manage.md)
       + [Opérateurs](/help/components/segments/seg-operators.md)
       + [Utiliser les segments](/help/components/segments/seg-use.md)
+      + {hide-from-toc}[Analyse des sous-événements](/help/components/segments/sub-event.md)
    + Mesures calculées {#cja-calcmetrics}
       + [Vue d’ensemble](../components/calc-metrics/calc-metr-overview.md)
       + Workflow {#cm-workflow}
@@ -527,7 +528,7 @@ ht-degree: 91%
          + [Avertissements](/help/use-cases/data-views/bi-extension/caveats.md)
 
       + Champs dérivés {#derived-fields}
-         + [Instructions relatives aux champs dérivés](/help/use-cases/data-views/derived-fields/guidelines.md)
+         + [Directives relatives aux champs dérivés](/help/use-cases/data-views/derived-fields/guidelines.md)
          + [Créer un rapport sur le trafic généré par LLM et IA](/help/use-cases/data-views/derived-fields/ai-traffic.md)
          + [Créer un rapport sur les objectifs](/help/use-cases/data-views/derived-fields/goals-using-derived-fields.md)
    + Analyse de produit {#product-analysis}
@@ -546,7 +547,7 @@ ht-degree: 91%
          + [Lier des lectures de session](/help/use-cases/third-party/quantum-metric/tie-session-replays.md)
          + [Utiliser des cartes thermiques](/help/use-cases/third-party/quantum-metric/heatmap.md)
          + [Ajouter des événements de friction](/help/use-cases/third-party/quantum-metric/friction-events.md)
-         + {hide-from-toc}[Connecteur &#x200B;](/help/use-cases/third-party/quantum-metric/source-connector.md)
+         + {hide-from-toc}[Connecteur ](/help/use-cases/third-party/quantum-metric/source-connector.md)
 
 + Labs {#labs}
    + [Guide d’utilisation de Labs](../labs/labs.md)
