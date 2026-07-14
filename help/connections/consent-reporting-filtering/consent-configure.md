@@ -5,11 +5,19 @@ solution: Customer Journey Analytics
 feature: Privacy
 role: Admin
 hold: true
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: eb00932f-4d46-46bc-b1d8-10de7588db8did: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
-subfeature_v2: id: ffe2fd81-0630-49b3-a33b-4b8899e89c51id: d3fb138f-79e4-4a81-aedb-76dd93560085
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+subfeature_v2:
+  - id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
+  - id: d3fb138f-79e4-4a81-aedb-76dd93560085
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: eafeab50e86b3e98f372c70a0fd43494015ca002
 workflow-type: tm+mt
 source-wordcount: 759
@@ -76,7 +84,7 @@ Pour créer une configuration de rapport et de filtrage de consentement :
    * Ajoute le jeu de données Profil sélectionné à la connexion.
    * Crée un jeu de données de recherche de politique de consentement pour le sandbox (s’il n’existe pas déjà) et synchronise les noms et descriptions des politiques à partir d’Experience Platform.
    * Ajoute les composants de politique de consentement (dimensions, mesures et champ dérivé) aux vues de données dans la connexion configurée.
-   * Applique le libellé interne **consentement** aux nouveaux composants afin que vous puissiez les filtrer dans la vue de données. Pour plus d’informations sur les libellés internes, voir [ Libellés et politiques ](/help/data-views/data-governance.md).
+   * Applique le libellé interne **consentement** aux nouveaux composants afin que vous puissiez les filtrer dans la vue de données. Pour plus d’informations sur les libellés internes, voir [&#x200B; Libellés et politiques &#x200B;](/help/data-views/data-governance.md).
 
 1. Une fois la configuration terminée, [affichez les composants de politique de consentement dans la vue de données](#view-consent-policy-components-in-the-data-view) pour vérifier qu’ils sont disponibles.
 
