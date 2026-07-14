@@ -5,22 +5,18 @@ solution: Customer Journey Analytics
 feature: Data Views
 exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
 role: Admin
+hold: true
 autotag-review: '2026-05-19T09:11:52.108Z'
 TQID: 'https://experienceleague.adobe.com/zvIcmaZiq3dtL-6b8fal6l2pWVLUbfVcOGWgyuqMqjE'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-subfeature_v2:
-  - id: e1471301-a189-438e-8d48-264a8db508a6
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: e1471301-a189-438e-8d48-264a8db508a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: 65ed91c47b271257451243db6f7e50e127ff4b68
 workflow-type: tm+mt
-source-wordcount: 930
-ht-degree: 93%
+source-wordcount: 955
+ht-degree: 91%
 
 ---
 
@@ -62,7 +58,7 @@ Utilisez cette méthode pour les champs qui utilisent un délimiteur pour sépar
 * **[!UICONTROL Critère]** : comment traiter la liste délimitée de valeurs.
    * **[!UICONTROL De la gauche]** : commencez au début de la liste délimitée et comptez vers l’avant.
    * **[!UICONTROL De la droite]** : commencez à la fin de la liste délimitée et comptez à rebours.
-   * **[!UICONTROL Convertir en tableau]** : traitez cette dimension comme s’il s’agissait d’un élément de schéma de tableau d’objets.
+   * **[!UICONTROL Convertir en tableau]** : traitez cette dimension comme s’il s’agissait d’un élément de schéma de tableau d’objets. La dimension devient disponible sous la forme d’un [conteneur personnalisé](/help/data-views/create-dataview.md#containers-1) que vous pouvez sélectionner dans votre vue de données et utiliser pour l’[analyse des sous-événements](/help/components/segments/sub-event.md) dans un projet Workspace.
 * **[!UICONTROL Délimiteur]** : le délimiteur utilisé par le champ.
 * **[!UICONTROL Index]** : uniquement présent si le critère est De la gauche/droite. Numéro de l’élément comme s’il se trouvait dans un tableau. Par exemple, si l’entrée de chaîne est `"Fox,Turtle,Rabbit,Wolf"` avec un index de 3, la sortie est `"Rabbit"`. Si l’index est supérieur au nombre d’éléments délimités, [Aucune option de valeur](no-value-options.md) ne s’applique.
 
