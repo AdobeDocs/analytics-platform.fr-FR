@@ -2,9 +2,9 @@
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 6b2b6fbf16c7aa7a7a31bb46ac63e4150bf2cfc8
+source-git-commit: 2b0562aa931f2909192929d9ccf2312f08c0d712
 workflow-type: tm+mt
-source-wordcount: '1452'
+source-wordcount: '1462'
 ht-degree: 92%
 
 ---
@@ -145,6 +145,12 @@ ht-degree: 92%
       + [Gérer](/help/connections/audience-analysis/audience-analysis-manage.md)
       + [Analyser](/help/connections/audience-analysis/analyze-audiences.md)
       + [Cas d’utilisation](/help/connections/audience-analysis/audience-analysis-use-cases.md)
+   + Rapports et filtrage de consentement {#consent-reporting-filtering}
+      + [Vue d’ensemble](/help/connections/consent-reporting-filtering/consent-overview.md)
+      + [Configurer](/help/connections/consent-reporting-filtering/consent-configure.md)
+      + [Gérer](/help/connections/consent-reporting-filtering/consent-manage.md)
+      + [Analyser](/help/connections/consent-reporting-filtering/consent-analyze.md)
+      + [Cas d’utilisation](/help/connections/consent-reporting-filtering/consent-use-cases.md)
 + Vues des données {#cja-dataviews}
    + [Vue d’ensemble des vues de données](../data-views/data-views.md)
    + [Création ou modification d’une vue de données](../data-views/create-dataview.md)
@@ -547,7 +553,7 @@ ht-degree: 92%
          + [Lier des lectures de session](/help/use-cases/third-party/quantum-metric/tie-session-replays.md)
          + [Utiliser des cartes thermiques](/help/use-cases/third-party/quantum-metric/heatmap.md)
          + [Ajouter des événements de friction](/help/use-cases/third-party/quantum-metric/friction-events.md)
-         + {hide-from-toc}[Connecteur &#x200B;](/help/use-cases/third-party/quantum-metric/source-connector.md)
+         + {hide-from-toc}[Connecteur ](/help/use-cases/third-party/quantum-metric/source-connector.md)
 
 + Labs {#labs}
    + [Guide d’utilisation de Labs](../labs/labs.md)
