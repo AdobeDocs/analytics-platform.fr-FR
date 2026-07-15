@@ -21,10 +21,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: ff99ee131e9bae9fc2815fb54e5b5c14577450f7
+source-git-commit: ddbeb022f4850c2f872f612c86fb37a94b43a73d
 workflow-type: tm+mt
-source-wordcount: 10342
-ht-degree: 92%
+source-wordcount: 10413
+ht-degree: 90%
 
 ---
 
@@ -339,7 +339,7 @@ Vous [ajoutez un ou plusieurs jeux de données](#add-datasets) ou [modifiez des 
 >[!CONTEXTUALHELP]
 >id="cja_connection_accountid"
 >title="ID de compte"
->abstract="Sélectionnez un ID de compte (l’identifiant unique d’un compte) parmi les identités disponibles définies dans le schéma du jeu de données d’Experience Platform."
+>abstract="Sélectionnez un ID de compte à partir des champs d’identité non-identité ou d’identité non-personne disponibles et définis dans le schéma du jeu de données dans Experience Platform. Les valeurs contenues sont utilisées comme identifiants de compte uniques au niveau de la ligne, chaque fois que les informations d’identifiant de compte associées ne sont pas disponibles dans le jeu de données Personne à compte ."
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_accountfield"
@@ -404,7 +404,7 @@ Vous [ajoutez un ou plusieurs jeux de données](#add-datasets) ou [modifiez des 
 >[!CONTEXTUALHELP]
 >id="connection_personid"
 >title="ID de personne"
->abstract="Sélectionnez un ID de personne parmi les identités disponibles définies dans le schéma du jeu de données d’Experience Platform."
+>abstract="Sélectionnez un champ de type identity ou identityMap , avec une couverture importante des événements. Les valeurs contenues sont élevées à celles de l’espace de noms d’identifiant de personne configuré précédemment (dans la configuration de groupement B2B)."
 
 >[!CONTEXTUALHELP]
 >id="connection_accountid"
@@ -732,7 +732,7 @@ Pour un jeu de données d’événement dans une connexion basée sur un compte,
 
 | Paramètre | Description |
 | --- | --- |
-| **[!UICONTROL ID de compte global]** | Sélectionnez un ID de compte global (l’identifiant unique d’un compte) parmi les identités disponibles définies dans le schéma du jeu de données d’Experience Platform. Applicable lorsque vous avez ajouté le compte global en tant que conteneur à votre connexion. <p>Si un enregistrement ne contient pas de valeur pour l’identité que vous avez sélectionnée comme ID de compte pour le jeu de données d’événement, l’enregistrement est ignoré. |
+| **[!UICONTROL ID de compte global]** | Applicable lorsque vous avez ajouté le compte global en tant que conteneur à votre connexion.<br/>Sélectionnez un identifiant de compte global (l’identifiant unique d’un compte) à partir des champs de non-identité ou d’identité non-personne disponibles définis dans le schéma du jeu de données dans Experience Platform. Les valeurs contenues sont utilisées comme identifiants de compte uniques au niveau de la ligne, chaque fois que les informations d’identifiant de compte associées ne sont pas disponibles dans le jeu de données Personne à compte .  <p>Si un enregistrement ne contient pas de valeur pour l’identité que vous avez sélectionnée comme ID de compte pour le jeu de données d’événement, l’enregistrement est ignoré. |
 | **[!UICONTROL ID de compte]** | Sélectionnez un ID de compte (l’identifiant unique d’un compte) parmi les identités disponibles définies dans le schéma du jeu de données d’Experience Platform. Applicable lorsque vous n’avez pas ajouté le compte global en tant que conteneur à votre connexion. |
 | **[!UICONTROL ID d’opportunité]** | Sélectionnez un ID d’opportunité (l’identifiant unique d’une d’opportunité) parmi les identités disponibles définies dans le schéma du jeu de données d’Experience Platform. |
 | **[!UICONTROL ID de groupe d’achat]** | Sélectionnez un ID de groupe d’achat (l’identifiant unique d’un groupe d’achat) parmi les identités disponibles définies dans le schéma du jeu de données d’Experience Platform. |

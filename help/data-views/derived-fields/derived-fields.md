@@ -5,7 +5,6 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-hold: true
 TQID: https://experienceleague.adobe.com/zpiJFUF8RnIdFQWf29FBpRznWO3Ejs-j2szx69kdMNE
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
@@ -23,7 +22,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: beb7a3c1-66ab-4786-b879-7621375b3c40
-source-git-commit: b342654b753f679f86750e43efbed1eb149e1b17
+source-git-commit: 28959f1ea858dee686e6d13025621c4a6164c319
 workflow-type: tm+mt
 source-wordcount: 10573
 ht-degree: 98%
@@ -36,7 +35,6 @@ ht-degree: 98%
 >id="dataview_derivedfields"
 >title="Champs dérivés"
 >abstract="Un champ dérivé vous permet de définir à la volée des manipulations de données par le biais d’un créateur de règles personnalisable. Vous pouvez ensuite utiliser ce champ dérivé comme composant (mesure ou dimension) dans Workspace ou encore le définir comme composant dans la vue de données."
-
 
 Les champs dérivés sont un aspect important de la fonctionnalité de création de rapports en temps réel dans Adobe Customer Journey Analytics. Un champ dérivé vous permet de définir à la volée des manipulations de données (souvent complexes) par le biais d’un créateur de règles personnalisable. Vous pouvez ensuite utiliser ce champ dérivé comme composant (mesure ou dimension) dans [Workspace](../../analysis-workspace/home.md) ou encore le définir comme composant dans la [vue de données](../data-views.md).
 
