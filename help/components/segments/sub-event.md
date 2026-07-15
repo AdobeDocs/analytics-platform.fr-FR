@@ -3,8 +3,10 @@ title: Analyse Des Sous-Événements
 description: Découvrez comment l’analyse des sous-événements vous permet de filtrer des produits individuels ou d’autres conteneurs au sein d’un événement dans Customer Parcours Analytics, en éliminant le fond perdu d’attribution dans les rapports de produit.
 feature: Segmentation
 hide: true
-feature_v2: id: c153fd90-23e1-4614-81d3-3cc7571227f7
-subfeature_v2: id: a544b409-2610-410d-a842-474ac1d0d54e
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+subfeature_v2:
+  - id: a544b409-2610-410d-a842-474ac1d0d54e
 source-git-commit: 28959f1ea858dee686e6d13025621c4a6164c319
 workflow-type: tm+mt
 source-wordcount: 630
@@ -23,7 +25,7 @@ L&#39;analyse des sous-événements permet d&#39;analyser les données d&#39;un 
 - Segmentation d’un canal multimédia spécifique dans les données Media Analytics.
 
 
-Dans Customer Journey Analytics, définissez les conteneurs d’une vue de données pour lesquels vous souhaitez utiliser l’analyse des sous-événements. Sans analyse des sous-événements, la segmentation d’un attribut d’élément de conteneur renvoie tous les événements, sessions, personnes, comptes (globaux) [!BADGE ]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, groupes d’achats [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, opportunités [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} ou autres [conteneurs](/help/data-views/create-dataview.md#containers-1) que vous avez définis. Il en résulte une attribution incorrecte et des mesures de revenus exagérées. L’analyse des sous-événements étend le filtre à des lignes de conteneur individuelles au sein d’un événement et résout ces problèmes.
+Dans Customer Journey Analytics, définissez les conteneurs d’une vue de données pour lesquels vous souhaitez utiliser l’analyse des sous-événements. Sans analyse des sous-événements, la segmentation d’un attribut d’élément de conteneur renvoie tous les événements, sessions, personnes, comptes (globaux) {type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, groupes d’achats [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, opportunités [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} ou autres [conteneurs](/help/data-views/create-dataview.md#containers-1) que vous avez définis. Il en résulte une attribution incorrecte et des mesures de revenus exagérées. L’analyse des sous-événements étend le filtre à des lignes de conteneur individuelles au sein d’un événement et résout ces problèmes.
 
 Dans l’analyse de sous-événement, la logique d’exclusion se comporte différemment de l’exclusion standard au niveau de l’événement par rapport au conteneur. Lorsque vous excluez des attributs d’élément dans le conteneur, le segment renvoie des événements qui **contiennent des éléments** mais ne correspondent pas à vos critères d’exclusion. Le segment ne renvoie pas d’événement sans élément du tout.
 

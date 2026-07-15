@@ -6,11 +6,24 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 TQID: https://experienceleague.adobe.com/EXiKrWVfmMRgZ4GF0OR410Mr2-P5IEjPy3Hf0FmRDJ8
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: cb6c7d24-631f-46e5-9e39-3a2705f73962id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 28959f1ea858dee686e6d13025621c4a6164c319
 workflow-type: tm+mt
 source-wordcount: 3152
@@ -133,13 +146,13 @@ Désigne le nom des conteneurs pour la vue de données. Les noms de conteneur so
 
 | Nom du conteneur | Nom d’affichage (par défaut) | Description |
 | --- | --- | --- |
-| globalAccount | [!BADGE Compte ]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL  Global ]** | Le conteneur [!UICONTROL Compte global] inclut toutes les sessions et événements des comptes globaux au cours de la période indiquée. Si votre organisation utilise un autre terme, vous pouvez renommer le conteneur ici. |
+| globalAccount | [!BADGE Compte &#x200B;]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL &#x200B; Global &#x200B;]** | Le conteneur [!UICONTROL Compte global] inclut toutes les sessions et événements des comptes globaux au cours de la période indiquée. Si votre organisation utilise un autre terme, vous pouvez renommer le conteneur ici. |
 | Personne | **[!UICONTROL Personne]** | Le conteneur [!UICONTROL Personne] inclut chaque session et événement pour les personnes au cours dʼune période indiquée. Si votre organisation utilise un autre terme (par exemple, « Visiteur » ou « Utilisateur »), vous pouvez renommer le conteneur ici. |
 | séance | **[!UICONTROL Session]** | Le conteneur [!UICONTROL Session] permet dʼidentifier les interactions de pages, les campagnes ou les conversions pour une session spécifique. Vous pouvez renommer ce conteneur en « Visite » ou tout autre terme de votre choix. |
-| opportunité | [!BADGE ]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Opportunity ]** | Le conteneur [!UICONTROL Opportunité] inclut toutes les sessions et événements des opportunités au cours de la période indiquée. Si votre organisation utilise un autre terme, vous pouvez renommer le conteneur ici. |
-| buyGroup | [!BADGE ]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Groupe d&#39;achat ]** | Le conteneur [!UICONTROL Groupe d’achat] inclut toutes les sessions et événements des groupes d’achat au cours de la période indiquée. Si votre organisation utilise un autre terme, vous pouvez renommer le conteneur ici. |
+| opportunité | {type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Opportunity &#x200B;]** | Le conteneur [!UICONTROL Opportunité] inclut toutes les sessions et événements des opportunités au cours de la période indiquée. Si votre organisation utilise un autre terme, vous pouvez renommer le conteneur ici. |
+| buyGroup | {type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Groupe d&#39;achat &#x200B;]** | Le conteneur [!UICONTROL Groupe d’achat] inclut toutes les sessions et événements des groupes d’achat au cours de la période indiquée. Si votre organisation utilise un autre terme, vous pouvez renommer le conteneur ici. |
 | événement | **[!UICONTROL Événement]** | Le conteneur [!UICONTROL Événement] définit des événements individuels dans un jeu de données. Si votre organisation utilise un autre terme (par exemple, « Accès » ou « Pages vues »), vous pouvez renommer le conteneur ici. |
-| account | [!BADGE ]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Account ]** | Le conteneur [!UICONTROL Compte] inclut toutes les sessions et événements des comptes au cours de la période indiquée. Si votre organisation utilise un autre terme, vous pouvez renommer le conteneur ici. |
+| account | {type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Account &#x200B;]** | Le conteneur [!UICONTROL Compte] inclut toutes les sessions et événements des comptes au cours de la période indiquée. Si votre organisation utilise un autre terme, vous pouvez renommer le conteneur ici. |
 
 Pour renommer des conteneurs système :
 
@@ -205,7 +218,7 @@ Vous pouvez ensuite définir les composants d’une vue de données et créer ai
 
    Vous pouvez voir la [!UICONTROL connexion] en haut à gauche qui contient les jeux de données et ses [!UICONTROL champs de schéma] en dessous.  Toutes les vues de données incluent des composants standard tels que les événements, les personnes, les mesures de session et les dimensions temporelles.<ul><li>Lorsque vous définissez [conteneurs personnalisés](#containers-1), les mesures sont automatiquement ajoutées sous la forme ![ShowAllLayer](/help/assets/icons/ShowAllLayer.svg) **[!UICONTROL _nom de conteneur personnalisé&#x200B;_Occurrences]**.</li><li>Le système applique par défaut le filtre **[!UICONTROL n’est pas obsolète]** afin que seuls les champs de schéma non obsolètes apparaissent.</li></ul>
 
-1. Recherchez un champ de schéma à l’aide de l’![icône Rechercher](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL Rechercher des champs de schéma]**, ou bien recherchez un champ en accédant à l’une des collections de jeux de données, comme ![Dossier](/help/assets/icons/Folder.svg) **[!UICONTROL Jeux de données d’événement]** ou ![Dossier](/help/assets/icons/Folder.svg) **[!UICONTROL Jeux de données de recherche]**. Pour les jeux de données d’événement, des collections distinctes pour ![Dossier](/help/assets/icons/Folder.svg) **[!UICONTROL Champs XDM]** et ![Dossier](/help/assets/icons/Folder.svg) **[!UICONTROL Champs ad hoc et relationnels]** sont disponibles.<br/>Vous pouvez également créer un champ dérivé à l’aide de ![Icône de données](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)Créer un champ dérivé&#x200B;****. Voir [Champs dérivés](./derived-fields/derived-fields.md) pour plus d’informations.
+1. Recherchez un champ de schéma à l’aide de l’![icône Rechercher](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL Rechercher des champs de schéma]**, ou bien recherchez un champ en accédant à l’une des collections de jeux de données, comme ![Dossier](/help/assets/icons/Folder.svg) **[!UICONTROL Jeux de données d’événement]** ou ![Dossier](/help/assets/icons/Folder.svg) **[!UICONTROL Jeux de données de recherche]**. Pour les jeux de données d’événement, des collections distinctes pour ![Dossier](/help/assets/icons/Folder.svg) **[!UICONTROL Champs XDM]** et ![Dossier](/help/assets/icons/Folder.svg) **[!UICONTROL Champs ad hoc et relationnels]** sont disponibles.<br/>Vous pouvez également créer un champ dérivé à l’aide de ![Icône de données](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)Créer un champ dérivé&#x200B;**&#x200B;**. Voir [Champs dérivés](./derived-fields/derived-fields.md) pour plus d’informations.
 
 1. Une fois que vous avez trouvé votre champ de schéma spécifique ou défini votre champ dérivé, faites glisser ce champ, par exemple ![Icône de gestion](https://spectrum.adobe.com/static/icons/workflow_22/Smock_DragHandle_22_N.svg) **[!UICONTROL Nom de page]**, du rail de gauche vers la section **[!UICONTROL Mesures]** ou **[!UICONTROL Dimensions]** sous **[!UICONTROL Composants inclus]**.Vous pouvez faire glisser plusieurs fois le même champ de schéma vers les sections des dimensions ou des mesures et configurer la même dimension ou mesure de différentes manières. Par exemple, dans le champ pageName , créez des dimensions `Product Pages` et `Error pages` à l’aide de différents [paramètres de composant](component-settings/overview.md) sur la droite.Si vous faites glisser un dossier de champ de schéma depuis le rail de gauche, les champs du dossier sont automatiquement classés dans la section appropriée. Les champs de chaîne se retrouvent dans la section [!UICONTROL Dimensions] et les types de schémas numériques se retrouvent dans la section [!UICONTROL Mesures]. Vous pouvez également cliquer sur **[!UICONTROL Ajouter tout]** et tous les champs de schéma sont ajoutés à leur section respective.
 
@@ -291,7 +304,7 @@ Vous pouvez filtrer ![icône Filtrer](https://spectrum.adobe.com/static/icons/wo
 La section **[!UICONTROL Composants inclus]** contient la liste des **[!UICONTROL Mesures]** et **[!UICONTROL Dimensions]** que vous configurez pour la vue de données.
 
 * Pour rechercher des composants, utilisez ![Rechercher](/help/assets/icons/Search.svg) **[!UICONTROL _Rechercher des composants_]**.
-* Pour filtrer les composants inclus répertoriés, sélectionnez ![Filtrer ](/help/assets/icons/Filter.svg).
+* Pour filtrer les composants inclus répertoriés, sélectionnez ![Filtrer &#x200B;](/help/assets/icons/Filter.svg).
 
   ![Boîte de dialogue de filtrage des composants inclus](assets/dataview_includedcomponents_filter.png)
 
