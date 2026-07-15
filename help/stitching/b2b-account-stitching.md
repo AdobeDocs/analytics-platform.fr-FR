@@ -7,31 +7,23 @@ hide: true
 role: Admin
 autotag-review: '2026-05-19T11:01:07.331Z'
 TQID: 'https://experienceleague.adobe.com/-7rHOhYVCp-nSMqdE7YlAlCJ0zRQYvPOViMHSCNuKV8'
-product_v2:
-  - id: d3f42e9e-bb51-4077-a732-358b801d8b29
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-subfeature_v2:
-  - id: faea9abd-7024-4c5e-a5b4-87919e09b24b
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 11156e1f2db094595cc3333ccb0b896037da4715
+product_v2: id: d3f42e9e-bb51-4077-a732-358b801d8b29id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: faea9abd-7024-4c5e-a5b4-87919e09b24b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: d00e9f03-e50b-4162-b143-0c0817c937c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: ddbeb022f4850c2f872f612c86fb37a94b43a73d
 workflow-type: tm+mt
-source-wordcount: 1178
-ht-degree: 25%
+source-wordcount: 1203
+ht-degree: 20%
 
 ---
 
 # Assemblage des comptes B2B
 
-L’assemblage de comptes B2B enrichit vos jeux de données d’événements avec des informations de compte et permet une analyse complète sur l’ensemble du parcours client dans Customer Journey Analytics. Lorsque les événements ne disposent pas d’un identifiant de compte, ce que Customer Journey Analytics B2B edition exige pour l’ingestion, l’assemblage de comptes dérive et ajoute automatiquement ces informations à l’aide d’un [&#x200B; jeu de données de mappage personne-compte &#x200B;](#prerequisites) que vous fournissez.
+L’assemblage de comptes B2B enrichit vos jeux de données d’événements avec des informations de compte et permet une analyse complète sur l’ensemble du parcours client dans Customer Journey Analytics. Lorsque les événements ne disposent pas d’un identifiant de compte, ce que Customer Journey Analytics B2B edition exige pour l’ingestion, l’assemblage de comptes dérive et ajoute automatiquement ces informations à l’aide d’un [ jeu de données de mappage personne-compte ](#prerequisites) que vous fournissez.
 
-Sans assemblage de comptes, tout événement qui ne contient pas d’identifiant de compte est ignoré lors de l’ingestion. L’assemblage des comptes élimine cet obstacle en recherchant le compte associé à la personne sur chaque événement, en ajoutant l’identifiant de compte à mesure que l’événement est ingéré et de manière rétroactive.
+Sans assemblage de comptes, tout événement qui ne contient pas d’identifiant de compte est ignoré lors de l’ingestion. L’assemblage des comptes résout cette limitation en recherchant le compte associé à la personne sur chaque événement, en ajoutant l’identifiant de compte à la fois lorsque l’événement est ingéré et de manière rétroactive.
 
 >[!NOTE]
 >
@@ -68,12 +60,12 @@ Vous activez et configurez l’assemblage des comptes B2B au niveau de la connex
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person_identifier_namespace"
 >title="Espace de noms d’identifiants de personnes"
->abstract="Sélectionnez un espace de noms d’identifiant de personne, par exemple E-mail, vers lequel vous souhaitez élever tout identifiant de personne."
+>abstract="Sélectionnez l’espace de noms d’identité de personne le plus pertinent pour vos rapports. Par exemple, E-mail."
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person_to_account_dataset"
 >title="Jeu de données personne-compte"
->abstract="Sélectionnez le jeu de données de recherche qui mappe les identifiants de personne aux identifiants de compte."
+>abstract="Sélectionnez le champ du jeu de données contenant les ID de personne. L’espace de noms de ce champ peut être différent ou identique à l’espace de noms d’identifiant de personne sélectionné (configuration de groupement B2B). Si les deux espaces de noms diffèrent, liez-les dans le graphique d’identités."
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person"
@@ -83,23 +75,23 @@ Vous activez et configurez l’assemblage des comptes B2B au niveau de la connex
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_account"
 >title="Compte"
->abstract="Sélectionnez le champ du jeu de données contenant l’identifiant de compte. Ce champ ne peut pas être identique au champ **[!UICONTROL Personne]** ou **[!UICONTROL Heure de début]**."
+>abstract="Sélectionnez le champ du jeu de données qui contient les valeurs d’identifiant de compte uniques. Les informations sur l’ID de compte seront disponibles sur les lignes de tous les jeux de données d’événement pour lesquels le groupement est activé."
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_start_time"
 >title="Heure de début"
 >abstract="Sélectionnez un champ de date et heure qui indique le moment où la relation personne-compte est devenue active."
 >additional-url=""
->additional-url=""
+additional-url=""
 
 
 1. Dans Customer Journey Analytics, accédez à **[!UICONTROL Connexions]** et [créer une connexion](/help/connections/create-connection.md#create-a-connection) ou [modifier une connexion existante](/help/connections/create-connection.md#edit-a-connection).
 
-1. Dans **[!UICONTROL Paramètres de connexion]**, définissez l’ID de Principal **&#x200B;**&#x200B;sur ![Création](/help/assets/icons/Building.svg) **[!UICONTROL Compte]**.
+1. Dans **[!UICONTROL Paramètres de connexion]**, définissez l’ID de Principal **** sur ![Création](/help/assets/icons/Building.svg) **[!UICONTROL Compte]**.
 
 1. Sélectionnez **[!UICONTROL Ouvrir la configuration de groupement B2B]**.
 
-   ![Configuration de l’assemblage des comptes B2B &#x200B;](assets/b2b-account-stitching-configuration.png)
+   ![Configuration de l’assemblage des comptes B2B ](assets/b2b-account-stitching-configuration.png)
 
    >[!NOTE]
    >
@@ -139,7 +131,7 @@ Vous activez et configurez l’assemblage des comptes B2B au niveau de la connex
 >title="Activer l’assemblage personne-compte"
 >abstract="Si cette option est activée, ce jeu de données utilise l’assemblage de comptes B2B. Sélectionnez un **[!UICONTROL Identifiant de personne]** obligatoire pour rechercher l’identifiant de compte en fonction du jeu de données personne-compte.<br/>Si cette option est désactivée, ce jeu de données n’utilise *pas* l’assemblage de comptes B2B et vous devez sélectionner un **[!UICONTROL Identifiant de compte]** obligatoire à la place."
 >additional-url=""
->additional-url=""
+additional-url=""
 
 
 Après avoir configuré l’assemblage B2B au niveau de la connexion, vous devez activer l’assemblage de comptes B2B individuellement pour chaque jeu de données d’événement que vous souhaitez assembler.
@@ -157,7 +149,7 @@ Lorsque l’option **[!UICONTROL Activer l’assemblage des personnes en comptes
 * La configuration d’un ID de personne est requise. Cet ID de personne est utilisé pour rechercher l’ID de compte en fonction du [jeu de données personne à compte](#prerequisites).
 * La configuration d’un identifiant de compte est facultative.
 
-Assemblage de comptes ![B2B sur le jeu de données d’événement sur &#x200B;](assets/b2b-event-dataset-stitching-on.png)
+Assemblage de comptes ![B2B sur le jeu de données d’événement sur ](assets/b2b-event-dataset-stitching-on.png)
 
 >[!TAB  Désactivé ]
 
@@ -180,7 +172,7 @@ Une fois que vous avez configuré la configuration de groupement B2B et que vous
 
 >[!IMPORTANT]
 >
->Une fois une connexion enregistrée, la configuration de groupement B2B devient immuable. Pour afficher vos paramètres après l’enregistrement, sélectionnez **Ouvrir la configuration de groupement B2B**. Tous les champs s’affichent en lecture seule. En outre, si le jeu de données utilisé pour le mappage [personne à compte](#prerequisites) est supprimé dans Experience Platform, cette connexion sera supprimée.
+>Une fois une connexion enregistrée, la configuration de groupement B2B devient immuable. Pour afficher vos paramètres après l’enregistrement, sélectionnez **Ouvrir la configuration de groupement B2B**. Tous les champs sont en lecture seule. En outre, si le jeu de données utilisé pour le mappage [personne à compte](#prerequisites) est supprimé dans Experience Platform, cette connexion est supprimée.
 
 ## Planning de mise à jour des données
 
@@ -195,7 +187,7 @@ L’assemblage des comptes extrait quotidiennement le mappage d’identité de v
 
 L’assemblage des comptes respecte les demandes standard de confidentialité et d’hygiène pour les identités de personne, en cohérence avec le comportement d’assemblage B2C. Si un ID de personne est ensuite supprimé par le biais d’une demande d’accès à des informations personnelles ou d’hygiène, le groupement associé effectué à l’aide du graphique d’identité est inversé.
 
-Les entités B2B telles que les comptes, les identifiants de compte et les identifiants de compte globaux qui sont ajoutés aux événements par le biais du groupement ne sont pas supprimées dans le cadre des demandes d’accès à des informations personnelles ou d’hygiène. Ces valeurs ne contiennent pas d’informations d’identification personnelle, il n’existe donc aucune obligation légale de les supprimer.
+Les entités B2B telles que les comptes, les identifiants de compte et les identifiants de compte globaux ajoutés aux événements par le biais du groupement ne sont pas supprimées lors des demandes d’accès à des informations personnelles ou d’hygiène. Ces valeurs ne contiennent pas d’informations d’identification personnelle, il n’existe donc aucune obligation légale de les supprimer.
 
 >[!MORELIKETHIS]
 >
