@@ -21,9 +21,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: ddbeb022f4850c2f872f612c86fb37a94b43a73d
+source-git-commit: 3eae7d76014165ec03151b7c2ec87952f357d4a3
 workflow-type: tm+mt
-source-wordcount: 10413
+source-wordcount: 10479
 ht-degree: 90%
 
 ---
@@ -404,12 +404,22 @@ Vous [ajoutez un ou plusieurs jeux de données](#add-datasets) ou [modifiez des 
 >[!CONTEXTUALHELP]
 >id="connection_personid"
 >title="ID de personne"
->abstract="Sélectionnez un champ de type identity ou identityMap , avec une couverture importante des événements. Les valeurs contenues sont élevées à celles de l’espace de noms d’identifiant de personne configuré précédemment (dans la configuration de groupement B2B)."
+>abstract="Sélectionnez un ID de personne parmi les identités disponibles définies dans le schéma du jeu de données d’Experience Platform."
 
 >[!CONTEXTUALHELP]
 >id="connection_accountid"
 >title="ID de compte"
 >abstract="Sélectionnez un ID de compte (l’identifiant unique d’un compte) parmi les identités disponibles définies dans le schéma du jeu de données d’Experience Platform."
+
+>[!CONTEXTUALHELP]
+>id="connection_b2bstitching_personid"
+>title="ID de personne"
+>abstract="Sélectionnez un champ de type identity ou identityMap , avec une couverture importante des événements. Les valeurs contenues seront élevées vers celles de l’espace de noms d’identifiant de personne configuré précédemment."
+
+>[!CONTEXTUALHELP]
+>id="connection_b2bstitching_accountid"
+>title="ID de compte"
+>abstract="Vous pouvez éventuellement sélectionner un identifiant de compte dans les champs d’identité non-identité ou non-personne disponibles définis dans le schéma du jeu de données. Les valeurs contenues seront utilisées comme identifiant de compte unique au niveau de la ligne, chaque fois que les informations d’identifiant de compte associées ne sont pas disponibles dans le jeu de données personne-à-compte."
 
 >[!CONTEXTUALHELP]
 >id="connection_accountfield"
