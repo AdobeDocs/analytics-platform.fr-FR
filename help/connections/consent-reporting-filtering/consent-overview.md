@@ -5,23 +5,14 @@ solution: Customer Journey Analytics
 feature: Privacy
 role: Admin
 hold: true
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
-  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
-subfeature_v2:
-  - id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
-  - id: d3fb138f-79e4-4a81-aedb-76dd93560085
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: eafeab50e86b3e98f372c70a0fd43494015ca002
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: eb00932f-4d46-46bc-b1d8-10de7588db8did: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+subfeature_v2: id: ffe2fd81-0630-49b3-a33b-4b8899e89c51id: d3fb138f-79e4-4a81-aedb-76dd93560085
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 91cd8d3d5c290f52e4ae15713693be1fc83baa92
 workflow-type: tm+mt
-source-wordcount: 990
+source-wordcount: 1058
 ht-degree: 2%
 
 ---
@@ -29,6 +20,15 @@ ht-degree: 2%
 # Présentation de la création de rapports et du filtrage relatifs au consentement
 
 Les rapports et le filtrage sur le consentement utilisent les données d’appartenance à la politique de consentement stockées dans vos jeux de données de profil Adobe Experience Platform pour vous aider à créer des rapports sur le consentement des visiteurs et, éventuellement, à exclure les visiteurs non consentants avant que leurs données ne soient ingérées dans Customer Journey Analytics.
+
+## Conditions préalables
+
+Avant de configurer la création de rapports et le filtrage liés au consentement, assurez-vous des points suivants :
+
+* Votre entreprise dispose d’une licence Adobe Healthcare Shield ou Privacy &amp; Security Shield.
+* Vous disposez d’autorisations d’administrateur système dans Customer Journey Analytics.
+* Le sandbox que vous souhaitez utiliser contient un jeu de données Profil avec des données d’appartenance à une politique de consentement dans le champ `consentPoliciesIDMap` .
+* La connexion que vous souhaitez configurer existe déjà. Pour plus d’informations, voir [Créer ou modifier une connexion](/help/connections/create-connection.md).
 
 Le diagramme suivant et le tableau associé présentent une représentation de haut niveau de la manière dont les rapports et le filtrage sur le consentement rendent les données de politique de consentement disponibles dans Analysis Workspace et filtrent les données des visiteurs au moment de l’ingestion :
 
@@ -107,7 +107,7 @@ Les rôles Customer Journey Analytics suivants et les autorisations Experience P
 
 ## Rapports de consentement et cas d’utilisation de filtrage
 
-Pour obtenir un exemple de cas d’utilisation qui mettent en évidence la valeur fournie par les rapports et le filtrage de consentement, consultez [&#x200B; Rapports et filtrage de consentement &#x200B;](/help/connections/consent-reporting-filtering/consent-use-cases.md).
+Pour obtenir un exemple de cas d’utilisation qui mettent en évidence la valeur fournie par les rapports et le filtrage de consentement, consultez [ Rapports et filtrage de consentement ](/help/connections/consent-reporting-filtering/consent-use-cases.md).
 
 ## Limites de reporting et de filtrage du consentement
 
