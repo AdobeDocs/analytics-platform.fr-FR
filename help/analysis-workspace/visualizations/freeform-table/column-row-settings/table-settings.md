@@ -5,10 +5,17 @@ feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 role: User
 TQID: https://experienceleague.adobe.com/qQKmobJ4J1RPezRG-hk38l7JNioIshzjMaKXWVoUWsM
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: cb6c7d24-631f-46e5-9e39-3a2705f73962id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: b988d8cee94e40c6bed62f7ef22f209b7e38f46c
 workflow-type: tm+mt
 source-wordcount: 1630
@@ -148,11 +155,11 @@ L’exemple ci-dessous illustre comment utiliser les options de menu contextuel 
 
   1. Sélectionnez **[!UICONTROL Créer des lignes modifiées comme champ dérivé]** dans le menu contextuel pour toute ligne sélectionnée dans le tableau modifié.
 
-     ![Sélectionnez l’option de menu Créer des lignes modifiées en tant que champ dérivé ](assets/context-derived.png)
+     ![Sélectionnez l’option de menu Créer des lignes modifiées en tant que champ dérivé &#x200B;](assets/context-derived.png)
 
   1. Inspectez, éventuellement modifiez et enregistrez la définition du champ dérivé en fonction de toutes les modifications apportées dans le tableau.
 
-     ![ Boîte de dialogue Créer un champ dérivé ](assets/dialog-derived.png)
+     ![&#x200B; Boîte de dialogue Créer un champ dérivé &#x200B;](assets/dialog-derived.png)
 
 * Réinitialiser le tableau à structure libre à l’état avant les modifications.
 
