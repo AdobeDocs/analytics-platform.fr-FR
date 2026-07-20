@@ -5,27 +5,15 @@ feature: Visualizations
 role: User
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553
 TQID: https://experienceleague.adobe.com/pC3wjv6Q7RHRfDfHq75CP2Lqd-HzN-s7iLZ9t4N4ZR0
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: aff2ef09-fc60-4018-9197-e2befd623064
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
-  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: c6b215f9fe718d0d3e8f81b7f55421c909b69c5a
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: aff2ef09-fc60-4018-9197-e2befd623064id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5cid: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 782311939794bab0f04da1df3dccdc3a9847449f
 workflow-type: tm+mt
-source-wordcount: 6499
-ht-degree: 91%
+source-wordcount: 6697
+ht-degree: 88%
 
 ---
 
@@ -92,8 +80,44 @@ Voir [Vue d’ensemble de la zone de travail de parcours](/help/analysis-workspa
 
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_percentage_value"
->title="Choisir le mode de calcul des pourcentages"
+>title="Valeur en pourcentage"
 >abstract="Les pourcentages affichés sur chaque nœud sont basés sur les mesures principales et secondaires que vous configurez. Vous pouvez choisir si les pourcentages se rapportent au nœud de départ, au nœud précédent ou à toutes les données de la suite de rapports."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_journeycanvas_arrow_settings"
+>title="Paramètres de la flèche"
+>abstract="Choisissez d’afficher ou de masquer les libellés sur la zone de travail. Les libellés sont des noms personnalisés créés dans la zone de travail du Parcours."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_journeycanvas_arrow_settings_ajo"
+>title="Paramètres de la flèche"
+>abstract="Choisissez d’afficher ou de masquer les libellés et les valeurs sur la zone de travail. Les libellés peuvent être des noms personnalisés créés dans la zone de travail du Parcours, ou des libellés ou des conditions créés dans Journey Optimizer. Les valeurs sont des nombres et des pourcentages qui indiquent les personnes ou les sessions qui ont été déplacées d’un nœud à l’autre du parcours. "
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_journeycanvas_show_fallout"
+>title="Afficher les abandons"
+>abstract="Les données sur les abandons indiquent le pourcentage et le nombre de personnes ou de sessions sur chaque nœud du parcours qui ne sont jamais arrivées au nœud suivant du parcours. Il est possible qu’ils aient effectué d’autres actions sur le site, mais ils n’ont jamais répondu aux critères définis par le nœud suivant dans le parcours.<br/>Les données sur les abandons affichent les personnes ou les sessions (quelle que soit la mesure principale que vous avez choisie), et elles sont basées sur le paramètre du conteneur de la zone de travail par Parcours."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_journeycanvas_compare"
+>title="Comparer à"
+>abstract="Période utilisée pour comparer les données de parcours actuelles à une période précédente. Lorsque vous sélectionnez une période de comparaison, chaque nœud du parcours affiche le pourcentage de changement entre la période actuelle et la période de comparaison sélectionnée, en fonction de la mesure principale. "
 
 <!-- markdownlint-enable MD034 -->
 
