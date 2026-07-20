@@ -5,20 +5,13 @@ feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 role: User
 TQID: https://experienceleague.adobe.com/qQKmobJ4J1RPezRG-hk38l7JNioIshzjMaKXWVoUWsM
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: c2d922af3eaf86e487e6c2a5318c7693f1be3dcc
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: cb6c7d24-631f-46e5-9e39-3a2705f73962id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: f51766fdcb891b8cea93ea047b011792dc3c0ae6
 workflow-type: tm+mt
-source-wordcount: 1626
+source-wordcount: 1628
 ht-degree: 55%
 
 ---
@@ -37,7 +30,7 @@ Les paramètres des lignes varient selon le composant déposé dans le tableau. 
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Paramètres de ligne et de colonne dans un tableau à structure libre](https://experienceleague.adobe.com/fr/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Paramètres de ligne et de colonne dans un tableau à structure libre](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 
@@ -113,14 +106,14 @@ Les options de menu contextuel supplémentaires suivantes sont disponibles lors 
 
 ## Modifier la hauteur des lignes
 
-Vous pouvez définir la [densité d’affichage](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density) d’un projet sur **[!UICONTROL Compact]**, **[!UICONTROL Confortable]** et **[!UICONTROL Développé]**.
+Vous pouvez définir la [densité d’affichage](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density) d’un projet sur **[!UICONTROL Compact]**, **[!UICONTROL Confortable]** et **[!UICONTROL Développé]**.
 
 
 ## Classifications intégrées
 
 Les classifications intégrées vous permettent de renommer ou de combiner des lignes dans un tableau à structure libre. Et pour créer un champ dérivé à partir des lignes modifiées d’un tableau.
 
-L’exemple ci-dessous illustre comment utiliser les options de menu contextuel **[!UICONTROL Renommer la ligne sélectionnée]**, **[!UICONTROL Combiner les lignes sélectionnées]** et **[!UICONTROL Créer comme champ dérivé]**. Et comment réinitialiser le tableau à structure libre modifié.
+L’exemple ci-dessous illustre comment utiliser les options de menu contextuel **[!UICONTROL Renommer la ligne sélectionnée]**, **[!UICONTROL Combiner les lignes sélectionnées]** et **[!UICONTROL Créer des lignes modifiées en tant que champ dérivé]**. Et comment réinitialiser le tableau à structure libre modifié.
 
 * Renommez **[!UICONTROL Aucune valeur]** la ligne en **[!UICONTROL Autre]**.
 
@@ -153,11 +146,11 @@ L’exemple ci-dessous illustre comment utiliser les options de menu contextuel 
 
   1. Sélectionnez **[!UICONTROL Créer des lignes modifiées comme champ dérivé]** dans le menu contextuel pour toute ligne sélectionnée dans le tableau modifié.
 
-     ![Sélectionnez l’option de menu Créer des lignes modifiées en tant que champ dérivé &#x200B;](assets/context-derived.png)
+     ![Sélectionnez l’option de menu Créer des lignes modifiées en tant que champ dérivé ](assets/context-derived.png)
 
   1. Inspectez, éventuellement modifiez et enregistrez la définition du champ dérivé en fonction de toutes les modifications apportées dans le tableau.
 
-     ![&#x200B; Boîte de dialogue Créer un champ dérivé &#x200B;](assets/dialog-derived.png)
+     ![ Boîte de dialogue Créer un champ dérivé ](assets/dialog-derived.png)
 
 * Réinitialiser le tableau à structure libre à l’état avant les modifications.
 
