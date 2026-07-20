@@ -21,7 +21,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 3eae7d76014165ec03151b7c2ec87952f357d4a3
+source-git-commit: 2a7629993e235d66844db036ccce88e57fc20562
 workflow-type: tm+mt
 source-wordcount: 10479
 ht-degree: 90%
@@ -419,7 +419,7 @@ Vous [ajoutez un ou plusieurs jeux de données](#add-datasets) ou [modifiez des 
 >[!CONTEXTUALHELP]
 >id="connection_b2bstitching_accountid"
 >title="ID de compte"
->abstract="Vous pouvez éventuellement sélectionner un identifiant de compte dans les champs d’identité non-identité ou non-personne disponibles définis dans le schéma du jeu de données. Les valeurs contenues seront utilisées comme identifiant de compte unique au niveau de la ligne, chaque fois que les informations d’identifiant de compte associées ne sont pas disponibles dans le jeu de données personne-à-compte."
+>abstract="Vous pouvez éventuellement sélectionner un identifiant de compte dans les champs d’identité non-identité ou non-personne disponibles définis dans le schéma XDM. Les valeurs contenues seront utilisées comme identifiant de compte unique au niveau de la ligne, chaque fois que les informations d’identifiant de compte associées ne sont pas disponibles dans le jeu de données personne-à-compte."
 
 >[!CONTEXTUALHELP]
 >id="connection_accountfield"
@@ -582,8 +582,8 @@ Vous pouvez ajouter un ou plusieurs jeux de données Experience Platform lorsque
    * Pour afficher les espaces de noms de chacune des colonnes du tableau, activez **[!UICONTROL Afficher l’espace de noms de colonne]**.
    * Pour effectuer une recherche dans les données d’exemple, utilisez ![Rechercher](/help/assets/icons/Search.svg).
    * Pour configurer les colonnes à afficher, sélectionnez ![ColumnSetting](/help/assets/icons/ColumnSetting.svg). <br/>Dans la boîte de dialogue **[!UICONTROL Personnaliser le tableau]** :
-      1. Sélectionnez les colonnes à afficher dans le tableau.
-      1. Sélectionnez **[!UICONTROL Appliquer]** pour appliquer la sélection ou **[!UICONTROL Annuler]** pour annuler la sélection.
+     1. Sélectionnez les colonnes à afficher dans le tableau.
+     1. Sélectionnez **[!UICONTROL Appliquer]** pour appliquer la sélection ou **[!UICONTROL Annuler]** pour annuler la sélection.
    * Pour afficher les données des colonnes qui contiennent des données de tableau ou d’objet, sélectionnez **[!UICONTROL Valeurs]**.
 
    Le volet **[!UICONTROL Informations sur le jeu de données]** affiche des détails sur le jeu de données. Sélectionnez la valeur de **[!UICONTROL Schéma]** ou **[!UICONTROL Jeu de données]** pour ouvrir l’interface correspondante dans Experience Platform dans un nouvel onglet du navigateur.
@@ -674,8 +674,8 @@ Pour modifier un jeu de données déjà configuré pour une connexion, accédez 
    * Pour afficher les espaces de noms de chacune des colonnes du tableau, activez **[!UICONTROL Afficher l’espace de noms de colonne]**.
    * Pour effectuer une recherche dans les données d’exemple, utilisez ![Rechercher](/help/assets/icons/Search.svg).
    * Pour configurer les colonnes à afficher, sélectionnez ![ColumnSetting](/help/assets/icons/ColumnSetting.svg). <br/>Dans la boîte de dialogue **[!UICONTROL Personnaliser le tableau]** :
-      1. Sélectionnez les colonnes à afficher dans le tableau.
-      1. Sélectionnez **[!UICONTROL Appliquer]** pour appliquer la sélection ou **[!UICONTROL Annuler]** pour annuler la sélection.
+     1. Sélectionnez les colonnes à afficher dans le tableau.
+     1. Sélectionnez **[!UICONTROL Appliquer]** pour appliquer la sélection ou **[!UICONTROL Annuler]** pour annuler la sélection.
    * Pour afficher les données des colonnes qui contiennent des données de tableau ou d’objet, sélectionnez **[!UICONTROL Valeurs]**.
 
    Le volet **[!UICONTROL Informations sur le jeu de données]** affiche des détails sur le jeu de données. Sélectionnez la valeur de **[!UICONTROL Schéma]** ou **[!UICONTROL Jeu de données]** pour ouvrir l’interface correspondante dans Experience Platform dans un nouvel onglet du navigateur.
