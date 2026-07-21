@@ -22,10 +22,10 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: c6b215f9fe718d0d3e8f81b7f55421c909b69c5a
+source-git-commit: 782311939794bab0f04da1df3dccdc3a9847449f
 workflow-type: tm+mt
-source-wordcount: 6499
-ht-degree: 91%
+source-wordcount: 6697
+ht-degree: 88%
 
 ---
 
@@ -92,8 +92,44 @@ Voir [Vue d’ensemble de la zone de travail de parcours](/help/analysis-workspa
 
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_percentage_value"
->title="Choisir le mode de calcul des pourcentages"
+>title="Valeur en pourcentage"
 >abstract="Les pourcentages affichés sur chaque nœud sont basés sur les mesures principales et secondaires que vous configurez. Vous pouvez choisir si les pourcentages se rapportent au nœud de départ, au nœud précédent ou à toutes les données de la suite de rapports."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_journeycanvas_arrow_settings"
+>title="Paramètres de la flèche"
+>abstract="Choisissez d’afficher ou de masquer les libellés sur la zone de travail. Les libellés sont des noms personnalisés créés dans la zone de travail du Parcours."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_journeycanvas_arrow_settings_ajo"
+>title="Paramètres de la flèche"
+>abstract="Choisissez d’afficher ou de masquer les libellés et les valeurs sur la zone de travail. Les libellés peuvent être des noms personnalisés créés dans la zone de travail du Parcours, ou des libellés ou des conditions créés dans Journey Optimizer. Les valeurs sont des nombres et des pourcentages qui indiquent les personnes ou les sessions qui ont été déplacées d’un nœud à l’autre du parcours. "
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_journeycanvas_show_fallout"
+>title="Afficher les abandons"
+>abstract="Les données sur les abandons indiquent le pourcentage et le nombre de personnes ou de sessions sur chaque nœud du parcours qui ne sont jamais arrivées au nœud suivant du parcours. Il est possible qu’ils aient effectué d’autres actions sur le site, mais ils n’ont jamais répondu aux critères définis par le nœud suivant dans le parcours.<br/>Les données sur les abandons affichent les personnes ou les sessions (quelle que soit la mesure principale que vous avez choisie), et elles sont basées sur le paramètre du conteneur de la zone de travail par Parcours."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_journeycanvas_compare"
+>title="Comparer à"
+>abstract="Période utilisée pour comparer les données de parcours actuelles à une période précédente. Lorsque vous sélectionnez une période de comparaison, chaque nœud du parcours affiche le pourcentage de changement entre la période actuelle et la période de comparaison sélectionnée, en fonction de la mesure principale. "
 
 <!-- markdownlint-enable MD034 -->
 

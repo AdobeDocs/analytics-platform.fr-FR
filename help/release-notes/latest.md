@@ -27,10 +27,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 4dd845eaf5f101e21a8e754ac588cb837398b975
+source-git-commit: b988d8cee94e40c6bed62f7ef22f209b7e38f46c
 workflow-type: tm+mt
-source-wordcount: 666
-ht-degree: 41%
+source-wordcount: 699
+ht-degree: 39%
 
 ---
 
@@ -49,6 +49,7 @@ Ces notes de mise à jour couvrent la période de publication de juillet 2026. L
 | **Content Analytics : Paid media data** <br/>Paid media est désormais disponible en tant que troisième canal pour Content Analytics.<p>(Lien vers la documentation à suivre.)</p> | | 31 juillet 2026 |
 | **Mise à jour de l’interface d’utilisation des connexions** <br/>dans l’interface d’utilisation lors de la gestion des connexions, vous pouvez désormais voir les détails d’utilisation de chaque module individuel, tels que Customer Journey Analytics ou Customer Journey Analytics B2B edition. <p>En outre, vous pouvez désormais ventiler les rapports d’utilisation de chacun des modules par mois.</p><p>(Lien vers la documentation à suivre.)</p> | | 31 juillet 2026 |
 | **Coworker d’entreprise CX : valider vos données lors de la migration d’Adobe Analytics vers Customer Journey Analytics** <br/>Une nouvelle compétence dans le Coworker d’entreprise CX vous permet de valider les données de votre implémentation Customer Journey Analytics par rapport aux données de votre implémentation Adobe Analytics existante. <p>Cette compétence compare automatiquement chaque dimension, mesure et tendance individuellement selon les besoins. Il peut également comparer toutes les suites de rapports Adobe Analytics à toutes les vues de données Customer Journey Analytics. Les compétences génèrent ensuite des informations et des recommandations pilotées par l’IA que vous pouvez mettre en œuvre pour faciliter votre migration vers Customer Journey Analytics.</p><p>(Lien vers la documentation à suivre.)</p> | | Fin juillet 2026 |
+| **Classifications intégrées**<br/>[&#x200B; Les classifications intégrées](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md#inline-classifications) vous permettent de renommer ou de combiner des lignes dans un tableau à structure libre. Et pour créer un champ dérivé à partir des lignes modifiées d’un tableau. | 20 Juillet 2026 | 25 juillet 2026 |
 
 ### Correctifs dans Customer Journey Analytics
 

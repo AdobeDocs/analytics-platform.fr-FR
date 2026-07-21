@@ -16,10 +16,10 @@ subfeature_v2:
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 28959f1ea858dee686e6d13025621c4a6164c319
+source-git-commit: b988d8cee94e40c6bed62f7ef22f209b7e38f46c
 workflow-type: tm+mt
-source-wordcount: 1602
-ht-degree: 55%
+source-wordcount: 1630
+ht-degree: 53%
 
 ---
 
@@ -89,9 +89,9 @@ Les options de menu contextuel supplémentaires suivantes sont disponibles lors 
 | **[!UICONTROL Sélection de tendances]** | Créez une visualisation sous forme de graphique linéaire de tendance pour la sélection. |
 | **[!UICONTROL Afficher uniquement les lignes sélectionnées]** | Affichez uniquement les lignes sélectionnées dans la visualisation. |
 | **[!UICONTROL Afficher toutes les lignes]** | Affichez toutes les lignes de la visualisation. |
-| **[!UICONTROL Renommer la ligne sélectionnée]** | *Disponibilité limitée du test*<br/> renommez la ligne sélectionnée. Saisissez un **[!UICONTROL Nom]** dans la boîte de dialogue **[!UICONTROL Renommer la ligne sélectionnée]**. Sélectionnez **[!UICONTROL OK]** pour confirmer ou **[!UICONTROL Annuler]** pour annuler. Une fois qu’une ligne d’un tableau à structure libre est renommée, le nom de la dimension dans la colonne d’en-tête est ajouté avec la mention **[!UICONTROL (modifié)]** et une icône ![Engrenage](/help/assets/icons/Gear.svg) est disponible pour réinitialiser les lignes renommées dans la colonne d’en-tête de dimension. Voir [Exemple de classification intégrée](#inline-classifications-example). |
-| **[!UICONTROL Combiner les lignes sélectionnées]** | *Disponibilité du test limitée*<br/> Combinez les lignes sélectionnées. Saisissez un **[!UICONTROL Nom]** dans la boîte de dialogue **[!UICONTROL Combiner les lignes sélectionnées]**. Sélectionnez **[!UICONTROL OK]** pour confirmer ou **[!UICONTROL Annuler]** pour annuler. Une fois les lignes d’un tableau à structure libre combinées, le nom de la dimension dans la colonne d’en-tête est ajouté avec **[!UICONTROL (modifié)]** et une icône ![Engrenage](/help/assets/icons/Gear.svg) est disponible pour réinitialiser les lignes renommées dans la colonne d’en-tête de dimension. Voir [Exemple de classification intégrée](#inline-classifications-example). |
-| **[!UICONTROL Créer comme champ dérivé]** | *Disponibilité limitée du test *<br/>*Vous devez être un administrateur de produit Customer Journey Analytics pour voir cette option de menu contextuel.*<br/> Disponible sur n’importe quelle ligne sélectionnée d’un tableau à structure libre qui est modifiée suite au changement de nom ou à la combinaison de lignes. Lorsque cette option est sélectionnée, l’[interface des champs dérivés](/help/data-views/derived-fields/derived-fields.md#create-a-derived-field) s’ouvre avec les modifications que vous avez apportées au tableau à structure libre déjà prérempli. Voir [Exemple de classification intégrée](#inline-classifications-example). |
+| **[!UICONTROL Renommer la ligne sélectionnée]** | Renommez la ligne sélectionnée. Saisissez un **[!UICONTROL Nom]** dans la boîte de dialogue **[!UICONTROL Renommer la ligne sélectionnée]**. Sélectionnez **[!UICONTROL OK]** pour confirmer ou **[!UICONTROL Annuler]** pour annuler. Une fois qu’une ligne d’un tableau à structure libre est renommée, le nom de la dimension dans la colonne d’en-tête est ajouté avec la mention **[!UICONTROL (modifié)]** et une icône ![Engrenage](/help/assets/icons/Gear.svg) est disponible pour réinitialiser les lignes modifiées dans la colonne d’en-tête de dimension. Voir [Classifications intégrées](#inline-classifications). |
+| **[!UICONTROL Combiner les lignes sélectionnées]** | Combiner les lignes sélectionnées. Saisissez un **[!UICONTROL Nom]** dans la boîte de dialogue **[!UICONTROL Combiner les lignes sélectionnées]**. Sélectionnez **[!UICONTROL OK]** pour confirmer ou **[!UICONTROL Annuler]** pour annuler. Une fois les lignes d’un tableau à structure libre combinées, le nom de la dimension dans la colonne d’en-tête est ajouté avec **[!UICONTROL (modifié)]** et une icône ![Engrenage](/help/assets/icons/Gear.svg) est disponible pour réinitialiser les lignes modifiées dans la colonne d’en-tête de dimension. Voir [Classifications intégrées](#inline-classifications). |
+| **[!UICONTROL Créer des lignes modifiées comme champ dérivé]** | *Vous devez être un administrateur produit Customer Journey Analytics pour voir cette option de menu contextuel.*<br/> Disponible sur n’importe quelle ligne sélectionnée d’un tableau à structure libre qui est modifiée suite au changement de nom ou à la combinaison de lignes. Lorsque cette option est sélectionnée, l’[interface des champs dérivés](/help/data-views/derived-fields/derived-fields.md#create-a-derived-field) s’ouvre avec les modifications que vous avez apportées au tableau à structure libre déjà prérempli. Voir [Classifications intégrées](#inline-classifications). |
 | **[!UICONTROL Créer une annotation à partir d’une sélection]** | Ouvrez le [créateur d’annotations](/help/components/annotations/create-annotations.md#annotation-builder) pour créer une annotation pour la sélection. |
 | **[!UICONTROL Créer un segment à partir de la sélection]** | Ouvrez le [Créateur de segments](/help/components/segments/seg-builder.md) pour créer un segment à partir de la sélection. |
 | **[!UICONTROL Créer une audience à partir de la sélection]** | Ouvrez le [Créateur d’audiences](/help/components/audiences/publish.md#audience-builder) pour créer une audience à partir de la sélection. |
@@ -106,9 +106,9 @@ Les options de menu contextuel supplémentaires suivantes sont disponibles lors 
 | **[!UICONTROL Modifier les modèles d’attribution]** | Modifiez le modèle d’attribution de la colonne. |
 | **[!UICONTROL Comparer le modèle d’attribution]** | Spécifiez un nouveau modèle d’attribution et comparez-le au modèle d’attribution de la colonne sélectionnée. Une nouvelle colonne est ajoutée avec les nouvelles mesures de modèle d’attribution. Une colonne Changement en pourcentage est également ajoutée à des fins de comparaison. |
 | **[!UICONTROL Réinitialiser les largeurs de colonne]** | Rétablissez la largeur par défaut des colonnes. |
-| **[!UICONTROL Créer une annotation à partir d’une sélection]** | Ouvrez les **[!UICONTROL Détails de l’annotation]** pour ajouter une annotation. |
-| **[!UICONTROL Créer un segment à partir de la sélection]** | Ouvrez le **[!UICONTROL Créateur de segments]** pour créer un segment à partir de la sélection. |
-| **[!UICONTROL Créer une audience à partir de la sélection]** | Ouvrez la boîte de dialogue **[!UICONTROL Créer une audience]** pour créer une audience à partir de la sélection. |
+| **[!UICONTROL Créer une annotation à partir d’une sélection]** | Ouvrez le [créateur d’annotations](/help/components/annotations/create-annotations.md#annotation-builder) pour créer une annotation pour la sélection. |
+| **[!UICONTROL Créer un segment à partir de la sélection]** | Ouvrez le [Créateur de segments](/help/components/segments/seg-builder.md) pour créer un segment à partir de la sélection. |
+| **[!UICONTROL Créer une audience à partir de la sélection]** | Ouvrez le [Créateur d’audiences](/help/components/audiences/publish.md#audience-builder) pour créer une audience à partir de la sélection. |
 
 
 ## Modifier la hauteur des lignes
@@ -116,52 +116,54 @@ Les options de menu contextuel supplémentaires suivantes sont disponibles lors 
 Vous pouvez définir la [densité d’affichage](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density) d’un projet sur **[!UICONTROL Compact]**, **[!UICONTROL Confortable]** et **[!UICONTROL Développé]**.
 
 
-## Exemple de classifications intégrées
+## Classifications intégrées {#inline-classifications-example}
 
 {{release-limited-testing-section}}
 
-Cet exemple illustre comment utiliser les options de menu contextuel **[!UICONTROL Renommer la ligne sélectionnée]**, **[!UICONTROL Combiner les lignes sélectionnées]** et **[!UICONTROL Créer comme champ dérivé]**. Et comment réinitialiser le tableau à structure libre modifié.
+Les classifications intégrées vous permettent de renommer ou de combiner des lignes dans un tableau à structure libre. Et pour créer un champ dérivé à partir des lignes modifiées d’un tableau.
+
+L’exemple ci-dessous illustre comment utiliser les options de menu contextuel **[!UICONTROL Renommer la ligne sélectionnée]**, **[!UICONTROL Combiner les lignes sélectionnées]** et **[!UICONTROL Créer des lignes modifiées en tant que champ dérivé]**. Et comment réinitialiser le tableau à structure libre modifié.
 
 * Renommez **[!UICONTROL Aucune valeur]** la ligne en **[!UICONTROL Autre]**.
 
-   1. Sélectionnez **[!UICONTROL Renommer la ligne sélectionnée]** dans le menu contextuel de la ligne sélectionnée **[!UICONTROL Aucune valeur]**.
+  1. Sélectionnez **[!UICONTROL Renommer la ligne sélectionnée]** dans le menu contextuel de la ligne sélectionnée **[!UICONTROL Aucune valeur]**.
 
-      ![Sélectionnez l’option Renommer la ligne sélectionnée du menu contextuel](assets/context-rename.png)
+     ![Sélectionnez l’option Renommer la ligne sélectionnée du menu contextuel](assets/context-rename.png)
 
-   1. Dans la boîte de dialogue **[!UICONTROL Renommer la ligne sélectionnée]** :
+  1. Dans la boîte de dialogue **[!UICONTROL Renommer la ligne sélectionnée]** :
 
-      ![Boîte de dialogue Renommer la ligne sélectionnée](assets/dialog-rename.png)
+     ![Boîte de dialogue Renommer la ligne sélectionnée](assets/dialog-rename.png)
 
-      1. Enter <code>Other</code> pour **[!UICONTROL Nom]**.
-      1. Sélectionnez **[!UICONTROL OK]**.
+     1. Enter <code>Other</code> pour **[!UICONTROL Nom]**.
+     1. Sélectionnez **[!UICONTROL OK]**.
 
 * Combinez les lignes **[!UICONTROL Hommes]** et **[!UICONTROL Femmes]** dans une ligne **[!UICONTROL Adultes]**.
 
-   1. Sélectionnez la ligne **[!UICONTROL Hommes]** et **[!UICONTROL Femmes]**.
-   1. Sélectionnez **[!UICONTROL Combiner les lignes sélectionnées]** dans le menu contextuel de n’importe quelle ligne sélectionnée.
+  1. Sélectionnez la ligne **[!UICONTROL Hommes]** et **[!UICONTROL Femmes]**.
+  1. Sélectionnez **[!UICONTROL Combiner les lignes sélectionnées]** dans le menu contextuel de n’importe quelle ligne sélectionnée.
 
-      ![Sélectionnez l’option de menu Combiner les lignes sélectionnées](assets/context-combine.png)
+     ![Sélectionnez l’option de menu Combiner les lignes sélectionnées](assets/context-combine.png)
 
-   1. Dans la boîte de dialogue **[!UICONTROL Combiner les lignes sélectionnées]** :
+  1. Dans la boîte de dialogue **[!UICONTROL Combiner les lignes sélectionnées]** :
 
-      ![Boîte de dialogue Combiner les lignes sélectionnées](assets/dialog-combine.png)
+     ![Boîte de dialogue Combiner les lignes sélectionnées](assets/dialog-combine.png)
 
-      1. Enter <code>Adults</code> pour **[!UICONTROL Nom]**.
-      1. Sélectionnez **[!UICONTROL OK]**.
+     1. Enter <code>Adults</code> pour **[!UICONTROL Nom]**.
+     1. Sélectionnez **[!UICONTROL OK]**.
 
 * Créez un champ dérivé à partir des modifications apportées au tableau à structure libre.
 
-   1. Sélectionnez **[!UICONTROL Créer en tant que champ dérivé]** dans le menu contextuel pour toute ligne sélectionnée dans le tableau modifié.
+  1. Sélectionnez **[!UICONTROL Créer des lignes modifiées comme champ dérivé]** dans le menu contextuel pour toute ligne sélectionnée dans le tableau modifié.
 
-      ![Sélectionnez l’option de menu Créer comme champ dérivé &#x200B;](assets/context-derived.png)
+     ![Sélectionnez l’option de menu Créer des lignes modifiées en tant que champ dérivé &#x200B;](assets/context-derived.png)
 
-   1. Inspectez, éventuellement modifiez et enregistrez la définition du champ dérivé en fonction de toutes les modifications apportées dans le tableau.
+  1. Inspectez, éventuellement modifiez et enregistrez la définition du champ dérivé en fonction de toutes les modifications apportées dans le tableau.
 
-      ![&#x200B; Boîte de dialogue Créer un champ dérivé &#x200B;](assets/dialog-derived.png)
+     ![&#x200B; Boîte de dialogue Créer un champ dérivé &#x200B;](assets/dialog-derived.png)
 
 * Réinitialiser le tableau à structure libre à l’état avant les modifications.
 
-   1. Sélectionnez ![Engrenage](/help/assets/icons/Gear.svg) en regard de **[!UICONTROL _nom de la dimension _(modifié)]**.
-   1. Sélectionnez **[!UICONTROL Réinitialiser les lignes renommées]** dans la fenêtre contextuelle **[!UICONTROL Lignes renommées]**.
+  1. Sélectionnez ![Engrenage](/help/assets/icons/Gear.svg) en regard de **[!UICONTROL _nom de la dimension _(modifié)]**.
+  1. Sélectionnez **[!UICONTROL Réinitialiser les lignes modifiées]** dans la fenêtre contextuelle **[!UICONTROL Lignes modifiées]**.
 
-      ![Réinitialiser le tableau à structure libre](assets/popup-reset.png)
+     ![Réinitialiser le tableau à structure libre](assets/popup-reset.png)
