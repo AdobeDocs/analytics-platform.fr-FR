@@ -27,9 +27,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: b988d8cee94e40c6bed62f7ef22f209b7e38f46c
+source-git-commit: 3fcb9c403ace295c1a7e62c21d8bb444a4f9c011
 workflow-type: tm+mt
-source-wordcount: 699
+source-wordcount: 696
 ht-degree: 39%
 
 ---
@@ -44,7 +44,7 @@ Ces notes de mise à jour couvrent la période de publication de juillet 2026. L
 
 | Fonctionnalité et description | [Le déploiement commence](releases.md) | [Disponibilité générale](releases.md) |
 | -----------|-----------|-----------|
-| **Analyse sous-événement** <br/>L&#39;analyse sous-événement permet d&#39;analyser les données à un niveau plus granulaire que le niveau de l&#39;événement. Au lieu de filtrer des événements entiers, vous pouvez segmenter des conteneurs individuels au sein d’un événement. <p>Par exemple, vous pouvez segmenter une catégorie de produits spécifique sans inclure tous les autres produits achetés dans la même commande. Vous pouvez également définir des objets ou des tableaux qui font partie de vos données d’événement en tant que conteneurs distincts dans une vue de données.</p><p>(Lien vers la documentation à suivre.)</p> | 15 juillet 2026 | Fin juillet 2026 |
+| **Analyse de sous-événement** <br/>[Analyse de sous-événement](/help/components/segments/sub-event.md) permet d&#39;analyser les données à un niveau plus granulaire que le niveau de l&#39;événement. Au lieu de filtrer des événements entiers, vous pouvez segmenter des conteneurs individuels au sein d’un événement. <p>Par exemple, vous pouvez segmenter une catégorie de produits spécifique sans inclure tous les autres produits achetés dans la même commande. Vous pouvez également définir des objets ou des tableaux qui font partie de vos données d’événement en tant que [conteneurs personnalisés](/help/data-views/create-dataview.md#custom-containers) distincts dans une vue de données. | 21 juillet 2026 | Fin juillet 2026 |
 | **B2B edition : la prise en charge des jeux de données ad hoc et relationnels** <br/>Les jeux de données ad hoc et relationnels sont désormais également pris en charge dans les connexions basées sur les comptes dans Customer Journey Analytics B2B edition.<p>(Lien vers la documentation à suivre.)</p> | | 20 Juillet 2026 |
 | **Content Analytics : Paid media data** <br/>Paid media est désormais disponible en tant que troisième canal pour Content Analytics.<p>(Lien vers la documentation à suivre.)</p> | | 31 juillet 2026 |
 | **Mise à jour de l’interface d’utilisation des connexions** <br/>dans l’interface d’utilisation lors de la gestion des connexions, vous pouvez désormais voir les détails d’utilisation de chaque module individuel, tels que Customer Journey Analytics ou Customer Journey Analytics B2B edition. <p>En outre, vous pouvez désormais ventiler les rapports d’utilisation de chacun des modules par mois.</p><p>(Lien vers la documentation à suivre.)</p> | | 31 juillet 2026 |

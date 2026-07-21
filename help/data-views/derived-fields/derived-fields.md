@@ -22,10 +22,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: beb7a3c1-66ab-4786-b879-7621375b3c40
-source-git-commit: 28959f1ea858dee686e6d13025621c4a6164c319
+source-git-commit: 3fcb9c403ace295c1a7e62c21d8bb444a4f9c011
 workflow-type: tm+mt
-source-wordcount: 10573
-ht-degree: 98%
+source-wordcount: 10442
+ht-degree: 97%
 
 ---
 
@@ -481,16 +481,16 @@ Pour utiliser le modèle, vous devez spécifier les paramètres de chaque foncti
 Pour chaque fonction prise en charge, consultez les détails ci-dessous sur :
 
 - Spécifications :
-   - Type de données en entrée : type de données pris en charge,
-   - Entrée : valeurs possibles pour l’entrée,
-   - Opérateurs inclus : opérateurs pris en charge pour cette fonction (le cas échéant),
-   - Limitations : limitations qui s’appliquent à cette fonction spécifique,
-   - Sortie.
+  - Type de données en entrée : type de données pris en charge,
+  - Entrée : valeurs possibles pour l’entrée,
+  - Opérateurs inclus : opérateurs pris en charge pour cette fonction (le cas échéant),
+  - Limitations : limitations qui s’appliquent à cette fonction spécifique,
+  - Sortie.
 
 - Cas d’utilisation, notamment :
-   - Données avant de définir le champ dérivé,
-   - Comment définir le champ dérivé,
-   - Données après avoir défini le champ dérivé.
+  - Données avant de définir le champ dérivé,
+  - Comment définir le champ dérivé,
+  - Données après avoir défini le champ dérivé.
 
 - Contraintes (le cas échéant).
 
@@ -756,7 +756,8 @@ Définit un ensemble de valeurs qui sont remplacées par les valeurs corresponda
 
 ## Cas d’utilisation 1 {#classify-uc1}
 
-Vous disposez d’un fichier CSV qui comprend une colonne clé pour `hotelID` et une ou plusieurs colonnes supplémentaires associées à `hotelID` : `city`, `rooms`, `hotel name`.Vous collectez [!DNL Hotel ID] dans une dimension mais souhaitez créer une dimension [!DNL Hotel Name] dérivée de `hotelID` dans le fichier CSV.
+Vous disposez d’un fichier CSV qui comprend une colonne clé pour `hotelID` et une ou plusieurs colonnes supplémentaires associées au `hotelID` : `city`, `rooms`, `hotel name`.
+Vous collectez des [!DNL Hotel ID] dans une dimension mais souhaitez créer une dimension [!DNL Hotel Name] dérivée de la `hotelID` dans le fichier CSV.
 
 **Structure et contenu de fichier CSV**
 
@@ -1014,7 +1015,8 @@ Vous pouvez également utiliser la valeur pratique de période dynamique Mainten
 
 Vous souhaitez comprendre le temps de recherche, en minutes, qu’une personne consacre avant de passer une commande au cours d’une session.
 
-Vous définissez un nouveau champ dérivé de `Time Between Search And Order In Minutes` qui est le résultat de deux fonctions [[!UICONTROL CASE WHEN]](#case-when) pour définir les valeurs [!UICONTROL Temps de recherche] et [!UICONTROL Temps de commande].Vous utilisez ensuite ces deux valeurs pour calculer la différence à l’aide d’une fonction [!UICONTROL DATE MATH], avec la [!UICONTROL portée] définie sur [!UICONTROL Session], les valeurs définies sur [!UICONTROL Temps de recherche] et [!UICONTROL Temps de commande], et la [!UICONTROL granularité de sortie] définie sur [!UICONTROL Minute]. Pour les deux valeurs, sélectionnez [!UICONTROL Renvoyer la première] pour vous assurer que la première [!UICONTROL Heure de recherche] et la première [!UICONTROL Heure de commande] sont renvoyées.
+Vous définissez un nouveau champ dérivé de `Time Between Search And Order In Minutes` qui est le résultat de deux fonctions [[!UICONTROL CASE QUAND]](#case-when) pour définir les valeurs [!UICONTROL Temps de recherche] et [!UICONTROL Temps de commande].
+Utilisez ensuite ces deux valeurs pour calculer la différence avec une fonction [!UICONTROL DATE MATH] avec [!UICONTROL Scope] défini sur [!UICONTROL Session], les valeurs définies sur [!UICONTROL Search Time] et [!UICONTROL Order Time] et [!UICONTROL Output granularity] défini sur [!UICONTROL Minute]. Pour les deux valeurs, sélectionnez [!UICONTROL Renvoyer la première] pour vous assurer que la première [!UICONTROL Heure de recherche] et [!UICONTROL Heure de commande] est renvoyée.
 
 ![Copie d’écran de la règle Date Math 3](assets/datemath-3.png)
 
@@ -1286,7 +1288,8 @@ Vous pouvez rapidement insérer une fonction [!UICONTROL Recherche] dans le cré
 1. Sélectionnez **[!UICONTROL Champs de schéma]** dans le sélecteur.
 1. Sélectionnez ![icône de champ de schéma](assets/Smock_Folder_18_N.svg) **[!UICONTROL Jeux de données de recherche]**.
 1. Sélectionnez votre jeu de données de recherche et recherchez le champ à utiliser pour la recherche.
-1. Faites glisser et déposez le champ de recherche sur l’un des champs d’entrée disponibles pour une fonction (par exemple, Cas si). Lorsqu’il est valide, une zone bleue, intitulée **[!UICONTROL + Ajouter]**, vous permet de déposer le champ et d’insérer automatiquement une fonction de recherche avant la fonction sur laquelle vous avez déposé le champ de recherche. La fonction de recherche insérée est automatiquement renseignée avec des valeurs pertinentes pour tous les champs.   ![Glissement de recherche](assets/lookup-drag.png)
+1. Faites glisser et déposez le champ de recherche sur l’un des champs d’entrée disponibles pour une fonction (par exemple, la casse quand). Lorsqu’elle est valide, une zone bleue, intitulée **[!UICONTROL + Ajouter]**, vous permet de déposer le champ et d’insérer automatiquement une fonction de recherche avant la fonction sur laquelle vous avez déposé le champ de recherche. La fonction de recherche insérée est automatiquement renseignée avec des valeurs pertinentes pour tous les champs.
+   ![Glissement de recherche](assets/lookup-drag.png)
 
 +++
 
@@ -1407,7 +1410,8 @@ Vous définissez un champ dérivé `Corrected Annual Revenue`. Utilisez la fonct
 
 Pour créer une formule, procédez comme suit :
 
-1. Commencez simplement à saisir dans le champ Formule et les champs numériques qui correspondent à ce que vous saisissez apparaîtront dans un menu contextuel. Vous pouvez également faire glisser et déposer un champ numérique à partir des champs disponibles dans le volet de gauche.   ![Informations supplémentaires Math 1](assets/math-more-info-1.png)
+1. Commencez simplement à saisir dans le champ Formule et les champs numériques qui correspondent à ce que vous saisissez apparaîtront dans un menu contextuel. Vous pouvez également faire glisser et déposer un champ numérique à partir des champs disponibles dans le volet de gauche.
+   ![Informations supplémentaires Math 1](assets/math-more-info-1.png)
 
 1. Ajoutez l’opérande (par exemple, `*` à multiplier) suivi d’un autre champ ou d’une valeur statique. Vous pouvez utiliser des parenthèses pour définir des formules plus complexes.
 
@@ -1423,11 +1427,11 @@ Certaines considérations importantes doivent être prises en compte lorsque vou
 - Vous ne pouvez pas utiliser l’opérateur de montée en puissance (`ˆ`) sur une valeur statique.
 - Si vous utilisez plusieurs valeurs statiques dans une formule, ces valeurs statiques doivent être regroupées à l’aide de parenthèses pour que la formule soit valide. Par exemple :
 
-   - Cette formule renvoie une erreur.
-     ![Informations supplémentaires Math 4](assets/math-more-info-4.png)
+  - Cette formule renvoie une erreur.
+    ![Informations supplémentaires Math 4](assets/math-more-info-4.png)
 
-   - Cette formule est valide.
-     ![Informations supplémentaires Math 5](assets/math-more-info-5.png)
+  - Cette formule est valide.
+    ![Informations supplémentaires Math 5](assets/math-more-info-5.png)
 
 Utilisez la fonction Math pour les calculs basés sur le niveau de l’accès. Utilisez la fonction [Résumer](#summarize) pour les calculs basés sur l’événement, la session ou la portée de la personne.
 
@@ -1783,6 +1787,10 @@ Vous créez un champ dérivé `Second Response` pour prendre la dernière valeur
 
 {style="table-layout:auto"}
 
+## Conteneur personnalisé
+
+Le champ dérivé devient disponible sous la forme d’un [conteneur personnalisé](/help/data-views/create-dataview.md#containers-1) que vous pouvez sélectionner dans votre vue de données et utiliser pour l’[analyse de sous-événement](/help/components/segments/sub-event.md) dans un projet Workspace.
+
 +++
 
 <!-- SUMMARIZE -->
@@ -1996,7 +2004,7 @@ Modifie le type d’un champ afin de le rendre disponible pour des transformatio
 
 | Type de données d’entrée | Entrée | Opérateurs inclus | Limite | Sortie |
 |---|---|---|---|---|
-| <ul><li>Numérique</li><li>Date</li><li>Date-heure</li><li>Chaîne</li></ul> | <ul><li>[!UICONTROL Champ] | <p><ul><li>Nombre entier<ul><li>Vers Chaîne</li></ul></li><li>Double<ul><li>Vers Chaîne<ul><li>Inclure le nombre de décimales à hériter (5 max. ?)</li></ul></li><li>Vers Entier</li></ul></li><li>Octet<ul><li>Vers Chaîne</li></ul></li><li>Long<ul><li>Vers Chaîne</li></ul></li><li>Date<ul><li>Vers Chaîne<ul><li>Permet de définir le format de sortie</li></ul></li><li>Exemples<ul><li>Date (exemple du 7 janvier 2025)<ul><li data-stringify-indent="1" data-stringify-border="0">MM-DD-YY<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. 01-07-25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM-DD-YYYY<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. 01-07-2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">DD-MM-YY<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. 07-01-25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">DD-MM-YYYY<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. 07-01-2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YY-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. 25-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YYYY-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. 2025-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM/DD/YY<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. 01/07/25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM/DD/YYYY<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. 01/07/2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YYYY/MM/DD<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. 2025/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YY/MM/DD<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. 25/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MMM DD, YYYY<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. 7 janvier 2025</li></ul></li></ul></li></ul></li></ul></li><li>Date-heure<ul><li>Vers Chaîne<ul><li>Permet de définir le format de sortie</li></ul></li><li>Exemples<ul><li data-stringify-indent="0" data-stringify-border="0">Date-heure (exemple du 7 janvier 2025 à 1 :30pm 52 secondes)<ul><li data-stringify-indent="2" data-stringify-border="0">MM-DD-YY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. 01-07-25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM-JJ-AAAA hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. 01-07-2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">JJ-MM-AA hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. 07-01-25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">DD-MM-YYYY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. 07-01-2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YY-MM-DD hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. 25-01-07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YYYY-MM-DD hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. 2025-01-07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM/DD/YY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. 01/07/25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM/DD/YYYY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. 01/07/2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YYYY/MM/DD hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. 2025/01/07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">AA/MM/JJ hh:mm :ss<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. 25/01/07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MMM DD, YYYY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. 7 janvier 2025 13:30:52</li></ul></li></ul></li></ul></li><li>Chaîne<ul><li>Vers Numérique<ul><li>Si nous avons des valeurs qui ne sont pas numériques par nature, elles renvoient une valeur nulle.</li><li>Nous aurons besoin que l’utilisateur saisisse la précision et les paramètres régionaux à utiliser. </li></ul></li></ul></li></ul></li></ul></p> | <p>3 fonctions par champ dérivé</p> | <p>Nouveau champ dérivé</p> |
+| <ul><li>Numérique</li><li>Date</li><li>Date-heure</li><li>Chaîne</li></ul> | <ul><li>[!UICONTROL Champ] | <p><ul><li>Nombre entier<ul><li>Vers Chaîne</li></ul></li><li>Double<ul><li>Vers Chaîne<ul><li>Inclure le nombre de décimales à hériter (5 max. ?)</li></ul></li><li>Vers Entier</li></ul></li><li>Octet<ul><li>Vers Chaîne</li></ul></li><li>Long<ul><li>Vers Chaîne</li></ul></li><li>Date<ul><li>Vers Chaîne<ul><li>Permet de définir le format de sortie</li></ul></li><li>Exemples<ul><li>Date (exemple du 7 janvier 2025)<ul><li data-stringify-indent="1" data-stringify-border="0">MM-DD-YY<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. 01-07-25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM-DD-YYYY<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. 01-07-2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">DD-MM-YY<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. 07-01-25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">DD-MM-YYYY<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. 07-01-2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YY-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. 25-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YYYY-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. 2025-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM/DD/YY<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. 01/07/25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM/DD/YYYY<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. 01/07/2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YYYY/MM/DD<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. 2025/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YY/MM/DD<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. 25/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MMM DD, YYYY<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. 7 janvier 2025</li></ul></li></ul></li></ul></li></ul></li><li>Date-heure<ul><li>Vers Chaîne<ul><li>Permet de définir le format de sortie</li></ul></li><li>Exemples<ul><li data-stringify-indent="0" data-stringify-border="0">Date et heure (exemple du 7 janvier 2025 à 13 h 30, 52 secondes)<ul><li data-stringify-indent="2" data-stringify-border="0">MM-DD-YY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. 01-07-25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM-JJ-AAAA hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. 01-07-2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">JJ-MM-AA hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. 07-01-25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">DD-MM-YYYY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. 07-01-2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YY-MM-DD hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. 25-01-07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YYYY-MM-DD hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. 2025-01-07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM/DD/YY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. 01/07/25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM/DD/YYYY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. 01/07/2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YYYY/MM/DD hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. 2025/01/07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">AA/MM/JJ hh:mm :ss<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. 25/01/07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MMM DD, YYYY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. 7 janvier 2025 13:30:52</li></ul></li></ul></li></ul></li><li>Chaîne<ul><li>Vers Numérique<ul><li>Si nous avons des valeurs qui ne sont pas numériques par nature, elles renvoient une valeur nulle.</li><li>Nous aurons besoin que l’utilisateur saisisse la précision et les paramètres régionaux à utiliser. </li></ul></li></ul></li></ul></li></ul></p> | <p>3 fonctions par champ dérivé</p> | <p>Nouveau champ dérivé</p> |
 
 {style="table-layout:auto"}
 
@@ -2122,7 +2130,7 @@ Vous définissez un champ dérivé `Query String CID`. Utilisez la fonction [!UI
 Les restrictions suivantes s’appliquent à la fonctionnalité Champ dérivé en général :
 
 - Vous pouvez utiliser un maximum de dix champs de schéma différents (champs standard non inclus) lors de la définition de règles pour un champ dérivé.
-   - À partir de ce maximum de dix champs de schéma différents, seul un maximum de trois champs de schéma de recherche ou de profil sont autorisés.
+  - À partir de ce maximum de dix champs de schéma différents, seul un maximum de trois champs de schéma de recherche ou de profil sont autorisés.
 - Vous pouvez avoir un nombre maximum de champs dérivés par connexion Customer Journey Analytics en fonction du package pour lequel vous disposez d’une licence. Pour plus d’informations, consultez la [description du produit](https://helpx.adobe.com/fr/legal/product-descriptions/customer-journey-analytics.html?lang=fr){target="_blank"}.
 
 
