@@ -2,7 +2,7 @@
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 329ac0f886fdf287d87130ca504f2c8306494870
+source-git-commit: ea98309e823b1d4249ac09ca11f0d9f22406c8f3
 workflow-type: tm+mt
 source-wordcount: '1462'
 ht-degree: 92%
@@ -149,7 +149,7 @@ ht-degree: 92%
     + {hide-from-toc}[Vue d’ensemble](/help/connections/consent-reporting-filtering/consent-overview.md)
     + {hide-from-toc}[Configuration](/help/connections/consent-reporting-filtering/consent-configure.md)
     + {hide-from-toc}[Gérer](/help/connections/consent-reporting-filtering/consent-manage.md)
-    + {hide-from-toc}[&#x200B; Analyser &#x200B;](/help/connections/consent-reporting-filtering/consent-analyze.md)
+    + {hide-from-toc}[ Analyser ](/help/connections/consent-reporting-filtering/consent-analyze.md)
     + {hide-from-toc}[Cas d’utilisation](/help/connections/consent-reporting-filtering/consent-use-cases.md)
 + Vues des données {#cja-dataviews}
   + [Vue d’ensemble des vues de données](../data-views/data-views.md)
@@ -450,7 +450,6 @@ ht-degree: 92%
   + [Libellés restreints](../report-builder/restricted-labels.md)
   + [Paramètres de Report Builder](../report-builder/report-builder-settings.md)
 
-
 + Gestionnaire des activités de rapport {#reporting-activity-manager}
   + [Vue d’ensemble](../reporting-activity-manager/reporting-activity-overview.md)
   + [Afficher l’activité de rapport](../reporting-activity-manager/reporting-activity.md)
@@ -553,7 +552,7 @@ ht-degree: 92%
       + [Lier des lectures de session](/help/use-cases/third-party/quantum-metric/tie-session-replays.md)
       + [Utiliser des cartes thermiques](/help/use-cases/third-party/quantum-metric/heatmap.md)
       + [Ajouter des événements de friction](/help/use-cases/third-party/quantum-metric/friction-events.md)
-      + {hide-from-toc}[Connecteur &#x200B;](/help/use-cases/third-party/quantum-metric/source-connector.md)
+      + {hide-from-toc}[Connecteur ](/help/use-cases/third-party/quantum-metric/source-connector.md)
 
 + Labs {#labs}
   + [Guide d’utilisation de Labs](../labs/labs.md)
