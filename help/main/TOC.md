@@ -2,7 +2,7 @@
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 163376377713bde099524bd2a5d3060a5193a709
+source-git-commit: 329ac0f886fdf287d87130ca504f2c8306494870
 workflow-type: tm+mt
 source-wordcount: '1462'
 ht-degree: 92%
@@ -149,7 +149,7 @@ ht-degree: 92%
     + {hide-from-toc}[Vue d’ensemble](/help/connections/consent-reporting-filtering/consent-overview.md)
     + {hide-from-toc}[Configuration](/help/connections/consent-reporting-filtering/consent-configure.md)
     + {hide-from-toc}[Gérer](/help/connections/consent-reporting-filtering/consent-manage.md)
-    + {hide-from-toc}[&#x200B; Analyser &#x200B;](/help/connections/consent-reporting-filtering/consent-analyze.md)
+    + {hide-from-toc}[ Analyser ](/help/connections/consent-reporting-filtering/consent-analyze.md)
     + {hide-from-toc}[Cas d’utilisation](/help/connections/consent-reporting-filtering/consent-use-cases.md)
 + Vues des données {#cja-dataviews}
   + [Vue d’ensemble des vues de données](../data-views/data-views.md)
@@ -375,7 +375,7 @@ ht-degree: 92%
     + [Gérer les segments](/help/components/segments/seg-manage.md)
     + [Opérateurs](/help/components/segments/seg-operators.md)
     + [Utiliser les segments](/help/components/segments/seg-use.md)
-    + {hide-from-toc}[Analyse des sous-événements](/help/components/segments/sub-event.md)
+    + [Analyse des sous-événements](/help/components/segments/sub-event.md)
   + Mesures calculées {#cja-calcmetrics}
     + [Vue d’ensemble](../components/calc-metrics/calc-metr-overview.md)
     + Workflow {#cm-workflow}
@@ -553,7 +553,7 @@ ht-degree: 92%
       + [Lier des lectures de session](/help/use-cases/third-party/quantum-metric/tie-session-replays.md)
       + [Utiliser des cartes thermiques](/help/use-cases/third-party/quantum-metric/heatmap.md)
       + [Ajouter des événements de friction](/help/use-cases/third-party/quantum-metric/friction-events.md)
-      + {hide-from-toc}[Connecteur &#x200B;](/help/use-cases/third-party/quantum-metric/source-connector.md)
+      + {hide-from-toc}[Connecteur ](/help/use-cases/third-party/quantum-metric/source-connector.md)
 
 + Labs {#labs}
   + [Guide d’utilisation de Labs](../labs/labs.md)

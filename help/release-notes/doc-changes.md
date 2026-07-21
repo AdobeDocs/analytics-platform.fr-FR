@@ -6,36 +6,14 @@ solution: Customer Journey Analytics
 feature: Release Notes
 autotag-review: '2026-05-19T11:00:09.733Z'
 TQID: 'https://experienceleague.adobe.com/hHcvSYqGtYuKbPLvtu2qALBNLA0cogWxEUYxu-ktUvM'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b743a5d9-dc51-41ed-8b2f-86a1f8de430f
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
-  - id: e634a07b-b7ca-4af3-a124-3024ce559e17
-  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
-  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
-subfeature_v2:
-  - id: a8e39571-4463-4aa3-8b3f-4e2341ecf3b3
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 587265d7613f732af811a77a947b0ce96ccad9bf
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b743a5d9-dc51-41ed-8b2f-86a1f8de430fid: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4id: d76b9e53-27fb-4597-933f-419cc0dd46dbid: e634a07b-b7ca-4af3-a124-3024ce559e17id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5eid: eb00932f-4d46-46bc-b1d8-10de7588db8d
+subfeature_v2: id: a8e39571-4463-4aa3-8b3f-4e2341ecf3b3
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bcc5edb5-84c3-4940-9f84-ed88b6c16274id: c1579802-ddd4-4214-8a91-97b2066abe11id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d00e9f03-e50b-4162-b143-0c0817c937c2id: d3cdead0-685a-4489-9250-4bb709942f66id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: eddd9b14-83bd-4ff4-9072-54a4a484abb7id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 4526480673706e8eb1ec9a3903484edcc1b72a4b
 workflow-type: tm+mt
-source-wordcount: 6952
+source-wordcount: 6963
 ht-degree: 99%
 
 ---
@@ -50,6 +28,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Fonctionnalité | Description |
 |---|---|
 | **Juillet 2026** | |
+| Analyse des sous-événements | Documentation pour [analyse de sous-événement](/help/components/segments/sub-event.md) et [conteneurs personnalisés](/help/data-views/create-dataview.md#custom-containers). |
 | Classifications intégrées | Documentation pour les [classifications intégrées](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md#inline-classifications). |
 | **Juin 2026** | |
 | Nouveau guide GA4 | Ajout de la section [Transition de Google Analytics 4 vers Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/ga-to-cja/home). |
@@ -87,7 +66,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Configuration de l’attribution | Mises à jour supplémentaires pour refléter les nouvelles options de configuration de l’attribution pour le modèle, le conteneur et l’intervalle de recherche en amont. |
 | Ingérer et utiliser des audiences Experience Platform | Mise à jour de l’article sur les cas d’utilisation relatif à [l’ingestion et l’utilisation d’audiences Experience Platform](/help/use-cases/data-ingestion/ingest-aep-segments.md). |
 | Préparer votre organisation à la mise à niveau vers Customer Journey Analytics | Ajout d’informations sur la manière de [préparer une organisation à la mise à niveau vers Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-org-readiness.md). |
-| Créer un rapport sur le trafic généré par LLM et IA | Ajout d’un [article de cas d’utilisation](/help/use-cases/data-views/derived-fields/ai-traffic.md) sur la création de rapports sur le trafic généré par LLM et IA à l’aide de champs dérivés comme base. Cet article s’appuie sur l’article de blog [Suivi et analyse du trafic généré par LLM et par IA dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967?profile.language=fr). |
+| Créer un rapport sur le trafic généré par LLM et IA | Ajout d’un [article de cas d’utilisation](/help/use-cases/data-views/derived-fields/ai-traffic.md) sur la création de rapports sur le trafic généré par LLM et IA à l’aide de champs dérivés comme base. Cet article s’appuie sur l’article de blog [Suivi et analyse du trafic généré par LLM et par IA dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967). |
 | **Septembre 2025** | |
 | Dates antérieures à 1900 | Ajout d’une [note](/help/connections/create-connection.md#datasets) sur la manière dont les dates antérieures à 1900 sont gérées par Customer Journey Analytics. |
 | Créer des rapports en temps réel | Ajout de la documentation sur la [création de rapports en temps réel](/help/components/real-time/real-time.md) dans Customer Journey Analytics. |
@@ -160,7 +139,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | **Août 2024** | |
 | Exemple de projet B2B | Ajout d’un [cas d’utilisation](/help/use-cases/b2b/example.md) expliquant comment paramétrer, configurer et générer des rapports sur les données B2B au niveau du profil (personne) dans Customer Journey Analytics, à l’aide de la nouvelle fonctionnalité [Transformer les jeux de données pour les recherches B2B](/help/connections/transform-datasets-b2b-lookups.md). |
 | Mise à jour des cas d’utilisation d’export de données | Ajout d’exemples de requêtes plus détaillés au [service de requête (Data Distiller) et Exporter des jeux de données](/help/use-cases/data-export/queryservice-export-datasets.md) pour illustrer comment appliquer correctement l’attribution entre les sessions à l’aide d’un intervalle de recherche en amont. |
-| Données de résumé | Ajout d’une documentation sur les [données récapitulatives](/help/data-views/summary-data.md) et les [&#x200B; paramètres du composant de groupe de données récapitulatives](/help/data-views/component-settings/summary-data-group.md) et d’un [cas d’utilisation de données récapitulatives](/help/use-cases/data-views/summary-data.md). |
+| Données de résumé | Ajout d’une documentation sur les [données récapitulatives](/help/data-views/summary-data.md) et les [ paramètres du composant de groupe de données récapitulatives](/help/data-views/component-settings/summary-data-group.md) et d’un [cas d’utilisation de données récapitulatives](/help/use-cases/data-views/summary-data.md). |
 | **Juillet 2024** | |
 | Ajout d’informations à propos des mesures calculées rapides | Mise à jour des informations dans [Mesures](/help/components/apply-create-metrics.md) afin de clarifier la différence entre les [mesures calculées créées dans le créateur de mesures calculées](/help/components/apply-create-metrics.md#create-calculated-metrics-for-all-projects) et [celles créées sous forme de mesures calculées rapides dans un seul projet](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project). Ajout également d’informations supplémentaires sur les mesures calculées rapides.<p>Les mesures calculées créées dans le créateur de mesures calculées sont disponibles dans la liste des composants et peuvent être appliquées aux projets dans l’ensemble de l’organisation, tandis que les mesures calculées qui sont créées sous forme de mesures calculées rapides ne sont disponibles que dans le projet dans lequel elles ont été créées.</p><p>Mise à jour des informations dans [Créer des mesures](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) pour effectuer des clarifications similaires.</p> |
 | Fonction de déduplication des champs dérivés | Ajout d’une documentation sur la fonction de [Déduplication](/help/data-views/derived-fields/derived-fields.md#deduplicate) des champs dérivés. |
