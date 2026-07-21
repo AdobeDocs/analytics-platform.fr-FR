@@ -149,7 +149,7 @@ ht-degree: 92%
     + {hide-from-toc}[Vue d’ensemble](/help/connections/consent-reporting-filtering/consent-overview.md)
     + {hide-from-toc}[Configuration](/help/connections/consent-reporting-filtering/consent-configure.md)
     + {hide-from-toc}[Gérer](/help/connections/consent-reporting-filtering/consent-manage.md)
-    + {hide-from-toc}[ Analyser ](/help/connections/consent-reporting-filtering/consent-analyze.md)
+    + {hide-from-toc}[&#x200B; Analyser &#x200B;](/help/connections/consent-reporting-filtering/consent-analyze.md)
     + {hide-from-toc}[Cas d’utilisation](/help/connections/consent-reporting-filtering/consent-use-cases.md)
 + Vues des données {#cja-dataviews}
   + [Vue d’ensemble des vues de données](../data-views/data-views.md)
@@ -553,7 +553,7 @@ ht-degree: 92%
       + [Lier des lectures de session](/help/use-cases/third-party/quantum-metric/tie-session-replays.md)
       + [Utiliser des cartes thermiques](/help/use-cases/third-party/quantum-metric/heatmap.md)
       + [Ajouter des événements de friction](/help/use-cases/third-party/quantum-metric/friction-events.md)
-      + {hide-from-toc}[Connecteur ](/help/use-cases/third-party/quantum-metric/source-connector.md)
+      + {hide-from-toc}[Connecteur &#x200B;](/help/use-cases/third-party/quantum-metric/source-connector.md)
 
 + Labs {#labs}
   + [Guide d’utilisation de Labs](../labs/labs.md)
