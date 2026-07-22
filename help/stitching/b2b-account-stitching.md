@@ -20,10 +20,10 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 2a7629993e235d66844db036ccce88e57fc20562
+source-git-commit: 1dce83d0b5c760830084c1bf4e14f613b998dc10
 workflow-type: tm+mt
-source-wordcount: 1239
-ht-degree: 13%
+source-wordcount: 1245
+ht-degree: 11%
 
 ---
 
@@ -77,12 +77,12 @@ Vous activez et configurez l’assemblage des comptes B2B au niveau de la connex
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person"
->title="Personne"
+>title="ID de personne"
 >abstract="Sélectionnez le champ du jeu de données contenant les ID de personne. L’espace de noms de ce champ peut être différent ou identique à l’espace de noms de l’identifiant de personne sélectionné. S’ils sont différents, les deux espaces de noms doivent être liés dans le graphique d’identités."
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_account"
->title="Compte"
+>title="ID de compte"
 >abstract="Sélectionnez le champ du jeu de données qui contient les valeurs d’identifiant de compte uniques. Les informations sur l’ID de compte seront disponibles sur les lignes de tous les jeux de données d’événement avec l’option **[!UICONTROL Combinaison de personne à compte]** activée."
 
 >[!CONTEXTUALHELP]
@@ -116,8 +116,8 @@ Vous activez et configurez l’assemblage des comptes B2B au niveau de la connex
       | Champ | Obligatoire | Description |
       |---|:---:|---|
       | **[!UICONTROL Jeu de données Personne à compte]** | ![Obligatoire](/help/assets/icons/Required.svg) | Sélectionnez la recherche (jeu de données d’enregistrement ou de série non temporelle) qui mappe les personnes aux comptes. |
-      | **[!UICONTROL Personne]** | ![Obligatoire](/help/assets/icons/Required.svg) | Sélectionnez le champ du jeu de données contenant l’identifiant de la personne. Ce champ doit être marqué comme une identité et ne peut pas être identique au champ **[!UICONTROL Compte]** ou **[!UICONTROL Heure de début]**. |
-      | **[!UICONTROL Compte]** | ![Obligatoire](/help/assets/icons/Required.svg) | Sélectionnez le champ du jeu de données contenant l’identifiant de compte. Ce champ ne peut pas être identique au champ **[!UICONTROL Personne]** ou **[!UICONTROL Heure de début]**. |
+      | **[!UICONTROL ID de personne]** | ![Obligatoire](/help/assets/icons/Required.svg) | Sélectionnez le champ du jeu de données contenant l’identifiant de la personne. Ce champ doit être marqué comme une identité et ne peut pas être identique au champ **[!UICONTROL ID de compte]** ou **[!UICONTROL Heure de début]**. |
+      | **[!UICONTROL ID de compte]** | ![Obligatoire](/help/assets/icons/Required.svg) | Sélectionnez le champ du jeu de données contenant l’identifiant de compte. Ce champ ne peut pas être identique au champ **[!UICONTROL ID de personne]** ou **[!UICONTROL Heure de début]**. |
       | **Heure de début** | | Sélectionnez un champ de date et heure qui indique le moment où la relation personne-compte est devenue active. |
 
       >[!NOTE]
