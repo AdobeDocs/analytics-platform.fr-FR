@@ -24,7 +24,7 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: c7fc5df2a0fd7393b48bfe6bdfa7dccdfffde46c
 workflow-type: tm+mt
 source-wordcount: 3268
 ht-degree: 59%
@@ -238,22 +238,22 @@ Les fonctionnalités suivantes ne sont pas prises en charge et sont automatiquem
 
 Les composants suivants ne sont pas pris en charge et Analysis Workspace vous invite à les supprimer de votre tableau lors d’un export de tableau complet :
 
-* Mesures calculées qui utilisent des fonctions non prises en charge dans la définition de mesure (voir [Fonctions de mesure calculées non prises en charge](#unsupported-calculated-metric-functions) pour plus d’informations)
+* Mesures calculées qui utilisent des fonctions non prises en charge dans la définition de mesure (voir [Fonctions de mesure calculées non prises en charge](#calculated-metric-functions-support) pour plus d’informations)
 * Composants dont l’exportation a été restreinte par un administrateur (voir la section *Segment sur les politiques de gouvernance des données dans les vues de données* dans [Libellés et politiques](/help/data-views/data-governance.md) pour plus d’informations)
 * Toute dimension répondant à l’ensemble des critères suivants :
-   * est créé à partir d’un champ qui fait partie d’un [tableau d’objets](/help/use-cases/object-arrays.md) (similaire aux variables à plusieurs valeurs dans Adobe Analytics) ;
-   * A la [persistance activée](/help/data-views/component-settings/persistence.md).
-   * N’utilise pas de [dimension de liaison](/help/use-cases/data-views/binding-dimensions-metrics.md).
+  * est créé à partir d’un champ qui fait partie d’un [tableau d’objets](/help/use-cases/object-arrays.md) (similaire aux variables à plusieurs valeurs dans Adobe Analytics) ;
+  * A la [persistance activée](/help/data-views/component-settings/persistence.md).
+  * N’utilise pas de [dimension de liaison](/help/use-cases/data-views/binding-dimensions-metrics.md).
 * Dimensions multiples provenant de champs faisant référence à différents [tableaux d’objets](/help/use-cases/object-arrays.md). (Plusieurs dimensions référençant le même tableau d’objets sont autorisées.)
 * Plus de 10 dimensions et 10 mesures par rapport (jusqu’à 10 dimensions et 10 mesures sont prises en charge).
 * Dans les colonnes de tableau :
-   * Périodes
-   * Dimensions
+  * Périodes
+  * Dimensions
 * Dans les lignes de tableau :
-   * Mesures calculées
-   * Mesures
-   * Périodes
-   * Segments
+  * Mesures calculées
+  * Mesures
+  * Périodes
+  * Segments
 
 ## Prise en charge des fonctions de mesures calculées
 

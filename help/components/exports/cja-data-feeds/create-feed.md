@@ -18,10 +18,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: 0cc15e1c3dcbd8609a47954af8602ad617c67a51
+source-git-commit: bb3fcdcd879c503c311a58cf2fd982dd38305c6a
 workflow-type: tm+mt
-source-wordcount: 2774
-ht-degree: 28%
+source-wordcount: 3225
+ht-degree: 26%
 
 ---
 
@@ -97,25 +97,28 @@ Avant de créer un flux de données, il est important de comprendre les bases de
    |---------|----------|
    | [!UICONTROL **Nom**] | Nom du flux de données. Les noms doivent être uniques dans la vue de données sélectionnée et peuvent contenir jusqu’à 255 caractères. <!--[Learn more](/help/export/analytics-data-feed/df-faq.md#must-feed-names-be-unique)--> |
    | [!UICONTROL **Balises**] | Appliquez des balises au flux de données pour faciliter la catégorisation. <!--You can filter on tags as described in [Filter and search the list of data feeds](/help/export/analytics-data-feed/df-manage-feeds.md#filter-and-search-the-list-of-data-feeds) in [Manage data feeds](/help/export/analytics-data-feed/df-manage-feeds.md).--> |
-   | [!UICONTROL **Description**] | Spécifiez une description pour le flux de données. La description que vous ajoutez est visible lors de la modification du flux de données. |
+   | [!UICONTROL **Description**] | Spécifiez une description pour le flux de données (500 caractères maximum). La description que vous ajoutez est visible lors de la modification du flux de données. |
    | [!UICONTROL **Vue de données**] | Sélectionnez la vue de données contenant les données à exporter.<p>Tenez compte des points suivants lors de la sélection d’une vue de données :</p> <ul><li>Si plusieurs flux de données sont créés pour la même vue de données, chaque flux de données doit avoir des définitions de colonne différentes.</li><li>La liste des colonnes disponibles dépend de la société de connexion à laquelle appartient la vue de données sélectionnée. Si vous modifiez la vue de données, la liste des colonnes disponibles peut changer. </li></ul> |
 
 1. Sélectionnez [!UICONTROL **Suivant**].
 
 1. Dans l’onglet [!UICONTROL **Structure de données**], assurez-vous que la vue de données appropriée est sélectionnée dans le champ **[!UICONTROL Vue de données]**.
 
+   <!--add screenshot-->
+
 1. Dans le menu déroulant [!UICONTROL **Segments**], recherchez et sélectionnez n’importe quel segment pour filtrer les données incluses dans votre flux.
 
    Lorsque vous appliquez plusieurs segments, ils sont associés à un opérateur AND. (Pour joindre des segments avec un opérateur OR, vous devez d’abord créer un segment dans le créateur de segments, puis appliquer le nouveau segment au flux de données.)
 
-1. Ajoutez des composants à la configuration des flux de données. Dans le rail de gauche, localisez les composants que vous souhaitez inclure, puis faites-les glisser vers la zone de travail pour créer votre structure de données. Vous pouvez sélectionner plusieurs composants en maintenant la touche **[!UICONTROL Maj]** enfoncée ou en maintenant enfoncée la touche **[!UICONTROL Commande]** (sur Mac) ou **[!UICONTROL Ctrl]** (sur Windows).
+1. Ajoutez des composants à la configuration des flux de données. Le rail de gauche affiche uniquement les composants valides pour les flux de données.
 
-   >[!NOTE]
-   >
-   >Les données de l’agent utilisateur et les données de recherche de périphérique ne peuvent pas exister dans la même configuration de flux de données. Une erreur s’affiche si vous tentez d’ajouter des composants en conflit. Pour plus d’informations, voir [Configurer la recherche d’appareil](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/configure#geolocation-device-lookup) dans [Créer et configurer des flux de données](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/configure) dans le guide Collecte de données .
+   * **Glisser-déposer** : faites glisser des composants du rail de gauche vers la zone de travail. Maintenez la touche **[!UICONTROL Maj]** ou **[!UICONTROL Commande]** (macOS) ou **[!UICONTROL Ctrl]** (Windows) enfoncée pour sélectionner plusieurs composants et les faire glisser simultanément.
+   * **Bouton Plus** : sélectionnez l’icône Plus ![Ajouter](/help/assets/icons/Add.svg) en regard de n’importe quel composant dans le rail de gauche pour l’ajouter à la zone de travail.
+   * **[!UICONTROL Tout afficher]** : sélectionnez **[!UICONTROL Tout afficher]** au bas de la liste des composants pour ouvrir une boîte de dialogue affichant tous les composants disponibles. Cochez la case en regard de chaque composant à ajouter, puis sélectionnez **[!UICONTROL Ajouter la sélection]**. Lorsqu’un terme de recherche ou une balise de filtre est actif dans le rail de gauche, un bouton **[!UICONTROL Ajouter tout]** s’affiche également pour vous permettre d’ajouter tous les résultats filtrés en même temps.
 
+   Lorsque vous ajoutez un composant qui appartient à un champ de tableau XDM (par exemple, un champ de proposition Adobe Journey Optimizer), il apparaît sur la zone de travail sous la forme d’un groupe imbriqué réductible plutôt que d’un élément plat. Le groupe reflète la structure de données sous-jacente et génère un tableau imbriqué dans le fichier exporté.
 
-   Utilisez les informations suivantes pour comprendre les dimensions qui sont toujours incluses, les dimensions qui ne peuvent pas être incluses et les mesures qui doivent être remplacées :
+   <!--add screenshot-->
 
    +++ Dimensions toujours incluses dans les flux de données
 
@@ -155,6 +158,47 @@ Avant de créer un flux de données, il est important de comprendre les bases de
    | Semaine | Semaine au cours de laquelle un événement s’est produit | Non disponible |
    | Semaine de l’année | Semaine de l’année au cours de laquelle un événement s’est produit | Non disponible |
    | Année | Année au cours de laquelle un événement s’est produit | Non disponible |
+
+   +++
+
+   +++ Dimensions qui ne peuvent pas être utilisées ensemble dans les flux de données
+
+   >[!IMPORTANT]
+   >
+   >Certaines dimensions ne peuvent pas être utilisées ensemble dans les jeux de données Experience Platform et ne peuvent donc pas être incluses dans le même flux de données.
+   >
+   >Si vous choisissez d’inclure les dimensions **Agent utilisateur** ou **ID mobile** dans votre flux de données, les dimensions répertoriées ci-dessous ne peuvent pas être ajoutées au flux de données.
+   >
+   >Si vous utilisez le SDK Web, cette restriction est appliquée dans les flux de données avant que les données n’arrivent dans un jeu de données Experience Platform. Pour plus d’informations, voir [Configurer la recherche d’appareil](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/configure#geolocation-device-lookup) dans [Créer et configurer des flux de données](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/configure) dans le guide Collecte de données .
+
+   Les dimensions suivantes ne peuvent pas être utilisées avec les dimensions **Agent utilisateur** ou **ID mobile** :
+
+   * Type de navigateur
+   * Navigateur
+   * Fabricant du dispositif portable
+   * Type d’appareil mobile
+   * Prise en charge de l&#39;audio sur le dispositif portable
+   * DRM mobile
+   * Java VM de mobile
+   * Services d&#39;informations mobiles
+   * Prise en charge des images sur le dispositif portable
+   * Profondeur de couleur du dispositif portable
+   * Protocoles Net mobile
+   * Numéro d’appareil mobile
+   * Mobile - Longueur max. d’adresse e-mail
+   * Mobile - Décoration de courrier
+   * Mobile - Presser pour parler
+   * Largeur d’écran du périphérique mobile
+   * Mobile - Longueur max. d’URL de navigateur
+   * Système d’exploitation mobile (obsolète)
+   * Hauteur d’écran du périphérique mobile
+   * Prise en charge de la vidéo sur le dispositif portable
+   * Prise en charge des cookies sur le dispositif portable
+   * Mobile - Longueur max. du signet
+   * Taille d’écran du périphérique mobile
+   * Nom de l’appareil mobile
+   * Types de systèmes d’exploitation
+   * Systèmes d’exploitation
 
    +++
 
@@ -207,17 +251,29 @@ Avant de créer un flux de données, il est important de comprendre les bases de
 
    +++
 
+1. (Facultatif) Réorganisez les composants sur la zone de travail en les faisant glisser. L’ordre que vous définissez est conservé dans l’ordre des colonnes du fichier de flux de données exporté.
 
-1. Dans l&#39;onglet [!UICONTROL **Diffusion**], indiquez les informations suivantes :
+1. (Facultatif) Utilisez les panneaux **[!UICONTROL Résumé du flux]** et **[!UICONTROL Aperçu du schéma]** sur le côté droit de la page pour passer en revue votre structure de données avant de continuer :
+
+   * Le **[!UICONTROL résumé des flux]** affiche un nombre réel de composants, colonnes, dimensions et mesures que vous avez ajoutés.
+   * L’**[!UICONTROL aperçu du schéma]** affiche une représentation JSON du schéma de flux de données qui se met à jour au fur et à mesure que vous ajoutez ou réorganisez des composants.
+   * Le bouton **[!UICONTROL Exemples de lignes]** ouvre une boîte de dialogue qui affiche des exemples de lignes de sortie afin que vous puissiez vérifier que la structure semble correcte. Cette boîte de dialogue affiche uniquement des exemples de données et ne reflète pas vos données réelles.
+
+   <!--add screenshot-->
+
+1. Sous l’onglet [!UICONTROL **Diffusion**], dans la section [!UICONTROL **Planifier**], choisissez le type de flux que vous souhaitez créer (actif ou de renvoi), puis spécifiez la fenêtre de création de rapports, la fréquence et d’autres options de configuration :
+
+   <!--add screenshot-->
 
    | Champ | Fonction |
    |---------|----------|
-   | [!UICONTROL **Type de flux**] | Sélectionnez le type de flux que vous souhaitez créer :<ul><li>[!UICONTROL **Flux en direct**] : exporte les données actuelles et futures.</li><li>[!UICONTROL **Flux de renvoi**] : exporte les données historiques comprises entre deux dates antérieures.</li></ul> |
-   | [!UICONTROL **Date de début**] | Indiquez la date à laquelle vous souhaitez que le flux de données commence. Pour commencer immédiatement à traiter les flux de données pour les données historiques, assurez-vous que [!UICONTROL **Flux de renvoi**] est sélectionné, puis définissez cette date sur n’importe quelle date dans le passé lorsque des données sont collectées. La date de début est basée sur le fuseau horaire de la vue de données. |
-   | [!UICONTROL **Date de fin**] | Indiquez la date à laquelle vous souhaitez que le flux de données se termine. La date de fin est basée sur le fuseau horaire de la vue de données. |
-   | [!UICONTROL **Fréquence**] | Sélectionnez la fréquence d’envoi du flux de données. Les événements dont la date et l’heure se trouvent dans la fenêtre de fréquence sont inclus dans la diffusion du flux de données. Les champs [!UICONTROL **Période de recherche en amont**] et [!UICONTROL **Délai de traitement**] peuvent également affecter les événements inclus dans les données pour la fréquence de diffusion que vous choisissez.<p>Pour les flux en direct, sélectionnez cette option pour inclure l’équivalent d’une heure de données ou d’une journée de données. Les flux de renvoi doivent être quotidiens.</p><ul><li>**Quotidien** : les flux contiennent l’équivalent d’une journée complète de données, de minuit à minuit dans le fuseau horaire de la vue de données. Utilisez cette option pour les flux de renvoi ou pour les flux dynamiques.</li><li>**Par heure** : les flux contiennent l’équivalent d’une heure de données. Utilisez cette option pour les flux en direct.</li></ul> |
-   | [!UICONTROL **Période de recherche en amont**] | Contrôle la période sur laquelle Customer Journey Analytics se base pour traiter la diffusion du flux de données. <p>Ce paramètre ne modifie pas la fenêtre de fréquence (heure ou jour), qui définit la période des événements à inclure dans la sortie du flux de données. Toutefois, la période de recherche en amont peut influencer les données diffusées, comme suit : </p><ul><li>**Qualification du segment** : lorsqu’un segment est appliqué à votre définition de flux de données, tout événement situé dans la période de recherche en amont détermine si une personne est admissible. Le paramètre de conteneur du segment détermine la portée. (Les conteneurs possibles sont : Personne, Session ou Événement. Le B2B comporte les conteneurs supplémentaires suivants : compte global, compte, opportunité, groupe d’achat.)  <p>Par exemple, si un conteneur Personne est utilisé et que la personne est qualifiée pendant la période de recherche arrière, tous les événements de cette personne pendant la fenêtre de fréquence sont également qualifiés.</p></li><li>**Calcul de session** : les limites de session sont calculées à l’aide de données comprises dans la période de recherche en amont.</li><li>**Transformations de champ dérivé** : toutes les fonctions de champ dérivé qui font référence à des conteneurs utilisent la période de recherche en amont dans les exportations de flux de données.</li><li>**Persistance Dimension** : si vous choisissez de définir la persistance sur une dimension individuelle, vous choisissez également une expiration pour déterminer la durée pendant laquelle un élément de dimension persiste au-delà de l’événement sur lequel il est défini. <p>La période de recherche en amont affecte la persistance des dimensions lorsque l’expiration est définie sur l’une des options suivantes dans la vue de données :</p><ul><li>Pour chaque dimension de la définition de flux de données qui utilise [!UICONTROL **Période de création de rapports**] comme expiration, la période de recherche en amont devient la nouvelle période de création de rapports.</li><li>Pour chaque dimension de la définition du flux de données qui utilise [!UICONTROL **Heure personnalisée**] comme expiration et si l’heure personnalisée sélectionnée s’étend au-delà de la période de recherche en amont, l’heure personnalisée est ignorée et la période de recherche en amont est utilisée pour l’expiration de la dimension.<p>Pour plus d’informations sur la définition de la persistance sur les dimensions dans la vue de données, voir [Paramètres des composants de persistance](/help/data-views/component-settings/persistence.md).</p></li></ul> |
-   | [!UICONTROL **Délai de traitement**] | Sélectionnez la durée d’attente avant de traiter un fichier de flux de données. Tous les accès tardifs qui arrivent pendant le délai de traitement sont inclus dans le flux de données. <p>Les délais de traitement sont utiles pour diverses raisons, par exemple pour permettre aux implémentations mobiles de permettre aux appareils hors ligne de se connecter et d’envoyer des données, ou pour s’adapter aux processus côté serveur de votre entreprise dans la gestion des fichiers précédemment traités. </p><p>Vous pouvez retarder un flux de 2, 3, 4 ou 8 heures.<p>Pour être incluses, les sessions doivent commencer après la coupure du délai de traitement ; les sessions qui commencent avant la coupure et se terminent dans le délai de traitement ne sont pas incluses.</p> |
+   | [!UICONTROL **Type de flux**] | Sélectionnez le type de flux que vous souhaitez créer :<ul><li>[!UICONTROL **Flux en direct**] : exporte les données actuelles et futures.</li><li>[!UICONTROL **Flux de renvoi**] : exporte les données historiques. </li></ul> |
+   | [!UICONTROL **Date de début**] | Date de début du flux de données. Pour les flux en direct, il doit s’agir d’aujourd’hui ou d’une date ultérieure. Pour les flux de renvoi, il doit s’agir d’une date passée dans la fenêtre de conservation des données de la vue de données. La date de début est basée sur le fuseau horaire de la vue de données. |
+   | [!UICONTROL **Date d’expiration**] <br/>Disponible uniquement pour les flux en direct | Date à laquelle le flux de données expire et ne s’exécute plus. La date est basée sur le fuseau horaire de la vue de données. |
+   | [!UICONTROL **Date de fin**]<br/> Disponible uniquement pour les flux de renvoi | Date de fin du flux de données. La date de fin ne peut pas être dans le futur. La date est basée sur le fuseau horaire de la vue de données. |
+   | [!UICONTROL **Fréquence**] | Sélectionnez la fréquence d’envoi du flux de données. Les événements dont la date et l’heure se trouvent dans la fenêtre de fréquence sont inclus dans la diffusion du flux de données. Les champs [!UICONTROL **Période de recherche en amont**] et [!UICONTROL **Délai de traitement**] peuvent également affecter les événements inclus dans les données pour la fréquence de diffusion que vous choisissez.<p>Pour les flux en direct, sélectionnez cette option pour inclure l’équivalent d’une heure de données ou d’une journée de données. Pour les flux de renvoi, ce champ est verrouillé sur **Quotidien** et ne peut pas être modifié.</p><ul><li>**Quotidien** : les flux contiennent l’équivalent d’une journée complète de données, de minuit à minuit dans le fuseau horaire de la vue de données. <p>Cette option est requise pour les flux de renvoi et facultative pour les flux en direct.</p></li><li>**Par heure** : les flux contiennent l’équivalent d’une heure de données. <p>Cette option est disponible uniquement pour les flux en direct.</p></li></ul> |
+   | [!UICONTROL **Période de recherche en amont**] | Contrôle la période sur laquelle Customer Journey Analytics se base pour traiter la diffusion du flux de données. La valeur par défaut est de 30 jours. <p>Ce paramètre ne modifie pas la fenêtre de fréquence (heure ou jour), qui définit la période des événements à inclure dans la sortie du flux de données. Toutefois, la période de recherche en amont peut influencer les données diffusées, comme suit : </p><ul><li>**Qualification du segment** : lorsqu’un segment est appliqué à votre définition de flux de données, tout événement situé dans la période de recherche en amont détermine si une personne est admissible. Le paramètre de conteneur du segment détermine la portée. (Les conteneurs possibles sont : Personne, Session ou Événement. Le B2B comporte les conteneurs supplémentaires suivants : compte global, compte, opportunité, groupe d’achat.)  <p>Par exemple, si un conteneur Personne est utilisé et que la personne est qualifiée pendant la période de recherche arrière, tous les événements de cette personne pendant la fenêtre de fréquence sont également qualifiés.</p></li><li>**Calcul de session** : les limites de session sont calculées à l’aide de données comprises dans la période de recherche en amont.</li><li>**Transformations de champ dérivé** : toutes les fonctions de champ dérivé qui font référence à des conteneurs utilisent la période de recherche en amont dans les exportations de flux de données.</li><li>**Persistance Dimension** : si vous choisissez de définir la persistance sur une dimension individuelle, vous choisissez également une expiration pour déterminer la durée pendant laquelle un élément de dimension persiste au-delà de l’événement sur lequel il est défini. <p>La période de recherche en amont affecte la persistance des dimensions lorsque l’expiration est définie sur l’une des options suivantes dans la vue de données :</p><ul><li>Pour chaque dimension de la définition de flux de données qui utilise [!UICONTROL **Période de création de rapports**] comme expiration, la période de recherche en amont devient la nouvelle période de création de rapports.</li><li>Pour chaque dimension de la définition du flux de données qui utilise [!UICONTROL **Heure personnalisée**] comme expiration et si l’heure personnalisée sélectionnée s’étend au-delà de la période de recherche en amont, l’heure personnalisée est ignorée et la période de recherche en amont est utilisée pour l’expiration de la dimension.<p>Pour plus d’informations sur la définition de la persistance sur les dimensions dans la vue de données, voir [Paramètres des composants de persistance](/help/data-views/component-settings/persistence.md).</p></li></ul> |
+   | [!UICONTROL **Délai de traitement**] | Sélectionnez la durée d’attente avant de traiter un fichier de flux de données. La valeur par défaut est de 2 heures. Tous les accès tardifs qui arrivent pendant le délai de traitement sont inclus dans le flux de données. <p>Les délais de traitement sont utiles pour diverses raisons, par exemple pour permettre aux implémentations mobiles de permettre aux appareils hors ligne de se connecter et d’envoyer des données, ou pour s’adapter aux processus côté serveur de votre entreprise dans la gestion des fichiers précédemment traités. </p><p>Vous pouvez retarder un flux de 2, 3, 4 ou 8 heures.</p><p>Pour être incluses, les sessions doivent commencer après la coupure du délai de traitement ; les sessions qui commencent avant la coupure et se terminent dans le délai de traitement ne sont pas incluses.</p> |
    | [!UICONTROL **Format de compression**] | Sélectionnez le format de compression des fichiers de sortie Parquet diffusés vers votre destination cloud. Choisissez l’un des formats suivants :<ul><li>[!UICONTROL **Snappy**] : compression et décompression rapides avec des tailles de fichier modérées. Largement pris en charge par les plateformes de données modernes telles que BigQuery, Snowflake et Apache Spark.</li><li>[!UICONTROL **GZip**] : largement compatible, y compris avec les outils qui ne prennent pas en charge Snappy en mode natif. Recommandé si votre pipeline en aval nécessite une norme de compression largement reconnue.</li><li>[!UICONTROL **Z Standard (Zstd)**] : Efficacité de compression élevée avec décompression rapide. Convient si la réduction de la taille du fichier est une priorité et que vos outils prennent en charge Zstd.</li></ul> |
 
 1. Sous l’onglet [!UICONTROL **Diffusion**], dans la section [!UICONTROL **Destination**], configurez la destination vers laquelle vous souhaitez envoyer les données.
