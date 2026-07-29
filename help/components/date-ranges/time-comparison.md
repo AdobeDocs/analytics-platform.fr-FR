@@ -5,20 +5,14 @@ feature: Calendar
 exl-id: 08113536-658f-486b-ac56-6c531240c3c2
 role: User
 TQID: https://experienceleague.adobe.com/LhPSvchJbDMPV-HmGSA2JaBZxoPQ7UyEKd7GMS-33UU
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: a4b5baeec55de64b1fbaf009b9da34c93cf12f24
 workflow-type: tm+mt
-source-wordcount: 770
-ht-degree: 90%
+source-wordcount: 798
+ht-degree: 75%
 
 ---
 
@@ -28,10 +22,10 @@ Dans Analysis Workspace, la comparaison de dates vous permet de prendre n’impo
 
 ## Comparer des périodes
 
-Une analyse ne peut pas avoir lieu sans contexte. Il arrive souvent que ce contexte découle d’une période précédente. Par exemple, la question *Dans quelle mesure votre situation s’est-elle améliorée ou détériorée par rapport à la même période l’an dernier ?* est essentiel à la compréhension de votre entreprise. La comparaison des dates inclut automatiquement une colonne *différence*, qui présente le pourcentage de changement par rapport à une période donnée.
+L’analyse nécessite un contexte, et une période précédente fournit souvent cette information. Par exemple, la question *Dans quelle mesure votre situation s’est-elle améliorée ou détériorée par rapport à la même période l’an dernier ?* est essentiel à la compréhension de votre entreprise. La comparaison des dates inclut automatiquement une colonne *différence*, qui présente le pourcentage de changement par rapport à une période donnée.
 
 1. Créez un [tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md), avec les dimensions et mesures à comparer sur une certaine période.
-1. Définissez la période sur le panneau ou la colonne pour déterminer la période de comparaison, et s’il s’agit d’une comparaison de temps fixe ou flottante.
+1. Pour déterminer la période de comparaison et s’il s’agit d’une comparaison de temps variable ou fixe, définissez la période sur le panneau ou la colonne.
 
    Pour créer une comparaison de temps flottante, définissez la période du panneau ou de la colonne sur une période flottante (par exemple, **[!UICONTROL 7 derniers jours]**, **[!UICONTROL 30 derniers jours]**, etc.).
 
@@ -55,7 +49,7 @@ Une analyse ne peut pas avoir lieu sans contexte. Il arrive souvent que ce conte
 
    >[!NOTE]
    >
-   >Lorsque vous sélectionnez un nombre de jours personnalisé (par exemple, du 7 au 20 octobre, soit 14 jours), seules deux options sont proposées : **[!UICONTROL 14 jours précédant cette période]** et **[!UICONTROL Période personnalisée à cette période]**.
+   >Lorsque vous sélectionnez un nombre de jours personnalisé (par exemple, du 7 au 20 octobre, soit 14 jours), seules deux options sont proposées : **[!UICONTROL 14 jours précédant cette période]** et **[!UICONTROL Période personnalisée à cette période]**.
 
 1. La comparaison qui en résulte ressemble à ceci :
 
@@ -65,7 +59,7 @@ Une analyse ne peut pas avoir lieu sans contexte. Il arrive souvent que ce conte
 
 ## Ajouter une colonne de périodes à la comparaison
 
-Vous pouvez désormais ajouter une période à chaque colonne d’un tableau, ce qui permet d’ajouter une période différente de celle configurée pour votre calendrier.
+Vous pouvez désormais ajouter une période à chaque colonne d’un tableau. Vous pouvez ainsi ajouter une période différente de celle définie pour votre calendrier.
 
 1. Cliquez avec le bouton droit de la souris dans le tableau, puis sélectionnez **[!UICONTROL Ajouter une colonne de périodes]**.
 
@@ -95,7 +89,7 @@ Vous pouvez désormais ajouter une période à chaque colonne d’un tableau, ce
 
 Vous pouvez également aligner les dates de chaque colonne afin qu’elles commencent à partir de la même ligne.
 
-Par exemple, vous effectuez une comparaison jour par jour pour la dernière semaine (se terminant le 5 octobre 2024) et la semaine précédente. Par défaut, la colonne de gauche commence par le 22 septembre et la colonne de droite par le 29 septembre.
+Par exemple, vous effectuez une comparaison jour par jour pour la dernière semaine (se terminant le 5 octobre 2024) et la semaine précédente. Par défaut, la colonne de gauche commence le 22 septembre et la colonne de droite commence le 29 septembre.
 
 ![Dates non alignées](assets/not-align-dates.png)
 
@@ -105,7 +99,8 @@ Vous pouvez activer l’option **[!UICONTROL Aligner les dates de chaque colonne
 
 Tenez compte des points suivants lorsque vous utilisez cette option :
 
-* Ce paramètre est activé par défaut pour tous les nouveaux projets.
+* Le système active ce paramètre par défaut pour tous les nouveaux projets.
 
 * Ce paramètre s’applique à l’ensemble du tableau. Par exemple, si vous modifiez ce paramètre pour une répartition au sein du tableau, le paramètre est appliqué pour l’ensemble du tableau.
 
+* Lorsque ce paramètre est activé, de petits libellés de date s’affichent dans le coin supérieur droit de toutes les cellules de colonne pour annoter la cellule avec la date (et l’heure, le cas échéant) appropriée.
