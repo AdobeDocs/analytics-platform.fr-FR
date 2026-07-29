@@ -26,7 +26,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: df1ab1af7757ef012b4c233e6206ee6c6cde6686
+source-git-commit: e686fca2c77a8f9739298ece01ccf0fa2fe87b3b
 workflow-type: tm+mt
 source-wordcount: 2441
 ht-degree: 12%
@@ -250,8 +250,8 @@ Consultez également la section Mécanismes de sécurisation d’Experience Plat
 | Nom | Valeur | Type de limite | Description |
 |---|--:|---|---|
 | Lignes par rapport | 3 millions - 300 millions | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de lignes de rapports par rapport. La valeur varie en fonction du package Customer Journey Analytics (voir Description du produit). |
-| Répartitions par tableau | 5 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de répartitions par tableau. |
-| Mesures par tableau | 5 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de mesures par table. |
+| Dimensions par tableau | 10 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de dimensions par table. |
+| Mesures par tableau | 10 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de mesures par table. |
 | Fréquence de planification | 1 | Mécanisme de sécurisation mis en œuvre par le système | Les exportations peuvent être planifiées une fois (1) par jour ou sur une planification plus longue (par exemple : une fois tous les 2 jours ou une fois par semaine). |
 
 {style="table-layout:auto"}
