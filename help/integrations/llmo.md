@@ -3,7 +3,8 @@ title: Intégration de LLM Optimizer
 description: Intégration de LLM Optimizer à Customer Journey Analytics
 feature: Experience Platform Integration
 role: User
-feature_v2: id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+feature_v2:
+  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
 source-git-commit: 3aa4e0c98e9a3e4163dad992e598638892fc88cd
 workflow-type: tm+mt
 source-wordcount: 2539
@@ -14,7 +15,7 @@ ht-degree: 3%
 
 # Intégration de LLM Optimizer
 
-[](https://experienceleague.adobe.com/fr/docs/llm-optimizer/using/home){target="_blank"} est une application IA générative pour l&#39;optimisation du moteur de génération, conçue pour aider les marques à améliorer leur visibilité, leur précision et leur influence dans les environnements de recherche pilotés par l&#39;IA. LLM Optimizer fournit des informations sur la présence des marques dans les réponses générées par l’IA, propose des recommandations de contenu normatives et automatise les correctifs d’optimisation.
+[&#128279;](https://experienceleague.adobe.com/fr/docs/llm-optimizer/using/home){target="_blank"} est une application IA générative pour l&#39;optimisation du moteur de génération, conçue pour aider les marques à améliorer leur visibilité, leur précision et leur influence dans les environnements de recherche pilotés par l&#39;IA. LLM Optimizer fournit des informations sur la présence des marques dans les réponses générées par l’IA, propose des recommandations de contenu normatives et automatise les correctifs d’optimisation.
 
 L’IA est devenue un canal de découverte essentiel. Les agents LLM, tels que ChatGPT, Claude, Copilot et Perplexity, explorent le contenu de la marque.
 
