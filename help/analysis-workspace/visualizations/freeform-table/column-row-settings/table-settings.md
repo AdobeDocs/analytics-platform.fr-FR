@@ -16,9 +16,9 @@ subfeature_v2:
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 54e64aeb652d41a39e52b01c0a54edd1ecfd0cdc
+source-git-commit: 88ff7c4124d4612a3411b315a605aec29bc9a218
 workflow-type: tm+mt
-source-wordcount: 1630
+source-wordcount: 1650
 ht-degree: 53%
 
 ---
@@ -51,7 +51,7 @@ Pour modifier le nombre de lignes affichées, procédez comme suit :
 
    ![Tableau à structure libre affichant le menu déroulant pour le nombre de lignes affichées. L’option 400 lignes est sélectionnée.](assets/change-row-count.gif)
 
-1. Dans le menu déroulant, sélectionnez le nombre de lignes que le tableau doit afficher.
+1. Dans le menu déroulant, sélectionnez le nombre de lignes à afficher pour le tableau.
 
 
 ## Menu contextuel
@@ -118,8 +118,6 @@ Vous pouvez définir la [densité d’affichage](https://experienceleague.adobe.
 
 ## Classifications intégrées {#inline-classifications-example}
 
-{{release-limited-testing-section}}
-
 Les classifications intégrées vous permettent de renommer ou de combiner des lignes dans un tableau à structure libre. Et pour créer un champ dérivé à partir des lignes modifiées d’un tableau.
 
 L’exemple ci-dessous illustre comment utiliser les options de menu contextuel **[!UICONTROL Renommer la ligne sélectionnée]**, **[!UICONTROL Combiner les lignes sélectionnées]** et **[!UICONTROL Créer des lignes modifiées en tant que champ dérivé]**. Et comment réinitialiser le tableau à structure libre modifié.
@@ -139,7 +137,7 @@ L’exemple ci-dessous illustre comment utiliser les options de menu contextuel 
 
 * Combinez les lignes **[!UICONTROL Hommes]** et **[!UICONTROL Femmes]** dans une ligne **[!UICONTROL Adultes]**.
 
-  1. Sélectionnez la ligne **[!UICONTROL Hommes]** et **[!UICONTROL Femmes]**.
+  1. Sélectionnez les lignes **[!UICONTROL Hommes]** et **[!UICONTROL Femmes]**.
   1. Sélectionnez **[!UICONTROL Combiner les lignes sélectionnées]** dans le menu contextuel de n’importe quelle ligne sélectionnée.
 
      ![Sélectionnez l’option de menu Combiner les lignes sélectionnées](assets/context-combine.png)
@@ -152,6 +150,11 @@ L’exemple ci-dessous illustre comment utiliser les options de menu contextuel 
      1. Sélectionnez **[!UICONTROL OK]**.
 
 * Créez un champ dérivé à partir des modifications apportées au tableau à structure libre.
+
+  >[!NOTE]
+  >
+  >  Vous ne pouvez créer un champ dérivé qu’à partir de modifications dans le tableau à structure libre lorsque vous êtes administrateur de produit Customer Journey Analytics.
+
 
   1. Sélectionnez **[!UICONTROL Créer des lignes modifiées comme champ dérivé]** dans le menu contextuel pour toute ligne sélectionnée dans le tableau modifié.
 

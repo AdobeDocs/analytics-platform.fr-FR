@@ -24,10 +24,10 @@ topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 4d42c345b98683ef7d4b802262bd7f0f24b45692
+source-git-commit: 88ff7c4124d4612a3411b315a605aec29bc9a218
 workflow-type: tm+mt
-source-wordcount: 5884
-ht-degree: 97%
+source-wordcount: 7300
+ht-degree: 87%
 
 ---
 
@@ -44,9 +44,9 @@ ht-degree: 97%
 >abstract="Annule les fonctionnalités avancées de création de rapports de Customer Journey Analytics avec Journey Optimizer."
 
 
-Une fois que vous avez [créé ou modifié une ou plusieurs connexions](/help/connections/create-connection.md), vous pouvez les gérer dans **[!UICONTROL Connexions]**. L’interface [!UICONTROL Connexions] vous permet d’effectuer les opérations suivantes :
+Une fois que vous avez [créé ou modifié une ou plusieurs connexions](/help/connections/create-connection.md), vous pouvez les gérer dans **[!UICONTROL Connexions]**. L’interface [!UICONTROL Connexions] vous permet d’effectuer les opérations suivantes :
 
-* Affichez de manière récapitulative les principales caractéristiques de vos connexions, y compris la personne propriétaire, le sandbox ainsi que la date à laquelle elles ont été créées et modifiées.
+* Affichez toutes vos connexions, y compris le propriétaire, le sandbox et la date de création et de modification des connexions.
 * Modifiez une connexion.
 * Supprimer une connexion.
 * Créer une vue de données à partir d’une connexion.
@@ -62,7 +62,8 @@ L’affichage [!UICONTROL Connexions] a deux interfaces : [[!UICONTROL Liste]](
 
 L’interface **[!UICONTROL Liste]** est l’interface par défaut pour Connexions. Si cette option n’est pas sélectionnée, sélectionnez l’onglet **[!UICONTROL Liste]** pour accéder à l’interface.
 
-L’interface **[!UICONTROL Liste]** affiche un tableau de toutes les connexions disponibles.△
+L’interface **[!UICONTROL Liste]** affiche un tableau de toutes les connexions disponibles.
+△
 ![vue liste](assets/list-view.png)
 
 Les colonnes ou icônes suivantes sont disponibles dans le tableau.
@@ -164,11 +165,11 @@ Consultez [Créer ou modifier une vue de données](/help/data-views/create-datav
 
 ### Connexion Journey Optimizer
 
-Vous pouvez utiliser une connexion Journey Optimizer dans Customer Journey Analytics pour apporter la valeur supplémentaire suivante à votre connexion :
+Vous pouvez utiliser une connexion Journey Optimizer dans Customer Journey Analytics pour fournir la valeur supplémentaire suivante à votre connexion :
 
 * Effectuez une analyse approfondie des données Journey Optimizer dans Customer Journey Analytics (à l’aide du bouton **[!UICONTROL Analyser dans CJA]** dans Journey Optimizer).
 
-  Pour plus d’informations, voir [Analyser dans Customer Journey Analytics](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/reporting/channel-report/report-cja-manage#cja-template) dans la documentation de Journey Optimizer.
+  Pour plus d’informations, voir [Analyser dans Customer Journey Analytics](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/reporting/channel-report/report-cja-manage#cja-template).
 
 * Modifiez la connexion Journey Optimizer et les vues de données associées.
 
@@ -177,7 +178,7 @@ Vous pouvez utiliser une connexion Journey Optimizer dans Customer Journey Analy
 
 >[!IMPORTANT]
 >
->Lorsque vous activez une connexion Journey Optimizer à utiliser avec Customer Journey Analytics comme décrit dans cette section, chaque ligne de données de la connexion est comptabilisée dans les lignes de données sous licence chaque mois pour Customer Journey Analytics et apparaît dans l’interface d’utilisation des connexions. Sélectionnez l’option **[!UICONTROL Utiliser dans CJA]** sur la connexion uniquement si vous êtes à l’aise avec l’utilisation supplémentaire de lignes de données dans Customer Journey Analytics.
+>Lorsque vous activez une connexion Journey Optimizer pour Customer Journey Analytics, chaque ligne est comptabilisée dans vos lignes sous licence mensuelles et apparaît dans l’interface utilisateur d’utilisation des connexions. Sélectionnez l’option **[!UICONTROL Utiliser dans CJA]** sur la connexion uniquement si vous êtes à l’aise avec l’utilisation supplémentaire de lignes de données dans Customer Journey Analytics.
 >
 >**Si vous pouviez utiliser Customer Journey Analytics et Journey Optimizer entre octobre 2024 et octobre 2025, consultez le document suivant sur les [Connexions activées pour AJO](https://view.adobe.com/viewer/1ed94fc35c7860b260766c620889e7a0#1)**.
 
@@ -498,9 +499,13 @@ Lorsqu’une ligne de jeu de données est sélectionnée dans le tableau des jeu
 
 L’interface [!UICONTROL Utilisation] indique l’utilisation des lignes ingérées et pouvant faire l’objet d’un rapport sur toutes les connexions. Si cette option n’est pas sélectionnée, sélectionnez l’onglet **[!UICONTROL Utilisation]** pour accéder à l’interface.
 
-Cette interface vous permet de déterminer si votre utilisation de Customer Journey Analytics est conforme aux conditions contractuelles. Outre la surveillance, vous pouvez utiliser l’interface Utilisation pour planifier le renouvellement de votre licence Customer Journey Analytics.
+Cette interface vous aide à déterminer si votre utilisation de Customer Journey Analytics est conforme à ce qui est convenu contractuellement. Outre la surveillance, vous pouvez utiliser l’interface Utilisation pour planifier le renouvellement de votre licence Customer Journey Analytics.
 
-L’interface Utilisation utilise les mesures suivantes :
+Pour chaque module auquel vous avez droit, une section réductible est disponible avec des détails d’utilisation.
+
+### Utilisation de CJA
+
+L’interface **[!UICONTROL Utilisation de]** utilise les mesures suivantes :
 
 | Nom de la mesure | Description |
 |---|---|
@@ -517,23 +522,21 @@ L’interface Utilisation utilise les mesures suivantes :
 >Les données sont collectées à partir de juillet 2024 pour les enregistrements principaux, historiques et totaux. Contactez votre gestionnaire de compte pour obtenir des données historiques antérieures.
 >
 
-L’interface Utilisation se compose de deux panneaux :
+L’interface **[!UICONTROL Utilisation de]** se compose de deux panneaux :
 
 * Le panneau **[!UICONTROL Mesures d’utilisation des clés]** qui affiche :
 
-   * Quatre visualisations de synthèse qui affichent les modifications totales et en pourcentage par rapport au mois précédent pour les éléments suivants :
+  * Quatre visualisations de synthèse qui affichent les modifications totales et en pourcentage par rapport au mois précédent pour les éléments suivants :
 
-      * **[!UICONTROL Lignes de données principales à déclarer]**. Nombre total de lignes disponibles au cours des 13 derniers mois pour le mois en cours, avec un pourcentage de variation par rapport au mois précédent. Par exemple, le 1er février 2024, le nombre affiche le nombre total de lignes disponibles avec un horodatage d’événement de janvier 2023 à janvier 2024.
-      * **[!UICONTROL Lignes de données historiques à déclarer]**. Nombre total de lignes disponibles sur une période de plus de 13 mois pour le mois en cours, avec un pourcentage de variation par rapport au mois précédent. Par exemple, le 1er février 2024, le nombre affiche le nombre total de lignes disponibles avec un horodatage d’événement antérieur à janvier 2023.
-      * **[!UICONTROL Volume de données principal]**. Quantité totale de données stockées sur le disque, horodatées pour le mois en cours (en To), avec un pourcentage de modification par rapport au mois précédent.
-      * **[!UICONTROL Taille moyenne des lignes]**. Quantité moyenne de stockage consommée par chaque ligne de données ingérées et stockées (en Ko) pour le mois en cours, avec un pourcentage de variation par rapport au mois précédent.
+    * **[!UICONTROL Lignes de données principales à déclarer]**. Nombre total de lignes disponibles au cours des 13 derniers mois pour le mois en cours, avec un pourcentage de variation par rapport au mois précédent. Par exemple, le 1er février 2024, le nombre affiche le nombre total de lignes disponibles avec un horodatage d’événement de janvier 2023 à janvier 2024.
+    * **[!UICONTROL Lignes de capacité de données étendue]**. Nombre total de lignes disponibles sur une période de plus de 13 mois pour le mois en cours, avec un pourcentage de variation par rapport au mois précédent. Par exemple, le 1er février 2024, le nombre affiche le nombre total de lignes disponibles avec un horodatage d’événement antérieur à janvier 2023.
+    * **[!UICONTROL Lignes ingérées mensuelles]**. Lignes ingérées au cours du mois de facturation, avec une modification en pourcentage par rapport au mois précédent
+    * **[!UICONTROL Volume de données principal]**. Quantité totale de données stockées sur le disque, horodatées pour le mois en cours (en To), avec un pourcentage de modification par rapport au mois précédent.
+    * **[!UICONTROL Taille moyenne des lignes]**. Stockage moyen consommé par chaque ligne ingérée pour le mois en cours (en Ko), avec la modification en pourcentage par rapport au mois précédent.
 
-   * Visualisation sous forme de barres verticales empilées qui affiche les **[!UICONTROL lignes déclarables de données principales et historiques]** au cours des 13 derniers mois.
+  * Deux visualisations à barres verticales qui affichent les **[!UICONTROL lignes de données principales à signaler]** et **[!UICONTROL lignes de capacité de données étendue]** au cours des 13 derniers mois.
 
-     Lorsque vous pointez sur une barre empilée dans la visualisation, une fenêtre contextuelle affiche le nombre de lignes de cette partie spécifique de la barre. Dans l’exemple ci-dessous, les lignes des données de base à déclarer s’affichent pour le mois en cours (août 2025 : 936 millions (936 347 325)).
-
-
-     ![Mesures d’utilisation clés](assets/usage-key-usage-metrics.png)
+    Lorsque vous pointez sur une barre empilée dans la visualisation, une fenêtre contextuelle affiche le nombre de lignes de cette partie spécifique de la barre.
 
 * Panneau combiné affichant trois sous-panneaux pour les éléments suivants :
 
@@ -541,9 +544,7 @@ L’interface Utilisation se compose de deux panneaux :
 
   Le sous-panneau **[!UICONTROL Lignes ingérées]** mesure le nombre total d’enregistrements ajoutés au système chaque mois, ce qui fournit des informations sur la croissance des données et les taux d’ingestion. Le sous-panneau fournit un résumé du nombre total de lignes ingérées de ce mois et de la modification par rapport au mois précédent.
 
-  ![Lignes ingérées](assets/usage-ingested-rows.png)
-
-  Vous pouvez pointer sur des points de données dans la visualisation pour afficher une fenêtre contextuelle contenant plus de détails.
+  Vous pouvez pointer sur des points de données dans les visualisations pour afficher une fenêtre contextuelle contenant plus de détails. Vous pouvez sélectionner une **[!UICONTROL Période]** qui s’applique à la fois aux **[!UICONTROL Lignes ingérées]** et **[!UICONTROL Lignes à déclarer]**. Utilisez ![Calendrier](/help/assets/icons/Calendar.svg) pour sélectionner la période.
 
   +++
 
@@ -551,12 +552,175 @@ L’interface Utilisation se compose de deux panneaux :
 
   La visualisation **[!UICONTROL Lignes à déclarer]** effectue le suivi du nombre de lignes disponibles pour la création de rapports en soustrayant les lignes ignorées et supprimées des lignes ingérées, ce qui sert de mesure clé pour la facturation et l’utilisation des données. Le sous-panneau fournit deux synthèses :
 
-   * **[!UICONTROL Total du mois dernier]** : synthèse du total des lignes à déclarer jusqu’à ce mois.
-   * **[!UICONTROL Ce mois-ci]** : synthèse du total des lignes à déclarer de ce mois et de la modification par rapport au mois précédent.
+  * **[!UICONTROL Total des lignes à déclarer]** : synthèse du total des lignes à déclarer jusqu&#39;à ce mois.
+  * **[!UICONTROL Mois de déclaration mensuelle]** : synthèse du total des lignes de déclaration de ce mois et de la modification par rapport au mois précédent.
 
-  ![Lignes à déclarer](assets/usage-reportable-rows.png)
+  Vous pouvez pointer sur des points de données dans les visualisations pour afficher une fenêtre contextuelle contenant plus de détails. Vous pouvez sélectionner une **[!UICONTROL Période]** qui s’applique à la fois aux **[!UICONTROL Lignes ingérées]** et **[!UICONTROL Lignes à déclarer]**. Utilisez ![Calendrier](/help/assets/icons/Calendar.svg) pour sélectionner la période.
 
-  Vous pouvez pointer sur des points de données dans les visualisations pour afficher une fenêtre contextuelle contenant plus de détails.
+  +++
+
+  +++ Répartition des détails
+
+  Vous pouvez utiliser le tableau **[!UICONTROL Répartition des détails]** pour afficher les mesures détaillées par connexion, jeu de données, sandbox et balises. Les jeux de données dont l’objet de rapports à l’aide d’identifiants plutôt que de noms, car les noms des jeux de données peuvent être modifiés pendant une période de création de rapports. Les jeux de données ou les connexions inconnus font l’objet de rapport via leurs identifiants.
+
+  Pour les mois précédant septembre 2024, les données ont été collectées au niveau des jeux de données et s’affichent sous la forme [!UICONTROL Autres jeux de données] par souci de clarté. À compter de septembre 2024, les données seront collectées au niveau d’un jeu de données granulaire et [!UICONTROL autres jeux de données] n’apparaîtront plus.
+
+  * Pour modifier la répartition, sélectionnez une combinaison pour **[!UICONTROL Afficher par]** et **[!UICONTROL Répartir par]**.
+
+    | Options **[!UICONTROL Afficher par]** | Options **[!UICONTROL Répartir par]** |
+    |---|---|
+    | **[!UICONTROL Connexion]** | **[!UICONTROL -]** et **[!UICONTROL jeu de données]** |
+    | **[!UICONTROL Jeu de données]** | **[!UICONTROL -]** |
+    | **[!UICONTROL Sandbox]** | **[!UICONTROL Connexion]** |
+    | **[!UICONTROL Étiquette]** | **[!UICONTROL Connexion]** |
+
+  Vous pouvez sélectionner le mois pour lequel vous souhaitez obtenir la répartition. Sélectionnez un mois dans **[!UICONTROL Mois de répartition]**.
+
+
+  +++
+
+### Utilisation de Content Analytics
+
+L’interface **[!UICONTROL Utilisation de]** utilise les mesures suivantes :
+
+| Nom de la mesure | Description |
+|---|---|
+| **Lignes principales à signaler de** | Nombre total de lignes spécifiques à Content Analytics disponibles au cours des 13 derniers mois pour le mois en cours, avec un pourcentage de variation par rapport au mois précédent.  Par exemple, le 1er février 2024, le nombre affiche le nombre total de lignes disponibles avec une date et heure d’événement de janvier 2023 à janvier 2024. |
+| **Lignes Content Analytics mensuelles** | Cette option effectue le suivi du nombre de lignes Content Analytics disponibles pour la création de rapports. Les lignes sur lesquelles effectuer des rapports sont les lignes ingérées moins les lignes ignorées et supprimées lors de l’ingestion. Les lignes sur lesquelles effectuer des rapports servent de mesure clé pour la facturation et l’utilisation des données. |
+
+>[!NOTE]
+>
+>Les données sont collectées à partir de juillet 2024 pour les enregistrements principaux, historiques et totaux. Contactez votre gestionnaire de compte pour obtenir des données historiques antérieures.
+>
+
+L’interface **[!UICONTROL Utilisation de]** se compose de deux panneaux :
+
+* Le panneau **[!UICONTROL Mesures d’utilisation des clés]** qui affiche :
+
+  * Deux visualisations de synthèse qui affichent les modifications totales et en pourcentage par rapport au mois précédent pour :
+
+    * **[!UICONTROL Principales lignes à signaler d’Analytics]**. Nombre total de lignes spécifiques à Content Analytics disponibles au cours des 13 derniers mois pour le mois en cours, avec un pourcentage de variation par rapport au mois précédent.  Par exemple, le 1er février 2024, le nombre affiche le nombre total de lignes disponibles avec une date et heure d’événement de janvier 2023 à janvier 2024.
+    * **Lignes Content Analytics mensuelles**. Cette option effectue le suivi du nombre de lignes Content Analytics disponibles pour la création de rapports. Les lignes sur lesquelles effectuer des rapports sont les lignes ingérées moins les lignes ignorées et supprimées lors de l’ingestion. Les lignes sur lesquelles effectuer des rapports servent de mesure clé pour la facturation et l’utilisation des données.
+
+  * Une visualisation à barres verticales empilées qui affiche les **[!UICONTROL lignes principales à signaler de]** au cours des 13 derniers mois.
+
+    Lorsque vous pointez sur une barre empilée dans la visualisation, une fenêtre contextuelle affiche le nombre de lignes de cette partie spécifique de la barre.
+
+* Panneau combiné affichant deux sous-panneaux pour :
+
+  +++ Lignes Content Analytics mensuelles
+
+  Le sous-panneau **[!UICONTROL Lignes mensuelles de Content Analytics]** mesure le nombre total d’enregistrements mensuels de Content Analytics ajoutés au système chaque mois, fournissant ainsi insight en termes de croissance des données et de taux d’ingestion. Le sous-panneau fournit un résumé du nombre total de lignes ingérées de ce mois et de la modification par rapport au mois précédent.
+
+  Vous pouvez pointer sur des points de données dans la visualisation pour afficher une fenêtre contextuelle contenant plus de détails. Vous pouvez sélectionner une **[!UICONTROL Période]** ou utiliser ![Calendrier](/help/assets/icons/Calendar.svg) pour sélectionner la période.
+
+  +++
+
+  +++ Répartition des détails
+
+  Vous pouvez utiliser le tableau **[!UICONTROL Répartition des détails]** pour afficher les mesures détaillées par connexion, jeu de données, sandbox et balises. Les jeux de données dont l’objet de rapports à l’aide d’identifiants plutôt que de noms, car les noms des jeux de données peuvent être modifiés pendant une période de création de rapports. Les jeux de données ou les connexions inconnus font l’objet de rapport via leurs identifiants.
+
+  Pour les mois précédant septembre 2024, les données ont été collectées au niveau des jeux de données et s’affichent sous la forme [!UICONTROL Autres jeux de données] par souci de clarté. À compter de septembre 2024, les données seront collectées au niveau d’un jeu de données granulaire et [!UICONTROL autres jeux de données] n’apparaîtront plus.
+
+  * Pour modifier la répartition, sélectionnez une combinaison pour **[!UICONTROL Afficher par]** et **[!UICONTROL Répartir par]**.
+
+    | Options **[!UICONTROL Afficher par]** | Options **[!UICONTROL Répartir par]** |
+    |---|---|
+    | **[!UICONTROL Connexion]** | **[!UICONTROL -]** et **[!UICONTROL jeu de données]** |
+    | **[!UICONTROL Jeu de données]** | **[!UICONTROL -]** |
+    | **[!UICONTROL Sandbox]** | **[!UICONTROL Connexion]** |
+    | **[!UICONTROL Étiquette]** | **[!UICONTROL Connexion]** |
+
+  Vous pouvez sélectionner le mois pour lequel vous souhaitez obtenir la répartition. Sélectionnez un mois dans **[!UICONTROL Mois de répartition]**.
+
+  +++
+
+
+### Utilisation de CJA B2B Edition
+
+L’interface **[!UICONTROL Utilisation de CJA B2B edition]** utilise les mesures suivantes :
+
+| Nom de la mesure | Description |
+|---|---|
+| **BPP à déclaration obligatoire principale** | Nombre total de lignes à déclarer de profil professionnel disponibles au cours des 13 derniers mois pour le mois en cours, avec une variation en pourcentage par rapport au mois précédent.  Par exemple, le 1er février 2024, le nombre affiche le nombre total de lignes disponibles avec un horodatage d’événement de janvier 2023 à janvier 2024. |
+| **Historique à signaler BPP** | Nombre total de lignes à déclarer de profil professionnel disponibles sur une période de plus de 13 mois pour le mois en cours, avec une variation en pourcentage par rapport au mois précédent. Par exemple, le 1er février 2024, le nombre affiche le nombre total de lignes disponibles avec un horodatage d’événement antérieur à janvier 2023. |
+
+>[!NOTE]
+>
+>Les données sont collectées à partir de juillet 2024 pour les enregistrements principaux, historiques et totaux. Contactez votre gestionnaire de compte pour obtenir des données historiques antérieures.
+>
+
+L’interface **[!UICONTROL Utilisation de CJA B2B edition]** se compose d’un panneau qui affiche des sous-panneaux pour :
+
++++ BPP à déclaration obligatoire principale.
+
+Le sous-groupe **[!UICONTROL BPP principal à déclaration obligatoire]** mesure le nombre total d’enregistrements mensuels de profil professionnel principal à déclaration obligatoire ajoutés au système chaque mois, fournissant ainsi insight sur la croissance des données et les taux d’ingestion. Le sous-panneau fournit un résumé du nombre total de lignes ingérées de ce mois et de la modification par rapport au mois précédent.
+
+Vous pouvez pointer sur les points de données dans la visualisation pour afficher une fenêtre contextuelle avec plus de détails s’appliquant à la fois aux **[!UICONTROL principaux produits à déclaration obligatoire]** et aux **[!UICONTROL produits à déclaration obligatoire historiques]**. Utilisez ![Calendrier](/help/assets/icons/Calendar.svg) pour sélectionner la période.
+
++++
+
++++ Historique BPP à déclarer.
+
+Le sous-panneau **[!UICONTROL Historique à reporter BPP]** mesure le nombre total d’enregistrements de profil professionnel historiques à reporter mensuels ajoutés au système chaque mois, fournissant ainsi insight sur la croissance des données et les taux d’ingestion. Le sous-panneau fournit un résumé du nombre total de lignes ingérées de ce mois et de la modification par rapport au mois précédent.
+
+Vous pouvez pointer sur les points de données dans la visualisation pour afficher une fenêtre contextuelle avec plus de détails s’appliquant à la fois aux **[!UICONTROL principaux produits à déclaration obligatoire]** et aux **[!UICONTROL produits à déclaration obligatoire historiques]**. Utilisez ![Calendrier](/help/assets/icons/Calendar.svg) pour sélectionner la période.
+
++++
+
++++ Répartition des détails
+
+Vous pouvez utiliser le tableau **[!UICONTROL Répartition des détails]** pour afficher les mesures détaillées par connexion, jeu de données, sandbox et balises. Les jeux de données dont l’objet de rapports à l’aide d’identifiants plutôt que de noms, car les noms des jeux de données peuvent être modifiés pendant une période de création de rapports. Les jeux de données ou les connexions inconnus font l’objet de rapport via leurs identifiants.
+
+Pour les mois précédant septembre 2024, les données ont été collectées au niveau des jeux de données et s’affichent sous la forme [!UICONTROL Autres jeux de données] par souci de clarté. À compter de septembre 2024, les données sont collectées au niveau d’un jeu de données granulaire et l’option [!UICONTROL Autres jeux de données] n’apparaît plus.
+
+* Pour modifier la répartition, sélectionnez une combinaison pour **[!UICONTROL Afficher par]** et **[!UICONTROL Répartir par]**.
+
+  | Options **[!UICONTROL Afficher par]** | Options **[!UICONTROL Répartir par]** |
+  |---|---|
+  | **[!UICONTROL Connexion]** | **[!UICONTROL -]** et **[!UICONTROL jeu de données]** |
+  | **[!UICONTROL Jeu de données]** | **[!UICONTROL -]** |
+  | **[!UICONTROL Sandbox]** | **[!UICONTROL Connexion]** |
+  | **[!UICONTROL Étiquette]** | **[!UICONTROL Connexion]** |
+
+Vous pouvez sélectionner le mois pour lequel vous souhaitez obtenir la répartition. Sélectionnez un mois dans **[!UICONTROL Mois de répartition]**.
+
++++
+
+
+### Utilisation du streaming multimédia
+
+L’interface **[!UICONTROL Utilisation des médias en flux continu]** utilise les mesures suivantes :
+
+| Nom de la mesure | Description |
+|---|---|
+| **démarrages mensuels du média** | Nombre total de démarrages média mensuels disponibles au cours des 13 derniers mois pour le mois en cours, avec un pourcentage de variation par rapport au mois précédent.  Par exemple, le 1er février 2024, le nombre affiche le nombre total de démarrages média disponibles avec une date et heure d’événement de janvier 2023 à janvier 2024. |
+
+>[!NOTE]
+>
+>Les données sont collectées à partir de juillet 2024 pour les enregistrements principaux, historiques et totaux. Contactez votre gestionnaire de compte pour obtenir des données historiques antérieures.
+>
+
+
+L’interface **[!UICONTROL Utilisation des médias en flux continu]** se compose de deux panneaux :
+
+* Le panneau **[!UICONTROL Mesures d’utilisation des clés]** qui affiche :
+
+  * Visualisation de synthèse qui affiche les modifications totales et en pourcentage par rapport au mois précédent pour **[!UICONTROL démarrages mensuels du média]**.
+
+    Nombre total de démarrages média mensuels disponibles au cours des 13 derniers mois pour le mois en cours, avec un pourcentage de variation par rapport au mois précédent.  Par exemple, le 1er février 2024, le nombre affiche le nombre total de démarrages média disponibles avec une date et heure d’événement de janvier 2023 à janvier 2024.
+
+  * Une visualisation à barres verticales empilées qui affiche le **[!UICONTROL démarrages mensuels des médias]** au cours des 13 derniers mois.
+
+    Lorsque vous pointez sur une barre empilée dans la visualisation, une fenêtre contextuelle affiche le nombre de lignes de cette partie spécifique de la barre.
+
+* Panneau combiné affichant deux sous-panneaux pour :
+
+  +++ Démarrages mensuels du contenu multimédia
+
+  Le sous-panneau **[!UICONTROL Démarrages mensuels des médias]** mesure le nombre total d’enregistrements de démarrage mensuels des médias ajoutés au système chaque mois, fournissant ainsi insight en matière de croissance des données et de taux d’ingestion. Le sous-panneau fournit un résumé du nombre total de lignes ingérées de ce mois et de la modification par rapport au mois précédent.
+
+  Vous pouvez pointer sur des points de données dans la visualisation pour afficher une fenêtre contextuelle contenant plus de détails. Vous pouvez sélectionner une **[!UICONTROL Période]** ou utiliser ![Calendrier](/help/assets/icons/Calendar.svg) pour sélectionner la période.
 
   +++
 
@@ -566,22 +730,22 @@ L’interface Utilisation se compose de deux panneaux :
 
   Pour les mois précédant septembre 2024, les données ont été collectées au niveau des jeux de données et s’affichent sous la forme [!UICONTROL Autres jeux de données] par souci de clarté. À compter de septembre 2024, les données sont collectées au niveau d’un jeu de données granulaire et l’option [!UICONTROL Autres jeux de données] n’apparaît plus.
 
-   * Pour modifier la répartition, sélectionnez une combinaison pour **[!UICONTROL Afficher par]** et **[!UICONTROL Répartir par]**.
+  * Pour modifier la répartition, sélectionnez une combinaison pour **[!UICONTROL Afficher par]** et **[!UICONTROL Répartir par]**.
 
-     | Options **[!UICONTROL Afficher par]** | Options **[!UICONTROL Répartir par]** |
-     |---|---|
-     | **[!UICONTROL Connexion]** | **[!UICONTROL -]** et **[!UICONTROL jeu de données]** |
-     | **[!UICONTROL Jeu de données]** | **[!UICONTROL -]** |
-     | **[!UICONTROL Sandbox]** | **[!UICONTROL Connexion]** |
-     | **[!UICONTROL Étiquette]** | **[!UICONTROL Connexion]** |
+    | Options **[!UICONTROL Afficher par]** | Options **[!UICONTROL Répartir par]** |
+    |---|---|
+    | **[!UICONTROL Connexion]** | **[!UICONTROL -]** et **[!UICONTROL jeu de données]** |
+    | **[!UICONTROL Jeu de données]** | **[!UICONTROL -]** |
+    | **[!UICONTROL Sandbox]** | **[!UICONTROL Connexion]** |
+    | **[!UICONTROL Étiquette]** | **[!UICONTROL Connexion]** |
 
-  ![Répartition des détails](assets/usage-detail-breakdown.png)
+  Vous pouvez sélectionner le mois pour lequel vous souhaitez obtenir la répartition. Sélectionnez un mois dans **[!UICONTROL Mois de répartition]**.
 
   +++
 
-  Vous pouvez définir une **[!UICONTROL Période]** en mois pour créer un rapport. Utilisez ![Calendrier](/help/assets/icons/Calendar.svg) pour sélectionner la période.
 
 >[!MORELIKETHIS]
 >
->Tutoriel [Afficher, résoudre les problèmes et modifier les paramètres de connexion](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/connections/connections-details-experience-in-cja).Gérer l’utilisation de Customer Journey Analytics&rbrack;(/help/technotes/estimate-usage.md)
+>Tutoriel [Affichage, dépannage et modification &#x200B;](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/connections/connections-details-experience-in-cja) paramètres de connexion.
+>[Gérer l’utilisation de Customer Journey Analytics](/help/technotes/estimate-usage.md)
 >
