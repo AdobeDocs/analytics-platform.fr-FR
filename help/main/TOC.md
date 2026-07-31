@@ -2,9 +2,9 @@
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: cd71195e30ae7fcc877b395a2756a924fa61b11c
+source-git-commit: 7499c338d8564a5712f6e55fee5e0ec3a7ea90bd
 workflow-type: tm+mt
-source-wordcount: '1469'
+source-wordcount: '1472'
 ht-degree: 91%
 
 ---
@@ -150,7 +150,7 @@ ht-degree: 91%
     + {hide-from-toc}[Vue d’ensemble](/help/connections/consent-reporting-filtering/consent-overview.md)
     + {hide-from-toc}[Configuration](/help/connections/consent-reporting-filtering/consent-configure.md)
     + {hide-from-toc}[Gérer](/help/connections/consent-reporting-filtering/consent-manage.md)
-    + {hide-from-toc}[&#x200B; Analyser &#x200B;](/help/connections/consent-reporting-filtering/consent-analyze.md)
+    + {hide-from-toc}[ Analyser ](/help/connections/consent-reporting-filtering/consent-analyze.md)
     + {hide-from-toc}[Cas d’utilisation](/help/connections/consent-reporting-filtering/consent-use-cases.md)
 + Vues des données {#cja-dataviews}
   + [Vue d’ensemble des vues de données](../data-views/data-views.md)
@@ -478,6 +478,7 @@ ht-degree: 91%
   + [Intégrer des données Journey Optimizer](/help/integrations/ajo.md)
   + [Intégrer les données de gestion des décisions](/help/integrations/ajo-od.md)
   + [Intégrer l’IA dédiée aux clientes et clients](/help/integrations/customer-ai.md)
+  + [Intégration de LLM Optimizer](/help/integrations/llmo.md)
   + [Intégrer Adobe Advertising](/help/integrations/advertising.md)
 
 + Gouvernance des données {#cja-privacy}
@@ -554,7 +555,7 @@ ht-degree: 91%
       + [Lier des lectures de session](/help/use-cases/third-party/quantum-metric/tie-session-replays.md)
       + [Utiliser des cartes thermiques](/help/use-cases/third-party/quantum-metric/heatmap.md)
       + [Ajouter des événements de friction](/help/use-cases/third-party/quantum-metric/friction-events.md)
-      + {hide-from-toc}[Connecteur &#x200B;](/help/use-cases/third-party/quantum-metric/source-connector.md)
+      + {hide-from-toc}[Connecteur ](/help/use-cases/third-party/quantum-metric/source-connector.md)
 
 + Labs {#labs}
   + [Guide d’utilisation de Labs](../labs/labs.md)
