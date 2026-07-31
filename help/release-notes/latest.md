@@ -27,10 +27,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: d16eaa5e7939585f7ade164ef0c680095b8ed2c3
+source-git-commit: ffa9d10d58481d19627633b6a2030c11b6d5b229
 workflow-type: tm+mt
-source-wordcount: 799
-ht-degree: 33%
+source-wordcount: 826
+ht-degree: 32%
 
 ---
 
@@ -44,6 +44,7 @@ Ces notes de mise à jour couvrent la période de publication de juillet 2026. L
 
 | Fonctionnalité et description | [Le déploiement commence](releases.md) | [Disponibilité générale](releases.md) |
 | -----------|-----------|-----------|
+| **Intégration de**<br> L’intégration entrante [LLM Optimizer](/help/integrations/llmo.md#inbound-integration) vous permet d’ingérer des données LLM Optimizer dans Customer Journey Analytics pour une analyse plus approfondie. | 28 juillet 2026 | 28 juillet 2026 |
 | **Analyse de sous-événement** <br/>[Analyse de sous-événement](/help/components/segments/sub-event.md) permet d&#39;analyser les données à un niveau plus granulaire que le niveau de l&#39;événement. Au lieu de filtrer des événements entiers, vous pouvez segmenter des conteneurs individuels au sein d’un événement. <p>Par exemple, vous pouvez segmenter une catégorie de produits spécifique sans inclure tous les autres produits achetés dans la même commande. Vous pouvez également définir des objets ou des tableaux qui font partie de vos données d’événement en tant que [conteneurs personnalisés](/help/data-views/create-dataview.md#custom-containers) distincts dans une vue de données. | 21 juillet 2026 | Fin juillet 2026 |
 | **B2B edition : la prise en charge des jeux de données ad hoc et relationnels** <br/>Les jeux de données ad hoc et relationnels sont désormais également pris en charge dans les connexions basées sur les comptes dans Customer Journey Analytics B2B edition.<p>(Lien vers la documentation à suivre.)</p> | | 20 Juillet 2026 |
 | **Collègue d’entreprise CX : analyser les données Customer Journey Analytics** <br/>Le Module de conversation des collègues d’entreprise Adobe CX peut désormais effectuer une analyse avancée des données, auparavant uniquement possible dans Analysis Workspace. Le Module de conversation avec les collègues accède aux données à partir de vos vues de données Customer Journey Analytics, ce qui vous permet d’explorer ces données et d’obtenir des réponses aux invites en langage naturel.<p>Pour plus d’informations, voir [Analyse des données Customer Journey Analytics avec la conversation des collègues](https://experienceleague.adobe.com/fr/docs/cx-enterprise-coworker/content/chat/analytics-chat).</p> | | 23 juillet 2026 |
