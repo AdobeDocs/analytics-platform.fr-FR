@@ -54,15 +54,15 @@ Des données précises sur les produits sont la pierre angulaire d&#39;une analy
 Les fonctionnalités suivantes de Adobe Experience Platform et Customer Journey Analytics vous permettent d’ingérer et de gérer vos données de produit à grande échelle :
 
 * Adobe Experience Platform
-   * [Jeux de données](https://experienceleague.adobe.com/fr/docs/experience-platform/catalog/datasets/overview)
-   * [Préparation des données](https://experienceleague.adobe.com/fr/docs/experience-platform/data-prep/home)
-   * [Data Distiller](https://experienceleague.adobe.com/fr/docs/experience-platform/query/data-distiller/overview)
+  * [Jeux de données](https://experienceleague.adobe.com/fr/docs/experience-platform/catalog/datasets/overview)
+  * [Préparation des données](https://experienceleague.adobe.com/fr/docs/experience-platform/data-prep/home)
+  * [Data Distiller](https://experienceleague.adobe.com/fr/docs/experience-platform/query/data-distiller/overview)
 * Customer Journey Analytics
-   * [Connexions](/help/connections/overview.md)
-   * [Vues de données](/help/data-views/data-views.md), y compris [champs dérivés&#x200B;](/help/data-views/derived-fields/derived-fields.md)
-   * [Segments](/help/components/segments/seg-overview.md)
-   * [Mesures calculées](/help/components/calc-metrics/calc-metr-overview.md)
-   * [Analyse guidée : Chronologie](/help/guided-analysis/types/timeline.md)
+  * [Connexions](/help/connections/overview.md)
+  * [Vues de données](/help/data-views/data-views.md), y compris [champs dérivés&#x200B;](/help/data-views/derived-fields/derived-fields.md)
+  * [Segments](/help/components/segments/seg-overview.md)
+  * [Mesures calculées](/help/components/calc-metrics/calc-metr-overview.md)
+  * [Analyse guidée : Chronologie](/help/guided-analysis/types/timeline.md)
 
 ## Acquisition et activation des mesures
 
@@ -78,7 +78,7 @@ Les fonctionnalités suivantes de Customer Journey Analytics vous permettent de 
 * [Analyse guidée : Croissance active](/help/guided-analysis/types/active-growth.md)
 * [Analyse guidée : Croissance nette](/help/guided-analysis/types/net-growth.md)
 * [Analyse guidée : Tendances](/help/guided-analysis//types/trends.md)
-* [Panneau Attribution](/help/analysis-workspace/c-panels/attribution.md)
+* [Panneau d’attribution](/help/analysis-workspace/c-panels/attribution.md)
 * [Tableau à structure libre](/help/analysis-workspace/c-panels/freeform-panel.md) qui inclut la dimension de canal marketing (création à l’aide d’un [champ dérivé](/help/data-views/derived-fields/derived-fields.md))
 
 ## Mesurer l’engagement et l’adoption
@@ -121,8 +121,8 @@ Les fonctionnalités suivantes de CX Enterprise vous permettent d’agir efficac
 
 * [Création et publication d’audiences](/help/components/audiences/publish.md) pour activation à partir de Customer Journey Analytics
 * Activer les audiences via les produits CX Enterprise :
-   * [Exécutez des expériences](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/content-management/content-experiment/get-started-experiment) dans AJO et Adobe Target, et mesurez l’impact des variations dans Customer Journey Analytics à l’aide du [panneau Expérimentation](/help/analysis-workspace/c-panels/experimentation.md)
-   * [Diffuser des engagements in-app](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/channels/in-app/get-started-in-app) aux utilisateurs dans AJO.
+  * [Exécutez des expériences](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/content-management/content-experiment/get-started-experiment) dans AJO et Adobe Target, et mesurez l’impact des variations dans Customer Journey Analytics à l’aide du [panneau Expérimentation](/help/analysis-workspace/c-panels/experimentation.md)
+  * [Diffuser des engagements in-app](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/channels/in-app/get-started-in-app) aux utilisateurs dans AJO.
 * [Activer des audiences](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/activate/activation-overview) vers des destinations externes avec la plateforme de données clients en temps réel d’Adobe.
 
 ## Partager des informations avec l’organisation

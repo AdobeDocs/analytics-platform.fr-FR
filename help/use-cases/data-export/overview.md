@@ -68,8 +68,8 @@ Dans Customer Journey Analytics, les événements ne sont pas collectés dans l�
 
 * L’assemblage peut _relire_ des données quotidiennes ou hebdomadaires, associant des événements anonymes à des événements connus. Voir [&#x200B; Assemblage &#x200B;](../../stitching/overview.md) pour plus d’informations.
 * La sessionnalisation et les valeurs persistantes changent à chaque fois
-   * de nouvelles données sont collectées ou
-   * l’assemblage ajoute des événements à l’historique d’une personne.
+  * de nouvelles données sont collectées ou
+  * l’assemblage ajoute des événements à l’historique d’une personne.
 
 Le traitement de la période de rapport a un impact sur l’exportation des données depuis Customer Journey Analytics. Les exportations qui incluent des valeurs persistantes, ne correspondent pas aux rapports Customer Journey Analytics et les valeurs disparaîtront au fil du temps.
 
@@ -77,22 +77,22 @@ Pour la cohérence des mesures, il est préférable d’utiliser les nouvelles f
 
 * nouvelles sources de données et traitement soumis à l’exportation des données
 
-   * inclure des sources de données non numériques,
-   * appliquer une attribution et une sessionnalisation personnalisées en fonction des règles d’entreprise ; et
-   * mettez à jour les parcours clients en les regroupant.
+  * inclure des sources de données non numériques,
+  * appliquer une attribution et une sessionnalisation personnalisées en fonction des règles d’entreprise ; et
+  * mettez à jour les parcours clients en les regroupant.
 
 * réalisation de cas d&#39;utilisation d&#39;export de données sur mesure
 
-   * d’exporter des données vers l’emplacement où vous en avez besoin, y compris vers les outils Business Intelligence (BI) et les destinations cloud,
-   * conserver les données synchronisées avec Analysis Workspace grâce à l’intégration des outils de BI,
-   * pas besoin de répliquer la logique de traitement dans vos propres systèmes,
-   * nouvelle prise en charge des mesures calculées, des champs dérivés et de la segmentation, et
+  * d’exporter des données vers l’emplacement où vous en avez besoin, y compris vers les outils Business Intelligence (BI) et les destinations cloud,
+  * conserver les données synchronisées avec Analysis Workspace grâce à l’intégration des outils de BI,
+  * pas besoin de répliquer la logique de traitement dans vos propres systèmes,
+  * nouvelle prise en charge des mesures calculées, des champs dérivés et de la segmentation, et
 
 * prise en compte de la sécurité et de la gouvernance des données dès la conception
 
-   * surveiller toutes les exportations de données par utilisateur et par destination,
-   * définir des limites sur les données disponibles à l’exportation, et
-   * définissez des alertes pour les problèmes de diffusion et les limites des fenêtres de diffusion planifiées.
+  * surveiller toutes les exportations de données par utilisateur et par destination,
+  * définir des limites sur les données disponibles à l’exportation, et
+  * définissez des alertes pour les problèmes de diffusion et les limites des fenêtres de diffusion planifiées.
 
 
 ## Cas d’utilisation et fonctionnalités

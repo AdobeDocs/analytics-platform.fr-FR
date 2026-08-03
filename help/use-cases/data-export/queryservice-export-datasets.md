@@ -22,7 +22,7 @@ topic_v2:
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
 source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
 workflow-type: tm+mt
-source-wordcount: 3355
+source-wordcount: 3315
 ht-degree: 10%
 
 ---
@@ -122,7 +122,7 @@ Selon l’implémentation de , les données au niveau de l’accès généraleme
 | `geo\_*` | `placeContext.geo.* ` | chaîne, nombre | Données de géolocalisation, comme le pays, la région, la ville, etc |
 | `event_list` | `commerce.purchases`, `commerce.productViews`, `commerce.productListOpens`, `commerce.checkouts`, `commerce.productListAdds`, `commerce.productListRemovals`, `commerce.productListViews`, `_experience.analytics.event101to200.*`, ..., `_experience.analytics.event901_1000.*` | string | Événements commerciaux et personnalisés standard déclenchés sur l’accès. |
 | `page_event` | `web.webInteraction.type` | string | Le type d’accès qui est envoyé dans la demande d’image (accès standard, lien de téléchargement, lien de sortie ou lien personnalisé sur lequel le visiteur a cliqué). |
-| `page_event` | `web.webInteraction.linkClicks.value` | number | Le type d’accès qui est envoyé dans la demande d’image (accès standard, lien de téléchargement, lien de sortie ou lien personnalisé sur lequel le visiteur a cliqué). |
+| `page_event` | `web.webInteraction.linkClicks.value` | Nombre | Le type d’accès qui est envoyé dans la demande d’image (accès standard, lien de téléchargement, lien de sortie ou lien personnalisé sur lequel le visiteur a cliqué). |
 | `page_event_var_1` | `web.webInteraction.URL` | string | Variable utilisée uniquement dans les demandes d’image de suivi de liens. Cette variable contient l’URL du lien de téléchargement, de sortie ou personnalisé sur lequel a cliqué l’utilisateur. |
 | `page_event_var_2` | `web.webInteraction.name` | string | Variable utilisée uniquement dans les demandes d’image de suivi de liens. Répertorie le nom personnalisé du lien, s’il est spécifié. |
 | `paid_search` | `search.isPaid` | booléen | Indicateur défini si l’accès correspond à la détection des référencements payants. |
@@ -209,11 +209,11 @@ Vous trouverez ci-dessous un exemple d’application correcte de l’attribution
 
   Pour ce faire, vous devez...
 
-   - Utilisez un tableau de statut de traitement, `checkpoint_log`, pour suivre l’heure actuelle par rapport à la dernière heure d’ingestion. Voir [ce guide](https://experienceleague.adobe.com/fr/docs/experience-platform/query/key-concepts/incremental-load) pour plus d’informations.
-   - désactivez l’option supprimer les colonnes système pour pouvoir utiliser `_acp_system_metadata.ingestTime`.
-   - Utilisez un `SELECT` interne le plus complet pour saisir les champs que vous souhaitez utiliser et limiter les événements à votre période de recherche en amont pour les calculs de sessionnalisation et/ou d’attribution. Par exemple, 90 jours.
-   - Utilisez une `SELECT` de niveau supérieur pour appliquer des fonctions de fenêtre de sessionnalisation et/ou d’attribution et d’autres calculs.
-   - Utilisez les `INSERT INTO` dans votre tableau de sortie pour limiter la recherche en amont aux événements arrivés depuis votre dernière heure de traitement. Pour ce faire, filtrez sur `_acp_system_metadata.ingestTime ` par rapport à la dernière heure stockée dans votre tableau de statut du traitement.
+  - Utilisez un tableau de statut de traitement, `checkpoint_log`, pour suivre l’heure actuelle par rapport à la dernière heure d’ingestion. Voir [ce guide](https://experienceleague.adobe.com/fr/docs/experience-platform/query/key-concepts/incremental-load) pour plus d’informations.
+  - désactivez l’option supprimer les colonnes système pour pouvoir utiliser `_acp_system_metadata.ingestTime`.
+  - Utilisez un `SELECT` interne le plus complet pour saisir les champs que vous souhaitez utiliser et limiter les événements à votre période de recherche en amont pour les calculs de sessionnalisation et/ou d’attribution. Par exemple, 90 jours.
+  - Utilisez une `SELECT` de niveau supérieur pour appliquer des fonctions de fenêtre de sessionnalisation et/ou d’attribution et d’autres calculs.
+  - Utilisez les `INSERT INTO` dans votre tableau de sortie pour limiter la recherche en amont aux événements arrivés depuis votre dernière heure de traitement. Pour ce faire, filtrez sur `_acp_system_metadata.ingestTime ` par rapport à la dernière heure stockée dans votre tableau de statut du traitement.
 
   **Exemple de fonctions de fenêtre de sessionisation**
 
