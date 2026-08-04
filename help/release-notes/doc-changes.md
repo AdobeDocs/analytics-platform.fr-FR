@@ -33,7 +33,7 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: ffa9d10d58481d19627633b6a2030c11b6d5b229
+source-git-commit: 2f745f65808e47fd6c0862fe23b6de6ca12ecfff
 workflow-type: tm+mt
 source-wordcount: 6984
 ht-degree: 99%
@@ -50,7 +50,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Fonctionnalité | Description |
 |---|---|
 | **Juillet 2026** | |
-| Intégration entrante de LLM Optimizer | Documentation pour l’intégration entrante [&#128279;](/help/integrations/llmo.md#inbound-integration). |
+| Intégration entrante de Brand Visibility | Documentation pour l’intégration entrante [&#128279;](/help/integrations/bv.md#inbound-integration). |
 | Interface Utilisation | Mises à jour de la documentation [Interface d’utilisation](/help/connections/manage-connections.md#usage) pour les connexions. |
 | Analyse des sous-événements | Documentation pour [analyse de sous-événement](/help/components/segments/sub-event.md) et [conteneurs personnalisés](/help/data-views/create-dataview.md#custom-containers). |
 | Classifications intégrées | Documentation pour les [classifications intégrées](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md#inline-classifications). |

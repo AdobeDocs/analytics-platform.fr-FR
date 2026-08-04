@@ -3,6 +3,7 @@ title: Notes de mise à jour actuelles de Customer Journey Analytics
 description: Afficher les dernières notes de mise à jour de Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
+hold: true
 TQID: https://experienceleague.adobe.com/EQKhna8E33DddZQGWe3ASBKMY9r-UsfuUcJg7DMwH0w
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
@@ -27,50 +28,49 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: ffa9d10d58481d19627633b6a2030c11b6d5b229
+source-git-commit: 034186edab4bcd66073236e070a37ee9317830e4
 workflow-type: tm+mt
-source-wordcount: 826
-ht-degree: 32%
+source-wordcount: 779
+ht-degree: 36%
 
 ---
 
-# Notes de mise à jour actuelles de Customer Journey Analytics (juillet 2026)
+# Notes de mise à jour actuelles de Customer Journey Analytics (août 2026)
 
-**Dernière mise à jour** : 8 juillet 2026
+**Dernière mise à jour** : 4 août 2026
 
-Ces notes de mise à jour couvrent la période de publication de juillet 2026. Les mises à jour d’Adobe Customer Journey Analytics suivent un [modèle de diffusion continue](releases.md) qui permet une approche plus évolutive et plus progressive du déploiement des fonctionnalités. Par conséquent, ces notes de mise à jour sont mises à jour plusieurs fois par mois. Veuillez les vérifier régulièrement.
+Ces notes de mise à jour couvrent la période de publication d’août 2026. Les mises à jour d’Adobe Customer Journey Analytics suivent un [modèle de diffusion continue](releases.md) qui permet une approche plus évolutive et plus progressive du déploiement des fonctionnalités. Par conséquent, ces notes de mise à jour sont mises à jour plusieurs fois par mois. Veuillez les vérifier régulièrement.
 
 ## Fonctionnalités nouvelles ou mises à jour
 
 | Fonctionnalité et description | [Le déploiement commence](releases.md) | [Disponibilité générale](releases.md) |
 | -----------|-----------|-----------|
-| **Intégration de**<br> L’intégration entrante [LLM Optimizer](/help/integrations/llmo.md#inbound-integration) vous permet d’ingérer des données LLM Optimizer dans Customer Journey Analytics pour une analyse plus approfondie. | 28 juillet 2026 | 28 juillet 2026 |
-| **Analyse de sous-événement** <br/>[Analyse de sous-événement](/help/components/segments/sub-event.md) permet d&#39;analyser les données à un niveau plus granulaire que le niveau de l&#39;événement. Au lieu de filtrer des événements entiers, vous pouvez segmenter des conteneurs individuels au sein d’un événement. <p>Par exemple, vous pouvez segmenter une catégorie de produits spécifique sans inclure tous les autres produits achetés dans la même commande. Vous pouvez également définir des objets ou des tableaux qui font partie de vos données d’événement en tant que [conteneurs personnalisés](/help/data-views/create-dataview.md#custom-containers) distincts dans une vue de données. | 21 juillet 2026 | Fin juillet 2026 |
-| **B2B edition : la prise en charge des jeux de données ad hoc et relationnels** <br/>Les jeux de données ad hoc et relationnels sont désormais également pris en charge dans les connexions basées sur les comptes dans Customer Journey Analytics B2B edition.<p>(Lien vers la documentation à suivre.)</p> | | 20 Juillet 2026 |
-| **Collègue d’entreprise CX : analyser les données Customer Journey Analytics** <br/>Le Module de conversation des collègues d’entreprise Adobe CX peut désormais effectuer une analyse avancée des données, auparavant uniquement possible dans Analysis Workspace. Le Module de conversation avec les collègues accède aux données à partir de vos vues de données Customer Journey Analytics, ce qui vous permet d’explorer ces données et d’obtenir des réponses aux invites en langage naturel.<p>Pour plus d’informations, voir [Analyse des données Customer Journey Analytics avec la conversation des collègues](https://experienceleague.adobe.com/fr/docs/cx-enterprise-coworker/content/chat/analytics-chat).</p> | | 23 juillet 2026 |
-| **Coworker d’entreprise CX : valider vos données lors de la migration d’Adobe Analytics vers Customer Journey Analytics** <br/>Une nouvelle compétence dans le Coworker d’entreprise CX vous permet de valider les données de votre implémentation Customer Journey Analytics par rapport aux données de votre implémentation Adobe Analytics existante. <p>Cette compétence compare automatiquement chaque dimension, mesure et tendance individuellement selon les besoins. Il peut également comparer toutes les suites de rapports Adobe Analytics à toutes les vues de données Customer Journey Analytics. Les compétences génèrent ensuite des informations et des recommandations pilotées par l’IA que vous pouvez mettre en œuvre pour faciliter votre migration vers Customer Journey Analytics.</p><p>Pour plus d’informations, consultez [Validation des données avec un collègue lors de la mise à niveau d’Adobe Analytics vers Customer Journey Analytics](https://experienceleague.adobe.com/fr/docs/cx-enterprise-ai/experience-cloud-ai/coworker/data-validation-aa-cja).</p> | | 24 Juillet 2026 |
-| **Classifications intégrées**<br/>[&#x200B; Les classifications intégrées](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md#inline-classifications) vous permettent de renommer ou de combiner des lignes dans un tableau à structure libre. Et pour créer un champ dérivé à partir des lignes modifiées d’un tableau. | 20 Juillet 2026 | 25 juillet 2026 |
-| **Content Analytics : Paid media data** <br/>Paid media est désormais disponible en tant que troisième canal pour Content Analytics.<p>(Lien vers la documentation à suivre.)</p> | | 31 juillet 2026 |
-| **Mise à jour de l’interface d’utilisation des connexions** <br/>Dans l’interface [d’utilisation](/help/connections/manage-connections.md#usage) lors de la gestion des connexions, vous pouvez désormais voir les détails d’utilisation de chaque module individuel, tels que Customer Journey Analytics ou Customer Journey Analytics B2B edition. <br/>En outre, vous pouvez désormais ventiler les rapports d’utilisation de chacun des modules par mois. | 23 juillet 2026 | 30 Juillet 2026 |
+| **Améliorations de la zone de travail de Parcours**<br> Les améliorations de la zone de travail de Parcours suivantes sont désormais disponibles :<ul><li>Comparez le parcours à une période précédente. Comparez le parcours actuel au parcours 4 semaines avant, 2 trimestres avant, 1 an avant ou à une période personnalisée.</li><li>Pour un nœud sélectionné, affichez les principaux éléments de dimension qui se trouvent après le nœud sélectionné à tout moment dans le parcours. Utilisez cette option lorsque le nœud sélectionné est l’événement clé de votre analyse et que vous souhaitez voir ce que les personnes font à tout moment par la suite.<p>Auparavant, seuls les principaux nœuds immédiats pouvaient être affichés avant ou après le nœud sélectionné. </p></li><li>Modifiez la forme et le style des flèches entre les nœuds. Faites glisser les flèches entre les nœuds pour modifier la forme (courbure) de la flèche, puis cliquez avec le bouton droit sur une flèche pour modifier son style de l’une des manières suivantes : pleine, tirets, pointillés, tirets ou animés.</li></ul><p></p>Pour plus d’informations, consultez [Configuration d’une visualisation Zone de travail de parcours](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md). |  | 18 Août 2026 |
+| **Prise en charge de libellés d’utilisation des données supplémentaires**<br> Customer Journey Analytics prend désormais en charge les libellés d’utilisation des données supplémentaires suivants pour les éléments d’un jeu de données :<ul><li>C2 - Restreindre l’exportation de données tierces (disponible maintenant)</li><li>C3 - Restreindre la combinaison de données directement identifiables (disponible maintenant)</li><li>C9 - Restreindre la science des données (publication prévue en août)</li></ul><p>Pour plus d’informations, voir [Libellés, politiques et actions marketing](/help/data-views/data-governance.md).</p> | | Août 2026 |
+| **Filtrage et création de rapports concernant les politiques de consentement**<br> Vous pouvez désormais créer des rapports sur les visiteurs qui correspondent à vos politiques de consentement Adobe Experience Platform. (Les dimensions et mesures de la politique de consentement sont ajoutées aux vues de données dans votre connexion.)<p>De plus, vous pouvez exclure les visiteurs non consentants avant que leurs données ne soient ingérées dans Customer Journey Analytics.</p><p>Pour plus d’informations, voir Présentation des rapports et du filtrage de consentement.</p> | | Août 2026 |
+| **Planificateur de migration : Adobe Analytics vers Customer Journey Analytics**<br> Le planificateur de migration fournit un assistant de migration qui automatise certaines des tâches les plus complexes et les plus longues associées à une mise à niveau d’Adobe Analytics vers Customer Journey Analytics, y compris la création de schémas XDM et la migration d’AppMeasurement ou de l’extension Analytics (balises) vers Experience Platform Web SDK. <p>(Lien vers la documentation à suivre.)</p> | | Fin août ou septembre 2026 |
+| **B2B : groupement personne-à-compte**<br> vous pouvez désormais utiliser le groupement d’identités pour regrouper les informations de compte avec chaque événement du jeu de données. Comme le compte est le conteneur de création de rapports le plus élevé dans Customer Journey Analytics B2B edition, les événements qui n’incluent pas d’ID de compte sont ignorés lors de l’ingestion.</li></ul><p>(Lien vers la documentation à suivre.)</p> | | Fin août ou septembre 2026 |
+| **Guide des premiers appels de l’API de rapport**<br> Le guide des premiers appels de l’API Adobe Customer Journey Analytics fournit des instructions et des exemples pour configurer les requêtes de rapport de base. | | 10 Août 2026 |
+| **Guide de tendance de la date de l’API de rapport**<br> Le guide de tendance de la date de l’API Adobe Customer Journey Analytics fournit des instructions et des exemples pour configurer les requêtes de rapport de base. | | 17 Août 2026 |
 
 ### Correctifs dans Customer Journey Analytics
 
-**&#x200B;**&#x200B;: AN-457527, AN-451161, AN-459034, AN-458071, AN-458398
+**Analysis Workspace**:
 **Composants** :
-**Connexions** : AN-457065
+**Connexions** :
 **Content Analytics** :
 **Analyse guidée** :
 **Exports** :
-**Vues des données** : AN-453201
+**Vues de données** :
 **Ingestion des données** :
 **Mise en œuvre** :
-**&#x200B;**&#x200B;: AN-457533, AN-453683
-**Reporting** : AN-457607, AN-447692, AN-451259, AN-455713
+**Report Builder**:
+**Reporting** :
 **Segmentation** :
-**Rapports planifiés** : AN-450715
+**Rapports planifiés** :
 **Dimensions et mesures partagées** :
 **Analyse de l’audience** :
-**Autre** : AN-457063
+**Autre** :
 
 ## Fonctionnalités reportées
 
