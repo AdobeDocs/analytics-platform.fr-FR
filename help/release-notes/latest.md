@@ -28,10 +28,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 034186edab4bcd66073236e070a37ee9317830e4
+source-git-commit: feb7b3364e7981c42e3a31f75acfbddfdc463485
 workflow-type: tm+mt
-source-wordcount: 779
-ht-degree: 36%
+source-wordcount: 795
+ht-degree: 35%
 
 ---
 
@@ -49,7 +49,7 @@ Ces notes de mise à jour couvrent la période de publication d’août 2026. Le
 | **Prise en charge de libellés d’utilisation des données supplémentaires**<br> Customer Journey Analytics prend désormais en charge les libellés d’utilisation des données supplémentaires suivants pour les éléments d’un jeu de données :<ul><li>C2 - Restreindre l’exportation de données tierces (disponible maintenant)</li><li>C3 - Restreindre la combinaison de données directement identifiables (disponible maintenant)</li><li>C9 - Restreindre la science des données (publication prévue en août)</li></ul><p>Pour plus d’informations, voir [Libellés, politiques et actions marketing](/help/data-views/data-governance.md).</p> | | Août 2026 |
 | **Filtrage et création de rapports concernant les politiques de consentement**<br> Vous pouvez désormais créer des rapports sur les visiteurs qui correspondent à vos politiques de consentement Adobe Experience Platform. (Les dimensions et mesures de la politique de consentement sont ajoutées aux vues de données dans votre connexion.)<p>De plus, vous pouvez exclure les visiteurs non consentants avant que leurs données ne soient ingérées dans Customer Journey Analytics.</p><p>Pour plus d’informations, voir Présentation des rapports et du filtrage de consentement.</p> | | Août 2026 |
 | **Planificateur de migration : Adobe Analytics vers Customer Journey Analytics**<br> Le planificateur de migration fournit un assistant de migration qui automatise certaines des tâches les plus complexes et les plus longues associées à une mise à niveau d’Adobe Analytics vers Customer Journey Analytics, y compris la création de schémas XDM et la migration d’AppMeasurement ou de l’extension Analytics (balises) vers Experience Platform Web SDK. <p>(Lien vers la documentation à suivre.)</p> | | Fin août ou septembre 2026 |
-| **B2B : groupement personne-à-compte**<br> vous pouvez désormais utiliser le groupement d’identités pour regrouper les informations de compte avec chaque événement du jeu de données. Comme le compte est le conteneur de création de rapports le plus élevé dans Customer Journey Analytics B2B edition, les événements qui n’incluent pas d’ID de compte sont ignorés lors de l’ingestion.</li></ul><p>(Lien vers la documentation à suivre.)</p> | | Fin août ou septembre 2026 |
+| **B2B : assemblage de comptes de personne à compte**<br> l’assemblage de comptes B2B enrichit vos jeux de données d’événement avec des informations de compte et permet une analyse complète sur l’ensemble du parcours client dans Customer Journey Analytics. <p>Lorsque les événements ne disposent pas d’un identifiant de compte, ce que Customer Journey Analytics B2B edition exige pour l’ingestion, l’assemblage de comptes dérive et ajoute automatiquement ces informations à l’aide du jeu de données de mappage personne-compte que vous fournissez.</p><p>(Lien vers la documentation à suivre.)</p> | | Fin août ou septembre 2026 |
 | **Guide des premiers appels de l’API de rapport**<br> Le guide des premiers appels de l’API Adobe Customer Journey Analytics fournit des instructions et des exemples pour configurer les requêtes de rapport de base. | | 10 Août 2026 |
 | **Guide de tendance de la date de l’API de rapport**<br> Le guide de tendance de la date de l’API Adobe Customer Journey Analytics fournit des instructions et des exemples pour configurer les requêtes de rapport de base. | | 17 Août 2026 |
 
