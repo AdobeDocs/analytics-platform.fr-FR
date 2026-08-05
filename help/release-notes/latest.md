@@ -3,41 +3,22 @@ title: Notes de mise à jour actuelles de Customer Journey Analytics
 description: Afficher les dernières notes de mise à jour de Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-hold: true
 TQID: https://experienceleague.adobe.com/EQKhna8E33DddZQGWe3ASBKMY9r-UsfuUcJg7DMwH0w
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
-  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
-  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
-  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
-  - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 64b257112d0d46aa6a6ca22d1f712376e461d5e4
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ad333ea6-e90d-4c8f-8d61-9f8690784d6fid: ad5685a0-8296-4a0c-814c-658c10b4af12id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5cid: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7id: d3c978ee-1ff0-4475-968a-721e2dd99ef1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: b73d8eb73b0b65ca94f42d86b12cdfcc1ed99159
 workflow-type: tm+mt
-source-wordcount: 971
+source-wordcount: 975
 ht-degree: 28%
 
 ---
 
 # Notes de mise à jour actuelles de Customer Journey Analytics (août 2026)
 
-**Dernière mise à jour** : 4 août 2026
+**Dernière mise à jour** : 5 août 2026
 
 Ces notes de mise à jour couvrent la période de publication d’août 2026. Les mises à jour d’Adobe Customer Journey Analytics suivent un [modèle de diffusion continue](releases.md) qui permet une approche plus évolutive et plus progressive du déploiement des fonctionnalités. Par conséquent, ces notes de mise à jour sont mises à jour plusieurs fois par mois. Veuillez les vérifier régulièrement.
 
@@ -45,8 +26,8 @@ Ces notes de mise à jour couvrent la période de publication d’août 2026. Le
 
 | Fonctionnalité et description | [Le déploiement commence](releases.md) | [Disponibilité générale](releases.md) |
 | -----------|-----------|-----------|
-| **Améliorations de la zone de travail de Parcours**<br> Les améliorations de la zone de travail de Parcours suivantes sont désormais disponibles :<ul><li>Comparez le parcours à une période précédente. Comparez le parcours actuel au parcours 4 semaines avant, 2 trimestres avant, 1 an avant ou à une période personnalisée.</li><li>Pour un nœud sélectionné, affichez les principaux éléments de dimension qui se trouvent après le nœud sélectionné à tout moment dans le parcours. Utilisez cette option lorsque le nœud sélectionné est l’événement clé de votre analyse et que vous souhaitez voir ce que les personnes font à tout moment par la suite.<p>Auparavant, seuls les principaux nœuds immédiats pouvaient être affichés avant ou après le nœud sélectionné. </p></li><li>Modifiez la forme et le style des flèches entre les nœuds. Faites glisser les flèches entre les nœuds pour modifier la forme (courbure) de la flèche, puis cliquez avec le bouton droit sur une flèche pour modifier son style de l’une des manières suivantes : pleine, tirets, pointillés, tirets ou animés.</li></ul><p></p>Pour plus d’informations, consultez [Configuration d’une visualisation Zone de travail de parcours](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md). |  | 18 Août 2026 |
-| **Prise en charge de libellés d’utilisation des données supplémentaires**<br> Customer Journey Analytics prend désormais en charge les libellés d’utilisation des données supplémentaires suivants pour les éléments d’un jeu de données :<ul><li>C2 - Restreindre l’exportation de données tierces (disponible maintenant)</li><li>C3 - Restreindre la combinaison de données directement identifiables (disponible maintenant)</li><li>C9 - Restreindre la science des données (publication prévue en août)</li></ul><p>Pour plus d’informations, voir [Libellés, politiques et actions marketing](/help/data-views/data-governance.md).</p> | | Août 2026 |
+| **Améliorations de la zone de travail de Parcours**<br> Les améliorations de la zone de travail de Parcours suivantes sont désormais disponibles :<ul><li>Comparez le parcours à une période précédente. Comparez le parcours actuel au parcours 4 semaines avant, 2 trimestres avant, 1 an avant ou à une période personnalisée.</li><li>Pour un nœud sélectionné, affichez les principaux éléments de dimension qui se trouvent après le nœud sélectionné à tout moment dans le parcours. Utilisez cette option lorsque le nœud sélectionné est l’événement clé de votre analyse et que vous souhaitez voir ce que les personnes font à tout moment par la suite.<p>Auparavant, seuls les principaux nœuds immédiats pouvaient être affichés avant ou après le nœud sélectionné. </p></li><li>Modifiez la forme et le style des flèches entre les nœuds. Faites glisser des flèches entre les nœuds pour modifier la forme (courbure) de la flèche, puis cliquez avec le bouton droit sur une flèche pour modifier son style de l’une des manières suivantes : pleine, tirets, pointillés, tirets ou animés.</li></ul><p></p>Pour plus d’informations, consultez [Configuration d’une visualisation Zone de travail de parcours](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md). |  | 18 Août 2026 |
+| **Prise en charge de libellés d’utilisation des données supplémentaires**<br> Customer Journey Analytics prend désormais en charge les libellés d’utilisation des données supplémentaires suivants pour les éléments d’un jeu de données :<ul><li>C2 - Restreindre l’exportation de données tierces (disponible maintenant)</li><li>C3 - Restreindre la combinaison de données directement identifiables (disponible maintenant)</li><li>C9 - Restreindre la science des données (publication prévue en août ou en septembre)</li></ul><p>Pour plus d’informations, voir [Libellés, politiques et actions marketing](/help/data-views/data-governance.md).</p> | | Août ou septembre 2026 |
 | **Filtrage et création de rapports concernant les politiques de consentement**<br> Vous pouvez désormais créer des rapports sur les visiteurs qui correspondent à vos politiques de consentement Adobe Experience Platform. (Les dimensions et mesures de la politique de consentement sont ajoutées aux vues de données dans votre connexion.)<p>De plus, vous pouvez exclure les visiteurs non consentants avant que leurs données ne soient ingérées dans Customer Journey Analytics.</p><p>Pour plus d’informations, voir Présentation des rapports et du filtrage de consentement.</p> | | Août 2026 |
 | **Content Analytics : Paid media data** <br/>Paid media est désormais disponible en tant que troisième canal pour Content Analytics.<p>(Lien vers la documentation à suivre.)</p> | | 31 Août 2026 |
 | **Planificateur de migration : Adobe Analytics vers Customer Journey Analytics**<br> Le planificateur de migration fournit un assistant de migration qui automatise certaines des tâches les plus complexes et les plus longues associées à une mise à niveau d’Adobe Analytics vers Customer Journey Analytics, y compris la création de schémas XDM et la migration d’AppMeasurement ou de l’extension Analytics (balises) vers Experience Platform Web SDK. <p>(Lien vers la documentation à suivre.)</p> | | Fin août ou septembre 2026 |
@@ -56,7 +37,7 @@ Ces notes de mise à jour couvrent la période de publication d’août 2026. Le
 
 ### Correctifs dans Customer Journey Analytics
 
-**&#x200B;**&#x200B;: AN-466867, AN-465995, AN-465315, AN-465313, AN-464375, AN-463634, AN-463248, AN-463175, AN-463049, AN-462347, AN-462124, AN-461922, AN-458398, AN-457849, AN-455002, AN-453357, AN-456863, AN-459816, AN-459034, AN-460774, AN-460671, AN-457760, AN-443594
+**** : AN-466867, AN-465995, AN-465315, AN-465313, AN-464375, AN-463634, AN-463248, AN-463175, AN-463049, AN-462347, AN-462124, AN-461922, AN-458398, AN-457849, AN-455002, AN-453357, AN-456863, AN-459816, AN-459034, AN-460774, AN-460671, AN-457760, AN-443594
 **Composants** :
 **Connexions** : AN-464934, AN-460768
 **Content Analytics** :
@@ -65,7 +46,7 @@ Ces notes de mise à jour couvrent la période de publication d’août 2026. Le
 **Vues de données** : AN-453201, AN-441965, AN-460967
 **Ingestion de données** : AN-462123, AN-451836, AN-453790, AN-459000, AN-456057, AN-461271, AN-459016, AN-460935
 **Mise en œuvre** :
-**&#x200B;**&#x200B;: AN-465346, AN-464768, AN-464580, AN-464301, AN-463048, AN-462800, AN-457042, AN-461033, AN-459042, AN-454250, AN-451735, AN-450776, AN-450200, AN-451665
+**** : AN-465346, AN-464768, AN-464580, AN-464301, AN-463048, AN-462800, AN-457042, AN-461033, AN-459042, AN-454250, AN-451735, AN-450776, AN-450200, AN-451665
 **Reporting** : AN-463576, AN-462400, AN-456394, AN-455619, AN-459530, AN-454103, AN-452866, AN-461181
 **Segmentation** : AN-459002, AN-457730, AN-457146
 **Rapports planifiés** : AN-455009, AN-460037, AN-462093
@@ -85,5 +66,5 @@ Ces notes de mise à jour couvrent la période de publication d’août 2026. Le
 >* [Notes de mise à jour d’Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=fr)
 >* [Notes de mise à jour du module complémentaire Streaming Media Collection](https://experienceleague.adobe.com/docs/media-analytics/using/additional-resources/release-notes.html?lang=fr)
 >* Notes de mise à jour d’[CX Enterprise](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=fr)
->* [Mises à jour de la documentation de &#x200B;](/help/release-notes/doc-changes.md)
+>* [Mises à jour de la documentation de ](/help/release-notes/doc-changes.md)
 
