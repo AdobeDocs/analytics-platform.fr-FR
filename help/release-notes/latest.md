@@ -28,10 +28,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: feb7b3364e7981c42e3a31f75acfbddfdc463485
+source-git-commit: 64b257112d0d46aa6a6ca22d1f712376e461d5e4
 workflow-type: tm+mt
-source-wordcount: 795
-ht-degree: 35%
+source-wordcount: 971
+ht-degree: 28%
 
 ---
 
@@ -48,6 +48,7 @@ Ces notes de mise à jour couvrent la période de publication d’août 2026. Le
 | **Améliorations de la zone de travail de Parcours**<br> Les améliorations de la zone de travail de Parcours suivantes sont désormais disponibles :<ul><li>Comparez le parcours à une période précédente. Comparez le parcours actuel au parcours 4 semaines avant, 2 trimestres avant, 1 an avant ou à une période personnalisée.</li><li>Pour un nœud sélectionné, affichez les principaux éléments de dimension qui se trouvent après le nœud sélectionné à tout moment dans le parcours. Utilisez cette option lorsque le nœud sélectionné est l’événement clé de votre analyse et que vous souhaitez voir ce que les personnes font à tout moment par la suite.<p>Auparavant, seuls les principaux nœuds immédiats pouvaient être affichés avant ou après le nœud sélectionné. </p></li><li>Modifiez la forme et le style des flèches entre les nœuds. Faites glisser les flèches entre les nœuds pour modifier la forme (courbure) de la flèche, puis cliquez avec le bouton droit sur une flèche pour modifier son style de l’une des manières suivantes : pleine, tirets, pointillés, tirets ou animés.</li></ul><p></p>Pour plus d’informations, consultez [Configuration d’une visualisation Zone de travail de parcours](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md). |  | 18 Août 2026 |
 | **Prise en charge de libellés d’utilisation des données supplémentaires**<br> Customer Journey Analytics prend désormais en charge les libellés d’utilisation des données supplémentaires suivants pour les éléments d’un jeu de données :<ul><li>C2 - Restreindre l’exportation de données tierces (disponible maintenant)</li><li>C3 - Restreindre la combinaison de données directement identifiables (disponible maintenant)</li><li>C9 - Restreindre la science des données (publication prévue en août)</li></ul><p>Pour plus d’informations, voir [Libellés, politiques et actions marketing](/help/data-views/data-governance.md).</p> | | Août 2026 |
 | **Filtrage et création de rapports concernant les politiques de consentement**<br> Vous pouvez désormais créer des rapports sur les visiteurs qui correspondent à vos politiques de consentement Adobe Experience Platform. (Les dimensions et mesures de la politique de consentement sont ajoutées aux vues de données dans votre connexion.)<p>De plus, vous pouvez exclure les visiteurs non consentants avant que leurs données ne soient ingérées dans Customer Journey Analytics.</p><p>Pour plus d’informations, voir Présentation des rapports et du filtrage de consentement.</p> | | Août 2026 |
+| **Content Analytics : Paid media data** <br/>Paid media est désormais disponible en tant que troisième canal pour Content Analytics.<p>(Lien vers la documentation à suivre.)</p> | | 31 Août 2026 |
 | **Planificateur de migration : Adobe Analytics vers Customer Journey Analytics**<br> Le planificateur de migration fournit un assistant de migration qui automatise certaines des tâches les plus complexes et les plus longues associées à une mise à niveau d’Adobe Analytics vers Customer Journey Analytics, y compris la création de schémas XDM et la migration d’AppMeasurement ou de l’extension Analytics (balises) vers Experience Platform Web SDK. <p>(Lien vers la documentation à suivre.)</p> | | Fin août ou septembre 2026 |
 | **B2B : assemblage de comptes de personne à compte**<br> l’assemblage de comptes B2B enrichit vos jeux de données d’événement avec des informations de compte et permet une analyse complète sur l’ensemble du parcours client dans Customer Journey Analytics. <p>Lorsque les événements ne disposent pas d’un identifiant de compte, ce que Customer Journey Analytics B2B edition exige pour l’ingestion, l’assemblage de comptes dérive et ajoute automatiquement ces informations à l’aide du jeu de données de mappage personne-compte que vous fournissez.</p><p>(Lien vers la documentation à suivre.)</p> | | Fin août ou septembre 2026 |
 | **Guide des premiers appels de l’API de rapport**<br> Le guide des premiers appels de l’API Adobe Customer Journey Analytics fournit des instructions et des exemples pour configurer les requêtes de rapport de base. | | 10 Août 2026 |
@@ -55,22 +56,22 @@ Ces notes de mise à jour couvrent la période de publication d’août 2026. Le
 
 ### Correctifs dans Customer Journey Analytics
 
-**Analysis Workspace**:
+**&#x200B;**&#x200B;: AN-466867, AN-465995, AN-465315, AN-465313, AN-464375, AN-463634, AN-463248, AN-463175, AN-463049, AN-462347, AN-462124, AN-461922, AN-458398, AN-457849, AN-455002, AN-453357, AN-456863, AN-459816, AN-459034, AN-460774, AN-460671, AN-457760, AN-443594
 **Composants** :
-**Connexions** :
+**Connexions** : AN-464934, AN-460768
 **Content Analytics** :
 **Analyse guidée** :
-**Exports** :
-**Vues de données** :
-**Ingestion des données** :
+**Exports** : AN-451819, AN-448419, AN-456001
+**Vues de données** : AN-453201, AN-441965, AN-460967
+**Ingestion de données** : AN-462123, AN-451836, AN-453790, AN-459000, AN-456057, AN-461271, AN-459016, AN-460935
 **Mise en œuvre** :
-**Report Builder**:
-**Reporting** :
-**Segmentation** :
-**Rapports planifiés** :
+**&#x200B;**&#x200B;: AN-465346, AN-464768, AN-464580, AN-464301, AN-463048, AN-462800, AN-457042, AN-461033, AN-459042, AN-454250, AN-451735, AN-450776, AN-450200, AN-451665
+**Reporting** : AN-463576, AN-462400, AN-456394, AN-455619, AN-459530, AN-454103, AN-452866, AN-461181
+**Segmentation** : AN-459002, AN-457730, AN-457146
+**Rapports planifiés** : AN-455009, AN-460037, AN-462093
 **Dimensions et mesures partagées** :
-**Analyse de l’audience** :
-**Autre** :
+**Analyse de l’audience** : AN-458292
+**Autre** : AN-466935, AN-462116, AN-454493, AN-457666, AN-457557, AN-456742, AN-437975, AN-460959
 
 ## Fonctionnalités reportées
 
