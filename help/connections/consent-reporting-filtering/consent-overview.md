@@ -19,10 +19,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 91cd8d3d5c290f52e4ae15713693be1fc83baa92
+source-git-commit: 55a5bc2160a7dc426b9436116362264ab9f90390
 workflow-type: tm+mt
-source-wordcount: 1058
-ht-degree: 2%
+source-wordcount: 1060
+ht-degree: 3%
 
 ---
 
@@ -81,8 +81,8 @@ Tenez compte des points suivants lors de l’utilisation du filtrage du consente
 
   | Action marketing | Description |
   |---------|----------|
-  | **[!UICONTROL Analytics]** | Rapports Customer Journey Analytics standard dans Analysis Workspace. |
-  | **[!UICONTROL Science des données]** | Analyses avancées, machine learning et cas d’utilisation de la science des données. |
+  | **[!UICONTROL Données Analytics]** | Rapports Customer Journey Analytics standard dans Analysis Workspace. |
+  | **[!UICONTROL Données de science des données]** | Cas d’utilisation d’analyses avancées, de machine learning et de science des données. |
 
 * Les données d’un visiteur ou d’une visiteuse ne sont ingérées que si celui-ci ou celle-ci correspond **toutes** aux politiques de consentement applicables. Si une politique applicable fait défaut à un visiteur, ses données sont exclues.
 
