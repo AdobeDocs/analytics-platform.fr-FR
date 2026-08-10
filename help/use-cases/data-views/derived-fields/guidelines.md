@@ -7,27 +7,11 @@ exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
 autotag-review: '2026-05-19T11:02:42.011Z'
 TQID: 'https://experienceleague.adobe.com/k0nhhAy1CuLa7bEhu1XGqjsQdn9nEAnGb1LbMMeiCLM'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
-subfeature_v2:
-  - id: f3ca85c1-72de-4df2-97ed-05753cd77c47
-  - id: e1471301-a189-438e-8d48-264a8db508a6
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2: id: f3ca85c1-72de-4df2-97ed-05753cd77c47id: e1471301-a189-438e-8d48-264a8db508a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b4dd41a7-ccf8-4e9d-918e-acaab534a307id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d00e9f03-e50b-4162-b143-0c0817c937c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 2842
@@ -36,7 +20,7 @@ ht-degree: 1%
 ---
 
 
-# Instructions relatives aux champs dérivés
+# Directives relatives aux champs dérivés
 
 Customer Journey Analytics [champs dérivés](/help/data-views/derived-fields/derived-fields.md) vous permet de transformer, de classer et d’enrichir les données au moment de la requête sans modifier les jeux de données source. Cette flexibilité peut entraîner de la complexité, des problèmes de performances et des frais de maintenance si elle est appliquée sans discipline.
 
@@ -44,11 +28,11 @@ Cet article fournit des instructions (bonnes pratiques, mécanismes de sécurisa
 
 * **Optimiser les performances** : identifiez les modèles qui ralentissent l’exécution des requêtes ou atteignent les limites du système pour sélectionner l’outil approprié à la tâche :
 
-   * [Champs dérivés](/help/data-views/derived-fields/derived-fields.md)
-   * [Paramètres de la vue de données](/help/data-views/component-settings/overview.md)
-   * [Préparation de données](https://experienceleague.adobe.com/fr/docs/experience-platform/data-prep/home)
-   * [Mesures calculées](/help/components/calc-metrics/calc-metr-overview.md)
-   * [Jeux de données de recherche](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
+  * [Champs dérivés](/help/data-views/derived-fields/derived-fields.md)
+  * [Paramètres de la vue de données](/help/data-views/component-settings/overview.md)
+  * [Préparation de données](https://experienceleague.adobe.com/fr/docs/experience-platform/data-prep/home)
+  * [Mesures calculées](/help/components/calc-metrics/calc-metr-overview.md)
+  * [Jeux de données de recherche](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
 
 * **Améliorez la maintenabilité** : créez une logique de champ dérivée qui est claire, modulaire et facile à mettre à jour.
 * **Garantir l’exactitude** : évitez les erreurs logiques courantes dans la classification, l’attribution et la transformation des données.
@@ -98,15 +82,15 @@ Cette section traite des segments par défaut de la vue de données qui font ré
 
 ## Cas trop complexe lorsque les chaînes de règles
 
-Cette section traite des chaînes trop complexes de règles [Cas &#x200B;](/help/data-views/derived-fields/derived-fields.md#case-when).
+Cette section traite des chaînes trop complexes de règles [Cas ](/help/data-views/derived-fields/derived-fields.md#case-when).
 
 Customer Journey Analytics applique des [limites de fonction et d’opérateur](/help/data-views/derived-fields/derived-fields.md#limitations) explicites par champ dérivé (par exemple, le nombre maximal d’opérateurs, le nombre maximal de fonctions par type). Les fonctions trop complexes et les chaînes au sein des fonctions sont plus difficiles à gérer et plus susceptibles de contenir des erreurs.
 
 **Modèles**
 
 * Très grand [Case When](/help/data-views/derived-fields/derived-fields.md#case-when) fonctionne avec des chaînes complexes **[!UICONTROL If]** et **[!UICONTROL Else If]** :
-   * De nombreuses conditions (par exemple : plus de 20 opérateurs) ou imbrication profonde (plus de 3 ou 4 niveaux de logique imbriquée [Case When](/help/data-views/derived-fields/derived-fields.md#case-when) **[!UICONTROL If]** et **[!UICONTROL Else If]**).
-   * Conditions répétées sur le même champ avec des valeurs différentes.
+  * De nombreuses conditions (par exemple : plus de 20 opérateurs) ou imbrication profonde (plus de 3 ou 4 niveaux de logique imbriquée [Case When](/help/data-views/derived-fields/derived-fields.md#case-when) **[!UICONTROL If]** et **[!UICONTROL Else If]**).
+  * Conditions répétées sur le même champ avec des valeurs différentes.
 * Correspondance de chaînes constantes répétées.
 
   +++ Exemple
@@ -138,26 +122,26 @@ Cette section traite de l’utilisation incorrecte des champs dérivés. Surtout
 **Modèles**
 
 * Un champ dérivé reproduit le comportement déjà disponible dans les paramètres du composant :
-   * Normalisation de la casse, rognage ou simple filtrage (par exemple : exclusion de `unknown`, `undefined` ou `null`) sans complexité supplémentaire.
-   * Groupement de base sur des plages de nombres.
+  * Normalisation de la casse, rognage ou simple filtrage (par exemple : exclusion de `unknown`, `undefined` ou `null`) sans complexité supplémentaire.
+  * Groupement de base sur des plages de nombres.
 
-     +++ Exemple
+    +++ Exemple
 
-     ![Utilisation incorrecte du regroupement de base](assets/best-practices-wrong-usage.png)
+    ![Utilisation incorrecte du regroupement de base](assets/best-practices-wrong-usage.png)
 
-     +++
+    +++
 
-     Utilisez plutôt le [regroupement de valeurs](/help/data-views/component-settings/value-bucketing.md) sur une dimension de votre vue de données.
-   * Logique de persistance ou d’attribution codée avec une logique de séquence [suivante ou précédente](/help/data-views/derived-fields/derived-fields.md#next-or-previous) ou manuelle où les paramètres de vue de données [attribution](/help/data-views/component-settings/attribution.md) et [expiration](/help/data-views/component-settings/persistence.md) suffiraient.
-   * Mesure dérivée qui comptabilise simplement une mesure existante sous une condition.
+    Utilisez plutôt le [regroupement de valeurs](/help/data-views/component-settings/value-bucketing.md) sur une dimension de votre vue de données.
+  * Logique de persistance ou d’attribution codée avec une logique de séquence [suivante ou précédente](/help/data-views/derived-fields/derived-fields.md#next-or-previous) ou manuelle où les paramètres de vue de données [attribution](/help/data-views/component-settings/attribution.md) et [expiration](/help/data-views/component-settings/persistence.md) suffiraient.
+  * Mesure dérivée qui comptabilise simplement une mesure existante sous une condition.
 
-     +++ Exemple
+    +++ Exemple
 
-     ![Mauvaise utilisation de la logique conditionnelle](assets/best-practices-wrong-usage-2.png)
+    ![Mauvaise utilisation de la logique conditionnelle](assets/best-practices-wrong-usage-2.png)
 
-     +++
+    +++
 
-     Cette approche reproduit ce qu’une mesure filtrée ou [Inclure/exclure les valeurs](/help/data-views/component-settings/include-exclude-values.md) pourrait réaliser.
+    Cette approche reproduit ce qu’une mesure filtrée ou [Inclure/exclure les valeurs](/help/data-views/component-settings/include-exclude-values.md) pourrait réaliser.
 
 **Diagnostic des risques : qualité des données, maintenance élevée**
 
@@ -172,8 +156,8 @@ Cette section traite de l’utilisation incorrecte des champs dérivés. Surtout
 * Attribution et persistance : utilisez les paramètres de la vue de données [Persistance](/help/data-views/component-settings/persistence.md) (**[!UICONTROL Modèle d’attribution]** et **[!UICONTROL Expiration]**) pour les dimensions au lieu de les simuler dans un champ dérivé avec [Suivant ou Précédent](/help/data-views/derived-fields/derived-fields.md#next-or-previous) ou une autre logique séquentielle.
 * Groupement numérique : conservez le champ dérivé numérique et laissez la vue de données créer une dimension regroupée par-dessus, plutôt que des libellés de plage de codage en dur dans une chaîne [Cas quand](/help/data-views/derived-fields/derived-fields.md#case-when).
 * Logique conditionnelle : convertissez la logique d’indicateur simple 0 ou 1 en :
-   * la mesure d’origine avec la logique de filtre des valeurs d’inclusion ou d’exclusion appliquée dans Analysis Workspace.
-   * mesure filtrée utilisant la configuration des paramètres des composants de vue de données.
+  * la mesure d’origine avec la logique de filtre des valeurs d’inclusion ou d’exclusion appliquée dans Analysis Workspace.
+  * mesure filtrée utilisant la configuration des paramètres des composants de vue de données.
 
 ## Mauvaises classifications des mesures et des dimensions
 
@@ -182,8 +166,8 @@ Cette section traite de la classification incorrecte des mesures et des dimensio
 **Modèles**
 
 * Un champ dérivé produit clairement :
-   * Sorties numériques (nombre, ratio ou arithmétique), mais le composant est configuré en tant que dimension.
-   * Sorties catégorielles (libellés ou chaînes), mais le composant est configuré en tant que mesure.
+  * Sorties numériques (nombre, ratio ou arithmétique), mais le composant est configuré en tant que dimension.
+  * Sorties catégorielles (libellés ou chaînes), mais le composant est configuré en tant que mesure.
 * Un champ dérivé encode les indicateurs 0/1 en tant que chaînes.
 
 Customer Journey Analytics permet de contraindre des champs numériques aux dimensions et des champs de chaîne aux mesures au niveau de la vue de données, mais un mauvais alignement peut créer des rapports déroutants.
@@ -195,10 +179,10 @@ Customer Journey Analytics permet de contraindre des champs numériques aux dime
 **Recommandations**
 
 * Si la sortie est numérique :
-   * Définissez le type de composant sur **[!UICONTROL Mesure]** dans la vue de données.
-   * Si le composant représente une mesure de sous-ensemble (par exemple, **[!UICONTROL Extraire les pages vues]**), utilisez une mesure filtrée dans la vue de données plutôt qu’une chaîne dérivée plus une mesure calculée en haut.
+  * Définissez le type de composant sur **[!UICONTROL Mesure]** dans la vue de données.
+  * Si le composant représente une mesure de sous-ensemble (par exemple, **[!UICONTROL Extraire les pages vues]**), utilisez une mesure filtrée dans la vue de données plutôt qu’une chaîne dérivée plus une mesure calculée en haut.
 * Si la sortie est un libellé :
-   * Définissez le type de composant sur **&#x200B;**&#x200B;et configurez les paramètres [Persistance](/help/data-views/component-settings/persistence.md) (**[!UICONTROL Modèle d’affectation]** et **[!UICONTROL Expiration]**) en conséquence.
+  * Définissez le type de composant sur **** et configurez les paramètres [Persistance](/help/data-views/component-settings/persistence.md) (**[!UICONTROL Modèle d’affectation]** et **[!UICONTROL Expiration]**) en conséquence.
 
 ## Pièges de la logique des canaux marketing et des campagnes
 
@@ -212,9 +196,9 @@ Cette section aborde les pièges de la logique des canaux marketing et des campa
 
 * Les canaux marketing Customer Journey Analytics sont souvent implémentés à l’aide de champs dérivés.
 
-   * Champs dérivés implémentant le regroupement du canal marketing ou de la campagne en fonction des paramètres d’URL, du référent, de la page de destination, etc.
-   * Commande suspecte : une règle fourre-tout générique apparaît avant l’application de règles plus spécifiques.
-   * Gestion incomplète de toutes les options possibles : aucune branche explicite pour **[!UICONTROL le domaine référent n’est pas défini]** ou **[!UICONTROL le paramètre de requête n’est pas défini]**.
+  * Champs dérivés implémentant le regroupement du canal marketing ou de la campagne en fonction des paramètres d’URL, du référent, de la page de destination, etc.
+  * Commande suspecte : une règle fourre-tout générique apparaît avant l’application de règles plus spécifiques.
+  * Gestion incomplète de toutes les options possibles : aucune branche explicite pour **[!UICONTROL le domaine référent n’est pas défini]** ou **[!UICONTROL le paramètre de requête n’est pas défini]**.
 
 **Diagnostic des risques : qualité des données**
 
@@ -301,8 +285,8 @@ Cette section traite de l’utilisation de la logique de style calculé dans un 
 **Diagnostic des risques : qualité des données**
 
 * Question de gouvernance et de conception : l&#39;arithmétique est peut-être mieux placée pour :
-   * Une mesure de champ dérivé (si vous souhaitez que le champ dérivé soit une mesure standard régie pour tous les utilisateurs).
-   * Une mesure calculée dans Analysis Workspace (si la mesure calculée est spécifique à une analyse).
+  * Une mesure de champ dérivé (si vous souhaitez que le champ dérivé soit une mesure standard régie pour tous les utilisateurs).
+  * Une mesure calculée dans Analysis Workspace (si la mesure calculée est spécifique à une analyse).
 
 **Recommandations**
 
@@ -316,7 +300,7 @@ Cette section traite de la surexploitation des fonctions [Suivant](/help/data-vi
 **Modèles**
 
 * Un champ dérivé utilise plusieurs fois des fonctions [Suivant ou Précédent](/help/data-views/derived-fields/derived-fields.md#next-or-previous) (ce qui est proche de la limite documentée par champ).
-* [&#x200B; Suivant ou Précédent &#x200B;](/help/data-views/derived-fields/derived-fields.md#next-or-previous) est utilisé pour implémenter une logique de persistance (par exemple : transférer une campagne vers l’avant) au lieu d’utiliser la persistance de la vue de données.
+* [ Suivant ou Précédent ](/help/data-views/derived-fields/derived-fields.md#next-or-previous) est utilisé pour implémenter une logique de persistance (par exemple : transférer une campagne vers l’avant) au lieu d’utiliser la persistance de la vue de données.
 
 **Diagnostic des risques : qualité des données, maintenance élevée**
 
@@ -340,8 +324,8 @@ Cette section aborde le fait d’ignorer le contexte au niveau de la session et 
 
 * Un champ dérivé suppose implicitement un [niveau de conteneur](/help/getting-started/cja-b2b-concepts-features.md#containers) particulier (événement, session ou personne), mais :
 
-   * Le champ dérivé ne fait aucune référence aux attributs au niveau de la session ou de la personne.
-   * Les paramètres de session de la vue de données sont en conflit avec la logique prévue.
+  * Le champ dérivé ne fait aucune référence aux attributs au niveau de la session ou de la personne.
+  * Les paramètres de session de la vue de données sont en conflit avec la logique prévue.
 
 **Diagnostic des risques : qualité des données**
 
@@ -359,7 +343,7 @@ Cette section décrit les implications liées à l’atteinte ou à l’approche
 
 >[!NOTE]
 >
->Dans la mesure du possible, réduisez la dépendance aux champs à cardinalité élevée dans les champs dérivés complexes (par exemple : utilisez des clés normalisées ou des classifications groupées) pour limiter le coût des requêtes et la probabilité d’atteindre les limites [&#x200B; opérateur ou fonction &#x200B;](/help/data-views/derived-fields/derived-fields.md#limitations).
+>Dans la mesure du possible, réduisez la dépendance aux champs à cardinalité élevée dans les champs dérivés complexes (par exemple : utilisez des clés normalisées ou des classifications groupées) pour limiter le coût des requêtes et la probabilité d’atteindre les limites [ opérateur ou fonction ](/help/data-views/derived-fields/derived-fields.md#limitations).
 
 CustomCustomer Parcours Analytics [documents](/help/data-views/derived-fields/derived-fields.md#limitations) nombre maximal de fonctions et d’opérateurs par champ dérivé, y compris les limites par type de fonction.motifs**
 
@@ -395,5 +379,5 @@ Vérifiez également la configuration de la vue de données pour chaque composan
 
 **Recommandations**
 
-* Ajustez le [&#x200B; modèle d’attribution et l’expiration &#x200B;](/help/data-views/component-settings/persistence.md) sur cette dimension pour aligner le nom et le comportement. Par exemple, une dimension de champ dérivé nommée `Original Source` doit utiliser l’attribution Première touche avec l’expiration définie sur Personne.
+* Ajustez le [ modèle d’attribution et l’expiration ](/help/data-views/component-settings/persistence.md) sur cette dimension pour aligner le nom et le comportement. Par exemple, une dimension de champ dérivé nommée `Original Source` doit utiliser l’attribution Première touche avec l’expiration définie sur Personne.
 * Ajustez les paramètres **[!UICONTROL Modèle d’affectation]** et **[!UICONTROL Expiration]** dans les paramètres [Persistance](/help/data-views/component-settings/persistence.md) de la dimension pour aligner le nom et le comportement. Par exemple, `Original Source` devez définir le **[!UICONTROL Modèle d’affectation]** sur **[!UICONTROL Original]** avec **[!UICONTROL Expiration]** défini sur **[!UICONTROL Personne]**.
