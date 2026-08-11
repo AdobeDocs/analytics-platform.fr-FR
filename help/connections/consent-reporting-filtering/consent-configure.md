@@ -4,7 +4,7 @@ description: Découvrez comment utiliser l’assistant de mise en service pour a
 solution: Customer Journey Analytics
 feature: Privacy
 role: Admin
-hold: true
+hide: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
 feature_v2:
@@ -18,14 +18,50 @@ role_v2:
 topic_v2:
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 55a5bc2160a7dc426b9436116362264ab9f90390
+source-git-commit: 7bb16378fc8813ca126cb786c5d36bf9daa0fe7d
 workflow-type: tm+mt
-source-wordcount: 770
-ht-degree: 2%
+source-wordcount: 981
+ht-degree: 14%
 
 ---
 
-# Configuration des rapports et du filtrage liés au consentement
+# Configuration des rapports et du filtrage liés au consentement {#configure-consent-reporting}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-consent-merge-policy"
+>title="Politique de fusion"
+>abstract="Les politiques de fusion combinent les données de profil de plusieurs jeux de données en profils clientèle unifiés utilisés pour la création d’audiences. Sélectionnez « Par défaut basée sur le temps » si plusieurs politiques de fusion s’affichent et que vous ne savez pas laquelle choisir. Vous pouvez également consulter votre équipe de données pour savoir quelles audiences sont associées à chaque politique de fusion."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-consent-sandbox"
+>title="Sandbox"
+>abstract="Sélectionnez le sandbox qui contient les jeux de données de profil Experience Platform appropriés. Ces jeux de données doivent contenir les données de consentement pour lesquelles vous souhaitez créer des rapports dans Analysis Workspace."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-consent-person-id"
+>title="ID de personne"
+>abstract="Sélectionnez un champ dans le schéma basé sur le modèle qui représente l’ID de personne. La sélection est limitée à la liste des champs du schéma qui sont marqués comme « Identité » et qui possèdent un espace de noms d’identité."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-consent-identity-namespace"
+>title="Utiliser l’espace de noms d’identité principal"
+>abstract="Activez cette option si vous souhaitez que Customer Journey Analytics recherche l’identité dans le mappage d’identités marqué d’un attribut primary=true et utilise cette identité comme ID de personne pour cette ligne. Cette identité est la clé primaire utilisée dans Experience Platform pour le partitionnement. <br/>Si vous laissez cette option désactivée, sélectionnez un espace de noms dans le champ Espace de noms d’identité ci-dessous. Customer Journey Analytics recherche le mappage d’identité de chaque ligne pour cette clé d’espace de noms et utilise l’identité sous cet espace de noms comme identifiant de personne pour cette ligne."
+
+<!-- markdownlint-enable MD034 -->
 
 Les administrateurs et administratrices système peuvent activer la création de rapports de consentement et, éventuellement, le filtrage de consentement pour une ou plusieurs connexions. Pour plus d’informations, voir [Présentation des rapports et du filtrage de consentement](/help/connections/consent-reporting-filtering/consent-overview.md).
 
