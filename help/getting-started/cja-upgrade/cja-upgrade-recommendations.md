@@ -170,7 +170,7 @@ Chaque étape fournit une explication générale d’un processus plus détaill�
 
    Utilisez [le modèle de fonction des canaux marketing](/help/data-views/derived-fields/derived-fields.md#marketing-channels){target="_blank"} dans les champs dérivés pour créer rapidement un champ dérivé pour les canaux marketing.
 
-1. [Comparez les données de l’ancienne mise en œuvre d’Adobe Analytics aux données de Customer Journey Analytics de la nouvelle mise en œuvre](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/use-cases/data-insights/data-validation-aa-cja) et assurez-vous de comprendre les différences et de savoir pourquoi elles existent.
+1. [Comparez les données de l’ancienne mise en œuvre d’Adobe Analytics aux données de Customer Journey Analytics de la nouvelle mise en œuvre](https://experienceleague.adobe.com/fr/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/use-cases/data-insights/data-validation-aa-cja) et assurez-vous de comprendre les différences et de savoir pourquoi elles existent.
 
 1. Importez des données historiques depuis Adobe Analytics à l’aide du connecteur source Analytics :
 
