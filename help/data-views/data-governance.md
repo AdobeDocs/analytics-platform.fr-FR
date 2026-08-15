@@ -23,10 +23,10 @@ topic_v2:
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: 1254207526535e44c848dfeed0052339fbd8d65d
+source-git-commit: 0b6dc1d738b5f1a8aa430c990f8eb24df5d95653
 workflow-type: tm+mt
-source-wordcount: 745
-ht-degree: 66%
+source-wordcount: 770
+ht-degree: 65%
 
 ---
 
@@ -95,7 +95,9 @@ Cliquez sur **[!UICONTROL Appliquer]** pour voir les politiques activées.
 
 ## Effet des politiques activées sur les vues de données
 
-Si une ou plusieurs politiques sont activées avec des libellés C1, C2, C3, C8, C9 ou C12, les composants de schéma auxquels certains libellés de données sont appliqués ne peuvent pas être ajoutés aux vues de données.
+Si une ou plusieurs politiques sont activées avec C3 ou C8, les composants de schéma auxquels certains libellés de données sont appliqués ne peuvent pas être ajoutés aux vues de données.
+
+Si une ou plusieurs politiques sont activées avec C9, tous les composants de schéma étiquetés C9 ne seront pas disponibles pour une utilisation avec les [serveurs MCP Analytics](https://developer.adobe.com/analytics-mcp/docs/).
 
 Ces composants sont grisés dans la liste du rail de gauche [!UICONTROL Champs de schéma] :
 
