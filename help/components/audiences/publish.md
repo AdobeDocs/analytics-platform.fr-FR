@@ -5,26 +5,15 @@ exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
 TQID: https://experienceleague.adobe.com/BPbSzyh6eg3QC6NcAVgo06GAISzVH2CX35Z-Q32xMbE
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
-  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
-  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
-  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: cb6c7d24-631f-46e5-9e39-3a2705f73962id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5cid: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: d2016e34b4b73c6eebb05097aa43f823c578c2b6
 workflow-type: tm+mt
-source-wordcount: 2478
-ht-degree: 98%
+source-wordcount: 2520
+ht-degree: 94%
 
 ---
 
@@ -35,7 +24,7 @@ ht-degree: 98%
 >[!CONTEXTUALHELP]
 >id="components_audiences_refreshfrequency"
 >title="Fréquence d’actualisation"
->abstract="Découvrez la fréquence à laquelle l’abonnement d’une audience est réévaluée.<br/>Les audiences uniqes ne sont évaluées qu’une seule fois."
+>abstract="Fréquence à laquelle l’adhésion d’une audience est réévaluée.<br/>Les audiences uniques sont évaluées une seule fois et ne sont pas prises en compte dans votre limite d’actualisation."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -43,8 +32,8 @@ ht-degree: 98%
 
 >[!CONTEXTUALHELP]
 >id="components_audiences_audiencelimit"
->title="Limite d’audience"
->abstract="L’actualisation des audiences est limitée en fonction de la fréquence à laquelle elles s’actualisent."
+>title="Actualiser la limite d’audience"
+>abstract="Nombre d’audiences de votre environnement configurées pour s’actualiser automatiquement à une fréquence planifiée. Les limites sont comprises entre 75 et 150, selon vos droits Customer Journey Analytics. Les actualisations uniques ne sont pas prises en compte dans cette limite."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -89,7 +78,7 @@ Lisez cette [vue d’ensemble](/help/components/audiences/audiences-overview.md)
    | Méthode de création | Détails |
    | --- | --- |
    | Depuis l’interface **[!UICONTROL Audiences publiées]** | Sélectionnez **[!UICONTROL Composants]** > **[!UICONTROL Audiences publiées]** dans le menu Customer Journey Analytics principal. L’interface Audiences s’affiche. Sélectionnez **[!UICONTROL Créer une audience]** et le [!UICONTROL créateur d’audiences] s’ouvre. |
-   | Depuis une visualisation dans Analysis Workspace | De nombreuses visualisations dans Analysis Workspace vous permettent de créer une audience à l’aide du menu contextuel. Par exemple, vous pouvez sélectionner **[!UICONTROL Créer une audience]** dans le menu contextuel d’un élément dans un [Tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) ou d’un nœud dans une [Zone de travail de parcours](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md).<p>L’utilisation de cette méthode préremplit le segment dans le créateur d’audiences avec la dimension ou l’élément de dimension que vous avez sélectionné.</p><p>Les visualisations suivantes vous permettent de créer une audience à l’aide du menu de clic droit :</p><ul><li>[Table de cohorte](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)</li><li>[Abandon](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)</li><li>[Flux](/help/analysis-workspace/visualizations/c-flow/flow.md)</li><li>[Tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)</li><li>[Zone de travail de parcours](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)</li><li>[Carte &#x200B;](/help/analysis-workspace/visualizations/map.md#create-an-audience-from-the-map-visualization)<br/>**Remarque :** cette visualisation se trouve dans la phase de test limité de la publication et peut ne pas encore être disponible dans votre environnement.</li><li>[Venn](/help/analysis-workspace/visualizations/venn.md)</li></ul><p>**Note :** les audiences ne peuvent pas inclure de mesures calculées. Si vous essayez de créer une audience qui contient une mesure calculée, la mesure calculée n’est pas incluse dans la définition de l’audience.</p> |
+   | Depuis une visualisation dans Analysis Workspace | De nombreuses visualisations dans Analysis Workspace vous permettent de créer une audience à l’aide du menu contextuel. Par exemple, vous pouvez sélectionner **[!UICONTROL Créer une audience]** dans le menu contextuel d’un élément dans un [Tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) ou d’un nœud dans une [Zone de travail de parcours](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md).<p>L’utilisation de cette méthode préremplit le segment dans le créateur d’audiences avec la dimension ou l’élément de dimension que vous avez sélectionné.</p><p>Les visualisations suivantes vous permettent de créer une audience à l’aide du menu de clic droit :</p><ul><li>[Table de cohorte](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)</li><li>[Abandon](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)</li><li>[Flux](/help/analysis-workspace/visualizations/c-flow/flow.md)</li><li>[Tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)</li><li>[Zone de travail de parcours](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)</li><li>[Carte ](/help/analysis-workspace/visualizations/map.md#create-an-audience-from-the-map-visualization)<br/>**Remarque :** cette visualisation se trouve dans la phase de test limité de la publication et peut ne pas encore être disponible dans votre environnement.</li><li>[Venn](/help/analysis-workspace/visualizations/venn.md)</li></ul><p>**Note :** les audiences ne peuvent pas inclure de mesures calculées. Si vous essayez de créer une audience qui contient une mesure calculée, la mesure calculée n’est pas incluse dans la définition de l’audience.</p> |
    | À partir de l’interface d’utilisation de création/modification de segment | Cochez la case qui indique : **[!UICONTROL Créer une audience à partir de ce segment]**. L’utilisation de cette méthode préremplit le segment. Pour plus d’informations, consultez [Créer des segments](/help/components/segments/seg-create.md). |
 
    {style="table-layout:auto"}
@@ -117,7 +106,7 @@ Configurez ces paramètres pour définir ou mettre à jour votre audience.
 | **[!UICONTROL Nom]** | Nom de l’audience. Par exemple, `Really Interested in Potential Car Buyers` |
 | **[!UICONTROL Balises]** | Toutes les balises que vous souhaitez affecter à l’audience à des fins d’organisation. Vous pouvez sélectionner une ou plusieurs balises préexistantes ou en saisir une nouvelle. |
 | **[!UICONTROL Description]** | Description de l’audience pour la différencier des autres. Par exemple, `Build an audience of really interested potential car buyers` |
-| **[!UICONTROL Fréquence d’actualisation]** | Fréquence à laquelle vous souhaitez actualiser l’audience.<p/>Vous pouvez choisir entre les options suivantes : <ul><li>Audience **[!UICONTROL ponctuelle]** : audience (par défaut) qui n’a pas besoin d’être actualisée. Par exemple, cette option peut s’avérer utile pour des campagnes ponctuelles spécifiques.<br/>Vous devez spécifier une **[!UICONTROL Période ponctuelle]**. Vous pouvez utiliser ![Calendrier](/help/assets/icons/Calendar.svg) pour saisir une période.</li><li>Audience actualisable. Vous avez les choix suivants :<ul><li>**[!UICONTROL Toutes les 4 heures]** : audience qui s’actualise toutes les 4 heures.</li><li>**[!UICONTROL Quotidien]** : audience qui s’actualise quotidiennement.</li><li>**[!UICONTROL Hebdomadaire]** : audience qui s’actualise toutes les semaines.</li><li>**[!UICONTROL Mensuel]** : audience qui s’actualise tous les mois.</li></ul></li>Pour actualiser les audiences, vous devez indiquer les informations suivantes :<ul><li>**[!UICONTROL Actualiser l’intervalle de recherche en amont]**. Définissez le nombre de jours de recherche en amont à partir desquels une audience est évaluée. Vous pouvez effectuer un choix parmi des options ou définir une heure personnalisée. La durée maximale est de 90 jours.</li><li>**[!UICONTROL Date d’expiration]** : permet de définir à quel moment l’audience cesse d’être actualisée. Vous pouvez utiliser ![Calendrier](/help/assets/icons/Calendar.svg) pour sélectionner une date. La valeur par défaut est d’un an à compter de la date de création. Les audiences arrivant à expiration sont traitées de la même manière que les rapports planifiés arrivant à expiration. L’administrateur ou l’administratrice reçoit un e-mail un mois avant l’expiration de l’audience.</li></ul> Notez qu’il existe une limite de 75 à 150 actualisations d’audience, selon vos droits Customer Journey Analytics.</li></ul> |
+| **[!UICONTROL Fréquence d’actualisation]** | Fréquence à laquelle vous souhaitez actualiser l’audience.<p/><p>Vous pouvez configurer une actualisation planifiée pour un nombre limité d’audiences (entre 75 et 150), en fonction de vos droits Customer Journey Analytics. </p><p>Vous pouvez choisir parmi les options suivantes :</p><ul><li>Audience **[!UICONTROL ponctuelle]** : audience (par défaut) qui n’a pas besoin d’être actualisée. Par exemple, cette option peut s’avérer utile pour des campagnes ponctuelles spécifiques.<br/>Vous devez spécifier une **[!UICONTROL Période ponctuelle]**. Vous pouvez utiliser ![Calendrier](/help/assets/icons/Calendar.svg) pour saisir une période.</li><li>Audience actualisable. Vous pouvez choisir parmi les options d’actualisation planifiée suivantes :<ul><li>**[!UICONTROL Toutes les 4 heures]** : audience qui s’actualise toutes les 4 heures.</li><li>**[!UICONTROL Quotidien]** : audience qui s’actualise quotidiennement.</li><li>**[!UICONTROL Hebdomadaire]** : audience qui s’actualise toutes les semaines.</li><li>**[!UICONTROL Mensuel]** : audience qui s’actualise tous les mois.</li></ul></li>Pour actualiser les audiences, vous devez indiquer les informations suivantes :<ul><li>**[!UICONTROL Actualiser l’intervalle de recherche en amont]**. Définissez le nombre de jours de recherche en amont à partir desquels une audience est évaluée. Vous pouvez effectuer un choix parmi des options ou définir une heure personnalisée. La durée maximale est de 90 jours.</li><li>**[!UICONTROL Date d’expiration]** : permet de définir à quel moment l’audience cesse d’être actualisée. Vous pouvez utiliser ![Calendrier](/help/assets/icons/Calendar.svg) pour sélectionner une date. La valeur par défaut est d’un an à compter de la date de création. Les audiences arrivant à expiration sont traitées de la même manière que les rapports planifiés arrivant à expiration. L’administrateur ou l’administratrice reçoit un e-mail un mois avant l’expiration de l’audience.</li></ul></ul> |
 | **[!UICONTROL Filtrer]** | Les filtres sont la principale entrée de l’audience. Effectuez un glisser-déposer d’un ou plusieurs segments depuis le panneau de gauche ![Segmentation](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segment]** vers la zone Segment. Vous pouvez utiliser ![Rechercher](/help/assets/icons/Search.svg) [!UICONTROL *Rechercher des segments*] pour rechercher des segments. Vous pouvez ajouter jusquʼà 20 segments. Les segments peuvent être liés avec des opérateurs **[!UICONTROL Et]** ou **[!UICONTROL Ou]**.<p>Lorsque vous créez une audience à partir d’une visualisation dans Analysis Workspace (un tableau à structure libre ou une zone de travail de parcours, par exemple), tous les segments appliqués au panneau ou à la colonne sont conservés. Vous pouvez supprimer tous les segments appliqués automatiquement.</p> |
 | **[!UICONTROL Prévisualisation des données]** | Sélectionnez ![Infos](/help/assets/icons/Info.svg) pour afficher ou masquer la [Prévisualisation des données](#data-preview) pour la période sélectionnée. |
 
