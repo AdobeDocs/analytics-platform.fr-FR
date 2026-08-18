@@ -6,27 +6,11 @@ role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
 autotag-review: '2026-05-19T09:53:18.849Z'
 TQID: 'https://experienceleague.adobe.com/wZ8vtE4BFc1ahBKdblSEAXBofZBPObbSJi4bA9MtxPY'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-  - id: c18d9e03-ac7d-4811-9c92-3e92ddc70ade
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bcc5edb5-84c3-4940-9f84-ed88b6c16274id: c18d9e03-ac7d-4811-9c92-3e92ddc70adeid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d00e9f03-e50b-4162-b143-0c0817c937c2id: d3cdead0-685a-4489-9250-4bb709942f66id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 89f0a1e54662c59d474b1fba28eb8420612e9243
 workflow-type: tm+mt
 source-wordcount: 21140
@@ -263,7 +247,7 @@ Pour accéder à tous les modèles préconfigurés disponibles, procédez comme 
 
 Les modèles suivants sont disponibles :
 
-&#x200B;| Nom du modèle | Pourquoi utiliser ce modèle <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+| Nom du modèle | Pourquoi utiliser ce modèle <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
 | [!UICONTROL **Tutoriel de formation**] | Découvrir la terminologie et les étapes courantes d’Analysis Workspace pour créer votre première analyse |
 | [!UICONTROL **Pages**] | <!--duplicated in Engagement section--> Identifiez les pages les plus populaires et les moins populaires. <p>**Cela peut vous aider** à mieux comprendre votre audience et le type d’informations qui l’intéresse le plus.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme ajuster les métadonnées de page afin d’améliorer la visibilité sur les pages moins consultées ou passer du temps à améliorer le contenu de vos pages les plus consultées.</p><p>Ce modèle utilise la dimension Page et la mesure Pages vues.</p> |
@@ -411,7 +395,7 @@ Les modèles suivants sont disponibles :
 
 Les modèles suivants sont disponibles :
 
-&#x200B;| Nom du modèle | Pourquoi utiliser ce modèle <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+| Nom du modèle | Pourquoi utiliser ce modèle <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
 | [!UICONTROL **Mesures clés**] | <!--duplicated in Most popular section--> Affichez un rapport qui affiche côte à côte les mesures Pages vues, Visites et Visiteurs et visiteuses uniques. Les données sont affichées sur une période donnée et comparées à des périodes antérieures. <p>**Cela peut vous aider** à comparer ces mesures importantes pour obtenir une image plus complète du nombre de personnes uniques sur le site, du nombre de visites de pages et du nombre de sessions.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme évaluer le nombre moyen de pages consultées par chaque personne lors de sa visite sur le site au cours d’une semaine donnée ou d’un mois donné, et la manière dont cela a changé à certains moments de l’année ou avant et après l’exécution des campagnes marketing. </p><p>Ce modèle utilise la dimension Jour, la mesure Pages vues, la mesure Visites et la mesure Visiteurs et visiteuses uniques.</p> |
 | [!UICONTROL **Pages vues**] | <!--duplicated in Most popular section-->Affichez le nombre total de pages vues. Les données sont affichées sur une période donnée et comparées à des périodes antérieures. <p>**Cela peut vous aider** à mieux comprendre comment le trafic sur votre site peut augmenter ou diminuer au fil du temps.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme évaluer l’efficacité d’une campagne marketing récemment lancée en comparant le trafic du site avant et après le lancement de la campagne. Vous pouvez également comparer le trafic pendant les fêtes d’une année à l’autre.</p><p>Ce modèle utilise la dimension Jour et la mesure Pages vues.</p> |
@@ -489,7 +473,7 @@ Les modèles suivants sont disponibles :
 
 Les modèles suivants sont disponibles :
 
-&#x200B;| Nom du modèle | Pourquoi utiliser ce modèle <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+| Nom du modèle | Pourquoi utiliser ce modèle <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
 | [!UICONTROL **Entonnoir de conversion de produit**] | Affichez la conversion de produit dans une visualisation en entonnoir qui affiche les paniers, les passages en caisse et les commandes. Vous pouvez également afficher les pourcentages de conversion, les moyennes de chiffres d’affaires, les moyennes d’unités et les moyennes de commandes.<p>**Cela peut vous aider** à mieux comprendre la progression et l’abandon des personnes au cours du processus de conversion.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre de tâches, comme améliorer votre site web pour faciliter un processus de passage en caisse plus fluide.</p> |
 | **Produits** | Affichez les produits qui stimulent les mesures clés, tels que les articles les plus vendus ou les plus consultés. <p>**Cela peut vous aider** à mieux comprendre les produits les plus performants.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre de tâches, telles que l’augmentation du financement des produits performants et la diminution du financement des produits moins performants.</p><p>Ce modèle utilise la mesure Commandes et la dimension Produit. |
@@ -675,7 +659,7 @@ Les modèles suivants sont disponibles :
 
 Les modèles suivants sont disponibles :
 
-&#x200B;| Nom du modèle | Pourquoi utiliser ce modèle <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+| Nom du modèle | Pourquoi utiliser ce modèle <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
 | **[!UICONTROL Présentation des audiences]** | Permet d’aɑficher les audiences représentées parmi les personnes qui visitent votre site.<p>**Cela peut vous aider** entre autres à mieux comprendre les informations générales sur les audiences, leur origine (RTCDP, Customer Journey Analytics, etc.), le chevauchement d’audiences.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme utiliser les données afin de vous concentrer sur les efforts marketing pour ces audiences spécifiques, ou créer des expériences personnalisées pour les clientes et clients qui appartiennent à plusieurs audiences.</p><p>Ce modèle utilise les dimensions Nom de l’audience, Origine de l’audience, Nom de l’audience sortie et Origine de l’audience sortie .</p><p>Pour plus d’informations, voir [Analyse des audiences Experience Platform dans Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).</p> |
 | [!UICONTROL **Visiteurs et visiteuses nouveaux et récurrents**] | Affichez une comparaison des nouveaux visiteurs et visiteuses par rapport aux visiteurs et visiteuses réguliers. <p>**Cela peut vous aider** à mieux comprendre l’efficacité de votre site pour fidéliser la clientèle ou le taux d’acquisition de nouveaux clients et clientes.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre de tâches, comme proposer des incitations pour les futurs achats aux nouveaux visiteurs et visiteuses afin de les encourager à revenir.</p><!-- This template uses the --> |
@@ -795,7 +779,7 @@ Les modèles suivants sont disponibles :
 
 Les modèles suivants sont disponibles :
 
-&#x200B;| Nom du modèle | Pourquoi utiliser ce modèle <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+| Nom du modèle | Pourquoi utiliser ce modèle <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
 | [!UICONTROL **Canaux marketing**] > [!UICONTROL **Rapport de vue d’ensemble de canal**] | Lors de l’utilisation de l’attribution personnalisée, ce modèle indique comment les personnes arrivent sur votre site.<p>**Cela peut vous aider** à mieux comprendre les canaux marketing les plus efficaces.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, par exemple investir plus massivement dans des canaux marketing efficaces et désinvestir des canaux marketing moins efficaces.</p><p>Ce modèle utilise la dimension ID (variables/marketingchannel) et la mesure Chiffre d’affaires.</p> |
 | [!UICONTROL **Canaux marketing**] > [!UICONTROL **Canal Première touche**] | Affichez le premier canal marketing auquel une personne correspond au cours de la période d’engagement de cette personne (30 jours par défaut). <p>**Cela peut vous aider** à mieux comprendre quels canaux marketing génèrent le trafic initial vers votre site.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme concentrer les efforts marketing dans les domaines les plus efficaces.</p><p>Ce modèle utilise la dimension Canal Première touche.</p> |
@@ -865,7 +849,7 @@ Les modèles suivants sont disponibles :
 
 Les modèles suivants sont disponibles :
 
-&#x200B;| Nom du modèle | Pourquoi utiliser ce modèle <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+| Nom du modèle | Pourquoi utiliser ce modèle <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
 | [!UICONTROL **Écrans de l’application mobile**] | Affichez le nombre d’événements, de sessions et de personnes associés à chaque écran sur l’application mobile.<p>**Cela peut vous aider** à mieux comprendre quels écrans de votre site sont les plus appréciés.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre de tâches, comme améliorer le contenu des écrans les plus appréciés.</p><p>Ce modèle utilise les mesures Événements, Sessions, Personnes et Pourcentage de modification. Il utilise également la dimension Titre de page.</p> |
 | **Actions de l’application mobile** | Affichez les actions que les personnes effectuent sur votre application mobile. <p>**Cela peut vous aider** à mieux comprendre comment les personnes utilisent votre application et le parti qu’elles en tirent.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre de tâches, comme développer des fonctionnalités qui complètent ou améliorent celles qui sont les plus appréciées.</p><p>Ce modèle utilise les mesures Événements, Sessions, Personnes et Pourcentage de modification. |
@@ -901,7 +885,7 @@ Les modèles suivants sont disponibles :
 
 Les modèles suivants sont disponibles :
 
-&#x200B;| Nom du modèle | Pourquoi utiliser ce modèle <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+| Nom du modèle | Pourquoi utiliser ce modèle <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
 | [!UICONTROL **Opérateur de téléphonie mobile**] | Affichez la société de télécommunications qui fournit une connexion réseau cellulaire aux appareils mobiles que les personnes utilisent pour accéder à votre site.<p>**Cela peut vous aider** à mieux comprendre les opérateurs de téléphonie mobile les plus appréciés parmi votre base d’utilisateurs et d’utilisatrices.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme personnaliser la diffusion de contenu en fonction des fonctionnalités réseau de différents opérateurs afin d’assurer une expérience client fluide.</p><p>Ce modèle utilise la dimension Opérateur de téléphonie mobile.</p> |
 | **Appareils** | Affichez la marque et le modèle des appareils mobiles que les personnes utilisent pour accéder à votre site.<p>**Cela peut vous aider** à mieux comprendre les périphériques mobiles les plus populaires parmi votre base d’utilisateurs et d’utilisatrices.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme optimiser le rendu de votre site pour les appareils mobiles les plus courants.</p><p>Ce modèle utilise la dimension Nom de l’appareil mobile.</p> |
@@ -965,7 +949,7 @@ Les modèles suivants sont disponibles :
 
 Les modèles suivants sont disponibles :
 
-&#x200B;| Nom du modèle | Pourquoi utiliser ce modèle <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+| Nom du modèle | Pourquoi utiliser ce modèle <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
 | [!UICONTROL **Minute de l’heure**] | Affichez le nombre d’événements, de sessions et de personnes sur votre site, par minute. Si, par exemple, un rapport porte sur une seule journée, la première minute de chaque heure de la journée est regroupée dans le même élément de dimension.<p>**Cela peut vous aider** à mieux comprendre les tendances à un niveau granulaire.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme optimiser les ressources pour les périodes de pointe, à la minute près.</p><p>Ce modèle utilise la dimension Minute de l’heure.</p> |
 | **Heure de la journée** | Affichez les événements, sessions et personnes sur votre site, par heure de la journée. Par exemple, si un rapport s’étend du 1er au 7 janvier, la première heure de chaque jour est regroupée dans le même élément de dimension.<p>**Cela peut vous aider** à mieux comprendre le moment de la journée où votre site est le plus souvent et le moins souvent visité.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme affecter plus de ressources informatiques à votre site pendant les pics de trafic.</p><p>Ce modèle utilise la dimension Heure de la journée.</p> |
@@ -1005,7 +989,7 @@ Les modèles suivants sont disponibles :
 
 Les modèles suivants sont disponibles :
 
-&#x200B;| Nom du modèle | Pourquoi utiliser ce modèle <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+| Nom du modèle | Pourquoi utiliser ce modèle <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
 | [!UICONTROL **Vue d’ensemble multicanaux**] | Affichez la répartition du trafic sur plusieurs canaux. <p>**Cela peut vous aider** à mieux comprendre les canaux qui génèrent le plus de trafic et d’engagement. </p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre de tâches, comme concentrer les efforts de marketing sur les canaux qui permettent d’obtenir le meilleur retour sur investissement.</p><p>Ce modèle utilise les mesures Utilisateurs et utilisatrices, Session et Événement.</p> |
 | **Web et application** | Affichez le trafic web et le trafic mobile ensemble.<p>**Cela peut vous aider** à mieux comprendre la répartition du trafic web et mobile vers votre site.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme consacrer plus de ressources à l’expérience de votre application mobile lorsqu’elle atteint un certain niveau de trafic.</p><p>Ce modèle utilise les mesures Sessions web, Sessions d’application mobile et Sessions cross-canal web et application.</p> |
@@ -1042,7 +1026,7 @@ Les modèles suivants sont disponibles :
 
 Les modèles suivants sont disponibles :
 
-&#x200B;| Nom du modèle | Pourquoi utiliser ce modèle <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+| Nom du modèle | Pourquoi utiliser ce modèle <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
 | [!UICONTROL **Tableau de bord du centre dʼappel**] | Affichez les données du centre d’appel, notamment pourquoi les clientes et clients ont appelé et combien de fois. <p>**Cela peut vous aider** à mieux comprendre où les clientes et clients rencontrent des problèmes et où les ressources du centre d’appel sont dépensées.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre de tâches, comme résoudre les problèmes de produit qui entraînent une augmentation du trafic du centre d’appel, ce qui améliore finalement la rentabilité du produit.</p> |
 | **Point de vente** | Affichez les données sur les transactions de point de vente (POS), y compris le chiffre d’affaires généré, les commandes passées et les unités vendues. Ce modèle inclut également des visualisations qui affichent des informations sur les principaux magasins, les principaux produits et les principales catégories de produits, ainsi que sur les ventes en ligne et hors ligne. <p>**Cela peut vous aider** à mieux comprendre quels sont vos produits les plus vendus dans les magasins et en ligne.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre de tâches, comme affecter plus de ressources marketing à vos produits et canaux dont les performances sont les meilleures.</p><p>Ce modèle utilise les mesures Utilisateurs et utilisatrices, Chiffre d’affaires et Commandes.</p> |
@@ -1081,7 +1065,7 @@ Les modèles suivants sont disponibles :
 
 Les modèles suivants sont disponibles :
 
-&#x200B;| Nom du modèle | Pourquoi utiliser ce modèle <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+| Nom du modèle | Pourquoi utiliser ce modèle <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
 | [!UICONTROL **Campagnes Journey Optimizer**] | Affichez les mesures essentielles pour vos campagnes Journey Optimizer, notamment les campagnes par e-mail, les expérimentations, les messages in-app, les SMS, etc.<p>**Cela peut vous aider** à mieux comprendre les détails tels que le nombre de clics et le nombre de messages diffusés, ce qui vous offre des informations complètes sur l’efficacité et le niveau d’engagement de votre campagne.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme ajuster vos campagnes en fonction du niveau d’engagement de votre audience cible.</p> |
 | **Parcours Journey Optimizer** | Affichez les mesures essentielles pour vos parcours Journey Optimizer, notamment les parcours par e-mail, les expérimentations, les messages in-app, les SMS, etc.<p>**Cela peut vous aider** à mieux comprendre les détails tels que le nombre de clics et le nombre de messages diffusés, ce qui vous offre des informations complètes sur l’efficacité et le niveau d’engagement de votre parcours.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme ajuster vos campagnes en fonction du niveau d’engagement de votre audience cible.</p> |
@@ -1101,9 +1085,9 @@ Les modèles suivants sont disponibles :
 >title="Suivez le cycle de vie complet des demandes de réunion B2B. Surveillez les taux de conversion, les performances des consultantes et consultants, et identifiez vos canaux de génération de leads les plus efficaces."
 >abstract="**Cela peut vous aider** à suivre les taux de conversion des réunions, à identifier les membres de l’équipe les plus performants, à comprendre les tendances saisonnières du comportement de réservation et à identifier les pages qui génèrent les demandes de réunion les plus importantes.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme optimiser votre processus de demande de réunion, redistribuer les ressources vers des pages à conversion élevée, développer une formation ciblée pour les consultantes et consultants ayant des taux de réservation plus faibles, ou mettre en œuvre de nouvelles stratégies pour réduire les réunions manquées."
 
-&#x200B;| Nom du modèle | Pourquoi utiliser ce modèle <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+| Nom du modèle | Pourquoi utiliser ce modèle <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
-| Présentation de [!UICONTROL **&#x200B;**] | Analysez l’interaction clientèle à travers les schémas de conversation, les commentaires des utilisateurs et utilisatrices, et l’efficacité de vos recommandations. <p>**Cela peut vous aider** à identifier les schémas d’engagement, à évaluer la qualité de la conversation, à suivre les tendances de satisfaction client et à mesurer l’efficacité des recommandations de liens.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme affiner les réponses de votre agent IA, développer du contenu ciblé pour les problèmes fréquents, améliorer les algorithmes de recommandation ou créer des parcours spécialisés pour différents segments d’utilisateurs et d’utilisatrices.</p> |
+| Présentation de [!UICONTROL ****] | Analysez l’interaction clientèle à travers les schémas de conversation, les commentaires des utilisateurs et utilisatrices, et l’efficacité de vos recommandations. <p>**Cela peut vous aider** à identifier les schémas d’engagement, à évaluer la qualité de la conversation, à suivre les tendances de satisfaction client et à mesurer l’efficacité des recommandations de liens.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme affiner les réponses de votre agent IA, développer du contenu ciblé pour les problèmes fréquents, améliorer les algorithmes de recommandation ou créer des parcours spécialisés pour différents segments d’utilisateurs et d’utilisatrices.</p> |
 | **Réunions B2B** | Suivez le cycle de vie complet des demandes de réunion B2B. Surveillez les taux de conversion, évaluez les performances de réservation des consultants et identifiez vos canaux de génération de leads les plus efficaces. <p>**Cela peut vous aider** à suivre les taux de conversion des réunions, à identifier les membres de l’équipe les plus performants, à comprendre les tendances saisonnières du comportement de réservation et à identifier les URL de pages qui génèrent les demandes de réunion les plus importantes. </p><p>**En fonction de ce que vous avez appris** vous pouvez effectuer un certain nombre de tâches, comme optimiser votre processus de demande de réunion, redistribuer les ressources vers des URL de page à conversion élevée, développer une formation ciblée pour les consultants ayant des taux de réservation plus faibles, ou mettre en œuvre de nouvelles stratégies pour réduire les réunions manquées.</p> |
 
 
@@ -1131,7 +1115,7 @@ Les modèles suivants sont disponibles :
 
 Les modèles suivants sont disponibles :
 
-&#x200B;| Nom du modèle | Pourquoi utiliser ce modèle <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+| Nom du modèle | Pourquoi utiliser ce modèle <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
 | [!UICONTROL **Vue d’ensemble de l’engagement des comptes B2B**] | Découvrez l’activité de vos comptes par rapport aux événements, aux personnes et aux opportunités.<p>**Cela peut vous aider** à mieux comprendre si l’engagement au niveau du compte est à la hausse ou à la baisse, à comparer l’activité entre les comptes et à décider où concentrer les efforts de fidélisation ou d’acquisition.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme vous recentrer sur les comptes qui sont moins engagés mais qui nécessitent davantage d’attention en raison de leur importance.</p> |
 | [!UICONTROL **Vue d’ensemble de l’engagement de l’opportunité B2B**] | Suivez l’engagement au niveau des opportunités et retrouvez les offres qui gagnent en intérêt ou s’essoufflent.<p>**Cela peut vous aider** à prévoir plus précisément la progression des offres et à cibler l’activation là où l’engagement atteint des pics ou se bloque.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme déployer des efforts supplémentaires sur les transactions qui sont presque conclues et rechercher les raisons pour lesquelles d’autres transactions perdent en intérêt.</p> |
@@ -1142,7 +1126,7 @@ Les modèles suivants sont disponibles :
 
 Les modèles suivants sont disponibles :
 
-&#x200B;| Nom du modèle | Pourquoi utiliser ce modèle <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+| Nom du modèle | Pourquoi utiliser ce modèle <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
 | [!UICONTROL **Informations sur le modèle incrémentiel de**] | Affichez les informations des modèles sélectionnés générés par Mix Modeler.<p>**Cela peut vous aider** à mieux comprendre les informations incrémentielles des modèles générés dans Mix Modeler. <p>**Grâce à ces informations**, vous pourrez :<ul><li>visualiser et quantifier l’impact des activités marketing de votre organisation ;</li><li>identifier les canaux les plus performants ;</li><li>identifier les canaux qui peuvent nécessiter une optimisation.</li></ul></p> |
 
