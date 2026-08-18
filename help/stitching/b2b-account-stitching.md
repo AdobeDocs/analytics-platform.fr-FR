@@ -20,9 +20,9 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 6e2c1271de0e1ea82820c108eec08ec815d776f3
+source-git-commit: a4ff89823bf1e4e4aa6d299b74567ed8cb486d06
 workflow-type: tm+mt
-source-wordcount: 1921
+source-wordcount: 1924
 ht-degree: 13%
 
 ---
@@ -51,7 +51,7 @@ Pour illustrer le fonctionnement de l’assemblage de comptes B2B, le jeu de don
 Dans Customer Journey Analytics B2B edition, les événements sans ID de compte dans cet exemple de jeu de données d’événement non assemblé sont ignorés et ne sont pas ingérés (![DeleteOutline](/help/assets/icons/DeleteOutline.svg)).
 
 | Action | Date et heure | Identifiant persistant | ID de compte | ID de personne | Type d’événement |
-|:---:|--|--|---|---|---|
+|:---:|--:|--|---|---|---|
 | ![DataAdd](/help/assets/icons/DataAdd.svg) | 1/3/25 | 1234 | Adobe | matt@adobe.com | Page view |
 | ![FilterDelete](/help/assets/icons/DeleteOutline.svg) | 1/3/25 | 5678 |  | | |
 | ![DataAdd](/help/assets/icons/DataAdd.svg) | 3/4/25 | 9012 | Ubiquité | cory@sky.com |  |
@@ -212,7 +212,7 @@ Vous devez d’abord activer et configurer l’assemblage des comptes B2B au niv
       | **[!UICONTROL Jeu de données Personne à compte]** | ![Obligatoire](/help/assets/icons/Required.svg) | Sélectionnez la recherche (jeu de données d’enregistrement ou de série non temporelle) qui mappe les personnes aux comptes. |
       | **[!UICONTROL ID de personne]** | ![Obligatoire](/help/assets/icons/Required.svg) | Sélectionnez le champ du jeu de données contenant l’identifiant de la personne. Ce champ doit être marqué comme une identité et ne peut pas être identique au champ **[!UICONTROL ID de compte]** ou **[!UICONTROL Heure de début]**. |
       | **[!UICONTROL ID de compte]** | ![Obligatoire](/help/assets/icons/Required.svg) | Sélectionnez le champ du jeu de données contenant l’identifiant de compte. Ce champ ne peut pas être identique au champ **[!UICONTROL ID de personne]** ou **[!UICONTROL Heure de début]**. |
-      | **Heure de création du mapping** | | Si vous le souhaitez, sélectionnez le champ qui représente la date et l’heure de création du mappage personne-compte. Utile dans les scénarios où une personne change plusieurs comptes au fil du temps.<br/><br/>**Exemple** (lorsque le champ **update_date** est sélectionné) :<table><thead><tr><th>update_date</th><th>Personne</th><th>account</th></tr></thead><tbody><tr><td>20260401</td><td>a@b.com</td><td>Apple</td></tr><tr><td>20260501</td><td>a@b.com</td><td>Adobe</td></tr></tbody></table><ul><li>Pour tous les événements dont la date et l’heure se trouvent dans le champ **[!UICONTROL update_date]** avant le 1er mai 2026 : a@b.com est mappé à Apple.</li><li>Pour tous les événements dont la date et l’heure figurent dans le champ **[!UICONTROL update_date]** à compter du 1er mai 2026 : a@b.com est mappé à Adobe.</li></ul>Lorsqu’aucune heure de mappage n’est spécifiée, le premier compte lexicographique est utilisé pour mapper . Ce même algorithme est également utilisé lorsque deux noms de compte différents ont exactement la même valeur **[!UICONTROL update_date]** et qu’une heure de création de mappage est spécifiée. |
+      | **Heure de création du mapping** | | Si vous le souhaitez, sélectionnez le champ qui représente la date et l’heure de création du mappage personne-compte. Utile dans les scénarios où une personne change plusieurs comptes au fil du temps.<br/><br/>**Exemple** (lorsque le champ **update_date** est sélectionné) :<table><thead><tr><th>update_date</th><th>Personne</th><th>account</th></tr></thead><tbody><tr><td>20260401</td><td>a@b.com</td><td>Apple</td></tr><tr><td>20260501</td><td>a@b.com</td><td>Adobe</td></tr></tbody></table><ul><li>Pour tous les événements dont la date et l’heure se trouvent dans le champ **[!UICONTROL update_date]** avant le 1er mai 2026 : a@b.com est mappé à Apple.</li><li>Pour tous les événements dont la date et l’heure figurent dans le champ **[!UICONTROL update_date]** à compter du 1er mai 2026 : a@b.com est mappé à Adobe.</li></ul>Lorsqu&#39;aucune heure de mappage n&#39;est spécifiée, le premier compte lexicographique est utilisé. Ce même algorithme est également utilisé lorsque deux noms de compte différents ont exactement la même valeur **[!UICONTROL update_date]** et qu’une heure de création de mappage est spécifiée. |
 
       >[!NOTE]
       >
@@ -278,7 +278,7 @@ L’assemblage des comptes dérive la carte des identités de votre [jeu de donn
 | Relecture | Fréquence | Fenêtre Données |
 |---|---|---|
 | Court terme | Hebdomadaire | 7 derniers jours |
-| À long terme | Mensuel | 3 derniers mois |
+| À long terme | Mensuel | 3 derniers mois (package Prime)<br/>6 derniers mois (package Ultimate) |
 
 ## Confidentialité et hygiène des données
 
