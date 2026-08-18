@@ -7,28 +7,15 @@ role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
 autotag-review: '2026-05-19T08:54:42.845Z'
 TQID: 'https://experienceleague.adobe.com/kEqjocKd5pNypjQlF70HeF1bKuoG9Qi-AT6nJiIwuV0'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c18d9e03-ac7d-4811-9c92-3e92ddc70ade
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 6af3e9063dc192814c888e786ca61ff1703aedf5
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ad5685a0-8296-4a0c-814c-658c10b4af12
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c18d9e03-ac7d-4811-9c92-3e92ddc70adeid: d00e9f03-e50b-4162-b143-0c0817c937c2id: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 6c137d20d25cff6fe4630dedb33cfa8b88c121aa
 workflow-type: tm+mt
-source-wordcount: 4177
-ht-degree: 65%
+source-wordcount: 4186
+ht-degree: 64%
 
 ---
 
@@ -84,12 +71,12 @@ L’assistant de configuration guidé se compose de quatre sections ([Détails](
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_details_button"
 >title="Détails"
->abstract="Fournissez le nom de la connexion. Les sections **[!UICONTROL Vue de données]**, **[!UICONTROL Capture et définition d’expérience]** et **[!UICONTROL Collecte de données]** permettent de fournir plus de détails pour configurer correctement Content Analytics."
+>abstract="Fournissez le nom de la connexion. Attribuez un nom à la configuration et sélectionnez le sandbox qui contient les données d’analyse de contenu que vous souhaitez analyser."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_details_name_header"
 >title="Détails"
->abstract="Ce guide définit les exigences nécessaires à la configuration de l’analyse du contenu. Attribuez un nom à cette configuration."
+>abstract="Ce guide définit les exigences nécessaires à la configuration de l’analyse du contenu. Attribuez un nom à cette configuration et sélectionnez le sandbox contenant les données d’analyse de contenu à analyser."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_connection_boldheader"
@@ -297,17 +284,17 @@ Pour configurer la collecte de données :
 
 * Utilisez une propriété de balises mobiles existante ou créez une propriété de balises mobiles.
 
-   * Pour utiliser une propriété de balises mobiles existante, procédez comme suit :
+  * Pour utiliser une propriété de balises mobiles existante, procédez comme suit :
 
-      1. Sélectionnez **[!UICONTROL Choisir existant]**.
-      2. Sélectionnez une propriété existante dans le menu déroulant **[!UICONTROL Propriété Balises]**. Vous pouvez commencer à saisir pour rechercher et limiter les options disponibles. Vous ne pouvez pas sélectionner une propriété Balises qu’une autre configuration Content Analytics implémentée utilise déjà.
+    1. Sélectionnez **[!UICONTROL Choisir existant]**.
+    2. Sélectionnez une propriété existante dans le menu déroulant **[!UICONTROL Propriété Balises]**. Vous pouvez commencer à saisir pour rechercher et limiter les options disponibles. Vous ne pouvez pas sélectionner une propriété Balises qu’une autre configuration Content Analytics implémentée utilise déjà.
 
 
-   * Pour créer une propriété de balises mobile, procédez comme suit :
+  * Pour créer une propriété de balises mobile, procédez comme suit :
 
-      1. Sélectionnez **[!UICONTROL Créer]**.
-      1. Spécifiez un **[!UICONTROL Nom de balise]**, par exemple `ACA Test for Documentation`.
-      1. Spécifiez des **[!UICONTROL Domaines]**, par exemple `example.com`.
+    1. Sélectionnez **[!UICONTROL Créer]**.
+    1. Spécifiez un **[!UICONTROL Nom de balise]**, par exemple `ACA Test for Documentation`.
+    1. Spécifiez des **[!UICONTROL Domaines]**, par exemple `example.com`.
 
 * Indiquez quels emplacements d’expérience doivent être exclus lors de la collecte de données pour Content Analytics. Veillez à exclure les emplacements d’expérience personnellement identifiables.
 
@@ -489,8 +476,8 @@ Pour modifier des expériences existantes ou nouvelles dans une configuration im
 
 * Sélectionnez le bouton (bascule) **[!UICONTROL Inclure des expériences]** pour activer ou désactiver les éléments suivants :
 
-   * Le processus générant des attributs d’expérience à partir des données d’événement Content Analytics
-   * Modèle de rapport dans Customer Journey Analytics.
+  * Le processus générant des attributs d’expérience à partir des données d’événement Content Analytics
+  * Modèle de rapport dans Customer Journey Analytics.
 
 * Sélectionnez ![Modifier](/help/assets/icons/Edit.svg) **[!UICONTROL Modifier]** pour modifier davantage la configuration de la collecte de données pour les expériences dans Content Analytics. Vous pouvez modifier les paramètres de l’[extension Adobe Content Analytics](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) dans la propriété Balise, associée à la configuration sélectionnée.
 
@@ -502,19 +489,19 @@ Pour configurer la collecte de données :
 
 * Utilisez une propriété de balises web existante ou créez une propriété de balises web.
 
-   * Pour utiliser une propriété de balises web existante, procédez comme suit :
+  * Pour utiliser une propriété de balises web existante, procédez comme suit :
 
-      1. Sélectionnez **[!UICONTROL Choisir existant]**.
-      2. Sélectionnez une propriété existante dans le menu déroulant **[!UICONTROL Propriété Balises]**. Vous pouvez commencer à saisir pour rechercher et limiter les options disponibles. Vous ne pouvez pas sélectionner une propriété Balises qu’une autre configuration Content Analytics implémentée utilise déjà.
+    1. Sélectionnez **[!UICONTROL Choisir existant]**.
+    2. Sélectionnez une propriété existante dans le menu déroulant **[!UICONTROL Propriété Balises]**. Vous pouvez commencer à saisir pour rechercher et limiter les options disponibles. Vous ne pouvez pas sélectionner une propriété Balises qu’une autre configuration Content Analytics implémentée utilise déjà.
 
 
-   * Pour créer une propriété Balises web, procédez comme suit :
+  * Pour créer une propriété Balises web, procédez comme suit :
 
-      1. Sélectionnez **[!UICONTROL Créer]**.
-      1. Spécifiez un **[!UICONTROL Nom de balise]**, par exemple `ACA Test for Documentation`.
-      1. Spécifiez des **[!UICONTROL Domaines]**, par exemple `example.com`.
+    1. Sélectionnez **[!UICONTROL Créer]**.
+    1. Spécifiez un **[!UICONTROL Nom de balise]**, par exemple `ACA Test for Documentation`.
+    1. Spécifiez des **[!UICONTROL Domaines]**, par exemple `example.com`.
 
-     Utilisez une nouvelle propriété Tags si vous souhaitez créer une implémentation indépendante des balises pour le canal web à l’aide de la bibliothèque JavaScript Content Analytics [&#128279;](/help/content-analytics/config/tags-agnostic.md). La propriété Tags est créée, mais vous n’utiliserez pas la propriété dans l’implémentation agnostique. Toutefois, l’implémentation agnostique nécessite que vous ayez exécuté l’assistant de configuration guidée au moins une fois.
+    Utilisez une nouvelle propriété Tags si vous souhaitez créer une implémentation indépendante des balises pour le canal web à l’aide de la bibliothèque JavaScript Content Analytics [](/help/content-analytics/config/tags-agnostic.md). La propriété Tags est créée, mais vous n’utiliserez pas la propriété dans l’implémentation agnostique. Toutefois, l’implémentation agnostique nécessite que vous ayez exécuté l’assistant de configuration guidée au moins une fois.
 
 * Indiquez les pages à inclure ou exclure lors de la collecte de données pour Content Analytics. Veillez à exclure les pages personnellement identifiables.
 
@@ -582,24 +569,24 @@ Lorsque vous créez ou modifiez une configuration, vous disposez des options sui
 * **[!UICONTROL Enregistrer pour plus tard]** : les modifications apportées à la configuration sont enregistrées. Vous pouvez revoir la configuration ultérieurement pour apporter d’autres modifications ou implémenter la configuration. L’unique condition pour enregistrer une configuration est de saisir une valeur pour [!UICONTROL Nom].
 * **[!UICONTROL Implémenter]** : les paramètres de la configuration ou les modifications qui y sont apportées sont enregistrés et implémentés. Tous les champs marqués comme ![Obligatoires](/help/assets/icons/Required.svg) doivent avoir les valeurs appropriées. L’implémentation comprend les éléments suivants :
 
-   * Configuration **[!UICONTROL Customer Journey Analytics]** :
-      * La vue de données sélectionnée est mise à jour pour inclure les dimensions et mesures Content Analytics.
-      * La connexion liée à la vue de données sélectionnée est modifiée de manière à inclure les jeux de données d’événements et d’attributs Content Analytics.
-      * Un modèle de rapport Content Analytics est ajouté à Workspace.
+  * Configuration **[!UICONTROL Customer Journey Analytics]** :
+    * La vue de données sélectionnée est mise à jour pour inclure les dimensions et mesures Content Analytics.
+    * La connexion liée à la vue de données sélectionnée est modifiée de manière à inclure les jeux de données d’événements et d’attributs Content Analytics.
+    * Un modèle de rapport Content Analytics est ajouté à Workspace.
 
 
-   * Configuration **[!UICONTROL Adobe Experience Platform]** :
-      * Création de schémas pour modéliser les événements Content Analytics, les attributs de ressource et les attributs d’expérience (s’ils sont configurés).
-      * Création de jeux de données pour collecter les événements Content Analytics, les attributs de ressource et les attributs d’expérience (s’ils sont configurés).
-      * Création d’un flux de données qui utilise le service de fonctionnalité pour générer et mettre à jour des attributs de contenu à partir d’événements Content Analytics.
+  * Configuration **[!UICONTROL Adobe Experience Platform]** :
+    * Création de schémas pour modéliser les événements Content Analytics, les attributs de ressource et les attributs d’expérience (s’ils sont configurés).
+    * Création de jeux de données pour collecter les événements Content Analytics, les attributs de ressource et les attributs d’expérience (s’ils sont configurés).
+    * Création d’un flux de données qui utilise le service de fonctionnalité pour générer et mettre à jour des attributs de contenu à partir d’événements Content Analytics.
 
 
-   * Configuration de la **[!UICONTROL collecte de données]** :
-      * La propriété Balises existante ou nouvelle est configurée pour prendre en charge la collecte de données Content Analytics. Cette configuration implique l’inclusion de l’extension Adobe Content Analytics pour les balises.
-      * Un train de données est créé pour les événements Content Analytics.
-      * L’extension Adobe Content Analytics est configurée pour s’assurer que les événements Content Analytics sont envoyés au train de données pour Content Analytics.
-      * Si Web SDK ou Mobile SDK n’est pas configuré pour la propriété Tags, une nouvelle configuration de Web SDK ou Mobile SDK est créée pour envoyer uniquement les événements Content Analytics.
-      * Si Web SDK ou Mobile SDK est configuré pour la propriété Tags, aucune modification n’est apportée à la configuration existante de Web SDK ou Mobile SDK.
+  * Configuration de la **[!UICONTROL collecte de données]** :
+    * La propriété Balises existante ou nouvelle est configurée pour prendre en charge la collecte de données Content Analytics. Cette configuration implique l’inclusion de l’extension Adobe Content Analytics pour les balises.
+    * Un train de données est créé pour les événements Content Analytics.
+    * L’extension Adobe Content Analytics est configurée pour s’assurer que les événements Content Analytics sont envoyés au train de données pour Content Analytics.
+    * Si Web SDK ou Mobile SDK n’est pas configuré pour la propriété Tags, une nouvelle configuration de Web SDK ou Mobile SDK est créée pour envoyer uniquement les événements Content Analytics.
+    * Si Web SDK ou Mobile SDK est configuré pour la propriété Tags, aucune modification n’est apportée à la configuration existante de Web SDK ou Mobile SDK.
 
 
 * **[!UICONTROL Enregistrer]** : les modifications apportées à une configuration implémentée sont enregistrées et l’implémentation est mise à jour.
