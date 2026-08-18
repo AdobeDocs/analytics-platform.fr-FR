@@ -26,9 +26,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: e686fca2c77a8f9739298ece01ccf0fa2fe87b3b
+source-git-commit: d2016e34b4b73c6eebb05097aa43f823c578c2b6
 workflow-type: tm+mt
-source-wordcount: 2441
+source-wordcount: 2440
 ht-degree: 12%
 
 ---
@@ -109,7 +109,7 @@ Certaines des fonctionnalités et leur valeur associée pour la limite dépenden
 | Fréquence d’actualisation de l’audience | 4 | Mécanisme de sécurisation mis en œuvre par le système | Fréquence maximale en heures pendant laquelle une [&#x200B; audience &#x200B;](../components/audiences/audiences-overview.md) peut être actualisée. |
 | Intervalle De Recherche En Amont De L’Actualisation D’Audience | 90 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de jours pour l’intervalle de recherche en amont de l’actualisation. |
 | Actualisation de la date d’expiration de l’audience | 13 | Mécanisme de sécurisation mis en œuvre par le système | Le nombre maximal de mois pendant lesquels l’audience cesse d’être actualisée à partir de la date de création. Les clients peuvent prolonger ce délai de 13 mois supplémentaires. |
-| Nombre d’audiences en cours d’actualisation | 75, 150 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal d’audiences en cours d’actualisation. La valeur varie en fonction du package Customer Journey Analytics (voir Description du produit). |
+| Nombre d’audiences en cours d’actualisation | 75 - 150 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal d’audiences [audiences configurées pour être actualisées](/help/components/audiences/publish.md#audience-builder) selon une fréquence planifiée (les actualisations uniques ne sont pas prises en compte dans cette limite). La valeur varie en fonction du package Customer Journey Analytics (voir Description du produit). |
 
 {style="table-layout:auto"}
 
@@ -301,7 +301,7 @@ Consultez également la section Mécanismes de sécurisation d’Experience Plat
 | Groupement (fonctionnalité facultative ; voir [présentation du groupement](../stitching/overview.md) pour plus d’informations) | &lt; 4 heures |
 | Renvoi du connecteur Adobe Analytics Source de moins de 10 milliards d’événements (maximum de 13 mois de données historiques) | &lt; 4 semaines |
 | Publication d’audiences dans le profil client en temps réel, y compris la création automatique du segment de diffusion en continu et la possibilité pour le segment d’être prêt à recevoir les données. | ≈ 60 minutes |
-| Fréquence d’actualisation des audiences | Actualisation unique : latence inférieure à 5 minutes.<br/>Actualisation toutes les 4 heures, tous les jours, toutes les semaines, tous les mois (la latence va de pair avec le taux d’actualisation). |
+| Fréquence d’actualisation des audiences | Actualiser toutes les 4 heures, tous les jours, toutes les semaines, tous les mois. |
 
 | Latences de création de rapports en temps réel | Latence attendue |
 |---|---|
