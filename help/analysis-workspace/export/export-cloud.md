@@ -6,27 +6,14 @@ feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
 TQID: https://experienceleague.adobe.com/7Bqz2dh9v-BhLey5fWNjnQkgFAXQd3QDnTzz8rd7BFA
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-source-git-commit: c7fc5df2a0fd7393b48bfe6bdfa7dccdfffde46c
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: d3c978ee-1ff0-4475-968a-721e2dd99ef1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817afid: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+source-git-commit: f62c202f92ffc842a9abe2a91bec5231a606f67c
 workflow-type: tm+mt
-source-wordcount: 3268
+source-wordcount: 3275
 ht-degree: 59%
 
 ---
@@ -54,7 +41,7 @@ Vous pouvez exporter des tableaux complets d’Analysis Workspace vers des four
 
 Lorsque vous exportez des tableaux complets, tenez compte des points suivants :
 
-* Avant d’exporter des données vers le cloud, assurez-vous que vos tables, votre environnement et vos autorisations répondent aux [&#x200B; exigences minimales d’exportation &#x200B;](#minimum-requirements).
+* Avant d’exporter des données vers le cloud, assurez-vous que vos tables, votre environnement et vos autorisations répondent aux [ exigences minimales d’exportation ](#minimum-requirements).
 
 * Certains [fonctionnalités](#unsupported-features) et certains [composants](#unsupported-components) ne sont pas pris en charge lors de l’export de tableaux complets vers le cloud.
 
@@ -167,7 +154,7 @@ Pour exporter des tableaux complets à partir d’Analysis Workspace, procédez
    | Afficher les destinations pour tous les utilisateurs | Les administrateurs système peuvent sélectionner cette option pour afficher tous les comptes et emplacements, quelle que soit la personne qui les a créés. |
    | Compte | Sélectionnez le compte d’export dans le cloud où vous souhaitez que les données soient envoyées. <p>Si vous n’avez pas encore configuré de compte cloud à utiliser, vous pouvez également configurer un nouveau compte :<ol><li>Dans le menu déroulant **[!UICONTROL Compte]**, sélectionnez **[!UICONTROL Ajouter un compte]** puis spécifiez les informations suivantes :<ul><li>**[!UICONTROL Nom du compte d’emplacement]** : spécifiez un nom pour le compte d’emplacement. Ce nom apparaît lors de la création d’un emplacement. </li><li>**[!UICONTROL Description de compte d’emplacement]** : fournissez une brève description du compte pour le différencier des autres comptes du même type de compte.</li><li>**Rendre le compte disponible pour tous les utilisateurs de votre organisation** : sélectionnez cette option si vous souhaitez autoriser d’autres utilisateurs de votre organisation à utiliser le compte.</li><li>**[!UICONTROL Type de compte]** : sélectionnez le type de compte cloud vers lequel vous exportez. Les types de compte disponibles sont Amazon S3 Role ARN, Google Cloud Platform, Azure SAS, Azure RBAC, Snowflake et Zone de destination des données AEP.</li></ul><li>Pour terminer la configuration de votre compte, sélectionnez le lien ci-dessous, correspondant au **[!UICONTROL type de compte]** sélectionné :<ul><li>[Zone de destination des données AEP](/help/components/exports/cloud-export-accounts.md#aep-data-landing-zone)</li><li>[Amazon S3 Role ARN](/help/components/exports/cloud-export-accounts.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-accounts.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-accounts.md#azure-sas)</li><li>[RBAC Azure](/help/components/exports/cloud-export-accounts.md#azure-rbac)</li><li>[Snowflake](/help/components/exports/cloud-export-accounts.md#snowflake)</li></ul></ol> |
    | Emplacement | Sélectionnez l’emplacement sur le compte où vous souhaitez que les données d’export soient envoyées.<p>Si vous n’avez pas encore configuré de compte cloud à utiliser, vous pouvez également configurer un nouveau compte :<ol><li>Dans le menu déroulant **[!UICONTROL Emplacement]**, sélectionnez **[!UICONTROL Ajouter un emplacement]** puis spécifiez les informations suivantes :<ul><li>**[!UICONTROL Nom]** : nom de l’emplacement.</li><li>**[!UICONTROL Description]** : fournissez une brève description de l’emplacement pour le différencier des autres emplacements sur le compte compte.</li><li>**Rendre l’emplacement disponible pour tous les utilisateurs de votre organisation** : sélectionnez cette option si vous souhaitez autoriser d’autres utilisateurs de votre organisation à utiliser l’emplacement.</li><li>**[!UICONTROL Compte d’emplacement]** : sélectionnez le compte sur lequel vous souhaitez créer l’emplacement.</li></ul><li>Pour terminer la configuration de votre emplacement, sélectionnez le lien ci-dessous, qui correspond au type de compte que vous avez sélectionné dans le champ **[!UICONTROL Compte d’emplacement]** :<ul><li>[Zone de destination des données AEP](/help/components/exports/cloud-export-locations.md#aep-data-landing-zone)</li><li>[Amazon S3 Role ARN](/help/components/exports/cloud-export-locations.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-locations.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-locations.md#azure-sas)</li><li>[RBAC Azure](/help/components/exports/cloud-export-locations.md#azure-rbac)</li><li>[Snowflake](/help/components/exports/cloud-export-locations.md#snowflake)</li></ul> |
-   | Notifications | Ajoutez les utilisateurs et utilisatrices et les groupes qui doivent recevoir des notifications lorsque cet export échoue ou arrive à expiration. Commencez à saisir le nom ou l’adresse e-mail d’un utilisateur ou d’une utilisatrice, ou commencez à saisir le nom d’un groupe, puis sélectionnez-le lorsqu’il apparaît dans la liste déroulante. |
+   | Notifier des problèmes, une fois l’opération terminée ou lors de l’expiration | Ajoutez les utilisateurs et utilisatrices et les groupes qui doivent recevoir des notifications lorsque cet export échoue ou arrive à expiration. Commencez à saisir le nom ou l’adresse e-mail d’un utilisateur ou d’une utilisatrice, ou commencez à saisir le nom d’un groupe, puis sélectionnez-le lorsqu’il apparaît dans la liste déroulante. |
 
    {style="table-layout:auto"}
 

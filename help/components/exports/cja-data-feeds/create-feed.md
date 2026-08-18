@@ -5,23 +5,15 @@ hide: true
 feature: Components
 autotag-review: '2026-05-19T08:45:44.870Z'
 TQID: 'https://experienceleague.adobe.com/QgBD7vCkw4YA568XOLlwTnw8eZVZybXr3DFbM1ZKYDw'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: 06e88df9fddaf292cfeef11e9b7d9a08e47cc7c5
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: de8748a1dddbc0ddaadca4c805c9b4aba99a4267
 workflow-type: tm+mt
-source-wordcount: 3709
-ht-degree: 22%
+source-wordcount: 4036
+ht-degree: 20%
 
 ---
 
@@ -54,26 +46,8 @@ Avant de créer un flux de données, il est important de comprendre les bases de
 
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_notify"
->title="Avertir une fois l’opération terminée"
->abstract="Indiquez une ou plusieurs adresses e-mail auxquelles une notification doit être envoyée après l’envoi du flux de données. Plusieurs adresses e-mail doivent être séparées par une virgule."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja_datafeed_lookback_date_range"
->title="Période de recherche en amont"
->abstract="Contrôle le retour en arrière de Customer Journey Analytics lors de la recherche d’événements qui remplissent les critères d’une diffusion de flux de données.<br/>Les événements qui se produisent en dehors de la fenêtre de fréquence (heure ou jour spécifique) peuvent toujours être inclus s’ils se sont produits dans la période de recherche en amont. L’inclusion ou non d’un événement dépend des facteurs suivants : qualification du segment, calcul de session, transformations de champ dérivé et persistance des dimensions. <br/>Une période de recherche en amont plus longue entraîne généralement plus d’événements ; une période plus courte entraîne de meilleures performances de diffusion."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja_datafeed_lookback_date_range"
->title="Période de recherche en amont"
->abstract="Contrôle le retour en arrière de Customer Journey Analytics lors de la recherche d’événements qui remplissent les critères d’une diffusion de flux de données. Ce paramètre est similaire à la fenêtre de création de rapports d’Analysis Workspace, mais avec des différences importantes.<br/>Les événements qui se produisent en dehors de la fenêtre de fréquence (heure ou jour spécifique) peuvent toujours être inclus s’ils se sont produits dans la période de recherche en amont. L’inclusion ou non d’un événement dépend des facteurs suivants : qualification du segment, calcul de session, transformations de champ dérivé et persistance des dimensions. <br/>Une période de recherche en amont plus longue entraîne généralement plus d’événements ; une période plus courte entraîne de meilleures performances de diffusion."
+>title="Notifier les problèmes, lorsqu’ils sont terminés et lorsqu’ils arrivent à échéance."
+>abstract="Indiquez une ou plusieurs adresses e-mail où une notification doit être envoyée lorsque le flux de données se termine, arrive à expiration ou rencontre des problèmes. Séparez plusieurs adresses e-mail par une virgule."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -150,7 +124,7 @@ Avant de créer un flux de données, il est important de comprendre les bases de
    | ID de ligne | Identifiant unique pour chaque ligne incluse dans le flux de données. | Obligatoire | Non disponible |
    | Identifiant de session | Identifiant unique pour chaque session incluse dans le flux de données. | Obligatoire | Non disponible |
    | ID de personne | Identifiant de personne pour la vue de données et la connexion | Obligatoire | Norme facultative |
-   | ID de compte {type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Identifiant de compte lors de l’utilisation du conteneur Compte | Obligatoire | Norme facultative |
+   | ID de compte [!BADGE ]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Identifiant de compte lors de l’utilisation du conteneur Compte | Obligatoire | Norme facultative |
 
    +++
 
@@ -229,7 +203,7 @@ Avant de créer un flux de données, il est important de comprendre les bases de
    | Nom de la mesure | Notes | Flux de données |
    |---|---|---|
    | Comptes [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | En fonction de l’identifiant de compte spécifié dans la connexion | Non disponible. Utilisez un nombre distinct de l’ID de compte. |
-   | Groupe d&#39;achat {type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Groupes d&#39;achat basés sur l&#39;ID de groupe d&#39;achat dans la connexion | Non disponible. Utiliser le nombre distinct de l&#39;ID du groupe d&#39;achat. |
+   | Groupe d&#39;achat [!BADGE ]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Groupes d&#39;achat basés sur l&#39;ID de groupe d&#39;achat dans la connexion | Non disponible. Utiliser le nombre distinct de l&#39;ID du groupe d&#39;achat. |
    | Événements | Nombre de lignes de tous les jeux de données d’événements dans une connexion | Non disponible. Utilisez un nombre distinct de l’ID de ligne. |
    | Comptes globaux [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | En fonction de l’identifiant de comptes globaux dans la connexion | Non disponible. Utilisez un nombre distinct de l’identifiant de comptes globaux. |
    | Opportunités [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Opportunités basées sur l’ID d’opportunité dans la connexion | Non disponible. Utiliser le nombre distinct de l’ID d’opportunité. |
@@ -258,9 +232,9 @@ Avant de créer un flux de données, il est important de comprendre les bases de
    | Premières sessions | Mesure | Première session définie par une personne dans la fenêtre de création de rapports | Non disponible |
    | Sessions récurrentes | Mesure | Sessions qui n’étaient pas la première session d’une personne | Non disponible |
    | Espace de noms de l’ID de personne | Dimension | Type d’ID dont est constitué l’ID de personne (par exemple, e-mail ou ID de cookie) | Disponible |
-   | Identifiant de compte global {type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Dimension | Identifiant de compte global lors de l’utilisation du conteneur de compte global | Disponible |
-   | ID de l’opportunité {type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Dimension | ID de l’opportunité lors de l’utilisation du conteneur d’opportunités | Disponible |
-   | ID de groupe d&#39;achat {type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Dimension | ID groupe d&#39;achat lors de l&#39;utilisation du conteneur groupe d&#39;achat | Disponible |
+   | Identifiant de compte global [!BADGE ]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Dimension | Identifiant de compte global lors de l’utilisation du conteneur de compte global | Disponible |
+   | ID de l’opportunité [!BADGE ]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Dimension | ID de l’opportunité lors de l’utilisation du conteneur d’opportunités | Disponible |
+   | ID de groupe d&#39;achat [!BADGE ]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Dimension | ID groupe d&#39;achat lors de l&#39;utilisation du conteneur groupe d&#39;achat | Disponible |
    | Trimestre de l’année | Dimension de répartition temporelle | T1, T2, T3, T4 | Non disponible |
    | Session répétée | Mesure | Sessions qui n’ont pas été la toute première session d’une personne | Non disponible |
    | Type de session | Dimension | Deux valeurs : Première fois ou Récurrent | Non disponible |
@@ -300,7 +274,7 @@ Avant de créer un flux de données, il est important de comprendre les bases de
    | [!UICONTROL **Date d’expiration**] <br/>Disponible uniquement pour les flux en direct | Date à laquelle le flux de données expire et ne s’exécute plus. La date est basée sur le fuseau horaire de la vue de données. |
    | [!UICONTROL **Date de fin**]<br/> Disponible uniquement pour les flux de renvoi | Date de fin du flux de données. La date de fin ne peut pas être dans le futur. La date est basée sur le fuseau horaire de la vue de données. |
    | [!UICONTROL **Fréquence**] | Sélectionnez la fréquence d’envoi du flux de données. Les événements dont la date et l’heure se trouvent dans la fenêtre de fréquence sont inclus dans la diffusion du flux de données. Les champs [!UICONTROL **Période de recherche en amont**] et [!UICONTROL **Délai de traitement**] peuvent également affecter les événements inclus dans les données pour la fréquence de diffusion que vous choisissez.<p>Pour les flux en direct, sélectionnez cette option pour inclure l’équivalent d’une heure de données ou d’une journée de données. Pour les flux de renvoi, ce champ est verrouillé sur **Quotidien** et ne peut pas être modifié.</p><ul><li>**Quotidien** : les flux contiennent l’équivalent d’une journée complète de données, de minuit à minuit dans le fuseau horaire de la vue de données. <p>Cette option est obligatoire pour les flux de renvoi et facultative pour les flux en direct.</p></li><li>**Par heure** : les flux contiennent l’équivalent d’une heure de données. <p>Cette option est disponible uniquement pour les flux en direct.</p></li></ul> |
-   | [!UICONTROL **Période de recherche en amont**] | Contrôle la période sur laquelle Customer Journey Analytics se base pour traiter la diffusion du flux de données. La valeur par défaut est de 30 jours. <p>Lors de la configuration de cette option, tenez compte des concepts importants suivants :</p><ul><li>Une période de recherche en amont plus longue entraîne généralement plus d’événements ; une période plus courte entraîne de meilleures performances de diffusion.</li><li>La période de recherche en amont dans les flux de données est similaire à la période de création de rapports dans Analysis Workspace, mais il existe des [&#x200B; différences clés &#x200B;](/help/components/exports/cja-data-feeds/df-comparison-workspace.md#differences). Ces différences peuvent entraîner des incohérences de données entre les rapports Workspace et les diffusions de flux de données. </li><li>Ce paramètre ne modifie pas la fenêtre de fréquence (heure ou jour), qui définit la période des événements à inclure dans la sortie du flux de données. <p>Les événements qui se produisent en dehors de la fenêtre de fréquence peuvent toujours être inclus s’ils se sont produits dans la période de recherche en amont, en fonction des facteurs suivants : </p><ul><li>**Qualification du segment** : lorsqu’un segment est appliqué à votre définition de flux de données, tout événement situé dans la période de recherche en amont détermine si une personne est admissible. Le paramètre de conteneur du segment détermine la portée. (Les conteneurs possibles sont : Personne, Session ou Événement. Le B2B inclut les conteneurs supplémentaires suivants : compte global, compte, opportunité, groupe d’achat.)  <p>Par exemple, si un segment appelé _personnes ayant acheté_ est appliqué, une recherche en amont d’une semaine inclut les événements de l’heure ou du jour donné (la fenêtre de fréquence) pour les personnes qui ont acheté au cours des 7 derniers jours. Une recherche en amont de 90 jours inclut les événements des personnes qui ont acheté au cours des 90 derniers jours</p></li><li>**Calcul de session** : les limites de session sont calculées à l’aide de données comprises dans la période de recherche en amont.</li><li>**Transformations de champ dérivé** : toutes les fonctions de champ dérivé qui font référence à des conteneurs utilisent la période de recherche en amont dans les exportations de flux de données.</li><li>**Persistance Dimension** : si vous choisissez de définir la persistance sur une dimension individuelle, vous choisissez également une expiration pour déterminer la durée pendant laquelle un élément de dimension persiste au-delà de l’événement sur lequel il est défini. Les dimensions définies pour être conservées utilisent la période de recherche en amont pour déterminer la qualification pour les exportations de flux de données.  <p>La période de recherche en amont affecte la persistance des dimensions lorsque l’expiration est définie sur l’une des options suivantes dans la vue de données :</p><ul><li>Pour chaque dimension de la définition de flux de données qui utilise [!UICONTROL **Période de création de rapports**] comme expiration, la période de recherche en amont devient la nouvelle période de création de rapports.</li><li>Pour chaque dimension de la définition du flux de données qui utilise [!UICONTROL **Heure personnalisée**] comme expiration et si l’heure personnalisée sélectionnée s’étend au-delà de la période de recherche en amont, l’heure personnalisée est ignorée et la période de recherche en amont est utilisée pour l’expiration de la dimension.<p>Pour plus d’informations sur la définition de la persistance sur les dimensions dans la vue de données, voir [Paramètres des composants de persistance](/help/data-views/component-settings/persistence.md).</p></li></ul><p>Définissez la période de recherche en amont sur une valeur égale ou supérieure à la persistance définie sur les dimensions dans vos données. Par exemple, si une dimension de campagne a une expiration de 30 jours et qu’une personne a cliqué sur cette campagne il y a deux semaines, une période de recherche en amont de 7 jours ne conserve pas la valeur.</p></ul> |
+   | [!UICONTROL **Période de recherche en amont**] | Contrôle la période sur laquelle Customer Journey Analytics se base pour traiter la diffusion du flux de données. La valeur par défaut est de 30 jours. <p>La période de recherche en amont affecte la qualification du segment, le calcul de session, les transformations de champ dérivé et la persistance des dimensions. <p>Avant de configurer cette option, consultez les détails et les exemples décrits dans la section ci-dessous, [Comprendre la période de recherche en amont](#understand-the-lookback-date-range).</p> |
    | [!UICONTROL **Délai de traitement**] | Sélectionnez la durée d’attente avant de traiter un fichier de flux de données. La valeur par défaut est de 2 heures. Tous les événements arrivant tardivement pendant la période de retard du traitement sont inclus dans le flux de données. <p>Les délais de traitement sont utiles pour diverses raisons, par exemple pour permettre aux implémentations mobiles de permettre aux appareils hors ligne de se connecter et d’envoyer des données, ou pour s’adapter aux processus côté serveur de votre entreprise dans la gestion des fichiers précédemment traités. </p><p>Pour être incluses, les sessions doivent commencer après la coupure du délai de traitement ; les sessions qui commencent avant la coupure et se terminent dans le délai de traitement ne sont pas incluses.</p><p>Customer Journey Analytics détermine de manière dynamique le délai optimal en fonction de la durée habituelle des événements arrivant en retard pour votre flux, mais vous pouvez le définir manuellement sur un délai de 2, 3, 4 ou 8 heures.</p> |
    | [!UICONTROL **Format de compression**] | Sélectionnez le format de compression des fichiers de sortie Parquet diffusés vers votre destination cloud. Choisissez l’un des formats suivants :<ul><li>[!UICONTROL **Snappy**] : compression et décompression rapides avec des tailles de fichier modérées. Largement pris en charge par les plateformes de données modernes telles que BigQuery, Snowflake et Apache Spark.</li><li>[!UICONTROL **GZip**] : largement compatible, y compris avec les outils qui ne prennent pas en charge Snappy en mode natif. Recommandé si votre pipeline en aval nécessite une norme de compression largement reconnue.</li><li>[!UICONTROL **Z Standard (Zstd)**] : Efficacité de compression élevée avec décompression rapide. Convient si la réduction de la taille du fichier est une priorité et que vos outils prennent en charge Zstd.</li></ul> |
 
@@ -324,9 +298,93 @@ Avant de créer un flux de données, il est important de comprendre les bases de
    | [!UICONTROL **Afficher les destinations pour tous les utilisateurs**] | Si vous êtes un administrateur ou une administratrice système, vous pouvez activer cette option pour afficher les destinations créées par tous les utilisateurs et utilisatrices de votre organisation. Lorsque cette option est désactivée, seules les destinations que vous avez créées s’affichent. |
    | [!UICONTROL **Compte**] | Effectuez l’une des opérations suivantes :<ul><li>**Utiliser un compte existant :** sélectionnez le menu déroulant en regard du champ **[!UICONTROL Compte]**. Vous pouvez également commencer à saisir le nom du compte, puis le sélectionner dans le menu déroulant. <p>Vous ne pouvez accéder aux comptes que si vous les avez configurés ou s’ils sont partagés avec une organisation dont vous faites partie.</p></li><li>**Créer un compte :** sélectionnez **[!UICONTROL Ajouter un compte]** dans le menu **[!UICONTROL Compte]**. Pour plus d’informations sur la configuration du compte, voir [Configuration des comptes d’exportation dans le cloud](/help/components/exports/cloud-export-accounts.md).</li></ul> |
    | [!UICONTROL **Emplacement**] | Effectuez l’une des opérations suivantes :<ul><li>**Utiliser un emplacement existant :** sélectionnez le menu déroulant en regard du champ **[!UICONTROL Emplacement]**. Vous pouvez également commencer à saisir le nom de l’emplacement, puis le sélectionner dans le menu déroulant.</li><li>**Créer un emplacement :** sélectionnez **[!UICONTROL Ajouter un emplacement]** dans le menu **[!UICONTROL Emplacement]**. Pour plus d’informations sur la configuration de l’emplacement, voir [Configuration des emplacements d’exportation dans le cloud](/help/components/exports/cloud-export-locations.md).</li></ul> |
-   | [!UICONTROL **Avertir lorsque l’opération est terminée**] | Indiquez une ou plusieurs adresses e-mail auxquelles une notification doit être envoyée une fois le flux de données envoyé avec succès ou en cas d’échec. Plusieurs adresses e-mail doivent être séparées par une virgule. |
+   | [!UICONTROL **Envoyer une notification par e-mail une fois l’opération terminée**] | Indiquez une ou plusieurs adresses e-mail auxquelles une notification doit être envoyée une fois le flux de données envoyé avec succès ou en cas d’échec. Plusieurs adresses e-mail doivent être séparées par une virgule. |
    | [!UICONTROL **Activer le manifeste**] | Choisissez d’inclure un fichier manifeste avec chaque diffusion de flux de données. Le fichier manifeste contient des informations pour chaque fichier inclus dans le flux de données. |
 
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
+
+## Comprendre la période de recherche en amont {#data-feed-lookback-date-range}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_datafeed_lookback_date_range"
+>title="Période de recherche en amont"
+>abstract="Contrôle la période sur laquelle Customer Journey Analytics se base pour traiter la diffusion du flux de données. Ce paramètre est similaire à la période de création de rapports d’Analysis Workspace, mais avec des différences importantes :<ul><li>Les événements sont inclus dans le flux de données s’ils ont des horodatages compris dans la fenêtre de fréquence et non dans la période de recherche en amont. (Dans Analysis Workspace, les événements sont inclus dans un rapport s’ils ont des horodatages compris dans la période de création de rapports.)</li><li>Les événements dont la date et l’heure se situent dans la plage de dates de recherche en amont (mais en dehors de la fenêtre de fréquence) peuvent toujours influencer les données qui apparaissent dans le flux par le biais de la qualification des segments, du calcul de session, des transformations de champ dérivées et de la persistance des dimensions.</li><p>Une période de recherche en amont plus longue entraîne généralement des événements plus précis ; une période plus courte entraîne de meilleures performances de diffusion.</p>"
+
+<!-- markdownlint-enable MD034 -->
+
+
+
+La période de recherche en amont contrôle l’historique de Customer Journey Analytics lors du traitement de la diffusion du flux de données. La valeur par défaut est de 30 jours.
+
+Lors de la configuration de cette option, tenez compte des concepts importants suivants :
+
+* Une période de recherche en amont plus longue permet généralement d’obtenir des données plus précises ; une période plus courte permet d’obtenir de meilleures performances de diffusion.
+* La période de recherche en amont dans les flux de données est similaire à la période de création de rapports dans Analysis Workspace, mais il existe des [ différences clés ](/help/components/exports/cja-data-feeds/df-comparison-workspace.md#differences). Ces différences peuvent entraîner des incohérences de données entre les rapports Workspace et les diffusions de flux de données.
+* La période de recherche en amont ne modifie pas la fenêtre de fréquence (heure ou jour), qui définit la période des événements à inclure dans la sortie du flux de données.
+* Les données qui se trouvent dans la période de recherche en amont peuvent influencer les éléments inclus dans le flux de données (fenêtre de fréquence), selon les facteurs décrits dans les sections ci-dessous.
+
+### Qualification de segment
+
+Lorsqu’un segment est appliqué à votre définition de flux de données, les données comprises dans la période de recherche en amont déterminent les événements, sessions ou personnes qui remplissent les critères pour le segment. Le paramètre de conteneur du segment détermine la portée. (Les conteneurs possibles sont : Personne, Session ou Événement. Le B2B inclut les conteneurs supplémentaires suivants : compte global, compte, opportunité, groupe d’achat.)
+
+>[!BEGINSHADEBOX]
+
+**Exemple :**
+
+Supposons que vous souhaitiez créer un flux de données pour comprendre le comportement des utilisateurs qui font partie d’une campagne marketing spécifique, la campagne B.
+
+Pour ce faire, appliquez un segment au flux de données appelé _Utilisateurs dans la campagne B_, en indiquant que seuls les événements liés aux utilisateurs de ce segment doivent être inclus dans le flux de données.
+
+Dans ce cas, les utilisateurs ne sont inclus dans le flux de données que s’ils remplissent **les deux** les conditions suivantes :
+
+* L’utilisateur a eu un événement dont la date et l’heure se trouvent dans la fenêtre de fréquence du flux de données (l’heure ou le jour donné du flux de données).
+* L’utilisateur s’est qualifié pour le segment _Campaign B_ **à un moment donné dans la période de recherche en amont**.
+
+  Pour un événement de qualification qui s’est produit il y a 9 jours, cela signifie que l’utilisateur **serait inclus** dans le flux de données si la période de recherche en amont était définie sur 30 jours, mais que l’utilisateur **ne serait pas inclus** dans le flux de données si la période de recherche en amont était définie sur 7 jours.
+
+>[!ENDSHADEBOX]
+
+### Calcul de session
+
+Les limites de session sont calculées à l’aide de données comprises dans la période de recherche en amont. Cela est-il plus important concernant l’ID de session ? Cela peut-il avoir un impact sur l’ID de session ? Cela peut avoir un impact sur de nombreux éléments, tels que la persistance basée sur une session.
+
+### Transformations de champ dérivées
+
+Toutes les fonctions de champ dérivé qui font référence à des conteneurs utilisent la période de recherche en amont dans les exportations de flux de données. Quelles sont les fonctionnalités de date disponibles dans les champs dérivés ? Je ne sais pas comment cela s’applique.
+
+### Persistance de Dimension
+
+Lorsque vous définissez la persistance sur une dimension individuelle, vous définissez également une expiration pour déterminer la durée pendant laquelle l’élément de dimension persiste au-delà de l’événement sur lequel il est défini.
+
+La période de recherche en amont affecte la persistance des dimensions lorsque l’expiration est définie sur l’une des options suivantes dans la vue de données :
+
+* [!UICONTROL **Période de reporting des personnes**] : la période de recherche en amont devient la nouvelle période de reporting pour chaque dimension de la définition de flux de données qui utilise [!UICONTROL **Période de reporting des personnes**] comme expiration.
+* [!UICONTROL **Heure personnalisée**] : si l’heure personnalisée sélectionnée s’étend au-delà de la période de recherche arrière, l’heure personnalisée est ignorée et la période de recherche arrière est utilisée pour l’expiration de la dimension pour chaque dimension de la définition du flux de données qui utilise [!UICONTROL **Heure personnalisée**] comme expiration. Les valeurs antérieures à la période de recherche en amont ne sont pas prises en compte.
+
+  Pour plus d’informations sur la définition de la persistance sur les dimensions dans la vue de données, voir [Paramètres des composants de persistance](/help/data-views/component-settings/persistence.md).
+
+Pour obtenir les données les plus précises possible, pensez à définir la période de recherche en amont sur une valeur égale ou supérieure à la persistance définie sur les dimensions dans vos données. Toutefois, gardez à l’esprit qu’une période de recherche en amont plus courte entraîne de meilleures performances pour les diffusions de flux de données.
+
+>[!BEGINSHADEBOX]
+
+**Exemple :**
+
+Supposons que dans votre flux de données vous souhaitiez savoir quelle campagne marketing les utilisateurs ont vue à l’origine avant d’accéder à votre site.
+
+Pour ce faire, définissez la persistance sur la dimension Campagnes avec l’Original comme modèle d’affectation.
+
+Dans ce cas, la campagne d’origine s’affiche dans la sortie du flux de données uniquement si les utilisateurs et utilisatrices remplissent **les deux** les conditions suivantes :
+
+* L’utilisateur a eu un événement dont la date et l’heure se trouvent dans la fenêtre de fréquence du flux de données (l’heure ou le jour donné du flux de données).
+
+* L’utilisateur s’est qualifié pour la campagne d’origine **à un moment dans la période de recherche en amont**.
+
+  Si l’utilisateur s’est qualifié pour la campagne d’origine il y a 9 jours, la campagne d’origine **serait incluse** dans le flux de données si la période de recherche arrière était définie sur 30 jours, mais la campagne d’origine **ne serait pas incluse** dans le flux de données si la période de recherche arrière était définie sur 7 jours.
+
+>[!ENDSHADEBOX]
+
+
 
 

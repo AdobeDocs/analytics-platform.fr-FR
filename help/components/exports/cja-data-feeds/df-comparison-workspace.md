@@ -4,9 +4,9 @@ keywords: flux de clics;flux de données;flux des données;Flux de données
 title: Fonctionnalité Comparaison des flux de données dans Customer Journey Analytics et Adobe Analytics
 feature: Components
 hide: true
-source-git-commit: a72ed21bdea40e2441443d7218d9fd7c906adc3e
+source-git-commit: de8748a1dddbc0ddaadca4c805c9b4aba99a4267
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '719'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,9 @@ Les données d’une exportation de flux de données ne correspondent pas toujou
 
 ## Période de recherche en amont (flux de données) et période de création de rapports (Analysis Workspace)
 
-La période de recherche en amont dans les flux de données détermine l’historique de Customer Journey Analytics lors de la recherche d’événements qui remplissent les critères d’une diffusion de flux de données. En ce sens, la période de recherche en amont est similaire à la période de création de rapports dans Analysis Workspace. Cependant, il existe des différences majeures.
+La période de recherche en amont dans les flux de données détermine l’historique de Customer Journey Analytics lors de la recherche d’événements qui remplissent les critères d’une diffusion de flux de données. Pour plus d’informations sur la période de recherche arrière, y compris des exemples, voir [Comprendre la période de recherche arrière](/help/components/exports/cja-data-feeds/create-feed.md#understand-the-lookback-date-range).
+
+En ce sens, la période de recherche en amont est similaire à la période de création de rapports dans Analysis Workspace. Cependant, il existe des différences majeures.
 
 | Principales différences | Période de création des rapports (Analysis Workspace) | Période de recherche en amont (flux de données) |
 |---------|---------|----------|
@@ -47,7 +49,7 @@ Les flux de données et Analysis Workspace traitent différemment l’assemblage
 
 * **Flux de données** : reflète uniquement l’identité regroupée au moment de l’exportation. Les résultats de la relecture ne sont pas appliqués rétroactivement aux fichiers exportés.
 
-* **&#x200B;**&#x200B;: affiche les données regroupées les plus récentes, mises à jour rétroactivement chaque fois qu’une relecture s’exécute. Les données historiques changent après chaque relecture, de sorte que Workspace reflète toujours la dernière résolution d’identité.
+* **** : affiche les données regroupées les plus récentes, mises à jour rétroactivement chaque fois qu’une relecture s’exécute. Les données historiques changent après chaque relecture, de sorte que Workspace reflète toujours la dernière résolution d’identité.
 
 ## Evénements en retard
 
@@ -59,7 +61,7 @@ Les flux de données et Analysis Workspace fonctionnent différemment concernant
 
   Les événements qui arrivent après la fermeture de la fenêtre peuvent ne pas être inclus dans l’exportation. Cela est influencé par la [période de recherche en amont](#lookback-date-range-data-feeds-vs-reporting-date-range-analysis-workspace) que vous choisissez.
 
-* **&#x200B;**&#x200B;: traite les données au moment du rapport, de sorte que les événements soient inclus dans les rapports, quelle que soit la date de réception.
+* **** : traite les données au moment du rapport, de sorte que les événements soient inclus dans les rapports, quelle que soit la date de réception.
 
 ## Traitement par lots de données
 
@@ -69,5 +71,5 @@ Les flux de données et Analysis Workspace fonctionnent différemment concernant
 
 * **Flux de données** : distribue des données par lots sur chaque jour ou heure en fonction des horodatages d’origine. Par exemple, un lot contenant 30 jours de données est réparti sur 30 jours d’exportations. Par conséquent, une seule petite tranche apparaît dans une exportation unique.
 
-* **&#x200B;**&#x200B;: affiche toutes les données d&#39;un lot dès qu&#39;elles sont entièrement traitées, quelle que soit la période incluse dans le lot.
+* **** : affiche toutes les données d&#39;un lot dès qu&#39;elles sont entièrement traitées, quelle que soit la période incluse dans le lot.
 
