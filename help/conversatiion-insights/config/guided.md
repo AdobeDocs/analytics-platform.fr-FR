@@ -40,6 +40,6 @@ ht-degree: 9%
 
 >[!CONTEXTUALHELP]
 >id="conversation-insights_config_dataview"
->title="Vue de données"
+>title="Vue de données
 >abstract="Sélectionnez la vue de données associée à votre connexion que vous souhaitez utiliser pour l’analyse des informations de conversation. Les mesures et dimensions des informations sur la conversation seront ajoutées à la vue de données que vous sélectionnez."
 
