@@ -19,10 +19,10 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: 66a8a96da6710d20b01b9315fe87ba38c54c2511
+source-git-commit: de8748a1dddbc0ddaadca4c805c9b4aba99a4267
 workflow-type: tm+mt
-source-wordcount: 221
-ht-degree: 21%
+source-wordcount: 230
+ht-degree: 20%
 
 ---
 
@@ -45,6 +45,8 @@ Assurez-vous de respecter toutes les exigences suivantes avant d’utiliser les 
 Pour commencer à utiliser les flux de données dans Customer Journey Analytics, commencez par comprendre en quoi les flux de données dans Customer Journey Analytics diffèrent des flux de données dans Adobe Analytics. Après avoir compris les différences, vous pouvez mapper les flux de données d’Adobe Analytics à Customer Journey Analytics, puis commencer à créer un flux de données.
 
 1. [Comprenez les différences entre les flux de données dans Customer Journey Analytics et Adobe Analytics](/help/components/exports/cja-data-feeds/df-comparison.md).
+
+1. [Comprendre les écarts de données entre les flux de données et Analysis Workspace](/help/components/exports/cja-data-feeds/df-comparison-workspace.md).
 
 1. [Mappez les colonnes de flux de données Adobe Analytics à Customer Journey Analytics](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md).
 

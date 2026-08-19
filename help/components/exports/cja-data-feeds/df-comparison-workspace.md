@@ -4,9 +4,9 @@ keywords: flux de clics;flux de données;flux des données;Flux de données
 title: Fonctionnalité Comparaison des flux de données dans Customer Journey Analytics et Adobe Analytics
 feature: Components
 hide: true
-source-git-commit: a72ed21bdea40e2441443d7218d9fd7c906adc3e
+source-git-commit: de8748a1dddbc0ddaadca4c805c9b4aba99a4267
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '719'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,9 @@ Les données d’une exportation de flux de données ne correspondent pas toujou
 
 ## Période de recherche en amont (flux de données) et période de création de rapports (Analysis Workspace)
 
-La période de recherche en amont dans les flux de données détermine l’historique de Customer Journey Analytics lors de la recherche d’événements qui remplissent les critères d’une diffusion de flux de données. En ce sens, la période de recherche en amont est similaire à la période de création de rapports dans Analysis Workspace. Cependant, il existe des différences majeures.
+La période de recherche en amont dans les flux de données détermine l’historique de Customer Journey Analytics lors de la recherche d’événements qui remplissent les critères d’une diffusion de flux de données. Pour plus d’informations sur la période de recherche arrière, y compris des exemples, voir [Comprendre la période de recherche arrière](/help/components/exports/cja-data-feeds/create-feed.md#understand-the-lookback-date-range).
+
+En ce sens, la période de recherche en amont est similaire à la période de création de rapports dans Analysis Workspace. Cependant, il existe des différences majeures.
 
 | Principales différences | Période de création des rapports (Analysis Workspace) | Période de recherche en amont (flux de données) |
 |---------|---------|----------|
