@@ -18,9 +18,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: de8748a1dddbc0ddaadca4c805c9b4aba99a4267
+source-git-commit: 8a5568b3b6136bc3f8b507f551fbb6d169e4b88a
 workflow-type: tm+mt
-source-wordcount: 4036
+source-wordcount: 4088
 ht-degree: 20%
 
 ---
@@ -112,6 +112,8 @@ Avant de créer un flux de données, il est important de comprendre les bases de
 
    Lorsque vous appliquez plusieurs segments, ils sont associés à un opérateur AND. Pour joindre des segments avec un opérateur OR, vous devez d’abord créer un segment dans le créateur de segments, puis appliquer le nouveau segment au flux de données.
 
+   Les segments que vous appliquez ici s’ajoutent aux segments qui peuvent déjà être appliqués dans votre vue de données.
+
 1. Ajoutez des composants à la configuration des flux de données. Le rail de gauche affiche uniquement les composants valides pour les flux de données.
 
    * **Glisser-déposer** : faites glisser des composants du rail de gauche vers la zone de travail. Maintenez la touche **[!UICONTROL Maj]** ou **[!UICONTROL Commande]** (macOS) ou **[!UICONTROL Ctrl]** (Windows) enfoncée pour sélectionner plusieurs composants et les faire glisser simultanément.
@@ -160,6 +162,26 @@ Avant de créer un flux de données, il est important de comprendre les bases de
    | Semaine | Semaine au cours de laquelle un événement s’est produit | Non disponible |
    | Semaine de l’année | Semaine de l’année au cours de laquelle un événement s’est produit | Non disponible |
    | Année | Année au cours de laquelle un événement s’est produit | Non disponible |
+
+   +++
+
+   +++ Mesures qui ne peuvent pas être incluses dans les flux de données
+
+   Les mesures standard Customer Journey Analytics suivantes ne peuvent pas être incluses dans les flux de données :
+
+   | Nom de la mesure | Notes | Flux de données |
+   |---|---|---|
+   | Profil des visiteurs Adobe | | Non disponible |
+   | Union des opportunités Adobe | | Non disponible |
+   | Profil d’opportunités Adobe | | Non disponible |
+   | Union des comptes Adobe | | Non disponible |
+   | Profil des comptes Adobe | | Non disponible |
+   | Union des groupes d’achat Adobe | | Non disponible |
+   | Profil de groupes d’achats Adobe | | Non disponible |
+   | Union des comptes globaux Adobe | | Non disponible |
+   | Profil de comptes globaux Adobe | | Non disponible |
+   | Union des personnes Adobe | | Non disponible |
+   | Profil de personnes Adobe | | Non disponible |
 
    +++
 
@@ -281,8 +303,8 @@ Avant de créer un flux de données, il est important de comprendre les bases de
    | [!UICONTROL **Date de début**] | Date de début du flux de données. Pour les flux en direct, il doit s’agir d’aujourd’hui ou d’une date ultérieure. Pour les flux de renvoi, il doit s’agir d’une date passée dans la fenêtre de conservation des données de la vue de données. La date de début est basée sur le fuseau horaire de la vue de données. |
    | [!UICONTROL **Date d’expiration**] <br/>Disponible uniquement pour les flux en direct | Date à laquelle le flux de données expire et ne s’exécute plus. La date est basée sur le fuseau horaire de la vue de données. |
    | [!UICONTROL **Date de fin**]<br/> Disponible uniquement pour les flux de renvoi | Date de fin du flux de données. La date de fin ne peut pas être dans le futur. La date est basée sur le fuseau horaire de la vue de données. |
-   | [!UICONTROL **Fréquence**] | Sélectionnez la fréquence d’envoi du flux de données. Les événements dont la date et l’heure se trouvent dans la fenêtre de fréquence sont inclus dans la diffusion du flux de données. Les champs [!UICONTROL **Période de recherche en amont**] et [!UICONTROL **Délai de traitement**] peuvent également affecter les événements inclus dans les données pour la fréquence de diffusion que vous choisissez.<p>Pour les flux en direct, sélectionnez cette option pour inclure l’équivalent d’une heure de données ou d’une journée de données. Pour les flux de renvoi, ce champ est verrouillé sur **Quotidien** et ne peut pas être modifié.</p><ul><li>**Quotidien** : les flux contiennent l’équivalent d’une journée complète de données, de minuit à minuit dans le fuseau horaire de la vue de données. <p>Cette option est obligatoire pour les flux de renvoi et facultative pour les flux en direct.</p></li><li>**Par heure** : les flux contiennent l’équivalent d’une heure de données. <p>Cette option est disponible uniquement pour les flux en direct.</p></li></ul> |
-   | [!UICONTROL **Période de recherche en amont**] | Contrôle la période sur laquelle Customer Journey Analytics se base pour traiter la diffusion du flux de données. La valeur par défaut est de 30 jours. <p>La période de recherche en amont affecte la qualification du segment, le calcul de session, les transformations de champ dérivé et la persistance des dimensions. <p>Avant de configurer cette option, consultez les détails et les exemples décrits dans la section ci-dessous, [Comprendre la période de recherche en amont](#understand-the-lookback-date-range).</p> |
+   | [!UICONTROL **Fréquence**] | Sélectionnez la fréquence d’envoi du flux de données. Les événements dont la date et l’heure se trouvent dans la fenêtre de fréquence sont inclus dans la diffusion du flux de données. Les champs [!UICONTROL **Période de recherche en amont**] et [!UICONTROL **Délai de traitement**] peuvent également affecter les événements inclus dans les données pour la fréquence de diffusion que vous choisissez.<p>Pour les flux en direct, sélectionnez cette option pour inclure l’équivalent d’une heure de données ou d’une journée de données. Pour les flux de renvoi, ce champ est verrouillé sur **Quotidien**, ce qui signifie que les données sont regroupées en blocs quotidiens.</p><ul><li>**Quotidien** : les flux contiennent l’équivalent d’une journée complète de données, de minuit à minuit dans le fuseau horaire de la vue de données. <p>Cette option est obligatoire pour les flux de renvoi et facultative pour les flux en direct.</p></li><li>**Par heure** : les flux contiennent l’équivalent d’une heure de données. <p>Cette option est disponible uniquement pour les flux en direct.</p></li></ul> |
+   | [!UICONTROL **Période de recherche en amont**] | Contrôle la période sur laquelle Customer Journey Analytics se base pour traiter la diffusion du flux de données. La valeur par défaut est de 30 jours.<p>La fenêtre de fréquence (heure ou jour) détermine les événements inclus dans le flux de données, tandis que la **période de recherche en amont** fournit le contexte historique nécessaire pour classer correctement ces événements.</p><p>La qualification des segments, la persistance des dimensions, le calcul de session et les transformations de champs dérivés peuvent tous affecter les événements inclus.</p> <p>Avant de configurer cette option, consultez les détails et les exemples décrits dans la section ci-dessous, [Comprendre la période de recherche en amont](#understand-the-lookback-date-range).</p> |
    | [!UICONTROL **Délai de traitement**] | Sélectionnez la durée d’attente avant de traiter un fichier de flux de données. La valeur par défaut est de 2 heures. Tous les événements arrivant tardivement pendant la période de retard du traitement sont inclus dans le flux de données. <p>Les délais de traitement sont utiles pour diverses raisons, par exemple pour permettre aux implémentations mobiles de permettre aux appareils hors ligne de se connecter et d’envoyer des données, ou pour s’adapter aux processus côté serveur de votre entreprise dans la gestion des fichiers précédemment traités. </p><p>Pour être incluses, les sessions doivent commencer après la coupure du délai de traitement ; les sessions qui commencent avant la coupure et se terminent dans le délai de traitement ne sont pas incluses.</p><p>Customer Journey Analytics détermine de manière dynamique le délai optimal en fonction de la durée habituelle des événements arrivant en retard pour votre flux, mais vous pouvez le définir manuellement sur un délai de 2, 3, 4 ou 8 heures.</p> |
    | [!UICONTROL **Format de compression**] | Sélectionnez le format de compression des fichiers de sortie Parquet diffusés vers votre destination cloud. Choisissez l’un des formats suivants :<ul><li>[!UICONTROL **Snappy**] : compression et décompression rapides avec des tailles de fichier modérées. Largement pris en charge par les plateformes de données modernes telles que BigQuery, Snowflake et Apache Spark.</li><li>[!UICONTROL **GZip**] : largement compatible, y compris avec les outils qui ne prennent pas en charge Snappy en mode natif. Recommandé si votre pipeline en aval nécessite une norme de compression largement reconnue.</li><li>[!UICONTROL **Z Standard (Zstd)**] : Efficacité de compression élevée avec décompression rapide. Convient si la réduction de la taille du fichier est une priorité et que vos outils prennent en charge Zstd.</li></ul> |
 
@@ -318,20 +340,20 @@ Avant de créer un flux de données, il est important de comprendre les bases de
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_lookback_date_range"
 >title="Période de recherche en amont"
->abstract="Contrôle la période sur laquelle Customer Journey Analytics se base pour traiter la diffusion du flux de données. Ce paramètre est similaire à la période de création de rapports d’Analysis Workspace, mais avec des différences importantes :<ul><li>Les événements sont inclus dans le flux de données s’ils ont des horodatages compris dans la fenêtre de fréquence et non dans la période de recherche en amont. (Dans Analysis Workspace, les événements sont inclus dans un rapport s’ils ont des horodatages compris dans la période de création de rapports.)</li><li>Les événements dont la date et l’heure se situent dans la plage de dates de recherche en amont (mais en dehors de la fenêtre de fréquence) peuvent toujours influencer les données qui apparaissent dans le flux par le biais de la qualification des segments, du calcul de session, des transformations de champ dérivées et de la persistance des dimensions.</li><p>Une période de recherche en amont plus longue entraîne généralement des événements plus précis ; une période plus courte entraîne de meilleures performances de diffusion.</p>"
+>abstract="Contrôle l’historique de Customer Journey Analytics lors du traitement de chaque diffusion.<p>La fenêtre de fréquence (heure ou jour) détermine les événements inclus dans le flux de données, tandis que la **période de recherche en amont** fournit le contexte historique nécessaire pour classer correctement ces événements.</p><p>La qualification des segments, la persistance des dimensions, le calcul de session et les transformations de champs dérivés peuvent tous affecter les événements inclus.</p><p>Une recherche arrière plus longue améliore la précision ; une recherche arrière plus courte améliore les performances.</p>"
 
 <!-- markdownlint-enable MD034 -->
 
+La période de recherche en amont contrôle l’historique de Customer Journey Analytics lors du traitement de chaque diffusion de flux de données.
 
-
-La période de recherche en amont contrôle l’historique de Customer Journey Analytics lors du traitement de la diffusion du flux de données. La valeur par défaut est de 30 jours.
+Les événements doivent toujours avoir des horodatages compris dans la fenêtre de fréquence (heure ou jour) pour être inclus dans la diffusion, mais les données qui se trouvent dans la **période de recherche en amont** fournissent le contexte historique nécessaire pour classer correctement ces événements.
 
 Lors de la configuration de cette option, tenez compte des concepts importants suivants :
 
 * Une période de recherche en amont plus longue permet généralement d’obtenir des données plus précises ; une période plus courte permet d’obtenir de meilleures performances de diffusion.
-* La période de recherche en amont dans les flux de données est similaire à la période de création de rapports dans Analysis Workspace, mais il existe des [&#x200B; différences clés &#x200B;](/help/components/exports/cja-data-feeds/df-comparison-workspace.md#differences). Ces différences peuvent entraîner des incohérences de données entre les rapports Workspace et les diffusions de flux de données.
-* La période de recherche en amont ne modifie pas la fenêtre de fréquence (heure ou jour), qui définit la période des événements à inclure dans la sortie du flux de données.
-* Les données qui se trouvent dans la période de recherche en amont peuvent influencer les éléments inclus dans le flux de données (fenêtre de fréquence), selon les facteurs décrits dans les sections ci-dessous.
+* La période de recherche en amont, ainsi que la fenêtre de fréquence, fonctionnent de la même manière que la période de création de rapports d’Analysis Workspace. Cependant, il existe [des différences majeures](/help/components/exports/cja-data-feeds/df-comparison-workspace.md#differences). Ces différences peuvent entraîner des incohérences de données entre les rapports Workspace et les diffusions de flux de données.
+
+La qualification des segments, le calcul des sessions, la persistance des dimensions et les transformations de champs dérivés sont chacun pris en compte lors du traitement des données dans la période de recherche en amont :
 
 ### Qualification de segment
 
@@ -356,11 +378,7 @@ Dans ce cas, les utilisateurs ne sont inclus dans le flux de données que s’il
 
 ### Calcul de session
 
-Les limites de session sont calculées à l’aide de données comprises dans la période de recherche en amont. Cela est-il plus important concernant l’ID de session ? Cela peut-il avoir un impact sur l’ID de session ? Cela peut avoir un impact sur de nombreux éléments, tels que la persistance basée sur une session.
-
-### Transformations de champ dérivées
-
-Toutes les fonctions de champ dérivé qui font référence à des conteneurs utilisent la période de recherche en amont dans les exportations de flux de données. Quelles sont les fonctionnalités de date disponibles dans les champs dérivés ? Je ne sais pas comment cela s’applique.
+Les limites de session sont calculées à l’aide de données comprises dans la période de recherche en amont. <!--Maybe this matters more regarding what the session ID is? Could it impact the Session ID? This could impact several factors, such as session-based persistence.-->
 
 ### Persistance de Dimension
 
@@ -389,10 +407,13 @@ Dans ce cas, la campagne d’origine s’affiche dans la sortie du flux de donn�
 
 * L’utilisateur s’est qualifié pour la campagne d’origine **à un moment dans la période de recherche en amont**.
 
-  Si l’utilisateur s’est qualifié pour la campagne d’origine il y a 9 jours, la campagne d’origine **serait incluse** dans le flux de données si la période de recherche arrière était définie sur 30 jours, mais la campagne d’origine **ne serait pas incluse** dans le flux de données si la période de recherche arrière était définie sur 7 jours.
+  Si l’utilisateur s’est qualifié pour la campagne d’origine il y a 9 jours, la campagne d’origine **est incluse** dans le flux de données si la période de recherche arrière est définie sur 30 jours, mais la campagne d’origine **n’est pas incluse** dans le flux de données si la période de recherche arrière est définie sur 7 jours.
 
 >[!ENDSHADEBOX]
 
+### Transformations de champ dérivées
+
+Toutes les fonctions de champ dérivé qui font référence à des conteneurs utilisent la période de recherche en amont dans les exportations de flux de données. Quelles sont les fonctionnalités de date disponibles dans les champs dérivés ? <!--Not sure how this applies.-->
 
 
 

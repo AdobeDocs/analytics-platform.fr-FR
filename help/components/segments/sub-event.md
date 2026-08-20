@@ -6,16 +6,14 @@ feature_v2:
   - id: c153fd90-23e1-4614-81d3-3cc7571227f7
 subfeature_v2:
   - id: a544b409-2610-410d-a842-474ac1d0d54e
-source-git-commit: 3fcb9c403ace295c1a7e62c21d8bb444a4f9c011
+source-git-commit: 8a5568b3b6136bc3f8b507f551fbb6d169e4b88a
 workflow-type: tm+mt
-source-wordcount: 636
-ht-degree: 9%
+source-wordcount: 680
+ht-degree: 8%
 
 ---
 
 # Analyse des sous-événements
-
-{{release-limited-testing}}
 
 L&#39;analyse des sous-événements permet d&#39;analyser les données d&#39;un événement à un niveau plus granulaire que le niveau de l&#39;événement. Au lieu de filtrer des événements entiers, vous pouvez segmenter des événements sur des conteneurs individuels. Par exemple :
 
