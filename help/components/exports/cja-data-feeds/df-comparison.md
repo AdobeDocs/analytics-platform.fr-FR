@@ -7,20 +7,14 @@ hide: true
 exl-id: 32b71016-7c53-409f-9ce4-521a40e2eb96
 autotag-review: '2026-05-19T08:44:26.806Z'
 TQID: 'https://experienceleague.adobe.com/R7c5-VutwSkyghNvwC2gZv2KUEJoa263AN0Tkdg3w4o'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: 66a8a96da6710d20b01b9315fe87ba38c54c2511
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: 87de19a64e49f83c99df7980828b97a1da2c2d16
 workflow-type: tm+mt
-source-wordcount: 954
+source-wordcount: 1074
 ht-degree: 2%
 
 ---
@@ -31,6 +25,43 @@ ht-degree: 2%
 
 Les flux de données dans Customer Journey Analytics et Adobe Analytics vous permettent d’exporter des données brutes vers des plateformes tierces. Si vous avez déjà utilisé des flux de données dans Adobe Analytics, utilisez les informations suivantes pour comprendre les différences au niveau des fonctionnalités et des concepts disponibles :
 
+## Fonctionnalité disponible uniquement dans les flux de données Customer Journey Analytics
+
+* Champs dérivés
+
+  Incluez les composants de champ dérivés dans les flux de données.
+
+* Groupement
+
+  Active la résolution d’identité entre appareils, en liant les événements entre appareils à une seule personne.
+
+* Vue structurée des données
+
+  Utilise des données structurées lors de la création de flux de données dans les fichiers diffusés. Les flux de données Adobe Analytics utilisent une chaîne.
+
+* Rail de composants avec des dimensions et des mesures correspondant à Analysis Workspace
+
+  Utilise les dimensions et les mesures disponibles dans votre vue de données. Dans Adobe Analytics, une liste prédéfinie de champs et de colonnes est utilisée.
+
+* Tous les segments appliqués à votre vue de données sont automatiquement hérités dans le flux de données
+
+* Les segments peuvent être appliqués directement au flux de données (en plus des segments déjà appliqués sur la vue de données)
+
+* Les flux correspondent au fuseau horaire de la vue de données <!-- how did it work in AA? -->
+
+* Livraison de parquet
+
+  Génère un fichier Parquet moderne, qui prend en charge de manière native des données imbriquées et structurées complexes. Les listes de produits sont représentées sous la forme de tableaux structurés/objets imbriqués.
+
+* Chemins de style Hive
+
+* Les modifications apportées aux composants dans la vue de données se rapportent aux flux de données
+
+<!-- * Web MCP when it's added -->
+
+
+## Comparaison des fonctionnalités
+
 | **concepts et options de configuration** | **Customer Journey Analytics** | **Adobe Analytics** |
 |---------|----------|---------|
 | **Saisie de données**<br/> Type de données qui peut être collecté et inclus dans les flux de données. | Prend en charge l’entrée de données cross-canal, y compris les données web, les données de centre d’appels, les données de point de vente, etc. | Prend principalement en charge l’entrée de données web et mobile. D’autres types de données (tels que les données des centres d’appels ou des points de vente) peuvent être ingérés par le biais de sources de données, mais avec des capacités de traitement très limitées. |
@@ -39,8 +70,6 @@ Les flux de données dans Customer Journey Analytics et Adobe Analytics vous per
 | **Accès en retard**<br/> Accès dont l’horodatage appartient à une fenêtre de fréquence de diffusion précédente, mais qui arrivent après l’expiration de cette fenêtre. <p>Par exemple, les accès tardifs peuvent provenir d’une application mobile qui met en mémoire tampon les événements hors ligne et les envoie lorsqu’elle se reconnecte.</p> | Le paramètre **Délai de traitement** contrôle la durée pendant laquelle le système attend la fermeture de la fenêtre de fréquence avant de déclencher l’exportation, ce qui laisse un temps supplémentaire pour l’arrivée des données retardées. | Les accès en retard peuvent être **inclus ou exclus** via l’option de configuration **Accès en retard**. <p>Le paramètre **Intervalle de recherche en amont** contrôle l’intervalle de temps écoulé par le système pour inclure les données différées.</p> |
 | **Accès dans le désordre**<br/> Accès dont les horodatages ne correspondent pas à l’ordre dans lequel ils ont été reçus. | Étant donné que Customer Journey Analytics accepte les données en flux continu et par lots, il n’existe aucune garantie que les événements pour une personne donnée arriveront dans l’ordre d’horodatage. Bien que Customer Journey Analytics réorganise les données par horodatage et par personne, il ne peut exporter que les données qui sont arrivées. Cela signifie que les accès en retard peuvent être exportés après les accès avec un horodatage ultérieur.<p>Le paramètre **Délai de traitement** permet de réduire les événements dans le désordre dans la sortie du flux de données en donnant plus de temps aux données par lots d’arriver avant l’exportation. L’ordre des événements dans la diffusion n’est pas garanti.</p><p>**Important** : le consommateur final des données de votre flux de données doit être en mesure de gérer les horodatages dans le désordre, par personne, car la commande des accès dans la diffusion du flux de données n’est pas garantie.</p> | Adobe Analytics exige que les données arrivent dans l’ordre par visiteur au moment de la collecte, mais l’ordre des accès dans la diffusion du flux de données n’est pas garanti.</p> |
 | **Fenêtre de renvoi**<br/> Exporte les données historiques comprises entre deux dates antérieures. | Limité à la fenêtre dynamique de données de la connexion. | Limité à la limite de conservation des données de la suite de rapports : **25 mois** par défaut. |
-| **Segmentation** | Les segments peuvent être appliqués aux flux de données via le segment de la vue de données, un segment spécifique au flux, ou les deux. | Les segments ne peuvent pas être appliqués. |
-| **Assemblage** | Pris en charge. Active la résolution d’identité entre appareils, en liant les événements entre appareils à une seule personne. | Non pris en charge. Les données groupées ne peuvent pas être exportées via les flux de données Adobe Analytics. |
 | **Schéma**<br/> Le schéma de flux de données détermine les colonnes disponibles à inclure dans un flux de données. | Le schéma de flux de données est basé sur la configuration de la vue de données.  Les composants qui peuvent être inclus dans le schéma de flux de données sont un sous-ensemble des composants disponibles dans la configuration des vues de données.</p> | Une liste statique prédéfinie de plus de 1 100 variables. De nombreuses colonnes sont exportées sous la forme de **paires prétraitées et post-traitées** (par exemple, `eVar1`/`post_eVar1`), ce qui représente une grande partie du nombre de colonnes. |
 | **Recherches**<br/> Les recherches dynamiques vous permettent de recevoir des fichiers de recherche supplémentaires dans votre flux de données qui ne seraient pas disponibles autrement. | Non nécessaire, car les recherches et les classifications sont toutes deux disponibles en tant que dimensions traitées directement dans la vue de données. Lorsque vous traitez une recherche ou une classification en tant que dimension dans la vue de données, les valeurs résolues apparaissent sous la forme de colonnes régulières dans la sortie Parquet, en ligne avec les données d’événement, et non sous la forme de fichiers de référence distincts. | Utilisé pour faire correspondre un nombre d’une colonne de flux de données à une valeur réelle. Spécifiques à un certain ensemble d’éléments (navigateur, système d’exploitation, appareil mobile) et appliqués sous la forme d’un fichier distinct fourni avec le flux de données. |
 | **Définition de la session**<br/> <!--(could be included in the data processing section instead)--> | Défini dans la vue de données . | Défini au moment de la collecte. |
