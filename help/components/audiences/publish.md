@@ -21,10 +21,10 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: d2016e34b4b73c6eebb05097aa43f823c578c2b6
+source-git-commit: 87de19a64e49f83c99df7980828b97a1da2c2d16
 workflow-type: tm+mt
 source-wordcount: 2520
-ht-degree: 94%
+ht-degree: 93%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="components_audiences_refreshfrequency"
 >title="Fréquence d’actualisation"
->abstract="Fréquence à laquelle l’adhésion d’une audience est réévaluée.<br/>Les audiences uniques sont évaluées une seule fois et ne sont pas prises en compte dans votre limite d’actualisation."
+>abstract="Fréquence à laquelle l’abonnement d’une audience est réévalué. <br/>Les requêtes uniques ne sont évaluées qu’une seule fois et ne sont pas prises en compte dans votre limite d’actualisation."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -44,7 +44,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="components_audiences_audiencelimit"
 >title="Actualiser la limite d’audience"
->abstract="Nombre d’audiences de votre environnement configurées pour s’actualiser automatiquement à une fréquence planifiée. Les limites sont comprises entre 75 et 150, selon vos droits Customer Journey Analytics. Les actualisations uniques ne sont pas prises en compte dans cette limite."
+>abstract="Nombre d’audiences de votre environnement configurées pour s’actualiser automatiquement à une fréquence planifiée. Les limites sont comprises entre 75 et 150, selon vos droits Customer Journey Analytics. Les demandes ponctuelles ne sont pas prises en compte dans cette limite."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -117,7 +117,7 @@ Configurez ces paramètres pour définir ou mettre à jour votre audience.
 | **[!UICONTROL Nom]** | Nom de l’audience. Par exemple, `Really Interested in Potential Car Buyers` |
 | **[!UICONTROL Balises]** | Toutes les balises que vous souhaitez affecter à l’audience à des fins d’organisation. Vous pouvez sélectionner une ou plusieurs balises préexistantes ou en saisir une nouvelle. |
 | **[!UICONTROL Description]** | Description de l’audience pour la différencier des autres. Par exemple, `Build an audience of really interested potential car buyers` |
-| **[!UICONTROL Fréquence d’actualisation]** | Fréquence à laquelle vous souhaitez actualiser l’audience.<p/><p>Vous pouvez configurer une actualisation planifiée pour un nombre limité d’audiences (entre 75 et 150), en fonction de vos droits Customer Journey Analytics. </p><p>Vous pouvez choisir parmi les options suivantes :</p><ul><li>Audience **[!UICONTROL ponctuelle]** : audience (par défaut) qui n’a pas besoin d’être actualisée. Par exemple, cette option peut s’avérer utile pour des campagnes ponctuelles spécifiques.<br/>Vous devez spécifier une **[!UICONTROL Période ponctuelle]**. Vous pouvez utiliser ![Calendrier](/help/assets/icons/Calendar.svg) pour saisir une période.</li><li>Audience actualisable. Vous pouvez choisir parmi les options d’actualisation planifiée suivantes :<ul><li>**[!UICONTROL Toutes les 4 heures]** : audience qui s’actualise toutes les 4 heures.</li><li>**[!UICONTROL Quotidien]** : audience qui s’actualise quotidiennement.</li><li>**[!UICONTROL Hebdomadaire]** : audience qui s’actualise toutes les semaines.</li><li>**[!UICONTROL Mensuel]** : audience qui s’actualise tous les mois.</li></ul></li>Pour actualiser les audiences, vous devez indiquer les informations suivantes :<ul><li>**[!UICONTROL Actualiser l’intervalle de recherche en amont]**. Définissez le nombre de jours de recherche en amont à partir desquels une audience est évaluée. Vous pouvez effectuer un choix parmi des options ou définir une heure personnalisée. La durée maximale est de 90 jours.</li><li>**[!UICONTROL Date d’expiration]** : permet de définir à quel moment l’audience cesse d’être actualisée. Vous pouvez utiliser ![Calendrier](/help/assets/icons/Calendar.svg) pour sélectionner une date. La valeur par défaut est d’un an à compter de la date de création. Les audiences arrivant à expiration sont traitées de la même manière que les rapports planifiés arrivant à expiration. L’administrateur ou l’administratrice reçoit un e-mail un mois avant l’expiration de l’audience.</li></ul></ul> |
+| **[!UICONTROL Fréquence d’actualisation]** | Fréquence à laquelle vous souhaitez actualiser l’audience.<p/><p>Vous pouvez configurer une actualisation planifiée pour un nombre limité d’audiences (entre 75 et 150), en fonction de vos droits Customer Journey Analytics. </p><p>Vous pouvez choisir parmi les options suivantes :</p><ul><li>**[!UICONTROL Une fois]** : demande ponctuelle qui ne doit pas être actualisée. Par exemple, cette option peut s’avérer utile pour des campagnes ponctuelles spécifiques.<br/>Vous devez spécifier une **[!UICONTROL Période ponctuelle]**. Vous pouvez utiliser ![Calendrier](/help/assets/icons/Calendar.svg) pour saisir une période.</li><li>Audience actualisable. Vous pouvez choisir parmi les options d’actualisation planifiée suivantes :<ul><li>**[!UICONTROL Toutes les 4 heures]** : audience qui s’actualise toutes les 4 heures.</li><li>**[!UICONTROL Quotidien]** : audience qui s’actualise quotidiennement.</li><li>**[!UICONTROL Hebdomadaire]** : audience qui s’actualise toutes les semaines.</li><li>**[!UICONTROL Mensuel]** : audience qui s’actualise tous les mois.</li></ul></li>Pour actualiser les audiences, vous devez indiquer les informations suivantes :<ul><li>**[!UICONTROL Actualiser l’intervalle de recherche en amont]**. Définissez le nombre de jours de recherche en amont à partir desquels une audience est évaluée. Vous pouvez effectuer un choix parmi des options ou définir une heure personnalisée. La durée maximale est de 90 jours.</li><li>**[!UICONTROL Date d’expiration]** : permet de définir à quel moment l’audience cesse d’être actualisée. Vous pouvez utiliser ![Calendrier](/help/assets/icons/Calendar.svg) pour sélectionner une date. La valeur par défaut est d’un an à compter de la date de création. Les audiences arrivant à expiration sont traitées de la même manière que les rapports planifiés arrivant à expiration. L’administrateur ou l’administratrice reçoit un e-mail un mois avant l’expiration de l’audience.</li></ul></ul> |
 | **[!UICONTROL Filtrer]** | Les filtres sont la principale entrée de l’audience. Effectuez un glisser-déposer d’un ou plusieurs segments depuis le panneau de gauche ![Segmentation](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segment]** vers la zone Segment. Vous pouvez utiliser ![Rechercher](/help/assets/icons/Search.svg) [!UICONTROL *Rechercher des segments*] pour rechercher des segments. Vous pouvez ajouter jusquʼà 20 segments. Les segments peuvent être liés avec des opérateurs **[!UICONTROL Et]** ou **[!UICONTROL Ou]**.<p>Lorsque vous créez une audience à partir d’une visualisation dans Analysis Workspace (un tableau à structure libre ou une zone de travail de parcours, par exemple), tous les segments appliqués au panneau ou à la colonne sont conservés. Vous pouvez supprimer tous les segments appliqués automatiquement.</p> |
 | **[!UICONTROL Prévisualisation des données]** | Sélectionnez ![Infos](/help/assets/icons/Info.svg) pour afficher ou masquer la [Prévisualisation des données](#data-preview) pour la période sélectionnée. |
 
