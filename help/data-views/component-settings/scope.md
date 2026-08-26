@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 hide: true
-source-git-commit: a4f7eef26a019f4f8a716f44d49985290b135112
+source-git-commit: 9df4c8cff6c0c044902453e5fb8380fbb5c5ac2d
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '170'
 ht-degree: 4%
 
 ---
@@ -25,6 +25,6 @@ La portée d’un composant de mesure détermine la manière dont il est utilis�
 | Portée | Description |
 |---|---|
 | Basé sur un événement | La portée du composant de mesure est basée sur un événement. |
-| Basé sur les profils | La portée du composant de mesure est basée sur le profil. Lorsque le composant est utilisé dans des rapports, des périodes, la mesure renvoie la population à partir des données de votre profil, quelle que soit la période appliquée au panneau. Les filtres de date et les comparaisons de périodes n’affectent pas la création de rapports de cette mesure. |
+| Basé sur les profils | La portée du composant de mesure est basée sur le profil. Lorsque le composant est utilisé dans les rapports, la mesure renvoie la population de vos données de profil, quelle que soit la période appliquée au panneau. Les filtres de date et les comparaisons de périodes n’affectent pas la création de rapports de cette mesure. |
 | D’après les totaux | La portée du composant de mesure est basée sur le profil et l’événement. Lorsque le composant est utilisé dans les rapports, la mesure renvoie la population de vos données de profil et d’événement, quelle que soit la période appliquée au panneau. Les filtres de date et les comparaisons de périodes n’affectent pas la création de rapports de cette mesure. |
 
