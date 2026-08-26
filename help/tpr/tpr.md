@@ -5,16 +5,16 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 hide: true
-source-git-commit: f7bbbaf0b737ab33088c7c585d6415f93deff4c8
+source-git-commit: 1ce48a6e077ee1069c55f3ef8969ed2eced4742e
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1388'
 ht-degree: 4%
 
 ---
 
 # Rapports sur la population totale
 
-Les rapports sur la population totale permettent d’analyser et de générer des rapports sur les entités définies dans les jeux de données de profil et de recherche et au-delà des séries temporelles d’événements des jeux de données d’événement. Cette fonctionnalité active de nouvelles classes de requêtes, de mesures et de définitions d’audience qui reflètent l’étendue complète de la base de clients d’une entreprise.
+Les rapports sur la population totale permettent d’analyser et de générer des rapports sur les entités définies dans des jeux de données de profil et de recherche qui existent dans une connexion Customer Journey Analytics. Cette analyse et ce compte rendu des performances vont au-delà des séries temporelles d’événements des jeux de données d’événements. Cette fonctionnalité active de nouvelles classes de requêtes, de mesures et de définitions d’audience qui reflètent l’ensemble de la base de clients et clientes d’une entreprise.
 
 Customer Journey Analytics s’articule autour d’événements. Chaque mesure, chaque visualisation, chaque panneau et chaque rapport est ancré à une période et à des événements qui se produisent au cours de cette période. Vous posez les questions suivantes sur les solutions :
 
