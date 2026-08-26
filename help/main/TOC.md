@@ -2,9 +2,9 @@
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 6c137d20d25cff6fe4630dedb33cfa8b88c121aa
+source-git-commit: 144df28d7146435a225d5e8eefb3b10fee702045
 workflow-type: tm+mt
-source-wordcount: '1481'
+source-wordcount: '1482'
 ht-degree: 91%
 
 ---
@@ -150,7 +150,7 @@ ht-degree: 91%
     + {hide-from-toc}[Vue d’ensemble](/help/connections/consent-reporting-filtering/consent-overview.md)
     + {hide-from-toc}[Configuration](/help/connections/consent-reporting-filtering/consent-configure.md)
     + {hide-from-toc}[Gérer](/help/connections/consent-reporting-filtering/consent-manage.md)
-    + {hide-from-toc}[&#x200B; Analyser &#x200B;](/help/connections/consent-reporting-filtering/consent-analyze.md)
+    + {hide-from-toc}[ Analyser ](/help/connections/consent-reporting-filtering/consent-analyze.md)
     + {hide-from-toc}[Cas d’utilisation](/help/connections/consent-reporting-filtering/consent-use-cases.md)
 + Vues des données {#cja-dataviews}
   + [Vue d’ensemble des vues de données](../data-views/data-views.md)
@@ -166,6 +166,7 @@ ht-degree: 91%
     + [Déduplication des mesures](../data-views/component-settings/metric-deduplication.md)
     + [Pas d’option de valeur](../data-views/component-settings/no-value-options.md)
     + [Persistance](../data-views/component-settings/persistence.md)
+    + {hide-from-toc}[Portée](/help/data-views/component-settings/scope.md)
     + [Sous-chaîne](../data-views/component-settings/substring.md)
     + [Groupe de données de résumé](../data-views/component-settings/summary-data-group.md)
     + [Groupement des valeurs](../data-views/component-settings/value-bucketing.md)
@@ -560,7 +561,7 @@ ht-degree: 91%
       + [Lier des lectures de session](/help/use-cases/third-party/quantum-metric/tie-session-replays.md)
       + [Utiliser des cartes thermiques](/help/use-cases/third-party/quantum-metric/heatmap.md)
       + [Ajouter des événements de friction](/help/use-cases/third-party/quantum-metric/friction-events.md)
-      + {hide-from-toc}[Connecteur &#x200B;](/help/use-cases/third-party/quantum-metric/source-connector.md)
+      + {hide-from-toc}[Connecteur ](/help/use-cases/third-party/quantum-metric/source-connector.md)
 
 + Labs {#labs}
   + [Guide d’utilisation de Labs](../labs/labs.md)
