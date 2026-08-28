@@ -16,10 +16,10 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 563f5d89ee9977a956565f68cb2b75adcfb37c0f
 workflow-type: tm+mt
-source-wordcount: 878
-ht-degree: 14%
+source-wordcount: 934
+ht-degree: 13%
 
 ---
 
@@ -29,8 +29,11 @@ Une fois le classeur enregistré et l’analyse terminée, vous pouvez le partag
 
 Vous pouvez créer plusieurs planifications pour un seul classeur. Par exemple, vous créez deux planifications pour envoyer un classeur à votre équipe tous les jours et à votre responsable une fois par semaine.
 
-La fonction de planification vous permet également de configurer la protection par mot de passe d’un classeur et de modifier les classeurs planifiés précédemment.
+La fonction de planification vous permet également de configurer la protection par mot de passe d’un classeur et de modifier la planification des classeurs planifiés précédemment.
 
+>[!NOTE]
+>
+>Une planification envoie la version du classeur qui existait lors de sa création. Si vous modifiez et enregistrez le classeur par la suite, le planning existant ne récupère pas ces modifications et continue à envoyer la version d’origine. Pour distribuer un classeur mis à jour, créez une planification après avoir enregistré vos modifications.
 
 >[!BEGINSHADEBOX]
 

@@ -23,10 +23,10 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 563f5d89ee9977a956565f68cb2b75adcfb37c0f
 workflow-type: tm+mt
-source-wordcount: 1309
-ht-degree: 40%
+source-wordcount: 1343
+ht-degree: 39%
 
 ---
 
@@ -53,10 +53,6 @@ Procédez comme suit lors de l’exportation de classeurs de Report Builder vers
 ![Processus d’exportation décrit aux étapes 1 à 4.](assets/report-builder-export-process.png)
 
 ## Exporter un rapport depuis Report Builder
-
->[!NOTE]
->
->Avant d’exporter des données comme décrit dans cette section, découvrez [le processus d’exportation](#understand-the-export-process) dans la section ci-dessus.
 
 Pour exporter des rapports depuis Report Builder :
 
@@ -100,6 +96,10 @@ Pour exporter des rapports depuis Report Builder :
    Les données sont envoyées au compte cloud que vous avez spécifié à la fréquence que vous avez spécifiée.
 
 1. (Facultatif) Après avoir créé l’export, que vous ayez choisi de l’envoyer maintenant ou selon un planning défini, vous pouvez l’afficher et le gérer sur la [page Exports](/help/components/exports/manage-exports.md) et l’afficher dans les [journaux d’export](/help/components/exports/manage-export-logs.md).</p>
+
+>[!NOTE]
+>
+>Un planning exporte la version du classeur qui existait lorsque vous avez créé le planning. Si vous modifiez et enregistrez le classeur par la suite, le planning existant ne récupère pas ces modifications et continue d’exporter la version d’origine. Pour exporter un classeur mis à jour, créez un planning après avoir enregistré vos modifications.
 
 ## Gérer des exports
 
