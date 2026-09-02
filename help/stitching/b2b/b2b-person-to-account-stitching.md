@@ -231,7 +231,7 @@ Vous devez d’abord activer et configurer le groupement B2B au niveau de la con
 >id="connection_b2b_stitching_enable_person_to_account"
 >title="Activer l’assemblage personne-compte"
 >abstract="Si cette option est activée, ce jeu de données utilise l’assemblage B2B Personne à compte. Les valeurs **[!UICONTROL ID de personne persistant]** sont élevées en valeurs issues de l’espace de noms **[!UICONTROL Identifiant de personne]** configuré, puis utilisées pour rechercher l’ID de compte en fonction du jeu de données personne-à-compte.<br/>Si cette option est désactivée, ce jeu de données n’utilise pas l’assemblage des personnes B2B avec les comptes et vous devez sélectionner un **[!UICONTROL ID de compte]** obligatoire à la place."
->additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/b2b-account-stitching#configure-b2b-stitching-settings" text="Configurer la personne B2B pour les paramètres d’assemblage des comptes"
+>additional-url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/stitching/b2b-account-stitching#configure-b2b-stitching-settings" text="Configurer la personne B2B pour les paramètres d’assemblage des comptes"
 
 Après avoir configuré la personne B2B pour l’assemblage des comptes au niveau de la connexion, vous devez activer la personne B2B pour l’assemblage des comptes individuellement pour chaque jeu de données d’événement que vous souhaitez assembler.
 
