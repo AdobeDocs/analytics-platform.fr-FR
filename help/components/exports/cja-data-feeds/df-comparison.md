@@ -7,21 +7,15 @@ hide: true
 exl-id: 32b71016-7c53-409f-9ce4-521a40e2eb96
 autotag-review: '2026-05-19T08:44:26.806Z'
 TQID: 'https://experienceleague.adobe.com/R7c5-VutwSkyghNvwC2gZv2KUEJoa263AN0Tkdg3w4o'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: 6c07f0bc3dce3155d0605619194fc6a765ac2f3e
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: 4872f0078640fbd358a60a6d7baeb3ea575d3559
 workflow-type: tm+mt
-source-wordcount: 1485
-ht-degree: 1%
+source-wordcount: 1629
+ht-degree: 0%
 
 ---
 
@@ -31,31 +25,33 @@ ht-degree: 1%
 
 Les flux de données dans Customer Journey Analytics et Adobe Analytics vous permettent d’exporter des données brutes vers des plateformes tierces.
 
-Si vous avez déjà utilisé des flux de données dans Adobe Analytics, utilisez les informations suivantes pour comprendre les différences au niveau des fonctionnalités et des concepts disponibles :
+Si vous avez déjà utilisé des flux de données dans Adobe Analytics, utilisez les informations suivantes pour comprendre les différences de fonctionnalités et de concepts disponibles.
+
+Pour une comparaison des flux de données par rapport à d’autres méthodes d’exportation Customer Journey Analytics, telles que l’exportation de table complète, voir [Comparaison des produits Analytics](/help/getting-started/analytics-product-comparison.md).
 
 ## Fonctionnalités disponibles uniquement dans les flux de données Customer Journey Analytics
 
 Les fonctionnalités suivantes sont disponibles dans les flux de données Customer Journey Analytics, mais ne sont pas disponibles dans les flux de données Adobe Analytics :
 
-* **Champs dérivés** : composants personnalisés créés à partir de transformations basées sur des règles qui peuvent être incluses dans votre schéma de flux.
+* **Champs dérivés** : composants personnalisés créés à partir de transformations basées sur des règles qui peuvent être incluses dans votre schéma de flux de données. <!-- add benefit -->
 
 * **Assemblage** : résolution d’identité entre appareils qui lie les événements sur plusieurs appareils à une seule personne.
 
-* **Modèle de données structuré** : les flux sont créés et diffusés à l’aide de données structurées plutôt que de chaînes plates telles que post_product_list.
+* **Modèle de données structuré** : les flux sont créés et diffusés à l’aide de données structurées plutôt que de chaînes plates telles que post_product_list. Reflète la structure existante à partir du schéma XDM et de la vue de données.
+
+* **Sortie Parquet** : les fichiers sont diffusés au format Parquet, qui prend en charge de manière native les données imbriquées et structurées complexes. Cela signifie que les données sont plus faciles d’accès dans une base de données en appliquant les pratiques standard du secteur.
 
 * **Segmentation** : les segments appliqués à la vue de données sont automatiquement hérités et des segments supplémentaires peuvent être appliqués directement au flux.
 
-* **Fuseau horaire de la vue de données** : les fenêtres de diffusion de flux s’alignent sur le fuseau horaire de la vue de données.
-
-* **Sortie Parquet** : les fichiers sont diffusés au format Parquet, prenant en charge de manière native les données imbriquées et structurées complexes.
-
 * **Chemins de partition de style Hive** : les fichiers Output utilisent des chemins de style Hive pour des requêtes efficaces dans les environnements de lac de données.
 
-* **Propagation de la mise à jour des composants** : les modifications apportées aux composants dans la vue de données se propagent automatiquement au flux.
+* **Les mises à jour des composants s’appliquent rétroactivement** : les modifications apportées aux composants dans la vue de données sont répercutées historiquement dans les renvois.
 
-* **Recherches** : les recherches dynamiques vous permettent de recevoir des fichiers de recherche supplémentaires dans votre flux de données qui ne seraient pas disponibles autrement.
+* **Recherches** : les classifications ne sont pas incluses dans les flux de données Adobe Analytics. Dans Customer Journey Analytics, toutes les recherches sont directement incorporées dans les données.
 
-* **Interface familière aux utilisateurs d’Analysis Workspace** : sélectionnez des dimensions et des mesures à l’aide du même rail de composant qu’Analysis Workspace, plutôt qu’une liste statique de noms de variables.
+* **Interface familière aux utilisateurs d’Analysis Workspace** : les composants proviennent directement de la vue de données et sont également disponibles dans Analysis Workspace. Vous pouvez sélectionner des dimensions et des mesures à l’aide du même rail de composants qu’Analysis Workspace, plutôt que d’une liste statique de noms de variables.
+
+* **Plus de modèles de persistance disponibles** : cinq modèles de persistance différents peuvent être utilisés dans les flux de données Customer Journey Analytics.
 
 <!-- * Web MCP when it's added -->
 
@@ -78,15 +74,17 @@ Le tableau suivant compare les concepts clés et les options de configuration de
 | **Schéma**<br/> Le schéma de flux de données détermine les colonnes disponibles à inclure dans un flux de données. | Le schéma de flux de données est basé sur la configuration de la vue de données.  Les composants qui peuvent être inclus dans le schéma de flux de données sont un sous-ensemble des composants disponibles dans la configuration des vues de données. | Une liste statique prédéfinie de plus de 1 100 variables. De nombreuses colonnes sont exportées sous la forme de **paires pré-traitées et post-traitées** (par exemple, `eVar1`/`post_eVar1`), ce qui représente une grande partie du nombre de colonnes. |
 | **Créateur de flux de données**<br/> interface utilisée pour configurer les colonnes incluses dans un flux de données. | Utilise un rail de composants avec les mêmes dimensions et mesures nommées disponibles dans la vue de données, correspondant à l’expérience Analysis Workspace. | Utilise une liste plate de noms de variables brutes (tels que `eVar1`, `prop5`) sélectionnés à partir d’un ensemble prédéfini de plus de 1 100 colonnes. Les composants ne sont pas nommés ni décrits au-delà de leur identifiant de variable. |
 | **Champs dérivés**<br/> Composants personnalisés définis à l’aide de transformations basées sur des règles appliquées au moment du rapport. | Pris en charge. Les composants de champ dérivés peuvent être inclus dans le schéma de flux de données avec les dimensions et mesures standard. | Non pris en charge. |
-| **Mises à jour des composants**<br/> Indique si les modifications apportées à la configuration des composants sont répercutées dans les futures sorties du flux de données. | Les modifications apportées aux composants dans la vue de données (comme le changement de nom ou la suppression d’une dimension) se propagent automatiquement aux futurs flux de données. | Sans objet. Le schéma des colonnes est prédéfini et statique ; aucun composant au niveau de la vue de données ne doit être mis à jour. |
-| **Recherches**<br/> Les recherches dynamiques vous permettent de recevoir des fichiers de recherche supplémentaires dans votre flux de données qui ne seraient pas disponibles autrement. | Non nécessaire, car les recherches et les classifications sont toutes deux disponibles en tant que dimensions traitées directement dans la vue de données. Lorsque vous traitez une recherche ou une classification en tant que dimension dans la vue de données, les valeurs résolues apparaissent sous la forme de colonnes régulières dans la sortie Parquet, en ligne avec les données d’événement, et non sous la forme de fichiers de référence distincts. | Fourni sous la forme d’un fichier de recherche distinct fourni avec le flux. Couvre un ensemble fixe de dimensions, telles que le navigateur, le système d’exploitation et l’appareil mobile. |
+| **Mises à jour des composants**<br/> Indique si les modifications apportées à la configuration des composants sont répercutées dans les sorties de flux de données passées et futures. | Les modifications apportées aux composants dans la vue de données (comme le changement de nom ou la suppression d’une dimension) se propagent aux futurs flux de données et sont également répercutées dans les renvois. | Les modifications apportées aux composants de la suite de rapports s’appliquent uniquement aux données collectées ultérieurement. |
+| Les jeux de données **recherches**<br/> recherches dans Customer Journey Analytics sont équivalents aux classifications dans Adobe Analytics. | Toutes les recherches sont directement incorporées dans les données. | Les classifications ne sont pas incluses dans les flux de données d’analyse d’Adobe. |
 | **Définition de session**<br/> Définition d’une visite ou d’une limite de session, qui affecte la manière dont les événements sont regroupés et attribués. | Défini dans la vue de données. | Défini au moment de la collecte. |
-| **Segmentation**<br/> La possibilité de filtrer la sortie des flux de données à l’aide de segments. | Les segments appliqués à la vue de données sont automatiquement hérités par le flux de données. Des segments supplémentaires peuvent également être appliqués directement à un flux de données individuel. | Non pris en charge. Les flux de données exportent toutes les données collectées sans filtrage de segment. |
-| **Mesures calculées**<br/> mesures personnalisées que vous pouvez créer à partir de mesures existantes. | Non disponible | Non disponible |
+| **Segmentation**<br/> La possibilité de filtrer la sortie des flux de données à l’aide de segments. | Les segments appliqués à la vue de données sont automatiquement hérités par le flux de données. Des segments supplémentaires peuvent également être appliqués directement à un flux de données individuel. Pour plus d’informations, voir [ Segmentation dans les flux de données ](/help/components/exports/cja-data-feeds/df-segmentation.md). | Non pris en charge. Les flux de données exportent toutes les données collectées sans filtrage de segment. |
+| **Mesures calculées**<br/> mesures personnalisées que vous pouvez créer à partir de mesures existantes. | Non pris en charge | Non pris en charge |
 | **Modèle de persistance**<br/> si ou comment les valeurs de dimension persistent d’un événement à l’autre. | Flexible. Les paramètres de persistance de la vue de données (attribution et expiration) sont appliqués au moment du rapport lorsque le flux est généré. Prend en charge tous les paramètres d’attribution disponibles dans une vue de données : **Original**, **Le plus récent**, **Tous**, **Premier connu** et **Dernier connu**. | Seuls les modèles d’attribution **la plus récente (dernière touche)** et **valeur d’origine (première touche)** sont représentés. L’affectation linéaire est gérée de la même manière que la dernière touche. |
-| **Format de fichier de sortie**<br/> format utilisé pour les fichiers de sortie de flux de données diffusés vers votre destination cloud. | Parquet<p>Prend en charge de manière native des données imbriquées et structurées complexes. Les listes de produits sont représentées sous la forme de tableaux structurés/objets imbriqués. </p><p>Nécessite un outil de lecture prenant en compte le parquet, tel que BigQuery, Snowflake ou Apache Spark.</p> | TSV<p>Lignes plates et lisibles par l’utilisateur. ne prend pas en charge les données structurées de manière native ; les champs complexes tels que les listes de produits doivent être codés en tant que chaînes délimitées propriétaires nécessitant une logique d’analyse personnalisée ;</p> |
+| **Format de fichier de sortie**<br/> format utilisé pour les fichiers de sortie de flux de données diffusés vers votre destination cloud. | Parquet<p>Prend en charge de manière native des données imbriquées et structurées complexes. Les champs tels que `post_product_list` sont représentés sous la forme de tableaux structurés/objets imbriqués. </p><p>Nécessite un outil de lecture prenant en compte le parquet, tel que BigQuery, Snowflake ou Apache Spark.</p><p>La structure du schéma est incorporée dans le fichier de sortie.</p> | TSV<p>Lignes plates et lisibles par l’utilisateur. ne prend pas en charge les données structurées de manière native ; les champs complexes tels que les listes de produits doivent être codés en tant que chaînes délimitées propriétaires nécessitant une logique d’analyse personnalisée ;</p> |
 | **Chemins d’accès aux fichiers de sortie**<br/> structure de répertoires utilisée pour les fichiers de sortie diffusés. | Utilise des **chemins de partition de type ruche** (par exemple, `year=2024/month=01/day=15/`), permettant un nettoyage efficace des partitions lors de l’interrogation de données dans des environnements de lac de données tels que Databricks ou Apache Spark. | Utilise une structure de répertoires plate. Les chemins de style Hive ne sont pas pris en charge. |
 | **Destinations de diffusion**<br/> Emplacements de stockage dans le cloud où les fichiers de sortie des flux de données peuvent être envoyés. | Amazon S3, Azure RBAC, Azure SAS, Google Cloud Platform. | Amazon S3, Azure RBAC, Azure SAS, Google Cloud Platform. <p>Prend également en charge **SFTP**.</p> |
+| **Similarité avec Analysis Workspace**<br/> Indique si le créateur de flux de données utilise les mêmes composants et la même terminologie qu’Analysis Workspace. | Le rail de gauche dans les flux de données est similaire au rail de gauche de Workspace. Les composants disponibles dans les flux de données sont également disponibles dans Workspace. | Liste statique de noms de variables qui ne correspondent pas nécessairement à ce que vous voyez dans Analysis Workspace. |
+| **Disponibilité du modèle de persistance**<br/> Modèles de persistance disponibles pour les dimensions dans un flux de données. | Cinq modèles de persistance sont disponibles pour les flux de données : Original, Le plus récent, Tous, Premier connu, Dernier connu | Deux modèles de persistance sont disponibles pour les flux de données : Première touche et Dernière touche |
 
 {style="table-layout:auto"}
 
