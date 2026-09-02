@@ -2,10 +2,10 @@
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 144df28d7146435a225d5e8eefb3b10fee702045
+source-git-commit: 99135905f825cbef805c1664f6fb554497df3c3d
 workflow-type: tm+mt
-source-wordcount: '1482'
-ht-degree: 91%
+source-wordcount: '1484'
+ht-degree: 90%
 
 ---
 
@@ -150,7 +150,7 @@ ht-degree: 91%
     + {hide-from-toc}[Vue d’ensemble](/help/connections/consent-reporting-filtering/consent-overview.md)
     + {hide-from-toc}[Configuration](/help/connections/consent-reporting-filtering/consent-configure.md)
     + {hide-from-toc}[Gérer](/help/connections/consent-reporting-filtering/consent-manage.md)
-    + {hide-from-toc}[&#x200B; Analyser &#x200B;](/help/connections/consent-reporting-filtering/consent-analyze.md)
+    + {hide-from-toc}[ Analyser ](/help/connections/consent-reporting-filtering/consent-analyze.md)
     + {hide-from-toc}[Cas d’utilisation](/help/connections/consent-reporting-filtering/consent-use-cases.md)
 + Vues des données {#cja-dataviews}
   + [Vue d’ensemble des vues de données](../data-views/data-views.md)
@@ -467,11 +467,12 @@ ht-degree: 91%
   + [Vue d’ensemble](/help/stitching/overview.md)
   + [Regroupement basé sur les champs](/help/stitching/fbs.md)
   + [Groupement basé sur les graphiques](/help/stitching/gbs.md)
-  + {hide-from-toc}[Assemblage de comptes B2B](/help/stitching/b2b-account-stitching.md)
   + [Demander un rapprochement](/help/stitching/use-stitching.md)
   + [Activer le rapprochement](/help/stitching/use-stitching-ui.md)
   + [Valider le groupement](/help/stitching/validate.md)
   + [Questions fréquentes](/help/stitching/faq.md)
+  + B2B {#b2b}
+    + {hide-from-toc}[Assemblage des personnes et des comptes](/help/stitching/b2b/b2b-person-to-account-stitching.md)
 
 + Rapports sur la population totale {#tpr}
   + {hide-from-toc}[Vue d’ensemble](/help/tpr/tpr.md)
@@ -561,7 +562,7 @@ ht-degree: 91%
       + [Lier des lectures de session](/help/use-cases/third-party/quantum-metric/tie-session-replays.md)
       + [Utiliser des cartes thermiques](/help/use-cases/third-party/quantum-metric/heatmap.md)
       + [Ajouter des événements de friction](/help/use-cases/third-party/quantum-metric/friction-events.md)
-      + {hide-from-toc}[Connecteur &#x200B;](/help/use-cases/third-party/quantum-metric/source-connector.md)
+      + {hide-from-toc}[Connecteur ](/help/use-cases/third-party/quantum-metric/source-connector.md)
 
 + Labs {#labs}
   + [Guide d’utilisation de Labs](../labs/labs.md)
