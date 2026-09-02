@@ -2,7 +2,7 @@
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 99135905f825cbef805c1664f6fb554497df3c3d
+source-git-commit: a971b268208ec49b5ccd84b11543263ff3a1abea
 workflow-type: tm+mt
 source-wordcount: '1484'
 ht-degree: 90%
@@ -150,7 +150,7 @@ ht-degree: 90%
     + {hide-from-toc}[Vue d’ensemble](/help/connections/consent-reporting-filtering/consent-overview.md)
     + {hide-from-toc}[Configuration](/help/connections/consent-reporting-filtering/consent-configure.md)
     + {hide-from-toc}[Gérer](/help/connections/consent-reporting-filtering/consent-manage.md)
-    + {hide-from-toc}[&#x200B; Analyser &#x200B;](/help/connections/consent-reporting-filtering/consent-analyze.md)
+    + {hide-from-toc}[ Analyser ](/help/connections/consent-reporting-filtering/consent-analyze.md)
     + {hide-from-toc}[Cas d’utilisation](/help/connections/consent-reporting-filtering/consent-use-cases.md)
 + Vues des données {#cja-dataviews}
   + [Vue d’ensemble des vues de données](../data-views/data-views.md)
@@ -472,7 +472,7 @@ ht-degree: 90%
   + [Valider le groupement](/help/stitching/validate.md)
   + [Questions fréquentes](/help/stitching/faq.md)
   + B2B {#b2b}
-    + {hide-from-toc}[Assemblage des personnes et des comptes](/help/stitching/b2b/b2b-person-to-account-stitching.md)
+    + [Combinaison de personnes et de comptes](/help/stitching/b2b/b2b-person-to-account-stitching.md)
 
 + Rapports sur la population totale {#tpr}
   + {hide-from-toc}[Vue d’ensemble](/help/tpr/tpr.md)
@@ -562,7 +562,7 @@ ht-degree: 90%
       + [Lier des lectures de session](/help/use-cases/third-party/quantum-metric/tie-session-replays.md)
       + [Utiliser des cartes thermiques](/help/use-cases/third-party/quantum-metric/heatmap.md)
       + [Ajouter des événements de friction](/help/use-cases/third-party/quantum-metric/friction-events.md)
-      + {hide-from-toc}[Connecteur &#x200B;](/help/use-cases/third-party/quantum-metric/source-connector.md)
+      + {hide-from-toc}[Connecteur ](/help/use-cases/third-party/quantum-metric/source-connector.md)
 
 + Labs {#labs}
   + [Guide d’utilisation de Labs](../labs/labs.md)
