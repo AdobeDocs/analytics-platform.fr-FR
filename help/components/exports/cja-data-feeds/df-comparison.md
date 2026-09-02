@@ -7,11 +7,17 @@ hide: true
 exl-id: 32b71016-7c53-409f-9ce4-521a40e2eb96
 autotag-review: '2026-05-19T08:44:26.806Z'
 TQID: 'https://experienceleague.adobe.com/R7c5-VutwSkyghNvwC2gZv2KUEJoa263AN0Tkdg3w4o'
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d00e9f03-e50b-4162-b143-0c0817c937c2
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: 4872f0078640fbd358a60a6d7baeb3ea575d3559
 workflow-type: tm+mt
 source-wordcount: 1629
@@ -77,7 +83,7 @@ Le tableau suivant compare les concepts clés et les options de configuration de
 | **Mises à jour des composants**<br/> Indique si les modifications apportées à la configuration des composants sont répercutées dans les sorties de flux de données passées et futures. | Les modifications apportées aux composants dans la vue de données (comme le changement de nom ou la suppression d’une dimension) se propagent aux futurs flux de données et sont également répercutées dans les renvois. | Les modifications apportées aux composants de la suite de rapports s’appliquent uniquement aux données collectées ultérieurement. |
 | Les jeux de données **recherches**<br/> recherches dans Customer Journey Analytics sont équivalents aux classifications dans Adobe Analytics. | Toutes les recherches sont directement incorporées dans les données. | Les classifications ne sont pas incluses dans les flux de données d’analyse d’Adobe. |
 | **Définition de session**<br/> Définition d’une visite ou d’une limite de session, qui affecte la manière dont les événements sont regroupés et attribués. | Défini dans la vue de données. | Défini au moment de la collecte. |
-| **Segmentation**<br/> La possibilité de filtrer la sortie des flux de données à l’aide de segments. | Les segments appliqués à la vue de données sont automatiquement hérités par le flux de données. Des segments supplémentaires peuvent également être appliqués directement à un flux de données individuel. Pour plus d’informations, voir [ Segmentation dans les flux de données ](/help/components/exports/cja-data-feeds/df-segmentation.md). | Non pris en charge. Les flux de données exportent toutes les données collectées sans filtrage de segment. |
+| **Segmentation**<br/> La possibilité de filtrer la sortie des flux de données à l’aide de segments. | Les segments appliqués à la vue de données sont automatiquement hérités par le flux de données. Des segments supplémentaires peuvent également être appliqués directement à un flux de données individuel. Pour plus d’informations, voir [&#x200B; Segmentation dans les flux de données &#x200B;](/help/components/exports/cja-data-feeds/df-segmentation.md). | Non pris en charge. Les flux de données exportent toutes les données collectées sans filtrage de segment. |
 | **Mesures calculées**<br/> mesures personnalisées que vous pouvez créer à partir de mesures existantes. | Non pris en charge | Non pris en charge |
 | **Modèle de persistance**<br/> si ou comment les valeurs de dimension persistent d’un événement à l’autre. | Flexible. Les paramètres de persistance de la vue de données (attribution et expiration) sont appliqués au moment du rapport lorsque le flux est généré. Prend en charge tous les paramètres d’attribution disponibles dans une vue de données : **Original**, **Le plus récent**, **Tous**, **Premier connu** et **Dernier connu**. | Seuls les modèles d’attribution **la plus récente (dernière touche)** et **valeur d’origine (première touche)** sont représentés. L’affectation linéaire est gérée de la même manière que la dernière touche. |
 | **Format de fichier de sortie**<br/> format utilisé pour les fichiers de sortie de flux de données diffusés vers votre destination cloud. | Parquet<p>Prend en charge de manière native des données imbriquées et structurées complexes. Les champs tels que `post_product_list` sont représentés sous la forme de tableaux structurés/objets imbriqués. </p><p>Nécessite un outil de lecture prenant en compte le parquet, tel que BigQuery, Snowflake ou Apache Spark.</p><p>La structure du schéma est incorporée dans le fichier de sortie.</p> | TSV<p>Lignes plates et lisibles par l’utilisateur. ne prend pas en charge les données structurées de manière native ; les champs complexes tels que les listes de produits doivent être codés en tant que chaînes délimitées propriétaires nécessitant une logique d’analyse personnalisée ;</p> |
