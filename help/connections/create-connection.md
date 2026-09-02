@@ -21,9 +21,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 2a7629993e235d66844db036ccce88e57fc20562
+source-git-commit: 9c0ddbb48c5cb1c62bded02d1455f2631ab1679f
 workflow-type: tm+mt
-source-wordcount: 10479
+source-wordcount: 10488
 ht-degree: 90%
 
 ---
@@ -413,8 +413,8 @@ Vous [ajoutez un ou plusieurs jeux de données](#add-datasets) ou [modifiez des 
 
 >[!CONTEXTUALHELP]
 >id="connection_b2bstitching_personid"
->title="ID de personne"
->abstract="Sélectionnez un champ de type identity ou identityMap , avec une couverture importante des événements. Les valeurs contenues seront élevées vers celles de l’espace de noms d’identifiant de personne configuré précédemment."
+>title="ID de personne persistant"
+>abstract="Sélectionnez un champ de type identity ou identityMap disponible sur tous les événements, comme le champ contenant les ECID. Ces identifiants seront élevés aux ID de personne à partir de l’espace de noms d’identifiant de personne configuré précédemment."
 
 >[!CONTEXTUALHELP]
 >id="connection_b2bstitching_accountid"
@@ -763,7 +763,7 @@ Pour un jeu de données de profil dans une connexion basée sur une personne, vo
 
 | Paramètre | Description |
 | --- | --- |
-| **[!UICONTROL ID de personne]** | Sélectionnez un ID de personne dans le menu déroulant des identités disponibles. Ces identités ont été définies dans le schéma du jeu de données d’Experience Platform. Voir [Utiliser le mappage d’identités comme identifiant de personne](#id-map) pour plus d’informations sur l’utilisation du mappage d’identités comme identifiant de personne.<p>Si aucun ID de personne n’est disponible, cela signifie qu’aucun ID de personne n’est défini dans le schéma. Voir [Définir des champs d’identité dans l’interface utilisateur](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/ui/fields/identity) pour plus d’informations. <p>La valeur de l’ID de personne sélectionné est considérée comme sensible à la casse. Par exemple : `abc123` et `ABC123` sont deux valeurs différentes. <p>Si un enregistrement ne contient pas de valeur pour l’identité que vous avez sélectionnée en tant qu’ID de personne pour le jeu de données de profil, l’enregistrement est ignoré. |
+| **[!UICONTROL ID de personne]** | Sélectionnez un ID de personne dans le menu déroulant des identités disponibles. Ces identités ont été définies dans le schéma du jeu de données d’Experience Platform. Voir [Utiliser le mappage d’identité comme ID de personne](#id-map) pour plus d’informations sur cette action.<p>Si aucun ID de personne n’est disponible, cela signifie qu’aucun ID de personne n’est défini dans le schéma. Voir [Définir des champs d’identité dans l’interface utilisateur](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/ui/fields/identity) pour plus d’informations. <p>La valeur de l’ID de personne sélectionné est considérée comme sensible à la casse. Par exemple : `abc123` et `ABC123` sont deux valeurs différentes. <p>Si un enregistrement ne contient pas de valeur pour l’identité que vous avez sélectionnée en tant qu’ID de personne pour le jeu de données de profil, l’enregistrement est ignoré. |
 | **[!UICONTROL Type de source de données]** | Sélectionnez un type de source de données. Les types de sources de données incluent les éléments suivants : <ul><li>[!UICONTROL Données web]</li><li>[!UICONTROL Données d’application mobile]</li><li>[!UICONTROL Données de point de vente]</li><li>[!UICONTROL Données CRM]</li><li>[!UICONTROL Données de l’enquête]</li><li>[!UICONTROL Données du centre d’appels]</li><li>[!UICONTROL Données du produit]</li><li> [!UICONTROL Données des comptes]</li><li> [!UICONTROL Données de transaction]</li><li>[!UICONTROL Données de commentaires client]</li><li> [!UICONTROL Autre]</li></ul>Ce champ est utilisé pour interroger les types de sources de données en cours d’utilisation. |
 | **[!UICONTROL Description de la source de données]** | Description de la source de données lorsque vous avez sélectionné Autre comme type de source de données. |
 
@@ -775,7 +775,7 @@ Pour un jeu de données de profil dans une connexion basée sur un compte, vous 
 
 | Paramètre | Description |
 | --- | --- |
-| **[!UICONTROL ID de personne]** | Sélectionnez un ID de personne dans le menu déroulant des identités disponibles. Ces identités ont été définies dans le schéma du jeu de données d’Experience Platform. Voir [Utiliser le mappage d’identités comme identifiant de personne](#id-map) pour plus d’informations sur l’utilisation du mappage d’identités comme identifiant de personne.<p>Si aucun ID de personne n’est disponible, cela signifie qu’aucun ID de personne n’est défini dans le schéma. Voir [Définir des champs d’identité dans l’interface utilisateur](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/ui/fields/identity) pour plus d’informations. <p>La valeur de l’ID de personne sélectionné est considérée comme sensible à la casse. Par exemple : `abc123` et `ABC123` sont deux valeurs différentes. <p>Si un enregistrement ne contient pas de valeur pour l’identité que vous avez sélectionnée en tant qu’ID de personne pour le jeu de données de profil, l’enregistrement est ignoré. |
+| **[!UICONTROL ID de personne]** | Sélectionnez un ID de personne dans le menu déroulant des identités disponibles. Ces identités ont été définies dans le schéma du jeu de données d’Experience Platform. Voir [Utiliser le mappage d’identité comme ID de personne](#id-map) pour plus d’informations sur cette action.<p>Si aucun ID de personne n’est disponible, cela signifie qu’aucun ID de personne n’est défini dans le schéma. Voir [Définir des champs d’identité dans l’interface utilisateur](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/ui/fields/identity) pour plus d’informations. <p>La valeur de l’ID de personne sélectionné est considérée comme sensible à la casse. Par exemple : `abc123` et `ABC123` sont deux valeurs différentes. <p>Si un enregistrement ne contient pas de valeur pour l’identité que vous avez sélectionnée en tant qu’ID de personne pour le jeu de données de profil, l’enregistrement est ignoré. |
 | **[!UICONTROL Champ de compte global]** | Dans le menu déroulant des identités disponibles, sélectionnez un champ de compte global pour la prise en charge des rapports de performances basés sur les comptes pour le jeu de données. Applicable lorsque vous avez ajouté le compte global en tant que conteneur à votre connexion. |
 | **[!UICONTROL Champ de compte]** | Dans le menu déroulant des identités disponibles, sélectionnez un champ de compte pour la prise en charge des rapports basés sur les comptes pour le jeu de données. Applicable lorsque vous n’avez pas ajouté le compte global en tant que conteneur à votre connexion. |
 | **[!UICONTROL Type de source de données]** | Sélectionnez un type de source de données. Les types de sources de données incluent les éléments suivants : <ul><li>[!UICONTROL Données web]</li><li>[!UICONTROL Données d’application mobile]</li><li>[!UICONTROL Données de point de vente]</li><li>[!UICONTROL Données CRM]</li><li>[!UICONTROL Données de l’enquête]</li><li>[!UICONTROL Données du centre d’appels]</li><li>[!UICONTROL Données du produit]</li><li> [!UICONTROL Données des comptes]</li><li> [!UICONTROL Données de transaction]</li><li>[!UICONTROL Données de commentaires client]</li><li> [!UICONTROL Autre]</li></ul>Ce champ est utilisé pour interroger les types de sources de données en cours d’utilisation. |
@@ -964,7 +964,7 @@ Ce tableau présente les deux options de configuration lorsque des cas extrêmes
 
 Ce calcul est effectué pour chaque jeu de données de la connexion.
 
-1. Accédez aux [services de requête Adobe Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/query/home) et créez une nouvelle requête.
+1. Accédez aux [services de requête Adobe Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/query/home) et créez une requête.
 
    La requête ressemblerait à ceci :
 
