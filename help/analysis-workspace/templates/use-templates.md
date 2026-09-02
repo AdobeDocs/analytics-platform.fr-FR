@@ -27,9 +27,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 89f0a1e54662c59d474b1fba28eb8420612e9243
+source-git-commit: e8f86da8d18cfa6a30e4a8330ae5492e9d0aa2f0
 workflow-type: tm+mt
-source-wordcount: 21140
+source-wordcount: 21213
 ht-degree: 98%
 
 ---
@@ -677,6 +677,7 @@ Les modèles suivants sont disponibles :
 
 &#x200B;| Nom du modèle | Pourquoi utiliser ce modèle <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
+| [!UICONTROL **Présentation de la politique de consentement**] | Affichez les visiteurs en fonction des données d’appartenance à une politique de consentement de Adobe Experience Platform.<p>**Cela peut vous aider** comme point de départ pour créer des rapports sur l’appartenance à une politique de consentement des visiteurs. Lorsqu’une vue de données est configurée pour les rapports de consentement, Customer Journey Analytics rend automatiquement disponible un modèle d’analyse des politiques de consentement dans Analysis Workspace. <br/>**En fonction de ce que vous avez appris** vous pouvez prendre un certain nombre de mesures, telles que l’exclusion des visiteurs non consentants des rapports d’analyse.</p> |
 | **[!UICONTROL Présentation des audiences]** | Permet d’aɑficher les audiences représentées parmi les personnes qui visitent votre site.<p>**Cela peut vous aider** entre autres à mieux comprendre les informations générales sur les audiences, leur origine (RTCDP, Customer Journey Analytics, etc.), le chevauchement d’audiences.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme utiliser les données afin de vous concentrer sur les efforts marketing pour ces audiences spécifiques, ou créer des expériences personnalisées pour les clientes et clients qui appartiennent à plusieurs audiences.</p><p>Ce modèle utilise les dimensions Nom de l’audience, Origine de l’audience, Nom de l’audience sortie et Origine de l’audience sortie .</p><p>Pour plus d’informations, voir [Analyse des audiences Experience Platform dans Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).</p> |
 | [!UICONTROL **Visiteurs et visiteuses nouveaux et récurrents**] | Affichez une comparaison des nouveaux visiteurs et visiteuses par rapport aux visiteurs et visiteuses réguliers. <p>**Cela peut vous aider** à mieux comprendre l’efficacité de votre site pour fidéliser la clientèle ou le taux d’acquisition de nouveaux clients et clientes.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre de tâches, comme proposer des incitations pour les futurs achats aux nouveaux visiteurs et visiteuses afin de les encourager à revenir.</p><!-- This template uses the --> |
 | **ID de personne** | Affichez le comportement individuel des utilisateurs et utilisatrices sur différents canaux.<p>**Cela peut vous aider** à mieux comprendre l’ensemble du parcours client et les interactions entre plusieurs points de contact.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre de tâches, comme personnaliser les efforts marketing pour mieux cibler les préférences des utilisateurs et utilisatrices.</p><!-- This template uses the --> |

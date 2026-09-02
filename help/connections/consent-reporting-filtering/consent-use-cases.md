@@ -17,9 +17,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 7bb16378fc8813ca126cb786c5d36bf9daa0fe7d
+source-git-commit: 4661a066f90991e6fb149c6909ef4a9f75cf02ac
 workflow-type: tm+mt
-source-wordcount: 585
+source-wordcount: 590
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Avant de décider de filtrer ou non, déterminez le nombre de visiteurs qui corr
 
 1. Créez une configuration et sélectionnez le sandbox, le jeu de données de profil et la connexion contenant vos données d’appartenance à la politique de consentement.
 
-1. Laissez le filtre **[!UICONTROL Analytics]** et **[!UICONTROL Science des données]** désactivé.
+1. Laissez le filtrage **[!UICONTROL Données Analytics]** et **[!UICONTROL Données de science des données]** désactivé.
 
 1. Dans Analysis Workspace, créez un tableau à structure libre avec la dimension **[!UICONTROL Nom de la politique]** et la mesure **[!UICONTROL Visiteurs avec consentement]** pour afficher la couverture par politique.
 
@@ -70,7 +70,7 @@ Assurez-vous que les rapports standard incluent uniquement les visiteurs qui ont
 
 1. Créez ou modifiez une configuration pour la connexion qui alimente vos rapports d’analyse.
 
-1. Activez le bouton (bascule) Filtrage **[!UICONTROL Analytics]**.
+1. Activez le bouton (bascule) de filtrage **[!UICONTROL Données Analytics]**.
 
 1. Confirmez la configuration. À partir de maintenant, Customer Journey Analytics n’ingère les données d’un visiteur que si celui-ci correspond à toutes les politiques de consentement qui s’appliquent à l’action marketing Analytics.
 
@@ -86,7 +86,7 @@ Appliquez différentes exigences de consentement aux rapports standard et aux ca
 
 1. Créez ou modifiez une configuration pour la connexion appropriée.
 
-1. Activez le bouton (bascule) **[!UICONTROL Analytics]**, le bouton (bascule) **[!UICONTROL Science des données]** ou les deux, selon les exigences de consentement pour chaque cas d’utilisation.
+1. Activez le bouton (bascule) **[!UICONTROL Données Analytics]**, le bouton (bascule) **[!UICONTROL Données de science des données]** ou les deux, selon les exigences de consentement pour chaque cas d’utilisation.
 
 1. Confirmez la configuration. Customer Journey Analytics évalue indépendamment les politiques de consentement qui s’appliquent à chaque action marketing activée.
 

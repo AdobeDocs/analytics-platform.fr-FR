@@ -1,6 +1,6 @@
 ---
 title: Configuration des rapports et du filtrage de consentement
-description: Découvrez comment utiliser l’assistant de mise en service pour activer les rapports de consentement et le filtrage facultatif de la durée d’ingestion pour une connexion dans Customer Journey Analytics.
+description: Découvrez comment créer une configuration pour activer les rapports de consentement et le filtrage facultatif de la durée d’ingestion pour une connexion dans Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Privacy
 role: Admin
@@ -18,10 +18,10 @@ role_v2:
 topic_v2:
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 7bb16378fc8813ca126cb786c5d36bf9daa0fe7d
+source-git-commit: 4661a066f90991e6fb149c6909ef4a9f75cf02ac
 workflow-type: tm+mt
-source-wordcount: 981
-ht-degree: 14%
+source-wordcount: 1326
+ht-degree: 11%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 14%
 >[!CONTEXTUALHELP]
 >id="cja-consent-merge-policy"
 >title="Politique de fusion"
->abstract="Les politiques de fusion combinent les données de profil de plusieurs jeux de données en profils clientèle unifiés utilisés pour la création d’audiences. Sélectionnez « Par défaut basée sur le temps » si plusieurs politiques de fusion s’affichent et que vous ne savez pas laquelle choisir. Vous pouvez également consulter votre équipe de données pour savoir quelles audiences sont associées à chaque politique de fusion."
+>abstract="Les politiques de fusion combinent les données de profil de plusieurs jeux de données en profils clientèle unifiés utilisés pour la création d’audiences. Sélectionnez la politique de fusion qui correspond au jeu de données Profil contenant les données d’appartenance à la politique de consentement (champ `consentPoliciesIDMap`) sur lesquelles vous souhaitez créer des rapports. Vous pouvez également consulter votre équipe de données pour savoir quelles audiences sont associées à chaque politique de fusion."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -63,6 +63,24 @@ ht-degree: 14%
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-consent-enable-reporting"
+>title="Activer la création de rapports"
+>abstract="Activez cette option pour utiliser Analysis Workspace afin de créer des rapports sur les données de consentement disponibles dans votre connexion. Les dimensions et les mesures de la politique de consentement sont ajoutées aux vues de données que vous sélectionnez."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-consent-enable-filtering"
+>title="Activer le filtrage"
+>abstract="Activez cette option pour exclure les données des visiteurs non consentants de l’ingestion dans Customer Journey Analytics. Lorsqu’elles sont activées, les données d’un visiteur ne sont ingérées que si ce dernier correspond à toutes les politiques de consentement activées ci-dessous. <br>Cette option est destinée aux organisations qui ont besoin d’exclure les données des visiteurs non consentants au moment de l’ingestion."
+
+<!-- markdownlint-enable MD034 -->
+
 Les administrateurs et administratrices système peuvent activer la création de rapports de consentement et, éventuellement, le filtrage de consentement pour une ou plusieurs connexions. Pour plus d’informations, voir [Présentation des rapports et du filtrage de consentement](/help/connections/consent-reporting-filtering/consent-overview.md).
 
 >[!IMPORTANT]
@@ -71,13 +89,15 @@ Les administrateurs et administratrices système peuvent activer la création de
 
 ## Création d’une configuration
 
-Lorsque vous créez une configuration pour les rapports et le filtrage de consentement, vous sélectionnez le sandbox et le jeu de données Profil contenant les données d’appartenance à votre politique de consentement, choisissez la ou les connexions à configurer et choisissez de filtrer ou non les données pour chaque action marketing. Customer Journey Analytics crée ensuite automatiquement le jeu de données de recherche de politique de consentement et les composants de politique de consentement.
+Lorsque vous créez une configuration pour les rapports et le filtrage de consentement, vous sélectionnez le sandbox et la politique de fusion qui contiennent vos données d’appartenance à la politique de consentement, choisissez la ou les connexions à configurer et choisissez de filtrer ou non les données pour chaque action marketing. Customer Journey Analytics crée ensuite automatiquement le jeu de données de recherche de politique de consentement et les composants de politique de consentement.
 
 Pour créer une configuration de rapport et de filtrage de consentement :
 
 1. Dans Customer Journey Analytics, sélectionnez **[!UICONTROL Gestion des données]** > **[!UICONTROL Rapports et filtrage de consentement]**.
 
 1. Sélectionnez **[!UICONTROL Créer une configuration]**.
+
+   ![page de configuration du consentement](assets/consent-configure.png)
 
 1. Dans la section **[!UICONTROL Détails]**, spécifiez les informations suivantes :
 
@@ -86,32 +106,50 @@ Pour créer une configuration de rapport et de filtrage de consentement :
    | **[!UICONTROL Nom]** | Attribuez un nom à la configuration. |
    | **[!UICONTROL Sandbox]** | Sélectionnez le sandbox Experience Platform qui contient le jeu de données Profil avec vos données d’appartenance à la politique de consentement. <p>Il existe au maximum un jeu de données de recherche de politique de consentement par sandbox. Plusieurs configurations dans le même sandbox partagent le même jeu de données de recherche.</p> |
 
-1. Dans la section **[!UICONTROL Jeu de données de profil]**, sélectionnez le Jeu de données de profil contenant les données d’appartenance à la politique de consentement (le champ `consentPoliciesIDMap`) sur lesquelles vous souhaitez créer des rapports. Lorsque vous activez la création de rapports de consentement, ce jeu de données de profil est ajouté à la connexion que vous sélectionnez s’il n’en fait pas déjà partie.
+1. Dans la section **[!UICONTROL Jeu de données de profil]**, dans le champ **[!UICONTROL Politique de fusion]**, sélectionnez la politique de fusion qui correspond au jeu de données de profil contenant les données d’appartenance à la politique de consentement (le champ `consentPoliciesIDMap`) sur lesquelles vous souhaitez créer des rapports. Lorsque vous activez la création de rapports de consentement, ce jeu de données de profil est ajouté à la connexion que vous sélectionnez s’il n’en fait pas déjà partie.<p>Les politiques de fusion déterminent comment Adobe Experience Platform combine les données de profil de plusieurs jeux de données en profils clients unifiés utilisés pour les données d’appartenance à la politique de consentement. Chaque jour, un instantané de ces données est généré dans Experience Platform. Cet instantané fournit une vue statique des données à un moment spécifique dans le temps et n’inclut aucune donnée d’événement.</p><p>Sélectionnez la politique de fusion **[!UICONTROL Par défaut basée sur le temps]** si plusieurs politiques de fusion s’affichent et que vous ne savez pas laquelle choisir. Vous pouvez également consulter votre équipe de données pour mieux comprendre quelles données de consentement sont associées à chaque politique de fusion.</p>
 
-1. Dans la section **[!UICONTROL Connexion]**, sélectionnez **[!UICONTROL Sélectionner une connexion]**, cochez la case en regard d’une ou de plusieurs connexions à configurer, puis sélectionnez **[!UICONTROL Utiliser la connexion]**.
+1. Dans la section **[!UICONTROL Connexion]**, sélectionnez **[!UICONTROL Sélectionner une connexion]**, cochez la case en regard de la connexion à configurer, puis sélectionnez **[!UICONTROL Utiliser la connexion]**.
 
    Les rapports et le filtrage relatifs au consentement sont appliqués au niveau de la connexion. Toutes les vues de données sous une connexion configurée héritent du même comportement.
 
-1. Dans la section **[!UICONTROL Vues de données]**, cliquez sur **[!UICONTROL Sélectionner les vues de données]**.
+1. Dans le champ **[!UICONTROL ID de personne]**, sélectionnez un champ dans le schéma basé sur un modèle qui représente l’ID de personne. La sélection est limitée à la liste des champs du schéma qui sont marqués comme « Identité » et qui possèdent un espace de noms d’identité.
 
-1. Dans la boîte de dialogue Vues de données , cochez la case en regard d’une ou de plusieurs vues de données à utiliser pour les rapports de consentement. Ces vues de données sont automatiquement configurées avec les données de consentement Experience Platform pour la création de rapports.
+1. Choisissez d’activer ou non la création de rapports pour les données de consentement.
 
-1. Sélectionnez **[!UICONTROL Utiliser les vues de données]**.
+   Pour plus d’informations sur l’activation des rapports, voir [Rapport de consentement ou filtrage](/help/connections/consent-reporting-filtering/consent-overview.md#consent-reporting-vs-filtering).
 
-1. (Facultatif) Dans la section **[!UICONTROL Filtrage]**, sélectionnez [!UICONTROL **Activer le filtrage**] pour filtrer les données de consentement.
+   Pour activer et configurer le compte rendu des performances :
 
-   Lorsque le filtrage est activé, Customer Journey Analytics ingère les données d’un visiteur uniquement si celui-ci correspond aux politiques de consentement activées. Pour plus d’informations, voir [Filtrage du consentement](/help/connections/consent-reporting-filtering/consent-overview.md#consent-filtering) dans [Présentation des rapports et du filtrage du consentement](/help/connections/consent-reporting-filtering/consent-overview.md).
+   1. Dans la section **[!UICONTROL Reporting]**, sélectionnez **[!UICONTROL Activer le reporting]**.
 
-1. (Facultatif) Activez le filtrage pour les actions marketing suivantes :
+   1. Sélectionnez les vues de données associées à votre connexion que vous souhaitez utiliser lors de l’analyse des données de consentement Platform dans Analysis Workspace. Dans la section **[!UICONTROL Vues de données]**, cliquez sur **[!UICONTROL Sélectionner les vues de données]**.
 
-   >[!NOTE]
-   >
-   >Lorsque le filtrage d’une action marketing est activé, Customer Journey Analytics ingère les données d’un visiteur uniquement si celui-ci correspond **toutes** les politiques de consentement qui s’appliquent à cette action marketing. Pour plus d’informations, voir [Filtrage du consentement](/help/connections/consent-reporting-filtering/consent-overview.md#consent-filtering) dans [Présentation des rapports et du filtrage du consentement](/help/connections/consent-reporting-filtering/consent-overview.md).
+   1. Dans la boîte de dialogue Vues de données , cochez la case en regard d’une ou de plusieurs vues de données à utiliser pour les rapports de consentement. Ces vues de données sont automatiquement configurées avec les données de consentement Experience Platform pour la création de rapports.
 
-   | Action marketing | Description |
-   |---------|----------|
-   | **[!UICONTROL Données Analytics]** | Filtrez les données utilisées pour la création de rapports Customer Journey Analytics standard dans Analysis Workspace. |
-   | **[!UICONTROL Données de science des données]** | Filtrez les données utilisées pour les cas d’utilisation d’analyses avancées, de machine learning et de science des données. |
+   1. Sélectionnez **[!UICONTROL Utiliser les vues de données]**.
+
+1. Choisissez d’activer ou non le filtrage, qui exclut les visiteurs et visiteuses non consentants au moment de l’ingestion.
+
+   Lorsque le filtrage est activé, Customer Journey Analytics ingère les données d’un visiteur uniquement si celui-ci correspond à toutes les politiques de consentement activées.
+
+   Pour plus d’informations sur l’activation du filtrage, voir [Rapports de consentement par rapport au filtrage](/help/connections/consent-reporting-filtering/consent-overview.md#consent-reporting-vs-filtering).
+
+   Pour activer et configurer le filtrage :
+
+   1. Dans la section **[!UICONTROL Filtrage]**, sélectionnez **[!UICONTROL Activer le filtrage]** pour filtrer les données de consentement.
+
+   1. Activez le filtrage pour l’une ou les deux actions marketing suivantes :
+
+      >[!NOTE]
+      >
+      >Lorsque le filtrage d’une action marketing est activé, Customer Journey Analytics ingère les données d’un visiteur uniquement si celui-ci correspond **toutes** les politiques de consentement qui s’appliquent à cette action marketing. Pour plus d’informations, voir [Filtrage du consentement](/help/connections/consent-reporting-filtering/consent-overview.md#consent-filtering) dans [Présentation des rapports et du filtrage du consentement](/help/connections/consent-reporting-filtering/consent-overview.md).
+
+      Les actions marketing sont liées aux politiques et aux libellés d’utilisation des données que vous configurez dans Experience Platform. Pour plus d’informations, voir [Libellés, politiques et actions marketing](/help/data-views/data-governance.md).
+
+      | Action marketing | Description |
+      | --------- | ---------- |
+      | **[!UICONTROL Données Analytics]** | Filtrez les données utilisées pour la création de rapports Customer Journey Analytics standard dans Analysis Workspace. |
+      | **[!UICONTROL Données de science des données]** | Filtrez les données utilisées pour les cas d’utilisation d’analyses avancées, de machine learning et de science des données. |
 
 1. Sélectionnez **[!UICONTROL Créer]** pour créer la configuration.
 
