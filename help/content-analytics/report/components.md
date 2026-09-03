@@ -6,24 +6,15 @@ feature: Content Analytics
 role: User
 exl-id: 79bf235a-6f6e-4b04-bcd8-1ff884536648
 TQID: https://experienceleague.adobe.com/grwbNht938ivCsnzlFBzP8Ga8h1udmQLcZngxY6s0-4
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: d9715c3da9893e1c47b702acb4daef5e666bedd7
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ad5685a0-8296-4a0c-814c-658c10b4af12id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: 3e9a9042bfe707971c4e37d319a23ab9bdc80075
 workflow-type: tm+mt
-source-wordcount: 1023
-ht-degree: 86%
+source-wordcount: 1869
+ht-degree: 56%
 
 ---
 
@@ -38,6 +29,7 @@ Content Analytics ajoute les catégories de composants suivantes (dimensions, me
 * [Métadonnées de la ressource](#asset-metadata)
 * [Attributs de la ressource](#asset-attributes)
 * [Événements de la ressource](#asset-events)
+* [Média acheté](#paid-media)
 * [Mesures calculées](#calculated-metrics)
 
 Dans les tableaux ci-dessous, ![généré par l’IA](/help/assets/icons/AI.svg) indique une paire attribut/valeur générée par l’IA ou le machine learning.
@@ -47,7 +39,7 @@ Dans les tableaux ci-dessous, ![généré par l’IA](/help/assets/icons/AI.svg)
 | Titre | Description | Type |
 |---|---|---|
 | SOURCE DE L’ID | Pour Content Analytics, la valeur est `ContentAnalytics`. | Dimension |
-| Canal | Canal de l’expérience. La valeur est soit `Web` soit `Mobile`. | Dimension |
+| Canal | Canal de l’expérience. La valeur est `Web`, `Mobile` ou `Paid Media`. | Dimension |
 | ID d’expérience de contenu | ID unique de l’expérience. <br>Pour **web** : URL de la page web. <br/>Pour **web granulaire** : hachage calculé côté client en fonction de la payload du contenu (textes, images, ctas) avec préfixe `web-`. <br/>Pour **mobile** : hachage calculé côté client en fonction de la payload du contenu (textes, images, ctas) avec le préfixe `mobile-`. | Dimension |
 | Source d’expérience de contenu | Pour **web** : URL de la page web.<br/>Pour **mobile** : nom d’écran transmis par le biais du SDK mobile Experience Platform. | Dimension |
 | Canal d’expérience (obsolète) | Canal de l’expérience. La valeur est soit `Web` soit `Mobile`. | Dimension |
@@ -156,6 +148,116 @@ Dans les tableaux ci-dessous, ![généré par l’IA](/help/assets/icons/AI.svg)
 
 {style="table-layout:fixed"}
 -->
+
+## Média acheté
+
+Ces composants sont ajoutés à une vue de données lorsque le canal **Média payant** est activé par le biais d’un connecteur source de [médias payants Adobe Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/home) (par exemple, Meta Ads ou Google Ads). Ils vous permettent de créer des rapports sur les entités de médias payantes, les créations et les dépenses associées à votre contenu web et mobile.
+
+Les **attributs de ressource** et **attributs d’expérience** générés par l’IA et décrits ci-dessus sont également disponibles pour les créatifs de médias payants. La même fonctionnalité s’exécute sur les canaux Web, Mobile et Médias payants.
+
+### Dimensions Média payant
+
+| Titre | Description | Type |
+|---|---|---|
+| Réseau publicitaire | Plateforme publicitaire à partir de laquelle les données de médias payants ont été ingérées. | Dimension |
+| Nom de compte | Nom du compte publicitaire. | Dimension |
+| Nom de la campagne | Nom de la campagne média payante. | Dimension |
+| Nom de groupe publicitaire | Nom du groupe publicitaire (groupe publicitaire Meta / groupe publicitaire Google). | Dimension |
+| Nom de la publicité | Nom de l’annonce publicitaire. | Dimension |
+| Nom de l’expérience | Nom de l’expérience publicitaire (composition créative). | Dimension |
+| Nom de la ressource | Nom de la ressource de création. | Dimension |
+| État de la campagne | Statut de la campagne. | Dimension |
+| État du groupe publicitaire | Statut du groupe publicitaire. | Dimension |
+| État de l&#39;annonce | Statut de la publicité. | Dimension |
+| Statut de service | Statut de diffusion détaillé indiquant si l’entité diffuse actuellement. | Dimension |
+| Devise du compte | Devise du compte publicitaire. | Dimension |
+| Fuseau horaire du compte | Fuseau horaire du compte publicitaire. | Dimension |
+| Type de compte | Type du compte publicitaire. | Dimension |
+| Nom de l’entreprise du compte | Nom commercial associé au compte publicitaire. | Dimension |
+| Type de campagne | Type de canal Principal de la campagne. | Dimension |
+| Objectif de la campagne | Objectif de la campagne. | Dimension |
+| Stratégie d’enchères de la campagne | Stratégie d’enchères pour la campagne. | Dimension |
+| Type de budget de campagne | Type de répartition budgétaire pour la campagne. | Dimension |
+| Budget quotidien de la campagne | Montant budgétaire quotidien, dans la devise du compte publicitaire. | Dimension |
+| Budget de durée de vie de la campagne | Montant du budget cumulé, dans la devise du compte publicitaire. | Dimension |
+| Heure de début de la campagne | Date de début de la campagne. | Dimension |
+| Heure de fin de la campagne | À la fin de la campagne. | Dimension |
+| Type de groupe publicitaire | Type du groupe publicitaire. | Dimension |
+| Stratégie d’enchères du groupe publicitaire | Stratégie d’enchères pour le groupe publicitaire. | Dimension |
+| Objectif d’optimisation du groupe publicitaire | Objectif d’optimisation pour le groupe publicitaire. | Dimension |
+| Heure de début du groupe publicitaire | Date de démarrage du groupe publicitaire. | Dimension |
+| Heure de fin du groupe publicitaire | Lorsque le groupe publicitaire s’est terminé. | Dimension |
+| Type d’annonce | Type/format de la publicité. | Dimension |
+| Statut de révision de la publicité | Statut de révision/approbation de la publicité. | Dimension |
+| Type de Creative publicitaire | Type de contenu créatif utilisé par la publicité. | Dimension |
+| Titre de la publicité | Titre/titre de la création publicitaire. | Dimension |
+| Call to action publicitaire | Call-to-action de la création publicitaire. | Dimension |
+| Ajouter une URL de destination | URL de destination de la publicité. | Dimension |
+| URL d’affichage de la publicité | Afficher l’URL affichée sur la publicité. | Dimension |
+| Type d’expérience | Type/format de l’expérience publicitaire. | Dimension |
+| URL de la page de destination Experience | URL de la page de destination de l’expérience. | Dimension |
+| Experience Call to action | Call-to-action de l’expérience. | Dimension |
+| Type de ressource | Type de la ressource de création (image ou vidéo, par exemple). | Dimension |
+| Largeur de la ressource | Largeur de la ressource, en pixels. | Dimension |
+| Hauteur de la ressource | Hauteur de la ressource, en pixels. | Dimension |
+| Rapport L/H Des Ressources | Format de la ressource. | Dimension |
+| Orientation de la ressource | Orientation de la ressource. | Dimension |
+| Type d&#39;appareil | Répartition du type d’appareil pour les mesures signalées. | Dimension |
+| Placement | Répartition de l’emplacement pour les mesures signalées. | Dimension |
+| Platform | Répartition de la plateforme pour les mesures signalées. | Dimension |
+| Pays | Répartition par pays pour les mesures signalées. | Dimension |
+| Région | Répartition régionale des mesures signalées. | Dimension |
+
+{style="table-layout:fixed"}
+
+### Mesures de médias payants
+
+| Titre | Description | Type |
+|---|---|---|
+| Impressions | Nombre d’affichages de la publicité. | Mesure |
+| Clics | Nombre de clics sur la publicité. | Mesure |
+| Dépense | Montant dépensé, dans la devise du compte publicitaire. | Mesure |
+| Conversions | Nombre total de conversions. | Mesure |
+| Valeur de conversion | Valeur totale des conversions. | Mesure |
+| Portée | Nombre de personnes uniques ayant vu la publicité. | Mesure |
+| Engagements | Nombre d’engagements avec la publicité. | Mesure |
+| Affichages de vidéos | Nombre de vues vidéo. | Mesure |
+| Video Completions | Nombre de vidéos visionnées jusqu’à la fin. | Mesure |
+| Lectures vidéo | Nombre de lectures vidéo. | Mesure |
+| Achats | Nombre de conversions d’achat. | Mesure |
+| Ajouter au panier | Nombre de conversions d’ajout au panier. | Mesure |
+| Prospects | Nombre de conversions de leads. | Mesure |
+| Enregistrements | Nombre de conversions d’enregistrement. | Mesure |
+| Téléchargements | Nombre de conversions de téléchargement. | Mesure |
+| Abonnements | Nombre de conversions d’abonnements. | Mesure |
+| Vues de la page de destination | Nombre de pages de destination vues. | Mesure |
+| Conversions après clic | Conversions attribuées à un clic. | Mesure |
+| Conversions après affichage | Conversions attribuées à une vue. | Mesure |
+| Valeur totale de la commande | Valeur totale des commandes. | Mesure |
+| Clics sur les liens | Nombre de clics sur les liens. | Mesure |
+| Clics sortants | Nombre de clics sortants. | Mesure |
+| Installations de l’application | Nombre d’installations d’applications. | Mesure |
+| Envois de leads | Nombre d’envois de formulaire de prospect. | Mesure |
+
+{style="table-layout:fixed"}
+
+### Mesures calculées de média payant
+
+| Titre | Description | Type |
+|---|---|---|
+| Taux De Clic Publicitaire | Clics divisés par les impressions. | Mesure calculée |
+| Coût par clic | Dépenses divisées par clics. | Mesure calculée |
+| Coût Par Mille | Coût par millier d’impressions. | Mesure calculée |
+| Coût par conversion | Dépenses divisées par les conversions. | Mesure calculée |
+| Retour sur dépenses publicitaires | Valeur de conversion divisée par les dépenses. | Mesure calculée |
+| Fréquence | Impressions divisées par la portée. | Mesure calculée |
+| Taux d’engagement | Des engagements divisés par des impressions. | Mesure calculée |
+| Taux d’achèvement de la vidéo | Les vidéos terminées divisées par les lectures vidéo. | Mesure calculée |
+| Taux de conversion | Conversions divisées par clics. | Mesure calculée |
+| Valeur de commande moyenne | Valeur totale de la commande divisée par les achats. | Mesure calculée |
+
+{style="table-layout:fixed"}
+
 
 ## Mesures calculées
 
