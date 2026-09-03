@@ -5,10 +5,15 @@ feature: Components
 role: Admin
 exl-id: 8bc89ac7-078d-469d-8627-3905823d4100
 TQID: https://experienceleague.adobe.com/RKh01bcmVkoZ2wkHDvBM-oX9rRagVaOqK4fn2A-IpaI
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: df28738e-9c71-4aa8-929e-edde22340cc6
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: df28738e-9c71-4aa8-929e-edde22340cc6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 source-git-commit: 7c679fcbf52d2a5832d16bf138bd197f11f4ceb7
 workflow-type: tm+mt
 source-wordcount: 434
@@ -23,7 +28,7 @@ ht-degree: 87%
 >[!CONTEXTUALHELP]
 >id="component_datadictionary"
 >title="Dictionnaire de données"
->abstract="Lorsque cette option est sélectionnée, le composant principal est partagé avec toutes les personnes ayant accès aux composants en double (les propriétaires et les personnes avec lesquelles les composants sont partagés). Ces personnes peuvent ensuite sélectionner le composant principal dans la liste des composants pour les projets futurs. Cependant, elles ne peuvent pas modifier le composant, même si elles étaient propriétaires d’un composant en double qui a été consolidé. <br/>Cette option est disponible uniquement lorsque le composant principal est un segment, une mesure calculée ou une période. Les mesures et dimensions sont toujours disponibles pour l’ensemble des utilisateurs et utilisatrices.
+>abstract="Lorsque cette option est sélectionnée, le composant principal est partagé avec toutes les personnes ayant accès aux composants en double (les propriétaires et les personnes avec lesquelles les composants sont partagés). Ces personnes peuvent ensuite sélectionner le composant principal dans la liste des composants pour les projets futurs. Cependant, elles ne peuvent pas modifier le composant, même si elles étaient propriétaires d’un composant en double qui a été consolidé. <br/>Cette option est disponible uniquement lorsque le composant principal est un segment, une mesure calculée ou une période. Les mesures et dimensions sont toujours disponibles pour l’ensemble des utilisateurs et utilisatrices."
 >
 >When this option is deselected, the primary component still replaces duplicates in existing projects and segments, but users who didn't previously have access to it can't access it from the component list for future projects. "
 
