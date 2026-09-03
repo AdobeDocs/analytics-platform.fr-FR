@@ -21,7 +21,7 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: 1494
+source-wordcount: 1496
 ht-degree: 99%
 
 ---
@@ -47,9 +47,9 @@ Utilisez le [gestionnaire de segments](seg-manage.md) pour gérer les segments.
 Particulièrement en tant qu’administrateur ou administratrice, une préparation appropriée des segments améliore les chances que les segments soient utilisés. Tenez compte des points suivants lors de la préparation des segments :
 
 - **Audience** : qui va utiliser vos segments ? Veillez à fournir une bonne description du segment afin que l’audience comprenne :
-   - Quel est l’objet de ce segment ?
+  - Quel est l’objet de ce segment ?
 
-   - Quand dois-je utiliser ce segment ?
+  - Quand dois-je utiliser ce segment ?
 
 - **Portée** : quel [conteneur de segments](#segment-containers) représente le mieux les données que vous recherchez ? Utilisez le plus petit conteneur possible.
 

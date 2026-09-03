@@ -19,7 +19,7 @@ topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: 1022
+source-wordcount: 1024
 ht-degree: 58%
 
 ---
@@ -52,8 +52,8 @@ Avant d’utiliser le groupement, veillez à ce que votre organisation dispose d
 
 - Importez les données de votre choix dans Adobe Experience Platform :
 
-   - Pour les données Adobe Analytics, consultez [Utiliser les données de suite de rapports Adobe Analytics dans Customer Journey Analytics](/help/getting-started/aa-vs-cja/aa-data-in-cja.md).
-   - Pour d’autres types de données, consultez [Créer un schéma](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/tutorials/create-schema-ui) et [Ingérer des données](https://experienceleague.adobe.com/fr/docs/experience-platform/ingestion/home) dans la documentation d’Adobe Experience Platform.
+  - Pour les données Adobe Analytics, consultez [Utiliser les données de suite de rapports Adobe Analytics dans Customer Journey Analytics](/help/getting-started/aa-vs-cja/aa-data-in-cja.md).
+  - Pour d’autres types de données, consultez [Créer un schéma](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/tutorials/create-schema-ui) et [Ingérer des données](https://experienceleague.adobe.com/fr/docs/experience-platform/ingestion/home) dans la documentation d’Adobe Experience Platform.
 
 L’analyse cross-canal vous est utile si vous combinez un ou plusieurs des jeux de données groupés avec d’autres jeux de données, tels que les données de centre d’appel, dans le cadre de la définition de votre connexion Customer Journey Analytics. Cette configuration de connexion suppose que ces autres jeux de données contiennent déjà un ID de personne provenant du même espace de noms sur le plus grand nombre possible de lignes.
 

@@ -45,4 +45,5 @@ Certains termes de Customer Journey Analytics diffèrent de leur utilisation h
 
 ## Glossaire Adobe Experience Platform
 
-Adobe Experience Platform normalise les données et le contenu dans toute l’entreprise, optimise les profils en temps réel pour les consommateurs, permet de mobiliser la science des données, et accélère la vitesse de diffusion du contenu afin d’orienter la personnalisation de l’expérience tout au long du parcours des clients.Pour plus d’informations, reportez-vous à la section [Glossaire Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/glossary.html?lang=fr).
+Adobe Experience Platform normalise les données et le contenu dans toute l’entreprise, optimise les profils en temps réel pour les consommateurs, permet de mobiliser la science des données, et accélère la vitesse de diffusion du contenu afin d’orienter la personnalisation de l’expérience tout au long du parcours des clients.
+Pour plus d’informations, reportez-vous à la section [Glossaire Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/glossary.html?lang=fr).

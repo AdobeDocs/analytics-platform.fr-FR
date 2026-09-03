@@ -44,9 +44,9 @@ Adobe propose plusieurs types de mesures à utiliser dans Analysis Workspace :
 
   Contrairement à Adobe Analytics, Customer Journey Analytics vous permet de définir des mesures standard de manière flexible dans le cadre d’une connexion et d’une vue de données.
 
-   * **Personnes** : dans Customer Journey Analytics, la mesure Personnes correspond au nombre distinct des ID de personne. Selon ce que vous choisissez comme ID de personne lorsque vous configurez des jeux de données dans votre connexion, la mesure Personnes peut signifier différentes choses.
-   * **Sessions** : la mesure Sessions dans Customer Journey Analytics est ce que vous définissez dans le cadre de la configuration des paramètres Sessions dans votre vue de données. Voir [&#x200B; Paramètres de session &#x200B;](/help/data-views/session-settings.md).
-   * **Événements** : la mesure Événements dans Customer Journey Analytics se compose des événements qui font partie de tout jeu de données d’événement que vous avez configuré dans le cadre de votre connexion.
+  * **Personnes** : dans Customer Journey Analytics, la mesure Personnes correspond au nombre distinct des ID de personne. Selon ce que vous choisissez comme ID de personne lorsque vous configurez des jeux de données dans votre connexion, la mesure Personnes peut signifier différentes choses.
+  * **Sessions** : la mesure Sessions dans Customer Journey Analytics est ce que vous définissez dans le cadre de la configuration des paramètres Sessions dans votre vue de données. Voir [&#x200B; Paramètres de session &#x200B;](/help/data-views/session-settings.md).
+  * **Événements** : la mesure Événements dans Customer Journey Analytics se compose des événements qui font partie de tout jeu de données d’événement que vous avez configuré dans le cadre de votre connexion.
 
   Voir [Mesures standard](#standard-metrics) pour obtenir la liste complète des mesures standard.
 

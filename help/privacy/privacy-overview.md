@@ -61,7 +61,9 @@ Customer Journey Analytics ne souscrit pas directement au Service Central du 
 
 ## CCPA
 
-Le California Consumer Privacy Act (CCPA) protège la vie privée et les consommateurs pour les personnes résidant en Californie aux États-Unis. Cette loi est entrée en vigueur le 1er janvier 2020.Le CCPA offre aux Californiens de nouveaux droits sur leurs données personnelles, comme le droit d’y accéder et de les supprimer, mais aussi de savoir si leurs données sont vendues ou divulguées (et, le cas échéant, à qui) et de refuser la vente de leurs données.Conformément au CCPA, le Service Confidentialité reçoit les demandes de refus de vente de données personnelles.
+Le California Consumer Privacy Act (CCPA) protège la vie privée et les consommateurs pour les personnes résidant en Californie aux États-Unis. Cette loi est entrée en vigueur le 1er janvier 2020.
+Le CCPA offre aux Californiens de nouveaux droits sur leurs données personnelles, comme le droit d’y accéder et de les supprimer, mais aussi de savoir si leurs données sont vendues ou divulguées (et, le cas échéant, à qui) et de refuser la vente de leurs données.
+Conformément au CCPA, le Service Confidentialité reçoit les demandes de refus de vente de données personnelles.
 
 >[!MORELIKETHIS]
 >

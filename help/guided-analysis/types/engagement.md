@@ -77,8 +77,8 @@ Le rail de requête vous permet de configurer les composants suivants :
 L’analyse [!UICONTROL Engagement] propose les paramètres de graphique suivants, qui peuvent être ajustés dans le menu au-dessus du graphique :
 
 * **[!UICONTROL Médianes]** : Déterminez où les lignes médianes sont affichées et comment les points tracés se rapportent à ces médianes.
-   * **[!UICONTROL Standard]** : montrez la valeur absolue de l’utilisation et de l’engagement.
-   * **[!UICONTROL Normalisé]** : montrez les modifications relatives à partir de chaque médiane.
+  * **[!UICONTROL Standard]** : montrez la valeur absolue de l’utilisation et de l’engagement.
+  * **[!UICONTROL Normalisé]** : montrez les modifications relatives à partir de chaque médiane.
 * **[!UICONTROL Principaux recouvrements d’événements]** : comparez vos événements à ceux des 20 principaux événements, en fonction de la récence et de la pertinence de l’entreprise et de la personne (le même algorithme appliqué au sélecteur d’événement dans le rail de requête).
 
 ### Comparaison de temps

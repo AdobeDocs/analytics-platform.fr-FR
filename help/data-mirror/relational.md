@@ -22,7 +22,7 @@ topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 2b0204c229a7d53c0a497fe448c165acf84536ad
 workflow-type: tm+mt
-source-wordcount: 2355
+source-wordcount: 2375
 ht-degree: 15%
 
 ---
@@ -227,15 +227,15 @@ L’assistant d’ajout de données vous guide tout au long des étapes suivante
 
 * **[!UICONTROL Compte existant]** lorsque vous disposez déjà d’une configuration de compte pour Google BigQuery. Passez à l’étape [Sélectionner les données](#select-data).
 * **[!UICONTROL Nouveau compte]** lorsque vous devez vous connecter à BigQuery Google.
-   1. Spécifiez un **[!UICONTROL Nom du compte]** et (facultatif) **[!UICONTROL Description]**.
-   1. Sélectionnez votre **[!UICONTROL Type d’authentification]** : **[!UICONTROL Authentification de base]** ou **[!UICONTROL Authentification de service]**. Selon votre sélection, fournissez l’entrée requise.
-   1. Sélectionnez **[!UICONTROL Se connecter à la source]**
+  1. Spécifiez un **[!UICONTROL Nom du compte]** et (facultatif) **[!UICONTROL Description]**.
+  1. Sélectionnez votre **[!UICONTROL Type d’authentification]** : **[!UICONTROL Authentification de base]** ou **[!UICONTROL Authentification de service]**. Selon votre sélection, fournissez l’entrée requise.
+  1. Sélectionnez **[!UICONTROL Se connecter à la source]**
 
-      ![BigQuery Google - Authentification](assets/googlebg-authentication.png)
+     ![BigQuery Google - Authentification](assets/googlebg-authentication.png)
 
-      Votre connexion est vérifiée. Un ![CheckmarkCircleGreen](/help/assets/icons/CheckmarkCircleGreen.svg) **[!UICONTROL Connected]** a indiqué une connexion réussie.
+     Votre connexion est vérifiée. Un ![CheckmarkCircleGreen](/help/assets/icons/CheckmarkCircleGreen.svg) **[!UICONTROL Connected]** a indiqué une connexion réussie.
 
-   1. Sélectionnez **[!UICONTROL Suivant]**.
+  1. Sélectionnez **[!UICONTROL Suivant]**.
 
   Consultez la documentation d’Experience Platform pour plus d’informations sur la connexion et l’authentification lorsque vous utilisez le connecteur [Azure Databricks](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/databases/databricks) ou [Snowflake](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/databases/snowflake).
 

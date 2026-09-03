@@ -102,7 +102,8 @@ Pour partager un rôle de projet spécifique avec des utilisateurs et utilisatri
 
    Ou
 
-   Pour partager un projet individuel uniquement, vous pouvez ouvrir le projet que vous souhaitez partager, puis sélectionner **[!UICONTROL Partager]** > **[!UICONTROL Partager avec les utilisateurs et utilisatrices Workspace]**.Si des modifications n’ont pas enregistrées, on vous invite d’abord à enregistrer votre projet.
+   Pour partager un projet individuel uniquement, vous pouvez ouvrir le projet que vous souhaitez partager, puis sélectionner **[!UICONTROL Partager]** > **[!UICONTROL Partager avec les utilisateurs et utilisatrices Workspace]**.
+   Si des modifications n’ont pas enregistrées, on vous invite d’abord à enregistrer votre projet.
 
    La boîte de dialogue Partage de projets s’affiche. Les sections [!UICONTROL **Partager par lien**] et [!UICONTROL **Paramètres**] de la boîte de dialogue ne sont visibles que lors du partage d’un seul projet.
 
@@ -208,9 +209,9 @@ Pour partager un projet Analysis Workspace avec tout le monde, procédez comme 
 
      Les administrateurs et administratrices de Customer Journey Analytics peuvent configurer cette préférence pour l’entreprise, comme décrit dans [Préférences](/help/analysis-workspace/user-preferences.md). Selon la manière dont les administrateurs et administratrices ont configuré cette option, vous pouvez rencontrer les scénarios suivants :
 
-      * Si cette option n’est pas visible, c’est que l’administrateur ou l’administratrice Customer Journey Analytics n’a pas activé cette fonctionnalité.
+     * Si cette option n’est pas visible, c’est que l’administrateur ou l’administratrice Customer Journey Analytics n’a pas activé cette fonctionnalité.
 
-      * Si cette option est activée et que vous ne pouvez pas la désactiver, l’option verrouillée signifie que votre administrateur Customer Journey Analytics requiert une authentification CX Enterprise pour toute personne accédant aux projets Analysis Workspace. C’est toujours le cas pour les organisations disposant d’une licence Healthcare Shield.
+     * Si cette option est activée et que vous ne pouvez pas la désactiver, l’option verrouillée signifie que votre administrateur Customer Journey Analytics requiert une authentification CX Enterprise pour toute personne accédant aux projets Analysis Workspace. C’est toujours le cas pour les organisations disposant d’une licence Healthcare Shield.
 
 1. En regard du champ **[!UICONTROL Partager avec tout le monde (pas de connexion nécessaire)]**, sélectionnez l’icône ![Lien](/help/assets/icons/Link.svg) pour copier le lien dans le presse-papiers de votre système.
 

@@ -74,8 +74,8 @@ Les paramètres de canal marketing fonctionnent de façon différente sur les do
   ![Première page de la visite](../assets/first-page-of-visit.png)
 
 * **Remplacer le canal Last Touch** : ce paramètre du gestionnaire de canaux marketing empêche normalement certains canaux d’obtenir le crédit de canal Last Touch. Platform ignore ce paramètre, ce qui permet à de larges canaux comme « Direct » ou « Interne » d’attribuer des attributs à des mesures de manière potentiellement indésirable. Adobe recommande de supprimer les canaux pour lesquels l’option « Remplacer le canal Last Touch » est décochée.
-   * Vous pouvez supprimer le canal marketing « Direct » dans le Gestionnaire de canaux marketing, puis vous fier à l’élément de dimension « Aucune valeur » de Customer Journey Analytics pour ce canal. Vous pouvez également renommer cet élément de dimension en « Direct » ou l’exclure entièrement lors de la configuration d’une vue de données.
-   * Vous pouvez également créer une classification de canal marketing, en classant chaque valeur pour elle-même, à l’exception des canaux que vous souhaitez exclure dans Customer Journey Analytics. Vous pouvez ensuite utiliser cette dimension de classification à la place de `channel.typeAtSource` lors de la création d’une vue de données.
+  * Vous pouvez supprimer le canal marketing « Direct » dans le Gestionnaire de canaux marketing, puis vous fier à l’élément de dimension « Aucune valeur » de Customer Journey Analytics pour ce canal. Vous pouvez également renommer cet élément de dimension en « Direct » ou l’exclure entièrement lors de la configuration d’une vue de données.
+  * Vous pouvez également créer une classification de canal marketing, en classant chaque valeur pour elle-même, à l’exception des canaux que vous souhaitez exclure dans Customer Journey Analytics. Vous pouvez ensuite utiliser cette dimension de classification à la place de `channel.typeAtSource` lors de la création d’une vue de données.
 
   ![Remplacer le canal Last Touch](../assets/override-last-touch-channel.png)
 

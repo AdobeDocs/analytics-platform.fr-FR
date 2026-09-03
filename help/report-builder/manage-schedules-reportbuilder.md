@@ -16,7 +16,7 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: 383
+source-wordcount: 387
 ht-degree: 6%
 
 ---
@@ -78,7 +78,7 @@ Vous pouvez afficher l’historique et le statut des classeurs planifiés dans l
    ![Historique planifié](assets/scheduled-workbooks-history.png){zoomable="yes"}
 
    Utilisez ![Rechercher](/help/assets/icons/Search.svg) pour rechercher des classeurs spécifiques dans la liste.
-Utilisez ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) pour définir les colonnes à afficher.
+   Utilisez ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) pour définir les colonnes à afficher.
 
    L’onglet **[!UICONTROL Historique]** vous permet de consulter le statut de chaque tâche planifiée. Une ligne distincte documente le changement d’état pour chaque tâche planifiée.
 

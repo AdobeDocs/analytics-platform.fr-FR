@@ -42,11 +42,11 @@ ht-degree: 27%
    - L’identifiant du jeu de données pour lequel vous souhaitez recréer la clé.
    - Nom de la colonne (chemin d’identité et espace de noms) de l’identifiant persistant du jeu de données souhaité (identifiant qui apparaît sur chaque ligne).
    - Si le jeu de données prend en charge `identityMap` :
-      - Pour le groupement basé sur les champs, spécifiez l’espace de noms pour les ID persistants et de personne.
-      - Pour le groupement basé sur les graphiques, spécifiez l’espace de noms de l’identifiant persistant et l’espace de noms d’identité à utiliser pour interroger le graphique d’identité.
+     - Pour le groupement basé sur les champs, spécifiez l’espace de noms pour les ID persistants et de personne.
+     - Pour le groupement basé sur les graphiques, spécifiez l’espace de noms de l’identifiant persistant et l’espace de noms d’identité à utiliser pour interroger le graphique d’identité.
    - Si le jeu de données ne prend pas en charge `identityMap` :
-      - Pour le groupement basé sur les champs, le nom de colonne de l’ID de personne pour le jeu de données souhaité (l’identifiant de personne, qui agit également comme un lien entre les jeux de données dans le contexte d’une connexion).
-      - Pour le groupement basé sur un graphique, espace de noms d’identité à utiliser pour interroger le graphique d’identité.
+     - Pour le groupement basé sur les champs, le nom de colonne de l’ID de personne pour le jeu de données souhaité (l’identifiant de personne, qui agit également comme un lien entre les jeux de données dans le contexte d’une connexion).
+     - Pour le groupement basé sur un graphique, espace de noms d’identité à utiliser pour interroger le graphique d’identité.
    - Votre préférence en termes d’intervalle de recherche en amont et de fréquence de relecture. Consultez votre package Customer Journey Analytics pour connaître les [&#x200B; options &#x200B;](#options) disponibles.
    - Nom de la sandbox.
 

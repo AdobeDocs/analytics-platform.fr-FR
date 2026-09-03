@@ -46,16 +46,16 @@ Si vous souhaitez ajouter une nouvelle colonne, il existe deux options, selon qu
 
 * Renvoi rétroactif :
 
-   * Supprimez le jeu de données actuel.
-   * Configurez à nouveau le connecteur avec la colonne mise à jour.
+  * Supprimez le jeu de données actuel.
+  * Configurez à nouveau le connecteur avec la colonne mise à jour.
 
   Cela permet de s’assurer que les données sont renvoyées plus efficacement et plus rapidement.
 
 * Aucun renvoi rétroactif :
 
-   * Ajoutez la colonne dans la table source.
-   * Ajoutez la colonne dans le schéma du jeu de données cible.
-   * Mettez à jour le mappage pour inclure le nouveau champ (colonne) de la table source au jeu de données cible.
+  * Ajoutez la colonne dans la table source.
+  * Ajoutez la colonne dans le schéma du jeu de données cible.
+  * Mettez à jour le mappage pour inclure le nouveau champ (colonne) de la table source au jeu de données cible.
 
 Cette stratégie :
 

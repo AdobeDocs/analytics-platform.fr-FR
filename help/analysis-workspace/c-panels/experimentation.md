@@ -188,7 +188,7 @@ Les mesures calculées qui incluent l’une des mesures ou constantes suivantes 
 * Mesures de base divisées entre elles ou multipliées ensemble (par exemple, `Revenue`/`Orders`)
 * Constantes ajoutées ou soustraites à une mesure de base (par exemple, `Revenue+50`)
 * L’une des mesures de base suivantes :
-   * Personnes
+  * Personnes
 
 Les mesures calculées qui ne sont pas compatibles avec le panneau Expérimentation ont la valeur [!UICONTROL **Partout dans Customer Journey Analytics (à l’exception de l’expérimentation)**] dans le champ [!UICONTROL **Compatibilité des produits**] lors de la création de la mesure calculée. Pour plus d’informations sur la création d’une mesure calculée, consultez [Création de mesures](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
 

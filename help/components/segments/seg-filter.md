@@ -54,7 +54,7 @@ Les sections de filtre suivantes sont disponibles :
 
 {{dataviewfiltersection}}
 
-### Personne propriétaire
+### Propriétaire
 
 {{ownerfiltersection}}
 

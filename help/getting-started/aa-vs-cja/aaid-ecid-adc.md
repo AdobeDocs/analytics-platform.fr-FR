@@ -65,7 +65,8 @@ Les éléments situés entre &lt;> chevrons représentent les endroits où les v
 
 Dans le mappage d’identité :
 
-* En présence d’un ECID, l’identité est marquée comme l’identité principale de l’événement. Remarque : dans ce cas, l’AAID peut se baser sur l’ECID conformément aux informations ci-dessus.Dans le cas contraire, l’AAID est marqué comme étant l’identité principale de l’événement.
+* En présence d’un ECID, l’identité est marquée comme l’identité principale de l’événement. Remarque : dans ce cas, l’AAID peut se baser sur l’ECID conformément aux informations ci-dessus.
+Dans le cas contraire, l’AAID est marqué comme étant l’identité principale de l’événement.
 * L’AACUSTOMID n’est jamais marqué comme l’ID principal de l’événement. Cependant, en présence d’un AACUSTOMID, l’AAID est basé sur l’AACUSTOMID conformément au processus décrit ci-dessus.
 
 Lorsque l’identité ou les identités sont copiées dans `identityMap`, `endUserIDs._experience.mcid.namespace.code` est également défini sur le même événement :

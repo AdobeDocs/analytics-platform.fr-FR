@@ -47,7 +47,7 @@ L’utilisation de Data Insights Agent pour répondre aux questions relatives au
 
 | Fonctionnalité | Incluse dans les capacités de traitement | Hors des capacités de traitement |
 | --- | --- | --- |
-| **Types de visualisations** | <ul><li>Ligne</li><li>Multiligne</li><li>Tableau à structure libre</li><li>Barre</li><li>Anneau</li><li>Nombre de résumés</li></ul> | <ul><li>Flux</li><li>Abandon</li><li>Table de cohorte</li><li>Surface et aires empilées</li><li>Barres empilées</li><li>Puce</li><li>Combiné</li><li>Histogramme</li><li>Barres horizontales et barres empilées horizontales</li><li>Résumé des mesures clés</li><li>Graphique de dispersion</li><li>Modification de la synthèse</li><li>Texte</li><li>Treemap</li><li>Venn</li><li>Analyse guidée : croissance active, tendances de conversion, engagement, impact de la première utilisation, fréquence, entonnoir, croissance nette, impact sur la publication, rétention, chronologie, tendances</li></ul> |
+| **Types de visualisations** | <ul><li>Graphique linéaire</li><li>Multiligne</li><li>Tableau à structure libre</li><li>Barres</li><li>Anneau</li><li>Synthèse des chiffres</li></ul> | <ul><li>Flux</li><li>Abandon</li><li>Table de cohortes</li><li>Surface et aires empilées</li><li>Barres empilées</li><li>Puces</li><li>Combo</li><li>Histogramme</li><li>Barres horizontales et barres empilées horizontales</li><li>Synthèse des mesures clés</li><li>Nuage de points</li><li>Synthèse des modifications</li><li>Texte</li><li>Plan en arborescence</li><li>Venn</li><li>Analyse guidée : croissance active, tendances de conversion, engagement, impact de la première utilisation, fréquence, entonnoir, croissance nette, impact sur la publication, rétention, chronologie, tendances</li></ul> |
 | **Actions Workspace et fonctionnalités de l’agent** | <ul><li>Créer et mettre à jour des visualisations<p>Génère un tableau à structure libre et les visualisations associées (ligne, barre, anneau, etc.).</p><p>Par exemple, *Quel est le bénéfice sur l’ensemble des SKU de février à mai ?*</p></li><li>Poser des questions à la suite du prompt initial<p>Répondez à un prompt dans le contexte de prompts précédents. Par exemple :</p> <ul><li>Prompt 1 : *Indique la tendance des événements à partir de mars.*</li><li>Prompt 2 : *Montre-moi les données de mars à avril à la place*</li></ul> </li><li>Détection de prompt hors des capacités de traitement<p>Si vous envoyez un prompt hors des capacités de traitement, par exemple *Exporte ce projet*, l’agent Data Insights vous informe que la question est hors des capacités de traitement.</p></li></ul> | <ul><li>Partager</li><li>Exporter</li><li>Télécharger</li><li>Gestion les préférences d’utilisateur et d’utilisatrice</li><li>Gérer la vue de données</li><li>Application des tableaux de bord Analytics</li><li>Attribution</li><li>Résumé ou réponse en ligne<p>L’agent Data Insights ne peut pas répondre en ligne dans le rail de conversation avec une réponse résumée d’un prompt d’utilisateur ou d’utilisatrice. Voici des exemples de prompts hors de portée : *Résume les informations de ma dernière invite* et *Résume les points forts de la visualisation en ligne.*</p></li></ul> |
 | **Questions de clarification** | Si vous posez une question à laquelle l’agent Data Insights ne peut pas répondre en raison d’un manque de contexte ou si votre question est trop générique, l’agent Data Insights vous répond par une question de clarification ou en suggérant des options. <p>Les questions de clarification suivantes sont des exemples de questions liées aux composants :</p><ul><li>Mesure : *de quelle mesure « chiffre d’affaires » parlez-vous ?*</li><li>Dimension : *Sur laquelle des « régions » ci-dessous voulez-vous vous concentrer ?*</li><li>Segment : *quel segment « Compte » voulez-vous appliquer ?*</li><li>Période : *par « mois dernier », entendez-vous le dernier mois complet ou les 30 derniers jours ?*</li></ul><p>La question de clarification suivante est un exemple de question liée aux éléments de dimension :</p> <ul><li>De quel « nom de magasin » parlez-vous ? (Par exemple, magasin n° 5274, magasin n° 2949 etc.)</li></ul> | Les questions de clarification sont limitées aux composants et aux éléments de dimension. L’agent Data Insights ne peut pas clarifier des éléments tels que les vues de données, les visualisations, la granularité des données, la comparaison et la portée. Lorsque des questions de clarification ne peuvent pas être utilisées, l’agent se contente de répondre à la demande la plus probable. S’il renvoie une visualisation ou une granularité de données inattendue, vous pouvez poser une question complémentaire ou ajuster la visualisation et les données. |
 | **Vérifiabilité et exactitude des données** | La vérifiabilité et l’exactitude des données peuvent être confirmées en affichant le tableau à structure libre et la visualisation des données générés. <p>Par exemple, si vous demandez à l’agent Data Insights d’*établir la tendance des commandes du mois dernier*, vous pouvez confirmer que la mesure correcte (« commandes ») et la période (« mois dernier ») ont été sélectionnées dans le panneau, la visualisation des données et le tableau à structure libre nouvellement générés.</p> | L’agent Data Insights ne répond pas en vous informant des composants ou des visualisations qui ont été ajoutés. |
@@ -74,22 +74,22 @@ Les paramètres suivants régissent l’accès à l’agent Data Insights dans C
 * **Autorisations** : les autorisations nécessaires doivent être accordées dans [!UICONTROL Adobe Admin Console] avant que les utilisateurs et utilisatrices puissent accéder à l’agent Data Insights.
 
   Pour accorder des autorisations, un [administrateur de profils de produit](https://helpx.adobe.com/fr/enterprise/using/manage-product-profiles.html) doit effectuer les étapes suivantes dans l’[!UICONTROL Admin Console] :
-   1. Dans l’**[!UICONTROL Admin Console]**, sélectionnez l’onglet **[!UICONTROL Produits]** pour afficher la page **[!UICONTROL Tous les produits et services]**.
-   1. Sélectionnez **[!UICONTROL Customer Journey Analytics]**.
-   1. Dans l’onglet **[!UICONTROL Profils de produit]**, sélectionnez le titre du profil de produit pour lequel vous souhaitez fournir un accès à [!UICONTROL Assistant IA : connaissance du produit].
-   1. Dans le profil de produit spécifique, sélectionnez l’onglet **[!UICONTROL Autorisations]**.
+  1. Dans l’**[!UICONTROL Admin Console]**, sélectionnez l’onglet **[!UICONTROL Produits]** pour afficher la page **[!UICONTROL Tous les produits et services]**.
+  1. Sélectionnez **[!UICONTROL Customer Journey Analytics]**.
+  1. Dans l’onglet **[!UICONTROL Profils de produit]**, sélectionnez le titre du profil de produit pour lequel vous souhaitez fournir un accès à [!UICONTROL Assistant IA : connaissance du produit].
+  1. Dans le profil de produit spécifique, sélectionnez l’onglet **[!UICONTROL Autorisations]**.
 
-      ![Onglet Autorisations dans l’Admin Console](assets/ai-assistant-permissions-tab.png)
+     ![Onglet Autorisations dans l’Admin Console](assets/ai-assistant-permissions-tab.png)
 
-   1. Dans la ligne **[!UICONTROL Outils de création de rapports]** du tableau fourni, sélectionnez l’icône de modification ![Modifier](/help/assets/icons/Edit.svg).
-   1. Recherchez ou faites défiler l’écran jusqu’à **[!UICONTROL Assistant IA : connaissance du produit]**, puis sélectionnez l’icône plus ![CercleAjouter](/help/assets/icons/AddCircle.svg) en regard de cette autorisation.
-   1. Recherchez ou faites défiler l’écran jusqu’à **[!UICONTROL Agent Data Insights]**, puis sélectionnez l’icône plus ![CercleAjouter](/help/assets/icons/AddCircle.svg) en regard de cette autorisation.
+  1. Dans la ligne **[!UICONTROL Outils de création de rapports]** du tableau fourni, sélectionnez l’icône de modification ![Modifier](/help/assets/icons/Edit.svg).
+  1. Recherchez ou faites défiler l’écran jusqu’à **[!UICONTROL Assistant IA : connaissance du produit]**, puis sélectionnez l’icône plus ![CercleAjouter](/help/assets/icons/AddCircle.svg) en regard de cette autorisation.
+  1. Recherchez ou faites défiler l’écran jusqu’à **[!UICONTROL Agent Data Insights]**, puis sélectionnez l’icône plus ![CercleAjouter](/help/assets/icons/AddCircle.svg) en regard de cette autorisation.
 
-      L’autorisation **[!UICONTROL Assistant IA : connaissance du produit]** et l’autorisation **[!UICONTROL Agent Data Insights]** sont ajoutées à la colonne **[!UICONTROL Éléments d’autorisation inclus]**.
+     L’autorisation **[!UICONTROL Assistant IA : connaissance du produit]** et l’autorisation **[!UICONTROL Agent Data Insights]** sont ajoutées à la colonne **[!UICONTROL Éléments d’autorisation inclus]**.
 
-      ![Ajouter une autorisation](assets/ai-assistant-permissions.png)
+     ![Ajouter une autorisation](assets/ai-assistant-permissions.png)
 
-   1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les autorisations.
+  1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les autorisations.
 
   Pour plus d’informations sur le contrôle d’accès, voir [Contrôle d’accès &#x200B;](/help/technotes/access-control.md#access-control).
 
@@ -104,21 +104,21 @@ Les paramètres suivants régissent l’accès à l’agent Data Insights dans C
 
   Pour activer les vues de données pour l’agent Data Insights :
 
-   1. Dans Customer Journey Analytics, sélectionnez **[!UICONTROL Gestion des données]** > **[!UICONTROL Vues de données]**.
+  1. Dans Customer Journey Analytics, sélectionnez **[!UICONTROL Gestion des données]** > **[!UICONTROL Vues de données]**.
 
-   1. Sélectionnez une ou plusieurs vues de données à activer pour l’agent Data Insights, puis sélectionnez **[!UICONTROL Activer pour l’agent Data Insights]**.
+  1. Sélectionnez une ou plusieurs vues de données à activer pour l’agent Data Insights, puis sélectionnez **[!UICONTROL Activer pour l’agent Data Insights]**.
 
-      ![Activer les vues de données pour l’agent Data Insights](assets/data-view-enable-dia.png)
+     ![Activer les vues de données pour l’agent Data Insights](assets/data-view-enable-dia.png)
 
-      Pour plus d’informations sur l’activation des vues de données pour Data Insights Agent, consultez les [paramètres d’IA pour une vue de données](/help/data-views/create-dataview.md#ai-settings).
+     Pour plus d’informations sur l’activation des vues de données pour Data Insights Agent, consultez les [paramètres d’IA pour une vue de données](/help/data-views/create-dataview.md#ai-settings).
 
   Pour afficher le nombre de vues de données activées pour l’agent Data Insights dans votre organisation IMS :
 
-   1. Dans Customer Journey Analytics, sélectionnez **[!UICONTROL Gestion des données]** > **[!UICONTROL Vues de données]**.
+  1. Dans Customer Journey Analytics, sélectionnez **[!UICONTROL Gestion des données]** > **[!UICONTROL Vues de données]**.
 
-   1. Sélectionnez l’icône d’informations en haut de la colonne **[!UICONTROL Agent Data Insights]**.
+  1. Sélectionnez l’icône d’informations en haut de la colonne **[!UICONTROL Agent Data Insights]**.
 
-      ![Icône d’informations de l’agent Data Insights](assets/data-insights-agent-tooltip.png)
+     ![Icône d’informations de l’agent Data Insights](assets/data-insights-agent-tooltip.png)
 
 
 ## Accès à l’agent Data Insights dans l’assistant IA

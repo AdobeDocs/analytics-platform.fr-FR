@@ -29,8 +29,8 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: e430f26e2b6357a288adb4389a266f26acab68c4
 workflow-type: tm+mt
-source-wordcount: 1448
-ht-degree: 8%
+source-wordcount: 1476
+ht-degree: 9%
 
 ---
 
@@ -120,7 +120,7 @@ Une [vue de données](/help/data-views/data-views.md) est un conteneur spécifiq
 
 Voici un cas pratique que vous pouvez explorer : Combien de visites de pages web par prospect avez-vous eues en avril-juin 2020 ?
 
-1. Ouvrez [Analytics Workspace](/help/analysis-workspace/home.md) et créez un projet.
+1. Ouvrez [Analytics Workspace](/help/analysis-workspace/home.md) et créez un projet.
 Les clients disposant de la plateforme de données clients B2B/B2P peuvent effectuer une analyse de type B2C dans Customer Journey Analytics. Les objets B2B ne sont pas encore disponibles.
 
 1. Créez un [segment](/help/components/segments/seg-create.md) pour les pages vues web comme suit - Type d’événement = web.webpagedetails.pageViews :

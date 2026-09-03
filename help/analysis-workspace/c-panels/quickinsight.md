@@ -139,13 +139,13 @@ D’autres astuces utiles s’affichent dans le [!UICONTROL Créateur d’Aperç
 
   ![Résultat du créateur d’Aperçu rapide](assets/qibuilder-result.png)
 
-   * Dimension **[!UICONTROL Analyser]** **[!UICONTROL Répartie par]** : vous pouvez utiliser jusqu’à 3 niveaux de répartition sur les dimensions pour analyser en détail les données afin d’obtenir les informations dont vous avez réellement besoin. Voir ➊, ➋ et ➌.
+  * Dimension **[!UICONTROL Analyser]** **[!UICONTROL Répartie par]** : vous pouvez utiliser jusqu’à 3 niveaux de répartition sur les dimensions pour analyser en détail les données afin d’obtenir les informations dont vous avez réellement besoin. Voir ➊, ➋ et ➌.
 
-   * Ajouter d’autres mesures **[!UICONTROL Par]** : vous pouvez ajouter jusqu’à 2 mesures supplémentaires. Voir ➍ et ➎.
+  * Ajouter d’autres mesures **[!UICONTROL Par]** : vous pouvez ajouter jusqu’à 2 mesures supplémentaires. Voir ➍ et ➎.
 
-   * **[!UICONTROL Segmenter par]** : vous pouvez ajouter jusqu’à 2 segments supplémentaires. Par exemple, ajoutez Réservations en tant que segment et combinez-le avec les segments Personnes réservant fréquemment et Personnes voyageant pour la première fois, que vous comparez. Voir ➏, ➐ et ➑.
+  * **[!UICONTROL Segmenter par]** : vous pouvez ajouter jusqu’à 2 segments supplémentaires. Par exemple, ajoutez Réservations en tant que segment et combinez-le avec les segments Personnes réservant fréquemment et Personnes voyageant pour la première fois, que vous comparez. Voir ➏, ➐ et ➑.
 
-   * Sur : vous pouvez spécifier la période. Voir ➒.
+  * Sur : vous pouvez spécifier la période. Voir ➒.
 
 ## Limites connues
 

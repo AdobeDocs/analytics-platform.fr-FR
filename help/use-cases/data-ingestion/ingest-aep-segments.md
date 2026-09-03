@@ -497,7 +497,7 @@ You can now report on `audienceMembershipId`, `audienceMembershipIdName` and `pe
 
 * Vous devez effectuer ce processus régulièrement, de sorte que les données d’audience soient constamment actualisées dans Customer Journey Analytics.
 * Vous pouvez importer plusieurs audiences dans une seule connexion Customer Journey Analytics. Cela ajoute une complexité supplémentaire au processus, mais c’est possible. Pour que cela fonctionne, vous devez apporter quelques modifications au processus ci-dessus :
-   1. Effectuez ce processus pour chaque audience souhaitée dans votre collection d’audiences dans RTCP.
-   1. Customer Journey Analytics prend en charge les tableaux/tableaux d’objets dans les jeux de données de profil. Utiliser un [tableau d’objets](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/complex-data/object-arrays.html?lang=fr) pour le `audienceMembershipId` ou le `audienceMembershipIdName` est la meilleure option.
-   1. Dans votre vue de données, créez une dimension à l’aide de la transformation Sous-chaîne sur le champ `audienceMembershipId` pour convertir la chaîne de valeurs séparées par des virgules en tableau. REMARQUE : le tableau contient actuellement une limite de 10 valeurs.
-   1. Vous pouvez désormais créer des rapports sur ce nouveau `audienceMembershipIds` de dimension dans Customer Journey Analytics Workspace.
+  1. Effectuez ce processus pour chaque audience souhaitée dans votre collection d’audiences dans RTCP.
+  1. Customer Journey Analytics prend en charge les tableaux/tableaux d’objets dans les jeux de données de profil. Utiliser un [tableau d’objets](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/complex-data/object-arrays.html?lang=fr) pour le `audienceMembershipId` ou le `audienceMembershipIdName` est la meilleure option.
+  1. Dans votre vue de données, créez une dimension à l’aide de la transformation Sous-chaîne sur le champ `audienceMembershipId` pour convertir la chaîne de valeurs séparées par des virgules en tableau. REMARQUE : le tableau contient actuellement une limite de 10 valeurs.
+  1. Vous pouvez désormais créer des rapports sur ce nouveau `audienceMembershipIds` de dimension dans Customer Journey Analytics Workspace.

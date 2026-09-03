@@ -61,8 +61,8 @@ Pour activer la transformation pour un jeu de données de recherche B2B :
 
 * Vérifiez pour chaque jeu de données les valeurs suggérées pour **[!UICONTROL Clé]** et **[!UICONTROL Clé correspondante]**. Si vous modifiez les valeurs suggérées, un avertissement s’affiche vous demandant de continuer. Vous devez vous assurer que :
 
-   * La valeur que vous sélectionnez pour **Clé** est basée sur le type de données ID de personne.
-   * La valeur que vous sélectionnez pour **Clé correspondante** est définie comme champ d’identité principale pour le jeu de données d’événement.
+  * La valeur que vous sélectionnez pour **Clé** est basée sur le type de données ID de personne.
+  * La valeur que vous sélectionnez pour **Clé correspondante** est définie comme champ d’identité principale pour le jeu de données d’événement.
 
 * Sélectionnez les options pour importer de nouvelles données et un renvoi du jeu de données.
 

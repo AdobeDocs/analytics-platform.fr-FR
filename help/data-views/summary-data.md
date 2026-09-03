@@ -21,8 +21,8 @@ topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: 1166
-ht-degree: 96%
+source-wordcount: 1168
+ht-degree: 95%
 
 ---
 
@@ -130,7 +130,7 @@ Le fuseau horaire de vos données de résumé est défini au niveau du schéma d
   | 2024-07-29T01:00:00 | `America/`<br/>`Los_Angeles` | 2024-07-28T18:00:00 | PST | 2024-07-28T18:00:00 |
   | 2024-07-30T01:00:00-05:00 | `Australia/`<br/>`Sydney` | 2024-07-30T17:00:00 | CET | 2024-07-30T08:00:00 |
 
-  Pour les fuseaux horaires avec un décalage de 30 minutes (par exemple, IST, Heure standard de l’Inde), le décalage de 30 minutes est ignoré lors de la création de rapports sur les données de résumé. Par exemple : 12:30 est signalé comme 12:00.
+  Pour les fuseaux horaires avec un décalage de 30 minutes (par exemple, IST, Heure standard de l’Inde), le décalage de 30 minutes est ignoré lors de la création de rapports sur les données de résumé. Par exemple : 12 h 30 est signalé comme 12 h 00.
 
 
 Pour vous assurer que le fuseau horaire approprié est utilisé pour vos données de résumé granulaires horaires, vous devez vous assurer que le schéma utilisé pour les données de résumé comporte le fuseau horaire approprié configuré.

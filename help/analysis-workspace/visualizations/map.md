@@ -225,21 +225,21 @@ La visualisation des cartes dans Customer Journey Analytics diffère de la visua
 
    * **Zoom avant** : Vous pouvez effectuer un zoom avant sur la carte pour agrandir certaines zones de l’une des manières suivantes :
 
-      * Double-cliquez sur la carte avec la souris.
+     * Double-cliquez sur la carte avec la souris.
 
-      * Utilisez la roulette de défilement de la souris ou une action similaire sur le trackpad.
+     * Utilisez la roulette de défilement de la souris ou une action similaire sur le trackpad.
 
-      * Sélectionnez l’icône plus ![icône de zoom avant](assets/map-zoomin-icon.png) dans la visualisation de la carte.
+     * Sélectionnez l’icône plus ![icône de zoom avant](assets/map-zoomin-icon.png) dans la visualisation de la carte.
 
      La carte effectue un zoom en conséquence. La dimension requise (pays > État > ville) est automatiquement mise à jour en fonction du niveau de zoom.
 
    * **Zoom arrière** : vous pouvez effectuer un zoom arrière sur la carte pour afficher des zones plus grandes de l’une des manières suivantes :
 
-      * Maintenez la touche Maj enfoncée et double-cliquez sur la carte avec la souris.
+     * Maintenez la touche Maj enfoncée et double-cliquez sur la carte avec la souris.
 
-      * Utilisez la roulette de défilement de la souris ou une action similaire sur le trackpad.
+     * Utilisez la roulette de défilement de la souris ou une action similaire sur le trackpad.
 
-      * Sélectionnez l’icône moins ![icône de zoom arrière](assets/map-zoomout-icon.png) dans la visualisation de la carte.
+     * Sélectionnez l’icône moins ![icône de zoom arrière](assets/map-zoomout-icon.png) dans la visualisation de la carte.
 
      La carte effectue un zoom en conséquence. La dimension requise (pays > État > ville) est automatiquement mise à jour en fonction du niveau de zoom.
 
@@ -255,13 +255,13 @@ La visualisation des cartes dans Customer Journey Analytics diffère de la visua
 
    * **Afficher des comparaisons période par période (par exemple, année par année)** :
 
-      * Afficher les nombres négatifs.
+     * Afficher les nombres négatifs.
 
-        Par exemple, si vous tracez une mesure d’une année à l’autre, la carte peut afficher -33 % sur New York.
+       Par exemple, si vous tracez une mesure d’une année à l’autre, la carte peut afficher -33 % sur New York.
 
-      * Avec les mesures de type *pourcentage*, le regroupement effectue la moyenne des pourcentages.
+     * Avec les mesures de type *pourcentage*, le regroupement effectue la moyenne des pourcentages.
 
-      * Une palette de couleurs verte et rouge indique positif et négatif.
+     * Une palette de couleurs verte et rouge indique positif et négatif.
 
    * **Paramètres de visualisation supplémentaires** : sélectionnez l’icône Paramètres ![Paramètre](/help/assets/icons/Setting.svg) dans l’en-tête de visualisation pour afficher les paramètres supplémentaires pour la visualisation de la carte. Pour plus d’informations, voir [Configurer les paramètres de visualisation](#configure-visualization-settings).
 

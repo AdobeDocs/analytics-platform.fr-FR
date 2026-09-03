@@ -36,8 +36,8 @@ Pour cela, vous devez analyser et explorer les éléments suivants :
 
 * Impact marketing :
 
-   * Sur l’ensemble des campagnes, canaux et contenus.
-   * Sur les groupes d&#39;achat dans les comptes,
+  * Sur l’ensemble des campagnes, canaux et contenus.
+  * Sur les groupes d&#39;achat dans les comptes,
 
 * Progression du pipeline de ventes.
 * Opportunités de vente incitative et croisée.

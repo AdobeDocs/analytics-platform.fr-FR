@@ -16,7 +16,7 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: 540
+source-wordcount: 542
 ht-degree: 92%
 
 ---
@@ -77,12 +77,12 @@ Vous pouvez également sélectionner un **[!UICONTROL paramètre prédéfini]** 
 
      ![Dates glissantes](assets/rolliing-dates.png)
 
-      1. Sélectionnez **[!UICONTROL Début de]**, **[!UICONTROL Fin de]** ou **[!UICONTROL Jour fixe]**.
-      1. Lorsque vous avez sélectionné **[!UICONTROL Début de]** ou **[!UICONTROL Fin de]**, vous pouvez créer une expression complète. Par exemple : **[!UICONTROL Fin de]** **[!UICONTROL trimestre en cours]** **[!UICONTROL moins]** `20` **[!UICONTROL jours]**. Sélectionnez la valeur appropriée pour chaque partie de l’expression.
-         * Sélectionnez une valeur pour la période actuelle. Par exemple, **[!UICONTROL trimestre en cours]**.
-         * Sélectionnez une valeur pour le calcul supplémentaire. Par exemple, **[!UICONTROL moins]**.
-         * Lorsque vous avez spécifié un calcul supplémentaire, indiquez une valeur. Par exemple : `20`.
-         * Lorsque vous avez spécifié un calcul supplémentaire, sélectionnez la période à utiliser pour le calcul. Par exemple, **[!UICONTROL jours]**.
+     1. Sélectionnez **[!UICONTROL Début de]**, **[!UICONTROL Fin de]** ou **[!UICONTROL Jour fixe]**.
+     1. Lorsque vous avez sélectionné **[!UICONTROL Début de]** ou **[!UICONTROL Fin de]**, vous pouvez créer une expression complète. Par exemple : **[!UICONTROL Fin de]** **[!UICONTROL trimestre en cours]** **[!UICONTROL moins]** `20` **[!UICONTROL jours]**. Sélectionnez la valeur appropriée pour chaque partie de l’expression.
+        * Sélectionnez une valeur pour la période actuelle. Par exemple, **[!UICONTROL trimestre en cours]**.
+        * Sélectionnez une valeur pour le calcul supplémentaire. Par exemple, **[!UICONTROL moins]**.
+        * Lorsque vous avez spécifié un calcul supplémentaire, indiquez une valeur. Par exemple : `20`.
+        * Lorsque vous avez spécifié un calcul supplémentaire, sélectionnez la période à utiliser pour le calcul. Par exemple, **[!UICONTROL jours]**.
 
      Sélectionnez **[!UICONTROL Masquer les détails]** pour masquer les détails du calcul des dates glissantes.
 

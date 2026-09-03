@@ -82,20 +82,20 @@ L’événement suivant est un objet JSON qui représente un achat d’une machi
 Lors de la création d’une vue de données, les dimensions et mesures suivantes sont disponibles (en fonction du schéma) :
 
 * **Dimensions :**
-   * ID
-   * produit : SKU
-   * produit : nom
-   * produit : id_commande
-   * produit : garantie : couverture
-   * produit : garantie : durée
-   * produit : garantie : nom
-   * produit : garantie : type
+  * ID
+  * produit : SKU
+  * produit : nom
+  * produit : id_commande
+  * produit : garantie : couverture
+  * produit : garantie : durée
+  * produit : garantie : nom
+  * produit : garantie : type
 * **Mesures :**
-   * produit : commandes
-   * produit : unités
-   * produit : chiffre d’affaires
-   * produit : garantie
-   * produit : garantie : chiffre d’affaires
+  * produit : commandes
+  * produit : unités
+  * produit : chiffre d’affaires
+  * produit : garantie
+  * produit : garantie : chiffre d’affaires
 
 ### Exemples d’événements identiques (comportement de création de rapports)
 
@@ -283,7 +283,7 @@ L’application de cette mesure calculée affiche les résultats souhaités :
 
 
 
-## Restrictions
+## Limites
 
 Des limitations s’appliquent aux tableaux dans les données utilisées par Customer Journey Analytics et modélisées dans le cadre d’un schéma dans Experience Platform. Consultez les sections [Limites du modèle de données](https://experienceleague.adobe.com/fr/docs/experience-platform/profile/guardrails#data-model-limits) et [Limites de taille des données](https://experienceleague.adobe.com/fr/docs/experience-platform/profile/guardrails#data-size-limits) dans le [Mécanismes de sécurisation par défaut pour les données et la segmentation du profil client en temps réel](https://experienceleague.adobe.com/fr/docs/experience-platform/profile/guardrails).
 

@@ -20,7 +20,7 @@ topic_v2:
   - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: 620
+source-wordcount: 622
 ht-degree: 99%
 
 ---
@@ -43,16 +43,16 @@ Vous pouvez configurer le type de mesure et le [modèle d’attribution](#attrib
 
    * Spécifiez **[!UICONTROL Attribution]**.
 
-      1. Vous pouvez effectuer l’une des actions suivantes :
+     1. Vous pouvez effectuer l’une des actions suivantes :
 
-         * Désactivez **[!UICONTROL Utiliser un modèle d’attribution différent du modèle par défaut]** pour utiliser le modèle d’attribution de colonne par défaut, à savoir Dernière touche, avec un intervalle de recherche en amont de 30 jours.
-         * Activez **[!UICONTROL Utiliser un modèle d’attribution différent du modèle par défaut]**. Dans la boîte de dialogue **[!UICONTROL Modèle d’attribution de colonne]**,
+        * Désactivez **[!UICONTROL Utiliser un modèle d’attribution différent du modèle par défaut]** pour utiliser le modèle d’attribution de colonne par défaut, à savoir Dernière touche, avec un intervalle de recherche en amont de 30 jours.
+        * Activez **[!UICONTROL Utiliser un modèle d’attribution différent du modèle par défaut]**. Dans la boîte de dialogue **[!UICONTROL Modèle d’attribution de colonne]**,
 
-            * sélectionnez un **[!UICONTROL Modèle]** parmi les [modèles d’attribution](#attribution-models).
-            * sélectionnez un **[!UICONTROL Conteneur]** parmi les options de [conteneur](#container).
-            * sélectionnez un **[!UICONTROL Intervalle de recherche en amont]** dans les options d’[intervalle de recherche en amont](#lookback-window). Si vous sélectionnez **[!UICONTROL Durée personnalisée]**, vous pouvez définir la période avec un granularité allant de **[!UICONTROL minute(s)]** à **[!UICONTROL trimestre(s)]**.
+          * sélectionnez un **[!UICONTROL Modèle]** parmi les [modèles d’attribution](#attribution-models).
+          * sélectionnez un **[!UICONTROL Conteneur]** parmi les options de [conteneur](#container).
+          * sélectionnez un **[!UICONTROL Intervalle de recherche en amont]** dans les options d’[intervalle de recherche en amont](#lookback-window). Si vous sélectionnez **[!UICONTROL Durée personnalisée]**, vous pouvez définir la période avec un granularité allant de **[!UICONTROL minute(s)]** à **[!UICONTROL trimestre(s)]**.
 
-      1. Sélectionnez **[!UICONTROL Appliquer]** pour appliquer le modèle d’attribution différent du modèle par défaut. Sélectionnez Annuler pour annuler.
+     1. Sélectionnez **[!UICONTROL Appliquer]** pour appliquer le modèle d’attribution différent du modèle par défaut. Sélectionnez Annuler pour annuler.
 
      Si vous avez déjà défini un modèle d’attribution différent du modèle par défaut, sélectionnez **[!UICONTROL Modifier]** pour modifier la sélection.
 

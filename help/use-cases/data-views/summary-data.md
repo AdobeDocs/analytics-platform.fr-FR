@@ -23,8 +23,8 @@ topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: 4858
-ht-degree: 16%
+source-wordcount: 5045
+ht-degree: 15%
 
 ---
 
@@ -485,7 +485,7 @@ Pour que vous puissiez générer des rapports sur les données correctes dans Wo
          |---|---|---|---|
          | Groupe publicitaire (recherche) | Exemple de jeu de données de recherche | Chaîne | *_tenant*.ad_group |
          | Groupe d&#39;annonces | Exemple de jeu de données de résumé | Chaîne | *_tenant*.ad_group |
-         | Identifiant De La Campagne | Exemple de jeu de données de résumé | Chaîne | *_tenant*.campaign_id |
+         | Identifiant de campagne | Exemple de jeu de données de résumé | Chaîne | *_tenant*.campaign_id |
          | Nom De La Campagne (Recherche) | Exemple de jeu de données de recherche | Chaîne | *_tenant*.campaign_name |
          | Nom de la campagne | Exemple de jeu de données de résumé | Chaîne | *_tenant*.campaign_name |
          | Réseau | Exemple de jeu de données de résumé | Chaîne | *_tenant*.network |

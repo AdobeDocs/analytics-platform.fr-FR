@@ -112,9 +112,9 @@ Pour utiliser les tableaux de bord :
 
    * La granularité des graphiques sparkline dépend de la longueur de la période :
 
-      * Une tendance horaire s’affiche pour les plages d’une journée.
-      * Une tendance quotidienne s’affiche pour les plages comprises entre une journée et un an.
-      * Une tendance hebdomadaire s’affiche pour les plages supérieures à un an.
+     * Une tendance horaire s’affiche pour les plages d’une journée.
+     * Une tendance quotidienne s’affiche pour les plages comprises entre une journée et un an.
+     * Une tendance hebdomadaire s’affiche pour les plages supérieures à un an.
 
    * La formule de modification de la valeur de pourcentage est calculée de la manière suivante : total de la mesure (période en cours) - total de la mesure (période de comparaison)/total de la mesure (période de comparaison).
 

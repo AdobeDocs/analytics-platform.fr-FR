@@ -35,14 +35,14 @@ Customer Journey Analytics offre la fonctionnalité utile et robuste de combiner
 * Accès à Adobe Experience Platform et Customer Journey Analytics
 * Si votre jeu de données comprend des journaux provenant d’un système de réponse vocale interactif, Adobe recommande de traiter les données afin qu’elles incluent uniquement des interactions rapides avant de les importer dans Platform.
 * Si votre jeu de données comprend des journaux d’appels, Adobe recommande d’inclure les colonnes suivantes :
-   * Date/heure de début de lʼappel
-   * Raison de lʼappel
-   * Identifiant du centre dʼappel
-   * Identifiant de lʼagent du centre dʼappel
-   * Durée de lʼappel
-   * Résultat de l’appel
-   * Coût de lʼappel (si disponible)
-   * Toute métadonnée dʼappel supplémentaire que votre entreprise souhaite inclure
+  * Date/heure de début de lʼappel
+  * Raison de lʼappel
+  * Identifiant du centre dʼappel
+  * Identifiant de lʼagent du centre dʼappel
+  * Durée de lʼappel
+  * Résultat de l’appel
+  * Coût de lʼappel (si disponible)
+  * Toute métadonnée dʼappel supplémentaire que votre entreprise souhaite inclure
 
 ## Importer des données web et du centre d’appel dans Platform
 

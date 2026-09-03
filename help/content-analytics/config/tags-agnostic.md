@@ -21,12 +21,12 @@ topic_v2:
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 484
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
 
-# Bibliothèque JavaScript Content Analytics
+# Bibliothèque JavaScript Content Analytics
 
 La bibliothèque JavaScript d’Adobe Content Analytics permet le suivi des événements liés au contenu sur les sites web en envoyant des données de contenu à Adobe Experience Platform via Experience Platform Edge Network. Utilisez cette bibliothèque lorsque vous souhaitez implémenter Content Analytics sans balises Adobe Experience Platform.
 

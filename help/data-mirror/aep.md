@@ -22,8 +22,8 @@ topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: 2b0204c229a7d53c0a497fe448c165acf84536ad
 workflow-type: tm+mt
-source-wordcount: 571
-ht-degree: 6%
+source-wordcount: 605
+ht-degree: 5%
 
 ---
 
@@ -47,9 +47,9 @@ Vous devez créer un [schéma relationnel](https://experienceleague.adobe.com/fr
 * Définir les champs de votre schéma et leurs attributs
 * Configurez les attributs requis pour les champs dans un schéma relationnel :
 
-   * **Clé de Principal**.
-   * **Descripteur de version**, qui doit être configuré sous la forme d’un numéro séquentiel (type de champ Entier) ou d’un type de champ Date et heure. Lorsque vous utilisez un type de champ DateTime, le descripteur de version définit la date et l’heure d’une modification des données, par exemple pour contenir une date et une heure de la dernière modification.
-   * **descripteur d’horodatage** (pour les données de série temporelle), qui définit l’horodatage non modifiable au moment où un événement est capturé. Le descripteur d’horodatage n’est pas obligatoire pour un schéma relationnel basé sur des enregistrements.
+  * **Clé de Principal**.
+  * **Descripteur de version**, qui doit être configuré sous la forme d’un numéro séquentiel (type de champ Entier) ou d’un type de champ Date et heure. Lorsque vous utilisez un type de champ DateTime, le descripteur de version définit la date et l’heure d’une modification des données, par exemple pour contenir une date et une heure de la dernière modification.
+  * **descripteur d’horodatage** (pour les données de série temporelle), qui définit l’horodatage non modifiable au moment où un événement est capturé. Le descripteur d’horodatage n’est pas obligatoire pour un schéma relationnel basé sur des enregistrements.
 
 
 

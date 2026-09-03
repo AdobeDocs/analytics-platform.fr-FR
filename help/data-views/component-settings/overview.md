@@ -108,8 +108,8 @@ Les avantages des libellés de contexte sont les suivants :
 * **Cohérence** : tous les membres de votre organisation qui travaillent sur un ou plusieurs projets basés sur une vue de données qui utilise des libellés de contexte adoptent le même comportement.
 * **Visibilité des fonctionnalités et des modèles** : certaines visualisations et fonctionnalités n’apparaissent que lorsque le libellé de contexte approprié est attribué. Par exemple :
 
-   * Une visualisation [Carte](/help/analysis-workspace/visualizations/map.md) ne s’affiche correctement que lorsque Customer Journey Analytics sait quels composants représentent la latitude et la longitude.
-   * Des [modèles](/help/analysis-workspace/templates/use-templates.md) spécifiques ne sont visibles que lorsque les libellés de contexte corrects sont appliqués et que les composants associés sont disponibles.
+  * Une visualisation [Carte](/help/analysis-workspace/visualizations/map.md) ne s’affiche correctement que lorsque Customer Journey Analytics sait quels composants représentent la latitude et la longitude.
+  * Des [modèles](/help/analysis-workspace/templates/use-templates.md) spécifiques ne sont visibles que lorsque les libellés de contexte corrects sont appliqués et que les composants associés sont disponibles.
 
 Des libellés de contexte peuvent être requis dans les cas suivants :
 

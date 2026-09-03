@@ -78,4 +78,4 @@ Si tous les paramètres ci-dessus semblent similaires et que vous souhaitez au m
 
    Les lignes correspondant à l’un des critères ci-dessus sont exclues du workflow d’ingestion du connecteur source Analytics et doivent donc également être exclues lors du comptage des lignes des flux de données.
 
-1. Le nombre total d’enregistrements dans les services de requêtes doit correspondre au nombre de lignes dans un flux de données pour la même période.
+1. Le nombre total d’enregistrements dans les services de requête doit correspondre au nombre de lignes dans un flux de données pour la même période.

@@ -41,15 +41,15 @@ Pour appliquer des filtres à l’aide de segments à des mesures individuelles 
 
 * Sinon :
 
-   1. Sélectionnez ![PlusPetit](/help/assets/icons/MoreSmall.svg) pour une mesure spécifique dans le volet **[!UICONTROL Tableau]**, puis sélectionnez **[!UICONTROL Filtrer la mesure]**.
+  1. Sélectionnez ![PlusPetit](/help/assets/icons/MoreSmall.svg) pour une mesure spécifique dans le volet **[!UICONTROL Tableau]**, puis sélectionnez **[!UICONTROL Filtrer la mesure]**.
 
-      ![onglet segments affichant les mesures.](./assets/filter-metric.png){zoomable="yes"}
+     ![onglet segments affichant les mesures.](./assets/filter-metric.png){zoomable="yes"}
 
-   1. Sélectionnez un ou plusieurs segments dans le menu déroulant **[!UICONTROL Segments]**. Les segments sont ajoutés à la liste **[!UICONTROL Segments appliqués]**.
+  1. Sélectionnez un ou plusieurs segments dans le menu déroulant **[!UICONTROL Segments]**. Les segments sont ajoutés à la liste **[!UICONTROL Segments appliqués]**.
 
-      ![Segments appliqués](assets/segments-applied.png)
-   1. Sélectionnez ![CrossSize75](/help/assets/icons/CrossSize75.svg) pour supprimer un segment de la liste **[!UICONTROL Segment appliqué]**. Ou sélectionnez **[!UICONTROL Effacer tout]** pour supprimer tous les segments de la liste **[!UICONTROL Segment appliqué]**.
-   1. Sélectionnez **[!UICONTROL Appliquer]**.
+     ![Segments appliqués](assets/segments-applied.png)
+  1. Sélectionnez ![CrossSize75](/help/assets/icons/CrossSize75.svg) pour supprimer un segment de la liste **[!UICONTROL Segment appliqué]**. Ou sélectionnez **[!UICONTROL Effacer tout]** pour supprimer tous les segments de la liste **[!UICONTROL Segment appliqué]**.
+  1. Sélectionnez **[!UICONTROL Appliquer]**.
 
 Pour afficher les filtres appliqués, survolez une mesure avec la souris ou sélectionnez-la dans le volet Tableau. Les mesures avec des segments appliqués affichent une icône de segment.
 

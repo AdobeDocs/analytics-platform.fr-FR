@@ -81,49 +81,49 @@ Double-cliquez sur le bouton info (i) en regard d’une description.
 Les éléments suivants s’affichent :
 
 * **[!UICONTROL Nom de l’action]** : action effectuée. Valeurs possibles :
-   * API_REQUEST : toute action déclenche une requête API backend. Des détails s’affichent sur le contenu de la requête API.
-   * APPROVE : une action « approbation » a été effectuée.
-   * CREATE : une action « créer » a été effectuée.
-   * DELETE : une action « supprimer » a été effectuée.
-   * EDIT : une action « modifier » a été effectuée.
-   * EMBARGO : lorsque vous limitez une demande dans le [Gestionnaire des activités de rapports](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/reporting-activity-manager/reporting-activity-cancel-requests), l’action est enregistrée dans le journal d’audit dans EMBARGO.
-   * EXPORT : une action « export » a été effectuée.
-   * ORG_CHANGE : une action de changement d’organisation a été effectuée.
-   * REFRESH : une action « actualiser » a été effectuée.
-   * SHARE : une action « partager » été effectuée.
-   * TRANSFER : une action de transfert a été effectuée.
-   * UNAPPROVE : une action « annuler l’approbation » a été effectuée.
-   * UNSHARE : une action « annuler le partage » a été effectuée.
+  * API_REQUEST : toute action déclenche une requête API backend. Des détails s’affichent sur le contenu de la requête API.
+  * APPROVE : une action « approbation » a été effectuée.
+  * CREATE : une action « créer » a été effectuée.
+  * DELETE : une action « supprimer » a été effectuée.
+  * EDIT : une action « modifier » a été effectuée.
+  * EMBARGO : lorsque vous limitez une demande dans le [Gestionnaire des activités de rapports](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/reporting-activity-manager/reporting-activity-cancel-requests), l’action est enregistrée dans le journal d’audit dans EMBARGO.
+  * EXPORT : une action « export » a été effectuée.
+  * ORG_CHANGE : une action de changement d’organisation a été effectuée.
+  * REFRESH : une action « actualiser » a été effectuée.
+  * SHARE : une action « partager » été effectuée.
+  * TRANSFER : une action de transfert a été effectuée.
+  * UNAPPROVE : une action « annuler l’approbation » a été effectuée.
+  * UNSHARE : une action « annuler le partage » a été effectuée.
 * **[!UICONTROL Date de création]** : date et heure auxquelles l’action a été effectuée.
 * **[!UICONTROL Description]** : résumé de l’action.
 * **[!UICONTROL Nom d’utilisateur ou d’utilisatrice]** : personne qui a effectué l’action. Parfois, le nom d’utilisateur ou d’utilisatrice peut être manquant. Envisagez d’utiliser la fonction [Utilisation du produit](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/tools/product-usage/usage-overview), car elle inclut toujours le nom d’utilisateur ou d’utilisateur pour la connexion.
 * **[!UICONTROL E-mail]** : adresse e-mail de la personne qui a effectué l’action.
 * **[!UICONTROL Nom du composant]** : composant sur lequel la personne a effectué une action.
 * **[!UICONTROL Type de composant]** : type de composant. Valeurs possibles :
-   * ANNOTATION
-   * AUDIENCE
-   * CALCULATED_METRIC
-   * CONNECTION
-   * DATA_GROUP
-   * DATA_VIEW
-   * DATASET_STITCHING
-   * DATE_RANGE
-   * FEATURE_ACCESS
-   * FILTER
-   * IMS_ORG
-   * MOBILE
-   * PROJECT (Workspace)
-   * REPORT
-   * SCHEDULED_PROJECT
-   * USER
-   * USER_GROUP
+  * ANNOTATION
+  * AUDIENCE
+  * CALCULATED_METRIC
+  * CONNECTION
+  * DATA_GROUP
+  * DATA_VIEW
+  * DATASET_STITCHING
+  * DATE_RANGE
+  * FEATURE_ACCESS
+  * FILTER
+  * IMS_ORG
+  * MOBILE
+  * PROJECT (Workspace)
+  * REPORT
+  * SCHEDULED_PROJECT
+  * USER
+  * USER_GROUP
 * **[!UICONTROL ID du composant]** : ID du composant sur lequel la personne a effectué une action.
 * **[!UICONTROL ID d’organisation IMS]** : identifiant IMS de l’organisation, au format `ABC123@AdobeOrg`.
 * **[!UICONTROL Identifiant de journal]** : identifiant unique de cette entrée de journal.
 * **[!UICONTROL ID d’utilisateur ou d’utilisatrice]** : ID unique de la personne qui a effectué l’action.
 * **[!UICONTROL Type d’utilisateur ou d’utilisatrice]** : type d’authentification utilisé. Les valeurs valides sont les suivantes :
-   * IMS
-   * OKTA
+  * IMS
+  * OKTA
 
 ### Filtrer des journaux d’audit
 

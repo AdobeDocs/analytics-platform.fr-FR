@@ -24,8 +24,8 @@ topic_v2:
   - id: beb7a3c1-66ab-4786-b879-7621375b3c40
 source-git-commit: 3fcb9c403ace295c1a7e62c21d8bb444a4f9c011
 workflow-type: tm+mt
-source-wordcount: 10442
-ht-degree: 97%
+source-wordcount: 10602
+ht-degree: 98%
 
 ---
 
@@ -756,8 +756,8 @@ Définit un ensemble de valeurs qui sont remplacées par les valeurs corresponda
 
 ## Cas d’utilisation 1 {#classify-uc1}
 
-Vous disposez d’un fichier CSV qui comprend une colonne clé pour `hotelID` et une ou plusieurs colonnes supplémentaires associées au `hotelID` : `city`, `rooms`, `hotel name`.
-Vous collectez des [!DNL Hotel ID] dans une dimension mais souhaitez créer une dimension [!DNL Hotel Name] dérivée de la `hotelID` dans le fichier CSV.
+Vous disposez d’un fichier CSV qui comprend une colonne clé pour `hotelID` et une ou plusieurs colonnes supplémentaires associées à `hotelID` : `city`, `rooms`, `hotel name`.
+Vous collectez [!DNL Hotel ID] dans une dimension mais souhaitez créer une dimension [!DNL Hotel Name] dérivée de `hotelID` dans le fichier CSV.
 
 **Structure et contenu de fichier CSV**
 
@@ -1015,8 +1015,8 @@ Vous pouvez également utiliser la valeur pratique de période dynamique Mainten
 
 Vous souhaitez comprendre le temps de recherche, en minutes, qu’une personne consacre avant de passer une commande au cours d’une session.
 
-Vous définissez un nouveau champ dérivé de `Time Between Search And Order In Minutes` qui est le résultat de deux fonctions [[!UICONTROL CASE QUAND]](#case-when) pour définir les valeurs [!UICONTROL Temps de recherche] et [!UICONTROL Temps de commande].
-Utilisez ensuite ces deux valeurs pour calculer la différence avec une fonction [!UICONTROL DATE MATH] avec [!UICONTROL Scope] défini sur [!UICONTROL Session], les valeurs définies sur [!UICONTROL Search Time] et [!UICONTROL Order Time] et [!UICONTROL Output granularity] défini sur [!UICONTROL Minute]. Pour les deux valeurs, sélectionnez [!UICONTROL Renvoyer la première] pour vous assurer que la première [!UICONTROL Heure de recherche] et [!UICONTROL Heure de commande] est renvoyée.
+Vous définissez un nouveau champ dérivé de `Time Between Search And Order In Minutes` qui est le résultat de deux fonctions [[!UICONTROL CASE WHEN]](#case-when) pour définir les valeurs [!UICONTROL Temps de recherche] et [!UICONTROL Temps de commande].
+Vous utilisez ensuite ces deux valeurs pour calculer la différence à l’aide d’une fonction [!UICONTROL DATE MATH], avec la [!UICONTROL portée] définie sur [!UICONTROL Session], les valeurs définies sur [!UICONTROL Temps de recherche] et [!UICONTROL Temps de commande], et la [!UICONTROL granularité de sortie] définie sur [!UICONTROL Minute]. Pour les deux valeurs, sélectionnez [!UICONTROL Renvoyer la première] pour vous assurer que la première [!UICONTROL Heure de recherche] et la première [!UICONTROL Heure de commande] sont renvoyées.
 
 ![Copie d’écran de la règle Date Math 3](assets/datemath-3.png)
 
@@ -1288,7 +1288,7 @@ Vous pouvez rapidement insérer une fonction [!UICONTROL Recherche] dans le cré
 1. Sélectionnez **[!UICONTROL Champs de schéma]** dans le sélecteur.
 1. Sélectionnez ![icône de champ de schéma](assets/Smock_Folder_18_N.svg) **[!UICONTROL Jeux de données de recherche]**.
 1. Sélectionnez votre jeu de données de recherche et recherchez le champ à utiliser pour la recherche.
-1. Faites glisser et déposez le champ de recherche sur l’un des champs d’entrée disponibles pour une fonction (par exemple, la casse quand). Lorsqu’elle est valide, une zone bleue, intitulée **[!UICONTROL + Ajouter]**, vous permet de déposer le champ et d’insérer automatiquement une fonction de recherche avant la fonction sur laquelle vous avez déposé le champ de recherche. La fonction de recherche insérée est automatiquement renseignée avec des valeurs pertinentes pour tous les champs.
+1. Faites glisser et déposez le champ de recherche sur l’un des champs d’entrée disponibles pour une fonction (par exemple, Cas si). Lorsqu’il est valide, une zone bleue, intitulée **[!UICONTROL + Ajouter]**, vous permet de déposer le champ et d’insérer automatiquement une fonction de recherche avant la fonction sur laquelle vous avez déposé le champ de recherche. La fonction de recherche insérée est automatiquement renseignée avec des valeurs pertinentes pour tous les champs.
    ![Glissement de recherche](assets/lookup-drag.png)
 
 +++

@@ -71,15 +71,15 @@ Les paramètres suivants régissent l’accès à la fonctionnalité d’Assista
 * **Accès contractuel** : si vous ne pouvez pas utiliser l’Assistant IA, contactez l’équipe d’administration de votre entreprise ou le représentant ou la représentante des comptes Adobe. Avant que votre entreprise puisse utiliser l’Assistant IA, vous devez accepter certaines conditions légales liées à GenAI.
 
 * **Autorisations** : dans [!UICONTROL Adobe Admin Console], l’autorisation [!UICONTROL Outils de création de rapports] **[!UICONTROL Assistant IA : connaissance du produit]** détermine l’accès à cet outil. Un [administrateur ou une administratrice de profil de produit](https://helpx.adobe.com/fr/enterprise/using/manage-product-profiles.html) doit suivre les étapes suivantes dans [!UICONTROL Admin Console] :
-   1. Accédez à **[!UICONTROL Admin Console]** > **[!UICONTROL Produits et services]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Profils de produit]**.
-   1. Sélectionnez le titre du profil de produit pour lequel vous souhaitez fournir un accès à [!UICONTROL Assistant IA : connaissances du produit].
-   1. Dans le profil de produit spécifique, sélectionnez **[!UICONTROL Autorisations]**.
-   1. Sélectionnez ![Modifier](/help/assets/icons/Edit.svg) pour modifier les **[!UICONTROL Outils de création des rapports]**.
-   1. Sélectionnez ![Cercle d’ajout](/help/assets/icons/AddCircle.svg) pour ajouter **Assistant IA : connaissances du produit** aux **[!UICONTROL Éléments d’autorisation inclus]**.
+  1. Accédez à **[!UICONTROL Admin Console]** > **[!UICONTROL Produits et services]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Profils de produit]**.
+  1. Sélectionnez le titre du profil de produit pour lequel vous souhaitez fournir un accès à [!UICONTROL Assistant IA : connaissances du produit].
+  1. Dans le profil de produit spécifique, sélectionnez **[!UICONTROL Autorisations]**.
+  1. Sélectionnez ![Modifier](/help/assets/icons/Edit.svg) pour modifier les **[!UICONTROL Outils de création des rapports]**.
+  1. Sélectionnez ![Cercle d’ajout](/help/assets/icons/AddCircle.svg) pour ajouter **Assistant IA : connaissances du produit** aux **[!UICONTROL Éléments d’autorisation inclus]**.
 
-      ![Ajouter une autorisation](assets/ai-assistant-permissions.png)
+     ![Ajouter une autorisation](assets/ai-assistant-permissions.png)
 
-   1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les autorisations.
+  1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les autorisations.
 
 Pour plus d’informations, consultez [Contrôle d’accès](/help/technotes/access-control.md#access-control).
 

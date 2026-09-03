@@ -62,10 +62,10 @@ Le rail de requête vous permet de configurer les composants suivants :
 
 * **[!UICONTROL Vue]** : basculez entre cette analyse et [Tendances de conversion](conversion-trends.md).
 * **[!UICONTROL Étapes]** : points de contact d’événement dont vous souhaitez effectuer le suivi. Chaque barre du graphique représente une étape. Vous pouvez inclure jusqu’à dix étapes.
-   * [!UICONTROL Comparer] : chaque étape fournit une option permettant de comparer plusieurs événements dans une seule étape d’entonnoir, créant un « entonnoir à plusieurs branches ». Cette fonction vous permet de comparer le frottement de deux parcours côte à côte sans créer deux analyses distinctes. Cela s’avère utile lorsqu’il existe des options d’étape ou qu’une expérience A/B est en cours d’exécution dans l’entonnoir. Consultez [Entonnoir](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/guided-analysis/funnel) dans les tutoriels Customer Journey Analytics pour une vidéo expliquant comment comparer des entonnoirs.
+  * [!UICONTROL Comparer] : chaque étape fournit une option permettant de comparer plusieurs événements dans une seule étape d’entonnoir, créant un « entonnoir à plusieurs branches ». Cette fonction vous permet de comparer le frottement de deux parcours côte à côte sans créer deux analyses distinctes. Cela s’avère utile lorsqu’il existe des options d’étape ou qu’une expérience A/B est en cours d’exécution dans l’entonnoir. Consultez [Entonnoir](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/guided-analysis/funnel) dans les tutoriels Customer Journey Analytics pour une vidéo expliquant comment comparer des entonnoirs.
 * **[!UICONTROL Comptabilisé comme]** : portée que vous souhaitez appliquer à l’entonnoir. Les options incluent [!UICONTROL Sessions] et [!UICONTROL Utilisateurs et utilisatrices].
-   * [!UICONTROL Sessions] : pour être comptabilisées, toutes les étapes doivent se produire au cours d’une même session.
-   * [!UICONTROL Utilisateurs et utilisatrices] : toutes les étapes doivent se produire dans la fenêtre de création de rapports sélectionnée pour être comptabilisées.
+  * [!UICONTROL Sessions] : pour être comptabilisées, toutes les étapes doivent se produire au cours d’une même session.
+  * [!UICONTROL Utilisateurs et utilisatrices] : toutes les étapes doivent se produire dans la fenêtre de création de rapports sélectionnée pour être comptabilisées.
 * **[!UICONTROL Segments]** : segments sur lesquels vous souhaitez comparer l’entonnoir. Chaque segment sélectionné divise chaque étape en plusieurs barres. Chaque couleur représente un segment différent. Vous pouvez inclure jusqu’à trois segments.
 
 ### Paramètres du graphique

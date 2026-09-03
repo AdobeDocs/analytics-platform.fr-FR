@@ -24,7 +24,7 @@ topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: 3756
+source-wordcount: 3763
 ht-degree: 82%
 
 ---
@@ -347,11 +347,11 @@ Les valeurs par défaut et limites supplémentaires suivantes s’appliquent lor
 * L’extension BI requiert une limite de lignes pour les résultats de la requête. La valeur par défaut est de 50, mais vous pouvez la remplacer dans SQL à l’aide de `LIMIT n`, où `n` est compris entre 1 et 50 000.
 * L’extension BI requiert une période pour limiter les lignes utilisées pour les calculs. La valeur par défaut est celle des 30 derniers jours, mais vous pouvez la remplacer dans votre clause SQL `WHERE` à l’aide des colonnes spéciales [`timestamp`](#timestamp) ou [`daterange`](#date-range).
 * L’extension BI requiert des requêtes agrégées. Vous ne pouvez pas utiliser du SQL comme `SELECT * FROM ...` pour obtenir les lignes brutes sous-jacentes. À un niveau élevé, vos requêtes agrégées doivent utiliser ce qui suit :
-   * Sélectionnez des totaux à l’aide de `SUM` et/ou `COUNT`.<br/> Par exemple, `SELECT SUM(metric1), COUNT(*) FROM ...`
-   * Sélectionnez des mesures réparties par dimension. <br/>Par exemple, `SELECT dimension1, SUM(metric1), COUNT(*) FROM ... GROUP BY dimension1`
-   * Sélectionnez des valeurs de mesure distinctes.<br/>Par exemple, `SELECT DISTINCT dimension1 FROM ...`
+  * Sélectionnez des totaux à l’aide de `SUM` et/ou `COUNT`.<br/> Par exemple, `SELECT SUM(metric1), COUNT(*) FROM ...`
+  * Sélectionnez des mesures réparties par dimension. <br/>Par exemple, `SELECT dimension1, SUM(metric1), COUNT(*) FROM ... GROUP BY dimension1`
+  * Sélectionnez des valeurs de mesure distinctes.<br/>Par exemple, `SELECT DISTINCT dimension1 FROM ...`
 
-     Pour plus d’informations, consultez [SQL pris en charge](#supported-sql).
+    Pour plus d’informations, consultez [SQL pris en charge](#supported-sql).
 
 
 ### SQL pris en charge

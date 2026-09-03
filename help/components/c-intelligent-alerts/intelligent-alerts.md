@@ -35,11 +35,11 @@ Selon votre package Customer Journey Analytics, vous pouvez également décle
 * Envoyer des alertes par e-mail ou par SMS, avec des liens pour générer automatiquement les projets Analysis Workspace.
 * Créez des alertes *empilées* qui capturent plusieurs mesures dans une seule alerte.
 * Créer des alertes en fonction de :
-   * Anomalies des mesures qui existent, sont supérieures ou inférieures aux valeurs de seuil attendues.
+  * Anomalies des mesures qui existent, sont supérieures ou inférieures aux valeurs de seuil attendues.
 
-     [Détection des anomalies](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) crée une valeur attendue ainsi qu’une limite supérieure et inférieure à l’aide des données historiques. Si la valeur de la mesure réelle dépasse la limite supérieure ou est inférieure à la limite inférieure définie comme valeur de seuil, cet événement est considéré comme une anomalie au niveau de confiance du seuil et déclenche l’alerte. Un seuil plus élevé (par exemple : 99 % ou 99,9 %) implique une bande plus large, ce qui entraîne moins d’alertes provoquées par des anomalies plus extrêmes. Un seuil inférieur (par exemple : 90 %) implique une bande plus étroite, ce qui entraîne plus d’alertes provoquées par des anomalies moins extrêmes.
-   * Modification des mesures selon un pourcentage spécifique.
-   * Mesures supérieures, inférieures ou égales à une valeur spécifique. (disponible uniquement pour les clients Adobe Analytics avec un package Select, Prime ou Ultimate)
+    [Détection des anomalies](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) crée une valeur attendue ainsi qu’une limite supérieure et inférieure à l’aide des données historiques. Si la valeur de la mesure réelle dépasse la limite supérieure ou est inférieure à la limite inférieure définie comme valeur de seuil, cet événement est considéré comme une anomalie au niveau de confiance du seuil et déclenche l’alerte. Un seuil plus élevé (par exemple : 99 % ou 99,9 %) implique une bande plus large, ce qui entraîne moins d’alertes provoquées par des anomalies plus extrêmes. Un seuil inférieur (par exemple : 90 %) implique une bande plus étroite, ce qui entraîne plus d’alertes provoquées par des anomalies moins extrêmes.
+  * Modification des mesures selon un pourcentage spécifique.
+  * Mesures supérieures, inférieures ou égales à une valeur spécifique. (disponible uniquement pour les clients Adobe Analytics avec un package Select, Prime ou Ultimate)
 
 Ce [tutoriel vidéo](https://experienceleague.adobe.com/fr/docs/analytics-learn/tutorials/data-science/intelligent-alerts) fournit un aperçu de base des alertes.
 

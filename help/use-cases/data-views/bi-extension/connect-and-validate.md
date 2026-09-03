@@ -20,7 +20,7 @@ topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: 65ddb8af8bf2fdb45eaaef0ad5d824314c35087e
 workflow-type: tm+mt
-source-wordcount: 1963
+source-wordcount: 2013
 ht-degree: 11%
 
 ---
@@ -80,7 +80,7 @@ Lorsque vous parcourez les cas d’utilisation, remplacez ces exemples d’objet
    1. Dans la boîte de dialogue **[!UICONTROL Navigateur]**, les vues de données sont récupérées. Cette récupération peut prendre un certain temps. Une fois la récupération effectuée, les éléments suivants s’affichent dans Power BI Desktop.
       ![Données de chargement de bureau &#x200B;](../assets/powerbi-navigator-load.png)
       1. Sélectionnez **[!UICONTROL public.cc_data_view]** dans la liste du panneau de gauche.
-      1. Vous disposez de deux options :
+      1. Vous avez deux possibilités :
          1. Sélectionnez **[!UICONTROL Charger]** pour continuer et terminer la configuration.
          1. Sélectionnez **[!UICONTROL Transformer les données]**. Une boîte de dialogue s’affiche, dans laquelle vous pouvez éventuellement appliquer des transformations dans le cadre de la configuration.
             ![Données de transformation de bureau &#x200B;](../assets/powerbi-transform-data.png)

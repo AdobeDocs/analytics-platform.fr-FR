@@ -20,7 +20,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: 2491
+source-wordcount: 2496
 ht-degree: 4%
 
 ---
@@ -47,8 +47,8 @@ Un segment séquentiel comporte des [fonctionnalités de base](#basics) et des o
 
 * Les données à [inclure](#include) dans la séquence globale de la définition de segment. Ou pour une séquence définie comme faisant partie d’un conteneur. Par défaut, toutes les données correspondantes sont prises en compte. Ces données sont identifiées par ![UserGroup](/help/assets/icons/UserGroup.svg) [!UICONTROL Inclure tout le monde].
 
-   * Sélectionnez ![SéquenceAvant](/help/assets/icons/SequenceBefore.svg) **[!UICONTROL Uniquement avant la séquence]** pour ne prendre en compte que les données antérieures à la séquence.
-   * Sélectionnez ![SequenceAfter](/help/assets/icons/SequenceAfter.svg) **[!UICONTROL Only After Sequence]** pour ne prendre en compte que les données postérieures à la séquence.
+  * Sélectionnez ![SéquenceAvant](/help/assets/icons/SequenceBefore.svg) **[!UICONTROL Uniquement avant la séquence]** pour ne prendre en compte que les données antérieures à la séquence.
+  * Sélectionnez ![SequenceAfter](/help/assets/icons/SequenceAfter.svg) **[!UICONTROL Only After Sequence]** pour ne prendre en compte que les données postérieures à la séquence.
 
 * Les données à [exclure](#exclude) dans le cadre de la définition de segment séquentiel.
 
@@ -129,7 +129,7 @@ Identifiez les personnes qui ont consulté une page, puis une autre page uniquem
 
 ![Séquence après](assets/sequence-after.png)
 
-Si une page vue de l’Accueil est affichée le 1er juin 2024, à 00:01, la page Femmes | Chaussures sera affichée aussi longtemps que cette page vue sera affichée après le 15 juin 2024 00:01.
+Si une page vue de l’Accueil est affichée le 1er juin 2024 à 00:01, la page Femmes | Chaussures sera affichée aussi longtemps que la page vue sera affichée après le 15 juin 2024 à 00:01.
 
 ##### Opérateur [!UICONTROL Within]
 
@@ -137,7 +137,7 @@ Identifiez les personnes qui ont visité une page, puis une autre page dans les 
 
 ![Séquence dans](assets/sequence-within.png)
 
-Si une page vue de l’Accueil est affichée le 1er juin 2024, à l’adresse 12:01, la page Femmes | Chaussures sera affichée aussi longtemps que cette page vue est affichée avant le 15 juin 2024 12:16.
+Si une page vue de l’Accueil est affichée le 1er juin 2024 à 12 h 01, la page Femmes | Chaussures sera affichée aussi longtemps que cette page vue est affichée avant le 15 juin 2024 à 12 h 16.
 
 ##### Opérateur [!UICONTROL After] but [!UICONTROL Within]
 
@@ -145,7 +145,7 @@ Identifiez les personnes qui ont visité une page, puis ont visité une autre pa
 
 ![Séquence après mais dans](assets/sequence-afterbutwithin.png)
 
-Toutes les personnes qui accèdent à la page d’accueil le 1er juin 2024 et qui reviennent pour visiter la page Femmes | Chaussures après le 15 juin 2019 00:01 mais avant le 1er juillet 2019 sont éligibles pour le segment.
+Toutes les personnes qui accèdent à la page d’accueil le 1er juin 2024 et qui reviennent pour visiter la page Femmes | Chaussures après le 15 juin 2019 00:01, mais avant le 1er juillet 2019 sont éligibles pour le segment.
 
 
 ### Contraintes [!UICONTROL Event], [!UICONTROL Session] et [!UICONTROL Dimension]

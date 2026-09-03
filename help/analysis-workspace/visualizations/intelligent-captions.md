@@ -152,14 +152,14 @@ Les paramètres suivants régissent l’accès aux légendes intelligentes :
 * **Accès contractuel** : si vous ne pouvez pas utiliser de légendes intelligentes, contactez l’administrateur ou l’administratrice de votre entreprise ou le représentant ou la représentante de compte Adobe (Admin). Avant de pouvoir utiliser des légendes intelligentes dans votre organisation, vous devez accepter certaines conditions juridiques liés à l’IA générative.
 
 * **Autorisations** : dans [!UICONTROL Adobe Admin Console], l’autorisation [!UICONTROL Outils de création de rapports] **[!UICONTROL Légendes intelligentes]** détermine l’accès. Un [administrateur ou une administratrice de profil de produit](https://helpx.adobe.com/fr/enterprise/using/manage-product-profiles.html) doit suivre les étapes suivantes dans l’[!UICONTROL Admin Console] :
-   1. Accédez à **[!UICONTROL Admin Console]** > **[!UICONTROL Produits et services]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Profils de produit]**.
-   1. Sélectionnez le titre du profil de produit pour lequel vous souhaitez fournir un accès aux légendes intelligentes.
-   1. Dans le profil de produit spécifique, sélectionnez **[!UICONTROL Autorisations]**.
-   1. Sélectionnez ![Modifier](/help/assets/icons/Edit.svg) pour modifier les **[!UICONTROL Outils de création des rapports]**.
-   1. Sélectionnez ![AddCircle](/help/assets/icons/AddCircle.svg) pour ajouter des **Légendes intelligentes** aux **[!UICONTROL Éléments d’autorisation inclus]**.
+  1. Accédez à **[!UICONTROL Admin Console]** > **[!UICONTROL Produits et services]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Profils de produit]**.
+  1. Sélectionnez le titre du profil de produit pour lequel vous souhaitez fournir un accès aux légendes intelligentes.
+  1. Dans le profil de produit spécifique, sélectionnez **[!UICONTROL Autorisations]**.
+  1. Sélectionnez ![Modifier](/help/assets/icons/Edit.svg) pour modifier les **[!UICONTROL Outils de création des rapports]**.
+  1. Sélectionnez ![AddCircle](/help/assets/icons/AddCircle.svg) pour ajouter des **Légendes intelligentes** aux **[!UICONTROL Éléments d’autorisation inclus]**.
 
-      ![Ajouter une autorisation](./assets/intelligent-captions-permissions.png)
+     ![Ajouter une autorisation](./assets/intelligent-captions-permissions.png)
 
-   1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les autorisations.
+  1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les autorisations.
 
 Pour plus d’informations, consultez [Contrôle d’accès](/help/technotes/access-control.md#access-control).

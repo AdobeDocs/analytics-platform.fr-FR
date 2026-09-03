@@ -53,8 +53,8 @@ Tenez compte des points suivants lorsque vous créez des liens hypertextes pour 
 
 * La validité des URL n’est pas vérifiée lors de la création du lien hypertexte. Si vous
 
-   * Créez un lien hypertexte dont l’URL n’est pas valide, ou
-   * créez un lien hypertexte qui fait référence à un élément de dimension qui n’a pas de valeur d’URL (en référençant directement l’élément de dimension ou en utilisant les variables `$value` ou `$breakdown`),
+  * Créez un lien hypertexte dont l’URL n’est pas valide, ou
+  * créez un lien hypertexte qui fait référence à un élément de dimension qui n’a pas de valeur d’URL (en référençant directement l’élément de dimension ou en utilisant les variables `$value` ou `$breakdown`),
 
   ensuite, les utilisateurs et utilisatrices qui cliquent sur le lien hypertexte voient un message d’erreur indiquant que l’URL n’est pas valide.
 
@@ -68,23 +68,23 @@ Pour créer des liens hypertexte pour un ou plusieurs éléments de dimension :
 
    * **Créez un lien hypertexte pour un seul élément de dimension :** cliquez avec le bouton droit sur l’élément de dimension dans le tableau pour lequel vous souhaitez créer le lien hypertexte, puis sélectionnez [!UICONTROL **Créer un lien hypertexte**].
 
-      1. Ouvrez le menu contextuel de l’élément de dimension.
-      1. Sélectionnez [!UICONTROL **Créer un lien hypertexte**] dans le menu contextuel.
+     1. Ouvrez le menu contextuel de l’élément de dimension.
+     1. Sélectionnez [!UICONTROL **Créer un lien hypertexte**] dans le menu contextuel.
 
-         La boîte de dialogue [!UICONTROL **Créer un lien hypertexte**] s’affiche. Le nom de l’élément de dimension pour lequel vous créez un lien hypertexte s’affiche dans la boîte de dialogue.
+        La boîte de dialogue [!UICONTROL **Créer un lien hypertexte**] s’affiche. Le nom de l’élément de dimension pour lequel vous créez un lien hypertexte s’affiche dans la boîte de dialogue.
 
-         ![Boîte de dialogue Créer un lien hypertexte pour un seul élément](assets/hyperlink-dialog-single.png)
+        ![Boîte de dialogue Créer un lien hypertexte pour un seul élément](assets/hyperlink-dialog-single.png)
 
    * **Créez des liens hypertextes pour tous les éléments de dimension d’une colonne de dimension :** cliquez avec le bouton droit sur le nom de la dimension dans l’en-tête de colonne de dimension, puis sélectionnez [!UICONTROL **Créer des liens hypertextes pour tous les éléments de dimension**].
 
-      1. Ouvrez le menu contextuel à partir de l’en-tête de colonne de dimension.
-      1. Sélectionnez [!UICONTROL **Créer des liens hypertextes pour tous les éléments de dimension**] dans le menu contextuel.
+     1. Ouvrez le menu contextuel à partir de l’en-tête de colonne de dimension.
+     1. Sélectionnez [!UICONTROL **Créer des liens hypertextes pour tous les éléments de dimension**] dans le menu contextuel.
 
-         <!-- Do we really need a screenshot ![Create hyperlink for a dimension](assets/hyperlink-multiple-add.png) -->
+        <!-- Do we really need a screenshot ![Create hyperlink for a dimension](assets/hyperlink-multiple-add.png) -->
 
-         La boîte de dialogue [!UICONTROL **Créer des liens hypertextes pour tous les éléments de dimension**] s’affiche. Le nom de la dimension pour laquelle vous créez des liens hypertextes s’affiche dans la boîte de dialogue.
+        La boîte de dialogue [!UICONTROL **Créer des liens hypertextes pour tous les éléments de dimension**] s’affiche. Le nom de la dimension pour laquelle vous créez des liens hypertextes s’affiche dans la boîte de dialogue.
 
-         ![Boîte de dialogue Créer des liens hypertextes](assets/hyperlink-dialog-multiple.png)
+        ![Boîte de dialogue Créer des liens hypertextes](assets/hyperlink-dialog-multiple.png)
 
 1. Choisissez l’une des options suivantes :
 
@@ -121,15 +121,15 @@ Vous pouvez modifier les liens hypertextes qui ont été créés sur des dimensi
 
    * **Modifier un lien hypertexte pour un seul élément de dimension :**
 
-      1. Ouvrez le menu contextuel de l’élément de dimension.
-      1. Sélectionnez [!UICONTROL **Modifier le lien hypertexte**] dans le menu contextuel.
+     1. Ouvrez le menu contextuel de l’élément de dimension.
+     1. Sélectionnez [!UICONTROL **Modifier le lien hypertexte**] dans le menu contextuel.
 
      <!-- Do we really need a screenshot? ![Edit hyperlink for a single dimension item](assets/hyperlink-single-edit.png)-->
 
    * **Modifier les liens hypertextes pour tous les éléments de dimension d’une colonne de dimension :**
 
-      1. Ouvrez le menu contextuel à partir de l’en-tête de colonne de dimension.
-      1. Sélectionnez **[!UICONTROL Modifier le lien hypertexte pour tous les éléments de dimension]** dans le menu contextuel.
+     1. Ouvrez le menu contextuel à partir de l’en-tête de colonne de dimension.
+     1. Sélectionnez **[!UICONTROL Modifier le lien hypertexte pour tous les éléments de dimension]** dans le menu contextuel.
 
      <!-- Do we really need a screenshot? ![Edit hyperlink for a dimension](assets/hyperlink-dimension-edit.png)-->
 
@@ -155,14 +155,14 @@ Pour supprimer des liens hypertextes d’éléments de dimension, procédez comm
 
    * **Supprimer un lien hypertexte d’un seul élément de dimension :**
 
-      1. Ouvrez le menu contextuel de l’élément de dimension.
-      1. Sélectionnez [!UICONTROL **Supprimer le lien hypertexte**] dans le menu contextuel.
-         <!-- Do we really need a screenshot? ![Remove hyperlink from a single dimension item](assets/hyperlink-single-remove.png)-->
+     1. Ouvrez le menu contextuel de l’élément de dimension.
+     1. Sélectionnez [!UICONTROL **Supprimer le lien hypertexte**] dans le menu contextuel.
+        <!-- Do we really need a screenshot? ![Remove hyperlink from a single dimension item](assets/hyperlink-single-remove.png)-->
 
    * **Supprimer les liens hypertextes de tous les éléments de dimension dans une colonne de dimension :**
 
-      1. Ouvrez le menu contextuel à partir de l’en-tête de colonne de dimension.
-      1. Sélectionnez **[!UICONTROL Supprimer le lien hypertexte de tous les éléments de dimension]** dans le menu contextuel.
+     1. Ouvrez le menu contextuel à partir de l’en-tête de colonne de dimension.
+     1. Sélectionnez **[!UICONTROL Supprimer le lien hypertexte de tous les éléments de dimension]** dans le menu contextuel.
 
      <!-- Do we really need a screenshot? [Remove hyperlink from a dimension](assets/hyperlink-dimension-remove.png)-->
 

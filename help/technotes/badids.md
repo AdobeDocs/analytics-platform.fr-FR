@@ -41,8 +41,8 @@ Cet article fournit du contexte sur les ID incorrects et sur la manière de dét
 Dans Customer Journey Analytics, un Bad ID est un identifiant qui fait partie de toutes les données définies dans une connexion :
 
 * avec une valeur d’ID spécifique qui provient de
-   * depuis un champ d’ID de personne (jeux de données non groupés), **ou**
-   * à partir d’un champ d’ID persistant ou d’ID de personne (jeux de données activés pour le groupement),
+  * depuis un champ d’ID de personne (jeux de données non groupés), **ou**
+  * à partir d’un champ d’ID persistant ou d’ID de personne (jeux de données activés pour le groupement),
 
   **et**
 * concerne plus d’un million (1 000 000) d’événements dans les données de connexion (comptabilisés pour tous les jeux de données de la connexion), au cours d’un mois.

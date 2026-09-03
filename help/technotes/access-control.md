@@ -43,7 +43,7 @@ topic_v2:
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 1661
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -124,16 +124,16 @@ En plus de l’ajout en tant qu’administrateur ou administratrice de produit d
 
   Pour que les personnes puissent utiliser l’extension BI, un administrateur ou une administration de produit
 
-   * doit s’assurer que les autorisations Experience Platform de la personne incluent un rôle disposant de la ressource Service de requête avec les options Gérer les requêtes et Gérer l’intégration du service de requête. Pour plus d’informations sur les autorisations Experience Platform, voir [Gestion des autorisations pour un profil de produit](https://experienceleague.adobe.com/fr/docs/experience-platform/access-control/ui/permissions).
+  * doit s’assurer que les autorisations Experience Platform de la personne incluent un rôle disposant de la ressource Service de requête avec les options Gérer les requêtes et Gérer l’intégration du service de requête. Pour plus d’informations sur les autorisations Experience Platform, voir [Gestion des autorisations pour un profil de produit](https://experienceleague.adobe.com/fr/docs/experience-platform/access-control/ui/permissions).
 
-     | Catégorie | Autorisation | Description |
-     |---|---|---|
-     | [!UICONTROL Service de requêtes] | [!UICONTROL Gestion des requêtes] | Accès à la lecture, la création, la modification et la suppression des requêtes SQL structurées pour les données Platform. |
-     | [!UICONTROL Service de requêtes] | [!UICONTROL Gestion de lʼintégration du service de requête] | Accès à la création, la mise à jour et la suppression des informations dʼidentification sans date dʼexpiration pour lʼaccès au service de requête. |
+    | Catégorie | Autorisation | Description |
+    |---|---|---|
+    | [!UICONTROL Service de requête] | [!UICONTROL Gestion des requêtes] | Accès à la lecture, la création, la modification et la suppression des requêtes SQL structurées pour les données Platform. |
+    | [!UICONTROL Service de requête] | [!UICONTROL Gestion de lʼintégration du service de requête] | Accès à la création, la mise à jour et la suppression des informations dʼidentification sans date dʼexpiration pour lʼaccès au service de requête. |
 
-   * doit s’assurer que la personne dispose des autorisations Customer Journey Analytics appropriées :
-      * autorisation d’accéder aux vues de données appropriées. Voir [!UICONTROL Vues de données] dans [Accès au niveau utilisateur et utilisatrice](#user-level-access).
-      * autorisation d’accéder à l’extension BI de Customer Journey Analytics. Voir [!UICONTROL Outils de vues de données] dans [Accès au niveau utilisateur et utilisatrice](#user-level-access).
+  * doit s’assurer que la personne dispose des autorisations Customer Journey Analytics appropriées :
+    * autorisation d’accéder aux vues de données appropriées. Voir [!UICONTROL Vues de données] dans [Accès au niveau utilisateur et utilisatrice](#user-level-access).
+    * autorisation d’accéder à l’extension BI de Customer Journey Analytics. Voir [!UICONTROL Outils de vues de données] dans [Accès au niveau utilisateur et utilisatrice](#user-level-access).
 
 ### Rôle d’administration de profil de produit
 

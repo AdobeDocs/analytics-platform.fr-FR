@@ -46,15 +46,15 @@ Une fois votre projet ouvert dans Analysis Workspace, sélectionnez **[!UICONTR
 
   ![Enregistrer le projet](assets/save-project.png)
 
-   1. Indiquez ce qui suit :
+  1. Indiquez ce qui suit :
 
-      * **[!UICONTROL Nom]** (obligatoire). Nom de votre projet.
-      * **[!UICONTROL Description]**. Description de votre projet.
-      * **[!UICONTROL Balises]**. Recherchez des balises dans le champ [!UICONTROL *Rechercher des balises*] ou ajoutez de nouvelles balises avec **[!UICONTROL ENTRÉE]**.
-      * **[!UICONTROL Dossier]**. Sélectionnez un dossier dans le menu déroulant [!UICONTROL *Sélectionner un dossier*]. Si vous ne spécifiez pas de dossier, le projet est enregistré dans le dossier actuel à partir duquel vous avez créé un projet.
-      * **[!UICONTROL Notes de version]**. Ajoutez des notes de version dans la zone de texte *Ajouter des notes*.
+     * **[!UICONTROL Nom]** (obligatoire). Nom de votre projet.
+     * **[!UICONTROL Description]**. Description de votre projet.
+     * **[!UICONTROL Balises]**. Recherchez des balises dans le champ [!UICONTROL *Rechercher des balises*] ou ajoutez de nouvelles balises avec **[!UICONTROL ENTRÉE]**.
+     * **[!UICONTROL Dossier]**. Sélectionnez un dossier dans le menu déroulant [!UICONTROL *Sélectionner un dossier*]. Si vous ne spécifiez pas de dossier, le projet est enregistré dans le dossier actuel à partir duquel vous avez créé un projet.
+     * **[!UICONTROL Notes de version]**. Ajoutez des notes de version dans la zone de texte *Ajouter des notes*.
 
-   1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer votre projet.
+  1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer votre projet.
 
   L’enregistrement de votre projet enregistre en fait une version de votre projet qui est stockée pendant 90 jours.
 
@@ -62,8 +62,8 @@ Une fois votre projet ouvert dans Analysis Workspace, sélectionnez **[!UICONTR
 
   ![Ernegistrer un projet partagé](assets/save-project-shared.png)
 
-   * Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer le projet.
-   * Sélectionnez **[!UICONTROL Enregistrer sous]** pour enregistrer le projet en tant que projet en double avec un nouveau nom.
+  * Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer le projet.
+  * Sélectionnez **[!UICONTROL Enregistrer sous]** pour enregistrer le projet en tant que projet en double avec un nouveau nom.
 
 
 * **[!UICONTROL Enregistrer avec les notes]**
@@ -72,8 +72,8 @@ Une fois votre projet ouvert dans Analysis Workspace, sélectionnez **[!UICONTR
 
   Lorsque vous enregistrez votre projet, ajoutez des notes sur les modifications apportées au projet. Dans la boîte de dialogue Enregistrer les notes de version :
 
-   1. Saisissez vos **[!UICONTROL Notes de version]** dans la zone de texte **[!UICONTROL Ajouter des notes]**.
-   1. Sélectionnez **[!UICONTROL Enregistrer]**.
+  1. Saisissez vos **[!UICONTROL Notes de version]** dans la zone de texte **[!UICONTROL Ajouter des notes]**.
+  1. Sélectionnez **[!UICONTROL Enregistrer]**.
 
   Les notes sont stockées avec la version du projet et sont disponibles lorsque vous [ouvrez une version précédente](open-projects.md#open-previous-version) du projet. Une version enregistrée avec des notes est automatiquement stockée pendant un an.
 
@@ -83,15 +83,15 @@ Une fois votre projet ouvert dans Analysis Workspace, sélectionnez **[!UICONTR
 
   Créez un doublon de votre projet avec un nouveau nom. La boîte de dialogue Enregistrer sous s’affiche.
 
-   1. Indiquez ce qui suit :
+  1. Indiquez ce qui suit :
 
-      * **[!UICONTROL Nom]** (obligatoire). Nom de votre projet.
-      * **[!UICONTROL Description]**. Description de votre projet.
-      * **[!UICONTROL Balises]**. Recherchez des balises dans le champ [!UICONTROL *Rechercher des balises*] ou ajoutez de nouvelles balises avec **[!UICONTROL ENTRÉE]**.
-      * **[!UICONTROL Dossier]**. Sélectionnez un dossier dans le menu déroulant [!UICONTROL *Sélectionner un dossier*]. Si vous ne spécifiez pas de dossier, le projet est enregistré dans le dossier actuel à partir duquel vous avez créé un projet.
-      * **[!UICONTROL Notes de version]**. Ajoutez des notes de version dans la zone de texte *Ajouter des notes*.
+     * **[!UICONTROL Nom]** (obligatoire). Nom de votre projet.
+     * **[!UICONTROL Description]**. Description de votre projet.
+     * **[!UICONTROL Balises]**. Recherchez des balises dans le champ [!UICONTROL *Rechercher des balises*] ou ajoutez de nouvelles balises avec **[!UICONTROL ENTRÉE]**.
+     * **[!UICONTROL Dossier]**. Sélectionnez un dossier dans le menu déroulant [!UICONTROL *Sélectionner un dossier*]. Si vous ne spécifiez pas de dossier, le projet est enregistré dans le dossier actuel à partir duquel vous avez créé un projet.
+     * **[!UICONTROL Notes de version]**. Ajoutez des notes de version dans la zone de texte *Ajouter des notes*.
 
-   1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer votre projet.
+  1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer votre projet.
 
   Vous pouvez enregistrer le projet dans un autre dossier. Le projet d’origine ne sera pas affecté.
 

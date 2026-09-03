@@ -123,7 +123,7 @@ Pour ajouter de nouvelles diapositives, pointez ou cliquez sur une diapositive, 
    * Appuyez sur l’icône de duplication pour dupliquer la diapositive existante.
 1. Si vous créez une diapositive vierge, faites glisser et déposez des composants depuis le rail de gauche ou choisissez une disposition pour remplir automatiquement la diapositive avec les données de la mosaïque.
    ![Créer une histoire de données](assets/data-story2.png)
-Pour supprimer une diapositive, appuyez sur l’icône de corbeille.
+   Pour supprimer une diapositive, appuyez sur l’icône de corbeille.
 
 ### Personnaliser une histoire de données {#customize-data-story}
 
@@ -135,7 +135,7 @@ Les histoires de données vous permettent de personnaliser chaque élément, afi
 1. Modifiez le titre, le type de graphique et d’autres options de mosaïque.
 1. Faites glisser un composant sur la mosaïque.
    ![Créer une histoire de données](assets/data-story3.png)
-Lorsque vous faites glisser et déposez un composant, tel qu’une visualisation, sur une mosaïque, le composant est appliqué à toutes les diapositives du récit des données.
+   Lorsque vous faites glisser et déposez un composant, tel qu’une visualisation, sur une mosaïque, le composant est appliqué à toutes les diapositives du récit des données.
 1. Pour appliquer une modification uniquement au titre, maintenez la touche Maj enfoncée pour appliquer la modification.
    ![Création d’une histoire de données](assets/data-story4.png)
 

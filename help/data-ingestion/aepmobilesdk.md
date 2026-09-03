@@ -130,7 +130,7 @@ Configurer le schéma :
 
    ![Objet d’identification](./assets/identification-field-mobile.png)
 
-   L’objet d’identification ajoute des fonctionnalités d’identification au schéma. Dans votre cas, vous devez identifier les profils à l’aide de votre application mobile à l’aide de l’Experience Cloud ID et de l’adresse e-mail. De nombreux autres attributs sont disponibles pour effectuer le suivi de l’identification de la personne (par exemple, l’identifiant client, l’identifiant de fidélité).
+   L’objet d’identification ajoute des fonctionnalités d’identification au schéma. Dans votre cas, vous devez identifier les profils à l’aide de votre application mobile à l’aide d’Experience Cloud ID et de l’adresse e-mail. De nombreux autres attributs sont disponibles pour effectuer le suivi de l’identification de la personne (par exemple, l’identifiant client, l’identifiant de fidélité).
 
    Sélectionnez **[!UICONTROL Appliquer]** pour ajouter cet objet au schéma.
 
@@ -357,27 +357,27 @@ Définir une règle :
 
    - Dans la boîte de dialogue [!UICONTROL Configuration d’événement] :
 
-      - Sélectionnez **[!UICONTROL Mobile Core]** dans la liste [!UICONTROL Extension].
+     - Sélectionnez **[!UICONTROL Mobile Core]** dans la liste [!UICONTROL Extension].
 
-      - Sélectionnez **[!UICONTROL Premier plan]** dans la liste [!UICONTROL Type d’événement].
+     - Sélectionnez **[!UICONTROL Premier plan]** dans la liste [!UICONTROL Type d’événement].
 
-      - Sélectionnez **[!UICONTROL Conserver les modifications]**.
+     - Sélectionnez **[!UICONTROL Conserver les modifications]**.
 
    - Cliquez sur ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) en regard de [!UICONTROL Mobile Core - Premier plan].
 
-      - Sélectionnez **[!UICONTROL Mobile Core]** dans la liste [!UICONTROL Extension].
+     - Sélectionnez **[!UICONTROL Mobile Core]** dans la liste [!UICONTROL Extension].
 
-      - Sélectionnez **[!UICONTROL Arrière-plan]** dans la liste [!UICONTROL Type d’événement].
+     - Sélectionnez **[!UICONTROL Arrière-plan]** dans la liste [!UICONTROL Type d’événement].
 
-      - Sélectionnez **[!UICONTROL Conserver les modifications]**.
+     - Sélectionnez **[!UICONTROL Conserver les modifications]**.
 
    - Cliquez sur ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) Ajouter sous [!UICONTROL ACTIONS]. Dans la boîte de dialogue [!UICONTROL Configuration d’action] :
 
-      - Sélectionnez **[!UICONTROL Adobe Experience Platform Edge Network]** dans la liste [!UICONTROL Extension].
+     - Sélectionnez **[!UICONTROL Adobe Experience Platform Edge Network]** dans la liste [!UICONTROL Extension].
 
-      - Sélectionnez **[!UICONTROL Transférer l’événement vers Edge Network]** dans la liste [!UICONTROL Type d’action].
+     - Sélectionnez **[!UICONTROL Transférer l’événement vers Edge Network]** dans la liste [!UICONTROL Type d’action].
 
-      - Sélectionnez **[!UICONTROL Conserver les modifications]**.
+     - Sélectionnez **[!UICONTROL Conserver les modifications]**.
 
    - La règle doit se présenter comme suit :
 
@@ -448,7 +448,7 @@ Vous pouvez désormais déployer le code dans votre application mobile. Une fois
 
 Validez la mise en œuvre, corrigez-la si nécessaire, puis déployez-la dans l’environnement d’évaluation et de production à l’aide du processus de publication des balises.
 
-Voir [Tutoriel sur l’implémentation de Adobe Experience Cloud dans les applications mobiles](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=fr) pour des informations beaucoup plus détaillées.
+Pour des informations beaucoup plus détaillées[&#128279;](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=fr) consultez le tutoriel Implémentation d’Adobe Experience Cloud dans les applications mobiles .
 
 ## Configurer une connexion
 
@@ -484,11 +484,11 @@ Créer une connexion :
 
    - Pour chaque jeu de données :
 
-      - Sélectionnez un [!UICONTROL ID de personne] parmi les identités disponibles et définies dans les schémas du jeu de données d’Adobe Experience Platform.
+     - Sélectionnez un [!UICONTROL ID de personne] parmi les identités disponibles et définies dans les schémas du jeu de données d’Adobe Experience Platform.
 
-      - Sélectionnez la source de données appropriée dans la liste [!UICONTROL Type de source de données]. Si vous spécifiez **[!UICONTROL Autre]**, ajoutez une description pour la source de données.
+     - Sélectionnez la source de données appropriée dans la liste [!UICONTROL Type de source de données]. Si vous spécifiez **[!UICONTROL Autre]**, ajoutez une description pour la source de données.
 
-      - Définissez **[!UICONTROL Importer toutes les nouvelles données]** et **[!UICONTROL Données existantes de renvoi du jeu de données]** selon vos préférences.
+     - Définissez **[!UICONTROL Importer toutes les nouvelles données]** et **[!UICONTROL Données existantes de renvoi du jeu de données]** selon vos préférences.
 
      ![Configurer les jeux de données](./assets/cja-connections-ajopushid.png)
 

@@ -21,7 +21,7 @@ topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: 1902
+source-wordcount: 1938
 ht-degree: 82%
 
 ---
@@ -42,8 +42,8 @@ Vous pouvez utiliser l’assemblage basé sur les champs lors de l’utilisation
 L’assemblage basé sur les champs prend en charge l’utilisation du [`identityMap`groupe de champs](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/schema/composition#identity) dans les scénarios suivants :
 
 - Utilisation de l’identité principale dans les espaces de noms `identityMap` pour définir l’identifiant persistant :
-   - Si plusieurs identités principales sont trouvées dans différents espaces de noms, les identités des espaces de noms sont triées par ordre lexicographique et la première identité est sélectionnée.
-   - Si plusieurs identités principales sont trouvées dans un seul espace de noms, la première identité principale lexicographique disponible est sélectionnée.
+  - Si plusieurs identités principales sont trouvées dans différents espaces de noms, les identités des espaces de noms sont triées par ordre lexicographique et la première identité est sélectionnée.
+  - Si plusieurs identités principales sont trouvées dans un seul espace de noms, la première identité principale lexicographique disponible est sélectionnée.
 
   Dans l’exemple ci-dessous, les espaces de noms et les identités génèrent une liste d’identités principales triées, et en fin de compte l’identité sélectionnée.
 
@@ -75,8 +75,8 @@ L’assemblage basé sur les champs prend en charge l’utilisation du [`identit
 
 
 - Utilisation de l’espace de noms `identityMap` pour définir l’identifiant persistant ou l’identifiant de personne, ou les deux :
-   - Si plusieurs valeurs d’identifiant persistant ou d’identifiant de personne sont présentes dans un espace de noms `identityMap`, la première valeur lexicographique disponible est utilisée.
-   - Les espaces de noms pour l’identifiant persistant et l’identifiant de personne doivent être mutuellement exclusifs.
+  - Si plusieurs valeurs d’identifiant persistant ou d’identifiant de personne sont présentes dans un espace de noms `identityMap`, la première valeur lexicographique disponible est utilisée.
+  - Les espaces de noms pour l’identifiant persistant et l’identifiant de personne doivent être mutuellement exclusifs.
 
   Dans l’exemple ci-dessous, vous avez sélectionné ECID comme espace de noms à utiliser. Cette sélection génère une liste d’identités triées, et en fin de compte l’identité sélectionnée.
 
@@ -113,10 +113,10 @@ Le groupement effectue au moins deux passages sur les données d’un jeu de don
 - **Assemblage en direct** : tente d’assembler chaque accès (événement) au fur et à mesure qu’ils se produisent. Les accès à partir d’appareils considérés comme *nouveaux* dans le jeu de données (qui ne se sont jamais authentifiés) ne sont généralement pas assemblés à ce niveau. Les accès à partir d’appareils reconnus sont assemblés immédiatement.
 
 - **Relecture d’assemblage** : *relit* les données en fonction d’identifiants uniques (identifiants de personnes). C’est à cette étape que les accès provenant d’appareils auparavant inconnus (identifiants persistants) sont assemblés (en identifiants de personne). Deux paramètres déterminent la relecture : **fréquence** et **intervalle de recherche en amont**. Adobe propose les combinaisons suivantes de ces paramètres :
-   - **Recherche en amont quotidienne à une fréquence quotidienne** : les données sont relues chaque jour avec un intervalle de recherche en amont de 24 heures. Cette option présente un avantage car les relectures sont beaucoup plus fréquentes, mais les profils non authentifiés doivent s’authentifier le jour même où ils visitent votre site.
-   - **Recherche en amont hebdomadaire à une fréquence hebdomadaire** : les données sont relues chaque semaine avec un intervalle de recherche en amont hebdomadaire (voir [options](overview.md#options)). Cette option présente un avantage qui permet aux sessions non authentifiées de disposer d’un temps d’authentification beaucoup moins strict. Toutefois, les données dégroupées datant de moins d’une semaine ne sont pas retraitées avant la relecture hebdomadaire suivante.
-   - **Recherche en amont bihebdomadaire à une fréquence hebdomadaire** : les données sont relues chaque semaine avec un intervalle de recherche en amont bihebdomadaire (voir [options](overview.md#)). Cette option présente un avantage qui permet aux sessions non authentifiées de disposer d’un temps d’authentification beaucoup moins strict. Toutefois, les données dégroupées datant de moins de deux semaines ne sont pas retraitées avant la relecture hebdomadaire suivante.
-   - **Recherche en amont mensuelle à une fréquence hebdomadaire** : les données sont relues chaque semaine avec un intervalle de recherche en amont mensuel (voir [options](overview.md#options)). Cette option présente un avantage qui permet aux sessions non authentifiées de disposer d’un temps d’authentification beaucoup moins strict. Toutefois, les données dégroupées datant de moins d’un mois ne sont pas retraitées avant la relecture hebdomadaire suivante.
+  - **Recherche en amont quotidienne à une fréquence quotidienne** : les données sont relues chaque jour avec un intervalle de recherche en amont de 24 heures. Cette option présente un avantage car les relectures sont beaucoup plus fréquentes, mais les profils non authentifiés doivent s’authentifier le jour même où ils visitent votre site.
+  - **Recherche en amont hebdomadaire à une fréquence hebdomadaire** : les données sont relues chaque semaine avec un intervalle de recherche en amont hebdomadaire (voir [options](overview.md#options)). Cette option présente un avantage qui permet aux sessions non authentifiées de disposer d’un temps d’authentification beaucoup moins strict. Toutefois, les données dégroupées datant de moins d’une semaine ne sont pas retraitées avant la relecture hebdomadaire suivante.
+  - **Recherche en amont bihebdomadaire à une fréquence hebdomadaire** : les données sont relues chaque semaine avec un intervalle de recherche en amont bihebdomadaire (voir [options](overview.md#)). Cette option présente un avantage qui permet aux sessions non authentifiées de disposer d’un temps d’authentification beaucoup moins strict. Toutefois, les données dégroupées datant de moins de deux semaines ne sont pas retraitées avant la relecture hebdomadaire suivante.
+  - **Recherche en amont mensuelle à une fréquence hebdomadaire** : les données sont relues chaque semaine avec un intervalle de recherche en amont mensuel (voir [options](overview.md#options)). Cette option présente un avantage qui permet aux sessions non authentifiées de disposer d’un temps d’authentification beaucoup moins strict. Toutefois, les données dégroupées datant de moins d’un mois ne sont pas retraitées avant la relecture hebdomadaire suivante.
 
 - **Confidentialité** : lorsque des demandes liées à la confidentialité sont reçues, en plus de supprimer l’identité demandée, tout groupement de cette identité entre des événements non authentifiés doit être annulé.
 
@@ -228,8 +228,8 @@ Les conditions préalables suivantes s’appliquent spécifiquement au groupemen
 
 - Le jeu de données d’événement dans Adobe Experience Platform auquel appliquer un groupement doit comporter deux colonnes permettant d’identifier les profils :
 
-   - Un **identifiant persistant**, un identifiant présent sur chaque ligne. Il peut s’agir, par exemple, d’un identifiant visiteur généré par une bibliothèque Adobe Analytics AppMeasurement ou d’un ECID généré par Adobe Experience Platform Identity Service.
-   - Un **identifiant de personne**, un identifiant présent sur certaines lignes seulement. Par exemple, un nom d’utilisatation ou une adresse e-mail chiffré(e) une fois qu’une personne s’authentifie. Vous pouvez utiliser pratiquement n’importe quel identifiant de votre choix. Le mécanisme de groupement considère que ce champ contient l’identifiant réel de la personne. Pour obtenir les meilleurs résultats de groupement, un identifiant de personne doit être transmis dans les événements du jeu de données au moins une fois pour chaque identifiant persistant. Si vous prévoyez d’inclure ce jeu de données dans une connexion Customer Journey Analytics, il est préférable que les autres jeux de données aient également un identifiant commun similaire.
+  - Un **identifiant persistant**, un identifiant présent sur chaque ligne. Il peut s’agir, par exemple, d’un identifiant visiteur généré par une bibliothèque Adobe Analytics AppMeasurement ou d’un ECID généré par Adobe Experience Platform Identity Service.
+  - Un **identifiant de personne**, un identifiant présent sur certaines lignes seulement. Par exemple, un nom d’utilisatation ou une adresse e-mail chiffré(e) une fois qu’une personne s’authentifie. Vous pouvez utiliser pratiquement n’importe quel identifiant de votre choix. Le mécanisme de groupement considère que ce champ contient l’identifiant réel de la personne. Pour obtenir les meilleurs résultats de groupement, un identifiant de personne doit être transmis dans les événements du jeu de données au moins une fois pour chaque identifiant persistant. Si vous prévoyez d’inclure ce jeu de données dans une connexion Customer Journey Analytics, il est préférable que les autres jeux de données aient également un identifiant commun similaire.
 
 <!--
 - Both columns (persistent ID and person ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.

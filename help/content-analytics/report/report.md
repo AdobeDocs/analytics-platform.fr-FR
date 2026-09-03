@@ -24,8 +24,8 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 537fc30db0f6e6bddc54df7bbcc04d802226958f
 workflow-type: tm+mt
-source-wordcount: 1215
-ht-degree: 51%
+source-wordcount: 1365
+ht-degree: 48%
 
 ---
 
@@ -122,44 +122,44 @@ Vous pouvez utiliser la répartition **[!UICONTROL Canal de contenu]** pour [ré
 
 Les quatre panneaux sont les suivants :
 
-* **Quel est le contenu le plus performant ?**
+* **Quel est le contenu le plus performant ?**
 Ce panneau identifie les expériences et les ressources qui génèrent l’engagement et la conversion. Les expériences sont des pages web complètes capturées à un moment spécifique ou une combinaison de texte, de ressources et d’appels à l’action définis dans une application mobile.
 
-   * **Expériences**
+  * **Expériences**
 
-     >[!NOTE]
-     >
-     >Ces visualisations ne s’affichent dans votre modèle que lorsque vous avez configuré le système pour [inclure des expériences](/help/content-analytics/config/guided.md#experience-capture-and-definition) dans votre configuration Content Analytics.
-     > 
+    >[!NOTE]
+    >
+    >Ces visualisations ne s’affichent dans votre modèle que lorsque vous avez configuré le système pour [inclure des expériences](/help/content-analytics/config/guided.md#experience-capture-and-definition) dans votre configuration Content Analytics.
+    > 
 
-      * **Experience CTR** : visualisation [synthèse des modifications](/help/analysis-workspace/visualizations/summary-number-change.md) qui affiche Experience CTR.
-      * **Principales expériences de conversion** : visualisation en [barre horizontale](/help/analysis-workspace/visualizations/horizontal-bar.md) représentant les principales expériences de conversion en fonction de la mesure de conversion sélectionnée.
-      * **Expériences les plus performantes** : un [tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) (y compris [miniatures](#thumbnails) et [aperçus](#previews)) pour les expériences les plus performantes.
+    * **Experience CTR** : visualisation [synthèse des modifications](/help/analysis-workspace/visualizations/summary-number-change.md) qui affiche Experience CTR.
+    * **Principales expériences de conversion** : visualisation en [barre horizontale](/help/analysis-workspace/visualizations/horizontal-bar.md) représentant les principales expériences de conversion en fonction de la mesure de conversion sélectionnée.
+    * **Expériences les plus performantes** : un [tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) (y compris [miniatures](#thumbnails) et [aperçus](#previews)) pour les expériences les plus performantes.
 
-   * **Ressources**
+  * **Ressources**
 
-      * **Taux de clics des ressources**
-Visualisation [résumé des modifications](/help/analysis-workspace/visualizations/summary-number-change.md) qui affiche le taux de clics de la ressource.
-      * **Principales conversions de ressources**
-Visualisation [barre horizontale](/help/analysis-workspace/visualizations/horizontal-bar.md) qui affiche les principales ressources à convertir en fonction de la mesure de conversion sélectionnée.
-      * **Ressources les plus performantes**
-Un [tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) (comprenant des [miniatures](#thumbnails) et des [aperçus](#previews)) pour les ressources les plus performantes.
-Assets - vues par rapport à la conversion.
-Visualisation [en graphique de dispersion](/help/analysis-workspace/visualizations/scatterplot.md) qui présente un graphique de dispersion des vues de ressources en fonction des conversions de ressources.
+    * **Taux de clics des ressources**
+      Visualisation [résumé des modifications](/help/analysis-workspace/visualizations/summary-number-change.md) qui affiche le taux de clics de la ressource.
+    * **Principales conversions de ressources**
+      Visualisation [barre horizontale](/help/analysis-workspace/visualizations/horizontal-bar.md) qui affiche les principales ressources à convertir en fonction de la mesure de conversion sélectionnée.
+    * **Ressources les plus performantes**
+      Un [tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) (comprenant des [miniatures](#thumbnails) et des [aperçus](#previews)) pour les ressources les plus performantes.
+      Assets - vues par rapport à la conversion.
+      Visualisation [en graphique de dispersion](/help/analysis-workspace/visualizations/scatterplot.md) qui présente un graphique de dispersion des vues de ressources en fonction des conversions de ressources.
 
-* **Quels attributs de ressource contribuent aux conversions ?**
+* **Quels sont les attributs de ressources qui contribuent aux conversions ?**
 Content Analytics utilise l’IA et GenAI pour affecter automatiquement des métadonnées et des attributs, tels que les objets, les scènes et les couleurs de premier plan, à chaque ressource.
 
-   * **Principaux attributs de ressource de conversion**
-Une [barre horizontale](/help/analysis-workspace/visualizations/horizontal-bar.md) qui affiche les attributs de ressource de conversion supérieurs en fonction de la mesure de conversion sélectionnée.
-   * **Meilleure conversion des attributs de ressource par rapport aux 30 jours précédents**
-Visualisation [barre horizontale](/help/analysis-workspace/visualizations/horizontal-bar.md) qui affiche les principaux attributs de ressource de conversion, par rapport aux 30 jours précédents, en fonction de la mesure de conversion sélectionnée.
-   * **Principale conversion des données d’attribut des ressources**
-Un [tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) qui affiche les principaux attributs de conversion en fonction de la mesure de conversion sélectionnée. Sélectionnez une ligne dans le tableau pour mettre à jour la visualisation Tendance des attributs.
-   * **Tendance des attributs**
-Visualisation [en ligne](/help/analysis-workspace/visualizations/line.md) montrant la tendance de l’attribut de la ressource de conversion la plus élevée sélectionnée.
-   * **Couleur de premier plan des ressources**
-Exemple [tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) qui compare les performances des éléments d’une seule catégorie d’attributs de ressource : Couleurs de premier plan. Vous pouvez remplacer cet attribut de ressource par d’autres dimensions de catégorie d’attributs de ressource.
+  * **Principaux attributs de ressource de conversion**
+    Une [barre horizontale](/help/analysis-workspace/visualizations/horizontal-bar.md) qui affiche les attributs de ressource de conversion supérieurs en fonction de la mesure de conversion sélectionnée.
+  * **Meilleure conversion des attributs de ressource par rapport aux 30 jours précédents**
+    Visualisation [barre horizontale](/help/analysis-workspace/visualizations/horizontal-bar.md) qui affiche les principaux attributs de ressource de conversion, par rapport aux 30 jours précédents, en fonction de la mesure de conversion sélectionnée.
+  * **Principale conversion des données d’attribut des ressources**
+    Un [tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) qui affiche les principaux attributs de conversion en fonction de la mesure de conversion sélectionnée. Sélectionnez une ligne dans le tableau pour mettre à jour la visualisation Tendance des attributs.
+  * **Tendance des attributs**
+    Visualisation [en ligne](/help/analysis-workspace/visualizations/line.md) montrant la tendance de l’attribut de la ressource de conversion la plus élevée sélectionnée.
+  * **Couleur de premier plan des ressources**
+    Exemple [tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) qui compare les performances des éléments d’une seule catégorie d’attributs de ressource : Couleurs de premier plan. Vous pouvez remplacer cet attribut de ressource par d’autres dimensions de catégorie d’attributs de ressource.
 
 * **Quels sont les attributs d’expérience qui contribuent aux conversions ?**
 
@@ -172,32 +172,32 @@ Exemple [tableau à structure libre](/help/analysis-workspace/visualizations/fre
 
   Le panneau se compose des visualisations suivantes :
 
-   * **Top conversion des attributs d’expérience**
-Visualisation [barre horizontale](/help/analysis-workspace/visualizations/horizontal-bar.md) qui affiche les attributs d’expérience de conversion supérieurs en fonction de la mesure de conversion sélectionnée.
-Principaux attributs d’expérience de conversion par rapport aux 30 jours précédents
-Visualisation [barre horizontale](/help/analysis-workspace/visualizations/horizontal-bar.md) qui affiche les principaux attributs d’expérience de conversion, par rapport aux 30 jours précédents, en fonction de la mesure de conversion sélectionnée.
-   * **Top conversion des données d’attribut d’expérience**
-Un [tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) qui affiche les principales expériences de conversion en fonction de la mesure de conversion sélectionnée. Sélectionnez une ligne dans le tableau pour mettre à jour la visualisation en lignes.
-   * **Ligne**
-Visualisation [en ligne](/help/analysis-workspace/visualizations/line.md) montrant la tendance de l’attribut d’expérience de conversion le plus élevé sélectionné.
-   * **Mots-clés d’expérience**
-Un [tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) présentant les principaux mots-clés d’expérience en fonction de la mesure de conversion sélectionnée.
+  * **Principaux attributs d’expérience de conversion**
+    Visualisation [barre horizontale](/help/analysis-workspace/visualizations/horizontal-bar.md) qui affiche les attributs d’expérience de conversion supérieurs en fonction de la mesure de conversion sélectionnée.
+    Principaux attributs d’expérience de conversion par rapport aux 30 jours précédents
+    Visualisation [barre horizontale](/help/analysis-workspace/visualizations/horizontal-bar.md) qui affiche les principaux attributs d’expérience de conversion, par rapport aux 30 jours précédents, en fonction de la mesure de conversion sélectionnée.
+  * **Top conversion des données d’attribut d’expérience**
+    Un [tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) qui affiche les principales expériences de conversion en fonction de la mesure de conversion sélectionnée. Sélectionnez une ligne dans le tableau pour mettre à jour la visualisation en lignes.
+  * **Ligne**
+    Visualisation [en ligne](/help/analysis-workspace/visualizations/line.md) montrant la tendance de l’attribut d’expérience de conversion le plus élevé sélectionné.
+  * **Mots-clés d’expérience**
+    Un [tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) présentant les principaux mots-clés d’expérience en fonction de la mesure de conversion sélectionnée.
 
-* **Où les ressources apparaissent-elles sur mon site ?**
+* **Où les ressources apparaissent-elles sur mon site ?**
 Ce tableau à structure libre détaille l’emplacement des ressources les plus consultées. Utilisez cette analyse pour identifier les pages hautement performantes et optimiser l’emplacement des ressources.
 
-   * **Où les ressources les plus consultées apparaissent-elles ?**
-Vous pouvez ventiler n’importe quelle ressource par dimension afin de mieux comprendre où cette image s’affiche.
+  * **Où les ressources les plus consultées apparaissent-elles ?**
+    Vous pouvez ventiler n’importe quelle ressource par dimension afin de mieux comprendre où cette image s’affiche.
 
-     Dans l’exemple de [tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) (comprenant des [miniatures](#thumbnails) et des [prévisualisations](#previews)), **[!UICONTROL ID de perception de ressource]** est utilisé à la place de [!UICONTROL ID de ressource]. Parfois, la même image peut être dupliquée sur votre site avec une autre URL d’image. L’attribut [!UICONTROL ID de perception de ressource] permet de regrouper ces doublons sous un seul ID.
+    Dans l’exemple de [tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) (comprenant des [miniatures](#thumbnails) et des [prévisualisations](#previews)), **[!UICONTROL ID de perception de ressource]** est utilisé à la place de [!UICONTROL ID de ressource]. Parfois, la même image peut être dupliquée sur votre site avec une autre URL d’image. L’attribut [!UICONTROL ID de perception de ressource] permet de regrouper ces doublons sous un seul ID.
 
-     Étant donné que les ressources peuvent changer sur une page, le système répartit chaque ressource par **[!UICONTROL Experience Id]** afin d’identifier la version de la page où la ressource s’est affichée. Vous pouvez remplacer l’[!UICONTROL ID d’expérience] par d’autres dimensions qui vous permettant de déterminer l’emplacement d’une ressource sur votre site. Par exemple, [!UICONTROL Nom de la page], [!UICONTROL URL de la page] ou [!UICONTROL Section du site].
+    Étant donné que les ressources peuvent changer sur une page, le système répartit chaque ressource par **[!UICONTROL Experience Id]** afin d’identifier la version de la page où la ressource s’est affichée. Vous pouvez remplacer l’[!UICONTROL ID d’expérience] par d’autres dimensions qui vous permettant de déterminer l’emplacement d’une ressource sur votre site. Par exemple, [!UICONTROL Nom de la page], [!UICONTROL URL de la page] ou [!UICONTROL Section du site].
 
-     Vous pouvez également remplacer l’[!UICONTROL ID de perception de ressource] par l’[!UICONTROL ID de ressource] pour obtenir un enregistrement de l’emplacement où des URL d’images spécifiques sont référencées.
+    Vous pouvez également remplacer l’[!UICONTROL ID de perception de ressource] par l’[!UICONTROL ID de ressource] pour obtenir un enregistrement de l’emplacement où des URL d’images spécifiques sont référencées.
 
 
 >[!MORELIKETHIS]
 >
->[Composants &#x200B;](components.md)
+>[Composants Content Analytics](components.md)
 >[Utiliser des modèles](/help/analysis-workspace/templates/use-templates.md#web-engagement)
 >

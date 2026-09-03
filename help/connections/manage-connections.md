@@ -26,7 +26,7 @@ topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 88ff7c4124d4612a3411b315a605aec29bc9a218
 workflow-type: tm+mt
-source-wordcount: 7300
+source-wordcount: 7319
 ht-degree: 87%
 
 ---
@@ -295,7 +295,7 @@ Le tableau des jeux de données affiche les colonnes suivantes pour chaque jeu d
 | **[!UICONTROL Lots ajoutés]** | Nombre de lots qui ont été ajoutés à une connexion au cours de la période sélectionnée. |
 | **[!UICONTROL Dernier ajout]** | Date et heure du dernier lot ajouté à une connexion. |
 | **[!UICONTROL Type de source de données]** | Type de source. Vous définissez le type de source lorsque vous ajoutez un jeu de données à une connexion. |
-| **[!UICONTROL Type de jeu de données]** | [Type de jeu de données](create-connection.md#dataset-types). Le type peut être **[!UICONTROL Événement]**, **[!UICONTROL Profil]**, **[!UICONTROL Recherche]**, **[!UICONTROL Résumé]**. Un jeu de données ad hoc ou relationnel est identifié par **[!UICONTROL (ad hoc)]** ou **[!UICONTROL (relationnel)]**. Par exemple, **[!UICONTROL Événement (ad hoc)]** ou **[!UICONTROL Recherche (relationnelle)]**. |
+| **[!UICONTROL Type de jeu de données]** | [Type de jeu de données](create-connection.md#dataset-types). Le type peut être **[!UICONTROL Événement]**, **[!UICONTROL Profil]**, **[!UICONTROL Recherche]** ou **[!UICONTROL Synthèse]**. Un jeu de données ad hoc ou relationnel est identifié par **[!UICONTROL (ad hoc)]** ou **[!UICONTROL (relationnel)]**. Par exemple, **[!UICONTROL Événement (ad hoc)]** ou **[!UICONTROL Recherche (relationnelle)]**. |
 | **[!UICONTROL Assemblé]** | Si un jeu de données est [activé pour le groupement dans l’interface utilisateur de connexion](/help/stitching/use-stitching-ui.md), la valeur est **[!UICONTROL true]**. Sinon, la valeur est **[!UICONTROL false]**. Les jeux de données groupés qui sont le résultat de la procédure [requête d’assemblage](/help/stitching//use-stitching.md) ne sont pas identifiés comme groupés dans ce tableau et ont par défaut une valeur de **[!UICONTROL false]**. |
 | **[!UICONTROL Schéma]** | Schéma Experience Platform sur lequel est basé ce jeu de données. |
 | **[!UICONTROL Importer de nouvelles données]** | Statut de l’import des nouvelles données pour le jeu de données : <p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _ activés]**&#x200B;si le jeu de données est configuré pour importer de nouvelles données, et<p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _x désactivés_]** si le jeu de données est configuré pour ne pas importer de nouvelles données. |
@@ -352,7 +352,7 @@ Lorsqu’une ligne de jeu de données est sélectionnée dans le tableau des jeu
 | **[!UICONTROL Importer de nouvelles données]** | Statut de l’import des nouvelles données pour le jeu de données : <p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _ activés]**&#x200B;si le jeu de données est configuré pour importer de nouvelles données, et<p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _x désactivés_]** si le jeu de données est configuré pour ne pas importer de nouvelles données. |
 | **[!UICONTROL Renvoyer les données]** | Statut des données de renvoi pour le jeu de données.<p>![Statut rouge](assets/status-red.svg) **[!UICONTROL _x _renvois ayant échoué]**&#x200B;pour le nombre de renvois ayant échoué,<p>![Statut rouge](assets/status-orange.svg) **[!UICONTROL _x _renvois en cours de traitement]**&#x200B;pour le nombre de renvois en cours de traitement,<p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _renvois terminés]**&#x200B;pour le nombre de renvois terminés, et<p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _Désactivé_]** au cas où aucun renvoi n’est configuré.<p>Pour afficher une boîte de dialogue avec une vue d’ensemble des renvois précédents pour le jeu de données, sélectionnez <img src="./assets/pastbackfill.svg" alt="Renvois précédents" width="15"/> **[!UICONTROL Renvois précédents]**. |
 | **[!UICONTROL Type de source de données]** | Type de source de données tel que défini lors de l’ajout du jeu de données à la connexion. |
-| **[!UICONTROL Type de jeu de données]** | [Type de jeu de données](create-connection.md#dataset-types). Le type peut être **[!UICONTROL Événement]**, **[!UICONTROL Profil]**, **[!UICONTROL Recherche]**, **[!UICONTROL Résumé]**. Un jeu de données ad hoc ou relationnel est identifié par **[!UICONTROL (ad hoc)]** ou **[!UICONTROL (relationnel)]**. Par exemple, **[!UICONTROL Événement (ad hoc)]** ou **[!UICONTROL Recherche (relationnelle)]**. |
+| **[!UICONTROL Type de jeu de données]** | [Type de jeu de données](create-connection.md#dataset-types). Le type peut être **[!UICONTROL Événement]**, **[!UICONTROL Profil]**, **[!UICONTROL Recherche]** ou **[!UICONTROL Synthèse]**. Un jeu de données ad hoc ou relationnel est identifié par **[!UICONTROL (ad hoc)]** ou **[!UICONTROL (relationnel)]**. Par exemple, **[!UICONTROL Événement (ad hoc)]** ou **[!UICONTROL Recherche (relationnelle)]**. |
 | **[!UICONTROL Schéma]** | Schéma Experience Platform sur lequel est basé ce jeu de données. |
 | **[!UICONTROL Identifiant du jeu de données]** | Identifiant de jeu de données tel que généré dans Experience Platform. |
 
@@ -746,6 +746,6 @@ L’interface **[!UICONTROL Utilisation des médias en flux continu]** se compos
 
 >[!MORELIKETHIS]
 >
->Tutoriel [Affichage, dépannage et modification &#x200B;](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/connections/connections-details-experience-in-cja) paramètres de connexion.
->[Gérer l’utilisation de Customer Journey Analytics](/help/technotes/estimate-usage.md)
+>Tutoriel [Afficher, résoudre les problèmes et modifier les paramètres de connexion](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/connections/connections-details-experience-in-cja).
+>[Gérer l’utilisation de Customer Journey Analytics](/help/technotes/estimate-usage.md)
 >
