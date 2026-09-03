@@ -5,16 +5,11 @@ feature: Workspace Basics
 role: User
 exl-id: 05f69a1c-31c2-40d8-ae8b-a084169897b1
 TQID: https://experienceleague.adobe.com/DWntPKJ6AU2MKBWWVc3MxWYFYXUPlmoMbk8pAdrKYg4
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-subfeature_v2:
-  - id: a8b1c240-f315-46e3-b813-f545c4279dd1
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2: id: a8b1c240-f315-46e3-b813-f545c4279dd1
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 0145475e18cfbc3ae3a83e5e3838cdec02b57bda
 workflow-type: tm+mt
 source-wordcount: 1898
@@ -160,9 +155,9 @@ Pour inclure une autre personne dans votre commentaire :
 
 ## Recevoir des notifications sur les commentaires
 
-Les propriétaires de projet et [personnes spécifiques que vous mentionnez](#include-others-in-a-comment) reçoivent des notifications en fonction de leurs paramètres de notification CX Enterprise. Par défaut, ils reçoivent une notification in-app, visible à partir de l’icône [Notification d’entreprise CX](https://experienceleague.adobe.com/fr/docs/core-services/interface/features/account-preferences#view-notifications) icône ![Notification d’entreprise CX](assets/experience-cloud-notification.svg) dans Customer Journey Analytics.
+Les propriétaires de projet et [personnes spécifiques que vous mentionnez](#include-others-in-a-comment) reçoivent des notifications en fonction de leurs paramètres de notification CX Enterprise. Par défaut, ils reçoivent une notification in-app, visible à partir de l’icône [Notification d’entreprise CX](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#view-notifications) icône ![Notification d’entreprise CX](assets/experience-cloud-notification.svg) dans Customer Journey Analytics.
 
-De plus, les utilisateurs peuvent configurer les paramètres de notification d’entreprise CX pour recevoir des notifications par e-mail et des notifications Slack en [s’abonnant aux notifications par e-mail](https://experienceleague.adobe.com/fr/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) et [s’abonnant aux notifications Slack](https://experienceleague.adobe.com/fr/docs/core-services/interface/features/account-preferences#slack).
+De plus, les utilisateurs peuvent configurer les paramètres de notification d’entreprise CX pour recevoir des notifications par e-mail et des notifications Slack en [s’abonnant aux notifications par e-mail](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) et [s’abonnant aux notifications Slack](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#slack).
 
 ## Placer un badge pour un commentaire existant
 

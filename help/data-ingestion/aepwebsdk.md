@@ -6,26 +6,11 @@ feature: Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
 role: Admin
 TQID: https://experienceleague.adobe.com/BuizkumbeMPhg7dWvJrFta3CYfQnqivOlXd2RtX9gm4
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: c38ed341-fab2-46df-9d72-88d8166edebb
-  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
-  - id: df28738e-9c71-4aa8-929e-edde22340cc6
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: c38ed341-fab2-46df-9d72-88d8166edebbid: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7id: df28738e-9c71-4aa8-929e-edde22340cc6id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
 source-git-commit: 9efc51843684b8cad96d01f7ada99eafc5950b42
 workflow-type: tm+mt
 source-wordcount: 3523
@@ -67,7 +52,8 @@ Toutes les données ingérées par Adobe Experience Platform doivent être confo
 
 ### Configurer un schéma
 
-Vous devez effectuer le suivi de certaines données minimales provenant des profils qui visitent votre site Web, par exemple le nom de la page, l’identification.Vous devez d’abord définir un schéma qui modélise ces données.
+Vous devez effectuer le suivi de certaines données minimales provenant des profils qui visitent votre site Web, par exemple le nom de la page, l’identification.
+Vous devez d’abord définir un schéma qui modélise ces données.
 
 Configurer le schéma :
 
@@ -376,13 +362,13 @@ Définir une règle :
 
    - Dans la boîte de dialogue [!UICONTROL Configuration d’événement] :
 
-      - Sélectionnez **[!UICONTROL Principal]** dans la liste [!UICONTROL Extension].
+     - Sélectionnez **[!UICONTROL Principal]** dans la liste [!UICONTROL Extension].
 
-      - Sélectionnez **[!UICONTROL Fenêtre chargée]** dans la liste [!UICONTROL Type d’événement].
+     - Sélectionnez **[!UICONTROL Fenêtre chargée]** dans la liste [!UICONTROL Type d’événement].
 
-        ![Règle - Configuration d’événement](./assets/event-windowloaded-pageview.png)
+       ![Règle - Configuration d’événement](./assets/event-windowloaded-pageview.png)
 
-      - Sélectionnez **[!UICONTROL Conserver les modifications]**.
+     - Sélectionnez **[!UICONTROL Conserver les modifications]**.
 
 
 
@@ -390,17 +376,17 @@ Définir une règle :
 
    - Dans la boîte de dialogue [!UICONTROL Configuration d’action] :
 
-      - Sélectionnez **[!UICONTROL SDK Web Adobe Experience Platform]** dans la liste [!UICONTROL Extension].
+     - Sélectionnez **[!UICONTROL SDK Web Adobe Experience Platform]** dans la liste [!UICONTROL Extension].
 
-      - Sélectionnez **[!UICONTROL Événement d’envoi]** dans la liste [!UICONTROL Type d’action].
+     - Sélectionnez **[!UICONTROL Événement d’envoi]** dans la liste [!UICONTROL Type d’action].
 
-      - Sélectionnez **[!UICONTROL web.webpagedetails.pageViews]** dans la liste [!UICONTROL Type].
+     - Sélectionnez **[!UICONTROL web.webpagedetails.pageViews]** dans la liste [!UICONTROL Type].
 
-      - Sélectionnez l’icône de cylindre en regard de [!UICONTROL Données XDM] et sélectionnez **[!UICONTROL XDM - Page vue]** dans la liste des éléments de données.
+     - Sélectionnez l’icône de cylindre en regard de [!UICONTROL Données XDM] et sélectionnez **[!UICONTROL XDM - Page vue]** dans la liste des éléments de données.
 
      ![Règle - Configuration de l’action](./assets/action-pageview-xdm.png)
 
-      - Sélectionnez **[!UICONTROL Conserver les modifications]**.
+     - Sélectionnez **[!UICONTROL Conserver les modifications]**.
 
    - La règle doit se présenter comme suit :
 
@@ -511,11 +497,11 @@ Créer une connexion :
 
    - Pour chaque jeu de données :
 
-      - Sélectionnez un [!UICONTROL ID de personne] parmi les identités disponibles et définies dans les schémas du jeu de données d’Adobe Experience Platform.
+     - Sélectionnez un [!UICONTROL ID de personne] parmi les identités disponibles et définies dans les schémas du jeu de données d’Adobe Experience Platform.
 
-      - Sélectionnez la source de données appropriée dans la liste [!UICONTROL Type de source de données]. Si vous spécifiez **[!UICONTROL Autre]**, ajoutez une description pour la source de données.
+     - Sélectionnez la source de données appropriée dans la liste [!UICONTROL Type de source de données]. Si vous spécifiez **[!UICONTROL Autre]**, ajoutez une description pour la source de données.
 
-      - Définissez **[!UICONTROL Importer toutes les nouvelles données]** et **[!UICONTROL Données existantes de renvoi du jeu de données]** selon vos préférences.
+     - Définissez **[!UICONTROL Importer toutes les nouvelles données]** et **[!UICONTROL Données existantes de renvoi du jeu de données]** selon vos préférences.
 
      ![Configurer les jeux de données](./assets/cja-connections-3b.png)
 

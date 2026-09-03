@@ -6,26 +6,11 @@ feature: Basics
 exl-id: fb48b031-e093-4490-b457-69dbb5debe8d
 role: Admin
 TQID: https://experienceleague.adobe.com/rbgqDkQLPbw-EfhMyUL-eVXZZ1cxMXiQmvU7Si2WCZ8
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: c38ed341-fab2-46df-9d72-88d8166edebb
-  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
-  - id: df28738e-9c71-4aa8-929e-edde22340cc6
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: c38ed341-fab2-46df-9d72-88d8166edebbid: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7id: df28738e-9c71-4aa8-929e-edde22340cc6id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 3536
@@ -108,11 +93,11 @@ Configurer le schéma :
 
    1. Dans la boîte de dialogue [!UICONTROL Ajouter des groupes de champs], sélectionnez le groupe de champs **[!UICONTROL ExperienceEvent AEP Mobile SDK]** dans la liste.
 
-      ![Groupe de champs Détails du cycle de vie mobile &#x200B;](./assets/select-aepmobilesdk-experienceevent.png)
+      ![Groupe de champs Détails du cycle de vie mobile ](./assets/select-aepmobilesdk-experienceevent.png)
 
       Vous pouvez sélectionner le bouton Aperçu pour afficher un aperçu des champs qui font partie de ce groupe de champs, comme `application > name`.
 
-      ![Aperçu du groupe de champs Détails du cycle de vie mobile &#x200B;](./assets/aepmobilesdk-experienceevent-preview.png)
+      ![Aperçu du groupe de champs Détails du cycle de vie mobile ](./assets/aepmobilesdk-experienceevent-preview.png)
 
       Sélectionnez **[!UICONTROL Précédent]** pour fermer l’aperçu.
 
@@ -130,7 +115,7 @@ Configurer le schéma :
 
    ![Objet d’identification](./assets/identification-field-mobile.png)
 
-   L’objet d’identification ajoute des fonctionnalités d’identification au schéma. Dans votre cas, vous devez identifier les profils à l’aide de votre application mobile à l’aide de l’Experience Cloud ID et de l’adresse e-mail. De nombreux autres attributs sont disponibles pour effectuer le suivi de l’identification de la personne (par exemple, l’identifiant client, l’identifiant de fidélité).
+   L’objet d’identification ajoute des fonctionnalités d’identification au schéma. Dans votre cas, vous devez identifier les profils à l’aide de votre application mobile à l’aide d’Experience Cloud ID et de l’adresse e-mail. De nombreux autres attributs sont disponibles pour effectuer le suivi de l’identification de la personne (par exemple, l’identifiant client, l’identifiant de fidélité).
 
    Sélectionnez **[!UICONTROL Appliquer]** pour ajouter cet objet au schéma.
 
@@ -254,7 +239,7 @@ Configurer le flux de données :
 
 Le flux de données est maintenant configuré pour transférer les données collectées depuis l’application mobile vers le jeu de données dans Adobe Experience Platform.
 
-Consultez [Présentation des flux de données](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=fr) pour plus d’informations sur la configuration d’un flux de données et la gestion des données sensibles.
+Consultez [Présentation des flux de données](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) pour plus d’informations sur la configuration d’un flux de données et la gestion des données sensibles.
 
 
 
@@ -357,27 +342,27 @@ Définir une règle :
 
    - Dans la boîte de dialogue [!UICONTROL Configuration d’événement] :
 
-      - Sélectionnez **[!UICONTROL Mobile Core]** dans la liste [!UICONTROL Extension].
+     - Sélectionnez **[!UICONTROL Mobile Core]** dans la liste [!UICONTROL Extension].
 
-      - Sélectionnez **[!UICONTROL Premier plan]** dans la liste [!UICONTROL Type d’événement].
+     - Sélectionnez **[!UICONTROL Premier plan]** dans la liste [!UICONTROL Type d’événement].
 
-      - Sélectionnez **[!UICONTROL Conserver les modifications]**.
+     - Sélectionnez **[!UICONTROL Conserver les modifications]**.
 
    - Cliquez sur ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) en regard de [!UICONTROL Mobile Core - Premier plan].
 
-      - Sélectionnez **[!UICONTROL Mobile Core]** dans la liste [!UICONTROL Extension].
+     - Sélectionnez **[!UICONTROL Mobile Core]** dans la liste [!UICONTROL Extension].
 
-      - Sélectionnez **[!UICONTROL Arrière-plan]** dans la liste [!UICONTROL Type d’événement].
+     - Sélectionnez **[!UICONTROL Arrière-plan]** dans la liste [!UICONTROL Type d’événement].
 
-      - Sélectionnez **[!UICONTROL Conserver les modifications]**.
+     - Sélectionnez **[!UICONTROL Conserver les modifications]**.
 
    - Cliquez sur ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) Ajouter sous [!UICONTROL ACTIONS]. Dans la boîte de dialogue [!UICONTROL Configuration d’action] :
 
-      - Sélectionnez **[!UICONTROL Adobe Experience Platform Edge Network]** dans la liste [!UICONTROL Extension].
+     - Sélectionnez **[!UICONTROL Adobe Experience Platform Edge Network]** dans la liste [!UICONTROL Extension].
 
-      - Sélectionnez **[!UICONTROL Transférer l’événement vers Edge Network]** dans la liste [!UICONTROL Type d’action].
+     - Sélectionnez **[!UICONTROL Transférer l’événement vers Edge Network]** dans la liste [!UICONTROL Type d’action].
 
-      - Sélectionnez **[!UICONTROL Conserver les modifications]**.
+     - Sélectionnez **[!UICONTROL Conserver les modifications]**.
 
    - La règle doit se présenter comme suit :
 
@@ -448,7 +433,7 @@ Vous pouvez désormais déployer le code dans votre application mobile. Une fois
 
 Validez la mise en œuvre, corrigez-la si nécessaire, puis déployez-la dans l’environnement d’évaluation et de production à l’aide du processus de publication des balises.
 
-Voir [Tutoriel sur l’implémentation de Adobe Experience Cloud dans les applications mobiles](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=fr) pour des informations beaucoup plus détaillées.
+Pour des informations beaucoup plus détaillées](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=fr) consultez le tutoriel [Implémentation d’Adobe Experience Cloud dans les applications mobiles .
 
 ## Configurer une connexion
 
@@ -484,11 +469,11 @@ Créer une connexion :
 
    - Pour chaque jeu de données :
 
-      - Sélectionnez un [!UICONTROL ID de personne] parmi les identités disponibles et définies dans les schémas du jeu de données d’Adobe Experience Platform.
+     - Sélectionnez un [!UICONTROL ID de personne] parmi les identités disponibles et définies dans les schémas du jeu de données d’Adobe Experience Platform.
 
-      - Sélectionnez la source de données appropriée dans la liste [!UICONTROL Type de source de données]. Si vous spécifiez **[!UICONTROL Autre]**, ajoutez une description pour la source de données.
+     - Sélectionnez la source de données appropriée dans la liste [!UICONTROL Type de source de données]. Si vous spécifiez **[!UICONTROL Autre]**, ajoutez une description pour la source de données.
 
-      - Définissez **[!UICONTROL Importer toutes les nouvelles données]** et **[!UICONTROL Données existantes de renvoi du jeu de données]** selon vos préférences.
+     - Définissez **[!UICONTROL Importer toutes les nouvelles données]** et **[!UICONTROL Données existantes de renvoi du jeu de données]** selon vos préférences.
 
      ![Configurer les jeux de données](./assets/cja-connections-ajopushid.png)
 

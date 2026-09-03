@@ -7,20 +7,11 @@ role: Admin
 exl-id: 92cffcc5-d7a7-47f5-869d-1fc665594bf4
 autotag-review: '2026-05-19T08:56:46.637Z'
 TQID: 'https://experienceleague.adobe.com/A3GkkNVAO9qpbOqCrZnf6PNJfRuwMaodJVOOuSRg0w8'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: e1471301-a189-438e-8d48-264a8db508a6
-  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
-  - id: bfef374d-acfd-4c57-bf74-a2b36053c545
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: b3197353-f189-4932-8378-3f3bc40e6071id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: e1471301-a189-438e-8d48-264a8db508a6id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7id: bfef374d-acfd-4c57-bf74-a2b36053c545
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: 2b0204c229a7d53c0a497fe448c165acf84536ad
 workflow-type: tm+mt
 source-wordcount: 441
@@ -67,19 +58,19 @@ Pour plus d’informations, consultez le guide [[!DNL Azure Databricks]  sur l�
 
 Lisez la documentation suivante pour savoir comment activer la capture de données de modification pour votre connexion source [!DNL Azure Databricks] :
 
-* [Créer une connexion  [!DNL Azure Databricks]  base](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/api-tutorials/create/databases/databricks).
-* [Créer une connexion source pour une base de données](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
+* [Créer une connexion  [!DNL Azure Databricks]  base](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/databricks).
+* [Créer une connexion source pour une base de données](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
 
 ## [!DNL Google BigQuery]
 
 Pour utiliser la capture de données de modification dans votre connexion source [!DNL Google BigQuery], accédez à la page [!DNL Google BigQuery] dans la console [!DNL Google Cloud] et définissez `enable_change_history` sur `TRUE`. Cette propriété active l&#39;historique des modifications de votre tableau de données.
 
-Pour plus d’informations, consultez le guide sur les instructions de langage de définition de données dans  [!DNL GoogleSQL][&#128279;](https://cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#table_option_list).
+Pour plus d’informations, consultez le guide sur les instructions de langage de définition de données dans  [!DNL GoogleSQL]](https://cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#table_option_list).[
 
 Lisez la documentation suivante pour savoir comment activer la capture de données de modification pour votre connexion source [!DNL Google BigQuery] :
 
-* [Créer une connexion  [!DNL Google BigQuery]  base](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/api-tutorials/create/databases/bigquery).
-* [Créer une connexion source pour une base de données](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
+* [Créer une connexion  [!DNL Google BigQuery]  base](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/bigquery).
+* [Créer une connexion source pour une base de données](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
 
 ## [!DNL Snowflake]
 
@@ -91,12 +82,12 @@ Dans [!DNL Snowflake], activez le suivi des modifications à l’aide de l’`AL
 ALTER TABLE mytable SET CHANGE_TRACKING = TRUE
 ```
 
-Pour plus d’informations, consultez le guide [[!DNL Snowflake]  sur l’utilisation de la clause de modification &#x200B;](https://docs.snowflake.com/en/sql-reference/constructs/changes#usage-notes).
+Pour plus d’informations, consultez le guide [[!DNL Snowflake]  sur l’utilisation de la clause de modification ](https://docs.snowflake.com/en/sql-reference/constructs/changes#usage-notes).
 
 Lisez la documentation suivante pour savoir comment activer la capture de données de modification pour votre connexion source [!DNL Snowflake] :
 
-* [Créer une connexion  [!DNL Snowflake]  base](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/api-tutorials/create/databases/snowflake).
-* [Créer une connexion source pour une base de données](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
+* [Créer une connexion  [!DNL Snowflake]  base](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/snowflake).
+* [Créer une connexion source pour une base de données](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
 
 
 >[!MORELIKETHIS]

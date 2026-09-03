@@ -5,14 +5,10 @@ feature: Workspace Basics
 role: User
 exl-id: d751057e-6a5f-4605-abc1-9259a1f95a28
 TQID: https://experienceleague.adobe.com/21Rc7-uX7Ie2qj5FHzjb89CTmvi79Ne-FR92okGF5uo
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-subfeature_v2:
-  - id: a8b1c240-f315-46e3-b813-f545c4279dd1
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2: id: a8b1c240-f315-46e3-b813-f545c4279dd1
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 860
@@ -46,15 +42,15 @@ Une fois votre projet ouvert dans Analysis Workspace, sélectionnez **[!UICONTR
 
   ![Enregistrer le projet](assets/save-project.png)
 
-   1. Indiquez ce qui suit :
+  1. Indiquez ce qui suit :
 
-      * **[!UICONTROL Nom]** (obligatoire). Nom de votre projet.
-      * **[!UICONTROL Description]**. Description de votre projet.
-      * **[!UICONTROL Balises]**. Recherchez des balises dans le champ [!UICONTROL *Rechercher des balises*] ou ajoutez de nouvelles balises avec **[!UICONTROL ENTRÉE]**.
-      * **[!UICONTROL Dossier]**. Sélectionnez un dossier dans le menu déroulant [!UICONTROL *Sélectionner un dossier*]. Si vous ne spécifiez pas de dossier, le projet est enregistré dans le dossier actuel à partir duquel vous avez créé un projet.
-      * **[!UICONTROL Notes de version]**. Ajoutez des notes de version dans la zone de texte *Ajouter des notes*.
+     * **[!UICONTROL Nom]** (obligatoire). Nom de votre projet.
+     * **[!UICONTROL Description]**. Description de votre projet.
+     * **[!UICONTROL Balises]**. Recherchez des balises dans le champ [!UICONTROL *Rechercher des balises*] ou ajoutez de nouvelles balises avec **[!UICONTROL ENTRÉE]**.
+     * **[!UICONTROL Dossier]**. Sélectionnez un dossier dans le menu déroulant [!UICONTROL *Sélectionner un dossier*]. Si vous ne spécifiez pas de dossier, le projet est enregistré dans le dossier actuel à partir duquel vous avez créé un projet.
+     * **[!UICONTROL Notes de version]**. Ajoutez des notes de version dans la zone de texte *Ajouter des notes*.
 
-   1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer votre projet.
+  1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer votre projet.
 
   L’enregistrement de votre projet enregistre en fait une version de votre projet qui est stockée pendant 90 jours.
 
@@ -62,8 +58,8 @@ Une fois votre projet ouvert dans Analysis Workspace, sélectionnez **[!UICONTR
 
   ![Ernegistrer un projet partagé](assets/save-project-shared.png)
 
-   * Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer le projet.
-   * Sélectionnez **[!UICONTROL Enregistrer sous]** pour enregistrer le projet en tant que projet en double avec un nouveau nom.
+  * Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer le projet.
+  * Sélectionnez **[!UICONTROL Enregistrer sous]** pour enregistrer le projet en tant que projet en double avec un nouveau nom.
 
 
 * **[!UICONTROL Enregistrer avec les notes]**
@@ -72,8 +68,8 @@ Une fois votre projet ouvert dans Analysis Workspace, sélectionnez **[!UICONTR
 
   Lorsque vous enregistrez votre projet, ajoutez des notes sur les modifications apportées au projet. Dans la boîte de dialogue Enregistrer les notes de version :
 
-   1. Saisissez vos **[!UICONTROL Notes de version]** dans la zone de texte **[!UICONTROL Ajouter des notes]**.
-   1. Sélectionnez **[!UICONTROL Enregistrer]**.
+  1. Saisissez vos **[!UICONTROL Notes de version]** dans la zone de texte **[!UICONTROL Ajouter des notes]**.
+  1. Sélectionnez **[!UICONTROL Enregistrer]**.
 
   Les notes sont stockées avec la version du projet et sont disponibles lorsque vous [ouvrez une version précédente](open-projects.md#open-previous-version) du projet. Une version enregistrée avec des notes est automatiquement stockée pendant un an.
 
@@ -83,22 +79,22 @@ Une fois votre projet ouvert dans Analysis Workspace, sélectionnez **[!UICONTR
 
   Créez un doublon de votre projet avec un nouveau nom. La boîte de dialogue Enregistrer sous s’affiche.
 
-   1. Indiquez ce qui suit :
+  1. Indiquez ce qui suit :
 
-      * **[!UICONTROL Nom]** (obligatoire). Nom de votre projet.
-      * **[!UICONTROL Description]**. Description de votre projet.
-      * **[!UICONTROL Balises]**. Recherchez des balises dans le champ [!UICONTROL *Rechercher des balises*] ou ajoutez de nouvelles balises avec **[!UICONTROL ENTRÉE]**.
-      * **[!UICONTROL Dossier]**. Sélectionnez un dossier dans le menu déroulant [!UICONTROL *Sélectionner un dossier*]. Si vous ne spécifiez pas de dossier, le projet est enregistré dans le dossier actuel à partir duquel vous avez créé un projet.
-      * **[!UICONTROL Notes de version]**. Ajoutez des notes de version dans la zone de texte *Ajouter des notes*.
+     * **[!UICONTROL Nom]** (obligatoire). Nom de votre projet.
+     * **[!UICONTROL Description]**. Description de votre projet.
+     * **[!UICONTROL Balises]**. Recherchez des balises dans le champ [!UICONTROL *Rechercher des balises*] ou ajoutez de nouvelles balises avec **[!UICONTROL ENTRÉE]**.
+     * **[!UICONTROL Dossier]**. Sélectionnez un dossier dans le menu déroulant [!UICONTROL *Sélectionner un dossier*]. Si vous ne spécifiez pas de dossier, le projet est enregistré dans le dossier actuel à partir duquel vous avez créé un projet.
+     * **[!UICONTROL Notes de version]**. Ajoutez des notes de version dans la zone de texte *Ajouter des notes*.
 
-   1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer votre projet.
+  1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer votre projet.
 
   Vous pouvez enregistrer le projet dans un autre dossier. Le projet d’origine ne sera pas affecté.
 
 
 <!-- 
 Cannot find this option in CJA 
-| **[!UICONTROL Save as template]** | Save your project as a [custom template](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html?lang=fr) that becomes available to your organization under **[!UICONTROL Project > New]** |
+| **[!UICONTROL Save as template]** | Save your project as a [custom template](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) that becomes available to your organization under **[!UICONTROL Project > New]** |
 -->
 
 ## Enregistrement automatique

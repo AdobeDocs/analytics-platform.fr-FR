@@ -6,24 +6,15 @@ feature: Components
 exl-id: fbc25150-4390-40a2-9f17-aadf254258ad
 role: User
 TQID: https://experienceleague.adobe.com/pKXaX-DMxsFn9Y39AjqL1VGaSM--WFda9fuD7zJLgoI
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 390
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
@@ -40,7 +31,7 @@ Les exportations peuvent échouer pour différentes raisons. Le tableau suivant 
 | Informations non valides sur le lieu ou le compte | Assurez-vous que vos informations d’identification et autres informations sont correctes pour le compte et l’emplacement cloud vers lesquels vous exportez. | [Configurer des comptes d’exportation cloud](/help/components/exports/cloud-export-accounts.md) et [Configurer des emplacements d’exportation cloud](/help/components/exports/cloud-export-locations.md). |
 | Une dimension ou une mesure du rapport a été supprimée de la vue de données | Contactez votre administrateur système pour voir quels composants ont été supprimés de la vue de données. Vous devrez peut-être utiliser une autre vue de données pour votre exportation ou supprimer de votre tableau les composants qui ne sont plus disponibles. | [Exporter des rapports Customer Journey Analytics vers le cloud](/help/analysis-workspace/export/export-cloud.md) |
 | Limite de ligne dépassée | Selon votre type de licence, vous pouvez exporter un maximum de 3 millions, 30 millions, 150 millions ou 300 millions de lignes. Mettez à jour le tableau que vous exportez pour réduire le nombre total de lignes. | [Exporter des rapports Customer Journey Analytics vers le cloud](/help/analysis-workspace/export/export-cloud.md) |
-| Expiration de l’exportation planifiée | L’exportation planifiée que vous avez configurée a expiré. Mettez à jour l’expiration de l’exportation. | [Gérer les exportations](/help/components/exports/manage-exports.md) |
+| Expiration de l’exportation planifiée | L’exportation planifiée que vous avez configurée a expiré. Mettez à jour l’expiration de l’exportation. | [Gérer des exports](/help/components/exports/manage-exports.md) |
 | Dimension non pris en charge | <p>Toute dimension qui répond à tous les critères suivants n’est pas prise en charge dans l’exportation de table complète :</p> <ul><li>A été créé à partir d’un champ qui fait partie d’un tableau d’objets .</li><li>A la persistance activée<li>N’utilise pas de dimension de liaison</li> | <ul><li>[Utilisation de tableaux d’objets](/help/use-cases/object-arrays.md)</li><li>[Paramètres des composants de persistance](/help/data-views/component-settings/persistence.md)<li>[Utiliser des dimensions et des mesures de liaison dans Customer Journey Analytics](/help/use-cases/data-views/binding-dimensions-metrics.md)</li> |
 | Une politique de gouvernance des données appliquée par votre organisation empêche l’exportation des composants de votre table | Contactez votre administrateur système pour voir quels composants ne peuvent pas être exportés. Supprimez les composants restreints avant d’exporter. | *Filtre sur les politiques de gouvernance des données dans les vues de données* section dans [Libellés et politiques](/help/data-views/data-governance.md) |
 

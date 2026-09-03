@@ -7,7 +7,7 @@ role: Admin
 hide: true
 source-git-commit: e1c7ffa9a2ac58717ee0050d4e7019b6f3f94518
 workflow-type: tm+mt
-source-wordcount: '2431'
+source-wordcount: '2474'
 ht-degree: 13%
 
 ---
@@ -133,7 +133,7 @@ Les exemples de données pour chaque jeu de données :
 
 >[!TAB  Opportunité ]
 
-| ID d’opportunité | Nom | ID de compte | ID de compte global | Statut | Valeur |
+| ID d’opportunité | Nom | ID de compte | ID de compte global | État | Valeur |
 |---|---|---|---|---|---:|
 | O-432 | Acme Express | A-123 | A-123 | Ouverte | 2 M$ |
 | O-543 | Acme CC | A-123 | A-123 | Fermée | 1 M$ |
@@ -179,7 +179,7 @@ Pour faire correspondre les opportunités avec les comptes, utilisez le conteneu
 
 >[!TAB  Opportunité ]
 
-| ID de l’opportunité ![lien](/help/assets/icons/Link.svg) | Nom | ID de compte | ID de compte global | Statut | Valeur |
+| ID de l’opportunité ![lien](/help/assets/icons/Link.svg) | Nom | ID de compte | ID de compte global | État | Valeur |
 |---|---|---|---|---|---:|
 | **O-432** | Acme Express | A-123 | A-123 | Ouverte | **2 M$** |
 | **O-543** | Acme CC | A-123 | A-123 | Fermée | **$1M** |
@@ -212,7 +212,7 @@ Pour faire correspondre les opportunités avec les comptes, utilisez le conteneu
 
 >[!TAB  Opportunité ]
 
-| ID d’opportunité | Nom | Identifiant de compte ![Link](/help/assets/icons/Link.svg) | ID de compte global | Statut | Valeur |
+| ID d’opportunité | Nom | Identifiant de compte ![Link](/help/assets/icons/Link.svg) | ID de compte global | État | Valeur |
 |---|---|---|---|---|---:|
 | O-432 | Acme Express | **A-123** | A-123 | Ouverte | **2 M$** |
 | O-543 | Acme CC | **A-123** | A-123 | Fermée | **$1M** |
@@ -256,7 +256,7 @@ Pour mettre en correspondance les opportunités avec les comptes, utilisez le co
 
 >[!TAB Recherche d’opportunité]
 
-| ID de l’opportunité ![lien](/help/assets/icons/Link.svg) | Nom | ID de compte | ID de compte global | Statut | Valeur |
+| ID de l’opportunité ![lien](/help/assets/icons/Link.svg) | Nom | ID de compte | ID de compte global | État | Valeur |
 |---|---|---|---|---|---:|
 | **O-432** | Acme Express | A-123 | A-123 | Ouverte | **2 M$** |
 | **O-543** (2x) | Acme CC | A-123 | A-123 | Fermée | $1M x 2 = **$2M** |
@@ -293,7 +293,7 @@ Au lieu de correspondre par conteneur, vous pouvez également choisir de corresp
 
 >[!TAB  Opportunité ]
 
-| ID de l’opportunité ![lien](/help/assets/icons/Link.svg) | Nom | ID de compte | ID de compte global | Statut | Valeur |
+| ID de l’opportunité ![lien](/help/assets/icons/Link.svg) | Nom | ID de compte | ID de compte global | État | Valeur |
 |---|---|---|---|---|---:|
 | **O-432** (3x) | Acme Express | A-123 | A-123 | Ouverte | 2 M$ x 3 = **6 M$** |
 | **O-543** | Acme CC | A-123 | A-123 | Fermée | **$1M** |
@@ -324,7 +324,7 @@ Au lieu de correspondre par conteneur, vous pouvez également choisir de corresp
 
 >[!TAB  Opportunité ]
 
-| ID d’opportunité | Nom | Identifiant de compte ![Link](/help/assets/icons/Link.svg) | ID de compte global | Statut | Valeur |
+| ID d’opportunité | Nom | Identifiant de compte ![Link](/help/assets/icons/Link.svg) | ID de compte global | État | Valeur |
 |---|---|---|---|---|---:|
 | O-432 | Acme Express | **A-123** | A-123 | Ouverte | **2 M$** |
 | O-543 | Acme CC | **A-123** | A-123 | Fermée | **$1M** |

@@ -7,20 +7,11 @@ role: Admin
 exl-id: 7729c1b9-b3ed-4662-a446-2088389bbd97
 autotag-review: '2026-05-19T08:48:44.273Z'
 TQID: 'https://experienceleague.adobe.com/hE-nAiD8K4lHdZkC2YJpqpqfh2d3CY6tq4KiTJjEXs0'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-subfeature_v2:
-  - id: bfef374d-acfd-4c57-bf74-a2b36053c545
-  - id: cf731116-8803-4027-85aa-9c0a126e8321
-  - id: e0cfe18a-f68c-495b-bafc-f6bcc0392d6c
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: d76b9e53-27fb-4597-933f-419cc0dd46dbid: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: bfef374d-acfd-4c57-bf74-a2b36053c545id: cf731116-8803-4027-85aa-9c0a126e8321id: e0cfe18a-f68c-495b-bafc-f6bcc0392d6c
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 521
@@ -34,10 +25,10 @@ Pour prendre en charge les recherches basées sur la personne sur les données B
 
 Cette transformation n’est disponible que pour les jeux de données contenant des données pour les schémas de recherche B2B, en fonction des classes suivantes :
 
-* [Relation Personne/Compte d’entreprise XDM](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/classes/b2b/business-account-person-relation)
-* [Relation Personne/XDM Business Opportunity](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/classes/b2b/business-opportunity-person-relation)
-* [Membres de la liste XDM Business Marketing](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
-* [Membres de XDM Business Campaign](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/classes/b2b/business-campaign-members)
+* [Relation Personne/Compte d’entreprise XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-account-person-relation)
+* [Relation Personne/XDM Business Opportunity](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-opportunity-person-relation)
+* [Membres de la liste XDM Business Marketing](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
+* [Membres de XDM Business Campaign](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-campaign-members)
 
 >[!NOTE]
 >
@@ -61,8 +52,8 @@ Pour activer la transformation pour un jeu de données de recherche B2B :
 
 * Vérifiez pour chaque jeu de données les valeurs suggérées pour **[!UICONTROL Clé]** et **[!UICONTROL Clé correspondante]**. Si vous modifiez les valeurs suggérées, un avertissement s’affiche vous demandant de continuer. Vous devez vous assurer que :
 
-   * La valeur que vous sélectionnez pour **Clé** est basée sur le type de données ID de personne.
-   * La valeur que vous sélectionnez pour **Clé correspondante** est définie comme champ d’identité principale pour le jeu de données d’événement.
+  * La valeur que vous sélectionnez pour **Clé** est basée sur le type de données ID de personne.
+  * La valeur que vous sélectionnez pour **Clé correspondante** est définie comme champ d’identité principale pour le jeu de données d’événement.
 
 * Sélectionnez les options pour importer de nouvelles données et un renvoi du jeu de données.
 

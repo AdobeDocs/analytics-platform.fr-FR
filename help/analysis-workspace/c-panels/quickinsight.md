@@ -5,19 +5,11 @@ feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
 role: User
 TQID: https://experienceleague.adobe.com/G2HFW3lyH16Hh9IGbBgX85eyO0O9i56-dJeK-LqBPJw
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 1166
@@ -39,7 +31,7 @@ ht-degree: 88%
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente le panneau Quick Insights dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_.<br/>_Voir [Panneau Quick Insights](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/panels/quickinsight) pour la version_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** de cet article._
+_Cet article présente le panneau Quick Insights dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_Voir [Panneau Quick Insights](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/panels/quickinsight) pour la version_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 
@@ -139,13 +131,13 @@ D’autres astuces utiles s’affichent dans le [!UICONTROL Créateur d’Aperç
 
   ![Résultat du créateur d’Aperçu rapide](assets/qibuilder-result.png)
 
-   * Dimension **[!UICONTROL Analyser]** **[!UICONTROL Répartie par]** : vous pouvez utiliser jusqu’à 3 niveaux de répartition sur les dimensions pour analyser en détail les données afin d’obtenir les informations dont vous avez réellement besoin. Voir ➊, ➋ et ➌.
+  * Dimension **[!UICONTROL Analyser]** **[!UICONTROL Répartie par]** : vous pouvez utiliser jusqu’à 3 niveaux de répartition sur les dimensions pour analyser en détail les données afin d’obtenir les informations dont vous avez réellement besoin. Voir ➊, ➋ et ➌.
 
-   * Ajouter d’autres mesures **[!UICONTROL Par]** : vous pouvez ajouter jusqu’à 2 mesures supplémentaires. Voir ➍ et ➎.
+  * Ajouter d’autres mesures **[!UICONTROL Par]** : vous pouvez ajouter jusqu’à 2 mesures supplémentaires. Voir ➍ et ➎.
 
-   * **[!UICONTROL Segmenter par]** : vous pouvez ajouter jusqu’à 2 segments supplémentaires. Par exemple, ajoutez Réservations en tant que segment et combinez-le avec les segments Personnes réservant fréquemment et Personnes voyageant pour la première fois, que vous comparez. Voir ➏, ➐ et ➑.
+  * **[!UICONTROL Segmenter par]** : vous pouvez ajouter jusqu’à 2 segments supplémentaires. Par exemple, ajoutez Réservations en tant que segment et combinez-le avec les segments Personnes réservant fréquemment et Personnes voyageant pour la première fois, que vous comparez. Voir ➏, ➐ et ➑.
 
-   * Sur : vous pouvez spécifier la période. Voir ➒.
+  * Sur : vous pouvez spécifier la période. Voir ➒.
 
 ## Limites connues
 

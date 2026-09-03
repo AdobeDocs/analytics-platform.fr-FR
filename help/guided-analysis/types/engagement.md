@@ -6,16 +6,10 @@ keywords: Product Analytics
 role: User
 exl-id: 8a48ad3b-fa30-497e-8306-f8d881b1a335
 TQID: https://experienceleague.adobe.com/sqRGQu7Vg5jdCGXT-NWIeExSrBeMVK5hXg0VvD2LtIM
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 7f8ab656c7dbf508b2a78fd2022592faf883c56e
 workflow-type: tm+mt
 source-wordcount: 758
@@ -44,7 +38,7 @@ Les fonctionnalités qui s’affichent en haut de cette visualisation indiquent 
 * Les fonctionnalités situées dans le coin inférieur gauche de la matrice sont vos fonctionnalités **à faible impact** ; elles ne sont pas largement adoptées ni fréquemment utilisées.
 * Les fonctions en bas à droite de la matrice sont vos fonctions **ponctuelles** ; elles sont largement adoptées, mais ne sont pas fréquemment utilisées.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447469/?captions=fre_fr&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3429489/?quality=12&learn=on)
 
 ## Cas d’utilisation
 
@@ -77,8 +71,8 @@ Le rail de requête vous permet de configurer les composants suivants :
 L’analyse [!UICONTROL Engagement] propose les paramètres de graphique suivants, qui peuvent être ajustés dans le menu au-dessus du graphique :
 
 * **[!UICONTROL Médianes]** : Déterminez où les lignes médianes sont affichées et comment les points tracés se rapportent à ces médianes.
-   * **[!UICONTROL Standard]** : montrez la valeur absolue de l’utilisation et de l’engagement.
-   * **[!UICONTROL Normalisé]** : montrez les modifications relatives à partir de chaque médiane.
+  * **[!UICONTROL Standard]** : montrez la valeur absolue de l’utilisation et de l’engagement.
+  * **[!UICONTROL Normalisé]** : montrez les modifications relatives à partir de chaque médiane.
 * **[!UICONTROL Principaux recouvrements d’événements]** : comparez vos événements à ceux des 20 principaux événements, en fonction de la récence et de la pertinence de l’entreprise et de la personne (le même algorithme appliqué au sélecteur d’événement dans le rail de requête).
 
 ### Comparaison de temps

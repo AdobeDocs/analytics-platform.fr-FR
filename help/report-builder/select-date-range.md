@@ -7,19 +7,13 @@ type: Documentation
 exl-id: 7252214f-a7d6-451b-99c9-d39e8e47120b
 solution: Customer Journey Analytics
 TQID: https://experienceleague.adobe.com/g7-pu7H2LQVNRShRj5Jr6gGWYfB-eMxoLRexdfBUGiE
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
-  - id: f2ef16dc-055a-4bb7-baa5-7039653f3966
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: cb6c7d24-631f-46e5-9e39-3a2705f73962id: f2ef16dc-055a-4bb7-baa5-7039653f3966
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: 859
+source-wordcount: 860
 ht-degree: 52%
 
 ---
@@ -63,10 +57,10 @@ Pour définir des dates flottantes :
 
    - Lorsque vous avez sélectionné **[!UICONTROL Début de]** ou **[!UICONTROL Fin de]**, vous pouvez créer une expression complète. Par exemple : **[!UICONTROL Fin de]** **[!UICONTROL l’année en cours]** **[!UICONTROL plus]** `1` **[!UICONTROL jour]**. Sélectionnez la valeur appropriée pour chaque partie de l’expression.
 
-      - Sélectionnez une valeur pour la période actuelle. Par exemple, **[!UICONTROL année en cours]**.
-      - Sélectionnez une valeur pour un calcul supplémentaire facultatif. Par exemple, **[!UICONTROL plus]**.
-      - Lorsque vous avez spécifié un calcul supplémentaire, indiquez une valeur. Par exemple : `1`.
-      - Lorsque vous avez spécifié un calcul supplémentaire, sélectionnez la période à utiliser pour le calcul. Par exemple, **[!UICONTROL day]**.
+     - Sélectionnez une valeur pour la période actuelle. Par exemple, **[!UICONTROL année en cours]**.
+     - Sélectionnez une valeur pour un calcul supplémentaire facultatif. Par exemple, **[!UICONTROL plus]**.
+     - Lorsque vous avez spécifié un calcul supplémentaire, indiquez une valeur. Par exemple : `1`.
+     - Lorsque vous avez spécifié un calcul supplémentaire, sélectionnez la période à utiliser pour le calcul. Par exemple, **[!UICONTROL day]**.
 
    - Lorsque vous avez sélectionné **[!UICONTROL Jour fixe]**, spécifiez un jour fixe ou utilisez le sélecteur pour sélectionner un jour.
 

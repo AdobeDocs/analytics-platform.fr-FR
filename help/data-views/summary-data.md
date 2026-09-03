@@ -7,22 +7,15 @@ role: Admin
 exl-id: 417443ae-a1ab-483b-a8fd-cff5ee8b6263
 autotag-review: '2026-05-19T08:58:30.172Z'
 TQID: 'https://experienceleague.adobe.com/bG1thChKFsIHc1--pfT2rXHBgcay21qgpSa-ifilfF8'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-subfeature_v2:
-  - id: e1471301-a189-438e-8d48-264a8db508a6
-  - id: e6d52a4d-79b6-4c52-8c8b-df194d83a207
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: e1471301-a189-438e-8d48-264a8db508a6id: e6d52a4d-79b6-4c52-8c8b-df194d83a207
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: 1166
-ht-degree: 96%
+source-wordcount: 1168
+ht-degree: 95%
 
 ---
 
@@ -130,7 +123,7 @@ Le fuseau horaire de vos données de résumé est défini au niveau du schéma d
   | 2024-07-29T01:00:00 | `America/`<br/>`Los_Angeles` | 2024-07-28T18:00:00 | PST | 2024-07-28T18:00:00 |
   | 2024-07-30T01:00:00-05:00 | `Australia/`<br/>`Sydney` | 2024-07-30T17:00:00 | CET | 2024-07-30T08:00:00 |
 
-  Pour les fuseaux horaires avec un décalage de 30 minutes (par exemple, IST, Heure standard de l’Inde), le décalage de 30 minutes est ignoré lors de la création de rapports sur les données de résumé. Par exemple : 12:30 est signalé comme 12:00.
+  Pour les fuseaux horaires avec un décalage de 30 minutes (par exemple, IST, Heure standard de l’Inde), le décalage de 30 minutes est ignoré lors de la création de rapports sur les données de résumé. Par exemple : 12 h 30 est signalé comme 12 h 00.
 
 
 Pour vous assurer que le fuseau horaire approprié est utilisé pour vos données de résumé granulaires horaires, vous devez vous assurer que le schéma utilisé pour les données de résumé comporte le fuseau horaire approprié configuré.
@@ -168,5 +161,5 @@ Assurez-vous que les paramètres des composants pour un groupe de données de r�
 >[!MORELIKETHIS]
 >
 >- Consultez l’article [Utiliser des données de résumé](/help/use-cases/data-views/summary-data.md) pour obtenir un exemple de cas d’utilisation détaillé sur l’utilisation des données de résumé et la création de rapports les concernant.
->- Blog : [comment les données de résumé améliorent les jeux de données Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-summary-data-enhances-adobe-customer-journey-analytics/ba-p/704635?profile.language=fr)
+>- Blog : [comment les données de résumé améliorent les jeux de données Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-summary-data-enhances-adobe-customer-journey-analytics/ba-p/704635)
 

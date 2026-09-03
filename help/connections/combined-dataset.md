@@ -7,23 +7,15 @@ feature: Connections
 role: Admin
 autotag-review: '2026-05-19T08:52:44.354Z'
 TQID: 'https://experienceleague.adobe.com/2aw2GDyFlHdR577R8ntg2Q2MYB8zHtr5dc7CWZd4LX0'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: b3197353-f189-4932-8378-3f3bc40e6071id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: 951
-ht-degree: 33%
+source-wordcount: 978
+ht-degree: 32%
 
 ---
 
@@ -46,18 +38,18 @@ Examinez l’exemple suivant. Vous disposez de deux jeux de données d’événe
 
 | example_id | timestamp | string_color | string_animal | metric_a |
 | --- | --- | --- | --- | ---: |
-| user_310 | 1 Jan 7:02 | Rouge | Renard | |
-| user_310 | 1 Jan 7:04 | | | 2 |
-| user_310 | 1 Jan 7:08 | Bleu | | 3 |
-| user_847 | 2 Jan 12:31 PM | | Tortue | 4 |
-| user_847 | 2 Jan 12:44 PM | | | 2 |
+| user_310 | 01 Jan 7:02 | Rouge | Renard | |
+| user_310 | 01 Jan 7:04 | | | 2 |
+| user_310 | 01 Jan 7:08 | Bleu | | 3 |
+| user_847 | 2 Jan 12:31 | | Tortue | 4 |
+| user_847 | 2 Jan 12:44 | | | 2 |
 
 | différent_id | timestamp | string_color | string_shape | metric_b |
 | --- | --- | --- | --- | ---: |
-| user_847 | 2 Jan 12:26 PM | Jaune | Cercle | 8,5 |
-| user_847 | 2 Jan 13:01 | Rouge | | |
-| alternateid_656 | 2 janv. 8:58 PM | Rouge | Square | 4,2 |
-| alternateid_656 | 2 Jan 9:03 PM | | Triangle | 3,1 |
+| user_847 | 2 Jan 12:26 | Jaune | Cercle | 8,5 |
+| user_847 | 2 Jan 1:01 PM | Rouge | | |
+| alternateid_656 | 2 Jan 20:58 | Rouge | Square | 4,2 |
+| alternateid_656 | 2 Jan 21:03 | | Triangle | 3,1 |
 
 Lorsque vous créez une connexion à l’aide de ces deux jeux de données d’événements et que vous avez identifié
 
@@ -68,29 +60,29 @@ le jeu de données combiné suivant est utilisé pour la création de rapports.
 
 | identifiant | timestamp | string_color | string_animal | string_shape | metric_a | metric_b |
 | --- | --- | --- | --- | --- | ---: | ---: |
-| user_310 | 1 Jan 7:02 | Rouge | Renard | | | |
-| user_310 | 1 Jan 7:04 | | | | 2 | |
-| user_310 | 1 Jan 7:08 | Bleu | | | 3 | |
-| user_847 | 2 Jan 12:26 PM | Jaune | | Cercle | | 8,5 |
-| user_847 | 2 Jan 12:31 PM | | Tortue | | 4 | |
-| user_847 | 2 Jan 12:44 PM | | | | 2 | |
-| user_847 | 2 Jan 13:01 | Rouge | | | | |
-| alternateid_656 | 2 janv. 8:58 PM | Rouge | | Square | | 4,2 |
-| alternateid_656 | 2 Jan 9:03 PM | | | Triangle | | 3,1 |
+| user_310 | 01 Jan 7:02 | Rouge | Renard | | | |
+| user_310 | 01 Jan 7:04 | | | | 2 | |
+| user_310 | 01 Jan 7:08 | Bleu | | | 3 | |
+| user_847 | 2 Jan 12:26 | Jaune | | Cercle | | 8,5 |
+| user_847 | 2 Jan 12:31 | | Tortue | | 4 | |
+| user_847 | 2 Jan 12:44 | | | | 2 | |
+| user_847 | 2 Jan 1:01 PM | Rouge | | | | |
+| alternateid_656 | 2 Jan 20:58 | Rouge | | Square | | 4,2 |
+| alternateid_656 | 2 Jan 21:03 | | | Triangle | | 3,1 |
 
 Pour illustrer l’importance des chemins de schéma, considérez ce scénario. Dans le premier jeu de données, `string_color` est basé sur le chemin de schéma `_experience.whatever.string_color` et dans le second jeu de données sur le chemin de schéma `_experience.somethingelse.string_color`. Dans ce scénario, les données ne sont **pas** fusionnées en une colonne dans le jeu de données combiné résultant. Au lieu de cela, le résultat se compose de deux colonnes `string_color` dans le jeu de données combiné :
 
 | identifiant | timestamp | _experience.<br/>what.<br/>string_color | _experience.<br/>somethingelse.<br/>string_color | string_animal | string_shape | metric_a | metric_b |
 |---|---|---|---|---|---|---:|---:|
-| user_310 | 1 Jan 7:02 | Rouge | | Renard | | | |
-| user_310 | 1 Jan 7:04 | | | | | 2 | |
-| user_310 | 1 Jan 7:08 | Bleu | | | | 3 | |
-| user_847 | 2 Jan 12:26 PM | | Jaune | | Cercle | | 8,5 |
-| user_847 | 2 Jan 12:31 PM | | | Tortue |  | 4 | |
-| user_847 | 2 Jan 12:44 PM | | | | | 2 | |
-| user_847 | 2 Jan 13:01 | | Rouge | | | | |
-| alternateid_656 | 2 janv. 8:58 PM | | Rouge | | Square | | 4,2 |
-| alternateid_656 | 2 Jan 9:03 PM | | | | Triangle | | 3,1 |
+| user_310 | 01 Jan 7:02 | Rouge | | Renard | | | |
+| user_310 | 01 Jan 7:04 | | | | | 2 | |
+| user_310 | 01 Jan 7:08 | Bleu | | | | 3 | |
+| user_847 | 2 Jan 12:26 | | Jaune | | Cercle | | 8,5 |
+| user_847 | 2 Jan 12:31 | | | Tortue |  | 4 | |
+| user_847 | 2 Jan 12:44 | | | | | 2 | |
+| user_847 | 2 Jan 1:01 PM | | Rouge | | | | |
+| alternateid_656 | 2 Jan 20:58 | | Rouge | | Square | | 4,2 |
+| alternateid_656 | 2 Jan 21:03 | | | | Triangle | | 3,1 |
 
 Ce jeu de données d’événements combiné est utilisé dans les rapports. Peu importe le jeu de données d’où provient une ligne. Customer Journey Analytics traite toutes les données comme si elles se trouvaient dans le même jeu de données. Si un ID de personne correspondant apparaît dans les deux jeux de données, ils sont considérés comme la même personne unique. Si un ID de personne correspondant apparaît dans les deux jeux de données avec un horodatage dans les 30 minutes, il est considéré comme faisant partie de la même session. Les champs ayant des chemins de schéma identiques sont fusionnés.
 

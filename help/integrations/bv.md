@@ -5,7 +5,7 @@ feature: Experience Platform Integration
 role: User
 source-git-commit: e90a8d978f8d910f426dcb0fbf28881724d0f5a7
 workflow-type: tm+mt
-source-wordcount: '2543'
+source-wordcount: '2545'
 ht-degree: 3%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # Intégration de Adobe Brand Visibility
 
-[&#128279;](https://experienceleague.adobe.com/fr/docs/llm-optimizer/using/home){target="_blank"} est une application IA générative pour l&#39;optimisation du moteur de génération, conçue pour aider les marques à améliorer leur visibilité, leur précision et leur influence dans les environnements de recherche pilotés par l&#39;IA. Brand Visibility fournit des informations sur la présence des marques dans les réponses générées par l’IA, propose des recommandations de contenu prescriptives et automatise les correctifs d’optimisation.
+[](https://experienceleague.adobe.com/fr/docs/llm-optimizer/using/home){target="_blank"} est une application IA générative pour l&#39;optimisation du moteur de génération, conçue pour aider les marques à améliorer leur visibilité, leur précision et leur influence dans les environnements de recherche pilotés par l&#39;IA. Brand Visibility fournit des informations sur la présence des marques dans les réponses générées par l’IA, propose des recommandations de contenu prescriptives et automatise les correctifs d’optimisation.
 
 L’IA est devenue un canal de découverte essentiel. Les agents de grands modèles linguistiques (LLM), tels que ChatGPT, Claude, Copilot et Perplexity, explorent le contenu de la marque.
 

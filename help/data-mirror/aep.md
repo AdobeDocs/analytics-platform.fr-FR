@@ -7,23 +7,15 @@ role: Admin
 exl-id: 87593d7d-9456-48f8-8d39-5c3d95fe51ec
 autotag-review: '2026-05-19T07:18:47.007Z'
 TQID: 'https://experienceleague.adobe.com/nAfDMtaQvsVRAEm31fRwleirW8LaS-yS0tGTdReux0Y'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-subfeature_v2:
-  - id: bfef374d-acfd-4c57-bf74-a2b36053c545
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4id: d76b9e53-27fb-4597-933f-419cc0dd46dbid: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: bfef374d-acfd-4c57-bf74-a2b36053c545
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: 2b0204c229a7d53c0a497fe448c165acf84536ad
 workflow-type: tm+mt
-source-wordcount: 571
-ht-degree: 6%
+source-wordcount: 605
+ht-degree: 5%
 
 ---
 
@@ -47,9 +39,9 @@ Vous devez créer un [schéma relationnel](https://experienceleague.adobe.com/fr
 * Définir les champs de votre schéma et leurs attributs
 * Configurez les attributs requis pour les champs dans un schéma relationnel :
 
-   * **Clé de Principal**.
-   * **Descripteur de version**, qui doit être configuré sous la forme d’un numéro séquentiel (type de champ Entier) ou d’un type de champ Date et heure. Lorsque vous utilisez un type de champ DateTime, le descripteur de version définit la date et l’heure d’une modification des données, par exemple pour contenir une date et une heure de la dernière modification.
-   * **descripteur d’horodatage** (pour les données de série temporelle), qui définit l’horodatage non modifiable au moment où un événement est capturé. Le descripteur d’horodatage n’est pas obligatoire pour un schéma relationnel basé sur des enregistrements.
+  * **Clé de Principal**.
+  * **Descripteur de version**, qui doit être configuré sous la forme d’un numéro séquentiel (type de champ Entier) ou d’un type de champ Date et heure. Lorsque vous utilisez un type de champ DateTime, le descripteur de version définit la date et l’heure d’une modification des données, par exemple pour contenir une date et une heure de la dernière modification.
+  * **descripteur d’horodatage** (pour les données de série temporelle), qui définit l’horodatage non modifiable au moment où un événement est capturé. Le descripteur d’horodatage n’est pas obligatoire pour un schéma relationnel basé sur des enregistrements.
 
 
 
@@ -67,9 +59,9 @@ Pour configurer le connecteur source vers les solutions natives d’entrepôt de
 
 Pour l’authentification par rapport à la solution native d’entrepôt de données prise en charge, consultez la documentation Experience Platform appropriée :
 
-* [Azure Databricks](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/databases/databricks)
-* [Google BigQuery](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/databases/bigquery)
-* [Snowflake](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/databases/snowflake)
+* [Azure Databricks](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks)
+* [Google BigQuery](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/bigquery)
+* [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake)
 
 
 ### Sélectionner les données
@@ -105,5 +97,5 @@ Une fois la configuration du connecteur source terminée, un flux de données es
 >[!MORELIKETHIS]
 >
 >Guide de démarrage rapide de [Data Mirror : mise en miroir et utilisation des données relationnelles](relational.md)
->[Data Mirror (documentation Experience Platform)](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-mirror/overview)
+>[Data Mirror (documentation Experience Platform)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview)
 >[Schémas relationnels (documentation Experience Platform)](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/schema/relational)

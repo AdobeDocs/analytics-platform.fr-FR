@@ -7,18 +7,11 @@ role: User
 exl-id: a357facb-d536-4c81-847c-a6f0d3f041e7
 autotag-review: '2026-05-19T09:42:01.927Z'
 TQID: 'https://experienceleague.adobe.com/ENlUXhLFg20Jrf28iUbb82Ux2WHJw7uh-t4J3zlmaqE'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-subfeature_v2:
-  - id: f24857a4-4b64-4b25-b237-d43026362144
-  - id: ddf59f64-0e46-4986-a525-056acc143c70
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: f24857a4-4b64-4b25-b237-d43026362144id: ddf59f64-0e46-4986-a525-056acc143c70
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 1332
@@ -56,13 +49,13 @@ Pour la plupart des visualisations Customer Journey Analytics, Power BI Desktop 
 | ![ChiffresTexte](/help/assets/icons/TextNumbered.svg) | [Table de cohorte](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) |  |
 | ![Combo](/help/assets/icons/ComboChart.svg) | [Combo](/help/analysis-workspace/visualizations/combo-charts.md) | [Graphique en courbes et histogrammes empilés, et Graphique en courbes et histogramme organisé en grappes](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#combo-charts) |
 | ![Graphique à anneaux](/help/assets/icons/GraphDonut.svg) | [Anneau](/help/analysis-workspace/visualizations/donut.md) | [Graphique en anneau](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#doughnut-charts) |
-| ![Entonnoir de conversion](/help/assets/icons/ConversionFunnel.svg) | [Abandon](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | [&#128279;](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#funnel-charts). |
+| ![Entonnoir de conversion](/help/assets/icons/ConversionFunnel.svg) | [Abandon](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | [](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#funnel-charts). |
 | ![GraphPathing](/help/assets/icons/GraphPathing.svg) | [Flux](/help/analysis-workspace/visualizations/c-flow/flow.md) | Arborescence de décomposition ? |
 | ![ViewTable](/help/assets/icons/ViewTable.svg)</p> | [Tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | [Tableau](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#tables) et [Matrice](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#matrix) |
 | ![GraphHistogram](/help/assets/icons/Histogram.svg) | [Histogramme](/help/analysis-workspace/visualizations/histogram.md) |  |
 | ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) | [Barre horizontale](/help/analysis-workspace/visualizations/horizontal-bar.md) | [Graphique à barres groupées](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#bar-and-column-charts) |
 | ![GraphBarHorizontalStacked](/help/assets/icons/GraphBarHorizontalStacked.svg) | [Barres empilées horizontales](/help/analysis-workspace/visualizations/horizontal-bar.md) | [Graphique à barres empilées et Graphique à barres empilées 100 %](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#bar-and-column-charts) |
-| ![Branch3](/help/assets/icons/Branch3.svg) | [Zone de travail de parcours](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) | [&#x200B; Arborescence de décomposition &#x200B;](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#decomposition-tree) |
+| ![Branch3](/help/assets/icons/Branch3.svg) | [Zone de travail de parcours](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) | [ Arborescence de décomposition ](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#decomposition-tree) |
 | ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) | [Résumé des mesures clés](/help/analysis-workspace/visualizations/key-metric.md) |  |
 | ![GraphTrend](/help/assets/icons/GraphTrend.svg) | [Ligne](/help/analysis-workspace/visualizations/line.md) | [Graphique linéaire](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#line-charts) |
 | ![Nuage de points](/help/assets/icons/GraphScatter.svg) | [Dispersion](/help/analysis-workspace/visualizations/scatterplot.md) | [Graphique de dispersion](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#scatter) |
@@ -78,11 +71,11 @@ Pour la plupart des visualisations Customer Journey Analytics, Power BI Desktop 
 
 Power BI prend en charge un [mode d’exploration](https://learn.microsoft.com/en-us/power-bi/consumer/end-user-drill) pour explorer les détails détaillés de certaines visualisations. Dans l’exemple ci-dessous, vous analysez le chiffre d’affaires des achats pour les catégories de produits. Dans le menu contextuel d’une barre représentant une catégorie de produits, vous pouvez sélectionner **[!UICONTROL Analyser en profondeur]**.
 
-![Zoom &#x200B;](../assets/uc15-powerbi-drilldown.png)
+![Zoom ](../assets/uc15-powerbi-drilldown.png)
 
 L’analyse en profondeur met à jour la visualisation avec le chiffre d’affaires des achats des produits de la catégorie de produits sélectionnée.
 
-![Exploration vers le haut de &#x200B;](../assets/uc15-powerbi-drillup.png)
+![Exploration vers le haut de ](../assets/uc15-powerbi-drillup.png)
 
 L’analyse aboutit à la requête SQL suivante qui utilise une clause `WHERE` :
 
@@ -204,7 +197,7 @@ Pour la plupart des visualisations Customer Journey Analytics, Looker offre des 
 | ![Combo](/help/assets/icons/ComboChart.svg) | [Combo](/help/analysis-workspace/visualizations/combo-charts.md) | [Personnalisation des visualisations](https://cloud.google.com/looker/docs/creating-visualizations#customizing_visualizations_with_chart_settings) |
 | ![Graphique à anneaux](/help/assets/icons/GraphDonut.svg) | [Anneau](/help/analysis-workspace/visualizations/donut.md) | [Anneau](https://cloud.google.com/looker/docs/donut-multiples-options) |
 | ![Entonnoir de conversion](/help/assets/icons/ConversionFunnel.svg) | [Abandon](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | [Entonnoir](https://cloud.google.com/looker/docs/funnel-options) |
-| ![GraphPathing](/help/assets/icons/GraphPathing.svg) | [Flux](/help/analysis-workspace/visualizations/c-flow/flow.md) | [&#x200B; Sankey &#x200B;](https://cloud.google.com/looker/docs/sankey) |
+| ![GraphPathing](/help/assets/icons/GraphPathing.svg) | [Flux](/help/analysis-workspace/visualizations/c-flow/flow.md) | [ Sankey ](https://cloud.google.com/looker/docs/sankey) |
 | ![ViewTable](/help/assets/icons/ViewTable.svg)</p> | [Tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | [Tableau](https://cloud.google.com/looker/docs/table-options) |
 | ![GraphHistogram](/help/assets/icons/Histogram.svg) | [Histogramme](/help/analysis-workspace/visualizations/histogram.md) | |
 | ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) | [Barre horizontale](/help/analysis-workspace/visualizations/horizontal-bar.md) | [Graphique à barres](https://cloud.google.com/looker/docs/bar-options) |
@@ -218,7 +211,7 @@ Pour la plupart des visualisations Customer Journey Analytics, Looker offre des 
 | ![123](/help/assets/icons/123.svg)</p> | [Numéro de résumé](/help/analysis-workspace/visualizations/summary-number-change.md) | [Valeur unique](https://cloud.google.com/looker/docs/single-value-options) |
 | ![Texte](/help/assets/icons/Text.svg) | [Texte](/help/analysis-workspace/visualizations/text.md) | [Valeur unique](https://cloud.google.com/looker/docs/single-value-options) |
 | ![ModernGridView](/help/assets/icons/ModernGridView.svg) | [Plan en arborescence](/help/analysis-workspace/visualizations/treemap.md) | [Plan en arborescence](https://cloud.google.com/looker/docs/treemap) |
-| ![Type](/help/assets/icons/TwoDots.svg) | [&#x200B; Diagramme de Venn &#x200B;](/help/analysis-workspace/visualizations/venn.md) | [&#x200B; Diagramme de Venn &#x200B;](https://cloud.google.com/looker/docs/venn) |
+| ![Type](/help/assets/icons/TwoDots.svg) | [ Diagramme de Venn ](/help/analysis-workspace/visualizations/venn.md) | [ Diagramme de Venn ](https://cloud.google.com/looker/docs/venn) |
 
 >[!TAB Notebook Jupyter]
 
