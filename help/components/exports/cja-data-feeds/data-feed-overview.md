@@ -19,10 +19,10 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: de8748a1dddbc0ddaadca4c805c9b4aba99a4267
+source-git-commit: 4872f0078640fbd358a60a6d7baeb3ea575d3559
 workflow-type: tm+mt
-source-wordcount: 230
-ht-degree: 20%
+source-wordcount: 252
+ht-degree: 18%
 
 ---
 
@@ -31,6 +31,8 @@ ht-degree: 20%
 {{release-limited-testing}}
 
 Les flux de données sont un moyen puissant d’extraire des données brutes de Customer Journey Analytics. Vous pouvez utiliser ces données brutes sur d’autres plateformes en dehors d’Adobe à la discrétion de votre entreprise. Les données sont diffusées sous la forme de lots horaires à la fin de chaque heure ou sous la forme de lots quotidiens à la fin de chaque jour.
+
+Pour une comparaison des flux de données par rapport à d’autres méthodes d’exportation Customer Journey Analytics, telles que l’exportation de table complète, voir [Comparaison des produits Analytics](/help/getting-started/analytics-product-comparison.md).
 
 ## Conditions préalables
 

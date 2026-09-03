@@ -27,7 +27,7 @@ topic_v2:
 source-git-commit: 28959f1ea858dee686e6d13025621c4a6164c319
 workflow-type: tm+mt
 source-wordcount: 3152
-ht-degree: 74%
+ht-degree: 77%
 
 ---
 
@@ -67,7 +67,7 @@ Pour configurer une vue de données nouvelle ou existante :
 >[!CONTEXTUALHELP]
 >id="dataview_externalid"
 >title="Identifiant externe"
->abstract="La modification de l’ID externe a une incidence sur l’affichage du nom de la vue de données dans les sources externes, telles que les outils de Business Intelligence."
+>abstract="La modification de l’ID externe a une incidence sur la manière dont le nom de la vue de données apparaît dans des sources externes, telles que les outils de Business Intelligence."
 
 
 Fournit des paramètres globaux pour la vue de données.
@@ -87,7 +87,7 @@ Fournit des paramètres globaux pour la vue de données.
 >[!CONTEXTUALHELP]
 >id="dataview_dataviewsinadobejourneyoptimizer"
 >title="Vues de données dans Journey Optimizer"
->abstract="Customer Journey Analytics requiert une connexion et une vue de données compatibles avec Adobe Journey Optimizer. Par défaut, le système crée une connexion et une vue de données. Vous pouvez également activer cette option pour la définir comme vue de données par défaut pour la création de rapports Adobe Journey Optimizer, ce qui ajoute les composants nécessaires à la vue de données et aux jeux de données de la connexion."
+>abstract="Customer Journey Analytics nécessite une connexion et une vue de données compatibles avec Adobe Journey Optimizer. Par défaut, le système crée une connexion et une vue de données. Vous pouvez également activer cette option pour la définir comme vue de données par défaut pour la création de rapports Adobe Journey Optimizer, ce qui ajoute les composants nécessaires à la vue de données et aux jeux de données de la connexion."
 >additional-url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/integrations/ajo#connection" text="Les composants et les jeux de données ajoutés."
 
 
@@ -312,10 +312,10 @@ La section **[!UICONTROL Composants inclus]** contient la liste des **[!UICONTRO
 
   Dans la boîte de dialogue **[!UICONTROL Filtrer par]**, vous pouvez filtrer selon les catégories suivantes :
 
-   * **[!UICONTROL Type de données]** - Vous pouvez sélectionner un ou plusieurs des types de données suivants : [!UICONTROL Chaîne], [!UICONTROL Entier], [!UICONTROL Court], [!UICONTROL Booléen], [!UICONTROL Double], [!UICONTROL Octet], [!UICONTROL Long], [!UICONTROL Date] ou [!UICONTROL Date-heure].
-   * **[!UICONTROL Jeux de données]** - Sélectionnez un ou plusieurs jeux de données.
-   * **[!UICONTROL Gouvernance des données]** : sélectionnez un ou plusieurs libellés parmi les sous-catégories [!UICONTROL Libellés personnalisés], [!UICONTROL Libellés de contrat], [!UICONTROL Libellés d’identité], [!UICONTROL Libellés de sensibilité], [!UICONTROL Écosystème de partenaires] ou [!UICONTROL Politiques].
-   * **[!UICONTROL Autre]** - Sélectionnez une ou plusieurs des options [!UICONTROL Contient des données], [!UICONTROL Est une identité] ou [!UICONTROL N’est pas obsolète].
+  * **[!UICONTROL Type de données]** - Vous pouvez sélectionner un ou plusieurs des types de données suivants : [!UICONTROL Chaîne], [!UICONTROL Entier], [!UICONTROL Court], [!UICONTROL Booléen], [!UICONTROL Double], [!UICONTROL Octet], [!UICONTROL Long], [!UICONTROL Date] ou [!UICONTROL Date-heure].
+  * **[!UICONTROL Jeux de données]** - Sélectionnez un ou plusieurs jeux de données.
+  * **[!UICONTROL Gouvernance des données]** : sélectionnez un ou plusieurs libellés parmi les sous-catégories [!UICONTROL Libellés personnalisés], [!UICONTROL Libellés de contrat], [!UICONTROL Libellés d’identité], [!UICONTROL Libellés de sensibilité], [!UICONTROL Écosystème de partenaires] ou [!UICONTROL Politiques].
+  * **[!UICONTROL Autre]** - Sélectionnez une ou plusieurs des options [!UICONTROL Contient des données], [!UICONTROL Est une identité] ou [!UICONTROL N’est pas obsolète].
 
   Sélectionnez **[!UICONTROL Appliquer]** pour appliquer les filtres.
 

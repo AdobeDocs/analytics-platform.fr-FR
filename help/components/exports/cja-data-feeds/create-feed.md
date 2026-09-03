@@ -18,10 +18,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: 8a5568b3b6136bc3f8b507f551fbb6d169e4b88a
+source-git-commit: f5a7272f80aaba167974f2218bc84408d47f62d4
 workflow-type: tm+mt
-source-wordcount: 4088
-ht-degree: 20%
+source-wordcount: 4217
+ht-degree: 21%
 
 ---
 
@@ -77,6 +77,15 @@ Avant de créer un flux de données, il est important de comprendre les bases de
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_datafeed_required_dimensions"
+>title="Dimensions requises"
+>abstract="Chaque flux de données doit inclure certaines dimensions, identifiées par un libellé **Obligatoire** en regard du nom de la dimension. Ces dimensions fournissent la structure minimale nécessaire à l’analyse au niveau de l’événement."
+
+<!-- markdownlint-enable MD034 -->
+
 1. Connectez-vous à [experiencecloud.adobe.com](https://experiencecloud.adobe.com) à l’aide de vos identifiants Adobe ID.
 
 1. Sélectionnez [!UICONTROL **Customer Journey Analytics**] dans le sélecteur d’applications ![App](/help/assets/icons/Apps.svg) en haut à droite de l’interface.
@@ -113,6 +122,14 @@ Avant de créer un flux de données, il est important de comprendre les bases de
    Lorsque vous appliquez plusieurs segments, ils sont associés à un opérateur AND. Pour joindre des segments avec un opérateur OR, vous devez d’abord créer un segment dans le créateur de segments, puis appliquer le nouveau segment au flux de données.
 
    Les segments que vous appliquez ici s’ajoutent aux segments qui peuvent déjà être appliqués dans votre vue de données.
+
+1. (Facultatif) Dans le rail de gauche, utilisez le champ **rechercher** pour localiser des composants spécifiques. Vous pouvez également sélectionner l’icône **Trier** ![Icône Trier les composants](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg) pour appliquer l’une des options de tri suivantes :
+
+   | Option | Fonction |
+   | --------- | ---------- |
+   | [!UICONTROL **Recommandé**] | Trie les composants avec ceux qui sont recommandés en haut de la liste. Les composants utilisés le plus souvent et le plus récemment par vous ou par d’autres membres de votre organisation sont répertoriés plus haut dans la liste. |
+   | [!UICONTROL **Alphabétique**] | Trie les composants par ordre alphabétique. |
+   | [!UICONTROL **Catégorique**] | Trie les composants similaires à [!UICONTROL **Recommandé**], à la différence que les mesures calculées et les mesures standard sont regroupées séparément au lieu d’être mélangées. |
 
 1. Ajoutez des composants à la configuration des flux de données. Le rail de gauche affiche uniquement les composants valides pour les flux de données.
 
