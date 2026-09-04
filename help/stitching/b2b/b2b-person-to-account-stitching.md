@@ -19,7 +19,7 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 1ef12bfccbecc74a0b437c9c582fe0f6c1c1e9e5
+source-git-commit: e3936b74ba4b4cf23e1b7235e545091a8cb546ed
 workflow-type: tm+mt
 source-wordcount: 2116
 ht-degree: 15%
@@ -91,7 +91,7 @@ Ce jeu de données de mappage personne à compte est élevé à l’aide d’un 
 
 Le groupement basé sur les graphiques est également utilisé pour élever les ID de personne dans le jeu de données d’événement d’expérience. Par exemple, consultez la valeur mise à jour pour **&#x200B;**.
 
-Le groupement basé sur les graphiques est également utilisé pour élever les ID de personne dans le jeu de données d’événement d’expérience. Par exemple, vous configurez le champ identifiant persistant (ECID) pour qu’il soit utilisé comme identifiant persistant de personne lorsque vous [activez le groupement sur le jeu de données](#enable-b2b-stitching-on-event-datasets). En fonction du `5678` comme valeur ECID et du `emily@adobe.com` comme valeur E-mail, `emily@adobe.com` est défini comme ID de personne élevé sur l’événement associé.
+Le groupement basé sur les graphiques est également utilisé pour élever les ID de personne dans le jeu de données d’événement d’expérience. Par exemple, vous configurez le champ identifiant persistant (ECID) pour qu’il soit utilisé comme identifiant persistant de personne lorsque vous [activez le groupement sur le jeu de données](#enable-b2b-person-to-account-stitching-on-event-datasets). En fonction du `5678` comme valeur ECID et du `emily@adobe.com` comme valeur E-mail, `emily@adobe.com` est défini comme ID de personne élevé sur l’événement associé.
 
 | Date et heure | Identifiant persistant | ID de compte d’origine | ID de personne d’origine | ID de personne élevé |
 |--|--|---|---|---|

@@ -22,10 +22,10 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 537fc30db0f6e6bddc54df7bbcc04d802226958f
+source-git-commit: e3936b74ba4b4cf23e1b7235e545091a8cb546ed
 workflow-type: tm+mt
-source-wordcount: 1365
-ht-degree: 48%
+source-wordcount: 1643
+ht-degree: 41%
 
 ---
 
@@ -99,11 +99,15 @@ Les détails suivants s’affichent.
 | **[!UICONTROL Attributs d’expérience]** : les [attributs](/help/content-analytics/report/components.md#experience-attributes) de l’expérience. | **[!UICONTROL Attributs de ressources]** : les [attributs](/help/content-analytics/report/components.md#asset-attributes) de la ressource. |
 
 
-## Modèle
+## Modèles
+
+Content Analytics propose deux modèles de projet dans Workspace pour créer rapidement un projet.
+
+### Modèle Content Analytics
 
 Un modèle [template](/help/analysis-workspace/templates/use-templates.md) Content Analytics est disponible pour vous aider à identifier le contenu et les attributs de contenu qui présentent les meilleures performances. Le modèle fait partie du [cas d’utilisation du canal web et de l’engagement](/help/analysis-workspace/templates/use-templates.md#web-engagement) et décrit les performances de votre contenu à un niveau granulaire. Vous pouvez examiner les performances de ressources individuelles ou d’attributs spécifiques.
 
-En fonction de ce que vous apprendrez, vous pourrez effectuer un certain nombre d’opérations, comme promouvoir des ressources hautement performantes sur votre page d’accueil, personnaliser le contenu de segments spécifiques afin d’inclure des attributs hautement performants ou retirer du contenu qui commence à devenir obsolète.
+En fonction de ce que vous apprendrez, vous pourrez effectuer un certain nombre d’opérations, Par exemple, promouvoir des ressources performantes sur votre page d’accueil, personnaliser le contenu pour des segments spécifiques afin d’inclure des attributs performants ou retirer du contenu qui commence à devenir obsolète.
 
 Pour utiliser le modèle :
 
@@ -159,7 +163,7 @@ Content Analytics utilise l’IA et GenAI pour affecter automatiquement des mét
   * **Tendance des attributs**
     Visualisation [en ligne](/help/analysis-workspace/visualizations/line.md) montrant la tendance de l’attribut de la ressource de conversion la plus élevée sélectionnée.
   * **Couleur de premier plan des ressources**
-    Exemple [tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) qui compare les performances des éléments d’une seule catégorie d’attributs de ressource : Couleurs de premier plan. Vous pouvez remplacer cet attribut de ressource par d’autres dimensions de catégorie d’attributs de ressource.
+    Exemple [tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) qui compare les performances des éléments d’une seule catégorie d’attributs de ressource : Couleurs de premier plan. Vous pouvez remplacer cet attribut d’actif par d’autres dimensions de catégorie d’attributs d’actif.
 
 * **Quels sont les attributs d’expérience qui contribuent aux conversions ?**
 
@@ -195,6 +199,21 @@ Ce tableau à structure libre détaille l’emplacement des ressources les plus 
 
     Vous pouvez également remplacer l’[!UICONTROL ID de perception de ressource] par l’[!UICONTROL ID de ressource] pour obtenir un enregistrement de l’emplacement où des URL d’images spécifiques sont référencées.
 
+
+### Modèle de Content Analytics de média payant
+
+Un modèle de Content Analytics de médias payants [modèle](/help/analysis-workspace/templates/use-templates.md) est disponible pour vous aider à identifier le contenu de médias payants et les attributs de contenu qui ont les meilleures performances. Le modèle fait partie du [cas d’utilisation du canal web et de l’engagement](/help/analysis-workspace/templates/use-templates.md#web-engagement) et vous aide à comprendre comment votre contenu multimédia payant se comporte à un niveau granulaire. Vous pouvez consulter la portée, l’engagement, les dépenses et l’efficacité des médias payants sur les réseaux, les comptes, les campagnes, les expériences et les ressources. Les mesures et dimensions de ce panneau restent intentionnellement dans le grain du résumé des ressources de médias payantes. Ne combinez pas les jeux de données de résumé des panneaux de ce modèle avec les données d’événement.
+
+En fonction de ce que vous avez appris, vous pouvez réaliser un certain nombre de choses, comme vous recentrer sur la manière dont vous dépensez de l’argent sur vos canaux médias payants, dont vous dépensez plus d’argent sur des campagnes peu performantes ou dont vous dépensez plus d’argent sur des campagnes avec des ressources hautement performantes.
+
+Pour utiliser le modèle :
+
+1. Sélectionnez **[!UICONTROL Workspace]** dans le menu principal.
+1. Vérifiez que vous avez sélectionné une vue de données déjà configurée pour Content Analytics.
+1. Recherchez ou utilisez des segments (**[!UICONTROL Web]** pour **[!UICONTROL Canal]** et **[!UICONTROL Engagement]** pour **[!UICONTROL Cas d’utilisation]**&#x200B;s) pour rechercher et sélectionner le modèle **[!UICONTROL Content Analytics de médias payants]**.
+1. Sélectionnez **[!UICONTROL Utiliser le modèle]**.
+
+Un projet **[!UICONTROL Content Analytics - Données récapitulatives de médias payants]** s’ouvre dans [Analysis Workspace](/help/analysis-workspace/home.md). Le projet se compose du **[!UICONTROL Paid Media Performance]** [panel](/help/analysis-workspace/c-panels/panels.md), avec des [tableaux à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) et [visualisations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md). Utilisez le panneau pour passer en revue la portée, l’engagement, les dépenses et l’efficacité des médias achetés sur les réseaux, les comptes, les campagnes, les expériences et les ressources. Les mesures et dimensions du panneau restent intentionnellement dans le grain résumé de la ressource multimédia payante ; ne combinez pas les jeux de données de résumé aux données d’événement.
 
 >[!MORELIKETHIS]
 >

@@ -26,10 +26,10 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: d9715c3da9893e1c47b702acb4daef5e666bedd7
+source-git-commit: e3936b74ba4b4cf23e1b7235e545091a8cb546ed
 workflow-type: tm+mt
-source-wordcount: 906
-ht-degree: 55%
+source-wordcount: 1019
+ht-degree: 43%
 
 ---
 
@@ -40,7 +40,7 @@ Content Analytics aide les spécialistes marketing à comprendre comment le con
 
 Content Analytics utilise un **service de fonctionnalité** optimisé par l’IA et le machine learning pour ventiler le contenu en composants et attributs. En créant un profil de métadonnées structuré sur l’ensemble de votre contenu, vous pouvez analyser le contenu et les attributs de ce contenu qui génèrent les résultats commerciaux.
 
-Outre la création de ce profil de métadonnées structuré, Content Analytics fournit un **service d’identités** qui identifie les ressources et les expériences à l’aide d’un identifiant unique. Le service d’identités peut reconnaître l’apparition d’une ressource identique à plusieurs endroits. Dans ce cas, les deux instances de ressources sont traitées de la même manière, ce qui permet d’obtenir une vue plus complète de l’utilisation et de la consommation du contenu.
+Outre la création de ce profil de métadonnées structuré, Content Analytics fournit un **service d’identités** qui identifie les ressources et les expériences à l’aide d’un identifiant unique. Le service d’identités peut reconnaître l’apparition d’une ressource identique à plusieurs endroits. Dans ce cas, les différentes instances de cette ressource sont traitées comme une seule et même ressource, ce qui permet d’obtenir une vue plus globale de l’utilisation et de la consommation du contenu.
 
 ## Valeur
 
@@ -48,8 +48,8 @@ Content Analytics apporte une valeur ajoutée réelle à un niveau croissant :
 
 1. **Utilisation** de contenu : avec Content Analytics, vous obtenez des informations sur les ressources qui reçoivent des impressions et sur l’emplacement où elles les reçoivent. Ces informations vous aident à déterminer si les ressources sont sous-utilisées ou surutilisées sur vos propriétés web et mobiles.
 1. **Engagements** de contenu : Content Analytics peut fournir des informations d’engagement, telles que le taux moyen de clics publicitaires pour les ressources présentant certains attributs. Ces informations vous aident à déterminer si des types d’expériences spécifiques sont toujours efficaces.
-1. Parcours de contenu : en outre, lorsque vous les combinez à toutes les autres données disponibles dans Experience Platform, vous pouvez obtenir des informations supplémentaires sur vos parcours de contenu ; par exemple, si un contenu spécifique entraîne des conversions, en plus de l’engagement. Par exemple, si un contenu spécifique entraîne des conversions, en plus de l’engagement. Grâce à ces connaissances, vous pouvez déterminer le retour sur investissement des types de contenu.
-1. **Personnalisation** de contenu : en définitive, Content Analytics vous permet d’agir sur vos informations et d’utiliser ces informations pour déterminer comment dépenser l’argent sur le contenu. Par exemple, dois-je envoyer des types spécifiques de contenu à des audiences spécifiques ? Quel contenu me fournit des opportunités de personnalisation élevée ?
+1. **parcours de contenu** : en outre, lorsque vous les combinez à toutes les autres données disponibles dans Experience Platform, vous pouvez obtenir des informations supplémentaires sur vos parcours de contenu ; par exemple, si un contenu spécifique entraîne des conversions, en plus de l’engagement. Par exemple, si un contenu spécifique entraîne des conversions, en plus de l’engagement. Grâce à ces connaissances, vous pouvez déterminer le retour sur investissement des types de contenu.
+1. **Personnalisation** de contenu : en définitive, Content Analytics vous permet d’agir sur vos informations et d’utiliser ces informations pour déterminer comment dépenser l’argent sur le contenu. Par exemple, dois-je envoyer des types spécifiques de contenu à des audiences spécifiques ? Quel contenu m’offre d’importantes possibilités de personnalisation ?
 
 ## Terminologie
 
@@ -58,24 +58,32 @@ Content Analytics utilise les termes clés suivants :
 ![Ressources et expériences](/help/content-analytics/assets/content-analytics-experience-asset.png)
 
 * **Expérience** : une expérience est tout le texte d’une page web qui est reproductible à l’aide de l’URL que l’utilisateur initial a utilisée pour visiter la page web. Ou la combinaison de texte, de ressources et d’actions « Cliquer pour agir » dans une application mobile. Chaque expérience se voit attribuer un identifiant unique.
-* **Ressource** : une ressource est un élément de contenu individuel et unique, comme une image. Chaque ressource obtient également un identifiant unique et un ID de perception. Un ID de perception est un identifiant partagé avec des ressources visuellement identiques. Les identifiants perceptuels permettent de dédupliquer des ressources qui peuvent avoir une URL de ressource différente et donc un identifiant de ressource différent, mais qui sont perceptuellement identiques.
+* **Ressource** : une ressource est un élément de contenu individuel et unique, comme une image. Chaque ressource obtient également un identifiant unique et un ID perceptif. Un ID perceptif est un identifiant partagé avec des ressources visuellement identiques. Les identifiants perceptuels permettent de dédupliquer des ressources qui peuvent avoir une URL de ressource différente et donc un identifiant de ressource différent, mais qui sont perceptuellement identiques.
 * **Attribut** : un attribut est un élément de métadonnées descriptif associé à une expérience ou à une ressource. Voici quelques exemples d’un attribut : style de photographie, lisibilité, stratégie de persuasion, couleur de l’objet, couleur de l’arrière-plan.
 
 ## Fonctionnement
 
-Content Analytics utilise des données d’affichage d’images web et mobiles des jeux de données d’événement Experience Platform pour [collecter des données d’événement de contenu](config/datacollection.md). Ces événements d’expérience de contenu nécessitent que les données soient collectées avec Experience Platform Edge Network (Web SDK, Mobile SDK, API du serveur). Les données comportementales peuvent être collectées avec Web SDK, Mobile SDK ou le connecteur Source Analytics.
+Content Analytics utilise des données d’affichage d’images web et mobiles ainsi que des données de médias achetés à partir de jeux de données d’événement Experience Platform pour [collecter des données d’événement de contenu](config/datacollection.md). Ces événements d’expérience de contenu nécessitent que les données soient collectées avec Experience Platform Edge Network (Web SDK, Mobile SDK, API du serveur) ou par l’intermédiaire des connecteurs source Experience Platform.
 
-![Content Analytics - Fonctionnement](assets/aca-overview-new.gif)
+* Les données comportementales peuvent être collectées avec Web SDK, Mobile SDK ou le connecteur Source Analytics.
+* Pour les médias achetés, les données d’expérience sont reconstruites à partir des sources de données d’événement de médias achetés collectées dans Experience Platform par le biais des connecteurs de sources de médias achetés disponibles.
+
+![Content Analytics - Fonctionnement](assets/aca-overview-new-paid-media.gif)
+
 
 1. Lorsqu’un utilisateur visite un site ou une application, [configurée pour Content Analytics](config/configuration.md), le SDK web ou mobile d’Experience Platform enregistre les impressions et les interactions avec le contenu.
-1. Le service d’identité et de fonctionnalité traite ces interactions. Ce processus consiste en un service de récupération qui revisite les versions publiques des URL configurées qui définissent les interactions. Pour toutes ces URL récupérées, le service d’identités identifie de manière unique les expériences et les ressources. Le service de fonctionnalité applique des services d’IA/ML pour découvrir les métadonnées et attributs d’expérience et de ressource.
-1. Les résultats de ces services ([composants, attributs et identités](/help/content-analytics/report/components.md)) sont utilisés pour mettre à jour les jeux de données Content Analytics spécifiques dans Experience Platform.
+Les données de médias payants sont collectées quotidiennement dans des jeux de données à partir des connecteurs sources (vers Google et Meta, par exemple). Content Analytics surveille les [&#x200B; jeux de données de médias achetés configurés &#x200B;](config/configuration.md) à la recherche de nouvelles ressources et expériences non proposées et utilise les métadonnées des jeux de données publicitaires pour composer l’expérience HTML. Cette expérience HTML est combinée avec les détails de la ressource en tant qu’expérience de média payant.
+
+1. Le service d’identité et de fonctionnalité traite ces interactions (à partir du web et des appareils mobiles) et ces expériences (à partir des médias achetés). Ce processus consiste en un service de récupération qui revisite les versions publiques des URL configurées qui définissent les interactions et l’HTML qui définit l’expérience. Pour toutes ces URL récupérées et HTML, le service d’identités identifie de manière unique les expériences et les ressources. Le service de fonctionnalité applique des services d’IA/ML pour découvrir les métadonnées et attributs d’expérience et de ressource.
+
+1. Les résultats des services d’identité et de fonctionnalité ([composants, attributs et identités](/help/content-analytics/report/components.md)) sont utilisés pour mettre à jour les jeux de données Content Analytics spécifiques pertinents dans Experience Platform.
+
 1. Vous pouvez utiliser les données Content Analytics, ainsi que les données comportementales et d’autres données de recherche, dans une configuration Customer Journey Analytics ([Connexion](/help/connections/overview.md), [Vue de données](/help/data-views/data-views.md) et [Workspace](/help/analysis-workspace/home.md)). Cette configuration fournit la base des informations uniques au niveau de la macro sur votre contenu. <br/>Vous pouvez rapidement commencer vos rapports et analyses Content Analytics à l’aide du modèle [Content Analytics](/help/content-analytics/report/report.md#template).
 
 
 >[!NOTE]
 >
->Content Analytics exploite les services d’IA et de ML qui peuvent produire des résultats inexacts ou qui induisent en erreur. Par conséquent, examinez attentivement et validez les résultats générés par l’IA ou le ML.
+>Content Analytics exploite les services d’IA et de ML qui peuvent produire des résultats inexacts ou qui induisent en erreur. Par conséquent, faites preuve de discernement lors de l’examen et de la validation des résultats générés par l’IA ou le ML.
 >
 >Vous pouvez utiliser l’onglet **[!UICONTROL Commentaires]**, disponible à partir de ![InfoOutline](/help/assets/icons/InfoOutline.svg) sur l’interface principale, pour fournir des commentaires sur les sorties générées par l’IA ou le ML.
 >
