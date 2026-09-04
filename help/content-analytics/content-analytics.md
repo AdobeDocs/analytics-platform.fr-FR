@@ -6,11 +6,26 @@ feature: Content Analytics
 role: Admin, User
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
 TQID: https://experienceleague.adobe.com/x5FpRmZ-Wv6pPxYBEAyDzRqUSUpmwHFwbi55FwVKT5A
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: ad5685a0-8296-4a0c-814c-658c10b4af12id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: eb30f47f-d87a-400f-8f78-63ce7979ff56id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
+  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: e3936b74ba4b4cf23e1b7235e545091a8cb546ed
 workflow-type: tm+mt
 source-wordcount: 1019
@@ -57,7 +72,7 @@ Content Analytics utilise des données d’affichage d’images web et mobiles a
 
 
 1. Lorsqu’un utilisateur visite un site ou une application, [configurée pour Content Analytics](config/configuration.md), le SDK web ou mobile d’Experience Platform enregistre les impressions et les interactions avec le contenu.
-Les données de médias payants sont collectées quotidiennement dans des jeux de données à partir des connecteurs sources (vers Google et Meta, par exemple). Content Analytics surveille les [ jeux de données de médias achetés configurés ](config/configuration.md) à la recherche de nouvelles ressources et expériences non proposées et utilise les métadonnées des jeux de données publicitaires pour composer l’expérience HTML. Cette expérience HTML est combinée avec les détails de la ressource en tant qu’expérience de média payant.
+Les données de médias payants sont collectées quotidiennement dans des jeux de données à partir des connecteurs sources (vers Google et Meta, par exemple). Content Analytics surveille les [&#x200B; jeux de données de médias achetés configurés &#x200B;](config/configuration.md) à la recherche de nouvelles ressources et expériences non proposées et utilise les métadonnées des jeux de données publicitaires pour composer l’expérience HTML. Cette expérience HTML est combinée avec les détails de la ressource en tant qu’expérience de média payant.
 
 1. Le service d’identité et de fonctionnalité traite ces interactions (à partir du web et des appareils mobiles) et ces expériences (à partir des médias achetés). Ce processus consiste en un service de récupération qui revisite les versions publiques des URL configurées qui définissent les interactions et l’HTML qui définit l’expérience. Pour toutes ces URL récupérées et HTML, le service d’identités identifie de manière unique les expériences et les ressources. Le service de fonctionnalité applique des services d’IA/ML pour découvrir les métadonnées et attributs d’expérience et de ressource.
 

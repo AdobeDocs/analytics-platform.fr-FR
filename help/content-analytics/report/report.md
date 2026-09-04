@@ -6,11 +6,22 @@ feature: Content Analytics
 role: User
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
 TQID: https://experienceleague.adobe.com/IM7-a-jp-lLfuGKj-CM2McnFXcus2-x-ffLC8UUKAmY
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: ad5685a0-8296-4a0c-814c-658c10b4af12id: bc7a5a86-1a70-451f-985c-037b65f091d1id: d3c978ee-1ff0-4475-968a-721e2dd99ef1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: e3936b74ba4b4cf23e1b7235e545091a8cb546ed
 workflow-type: tm+mt
 source-wordcount: 1643
@@ -71,7 +82,7 @@ Des miniatures s’affichent lorsque vous pointez sur un point de données dans 
 
 Vous pouvez ouvrir une fenêtre contextuelle d’aperçu. Pour ce faire, procédez comme suit :
 
-* Sélectionnez ![ InfoOutline ](/help/assets/icons/InfoOutline.svg) dans un [tableau à structure libre](#freeform-table).
+* Sélectionnez ![&#x200B; InfoOutline &#x200B;](/help/assets/icons/InfoOutline.svg) dans un [tableau à structure libre](#freeform-table).
 * Sélectionnez une barre spécifique dans une visualisation [barre](#bar-and-horizontal-bar) ou [barre horizontale](#bar-and-horizontal-bar) ou un point de données dans une visualisation [nuage de points](#scatter).
 
 
@@ -199,7 +210,7 @@ Pour utiliser le modèle :
 
 1. Sélectionnez **[!UICONTROL Workspace]** dans le menu principal.
 1. Vérifiez que vous avez sélectionné une vue de données déjà configurée pour Content Analytics.
-1. Recherchez ou utilisez des segments (**[!UICONTROL Web]** pour **[!UICONTROL Canal]** et **[!UICONTROL Engagement]** pour **[!UICONTROL Cas d’utilisation]**s) pour rechercher et sélectionner le modèle **[!UICONTROL Content Analytics de médias payants]**.
+1. Recherchez ou utilisez des segments (**[!UICONTROL Web]** pour **[!UICONTROL Canal]** et **[!UICONTROL Engagement]** pour **[!UICONTROL Cas d’utilisation]**&#x200B;s) pour rechercher et sélectionner le modèle **[!UICONTROL Content Analytics de médias payants]**.
 1. Sélectionnez **[!UICONTROL Utiliser le modèle]**.
 
 Un projet **[!UICONTROL Content Analytics - Données récapitulatives de médias payants]** s’ouvre dans [Analysis Workspace](/help/analysis-workspace/home.md). Le projet se compose du **[!UICONTROL Paid Media Performance]** [panel](/help/analysis-workspace/c-panels/panels.md), avec des [tableaux à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) et [visualisations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md). Utilisez le panneau pour passer en revue la portée, l’engagement, les dépenses et l’efficacité des médias achetés sur les réseaux, les comptes, les campagnes, les expériences et les ressources. Les mesures et dimensions du panneau restent intentionnellement dans le grain résumé de la ressource multimédia payante ; ne combinez pas les jeux de données de résumé aux données d’événement.
