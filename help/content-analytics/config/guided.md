@@ -4,31 +4,19 @@ description: Découvrez comment configurer Content Analytics à l’aide d’une
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
+hold: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
 autotag-review: '2026-05-19T08:54:42.845Z'
 TQID: 'https://experienceleague.adobe.com/kEqjocKd5pNypjQlF70HeF1bKuoG9Qi-AT6nJiIwuV0'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c18d9e03-ac7d-4811-9c92-3e92ddc70ade
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 6c137d20d25cff6fe4630dedb33cfa8b88c121aa
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ad5685a0-8296-4a0c-814c-658c10b4af12
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c18d9e03-ac7d-4811-9c92-3e92ddc70adeid: d00e9f03-e50b-4162-b143-0c0817c937c2id: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 8490c4128ac906ba9421b91f9b9da433b91d084d
 workflow-type: tm+mt
-source-wordcount: 4186
-ht-degree: 64%
+source-wordcount: 4806
+ht-degree: 54%
 
 ---
 
@@ -67,17 +55,17 @@ Vous pouvez utiliser ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) pour
 
 À partir de l’écran **[!UICONTROL Configuration]** de Content Analytics, vous pouvez créer une configuration ou modifier une configuration existante.
 
-Pour créer une configuration, procédez comme suit :
+Pour créer une nouvelle configuration :
 
 * Sélectionnez **[!UICONTROL Créer une configuration]**. Cette action ouvre l’[assistant de configuration guidé](#guided-configuration-wizard).
 
-Pour modifier une configuration existante, procédez comme suit :
+Pour modifier une configuration existante :
 
 * Sélectionnez ![Plus](/help/assets/icons/More.svg), puis ![Modifier](/help/assets/icons/Edit.svg) **[!UICONTROL Modifier]** pour une configuration Content Analytics existante. Cette action ouvre l’[assistant de configuration guidé](#guided-configuration-wizard).
 
 ## Assistant de configuration guidé
 
-L’assistant de configuration guidé se compose de quatre sections ([Détails](#details), [Connexion](#connection), [Vue de données](#data-view) et [Canaux](#channels)), chacune vous invitant à fournir les informations requises pour configurer correctement Content Analytics. Renseignez chaque section avant de passer à la section suivante, car certains paramètres d’une section peuvent dépendre des valeurs de configuration des sections précédentes.
+L’assistant de configuration guidé comprend quatre sections : [Détails](#details), [Connexion](#connection), [Vue de données](#data-view) et [Canaux](#channels). Chaque section demande les détails requis pour configurer Content Analytics. Renseignez chaque section avant de passer à la suivante, car certains paramètres dépendent des valeurs de configuration dans les sections précédentes.
 
 ### Détails {#onboarding-details}
 
@@ -89,7 +77,7 @@ L’assistant de configuration guidé se compose de quatre sections ([Détails](
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_details_name_header"
 >title="Détails"
->abstract="Ce guide définit les exigences nécessaires à la configuration de l’analyse du contenu. Attribuez un nom à cette configuration et sélectionnez le sandbox contenant les données d’analyse de contenu à analyser."
+>abstract="Ce guide définit les exigences de configuration de Content Analytics. Attribuez un nom à cette configuration et sélectionnez le sandbox qui contient les données d’analyse de contenu que vous souhaitez analyser."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_connection_boldheader"
@@ -99,15 +87,15 @@ L’assistant de configuration guidé se compose de quatre sections ([Détails](
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_connection_header"
 >title="Connexion"
->abstract="Dans Customer Journey Analytics, sélectionnez une connexion existante avec laquelle fusionner vos données Content Analytics."
+>abstract="Sélectionnez une connexion existante à partir de Customer Journey Analytics avec laquelle fusionner vos données Content Analytics."
 
-Chaque configuration nécessite un nom unique. Par exemple : `Example Content Analytics configuration`. Le nom est requis pour enregistrer ou implémenter une configuration.
+Chaque configuration nécessite un nom unique. Par exemple : `Example Content Analytics configuration`. Le nom est requis pour enregistrer ou mettre en œuvre une configuration.
 
 Pour chaque configuration, vous devez également sélectionner le sandbox pour lequel vous souhaitez configurer Content Analytics.
 
 ![Détails de la configuration de Content Analytics](../assets/aca-configuration-details.png)
 
-* **[!UICONTROL Name]** : chaque configuration nécessite un nom unique. Par exemple : `Example Content Analytics configuration`. Le nom est requis pour enregistrer ou implémenter une configuration.
+* **[!UICONTROL Name]** : chaque configuration nécessite un nom unique. Par exemple : `Example Content Analytics configuration`. Le nom est requis pour enregistrer ou mettre en œuvre une configuration.
 
 * **[!UICONTROL Sandbox]** : la configuration nécessite un sandbox. Sélectionnez un sandbox dans la liste des sandbox auxquels vous avez accès et sur lesquels sont collectées les données que vous souhaitez utiliser pour Content Analytics.
 
@@ -135,12 +123,12 @@ Si vous avez déjà sélectionné une connexion, mais que vous souhaitez la modi
 >[!CONTEXTUALHELP]
 >id="ac_onboarding_dataview_button"
 >title="Vue de données"
->abstract="Pour la configuration de Content Analytics, vous devez sélectionner une vue de données existante. Vous pouvez ainsi fusionner vos données d’analyse de contenu avec d’autres données."
+>abstract="Pour la configuration de Content Analytics, vous devez sélectionner une vue de données existante. Vous pouvez ainsi fusionner vos données Content Analytics avec d’autres données."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header"
 >title="Vue de données"
->abstract="Dans Customer Journey Analytics, sélectionnez une vue de données existante avec laquelle fusionner vos données d’analyse de contenu."
+>abstract="Sélectionnez une vue de données existante dans Customer Journey Analytics avec laquelle fusionner vos données Content Analytics."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header_alt"
@@ -150,7 +138,7 @@ Si vous avez déjà sélectionné une connexion, mais que vous souhaitez la modi
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_change_dialog"
 >title="Nouvelle vue de données"
->abstract="Vous avez sélectionné une nouvelle vue de données pour cette configuration. La nouvelle vue de données sera mise à jour afin d’inclure les mesures et dimensions de Content Analytics. Ces mesures et dimensions seront supprimées de la vue de données sélectionnée à l’origine.<br/><br/>Si une autre connexion est associée à la nouvelle vue de données, la connexion est mise à jour pour inclure les jeux de données Content Analytics. Les jeux de données de l’analyse du contenu ne sont pas supprimés de la connexion sélectionnée à l’origine."
+>abstract="Vous avez sélectionné une nouvelle vue de données pour cette configuration. La nouvelle vue de données sera mise à jour afin d’inclure les mesures et dimensions de Content Analytics. Ces mesures et dimensions seront supprimées de la vue de données sélectionnée à l’origine.<br/><br/>Si une autre connexion est associée à la nouvelle vue de données, la connexion est mise à jour pour inclure les jeux de données Content Analytics. Les jeux de données Content Analytics ne sont pas supprimés de la connexion sélectionnée à l’origine."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_current_cleanup_labels_dialog"
@@ -171,12 +159,12 @@ Si vous avez déjà sélectionné une connexion, mais que vous souhaitez la modi
 >[!CONTEXTUALHELP]
 >id="ac_onboarding_dataviews_button"
 >title="Vue de données"
->abstract="Pour la configuration de Content Analytics, vous devez sélectionner une ou plusieurs vues de données. Vous pouvez ainsi fusionner vos données d’analyse de contenu avec d’autres données."
+>abstract="Pour la configuration de Content Analytics, vous devez sélectionner une ou plusieurs vues de données. Vous pouvez ainsi fusionner vos données Content Analytics avec d’autres données."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_header"
 >title="Vues des données"
->abstract="Dans Customer Journey Analytics, sélectionnez une ou plusieurs vues de données existantes avec lesquelles fusionner vos données Content Analytics."
+>abstract="Dans Customer Journey Analytics, sélectionnez une ou plusieurs vues de données existante avec laquelle vous souhaitez fusionner vos données Content Analytics."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_header_alt"
@@ -186,22 +174,22 @@ Si vous avez déjà sélectionné une connexion, mais que vous souhaitez la modi
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_new_dialog"
 >title="Vues de données sélectionnées"
->abstract="Vous avez modifié les vues de données sélectionnées pour cette configuration. Les vues de données sélectionnées seront mises à jour afin d’inclure les mesures et dimensions de Content Analytics. Ces mesures et dimensions seront supprimées des vues de données précédemment sélectionnées qui ne sont plus sélectionnées.<br/><br/>Si une autre connexion est associée aux vues de données sélectionnées, la connexion est mise à jour pour inclure les jeux de données Content Analytics. Les jeux de données de l’analyse du contenu ne sont pas supprimés de la connexion sélectionnée à l’origine.<br/><br/>Toutes les vues de données sélectionnées héritent des canaux qui font partie de cette configuration."
+>abstract="Vous avez modifié les vues de données sélectionnées pour cette configuration. Les vues de données sélectionnées seront mises à jour afin d’inclure les mesures et dimensions de Content Analytics. Ces mesures et dimensions seront supprimées des vues de données précédemment sélectionnées qui ne sont plus sélectionnées.<br/><br/>Si une autre connexion est associée aux vues de données sélectionnées, la connexion est mise à jour pour inclure les jeux de données Content Analytics. Les jeux de données Content Analytics ne sont pas supprimés de la connexion sélectionnée à l’origine.<br/><br/>Toutes les vues de données sélectionnées héritent des canaux qui font partie de cette configuration."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_change_dialog"
 >title="Vues de données sélectionnées"
->abstract="Vous avez modifié les vues de données sélectionnées pour cette configuration. Les vues de données sélectionnées seront mises à jour afin d’inclure les mesures et dimensions de Content Analytics. Ces mesures et dimensions seront supprimées des vues de données précédemment sélectionnées qui ne sont plus sélectionnées.<br/><br/>Si une autre connexion est associée aux vues de données sélectionnées, la connexion est mise à jour pour inclure les jeux de données Content Analytics. Les jeux de données de l’analyse du contenu ne sont pas supprimés de la connexion sélectionnée à l’origine.<br/><br/>Toutes les vues de données sélectionnées héritent des canaux qui font partie de cette configuration."
+>abstract="Vous avez modifié les vues de données sélectionnées pour cette configuration. Les vues de données sélectionnées seront mises à jour afin d’inclure les mesures et dimensions de Content Analytics. Ces mesures et dimensions seront supprimées des vues de données précédemment sélectionnées qui ne sont plus sélectionnées.<br/><br/>Si une autre connexion est associée aux vues de données sélectionnées, la connexion est mise à jour pour inclure les jeux de données Content Analytics. Les jeux de données Content Analytics ne sont pas supprimés de la connexion sélectionnée à l’origine.<br/><br/>Toutes les vues de données sélectionnées héritent des canaux qui font partie de cette configuration."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_current_cleanup_labels_dialog"
 >title="Vues de données sélectionnées"
->abstract="Vous avez modifié les vues de données sélectionnées pour cette configuration. Les vues de données sélectionnées seront mises à jour afin d’inclure les mesures et dimensions de Content Analytics. Ces mesures et dimensions seront supprimées des vues de données précédemment sélectionnées qui ne sont plus sélectionnées.<br/><br/>Si une autre connexion est associée aux vues de données sélectionnées, la connexion est mise à jour pour inclure les jeux de données Content Analytics. Les jeux de données de l’analyse du contenu ne sont pas supprimés de la connexion sélectionnée à l’origine.<br/><br/>Toutes les vues de données sélectionnées héritent des canaux qui font partie de cette configuration."
+>abstract="Vous avez modifié les vues de données sélectionnées pour cette configuration. Les vues de données sélectionnées seront mises à jour afin d’inclure les mesures et dimensions de Content Analytics. Ces mesures et dimensions seront supprimées des vues de données précédemment sélectionnées qui ne sont plus sélectionnées.<br/><br/>Si une autre connexion est associée aux vues de données sélectionnées, la connexion est mise à jour pour inclure les jeux de données Content Analytics. Les jeux de données Content Analytics ne sont pas supprimés de la connexion sélectionnée à l’origine.<br/><br/>Toutes les vues de données sélectionnées héritent des canaux qui font partie de cette configuration."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_prev_cleanup_labels_dialog"
 >title="Vues de données sélectionnées"
->abstract="Vous avez modifié les vues de données sélectionnées pour cette configuration. Les vues de données sélectionnées seront mises à jour afin d’inclure les mesures et dimensions de Content Analytics. Ces mesures et dimensions seront supprimées des vues de données précédemment sélectionnées qui ne sont plus sélectionnées.<br/><br/>Si une autre connexion est associée aux vues de données sélectionnées, la connexion est mise à jour pour inclure les jeux de données Content Analytics. Les jeux de données de l’analyse du contenu ne sont pas supprimés de la connexion sélectionnée à l’origine.<br/><br/>Toutes les vues de données sélectionnées héritent des canaux qui font partie de cette configuration."
+>abstract="Vous avez modifié les vues de données sélectionnées pour cette configuration. Les vues de données sélectionnées seront mises à jour afin d’inclure les mesures et dimensions de Content Analytics. Ces mesures et dimensions seront supprimées des vues de données précédemment sélectionnées qui ne sont plus sélectionnées.<br/><br/>Si une autre connexion est associée aux vues de données sélectionnées, la connexion est mise à jour pour inclure les jeux de données Content Analytics. Les jeux de données Content Analytics ne sont pas supprimés de la connexion sélectionnée à l’origine.<br/><br/>Toutes les vues de données sélectionnées héritent des canaux qui font partie de cette configuration."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_channels_button"
@@ -238,20 +226,22 @@ Les actions suivantes sont disponibles dans la boîte de dialogue **[!UICONTROL 
 
 ### Canaux
 
-Dans la section **[!UICONTROL Canaux]**, sélectionnez les canaux que vous souhaitez activer pour Content Analytics. Vous pouvez choisir entre **[!UICONTROL Mobile]** et **[!UICONTROL Web]**.
+Dans la section **[!UICONTROL Canaux]**, sélectionnez les canaux que vous souhaitez activer pour Content Analytics. Vous pouvez choisir entre **[!UICONTROL Mobile]**, **[!UICONTROL Web]** et **[!UICONTROL Média payant]**.
 
 * Pour sélectionner un canal que vous n’avez pas encore configuré, sélectionnez **[!UICONTROL Activer]**.
 * Pour sélectionner un canal déjà configuré, mais pour lequel vous souhaitez modifier la configuration, sélectionnez **[!UICONTROL Modifier la configuration]**.
 
-Vous pouvez ensuite configurer le canal de manière plus détaillée. Cette configuration est différente selon que vous activez et configurez ou modifiez une configuration pour le canal [mobile](#mobile) ou [web](#web).
+Vous pouvez ensuite configurer le canal de manière plus détaillée. Cette configuration est différente selon que vous activez et configurez ou modifiez une configuration pour le canal [mobile](#mobile), [web](#web) ou [média payant](#paid-media).
 
-#### Mobile {#mobile}
+#### Mobile
+
++++ Détails
 
 <!-- For updated ACA -->
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_experience_locations_boldheader"
->title="Collecte de données d’emplacements d’expériences mobiles"
+>title="Collecte des données des emplacements d’expérience mobile"
 >abstract="**Emplacements d’expérience à exclure**"
 
 >[!CONTEXTUALHELP]
@@ -276,12 +266,12 @@ Vous pouvez ensuite configurer le canal de manière plus détaillée. Cette conf
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_urls_header"
->title="Collecte de données d’URL de ressources mobiles"
+>title="Collecte des données d’URL des ressources mobiles"
 >abstract="Indiquez les URL de ressources à **exclure** lors de la collecte de données pour Content Analytics. Veillez à exclure les URL de ressources personnellement identifiables."
 
 Pour le canal mobile, vous pouvez configurer les options [capture et définition d’expérience](#experience-capture-and-definition), [collecte de données](#data-collection) et [remplacements d’en-tête](#header-overrides).
 
-##### Capture et définition de l’expérience {#mobile-experience-capture-and-definition}
+### Capture et définition de l’expérience {#mobile-experience-capture-and-definition}
 
 Dans cette section, vous pouvez choisir d’inclure des expériences dans les données mobiles que vous collectez avec Content Analytics.  Pour le canal mobile, une expérience correspond à ce que vous avez enregistré comme expérience à l’aide de Adobe Experience Platform SDK for Content Analytics.
 
@@ -289,7 +279,7 @@ Par défaut, l’option **[!UICONTROL Inclure les expériences]** est désactiv�
 
 N’envisagez d’inclure des expériences que lorsque vous avez instrumenté votre application mobile pour enregistrer des expériences et effectuer le suivi des vues d’expérience et des clics d’expérience.
 
-##### Collecte de données {#mobile-data-collection}
+### Collecte de données {#mobile-data-collection}
 
 Les paramètres de collecte de données vous permettent de définir les données (emplacements d’expérience, emplacements des ressources, URL des ressources) que vous souhaitez collecter pour Content Analytics. Assurez-vous de ne pas collecter d’informations d’identification personnelle dans le cadre de cette collecte de données.
 
@@ -322,7 +312,7 @@ Pour configurer la collecte de données :
   Spécifiez une **[!UICONTROL chaîne d’expression régulière]** pour **[!UICONTROL URL de ressource à exclure]**. <br/>Par exemple : `^(?!.*(logo\.jpg)).*$` d’exclure toutes les URL de ressources faisant référence aux images JPEG de logo de Content Analytics.
 
 
-##### Remplacements d’en-têtes {#mobile-header-overrides}
+### Remplacements d’en-têtes {#mobile-header-overrides}
 
 <!-- needs modification for mobile channel -->
 
@@ -334,12 +324,15 @@ Vous pouvez éventuellement spécifier dans la section **[!UICONTROL Remplacemen
 1. Saisissez le **[!UICONTROL Nom de l’en-tête]**. Par exemple : `x-asset-service`.
 1. Saisissez la **[!UICONTROL valeur d’en-tête]**. Tout ce que vous spécifiez est secret et non visible dans l’interface utilisateur (sauf si vous choisissez explicitement de divulguer ![Visibilité](/help/assets/icons/Visibility.svg) la valeur lors de la saisie).
 
-##### Enregistrer {#mobile-save}
+### Enregistrer {#mobile-save}
 
 Une fois que vous avez configuré le canal mobile, sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer la configuration. Sélectionnez **[!UICONTROL Annuler]** pour annuler la configuration.
 
++++
 
 #### Web {#web}
+
++++ Détails
 
 Pour le canal web, vous pouvez configurer [la capture et la définition d’expérience](#experience-capture-and-definition-1), [la collecte de données](#data-collection-1) et [les remplacements d’en-tête](#header-overrides-1).
 
@@ -376,7 +369,7 @@ Pour le canal web, vous pouvez configurer [la capture et la définition d’exp�
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_button"
 >title="Collecte de données"
->abstract="Définissez la propriété de balise à utiliser ou créez-en une. Définissez également les pages et les ressources à inclure ou à exclure à l’aide d’expressions régulières.<br/>Pour une mise en œuvre indépendante des balises, sélectionnez **[!UICONTROL Créer]**.  Une propriété Balises est créée, mais vous n’avez pas l’obligation de l’utiliser."
+>abstract="Définissez la propriété de balise à utiliser ou créez-en une. Définissez également, à l’aide d’expressions régulières, les pages et les ressources que vous souhaitez inclure ou exclure.<br/>Pour une mise en œuvre indépendante des balises, sélectionnez **[!UICONTROL Créer]**.  Une propriété Balises est créée, mais vous n’avez pas l’obligation de l’utiliser."
 >additional-url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/content-analytics/configuration/tags-agnostic" text="Bibliothèque JavaScript Content Analytics"
 
 
@@ -441,16 +434,16 @@ Pour le canal web, vous pouvez configurer [la capture et la définition d’exp�
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_web_assets_header"
 >title="Collecte de données de ressources web"
->abstract="Indiquez les ressources à **inclure** ou **exclure** lors de la collecte de données pour Content Analytics. Veillez à exclure les ressources personnellement identifiables."
+>abstract="Indiquez les ressources à **inclure** ou **exclure** lors de la collecte de données pour Content Analytics. Veillez à exclure les ressources permettant d’identifier une personne."
 
 
-##### Capture et définition de l’expérience {#web-experience-capture-and-definition}
+### Capture et définition de l’expérience {#web-experience-capture-and-definition}
 
 Dans cette section, vous pouvez choisir d’inclure des expériences dans les données web que vous collectez avec Content Analytics.  Une expérience se compose de tout le texte d’une page web qui est reproductible à l’aide de l’URL de la visite initiale de l’utilisateur.
 
 Par défaut, l’option **[!UICONTROL Inclure les expériences]** est désactivée. Lorsque cette option est sélectionnée, définissez les URL pour lesquelles vous souhaitez inclure des expériences.
 
-Vous ne devriez envisager d’inclure des expériences que si les conditions suivantes s’appliquent :
+N’envisagez d’inclure des expériences que dans les cas suivants :
 
 * Les pages du site doivent être reproductibles à l’aide de l’URL de la page.
 * Le contenu textuel affiché par une personne donnée peut être reproduit à l’aide de l’URL de la page et ne dépend pas de cookies ou d’autres mécanismes de personnalisation.
@@ -459,9 +452,7 @@ Vous ne devriez envisager d’inclure des expériences que si les conditions sui
 >
 >Implémentez le [contrôle de version Content Analytics](manual.md#versioning) pour collecter les modifications que vous apportez aux expériences (pages) dans le cadre de Content Analytics.
 
-
-
-###### Nouvelle configuration {#new-experiences-configuration}
+#### Nouvelle configuration {#new-experiences-configuration}
 
 Pour inclure des expériences dans une configuration nouvelle ou non implémentée, procédez comme suit :
 
@@ -470,18 +461,18 @@ Pour inclure des expériences dans une configuration nouvelle ou non implément�
 1. Activez **[!UICONTROL Inclure des expériences]**. Le bouton (bascule) pour activer les expériences a un impact sur les éléments suivants :
 
    * La collecte de données dans l’extension Content Analytics
-   * Le processus générant des attributs d’expérience à partir des données d’événement Content Analytics
+   * Le processus générant des attributs d’expérience à partir des données d’événement Content Analytics
    * Modèle de rapport dans Customer Journey Analytics.
 
 1. Sélectionnez **[!UICONTROL Ajouter une expression régulière]** pour ajouter une combinaison d’expression régulière de domaine et de paramètres de requête.
 1. Indiquez comment le contenu est rendu sur votre site web en définissant des combinaisons d’une **[!UICONTROL Expression régulière du domaine]** et de **[!UICONTROL Paramètres de requête]** qui affectent le contenu de la page.
-   1. Saisissez une **[!UICONTROL Expression régulière de domaine]**, par exemple `/^(?!.*\b(store|help|admin)\b)/`. Veillez à ajouter une séquence d’échappement aux expressions régulières à l’aide de `/`. L’expression régulière de domaine indique à quelles URL ces paramètres s’appliquent. Par exemple, vous pouvez avoir plusieurs sites et différents paramètres qui pilotent le contenu de chacun des sites. Si les paramètres de requête s’appliquent à toutes vos pages, vous pouvez utiliser `.*` pour inclure toutes les pages.
+   1. Saisissez une **[!UICONTROL Expression régulière de domaine]**, par exemple `/^(?!.*\b(store|help|admin)\b)/`. Veillez à ajouter une séquence d’échappement aux expressions régulières à l’aide de `/`. L’expression régulière de domaine indique à quelles URL ces paramètres s’appliquent. Par exemple, vous disposez de plusieurs sites et différents paramètres pilotent le contenu de chaque site. Si les paramètres de requête s’appliquent à toutes vos pages, vous pouvez utiliser `.*` pour inclure toutes les pages.
    1. Spécifiez une liste de **[!UICONTROL paramètres de requête]** séparés par des virgules, par exemple `outdoors, patio, kitchen`.
 1. Sélectionnez **[!UICONTROL Supprimer]** si vous souhaitez supprimer une combinaison d’une expression régulière de domaine et de paramètres de requête.
 1. Sélectionnez **[!UICONTROL Ajouter une expression régulière]** si vous souhaitez ajouter une autre combinaison d’une expression régulière et de paramètres de requête.
 
 
-###### Configuration implémentée {#implemented-experiences-configuration}
+#### Configuration implémentée {#implemented-experiences-configuration}
 
 Pour modifier des expériences existantes ou nouvelles dans une configuration implémentée, procédez comme suit :
 
@@ -489,12 +480,12 @@ Pour modifier des expériences existantes ou nouvelles dans une configuration im
 
 * Sélectionnez le bouton (bascule) **[!UICONTROL Inclure des expériences]** pour activer ou désactiver les éléments suivants :
 
-  * Le processus générant des attributs d’expérience à partir des données d’événement Content Analytics
+  * Le processus générant des attributs d’expérience à partir des données d’événement Content Analytics
   * Modèle de rapport dans Customer Journey Analytics.
 
 * Sélectionnez ![Modifier](/help/assets/icons/Edit.svg) **[!UICONTROL Modifier]** pour modifier davantage la configuration de la collecte de données pour les expériences dans Content Analytics. Vous pouvez modifier les paramètres de l’[extension Adobe Content Analytics](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) dans la propriété Balise, associée à la configuration sélectionnée.
 
-##### Collecte de données {#web-data-collection}
+### Collecte de données {#web-data-collection}
 
 Les paramètres de collecte de données vous permettent de définir les données (pages, ressources) à collecter pour Content Analytics. Ne collectez aucune information d’identification personnelle dans le cadre de cette collecte de données.
 
@@ -514,18 +505,18 @@ Pour configurer la collecte de données :
     1. Spécifiez un **[!UICONTROL Nom de balise]**, par exemple `ACA Test for Documentation`.
     1. Spécifiez des **[!UICONTROL Domaines]**, par exemple `example.com`.
 
-    Utilisez une nouvelle propriété Tags si vous souhaitez créer une implémentation indépendante des balises pour le canal web à l’aide de la bibliothèque JavaScript Content Analytics [&#128279;](/help/content-analytics/config/tags-agnostic.md). La propriété Tags est créée, mais vous n’utiliserez pas la propriété dans l’implémentation agnostique. Toutefois, l’implémentation agnostique nécessite que vous ayez exécuté l’assistant de configuration guidée au moins une fois.
+    Utilisez une nouvelle propriété Tags si vous souhaitez créer une implémentation indépendante des balises pour le canal web à l’aide de la bibliothèque JavaScript [Content Analytics](/help/content-analytics/config/tags-agnostic.md). La propriété Tags est créée, mais vous n’utilisez pas la propriété dans l’implémentation agnostique. Toutefois, l’implémentation agnostique nécessite que vous ayez exécuté l’assistant de configuration guidée au moins une fois.
 
 * Indiquez les pages à inclure ou exclure lors de la collecte de données pour Content Analytics. Veillez à exclure les pages personnellement identifiables.
 
   Spécifiez une **[!UICONTROL Chaîne d’expression régulière]** pour **[!UICONTROL Pages à inclure/exclure]**. <br/>Par exemple, `^(?!.*documentation).*` pour exclure toutes les pages de documentation de Content Analytics.
 
-* Indiquer les ressources à inclure ou exclure lors de la collecte de données pour Content Analytics. Veillez à exclure les ressources personnellement identifiables.
+* Indiquer les ressources à inclure ou exclure lors de la collecte de données pour Content Analytics. Veillez à exclure les ressources permettant d’identifier une personne.
 
   Spécifiez une **[!UICONTROL Chaîne d’expression régulière]** pour **[!UICONTROL Ressource à inclure/exclure]**. <br/>Par exemple, `^(?!.*(logo\.jpg)).*$` pour exclure toutes les images JPEG des logos de Content Analytics.
 
 
-##### Remplacements d’en-têtes {#web-header-overrides}
+### Remplacements d’en-têtes {#web-header-overrides}
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_header_overrides_boldheader"
@@ -548,22 +539,162 @@ Vous pouvez éventuellement spécifier dans la section **[!UICONTROL Remplacemen
 1. Saisissez la **[!UICONTROL valeur d’en-tête]**. Tout ce que vous spécifiez est secret et non visible dans l’interface utilisateur (sauf si vous choisissez explicitement de divulguer ![Visibilité](/help/assets/icons/Visibility.svg) la valeur lors de la saisie).
 
 
+
+
+### Enregistrer {#web-save}
+
+Après avoir spécifié les détails du canal web, sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer la configuration. Sélectionnez **[!UICONTROL Annuler]** pour annuler la configuration.
+
++++
+
+#### Média payant {#paid-media}
+
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_paidmedia_adplatforms_nosourceconnectors"
 >title="Aucun connecteur source"
 >abstract="Le média acheté nécessite des connecteurs sources Experience Platform pour vos éditeurs d’annonces publicitaires. Aucun connecteur Google Ads ou Meta Ads n’est disponible dans ce sandbox. Configurez un ou plusieurs de ces connecteurs dans l’interface **[!UICONTROL Experience Platform]** > **[!UICONTROL Sources]** et revenez à cette étape pour continuer la configuration paid media Content Analytics."
 >additional-url="https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/advertising/ads" text="Source Google Ads"
 
-##### Enregistrer {#web-save}
++++ Détails
 
-Après avoir spécifié les détails du canal web, sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer la configuration. Sélectionnez **[!UICONTROL Annuler]** pour annuler la configuration.
+>[!NOTE]
+>
+>Le canal média payant n’est pas disponible pour les déploiements Customer Journey Analytics et Experience Platform sur AWS.
 
+
+Pour le canal média payant, toutes les plateformes [publicitaires](#paidmedia-adplatforms) prises en charge et connectées dans le sandbox configuré sont automatiquement incluses dans Content Analytics.
+
+### Plateformes publicitaires {#paidmedia-adplatforms}
+
+Paid Media nécessite la configuration des connecteurs source Experience Platform vers vos éditeurs d’annonces.
+
+Si le message **[!UICONTROL Aucun connecteur source pris en charge trouvé]** s’affiche, c’est que vous n’avez configuré aucun connecteur source pour la plateforme publicitaire disponible dans le sandbox que vous avez configuré.
+
+![Aucun connecteur source configuré](/help/content-analytics/assets/aca-paid-media-no-source-connectors.png)
+
+Pour configurer les connecteurs source pour vos plateformes publicitaires, sélectionnez **[!UICONTROL Accéder aux sources AEP]**. Vous êtes redirigé vers l’interface **[!UICONTROL Sources]** dans Experience Platform.
+
+Consultez ci-dessous des exemples de configuration du connecteur source Google Ads et Meta Ads.
+
+>[!BEGINTABS]
+
+>[!TAB Google Ads]
+
+1. Dans Experience Platform > **[!UICONTROL Sources]**, sélectionnez **[!UICONTROL Configuration]** dans la vignette **[!UICONTROL Google Ads]** pour démarrer l’assistant de configuration.
+
+   >[!WARNING]
+   >
+   >N’utilisez pas **[!UICONTROL Configuration]** dans la carte **Google Ads (version bêta)**.
+
+
+1. À l’étape ➊ **[!UICONTROL Authentification]** de l’assistant, sélectionnez **[!UICONTROL Nouveau compte]**, puis saisissez un **[!UICONTROL Nom du compte]**.
+
+   ![Étape 1 d’authentification du connecteur source Google Ads](../assets/paid-media-google-authentication-1.png)
+
+1. Dans la boîte de dialogue **[!UICONTROL Se connecter avec Google]**, sélectionnez un compte qui contient les comptes Google Ads Manager et Google Ads.
+
+   ![Étape 2 d’authentification du connecteur source Google Ads](../assets/paid-media-google-authentication-2.png)
+
+1. Vérifiez vos informations d’identification à l’aide d’une clé de sécurité ou d’un autre mécanisme d’authentification.
+
+   ![Étape 3 d’authentification du connecteur source Google Ads](../assets/paid-media-google-authentication-3.png)
+
+1. Sélectionnez **[!UICONTROL Continuer]** dans la boîte de dialogue. **[!UICONTROL Adobe Experience Platform souhaite accéder à votre compte Google]**.
+
+   ![Étape 4 d’authentification du connecteur source Google Ads](../assets/paid-media-google-authentication-4.png)
+
+1. Une fois l’authentification réussie, vous voyez ![CheckmarkCircle](/help/assets/icons2/CheckmarkCircle.svg) **[!UICONTROL Connected]** à l’étape ➊ **[!UICONTROL Authentification]** de l’assistant.
+
+   ![Étape 5 d’authentification du connecteur source Google Ads](../assets/paid-media-google-authentication-5.png)
+
+   Sélectionnez **[!UICONTROL Suivant]**.
+
+1. À l’étape ➋ **[!UICONTROL Détails du flux de données]** de l’assistant, saisissez un nom **[!UICONTROL Flux de données]**. Vous pouvez également vérifier les options d’abonnement aux alertes.
+
+   ![Détails du flux de données du connecteur source Google Ads](../assets/paid-media-google-dataflow-1.png)
+
+   Sélectionnez **[!UICONTROL Suivant]**.
+
+1. À ➌’étape **[!UICONTROL Révision]** de l’assistant, passez en revue les détails du connecteur source.
+
+   ![Révision du connecteur source Google Ads](../assets/paid-media-google-review-1.png)
+
+   Sélectionnez **[!UICONTROL Terminer]**.
+
+1. Vous voyez enfin les détails d’un connecteur source Google correctement configuré.
+
+   ![Connecteur source Google Ads final](../assets/paid-media-google-final.png)
+
+
+>[!TAB Meta Ads]
+
+1. Dans Experience Platform > **[!UICONTROL Sources]**, sélectionnez **[!UICONTROL Configuration]** dans la vignette **[!UICONTROL Meta Ads]** pour démarrer l’assistant de configuration.
+
+1. À l’étape ➊ **[!UICONTROL Authentification]** de l’assistant, sélectionnez **[!UICONTROL Nouveau compte]**, puis saisissez un **[!UICONTROL Nom du compte]**.
+
+   ![Étape 1 d’authentification du connecteur source Meta Ads](../assets/paid-media-meta-authentication-1.png)
+
+1. Connectez-vous au compte Facebook pour lequel vous avez configuré le Gestionnaire de publicités. Si vous êtes déjà connecté, une boîte de dialogue s’affiche pour continuer en tant qu’utilisateur connecté.
+
+   ![Étape 2 d’authentification du connecteur source Meta Ads](../assets/paid-media-meta-authentication-2.png)
+
+1. Une fois l’authentification réussie, vous voyez ![CheckmarkCircle](/help/assets/icons2/CheckmarkCircle.svg) **[!UICONTROL Connected]** à l’étape ➊ **[!UICONTROL Authentification]** de l’assistant.
+
+   ![Étape 3 d’authentification du connecteur source Meta Ads](../assets/paid-media-meta-authentication-3.png)
+
+   Sélectionnez **[!UICONTROL Suivant]**.
+
+1. À l’étape ➋ **[!UICONTROL Sélectionner des comptes]** de l’assistant, sélectionnez les comptes à configurer.
+
+   ![Sélectionnez des comptes dans le connecteur source Meta Ads](paid-media-meta-select-account.png)
+
+   Sélectionnez **[!UICONTROL Suivant]**.
+
+1. À l’étape ➌ **[!UICONTROL Détails du flux de données]** de l’assistant, saisissez un nom **[!UICONTROL Flux de données]**. Vous pouvez également vérifier les options d’abonnement aux alertes.
+
+   ![Flux de données du connecteur source Meta Ads](../assets/paid-media-meta-dataflow-1.png)
+
+   Sélectionnez **[!UICONTROL Suivant]**.
+
+1. À ➍’étape **[!UICONTROL Révision]** de l’assistant, passez en revue les détails du connecteur source.
+
+   ![Révision du connecteur source Meta Ads](../assets/paid-media-meta-review-1.png)
+
+1. Vous pouvez enfin voir les détails d’un connecteur source Google configuré avec succès.
+
+   ![Connecteur source Meta Ads final](../assets/paid-media-meta-final.png)
+
+>[!ENDTABS]
+
+Consultez Présentation des connecteurs Source [](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/home) pour plus d’informations sur les connecteurs source pris en charge pour le canal média payant.
+
+Après avoir configuré les connecteurs source dans Experience Platform, sélectionnez ![Actualiser](/help/assets/icons/Refresh.svg) **[!UICONTROL Actualiser]** pour mettre à jour la liste des connecteurs source.
+
+La liste des plateformes publicitaires disponibles et celles qui sont ![StatusGreen](/help/assets/icons/StatusGreen.svg) **Connected** et celles qui sont ![StatusGray](/help/assets/icons/StatusGray.svg) **Non configurées** s’affiche.
+
+![Connecteur Google configuré](/help/content-analytics/assets/aca-paid-media-google-source-connectors.png)
+
+
+### Comportement des données {#paidmedia-databehavior}
+
+Lorsque vous sélectionnez **[!UICONTROL Enregistrer]**, Content Analytics automatiquement :
+
+* Met à jour la connexion Customer Journey Analytics pour inclure les jeux de données de médias achetés de tous les connecteurs source connectés de ce sandbox.
+* Active les dimensions et les mesures de média acheté dans toutes les vues de données sélectionnées.
+* Affiche les canaux de média acheté en tant que dimension filtrable dans les rapports Workspace.
+
+### Enregistrer {#paidmedia-save}
+
+Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer la configuration **[!UICONTROL Média payant]**.
+
+
++++
 
 ### Résumé {#summary}
 
 Une fois que vous avez fourni tous les détails nécessaires, un résumé fournit des détails sur les artefacts créés ou modifiés.
 
-* Un résumé **[!UICONTROL Vous êtes presque en mesure d’implémenter _nom de configuration_ pour Content Analytics]** s’affiche lorsque vous implémentez une nouvelle configuration.
+* Un résumé **[!UICONTROL Vous êtes prêt à implémenter _nom de configuration_ pour Content Analytics]** s’affiche lorsque vous implémentez une nouvelle configuration.
 
 * Pour les configurations existantes implémentées, un résumé **[!UICONTROL Vous avez implémenté _nom de configuration_ pour Content Analytics]** s’affiche.
 
@@ -574,13 +705,13 @@ Une fois que vous avez fourni tous les détails nécessaires, un résumé fourni
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_implementation_warning_dialog"
 >title="Confirmation d’implémentation"
->abstract="Si vous sélectionnez **[!UICONTROL Implémenter]**, vous configurerez Content Analytics en fonction des entrées que vous avez fournies dans ce workflow. Plusieurs paramètres sont choisis par défaut en fonction de ce qui est généralement utile pour l’analyse du contenu, mais vous (en tant que responsable du contrôle de données) devez examiner les paramètres de chaque artefact pour confirmer que les paramètres sont implémentés conformément à votre politique de confidentialité, à vos droits et obligations contractuels et aux exigences de consentement en vertu de la loi applicable.<br/><br/>Notez qu’aucune donnée ne sera collectée tant que la bibliothèque de balises associée à cette configuration ne sera pas publiée manuellement.<br/><br/>Afin de dériver les attributs des images et du texte, Adobe récupère les attributs à l’aide de :<ol><li>l’URL de la page, capturée au moment de la visite du site par l’utilisateur ou l’utilisatrice, en fonction des paramètres de collecte de données que vous avez configurés ; et</li><li>URI où l’image est hébergée.</li></ol>Vous ne devez pas baliser les images hébergées sur des sites tiers."
+>abstract="Si vous sélectionnez **[!UICONTROL Implémenter]**, vous configurerez Content Analytics en fonction des entrées que vous avez fournies dans ce workflow. Plusieurs paramètres sont sélectionnés par défaut en fonction de ce qui est généralement utile pour Content Analytics. Toutefois, en tant que responsable du traitement, vous devez vérifier les paramètres de chaque artefact pour vous assurer qu’ils sont mis en œuvre conformément à votre politique de confidentialité, à vos droits et obligations contractuels, ainsi qu’aux exigences en matière de consentement prévues par la législation applicable.<br/><br/>Notez qu’aucune donnée ne sera collectée tant que la bibliothèque de balises associée à cette configuration ne sera pas publiée manuellement.<br/><br/>Afin de dériver les attributs des images et du texte, Adobe récupère les attributs à l’aide de :<ol><li>l’URL de la page, capturée au moment de la visite du site par l’utilisateur ou l’utilisatrice, en fonction des paramètres de collecte de données que vous avez configurés ; et</li><li>URL où l’image est hébergée.</li></ol>Vous ne devez pas baliser les images hébergées sur des sites tiers."
 
 Lorsque vous créez ou modifiez une configuration, vous disposez des options suivantes :
 
 * **[!UICONTROL Ignorer]** : toutes les modifications apportées dans le cadre de la configuration sont ignorées.
-* **[!UICONTROL Enregistrer pour plus tard]** : les modifications apportées à la configuration sont enregistrées. Vous pouvez revoir la configuration ultérieurement pour apporter d’autres modifications ou implémenter la configuration. L’unique condition pour enregistrer une configuration est de saisir une valeur pour [!UICONTROL Nom].
-* **[!UICONTROL Implémenter]** : les paramètres de la configuration ou les modifications qui y sont apportées sont enregistrés et implémentés. Tous les champs marqués comme ![Obligatoires](/help/assets/icons/Required.svg) doivent avoir les valeurs appropriées. L’implémentation comprend les éléments suivants :
+* **[!UICONTROL Enregistrer pour plus tard]** : les modifications apportées à la configuration sont enregistrées. Pour apporter d’autres modifications ou implémenter la configuration, revenez-y ultérieurement. L’unique condition pour enregistrer une configuration est de saisir une valeur pour [!UICONTROL Nom].
+* **[!UICONTROL Implémenter]** : les paramètres de la configuration ou les modifications qui y sont apportées sont enregistrés et implémentés. Tous les champs marqués comme ![Obligatoires](/help/assets/icons/Required.svg) doivent avoir les valeurs appropriées. La mise en œuvre comprend les éléments suivants :
 
   * Configuration **[!UICONTROL Customer Journey Analytics]** :
     * La vue de données sélectionnée est mise à jour pour inclure les dimensions et mesures Content Analytics.
@@ -590,13 +721,13 @@ Lorsque vous créez ou modifiez une configuration, vous disposez des options sui
 
   * Configuration **[!UICONTROL Adobe Experience Platform]** :
     * Création de schémas pour modéliser les événements Content Analytics, les attributs de ressource et les attributs d’expérience (s’ils sont configurés).
-    * Création de jeux de données pour collecter les événements Content Analytics, les attributs de ressource et les attributs d’expérience (s’ils sont configurés).
-    * Création d’un flux de données qui utilise le service de fonctionnalité pour générer et mettre à jour des attributs de contenu à partir d’événements Content Analytics.
+    * Création de jeux de données pour collecter les événements Content Analytics, les attributs de ressources et, s’ils sont configurés, les attributs d’expérience.
+    * Création d’un flux de données qui utilise le service de featurization pour générer et mettre à jour des attributs de contenu à partir d’événements Content Analytics.
 
 
   * Configuration de la **[!UICONTROL collecte de données]** :
     * La propriété Balises existante ou nouvelle est configurée pour prendre en charge la collecte de données Content Analytics. Cette configuration implique l’inclusion de l’extension Adobe Content Analytics pour les balises.
-    * Un train de données est créé pour les événements Content Analytics.
+    * Un train de données est créé pour les événements Content Analytics.
     * L’extension Adobe Content Analytics est configurée pour s’assurer que les événements Content Analytics sont envoyés au train de données pour Content Analytics.
     * Si Web SDK ou Mobile SDK n’est pas configuré pour la propriété Tags, une nouvelle configuration de Web SDK ou Mobile SDK est créée pour envoyer uniquement les événements Content Analytics.
     * Si Web SDK ou Mobile SDK est configuré pour la propriété Tags, aucune modification n’est apportée à la configuration existante de Web SDK ou Mobile SDK.
