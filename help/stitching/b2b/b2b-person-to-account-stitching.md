@@ -6,29 +6,21 @@ feature: Stitching, Cross-Channel Analysis
 role: Admin
 autotag-review: '2026-05-19T11:01:07.331Z'
 TQID: 'https://experienceleague.adobe.com/-7rHOhYVCp-nSMqdE7YlAlCJ0zRQYvPOViMHSCNuKV8'
-product_v2:
-  - id: d3f42e9e-bb51-4077-a732-358b801d8b29
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-subfeature_v2:
-  - id: faea9abd-7024-4c5e-a5b4-87919e09b24b
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: e3936b74ba4b4cf23e1b7235e545091a8cb546ed
+product_v2: id: d3f42e9e-bb51-4077-a732-358b801d8b29id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: faea9abd-7024-4c5e-a5b4-87919e09b24b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: d00e9f03-e50b-4162-b143-0c0817c937c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: ae08f7a010c6c8cdb262bd96e51c2b677a4cb70a
 workflow-type: tm+mt
-source-wordcount: 2116
-ht-degree: 15%
+source-wordcount: 2230
+ht-degree: 16%
 
 ---
 
 # Combinaison de personnes B2B et de comptes
 
-L’assemblage de personnes B2B avec les comptes enrichit vos jeux de données d’événements avec des identités de compte et permet une analyse complète sur l’ensemble du parcours client dans Customer Journey Analytics. Lorsque les événements ne disposent pas d’un identifiant de compte, ce qui est requis par Customer Journey Analytics B2B edition pour l’ingestion, l’assemblage des comptes de personne à personne dérive et ajoute automatiquement ces informations à l’aide d’un [&#x200B; jeu de données de mappage de personne à compte](#prerequisites) que vous fournissez.
+L’assemblage de personnes B2B avec les comptes enrichit vos jeux de données d’événements avec des identités de compte et permet une analyse complète sur l’ensemble du parcours client dans Customer Journey Analytics. Lorsque les événements ne disposent pas d’un identifiant de compte, ce que Customer Journey Analytics B2B edition exige pour l’ingestion, l’assemblage des comptes de personne à personne dérive et ajoute automatiquement ces informations à l’aide d’un [ jeu de données de mappage de personne à compte ](#prerequisites) que vous fournissez.
 
 Sans assemblage de comptes de personne à personne, tout événement qui ne contient pas d’ID de compte est ignoré lors de l’ingestion. L’assemblage des personnes en comptes résout cette limitation en recherchant le compte associé à la personne sur chaque événement, en ajoutant l’identifiant de compte à la fois lorsque l’événement est ingéré et de manière rétroactive.
 
@@ -39,7 +31,7 @@ Sans assemblage de comptes de personne à personne, tout événement qui ne cont
 L’assemblage des personnes et des comptes effectue les opérations suivantes sur vos jeux de données :
 
 * **Élever l’identité de personne** : comme pour l’approche de groupement [B2C](/help/stitching/overview.md), vous allez configurer un champ contenant des ID de personne persistants. À l’aide du graphique d’identité, l’ID de personne persistant sur chaque événement est élevé à un ID de personne à partir de l’espace de noms d’identifiant de personne configuré.
-* **Ajouter les identités de compte manquantes** : après obtention des informations d’ID de personne pour un événement, le [mappage personne-compte](#prerequisites) est utilisé pour dériver et ajouter les informations d’identité du compte. Toute identité de compte disponible sur l’événement lui-même est utilisée comme méthode de secours.
+* **Ajouter les identités de compte manquantes** : après obtention des informations d’ID de personne pour un événement, le [mappage personne à compte](#prerequisites) est utilisé pour dériver et ajouter les informations d’identité de compte. Toute identité de compte disponible sur l’événement lui-même est utilisée comme méthode de secours.
 
 ## Fonctionnement de l’assemblage des personnes B2B avec les comptes
 
@@ -52,7 +44,7 @@ Dans Customer Journey Analytics B2B edition, les événements sans ID de compte 
 | Action | Date et heure | Identifiant persistant | ID de compte | ID de personne | Type d’événement |
 |:---:|--:|--|---|---|---|
 | ![DataAdd](/help/assets/icons/DataAdd.svg) | 1/3/25 | 1234 | Adobe | matt@adobe.com | Page view |
-| ![FilterDelete](/help/assets/icons/DeleteOutline.svg) | 1/3/25 | 5678 |  | | |
+| ![FilterDelete](/help/assets/icons/DeleteOutline.svg) | 1/3/25 | 5678 |  |  | |
 | ![DataAdd](/help/assets/icons/DataAdd.svg) | 3/4/25 | 9012 | Ubiquité | cory@sky.com |  |
 | ![DataAdd](/help/assets/icons/DataAdd.svg) | 3/7/25 | 4321 | Ciel | emily@sky.com | Centre d’appel |
 | ![FilterDelete](/help/assets/icons/DeleteOutline.svg) | 5/5/25 | 6106 | | carmen@adobe.com |  |
@@ -69,34 +61,36 @@ L’assemblage des personnes B2B avec les comptes empêche les événements d’
 
 +++ Détails
 
-Pour prendre en charge l’assemblage des personnes B2B et des comptes, vous devez fournir un jeu de données de mappage personne-compte. Par exemple :
+Pour prendre en charge l’assemblage des comptes entre personnes B2B, lorsque vous [configurez les paramètres d’assemblage B2B](#configure-b2b-person-to-account-stitching-settings), vous fournissez un espace de noms d’identifiant de personne principal (par exemple, l’e-mail) et un jeu de données de mappage personne-compte.
+L’espace de noms de l’ID de personne du jeu de données Personne au compte peut être identique à celui du jeu principal (E-mail) ou différent. Dans l’exemple ci-dessous, il est défini comme ID CRM (qui devra être lié à E-mail dans le graphique d’identité).
 
 | ID CRM | ID de compte |
 |---|---|
 | 12hsd123 | Adobe |
+| 7812 pq kr | Adobe |
 | f82jsd32 | Ciel |
 | hg2023m2 | Ciel |
 | b978bbw9 | Ubiquité |
 | fs453ghi | Adobe |
 
-Ce jeu de données de mappage personne à compte est élevé à l’aide d’un groupement basé sur des graphiques. Par exemple, vous indiquez l’adresse e-mail comme espace de noms à utiliser. Le résultat est un jeu de données de mappage personne-compte mis à jour avec des ID de personne élevés.
+Le jeu de données de mappage de personne à compte est élevé à l’aide d’un groupement basé sur des graphiques. Notez que cela se produit en arrière-plan et n’est pas reflété dans les données réelles du jeu de données.
+Dans notre exemple, en utilisant des liens de graphique d’identité entre l’ID CRM et les espaces de noms d’e-mail, le résultat est un jeu de données de mappage personne-compte mis à jour avec des ID de personne élevés.
 
 | ID CRM | ID de personne élevé | ID de compte |
 |---|---|---|
 | 12hsd123 | matt@adobe.com | Adobe |
+| 7812 pq kr | emily@adobe.com | Adobe |
 | f82jsd32 | emily@sky.com | Ciel |
 | hg2023m2 | cory@sky.com | Ciel |
 | b978bbw9 | cassidy@ubiquity.com | Ubiquité |
 | fs453ghi | carmen@adobe.com | Adobe |
 
-Le groupement basé sur les graphiques est également utilisé pour élever les ID de personne dans le jeu de données d’événement d’expérience. Par exemple, consultez la valeur mise à jour pour **&#x200B;**.
-
-Le groupement basé sur les graphiques est également utilisé pour élever les ID de personne dans le jeu de données d’événement d’expérience. Par exemple, vous configurez le champ identifiant persistant (ECID) pour qu’il soit utilisé comme identifiant persistant de personne lorsque vous [activez le groupement sur le jeu de données](#enable-b2b-person-to-account-stitching-on-event-datasets). En fonction du `5678` comme valeur ECID et du `emily@adobe.com` comme valeur E-mail, `emily@adobe.com` est défini comme ID de personne élevé sur l’événement associé.
+Le groupement basé sur les graphiques est également utilisé pour élever les ID de personne dans le jeu de données d’événement d’expérience. Par exemple, vous configurez le champ identifiant persistant (ECID) pour qu’il soit utilisé comme identifiant persistant de personne lorsque vous [activez le groupement sur le jeu de données](#enable-b2b-person-to-account-stitching-on-event-datasets). En fonction du jeu de données de mappage élevé de personne à compte `emily@adobe.com` est défini comme ID de personne élevé sur l’événement associé.
 
 | Date et heure | Identifiant persistant | ID de compte d’origine | ID de personne d’origine | ID de personne élevé |
 |--|--|---|---|---|
 | 1/3/25 | 1234 | Adobe | matt@adobe.com | matt@adobe.com |
-| 1/3/25 | 5678 |  | | **&#x200B;**&#x200B;|
+| 1/3/25 | 5678 |  | | **** |
 | 3/4/25 | 9012 | Ubiquité | cory@sky.com | cory@sky.com |
 | 3/7/25 | 4321 | Ciel | emily@sky.com | emily@sky.com |
 | 5/5/25 | 6106 | | carmen@adobe.com | carmen@adobe.com |
@@ -110,12 +104,12 @@ Le groupement basé sur les graphiques est également utilisé pour élever les 
 
 +++ Détails
 
-Le jeu de données personne à compte est une fois de plus utilisé pour élever les identifiants de compte dans le jeu de données d’événement d’expérience. Par exemple, consultez la valeur ajoutée **Sky** pour emily@sky.com et **Adobe** pour carmen@adobe.com. Et la valeur mise à jour **Sky** (d’Ubiquity) pour cory@sky.com.
+Le jeu de données Personne à compte est une fois de plus utilisé pour élever les identifiants de compte dans le jeu de données d’événement d’expérience. Par exemple, consultez la valeur ajoutée **Sky** pour emily@sky.com et **Adobe** pour carmen@adobe.com et emily@adobe.com. Et la valeur mise à jour **Sky** (d’Ubiquity) pour cory@sky.com.
 
 | Date et heure | Identifiant persistant | ID de compte d’origine | ID de personne d’origine | ID de compte élevé | ID de personne élevé |
 |---|---|---|---|---|---|
 | 1/3/25 | 1234 | Adobe | matt@adobe.com | Adobe | matt@adobe.com |
-| 1/3/25 | 5678 | | | **Ciel** | **&#x200B;**&#x200B;|
+| 1/3/25 | 5678 | | | **Adobe** | **** |
 | 3/4/25 | 9012 | Ubiquité | cory@sky.com | **Ciel** | cory@sky.com |
 | 3/7/25 | 4321 | Ciel | emily@sky.com | Ciel | emily@sky.com |
 | 5/5/25 | 6106 | | carmen@adobe.com | **Adobe** | carmen@adobe.com |
@@ -126,7 +120,7 @@ Le jeu de données personne à compte est une fois de plus utilisé pour élever
 
 ### Résultats
 
-Cet exemple montre comment l’assemblage de personnes avec compte B2B met à jour vos données d’événement d’expérience avec des identifiants de personne manquants ou des identifiants de compte manquants et incorrects, en fonction du jeu de données de mappage de personne à compte que vous avez fourni en entrée.
+Cet exemple montre comment l’assemblage des personnes en compte B2B met à jour vos données d’événement d’expérience avec des identifiants de personne manquants ou des identifiants de compte manquants et incorrects, en fonction du jeu de données de mappage de personne à compte que vous avez fourni en entrée.
 
 
 ## Conditions préalables
@@ -135,11 +129,11 @@ Avant d’activer la personne B2B pour l’assemblage des comptes, préparez les
 
 | Jeu de données | Obligatoire | Description |
 |---|---|---|
-| **jeu de données personne à compte** | Obligatoire | Un jeu de données de recherche (enregistrement, série non temporelle) qui contient au minimum un ID de personne (avec espace de noms) et un ID de compte. Ces identifiants sont utilisés pour dériver le mappage de la relation personne-compte. |
+| **jeu de données personne-compte** | Obligatoire | Un jeu de données de recherche (enregistrement, série non temporelle) qui contient au minimum un ID de personne (avec espace de noms) et un ID de compte. Ces identifiants sont utilisés pour dériver le mappage de la relation personne à compte. |
 
 >[!IMPORTANT]
 >
->Le champ ID de personne de votre jeu de données **[!UICONTROL personne à compte]** doit être marqué comme une identité dans votre schéma.
+>Le champ ID de personne de votre jeu de données Personne à compte doit être marqué comme une identité dans votre schéma.
 
 ## Activer l’assemblage personne-compte {#enable-account-stitching}
 
@@ -175,7 +169,7 @@ Vous devez d’abord activer et configurer le groupement B2B au niveau de la con
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_start_time"
 >title="Heure de début"
->abstract="Sélectionnez un champ de date et heure qui indique le moment où la relation personne-compte est devenue active."
+>abstract="Sélectionnez un champ d’horodatage qui indique le moment où la relation personne à compte est devenue active."
 
 
 >[!CONTEXTUALHELP]
@@ -186,13 +180,13 @@ Vous devez d’abord activer et configurer le groupement B2B au niveau de la con
 
 1. Dans Customer Journey Analytics, accédez à **[!UICONTROL Connexions]** et [créer une connexion](/help/connections/create-connection.md#create-a-connection).
 
-1. Dans **[!UICONTROL Paramètres de connexion]**, définissez l’ID de Principal **&#x200B;**&#x200B;sur ![Création](/help/assets/icons/Building.svg) **[!UICONTROL Compte]**.
+1. Dans **[!UICONTROL Paramètres de connexion]**, définissez l’ID de Principal **** sur ![Création](/help/assets/icons/Building.svg) **[!UICONTROL Compte]**.
 
 1. Veillez à sélectionner les **[!UICONTROL conteneurs facultatifs]** que vous souhaitez utiliser dans votre connexion B2B. Vous ne pouvez pas modifier la sélection de ces conteneurs une fois que vous avez enregistré une personne B2B dans la configuration d’assemblage des comptes.
 
 1. Sélectionnez **[!UICONTROL Ouvrir la configuration de groupement B2B]**.
 
-   ![Configuration de l’assemblage des comptes B2B &#x200B;](../assets/b2b-account-stitching-configuration.png)
+   ![Configuration de l’assemblage des comptes B2B ](../assets/b2b-account-stitching-configuration.png)
 
    >[!NOTE]
    >
@@ -211,8 +205,8 @@ Vous devez d’abord activer et configurer le groupement B2B au niveau de la con
       | Champ | Obligatoire | Description |
       |---|:---:|---|
       | **[!UICONTROL Jeu de données Personne à compte]** | ![Obligatoire](/help/assets/icons/Required.svg) | Sélectionnez la recherche (jeu de données d’enregistrement ou de série non temporelle) qui mappe les personnes aux comptes. |
-      | **[!UICONTROL ID de personne]** | ![Obligatoire](/help/assets/icons/Required.svg) | Sélectionnez le champ du jeu de données contenant l’identifiant de la personne. Ce champ doit être marqué comme une identité et ne peut pas être identique au champ **[!UICONTROL ID de compte]** ou **[!UICONTROL Heure de début]**. |
-      | **[!UICONTROL ID de compte]** | ![Obligatoire](/help/assets/icons/Required.svg) | Sélectionnez le champ du jeu de données contenant l’identifiant de compte. Ce champ ne peut pas être identique au champ **[!UICONTROL ID de personne]** ou **[!UICONTROL Heure de début]**. |
+      | **[!UICONTROL ID de personne]** | ![Obligatoire](/help/assets/icons/Required.svg) | Sélectionnez le champ du jeu de données contenant l’identifiant de la personne. L’espace de noms de ce champ peut être différent ou identique à l’espace de noms de l’identifiant de personne sélectionné. S’ils sont différents, les deux espaces de noms doivent être liés dans le graphique d’identité.  Ce champ doit être marqué comme une identité et ne peut pas être identique au champ **[!UICONTROL ID de compte]** ou **[!UICONTROL Heure de début]**. |
+      | **[!UICONTROL ID de compte]** | ![Obligatoire](/help/assets/icons/Required.svg) | Sélectionnez le champ du jeu de données contenant les valeurs uniques d’identifiant de compte. Les informations sur l’ID de compte seront disponibles sur les lignes de tous les jeux de données d’événement avec l’assemblage Personne à compte activé. Ce champ ne peut pas être identique au champ **[!UICONTROL ID de personne]** ou **[!UICONTROL Heure de début]**. |
       | **Heure de création du mapping** | | Si vous le souhaitez, sélectionnez le champ qui représente la date et l’heure de création du mappage personne-compte. Utile dans les scénarios où une personne change plusieurs comptes au fil du temps.<br/><br/>**Exemple** (lorsque le champ **update_date** est sélectionné) :<table><thead><tr><th>update_date</th><th>Personne</th><th>account</th></tr></thead><tbody><tr><td>20260401</td><td>a@b.com</td><td>Apple</td></tr><tr><td>20260501</td><td>a@b.com</td><td>Adobe</td></tr></tbody></table><ul><li>Pour tous les événements dont la date et l’heure se trouvent dans le champ **[!UICONTROL update_date]** avant le 1er mai 2026 : a@b.com est mappé à Apple.</li><li>Pour tous les événements dont la date et l’heure figurent dans le champ **[!UICONTROL update_date]** à compter du 1er mai 2026 : a@b.com est mappé à Adobe.</li></ul>Lorsqu&#39;aucune heure de mappage n&#39;est spécifiée, le premier compte lexicographique est utilisé. Ce même algorithme est également utilisé lorsque deux noms de compte différents ont exactement la même valeur **[!UICONTROL update_date]** et qu’une heure de création de mappage est spécifiée. |
 
       >[!NOTE]
@@ -229,8 +223,8 @@ Vous devez d’abord activer et configurer le groupement B2B au niveau de la con
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_enable_person_to_account"
 >title="Activer l’assemblage personne-compte"
->abstract="Si cette option est activée, ce jeu de données utilise l’assemblage B2B Personne à compte. Les valeurs **[!UICONTROL ID de personne persistant]** sont élevées en valeurs issues de l’espace de noms **[!UICONTROL Identifiant de personne]** configuré, puis utilisées pour rechercher l’ID de compte en fonction du jeu de données personne-à-compte.<br/>Si cette option est désactivée, ce jeu de données n’utilise pas l’assemblage des personnes B2B avec les comptes et vous devez sélectionner un **[!UICONTROL ID de compte]** obligatoire à la place."
->additional-url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/stitching/b2b/b2b-person-to-account-stitching#configure-b2b-stitching-settings" text="Configurer la personne B2B pour les paramètres d’assemblage des comptes"
+>abstract="Si cette option est activée, ce jeu de données utilise l’assemblage B2B Personne à compte. Les valeurs **[!UICONTROL ID de personne persistant]** sont élevées en valeurs issues de l’espace de noms **[!UICONTROL Identifiant de personne]** configuré, puis utilisées pour rechercher l’ID de compte en fonction du jeu de données personne à compte.<br/>Si cette option est désactivée, ce jeu de données n’utilise pas l’assemblage des personnes B2B avec les comptes et vous devez sélectionner un **[!UICONTROL ID de compte]** obligatoire à la place."
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/b2b/b2b-person-to-account-stitching#configure-b2b-stitching-settings" text="Configurer la personne B2B pour les paramètres d’assemblage des comptes"
 
 Après avoir configuré le groupement B2B au niveau de la connexion, vous devez permettre à la personne B2B de tenir compte du groupement individuellement pour chaque jeu de données d’événement que vous souhaitez grouper.
 
@@ -244,10 +238,10 @@ Après avoir configuré le groupement B2B au niveau de la connexion, vous devez 
 
 Lorsque l’option **[!UICONTROL Activer l’assemblage des personnes en compte]** est **activée**, vous avez configuré la personne B2B pour l’assemblage des comptes pour le jeu de données.
 
-* La configuration d’un ID de personne est requise. Cet ID de personne est utilisé pour rechercher l’ID de compte en fonction du [jeu de données personne à compte](#prerequisites).
+* La configuration d’un ID de personne est requise. Cet ID de personne est utilisé pour rechercher l’ID de compte en fonction du jeu de données [personne vers compte](#prerequisites).
 * La configuration d’un identifiant de compte est facultative.
 
-![Combinaison de personnes B2B avec le compte sur le jeu de données d’événement sur &#x200B;](../assets/b2b-event-dataset-stitching-on.png)
+![Combinaison de personnes B2B avec le compte sur le jeu de données d’événement sur ](../assets/b2b-event-dataset-stitching-on.png)
 
 >[!TAB  Désactivé ]
 
@@ -267,11 +261,11 @@ Une fois que vous avez configuré la personne B2B pour l’assemblage des compte
 
 >[!IMPORTANT]
 >
->Une fois une connexion enregistrée, la configuration d’assemblage des personnes B2B avec le compte devient immuable. Pour afficher vos paramètres après l’enregistrement, sélectionnez **Ouvrir la configuration de groupement B2B**. Tous les champs sont en lecture seule. En outre, si le jeu de données utilisé pour le mappage [personne à compte](#prerequisites) est supprimé dans Experience Platform, la configuration de groupement est supprimée et la connexion passe dans un état non valide, signalé par un message d’avertissement dans l’interface utilisateur.
+>Une fois une connexion enregistrée, la configuration d’assemblage des personnes B2B avec le compte devient immuable. Pour afficher vos paramètres après l’enregistrement, sélectionnez **Ouvrir la configuration de groupement B2B**. Tous les champs sont en lecture seule. En outre, si le jeu de données utilisé pour le mappage [personne vers compte](#prerequisites) est supprimé dans Experience Platform, la configuration de groupement est supprimée et la connexion passe dans un état non valide, signalé par un message d’avertissement dans l’interface utilisateur.
 
 ## Planning de mise à jour des données
 
-L’assemblage des comptes dérive la carte des identités de votre [jeu de données personne à compte](#prerequisites) quotidiennement et utilise ces informations pour mettre à jour les jeux de données activés pour l’assemblage à court et à long terme selon le planning suivant :
+L’assemblage des comptes dérive quotidiennement le mappage d’identité de votre [personne au jeu de données du compte](#prerequisites) et utilise ces informations pour mettre à jour les jeux de données activés pour l’assemblage à court et à long terme selon le planning suivant :
 
 | Relecture | Fréquence | Fenêtre Données |
 |---|---|---|
