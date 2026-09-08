@@ -19,9 +19,9 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: ae08f7a010c6c8cdb262bd96e51c2b677a4cb70a
+source-git-commit: 4ab8bb6c0f68ae49128a2fe2a1eb9e87ccfa52a1
 workflow-type: tm+mt
-source-wordcount: 2230
+source-wordcount: 2268
 ht-degree: 16%
 
 ---
@@ -69,7 +69,7 @@ L’assemblage des personnes B2B avec les comptes empêche les événements d’
 
 +++ Détails
 
-Pour prendre en charge l’assemblage des comptes entre personnes B2B, lorsque vous [configurez les paramètres d’assemblage B2B](#configure-b2b-person-to-account-stitching-settings), vous fournissez un espace de noms d’identifiant de personne principal (par exemple, l’e-mail) et un jeu de données de mappage personne-compte.
+Pour prendre en charge l’assemblage des comptes entre personnes B2B, lorsque vous [configurez les paramètres d’assemblage B2B](#configure-b2b-stitching-settings), vous fournissez un espace de noms d’identifiant de personne principal (par exemple, l’e-mail) et un jeu de données de mappage personne-compte.
 L’espace de noms de l’ID de personne du jeu de données Personne au compte peut être identique à celui du jeu principal (E-mail) ou différent. Dans l’exemple ci-dessous, il est défini comme ID CRM (qui devra être lié à E-mail dans le graphique d’identité).
 
 | ID CRM | ID de compte |
@@ -93,7 +93,7 @@ Dans notre exemple, en utilisant des liens de graphique d’identité entre l’
 | b978bbw9 | cassidy@ubiquity.com | Ubiquité |
 | fs453ghi | carmen@adobe.com | Adobe |
 
-Le groupement basé sur les graphiques est également utilisé pour élever les ID de personne dans le jeu de données d’événement d’expérience. Par exemple, vous configurez le champ identifiant persistant (ECID) pour qu’il soit utilisé comme identifiant persistant de personne lorsque vous [activez le groupement sur le jeu de données](#enable-b2b-person-to-account-stitching-on-event-datasets). En fonction du jeu de données de mappage élevé de personne à compte `emily@adobe.com` est défini comme ID de personne élevé sur l’événement associé.
+Le groupement basé sur les graphiques est également utilisé pour élever les ID de personne dans le jeu de données d’événement d’expérience. Par exemple, vous configurez le champ identifiant persistant (ECID) pour qu’il soit utilisé comme identifiant persistant de personne lorsque vous [activez le groupement sur le jeu de données](#enable-b2b-person-to-account-stitching-on-event-datasets). En supposant que `5678` (ID persistant) soit lié à `emily@adobe.com` (ID de personne) dans le graphique d’identité, `emily@adobe.com` est défini comme ID de personne élevé sur l’événement associé.
 
 | Date et heure | Identifiant persistant | ID de compte d’origine | ID de personne d’origine | ID de personne élevé |
 |--|--|---|---|---|
@@ -112,7 +112,7 @@ Le groupement basé sur les graphiques est également utilisé pour élever les 
 
 +++ Détails
 
-Le jeu de données Personne à compte est une fois de plus utilisé pour élever les identifiants de compte dans le jeu de données d’événement d’expérience. Par exemple, consultez la valeur ajoutée **Sky** pour emily@sky.com et **Adobe** pour carmen@adobe.com et emily@adobe.com. Et la valeur mise à jour **Sky** (d’Ubiquity) pour cory@sky.com.
+Le jeu de données Personne à compte est utilisé pour élever les identifiants de compte dans le jeu de données d’événement d’expérience. Par exemple, consultez la valeur ajoutée **&#x200B;**&#x200B;pour carmen@adobe.com et emily@adobe.com. Et la valeur mise à jour **Sky** (d’Ubiquity) pour cory@sky.com.
 
 | Date et heure | Identifiant persistant | ID de compte d’origine | ID de personne d’origine | ID de compte élevé | ID de personne élevé |
 |---|---|---|---|---|---|
@@ -128,7 +128,7 @@ Le jeu de données Personne à compte est une fois de plus utilisé pour élever
 
 ### Résultats
 
-Cet exemple montre comment l’assemblage des personnes en compte B2B met à jour vos données d’événement d’expérience avec des identifiants de personne manquants ou des identifiants de compte manquants et incorrects, en fonction du jeu de données de mappage de personne à compte que vous avez fourni en entrée.
+Cet exemple montre comment l’assemblage de comptes de personne B2B met à jour vos données d’événement d’expérience avec des identifiants de personne manquants et des identifiants de compte manquants ou incorrects, en fonction des données de graphique d’identité et du jeu de données de mappage de personne à compte que vous avez fourni en entrée.
 
 
 ## Conditions préalables
@@ -246,8 +246,8 @@ Après avoir configuré le groupement B2B au niveau de la connexion, vous devez 
 
 Lorsque l’option **[!UICONTROL Activer l’assemblage des personnes en compte]** est **activée**, vous avez configuré la personne B2B pour l’assemblage des comptes pour le jeu de données.
 
-* La configuration d’un ID de personne est requise. Cet ID de personne est utilisé pour rechercher l’ID de compte en fonction du jeu de données [personne vers compte](#prerequisites).
-* La configuration d’un identifiant de compte est facultative.
+* La configuration d’un ID de personne persistant est requise. Cet ID de personne persistant est élevé à l’ID de personne à partir de l’espace de noms d’identifiant de personne configuré précédemment, puis utilisé pour rechercher l’ID de compte en fonction du [jeu de données de personne à compte](#prerequisites).
+* La configuration d’un identifiant de compte est facultative. Cette configuration est utilisée comme méthode de secours, chaque fois que les informations d’identifiant de compte associées ne sont pas disponibles dans le jeu de données Personne à compte .
 
 ![Combinaison de personnes B2B avec le compte sur le jeu de données d’événement sur &#x200B;](../assets/b2b-event-dataset-stitching-on.png)
 
