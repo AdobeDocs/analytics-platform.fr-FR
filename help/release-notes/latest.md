@@ -3,6 +3,7 @@ title: Notes de mise à jour actuelles de Customer Journey Analytics
 description: Afficher les dernières notes de mise à jour de Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
+hold: true
 TQID: https://experienceleague.adobe.com/EQKhna8E33DddZQGWe3ASBKMY9r-UsfuUcJg7DMwH0w
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
@@ -27,56 +28,58 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: e3936b74ba4b4cf23e1b7235e545091a8cb546ed
+source-git-commit: b9c679f4cd71fb2ae9c9c3af1b680982f92e6c83
 workflow-type: tm+mt
-source-wordcount: 991
-ht-degree: 27%
+source-wordcount: 1189
+ht-degree: 21%
 
 ---
 
-# Notes de mise à jour actuelles de Customer Journey Analytics (août 2026)
+# Notes de mise à jour actuelles de Customer Journey Analytics (septembre 2026)
 
-**Dernière mise à jour** : 5 août 2026
+**Dernière mise à jour** : 8 septembre 2026
 
-Ces notes de mise à jour couvrent la période de publication d’août 2026. Les mises à jour d’Adobe Customer Journey Analytics suivent un [modèle de diffusion continue](releases.md) qui permet une approche plus évolutive et plus progressive du déploiement des fonctionnalités. Par conséquent, ces notes sont mises à jour plusieurs fois par mois. Veuillez les vérifier régulièrement.
+Ces notes de mise à jour couvrent la période de publication de septembre 2026. Les mises à jour d’Adobe Customer Journey Analytics suivent un [modèle de diffusion continue](releases.md) qui permet une approche plus évolutive et plus progressive du déploiement des fonctionnalités. Par conséquent, ces notes sont mises à jour plusieurs fois par mois. Veuillez les vérifier régulièrement.
 
 ## Fonctionnalités nouvelles ou mises à jour
 
 | Fonctionnalité et description | [Le déploiement commence](releases.md) | [Disponibilité générale](releases.md) |
 | -----------|-----------|-----------|
-| **Améliorations de la zone de travail de Parcours**<br> Les améliorations de la zone de travail de Parcours suivantes sont désormais disponibles :<ul><li>Comparez le parcours à une période précédente. Comparez le parcours actuel au parcours 4 semaines avant, 2 trimestres avant, 1 an avant ou à une période personnalisée.</li><li>Pour un nœud sélectionné, affichez les principaux éléments de dimension qui se trouvent après le nœud sélectionné à tout moment dans le parcours. Utilisez cette option lorsque le nœud sélectionné est l’événement clé de votre analyse et que vous souhaitez voir ce que les personnes font à tout moment par la suite.<p>Auparavant, seuls les principaux nœuds immédiats pouvaient être affichés avant ou après le nœud sélectionné. </p></li><li>Modifiez la forme et le style des flèches entre les nœuds. Faites glisser des flèches entre les nœuds pour modifier la forme (courbure) de la flèche, puis cliquez avec le bouton droit sur une flèche pour modifier son style de l’une des manières suivantes : pleine, tirets, pointillés, tirets ou animés.</li></ul><p></p>Pour plus d’informations, consultez [Configuration d’une visualisation Zone de travail de parcours](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md). |  | 18 Août 2026 |
-| **Prise en charge de libellés d’utilisation des données supplémentaires**<br> Customer Journey Analytics prend désormais en charge les libellés d’utilisation des données supplémentaires suivants pour les éléments d’un jeu de données :<ul><li>C2 - Restreindre l’exportation de données tierces (disponible maintenant)</li><li>C3 - Restreindre la combinaison de données directement identifiables (disponible maintenant)</li><li>C9 - Restreindre la science des données (publication prévue en août ou en septembre)</li></ul><p>Pour plus d’informations, voir [Libellés, politiques et actions marketing](/help/data-views/data-governance.md).</p> | | Août ou septembre 2026 |
-| **Content Analytics : Paid media data** <br/>Paid media est désormais disponible en tant que troisième canal pour Content Analytics. Voir les mises à jour des [présentation](/help/content-analytics/content-analytics.md), [configuration des canaux](/help/content-analytics/config/guided.md#channels), [composants](/help/content-analytics/report/components.md) et [rapports](/help/content-analytics/report/report.md). | | 4 septembre 2026 |
-| **B2B : combinaison de comptes de personne à compte**<br> La combinaison de comptes B2B enrichit vos jeux de données d’événement avec des informations de compte et permet une analyse complète sur l’ensemble du parcours client dans Customer Journey Analytics. <p>Lorsque les événements ne disposent pas d’un identifiant de compte, ce que Customer Journey Analytics B2B edition exige pour l’ingestion, l’assemblage de comptes dérive et ajoute automatiquement ces informations à l’aide du jeu de données de mappage personne-compte que vous fournissez.</p><p>Pour plus d’informations, voir [Assemblage de personnes B2B avec compte](/help/stitching/b2b/b2b-person-to-account-stitching.md).</p> | | 31 Août 2026 |
-| **Guide des premiers appels de l’API de rapport**<br> Le guide des premiers appels de l’API Adobe Customer Journey Analytics fournit des instructions et des exemples pour configurer les requêtes de rapport de base. | | 10 Août 2026 |
-| **Guide de tendance de la date de l’API de rapport**<br> Le guide de tendance de la date de l’API Adobe Customer Journey Analytics fournit des instructions et des exemples pour configurer les requêtes de rapport de base. | | 17 Août 2026 |
-| **Limiter les segments à la période du rapport**<br/> Les données d’un rapport Workspace peuvent s’étendre au-delà de la période du rapport lorsqu’un segment inclut des composants de période.<p>Une nouvelle option est désormais disponible. Elle vous permet de limiter les résultats à la période du rapport, quels que soient les composants de date inclus dans le segment. <p>Cette option est disponible lors de la création ou de la modification d’un segment dont le conteneur de niveau supérieur est Personne.</p><p>Pour plus d’informations, voir [Création de segments](/help/components/segments/seg-builder.md#components).</p> | 26 Août 2026 | 9 septembre 2026 |
+| **Plug-in de serveur MCP**<br/> utilisez les nouveaux plug-ins de serveur MCP Customer Journey Analytics pour ChatGPT et Claude afin d’accéder rapidement à vos données. <p>Pour plus d’informations, consultez le guide du plug-in [ChatGPT](https://developer.adobe.com/analytics-mcp/docs/guides/chatgpt) et le guide du connecteur [Claude](https://developer.adobe.com/analytics-mcp/docs/guides/claude).</p> | 1er septembre 2026 | 1er septembre 2026 |
+| **Prise en charge de libellés d’utilisation des données supplémentaires**<br> Customer Journey Analytics prend désormais en charge les libellés d’utilisation des données supplémentaires suivants pour les éléments d’un jeu de données :<ul><li>C2 - Restreindre l’exportation de données tierces (disponible maintenant)</li><li>C3 - Restreindre la combinaison de données directement identifiables (disponible maintenant)</li><li>C9 - Restreindre la science des données (publication prévue en août ou en septembre)</li></ul><p>Pour plus d’informations, voir [Libellés, politiques et actions marketing](/help/data-views/data-governance.md).</p> | | 3 septembre 2026 |
 | **Filtrage et création de rapports concernant les politiques de consentement**<br> Vous pouvez désormais créer des rapports sur les visiteurs qui correspondent à vos politiques de consentement Adobe Experience Platform. (Les dimensions et mesures de la politique de consentement sont ajoutées aux vues de données dans votre connexion.)<p>De plus, vous pouvez exclure les visiteurs non consentants avant que leurs données ne soient ingérées dans Customer Journey Analytics.</p><p>(Lien vers la documentation à suivre.)<!--For more information, see Consent reporting and filtering overview.--></p> | | Septembre 2026 |
+| **Limiter les segments à la période du rapport**<br/> Les données d’un rapport Workspace peuvent s’étendre au-delà de la période du rapport lorsqu’un segment inclut des composants de période.<p>Une nouvelle option est désormais disponible. Elle vous permet de limiter les résultats à la période du rapport, quels que soient les composants de date inclus dans le segment.</p><p>Cette option est disponible lors de la création ou de la modification d’un segment dont le conteneur de niveau supérieur est Personne.</p><p>Pour plus d’informations, voir [Création de segments](/help/components/segments/seg-builder.md#components).</p> | 26 Août 2026 | 9 septembre 2026 |
+| **Analysez les expériences client LLM dans Analysis Workspace avec les informations de conversation**<br/> Customer Journey Analytics apporte désormais des données de conversation non structurées dans Analysis Workspace, ce qui vous permet de créer des rapports sur les expériences de navigation et d’achat basées sur LLM qui se produisent dans vos propriétés.<p>Grâce à cette fonctionnalité, vous pouvez :</p><ul><li>Collectez les invites, les réponses et les métadonnées de l’agent à partir des agents de conversation (les agents personnalisés de votre organisation ou Adobe Brand Concierge) via Web SDK.</li><li>Analysez l’intention, le ton et le sentiment afin de comprendre ce que les clients demandent, comment votre agent répond et ce que vos clients pensent de leurs interactions.</li><li>Analysez à grande échelle à l’aide de votre schéma, de vos jeux de données et de vos vues de données existants, puis obtenez des informations sur les surfaces dans Analysis Workspace.</li><li>Connectez les conversations aux résultats en liant les interactions des agents à vos parcours clients généraux, afin de pouvoir mesurer l’impact réel sur la conversion, l’engagement, etc.</li></ul><p>Auparavant, les expériences basées sur LLM étaient difficiles à mesurer et presque impossibles à connecter à vos parcours clients existants.</p><p>(Lien vers la documentation à suivre.)</p> | | 22 septembre 2026 |
+| **Rapports sur la population totale**<br/> vous pouvez désormais analyser et générer des rapports sur les entités définies dans des jeux de données de profil et de recherche qui existent dans une connexion Customer Journey Analytics. Cette analyse et ce compte rendu des performances vont au-delà des séries temporelles d’événements des jeux de données d’événements. <p>Cette fonctionnalité active de nouvelles classes de requêtes, de mesures et de définitions d’audience qui reflètent l’étendue complète de la base de clients d’une entreprise.</p><p>(Lien vers la documentation à suivre.)</p> | | 22 septembre 2026 |
+| **Alertes horaires**<br/> Vous pouvez désormais définir la granularité horaire d’une alerte sur Horaire.<p>Les alertes horaires sont destinées aux données qui arrivent au cours d’une heure donnée. Si les données ont une latence supérieure à une heure, une granularité plus longue garantit que l’alerte évalue des données complètes. Vérifiez auprès de l’ingénieur de données si vous n’êtes pas sûr du temps nécessaire aux données pour arriver.</p>p>(Lien vers la documentation à suivre.)</p> | | Septembre 2026 |
+| **La diffusion des alertes respecte strictement le délai configuré**<br/> Les alertes sont désormais diffusées à la fin de la fenêtre de délai que vous avez définie, que les données soient terminées ou en cours de réception pour la plage d’événements spécifiée. Toutes les données qui arrivent après la période de temporisation ne sont pas incluses dans l’alerte.<p>Auparavant, les alertes incluaient une vérification de traitement en arrière-plan qui attendait les données arrivant en retard, même si cela signifiait que les alertes étaient diffusées après la fenêtre de délai configurée.</p>p>(Lien vers la documentation à suivre.)</p> | | Septembre 2026 |
+| **Intégration de**<br/> connectez Adobe Brand Visibility aux données Customer Journey Analytics de votre entreprise afin de mesurer la manière dont les découvertes pilotées par l’IA se traduisent par un engagement réel sur le site web et des résultats commerciaux.<p>(Lien vers la documentation à suivre.)</p> | | Septembre 2026 |
+| **Compétences supplémentaires dans l’entreprise CX Coworker**<br> De nouvelles compétences sont proposées à Coworker, notamment :<ul><li><strong>Guides d’implémentation</strong> : transformez une brève conversation sur la découverte en un plan d’implémentation personnalisé et conscient des dépendances, avec des exportations prêtes à l’emploi vers CSV, Jira, Workfront et Markdown.</li><li><strong>Liste de contrôle d’implémentation intelligente</strong> : transformez votre conversation Discovery en un projet d’implémentation régi et traçable dans les projets de collègues : une liste de contrôle ordonnée d’étapes que vous pouvez affecter, surveiller et valider.</li><li><strong>Validation des données</strong> : vérifiez vos champs de données et vos jeux de données directement dans Coworker pour confirmer que vous travaillez à partir de données fiables et précises (mises à niveau à partir d’Adobe Agent Orchestrator v1).</li><li><strong>Validation des médias en flux continu</strong> : validez vos données de médias en flux continu dans Coworker pour confirmer qu’elles sont exactes et prêtes pour le compte rendu des performances.</li></ul><p>(Liens vers la documentation à suivre.)</p> | | 30 septembre 2026 |
 
 ### Correctifs dans Customer Journey Analytics
 
-**&#x200B;**&#x200B;: AN-466867, AN-465995, AN-465315, AN-465313, AN-464375, AN-463634, AN-463248, AN-463175, AN-463049, AN-462347, AN-462124, AN-461922, AN-458398, AN-457849, AN-455002, AN-453357, AN-456863, AN-459816, AN-459034, AN-460774, AN-460671, AN-457760, AN-443594
+**&#x200B;**&#x200B;: AN-487374, AN-487119, AN-468907, AN-468810, AN-468363, AN-468096, AN-467414, AN-466986, AN-466982, AN-465073, AN-463571, AN-462373
 **Composants** :
-**Connexions** : AN-464934, AN-460768
+**Connexions** : AN-451458
 **Content Analytics** :
-**Analyse guidée** :
-**Exports** : AN-451819, AN-448419, AN-456001
-**Vues de données** : AN-453201, AN-441965, AN-460967
-**Ingestion de données** : AN-462123, AN-451836, AN-453790, AN-459000, AN-456057, AN-461271, AN-459016, AN-460935
+**Analyse guidée** : AN-485600
+**Exports** : AN-489161, AN-467131, AN-464746
+**Vues de données** : AN-478732, AN-468836, AN-467851
+**Ingestion de données** : AN-489829, AN-489722, AN-469451, AN-467436, AN-467049, AN-466087, AN-465049, AN-463524, AN-457433
 **Mise en œuvre** :
-**&#x200B;**&#x200B;: AN-465346, AN-464768, AN-464580, AN-464301, AN-463048, AN-462800, AN-457042, AN-461033, AN-459042, AN-454250, AN-451735, AN-450776, AN-450200, AN-451665
-**Reporting** : AN-463576, AN-462400, AN-456394, AN-455619, AN-459530, AN-454103, AN-452866, AN-461181
-**Segmentation** : AN-459002, AN-457730, AN-457146
-**Rapports planifiés** : AN-455009, AN-460037, AN-462093
+**&#x200B;**&#x200B;: AN-487486, AN-478944, AN-470036, AN-468589, AN-468436, AN-456747, AN-456700, AN-442695
+**Reporting** : AN-479145, AN-469095, AN-468070, AN-467786, AN-456684
+**Segmentation** : AN-486561
+**Rapports planifiés** :
 **Dimensions et mesures partagées** :
-**Analyse de l’audience** : AN-458292
-**Autre** : AN-466935, AN-462116, AN-454493, AN-457666, AN-457557, AN-456742, AN-437975, AN-460959
+**Analyse de l’audience** : AN-468237, AN-462553
+**Autre** :
 
 ## Fonctionnalités reportées
 
 | Fonctionnalité et description | [Le déploiement commence](releases.md) | [Disponibilité générale](releases.md) |
 | -----------|-----------|-----------|
-| **Services de médias en streaming : prise en charge des données de planning** <br/>Vous pouvez désormais charger des données planifiées antérieures de contenu de médias en streaming et en direct afin de suivre l’audience plus facilement et avec plus de précision.<p>Voici quelques exemples de contenu en direct pris en charge avec le chargement des données de planning :</p><ul><li>Plateformes FAST (Free Ad Supported TV)</li><li>Flux locaux</li><li>Sports en direct</li></ul><p>Le chargement des données de planning vous permet de suivre les données d’audience de chaque programme diffusé pendant la période que vous indiquez dans le fichier de chargement. Vous pouvez même recueillir des données d’audience pour des sujets ou des segments de programme spécifiques.</p><p>Ces fonctionnalités sont disponibles quelle que soit la manière dont vous avez mis en œuvre Streaming Media Collection.</p><p>Auparavant, il était difficile d’associer avec précision une session donnée à des programmes spécifiques lors de l’analyse du contenu en direct, et il était impossible de l’associer à des sujets ou à des segments de programme individuels.</p><p>Pour plus d’informations, voir [Chargement des données de planning pour suivre le contenu en direct](https://experienceleague.adobe.com/fr/docs/media-analytics/using/media-use-cases/track-schedule-data). | 29 octobre 2025 | À confirmer<p>(Initialement prévu pour le 29 octobre 2025)</p> |
+| **Services de médias en streaming : prise en charge des données de planning** <br/>Vous pouvez désormais charger des données de planning antérieures de contenu de médias en streaming et en direct afin de suivre l’audience plus facilement et avec plus de précision.<p>Voici des exemples de contenu dynamique pris en charge avec le chargement planifié des données :</p><ul><li>Plateformes FAST (Free Ad Supported TV)</li><li>Flux locaux</li><li>Sports en direct</li></ul><p>Le chargement des données de planning vous permet de suivre les données d’audience de chaque programme diffusé pendant la période que vous indiquez dans le fichier de chargement. Vous pouvez même recueillir des données d’audience pour des sujets ou des segments de programme spécifiques.</p><p>Ces fonctionnalités sont disponibles quelle que soit la manière dont vous avez mis en œuvre Streaming Media Collection.</p><p>Auparavant, il était difficile d’associer avec précision une session donnée à des programmes spécifiques lors de l’analyse du contenu en direct, et il était impossible de l’associer à des sujets ou à des segments de programme individuels.</p><p>Pour plus d’informations, voir [Chargement des données de planning pour suivre le contenu en direct](https://experienceleague.adobe.com/fr/docs/media-analytics/using/media-use-cases/track-schedule-data).</p> | 29 octobre 2025 | À confirmer<p>(Initialement prévu pour le 29 octobre 2025)</p> |
 
 >[!MORELIKETHIS]
 >
