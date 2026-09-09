@@ -5,31 +5,23 @@ feature: Experience Platform Integration
 role: User
 exl-id: 0b52af5b-b65c-4929-9ca3-547a640936f3
 TQID: https://experienceleague.adobe.com/7Q8q-e58PrmANht9DpOXuNFImYC48ELhrXPRhBG6gYQ
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: bcc5edb5-84c3-4940-9f84-ed88b6c16274id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 34593a4407e6334e9abab6034accd84fc5a70d33
 workflow-type: tm+mt
-source-wordcount: 410
-ht-degree: 44%
+source-wordcount: 452
+ht-degree: 40%
 
 ---
 
 # Rapports Target
 
-Le compte rendu des performances de Target dans Customer Journey Analytics vous permet de mesurer les activités d’Adobe Target et d’en générer des rapports directement dans Customer Journey Analytics. Cette fonctionnalité est comparable à ce qui est effectué dans Adobe Analytics (AA) via Analytics for Target (A4T), mais avec la connectivité à Adobe Experience Platform (AEP).
+Le compte rendu des performances de Target dans Customer Journey Analytics vous permet de mesurer les activités d’Adobe Target et d’en générer des rapports directement dans Customer Journey Analytics. Cette fonctionnalité est comparable à ce qui est effectué dans Adobe Analytics (AA) via Analytics for Target (A4T), mais avec la connectivité à Adobe Experience Platform (AEP). Après avoir créé une activité Target utilisant Customer Journey Analytics comme source de création de rapports, un jeu de données de recherche nommé Événements de classification Adobe Target est créé dans le sandbox correspondant. Ce jeu de données de recherche enrichit vos rapports en classant les identifiants d’activité Target avec leurs attributs conviviaux (tels que le nom de l’activité et le nom de l’expérience).
 
-En ajoutant le jeu de données de recherche de classification de Target (disponible par défaut dans Experience Platform) dans une connexion Customer Journey Analytics, les utilisateurs sont désormais correctement exposés aux outils de reporting de Target, à l’attribution d’ordre cible et à d’autres fonctionnalités. Avec seulement quelques préparations mineures et ajustements dans la vue de données Customer Journey Analytics, ces activités peuvent être mises immédiatement à la disposition de tout utilisateur qui souhaite envoyer des données Target directement dans CJA.
+En ajoutant ce jeu de données de recherche dans une connexion Customer Journey Analytics, les utilisateurs sont désormais correctement exposés aux outils de rapports de Target, à l’attribution d’ordres de Target et à d’autres fonctionnalités. Avec seulement quelques préparations mineures et ajustements dans la vue de données Customer Journey Analytics, ces activités peuvent être mises immédiatement à la disposition de tout utilisateur qui souhaite envoyer des données Target directement dans Customer Journey Analytics.
 
 ## avantages du Principal
 
@@ -41,7 +33,7 @@ En ajoutant le jeu de données de recherche de classification de Target (disponi
 
 Votre activité Target doit [utiliser Customer Journey Analytics comme source de création de rapports](https://experienceleague.adobe.com/fr/docs/target/using/integrate/cja/target-reporting-in-cja).
 
-Une fois que le jeu de données d’événement de classification cible a été ajouté à une connexion, quelques ajustements mineurs doivent être effectués dans la vue de données une fois que ces composants ont été ajoutés en tant que dimensions, notamment :
+Une fois que le jeu de données de recherche d’événements de classification Adobe Target est ajouté à une connexion, quelques ajustements mineurs doivent être apportés à la vue de données une fois que ces composants ont été ajoutés en tant que dimensions, notamment :
 
 * Définir la persistance de façon à ce qu’elle soit similaire au suivi dans Target (consultez un consultant Target ou le client pour vous assurer que les paramètres appropriés sont définis).
 
