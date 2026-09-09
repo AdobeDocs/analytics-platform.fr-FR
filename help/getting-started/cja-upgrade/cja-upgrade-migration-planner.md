@@ -123,7 +123,7 @@ Une migration passe par trois étapes : [!UICONTROL **Audit**], [!UICONTROL **Ma
 
 1. Sélectionnez [!UICONTROL **Créer une migration**].
 
-1. Passez à la section suivante, [ Validation et déploiement d’une migration ](#validate-and-deploy-a-migration).
+1. Passez à la section suivante, [&#x200B; Validation et déploiement d’une migration &#x200B;](#validate-and-deploy-a-migration).
 
 ## Validation et déploiement d’une migration
 
@@ -167,7 +167,7 @@ Après avoir créé une migration, ouvrez-la pour en terminer les trois étapes 
 
    1. Dans la vignette [!UICONTROL **Générer l’implémentation de Web SDK**], utilisez les résultats de l’audit et du mappage pour générer le package d’implémentation de Web SDK, puis déployez-le sur votre site.
 
-      Pour obtenir des instructions détaillées, voir [ Générer et déployer l’implémentation de Web SDK ](#generate-and-deploy-the-web-sdk-implementation).
+      Pour obtenir des instructions détaillées, voir [&#x200B; Générer et déployer l’implémentation de Web SDK &#x200B;](#generate-and-deploy-the-web-sdk-implementation).
 
 
 ## Examiner et résoudre les constatations d&#39;audit
