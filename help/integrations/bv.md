@@ -3,9 +3,9 @@ title: Intégration de Brand Visibility
 description: Intégration de Brand Visibility à Customer Journey Analytics
 feature: Experience Platform Integration
 role: User
-source-git-commit: e90a8d978f8d910f426dcb0fbf28881724d0f5a7
+source-git-commit: ab73c95a3ff0d57a4868d74266084a79c4c3721d
 workflow-type: tm+mt
-source-wordcount: '2545'
+source-wordcount: '2572'
 ht-degree: 3%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # Intégration de Adobe Brand Visibility
 
-[&#128279;](https://experienceleague.adobe.com/fr/docs/llm-optimizer/using/home){target="_blank"} est une application IA générative pour l&#39;optimisation du moteur de génération, conçue pour aider les marques à améliorer leur visibilité, leur précision et leur influence dans les environnements de recherche pilotés par l&#39;IA. Brand Visibility fournit des informations sur la présence des marques dans les réponses générées par l’IA, propose des recommandations de contenu prescriptives et automatise les correctifs d’optimisation.
+[](https://experienceleague.adobe.com/fr/docs/llm-optimizer/using/home){target="_blank"} est une application IA générative pour l&#39;optimisation du moteur de génération, conçue pour aider les marques à améliorer leur visibilité, leur précision et leur influence dans les environnements de recherche pilotés par l&#39;IA. Brand Visibility fournit des informations sur la présence des marques dans les réponses générées par l’IA, propose des recommandations de contenu prescriptives et automatise les correctifs d’optimisation.
 
 L’IA est devenue un canal de découverte essentiel. Les agents de grands modèles linguistiques (LLM), tels que ChatGPT, Claude, Copilot et Perplexity, explorent le contenu de la marque.
 
@@ -178,4 +178,4 @@ Ce jeu de données capture uniquement le trafic des robots provenant des journau
 
 ## Intégration sortante
 
-À déterminer.
+Pour plus d’informations sur l’intégration sortante, reportez-vous à la section [Intégration de ](https://experienceleague.adobe.com/en/docs/brand-visibility/using/resources/customer-journey-analytics-integration){target="_blank"} dans la documentation sur la visibilité des marques Adobe.
