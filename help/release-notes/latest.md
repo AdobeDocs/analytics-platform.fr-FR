@@ -3,7 +3,6 @@ title: Notes de mise à jour actuelles de Customer Journey Analytics
 description: Afficher les dernières notes de mise à jour de Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-hold: true
 TQID: https://experienceleague.adobe.com/EQKhna8E33DddZQGWe3ASBKMY9r-UsfuUcJg7DMwH0w
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
@@ -28,16 +27,16 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: b9c679f4cd71fb2ae9c9c3af1b680982f92e6c83
+source-git-commit: 8fb541eac63595c7d02561a1ca1768ab373c1ea4
 workflow-type: tm+mt
-source-wordcount: 1189
-ht-degree: 21%
+source-wordcount: 1261
+ht-degree: 20%
 
 ---
 
 # Notes de mise à jour actuelles de Customer Journey Analytics (septembre 2026)
 
-**Dernière mise à jour** : 8 septembre 2026
+**Dernière mise à jour** : 9 septembre 2026
 
 Ces notes de mise à jour couvrent la période de publication de septembre 2026. Les mises à jour d’Adobe Customer Journey Analytics suivent un [modèle de diffusion continue](releases.md) qui permet une approche plus évolutive et plus progressive du déploiement des fonctionnalités. Par conséquent, ces notes sont mises à jour plusieurs fois par mois. Veuillez les vérifier régulièrement.
 
@@ -58,22 +57,22 @@ Ces notes de mise à jour couvrent la période de publication de septembre 2026.
 
 ### Correctifs dans Customer Journey Analytics
 
-**&#x200B;**&#x200B;: AN-487374, AN-487119, AN-468907, AN-468810, AN-468363, AN-468096, AN-467414, AN-466986, AN-466982, AN-465073, AN-463571, AN-462373
+**&#x200B;**&#x200B;: AN-487374, AN-487119, AN-468907, AN-468810, AN-468363, AN-468096, AN-467414, AN-466986, AN-466982, AN-465073, AN-463571, AN-462373, AN-492801, AN-488821, AN-488452, AN-486517, AN-478930, AN-468325
 **Composants** :
-**Connexions** : AN-451458
+**Connexions** : AN-451458, AN-365942
 **Content Analytics** :
 **Analyse guidée** : AN-485600
-**Exports** : AN-489161, AN-467131, AN-464746
-**Vues de données** : AN-478732, AN-468836, AN-467851
-**Ingestion de données** : AN-489829, AN-489722, AN-469451, AN-467436, AN-467049, AN-466087, AN-465049, AN-463524, AN-457433
+**Exports** : AN-489161, AN-467131, AN-464746, AN-469034, AN-447252, AN-437803, AN-394444
+**Vues de données** : AN-478732, AN-468836, AN-467851, AN-487651, AN-423592
+**Ingestion de données** : AN-489829, AN-489722, AN-469451, AN-467436, AN-467049, AN-466087, AN-465049, AN-463524, AN-457433, AN-490288, AN-487500, AN-390916, AN-342311
 **Mise en œuvre** :
-**&#x200B;**&#x200B;: AN-487486, AN-478944, AN-470036, AN-468589, AN-468436, AN-456747, AN-456700, AN-442695
-**Reporting** : AN-479145, AN-469095, AN-468070, AN-467786, AN-456684
-**Segmentation** : AN-486561
-**Rapports planifiés** :
+**&#x200B;**&#x200B;: AN-487486, AN-478944, AN-470036, AN-468589, AN-468436, AN-456747, AN-456700, AN-442695, AN-492330, AN-490564, AN-468293, AN-460921
+**Reporting** : AN-479145, AN-469095, AN-468070, AN-467786, AN-456684, AN-465257, AN-422685, AN-406114, AN-356706, AN-322733
+**Segmentation** : AN-486561, AN-278260
+**Rapports planifiés** : AN-479157
 **Dimensions et mesures partagées** :
 **Analyse de l’audience** : AN-468237, AN-462553
-**Autre** :
+**Autre** : AN-469601, AN-462817, AN-362308, AN-349757, AN-326432, AN-326345, AN-324341, AN-309317
 
 ## Fonctionnalités reportées
 
