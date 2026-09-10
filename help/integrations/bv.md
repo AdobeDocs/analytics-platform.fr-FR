@@ -178,4 +178,4 @@ Ce jeu de données capture uniquement le trafic des robots provenant des journau
 
 ## Intégration sortante
 
-Pour plus d’informations sur l’intégration sortante, reportez-vous à la section [Intégration de &#x200B;](https://experienceleague.adobe.com/en/docs/brand-visibility/using/resources/customer-journey-analytics-integration){target="_blank"} dans la documentation sur la visibilité des marques Adobe.
+Pour plus d’informations sur l’intégration sortante, reportez-vous à la section [Intégration de &#x200B;](https://experienceleague.adobe.com/fr/docs/brand-visibility/using/resources/customer-journey-analytics-integration){target="_blank"} dans la documentation sur la visibilité des marques Adobe.
