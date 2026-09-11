@@ -1,10 +1,10 @@
 ---
-user-guide-title: Guide de Customer Journey Analytics
+user-guide-title: Guide de Customer Journey Analytics (parcours client)
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 6b14b7df4c897c42c963fb93c48e7331b0264589
+source-git-commit: 2983f972813a84a141109c5d14c81394802f226c
 workflow-type: tm+mt
-source-wordcount: '1484'
+source-wordcount: '1490'
 ht-degree: 90%
 
 ---
@@ -56,7 +56,7 @@ ht-degree: 90%
       + [Utiliser votre schéma existant](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)
     + Créer un train de données {#create-datastream}
       + [Créer un train de données](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md)
-      + [Ajouter Platform en tant que service](/help/getting-started/cja-upgrade/cja-upgrade-datastream-addplatform.md)
+      + [Ajouter Experience Platform en tant que service](/help/getting-started/cja-upgrade/cja-upgrade-datastream-addplatform.md)
     + Créer des jeux de données {#create-datasets}
       + [Créer un jeu de données](/help/getting-started/cja-upgrade/cja-upgrade-dataset.md)
       + [Créer des jeux de données de recherche pour les classifications](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
@@ -77,34 +77,34 @@ ht-degree: 90%
       + [Créer un schéma XDM pour le connecteur source Analytics](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
       + [Créer des champs de mappage et du connecteur source Analytics](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
       + [Ajouter le jeu de données du connecteur source Analytics à la connexion](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
-    + [Estimer quand désactiver Adobe Analytics](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md)
+    + [Évaluer quand désactiver Adobe Analytics](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md)
     + [Désactiver Adobe Analytics](/help/getting-started/cja-upgrade/cja-upgrade-disable-appmeasurement.md)
     + Autres méthodes de mise à niveau {#alternative-upgrade-methods}
-      + [Désactiver la collecte de données AppMeasurement](/help/getting-started/cja-upgrade/cja-upgrade-alternative-appmeasurement.md)
+      + [Utiliser la collecte de données AppMeasurement](/help/getting-started/cja-upgrade/cja-upgrade-alternative-appmeasurement.md)
       + [Envoyer la couche de données](/help/getting-started/cja-upgrade/cja-upgrade-alternative-data-layer.md)
       + [Connecteur source Analytics](/help/getting-started/cja-upgrade/cja-upgrade-alternative-source-connector.md)
     + Autres scénarios de mise à niveau {#other-upgrade-scenarios}
       + [Passer du connecteur source Analytics au SDK web](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md)
-      + [Mettre à niveau à partir d’une solution d’analyse autre qu’Adobe Analytics](/help/getting-started/cja-upgrade/cja-upgrade-third-party-solution.md)
+      + [Mettre à niveau à partir d’une solution d’analytics autre qu’Adobe Analytics](/help/getting-started/cja-upgrade/cja-upgrade-third-party-solution.md)
     + Informations supplémentaires {#additional-information}
       + [Comprendre la mise en œuvre d’Analytics](/help/getting-started/cja-upgrade/cja-upgrade-analytics-implementation.md)
       + [Prise en charge des fonctionnalités Adobe Analytics lors de la mise à niveau](/help/getting-started/cja-upgrade/cja-upgrade-adobe-analytics-features.md)
       + [Fonctionnalités Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-customer-journey-analytics-features.md)
-      + [Options d’implémentation du SDK web](/help/getting-started/cja-upgrade/cja-upgrade-websdk-implementation.md)
-      + [Configurer le SDK web Adobe Analytics pour Platform](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md)
+      + [Options de mise en œuvre du SDK web](/help/getting-started/cja-upgrade/cja-upgrade-websdk-implementation.md)
+      + [Configurer le SDK web Adobe Analytics pour la plateforme](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md)
       + [Utiliser la personnalisation avec Adobe Journey Optimizer](/help/getting-started/cja-upgrade/cja-upgrade-personalization-journeyoptimizer.md)
-  + Comparer à Adobe Analytics {#cja-aa-comparison}
+  + Comparer avec Adobe Analytics {#cja-aa-comparison}
     + [Vue d’ensemble](../getting-started/aa-vs-cja/overview.md)
-    + [Utilisation de données Adobe Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
+    + [Utiliser les données Adobe Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
     + [Mapping des données Cross-IMS](../getting-started/aa-vs-cja/mapping-data-ims-orgs.md)
     + [Prise en charge des fonctionnalités](../getting-started/aa-vs-cja/cja-aa.md)
     + [Comparaison de la terminologie](../getting-started/aa-vs-cja/terminology.md)
     + [Comparaison du traitement des données](../getting-started/aa-vs-cja/data-processing-comparisons.md)
     + [Environnements](../getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
-    + [Traitement d’Analytics par rapport à la préparation des données](../getting-started/aa-vs-cja/pr-vista-dataprep.md)
+    + [Traitement Adobe Analytics par rapport à la préparation des données](../getting-started/aa-vs-cja/pr-vista-dataprep.md)
     + [Identités Analytics](../getting-started/aa-vs-cja/aaid-ecid-adc.md)
-  + [Évolution à partir d’Adobe Analytics](../getting-started/aa-to-cja.md)
-  + [Guide de l’utilisateur pour les utilisateurs et utilisatrices d’Adobe Analytics](../getting-started/aa-to-cja-user.md)
+  + [Évolution depuis Adobe Analytics](../getting-started/aa-to-cja.md)
+  + [Guide de l’utilisateur pour les personnes utilisant Adobe Analytics](../getting-started/aa-to-cja-user.md)
   + Transition à partir de Google Analytics 4 {#ga-to-cja}
     + [Vue d’ensemble](/help/getting-started/ga-to-cja/home.md)
     + [Modèle de données](/help/getting-started/ga-to-cja/data-model.md)
@@ -264,9 +264,9 @@ ht-degree: 90%
     + [Attribution](../analysis-workspace/c-panels/attribution.md)
     + [Expérimentation](../analysis-workspace/c-panels/experimentation.md)
     + [Tableau à structure libre](../analysis-workspace/c-panels/freeform-panel.md)
-    + [Audience moyenne par minute de média](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)
+    + [Audience moyenne par minute pour les médias](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)
     + [Visites simultanées de médias](../analysis-workspace/c-panels/media-concurrent-viewers.md)
-    + [Temps de lecture de média](../analysis-workspace/c-panels/media-playback-time-spent.md)
+    + [Temps passé en lecture de médias](../analysis-workspace/c-panels/media-playback-time-spent.md)
     + [Élément suivant ou précédent](../analysis-workspace/c-panels/next-previous.md)
     + [Aperçu rapide](../analysis-workspace/c-panels/quickinsight.md)
   + Traiter et partager {#curate-share}
@@ -322,8 +322,8 @@ ht-degree: 90%
   + [Tâches d’édition](../mobile-app/curator.md)
   + [Créer des cartes de performance mobiles](../mobile-app/create-scorecard.md)
   + [Gérer les cartes de performance mobiles](../mobile-app/manage-scorecard.md)
-  + [Préparation des utilisateurs en charge de lʼexécution à lʼutilisation des tableaux de bord](../mobile-app/set-up-execs.md)
-  + [Guide pour une prise en main rapide destiné aux utilisateurs en charge de l’exécution](../mobile-app/executive.md)
+  + [Configurer les cadres dirigeants pour utiliser les tableaux de bord](../mobile-app/set-up-execs.md)
+  + [Guide de démarrage rapide pour les cadres dirigeants](../mobile-app/executive.md)
 
 + Analyse guidée {#guided-analysis}
   + [Vue d’ensemble](../guided-analysis/overview.md)
@@ -433,6 +433,7 @@ ht-degree: 90%
       + {hide-from-toc}[Mapper les colonnes](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)
       + {hide-from-toc}[Créer un flux de données](/help/components/exports/cja-data-feeds/create-feed.md)
       + {hide-from-toc}[Segmentation dans les flux de données](/help/components/exports/cja-data-feeds/df-segmentation.md)
+      + {hide-from-toc}[Utiliser des champs dérivés dans les flux de données](/help/components/exports/cja-data-feeds/df-derived-fields.md)
   + Dictionnaire de données {#data-dictionary}
     + [Vue d’ensemble](../components/data-dictionary/data-dictionary-overview.md)
     + [Afficher des informations sur les composants dans le dictionnaire de données](../components/data-dictionary/view-data-dictionary.md)
@@ -482,7 +483,7 @@ ht-degree: 90%
   + [Vue d’ensemble](/help/integrations/overview.md)
   + [Intégrer Adobe Analytics](/help/integrations/aa.md)
   + [Intégrer Target](/help/integrations/at.md)
-  + [Intégrer des données Journey Optimizer](/help/integrations/ajo.md)
+  + [Intégrer des données Journey Optimizer](/help/integrations/ajo.md)
   + [Intégrer les données de gestion des décisions](/help/integrations/ajo-od.md)
   + [Intégrer l’IA dédiée aux clientes et clients](/help/integrations/customer-ai.md)
   + [Intégration de Brand Visibility](/help/integrations/bv.md)
@@ -499,7 +500,7 @@ ht-degree: 90%
     + [Utiliser les dimensions du canal marketing](../use-cases/aa-data/marketing-channels.md)
     + [Combiner des suites de rapports avec différents schémas](../use-cases/aa-data/combine-report-suites.md)
   + B2B {#b2b}
-    + [Exemple de projet B2B basé sur les personnes](../use-cases/b2b/example.md)
+    + [Exemple de projet B2B centré sur les personnes](../use-cases/b2b/example.md)
     + B2B Edition {#b2b-edition}
       + [Vue d’ensemble des cas d’utilisation](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)
       + [Configuration](/help/use-cases/b2b/b2b-edition/setup.md)
@@ -544,7 +545,7 @@ ht-degree: 90%
 
     + Champs dérivés {#derived-fields}
       + [Directives relatives aux champs dérivés](/help/use-cases/data-views/derived-fields/guidelines.md)
-      + [Créer un rapport sur le trafic généré par LLM et IA](/help/use-cases/data-views/derived-fields/ai-traffic.md)
+      + [Créer un rapport sur le trafic généré par des LLM et par l’IA](/help/use-cases/data-views/derived-fields/ai-traffic.md)
       + [Créer un rapport sur les objectifs](/help/use-cases/data-views/derived-fields/goals-using-derived-fields.md)
   + Analyse de produit {#product-analysis}
     + [Analyse de produit](/help/use-cases/product-analysis.md)
@@ -555,7 +556,7 @@ ht-degree: 90%
     + Google Analytics {#ga}
       + [Migrer des données à partir de Google Analytics](/help/use-cases/third-party/ga/overview.md)
       + [Ingérer des données historiques de Google Analytics](/help/use-cases/third-party/ga/backfill.md)
-      + [Configurer des données de Google Analytics en streaming](/help/use-cases/third-party/ga/streaming.md)
+      + [Configurer la diffusion en continu des données de Google Analytics](/help/use-cases/third-party/ga/streaming.md)
       + [Créer un rapport sur des données de Google Analytics](/help/use-cases/third-party/ga/report.md)
     + Quantum Metric {#qm}
       + [Vue d’ensemble](/help/use-cases/third-party/quantum-metric/qm-overview.md)
@@ -585,6 +586,6 @@ ht-degree: 90%
   + [Optimiser les performances](../technotes/optimizing-performance.md)
   + [Gérer l’utilisation](../technotes/estimate-usage.md)
 
-+ [API Customer Journey Analytics](https://developer.adobe.com/cja-apis/docs/)
++ [API Customer Journey Analytics (parcours client)](https://developer.adobe.com/cja-apis/docs/)
 + [Serveur MCP Customer Journey Analytics](https://developer.adobe.com/analytics-mcp/docs/cja/)
 
