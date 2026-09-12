@@ -17,10 +17,10 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 18b3b42cafd437749041bc1d408e60e77b42e1fc
 workflow-type: tm+mt
-source-wordcount: 418
-ht-degree: 89%
+source-wordcount: 488
+ht-degree: 78%
 
 ---
 
@@ -87,6 +87,17 @@ Notez que sur votre clavier, les symboles suivants peuvent être utilisés :
 | Déplacer le panneau vers le haut | **[!UICONTROL *cmd + opt + up *]** | **[!UICONTROL *Alt + Ctrl + Haut *]** |
 | Déplacer le panneau vers le bas | **[!UICONTROL *cmd + opt + down *]** | **[!UICONTROL *Alt+Ctrl+Bas *]** |
 
+## Redimensionnement du panneau ou des actions de visualisation
+
+| Action | Raccourci Mac | Raccourci Windows |
+| --- | --- | --- |
+| Redimensionner plus largement | **[!UICONTROL *cmd + opt + shift + right *]** | **[!UICONTROL *ctrl + alt + maj + droite *]** |
+| Redimensionner plus étroit | **[!UICONTROL *cmd + opt + shift + left *]** | **[!UICONTROL *ctrl + alt + maj + gauche *]** |
+| Redimensionner plus haut | **[!UICONTROL *cmd + opt + shift + down *]** | **[!UICONTROL *ctrl+alt+maj+bas *]** |
+| Redimensionner plus court | **[!UICONTROL *cmd + opt + shift + up *]** | **[!UICONTROL *ctrl + alt + maj + haut *]** |
+
+La largeur est redimensionnée par pas d’une colonne de grille et la hauteur est redimensionnée par pas d’une cellule de grille (environ 25 pixels).
+
 ## Actions de démocratisation
 
 | Action | Raccourci Mac | Raccourci Windows |
@@ -100,4 +111,4 @@ Notez que sur votre clavier, les symboles suivants peuvent être utilisés :
 | Partager le projet | **[!UICONTROL *Cmd+G *]** | **[!UICONTROL *Ctrl+G *]** |
 | Obtenir le lien du projet | **[!UICONTROL *Alt+L *]** | **[!UICONTROL *Alt+L *]** |
 | Envoyer le fichier maintenant | **[!UICONTROL *Alt+S *]** | **[!UICONTROL *Alt+S *]** |
-| Envoyer le fichier selon le calendrier | **[!UICONTROL *Maj+Alt+S *]** | **[!UICONTROL *Maj+Alt+S *]** |
+| Envoyer le fichier selon le planning | **[!UICONTROL *Maj+Alt+S *]** | **[!UICONTROL *Maj+Alt+S *]** |
