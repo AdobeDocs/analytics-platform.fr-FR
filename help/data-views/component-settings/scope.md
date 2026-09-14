@@ -8,17 +8,15 @@ hide: true
 source-git-commit: 9df4c8cff6c0c044902453e5fb8380fbb5c5ac2d
 workflow-type: tm+mt
 source-wordcount: '170'
-ht-degree: 4%
-
+ht-degree: 18%
 ---
 
-
-# Paramètres des composants : portée {#scope-component-settings}
+# Paramètres des composants : portée {#scope-component-settings}
 
 >[!CONTEXTUALHELP]
 >id="dataview_component_metric_scope"
 >title="Portée"
->abstract="Déterminer la portée d’un composant lorsqu’il est utilisé dans des rapports. Vous pouvez choisir entre basé sur un événement, basé sur un profil ou basé sur un total."
+>abstract="Permet de déterminer la portée d’un composant lorsqu’il est utilisé dans des rapports. Vous pouvez choisir entre basé sur un événement, basé sur un profil ou basé sur un total."
 
 La portée d’un composant de mesure détermine la manière dont il est utilisé dans les rapports.
 

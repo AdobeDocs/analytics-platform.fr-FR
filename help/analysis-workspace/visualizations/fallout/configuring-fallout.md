@@ -7,27 +7,31 @@ role: User
 TQID: https://experienceleague.adobe.com/Oyt-8i7vBYjTxBk4mX3dN3GeohZvzH0dh10kBS6UBx4
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments, Segments (CJA)
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 source-git-commit: 09d8d3fd3cbc6e4ddfc30aca96b041a7c51002d0
 workflow-type: tm+mt
-source-wordcount: 930
-ht-degree: 42%
-
+source-wordcount: '930'
+ht-degree: 44%
 ---
+# Configurer une visualisation d’abandon {#configure-fallout-visualization}
 
-# Configuration d’une visualisation Abandons {#configure-fallout-visualization}
 
+Vous pouvez spécifier des **points de contact** pour créer une séquence d’abandons multidimensionnelle. Dans de nombreux cas, un point de contact est une page de votre site. Ils ne se limitent toutefois pas à cela. Par exemple, vous pouvez ajouter des événements, tels que les unités, ainsi que les personnes uniques et les visites renouvelées. Vous pouvez aussi ajouter des dimensions, telles qu’une catégorie, un type de navigateur ou un terme de recherche interne.
 
-Vous pouvez spécifier des **points de contact** pour créer une séquence d’abandons multidimensionnelle. Dans de nombreux cas, un point de contact est une page de votre site. Ils ne se limitent toutefois pas à cela. Vous pouvez par exemple ajouter des événements, tels que des unités, ainsi que des personnes uniques et des visites récurrentes. Vous pouvez aussi ajouter des dimensions, telles qu’une catégorie, un type de navigateur ou un terme de recherche interne.
-
-Il est possible en outre d’ajouter des segments dans un point de contact, Par exemple, vous pouvez comparer des segments, tels que les utilisateurs d’iOS et d’Android. Faites glisser les segments à comparer en haut de l’abandon pour ajouter des informations sur ces segments au rapport sur les abandons. Si vous souhaitez n’afficher que ces segments, vous pouvez supprimer la ligne de base Toutes les personnes.
+Vous pouvez également ajouter des segments dans un point de contact. Par exemple, vous pouvez comparer des segments, tels que les utilisateurs d’iOS et d’Android. Faites glisser les segments à comparer en haut de l’abandon pour ajouter des informations sur ces segments au rapport sur les abandons. Si vous souhaitez n’afficher que ces segments, vous pouvez supprimer la ligne de base Toutes les personnes.
 
 Les visualisations des abandons ne comportent aucune limitation quant au nombre de points de contact que vous pouvez ajouter ou au nombre de composants que vous pouvez utiliser.
 
@@ -47,7 +51,7 @@ Vous pouvez effectuer un cheminement sur des dimensions, des mesures et des segm
 
 1. Continuez à ajouter des points de contact jusqu’à ce que votre séquence soit complète.
 
-   Les nombres encadrés dans la partie grise de la barre correspondent aux abandons entre les points de contact (et non à l’ensemble des abandons à ce point). Les nombres entourés dans la partie verte de la barre indiquent la réussite de l’abaissement du point de contact précédent au point de contact actuel.
+   Les nombres entourés dans la partie grise de la barre indiquent l’abandon entre les points de contact (et non l’abandon global jusqu’à ce point) Les nombres entourés dans la partie verte de la barre indiquent la réussite de l’abaissement du point de contact précédent au point de contact actuel.
 
    ![Visualisation des abandons](assets/fallout-visualization.png)
 
@@ -77,7 +81,7 @@ Vous pouvez effectuer un cheminement sur des dimensions, des mesures et des segm
 >[!CONTEXTUALHELP]
 >id="workspace_fallout_container"
 >title="Conteneur d’abandons"
->abstract="Sélectionnez un conteneur pour analyser le cheminement. Cette sélection vous aide à comprendre l’engagement et limite l’analyse au conteneur sélectionné."
+>abstract="Sélectionnez un conteneur pour analyser le cheminement. Cette sélection vous permet de comprendre l’engagement et de contraindre l’analyse au conteneur sélectionné."
 
 Dans le cadre de la visualisation, des paramètres spécifiques sont disponibles.
 
@@ -108,10 +112,10 @@ Les options de menu contextuel suivantes sont disponibles :
 
 | Option | Description |
 |--- |--- |
-| **[!UICONTROL Tendance du point de contact]** | Consultez dans un graphique linéaire les données sur les tendances d’un point de contact, avec quelques données de détection des anomalies prédéfinies. |
-| **[!UICONTROL Tendance du point de contact (%)]** | Calcule la tendance du pourcentage total d’abandons. |
+| **[!UICONTROL Tendance du point de contact]** | Affichez dans un graphique linéaire les données sur les tendances d’un point de contact, avec quelques données de détection des anomalies préconfigurées. |
+| **[!UICONTROL Tendance du point de contact (%)]** | Affiche la tendance du pourcentage total d’abandon. |
 | **[!UICONTROL Tendance de tous les points de contact (%)]** | Calcule la tendance de tous les pourcentages des points de contact de l’abandon (sauf «**[!UICONTROL Toutes les personnes]** si inclus) sur le même graphique. |
-| **[!UICONTROL Ventiler les abandons à ce point de contact]** | Vérifiez ce que les personnes ont fait entre deux points de contact (ce point de contact et le point de contact suivant) si elles ont continué jusqu’au point de contact suivant. Un tableau à structure libre présentant les dimensions est ainsi créé. Vous pouvez remplacer des dimensions et d’autres éléments du tableau. Par exemple, un tableau intitulé **[!UICONTROL Abandon : toutes les personnes > Page est égal à n’importe quel emplacement de l’accueil]** et contient **[!UICONTROL Page]** comme dimension et **[!UICONTROL Personnes]** segmenté par la mesure [segment rapide de projet uniquement](/help/components/segments/seg-quick.md) **[!UICONTROL Abandon : toutes les personnes > Page est égal à n’importe quel emplacement de l’accueil]** comme mesure. Inspectez le segment pour comprendre comment le segment de secours est déterminé. |
+| **[!UICONTROL Ventiler les abandons à ce point de contact]** | Affiche les actions effectuées par les personnes entre deux points de contact (ce point de contact et le suivant) si elles ont poursuivi leur parcours jusqu’au point de contact suivant. Un tableau à structure libre présentant les dimensions est ainsi créé. Vous pouvez remplacer des dimensions et d’autres éléments du tableau. Par exemple, un tableau intitulé **[!UICONTROL Abandon : toutes les personnes > Page est égal à n’importe quel emplacement de l’accueil]** et contient **[!UICONTROL Page]** comme dimension et **[!UICONTROL Personnes]** segmenté par la mesure [segment rapide de projet uniquement](/help/components/segments/seg-quick.md) **[!UICONTROL Abandon : toutes les personnes > Page est égal à n’importe quel emplacement de l’accueil]** comme mesure. Inspectez le segment pour comprendre comment le segment de secours est déterminé. |
 | **[!UICONTROL Ventiler les abandons à ce point de contact]** | Affichez ce que les personnes qui n’ont pas réussi à faire via le funnel ont fait immédiatement après l’étape sélectionnée. Un tableau à structure libre présentant les dimensions est ainsi créé. Vous pouvez remplacer des dimensions et d’autres éléments du tableau. Par exemple, un tableau intitulé **[!UICONTROL Abandon : personnes > Page est égal à n’importe quel accueil]** et contient **[!UICONTROL Page]** comme dimension et **[!UICONTROL Personnes]** segmenté par la mesure [segment rapide de projet uniquement](/help/components/segments/seg-quick.md) **[!UICONTROL Abandon : tous les visiteurs > Page est égal à n’importe quel accueil]** segment comme mesure. Examinez le segment pour comprendre comment le segment d’abandon est déterminé. |
 | **[!UICONTROL Créer un segment à partir du point de contact]** | Créez un segment à partir du point de contact sélectionné. |
 

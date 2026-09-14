@@ -7,32 +7,38 @@ role: Admin
 hide: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+    internal-label: Data governance
   - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
 subfeature_v2:
   - id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
+    internal-label: Privacy
   - id: d3fb138f-79e4-4a81-aedb-76dd93560085
+    internal-label: Experience Platform integration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 source-git-commit: 4661a066f90991e6fb149c6909ef4a9f75cf02ac
 workflow-type: tm+mt
-source-wordcount: 1326
-ht-degree: 11%
-
+source-wordcount: '1326'
+ht-degree: 28%
 ---
-
-# Configuration des rapports et du filtrage liés au consentement {#configure-consent-reporting}
+# Configurer les rapports et le filtrage liés au consentement {#configure-consent-reporting}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-consent-merge-policy"
 >title="Politique de fusion"
->abstract="Les politiques de fusion combinent les données de profil de plusieurs jeux de données en profils clientèle unifiés utilisés pour la création d’audiences. Sélectionnez la politique de fusion qui correspond au jeu de données Profil contenant les données d’appartenance à la politique de consentement (champ `consentPoliciesIDMap`) sur lesquelles vous souhaitez créer des rapports. Vous pouvez également consulter votre équipe de données pour savoir quelles audiences sont associées à chaque politique de fusion."
+>abstract="Les politiques de fusion combinent les données de profil de plusieurs jeux de données en profils clientèle unifiés utilisés pour la création d’audiences. Sélectionnez la politique de fusion qui correspond au jeu de données de profils qui contient les données d’appartenance à la politique de consentement (le champ `consentPoliciesIDMap`) sur lesquelles vous souhaitez établir un rapport. Vous pouvez également consulter votre équipe de données pour savoir quelles audiences sont associées à chaque politique de fusion."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -41,7 +47,7 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="cja-consent-sandbox"
 >title="Sandbox"
->abstract="Sélectionnez le sandbox qui contient les jeux de données de profil Experience Platform appropriés. Ces jeux de données doivent contenir les données de consentement pour lesquelles vous souhaitez créer des rapports dans Analysis Workspace."
+>abstract="Sélectionnez le sandbox qui contient les jeux de données de profil Experience Platform appropriés. Ces jeux de données doivent contenir les données de consentement pour lesquelles vous souhaitez créer des rapports dans Analysis Workspace."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -50,7 +56,7 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="cja-consent-person-id"
 >title="ID de personne"
->abstract="Sélectionnez un champ dans le schéma basé sur le modèle qui représente l’ID de personne. La sélection est limitée à la liste des champs du schéma qui sont marqués comme « Identité » et qui possèdent un espace de noms d’identité."
+>abstract="Sélectionnez un champ dans le schéma basé sur le modèle qui représente l’identifiant de personne. La sélection se limite à la liste des champs du schéma qui sont marqués comme « identité » et qui possèdent un espace de noms d’identité."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -59,7 +65,7 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="cja-consent-identity-namespace"
 >title="Utiliser l’espace de noms d’identité principal"
->abstract="Activez cette option si vous souhaitez que Customer Journey Analytics recherche l’identité dans le mappage d’identités marqué d’un attribut primary=true et utilise cette identité comme ID de personne pour cette ligne. Cette identité est la clé primaire utilisée dans Experience Platform pour le partitionnement. <br/>Si vous laissez cette option désactivée, sélectionnez un espace de noms dans le champ Espace de noms d’identité ci-dessous. Customer Journey Analytics recherche le mappage d’identité de chaque ligne pour cette clé d’espace de noms et utilise l’identité sous cet espace de noms comme identifiant de personne pour cette ligne."
+>abstract="Activez cette option si vous souhaitez que Customer Journey Analytics trouve l’identité dans le mappage d’identité signalée par un attribut primary=true, puis l’utilise comme identifiant de personne pour cette ligne. Cette identité est la clé primaire utilisée dans Experience Platform pour le partitionnement. <br/>Si vous laissez cette option désactivée, sélectionnez un espace de noms dans le champ Espace de noms d’identité ci-dessous. Customer Journey Analytics recherche le mappage d’identité de chaque ligne pour cette clé d’espace de noms et utilise l’identité sous cet espace de noms comme identifiant de personne pour cette ligne."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -67,8 +73,8 @@ ht-degree: 11%
 
 >[!CONTEXTUALHELP]
 >id="cja-consent-enable-reporting"
->title="Activer la création de rapports"
->abstract="Activez cette option pour utiliser Analysis Workspace afin de créer des rapports sur les données de consentement disponibles dans votre connexion. Les dimensions et les mesures de la politique de consentement sont ajoutées aux vues de données que vous sélectionnez."
+>title="Activer les rapports"
+>abstract="Activez cette option pour utiliser Analysis Workspace afin de créer des rapports sur les données de consentement disponibles dans votre connexion. Les dimensions et les mesures de la politique de consentement sont ajoutées aux vues de données que vous sélectionnez."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -77,7 +83,7 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="cja-consent-enable-filtering"
 >title="Activer le filtrage"
->abstract="Activez cette option pour exclure les données des visiteurs non consentants de l’ingestion dans Customer Journey Analytics. Lorsqu’elles sont activées, les données d’un visiteur ne sont ingérées que si ce dernier correspond à toutes les politiques de consentement activées ci-dessous. <br>Cette option est destinée aux organisations qui ont besoin d’exclure les données des visiteurs non consentants au moment de l’ingestion."
+>abstract="Activez cette option pour exclure de l’ingestion dans Customer Journey Analytics les données des visiteurs et visiteuses n’ayant pas donné leur consentement. Lorsqu’elles sont activées, les données de la personne qui visite ne sont ingérées que si cette dernière respecte toutes les politiques de consentement activées ci-dessous. <br>Cette option est destinée aux organisations qui ont besoin d’exclure au moment de l’ingestion les données des visiteurs et visiteuses n’ayant pas donné leur consentement."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -112,7 +118,7 @@ Pour créer une configuration de rapport et de filtrage de consentement :
 
    Les rapports et le filtrage relatifs au consentement sont appliqués au niveau de la connexion. Toutes les vues de données sous une connexion configurée héritent du même comportement.
 
-1. Dans le champ **[!UICONTROL ID de personne]**, sélectionnez un champ dans le schéma basé sur un modèle qui représente l’ID de personne. La sélection est limitée à la liste des champs du schéma qui sont marqués comme « Identité » et qui possèdent un espace de noms d’identité.
+1. Dans le champ **[!UICONTROL ID de personne]**, sélectionnez un champ dans le schéma basé sur un modèle qui représente l’ID de personne. La sélection se limite à la liste des champs du schéma qui sont marqués comme « identité » et qui possèdent un espace de noms d’identité.
 
 1. Choisissez d’activer ou non la création de rapports pour les données de consentement.
 
