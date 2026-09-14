@@ -54,7 +54,7 @@ Une conversation est le niveau de conteneur ou de regroupement. Ce conteneur est
 * Comment le sentiment a-t-il changé au cours d’une conversation ?
 * Quelles conversations ont finalement abouti à une conversion ?
 
-Pour plus d’informations sur l’implémentation, reportez-vous à l’objet [conversation](./conversation-insights-implementation.md#conversation) dans la documentation [ Implémenter des informations sur la conversation](./conversation-insights-implementation.md).
+Pour plus d’informations sur l’implémentation, reportez-vous à l’objet [conversation](./conversation-insights-implementation.md#conversation) dans la documentation [&#x200B; Implémenter des informations sur la conversation](./conversation-insights-implementation.md).
 
 ### Tourner
 
