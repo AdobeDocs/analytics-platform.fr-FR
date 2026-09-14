@@ -1,35 +1,34 @@
 ---
-title: Configurer la configuration des informations de conversation
+title: Créer Ou Modifier Une Configuration D’Informations De Conversation
 description: Découvrez comment configurer les configurations de Conversation Insights.
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
 hold: true
-source-git-commit: 8e446c15e998e660b42a09681fe78b885711e41f
+source-git-commit: b29ee2f04a1775dca6a8fd93c3ac3050b67f0ceb
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: '638'
 ht-degree: 8%
 ---
-# Configuration des informations de conversation
+# Création ou modification de configurations
 
 
 Conversation Insights vous permet d’analyser les conversations (à partir de modèles de langage volumineux (LLM) ou d’êtres humains) à grande échelle et de donner à ces conversations un contexte dans le parcours client complet. Grâce à Conversation Insights, vous pouvez comprendre l’impact des représentants sur les résultats réels des utilisateurs.
 
-
-## Créer ou modifier une configuration
+Grâce à l’interface de configuration des informations de conversation, vous pouvez rapidement créer ou modifier une configuration et les artefacts associés (connexion, vues de données, etc.).
 
 Lorsque vous créez ou modifiez une configuration Insights de conversation, vous spécifiez le sandbox et les jeux de données d’événement qui contiennent des invites, des réponses et des données de commentaires. Vous sélectionnez également la connexion Customer Journey Analytics à laquelle vous souhaitez ajouter ces jeux de données. Ainsi que la vue de données à laquelle vous souhaitez ajouter les mesures et dimensions Insights de conversation.
 
 Seuls les administrateurs système peuvent créer ou modifier des configurations de Conversation Insights.
 
-Vous pouvez créer ou modifier des configurations à partir de l’interface [&#x200B; Configurations de Conversation Insights &#x200B;](./conversation-insights-manage.md).
+Vous pouvez créer ou modifier des configurations à partir de l’interface [ Configurations de Conversation Insights ](./conversation-insights-manage.md).
 
-### Restaurer le jeu de données fusionné manquant
+## Restaurer le jeu de données fusionné manquant
 
 Si vous modifiez une configuration et que le jeu de données fusionné qui a été généré pour la configuration n’existe plus, sélectionnez **[!UICONTROL Restaurer]** pour régénérer le jeu de données fusionné.
 
 
-### Étapes de configuration
+## Étapes de configuration
 
 Pour chaque configuration :
 

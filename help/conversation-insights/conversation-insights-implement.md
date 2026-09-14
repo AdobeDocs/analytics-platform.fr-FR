@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
 hold: true
-source-git-commit: 8e446c15e998e660b42a09681fe78b885711e41f
+source-git-commit: b29ee2f04a1775dca6a8fd93c3ac3050b67f0ceb
 workflow-type: tm+mt
 source-wordcount: '2257'
 ht-degree: 7%
@@ -18,8 +18,9 @@ Cet article décrit les étapes de mise en œuvre requises.
 
 >[!PREREQUISITES]
 >
->Vous devez disposer d’un environnement Experience Platform (organisation et sandbox) pour collecter les données.
->Votre organisation Adobe doit être activée pour les groupes de champs agent expérimental et conversation.
+>* Vous devez disposer d’un environnement Experience Platform (organisation et sandbox) pour collecter les données.
+>* Votre organisation Adobe doit être activée pour les groupes de champs agent expérimental et conversation.
+>
 
 ## Schéma et jeux de données
 
@@ -304,6 +305,10 @@ Un signal possède les champs suivants.
 | `metadata[]` | Métadonnées clé/valeur définies par le producteur facultatives. |
 
 
+Le service d&#39;extraction de signaux renseigne l&#39;objet `signals` pour le jeu de données de signaux.
+
+Le conteneur de `signals[].attributes.{subjects,intents,tones,sentiment}` précédent est obsolète.
+
 #### Conversation
 
 Consultez ci-dessous les détails complets d’un objet de conversation.
@@ -356,9 +361,6 @@ Consultez ci-dessous les détails complets d’un objet de conversation.
 +++
 
 
-Le service d&#39;extraction de signaux renseigne l&#39;objet `signals` pour le jeu de données de signaux.
-
-Le conteneur de `signals[].attributes.{subjects,intents,tones,sentiment}` précédent est obsolète.
 
 
 ### Groupes de champs supplémentaires
@@ -366,7 +368,7 @@ Le conteneur de `signals[].attributes.{subjects,intents,tones,sentiment}` préc�
 Vous pouvez ajouter des groupes de champs facultatifs au schéma que vous utilisez pour les jeux de données d’invite, de réponse et de commentaires. Par exemple :
 
 * Groupe de champs **Détails web**. Pour capturer les détails de la page web dans laquelle la conversation a été incorporée.
-* Groupe de champs Détails du Commerce **&#x200B;**. Pour capturer les détails du produit recommandé mentionné dans le cadre de la conversation.
+* Groupe de champs Détails du Commerce ****. Pour capturer les détails du produit recommandé mentionné dans le cadre de la conversation.
 
 
 

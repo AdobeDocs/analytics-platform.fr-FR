@@ -5,12 +5,12 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
 hold: true
-source-git-commit: 8e446c15e998e660b42a09681fe78b885711e41f
+source-git-commit: b29ee2f04a1775dca6a8fd93c3ac3050b67f0ceb
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '366'
 ht-degree: 6%
 ---
-# Gérer les configurations des informations de conversation
+# Gestion des configurations
 
 Après avoir [créé des configurations de conversation insights](/help/conversation-insights/conversation-insights-configure.md), vous pouvez les afficher, les modifier ou les supprimer.
 
