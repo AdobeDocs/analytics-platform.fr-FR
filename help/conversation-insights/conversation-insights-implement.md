@@ -368,7 +368,7 @@ Consultez ci-dessous les détails complets d’un objet de conversation.
 Vous pouvez ajouter des groupes de champs facultatifs au schéma que vous utilisez pour les jeux de données d’invite, de réponse et de commentaires. Par exemple :
 
 * Groupe de champs **Détails web**. Pour capturer les détails de la page web dans laquelle la conversation a été incorporée.
-* Groupe de champs Détails du Commerce ****. Pour capturer les détails du produit recommandé mentionné dans le cadre de la conversation.
+* Groupe de champs Détails du Commerce **&#x200B;**. Pour capturer les détails du produit recommandé mentionné dans le cadre de la conversation.
 
 
 

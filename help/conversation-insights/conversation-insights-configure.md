@@ -21,7 +21,7 @@ Lorsque vous créez ou modifiez une configuration Insights de conversation, vous
 
 Seuls les administrateurs système peuvent créer ou modifier des configurations de Conversation Insights.
 
-Vous pouvez créer ou modifier des configurations à partir de l’interface [ Configurations de Conversation Insights ](./conversation-insights-manage.md).
+Vous pouvez créer ou modifier des configurations à partir de l’interface [&#x200B; Configurations de Conversation Insights &#x200B;](./conversation-insights-manage.md).
 
 ## Restaurer le jeu de données fusionné manquant
 
