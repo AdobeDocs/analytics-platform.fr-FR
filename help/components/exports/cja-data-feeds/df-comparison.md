@@ -9,22 +9,26 @@ autotag-review: '2026-05-19T08:44:26.806Z'
 TQID: 'https://experienceleague.adobe.com/R7c5-VutwSkyghNvwC2gZv2KUEJoa263AN0Tkdg3w4o'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+    internal-label: Exports
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: 4872f0078640fbd358a60a6d7baeb3ea575d3559
+    internal-label: Customer journeys
+source-git-commit: 555aef15933d87e5bbb3e3ec8b15d99a96ac25fe
 workflow-type: tm+mt
-source-wordcount: 1629
+source-wordcount: '1699'
 ht-degree: 0%
-
 ---
-
 # Comparaison des flux de données dans Customer Journey Analytics et Adobe Analytics
 
 {{release-limited-testing}}
@@ -40,6 +44,8 @@ Pour une comparaison des flux de données par rapport à d’autres méthodes d�
 Les fonctionnalités suivantes sont disponibles dans les flux de données Customer Journey Analytics, mais ne sont pas disponibles dans les flux de données Adobe Analytics :
 
 * **Champs dérivés** : composants personnalisés créés à partir de transformations basées sur des règles qui peuvent être incluses dans votre schéma de flux de données. <!-- add benefit -->
+
+* **Paramètres des composants** : les paramètres des composants de la vue de données, tels que la persistance, la déduplication des mesures et le regroupement des valeurs, peuvent transformer la valeur d’un composant directement dans la sortie de votre flux de données, sans nécessiter de SQL.
 
 * **Assemblage** : résolution d’identité entre appareils qui lie les événements sur plusieurs appareils à une seule personne.
 
@@ -80,6 +86,7 @@ Le tableau suivant compare les concepts clés et les options de configuration de
 | **Schéma**<br/> Le schéma de flux de données détermine les colonnes disponibles à inclure dans un flux de données. | Le schéma de flux de données est basé sur la configuration de la vue de données.  Les composants qui peuvent être inclus dans le schéma de flux de données sont un sous-ensemble des composants disponibles dans la configuration des vues de données. | Une liste statique prédéfinie de plus de 1 100 variables. De nombreuses colonnes sont exportées sous la forme de **paires pré-traitées et post-traitées** (par exemple, `eVar1`/`post_eVar1`), ce qui représente une grande partie du nombre de colonnes. |
 | **Créateur de flux de données**<br/> interface utilisée pour configurer les colonnes incluses dans un flux de données. | Utilise un rail de composants avec les mêmes dimensions et mesures nommées disponibles dans la vue de données, correspondant à l’expérience Analysis Workspace. | Utilise une liste plate de noms de variables brutes (tels que `eVar1`, `prop5`) sélectionnés à partir d’un ensemble prédéfini de plus de 1 100 colonnes. Les composants ne sont pas nommés ni décrits au-delà de leur identifiant de variable. |
 | **Champs dérivés**<br/> Composants personnalisés définis à l’aide de transformations basées sur des règles appliquées au moment du rapport. | Pris en charge. Les composants de champ dérivés peuvent être inclus dans le schéma de flux de données avec les dimensions et mesures standard. | Non pris en charge. |
+| **Paramètres des composants**<br/> Paramètres des composants de la vue de données, tels que la persistance, la déduplication des mesures et le regroupement des valeurs, qui transforment la valeur d’un composant au moment du rapport. | Pris en charge pour la plupart des paramètres. Ces paramètres s’appliquent à la sortie des flux de données de la même manière qu’ils s’appliquent dans Analysis Workspace. | Non pris en charge. |
 | **Mises à jour des composants**<br/> Indique si les modifications apportées à la configuration des composants sont répercutées dans les sorties de flux de données passées et futures. | Les modifications apportées aux composants dans la vue de données (comme le changement de nom ou la suppression d’une dimension) se propagent aux futurs flux de données et sont également répercutées dans les renvois. | Les modifications apportées aux composants de la suite de rapports s’appliquent uniquement aux données collectées ultérieurement. |
 | Les jeux de données **recherches**<br/> recherches dans Customer Journey Analytics sont équivalents aux classifications dans Adobe Analytics. | Toutes les recherches sont directement incorporées dans les données. | Les classifications ne sont pas incluses dans les flux de données d’analyse d’Adobe. |
 | **Définition de session**<br/> Définition d’une visite ou d’une limite de session, qui affecte la manière dont les événements sont regroupés et attribués. | Défini dans la vue de données. | Défini au moment de la collecte. |

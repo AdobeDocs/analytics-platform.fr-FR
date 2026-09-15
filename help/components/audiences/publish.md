@@ -7,27 +7,36 @@ role: User
 TQID: https://experienceleague.adobe.com/BPbSzyh6eg3QC6NcAVgo06GAISzVH2CX35Z-Q32xMbE
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments, Segments (CJA)
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
   - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+    internal-label: Audiences
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 source-git-commit: 87de19a64e49f83c99df7980828b97a1da2c2d16
 workflow-type: tm+mt
-source-wordcount: 2520
-ht-degree: 93%
-
+source-wordcount: '2520'
+ht-degree: 96%
 ---
-
 # Créer et publier des audiences {#create-and-publish-audiences}
 
 <!-- markdownlint-disable MD034 -->
@@ -35,7 +44,7 @@ ht-degree: 93%
 >[!CONTEXTUALHELP]
 >id="components_audiences_refreshfrequency"
 >title="Fréquence d’actualisation"
->abstract="Fréquence à laquelle l’abonnement d’une audience est réévalué. <br/>Les requêtes uniques ne sont évaluées qu’une seule fois et ne sont pas prises en compte dans votre limite d’actualisation."
+>abstract="Fréquence à laquelle l’appartenance à une audience est réévaluée. <br/>Les demandes uniques ne sont évaluées qu’une seule fois et ne sont pas prises en compte dans votre limite d’actualisation."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -44,7 +53,7 @@ ht-degree: 93%
 >[!CONTEXTUALHELP]
 >id="components_audiences_audiencelimit"
 >title="Actualiser la limite d’audience"
->abstract="Nombre d’audiences de votre environnement configurées pour s’actualiser automatiquement à une fréquence planifiée. Les limites sont comprises entre 75 et 150, selon vos droits Customer Journey Analytics. Les demandes ponctuelles ne sont pas prises en compte dans cette limite."
+>abstract="Nombre d’audiences de votre environnement configurées pour s’actualiser automatiquement à une fréquence planifiée. Les limites sont comprises entre 75 et 150, selon vos droits Customer Journey Analytics. Les demandes ponctuelles ne sont pas prises en compte dans cette limite."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -53,7 +62,7 @@ ht-degree: 93%
 >[!CONTEXTUALHELP]
 >id="component_audiences_refreshlookbackwindow"
 >title="Actualiser l’intervalle de recherche en amont"
->abstract="Définissez le nombre de jours de recherche en amont à partir desquels une audience est évaluée."
+>abstract="Définissez le nombre de jours rétroactifs à partir d’aujourd’hui sur lesquels une audience est évaluée."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -90,7 +99,7 @@ Lisez cette [vue d’ensemble](/help/components/audiences/audiences-overview.md)
    | --- | --- |
    | Depuis l’interface **[!UICONTROL Audiences publiées]** | Sélectionnez **[!UICONTROL Composants]** > **[!UICONTROL Audiences publiées]** dans le menu Customer Journey Analytics principal. L’interface Audiences s’affiche. Sélectionnez **[!UICONTROL Créer une audience]** et le [!UICONTROL créateur d’audiences] s’ouvre. |
    | Depuis une visualisation dans Analysis Workspace | De nombreuses visualisations dans Analysis Workspace vous permettent de créer une audience à l’aide du menu contextuel. Par exemple, vous pouvez sélectionner **[!UICONTROL Créer une audience]** dans le menu contextuel d’un élément dans un [Tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) ou d’un nœud dans une [Zone de travail de parcours](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md).<p>L’utilisation de cette méthode préremplit le segment dans le créateur d’audiences avec la dimension ou l’élément de dimension que vous avez sélectionné.</p><p>Les visualisations suivantes vous permettent de créer une audience à l’aide du menu de clic droit :</p><ul><li>[Table de cohorte](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)</li><li>[Abandon](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)</li><li>[Flux](/help/analysis-workspace/visualizations/c-flow/flow.md)</li><li>[Tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)</li><li>[Zone de travail de parcours](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)</li><li>[Carte &#x200B;](/help/analysis-workspace/visualizations/map.md#create-an-audience-from-the-map-visualization)<br/>**Remarque :** cette visualisation se trouve dans la phase de test limité de la publication et peut ne pas encore être disponible dans votre environnement.</li><li>[Venn](/help/analysis-workspace/visualizations/venn.md)</li></ul><p>**Note :** les audiences ne peuvent pas inclure de mesures calculées. Si vous essayez de créer une audience qui contient une mesure calculée, la mesure calculée n’est pas incluse dans la définition de l’audience.</p> |
-   | À partir de l’interface d’utilisation de création/modification de segment | Cochez la case qui indique : **[!UICONTROL Créer une audience à partir de ce segment]**. L’utilisation de cette méthode préremplit le segment. Pour plus d’informations, consultez [Créer des segments](/help/components/segments/seg-create.md). |
+   | À partir de l’interface de création/modification de segment | Cochez la case qui indique : **[!UICONTROL Créer une audience à partir de ce segment]**. L’utilisation de cette méthode préremplit le segment. Pour plus d’informations, consultez [Créer des segments](/help/components/segments/seg-create.md). |
 
    {style="table-layout:auto"}
 
@@ -115,9 +124,9 @@ Configurez ces paramètres pour définir ou mettre à jour votre audience.
 | --- | --- |
 | ![Données](/help/assets/icons/Data.svg) | Sélectionnez une vue de données à utiliser pour la création de l’audience. |
 | **[!UICONTROL Nom]** | Nom de l’audience. Par exemple, `Really Interested in Potential Car Buyers` |
-| **[!UICONTROL Balises]** | Toutes les balises que vous souhaitez affecter à l’audience à des fins d’organisation. Vous pouvez sélectionner une ou plusieurs balises préexistantes ou en saisir une nouvelle. |
+| **[!UICONTROL Balises]** | Toutes les balises que vous souhaitez attribuer à l’audience à des fins d’organisation. Vous pouvez sélectionner une ou plusieurs balises préexistantes ou en saisir une nouvelle. |
 | **[!UICONTROL Description]** | Description de l’audience pour la différencier des autres. Par exemple, `Build an audience of really interested potential car buyers` |
-| **[!UICONTROL Fréquence d’actualisation]** | Fréquence à laquelle vous souhaitez actualiser l’audience.<p/><p>Vous pouvez configurer une actualisation planifiée pour un nombre limité d’audiences (entre 75 et 150), en fonction de vos droits Customer Journey Analytics. </p><p>Vous pouvez choisir parmi les options suivantes :</p><ul><li>**[!UICONTROL Une fois]** : demande ponctuelle qui ne doit pas être actualisée. Par exemple, cette option peut s’avérer utile pour des campagnes ponctuelles spécifiques.<br/>Vous devez spécifier une **[!UICONTROL Période ponctuelle]**. Vous pouvez utiliser ![Calendrier](/help/assets/icons/Calendar.svg) pour saisir une période.</li><li>Audience actualisable. Vous pouvez choisir parmi les options d’actualisation planifiée suivantes :<ul><li>**[!UICONTROL Toutes les 4 heures]** : audience qui s’actualise toutes les 4 heures.</li><li>**[!UICONTROL Quotidien]** : audience qui s’actualise quotidiennement.</li><li>**[!UICONTROL Hebdomadaire]** : audience qui s’actualise toutes les semaines.</li><li>**[!UICONTROL Mensuel]** : audience qui s’actualise tous les mois.</li></ul></li>Pour actualiser les audiences, vous devez indiquer les informations suivantes :<ul><li>**[!UICONTROL Actualiser l’intervalle de recherche en amont]**. Définissez le nombre de jours de recherche en amont à partir desquels une audience est évaluée. Vous pouvez effectuer un choix parmi des options ou définir une heure personnalisée. La durée maximale est de 90 jours.</li><li>**[!UICONTROL Date d’expiration]** : permet de définir à quel moment l’audience cesse d’être actualisée. Vous pouvez utiliser ![Calendrier](/help/assets/icons/Calendar.svg) pour sélectionner une date. La valeur par défaut est d’un an à compter de la date de création. Les audiences arrivant à expiration sont traitées de la même manière que les rapports planifiés arrivant à expiration. L’administrateur ou l’administratrice reçoit un e-mail un mois avant l’expiration de l’audience.</li></ul></ul> |
+| **[!UICONTROL Fréquence d’actualisation]** | Fréquence à laquelle vous souhaitez actualiser l’audience.<p/><p>Vous pouvez configurer une actualisation planifiée pour un nombre limité d’audiences (entre 75 et 150), en fonction de vos droits Customer Journey Analytics. </p><p>Vous pouvez choisir parmi les options suivantes :</p><ul><li>**[!UICONTROL Une fois]** : demande ponctuelle qui ne doit pas être actualisée. Par exemple, cette option peut s’avérer utile pour des campagnes ponctuelles spécifiques.<br/>Vous devez spécifier une **[!UICONTROL Période ponctuelle]**. Vous pouvez utiliser ![Calendrier](/help/assets/icons/Calendar.svg) pour saisir une période.</li><li>Audience actualisable. Vous pouvez choisir parmi les options d’actualisation planifiée suivantes :<ul><li>**[!UICONTROL Toutes les 4 heures]** : audience qui s’actualise toutes les 4 heures.</li><li>**[!UICONTROL Quotidien]** : audience qui s’actualise quotidiennement.</li><li>**[!UICONTROL Hebdomadaire]** : audience qui s’actualise toutes les semaines.</li><li>**[!UICONTROL Mensuel]** : audience qui s’actualise tous les mois.</li></ul></li>Pour actualiser les audiences, vous devez indiquer les informations suivantes :<ul><li>**[!UICONTROL Actualiser l’intervalle de recherche en amont]**. Définissez le nombre de jours de recherche en amont à partir desquels une audience est évaluée. Vous pouvez sélectionner une option ou définir une heure personnalisée. La durée maximale est de 90 jours.</li><li>**[!UICONTROL Date d’expiration]** : permet de définir à quel moment l’audience cesse d’être actualisée. Vous pouvez utiliser ![Calendrier](/help/assets/icons/Calendar.svg) pour sélectionner une date. La valeur par défaut est d’un an à compter de la date de création. Les audiences arrivant à expiration sont traitées de la même manière que les rapports planifiés arrivant à expiration. L’administrateur ou l’administratrice reçoit un e-mail un mois avant l’expiration de l’audience.</li></ul></ul> |
 | **[!UICONTROL Filtrer]** | Les filtres sont la principale entrée de l’audience. Effectuez un glisser-déposer d’un ou plusieurs segments depuis le panneau de gauche ![Segmentation](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segment]** vers la zone Segment. Vous pouvez utiliser ![Rechercher](/help/assets/icons/Search.svg) [!UICONTROL *Rechercher des segments*] pour rechercher des segments. Vous pouvez ajouter jusquʼà 20 segments. Les segments peuvent être liés avec des opérateurs **[!UICONTROL Et]** ou **[!UICONTROL Ou]**.<p>Lorsque vous créez une audience à partir d’une visualisation dans Analysis Workspace (un tableau à structure libre ou une zone de travail de parcours, par exemple), tous les segments appliqués au panneau ou à la colonne sont conservés. Vous pouvez supprimer tous les segments appliqués automatiquement.</p> |
 | **[!UICONTROL Prévisualisation des données]** | Sélectionnez ![Infos](/help/assets/icons/Info.svg) pour afficher ou masquer la [Prévisualisation des données](#data-preview) pour la période sélectionnée. |
 
@@ -127,31 +136,31 @@ Le panneau Prévisualisation des données fournit les informations suivantes.
 
 | Élément | Description |
 | --- | --- |
-| **[!UICONTROL Total personnes]** | Résumé du nombre total de personnes dans cette audience. La taille maximale est de 20 millions de personnes. Si votre audience dépasse 20 millions de personnes, vous devez réduire la taille de l’audience avant de pouvoir la publier. |
-| **[!UICONTROL Limite de taille d’audience]** | Visualisation indiquant à quel point cette audience est éloignée de la limite de 20 millions. |
+| **[!UICONTROL Total personnes]** | La synthèse du nombre total de personnes dans cette audience. La taille maximale est de 20 millions de personnes. Si votre audience dépasse 20 millions de personnes, vous devez réduire la taille de l’audience avant de pouvoir la publier. |
+| **[!UICONTROL Limite de taille d’audience]** | Visualisation affichant à quel point cette audience est éloignée de la limite de 20 millions |
 | **[!UICONTROL Retour dʼaudience estimé]** | Vous pouvez utiliser cette valeur pour recibler les personnes de cette audience qui reviennent sur votre site, application mobile ou autre canal.<p>Ici, vous pouvez sélectionner la période (**[!UICONTROL 7 prochains jours]**, **[!UICONTROL 2 prochaines semaines]**, **[!UICONTROL Mois prochain]**) pour l’estimation du nombre de clientes et clients susceptibles de revenir. |
 | **[!UICONTROL Retour estimé]** | Ce nombre vous donne une estimation du nombre de clientes et clients récurrents sur la période que vous avez sélectionnée. Ce nombre est prédit à l’aide du taux d’attrition historique pour cette audience. |
-| **[!UICONTROL Prévisualiser les mesures]** | Vous pouvez sélectionner une mesure spécifique pour voir la manière dont les données de cette mesure sont basées sur l’audience que vous définissez.  Chaque mesure Prévisualisation affiche un total pour la mesure en fonction de l’audience. Et un pourcentage de la mesure basée sur l’audience à partir du total global de la mesure, tel que défini par la vue de données. Par exemple, 381 personnes (la mesure que vous avez sélectionnée) sont le résultat de votre définition d’audience, soit 5 % du nombre total de personnes disponibles dans la vue de données. Vous pouvez sélectionner n’importe quelle mesure disponible dans votre vue de données. |
-| **[!UICONTROL Espaces de noms inclus]** | Espaces de noms spécifiques associés aux personnes de votre audience. Par exemple, ECID, identifiant CRM, adresses électroniques, etc. |
-| **[!UICONTROL Sandbox]** | La [sandbox Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/sandbox/home) dans laquelle réside cette audience. Lorsque vous publiez cette audience sur Platform, vous ne pouvez l’utiliser que dans les limites de ce sandbox. |
+| **[!UICONTROL Prévisualiser les mesures]** | Vous pouvez sélectionner une mesure spécifique pour voir comment les données de cette mesure se présentent pour l’audience que vous définissez.  Chaque mesure Prévisualisation affiche un total pour la mesure en fonction de l’audience. Et un pourcentage de la mesure basée sur l’audience à partir du total global de la mesure, tel que défini par la vue de données. Par exemple, 381 personnes (la mesure que vous avez sélectionnée) sont le résultat de votre définition d’audience, soit 5 % du nombre total de personnes disponibles dans la vue de données. Vous pouvez sélectionner n’importe quelle mesure disponible dans votre vue de données. |
+| **[!UICONTROL Espaces de noms inclus]** | Espaces de noms spécifiques associés aux personnes de votre audience. Par exemple, ECID, identifiant de GRC, adresses e-mail, etc. |
+| **[!UICONTROL Sandbox]** | La [sandbox Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/sandbox/home) dans laquelle réside cette audience. Lorsque vous publiez cette audience sur la plateforme, vous ne pouvez l’utiliser que dans les limites de ce sandbox. |
 
 {style="table-layout:auto"}
 
-## Que se passe-t-il une fois une audience créée et publiée ? {#after-audience-created}
+## Que se passe-t-il une fois une audience créée et publiée ? {#after-audience-created}
 
 Une fois que vous avez créé et publié une audience dans Customer Journey Analytics, elle est disponible dans Experience Platform et peut être visualisée sur le [portail d’audiences](https://experienceleague.adobe.com/fr/docs/experience-platform/segmentation/ui/audience-portal). L’audience étant disponible dans Experience Platform, elle peut être utilisée dans d’autres applications Experience Platform, telles qu’Adobe Journey Optimizer.
 
 Un segment en streaming Adobe Experience Platform n’est créé que si votre organisation est configurée pour la segmentation en streaming.
 
-Tenez compte des points suivants lorsque vous utilisez des audiences publiées de Customer Journey Analytics sur Experience Platform :
+Tenez compte des points suivants lorsque vous utilisez des audiences publiées de Customer Journey Analytics dans Experience Platform :
 
 * L’audience dans Experience Platform partage le même nom et la même description que l’audience Customer Journey Analytics. Le nom est ajouté avec l’identifiant d’audience Customer Journey Analytics afin de s’assurer que l’audience est unique.
 * Toute modification apportée au nom ou à la description de l’audience dans Customer Journey Analytics est répercutée dans Experience Platform.
-* Si une audience est supprimée dans Customer Journey Analytics, elle reste disponible dans Experience Platform jusqu’à l’expiration de son abonnement à un profil. L’abonnement à un profil expire après 420 jours pour les audiences ponctuelles et après 16 jours pour les audiences récurrentes.
+* Si une audience est supprimée dans Customer Journey Analytics, elle reste disponible dans Experience Platform jusqu’à l’expiration de l’appartenance de profils à l’audience. L’appartenance au profil expire après 420 jours pour les audiences ponctuelles et après 16 jours pour les audiences récurrentes.
 
 ## Considérations relatives à la latence {#latency}
 
-À plusieurs moments avant, pendant et après la publication de l’audience, des latences peuvent se produire. Voici un aperçu des latences possibles.
+À plusieurs moments avant, pendant et après la publication de l’audience, des latences peuvent se produire. Voici une vue d’ensemble des latences possibles.
 
 ![Latences dans la publication d’audiences, comme décrit dans cette section.](assets/latency-diagram.png)
 
@@ -160,7 +169,7 @@ Tenez compte des points suivants lorsque vous utilisez des audiences publiées d
 | Pas d’affichage | Adobe Analytics vers le connecteur source Analytics (A4T) | Jusqu’à 30 minutes |
 | 1 | Ingestion de données dans le lac de données (à partir du connecteur source Analytics ou d’autres sources) | Jusqu’à 90 minutes |
 | 2 | Ingestion de données du lac de données d’Experience Platform dans Customer Journey Analytics | Jusqu’à 90 minutes |
-| 3 | Publication d’audiences dans le profil client en temps réel, y compris la création automatique du segment de diffusion en continu et la possibilité pour le segment d’être prêt à recevoir les données. | Quelques secondes |
+| 3 | Publication d’audiences dans le profil client en temps réel, y compris la création automatique du segment de streaming et la possibilité pour le segment d’être prêt à recevoir les données | Quelques secondes |
 | 4 | Fréquence d’actualisation des audiences | <ul><li>Actualisation ponctuelle (latence inférieure à 5 minutes)</li><li>Actualiser toutes les 4 heures, tous les jours, toutes les semaines, tous les mois (la latence va de pair avec le taux d’actualisation) |
 | 5 | Création d’une destination dans Adobe Experience Platform : activation du nouveau segment | 1-2 heures |
 
@@ -172,7 +181,7 @@ Customer Journey Analytics récupère désormais toutes les combinaisons d’e
 
 Real-Time Customer Data Platform examine ensuite chaque combinaison espace de noms/ID et recherche un profil dont elle peut faire partie. Un profil est essentiellement un groupe d’espaces de noms, d’identifiants et d’appareils liés. Si un profil est trouvé, il ajoute l’espace de noms et l’identifiant aux autres identifiants de ce profil en tant qu’attribut d’appartenance à un segment. Par exemple, <user@adobe.com> peut être ciblé sur tous leurs appareils et canaux. Si aucun profil n’est trouvé, un nouveau profil est créé.
 
-Pour afficher les audiences Customer Journey Analytics dans Platform, procédez comme suit :
+Pour afficher les audiences Customer Journey Analytics dans Adobe Experience Platform, procédez comme suit :
 
 1. Développez **[!UICONTROL Client ou cliente]** dans le panneau de gauche, puis sélectionnez **[!UICONTROL Audiences]**. <!-- is there a folder called "Customer Journey Analytics? -->
 
@@ -192,7 +201,7 @@ Pour plus d’informations sur l’utilisation des audiences dans Platform, cons
 
 ### Comprendre les incohérences dans le nombre d’audiences
 
-Il peut y avoir incohérences dans le nombre d’audiences entre Customer Journey Analytics et Real-Time CDP.
+Il peut y avoir des incohérences dans le nombre d’audiences entre Customer Journey Analytics et Real-Time Customer Data Platform.
 
 <!--
 ![Infographic on audience differences between Customer Journey Analytics and Real-Time CDP.](/help/components/audiences/assets/infographic-cja-rtcdp.png)
@@ -207,15 +216,15 @@ La méthodologie de calcul du nombre d’appartenances à une audience diffère 
 
 #### Période et taux de publication
 
-Les audiences publient sur Real-Time Customer Data Platform à un taux de 1 500 enregistrements par seconde (RPS). Par exemple, la publication complète d’une audience de 20 millions de membres prendra environ 3,7 heures (20 millions/1 500 RPS/3 600 secondes par heure). Pendant ce temps, il est probable de constater des différences dans le nombre d’appartenances à une audience entre les deux applications.
+Les audiences sont publiées vers Real-Time Customer Data Platform à un taux de 1 500 enregistrements par seconde (RPS). Par exemple, la publication complète d’une audience de 20 millions de membres prendra environ 3,7 heures (20 M/1 500 RPS/3 600 secondes par heure). Pendant ce temps, il est probable de constater des différences d’appartenance à une audience entre les deux applications.
 
 #### Fragmentation du profil
 
-Si des profils importés de Customer Journey Analytics existent déjà dans Real-Time Customer Data Platform, ils ne sont pas comptabilisés comme de nouveaux profils. Cela peut entraîner un nombre de profils inférieur aux prévisions dans Real-Time Customer Data Platform.
+Si des profils importés depuis Customer Journey Analytics existent déjà dans la Real-Time Customer Data Platform, ils ne sont pas comptabilisés comme de nouveaux profils. Cela peut entraîner un nombre de profils inférieur aux prévisions dans Real-Time Customer Data Platform.
 
-#### Audiences par lots ou en flux continu
+#### Audiences par lot ou en streaming
 
-Les audiences Customer Journey Analytics ne sont pas incluses dans la tâche d’évaluation quotidienne par lots et restent fixes jusqu’à la prochaine période de publication. En revanche, d’autres audiences par lots dans Real-Time Customer Data Platform sont réévaluées toutes les 24 heures.
+Les audiences Customer Journey Analytics ne sont pas incluses dans le traitement d’évaluation quotidienne par lot et restent fixes jusqu’à la prochaine période de publication. En revanche, d’autres audiences par lot dans Real-Time Customer Data Platform sont réévaluées toutes les 24 heures.
 
 ### Points essentiels à retenir
 
@@ -237,7 +246,7 @@ Dans ce cas, un événement de sortie est transmis par Customer Journey Analyt
 
 +++**Que se passe-t-il si vous supprimez une audience dans Customer Journey Analytics ?**
 
-Lorsqu’une audience Customer Journey Analytics est supprimée, elle ne s’affiche plus dans l’interface d’utilisation d’Experience Platform. Cependant, aucun profil associé à cette audience n’est supprimé dans Experience Platform.
+Lorsqu’une audience Customer Journey Analytics est supprimée, elle ne s’affiche plus dans l’interface utilisateur d’Adobe Experience Platform. Cependant, aucun profil associé à cette audience n’est supprimé dans Adobe Experience Platform.
 
 +++
 
@@ -249,13 +258,13 @@ Oui.
 
 +++**Est-ce que Customer Journey Analytics envoie les données d’audience sous la forme d’événements de pipeline ou d’un fichier plat également destiné au lac de données ?**
 
-Customer Journey Analytics diffuse les données dans Real-Time Customer Data Platform par pipeline. Ces données sont également collectées dans un jeu de données système dans le lac de données.
+Customer Journey Analytics diffuse les données dans Adobe Real-Time Customer Data Platform par pipeline. Ces données sont également collectées dans un jeu de données système dans le lac de données.
 
 +++
 
 +++**Quelles sont les identités envoyées par Customer Journey Analytics ?**
 
-Les paires identité/espace de noms utilisées dans la [configuration de la connexion](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-connections/create-connection). Plus précisément, l’étape à laquelle un utilisateur ou une utilisatrice sélectionne le champ qu’il ou elle souhaite utiliser comme ID de personne.
+Les paires identité/espace de noms utilisées dans la [configuration de la connexion](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-connections/create-connection). Plus précisément, l’étape à laquelle les utilisateurs et utilisatrices sélectionnent le champ qu’ils souhaitent utiliser comme ID de personne.
 
 +++
 
