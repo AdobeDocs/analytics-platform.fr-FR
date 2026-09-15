@@ -4,29 +4,37 @@ description: Découvrez comment créer des rapports sur l’appartenance à une 
 solution: Customer Journey Analytics
 feature: Privacy
 role: Admin
-hide: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+    internal-label: Data governance
   - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
 subfeature_v2:
   - id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
+    internal-label: Privacy
   - id: d3fb138f-79e4-4a81-aedb-76dd93560085
+    internal-label: Experience Platform integration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 4661a066f90991e6fb149c6909ef4a9f75cf02ac
+    internal-label: Privacy
+source-git-commit: ce6f9e474d274488e218e4dbd5f0666d41978681
 workflow-type: tm+mt
-source-wordcount: 1311
-ht-degree: 1%
-
+source-wordcount: '1311'
+ht-degree: 2%
 ---
-
 # Présentation de la création de rapports et du filtrage relatifs au consentement
+
+{{release-limited-testing}}
 
 La création de rapports et le filtrage de consentement utilisent les données d’appartenance à la politique de consentement stockées dans vos jeux de données Profil Adobe Experience Platform pour vous aider à créer des rapports sur le consentement des visiteurs. De plus, vous pouvez choisir d’exclure les visiteurs et visiteuses non consentants avant que leurs données ne soient ingérées dans Customer Journey Analytics.
 
@@ -104,7 +112,7 @@ Tenez compte des points suivants lors de l’utilisation du filtrage du consente
 
 * Les données d’un visiteur ou d’une visiteuse ne sont ingérées que si celui-ci ou celle-ci correspond **toutes** aux politiques de consentement applicables. Si une politique applicable fait défaut à un visiteur, ses données sont exclues.
 
-## Configuration des rapports et du filtrage liés au consentement
+## Configurer les rapports et le filtrage liés au consentement
 
 Lorsque vous configurez la création de rapports de consentement et le filtrage, vous sélectionnez le sandbox et le jeu de données Profil contenant les données d’appartenance à votre politique de consentement, choisissez la ou les connexions à configurer et choisissez de filtrer ou non les données pour chaque action marketing. Customer Journey Analytics crée ensuite automatiquement le jeu de données de recherche de politique de consentement et les composants de politique de consentement.
 
@@ -130,11 +138,11 @@ Les rôles Customer Journey Analytics suivants et les autorisations Experience P
 |---------|----------|----------|
 | [Créer des configurations de reporting et de filtrage relatives au consentement](/help/connections/consent-reporting-filtering/consent-configure.md) | Administrateur système | <ul><li>Jeux De Données : Lecture, Écriture</li><li>Schémas : lecture, écriture</li></ul> <p>Un accès en lecture est requis pour le jeu de données Profil contenant les données d’appartenance à la politique de consentement. Un accès en écriture est requis, car un jeu de données de recherche de politique de consentement est créé et conservé synchronisé.</p> |
 | Affichage des composants de politique de consentement dans la vue de données | Administrateur de profil de produit pour le profil de produit auquel la vue de données est affectée <p>Pour plus d’informations, voir [Contrôle d’accès](/help/technotes/access-control.md).</p> | S.O. |
-| Utilisation des composants de politique de consentement dans Analysis Workspace | Accès à une vue de données dans laquelle les composants de politique de consentement ont été ajoutés | S.O. |
+| [Utilisation des composants de politique de consentement dans Analysis Workspace](/help/connections/consent-reporting-filtering/consent-analyze.md#use-consent-policy-components-in-analysis-workspace) | Accès à une vue de données dans laquelle les composants de politique de consentement ont été ajoutés | S.O. |
 
 ## Rapports de consentement et cas d’utilisation de filtrage
 
-Pour obtenir un exemple de cas d’utilisation qui mettent en évidence la valeur fournie par les rapports et le filtrage de consentement, consultez [&#x200B; Rapports et filtrage de consentement &#x200B;](/help/connections/consent-reporting-filtering/consent-use-cases.md).
+Pour obtenir un exemple de cas d’utilisation qui mettent en évidence la valeur fournie par les rapports et le filtrage de consentement, consultez [ Rapports et filtrage de consentement ](/help/connections/consent-reporting-filtering/consent-use-cases.md).
 
 ## Limites de reporting et de filtrage du consentement
 
