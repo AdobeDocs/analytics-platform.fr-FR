@@ -142,7 +142,7 @@ Les rôles Customer Journey Analytics suivants et les autorisations Experience P
 
 ## Rapports de consentement et cas d’utilisation de filtrage
 
-Pour obtenir un exemple de cas d’utilisation qui mettent en évidence la valeur fournie par les rapports et le filtrage de consentement, consultez [ Rapports et filtrage de consentement ](/help/connections/consent-reporting-filtering/consent-use-cases.md).
+Pour obtenir un exemple de cas d’utilisation qui mettent en évidence la valeur fournie par les rapports et le filtrage de consentement, consultez [&#x200B; Rapports et filtrage de consentement &#x200B;](/help/connections/consent-reporting-filtering/consent-use-cases.md).
 
 ## Limites de reporting et de filtrage du consentement
 
