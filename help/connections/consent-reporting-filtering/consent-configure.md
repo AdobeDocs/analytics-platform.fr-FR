@@ -4,7 +4,6 @@ description: Découvrez comment créer une configuration pour activer les rappor
 solution: Customer Journey Analytics
 feature: Privacy
 role: Admin
-hide: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -26,9 +25,9 @@ topic_v2:
     internal-label: Governance
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 4661a066f90991e6fb149c6909ef4a9f75cf02ac
+source-git-commit: ce6f9e474d274488e218e4dbd5f0666d41978681
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1325'
 ht-degree: 28%
 ---
 # Configurer les rapports et le filtrage liés au consentement {#configure-consent-reporting}
@@ -86,6 +85,8 @@ ht-degree: 28%
 >abstract="Activez cette option pour exclure de l’ingestion dans Customer Journey Analytics les données des visiteurs et visiteuses n’ayant pas donné leur consentement. Lorsqu’elles sont activées, les données de la personne qui visite ne sont ingérées que si cette dernière respecte toutes les politiques de consentement activées ci-dessous. <br>Cette option est destinée aux organisations qui ont besoin d’exclure au moment de l’ingestion les données des visiteurs et visiteuses n’ayant pas donné leur consentement."
 
 <!-- markdownlint-enable MD034 -->
+
+{{release-limited-testing}}
 
 Les administrateurs et administratrices système peuvent activer la création de rapports de consentement et, éventuellement, le filtrage de consentement pour une ou plusieurs connexions. Pour plus d’informations, voir [Présentation des rapports et du filtrage de consentement](/help/connections/consent-reporting-filtering/consent-overview.md).
 
