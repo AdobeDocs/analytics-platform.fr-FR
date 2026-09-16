@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
 hold: true
-source-git-commit: 8e446c15e998e660b42a09681fe78b885711e41f
+source-git-commit: 39d6847296cc385d501defda292b5b3cae98b46a
 workflow-type: tm+mt
 source-wordcount: '1104'
 ht-degree: 1%
@@ -54,7 +54,7 @@ Une conversation est le niveau de conteneur ou de regroupement. Ce conteneur est
 * Comment le sentiment a-t-il changé au cours d’une conversation ?
 * Quelles conversations ont finalement abouti à une conversion ?
 
-Pour plus d’informations sur l’implémentation, reportez-vous à l’objet [conversation](./conversation-insights-implementation.md#conversation) dans la documentation [&#x200B; Implémenter des informations sur la conversation](./conversation-insights-implementation.md).
+Pour plus d’informations sur l’implémentation, reportez-vous à l’objet [conversation](./conversation-insights-implement.md#conversation) dans la documentation [ Implémenter des informations sur la conversation](./conversation-insights-implement.md).
 
 ### Tourner
 
@@ -68,7 +68,7 @@ Un virage typique consiste à :
 
 Le tour est l’objet analytique principal à des fins de création de rapports. Le service de mélangeur de conversation combine les informations disponibles sur les invites, les réponses, les retours et les signaux dans des enregistrements au niveau du tour.
 
-Pour plus d’informations sur l’implémentation, reportez-vous à l’objet [tourner](./conversation-insights-implementation.md#turn) dans la documentation [Implémenter des informations de conversation](./conversation-insights-implementation.md).
+Pour plus d’informations sur l’implémentation, reportez-vous à l’objet [tourner](./conversation-insights-implement.md#turn) dans la documentation [Implémenter des informations de conversation](./conversation-insights-implement.md).
 
 ### Invite
 
@@ -88,7 +88,7 @@ L’invite est l’entrée principale à partir de laquelle les informations de 
 * Sentiment de l’utilisateur
 * Autres signaux pris en charge
 
-Pour plus d’informations sur l’implémentation, reportez-vous à l’objet [prompt](./conversation-insights-implementation.md#prompt) dans la documentation [Implémenter des informations sur les conversations](./conversation-insights-implementation.md).
+Pour plus d’informations sur l’implémentation, reportez-vous à l’objet [prompt](./conversation-insights-implement.md#prompt) dans la documentation [Implémenter des informations sur les conversations](./conversation-insights-implement.md).
 
 ### Réponse
 
@@ -104,7 +104,7 @@ Une réponse contient souvent différents types de contenu. Par exemple :
 
 Cette distinction est utile, car l’analyse doit séparer la réponse principale des liens, citations, publicités ou autres composants de réponse annexes.
 
-Pour plus d’informations sur l’implémentation, reportez-vous à l’objet [response](./conversation-insights-implementation.md#response) dans la documentation [Implémenter des informations sur les conversations](./conversation-insights-implementation.md).
+Pour plus d’informations sur l’implémentation, reportez-vous à l’objet [response](./conversation-insights-implement.md#response) dans la documentation [Implémenter des informations sur les conversations](./conversation-insights-implement.md).
 
 ### Commentaires
 
@@ -119,13 +119,13 @@ Le retour d’informations peut contenir :
 
 Les commentaires ne sont pas nécessairement disponibles en même temps que l’invite ou la réponse. Vous pouvez envoyer le retour d’informations ultérieurement à partir de l’application ou du service de l’agent, une fois que l’utilisateur a évalué la réponse.
 
-Pour plus d’informations sur l’implémentation, reportez-vous à l’objet [feedback](./conversation-insights-implementation.md#feedback) dans la documentation [Implémenter des informations sur les conversations](./conversation-insights-implementation.md).
+Pour plus d’informations sur l’implémentation, reportez-vous à l’objet [feedback](./conversation-insights-implement.md#feedback) dans la documentation [Implémenter des informations sur les conversations](./conversation-insights-implement.md).
 
 ### Signal
 
 Un signal est une observation analytique structurée du contenu de la conversation. Le service d&#39;extraction de signaux extrait des signaux.
 
-Pour plus d’informations sur l’implémentation, reportez-vous à l’objet [signal](./conversation-insights-implementation.md#signal) dans la documentation [Implémenter des informations de conversation](./conversation-insights-implementation.md).
+Pour plus d’informations sur l’implémentation, reportez-vous à l’objet [signal](./conversation-insights-implement.md#signal) dans la documentation [Implémenter des informations de conversation](./conversation-insights-implement.md).
 
 
 ### Agent
@@ -136,7 +136,7 @@ Pour identifier l’application ou le service de l’agent, des informations sur
 
 Si votre application d’expérience de l’agent prend en charge l’appel des compétences qui représentent les fonctionnalités invoquées pendant le traitement, vous pouvez ajouter ces appels de compétences au sein du groupe de champs informations sur l’agent .
 
-Pour plus d’informations sur l’implémentation, reportez-vous au groupe de champs [informations agentiques](./conversation-insights-implementation.md#agentic-information-field-group) dans la documentation [Implémenter les informations de conversation](./conversation-insights-implementation.md).
+Pour plus d’informations sur l’implémentation, reportez-vous au groupe de champs [informations agentiques](./conversation-insights-implement.md#agentic-information-field-group) dans la documentation [Implémenter les informations de conversation](./conversation-insights-implement.md).
 
 ## Fonctionnement
 
@@ -152,7 +152,7 @@ Le processus global de collecte de données, d&#39;extraction de signaux et de m
 
 | | Description |
 |---|---|
-| 1 | Vous instrumentez votre application ou service d’agent pour créer des événements contenant des jeux de données d’invites ![CommentText](/help/assets/icons2/CommentText.svg), de réponses ![CommentReply](/help/assets/icons2/CommentReply.svg) et de commentaires ![Commentaires](/help/assets/icons2/Feedback.svg).<br/>Pour plus d’informations sur la manière d’instrumenter votre application ou service d’agent, reportez-vous à la [documentation d’implémentation](./conversation-insights-implementation.md). |
+| 1 | Vous instrumentez votre application ou service d’agent pour créer des événements contenant des jeux de données d’invites ![CommentText](/help/assets/icons2/CommentText.svg), de réponses ![CommentReply](/help/assets/icons2/CommentReply.svg) et de commentaires ![Commentaires](/help/assets/icons2/Feedback.svg).<br/>Pour plus d’informations sur la manière d’instrumenter votre application ou service d’agent, reportez-vous à la [documentation d’implémentation](./conversation-insights-implement.md). |
 | 2 | Le service d’extraction de signal extrait les signaux des invites ![CommentText](/help/assets/icons2/CommentText.svg), des réponses ![CommentReply](/help/assets/icons2/CommentReply.svg) et des jeux de données de retour ![Feedback](/help/assets/icons2/Feedback.svg) en tant qu’événements de signal ![OnAir](/help/assets/icons/OnAir.svg) et stocke ces événements de signal dans un nouveau jeu de données.<br>Cette étape est implémentée dans le cadre de la définition d’une [configuration Insights de conversation](./conversation-insights-configure.md). |
 | 3 | Le service de mélangeur de conversation fusionne les événements des invites ![CommentText](/help/assets/icons2/CommentText.svg), des réponses ![CommentReply](/help/assets/icons2/CommentReply.svg), des commentaires ![Feedback](/help/assets/icons2/Feedback.svg) et des signaux ![OnAir](/help/assets/icons/OnAir.svg) des jeux de données d’événement et génère les événements ![Merge](/help/assets/icons/Merge.svg)mélangés dans un nouveau jeu de données.<br>Cette étape est implémentée dans le cadre de la définition d’une [configuration Insights de conversation](./conversation-insights-configure.md). |
 | 4 | Le jeu de données ![Fusion](/help/assets/icons/Merge.svg) fusionné fait alors partie de la connexion et les composants définis dans le schéma utilisé pour le jeu de données fusionné font partie de la vue de données.<br>Cette étape est implémentée dans le cadre de la définition d’une [configuration Insights de conversation](./conversation-insights-configure.md). |
