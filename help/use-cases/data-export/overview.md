@@ -8,27 +8,36 @@ exl-id: 8b9c164e-01da-4b43-8e2c-99904223cae5
 TQID: https://experienceleague.adobe.com/ad4wWxqEZZxsnSTpus7pxFMlwNo3nNUpHeS9VfxrEdw
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+    internal-label: Data governance
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
+    internal-label: Artificial intelligence
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Machine learning
+source-git-commit: 06d3fa4838d48567f1b9804992aa0f718937916d
 workflow-type: tm+mt
-source-wordcount: 806
-ht-degree: 7%
-
+source-wordcount: '1079'
+ht-degree: 1%
 ---
-
 # Cas dʼutilisation des exports de données {#data-export-use-cases}
 
 <!-- This contextual help is for the upgrade checklist -->
@@ -38,7 +47,7 @@ ht-degree: 7%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-data-feeds-step"
 >title="Utiliser des fonctionnalités d’export similaires aux flux de données"
->abstract="Le remplacement exact des flux de données n’est pas encore disponible dans Customer Journey Analytics. Cependant, des fonctionnalités similaires peuvent être obtenues avec des fonctions telles que l’export de table complète, l’export de jeux de données Platform, l’intégration de l’outil BI et l’API de création de rapports."
+>abstract="Bien qu’aucun remplacement exact des flux de données ne soit encore disponible dans Customer Journey Analytics, des fonctionnalités similaires sont disponibles via l’exportation de tableaux complets, l’exportation de jeux de données Platform, l’intégration d’outils de BI et l’API de création de rapports."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -66,14 +75,14 @@ Cela a un impact sur l’exportation des données à partir d’Adobe Analytics 
 
 Dans Customer Journey Analytics, les événements ne sont pas collectés dans l’ordre et un ID de personne est utilisé au lieu d’un ID d’appareil, ce qui permet à Customer Journey Analytics de mettre à jour l’attribution et la sessionnalisation au moment du rapport. Ce type de collecte de données offre une certaine flexibilité, notamment :
 
-* L’assemblage peut _relire_ des données quotidiennes ou hebdomadaires, associant des événements anonymes à des événements connus. Voir [&#x200B; Assemblage &#x200B;](../../stitching/overview.md) pour plus d’informations.
+* L’assemblage peut _relire_ des données quotidiennes ou hebdomadaires, associant des événements anonymes à des événements connus. Voir [ Assemblage ](../../stitching/overview.md) pour plus d’informations.
 * La sessionnalisation et les valeurs persistantes changent à chaque fois
   * de nouvelles données sont collectées ou
   * l’assemblage ajoute des événements à l’historique d’une personne.
 
-Le traitement de la période de rapport a un impact sur l’exportation des données depuis Customer Journey Analytics. Les exportations qui incluent des valeurs persistantes, ne correspondent pas aux rapports Customer Journey Analytics et les valeurs disparaîtront au fil du temps.
+Le traitement de la période de rapport a un impact sur l’exportation des données depuis Customer Journey Analytics. Les exportations qui incluent des valeurs persistantes ne correspondent pas aux rapports Customer Journey Analytics et les valeurs divergent au fil du temps.
 
-Pour la cohérence des mesures, il est préférable d’utiliser les nouvelles fonctionnalités de Customer Journey Analytics. En règle générale, la fonctionnalité d’exportation des données d’Experience Platform et de Customer Journey Analytics dépasse celle des flux de données d’Adobe Analytics. Experience Platform et Customer Journey Analytics fournissent :
+Pour la cohérence des mesures, il est préférable d’utiliser les nouvelles fonctionnalités de Customer Journey Analytics. En règle générale, la fonctionnalité d’exportation des données d’Experience Platform et de Customer Journey Analytics dépasse celle des flux de données d’Adobe Analytics. Experience Platform et Customer Journey Analytics fournissent les éléments suivants :
 
 * nouvelles sources de données et traitement soumis à l’exportation des données
 
@@ -81,14 +90,14 @@ Pour la cohérence des mesures, il est préférable d’utiliser les nouvelles f
   * appliquer une attribution et une sessionnalisation personnalisées en fonction des règles d’entreprise ; et
   * mettez à jour les parcours clients en les regroupant.
 
-* réalisation de cas d&#39;utilisation d&#39;export de données sur mesure
+* mise en œuvre de cas d’utilisation d’exportation de données personnalisés
 
   * d’exporter des données vers l’emplacement où vous en avez besoin, y compris vers les outils Business Intelligence (BI) et les destinations cloud,
   * conserver les données synchronisées avec Analysis Workspace grâce à l’intégration des outils de BI,
-  * pas besoin de répliquer la logique de traitement dans vos propres systèmes,
+  * pas besoin de dupliquer la logique de traitement dans vos propres systèmes,
   * nouvelle prise en charge des mesures calculées, des champs dérivés et de la segmentation, et
 
-* prise en compte de la sécurité et de la gouvernance des données dès la conception
+* examen de la sécurité et de la gouvernance des données
 
   * surveiller toutes les exportations de données par utilisateur et par destination,
   * définir des limites sur les données disponibles à l’exportation, et
@@ -99,9 +108,21 @@ Pour la cohérence des mesures, il est préférable d’utiliser les nouvelles f
 
 En général, l’exportation de données prend en charge un certain nombre de cas d’utilisation. Chaque cas d’utilisation est différent en termes de données requises et de méthode d’accès et d’exportation de ces données. Experience Platform et Customer Journey Analytics offrent un certain nombre de fonctionnalités qui, soit indépendamment, soit combinées, peuvent résoudre les différents cas d’utilisation. Le tableau ci-dessous présente un aperçu des cas d’utilisation d’exportation de données identifiés et des fonctionnalités d’Experience Platform et de Customer Journey Analytics permettant de mettre en œuvre ces cas d’utilisation.
 
-| Cas dʼutilisation des exports de données | Fonctionnalités d’Experience Platform et de Customer Journey Analytics |
+| Cas dʼutilisation de l’exportation de données | Fonctionnalités d’Experience Platform et de Customer Journey Analytics |
 |---|---|
-| **Sauvegarde des données**<br/> Conservez une copie complète de vos données numériques à des fins de conformité ou à des fins réglementaires. | **&#x200B;**&#x200B;: [**Exporter des jeux de données**](export-datasets.md)<br/> Exporter les données collectées dans Experience Platform directement vers des destinations cloud selon un planning ou ad hoc. |
-| **Validation des données**<br/>&#x200B;Évaluez les données de parcours de navigation pour garantir la précision de la collecte de données. | **&#x200B;**&#x200B;: [**Query Service (Data Distiller) et Export datasets**](queryservice-export-datasets.md)<br/> interface Interactive PostgreSQL pour exécuter des requêtes SQL ad hoc à l’aide de votre outil SQL préféré pour valider les données de vos jeux de données.<br/><br/>**&#x200B;** : [**Exporter le tableau complet**](export-full-table.md)<br/> Valider les données traitées de CJA avec attribution et sessionnalisation appliquées. |
-| **Lac de données, Data Warehouse ou outils de BI**<br/> Insérez des données numériques dans vos propres outils de BI ou lac de données pour les utiliser avec des jeux de données supplémentaires. | **&#x200B;**&#x200B;: [**Extension BI**](bi-extension.md)<br/> ajoutez des mesures traitées de Customer Journey Analytics aux outils de visualisation de données tels que Power BI et combinez-les avec des données supplémentaires pour les rapports personnalisés.<br/><br/>**Experience Platform**: [**Query Service (Data Distiller) et Export datasets**](queryservice-export-datasets.md)<br> générez des données de parcours de navigation personnalisées à l’aide de SQL à diffuser vers des destinations cloud. |
-| **Préparation à l’IA/ML**<br/> améliorer les modèles et tâches d’intelligence artificielle/de machine learning avec des données Customer Journey Analytics. | **&#x200B;**&#x200B;: [**Exporter le tableau complet**](export-full-table.md)<br/> Exporter les dimensions et mesures traitées de Customer Journey Analytics vers des destinations cloud de manière unique ou récurrente, y compris les mesures calculées et la segmentation.<br/><br/>**&#x200B;** : [**Query Service (Data Distiller) et exporter des jeux de données**](queryservice-export-datasets.md)<br/> Générer des données de parcours de navigation personnalisées à l’aide de SQL pour enrichir les modèles d’IA/ML. |
+| **Sauvegarde des données**<br/> Conservez une copie complète de vos données numériques à des fins de conformité ou à des fins réglementaires. | **** : [**Exporter des jeux de données**](export-datasets.md)<br/> Exporter les données collectées dans Experience Platform directement vers des destinations cloud selon un planning ou ad hoc. |
+| **Validation des données**<br/>&#x200B;Évaluez les données de parcours de navigation pour garantir la précision de la collecte de données. | **** : [**Query Service (Data Distiller) et Export datasets**](queryservice-export-datasets.md)<br/> interface Interactive PostgreSQL pour exécuter des requêtes SQL ad hoc à l’aide de votre outil SQL préféré pour valider les données de vos jeux de données.<br/><br/>**** : [**Exporter le tableau complet**](export-full-table.md)<br/> Valider les données traitées de CJA avec attribution et sessionnalisation appliquées. |
+| **Lac de données, Data Warehouse ou outils de BI**<br/> Insérez des données numériques dans vos propres outils de BI ou lac de données pour les utiliser avec des jeux de données supplémentaires. | **** : [**Extension BI**](bi-extension.md)<br/> ajoutez des mesures traitées de Customer Journey Analytics aux outils de visualisation de données tels que Power BI et combinez-les avec des données supplémentaires pour les rapports personnalisés.<br/><br/>**Experience Platform**: [**Query Service (Data Distiller) et Export datasets**](queryservice-export-datasets.md)<br> générez des données de parcours de navigation personnalisées à l’aide de SQL à diffuser vers des destinations cloud. |
+| **Préparation à l’IA/ML**<br/> améliorer les modèles et tâches d’intelligence artificielle/de machine learning avec des données Customer Journey Analytics. | **** : [**Exporter le tableau complet**](export-full-table.md)<br/> Exporter les dimensions et mesures traitées de Customer Journey Analytics vers des destinations cloud de manière unique ou récurrente, y compris les mesures calculées et la segmentation.<br/><br/>**** : [**Query Service (Data Distiller) et exporter des jeux de données**](queryservice-export-datasets.md)<br/> Générer des données de parcours de navigation personnalisées à l’aide de SQL pour enrichir les modèles d’IA/ML. |
+| **Rapports ad hoc et récurrents**<br/> Donnez aux utilisateurs individuels ou aux équipes commerciales un accès en libre-service aux données Customer Journey Analytics traitées, sans configurer de pipeline de données. | **** : [**exportation**](workspace-export.md)<br/> téléchargement ou envoi par e-mail de données directement à partir d’un projet Analysis Workspace pour une analyse ou un partage unique.<br/><br/>**** : [**Report Builder**](report-builder.md)<br/> Extrayez les données Customer Journey Analytics dans des classeurs Excel pour créer des rapports récurrents et conviviaux pour les entreprises. |
+| **Intégration d’applications personnalisées**<br/> Tableaux de bord, outils internes ou workflows automatisés optimisés avec les données Customer Journey Analytics. | **** : [**API Reporting**](reporting-api.md)<br/> récupérez les données Customer Journey Analytics par programmation pour les intégrer à vos propres applications ou automatisation. |
+
+## Choisir entre les fonctionnalités
+
+Plusieurs fonctionnalités peuvent mettre en œuvre le même cas d’utilisation. Lorsque vous choisissez entre les deux, tenez compte des points suivants :
+
+* **Volume des données** : les méthodes ad hoc, telles que l’exportation de [Workspace](/help/use-cases/data-export/workspace-export.md) et le [Report Builder](/help/use-cases/data-export/report-builder.md), sont limitées à des dizaines de milliers de lignes. [Exporter le tableau complet](/help/use-cases/data-export/export-full-table.md) et [Exporter les jeux de données](/help/use-cases/data-export/export-datasets.md) prennent en charge des millions de lignes.
+* **Données brutes ou traitées** : [Exporter des jeux de données](/help/use-cases/data-export/export-datasets.md) et [Query Service (Data Distiller) et Exporter des jeux de données](/help/use-cases/data-export/queryservice-export-datasets.md) fournissent des données brutes et non traitées à partir du lac de données. [Extension BI](/help/use-cases/data-export/bi-extension.md), [Exporter la table complète](/help/use-cases/data-export/export-full-table.md), [Exporter Workspace](/help/use-cases/data-export/workspace-export.md), [Report Builder](/help/use-cases/data-export/report-builder.md) et l’API [Reporting](/help/use-cases/data-export/reporting-api.md) diffusent les données que Customer Journey Analytics a déjà traitées, y compris l’attribution, la sessionnalisation et les mesures calculées.
+* **Expertise technique** : [Query Service (Data Distiller) et Export datasets](/help/use-cases/data-export/queryservice-export-datasets.md) et l’extension [BI](/help/use-cases/data-export/bi-extension.md) nécessitent des connaissances SQL. [Workspace export](/help/use-cases/data-export/workspace-export.md) et [Report Builder](/help/use-cases/data-export/report-builder.md) utilisent des interfaces de pointer-cliquer. L’[API Reporting](/help/use-cases/data-export/reporting-api.md) nécessite des connaissances en programmation.
+* **Besoins de planification** : [Exporter des jeux de données](/help/use-cases/data-export/export-datasets.md), [Exporter une table complète](/help/use-cases/data-export/export-full-table.md) et [Report Builder](/help/use-cases/data-export/report-builder.md) prennent en charge les diffusions récurrentes planifiées. [exportation Workspace ](/help/use-cases/data-export/workspace-export.md) les téléchargements sont ad hoc uniquement.
+* **Format et destination de sortie** : déterminez si vous avez besoin d’un fichier dans l’espace de stockage cloud, d’un tableau dans un outil BI, d’un classeur dans Excel ou d’une réponse d’un appel API, puis faites correspondre ce fichier à la fonctionnalité qui le diffuse.
