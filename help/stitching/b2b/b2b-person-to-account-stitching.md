@@ -27,9 +27,9 @@ topic_v2:
     internal-label: Customer journeys
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: ac22a504d6182897438b3724d57c837ab2995f1b
+source-git-commit: 76379e1cd9a42f2b2651a66768c195776eabecff
 workflow-type: tm+mt
-source-wordcount: '2270'
+source-wordcount: '2292'
 ht-degree: 21%
 ---
 # Combinaison de personnes B2B et de comptes
@@ -219,8 +219,8 @@ Vous devez d’abord activer et configurer le groupement B2B au niveau de la con
       | Champ | Obligatoire | Description |
       |---|:---:|---|
       | **[!UICONTROL Jeu de données Personne à compte]** | ![Obligatoire](/help/assets/icons/Required.svg) | Sélectionnez la recherche (jeu de données d’enregistrement ou de série non temporelle) qui mappe les personnes aux comptes. |
-      | **[!UICONTROL ID de personne]** | ![Obligatoire](/help/assets/icons/Required.svg) | Sélectionnez le champ du jeu de données contenant l’identifiant de la personne. L’espace de noms de ce champ peut être différent ou identique à l’espace de noms de l’identifiant de personne sélectionné. S’ils sont différents, les deux espaces de noms doivent être liés dans le graphique d’identité.  Ce champ doit être marqué comme une identité et ne peut pas être identique au champ **[!UICONTROL ID de compte]** ou **[!UICONTROL Heure de création du mappage]**. |
-      | **[!UICONTROL ID de compte]** | ![Obligatoire](/help/assets/icons/Required.svg) | Sélectionnez le champ du jeu de données contenant les valeurs uniques d’identifiant de compte. Les informations sur l’ID de compte seront disponibles sur les lignes de tous les jeux de données d’événement avec l’assemblage Personne à compte activé. Ce champ ne peut pas être identique au champ **[!UICONTROL ID de personne]** ou **[!UICONTROL Heure de création du mappage]**. |
+      | **[!UICONTROL ID de personne]** | ![Obligatoire](/help/assets/icons/Required.svg) | Sélectionnez le champ du jeu de données contenant l’identifiant de la personne. L’espace de noms de ce champ peut être différent ou identique à l’espace de noms de l’identifiant de personne sélectionné. S’ils sont différents, les deux espaces de noms doivent être liés dans le graphique d’identité.  Ce champ doit être marqué comme une identité et ne peut pas être identique au champ **[!UICONTROL ID de compte]** ou **[!UICONTROL Heure de création du mappage]**. Le chemin d’accès complet du champ s’affiche sous le champ . |
+      | **[!UICONTROL ID de compte]** | ![Obligatoire](/help/assets/icons/Required.svg) | Sélectionnez le champ du jeu de données contenant les valeurs uniques d’identifiant de compte. Les informations sur l’ID de compte seront disponibles sur les lignes de tous les jeux de données d’événement avec l’assemblage Personne à compte activé. Ce champ ne peut pas être identique au champ **[!UICONTROL ID de personne]** ou **[!UICONTROL Heure de création du mappage]**. Le chemin d’accès complet du champ s’affiche sous le champ . |
       | **Heure de création du mapping** | | Si vous le souhaitez, sélectionnez le champ qui représente la date et l’heure de création du mappage personne-compte. Cette option est utile dans les scénarios où une personne change plusieurs fois de comptes au fil du temps.<br/><br/>**Exemple** (lorsque le champ **update_date** est sélectionné) :<table><thead><tr><th>update_date</th><th>Personne</th><th>account</th></tr></thead><tbody><tr><td>20260401</td><td>a@b.com</td><td>Apple</td></tr><tr><td>20260501</td><td>a@b.com</td><td>Adobe</td></tr></tbody></table><ul><li>Pour tous les événements dont la date et l’heure se trouvent dans le champ **[!UICONTROL update_date]** avant le 1er mai 2026 : a@b.com est mappé à Apple.</li><li>Pour tous les événements dont la date et l’heure figurent dans le champ **[!UICONTROL update_date]** à compter du 1er mai 2026 : a@b.com est mappé à Adobe.</li></ul>Lorsqu&#39;aucune heure de mappage n&#39;est spécifiée, le premier compte lexicographique est utilisé. Ce même algorithme est également utilisé lorsque deux noms de compte différents ont exactement la même valeur **[!UICONTROL update_date]** et qu’une heure de création de mappage est spécifiée. |
 
       >[!NOTE]
