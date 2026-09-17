@@ -8,9 +8,9 @@ hide: true
 source-git-commit: 39d6847296cc385d501defda292b5b3cae98b46a
 workflow-type: tm+mt
 source-wordcount: '2338'
-ht-degree: 5%
+ht-degree: 16%
 ---
-# Migration des balises vers XDM {#upgrade-migration-planner}
+# Migrer des balises vers XDM {#upgrade-migration-planner}
 
 {{upgrade-note-step}}
 
@@ -19,7 +19,7 @@ ht-degree: 5%
 >[!CONTEXTUALHELP]
 >id="migration_intro"
 >title="Présentation des migrations"
->abstract="Migrer une implémentation de balises vers Adobe Experience Platform Web SDK lors de la mise à niveau vers Customer Journey Analytics.<br/>Continuer avec une migration existante ou en démarrer une nouvelle."
+>abstract="Migrez une implémentation de Balises vers le SDK web Adobe Experience Platform lors de la mise à niveau vers Customer Journey Analytics.<br/>Continuez avec une migration existante ou commencez-en une nouvelle."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -122,7 +122,7 @@ Une migration passe par trois étapes : [!UICONTROL **Audit**], [!UICONTROL **Ma
 
 1. Sélectionnez [!UICONTROL **Créer une migration**].
 
-1. Passez à la section suivante, [&#x200B; Validation et déploiement d’une migration &#x200B;](#validate-and-deploy-a-migration).
+1. Passez à la section suivante, [ Validation et déploiement d’une migration ](#validate-and-deploy-a-migration).
 
 ## Validation et déploiement d’une migration
 
@@ -166,7 +166,7 @@ Après avoir créé une migration, ouvrez-la pour en terminer les trois étapes 
 
    1. Dans la vignette [!UICONTROL **Générer l’implémentation de Web SDK**], utilisez les résultats de l’audit et du mappage pour générer le package d’implémentation de Web SDK, puis déployez-le sur votre site.
 
-      Pour obtenir des instructions détaillées, voir [&#x200B; Générer et déployer l’implémentation de Web SDK &#x200B;](#generate-and-deploy-the-web-sdk-implementation).
+      Pour obtenir des instructions détaillées, voir [ Générer et déployer l’implémentation de Web SDK ](#generate-and-deploy-the-web-sdk-implementation).
 
 
 ## Examiner et résoudre les constatations d&#39;audit
@@ -246,7 +246,7 @@ Chaque artefact affiche son statut, par exemple [!UICONTROL **Prêt**] ou [!UICO
 >[!CONTEXTUALHELP]
 >id="migration_mapping_sets"
 >title="Jeux de mappages"
->abstract="Les jeux de mappages déterminent la manière dont les variables Analytics sont mappées sur des champs XDM.<br/>Créez un jeu de mappages ou choisissez-en un existant pour appliquer les mêmes mappages sur plusieurs migrations. Vous pouvez également référencer des jeux de mappages dans d’autres tâches de migration."
+>abstract="Les jeux de mappages déterminent comment les variables Analytics sont mappées aux champs XDM.<br/>Créez un jeu de mappages ou choisissez-en un existant pour appliquer les mêmes mappages sur plusieurs migrations. Vous pouvez également référencer des jeux de mappages dans d’autres tâches de migration."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -254,14 +254,14 @@ Les jeux de mappages déterminent la manière dont les variables Analytics sont 
 
 Vous pouvez créer un nouveau jeu de mappages [pendant le processus de migration](#migrate-an-analytics-implementation-to-the-web-sdk). Vous pouvez également créer un jeu de mappages autonome à utiliser avec une migration ultérieure ou avec d’autres tâches de migration.
 
-### Création d’un jeu de mappages autonome {#xdm-mapping}
+### Créer un jeu de mappages autonome {#xdm-mapping}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="migration_mapping_schema"
 >title="Choisir un schéma"
->abstract="Les jeux de mappages déterminent la manière dont les variables Analytics sont mappées sur des champs XDM.<br/>Créez un jeu de mappages ou choisissez-en un existant pour appliquer les mêmes mappages sur plusieurs migrations. Vous pouvez également référencer des jeux de mappages dans d’autres tâches de migration."
+>abstract="Les jeux de mappages déterminent comment les variables Analytics sont mappées aux champs XDM.<br/>Créez un jeu de mappages ou choisissez-en un existant pour appliquer les mêmes mappages sur plusieurs migrations. Vous pouvez également référencer des jeux de mappages dans d’autres tâches de migration."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -269,8 +269,8 @@ Vous pouvez créer un nouveau jeu de mappages [pendant le processus de migration
 
 >[!CONTEXTUALHELP]
 >id="migration_mapping_field_group"
->title="Préférence du groupe de champs"
->abstract="Choisissez des groupes de champs standard pour utiliser, si possible, les groupes de champs Adobe publiés. Cela favorise une cohérence maximale et revient aux champs du client personnalisé lorsqu’aucun champ standard n’est disponible.<br/>Choisissez des groupes de champs personnalisés pour utiliser, si possible, les champs personnalisés de l’espace de noms du client. Cela favorise une flexibilité maximale."
+>title="Préférence de groupe de champs"
+>abstract="Choisissez des groupes de champs standard pour utiliser, lorsque cela est possible, des groupes de champs Adobe publiés. Cela favorise une cohérence maximale et revient aux champs personnalisés du client lorsqu’aucun champ standard n’est disponible.<br/>Choisissez des groupes de champs personnalisés pour utiliser, lorsque cela est possible, des champs personnalisés de l’espace de noms du client. Cela favorise une flexibilité maximale."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -279,7 +279,7 @@ Vous pouvez créer un nouveau jeu de mappages [pendant le processus de migration
 >[!CONTEXTUALHELP]
 >id="migration_mapping_lookback"
 >title="Période de recherche en amont"
->abstract="Contrôle la période à prendre en compte lors de la détermination des variables qui reçoivent activement des données. Les variables qui incluent des données au cours de la période de recherche en amont sont incluses dans le schéma."
+>abstract="Contrôle la période à prendre en compte lors de la détermination des variables qui reçoivent activement des données. Les variables qui incluent des données pendant la période de recherche en amont sont incluses dans le schéma."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -303,13 +303,13 @@ Vous pouvez créer un nouveau jeu de mappages [pendant le processus de migration
 
 1. Dans le menu déroulant [!UICONTROL **Préférence de groupe de champs**] choisissez comment organiser les variables personnalisées en groupes de champs :
 
-   * [!UICONTROL **Standard en premier**] : utilisez, si possible, les groupes de champs Adobe publiés. Cela favorise une cohérence maximale et revient aux champs du client personnalisé lorsqu’aucun champ standard n’est disponible.
+   * [!UICONTROL **Standard en premier**] : utilisez, si possible, les groupes de champs Adobe publiés. Cela favorise une cohérence maximale et revient aux champs personnalisés du client lorsqu’aucun champ standard n’est disponible.
 
    * [!UICONTROL **Personnalisé d’abord**] : utilisez si possible des champs personnalisés d’espace de noms du client. Cela favorise une flexibilité maximale.
 
    <!-- * [!UICONTROL **Ask each time**]: Prompt for each signal so you can decide individually. -->
 
-1. Dans le champ [!UICONTROL **Période de recherche en amont**], sélectionnez la période de recherche en amont à examiner lors de la détermination des variables qui reçoivent activement des données. Les variables qui incluent des données au cours de la période de recherche en amont sont incluses dans le schéma.
+1. Dans le champ [!UICONTROL **Période de recherche en amont**], sélectionnez la période de recherche en amont à examiner lors de la détermination des variables qui reçoivent activement des données. Les variables qui incluent des données pendant la période de recherche en amont sont incluses dans le schéma.
 
 1. Sélectionnez [!UICONTROL **Créer un jeu de mappages**].
 
