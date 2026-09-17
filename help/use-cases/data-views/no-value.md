@@ -202,4 +202,4 @@ Toutes les entrées **[!UICONTROL Aucune valeur]** ne signalent pas un problème
 
 >[!MORELIKETHIS]
 >
->[Le playbook complet pour la gestion de **[!UICONTROL Aucune valeur]** dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/the-complete-playbook-for-handling-no-value-in-adobe-cja-12769)
+>[Le playbook complet pour la gestion de **[!UICONTROL Aucune valeur]** dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/the-complete-playbook-for-handling-no-value-in-adobe-cja-12769?profile.language=fr)
