@@ -42,7 +42,7 @@ Voici les raisons courantes et attendues pour lesquelles **[!UICONTROL Aucune va
 
 Dans ces cas, la mention **[!UICONTROL Aucune valeur]** indique où se trouve un utilisateur dans son parcours d’authentification, lors du passage d’un statut non identifié à un statut identifié, comme illustré ci-dessous.
 
-parcours d’authentification de l’utilisateur affichant un utilisateur visitant le site et accédant à un statut de pré-connexion sans informations utilisateur disponibles, puis un événement de connexion qui renseigne les informations de l’utilisateur](assets/no-value-login-flow.svg)![
+parcours d’authentification de l’utilisateur affichant un utilisateur visitant le site et accédant à un statut de pré-connexion sans informations utilisateur disponibles, puis un événement de connexion qui renseigne les informations de l’utilisateur![&#128279;](assets/no-value-login-flow.svg)
 
 
 ## Lorsque Aucune valeur n’a besoin d’attention
@@ -67,7 +67,7 @@ Vérifiez les entrées **[!UICONTROL Aucune valeur]** lorsqu’elles résultent 
 
 ## Gérer No value dans les paramètres de la vue de données
 
-Les paramètres de vue de données vous permettent de contrôler l’affichage des éléments **[!UICONTROL Aucune valeur]** dans les rapports. Vous pouvez notamment renommer le libellé, afficher ou masquer les éléments par défaut et traiter **[!UICONTROL Aucune valeur]** comme une valeur de chaîne légitime. Pour obtenir la liste complète des paramètres et leur impact sur les distributions en pourcentage, le filtrage et la segmentation](/help/data-views/component-settings/no-value-options.md) consultez la section [Paramètres du composant Aucune option de valeur).
+Les paramètres de vue de données vous permettent de contrôler l’affichage des éléments **[!UICONTROL Aucune valeur]** dans les rapports. Vous pouvez notamment renommer le libellé, afficher ou masquer les éléments par défaut et traiter **[!UICONTROL Aucune valeur]** comme une valeur de chaîne légitime. Pour obtenir la liste complète des paramètres et leur impact sur les distributions en pourcentage, le filtrage et la segmentation[&#128279;](/help/data-views/component-settings/no-value-options.md) consultez la section Paramètres du composant Aucune option de valeur).
 
 Lors de la configuration de ces paramètres, évaluez vos exigences en matière de création de rapports et évaluez l’impact de la présence de **[!UICONTROL Aucune valeur]** sur votre analyse. Tenez compte à la fois des effets immédiats sur la visibilité des données et des impacts à long terme sur l’analyse des tendances et la cohérence des rapports. Des configurations bien choisies améliorent la clarté des données tout en préservant l’accessibilité et l’exploitabilité des informations commerciales, quelle que soit la manière dont les entrées **[!UICONTROL Aucune valeur]** apparaissent dans vos rapports. La configuration idéale équilibre la représentation des données avec les besoins analytiques pratiques, créant ainsi un environnement de création de rapports qui fournit des informations précises et significatives même lorsque **[!UICONTROL aucune valeur]** données n’est présente.
 

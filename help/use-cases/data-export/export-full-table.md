@@ -35,7 +35,7 @@ ht-degree: 4%
 ---
 # Exporter le tableau complet
 
-Cet article décrit comment la fonctionnalité [!DNL Export full table] peut être utilisée pour implémenter le cas d’utilisation d’exportation de données [ suivant ](overview.md) :
+Cet article décrit comment la fonctionnalité [!DNL Export full table] peut être utilisée pour implémenter le cas d’utilisation d’exportation de données [&#x200B; suivant &#x200B;](overview.md) :
 
 * Validation des données
 * Préparation à l’IA/ML

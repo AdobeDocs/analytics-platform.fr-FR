@@ -82,9 +82,9 @@ Vous pouvez utiliser toutes les fonctionnalités du langage SQL ANSI standard po
 
 #### Colonnes de flux de données
 
-Les champs XDM disponibles dans votre requête dépendent du schéma du jeu de données. Assurez-vous de comprendre le schéma sous-jacent au jeu de données. Pour plus d’informations](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide) consultez le [ Guide de l’interface utilisateur des jeux de données .
+Les champs XDM disponibles dans votre requête dépendent du schéma du jeu de données. Assurez-vous de comprendre le schéma sous-jacent au jeu de données. Pour plus d’informations[&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide) consultez le  Guide de l’interface utilisateur des jeux de données .
 
-Pour vous aider à définir le mappage entre les colonnes des flux de données et les champs XDM, voir [Mappage des champs Analytics](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics). Consultez également la [ Présentation de l’interface utilisateur des schémas ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/overview#defining-xdm-fields) pour plus d’informations sur la gestion des ressources XDM.
+Pour vous aider à définir le mappage entre les colonnes des flux de données et les champs XDM, voir [Mappage des champs Analytics](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics). Consultez également la [&#x200B; Présentation de l’interface utilisateur des schémas &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/overview#defining-xdm-fields) pour plus d’informations sur la gestion des ressources XDM.
 
 Par exemple, si vous souhaitez utiliser *nom de page* dans le cadre de votre flux de données :
 
@@ -143,7 +143,7 @@ Les données collectées dans les jeux de données via Experience Platform Edge 
 
 Voir [Comparer le traitement des données dans Adobe Analytics et Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/data-processing-comparisons) pour un aperçu des différences de traitement des données.
 
-Le type de données de colonne de préfixe `post_`, lorsqu’il est collecté dans le lac de données Experience Platform, nécessite toutefois des transformations avancées avant de pouvoir être utilisé avec succès dans un cas d’utilisation de flux de données. L’exécution de ces transformations avancées dans vos requêtes implique l’utilisation de [fonctions définies par ](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/adobe-defined-functions) pour la transformation en sessions, l’attribution et la déduplication. Voir [Exemples](#examples) pour savoir comment utiliser ces fonctions.
+Le type de données de colonne de préfixe `post_`, lorsqu’il est collecté dans le lac de données Experience Platform, nécessite toutefois des transformations avancées avant de pouvoir être utilisé avec succès dans un cas d’utilisation de flux de données. L’exécution de ces transformations avancées dans vos requêtes implique l’utilisation de [fonctions définies par &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/adobe-defined-functions) pour la transformation en sessions, l’attribution et la déduplication. Voir [Exemples](#examples) pour savoir comment utiliser ces fonctions.
 
 #### Recherches
 
@@ -151,7 +151,7 @@ Pour rechercher des données à partir d’autres jeux de données, vous utilise
 
 #### Calculs
 
-Pour effectuer des calculs sur des champs (colonnes), utilisez les fonctions SQL standard (par exemple `COUNT(*)`) ou les [opérateurs et fonctions mathématiques et statistiques](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/spark-sql-functions#math) faisant partie de Spark SQL. En outre, les [ fonctions de fenêtre ](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/adobe-defined-functions#window-functions) prennent en charge la mise à jour des agrégations et le renvoi d’éléments uniques pour chaque ligne dans un sous-ensemble ordonné. Voir [Exemples](#examples) pour savoir comment utiliser ces fonctions.
+Pour effectuer des calculs sur des champs (colonnes), utilisez les fonctions SQL standard (par exemple `COUNT(*)`) ou les [opérateurs et fonctions mathématiques et statistiques](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/spark-sql-functions#math) faisant partie de Spark SQL. En outre, les [&#x200B; fonctions de fenêtre &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/adobe-defined-functions#window-functions) prennent en charge la mise à jour des agrégations et le renvoi d’éléments uniques pour chaque ligne dans un sous-ensemble ordonné. Voir [Exemples](#examples) pour savoir comment utiliser ces fonctions.
 
 #### Structure de données imbriquées
 
@@ -378,7 +378,7 @@ Veillez à définir le jeu de données de sortie dans le cadre de la propriété
 
 ## Exporter les jeux de données
 
-Créez et planifiez votre requête, et vérifiez les résultats pour exporter les jeux de données bruts vers des destinations d’espace de stockage. Dans la terminologie des destinations Experience Platform, cette exportation est appelée destinations d’exportation de jeu de données. Pour obtenir une présentation, voir [ Exporter des jeux de données vers des destinations d’espace de stockage ](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/activate/export-datasets).
+Créez et planifiez votre requête, et vérifiez les résultats pour exporter les jeux de données bruts vers des destinations d’espace de stockage. Dans la terminologie des destinations Experience Platform, cette exportation est appelée destinations d’exportation de jeu de données. Pour obtenir une présentation, voir [&#x200B; Exporter des jeux de données vers des destinations d’espace de stockage &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/activate/export-datasets).
 
 Les destinations suivantes de stockage dans le cloud sont prises en charge :
 

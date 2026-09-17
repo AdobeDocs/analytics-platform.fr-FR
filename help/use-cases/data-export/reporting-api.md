@@ -12,7 +12,7 @@ ht-degree: 5%
 
 # API Reporting
 
-Cet article décrit comment le [!DNL Customer Journey Analytics Reporting API] peut être utilisé pour implémenter le cas d’utilisation d’exportation de données [ suivant ](overview.md) :
+Cet article décrit comment le [!DNL Customer Journey Analytics Reporting API] peut être utilisé pour implémenter le cas d’utilisation d’exportation de données [&#x200B; suivant &#x200B;](overview.md) :
 
 - Intégration d’applications personnalisées
 
@@ -24,4 +24,4 @@ Le [!DNL Customer Journey Analytics Reporting API] vous permet de récupérer pa
 
 Le [!DNL Reporting API] utilise le même format de requête et de réponse que le [!DNL Reporting API] [!DNL Adobe Analytics], mais utilise un autre point d’entrée. Si vous migrez des intégrations de rapports à partir d’[!DNL Adobe Analytics], consultez le workflow de migration dans le [guide de démarrage rapide](/help/getting-started/cja-getting-started.md) pour plus d’informations.
 
-Pour l’authentification, les points d’entrée disponibles et les limites de requête actuelles, consultez la documentation de l’API Customer Journey Analytics [](https://developer.adobe.com/cja-apis/docs/?lang=fr).
+Pour l’authentification, les points d’entrée disponibles et les limites de requête actuelles, consultez la documentation de l’API Customer Journey Analytics [&#128279;](https://developer.adobe.com/cja-apis/docs/?lang=fr).
