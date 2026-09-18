@@ -30,7 +30,7 @@ topic_v2:
 source-git-commit: 76379e1cd9a42f2b2651a66768c195776eabecff
 workflow-type: tm+mt
 source-wordcount: '2292'
-ht-degree: 21%
+ht-degree: 25%
 ---
 # Combinaison de personnes B2B et de comptes
 
@@ -153,12 +153,12 @@ Avant d’activer la personne B2B pour l’assemblage des comptes, préparez les
 
 Vous devez d’abord activer et configurer le groupement B2B au niveau de la connexion. Lorsque l’assemblage B2B est configuré pour une connexion, vous pouvez ensuite activer l’assemblage des personnes vers les comptes sur des jeux de données d’événement individuels au sein de cette connexion.
 
-### Configurer la personne B2B pour les paramètres d’assemblage des comptes {#configure-b2b-stitching-settings}
+### Configurer les paramètres d’assemblage B2B personne à compte {#configure-b2b-stitching-settings}
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_open_configuration"
 >title="Configurer l’assemblage B2B"
->abstract="Sélectionnez **[!UICONTROL Ouvrir la configuration de groupement B2B]** pour configurer le groupement de personnes B2B vers le compte. Si la connexion n’est pas encore enregistrée, la configuration porte la mention **[!UICONTROL _Modifications non enregistrées_]**."
+>abstract="Sélectionnez **[!UICONTROL Ouvrir la configuration d’assemblage B2B]** pour configurer l’assemblage B2B personne à compte. Si la connexion n’est pas encore enregistrée, la configuration porte la mention **[!UICONTROL _Modifications non enregistrées_]**."
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person_identifier_namespace"
@@ -183,7 +183,7 @@ Vous devez d’abord activer et configurer le groupement B2B au niveau de la con
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_start_time"
 >title="Heure de début"
->abstract="Sélectionnez un champ d’horodatage qui indique le moment où la relation personne à compte est devenue active."
+>abstract="Sélectionnez un champ de date et heure qui indique le moment où la relation personne à compte est devenue active."
 
 
 >[!CONTEXTUALHELP]
@@ -231,14 +231,14 @@ Vous devez d’abord activer et configurer le groupement B2B au niveau de la con
 
    1. L’indicateur **[!UICONTROL _Modifications non enregistrées_]** s’affiche en regard du bouton **Ouvrir la configuration de groupement B2B** jusqu’à ce que vous [enregistriez](#save) la connexion.
 
-### Autoriser la personne B2B à regrouper les comptes sur les jeux de données d’événement
+### Activer l’assemblage B2B personne à compte sur les jeux de données d’événement
 
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_enable_person_to_account"
 >title="Activer l’assemblage personne-compte"
->abstract="Si cette option est activée, ce jeu de données utilise l’assemblage B2B Personne à compte. Les valeurs **[!UICONTROL ID de personne persistant]** sont élevées en valeurs issues de l’espace de noms **[!UICONTROL Identifiant de personne]** configuré, puis utilisées pour rechercher l’ID de compte en fonction du jeu de données personne à compte.<br/>Si cette option est désactivée, ce jeu de données n’utilise pas l’assemblage B2B Personne à compte et vous devez sélectionner un **[!UICONTROL identifiant de compte]** obligatoire à la place."
->additional-url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/stitching/b2b/b2b-person-to-account-stitching#configure-b2b-stitching-settings" text="Configurer la personne B2B pour les paramètres d’assemblage des comptes"
+>abstract="Si cette option est activée, ce jeu de données utilise l’assemblage B2B Personne à compte. Les valeurs d’**[!UICONTROL ID de personne persistant]** seront remplacées par celles de l’**[!UICONTROL espace de noms d’identifiant de personne]** configuré, puis utilisées pour rechercher l’ID de compte à partir du jeu de données de personne à compte.<br/>Si cette option est désactivée, ce jeu de données n’utilise pas l’assemblage B2B Personne à compte et vous devez sélectionner un **[!UICONTROL identifiant de compte]** obligatoire à la place."
+>additional-url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/stitching/b2b/b2b-person-to-account-stitching#configure-b2b-stitching-settings" text="Configurer les paramètres d’assemblage B2B personne à compte"
 
 Après avoir configuré le groupement B2B au niveau de la connexion, vous devez permettre à la personne B2B de tenir compte du groupement individuellement pour chaque jeu de données d’événement que vous souhaitez grouper.
 

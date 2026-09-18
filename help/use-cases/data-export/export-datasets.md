@@ -9,24 +9,30 @@ autotag-review: '2026-05-19T09:38:40.111Z'
 TQID: 'https://experienceleague.adobe.com/az0B0Gzzu0pbb0TbpiZjW0Y-GysEptIETtg2bBFl-Uw'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
   - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+    internal-label: Use cases, Use cases (CJA)
   - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+    internal-label: Exports
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Customer journeys
+source-git-commit: 06d3fa4838d48567f1b9804992aa0f718937916d
 workflow-type: tm+mt
-source-wordcount: 1187
+source-wordcount: '1185'
 ht-degree: 6%
-
 ---
-
 # Exporter les jeux de données
 
 Cet article décrit comment le [!DNL Customer Journey Analytics Export datasets] peut être utilisé pour implémenter le cas d’utilisation d’exportation de données [&#x200B; suivant &#x200B;](overview.md) :
@@ -37,11 +43,13 @@ Cet article décrit comment le [!DNL Customer Journey Analytics Export datasets]
 
 L’exportation de données à l’aide de [!DNL Experience Platform Export datasets] vous permet d’exporter des données de vos vues de données Customer Journey Analytics vers n’importe quelle destination d’espace de stockage.
 
+Contrairement aux autres méthodes d’exportation, Exporter des jeux de données n’a pas de limite de lignes fixe. La capacité de votre destination d’espace de stockage dans le cloud limite la taille de l’exportation, ce qui en fait la fonctionnalité préférée lorsque vous avez besoin d’une copie brute complète de vos données.
+
 Extension ![BI](../assets/export-datasets.png)
 
 ## Informations supplémentaires
 
-Vous pouvez exporter des jeux de données bruts du lac de données dans Experience Platform vers des destinations d’espace de stockage. Cette exportation figure dans la terminologie des destinations Experience Platform, appelée destinations d’exportation de jeu de données. Consultez [&#x200B; Exporter des jeux de données vers des destinations d’espace de stockage &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/activate/export-datasets) pour une présentation.
+Pour exporter des jeux de données bruts à partir du lac de données dans Experience Platform, utilisez des destinations d’espace de stockage. Cette exportation est appelée destinations d’exportation de jeux de données dans la terminologie des destinations Experience Platform. Pour obtenir une présentation, voir [&#x200B; Exporter des jeux de données vers des destinations d’espace de stockage &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/activate/export-datasets).
 
 Les destinations suivantes de stockage dans le cloud sont prises en charge :
 
@@ -74,14 +82,14 @@ Lorsque vous avez sélectionné la destination, à l’étape suivante **[!UICON
 
 #### Planifier l’exportation des jeux de données
 
-Enfin, vous souhaitez planifier l’exportation de votre jeu de données dans le cadre de l’étape **[!UICONTROL Planification]**. Au cours de cette étape, vous pouvez définir le planning et déterminer si l’exportation du jeu de données doit être incrémentielle ou non. Voir [Planifier l’exportation de jeux de données](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/activate/export-datasets#scheduling) pour plus d’informations.
+Enfin, planifiez l’exportation de votre jeu de données dans le cadre de l’étape **[!UICONTROL Planification]**. Au cours de cette étape, définissez le planning et si l’exportation du jeu de données est incrémentielle. Voir [Planifier l’exportation de jeux de données](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/activate/export-datasets#scheduling) pour plus d’informations.
 
 
 #### Dernières étapes
 
 [Vérifiez](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/activate/export-datasets#review) votre sélection et, une fois qu’elle est correcte, commencez à exporter votre jeu de données vers la destination d’espace de stockage.
 
-Tout d’abord, vous devez [vérifier](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/activate/export-datasets#verify) une exportation de données réussie. Lors de l’exportation de jeux de données, Experience Platform crée un ou plusieurs fichiers `.json` ou `.parquet` à l’emplacement de stockage défini dans la destination. Attendez-vous à ce que de nouveaux fichiers soient déposés dans votre emplacement de stockage en fonction du planning d’exportation que vous avez configuré. Experience Platform crée une structure de dossiers à l’emplacement de stockage que vous avez spécifié dans le cadre de la destination sélectionnée, où il dépose les fichiers exportés. Un nouveau dossier est créé pour chaque heure d’exportation, en suivant le modèle : `folder-name-you-provided/datasetID/exportTime=YYYYMMDDHHMM`. Le nom de fichier par défaut est généré de manière aléatoire pour garantir que les noms de fichier exportés soient uniques.
+Tout d’abord, vous devez [vérifier](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/activate/export-datasets#verify) une exportation de données réussie. Lors de l’exportation de jeux de données, Experience Platform crée un ou plusieurs fichiers `.json` ou `.parquet` à l’emplacement de stockage de la destination. Attendez-vous à ce que de nouveaux fichiers soient déposés dans votre emplacement de stockage en fonction du planning d’exportation que vous avez configuré. Experience Platform crée une structure de dossiers à l’emplacement de stockage que vous avez spécifié dans le cadre de la destination sélectionnée, où il dépose les fichiers exportés. Un nouveau dossier est créé pour chaque heure d’exportation, en suivant le modèle : `folder-name-you-provided/datasetID/exportTime=YYYYMMDDHHMM`. Le nom de fichier par défaut est généré de manière aléatoire pour garantir que les noms de fichier exportés soient uniques.
 
 ### API Flow Service
 
@@ -89,32 +97,32 @@ Vous pouvez également exporter et planifier l’exportation des jeux de donnée
 
 #### Commencer
 
-Pour exporter des jeux de données, vérifiez que vous disposez des [autorisations requises](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/api/export-datasets#permissions). Vérifiez également que la destination vers laquelle vous souhaitez envoyer votre jeu de données prend en charge l’exportation de jeux de données. Vous devez ensuite [rassembler les valeurs des en-têtes obligatoires et facultatifs](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/api/export-datasets#gather-values-headers) que vous utilisez dans les appels API. Vous devez également [identifier la spécification de connexion et les identifiants de spécification de flux de la destination](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/api/export-datasets#gather-connection-spec-flow-spec) vers lesquels vous envisagez d’exporter des jeux de données.
+Pour exporter des jeux de données, vérifiez que vous disposez des [autorisations requises](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/api/export-datasets#permissions). Vérifiez également que la destination prend en charge l’exportation de jeux de données. Vous pouvez envoyer votre jeu de données à cette destination. Vous devez ensuite [rassembler les valeurs des en-têtes obligatoires et facultatifs](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/api/export-datasets#gather-values-headers) que vous utilisez dans les appels API. Vous devez également [identifier la spécification de connexion et les identifiants de spécification de flux de la destination](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/api/export-datasets#gather-connection-spec-flow-spec) vers lesquels vous envisagez d’exporter des jeux de données.
 
 #### Récupérer des jeux de données éligibles
 
-Vous pouvez [récupérer une liste de jeux de données éligibles](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/api/export-datasets#retrieve-list-of-available-datasets) pour l’exportation et vérifier si votre jeu de données fait partie de cette liste à l’aide de l’API [`GET /connectionSpecs/{id}/configs`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Configurations/operation/getDatasets).
+Vous pouvez [récupérer une liste de jeux de données éligibles](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/api/export-datasets#retrieve-list-of-available-datasets) pour l’exportation et vérifier si votre jeu de données fait partie de cette liste à l’aide de l’API [`GET /connectionSpecs/{id}/configs`](https://developer.adobe.com/experience-platform-apis/references/destinations#operation/getDatasets).
 
 
 #### Créer une connexion source
 
-Ensuite, vous devez [créer une connexion source](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/api/export-datasets#create-source-connection) pour le jeu de données, à l’aide de son identifiant unique, que vous souhaitez exporter vers la destination d’espace de stockage. Vous utilisez l’API [`POST /sourceConnections`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Source-connections/operation/postSourceConnection).
+Ensuite, vous devez [créer une connexion source](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/api/export-datasets#create-source-connection) pour le jeu de données, à l’aide de son identifiant unique, que vous souhaitez exporter vers la destination d’espace de stockage. Vous utilisez l’API [`POST /sourceConnections`](https://developer.adobe.com/experience-platform-apis/references/destinations#operation/postSourceConnection).
 
 #### S’authentifier auprès de la destination (créer une connexion de base)
 
-Vous devez maintenant [créer une connexion de base](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/api/export-datasets#create-base-connection) pour authentifier et stocker en toute sécurité les informations d’identification vers votre destination d’espace de stockage dans le cloud à l’aide de l’API [`POST /targetConection`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Target-connections/operation/postTargetConnection).
+Pour authentifier et stocker en toute sécurité les informations d’identification dans votre destination d’espace de stockage, [créez une connexion de base](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/api/export-datasets#create-base-connection) à l’aide de l’API [`POST /targetConnection`](https://developer.adobe.com/experience-platform-apis/references/destinations#operation/postTargetConnection).
 
 
 #### Fournir des paramètres d’exportation
 
-Ensuite, vous devez [créer une connexion cible supplémentaire qui stocke les paramètres d’exportation](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/api/export-datasets#create-target-connection) pour votre jeu de données à l’aide, une fois de plus, de l’API [`POST /targetConection`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Target-connections/operation/postTargetConnection). Ces paramètres d’exportation incluent l’emplacement, le format de fichier, la compression, etc.
+Ensuite, vous devez [créer une connexion cible supplémentaire qui stocke les paramètres d’exportation](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/api/export-datasets#create-target-connection) pour votre jeu de données à l’aide de l’API [`POST /targetConnection`](https://developer.adobe.com/experience-platform-apis/references/destinations#operation/postTargetConnection). Ces paramètres d’exportation incluent l’emplacement, le format de fichier, la compression, etc.
 
 #### Configurer le flux de données
 
-Enfin, vous [configurez le flux de données](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/api/export-datasets#create-dataflow) pour vous assurer que votre jeu de données est exporté vers votre destination d’espace de stockage à l’aide de l’API [`POST /flows`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Dataflows/operation/postFlow). Au cours de cette étape, vous pouvez définir le planning de l’exportation à l’aide du paramètre `scheduleParams` .
+Pour vous assurer que votre jeu de données est exporté vers votre destination d’espace de stockage, [configurez le flux de données](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/api/export-datasets#create-dataflow) à l’aide de l’API [`POST /flows`](https://developer.adobe.com/experience-platform-apis/references/destinations#operation/postFlow). Au cours de cette étape, vous pouvez définir le planning de l’exportation à l’aide du paramètre `scheduleParams` .
 
 #### Valider le flux de données
 
-Pour [vérifier les exécutions réussies de votre flux de données](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/api/export-datasets#get-dataflow-runs), utilisez l’API [`GET /runs`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Dataflow-runs/operation/getFlowRuns) en spécifiant l’identifiant du flux de données comme paramètre de requête. Cet identifiant de flux de données est un identifiant renvoyé lorsque vous configurez le flux de données.
+Pour [vérifier les exécutions réussies de votre flux de données](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/api/export-datasets#get-dataflow-runs), utilisez l’API [`GET /runs`](https://developer.adobe.com/experience-platform-apis/references/destinations#operation/getFlowRuns) en spécifiant l’identifiant du flux de données comme paramètre de requête. Cet identifiant de flux de données est un identifiant renvoyé lorsque vous configurez le flux de données.
 
-[Vérifier](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/activate/export-datasets#verify) une exportation de données réussie. Lors de l’exportation de jeux de données, Experience Platform crée un ou plusieurs fichiers `.json` ou `.parquet` à l’emplacement de stockage défini dans la destination. Attendez-vous à ce que de nouveaux fichiers soient déposés dans votre emplacement de stockage en fonction du planning d’exportation que vous avez configuré. Experience Platform crée une structure de dossiers à l’emplacement de stockage que vous avez spécifié dans le cadre de la destination sélectionnée, où il dépose les fichiers exportés. Un nouveau dossier est créé pour chaque heure d’exportation, en suivant le modèle : `folder-name-you-provided/datasetID/exportTime=YYYYMMDDHHMM`. Le nom de fichier par défaut est généré de manière aléatoire pour garantir que les noms de fichier exportés soient uniques.
+[Vérifier](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/activate/export-datasets#verify) une exportation de données réussie. Lors de l’exportation de jeux de données, Experience Platform crée un ou plusieurs fichiers `.json` ou `.parquet` à l’emplacement de stockage de la destination. Attendez-vous à ce que de nouveaux fichiers soient déposés dans votre emplacement de stockage en fonction du planning d’exportation que vous avez configuré. Experience Platform crée une structure de dossiers à l’emplacement de stockage que vous avez spécifié dans le cadre de la destination sélectionnée, où il dépose les fichiers exportés. Un nouveau dossier est créé pour chaque heure d’exportation, en suivant le modèle : `folder-name-you-provided/datasetID/exportTime=YYYYMMDDHHMM`. Le nom de fichier par défaut est généré de manière aléatoire afin de garantir l’unicité des noms des fichiers exportés.

@@ -8,35 +8,42 @@ exl-id: 14a90758-91eb-4610-8802-1edfdb8b9689
 TQID: https://experienceleague.adobe.com/J-5oxLDw4sLVFcXYQhN5cpTkH76C5wAfWFECrIydb-s
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+    internal-label: Exports
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
+    internal-label: Machine learning
+source-git-commit: 06d3fa4838d48567f1b9804992aa0f718937916d
 workflow-type: tm+mt
-source-wordcount: 3373
+source-wordcount: '3306'
 ht-degree: 10%
-
 ---
-
 # Query Service (Distiller de données) et exporter des jeux de données
 
 Cet article décrit comment la combinaison d’Experience Platform Query Service (Data Distiller) et de l’exportation de jeux de données peut être utilisée pour implémenter les [cas d’utilisation de l’exportation de données](overview.md) suivants :
 
 - Validation des données
-- Lac de données, Data Warehouse d’outils de BI
+- Lac de données, Data Warehouse pour les outils de BI
 - Préparation à l’intelligence artificielle et au machine learning.
 
 
-Adobe Analytics peut mettre en œuvre ces cas pratiques à l’aide de sa fonctionnalité [Flux de données](https://experienceleague.adobe.com/fr/docs/analytics/export/analytics-data-feed/data-feed-overview). Les flux de données sont un moyen puissant d’extraire des données brutes d’Adobe Analytics. Cet article décrit comment obtenir un type similaire de données brutes en dehors d’Experience Platform, afin que vous puissiez implémenter les cas d’utilisation mentionnés ci-dessus. Le cas échéant, les fonctionnalités décrites dans cet article sont comparées aux flux de données d’Adobe Analytics afin de clarifier les différences de données et de processus.
+Adobe Analytics peut mettre en œuvre ces cas pratiques à l’aide de sa fonctionnalité [Flux de données](https://experienceleague.adobe.com/fr/docs/analytics/export/analytics-data-feed/data-feed-overview). Les flux de données sont un moyen efficace d’exporter des données brutes d’Adobe Analytics. Cet article décrit comment exporter un type similaire de données brutes à partir d’Experience Platform, afin que vous puissiez mettre en œuvre les cas d’utilisation mentionnés ci-dessus. Le cas échéant, les fonctionnalités décrites dans cet article sont comparées aux flux de données d’Adobe Analytics afin de clarifier les différences de données et de processus.
 
 ## Introduction
 
@@ -53,8 +60,8 @@ L’exportation de données à l’aide de Query Service (Data Distiller) et de 
 Assurez-vous de répondre à toutes les exigences suivantes avant d’utiliser la fonctionnalité décrite dans ce cas d’utilisation :
 
 - Une implémentation fonctionnelle qui collecte des données dans le lac de données d’Experience Platform.
-- Accès au module complémentaire Distiller de données pour vous assurer que vous êtes autorisé à exécuter des requêtes par lots. Voir [Package Query Service](https://experienceleague.adobe.com/fr/docs/experience-platform/query/packaging) pour plus d’informations.
-- Accès à la fonctionnalité Exporter les jeux de données , disponible lorsque vous avez acheté le package Real-Time CDP Prime ou Ultimate, Adobe Journey Optimizer ou Customer Journey Analytics. Consultez [&#x200B; Exporter des jeux de données vers des destinations d’espace de stockage &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/activate/export-datasets) pour plus d’informations.
+- Accès au module complémentaire Distiller de données pour vous assurer que vous êtes autorisé à exécuter des requêtes par lots. Les limites des lignes de requête et les délais d’exécution dépendent de vos droits. Voir [Package Query Service](https://experienceleague.adobe.com/fr/docs/experience-platform/query/packaging) pour plus d’informations.
+- Accès à la fonctionnalité Exporter les jeux de données , disponible lorsque vous avez acheté le package Real-Time CDP Prime ou Ultimate, Adobe Journey Optimizer ou Customer Journey Analytics. Pour en savoir plus, voir [Exporter des jeux de données vers des destinations d’espace de stockage](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/activate/export-datasets).
 - Une ou plusieurs destinations configurées (par exemple : Amazon S3, Google Cloud Storage) vers lesquelles vous pouvez exporter les données brutes de votre flux de données.
 
 
@@ -75,9 +82,9 @@ Vous pouvez utiliser toutes les fonctionnalités du langage SQL ANSI standard po
 
 #### Colonnes de flux de données
 
-Les champs XDM que vous pouvez utiliser dans votre requête dépendent de la définition de schéma sur laquelle vos jeux de données sont basés. Assurez-vous de comprendre le schéma sous-jacent au jeu de données. Pour plus d’informations, consultez le [&#x200B; Guide de l’interface utilisateur des jeux de données &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/catalog/datasets/user-guide).
+Les champs XDM disponibles dans votre requête dépendent du schéma du jeu de données. Assurez-vous de comprendre le schéma sous-jacent au jeu de données. Pour plus d’informations[&#128279;](https://experienceleague.adobe.com/fr/docs/experience-platform/catalog/datasets/user-guide) consultez le  Guide de l’interface utilisateur des jeux de données .
 
-Pour vous aider à définir le mappage entre les colonnes des flux de données et les champs XDM, voir [Mappage des champs Analytics](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics). Consultez également la [&#x200B; Présentation de l’interface utilisateur des schémas &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/ui/overview#defining-xdm-fields) pour plus d’informations sur la gestion des ressources XDM, y compris les schémas, les classes, les groupes de champs et les types de données.
+Pour vous aider à définir le mappage entre les colonnes des flux de données et les champs XDM, voir [Mappage des champs Analytics](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics). Consultez également la [&#x200B; Présentation de l’interface utilisateur des schémas &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/ui/overview#defining-xdm-fields) pour plus d’informations sur la gestion des ressources XDM.
 
 Par exemple, si vous souhaitez utiliser *nom de page* dans le cadre de votre flux de données :
 
@@ -90,13 +97,13 @@ Par exemple, si vous souhaitez utiliser *nom de page* dans le cadre de votre flu
 Dans Experience Platform, différentes identités sont disponibles. Lors de la création de vos requêtes, assurez-vous d’interroger les identités correctement.
 
 
-Souvent, vous trouvez des identités dans un groupe de champs distinct. Dans une implémentation d’, ECID (`ecid`) peut être défini comme faisant partie d’un groupe de champs avec un objet `core`, qui fait lui-même partie d’un objet `identification` (par exemple : `_sampleorg.identification.core.ecid`). Les ECID peuvent être organisés différemment dans vos schémas.
+Souvent, vous trouvez des identités dans un groupe de champs distinct. Dans une implémentation d’, ECID (`ecid`) peut être défini comme faisant partie d’un groupe de champs avec un objet `core`, qui fait lui-même partie d’un objet `identification` (par exemple : `_sampleorg.identification.core.ecid`). Les ECID sont organisés différemment dans vos schémas.
 
 Vous pouvez également utiliser `identityMap` pour rechercher des identités. Le `identityMap` est de type `Map` et utilise une [structure de données imbriquée](#nested-data-structure).
 
 Voir [Définir des champs d’identité dans l’interface utilisateur](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/ui/fields/identity) pour plus d’informations sur la définition de champs d’identité dans Experience Platform.
 
-Reportez-vous à [identifiants de Principal dans les données Analytics](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/analytics#primary-identifiers-in-analytics-data) pour comprendre comment les identités Adobe Analytics sont mappées aux identités Experience Platform lors de l&#39;utilisation du connecteur source Analytics. Ce mappage peut servir de guide pour configurer vos identités, même lorsque vous n’utilisez pas le connecteur source Analytics.
+Reportez-vous à [identifiants de Principal dans les données Analytics](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/analytics#primary-identifiers-in-analytics-data) pour comprendre comment les identités Adobe Analytics sont mappées aux identités Experience Platform lors de l&#39;utilisation du connecteur source Analytics. Ce mappage sert de guide pour configurer vos identités, même lorsque vous n’utilisez pas le connecteur source Analytics.
 
 
 #### Données et identification au niveau des accès
@@ -105,7 +112,7 @@ Selon l’implémentation de , les données au niveau de l’accès généraleme
 
 | Colonne de flux de données | Champ XDM | Type | Description |
 |---|---|---|---|
-| `hitid_high` + `hitid_low` | `_id` | string | Identifiant unique permettant d’identifier un accès. |
+| `hitid_high` + `hitid_low` | `_id` | string | Identifiant unique permettant d’identifier un hit. |
 | `hitid_low` | `_id` | string | Utilisé avec `hitid_high` pour identifier un accès de manière unique. |
 | `hitid_high` | `_id` | string | Utilisé avec `hitid_high` pour identifier un accès de manière unique. |
 | `hit_time_gmt` | `receivedTimestamp` | string | Date et heure de l’accès, basées sur l’heure UNIX®. |
@@ -121,12 +128,12 @@ Selon l’implémentation de , les données au niveau de l’accès généraleme
 | `cust_visid` | `endUserIDs._experience.aacustomid.namespace.code` | string | Utilisé avec `visid_low` pour identifier de manière unique l’identifiant visiteur du client. |
 | `geo\_*` | `placeContext.geo.* ` | chaîne, nombre | Données de géolocalisation, comme le pays, la région, la ville, etc |
 | `event_list` | `commerce.purchases`, `commerce.productViews`, `commerce.productListOpens`, `commerce.checkouts`, `commerce.productListAdds`, `commerce.productListRemovals`, `commerce.productListViews`, `_experience.analytics.event101to200.*`, ..., `_experience.analytics.event901_1000.*` | string | Événements commerciaux et personnalisés standard déclenchés sur l’accès. |
-| `page_event` | `web.webInteraction.type` | string | Le type d’accès qui est envoyé dans la demande d’image (accès standard, lien de téléchargement, lien de sortie ou lien personnalisé sur lequel le visiteur a cliqué). |
-| `page_event` | `web.webInteraction.linkClicks.value` | Nombre | Le type d’accès qui est envoyé dans la demande d’image (accès standard, lien de téléchargement, lien de sortie ou lien personnalisé sur lequel le visiteur a cliqué). |
-| `page_event_var_1` | `web.webInteraction.URL` | string | Variable utilisée uniquement dans les demandes d’image de suivi de liens. Cette variable contient l’URL du lien de téléchargement, de sortie ou personnalisé sur lequel a cliqué l’utilisateur. |
+| `page_event` | `web.webInteraction.type` | string | Le type de hit qui est envoyé dans la demande d’image (hit standard, lien de téléchargement, lien de sortie ou lien personnalisé sur lequel le visiteur a cliqué). |
+| `page_event` | `web.webInteraction.linkClicks.value` | Nombre | Le type de hit qui est envoyé dans la demande d’image (hit standard, lien de téléchargement, lien de sortie ou lien personnalisé sur lequel le visiteur a cliqué). |
+| `page_event_var_1` | `web.webInteraction.URL` | string | Variable utilisée uniquement dans les demandes d’image de suivi de liens. Cette variable contient l’URL du lien de téléchargement, du lien de sortie ou du lien personnalisé sur lequel a cliqué l’utilisateur ou l’utilisatrice. |
 | `page_event_var_2` | `web.webInteraction.name` | string | Variable utilisée uniquement dans les demandes d’image de suivi de liens. Répertorie le nom personnalisé du lien, s’il est spécifié. |
-| `paid_search` | `search.isPaid` | booléen | Indicateur défini si l’accès correspond à la détection des référencements payants. |
-| `ref_type` | `web.webReferrertype` | string | Identifiant numérique représentant le type de référence pour l’accès. |
+| `paid_search` | `search.isPaid` | booléen | Indicateur défini si le hit correspond à la détection des référencements payants. |
+| `ref_type` | `web.webReferrertype` | string | Identifiant numérique représentant le type de référence pour le hit. |
 
 #### Colonnes de publication
 
@@ -189,8 +196,8 @@ Voir [Utiliser les structures de données imbriquées dans le service de requêt
 Pour les requêtes :
 
 - qui utilisent des données provenant de jeux de données du lac de données d’Experience Platform,
-- tirent parti des fonctionnalités supplémentaires des fonctions définies par Adobe et/ou de Spark SQL, et
-- qui produirait des résultats similaires à ceux d’un flux de données Adobe Analytics équivalent ;
+- utiliser les fonctionnalités supplémentaires des fonctions définies par Adobe et/ou de Spark SQL, et
+- qui fournit des résultats similaires à ceux d’un flux de données Adobe Analytics équivalent,
 
 voir :
 
@@ -199,7 +206,7 @@ voir :
 - [filtrage des robots](https://experienceleague.adobe.com/fr/docs/experience-platform/query/use-cases/bot-filtering)
 - et d’autres [cas d’utilisation pris en charge dans le guide de Query Service](https://experienceleague.adobe.com/fr/docs/experience-platform/query/use-cases/overview).
 
-Vous trouverez ci-dessous un exemple d’application correcte de l’attribution entre les sessions , qui illustre comment :
+Vous trouverez ci-dessous un exemple d’application correcte de l’attribution entre les sessions qui illustre comment :
 
 - utilisez les 90 derniers jours comme recherche en amont,
 - appliquer des fonctions de fenêtre telles que la sessionnalisation et/ou l’attribution ; et
@@ -211,9 +218,9 @@ Vous trouverez ci-dessous un exemple d’application correcte de l’attribution
 
   - Utilisez un tableau de statut de traitement, `checkpoint_log`, pour suivre l’heure actuelle par rapport à la dernière heure d’ingestion. Voir [ce guide](https://experienceleague.adobe.com/fr/docs/experience-platform/query/key-concepts/incremental-load) pour plus d’informations.
   - désactivez l’option supprimer les colonnes système pour pouvoir utiliser `_acp_system_metadata.ingestTime`.
-  - Utilisez un `SELECT` interne le plus complet pour saisir les champs que vous souhaitez utiliser et limiter les événements à votre période de recherche en amont pour les calculs de sessionnalisation et/ou d’attribution. Par exemple, 90 jours.
-  - Utilisez une `SELECT` de niveau supérieur pour appliquer des fonctions de fenêtre de sessionnalisation et/ou d’attribution et d’autres calculs.
-  - Utilisez les `INSERT INTO` dans votre tableau de sortie pour limiter la recherche en amont aux événements arrivés depuis votre dernière heure de traitement. Pour ce faire, filtrez sur `_acp_system_metadata.ingestTime ` par rapport à la dernière heure stockée dans votre tableau de statut du traitement.
+  - Utilisez une `SELECT` interne pour saisir les champs que vous souhaitez utiliser et limiter les événements à votre période de recherche en amont pour les calculs de sessionnalisation et/ou d’attribution. Par exemple, 90 jours.
+  - Utilisez une `SELECT` de niveau supérieur pour appliquer vos fonctions de fenêtre de sessionnalisation et/ou d’attribution et d’autres calculs.
+  - Pour limiter la recherche en amont aux événements qui sont arrivés depuis votre dernière heure de traitement, utilisez `INSERT INTO` dans votre tableau de sortie. Pour ce faire, filtrez sur `_acp_system_metadata.ingestTime ` par rapport à la dernière heure stockée dans votre tableau de statut du traitement.
 
   **Exemple de fonctions de fenêtre de sessionisation**
 
@@ -355,7 +362,7 @@ Vous trouverez ci-dessous un exemple d’application correcte de l’attribution
 
 ### Planifier la requête
 
-Vous planifiez la requête pour vous assurer qu’elle est exécutée et que les résultats sont générés à l’intervalle souhaité.
+Pour vous assurer que la requête est exécutée et que les résultats sont générés à l’intervalle souhaité, planifiez la requête.
 
 #### Utilisation de Query Editor
 
@@ -365,13 +372,13 @@ Vous pouvez planifier une requête à l’aide du Query Editor. Lors de la plani
 #### Utilisation de l’API Query Service
 
 Vous pouvez également utiliser les API RESTful pour définir une requête et planifier la requête. Pour plus d’informations, consultez le [guide de l’API Query Service](https://experienceleague.adobe.com/fr/docs/experience-platform/query/api/getting-started).
-Veillez à définir le jeu de données de sortie dans le cadre de la propriété `ctasParameters` facultative lors de la création de la requête ([Créer une requête](https://developer.adobe.com/experience-platform-apis/references/query-service/#tag/Queries/operation/createQuery)) ou lors de la création du planning d’une requête ([Créer une requête planifiée](https://developer.adobe.com/experience-platform-apis/references/query-service/#tag/Schedules/operation/createSchedule)).
+Veillez à définir le jeu de données de sortie dans le cadre de la propriété `ctasParameters` facultative lors de la création de la requête ([Créer une requête](https://developer.adobe.com/experience-platform-apis/references/query-service#operation/createQuery)) ou lors de la création du planning d’une requête [Créer une requête planifiée](https://developer.adobe.com/experience-platform-apis/references/query-service#operation/createSchedule).
 
 
 
 ## Exporter les jeux de données
 
-Une fois que vous avez créé et planifié votre requête, et vérifié les résultats, vous pouvez exporter les jeux de données bruts vers des destinations d’espace de stockage. Cette exportation figure dans la terminologie des destinations Experience Platform, appelée destinations d’exportation de jeu de données. Consultez [&#x200B; Exporter des jeux de données vers des destinations d’espace de stockage &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/activate/export-datasets) pour une présentation.
+Créez et planifiez votre requête, et vérifiez les résultats pour exporter les jeux de données bruts vers des destinations d’espace de stockage. Dans la terminologie des destinations Experience Platform, cette exportation est appelée destinations d’exportation de jeu de données. Pour obtenir une présentation, voir [&#x200B; Exporter des jeux de données vers des destinations d’espace de stockage &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/activate/export-datasets).
 
 Les destinations suivantes de stockage dans le cloud sont prises en charge :
 
@@ -389,7 +396,7 @@ Vous pouvez exporter et planifier l’exportation de vos jeux de données de sor
 
 #### Sélectionner la destination
 
-Lorsque vous avez déterminé la destination d’espace de stockage vers laquelle vous souhaitez exporter le jeu de données de sortie, [sélectionnez la destination](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/activate/export-datasets#select-destination). Lorsque vous n’avez pas encore configuré de destination pour votre espace de stockage dans le cloud préféré, vous devez [créer une connexion de destination](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/connect-destination).
+Déterminez la destination d’espace de stockage vers laquelle vous souhaitez exporter le jeu de données de sortie. Sélectionnez ensuite [la destination](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/activate/export-datasets#select-destination). Lorsque vous n’avez pas encore configuré de destination pour votre espace de stockage dans le cloud préféré, vous devez [créer une connexion de destination](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/connect-destination).
 
 Lors de la configuration d’une destination, vous pouvez :
 
@@ -404,14 +411,14 @@ Lorsque vous avez sélectionné la destination, à l’étape suivante **[!UICON
 
 #### Planifier l’exportation des jeux de données
 
-Enfin, vous souhaitez planifier l’exportation de votre jeu de données dans le cadre de l’étape **[!UICONTROL Planification]**. Au cours de cette étape, vous pouvez définir le planning et déterminer si l’exportation du jeu de données de sortie doit être incrémentielle ou non. Voir [Planifier l’exportation de jeux de données](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/activate/export-datasets#scheduling) pour plus d’informations.
+Enfin, vous souhaitez planifier l’exportation de votre jeu de données dans le cadre de l’étape **[!UICONTROL Planification]**. Au cours de cette étape, définissez le planning et si l’exportation du jeu de données de sortie est incrémentielle. Voir [Planifier l’exportation de jeux de données](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/activate/export-datasets#scheduling) pour plus d’informations.
 
 
 #### Dernières étapes
 
 [Vérifiez](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/activate/export-datasets#review) votre sélection et, une fois qu’elle est correcte, commencez à exporter votre jeu de données de sortie vers la destination d’espace de stockage.
 
-Vous devez [vérifier](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/activate/export-datasets#verify) une exportation réussie des données. Lors de l’exportation de jeux de données, Experience Platform crée un ou plusieurs fichiers `.json` ou `.parquet` à l’emplacement de stockage défini dans la destination. Attendez-vous à ce que de nouveaux fichiers soient déposés dans votre emplacement de stockage en fonction du planning d’exportation que vous avez configuré. Experience Platform crée une structure de dossiers à l’emplacement de stockage que vous avez spécifié dans le cadre de la destination sélectionnée, où il dépose les fichiers exportés. Un nouveau dossier est créé pour chaque heure d’exportation, en suivant le modèle : `folder-name-you-provided/datasetID/exportTime=YYYYMMDDHHMM`. Le nom de fichier par défaut est généré de manière aléatoire pour garantir que les noms de fichier exportés soient uniques.
+[Vérifier](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/activate/export-datasets#verify) une exportation de données réussie. Lors de l’exportation de jeux de données, Experience Platform crée un ou plusieurs fichiers `.json` ou `.parquet` à l’emplacement de stockage de la destination. Attendez-vous à ce que de nouveaux fichiers soient déposés dans votre emplacement de stockage en fonction du planning d’exportation que vous avez configuré. Experience Platform crée une structure de dossiers à l’emplacement de stockage que vous avez spécifié dans le cadre de la destination sélectionnée, où il dépose les fichiers exportés. Un nouveau dossier est créé pour chaque heure d’exportation, en suivant le modèle : `folder-name-you-provided/datasetID/exportTime=YYYYMMDDHHMM`. Le nom de fichier par défaut est généré de manière aléatoire pour garantir que les noms de fichier exportés soient uniques.
 
 ### API Flow Service
 
@@ -423,35 +430,35 @@ Pour exporter des jeux de données, vérifiez que vous disposez des [autorisatio
 
 #### Récupérer des jeux de données éligibles
 
-Vous pouvez [récupérer une liste de jeux de données éligibles](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/api/export-datasets#retrieve-list-of-available-datasets) pour l’exportation et vérifier si votre jeu de données de sortie fait partie de cette liste à l’aide de l’API [`GET /connectionSpecs/{id}/configs`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Configurations/operation/getDatasets).
+Vous pouvez [récupérer une liste de jeux de données éligibles](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/api/export-datasets#retrieve-list-of-available-datasets) pour l’exportation et vérifier si votre jeu de données de sortie fait partie de cette liste à l’aide de l’API [`GET /connectionSpecs/{id}/configs`](https://developer.adobe.com/experience-platform-apis/references/destinations#operation/getDatasets).
 
 
 #### Créer une connexion source
 
-Ensuite, vous devez [créer une connexion source](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/api/export-datasets#create-source-connection) pour le jeu de données de sortie, à l’aide de son identifiant unique, que vous souhaitez exporter vers la destination d’espace de stockage. Vous utilisez l’API [`POST /sourceConnections`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Source-connections/operation/postSourceConnection).
+Ensuite, vous devez [créer une connexion source](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/api/export-datasets#create-source-connection) pour le jeu de données de sortie, à l’aide de son identifiant unique, que vous souhaitez exporter vers la destination d’espace de stockage. Vous utilisez l’API [`POST /sourceConnections`](https://developer.adobe.com/experience-platform-apis/references/destinations#operation/postSourceConnection).
 
 #### S’authentifier auprès de la destination (créer une connexion de base)
 
-Vous devez maintenant [créer une connexion de base](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/api/export-datasets#create-base-connection) pour authentifier et stocker en toute sécurité les informations d’identification vers votre destination d’espace de stockage dans le cloud à l’aide de l’API [`POST /targetConection`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Target-connections/operation/postTargetConnection).
+Pour authentifier et stocker en toute sécurité les informations d’identification dans votre destination d’espace de stockage, [créez une connexion de base](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/api/export-datasets#create-base-connection) à l’aide de l’API [`POST /targetConnection`](https://developer.adobe.com/experience-platform-apis/references/destinations#operation/postTargetConnection).
 
 
 #### Fournir des paramètres d’exportation
 
-Ensuite, vous devez [créer une connexion cible supplémentaire qui stocke les paramètres d’exportation](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/api/export-datasets#create-target-connection) pour votre jeu de données de sortie à l’aide, une fois de plus, de l’API [`POST /targetConection`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Target-connections/operation/postTargetConnection). Ces paramètres d’exportation incluent l’emplacement, le format de fichier, la compression, etc.
+Ensuite, vous devez [créer une connexion cible supplémentaire qui stocke les paramètres d’exportation](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/api/export-datasets#create-target-connection) pour votre jeu de données de sortie à l’aide, une fois de plus, de l’API [`POST /targetConnection`](https://developer.adobe.com/experience-platform-apis/references/destinations#operation/postTargetConnection). Ces paramètres d’exportation incluent l’emplacement, le format de fichier, la compression, etc.
 
 #### Configurer le flux de données
 
-Enfin, vous [configurez le flux de données](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/api/export-datasets#create-dataflow) pour vous assurer que le jeu de données de sortie est exporté vers la destination d’espace de stockage à l’aide de l’API [`POST /flows`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Dataflows/operation/postFlow). Au cours de cette étape, vous pouvez définir le planning de l’exportation à l’aide du paramètre `scheduleParams` .
+Pour vous assurer que votre jeu de données de sortie est exporté vers votre destination d’espace de stockage, [configurez le flux de données](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/api/export-datasets#create-dataflow) à l’aide de l’API [`POST /flows`](https://developer.adobe.com/experience-platform-apis/references/destinations#operation/postFlow). Au cours de cette étape, vous pouvez définir le planning de l’exportation à l’aide du paramètre `scheduleParams` .
 
 #### Valider le flux de données
 
-Pour [vérifier les exécutions réussies de votre flux de données](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/api/export-datasets#get-dataflow-runs), utilisez l’API [`GET /runs`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Dataflow-runs/operation/getFlowRuns) en spécifiant l’identifiant du flux de données comme paramètre de requête. Cet identifiant de flux de données est un identifiant renvoyé lorsque vous configurez le flux de données.
+Pour [vérifier les exécutions réussies de votre flux de données](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/api/export-datasets#get-dataflow-runs), utilisez l’API [`GET /runs`](https://developer.adobe.com/experience-platform-apis/references/destinations#operation/getFlowRuns) en spécifiant l’identifiant du flux de données comme paramètre de requête. Cet identifiant de flux de données est un identifiant renvoyé lorsque vous configurez le flux de données.
 
-[Vérifier](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/activate/export-datasets#verify) une exportation de données réussie. Lors de l’exportation de jeux de données, Experience Platform crée un ou plusieurs fichiers `.json` ou `.parquet` à l’emplacement de stockage défini dans la destination. Attendez-vous à ce que de nouveaux fichiers soient déposés dans votre emplacement de stockage en fonction du planning d’exportation que vous avez configuré. Experience Platform crée une structure de dossiers à l’emplacement de stockage que vous avez spécifié dans le cadre de la destination sélectionnée, où il dépose les fichiers exportés. Un nouveau dossier est créé pour chaque heure d’exportation, en suivant le modèle : `folder-name-you-provided/datasetID/exportTime=YYYYMMDDHHMM`. Le nom de fichier par défaut est généré de manière aléatoire pour garantir que les noms de fichier exportés soient uniques.
+[Vérifier](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/activate/export-datasets#verify) une exportation de données réussie. Lors de l’exportation de jeux de données, Experience Platform crée un ou plusieurs fichiers `.json` ou `.parquet` à l’emplacement de stockage de la destination. Attendez-vous à ce que de nouveaux fichiers soient déposés dans votre emplacement de stockage en fonction du planning d’exportation que vous avez configuré. Experience Platform crée une structure de dossiers à l’emplacement de stockage que vous avez spécifié dans le cadre de la destination sélectionnée, où il dépose les fichiers exportés. Un nouveau dossier est créé pour chaque heure d’exportation, en suivant le modèle : `folder-name-you-provided/datasetID/exportTime=YYYYMMDDHHMM`. Le nom de fichier par défaut est généré de manière aléatoire afin de garantir l’unicité des noms des fichiers exportés.
 
-## Conclusion
+## Résumé
 
-En résumé, l’émulation de la fonctionnalité Flux de données d’Adobe Analytics implique la configuration de requêtes planifiées à l’aide de Query Service et l’utilisation des résultats de ces requêtes dans des exportations de jeux de données planifiées.
+Émuler la fonctionnalité Flux de données d’Adobe Analytics implique de configurer des requêtes planifiées à l’aide de Query Service et d’utiliser les résultats de ces requêtes dans des exportations de jeux de données planifiées.
 
 >[!IMPORTANT]
 >

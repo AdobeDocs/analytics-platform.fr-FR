@@ -29,7 +29,7 @@ topic_v2:
 source-git-commit: f5a7272f80aaba167974f2218bc84408d47f62d4
 workflow-type: tm+mt
 source-wordcount: '4217'
-ht-degree: 30%
+ht-degree: 31%
 ---
 # Créer un flux de données
 
@@ -87,7 +87,7 @@ Avant de créer un flux de données, il est important de comprendre les bases de
 
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_required_dimensions"
->title="Dimensions requises"
+>title="Dimensions obligatoires"
 >abstract="Chaque flux de données doit inclure certaines dimensions, identifiées par un libellé **Obligatoire** en regard du nom de la dimension. Ces dimensions fournissent la structure minimale nécessaire à l’analyse au niveau de l’événement."
 
 <!-- markdownlint-enable MD034 -->
