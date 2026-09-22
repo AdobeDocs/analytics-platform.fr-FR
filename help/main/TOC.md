@@ -2,7 +2,7 @@
 user-guide-title: Guide de Customer Journey Analytics (parcours client)
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 0b2548c1caa15fe7e50c000178e691ea9743ff19
+source-git-commit: ed1569087178fe1941d13f481914db6982ed18a1
 workflow-type: tm+mt
 source-wordcount: '1502'
 ht-degree: 90%
@@ -145,11 +145,11 @@ ht-degree: 90%
     + [Analyser](/help/connections/audience-analysis/analyze-audiences.md)
     + [Cas d’utilisation](/help/connections/audience-analysis/audience-analysis-use-cases.md)
   + Rapports et filtrage de consentement {#consent-reporting-filtering}
-    + {hide-from-toc}[Vue d’ensemble](/help/connections/consent-reporting-filtering/consent-overview.md)
-    + {hide-from-toc}[Configuration](/help/connections/consent-reporting-filtering/consent-configure.md)
-    + {hide-from-toc}[Gérer](/help/connections/consent-reporting-filtering/consent-manage.md)
-    + {hide-from-toc}[&#x200B; Analyser &#x200B;](/help/connections/consent-reporting-filtering/consent-analyze.md)
-    + {hide-from-toc}[Cas d’utilisation](/help/connections/consent-reporting-filtering/consent-use-cases.md)
+    + [Vue d’ensemble](/help/connections/consent-reporting-filtering/consent-overview.md)
+    + [Configurer](/help/connections/consent-reporting-filtering/consent-configure.md)
+    + [Gérer](/help/connections/consent-reporting-filtering/consent-manage.md)
+    + [Analyser](/help/connections/consent-reporting-filtering/consent-analyze.md)
+    + [Cas d’utilisation](/help/connections/consent-reporting-filtering/consent-use-cases.md)
 + Vues des données {#cja-dataviews}
   + [Vue d’ensemble des vues de données](../data-views/data-views.md)
   + [Création ou modification d’une vue de données](../data-views/create-dataview.md)
@@ -344,7 +344,7 @@ ht-degree: 90%
   + {hide-from-toc}[Configuration](/help/conversation-insights/conversation-insights-configure.md)
   + {hide-from-toc}[Gérer](/help/conversation-insights/conversation-insights-manage.md)
   + {hide-from-toc}[Implémenter](/help/conversation-insights/conversation-insights-implement.md)
-  + {hide-from-toc}[&#x200B; Analyser &#x200B;](/help/conversation-insights/conversation-insights-analyze.md)
+  + {hide-from-toc}[ Analyser ](/help/conversation-insights/conversation-insights-analyze.md)
 
 
 + Composants {#cja-components}
@@ -569,7 +569,7 @@ ht-degree: 90%
       + [Lier des lectures de session](/help/use-cases/third-party/quantum-metric/tie-session-replays.md)
       + [Utiliser des cartes thermiques](/help/use-cases/third-party/quantum-metric/heatmap.md)
       + [Ajouter des événements de friction](/help/use-cases/third-party/quantum-metric/friction-events.md)
-      + {hide-from-toc}[Connecteur &#x200B;](/help/use-cases/third-party/quantum-metric/source-connector.md)
+      + {hide-from-toc}[Connecteur ](/help/use-cases/third-party/quantum-metric/source-connector.md)
 
 + Labs {#labs}
   + [Guide d’utilisation de Labs](../labs/labs.md)
