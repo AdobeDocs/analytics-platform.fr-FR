@@ -27,14 +27,12 @@ topic_v2:
     internal-label: Governance
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ce6f9e474d274488e218e4dbd5f0666d41978681
+source-git-commit: 5e12b8f14210de969beeb664d64fadeaa0b8af2e
 workflow-type: tm+mt
 source-wordcount: '1311'
 ht-degree: 2%
 ---
 # Présentation de la création de rapports et du filtrage relatifs au consentement
-
-{{release-limited-testing}}
 
 La création de rapports et le filtrage de consentement utilisent les données d’appartenance à la politique de consentement stockées dans vos jeux de données Profil Adobe Experience Platform pour vous aider à créer des rapports sur le consentement des visiteurs. De plus, vous pouvez choisir d’exclure les visiteurs et visiteuses non consentants avant que leurs données ne soient ingérées dans Customer Journey Analytics.
 
@@ -142,7 +140,7 @@ Les rôles Customer Journey Analytics suivants et les autorisations Experience P
 
 ## Rapports de consentement et cas d’utilisation de filtrage
 
-Pour obtenir un exemple de cas d’utilisation qui mettent en évidence la valeur fournie par les rapports et le filtrage de consentement, consultez [&#x200B; Rapports et filtrage de consentement &#x200B;](/help/connections/consent-reporting-filtering/consent-use-cases.md).
+Pour obtenir un exemple de cas d’utilisation qui mettent en évidence la valeur fournie par les rapports et le filtrage de consentement, consultez [ Rapports et filtrage de consentement ](/help/connections/consent-reporting-filtering/consent-use-cases.md).
 
 ## Limites de reporting et de filtrage du consentement
 
