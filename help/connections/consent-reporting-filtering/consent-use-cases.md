@@ -23,14 +23,12 @@ topic_v2:
     internal-label: Governance
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ce6f9e474d274488e218e4dbd5f0666d41978681
+source-git-commit: 5e12b8f14210de969beeb664d64fadeaa0b8af2e
 workflow-type: tm+mt
 source-wordcount: '590'
 ht-degree: 0%
 ---
 # Rapports de consentement et cas d’utilisation de filtrage
-
-{{release-limited-testing}}
 
 La création de rapports et le filtrage sur le consentement vous permettent de créer des rapports sur l’appartenance à une politique de consentement des visiteurs et, éventuellement, d’exclure les visiteurs non consentants avant que leurs données ne pénètrent dans Customer Journey Analytics. Pour plus d’informations, voir [Présentation des rapports et du filtrage de consentement](/help/connections/consent-reporting-filtering/consent-overview.md).
 
