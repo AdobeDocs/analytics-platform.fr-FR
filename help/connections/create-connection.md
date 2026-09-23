@@ -5,6 +5,7 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
+hold: true
 TQID: https://experienceleague.adobe.com/90JULA8fFxPQSbVLHr3hJ8o5algJAfNz9SjjLFecyJc
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
@@ -31,7 +32,7 @@ topic_v2:
     internal-label: Troubleshooting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 9c0ddbb48c5cb1c62bded02d1455f2631ab1679f
+source-git-commit: 3121bb0b99eb5b176b9a208fa242d90f6578adbd
 workflow-type: tm+mt
 source-wordcount: '10488'
 ht-degree: 91%
@@ -538,8 +539,9 @@ Les types de jeux de données répertoriés ci-dessus peuvent également être b
 | Type de jeu de données | Description | Date et heure | Schéma | ID de personne |
 |---|---|---|---|---|
 | **[!UICONTROL Ad hoc]** | Données ad hoc basées sur un [schéma ad hoc](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/api/ad-hoc) avec des champs dont l’espace de noms n’est utilisé que par un seul jeu de données. | En fonction du type de jeu de données que vous sélectionnez pour le jeu de données ad hoc. | Tout schéma ad hoc basé sur une classe en fonction du comportement *ad hoc*. | En fonction du type de jeu de données que vous sélectionnez pour le jeu de données ad hoc. |
-| **[!UICONTROL Modèle]** | Données relationnelles basées sur un schéma relationnel. | En fonction du type de jeu de données que vous sélectionnez pour le jeu de données relationnel. | Tout schéma relationnel. | En fonction du type de jeu de données que vous sélectionnez pour le jeu de données relationnel. |
+| **[!UICONTROL Relationnel]** | Données relationnelles basées sur un schéma relationnel. | En fonction du type de jeu de données que vous sélectionnez pour le jeu de données relationnel. | Tout schéma relationnel. | En fonction du type de jeu de données que vous sélectionnez pour le jeu de données relationnel. |
 
+{{relational-dataset-important}}
 
 ### Ajouter des jeux de données
 
@@ -721,6 +723,8 @@ Lorsque vous ajoutez des jeux de données ou modifiez un jeu de données existan
 
 Tous les jeux de données et types de jeux de données comportent des [paramètres généraux et détails](#general-dataset-settings-and-details), notamment l’option d’importer ou non de nouvelles données et de demander des renvois de requête.
 
+
+
 #### Jeu de données d’événements
 
 Les paramètres spécifiques d’un jeu de données d’événement dépendent du type de connexion.
@@ -861,6 +865,8 @@ Les paramètres spécifiques à un jeu de données ad hoc sont les suivants :
 >
 >Les jeux de données relationnels sont principalement utilisés pour prendre en charge la fonctionnalité de mise en miroir des données d’Experience Platform dans Customer Journey Analytics.
 >
+
+{{relational-dataset-important}}
 
 Les paramètres spécifiques à un jeu de données relationnel sont les suivants :
 
