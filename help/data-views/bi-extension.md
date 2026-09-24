@@ -8,27 +8,36 @@ exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
 TQID: https://experienceleague.adobe.com/RrX-gp2IY-Ny1D1yzR2whV2GuU98mysma8tQmUEubF8
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+    internal-label: Data governance
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
+    internal-label: Privacy
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Privacy
+source-git-commit: 8dc03b7c76c53c327f4a20c8fa9d75298d3d13c1
 workflow-type: tm+mt
-source-wordcount: 3763
-ht-degree: 82%
-
+source-wordcount: '3765'
+ht-degree: 81%
 ---
-
 # Extension BI Customer Journey Analytics
 
 {{select-package}}
@@ -252,7 +261,7 @@ Actuellement, l’[!DNL Customer Journey Analytics BI extension] est prise en ch
    1. Sélectionnez **[!UICONTROL Tester]** pour tester la connexion.
    1. Une fois l’opération réussie, sélectionnez **[!UICONTROL Mettre à jour]** pour enregistrer la connexion.
 
-   Vous pouvez désormais utiliser les données des tableaux de vues de données pour créer vos rapports et visualisations.
+   Vous pouvez désormais utiliser les données des tables de vues de données pour créer vos rapports et visualisations.
 
    Voir [Connecter Looker au service de requête](https://experienceleague.adobe.com/fr/docs/experience-platform/query/clients/looker) pour plus d’informations. Consultez aussi [Cas d’utilisation de l’extension BI](/help/use-cases/data-views/bi-extension-usecases.md) pour un exemple détaillé.
 
@@ -312,7 +321,7 @@ Consultez [Cas d’utilisation](/help/use-cases/data-views/bi-extension-usecases
 
 ## Fonctionnalité
 
-Par défaut, vos vues de données ont un nom de tableau sécurisé généré à partir de leur nom convivial. Par exemple, la vue de données nommée [!UICONTROL Mes données web] possède le nom de vue `my_web_data_view`. Vous pouvez définir un nom préféré à utiliser dans votre outil de BI pour votre vue de données. Consultez [Paramètres de vue de données](create-dataview.md#settings) pour en savoir plus.
+Par défaut, vos vues de données ont un nom de table généré à partir de l’identifiant externe par défaut de la vue de données . Par exemple, la vue de données nommée **[!UICONTROL Ma vue de données web]** comporte l’ID externe `My_web_data_view`. Vous pouvez définir un nom préféré à utiliser dans votre outil de BI pour votre vue de données. Consultez [Paramètres de vue de données](create-dataview.md#settings) pour en savoir plus.
 
 Pour utiliser les identifiants de vue de données comme noms de table, vous pouvez ajouter le paramètre optionnel `CJA_USE_IDS` sur le nom de la base de données lors de la connexion. Par exemple, `prod:cja?CJA_USE_IDS` affiche vos vues de données avec des noms tels que `dv_ABC123`.
 
@@ -327,12 +336,12 @@ Les libellés et les politiques de confidentialité créés sur les jeux de donn
 Dans l’interface de ligne de commande PostgreSQL standard, vous pouvez répertorier vos vues à l’aide de `\dv`
 
 ```sql
-prod:all=> \dv
+prod:cja=> \dv
                        List of relations
  Schema |                    Name                    | Type |  Owner             
 --------+--------------------------------------------+------+----------
- public | my_web_data_view                           | view | postgres
- public | my_mobile_data_view                        | view | postgres
+ public | My_web_data_view                           | view | postgres
+ public | My_mobile_data_view                        | view | postgres
 ```
 
 ### Imbrication et aplatissement
@@ -349,7 +358,7 @@ Les valeurs par défaut et limites supplémentaires suivantes s’appliquent lor
 * L’extension BI requiert des requêtes agrégées. Vous ne pouvez pas utiliser du SQL comme `SELECT * FROM ...` pour obtenir les lignes brutes sous-jacentes. À un niveau élevé, vos requêtes agrégées doivent utiliser ce qui suit :
   * Sélectionnez des totaux à l’aide de `SUM` et/ou `COUNT`.<br/> Par exemple, `SELECT SUM(metric1), COUNT(*) FROM ...`
   * Sélectionnez des mesures réparties par dimension. <br/>Par exemple, `SELECT dimension1, SUM(metric1), COUNT(*) FROM ... GROUP BY dimension1`
-  * Sélectionnez des valeurs de mesure distinctes.<br/>Par exemple, `SELECT DISTINCT dimension1 FROM ...`
+  * Sélectionner des valeurs de mesure distinctes.<br/>Par exemple, `SELECT DISTINCT dimension1 FROM ...`
 
     Pour plus d’informations, consultez [SQL pris en charge](#supported-sql).
 
@@ -535,14 +544,14 @@ GROUP BY 2</code></pre>
 
 ### Dimensions
 
-Vous pouvez sélectionner l’une des dimensions disponibles par défaut ou définies dans la vue de données. Vous sélectionnez une dimension en fonction de son identifiant.
+Vous pouvez sélectionner l’une des dimensions disponibles par défaut ou définies dans la vue de données. Sélectionnez une dimension à l’aide de son identifiant.
 
 ### Mesures
 
-Les mesures disponibles à la sélection sont les suivantes :
+Les mesures que vous pouvez sélectionner sont les suivantes :
 
-* toute mesure disponible par défaut ;
-* mesures définies dans la vue de données ;
+* toute mesure disponible par défaut ;
+* les mesures définies dans la vue de données ;
 * mesures calculées compatibles avec la vue de données à laquelle l’utilisateur ou l’utilisatrice a accès.
 
 La mesure est sélectionnée en fonction de son identifiant enveloppé dans une expression `SUM(metric)`, comme avec les autres sources SQL.
@@ -680,15 +689,15 @@ Ces fonctions peuvent être utilisées sur les dimensions des clauses `SELECT` e
 | [Trimestre](https://spark.apache.org/docs/latest/api/sql/index.html#quarter) | ``SELECT QUARTER(`timestamp`)`` | Générez une identité de dimension dynamique sur le champ transmis. |
 | [Heure](https://spark.apache.org/docs/latest/api/sql/index.html#hour) | ``SELECT HOUR(`timestamp`)`` | Générez une identité de dimension dynamique sur le champ transmis. Utilisez l’identifiant de l’élément au lieu de la valeur, car vous avez besoin du numéro et non du nom convivial. |
 | [Minute](https://spark.apache.org/docs/latest/api/sql/index.html#minute) | ``SELECT MINUTE(`timestamp`)`` | Générez une identité de dimension dynamique sur le champ transmis. |
-| [Extraire](https://spark.apache.org/docs/latest/api/sql/index.html#extract) | ``SELECT EXTRACT(MONTH FROM `timestamp`)`` | Générez une identité de dimension dynamique sur le champ transmis. Utilisez l’ID d’élément au lieu de la valeur de certaines parties de cette fonction, car vous avez besoin du numéro et non du nom convivial.<br/>Les parties prises en charge sont les suivantes : <br>- Mots-clés : `YEAR`, `MONTH`, `DAYOFMONTH`, `DAYOFWEEK`, `DAYOFYEAR`, `WEEK`, `QUARTER`, `HOUR`, `MINUTE`.<br/>- Chaînes : `'YEAR'`, `'Y'`, `'MONTH'`, `'M'`, `'DAYOFMONTH'`, `'DAY'`, `'D'`, `'DAYOFWEEK'`, `'DOW'`, `'DAYOFYEAR'`, `'DOY'`, `'WEEK'`, `'WOY`, `'W'`, `'QUARTER'`, `'QOY'`, `'Q'` ou `'HOUR'` `'MINUTE'`. |
-| [Date (partie)](https://spark.apache.org/docs/latest/api/sql/index.html#date_part) | ``SELECT DATE_PART('month', `timestamp`)`` | Générez une identité de dimension dynamique sur le champ transmis. Utilisez l’ID d’élément au lieu de la valeur de certaines parties de cette fonction, car vous avez besoin du numéro et non du nom convivial.<br/>Les parties de chaîne prises en charge sont les suivantes : `'YEAR'`, `'Y'`, `'MONTH'`, `'M'`, `'DAYOFMONTH'`, `'DAY'`, `'D'`, `'DAYOFWEEK'`, `'DOW'`, `'DAYOFYEAR'`, `'DOY'`, `'WEEK'`, `'WOY`&#39;, `'W'`, `'QUARTER'`, `'QOY'`, `'Q'`, `'HOUR'` ou `'MINUTE'`. |
+| [Extraire](https://spark.apache.org/docs/latest/api/sql/index.html#extract) | ``SELECT EXTRACT(MONTH FROM `timestamp`)`` | Générez une identité de dimension dynamique sur le champ transmis. Utilisez l’identifiant de l’élément au lieu de la valeur pour certaines parties de cette fonction, car vous avez besoin du numéro et non du nom explicite.<br/>Les parties prises en charge sont les suivantes : <br>- Mots-clés : `YEAR`, `MONTH`, `DAYOFMONTH`, `DAYOFWEEK`, `DAYOFYEAR`, `WEEK`, `QUARTER`, `HOUR`, `MINUTE`.<br/>- Chaînes : `'YEAR'`, `'Y'`, `'MONTH'`, `'M'`, `'DAYOFMONTH'`, `'DAY'`, `'D'`, `'DAYOFWEEK'`, `'DOW'`, `'DAYOFYEAR'`, `'DOY'`, `'WEEK'`, `'WOY`, `'W'`, `'QUARTER'`, `'QOY'`, `'Q'` ou `'HOUR'` `'MINUTE'`. |
+| [Date (partie)](https://spark.apache.org/docs/latest/api/sql/index.html#date_part) | ``SELECT DATE_PART('month', `timestamp`)`` | Générez une identité de dimension dynamique sur le champ transmis. Utilisez l’identifiant de l’élément au lieu de la valeur pour certaines parties de cette fonction, car vous avez besoin du numéro et non du nom explicite.<br/>Les parties de chaîne prises en charge sont les suivantes : `'YEAR'`, `'Y'`, `'MONTH'`, `'M'`, `'DAYOFMONTH'`, `'DAY'`, `'D'`, `'DAYOFWEEK'`, `'DOW'`, `'DAYOFYEAR'`, `'DOY'`, `'WEEK'`, `'WOY`&#39;, `'W'`, `'QUARTER'`, `'QOY'`, `'Q'`, `'HOUR'` ou `'MINUTE'`. |
 | [Date (tronquée)](https://spark.apache.org/docs/latest/api/sql/index.html#date_trunc) | ``SELECT DATE_TRUNC('quarter', `timestamp`)`` | Générez une identité de dimension dynamique sur le champ transmis.<br/>Les granularités de chaîne prises en charge sont les suivantes : `'YEAR'`, `'Y'`, `'MONTH'`, `'M'`, `'DAYOFMONTH'`, `'DAY'`, `'D'`, `'DAYOFWEEK'`, `'DOW'`, `'DAYOFYEAR'`, `'DOY'`, `'WEEK'`, `'WOY`, `'W'`, `'QUARTER'`, `'QOY'`, `'Q'`, `'HOUR'` ou `'MINUTE'`. |
 
 {style="table-layout:auto"}
 
 ### Prise en charge partielle
 
-Certaines fonctionnalités SQL ne sont que partiellement prises en charge avec l’extension BI et ne renvoient pas les mêmes résultats que ceux d’autres bases de données.  Cette fonctionnalité spécifique est utilisée dans le langage SQL généré par divers outils de BI, pour lesquels l’extension BI n’a pas de correspondance exacte. Par conséquent, l’extension BI se concentre sur une implémentation limitée qui couvre l’utilisation minimale de l’outil de BI sans générer d’erreurs. Consultez le tableau ci-dessous pour plus de détails.
+Certaines fonctionnalités SQL ne sont que partiellement prises en charge avec l’extension BI et ne renvoient pas les mêmes résultats que ceux d’autres bases de données.  Cette fonctionnalité spécifique est utilisée dans le langage SQL généré par divers outils de BI, pour lesquels l’extension BI n’a pas de correspondance exacte. Par conséquent, l’extension BI se concentre sur une mise en œuvre limitée qui couvre l’utilisation minimale de l’outil BI sans générer d’erreurs. Consultez le tableau ci-dessous pour plus de détails.
 
 | Fonction | Exemple | Détails |
 |---|---|---|

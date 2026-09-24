@@ -8,19 +8,21 @@ exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
 TQID: https://experienceleague.adobe.com/Nj-IePDbHxBtgiSxEAobJ0DGlJSaiTwpTXIPtCxDTHw
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: caf1e4497d5dbe370ce23481ee1fbf1b6db59bf6
+    internal-label: Admin
+source-git-commit: 79f124f639c35a97991690e18f6451fc20b02da9
 workflow-type: tm+mt
-source-wordcount: 1788
+source-wordcount: '1788'
 ht-degree: 20%
-
 ---
-
 # Activer le rapprochement
 
 Vous pouvez activer le regroupement sur un ou plusieurs jeux de données d’événement que vous avez configurés dans le cadre de votre connexion. Le package Customer Journey Analytics sous licence détermine le nombre de jeux de données d’événement que vous pouvez activer pour le regroupement.
@@ -38,58 +40,58 @@ Si vous remplissez les conditions préalables, vous pouvez effectuer des contrô
 * Si vous prévoyez d’utiliser les champs [Schéma de modèle de données d’expérience (XDM)](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/home) pour l’ID persistant ou l’ID de personne, assurez-vous que les identités sont correctement marquées dans le schéma du jeu de données d’événement. [Voir Présentation des espaces de noms d’identité](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/features/namespaces).
 * Vérifiez la couverture d’identité pour l’ID persistant et l’ID de personne :
 
-   * **[!UICONTROL ID persistant]**
+  * **[!UICONTROL ID persistant]**
 
-     Interroger 7 jours de données lorsque le champ de votre identifiant persistant n’est pas nul et le diviser par une requête de 7 jours de données pour tous les événements de votre jeu de données. Ce pourcentage doit être supérieur à 95 %.
+    Interroger 7 jours de données lorsque le champ de votre identifiant persistant n’est pas nul et le diviser par une requête de 7 jours de données pour tous les événements de votre jeu de données. Ce pourcentage doit être supérieur à 95 %.
 
-     Exemple de requête à utiliser pour la vérification :
+    Exemple de requête à utiliser pour la vérification :
 
-     ```sql
-     SELECT
-       COUNT(*) AS total_events,
-       COUNT({PERSISTENT_ID_FIELD}) AS events_with_persistentid,
-       ROUND(COUNT({PERSISTENT_ID_FIELD}) / COUNT(*), 2) AS percent_with_persistentid_not_null
-     FROM 
-       {DATASET_TABLE_NAME}
-     WHERE
-       TO_TIMESTAMP(timestamp, '{FORMAT_STRING}') >= TIMESTAMP '{START_DATE}'
-       AND TO_TIMESTAMP(timestamp, 'FORMAT_STRING') < TIMESTAMP '{END_DATE}';
-     ```
+    ```sql
+    SELECT
+      COUNT(*) AS total_events,
+      COUNT({PERSISTENT_ID_FIELD}) AS events_with_persistentid,
+      ROUND(COUNT({PERSISTENT_ID_FIELD}) / COUNT(*), 2) AS percent_with_persistentid_not_null
+    FROM 
+      {DATASET_TABLE_NAME}
+    WHERE
+      TO_TIMESTAMP(timestamp, '{FORMAT_STRING}') >= TIMESTAMP '{START_DATE}'
+      AND TO_TIMESTAMP(timestamp, '{FORMAT_STRING}') < TIMESTAMP '{END_DATE}';
+    ```
 
-     Où :
+    Où :
 
-      * `{PERSISTENT_ID_FIELD}` est le champ de l’identifiant persistant. Par exemple : `identityMap.ecid[0]`.
+    * `{PERSISTENT_ID_FIELD}` est le champ de l’identifiant persistant. Par exemple : `identityMap.ecid[0]`.
+    * `{DATASET_TABLE_NAME}` est le nom de la table du jeu de données d’événement.
+    * `{FORMAT_STRING}` est la chaîne de format du champ d’horodatage. Par exemple : `MM/DD/YY HH12:MI AM`.
+    * `{START_DATE}`est la date de début. Par exemple : `2024-01-01 00:00:00`.
+    * `{END_DATE}` est la date de fin au format standard. Par exemple : `2024-01-08 00:00:00`.
+
+
+  * **[!UICONTROL ID de personne]**
+    * Pour le groupement basé sur les graphiques, assurez-vous que le graphique d’identités contient des fragments qui lient les valeurs d’identifiant de l’espace de noms d’identifiant persistant et de l’espace de noms d’identifiant de personne de votre choix. Vous pouvez exécuter un test en accédant à la visionneuse de graphiques d’identités [d’](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} et interroger le graphique à l’aide d’exemples de valeurs d’ID persistantes. Vérifiez si ces valeurs d’ID persistantes sont liées aux valeurs d’ID de personne dans le graphique.
+    * Pour le groupement basé sur les champs, interrogez 7 jours de données lorsque le champ de votre ID de personne n’est pas nul et divisez par une interrogation de 7 jours de données pour tous les événements de votre jeu de données. Ce pourcentage devrait idéalement être supérieur à 5 %.
+
+      Exemple de requête à utiliser pour la vérification :
+
+      ```sql
+      SELECT
+        COUNT(*) AS total_events,
+        COUNT({PERSON_ID_FIELD}) AS events_with_personid,
+        ROUND(COUNT({PERSON_ID_FIELD}) / COUNT(*), 2) AS percent_with_personid_not_null
+      FROM 
+        {DATASET_TABLE_NAME}
+      WHERE
+        TO_TIMESTAMP(timestamp, '{FORMAT_STRING}') >= TIMESTAMP '{START_DATE}'
+        AND TO_TIMESTAMP(timestamp, '{FORMAT_STRING}') < TIMESTAMP '{END_DATE}';
+      ```
+
+      Où :
+
+      * `{PERSON_ID_FIELD}` est le champ de l’ID de personne. Par exemple : `identityMap.crmId[0]`.
       * `{DATASET_TABLE_NAME}` est le nom de la table du jeu de données d’événement.
       * `{FORMAT_STRING}` est la chaîne de format du champ d’horodatage. Par exemple : `MM/DD/YY HH12:MI AM`.
-      * `{START_DATE}`est la date de début. Par exemple : `2024-01-01 00:00:00`.
+      * `{START_DATE}` est la date de début. Par exemple : `2024-01-01 00:00:00`.
       * `{END_DATE}` est la date de fin au format standard. Par exemple : `2024-01-08 00:00:00`.
-
-
-   * **[!UICONTROL ID de personne]**
-      * Pour le groupement basé sur les graphiques, assurez-vous que le graphique d’identités contient des fragments qui lient les valeurs d’identifiant de l’espace de noms d’identifiant persistant et de l’espace de noms d’identifiant de personne de votre choix. Vous pouvez exécuter un test en accédant à la visionneuse de graphiques d’identités [d’](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} et interroger le graphique à l’aide d’exemples de valeurs d’ID persistantes. Vérifiez si ces valeurs d’ID persistantes sont liées aux valeurs d’ID de personne dans le graphique.
-      * Pour le groupement basé sur les champs, interrogez 7 jours de données lorsque le champ de votre ID de personne n’est pas nul et divisez par une interrogation de 7 jours de données pour tous les événements de votre jeu de données. Ce pourcentage devrait idéalement être supérieur à 5 %.
-
-        Exemple de requête à utiliser pour la vérification :
-
-        ```sql
-        SELECT
-          COUNT(*) AS total_events,
-          COUNT({PERSON_ID_FIELD}) AS events_with_personid,
-          ROUND(COUNT({PERSON_ID_FIELD}) / COUNT(*), 2) AS percent_with_personid_not_null
-        FROM 
-          {DATASET_TABLE_NAME}
-        WHERE
-          TO_TIMESTAMP(timestamp, '{FORMAT_STRING}') >= TIMESTAMP '{START_DATE}'
-          AND TO_TIMESTAMP(timestamp, 'FORMAT_STRING') < TIMESTAMP '{END_DATE}';
-        ```
-
-        Où :
-
-         * `{PERSON_ID_FIELD}` est le champ de l’ID de personne. Par exemple : `identityMap.crmId[0]`.
-         * `{DATASET_TABLE_NAME}` est le nom de la table du jeu de données d’événement.
-         * `{FORMAT_STRING}` est la chaîne de format du champ d’horodatage. Par exemple : `MM/DD/YY HH12:MI AM`.
-         * `{START_DATE}` est la date de début. Par exemple : `2024-01-01 00:00:00`.
-         * `{END_DATE}` est la date de fin au format standard. Par exemple : `2024-01-08 00:00:00`.
 
 
 
@@ -106,12 +108,12 @@ Vous pouvez activer la combinaison d’identités lorsque vous [ajoutez](/help/c
 >[!CONTEXTUALHELP]
 >id="connection_stitching_personid"
 >title="ID de personne"
->abstract="Sélectionnez un ID de personne (l’identifiant unique d’une personne) parmi les identités disponibles. Si votre licence inclut un rapprochement basé sur les graphiques et que vous souhaitez utiliser la méthode de rapprochement, sélectionnez **[!UICONTROL Graphique d’identités]**."
+>abstract="Sélectionnez un identifiant de personne (l’identifiant unique d’une personne) parmi les identités disponibles. Si votre licence inclut un rapprochement basé sur les graphiques et que vous souhaitez utiliser la méthode de rapprochement, sélectionnez **[!UICONTROL Graphique d’identités]**."
 
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics"
 >title="Mesures de l’assemblage"
->abstract="Les mesures de rapprochement sont calculées à l’aide d’un exemple de jeu de données avec des dates et heures d’événement des 7 derniers jours.<br>Cet exemple de jeu de données diffère généralement des exemples de données utilisés dans le tableau **[!UICONTROL Aperçu]**."
+>abstract="Les mesures de rapprochement sont calculées à l’aide d’un ensemble de données d’échantillon contenant les dates et heures d’événement des 7 derniers jours.<br>Cet exemple de jeu de données diffère généralement des exemples de données utilisés dans le tableau **[!UICONTROL Aperçu]**."
 
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics_gbs_personidcoverage"
@@ -132,7 +134,7 @@ Vous pouvez activer la combinaison d’identités lorsque vous [ajoutez](/help/c
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics_badids"
 >title="ID incorrects"
->abstract="Les ID incorrects sont des valeurs d’ID qui affectent considérablement les données de rapport."
+>abstract="Les ID incorrects sont des valeurs d’ID qui affectent considérablement les données de reporting."
 >additional-url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/technotes/badids" text="ID incorrects"
 
 
@@ -150,14 +152,14 @@ Pour activer le groupement, dans la section Jeu de données d’événement **[!
 
 1. Sélectionnez un ID persistant dans le menu déroulant **[!UICONTROL ID persistant]**.
 
-   Si vous sélectionnez **[!UICONTROL Mappage d’identités]** pour l’identifiant persistant, sélectionnez un espace de noms. Vous disposez de deux options :
+   Si vous sélectionnez **[!UICONTROL Mappage d’identités]** pour l’identifiant persistant, sélectionnez un espace de noms. Vous avez deux possibilités :
 
    * Sélectionnez **[!UICONTROL Utiliser l’espace de noms d’identité principal]** pour utiliser l’espace de noms d’identité principal.
    * Sélectionnez un espace de noms dans le menu déroulant **[!UICONTROL Espace de noms]**.
 
 1. Sélectionnez un ID de personne dans le menu déroulant **[!UICONTROL ID de personne]**.
 
-   Si vous sélectionnez **[!UICONTROL Mappage d’identités]** pour l’ID de personne, sélectionnez un espace de noms. Vous disposez de deux options :
+   Si vous sélectionnez **[!UICONTROL Mappage d’identités]** pour l’ID de personne, sélectionnez un espace de noms. Vous avez deux possibilités :
 
    * Sélectionnez **[!UICONTROL Utiliser l’espace de noms d’identité principal]** pour utiliser l’espace de noms d’identité principal.
    * Sélectionnez un espace de noms dans le menu déroulant **[!UICONTROL Espace de noms]**.
@@ -194,8 +196,8 @@ Outre l’interface standard **[!UICONTROL Aperçu des jeux de données]**, deux
 Les **[!UICONTROL mesures d’assemblage]** sont calculées à l’aide d’un échantillon de données avec des horodatages d’événement des 7 derniers jours. Cet exemple de jeu de données diffère généralement des exemples de données utilisés dans le tableau **[!UICONTROL Aperçu]**. Les mesures d’assemblage fournissent des détails sur :
 
 * **[!UICONTROL Couverture de l’ID de personne]** : couverture de l’ID de personne sélectionné utilisé pour l’identification pendant le processus de groupement (en direct et en relecture).
-   * Pour obtenir de meilleurs résultats d’assemblage basés sur les champs, un ID de personne (informations utilisateur) doit être envoyé sur au moins un événement pour chaque ID persistant (informations sur l’appareil).
-   * Pour obtenir de meilleurs résultats d’assemblage basés sur des graphiques, une relation (identifiant persistant, ID de personne) doit être présente dans le graphique d’identité pour chaque identifiant persistant.
+  * Pour obtenir de meilleurs résultats d’assemblage basés sur les champs, un ID de personne (informations utilisateur) doit être envoyé sur au moins un événement pour chaque ID persistant (informations sur l’appareil).
+  * Pour obtenir de meilleurs résultats d’assemblage basés sur des graphiques, une relation (identifiant persistant, ID de personne) doit être présente dans le graphique d’identité pour chaque identifiant persistant.
 
   La couverture de l’ID de personne s’affiche sous forme de pourcentage et est comparée à ce qui est recommandé dans une configuration de développement stable ou de production. Plus cette valeur de couverture est élevée, meilleurs sont les résultats du groupement avec l’ID de personne sélectionné.
 
