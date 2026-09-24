@@ -344,7 +344,7 @@ ht-degree: 90%
   + {hide-from-toc}[Configuration](/help/conversation-insights/conversation-insights-configure.md)
   + {hide-from-toc}[Gérer](/help/conversation-insights/conversation-insights-manage.md)
   + {hide-from-toc}[Implémenter](/help/conversation-insights/conversation-insights-implement.md)
-  + {hide-from-toc}[ Analyser ](/help/conversation-insights/conversation-insights-analyze.md)
+  + {hide-from-toc}[&#x200B; Analyser &#x200B;](/help/conversation-insights/conversation-insights-analyze.md)
 
 
 + Composants {#cja-components}
@@ -569,7 +569,7 @@ ht-degree: 90%
       + [Lier des lectures de session](/help/use-cases/third-party/quantum-metric/tie-session-replays.md)
       + [Utiliser des cartes thermiques](/help/use-cases/third-party/quantum-metric/heatmap.md)
       + [Ajouter des événements de friction](/help/use-cases/third-party/quantum-metric/friction-events.md)
-      + {hide-from-toc}[Connecteur ](/help/use-cases/third-party/quantum-metric/source-connector.md)
+      + {hide-from-toc}[Connecteur &#x200B;](/help/use-cases/third-party/quantum-metric/source-connector.md)
 
 + Labs {#labs}
   + [Guide d’utilisation de Labs](../labs/labs.md)
