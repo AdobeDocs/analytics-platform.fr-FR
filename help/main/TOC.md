@@ -2,9 +2,9 @@
 user-guide-title: Guide de Customer Journey Analytics (parcours client)
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: ed1569087178fe1941d13f481914db6982ed18a1
+source-git-commit: 137eef954a6300405aa2c045ff29008e1daa72ce
 workflow-type: tm+mt
-source-wordcount: '1502'
+source-wordcount: '1496'
 ht-degree: 90%
 ---
 # Guide d’Adobe Customer Journey Analytics {#using}
@@ -428,14 +428,14 @@ ht-degree: 90%
     + [Gérer les journaux d’export](/help/components/exports/manage-export-logs.md)
     + [Résoudre les problèmes d’export](/help/components/exports/troubleshoot-exports.md)
     + Flux de données {#cja-data-feeds}
-      + {hide-from-toc}[Présentation des flux de données](/help/components/exports/cja-data-feeds/data-feed-overview.md)
+      + {hide-from-toc}[Vue d’ensemble](/help/components/exports/cja-data-feeds/data-feed-overview.md)
       + {hide-from-toc}[Comparer les flux de données Adobe Analytics](/help/components/exports/cja-data-feeds/df-comparison.md)
       + {hide-from-toc}[Comparer Workspace aux flux de données](/help/components/exports/cja-data-feeds/df-comparison-workspace.md)
       + {hide-from-toc}[Préparer le mappage des colonnes](/help/components/exports/cja-data-feeds/df-column-mapping-prep.md)
       + {hide-from-toc}[Mapper les colonnes](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)
-      + {hide-from-toc}[Créer un flux de données](/help/components/exports/cja-data-feeds/create-feed.md)
+      + {hide-from-toc}[Créer des flux de données](/help/components/exports/cja-data-feeds/create-feed.md)
       + {hide-from-toc}[Segmentation dans les flux de données](/help/components/exports/cja-data-feeds/df-segmentation.md)
-      + {hide-from-toc}[Utiliser des champs dérivés dans les flux de données](/help/components/exports/cja-data-feeds/df-derived-fields.md)
+      + {hide-from-toc}[Appliquer des transformations de données](/help/components/exports/cja-data-feeds/df-data-transformations.md)
   + Dictionnaire de données {#data-dictionary}
     + [Vue d’ensemble](../components/data-dictionary/data-dictionary-overview.md)
     + [Afficher des informations sur les composants dans le dictionnaire de données](../components/data-dictionary/view-data-dictionary.md)

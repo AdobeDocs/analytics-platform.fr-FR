@@ -26,9 +26,9 @@ topic_v2:
     internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: f5a7272f80aaba167974f2218bc84408d47f62d4
+source-git-commit: 2391b13373992de30834f846da2fb7b71f5279ee
 workflow-type: tm+mt
-source-wordcount: '4217'
+source-wordcount: '4250'
 ht-degree: 31%
 ---
 # Créer un flux de données
@@ -299,6 +299,10 @@ Avant de créer un flux de données, il est important de comprendre les bases de
    +++
 
 1. (Facultatif) Réorganisez les composants sur la zone de travail en les faisant glisser. L’ordre que vous définissez est conservé dans l’ordre des colonnes du fichier de flux de données exporté.
+
+1. (Facultatif) Redimensionnez les colonnes de la zone de travail en faisant glisser leur bordure.
+
+   Les largeurs de colonne sont enregistrées dans un cookie et persistent la prochaine fois que vous revenez à ce flux de données sur le même navigateur.
 
 1. (Facultatif) Modifiez l’ID de composant qui s’affiche dans la sortie du flux de données.
 
