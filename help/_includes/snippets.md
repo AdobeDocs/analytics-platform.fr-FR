@@ -1,8 +1,8 @@
 ---
-source-git-commit: 3121bb0b99eb5b176b9a208fa242d90f6578adbd
+source-git-commit: 2caa69c9a58df756d0991dac84ba8900b2a7bc5a
 workflow-type: tm+mt
-source-wordcount: '5542'
-ht-degree: 97%
+source-wordcount: '5602'
+ht-degree: 96%
 ---
 # Extraits
 
@@ -329,7 +329,10 @@ Vous ne pouvez pas collecter simultanément les informations sur l’agent utili
 
 ## Message important du jeu de données relationnel {#relational-dataset-important}
 
+Un jeu de données relationnel est basé sur un type de schéma relationnel. Les descripteurs de relation définis dans ce schéma relationnel **ne s’appliquent pas** à la définition et à la configuration d’une connexion Customer Journey Analytics en général ou aux paramètres du jeu de données pour un jeu de données relationnel en particulier.
+
+En outre, dans Customer Journey Analytics, les champs des schémas XDM standard **ne fusionnent pas automatiquement** avec des champs nommés similaires des schémas relationnels.
 >[!IMPORTANT]
 >
->Un jeu de données relationnel est basé sur un type de schéma relationnel. Les descripteurs de relation définis dans ce schéma relationnel ne sont pas pertinents et ne s’appliquent pas à la définition et à la configuration d’une connexion Customer Journey Analytics en général ni aux paramètres du jeu de données pour un jeu de données relationnel en particulier. <br/><br>Pour les rapports et analyses Customer Journey Analytics, vous devez configurer explicitement dans [paramètres des jeux de données](/help/connections/create-connection.md#relational-dataset) la manière dont les données d’un jeu de données relationnel sont jointes à d’autres jeux de données en fonction d’un ID de personne ou d’un ID de compte commun.
+>Pour la création de rapports et l’analyse Customer Journey Analytics, vous devez configurer explicitement dans [paramètres des jeux de données](/help/connections/create-connection.md#relational-dataset) la manière dont les données d’un jeu de données relationnel sont jointes à d’autres jeux de données en fonction d’un ID de personne ou d’un ID de compte commun. <br/><br/>Envisagez d’utiliser la fonction Champs dérivés [Fusionner les champs](/help/data-views/derived-fields/derived-fields.md#merge-fields) pour fusionner des champs nommés similaires (ne faisant pas partie d’un tableau d’objets) dans les schémas XDM et les schémas relationnels. Pour les champs d’un tableau d’objets, il n’existe actuellement aucune solution pour fusionner les champs entre XDM et les schémas relationnels.
 >
