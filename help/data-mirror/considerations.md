@@ -4,7 +4,6 @@ description: Comprenez les points supplémentaires à prendre en compte lorsque 
 solution: Customer Journey Analytics
 feature: Basics
 role: Admin
-hold: true
 autotag-review: '2026-05-19T06:55:09.938Z'
 TQID: 'https://experienceleague.adobe.com/uZjXZUKUMeXLxxpTRrkCZrPsGhxseSxOtJ9X0ZjG5wU'
 product_v2:
@@ -28,14 +27,18 @@ topic_v2:
     internal-label: Customer journeys
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 3121bb0b99eb5b176b9a208fa242d90f6578adbd
+source-git-commit: 2caa69c9a58df756d0991dac84ba8900b2a7bc5a
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '889'
 ht-degree: 1%
 ---
 # Considérations relatives à Experience Platform Data Mirror
 
 Cet article décrit les facteurs à prendre en compte lors de la configuration de jeux de données Data Mirror.
+
+## Limites
+
+{{relational-dataset-important}}
 
 ## Nouvelle colonne dans le tableau source
 
@@ -103,10 +106,6 @@ La différence de gouvernance a l’impact suivant :
 
 * Une gouvernance et une configuration plus manuelles fonctionnent pour vous en tant que client.
 * Vous aurez peut-être besoin de conseils explicites. Vous ne supposez donc pas que l’étiquetage unique via des groupes de champs est suffisant pour une bonne gouvernance.
-
-## Paramètres des jeux de données
-
-{{relational-dataset-important}}
 
 ## Groupement
 
