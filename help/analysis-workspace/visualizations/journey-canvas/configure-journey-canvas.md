@@ -4,7 +4,7 @@ title: Configurer une visualisation Canevas de parcours
 feature: Visualizations
 role: User
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553
-TQID: https://experienceleague.adobe.com/pC3wjv6Q7RHRfDfHq75CP2Lqd-HzN-s7iLZ9t4N4ZR0
+TQID: 'https://experienceleague.adobe.com/pC3wjv6Q7RHRfDfHq75CP2Lqd-HzN-s7iLZ9t4N4ZR0'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -15,11 +15,11 @@ feature_v2:
     internal-label: Components
 subfeature_v2:
   - id: aff2ef09-fc60-4018-9197-e2befd623064
-    internal-label: Anomaly detection, Anomaly detection (CJA)
+    internal-label: Anomaly detection
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
     internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-    internal-label: Segments, Segments (CJA)
+    internal-label: Segments
   - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
     internal-label: Audiences
   - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
@@ -28,16 +28,18 @@ subfeature_v2:
     internal-label: Dimensions
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
     internal-label: Calculated metrics
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 397c62d5090deede87a7ce31129b6afe6c9351ee
+source-git-commit: 2c0efe27451163d9fe4fe0f60bab11151a8ac6f1
 workflow-type: tm+mt
-source-wordcount: '7316'
-ht-degree: 83%
+source-wordcount: '7322'
+ht-degree: 82%
 ---
 # Configurer une visualisation Canevas de parcours
 
@@ -139,7 +141,7 @@ Voir [Vue d’ensemble de la zone de travail de parcours](/help/analysis-workspa
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_compare"
 >title="Comparer à"
->abstract="Période utilisée pour comparer les données de parcours actuelles à une période précédente. Lorsque vous sélectionnez une période de comparaison, chaque nœud du parcours affiche le pourcentage de changement entre la période actuelle et la période de comparaison sélectionnée, en fonction de la mesure principale. "
+>abstract="Période utilisée pour comparer les données de parcours actuelles à une période précédente. Lorsque vous sélectionnez une période de comparaison, chaque nœud, flèche et abandon du parcours affiche le pourcentage de changement entre la période actuelle et la période de comparaison sélectionnée, en fonction de la mesure principale."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -159,7 +161,7 @@ Pour configurer les paramètres de la visualisation de canevas de parcours :
    |---------|----------|
    | [!UICONTROL **Valeur en pourcentage**] | Valeur de pourcentage affichée sur chaque nœud du parcours.<p>![Valeur en pourcentage](assets/journey-canvas-percentage.png)</p> <p>Tenez compte des points suivants lors de la configuration des valeurs de pourcentage affichées sur les nœuds du parcours :</p><ul><li>Un pourcentage est affiché sur chaque nœud pour la mesure principale. Un pourcentage s’affiche également pour la mesure secondaire si l’une d’elles est configurée. (Pour plus d’informations sur les paramètres des mesures principales et secondaires, voir [Commencer à créer une visualisation de zone de travail de parcours](#begin-building-a-journey-canvas-visualization).)</li><li>Les pourcentages incluent toutes les personnes ou sessions comprises dans la vue de données au sein de la période du panel. L’utilisation de _personnes_ ou _sessions_ dépend du paramètre de conteneur. (Pour plus d’informations sur le paramètre de conteneur, voir [Commencer à créer une visualisation de zone de travail de parcours](#begin-building-a-journey-canvas-visualization).)</li></ul> <p>Choisissez l’une des options suivantes :</p> <ul><li>[!UICONTROL **Pourcentage du nœud de départ**] : calcule les pourcentages affichés sur chaque nœud par rapport au nœud de départ. Les pourcentages sont calculés en fonction des mesures principale et secondaire que vous avez sélectionnées. <p>Un _nœud de départ_ est un nœud qui n’est précédé d’aucun nœud connecté.</p><p>Un parcours peut contenir plusieurs nœuds de départ. Cependant, le paramètre [!UICONTROL **Pourcentage du total**] est utilisé si le parcours contient 2 nœuds de début ou plus menant à un nœud commun. Si vous souhaitez utiliser le paramètre [!UICONTROL **Pourcentage du nœud de départ**], mettez à jour le parcours de sorte que chaque nœud du parcours puisse être retracé jusqu’à un seul nœud de départ.</p></li><li>[!UICONTROL **Pourcentage du nœud précédent**] : calcule les pourcentages affichés sur chaque nœud par rapport au nœud précédent. Les pourcentages sont basés sur les mesures principale et secondaire que vous avez sélectionnées.</li><li>[!UICONTROL **Pourcentage du total**] : calcule les pourcentages affichés sur chaque nœud par rapport à toutes les données de la vue de données. Les pourcentages sont basés sur les mesures principale et secondaire que vous avez sélectionnées.</li></ul> |
    | [!UICONTROL **Paramètres des flèches**] | Les flèches qui apparaissent entre les nœuds dans le canevas de parcours peuvent être configurées pour afficher des libellés et des valeurs personnalisés. <p>![paramètres des flèches](assets/journey-canvas-arrow-settings.png)</p><p>Les _libellés_ sont des noms personnalisés qui apparaissent sur les flèches. Une flèche donnée n’affiche qu’un seul libellé. Les libellés peuvent être de l’un des types suivants et sont affichés dans cet ordre de préférence :</p><ol><li>Nom personnalisé ajouté à partir de la zone de travail de parcours (comme décrit dans [Ajouter ou mettre à jour un libellé sur une flèche](#add-or-update-a-label-on-an-arrow))</li><li>Libellé Journey Optimizer</li><li>Condition Journey Optimizer</li></ol><p>Les _valeurs_ correspondent aux nombres et aux pourcentages qui apparaissent sur les flèches et elles indiquent les personnes ou les sessions qui sont passées d’un nœud au suivant dans le parcours. (En d’autres termes, celles qui n’ont pas quitté le parcours à une étape donnée.) </p><p>Les options suivantes sont disponibles pour les parcours qui ne proviennent pas de Journey Optimizer et pour les parcours Journey Optimizer qui n’ont pas été modifiés de manière significative dans le canevas de parcours : (les modifications importantes comprennent l’ajout ou la suppression de nœuds, l’ajout ou la suppression de flèches ou encore la modification des composants d’un nœud.)</p><ul><li>[!UICONTROL **Aucun libellé**] : aucun libellé n’est affiché sur les flèches du parcours. </br> Cette option est disponible uniquement si le parcours a été modifié dans </li><li>[!UICONTROL **Libellés uniquement**] : les libellés sont affichés sur les flèches du parcours.</li></ul><p>Les options suivantes sont disponibles pour les parcours Journey Optimizer qui ont été considérablement modifiés dans la zone de travail du Parcours : (Les modifications importantes incluent l’ajout ou la suppression de nœuds, l’ajout ou la suppression de flèches, ou la modification des composants d’un nœud.)(**Remarque** : ces options s’affichent uniquement lorsque des données Journey Optimizer sont détectées dans la même vue de données que celle sélectionnée dans le panneau Analysis Workspace où vous ajoutez la visualisation. Pour plus d’informations sur la modification de la vue de données d’un panneau dans Analysis Workspace, consultez [Présentation d’Analysis Workspace](/help/analysis-workspace/home.md).)</p><ul><li>[!UICONTROL **Aucun libellé ni aucune valeur**] : aucun libellé ni aucune valeur n’est affiché sur les flèches du parcours.</li><li>[!UICONTROL **Libellés uniquement**] : seuls les libellés sont affichés sur les flèches du parcours. Les valeurs ne sont pas affichées.</li><li>[!UICONTROL **Valeurs uniquement**] : seules les valeurs sont affichées sur les flèches du parcours. Les libellés ne sont pas affichés.</li><li>[!UICONTROL **Valeurs et libellés**] : les libellés et les valeurs sont affichés sur les flèches du parcours.</li></ul> |
-   | [!UICONTROL **Comparer à**] | Période utilisée pour comparer les données de parcours actuelles à une période précédente. Vous pouvez choisir l’une des périodes suivantes à des fins de comparaison :<ul><li>**[!UICONTROL 4 semaines avant]**</li><li>**[!UICONTROL 2 trimestres avant]**</li><li>**[!UICONTROL 1 an avant]**</li><li>**[!UICONTROL Période personnalisée]**</li></ul><p>Lorsque vous sélectionnez une période de comparaison, chaque nœud du parcours affiche le pourcentage de changement entre la période actuelle et la période de comparaison sélectionnée, en fonction de la mesure principale. Vous pouvez ainsi déterminer si les performances de votre parcours sont meilleures ou inférieures par rapport à une période précédente.</p> |
+   | [!UICONTROL **Comparer à**] | Période utilisée pour comparer les données de parcours actuelles à une période précédente. Vous pouvez choisir l’une des périodes suivantes à des fins de comparaison :<ul><li>**[!UICONTROL 4 semaines avant]**</li><li>**[!UICONTROL 2 trimestres avant]**</li><li>**[!UICONTROL 1 an avant]**</li><li>**[!UICONTROL Période personnalisée]**</li></ul><p>Lorsque vous sélectionnez une période de comparaison, chaque nœud, flèche et abandon du parcours affiche le pourcentage de changement entre la période actuelle et la période de comparaison sélectionnée, en fonction de la mesure principale. Vous pouvez ainsi déterminer si les performances de votre parcours sont meilleures ou inférieures par rapport à une période précédente.</p> |
    | [!UICONTROL **Afficher les abandons**] | Les données d’abandons affichent un pourcentage et un nombre d’abandons de chaque nœud du parcours. Les données d’abandon sont basées sur la mesure associée aux paramètres du conteneur du parcours, et non sur la mesure principale ou secondaire. <p>![abandon](assets/journey-canvas-fallout.png)</p><p>Par défaut, le conteneur est _Personne_, la mesure utilisée pour les données d’abandons est donc _Personnes_. Si le conteneur est défini sur _Session_, la mesure utilisée pour les données d’abandons est _Sessions_, et ainsi de suite.</p><p>Par exemple, avec le paramètre de conteneur _Personne_, les abandons affichent le pourcentage et le nombre de personnes sur chaque nœud du parcours qui ne sont jamais parvenues aux nœuds suivants immédiats. Il se peut qu’elle ait effectué d’autres actions sur le site, mais cela ne répondait aux critères définis par les nœuds venant juste après.</p> <p>Pour plus d’informations sur le paramètre du conteneur de zone de travail de parcours, consultez [Commencer à créer une visualisation de zone de travail de parcours](#begin-building-a-journey-canvas-visualization). |
    | **Contrôles** | Les commandes suivantes sont disponibles dans le coin supérieur droit de la zone de travail :<ul><li>**Ajuster à l’écran** ![icône d’ajustement à l’écran](assets/fill-screen-icon.png) : permet d’ajuster les paramètres de zoom et de panoramique actuels pour remplir l’écran avec la visualisation complète.</li><li>**Organiser** ![icône organiser](assets/organize.svg) : réorganise les nœuds pour minimiser les flèches qui se croisent et optimiser l’espacement, en fonction des connexions entre les nœuds. </li><li>**Zoom avant** ![icône de zoom avant](assets/zoom-in-icon.png) : permet d’agrandir des zones spécifiques de la visualisation.<p>Vous pouvez également utiliser les contrôles de la souris, comme le pincement sur un pavé tactile.</li><li>**Zoom arrière** ![icône de zoom arrière](assets/zoom-out-icon.png) : permet de réduire la visualisation pour laisser plus de place à la zone de travail.<p>Vous pouvez également utiliser les contrôles de la souris, comme le pincement sur un pavé tactile.</p></li></ul><p>Pour effectuer un panoramique sur la zone de travail après un zoom avant ou arrière, cliquez avec la souris et faites glisser jusqu’à l’emplacement souhaité.</p> |
 
