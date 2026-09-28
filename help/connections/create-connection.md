@@ -31,10 +31,10 @@ topic_v2:
     internal-label: Troubleshooting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 2caa69c9a58df756d0991dac84ba8900b2a7bc5a
+source-git-commit: 84ab190e018bc6beb9183aba038516b21289e49f
 workflow-type: tm+mt
-source-wordcount: '10488'
-ht-degree: 91%
+source-wordcount: '10597'
+ht-degree: 90%
 ---
 # Créer ou modifier une connexion {#create-or-edit-a-connection}
 
@@ -850,7 +850,7 @@ Les paramètres spécifiques à un jeu de données ad hoc sont les suivants :
 
 | Paramètre | Type de jeu de données sélectionné | Description |
 |---|---|---|
-| **[!UICONTROL Type de jeu de données]** | S.O. | Type de données dans le jeu de données ad hoc. Les valeurs possibles sont les suivantes : **[!UICONTROL Événement]**, **[!UICONTROL Profil]**, **[!UICONTROL Recherche]** et **[!UICONTROL Résumé]**. |
+| **[!UICONTROL Type de jeu de données]** | S.O. | Type de données dans le jeu de données ad hoc. Les valeurs possibles sont les suivantes : **[!UICONTROL Événement]**, **[!UICONTROL Profil]** (non disponible pour [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}), **[!UICONTROL Recherche]** et **[!UICONTROL Résumé]**. Si vous souhaitez utiliser des données de profil ad hoc pour une connexion basée sur un compte, sélectionnez **[!UICONTROL Recherche]** comme **[!UICONTROL Type de jeu de données]** et utilisez **[!UICONTROL Clé]** et **[!UICONTROL Clé correspondante]** pour importer les données du compte. |
 | **[!UICONTROL ID de personne]** | Événement, Profil | Sélectionnez un champ dans le schéma ad hoc ou relationnel qui représente l’identifiant de personne. Ce champ peut être n’importe quel champ du jeu de données. Choisissez parmi les **[!UICONTROL champs d’espace de noms d’identité]** ou les **[!UICONTROL champs sans identité]**. <br/>Vous ne pouvez sélectionner un identifiant parmi les **[!UICONTROL espaces de noms d’identité]** que si un ou plusieurs champs du schéma ad hoc sont étiquetés comme identités et possèdent un espace de noms d’identité. |
 | **[!UICONTROL Espace de noms d’identité]** | Événement | Sélectionnez un espace de noms d’identité si vous avez sélectionné un identifiant de personne dans des champs **[!UICONTROL sans identité]**. |
 | **[!UICONTROL Date et heure]** | Événement, Résumé | Sélectionnez un champ dans le schéma ad hoc qui représente le champ d’horodatage. Ce champ peut être n’importe lequel des champs disponibles de type `DateTime`. |
@@ -871,7 +871,7 @@ Les paramètres spécifiques à un jeu de données relationnel sont les suivants
 
 | Paramètre | Type de jeu de données sélectionné | Description |
 |---|---|---|
-| **[!UICONTROL Type de jeu de données]** | S.O. | Le type de données dans le jeu de données relationnel.<br/>Si le jeu de données contient des données de série temporelle, les valeurs possibles sont les suivantes : **[!UICONTROL Événement]** et **[!UICONTROL Résumé]**. <br/>Si le jeu de données contient des données d’enregistrement, les valeurs possibles sont les suivantes : **[!UICONTROL Profil]** et **[!UICONTROL Recherche]**. |
+| **[!UICONTROL Type de jeu de données]** | S.O. | Le type de données dans le jeu de données relationnel.<br/>Si le jeu de données contient des données de série temporelle, les valeurs possibles sont les suivantes : **[!UICONTROL Événement]** et **[!UICONTROL Résumé]**. <br/>Si le jeu de données contient des données d’enregistrement, les valeurs possibles sont les suivantes : **[!UICONTROL Profil]** (non disponible pour [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}) et **[!UICONTROL Recherche]**. Si vous souhaitez utiliser des données de profil relationnelles pour une connexion basée sur un compte, sélectionnez **[!UICONTROL Recherche]** comme **[!UICONTROL Type de jeu de données]** et utilisez **[!UICONTROL Clé]** et **[!UICONTROL Clé correspondante]** pour importer les données du compte. |
 | **[!UICONTROL ID de personne]** | Événement, Profil | Sélectionnez un champ dans le schéma relationnel qui représente l’identifiant de personne. La sélection se limite à la liste des champs du schéma relationnel qui sont marqués comme identité et qui possèdent un espace de noms d’identité. |
 | **[!UICONTROL Date et heure]** | Événement, Résumé | Champ défini comme descripteur d’horodatage dans le schéma. Ce champ est automatiquement renseigné. |
 | **[!UICONTROL Clé]** | Recherche | Clé à utiliser pour un jeu de données de recherche.<br/>Si un enregistrement ne contient pas de valeur pour la clé que vous avez sélectionnée pour le jeu de données de recherche, l’enregistrement est ignoré. |
