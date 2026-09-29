@@ -2,9 +2,9 @@
 user-guide-title: Guide de Customer Journey Analytics (parcours client)
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: afc1b55eb54b5f3342800489d0a7f63508ee8b10
+source-git-commit: 9d7c1ca888432c74251b3bc131efc97d19c4ef8b
 workflow-type: tm+mt
-source-wordcount: '1501'
+source-wordcount: '1504'
 ht-degree: 90%
 ---
 # Guide d’Adobe Customer Journey Analytics {#using}
@@ -204,6 +204,7 @@ ht-degree: 90%
     + [Touches de raccourci](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
     + [Palettes de couleurs](../analysis-workspace/build-workspace-project/color-palettes.md)
     + [Densité de la vue](../analysis-workspace/build-workspace-project/view-density.md)
+    + {hide-from-toc}[Utiliser les résultats mis en cache](../analysis-workspace/build-workspace-project/cached-results.md)
     + [Débogueur](../analysis-workspace/build-workspace-project/debugger.md)
   + Modèles {#templates}
     + [Utiliser des modèles](../analysis-workspace/templates/use-templates.md)
@@ -344,7 +345,7 @@ ht-degree: 90%
   + {hide-from-toc}[Configuration](/help/conversation-insights/conversation-insights-configure.md)
   + {hide-from-toc}[Gérer](/help/conversation-insights/conversation-insights-manage.md)
   + {hide-from-toc}[Implémenter](/help/conversation-insights/conversation-insights-implement.md)
-  + {hide-from-toc}[&#x200B; Analyser &#x200B;](/help/conversation-insights/conversation-insights-analyze.md)
+  + {hide-from-toc}[ Analyser ](/help/conversation-insights/conversation-insights-analyze.md)
 
 
 + Composants {#cja-components}
@@ -570,7 +571,7 @@ ht-degree: 90%
       + [Lier des lectures de session](/help/use-cases/third-party/quantum-metric/tie-session-replays.md)
       + [Utiliser des cartes thermiques](/help/use-cases/third-party/quantum-metric/heatmap.md)
       + [Ajouter des événements de friction](/help/use-cases/third-party/quantum-metric/friction-events.md)
-      + {hide-from-toc}[Connecteur &#x200B;](/help/use-cases/third-party/quantum-metric/source-connector.md)
+      + {hide-from-toc}[Connecteur ](/help/use-cases/third-party/quantum-metric/source-connector.md)
 
 + Labs {#labs}
   + [Guide d’utilisation de Labs](../labs/labs.md)
