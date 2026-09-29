@@ -2,17 +2,32 @@
 title: Présentation des informations de conversation
 description: Découvrez la valeur et la terminologie des informations sur la conversation, ainsi que le fonctionnement de ces informations.
 solution: Customer Journey Analytics
-feature: Content Analytics
+feature: AI Tools
 role: Admin, User
 hold: true
-source-git-commit: 39d6847296cc385d501defda292b5b3cae98b46a
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: ae3aff40-b2f6-4df1-8c01-0b0720d1510f
+    internal-label: AI Tools
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 4eaf8820fd847426ba6a471e1bfbc7b397283905
 workflow-type: tm+mt
-source-wordcount: '1104'
+source-wordcount: '1114'
 ht-degree: 1%
 ---
 # Informations sur la conversation
 
-Conversation Insights vous permet d’analyser les conversations à partir des expériences d’agent que vous proposez à vos clients. Ces expériences d’agent peuvent être basées sur des modèles de langage étendus (LLM) ou sur des conversations humaines. Conversation Insights analyse les conversations à grande échelle et fournit un contexte pour ces conversations dans le parcours client complet. Grâce à Conversation Insights, vous pouvez comprendre l’impact des agents sur les résultats réels des utilisateurs et utilisatrices.
+Conversation Insights vous permet d’analyser les conversations à partir des expériences d’agent que vous proposez à vos clients. Ces expériences d’agent peuvent être basées sur des modèles de langage étendus (LLM) ou sur des conversations humaines. Par exemple, un bot conversationnel interagissant avec les transcriptions d’un client ou d’un centre d’appel.
+
+Conversation Insights analyse les conversations à grande échelle et fournit un contexte pour ces conversations dans le parcours client complet. Grâce à Conversation Insights, vous pouvez comprendre l’impact des agents sur les résultats réels des utilisateurs et utilisatrices.
 
 Les informations de conversation abordent les problèmes que vous pouvez rencontrer. Par exemple :
 
@@ -29,7 +44,7 @@ Avec les informations de conversation, vous pouvez comprendre :
 * Ce que les utilisateurs demandent aux agents.
 * comment les conversations affectent vos indicateurs de performance clés ;
 
-Vous pouvez déterminer les performances de vos agents par rapport aux directives, le degré de respect des directives de la marque par les agents et si le coût de fonctionnement des agents est justifié par les résultats.
+Vous pouvez déterminer les performances de vos agents par rapport aux directives, le degré de respect des directives de la marque par les agents et si les résultats justifient le coût de fonctionnement des agents.
 
 
 ## Concepts
@@ -146,7 +161,7 @@ Conversation Insights repose sur trois fonctionnalités principales :
 * **Extraction des signaux et fusion des conversations** : transforme les invites et les réponses non structurées (également appelées conversions) en points de données à signaler, comme l’intention et le sentiment. Pour que les utilisateurs puissent créer des rapports sur ces points de données à grande échelle.
 * **Reporting** : pour déterminer l’efficacité et le retour sur investissement d’un agent, analysez les conversations à grande échelle dans le cadre du parcours client.
 
-Le processus global de collecte de données, d&#39;extraction de signaux et de mixage des conversations est présenté ci-dessous.
+Le processus global de collecte de données, d&#39;extraction de signaux et de mixage de conversations est décrit ci-dessous.
 
 ![Illustration de la conversation et de son fonctionnement](assets/conversation-insights.png){zoomable="yes"}
 

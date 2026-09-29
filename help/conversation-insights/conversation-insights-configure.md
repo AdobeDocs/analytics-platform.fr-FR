@@ -2,18 +2,31 @@
 title: Créer Ou Modifier Une Configuration D’Informations De Conversation
 description: Découvrez comment configurer les configurations de Conversation Insights.
 solution: Customer Journey Analytics
-feature: Content Analytics
+feature: AI Tools
 role: Admin, User
 hold: true
-source-git-commit: b29ee2f04a1775dca6a8fd93c3ac3050b67f0ceb
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: ae3aff40-b2f6-4df1-8c01-0b0720d1510f
+    internal-label: AI Tools
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 4eaf8820fd847426ba6a471e1bfbc7b397283905
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 8%
+source-wordcount: '654'
+ht-degree: 7%
 ---
 # Création ou modification de configurations
 
-
-Conversation Insights vous permet d’analyser les conversations (à partir de modèles de langage volumineux (LLM) ou d’êtres humains) à grande échelle et de donner à ces conversations un contexte dans le parcours client complet. Grâce à Conversation Insights, vous pouvez comprendre l’impact des représentants sur les résultats réels des utilisateurs.
+Conversation Insights vous permet d’analyser les conversations à partir des expériences d’agent que vous proposez à vos clients. Ces expériences d’agent peuvent être basées sur des modèles de langage étendus (LLM) ou sur des conversations humaines. Par exemple, un bot conversationnel interagissant avec les transcriptions d’un client ou d’un centre d’appel.
+Grâce à Conversation Insights, vous pouvez comprendre l’impact des représentants sur les résultats réels des utilisateurs.
 
 Grâce à l’interface de configuration des informations de conversation, vous pouvez rapidement créer ou modifier une configuration et les artefacts associés (connexion, vues de données, etc.).
 
@@ -88,7 +101,7 @@ Pour chaque configuration :
 
    * Sélectionnez **[!UICONTROL Ignorer]** pour une nouvelle configuration qui n’est pas créée.
 
-   * Sélectionnez **[!UICONTROL Enregistrer pour plus tard]** pour une nouvelle configuration que vous souhaitez enregistrer, mais pour laquelle vous ne souhaitez pas créer l’artefact (mises à jour des vues de données par exemple). Vous pouvez donc revoir la configuration ultérieurement et terminer la création réelle de la configuration.
+   * Sélectionnez **[!UICONTROL Enregistrer pour plus tard]** pour une nouvelle configuration que vous souhaitez enregistrer, mais pour laquelle vous ne souhaitez pas créer l’artefact (mises à jour des vues de données par exemple). Vous pouvez revoir la configuration ultérieurement et terminer la création réelle de la configuration.
 
    * Sélectionnez **[!UICONTROL Créer]** pour créer la configuration.
 

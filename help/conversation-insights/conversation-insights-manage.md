@@ -2,10 +2,23 @@
 title: Gérer la configuration des informations de conversation
 description: Découvrez comment gérer les configurations de Conversation Insights.
 solution: Customer Journey Analytics
-feature: Content Analytics
+feature: AI Tools
 role: Admin, User
 hold: true
-source-git-commit: b29ee2f04a1775dca6a8fd93c3ac3050b67f0ceb
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: ae3aff40-b2f6-4df1-8c01-0b0720d1510f
+    internal-label: AI Tools
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 4eaf8820fd847426ba6a471e1bfbc7b397283905
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 6%
@@ -71,7 +84,7 @@ Pour modifier une configuration Insights de conversation existante :
    * Cochez la case en regard de la configuration à modifier, puis sélectionnez ![Modifier](/help/assets/icons/Edit.svg) **[!UICONTROL Modifier]** dans la barre d’actions bleue.
    * Sélectionnez ![Plus](/help/assets/icons/More.svg) pour la configuration que vous souhaitez modifier. Dans le menu contextuel, sélectionnez ![Modifier](/help/assets/icons/Edit.svg) **[!UICONTROL Modifier]**.
 
-1. Utilisez la boîte de dialogue [**[!UICONTROL Configuration/_nom de la configuration_]**](./conversation-insights-configure.md) pour configurer les informations de conversation.
+1. Utilisez la boîte de dialogue [**[!UICONTROL Configuration/_nom de la configuration_]**](./conversation-insights-configure.md) pour gérer les informations de conversation.
 
 ## Suppression d’une configuration
 

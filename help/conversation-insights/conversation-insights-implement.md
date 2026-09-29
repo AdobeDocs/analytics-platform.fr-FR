@@ -2,13 +2,26 @@
 title: Implémenter des informations de conversation
 description: Découvrez comment instrumenter votre application ou service d’agent pour les informations de conversation.
 solution: Customer Journey Analytics
-feature: Content Analytics
+feature: AI Tools
 role: Admin, User
 hold: true
-source-git-commit: b29ee2f04a1775dca6a8fd93c3ac3050b67f0ceb
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: ae3aff40-b2f6-4df1-8c01-0b0720d1510f
+    internal-label: AI Tools
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 4eaf8820fd847426ba6a471e1bfbc7b397283905
 workflow-type: tm+mt
-source-wordcount: '2257'
-ht-degree: 7%
+source-wordcount: '2322'
+ht-degree: 6%
 ---
 # Implémenter des informations de conversation
 
@@ -19,19 +32,19 @@ Cet article décrit les étapes de mise en œuvre requises.
 >[!PREREQUISITES]
 >
 >* Vous devez disposer d’un environnement Experience Platform (organisation et sandbox) pour collecter les données.
->* Votre organisation Adobe doit être activée pour les groupes de champs agent expérimental et conversation.
+>* Votre organisation Adobe doit être activée pour les groupes de champs agent et conversation.
 >
 
 ## Schéma et jeux de données
 
-Configurez des jeux de données pour les principaux événements de conversation : invite, réponse, retour d’informations. Ces jeux de données peuvent être basés sur le même schéma (par exemple, un schéma de conversation Insights générique) ou sur des schémas individuels.
-Vous pouvez définir des jeux de données distincts pour les invites, les réponses et les commentaires ou combiner les données dans des jeux de données. Par exemple, utilisez un jeu de données pour les invites et les réponses et un autre pour les commentaires. Vous pouvez également utiliser un seul jeu de données pour tous les événements de conversation.
+Configurez des jeux de données pour les principaux événements de conversation : invite, réponse, retour d’informations. Les jeux de données d’invite, de réponse et de commentaires doivent étendre le schéma de base d’événement d’expérience XDM avec le [groupe de champs Événement de conversation](#conversation-event-field-group) et peuvent éventuellement inclure le [groupe de champs Informations agences](#agentic-information-field-group) et d’autres [groupes de champs supplémentaires](#additional-field-groups).
 
-Le schéma utilisé pour les jeux de données d’invite, de réponse et de commentaires doit étendre le schéma de base Événement d’expérience XDM avec les groupes de champs obligatoires. Et peut étendre le schéma de base Événement d’expérience XDM à d’autres groupes de champs.
+Vous pouvez définir des jeux de données distincts pour les invites, les réponses et les commentaires ou combiner les données dans des jeux de données. Par exemple, utilisez un jeu de données pour les invites et les réponses et un autre pour les commentaires. Vous pouvez également utiliser un seul jeu de données pour tous les événements de conversation.
+Utilisez le même schéma sous-jacent pour les jeux de données.
 
 ### Groupe de champs Informations sur l’agence
 
-Le groupe de champs **[!UICONTROL Informations agentiques]** est un groupe de champs obligatoire qui utilise l’objet `agenticExperience`.
+Le groupe de champs **[!UICONTROL Informations agentiques]** est un groupe de champs facultatif qui utilise l’objet `agenticExperience`. Utilisez ce groupe de champs si vous souhaitez effectuer le suivi des informations sur les agences.
 
 +++ Détails
 
@@ -203,7 +216,7 @@ L’objet de conversation capture les données pour :
 
 #### Conversation
 
-Un `conversationID` unique identifie une conversation. Par exemple : `conversationID = "conv-001"`. Le schéma prend également en charge `conversationName`. Nom lisible par l’utilisateur qui décrit le contexte global de la conversation, tel que : `France Geography Q&A`.
+Un `conversationID` unique identifie une conversation. Par exemple : `conversationID = "conv-001"`. Le schéma prend également en charge `conversationName`. Nom lisible par l’utilisateur qui décrit le contexte global de la conversation, tel que : `France Geography Q&A`. Le nom de la conversation est généré automatiquement, mais vous pouvez le mettre à jour. Le nom de la conversation est également renseigné pour `signals[].name`.
 
 Le `conversationID` permet de regrouper tous les événements de rotation associés dans la même expérience de conversation.
 
@@ -216,7 +229,7 @@ Un virage est un cycle d’interaction au sein d’une conversation.
 `conversationID = "conv-001"`
 `turnID = "turn-001"`
 
-Les mêmes `conversationID` et `turnID` sont utilisés pour corréler l’invite, la réponse et le retour d’informations associés à ce virage. Cette corrélation fonctionne entre les enregistrements diffusés séparément ou qui se retrouvent dans différents jeux de données.
+Les mêmes `conversationID` et `turnID` sont utilisés pour corréler l’invite, la réponse et le retour d’informations associés à ce virage. Cette corrélation fonctionne entre les enregistrements diffusés séparément ou qui se retrouvent dans différents jeux de données. Un `turnId` ne doit être unique que dans la même conversation, mais peut être réutilisé dans plusieurs conversations. Par exemple, vous pouvez utiliser les deux `turn-001` comme `turnID` dans les conversations avec `conversationID` `conv-001` et `conv-002`.
 
 
 #### Invite
@@ -231,7 +244,7 @@ Les champs d’invite importants sont les suivants :
 |---|---|
 | `prompt.source` | Qui ou quoi a généré l’invite, généralement l’utilisateur final. |
 | `prompt.raw[]` | Un ou plusieurs segments de contenu brut. |
-| `prompt.raw[].text` | Le texte ou le contenu réel de l’invite. |
+| `prompt.raw[].text` | Texte d’invite ou lien vers le contenu (capture d’écran, par exemple). |
 | `prompt.raw[].purpose` | Objet du contenu, tel que l’entrée utilisateur ou le lien. |
 
 Une invite peut contenir plusieurs segments bruts. Par exemple, un utilisateur ou une utilisatrice saisit du texte et inclut une URL.
@@ -257,6 +270,8 @@ Les champs de réponse importants sont les suivants :
 | `response.raw[].purpose` | Objet du segment de contenu. |
 
 Les types de sources documentés sont les suivants :
+
+<!-- randy buck to provide additional details -->
 
 | Source | Signification |
 |---|----|
@@ -287,7 +302,9 @@ Lorsque la rétroaction s&#39;applique à un virage particulier, conservez les `
 
 #### Signal
 
-Un signal est une observation analytique structurée du contenu de la conversation. Le service d&#39;extraction de signaux extrait des signaux.
+Un signal est une observation analytique structurée du contenu de la conversation. Le service Signal fournit des signaux prêts à l’emploi. Aucune action n’est requise pour fournir des signaux, mais vous pouvez ajouter des signaux dans le cadre de l’intégration.
+
+<!-- randy buck to provide additional details -->
 
 Un signal possède les champs suivants.
 
@@ -360,9 +377,6 @@ Consultez ci-dessous les détails complets d’un objet de conversation.
 
 +++
 
-
-
-
 ### Groupes de champs supplémentaires
 
 Vous pouvez ajouter des groupes de champs facultatifs au schéma que vous utilisez pour les jeux de données d’invite, de réponse et de commentaires. Par exemple :
@@ -382,9 +396,9 @@ Vous devez définir l’une des valeurs suivantes pour `eventType` (chaîne) pou
 
 | Valeur | Explication |
 |---|---|
-| `conversation turn` | Tourner la conversation avec invite et réponse |
-| `conversation recommendation` | Recommandation basée sur la conversation |
-| `conversation feedback` | Événement de retour uniquement |
+| `conversation.turn` | Tourner la conversation avec invite et réponse |
+| `conversation.recommendation` | Recommandation basée sur la conversation |
+| `conversation.feedback` | Événement de retour uniquement |
 
 
 ### Type de source
@@ -401,6 +415,8 @@ Vous devez définir l’une des valeurs suivantes pour `source` pour chaque obje
 ### Type d’objectif (texte brut)
 
 Vous devez définir l’une des valeurs suivantes pour l’attribut `purpose` sur tout élément de l’objet `raw` dans un objet `prompt`, `response` ou `feedback`.
+
+<!-- randy buck to provide details -->
 
 | Valeur | Description |
 |---|---|
