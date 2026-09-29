@@ -17,9 +17,9 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 6bcbf10e6bff660f57f598f6cf75b43eb75c7db3
+source-git-commit: 80ce27bcff09a23e38054e05329a2a261c8f6562
 workflow-type: tm+mt
-source-wordcount: '844'
+source-wordcount: '939'
 ht-degree: 0%
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="project_cached_results"
 >title="Utilisation des résultats mis en cache pour un chargement plus rapide"
->abstract="Lorsque cette option est activée, les résultats se chargent plus rapidement pendant 12 heures après la première ouverture d’un projet par un utilisateur ou une diffusion selon un planning. Quiconque ouvre le projet pendant cette période voit les mêmes résultats, même si les données continuent de circuler en arrière-plan. Pour charger les derniers résultats, actualisez les panneaux individuels ou l’ensemble du projet."
+>abstract="Lorsqu’ils sont activés, les résultats se chargent instantanément pendant 12 heures après la première ouverture d’un projet par un utilisateur ou une utilisatrice ou leur diffusion selon un planning. Quiconque ouvre le projet pendant cette période voit les mêmes résultats, même si les données continuent de circuler en arrière-plan. Pour charger les derniers résultats, actualisez les panneaux individuels ou l’ensemble du projet."
 
 Vous pouvez configurer des projets Analysis Workspace pour qu’ils affichent les résultats mis en cache pendant 12 heures, ce qui permet aux résultats de se charger instantanément pour toute personne qui ouvre le projet après son chargement initial.
 
@@ -48,13 +48,11 @@ Lors de la première exécution du projet, Analysis Workspace exécute la requê
 
 Au bout de 12 heures, les résultats mis en cache expirent. La requête suivante sur le projet, si un utilisateur l’ouvre ou si une diffusion planifiée s’exécute, se charge à une vitesse normale et démarre une nouvelle fenêtre de 12 heures.
 
-### Qui peut voir les résultats mis en cache
-
-Les résultats mis en cache sont partagés avec toutes les personnes ayant accès au projet et aux vues de données utilisées dans le projet.
-
 ### Quels résultats sont mis en cache
 
-Analysis Workspace met en cache chaque requête qui s’exécute, et non toutes les versions possibles d’un projet. Lorsqu’une personne modifie la requête, par exemple en sélectionnant un élément dans un menu déroulant de panneau ou en appliquant un segment, Analysis Workspace exécute une nouvelle requête. La nouvelle requête se charge à une vitesse normale la première fois. Ensuite, ses résultats sont également mis en cache.
+Analysis Workspace met en cache chaque requête qui s’exécute, et non toutes les versions possibles d’un projet.
+
+Lorsqu’une personne modifie la requête dans un projet (en sélectionnant un élément dans un menu déroulant de panneau ou en appliquant un segment, par exemple), Analysis Workspace exécute une nouvelle requête. La nouvelle requête se charge à une vitesse normale la première fois. Ensuite, ses résultats sont également mis en cache, de sorte que les personnes exécutant la même requête voient les résultats instantanément.
 
 La mise en cache d’une nouvelle requête ne remplace ni n’invalide les résultats déjà mis en cache. L’affichage du projet d’origine est mis en cache avec d’autres variations que les personnes ont exécutées.
 
@@ -67,34 +65,52 @@ Supposons qu’un projet Performances de campagne globale comprenne des segments
 | Heure | Action | Vitesse de charge |
 | --- | --- | --- |
 | 6 h 00 | Diffusion planifiée du projet | Normale (les résultats sont mis en cache pour une utilisation ultérieure) |
-| 07:06 | L’utilisateur A ouvre le projet | Rapide |
+| 07:06 | L’utilisateur A ouvre le projet | Instantané |
 | 07:06 | L’utilisateur A applique le segment Amériques | Normale (les résultats sont mis en cache pour une utilisation ultérieure) |
-| 08:01 | L’utilisateur B ouvre le projet | Rapide |
-| 08:01 | L’utilisateur B applique le segment Amériques | Rapide |
+| 08:01 | L’utilisateur B ouvre le projet | Instantané |
+| 08:01 | L’utilisateur B applique le segment Amériques | Instantané |
 | 08:01 | L’utilisateur B applique le segment EMEA | Normale (les résultats sont mis en cache pour une utilisation ultérieure) |
 
 >[!ENDSHADEBOX]
+
+### Qui voit les résultats mis en cache
+
+Les résultats mis en cache s’affichent par défaut pour toutes les personnes qui :
+
+* A accès au projet
+
+* A accès aux vues de données utilisées dans le projet
+
+* Utilise les mêmes paramètres de requête dans le projet qui ont été précédemment mis en cache (par exemple, le projet qu’ils visualisent utilise les mêmes segments ou sélections de listes déroulantes de panneau qu’un projet précédemment mis en cache)
+
+Lors de l’affichage des résultats mis en cache, vous pouvez afficher les données les plus récentes en [actualisant manuellement les résultats](#manually-refresh-results-on-cached-projects).
 
 ## Activer les résultats mis en cache pour un projet
 
 Toute personne pouvant mettre à jour les paramètres du projet peut activer les résultats mis en cache. Cela inclut le propriétaire du projet et toute personne disposant du rôle **[!UICONTROL Modifier l’original]** pour le projet. Pour plus d’informations sur les rôles de projet, voir [Partager un rôle de projet spécifique](/help/analysis-workspace/curate-share/share-projects.md#share-a-specific-project-role).
 
-Dans le projet Workspace dans lequel vous souhaitez activer les résultats mis en cache pour un chargement plus rapide :
+Dans le projet Workspace dans lequel vous souhaitez activer les résultats mis en cache pour un chargement quasi instantané :
 
 1. Accédez à **[!UICONTROL Projets]** > **[!UICONTROL Informations et paramètres du projet]**.
 1. Sélectionnez **[!UICONTROL Utiliser les résultats mis en cache pour accélérer le chargement]**.
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
 
-## Afficher les dates et heures des projets mis en cache
+## Afficher les résultats mis en cache dans un projet
 
-Lorsqu’un projet est configuré pour utiliser les résultats mis en cache, un horodatage s’affiche en haut du projet, indiquant le moment où les résultats ont été mis en cache :
+Un horodatage s’affiche en haut du projet lorsque les résultats mis en cache sont affichés. La date et l’heure indiquent si tous les résultats sont mis en cache ou seulement certains d’entre eux :
 
-* **[!UICONTROL Affichage des données à partir du] [_date et heure_]**: tous les panneaux du projet affichent les résultats en mémoire cache de la date et de l’heure affichées.
-* **[!UICONTROL Affichage de certaines données à partir de] [_date et heure_]**: certains panneaux affichent les résultats mis en cache à partir de la date et de l’heure affichées, tandis que d’autres ont été actualisés plus récemment.
+* **[!UICONTROL Affichage des résultats à partir du] [_date et heure_]**: tous les panneaux du projet affichent les résultats en mémoire cache de la date et de l’heure affichées.
+* **[!UICONTROL Affichage de certains résultats à partir de] [_date et heure_]**: certains panneaux affichent les résultats mis en cache à partir de la date et de l’heure affichées, tandis que d’autres ont été actualisés plus récemment.
+
+![Date et heure du projet mis en cache](assets/project-cache-timestamp.png)
 
 Les panneaux affichent également un horodatage indiquant le moment où les résultats ont été mis en cache :
 
-* **[!UICONTROL Affichage des données à partir du] [_date et heure_]**: le panneau affiche les résultats mis en cache à partir de la date et de l’heure affichées.
+* **[!UICONTROL Affichage des résultats à partir de] [_date et heure_]**: le panneau affiche les résultats mis en cache à partir de la date et de l’heure affichées.
+
+  >[!NOTE]
+  >
+  >Cette option n’est pas disponible pendant la phase alpha de la version.
 
 ## Actualisation manuelle des résultats sur les projets mis en cache
 
@@ -106,7 +122,7 @@ Dans le projet Workspace dans lequel vous souhaitez afficher les dernières donn
 
 Pour charger les derniers résultats pour tous les panneaux et démarrer une nouvelle fenêtre de 12 heures :
 
-1. Sélectionnez **[!UICONTROL Actualiser]** en haut du projet, en regard de l’horodatage du projet.
+1. Sélectionnez l’icône **[!UICONTROL Actualiser]** ![Actualiser](/help/assets/icons/Refresh.svg) en haut du projet à côté de la date et de l’heure du projet.
 
 ### Actualiser les résultats pour un seul panneau
 
@@ -116,5 +132,5 @@ Pour charger les derniers résultats pour tous les panneaux et démarrer une nou
 
 Pour charger les derniers résultats pour un seul panneau uniquement :
 
-1. Sélectionnez **[!UICONTROL Actualiser]** en regard de la date et de l’heure d’un panneau.
+1. Sélectionnez l’icône **[!UICONTROL Actualiser]** ![Actualiser](/help/assets/icons/Refresh.svg) en haut du projet à côté de la date et de l’heure d’un panneau.
 
