@@ -55,10 +55,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 29538d06c3b4a6db567c2a84e5785cc56af3d33d
+source-git-commit: 2c0efe27451163d9fe4fe0f60bab11151a8ac6f1
 workflow-type: tm+mt
-source-wordcount: '7124'
-ht-degree: 97%
+source-wordcount: '7162'
+ht-degree: 96%
 ---
 
 # Customer Journey Analytics - Mises à jour de la documentation
@@ -70,6 +70,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Fonctionnalité | Description |
 |---|---|
 | **Septembre 2026** | |
+| Comparaison de la zone de travail de parcours sur les flèches et les abandons | Mise à jour du paramètre [!UICONTROL Comparer à] dans [Configurer une visualisation de zone de travail de Parcours &#x200B;](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#configure-visualization-settings) afin d’afficher le pourcentage de changement entre les périodes sur chaque nœud, flèche et abandon du parcours. |
 | Publications de blog intégrées | Intégration des articles de blog suivants :<ul><li>[Playbook complet pour la gestion de « Aucune valeur » dans Adobe CJA](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/the-complete-playbook-for-handling-no-value-in-adobe-cja-12769?profile.language=fr#M598)</li><li>[Exploration approfondie des cas d’utilisation de sortie de données Adobe Experience Platform et Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/adobe-experience-platform-customer-journey-analytics-data-egress-use-cases-deep-dive-12725?profile.language=fr)</li></ul>dans notre article sur les cas d’utilisation de [Exportation de données](/help/use-cases/data-export/overview.md) et un nouvel article sur les cas d’utilisation de [Aucune valeur](/help/use-cases/data-views/no-value.md). |
 | Nouvelles actions de raccourci de redimensionnement | Les nouveaux raccourcis clavier d’Analysis Workspace vous permettent désormais de [redimensionner un panneau ou une visualisation](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md#resize-panel-or-visualization) qu’il soit plus large, plus étroit, plus grand ou plus court. |
 | **août 2026** | |
