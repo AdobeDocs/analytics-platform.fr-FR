@@ -117,7 +117,7 @@ Mappez les objets [Personnes](https://experienceleague.adobe.com/en/docs/experie
 
 +++Ingestion de données Marketo dans Adobe Experience Platform
 
-Utilisez le connecteur [](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo) pour importer les données de Marketo dans Experience Platform et les tenir à jour à l’aide des applications Experience Platform.
+Utilisez le connecteur [&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo) pour importer les données de Marketo dans Experience Platform et les tenir à jour à l’aide des applications Experience Platform.
 
 +++
 

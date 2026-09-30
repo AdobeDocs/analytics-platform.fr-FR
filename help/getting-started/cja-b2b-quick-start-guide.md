@@ -45,7 +45,7 @@ Ce document se concentre sur le workflow spécifique à la mise en œuvre de Cus
 
 Pour mettre en œuvre Customer Journey Analytics B2B Edition, les conditions préalables suivantes doivent être remplies
 
-* Vous disposez [ du contrôle d’accès et des autorisations](/help/technotes/access-control.md) nécessaires pour effectuer des tâches d’administration dans Customer Journey Analytics.
+* Vous disposez [&#x200B; du contrôle d’accès et des autorisations](/help/technotes/access-control.md) nécessaires pour effectuer des tâches d’administration dans Customer Journey Analytics.
 * Vous avez acheté le package de module complémentaire Customer Journey Analytics B2B Edition.
 
 

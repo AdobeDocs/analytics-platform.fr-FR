@@ -114,7 +114,7 @@ GA4 étant défini par défaut sur l’attribution pilotée par les données, al
 
 Lorsque les chiffres diffèrent plus que prévu, trois chemins d’audit sont disponibles :
 
-* **** : l’outil de validation intégré au produit Adobe confirme que les événements XDM se déclenchent correctement, atteignent Edge Network et sont écrits dans les jeux de données Platform. Utilisez cet outil pour vérifier votre implémentation avant de comparer les numéros de rapport.
+* **&#x200B;**&#x200B;: l’outil de validation intégré au produit Adobe confirme que les événements XDM se déclenchent correctement, atteignent Edge Network et sont écrits dans les jeux de données Platform. Utilisez cet outil pour vérifier votre implémentation avant de comparer les numéros de rapport.
 * **Prévisualisations des jeux de données** : dans l’interface utilisateur de Platform, vous pouvez prévisualiser les lignes brutes de n’importe quel jeu de données. Comparez-les à l’exportation DebugView ou BigQuery de GA4 pour vérifier la précision au niveau du champ.
-* **** : en cas d’incohérences persistantes et inexpliquées, votre équipe de compte Adobe peut organiser un audit formel de la mise en œuvre avec un consultant Adobe.
+* **&#x200B;**&#x200B;: en cas d’incohérences persistantes et inexpliquées, votre équipe de compte Adobe peut organiser un audit formel de la mise en œuvre avec un consultant Adobe.
 * **Révision de l’ingestion** : si vous pensez que la différence provient de la manière dont les données GA ont été importées dans Platform plutôt que dans les définitions de rapports, consultez la configuration de l’ingestion dans [Migration des données depuis Google Analytics](/help/use-cases/third-party/ga/overview.md).

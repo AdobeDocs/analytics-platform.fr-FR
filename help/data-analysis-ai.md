@@ -104,7 +104,7 @@ Les paramètres suivants régissent l’accès à l’agent Data Insights dans C
 
   1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les autorisations.
 
-  Pour plus d’informations sur le contrôle d’accès, voir [Contrôle d’accès ](/help/technotes/access-control.md#access-control).
+  Pour plus d’informations sur le contrôle d’accès, voir [Contrôle d’accès &#x200B;](/help/technotes/access-control.md#access-control).
 
 * **Accès aux vues de données** : les vues de données doivent être activées pour l’agent Data Insights.
 
@@ -138,7 +138,7 @@ Les paramètres suivants régissent l’accès à l’agent Data Insights dans C
 
 1. Accédez à [experience.adobe.com](https://experience.adobe.com/) et connectez-vous avec votre Adobe ID.
 
-2. Sélectionnez **** sur la page de départ Adobe CX Enterprise.
+2. Sélectionnez **&#x200B;**&#x200B;sur la page de départ Adobe CX Enterprise.
 
 3. Sélectionnez **[!UICONTROL Projet vierge]** dans la bannière en haut de la page des projets pour ouvrir un nouveau projet vierge.
 

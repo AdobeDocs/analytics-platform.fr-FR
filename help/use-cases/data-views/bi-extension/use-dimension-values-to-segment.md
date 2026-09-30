@@ -44,7 +44,7 @@ Créez un segment avec la `Hunting Products` **[!UICONTROL Titre]** dans Custome
 
 Vous pouvez ensuite utiliser ce segment dans un exemple **[!UICONTROL Utilisation des valeurs Dimension à filtrer]** panneau pour le cas d’utilisation :
 
-![Valeurs De Nombre Distinct ](../assets/cja-using-dimension-values-to-filter.png)
+![Valeurs De Nombre Distinct &#x200B;](../assets/cja-using-dimension-values-to-filter.png)
 
 +++
 
@@ -89,7 +89,7 @@ Une visualisation s’affiche **[!UICONTROL Erreur de récupération des donnée
 
 ![AlertRed](/help/assets/icons/AlertRed.svg) Tableau Desktop ne prend pas en charge la récupération de la liste dynamique des catégories de produits depuis Customer Journey Analytics. À la place, ce cas d’utilisation utilise le filtre nouvellement créé pour **[!UICONTROL Produits de chasse]** et utilise les critères de nom du filtre.
 
-1. Dans la vue Source de données ]**, sous**[!UICONTROL  Données ]**, dans le menu contextuel de**[!UICONTROL  cc_data_view(prod:cja%3FFLATTEN)]**, sélectionnez**[!UICONTROL  Actualiser ]**.**[!UICONTROL  Vous devez actualiser la connexion pour sélectionner le nouveau filtre que vous venez de définir dans Customer Journey Analytics.
+1. Dans la vue Source de données **, sous**&#x200B;[!UICONTROL &#x200B; Données &#x200B;]&#x200B;**, dans le menu contextuel de**&#x200B;[!UICONTROL &#x200B; cc_data_view(prod:cja%3FFLATTEN)]&#x200B;**, sélectionnez**&#x200B;[!UICONTROL &#x200B; Actualiser &#x200B;]&#x200B;**.** Vous devez actualiser la connexion pour sélectionner le nouveau filtre que vous venez de définir dans Customer Journey Analytics.
 1. Sélectionnez l’onglet **[!UICONTROL Feuille 1]** en bas pour basculer depuis **[!UICONTROL Source de données]**. Dans la vue **[!UICONTROL Feuille 1]** :
    1. Faites glisser l’entrée **[!UICONTROL Nom du filtre]** de la liste **[!UICONTROL Tableaux]** dans le plateau **[!UICONTROL Filtres]**.
    1. Dans la boîte de dialogue **[!UICONTROL Filtrer \[Nom du filtre\]]**, assurez-vous que **[!UICONTROL Sélectionner dans la liste]** est sélectionné, puis sélectionnez **[!UICONTROL Produits de chasse]** dans la liste. Sélectionnez **[!UICONTROL Appliquer]** et **[!UICONTROL OK]**.

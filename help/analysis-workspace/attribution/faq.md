@@ -43,7 +43,7 @@ L’élément de ligne *Aucun* est un élément fourre-tout qui représente tout
 
 +++Les modèles d’attribution sont-ils disponibles dans d’autres fonctionnalités Analytics ?
 
-Oui. Les modèles d’attribution sont également disponibles dans le cadre des paramètres des composants pour un composant de mesure dans une vue de données. Voir [ Paramètres des composants : attribution](/help/data-views/component-settings/attribution.md). Pour les composants de dimension, vous pouvez utiliser la persistance. La persistance est la possibilité pour une valeur de dimension donnée d’attribuer une mesure au-delà de l’événement sur lequel elle est définie. Elle recourt à une combinaison d’attribution et d’expiration. Voir [Paramètres des composants de persistance](/help/data-views/component-settings/persistence.md) pour plus d’informations
+Oui. Les modèles d’attribution sont également disponibles dans le cadre des paramètres des composants pour un composant de mesure dans une vue de données. Voir [&#x200B; Paramètres des composants : attribution](/help/data-views/component-settings/attribution.md). Pour les composants de dimension, vous pouvez utiliser la persistance. La persistance est la possibilité pour une valeur de dimension donnée d’attribuer une mesure au-delà de l’événement sur lequel elle est définie. Elle recourt à une combinaison d’attribution et d’expiration. Voir [Paramètres des composants de persistance](/help/data-views/component-settings/persistence.md) pour plus d’informations
 
 +++
 

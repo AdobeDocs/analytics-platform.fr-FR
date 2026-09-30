@@ -40,7 +40,7 @@ Dans ce cas d’utilisation, vous souhaitez afficher un tableau et une visualisa
 
 Exemple de panneau **[!UICONTROL Tendance quotidienne]** pour le cas d’utilisation :
 
-![Panneau Tendance quotidienne de ](../assets/cja_daily_trend.png)
+![Panneau Tendance quotidienne de &#x200B;](../assets/cja_daily_trend.png)
 
 +++
 

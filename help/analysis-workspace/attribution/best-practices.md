@@ -50,7 +50,7 @@ Vous pouvez ensuite effectuer une analyse du haut et du bas du funnel pour appro
 
 ### Analyse de lʼentonnoir supérieur
 
-Les analyses en entonnoir supérieur étudient les canaux utilisés pour faire connaître la marque ou le produit. Par exemple, lʼobjectif de la plupart des publicités télévisées est d’accroître la notoriété de la marque. Vous pouvez utiliser le modèle d’attribution [ Décroissance temporelle ](/help/analysis-workspace/attribution/models.md), car les gens finiront par oublier votre publicité TV au fil du temps.
+Les analyses en entonnoir supérieur étudient les canaux utilisés pour faire connaître la marque ou le produit. Par exemple, lʼobjectif de la plupart des publicités télévisées est d’accroître la notoriété de la marque. Vous pouvez utiliser le modèle d’attribution [&#x200B; Décroissance temporelle &#x200B;](/help/analysis-workspace/attribution/models.md), car les gens finiront par oublier votre publicité TV au fil du temps.
 
 ### Analyse de lʼentonnoir inférieur
 
@@ -80,5 +80,5 @@ Si vous ne disposez pas encore d’un modèle d’attribution qui fournit des r�
 
 * Il se peut que vous deviez faire appel aux services dʼun spécialiste des données au lieu de vous fier uniquement à Analysis Workspace.
 * Vous pouvez vous fier aux données brutes, comme dans les flux de données Adobe.
-* Pensez à utiliser [](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-overview), par exemple, si vous souhaitez tenir compte des données de vos impressions.
+* Pensez à utiliser [&#128279;](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-overview), par exemple, si vous souhaitez tenir compte des données de vos impressions.
 

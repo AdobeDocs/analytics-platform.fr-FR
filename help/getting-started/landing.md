@@ -40,7 +40,7 @@ La page de destination de Customer Journey Analytics comprend les sous-onglets s
 
 **[!UICONTROL Apprentissage]** : contient des visites guidées vidéo pratiques, des tutoriels et des liens vers la documentation. Elle contient également des informations sur la mise à niveau d’Adobe Analytics vers Customer Journey Analytics, ainsi qu’un outil pour générer dynamiquement des étapes de mise à niveau spécifiques à votre organisation.
 
-![rail de gauche de la page de destination ](assets/cja-landing-page-left-rail.png)
+![rail de gauche de la page de destination &#x200B;](assets/cja-landing-page-left-rail.png)
 
 
 >[!BEGINSHADEBOX]
@@ -58,7 +58,7 @@ La section **[!UICONTROL Projets]** du rail de gauche sert de page d’accueil p
 
 Pour accéder aux projets dans Customer Journey Analytics :
 
-1. Sélectionnez l’onglet [!UICONTROL ****].
+1. Sélectionnez l’onglet [!UICONTROL **&#x200B;**].
 
 1. Sélectionnez [!UICONTROL **Projets**] dans le rail de gauche.
 
@@ -76,7 +76,7 @@ Consultez [Projets](/help/analysis-workspace/build-workspace-project/freeform-ov
 
 Pour accéder aux modèles dans Customer Journey Analytics :
 
-1. Sélectionnez l’onglet [!UICONTROL ****].
+1. Sélectionnez l’onglet [!UICONTROL **&#x200B;**].
 
 1. Dans la section [!UICONTROL **Modèles**] du rail de gauche, vous pouvez sélectionner les modèles Adobe ou les modèles d’entreprise.
 
@@ -146,7 +146,7 @@ La section **[!UICONTROL Apprentissage]** de l’onglet [!UICONTROL **Workspace*
 
 Pour accéder aux informations sur les parcours de formation dans Customer Journey Analytics :
 
-1. Sélectionnez l’onglet [!UICONTROL ****].
+1. Sélectionnez l’onglet [!UICONTROL **&#x200B;**].
 
 1. Dans la section [!UICONTROL **Apprentissage**] du rail de gauche, sélectionnez [!UICONTROL **Parcours d’apprentissage**].
 
@@ -166,7 +166,7 @@ La page [!UICONTROL **Parcours de formation**] offre les fonctionnalités suivan
 
 Pour accéder aux informations sur la mise à niveau vers Customer Journey Analytics :
 
-1. Sélectionnez l’onglet [!UICONTROL ****].
+1. Sélectionnez l’onglet [!UICONTROL **&#x200B;**].
 
 1. Dans la section [!UICONTROL **Formation**] du rail de gauche, sélectionnez [!UICONTROL **Mettre à niveau vers Customer Journey Analytics**].
 

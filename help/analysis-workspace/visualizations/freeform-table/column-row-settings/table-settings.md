@@ -165,11 +165,11 @@ L’exemple ci-dessous illustre comment utiliser les options de menu contextuel 
 
   1. Sélectionnez **[!UICONTROL Créer des lignes modifiées comme champ dérivé]** dans le menu contextuel pour toute ligne sélectionnée dans le tableau modifié.
 
-     ![Sélectionnez l’option de menu Créer des lignes modifiées en tant que champ dérivé ](assets/context-derived.png)
+     ![Sélectionnez l’option de menu Créer des lignes modifiées en tant que champ dérivé &#x200B;](assets/context-derived.png)
 
   1. Inspectez, éventuellement modifiez et enregistrez la définition du champ dérivé en fonction de toutes les modifications apportées dans le tableau.
 
-     ![ Boîte de dialogue Créer un champ dérivé ](assets/dialog-derived.png)
+     ![&#x200B; Boîte de dialogue Créer un champ dérivé &#x200B;](assets/dialog-derived.png)
 
 * Réinitialiser le tableau à structure libre à l’état avant les modifications.
 
