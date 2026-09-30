@@ -17,9 +17,9 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7afd51cbdbfc21c8512d0e11be87a6ab8245e366
+source-git-commit: 32dfb7790f57293ea297bdcb8319c3d3b187a2ae
 workflow-type: tm+mt
-source-wordcount: '1330'
+source-wordcount: '1336'
 ht-degree: 0%
 ---
 
@@ -56,7 +56,7 @@ Au bout de 12 heures, les résultats mis en cache expirent. Au prochain chargeme
 
 Analysis Workspace met en cache les résultats du projet tel qu’il a été configuré à l’origine, avec ses vues de données sélectionnées, ses segments appliqués, ses périodes, ses sélections de listes déroulantes de panneau, etc. Toutes les personnes qui ouvrent le projet voient ces résultats mis en cache.
 
-Si quelqu’un modifie la configuration du projet, les résultats sont mis à jour et [une nouvelle variation du projet est mise en cache](#project-variations-are-cached-as-the-project-is-modified).
+Si une personne modifie la configuration du projet lors de l’affichage du projet mis en cache, les résultats se chargent normalement (et non instantanément) et [ une nouvelle variation du projet est mise en cache](#project-variations-are-cached-as-the-project-is-modified).
 
 #### Les variations du projet sont mises en cache au fur et à mesure que le projet est modifié
 
@@ -80,19 +80,21 @@ Supposons qu’un projet Performances de campagne globale comprenne des segments
 | --- | --- | --- |
 | 6 h 00 | Diffusion planifiée du projet | Normale (les résultats sont mis en cache pour une utilisation ultérieure) |
 | 07:06 | L’utilisateur A ouvre le projet | Instantané |
-| 07:06 | L’utilisateur A applique le segment Amériques | Normale (les résultats sont mis en cache pour une utilisation ultérieure) |
+| 07:07 | L’utilisateur A applique le segment Amériques | Normale (les résultats sont mis en cache pour une utilisation ultérieure) |
 | 08:01 | L’utilisateur B ouvre le projet | Instantané |
-| 08:01 | L’utilisateur B applique le segment Amériques | Instantané |
-| 08:01 | L’utilisateur B applique le segment EMEA | Normale (les résultats sont mis en cache pour une utilisation ultérieure) |
+| 08:05 | L’utilisateur B applique le segment Amériques | Instantané |
+| 08:12 | L’utilisateur B applique le segment EMEA | Normale (les résultats sont mis en cache pour une utilisation ultérieure) |
 
 >[!ENDSHADEBOX]
 
-### Modifications qui actualisent automatiquement les résultats mis en cache
+### Modifications entraînant l’actualisation des résultats mis en cache avec le chargement suivant du projet
 
 Les modifications suivantes apportées à la configuration sous-jacente d’un projet entraînent l’actualisation des résultats par Analysis Workspace la prochaine fois qu’un utilisateur ouvre le projet, même si la période de 12 heures n’a pas expiré :
 
 * Modifications apportées à un composant dans la vue de données, comme la modification d’une dimension ou des paramètres de composant d’une mesure [paramètres](/help/data-views/component-settings/overview.md)
+
 * Modifications apportées à un [champ dérivé](/help/data-views/derived-fields/derived-fields.md)
+
 * Modifications apportées à une définition de segment utilisée dans le projet
 
 Les résultats se chargent à une vitesse normale, puis sont mis en cache, ce qui ouvre une nouvelle fenêtre de 12 heures.
@@ -105,13 +107,13 @@ Les résultats mis en cache s’affichent par défaut pour toutes les personnes 
 
 * A accès aux vues de données utilisées dans le projet
 
-* Charge une variante du projet déjà mise en cache, par exemple une avec les mêmes segments ou sélections de menus déroulants de panneau (pour plus d’informations, voir [Quels résultats sont mis en cache &#x200B;](#what-results-are-cached))
+* Charge une variante du projet déjà mise en cache, par exemple une avec les mêmes segments ou sélections de menus déroulants de panneau (pour plus d’informations, voir [Quels résultats sont mis en cache ](#what-results-are-cached))
 
 Lors de l’affichage des résultats mis en cache, vous pouvez afficher les données les plus récentes en [actualisant manuellement les résultats](#manually-refresh-results-on-cached-projects).
 
 ### Quand laisser les résultats mis en cache désactivés sur un projet
 
-Certains projets dépendent des résultats pour refléter les données les plus récentes à chaque ouverture. Cela est courant pour les projets qui reposent fortement sur des données du même jour, des données arrivant tardivement ou des jeux de données de [&#x200B; recherche](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md) qui sont mis à jour fréquemment.
+Certains projets dépendent des résultats pour refléter les données les plus récentes à chaque ouverture. Cela est courant pour les projets qui reposent fortement sur des données du même jour, des données arrivant tardivement ou des jeux de données de [ recherche](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md) qui sont mis à jour fréquemment.
 
 Laissez les résultats mis en cache désactivés dans votre projet si la plupart des personnes qui accèdent au projet ont besoin de voir :
 
@@ -137,12 +139,14 @@ Toute personne pouvant mettre à jour les paramètres du projet peut activer les
 
 >[!IMPORTANT]
 >
->Les résultats mis en cache peuvent ne pas convenir si vous devez afficher immédiatement les données du jour en cours, les données arrivées tardivement ou les valeurs de recherche mises à jour. Avant d’activer ce paramètre, consultez la section [&#x200B; Quand laisser les résultats mis en cache désactivés sur un projet &#x200B;](#when-to-leave-cached-results-disabled-on-a-project).
+>Les résultats mis en cache peuvent ne pas convenir si vous devez afficher immédiatement les données du jour en cours, les données arrivées tardivement ou les valeurs de recherche mises à jour. Avant d’activer ce paramètre, consultez la section [ Quand laisser les résultats mis en cache désactivés sur un projet ](#when-to-leave-cached-results-disabled-on-a-project).
 
-Dans le projet Workspace dans lequel vous souhaitez activer les résultats mis en cache pour un chargement quasi instantané :
+Dans le projet Workspace dans lequel vous souhaitez activer les résultats mis en cache pour un chargement plus rapide :
 
 1. Accédez à **[!UICONTROL Projets]** > **[!UICONTROL Informations et paramètres du projet]**.
+
 1. Sélectionnez **[!UICONTROL Utiliser les résultats mis en cache pour accélérer le chargement]**.
+
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
 
 ## Afficher les résultats mis en cache dans un projet
@@ -150,6 +154,7 @@ Dans le projet Workspace dans lequel vous souhaitez activer les résultats mis e
 Un horodatage s’affiche en haut du projet lorsque les résultats mis en cache sont affichés. La date et l’heure indiquent si tous les résultats sont mis en cache ou seulement certains d’entre eux :
 
 * **[!UICONTROL Affichage des résultats à partir du] [_date et heure_]**: tous les panneaux du projet affichent les résultats en mémoire cache de la date et de l’heure affichées.
+
 * **[!UICONTROL Affichage de certains résultats à partir de] [_date et heure_]**: certains panneaux affichent les résultats mis en cache à partir de la date et de l’heure affichées, tandis que d’autres ont été actualisés plus récemment.
 
 ![Date et heure du projet mis en cache](assets/project-cache-timestamp.png)
@@ -184,5 +189,5 @@ Pour charger les derniers résultats pour tous les panneaux et démarrer une nou
 
 Pour charger les derniers résultats pour un seul panneau uniquement :
 
-1. Sélectionnez l’icône **[!UICONTROL Actualiser]** ![Actualiser](/help/assets/icons/Refresh.svg) en haut du projet à côté de la date et de l’heure d’un panneau.
+1. Sélectionnez l’icône **[!UICONTROL Actualiser]** ![Actualiser](/help/assets/icons/Refresh.svg) en regard de la date et de l’heure d’un panneau.
 
