@@ -105,13 +105,13 @@ Les résultats mis en cache s’affichent par défaut pour toutes les personnes 
 
 * A accès aux vues de données utilisées dans le projet
 
-* Charge une variante du projet déjà mise en cache, par exemple une avec les mêmes segments ou sélections de menus déroulants de panneau (pour plus d’informations, voir [Quels résultats sont mis en cache ](#what-results-are-cached))
+* Charge une variante du projet déjà mise en cache, par exemple une avec les mêmes segments ou sélections de menus déroulants de panneau (pour plus d’informations, voir [Quels résultats sont mis en cache &#x200B;](#what-results-are-cached))
 
 Lors de l’affichage des résultats mis en cache, vous pouvez afficher les données les plus récentes en [actualisant manuellement les résultats](#manually-refresh-results-on-cached-projects).
 
 ### Quand laisser les résultats mis en cache désactivés sur un projet
 
-Certains projets dépendent des résultats pour refléter les données les plus récentes à chaque ouverture. Cela est courant pour les projets qui reposent fortement sur des données du même jour, des données arrivant tardivement ou des jeux de données de [ recherche](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md) qui sont mis à jour fréquemment.
+Certains projets dépendent des résultats pour refléter les données les plus récentes à chaque ouverture. Cela est courant pour les projets qui reposent fortement sur des données du même jour, des données arrivant tardivement ou des jeux de données de [&#x200B; recherche](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md) qui sont mis à jour fréquemment.
 
 Laissez les résultats mis en cache désactivés dans votre projet si la plupart des personnes qui accèdent au projet ont besoin de voir :
 
@@ -137,7 +137,7 @@ Toute personne pouvant mettre à jour les paramètres du projet peut activer les
 
 >[!IMPORTANT]
 >
->Les résultats mis en cache peuvent ne pas convenir si vous devez afficher immédiatement les données du jour en cours, les données arrivées tardivement ou les valeurs de recherche mises à jour. Avant d’activer ce paramètre, consultez la section [ Quand laisser les résultats mis en cache désactivés sur un projet ](#when-to-leave-cached-results-disabled-on-a-project).
+>Les résultats mis en cache peuvent ne pas convenir si vous devez afficher immédiatement les données du jour en cours, les données arrivées tardivement ou les valeurs de recherche mises à jour. Avant d’activer ce paramètre, consultez la section [&#x200B; Quand laisser les résultats mis en cache désactivés sur un projet &#x200B;](#when-to-leave-cached-results-disabled-on-a-project).
 
 Dans le projet Workspace dans lequel vous souhaitez activer les résultats mis en cache pour un chargement quasi instantané :
 
