@@ -5,30 +5,38 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: e8ebf5e7-0b80-4d46-8a5f-b7ae832eda4f
 role: User
-TQID: https://experienceleague.adobe.com/vtwD-kgpmITrgGmc3SsY-xLkukMLtfwiyDWqc-OAQsI
+TQID: 'https://experienceleague.adobe.com/vtwD-kgpmITrgGmc3SsY-xLkukMLtfwiyDWqc-OAQsI'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+    internal-label: Use cases
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
+    internal-label: Reporting
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1417
-ht-degree: 13%
-
+source-wordcount: '1417'
+ht-degree: 14%
 ---
-
 # Exemple de projet B2B basé sur les personnes
 
 Cet article illustre un cas d’utilisation dans lequel vous souhaitez générer correctement des rapports dans Customer Journey Analytics sur les données de personne dans le contexte d’une configuration B2B standard basée sur la personne. Une telle configuration est facilitée par le [B2B edition Real-Time CDP](https://experienceleague.adobe.com/fr/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview).  Le cas d’utilisation explique comment configurer et générer des rapports sur les données B2B basées sur le niveau du profil (personne) dans Customer Journey Analytics.
 
-[!BADGE B2B edition &#x200B;]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} une section distincte pour les cas d’utilisation de création de rapports basés sur les comptes est publiée avec la version de [Customer Journey Analytics B2B edition](/help/getting-started/cja-b2b-edition.md).
+[!BADGE B2B edition ]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} une section distincte pour les cas d’utilisation de création de rapports basés sur les comptes est publiée avec la version de [Customer Journey Analytics B2B edition](/help/getting-started/cja-b2b-edition.md).
 
 ## Connexion
 
@@ -36,14 +44,14 @@ Définissez votre connexion pour inclure tous les jeux de données B2B pertinent
 
 | Jeu de données (facultatif) | Schéma | Type de schéma | Classe de base | Description |
 |---|---|---|---|---|
-| Jeu De Données D’Activité B2B | Schéma D’Activité B2B | Événement | XDM ExperienceEvent | Un ExperienceEvent est un enregistrement factuel de ce qui s’est produit, y compris le moment de survenue et l’identité de la personne concernée. Les modèles ExperienceEvent peuvent être explicites (actions humaines directement observables) ou implicites (obtenus sans action humaine directe), et sont enregistrés sans agrégation ni interprétation. Les événements d’expérience sont essentiels pour l’analyse de domaine temporel, car ils permettent l’observation et l’analyse des modifications qui se produisent dans une fenêtre de temps donnée, ainsi que la comparaison entre plusieurs fenêtres de temps pour suivre les tendances. |
-| Jeu De Données De Personnes B2B | Schéma de personne B2B | Profile | XDM Individual Profile | Un profil individuel XDM constitue une représentation unique des attributs et des centres d’intérêt des individus identifiés et partiellement identifiés. Les profils moins identifiés peuvent contenir uniquement des signaux comportementaux anonymes, tels que des cookies de navigateur, tandis que les profils hautement identifiés peuvent contenir des informations personnelles détaillées, telles que le nom, la date de naissance, l’emplacement et l’adresse e-mail. À mesure qu’un profil se développe, il devient un solide référentiel d’informations personnelles, d’informations d’identification, de coordonnées et de préférences de communication pour une personne. |
+| Jeu De Données D’Activité B2B | Schéma D’Activité B2B | Événement | XDM ExperienceEvent | Un ExperienceEvent est un enregistrement factuel de ce qui s’est produit, y compris le moment de survenue et l’identité de la personne concernée. Les ExperienceEvents peuvent être explicites (actions humaines directement observables) ou implicites (obtenus sans action humaine directe), et sont enregistrés sans agrégation ni interprétation. Les événements d’expérience sont essentiels pour l’analyse de domaine temporel, car ils permettent l’observation et l’analyse des modifications qui se produisent dans une fenêtre de temps donnée, ainsi que la comparaison entre plusieurs fenêtres de temps pour suivre les tendances. |
+| Jeu De Données De Personnes B2B | Schéma de personne B2B | Profile | XDM Individual Profile | Un profil individuel XDM constitue une représentation unique des attributs et des centres d’intérêt des individus identifiés et partiellement identifiés. Les profils moins identifiés peuvent contenir uniquement des signaux comportementaux anonymes, tels que des cookies de navigateur, tandis que les profils hautement identifiés peuvent contenir des informations personnelles détaillées, telles que le nom, la date de naissance, l’emplacement et l’adresse e-mail. À mesure qu’un profil se développe, il devient un solide référentiel contenant des informations personnelles, des informations d’identification, des coordonnées et les préférences de communication d’un individu. |
 | Jeu De Données De Compte B2B | Schéma de compte B2B | Recherche | Compte d’entreprise XDM | Un compte professionnel XDM est une classe XDM (modèle de données d’expérience) standard qui capture les propriétés minimales requises d’un compte professionnel. Cette classe XDM peut uniquement être incluse dans le profil pour les clients avec l’édition B2B ou B2P. |
 | Jeu de données d’opportunité B2B | Schéma d’opportunité B2B | Recherche | XDM Business Opportunity | XDM Business Opportunity est une classe de modèle de données d’expérience (XDM) standard qui capture les propriétés minimales requises d’une opportunité commerciale. Cette classe XDM peut uniquement être incluse dans le profil pour les clients avec l’édition B2B ou B2P. |
 | Jeu De Données De Campagne B2B | Schéma De Campagne B2B | Recherche | XDM Business Campaign | XDM Business Campaign est une classe XDM (modèle de données d’expérience) standard qui capture les propriétés minimales requises d’une campagne commerciale. Cette classe XDM peut uniquement être incluse dans le profil pour les clients avec l’édition B2B ou B2P. |
-| Jeu De Données De Liste Marketing B2B | Schéma de liste marketing B2B | Recherche | Liste XDM Business Marketing | La liste XDM Business Marketing est une classe XDM (modèle de données d’expérience) standard qui capture les propriétés minimales requises d’une liste marketing. Les listes marketing vous permettent de donner la priorité aux prospects qui sont les plus susceptibles d’acheter votre produit. Cette classe XDM peut uniquement être incluse dans le profil pour les clients avec l’édition B2B ou B2P. |
-| Jeu De Données Relation Personne-Compte B2B | Schéma De Relation Entre La Personne Et Le Compte B2B | Recherche | Relation Personne/Compte d’entreprise XDM | La relation de la personne avec le compte professionnel XDM est une classe XDM standard qui capture les propriétés minimales requises d’une personne associée à un compte professionnel. |
-| Jeu De Données De Relation De La Personne Avec L’Opportunité B2B | Schéma de relation de la personne avec l’opportunité B2B | Recherche | Relation Personne/XDM Business Opportunity | La relation de la personne avec l’opportunité commerciale XDM est une classe XDM (modèle de données d’expérience) standard qui capture les propriétés minimales requises d’une personne associée à une opportunité commerciale. |
+| Jeu De Données De Liste Marketing B2B | Schéma de liste marketing B2B | Recherche | XDM Business Marketing List | La liste XDM Business Marketing est une classe XDM (modèle de données d’expérience) standard qui capture les propriétés minimales requises d’une liste marketing. Les listes marketing vous permettent de donner la priorité aux prospects qui sont les plus susceptibles d’acheter votre produit. Cette classe XDM peut uniquement être incluse dans le profil pour les clients avec l’édition B2B ou B2P. |
+| Jeu De Données Relation Personne-Compte B2B | Schéma De Relation Entre La Personne Et Le Compte B2B | Recherche | XDM Business Account Person Relation | La relation de la personne avec le compte professionnel XDM est une classe XDM standard qui capture les propriétés minimales requises d’une personne associée à un compte professionnel. |
+| Jeu De Données De Relation De La Personne Avec L’Opportunité B2B | Schéma de relation de la personne avec l’opportunité B2B | Recherche | XDM Business Opportunity Person Relation | La relation de la personne avec l’opportunité commerciale XDM est une classe XDM (modèle de données d’expérience) standard qui capture les propriétés minimales requises d’une personne associée à une opportunité commerciale. |
 | Jeu De Données De Membre De La Liste Marketing B2B | Schéma des membres de la liste marketing B2B | Recherche | Membres de la liste marketing XDM | Membres de la liste marketing professionnelle XDM est une classe XDM (modèle de données d’expérience) standard qui décrit les membres, les personnes ou les contacts associés à une liste marketing. |
 | Jeu De Données De Membre De Campagne B2B | Schéma des membres de la campagne B2B | Recherche | Membres de XDM Business Campaign | Membres de XDM Business Campaign est une classe XDM (modèle de données d’expérience) standard qui décrit un contact ou un prospect associé à une campagne commerciale. |
 
@@ -55,7 +63,7 @@ Définissez votre connexion pour inclure tous les jeux de données B2B pertinent
 -->
 
 
-La relation entre les schémas de recherche B2B, le schéma de profil et le schéma d’événement est définie dans la configuration B2B d’Experience Platform. Voir Schémas dans [Real-Time Customer Data Platform B2B edition](https://experienceleague.adobe.com/fr/docs/experience-platform/rtcdp/schemas/b2b) et [Définir une relation multiple-à-un entre deux schémas dans Real-Time Customer Data Platform B2B edition](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/tutorials/relationship-b2b).
+La relation entre les schémas de recherche B2B, le schéma de profil et le schéma d’événement est définie dans la configuration B2B d’Experience Platform. Voir Schémas dans [Real-Time Customer Data Platform B2B edition](https://experienceleague.adobe.com/fr/docs/experience-platform/rtcdp/schemas/b2b) et [Définir une relation multiple-à-un entre deux schémas dans Real-Time Customer Data Platform B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/relationship-b2b).
 
 
 Pour garantir une configuration appropriée d’une connexion qui prend en charge les recherches basées sur la personne de vos données B2B, utilisez l’illustration suivante pour obtenir un aperçu et procédez comme suit :
@@ -64,7 +72,7 @@ Pour garantir une configuration appropriée d’une connexion qui prend en charg
 
 1. Ajoutez des jeux de données du tableau ci-dessus à votre connexion.
 1. Pour chaque jeu de données de recherche que vous ajoutez à votre connexion, vous devez définir explicitement la relation avec un jeu de données d’événement à l’aide de la **[!UICONTROL Clé]** et de la **[!UICONTROL Clé correspondante]** dans la boîte de dialogue **[!UICONTROL Modifier le jeu de données]**.
-1. Pour chaque jeu de données de recherche que vous souhaitez transformer pour les recherches B2B basées sur la personne, activez **[!UICONTROL Transformer le jeu de données]** afin de vous assurer que les données sont transformées pour les recherches basées sur la personne. Consultez [&#x200B; Transformer des jeux de données pour les recherches B2B &#x200B;](/help/connections/transform-datasets-b2b-lookups.md) pour plus d’informations.
+1. Pour chaque jeu de données de recherche que vous souhaitez transformer pour les recherches B2B basées sur la personne, activez **[!UICONTROL Transformer le jeu de données]** afin de vous assurer que les données sont transformées pour les recherches basées sur la personne. Consultez [ Transformer des jeux de données pour les recherches B2B ](/help/connections/transform-datasets-b2b-lookups.md) pour plus d’informations.
 
    ![Key - Clé correspondante](assets/key-matchingkey.png)
 
@@ -80,14 +88,14 @@ Pour garantir une configuration appropriée d’une connexion qui prend en charg
    |---|---|---|---|
    | Jeu De Données D’Activité B2B | SourceKey <br/>**personKey.sourceKey** | | |
    | Jeu De Données De Personnes B2B | SourceKey <br/>**b2b.personKey.sourceKey** | | |
-   | Jeu De Données De Compte B2B | | SourceKey <br/>**accountKey.sourceKey**&#x200B;❶ | SourceKey<br>(Jeu de données de personne B2B)<br/>**b2b.accountKey.sourceKey**&#x200B;❶ |
-   | Jeu de données d’opportunité B2B | | Source Key <br/>**opportunitéKey.sourceKey**&#x200B;❷ | SourceKey<br/>(jeu de données de relation d’opportunité B2B)<br/>**opportunitéKey.sourceKey**&#x200B;❷ |
-   | Jeu De Données De Campagne B2B | | SourceKey <br/>**campaignKey.sourceKey**&#x200B;❸ | SourceKey<br/>(jeu de données de membre de campagne B2B)<br/>**campaignKey.sourceKey**&#x200B;❸<br/> |
-   | Jeu De Données De Liste Marketing B2B | | SourceKey <br/>**marketingListKey.sourceKey**&#x200B;❹ | SourceKey<br/>(jeu de données de membre de la liste marketing B2B)<br/>**marketingListKey.sourceKey**&#x200B;❹ |
-   | Jeu De Données Relation Personne-Compte B2B | | SourceKey <br/>**personKey.sourceKey**&#x200B;❺ | Clé <br/>(jeux de données d’événements)<br/>**personKey.sourceKey**&#x200B;❺ |
-   | Jeu De Données De Relation De La Personne Avec L’Opportunité B2B | | SourceKey <br/>**personKey.sourceKe** y❻ | Clé <br/>(jeux de données d’événements)<br/>**personKey.sourceKey**&#x200B;❻ |
-   | Jeu De Données De Membre De Campagne B2B | | SourceKey <br/>**personKey.sourceKey**&#x200B;❼ | Clé <br/>(jeux de données d’événements)<br/>**personKey.sourceKey**&#x200B;❼ |
-   | Jeu De Données De Membre De La Liste Marketing B2B | | SourceKey <br/>**personKey.sourceKey**&#x200B;❽ | Clé <br/>(jeux de données d’événements)<br/>**personKey.sourceKey**&#x200B;❽ |
+   | Jeu De Données De Compte B2B | | SourceKey <br/>**accountKey.sourceKey**❶ | SourceKey<br>(Jeu de données de personne B2B)<br/>**b2b.accountKey.sourceKey**❶ |
+   | Jeu de données d’opportunité B2B | | Source Key <br/>**opportunitéKey.sourceKey**❷ | SourceKey<br/>(jeu de données de relation d’opportunité B2B)<br/>**opportunitéKey.sourceKey**❷ |
+   | Jeu De Données De Campagne B2B | | SourceKey <br/>**campaignKey.sourceKey**❸ | SourceKey<br/>(jeu de données de membre de campagne B2B)<br/>**campaignKey.sourceKey**❸<br/> |
+   | Jeu De Données De Liste Marketing B2B | | SourceKey <br/>**marketingListKey.sourceKey**❹ | SourceKey<br/>(jeu de données de membre de la liste marketing B2B)<br/>**marketingListKey.sourceKey**❹ |
+   | Jeu De Données Relation Personne-Compte B2B | | SourceKey <br/>**personKey.sourceKey**❺ | Clé <br/>(jeux de données d’événements)<br/>**personKey.sourceKey**❺ |
+   | Jeu De Données De Relation De La Personne Avec L’Opportunité B2B | | SourceKey <br/>**personKey.sourceKe** y❻ | Clé <br/>(jeux de données d’événements)<br/>**personKey.sourceKey**❻ |
+   | Jeu De Données De Membre De Campagne B2B | | SourceKey <br/>**personKey.sourceKey**❼ | Clé <br/>(jeux de données d’événements)<br/>**personKey.sourceKey**❼ |
+   | Jeu De Données De Membre De La Liste Marketing B2B | | SourceKey <br/>**personKey.sourceKey**❽ | Clé <br/>(jeux de données d’événements)<br/>**personKey.sourceKey**❽ |
 
 {style="table-layout:auto"}
 
