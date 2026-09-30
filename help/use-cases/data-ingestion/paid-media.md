@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hold: true
 role: Admin
-source-git-commit: 7357a8b929d72095aee7c154ea9e77791ac1a751
+source-git-commit: 7cd3764ebbab83530ebb42f2041aee4bd390d168
 workflow-type: tm+mt
-source-wordcount: '1574'
+source-wordcount: '1589'
 ht-degree: 0%
 ---
 
@@ -171,3 +171,8 @@ Utilisez la liste de contrôle suivante pour valider l’implémentation.
 * Vérifiez que les mesures calculées sont définies pour les ratios utilisés par votre organisation.
 * Vérifiez que la création de rapports Workspace s’aligne sur la création de rapports source sur la plateforme publicitaire.
 
+
+>[!MORELIKETHIS]
+>
+>[Connecteur source Meta Ads](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/advertising/meta-ads)
+>
