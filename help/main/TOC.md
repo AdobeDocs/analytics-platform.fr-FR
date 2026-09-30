@@ -2,10 +2,10 @@
 user-guide-title: Guide de Customer Journey Analytics (parcours client)
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 9d7c1ca888432c74251b3bc131efc97d19c4ef8b
+source-git-commit: 7357a8b929d72095aee7c154ea9e77791ac1a751
 workflow-type: tm+mt
-source-wordcount: '1504'
-ht-degree: 90%
+source-wordcount: '1510'
+ht-degree: 89%
 ---
 # Guide d’Adobe Customer Journey Analytics {#using}
 
@@ -345,7 +345,7 @@ ht-degree: 90%
   + {hide-from-toc}[Configuration](/help/conversation-insights/conversation-insights-configure.md)
   + {hide-from-toc}[Gérer](/help/conversation-insights/conversation-insights-manage.md)
   + {hide-from-toc}[Implémenter](/help/conversation-insights/conversation-insights-implement.md)
-  + {hide-from-toc}[&#x200B; Analyser &#x200B;](/help/conversation-insights/conversation-insights-analyze.md)
+  + {hide-from-toc}[ Analyser ](/help/conversation-insights/conversation-insights-analyze.md)
 
 
 + Composants {#cja-components}
@@ -529,6 +529,7 @@ ht-degree: 90%
   + Ingestion de données {#data-ingestion}
     + [Ingérer et utiliser des données de Marketo Engage](../use-cases/data-ingestion/marketo.md)
     + [Ingérer et utiliser des audiences Experience Platform](../use-cases/data-ingestion/ingest-aep-segments.md)
+    + {hide-from-toc}[Ingérer et utiliser des données de médias achetés](/help/use-cases/data-ingestion/paid-media.md)
   + Vues des données {#data-views}
     + [Cas dʼutilisation des vues de données](/help/use-cases/data-views/data-views-usecases.md)
     + [Utiliser des dimensions et des mesures de liaison](/help/use-cases/data-views/binding-dimensions-metrics.md)
@@ -571,7 +572,7 @@ ht-degree: 90%
       + [Lier des lectures de session](/help/use-cases/third-party/quantum-metric/tie-session-replays.md)
       + [Utiliser des cartes thermiques](/help/use-cases/third-party/quantum-metric/heatmap.md)
       + [Ajouter des événements de friction](/help/use-cases/third-party/quantum-metric/friction-events.md)
-      + {hide-from-toc}[Connecteur &#x200B;](/help/use-cases/third-party/quantum-metric/source-connector.md)
+      + {hide-from-toc}[Connecteur ](/help/use-cases/third-party/quantum-metric/source-connector.md)
 
 + Labs {#labs}
   + [Guide d’utilisation de Labs](../labs/labs.md)
