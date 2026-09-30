@@ -8,21 +8,26 @@ autotag-review: '2026-05-19T08:32:13.517Z'
 TQID: 'https://experienceleague.adobe.com/xXpUD-E71BVVe0WOQ-tbLILq1c5kRN-Jy2xHufxBfBk'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
 subfeature_v2:
   - id: ddf59f64-0e46-4986-a525-056acc143c70
+    internal-label: Workspace visualizations
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Customer journeys
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 626
+source-wordcount: '626'
 ht-degree: 92%
-
 ---
-
 # Combo {#combo}
 
 <!-- markdownlint-disable MD034 -->
@@ -37,9 +42,9 @@ ht-degree: 92%
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente la visualisation Combo dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._
+_Cet article présente la visualisation Combo dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._
 
-_Consultez [Combo](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/combo-charts) pour la_ version ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** de cet article._
+_Consultez [Combo](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/combo-charts) pour la_ version ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 
@@ -80,9 +85,9 @@ Gardez les éléments suivants à l’esprit :
 
    La sortie ressemble à ce qui suit :
 
-   ![Graphique combo affichant la période en cours dans un graphique en barres et la période de comparaison dans le graphique en courbes &#x200B;](assets/combo-output.png)
+   ![Graphique combo affichant la période en cours dans un graphique en barres et la période de comparaison dans le graphique en courbes ](assets/combo-output.png)
 
-   La période en cours s’affiche dans le graphique en barres. Le graphique en courbes représente la période de comparaison. Les points sur le graphique en courbes sont appelés *haltères*.
+   La période en cours s’affiche dans le graphique en barres. Le graphique linéaire représente la période de comparaison. Les points sur le graphique en courbes sont appelés *haltères*.
 
 ## Fonctions prises en charge
 
@@ -94,9 +99,9 @@ Si vous choisissez la **[!UICONTROL Fonction]** comme [!UICONTROL type de compar
 | **[!UICONTROL Moyenne cumulée]** | Renvoie la moyenne des N dernières lignes. |
 | **[!UICONTROL Médiane]** | Renvoie la médiane pour une mesure dans une colonne. La médiane est le nombre qui se situe au milieu d’un ensemble de nombres. En d’autres termes, la moitié des nombres ont des valeurs supérieures ou égales à la médiane, et l’autre moitié ont des valeurs inférieures ou égales à la médiane. |
 | **[!UICONTROL Cumulé]** | Somme cumulée de N lignes. |
-| **[!UICONTROL Max. colonne]** | Renvoie la valeur la plus grande d’un ensemble d’éléments de dimension pour une colonne de mesures. |
+| **[!UICONTROL Max. colonne]** | Renvoie la valeur la plus grande d’un ensemble d’éléments de dimension pour une colonne de mesure. |
 | **[!UICONTROL Moyenne]** | Renvoie la moyenne arithmétique, ou moyenne, pour une mesure. |
-| **[!UICONTROL Min. colonne]** | Renvoie la valeur la plus petite d’un ensemble d’éléments de dimension pour une colonne de mesures. |
+| **[!UICONTROL Min. colonne]** | Renvoie la valeur la plus petite d’un ensemble d’éléments de dimension pour une colonne de mesure. |
 
 {style="table-layout:auto"}
 

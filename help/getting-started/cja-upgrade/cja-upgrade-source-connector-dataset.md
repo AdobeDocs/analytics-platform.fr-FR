@@ -9,25 +9,34 @@ autotag-review: '2026-05-19T08:17:07.805Z'
 TQID: 'https://experienceleague.adobe.com/ZApVB2SBLls5HAfUSb32CZ6-jers0cVaQjCXX9ThODo'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
+    internal-label: Upgrade
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Data management
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 905
+source-wordcount: '905'
 ht-degree: 93%
-
 ---
-
 # Ajouter le jeu de données du connecteur source Analytics à la connexion {#upgrade-source-connector-dataset}
 
 <!-- markdownlint-disable MD034 -->
@@ -63,9 +72,9 @@ Pour utiliser le connecteur source Analytics afin d’importer des données hist
 
 Après avoir [créé un connecteur source Analytics pour les données historiques](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md), un jeu de données est automatiquement créé pour les données Analytics.
 
-Vous devez ajouter ce jeu de données créé automatiquement à la même connexion que celle que vous avez créée pour votre implémentation de SDK web. Les données Analytics sont ainsi intégrées dans la même vue de données dans Customer Journey Analytics que les données de votre SDK web.
+Vous devez ajouter ce jeu de données créé automatiquement à la même connexion que celle que vous avez créée pour votre mise en œuvre du SDK web. Les données Analytics sont ainsi intégrées dans la même vue de données dans Customer Journey Analytics que les données de votre SDK web.
 
-Pour ajouter le jeu de données créé automatiquement à la même connexion que celle que vous avez créée pour votre implémentation de SDK web, procédez comme suit :
+Pour ajouter le jeu de données créé automatiquement à la même connexion que celle que vous avez créée pour votre mise en œuvre du SDK web, procédez comme suit :
 
 1. Dans Customer Journey Analytics, sélectionnez **[!UICONTROL Connexions]**, éventuellement à partir de **[!UICONTROL Gestion des données]**, dans le menu supérieur.
 
@@ -79,7 +88,7 @@ Pour ajouter le jeu de données créé automatiquement à la même connexion que
 
    ![Modifier la connexion](assets/connection-add-dateset2.png)
 
-1. Faites défiler l’écran jusqu’au jeu de données automatiquement créé lors de la création du connecteur source Analytics ou recherchez-le.
+1. Faites défiler la liste jusqu’au jeu de données créé automatiquement lors de la création du connecteur source Analytics ou recherchez ce jeu de données.
 
    Le nom de ce jeu de données est le nom de votre suite de rapports, suivi de `midValues`. Par exemple : `My report suite midValues`
 
@@ -93,16 +102,16 @@ Pour ajouter le jeu de données créé automatiquement à la même connexion que
 
    | Paramètre | Description |
    | --- | --- |
-   | **[!UICONTROL ID de personne]** | Disponible uniquement pour les jeux de données d’événement et de profil. Sélectionnez un ID de personne dans le menu déroulant des identités disponibles. Ces identités ont été définies dans le schéma du jeu de données d’Experience Platform. Pour plus d’informations sur l’utilisation de la carte des identités en tant qu’ID de personne, reportez-vous à la section ci-dessous.<p>Si aucun ID de personne n’est disponible, cela signifie qu’un ou plusieurs ID de personne n’ont pas été définis dans le schéma. Voir [Définir des champs d’identité dans l’interface utilisateur](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/ui/fields/identity) pour plus d’informations. <p>La valeur de l’ID de personne sélectionné est considérée comme sensible à la casse. Par exemple : `abc123` et `ABC123` sont deux valeurs différentes. |
-   | **[!UICONTROL Date et heure]** | Pour les jeux de données d’événements uniquement, ce paramètre est automatiquement défini sur le champ d’horodatage par défaut des schémas basés sur un événement dans Experience Platform. |
-   | **[!UICONTROL Fuseau horaire]** | Disponible uniquement pour les données de résumé. Sélectionnez le fuseau horaire approprié pour les données de résumé de série temporelle. |
+   | **[!UICONTROL ID de personne]** | Disponible uniquement pour les jeux de données d’événement et de profil. Sélectionnez un ID de personne dans le menu déroulant des identités disponibles. Ces identités ont été définies dans le schéma du jeu de données d’Experience Platform. Pour plus d’informations sur l’utilisation du mappage d’identité en tant qu’ID de personne, reportez-vous à la section ci-dessous.<p>Si aucun ID de personne n’est disponible, cela signifie qu’un ou plusieurs ID de personne n’ont pas été définis dans le schéma. Voir [Définir des champs d’identité dans l’interface utilisateur](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/ui/fields/identity) pour plus d’informations. <p>La valeur de l’ID de personne sélectionné est considérée comme sensible à la casse. Par exemple : `abc123` et `ABC123` sont deux valeurs différentes. |
+   | **[!UICONTROL Date et heure]** | Pour les jeux de données d’événement et de résumé uniquement, ce paramètre est automatiquement défini sur le champ de date et heure par défaut des schémas basés sur un événement dans Experience Platform. |
+   | **[!UICONTROL Fuseau horaire]** | Disponible uniquement pour les données de résumé. Sélectionnez le fuseau horaire approprié pour les données de synthèse de série temporelle. |
    | **[!UICONTROL Type de source de données]** | Sélectionnez un type de source de données. <br/>Les types de sources de données incluent les éléments suivants : <ul><li>[!UICONTROL Données web]</li><li>[!UICONTROL Données d’application mobile]</li><li>[!UICONTROL Données de point de vente]</li><li>[!UICONTROL Données CRM]</li><li>[!UICONTROL Données de l’enquête]</li><li>[!UICONTROL Données du centre d’appels]</li><li>[!UICONTROL Données du produit]</li><li> [!UICONTROL Données des comptes]</li><li> [!UICONTROL Données de transaction]</li><li>[!UICONTROL Données de commentaires client]</li><li> [!UICONTROL Autre]</li></ul>Ce champ est utilisé pour interroger les types de sources de données en cours d’utilisation. |
 
    {style="table-layout:auto"}
 
 1. Dans la section **[!UICONTROL Importer de nouvelles données]**, laissez l’option **[!UICONTROL Importer toutes les nouvelles données]** désactivée.
 
-   Comme vous utilisez le jeu de données du connecteur source Analytics pour les données historiques, vous ne souhaitez pas importer les données futures collectées dans ce jeu de données.
+   Étant donné que vous utilisez le jeu de données du connecteur source Analytics pour les données historiques, vous ne souhaitez pas y importer les données qui seront collectées à l’avenir.
 
 1. Dans la section **[!UICONTROL Renvoi du jeu de données]**, sélectionnez **[!UICONTROL Demander un renvoi]**.
 
@@ -110,7 +119,7 @@ Pour ajouter le jeu de données créé automatiquement à la même connexion que
 
    Soyez explicite lors de la spécification des dates de renvoi que vous demandez. Selon plusieurs facteurs, vous pouvez effectuer l’une des opérations suivantes :
 
-   * Choisissez une date de fin identique à celle de votre première collecte de données avec votre implémentation de SDK web.
+   * Choisissez comme date de fin la date à laquelle vous avez commencé à collecter des données avec votre mise en œuvre du SDK web.
 
    * Sélectionnez une date de fin peu après la date à laquelle vous avez commencé à collecter les données avec votre implémentation de Web SDK, puis utilisez les segments de vue de données pour segmenter les données qui se chevauchent.
 
@@ -126,6 +135,6 @@ Pour ajouter le jeu de données créé automatiquement à la même connexion que
 
 1. (Le cas échéant) Si vous utilisez des jeux de données de recherche, vous devez créer le jeu de données de recherche et l’ajouter à votre connexion. Pour plus d’informations, consultez [Créer des jeux données de recherche pour classifier des données dans Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md).
 
-   Cela n’est nécessaire que si vous ne l’avez pas déjà fait lors de la configuration de votre implémentation de SDK web.
+   Cette opération n’est nécessaire que si vous ne l’avez pas déjà effectuée lors de la configuration de votre mise en œuvre du SDK web
 
 {{upgrade-final-step}}

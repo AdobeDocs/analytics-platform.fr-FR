@@ -5,28 +5,39 @@ solution: Customer Journey Analytics
 feature: Basics
 role: Admin
 exl-id: 17f72954-085c-46a8-bc28-6af0a4eb159a
-TQID: https://experienceleague.adobe.com/DhV4VNrG4WR1iQP9VqjvV16iEpfShbBir7N1JfeRbCM
+TQID: 'https://experienceleague.adobe.com/DhV4VNrG4WR1iQP9VqjvV16iEpfShbBir7N1JfeRbCM'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: c38ed341-fab2-46df-9d72-88d8166edebb
+    internal-label: Workspace projects
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 2b0204c229a7d53c0a497fe448c165acf84536ad
+    internal-label: Data management
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 2375
+source-wordcount: '2375'
 ht-degree: 15%
-
 ---
-
 # Mettre en miroir et utiliser des données relationnelles
 
 Ce guide de démarrage rapide explique comment utiliser [Experience Platform Data Mirror for Customer Journey Analytics](data-mirror.md) pour mettre en miroir des données relationnelles à partir d’une solution native d’entrepôt de données dans Adobe Experience Platform. Utilisez ensuite ces données dans Customer Journey Analytics.
@@ -135,7 +146,7 @@ Les données du tableau dans votre solution native d’entrepôt de données son
 
 Pour refléter les données dans Experience Platform, vous devez d’abord définir le schéma des données. Toutes les données que vous souhaitez mettre en miroir dans Experience Platform et qui utilisent Experience Platform Data Mirror for Customer Journey Analytics doivent être conformes à un schéma relationnel.
 
-Définissez un schéma qui modélise ces données. Configurer le schéma :
+Définissez un schéma qui modélise ces données. Pour définir votre schéma :
 
 1. Dans le rail de gauche de l’interface utilisateur de Adobe Experience Platform, sélectionnez **[!UICONTROL Schémas]** sous **[!UICONTROL Gestion des données]**.
 
@@ -187,22 +198,22 @@ Définissez un schéma qui modélise ces données. Configurer le schéma :
 
      Dans un scénario réel, vous pouvez utiliser un champ plus approprié comme [descripteur de version](aep.md#schema). Par exemple, un champ qui effectue le suivi d’une heure de dernière modification.
 
-   * Le champ **[!UICONTROL personid]** est configuré, avec **[!UICONTROL timestamp]** comme clé de Principal **&#x200B;**. Sélectionnez ![Ajouter](/help/assets/icons/Add.svg) **[!UICONTROL Créer une clé primaire composite]** pour créer une clé composite.
+   * Le champ **[!UICONTROL personid]** est configuré, avec **[!UICONTROL timestamp]** comme clé de Principal ****. Sélectionnez ![Ajouter](/help/assets/icons/Add.svg) **[!UICONTROL Créer une clé primaire composite]** pour créer une clé composite.
 
-     ![&#x200B; Clé composite &#x200B;](assets/platform-schema-compositekey.png)
+     ![ Clé composite ](assets/platform-schema-compositekey.png)
 
      Le champ **[!UICONTROL personid]** est également configuré en tant qu’**[!UICONTROL Identité]**, avec **[!UICONTROL CRMID]** comme **[!UICONTROL Espace de noms d’identité]**.
 
      ![Descripteur de personne](assets/platform-schema-personid.png)
 
-     Le champ **[!UICONTROL personid]** n’a pas besoin d’être la clé de Principal **&#x200B;**. Dans un scénario réel, vous disposez probablement d’un champ différent pour effectuer le suivi de la clé primaire, distinct de l’**[!UICONTROL personid]**.
+     Le champ **[!UICONTROL personid]** n’a pas besoin d’être la clé de Principal ****. Dans un scénario réel, vous disposez probablement d’un champ différent pour effectuer le suivi de la clé primaire, distinct de l’**[!UICONTROL personid]**.
 
-   * Le champ **[!UICONTROL timestamp]** est configuré, ainsi que le champ **[!UICONTROL personid]** comme clé de Principal **&#x200B;**. Le champ **[!UICONTROL horodatage]** est également configuré en tant que **[!UICONTROL descripteur d’horodatage]**. Il vous suffit de définir un champ en tant que **[!UICONTROL descripteur d’horodatage]** pour les données relationnelles de série temporelle.
+   * Le champ **[!UICONTROL timestamp]** est configuré, ainsi que le champ **[!UICONTROL personid]** comme clé de Principal ****. Le champ **[!UICONTROL horodatage]** est également configuré en tant que **[!UICONTROL descripteur d’horodatage]**. Il vous suffit de définir un champ en tant que **[!UICONTROL descripteur d’horodatage]** pour les données relationnelles de série temporelle.
 
      ![Descripteur d’horodatage](assets/platform-schema-timestamp.png)
 
 
-   Si vous avez correctement défini la clé de Principal **&#x200B;**, le descripteur de version **&#x200B;**&#x200B;et le descripteur d’horodatage **&#x200B;**, l’avertissement au-dessus de la définition du schéma disparaît.
+   Si vous avez correctement défini la clé de Principal ****, le descripteur de version **** et le descripteur d’horodatage ****, l’avertissement au-dessus de la définition du schéma disparaît.
 
 1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer le schéma.
 
@@ -237,7 +248,7 @@ L’assistant d’ajout de données vous guide tout au long des étapes suivante
 
   1. Sélectionnez **[!UICONTROL Suivant]**.
 
-  Consultez la documentation d’Experience Platform pour plus d’informations sur la connexion et l’authentification lorsque vous utilisez le connecteur [Azure Databricks](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/databases/databricks) ou [Snowflake](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/databases/snowflake).
+  Consultez la documentation d’Experience Platform pour plus d’informations sur la connexion et l’authentification lorsque vous utilisez le connecteur [Azure Databricks](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks) ou [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake).
 
 
 ### Sélectionner les données
@@ -395,7 +406,7 @@ Consultez [Présentation des vues de données](../data-views/data-views.md) pour
 
 ## Configurer un projet
 
-Analysis Workspace est un outil de navigateur flexible qui vous permet de créer rapidement des analyses et de partager des informations basées sur vos données. Les projets Espace de travail vous permettent de combiner des composants de données, des tableaux et des visualisations afin d’élaborer une analyse et de la partager avec tous les membres de l’entreprise.
+Analysis Workspace est un outil de navigateur flexible qui vous permet de créer rapidement des analyses et de partager des informations basées sur vos données. Les projets Workspace vous permettent de combiner des composants de données, des tableaux et des visualisations afin d’élaborer une analyse et de la partager avec tous les membres de l’entreprise.
 
 Créer un projet :
 

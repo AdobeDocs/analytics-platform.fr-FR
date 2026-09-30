@@ -4,30 +4,41 @@ title: Présentation Des Panneaux Dans Analysis Workspace
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-TQID: https://experienceleague.adobe.com/4UiJUXEOGW3paTCi293AADuY1VYiu2egk0A4Oyv5uD8
+TQID: 'https://experienceleague.adobe.com/4UiJUXEOGW3paTCi293AADuY1VYiu2egk0A4Oyv5uD8'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: e634a07b-b7ca-4af3-a124-3024ce559e17
+    internal-label: Workspace panels
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Insights
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 2809
+source-wordcount: '2812'
 ht-degree: 41%
-
 ---
-
 # Vue d’ensemble des panneaux {#panels-overview}
 
 Un [!UICONTROL panneau] est un ensemble de tableaux et de visualisations. Vous pouvez accéder aux panneaux à partir de l’icône située en haut à gauche dans Workspace ou à partir d’un [panneau vierge](/help/analysis-workspace/c-panels/blank-panel.md). Les panneaux sont utiles lorsque vous souhaitez organiser vos projets en fonction de périodes de temps, de vues de données ou de cas dʼutilisation dʼanalyse.
@@ -40,13 +51,13 @@ Les types de panneau suivants sont disponibles dans Analysis Workspace pour [!U
 | --- | --- |
 | [Panneau vierge](/help/analysis-workspace/c-panels/blank-panel.md) | Faites votre choix parmi les panneaux et visualisations disponibles pour démarrer votre analyse. |
 | [Attribution](attribution.md) | Comparez et visualisez rapidement de nombreux modèles d’attribution en utilisant n’importe quelle dimension ou mesure de conversion. |
-| [Expérimentation](experimentation.md) | Comparez différentes expériences utilisateur, variantes de marketing ou de messagerie pour déterminer le meilleur moyen d’obtenir un résultat spécifique. |
+| [Expérimentation](experimentation.md) | Comparez différentes expériences utilisateur, variantes de marketing ou de messages pour déterminer le meilleur moyen d’obtenir un résultat spécifique. |
 | [Tableau à structure libre](freeform-panel.md) | Effectuez des comparaisons et des répartitions illimitées, puis ajoutez des visualisations pour raconter une histoire riche en données. |
 | [Audience moyenne par minute de média](average-minute-audience-panel.md) | Analysez l’audience moyenne par minute pour un élément spécifique de contenu ou au cours d’une période personnalisée. |
-| [Visionneuses simultanées de médias &#x200B;](media-concurrent-viewers.md) | Analysez les visionneuses au fil du temps, avec des informations sur la simultanéité la plus élevée, et sur la capacité à ventiler et à comparer. |
+| [Visionneuses simultanées de médias ](media-concurrent-viewers.md) | Analysez le nombre de spectateurs simultanés au fil du temps, avec des informations sur les pics de simultanéité et la possibilité de les répartir et les comparer. |
 | [Temps de lecture du média](/help/analysis-workspace/c-panels/media-playback-time-spent.md) | Analysez le temps de lecture pour déterminer où se produit le pic d’accès simultanés ou où des abandons ont lieu. |
 | [Élément suivant ou précédent](next-previous.md) | Affiche les pages visitées suivantes ou précédentes. |
-| [Aperçu rapide](quickinsight.md) | Construisez rapidement un tableau à structure libre et une visualisation d’accompagnement afin d’analyser et de mettre en évidence les informations plus rapidement. |
+| [Aperçu rapide](quickinsight.md) | Créez rapidement un tableau à structure libre et une visualisation d’accompagnement afin d’analyser et de mettre en évidence les informations plus rapidement. |
 
 
 Les panneaux [!UICONTROL Aperçu rapide], [!UICONTROL Blank] et [!UICONTROL Tableau à stucture libre] constituent d’excellents points de départ pour votre analyse, tandis qu’[!UICONTROL Attribution] est réservé à des analyses avancées. Un ![AddCircle](/help/assets/icons/AddCircle.svg) est disponible au bas de la zone de travail. Vous pouvez donc ajouter des panneaux vierges à tout moment.
@@ -101,16 +112,16 @@ Vous pouvez gérer un panneau des façons suivantes :
 * Pour réduire un panneau, sélectionnez ![ChevronDown](/help/assets/icons/ChevronDown.svg).
 * Pour afficher un panneau réduit, sélectionnez ![ChevronLeft](/help/assets/icons/ChevronLeft.svg).
 * Pour supprimer un panneau, sélectionnez ![CrossSize400](/help/assets/icons/CrossSize200.svg). Pour annuler, sélectionnez **[!UICONTROL Modifier]** > **[!UICONTROL Annuler]** (**[!UICONTROL *cmd+z *]**|**[!UICONTROL * ctrl+z *]**).
-* Pour déplacer un panneau, faites-le glisser et déposez-le chaque fois qu’un ![&#x200B; Déplacer &#x200B;](/help/assets/icons/Move.svg) est visible (généralement lorsque vous passez la souris sur l’en-tête).
+* Pour déplacer un panneau, faites-le glisser et déposez-le chaque fois qu’un ![ Déplacer ](/help/assets/icons/Move.svg) est visible (généralement lorsque vous passez la souris sur l’en-tête).
 
 
 ## Vue de données
 
-Chaque panneau est associé à une [vue de données](/help/data-views/data-views.md). Vous pouvez identifier le ![Data](/help/assets/icons/Data.svg) **[!UICONTROL *nom de la vue de données *]**&#x200B;dans le menu déroulant en haut à droite du panneau.
+Chaque panneau est associé à une [vue de données](/help/data-views/data-views.md). Vous pouvez identifier le ![Data](/help/assets/icons/Data.svg) **[!UICONTROL *nom de la vue de données *]**dans le menu déroulant en haut à droite du panneau.
 
 Lorsque vous créez un projet Workspace vierge, la vue de données par défaut du panneau initial correspond à la dernière vue de données avec laquelle vous avez travaillé dans Customer Journey Analytics.
 
-Lorsque vous créez un panneau, la vue de données par défaut est basée sur la vue de données du panneau sur lequel vous avez travaillé pour la dernière fois dans le projet Workspace.
+Lorsque vous créez un nouveau panneau, la vue de données par défaut est basée sur la vue de données du panneau sur lequel vous avez travaillé en dernier dans le projet Workspace.
 
 >[!IMPORTANT]
 >
@@ -119,13 +130,13 @@ Lorsque vous créez un panneau, la vue de données par défaut est basée sur la
 >
 >Lorsque vous changez la vue de données d’un panneau, certains composants peuvent ne pas être disponibles dans la nouvelle vue de données. Cette modification peut empêcher votre visualisation de s’afficher correctement. Des avertissements peuvent s’afficher, par exemple :
 >
->* Ce panneau contient des composants qui ne sont pas activés dans la vue de données sélectionnée. Changez de vue de données ou activez les composants requis dans la vue de données.
+>* Ce panneau contient des composants qui ne sont pas activés dans la vue de données sélectionnée. Modifiez la vue de données ou activez les composants requis dans la vue de données.
 >* Impossible d’afficher la visualisation : vérifiez vos colonnes et lignes pour vous assurer qu’elles contiennent des composants valides.
 >
 
 ## Calendrier
 
-Le calendrier de panneau contrôle la période des rapports des tableaux et des visualisations dans un panneau.
+Le calendrier de panneau contrôle la période de reporting (période) des tableaux et des visualisations dans un panneau.
 
 >[!NOTE]
 >
@@ -140,7 +151,7 @@ Vous pouvez également sélectionner un **[!UICONTROL paramètre prédéfini]** 
 
 1. Vous pouvez également sélectionner **[!UICONTROL Afficher les paramètres avancés]** pour :
 
-   * Spécifier une **[!UICONTROL heure de départ]** et une **[!UICONTROL heure de fin]** différentes de celles par défaut, à savoir `12:00 AM` (`0:00`) et `11:59 PM` (`23:59`). Les heures de fin comprennent toujours 59 secondes. Pour une période qui s’étend sur plusieurs jours, l’heure de début s’applique au premier jour de la période et l’heure de fin s’applique au dernier jour de la période. Utilisez **[!UICONTROL (Réinitialiser les heures)]** pour réinitialiser les heures de début et de fin à leurs valeurs par défaut.
+   * Spécifier une **[!UICONTROL heure de départ]** et une **[!UICONTROL heure de fin]** différentes de celles par défaut, à savoir `12:00 AM` (`0:00`) et `11:59 PM` (`23:59`). Les heures de fin comprennent toujours 59 secondes. Pour une période couvrant plusieurs jours, l’heure de début s’applique au premier jour de la période et l’heure de fin au dernier jour. Utilisez **[!UICONTROL (Réinitialiser les heures)]** pour réinitialiser les heures de début et de fin à leurs valeurs par défaut.
    * **[!UICONTROL Faire correspondre les composants de la période au calendrier du panneau]**. Si cette option est désactivée, les composants de période utilisés dans le panneau sont relatifs à l’heure actuelle. Si cette option est activée, les composants de période utilisés dans le panneau sont relatifs au calendrier du panneau.
    * **[!UICONTROL Utilisation de dates glissantes]**. Si cette option est activée, les périodes prédéfinies telles que **[!UICONTROL 7 derniers jours complets]** se mettent dynamiquement à jour en fonction de l’évolution de la date et de l’heure actuelles. Si cette option est désactivée, ces paramètres prédéfinis ne sont pas mis à jour une fois appliqués.
 
@@ -148,12 +159,12 @@ Vous pouvez également sélectionner un **[!UICONTROL paramètre prédéfini]** 
 
      Vous pouvez sélectionner le texte entre crochets (par exemple, **[!UICONTROL début fixe - roulement quotidien]**) pour étendre le panneau et spécifier des détails pour **[!UICONTROL Début]** et **[!UICONTROL Fin]**.
 
-      1. Sélectionnez **[!UICONTROL Début de]**, **[!UICONTROL Fin de]** ou **[!UICONTROL Jour fixe]**.
-      1. Lorsque vous avez sélectionné **[!UICONTROL Début de]** ou **[!UICONTROL Fin de]**, vous pouvez créer une expression complète. Par exemple : **[!UICONTROL Fin de]** **[!UICONTROL l’année en cours]** **[!UICONTROL plus]** `1` **[!UICONTROL jour]**. Sélectionnez la valeur appropriée pour chaque partie de l’expression.
-         * Sélectionnez une valeur pour la période actuelle. Par exemple, **[!UICONTROL année en cours]**.
-         * Sélectionnez une valeur pour le calcul supplémentaire. Par exemple, **[!UICONTROL plus]**.
-         * Lorsque vous avez spécifié un calcul supplémentaire, indiquez une valeur. Par exemple : `1`.
-         * Lorsque vous avez spécifié un calcul supplémentaire, sélectionnez la période à utiliser pour le calcul. Par exemple, **[!UICONTROL day]**.
+     1. Sélectionnez **[!UICONTROL Début de]**, **[!UICONTROL Fin de]** ou **[!UICONTROL Jour fixe]**.
+     1. Lorsque vous avez sélectionné **[!UICONTROL Début de]** ou **[!UICONTROL Fin de]**, vous pouvez créer une expression complète. Par exemple : **[!UICONTROL Fin de]** **[!UICONTROL l’année en cours]** **[!UICONTROL plus]** `1` **[!UICONTROL jour]**. Sélectionnez la valeur appropriée pour chaque partie de l’expression.
+        * Sélectionnez une valeur pour la période actuelle. Par exemple, **[!UICONTROL année en cours]**.
+        * Sélectionnez une valeur pour le calcul supplémentaire. Par exemple, **[!UICONTROL plus]**.
+        * Lorsque vous avez spécifié un calcul supplémentaire, indiquez une valeur. Par exemple : `1`.
+        * Lorsque vous avez spécifié un calcul supplémentaire, sélectionnez la période à utiliser pour le calcul. Par exemple, **[!UICONTROL day]**.
 
      Sélectionnez **[!UICONTROL Masquer les détails]** pour masquer les détails du calcul des dates glissantes.
 
@@ -184,14 +195,14 @@ Pour ajouter ou remplacer des segments ou des répartitions (rapides) :
    ![Ajouter ou remplacer dans la zone de dépôt](assets/add-or-replace-to-drop-zone.png)
 
    * Déposez la sélection pour créer les composants suivants :
-      * [Segment](#segment) pour tous les composants de segment que vous ❷.
-      * [Segment rapide](#quick-segment) pour tous les composants hors segment (périodes, mesures, dimensions, éléments de dimension) que vous ❸.
+     * [Segment](#segment) pour tous les composants de segment que vous ❷.
+     * [Segment rapide](#quick-segment) pour tous les composants hors segment (périodes, mesures, dimensions, éléments de dimension) que vous ❸.
    * Déposez la sélection **tout en maintenant la touche enfoncée** ⇧ (maj) pour créer les composants suivants :
-      * Segment statique [menu déroulant](#drop-down-menu) avec des éléments sur lesquels filtrer pour les segments sélectionnés que vous ❹.
-      * Segment statique [menu déroulant](#drop-down-menu) avec des éléments sur lesquels filtrer pour les périodes sélectionnées que vous ❺.
-      * Segment statique [menu déroulant](#drop-down-menu) avec des éléments sur lesquels filtrer les mesures sélectionnées que vous ❻.
-      * Segment statique [menu déroulant](#drop-down-menu) ou répartition [menu déroulant](#drop-down-menu) avec des éléments sur lesquels filtrer ou répartir pour la dimension sélectionnée *éléments* que vous ❼.
-      * Segment dynamique [menu déroulant](#drop-down-menu) ou répartition [menu déroulant](#drop-down-menu) avec des éléments sur lesquels filtrer ou répartir pour les dimensions sélectionnées que vous ❽.
+     * Segment statique [menu déroulant](#drop-down-menu) avec des éléments sur lesquels filtrer pour les segments sélectionnés que vous ❹.
+     * Segment statique [menu déroulant](#drop-down-menu) avec des éléments sur lesquels filtrer pour les périodes sélectionnées que vous ❺.
+     * Segment statique [menu déroulant](#drop-down-menu) avec des éléments sur lesquels filtrer les mesures sélectionnées que vous ❻.
+     * Segment statique [menu déroulant](#drop-down-menu) ou répartition [menu déroulant](#drop-down-menu) avec des éléments sur lesquels filtrer ou répartir pour la dimension sélectionnée *éléments* que vous ❼.
+     * Segment dynamique [menu déroulant](#drop-down-menu) ou répartition [menu déroulant](#drop-down-menu) avec des éléments sur lesquels filtrer ou répartir pour les dimensions sélectionnées que vous ❽.
 
 
 ### Segment
@@ -260,13 +271,13 @@ Pensez à ventiler un panneau au lieu de filtrer un panneau (à l’aide de segm
 
 * Si vous utilisez des mesures activées pour l’attribution dans votre panneau, les segments effacent souvent vos mesures activées pour l’attribution. Les répartitions sont appliquées à un autre point de la requête exécutée pour récupérer les données de votre panneau. Par conséquent, les répartitions n’effacent pas ces mesures activées pour les attributs.
 
-  Par exemple, consultez la différence entre la mesure basée sur les attributs **[!UICONTROL Chiffre d’affaires en ligne]** lors de l’utilisation d’un segment **[!UICONTROL Luma : Catégorie de produits]** ![Filtrer](/help/assets/icons/Filter.svg) **[!UICONTROL Femmes]** et d’un segment **[!UICONTROL Luma : Catégorie de produits]**![Breakdown](/help/assets/icons/Breakdown.svg)Women **&#x200B;**.
+  Par exemple, consultez la différence entre la mesure basée sur les attributs **[!UICONTROL Chiffre d’affaires en ligne]** lors de l’utilisation d’un segment **[!UICONTROL Luma : Catégorie de produits]** ![Filtrer](/help/assets/icons/Filter.svg) **[!UICONTROL Femmes]** et d’un segment **[!UICONTROL Luma : Catégorie de produits]**![Breakdown](/help/assets/icons/Breakdown.svg)Women ****.
 
   ![Mesures basées sur les attributs : filtre ou répartition](assets/attribute-filter-breakdown.png)
 
 * Si vous utilisez une dimension de niveau sous-événement dans un menu déroulant de répartition, les répartitions s’exécutent à ce niveau de sous-événement. Au lieu de cela, les segments dans un menu déroulant segments s’exécutent au niveau de l’événement.
 
-  Par exemple, consultez la différence entre la mesure **[!UICONTROL Chiffre d’affaires en ligne]** lors de l’utilisation d’un segment **[!UICONTROL Luma : Sous-catégorie de produits]** ![Filtre](/help/assets/icons/Filter.svg) **[!UICONTROL Tops]** et d’un segment **[!UICONTROL Luma : Sous-catégorie de produits]** ![Breakdown](/help/assets/icons/Breakdown.svg)Tops **&#x200B;**. La répartition exécute la requête explicitement au niveau du sous-événement, tandis que le segment exécute la requête au niveau de l’événement.
+  Par exemple, consultez la différence entre la mesure **[!UICONTROL Chiffre d’affaires en ligne]** lors de l’utilisation d’un segment **[!UICONTROL Luma : Sous-catégorie de produits]** ![Filtre](/help/assets/icons/Filter.svg) **[!UICONTROL Tops]** et d’un segment **[!UICONTROL Luma : Sous-catégorie de produits]** ![Breakdown](/help/assets/icons/Breakdown.svg)Tops ****. La répartition exécute la requête explicitement au niveau du sous-événement, tandis que le segment exécute la requête au niveau de l’événement.
 
   ![Mesures basées sur un sous-événement : filtre ou répartition](assets/sub-event-filter-breakdown.png)
 
@@ -279,12 +290,12 @@ Vous pouvez gérer les composants de la zone de dépôt comme suit :
 | Pour supprimer un segment ou un segment rapide. | Sélectionnez ![CrossSize300](/help/assets/icons/CrossSize300.svg) dans le composant. |
 | Pour supprimer un élément sélectionné d&#39;un menu déroulant. | Sélectionnez ![CrossSize100](/help/assets/icons/CrossSize100.svg) dans l’élément. |
 | Pour supprimer tous les éléments sélectionnés d&#39;un menu déroulant. | Sélectionnez ![CrossSize200](/help/assets/icons/CrossSize200.svg) dans le menu déroulant. |
-| Pour modifier le libellé d’un composant. | Pointez sur le libellé du composant et sélectionnez ![&#x200B; Modifier &#x200B;](/help/assets/icons/Edit.svg). |
+| Pour modifier le libellé d’un composant. | Pointez sur le libellé du composant et sélectionnez ![ Modifier ](/help/assets/icons/Edit.svg). |
 | Pour supprimer le libellé d’un composant. | Pointez sur le libellé du composant et sélectionnez **[!UICONTROL Supprimer le libellé]** dans le menu contextuel du composant. |
 | Pour supprimer le composant de la zone de dépôt. | Sélectionnez **[!UICONTROL Liste déroulante Supprimer]** dans le menu contextuel du composant. |
 | Pour obtenir des informations sur un segment ou un segment rapide. | Pointez sur le composant et sélectionnez ![Infos](/help/assets/icons/Info.svg) pour ouvrir le dictionnaire de données avec des informations sur le composant. |
 | Pour obtenir des informations sur le composant qui définit un menu déroulant. | Pointez dans le menu déroulant et sélectionnez ![InfoOutline](/help/assets/icons/InfoOutline.svg) pour ouvrir le dictionnaire de données avec des informations sur le composant. |
-| Pour modifier un segment rapide. | Passez la souris sur le segment rapide, puis sélectionnez ![&#x200B; Modifier &#x200B;](/help/assets/icons/Edit.svg). Voir [Segments rapides](/help/components/segments/seg-quick.md) pour plus d’informations. |
+| Pour modifier un segment rapide. | Passez la souris sur le segment rapide, puis sélectionnez ![ Modifier ](/help/assets/icons/Edit.svg). Voir [Segments rapides](/help/components/segments/seg-quick.md) pour plus d’informations. |
 | Pour exiger une sélection pour un menu déroulant. | Sélectionnez **[!UICONTROL Exiger une sélection]** dans le menu contextuel du composant. |
 | Pour n’autoriser aucun filtre pour un menu déroulant. | Sélectionnez **[!UICONTROL N’autoriser aucun filtre]** dans le menu contextuel du composant. |
 | Pour réinitialiser tous les composants et effacer toutes les sélections pour les menus déroulants | Sélectionnez **[!UICONTROL Réinitialiser tout]**. |
@@ -293,7 +304,7 @@ Vous pouvez gérer les composants de la zone de dépôt comme suit :
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Utilisation de filtres dans Analysis Workspace](https://experienceleague.adobe.com/fr/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Utilisation de filtres dans Analysis Workspace](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 
@@ -301,14 +312,14 @@ Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Utilisation de 
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Filtres déroulants dynamiques](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/tips-and-tricks/dynamic-drop-downs){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Filtres déroulants dynamiques](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/tips-and-tricks/dynamic-drop-downs){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 
 
 ## Menu contextuel
 
-Pour accéder aux fonctionnalités supplémentaires d’un panneau, faites un clic droit sur l’en-tête du panneau pour accéder au menu contextuel.
+Des fonctionnalités supplémentaires pour un panneau sont disponibles via le menu contextuel (clic droit) de l’en-tête du panneau.
 
 ![Options de clic droit pour un en-tête de panneau.](assets/right-click-menu.png)
 
@@ -316,7 +327,7 @@ Les options disponibles sont les suivantes :
 
 | Option | Description |
 | --- | --- |
-| **[!UICONTROL Insérer le panneau copié]** | Vous permet de coller la copie d’un panneau ou d’une visualisation dans un autre emplacement au sein du projet, ou dans un autre projet. |
+| **[!UICONTROL Insérer le panneau copié]** | Vous permet de coller la copie d’un panneau dans un autre emplacement au sein du projet, ou dans un autre projet. |
 | **[!UICONTROL Insérer une visualisation copiée]** | Permet de coller la copie d’une visualisation dans un autre emplacement au sein du panneau, du projet, ou dans un autre projet. |
 | **[!UICONTROL Appliquer la vue Données à tous les panneaux]** | Applique la vue de données de ce panneau à tous les autres panneaux du projet. |
 | **[!UICONTROL Copier le panneau]** | Copie un panneau pour vous permettre de l’insérer dans un autre emplacement au sein du projet, ou dans un autre projet. |
@@ -325,7 +336,7 @@ Les options disponibles sont les suivantes :
 | **[!UICONTROL Développer tous les panneaux]** | Développe tous les panneaux du projet. |
 | **[!UICONTROL Réduire toutes les visualisations dans le panneau]** | Réduit toutes les visualisations dans le panneau actif. |
 | **[!UICONTROL Développer toutes les visualisations dans le panneau]** | Développe toutes les visualisations du panneau actif. |
-| **[!UICONTROL Modifier la description]** | Ajouter (ou modifier) une description textuelle du panneau. |
+| **[!UICONTROL Modifier la description]** | Ajoutez (ou retouchez) une description textuelle du panneau. |
 | **[!UICONTROL Obtenir un lien vers le panneau]** | Dirige un utilisateur ou une utilisatrice vers un panneau spécifique dans un projet. Lorsque le lien est sélectionné, la personne destinataire doit se connecter avant d’être dirigée vers le panneau lié. |
 
 ## Configuration

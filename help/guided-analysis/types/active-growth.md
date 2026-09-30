@@ -5,27 +5,39 @@ exl-id: 53ef7485-9cae-4663-bf61-4eb77c126830
 feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 role: User
-TQID: https://experienceleague.adobe.com/7rr5h-ymKCpMy6MJB9TEPG6POFyMlVlPRF7TC7Uryoc
+TQID: 'https://experienceleague.adobe.com/7rr5h-ymKCpMy6MJB9TEPG6POFyMlVlPRF7TC7Uryoc'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
+  - id: d494f34f-674c-496a-a400-b33552b95463
+    internal-label: Adobe Product Analytics
+  - id: bfa38d8a-4e93-4fd8-8cd8-e72c589e3af8
+    internal-label: Guided analysis
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+    internal-label: Measurement
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 7f8ab656c7dbf508b2a78fd2022592faf883c56e
+    internal-label: Insights
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 692
+source-wordcount: '692'
 ht-degree: 92%
-
 ---
-
 # Analyse de la [!UICONTROL croissance active] {#active-growth}
 
 >[!CONTEXTUALHELP]
@@ -44,7 +56,7 @@ L’analyse ![PeopleGroup](/help/assets/icons/PeopleGroup.svg) **[!UICONTROL Cro
 
 Tous les utilisateurs et utilisatrices actifs (nouveaux + conservés + récurrents) apparaissent en teinte turquoise au-dessus de l’axe horizontal, tandis que tous les utilisateurs et utilisatrices inactifs apparaissent en orange au-dessous de l’axe horizontal.
 
->[!VIDEO](https://video.tv.adobe.com/v/3423393/?captions=fre_fr&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3421667/?quality=12&learn=on)
 
 ## Cas d’utilisation
 
@@ -52,7 +64,7 @@ Les cas d’utilisation de cette analyse sont les suivants :
 
 * **Rétention et attrition des utilisateurs et utilisatrices :** permet de visualiser clairement les périodes de rétention élevée ou faible des utilisateurs et utilisatrices. Reconnaître ces périodes de rétention élevée ou faible peut vous aider à prendre des décisions concernant le produit afin d’encourager une rétention élevée ou de minimiser le taux d’attrition de clientèle.
 * **Évaluation de la campagne** : l’affichage d’une campagne spécifique peut vous aider à comprendre le volume de trafic généré et à déterminer dans quelle mesure elle a permis aux utilisateurs et utilisatrices de rester engagés.
-* **Analyse du cycle de vie des utilisateurs et utilisatrices** : l’analyse de la croissance des utilisateurs et utilisatrices actifs tout au long de leur cycle de vie peut aider à identifier les étapes spécifiques où l’engagement des utilisateurs et utilisatrices diminue. Par exemple, s’il existe un taux élevé d’utilisateurs et utilisatrices inactifs pour les personnes en phase d’intégration, cela peut indiquer des problèmes d’utilisation ou un besoin de meilleurs conseils intégrés au produit.
+* **Analyse du cycle de vie des utilisateurs et utilisatrices** : l’analyse de la croissance des utilisateurs et utilisatrices actifs tout au long de leur cycle de vie peut aider à identifier les étapes spécifiques où l’engagement des utilisateurs et utilisatrices diminue. Par exemple, un taux élevé d’utilisateurs inactifs parmi les personnes se trouvant dans une phase d’intégration peut révéler des problèmes d’utilisabilité ou la nécessité d’améliorer les conseils intégrés au produit.
 
 ## Interface
 
@@ -63,8 +75,8 @@ Consultez [Interface](../overview.md#interface) pour une vue d’ensemble de l�
 Le rail de requête vous permet de configurer les composants suivants :
 
 * **[!UICONTROL Vue]** : basculez entre cette analyse et [Croissance nette](net-growth.md).
-* **[!UICONTROL Événements]** : événements que vous souhaitez mesurer. Cette analyse étant basée sur les personnes, une personne qui interagit avec l’événement une fois au cours de la période est comptabilisée comme étant active. Vous pouvez inclure un événement dans une requête.
-* **[!UICONTROL Compté comme]** : méthode de comptage à appliquer aux événements sélectionnés. <ul><li>**[!UICONTROL Options]** inclure [!UICONTROL Nombre d’utilisateurs] et [!UICONTROL Pourcentage d’utilisateurs].</li><li>{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} Des options **[!UICONTROL B2B supplémentaires]** sont disponibles pour Customer Journey Analytics B2B edition : [!UICONTROL Comptes globaux], [!UICONTROL Comptes], [!UICONTROL Groupes d’achat], [!UICONTROL Opportunités], [!UICONTROL Pourcentage des comptes globaux], [!UICONTROL Pourcentage des comptes], [!UICONTROL Pourcentage des groupes d’achat] et [!UICONTROL Pourcentage des opportunités].</li></ul>
+* **[!UICONTROL Événements]** : événements que vous souhaitez mesurer. Cette analyse étant basée sur les utilisateurs, un utilisateur qui interagit une fois avec l’événement au cours de la période est comptabilisé comme utilisateur actif. Vous pouvez inclure un événement dans une requête.
+* **[!UICONTROL Compté comme]** : méthode de comptage à appliquer aux événements sélectionnés. <ul><li>**[!UICONTROL Options]** inclure [!UICONTROL Nombre d’utilisateurs] et [!UICONTROL Pourcentage d’utilisateurs].</li><li>[!BADGE ]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} Des options **[!UICONTROL B2B supplémentaires]** sont disponibles pour Customer Journey Analytics B2B edition : [!UICONTROL Comptes globaux], [!UICONTROL Comptes], [!UICONTROL Groupes d’achat], [!UICONTROL Opportunités], [!UICONTROL Pourcentage des comptes globaux], [!UICONTROL Pourcentage des comptes], [!UICONTROL Pourcentage des groupes d’achat] et [!UICONTROL Pourcentage des opportunités].</li></ul>
 * **[!UICONTROL Segments]** : segment selon lequel vous souhaitez segmenter les données. Vous pouvez inclure un segment dans une requête.
 
 ### Paramètres du graphique

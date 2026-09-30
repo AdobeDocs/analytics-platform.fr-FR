@@ -9,33 +9,49 @@ autotag-review: '2026-05-19T06:30:45.150Z'
 TQID: 'https://experienceleague.adobe.com/Qyb6t5w-DTcecgqvhUE6NplDrlPmW2lzhk0RWbf7g-g'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: b743a5d9-dc51-41ed-8b2f-86a1f8de430f
+    internal-label: Analytics dashboards
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Machine learning
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1539
+source-wordcount: '1539'
 ht-degree: 94%
-
 ---
-
 # Guide de l’utilisateur pour les utilisateurs et utilisatrices d’Adobe Analytics
 
-Si votre organisation commence à utiliser Adobe Customer Journey Analytics, vous remarquerez sûrement des similitudes et des différences entre Adobe Analytics et Customer Journey Analytics. Cette page vise à expliquer ces différences pour aider votre organisation à s’adapter au nouveau workflow d’implémentation et de création de rapports. Cette page fournit aussi des ressources supplémentaires sur de nouveaux concepts et d’autres étapes pour faciliter et optimiser votre expérience en tant qu’analyste.
+Si votre organisation commence à utiliser Adobe Customer Journey Analytics, vous remarquerez sûrement des similitudes et des différences entre Adobe Analytics et Customer Journey Analytics. Cette page vise à expliquer ces différences pour aider votre organisation à s’adapter au nouveau workflow d’implémentation et de reporting. Cette page fournit aussi des ressources supplémentaires sur de nouveaux concepts et d’autres étapes pour faciliter et optimiser votre expérience en tant qu’analyste.
 
 Plusieurs fonctionnalités de Customer Journey Analytics ont été renommées et repensées conformément aux normes du secteur. La terminologie a notamment fait l’objet de quelques mises à jour au niveau des segments, des suites de rapports virtuelles, des classifications, des attributs client et des noms de conteneurs. Les limites des eVars et des props ont été remplacées par des dimensions et des métriques personnalisées flexibles.
 
@@ -78,7 +94,7 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Configuring conn
 
 Adobe propose plusieurs façons d’importer des données dans Adobe Experience Platform, y compris les données des suites de rapports via le connecteur source Adobe Analytics ou le SDK Web. Les implémentations existantes de plusieurs suites de rapports peuvent être combinées au sein d’Experience Platform. Les connexions et les vues de données basées sur ces jeux peuvent combiner des données qui se trouvaient autrefois dans des suites de rapports distinctes.
 
-## Modification du concept de suites de rapports virtuelles {#data-views}
+## Modifications apportées au concept des suites de rapports virtuelles {#data-views}
 
 Les [!UICONTROL vues de données] reprennent le concept même de suites de rapports virtuelles et l’étendent pour [contrôler plus intensément les données](/help/data-views/create-dataview.md) découlant des connexions. Ces modifications rendent les paramètres généraux tels que le fuseau horaire et les intervalles d’expiration de session configurables et rétroactifs. Les paramètres de variable individuels tels que l’attribution et l’expiration peuvent également être personnalisés au niveau du rapport ou de la vue de données. Ces réglages sont non destructifs et rétroactifs.
 
@@ -94,7 +110,7 @@ Le concept des [!UICONTROL eVars], des [!UICONTROL props] et des [!UICONTROL év
 
 Un nombre illimité d’éléments de schéma est disponible dans Customer Journey Analytics, dont les dimensions, les métriques et les champs de liste. Ils sont mappés à un nombre illimité d’éléments de schéma, dont les dimensions, les métriques et les champs de liste au sein d’Experience Platform. Tous les paramètres de visite et d’attribution appliqués après le traitement des règles dans Adobe Analytics s’appliquent désormais au moment de la requête dans Customer Journey Analytics.
 
-De par ce changement, il est possible qu’un seul champ de schéma soit utilisé à la fois comme dimension et comme métrique selon le suivi nécessaire.
+Grâce à cette flexibilité, il se peut que vous rencontriez des situations dans lesquelles un même champ de schéma est utilisé à la fois comme dimension et comme mesure afin de répondre à différents besoins de suivi.
 
 ## Modification du concept de segments
 
@@ -104,7 +120,7 @@ Bien que vous ne puissiez pas encore partager ou publier [!UICONTROL segments] (
 
 En plus du concept des segments, les conteneurs de segments ont eux aussi été mis à jour.
 
-* **Les conteneurs d’accès sont désormais des conteneurs [!UICONTROL Événéments]**. Le conteneur [!UICONTROL Événement] vous permet de ventiler les informations sur les personnes en fonction d’événements individuels.
+* **Les conteneurs de hits sont désormais des conteneurs [!UICONTROL Événements]**. Le conteneur [!UICONTROL Événement] vous permet de ventiler les informations sur les personnes en fonction d’événements individuels.
 * **Les conteneurs Visiteur sont désormais des conteneurs [!UICONTROL Session]**. Le conteneur [!UICONTROL Session] permet dʼidentifier les interactions de pages, les campagnes ou les conversions pour une session spécifique.
 * **Les conteneurs Visiteur sont désormais des conteneurs [!UICONTROL Personne]**. Le conteneur [!UICONTROL Personne] inclut chaque session et chaque événement pour une personne au cours dʼune période indiquée.
 
@@ -129,11 +145,11 @@ Vous pouvez également avoir plusieurs vues de données basées sur la même con
 
 ## Modification du concept des classifications
 
-Les « classifications » sont désormais appelées *jeux de données de recherche*. Les jeux de données de recherche sont utilisés pour rechercher des valeurs ou des clés trouvées dans vos données d’événement ou de profil. Vous pouvez, par exemple, charger des données de recherche qui font correspondre les ID numériques de vos données d’événement aux noms de produits.
+Les « classifications » sont désormais appelées *jeux de données de recherche*. Les jeux de données de recherche sont utilisés pour rechercher des valeurs ou des clés trouvées dans vos données d’événement ou de profil. Vous pouvez, par exemple, charger des données de recherche qui font correspondre les ID numériques de vos données d’événement à des noms de produits.
 
 ## Modification du concept des attributs client
 
-Les « attributs client » sont désormais appelés « jeux de données de profil ». Les jeux de données de profil contiennent des données qui sont appliquées à vos personnes, utilisateurs et utilisatrices ou clients et clientes dans les données [!UICONTROL Événement]. Cela permet, entre autres, de télécharger des données CRM sur vos clients. Vous pouvez sélectionner l’ID de personne à inclure. Chaque jeu de données défini dans [!DNL Experience Platform] dispose de son propre jeu d’un ou de plusieurs identifiants de personne.
+Les « attributs client » sont désormais appelés « jeux de données de profil ». Les jeux de données de profil contiennent des données qui sont appliquées à vos personnes, utilisateurs et utilisatrices ou clients et clientes dans les données [!UICONTROL Événement]. Cela vous permet, par exemple, de charger des données GRC concernant vos clients. Vous pouvez sélectionner l’ID de personne à inclure. Chaque jeu de données défini dans [!DNL Experience Platform] dispose de son propre jeu d’un ou de plusieurs identifiants de personne.
 
 ## Modification de l’identification des visiteurs par Adobe
 
@@ -142,7 +158,7 @@ Customer Journey Analytics étend le concept d’identité au-delà des ECID pou
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Utilisation d’une identité dans Customer Journey Analytics](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/visitor-id/understanding-how-customer-journey-analytics-uses-identity){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Utilisation d’une identité dans Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/visitor-id/understanding-how-customer-journey-analytics-uses-identity){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 

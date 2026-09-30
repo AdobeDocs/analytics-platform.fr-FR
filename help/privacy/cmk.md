@@ -8,25 +8,34 @@ autotag-review: '2026-05-19T09:16:21.318Z'
 TQID: 'https://experienceleague.adobe.com/jx1pw9U5sw42999O132esMBoUcQ8hWuUKzzN3WLAcyY'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+    internal-label: Data governance
 subfeature_v2:
   - id: c5ed78d1-99be-42e1-b164-a20a3685241e
+    internal-label: Customer managed keys
+  - id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
+    internal-label: Privacy
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Privacy
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 561
+source-wordcount: '561'
 ht-degree: 87%
-
 ---
-
 # Clés gérées par le client ou la cliente
 
 Adobe Customer Journey Analytics offre la possibilité aux clientes et clients [Healthcare Shield](https://www.adobe.com/trust/compliance/hipaa-ready.html) et Privacy &amp; Security Shield d’utiliser des clés gérées par le client ou la cliente (CMK) pour les données Customer Journey Analytics. Notez que ce processus est distinct de la [configuration CMK Adobe Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/landing/governance-privacy-security/customer-managed-keys/overview). Les clés gérées par le client ou la cliente ne sont actuellement disponibles que pour les organisations qui ont acheté l’offre de module complémentaire [Healthcare Shield ou Privacy &amp; Security Shield](https://experienceleague.adobe.com/fr/docs/events/customer-data-management-voices-recordings/governance/healthcare-shield).
@@ -39,21 +48,21 @@ Pour configurer la fonction CMK pour Customer Journey Analytics s’exécutant
 1. Vérifiez dans Azure que vous êtes un administrateur disposant d’un rôle privilégié tel qu’administrateur d’application, administrateur d’applications cloud ou administrateur global. Consultez [Rôles intégrés Microsoft Entra](https://learn.microsoft.com/fr-fr/entra/identity/role-based-access-control/permissions-reference) pour plus d’informations.
 1. Créez un coffre de clés Azure Key Vault à utiliser uniquement avec Customer Journey Analytics. Consultez la [documentation du coffre de clés Microsoft Azure](https://learn.microsoft.com/fr-fr/azure/key-vault/general/) pour plus d’informations.
 1. Accordez à l’application Adobe Azure l’accès à votre clé dans le coffre de clés. Pour ce faire, utilisez l’une des méthodes suivantes :
-   * Octroyez des autorisations via le consentement d’autorisation via l’URL suivante : [&#128279;](https://login.microsoftonline.com/common/oauth2/authorize?response_type=code&client_id=251e3919-1940-4296-bb8b-6b9a5e8a4805&redirect_uri=https://experience.adobe.com&scope=user.read)
+   * Octroyez des autorisations via le consentement d’autorisation via l’URL suivante : [](https://login.microsoftonline.com/common/oauth2/authorize?response_type=code&client_id=251e3919-1940-4296-bb8b-6b9a5e8a4805&redirect_uri=https://experience.adobe.com&scope=user.read)
 
    * Suivez les instructions de la section [Configurer les clés gérées par le client pour un compte existant](https://learn.microsoft.com/fr-fr/azure/storage/common/customer-managed-keys-configure-cross-tenant-existing-account?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&tabs=powershell-preview%2Cazure-portal#the-customer-grants-the-service-providers-app-access-to-the-key-in-the-key-vault). L’ID de l’application Adobe est :
 
      **`251e3919-1940-4296-bb8b-6b9a5e8a4805`**
 
-1. Créez un ticket d’assistance clientèle Adobe demandant la configuration du CMK. Incluez l’URI Azure dans votre ticket. L’URI se trouve dans le champ **Identificateur de clé** de votre clé Azure :
+1. Créez un ticket auprès du service d’assistance clientèle Adobe pour demander la configuration des CMK. Incluez l’URI Azure dans votre ticket. L’URI se trouve dans le champ **Identificateur de clé** de votre clé Azure :
 
    ![Champs d’identifiant de clé affichant l’URI pour https://cmkoberontest.vault.azure.net](assets/key-identifier.png)
 
-1. L’assistance clientèle Adobe confirme l’achèvement de l’application CMK sur vos données Customer Journey Analytics.
+1. Le service d’assistance clientèle Adobe confirme que l’application des CMK à vos données Customer Journey Analytics est terminée.
 
-Toutes les données utilisées par Platform sont chiffrées en transit et au repos pour garantir leur sécurité, avec ou sans clés gérées par le client ou la cliente. Pour plus d’informations sur le chiffrement d’Adobe Experience Platform, consultez [Chiffrement des données dans Adobe Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/landing/governance-privacy-security/encryption).
+Toutes les données utilisées par Platform sont chiffrées en transit et au repos pour garantir leur sécurité, avec ou sans clés gérées par le client. Pour plus d’informations sur le chiffrement d’Adobe Experience Platform, consultez [Chiffrement des données dans Adobe Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/landing/governance-privacy-security/encryption).
 
-## Configurer les clés gérées par le client ou la cliente pour Customer Journey Analytics sur Amazon Web Services
+## Configurer des clés gérées par le client (CMK) pour Customer Journey Analytics sur Amazon Web Services
 
 >[!AVAILABILITY]
 >

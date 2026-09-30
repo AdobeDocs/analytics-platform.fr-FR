@@ -5,13 +5,23 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 hide: true
-source-git-commit: 1ce48a6e077ee1069c55f3ef8969ed2eced4742e
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+subfeature_v2:
+  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
 source-wordcount: '1388'
 ht-degree: 4%
-
 ---
-
 # Rapports sur la population totale
 
 Les rapports sur la population totale permettent d’analyser et de générer des rapports sur les entités définies dans des jeux de données de profil et de recherche qui existent dans une connexion Customer Journey Analytics. Cette analyse et ce compte rendu des performances vont au-delà des séries temporelles d’événements des jeux de données d’événements. Cette fonctionnalité active de nouvelles classes de requêtes, de mesures et de définitions d’audience qui reflètent l’ensemble de la base de clients et clientes d’une entreprise.
@@ -85,7 +95,7 @@ Pour une connexion afin de prendre en charge les rapports sur la population tota
 Lorsqu’un jeu de données de profil est ajouté à une connexion, Customer Journey Analytics renseigne une configuration de recherche partagée par défaut en fonction du type de jeu de données :
 
 * Pour les jeux de données de profil de personne : la valeur par défaut est match-by-container, définie sur [!UICONTROL Personne], avec le mappage d’identité comme champ clé. Vous pouvez modifier cette valeur par défaut. Par exemple, pour choisir un espace de noms spécifique dans le mappage d’identités plutôt que dans la clé primaire. Ou pour spécifier un espace de noms secondaire dans les cas où le premier espace de noms n’est pas renseigné (ce qui est commun aux jeux de données groupés).
-* Pour les jeux de données de profil de compte {type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} : la valeur par défaut est match-by-container définie sur [!UICONTROL Account] (ou [!UICONTROL Global Account], si les comptes globaux sont activés sur la connexion). Le champ Compte peut être un identifiant unique ou un mappage d’identités. Lorsque le champ de compte est un mappage d’identités, vous sélectionnez l’espace de noms à utiliser.
+* Pour les jeux de données de profil de compte [!BADGE ]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} : la valeur par défaut est match-by-container définie sur [!UICONTROL Account] (ou [!UICONTROL Global Account], si les comptes globaux sont activés sur la connexion). Le champ Compte peut être un identifiant unique ou un mappage d’identités. Lorsque le champ de compte est un mappage d’identités, vous sélectionnez l’espace de noms à utiliser.
 
 Vous pouvez configurer plusieurs recherches partagées sur un seul jeu de données de profil afin de prendre en charge plusieurs chemins de jointure vers vos événements. Lorsque la même carte des identités est utilisée comme champ de clé dans plusieurs recherches partagées, les sélections d’espaces de noms doivent être cohérentes.
 

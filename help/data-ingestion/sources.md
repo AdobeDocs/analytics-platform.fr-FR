@@ -5,31 +5,45 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 813d3213-86b3-431a-821c-174e5e36d032
 role: Admin
-TQID: https://experienceleague.adobe.com/tkPB8BHD6t3LiIhTiLyoQYH-Ucknl1YyUm5MOcxujBY
+TQID: 'https://experienceleague.adobe.com/tkPB8BHD6t3LiIhTiLyoQYH-Ucknl1YyUm5MOcxujBY'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: c38ed341-fab2-46df-9d72-88d8166edebb
+    internal-label: Workspace projects
   - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Customer profiles
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 2150
+source-wordcount: '2150'
 ht-degree: 75%
-
 ---
-
 # Ingérer et utiliser des données à l’aide des connecteurs source
 
 Ce guide de démarrage rapide explique comment ingérer des données dans Adobe Experience Platform à l’aide d’un connecteur source vers un fournisseur de données, puis les utiliser dans Customer Journey Analytics.
@@ -59,7 +73,7 @@ Pour ingérer des données dans Adobe Experience Platform, vous devez d’abord 
 
 Une fois que vous avez défini un schéma, vous utilisez un ou plusieurs jeux de données pour stocker et gérer la collecte de données. Un jeu de données est une structure de stockage et de gestion pour une collecte de données (généralement sous la forme d’un tableau) qui contient un schéma (des colonnes) et des champs (des lignes).
 
-Toutes les données ingérées par Adobe Experience Platform doivent être conformes à un schéma prédéfini avant de pouvoir être conservées sous la forme d’un jeu de données.
+Toutes les données ingérées dans Adobe Experience Platform doivent être conformes à un schéma prédéfini avant de pouvoir être conservées sous la forme d’un jeu de données.
 
 ### Configurer un schéma
 
@@ -89,7 +103,7 @@ Configurer le schéma :
 
    1. Saisissez un **[!UICONTROL nom d’affichage de schéma]** pour votre schéma et (facultatif) une **[!UICONTROL description]**.
 
-      ![Fenêtre Créer un schéma présentant les champs pour nommer votre schéma &#x200B;](./assets/create-pr-schema-wizard-step-2.png)
+      ![Fenêtre Créer un schéma présentant les champs pour nommer votre schéma ](./assets/create-pr-schema-wizard-step-2.png)
 
    1. Sélectionnez **[!UICONTROL Terminer]**.
 
@@ -129,7 +143,7 @@ Configurer le schéma :
 
    ![Spécifier l’e-mail comme identité](./assets/specify-email-loyalty-id.png)
 
-   Vous spécifiez l’adresse e-mail en tant qu’identité qu’Adobe Experience Platform Identity Service peut utiliser pour combiner (regrouper) le comportement des profils.
+   Vous spécifiez l’adresse e-mail en tant qu’identité que le Service d’identités Adobe Experience Platform peut utiliser pour combiner (regrouper) le comportement des profils.
 
    Sélectionnez **[!UICONTROL Appliquer]**. Une icône d’empreinte digitale apparaît dans l’attribut d’e-mail.
 
@@ -147,7 +161,7 @@ Configurer le schéma :
 
 1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer le schéma.
 
-Vous avez créé un schéma minimal qui modélise les données de fidélité que vous pouvez ingérer dans Adobe Experience Platform. Le schéma permet d’identifier les profils à l’aide de l’adresse e-mail. En activant le schéma pour le profil, vous vous assurez que les données de la source de diffusion sont ajoutées au profil client en temps réel.
+Vous avez créé un schéma minimal qui modélise les données de fidélité que vous pouvez ingérer dans Adobe Experience Platform. Le schéma permet d’identifier les profils à l’aide de l’adresse e-mail. En activant le schéma pour le profil, vous vous assurez que les données de la source de streaming sont ajoutées au profil client en temps réel.
 
 Consultez [Créer et modifier des schémas dans l’interface utilisateur](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=fr) pour plus d’informations sur l’ajout et la suppression de groupes de champs et de champs individuels dans un schéma.
 
@@ -185,7 +199,7 @@ Configurer le jeu de données :
 
    ![Activer un schéma pour le profil](./assets/loyalty-dataset-profile.png)
 
-Consultez [Guide de l’interface utilisateur des jeux de données](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=fr) pour plus d’informations sur l’affichage, la prévisualisation, la création et la suppression d’un jeu de données. Ainsi que l’activation d’un jeu de données pour le profil client en temps réel.
+Consultez [Guide de l’interface utilisateur des jeux de données](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=fr) pour plus d’informations sur l’affichage, la prévisualisation, la création et la suppression d’un jeu de données. Et comment activer un jeu de données pour le profil client en temps réel.
 
 
 ## Utiliser un connecteur source
@@ -194,13 +208,13 @@ En fonction de la source des données de fidélité, choisissez le connecteur so
 
 Vous pouvez ingérer des données provenant de diverses sources. Voici quelques-unes des nombreuses sources disponibles :
 
-- Applications Adobe (les connecteurs source incluent [Adobe Analytics](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/analytics), [Adobe Audience Manager](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/audience-manager), etc.).
+- Applications Adobe (les connecteurs source incluent [Adobe Analytics](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/analytics), [Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/audience-manager), etc.).
 
-- Stockage dans le cloud (les connecteurs source comprennent [Amazon S3](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/cloud-storage/s3), [Azure Blob](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/cloud-storage/blob), etc.)
+- Stockage dans le cloud (les connecteurs source comprennent [Amazon S3](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/s3), [Azure Blob](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/blob), etc.)
 
-- Bases de données (les connecteurs source comprennent [&#128279;](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/databases/snowflake), [Microsoft SQL Server](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/databases/sql-server), etc.)
+- Bases de données (les connecteurs source comprennent [](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake), [Microsoft SQL Server](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/sql-server), etc.)
 
-Configurer un connecteur source :
+Pour configurer un connecteur source :
 
 1. Dans Adobe Experience Platform, sélectionnez **[!UICONTROL Sources]** sous [!UICONTROL CONNEXIONS] dans le rail de gauche.
 
@@ -230,9 +244,9 @@ Configurer un connecteur source :
 
 Consultez [Ingérer et utiliser des données à partir d’Adobe Analytics classique](./analytics.md) pour plus d’informations sur l’utilisation du connecteur source Adobe Analytics.
 
-Consultez [&#x200B; Ingérer et utiliser des données de flux &#x200B;](./streaming.md) pour plus d’informations sur l’utilisation du connecteur source d’API HTTP.
+Consultez [ Ingérer et utiliser des données de flux ](./streaming.md) pour plus d’informations sur l’utilisation du connecteur source d’API HTTP.
 
-Consultez [Présentation des connecteurs source](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=fr#terms-and-conditions) pour obtenir un aperçu des connecteurs source, ainsi que des liens vers des informations supplémentaires pour chaque connecteur.
+Consultez [Présentation des connecteurs source](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html#terms-and-conditions) pour obtenir un aperçu des connecteurs source, ainsi que des liens vers des informations supplémentaires pour chaque connecteur.
 
 
 ## Configurer une connexion
@@ -285,9 +299,9 @@ Après avoir créé une [connexion](/help/connections/overview.md), vous pouvez 
 
 ## Configurer une vue de données
 
-Une vue de données est un conteneur spécifique à Customer Journey Analytics qui vous permet de déterminer comment interpréter les données d’une connexion. Elle spécifie toutes les dimensions et mesures disponibles dans Analysis Workspace et les colonnes dont ces dimensions et mesures obtiennent leurs données. Les vues de données sont définies en vue de la création de comptes rendus des performances dans Analysis Workspace.
+Une vue de données est un conteneur spécifique à Customer Journey Analytics qui vous permet de déterminer comment interpréter les données d’une connexion. Elle spécifie toutes les dimensions et mesures disponibles dans Analysis Workspace et les colonnes dont ces dimensions et mesures obtiennent leurs données. Les vues de données sont définies en vue du reporting dans Analysis Workspace.
 
-Créer une vue de données :
+Pour créer votre vue de données :
 
 1. Dans l’interface utilisateur de Customer Journey Analytics, sélectionnez **[!UICONTROL Vues de données]**, éventuellement à partir de **[!UICONTROL Gestion des données]** dans le menu supérieur.
 
@@ -322,9 +336,9 @@ Consultez [Présentation des vues de données](../data-views/data-views.md) pour
 
 ## Configurer un projet
 
-Analysis Workspace est un outil de navigation flexible qui vous permet de créer rapidement des analyses et de partager des informations sur la base des données. Les projets Espace de travail vous permettent de combiner des composants de données, des tableaux et des visualisations afin d’élaborer une analyse et de la partager avec tous les membres de l’entreprise.
+Analysis Workspace est un outil flexible basé sur un navigateur qui vous permet de créer rapidement des analyses et de partager des informations à partir de vos données. Les projets Espace de travail vous permettent de combiner des composants de données, des tableaux et des visualisations afin d’élaborer une analyse et de la partager avec tous les membres de l’entreprise.
 
-Créer un projet :
+Pour créer votre projet :
 
 1. Dans l’interface utilisateur de Customer Journey Analytics, sélectionnez **[!UICONTROL Projets]** dans le menu supérieur.
 

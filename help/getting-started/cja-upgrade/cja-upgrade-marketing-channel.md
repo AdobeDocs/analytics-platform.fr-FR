@@ -5,25 +5,33 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 2a74da97-61cb-4c98-949b-3fc428839d70
-TQID: https://experienceleague.adobe.com/nwxJ3KEss3SlZxpGB-CW4qDW9QpQqXL1kN-VslhuAVE
+TQID: 'https://experienceleague.adobe.com/nwxJ3KEss3SlZxpGB-CW4qDW9QpQqXL1kN-VslhuAVE'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Implementation
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 291
+source-wordcount: '291'
 ht-degree: 100%
-
 ---
-
 # Créer un champ dérivé de canal marketing pour Customer Journey Analytics {#create-marketing-channel-derived-field}
 
 <!-- markdownlint-disable MD034 -->
@@ -39,7 +47,7 @@ ht-degree: 100%
 
 Lors de l’utilisation du connecteur source Analytics, les données des canaux marketing sont transmises dans Customer Journey Analytics par le biais de ce connecteur. Les règles de canal marketing sont toujours configurées dans la version standard d’Adobe Analytics et certaines règles ne sont pas prises en charge. Pour plus d’informations, consultez [Utilisation de dimensions de canal marketing](/help/use-cases/aa-data/marketing-channels.md).
 
-Pour utiliser les canaux marketing dans Customer Journey Analytics lors de l’utilisation du SDK web Experience Platform, vous pouvez utiliser des champs dérivés dans une vue de données afin de recréer les mêmes canaux marketing et règles de traitement pour Customer Journey Analytics.
+Pour utiliser les canaux marketing dans Customer Journey Analytics lors de l’utilisation du SDK web d’Experience Platform, vous pouvez utiliser des champs dérivés dans une vue de données afin de recréer les mêmes canaux marketing et règles de traitement pour Customer Journey Analytics.
 
 1. Dans Customer Journey Analytics, sélectionnez la vue de données dans laquelle vous souhaitez ajouter des canaux marketing.
 

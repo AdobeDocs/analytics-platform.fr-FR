@@ -4,25 +4,31 @@ description: Attribuez des dimensions aux tableaux dʼobjets et effectuez ainsi 
 exl-id: 5e7c71e9-3f22-4aa1-a428-0bea45efb394
 feature: Use Cases
 role: User
-TQID: https://experienceleague.adobe.com/1QpmW2FTqA2B7JgqJEO6MNJzrBkGIL9s4gZYxhIp9UI
+TQID: 'https://experienceleague.adobe.com/1QpmW2FTqA2B7JgqJEO6MNJzrBkGIL9s4gZYxhIp9UI'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
+  - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+    internal-label: Use cases
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: User
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1357
+source-wordcount: '1357'
 ht-degree: 70%
-
 ---
-
 # Utiliser des dimensions et des mesures de liaison
 
-Customer Journey Analytics offre plusieurs façons de conserver les valeurs de dimension au-delà de lʼaccès sur lequel elles sont définies. Adobe offre plusieurs méthodes de persistance, dont la méthode Liaison. Dans les versions précédentes dʼAdobe Analytics, ce concept était connu sous le nom de marchandisage.
+Customer Journey Analytics offre plusieurs façons de conserver les valeurs de dimension au-delà du hit sur lequel elles sont définies. L’une des méthodes de persistance proposées par Adobe est connue sous le nom de liaison (Binding). Dans les versions précédentes dʼAdobe Analytics, ce concept était connu sous le nom de merchandising.
 
 Bien que vous puissiez utiliser les dimensions de liaison avec les données dʼévénement de premier niveau, ce concept se prête mieux à une utilisation avec les [Tableaux dʼobjets](/help/use-cases/object-arrays.md). Vous pouvez attribuer une dimension à une partie d’un tableau d’objets sans appliquer la dimension à tous les attributs d’un événement donné. Par exemple, vous pouvez attribuer un terme de recherche à un produit de votre tableau dʼobjets de panier sans lier ce terme de recherche à lʼévénement entier.
 
@@ -46,7 +52,7 @@ Vous pouvez lier les éléments de dimension d’un tableau d’objets à une au
    }
    ```
 
-1. Il consulte ensuite une autre page produit, qui porte sur un sèche-linge.
+1. Le visiteur consulte ensuite une autre page produit consacrée à un sèche-linge.
 
    ```json
    {
@@ -102,7 +108,7 @@ Lorsque vous définissez ce modèle de persistance, Customer Journey Analytics p
 
 L’une des méthodes de marchandisage les plus courantes dans Adobe Analytics a consisté à lier un terme de recherche à un produit afin que chaque terme de recherche obtienne du crédit pour son produit approprié. Prenons lʼexemple de parcours client suivant :
 
-1. Un visiteur arrive sur votre site et recherche des `boxing gloves`. La mesure Recherches est incrémentée de un et les trois premiers résultats de la recherche s’affichent.
+1. Un visiteur arrive sur votre site et recherche des `boxing gloves`. La mesure Recherches augmente d’une unité et les trois principaux résultats de recherche s’affichent.
 
    ```json
    {
@@ -124,7 +130,7 @@ L’une des méthodes de marchandisage les plus courantes dans Adobe Analytics a
    }
    ```
 
-2. Il trouve une paire de gants à son goût et lʼajoute au panier.
+2. Il trouve une paire de gants qui lui plaît et lʼajoute au panier.
 
    ```json
    {
@@ -139,7 +145,7 @@ L’une des méthodes de marchandisage les plus courantes dans Adobe Analytics a
    }
    ```
 
-3. Le visiteur recherche ensuite des `tennis racket`. La mesure Recherches est incrémentée de un et les trois premiers résultats de la recherche s’affichent.
+3. Le visiteur recherche ensuite des `tennis racket`. La mesure Recherches augmente d’une unité et les trois principaux résultats de recherche s’affichent.
 
    ```json
    {
@@ -179,7 +185,7 @@ L’une des méthodes de marchandisage les plus courantes dans Adobe Analytics a
    }
    ```
 
-5. Le visiteur effectue une troisième recherche de `shoes`. La mesure Recherches est incrémentée de un et les trois premiers résultats de la recherche s’affichent.
+5. Le visiteur effectue une troisième recherche de `shoes`. La mesure Recherches augmente d’une unité et les trois principaux résultats de recherche s’affichent.
 
    ```json
    {
@@ -201,7 +207,7 @@ L’une des méthodes de marchandisage les plus courantes dans Adobe Analytics a
    }
    ```
 
-6. Il trouve la paire de chaussures de ses rêves et lʼajoute au panier.
+6. Il trouve une paire de chaussures qui lui plaît et lʼajoute au panier.
 
    ```json
    {
@@ -246,7 +252,7 @@ L’une des méthodes de marchandisage les plus courantes dans Adobe Analytics a
    }
    ```
 
-Si vous utilisez un modèle d’attribution qui n’inclut pas de dimension de liaison avec le terme de recherche, les trois produits attribuent un chiffre dʼaffaires à un seul terme de recherche. Par exemple, si vous avez utilisé l’affectation [!UICONTROL Original] avec la dimension Terme de recherche :
+Si vous utilisez un modèle d’affectation qui n’inclut pas de dimension de liaison avec le terme de recherche, les trois produits attribuent le chiffre dʼaffaires à un seul terme de recherche. Par exemple, si vous avez utilisé l’affectation [!UICONTROL Original] avec la dimension Terme de recherche :
 
 | search_term | chiffre d’affaires |
 | --- | --- |
@@ -280,12 +286,12 @@ La définition de la dimension Terme de recherche sur ce modèle de persistance 
 * Si le nom du produit n’est pas présent, ne rien faire.
 * Dans le cas contraire, vérifiez la présence de la mesure Recherches .
 * Si la mesure Recherches nʼest pas présente, ne faites rien.
-* Dans le cas contraire, liez le terme de recherche à tous les noms de produits dans cet événement. Il se copie lui-même au même niveau que le nom du produit pour cet événement. Dans cet exemple, elle est traitée comme `product.search_term`.
+* Si la mesure Recherches est présente, liez le terme de recherche à tous les noms de produits de cet événement. Il se copie lui-même au même niveau que le nom du produit pour cet événement. Dans cet exemple, elle est traitée comme `product.search_term`.
 * Si le même nom de produit est détecté dans un événement ultérieur, le terme de recherche lié est également reporté à cet événement.
 
 ## Exemple 3 : liaison du terme de recherche vidéo au profil utilisateur
 
-Vous pouvez lier un terme de recherche à un profil utilisateur afin que la persistance entre les profils reste complètement séparée. Prenons lʼexemple dʼun service de diffusion en continu géré par votre organisation, au sein duquel un compte principal peut avoir plusieurs profils. Le visiteur a un profil enfant et un profil adulte.
+Vous pouvez lier un terme de recherche à un profil utilisateur afin que la persistance entre les profils reste complètement séparée. Par exemple, votre entreprise propose un service de streaming dans lequel un compte principal peut comporter plusieurs profils. Le visiteur a un profil enfant et un profil adulte.
 
 1. Le compte se connecte sous le profil enfant et recherche une émission de télévision pour enfant. Remarquez que lʼ`"ProfileID"` est `2` pour représenter le profil enfant.
 
@@ -309,7 +315,7 @@ Vous pouvez lier un terme de recherche à un profil utilisateur afin que la pers
    }
    ```
 
-1. Plus tard dans la soirée, ils changent de profil et recherchent du contenu pour adultes à regarder. Remarquez que lʼ`"ProfileID"` est `1` pour représenter le profil adulte. Les deux profils appartiennent au même compte, représenté par le même `"PersonID"`.
+1. Plus tard dans la soirée, le parent bascule sur son propre profil et recherche du contenu pour adultes à regarder. Remarquez que lʼ`"ProfileID"` est `1` pour représenter le profil adulte. Les deux profils appartiennent au même compte, représenté par le même `"PersonID"`.
 
    ```json
    {
@@ -320,7 +326,7 @@ Vous pouvez lier un terme de recherche à un profil utilisateur afin que la pers
    }
    ```
 
-1. Pour leur plus grand bonheur, ils trouvent lʼémission « Analytics After Hours » pour pimenter leur soirée.
+1. Il trouve lʼémission « Analytics After Hours » et passe une agréable soirée à la regarder.
 
    ```json
    {
@@ -373,7 +379,7 @@ Vous pouvez lier des valeurs à des dimensions définies sur des événements pr
    }
    ```
 
-1. Il clique sur un appareil photo qui lui plaît et lʼajoute au panier.
+1. Il clique sur un appareil photo qui lui plaît et l’ajoute à son panier.
 
    ```json
    {
@@ -395,7 +401,7 @@ Vous pouvez lier des valeurs à des dimensions définies sur des événements pr
    }
    ```
 
-1. Il clique sur une ceinture à sa taille et lʼajoute au panier.
+1. Il clique sur une ceinture qui lui plaît et l’ajoute à son panier.
 
    ```json
    {
@@ -448,4 +454,4 @@ Cependant, si vous liez `product_finding_method` à la mesure Ajouts au panier, 
 
 >[!MORELIKETHIS]
 >
->Tutoriel [Lier des dimensions dans les vues de données](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views.html?lang=fr)
+>Tutoriel [Lier des dimensions dans les vues de données](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views.html)

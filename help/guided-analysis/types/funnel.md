@@ -5,28 +5,41 @@ exl-id: c8b0b71f-8ed3-4aad-a0f8-4d5ad8d7a7bd
 feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 role: User
-TQID: https://experienceleague.adobe.com/-AW7cK4fHNV58e539KKcqBx-pRpIpIRWcrS7CA9ZUYc
+TQID: 'https://experienceleague.adobe.com/-AW7cK4fHNV58e539KKcqBx-pRpIpIRWcrS7CA9ZUYc'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
+  - id: d494f34f-674c-496a-a400-b33552b95463
+    internal-label: Adobe Product Analytics
+  - id: bfa38d8a-4e93-4fd8-8cd8-e72c589e3af8
+    internal-label: Guided analysis
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 7f8ab656c7dbf508b2a78fd2022592faf883c56e
+    internal-label: Optimization
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 685
+source-wordcount: '685'
 ht-degree: 100%
-
 ---
-
 # Analyse de l’[!UICONTROL entonnoir] {#funnel}
 
 <!-- markdownlint-disable MD034 -->
@@ -38,16 +51,16 @@ ht-degree: 100%
 
 <!-- markdownlint-enable MD034 -->
 
-L’analyse ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL Entonnoir ]**fournit une représentation visuelle d’un parcours critique d’une personne dans votre produit. L’axe horizontal représente chaque étape qu’une personne doit franchir. L’axe vertical représente le pourcentage d’utilisateurs et d’utilisatrices ou de sessions à chaque étape. Toutes les étapes doivent être effectuées dans l’ordre souhaité, mais peuvent l’être à tout moment dans la fenêtre de création de rapports.
+L’analyse ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL Entonnoir ]**fournit une représentation visuelle d’un parcours critique d’une personne dans votre produit. L’axe horizontal représente chaque étape qu’une personne doit franchir. L’axe vertical représente le pourcentage d’utilisateurs et d’utilisatrices ou de sessions à chaque étape. Toutes les étapes doivent être effectuées dans un ordre chronologique, mais peuvent l’être à tout moment dans la fenêtre de reporting.
 
->[!VIDEO](https://video.tv.adobe.com/v/3431276/?captions=fre_fr&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3421663/?quality=12&learn=on)
 
 ## Cas d’utilisation
 
 Les cas d’utilisation de cette analyse sont les suivants :
 
 * **Analyse des conversions** : vous pouvez analyser les conversions à chaque étape de l’entonnoir, comme un passage en caisse au détail, une inscription à un compte, un flux d’abonnement ou tout autre parcours critique de votre expérience de produit. En suivant le nombre d’utilisateurs et d’utilisatrices qui passent d’une étape à l’autre, vous pouvez identifier les goulots d’étranglement qui présentent des taux de conversion inhabituels ou indésirables. Ces informations sont utiles pour savoir où améliorer votre parcours de produit et obtenir des résultats immédiats.
-* **Analyse des expériences** : vous pouvez comparer les taux de conversion sur un entonnoir qui comporte des étapes facultatives où une expérience A/B est en cours d’exécution. Ces informations peuvent vous aider à déterminer quelle variation de l’entonnoir entraîne le taux de conversion le plus élevé, afin que vous puissiez encourager plus d’utilisateurs et d’utilisatrices à emprunter cette voie.
+* **Analyse des expériences** : vous pouvez comparer les taux de conversion sur un entonnoir qui comporte des étapes facultatives où une expérience A/B est en cours d’exécution. Ces informations peuvent vous aider à déterminer quelle variation du funnel génère le taux de conversion le plus élevé afin d’inciter davantage de personnes à suivre ce parcours.
 * **Optimisation de l’intégration** : optimisez le processus d’intégration de votre produit en examinant le comportement des utilisateurs et utilisatrices autour d’événements clés. Vous pouvez identifier les étapes avec lesquelles les utilisateurs et utilisatrices ont du mal ou qu’ils ne terminent pas.
 * **Adoption et engagement des fonctionnalités** : comprenez la manière dont les utilisateurs et utilisatrices interagissent avec les fonctionnalités spécifiques de votre produit. L’analyse de la progression des utilisateurs et utilisatrices par le biais d’étapes liées aux fonctionnalités vous permet d’afficher les taux d’adoption et d’identifier les domaines dans lesquels les utilisateurs et utilisatrices sont susceptibles de sous-utiliser certaines fonctionnalités. Vous pouvez ensuite utiliser ces informations pour vous concentrer sur les améliorations des fonctionnalités afin d’augmenter les taux d’adoption.
 * **Efficacité des canaux marketing** : mesurez l’efficacité des canaux marketing. Vous pouvez créer un segment qui se concentre sur les utilisateurs et utilisatrices qui ont interagi avec différents canaux marketing, tels que le référencement payant, l’affichage, le référencement naturel ou le ciblage direct. Vous pouvez ensuite comparer leurs parcours pour déterminer quel canal mène aux meilleurs résultats de produit.
@@ -62,7 +75,7 @@ Le rail de requête vous permet de configurer les composants suivants :
 
 * **[!UICONTROL Vue]** : basculez entre cette analyse et [Tendances de conversion](conversion-trends.md).
 * **[!UICONTROL Étapes]** : points de contact d’événement dont vous souhaitez effectuer le suivi. Chaque barre du graphique représente une étape. Vous pouvez inclure jusqu’à dix étapes.
-  * [!UICONTROL Comparer] : chaque étape fournit une option permettant de comparer plusieurs événements dans une seule étape d’entonnoir, créant un « entonnoir à plusieurs branches ». Cette fonction vous permet de comparer le frottement de deux parcours côte à côte sans créer deux analyses distinctes. Cela s’avère utile lorsqu’il existe des options d’étape ou qu’une expérience A/B est en cours d’exécution dans l’entonnoir. Consultez [Entonnoir](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/guided-analysis/funnel) dans les tutoriels Customer Journey Analytics pour une vidéo expliquant comment comparer des entonnoirs.
+  * [!UICONTROL Comparer] : chaque étape fournit une option permettant de comparer plusieurs événements dans une seule étape d’entonnoir, créant un « entonnoir à plusieurs branches ». Cette fonctionnalité vous permet de comparer les points de friction de deux parcours côte à côte sans créer deux analyses distinctes. Cela s’avère utile lorsqu’il existe des options d’étape ou qu’un test AB est en cours d’exécution dans le funnel. Consultez [Entonnoir](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/guided-analysis/funnel) dans les tutoriels Customer Journey Analytics pour une vidéo expliquant comment comparer des entonnoirs.
 * **[!UICONTROL Comptabilisé comme]** : portée que vous souhaitez appliquer à l’entonnoir. Les options incluent [!UICONTROL Sessions] et [!UICONTROL Utilisateurs et utilisatrices].
   * [!UICONTROL Sessions] : pour être comptabilisées, toutes les étapes doivent se produire au cours d’une même session.
   * [!UICONTROL Utilisateurs et utilisatrices] : toutes les étapes doivent se produire dans la fenêtre de création de rapports sélectionnée pour être comptabilisées.

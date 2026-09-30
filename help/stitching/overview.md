@@ -9,30 +9,35 @@ autotag-review: '2026-05-19T09:24:34.962Z'
 TQID: 'https://experienceleague.adobe.com/Y7Q0pAx9s4p2YxrcfVKsvJcppHFmtNCKAgA0oCc0CeA'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
 subfeature_v2:
   - id: faea9abd-7024-4c5e-a5b4-87919e09b24b
+    internal-label: Stitching
+  - id: b7fb3355-1f54-4380-bce3-d444b226c0e9
+    internal-label: Cross channel analysis
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Customer journeys
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1024
+source-wordcount: '1024'
 ht-degree: 58%
-
 ---
-
 # Vue d’ensemble du groupement
 
 >[!NOTE]
 >
->Vous devez disposer du package Customer Journey Analytics **Select** ou d’une version ultérieure (pour le [groupement basé sur les champs](fbs.md)) ou du package **Prime** Customer Journey Analytics ou d’une version ultérieure (pour le [groupement basé sur les graphiques](gbs.md)) pour utiliser la fonctionnalité décrite dans cette section. Contactez votre administrateur ou administratrice si vous ne savez pas de quel package Customer Journey Analytics vous disposez.
+>Vous devez disposer du package Customer Journey Analytics **Select** ou d’une version ultérieure (pour le [groupement basé sur les champs](fbs.md)) ou du package **Prime** Customer Journey Analytics ou d’une version ultérieure (pour le [groupement basé sur les graphiques](gbs.md)) pour utiliser la fonctionnalité décrite dans cette section. Contactez votre administrateur ou administratrice si vous ne savez pas quelle formule Customer Journey Analytics vous utilisez.
 
-Le groupement d’identités (ou groupement) est une puissante fonctionnalité qui élève la capacité d’un jeu de données d’événement à l’analyse cross-canal. L’analyse cross-canal est un cas d’utilisation principal pour Customer Journey Analytics. L’analyse cross-canal vous permet de combiner et d’exécuter facilement des rapports sur plusieurs jeux de données de différents canaux, en fonction d’un identifiant commun (ID de personne).
+Le rapprochement d’identités (ou simplement rapprochement) est une fonctionnalité puissante qui améliore l’aptitude d’un jeu de données d’événements à l’analyse cross-canal. L’analyse cross-canal est un cas d’utilisation principal pour Customer Journey Analytics. L’analyse cross-canal vous permet de combiner et d’exécuter facilement des rapports sur plusieurs jeux de données de différents canaux, en fonction d’un identifiant commun (ID de personne).
 
-Lorsque vous combinez des jeux de données avec des identifiants de personne similaires, l’attribution est transférée sur plusieurs appareils et canaux. Par exemple, un utilisateur ou une utilisatrice consulte votre site par le biais d’une publicité reçue sur son poste de travail. L’utilisateur achète un produit, mais il rencontre ensuite un problème avec la commande. Elle appelle ensuite votre équipe du service clientèle pour l’aider à résoudre le problème. Avec l’analyse cross-canal, vous pouvez attribuer des événements de centre d’appel à l’annonce publicitaire qui a fait l’objet d’un clic à l’origine.
+Lorsque vous combinez des jeux de données avec des identifiants de personne similaires, l’attribution est transférée sur plusieurs appareils et canaux. Par exemple, un utilisateur ou une utilisatrice consulte votre site par le biais d’une publicité sur son ordinateur de bureau. L’utilisateur achète un produit, mais il rencontre ensuite un problème avec la commande. L’utilisateur ou l’utilisatrice appelle ensuite votre équipe du service client pour l’aider à résoudre le problème. Avec l’analyse cross-canal, vous pouvez attribuer des événements de centre d’appel à l’annonce publicitaire qui a fait l’objet d’un clic à l’origine.
 
 Malheureusement, tous les jeux de données basés sur un événement qui font partie de votre connexion dans Customer Journey Analytics ne sont pas suffisamment alimentées en données pour prendre en charge cette attribution dès le départ. En particulier, les jeux de données d’expérience web ou mobiles ne disposent souvent pas d’informations d’ID de personne pour tous les événements.
 
@@ -61,22 +66,22 @@ Une fois que votre organisation répond aux [conditions préalables](overview.md
 
 ## Restrictions
 
-L’analyse cross-canal est une fonctionnalité innovante et robuste, mais son utilisation a ses limites.
+Le rapprochement est une fonctionnalité révolutionnaire et robuste, mais il présente des limites quant à la façon dont il peut être utilisé.
 
-- Seuls les jeux de données dʼévénement sont pris en charge. D’autres jeux de données, tels que les jeux de données de recherche, ne sont pas pris en charge.
-- Lʼanalyse cross-canal ne transforme pas le champ utilisé pour le groupement de quelque manière que ce soit. Le groupement basé sur les champs utilise la valeur du champ spécifié telle quʼelle existe dans le jeu de données non groupé au sein du lac de données.
+- Seuls les jeux de données d’événement sont pris en charge. D’autres jeux de données, tels que les jeux de données de référence, ne sont pas pris en charge.
+- Le rapprochement ne transforme en aucune manière le champ utilisé pour le rapprochement. Le rapprochement utilise la valeur du champ spécifié telle qu’elle existe dans le jeu de données non rapproché au sein du lac de données.
 - Le processus de groupement respecte la casse. Par exemple, les valeurs d’identité `Bob` et `BOB` sont traitées comme deux personnes distinctes.
 
 Veillez à ne pas confondre le groupement avec ce qui suit :
 
-- Fusion de plusieurs jeux de données. Le groupement s’applique à un seul jeu de données. La fusion des jeux de données se produit suite à la configuration d’une connexion Customer Journey Analytics et à la sélection du même ID de personne dans les jeux de données sélectionnés dans la connexion.
+- La fusion de deux jeux de données ou plus Le groupement s’applique à un seul jeu de données. La fusion des jeux de données se produit suite à la configuration d’une connexion Customer Journey Analytics et à la sélection du même ID de personne dans les jeux de données sélectionnés dans la connexion.
 
 - Jointure de deux jeux de données. Dans Customer Journey Analytics, une jointure est souvent utilisée pour les recherches ou les classifications dans Analysis Workspace. Bien que le groupement utilise la fonctionnalité de jointure, le processus lui-même implique plus de jointures.
 
 
 ## Options
 
-Le package Customer Journey Analytics auquel vous avez droit détermine les méthodes de groupement disponibles, les options relatives à la durée de renvoi initiale, l’intervalle de recherche en amont, la fréquence de relecture et le nombre maximal de jeux de données autorisés pour le groupement. Voir la description du produit [&#128279;](https://helpx.adobe.com/fr/legal/product-descriptions/customer-journey-analytics.html?lang=fr) pour plus d’informations. Déterminez les options disponibles avant d’activer le groupement.
+Le package Customer Journey Analytics auquel vous avez droit détermine les méthodes de groupement disponibles, les options relatives à la durée de renvoi initiale, l’intervalle de recherche en amont, la fréquence de relecture et le nombre maximal de jeux de données autorisés pour le groupement. Voir la description du produit [](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html?lang=fr) pour plus d’informations. Déterminez les options disponibles avant d’activer le groupement.
 
 | | <br/>Select | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>Ultimate |
 |---|---|---|---|
@@ -100,15 +105,15 @@ L’assemblage prend en charge les jeux de données Journey Optimizer suivants,
 - Événements d’étape de parcours AJO
 - Jeu de données d’événement d’activité entrante AJO
 - Jeu de données de surfaces AJO
-- Jeu de données d’événement de commentaires de message AJO* Jeu de données d’événement d’expérience de suivi des notifications push AJO
-- Jeu de données d’événement d’expérience de suivi d’e-mail AJO
-- Jeu de données d’événement de commentaires en Cci AJO
-- Jeu de données d’événement de commentaires des activités en direct AJO
-- Jeu de données d’événement de décision ExD AJO
+- Jeu de données d’événement de commentaires de message AJO * Jeu de données d’événement d’expérience de suivi des notifications push AJO
+- Le jeu de données d’événement d’expérience de tracking e-mail AJO
+- Jeu de données d’événement de commentaires en BCC AJO
+- Jeu de données d’événement AJO Live Activities Feedback
+- Jeu de données d’événement AJO ExD Decision
 
 >[!MORELIKETHIS]
 >
->[&#x200B; Groupement basé sur les champs](fbs.md)
+>[ Groupement basé sur les champs](fbs.md)
 >[Rapprochement basé sur les graphiques](gbs.md)
 >[Utilisation du groupement](use-stitching.md)
 >[Valider le groupement](validate.md)

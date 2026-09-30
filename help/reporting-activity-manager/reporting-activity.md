@@ -1,30 +1,39 @@
 ---
-title: Afficher l’activité de rapports dans le gestionnaire des activités de rapport
+title: Afficher l’activité de reporting dans le Gestionnaire des activités de reporting
 description: Découvrez comment utiliser le gestionnaire des activités de rapport pour diagnostiquer et corriger les problèmes de capacité pendant les heures de pointe de la création de rapports.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 1f5b2a42-162e-45a7-9fd4-8c1557f48bb8
 role: Admin
-TQID: https://experienceleague.adobe.com/xuzVDUksBsFfN8ZvuDhAuYSR7n30DKZJeNMTUskkG9w
+TQID: 'https://experienceleague.adobe.com/xuzVDUksBsFfN8ZvuDhAuYSR7n30DKZJeNMTUskkG9w'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Troubleshooting
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 2054
+source-wordcount: '2054'
 ht-degree: 99%
-
 ---
-
 # Afficher l’activité de rapport {#view-reporting-activity}
 
 Le [!UICONTROL gestionnaire des activités de rapport] permet aux administrateurs et administratrices de diagnostiquer et de résoudre rapidement les problèmes de capacité de rapport pendant les heures de pointe de la création de rapports.
@@ -97,7 +106,7 @@ Pour plus d’informations sur le gestionnaire des activités de rapport, y comp
 
    Les données des activités de rapport s’affichent pour la connexion que vous avez sélectionnée.
 
-1. (Facultatif) Lorsqu’une connexion se charge pour la première fois dans le gestionnaire des activités de rapport, les données affichées représentent les mesures d’utilisation actuelles. Pour afficher les mesures mises à jour après le chargement initial, sélectionnez le bouton [!UICONTROL **Actualiser**] pour actualiser manuellement la page.
+1. (Facultatif) Lorsqu’une connexion se charge pour la première fois dans le Gestionnaire des activités de reporting, les données affichées représentent les mesures d’utilisation actuelles. Pour afficher les mesures mises à jour après le chargement initial, sélectionnez le bouton [!UICONTROL **Actualiser**] pour actualiser manuellement la page.
 
    <!-- Need to update this screenshot: ![connection](assets/indiv-report-ste.png) -->
 
@@ -128,7 +137,7 @@ Passez la souris sur le graphique pour afficher les points dans le temps où le 
 
 Le graphique Utilisateurs et utilisatrices distincts montre l’activité de création de rapports pour la connexion sélectionnée au cours des 2 dernières heures.
 
-Passez la souris sur le graphique pour afficher les points dans le temps où le nombre maximal d’utilisateurs et d’utilisatrices a été le plus élevé pendant cette minute.
+Pointez le curseur sur le graphique pour afficher les points dans le temps où le nombre maximal d’utilisateurs et d’utilisatrices a été le plus élevé pendant cette minute.
 
 * **Axe X** : activité de création de rapports sur la période des 2 dernières heures.
 * **Axe Y** : nombre d’utilisateurs et d’utilisatrices qui ont envoyé des demandes de création de rapports, par minute.
@@ -139,7 +148,7 @@ Passez la souris sur le graphique pour afficher les points dans le temps où le 
 
 Le graphique Demandes indique le nombre de demandes traitées et mises en file d’attente pour la connexion sélectionnée au cours des 2 dernières heures.
 
-Passez la souris sur le graphique pour afficher les points dans le temps où le nombre maximal de demandes a été le plus élevé pendant cette minute.
+Pointez le curseur sur le graphique pour afficher les points dans le temps où le nombre maximal de demandes a été le plus élevé pendant cette minute.
 
 * **Axe X** : nombre de demandes traitées et mises en file d’attente au cours de la période des 2 dernières heures.
 * **Axe Y** : nombre de demandes traitées (en vert) et de demandes mises en file d’attente (en violet), par minute.
@@ -150,7 +159,7 @@ Passez la souris sur le graphique pour afficher les points dans le temps où le 
 
 Le graphique Mise en file d’attente indique le temps d’attente moyen de la file d’attente (en secondes) pour les demandes de création de rapports pour la connexion sélectionnée au cours des 2 dernières heures.
 
-Passez la souris sur le graphique pour afficher les points dans le temps où le temps d’attente moyen maximal a été le plus élevé pendant cette minute.
+Pointez le curseur sur le graphique pour afficher les points dans le temps où le temps d’attente moyen maximal a été le plus élevé pendant cette minute.
 
 * **Axe X** : temps d’attente moyen des demandes de création de rapports dans la file d’attente au cours de la période des 2 dernières heures.
 * **Axe Y** : temps d’attente moyen (en secondes).
@@ -159,17 +168,17 @@ Passez la souris sur le graphique pour afficher les points dans le temps où le 
 
 ### Afficher le tableau {#view-table}
 
-Lorsque vous affichez le tableau, veuillez tenir compte des points suivants :
+Lorsque vous affichez le tableau, tenez compte des points suivants :
 
 * Vous pouvez choisir d’afficher les données en choisissant l’un des onglets suivants en haut du tableau de données : [!UICONTROL **Demande**], [!UICONTROL **Utilisateur ou utilisatrice**], [!UICONTROL **Projet**] ou [!UICONTROL **Application**].
 
 * Vous pouvez rechercher ou filtrer la liste des connexions :
 
-   * Utilisez le champ de recherche pour rechercher une connexion particulière. Commencez à saisir le nom ou l’identifiant de la connexion et la liste des connexions est mise à jour au fur et à mesure que vous tapez.
+  * Utilisez le champ de recherche pour rechercher une connexion particulière. Commencez à saisir le nom ou l’identifiant de la connexion et la liste des connexions est mise à jour au fur et à mesure que vous tapez.
 
-   * Sélectionnez l’icône [!UICONTROL **Filtre**] ![Icône Filtre](assets/filter-icon.png) pour développer la liste des options de filtre. Vous pouvez filtrer par [!UICONTROL **Statut**], [!UICONTROL **Complexité**], [!UICONTROL **Application**], [!UICONTROL **Utilisateur ou utilisatrice**] ou [!UICONTROL **Projet**].
+  * Sélectionnez l’icône [!UICONTROL **Filtre**] ![Icône Filtre](assets/filter-icon.png) pour développer la liste des options de filtre. Vous pouvez filtrer par [!UICONTROL **Statut**], [!UICONTROL **Complexité**], [!UICONTROL **Application**], [!UICONTROL **Utilisateur ou utilisatrice**] ou [!UICONTROL **Projet**].
 
-   * Vous pouvez sélectionner [!UICONTROL **Masquer les graphiques**] pour afficher uniquement le tableau.
+  * Vous pouvez sélectionner [!UICONTROL **Masquer les graphiques**] pour afficher uniquement le tableau.
 
 ![Onglets de tableau](assets/report-activity-tabs.png)
 
@@ -179,16 +188,16 @@ Lorsque vous sélectionnez l’onglet [!UICONTROL **Demande**], les colonnes sui
 
 | Colonne | Description |
 | --- | --- |
-| [!UICONTROL **ID de demande**] | Identifiant unique pouvant être utilisé à des fins de dépannage. Pour copier l’ID, sélectionnez la demande, puis sélectionnez l’option [!UICONTROL **Copier les ID de la demande**]. |
+| [!UICONTROL **ID de demande**] | ID unique pouvant être utilisé à des fins de dépannage Pour copier l’ID, sélectionnez la demande, puis sélectionnez l’option [!UICONTROL **Copier les ID de la demande**]. |
 | [!UICONTROL **Durée d’exécution**] | Durée d’exécution de la requête. |
 | [!UICONTROL **Heure de début**] | Heure à laquelle le traitement de la demande a commencé (en fonction de l’heure locale de l’administrateur ou de l’administratrice). |
 | [!UICONTROL **Temps d’attente**] | Durée pendant laquelle la demande a été en attente avant d’être traitée. Cette valeur est généralement à « 0 » lorsque la capacité est suffisante. |
-| [!UICONTROL **Application**] | Les applications prises en charge par le [!UICONTROL Gestionnaire des activités de rapport] sont les suivantes : <ul><li>Interface utilisateur d’Analysis Workspace</li><li>Projets planifiés d’espace de travail</li><li>Report Builder</li><li>Interfaces d’utilisation des créateurs : Segment, Mesures calculées, Annotations, Audiences, etc.</li><li>Appels API à partir de la version d’API 2.0</li><li>Alertes<li>Export du tableau complet</li><li>Liens de partage avec tout le monde</li><li>Analyse guidée</li><li>Toute autre application interrogeant le moteur de création de rapports Analytics</li></li></ul><p>**Note :** si la valeur de cette colonne est [!UICONTROL **Inconnu**], cela signifie que les métadonnées de la requête ne sont pas disponibles pour l’utilisateur ou l’utilisatrice.</p> |
-| [!UICONTROL **Utilisateur ou utilisatrice**] | Personne qui a lancé la demande. <p>**Note :** si la valeur de cette colonne est [!UICONTROL **Inconnu**], cela signifie que les métadonnées de la requête ne sont pas disponibles pour l’utilisateur ou l’utilisatrice.</p> |
+| [!UICONTROL **Application**] | Les applications prises en charge par le [!UICONTROL Gestionnaire des activités de rapport] sont les suivantes : <ul><li>Interface utilisateur d’Analysis Workspace</li><li>Projets planifiés d’espace de travail</li><li>Report Builder</li><li>Interfaces d’utilisation des créateurs : Segment, Mesures calculées, Annotations, Audiences, etc.</li><li>Appels API à partir de la version d’API 2.0</li><li>Alertes<li>Export du tableau complet</li><li>Liens de partage avec tout le monde</li><li>Analyse guidée</li><li>Toute autre application interrogeant le moteur de création de rapports Analytics</li></li></ul><p>**Note :** si la valeur de cette colonne est [!UICONTROL **Inconnu**], cela signifie que les métadonnées de la demande ne sont pas disponibles pour l’utilisateur ou l’utilisatrice.</p> |
+| [!UICONTROL **Utilisateur ou utilisatrice**] | L’utilisateur ou l’utilisatrice qui a lancé la demande <p>**Note :** si la valeur de cette colonne est [!UICONTROL **Inconnu**], cela signifie que les métadonnées de la requête ne sont pas disponibles pour l’utilisateur ou l’utilisatrice.</p> |
 | [!UICONTROL **Projet**] | Noms de projets Workspace enregistrés, ID de rapports d’API, etc. (Les métadonnées peuvent varier d’une application à l’autre.)<p>**Note :** si la valeur de cette colonne est [!UICONTROL **Inconnu**], cela signifie que le projet n’a pas été enregistré ou que les métadonnées de la requête ne sont pas disponibles pour l’utilisateur ou l’utilisatrice.</p> |
 | [!UICONTROL **Statut**] | Indicateurs de statut : <ul><li>**En cours d’exécution** : la demande est en cours de traitement.</li><li>**En attente** : la demande est en attente de traitement.</li></ul> |
 | [!UICONTROL **Complexité**] | Le traitement de toutes les demandes ne prend pas le même temps. La complexité de la demande peut vous donner une idée générale du temps nécessaire pour traiter la demande. <p>Valeurs possibles :</p> <ul><li>[!UICONTROL **Faible**]</li><li>[!UICONTROL **Moyen**]</li><li>[!UICONTROL **Élevé**]</li></ul>Cette valeur est influencée par les valeurs des colonnes suivantes :<ul><li>[!UICONTROL **Limites mensuelles**]</li><li>[!UICONTROL **Colonnes**]</li><li>[!UICONTROL **Segments**]</li></ul> |
-| [!UICONTROL **Limites mensuelles**] | Nombre de mois inclus dans une demande. Une limite mensuelle importante ajoute à la complexité de la demande. |
+| [!UICONTROL **Limites mensuelles**] | Nombre de mois inclus dans une demande. Un plus grand nombre de limites mensuelles augmente la complexité de la demande. |
 | [!UICONTROL **Colonnes**] | Nombre de mesures et de répartitions dans la demande. Un nombre plus important de colonnes ajoute à la complexité de la demande. |
 | [!UICONTROL **Segments**] | Nombre de segments appliqués à la demande. Un nombre important de segments ajoute à la complexité de la demande. |
 
@@ -200,14 +209,14 @@ Lorsque vous sélectionnez l’onglet [!UICONTROL **Utilisateur ou utilisatrice*
 
 | Colonne | Description |
 | --- | --- |
-| [!UICONTROL **Utilisateur ou utilisatrice**] | Personne qui a lancé la demande. Si la valeur de cette colonne est [!UICONTROL **Non reconnu**], cela signifie que l’utilisateur ou l’utilisatrice se trouve dans une société de connexion pour laquelle vous ne disposez pas d’autorisations administratives. |
+| [!UICONTROL **Utilisateur ou utilisatrice**] | L’utilisateur ou l’utilisatrice qui a lancé la demande Si la valeur de cette colonne est [!UICONTROL **Non reconnu**], cela signifie que l’utilisateur ou l’utilisatrice se trouve dans une société de connexion pour laquelle vous ne disposez pas d’autorisations administratives. |
 | [!UICONTROL **Nombre de demandes**] | Nombre de demandes initiées par l’utilisateur ou l’utilisatrice. |
 | [!UICONTROL **Nombre de projets**] | Nombre de projets associés à l’utilisateur ou à l’utilisatrice. <!-- ??? --> |
-| [!UICONTROL **Application**] | Les applications prises en charge par le [!UICONTROL Gestionnaire des activités de rapport] sont les suivantes : <ul><li>Interface utilisateur d’Analysis Workspace</li><li>Projets planifiés d’espace de travail</li><li>Report Builder</li><li>Interfaces d’utilisation des créateurs : Segment, Mesures calculées, Annotations, Audiences, etc.</li><li>Appels API à partir de la version d’API 2.0</li><li>Alertes<li>Export du tableau complet</li><li>Liens de partage avec tout le monde</li><li>Analyse guidée</li><li>Toute autre application interrogeant le moteur de création de rapports Analytics</li></li></ul> |
+| [!UICONTROL **Application**] | Les applications prises en charge par le [!UICONTROL Gestionnaire des activités de rapport] sont les suivantes : <ul><li>Interface utilisateur d’Analysis Workspace</li><li>Projets planifiés d’espace de travail</li><li>Report Builder</li><li>Interfaces d’utilisation des créateurs : Segment, Mesures calculées, Annotations, Audiences, etc.</li><li>Appels API à partir de la version d’API 2.0</li><li>Alertes<li>Export du tableau complet</li><li>Liens de partage avec tout le monde</li><li>Analyse guidée</li><li>Toute autre application qui envoie des requêtes au moteur de reporting Analytics</li></li></ul> |
 | [!UICONTROL **Complexité moyenne**] | Complexité moyenne des demandes initiées par l’utilisateur ou l’utilisatrice. <p>Le traitement de toutes les demandes ne prend pas le même temps. La complexité de la demande peut vous donner une idée générale du temps nécessaire pour traiter la demande.</p><p>La valeur de cette colonne est basée sur un score déterminé par les valeurs des colonnes suivantes :</p><ul><li>[!UICONTROL **Limites mensuelles moyennes**]</li><li>[!UICONTROL **Colonnes moyennes**]</li><li>[!UICONTROL **Segments moyens**]</li></ul> |
-| [!UICONTROL **Limites mensuelles moyennes**] | Nombre moyen de mois inclus dans les demandes. Une limite mensuelle importante ajoute à la complexité de la demande. |
+| [!UICONTROL **Limites mensuelles moyennes**] | Nombre moyen de mois inclus dans les demandes. Un plus grand nombre de limites mensuelles augmente la complexité de la demande. |
 | [!UICONTROL **Colonnes moyennes**] | Nombre moyen de mesures et de répartitions dans les demandes incluses. Un nombre plus important de colonnes ajoute à la complexité de la demande. |
-| [!UICONTROL **Segments moyens**] | Nombre moyen de segments appliqués aux demandes incluses. Un nombre important de segments ajoute à la complexité de la demande. |
+| [!UICONTROL **Segments moyens**] | Nombre moyen de segments appliqués aux demandes incluses. Un plus grand nombre de segments augmente la complexité de la demande. |
 
 {style="table-layout:auto"}
 
@@ -220,9 +229,9 @@ Lorsque vous sélectionnez l’onglet [!UICONTROL **Projet**], les colonnes suiv
 | [!UICONTROL **Projet**] | Projet dans lequel les demandes ont été initiées. |
 | [!UICONTROL **Nombre de demandes**] | Nombre de demandes associées au projet. |
 | [!UICONTROL **Nombre d’utilisateurs et d’utilisatrices**] | Nombre d’utilisateurs et d’utilisatrices associés au projet. <!-- ??? --> |
-| [!UICONTROL **Application**] | Les applications prises en charge par le [!UICONTROL Gestionnaire des activités de rapport] sont les suivantes : <ul><li>Interface utilisateur d’Analysis Workspace</li><li>Projets planifiés d’espace de travail</li><li>Report Builder</li><li>Interfaces d’utilisation des créateurs : Segment, Mesures calculées, Annotations, Audiences, etc.</li><li>Appels API à partir de la version d’API 2.0</li><li>Alertes<li>Export du tableau complet</li><li>Liens de partage avec tout le monde</li><li>Analyse guidée</li><li>Toute autre application interrogeant le moteur de création de rapports Analytics</li></li></ul> |
+| [!UICONTROL **Application**] | Les applications prises en charge par le [!UICONTROL Gestionnaire des activités de rapport] sont les suivantes : <ul><li>Interface utilisateur d’Analysis Workspace</li><li>Projets planifiés d’espace de travail</li><li>Report Builder</li><li>Interfaces d’utilisation des créateurs : Segment, Mesures calculées, Annotations, Audiences, etc.</li><li>Appels API à partir de la version d’API 2.0</li><li>Alertes<li>Export du tableau complet</li><li>Liens de partage avec tout le monde</li><li>Analyse guidée</li><li>Toute autre application qui envoie des requêtes au moteur de reporting Analytics</li></li></ul> |
 | [!UICONTROL **Complexité moyenne**] | Complexité moyenne des demandes incluses dans le projet. <p>Le traitement de toutes les demandes ne prend pas le même temps. La complexité de la demande peut vous donner une idée générale du temps nécessaire pour traiter la demande.</p><p>La valeur de cette colonne est basée sur un score déterminé par les valeurs des colonnes suivantes :</p><ul><li>[!UICONTROL **Limites mensuelles moyennes**]</li><li>[!UICONTROL **Colonnes moyennes**]</li><li>[!UICONTROL **Segments moyens**]</li></ul> |
-| [!UICONTROL **Limites mensuelles moyennes**] | Nombre moyen de mois inclus dans les demandes. Une limite mensuelle importante ajoute à la complexité de la demande. |
+| [!UICONTROL **Limites mensuelles moyennes**] | Nombre moyen de mois inclus dans les demandes. Un plus grand nombre de limites mensuelles augmente la complexité de la demande. |
 | [!UICONTROL **Colonnes moyennes**] | Nombre moyen de mesures et de répartitions dans les demandes incluses. Un nombre plus important de colonnes ajoute à la complexité de la demande. |
 | [!UICONTROL **Segments moyens**] | Nombre moyen de segments appliqués aux demandes incluses. Un nombre important de segments ajoute à la complexité de la demande. |
 
@@ -239,7 +248,7 @@ Lorsque vous sélectionnez l’onglet [!UICONTROL **Application**], les colonnes
 | [!UICONTROL **Nombre d’utilisateurs et d’utilisatrices**] | Nombre d’utilisateurs et d’utilisatrices associés à l’application. <!--???--> |
 | [!UICONTROL **Nombre de projets**] | Nombre de projets associés à l’application. <!--???--> |
 | [!UICONTROL **Complexité moyenne**] | Complexité moyenne des demandes associées à l’application. <p>Le traitement de toutes les demandes ne prend pas le même temps. La complexité de la demande peut vous donner une idée générale du temps nécessaire pour traiter la demande.</p><p>La valeur de cette colonne est basée sur un score déterminé par les valeurs des colonnes suivantes :</p>La valeur de cette colonne est basée sur un score déterminé par les valeurs des colonnes suivantes :<ul><li>[!UICONTROL **Limites mensuelles moyennes**]</li><li>[!UICONTROL **Colonnes moyennes**]</li><li>[!UICONTROL **Segments moyens**]</li></ul> |
-| [!UICONTROL **Limites mensuelles moyennes**] | Nombre moyen de mois inclus dans les demandes. Une limite mensuelle importante ajoute à la complexité de la demande. |
+| [!UICONTROL **Limites mensuelles moyennes**] | Nombre moyen de mois inclus dans les demandes. Un plus grand nombre de limites mensuelles augmente la complexité de la demande. |
 | [!UICONTROL **Colonnes moyennes**] | Nombre moyen de mesures et de répartitions dans les demandes incluses. Un nombre plus important de colonnes ajoute à la complexité de la demande. |
 | [!UICONTROL **Segments moyens**] | Nombre moyen de segments appliqués aux demandes incluses. Un nombre important de segments ajoute à la complexité de la demande. |
 

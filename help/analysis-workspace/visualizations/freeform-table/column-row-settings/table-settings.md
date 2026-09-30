@@ -4,25 +4,32 @@ title: Paramètres de ligne
 feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 role: User
-TQID: https://experienceleague.adobe.com/qQKmobJ4J1RPezRG-hk38l7JNioIshzjMaKXWVoUWsM
+TQID: 'https://experienceleague.adobe.com/qQKmobJ4J1RPezRG-hk38l7JNioIshzjMaKXWVoUWsM'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 88ff7c4124d4612a3411b315a605aec29bc9a218
+    internal-label: User
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1650
+source-wordcount: '1650'
 ht-degree: 53%
-
 ---
-
 # Paramètres des lignes
 
 Les paramètres des lignes varient selon le composant déposé dans le tableau. Pour accéder aux paramètres des lignes du tableau, sélectionnez ![Paramètre](/help/assets/icons/Setting.svg) **[!UICONTROL Paramètres]** en regard d’une dimension, d’un segment, d’une mesure, d’une période ou d’une répartition dans chacun de ces objets.
@@ -31,13 +38,13 @@ Les paramètres des lignes varient selon le composant déposé dans le tableau. 
 
 | Paramètre | Description |
 | --- | --- |
-| **[!UICONTROL Répartition par position]** | Par défaut, ce paramètre est désactivé et les répartitions sont fixées aux éléments de la ligne statique. Par exemple, imaginons que vous répartissiez les éléments de la dimension 3 premières pages (page d’accueil, résultats de recherche et passage en caisse) par canal marketing. Ensuite, vous quittez le projet et revenez deux semaines plus tard. Lors de la réouverture du projet, les 3 premières pages ont changé. Désormais, la page d’accueil, les résultats de recherche et le passage en caisse figurent sur les 4 à 6 premières pages. Par défaut, vos répartitions de canal marketing apparaissent toujours sous Page d’accueil, Résultats de la recherche et Passage en caisse, même si elles se trouvent désormais dans les lignes 4 à 6. <br> En revanche, la **Répartition par position** répartit toujours les 3 premiers éléments, quelle que soit leur nature. Pour revenir à l’exemple, lorsque vous rouvrez votre projet, les répartitions des canaux marketing sont liées aux 3 premières pages du tableau. Elles ne sont pas liées à Page d’accueil, Résultats de recherche et Passage en caisse, qui se trouvent désormais dans les lignes 4 à 6. |
-| **[!UICONTROL Pourcentages]** | **Calculer les pourcentages par colonne** (par défaut) : les pourcentages visibles dans une colonne sont calculés en fonction du total de la colonne. <br>**Calcul des pourcentages par ligne** : les pourcentages des cellules sont calculés par ligne, et non pas par colonne, avec le total général comme dénominateur. Ce calcul s’avère utile pour les pourcentages de tendance. |
+| **[!UICONTROL Répartition par position]** | Par défaut, ce paramètre est désactivé et les répartitions sont associées à des éléments de lignes statiques. Par exemple, imaginons que vous répartissiez les 3 premiers éléments de la dimension Page (Page d’accueil, Résultats de recherche, Passage en caisse) par canal marketing. Ensuite, vous quittez le projet et revenez deux semaines plus tard. Lors de la réouverture du projet, les 3 premières pages ont changé. Désormais, la page d’accueil, les résultats de recherche et le passage en caisse correspondent aux pages 4 à 6. Par défaut, vos répartitions de canal marketing apparaissent toujours sous Page d’accueil, Résultats de la recherche et Passage en caisse, même si elles se trouvent désormais dans les lignes 4 à 6. <br> En revanche, la **Répartition par position** répartit toujours les 3 premiers éléments, quelle que soit leur nature. Pour revenir à l’exemple, lorsque vous rouvrez votre projet, les répartitions des canaux marketing sont liées aux 3 premières pages du tableau. Elles ne sont pas liées à Page d’accueil, Résultats de recherche et Passage en caisse, qui se trouvent désormais dans les lignes 4 à 6. |
+| **[!UICONTROL Pourcentages]** | **Calculer les pourcentages par colonne** (par défaut) : les pourcentages visibles dans une colonne sont calculés en fonction du total de la colonne. <br>**Calcul des pourcentages par ligne** : les pourcentages des cellules sont calculés par ligne, et non pas par colonne, avec le total général comme dénominateur. Ce calcul s’avère utile pour l’analyse des tendances en pourcentage. |
 | **[!UICONTROL Totaux des colonnes]** | Ces paramètres sont uniquement disponibles pour les [lignes statiques](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md). <br> L’option **Afficher comme somme des lignes actuelles** affiche la somme des lignes du tableau côté client, ce qui signifie que le total *ne dédupliquera pas* de mesures telles que les visites ou les personnes. <br> L’option **Afficher le total général** indique une somme côté serveur, ce qui signifie que le total dédupliquera les mesures. |
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Paramètres de ligne et de colonne dans un tableau à structure libre](https://experienceleague.adobe.com/fr/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Paramètres de ligne et de colonne dans un tableau à structure libre](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 
@@ -88,7 +95,7 @@ Les options de menu contextuel supplémentaires suivantes sont disponibles lors 
 | **[!UICONTROL Visualisation]** | Visualisez la sélection à l’aide de l’une des visualisations disponibles. |
 | **[!UICONTROL Sélection de tendances]** | Créez une visualisation sous forme de graphique linéaire de tendance pour la sélection. |
 | **[!UICONTROL Afficher uniquement les lignes sélectionnées]** | Affichez uniquement les lignes sélectionnées dans la visualisation. |
-| **[!UICONTROL Afficher toutes les lignes]** | Affichez toutes les lignes de la visualisation. |
+| **[!UICONTROL Afficher toutes les lignes]** | Affichez toutes les lignes dans la visualisation. |
 | **[!UICONTROL Renommer la ligne sélectionnée]** | Renommez la ligne sélectionnée. Saisissez un **[!UICONTROL Nom]** dans la boîte de dialogue **[!UICONTROL Renommer la ligne sélectionnée]**. Sélectionnez **[!UICONTROL OK]** pour confirmer ou **[!UICONTROL Annuler]** pour annuler. Une fois qu’une ligne d’un tableau à structure libre est renommée, le nom de la dimension dans la colonne d’en-tête est ajouté avec la mention **[!UICONTROL (modifié)]** et une icône ![Engrenage](/help/assets/icons/Gear.svg) est disponible pour réinitialiser les lignes modifiées dans la colonne d’en-tête de dimension. Voir [Classifications intégrées](#inline-classifications-example). |
 | **[!UICONTROL Combiner les lignes sélectionnées]** | Combiner les lignes sélectionnées. Saisissez un **[!UICONTROL Nom]** dans la boîte de dialogue **[!UICONTROL Combiner les lignes sélectionnées]**. Sélectionnez **[!UICONTROL OK]** pour confirmer ou **[!UICONTROL Annuler]** pour annuler. Une fois les lignes d’un tableau à structure libre combinées, le nom de la dimension dans la colonne d’en-tête est ajouté avec **[!UICONTROL (modifié)]** et une icône ![Engrenage](/help/assets/icons/Gear.svg) est disponible pour réinitialiser les lignes modifiées dans la colonne d’en-tête de dimension. Voir [Classifications intégrées](#inline-classifications-example). |
 | **[!UICONTROL Créer des lignes modifiées comme champ dérivé]** | *Vous devez être un administrateur produit Customer Journey Analytics pour voir cette option de menu contextuel.*<br/> Disponible sur n’importe quelle ligne sélectionnée d’un tableau à structure libre qui est modifiée suite au changement de nom ou à la combinaison de lignes. Lorsque cette option est sélectionnée, l’[interface des champs dérivés](/help/data-views/derived-fields/derived-fields.md#create-a-derived-field) s’ouvre avec les modifications que vous avez apportées au tableau à structure libre déjà prérempli. Voir [Classifications intégrées](#inline-classifications-example). |
@@ -100,11 +107,11 @@ Les options de menu contextuel supplémentaires suivantes sont disponibles lors 
 
 | Option | Description |
 |---|---|
-| **[!UICONTROL Créer une mesure à partir d’une sélection]** | Créez une mesure à partir de la mesure sélectionnée. La mesure peut être Moyenne, Média, Colonne max, Colonne min, Somme de la colonne. Vous pouvez également sélectionner Ouvrir dans le créateur de mesures calculées pour créer une mesure calculée. |
+| **[!UICONTROL Créer une mesure à partir d’une sélection]** | Créez une nouvelle mesure à partir de la mesure sélectionnée. La mesure peut être Moyenne, Médiane, Colonne max, Colonne min, Somme de la colonne. Vous pouvez également sélectionner Ouvrir dans le créateur de mesures calculées pour créer une mesure calculée. |
 | **[!UICONTROL Ajouter une colonne de période]** | Ajoutez une colonne de période. Plusieurs options vous sont proposées, la période de calendrier du panneau déterminant la *période* : <ul><li>**[!UICONTROL *Période* précédant cette période]**</li><li>**[!UICONTROL *Période* à cette période]**.</li><li>**[!UICONTROL Période personnalisée à cette période]**. Ouvre le **[!UICONTROL Créateur de périodes]** pour spécifier la période.</li></ul>Voir [Comparaison de dates](/help/components/date-ranges/time-comparison.md) pour plus d’informations. |
 | **[!UICONTROL Comparaison de périodes]** | Ajoute des colonnes de comparaison de périodes. Disponible uniquement lorsque la dimension n’est pas temporelle. Plusieurs options permettent de déterminer la *période* : <ul><li>**[!UICONTROL *Période* précédant cette période]**</li><li>**[!UICONTROL Période personnalisée à cette période]**. Ouvre le **[!UICONTROL Créateur de périodes]** pour spécifier la période.</li></ul>Voir [Comparaison de dates](/help/components/date-ranges/time-comparison.md) pour plus d’informations. |
 | **[!UICONTROL Modifier les modèles d’attribution]** | Modifiez le modèle d’attribution de la colonne. |
-| **[!UICONTROL Comparer le modèle d’attribution]** | Spécifiez un nouveau modèle d’attribution et comparez-le au modèle d’attribution de la colonne sélectionnée. Une nouvelle colonne est ajoutée avec les nouvelles mesures de modèle d’attribution. Une colonne Changement en pourcentage est également ajoutée à des fins de comparaison. |
+| **[!UICONTROL Comparer le modèle d’attribution]** | Spécifiez un nouveau modèle d’attribution et comparez-le au modèle d’attribution de la colonne sélectionnée. Une nouvelle colonne est ajoutée avec les mesures du nouveau modèle d’attribution. Une colonne Changement en pourcentage est également ajoutée à des fins de comparaison. |
 | **[!UICONTROL Réinitialiser les largeurs de colonne]** | Rétablissez la largeur par défaut des colonnes. |
 | **[!UICONTROL Créer une annotation à partir d’une sélection]** | Ouvrez le [créateur d’annotations](/help/components/annotations/create-annotations.md#annotation-builder) pour créer une annotation pour la sélection. |
 | **[!UICONTROL Créer un segment à partir de la sélection]** | Ouvrez le [Créateur de segments](/help/components/segments/seg-builder.md) pour créer un segment à partir de la sélection. |
@@ -113,7 +120,7 @@ Les options de menu contextuel supplémentaires suivantes sont disponibles lors 
 
 ## Modifier la hauteur des lignes
 
-Vous pouvez définir la [densité d’affichage](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density) d’un projet sur **[!UICONTROL Compact]**, **[!UICONTROL Confortable]** et **[!UICONTROL Développé]**.
+Vous pouvez définir la [densité d’affichage](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density) d’un projet sur **[!UICONTROL Compact]**, **[!UICONTROL Confortable]** et **[!UICONTROL Développé]**.
 
 
 ## Classifications intégrées {#inline-classifications-example}
@@ -158,11 +165,11 @@ L’exemple ci-dessous illustre comment utiliser les options de menu contextuel 
 
   1. Sélectionnez **[!UICONTROL Créer des lignes modifiées comme champ dérivé]** dans le menu contextuel pour toute ligne sélectionnée dans le tableau modifié.
 
-     ![Sélectionnez l’option de menu Créer des lignes modifiées en tant que champ dérivé &#x200B;](assets/context-derived.png)
+     ![Sélectionnez l’option de menu Créer des lignes modifiées en tant que champ dérivé ](assets/context-derived.png)
 
   1. Inspectez, éventuellement modifiez et enregistrez la définition du champ dérivé en fonction de toutes les modifications apportées dans le tableau.
 
-     ![&#x200B; Boîte de dialogue Créer un champ dérivé &#x200B;](assets/dialog-derived.png)
+     ![ Boîte de dialogue Créer un champ dérivé ](assets/dialog-derived.png)
 
 * Réinitialiser le tableau à structure libre à l’état avant les modifications.
 

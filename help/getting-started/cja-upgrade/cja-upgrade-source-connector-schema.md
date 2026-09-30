@@ -9,23 +9,30 @@ autotag-review: '2026-05-19T08:17:31.632Z'
 TQID: 'https://experienceleague.adobe.com/ov6cr-MF9OeH8OU23Km0KdD2l0LirVpVor4nndHpqo8'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
+    internal-label: Upgrade
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Customer journeys
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 587
+source-wordcount: '587'
 ht-degree: 100%
-
 ---
-
 # Créer un schéma personnalisé pour le connecteur source Analytics {#create-custom-schema}
 
 <!-- markdownlint-disable MD034 -->
@@ -33,7 +40,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector-create-schema"
 >title="Créer un schéma pour le connecteur source Analytics"
->abstract="Ce schéma est une combinaison du groupe de champs ExperienceEvent Adobe Analytics avec tous les groupes de champs qui constituent le schéma personnalisé de votre organisation. Cela vous permet de mapper les champs utilisés par le connecteur source Analytics au schéma de votre organisation et n’est utilisé que pour les données historiques.<br><br>Bien que technique par nature, la création de ce schéma peut se faire en quelques heures, peut-être plus rapidement si vous savez exactement quels groupes de champs constituent le schéma personnalisé de votre organisation."
+>abstract="Ce schéma est une combinaison du groupe de champs Adobe Analytics ExperienceEvent et de tous les groupes de champs qui composent le schéma personnalisé de votre organisation. Cela vous permet de mapper les champs utilisés par le connecteur source Analytics au schéma de votre organisation et n’est utilisé que pour les données historiques.<br><br>Bien que technique par nature, la création de ce schéma peut se faire en quelques heures, peut-être plus rapidement si vous savez exactement quels groupes de champs constituent le schéma personnalisé de votre organisation."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -74,9 +81,9 @@ Vous devez maintenant utiliser ces mêmes groupes de champs de votre schéma de 
 
 Ce schéma pour le connecteur source Analytics doit contenir les éléments suivants :
 
-* Tous les groupes de champs (y compris les groupes de champs personnalisés que vous avez créés) inclus dans le schéma personnalisé que vous avez créé pour votre implémentation du SDK web. (Tous les champs personnalisés qui ne font pas partie d’un groupe de champs par défaut doivent avoir été ajoutés à votre schéma de SDK web dans le cadre d’un groupe de champs personnalisés.)
+* Tous les groupes de champs (y compris les groupes de champs personnalisés que vous avez créés) inclus dans le schéma personnalisé que vous avez créé pour votre mise en œuvre du SDK web. (Tous les champs personnalisés qui ne font pas partie d’un groupe de champs par défaut doivent avoir été ajoutés à votre schéma de SDK web dans le cadre d’un groupe de champs personnalisés.)
 
-* Groupe de champs Modèle ExperienceEvent Adobe Analytics
+* Le groupe de champs de modèle Adobe Analytics ExperienceEvent
 
 Pour créer le schéma personnalisé à utiliser avec le connecteur source Analytics, procédez comme suit :
 

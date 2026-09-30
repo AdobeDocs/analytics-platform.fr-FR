@@ -4,7 +4,19 @@ description: Découvrez quand les entrées **[!UICONTROL Aucune valeur]** dans l
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
-source-git-commit: bc1e610ccf13ca831f40b2819a4665fe8ea21b7b
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
+subfeature_v2:
+  - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+    internal-label: Use cases
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
 source-wordcount: '1936'
 ht-degree: 0%
@@ -42,7 +54,7 @@ Voici les raisons courantes et attendues pour lesquelles **[!UICONTROL Aucune va
 
 Dans ces cas, la mention **[!UICONTROL Aucune valeur]** indique où se trouve un utilisateur dans son parcours d’authentification, lors du passage d’un statut non identifié à un statut identifié, comme illustré ci-dessous.
 
-parcours d’authentification de l’utilisateur affichant un utilisateur visitant le site et accédant à un statut de pré-connexion sans informations utilisateur disponibles, puis un événement de connexion qui renseigne les informations de l’utilisateur![&#128279;](assets/no-value-login-flow.svg)
+parcours d’authentification de l’utilisateur affichant un utilisateur visitant le site et accédant à un statut de pré-connexion sans informations utilisateur disponibles, puis un événement de connexion qui renseigne les informations de l’utilisateur](assets/no-value-login-flow.svg)![
 
 
 ## Lorsque Aucune valeur n’a besoin d’attention
@@ -67,7 +79,7 @@ Vérifiez les entrées **[!UICONTROL Aucune valeur]** lorsqu’elles résultent 
 
 ## Gérer No value dans les paramètres de la vue de données
 
-Les paramètres de vue de données vous permettent de contrôler l’affichage des éléments **[!UICONTROL Aucune valeur]** dans les rapports. Vous pouvez notamment renommer le libellé, afficher ou masquer les éléments par défaut et traiter **[!UICONTROL Aucune valeur]** comme une valeur de chaîne légitime. Pour obtenir la liste complète des paramètres et leur impact sur les distributions en pourcentage, le filtrage et la segmentation[&#128279;](/help/data-views/component-settings/no-value-options.md) consultez la section Paramètres du composant Aucune option de valeur).
+Les paramètres de vue de données vous permettent de contrôler l’affichage des éléments **[!UICONTROL Aucune valeur]** dans les rapports. Vous pouvez notamment renommer le libellé, afficher ou masquer les éléments par défaut et traiter **[!UICONTROL Aucune valeur]** comme une valeur de chaîne légitime. Pour obtenir la liste complète des paramètres et leur impact sur les distributions en pourcentage, le filtrage et la segmentation](/help/data-views/component-settings/no-value-options.md) consultez la section [Paramètres du composant Aucune option de valeur).
 
 Lors de la configuration de ces paramètres, évaluez vos exigences en matière de création de rapports et évaluez l’impact de la présence de **[!UICONTROL Aucune valeur]** sur votre analyse. Tenez compte à la fois des effets immédiats sur la visibilité des données et des impacts à long terme sur l’analyse des tendances et la cohérence des rapports. Des configurations bien choisies améliorent la clarté des données tout en préservant l’accessibilité et l’exploitabilité des informations commerciales, quelle que soit la manière dont les entrées **[!UICONTROL Aucune valeur]** apparaissent dans vos rapports. La configuration idéale équilibre la représentation des données avec les besoins analytiques pratiques, créant ainsi un environnement de création de rapports qui fournit des informations précises et significatives même lorsque **[!UICONTROL aucune valeur]** données n’est présente.
 
@@ -202,4 +214,4 @@ Toutes les entrées **[!UICONTROL Aucune valeur]** ne signalent pas un problème
 
 >[!MORELIKETHIS]
 >
->[Le playbook complet pour la gestion de **[!UICONTROL Aucune valeur]** dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/the-complete-playbook-for-handling-no-value-in-adobe-cja-12769?profile.language=fr)
+>[Le playbook complet pour la gestion de **[!UICONTROL Aucune valeur]** dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/the-complete-playbook-for-handling-no-value-in-adobe-cja-12769)

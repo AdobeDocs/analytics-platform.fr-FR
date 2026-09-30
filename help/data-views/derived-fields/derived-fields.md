@@ -5,30 +5,43 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-TQID: https://experienceleague.adobe.com/zpiJFUF8RnIdFQWf29FBpRznWO3Ejs-j2szx69kdMNE
+TQID: 'https://experienceleague.adobe.com/zpiJFUF8RnIdFQWf29FBpRznWO3Ejs-j2szx69kdMNE'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
 subfeature_v2:
   - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
+    internal-label: Templates
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: f3ca85c1-72de-4df2-97ed-05753cd77c47
+    internal-label: Derived fields
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: beb7a3c1-66ab-4786-b879-7621375b3c40
-source-git-commit: 3fcb9c403ace295c1a7e62c21d8bb444a4f9c011
+    internal-label: Email marketing
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 10602
+source-wordcount: '10602'
 ht-degree: 98%
-
 ---
-
 # Champs dérivés {#derived-fields}
 
 >[!CONTEXTUALHELP]
@@ -71,10 +84,10 @@ Lorsque vous créez ou modifiez un champ dérivé, vous utilisez l’interface d
 
 |  | Nom | Description |
 |---------|----------|--------|
-| 1 | **Sélecteur** | Utilisez la zone de sélection pour sélectionner une fonction, un modèle de fonction, un champ de schéma ou un champ standard, puis faire glisser l’élément sur le créateur de règles. <br/>Utilisez la liste déroulante pour sélectionner entre : <br/>![Fonction](assets/Smock_Function_18_N.svg) [!UICONTROL Fonctions] - répertorie les [fonctions](#function-reference), </br>![Icône de modèle de fonction](assets/Smock_FileTemplate_18_N.svg) [!UICONTROL Modèles de fonction] disponibles - répertorie les [modèles de fonction](#function-templates), <br/>![icône Champs de schéma](assets/Smock_Folder_18_N.svg) [!UICONTROL Champs de schéma] - répertorie les champs disponibles à partir des catégories de jeux de données (événement, profil, recherche) et les champs dérivés définis précédemment, et les <br/>![Icône de champ standard](assets/Smock_DragHandle_18_N.svg) [!UICONTROL Champs standard] - champs standard disponibles (tels que l’identifiant de jeu de données Platform). Seuls les champs de chaîne et les champs numériques standard sont affichés dans le sélecteur. Si la fonction prend en charge d’autres types de données, les champs standard avec ces autres types de données peuvent être sélectionnés pour les valeurs ou les champs de l’interface de règle.<br/>Vous pouvez rechercher une fonction, des modèles de fonction, un schéma et des champs standard à l’aide de la zone de recherche ![Icône de recherche](assets/Smock_Search_18_N.svg). <br/>Vous pouvez filtrer la liste d’objets sélectionnée en sélectionnant ![Icône Filtrer](assets/Smock_Filter_18_N.svg) Filtrer et spécifier des filtres dans la boîte de dialogue [!UICONTROL Filtrer les champs par]. Vous pouvez facilement supprimer des filtres à l’aide de l’![icône Fermer](assets/CrossSize75.svg) pour chaque filtre. |
-| 2 | **Créateur de règles** | Vous créez votre champ dérivé de manière séquentielle à l’aide d’une ou de plusieurs règles. Une règle est une implémentation spécifique d’une fonction et n’est donc toujours associée qu’à une seule fonction. Pour créer une règle, faites glisser une fonction dans le créateur de règles, puis déposez-la. Le type de fonction détermine l’interface de la règle.<br/>Consultez la section [Interface de règle](#rule-interface) pour plus dʼinformations. <br/>Vous pouvez insérer une fonction au début, à la fin ou entre des règles déjà disponibles dans le créateur de règles. La dernière règle du créateur de règles détermine la sortie finale du champ dérivé. |
-| 3 | **[!UICONTROL **&#x200B; Paramètres de champ &#x200B;**]** | Vous pouvez nommer et décrire votre champ dérivé et inspecter son type de champ. |
-| 4 | **[!UICONTROL **&#x200B; Sortie finale &#x200B;**]** | Cette zone affiche un aperçu mis à jour à la volée des valeurs de sortie, en fonction des données des 30 derniers jours et des modifications que vous apportez au champ dérivé dans le créateur de règles. |
+| 1 | **Sélecteur** | Utilisez la zone de sélecteur pour sélectionner une fonction, un modèle de fonction, un champ de schéma ou un champ standard, puis faites glisser l’élément sur le créateur de règles. <br/>Utilisez la liste déroulante pour sélectionner entre : <br/>![Fonction](assets/Smock_Function_18_N.svg) [!UICONTROL Fonctions] - répertorie les [fonctions](#function-reference), </br>![Icône de modèle de fonction](assets/Smock_FileTemplate_18_N.svg) [!UICONTROL Modèles de fonction] disponibles - répertorie les [modèles de fonction](#function-templates), <br/>![icône Champs de schéma](assets/Smock_Folder_18_N.svg) [!UICONTROL Champs de schéma] - répertorie les champs disponibles à partir des catégories de jeux de données (événement, profil, recherche) et les champs dérivés définis précédemment, et les <br/>![Icône de champ standard](assets/Smock_DragHandle_18_N.svg) [!UICONTROL Champs standard] - champs standard disponibles (tels que l’identifiant de jeu de données Platform). Seuls les champs de chaîne et les champs numériques standard sont affichés dans le sélecteur. Si la fonction prend en charge d’autres types de données, les champs standard avec ces autres types de données peuvent être sélectionnés pour les valeurs ou les champs de l’interface de règle.<br/>Vous pouvez rechercher une fonction, des modèles de fonction, un schéma et des champs standard à l’aide de la zone de recherche ![Icône de recherche](assets/Smock_Search_18_N.svg). <br/>Vous pouvez filtrer la liste d’objets sélectionnée en sélectionnant ![Icône Filtrer](assets/Smock_Filter_18_N.svg) Filtrer et spécifier des filtres dans la boîte de dialogue [!UICONTROL Filtrer les champs par]. Vous pouvez facilement supprimer des filtres à l’aide de l’![icône Fermer](assets/CrossSize75.svg) pour chaque filtre. |
+| 2 | **Créateur de règles** | Vous créez votre champ dérivé de manière séquentielle à l’aide d’une ou de plusieurs règles. Une règle est une mise en œuvre spécifique d’une fonction et n’est donc toujours associée qu’à une seule fonction. Pour créer une règle, faites glisser une fonction dans le créateur de règles, puis déposez-la. Le type de fonction détermine l’interface de la règle.<br/>Consultez la section [Interface de règle](#rule-interface) pour plus dʼinformations. <br/>Vous pouvez insérer une fonction au début, à la fin ou entre des règles déjà disponibles dans le créateur de règles. La dernière règle du créateur de règles détermine la sortie finale du champ dérivé. |
+| 3 | **[!UICONTROL ** Paramètres de champ **]** | Vous pouvez nommer et décrire votre champ dérivé et inspecter son type de champ. |
+| 4 | **[!UICONTROL ** Sortie finale **]** | Cette zone affiche un aperçu mis à jour à la volée des valeurs de sortie, en fonction des données des 30 derniers jours et des modifications que vous apportez au champ dérivé dans le créateur de règles. |
 
 {style="table-layout:auto"}
 
@@ -83,7 +96,7 @@ Lorsque vous créez ou modifiez un champ dérivé, vous utilisez l’interface d
 Lorsque vous accédez pour la première fois à l’interface des champs dérivés, l’assistant [!UICONTROL Commencer par un modèle de champ] s’affiche.
 
 1. Sélectionnez le modèle qui décrit le mieux le type de champ que vous essayez de créer.
-2. Sélectionnez le bouton **[!UICONTROL **&#x200B; Sélectionnez &#x200B;**]** pour continuer.
+2. Sélectionnez le bouton **[!UICONTROL ** Sélectionnez **]** pour continuer.
 
 La boîte de dialogue du champ dérivé est renseignée avec les règles (et fonctions) requises ou utiles pour le type de champ que vous avez sélectionné. Consultez [Modèles de fonction](#function-templates) pour plus d’informations sur les modèles disponibles.
 
@@ -96,8 +109,8 @@ Lorsque vous définissez une règle dans le créateur de règles, vous utilisez 
 |  | Nom | Description |
 |---------|----------|--------|
 | A | **Nom de la règle** | Par défaut, le nom de la règle est **Règle X** (X faisant référence à un numéro de séquence). Pour modifier le nom d’une règle, sélectionnez son nom et saisissez le nouveau nom, par exemple `Query Parameter`. |
-| B | **Nom de la fonction** | Nom de la fonction sélectionnée pour la règle, par exemple [!UICONTROL URL PARSE]. Lorsque la fonction est la dernière de la séquence de fonctions et détermine les valeurs de sortie finales, le nom de la fonction est suivi de [!UICONTROL &#x200B; - SORTIE FINALE], par exemple [!UICONTROL URL PARSE - SORTIE FINALE]. <br/>Pour afficher une fenêtre contextuelle contenant plus d’informations sur la fonction, sélectionnez ![icône d’aide](assets/Smock_HelpOutline_18_N.svg). |
-| C | **Description de la règle** | Vous pouvez éventuellement ajouter une description à une règle.<br/>Sélectionnez ![icône Plus](assets/More.svg), puis sélectionnez **[!UICONTROL ** Ajouter une description **]** pour ajouter une description ou **[!UICONTROL **&#x200B; Modifier la description &#x200B;**]** pour modifier une description existante.<br/>Utilisez l’éditeur pour saisir une description. Vous pouvez utiliser la barre d’outils pour mettre en forme le texte (à l’aide du sélecteur de style, en gras, en italique, en soulignement, à droite, à gauche, centré, en couleur, en liste numérique et à puces) et ajouter des liens à des informations externes. <br/>Pour terminer la modification de la description, cliquez en dehors de l’éditeur. |
+| B | **Nom de la fonction** | Nom de la fonction sélectionnée pour la règle, par exemple [!UICONTROL URL PARSE]. Lorsque la fonction est la dernière de la séquence de fonctions et détermine les valeurs de sortie finales, le nom de la fonction est suivi de [!UICONTROL  - SORTIE FINALE], par exemple [!UICONTROL URL PARSE - SORTIE FINALE]. <br/>Pour afficher une fenêtre contextuelle contenant plus d’informations sur la fonction, sélectionnez ![icône d’aide](assets/Smock_HelpOutline_18_N.svg). |
+| C | **Description de la règle** | Vous pouvez éventuellement ajouter une description à une règle.<br/>Sélectionnez ![icône Plus](assets/More.svg), puis sélectionnez **[!UICONTROL ** Ajouter une description **]** pour ajouter une description ou **[!UICONTROL ** Modifier la description **]** pour modifier une description existante.<br/>Utilisez l’éditeur pour saisir une description. Vous pouvez utiliser la barre d’outils pour mettre en forme le texte (à l’aide du sélecteur de style, en gras, en italique, en soulignement, à droite, à gauche, centré, en couleur, en liste numérique et à puces) et ajouter des liens à des informations externes. <br/>Pour terminer la modification de la description, cliquez en dehors de l’éditeur. |
 | D | **Zone de fonction** | Définit la logique de la fonction. L’interface dépend du type de fonction. La liste déroulante de [!UICONTROL Champ] ou [!UICONTROL Valeur] affiche toutes les catégories de champs (règles, champs standard, champs) disponibles, en fonction du type d’entrée attendu par la fonction. Vous pouvez également faire glisser et déposer un champ du sélecteur de schémas et de champs standard vers un champ ou une valeur. Lorsque ce champ déplacé provient d’un jeu de données de recherche, une fonction de recherche est automatiquement insérée avant la fonction que vous définissez. <br/>Consultez [Référence des fonctions](#function-reference) pour des informations détaillées sur chacune des fonctions prises en charge. |
 
 {style="table-layout:auto"}
@@ -106,38 +119,38 @@ Lorsque vous définissez une règle dans le créateur de règles, vous utilisez 
 
 1. Sélectionnez une vue de données existante ou créez une vue de données. Pour plus d’informations, reportez-vous à la section [Vues de données](../data-views.md).
 
-2. Sélectionnez l’onglet **[!UICONTROL **&#x200B; Composants &#x200B;**]** de la vue de données.
+2. Sélectionnez l’onglet **[!UICONTROL ** Composants **]** de la vue de données.
 
-3. Sélectionnez **[!UICONTROL **&#x200B; Créer un champ dérivé&#x200B;**]** dans le rail de gauche.
+3. Sélectionnez **[!UICONTROL ** Créer un champ dérivé&#x200B;**]** dans le rail de gauche.
 
 4. Pour définir votre champ dérivé, utilisez l’interface [!UICONTROL Créer un champ dérivé]. Consultez [Interface des champs dérivés](#derived-field-interface).
 
-   Pour enregistrer votre nouveau champ dérivé, sélectionnez **[!UICONTROL **&#x200B; Enregistrer &#x200B;**]**.
+   Pour enregistrer votre nouveau champ dérivé, sélectionnez **[!UICONTROL ** Enregistrer **]**.
 
-5. Votre nouveau champ dérivé est ajouté au conteneur [!UICONTROL Champs dérivés >], dans le cadre des **[!UICONTROL **&#x200B; Champs de schéma &#x200B;**]** dans le rail gauche de votre vue de données.
+5. Votre nouveau champ dérivé est ajouté au conteneur [!UICONTROL Champs dérivés >], dans le cadre des **[!UICONTROL ** Champs de schéma **]** dans le rail gauche de votre vue de données.
 
 
 ## Modifier un champ dérivé {#edit}
 
 1. Sélectionnez une vue de données existante. Pour plus d’informations, reportez-vous à la section [Vues de données](../data-views.md).
 
-2. Sélectionnez l’onglet **[!UICONTROL **&#x200B; Composants &#x200B;**]** de la vue de données.
+2. Sélectionnez l’onglet **[!UICONTROL ** Composants **]** de la vue de données.
 
-3. Sélectionnez l’onglet **[!UICONTROL **&#x200B; Champs de schéma &#x200B;**]** dans le volet [!UICONTROL Connexion] à gauche.
+3. Sélectionnez l’onglet **[!UICONTROL ** Champs de schéma **]** dans le volet [!UICONTROL Connexion] à gauche.
 
-4. Sélectionnez le conteneur **[!UICONTROL **&#x200B; Champs dérivés >**]**.
+4. Sélectionnez le conteneur **[!UICONTROL ** Champs dérivés >**]**.
 
 5. Pointez sur le champ dérivé à modifier, puis sélectionnez ![icône Modifier](assets/Smock_Edit_18_N.svg).
 
 6. Pour modifier le champ dérivé, utilisez l’interface [!UICONTROL Modifier le champ dérivé]. Consultez [Interface des champs dérivés](#derived-field-interface).
 
-   - Sélectionnez **[!UICONTROL **&#x200B; Enregistrer &#x200B;**]** pour enregistrer le champ dérivé mis à jour.
+   - Sélectionnez **[!UICONTROL ** Enregistrer **]** pour enregistrer le champ dérivé mis à jour.
 
-   - Sélectionnez **[!UICONTROL **&#x200B; Annuler &#x200B;**]** pour annuler les modifications apportées au champ dérivé.
+   - Sélectionnez **[!UICONTROL ** Annuler **]** pour annuler les modifications apportées au champ dérivé.
 
-   - Sélectionnez **[!UICONTROL **&#x200B; Enregistrer sous &#x200B;**]** pour enregistrer le champ dérivé en tant que nouveau champ dérivé. Le nouveau champ dérivé porte le même nom que le champ dérivé modifié d’origine, avec `(copy)` en plus.
+   - Sélectionnez **[!UICONTROL ** Enregistrer sous **]** pour enregistrer le champ dérivé en tant que nouveau champ dérivé. Le nouveau champ dérivé porte le même nom que le champ dérivé modifié d’origine, avec `(copy)` en plus.
 
-Si vous avez également utilisé un champ dérivé en tant que composant pour des dimensions ou des mesures dans votre vue de données :
+Autrement, si vous avez utilisé un champ dérivé en tant que composant pour des dimensions ou des mesures dans votre vue de données :
 
 1. Sélectionnez le composant. Notez que le composant peut avoir un nom différent de celui de votre champ dérivé.
 
@@ -145,11 +158,11 @@ Si vous avez également utilisé un champ dérivé en tant que composant pour de
 
 1. Pour modifier le champ dérivé, utilisez l’interface [!UICONTROL Modifier le champ dérivé]. Consultez [Interface des champs dérivés](#derived-field-interface).
 
-   - Sélectionnez **[!UICONTROL **&#x200B; Enregistrer &#x200B;**]** pour enregistrer le champ dérivé mis à jour.
+   - Sélectionnez **[!UICONTROL ** Enregistrer **]** pour enregistrer le champ dérivé mis à jour.
 
-   - Sélectionnez **[!UICONTROL **&#x200B; Annuler &#x200B;**]** pour annuler les modifications apportées au champ dérivé.
+   - Sélectionnez **[!UICONTROL ** Annuler **]** pour annuler les modifications apportées au champ dérivé.
 
-   - Sélectionnez **[!UICONTROL **&#x200B; Enregistrer sous &#x200B;**]** pour enregistrer le champ dérivé en tant que nouveau champ dérivé. Le nouveau champ dérivé porte le même nom que le champ dérivé modifié d’origine, avec `(copy)` en plus.
+   - Sélectionnez **[!UICONTROL ** Enregistrer sous **]** pour enregistrer le champ dérivé en tant que nouveau champ dérivé. Le nouveau champ dérivé porte le même nom que le champ dérivé modifié d’origine, avec `(copy)` en plus.
 
 
 
@@ -157,11 +170,11 @@ Si vous avez également utilisé un champ dérivé en tant que composant pour de
 
 1. Sélectionnez une vue de données existante. Pour plus d’informations, reportez-vous à la section [Vues de données](../data-views.md).
 
-2. Sélectionnez l’onglet **[!UICONTROL **&#x200B; Composants &#x200B;**]** de la vue de données.
+2. Sélectionnez l’onglet **[!UICONTROL ** Composants **]** de la vue de données.
 
-3. Sélectionnez l’onglet **[!UICONTROL **&#x200B; Champs de schéma &#x200B;**]** dans le volet [!UICONTROL Connexion].
+3. Sélectionnez l’onglet **[!UICONTROL ** Champs de schéma **]** dans le volet [!UICONTROL Connexion].
 
-4. Sélectionnez **[!UICONTROL **&#x200B; Champs dérivés >**]** Conteneur.
+4. Sélectionnez **[!UICONTROL ** Champs dérivés >**]** Conteneur.
 
 5. Pointez sur le champ dérivé à supprimer, puis sélectionnez ![icône Modifier](assets/Smock_Edit_18_N.svg).
 
@@ -169,7 +182,7 @@ Si vous avez également utilisé un champ dérivé en tant que composant pour de
 
    Une boîte de dialogue [!UICONTROL Supprimer le composant] vous demande de confirmer la suppression. Tenez compte des références externes qui peuvent exister au champ dérivé en dehors de la vue de données.
 
-   - Sélectionnez **[!UICONTROL **&#x200B; Continuer &#x200B;**]** pour supprimer le champ dérivé.
+   - Sélectionnez **[!UICONTROL ** Continuer **]** pour supprimer le champ dérivé.
 
 Si vous avez également utilisé un champ dérivé en tant que composant pour des dimensions ou des mesures dans votre vue de données :
 
@@ -181,7 +194,7 @@ Si vous avez également utilisé un champ dérivé en tant que composant pour de
 
    Une boîte de dialogue [!UICONTROL Supprimer le composant] vous demande de confirmer la suppression. Tenez compte des références externes qui peuvent exister au champ dérivé en dehors de la vue de données.
 
-   - Sélectionnez **[!UICONTROL **&#x200B; Continuer &#x200B;**]** pour supprimer le champ dérivé.
+   - Sélectionnez **[!UICONTROL ** Continuer **]** pour supprimer le champ dérivé.
 
 >[!NOTE]
 >
@@ -636,7 +649,7 @@ Vous définissez un champ dérivé `Product Finding Methods (new)`. Vous créez 
 
 ## Cas d’utilisation 3 {#casewhen-uc3}
 
-En tant qu’agence de voyages, vous souhaitez regrouper la durée des voyages pour les voyages réservés afin de pouvoir générer des rapports sur la durée regroupée des voyages.
+En tant qu’agence de voyages, vous souhaitez regrouper la durée des voyages réservés en tranches afin de pouvoir créer des rapports sur ces différentes tranches de durée.
 
 Hypothèses :
 
@@ -979,7 +992,7 @@ Renvoie la différence entre deux dates ou deux champs Date-heure.
 
 | Type de données d’entrée | Entrée | Opérateurs inclus | Restrictions | Sortie |
 |---|---|---|---|---|
-| <ul><li>Date</li><li>Date-heure</li></ul> | <ul><li>[!UICONTROL Portée]<ul><li>Événement</li><li>Session</li><li>Personne</li></ul></li><li>[!UICONTROL Valeur] :<ul><li>Date</li><li>Date et heure</li><li>Date statique (saisie par l’utilisateur ou l’utilisatrice)</li><li>Date-heure statique (saisie par l’utilisateur ou l’utilisatrice)</li><li>Date dynamique<ul><li>Aujourd’hui</li></ul></li><li>Date-heure dynamique<ul><li>Maintenant</li></ul></li></ul></li><li>[!UICONTROL Granularité] :<ul><li>Seconds</li><li>Minutes</li><li>Heures</li><li>Days</li><li>Weeks</li><li>Months</li><li>Trimestres</li><li>Ans</li></ul></li><li>Pour chaque renvoi de Date ou Date-heure :<ul><li>Première (dans la session ou personne)</li><li>Dernière (dans la session ou personne)</li></ul></li></ul> | <p>S.O.</p> | <p>2 fonctions par champ dérivé</p> | <p>Nouveau champ dérivé</p> |
+| <ul><li>Date</li><li>Date-heure</li></ul> | <ul><li>[!UICONTROL Portée]<ul><li>Événement</li><li>Session</li><li>Personne</li></ul></li><li>[!UICONTROL Valeur] :<ul><li>Date</li><li>Date et heure</li><li>Date statique (saisie par l’utilisateur ou l’utilisatrice)</li><li>Date-heure statique (saisie par l’utilisateur ou l’utilisatrice)</li><li>Date dynamique<ul><li>Aujourd’hui</li></ul></li><li>Date-heure dynamique<ul><li>Maintenant</li></ul></li></ul></li><li>[!UICONTROL Granularité] :<ul><li>Seconds</li><li>Minutes</li><li>Heures</li><li>Days</li><li>Weeks</li><li>Months</li><li>Trimestres</li><li>Ans</li></ul></li><li>Pour chaque renvoi de Date ou Date-heure :<ul><li>Premier (dans la session ou pour la personne)</li><li>Dernier (dans la session ou pour la personne)</li></ul></li></ul> | <p>S.O.</p> | <p>2 fonctions par champ dérivé</p> | <p>Nouveau champ dérivé</p> |
 
 {style="table-layout:auto"}
 
@@ -993,7 +1006,7 @@ En tant qu’analyste marketing d’une société hôtelière, vous souhaitez co
 
 Vous définissez un champ dérivé `Days between booking and check-in`. Utilisez la fonction [!UICONTROL DATE MATH] pour définir une règle afin de calculer le nombre de jours de la [!DNL Person] [!UICONTROL Portée] entre la [!UICONTROL Date de réservation] et la [!UICONTROL Date d’enregistrement]. Vous sélectionnez [!UICONTROL Jour] comme [!UICONTROL Granularité de sortie]. Vous pouvez également sélectionner [!UICONTROL Renvoyer la dernière personne] à la fois pour [!UICONTROL Date de réservation] et [!UICONTROL Date d’enregistrement] pour vous assurer que la valeur étendue de la dernière personne est utilisée dans le calcul.
 
-![Copie d’écran de la règle Date Math &#x200B;](assets/datemath-1.png)
+![Copie d’écran de la règle Date Math ](assets/datemath-1.png)
 
 
 ## Cas d’utilisation 2 {#datemath-uc2}
@@ -1013,7 +1026,7 @@ Vous pouvez également utiliser la valeur pratique de période dynamique Mainten
 
 ## Cas d’utilisation 3 {#datemath-uc3}
 
-Vous souhaitez comprendre le temps de recherche, en minutes, qu’une personne consacre avant de passer une commande au cours d’une session.
+Vous souhaitez connaître le temps de recherche, en minutes, avant qu’un client ne passe une commande au cours d’une session.
 
 Vous définissez un nouveau champ dérivé de `Time Between Search And Order In Minutes` qui est le résultat de deux fonctions [[!UICONTROL CASE WHEN]](#case-when) pour définir les valeurs [!UICONTROL Temps de recherche] et [!UICONTROL Temps de commande].
 Vous utilisez ensuite ces deux valeurs pour calculer la différence à l’aide d’une fonction [!UICONTROL DATE MATH], avec la [!UICONTROL portée] définie sur [!UICONTROL Session], les valeurs définies sur [!UICONTROL Temps de recherche] et [!UICONTROL Temps de commande], et la [!UICONTROL granularité de sortie] définie sur [!UICONTROL Minute]. Pour les deux valeurs, sélectionnez [!UICONTROL Renvoyer la première] pour vous assurer que la première [!UICONTROL Heure de recherche] et la première [!UICONTROL Heure de commande] sont renvoyées.
@@ -1052,7 +1065,7 @@ Empêche de compter une valeur plusieurs fois.
 
 ## Cas d’utilisation 1 {#deduplicate-uc1}
 
-Vous souhaitez éviter de compter les revenus en double lorsqu’une personne recharge la page de confirmation de réservation. Vous utilisez l’ID de confirmation de réservation à l’identifiant pour ne plus comptabiliser le chiffre d’affaires une fois reçu lors du même événement.
+Vous souhaitez éviter de compter les revenus en double lorsqu’une personne recharge la page de confirmation de réservation. Vous utilisez l’ID de confirmation de réservation comme identifiant afin de ne pas comptabiliser à nouveau le chiffre d’affaires lorsqu’il est reçu lors du même événement.
 
 ### Données antérieures {#deduplicate-uc1-databefore}
 
@@ -1082,7 +1095,7 @@ Vous définissez un champ dérivé `Booking Confirmation`. Utilisez la fonction 
 
 ## Cas d’utilisation 2 {#deduplicate-uc2}
 
-Vous utilisez des événements comme proxy pour les clics publicitaires de campagne avec des campagnes marketing externes. Les rechargements et les redirections entraînent une inflation de la mesure d’événement. Vous souhaitez dédupliquer la dimension du code de suivi afin que seule la première soit collectée et minimiser le surcomptage de l’événement.
+Vous utilisez des événements comme proxy pour les clics publicitaires de campagne avec des campagnes marketing externes. Les rechargements et les redirections entraînent une inflation de la mesure d’événement. Vous souhaitez dédupliquer la dimension Code de suivi afin que seule la première occurrence soit collectée et de limiter le surcomptage des événements.
 
 ### Données antérieures {#deduplicate-uc2-databefore}
 
@@ -1267,7 +1280,7 @@ Vous souhaitez rechercher le nom de l’activité à l’aide de l’identifiant
 
 | Identifiant d’activité | Nom de l’activité |
 |---|---|
-| 415851 | Pages de catégorie de test MVT |
+| 415851 | Pages de catégorie de test multivarié (MVT) |
 | 415852 | Luma - Campagne Max 2022 |
 | 402922 | Bannières de page d’accueil |
 
@@ -1288,7 +1301,7 @@ Vous pouvez rapidement insérer une fonction [!UICONTROL Recherche] dans le cré
 1. Sélectionnez **[!UICONTROL Champs de schéma]** dans le sélecteur.
 1. Sélectionnez ![icône de champ de schéma](assets/Smock_Folder_18_N.svg) **[!UICONTROL Jeux de données de recherche]**.
 1. Sélectionnez votre jeu de données de recherche et recherchez le champ à utiliser pour la recherche.
-1. Faites glisser et déposez le champ de recherche sur l’un des champs d’entrée disponibles pour une fonction (par exemple, Cas si). Lorsqu’il est valide, une zone bleue, intitulée **[!UICONTROL + Ajouter]**, vous permet de déposer le champ et d’insérer automatiquement une fonction de recherche avant la fonction sur laquelle vous avez déposé le champ de recherche. La fonction de recherche insérée est automatiquement renseignée avec des valeurs pertinentes pour tous les champs.
+1. Glissez-déposez le champ de recherche sur l’un des champs d’entrée disponibles pour une fonction (par exemple, Case When). Lorsqu’il est valide, une zone bleue, intitulée **[!UICONTROL + Ajouter]**, vous permet de déposer le champ et d’insérer automatiquement une fonction de recherche avant la fonction sur laquelle vous avez déposé le champ de recherche. La fonction de recherche insérée est automatiquement renseignée avec des valeurs pertinentes pour tous les champs.
    ![Glissement de recherche](assets/lookup-drag.png)
 
 +++
@@ -1433,7 +1446,7 @@ Certaines considérations importantes doivent être prises en compte lorsque vou
   - Cette formule est valide.
     ![Informations supplémentaires Math 5](assets/math-more-info-5.png)
 
-Utilisez la fonction Math pour les calculs basés sur le niveau de l’accès. Utilisez la fonction [Résumer](#summarize) pour les calculs basés sur l’événement, la session ou la portée de la personne.
+Utilisez la fonction Math pour les calculs basés sur le niveau du hit. Utilisez la fonction [Résumer](#summarize) pour les calculs basés sur l’événement, la session ou la portée de la personne.
 
 +++
 
@@ -1582,7 +1595,7 @@ Vous pouvez uniquement sélectionner des champs appartenant au tableau Visite ou
 
 [!UICONTROL Inclure les répétitions] détermine comment gérer les valeurs de répétition pour la fonction [!UICONTROL SUIVANT OU PRÉCÉDENT].
 
-- Incluez les recherches répétées et les valeurs suivantes ou précédentes. Si l’option [!UICONTROL Inclure les répétitions] est sélectionnée, elle ignore les répétitions séquentielles des valeurs suivantes ou précédentes de l’accès actuel.
+- Incluez les recherches répétées et les valeurs suivantes ou précédentes. Si l’option [!UICONTROL Inclure les répétitions] est sélectionnée, elle ignore les répétitions séquentielles des valeurs suivantes ou précédentes du hit actuel.
 
 - Les valeurs suivantes ou précédentes ne seront pas renvoyées dans les lignes sans valeur (vide) pour un champ sélectionné dans le cadre de la sortie de la fonction [!UICONTROL SUIVANT OU PRÉCÉDENT].
 
@@ -1618,10 +1631,10 @@ Vous souhaitez capturer une partie d’une URL et l’utiliser comme identifiant
 
 | URL de la page |
 |---|
-| `https://business.adobe.com/fr/products/analytics/adobe-analytics-benefits.html` |
-| `https://business.adobe.com/fr/products/analytics/adobe-analytics.html` |
-| `https://business.adobe.com/fr/products/experience-platform/customer-journey-analytics.html` |
-| `https://business.adobe.com/fr/products/experience-platform/adobe-experience-platform.html` |
+| `https://business.adobe.com/products/analytics/adobe-analytics-benefits.html` |
+| `https://business.adobe.com/products/analytics/adobe-analytics.html` |
+| `https://business.adobe.com/products/experience-platform/customer-journey-analytics.html` |
+| `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html` |
 
 {style="table-layout:auto"}
 
@@ -1669,7 +1682,7 @@ Customer Journey Analytics utilise un sous-ensemble de la syntaxe de l’expre
 | `\<` | Début de mot. |
 | `\>` | Fin de mot. |
 | `(...)` | Acquérir tout ce qui est compris. |
-| `(?:...)` | Capture sans marquage. Empêche la référence de la correspondance dans la chaîne de sortie. |
+| `(?:...)` | Capture sans marquage. Empêche la correspondance d’être référencée dans la chaîne de sortie. |
 | `a?` | Zéro ou un de : `a`. |
 | `a*` | Zéro ou plus de : `a`. |
 | `a+` | Un ou plus de : `a`. |
@@ -1811,19 +1824,19 @@ Permet d’appliquer des fonctions de type agrégation à des mesures ou à des 
 
 | Type de données d’entrée | Entrée | Opérateurs inclus | Limite | Sortie |
 |---|---|---|---|---|
-| <ul><li>Chaîne</li><li>Numérique</li><li>Date</li></ul> | <ul><li>Valeur<ul><li>Règles</li><li>Champs standard</li><li>Champs</li></ul></li><li>Résumer les méthodes</li><li>Portée<ul><li>Événement</li><li>Session</li><li>Personne</li></ul></li></ul> | <ul><li>Numérique<ul><li>MAX - Renvoie la valeur la plus grande à partir d’un ensemble de valeurs.</li><li>MIN - renvoie la plus petite valeur d’un ensemble de valeurs.</li><li>MEDIANE - renvoie la médiane d’un ensemble de valeurs.</li><li>MOYENNE - renvoie la moyenne d’un ensemble de valeurs.</li><li>SOMME - renvoie la somme d’un ensemble de valeurs.</li><li>NOMBRE - Renvoie le nombre de valeurs reçues.</li><li>DISTINCT - Renvoie un ensemble de valeurs distinctes.</li></ul></li><li>Chaînes<ul><li>DISTINCT - Renvoie un ensemble de valeurs distinctes.</li><li>NOMBRE DISTINCT - Renvoie le nombre de valeurs distinctes.</li><li>LE PLUS COURANT - Renvoie la valeur de chaîne la plus souvent reçue.</li><li>LE MOINS COURANT - Renvoie la valeur de chaîne la moins souvent reçue.</li><li>PREMIÈRE - Première valeur reçue ; applicable uniquement aux tableaux de session et d’événement.</li><li>DERNIÈRE - Dernière valeur reçue ; applicable uniquement aux tableaux de session et d’événement.</li></ul></li><li>Dates<ul><li>DISTINCT - Renvoie un ensemble de valeurs distinctes.</li><li>NOMBRE DISTINCT - Renvoie le nombre de valeurs distinctes.</li><li>LE PLUS COURANT - Renvoie la valeur de chaîne la plus souvent reçue.</li><li>LE MOINS COURANT - Renvoie la valeur de chaîne la moins souvent reçue.</li><li>PREMIÈRE - Première valeur reçue ; applicable uniquement aux tableaux de session et d’événement.</li><li>DERNIÈRE - Dernière valeur reçue ; applicable uniquement aux tableaux de session et d’événement.</li><li>LE PLUS TÔT - Première valeur reçue (déterminée par le temps) ; applicable uniquement aux tableaux de session et d’événement.</li><li>LE PLUS RÉCENT - Dernière valeur reçue (déterminée par le temps) ; applicable uniquement aux tableaux de session et d’événement.</li></ul></li></ul> | 3 fonctions par champ dérivé | Nouveau champ dérivé |
+| <ul><li>Chaîne</li><li>Numérique</li><li>Date</li></ul> | <ul><li>Valeur<ul><li>Règles</li><li>Champs standard</li><li>Champs</li></ul></li><li>Résumer les méthodes</li><li>Portée<ul><li>Événement</li><li>Session</li><li>Personne</li></ul></li></ul> | <ul><li>Numérique<ul><li>MAX - Renvoie la valeur la plus grande à partir d’un ensemble de valeurs.</li><li>MIN - renvoie la plus petite valeur d’un ensemble de valeurs.</li><li>MEDIAN - Renvoie la médiane d’un ensemble de valeurs.</li><li>MOYENNE - renvoie la moyenne d’un ensemble de valeurs.</li><li>SOMME - renvoie la somme d’un ensemble de valeurs.</li><li>COUNT - Renvoie le nombre de valeurs reçues.</li><li>DISTINCT - Renvoie un ensemble de valeurs distinctes.</li></ul></li><li>Chaînes<ul><li>DISTINCT - Renvoie un ensemble de valeurs distinctes.</li><li>COUNT DISTINCT - Renvoie le nombre de valeurs distinctes.</li><li>MOST COMMON - Renvoie la valeur de chaîne reçue le plus souvent.</li><li>LEAST COMMON - Renvoie la valeur de chaîne reçue le moins souvent.</li><li>PREMIÈRE - Première valeur reçue ; applicable uniquement aux tableaux de session et d’événement.</li><li>DERNIÈRE - Dernière valeur reçue ; applicable uniquement aux tableaux de session et d’événement.</li></ul></li><li>Dates<ul><li>DISTINCT - Renvoie un ensemble de valeurs distinctes.</li><li>COUNT DISTINCT - Renvoie le nombre de valeurs distinctes.</li><li>MOST COMMON - Renvoie la valeur de chaîne reçue le plus souvent.</li><li>LEAST COMMON - Renvoie la valeur de chaîne reçue le moins souvent.</li><li>PREMIÈRE - Première valeur reçue ; applicable uniquement aux tableaux de session et d’événement.</li><li>DERNIÈRE - Dernière valeur reçue ; applicable uniquement aux tableaux de session et d’événement.</li><li>LE PLUS TÔT - Première valeur reçue (déterminée par le temps) ; applicable uniquement aux tableaux de session et d’événement.</li><li>LE PLUS RÉCENT - Dernière valeur reçue (déterminée par le temps) ; applicable uniquement aux tableaux de session et d’événement.</li></ul></li></ul> | 3 fonctions par champ dérivé | Nouveau champ dérivé |
 
 {style="table-layout:auto"}
 
 ## Cas d’utilisation {#summarize-uc}
 
-Vous souhaitez catégoriser les Revenus d’ajout au panier en trois catégories différentes : Petit, Moyen et Grand. Vous pouvez ainsi analyser et identifier les caractéristiques des clientes et clients à forte valeur ajoutée.
+Vous souhaitez catégoriser le chiffre d’affaires généré par les ajouts au panier en trois catégories : Petit, Moyen et Grand. Vous pouvez ainsi analyser et identifier les caractéristiques des clientes et clients à forte valeur ajoutée.
 
 ### Données antérieures {#summarize-uc-databefore}
 
 Hypothèses :
 
-- La valeur pour Revenus d’ajout au panier est collectée sous la forme d’un champ numérique.
+- Le chiffre d’affaires généré par les ajouts au panier est collecté sous la forme d’un champ numérique.
 
 Scénarios :
 
@@ -1833,9 +1846,9 @@ Scénarios :
 
 Logique :
 
-- Si le chiffre d’affaires total des ajouts au panier d’une personne est inférieur à 150 $, définissez sur Petit.
-- Si le chiffre d’affaires total des ajouts au panier d’une personne est supérieur à 150 $, mais inférieur à 500 $, définissez sur Moyen.
-- Si le chiffre d’affaires total des ajouts au panier d’une personne est supérieur ou égal à 500 $, définissez sur Grand.
+- Si le chiffre d’affaires total généré par les ajouts au panier pour un visiteur est inférieur à 150 $, classez-le dans la catégorie Petit.
+- Si le chiffre d’affaires total généré par les ajouts au panier pour un visiteur est supérieur à 150 $, mais inférieur à 500 $, classez-le dans la catégorie Moyen.
+- Si le chiffre d’affaires total généré par les ajouts au panier pour un visiteur est supérieur ou égal à 500 $, classez-le dans la catégorie Grand.
 
 Résultats :
 
@@ -1863,7 +1876,7 @@ Vous créez un champ dérivé `Add To Cart Revenue Size`. Vous utilisez la fonct
 
 ## Informations supplémentaires {#summarize-more-info}
 
-Utilisez la fonction Résumer pour les calculs basés sur l’événement, la session ou la portée de la personne. Utilisez la fonction [Math](#math) pour les calculs basés sur le niveau de l’accès.
+Utilisez la fonction Résumer pour les calculs basés sur l’événement, la session ou la portée de la personne. Utilisez la fonction [Math](#math) pour les calculs basés sur le niveau du hit.
 
 +++
 
@@ -1890,7 +1903,7 @@ Rogne les espaces, les caractères spéciaux ou le nombre de caractères du déb
 
 ## Cas d’utilisation 1 {#trim-uc1}
 
-Vous collectez des données de produit, mais ces données contiennent des espaces masqués qui fragmentent les rapports. Vous souhaitez supprimer facilement les espaces en excès.
+Vous collectez des données de produit, mais celles-ci contiennent des caractères d’espace masqués qui fragmentent les rapports. Vous souhaitez supprimer facilement les espaces en excès.
 
 ### Données antérieures {#trim-uc1-databefore}
 
@@ -2011,7 +2024,7 @@ Modifie le type d’un champ afin de le rendre disponible pour des transformatio
 
 ## Cas d’utilisation 1 {#typecast-uc1}
 
-Vous souhaitez utiliser un champ entier, la hauteur d’écran (device.screenHeight dans votre jeu de données d’événement, par exemple), comme dimension basée sur une chaîne.
+Vous disposez d’un champ de type entier, Hauteur de l’écran (par exemple, device.screenHeight de votre jeu de données d’événement), que vous souhaitez utiliser comme dimension de type chaîne.
 
 
 ### Champs dérivés {#typecast-uc1-derivedfield}
@@ -2024,7 +2037,7 @@ Vous définissez un champ dérivé `Screen Height`. Utilisez la fonction [!UICON
 
 ## Cas d’utilisation 2 {#typecast-uc2}
 
-Vous souhaitez utiliser Revenus dans une table de cohorte (qui ne prend en charge que les entiers), mais le champ Revenus est de type Double.
+Vous souhaitez utiliser Chiffre d’affaires dans une table de cohorte (qui ne prend en charge que les nombres entiers), mais le champ Chiffre d’affaires est de type Double.
 
 ![Capture d’écran de la règle 2 Typecast](assets/typecast-2.png)
 
@@ -2044,7 +2057,7 @@ Vous définissez un champ dérivé `Revenue (integer)`. Utilisez la fonction [!U
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_urlparse"
 >title="Analyse de l’URL"
->abstract="Cette fonction permet d’analyser différentes parties d’une URL, y compris les paramètres d’hôte, de chemin d’accès ou de requête."
+>abstract="Cette fonction permet d’extraire différentes parties d’une URL, notamment l’hôte, le chemin ou les paramètres de requête."
 
 
 Analyse différentes parties d’une URL, y compris le protocole, l’hôte, le chemin ou les paramètres de requête.
@@ -2131,7 +2144,7 @@ Les restrictions suivantes s’appliquent à la fonctionnalité Champ dérivé e
 
 - Vous pouvez utiliser un maximum de dix champs de schéma différents (champs standard non inclus) lors de la définition de règles pour un champ dérivé.
   - À partir de ce maximum de dix champs de schéma différents, seul un maximum de trois champs de schéma de recherche ou de profil sont autorisés.
-- Vous pouvez avoir un nombre maximum de champs dérivés par connexion Customer Journey Analytics en fonction du package pour lequel vous disposez d’une licence. Pour plus d’informations, consultez la [description du produit](https://helpx.adobe.com/fr/legal/product-descriptions/customer-journey-analytics.html?lang=fr){target="_blank"}.
+- Vous pouvez avoir un nombre maximum de champs dérivés par connexion Customer Journey Analytics en fonction du package pour lequel vous disposez d’une licence. Pour plus d’informations, consultez la [description du produit](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html?lang=fr){target="_blank"}.
 
 
 ### Résumé des limitations de fonction
@@ -2155,7 +2168,7 @@ Les restrictions suivantes s’appliquent à la fonctionnalité Champ dérivé e
 | <p>Résumer</p> | <ul><li>3 fonctions Résumer par champ dérivé</li></ul> |
 | <p>Rogner</p> | <ul><li>1 fonction Rogner par champ dérivé</li></ul> |
 | <p>Typecast</p> | <ul><li>3 fonctions Typecast par champ dérivé</li></ul> |
-| <p>Analyse de l’URL</p> | <ul><li>5 fonctions Analyse d’URL par champ dérivé</li></ul> |
+| <p>Analyse de l’URL</p> | <ul><li>5 fonctions d’analyse d’URL par champ dérivé</li></ul> |
 
 {style="table-layout:auto"}
 
@@ -2182,7 +2195,7 @@ La prise en charge des champs de recherche et de profil dans les champs dérivé
 
 >[!MORELIKETHIS]
 >
->- [Blog : utilisation optimale des données : cadre d’utilisation des champs dérivés dans Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670?profile.language=fr)
->- [Blog : cas d’utilisation de champs dérivés pour Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679?profile.language=fr)
->- [Blog : améliorations apportées aux champs dérivés d’Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-derived-fields-enhancements/ba-p/697808?profile.language=fr)
+>- [Blog : utilisation optimale des données : cadre d’utilisation des champs dérivés dans Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670)
+>- [Blog : cas d’utilisation de champs dérivés pour Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679)
+>- [Blog : améliorations apportées aux champs dérivés d’Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-derived-fields-enhancements/ba-p/697808)
 

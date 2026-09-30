@@ -4,13 +4,22 @@ keywords: flux de clics;flux de données;flux des données;Flux de données
 title: Fonctionnalité Comparaison des flux de données dans Customer Journey Analytics et Adobe Analytics
 feature: Components
 hide: true
-source-git-commit: 7fe885e928c495a2518038645ec841229d1f1852
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
 source-wordcount: '743'
 ht-degree: 0%
-
 ---
-
 # Comprendre les écarts de données entre les flux de données et Analysis Workspace
 
 {{release-limited-testing}}
@@ -25,7 +34,7 @@ En ce sens, la période de recherche en amont est similaire à la période de cr
 
 | Principales différences | Période de création des rapports (Analysis Workspace) | Période de recherche en amont (flux de données) |
 |---------|---------|----------|
-| **Limite des données**<br/> si les données sont incluses dans un rapport ou un flux | Flexible<p>Les événements qui se situent en dehors de la période de création des rapports peuvent toujours être inclus dans un rapport Workspace si les événements sont influencés par l’un des facteurs suivants :</p><ul><li>**Persistance Dimension** : peut persister au-delà de la période de création des rapports lors de l’utilisation de la session, de l’heure personnalisée ou de la mesure [expiration](/help/data-views/component-settings/persistence.md#expiration-settings). Identique à la période du compte rendu des performances lorsque vous utilisez la fenêtre Compte rendu des performances des personnes [expiration](/help/data-views/component-settings/persistence.md#expiration-settings). Les données sont agrégées</li><li>**Qualification du segment** : par défaut, les segments peuvent s’étendre au-delà de la période du rapport.<p>Les utilisateurs peuvent choisir de limiter le segment à la période du rapport lorsqu’ils créent le segment.<!--add link to new docs--></p></li><li>**Calcul de session** : les sessions peuvent s’étendre au-delà de la période de création de rapports. </li><li>**Transformations de champ dérivées**</li></ul> | Fixe<p>Les événements qui se situent en dehors de la période de recherche en amont ne sont jamais inclus dans un flux de données, qu’ils soient influencés ou non par les facteurs suivants :</p></p><ul><li>**Persistance Dimension** : impossible de persister au-delà de la période de recherche en amont, quels que soient les [&#x200B; paramètres d’expiration](/help/data-views/component-settings/persistence.md#expiration-settings). Les données ne sont pas agrégées.</li><li>**Qualification du segment** : toujours limitée à la période de recherche en amont.</li><li>**Calcul de session** : toujours limité à la période de recherche en amont.</li><li>**Transformations de champ dérivé** : toutes les fonctions de champ dérivé qui font référence à des conteneurs utilisent la période de recherche en amont dans les exportations de flux de données.</li></ul><p>Pour plus d’informations sur la configuration de la période de recherche en amont, voir [Création d’un flux de données](/help/components/exports/cja-data-feeds/create-feed.md#create-and-configure-a-data-feed).</p> |
+| **Limite des données**<br/> si les données sont incluses dans un rapport ou un flux | Flexible<p>Les événements qui se situent en dehors de la période de création des rapports peuvent toujours être inclus dans un rapport Workspace si les événements sont influencés par l’un des facteurs suivants :</p><ul><li>**Persistance Dimension** : peut persister au-delà de la période de création des rapports lors de l’utilisation de la session, de l’heure personnalisée ou de la mesure [expiration](/help/data-views/component-settings/persistence.md#expiration-settings). Identique à la période du compte rendu des performances lorsque vous utilisez la fenêtre Compte rendu des performances des personnes [expiration](/help/data-views/component-settings/persistence.md#expiration-settings). Les données sont agrégées</li><li>**Qualification du segment** : par défaut, les segments peuvent s’étendre au-delà de la période du rapport.<p>Les utilisateurs peuvent choisir de limiter le segment à la période du rapport lorsqu’ils créent le segment.<!--add link to new docs--></p></li><li>**Calcul de session** : les sessions peuvent s’étendre au-delà de la période de création de rapports. </li><li>**Transformations de champ dérivées**</li></ul> | Fixe<p>Les événements qui se situent en dehors de la période de recherche en amont ne sont jamais inclus dans un flux de données, qu’ils soient influencés ou non par les facteurs suivants :</p></p><ul><li>**Persistance Dimension** : impossible de persister au-delà de la période de recherche en amont, quels que soient les [ paramètres d’expiration](/help/data-views/component-settings/persistence.md#expiration-settings). Les données ne sont pas agrégées.</li><li>**Qualification du segment** : toujours limitée à la période de recherche en amont.</li><li>**Calcul de session** : toujours limité à la période de recherche en amont.</li><li>**Transformations de champ dérivé** : toutes les fonctions de champ dérivé qui font référence à des conteneurs utilisent la période de recherche en amont dans les exportations de flux de données.</li></ul><p>Pour plus d’informations sur la configuration de la période de recherche en amont, voir [Création d’un flux de données](/help/components/exports/cja-data-feeds/create-feed.md#create-and-configure-a-data-feed).</p> |
 | **Créneau de rapport**<br/> Période sur laquelle portera le rapport | Le même que la fenêtre de création de rapports (la période sur laquelle vous souhaitez créer des rapports). | Pas la même que la période sur laquelle vous souhaitez créer un rapport. <p>La période sur laquelle portera le rapport est la fenêtre Fréquence, qui peut être d’une heure ou d’un jour.</p> |
 
 >[!BEGINSHADEBOX]
@@ -49,7 +58,7 @@ Les flux de données et Analysis Workspace traitent différemment l’assemblage
 
 * **Flux de données** : reflète uniquement l’identité regroupée au moment de l’exportation. Les résultats de la relecture ne sont pas appliqués rétroactivement aux fichiers exportés.
 
-* **&#x200B;**&#x200B;: affiche les données regroupées les plus récentes, mises à jour rétroactivement chaque fois qu’une relecture s’exécute. Les données historiques changent après chaque relecture, de sorte que Workspace reflète toujours la dernière résolution d’identité.
+* **** : affiche les données regroupées les plus récentes, mises à jour rétroactivement chaque fois qu’une relecture s’exécute. Les données historiques changent après chaque relecture, de sorte que Workspace reflète toujours la dernière résolution d’identité.
 
 ## Evénements en retard
 
@@ -61,7 +70,7 @@ Les flux de données et Analysis Workspace fonctionnent différemment concernant
 
   Les événements qui arrivent après la fermeture de la fenêtre peuvent ne pas être inclus dans l’exportation. Cela est influencé par la [période de recherche en amont](#lookback-date-range-data-feeds-vs-reporting-date-range-analysis-workspace) que vous choisissez.
 
-* **&#x200B;**&#x200B;: traite les données au moment du rapport, de sorte que les événements soient inclus dans les rapports, quelle que soit la date de réception.
+* **** : traite les données au moment du rapport, de sorte que les événements soient inclus dans les rapports, quelle que soit la date de réception.
 
 ## Traitement par lots de données
 
@@ -71,5 +80,5 @@ Les flux de données et Analysis Workspace fonctionnent différemment concernant
 
 * **Flux de données** : distribue des données par lots sur chaque jour ou heure en fonction des horodatages d’origine. Par exemple, un lot contenant 30 jours de données est réparti sur 30 jours d’exportations. Par conséquent, une seule petite tranche apparaît dans une exportation unique.
 
-* **&#x200B;**&#x200B;: affiche toutes les données d&#39;un lot dès qu&#39;elles sont entièrement traitées, quelle que soit la période incluse dans le lot.
+* **** : affiche toutes les données d&#39;un lot dès qu&#39;elles sont entièrement traitées, quelle que soit la période incluse dans le lot.
 

@@ -1,6 +1,6 @@
 ---
-title: Transition du connecteur source Analytics vers le SDK web pour Customer Journey Analytics
-description: Découvrir comment effectuer une transition vers le SDK web à partir du connecteur source Analytics lors de la mise à niveau vers Customer Journey Analytics
+title: Passer du connecteur source Analytics au SDK web pour Customer Journey Analytics
+description: Découvrez comment passer du connecteur source Analytics au SDK web lors de la mise à niveau vers Customer Journey Analytics.
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -9,26 +9,35 @@ autotag-review: '2026-05-19T08:14:22.976Z'
 TQID: 'https://experienceleague.adobe.com/af02lBhLgsKQOkm2yVW4jHvFYVbqOCDi6-puKoKytMo'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
+    internal-label: Upgrade
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Data collection
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 539
+source-wordcount: '539'
 ht-degree: 100%
-
 ---
-
-# Transition du connecteur source Analytics vers le SDK web pour Customer Journey Analytics {#transition-from-source-connector}
+# Passer du connecteur source Analytics au SDK web pour Customer Journey Analytics {#transition-from-source-connector}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -52,7 +61,7 @@ ht-degree: 100%
 
 L’utilisation du connecteur source Analytics comme seule implémentation pour Customer Journey Analytics présente des inconvénients inhérents.
 
-Si votre organisation a déjà effectué la mise à niveau vers Customer Journey Analytics uniquement en implémentant le connecteur source Analytics, Adobe recommande de passer à une nouvelle implémentation du SDK web pour la collecte de données en cours, et d’utiliser le connecteur source Analytics uniquement pour les données historiques.
+Si votre organisation a déjà effectué la mise à niveau vers Customer Journey Analytics en utilisant uniquement la mise en œuvre du connecteur source Analytics, Adobe recommande de passer à une nouvelle mise en œuvre du SDK web pour la collecte continue des données et de n’utiliser le connecteur source Analytics que pour les données historiques.
 
 ## Comprendre les avantages et les inconvénients de l’utilisation exclusive du connecteur source Analytics
 
@@ -60,11 +69,11 @@ Pour plus d’informations sur les avantages et les inconvénients de l’utilis
 
 ## Passer du connecteur source Analytics au SDK web
 
-Voici le processus de haut niveau pour passer de l’utilisation exclusive du connecteur source Analytics à une implémentation composée du connecteur source Analytics et d’une implémentation du SDK web :
+Voici le processus général permettant de passer d’une utilisation exclusive du connecteur source Analytics à une mise en œuvre combinant le connecteur source Analytics et une mise en œuvre du SDK web :
 
 1. Créez une implémentation du SDK web, comme décrit dans [Étapes de mise à niveau recommandées détaillées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#detailed-recommended-upgrade-steps) dans l’article [Mise à niveau d’Adobe Analytics vers Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md).
 
-   Une fois l’implémentation du SDK web configurée, procédez comme suit.
+   Une fois la mise en œuvre du SDK web configurée, procédez comme suit.
 
 1. [Créez un schéma XDM pour le connecteur source Analytics](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md).
 

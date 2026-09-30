@@ -6,28 +6,39 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hide: true
 exl-id: ea8795fe-f5aa-458f-9e01-53ff1ffe6372
-TQID: https://experienceleague.adobe.com/LLrYpPlbagFAIeuD9TMgA3E8lrcUrMxMSWLC-8SiiIY
+TQID: 'https://experienceleague.adobe.com/LLrYpPlbagFAIeuD9TMgA3E8lrcUrMxMSWLC-8SiiIY'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: e1bd5a34-b16e-477b-84cc-247fa0793f4b
+    internal-label: Analytics integration
+  - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+    internal-label: Use cases
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 942cc774812d4a6b3b7f45df837ff9277e8f9b46
+    internal-label: Data management
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 435
+source-wordcount: '435'
 ht-degree: 4%
-
 ---
-
 # Ajout de données de mesure quantique à Customer Journey Analytics
 
 >[!IMPORTANT]
@@ -42,7 +53,7 @@ CJA déverrouille le contrôle de la période de rapport sur les données AEM, l
 1. Accédez à  > [!UICONTROL Connexions] > [!UICONTROL Sources].
 1. Ajoutez le connecteur source Quantum Metric et suivez les invites jusqu’à la fin.
 
-Voir [Connecteurs source &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/home) pour plus d’informations.
+Voir [Connecteurs source ](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/home) pour plus d’informations.
 
 ## Étape 2 : création d’une connexion dans Customer Journey Analytics
 
@@ -54,7 +65,7 @@ La création d’un connecteur source pour les données de mesure quantique cré
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
 >[!NOTE]
->Bien que vous puissiez ajouter des données de mesure quantique à la même connexion que le reste de vos données Customer Journey Analytics, ces données ne peuvent pas être regroupées sans un ID de personne commun entre les deux jeux de données. Si ce comportement est souhaité, Adobe recommande d’utiliser l’extension [Tag](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/catalog/analytics/quantum-metric) au lieu du connecteur source.
+>Bien que vous puissiez ajouter des données de mesure quantique à la même connexion que le reste de vos données Customer Journey Analytics, ces données ne peuvent pas être regroupées sans un ID de personne commun entre les deux jeux de données. Si ce comportement est souhaité, Adobe recommande d’utiliser l’extension [Tag](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric) au lieu du connecteur source.
 
 ## Étape 3 : création d’une vue de données dans Customer Journey Analytics
 

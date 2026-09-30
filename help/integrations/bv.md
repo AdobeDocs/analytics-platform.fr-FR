@@ -3,17 +3,27 @@ title: Intégration de Brand Visibility
 description: Intégration de Brand Visibility à Customer Journey Analytics
 feature: Experience Platform Integration
 role: User
-source-git-commit: ab73c95a3ff0d57a4868d74266084a79c4c3721d
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
+subfeature_v2:
+  - id: d3fb138f-79e4-4a81-aedb-76dd93560085
+    internal-label: Experience Platform integration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
 source-wordcount: '2572'
 ht-degree: 3%
-
 ---
-
 
 # Intégration de Adobe Brand Visibility
 
-[&#128279;](https://experienceleague.adobe.com/fr/docs/llm-optimizer/using/home){target="_blank"} est une application IA générative pour l&#39;optimisation du moteur de génération, conçue pour aider les marques à améliorer leur visibilité, leur précision et leur influence dans les environnements de recherche pilotés par l&#39;IA. Brand Visibility fournit des informations sur la présence des marques dans les réponses générées par l’IA, propose des recommandations de contenu prescriptives et automatise les correctifs d’optimisation.
+[](https://experienceleague.adobe.com/fr/docs/llm-optimizer/using/home){target="_blank"} est une application IA générative pour l&#39;optimisation du moteur de génération, conçue pour aider les marques à améliorer leur visibilité, leur précision et leur influence dans les environnements de recherche pilotés par l&#39;IA. Brand Visibility fournit des informations sur la présence des marques dans les réponses générées par l’IA, propose des recommandations de contenu prescriptives et automatise les correctifs d’optimisation.
 
 L’IA est devenue un canal de découverte essentiel. Les agents de grands modèles linguistiques (LLM), tels que ChatGPT, Claude, Copilot et Perplexity, explorent le contenu de la marque.
 
@@ -178,4 +188,4 @@ Ce jeu de données capture uniquement le trafic des robots provenant des journau
 
 ## Intégration sortante
 
-Pour plus d’informations sur l’intégration sortante, reportez-vous à la section [Intégration de &#x200B;](https://experienceleague.adobe.com/fr/docs/brand-visibility/using/resources/customer-journey-analytics-integration){target="_blank"} dans la documentation sur la visibilité des marques Adobe.
+Pour plus d’informations sur l’intégration sortante, reportez-vous à la section [Intégration de ](https://experienceleague.adobe.com/en/docs/brand-visibility/using/resources/customer-journey-analytics-integration){target="_blank"} dans la documentation sur la visibilité des marques Adobe.

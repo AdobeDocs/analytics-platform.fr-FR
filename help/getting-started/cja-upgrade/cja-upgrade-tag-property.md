@@ -9,37 +9,44 @@ autotag-review: '2026-05-19T08:19:46.548Z'
 TQID: 'https://experienceleague.adobe.com/qNMm2rjpRS-uONat66tYwiTMqems4JevHxLWmHqy8og'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
+    internal-label: Upgrade
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 9efc51843684b8cad96d01f7ada99eafc5950b42
+    internal-label: Data collection
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 316
+source-wordcount: '316'
 ht-degree: 92%
-
 ---
-
 # Créer une balise pour votre propriété {#upgrade-tag-property}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-tag-property"
->title="Créer une propriété de balise dans la collecte de données Adobe Experience Platform"
->abstract="L’utilisation de balises est la norme type pour la collecte de données. Créez une balise dans l’interface d’Adobe Experience Platform afin de pouvoir mettre à jour les variables de collecte de données à tout moment.<br><br>La création d’une propriété de balise peut être effectuée en plusieurs clics et en quelques minutes seulement."
+>title="Créer une propriété de balise dans la collecte de données Adobe Experience Platform"
+>abstract="L’utilisation des balises constitue la norme habituelle pour la collecte de données. Créez une balise dans l’interface d’Adobe Experience Platform afin de pouvoir mettre à jour les variables de collecte de données à tout moment.<br><br>La création d’une propriété de balise peut être effectuée en plusieurs clics et en quelques minutes seulement."
 
 <!-- markdownlint-enable MD034 -->
 
 {{upgrade-note-step}}
 
-Utilisez la fonction Balises d’Adobe Experience Platform pour implémenter du code sur le site afin de collecter des données. Cette solution de gestion des balises vous permet de déployer le code parallèlement à d’autres exigences de balisage. Les balises offrent une intégration transparente avec Adobe Experience Platform à l’aide de l’extension du SDK Web Adobe Experience Platform.
+Utilisez la fonction Balises d’Adobe Experience Platform pour implémenter du code sur le site afin de collecter des données. Cette solution de gestion des balises vous permet de déployer le code parallèlement à d’autres exigences de balisage. Les balises offrent une intégration transparente à Adobe Experience Platform à l’aide de l’extension SDK web.
 
 Les informations suivantes décrivent comment créer une balise pour votre propriété. Pour plus d’informations, consultez [Configuration de l’extension de balise SDK web](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) de la documentation d’Experience Platform. Web SDK inclut Experience Platform Identity Service, ce qui signifie que vous n’avez pas besoin d’ajouter l’extension [!UICONTROL Experience Cloud ID Service] à la balise.
 
@@ -47,7 +54,7 @@ Une propriété est essentiellement un conteneur que vous remplissez avec des ex
 
 Pour créer une balise pour votre propriété, procédez comme suit :
 
-1. Connectez-vous à experiencecloud.adobe.com à l’aide de vos identifiants Adobe ID.
+1. Connectez-vous à experience.adobe.com à l’aide de vos informations d’identification Adobe ID.
 
 1. Dans Adobe Experience Platform, accédez à **[!UICONTROL Collecte de données]** > **[!UICONTROL Balises]**.
 

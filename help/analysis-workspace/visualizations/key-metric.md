@@ -8,32 +8,37 @@ autotag-review: '2026-05-19T08:31:00.048Z'
 TQID: 'https://experienceleague.adobe.com/y3VfcvJp8lCmBLHy4-zPEb6Y7dzjfcDPjSMlKGPNR-A'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
 subfeature_v2:
   - id: ddf59f64-0e46-4986-a525-056acc143c70
+    internal-label: Workspace visualizations
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Customer journeys
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 969
+source-wordcount: '969'
 ht-degree: 91%
-
 ---
-
 # Synthèse des mesures clés {#key-metric-summary}
 
 >[!CONTEXTUALHELP]
 >id="workspace_keymetricsummary_button"
 >title="Synthèse des mesures clés"
->abstract="Créez une visualisation qui combine les graphes à courbes, de changements de résumé et de nombres de résumé. Utilisez cette visualisation pour comparer les tendances des mesures importantes entre deux périodes."
+>abstract="Créez une visualisation combinant les graphiques linéaires, de variation récapitulative et de nombre récapitulatif. Utilisez cette visualisation pour comparer l’évolution de mesures importantes entre deux périodes."
 
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente la visualisation du résumé des mesures clés dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Voir [Résumé des mesures clés](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/key-metric) pour la version ![AdobeAnalytics_ _&#x200B;**Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) de cet article.** _
+_Cet article présente la visualisation du résumé des mesures clés dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Voir [Résumé des mesures clés](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/key-metric) pour la version ![AdobeAnalytics_ _**Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) de cet article.** _
 
 >[!ENDSHADEBOX]
 
@@ -50,9 +55,9 @@ La visualisation ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) **[!UICONTROL 
 
 Cette visualisation aborde divers cas d’utilisation courants, notamment les suivants :
 
-* Un analyste qui essaie de comprendre à quoi ressemblait la création d’opportunités ce mois-ci par rapport à la même période l’an dernier.
+* Un analyste cherchant à comprendre l’évolution de la création d’opportunités ce mois-ci par rapport à la même période l’année dernière.
 
-* Un spécialiste du marketing qui explore la manière dont la génération de pistes pour un type de piste spécifique a changé de ce mois-ci au mois dernier.
+* Un responsable marketing cherchant à déterminer comment la génération de leads pour un type de lead spécifique a évolué entre le mois dernier et ce mois-ci.
 
 * Un administrateur qui veut comprendre comment de nouvelles réservations ont changé de ce trimestre au dernier.
 
@@ -66,7 +71,7 @@ Cette visualisation aborde divers cas d’utilisation courants, notamment les su
 
    | Option | Description |
    | --- | --- |
-   | **[!UICONTROL Mesure]** | Sélectionnez la mesure à analyser. Toutes les mesures sont prises en charge. |
+   | **[!UICONTROL Mesure]** | Sélectionnez la mesure que vous souhaitez examiner. Toutes les mesures sont prises en charge. |
    | **[!UICONTROL Période principale]** | La période actuelle du tableau à structure libre.<p>Effectuez un choix parmi toutes les périodes disponibles dans votre vue de données.</p> <p>Choisissez [!UICONTROL **Période du panneau**] si vous souhaitez utiliser la même période que celle utilisée sur le panneau où se trouve la visualisation.</p> |
    | **[!UICONTROL Période de comparaison]** | Période à laquelle vous souhaitez comparer la période principale. |
    | **[!UICONTROL Segment (facultatif)]** | Tout segment qui vous intéresse pour ce résumé. |
@@ -115,13 +120,13 @@ La sortie de la synthèse des mesures clés se présente comme suit :
 
 ![Sortie de mesure clé présentant la mesure, la synthèse des modifications, la synthèse des chiffres et les graphiques linéaires.](assets/key-metrics.png)
 
-Tenez compte des points suivants lorsque vous affichez la sortie :
+Tenez compte des points suivants lorsque vous consultez les résultats :
 
 * Le graphique linéaire **[!UICONTROL Période précédente]** (toujours affiché en gris) correspond à la **[!UICONTROL Période de comparaison]** de l’étape de configuration.
 
 * Si aucune période de comparaison n’est spécifiée lors de la configuration ou si elle est masquée dans les paramètres de visualisation, seul le graphique linéaire correspondant à la période principale s’affiche. La synthèse des modifications est masquée.
 
-* À partir de là, vous pouvez placer le pointeur de la souris sur les graphiques linéaires pour afficher les statistiques pour chaque jour :
+* À partir d’ici, vous pouvez pointer sur les graphiques linéaires pour afficher les statistiques de chaque jour :
 
 
 ## Configurer
@@ -148,9 +153,9 @@ Dans le cadre des paramètres de visualisation, des paramètres spécifiques de 
 | **[!UICONTROL Pourcentages]** | Affiche la visualisation sous la forme d’un pourcentage plutôt que d’un nombre. |
 | **[!UICONTROL Afficher les tendances]** | Affichez les tendances dans la visualisation. |
 | **[!UICONTROL Afficher les valeurs maximales et mininimales sur les tendances]** | Afficher ou masquer les valeurs minimales et maximales sur les graphiques en courbes Principal et de comparaison |
-| **[!UICONTROL Afficher le pourcentage de comparaison ainsi que la tendance]** | Afficher ou masquer les données de comparaison. Lorsqu’ils sont masqués, les objets de modification de graphique en courbes de comparaison et de modification de résumé sont n’apparaissent pas dans la vue. |
+| **[!UICONTROL Afficher le pourcentage de comparaison ainsi que la tendance]** | Afficher ou masquer les données de comparaison. Lorsqu’elles sont masquées, le graphique linéaire de comparaison et les objets de modification de résumé ne sont plus affichés. |
 | **[!UICONTROL Afficher le nombre total]** | Afficher ou masquer la synthèse des chiffres |
-| **[!UICONTROL Afficher la différence brute]** | Afficher ou masquer la différence brute entre la valeur totale de la mesure dans la période Principale et la période secondaire |
+| **[!UICONTROL Afficher la différence brute]** | Afficher ou masquer la différence brute entre la valeur totale de la mesure pour la période principale et celle de la période secondaire. |
 | **[!UICONTROL Abréger la valeur]** | Sélectionnez **[!UICONTROL Abréger la valeur]** pour abréger intelligemment la valeur numérique. Lorsque cette option est sélectionnée, saisissez un nombre pour définir le montant de l’abréviation. Par exemple :<br/><table><tr><td>**Valeur d’origine**</td><td>**Abréviation**</td><td>**Résultat**</td></tr><tr><td>12 011 141,25 $</td><td>Non sélectionné</td><td align="right">12 011 141,25 $</td></tr><tr><td>12 011 141,25 $</td><td>Sélectionné, défini sur 1</td><td align="right">12 M $</td></tr><tr><td>12 011 141,25 $</td><td>Sélectionné, défini sur 2</td><td align="right">12,0 M $</td></tr><tr><td>12 011 141,25 $</td><td>Sélectionné, défini sur 2</td><td align="right">12,011 M $</td></tr><tr><td>12 011 141,25 $</td><td>Sélectionné, défini sur 3</td><td align="right">12,011 M $</td></tr></table> |
 
 ## Modifier la visualisation
@@ -159,9 +164,9 @@ Une fois la visualisation créée, vous pouvez modifier la configuration d’ori
 
 1. Sélectionnez ![Modifier](/help/assets/icons/Edit.svg) dans le coin supérieur droit de la visualisation.
 
-   Vous revenez maintenant à la vue de configuration [&#x200B; d’origine](#configure).
+   Vous revenez maintenant à la vue de configuration [ d’origine](#configure).
 
-1. Modifiez la mesure, la période Principale, la période de comparaison ou le segment selon vos préférences.
+1. Modifiez la mesure, la période principale, la période de comparaison ou le segment selon vos préférences.
 
 >[!MORELIKETHIS]
 >

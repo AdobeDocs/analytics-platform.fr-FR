@@ -1,5 +1,5 @@
 ---
-title: Utiliser des champs dérivés pour créer des rapports sur les objectifs
+title: Utiliser des champs dérivés pour générer des rapports sur les objectifs
 description: Découvrez comment utiliser les champs dérivés pour créer des rapports sur les objectifs (cibles) dans vos projets Workspace.
 solution: Customer Journey Analytics
 feature: Use Cases
@@ -9,23 +9,31 @@ autotag-review: '2026-05-19T06:55:50.510Z'
 TQID: 'https://experienceleague.adobe.com/dTARH-90RV1yHWQX3tqotqum-WizfgFh5mgUeYySI6c'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: f3ca85c1-72de-4df2-97ed-05753cd77c47
+    internal-label: Derived fields
+  - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+    internal-label: Use cases
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Customer journeys
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 442
+source-wordcount: '442'
 ht-degree: 9%
-
 ---
-
-# Utiliser des champs dérivés pour créer des rapports sur les objectifs
+# Utiliser des champs dérivés pour générer des rapports sur les objectifs
 
 Ce cas d’utilisation décrit comment utiliser la puissance des champs dérivés pour définir des objectifs pour une dimension spécifique, puis utiliser ces objectifs dans votre projet Workspace.
 
@@ -45,7 +53,7 @@ Vous souhaitez définir explicitement des objectifs pour vos commandes de certif
 
 1. Définissez des valeurs statiques, à l’aide d’une RÈGLE CASE WHEN, pour chaque mois, en définissant une **[!UICONTROL valeur numérique personnalisée]**. Consultez la règle Objectifs mensuels du produit ci-dessous.
 
-   ![&#x200B; Objectifs mensuels du produit &#x200B;](assets/goals-derived-field-product-goals-1.png)
+   ![ Objectifs mensuels du produit ](assets/goals-derived-field-product-goals-1.png)
 
 
 ### Objectifs de chiffre d’affaires des canaux marketing
@@ -60,7 +68,7 @@ Vous souhaitez définir un objectif de chiffre d’affaires mensuel pour chacun 
 
 1. Définissez explicitement des valeurs statiques, représentant les objectifs de chiffre d’affaires mensuels, pour les canaux marketing spécifiques dans une règle CASE WHEN finale, en définissant une **[!UICONTROL valeur numérique personnalisée]**. Voir la règle de [!DNL Monthly Goal] ci-dessous.
 
-   ![&#x200B; Objectifs mensuels &#x200B;](assets/goals-derived-field-marketing-channel-2.png)
+   ![ Objectifs mensuels ](assets/goals-derived-field-marketing-channel-2.png)
 
 
 

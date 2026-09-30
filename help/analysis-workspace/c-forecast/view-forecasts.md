@@ -4,22 +4,26 @@ title: Afficher les prévisions
 feature: Visualizations
 role: User
 exl-id: 4a8b602c-e6aa-4a46-bba9-642387e6af88
-TQID: https://experienceleague.adobe.com/fihJQOI-CyvGccQsB0VxvwR-iV0OkJSMENaiciYrgFc
+TQID: 'https://experienceleague.adobe.com/fihJQOI-CyvGccQsB0VxvwR-iV0OkJSMENaiciYrgFc'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
 subfeature_v2:
   - id: d13dba12-733d-4914-8d92-d643658bbe5d
+    internal-label: Forecasting
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: User
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 372
+source-wordcount: '372'
 ht-degree: 5%
-
 ---
-
 # Afficher des prévisions
 
 Vous pouvez afficher des prévisions dans un tableau à structure libre ou dans un graphique en courbes.
@@ -56,8 +60,8 @@ Les prévisions sont représentées dans le graphique linéaire comme suit :
 
 * Les valeurs actuelles des mesures du graphique en courbes sont indiquées par une barre verticale. Si vous pointez sur cette ligne verticale, une fenêtre contextuelle s’affiche avec la dernière date actuelle.
 * Les valeurs prévues pour une ou plusieurs mesures sont affichées à droite de la barre verticale à l’aide de lignes pointillées. Vous pouvez pointer sur n’importe quel point de données pour une mesure. Une fenêtre contextuelle s’affiche avec :
-   * date de la prévision
-   * valeur prévue pour la mesure
-   * limite supérieure de la valeur prévue pour la mesure
-   * limite inférieure de la valeur prévue pour la mesure
+  * date de la prévision
+  * valeur prévue pour la mesure
+  * limite supérieure de la valeur prévue pour la mesure
+  * limite inférieure de la valeur prévue pour la mesure
 * La zone ombrée affiche la marge de confiance de la prévision.

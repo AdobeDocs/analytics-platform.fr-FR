@@ -4,23 +4,28 @@ description: Découvrez comment créer et interpréter des visualisations Nuage 
 feature: Visualizations
 exl-id: c01386c9-c51f-46f3-b1a2-41a8d8996d04
 role: User
-TQID: https://experienceleague.adobe.com/qkpKnRbGfAQ2dQSw06QEYlBZ-dycI1NyGtvxC89oidE
+TQID: 'https://experienceleague.adobe.com/qkpKnRbGfAQ2dQSw06QEYlBZ-dycI1NyGtvxC89oidE'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: User
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 254
-ht-degree: 51%
-
+source-wordcount: '263'
+ht-degree: 53%
 ---
-
 # Dispersion {#scatter}
 
 >[!CONTEXTUALHELP]
@@ -30,14 +35,14 @@ ht-degree: 51%
 
 >[!BEGINSHADEBOX]
 
-_Cet article documente la visualisation Dispersion dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Voir [Dispersion](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/scatterplot) pour la version_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** de cet article._
+_Cet article documente la visualisation Dispersion dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Voir [Dispersion](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/scatterplot) pour la version_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 
 
 La visualisation ![GraphScatter](/help/assets/icons/GraphScatter.svg) **[!UICONTROL Scatter]** vous permet d’identifier les corrélations et les modèles entre différentes mesures dans vos données. La visualisation montre la relation entre les éléments de dimension et jusqu’à trois mesures. La visualisation nécessite trois composants et prend en charge la visualisation de quatre composants au maximum.
 
-* Le composant de ligne (généralement une dimension) représente chaque point du graphique. Différentes lignes s’affichent sous forme de points de différentes couleurs.
+* Le composant de ligne (généralement une dimension) représente chaque point du graphique. Différentes lignes sont affichées sous forme de points de différentes couleurs.
 * La colonne la plus à gauche (généralement une mesure) trace la position du point sur l’axe Y (vertical).
 * La deuxième colonne trace la position du point sur l’axe X (horizontal).
 * La troisième colonne détermine le rayon du point.
@@ -50,7 +55,7 @@ La visualisation ![GraphScatter](/help/assets/icons/GraphScatter.svg) **[!UICONT
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisation Dispersion](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/use-scatterplot-visualizations){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisation Dispersion](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/use-scatterplot-visualizations){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 

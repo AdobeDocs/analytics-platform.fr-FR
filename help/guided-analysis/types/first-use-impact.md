@@ -1,28 +1,38 @@
 ---
 title: Analyse d’impact de la première utilisation
-description: Mesurez l’impact de la première utilisation des fonctionnalités sur les indicateurs clés.
+description: Mesurer l’impact de la première utilisation des fonctionnalités sur les indicateurs clés.
 feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 exl-id: 2c512184-2d79-4c41-8229-a09e440179ea
 role: User
-TQID: https://experienceleague.adobe.com/TRLnyHuOUno5zy2QT2Uc8vFnWeVy2snRu-ispS0ClKk
+TQID: 'https://experienceleague.adobe.com/TRLnyHuOUno5zy2QT2Uc8vFnWeVy2snRu-ispS0ClKk'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
+  - id: d494f34f-674c-496a-a400-b33552b95463
+    internal-label: Adobe Product Analytics
+  - id: bfa38d8a-4e93-4fd8-8cd8-e72c589e3af8
+    internal-label: Guided analysis
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 7f8ab656c7dbf508b2a78fd2022592faf883c56e
+    internal-label: User
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 678
+source-wordcount: '678'
 ht-degree: 100%
-
 ---
-
 # Analyse d’[!UICONTROL impact de la première utilisation] {#first-use-impact}
 
 <!-- markdownlint-disable MD034 -->
@@ -30,13 +40,13 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="workspace_guidedanalysis_firstuseimpact_button"
 >title="Impact de la première utilisation"
->abstract="Mesurez l’impact de la première utilisation des fonctionnalités sur les indicateurs clés."
+>abstract="Mesurer l’impact de la première utilisation des fonctionnalités sur les indicateurs clés."
 
 <!-- markdownlint-enable MD034 -->
 
-L’analyse ![FirstUse](/help/assets/icons/FirstUse.svg) **[!UICONTROL Impact de la première utilisation]** présente une comparaison des performances des indicateurs clés avant et après la première utilisation d’une fonctionnalité de produit par une personne. L’axe horizontal de ce rapport est un intervalle de temps relatif avant et après l’événement, tandis que l’axe vertical mesure les indicateurs clés souhaités. Une barre verticale située au milieu du graphique représente le jour 0 correspondant au moment où une fonctionnalité est utilisée pour la première fois par une personne donnée. Comme les utilisateurs et utilisatrices n’adoptent pas toujours les fonctionnalités le même jour et que vos déploiements peuvent potentiellement s’étendre sur plusieurs jours, le jour 0 peut avoir une signification différente pour chaque personne.
+L’analyse ![FirstUse](/help/assets/icons/FirstUse.svg) **[!UICONTROL Impact de la première utilisation]** présente une comparaison des performances des indicateurs clés avant et après la première utilisation d’une fonctionnalité de produit par une personne. L’axe horizontal de ce rapport est un intervalle de temps relatif avant et après l’événement, tandis que l’axe vertical mesure les indicateurs clés souhaités. Une barre verticale située au milieu du graphique représente le jour 0 correspondant au moment où une fonctionnalité est utilisée pour la première fois par une personne donnée. Étant donné que les utilisateurs n’adoptent pas toujours les fonctionnalités le même jour et que vos déploiements peuvent s’étaler sur plusieurs jours, le jour 0 peut correspondre à un jour différent pour chaque utilisateur.
 
->[!VIDEO](https://video.tv.adobe.com/v/3423495/?captions=fre_fr&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3421661/?quality=12&learn=on)
 
 ## Cas d’utilisation
 
@@ -44,11 +54,11 @@ Les cas d’utilisation de cette analyse sont les suivants :
 
 * **Analyse des nouvelles fonctionnalités** : si vous lancez une nouvelle fonctionnalité dans votre produit, vous pouvez comparer les performances des indicateurs clés avant et après la première exposition des utilisateurs et utilisatrices à cette nouvelle fonctionnalité.
 * **Déploiements par phases** : comme l’analyse recherche la première utilisation de la fonctionnalité plutôt qu’une date fixe, cette analyse est utile si vous échelonnez le déploiement de vos fonctionnalités au fil du temps.
-* **Analyse de la nouvelle version du produit** : si vous lancez une nouvelle version de votre produit, vous pouvez comparer les indicateurs clés obtenus avant et après la première exposition des utilisateurs et utilisatrices à cette nouvelle version. Sélectionnez « n’importe quel événement » comme événement de première utilisation et filtrez-le sur votre propriété Numéro de version.
+* **Analyse de la nouvelle version du produit** : si vous lancez une nouvelle version de votre produit, vous pouvez comparer les indicateurs clés obtenus avant et après la première exposition des utilisateurs et utilisatrices à cette nouvelle version. Sélectionnez « Tout événement » comme événement de première utilisation et filtrez-le en fonction de votre propriété Numéro de version.
 * **Améliorations apportées aux fonctionnalités existantes** : si vous apportez des améliorations à une fonctionnalité existante de votre produit, vous pouvez comparer les indicateurs clés obtenus avant et après la première exposition des utilisateurs et utilisatrices à ces nouvelles améliorations. Vous pouvez effectuer cette analyse d’une ou plusieurs façons en fonction de votre instrumentation de fonctionnalités.
   * Sélectionner un événement représentant l’amélioration comme événement de première utilisation
   * Sélectionner la date de début du déploiement des modifications
-  * Segmenter l’analyse en fonction du groupe de personnes exposées aux améliorations
+  * Segmentez l’analyse en fonction du groupe de personnes exposées aux améliorations.
 * **Efficacité de la campagne** : lorsqu’un utilisateur ou une utilisatrice clique sur une campagne donnée, vous pouvez comparer les performances des indicateurs clés avant et après l’interaction de l’utilisateur ou de l’utilisatrice avec cette campagne.
 
 ## Interface

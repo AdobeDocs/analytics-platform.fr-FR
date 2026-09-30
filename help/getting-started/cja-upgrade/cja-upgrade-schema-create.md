@@ -1,5 +1,5 @@
 ---
-title: Créer un schéma personnalisé dans Customer Journey Analytics
+title: Créer un schéma personnalisé pour Customer Journey Analytics
 description: Découvrir comment créer un schéma personnalisé pour Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
@@ -9,25 +9,34 @@ autotag-review: '2026-05-19T08:15:52.067Z'
 TQID: 'https://experienceleague.adobe.com/RxYBLvBJnhWb-YL6HeVpTz-9dKrr5DQZhOBond8Xano'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
+    internal-label: Upgrade
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Data management
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1294
+source-wordcount: '1294'
 ht-degree: 100%
-
 ---
-
 # Créer un schéma personnalisé à utiliser avec Customer Journey Analytics {#create-custom-schema}
 
 <!-- markdownlint-disable MD034 -->
@@ -35,7 +44,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-create"
 >title="Créer le schéma personnalisé souhaité dans Adobe Experience Platform"
->abstract="Utilisez l’interface d’utilisation d’Adobe Experience Platform pour créer un schéma afin qu’Adobe connaisse le format approprié pour stocker vos données.<br><br>Cette étape implique la création réelle du schéma, comme convenu par votre organisation. Le temps estimé nécessaire à la création de votre schéma dans l’interface d’Adobe Experience Platform est d’environ une semaine, selon le nombre de dimensions et de mesures à créer."
+>abstract="Utilisez l’interface utilisateur d’Adobe Experience Platform pour créer un schéma afin qu’Adobe connaisse le format approprié pour stocker vos données.<br><br>Cette étape implique la création réelle du schéma, comme convenu par votre organisation. Le temps estimé nécessaire à la création de votre schéma dans l’interface d’Adobe Experience Platform est d’environ une semaine, selon le nombre de dimensions et de mesures à créer."
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-create-default-aa"
@@ -45,7 +54,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-profile"
 >title="Activer votre schéma pour le profil"
->abstract="Activez le profil dans votre schéma à utiliser Adobe Real-Time CDP. Cette étape apparaît car vous avez communiqué votre désir d’intégration à Adobe Real-Time CDP.<br><br>Comme cette étape implique de cliquer sur une seule case, elle ne prend que quelques minutes."
+>abstract="Activez le profil dans votre schéma pour l’utiliser avec Adobe Real-time CDP. Cette étape apparaît car vous avez communiqué votre désir d’intégration à Adobe Real-Time CDP.<br><br>Comme cette étape implique de cliquer sur une seule case, elle ne prend que quelques minutes."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -53,9 +62,9 @@ ht-degree: 100%
 
 >[!IMPORTANT]
 >
->Avant de commencer à créer votre schéma personnalisé, collaborez avec votre équipe de données et d’autres parties prenantes de l’ensemble de votre organisation pour identifier la conception de schéma idéale de votre organisation pour Customer Journey Analytics et les autres applications Adobe Experience Platform que vous utilisez. Pour plus d’informations, consultez [Concevoir le schéma à utiliser avec Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md).
+>Avant de commencer à créer votre schéma personnalisé, collaborez avec votre équipe chargée des données et les autres parties prenantes de votre organisation afin d’identifier quelle est, pour votre organisation, la conception de schéma idéale pour Customer Journey Analytics et les autres applications Adobe Experience Platform que vous utilisez. Pour plus d’informations, consultez [Concevoir le schéma à utiliser avec Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md).
 
-Les sections suivantes décrivent la création d’un schéma utilisable avec Customer Journey Analytics. Les options de schéma disponibles sont les suivantes :
+Les sections suivantes décrivent la création d’un schéma utilisable avec Customer Journey Analytics. Les options de schéma disponibles sont les suivantes :
 
 * **Schéma XDM personnalisé :** (recommandé) schéma rationalisé adapté aux besoins de votre organisation et aux applications Platform spécifiques que vous utilisez. Toute modification future requise est simple.
 
@@ -114,7 +123,7 @@ Pour créer un schéma personnalisé, procédez comme suit :
 
       Sélectionnez **[!UICONTROL Précédent]** pour fermer l’aperçu.
 
-   1. (Facultatif) Sélectionnez tout groupe de champs supplémentaire à inclure.
+   1. (Facultatif) Sélectionnez tout groupe de champs supplémentaire que vous souhaitez inclure.
 
       Si vous avez choisi d’utiliser le schéma Adobe Analytics par défaut plutôt que de créer un schéma XDM personnalisé, vous pouvez maintenant ajouter le groupe de champs Adobe Analytics ExperienceEvent. Cependant, Adobe recommande de créer un schéma XDM personnalisé plutôt que d’ajouter ce groupe de champs.
 
@@ -152,7 +161,7 @@ Pour créer un schéma personnalisé, procédez comme suit :
 
    ![Spécifier l’ECID comme identité](./assets/specify-identity.png)
 
-   Vous spécifiez Experience Cloud Identity comme identité principale qu’Adobe Experience Platform Identity Service peut utiliser pour combiner (regrouper) le comportement des profils avec le même ECID.
+   Vous spécifiez l’identité Experience Cloud comme identité principale que le service d’identités Adobe Experience Platform peut utiliser pour combiner (rapprocher) le comportement des profils avec le même ECID.
 
    Sélectionnez **[!UICONTROL Appliquer]**. Une icône d’empreinte digitale apparaît dans l’attribut ecid.
 
@@ -160,7 +169,7 @@ Pour créer un schéma personnalisé, procédez comme suit :
 
    ![Spécifier l’e-mail comme identité](./assets/specify-email-identity.png)
 
-   Vous spécifiez l’adresse e-mail en tant qu’autre identité qu’Adobe Experience Platform Identity Service peut utiliser pour combiner (regrouper) le comportement des profils.
+   Vous spécifiez l’adresse e-mail en tant qu’autre identité que le service d’identités Adobe Experience Platform peut utiliser pour combiner (rapprocher) le comportement des profils.
 
    Sélectionnez **[!UICONTROL Appliquer]**. Une icône d’empreinte digitale apparaît dans l’attribut d’e-mail.
 
@@ -186,13 +195,13 @@ Pour créer un schéma personnalisé, procédez comme suit :
 
    Pour capturer ces données de profil, vous devez :
 
-   * Créer un schéma basé sur la classe Profil XDM individuel ;
+   * Créer un schéma basé sur la classe XDM Individual Profile.
 
-   * Ajouter le groupe de champs Profil principal v2 au schéma ;
+   * Ajouter le groupe de champs Profile Core v2 au schéma.
 
-   * Ajouter un objet d’identification basé sur le groupe de champs Profil principal v2 ;
+   * Ajouter un objet d’identification basé sur le groupe de champs Profile Core v2.
 
-   * Définir Experience Cloud ID comme identifiant principal et l’adresse e-mail comme identifiant ;
+   * Définir l’Experience Cloud ID comme identifiant principal et l’adresse e-mail comme identifiant.
 
    * Activer le schéma pour le profil.
 

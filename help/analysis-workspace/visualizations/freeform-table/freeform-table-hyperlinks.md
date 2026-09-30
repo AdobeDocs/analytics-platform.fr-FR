@@ -8,24 +8,29 @@ autotag-review: '2026-05-19T08:42:43.573Z'
 TQID: 'https://experienceleague.adobe.com/HnG-l4s4MLz-vmdQVtFzVQIC-lzsbAxWItNFFYHqv5I'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
 subfeature_v2:
   - id: ddf59f64-0e46-4986-a525-056acc143c70
+    internal-label: Workspace visualizations
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Customer journeys
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1627
+source-wordcount: '1627'
 ht-degree: 97%
-
 ---
-
 # Créer des hyperliens dans les tableaux à structure libre
 
-Vous pouvez créer des liens hypertextes pour des éléments de dimension afin de les rendre cliquables dans un tableau à structure libre d’Analysis Workspace.
+Vous pouvez créer des liens hypertexte pour les éléments de dimension afin de les rendre cliquables dans un tableau à structure libre d’Analysis Workspace.
 
 Cette fonctionnalité est particulièrement utile lors de la création de liens hypertextes pour les types d’éléments de dimension suivants :
 
@@ -47,16 +52,16 @@ Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Créerdes 
 
 Tenez compte des points suivants lorsque vous créez des liens hypertextes pour un ou plusieurs éléments de dimension :
 
-* Les liens hypertextes créés sont stockés dans le tableau à structure libre du projet Analysis Workspace. Les liens hypertextes ne sont pas conservés lorsque vous utilisez la même dimension ou les mêmes éléments de dimension dans un autre tableau ou dans un autre projet.
+* Les liens hypertexte créés sont stockés dans le tableau à structure libre au sein du projet Analysis Workspace. Les liens hypertextes ne sont pas conservés lorsque vous utilisez la même dimension ou les mêmes éléments de dimension dans un autre tableau ou dans un autre projet.
 
 * Si vous modifiez la vue de données du tableau à structure libre, tous les liens hypertextes créés pour les dimensions ou les éléments de dimension du tableau restent disponibles. Cette fonctionnalité suppose que la dimension existe toujours dans la vue de données.
 
 * La validité des URL n’est pas vérifiée lors de la création du lien hypertexte. Si vous
 
-  * Créez un lien hypertexte dont l’URL n’est pas valide, ou
+  * créez un lien hypertexte avec une URL non valide, ou
   * créez un lien hypertexte qui fait référence à un élément de dimension qui n’a pas de valeur d’URL (en référençant directement l’élément de dimension ou en utilisant les variables `$value` ou `$breakdown`),
 
-  ensuite, les utilisateurs et utilisatrices qui cliquent sur le lien hypertexte voient un message d’erreur indiquant que l’URL n’est pas valide.
+  les personnes qui cliquent sur le lien hypertexte voient alors un message d’erreur indiquant que l’URL n’est pas valide.
 
 * Les liens hypertextes créés pour un seul élément de dimension remplacent les liens hypertextes créés sur la dimension.
 
@@ -151,7 +156,7 @@ Vous pouvez supprimer des liens hypertextes créés pour des éléments de dimen
 
 Pour supprimer des liens hypertextes d’éléments de dimension, procédez comme suit :
 
-1. Dans un tableau à structure libre d’Analysis Workspace, effectuez l’une des opérations suivantes :
+1. Dans un tableau à structure libre d’Analysis Workspace, effectuez l’une des opérations suivantes :
 
    * **Supprimer un lien hypertexte d’un seul élément de dimension :**
 

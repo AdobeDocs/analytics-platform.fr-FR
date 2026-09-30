@@ -8,25 +8,34 @@ autotag-review: '2026-05-19T07:16:36.730Z'
 TQID: 'https://experienceleague.adobe.com/8ijMa5NbkCx0H48qSZkYrgTDRaVCSBmO9twZvWFJ83o'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: 9efc51843684b8cad96d01f7ada99eafc5950b42
+    internal-label: Customer journeys
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 632
+source-wordcount: '632'
 ht-degree: 90%
-
 ---
-
 # AAID, ECID, AACUSTOMID et le connecteur source Analytics
 
 Les données Adobe Analytics contiennent plusieurs champs d’identité. Le [connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr) traite de manière distincte trois champs d’identité importants : AAID, ECID et AACUSTOMID.
@@ -35,13 +44,13 @@ Les données Adobe Analytics contiennent plusieurs champs d’identité. Le [co
 
 L’ID Adobe Analytics (AAID) représente l’identifiant principal de l’appareil dans Adobe Analytics. Il existe systématiquement dans chaque événement transmis par le biais du connecteur source Analytics. L’AAID est parfois appelé l’« ID Analytics hérité » ou l’ID de cookie `s_vi`. Cependant, un AAID est créé même en absence du cookie `s_vi`. L’AAID est représenté par les colonnes `post_visid_high/post_visid_low` dans les [flux de données Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=fr#columns%2C-descriptions%2C-and-data-types).
 
-L’AAID est transformé en `HEX(post_visid_high) + "-" + HEX(post_visid_low)` dans le connecteur source Analytics. Le champ AAID d’un événement donné contient une identité unique qui peut être de l’un des types décrits dans l’[ordre des opérations pour les ID Analytics](https://experienceleague.adobe.com/fr/docs/id-service/using/reference/analytics-reference/analytics-order-of-operations). (Dans une suite de rapports entière, l’AAID peut contenir plusieurs types parmi les événements. Le type de chaque événement est indiqué dans la colonne `post_visid_type` des flux de données Analytics.) Voir aussi : [Référence des colonnes de données](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=fr).
+L’AAID est transformé en `HEX(post_visid_high) + "-" + HEX(post_visid_low)` dans le connecteur source Analytics. Le champ AAID d’un événement donné contient une identité unique qui peut être de l’un des types décrits dans l’[ordre des opérations pour les ID Analytics](https://experienceleague.adobe.com/fr/docs/id-service/using/reference/analytics-reference/analytics-order-of-operations). (Dans une suite de rapports entière, l’AAID peut contenir plusieurs types parmi les événements. Le type de chaque événement est indiqué dans la colonne `post_visid_type` des flux de données Analytics.) Voir aussi : [Référence des colonnes de données](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html).
 
 ## ECID
 
 L’ECID (ID Experience Cloud), également parfois appelé MCID (ID Marketing Cloud), est un champ d’identifiant de l’appareil distinct qui est renseigné dans Adobe Analytics lorsqu’Analytics est implémenté à l’aide du [Service d’identification des visiteurs](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=fr) (AppMeasurement) ou du service d’identification Experience Platform (SDK Web). L’ECID est représenté par la colonne `mcvisid` dans les flux de données Adobe Analytics.
 
-Si un ECID existe sur un événement, l’AAID peut être basé sur l’ECID selon que le [délai de grâce](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/grace-period.html?lang=fr) d’Analytics est configuré ou non. Voir également : [Requêtes d’ID Analytics et Experience Cloud](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/legacy-analytics.html?lang=fr).
+Si un ECID existe sur un événement, l’AAID peut être basé sur l’ECID selon que le [délai de grâce](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/grace-period.html) d’Analytics est configuré ou non. Voir également : [Requêtes d’ID Analytics et Experience Cloud](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/legacy-analytics.html).
 
 ## AACUSTOMID
 
@@ -65,7 +74,7 @@ Les éléments situés entre &lt;> chevrons représentent les endroits où les v
 
 Dans le mappage d’identité :
 
-* En présence d’un ECID, l’identité est marquée comme l’identité principale de l’événement. Remarque : dans ce cas, l’AAID peut se baser sur l’ECID conformément aux informations ci-dessus.
+* Si un ECID est présent, il est marqué comme identité principale pour l’événement. Remarque : dans ce cas, l’AAID peut se baser sur l’ECID conformément aux informations ci-dessus.
 Dans le cas contraire, l’AAID est marqué comme étant l’identité principale de l’événement.
 * L’AACUSTOMID n’est jamais marqué comme l’ID principal de l’événement. Cependant, en présence d’un AACUSTOMID, l’AAID est basé sur l’AACUSTOMID conformément au processus décrit ci-dessus.
 

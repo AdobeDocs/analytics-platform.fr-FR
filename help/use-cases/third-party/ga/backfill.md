@@ -9,25 +9,36 @@ autotag-review: '2026-05-19T07:58:46.205Z'
 TQID: 'https://experienceleague.adobe.com/X5R0sqTkZKxvzH7mwv69-Ez3MIbuTg6XDGuxrw-iugw'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: e1bd5a34-b16e-477b-84cc-247fa0793f4b
+    internal-label: Analytics integration
+  - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+    internal-label: Use cases
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Machine learning
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 662
+source-wordcount: '662'
 ht-degree: 83%
-
 ---
-
 # Ingérer des données historiques de Google Analytics
 
 Cette page explique comment ingérer vos données historiques Google Analytics dans Adobe Experience Platform sous la forme de jeu de données, ce qui vous permet de référencer ce jeu au sein d’une vue de données dans Customer Journey Analytics. Vous pouvez associer les étapes de cette page à [Configurer une implémentation de Google Analytics en direct](streaming.md), ce qui génère un jeu de données récurrent. Combinez ce jeu de données historique avec le jeu de données de votre implémentation actuelle afin d’obtenir une vue transparente des données de Customer Journey Analytics avec les données actives et renvoyées.
@@ -47,7 +58,7 @@ La structure de données dans les propriétés Universal Analytics est différe
 * [Configurer une exportation BigQuery pour une propriété Universal Analytics](https://support.google.com/analytics/answer/3416092)
 * [Configurer une exportation BigQuery pour une propriété Google Analytics 4](https://support.google.com/analytics/answer/9823238)
 
-### Autres configurations requises pour les propriétés Universal Analytics
+### Exigences supplémentaires pour les propriétés Universal Analytics
 
 >[!NOTE]
 >
@@ -121,7 +132,7 @@ Certains champs XDM de Platform nécessitent le bon format pour que les donnée
 
   `date(timestamp, "yyyy-MM-dd HH:mm:ssZ")`
 
-  Enregistrez le champ calculé dans la structure de données d’horodatage du schéma :
+  Enregistrez le champ calculé dans la structure de données de date et heure du schéma :
 
   ![Horodatage](../../assets/timestamp.png)
 

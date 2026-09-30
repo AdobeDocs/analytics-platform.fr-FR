@@ -9,27 +9,37 @@ autotag-review: '2026-05-19T09:33:58.249Z'
 TQID: 'https://experienceleague.adobe.com/FJOAnB2Dumw9txeabYMfrIqE1uihee-TcA8ZFcAbU2Y'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: e8abc408-b05c-427f-9e37-f8b033a6b3c3
+    internal-label: Schema
   - id: bfef374d-acfd-4c57-bf74-a2b36053c545
+    internal-label: Data ingestion
   - id: cf731116-8803-4027-85aa-9c0a126e8321
+    internal-label: Dataset configuration
+  - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+    internal-label: Use cases
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Customer journeys
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 518
+source-wordcount: '518'
 ht-degree: 59%
-
 ---
-
 # Utiliser des tableaux d’objets
 
-Certains schémas de plateforme peuvent avoir des tableaux d’objets. Adobe Customer Journey Analytics prend en charge l’ingestion et le compte rendu des performances des tableaux d’objets dans les données d’événement, de recherche et de profil. Un des exemples les plus courants est celui du panier, qui contient plusieurs produits. Chaque produit a un nom, un SKU, une catégorie, un prix, une quantité et toute autre dimension dont vous souhaitez effectuer le suivi. Toutes ces facettes ont des exigences distinctes, mais doivent toutes tenir dans le même accès.
+Certains schémas de plateforme peuvent avoir des tableaux d’objets. Adobe Customer Journey Analytics prend en charge l’ingestion et le compte rendu des performances des tableaux d’objets dans les données d’événement, de recherche et de profil. Un des exemples les plus courants est celui du panier, qui contient plusieurs produits. Chaque produit a un nom, un SKU, une catégorie, un prix, une quantité et toute autre dimension dont vous souhaitez effectuer le suivi. Toutes ces facettes ont des exigences distinctes, mais doivent toutes tenir dans le même hit.
 
 Dans les versions précédentes d’Adobe Analytics, cet exploit a été accompli à l’aide de la variable `products`. Il s’agissait d’une chaîne concaténée séparée par des points-virgules (`;`) pour séparer les facettes d’un produit, tandis que des virgules (`,`) délimitaient les produits. C’était la seule variable avec une prise en charge limitée des « tableaux d’objets ». Les variables à plusieurs valeurs, telles que les variables de liste, peuvent prendre en charge l’équivalent de tableaux, mais elles ne peuvent pas prendre en charge les « tableaux d’objets ». Customer Journey Analytics développe ce concept en prenant en charge des hiérarchies arbitrairement profondes au sein d’une seule ligne de données, une fonctionnalité indisponible dans les versions précédentes d’Adobe Analytics.
 
@@ -213,7 +223,7 @@ Puisque vous pouvez combiner n’importe quelle dimension avec n’importe quell
 | `Unspecified` | `2` | `1` |
 | `Total` | `2` | `2` |
 
-Il existe une commande de produit sans qu’un nom de garantie lui soit associé, de sorte que l’élément de dimension attribue à « Non spécifié ». La même situation s’applique également à la commande de garantie du produit :
+Il existe une commande de produit sans qu’un nom de garantie lui soit associé, de sorte que cette commande est attribuée à l’élément de dimension « Non spécifié ». La même situation s’applique également à la commande de garantie du produit :
 
 ```diff
 {
@@ -285,5 +295,5 @@ L’application de cette mesure calculée affiche les résultats souhaités :
 
 ## Limites
 
-Des limitations s’appliquent aux tableaux dans les données utilisées par Customer Journey Analytics et modélisées dans le cadre d’un schéma dans Experience Platform. Consultez les sections [Limites du modèle de données](https://experienceleague.adobe.com/fr/docs/experience-platform/profile/guardrails#data-model-limits) et [Limites de taille des données](https://experienceleague.adobe.com/fr/docs/experience-platform/profile/guardrails#data-size-limits) dans le [Mécanismes de sécurisation par défaut pour les données et la segmentation du profil client en temps réel](https://experienceleague.adobe.com/fr/docs/experience-platform/profile/guardrails).
+Des limitations s’appliquent aux tableaux dans les données utilisées par Customer Journey Analytics et modélisées dans le cadre d’un schéma dans Experience Platform. Consultez les sections [Limites du modèle de données](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-model-limits) et [Limites de taille des données](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-size-limits) dans le [Mécanismes de sécurisation par défaut pour les données et la segmentation du profil client en temps réel](https://experienceleague.adobe.com/fr/docs/experience-platform/profile/guardrails).
 

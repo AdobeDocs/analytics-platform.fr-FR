@@ -4,23 +4,28 @@ title: Techniques statistiques
 feature: Visualizations
 role: User
 exl-id: f042a6dd-6af5-4bdd-afc9-07546d8ded6e
-TQID: https://experienceleague.adobe.com/hbfehTAPC7nw96Wdm47bdX-D5c4cfTCeCtlHlINBBxI
+TQID: 'https://experienceleague.adobe.com/hbfehTAPC7nw96Wdm47bdX-D5c4cfTCeCtlHlINBBxI'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: d13dba12-733d-4914-8d92-d643658bbe5d
+    internal-label: Forecasting
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: User
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 552
-ht-degree: 5%
-
+source-wordcount: '552'
+ht-degree: 6%
 ---
-
 # Techniques statistiques
 
 Le service de prévision soutient actuellement Prophet et il a été démontré qu&#39;il fonctionne efficacement et de manière fiable pour la plupart des données. Prophet est un package de prévision open-source largement utilisé développé par Meta. Il décompose les données en composants tendances, saisonnalités et événements. Le modèle Prophète est efficace et s&#39;adapte bien à de nombreuses applications de prévision. En outre, le modèle fonctionne de manière robuste contre les valeurs aberrantes et les données manquantes.
@@ -65,5 +70,5 @@ Le service ne fait aucune hypothèse sur les données utilisateur. Par exemple, 
 ## Références
 
 1. Taylor, Sean J. et Benjamin Letham : *Prévision à grande échelle*. The American Statistician 72.1 (2018) : 37-45.
-1. Triebe, Oskar, et al. : *Neuralprophet : Explicable predicasting at scale.* Préimpression arXiv arXiv:2111.15397(2021).
+1. Triebe, Oskar, et al. : *Neuralprophet : Explicable predicasting at scale.* arXiv preprint arXiv:2111.15397(2021).
 1. Zhang et Arbor : *détection des anomalies de séries temporelles.* Demande de brevet américain #18/057883.

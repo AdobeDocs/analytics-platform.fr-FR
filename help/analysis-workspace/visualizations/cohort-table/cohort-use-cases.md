@@ -9,25 +9,33 @@ autotag-review: '2026-05-19T08:40:45.448Z'
 TQID: 'https://experienceleague.adobe.com/y3eY2-z0jYCzn58PVATdpxJfE-EYEHrZIJx2V31bAbM'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
 subfeature_v2:
   - id: ddf59f64-0e46-4986-a525-056acc143c70
+    internal-label: Workspace visualizations
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
+    internal-label: Customer engagement
   - id: c13ff12d-60f1-49cd-833a-d43359628223
+    internal-label: Mobile messaging
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Insights
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1019
+source-wordcount: '1019'
 ht-degree: 8%
-
 ---
-
-# Cas d’utilisation de l’analyse des cohortes
+# Cas d’utilisation de l’analyse de cohorte
 
 Cet article présente plusieurs cas d’utilisation standard pour lesquels les tableaux de cohortes sont utiles pour fournir des informations utiles afin de prendre des mesures suivantes.
 
@@ -45,7 +53,7 @@ Vous pouvez créer une analyse des cohortes sur six mois. Les visiteurs ne sont 
 
 ## Abonnement
 
-Vous travaillez chez Adobe.com et proposez un abonnement gratuit à Creative Cloud, avec pour objectif que les utilisateurs passent de la version gratuite à la version d’évaluation de 30 jours voire à la version payante.
+Vous travaillez chez Adobe.com et proposez un abonnement gratuit à Creative Cloud, avec pour objectif d’inciter les utilisateurs à passer de la version gratuite à la version d’essai de 30 jours ou, à terme, à la version payante.
 
 Utilisez [!UICONTROL Analyse des cohortes] pour comprendre, par exemple, qu’entre 8 et 10 % des utilisateurs de Creative Cloud bénéficient d’une mise à niveau gratuite au cours du premier mois suivant l’installation, quelle que soit la date à laquelle ils l’ont installée. Ensuite, mise à niveau de 12 à 15 % au cours du deuxième mois d’utilisation. Ensuite, les taux de mise à niveau chutent considérablement : entre 4 et 5 % au mois 3, entre 3 et 4 % au mois 4, et entre 1 et 2 % au mois 5.
 

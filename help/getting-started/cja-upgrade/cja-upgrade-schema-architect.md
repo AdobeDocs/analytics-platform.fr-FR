@@ -5,32 +5,47 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: f932110a-ca9d-40d1-9459-064ef9cd23da
-TQID: https://experienceleague.adobe.com/oNFeGuF3o7WGgp6nxSFv1GAVMcXL3Pt9N3isQo0r6TA
+TQID: 'https://experienceleague.adobe.com/oNFeGuF3o7WGgp6nxSFv1GAVMcXL3Pt9N3isQo0r6TA'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
   - id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Taxonomy
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1545
-ht-degree: 10%
-
+source-wordcount: '1545'
+ht-degree: 11%
 ---
-
 # Concevoir le schéma à utiliser avec Customer Journey Analytics {#upgrade-schema-architect}
 
 <!-- markdownlint-disable MD034 -->
@@ -38,7 +53,7 @@ ht-degree: 10%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-architect"
 >title="Concevoir un schéma"
->abstract="Au sein de votre organisation, discutez des exigences de la collecte de données et déterminez comment vous souhaitez créer un schéma à utiliser dans Adobe Experience Platform. Cette étape s’affiche, car vous souhaitez utiliser le processus recommandé d’utilisation d’un schéma adapté à votre organisation. Il est essentiel d’effectuer cette étape correctement, car un schéma sur lequel toutes les équipes de votre organisation s’alignent facilite considérablement l’ingestion des données.<br><br>Le temps estimé nécessaire pour rassembler toutes les parties concernées au sein de votre organisation afin de s’aligner sur un schéma unifié est de 1 à 2 mois. Cette période dépend fortement du nombre d’équipes à coordonner et du nombre de dimensions et de mesures sur lesquelles s’aligner."
+>abstract="Au sein de votre organisation, discutez des exigences de la collecte de données et déterminez comment vous souhaitez créer un schéma à utiliser dans Adobe Experience Platform. Cette étape s’affiche, car vous souhaitez utiliser le processus recommandé d’utilisation d’un schéma adapté à votre organisation. Il est essentiel d’effectuer correctement cette étape, car l’adoption d’un schéma commun à toutes les équipes de votre organisation facilite considérablement l’ingestion de données.<br><br>Le temps estimé nécessaire pour rassembler toutes les parties concernées au sein de votre organisation afin de s’aligner sur un schéma unifié est de 1 à 2 mois. Cette période dépend fortement du nombre d’équipes à coordonner et du nombre de dimensions et de mesures sur lesquelles s’aligner."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -110,14 +125,14 @@ Dans Adobe Analytics, de nombreuses équipes considèrent la variable `events` c
 Lors de l’architecture d’un schéma, tenez compte des faits. Par exemple, `error.type = "validation"`, `user.isLoggedIn = true`, `checkout.step = "shipping"`. Définissez les mesures dans la vue de données sous la forme de nombres et de nombres filtrés sur ces faits. Par exemple :
 
 * `checkout.step` (énumération/chaîne) peut alimenter :
-   * « Passage en caisse : étape d’expédition atteinte » (nombre où `checkout.step == "shipping"`)
-   * « Passage en caisse : étape de paiement atteinte »
+  * « Passage en caisse : étape d’expédition atteinte » (nombre où `checkout.step == "shipping"`)
+  * « Passage en caisse : étape de paiement atteinte »
 * `error.type` (énumération/chaîne) peut alimenter :
-   * « Erreurs de validation »
-   * « Erreurs d’autorisation »
+  * « Erreurs de validation »
+  * « Erreurs d’autorisation »
 * `user.isLoggedIn` (booléen) peut alimenter :
-   * « Sessions authentifiées »
-   * « Conversions authentifiées »
+  * « Sessions authentifiées »
+  * « Conversions authentifiées »
 
 >[!TIP]
 >
@@ -127,9 +142,9 @@ Lors de l’architecture d’un schéma, tenez compte des faits. Par exemple, `e
 
 Certaines organisations doivent continuer à générer des rapports Adobe Analytics lors de la mise à niveau vers Customer Journey Analytics. Vous pouvez maintenir la parité sans introduire d’artefacts spécifiques d’Analytics dans votre conception de schéma à long terme à l’aide de l’approche suivante :
 
-1. **Utiliser des chemins d’accès aux champs XDM reconnus et automatiquement mappés par Adobe Analytics :** lorsque vous envoyez des champs XDM reconnus par Edge Network à Adobe Analytics, ils sont [&#x200B; mappés automatiquement](https://experienceleague.adobe.com/fr/docs/analytics/implementation/aep-edge/xdm-var-mapping) sans configuration supplémentaire.
+1. **Utiliser des chemins d’accès aux champs XDM reconnus et automatiquement mappés par Adobe Analytics :** lorsque vous envoyez des champs XDM reconnus par Edge Network à Adobe Analytics, ils sont [ mappés automatiquement](https://experienceleague.adobe.com/fr/docs/analytics/implementation/aep-edge/xdm-var-mapping) sans configuration supplémentaire.
 1. **Utiliser des champs XDM personnalisés pour les concepts spécifiques à une organisation :** tous les champs XDM qui ne sont pas automatiquement mappés à une variable Analytics sont transférés en tant que [variables de données contextuelles](https://experienceleague.adobe.com/fr/docs/analytics/implementation/vars/page-vars/contextdata) dans Adobe Analytics.
-1. **Utilisez les règles de traitement Adobe Analytics pour mapper ces variables de données contextuelles aux props/eVars:** [règles de traitement](https://experienceleague.adobe.com/fr/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) pour vous permettre de mapper n’importe quel champ XDM personnalisé dans n’importe quelle eVar ou prop. Ce concept prend en charge le reporting de parité dans Adobe Analytics tout en gardant votre schéma propre et centré sur Customer Journey Analytics.
+1. **Utilisez les règles de traitement Adobe Analytics pour mapper ces variables de données contextuelles aux props/eVars:** [règles de traitement](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) pour vous permettre de mapper n’importe quel champ XDM personnalisé dans n’importe quelle eVar ou prop. Ce concept prend en charge le reporting de parité dans Adobe Analytics tout en gardant votre schéma propre et centré sur Customer Journey Analytics.
 
 ## Identifier les parties prenantes et définir la propriété
 
@@ -147,7 +162,7 @@ Définissez un propriétaire clair pour les modifications de schéma. Un schéma
 La conception du schéma doit refléter les attentes en matière de confidentialité et de gouvernance, conformément aux politiques de confidentialité de votre organisation. Tenez compte des points suivants lors de la conception de votre schéma :
 
 * Collectez uniquement les éléments nécessaires pour prendre en charge les cas d’utilisation définis.
-* Assurez-vous que les exigences en matière de consentement et d’utilisation des données sont prises en compte dans votre stratégie de collecte. Pour plus d’informations[&#128279;](https://experienceleague.adobe.com/fr/docs/experience-platform/landing/governance-privacy-security/consent/sdk) voir  Utilisation de Web SDK pour traiter les données de consentement client.
+* Assurez-vous que les exigences en matière de consentement et d’utilisation des données sont prises en compte dans votre stratégie de collecte. Pour plus d’informations](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/consent/sdk) voir [ Utilisation de Web SDK pour traiter les données de consentement client.
 * Tenez compte de la manière dont les champs sensibles sont étiquetés et contrôlés dans les outils de gouvernance de Adobe Experience Platform. Voir [Adobe Customer Journey Analytics et gouvernance des données](/help/privacy/privacy-overview.md) pour plus d’informations.
 
 ## Étapes suivantes

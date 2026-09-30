@@ -5,24 +5,34 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 exl-id: 93e6e4f1-bbe4-4a6c-8ec3-54d1f9a8b847
 role: User
-TQID: https://experienceleague.adobe.com/2PKIwvFwCv5FiL7WgeJPksm74c8m5B4L33RZouD-t1o
+TQID: 'https://experienceleague.adobe.com/2PKIwvFwCv5FiL7WgeJPksm74c8m5B4L33RZouD-t1o'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
+  - id: d494f34f-674c-496a-a400-b33552b95463
+    internal-label: Adobe Product Analytics
+  - id: bfa38d8a-4e93-4fd8-8cd8-e72c589e3af8
+    internal-label: Guided analysis
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 7f8ab656c7dbf508b2a78fd2022592faf883c56e
+    internal-label: User
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 532
+source-wordcount: '532'
 ht-degree: 100%
-
 ---
-
 # Analyse d’[!UICONTROL impact de la nouvelle version] {#release-impact}
 
 <!-- markdownlint-disable MD034 -->
@@ -30,20 +40,20 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="workspace_guidedanalysis_releaseimpact_button"
 >title="Impact de la nouvelle version"
->abstract="Comparez les performances sur des périodes égales avant et après la version."
+>abstract="Comparez les performances sur des périodes égales avant et après la mise à jour."
 
 <!-- markdownlint-enable MD034 -->
 
-L’analyse ![Version](/help/assets/icons/Release.svg) **[!UICONTROL Impact de la nouvelle version]** présente une comparaison des performances des indicateurs clés avant et après une date donnée. L’axe horizontal de ce rapport est un intervalle de temps, tandis que l’axe vertical mesure les indicateurs clés souhaités. Une barre verticale située au milieu du graphique représente la date à laquelle vous souhaitez effectuer une comparaison, avant et après. Cette date représente généralement un changement notable du produit par rapport auquel vous souhaitez mesurer, tel qu’une mise à jour du produit ou un lancement de campagne.
+L’analyse ![Version](/help/assets/icons/Release.svg) **[!UICONTROL Impact de la nouvelle version]** présente une comparaison des performances des indicateurs clés avant et après une date donnée. L’axe horizontal de ce rapport est un intervalle de temps, tandis que l’axe vertical mesure les indicateurs clés souhaités. Une barre verticale située au milieu du graphique représente la date à laquelle vous souhaitez effectuer une comparaison, avant et après. Cette date représente généralement une modification notable du produit par rapport à laquelle vous souhaitez mesurer, telle qu’une mise à jour du produit ou un lancement de campagne.
 
->[!VIDEO](https://video.tv.adobe.com/v/3423448/?captions=fre_fr&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3421665/?quality=12&learn=on)
 
 ## Cas d’utilisation
 
 Les cas d’utilisation de cette analyse sont les suivants :
 
 * **Évaluation globale des performances :** la comparaison d’indicateurs clés globaux, tels que les mesures d’engagement, peut vous aider à déterminer si une version donnée a globalement réussi.
-* **Surveillance** : effectuez le suivi des mesures essentielles qui devraient rester fixes lorsque des modifications sont apportées, telles que le temps de chargement ou le nombre de connexions. Utilisez cette analyse pour les comparer avant et après une version afin de vous assurer qu’elle n’a eu aucune conséquence inattendue.
+* **Surveillance** : effectuez le suivi des mesures essentielles qui devraient rester fixes lorsque des modifications sont apportées, telles que le temps de chargement ou le nombre de connexions. Utilisez cette analyse pour les comparer avant et après une mise à jour afin de vous assurer qu’elle n’a eu aucune conséquence inattendue.
 * **Adoption des fonctionnalités** : si une mise à jour du produit se concentre sur l’amélioration d’une certaine fonctionnalité, vous pouvez utiliser cette analyse pour comparer directement l’utilisation de cette fonctionnalité avant et après la mise à jour du produit.
 * **Détection des bugs** : le suivi du nombre d’erreurs avant et après une version peut fournir un indicateur précoce des problèmes pour les clientes et clients. Si vous constatez une augmentation du nombre d’erreurs immédiatement après une version, vous pouvez collaborer avec les équipes d’ingénierie ou de développement pour identifier et corriger le problème, afin d’éviter tout impact supplémentaire sur les clientes et clients.
 
@@ -69,7 +79,7 @@ L’analyse [!UICONTROL Impact de la nouvelle version] propose les paramètres d
 
 ### Période
 
-La sélection de la date dans l’analyse d’impact fonctionne différemment des autres analyses, puisque le rapport tourne autour de la date spécifiée dans le rail de requête. Les options disponibles sont les suivantes :
+La sélection de la date dans l’analyse d’impact fonctionne différemment des autres analyses, puisque le rapport est centré sur la date spécifiée dans le rail de requête. Les options disponibles sont les suivantes :
 
 * **[!UICONTROL Intervalle]** : granularité de la date selon laquelle vous souhaitez afficher les données de tendance. Les options valides sont les suivantes : [!UICONTROL Quotidien], [!UICONTROL Hebdomadaire], [!UICONTROL Mensuel] et [!UICONTROL Trimestriel]. La modification de l’intervalle affecte les options disponibles pour la période avant et après.
 * **[!UICONTROL Période avant et après]** : durée de l’analyse avant et après la date spécifiée dans le rail de requête. Les options disponibles dépendent de l’[!UICONTROL Intervalle] sélectionné.

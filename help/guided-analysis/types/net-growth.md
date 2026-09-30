@@ -1,31 +1,43 @@
 ---
 title: Analyse de la croissance nette
-description: Êtes-vous en train de gagner ou de perdre des utilisateurs et utilisatrices ?
+description: Votre nombre d’utilisateurs augmente-t-il ou diminue-t-il ?
 feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 exl-id: a4f97458-9934-4a98-8005-fa1ba7831101
 role: User
-TQID: https://experienceleague.adobe.com/2E5Q2eE6dhvViTJ64eQ41I4S9ZsQO-WohKBY07CGJpg
+TQID: 'https://experienceleague.adobe.com/2E5Q2eE6dhvViTJ64eQ41I4S9ZsQO-WohKBY07CGJpg'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
+  - id: d494f34f-674c-496a-a400-b33552b95463
+    internal-label: Adobe Product Analytics
+  - id: bfa38d8a-4e93-4fd8-8cd8-e72c589e3af8
+    internal-label: Guided analysis
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+    internal-label: Measurement
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 7f8ab656c7dbf508b2a78fd2022592faf883c56e
+    internal-label: Insights
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 730
+source-wordcount: '730'
 ht-degree: 94%
-
 ---
-
 # Analyse de la [!UICONTROL croissance nette] {#net-growth}
 
 <!-- markdownlint-disable MD034 -->
@@ -33,7 +45,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="workspace_guidedanalysis_netgrowth_button"
 >title="Croissance nette"
->abstract="Êtes-vous en train de gagner ou de perdre des utilisateurs et utilisatrices ?"
+>abstract="Votre nombre d’utilisateurs augmente-t-il ou diminue-t-il ?"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -47,15 +59,15 @@ Le résultat de cette formule est un ratio. Une croissance nette de `1` représ
 
 De la même manière que pour l’analyse [Active](active-growth.md), les utilisateurs et utilisatrices sont définis comme suit :
 
-* **[!UICONTROL Nouveau]** : la personne était active pendant la période en cours, mais pas avant. Découvrez jusqu’où l’analyse revient pour déterminer un nouvel utilisateur ou une nouvelle utilisatrice en pointant la souris sur « [!UICONTROL Nouveaux utilisateurs et utilisatrices] » dans la légende du graphique. La période de recherche en amont est déterminée dynamiquement en fonction de la période et de l’intervalle sélectionnés.
-* **[!UICONTROL Récurrent]** : la personne était active au cours de la période en cours et non au cours de la période précédente, mais elle était auparavant active à un moment donné. Découvrez jusqu’où l’analyse revient pour déterminer une personne récurrente en pointant sur « [!UICONTROL Utilisateurs et utilisatrices récurrents] » dans la légende du graphique. La période de recherche en amont est déterminée dynamiquement en fonction de la période et de l’intervalle sélectionnés.
+* **[!UICONTROL Nouveau]** : la personne était active pendant la période en cours, mais pas avant. Découvrez jusqu’où l’analyse revient pour déterminer un nouvel utilisateur ou une nouvelle utilisatrice en pointant la souris sur « [!UICONTROL Nouveaux utilisateurs et utilisatrices] » dans la légende du graphique. La période d’analyse rétrospective est déterminée dynamiquement en fonction de la période et de l’intervalle sélectionnés.
+* **[!UICONTROL Récurrent]** : la personne était active au cours de la période en cours et non au cours de la période précédente, mais elle était auparavant active à un moment donné. Découvrez jusqu’où l’analyse revient pour déterminer une personne récurrente en pointant sur « [!UICONTROL Utilisateurs et utilisatrices récurrents] » dans la légende du graphique. La période d’analyse rétrospective est déterminée dynamiquement en fonction de la période et de l’intervalle sélectionnés.
 * **[!UICONTROL Inactif]** : la personne était active au cours de la période précédente, mais ne l’est pas au cours de la période en cours. Les utilisateurs et utilisatrices inactifs ne sont pas comptabilisés dans le nombre total d’utilisateurs et utilisatrices actifs.
 
 >[!NOTE]
 >
 >Les utilisateurs et utilisatrices réguliers ne sont pas pris en compte dans ce calcul, car ils ne représentent aucun gain ni aucune perte pour les utilisateurs et utilisatrices.
 
->[!VIDEO](https://video.tv.adobe.com/v/3423460/?captions=fre_fr&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3421664/?quality=12&learn=on)
 
 ## Cas d’utilisation
 
@@ -74,8 +86,8 @@ Consultez [Interface](../overview.md#interface) pour une vue d’ensemble de l�
 Le rail de requête vous permet de configurer les composants suivants :
 
 * **[!UICONTROL Afficher]** : basculez entre cette analyse et [Croissance active](active-growth.md).
-* **[!UICONTROL Événements]** : événements que vous souhaitez mesurer. Cette analyse étant basée sur les personnes, une personne qui interagit avec l’événement une fois au cours de la période est comptabilisée comme étant active. Vous pouvez inclure un événement dans une requête.
-* **[!UICONTROL Compté comme]** : méthode de comptage à appliquer aux événements sélectionnés. <ul><li>**[!UICONTROL Options]** inclure [!UICONTROL Nombre d’utilisateurs] et [!UICONTROL Pourcentage d’utilisateurs].</li><li>{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} Des options **[!UICONTROL B2B supplémentaires]** sont disponibles pour Customer Journey Analytics B2B edition : [!UICONTROL Comptes globaux], [!UICONTROL Comptes], [!UICONTROL Groupes d’achat], [!UICONTROL Opportunités], [!UICONTROL Pourcentage des comptes globaux], [!UICONTROL Pourcentage des comptes], [!UICONTROL Pourcentage des groupes d’achat] et [!UICONTROL Pourcentage des opportunités].</li></ul>
+* **[!UICONTROL Événements]** : événements que vous souhaitez mesurer. Cette analyse étant basée sur les utilisateurs, un utilisateur qui interagit une fois avec l’événement au cours de la période est comptabilisé comme utilisateur actif. Vous pouvez inclure un événement dans une requête.
+* **[!UICONTROL Compté comme]** : méthode de comptage à appliquer aux événements sélectionnés. <ul><li>**[!UICONTROL Options]** inclure [!UICONTROL Nombre d’utilisateurs] et [!UICONTROL Pourcentage d’utilisateurs].</li><li>[!BADGE ]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} Des options **[!UICONTROL B2B supplémentaires]** sont disponibles pour Customer Journey Analytics B2B edition : [!UICONTROL Comptes globaux], [!UICONTROL Comptes], [!UICONTROL Groupes d’achat], [!UICONTROL Opportunités], [!UICONTROL Pourcentage des comptes globaux], [!UICONTROL Pourcentage des comptes], [!UICONTROL Pourcentage des groupes d’achat] et [!UICONTROL Pourcentage des opportunités].</li></ul>
 * **[!UICONTROL Segments]** : segments que vous souhaitez mesurer. Vous pouvez inclure un segment dans une requête.
 
 ### Comparaison de temps

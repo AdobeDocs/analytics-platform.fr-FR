@@ -9,24 +9,32 @@ autotag-review: '2026-05-19T09:24:07.100Z'
 TQID: 'https://experienceleague.adobe.com/f-HOhKLpbM4u4MAzzoUCc0cMvVIu1k3FXg4FShValVE'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
 subfeature_v2:
   - id: faea9abd-7024-4c5e-a5b4-87919e09b24b
+    internal-label: Stitching
+  - id: b7fb3355-1f54-4380-bce3-d444b226c0e9
+    internal-label: Cross channel analysis
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+    internal-label: Measurement
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 711e4bd71a4939eec96a6c454242e96b350fe4e2
+    internal-label: Privacy
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 2017
+source-wordcount: '2017'
 ht-degree: 64%
-
 ---
-
 # Rapprochement basé sur les graphiques
 
 Dans le groupement basé sur les graphiques, vous spécifiez un jeu de données d’événement, l’identifiant persistant (cookie) de ce jeu de données et l’espace de noms d’identifiant de personne souhaité à partir du graphique d’identité. Le groupement basé sur les graphiques tente de rendre les informations d’ID de personne disponibles pour l’analyse des données Customer Journey Analytics sur n’importe quel événement. L’ID persistant est utilisé pour interroger le graphique d’identité à partir d’Experience Platform Identity Service afin d’obtenir l’ID de personne à partir de l’espace de noms spécifié. Il s’agit du même service d’identités que celui utilisé par d’autres applications Experience Platform telles que Real-Time Customer Data Platform (comme illustré ci-dessous).
@@ -35,7 +43,7 @@ Dans le groupement basé sur les graphiques, vous spécifiez un jeu de données 
 
 >[!NOTE]
 >
->Le [Service d’identités](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/home) est un service Experience Platform de base qui ne nécessite pas de licence supplémentaire. Pour plus d’informations, voir [Comprendre le rôle du service d’identités dans l’infrastructure d’Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/home#understanding-the-role-of-identity-service-within-the-experience-platform-infrastructure).
+>Le [Service d’identités](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/home) est un service Experience Platform de base qui ne nécessite pas de licence supplémentaire. Pour plus d’informations, voir [Comprendre le rôle du service d’identités dans l’infrastructure d’Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home#understanding-the-role-of-identity-service-within-the-experience-platform-infrastructure).
 >
 
 Si les informations de l’ID de personne ne peuvent pas être récupérées pour un événement, l’ID persistant est utilisé à la place pour cet événement *désassemblé*. Par conséquent, dans une [vue de données](/help/data-views/data-views.md) associée à une [connexion](/help/connections/overview.md) qui contient le jeu de données activé pour le groupement, le composant de vue de données ID de personne contient la valeur de l’ID de personne ou la valeur de l’ID persistant au niveau de l’événement.
@@ -115,10 +123,10 @@ Le groupement basé sur les graphiques prend en charge l’utilisation du groupe
 
 Le groupement effectue au moins deux passages sur les données d’un jeu de données spécifique.
 
-- **Groupement en direct** : tente d’assembler chaque accès (événement) au fur et à mesure qu’il arrive, à l’aide de l’identifiant persistant pour rechercher l’identifiant de personne pour l’espace de noms sélectionné en interrogeant le graphique d’identité. Si un identifiant de personne est renvoyé par la recherche, cet identifiant de personne est immédiatement groupé.
+- **Groupement en direct** : tente d’assembler chaque hit (événement) au fur et à mesure qu’il arrive, à l’aide de l’identifiant persistant pour rechercher l’identifiant de personne pour l’espace de noms sélectionné en interrogeant le graphique d’identité. Si l’identifiant de personne est disponible dans la recherche, il est immédiatement utilisé pour le rapprochement.
 
 - **Relire le groupement** : *relit* les données en fonction des identités mises à jour à partir du graphique d’identité. À cette étape, les accès provenant d’appareils précédemment inconnus (identifiants persistants) sont regroupés, car le graphique d’identité a résolu l’identité d’un espace de noms. Deux paramètres déterminent la relecture : **fréquence** et **intervalle de recherche en amont**. Adobe propose les combinaisons suivantes de ces paramètres :
-  - **Recherche en amont quotidienne à une fréquence quotidienne** : les données sont relues chaque jour avec un intervalle de recherche en amont de 24 heures. Cette option présente un avantage car les relectures sont beaucoup plus fréquentes, mais les profils non authentifiés doivent s’authentifier le jour même où ils visitent votre site.
+  - **Recherche en amont quotidienne à une fréquence quotidienne** : les données sont relues chaque jour avec un intervalle de recherche en amont de 24 heures. Cette option offre l’avantage de relectures beaucoup plus fréquentes, mais les profils non authentifiés doivent s’authentifier le jour même de leur visite sur votre site.
   - **Recherche en amont hebdomadaire à une fréquence hebdomadaire** : les données sont relues chaque semaine avec un intervalle de recherche en amont hebdomadaire (voir [options](overview.md#options)). Cette option présente un avantage qui permet aux sessions non authentifiées de disposer d’un temps d’authentification beaucoup moins strict. Toutefois, les données dégroupées datant de moins d’une semaine ne sont pas retraitées avant la relecture hebdomadaire suivante.
   - **Recherche en amont bihebdomadaire à une fréquence hebdomadaire** : les données sont relues chaque semaine avec un intervalle de recherche en amont bihebdomadaire (voir [options](overview.md#options)). Cette option présente un avantage qui permet aux sessions non authentifiées de disposer d’un temps d’authentification beaucoup moins strict. Toutefois, les données dégroupées datant de moins de deux semaines ne sont pas retraitées avant la relecture hebdomadaire suivante.
   - **Recherche en amont mensuelle à une fréquence hebdomadaire** : les données sont relues chaque semaine avec un intervalle de recherche en amont mensuel (voir [options](overview.md#options)). Cette option présente un avantage qui permet aux sessions non authentifiées de disposer d’un temps d’authentification beaucoup moins strict. Toutefois, les données dégroupées datant de moins d’un mois ne sont pas retraitées avant la relecture hebdomadaire suivante.
@@ -127,10 +135,10 @@ Le groupement effectue au moins deux passages sur les données d’un jeu de don
 
   >[!IMPORTANT]
   >
-  >Le processus de dégroupement, dans le cadre des demandes d’accès à des informations personnelles , change début 2025. Le processus de dégroupement actuel regroupe les événements à l’aide de la dernière version des identités connues. Cette réaffectation d’événements à une autre identité pourrait avoir des conséquences juridiques indésirables. Pour résoudre ces problèmes, à partir de 2025, le nouveau processus de dégroupement met à jour les événements qui font l’objet de la demande d’accès à des informations personnelles avec l’identifiant persistant.
+  >Le processus de dégroupement, dans le cadre des demandes d’accès à des informations personnelles , change début 2025. Le processus de dégroupement actuel regroupe les événements à l’aide de la dernière version des identités connues. Cette réaffectation d’événements à une autre identité pourrait avoir des conséquences juridiques indésirables. Pour remédier à ces problèmes, à compter de 2025, le nouveau processus met à jour les événements faisant l’objet de la demande d’accès à des informations personnelles avec l’ID persistant.
   > 
 
-Les données au-delà de l’intervalle de recherche en amont ne sont pas relues. Un profil doit être authentifié dans un intervalle de recherche en amont donné pour qu’une visite non authentifiée et une visite authentifiée soient identifiées ensemble. Une fois reconnu, un appareil est groupé en direct à partir de ce moment.
+Les données au-delà de l’intervalle de recherche en amont ne sont pas relues. Un profil doit être authentifié dans un intervalle de recherche en amont donné pour qu’une visite non authentifiée et une visite authentifiée soient identifiées ensemble. Dès qu’un appareil est reconnu, il fait l’objet d’un rapprochement en direct à partir de ce moment-là.
 
 Tenez compte des deux mises à jour du graphique d’identité suivantes au fil du temps pour le visiteur ou la visiteuse A (avec l’identifiant persistant `246`) et le visiteur ou la visiteuse B (avec l’identifiant persistant `3579`), et comment ces mises à jour affectent les étapes du groupement basé sur les graphiques.
 
@@ -140,7 +148,7 @@ Vous pouvez afficher un graphique d’identité au fil du temps pour un profil s
 
 ### Étape 1 : groupement en direct
 
-Le groupement en direct tente d’assembler chaque événement, au moment de la collecte, à des informations connues à cet instant dans le graphique d’identité.
+Le rapprochement en direct tente, au moment de la collecte, d’associer chaque événement aux informations connues à cet instant dans le graphique d’identité.
 
 +++ Détails
 
@@ -198,7 +206,7 @@ Avec le groupement de relecture qui se produit au 13/05/2023 à 16 h 30, avec un
 
 +++
 
-### Étape 3 : demande d’accès à des informations personnelles
+### Étape 3 : Demande d’accès à des informations personnelles
 
 Lorsque vous recevez une demande d’accès à des informations personnelles, l’ID obtenu est supprimé dans tous les enregistrements pour l’utilisateur faisant l’objet de la demande d’accès à des informations personnelles.
 
@@ -228,10 +236,10 @@ Les conditions préalables suivantes s’appliquent spécifiquement à l’assem
 - Le graphique d’identités d’Experience Platform Identity Service doit être configuré au niveau de la sandbox, avant d’activer le groupement basé sur les graphiques.
   - Le graphique d’identité doit comporter un espace de noms (par exemple `Email` ou `Phone`) que vous souhaitez utiliser lors du groupement pour résoudre l’ID de personne.
   - Le graphique d’identités doit être renseigné avec des informations d’identités de tous les jeux de données pertinents (de type *événement* ou *profil* et qui contiennent au moins deux espaces de noms utiles avec des valeurs d’identifiant).
-  - Tous les jeux de données contenant ces identités pertinentes doivent être [&#x200B; activés pour l’ingestion de données de graphique d’identités](faq.md#enable-a-dataset-for-the-identity-service). Cette activation garantit que les identités entrantes sont ajoutées au graphique au fil du temps à partir de toutes les sources nécessaires.
+  - Tous les jeux de données contenant ces identités pertinentes doivent être [ activés pour l’ingestion de données de graphique d’identités](faq.md#enable-a-dataset-for-the-identity-service). Cette activation garantit que les identités entrantes sont ajoutées au graphique au fil du temps à partir de toutes les sources nécessaires.
   - Si vous utilisez déjà le profil de données client en temps réel ou Adobe Journey Optimizer depuis un certain temps, le graphique doit déjà être configuré dans une certaine mesure.<br/>Si le renvoi du groupement historique est également requis pour le jeu de données activé avec le groupement basé sur les graphiques, le graphique doit déjà contenir des identités historiques pour l’ensemble de la période, afin d’obtenir les résultats de groupement souhaités.
 - Si vous souhaitez utiliser le groupement basé sur des graphiques et que vous prévoyez que le jeu de données d’événement contribuera au graphique d’identité, vous devez [activer le jeu de données pour le service d’identités](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service).
-- L’ID persistant et l’ID de personne peuvent être utilisés avec [identityMap](#identitymap). Ou l’identifiant persistant et l’identifiant de personne peuvent être des champs du schéma XDM, auquel cas les champs doivent être [définis comme une identité](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/ui/fields/identity?lang=en) dans le schéma .
+- L’ID persistant et l’ID de personne peuvent être utilisés avec [identityMap](#identitymap). Ou l’identifiant persistant et l’identifiant de personne peuvent être des champs du schéma XDM, auquel cas les champs doivent être [définis comme une identité](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity?lang=en) dans le schéma .
 
 >[!NOTE]
 >
@@ -242,11 +250,11 @@ Les conditions préalables suivantes s’appliquent spécifiquement à l’assem
 
 Les restrictions suivantes s’appliquent spécifiquement à l’assemblage basé sur un graphique :
 
-- L’horodatage n’est pas pris en compte lors de l’interrogation de l’identifiant de personne à l’aide de l’espace de noms spécifié. Il est donc possible qu’un identifiant persistant soit assemblé avec un identifiant de personne provenant d’un enregistrement dont l’horodatage est plus ancien.
-- Dans les scénarios avec des appareils partagés, où l’espace de noms du graphique contient plusieurs identités, la première identité lexicographique est utilisée. Si les limites et priorités d’espace de noms sont configurées dans le cadre de la publication des règles de liaison de graphiques, l’identité de la dernière personne authentifiée est utilisée. Pour plus d’informations, voir [Appareils partagés](/help/use-cases/stitching/shared-devices.md).
-- Il existe une limite stricte de trois mois de renvoi d’identités dans le graphique d’identité. Utilisez le renvoi d’identités si vous n’utilisez pas d’application Experience Platform, telle que Real-time Customer Data Platform, pour renseigner le graphique d’identité.
+- L’horodatage n’est pas pris en compte lors de l’interrogation de l’identifiant de personne à l’aide de l’espace de noms spécifié. Il est donc possible qu’un identifiant persistant soit associé à un identifiant de personne provenant d’un enregistrement dont la date et l’heure sont plus anciennes.
+- Dans les scénarios avec des appareils partagés, où l’espace de noms du graphique contient plusieurs identités, la première identité lexicographique est utilisée. Si des limites et des priorités d’espace de noms sont configurées lors du déploiement des règles de liaison de graphiques, l’identité du dernier utilisateur authentifié est utilisée. Pour plus d’informations, voir [Appareils partagés](/help/use-cases/stitching/shared-devices.md).
+- Il existe une limite stricte de trois mois de renvoi d’identités dans le graphique d’identité. Utilisez le renvoi d’identités si vous n’utilisez pas une application Experience Platform, telle que Real-time Customer Data Platform, pour renseigner le graphique d’identité.
 - Les [mécanismes de sécurisation du service d’identités](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/guardrails) s’appliquent. Voir, par exemple, les [limites statiques](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/guardrails#static-limits) suivantes :
-  - Nombre d’identités maximum dans un graphique : 50.
-  - Nombre de liens maximum vers une identité pour une ingestion par lots unique : 50.
+  - Nombre maximal d’identités dans un graphe : 50.
+  - Nombre maximal de liens vers une identité pour une seule ingestion par lots : 50.
   - Nombre maximum d’identités dans un enregistrement XDM pour l’ingestion de graphiques : 20.
   - Nombre minimum d’identités dans un enregistrement XDM pour l’ingestion de graphiques : 2.

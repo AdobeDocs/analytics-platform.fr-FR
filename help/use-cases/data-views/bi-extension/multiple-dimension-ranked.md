@@ -9,22 +9,28 @@ autotag-review: '2026-05-19T09:42:58.473Z'
 TQID: 'https://experienceleague.adobe.com/MiPO6srBKMG9f9ijpOP7hFEHzewxjcEGVBpFZaWIilw'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
 subfeature_v2:
   - id: f24857a4-4b64-4b25-b237-d43026362144
+    internal-label: BI extension
+  - id: e1471301-a189-438e-8d48-264a8db508a6
+    internal-label: Data views
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Customer journeys
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1549
+source-wordcount: '1549'
 ht-degree: 1%
-
 ---
-
 # Classement de plusieurs dimensions
 
 
@@ -63,7 +69,7 @@ Exemple de panneau **[!UICONTROL Classement multiple par Dimension]** pour le ca
    1. Sélectionnez **[!UICONTROL somme des achats]**
 
 1. Pour modifier le graphique à barres verticales en tableau, assurez-vous que le tableau est sélectionné et sélectionnez **[!UICONTROL Matrice]** dans le volet **[!UICONTROL Visualisations]**.
-   * Faites glisser **[!UICONTROL product_name]** depuis **[!UICONTROL Columns]** et déposez le champ sous **[!UICONTROL product_category]**&#x200B;y dans **[!UICONTROL Rows]** dans le volet **[!UICONTROL Visualisation]**.
+   * Faites glisser **[!UICONTROL product_name]** depuis **[!UICONTROL Columns]** et déposez le champ sous **[!UICONTROL product_category]**y dans **[!UICONTROL Rows]** dans le volet **[!UICONTROL Visualisation]**.
 
 1. Pour limiter le nombre de produits affichés dans le tableau, sélectionnez **[!UICONTROL product_name is (All)]** dans le volet **[!UICONTROL Filtres]**.
 
@@ -76,7 +82,7 @@ Exemple de panneau **[!UICONTROL Classement multiple par Dimension]** pour le ca
 
 1. Pour ventiler chaque catégorie dans le tableau, sélectionnez **[!UICONTROL +]** au niveau de la catégorie de produits. Votre bureau Power BI doit se présenter comme suit :
 
-   ![Tableau de matrice de classement de plusieurs dimensions de bureau &#x200B;](../assets/uc6-powerbi-data.png)
+   ![Tableau de matrice de classement de plusieurs dimensions de bureau ](../assets/uc6-powerbi-data.png)
 
 1. Sélectionnez **[!UICONTROL Accueil]** dans le menu supérieur, puis sélectionnez **[!UICONTROL Nouveau visuel]**. Un nouvel élément visuel est ajouté à votre rapport.
 
@@ -90,7 +96,7 @@ Exemple de panneau **[!UICONTROL Classement multiple par Dimension]** pour le ca
 
    Votre bureau Power BI doit se présenter comme suit :
 
-   ![Arborescence Classement de plusieurs dimensions de l’appli de bureau &#x200B;](../assets/uc6-powerbi-treemap.png)
+   ![Arborescence Classement de plusieurs dimensions de l’appli de bureau ](../assets/uc6-powerbi-treemap.png)
 
 1. Sélectionnez **[!UICONTROL Accueil]** dans le menu supérieur, puis sélectionnez **[!UICONTROL Nouveau visuel]**. Un nouvel élément visuel est ajouté à votre rapport.
 

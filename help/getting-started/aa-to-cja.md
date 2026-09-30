@@ -1,5 +1,5 @@
 ---
-title: Évolution à partir d’Adobe Analytics
+title: Évolution depuis Adobe Analytics
 description: Étapes de transformation des données Adobe Analytics en données Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
@@ -9,31 +9,48 @@ autotag-review: '2026-05-19T06:31:08.010Z'
 TQID: 'https://experienceleague.adobe.com/q1l52F-xc4rXHXJB-2aMYUVd1ySLzyWbZhVAja92ojQ'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Insights
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1179
+source-wordcount: '1179'
 ht-degree: 100%
-
 ---
-
 # Évolution à partir d’Adobe Analytics
 
 ## Préparer vos données existantes
@@ -58,7 +75,7 @@ La méthode la plus simple pour transformer les données Adobe Analytics en don
 
 Une suite de rapports globale complète peut ne pas toujours être faisable pour une implémentation. Si vous prévoyez d’importer plusieurs suites de rapports dans Customer Journey Analytics, deux options s’offrent à vous :
 
-* Planifiez pour aligner les variables sur ces suites de rapports. Par exemple, l’eVar1 de la suite de rapports 1 peut pointer vers [!UICONTROL Page]. Dans la suite de rapports 2, l’eVar1 peut pointer vers [!UICONTROL Campagne interne]. Lorsqu’elles sont importées dans Customer Journey Analytics, ces variables se combinent en une seule dimension eVar1, ce qui peut entraîner des rapports potentiellement déroutants et inexacts.
+* Planifiez à l’avance afin d’aligner les variables sur l’ensemble de ces suites de rapports. Par exemple, l’eVar1 de la suite de rapports 1 peut pointer vers [!UICONTROL Page]. Dans la suite de rapports 2, l’eVar1 peut pointer vers [!UICONTROL Campagne interne]. Lorsqu’elles sont importées dans Customer Journey Analytics, ces variables se combinent en une seule dimension eVar1, ce qui peut entraîner des rapports potentiellement déroutants et inexacts.
 
 * Utilisez la fonctionnalité [Préparation des données](https://experienceleague.adobe.com/fr/docs/experience-platform/data-prep/home) pour mapper des variables. Bien qu’il soit plus facile d’avoir des suites de rapports avec les mêmes variables, ce n’est pas nécessaire si vous utilisez la nouvelle fonctionnalité [Préparation de données](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics) d’Experience Platform. Vous pouvez ainsi référencer une variable par sa valeur mappée, qui se situe au niveau du flux de données (ou de la propriété).
 
@@ -68,9 +85,9 @@ Voici un cas pratique portant sur la [combinaison de suites de rapports avec des
 
 ### (Re)configurer vos canaux marketing
 
-Les paramètres traditionnels du canal marketing Adobe Analytics ne s’exécutent pas de la même manière dans Customer Journey Analytics. Il existe une différence pour deux raisons :
+Les paramètres traditionnels des canaux marketing d’Adobe Analytics ne fonctionnent pas de la même manière dans Customer Journey Analytics. Il existe une différence pour deux raisons :
 
-* D’une part, le niveau de traitement des données Adobe Analytics ingérées dans Adobe Experience Platform.
+* D’une part, le niveau de traitement des données Adobe Analytics ingérées dans Adobe Experience Platform,
 
 * D’autre part, la nature de Customer Journey Analytics en matière de période des rapports.
 
@@ -102,7 +119,7 @@ Pour que la migration entre les deux systèmes se passe le mieux possible pour l
 
 3. identifiez les champs qui sont obligatoires dans les données afin de les répliquer dans Customer Journey Analytics en tant que [Segments](/help/components/segments/seg-overview.md) et [Mesures calculées](/help/components/calc-metrics/calc-metr-overview.md).
 
-Regardez ces deux vidéos pour obtenir plus dʼinformations :
+Voici deux vidéos pour vous guider :
 
 * [Déplacer des segments Adobe Analytics vers Customer Journey Analytics](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/components/filters/moving-adobe-analytics-segments-to-customer-journey-analytics.html)
 

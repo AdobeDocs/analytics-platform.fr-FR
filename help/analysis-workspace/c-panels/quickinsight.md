@@ -4,27 +4,35 @@ title: Panneau Quick Insights
 feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
 role: User
-TQID: https://experienceleague.adobe.com/G2HFW3lyH16Hh9IGbBgX85eyO0O9i56-dJeK-LqBPJw
+TQID: 'https://experienceleague.adobe.com/G2HFW3lyH16Hh9IGbBgX85eyO0O9i56-dJeK-LqBPJw'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: e634a07b-b7ca-4af3-a124-3024ce559e17
+    internal-label: Workspace panels
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Insights
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1166
+source-wordcount: '1166'
 ht-degree: 88%
-
 ---
-
 # Panneau d’aperçu rapide {#quick-insights-panel}
 
 <!-- markdownlint-disable MD034 -->
@@ -32,14 +40,14 @@ ht-degree: 88%
 >[!CONTEXTUALHELP]
 >id="workspace_quickinsights_button"
 >title="Aperçu rapide"
->abstract="Créez un panneau afin de créer rapidement un tableau à structure libre pour accompagner la visualisation afin d’analyser et d’exposer plus rapidement les informations."
+>abstract="Créez un panneau pour créer rapidement un tableau à structure libre et une visualisation associée afin d’analyser les données et de mettre plus rapidement en évidence les informations."
 
 <!-- markdownlint-enable MD034 -->
 
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente le panneau Quick Insights dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_.<br/>_Voir [Panneau Quick Insights](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/panels/quickinsight) pour la version_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** de cet article._
+_Cet article présente le panneau Quick Insights dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_Voir [Panneau Quick Insights](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/panels/quickinsight) pour la version_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 
@@ -49,7 +57,7 @@ _Cet article présente le panneau Quick Insights dans_ ![CustomerJourneyAnalytic
 Lorsque vous commencez à utiliser [!UICONTROL Analysis Workspace], vous vous demandez peut-être :
 
 * quelles visualisations sont les plus utiles,
-* quelles dimensions et quelles mesures peuvent optimiser les informations,
+* quelles dimensions et quelles mesures peuvent faciliter l’obtention d’informations,
 * où glisser-déposer des éléments,
 * où créer un segment,
 * etc.
@@ -63,11 +71,11 @@ Pour répondre à ces questions, [!UICONTROL Quick Insights] utilise un algorith
 * de créer correctement un tableau de données et une visualisation correspondante dans [!UICONTROL Analysis Workspace] ;
 * d’apprendre la terminologie et le vocabulaire des éléments et des composants de base d’[!UICONTROL Analysis Workspace] ;
 * d’effectuer des répartitions simples de dimensions, d’ajouter plusieurs mesures ou de comparer facilement des segments dans un [!UICONTROL tableau à structure libre] ;
-* de modifier ou de tester divers types de visualisation pour trouver rapidement et intuitivement l’outil de recherche pour votre analyse.
+* de modifier ou de tester divers types de visualisation pour trouver rapidement et intuitivement le bon outil pour votre analyse.
 
 ## Terminologie clé de base
 
-Voici quelques-uns des termes de base que vous devez connaître. Chaque tableau de données se compose d’au moins deux blocs de création (composants) que vous utilisez pour décrire vos données.
+Voici quelques-uns des termes de base que vous devez connaître. Chaque tableau de données se compose de 2 blocs de construction (composants) ou plus que vous utilisez pour décrire vos données.
 
 | Bloc de construction (composant) | Définition |
 |---|---|
@@ -75,8 +83,8 @@ Voici quelques-uns des termes de base que vous devez connaître. Chaque tableau 
 | **[!UICONTROL Élément de dimension]** | Les éléments de dimension sont des valeurs individuelles d’une dimension. Par exemple, les éléments de dimension pour la dimension Navigateur seraient *Chrome*, *Firefox*, *Edge*, etc. |
 | [!UICONTROL Mesure] | Les mesures sont des informations quantitatives sur l’activité des individus, telles que les affichages, les clics publicitaires, les actualisations, la durée moyenne de consultation, les unités, les commandes, le chiffre d’affaires, etc. |
 | **[!UICONTROL Visualisation]** | Workspace offre [une variété de visualisations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) pour créer des représentations visuelles de vos données. Par exemple, des graphiques en barres, des graphiques en anneau, des histogrammes, des graphiques en courbes, des cartes, des nuages de points, etc. |
-| **[!UICONTROL Répartition des dimensions]** | Une répartition de dimension est un moyen de répartir une dimension en fonction d’autres dimensions. Par exemple, vous pouvez répartir les États américains en fonction des périphériques mobiles pour obtenir le nombre de visites via des périphériques mobiles par État. Vous pouvez également répartir les périphériques mobiles par types de périphériques mobiles, par régions, par campagnes internes, etc. |
-| **[!UICONTROL Segment]** | Les filtres vous permettent d’identifier des sous-ensembles de personnes selon des caractéristiques ou des interactions avec des sites web. Par exemple, vous pouvez créer des segments [!UICONTROL Personnes] basés sur les éléments suivants : <li>Attributs : type de navigateur, appareil, nombre de visites, pays, genre.</li><li>Interactions : campagnes, recherche par mots-clés, moteur de recherche.</li><li>Sorties et entrées : personnes provenant de Facebook, d’une page de destination définie, d’un domaine référent.</li><li> Variables personnalisées : champ de formulaire, catégories définies, ID de client. |
+| **[!UICONTROL Répartition des dimensions]** | Une répartition de dimension est un moyen de répartir une dimension en fonction d’autres dimensions. Par exemple, vous pouvez répartir les États américains en fonction des appareils mobiles pour obtenir le nombre de visites via des appareils mobiles par État. Vous pouvez également répartir les appareils mobiles par types d’appareils mobiles, par régions, par campagnes internes, etc. |
+| **[!UICONTROL Segment]** | Les segments vous permettent d’identifier des sous-ensembles de personnes selon des caractéristiques ou des interactions avec des sites web. Par exemple, vous pouvez créer des segments [!UICONTROL Personnes] basés sur les éléments suivants : <li>Attributs : type de navigateur, appareil, nombre de visites, pays, genre.</li><li>Interactions : campagnes, recherche par mot-clé, moteur de recherche</li><li>Sorties et entrées : personnes provenant de Facebook, d’une page de destination définie, d’un domaine référent.</li><li> Variables personnalisées : champ de formulaire, catégories définies, ID de client. |
 
 ## Utilisation
 
@@ -143,7 +151,7 @@ D’autres astuces utiles s’affichent dans le [!UICONTROL Créateur d’Aperç
 
   * Ajouter d’autres mesures **[!UICONTROL Par]** : vous pouvez ajouter jusqu’à 2 mesures supplémentaires. Voir ➍ et ➎.
 
-  * **[!UICONTROL Segmenter par]** : vous pouvez ajouter jusqu’à 2 segments supplémentaires. Par exemple, ajoutez Réservations en tant que segment et combinez-le avec les segments Personnes réservant fréquemment et Personnes voyageant pour la première fois, que vous comparez. Voir ➏, ➐ et ➑.
+  * **[!UICONTROL Segmenter par]** : vous pouvez ajouter jusqu’à 2 segments supplémentaires. Par exemple, ajoutez Réservations en tant que segment et combinez ce segment avec les segments Réservations fréquentes et Premiers vols que vous souhaitez comparer. Voir ➏, ➐ et ➑.
 
   * Sur : vous pouvez spécifier la période. Voir ➒.
 
@@ -155,7 +163,7 @@ Vous recevez un avertissement avant d’effectuer un ajout directement dans le t
 
 ![Avertissement concernant l’option Resynchroniser le créateur.](assets/qibuilder-outofsync.png)
 
-Dans le cas contraire, si la création se fait directement, le tableau se comporte comme un tableau à structure libre traditionnel, sans les fonctionnalités utiles pour les nouveaux utilisateurs et les nouvelles utilisatrices.
+Dans le cas contraire, si la création se fait directement, le tableau se comporte comme un tableau à structure libre traditionnel, mais sans les fonctionnalités utiles pour les nouveaux utilisateurs et les nouvelles utilisatrices.
 
 
 >[!MORELIKETHIS]

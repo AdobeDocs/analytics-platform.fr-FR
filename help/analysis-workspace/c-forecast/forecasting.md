@@ -4,29 +4,33 @@ title: Vue d’ensemble des prévisions
 feature: Visualizations
 role: User
 exl-id: 9ec920c4-3273-4497-83a4-6a2e2fc92e2f
-TQID: https://experienceleague.adobe.com/jH55Cg37nwIX6iYgQe1JCBvpgzw2jgW-zx1id2ZW6PU
+TQID: 'https://experienceleague.adobe.com/jH55Cg37nwIX6iYgQe1JCBvpgzw2jgW-zx1id2ZW6PU'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
 subfeature_v2:
   - id: d13dba12-733d-4914-8d92-d643658bbe5d
+    internal-label: Forecasting
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: User
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 222
+source-wordcount: '222'
 ht-degree: 100%
-
 ---
-
 # Vue d’ensemble des prévisions
 
 {{select-package}}
 
 Les prévisions incluent une prédiction statistique pour les données de série temporelle en fonction des données historiques qui existent déjà dans Customer Journey Analytics. Les prévisions peuvent apparaître dans les tableaux à structure libre et dans les visualisations des graphiques linéaires. Les utilisateurs et utilisatrices peuvent décider si les prévisions sont automatiquement incluses dans leurs préférences d’utilisation dans l’interface d’utilisation de Customer Journey Analytics. Elles peuvent également être activées et désactivées par colonne dans les paramètres de colonne. Les prévisions ne sont activées que pour la première colonne ajoutée à un tableau.
 
-Les prévisions sont disponibles à partir du niveau de licence Select et Customer Journey Analytics.
+Les prévisions sont disponibles avec la formule de licence Customer Journey Analytics « Select » et les formules supérieures.
 
 Vous pouvez tirer profit des prévisions pour ce qui suit :
 

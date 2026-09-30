@@ -12,11 +12,15 @@ product_v2:
 feature_v2:
   - id: b3197353-f189-4932-8378-3f3bc40e6071
     internal-label: Data management
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: bfef374d-acfd-4c57-bf74-a2b36053c545
     internal-label: Data ingestion
   - id: e1471301-a189-438e-8d48-264a8db508a6
     internal-label: Data views
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -27,7 +31,7 @@ topic_v2:
     internal-label: Customer journeys
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 2caa69c9a58df756d0991dac84ba8900b2a7bc5a
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
 source-wordcount: '889'
 ht-degree: 1%
@@ -98,7 +102,7 @@ La différence entre l’identité principale et la clé principale introduit un
 
 ## Différences de gouvernance
 
-Dans XDM [schémas](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/schema/composition) et les concepts sous-jacents tels que [groupes de champs](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/schema/composition#field-group), un [champ](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/schema/composition#field) défini au sein d’un groupe de champs propage ses libellés dans tous les jeux de données où le groupe de champs est utilisé. Par exemple, un champ d’e-mail `emailID` dans un `identities` de groupe de champs est libellé de la même manière dans tous les jeux de données où le `identities` de groupe de champs est utilisé.
+Dans XDM [schémas](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/schema/composition) et les concepts sous-jacents tels que [groupes de champs](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#field-group), un [champ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#field) défini au sein d’un groupe de champs propage ses libellés dans tous les jeux de données où le groupe de champs est utilisé. Par exemple, un champ d’e-mail `emailID` dans un `identities` de groupe de champs est libellé de la même manière dans tous les jeux de données où le `identities` de groupe de champs est utilisé.
 
 Dans un schéma relationnel, le nom d’une colonne est indépendant. Une colonne nommée `email` dans le tableau `customers` est indépendante et distincte d&#39;une colonne nommée `email` dans un tableau `prospects`. Ce comportement implique que les libellés (tels que les libellés d’utilisation DULE et les politiques) doivent être appliqués individuellement aux champs des jeux de données mis en miroir. En fonction de l’exemple ci-dessus, vous devez appliquer des libellés à la fois au champ `email` du jeu de données `customers` et au champ `email` du jeu de données `prospects`.
 
@@ -119,9 +123,9 @@ Les schémas relationnels présentent les considérations suivantes en ce qui co
 
 Les considérations suivantes s’appliquent aux clés et champs système :
 
-* La clé primaire, le descripteur de version et le descripteur d’horodatage doivent être des champs de niveau racine dans le schéma XDM relationnel. Utilisez le [mappage de champs](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema) lors de l’ingestion pour prendre en charge cette exigence.
-* Vous pouvez omettre les champs sources appropriés pendant la [phase de mappage](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema).
+* La clé primaire, le descripteur de version et le descripteur d’horodatage doivent être des champs de niveau racine dans le schéma XDM relationnel. Utilisez le [mappage de champs](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema) lors de l’ingestion pour prendre en charge cette exigence.
+* Vous pouvez omettre les champs sources appropriés pendant la [phase de mappage](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema).
 
 ## Taille de lot des données en miroir
 
-Pour tout jeu de données mis en miroir configuré dans le cadre d’une connexion, vous devez vous assurer que chacun des lots à ingérer pour ingérer des données pour le jeu de données mis en miroir ne dépasse pas 100GB. Pour plus d’informations, consultez la section [&#x200B; Mécanismes de sécurisation pour l’ingestion par lots &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/ingestion/guardrails#guardrails-for-batch-ingestion){target="_blank"}.
+Pour tout jeu de données mis en miroir configuré dans le cadre d’une connexion, vous devez vous assurer que chacun des lots à ingérer pour ingérer des données pour le jeu de données mis en miroir ne dépasse pas 100GB. Pour plus d’informations, consultez la section [ Mécanismes de sécurisation pour l’ingestion par lots ](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/guardrails#guardrails-for-batch-ingestion){target="_blank"}.

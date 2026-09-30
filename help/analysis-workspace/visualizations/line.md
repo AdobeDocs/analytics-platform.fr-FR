@@ -8,22 +8,28 @@ autotag-review: '2026-05-19T08:29:43.526Z'
 TQID: 'https://experienceleague.adobe.com/ekT5diDY2vDPhjZ5I2oe-lgqjQ--Ri-bO-UljZUUmJw'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
 subfeature_v2:
   - id: ddf59f64-0e46-4986-a525-056acc143c70
+    internal-label: Workspace visualizations
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+    internal-label: Measurement
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Customer journeys
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 575
+source-wordcount: '575'
 ht-degree: 84%
-
 ---
-
 # Ligne {#line}
 
 <!-- markdownlint-disable MD034 -->
@@ -38,7 +44,7 @@ ht-degree: 84%
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente la visualisation Ligne dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Voir [Ligne](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/line) pour la version_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** de cet article._
+_Cet article présente la visualisation Ligne dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Voir [Ligne](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/line) pour la version_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 
@@ -55,7 +61,7 @@ Dans le cadre des [paramètres de visualisation](freeform-analysis-visualization
 | Paramètre | Description |
 |---|---|
 | **[!UICONTROL Granularité]** | Faites votre choix dans le menu déroulant granularité pour modifier une visualisation des tendances de quotidienne à hebdomadaire en mensuelle, etc. La granularité est également mise à jour dans le tableau de la source de données. |
-| **[!UICONTROL Affichage min]** <br/>**[!UICONTROL Affichage max &#x200B;]** | Vous pouvez superposer un libellé de valeur minimale et maximale pour mettre en surbrillance les valeurs minimale et maximale d’une mesure. Les valeurs min/max sont dérivées des points de données visibles dans la visualisation, et non du jeu complet de valeurs dans une dimension.<br/>![Recouvrement avec les libellés de valeur minimale et maximale.](assets/min-max-labels.png) |
+| **[!UICONTROL Affichage min]** <br/>**[!UICONTROL Affichage max ]** | Vous pouvez superposer un libellé de valeur minimale et maximale pour mettre en surbrillance les valeurs minimale et maximale d’une mesure. Les valeurs min/max sont calculées à partir des points de données visibles dans la visualisation, et non de l’ensemble des valeurs d’une dimension.<br/>![Recouvrement avec les libellés de valeur minimale et maximale.](assets/min-max-labels.png) |
 | **[!UICONTROL Afficher la courbe de tendance]** | Vous pouvez choisir d’ajouter une régression ou une courbe de tendance de moyenne glissante à votre série de lignes. Les courbes de tendance permettent d’illustrer plus clairement un schéma dans les données. Lorsque cette option est sélectionnée, sélectionnez un modèle dans la liste. Consultez [Modèles](#models) pour obtenir une vue d’ensemble et une description des modèles disponibles.<br/>![Courbe de tendance linéaire](assets/show-linear-trendline.png).<p>**CONSEIL :** il est recommandé d’appliquer des tendances aux données qui n’incluent pas les dates d’aujourd’hui (données partielles) ou de demain. Les dates d’aujourd’hui ou futures biaisent la courbe de tendance. Toutefois, si vous devez inclure des dates futures, supprimez les zéros des données afin dʼéviter que ces jours ne soient faussés. Accédez au tableau de la source de données de la visualisation, choisissez votre colonne de mesures et activez **[!UICONTROL Paramètres des colonnes]** > **[!UICONTROL Interpréter zéro comme n’étant pas une valeur]**.</p> |
 
 ### Modèles
@@ -65,7 +71,7 @@ Toutes les courbes de tendance des modèles de régression sont ajustées à lʼ
 | Modèle | Description |
 | --- | --- |
 | **[!UICONTROL Linéaire]** | Créez une ligne droite adaptée aux jeux de données linéaires simples. Utile lorsque les données augmentent ou diminuent à un rythme régulier. Équation : `y = a + b * x` |
-| **[!UICONTROL Logarithmique]** | Créez une courbe adaptée. Utile lorsque le taux de changement des données augmente ou diminue rapidement, puis s’équilibre. Une courbe de tendance logarithmique peut utiliser des valeurs négatives et positives. Équation : `y = a + b * log(x)` |
+| **[!UICONTROL Logarithmique]** | Crée une courbe d’ajustement optimal et s’avère utile lorsque le taux de variation des données augmente ou diminue rapidement, puis se stabilise. Une courbe de tendance logarithmique peut utiliser des valeurs négatives et positives. Équation : `y = a + b * log(x)` |
 | **[!UICONTROL Exponentiel]** | Créez une courbe. Utile lorsque les données augmentent ou diminuent à un rythme constamment croissant. Cette option ne doit pas être utilisée si vos données contiennent des valeurs nulles ou négatives. Équation : `y = a + e^(b * x)` |
 | **[!UICONTROL Puissance]** | Créez une courbe. Utile pour les jeux de données comparant des mesures qui augmentent à un rythme spécifique. Cette option ne doit pas être utilisée si vos données contiennent des valeurs nulles ou négatives. Équation : `y = a * x^b` |
 | **[!UICONTROL Quadratique]** | Trouve la courbe la plus adaptée pour un jeu de données en forme de parabole (concave vers le haut ou vers le bas). Équation : `y = a + b * x + c * x^2` |

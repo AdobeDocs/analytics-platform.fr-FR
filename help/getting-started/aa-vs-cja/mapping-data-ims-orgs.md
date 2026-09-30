@@ -9,23 +9,32 @@ autotag-review: '2026-05-19T09:13:16.649Z'
 TQID: 'https://experienceleague.adobe.com/sMivwoUTSa8KcQcaK8kR5PlbCF8stVNGeL5YET4usMI'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
+  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
 subfeature_v2:
   - id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
+    internal-label: Upgrade
+  - id: e1bd5a34-b16e-477b-84cc-247fa0793f4b
+    internal-label: Analytics integration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Administration
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1127
+source-wordcount: '1127'
 ht-degree: 2%
-
 ---
-
 # Mapping des données Cross-IMS
 
 Cet article explique comment mapper les données des suites de rapports de plusieurs organisations IMS à des suites de rapports, et finalement à des jeux de données, dans une seule organisation IMS.
@@ -65,7 +74,7 @@ Pour configurer et activer la fonctionnalité *Mappage de données entre service
 
 Une fois que le gestionnaire de compte Adobe reçoit l’e-mail avec la demande de mappage des données Analytics de plusieurs organisations, la demande est examinée dans Adobe. Le gestionnaire de compte Adobe vous contacte pour toute question supplémentaire, formation facultative et autres informations.
 
-Une fois approuvé, le mappage demandé est créé et vous en êtes informé. Le nom de l’organisation IMS source est ajouté au nom de la suite de rapports dans la [liste des suites de rapports Analytics](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#select-data) dans Experience Platform.
+Une fois approuvé, le mappage demandé est créé et vous en êtes informé. Le nom de l’organisation IMS source est ajouté au nom de la suite de rapports dans la [liste des suites de rapports Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#select-data) dans Experience Platform.
 
 
 ## Restrictions
@@ -83,9 +92,9 @@ Vous pouvez prendre en compte les rubriques suivantes avant de demander la fonct
 
 ### Profils
 
-Une fois la fonctionnalité de *mappage de données Cross-IMS* approuvée, vous pouvez ajouter des données à Experience Platform pour une ou plusieurs suites de rapports dans l’organisation IMS de destination. Pour ce faire, vous devez configurer le [&#x200B; connecteur source Analytics &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics?lang=fr). Les jeux de données cibles sont ensuite créés dans Experience Platform. Dans le cadre de cette configuration et de ce processus, vous avez la possibilité d’envoyer des données de profil d’une ou de plusieurs suites de rapports au service Profil.
+Une fois la fonctionnalité de *mappage de données Cross-IMS* approuvée, vous pouvez ajouter des données à Experience Platform pour une ou plusieurs suites de rapports dans l’organisation IMS de destination. Pour ce faire, vous devez configurer le [ connecteur source Analytics ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics?lang=fr). Les jeux de données cibles sont ensuite créés dans Experience Platform. Dans le cadre de cette configuration et de ce processus, vous avez la possibilité d’envoyer des données de profil d’une ou de plusieurs suites de rapports au service Profil.
 
-Estimez le nombre total de profils résultant de la configuration et du processus, comme indiqué ci-dessus. Assurez-vous que le nombre total se situe dans la limite du nombre de profils auxquels vous avez contractuellement droit pour l’organisation de destination. Appliquez [&#x200B; règles et conditions de filtrage &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#filtering-for-profile){target="_blank"} pour inclure ou exclure des données de manière sélective de l’ingestion vers le service Profil. Ou désactivez l’option permettant d’envoyer des données de profil au service Profil pour les suites de rapports pertinentes.
+Estimez le nombre total de profils résultant de la configuration et du processus, comme indiqué ci-dessus. Assurez-vous que le nombre total se situe dans la limite du nombre de profils auxquels vous avez contractuellement droit pour l’organisation de destination. Appliquez [ règles et conditions de filtrage ](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#filtering-for-profile){target="_blank"} pour inclure ou exclure des données de manière sélective de l’ingestion vers le service Profil. Ou désactivez l’option permettant d’envoyer des données de profil au service Profil pour les suites de rapports pertinentes.
 
 
 #### Groupement

@@ -8,25 +8,34 @@ autotag-review: '2026-05-19T07:58:20.300Z'
 TQID: 'https://experienceleague.adobe.com/eI0cv42QWTm0NqS-4FTuudTDefQ-MZBUMFsyy5-VLaM'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+    internal-label: Data governance
 subfeature_v2:
   - id: c1cf8502-455a-452a-9f49-d22dfdff8033
+    internal-label: Audit logs
+  - id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
+    internal-label: Privacy
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Privacy
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 999
+source-wordcount: '999'
 ht-degree: 98%
-
 ---
-
 # Journaux d’audit {#audit-logs}
 
 <!-- markdownlint-disable MD034 -->
@@ -68,7 +77,7 @@ Dans Customer Journey Analytics, accédez à **[!UICONTROL Outils]** > **[!UI
 
 Le journal d’audit pour aujourd’hui et hier s’affiche par défaut.
 
-![Journal d’audit mis en surbrillance aujourd’hui et hier. &#x200B;](assets/audit_ui.png)
+![Journal d’audit mis en surbrillance aujourd’hui et hier. ](assets/audit_ui.png)
 
 Vous pouvez sélectionner les colonnes visibles en accédant au sélecteur de colonnes en haut à droite.
 
@@ -76,21 +85,21 @@ Vous pouvez sélectionner les colonnes visibles en accédant au sélecteur de co
 
 Double-cliquez sur le bouton info (i) en regard d’une description.
 
-![Journal d’audit mettant en surbrillance le bouton d’informations. &#x200B;](assets/info-button-audit.png)
+![Journal d’audit mettant en surbrillance le bouton d’informations. ](assets/info-button-audit.png)
 
 Les éléments suivants s’affichent :
 
 * **[!UICONTROL Nom de l’action]** : action effectuée. Valeurs possibles :
   * API_REQUEST : toute action déclenche une requête API backend. Des détails s’affichent sur le contenu de la requête API.
-  * APPROVE : une action « approbation » a été effectuée.
+  * APPROVE : une action d’approbation a été effectuée.
   * CREATE : une action « créer » a été effectuée.
   * DELETE : une action « supprimer » a été effectuée.
   * EDIT : une action « modifier » a été effectuée.
   * EMBARGO : lorsque vous limitez une demande dans le [Gestionnaire des activités de rapports](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/reporting-activity-manager/reporting-activity-cancel-requests), l’action est enregistrée dans le journal d’audit dans EMBARGO.
-  * EXPORT : une action « export » a été effectuée.
-  * ORG_CHANGE : une action de changement d’organisation a été effectuée.
+  * EXPORT : une action d’exportation a été effectuée.
+  * ORG_CHANGE : une action de modification de l’organisation a été effectuée.
   * REFRESH : une action « actualiser » a été effectuée.
-  * SHARE : une action « partager » été effectuée.
+  * SHARE : une action de partage a été effectuée.
   * TRANSFER : une action de transfert a été effectuée.
   * UNAPPROVE : une action « annuler l’approbation » a été effectuée.
   * UNSHARE : une action « annuler le partage » a été effectuée.
@@ -138,15 +147,15 @@ Les filtres suivants sont disponibles pour les événements d’audit dans l’i
 | [!UICONTROL Période] | Filtrez une autre période en sélectionnant une autre date ou une autre période en faisant glisser le curseur sur plusieurs dates. Par défaut, les dates d’aujourd’hui et d’hier sont sélectionnées. |
 | [!UICONTROL Action] | Filtrez par nom d’action répertorié ci-dessus. |
 | [!UICONTROL Identifiant utilisateur] | Filtrez un utilisateur spécifique selon son identifiant utilisateur. L’identifiant utilisateur est accessible en sélectionnant le bouton info (i) en regard d’un nom d’utilisateur. |
-| [!UICONTROL Adresse électronique] | Filtrez l’adresse électronique d’un utilisateur spécifique. Pour trouver l’adresse électronique, cliquez sur le bouton d’informations (i) en regard d’un nom d’utilisateur. |
-| [!UICONTROL ID du composant] | Filtrez un identifiant de composant spécifique. L’ID du composant est accessible en sélectionnant le bouton d’informations (i) pour un composant désiré. |
-| [!UICONTROL Type de composant] | Filtrez sur l’un des types de composant répertoriés ci-dessus. |
+| [!UICONTROL Adresse électronique] | Filtrer sur l’adresse e-mail d’un utilisateur spécifique. Pour trouver l’adresse électronique, cliquez sur le bouton d’informations (i) en regard d’un nom d’utilisateur. |
+| [!UICONTROL ID du composant] | Filtrer sur un identifiant de composant spécifique. L’ID utilisateur est accessible en sélectionnant le bouton d’informations (i) du composant souhaité. |
+| [!UICONTROL Type de composant] | Filtrer sur l’un des types de composant répertoriés ci-dessus. |
 
 {style="table-layout:auto"}
 
 ## Types d’événements capturés par les journaux d’audit
 
-Le tableau ci-dessous présente les actions sur lesquelles les types de composant sont enregistrées par les journaux d’audit :
+Le tableau suivant répertorie les actions, par type de composant, qui sont enregistrées dans les journaux d’audit.
 
 | Type de composant | Actions |
 | --- | --- |

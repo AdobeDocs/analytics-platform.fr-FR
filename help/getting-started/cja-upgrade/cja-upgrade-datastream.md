@@ -9,25 +9,34 @@ autotag-review: '2026-05-19T08:13:03.106Z'
 TQID: 'https://experienceleague.adobe.com/vzavQGq0OyhXTpSkqe3nnXQEW0Nax9RXt4SwTRwa4UU'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
+    internal-label: Upgrade
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+    internal-label: Measurement
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Data collection
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 221
+source-wordcount: '221'
 ht-degree: 100%
-
 ---
-
 # Créer un train de données à utiliser avec Customer Journey Analytics {#upgrade-create-datastream}
 
 <!-- markdownlint-disable MD034 -->
@@ -43,7 +52,7 @@ ht-degree: 100%
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/data-ingestion/aepwebsdk.md-->
 
-Un flux de données représente la configuration côté serveur lors de la mise en œuvre des SDK Web et Mobile Adobe Experience Platform. Lors de la collecte de données avec les SDK Adobe Experience Platform, les données sont envoyées à Adobe Experience Platform Edge Network. Il s’agit du train de données qui détermine les services vers lesquels les données sont transférées.
+Un train de données représente la configuration côté serveur lors de la mise en œuvre des SDK web et mobile d’Adobe Experience Platform. Lors de la collecte de données avec les SDK Adobe Experience Platform, les données sont envoyées à Adobe Experience Platform Edge Network. Il s’agit du train de données qui détermine les services vers lesquels les données sont transférées.
 
 Dans votre configuration, vous souhaitez configurer le train de données pour envoyer les données collectées à votre jeu de données dans Adobe Experience Platform.
 
@@ -51,9 +60,9 @@ Dans votre configuration, vous souhaitez configurer le train de données pour en
 >
 >Les étapes suivantes ne sont requises que pour les implémentations d’Adobe Analytics utilisant AppMeasurement ou l’extension Analytics (balises).
 >
->Si votre implémentation Adobe Analytics utilise le SDK web ou l’extension SDK wev, le train de données existe déjà dans votre environnement Adobe Analytics.
+>Si votre mise en œuvre Adobe Analytics utilise le SDK web ou l’extension SDK web, le train de données existe déjà dans votre environnement Adobe Analytics.
 
-Configurer le flux de données :
+Pour configurer le train de données :
 
 1. Dans Adobe Experience Platform, sélectionnez **[!UICONTROL Trains de données]** sous [!UICONTROL COLLECTE DE DONNÉES] dans le rail de gauche.
 
