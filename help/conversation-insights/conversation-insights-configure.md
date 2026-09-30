@@ -18,15 +18,15 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 4eaf8820fd847426ba6a471e1bfbc7b397283905
+source-git-commit: 34bb13891eebb12875f3e355e73aade6b3eed750
 workflow-type: tm+mt
-source-wordcount: '654'
-ht-degree: 7%
+source-wordcount: '824'
+ht-degree: 20%
 ---
 # Création ou modification de configurations
 
 Conversation Insights vous permet d’analyser les conversations à partir des expériences d’agent que vous proposez à vos clients. Ces expériences d’agent peuvent être basées sur des modèles de langage étendus (LLM) ou sur des conversations humaines. Par exemple, un bot conversationnel interagissant avec les transcriptions d’un client ou d’un centre d’appel.
-Grâce à Conversation Insights, vous pouvez comprendre l’impact des représentants sur les résultats réels des utilisateurs.
+Grâce à Conversation Insights, vous pouvez comprendre l’impact des agents sur les résultats réels des utilisateurs et utilisatrices.
 
 Grâce à l’interface de configuration des informations de conversation, vous pouvez rapidement créer ou modifier une configuration et les artefacts associés (connexion, vues de données, etc.).
 
@@ -34,7 +34,7 @@ Lorsque vous créez ou modifiez une configuration Insights de conversation, vous
 
 Seuls les administrateurs système peuvent créer ou modifier des configurations de Conversation Insights.
 
-Vous pouvez créer ou modifier des configurations à partir de l’interface [&#x200B; Configurations de Conversation Insights &#x200B;](./conversation-insights-manage.md).
+Vous pouvez créer ou modifier des configurations à partir de l’interface [ Configurations de Conversation Insights ](./conversation-insights-manage.md).
 
 ## Restaurer le jeu de données fusionné manquant
 
@@ -114,7 +114,47 @@ Pour chaque configuration :
 
 ## Vérification de la vue de données
 
-(Expliquez les mesures et dimensions affichées à partir des jeux de données pertinents)
+Les vues de données que vous avez configurées dans [Étapes de configuration](#configuration-steps) ont **[!UICONTROL Informations sur la conversation]** comme valeur pour **[!UICONTROL Intégrations]** dans [Vues de données](/help/data-views/manage-dataviews.md).
+
+Pour chacune des vues de données configurées :
+
+* **Conteneurs** : l’onglet [Conteneurs](/help/data-views/create-dataview.md#containers) contient un nouveau **[!UICONTROL Nom du conteneur]** : **[!UICONTROL conversation]** avec **[!UICONTROL Nom d’affichage]**: **[!UICONTROL Container]** comme **[!UICONTROL Système]** Type de conteneur **** supplémentaire.
+* **Composants** : d’autres dossiers de champs de schéma s’affichent. Par exemple : agentExperience et conversation. En outre, les composants suivants sont automatiquement ajoutés :
+
+  | Mesures | Type de données de schéma | Chemin du schéma |
+  |---|---|---|
+  | Commentaires clientèle | Chaîne | eventType |
+  | Sentiments positifs | Chaîne | Champs dérivés |
+  | Recommandations | Chaîne | eventType |
+  | Tours | Chaîne | eventType |
+
+  | Dimensions | Type de données de schéma | Chemin du schéma |
+  |---|---|---|
+  | ID d’agent ou d’agente | Chaîne | `agenticExperience.agents.agentID` |
+  | Nom d’agent ou d’agente | Chaîne | `agenticExperience.agents.name` |
+  | Nom de concierge | Chaîne | `agenticExperience.name` |
+  | Version de concierge | Chaîne | `agenticExperience.version` |
+  | ID de conversation | Chaîne | `conversation.conversationID` |
+  | Nom de la conversation | Chaîne | `conversation.conversationName` |
+  | Nom du signal de la conversation | Chaîne | `conversation.signals.name` |
+  | Valeur booléenne de la synthèse de conversation | Booléen | `conversation.signals.values.booleanValue` |
+  | Degré de confiance de la synthèse de conversation | Double | `conversation.signals.values.confidence` |
+  | Clé de métadonnées de la synthèse de conversation | Chaîne | `conversation.signals.values.metadata.key` |
+  | Valeur de nombre de la synthèse de conversation | Double | `conversation.signals.values.numberValue` |
+  | Qualificatifs de synthèse de conversation | Chaîne | `conversation.signals.values.qualifiers` |
+  | Signaux de ton de conversation | Chaîne | `conversation.signals.attributes.tones.values` |
+  | Environnement | Chaîne | `agenticExperience.environment` |
+  | Classification du feedback | Chaîne | Champs dérivés |
+  | Commentaires – Classification des évaluations | Chaîne | `conversation.feedback.rating.classification` |
+  | Objectif de la section Commentaires | Chaîne | `conversation.feedback.raw.purpose` |
+  | Source des commentaires | Chaîne | `conversation.feedback.source` |
+  | Expression | Chaîne | `conversation.signals.attributes.subjects.values.phrase` |
+  | Texte brut de réponse | Chaîne | `conversation.response.raw.text` |
+  | Source de réponse | Chaîne | `conversation.response.source` |
+  | Classification de sentiment | Chaîne | Champs dérivés |
+  | Nom de compétence | Chaîne | `agenticExperience.agents.skills.name` |
+  | Version de compétence | Chaîne | `agenticExperience.agents.skills.version` |
+  | Valeur | Chaîne | `agenticExperience.agents.skills.parameters.value` |
 
 
 <!--

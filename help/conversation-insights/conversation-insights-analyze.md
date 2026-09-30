@@ -18,9 +18,33 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 4eaf8820fd847426ba6a471e1bfbc7b397283905
+source-git-commit: 34bb13891eebb12875f3e355e73aade6b3eed750
 workflow-type: tm+mt
-source-wordcount: '12'
+source-wordcount: '132'
 ht-degree: 0%
 ---
 # Analyser les informations de conversation
+
+## Analyse simple
+
+Pour analyser les Insights de conversation, vous devez créer ou modifier un projet dans Analysis Workspace et utiliser l’une des vues de données configurées comme vue de données pour un ou plusieurs panneaux de votre projet.
+
++++ Exemple de projet
+
+![Exemple de projet de base pour les informations de conversation](assets/conversation-insights-analyze-sample-project-basic.png)
+
++++
+
+## Analyser les conversations à grande échelle et dans leur contexte
+
+Pour analyser les conversations à grande échelle et fournir un contexte pour ces conversations dans le parcours client complet :
+
+* Combinez vos événements Insights de conversation avec d’autres jeux de données d’événement et des jeux de données de profil et de recherche supplémentaires. Ajoutez ces jeux de données à la connexion que vous avez sélectionnée pour la configuration des informations de conversation.
+* Ajoutez des composants supplémentaires (mesures et dimensions) aux vues de données que vous avez sélectionnées pour la configuration des informations de conversation.
+* ...
+
++++ Exemple de projet
+
+À déterminer.
+
++++ 
