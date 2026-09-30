@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 8b9c164e-01da-4b43-8e2c-99904223cae5
-TQID: https://experienceleague.adobe.com/ad4wWxqEZZxsnSTpus7pxFMlwNo3nNUpHeS9VfxrEdw
+TQID: 'https://experienceleague.adobe.com/ad4wWxqEZZxsnSTpus7pxFMlwNo3nNUpHeS9VfxrEdw'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -14,9 +14,13 @@ feature_v2:
     internal-label: Analysis Workspace
   - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
     internal-label: Data governance
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
     internal-label: Metrics
+  - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+    internal-label: Use cases
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -33,10 +37,10 @@ topic_v2:
     internal-label: Data collection
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: 06d3fa4838d48567f1b9804992aa0f718937916d
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
 source-wordcount: '1079'
-ht-degree: 1%
+ht-degree: 4%
 ---
 # Cas dʼutilisation des exports de données {#data-export-use-cases}
 
@@ -47,7 +51,7 @@ ht-degree: 1%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-data-feeds-step"
 >title="Utiliser des fonctionnalités d’export similaires aux flux de données"
->abstract="Bien qu’aucun remplacement exact des flux de données ne soit encore disponible dans Customer Journey Analytics, des fonctionnalités similaires sont disponibles via l’exportation de tableaux complets, l’exportation de jeux de données Platform, l’intégration d’outils de BI et l’API de création de rapports."
+>abstract="Bien qu’aucun remplacement exact des flux de données ne soit encore disponible dans Customer Journey Analytics, des fonctionnalités similaires sont disponibles via l’export complet de tableaux, l’export de jeux de données Platform, l’intégration d’outils BI et l’API de reporting."
 
 <!-- markdownlint-enable MD034 -->
 

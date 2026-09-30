@@ -9,21 +9,25 @@ role: User
 TQID: https://experienceleague.adobe.com/GTRg4PodKPvehRu0CwAq8QTMUmoOtY2qIU1kHzmwHRI
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: User
+source-git-commit: 6db1cfff1578b11a62710382aed783e56996342d
 workflow-type: tm+mt
-source-wordcount: 615
+source-wordcount: '615'
 ht-degree: 57%
-
 ---
-
 # Ventilation des dimensions
 
 Vous pouvez ventiler vos données dans Analysis Workspace de différentes manières, en fonction de vos besoins spécifiques. Vous pouvez créer des requêtes à l’aide de mesures, dimensions, segments, chronologies pertinents et autres valeurs de répartition d’analyse.
@@ -34,7 +38,7 @@ Vous pouvez ventiler vos données dans Analysis Workspace de différentes maniè
 
 1. Dans le sous-menu, sélectionnez **[!UICONTROL Dimensions]**, **[!UICONTROL Mesures]**, **[!UICONTROL Segments]** ou **[!UICONTROL Périodes]** puis sélectionnez un élément. Vous pouvez également simplement rechercher un composant dans le champ **[!UICONTROL *Rechercher *]**.
 
-Vous pouvez ventiler les mesures par éléments de dimension ou segments d’audience sur plusieurs périodes sélectionnées. Vous pouvez également approfondir l’analyse à un niveau plus détaillé.
+Vous pouvez ventiler les mesures par éléments de dimension ou segments d’audience sur plusieurs périodes sélectionnées. Vous pouvez également analyser en profondeur à un niveau plus détaillé.
 
 >[!NOTE]
 >
@@ -42,7 +46,7 @@ Vous pouvez ventiler les mesures par éléments de dimension ou segments d’aud
 
 ## Répartition par position
 
-Par défaut, les répartitions sont fixées aux éléments de ligne statiques. Par exemple, imaginons que vous répartissiez les éléments de la dimension 3 premières pages (page d’accueil, résultats de recherche et passage en caisse) par canal marketing. Ensuite, vous quittez le projet et revenez deux semaines plus tard. Lors de la réouverture du projet, les 3 premières pages ont changé. Désormais, la page d’accueil, les résultats de recherche et le passage en caisse figurent sur les 4 à 6 premières pages. Par défaut, les répartitions des canaux marketing apparaîtront toujours sous Page d’accueil, Résultats de recherche et le Passage en caisse, même si elles se trouvent maintenant dans les lignes 4 à 6.
+Par défaut, les répartitions sont fixées aux éléments de ligne statiques. Par exemple, imaginons que vous répartissiez les 3 premiers éléments de la dimension Page (Page d’accueil, Résultats de recherche, Passage en caisse) par canal marketing. Ensuite, vous quittez le projet et revenez deux semaines plus tard. Lors de la réouverture du projet, les 3 premières pages ont changé. Désormais, la page d’accueil, les résultats de recherche et le passage en caisse figurent sur les 4 à 6 premières pages. Par défaut, les répartitions du canal marketing apparaîtront toujours sous Page d’accueil, Résultats de recherche et Passage en caisse, même si elles se trouvent maintenant dans les lignes 4 à 6.
 
 En revanche, la **Répartition par position** répartit toujours les 3 premiers éléments, quelle que soit la nature de ces éléments. Pour revenir à l’exemple, lorsque vous rouvrez votre projet, les répartitions des canaux marketing sont liées aux 3 premières pages du tableau. Elles ne sont pas liées à Page d’accueil, Résultats de recherche et Passage en caisse, qui se trouvent désormais dans les lignes 4 à 6. Voir [Paramètres de ligne](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md) comment configurer ce paramètre.
 
@@ -56,7 +60,7 @@ Voici le comportement attendu lors de l’application des modèles d’attributi
 
 * Si vous appliquez une attribution lorsqu’il n’en existe aucune autre, celle-ci s’applique à l’ensemble de l’arborescence des colonnes.
 
-* Si vous ajoutez une répartition après l’application d’une attribution, elle utilise la valeur par défaut de la répartition donnée qui a été ajoutée (si cette dimension comporte une valeur par défaut). Sinon, elle utilisera la répartition de la colonne parente. Certaines dimensions disposent d’une attribution par défaut. Par exemple, les dimensions de temps et le référent utilisent la même touche. La dimension Produit utilise la dernière touche. Les autres dimensions ne disposent pas de valeur par défaut et utiliseront l’attribution de la colonne parente.
+* Si vous ajoutez une répartition après l’application d’une attribution, elle utilise la valeur par défaut de la répartition donnée qui a été ajoutée (si cette dimension comporte une valeur par défaut). Sinon, elle utilisera la répartition de la colonne parente. Certaines dimensions disposent d’une affectation par défaut. Par exemple, les dimensions de temps et le référent utilisent le modèle Même touche. La dimension Produit utilise la dernière touche. Les autres dimensions ne disposent pas de valeur par défaut et utiliseront l’affectation de la colonne parent.
 
 * Si des attributions sont déjà disponibles dans l’arborescence des colonnes, la modification de l’attribution n’a un impact que sur celle que vous modifiez.
 

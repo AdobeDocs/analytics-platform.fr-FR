@@ -7,25 +7,33 @@ exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
 TQID: https://experienceleague.adobe.com/DWTWJ2Bd9iEPO2awiiOLcUzUGPc-clZul3dNFcyWvxk
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: a8b1c240-f315-46e3-b813-f545c4279dd1
+    internal-label: Workspace basics
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments, Segments (CJA)
   - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
+    internal-label: Freeform tables
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: fa6ac035-8403-478b-9ce1-3fe29d211fca
+    internal-label: Annotations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: User
+source-git-commit: 6bcbf10e6bff660f57f598f6cf75b43eb75c7db3
 workflow-type: tm+mt
-source-wordcount: 459
+source-wordcount: '459'
 ht-degree: 100%
-
 ---
-
 # Créer des projets {#create-projects}
 
 
@@ -49,15 +57,15 @@ Maintenant que vous avez créé un projet Workspace vierge, assurez-vous de conn
 * Ajoutez des [panneaux](/help/analysis-workspace/c-panels/panels.md) à votre projet. Par exemple, **[!DNL Example Panel]** ➊.
 
 * Ajoutez des [visualisations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) à vos panneaux. Par exemple :
-   * **[!DNL Line Graph]** [Visualisation](/help/analysis-workspace/visualizations/line.md) sous forme de lignes➋
-   * **[!DNL Countries]** [Visualisation sous forme de ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)tableau à structure libre➌
+  * **[!DNL Line Graph]** [Visualisation](/help/analysis-workspace/visualizations/line.md) sous forme de lignes➋
+  * **[!DNL Countries]** [Visualisation sous forme de ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)tableau à structure libre➌
 * Ajoutez des [composants](/help/components/overview.md) à vos visualisations. Par exemple :
-   * **[!DNL Store Country]** [dimension](/help/components/dimensions/overview.md) ➍
-   * **[!DNL People]** [mesure](/help/components/apply-create-metrics.md) ➎
-   * **[!DNL Avg Order Value]** [mesure calculée](/help/components/calc-metrics/calc-metr-overview.md) ➏
-   * **[!DNL Mobile App Sessions]** [segment](/help/components/segments/seg-overview.md) ➐
-   * **[!DNL Last Month]** [période](/help/components/date-ranges/overview.md) ➑
-   * **[!DNL Example]** [annotation](/help/components/annotations/overview.md) ➒
+  * **[!DNL Store Country]** [dimension](/help/components/dimensions/overview.md) ➍
+  * **[!DNL People]** [mesure](/help/components/apply-create-metrics.md) ➎
+  * **[!DNL Avg Order Value]** [mesure calculée](/help/components/calc-metrics/calc-metr-overview.md) ➏
+  * **[!DNL Mobile App Sessions]** [segment](/help/components/segments/seg-overview.md) ➐
+  * **[!DNL Last Month]** [période](/help/components/date-ranges/overview.md) ➑
+  * **[!DNL Example]** [annotation](/help/components/annotations/overview.md) ➒
 
 
 ## Informations et paramètres du projet {#project-info-settings}
@@ -92,11 +100,17 @@ Les paramètres incluent :
 | Dernière modification | Date de la dernière modification du projet. |
 | Balises | Répertorie les balises appliquées à un projet afin de faciliter la catégorisation. |
 | Description | Une description est utile pour clarifier l’objet d’un projet. Double-cliquez dessus pour la modifier. |
-| Comptage des instances répétées | Spécifie si les instances répétées sont comptabilisées dans les rapports. Remarque : ce paramètre ne s’applique pas aux visualisations de flux ou d’abandons. |
+| Comptage des instances répétées | Spécifie si les instances répétées sont comptabilisées dans les rapports. Remarque : ce paramètre ne s’applique pas aux visualisations Flux ou Abandon. |
 | Affichage des annotations | Spécifie si les annotations s’affichent pour ce projet ou non. |
 | [Palette de couleurs du projet](/help/analysis-workspace/build-workspace-project/color-palettes.md) | Vous pouvez modifier la palette de couleurs catégoriques utilisée dans Workspace en choisissant parmi les palettes prêtes à l’emploi qui ont été optimisées pour le daltonisme ou en spécifiant votre palette personnalisée. Cette fonction affecte de nombreux éléments dans Workspace, y compris la plupart des visualisations. |
-| [Densité d’affichage](/help/analysis-workspace/build-workspace-project/view-density.md) | Vous permet de voir plus de données sur l’écran en réduisant l’espacement vertical du panneau de gauche, des tableaux à structure libre et des tableaux de cohortes. |
+| [Densité d’affichage](/help/analysis-workspace/build-workspace-project/view-density.md) | Permet d’afficher davantage de données à l’écran en réduisant l’espacement vertical dans le panneau de gauche, les tableaux à structure libre et les tables de cohorte. |
 | Autoriser les commentaires | Lorsque cette option est activée, une zone de commentaires est disponible dans le rail de droite du projet dans Analysis Workspace. Pour plus d’informations, consultez [Ajouter et gérer des commentaires dans les projets](/help/analysis-workspace/build-workspace-project/comment-projects.md). |
 
+<!--
 
+Add this to the table above (second-to-last-row) when cached results releases: 
+
+- [Use cached results for faster loading](/help/analysis-workspace/build-workspace-project/cached-results.md) - When enabled, results load faster for 12 hours after someone first opens the project. Data continues to flow in the background. To load the latest results, refresh individual panels or the entire project. -
+
+-->
 

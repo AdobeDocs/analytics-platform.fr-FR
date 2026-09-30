@@ -17,6 +17,8 @@ feature_v2:
 subfeature_v2:
   - id: faea9abd-7024-4c5e-a5b4-87919e09b24b
     internal-label: Stitching
+  - id: b7fb3355-1f54-4380-bce3-d444b226c0e9
+    internal-label: Cross channel analysis
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -27,7 +29,7 @@ topic_v2:
     internal-label: Customer journeys
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 76379e1cd9a42f2b2651a66768c195776eabecff
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
 source-wordcount: '2292'
 ht-degree: 25%
@@ -237,7 +239,7 @@ Vous devez d’abord activer et configurer le groupement B2B au niveau de la con
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_enable_person_to_account"
 >title="Activer l’assemblage personne à compte"
->abstract="Si cette option est activée, ce jeu de données utilise l’assemblage B2B Personne à compte. Les valeurs d’**[!UICONTROL ID de personne persistant]** seront remplacées par celles de l’**[!UICONTROL espace de noms d’identifiant de personne]** configuré, puis utilisées pour rechercher l’ID de compte à partir du jeu de données de personne à compte.<br/>Si cette option est désactivée, ce jeu de données n’utilise pas l’assemblage B2B Personne à compte et vous devez sélectionner un **[!UICONTROL identifiant de compte]** obligatoire à la place."
+>abstract="Si cette option est activée, ce jeu de données utilise l’assemblage B2B Personne à compte. Les valeurs d’**[!UICONTROL ID de personne persistant]** seront remplacées par celles de l’**[!UICONTROL espace de noms d’identifiant de personne]** configuré, puis utilisées pour rechercher l’ID de compte à partir du jeu de données de personne à compte.<br/>Si cette option est désactivée, ce jeu de données n’utilise pas le rapprochement B2B Personne à compte et vous devez sélectionner un **[!UICONTROL identifiant de compte]** obligatoire à la place."
 >additional-url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/stitching/b2b/b2b-person-to-account-stitching#configure-b2b-stitching-settings" text="Configurer les paramètres d’assemblage B2B personne à compte"
 
 Après avoir configuré le groupement B2B au niveau de la connexion, vous devez permettre à la personne B2B de tenir compte du groupement individuellement pour chaque jeu de données d’événement que vous souhaitez grouper.
