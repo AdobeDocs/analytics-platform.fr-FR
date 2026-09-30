@@ -1,42 +1,53 @@
 ---
-title: Commencer avec la mise à niveau vers Customer Journey Analytics
+title: Commencer la mise à niveau vers Customer Journey Analytics
 description: Planifier la mise à niveau d’Adobe Analytics vers Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 hide: true
 exl-id: fd3b36ab-72c1-469a-b2c7-419813c82425
-TQID: https://experienceleague.adobe.com/ECZ-XLyYYVP8DHy6zhlielpnYwtvixFxWiUaqjh8Nag
+TQID: 'https://experienceleague.adobe.com/ECZ-XLyYYVP8DHy6zhlielpnYwtvixFxWiUaqjh8Nag'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: d9715c3da9893e1c47b702acb4daef5e666bedd7
+    internal-label: Data collection
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 734
+source-wordcount: '734'
 ht-degree: 100%
-
 ---
-
-# Étape 1 : commencer avec la mise à niveau vers Customer Journey Analytics
+# Étape 1 : Commencer la mise à niveau vers Customer Journey Analytics
 
 >[!AVAILABILITY]
 >
->Les informations de cette page sont progressivement remplacées par des informations de mise à niveau plus complètes suivantes : <ul><li>**Étapes recommandées pour la mise à niveau**<p>Pour plus d’informations, consultez [Chemin recommandé pour la mise à niveau à partir d’Adobe Analytics vers Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md).</p></li><li>**Guide de mise à niveau de Customer Journey Analytics**<p>Un nouveau guide est disponible pour générer dynamiquement des étapes de mise à niveau adaptées à votre entreprise et à vos circonstances.</p><p>Pour accéder au guide à partir de Customer Journey Analytics, sélectionnez l’onglet **[!UICONTROL Espace de travail]**, puis sélectionnez **[!UICONTROL Mettre à niveau vers Customer Journey Analytics]** dans le panneau de gauche. Suivez les instructions à l’écran.</p></li></ul>
+>Les informations de cette page sont progressivement remplacées par les informations suivantes, plus complètes, sur la mise à niveau : <ul><li>**Étapes recommandées pour la mise à niveau**<p>Pour plus d’informations, consultez [Chemin recommandé pour la mise à niveau à partir d’Adobe Analytics vers Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md).</p></li><li>**Guide de mise à niveau de Customer Journey Analytics**<p>Un nouveau guide est disponible pour générer dynamiquement des étapes de mise à niveau adaptées à votre entreprise et à vos circonstances.</p><p>Pour accéder au guide à partir de Customer Journey Analytics, sélectionnez l’onglet **[!UICONTROL Espace de travail]**, puis sélectionnez **[!UICONTROL Mettre à niveau vers Customer Journey Analytics]** dans le panneau de gauche. Suivez les instructions à l’écran.</p></li></ul>
 
-Customer Journey Analytics est la nouvelle génération d’Analytics. Il permet la collecte de données sur plusieurs canaux (données en ligne et hors ligne) associée à une puissante fonctionnalité de traitement de la période de rapport (par le biais de la définition de composants et de champs dérivés dans les vues de données).
+Customer Journey Analytics est la nouvelle génération de solutions analytics. Il permet la collecte de données sur plusieurs canaux (données en ligne et hors ligne) associée à une puissante fonctionnalité de traitement de la période de rapport (par le biais de la définition de composants et de champs dérivés dans les vues de données).
 
-Avant de commencer le processus de mise à niveau d’Adobe Analytics vers Customer Journey Analytics, vous devez comprendre les avantages de Customer Journey Analytics, ainsi que les étapes requises pour réussir la mise à niveau.
+Avant de commencer le processus de mise à niveau d’Adobe Analytics vers Customer Journey Analytics, vous devez comprendre les avantages de Customer Journey Analytics, ainsi que les étapes à suivre pour mener à bien cette mise à niveau.
 
 ## Comprendre les avantages de Customer Journey Analytics
 
@@ -48,11 +59,11 @@ Voici quelques-uns des avantages clés : (Pour obtenir une liste complète, ain
 
 * [Transformations de la période de rapport dans les vues de données](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md#customer-journey-analytics-data-views)
 
-  Les vues de données dans Customer Journey Analytics vous permettent d’interpréter plus en détail les données d’une connexion. Vous pouvez modifier ou supprimer des données sans modifier l’implémentation, utiliser des sous-chaînes pour manipuler des dimensions, créer des mesures à partir de n’importe quelle valeur, segmenter les sous-événements ou encore utiliser des champs dérivés. Toutes ces transformations sont non destructives.
+  Les vues de données dans Customer Journey Analytics vous permettent d’interpréter plus en détail les données d’une connexion. Vous pouvez modifier ou supprimer des données sans changer votre mise en œuvre, utiliser des sous-chaînes pour manipuler des dimensions, créer des mesures à partir de n’importe quelle valeur, segmenter des sous-événements ou encore utiliser des champs dérivés. Toutes ces transformations sont non destructives.
 
 * [Les transformations s’appliquent aux données historiques et nouvelles.](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
 
-  La manipulation des vues des données peut s’appliquer de manière non destructive aux données historiques et nouvelles.
+  La manipulation des vues de données peut s’appliquer de manière non destructive aussi bien aux données historiques qu’aux nouvelles données.
 
 * [Champs dérivés](/help/data-views/derived-fields/derived-fields.md)
 
@@ -60,16 +71,16 @@ Voici quelques-uns des avantages clés : (Pour obtenir une liste complète, ain
 
 * [Les vues de données remplacent les suites de rapports virtuelles.](/help/getting-started/aa-to-cja-user.md#changes-to-the-concept-of-virtual-report-suites)
 
-  Les vues de données reprennent le concept même de suites de rapports virtuelles et l’étendent pour contrôler plus intensément les données découlant des connexions. Ces modifications rendent les paramètres généraux tels que le fuseau horaire et les intervalles d’expiration de session configurables et rétroactifs.
+  Les vues de données s’appuient sur le concept actuel des suites de rapports virtuelles et l’enrichissent en offrant des contrôles supplémentaires sur les données mises à disposition par les connexions. Ces modifications rendent les paramètres généraux tels que le fuseau horaire et les intervalles d’expiration de session configurables et rétroactifs.
 
 * [Dimensions et mesures client illimitées](/help/getting-started/aa-to-cja-user.md#changes-to-the-concept-of-evars-and-props)
 
-  Les valeurs peuvent être numériques, textuelles, d’objets ou de listes, ou encore un mélange de ces dernières. Les dimensions peuvent être imbriquées ou hiérarchiques.
+  Les valeurs peuvent être des nombres, du texte, des objets, des listes ou une combinaison de ces éléments. Les dimensions peuvent être imbriquées ou hiérarchiques.
 
 ## Comprendre le processus de mise à niveau
 
 <!-- Include a graphic of the end-to-end process, as well as links to each step of the process -->
-Les informations de cette page couvrent l’Étape 1 de la mise à niveau, comme indiqué dans le tableau ci-dessous. Suivez toutes les étapes de ce tableau pour mettre à niveau d’Adobe Analytics vers Customer Journey Analytics.
+Les informations de cette page couvrent l’Étape 1 de la mise à niveau, comme indiqué dans le tableau ci-dessous. Suivez toutes les étapes de ce tableau pour mettre à niveau Adobe Analytics vers Customer Journey Analytics.
 
 | Tâche de mise à niveau | Détails |
 |---------|----------|

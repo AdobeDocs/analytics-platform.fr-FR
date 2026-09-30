@@ -3,23 +3,30 @@ title: Bonnes pratiques d’attribution
 description: Découvrez les bonnes pratiques pour décider du modèle d’attribution à utiliser.
 feature: Attribution
 exl-id: 92c6039c-f950-4746-8b34-ba18be258c08
-TQID: https://experienceleague.adobe.com/noNo2rP-srAtUJbG-kYgipLHknMsWWZR4iJwDv-2ioc
+TQID: 'https://experienceleague.adobe.com/noNo2rP-srAtUJbG-kYgipLHknMsWWZR4iJwDv-2ioc'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
+  - id: c91f8bd2-df97-4c6a-afcd-f1cde8221302
+    internal-label: Attribution
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Admin
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 466
+source-wordcount: '466'
 ht-degree: 63%
-
 ---
-
 # Bonnes pratiques en matière dʼattribution
 
 Le choix du modèle dʼattribution approprié pour votre organisation dépend de plusieurs critères. Cet article explore une méthodologie ainsi que quelques bonnes pratiques générales :
@@ -33,17 +40,17 @@ Le choix du modèle dʼattribution approprié pour votre organisation dépend de
 >[!NOTE]
 >Cette analyse doit avoir lieu avant de choisir un modèle dʼattribution.
 
-Cette phase consiste dʼabord à comprendre le comportement des clients et à définir des mesures de conversion. Selon les mesures de conversion, des outils tels que les [Flux de données](https://experienceleague.adobe.com/fr/docs/analytics/export/analytics-data-feed/data-feed-overview) (pour les données brutes) ou Analysis Workspace facilitent votre compréhension des questions suivantes :
+Cette phase consiste dʼabord à comprendre le comportement client et à définir des mesures de conversion. Selon les mesures de conversion, des outils tels que les [Flux de données](https://experienceleague.adobe.com/fr/docs/analytics/export/analytics-data-feed/data-feed-overview) (pour les données brutes) ou Analysis Workspace facilitent votre compréhension des questions suivantes :
 
 * Le nombre de clientes et clients qui touchent différents canaux marketing avant la conversion.
 * La proportion ou répartition de ces comportements.
 
-Par exemple, si 50 % des clients empruntent 3 canaux avant la conversion, y a-t-il une interaction entre ces 3 canaux ?
-Vous pouvez ensuite effectuer une analyse des entonnoirs supérieur et inférieur afin dʼaméliorer votre compréhension.
+Par exemple, si 50 % des clients empruntent 3 canaux avant la conversion, y a-t-il une interaction entre ces 3 canaux ?
+Vous pouvez ensuite effectuer une analyse du haut et du bas du funnel pour approfondir votre compréhension.
 
 ### Analyse de lʼentonnoir supérieur
 
-Les analyses en entonnoir supérieur étudient les canaux utilisés pour faire connaître la marque ou le produit. Par exemple, lʼobjectif de la plupart des publicités télévisées est de faire connaître la marque. Vous pouvez utiliser le modèle d’attribution [&#x200B; Décroissance temporelle &#x200B;](/help/analysis-workspace/attribution/models.md), car les gens finiront par oublier votre publicité TV au fil du temps.
+Les analyses en entonnoir supérieur étudient les canaux utilisés pour faire connaître la marque ou le produit. Par exemple, lʼobjectif de la plupart des publicités télévisées est d’accroître la notoriété de la marque. Vous pouvez utiliser le modèle d’attribution [&#x200B; Décroissance temporelle &#x200B;](/help/analysis-workspace/attribution/models.md), car les gens finiront par oublier votre publicité TV au fil du temps.
 
 ### Analyse de lʼentonnoir inférieur
 

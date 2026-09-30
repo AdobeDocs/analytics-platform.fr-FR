@@ -18,10 +18,10 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 4eaf8820fd847426ba6a471e1bfbc7b397283905
+source-git-commit: 99e0e43c34f77b6e42f8d3c4fdf5d2773569b3e7
 workflow-type: tm+mt
-source-wordcount: '2322'
-ht-degree: 6%
+source-wordcount: '2592'
+ht-degree: 5%
 ---
 # Implémenter des informations de conversation
 
@@ -39,8 +39,225 @@ Cet article décrit les étapes de mise en œuvre requises.
 
 Configurez des jeux de données pour les principaux événements de conversation : invite, réponse, retour d’informations. Les jeux de données d’invite, de réponse et de commentaires doivent étendre le schéma de base d’événement d’expérience XDM avec le [groupe de champs Événement de conversation](#conversation-event-field-group) et peuvent éventuellement inclure le [groupe de champs Informations agences](#agentic-information-field-group) et d’autres [groupes de champs supplémentaires](#additional-field-groups).
 
-Vous pouvez définir des jeux de données distincts pour les invites, les réponses et les commentaires ou combiner les données dans des jeux de données. Par exemple, utilisez un jeu de données pour les invites et les réponses et un autre pour les commentaires. Vous pouvez également utiliser un seul jeu de données pour tous les événements de conversation.
-Utilisez le même schéma sous-jacent pour les jeux de données.
+Vous pouvez définir des jeux de données distincts pour les invites, les réponses et les commentaires ou combiner les données dans des jeux de données. Par exemple, utilisez un jeu de données pour les invites et les réponses et un autre pour les commentaires. Vous pouvez également utiliser un jeu de données distinct pour chaque type d’événement de conversation, comme illustré dans la section [Fonctionnement](/help/conversation-insights/conversation-insights-overview.md#how-it-works).
+
+À titre d’illustration, utilisez :
+
+* **Implémentation de jeux de données distincts**. Jeux de données distincts pour les événements d’invite, de réponse et de commentaires. Suivez cette approche de mise en œuvre si vous :
+
+  * Vous souhaitez conserver un statut inférieur sur votre implémentation client.
+  * Envoyez des données d’invite indépendamment d’une réponse différée ou inexistante.
+
+* **Implémentation combinée de jeux de données**. Par exemple, un jeu de données d’événements d’invite et de réponse combiné et un jeu de données d’événements de commentaires distinct.  Suivez cette approche de mise en œuvre si vous :
+
+  * Vous souhaitez réduire les appels car votre implémentation prend en charge les tours complets.
+  * Ne vous souciez pas de la latence lorsque vous attendez que les réponses arrivent.
+
+>[!IMPORTANT]
+>
+>Utilisez le même schéma sous-jacent pour les jeux de données.
+>
+
+La disposition des jeux de données et la diffusion des événements de conversation dans ces jeux de données sont des préoccupations distinctes. Envoyez chaque événement de conversation dès que les données sont disponibles afin de garantir la stabilité des identifiants de conversation et de tournage. Des identifiants stables facilitent une corrélation appropriée par le [service Conversation Blender](#data-blending) entre les jeux de données.
+
+
+### Groupe de champs Événement de conversation
+
+Le groupe de champs **[!UICONTROL Événement de conversation]** est un groupe de champs obligatoire qui utilise l’objet `conversation`.
+
+L’objet de conversation capture les données pour :
+
+#### Conversation
+
+Un `conversationID` unique identifie une conversation. Par exemple : `conversationID = "conv-001"`. Le `conversationID` permet de regrouper tous les événements de rotation associés dans la même expérience de conversation.
+
+Le schéma prend également en charge `conversationName`. Nom lisible par l’utilisateur qui décrit le contexte global de la conversation, tel que : `France Geography Q&A`. Le nom de la conversation est généré automatiquement, mais vous pouvez le mettre à jour. Le nom de la conversation est également renseigné pour `signals[].name`. Adobe renseigne le `conversationName` avec la même valeur que le signal `signals[].name` = « title ». Vous pouvez définir la `conversation.conversationName` sur n’importe quel jeu de données que vous renseignez et remplacer la valeur fournie par Adobe.
+
+#### Tourner
+
+Un virage est un cycle d’interaction au sein d’une conversation.
+
+`turnID` Un `turnID` unique identifie un virage. Par exemple :
+
+`conversationID = "conv-001"`
+`turnID = "turn-001"`
+
+Les mêmes `conversationID` et `turnID` sont utilisés pour corréler l’invite, la réponse et le retour d’informations associés à ce virage. Cette corrélation fonctionne entre les enregistrements diffusés séparément ou qui se retrouvent dans différents jeux de données. Un `turnId` ne doit être unique que dans la même conversation, mais peut être réutilisé dans plusieurs conversations. Par exemple, vous pouvez avoir les deux `turn-001` comme `turnID` dans les conversations avec `conversationID` `conv-001` et `conv-002`.
+
+
+#### Invite
+
+Une invite correspond à l’entrée envoyée à l’agent. Dans la plupart des scénarios client, cette entrée correspond à la question, à la requête, à l’instruction ou au message de l’utilisateur ou de l’utilisatrice.
+
+L&#39;invite utilise la représentation suivante : `conversation.prompt`
+
+Les champs d’invite importants sont les suivants :
+
+| Champ | Signification |
+|---|---|
+| `prompt.source` | Qui ou quoi a généré l’invite, généralement l’utilisateur final. |
+| `prompt.raw[]` | Un ou plusieurs segments de contenu brut. |
+| `prompt.raw[].text` | Texte d’invite ou lien vers le contenu (capture d’écran, par exemple). |
+| `prompt.raw[].purpose` | Objet du contenu, tel que l’entrée utilisateur ou le lien. |
+
+Une invite peut contenir plusieurs segments bruts. Par exemple, un utilisateur ou une utilisatrice saisit du texte et inclut une URL.
+
+* `Prompt`
+  * `"What is the capital of France"`
+  * `"https://example.com/france"`
+
+
+#### Réponse
+
+Une réponse correspond au contenu renvoyé par l’agent ou une autre partie répondant.
+
+`conversation.response` Un `responseID` unique représente la réponse.
+
+Les champs de réponse importants sont les suivants :
+
+| Champ | Signification |
+|---|---|
+| `response.source` | Qui ou quoi a produit la réponse. |
+| `response.raw[]` | Un ou plusieurs segments de contenu de réponse |
+| `response.raw[].text` | Texte ou contenu de la réponse. |
+| `response.raw[].purpose` | Objet du segment de contenu. |
+
+Les types de sources documentés sont les suivants :
+
+<!-- randy buck to provide additional details -->
+
+| Source | Signification |
+|---|----|
+| `bot` | Réponse automatisée de l’agent. |
+| `canned` | Réponse prédéfinie ou modélisée. |
+| `concierge` | Réponse de l’agent humain. |
+| `end-user` | Contenu généré par l’utilisateur humain, le cas échéant. |
+
+#### Commentaires
+
+Le retour d’informations est l’évaluation ou la réaction explicite de l’utilisateur ou de l’utilisatrice à l’interaction.
+
+La structure de rétroaction comprend : `conversation.feedback`.
+
+Exemples :
+
+* `feedback.raw[].text: "Great help"`
+* `feedback.rating.score:` 1
+* `feedback.rating.classification`: `"Thumbs Up"`
+* `feedback.rating.reasons[]: ["Accurate", "Quick response"]`
+
+La plage de notes documentée va de `-1.0` à `1.0`.
+
+Un événement de retour peut être représenté en tant qu’événement de retour uniquement à l’aide de : `eventType = "conversation.feedback"`.
+
+Lorsque la rétroaction s&#39;applique à un virage particulier, conservez les `conversationID` et `turnID` appropriés afin que le mélangeur de conversation puisse associer la rétroaction à l&#39;interaction pertinente.
+
+
+#### Signal
+
+Un signal est une observation analytique structurée du contenu de la conversation. Le [service d’extraction de signal](#signal-extraction) fournit des signaux prêts à l’emploi. Aucune action n’est requise pour fournir des signaux, mais vous pouvez ajouter des signaux dans le cadre de l’intégration.
+
+Un signal possède les champs suivants.
+
+| Champ | Signification |
+|---|----|
+| `scope` | Plage d’entrée utilisée pour dériver le signal, telle que le virage ou la conversation en cours. |
+| `name` | Identifiant du signal, tel que les sujets, les modes, les tonalités ou le sentiment. Les noms de signal définis par le producteur sont également pris en charge. |
+| `type` | Type de valeur : chaîne, nombre ou valeur booléenne. |
+| `values[]` | Une ou plusieurs valeurs associées au signal. |
+| `stringValue` | Valeur de signal de chaîne, telle qu’une intention, une tonalité ou un objet. |
+| `numberValue` | Valeur de signal numérique, telle qu’un score de sentiment. |
+| `booleanValue` | Valeur de signal true/false. |
+| `confidence` | Facultatif confiance du producteur dans la valeur du signal, normalement entre 0 et 1. |
+| `qualifiers[]` | Descripteurs facultatifs qui ajoutent du contexte à une valeur de signal. |
+| `metadata[]` | Métadonnées clé/valeur définies par le producteur facultatives. |
+
+
+Le service d&#39;extraction de signaux renseigne l&#39;objet `signals` pour le jeu de données de signaux.
+
+Le conteneur de `signals[].attributes.{subjects,intents,tones,sentiment}` précédent est obsolète.
+
+#### Type de source
+
+Vous devez définir une valeur pour `source` pour chaque objet `prompt`, `response` ou `feedback` dans un événement. Toute valeur est acceptable. Utilisez des valeurs qui vous aident à comprendre l’origine des données. Par exemple :
+
+| Valeur | Description |
+|---|---|
+| `end-user` | Entrée utilisateur. |
+| `agent` | Entrée de l’agent. |
+| `bot` | Réponse automatisée de l’agent. |
+| `canned-prompt` | Réponse prédéfinie/modélisée. |
+| `concierge` | Réponse de l’agent humain. |
+
+#### Type d’objectif (texte brut)
+
+Vous devez définir une valeur pour l’attribut `purpose` sur tout élément de l’objet `raw` dans un objet `prompt`, `response` ou `feedback`. Toute valeur de chaîne est acceptable. Ce champ permet de différencier ce qui est stocké dans le texte brut. Les valeurs utiles sont les suivantes, d’autres valeurs sont également valides :
+
+| Valeur | Description |
+|---|---|
+| `free-form-text` | Texte à structure libre . |
+| `screenshot` | Détails de la capture d’écran. |
+| `attachment` | Détails de la pièce jointe. |
+| `link` | Liens externes. |
+| `url` | URL. |
+| `image-link` | Lien vers l’image. |
+| `citation` | Citation. |
+| `media` | Média. |
+
+
+
+#### Conversation
+
+Consultez ci-dessous les détails complets d’un objet de conversation.
+
++++ Détails 
+
+| Chemin Du Champ (Notation Par Points) | Type | Exemple de valeur | Notes |
+|---|---|---|---|
+| `conversationID` | string | `"conv-001"` | Regroupe plusieurs tours ensemble. |
+| `conversationName` | string | `"France Geography Q&A"` | **Nouveau.** Nom donné à une conversation représentant son contexte global. |
+| `turnID` | string | `"turn-001"` | ID unique pour ce tour. |
+| `prompt.source` | string | `"end-user"` | Source de l’invite, d’autres options peuvent inclure une valeur mise en cache, une valeur en conserve, etc. |
+| `prompt.raw[]` | tableau | Voir objet brut ci-dessous | Données d&#39;invite brutes. |
+| `prompt.raw[].text` | string | `"What is the capital of France?"` | Contenu textuel réel. |
+| `prompt.raw[].purpose` | string | `"User Input"` | Objectif de ce segment de texte. |
+| `response.source` | string | `"bot"` | Source de la réponse. |
+| `response.raw[]` | tableau | Voir objet brut ci-dessous | Données brutes de réponse. |
+| `response.raw[].text` | string | `"The capital of France is Paris."` | Contenu du texte de réponse. |
+| `response.raw[].purpose` | string | `"main"` | Objectif du segment de réponse. Les autres options peuvent inclure des liens, des images, etc. |
+| `feedback.source` | string | `"end-user"` | Source de commentaires. |
+| `feedback.raw[]` | tableau | Voir objet brut ci-dessous | Données brutes des commentaires . |
+| `feedback.raw[].text` | string | `"Great help"` | Texte du retour d’informations. |
+| `feedback.raw[].purpose` | string | `"free-form text"` | Objectif du segment de commentaires. Les autres options peuvent inclure des captures d’écran, des médias, etc. |
+| `feedback.rating.score` | number | `1` | Score numérique de `-1.0` à `1.0`. |
+| `feedback.rating.classification` | string | `"Thumbs Up"` | Classification de l’évaluation. |
+| `feedback.rating.reasons[]` | tableau | `["Accurate", "Quick response"]` | Tableau des raisons de l’évaluation. |
+| `signals[]` | tableau | Voir l’objet de signal ci-dessous | Signaux dérivés basés sur cet événement et la conversation à ce jour. Chaque entrée est un signal nommé unique avec sa propre portée. |
+| `signals[].scope` | string | `"turn"` | Portée des entrées à partir desquelles cet ensemble de signaux est dérivé (tour, conversation à ce jour, n derniers tours, retour). |
+| `signals[].attributes` | objet | Voir les attributs ci-dessous | **Obsolète.** Conteneur pour les attributs de signal. Chaque attribut est un objet contenant une ou plusieurs valeurs. Cela permet de répondre au besoin anticipé de prendre en charge la population d’informations ML/agent utilisées pour générer le signal. |
+| `signals[].attributes.subjects` | objet | Voir les sujets ci-dessous | **Obsolète.** Conteneur d’objets. |
+| `signals[].attributes.subjects.values[]` | tableau | Voir les valeurs de l’objet ci-dessous | **Obsolète.** Tableau de valeurs d’objet. |
+| `signals[].attributes.subjects.values[].phrase` | string | `"product pricing"` | **Obsolète.** Expression ou mot-clé extrait de l’entrée étendue. |
+| `signals[].attributes.subjects.values[].qualifiers[]` | tableau | `["important", "urgent"]` | **Obsolète.** Liste des qualificateurs de l’expression |
+| `signals[].attributes.intents` | objet | Voir les intentions ci-dessous | **Obsolète.** Conteneur d’intentions. |
+| `signals[].attributes.intents.values[]` | tableau | `["make a purchase", "learn more"]` | **Obsolète.** Intentions dérivées de l’entrée étendue. |
+| `signals[].attributes.tones` | objet | Voir les tons ci-dessous | **Obsolète.** Conteneur de tons. |
+| `signals[].attributes.tones.values[]` | tableau | `["thrilled", "contemplative"]` | **Obsolète.** Tons dérivés de l’entrée étendue. |
+| `signals[].attributes.sentiment` | objet | Voir le sentiment ci-dessous | **Obsolète.** Conteneur de sentiment. |
+| `signals[].attributes.sentiment.value` | number | `0.71` | **Obsolète.** Score de `-1` (négatif) à `1` (positif) indiquant un sentiment. |
+| `signals[].name` | string | `"sentiment"` | **Nouveau** (remplace le conteneur `attributes` obsolète). Identifiant de ce signal, par exemple « sujets », « intentions », « tons », « sentiment » ou tout nom défini par le producteur. Les producteurs peuvent ajouter de nouveaux types de signaux sans modifier le schéma. |
+| `signals[].type` | string | `"number"` | **Nouveau.** Type de données des valeurs de ce signal (`string`, `number` ou `boolean`). Indique aux consommateurs quel champ de valeur saisi est renseigné sur chaque entrée de `values[]`. |
+| `signals[].values[]` | tableau | Voir l’objet de valeurs ci-dessous | Une ou plusieurs valeurs pour ce signal. |
+| `signals[].values[].stringValue` | string | `"curious"` | Renseigné lorsque la `type` est une chaîne. Valeur catégorielle telle qu’une intention, un ton ou une expression/expression extraite(e) |
+| `signals[].values[].numberValue` | number | `0.71` | Renseigné lorsque le `type` est un nombre. Par exemple, un score de sentiment de `-1` à `1`, ou une intensité/ |
+| `signals[].values[].booleanValue` | booléen | `true` | Renseigné lorsque la `type` est booléenne. Un indicateur `true`/`false` |
+| `signals[].values[].confidence` | number | `0.9` | **Nouveau.** Confiance que le producteur attribue à cette valeur, de `0` à `1`. |
+| `signals[].values[].qualifiers[]` | tableau | `["important", "urgent"]` | Descripteurs supplémentaires pour cette valeur, similaires aux mots-clés, mais plus significatifs/ |
+| `signals[].values[].metadata[]` | tableau | Voir les paramètres ci-dessous | **Nouveau.** Métadonnées définies par le producteur pour cette valeur sous la forme de paires clé/valeur, par exemple contexte à propos du ML/agent qui a généré le signal/ |
+
++++
+
+
 
 ### Groupe de champs Informations sur l’agence
 
@@ -77,7 +294,7 @@ Le groupe de champs **[!UICONTROL Informations agentiques]** est un groupe de ch
 | `skills[].score` | number | `0.95` | Score résultant de la mise en correspondance de la compétence |
 | `skills[].failed` | booléen | `false` | Indicateur signalant l’échec de l’exécution de la compétence |
 | `skills[].errorReason` | string | `"timeout"` | Motif de l’échec de la compétence, lorsque `failed` est vrai |
-| `skills[].sequenceNumber` | entier | `1` | Augmentation monotone de l’index de cette compétence au sein d’une exécution d’agent unique, et non globale, car les sous-agents s’exécutent en parallèle. Les consommateurs commandent par `agentID`, puis par `sequenceNumber`, puis `timestamp` comme brise-égalité. Facultatif |
+| `skills[].sequenceNumber` | entier | `1` | Augmentation monotone de l’index de cet appel de compétence dans une seule exécution d’agent. Cet index n’est pas global car les sous-agents s’exécutent en parallèle. Les consommateurs commandent par `agentID`, puis par `sequenceNumber`, puis `timestamp` comme brise-égalité. Facultatif |
 | `skills[].timestamp` | chaîne (date-heure) | `"2026-09-11T00:03:15Z"` | Heure à laquelle la compétence a été invoquée, ISO 8601 UTC. Clé de classement utilisée après `sequenceNumber`. Les producteurs doivent toujours remplir ce champ |
 | `skills[].skillSource` | string | `"inline"` | Comment la définition de compétence a été diffusée au moment de l’exécution : `inline` (chargée en ligne dans le contexte) ou `deferred` (chargée à la demande) |
 | `skills[].executionContext` | string | `"inline"` | Où la compétence s’exécute par rapport à l’agent appelant : `inline` ou `forked` (s’exécute dans un contexte de sous-agent dupliqué) |
@@ -207,176 +424,6 @@ Pour implémenter des événements qui propagent le groupe de champs Information
 
 +++
 
-
-### Groupe de champs Événement de conversation
-
-Le groupe de champs **[!UICONTROL Événement de conversation]** est un groupe de champs obligatoire qui utilise l’objet `conversation`.
-
-L’objet de conversation capture les données pour :
-
-#### Conversation
-
-Un `conversationID` unique identifie une conversation. Par exemple : `conversationID = "conv-001"`. Le schéma prend également en charge `conversationName`. Nom lisible par l’utilisateur qui décrit le contexte global de la conversation, tel que : `France Geography Q&A`. Le nom de la conversation est généré automatiquement, mais vous pouvez le mettre à jour. Le nom de la conversation est également renseigné pour `signals[].name`.
-
-Le `conversationID` permet de regrouper tous les événements de rotation associés dans la même expérience de conversation.
-
-#### Tourner
-
-Un virage est un cycle d’interaction au sein d’une conversation.
-
-`turnID` Un `turnID` unique identifie un virage. Par exemple :
-
-`conversationID = "conv-001"`
-`turnID = "turn-001"`
-
-Les mêmes `conversationID` et `turnID` sont utilisés pour corréler l’invite, la réponse et le retour d’informations associés à ce virage. Cette corrélation fonctionne entre les enregistrements diffusés séparément ou qui se retrouvent dans différents jeux de données. Un `turnId` ne doit être unique que dans la même conversation, mais peut être réutilisé dans plusieurs conversations. Par exemple, vous pouvez utiliser les deux `turn-001` comme `turnID` dans les conversations avec `conversationID` `conv-001` et `conv-002`.
-
-
-#### Invite
-
-Une invite correspond à l’entrée envoyée à l’agent. Dans la plupart des scénarios client, cette entrée correspond à la question, à la requête, à l’instruction ou au message de l’utilisateur ou de l’utilisatrice.
-
-L&#39;invite utilise la représentation suivante : `conversation.prompt`
-
-Les champs d’invite importants sont les suivants :
-
-| Champ | Signification |
-|---|---|
-| `prompt.source` | Qui ou quoi a généré l’invite, généralement l’utilisateur final. |
-| `prompt.raw[]` | Un ou plusieurs segments de contenu brut. |
-| `prompt.raw[].text` | Texte d’invite ou lien vers le contenu (capture d’écran, par exemple). |
-| `prompt.raw[].purpose` | Objet du contenu, tel que l’entrée utilisateur ou le lien. |
-
-Une invite peut contenir plusieurs segments bruts. Par exemple, un utilisateur ou une utilisatrice saisit du texte et inclut une URL.
-
-* `Prompt`
-  * `"What is the capital of France"`
-  * `"https://example.com/france"`
-
-
-#### Réponse
-
-Une réponse correspond au contenu renvoyé par l’agent ou une autre partie répondant.
-
-`conversation.response` Un `responseID` unique représente la réponse.
-
-Les champs de réponse importants sont les suivants :
-
-| Champ | Signification |
-|---|---|
-| `response.source` | Qui ou quoi a produit la réponse. |
-| `response.raw[]` | Un ou plusieurs segments de contenu de réponse |
-| `response.raw[].text` | Texte ou contenu de la réponse. |
-| `response.raw[].purpose` | Objet du segment de contenu. |
-
-Les types de sources documentés sont les suivants :
-
-<!-- randy buck to provide additional details -->
-
-| Source | Signification |
-|---|----|
-| `bot` | Réponse automatisée de l’agent. |
-| `canned` | Réponse prédéfinie ou modélisée. |
-| `concierge` | Réponse de l’agent humain. |
-| `end-user` | Contenu généré par l’utilisateur humain, le cas échéant. |
-
-#### Commentaires
-
-Le retour d’informations est l’évaluation ou la réaction explicite de l’utilisateur ou de l’utilisatrice à l’interaction.
-
-La structure de rétroaction comprend : `conversation.feedback`.
-
-Exemples :
-
-* `feedback.raw[].text: "Great help"`
-* feedback.rating.score : 1
-* feedback.rating.classification : « Thumbs Up »
-* `feedback.rating.reasons[]: ["Accurate", "Quick response"]`
-
-La plage de notes documentée va de `-1.0` à `1.0`.
-
-Un événement de retour peut être représenté en tant qu’événement de retour uniquement à l’aide de : `eventType = "conversation.feedback"`.
-
-Lorsque la rétroaction s&#39;applique à un virage particulier, conservez les `conversationID` et `turnID` appropriés afin que le mélangeur de conversation puisse associer la rétroaction à l&#39;interaction pertinente.
-
-
-#### Signal
-
-Un signal est une observation analytique structurée du contenu de la conversation. Le service Signal fournit des signaux prêts à l’emploi. Aucune action n’est requise pour fournir des signaux, mais vous pouvez ajouter des signaux dans le cadre de l’intégration.
-
-<!-- randy buck to provide additional details -->
-
-Un signal possède les champs suivants.
-
-| Champ | Signification |
-|---|----|
-| `scope` | Plage d’entrée utilisée pour dériver le signal, telle que le virage ou la conversation en cours. |
-| `name` | Identifiant du signal, tel que les sujets, les modes, les tonalités ou le sentiment. Les noms de signal définis par le producteur sont également pris en charge. |
-| `type` | Type de valeur : chaîne, nombre ou valeur booléenne. |
-| `values[]` | Une ou plusieurs valeurs associées au signal. |
-| `stringValue` | Valeur de signal de chaîne, telle qu’une intention, une tonalité ou un objet. |
-| `numberValue` | Valeur de signal numérique, telle qu’un score de sentiment. |
-| `booleanValue` | Valeur de signal true/false. |
-| `confidence` | Facultatif confiance du producteur dans la valeur du signal, normalement entre 0 et 1. |
-| `qualifiers[]` | Descripteurs facultatifs qui ajoutent du contexte à une valeur de signal. |
-| `metadata[]` | Métadonnées clé/valeur définies par le producteur facultatives. |
-
-
-Le service d&#39;extraction de signaux renseigne l&#39;objet `signals` pour le jeu de données de signaux.
-
-Le conteneur de `signals[].attributes.{subjects,intents,tones,sentiment}` précédent est obsolète.
-
-#### Conversation
-
-Consultez ci-dessous les détails complets d’un objet de conversation.
-
-+++ Détails 
-
-| Chemin Du Champ (Notation Par Points) | Type | Exemple de valeur | Notes |
-|---|---|---|---|
-| `conversationID` | string | `"conv-001"` | Regroupe plusieurs tours ensemble |
-| `conversationName` | string | `"France Geography Q&A"` | **Nouveau.** Nom donné à une conversation représentant son contexte global |
-| `turnID` | string | `"turn-001"` | ID unique pour ce tour |
-| `prompt.source` | string | `"end-user"` | Source de l’invite, d’autres options peuvent inclure une valeur mise en cache, une valeur en conserve, etc. |
-| `prompt.raw[]` | tableau | Voir objet brut ci-dessous | Données d&#39;invite brutes |
-| `prompt.raw[].text` | string | `"What is the capital of France?"` | Contenu textuel réel |
-| `prompt.raw[].purpose` | string | `"User Input"` | Objectif de ce segment de texte |
-| `response.source` | string | `"bot"` | Source de la réponse |
-| `response.raw[]` | tableau | Voir objet brut ci-dessous | Données brutes de réponse |
-| `response.raw[].text` | string | `"The capital of France is Paris."` | Contenu du texte de réponse |
-| `response.raw[].purpose` | string | `"main"` | Objectif du segment de réponse. Les autres options peuvent inclure des liens, des images, etc. |
-| `feedback.source` | string | `"end-user"` | Source des retours |
-| `feedback.raw[]` | tableau | Voir objet brut ci-dessous | Données brutes des commentaires |
-| `feedback.raw[].text` | string | `"Great help"` | Texte du retour d’informations |
-| `feedback.raw[].purpose` | string | `"free-form text"` | Objectif du segment de commentaires. Les autres options peuvent inclure des captures d’écran, des médias, etc. |
-| `feedback.rating.score` | number | `1` | Score numérique de -1.0 à 1.0 |
-| `feedback.rating.classification` | string | `"Thumbs Up"` | Classification de notation |
-| `feedback.rating.reasons[]` | tableau | `["Accurate", "Quick response"]` | Tableau des raisons de l’évaluation |
-| `signals[]` | tableau | Voir l’objet de signal ci-dessous | Signaux dérivés basés sur cet événement et la conversation à ce jour. Chaque entrée est un signal nommé unique avec sa propre portée |
-| `signals[].scope` | string | `"turn"` | Portée des entrées à partir desquelles cet ensemble de signaux est dérivé (tour, conversation à ce jour, n derniers tours, retour) |
-| `signals[].attributes` | objet | Voir les attributs ci-dessous | **Obsolète.** Conteneur pour les attributs de signal. Chaque attribut est un objet contenant une ou plusieurs valeurs. Cela permet de répondre au besoin anticipé de prendre en charge la population d’informations ML/agent utilisées pour générer le signal. |
-| `signals[].attributes.subjects` | objet | Voir les sujets ci-dessous | **Obsolète.** Conteneur d&#39;objets |
-| `signals[].attributes.subjects.values[]` | tableau | Voir les valeurs de l’objet ci-dessous | **Obsolète.** Tableau de valeurs d’objet |
-| `signals[].attributes.subjects.values[].phrase` | string | `"product pricing"` | **Obsolète.** Expression ou mot clé extrait de l’entrée délimitée |
-| `signals[].attributes.subjects.values[].qualifiers[]` | tableau | `["important", "urgent"]` | **Obsolète.** Liste des qualificateurs de l’expression |
-| `signals[].attributes.intents` | objet | Voir les intentions ci-dessous | **Obsolète.** Conteneur d’intentions |
-| `signals[].attributes.intents.values[]` | tableau | `["make a purchase", "learn more"]` | **Obsolète.** Intentions dérivées de l’entrée étendue |
-| `signals[].attributes.tones` | objet | Voir les tons ci-dessous | **Obsolète.** Conteneur de tons |
-| `signals[].attributes.tones.values[]` | tableau | `["thrilled", "contemplative"]` | **Obsolète.** Tones dérivées de l’entrée étendue |
-| `signals[].attributes.sentiment` | objet | Voir le sentiment ci-dessous | **Obsolète.** conteneur de sentiment |
-| `signals[].attributes.sentiment.value` | number | `0.71` | **Obsolète.** Score de -1 (négatif) à 1 (positif) indiquant un sentiment |
-| `signals[].name` | string | `"sentiment"` | **Nouveau** (remplace le conteneur `attributes` obsolète). Identifiant de ce signal, par exemple « sujets », « intentions », « tonalités », « sentiment » ou tout nom défini par le producteur — les producteurs peuvent ajouter de nouveaux types de signaux sans modifier le schéma |
-| `signals[].type` | string | `"number"` | **Nouveau.** Type de données des valeurs de ce signal (`string`, `number` ou `boolean`) — indique aux consommateurs quel champ de valeur saisi est renseigné à chaque entrée de `values[]` |
-| `signals[].values[]` | tableau | Voir l’objet de valeurs ci-dessous | Une ou plusieurs valeurs pour ce signal |
-| `signals[].values[].stringValue` | string | `"curious"` | Renseigné lorsque la `type` est « chaîne » — une valeur catégorielle telle qu’une intention, un ton ou une expression extraite |
-| `signals[].values[].numberValue` | number | `0.71` | Renseigné lorsque `type` est « nombre » ; par exemple, un score de sentiment compris entre -1 et 1, ou une intensité |
-| `signals[].values[].booleanValue` | booléen | `true` | Renseigné lorsque `type` est « booléen » — indicateur true/false |
-| `signals[].values[].confidence` | number | `0.9` | **Nouveau.** Confiance que le producteur attribue à cette valeur, de 0 à 1 |
-| `signals[].values[].qualifiers[]` | tableau | `["important", "urgent"]` | Descripteurs supplémentaires pour cette valeur, similaires aux mots-clés, mais plus significatifs |
-| `signals[].values[].metadata[]` | tableau | Voir les paramètres ci-dessous | **Nouveau.** Métadonnées définies par le producteur pour cette valeur sous la forme de paires clé/valeur, par exemple le contexte à propos du ML/agent qui a généré le signal |
-
-+++
-
 ### Groupes de champs supplémentaires
 
 Vous pouvez ajouter des groupes de champs facultatifs au schéma que vous utilisez pour les jeux de données d’invite, de réponse et de commentaires. Par exemple :
@@ -396,37 +443,9 @@ Vous devez définir l’une des valeurs suivantes pour `eventType` (chaîne) pou
 
 | Valeur | Explication |
 |---|---|
-| `conversation.turn` | Tourner la conversation avec invite et réponse |
-| `conversation.recommendation` | Recommandation basée sur la conversation |
-| `conversation.feedback` | Événement de retour uniquement |
-
-
-### Type de source
-
-Vous devez définir l’une des valeurs suivantes pour `source` pour chaque objet `prompt`, `response` ou `feedback` d’un événement :
-
-| Valeur | Description |
-|---|---|
-| `end-user` | Entrée utilisateur |
-| `bot` | Réponse automatisée de l’agent |
-| `canned` | Réponse prédéfinie/modélisée |
-| `concierge` | Réponse de l&#39;agent humain |
-
-### Type d’objectif (texte brut)
-
-Vous devez définir l’une des valeurs suivantes pour l’attribut `purpose` sur tout élément de l’objet `raw` dans un objet `prompt`, `response` ou `feedback`.
-
-<!-- randy buck to provide details -->
-
-| Valeur | Description |
-|---|---|
-| `User Input` | Principal des entrées utilisateur |
-| `main` | Contenu de la réponse principale |
-| `advertisement` | Contenu promotionnel |
-| `citation` | Liens de référence/source |
-| `link` | Liens externes |
-| `image` | Références d’image |
-| `enum picker` | Sélection structurée de commentaires |
+| `conversation.turn` | Terminer la conversation avec l&#39;invite et la réponse. |
+| `conversation.recommendation` | Recommandation basée sur la conversation. |
+| `conversation.feedback` | Événement de retour de conversation uniquement. |
 
 
 ### Exemple
@@ -637,7 +656,25 @@ L’application ou le service de l’agent génère des identifiants qui restent
 
 ## Extraction de signal
 
-L&#39;extraction du signal a lieu après la collecte des données. Votre application ou service d&#39;agent ne renseigne pas de signaux supplémentaires.
+L&#39;extraction du signal a lieu après la collecte des données. Votre application ou service d&#39;agent peut renseigner des signaux supplémentaires.
+
+### Nom du signal
+
+Vous devez définir une valeur pour `signals[].name`. Toute valeur de chaîne est acceptable. Cependant, Adobe renseigne les noms suivants pendant le processus d’extraction du signal. Évitez d&#39;utiliser ces valeurs pour `name` les signaux que vous envoyez, car elles risquent d&#39;être remplacées.
+
+* `intents`
+* `sentiment`
+* `tones`
+* `topics`
+* `keywords`
+* `title`
+
+### Portée du signal
+
+Toute valeur de chaîne est acceptable. Cependant, Adobe remplit les portées suivantes pendant le processus d’extraction du signal. Évitez d&#39;utiliser ces valeurs pour `scope` les signaux que vous envoyez, car elles risquent d&#39;être remplacées.
+
+* `turn`
+* `feedback`
 
 +++ Exemple d’événement de virage avec signaux
 

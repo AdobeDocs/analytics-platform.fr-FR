@@ -8,38 +8,55 @@ autotag-review: '2026-05-19T09:53:49.596Z'
 TQID: 'https://experienceleague.adobe.com/Yt2CmGRpO6s8natf9s-KLsMBKHc-qdSQHvi3UyPyLgg'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: ae3aff40-b2f6-4df1-8c01-0b0720d1510f
+    internal-label: AI Tools
   - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
   - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
   - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+    internal-label: Data governance
 subfeature_v2:
   - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+    internal-label: Exports
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+    internal-label: Measurement
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 66a8a96da6710d20b01b9315fe87ba38c54c2511
+    internal-label: Privacy
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 3920
+source-wordcount: '3921'
 ht-degree: 48%
-
 ---
-
 # Mapper les colonnes de flux de données d’Adobe Analytics à Customer Journey Analytics
 
 {{release-limited-testing}}
 
-Un mappage 1:1 réel entre les colonnes de flux de données d’Adobe Analytics et de Customer Journey Analytics n’est pas possible. Les deux produits diffèrent fondamentalement et la mise en œuvre de chaque organisation peut varier considérablement.
+Un véritable mappage 1:1 entre les colonnes de flux de données Adobe Analytics et Customer Journey Analytics n’est pas possible. Les deux produits diffèrent fondamentalement et la mise en œuvre de chaque organisation peut varier considérablement.
 
 Cette référence permet aux ingénieurs de données d’évaluer les colonnes de flux de données d’Adobe Analytics et d’identifier les équivalents Customer Journey Analytics les plus proches pour leurs workflows.
 
@@ -63,7 +80,7 @@ Chargements des publicités multimédia
 
 +++**`aemassetid`**
 
-Variable à plusieurs valeurs correspondant aux ID de ressource (identificateurs globaux uniques) d’un ensemble de ressources Adobe Experience Manager Assets. Incrémente l’événement Impression.
+Variable à valeurs multiples correspondant aux ID de ressource (GUID) d’un ensemble de ressources Adobe Experience Manager. Incrémente l’événement Impression.
 
 {{cja-df-post}}
 
@@ -71,14 +88,14 @@ Variable à plusieurs valeurs correspondant aux ID de ressource (identificateurs
 
 +++**`aemassetsource`**
 
-Identifie la source de l’événement de ressources. Utilisée dans Adobe Experience Manager.
+Identifie la source de l’événement de ressource. Utilisée dans Adobe Experience Manager.
 
 {{cja-df-post}}
 +++
 
 +++**`aemclickedassetid`**
 
-ID de ressource d’une ressource Adobe Experience Manager. Incrémente l’événement Click.
+ID d’une ressource Adobe Experience Manager. Incrémente l’événement Click.
 
 {{cja-df-post}}
 
@@ -298,7 +315,7 @@ Taux de change au moment de la transaction. Adobe travaille en partenariat avec 
 
 +++**`customer_perspective`**
 
-Détermine si l’accès est un accès mobile en arrière-plan.
+Détermine si le hit est un hit mobile en arrière-plan.
 
 {{cja-df-post}}
 
@@ -310,7 +327,7 @@ Customer Journey Analytics ne dispose pas d’un concept natif de type d’évé
 
 +++**`cust_hit_time_gmt`**
 
-Suites de rapports avec horodatage uniquement. Date et l’heure envoyées avec l’accès, basées sur l’heure UNIX®.
+Suites de rapports avec date et heure uniquement. Date et heure envoyées avec le hit, sur base de l’heure UNIX®.
 
 Customer Journey Analytics ne propose pas le concept de suites de rapports horodatage par rapport aux suites de rapports autres qu’horodatage. Utilisez plutôt `xdm.timestamp` et ajustez les paramètres des composants selon vos besoins.
 
@@ -336,7 +353,7 @@ Codage en bits de la palette de couleurs. Utilisé dans le cadre du calcul de la
 
 +++**`daily_visitor`**
 
-Indicateur qui détermine si l’accès est un nouveau visiteur quotidien ou une nouvelle visiteuse quotidienne.
+Indicateur qui détermine si le hit est un nouveau visiteur quotidien ou une nouvelle visiteuse quotidienne.
 
 +++
 
@@ -374,7 +391,7 @@ Activez la **[!UICONTROL recherche réseau]** lors de la [configuration d’un f
 
 +++**`duplicated_from`**
 
-Utilisée uniquement dans les suites de rapports contenant les règles VISTA de la copie de l’accès. Indique la suite de rapports à partir de laquelle l’accès a été copié.
+Utilisée uniquement dans les suites de rapports contenant les règles VISTA de la copie du hit. Indique la suite de rapports à partir de laquelle le hit a été copié.
 
 {{cja-df-na}}
 
@@ -384,7 +401,7 @@ Cette colonne ne s’applique pas, car Customer Journey Analytics ne dispose pas
 
 +++**`duplicate_events`**
 
-Répertorie chaque événement compté comme double.
+Répertorie chaque événement comptabilisé comme doublon.
 
 {{cja-df-na}}
 
@@ -394,7 +411,7 @@ Customer Journey Analytics ne dispose pas d’un champ unique qui agit comme un 
 
 +++**`duplicate_purchase`**
 
-Indicateur signifiant que l’événement d’achat pour cet accès doit être ignoré, car il s’agit d’un double.
+Indicateur signifiant que l’événement d’achat pour ce hit doit être ignoré, car il s’agit d’un doublon.
 
 Bien qu’il n’y ait pas de traduction directe de cette colonne de flux de données Analytics, sa fonctionnalité d’action pour dédupliquer les achats existe toujours. Si vous utilisez le groupe de champs [[!UICONTROL Détails &#x200B;]](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/field-groups/event/commerce-details), vous pouvez définir les paramètres du composant [Déduplication des mesures](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication) où l’**[!UICONTROL ID de déduplication]** est `xdm.commerce.purchases.id`.
 
@@ -420,7 +437,7 @@ Variables personnalisées 1-250. Utilisé dans les dimensions eVar. Chaque orga
 
 +++**`event_list`**
 
-Liste séparée par des virgules d’identifiants numériques représentant les événements déclenchés lors de l’accès. Inclut les événements Commerce et les événements personnalisés 1-1000. Utilise la recherche de `event.tsv`.
+Liste d’identifiants numériques séparés par des virgules représentant les événements déclenchés lors du hit. Inclut les événements Commerce et les événements personnalisés 1-1000. Utilise la recherche de `event.tsv`.
 
 Cette colonne correspond probablement à des dizaines de mesures distinctes, selon votre implémentation. Adobe recommande le processus suivant pour mapper chaque mesure respective dans Customer Journey Analytics à sa valeur numérique représentée dans cette colonne de flux de données Analytics :
 
@@ -446,12 +463,12 @@ Certaines mesures peuvent utiliser la sérialisation des événements, ce qui pe
 * Si votre mesure déduplique par visite dans Adobe Analytics, vous pouvez définir la portée de la déduplication sur session dans les paramètres des composants de cette mesure.
 * Si votre mesure se déduplique par identifiant d’événement dans Adobe Analytics, il est probable que l’objet XDM de cette mesure contienne un champ `value` et `id`. Si votre schéma utilise le groupe de champs [[!UICONTROL Détails &#x200B;]](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/field-groups/event/commerce-details), ces mesures résident probablement dans ces champs XDM, que vous pouvez définir dans le champ **[!UICONTROL Identifiant de déduplication]** dans les paramètres des composants de la mesure :
 
-   * **Passages en caisse** : `xdm.commerce.checkouts.id`
-   * **Ajouts au panier** : `xdm.commerce.productListAdds.id`
-   * **Ouvertures de panier** : `xdm.commerce.productListOpens.id`
-   * **Retraits du panier** : `xdm.commerce.productListRemovals.id`
-   * **Vues du panier** : `xdm.commerce.productListViews.id`
-   * **Consultations de produit** : `xdm.commerce.productViews.id`
+  * **Passages en caisse** : `xdm.commerce.checkouts.id`
+  * **Ajouts au panier** : `xdm.commerce.productListAdds.id`
+  * **Ouvertures de panier** : `xdm.commerce.productListOpens.id`
+  * **Retraits du panier** : `xdm.commerce.productListRemovals.id`
+  * **Vues du panier** : `xdm.commerce.productListViews.id`
+  * **Consultations de produit** : `xdm.commerce.productViews.id`
 
 Si vous souhaitez dédupliquer la mesure Commandes , reportez-vous à la section `duplicate_purchase`.
 
@@ -459,7 +476,7 @@ Si vous souhaitez dédupliquer la mesure Commandes , reportez-vous à la section
 
 +++**`exclude_hit`**
 
-Indicateur qui détermine si l’accès est exclu de la création de rapports. La colonne `visit_num` nʼest pas incrémentée pour les accès exclus.
+Indicateur qui détermine si le hit est exclu de la création de rapports. La colonne `visit_num` nʼest pas incrémentée pour les accès exclus.
 
 Customer Journey Analytics ne respecte pas les « accès exclus » prêts à l’emploi. Cependant, vous pouvez recréer cette fonctionnalité si vous disposez d’un champ XDM qui signale certains accès à exclure :
 
@@ -474,7 +491,7 @@ Les accès exclus n’existent plus dans les rapports Customer Journey Analytics
 
 +++**`first_hit_pagename`**
 
-La dimension d’origine Page d’entrée . Le nom de la page d’entrée d’origine du visiteur.
+La dimension d’origine Page d’entrée . Nom de la page d’accès d’origine du visiteur.
 
 +++
 
@@ -506,7 +523,7 @@ Identifiant numérique représentant le type de référent du tout premier réf�
 
 +++**`first_hit_time_gmt`**
 
-Date et heure du tout premier accès du visiteur ou de la visiteuse (heure UNIX®).
+Date et heure du tout premier hit du visiteur ou de la visiteuse (heure UNIX®).
 
 +++
 
@@ -542,13 +559,13 @@ Code postal d’où provient l’accès, basé sur l’adresse IP. Permet de ren
 
 +++**`hitid_high`**
 
-Utilisée en combinaison avec `hitid_low` pour identifier un accès.
+Utilisée en combinaison avec `hitid_low` pour identifier un hit.
 
 +++
 
 +++**`hitid_low`**
 
-Utilisée en combinaison avec `hitid_high` pour identifier un accès.
+Utilisée en combinaison avec `hitid_high` pour identifier un hit.
 
 +++
 
@@ -560,13 +577,13 @@ Indique la source de l’accès. Les sources 1 et 2 sont facturées. <br>1 : dem
 
 +++**`hit_time_gmt`**
 
-Date et l’heure des serveurs de collecte de données Adobe ayant reçu l’accès, basé sur l’heure UNIX®.
+Date et l’heure des serveurs de collecte de données Adobe ayant reçu le hit, basé sur l’heure UNIX®.
 
 +++
 
 +++**`hourly_visitor`**
 
-Indicateur qui détermine si l’accès est un nouveau visiteur ou une nouvelle visiteuse horaire.
+Indicateur qui détermine si le hit est un nouveau visiteur ou une nouvelle visiteuse horaire.
 
 +++
 
@@ -694,7 +711,7 @@ Utilisé dans le connecteur de données Aptelignent. L’identifiant de plantage
 
 +++**`mobileappstoreobjectid`**
 
-Utilisé dans le connecteur de données [!DNL Appfigures]. Identifiant de l’objet de la boutique d’applications.
+Utilisé dans le connecteur de données [!DNL Appfigures]. Identifiant de l’objet l’App Store.
 
 +++
 
@@ -718,13 +735,13 @@ Proximité du relais Mobile Services
 
 +++**`mobilebeaconuuid`**
 
-UUID du relais Mobile Services
+UUID de la balise Mobile Services
 
 +++
 
 +++**`mobilecampaigncontent`**
 
-Le nom ou l’identifiant du contenu qui a affiché le lien. Renseigné par l’acquisition des applications mobiles.
+Le nom ou l’identifiant du contenu qui a affiché le lien. Renseigné via l’acquisition d’applications mobiles.
 
 {{cja-df-post}}
 
@@ -732,7 +749,7 @@ Le nom ou l’identifiant du contenu qui a affiché le lien. Renseigné par l’
 
 +++**`mobilecampaignmedium`**
 
-Support marketing, une bannière ou un courrier électronique par exemple. Renseigné par l’acquisition des applications mobiles.
+Support marketing ; une bannière ou un e-mail, par exemple. Renseigné via l’acquisition d’applications mobiles.
 
 {{cja-df-post}}
 
@@ -740,7 +757,7 @@ Support marketing, une bannière ou un courrier électronique par exemple. Rense
 
 +++**`mobilecampaignname`**
 
-Nom de la campagne, également stocké dans la variable de campagne. Renseigné par l’acquisition des applications mobiles.
+Nom de la campagne, également stocké dans la variable de campagne. Renseigné via l’acquisition d’applications mobiles.
 
 {{cja-df-post}}
 
@@ -748,7 +765,7 @@ Nom de la campagne, également stocké dans la variable de campagne. Renseigné 
 
 +++**`mobilecampaignsource`**
 
-Référent original, comme la newsletter ou les médias sociaux. Renseigné par l’acquisition des applications mobiles.
+Référent original, comme une newsletter ou des réseaux sociaux. Renseigné via l’acquisition d’applications mobiles.
 
 {{cja-df-post}}
 
@@ -756,7 +773,7 @@ Référent original, comme la newsletter ou les médias sociaux. Renseigné par 
 
 +++**`mobilecampaignterm`**
 
-Mots-clés ou autres termes payés dont vous souhaitez effectuer le suivi avec cette acquisition. Renseigné par l’acquisition des applications mobiles.
+Mots-clés ou autres termes payés dont vous souhaitez effectuer le suivi avec cette acquisition. Renseigné via l’acquisition d’applications mobiles.
 
 {{cja-df-post}}
 
@@ -830,7 +847,7 @@ Est incrémentée d’une unité chaque fois que l’application mobile est lanc
 
 +++**`mobilemessagebuttonname`**
 
-Collecté à partir de la variable des données de contexte `a.message.button.id`. Utilisé pour la messagerie au sein de l’application afin d’identifier le bouton qui a fermé le message.
+Collecté à partir de la variable des données de contexte `a.message.button.id`. Utilisé pour la messagerie in-app afin d’identifier le bouton qui a fermé le message.
 
 {{cja-df-post}}
 
@@ -854,7 +871,7 @@ Message en ligne dans l’application
 
 +++**`mobilemessagepushoptin`**
 
-Collecté à partir de la variable des données de contexte `a.push.optin`. Définissez cette valeur sur « true » lorsque l’utilisateur s’inscrit à la messagerie push ; dans le cas contraire, la valeur qui apparaît est « false ».
+Collecté à partir de la variable des données de contexte `a.push.optin`. La valeur est définie sur « vrai » lorsque l’utilisateur accepte de recevoir des notifications push ; dans le cas contraire, la valeur est « faux ».
 
 {{cja-df-post}}
 
@@ -862,7 +879,7 @@ Collecté à partir de la variable des données de contexte `a.push.optin`. Déf
 
 +++**`mobilemessagepushpayloadid`**
 
-Collecté à partir de la variable des données de contexte `a.push.payloadid`. Utilisé comme identifiant de paiement dans la messagerie push.
+Collecté à partir de la variable des données de contexte `a.push.payloadid`. Utilisé dans la messagerie push comme identifiant de payload.
 
 {{cja-df-post}}
 
@@ -890,13 +907,13 @@ Collecté à partir de la variable des données de contexte `a.loc.category`. D�
 
 +++**`mobileplaceid`**
 
-Collecté à partir de la variable des données de contexte `a.loc.id`. Identifiant d’un point ciblé donné.
+Collecté à partir de la variable des données de contexte `a.loc.id`. Identifiant d’un point d’intérêt donné.
 
 +++
 
 +++**`mobilepushoptin`**
 
-Abonnement push de Mobile Services
+Opt-in push de Mobile Services
 
 {{cja-df-post}}
 
@@ -971,7 +988,7 @@ Valeurs de variable de liste. Contient une liste délimitée de valeurs personna
 
 +++**`mvvar1_instances`** - **`mvvar3_instances`**
 
-Les valeurs de la variable de liste qui ont été définies sur l’accès actuel. Remplace le délimiteur d’origine par `--**--`. Les colonnes `post` ne contiennent généralement pas de données.
+Les valeurs de la variable de liste qui ont été définies sur le hit actuel. Remplace le délimiteur d’origine par `--**--`. Les colonnes `post` ne contiennent généralement pas de données.
 
 {{cja-df-post}}
 
@@ -979,7 +996,7 @@ Les valeurs de la variable de liste qui ont été définies sur l’accès actue
 
 +++**`new_visit`**
 
-Indicateur qui détermine si l’accès actif est une nouvelle visite. Valeur définie par Adobe après 30 minutes d’inactivité au niveau de la visite.
+Indicateur qui détermine si le hit actif est une nouvelle visite. Valeur définie par Adobe après 30 minutes d’inactivité au niveau de la visite.
 
 +++
 
@@ -1017,7 +1034,7 @@ Similaire à `pagename`, sauf qu’il ne retourne pas à `page_url`. Seule la co
 
 +++**`page_event`**
 
-Le type d’accès qui est envoyé dans la demande d’image (accès standard, lien de téléchargement, lien personnalisé, lien de sortie).
+Le type de hit qui est envoyé dans la demande d’image (hit standard, lien de téléchargement, lien personnalisé, lien de sortie).
 
 {{cja-df-post}}
 
@@ -1027,7 +1044,7 @@ Le type d’accès qui est envoyé dans la demande d’image (accès standard, l
 
 +++**`page_event_var1`**
 
-Uniquement utilisée dans les demandes d’image de suivi des liens. URL du lien de téléchargement, de sortie ou personnalisé sur lequel a cliqué l’utilisateur.
+Uniquement utilisée dans les demandes d’image de suivi des liens. URL du lien de téléchargement, du lien de sortie ou du lien personnalisé sur lequel l’utilisateur a cliqué.
 
 {{cja-df-post}}
 
@@ -1059,7 +1076,7 @@ La dimension Pages introuvables , généralement utilisée pour les pages 404.
 
 +++**`paid_search`**
 
-Indicateur qui détermine si l’accès correspond à la détection des référencements payants.
+Indicateur qui détermine si le hit correspond à la détection des référencements payants.
 
 +++
 
@@ -1073,7 +1090,7 @@ Utilisé dans la dimension Prise en charge des cookies persistants . Indique si 
 
 +++**`pointofinterest`**
 
-Nom du point ciblé Mobile Services
+Nom du point d’intérêt Mobile Services.
 
 {{cja-df-post}}
 
@@ -1081,7 +1098,7 @@ Nom du point ciblé Mobile Services
 
 +++**`pointofinterestdistance`**
 
-Distance du centre du point ciblé Mobile Services
+Distance par rapport au centre du point d’intérêt (Mobile Services)
 
 {{cja-df-post}}
 
@@ -1115,7 +1132,7 @@ Identifiant unique pour un achat, tel qu’il est défini à l’aide de la vari
 
 +++**`quarterly_visitor`**
 
-Indicateur qui détermine si l’accès est un nouveau visiteur trimestriel ou une nouvelle visiteuse trimestrielle.
+Indicateur qui détermine si le hit est un nouveau visiteur trimestriel ou une nouvelle visiteuse trimestrielle.
 
 +++
 
@@ -1160,13 +1177,13 @@ Identifiant numérique représentant le moteur de recherche qui a renvoyé le vi
 
 +++**`search_page_num`**
 
-Variable utilisée par la dimension Classification globale des pages de recherche. Indique sur quelle page de résultats de recherche votre site est apparu avant que l’utilisateur ou l’utilisatrice ne clique sur votre site.
+Utilisé par la dimension Classement de toutes les pages de recherche. Indique sur quelle page de résultats de recherche votre site est apparu avant que l’utilisateur ou l’utilisatrice ne clique sur votre site.
 
 +++
 
 +++**`secondary_hit`**
 
-Indicateur qui détermine si l’accès est un accès secondaire. Normalement, l’indicateur provient du balisage multisuite et des règles VISTA qui copient les accès.
+Indicateur qui détermine si le hit est un hit secondaire. Normalement, l’indicateur provient du balisage multisuite et des règles VISTA qui copient les hits.
 
 +++
 
@@ -1178,7 +1195,7 @@ ID Source
 
 +++**`stats_server`**
 
-Inutilisable. Serveur interne d’Adobe qui a traité l’accès.
+Inutilisable. Serveur interne d’Adobe qui a traité le hit.
 
 +++
 
@@ -1206,7 +1223,7 @@ Utilisée dans les intégrations Adobe Target. Représente tous les tests actue
 
 +++**`tnt_action`**
 
-Utilisée dans les intégrations Adobe Target. Représente tous les tests pour lesquels lʼaccès est qualifié.
+Utilisée dans les intégrations Adobe Target. Représente tous les tests pour lesquels le hit est qualifié.
 
 {{cja-df-post}}
 
@@ -1244,13 +1261,13 @@ Heure locale pour le visiteur. Le format est : `M/D/YYYY HH:MM:SS Month (0-11, 
 
 +++**`userid`**
 
-Inutilisable. Identifiant numérique pour l’identifiant de suite de rapports. Utilisez `username` à la place.
+Inutilisable. Identifiant numérique de la suite de rapports. Utilisez `username` à la place.
 
 +++
 
 +++**`username`**
 
-Identifiant de suite de rapports pour l’accès.
+Identifiant de suite de rapports pour le hit.
 
 +++
 
@@ -1660,13 +1677,13 @@ Utilisé en combinaison avec `visid_high` pour identifier un visiteur ou une vis
 
 +++**`visid_new`**
 
-Indicateur pour identifier si l’accès contient un identifiant visiteur ou visiteuse nouvellement généré.
+Indicateur pour identifier si le hit contient un identifiant visiteur nouvellement généré.
 
 +++
 
 +++**`visid_timestamp`**
 
-Si l’identifiant visiteur ou visiteuse a été récemment généré, fournit la date et l’heure (en heure UNIX®) de la génération de l’identifiant.
+Si l’identifiant visiteur a été récemment généré, indique la date et l’heure (en temps UNIX®) de la génération de cet identifiant.
 
 +++
 
@@ -1712,7 +1729,7 @@ Basé sur la colonne `visit_referrer`. Le premier domaine référent de la visit
 
 +++**`visit_ref_type`**
 
-Identifiant numérique, représentant le type de référent du tout premier référent de la visite.
+Identifiant numérique représentant le type du premier référent de la visite.
 
 {{cja-df-lookup}}
 
@@ -1740,19 +1757,19 @@ URL du premier accès de la visite.
 
 +++**`visit_start_time_gmt`**
 
-Date et heure (en heure UNIX®) du premier accès de la visite.
+Date et heure (en heure UNIX®) du premier hit de la visite.
 
 +++
 
 +++**`weekly_visitor`**
 
-Indicateur qui détermine si l’accès est un nouveau visiteur ou une nouvelle visiteuse hebdomadaire.
+Indicateur qui détermine si le hit est un nouveau visiteur ou une nouvelle visiteuse hebdomadaire.
 
 +++
 
 +++**`yearly_visitor`**
 
-Indicateur qui détermine si l’accès est un nouveau visiteur annuel ou une nouvelle visiteuse annuelle.
+Indicateur qui détermine si le hit est un nouveau visiteur annuel ou une nouvelle visiteuse annuelle.
 
 +++
 

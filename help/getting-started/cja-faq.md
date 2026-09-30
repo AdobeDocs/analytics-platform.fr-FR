@@ -1,37 +1,53 @@
 ---
 title: Customer Journey Analytics - FAQ
-description: Customer Journey Analytics - Questions fréquentes.
+description: Questions fréquentes sur Customer Journey Analytics
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-TQID: https://experienceleague.adobe.com/HdeLAq13nYEHMV5ns75gTgux9KKRE0on5TiMRw6ZHoo
+TQID: 'https://experienceleague.adobe.com/HdeLAq13nYEHMV5ns75gTgux9KKRE0on5TiMRw6ZHoo'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+    internal-label: Audiences
   - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
+  - id: f21d8c43-b886-433b-93ea-5982cbfc16b7
+    internal-label: FAQ
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 5771edbe491ceeeaf487dd5eeb2ffb67ef880f96
+    internal-label: Personalization
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 2320
+source-wordcount: '2323'
 ht-degree: 95%
-
 ---
-
 # Questions fréquentes
 
 Adobe Customer Journey Analytics est le produit d’analyse de nouvelle génération. L’article ci-dessous fournit les réponses aux questions fréquentes sur Customer Journey Analytics. Pour plus d’informations, consultez [Support pour les fonctionnalités Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md).
@@ -92,7 +108,7 @@ Lorsque l’option est activée pour la première fois, Adobe fournit un renvoi 
 
 +++**Quel est le comportement attendu des enregistrements de jeu de données de profil non assemblés ?**
 
-**Exemple de scénario** : vous joignez deux jeux de données dans une connexion Customer Journey Analytics en utilisant `CRMid` comme ID de personne. L’un de ces jeux de données est un jeu de données d’événement Web incluant `CRMid` dans tous les enregistrements. L’autre jeu de données est un jeu de données de profil CRM. 40 % du jeu de données CRM inclut `CRMid` dans le jeu de données d’événement Web. Les 60 % restants sont absents du jeu de données d’événement Web. Ces enregistrements apparaissent-ils dans les rapports d’Analysis Workspace ?<p> **Réponse** : les lignes de profil sans événement associé sont stockées dans Customer Journey Analytics. Cependant, vous ne pouvez pas les consulter dans Analysis Workspace tant qu’un événement lié à cet ID n’apparaît pas.
+**Exemple de scénario** : vous joignez deux jeux de données dans une connexion Customer Journey Analytics en utilisant `CRMid` comme ID de personne. L’un de ces jeux de données est un jeu de données d’événement Web incluant `CRMid` dans tous les enregistrements. L’autre jeu de données est un jeu de données de profil CRM. 40 % du jeu de données CRM inclut `CRMid` dans le jeu de données d’événement Web. Les 60 % restants sont absents du jeu de données d’événement Web. Ces enregistrements apparaissent-ils dans les rapports d’Analysis Workspace ?<p> **Réponse** : les lignes de profil sans événement associé sont stockées dans Customer Journey Analytics. Cependant, vous ne pouvez pas les consulter dans Analysis Workspace tant qu’un événement lié à cet ID n’apparaît pas.
 
 +++
 
@@ -142,8 +158,8 @@ Non, vous pouvez utiliser n’importe quel ID, y compris le hachage d’un ID cl
 
 +++**Quelles sont les limites en matière dʼingestion de dates/horodatages passés ou futurs dans les jeux de données dʼévénement Customer Journey Analytics ?**
 
-* Concernant les dates/horodatages passés : les données dʼévénement datant de dix ans maximum.
-* Concernant les dates/horodatages futurs : les données dʼévénement (prédictives) jusquʼà un mois dans le futur.
+* Concernant les dates et heures passées : données d’événement jusqu’à dix ans dans le passé.
+* Concernant les dates et heures futures : données d’événement (prédictives) jusqu’à un mois dans le futur.
 
 +++
 
@@ -160,12 +176,12 @@ Non, vous pouvez utiliser n’importe quel ID, y compris le hachage d’un ID cl
 
 Adobe a récemment modifié la manière dont il traite les données dans Customer Journey Analytics :
 
-* Les données d’événement pour la journée actuelle sont diffusées en continu sous forme de données dynamiques. Toutes les données dont l’heure de l’événement est antérieure à 11:59:59 pm (23:59:59) le jour précédent sont traitées comme des renvois.
+* Les données dʼévénement pour le jour actuel sont diffusées en continu sous forme de données dynamiques. Toutes les données dont l’heure de l’événement est antérieure à 11:59:59 pm (23:59:59) le jour précédent sont traitées comme des renvois.
 * Toutes les données d’événement de plus de 24 heures (même si elles se trouvent dans le même lot que les données plus récentes) sont considérées comme un renvoi et sont ingérées avec une priorité inférieure.
 
 ## &#x200B;5. Définir un intervalle variable pour la conservation des données [!UICONTROL Connexion] {#data-retention}
 
-Le paramètre [**[!UICONTROL Activer la fenêtre dynamique de données &#x200B;]**](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=fr#create-connection) vous permet de définir la conservation des données Customer Journey Analytics sous la forme d’une fenêtre dynamique en mois (trois mois, six mois, etc.). Il est défini au niveau de la [!UICONTROL connexion] et non au niveau du [!UICONTROL jeu de données]. La conservation des données est basée sur les horodatages des jeux de données dʼévénement et sʼapplique uniquement aux jeux de données dʼévénement. Aucun paramètre de rétention des données nʼexiste pour les jeux de données de profil ou de recherche, car il nʼexiste aucun horodatage applicable.
+Le paramètre [**[!UICONTROL Activer la fenêtre dynamique de données &#x200B;]**](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=fr#create-connection) vous permet de définir la conservation des données Customer Journey Analytics sous la forme d’une fenêtre dynamique en mois (trois mois, six mois, etc.). Il est défini au niveau de la [!UICONTROL connexion] et non au niveau du [!UICONTROL jeu de données]. La conservation des données est basée sur les horodatages des jeux de données dʼévénement et sʼapplique uniquement aux jeux de données dʼévénement. Il n’existe aucun paramètre de conservation des données pour les jeux de données de profil ou de recherche, car aucun horodatage ne leur est applicable.
 
 Lʼavantage principal est que vous ne stockez ou ne créez des rapports que sur les données applicables et utiles, et supprimez les données plus anciennes qui ne sont plus utiles. Elle vous aide à rester dans les limites de votre contrat et réduit le risque de surcoût.
 
@@ -206,7 +222,7 @@ Si vous prévoyez d’ingérer des données Adobe Analytics par l’intermédia
 
 ## &#x200B;8. [!UICONTROL Composants &#x200B;]
 
-+++**Puis-je partager/publier [!UICONTROL audiences] de [!DNL Customer Journey Analytics] vers Experience Platform Real-Time CDP ou d’autres applications d’entreprise CX ?**
++++**Puis-je partager/publier des [!UICONTROL audiences] de [!DNL Customer Journey Analytics] vers Experience Platform Real-Time CDP ou d’autres applications CX Enterprise ?**
 
 Vous pouvez [créer et publier des audiences](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-components/audiences/publish) découvertes dans Customer Journey Analytics dans le profil client en temps réel d’Adobe Experience Platform pour le ciblage et la personnalisation des clientes et clients.
 
@@ -267,7 +283,7 @@ Découvrez-en plus sur les [implications de la suppression du jeu de données et
 
 ## &#x200B;12. Collecte de données régionale
 
-Adobe CX Enterprise utilise la collecte de données régionale (RDC) afin que les interactions entre vos visiteurs et les solutions Adobe et non Adobe se produisent le plus près possible de vos visiteurs. Une fois que les données sont collectées à l’échelle régionale dans un centre de collecte de données (DCC, également appelé site Edge, qui fait partie de Platform Edge Network), elles sont transférées au moyen d’une connexion sécurisée aux solutions appropriées, en fonction de la configuration de votre train de données et/ou du transfert d’événement.
+Adobe CX Enterprise utilise la collecte de données régionale (RDC) afin que les interactions entre vos visiteurs et vos solutions Adobe et non Adobe se produisent le plus près possible de vos visiteurs. Une fois que les données sont collectées à l’échelle régionale dans un centre de collecte de données (DCC, également appelé site Edge, qui fait partie de Platform Edge Network), elles sont transférées au moyen d’une connexion sécurisée aux solutions appropriées, en fonction de la configuration de votre train de données et/ou du transfert d’événement.
 
 ![Flux de données utilisant les réseaux Edge](https://experienceleague.adobe.com/docs/experience-platform/assets/collection.png)
 
@@ -275,7 +291,7 @@ Le processus de collecte de données régionale suit les étapes ci-après :
 
 1. Le DNS résout automatiquement le nom d’hôte de la collecte à l’adresse IP du centre de collecte de données le plus proche du visiteur ou de la visiteuse.
 1. Le visiteur ou la visiteuse envoie les données à cet emplacement.
-1. Les données sont immédiatement transférées au moyen d’une connexion sécurisée aux solutions définies par la configuration du transfert de données ou d’événement.
+1. Les données sont immédiatement transmises, via une connexion sécurisée, aux solutions définies par la configuration du transfert d’événement ou de train de données.
 
 L’utilisation de la collecte de données régionale présente plusieurs avantages :
 
@@ -296,7 +312,7 @@ La collecte de données régionale inclut actuellement les emplacements suivants
 
 Lorsque les données atteignent le centre de données régional, la configuration du train de données détermine la manière dont les données sont acheminées plus loin.
 
-Customer Journey Analytics nécessite des jeux de données d’Adobe Experience Platform. Par conséquent, votre configuration de transfert de flux de données/d’événement nécessite que le service Adobe Experience Platform achemine les données du centre de données régional vers le centre de données où se trouve votre instance Adobe Experience Platform. Customer Journey Analytics et ses services et son infrastructure de prise en charge sont déployés sur cette même instance Adobe Experience Platform.
+Customer Journey Analytics nécessite des jeux de données provenant d’Adobe Experience Platform. Par conséquent, votre configuration de transfert d’événement ou de train de données a besoin du service Adobe Experience Platform pour acheminer les données du centre de données régional vers le centre de données où se trouve votre instance Adobe Experience Platform. Customer Journey Analytics et ses services et son infrastructure de prise en charge sont déployés sur cette même instance Adobe Experience Platform.
 
 
 Voir [Vue d’ensemble de la collecte de données](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html?lang=fr) pour plus d’informations sur le processus de collecte de données au-delà du réseau Adobe Experience Platform Edge et de ses centres de données régionaux.

@@ -5,29 +5,40 @@ role: Developer, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
 feature: Troubleshooting
-keywords: service de requête ; Service de requête ; syntaxe sql
-TQID: https://experienceleague.adobe.com/WT2Phz0aaiJ0Jp403fr6byx9QkncKjvRJpxl9yxPKLE
+keywords: service de requête;Service de requête;syntaxe SQL
+TQID: 'https://experienceleague.adobe.com/WT2Phz0aaiJ0Jp403fr6byx9QkncKjvRJpxl9yxPKLE'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: cbc7b6aa-4963-4ebf-9bb9-963336957623
+    internal-label: Troubleshooting
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Troubleshooting
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 770
+source-wordcount: '770'
 ht-degree: 100%
-
 ---
-
 # Comparer les données du connecteur source Analytics à Adobe Analytics
 
 Suite à lʼadoption de Customer Journey Analytics par votre organisation, vous pouvez constater certaines différences entre les données Adobe Analytics et Customer Journey Analytics. Ces différences sont normales et peuvent se produire pour plusieurs raisons. Customer Journey Analytics est conçu pour vous permettre de remédier à certaines des limites imposées à vos données dans Adobe Analytics. Cette flexibilité peut entraîner des différences dans la façon dont Customer Journey Analytics interprète les données. Utilisez cet article pour comprendre les différences potentielles entre la manière dont Customer Journey Analytics et Adobe Analytics traitent vos données.
@@ -40,7 +51,7 @@ Les raisons suivantes sont celles pour lesquelles les données peuvent différer
 
 * **Jeux de données ou suites de rapports différents** : assurez-vous que la suite de rapports dans Adobe Analytics et la suite de rapports à partir de laquelle le connecteur source obtient des données sont identiques.
 * **Paramètres du calendrier** : les suites de rapports dans Adobe Analytics contiennent un fuseau horaire et d’autres paramètres de calendrier que vous pouvez configurer. De même, les vues de données dans Customer Journey Analytics comportent un paramètre distinct que vous pouvez contrôler. Assurez-vous que ces paramètres correspondent entre les produits si vous souhaitez la parité.
-* **Jeux de données supplémentaires** : Customer Journey Analytics permet d’inclure plusieurs jeux de données dans une seule connexion. Ces différences incluent des jeux de données d’événement, de profil ou de recherche supplémentaires. Cette fonctionnalité constitue un facteur de différenciation essentiel entre Adobe Analytics et Customer Journey Analytics, permettant d’insérer des informations dans des données cross-canal.
+* **Jeux de données supplémentaires** : Customer Journey Analytics permet d’inclure plusieurs jeux de données dans une seule connexion. Ces différences incluent des jeux de données d’événement, de profil ou de recherche supplémentaires. Cette fonctionnalité constitue un facteur de différenciation clé entre Adobe Analytics et Customer Journey Analytics, car elle permet d’obtenir des insights sur les données cross-canal.
 * **Jeux de données groupés** : Adobe permet d’analyser les ID de personne entre deux jeux de données, ce qui entraîne la création d’un nouveau jeu de données contenant des ID groupés. Ces [jeux de données groupés](/help/stitching/overview.md) contiennent des données supplémentaires, au-delà de ce qu’offre une suite de rapports Adobe Analytics.
 * **Sources de données** : Customer Journey Analytics n’inclut aucun type de [Sources de données](https://experienceleague.adobe.com/fr/docs/analytics/import/data-sources/overview) chargé dans une suite de rapports Adobe Analytics, et notamment aucune source de données de résumé ou source de données d’ID de transaction.
 * **Paramètres de dimension et de mesure** : dans une vue de données, chaque dimension et mesure contient ses propres paramètres, modifiables par votre organisation. Ces modifications s’appliquent au moment de l’exécution du rapport, et donc de manière rétroactive. Les paramètres de dimension et de mesures d’Adobe Analytics modifient la manière dont les données sont collectées, ce qui permet d’appliquer ces modifications à partir de ce moment-là. Si vous avez modifié les paramètres des composants dans l’un des produits, cela peut créer des différences en matière de rapports. Si vous vous concentrez sur une dimension spécifique, assurez-vous que les paramètres d’attribution et de persistance correspondent entre Adobe Analytics et Customer Journey Analytics.
@@ -73,8 +84,8 @@ Si tous les paramètres ci-dessus semblent similaires et que vous souhaitez au m
 1. Dans les [Flux de données](https://experienceleague.adobe.com/fr/docs/analytics/export/analytics-data-feed/data-feed-overview) d’Adobe Analytics, générez des fichiers de flux pour la période souhaitée. Comptez le nombre de lignes dans chaque fichier, en identifiant et en excluant les lignes suivantes :
 
    * `exclude_hit` n’est pas `0` (données exclues d’Analysis Workspace dans les deux produits)
-   * `hit_source` est `0`, `3`, `5`, `7`, `8`, `9` ou `10` (sources de données et autres données hors accès)
-   * `page_event` est `53` ou `63` (accès persistants aux médias en streaming)
+   * `hit_source` est `0`, `3`, `5`, `7`, `8`, `9` ou `10` (sources de données et autres données hors hit)
+   * `page_event` est `53` ou `63` (hits persistants aux médias en streaming)
 
    Les lignes correspondant à l’un des critères ci-dessus sont exclues du workflow d’ingestion du connecteur source Analytics et doivent donc également être exclues lors du comptage des lignes des flux de données.
 

@@ -5,27 +5,37 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: cb5a4f98-9869-4410-8df2-b2f2c1ee8c57
 role: Admin
-TQID: https://experienceleague.adobe.com/cyNvsdN-bSBY2VqCdxAZvWhyTx8--sOUMifbuYrZKTM
+TQID: 'https://experienceleague.adobe.com/cyNvsdN-bSBY2VqCdxAZvWhyTx8--sOUMifbuYrZKTM'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+    internal-label: Audiences
   - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
+  - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+    internal-label: Use cases
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Data management
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1680
+source-wordcount: '1680'
 ht-degree: 14%
-
 ---
-
 # Ingérer et utiliser des audiences Experience Platform
 
 Ce cas pratique explore une solution intermédiaire pour ingérer des audiences Experience Platform dans Customer Journey Analytics. Ces audiences peuvent avoir été créées dans le créateur de segments d’Experience Platform, Adobe Audience Manager ou d’autres outils et sont stockées dans le profil client en temps réel. Les audiences se composent d’un ensemble d’identifiants de profil, ainsi que des attributs, événements et autres éléments applicables. Vous souhaitez importer ces données d’audience dans Customer Journey Analytics pour une analyse plus approfondie.
@@ -36,7 +46,7 @@ Ce cas pratique explore une solution intermédiaire pour ingérer des audiences 
 * Accès à la création et à la gestion d’Experience Platform [schémas](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/home) et [jeux de données](https://experienceleague.adobe.com/fr/docs/experience-platform/catalog/datasets/overview).
 * Accès à [Experience Platform Query Service](https://experienceleague.adobe.com/fr/docs/experience-platform/query/home) (et possibilité d’écrire du code SQL).
 * Accès à un outil qui peut effectuer certaines transformations des données.
-* Accédez à Customer Journey Analytics. Vous devez être un administrateur de produit [&#128279;](/help/technotes/access-control.md) pour créer et modifier des connexions Customer Journey Analytics et des vues de données.
+* Accès à Customer Journey Analytics. Vous devez être un administrateur de produit [&#128279;](/help/technotes/access-control.md) pour créer et modifier des connexions Customer Journey Analytics et des vues de données.
 * [Authentification et accès aux API Experience Platform (API Catalog Service et API Segmentation Service)](https://experienceleague.adobe.com/fr/docs/experience-platform/landing/platform-apis/api-authentication). Vous devez créer un projet dans Developer Console de l’entreprise et de la sandbox et vous assurer que vous disposez des informations requises pour envoyer des appels API avec succès.
 
 ## Étapes
@@ -499,5 +509,5 @@ You can now report on `audienceMembershipId`, `audienceMembershipIdName` and `pe
 * Vous pouvez importer plusieurs audiences dans une seule connexion Customer Journey Analytics. Cela ajoute une complexité supplémentaire au processus, mais c’est possible. Pour que cela fonctionne, vous devez apporter quelques modifications au processus ci-dessus :
   1. Effectuez ce processus pour chaque audience souhaitée dans votre collection d’audiences dans RTCP.
   1. Customer Journey Analytics prend en charge les tableaux/tableaux d’objets dans les jeux de données de profil. Utiliser un [tableau d’objets](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/complex-data/object-arrays.html?lang=fr) pour le `audienceMembershipId` ou le `audienceMembershipIdName` est la meilleure option.
-  1. Dans votre vue de données, créez une dimension à l’aide de la transformation Sous-chaîne sur le champ `audienceMembershipId` pour convertir la chaîne de valeurs séparées par des virgules en tableau. REMARQUE : le tableau contient actuellement une limite de 10 valeurs.
+  1. Dans votre vue de données, créez une dimension à l’aide de la transformation Sous-chaîne sur le champ `audienceMembershipId` pour convertir la chaîne de valeurs séparées par des virgules en tableau. REMARQUE : le tableau est actuellement limité à 10 valeurs.
   1. Vous pouvez désormais créer des rapports sur ce nouveau `audienceMembershipIds` de dimension dans Customer Journey Analytics Workspace.

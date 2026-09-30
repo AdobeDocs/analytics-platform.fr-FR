@@ -4,27 +4,35 @@ description: Découvrez comment utiliser et interpréter le panneau d’observat
 feature: Panels
 exl-id: a442fb9c-165f-4136-95e2-ce92b9280c25
 role: User
-TQID: https://experienceleague.adobe.com/IkzScFK8pyrB-ejW-Kjtgwm-A5XfdLSR-5JqrU30EGw
+TQID: 'https://experienceleague.adobe.com/IkzScFK8pyrB-ejW-Kjtgwm-A5XfdLSR-5JqrU30EGw'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: e634a07b-b7ca-4af3-a124-3024ce559e17
+    internal-label: Workspace panels
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Troubleshooting
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1211
+source-wordcount: '1215'
 ht-degree: 90%
-
 ---
-
 # Panneau des visionneuses simultanées de médias {#media-concurrent-viewers-panel}
 
 <!-- markdownlint-disable MD034 -->
@@ -41,7 +49,7 @@ ht-degree: 90%
 >[!CONTEXTUALHELP]
 >id="workspace_mediaconcurrentviewers_panel"
 >title="Visites simultanées de médias"
->abstract="Analysez l’évolution du nombre de visites simultanées, identifiez les pics de visites simultanées et, éventuellement, ventilez et comparez à l’aide de segments, de dimensions, d’éléments de dimension ou de périodes."
+>abstract="Analysez l’évolution du nombre de spectateurs simultanés, affichez le pic de simultanéité et, éventuellement, ventilez et comparez les données à l’aide de segments, de dimensions, d’éléments de dimension ou de périodes."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -64,7 +72,7 @@ Le panneau **[!UICONTROL Visiteurs et visiteuses simultanés de médias]** perme
 
 Vous pouvez analyser les visiteurs et visiteuses simultanés pour déterminer où s’est produit le pic d’accès simultanés ou l’endroit où des abandons ont eu lieu, ce qui permet de mieux comprendre la qualité du contenu et l’engagement des personnes. Et pour faciliter le dépannage ou la planification du volume ou de l’échelle.
 
-Dans Analysis Workspace, les visiteurs et visiteuses simultanés représentent le nombre de visiteurs et visiteuses uniques qui visualisent vos flux de médias à un moment donné, quel que soit le nombre de sessions.
+Dans Analysis Workspace, la mesure « Nombre d’observateurs simultanés » correspond au nombre de personnes uniques qui visualisent vos flux de médias à un moment donné, quel que soit le nombre de sessions.
 
 
 >[!BEGINSHADEBOX]
@@ -81,7 +89,7 @@ Pour utiliser un panneau **[!UICONTROL Visiteurs et visiteuses simultanés de m�
 
 1. Créez un panneau **[!UICONTROL Visiteurs et visiteuses simultanés de médias]**. Pour plus d’informations sur la création d’un panneau, consultez [Créer un panneau](panels.md#create-a-panel).
 
-1. Veillez à sélectionner une vue de données pour le panneau dont les composants sont configurés à partir de la collection de Straming Media Collection.
+1. Veillez à sélectionner pour le panneau une vue de données dont les composants sont configurés à partir de Streaming Media Collection.
 
 1. Spécifiez l’[entrée](#panel-input) du panneau.
 
@@ -104,11 +112,11 @@ Voici un exemple de panneau configuré pour une granularité **[!UICONTROL Minut
 
 ### Sortie du panneau
 
-Le panneau Observateurs simultanés de médias renvoie un graphique en courbe et des synthèses de chiffres pour inclure des détails sur les valeurs maximales et/ou minimales d’observateurs simultanés.  En haut du panneau, une ligne de résumé vous rappelle les paramètres du panneau que vous avez sélectionnés.
+Le panneau « Observateurs simultanés de médias » affiche un graphique linéaire et des valeurs récapitulatives qui fournissent des informations sur le nombre maximal et/ou minimal de spectateurs simultanés.  En haut du panneau, une ligne de résumé vous rappelle les paramètres du panneau que vous avez sélectionnés.
 
 À tout moment, sélectionnez ![Modifier le panneau Visiteurs et visiteuses simultanés de médias](/help/assets/icons/Edit.svg) pour modifier et recréer le panneau.
 
-Si vous avez sélectionné la répartition des séries, une ligne du graphique en courbe et une synthèse des chiffres s’affichent pour chacune d’elles :
+Si vous sélectionnez une répartition de série, une ligne du graphique linéaire et une valeur récapitulative s’affichent pour chaque élément :
 
 ![Sortie des Visiteurs et visiteuses simultanés de médias.](assets/concurrent-viewers-output.png)
 
@@ -118,7 +126,7 @@ La seule mesure qui peut être utilisée dans ce panneau est **[!UICONTROL Visit
 
 | Mesure | Description |
 |---|---|
-| **[!UICONTROL Visiteurs et visiteuses simultanés]** | Nombre de visiteurs et visiteuses uniques qui voient votre ou vos flux de médias à un moment précis, quel que soit le nombre de sessions. |
+| **[!UICONTROL Visiteurs et visiteuses simultanés]** | Nombre de personnes uniques qui visualisent vos flux de médias à un moment donné, quel que soit le nombre de sessions. |
 
 Un tableau à structure libre n’est pas disponible dans cet affichage.  Pour afficher la source de données, vous pouvez la télécharger à partir du menu contextuel de visualisation sous forme de graphique en courbes et sélectionner **[!UICONTROL Télécharger les données au format CSV]**.  Les répartitions de séries sont incluses.
 
@@ -128,15 +136,15 @@ Un tableau à structure libre n’est pas disponible dans cet affichage.  Pour a
 
 | Question | Réponse |
 |---|---|
-| Où se trouve le tableau à structure libre ? Comment puis-je voir la source de données ? | Le tableau à structure libre n’est pas disponible dans cet affichage.  Vous pouvez télécharger la source de données à partir du menu contextuel du graphique en courbes et sélectionner **[!UICONTROL Télécharger les données au format CSV]**. |
-| Pourquoi ma granularité a-t-elle changé ? | La visualisation est limitée à 1 440 lignes de données (par exemple, 24 heures à une granularité au niveau des minutes).  Si une combinaison de période et de granularité génère plus de 1 440 lignes, la granularité est automatiquement mise à jour pour s’adapter à la période complète.<br><br>Lorsque vous passez d’une période plus grande à une période plus petite, la granularité est mise à jour vers le détail le plus bas possible une fois la période modifiée. Pour afficher une granularité plus élevée, modifiez le panneau et recréez la visualisation. |
+| Où se trouve le tableau à structure libre ? Comment puis-je voir la source de données ? | Le tableau à structure libre n’est pas disponible dans cette vue.  Vous pouvez télécharger la source de données à partir du menu contextuel du graphique en courbes et sélectionner **[!UICONTROL Télécharger les données au format CSV]**. |
+| Pourquoi la granularité a-t-elle changé ? | La visualisation est limitée à 1 440 lignes de données (par exemple, 24 heures à une granularité au niveau des minutes).  Si une combinaison de période et de granularité génère plus de 1 440 lignes, la granularité est automatiquement mise à jour pour s’adapter à la période complète.<br><br>Lorsque vous passez d’une période plus grande à une période plus petite, la granularité est mise à jour vers le détail le plus bas possible une fois la période modifiée. Pour afficher un niveau de granularité supérieur, modifiez le panneau et recréez la vue. |
 | Comment puis-je comparer les noms de vidéo, les segments, les types de contenu, etc. ? | Pour les comparer dans une visualisation unique, faites glisser des segments, des dimensions ou des éléments de dimension spécifiques dans le segment de répartition de la série.<br><br>L’affichage est limité à 10 répartitions.  Pour en afficher plus de 10, vous devez utiliser plusieurs panneaux. |
 | Comment puis-je comparer des périodes ? | Pour comparer des périodes dans une seule visualisation, utilisez les répartitions des séries en faisant glisser au moins 2 périodes.  Ces périodes remplacent alors la période du panneau. |
-| Comment puis-je modifier le type de visualisation ? | Ce panneau permet uniquement la visualisation des lignes pour la série temporelle. |
-| Puis-je exécuter la détection des anomalies ? | Non.  La détection des anomalies n’est pas disponible pour ce panneau. |
+| Comment modifier le type de visualisation ? | Ce panneau permet uniquement la visualisation des lignes pour la série temporelle. |
+| Puis-je exécuter la détection des anomalies ? | Non.  La détection des anomalies n’est pas disponible pour ce panneau. |
 | Pourquoi utiliser des personnes uniques plutôt que des sessions actives ? | L’utilisation de personnes uniques permet de supprimer les pics indésirables aux limites de l’affichage (où les sessions se terminent et commencent simultanément). |
-| Que signifie le fait d’avoir des observateurs simultanés avec une granularité supérieure à la minute ? | Avec une granularité supérieure à une minute, les observateurs simultanés représentent la somme des observateurs simultanés uniques pour toutes les minutes de cette période.  Par exemple, les visiteurs et visiteuses simultanés avec une granularité au niveau de l’heure représentent la somme des visiteurs et visiteuses simultanés uniques pour toutes les minutes de cette heure. |
-| Le panneau Espace de travail affiche-t-il les mêmes informations que le rapport sur les observateurs simultanés ? | Non.  Dans Analysis Workspace, la mesure Visiteurs et visiteuses simultanés est définie comme le nombre personnes uniques qui visualisent votre flux de médias à un moment précis. Quel que soit le nombre de sessions.<br><br>Cette mesure est différente de le rapport Visiteurs et visiteuses simultanés dans la section Rapports, qui utilise les sessions simultanées actives. L’utilisation de personnes uniques entraîne la suppression des « pics » indésirables aux limites de l’affichage (où les sessions se terminent et commencent en même temps). |
+| Que signifie la mesure Nombre d’observateurs simultanés avec une granularité supérieure à la minute ? | Avec une granularité supérieure à une minute, les observateurs simultanés représentent la somme des observateurs simultanés uniques pour toutes les minutes de cette période.  Par exemple, les visiteurs et visiteuses simultanés avec une granularité au niveau de l’heure représentent la somme des visiteurs et visiteuses simultanés uniques pour toutes les minutes de cette heure. |
+| Le panneau Espace de travail affiche-t-il les mêmes informations que le rapport sur les observateurs simultanés ? | Non.  Dans Analysis Workspace, la mesure Visiteurs et visiteuses simultanés est définie comme le nombre personnes uniques qui visualisent votre flux de médias à un moment précis. Quel que soit le nombre de sessions.<br><br>Cette mesure est différente de le rapport Visiteurs et visiteuses simultanés dans la section Rapports, qui utilise les sessions simultanées actives. L’utilisation de personnes uniques entraîne la suppression des pics indésirables aux limites du programme (où les sessions se terminent et commencent au même moment). |
 
 <!-- For more information about Media Concurrent Viewers, visit [MA doc page]( https://url). -->
 

@@ -5,53 +5,87 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-TQID: https://experienceleague.adobe.com/3TqNaNKkAo2Ug92F5244fVbnv-Po6x5l2sAf3ZHZuCw
+TQID: 'https://experienceleague.adobe.com/3TqNaNKkAo2Ug92F5244fVbnv-Po6x5l2sAf3ZHZuCw'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
   - id: e634a07b-b7ca-4af3-a124-3024ce559e17
+    internal-label: Workspace panels
 subfeature_v2:
   - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
+    internal-label: Templates
   - id: ad5685a0-8296-4a0c-814c-658c10b4af12
+    internal-label: Content Analytics
   - id: aff2ef09-fc60-4018-9197-e2befd623064
+    internal-label: Anomaly detection
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
   - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+    internal-label: Audiences
   - id: d13dba12-733d-4914-8d92-d643658bbe5d
+    internal-label: Forecasting
   - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
+    internal-label: Freeform tables
   - id: d47d27f9-fcd6-414d-a127-a8a739dac811
+    internal-label: Experimentation panel
   - id: ddf59f64-0e46-4986-a525-056acc143c70
+    internal-label: Workspace visualizations
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: e0be3531-517c-451a-b2ff-6fcafd56ca0d
+    internal-label: Media concurrent viewers panel
   - id: e2ff1689-912e-40ed-a029-ed8d02d9f34a
+    internal-label: Media playback time spent panel
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
   - id: e4a0bad2-b448-47f1-9fa6-222ebdb3b5b0
+    internal-label: Alerts
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+    internal-label: Behavioral data
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+    internal-label: Machine learning
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 28cfbe249f20361bf56f0a6216bc715dae5a6d3a
+    internal-label: Privacy
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 3109
+source-wordcount: '3109'
 ht-degree: 100%
-
 ---
-
 # Prise en charge des fonctionnalités de Customer Journey Analytics
 
 Les tableaux suivants répertorient les fonctionnalités propres à Customer Journey Analytics, de même que les fonctionnalités Adobe Analytics prises en charge, partiellement prises en charge ou non prises en charge dans Customer Journey Analytics. Ces listes seront modifiées à mesure que des fonctionnalités seront ajoutées à Customer Journey Analytics.
@@ -64,7 +98,7 @@ Le tableau suivant répertorie les fonctionnalités disponibles dans Customer Jo
 | --- | --- |
 | **Possibilité de combiner des jeux de données (tels que des suites de rapports Adobe Analytics)** | Customer Journey Analytics vous permet de [combiner les données](/help/connections/combined-dataset.md) de plusieurs suites de rapports comme s’il s’agissait d’une seule suite de rapports dans Adobe Analytics. |
 | **Hébergement de tout type de données** | Customer Journey Analytics est associé à la capacité d’Experience Platform à contenir tous types et schémas de données. Grâce au [Modèle de données d’expérience (XDM)](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/home), les données peuvent être représentées et organisées de manière uniforme, prêtes à être combinées et explorées. Adobe Analytics est principalement axé sur les données d’analyse web et mobile, avec certaines fonctionnalités permettant d’[importer les données](https://experienceleague.adobe.com/fr/docs/analytics/import/home). |
-| **B2B Edition** | [Customer Journey Analytics B2B Edition](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition?lang=fr) permet aux sociétés B2B d’aligner leurs équipes marketing, ventes et produits en fournissant des informations de compte exploitables qui stimulent l’augmentation des revenus. Le compte étant placé au centre du modèle de données, toutes les analyses se concentrent sur le parcours de compte. L’ajout d’une nouvelle couche d’entités (comptes, opportunités et groupes d’achat) en plus des événements basés sur les personnes et le temps, crée une vue d’ensemble complète du cycle de vie du marketing et des revenus B2B. |
+| **B2B Edition** | [Customer Journey Analytics B2B Edition](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition?lang=fr) permet aux sociétés B2B d’aligner leurs équipes marketing, ventes et produits en fournissant des informations de compte exploitables qui stimulent l’augmentation des revenus. Le compte étant placé au centre du modèle de données, toute l’analyse se concentre sur le parcours du compte. L’ajout d’une nouvelle couche d’entités (comptes, opportunités et groupes d’achat) en plus des événements basés sur les personnes et le temps, crée une vue d’ensemble complète du cycle de vie du marketing et des revenus B2B. |
 | **Extension BI** | L’[extension BI](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-usecases/data-export/bi-extension) vous permet de connecter Customer Journey Analytics directement aux outils de visualisation de BI populaires, tels que PowerBI ou Tableau. En utilisant cette extension, vous pouvez faire en sorte que vos rapports BI correspondent exactement à ce que vous voyez dans Analysis Workspace et dans d’autres interfaces de création de rapports Customer Journey Analytics. Cette extension offre un moyen beaucoup plus simple d’obtenir des rapports BI pour Customer Journey Analytics sans avoir à recréer des rapports/mesures à partir de données brutes. |
 | **Commentaires dans les projets Workspace** | Les commentaires vous permettent de partager des informations et de poser des questions dans le cadre d’un [projet Analysis Workspace](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/build-workspace-project/comment-projects?lang=fr). Vous pouvez ainsi optimiser les discussions sur les données, ce qui permet de conserver les conversations dans le contexte spécifique des données concernées. |
 | **Content Analytics** | [Content Analytics](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/content-analytics/content-analytics) aide les spécialistes du marketing à comprendre comment le contenu affecte les indicateurs clés de performances (KPI) définis par une entreprise. En plus des données comportementales, Content Analytics collecte des données sur la manière dont le contenu est utilisé et sur son impact. |
@@ -79,12 +113,12 @@ Le tableau suivant répertorie les fonctionnalités disponibles dans Customer Jo
 | **Légendes intelligentes** | Les [sous-titres intelligents](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/visualizations/intelligent-captions) utilisent le machine learning avancé et l’IA générative pour fournir des informations précieuses en langage naturel aux visualisations Workspace. Les légendes intelligentes sont prises en charge pour les visualisations suivantes : Ligne, Multiligne, Barre, Barre horizontale, Anneau, Zone, Flux et Abandon. |
 | **Zone de travail de parcours** | La [zone de travail du parcours](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/journey-canvas?lang=fr) est une visualisation dans Analysis Workspace qui vous permet d’analyser la manière dont les personnes poursuivent ou abandonnent un parcours défini. |
 | **Utilisation du produit** | [Utilisation du produit](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/tools/product-usage/usage-overview) indique comment votre entreprise utilise Customer Journey Analytics. |
-| **Transformations au moment du rapport** | Les [vues de données](/help/data-views/data-views.md) dans Customer Journey Analytics vous permettent d’interpréter plus en détail les données d’une connexion. Vous pouvez modifier ou supprimer des données sans modifier votre implémentation. Utilisez des sous-chaînes pour manipuler les dimensions. Créez des mesures à partir de n’importe quelle valeur ou filtrez les sous-événements. Toutes ces transformations sont faites de manière non destructive. Adobe Analytics offre des fonctionnalités limitées par le biais de suites de rapports virtuelles et de durées de session personnalisées. |
+| **Transformations au moment du rapport** | Les [vues de données](/help/data-views/data-views.md) dans Customer Journey Analytics vous permettent d’interpréter plus en détail les données d’une connexion. Vous pouvez modifier ou supprimer des données sans changer votre mise en œuvre. Utilisez des sous-chaînes pour manipuler les dimensions. Créez des mesures à partir de n’importe quelle valeur ou filtrez les sous-événements. Toutes ces transformations sont faites de manière non destructive. Adobe Analytics offre des fonctionnalités limitées par le biais de suites de rapports virtuelles et de durées de session personnalisées. |
 | **Mesures et dimensions partagées entre les vues de données** | Les mesures et dimensions partagées vous permettent d’[appliquer des paramètres de dimensions et de mesures à plusieurs vues de données](/help/data-views/shared-metrics-dimensions/smd-overview.md). Les modifications apportées à une dimension ou à une mesure partagée s’appliquent à toutes les instances de cette dimension ou mesure dans toutes les vues de données concernées. |
 | **Accès SQL** | À l’aide de l’option Data Distiller, Customer Journey Analytics peut supprimer les limites des données collectées lors du traitement du serveur principal d’Adobe. Vous pouvez modifier vos données grâce à SQL, créer des valeurs et des jeux de données propres à votre entreprise et continuer à explorer. Analytics ne prend en charge aucun type d’accès SQL à ses données. |
 | **Assemblage** | Le [groupement](/help/stitching/overview.md) est une puissante fonctionnalité qui élève la capacité d’un jeu de données d’événement relative à l’analyse cross-canal. L’analyse cross-canal est un cas d’utilisation principal que Customer Journey Analytics peut traiter. L’analyse cross-canal vous permet de combiner et d’exécuter des rapports facilement sur plusieurs jeux de données de différents canaux, en fonction d’un identifiant commun (ID de personne). |
 | **Modèles dans Adobe Journey Optimizer** | Personnalisez la nouvelle interface de création de rapports d’Adobe Journey Optimizer en créant ou en modifiant un [modèle](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/templates/create-templates?lang=fr) dans Customer Journey Analytics, puis en enregistrant le modèle à utiliser sur la page Rapports dans Journey Optimizer. |
-| **Dimensions et mesures illimitées de la clientèle** | Les dimensions Customer Journey Analytics sont illimitées ; les valeurs peuvent être numériques, textuelles, objets, listes ou des mélanges de toutes les valeurs. Les dimensions peuvent être imbriquées ou hiérarchiques. <br/>En revanche, Adobe Analytics prend en charge jusqu’à 75 props et 250 eVars. |
+| **Dimensions et mesures illimitées de la clientèle** | Les dimensions Customer Journey Analytics sont illimitées ; les valeurs peuvent être des nombres, du texte, des objets, des listes ou une combinaison de ces éléments. Les dimensions peuvent être imbriquées ou hiérarchiques. <br/>En revanche, Adobe Analytics prend en charge jusqu’à 75 props et 250 eVars. |
 | **Valeurs uniques illimitées** | Customer Journey Analytics prend en charge un nombre illimité de valeurs uniques ou d’éléments de dimension qui peuvent faire l’objet de rapports dans une seule dimension.<p>Il n’y a pas de [limites de cardinalité sur une dimension](/help/components/dimensions/high-cardinality.md), ce qui permet à toute valeur unique d’apparaître et d’être comptabilisée.</p><p>Cette approche élimine les limites de création de rapports et d’analyses qui peuvent exister avec les implémentations Adobe Analytics à grande échelle, ce qui se traduit par des libellés [!UICONTROL Faible trafic].</p><p>Dans Customer Journey Analytics, il est possible de voir un libellé [!UICONTROL Uniques Exceeded] (valeurs uniques dépassées), mais cela se produit beaucoup moins fréquemment et peut être atténué en appliquant un segment aux données.</p> |
 
 ## Fonctionnalités/composants Adobe Analytics entièrement pris en charge {#full-support}
@@ -106,7 +140,7 @@ Le tableau suivant répertorie les fonctionnalités disponibles dans Customer Jo
 | **Création de rapports sur lʼeffet élévateur et le degré de confiance** | Prise en charge complète via le [panneau Expérimentation](/help/analysis-workspace/c-panels/experimentation.md) |
 | **Variables/Propriétés de liste** | Prise en charge complète. Customer Journey Analytics exploite XDM et prend en charge un nombre illimité de tableaux de chaînes offrant une utilisation similaire à celle des listVars. |
 | **eVars de marchandisage** | Prise en charge complète par le biais des [dimensions et des mesures de liaison](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dataviews/component-settings/persistence) |
-| **Mesures** | Prise en charge complète. Customer Journey Analytics exploite le Modèle de données d’expérience (XDM) et prend en charge un nombre illimité de mesures. Il n’est pas lié aux événements de succès personnalisés traditionnellement utilisés dans Adobe Analytics. Certaines mesures standard ont été renommées par rapport à Adobe Analytics : Visiteurs et visiteuses = Personnes, Visites = Sessions, Accès = Événements. |
+| **Mesures** | Prise en charge complète. Customer Journey Analytics exploite le Modèle de données d’expérience (XDM) et prend en charge un nombre illimité de mesures. Il n’est pas lié aux événements de succès personnalisés traditionnellement utilisés dans Adobe Analytics. Certaines mesures standard ont été renommées par rapport à Adobe Analytics : Visiteurs et visiteuses = Personnes, Visites = Sessions, Hits = Événements. |
 | **Migration de projets, segments et mesures calculées d’Adobe Analytics vers Customer Journey Analytics** | Prise en charge complète. |
 | **Carte de performance mobile/Tableaux de bord** | Prise en charge complète |
 | **Panneaux** | Prise en charge complète des panneaux suivants : Panneau vierge, Attribution, Structure libre, Aperçu rapide et Élément suivant ou précédent. |
@@ -114,14 +148,14 @@ Le tableau suivant répertorie les fonctionnalités disponibles dans Customer Jo
 | **Traitement du projet** | Prise en charge complète |
 | **Liaison de projet** | Prise en charge complète |
 | **Modèles de produit** | Inclut des [modèles préconfigurés](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/templates/use-templates) et des [modèles d’entreprise](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/templates/create-templates#access-a-company-template). |
-| **Traitement de la période de rapport** | Prise en charge complète ; Customer Journey Analytics repose exclusivement sur le traitement de la période de rapport. |
+| **Traitement de la période de rapport** | Prise en charge complète ; Customer Journey Analytics repose exclusivement sur le traitement lors de l’exécution du rapport. |
 | **Accès à l’API de création de rapports** | Prise en charge complète ; disponible via l’[API Customer Journey Analytics](https://developer.adobe.com/cja-apis/docs/). |
 | **Rapports/Projets planifiés** | Prise en charge complète |
 | **Segments** | Prise en charge complète. Les segments étaient précédemment appelés *Filtres* dans Customer Journey Analytics. |
 | **Module complémentaire Streaming Media Collection** | Les données des médias en streaming sont disponibles dans le connecteur source Analytics dans le cadre des panneaux Visionneuses simultanées de médias et Temps de lecture de média dans l’espace de travail. |
 | **Sources de données de niveau résumé** | Prise en charge complète |
 | **Suites de rapports virtuelles** | Prise en charge complète. Les [vues de données](/help/data-views/create-dataview.md) sont l’équivalent Customer Journey Analytics des suites de rapports dans Adobe Analytics. |
-| **Traitement des composants des suites de rapports virtuelles** | Prise en charge complète. Le traitement des composants fait partie de la fonctionnalité de vue de données. |
+| **Traitement des composants des suites de rapports virtuelles** | Prise en charge complète. La curation de composants fait partie de la fonctionnalité de vue de données. |
 | **Dimensions Appareil, Navigateur, Référent, Technologie** | Prise en charge pour les jeux de données basés sur le [connecteur source Analytics](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/analytics) et pour les jeux de données générés par le SDK web. Consultez notre [documentation sur les variables Analytics prises en charge via ADC](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics). Si vous utilisez la collecte de données du SDK Web Experience Platform, les dimensions et les appareils basés sur la recherche d’appareils ne sont actuellement pas pris en charge. Une prise en charge est prévue à l’avenir. Pour ajouter des recherches de périphérique et de navigateur à votre flux de données de SDK web, reportez-vous à [cette documentation](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/configure) |
 
 ## Nouvelle prise en charge {#new-support}
@@ -131,27 +165,27 @@ Le tableau suivant répertorie les fonctionnalités disponibles dans Customer Jo
 | **Publicité** | Vous pouvez [collecter des données historiques pour les ID AMO et les ID EF à utiliser dans Customer Journey Analytics](https://experienceleague.adobe.com/fr/docs/advertising/integrations/analytics/planning/rvars-to-evars). |
 | **Alertes** | Le processus d’[utilisation des alertes dans Customer Journey Analytics](/help/components/c-intelligent-alerts/alerts-feature-comparison.md) est presque identique à celui des alertes dans Adobe Analytics. <p>Toutefois, en raison du délai de collecte de données dans Customer Journey Analytics, les alertes horaires ne sont pas disponibles. Dans Customer Journey Analytics, les alertes peuvent être configurées tous les jours, toutes les semaines ou tous les mois.</p> |
 | **Analytics for Target (A4T)** | L’[intégration entre Adobe Customer Journey Analytics et Target](https://experienceleague.adobe.com/fr/docs/target/using/integrate/cja/target-reporting-in-cja) fournit des outils puissants d’analyse et de gain de temps destinés à votre programme d’optimisation. |
-| **Publication dʼaudiences** | Pris en charge si une licence est associée à la plateforme de données clients ou aux produits Journey Optimizer d’Adobe. La [publication d’audiences](/help/components/audiences/audiences-overview.md) envoie des audiences au profil client en temps réel dans Experience Platform. |
+| **Publication dʼaudiences** | Pris en charge à condition de détenir une licence pour la plateforme de données client ou les produits Journey Optimizer d’Adobe. La [publication d’audiences](/help/components/audiences/audiences-overview.md) envoie des audiences au profil client en temps réel dans Experience Platform. |
 | **Classifications** | Les jeux de données de recherche sont l’équivalent des classifications dans Adobe Analytics. Les classifications utilisées dans Analytics peuvent être importées dans Experience Platform et Customer Journey Analytics à l’aide du connecteur source des classifications Analytics. Les jeux de données de recherche peuvent également être transférés directement vers Experience Platform et rendus disponibles dans Customer Journey Analytics. |
 | **Créateur de règles de classification** | Pris en charge à l’aide des [sous-chaînes](/help/data-views/component-settings/substring.md) dans Customer Journey Analytics. Utilise des manipulations de chaînes lors de la génération des rapports plutôt que des jeux de données de recherche. |
 | **Durée de session personnalisée** | La durée de session peut être configurée via les [Paramètres de session](../../data-views/create-dataview.md#session-settings) dans une vue Données. Voir [Paramètres de session](../../data-views/session-settings.md) pour plus d’informations. <br/>La gestion des événements d’arrière-plan mobile est prise en charge par le SDK Mobile Adobe Experience Platform. Voir [Cycle de vie du réseau Edge](https://developer.adobe.com/client-sdks/documentation/lifecycle-for-edge-network/) pour plus d’informations. |
 | **Conversion de devises** | Prise en charge dans le cadre du [formatage d’un composant de mesure](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dataviews/component-settings/format) dans une vue de données. |
-| **Attributs du client** | Les jeux de données de profil sont l’équivalent de l’attribution de clientèle. Les jeux de données de profil ne sont pas automatiquement importés à partir d’Experience Cloud, mais doivent être chargés sur Experience Platform avant d’être disponibles dans Customer Journey Analytics. |
+| **Attributs du client** | Les jeux de données de profil sont l’équivalent de l’attribution client. Les jeux de données de profil ne sont pas automatiquement importés à partir d’Experience Cloud, mais doivent être chargés sur Experience Platform avant d’être disponibles dans Customer Journey Analytics. |
 | **Flux de données** | L’export des données de première génération des jeux de données est disponible via l’[API Experience Platform Data Access](https://experienceleague.adobe.com/fr/docs/experience-platform/data-access/api) et via les [Destinations Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/activate/export-datasets). Ces options permettent d’exporter au niveau de l’événement ou de la ligne toutes les données collectées ou ingérées dans le lac de données Experience Platform. Les colonnes de données de post-traitement ne sont pas disponibles, car les colonnes « post » sont calculées au moment de la requête. L’export de colonnes « post » est disponible via la création de rapports. |
 | **Création de rapports d’entrepôt de données** | [L’export de tableaux complets Customer Journey Analytics](/help/analysis-workspace/export/export-cloud.md) correspond à l’évolution des rapports des entrepôts de données dans Adobe Analytics, avec de nombreuses nouvelles fonctionnalités souvent demandées et qui ne sont pas disponibles dans les entrepôts de données aujourd’hui. |
-| **Entrées, sorties et dimensions et mesures du temps passé** | Prises en charge (les entrées et les sorties sont désormais appelées Débuts de session et fins de session) et sont calculées d’une manière légèrement différente. |
-| **Paramètres de persistance des eVars** | Les eVars ne font plus partie de Customer Journey Analytics. Toutefois, les paramètres de persistance font désormais partie des Vues de données et sont disponibles pour toutes les dimensions. Gardez à l’esprit que la persistance repose sur le Traitement de la période de rapport et non sur le traitement de la collecte de données. Les dimensions définies dans les vues de données sont limitées à une persistance maximale de 90 jours et ne prennent pas en charge la persistance illimitée. |
+| **Entrées, sorties et dimensions et mesures du temps passé** | Prises en charge (les entrées et les sorties sont désormais appelées Débuts de session et Fins de session) et calculées d’une manière légèrement différente. |
+| **Paramètres de persistance des eVars** | Les eVars ne font plus partie de Customer Journey Analytics. Toutefois, les paramètres de persistance font désormais partie des Vues de données et sont disponibles pour toutes les dimensions. Gardez à l’esprit que la persistance repose sur le traitement lors de l’exécution du rapport, et non lors de la collecte de données. Les dimensions définies dans les vues de données sont limitées à une persistance maximale de 90 jours et ne prennent pas en charge la persistance illimitée. |
 | **Dimensions de segmentation géographique** | [Prise en charge complète](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/configure) |
 | **Groupement basé sur les graphiques** | Par le biais du [groupement basé sur les graphiques](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/stitching/overview#graph-based-stitching), vous pouvez exploiter la puissance du graphique d’identité dans le [service d’identités Adobe Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/home) pour élever les jeux de données à leur identité préférée. |
 | **Alertes** | Le processus d’utilisation des [alertes](/help/components/c-intelligent-alerts/intelligent-alerts.md) dans Customer Journey Analytics est presque identique à celui des alertes dans Adobe Analytics. Cependant, il existe des [différences importantes](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-components/alerts/alerts-feature-comparison). |
-| **Obscurcissement d’IP** | Pour les personnes qui utilisent Customer Journey Analytics avec le connecteur source Analytics pour renseigner les données d’Adobe Analytics dans Customer Journey Analytics : les paramètres d’obscurcissement d’adresses IP appliqués dans Adobe Analytics sont transmis à vos données Customer Journey Analytics. Vous pouvez au besoin contrôler ces paramètres dans Adobe Analytics.<p>Pour les personnes utilisant Customer Journey Analytics avec le SDK Web Experience Platform afin de renseigner directement les données dans Platform et dans Customer Journey Analytics : vous pouvez utiliser la préparation de données pour la collecte de données dans Platform, afin de configurer des règles qui obscurcissent l’adresse IP en fonction des besoins de votre entreprise. |
+| **Obscurcissement d’IP** | Pour les personnes qui utilisent Customer Journey Analytics avec le connecteur source Analytics pour renseigner les données d’Adobe Analytics dans Customer Journey Analytics : les paramètres d’obscurcissement d’adresses IP appliqués dans Adobe Analytics sont transmis à vos données Customer Journey Analytics. Vous pouvez au besoin contrôler ces paramètres dans Adobe Analytics.<p>Pour les personnes utilisant Customer Journey Analytics avec le SDK Web Experience Platform afin de renseigner directement les données dans Platform et dans Customer Journey Analytics : Vous pouvez utiliser la préparation de données pour la collecte de données dans Experience Platform afin de configurer des règles qui masquent l’adresse IP selon les exigences de votre entreprise. |
 | **Canaux marketing** | Lors de l’utilisation du connecteur source Analytics, les données des canaux marketing sont transmises dans Customer Journey Analytics par le biais de ce connecteur. Les règles de canal marketing sont toujours configurées dans la version standard d’Adobe Analytics et certaines règles ne sont pas prises en charge. Voir [Canaux marketing Customer Journey Analytics](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-usecases/aa-data/marketing-channels) pour plus d’informations. <br/>Pour les mises en œuvre WebSDK, les règles de traitement des canaux marketing au moment du rapport sont prises en charge par le biais de [Champs dérivés](../../data-views/derived-fields/derived-fields.md). |
 | **Persistance des variables de marchandisage** | Prise en charge complète par le biais des [dimensions et des mesures de liaison](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dataviews/component-settings/persistence) |
 | **Déduplication des mesures** | Configurée sur les mesures dans les vues de données. La déduplication des mesures se produit au niveau de la personne ou de la session, au lieu du niveau du jeu de données, de la vue de données ou de la connexion. |
 | **Création de rapports sur les nouvelles sessions et les sessions répétées** | Anciennement effectuée à l’aide de la dimension Nombre de visites. Les sessions nouvelles ou répétées sont prises en charge [avec un intervalle de recherche en amont de 13 mois](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-usecases/data-views/data-views-usecases). |
 | **Règles de traitement, règles VISTA et règles de traitement des canaux marketing** | Prise en charge à l’aide de la fonctionnalité de préparation des données d’Adobe Experience Platform et des [champs dérivés](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dataviews/derived-fields) pour les jeux de données basés sur le SDK web et les données du connecteur source Analytics. |
-| **Variable products** | Dans Experience Platform, il est possible d’utiliser un tableau d’objets dans un schéma de jeux de données pour répondre à ce cas d’utilisation. Dans Customer Journey Analytics, les clients et clientes ont la possibilité d’utiliser n’importe quel nombre de variables de produit et ne sont pas limités à une seule variable, comme dans Adobe Analytics. |
-| **Partage des projets** | Le partage des projets est uniquement pris en charge entre les personnes utilisant Customer Journey Analytics. Il n’existe pas de partage de projet entre Customer Journey Analytics et Analysis Workspace traditionnel. |
+| **Variable products** | Dans Experience Platform, vous pouvez utiliser un tableau d’objets dans un schéma du jeu de données pour répondre à ce cas d’utilisation. Dans Customer Journey Analytics, les clients et clientes ont la possibilité d’utiliser n’importe quel nombre de variables de produit et ne sont pas limités à une seule variable, comme dans Adobe Analytics. |
+| **Partage des projets** | Le partage de projets est uniquement pris en charge entre les utilisateurs de Customer Journey Analytics. Il n’existe pas de partage de projets entre Customer Journey Analytics et l’Analysis Workspace traditionnel. |
 | **Rapports en temps réel** | Les rapports en temps réel dans Customer Journey Analytics affichent et mettent à jour en temps réel les données et les visualisations au sein d’un ou de plusieurs panneaux dans Analysis Workspace. |
 | **Report Builder** | Prise en charge avec un nouveau plug-in Office 365 pour Microsoft Excel. |
 | **Autorisations d’utilisation/Contrôles d’accès aux données** | Customer Journey Analytics fait la distinction entre les administrateurs et administratrices de produit, les administrateurs et administratrices de profil de produit et les utilisateurs et utilisatrices d’[Adobe Admin Console](https://experienceleague.adobe.com/fr/docs/core-services/interface/administration/admin-tool-experience-cloud). Seuls les administrateurs et administratrices de produit peuvent créer, mettre à jour et supprimer des connexions, des projets, des segments ou des mesures calculées créés par d’autres utilisateurs et utilisatrices. Les administrateurs et administratrices de produit et les administrateurs et administratrices de profil de produit peuvent modifier les vues de données. D’autres autorisations d’utilisateurs et utilisatrices sont disponibles pour créer des mesures calculées, des segments ou des annotations. |
@@ -162,7 +196,7 @@ Le tableau suivant répertorie les fonctionnalités disponibles dans Customer Jo
 
 | Fonctionnalité | Notes |
 | --- | --- |
-| **Panneaux de l’espace de travail** | Le panneau vierge, le panneau Attribution, le panneau à structure libre et les Quick Insights sont entièrement pris en charge. Les panneaux Comparaison des segments et Analytics for Target (A4T) ne sont pas pris en charge. |
+| **Panneaux de l’espace de travail** | Le panneau vierge, le panneau Attribution, le panneau à structure libre et Aperçu rapide sont entièrement pris en charge. Les panneaux Comparaison des segments et Analytics for Target (A4T) ne sont pas pris en charge. |
 
 ## La prise en charge est planifiée {#planned}
 

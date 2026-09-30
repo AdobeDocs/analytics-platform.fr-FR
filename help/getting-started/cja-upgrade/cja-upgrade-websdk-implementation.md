@@ -1,6 +1,6 @@
 ---
 title: Comprendre les options d’implémentation du SDK web lors de la mise à niveau vers Customer Journey Analytics
-description: Découvrir les options d’implémentation du SDK web lors de la mise à niveau vers Customer Journey Analytics
+description: En savoir plus sur les options de mise en œuvre du SDK web lors de la mise à niveau vers Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -9,23 +9,30 @@ autotag-review: '2026-05-19T08:21:32.040Z'
 TQID: 'https://experienceleague.adobe.com/5mjQHmjaBfxAusSR3EuDykYxJzgaR6P9jiL3HH09Bns'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
+    internal-label: Upgrade
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Data collection
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 394
+source-wordcount: '394'
 ht-degree: 100%
-
 ---
-
 # Comprendre les options d’implémentation du SDK web lors de la mise à niveau vers Customer Journey Analytics {#web-sdk-implementation-options}
 
 <!-- markdownlint-disable MD034 -->
@@ -59,8 +66,8 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-websdk-no-selection"
->title="Implémenter le SDK Web pour la propriété donnée"
->abstract="Pour obtenir des instructions plus détaillées, sélectionnez le type d’implémentation souhaité dans le guide de mise à niveau."
+>title="Mettre en œuvre le SDK web pour la propriété donnée"
+>abstract="Pour obtenir des instructions plus détaillées, sélectionnez le type de mise en œuvre souhaité dans le guide de mise à niveau."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -69,17 +76,17 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-websdk-third-party"
 >title="Ajouter la bibliothèque du SDK Web à votre système de gestion de balises tiers"
->abstract="Contactez l’équipe d’administration de votre système de gestion de balises pour ajouter la bibliothèque du SDK web à votre site.<br><br>Le temps d’exécution de cette tâche dépend en grande partie de la réactivité de la personne responsable de votre système de gestion des balises. L’ajout de la bibliothèque du SDK web peut être regroupé avec la logique d’implémentation associée et l’opération peut être déployée pendant les cycles de publication standard de votre organisation."
+>abstract="Collaborez avec l’administrateur de votre système de gestion des balises pour ajouter la bibliothèque du SDK Web à votre site.<br><br>Le temps d’exécution de cette tâche dépend en grande partie de la réactivité de la personne responsable de votre système de gestion des balises. L’ajout de la bibliothèque du SDK web peut être regroupé avec la logique de mise en œuvre associée et déployé dans le cadre des cycles de publication de version standard de votre organisation."
 
 <!-- markdownlint-enable MD034 -->
 
 {{upgrade-note}}
 
-Le processus recommandé de mise à niveau d’Adobe Analytics vers Customer Journey Analytics est une nouvelle implémentation du SDK web Experience Platform, qui est la méthode de collecte de données préférée pour Customer Journey Analytics.
+Le processus recommandé pour effectuer une mise à niveau vers Customer Journey Analytics à partir d’Adobe Analytics consiste à effectuer une nouvelle mise en œuvre du SDK web Experience Platform, qui est la méthode de collecte de données privilégiée pour Customer Journey Analytics.
 
 Il existe trois manières prises en charge d’utiliser le SDK web Adobe Experience Platform :
 
-* [Extension de balise SDK web](https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/install/extension) : Adobe recommande d’utiliser cette méthode. Installez une balise de chargement sur votre site, puis utilisez l’interface d’utilisation de collecte de données d’Adobe Experience Platform pour configurer votre implémentation.
+* [Extension de balise SDK web](https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/install/extension) : Adobe recommande d’utiliser cette méthode. Installez un chargeur de balises sur votre site, puis utilisez l’UI de collecte de données d’Adobe Experience Platform pour configurer votre mise en œuvre.
 
 * [Bibliothèque JavaScript SDK web](https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/install/library) : référencez un fichier de bibliothèque hébergé sur un réseau CDN ou hébergez le fichier de bibliothèque à l’aide de votre propre infrastructure. Effectuez des appels à la bibliothèque dans le code de votre site.
 

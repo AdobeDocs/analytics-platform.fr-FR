@@ -4,27 +4,35 @@ description: Découvrez comment utiliser et interpréter le panneau d’audience
 feature: Panels
 role: User, Admin
 exl-id: c55b5534-a9a6-47f1-8b43-c8c0b8686c53
-TQID: https://experienceleague.adobe.com/d5xE5n-OpioBQy-j3wGrxO7GBcOJrqbNZ1C0lS1iAYM
+TQID: 'https://experienceleague.adobe.com/d5xE5n-OpioBQy-j3wGrxO7GBcOJrqbNZ1C0lS1iAYM'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: e634a07b-b7ca-4af3-a124-3024ce559e17
+    internal-label: Workspace panels
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Reporting
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1708
+source-wordcount: '1714'
 ht-degree: 88%
-
 ---
-
 # Panneau Audience moyenne par minute de média {#media-average-minute-audience-panel}
 
 <!-- markdownlint-disable MD034 -->
@@ -41,7 +49,7 @@ ht-degree: 88%
 >[!CONTEXTUALHELP]
 >id="workspace_mediaaverageminuteaudience_panel"
 >title="Audience moyenne par minute de média"
->abstract="Affiche les performances du contenu multimédia ou de la période personnalisée. Spécifiez la dimension de reporting et, éventuellement, segmentez le contenu."
+>abstract="Affiche les performances d’un contenu multimédia spécifique ou les performances sur une période personnalisée. Spécifiez la dimension de reporting et, si nécessaire, segmentez le contenu."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -55,19 +63,19 @@ _Cet article présente le panneau d’audience moyenne par minute de média dans
 >
 >Le panneau **[!UICONTROL Audience moyenne par minute de média]** est disponible uniquement pour les clientes et clients qui ont acheté le module complémentaire Streaming Media Collection pour Customer Journey Analytics.
 >
->Pour plus d’informations, contactez votre représentant ou représentante du service commercial Adobe ou l’équipe Adobe en charge des comptes.
+>Pour plus d’informations, contactez votre représentant du service commercial Adobe ou l’équipe Adobe en charge des comptes.
 >
 
 Dans Analysis Workspace, l’audience moyenne par minute peut fournir des informations sur les éléments suivants :
 
-* Temps passé à visionner un flux multimédia spécifique divisé par la durée du contenu, ou
+* le temps passé à visionner un flux média spécifique divisé par la durée du contenu, ou
 * Temps passé à visionner au cours d’une période personnalisée avec une granularité sélectionnée.
 
-Le panneau Audience moyenne par minute de média vous permet de comprendre la consommation moyenne de votre contenu en comparant des programmes de toute longueur ou de tout genre. Par exemple, vous pouvez comprendre la consommation moyenne en comparant une sitcom de 30 minutes à un événement sportif de 3 heures.
+Le panneau « Audience moyenne par minute de média » vous permet de comprendre la consommation moyenne de votre contenu en comparant des programmes de toute longueur ou de tout genre. Par exemple, vous pouvez comprendre la consommation moyenne en comparant une sitcom de 30 minutes à un événement sportif de 3 heures.
 
-En outre, vous pouvez utiliser le panneau Audience moyenne par minute de média pour comparer ou ajouter cette audience numérique moyenne par minute aux mesures moyennes par minute de la télévision linéaire.
+En outre, vous pouvez utiliser le panneau « Audience moyenne par minute de média » pour comparer ou ajouter cette audience numérique moyenne par minute aux mesures moyennes par minute de la télévision linéaire.
 
-Le panneau Audience moyenne par minute de média offre les avantages suivants par rapport à la mesure Audience moyenne par minute :
+Le panneau « Audience moyenne par minute de média » offre les avantages suivants par rapport à la mesure « Audience moyenne par minute » :
 
 * Prend en charge les périodes personnalisées.
 
@@ -81,7 +89,7 @@ Pour utiliser un panneau **[!UICONTROL Audience moyenne par minute de média]**,
 
 1. Créez un panneau **[!UICONTROL Audience moyenne par minute de média]**. Pour plus d’informations sur la création d’un panneau, consultez [Créer un panneau](panels.md#create-a-panel).
 
-1. Veillez à sélectionner une vue de données pour le panneau dont les composants sont configurés à partir de la collection de Straming Media Collection.
+1. Veillez à sélectionner pour le panneau une vue de données dont les composants sont configurés à partir de Streaming Media Collection.
 
 1. Spécifiez l’[entrée](#panel-input) du panneau.
 
@@ -89,7 +97,7 @@ Pour utiliser un panneau **[!UICONTROL Audience moyenne par minute de média]**,
 
 ### Entrée du panneau
 
-Utilisez les paramètres d’entrée décrits dans cette section pour configurer le panneau Audience moyenne par minute de média.
+Utilisez les paramètres d’entrée décrits dans cette section pour configurer le panneau « Audience moyenne par minute de média ».
 
 1. Configurez les paramètres d’entrée suivants :
 
@@ -107,8 +115,8 @@ Utilisez les paramètres d’entrée décrits dans cette section pour configurer
 
    | Paramètre | Description |
    |---------|------------|
-   | [!UICONTROL **Dimension de rapport**] | Lorsque vous choisissez Contenu spécifique, vous pouvez sélectionner la sortie du rapport pour qu’elle utilise les champs Nom de la vidéo ou ID du contenu pour afficher le contenu et l’audience moyenne par minute associée pour la période sélectionnée. |
-   | [!UICONTROL **Filtrer le contenu par (facultatif)**] | Vous pouvez filtrer le contenu spécifique en fonction de l’affichage souhaité ou de la structure de vos données. <ul>[!UICONTROL **Programme, saison, épisode**] : affiche les programmes disponibles dans la liste déroulante. Vous pouvez ensuite les filtrer en effectuant une recherche (ou en glissant-déposant le nom du programme dans la colonne de gauche). Si vous arrêtez votre sélection ici, vous verrez toutes les saisons de votre programme. Vous pouvez aussi filtrer les résultats par saison, puis par épisodes individuels. Ce paramètre affiche les données relatives à ces programmes, saisons ou épisodes pour la période sélectionnée.</li><li>[!UICONTROL **Dimension personnalisée**] : si le nom de votre programme se trouve sous une dimension personnalisée, vous pouvez le trouver en effectuant une recherche dans le menu déroulant Dimension (facultatif) ou dans la colonne de gauche. L’élément de dimension est automatiquement renseigné en fonction de cette sélection et traité comme un épisode.</li><li>[!UICONTROL **Aucun**] : affiche tous les noms de vidéos qui contiennent des données d’audience moyenne par minute pour votre sélection. (Cette option est sélectionnée par défaut.)</li></ul> |
+   | [!UICONTROL **Dimension de rapport**] | Lorsque vous choisissez le contenu spécifique, vous pouvez sélectionner les résultats du rapport pour qu’ils utilisent les champs Nom de la vidéo ou ID du contenu afin d’afficher le contenu et l’audience moyenne par minute associée pour la période sélectionnée. |
+   | [!UICONTROL **Filtrer le contenu par (facultatif)**] | Choisissez comment filtrer le contenu spécifique, en fonction de la vue souhaitée ou de la façon dont vos données sont structurées. <ul>[!UICONTROL **Programme, saison, épisode**] : affiche les programmes disponibles dans la liste déroulante. Vous pouvez ensuite les filtrer en effectuant une recherche (ou en glissant-déposant le nom du programme dans la colonne de gauche). Vous pouvez arrêter votre sélection à cet endroit pour afficher toutes les saisons de votre émission, ou filtrer par saison, puis par épisode. Ce paramètre affiche les données relatives à ces programmes, saisons ou épisodes pour la période sélectionnée.</li><li>[!UICONTROL **Dimension personnalisée**] : si le nom de votre programme se trouve sous une dimension personnalisée, vous pouvez le trouver en effectuant une recherche dans le menu déroulant Dimension (facultatif) ou dans la colonne de gauche. L’élément de dimension est automatiquement renseigné en fonction de cette sélection et traité comme un épisode.</li><li>[!UICONTROL **Aucun**] : affiche tous les noms de vidéos qui contiennent des données d’audience moyenne par minute pour votre sélection. (Cette option est sélectionnée par défaut.)</li></ul> |
 
 1. Continuez avec [Paramètres avancés du contenu spécifique](#specific-content-advanced-settings) pour configurer les paramètres avancés.
 
@@ -131,8 +139,8 @@ Utilisez les paramètres d’entrée décrits dans cette section pour configurer
 
    | Options | Description |
    |---------|------------|
-   | **[!UICONTROL Granularité]** | La granularité par défaut est de [!UICONTROL **5 minutes**]. Vous pouvez cependant choisir l’une des granularités utilisées en tant que dénominateur pour la série temporelle comprise dans la période que vous avez sélectionnée. Par exemple, la sélection de 12 :00 à 12 :30 avec une granularité de 5 minutes renvoie l’audience moyenne par minute sur la demi-heure complète ainsi que six lignes avec l’audience moyenne par minute pour chaque période de 5 minutes. Ces lignes servent de points de données pour le graphique de série temporelle. |
-   | [!UICONTROL **Filtrer le contenu par (facultatif)**] | Vous pouvez filtrer le contenu spécifique en fonction de l’affichage souhaité ou de la structure de vos données. <ul>[!UICONTROL **Programme, saison, épisode**] : affiche les programmes disponibles dans la liste déroulante. Vous pouvez ensuite les filtrer en effectuant une recherche (ou en glissant-déposant le nom du programme dans la colonne de gauche). Si vous arrêtez votre sélection ici, vous verrez toutes les saisons de votre programme. Vous pouvez aussi filtrer les résultats par saison, puis par épisodes individuels. Ce paramètre affiche les données relatives à ces programmes, saisons ou épisodes pour la période sélectionnée.</li><li>[!UICONTROL **Dimension personnalisée**] : si le nom de votre programme se trouve sous une dimension personnalisée, vous pouvez le trouver en effectuant une recherche dans le menu Dimension (facultatif) ou dans la colonne de gauche. L’élément de dimension est automatiquement renseigné en fonction de cette sélection et traité comme un épisode.</li><li>[!UICONTROL **Aucun**] : affiche tous les noms de vidéos qui contiennent des données d’audience moyenne par minute pour votre sélection. (Cette option est sélectionnée par défaut.)</li></ul> |
+   | **[!UICONTROL Granularité]** | La granularité par défaut est de [!UICONTROL **5 minutes**]. Vous pouvez cependant choisir l’une des granularités utilisées en tant que dénominateur pour la série temporelle comprise dans la période que vous avez sélectionnée. Par exemple, la sélection de 12 h 00 à 12 h 30 avec une granularité de 5 minutes renvoie l’audience moyenne par minute sur la demi-heure complète ainsi que six lignes avec l’audience moyenne par minute pour chaque période de 5 minutes. Ces lignes servent de points de données pour le graphique de série temporelle. |
+   | [!UICONTROL **Filtrer le contenu par (facultatif)**] | Choisissez comment filtrer le contenu spécifique, en fonction de la vue souhaitée ou de la façon dont vos données sont structurées. <ul>[!UICONTROL **Programme, saison, épisode**] : affiche les programmes disponibles dans la liste déroulante. Vous pouvez ensuite les filtrer en effectuant une recherche (ou en glissant-déposant le nom du programme dans la colonne de gauche). Vous pouvez arrêter votre sélection à cet endroit pour afficher toutes les saisons de votre émission, ou filtrer par saison, puis par épisode. Ce paramètre affiche les données relatives à ces programmes, saisons ou épisodes pour la période sélectionnée.</li><li>[!UICONTROL **Dimension personnalisée**] : si le nom de votre programme se trouve sous une dimension personnalisée, vous pouvez le trouver en effectuant une recherche dans le menu Dimension (facultatif) ou dans la colonne de gauche. L’élément de dimension est automatiquement renseigné en fonction de cette sélection et traité comme un épisode.</li><li>[!UICONTROL **Aucun**] : affiche tous les noms de vidéos qui contiennent des données d’audience moyenne par minute pour votre sélection. (Cette option est sélectionnée par défaut.)</li></ul> |
 
 1. Continuez avec [Paramètres avancés de la période personnalisée](#custom-time-period-advanced-settings) pour configurer les paramètres avancés.
 
@@ -174,7 +182,7 @@ Le panneau Audience moyenne par minute de média utilise uniquement la mesure d�
 
 #### Période personnalisée {#custom-time-period-output}
 
-Le panneau Audience moyenne par minute de média renvoie les informations suivantes :
+Le panneau « Audience moyenne par minute de média » renvoie les informations suivantes :
 
 * Audience moyenne par minute totale pour l’ensemble de votre sélection
 
@@ -191,11 +199,11 @@ Pour modifier et recréer le panneau à tout moment, sélectionnez ![Modifier le
 
 #### Source de données de période personnalisée
 
-Le panneau Audience moyenne par minute de média utilise uniquement la mesure d’audience moyenne par minute pour collecter des données. Les répartitions ou autres mesures ne peuvent pas être utilisées dans le panneau.
+Le panneau « Audience moyenne par minute de média » utilise uniquement la mesure d’audience moyenne par minute pour collecter des données. Les répartitions ou autres mesures ne peuvent pas être utilisées dans le panneau.
 
 | Mesure | Description |
 |---|---|
-| **[!UICONTROL Audience moyenne par minute]** | Il s’agit du temps passé à visionner votre flux multimédia divisé par la sélection totale ou la granularité sélectionnée en minutes. |
+| **[!UICONTROL Audience moyenne par minute]** | Il s’agit du temps passé à visionner votre flux média divisé par la sélection totale ou la granularité sélectionnée en minutes. |
 
 
 >[!MORELIKETHIS]

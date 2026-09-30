@@ -8,21 +8,26 @@ autotag-review: '2026-05-19T08:31:33.712Z'
 TQID: 'https://experienceleague.adobe.com/X9T4RpAiJ8uL0clPhyjffdl02kwd-k2Jv3O5t6iHfss'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
 subfeature_v2:
   - id: ddf59f64-0e46-4986-a525-056acc143c70
+    internal-label: Workspace visualizations
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: 28959f1ea858dee686e6d13025621c4a6164c319
+    internal-label: Customer journeys
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 494
+source-wordcount: '494'
 ht-degree: 77%
-
 ---
-
 # Histogramme {#histogram}
 
 >[!CONTEXTUALHELP]
@@ -53,7 +58,7 @@ Pour créer un histogramme, procédez comme suit :
 >
 >Les histogrammes prennent seulement en charge les mesures standard, et non les mesures calculées.
 
-Dans l’exemple ci-dessous, un histogramme est utilisé pour regrouper les sessions pour le nombre de personnes. L’histogramme indique que la plupart des personnes disposent de 16 à 21 sessions pour la période sélectionnée.
+Dans l’exemple ci-dessous, un histogramme est utilisé pour compartimenter les sessions en fonction du nombre de personnes. L’histogramme indique que la plupart des personnes disposent de 16 à 21 sessions pour la période sélectionnée.
 
 ![Histogramme](assets/histogram.png)
 
@@ -63,9 +68,9 @@ Dans le cadre de la visualisation, des paramètres d’histogramme spécifiques 
 
 | Paramètres de l’histogramme | Description |
 |---|---|
-| **[!UICONTROL Compartiment de début]** | Détermine par quel intervalle commence l’histogramme. « 1 » par défaut. Peut être défini sur 0 à l’infini (aucun nombre négatif). |
+| **[!UICONTROL Compartiment de début]** | Détermine le compartiment à partir duquel commence l’histogramme. « 1 » par défaut. Vous pouvez définir des valeurs de départ comprises entre 0 et l’infini (aucune valeur négative). |
 | **[!UICONTROL Compartiments de mesure]** | Permet d’augmenter ou de réduire le nombre de plages de données (intervalles). Il ne peut pas y avoir plus de 50 intervalles. |
-| **[!UICONTROL Taille du compartiment de mesure]** | Permet de définir la taille de chaque intervalle. Vous pouvez par exemple modifier la taille de l’intervalle d’une page vue à deux pages vues. |
+| **[!UICONTROL Taille du compartiment de mesure]** | Permet de définir la taille de chaque compartiment. Par exemple, vous pouvez modifier la taille des compartiments de 1 page vue à 2 pages vues. |
 | **[!UICONTROL Méthode de comptage]** | Faites votre choix parmi **[!UICONTROL Compte global]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, **[!UICONTROL Compte]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, **[!UICONTROL Groupe d’achat]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, **[!UICONTROL Opportunité]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, **[!UICONTROL Person]**, **[!UICONTROL Session]**, **[!UICONTROL Event]** ou **[!UICONTROL Object]**. Par exemple, pages vues par compte [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} ou pages vues par personne ou pages vues par événement. Lorsque vous sélectionnez **[!UICONTROL Objet]**, sélectionnez le [conteneur personnalisé](/help/data-views/create-dataview.md#containers-1) pour l’analyse des sous-événements. |
 
 <!--Russ or Meike - Check Hit Type link above. -->

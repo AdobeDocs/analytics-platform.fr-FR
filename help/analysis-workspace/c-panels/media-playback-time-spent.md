@@ -4,26 +4,33 @@ description: Découvrez comment utiliser et interpréter le panneau Durée de le
 feature: Panels
 exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
 role: User
-TQID: https://experienceleague.adobe.com/aMKmtHsJjyfBC6Nh1fpfUcb1XLZ8-71td-6mlZRqgTI
+TQID: 'https://experienceleague.adobe.com/aMKmtHsJjyfBC6Nh1fpfUcb1XLZ8-71td-6mlZRqgTI'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: e634a07b-b7ca-4af3-a124-3024ce559e17
+    internal-label: Workspace panels
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Troubleshooting
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1114
-ht-degree: 90%
-
+source-wordcount: '1119'
+ht-degree: 89%
 ---
-
 # Panneau Temps de lecture de média {#media-playback-time-spent-panel}
 
 <!-- markdownlint-disable MD034 -->
@@ -40,7 +47,7 @@ ht-degree: 90%
 >[!CONTEXTUALHELP]
 >id="workspace_mediaplaybacktimespent_panel"
 >title="Temps de lecture de média"
->abstract="Analysez l’évolution de la consommation vidéo, sélectionnez différentes granularités et, éventuellement, ventilez et comparez à l’aide de segments, de dimensions, d’éléments de dimension ou de périodes."
+>abstract="Analysez la consommation vidéo au fil du temps, sélectionnez différents niveaux de granularité et, éventuellement, ventilez et comparez les données à l’aide de segments, de dimensions, d’éléments de dimension ou de périodes."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -86,7 +93,7 @@ Pour utiliser un panneau **[!UICONTROL Temps de lecture de média]**, procédez 
 
 1. Créez un panneau **[!UICONTROL Temps de lecture de média]**. Pour plus d’informations sur la création d’un panneau, consultez [Créer un panneau](panels.md#create-a-panel).
 
-1. Veillez à sélectionner une vue de données pour le panneau dont les composants sont configurés à partir de la collection de Straming Media Collection.
+1. Veillez à sélectionner pour le panneau une vue de données dont les composants sont configurés à partir de Streaming Media Collection.
 
 1. Spécifiez l’[entrée](#panel-input) du panneau.
 
@@ -102,16 +109,16 @@ Vous pouvez configurer le panneau Durée de lecture des médias à lʼaide des p
 | Période du panneau | La période par défaut du panneau est définie sur Aujourd’hui. Vous pouvez la modifier pour afficher un seul jour ou plusieurs mois à la fois.<br>La visualisation est limitée à 1440 lignes de données (par exemple, 24 heures à une granularité au niveau des minutes). Si une combinaison de période et de granularité génère plus de 1 440 lignes, la granularité est automatiquement mise à jour pour s’adapter à la période complète. |
 | Granularité | La granularité par défaut est définie sur Minute.<br>Cette visualisation est limitée à 1 440 lignes de données (par exemple, 24 heures à une granularité au niveau des minutes). Si une combinaison de période et de granularité génère plus de 1 440 lignes, la granularité est automatiquement mise à jour pour s’adapter à la période complète. |
 | Synthèse des chiffres des panneaux | Pour afficher les détails de date ou dʼheure relatifs à la durée de la lecture, une synthèse des chiffres est disponible. La valeur maximale affiche les détails concernant le pic d’accès simultanés. La valeur minimale affiche les détails du creux. La somme additionne la durée de lecture totale de la sélection. Le panneau nʼindique par défaut que la valeur maximale, mais vous pouvez modifier cette valeur par défaut et afficher la valeur minimale, la valeur totale ou une combinaison des trois valeurs.<br>Si vous utilisez des répartitions, une synthèse des chiffres s’affiche pour chacune d’elles. |
-| Répartition de la série | Vous pouvez ventiler votre visualisation par segments, dimensions, éléments de dimension ou périodes.<p>- Vous pouvez afficher jusqu’à 10 lignes à la fois. Les répartitions sont limitées à un seul niveau.</p><p>- Lorsque vous faites glisser une dimension, les principaux éléments de dimension sont automatiquement sélectionnés en fonction de la période du panneau sélectionnée.</p>- Pour comparer des périodes, faites glisser deux périodes minimum dans le segment de répartition de la série. |
+| Répartition de la série | Vous pouvez également ventiler votre visualisation par segments, dimensions, éléments de dimension ou périodes.<p>- Vous pouvez afficher jusqu’à 10 lignes à la fois. Les répartitions sont limitées à un seul niveau.</p><p>- Lorsque vous faites glisser une dimension, les principaux éléments de dimension sont automatiquement sélectionnés en fonction de la période du panneau sélectionnée.</p>- Pour comparer des périodes, faites glisser deux périodes minimum dans le segment de répartition de la série. |
 | Format de l’heure | Vous pouvez afficher le temps de lecture en `Hours:Minutes:Seconds` (par défaut) ou en `Minutes` (sʼaffiche en nombres entiers, arrondis à 0,5 vers le haut). |
-| Affichage de la séquence de dates | Si vous avez placé au moins deux segments de période en tant que répartitions de la série, lʼoption permettant de sélectionner Superposition (par défaut) ou Séquentiel sʼaffiche. La superposition affiche les lignes avec un point de départ commun sur lʼaxe X afin quʼelles se déroulent en parallèle. Séquentiel affiche les lignes avec leur point de départ spécifique sur lʼaxe X. Si les données s’alignent (par exemple, le segment 1 se termine à 20 :44 et le segment 2 commence à 20 :45), les lignes s’affichent dans l’ordre. |
+| Affichage de la séquence de dates | Si vous avez placé au moins deux segments de période en tant que répartitions de série, vous pouvez choisir entre le recouvrement (option par défaut) et le mode séquentiel. L’option de recouvrement affiche les lignes avec un même point de départ sur l’axe X afin qu’elles évoluent en parallèle, tandis que « Séquentiel » affiche les lignes avec leur propre point de départ sur l’axe X. Si les données s’alignent (par exemple, le segment 1 se termine à 20h44 et le segment 2 commence à 20h45), les lignes s’affichent dans l’ordre. |
 
 
 ![Vue par défaut du temps de lecture du playbook multimédia.](assets/mpts_default_view.png)
 
 ### Sortie du panneau
 
-Le panneau Durée de lecture des médias renvoie un graphique en courbes et des numéros de synthèse, qui incluent des détails sur la durée maximale, minimale et/ou totale de la lecture. En haut du panneau, une ligne de résumé vous rappelle les paramètres du panneau que vous avez sélectionnés.
+Le panneau « Temps de lecture de média » affiche un graphique linéaire et des valeurs récapitulatives qui fournissent des informations sur le temps de lecture maximal, minimal et/ou total. En haut du panneau, une ligne de résumé vous rappelle les paramètres du panneau que vous avez sélectionnés.
 
 À tout moment, sélectionnez ![Modifier le panneau Temps de lecture de média](/help/assets/icons/Edit.svg) pour modifier et recréer le panneau.
 
@@ -131,12 +138,12 @@ La seule mesure pouvant être utilisée dans ce panneau est Durée de la lecture
 
 | Question | Réponse |
 |---|---|
-| Où se trouve le tableau à structure libre ? Comment puis-je voir la source de données ? | <p></p><p>Le tableau à structure libre n’est pas disponible dans cet affichage. Pour télécharger la source de données, à partir du menu contextuel du graphique linéaire, sélectionnez l’option de téléchargement du fichier CSV.</p> |
-| <p>Pourquoi ma granularité a-t-elle changé ?</p> | <p>La visualisation est limitée à 1 440 lignes de données (par exemple, 24 heures à une granularité au niveau des minutes). Si une combinaison de période et de granularité génère plus de 1 440 lignes, la granularité est automatiquement mise à jour pour s’adapter à la période complète.</p><p></p><p>Lorsque vous passez d’une période plus grande à une période plus petite, la granularité est mise à jour vers le détail le plus bas possible une fois la période modifiée. Pour afficher une granularité plus élevée, modifiez le panneau et recréez la visualisation.</p> |
-| <p></p><p>Comment puis-je comparer les noms de vidéo, les segments, les types de contenu, etc. ?</p> | <p>Pour les comparer dans une seule visualisation, faites glisser des segments, des dimensions ou des éléments de dimension spécifiques dans le segment de répartition de la série.</p><p></p><p>L’affichage est limité à 10 répartitions. Pour en afficher plus de 10, vous devez utiliser plusieurs panneaux.</p> |
+| Où se trouve le tableau à structure libre ? Comment puis-je voir la source de données ? | <p></p><p>Le tableau à structure libre n’est pas disponible dans cette vue. Pour télécharger la source de données, à partir du menu contextuel du graphique linéaire, sélectionnez l’option de téléchargement du fichier CSV.</p> |
+| <p>Pourquoi la granularité a-t-elle changé ?</p> | <p>La visualisation est limitée à 1 440 lignes de données (par exemple, 24 heures à une granularité au niveau des minutes). Si une combinaison de période et de granularité génère plus de 1 440 lignes, la granularité est automatiquement mise à jour pour s’adapter à la période complète.</p><p></p><p>Lorsque vous passez d’une période plus grande à une période plus petite, la granularité est mise à jour vers le détail le plus bas possible une fois la période modifiée. Pour afficher un niveau de granularité supérieur, modifiez le panneau et recréez la vue.</p> |
+| <p></p><p>Comment comparer les noms de vidéos, les segments, les types de contenu et d’autres éléments ?</p> | <p>Pour les comparer dans une seule visualisation, faites glisser des segments, des dimensions ou des éléments de dimension spécifiques dans le segment de répartition de la série.</p><p></p><p>L’affichage est limité à 10 répartitions. Pour en afficher plus de 10, vous devez utiliser plusieurs panneaux.</p> |
 | Comment puis-je comparer des périodes ? | Pour comparer des périodes dans une seule visualisation, utilisez les répartitions des séries en faisant glisser au moins 2 périodes. Ces périodes remplacent la période du panneau. |
-| Comment puis-je modifier le type de visualisation ? | <p></p><p>Ce panneau permet uniquement la visualisation des lignes pour la série temporelle.</p> |
-| Puis-je exécuter la détection des anomalies ? | <p></p><p>Non. La détection des anomalies n’est pas disponible pour ce panneau.</p> |
+| Comment modifier le type de visualisation ? | <p></p><p>Ce panneau permet uniquement la visualisation des lignes pour la série temporelle.</p> |
+| Puis-je exécuter la détection des anomalies ? | <p></p><p>Non. La détection des anomalies n’est pas disponible pour ce panneau.</p> |
 
 
 >[!MORELIKETHIS]

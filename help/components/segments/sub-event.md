@@ -2,17 +2,25 @@
 title: Analyse Des Sous-Événements
 description: Découvrez comment l’analyse des sous-événements vous permet de filtrer des produits individuels ou d’autres conteneurs au sein d’un événement dans Customer Parcours Analytics, en éliminant le fond perdu d’attribution dans les rapports de produit.
 feature: Segmentation
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
 subfeature_v2:
   - id: a544b409-2610-410d-a842-474ac1d0d54e
-source-git-commit: 8a5568b3b6136bc3f8b507f551fbb6d169e4b88a
+    internal-label: Segment Builder
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 680
+source-wordcount: '680'
 ht-degree: 8%
-
 ---
-
 # Analyse des sous-événements
 
 L&#39;analyse des sous-événements permet d&#39;analyser les données d&#39;un événement à un niveau plus granulaire que le niveau de l&#39;événement. Au lieu de filtrer des événements entiers, vous pouvez segmenter des événements sur des conteneurs individuels. Par exemple :

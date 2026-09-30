@@ -1,31 +1,43 @@
 ---
 title: Analyse des tendances
-description: Mesurez l’engagement client au fil du temps.
+description: Mesurez l’engagement des utilisateurs et utilisatrices au fil du temps.
 exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 role: User
-TQID: https://experienceleague.adobe.com/Mq-IJRaA3-aplBEJe2XmorAD696XzmOj69YcpotF1dU
+TQID: 'https://experienceleague.adobe.com/Mq-IJRaA3-aplBEJe2XmorAD696XzmOj69YcpotF1dU'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
+  - id: d494f34f-674c-496a-a400-b33552b95463
+    internal-label: Adobe Product Analytics
+  - id: bfa38d8a-4e93-4fd8-8cd8-e72c589e3af8
+    internal-label: Guided analysis
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 7f8ab656c7dbf508b2a78fd2022592faf883c56e
+    internal-label: Insights
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 849
+source-wordcount: '849'
 ht-degree: 92%
-
 ---
-
 # Analyse des [!UICONTROL tendances] {#trends}
 
 <!-- markdownlint-disable MD034 -->
@@ -45,9 +57,9 @@ L’analyse ![GraphTrend](/help/assets/icons/GraphTrend.svg) **[!UICONTROL Tenda
 
 Les cas d’utilisation de cette analyse sont les suivants :
 
-* **Évaluer les performances du produit** : les tendances vous permettent d’évaluer les performances globales de votre produit sur une période donnée. En analysant des mesures telles que l’engagement client, l’adoption ou les taux de conversion, vous pouvez déterminer si les performances de votre produit s’améliorent, stagnent ou déclinent.
-* **Adoption de fonctionnalités** : les tendances vous permettent de comprendre comment les utilisateurs et utilisatrices adoptent les nouvelles fonctionnalités ou mises à jour que vous publiez. Vous pouvez déterminer les fonctionnalités les plus populaires et celles qui doivent être améliorées. Ces informations vous permettent de prendre des décisions basées sur les données concernant les fonctionnalités autour desquelles prioriser vos efforts de développement.
-* **Comportement des utilisateurs et utilisatrices** : les tendances peuvent fournir des informations sur le comportement des utilisateurs et utilisatrices au fil du temps. En examinant les actions spécifiques effectuées par les utilisateurs et utilisatrices, vous pouvez identifier des modèles sur lesquels les utilisateurs et utilisatrices risquent de décrocher. Vous pouvez combiner les informations de cette analyse avec [Entonnoir](funnel.md) pour obtenir encore plus d’informations sur le comportement.
+* **Évaluer les performances du produit** : les tendances vous permettent d’évaluer les performances globales de votre produit sur une période donnée. En analysant des mesures telles que l’engagement des utilisateurs et utilisatrices, l’adoption ou les taux de conversion, vous pouvez déterminer si les performances de votre produit s’améliorent, stagnent ou déclinent.
+* **Adoption de fonctionnalités** : les tendances vous permettent de comprendre comment les utilisateurs et utilisatrices adoptent les nouvelles fonctionnalités ou mises à jour que vous publiez. Vous pouvez déterminer les fonctionnalités les plus populaires et celles qui doivent être améliorées. Ces informations vous permettent de prendre des décisions axées sur les données concernant les fonctionnalités à privilégier dans vos efforts de développement.
+* **Comportement des utilisateurs et utilisatrices** : les tendances peuvent fournir des informations sur le comportement des utilisateurs et utilisatrices au fil du temps. En examinant les actions spécifiques effectuées par les utilisateurs ou les utilisatrices, vous pouvez identifier des schémas dans lesquels ils risquent d’abandonner. Vous pouvez combiner les informations de cette analyse avec [Entonnoir](funnel.md) pour obtenir encore plus d’informations sur le comportement.
 * **Tests et expérimentation A/B** : si vous exécutez des tests A/B dans votre produit, vous pouvez utiliser les tendances pour évaluer quels tests sont les plus réussis au fil du temps.
 
 ## Interface
@@ -74,11 +86,11 @@ L’analyse [!UICONTROL Tendances] propose les paramètres de graphique suivants
 
 Ajoutez des données supplémentaires au graphique. Lorsque plusieurs séries sont visibles sur le graphique, les superpositions n’apparaissent que lorsque vous survolez le graphique.
 
-* **[!UICONTROL Détection des anomalies]** : exécute la [détection des anomalies](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) sur l’analyse des tendances. Les valeurs aberrantes apparaissent sous la forme de points que vous pouvez survoler pour plus d’informations.
+* **[!UICONTROL Détection des anomalies]** : exécute la [détection des anomalies](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) sur l’analyse des tendances. Les valeurs aberrantes apparaissent sous la forme de points sur lesquelles vous pouvez pointer pour obtenir plus d’informations.
 * **[!UICONTROL Incrustation de lignes de tendance]** : ajoute une courbe de tendance au graphique pour dépeindre un motif plus clair dans les données.
-   * [!UICONTROL Linéaire] : crée une ligne de régression droite. Idéal pour les données linéaires simples qui augmentent ou diminuent à un taux constant. Équation : `y = a + b * x`
-   * [!UICONTROL Logarithmique] : crée une ligne de régression courbe. Idéal pour les données qui augmentent ou diminuent rapidement, puis se stabilisent. Équation : `y = a + b * log(x)`
-   * [!UICONTROL Moyenne glissante] : crée une courbe de tendance lisse basée sur un ensemble de moyennes. Connue également sous le nom de moyenne mobile, une moyenne glissante utilise un nombre de points de données (déterminé par votre sélection), calcule leur moyenne et utilise cette moyenne comme point dans la ligne. Par exemple, une moyenne glissante de 7 jours ou de 4 semaines. Les options de moyenne glissante disponibles dépendent de l’intervalle et de la période sélectionnés.
+  * [!UICONTROL Linéaire] : crée une ligne de régression droite. Idéal pour les données linéaires simples qui augmentent ou diminuent à un taux constant. Équation : `y = a + b * x`
+  * [!UICONTROL Logarithmique] : crée une ligne de régression courbe. Idéal pour les données qui augmentent ou diminuent rapidement, puis se stabilisent. Équation : `y = a + b * log(x)`
+  * [!UICONTROL Moyenne glissante] : crée une courbe de tendance lisse basée sur un ensemble de moyennes. Également appelée moyenne glissante, une moyenne flottante utilise un nombre spécifique de points de données précédents (déterminé par votre sélection), calcule leur moyenne et utilise cette moyenne comme point dans la ligne. Par exemple, une moyenne glissante de 7 jours ou de 4 semaines. Les options de moyenne glissante disponibles dépendent de l’intervalle et de la période sélectionnés.
 
 ### Comparaison de temps
 

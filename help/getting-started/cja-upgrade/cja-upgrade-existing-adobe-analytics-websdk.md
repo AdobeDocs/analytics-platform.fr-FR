@@ -1,5 +1,5 @@
 ---
-title: Configurer votre implémentation existante du SDK web Adobe Analytics pour envoyer des données à Customer Journey Analytics
+title: Configurer votre mise en œuvre existante du SDK web Adobe Analytics pour envoyer des données à Platform
 description: Découvrez comment configurer votre implémentation Adobe Analytics Web SDK existante
 role: Admin
 solution: Customer Journey Analytics
@@ -9,37 +9,50 @@ autotag-review: '2026-05-19T08:14:03.113Z'
 TQID: 'https://experienceleague.adobe.com/pexrlZnVd2fHINcn6W3XC7el5jnCrDZ08c-TLgX1L4E'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
+    internal-label: Upgrade
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+    internal-label: Measurement
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Administration
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1050
+source-wordcount: '1050'
 ht-degree: 63%
-
 ---
-
-# Configurer votre implémentation existante du SDK web Adobe Analytics pour envoyer des données à Customer Journey Analytics {#existing-websdk-implementation}
+# Configurer votre mise en œuvre existante du SDK web Adobe Analytics pour envoyer des données à Platform {#existing-websdk-implementation}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-remove-aa-from-datastream"
->title="Supprimer Adobe Analytics en tant que service du flux de données"
->abstract="Lorsque les données du SDK Web sont entièrement fonctionnelles, contactez votre administrateur ou administratrice Platform pour supprimer Adobe Analytics en tant que service du flux de données. Avant de procéder, assurez-vous que vos utilisateurs et utilisatrices ont effectué une transition, d’Adobe Analytics vers Customer Journey Analytics."
+>title="Supprimer Adobe Analytics en tant que service du train de données"
+>abstract="Une fois les données du SDK web totalement opérationnelles, collaborez avec votre administrateur Platform pour supprimer Adobe Analytics en tant que service du train de données. Avant de procéder, assurez-vous que vos utilisateurs et utilisatrices ont effectué une transition, d’Adobe Analytics vers Customer Journey Analytics."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -54,7 +67,7 @@ Tenez compte des avantages et des inconvénients suivants de la configuration de
 
 | Avantages | Inconvénients |
 |----------|---------|
-| Il s’agit du chemin de mise à niveau préféré si votre implémentation Adobe Analytics utilise déjà le SDK web.<ul><li>**Fournit tous les avantages de l’hébergement des données dans Experience Edge Network** : <p>Les avantages sont les suivants :</p><ul><li>Rapports et disponibilité des données hautement performants, grâce à Adobe Experience Platform conçu pour optimiser les [cas d’utilisation de personnalisation en temps réel](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html?lang=fr)</li><li>Consolidez la mise en œuvre de la collecte de données d’entreprise Adobe CX entre d’autres produits d’entreprise CX (AJO, RTCDP, etc.).</li><li>Pas de dépendance à la nomenclature Adobe Analytics (prop, eVar, événement, etc.)</li></ul><li>**Utilise votre implémentation existante** : bien que cette approche nécessite quelques modifications d’implémentation, l’implémentation ne part pas de zéro. Vous pouvez utiliser votre couche de données et votre code existants avec un minimum de modifications de la logique d’implémentation sans affecter vos rapports Adobe Analytics existants.</li><li>**Permet d’utiliser un schéma XDM** : vous pouvez choisir d’utiliser votre schéma Adobe Analytics existant ou de créer un schéma XDM et de mapper des champs dans l’objet de données à votre schéma XDM. Les [schémas XDM](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/home#xdm-schemas) sont flexibles et permettent de définir les champs dont vous avez besoin, et uniquement ceux qui sont pertinents pour vous. <p>Voir « Utiliser votre propre schéma XDM » ci-dessous pour plus d’informations sur les avantages de l’utilisation de votre propre schéma XDM.</p></li><li>**Conserve les règles et les éléments de données** : bien que de nouvelles actions de règle soient nécessaires, vous pouvez réutiliser vos éléments de données et conditions de règle existants avec des modifications minimales.</li><li>**À l’épreuve du temps** : si vous choisissez d’utiliser votre propre schéma XDM, les futures mises à jour d’implémentation sont plus simples.</li></ul> | <ul><li>**Nécessite un mappage pour l’envoi de données à Platform** : lorsque votre organisation est prête à utiliser Customer Journey Analytics, vous devez envoyer des données à un jeu de données dans Adobe Experience Platform. Cette action nécessite que chaque champ de l’objet de données soit une entrée dans l’outil de mappage de train de données qui l’affecte à un champ de schéma XDM. Le mappage ne doit être effectué qu’une seule fois pour ce workflow, ce qui évite toute modification de l’implémentation. Cependant, il s’agit d’une étape supplémentaire qui n’est pas requise lors de l’envoi de données dans un objet XDM.</li><li>**Ajoute une complexité supplémentaire au fil du temps** : tout champ que vous ajouterez ultérieurement doit être mappé à XDM dans le flux de données.<p>Chaque fois qu’un nouveau champ est ajouté à votre implémentation, vous pouvez effectuer l’une des opérations suivantes :</p><ul><li>**Option 1 :** renseignez une nouvelle evar arbitraire ou une nouvelle prop dans l’objet de données, puis mappez-la au champ XDM souhaité.<p>Ce processus améliore la cohérence de l’implémentation côté client, mais il nécessite un mappage.</p></li><li>**Option 2 :** laissez l’objet de données en tant qu’implémentation héritée et commencez à renseigner uniquement l’objet XDM pour tous les nouveaux champs.<p>Ce processus ne nécessite pas de mappage, mais cela signifie que certaines de vos variables sont situées uniquement dans un objet de données, tandis que d’autres variables sont situées uniquement dans un objet XDM. Chaque fois que vous devez résoudre les problèmes d’implémentation, vous devez accéder à deux emplacements. Veillez à ce que vos workflows internes prennent en charge cette fonctionnalité.</p></li></ul> |
+| Il s’agit de la méthode de mise à niveau privilégiée si votre mise en œuvre d’Adobe Analytics utilise déjà le SDK web.<ul><li>**Fournit tous les avantages de l’hébergement des données dans Experience Edge Network** : <p>Les avantages sont les suivants :</p><ul><li>Rapports et disponibilité des données hautement performants, grâce à Adobe Experience Platform conçu pour optimiser les [cas d’utilisation de personnalisation en temps réel](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html?lang=fr)</li><li>Consolidez l’implémentation de la collecte de données Adobe CX Enterprise entre d’autres produits CX Enterprise (AJO, RTCDP, etc.).</li><li>Pas de dépendance à la nomenclature Adobe Analytics (prop, eVar, événement, etc.)</li></ul><li>**Utilise votre implémentation existante** : bien que cette approche nécessite quelques modifications d’implémentation, l’implémentation ne part pas de zéro. Vous pouvez utiliser votre couche de données et votre code existants avec des modifications minimes de la logique de mise en œuvre, sans incidence sur vos rapports Adobe Analytics existants.</li><li>**Permet d’utiliser un schéma XDM** : vous pouvez choisir d’utiliser votre schéma Adobe Analytics existant ou de créer un schéma XDM et de mapper des champs dans l’objet de données à votre schéma XDM. Les [schémas XDM](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/home#xdm-schemas) sont flexibles et permettent de définir les champs dont vous avez besoin, et uniquement ceux qui sont pertinents pour vous. <p>Voir « Utiliser votre propre schéma XDM » ci-dessous pour plus d’informations sur les avantages de l’utilisation de votre propre schéma XDM.</p></li><li>**Conserve les règles et les éléments de données** : bien que de nouvelles actions de règle soient nécessaires, vous pouvez réutiliser vos éléments de données et conditions de règle existants avec des modifications minimales.</li><li>**À l’épreuve du temps** : si vous choisissez d’utiliser votre propre schéma XDM, les futures mises à jour d’implémentation sont plus simples.</li></ul> | <ul><li>**Nécessite un mappage pour l’envoi de données à Platform** : lorsque votre organisation est prête à utiliser Customer Journey Analytics, vous devez envoyer des données à un jeu de données dans Adobe Experience Platform. Cette action nécessite que chaque champ de l’objet de données fasse l’objet d’une entrée dans l’outil de mappage de train de données, qui l’affecte à un champ du schéma XDM. Le mappage ne doit être effectué qu’une seule fois pour ce workflow, ce qui évite toute modification de l’implémentation. Cependant, il s’agit d’une étape supplémentaire qui n’est pas requise lors de l’envoi de données dans un objet XDM.</li><li>**Ajoute une complexité supplémentaire au fil du temps** : tout champ que vous ajouterez ultérieurement doit être mappé à XDM dans le flux de données.<p>Chaque fois qu’un nouveau champ est ajouté à votre implémentation, vous pouvez effectuer l’une des opérations suivantes :</p><ul><li>**Option 1 :** renseignez une nouvelle evar arbitraire ou une nouvelle prop dans l’objet de données, puis mappez-la au champ XDM souhaité.<p>Ce processus améliore la cohérence de l’implémentation côté client, mais il nécessite un mappage.</p></li><li>**Option 2 :** laissez l’objet de données en tant qu’implémentation héritée et commencez à renseigner uniquement l’objet XDM pour tous les nouveaux champs.<p>Ce processus ne nécessite pas de mappage, mais cela signifie que certaines de vos variables sont situées uniquement dans un objet de données, tandis que d’autres variables sont situées uniquement dans un objet XDM. Chaque fois que vous devez résoudre les problèmes d’implémentation, vous devez accéder à deux emplacements. Veillez à ce que vos workflows internes prennent en charge cette fonctionnalité.</p></li></ul> |
 
 {style="table-layout:auto"}
 
@@ -74,7 +87,7 @@ Tenez compte des avantages et des inconvénients suivants de la configuration de
 
    | Avantages | Inconvénients |
    |----------|---------|
-   | <p>L’utilisation du schéma Adobe Analytics offre les avantages suivants :</p><ul><li>Facilité de mise à niveau<p>Si vous envoyez déjà des données à Adobe Analytics avec le SDK web d’Adobe Experience Platform, vous pouvez ajouter un service supplémentaire à votre flux de données pour envoyer des données à Adobe Experience Platform (qui peuvent ensuite être utilisées dans votre configuration de Customer Journey Analytics).</p></li></ul> | <p>L’utilisation du schéma Adobe Analytics présente les inconvénients suivants :</p><ul><li>Bien que l’utilisation du schéma Adobe Analytics ne vous limite pas en termes d’utilisation avec d’autres applications Platform, elle génère un schéma plus complexe que nécessaire. En effet, le schéma Adobe Analytics contient de nombreux objets spécifiques à Adobe Analytics qui ne seront probablement pas utilisés par votre organisation.<p>Lorsque des modifications du schéma sont requises, vous devez passer en revue des milliers de champs inutilisés pour trouver le champ qui nécessite une mise à jour.</p></li></ul> |
+   | <p>L’utilisation du schéma Adobe Analytics offre les avantages suivants :</p><ul><li>Facilité de mise à niveau<p>Si vous envoyez déjà des données à Adobe Analytics avec le SDK web d’Adobe Experience Platform, vous pouvez ajouter un service supplémentaire à votre flux de données pour envoyer des données à Adobe Experience Platform (qui peuvent ensuite être utilisées dans votre configuration de Customer Journey Analytics).</p></li></ul> | <p>L’utilisation du schéma Adobe Analytics présente les inconvénients suivants :</p><ul><li>Bien que l’utilisation du schéma Adobe Analytics ne vous limite pas quant à son exploitation avec d’autres applications Platform, elle génère un schéma plus complexe qu’il ne pourrait l’être autrement. En effet, le schéma Adobe Analytics contient de nombreux objets spécifiques à Adobe Analytics qui ne seront probablement pas utilisés par votre organisation.<p>Lorsque des modifications du schéma sont requises, vous devez passer en revue des milliers de champs inutilisés pour trouver le champ qui nécessite une mise à jour.</p></li></ul> |
 
    +++
 
@@ -82,7 +95,7 @@ Tenez compte des avantages et des inconvénients suivants de la configuration de
 
    | Avantages | Inconvénients |
    |----------|---------|
-   | <ul><p>La mise à jour de votre propre schéma XDM offre les avantages suivants :</p><ul><li>Schéma rationalisé adapté aux besoins de votre organisation et aux applications Platform spécifiques que vous utilisez.</li><p>Lorsque des modifications du schéma sont requises, il n’est pas nécessaire de parcourir des milliers de champs inutilisés pour trouver le champ qui nécessite une mise à jour.</p></ul> | <p>La mise à jour de votre propre schéma XDM présente les inconvénients suivants :</p><ul><li>La mise à jour de votre schéma est un processus coûteux en temps, nécessaire avant de commencer à envoyer des données à Platform.</li></ul> |
+   | <ul><p>La mise à jour de votre propre schéma XDM offre les avantages suivants :</p><ul><li>Schéma simplifié adapté aux besoins de votre organisation et aux applications Platform spécifiques que vous utilisez.</li><p>Lorsque des modifications du schéma sont requises, il n’est pas nécessaire de parcourir des milliers de champs inutilisés pour trouver le champ qui nécessite une mise à jour.</p></ul> | <p>La mise à jour de votre propre schéma XDM présente les inconvénients suivants :</p><ul><li>La mise à jour de votre schéma est un processus coûteux en temps, nécessaire avant de commencer à envoyer des données à Platform.</li></ul> |
 
    +++
 

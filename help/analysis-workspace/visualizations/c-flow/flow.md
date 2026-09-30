@@ -8,21 +8,26 @@ autotag-review: '2026-05-19T08:39:33.544Z'
 TQID: 'https://experienceleague.adobe.com/X0VLZhluDR9Q-ax7TcTOHEcn4r0V5yu64spZlfc4fwU'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
 subfeature_v2:
   - id: ddf59f64-0e46-4986-a525-056acc143c70
+    internal-label: Workspace visualizations
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Customer journeys
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 349
+source-wordcount: '349'
 ht-degree: 86%
-
 ---
-
 # Flux - Aperçu {#flow}
 
 <!-- markdownlint-disable MD034 -->
@@ -30,12 +35,12 @@ ht-degree: 86%
 >[!CONTEXTUALHELP]
 >id="workspace_flow_button"
 >title="Flux"
->abstract="Créez une visualisation pour afficher le flux de personnes d’un point de contrôle à un autre."
+>abstract="Créez une visualisation pour afficher le flux de personnes d’un point de contrôle au suivant."
 
 >[!CONTEXTUALHELP]
 >id="workspace_flow_panel"
 >title="Flux"
->abstract="Analysez le flux des visites ou des visiteurs et visiteuses d’un point de contact à l’autre. Spécifiez un composant (mesure, dimension ou élément) par lequel commencer et terminer. Vous pouvez éventuellement définir des paramètres avancés pour configurer plus en détail la visualisation."
+>abstract="Analysez le flux des visites ou des visiteurs et visiteuses d’un point de contact à l’autre. Spécifiez un composant (mesure, dimension ou élément) à utiliser comme point de début ou de fin. Vous pouvez éventuellement définir des paramètres avancés pour configurer plus en détail la visualisation."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -51,7 +56,7 @@ La visualisation ![GraphPathing](/help/assets/icons/GraphPathing.svg) **[!UICONT
 
 Avec cette visualisation, vous pouvez réaliser les actions suivantes :
 
-* Visualisez le parcours des clientes e t clients dans votre site web ou votre application.
+* Visualisez le parcours client sur votre site web ou dans votre application.
 * Analysez où se rendent les clientes et clients avant et après les points de contrôle spécifiés, tels qu’une entrée, une dimension spécifique ou une sortie.
 * Créez des segments en désignant un point spécifique dans un chemin donné.
 
@@ -69,14 +74,14 @@ Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Créer une
 
 Vous pouvez afficher le [flux entre plusieurs dimensions](/help/analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md). Vous pouvez, par exemple, combiner dans un seul diagramme des pages et des services ou rayons. Dans ce cas, votre flux peut aller de la page d’accueil à la page Hommes, puis au rayon Chaussures.
 
-Chaque colonne peut présenter une dimension distincte. Faites glisser une dimension et ajoutez-la au diagramme en la déposant dans une zone de dépôt.
+Chaque colonne peut afficher une dimension distincte. Faites glisser une dimension et ajoutez-la au diagramme en la déposant dans une zone de dépôt.
 
 >[!MORELIKETHIS]
 >
 >[Configurez une visualisation Flux](/help/analysis-workspace/visualizations/c-flow/create-flow.md).
 >
 
-## Choisissez entre les visualisations Flux, Abandons ou Zone de travail de parcours.
+## Choisir entre les visualisations Flux, Abandon et Canevas de parcours
 
 La visualisation Flux présente des similitudes avec la [visualisation Abandons](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) et la [visualisation Zone de travail de parcours](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md), mais comporte des différences importantes.
 
@@ -90,8 +95,8 @@ La visualisation Flux présente des similitudes avec la [visualisation Abandons]
 
 Les visualisations Flux sont particulièrement adaptées aux éléments suivants :
 
-* Analyse exploratoire et ad hoc pour le prochain point de contact immédiat sur le chemin. (Utilisez la zone de travail de parcours pour les parcours avec une séquence prédéfinie de pages ou ceux qui utilisent un chemin d’accès définitif.)
+* Analyse exploratoire ad hoc du prochain point de contact dans le parcours. (Utilisez le canevas de parcours pour les parcours comportant une séquence prédéfinie de pages ou ceux qui utilisent un parcours à terme.)
 
-* Parcours non linéaires avec plusieurs points d’entrée et chemins. (Utilisez la zone de travail de parcours pour les parcours avec une séquence prédéfinie de pages.)
+* Parcours non linéaires avec plusieurs points d’entrée et chemins. (Utilisez le canevas de parcours pour les parcours comportant une séquence prédéfinie de pages.)
 
 Utilisez [le tableau ci-dessus](#understand-the-differences) pour comprendre les différences entre les visualisations Flux, Abandons et Zone de travail de parcours.

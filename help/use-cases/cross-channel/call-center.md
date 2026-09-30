@@ -1,30 +1,39 @@
 ---
 title: Importer les données du centre d’appel et web
-description: Découvrez comment créer un jeu de données qui lie les données du centre dʼappel et du site web.
+description: Découvrez comment créer un jeu de données qui lie les données du centre d’appel et du site web.
 exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-TQID: https://experienceleague.adobe.com/FTWdLEx5SD4GMgi4XJKQ20-RVsg1oRFZtEMjPXkVuYQ
+TQID: 'https://experienceleague.adobe.com/FTWdLEx5SD4GMgi4XJKQ20-RVsg1oRFZtEMjPXkVuYQ'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+    internal-label: Use cases
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Insights
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1160
+source-wordcount: '1160'
 ht-degree: 88%
-
 ---
-
 # Importer les données du centre d’appel et web
 
 Customer Journey Analytics offre la fonctionnalité utile et robuste de combiner des jeux de données provenant de différentes sources dans un seul projet Espace de travail. Utilisez ce guide pour comprendre comment votre organisation peut combiner les données de site web aux données de centre d’appel. Vous pouvez, par exemple, comprendre les actions qu’un client effectue, le contenu qu’il affiche et les termes qu’il recherche avant de contacter le Service clientèle. Vous pouvez ensuite déterminer le contenu et les outils en libre-service afin d’améliorer la résolution des problèmes par les clients eux-mêmes sans qu’ils aient à appeler.
@@ -33,7 +42,7 @@ Customer Journey Analytics offre la fonctionnalité utile et robuste de combiner
 
 * Le composant le plus important pour combiner ces deux jeux de données est un identifiant commun entre chaque source de données. Par exemple, un identifiant de client, une adresse e-mail, un nom d’utilisateur ou un numéro de téléphone hachés.
 * Accès à Adobe Experience Platform et Customer Journey Analytics
-* Si votre jeu de données comprend des journaux provenant d’un système de réponse vocale interactif, Adobe recommande de traiter les données afin qu’elles incluent uniquement des interactions rapides avant de les importer dans Platform.
+* Si votre jeu de données comprend des journaux provenant d’un système de réponse vocale interactive, Adobe recommande de traiter les données afin de n’inclure que les interactions avec les invites avant de les importer dans Platform.
 * Si votre jeu de données comprend des journaux d’appels, Adobe recommande d’inclure les colonnes suivantes :
   * Date/heure de début de lʼappel
   * Raison de lʼappel
@@ -44,13 +53,13 @@ Customer Journey Analytics offre la fonctionnalité utile et robuste de combiner
   * Coût de lʼappel (si disponible)
   * Toute métadonnée dʼappel supplémentaire que votre entreprise souhaite inclure
 
-## Importer des données web et du centre d’appel dans Platform
+## Importer des données web et de centre d’appel dans Platform
 
 Importez vos données dans Adobe Experience Platform. Voir [Création d’un schéma](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=fr) et [Ingestion de données](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=fr) dans la documentation Adobe Experience Platform.
 
 Lors de l’importation de données dans Platform, les conseils suivants peuvent vous aider à mieux comprendre les rapports en résultant :
 
-* Assurez-vous que les identifiants utilisés pour lier ensemble les données du centre d’appel et web ont le même format.
+* Assurez-vous que les identifiants utilisés pour lier les données web et de centre d’appel présentent un format similaire.
 * Incluez la source de données dans chaque jeu de données. Par exemple, incluez une colonne `data_source` dans chaque schéma et définissez la valeur de chaque événement sur `"Web"` ou `"Call center"`, respectivement. <!--mapper-->
 
 ## Assembler les identifiants des personnes ensemble
@@ -72,7 +81,7 @@ Customer Journey Analytics nécessite un identifiant commun pour générer un [j
 Après avoir créé une connexion, vous pouvez [Créer une vue de données](/help/data-views/create-dataview.md) à utiliser dans Analysis Workspace. Les composants utiles sont les suivants :
 
 * Une dimension de page avec la dernière touche et la persistance de session. Vous pouvez connecter les mesures du centre d’appel avec la dernière page qu’un client a consultée avant d’appeler.
-* Une mesure d’appels qui utilise un champ de schéma « Raison du centre d’appels » pour augmenter les occurrences. Utilisez [Déduplication des mesures](/help/data-views/component-settings/metric-deduplication.md) afin qu’elle augmente une seule fois par session.
+* Une mesure d’appels qui utilise un champ de schéma « Motif du centre d’appel » pour augmenter le nombre d’occurrences. Utilisez [Déduplication des mesures](/help/data-views/component-settings/metric-deduplication.md) afin qu’elle augmente une seule fois par session.
 
 ## Création de visualisations
 
@@ -88,7 +97,7 @@ Cette visualisation vous aide à comprendre comment l’ACC assemble les donnée
 2. Dans Analysis Workspace, faites glisser une visualisation [Venn](/help/analysis-workspace/visualizations/venn.md) sur la zone de travail de l’espace de travail.
 3. Faites glisser les deux segments nouvellement créés vers la zone **[!UICONTROL Ajouter un segment]** et la mesure Personnes vers la zone **[!UICONTROL Ajouter une mesure]**.
 
-La visualisation Venn qui en résulte montre le nombre de personnes dans votre jeu de données qui contiennent à la fois des données web et de centre d’appels. Plus le chevauchement est important, plus le nombre de personnes assemblées avec succès est élevé. Les zones qui ne se chevauchent pas représentent des personnes qui résident exclusivement dans un jeu de données ou lʼautre.
+La visualisation Venn obtenue indique le nombre de personnes de votre jeu de données associées à la fois à des données web et de centre d’appel. Plus le chevauchement est important, plus le nombre de personnes assemblées avec succès est élevé. Les zones qui ne se chevauchent pas représentent des personnes qui résident exclusivement dans un jeu de données ou lʼautre.
 
 ### Attribuer les événements du centre d’appel aux pages web
 
@@ -97,7 +106,7 @@ Ce tableau à structure libre vous permet d’afficher les pages principales qui
 1. Faites glisser la dimension qui contient les noms de vos pages web sur une visualisation de tableau à structure libre.
 1. Remplacez la mesure par celle du centre d’appel dont vous souhaitez mesurer la.
 1. Cliquez sur l’icône d’engrenage près de l’en-tête de mesure. Cliquez sur **[!UICONTROL Utiliser le modèle d’attribution différent du modèle par défaut]**.
-1. Définissez le [Modèle d’attribution](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md) souhaité. Par exemple, un modèle Décroissance temporelle avec une demi-vie de 15 minutes et une fenêtre rétroactive de session. Ce modèle d’attribution fait référence aux pages menant à l’appel à votre centre d’appels.
+1. Définissez le [Modèle d’attribution](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md) souhaité. Par exemple, un modèle Décroissance temporelle avec une demi-vie de 15 minutes et une fenêtre rétroactive de session. Ce modèle d’attribution attribue du crédit aux pages consultées avant l’appel à votre centre d’appel.
 
 Le rapport qui en résulte affiche les pages principales qui dirigent les appels vers votre centre d’appels. <!-- use case behind what we use these pages for -->
 
@@ -113,7 +122,7 @@ Vous pouvez améliorer les informations de ce tableau en divisant les appels par
 
 ### Visualisation de flux
 
-Vous pouvez obtenir des informations sur ce qu’un client tentait de faire avant d’utiliser le canal du centre d’appel. Cette visualisation de flux vous aide à comprendre les parcours les plus fréquents qu’un client prend pour atteindre votre centre d’appels. Grâce à ces informations, vous pouvez déterminer les améliorations les plus efficaces que vous pouvez apporter à votre site afin que les clients soient moins susceptibles d’appeler.
+Vous pouvez obtenir des informations sur ce qu’un client tentait de faire avant d’utiliser le canal du centre d’appel. Cette visualisation de flux vous aide à comprendre les parcours les plus fréquents qu’un client emprunte pour atteindre votre centre d’appel. Grâce à ces informations, vous pouvez déterminer les améliorations les plus efficaces que vous pouvez apporter à votre site afin que les clients soient moins susceptibles d’appeler.
 
 1. Cliquez sur l’onglet **[!UICONTROL Visualisations]** à gauche et faites glisser une visualisation de flux sur l’espace de travail.
 2. Cliquez sur l’onglet **[!UICONTROL Composants]** à gauche et recherchez la dimension « Motif de l’appel ».
@@ -124,7 +133,7 @@ Vous pouvez obtenir des informations sur ce qu’un client tentait de faire avan
 
 ### Histogramme
 
-Combien de clients ont appelé une fois, deux fois ou six fois ou plus ? Certaines de ces personnes ne visitent jamais le site. Utilisez la visualisation de l’histogramme pour déterminer le nombre de personnes qui entrent dans chaque conteneur. Pour celles qui ne visitent jamais le site, découvrez comment nous pouvons les encourager à se prendre en charge.
+Combien de clients ont appelé une fois, deux fois ou six fois ou plus ? Certaines de ces personnes ne visitent jamais le site. Utilisez la visualisation Histogramme pour déterminer le nombre de personnes dans chaque compartiment. Pour celles qui ne visitent jamais le site, découvrez comment nous pouvons les encourager à se prendre en charge.
 
 1. Cliquez sur l’icône **[!UICONTROL Visualisations]** à gauche et faites glisser la visualisation de l’histogramme sur l’espace de travail.
 2. Cliquez sur l’onglet **[!UICONTROL Composants]** à gauche et faites glisser la mesure des appels vers la visualisation de l’histogramme.

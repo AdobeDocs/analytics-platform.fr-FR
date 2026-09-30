@@ -5,34 +5,51 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: fb48b031-e093-4490-b457-69dbb5debe8d
 role: Admin
-TQID: https://experienceleague.adobe.com/rbgqDkQLPbw-EfhMyUL-eVXZZ1cxMXiQmvU7Si2WCZ8
+TQID: 'https://experienceleague.adobe.com/rbgqDkQLPbw-EfhMyUL-eVXZZ1cxMXiQmvU7Si2WCZ8'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: c38ed341-fab2-46df-9d72-88d8166edebb
+    internal-label: Workspace projects
   - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
   - id: df28738e-9c71-4aa8-929e-edde22340cc6
+    internal-label: Data Dictionary
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Customer profiles
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 3536
+source-wordcount: '3536'
 ht-degree: 63%
-
 ---
-
 # Ingestion de données via Mobile SDK
 
 Ce guide de démarrage rapide explique comment ingérer des données de tracking d’application mobile directement dans Adobe Experience Platform à l’aide de Adobe Experience Platform Mobile SDK et d’Edge Network. Utilisez ensuite ces données dans Customer Journey Analytics.
@@ -64,7 +81,7 @@ Pour ingérer des données dans Adobe Experience Platform, vous devez d’abord 
 
 Une fois que vous avez défini un schéma, vous utilisez un ou plusieurs jeux de données pour stocker et gérer la collecte de données. Un jeu de données est une structure de stockage et de gestion pour une collecte de données (généralement sous la forme d’un tableau) qui contient un schéma (des colonnes) et des champs (des lignes).
 
-Toutes les données ingérées par Adobe Experience Platform doivent être conformes à un schéma prédéfini avant de pouvoir être conservées sous la forme d’un jeu de données.
+Toutes les données ingérées dans Adobe Experience Platform doivent être conformes à un schéma prédéfini avant de pouvoir être conservées sous la forme d’un jeu de données.
 
 ### Configurer un schéma
 
@@ -138,7 +155,7 @@ Configurer le schéma :
 
    ![Spécifier l’ECID comme identité](./assets/specify-identity-mobile.png)
 
-   Vous spécifiez Experience Cloud Identity comme identité principale qu’Adobe Experience Platform Identity Service peut utiliser pour combiner (regrouper) le comportement des profils avec le même ECID.
+   Vous spécifiez l’identité Experience Cloud comme identité principale que le service d’identités Adobe Experience Platform peut utiliser pour combiner (rapprocher) le comportement des profils avec le même ECID.
 
    Sélectionnez **[!UICONTROL Appliquer]**. Une icône d’empreinte digitale apparaît dans l’attribut ecid.
 
@@ -146,7 +163,7 @@ Configurer le schéma :
 
    ![Spécifier l’e-mail comme identité](./assets/specify-email-identity-mobile.png)
 
-   Vous spécifiez l’adresse e-mail en tant qu’autre identité qu’Adobe Experience Platform Identity Service peut utiliser pour combiner (regrouper) le comportement des profils.
+   Vous spécifiez l’adresse e-mail en tant qu’autre identité que le service d’identités Adobe Experience Platform peut utiliser pour combiner (rapprocher) le comportement des profils.
 
    Sélectionnez **[!UICONTROL Appliquer]**. Une icône d’empreinte digitale apparaît dans l’attribut d’e-mail.
 
@@ -172,13 +189,13 @@ En regard des données de comportement, vous pouvez également capturer les donn
 
 Pour capturer les données de profil, vous devez :
 
-- Créer un schéma basé sur la classe Profil XDM individuel ;
+- Créez un schéma basé sur la classe XDM Individual Profile.
 
-- Ajouter le groupe de champs Profil principal v2 au schéma ;
+- Ajouter le groupe de champs Profile Core v2 au schéma.
 
-- Ajouter un objet d’identification basé sur le groupe de champs Profil principal v2 ;
+- Ajouter un objet d’identification basé sur le groupe de champs Profile Core v2.
 
-- Définir Experience Cloud ID comme identifiant principal et l’adresse e-mail comme identifiant ;
+- Définir l’Experience Cloud ID comme identifiant principal et l’adresse e-mail comme identifiant.
 
 - Activer le schéma pour le profil.
 
@@ -188,7 +205,7 @@ Consultez [Créer et modifier des schémas dans l’interface utilisateur](https
 
 Le schéma vous a permis de définir le modèle de données. Vous devez maintenant définir la structure pour stocker et gérer ces données à l’aide de jeux de données.
 
-Configurer le jeu de données :
+Pour configurer le jeu de données :
 
 1. Dans le rail de gauche de l’interface utilisateur d’Adobe Experience Platform, sélectionnez **[!UICONTROL Jeux de données]** sous [!UICONTROL GESTION DES DONNÉES].
 
@@ -379,7 +396,7 @@ Définir une règle :
 
      - Sélectionnez **[!UICONTROL Conserver les modifications]**.
 
-   - La règle doit se présenter comme suit :
+   - Votre règle doit se présenter comme suit :
 
      ![Créer une règle](assets/rule-appstatus.png)
 
@@ -393,7 +410,7 @@ Consultez les [Règles](https://developer.adobe.com/client-sdks/documentation/li
 
 ### Créer et publier la balise
 
-Après avoir défini des éléments de données et des règles, vous devez créer et publier la balise. Lorsque vous créez une version de bibliothèque, vous devez l’affecter à un environnement. Les extensions, règles et éléments de données de la version sont ensuite compilés et placés dans l’environnement attribué. Chaque environnement fournit un code intégré unique qui vous permet d’intégrer la version qui lui est assignée dans votre site.
+Après avoir défini des éléments de données et des règles, vous devez créer et publier la balise. Lorsque vous créez une version de bibliothèque, vous devez l’affecter à un environnement. Les extensions, règles et éléments de données du build sont ensuite compilés et placés dans l’environnement attribué. Chaque environnement fournit un code intégré unique qui vous permet d’intégrer la version qui lui est assignée dans votre site.
 
 Créer et publier la balise :
 
@@ -413,7 +430,7 @@ Créer et publier la balise :
 
    - Sélectionnez **[!UICONTROL Enregistrer et créer pour le développement]**.
 
-   La balise est enregistrée et créée pour votre environnement de développement. Un point vert indique que la balise a été créée avec succès dans l’environnement de développement.
+   La balise est enregistrée et créée pour votre environnement de développement. Un point vert indique que la création de votre balise a été effectuée avec succès dans votre environnement de développement.
 
 4. Vous pouvez sélectionner **[!UICONTROL …]** pour recréer la bibliothèque ou la déplacer vers un environnement d’évaluation ou de production.
 
@@ -446,7 +463,7 @@ Consultez [Environnements](https://experienceleague.adobe.com/docs/experience-pl
 
 Vous pouvez désormais déployer le code dans votre application mobile. Une fois déployée, votre application mobile commence à collecter des données dans Adobe Experience Platform.
 
-Validez la mise en œuvre, corrigez-la si nécessaire, puis déployez-la dans l’environnement d’évaluation et de production à l’aide du processus de publication des balises.
+Validez la mise en œuvre, corrigez-la si nécessaire puis, une fois qu’elle est correcte, déployez-la dans votre environnement d’évaluation et de production à l’aide de la fonctionnalité de workflow de publication des balises.
 
 Pour des informations beaucoup plus détaillées[&#128279;](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=fr) consultez le tutoriel Implémentation d’Adobe Experience Cloud dans les applications mobiles .
 
@@ -500,9 +517,9 @@ Consultez [Présentation des connexions](../connections/overview.md) pour plus d
 
 ## Configurer une vue de données
 
-Une vue de données est un conteneur spécifique à Customer Journey Analytics qui vous permet de déterminer comment interpréter les données d’une connexion. Elle spécifie toutes les dimensions et mesures disponibles dans Analysis Workspace et les colonnes dont ces dimensions et mesures obtiennent leurs données. Les vues de données sont définies en vue de la création de comptes rendus des performances dans Analysis Workspace.
+Une vue de données est un conteneur spécifique à Customer Journey Analytics qui vous permet de déterminer comment interpréter les données d’une connexion. Elle spécifie toutes les dimensions et mesures disponibles dans Analysis Workspace et les colonnes dont ces dimensions et mesures obtiennent leurs données. Les vues de données sont définies en vue du reporting dans Analysis Workspace.
 
-Créer une vue de données :
+Pour créer votre vue de données :
 
 1. Dans l’interface utilisateur de Customer Journey Analytics, sélectionnez **[!UICONTROL Vues de données]**, éventuellement à partir de **[!UICONTROL Gestion des données]** dans le menu supérieur.
 
@@ -537,9 +554,9 @@ Consultez [Présentation des vues de données](../data-views/data-views.md) pour
 
 ## Configurer un projet
 
-Analysis Workspace est un outil de navigation flexible qui vous permet de créer rapidement des analyses et de partager des informations sur la base des données. Les projets Espace de travail vous permettent de combiner des composants de données, des tableaux et des visualisations afin d’élaborer une analyse et de la partager avec tous les membres de l’entreprise.
+Analysis Workspace est un outil flexible basé sur un navigateur qui vous permet de créer rapidement des analyses et de partager des informations à partir de vos données. Les projets Espace de travail vous permettent de combiner des composants de données, des tableaux et des visualisations afin d’élaborer une analyse et de la partager avec tous les membres de l’entreprise.
 
-Créer un projet :
+Pour créer votre projet :
 
 1. Dans l’interface utilisateur de Customer Journey Analytics, sélectionnez **[!UICONTROL Projets]** dans le menu supérieur.
 

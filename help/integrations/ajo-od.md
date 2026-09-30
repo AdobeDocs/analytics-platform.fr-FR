@@ -8,25 +8,34 @@ autotag-review: '2026-05-19T07:19:20.352Z'
 TQID: 'https://experienceleague.adobe.com/n3xsScsv43IG-tOQhgNjeqB2UmWzbIVw7sv5CcpZPd0'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
 subfeature_v2:
   - id: df066828-d385-4da6-af58-80137fb27d7b
+    internal-label: Journey Optimizer integration
+  - id: d3fb138f-79e4-4a81-aedb-76dd93560085
+    internal-label: Experience Platform integration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Personalization
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 753
+source-wordcount: '753'
 ht-degree: 100%
-
 ---
-
 # Intégrer la gestion des décisions
 
 
@@ -50,9 +59,9 @@ Sélectionnez et configurez les jeux de données suivants :
 | --- | --- | --- | --- |
 | ODE DecisonEvents - Décisions de _sandbox_ | Événement | ID de personne : `IdentityMap` | Contient des données générées automatiquement pour les événements de décision de la gestion des décisions. _Sandbox_ fait référence au nom du sandbox spécifique. |
 | Jeu de données d’événements de messages de feedback Adobe Journey Optimizer | Événement | ID de personne : `IdentityMap` | Contient les événements de diffusion des messages. |
-| Jeu de données d’événements d’expérience de suivi d’e-mails Adobe Journey Optimizer | Événement | ID de personne : `IdentityMap` | Contient les événements de suivi des e-mails. |
+| Jeu de données d’événements d’expérience de suivi d’e-mails Adobe Journey Optimizer | Événement | ID de personne : `IdentityMap` | Contient des événements de tracking e-mail. |
 | Jeu de données d’événements d’expérience de suivi de notifications push Adobe Journey Optimizer | Événement | ID de personne : `IdentityMap` | Contient les événements de suivi des notifications push. |
-| Jeu de données d’entités Adobe Journey Optimizer | Recherche | Clé : `_id`<br>clé correspondante : `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | Contient des classifications qui associent des métadonnées de parcours et de campagne à toutes les données d’événement Adobe Journey Optimizer. |
+| Jeu de données d’entités Adobe Journey Optimizer | Recherche | Clé : `_id`<br>clé correspondante : `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | Contient des classifications qui associent des métadonnées Journey et Campaign à toutes les données d’événement Adobe Journey Optimizer. |
 
 {style="table-layout:auto"}
 
@@ -89,7 +98,7 @@ Vous pouvez créer les mesures suivantes dans une vue de données pour obtenir u
 | Type d’événement (renommer pour faire référence à un événement spécifique, par exemple `Feedback` pour `message.feedback`) [1] | Quantité d’un type d’événement spécifique | `eventType` | Type de composant : Mesure <br/>**[!UICONTROL Définir les valeurs d’inclusion/exclusion ]** : Activé <br/>**[!UICONTROL Correspondance]** : [!UICONTROL Si tous les critères sont satisfaits ]<br/>**[!UICONTROL Critères ]** :**[!UICONTROL  est égal à&#x200B;]**`message.feedback` |
 | Score de l’option de décision | Valeur calculée pour une option de décision dans le contexte d’une portée unique. | `_experience.decisioning.`<br/>`propositionDetails.selections.score` | Type de composant : mesure |
 | Score de l’option de décision de secours | Valeur calculée pour une option de décision de secours dans le contexte d’une portée unique. | `_experience.decisioning.`<br/>`propositionDetails.fallback.score` | Type de composant : mesure |
-| Renvois d’offres | Nombre d’offres renvoyées ou refusées sans aucune autre interaction directe. | `_experience.decisioning.`<br/>`propositionEventType.dismiss` | Type de composant : mesure |
+| Renvois d’offres | Nombre d’offres rejetées ou ignorées sans aucune autre interaction directe. | `_experience.decisioning.`<br/>`propositionEventType.dismiss` | Type de composant : mesure |
 | Affichage des offres | Nombre d’offres affichées sur le profil. | `_experience.decisioning.`<br/>`propositionEventType.display` | Type de composant : mesure |
 | Interaction avec des offres | Nombre d’offres avec lesquelles le profil a interagi. | `_experience.decisioning.`<br/>`propositionEventType.interact` | Type de composant : mesure |
 | Envois d’offres | Nombre d’offres envoyées au profil. | `_experience.decisioning.`<br/>`propositionEventType.send` | Type de composant : mesure |

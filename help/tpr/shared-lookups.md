@@ -5,13 +5,23 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 hide: true
-source-git-commit: e1c7ffa9a2ac58717ee0050d4e7019b6f3f94518
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+subfeature_v2:
+  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
 source-wordcount: '2474'
 ht-degree: 13%
-
 ---
-
 # Recherches partagées
 
 Dans Customer Journey Analytics, un jeu de données de recherche enrichit vos données d’événement avec du contexte supplémentaire. Par exemple, un jeu de données de catalogue de produits qui ajoute des noms de produits, des catégories et des prix à vos événements d’achat. Ou un jeu de données de métadonnées de campagne qui ajoute les détails de la campagne à vos événements marketing.

@@ -1,6 +1,6 @@
 ---
-title: Créer des champs de mappage et du connecteur source Analytics
-description: Découvrir comment créer des champs de mappage et du connecteur source Analytics
+title: Créer le connecteur source Analytics et mapper les champs
+description: Découvrez comment créer le connecteur source Analytics et mapper des champs
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -9,26 +9,35 @@ autotag-review: '2026-05-19T08:18:13.585Z'
 TQID: 'https://experienceleague.adobe.com/IQVDwcpMVnEa-dFXbNkpmHQRofC6d8z2ocf-PIaK--Q'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
+    internal-label: Upgrade
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+    internal-label: Measurement
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Administration
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 758
+source-wordcount: '758'
 ht-degree: 100%
-
 ---
-
-# Créer des champs de mappage et du connecteur source Analytics {#create-source-connector}
+# Créer le connecteur source Analytics et mapper les champs {#create-source-connector}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -43,8 +52,8 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector-map-fields"
->title="Créer des champs de mappage de schéma et du connecteur source Analytics"
->abstract="Le connecteur source doit savoir comment mapper les champs Adobe Analytics au schéma de votre organisation. Utilisez cette interface pour fournir ce mappage au connecteur source. Cette étape fait partie de l’ajout de données historiques à Customer Journey Analytics.<br><br>Le temps nécessaire à cette étape dépend fortement du nombre de dimensions et de mesures que vous devez mapper. Cette étape n’est pas vraiment difficile, elle est plutôt fastidieuse et répétitive. Le mappage du train de données devrait prendre environ une semaine."
+>title="Créer le connecteur source Analytics et mapper les champs de schéma"
+>abstract="Le connecteur source doit savoir comment mapper les champs Adobe Analytics au schéma de votre organisation. Utilisez cette interface pour fournir ce mappage au connecteur source. Cette étape fait partie de l’ajout de données historiques à Customer Journey Analytics.<br><br>Le temps nécessaire à cette étape dépend fortement du nombre de dimensions et de mesures que vous devez mapper. Cette étape n’est pas vraiment difficile, elle est plutôt fastidieuse et répétitive. Prévoyez environ une semaine de travail pour effectuer le mappage du train de données."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -68,7 +77,7 @@ Pour utiliser le connecteur source Analytics afin d’importer des données hist
 
 1. [Ajouter le jeu de données du connecteur source Analytics à la connexion](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
 
-## Créer des champs de mappage et du connecteur source Analytics
+## Créer le connecteur source Analytics et mapper les champs
 
 Une fois votre schéma personnalisé créé, vous devez créer le connecteur source Adobe Analytics à utiliser pour les données historiques. (Pour obtenir des instructions générales plus complètes sur la création d’un connecteur source, consultez [Création d’une connexion source Adobe Analytics dans l’interface d’utilisation](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr).)
 
@@ -118,8 +127,8 @@ Pour créer un connecteur source Adobe Analytics à utiliser pour les données 
 
    ![Fenêtre Adobe Experience Platform mettant en surbrillance les sections Connexion et Type de données pour révision](./assets/review.png)
 
-   Une fois la connexion créée, le flux de données est automatiquement créé pour renseigner un jeu de données avec les données Adobe Analytics de votre suite de rapports. Le flux de données ingère jusqu’à 13 mois de données historiques pour les sandbox de production. Le renvoi dans les sanbox hors production est limité à 3 mois.
+   Une fois la connexion créée, le flux de données est automatiquement créé pour renseigner un jeu de données avec les données Adobe Analytics de votre suite de rapports. Le flux de données ingère jusqu’à 13 mois de données historiques pour les sandbox de production. Le renvoi de données dans les sandbox hors production est limité à trois mois.
 
-   Si vous utilisez le connecteur source Analytics pour importer des données historiques dans votre implémentation du SDK web Customer Journey Analytics, vous devez ajouter ce jeu de données créé automatiquement à la connexion que vous avez créée pour votre implémentation du SDK web.
+   Si vous utilisez le connecteur source Analytics pour importer des données historiques dans votre mise en œuvre du SDK web Customer Journey Analytics, vous devez ajouter ce jeu de données créé automatiquement à la connexion que vous avez créée pour votre mise en œuvre du SDK web.
 
 {{upgrade-final-step}}

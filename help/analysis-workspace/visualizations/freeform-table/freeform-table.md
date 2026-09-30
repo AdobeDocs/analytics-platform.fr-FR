@@ -4,25 +4,32 @@ description: Découvrez comment utiliser les tableaux à structure libre, qui so
 feature: Visualizations
 exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
 role: User
-TQID: https://experienceleague.adobe.com/2eJdFymbKxJE6XjLm0FlWocfVSsCml5ac5n0Y8YAQY8
+TQID: 'https://experienceleague.adobe.com/2eJdFymbKxJE6XjLm0FlWocfVSsCml5ac5n0Y8YAQY8'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+    internal-label: Exports
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: User
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 824
+source-wordcount: '824'
 ht-degree: 94%
-
 ---
-
 # Vue d’ensemble du tableau à structure libre {#freeform-table-overview}
 
 <!-- markdownlint-disable MD034 -->
@@ -75,12 +82,12 @@ Vous pouvez interagir et personnaliser un tableau à structure libre de différe
 * Vous pouvez rapidement [créer une visualisation](../freeform-analysis-visualizations.md#visualize) à partir d’une ou de plusieurs lignes avec ![GraphBarVerticalAdd](/help/assets/icons/GraphBarVerticalAdd.svg).
 * Vous pouvez afficher davantage de lignes sur un seul écran en réglant la [densité d’affichage](/help/analysis-workspace/build-workspace-project/view-density.md) du projet.
 * Chaque ligne de dimension peut afficher jusqu’à 400 lignes avant la pagination. Sélectionnez le nombre en regard de **[!UICONTROL Lignes]** dans le premier en-tête de colonne, pour afficher davantage de lignes sur une page. Accédez à une autre page à l’aide de ![ChevronRight](/help/assets/icons/ChevronRight.svg) dans le premier en-tête de colonne.
-* Vous pouvez répartir les lignes en fonction de composants supplémentaires. Pour répartir plusieurs lignes à la fois, sélectionnez plusieurs lignes, puis faites glisser le composant suivant sur les lignes sélectionnées. En savoir plus sur les [répartitions](/help/components/dimensions/t-breakdown-fa.md).
+* Vous pouvez ventiler les lignes selon des composants supplémentaires. Pour ventiler plusieurs lignes à la fois, sélectionnez plusieurs lignes, puis faites glisser le composant suivant sur les lignes sélectionnées. En savoir plus sur les [répartitions](/help/components/dimensions/t-breakdown-fa.md).
 * Les lignes peuvent être [segmentées](/help/components/segments/seg-overview.md) pour n’afficher que certains éléments. D’autres paramètres sont disponibles dans les [Paramètres des lignes](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md).
 
 ### Colonnes
 
-* Les composants peuvent être empilés dans des colonnes afin de créer des mesures segmentées, des analyses sur plusieurs onglets, etc.
+* Les composants peuvent être empilés dans des colonnes afin de créer des mesures segmentées, des analyses croisées, etc.
 * La vue de chaque colonne peut être ajustée dans les [Paramètres des colonnes](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md).
 * Plusieurs actions sont disponibles dans le [menu contextuel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu). Ce menu propose différentes actions selon que vous sélectionnez l’en-tête, les lignes ou les colonnes du tableau.
 
@@ -119,7 +126,7 @@ Les options de [menu contextuel](../freeform-analysis-visualizations.md#context-
 | **[!UICONTROL Dupliquer la visualisation]** | Créez un doublon exact de la visualisation. |
 | **[!UICONTROL Modifier la description]** | Ajoutez (ou modifiez) une description textuelle de la visualisation. Consultez [Texte](../text.md). |
 | **[!UICONTROL Obtenir le lien de la visualisation]** | Copiez et partagez un lien directement vers la visualisation. Une boîte de dialogue Partager le lien affiche le lien. Sélectionnez Copier pour copier le lien dans votre presse-papiers. |
-| **[!UICONTROL Recommencer]** | Supprimez la configuration de la visualisation actuelle afin que vous puissiez la reconfigurer de zéro. |
+| **[!UICONTROL Recommencer]** | Supprimer la configuration de la visualisation actuelle afin de pouvoir la reconfigurer à partir de zéro. |
 
 
 >[!MORELIKETHIS]

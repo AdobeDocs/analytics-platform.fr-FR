@@ -10,30 +10,46 @@ autotag-review: '2026-05-19T08:05:36.015Z'
 TQID: 'https://experienceleague.adobe.com/bPTcvFJRFMoTueec6I8Dtk1ajv5qrmZhHfLVycDLuBw'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
   - id: d3f42e9e-bb51-4077-a732-358b801d8b29
+    internal-label: Customer Journey Analytics B2B
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
   - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: e8abc408-b05c-427f-9e37-f8b033a6b3c3
+    internal-label: Schema
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: addf009e-030a-4310-8534-776a3e62ed48
+    internal-label: Customer lifecycle
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+    internal-label: Measurement
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Insights
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 484
+source-wordcount: '484'
 ht-degree: 94%
-
 ---
-
 # Customer Journey Analytics B2B Edition
 
 {{b2b-edition}}
@@ -41,7 +57,7 @@ ht-degree: 94%
 Adobe Analytics était à l’origine un outil d’analyse web et numérique pour les responsables marketing, tandis que Customer Journey Analytics a élargi la portée pour inclure les données multicanaux, hors ligne et sur plusieurs plateformes.  Ces deux outils aident les entreprises B2C (Business to Consumer) à analyser et à optimiser leurs efforts marketing et leurs expériences client. Concentrez-vous sur **le reporting et l’analyse basés sur la personne** : examinez le parcours client, où le client ou la cliente est une personne qui interagit avec votre marque sur plusieurs canaux.
 
 Image principale de ![B2B](assets/b2b-image.png)
-Customer Journey Analytics B2B edition ajoute **rapports et analyses basés sur les comptes**. Dans les ventes B2B (business-to-business), le parcours d’achat implique plusieurs parties, des points de contact en ligne et hors ligne, ainsi que des étapes clés avant de conclure une transaction. Les entreprise B2B doivent suivre toutes ces interactions dans une vue de parcours unifiée pour analyser et optimiser efficacement leurs efforts de marketing et leurs expériences de compte.
+Customer Journey Analytics B2B edition ajoute **rapports et analyses basés sur les comptes**. Dans les ventes B2B (business-to-business), le parcours d’achat implique plusieurs parties, des points de contact en ligne et hors ligne, ainsi que des étapes clés avant de conclure une transaction. Les entreprises B2B doivent suivre toutes ces interactions dans une vue de parcours unifiée pour analyser et optimiser efficacement leurs efforts marketing et leurs expériences de compte.
 
 Les caractéristiques de vente B2B standard sont les suivantes :
 
@@ -50,11 +66,11 @@ Les caractéristiques de vente B2B standard sont les suivantes :
 * Plusieurs personnes influenceuses et en charge des décisions, formant généralement un « groupe d’achat »
 * Acheteurs et acheteuses mieux informés
 * Importance accrue accordée à la fidélisation client et à la montée en gamme
-* Attente des acheteurs et acheteuses B2B de la génération Y d’une expérience d’achat plus fluide que celle des « consommateurs et consommatrices numériques »
+* Les acheteurs B2B de la génération Y s’attendent à une expérience d’achat plus fluide, semblable à celle des consommateurs numériques.
 
-Le marketing B2B se concentre sur l’optimisation des points de contact et la réduction du cycle d’achat et de considération. Étant donné que les cycles de vente B2B reposent largement sur des réunions en personne, des interactions hors ligne telles que des événements en direct et la collaboration avec des groupes d’achat, les données numériques basées sur les personnes seules ne suffisent pas. Les organisations B2B complètent ces données avec des données issues de systèmes CRM et de solutions spécialisées. Pourtant, les composants marketing B2C traditionnels, commes les leads, les campagnes, les canaux et les visiteurs et visiteuses du site jouent toujours un rôle crucial dans le marketing B2B.
+Le marketing B2B se concentre sur l’optimisation des points de contact et la réduction du cycle d’achat et de considération. Étant donné que les cycles de vente B2B reposent largement sur des réunions en personne, des interactions hors ligne telles que des événements en direct et la collaboration avec des groupes d’achat, les données numériques basées sur les personnes seules ne suffisent pas. Les organisations B2B complètent ces données avec des données issues de systèmes CRM et de solutions spécialisées. Pourtant, les composantes traditionnelles du marketing B2C, telles que les leads, les campagnes, les canaux et les visiteurs du site, continuent de jouer un rôle crucial dans le marketing B2B.
 
-Les ventes et le marketing B2B ont évolué au-delà des entonnoirs traditionnels de génération de leads pour se concentrer sur les cycles de vie des clientes et clients et les groupes d’achat. Ce changement reflète la nature changeante de l’achat B2B, où les décisions impliquent plusieurs parties prenantes à travers différents points de contact. Les acheteurs et acheteuses B2B d’aujourd’hui suivent un processus décisionnel complexe et non linéaire. Comme les clientes et clients B2C, ces personnes préfèrent effectuer des recherches de manière indépendante avant de contacter les équipes commerciales. Le bouche à oreille et les médias sociaux jouent désormais un rôle clé dans leurs décisions d’achat.
+Les ventes et le marketing B2B ont évolué au-delà des entonnoirs traditionnels de génération de leads pour se concentrer sur les cycles de vie des clientes et clients et les groupes d’achat. Ce changement reflète la nature changeante de l’achat B2B, où les décisions impliquent plusieurs parties prenantes à travers différents points de contact. Les acheteurs et acheteuses B2B d’aujourd’hui suivent un processus décisionnel complexe et non linéaire. Comme les clientes et clients B2C, ces personnes préfèrent effectuer des recherches de manière indépendante avant de contacter les équipes commerciales. Le bouche à oreille et les réseaux sociaux jouent désormais un rôle clé dans l’orientation de leurs décisions d’achat.
 
 Les responsables marketing B2B sont soumis à une pression croissante pour démontrer comment leurs activités contribuent à la génération de revenus.  Bien qu’il soit essentiel d’aligner les efforts marketing sur les objectifs commerciaux et de mesurer l’impact sur les revenus, de nombreux outils de mesure sont conçus pour les scénarios B2C. Par conséquent, les responsables marketing B2B recherchent des outils dédiés qui fournissent des informations précises et s’alignent sur leurs objectifs spécifiques.
 

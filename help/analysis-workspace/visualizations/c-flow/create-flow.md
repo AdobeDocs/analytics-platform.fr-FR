@@ -8,43 +8,49 @@ autotag-review: '2026-05-19T08:39:50.563Z'
 TQID: 'https://experienceleague.adobe.com/QqjZAQQWPWP8ykksBH5k9TrW8Cgd-Lt6mSnczBREGfs'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
 subfeature_v2:
   - id: ddf59f64-0e46-4986-a525-056acc143c70
+    internal-label: Workspace visualizations
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Customer journeys
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1852
+source-wordcount: '1852'
 ht-degree: 83%
-
 ---
-
 # Configurer une visualisation de flux {#configure-a-flow-visualization}
 
 >[!CONTEXTUALHELP]
 >id="workspace_flow_startswith"
 >title="Commence par"
->abstract="Ce champ peut uniquement être défini dans la version initiale. Pour mettre à jour ce champ, sélectionnez **[!UICONTROL Réinitialiser]** pour créer une visualisation Flux."
+>abstract="Ce champ peut uniquement être défini lors de la création initiale. Pour mettre à jour ce champ, sélectionnez **[!UICONTROL Réinitialiser]** pour créer une visualisation Flux."
 
 >[!CONTEXTUALHELP]
 >id="workspace_flow_contains"
 >title="Contient"
->abstract="Ce champ peut uniquement être défini dans la version initiale. Pour mettre à jour ce champ, sélectionnez **[!UICONTROL Réinitialiser]** pour créer une visualisation Flux."
+>abstract="Ce champ peut uniquement être défini lors de la création initiale. Pour mettre à jour ce champ, sélectionnez **[!UICONTROL Réinitialiser]** pour créer une visualisation Flux."
 
 >[!CONTEXTUALHELP]
 >id="workspace_flow_endswith"
 >title="Se termine par"
->abstract="Ce champ peut uniquement être défini dans la version initiale. Pour mettre à jour ce champ, sélectionnez **[!UICONTROL Réinitialiser]** pour créer une visualisation Flux."
+>abstract="Ce champ peut uniquement être défini lors de la création initiale. Pour mettre à jour ce champ, sélectionnez **[!UICONTROL Réinitialiser]** pour créer une visualisation Flux."
 
 >[!CONTEXTUALHELP]
 >id="workspace_flow_pathingdimension"
 >title="Dimension du cheminement"
->abstract="Sélectionnez une dimension à utiliser comme chemin d’accès ou de sortie du composant sélectionné."
+>abstract="Sélectionnez une dimension à utiliser pour le chemin menant au composant sélectionné ou partant de celui-ci."
 
 >[!CONTEXTUALHELP]
 >id="workspace_flow_container"
@@ -69,17 +75,17 @@ ht-degree: 83%
 >[!CONTEXTUALHELP]
 >id="workspace_flow_numberofcolumns"
 >title="Nombre de colonnes"
->abstract="Ce champ peut uniquement être défini dans la version initiale. Pour mettre à jour ce champ, sélectionnez **[!UICONTROL Réinitialiser]** pour créer une visualisation Flux."
+>abstract="Ce champ peut uniquement être défini lors de la création initiale. Pour mettre à jour ce champ, sélectionnez **[!UICONTROL Réinitialiser]** pour créer une visualisation Flux."
 
 >[!CONTEXTUALHELP]
 >id="workspace_flow_itemsexpandedpercolumn"
 >title="Éléments développés par colonne"
->abstract="Ce champ peut uniquement être défini dans la version initiale. Pour mettre à jour ce champ, sélectionnez **[!UICONTROL Réinitialiser]** pour créer une visualisation Flux."
+>abstract="Ce champ peut uniquement être défini lors de la création initiale. Pour mettre à jour ce champ, sélectionnez **[!UICONTROL Réinitialiser]** pour créer une visualisation Flux."
 
 >[!CONTEXTUALHELP]
 >id="workspace_flow_resettoupdate"
 >title="Réinitialiser pour mettre à jour"
->abstract="Ce champ peut uniquement être défini dans la version initiale. Pour mettre à jour ce champ, sélectionnez **[!UICONTROL Réinitialiser]** pour créer une visualisation Flux."
+>abstract="Ce champ peut uniquement être défini lors de la création initiale. Pour mettre à jour ce champ, sélectionnez **[!UICONTROL Réinitialiser]** pour créer une visualisation Flux."
 
 
 Les visualisations de flux vous aident à comprendre le parcours provenant d’un événement de conversion spécifique sur votre site web ou votre application. Ou menant à un événement de conversion spécifique. La visualisation trace un chemin d’accès à travers vos dimensions (et éléments de dimension) ou mesures.
@@ -92,7 +98,7 @@ Vous pouvez configurer le début ou la fin du chemin qui vous intéresse. Vous p
 
 1. Ajoutez une visualisation ![GraphPathing](/help/assets/icons/GraphPathing.svg) **[!UICONTROL Flux]**. Voir [Ajouter une visualisation à un panneau](../freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
 
-1. Ancrez votre visualisation de flux à l’aide de l’une des options suivantes :
+1. Utilisez l’une des options suivantes pour ancrer votre visualisation Flux :
 
    * [!UICONTROL **Commence par**] (mesures, dimensions ou éléments) ou
    * [!UICONTROL **Contient**] (dimensions ou éléments) ou
@@ -117,7 +123,7 @@ Vous pouvez configurer le début ou la fin du chemin qui vous intéresse. Vous p
 
    | Paramètre | Description |
    | --- | --- |
-   | **[!UICONTROL Développer les étiquettes]** | Habituellement, les étiquettes sur les éléments de flux sont tronquées pour gagner de l’espace à l’écran, mais vous pouvez afficher l’étiquette complète en cochant cette case.  Valeur par défaut = non coché. |
+   | **[!UICONTROL Développer les étiquettes]** | En règle générale, les libellés des éléments de la visualisation Flux sont tronqués afin d’économiser de l’espace à l’écran, mais vous pouvez afficher le libellé complet en cochant cette case.  Valeur par défaut = non coché. |
    | **[!UICONTROL Inclure des instances de répétition]** | Les visualisations Flux sont basées sur des instances d’une dimension. Ce paramètre vous donne la possibilité d’inclure ou d’exclure des instances de répétition, telles que des actualisations de page. Toutefois, les répétitions ne peuvent pas être supprimées des visualisations Flux qui incluent des dimensions à valeurs multiples, comme des listVars, listProps, s.product, eVars de marchandisage, etc. <p>Par défaut, cette option est désactivée.</p> |
    | **[!UICONTROL Limiter à la première/dernière occurrence]** | Limitez les chemins à ceux qui commencent ou se terminent par la première ou la dernière occurrence d’une dimension, d’un élément ou d’une mesure. Voir [Limiter à la première/dernière occurrence](#example-scenario-for-limit-to-firstlast-occurrence) pour obtenir une explication plus détaillée. |
    | **[!UICONTROL Nombre de colonnes]** | Nombre de colonnes souhaité dans le diagramme de flux. Vous pouvez spéficier 5 colonnes maximum. |
@@ -181,7 +187,7 @@ Utilisez un menu contextuel sur n’importe quel nœud de la visualisation Flux 
 
 | Option | Description |
 |--- |--- |
-| **[!UICONTROL Se concentrer sur ce nœud]** | Fait la mise au point sur le nœud sélectionné. Le nœud d’intérêt s’affiche au centre du diagramme Flux. |
+| **[!UICONTROL Se concentrer sur ce nœud]** | Fait la mise au point sur le nœud sélectionné. Le nœud sélectionné s’affiche au centre du diagramme Flux. |
 | **[!UICONTROL Recommencer]** | Vous renvoie au créateur de diagrammes à structure libre, dans lequel vous pouvez créer un autre diagramme de flux. |
 | **[!UICONTROL Créer un segment pour ce chemin]** | Création d’un segment. Cette sélection vous permet d’accéder au créateur de segments, où vous pouvez configurer le nouveau segment. |
 | **[!UICONTROL Répartition]** | Permet de ventiler le nœud d’après les dimensions, les mesures ou le temps disponibles. |
@@ -211,7 +217,7 @@ Dans l’exemple ci-dessous, **toutes** les occurrences des éléments *Catégor
 
   Dans l’exemple ci-dessous, seules les **dernières** occurrences des éléments *Catégorie principale de produit* et *Ajouter au panier* à chaque étape du flux sont incluses.
   ![Lint, commencer](assets/limitonlast.png)
-* La série utilisée diffère en fonction du conteneur. Si vous utilisez le conteneur **[!UICONTROL Session]**, la série d’événements est limitée à une session.  Si vous utilisez l’un des autres conteneurs (par exemple, **[!UICONTROL Personne]** ou **[!UICONTROL Compte]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} ou **[!UICONTROL Opportunité]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}), la série d’événements est basée sur le conteneur spécifié et peut s’étendre sur plusieurs sessions.
+* La série utilisée diffère en fonction du conteneur. Si vous utilisez le conteneur **[!UICONTROL Session]**, la série d’événements est limitée à une session.  Si vous utilisez l’un des autres conteneurs (par exemple, **[!UICONTROL Personne]** ou **[!UICONTROL Compte]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} ou **[!UICONTROL Opportunité]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}), la série d’événements est basée sur le conteneur spécifié et peut s’étendre sur plusieurs sessions.
 * L’option **[!UICONTROL Limiter à la première/dernière occurrence]** peut être configurée dans les paramètres avancés lors de l’utilisation d’une mesure ou d’un élément de dimension dans les champs **[!UICONTROL Commence par]** ou **[!UICONTROL Se termine par]**.
 
 

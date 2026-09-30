@@ -5,28 +5,41 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
 role: Admin
-TQID: https://experienceleague.adobe.com/0y2eqwQxkHefcODFhxXCuioMnL-YCXm21335Z2upPB0
+TQID: 'https://experienceleague.adobe.com/0y2eqwQxkHefcODFhxXCuioMnL-YCXm21335Z2upPB0'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
 subfeature_v2:
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: faea9abd-7024-4c5e-a5b4-87919e09b24b
+    internal-label: Stitching
+  - id: b7fb3355-1f54-4380-bce3-d444b226c0e9
+    internal-label: Cross channel analysis
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
-source-git-commit: 19cf20236196ab9c2518bf299a36d32f65210227
+    internal-label: Customer profiles
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 2383
+source-wordcount: '2383'
 ht-degree: 71%
-
 ---
-
 # Questions fréquentes
 
 Voici quelques questions fréquentes à propos de l’assemblage :
@@ -42,7 +55,7 @@ Vous pouvez utiliser une visualisation de flux avec la dimension Identifiant du 
 1. Connectez-vous à [Customer Journey Analytics](https://analytics.adobe.com) et créez un projet Workspace vierge.
 2. Cliquez sur l’onglet **[!UICONTROL ** Visualisations **]** à gauche, puis faites glisser une visualisation **[!UICONTROL **&#x200B; Flux &#x200B;**]** dans la zone de travail à droite.
 3. Cliquez sur l’onglet **[!UICONTROL ** Composants **]** à gauche, puis faites glisser la dimension **[!UICONTROL ** Identifiant de jeu de données **]** dans l’emplacement central intitulé **[!UICONTROL **&#x200B; Dimension ou élément &#x200B;**]**.
-4. Ce rapport de flux est interactif. Pour étendre les flux aux pages suivantes ou précédentes, sélectionnez l’une des valeurs. Utilisez le menu contextuel pour développer ou réduire des colonnes. Il est également possible d’utiliser différentes dimensions dans le même rapport de flux.
+4. Ce rapport de flux est interactif. Pour développer les flux vers les pages suivantes ou précédentes, sélectionnez l’une des valeurs. Utilisez le menu contextuel pour développer ou réduire des colonnes. Il est également possible d’utiliser différentes dimensions dans le même rapport de flux.
 
 Si vous souhaitez renommer des éléments de dimension Identifiant du jeu de données, vous pouvez utiliser un jeu de données de recherche.
 
@@ -106,11 +119,11 @@ Pour le groupement basé sur les graphiques, une seule personne peut avoir de no
 
 +++Réponse
 
-Le regroupement en direct est disponible environ une semaine après l’activation de la fonction de regroupement par Adobe. La disponibilité du renvoi dépend de la quantité de données existantes. Les petits jeux de données (moins d’un million d’événements par jour) prennent généralement deux jours, tandis que les grands jeux de données (1 milliard d’événements par jour) peuvent prendre une semaine ou plus.
+Le rapprochement en direct est disponible environ une semaine après son activation par Adobe. La disponibilité du renvoi dépend de la quantité de données existantes. Les petits jeux de données (moins d’un million d’événements par jour) prennent généralement deux jours, tandis que les grands jeux de données (1 milliard d’événements par jour) peuvent prendre une semaine ou plus.
 
 +++
 
-## Analyse entre appareils et analyse cross-canal
+## Analytics sur plusieurs appareils et analyse cross-canal
 
 **Question** : Quelle est la différence entre l’analyse entre appareils (une fonctionnalité d’Analytics classique) et l’analyse cross-canal ?
 
@@ -118,7 +131,7 @@ Le regroupement en direct est disponible environ une semaine après l’activati
 
 L’[analyse entre appareils](https://experienceleague.adobe.com/fr/docs/analytics/components/cda/overview) est une fonctionnalité classique, spécifique à Adobe Analytics qui vous permet de comprendre le comportement des personnes sur plusieurs périphériques. Elle offre deux workflows pour lier les données de l’appareil : le regroupement basé sur les champs et le graphique d’appareil.
 
-L’analyse cross-canal est un cas d’utilisation spécifique à Customer Journey Analytics qui vous permet de comprendre le comportement des personnes à la fois sur les appareils et les canaux. Elle assemble l’ID de personne d’un jeu de données, ce qui permet de combiner facilement ce jeu de données avec d’autres. Cette fonctionnalité s’exécute de la même manière que l’assemblage basé sur les champs de l’analyse entre appareils, avec cependant une implémentation distincte en raison de l’architecture des données qui diffère entre la version classique d’Analytics et Customer Journey Analytics. Pour plus d’informations, voir [Assemblage](overview.md) et le cas d’utilisation [Analyse cross-canal](../use-cases/cross-channel/cross-channel.md).
+L’analyse cross-canal est un cas d’utilisation spécifique à Customer Journey Analytics qui vous permet de comprendre le comportement des personnes à la fois sur les appareils et les canaux. Elle assemble l’ID de personne d’un jeu de données, ce qui permet de combiner facilement ce jeu de données avec d’autres. Cette fonctionnalité repose sur une conception similaire à celle du rapprochement basé sur des champs de l’analytics sur plusieurs appareils. Son implémentation est toutefois différente en raison des différences d’architecture des données entre l’outil Analytics traditionnel et Customer Journey Analytics. Pour plus d’informations, voir [Assemblage](overview.md) et le cas d’utilisation [Analyse cross-canal](../use-cases/cross-channel/cross-channel.md).
 
 +++
 
@@ -132,7 +145,7 @@ Adobe gère les demandes d’accès à des informations personnelles conforméme
 
 >[!IMPORTANT]
 >
->Le processus de dégroupement, dans le cadre des demandes d’accès à des informations personnelles , change début 2025. Le processus de dégroupement actuel regroupe les événements à l’aide de la dernière version des identités connues. Cette réaffectation d’événements à une autre identité pourrait avoir des conséquences juridiques indésirables. Pour résoudre ces problèmes, à partir de 2025, le nouveau processus de dégroupement met à jour les événements qui font l’objet de la demande d’accès à des informations personnelles avec l’identifiant persistant.
+>Le processus d’annulation du rapprochement, dans le cadre de ces demandes, change à compter du début de l’année 2025. Le processus de dégroupement actuel regroupe les événements à l’aide de la dernière version des identités connues. Cette réaffectation d’événements à une autre identité pourrait avoir des conséquences juridiques indésirables. Pour remédier à ces problèmes, à compter de 2025, le nouveau processus met à jour les événements faisant l’objet de la demande d’accès à des informations personnelles avec l’ID persistant.
 > 
 
 À titre d’illustration, imaginez les données suivantes pour les identités et les événements avant et après l’assemblage.
@@ -159,7 +172,7 @@ Adobe gère les demandes d’accès à des informations personnelles conforméme
 
 **Processus actuel pour les demandes d’accès à des informations personnelles**
 
-Lorsqu’une demande d’accès à des informations personnelles est reçue pour le client avec le CustID Bob, les lignes comportant des entrées barrées sont supprimées. Les autres événements sont assemblés à l’aide du mappage d’identités. Par exemple, le premier identifiant assemblé dans le jeu de données assemblé est mis à jour en tant qu’**Alex**.
+Lorsqu’une telle demande est reçue pour le client dont le CustID est Bob, les lignes contenant des entrées barrées sont supprimées. Les autres événements sont à nouveau rapprochés à l’aide du mappage d’identité. Par exemple, le premier identifiant assemblé dans le jeu de données assemblé est mis à jour en tant qu’**Alex**.
 
 | Mappage d’identité | ID | date et heure | ID persistant | espace de nom persistant | ID de personne | espace de nom de personne |
 |:---:|---|---|---|---|---|---|
@@ -183,7 +196,7 @@ Lorsqu’une demande d’accès à des informations personnelles est reçue pour
 
 **Nouveau processus pour les demandes d&#39;accès à des informations personnelles**
 
-Lorsqu’une demande d’accès à des informations personnelles est reçue pour le client avec le CustID Bob, les lignes comportant des entrées barrées sont supprimées. Les autres événements sont regroupés à l’aide de l’identifiant persistant. Par exemple, le premier identifiant assemblé dans le jeu de données assemblé est mis à jour en tant que **123**.
+Lorsqu’une telle demande est reçue pour le client dont le CustID est Bob, les lignes contenant des entrées barrées sont supprimées. Les autres événements sont regroupés à l’aide de l’identifiant persistant. Par exemple, le premier identifiant assemblé dans le jeu de données assemblé est mis à jour en tant que **123**.
 
 | Mappage d’identité | ID | date et heure | ID persistant | espace de nom persistant | ID de personne | espace de nom de personne |
 |:---:|---|---|---|---|---|---|

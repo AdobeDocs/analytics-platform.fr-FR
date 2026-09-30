@@ -6,31 +6,39 @@ feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
 role: User
-TQID: https://experienceleague.adobe.com/9PqVAdD1FP8I5rNimNfSoUrVNOTmMAXaPgMMsYT8gGQ
+TQID: 'https://experienceleague.adobe.com/9PqVAdD1FP8I5rNimNfSoUrVNOTmMAXaPgMMsYT8gGQ'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: c38ed341-fab2-46df-9d72-88d8166edebb
+    internal-label: Workspace projects
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
+  - id: a3b826fd-7a63-4a83-8736-83eee6668f44
+    internal-label: Curate and share
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: User
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 838
+source-wordcount: '838'
 ht-degree: 50%
-
 ---
-
 # Envoyer et planifier des projets
 
 Vous pouvez envoyer des projets Customer Journey Analytics sous forme de fichiers à des utilisateurs sélectionnés par e-mail. Vous pouvez envoyer des fichiers ad hoc ou configurer les projets à envoyer selon un planning.
 
 Tenez compte des points suivants lors de l’envoi de fichiers :
 
-* Les fichiers peuvent être envoyés au format CSV ou PDF.
+* Les fichiers peuvent être envoyés aux formats CSV ou PDF.
 
 * Toutes les balises appliquées au projet sont automatiquement appliquées à l’export.
 
@@ -101,7 +109,7 @@ Pour envoyer un fichier selon un planning aux destinataires par e-mail :
 
 Adobe utilise le mot de passe pour chiffrer les projets planifiés, qu’ils soient envoyés au format .pdf ou .csv.
 
-Une fois que votre entreprise a acheté et activé le SKU Healthcare Shield, le prompt qui vous invite à créer un mot de passe pour un projet planifié s’affiche dans les cas suivants :
+Une fois que votre entreprise a acheté et activé le SKU Healthcare Shield, l’invite qui vous demande de créer un mot de passe pour un projet planifié s’affiche dans les cas suivants :
 
 * Lorsqu’une personne crée un projet planifié.
 

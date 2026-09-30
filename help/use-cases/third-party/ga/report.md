@@ -1,5 +1,5 @@
 ---
-title: Créer un rapport sur des données de Google Analytics
+title: Effectuer un rapport sur des données de Google Analytics
 description: Affiche des rapports utiles sur les données Google Analytics dans Customer Journey Analytics
 exl-id: a7ac3c8d-c0d9-4fc2-80d7-c2b388250586
 solution: Customer Journey Analytics
@@ -9,32 +9,41 @@ autotag-review: '2026-05-19T09:49:08.813Z'
 TQID: 'https://experienceleague.adobe.com/dRY1wvTEzrhnNsqE-fJq9DyzOAEKTygzSkVb8r6huoM'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
   - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
 subfeature_v2:
   - id: e1bd5a34-b16e-477b-84cc-247fa0793f4b
+    internal-label: Analytics integration
+  - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+    internal-label: Use cases
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: e9001ce2-5245-4a8e-8601-dd958009072f
-source-git-commit: 046df00868ca4a5b3bab3eb36cca7d91b141333a
+    internal-label: Web experience
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 704
+source-wordcount: '704'
 ht-degree: 83%
-
 ---
-
 # Créer un rapport sur des données de Google Analytics
 
 Une fois les données disponibles dans Customer Journey Analytics, les exemples suivants constituent des scénarios utiles pour la création de rapports sur ces données. Pour une recherche complète des équivalents de rapports GA4 dans Customer Journey Analytics, consultez les rapports [GA4 dans Customer Journey Analytics](/help/getting-started/ga-to-cja/reports.md).
 
 ## Visualisation des données web et dʼapplication sous forme de jeux de données combinés
 
-Ce diagramme de Venn montre le chevauchement des utilisateurs de votre site web (à partir de vos données Google Analytics) et de votre application mobile (à partir de vos données Firebase) et de votre centre dʼappel. Vous pouvez également consulter les produits les plus performants, pas seulement sur le web, mais également dans lʼapplication mobile. Vous pouvez même obtenir le chiffre dʼaffaires total des deux à lʼaide dʼune mesure calculée. Remarquez que les principaux produits racontent une autre histoire lorsque vous regardez les chiffres dʼaffaires combinés. Sans les jeux de données combinés, vous nʼauriez jamais su que la « casquette en sergé » était si performante.
+Ce diagramme de Venn montre le chevauchement des utilisateurs et utilisatrices de votre site web (à partir de vos données Google Analytics), de votre application mobile (à partir de vos données Firebase) et de votre centre d’appel. Vous pouvez également consulter les produits les plus performants, pas seulement sur le web, mais également dans l’application mobile. Vous pouvez même obtenir le chiffre dʼaffaires total des deux à lʼaide dʼune mesure calculée. Remarquez que les produits les plus performants racontent une autre histoire lorsque vous regardez le chiffre dʼaffaires combiné. Sans les jeux de données combinés, vous nʼauriez jamais su que la « casquette en sergé » était si performante.
 
 ![Jeux de données combinés](../../assets/combined-datasets.png)
 
@@ -52,19 +61,19 @@ Vous pouvez voir quels produits sont à l’origine de la plupart des appels ver
 
 En appliquant une répartition de dimension de « Raison de l’appel », l’exemple affiche un élément de dimension « Produit endommagé ». Lʼétape suivante consisterait à contacter le service de contrôle de la qualité pour savoir pourquoi les clients ont reçu des T-shirts abîmés.
 
-Vous pouvez consulter les pages du site Web qui ont envoyé des appels au centre d’appel. Ce rapport permet de savoir où se trouvent les expériences moins performantes sur le site Web et dʼaider vos responsables de produits à résoudre ces problèmes. L’exemple suivant utilise une mesure calculée avec un modèle d’attribution de participation pour filtrer les données en ne retenant que les sessions qui se sont terminées par un appel au centre d’appels.
+Vous pouvez consulter les pages du site Web qui ont généré des appels vers le centre d’appel. Ce rapport permet de savoir où se trouvent les expériences moins optimales sur le site Web et dʼaider vos chefs de produit à résoudre ces problèmes. L’exemple suivant utilise une mesure calculée avec un modèle d’attribution de participation pour filtrer les données en ne retenant que les sessions qui se sont terminées par un appel au centre d’appels.
 
 L’exemple suivant montre que les pages « Shopping Cart » (« Panier ») et « Checkout Information » (« Informations sur le passage en caisse ») génèrent la plupart des appels.
 
 ![Pages de contribution](../../assets/contributing-pages.png)
 
-La table de cohorte vous permet de voir combien de temps il faut généralement aux utilisateurs pour appeler le centre d’appels après avoir consulté le site Web. L’exemple suivant indique que la durée moyenne de cet exemple de jeu de données est comprise entre trois et quatre semaines.
+La table de cohorte vous permet de voir combien de temps il faut généralement aux utilisateurs et utilisatrices pour appeler le centre d’appel après avoir consulté le site Web. L’exemple suivant indique que la durée moyenne de cet exemple de jeu de données est comprise entre trois et quatre semaines.
 
 ![Cohorte](../../assets/cohort.png)
 
 ## Utiliser lʼattribution marketing avancée
 
-Customer Journey Analytics vous permet d’utiliser des modèles d’attribution sophistiqués sur les données cross-canal. Dans lʼexemple suivant, vous pouvez comparer les applications de lʼattribution de chiffre dʼaffaires Dernière touche, Première touche, En U et Algorithmique à la dimension Groupes de canaux de Google Analytics.
+Customer Journey Analytics vous permet d’utiliser des modèles d’attribution sophistiqués sur les données cross-canal. Dans lʼexemple suivant, vous pouvez comparer lʼattribution du chiffre dʼaffaires selon les modèles Dernière touche, Première touche, en U et algorithmique appliqués à la dimension Groupes de canaux de Google Analytics.
 
 ![Attribution marketing](../../assets/mktg-attribution.png)
 
@@ -76,7 +85,7 @@ L’attribution vous permet également de segmenter vos données. Vous pouvez co
 
 ![Segment](../../assets/filter.png)
 
-Vous pouvez également attribuer votre revenu issu du site Web et de l’application à votre contenu publicitaire Google. L’exemple de ce jeu de données a généré plus de chiffre d’affaires à partir de l’application mobile pilotée par de Google Ads en ligne qu’à partir du Web. En triant les annonces en fonction des revenus tirés du Web et des applications, vous obtenez une vision différente des Google Ads les plus performantes.
+Vous pouvez également attribuer votre revenu issu du site Web et de l’application à votre contenu publicitaire Google. L’exemple de ce jeu de données a généré plus de chiffre d’affaires grâce à l’application mobile alimentée par des annonces Google en ligne que grâce au Web. En triant les annonces en fonction des revenus tirés du Web et des applications, vous obtenez une vision différente des Google Ads les plus performantes.
 
 ![Annonce Google](../../assets/google-ad.png)
 

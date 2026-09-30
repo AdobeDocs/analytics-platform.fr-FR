@@ -5,26 +5,35 @@ exl-id: d1739b7d-3410-4c61-bb08-03dd4161c529
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-TQID: https://experienceleague.adobe.com/ur8f2cMDdoncdUzZ8FDAUYbJZ-8JOyAKKZ5p5Go-OkM
+TQID: 'https://experienceleague.adobe.com/ur8f2cMDdoncdUzZ8FDAUYbJZ-8JOyAKKZ5p5Go-OkM'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+    internal-label: Use cases
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Data collection
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1089
+source-wordcount: '1089'
 ht-degree: 48%
-
 ---
-
 # Utiliser les dimensions du canal marketing
 
 Si votre entreprise utilise le [connecteur source Analytics](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/analytics) pour importer les données des suites de rapports dans Customer Journey Analytics, vous pouvez configurer une connexion dans Customer Journey Analytics pour créer des rapports sur les dimensions de canal marketing.
@@ -69,7 +78,7 @@ Vos dimensions de canal marketing sont désormais disponibles dans Analysis Work
 
 Les paramètres de canal marketing fonctionnent de façon différente sur les données de Platform et les données des suites de rapports. Tenez compte des différences suivantes lors de la configuration des canaux marketing pour Customer Journey Analytics :
 
-* **Est la première page de la visite** : ce critère de règle est commun à plusieurs définitions de canal marketing par défaut. Toute règle de traitement qui contient ce critère est ignorée dans Platform (les autres critères de ladite règle s’appliquent toujours). La détermination des sessions s’effectue au moment de la requête des données plutôt qu’au moment de leur collecte, ce qui empêche Platform d’utiliser ces critères de règle spécifiques. Adobe recommande de réévaluer toute règle de traitement des canaux marketing contenant les critères ‘Est la première page de la visite’, en optant pour d’autres approches qui atteignent vos objectifs.
+* **Est la première page de la visite** : ce critère de règle est commun à plusieurs définitions de canal marketing par défaut. Toute règle de traitement qui contient ce critère est ignorée dans Platform (les autres critères de ladite règle s’appliquent toujours). La détermination des sessions s’effectue au moment de la requête des données plutôt qu’au moment de leur collecte, ce qui empêche Platform d’utiliser ces critères de règle spécifiques. Adobe recommande de réévaluer toute règle de traitement des canaux marketing contenant le critère « Est la première page de la visite » et de privilégier d’autres approches pour atteindre vos objectifs.
 
   ![Première page de la visite](../assets/first-page-of-visit.png)
 
@@ -91,4 +100,4 @@ Les paramètres de canal marketing fonctionnent de façon différente sur les do
 * Vérifiez à nouveau que votre connexion utilise la même suite de rapports qu’Adobe Analytics. Si votre connexion Customer Journey Analytics contient plusieurs suites de rapports avec leurs propres règles de traitement des canaux marketing, il n’est pas facile de la comparer à Adobe Analytics. Créez une connexion distincte pour chaque suite de rapports afin de comparer les données.
 * Assurez-vous de comparer les mêmes périodes et que le paramètre de fuseau horaire défini dans votre vue de données est identique à celui de la suite de rapports.
 * Utilisez un modèle d’attribution personnalisé lors de l’affichage des données d’une suite de rapports. Par exemple, utilisez la dimension [Canal marketing](https://experienceleague.adobe.com/fr/docs/analytics/components/dimensions/marketing-channel) avec des mesures qui utilisent un modèle d’attribution autre que celui par défaut. Adobe déconseille de comparer le [canal First Touch](https://experienceleague.adobe.com/fr/docs/analytics/components/dimensions/first-touch-channel) ou le [canal Last Touch](https://experienceleague.adobe.com/fr/docs/analytics/components/dimensions/last-touch-channel) aux dimensions par défaut, car ils dépendent de l’attribution collectée dans la suite de rapports. Customer Journey Analytics ne repose pas sur les données d’attribution d’une suite de rapports. Au lieu de cela, il est calculé lors de l’exécution d’un rapport Customer Journey Analytics.
-* Certaines mesures ne présentent pas de comparaison raisonnable en raison des différences architecturales entre les données de la suite de rapports et celles de Platform. Par exemple, les visites/sessions, les personnes/personnes et les occurrences/événements.
+* Certaines mesures ne permettent pas de comparaison pertinente en raison des différences architecturales entre les données des suites de rapports et celles de Platform. Par exemple, les visites/sessions, les personnes/personnes et les occurrences/événements.

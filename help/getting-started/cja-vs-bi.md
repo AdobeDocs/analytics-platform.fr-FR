@@ -5,40 +5,56 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: ae66cd06-7ec1-4174-a3cf-939c3a66b840
-TQID: https://experienceleague.adobe.com/EQ6tDK5VUq5-OQOZtLCoaqh-HBHMsU9c8Bfizy9BcPs
+TQID: 'https://experienceleague.adobe.com/EQ6tDK5VUq5-OQOZtLCoaqh-HBHMsU9c8Bfizy9BcPs'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: aff2ef09-fc60-4018-9197-e2befd623064
+    internal-label: Anomaly detection
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+    internal-label: Audiences
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Machine learning
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1680
+source-wordcount: '1680'
 ht-degree: 100%
-
 ---
-
 # Comparer Customer Journey Analytics aux solutions BI
 
-Avec l’accent mis actuellement sur l’expérience client, les marques nécessitent des solutions avancées pour mieux comprendre le parcours client holistique. La compréhension de ce parcours client complet vous permet d’analyser et d’obtenir des insights précieux sur la manière dont les canaux en ligne et hors ligne interagissent avec les clients et les clientes et mènent à une augmentation de la conversion, de la rétention et de la fidélité. Dans ce contexte, un parcours client peut être la commande en ligne directe d’un repas dans une chaîne alimentaire de sushis. Ou l’achat d’une nouvelle voiture, où le client ou la cliente associe la recherche en ligne avec des visites dans la salle d’exposition du concessionnaire, et un achat final en personne.
+Compte tenu de l’importance accordée actuellement à l’expérience client, les marques ont besoin de solutions avancées pour mieux comprendre le parcours client dans sa globalité. La compréhension de ce parcours client complet vous permet d’analyser et d’obtenir des insights précieux sur la manière dont les canaux en ligne et hors ligne interagissent avec les clients et les clientes et mènent à une augmentation de la conversion, de la rétention et de la fidélité. Dans ce contexte, un parcours client peut être la commande en ligne directe d’un repas dans une chaîne alimentaire de sushis. Ou l’achat d’une nouvelle voiture, où le client ou la cliente associe la recherche en ligne avec des visites dans la salle d’exposition du concessionnaire, et un achat final en personne.
 
 De nombreuses entreprises ont consolidé leurs données omnicanales dans un lac de données ou un entrepôt de données. Les outils de Business Intelligence (BI) sont utilisés en plus de ces entrepôts de données pour fournir les rapports, visualisations et insights dont l’entreprise a besoin pour comprendre le parcours client. Souvent, cette combinaison de solutions et d’outils est un objectif général par nature et par conception, et n’est pas axé explicitement sur le client. Customer Journey Analytics se concentre sur l’autonomisation des responsables de l’expérience client, tels que les spécialistes du marketing, les analystes de données et les spécialistes des données. L’outil leur permet de visualiser le parcours client dans son contexte intégral, sur tous les canaux en temps réel et sans les limites que présentent de nombreux autres outils de BI.
 
-Cette section de la documentation explique les différences fondamentales entre Customer Journey Analytics et les outils de BI couramment utilisés, tout d’abord en examinant le workflow général utilisé pour atteindre l’objectif mentionné ci-dessus : comprendre le parcours client. Elle fournit ensuite de plus amples détails sur les différences de stockage, de collecte et d’interrogation des données entre les outils Customer Journey Analytics et BI. Enfin, elle explique les différences de fonctionnalités de visualisation.
+Cette section de la documentation explique les différences fondamentales entre Customer Journey Analytics et les outils de BI couramment utilisés, tout d’abord en examinant le workflow général utilisé pour atteindre l’objectif mentionné ci-dessus : comprendre le parcours client. Elle fournit ensuite des informations plus détaillées sur les différences entre Customer Journey Analytics et les outils de BI en matière de stockage, de collecte et d’interrogation des données. Enfin, elle explique les différences de fonctionnalités de visualisation.
 
 ## Workflow BI traditionnel
 
@@ -52,7 +68,7 @@ Chacune de ces étapes peut prendre des heures, des jours ou même des semaines.
 
 ## Customer Journey Analytics : workflow démocratisé pour les données en ligne et hors ligne
 
-Customer Journey Analytics fournit un environnement permettant de connecter des données cross-canal en ligne et hors ligne au niveau global du client ou de la cliente dans le seul but de comprendre le parcours client. Il nécessite une configuration initiale pour [connecter](/help/connections/overview.md) et [définir des vues](/help/data-views/data-views.md) aux données que vous qualifiez comme pertinentes. Une fois ces données terminées, elles peuvent être analysées et explorées en permanence. Vous pouvez progressivement obtenir des insights sur les parcours client pour mieux les comprendre. En démocratisant les données combinées en ligne et hors ligne, vous pouvez répondre en quelques secondes aux questions liées au parcours client.
+Customer Journey Analytics fournit un environnement permettant de connecter des données cross-canal en ligne et hors ligne au niveau global du client ou de la cliente dans le seul but de comprendre le parcours client. Il nécessite une configuration initiale pour [connecter](/help/connections/overview.md) et [définir des vues](/help/data-views/data-views.md) aux données que vous qualifiez comme pertinentes. Cependant, une fois cette configuration terminée, ces données sont immédiatement disponibles pour une analyse et une exploration continues. Vous pouvez progressivement obtenir des insights sur les parcours client pour mieux les comprendre. En démocratisant les données combinées en ligne et hors ligne, vous pouvez répondre en quelques secondes aux questions liées au parcours client.
 
 ![Workflow Customer Journey Analytics comme décrit dans cette section](./assets/cjaworkflow.png)
 
@@ -62,13 +78,13 @@ Vous pouvez utiliser Customer Journey Analytics pour poser des questions à l�
 
 Customer Journey Analytics utilise une architecture propriétaire puissante qui distribue l’analyse sur des centaines (voire des milliers) de serveurs afin d’afficher les données dans Analysis Workspace en quelques secondes. Voici quelques propriétés remarquables de cette architecture de traitement :
 
-* **Optimisé pour les requêtes individuelles associées aux clients et aux clients** : d’un point de vue technique, Customer Journey Analytics stocke les données dans un moteur de création de rapports distribué qui fait largement appel à la mise en cache. Ce moteur est adapté aux requêtes réactives sur les données d’événement de niveau individuel et, de ce fait, parfaitement optimisé pour les requêtes associées aux clients et aux clientes. Le moteur de création de rapport stocke les données dans des indices bitmap orientés colonne qui permettent un calcul rapide et à la volée des mesures agrégées. Il dispose d’un moteur de segmentation complet qui permet d’effectuer une segmentation/analyse d’audience performante. Et il offre une compréhension essentielle de la séquence parmi les points de données, ce qui est utile pour analyser le comportement entre ces points de données (l’ordre dans lequel les choses se sont produites) et pour assigner l’attribution à l’aide de différents modèles complexes.
+* **Optimisé pour les requêtes individuelles associées aux clients et aux clients** : d’un point de vue technique, Customer Journey Analytics stocke les données dans un moteur de création de rapports distribué qui fait largement appel à la mise en cache. Ce moteur est spécialement optimisé pour assurer la réactivité des requêtes portant sur des données d’événement au niveau individuel et, à ce titre, est parfaitement optimisé pour les requêtes relatives aux clients. Le moteur de création de rapport stocke les données dans des indices bitmap orientés colonne qui permettent un calcul rapide et à la volée des mesures agrégées. Il dispose d’un moteur de segmentation complet qui permet d’effectuer une segmentation/analyse d’audience performante. Et il offre une compréhension essentielle de la séquence parmi les points de données, ce qui est utile pour analyser le comportement entre ces points de données (l’ordre dans lequel les choses se sont produites) et pour assigner l’attribution à l’aide de différents modèles complexes.
 
-* **Application rapide de cheminements et de filtres complexes** : le moteur de création de rapports fonctionne sur des jeux de données hiérarchiques et partiellement ordonnés (par exemple, personne -> sessions -> évènements). Toutes les données d’un objet de niveau supérieur (profils individuels) résident sur un seul nœud de traitement pour des résultats précis. Ce découpage permet une application rapide de segments et cheminements complexes. Les opérations complexes telles que la sessionnalisation, l’attribution, la persistance dynamique des attributs de données et les options de manipulation de données complexes sont exécutées à grande échelle avec un temps de création de rapports rapide. Dans le monde de la BI, ces types d’opérations nécessitent généralement la création de cubes OLAP pour chaque cas d’utilisation. Le moteur de création de rapports de Customer Journey Analytics permet un accès illimité à l’ensemble du jeu de données sur chaque requête, ce qui se traduit par des données entièrement corrélées, sans qu’il soit nécessaire de procéder à un cubage préalable.
+* **Application rapide de cheminements et de filtres complexes** : le moteur de création de rapports fonctionne sur des jeux de données hiérarchiques et partiellement ordonnés (par exemple, personne -> sessions -> évènements). Toutes les données d’un objet de niveau supérieur (profils individuels) résident sur un seul nœud de traitement pour des résultats précis. Ce découpage permet une application rapide de segments et cheminements complexes. Les opérations complexes, telles que la sessionisation, l’attribution, la persistance avec état des attributs de données et les options complexes de manipulation des données, sont exécutées à grande échelle tout en garantissant une création rapide des rapports. Dans le monde de la BI, ces types d’opérations nécessitent généralement la création de cubes OLAP pour chaque cas d’utilisation. Le moteur de création de rapports de Customer Journey Analytics permet un accès illimité à l’ensemble du jeu de données sur chaque requête, ce qui se traduit par des données entièrement corrélées, sans qu’il soit nécessaire de procéder à un cubage préalable.
 
 * **Requête efficace de flux de données complexes** : l’une des plus grandes différences du moteur de création de rapports comparé aux bases de données SQL et NoSQL traditionnelles est sa capacité à déterminer des prédicats en fonction des relations orientées séquence à un niveau fondamental. Ces opérations d’interrogation fondamentales peuvent examiner le flux d’enregistrement, qui est composé de nombreuses séquences entrelacées (et même imbriquées). Elles exécutent une requête sur tous ces flux de données entrelacés avec l’efficacité d’une seule opération de séquence contiguë.
 
-* **Conçu pour répondre rapidement à des requêtes volumineuses** : le moteur de création de rapports n’a pas un objectif aussi général que les systèmes Big Data traditionnels. Cependant, il est spécialement conçu pour répondre aux requêtes qui s’étendent sur des millions (voire des milliards) d’enregistrements (données d’événement/événements d’expérience), généralement en moins d’une seconde. Contrairement à d’autres systèmes Big Data, il ne procède pas en échantillonnant les données ou en pré-calculant les réponses à toutes les questions qu’il pense que vous pourriez poser. Au lieu de cela, il est capable de calculer les réponses assez rapidement pour prendre en charge les cas d’utilisation des requêtes interactives. Cette conception spécifique du moteur de création de rapports de Customer Journey Analytics facilite la disponibilité et la rapidité des données pour une analyse et une exploration continues, ce qui vous permet d’obtenir progressivement des informations et une compréhension des parcours clients.
+* **Conçu pour répondre rapidement à des requêtes volumineuses** : le moteur de création de rapports n’a pas un objectif aussi général que les systèmes Big Data traditionnels. Cependant, il est spécifiquement conçu pour traiter des requêtes portant sur des millions, voire des milliards d’enregistrements (données d’événement/événements d’expérience), généralement en moins d’une seconde. Contrairement à d’autres systèmes de big data, il ne procède pas en échantillonnant les données ni en précalculant les réponses à toutes les questions qu’il pense que vous pourriez poser. Au lieu de cela, il est capable de calculer les réponses assez rapidement pour prendre en charge les cas d’utilisation des requêtes interactives. Cette conception spécifique du moteur de création de rapports de Customer Journey Analytics facilite la disponibilité et la rapidité des données pour une analyse et une exploration continues, ce qui vous permet d’obtenir progressivement des informations et une compréhension des parcours clients.
 
 * **Agit comme une solution BI découplée** : lorsque vous définissez vos dimensions, mesures et segments à un seul endroit, tout client Customer Journey Analytics (y compris notre API publique Customer Journey Analytics) peut accéder à ces composants. Ce processus extrait les requêtes complexes des utilisateurs finaux et utilisatrices finales et garantit que les résultats sont les mêmes, quel que soit le client de création de rapports ou de visualisation que vous utilisez.
 
@@ -84,9 +100,9 @@ Ces composants de visualisation intègrent des fonctionnalités intelligentes te
 
 * Les **Fonctionnalités d’analyse avancées** qui sont spécifiquement axées sur les informations du parcours client, comme les [diagrammes de flux](/help/analysis-workspace/visualizations/c-flow/flow.md), le [panneau d’attributions](/help/analysis-workspace/c-panels/attribution.md), les [diagrammes d’abandons](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) et les [répartitions de dimensions](/help/components/dimensions/t-breakdown-fa.md). Voici quelques exemples de visualisations prêtes à l’emploi :
 
-   * [Analyse de la fidélisation client via des tableaux de cohortes/latence](/help/analysis-workspace/visualizations/cohort-table/cohort-use-cases.md), où vous glissez-déposez simplement des mesures/dimensions dans un créateur et où vous terminez en moins de 30 secondes,
+  * [Analyse de la fidélisation client via des tableaux de cohortes/latence](/help/analysis-workspace/visualizations/cohort-table/cohort-use-cases.md), où vous glissez-déposez simplement des mesures/dimensions dans un créateur et où vous terminez en moins de 30 secondes,
 
-   * Visualisations d’[abandon](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md)/de [flux](/help/analysis-workspace/visualizations/c-flow/create-flow.md). S’installent en moins d’une minute.
+  * Visualisations d’[abandon](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md)/de [flux](/help/analysis-workspace/visualizations/c-flow/create-flow.md). S’installent en moins d’une minute.
 
 * La **Fonction de segmentation à chaque étape de votre exploration progressive** : chaque fois que vous le jugez utile, vous pouvez republier votre audience dans Experience Platform et, de là, vers l’une des destinations prises en charge.
 
@@ -94,9 +110,9 @@ Ces composants de visualisation intègrent des fonctionnalités intelligentes te
 
 * Le **Traitement et la démocratisation** : les tableaux de bord créés dans Customer Journey Analytics peuvent être :
 
-   * [Modifiés](/help/analysis-workspace/curate-share/curate.md) par d’autres personnes de l’organisation pour l’exploration continue,
-   * Exportés vers Excel à l’aide de [Report Builder](/help/report-builder/rb-overview.md) (un plug-in dédié),
-   * [Partagés](/help/analysis-workspace/curate-share/share-projects.md) dans divers formats, notamment [PDF](/help/analysis-workspace/export/download-send.md), [CSV](/help/analysis-workspace/export/download-send.md) et par le biais d’une [application mobile dédiée](/help/mobile-app/home.md), avec les personnes intéressées par les rapports finaux et/ou les visualisations.
+  * [Modifiés](/help/analysis-workspace/curate-share/curate.md) par d’autres personnes de l’organisation pour l’exploration continue,
+  * Exportés vers Excel à l’aide de [Report Builder](/help/report-builder/rb-overview.md) (un plug-in dédié),
+  * [Partagés](/help/analysis-workspace/curate-share/share-projects.md) dans divers formats, notamment [PDF](/help/analysis-workspace/export/download-send.md), [CSV](/help/analysis-workspace/export/download-send.md) et par le biais d’une [application mobile dédiée](/help/mobile-app/home.md), avec les personnes intéressées par les rapports finaux et/ou les visualisations.
 
 Il est difficile de comparer les fonctionnalités de visualisation de Customer Journey Analytics à celles des outils de BI en raison de la variété des visualisations disponibles. Certains outils de BI disposent de visualisations plus avancées, mais Customer Journey Analytics se concentre sur des visualisations interactives et interopérables du parcours client qui vous permettent de ventiler les données en quelques secondes sans vous « facturer » chaque requête supplémentaire.
 

@@ -1,6 +1,6 @@
 ---
 description: Découvrez comment créer des segments à partir d’un point de contact, ajouter des segments en tant que point de contact et comparer les workflows clés sur différents segments dans une analyse des abandons dans Analysis Workspace.
-keywords: abandons et segmentation ; segments dans l’analyse des abandons ; comparer les segments dans les abandons
+keywords: abandon et segmentation;segments dans l’analyse d’abandon;comparer les segments dans l’abandon
 title: Application De Segments Dans L’Analyse Des Abandons
 feature: Visualizations
 exl-id: 85b1024f-acd2-43b7-b4b1-b10961ba43e8
@@ -9,25 +9,31 @@ autotag-review: '2026-05-19T08:42:20.474Z'
 TQID: 'https://experienceleague.adobe.com/ZJqvJYmUSMfWD-yX3B-qbR5QNq7bjr9xtGN-yPXkl5E'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
 subfeature_v2:
   - id: ddf59f64-0e46-4986-a525-056acc143c70
+    internal-label: Workspace visualizations
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Insights
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 484
+source-wordcount: '484'
 ht-degree: 33%
-
 ---
-
 # Application de segments dans l’analyse des abandons
 
-Dans Analysis Workspace, vous pouvez créer des segments d’après un point de contact, ajouter des segments comme point de contact et comparer des processus clés pour plusieurs segments.
+Dans Analysis Workspace, vous pouvez créer des segments à partir d’un point de contact, ajouter des segments en tant que points de contact et comparer les principaux workflows entre différents segments.
 
 >[!IMPORTANT]
 >
@@ -59,15 +65,15 @@ Should we add B2B context here?
 
 ## Ajout d’un segment comme point de contact
 
-Si, par exemple, pour vos utilisateurs aux États-Unis, vous souhaitez connaître les tendances qui se dégagent et de quelle façon les abandons sont affectés, faites glisser le segment correspondant à ces utilisateurs sur l’abandon :
+Par exemple, si vous souhaitez voir l’évolution de vos utilisateurs américains et leur impact sur les abandons, il vous suffit de faire glisser le segment Utilisateurs américains dans la visualisation Abandon :
 
 ![Le segment Utilisateurs des États-Unis sélectionné et mis en surbrillance pour faire glisser dans l’abandon.](assets/fallout-addfilter.png)
 
 Vous pouvez aussi créer un point de contact ET en faisant glisser le segment des utilisateurs aux États-Unis sur un autre point de contrôle.
 
-## Comparaison des segments dans la visualisation Abandons
+## Comparer des segments dans la visualisation Abandon
 
-Vous pouvez comparer un nombre illimité de segments dans la visualisation Abandons.
+Vous pouvez comparer un nombre illimité de segments dans la visualisation Abandon.
 
 1. Sélectionnez les segments à comparer dans le panneau [!UICONTROL Segment] à gauche. Dans l’exemple, trois segments sont sélectionnés : *Informations de vol : Version de page A*, *Informations de vol : Version de page B* et *Informations de vol : Version de page C*.
 1. Faites glisser les trois segments sur la zone de dépôt de segments en haut de la visualisation.

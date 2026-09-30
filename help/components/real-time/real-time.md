@@ -4,30 +4,40 @@ title: Rapports En Temps Réel - Aperçu
 feature: Real-time Reporting
 role: User
 exl-id: 12fbb760-936d-4e30-958f-764febca5ae7
-TQID: https://experienceleague.adobe.com/Nvg6DVqDq-IwyPJgyDH2nOmNG41-aCRAYohlj7tjrj4
+TQID: 'https://experienceleague.adobe.com/Nvg6DVqDq-IwyPJgyDH2nOmNG41-aCRAYohlj7tjrj4'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
+  - id: d1779026-aeed-458e-a1c7-839d4acac922
+    internal-label: Real-time reporting
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
+    internal-label: Data collection
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 855
+source-wordcount: '855'
 ht-degree: 6%
-
 ---
-
 # Création de rapports en temps réel - Aperçu
 
-Les rapports en temps réel dans Customer Journey Analytics affichent et mettent à jour en temps réel les données et les visualisations au sein d’un ou de plusieurs panneaux dans Analysis Workspace.
+Le reporting en temps réel dans Customer Journey Analytics affiche et met à jour en temps réel les données et les visualisations au sein d’un ou de plusieurs panneaux dans Analysis Workspace.
 
 {{ultimate-package}}
 
@@ -43,16 +53,16 @@ Cette section présente un aperçu des cas d’utilisation standard avec une ou 
 * Les cas d’utilisation les plus pertinents pour le reporting en temps réel concernent les ventes, les promotions ou les lancements de produits majeurs.
 Dans le cadre de ce lancement, vous souhaitez savoir :
 
-   * Comment les ventes se comparent-elles à votre dernière vente ?
-   * En quoi ce lancement de produit se compare-t-il au dernier ?
-   * Vos promotions pour cette journée ou cet événement important fonctionnent-elles réellement ?
+  * Comment les ventes se comparent-elles à votre dernière vente ?
+  * En quoi ce lancement de produit se compare-t-il au dernier ?
+  * Vos promotions pour cette journée ou cet événement important fonctionnent-elles réellement ?
 
 * Les cas d’utilisation de validation sont des cas d’utilisation pertinents, mais moins utiles pour les rapports en temps réel.
 Vous souhaitez valider, par exemple :
 
-   * Le parcours de campagne que vous avez récemment lancé fonctionne-t-il réellement ?
-   * Lorsque votre nouvelle page de produits est entrée en ligne, collectez-vous des données client à partir de la page ?
-   * Votre événement multimédia en direct se passe-t-il correctement ?
+  * Le parcours de campagne que vous avez récemment lancé fonctionne-t-il réellement ?
+  * Lorsque votre nouvelle page de produits est entrée en ligne, collectez-vous des données client à partir de la page ?
+  * Votre événement multimédia en direct se passe-t-il correctement ?
 
 Ne prenez pas en compte les rapports en temps réel pour les cas d’utilisation de la surveillance des opérations. Par exemple, pour répondre à la question de savoir si un site fonctionne correctement. Comme le bouton (bascule) [&#x200B; Actualisation en temps réel &#x200B;](use-real-time.md) se désactive automatiquement au bout de 30 minutes et que l’actualisation du rapport en temps réel cesse, vous ne devez pas utiliser un rapport en temps réel comme source fiable pour ces cas d’utilisation.
 
@@ -88,5 +98,5 @@ Gardez à l’esprit les limites suivantes pour les rapports en temps réel :
 * Vous ne pouvez pas combiner le groupement avec les rapports en temps réel. Les rapports en temps réel portent sur les données au niveau des événements et des sessions, et sont moins pertinents pour les données basées sur les personnes.
 * Aucune mesure de pulsation collectée sur les médias n’est disponible, à l’exception des mesures de démarrage et de fermeture des médias. Vous pouvez donc toujours utiliser les rapports en temps réel pour activer un cas d’utilisation de média.
 * Lorsque vous utilisez les options [télécharger ou exporter](/help/analysis-workspace/export/download-send.md) pour télécharger un projet ou exporter des données d’un tableau à structure libre, tenez compte des points suivants :
-   * Un projet CSV téléchargé ou un fichier CSV exporté contient les données en temps réel disponibles au moment du téléchargement ou de l’exportation.
-   * Un projet PDF téléchargé contient des données en temps non réel, similaires aux données affichées lorsque l’actualisation en temps réel est désactivée.
+  * Un projet CSV téléchargé ou un fichier CSV exporté contient les données en temps réel disponibles au moment du téléchargement ou de l’exportation.
+  * Un projet PDF téléchargé contient des données en temps non réel, similaires aux données affichées lorsque l’actualisation en temps réel est désactivée.

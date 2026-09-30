@@ -5,26 +5,37 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 exl-id: 75501e77-a172-48b4-9c91-b12d39e93c37
 role: User
-TQID: https://experienceleague.adobe.com/jqpqcNM8eOP0Te1t6-l0Mt5HvxhGzB8xMBxb1I-5GPM
+TQID: 'https://experienceleague.adobe.com/jqpqcNM8eOP0Te1t6-l0Mt5HvxhGzB8xMBxb1I-5GPM'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
+  - id: d494f34f-674c-496a-a400-b33552b95463
+    internal-label: Adobe Product Analytics
+  - id: bfa38d8a-4e93-4fd8-8cd8-e72c589e3af8
+    internal-label: Guided analysis
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 7f8ab656c7dbf508b2a78fd2022592faf883c56e
+    internal-label: Optimization
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 537
+source-wordcount: '537'
 ht-degree: 100%
-
 ---
-
 # Analyse des [!UICONTROL tendances de conversion] {#conversion-trends}
 
 <!-- markdownlint-disable MD034 -->
@@ -46,7 +57,7 @@ L’analyse ![Tendances de conversion](/help/assets/icons/ConversionTrends.svg) 
 Les cas d’utilisation de cette analyse sont les suivants :
 
 * **Suivre les efforts d’optimisation** : après avoir identifié les goulets d’étranglement clés que vous souhaitez améliorer à l’aide de l’analyse [Entonnoir](funnel.md), vous pouvez utiliser cette analyse pour suivre l’impact de ces optimisations sur le taux de conversion au fil du temps.
-* **Évaluation des tests A/B** : évaluez l’efficacité des tests A/B ou des expériences menées dans le contexte d’un entonnoir. En comparant les taux de conversion entre différentes variations, vous pouvez facilement déterminer quels tests offrent les taux de conversion les plus élevés, ce qui mène à des décisions pilotées par les données concernant les variations à implémenter de manière permanente.
+* **Évaluation des tests A/B** : évaluez l’efficacité des tests A/B ou des expériences menées dans le contexte d’un entonnoir. En comparant les taux de conversion de différentes variations, vous pouvez facilement déterminer quels tests génèrent les taux de conversion les plus élevés et ainsi prendre des décisions axées sur les données concernant les variations à mettre en œuvre de manière permanente.
 * **Évaluation des campagnes au fil du temps** : mesurez l’efficacité des campagnes marketing au fil du temps. Vous pouvez créer un segment qui se concentre sur les utilisateurs et utilisatrices qui ont été en contact avec une campagne donnée et comparer leurs taux de conversion avec d’autres campagnes. Vous pouvez également comparer les taux de conversion actuels avec des campagnes similaires exécutées dans le passé.
 
 ## Interface

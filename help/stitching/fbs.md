@@ -9,23 +9,30 @@ autotag-review: '2026-05-19T09:20:59.053Z'
 TQID: 'https://experienceleague.adobe.com/V2OisDuYtD0SxUo8OlCEMKJ5wYEWS7nfxOp2IOMQWJQ'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
 subfeature_v2:
   - id: faea9abd-7024-4c5e-a5b4-87919e09b24b
+    internal-label: Stitching
+  - id: b7fb3355-1f54-4380-bce3-d444b226c0e9
+    internal-label: Cross channel analysis
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+    internal-label: Measurement
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Privacy
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1938
+source-wordcount: '1938'
 ht-degree: 82%
-
 ---
-
 # Regroupement basé sur les champs
 
 Dans le groupement basé sur les champs, vous spécifiez un jeu de données d’événement ainsi que l’identifiant persistant (cookie) et l’identifiant de personne pour ce jeu de données. L’assemblage basé sur les champs tente de rendre les informations de l’ID de personne disponibles pour l’analyse des données Customer Journey Analytics, pour tout événement anonyme provenant d’un ID persistant spécifique.  Ces informations sont récupérées à partir des lignes qui possèdent un ID de personne pour cet ID persistant spécifique.
@@ -110,10 +117,10 @@ L’assemblage basé sur les champs prend en charge l’utilisation du [`identit
 
 Le groupement effectue au moins deux passages sur les données d’un jeu de données spécifique.
 
-- **Assemblage en direct** : tente d’assembler chaque accès (événement) au fur et à mesure qu’ils se produisent. Les accès à partir d’appareils considérés comme *nouveaux* dans le jeu de données (qui ne se sont jamais authentifiés) ne sont généralement pas assemblés à ce niveau. Les accès à partir d’appareils reconnus sont assemblés immédiatement.
+- **Assemblage en direct** : tente d’assembler chaque hit (événement) à mesure qu’il arrive. Les hits à partir d’appareils considérés comme *nouveaux* dans le jeu de données (qui ne se sont jamais authentifiés) ne sont généralement pas assemblés à ce niveau. Les hits à partir d’appareils reconnus sont assemblés immédiatement.
 
 - **Relecture d’assemblage** : *relit* les données en fonction d’identifiants uniques (identifiants de personnes). C’est à cette étape que les accès provenant d’appareils auparavant inconnus (identifiants persistants) sont assemblés (en identifiants de personne). Deux paramètres déterminent la relecture : **fréquence** et **intervalle de recherche en amont**. Adobe propose les combinaisons suivantes de ces paramètres :
-  - **Recherche en amont quotidienne à une fréquence quotidienne** : les données sont relues chaque jour avec un intervalle de recherche en amont de 24 heures. Cette option présente un avantage car les relectures sont beaucoup plus fréquentes, mais les profils non authentifiés doivent s’authentifier le jour même où ils visitent votre site.
+  - **Recherche en amont quotidienne à une fréquence quotidienne** : les données sont relues chaque jour avec un intervalle de recherche en amont de 24 heures. Cette option offre l’avantage de relectures beaucoup plus fréquentes, mais les profils non authentifiés doivent s’authentifier le jour même de leur visite sur votre site.
   - **Recherche en amont hebdomadaire à une fréquence hebdomadaire** : les données sont relues chaque semaine avec un intervalle de recherche en amont hebdomadaire (voir [options](overview.md#options)). Cette option présente un avantage qui permet aux sessions non authentifiées de disposer d’un temps d’authentification beaucoup moins strict. Toutefois, les données dégroupées datant de moins d’une semaine ne sont pas retraitées avant la relecture hebdomadaire suivante.
   - **Recherche en amont bihebdomadaire à une fréquence hebdomadaire** : les données sont relues chaque semaine avec un intervalle de recherche en amont bihebdomadaire (voir [options](overview.md#)). Cette option présente un avantage qui permet aux sessions non authentifiées de disposer d’un temps d’authentification beaucoup moins strict. Toutefois, les données dégroupées datant de moins de deux semaines ne sont pas retraitées avant la relecture hebdomadaire suivante.
   - **Recherche en amont mensuelle à une fréquence hebdomadaire** : les données sont relues chaque semaine avec un intervalle de recherche en amont mensuel (voir [options](overview.md#options)). Cette option présente un avantage qui permet aux sessions non authentifiées de disposer d’un temps d’authentification beaucoup moins strict. Toutefois, les données dégroupées datant de moins d’un mois ne sont pas retraitées avant la relecture hebdomadaire suivante.
@@ -122,7 +129,7 @@ Le groupement effectue au moins deux passages sur les données d’un jeu de don
 
   >[!IMPORTANT]
   >
-  >Le processus de dégroupement, dans le cadre des demandes d’accès à des informations personnelles , change début 2025. Le processus de dégroupement actuel regroupe les événements à l’aide de la dernière version des identités connues. Cette réaffectation d’événements à une autre identité pourrait avoir des conséquences juridiques indésirables. Pour résoudre ces problèmes, à partir de 2025, le nouveau processus de dégroupement met à jour les événements qui font l’objet de la demande d’accès à des informations personnelles avec l’identifiant persistant.
+  >Le processus de dégroupement, dans le cadre des demandes d’accès à des informations personnelles , change début 2025. Le processus de dégroupement actuel regroupe les événements à l’aide de la dernière version des identités connues. Cette réaffectation d’événements à une autre identité pourrait avoir des conséquences juridiques indésirables. Pour remédier à ces problèmes, à compter de 2025, le nouveau processus met à jour les événements faisant l’objet de la demande d’accès à des informations personnelles avec l’ID persistant.
   > 
 
 
@@ -190,17 +197,17 @@ Le tableau suivant représente les mêmes données que ci-dessus, mais affiche d
 
 {style="table-layout:auto"}
 
-L’attribution fonctionne lorsque la variable personnalisée d’identification est liée à un appareil. Dans l’exemple ci-dessus, les événements 1 et 10 sont groupés à la suite de la relecture, laissant uniquement les événements 8 et 9 dégroupés, et réduisant ainsi la mesure Personnes (cumulative) à 2.
+L’attribution fonctionne lorsque la variable personnalisée d’identification est liée à un appareil. Dans l’exemple ci-dessus, les événements 1 et 10 sont assemblés à la suite de la relecture, de sorte que seuls les événements 8 et 9 restent non associés. et réduisant ainsi la mesure Personnes (cumulative) à 2.
 
 +++ 
 
-### Étape 3 : demande d’accès à des informations personnelles
+### Étape 3 : Demande d’accès à des informations personnelles
 
 Lorsque vous recevez une demande d’accès à des informations personnelles, toute information d’identifiant définie par le processus de groupement sur la valeur d’ID de personne est mise à jour dans tous les enregistrements vers une valeur d’ID persistant pour l’utilisateur faisant l’objet de la demande d’accès à des informations personnelles.
 
 +++ Détails
 
-Le tableau suivant représente les mêmes données que ci-dessus, mais montre l’effet d’une demande d’accès à des informations personnelles pour Bob sur les données après leur traitement. Les lignes où Bob est authentifié sont supprimées (2, 3, 5, 7 et 11). Bob est supprimé en tant qu’ID de personne pour d’autres lignes.
+Le tableau suivant représente les mêmes données que ci-dessus, mais montre l’effet d’une demande d’accès à des informations personnelles concernant Bob sur les données après son traitement. Les lignes où Bob est authentifié sont supprimées (2, 3, 5, 7 et 11). Bob est supprimé en tant qu’ID de personne pour d’autres lignes.
 
 *Les mêmes données après une demande d’accès à des informations personnelles pour Bob :*
 
@@ -224,12 +231,12 @@ Le tableau suivant représente les mêmes données que ci-dessus, mais montre l�
 
 ## Conditions préalables
 
-Les conditions préalables suivantes s’appliquent spécifiquement au groupement basé sur les champs :
+Les conditions préalables suivantes s’appliquent spécifiquement au rapprochement basé sur des champs :
 
 - Le jeu de données d’événement dans Adobe Experience Platform auquel appliquer un groupement doit comporter deux colonnes permettant d’identifier les profils :
 
   - Un **identifiant persistant**, un identifiant présent sur chaque ligne. Il peut s’agir, par exemple, d’un identifiant visiteur généré par une bibliothèque Adobe Analytics AppMeasurement ou d’un ECID généré par Adobe Experience Platform Identity Service.
-  - Un **identifiant de personne**, un identifiant présent sur certaines lignes seulement. Par exemple, un nom d’utilisatation ou une adresse e-mail chiffré(e) une fois qu’une personne s’authentifie. Vous pouvez utiliser pratiquement n’importe quel identifiant de votre choix. Le mécanisme de groupement considère que ce champ contient l’identifiant réel de la personne. Pour obtenir les meilleurs résultats de groupement, un identifiant de personne doit être transmis dans les événements du jeu de données au moins une fois pour chaque identifiant persistant. Si vous prévoyez d’inclure ce jeu de données dans une connexion Customer Journey Analytics, il est préférable que les autres jeux de données aient également un identifiant commun similaire.
+  - Un **identifiant de personne**, un identifiant présent sur certaines lignes seulement. Par exemple, un nom d’utilisateur ou une adresse e-mail hachés après l’authentification d’un profil. Vous pouvez utiliser pratiquement n’importe quel identifiant de votre choix. Le rapprochement considère que ce champ contient les informations d’identifiant de personne réelles. Pour obtenir les meilleurs résultats de rapprochement, un identifiant de personne doit être transmis dans les événements du jeu de données au moins une fois pour chaque identifiant persistant. Si vous prévoyez d’inclure ce jeu de données dans une connexion Customer Journey Analytics, il est préférable que les autres jeux de données aient également un identifiant commun similaire.
 
 <!--
 - Both columns (persistent ID and person ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
@@ -240,12 +247,12 @@ Les conditions préalables suivantes s’appliquent spécifiquement au groupemen
 
 Les restrictions suivantes s’appliquent spécifiquement au groupement basé sur les champs :
 
-- Les capacités de recomposition de données actuelles sont limitées à une étape (identifiant persistant à identifiant de personne). La réassociation de données sur plusieurs étapes (par exemple, un identifiant persistant à un identifiant transitoire, puis à un autre identifiant transitoire) n’est pas prise en charge.
+- Les fonctionnalités actuelles de réaffectation de clé sont limitées à une seule étape (de l’identifiant persistant à l’identifiant de personne). La réaffectation de clé en plusieurs étapes (par exemple, d’un identifiant persistant à un identifiant de personne, puis à un autre identifiant de personne) n’est pas prise en charge.
 - Si plusieurs personnes partagent un appareil et que le nombre total de transitions entre les utilisateurs dépasse 50 000, Customer Journey Analytics cesse d’assembler les données de cet appareil.
 - Les mappages d’identifiants personnalisés utilisés dans votre organisation ne sont pas pris en charge.
 - Le groupement est sensible à la casse. Pour les jeux de données générés par le biais du connecteur source Analytics, Adobe recommande de vérifier les règles VISTA ou les règles de traitement qui s’appliquent au champ d’ID de personne. Cette vérification garantit qu’aucune de ces règles n’introduit de nouvelles formes du même identifiant. Par exemple, vous devez vous assurer quʼaucune règle VISTA ou de traitement nʼintroduit de minuscules dans le champ ID de personne sur une partie seulement des événements.
 - Le groupement ne combine ni ne concatène les champs.
-- Le champ ID de personne doit contenir un seul type dʼidentifiant (c.-à-d. des identifiants dʼun seul espace de noms). Par exemple, le champ ID de personne ne doit pas contenir une combinaison dʼidentifiants de connexion et dʼadresses électroniques.
-- Si plusieurs événements se produisent à la même date et heure pour le même ID persistant, mais avec des valeurs différentes dans le champ ID de personne, le groupement sélectionne l’ID en fonction de lʼordre alphabétique. Ainsi, si lʼID persistant A a deux événements à la même date et à la même heure et que lʼun des événements mentionne Bob et lʼautre Anne, le groupement basé sélectionne Anne.
+- Le champ d’identifiant de personne doit contenir un seul type dʼidentifiant (des identifiants dʼun seul espace de noms). Par exemple, le champ ID de personne ne doit pas contenir une combinaison dʼidentifiants de connexion et dʼadresses électroniques.
+- Si plusieurs événements se produisent à la même date et heure pour le même ID persistant, mais avec des valeurs différentes dans le champ ID de personne, le groupement sélectionne l’ID en fonction de lʼordre alphabétique. Ainsi, si lʼidentifiant persistant A comporte deux événements ayant les mêmes date et heure, et que lʼun des événements mentionne Bob et lʼautre Ann, le rapprochement sélectionne Ann.
 - Faites attention aux scénarios où les ID de personne contiennent des valeurs d’espace réservé, par exemple `Undefined`. Pour plus d’informations, consultez la [FAQ](faq.md).
 - Vous ne pouvez pas utiliser le même espace de noms pour l’ID persistant et l’ID de personne. Les espaces de noms doivent s’exclure mutuellement.

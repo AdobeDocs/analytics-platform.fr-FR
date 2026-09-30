@@ -1,38 +1,53 @@
 ---
-title: Guide de Customer Journey Analytics
+title: Guide de Customer Journey Analytics
 description: Page de destination de Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-TQID: https://experienceleague.adobe.com/QBGCqJ3GBKAh4jfAAvA3sO6GXjJHGEAtaRXyASH8PhA
+TQID: 'https://experienceleague.adobe.com/QBGCqJ3GBKAh4jfAAvA3sO6GXjJHGEAtaRXyASH8PhA'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: b743a5d9-dc51-41ed-8b2f-86a1f8de430f
+    internal-label: Analytics dashboards
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: ad5685a0-8296-4a0c-814c-658c10b4af12
+    internal-label: Content Analytics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+    internal-label: Audiences
   - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
   - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+    internal-label: Exports
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Insights
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 743
-ht-degree: 62%
-
+source-wordcount: '1063'
+ht-degree: 64%
 ---
-
 # Guide de Customer Journey Analytics
 
-Ce guide de documentation technique fournit une aide à l’auto-assistance pour Customer Journey Analytics. Customer Journey Analytics vous permet d’importer les données de vos clientes et clients à partir de n’importe quel canal de votre choix (en ligne et hors ligne) dans Adobe Experience Platform. Analysez ensuite ces données comme vous le feriez pour vos données numériques existantes en utilisant l’Analysis Workspace actuel.
+Ce guide de documentation technique fournit une assistance en libre-service pour Customer Journey Analytics. Customer Journey Analytics vous permet d’importer dans Adobe Experience Platform vos données client provenant de n’importe quel canal de votre choix (en ligne comme hors ligne). Analysez ensuite ces données, comme vous le faites aujourd’hui avec vos données numériques existantes dans Analysis Workspace.
 
 Customer Journey Analytics vous permet de contrôler la manière dont vous connectez vos données en ligne et hors ligne dans Analysis Workspace sur n’importe quel ID de client commun, ce qui vous permet d’effectuer une attribution, des segments, un flux, un abandon, etc. sur vos données client.
 
@@ -72,7 +87,7 @@ L’analyse de l’audience vous permet d’ingérer des données d’appartenan
 
 >[!TAB Rapports en temps réel]
 
-Les rapports en temps réel dans Customer Journey Analytics affichent et mettent à jour en temps réel les données et les visualisations au sein d’un ou de plusieurs panneaux dans Analysis Workspace.
+Le reporting en temps réel de Customer Journey Analytics affiche et met à jour en temps réel les données et les visualisations dans un ou plusieurs panneaux d’Analysis Workspace.
 
 [![Image](assets/learn-more-button.svg)](/help/components/real-time/real-time.md)
 
@@ -81,7 +96,7 @@ Les rapports en temps réel dans Customer Journey Analytics affichent et mette
 
 >[!TAB B2B Edition]
 
-Customer Journey Analytics B2B Edition permet aux sociétés B2B d’aligner leurs équipes marketing, ventes et produits en fournissant des informations de compte exploitables qui stimulent l’augmentation des revenus. Le compte étant placé au centre du modèle de données, toutes les analyses se concentrent sur le parcours de compte.
+Customer Journey Analytics B2B Edition permet aux sociétés B2B d’aligner leurs équipes marketing, ventes et produits en fournissant des informations exploitables sur les comptes qui stimulent la croissance du chiffre d’affaires. Le compte étant placé au centre du modèle de données, toute l’analyse se concentre sur le parcours du compte.
 
 [![Image](assets/learn-more-button.svg)](/help/getting-started/cja-b2b-edition.md)
 
@@ -94,7 +109,7 @@ Content Analytics vous permet d’examiner rapidement et facilement de grands vo
 
 >[!ENDTABS]
 
-## Commencer avec les principes de base
+## Commencer par les principes de base
 
 Commencez par lire le contenu des liens ci-dessous pour vous familiariser avec les capacités et les fonctionnalités de Customer Journey Analytics.
 

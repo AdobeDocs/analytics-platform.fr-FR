@@ -1,31 +1,39 @@
 ---
 description: Explique les facteurs qui influencent la cohérence des mesures et du nombre d’appartenances à une audience entre Real-time Customer Data Platform (Real-Time CDP) et Customer Journey Analytics.
-title: Cohérence des mesures et des appartenances à une audience
+title: Cohérence des mesures et de l’appartenance à une audience
 role: Admin
 feature: Basics
 exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
-TQID: https://experienceleague.adobe.com/IYlFUArrqejRjs5uDJ0MNGixQG4IP6ly4qLQBMALCjA
+TQID: 'https://experienceleague.adobe.com/IYlFUArrqejRjs5uDJ0MNGixQG4IP6ly4qLQBMALCjA'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Troubleshooting
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 671
+source-wordcount: '671'
 ht-degree: 100%
-
 ---
+# Cohérence des mesures et de l’appartenance à une audience
 
-# Cohérence des mesures et des appartenances à une audience
-
-Dans des scénarios réels, la cohérence des mesures et du nombre d’appartenances à une audience dans Real-time Customer Data Platform (Real-Time CDP) et Customer Journey Analytics ne peut pas être garantie. Ce document en explique la raison.
+Dans des scénarios réels, la cohérence des mesures et du nombre d’appartenances à une audience entre Real-time Customer Data Platform (Real-time CDP) et Customer Journey Analytics ne peut pas être garantie. Ce document en explique la raison.
 
 Lors de la comparaison du nombre d’appartenances à une audience entre Real-Time CDP et Customer Journey Analytics, il est important de garder à l’esprit les différentes fonctions de ces deux outils. Real-Time CDP utilise les données de profil client pour cibler les expériences numériques des clientes et clients individuels, tandis que Customer Journey Analytics est conçu pour aider les utilisateurs et utilisatrices à comprendre les modèles dans les mesures et segments commerciaux clés. Bien que la publication d’audiences de Customer Journey Analytics vers Real-Time CDP permette à l’utilisateur ou à l’utilisatrice de ces outils d’« activer » facilement et nativement une information, en tirant parti des enseignements obtenus dans Customer Journey Analytics, les fonctions de ces deux outils restent fondamentalement différentes.
 
@@ -46,7 +54,7 @@ Customer Journey Analytics permet une modification complète des données au m
 
 Real-Time CDP offre un ensemble différent d’outils de manipulation des données. Il applique des [politiques de fusion](https://experienceleague.adobe.com/fr/docs/experience-platform/profile/merge-policies/overview) pour déterminer quelles données seront prioritaires et quelles données seront combinées afin de créer une vue unifiée d’une personne.
 
-## Différences entre le TTL (Time to Live, ou durée de vie) et l’ingestion des données
+## Différences en matière de durée de vie (TTL) et d’ingestion des données
 
 Même si les jeux de données dans Real-Time CDP et Customer Journey Analytics sont identiques, Real-Time CDP ne peut conserver qu’une fenêtre d’historique très limitée. En revanche, Customer Journey Analytics contient probablement des années de données. En outre :
 
@@ -58,7 +66,7 @@ Même si les jeux de données dans Real-Time CDP et Customer Journey Analytic
 
 * Il n’existe pas de TTL (durée de vue) pour les données du lac pour les clientes et clients de Customer Journey Analytics. Toutefois, les utilisateurs et utilisatrices de Customer Journey Analytics peuvent définir une fenêtre de rétention personnalisée dans Customer Journey Analytics lors de la création d’une connexion.
 
-* Le magasin de profils de Real-Time CDP permet aux clients de configurer des TTL. Les clients peuvent modifier ce TTL pour qu’il reste dans la limite de leurs droits de licence.
+* Le stockage de profils de Real-Time CDP permet aux clients de configurer des durées de vie (TTL). Les clients peuvent modifier ce TTL pour qu’il reste dans la limite de leurs droits de licence.
 
 ## Différences dans la latence d’ingestion des données
 

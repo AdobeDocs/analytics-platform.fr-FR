@@ -5,25 +5,31 @@ title: Aperçu des visualisations
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
-TQID: https://experienceleague.adobe.com/CQjTrdabJOkSDNLB5pCApq2-5NSZe1BNvWvyXr-CLmc
+TQID: 'https://experienceleague.adobe.com/CQjTrdabJOkSDNLB5pCApq2-5NSZe1BNvWvyXr-CLmc'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
 subfeature_v2:
   - id: aff2ef09-fc60-4018-9197-e2befd623064
+    internal-label: Anomaly detection
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Insights
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1786
+source-wordcount: '1786'
 ht-degree: 89%
-
 ---
-
 # Visualisations - Aperçu
 
 Workspace offre une variété de visualisations pour créer des représentations visuelles de vos données. Par exemple, des graphiques en barres, des graphiques en anneau, des histogrammes, des graphiques en courbes, des cartes, des nuages de points, etc.
@@ -37,19 +43,19 @@ Voici les types de visualisation disponibles dans Analysis Workspace :
 | ![GraphArea](/help/assets/icons/GraphArea.svg) | [Surface](/help/analysis-workspace/visualizations/area.md) | Visualisation sous forme de graphique de surface. Semblable à un graphique linéaire, mais avec une zone colorée sous la ligne. Utilisez un diagramme de surface si vous avez plusieurs mesures et souhaitez visualiser la zone exprimée par l’intersection de plusieurs mesures. |
 | ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) | [Barre](/help/analysis-workspace/visualizations/bar.md) | Visualisation Graphique en barres avec des barres verticales représentant plusieurs valeurs pour une ou plusieurs mesures. |
 | ![GraphBarVertical](/help/assets/icons/GraphBarVerticalStacked.svg) | [Barres empilées](/help/analysis-workspace/visualizations/bar.md) | Visualisation Graphique en barres empilées avec des barres verticales représentant plusieurs valeurs pour une ou plusieurs mesures. |
-| ![Graphique à puces](/help/assets/icons/GraphBullet.svg)</p> | [Puces](/help/analysis-workspace/visualizations/bullet-graph.md) | Visualisation Graphique à puces affichant comment comparer ou mesurer une valeur qui vous intéresse par rapport à d’autres plages de performances (objectifs). |
-| ![ChiffresTexte](/help/assets/icons/TextNumbered.svg) | [Table de cohorte](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | Une visualisation Cohorte est un groupe de personnes partageant des caractéristiques communes au cours d’une période spécifique. Une table de cohorte est utile pour les analyses de la rétention, de lʼattrition ou de la latence. |
+| ![Graphique à puces](/help/assets/icons/GraphBullet.svg)</p> | [Puces](/help/analysis-workspace/visualizations/bullet-graph.md) | Une visualisation de type graphique à puces, qui permet de comparer une valeur qui vous intéresse à différentes plages de performances (objectifs). |
+| ![ChiffresTexte](/help/assets/icons/TextNumbered.svg) | [Table de cohorte](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | Une visualisation Cohorte est un groupe de personnes partageant des caractéristiques communes au cours d’une période spécifique. Une table de cohorte est utile pour analyser la rétention, l’attrition ou la latence. |
 | ![Combo](/help/assets/icons/ComboChart.svg) | [Combo](combo-charts.md) | Une visualisation Graphique combo facilite la création rapide d’une visualisation de comparaison sans qu’il soit nécessaire de créer un tableau au préalable. |
 | ![Graphique à anneaux](/help/assets/icons/GraphDonut.svg) | [Anneau](/help/analysis-workspace/visualizations/donut.md) | Similaire à un graphique en secteurs, la visualisation en anneau présente les données comme des portions ou des segments d’un tout. |
-| ![Entonnoir de conversion](/help/assets/icons/ConversionFunnel.svg) | [Abandon](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | La visualisation Abandons indique où les personnes sont sorties (abandonné) d’une suite prédéfinie de pages et où elles ont poursuivi leur visite à travers ces pages (diminution). |
+| ![Entonnoir de conversion](/help/assets/icons/ConversionFunnel.svg) | [Abandon](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | Une visualisation Abandon indique où les personnes ont abandonné ou poursuivi leur parcours dans une séquence prédéfinie de pages. |
 | ![GraphPathing](/help/assets/icons/GraphPathing.svg) | [Flux](/help/analysis-workspace/visualizations/c-flow/flow.md) | La visualisation Flux présente les parcours exacts des clientes et clients sur vos sites web et dans vos applications. |
 | ![ViewTable](/help/assets/icons/ViewTable.svg)</p> | [Tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | Une visualisation Tableau à structure libre est une visualisation interactive. La visualisation Tableau à structure libre est la base de l’analyse des données dans Workspace. |
 | ![GraphHistogram](/help/assets/icons/Histogram.svg) | [Histogramme](/help/analysis-workspace/visualizations/histogram.md) | Une visualisation Histogramme regroupe les personnes, les visites ou les événements en intervalles en fonction dʼun volume de mesure. |
 | ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) | [Barre horizontale](/help/analysis-workspace/visualizations/horizontal-bar.md) | Visualisation Barres horizontales affichant des barres verticales représentant plusieurs valeurs pour une ou plusieurs mesures. |
 | ![GraphBarHorizontalStacked](/help/assets/icons/GraphBarHorizontalStacked.svg) | [Barres empilées horizontales](/help/analysis-workspace/visualizations/horizontal-bar.md) | Visualisation Barres horizontales empilées affichant des barres horizontales représentant plusieurs valeurs pour une ou plusieurs mesures. |
-| ![Branch3](/help/assets/icons/Branch3.svg) | [Zone de travail de parcours](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) | Une visualisation Zone de travail de parcours vous permet d’analyser les parcours que vous fournissez à vos utilisateurs et utilisatrices et à votre clientèle afin de mieux les connaître. |
+| ![Branch3](/help/assets/icons/Branch3.svg) | [Zone de travail de parcours](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) | Une visualisation Canevas de parcours vous permet d’analyser les parcours que vous fournissez à vos utilisateurs et clients, et d’obtenir des informations à leur sujet. |
 | ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) | [Résumé des mesures clés](/help/analysis-workspace/visualizations/key-metric.md) | Une visualisation Résumé des mesures clés combine les visualisations Ligne, Synthèse des modifications et Synthèse des chiffres. |
-| ![GraphTrend](/help/assets/icons/GraphTrend.svg) | [Ligne](/help/analysis-workspace/visualizations/line.md) | Une visualisation Ligne représente les mesures sous la forme d’une ligne afin d’indiquer l’évolution des valeurs dans le temps. Un graphique en courbes utilise le temps le long de lʼaxe X. |
+| ![GraphTrend](/help/assets/icons/GraphTrend.svg) | [Ligne](/help/analysis-workspace/visualizations/line.md) | Une visualisation Ligne représente les mesures à l’aide d’une ligne afin de montrer l’évolution des valeurs sur une période donnée. Dans un graphique linéaire, l’axe des abscisses (X) représente le temps. |
 | ![Nuage de points](/help/assets/icons/GraphScatter.svg) | [Dispersion](/help/analysis-workspace/visualizations/scatterplot.md) | Une visualisation Graphique de dispersion illustre la relation entre des éléments de dimension et trois mesures au maximum. |
 | ![PageRule](/help/assets/icons/PageRule.svg) | [En-tête de section](section-header.md) | Pour identifier et articuler des sections dans un panneau. |
 | ![DéplacementHautBas](/help/assets/icons/MoveUpDown.svg) | [Résumé des changements](/help/analysis-workspace/visualizations/summary-number-change.md) | Une visualisation Synthèse des modifications affiche la modification entre les cellules sélectionnées sous la forme d’un grand nombre ou d’un pourcentage. |
@@ -109,14 +115,14 @@ Une légende de visualisation vous permet de relier les données dʼun tableau s
 
 De plus, vous pouvez renommer les étiquettes de légende pour rendre les visuels plus exploitables. Remarque : **il nʼest pas** possible de modifier les légendes des visualisations Treemap, Puce, Résumé des changements, Synthèse des chiffres, Texte, Structure libre, Histogramme, Cohorte ou Flux.
 
-Pour modifier une étiquette de légende :
+Pour modifier un libellé de légende :
 
 1. Effectuez un clic droit sur l’une des étiquettes de légende.
 1. Cliquez sur **[!UICONTROL Modifier l’étiquette]**.
 
    ![Libellé de légende et option Modifier le libellé.](assets/edit-label.png)
 
-1. Saisissez le nouveau texte de l’étiquette.
+1. Saisissez le nouveau texte du libellé.
 1. Appuyez sur **[!UICONTROL Entrée]** pour enregistrer.
 
 
@@ -137,7 +143,7 @@ Vous pouvez contrôler la source de données et les éléments ou positions de c
 
 ### Paramètres
 
-La disponibilité des paramètres de visualisation dépend de la visualisation. Le tableau ci-dessous résume les paramètres les plus courants. Certaines visualisations comportent des paramètres spécifiques. Pour en savoir plus, consultez la documentation sur les visualisations individuelles.
+La disponibilité des paramètres de visualisation dépend de la visualisation. Le tableau ci-dessous résume les paramètres les plus courants. Certaines visualisations comportent des paramètres spécifiques. Pour en savoir plus, consultez la documentation de chaque visualisation.
 
 | Option | Description |
 | --- | --- |
@@ -156,7 +162,7 @@ La disponibilité des paramètres de visualisation dépend de la visualisation. 
 | **[!UICONTROL Afficher les haltères sur les lignes]** | Affichez les haltères sur la visualisation linéaire dans une visualisation Combo. |
 | **[!UICONTROL Normalisation]** | Forcez les mesures en proportions égales. Les proportions égales sont utiles lorsque les mesures tracées sont de magnitudes différentes. |
 | **[!UICONTROL Afficher les anomalies]** | Améliorez les graphiques linéaires et les tableaux à structure libre en affichant la détection des anomalies. La détection des anomalies dans les visualisations linéaires comprend une valeur attendue (ligne en pointillé) et une plage attendue (bande ombrée). |
-| **[!UICONTROL Afficher la prévision]** | Améliorez les graphiques linéaires et les tableaux à structure libre en affichant la détection des anomalies. |
+| **[!UICONTROL Afficher la prévision]** | Enrichir les graphiques linéaires et les tableaux à structure libre en affichant les valeurs de prévision. |
 | **[!UICONTROL Afficher la valeur minimale]** | Affichez la valeur minimale dans la visualisation. |
 | **[!UICONTROL Afficher la valeur maximale]** | Affichez la valeur maximale dans la visualisation. |
 | **[!UICONTROL Afficher la courbe de tendance]** | Affichez une courbe de tendance dans la visualisation. Lorsque cette option est sélectionnée, vous pouvez sélectionner le type de courbe de tendance dans le menu déroulant. |
@@ -166,7 +172,7 @@ Vous pouvez personnaliser les paramètres de toutes les visualisations que vous 
 
 ## Menu contextuel {#right-click}
 
-Utilisez le menu contextuel (disponible par le biais d’une autre sélection, par exemple en cliquant avec le bouton droit de la souris) sur un en-tête de visualisation pour accéder à des fonctionnalités supplémentaires pour une visualisation. Certaines options ne sont pas disponibles pour certains types de graphique.
+Utilisez le menu contextuel (accessible via une autre méthode de sélection, par exemple en cliquant avec le bouton droit de la souris) dans l’en-tête d’une visualisation pour accéder à des fonctionnalités supplémentaires. Certaines options ne sont pas disponibles pour certains types de graphique.
 
 ![Paramètres de visualisation supplémentaires avec les options de clic droit affichées. Les options sont décrites dans la section suivante.](assets/right-click.png)
 
@@ -182,16 +188,16 @@ Utilisez le menu contextuel (disponible par le biais d’une autre sélection, p
 | **[!UICONTROL Dupliquer la visualisation]** | Créez un doublon exact de la visualisation. |
 | **[!UICONTROL Modifier la description]** | Ajoutez (ou modifiez) une description textuelle de la visualisation. Consultez [Texte](text.md). |
 | **[!UICONTROL Obtenir le lien de la visualisation]** | Copiez et partagez un lien directement vers la visualisation. Une boîte de dialogue Partager le lien affiche le lien. Sélectionnez Copier pour copier le lien dans votre presse-papiers. |
-| **[!UICONTROL Recommencer]** | Supprimez la configuration de la visualisation actuelle afin que vous puissiez la reconfigurer de zéro. |
+| **[!UICONTROL Recommencer]** | Supprimer la configuration de la visualisation actuelle afin de pouvoir la reconfigurer à partir de zéro. |
 
 ## Configuration
 
-Certaines visualisation (comme Table de cohorte, Abandons, Flux, etc.) possèdent une boîte de dialogue de configuration pour vous aider à créer la visualisation. Utilisez ![Modifier](/help/assets/icons/Edit.svg) en haut de la visualisation pour accéder à la configuration et la modifier.
+Certaines visualisations (comme Table de cohorte, Abandon, Flux, etc.) disposent d’une boîte de dialogue de configuration qui facilite leur création. Utilisez ![Modifier](/help/assets/icons/Edit.svg) en haut de la visualisation pour accéder à la configuration et la modifier.
 
 ![Volet de configuration](assets/configuration.png)
 
 ## Visualiser
 
-Si vous ne savez pas quelle visualisation choisir, sélectionnez ![GraphBarVerticalAdd](/help/assets/icons/GraphBarVerticalAdd.svg) **[!UICONTROL Visualiser]** dans une ligne de tableau à structure libre (disponible au survol de la souris). Cette sélection est la méthode la plus rapide pour ajouter une visualisation. Analysis Workspace s’affiche alors et détermine quelle visualisation serait la mieux adaptée à vos données. Par exemple, si une ligne est sélectionnée, un [graphique linéaire](line.md) à tendance est créé. Si trois lignes de segment sont sélectionnées, un diagramme de [Venn](venn.md) est créé.
+Si vous ne savez pas quelle visualisation choisir, sélectionnez ![GraphBarVerticalAdd](/help/assets/icons/GraphBarVerticalAdd.svg) **[!UICONTROL Visualiser]** dans une ligne de tableau à structure libre (disponible au survol de la souris). Cette sélection est la méthode la plus rapide pour ajouter une visualisation. Analysis Workspace détermine la visualisation qui semble la mieux adaptée à vos données. Par exemple, si une ligne est sélectionnée, un [graphique linéaire](line.md) à tendance est créé. Si trois lignes de segment sont sélectionnées, un diagramme de [Venn](venn.md) est créé.
 
 ![Visualisation rapide](assets/quick-viz.png)

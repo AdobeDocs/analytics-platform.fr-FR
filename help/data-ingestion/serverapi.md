@@ -5,32 +5,47 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 6bfb7254-5bb7-45c6-86a2-0651a0d222fa
 role: Admin
-TQID: https://experienceleague.adobe.com/aInqrIT7Z22NV6kkdJkydpPNEEP46Xbc4CQZxXzzcNk
+TQID: 'https://experienceleague.adobe.com/aInqrIT7Z22NV6kkdJkydpPNEEP46Xbc4CQZxXzzcNk'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: c38ed341-fab2-46df-9d72-88d8166edebb
+    internal-label: Workspace projects
   - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Customer profiles
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 2447
+source-wordcount: '2447'
 ht-degree: 62%
-
 ---
-
 # Ingérer des données via l’API du serveur Edge Network
 
 Ce guide de démarrage rapide explique comment ingérer des données de suivi à partir d’appareils tels que les appareils IoT, les décodeurs, les consoles de jeux et les applications de bureau directement dans Adobe Experience Platform à l’aide de l’API Adobe Experience Platform Edge Network Server et d’Edge Network. Utilisez ensuite ces données dans Customer Journey Analytics.
@@ -58,11 +73,11 @@ Pour ce faire, vous devez :
 
 ## Configurer un schéma et un jeu de données
 
-Pour ingérer des données dans Adobe Experience Platform, vous devez d’abord définir les données à collecter. Toutes les données ingérées dans Adobe Experience Platform doivent être conformes à une structure standard dénormalisée pour être reconnues et utilisées par les fonctionnalités et fonctions en aval. Le modèle de données d’expérience (XDM) est le cadre standard qui fournit une structure sous la forme de schémas.
+Pour ingérer des données dans Adobe Experience Platform, vous devez d’abord définir les données à collecter. Toutes les données ingérées dans Adobe Experience Platform doivent être conformes à une structure standard dénormalisée pour être reconnues et utilisées par les fonctionnalités en aval. Le modèle de données d’expérience (XDM) est le cadre standard qui fournit une structure sous la forme de schémas.
 
 Une fois que vous avez défini un schéma, vous utilisez un ou plusieurs jeux de données pour stocker et gérer la collecte de données. Un jeu de données est une structure de stockage et de gestion pour une collecte de données (généralement sous la forme d’un tableau) qui contient un schéma (des colonnes) et des champs (des lignes).
 
-Toutes les données ingérées par Adobe Experience Platform doivent être conformes à un schéma prédéfini avant de pouvoir être conservées sous la forme d’un jeu de données.
+Toutes les données ingérées dans Adobe Experience Platform doivent être conformes à un schéma prédéfini avant de pouvoir être conservées sous la forme d’un jeu de données.
 
 ### Configurer un schéma
 
@@ -102,7 +117,7 @@ Configurer le schéma :
 
       ![Ajouter un groupe de champs](./assets/add-field-group-button.png)
 
-      Les groupes de champs sont des collections d’objets et d’attributs réutilisables permettant d’étendre facilement le schéma.
+      Les groupes de champs sont des collections d’objets et d’attributs réutilisables permettant d’étendre facilement votre schéma.
 
    1. Dans la boîte de dialogue [!UICONTROL Ajouter des groupes de champs], sélectionnez le groupe de champs **[!UICONTROL Lumière aveuglante]** dans la liste. Ce groupe de champs est créé pour suivre les progrès de l’utilisateur lors de la lecture d’un jeu fictif intitulé Lumière aveuglante sur une console.
 
@@ -128,7 +143,7 @@ Configurer le schéma :
 
    ![Objet d’identification](./assets/identification-field-gaming.png)
 
-   L’objet d’identification ajoute des fonctionnalités d’identification au schéma. Dans votre cas, vous devez identifier les profils qui jouent à votre jeu à l’aide de l’Experience Cloud ID et de l’adresse e-mail qu’ils utilisent pour se connecter à leur console de jeux. De nombreux autres attributs sont disponibles pour effectuer le suivi de l’identification de votre personne.
+   L’objet d’identification ajoute des fonctionnalités d’identification au schéma. Dans votre cas, vous devez identifier les profils qui jouent à votre jeu à l’aide de l’Experience Cloud Id et de l’adresse e-mail qu’ils utilisent pour se connecter à leur console de jeux. De nombreux autres attributs sont disponibles pour effectuer le suivi de l’identification de votre personne.
 
    Sélectionnez **[!UICONTROL Appliquer]** pour ajouter cet objet au schéma.
 
@@ -136,7 +151,7 @@ Configurer le schéma :
 
    ![Spécifier l’ECID comme identité](./assets/specify-identity-gaming.png)
 
-   Vous spécifiez Experience Cloud Identity comme identité principale qu’Adobe Experience Platform Identity Service peut utiliser pour combiner (regrouper) le comportement des profils avec le même ECID.
+   Vous spécifiez l’identité Experience Cloud comme identité principale que le service d’identités Adobe Experience Platform peut utiliser pour combiner (rapprocher) le comportement des profils avec le même ECID.
 
    Sélectionnez **[!UICONTROL Appliquer]**. Une icône d’empreinte digitale apparaît dans l’attribut ecid.
 
@@ -144,7 +159,7 @@ Configurer le schéma :
 
    ![Spécifier l’e-mail comme identité](./assets/specify-email-identity-gaming.png)
 
-   Vous spécifiez l’adresse e-mail en tant qu’autre identité qu’Adobe Experience Platform Identity Service peut utiliser pour combiner (regrouper) le comportement des profils.
+   Vous spécifiez l’adresse e-mail en tant qu’autre identité que le service d’identités Adobe Experience Platform peut utiliser pour combiner (rapprocher) le comportement des profils.
 
    Sélectionnez **[!UICONTROL Appliquer]**. Une icône d’empreinte digitale apparaît dans l’attribut d’e-mail.
 
@@ -170,13 +185,13 @@ En regard des données de comportement, vous pouvez également capturer les donn
 
 Pour capturer les données de profil, vous devez :
 
-- Créer un schéma basé sur la classe Profil XDM individuel ;
+- Créez un schéma basé sur la classe XDM Individual Profile.
 
-- Ajouter le groupe de champs Profil principal v2 au schéma ;
+- Ajouter le groupe de champs Profile Core v2 au schéma.
 
-- Ajouter un objet d’identification basé sur le groupe de champs Profil principal v2 ;
+- Ajouter un objet d’identification basé sur le groupe de champs Profile Core v2.
 
-- Définir Experience Cloud ID comme identifiant principal et l’adresse e-mail comme identifiant ;
+- Définir l’Experience Cloud ID comme identifiant principal et l’adresse e-mail comme identifiant.
 
 - Activer le schéma pour le profil.
 
@@ -186,7 +201,7 @@ Consultez [Créer et modifier des schémas dans l’interface utilisateur](https
 
 Le schéma vous a permis de définir le modèle de données. Vous devez maintenant définir la structure pour stocker et gérer ces données à l’aide de jeux de données.
 
-Configurer le jeu de données :
+Pour configurer le jeu de données :
 
 1. Dans le rail de gauche de l’interface utilisateur d’Adobe Experience Platform, sélectionnez **[!UICONTROL Jeux de données]** sous [!UICONTROL GESTION DES DONNÉES].
 
@@ -325,11 +340,11 @@ Créer une connexion :
 
    - Pour chaque jeu de données :
 
-      - Sélectionnez un [!UICONTROL ID de personne] parmi les identités disponibles et définies dans les schémas du jeu de données d’Adobe Experience Platform.
+     - Sélectionnez un [!UICONTROL ID de personne] parmi les identités disponibles et définies dans les schémas du jeu de données d’Adobe Experience Platform.
 
-      - Sélectionnez la source de données appropriée dans la liste [!UICONTROL Type de source de données]. Si vous spécifiez **[!UICONTROL Autre]**, ajoutez une description pour la source de données.
+     - Sélectionnez la source de données appropriée dans la liste [!UICONTROL Type de source de données]. Si vous spécifiez **[!UICONTROL Autre]**, ajoutez une description pour la source de données.
 
-      - Définissez **[!UICONTROL Importer toutes les nouvelles données]** et **[!UICONTROL Données existantes de renvoi du jeu de données]** selon vos préférences.
+     - Définissez **[!UICONTROL Importer toutes les nouvelles données]** et **[!UICONTROL Données existantes de renvoi du jeu de données]** selon vos préférences.
 
    - Sélectionnez **[!UICONTROL Ajouter des jeux de données]**.
 
@@ -339,9 +354,9 @@ Consultez [Présentation des connexions](../connections/overview.md) pour plus d
 
 ## Configurer une vue de données
 
-Une vue de données est un conteneur spécifique à Customer Journey Analytics qui vous permet de déterminer comment interpréter les données d’une connexion. Elle spécifie toutes les dimensions et mesures disponibles dans Analysis Workspace et les colonnes dont ces dimensions et mesures obtiennent leurs données. Les vues de données sont définies en vue de la création de comptes rendus des performances dans Analysis Workspace.
+Une vue de données est un conteneur spécifique à Customer Journey Analytics qui vous permet de déterminer comment interpréter les données d’une connexion. Elle spécifie toutes les dimensions et mesures disponibles dans Analysis Workspace et les colonnes dont ces dimensions et mesures obtiennent leurs données. Les vues de données sont définies en vue du reporting dans Analysis Workspace.
 
-Créer une vue de données :
+Pour créer votre vue de données :
 
 1. Dans l’interface utilisateur de Customer Journey Analytics, sélectionnez **[!UICONTROL Vues de données]**, éventuellement à partir de **[!UICONTROL Gestion des données]** dans le menu supérieur.
 
@@ -374,9 +389,9 @@ Consultez [Présentation des vues de données](../data-views/data-views.md) pour
 
 ## Configurer un projet
 
-Analysis Workspace est un outil de navigation flexible qui vous permet de créer rapidement des analyses et de partager des informations sur la base des données. Les projets Espace de travail vous permettent de combiner des composants de données, des tableaux et des visualisations afin d’élaborer une analyse et de la partager avec tous les membres de l’entreprise.
+Analysis Workspace est un outil flexible basé sur un navigateur qui vous permet de créer rapidement des analyses et de partager des informations à partir de vos données. Les projets Espace de travail vous permettent de combiner des composants de données, des tableaux et des visualisations afin d’élaborer une analyse et de la partager avec tous les membres de l’entreprise.
 
-Créer un projet :
+Pour créer votre projet :
 
 1. Dans l’interface utilisateur de Customer Journey Analytics, sélectionnez **[!UICONTROL Projets]** dans le menu supérieur.
 

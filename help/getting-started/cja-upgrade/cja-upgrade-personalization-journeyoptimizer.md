@@ -1,6 +1,6 @@
 ---
 title: Utiliser l’objet de personnalisation pour l’utiliser avec Adobe Journey Optimizer
-description: Découvrir comment utiliser l’objet de personnalisation pour l’utiliser avec Adobe Journey Optimizer
+description: Découvrir comment utiliser l’objet de personnalisation avec Adobe Journey Optimizer
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -9,42 +9,54 @@ autotag-review: '2026-05-19T08:15:27.160Z'
 TQID: 'https://experienceleague.adobe.com/5XSv4yQAi5iaQp35AzS7sLNoH40-DFilzZheETca5MQ'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
+    internal-label: Upgrade
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Machine learning
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 155
+source-wordcount: '155'
 ht-degree: 100%
-
 ---
-
-# Utiliser l’objet de personnalisation pour l’utiliser avec Adobe Journey Optimizer {#upgrade-personalization}
+# Utiliser l’objet de personnalisation avec Adobe Journey Optimizer {#upgrade-personalization}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-personalization"
 >title="Utiliser l’objet de personnalisation pour Adobe Journey Optimizer"
->abstract="En tirant parti des technologies de pointe en matière de machine learning et de deep learning supervisés, l’optimisation personnalisée permet à une personne professionnelle (spécialisée dans le marketing) de définir des objectifs commerciaux et d’utiliser ses données client pour entraîner des modèles orientés métier afin de fournir des offres personnalisées et d’optimiser les KPI."
+>abstract="En tirant parti des technologies de pointe en matière de machine learning supervisé et de deep learning, l’optimisation personnalisée permet à un utilisateur professionnel (responsable marketing) de définir des objectifs commerciaux et d’utiliser ses données client pour entraîner des modèles orientés métier afin de fournir des offres personnalisées et d’optimiser les KPI."
 
 <!-- markdownlint-enable MD034 -->
 
 {{upgrade-note}}
 
-En tirant parti des technologies de pointe en matière de machine learning et de deep learning supervisés, l’optimisation personnalisée permet à une personne professionnelle (spécialisée dans le marketing) de définir des objectifs commerciaux et d’utiliser ses données client pour entraîner des modèles orientés métier afin de fournir des offres personnalisées et d’optimiser les KPI.
+En tirant parti des technologies de pointe en matière de machine learning supervisé et de deep learning, l’optimisation personnalisée permet à un utilisateur professionnel (responsable marketing) de définir des objectifs commerciaux et d’utiliser ses données client pour entraîner des modèles orientés métier afin de fournir des offres personnalisées et d’optimiser les KPI.
 
 1. Consultez les informations de la section [Modèle d’optimisation personnalisée](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/decisioning/offer-decisioning/rankings/ai-models/personalized-optimization-model) dans le guide de Journey Optimizer.
 

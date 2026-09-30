@@ -5,25 +5,33 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: e8ebf5e7-0b80-4d46-8a5f-b7ae832eda4f
 role: User
-TQID: https://experienceleague.adobe.com/vtwD-kgpmITrgGmc3SsY-xLkukMLtfwiyDWqc-OAQsI
+TQID: 'https://experienceleague.adobe.com/vtwD-kgpmITrgGmc3SsY-xLkukMLtfwiyDWqc-OAQsI'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+    internal-label: Use cases
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
+    internal-label: Reporting
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1417
-ht-degree: 13%
-
+source-wordcount: '1417'
+ht-degree: 14%
 ---
-
 # Exemple de projet B2B basé sur les personnes
 
 Cet article illustre un cas d’utilisation dans lequel vous souhaitez générer correctement des rapports dans Customer Journey Analytics sur les données de personne dans le contexte d’une configuration B2B standard basée sur la personne. Une telle configuration est facilitée par le [B2B edition Real-Time CDP](https://experienceleague.adobe.com/fr/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview).  Le cas d’utilisation explique comment configurer et générer des rapports sur les données B2B basées sur le niveau du profil (personne) dans Customer Journey Analytics.
@@ -36,14 +44,14 @@ Définissez votre connexion pour inclure tous les jeux de données B2B pertinent
 
 | Jeu de données (facultatif) | Schéma | Type de schéma | Classe de base | Description |
 |---|---|---|---|---|
-| Jeu De Données D’Activité B2B | Schéma D’Activité B2B | Événement | XDM ExperienceEvent | Un ExperienceEvent est un enregistrement factuel de ce qui s’est produit, y compris le moment de survenue et l’identité de la personne concernée. Les modèles ExperienceEvent peuvent être explicites (actions humaines directement observables) ou implicites (obtenus sans action humaine directe), et sont enregistrés sans agrégation ni interprétation. Les événements d’expérience sont essentiels pour l’analyse de domaine temporel, car ils permettent l’observation et l’analyse des modifications qui se produisent dans une fenêtre de temps donnée, ainsi que la comparaison entre plusieurs fenêtres de temps pour suivre les tendances. |
-| Jeu De Données De Personnes B2B | Schéma de personne B2B | Profile | XDM Individual Profile | Un profil individuel XDM constitue une représentation unique des attributs et des centres d’intérêt des individus identifiés et partiellement identifiés. Les profils moins identifiés peuvent contenir uniquement des signaux comportementaux anonymes, tels que des cookies de navigateur, tandis que les profils hautement identifiés peuvent contenir des informations personnelles détaillées, telles que le nom, la date de naissance, l’emplacement et l’adresse e-mail. À mesure qu’un profil se développe, il devient un solide référentiel d’informations personnelles, d’informations d’identification, de coordonnées et de préférences de communication pour une personne. |
+| Jeu De Données D’Activité B2B | Schéma D’Activité B2B | Événement | XDM ExperienceEvent | Un ExperienceEvent est un enregistrement factuel de ce qui s’est produit, y compris le moment de survenue et l’identité de la personne concernée. Les ExperienceEvents peuvent être explicites (actions humaines directement observables) ou implicites (obtenus sans action humaine directe), et sont enregistrés sans agrégation ni interprétation. Les événements d’expérience sont essentiels pour l’analyse de domaine temporel, car ils permettent l’observation et l’analyse des modifications qui se produisent dans une fenêtre de temps donnée, ainsi que la comparaison entre plusieurs fenêtres de temps pour suivre les tendances. |
+| Jeu De Données De Personnes B2B | Schéma de personne B2B | Profile | XDM Individual Profile | Un profil individuel XDM constitue une représentation unique des attributs et des centres d’intérêt des individus identifiés et partiellement identifiés. Les profils moins identifiés peuvent contenir uniquement des signaux comportementaux anonymes, tels que des cookies de navigateur, tandis que les profils hautement identifiés peuvent contenir des informations personnelles détaillées, telles que le nom, la date de naissance, l’emplacement et l’adresse e-mail. À mesure qu’un profil se développe, il devient un solide référentiel contenant des informations personnelles, des informations d’identification, des coordonnées et les préférences de communication d’un individu. |
 | Jeu De Données De Compte B2B | Schéma de compte B2B | Recherche | Compte d’entreprise XDM | Un compte professionnel XDM est une classe XDM (modèle de données d’expérience) standard qui capture les propriétés minimales requises d’un compte professionnel. Cette classe XDM peut uniquement être incluse dans le profil pour les clients avec l’édition B2B ou B2P. |
 | Jeu de données d’opportunité B2B | Schéma d’opportunité B2B | Recherche | XDM Business Opportunity | XDM Business Opportunity est une classe de modèle de données d’expérience (XDM) standard qui capture les propriétés minimales requises d’une opportunité commerciale. Cette classe XDM peut uniquement être incluse dans le profil pour les clients avec l’édition B2B ou B2P. |
 | Jeu De Données De Campagne B2B | Schéma De Campagne B2B | Recherche | XDM Business Campaign | XDM Business Campaign est une classe XDM (modèle de données d’expérience) standard qui capture les propriétés minimales requises d’une campagne commerciale. Cette classe XDM peut uniquement être incluse dans le profil pour les clients avec l’édition B2B ou B2P. |
-| Jeu De Données De Liste Marketing B2B | Schéma de liste marketing B2B | Recherche | Liste XDM Business Marketing | La liste XDM Business Marketing est une classe XDM (modèle de données d’expérience) standard qui capture les propriétés minimales requises d’une liste marketing. Les listes marketing vous permettent de donner la priorité aux prospects qui sont les plus susceptibles d’acheter votre produit. Cette classe XDM peut uniquement être incluse dans le profil pour les clients avec l’édition B2B ou B2P. |
-| Jeu De Données Relation Personne-Compte B2B | Schéma De Relation Entre La Personne Et Le Compte B2B | Recherche | Relation Personne/Compte d’entreprise XDM | La relation de la personne avec le compte professionnel XDM est une classe XDM standard qui capture les propriétés minimales requises d’une personne associée à un compte professionnel. |
-| Jeu De Données De Relation De La Personne Avec L’Opportunité B2B | Schéma de relation de la personne avec l’opportunité B2B | Recherche | Relation Personne/XDM Business Opportunity | La relation de la personne avec l’opportunité commerciale XDM est une classe XDM (modèle de données d’expérience) standard qui capture les propriétés minimales requises d’une personne associée à une opportunité commerciale. |
+| Jeu De Données De Liste Marketing B2B | Schéma de liste marketing B2B | Recherche | XDM Business Marketing List | La liste XDM Business Marketing est une classe XDM (modèle de données d’expérience) standard qui capture les propriétés minimales requises d’une liste marketing. Les listes marketing vous permettent de donner la priorité aux prospects qui sont les plus susceptibles d’acheter votre produit. Cette classe XDM peut uniquement être incluse dans le profil pour les clients avec l’édition B2B ou B2P. |
+| Jeu De Données Relation Personne-Compte B2B | Schéma De Relation Entre La Personne Et Le Compte B2B | Recherche | XDM Business Account Person Relation | La relation de la personne avec le compte professionnel XDM est une classe XDM standard qui capture les propriétés minimales requises d’une personne associée à un compte professionnel. |
+| Jeu De Données De Relation De La Personne Avec L’Opportunité B2B | Schéma de relation de la personne avec l’opportunité B2B | Recherche | XDM Business Opportunity Person Relation | La relation de la personne avec l’opportunité commerciale XDM est une classe XDM (modèle de données d’expérience) standard qui capture les propriétés minimales requises d’une personne associée à une opportunité commerciale. |
 | Jeu De Données De Membre De La Liste Marketing B2B | Schéma des membres de la liste marketing B2B | Recherche | Membres de la liste marketing XDM | Membres de la liste marketing professionnelle XDM est une classe XDM (modèle de données d’expérience) standard qui décrit les membres, les personnes ou les contacts associés à une liste marketing. |
 | Jeu De Données De Membre De Campagne B2B | Schéma des membres de la campagne B2B | Recherche | Membres de XDM Business Campaign | Membres de XDM Business Campaign est une classe XDM (modèle de données d’expérience) standard qui décrit un contact ou un prospect associé à une campagne commerciale. |
 

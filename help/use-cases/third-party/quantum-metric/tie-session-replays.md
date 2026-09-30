@@ -5,26 +5,35 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: fcc36457-4ce9-4c93-93e2-de03becfd5da
-TQID: https://experienceleague.adobe.com/GEH0qD9G2uRs36-yzWjUbfH8VdSezkhUffcDuDQcsfw
+TQID: 'https://experienceleague.adobe.com/GEH0qD9G2uRs36-yzWjUbfH8VdSezkhUffcDuDQcsfw'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
+  - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+    internal-label: Use cases
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Data collection
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 843
-ht-degree: 2%
-
+source-wordcount: '843'
+ht-degree: 3%
 ---
-
 # La session Lier Quantum Metric est relue aux données dans Customer Journey Analytics
 
 En liant les relectures de session de Quantum Metric aux données de CJA, les clients peuvent mieux comprendre « le pourquoi » derrière « le quoi ».  Workspace peut être utilisé pour découvrir des sessions avec friction, puis vous pouvez cliquer sur des ID de session liés pour explorer la relecture de session dans Quantum Metric.  Ces données permettent de visualiser le comportement au sein d’une session et de mieux comprendre ce qui génère les frictions chez les consommateurs.  Grâce aux relectures de session liées à CJA, vous pouvez capturer un contexte critique autour du comportement des clients dans votre expérience.
@@ -58,7 +67,7 @@ Pour ajouter l’identifiant de session Quantum Metric aux données envoyées à
 1. Sélectionnez **[!UICONTROL Éléments de données]**, puis sélectionnez **[!UICONTROL Ajouter un élément de données]**.
 1. Définissez les paramètres suivants :
    * **[!UICONTROL Nom]** : `Quantum Metric session ID`
-   * **[!UICONTROL Extension]** : [!UICONTROL Core]
+   * **[!UICONTROL Extension]** : [!UICONTROL Core]
    * **[!UICONTROL Type d’élément de données]** : [!UICONTROL Code personnalisé]
 1. Sélectionnez le bouton **[!UICONTROL Ouvrir l’éditeur]** et collez le code suivant :
 

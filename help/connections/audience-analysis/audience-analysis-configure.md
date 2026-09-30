@@ -9,26 +9,38 @@ autotag-review: '2026-05-19T10:44:07.732Z'
 TQID: 'https://experienceleague.adobe.com/pJMss6WVPH8LAAJXlmblmeMOHvOmk5dq0Zzy-Ab-Mt0'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: d3fb138f-79e4-4a81-aedb-76dd93560085
+    internal-label: Experience Platform integration
+  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+    internal-label: Audiences
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Customer profiles
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1391
+source-wordcount: '1391'
 ht-degree: 34%
-
 ---
-
 # Configurer l’analyse de l’audience {#configure-audience-analysis}
 
 <!-- markdownlint-disable MD034 -->
@@ -45,7 +57,7 @@ ht-degree: 34%
 >[!CONTEXTUALHELP]
 >id="cja-audience-analysis-sandbox"
 >title="Sandbox"
->abstract="Sélectionnez le sandbox qui contient les jeux de données de profil Experience Platform appropriés. Ces jeux de données doivent contenir les données d’audience pour lesquelles vous souhaitez créer des rapports dans Analysis Workspace. "
+>abstract="Sélectionnez le sandbox qui contient les jeux de données de profil Experience Platform appropriés. Ces jeux de données doivent contenir les données d’audience sur lesquelles vous souhaitez générer des rapports dans Analysis Workspace. "
 
 <!-- markdownlint-enable MD034 -->
 
@@ -54,7 +66,7 @@ ht-degree: 34%
 >[!CONTEXTUALHELP]
 >id="cja-audience-person-id"
 >title="ID de personne"
->abstract="Sélectionnez un champ dans le schéma qui représente l’identifiant de personne. La sélection se limite à la liste des champs du schéma qui sont marqués comme identité et qui possèdent un espace de noms d’identité."
+>abstract="Sélectionner un champ dans le schéma qui représente l’identifiant de personne. La sélection se limite à la liste des champs du schéma qui sont marqués comme identité et qui possèdent un espace de noms d’identité."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -115,7 +127,7 @@ Pour créer une configuration d’analyse d’audience :
 
    | Champ | Description |
    |---------|----------|
-   | **[!UICONTROL ID de personne]** | Sélectionnez un champ dans le schéma qui représente l’identifiant de personne.<p>La sélection est limitée à la liste des champs du schéma qui sont marqués comme Identité et qui possèdent un espace de noms d’identité. **[!UICONTROL IdentityMap]** est sélectionné par défaut et convient à la plupart des configurations. </p><p>Si aucun ID de personne n’est disponible, cela signifie qu’un ou plusieurs ID de personne n’ont pas été définis dans le schéma. Voir [Définir des champs d’identité dans l’interface utilisateur](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/ui/fields/identity) pour plus d’informations.</p> |
+   | **[!UICONTROL ID de personne]** | Sélectionner un champ dans le schéma qui représente l’identifiant de personne.<p>La sélection est limitée à la liste des champs du schéma qui sont marqués comme Identité et qui possèdent un espace de noms d’identité. **[!UICONTROL IdentityMap]** est sélectionné par défaut et convient à la plupart des configurations. </p><p>Si aucun ID de personne n’est disponible, cela signifie qu’un ou plusieurs ID de personne n’ont pas été définis dans le schéma. Voir [Définir des champs d’identité dans l’interface utilisateur](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/ui/fields/identity) pour plus d’informations.</p> |
    | **[!UICONTROL Utiliser l’espace de noms d’identité principal]** | Cette option s’affiche si vous sélectionnez **[!UICONTROL Mappage d’identités]** pour l’ID de personne. <p>Activez cette option si vous souhaitez que Customer Journey Analytics trouve l’identité dans le mappage d’identité signalée par un attribut primary=true, puis l’utilise comme identifiant de personne pour cette ligne. Cette identité est la clé primaire utilisée dans Experience Platform pour le partitionnement. Cette identité est également le candidat idéal pour l’utilisation en tant qu’ID de personne Customer Journey Analytics (selon la manière dont le jeu de données est configuré dans une connexion Customer Journey Analytics).</p> |
    | **[!UICONTROL Espace de noms d’identité]** | Cette option s’affiche si vous sélectionnez **[!UICONTROL Mappage d’identités]** pour l’ID de personne. Cette option est désactivée si vous utilisez l’espace de noms d’identifiant de Principal. <p>Les espaces de noms d’identité sont un composant du [service d’identités d’Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/features/namespaces). Les espaces de noms servent d’indicateurs pour le contexte auquel une identité se rapporte. Si vous spécifiez un espace de noms, Customer Journey Analytics recherche cette clé d’espace de noms dans le mappage d’identités de chaque ligne et utilise l’identité sous cet espace de noms comme ID de personne pour cette ligne. Comme Customer Journey Analytics ne peut pas analyser complètement le jeu de données de toutes les lignes pour déterminer les espaces de noms présents, tous les espaces de noms possibles s’affichent dans le menu déroulant. Vous devez savoir quels espaces de noms sont spécifiés dans les données ; ces derniers ne sont pas détectés automatiquement.</p> |
 

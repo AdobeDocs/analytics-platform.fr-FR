@@ -3,7 +3,7 @@ title: Notes de mise à jour actuelles de Customer Journey Analytics
 description: Affichez les dernières notes de mise à jour de Customer Journey Analytics, y compris les nouvelles fonctionnalités, les problèmes résolus et les versions reportées pour la période en cours.
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-TQID: https://experienceleague.adobe.com/EQKhna8E33DddZQGWe3ASBKMY9r-UsfuUcJg7DMwH0w
+TQID: 'https://experienceleague.adobe.com/EQKhna8E33DddZQGWe3ASBKMY9r-UsfuUcJg7DMwH0w'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -12,15 +12,17 @@ feature_v2:
     internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
     internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
-    internal-label: Templates, Templates (CJA)
+    internal-label: Templates
   - id: ad5685a0-8296-4a0c-814c-658c10b4af12
     internal-label: Content Analytics
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
     internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-    internal-label: Segments, Segments (CJA)
+    internal-label: Segments
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
     internal-label: Filters
   - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
@@ -33,6 +35,8 @@ subfeature_v2:
     internal-label: Dimensions
   - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
     internal-label: Exports
+  - id: a8e39571-4463-4aa3-8b3f-4e2341ecf3b3
+    internal-label: Release notes
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -45,10 +49,10 @@ topic_v2:
     internal-label: Implementation
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 171fefc812dc63aee86def3338b286bbce6913bd
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
 source-wordcount: '1287'
-ht-degree: 19%
+ht-degree: 20%
 ---
 # Notes de mise à jour actuelles de Customer Journey Analytics (septembre 2026)
 
@@ -65,9 +69,9 @@ Ces notes de mise à jour couvrent la période de publication de septembre 2026.
 | **Filtrage et création de rapports concernant les politiques de consentement**<br/> Vous pouvez désormais créer des rapports sur les visiteurs qui correspondent à vos politiques de consentement Adobe Experience Platform. (Les dimensions et mesures de la politique de consentement sont ajoutées aux vues de données dans votre connexion.)<p>De plus, vous pouvez exclure les visiteurs non consentants avant que leurs données ne soient ingérées dans Customer Journey Analytics.</p><p>Pour plus d’informations, voir [&#x200B; Présentation des rapports et du filtrage de consentement &#x200B;](/help/connections/consent-reporting-filtering/consent-overview.md).</p> | | 21 septembre 2026 |
 | **Limiter les segments à la période du rapport**<br/> Les données d’un rapport Workspace peuvent s’étendre au-delà de la période du rapport lorsqu’un segment inclut des composants de période.<p>Une nouvelle option est désormais disponible. Elle vous permet de limiter les résultats à la période du rapport, quels que soient les composants de date inclus dans le segment.</p><p>Cette option est disponible lors de la création ou de la modification d’un segment dont le conteneur de niveau supérieur est Personne.</p><p>Pour plus d’informations, voir [Création de segments](/help/components/segments/seg-builder.md#components).</p> | 26 Août 2026 | 9 septembre 2026 |
 | **Analysez les expériences client LLM dans Analysis Workspace avec les informations de conversation**<br/> Customer Journey Analytics apporte désormais des données de conversation non structurées dans Analysis Workspace, ce qui vous permet de créer des rapports sur les expériences de navigation et d’achat basées sur LLM qui se produisent dans vos propriétés.<p>Grâce à cette fonctionnalité, vous pouvez :</p><ul><li>Collectez les invites, les réponses et les métadonnées de l’agent à partir des agents de conversation (les agents personnalisés de votre organisation ou Adobe Brand Concierge) via Web SDK.</li><li>Analysez l’intention, le ton et le sentiment afin de comprendre ce que les clients demandent, comment votre agent répond et ce que vos clients pensent de leurs interactions.</li><li>Analysez à grande échelle à l’aide de votre schéma, de vos jeux de données et de vos vues de données existants, puis obtenez des informations sur les surfaces dans Analysis Workspace.</li><li>Connectez les conversations aux résultats en liant les interactions des agents à vos parcours clients généraux, afin de pouvoir mesurer l’impact réel sur la conversion, l’engagement, etc.</li></ul><p>Auparavant, les expériences basées sur LLM étaient difficiles à mesurer et presque impossibles à connecter à vos parcours clients existants.</p><p>(Lien vers la documentation à suivre.)</p> | | 30 septembre 2026<p>(Initialement prévu pour le 22 septembre 2026)</p> |
-| **Alertes horaires**<br/> Vous pouvez désormais définir la granularité horaire d’une alerte sur Horaire.<p>Les alertes horaires sont destinées aux données qui arrivent au cours d’une heure donnée. Si les données ont une latence supérieure à une heure, une granularité plus longue garantit que l’alerte évalue des données complètes. Vérifiez auprès de l’ingénieur de données si vous n’êtes pas sûr du temps nécessaire aux données pour arriver.</p><p>(Lien vers la documentation à suivre.)</p> | | Septembre 2026 |
-| **La diffusion des alertes respecte strictement le délai configuré**<br/> Les alertes sont désormais diffusées à la fin de la fenêtre de délai que vous avez définie, que les données soient terminées ou en cours de réception pour la plage d’événements spécifiée. Toutes les données qui arrivent après la période de temporisation ne sont pas incluses dans l’alerte.<p>Auparavant, les alertes incluaient une vérification de traitement en arrière-plan qui attendait les données arrivant en retard, même si cela signifiait que les alertes étaient diffusées après la fenêtre de délai configurée.</p><p>(Lien vers la documentation à suivre.)</p> | | Septembre 2026 |
-| **Intégration de**<br/> connectez Adobe Brand Visibility aux données Customer Journey Analytics de votre entreprise afin de mesurer la manière dont les découvertes pilotées par l’IA se traduisent par un engagement réel sur le site web et des résultats commerciaux.<p>(Lien vers la documentation à suivre.)</p> | | Septembre 2026 |
+| **Alertes horaires**<br/> Vous pouvez désormais définir la granularité horaire d’une alerte sur Horaire.<p>Les alertes horaires sont destinées aux données qui arrivent au cours d’une heure donnée. Si les données ont une latence supérieure à une heure, une granularité plus longue garantit que l’alerte évalue des données complètes. Vérifiez auprès de l’ingénieur de données si vous n’êtes pas sûr du temps nécessaire aux données pour arriver.</p><p>(Lien vers la documentation à suivre.)</p> | | Septembre 2026 |
+| **La diffusion des alertes respecte strictement le délai configuré**<br/> Les alertes sont désormais diffusées à la fin de la fenêtre de délai que vous avez définie, que les données soient terminées ou en cours de réception pour la plage d’événements spécifiée. Toutes les données qui arrivent après la période de temporisation ne sont pas incluses dans l’alerte.<p>Auparavant, les alertes incluaient une vérification de traitement en arrière-plan qui attendait les données arrivant en retard, même si cela signifiait que les alertes étaient diffusées après la fenêtre de délai configurée.</p><p>(Lien vers la documentation à suivre.)</p> | | Septembre 2026 |
+| **Intégration de**<br/> connectez Adobe Brand Visibility aux données Customer Journey Analytics de votre entreprise afin de mesurer la manière dont les découvertes pilotées par l’IA se traduisent par un engagement réel sur le site web et des résultats commerciaux.<p>(Lien vers la documentation à suivre.)</p> | | Septembre 2026 |
 | **Compétences de mise à niveau et d’implémentation dans CX Enterprise Coworker**<br/> De nouvelles compétences sont bientôt disponibles pour Coworker. Ces compétences facilitent les mises à niveau et implémentations de Customer Journey Analytics :<ul><li>**Compétences relatives aux guides d’implémentation** : générez une liste personnalisée des étapes et recommandations de mise à niveau ou d’implémentation. Les conseils de mise à niveau et d’implémentation peuvent ensuite être transformés en projet Collègues à l’aide d’un playbook prédéfini.</li><li>**Compétences intelligentes de mise à niveau et de liste de contrôle d’implémentation** : utilisez le projet Coworker pour gérer et suivre la progression de l’implémentation par rapport à la liste de contrôle de mise à niveau ou d’implémentation personnalisée, maintenir le statut du projet, collaborer entre les équipes, affecter des tâches et introduire des points de contrôle d’approbation si nécessaire.</li><li>**Compétences en validation des données** : vérifiez que votre implémentation est correctement configurée et alignée avec les bonnes pratiques.</li></ul><p>(Liens vers la documentation à suivre.)</p> | | 30 septembre 2026 |
 
 ### Correctifs dans Customer Journey Analytics
@@ -101,6 +105,6 @@ Ces notes de mise à jour couvrent la période de publication de septembre 2026.
 >* [Notes de mise à jour précédentes de Customer Journey Analytics pour 2026](/help/release-notes/2026.md)
 >* [Notes de mise à jour d’Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=fr)
 >* [Notes de mise à jour du module complémentaire Streaming Media Collection](https://experienceleague.adobe.com/docs/media-analytics/using/additional-resources/release-notes.html?lang=fr)
->* [Notes de mise à jour de &#x200B;](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=fr)
+>* Notes de mise à jour d’[CX Enterprise](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=fr)
 >* [Mises à jour de la documentation de &#x200B;](/help/release-notes/doc-changes.md)
 

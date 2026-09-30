@@ -5,32 +5,47 @@ title: Exporter Des Tables Complètes Vers Le Cloud
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-TQID: https://experienceleague.adobe.com/7Bqz2dh9v-BhLey5fWNjnQkgFAXQd3QDnTzz8rd7BFA
+TQID: 'https://experienceleague.adobe.com/7Bqz2dh9v-BhLey5fWNjnQkgFAXQd3QDnTzz8rd7BFA'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
   - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+    internal-label: Data governance
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
+    internal-label: Freeform tables
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
   - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+    internal-label: Exports
+  - id: a3b826fd-7a63-4a83-8736-83eee6668f44
+    internal-label: Curate and share
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-source-git-commit: f62c202f92ffc842a9abe2a91bec5231a606f67c
+    internal-label: Governance
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 3275
+source-wordcount: '3275'
 ht-degree: 59%
-
 ---
-
 # Exporter des tableaux complets dans le cloud {#full-table-export}
 
 <!-- markdownlint-disable MD034 -->
@@ -38,7 +53,7 @@ ht-degree: 59%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-full-table-export"
 >title="Créer des exports de tableaux complets pour obtenir des fonctionnalités similaires à celles de Data Warehouse"
->abstract="Les export de tableaux complets sont disponibles dès que vous voyez des données dans Analysis Workspace. Vous pouvez créer ou planifier des exports de tables complets selon vos besoins.<br><br>Vous pouvez créer ou planifier des exports de tables complets en quelques minutes seulement si vous savez déjà quelles données inclure dans l’export."
+>abstract="Les exports de tableaux complets sont disponibles dès que vous voyez des données dans Analysis Workspace. Vous pouvez créer ou planifier des exports de tableaux complets selon vos besoins.<br><br>Vous pouvez créer ou planifier des exports de tables complets en quelques minutes seulement si vous savez déjà quelles données inclure dans l’export."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -165,7 +180,7 @@ Pour exporter des tableaux complets à partir d’Analysis Workspace, procédez
    | Début le | Jour et heure auxquels l’export planifié doit commencer. <p>Cette option n’est disponible que lors du choix d’une fréquence d’export planifié.</p> |
    | Se termine le | Jour et heure d’expiration de l’export planifié. L’export planifié ne s’exécute plus après la date et l’heure que vous avez définies. <p>Cette option n’est disponible que lors du choix d’une fréquence d’export planifié.</p> |
    | Afficher les destinations pour tous les utilisateurs | Les administrateurs système peuvent sélectionner cette option pour afficher tous les comptes et emplacements, quelle que soit la personne qui les a créés. |
-   | Compte | Sélectionnez le compte d’export dans le cloud où vous souhaitez que les données soient envoyées. <p>Si vous n’avez pas encore configuré de compte cloud à utiliser, vous pouvez également configurer un nouveau compte :<ol><li>Dans le menu déroulant **[!UICONTROL Compte]**, sélectionnez **[!UICONTROL Ajouter un compte]** puis spécifiez les informations suivantes :<ul><li>**[!UICONTROL Nom du compte d’emplacement]** : spécifiez un nom pour le compte d’emplacement. Ce nom apparaît lors de la création d’un emplacement. </li><li>**[!UICONTROL Description de compte d’emplacement]** : fournissez une brève description du compte pour le différencier des autres comptes du même type de compte.</li><li>**Rendre le compte disponible pour tous les utilisateurs de votre organisation** : sélectionnez cette option si vous souhaitez autoriser d’autres utilisateurs de votre organisation à utiliser le compte.</li><li>**[!UICONTROL Type de compte]** : sélectionnez le type de compte cloud vers lequel vous exportez. Les types de compte disponibles sont Amazon S3 Role ARN, Google Cloud Platform, Azure SAS, Azure RBAC, Snowflake et Zone de destination des données AEP.</li></ul><li>Pour terminer la configuration de votre compte, sélectionnez le lien ci-dessous, correspondant au **[!UICONTROL type de compte]** sélectionné :<ul><li>[Zone de destination des données AEP](/help/components/exports/cloud-export-accounts.md#aep-data-landing-zone)</li><li>[Amazon S3 Role ARN](/help/components/exports/cloud-export-accounts.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-accounts.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-accounts.md#azure-sas)</li><li>[RBAC Azure](/help/components/exports/cloud-export-accounts.md#azure-rbac)</li><li>[Snowflake](/help/components/exports/cloud-export-accounts.md#snowflake)</li></ul></ol> |
+   | Compte | Sélectionner le compte d’export dans le cloud où vous souhaitez que les données soient envoyées. <p>Si vous n’avez pas encore configuré de compte cloud à utiliser, vous pouvez également configurer un nouveau compte :<ol><li>Dans le menu déroulant **[!UICONTROL Compte]**, sélectionnez **[!UICONTROL Ajouter un compte]** puis spécifiez les informations suivantes :<ul><li>**[!UICONTROL Nom du compte d’emplacement]** : spécifiez un nom pour le compte d’emplacement. Ce nom apparaît lors de la création d’un emplacement. </li><li>**[!UICONTROL Description de compte d’emplacement]** : fournissez une brève description du compte pour le différencier des autres comptes du même type de compte.</li><li>**Rendre le compte disponible pour tous les utilisateurs de votre organisation** : sélectionnez cette option si vous souhaitez autoriser d’autres utilisateurs de votre organisation à utiliser le compte.</li><li>**[!UICONTROL Type de compte]** : sélectionnez le type de compte cloud vers lequel vous exportez. Les types de compte disponibles sont ARN de rôle Amazon S3, Google Cloud Platform, Azure SAS, Azure RBAC, Snowflake et Zone de destination des données AEP.</li></ul><li>Pour terminer la configuration de votre compte, sélectionnez le lien ci-dessous, correspondant au **[!UICONTROL type de compte]** sélectionné :<ul><li>[Zone de destination des données AEP](/help/components/exports/cloud-export-accounts.md#aep-data-landing-zone)</li><li>[Amazon S3 Role ARN](/help/components/exports/cloud-export-accounts.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-accounts.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-accounts.md#azure-sas)</li><li>[RBAC Azure](/help/components/exports/cloud-export-accounts.md#azure-rbac)</li><li>[Snowflake](/help/components/exports/cloud-export-accounts.md#snowflake)</li></ul></ol> |
    | Emplacement | Sélectionnez l’emplacement sur le compte où vous souhaitez que les données d’export soient envoyées.<p>Si vous n’avez pas encore configuré de compte cloud à utiliser, vous pouvez également configurer un nouveau compte :<ol><li>Dans le menu déroulant **[!UICONTROL Emplacement]**, sélectionnez **[!UICONTROL Ajouter un emplacement]** puis spécifiez les informations suivantes :<ul><li>**[!UICONTROL Nom]** : nom de l’emplacement.</li><li>**[!UICONTROL Description]** : fournissez une brève description de l’emplacement pour le différencier des autres emplacements sur le compte compte.</li><li>**Rendre l’emplacement disponible pour tous les utilisateurs de votre organisation** : sélectionnez cette option si vous souhaitez autoriser d’autres utilisateurs de votre organisation à utiliser l’emplacement.</li><li>**[!UICONTROL Compte d’emplacement]** : sélectionnez le compte sur lequel vous souhaitez créer l’emplacement.</li></ul><li>Pour terminer la configuration de votre emplacement, sélectionnez le lien ci-dessous, qui correspond au type de compte que vous avez sélectionné dans le champ **[!UICONTROL Compte d’emplacement]** :<ul><li>[Zone de destination des données AEP](/help/components/exports/cloud-export-locations.md#aep-data-landing-zone)</li><li>[Amazon S3 Role ARN](/help/components/exports/cloud-export-locations.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-locations.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-locations.md#azure-sas)</li><li>[RBAC Azure](/help/components/exports/cloud-export-locations.md#azure-rbac)</li><li>[Snowflake](/help/components/exports/cloud-export-locations.md#snowflake)</li></ul> |
    | Notifier des problèmes, une fois l’opération terminée ou lors de l’expiration | Ajoutez les utilisateurs et utilisatrices et les groupes qui doivent recevoir des notifications lorsque cet export échoue ou arrive à expiration. Commencez à saisir le nom ou l’adresse e-mail d’un utilisateur ou d’une utilisatrice, ou commencez à saisir le nom d’un groupe, puis sélectionnez-le lorsqu’il apparaît dans la liste déroulante. |
 
@@ -195,7 +210,7 @@ L’export de données Customer Journey Analytics vers le cloud vous permet d�
 
 * Incluez les mesures calculées dans les données Customer Journey Analytics exportées.
 
-* Structure la sortie des données en tant que valeurs concaténées.
+* Structurer le résultat des données sous la forme de valeurs concaténées.
 
 * Exportez une fois ou selon un planning. (Également disponible avec [autres options d’export](/help/analysis-workspace/export/export-project-overview.md).)
 
@@ -236,7 +251,7 @@ Les fonctionnalités suivantes ne sont pas prises en charge et sont automatiquem
 
 ## Composants non pris en charge
 
-Les composants suivants ne sont pas pris en charge et Analysis Workspace vous invite à les supprimer de votre tableau lors d’un export de tableau complet :
+Les composants suivants ne sont pas pris en charge et Analysis Workspace vous invite à les supprimer de votre tableau lorsque vous effectuez un export de tableau complet.
 
 * Mesures calculées qui utilisent des fonctions non prises en charge dans la définition de mesure (voir [Fonctions de mesure calculées non prises en charge](#calculated-metric-functions-support) pour plus d’informations)
 * Composants dont l’exportation a été restreinte par un administrateur (voir la section *Segment sur les politiques de gouvernance des données dans les vues de données* dans [Libellés et politiques](/help/data-views/data-governance.md) pour plus d’informations)
@@ -408,11 +423,11 @@ Si un modèle d’attribution autre que celui par défaut est utilisé dans un r
 
 * **Pour les rapports qui incluent l’attribution de mesure dans une seule dimension :** [Attribution de mesure](/help/data-views/component-settings/attribution.md) remplace le [modèle d’attribution](/help/data-views/component-settings/persistence.md) comme cela est normalement fait lors de l’utilisation de l’attribution de mesure.
 
-  Par exemple, une attribution de mesure « première touche » remplace une attribution de dimension « le plus récent ».
+  Par exemple, une attribution de mesure de type « Première touche » remplace une affectation de dimension de type « La plus récente ».
 
 * **Pour les rapports qui incluent l’attribution de mesures sur plusieurs dimensions en même temps :** [Attribution de mesure](/help/data-views/component-settings/attribution.md) est appliquée en plus de la dimension [modèle d’attribution](/help/data-views/component-settings/persistence.md).
 
-  Par exemple, une attribution de mesure « première touche » est appliquée en plus d’une attribution de dimension « le plus récent ». En outre, l’attribution de mesure est appliquée aux paires d’éléments de dimension post-allouées comme s’il s’agissait d’éléments de dimension uniques, plutôt qu’à chaque élément de dimension indépendamment comme cela est normalement fait dans un tableau à structure libre.
+  Par exemple, une attribution de mesure de type « Première touche » est appliquée en plus d’une affectation de dimension de type « La plus récente ». En outre, l’attribution de mesure est appliquée aux paires d’éléments de dimension post-allouées comme s’il s’agissait d’éléments de dimension uniques, plutôt qu’à chaque élément de dimension indépendamment comme cela est normalement fait dans un tableau à structure libre.
 
   >[!NOTE]
   >

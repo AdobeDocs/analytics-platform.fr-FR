@@ -5,24 +5,34 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 role: User
 exl-id: 8a48ad3b-fa30-497e-8306-f8d881b1a335
-TQID: https://experienceleague.adobe.com/sqRGQu7Vg5jdCGXT-NWIeExSrBeMVK5hXg0VvD2LtIM
+TQID: 'https://experienceleague.adobe.com/sqRGQu7Vg5jdCGXT-NWIeExSrBeMVK5hXg0VvD2LtIM'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
+  - id: d494f34f-674c-496a-a400-b33552b95463
+    internal-label: Adobe Product Analytics
+  - id: bfa38d8a-4e93-4fd8-8cd8-e72c589e3af8
+    internal-label: Guided analysis
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 7f8ab656c7dbf508b2a78fd2022592faf883c56e
+    internal-label: User
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 758
+source-wordcount: '758'
 ht-degree: 100%
-
 ---
-
 # Analyse de l’[!UICONTROL engagement] {#engagement}
 
 <!-- markdownlint-disable MD034 -->
@@ -51,7 +61,7 @@ Les fonctionnalités qui s’affichent en haut de cette visualisation indiquent 
 Les cas d’utilisation de cette analyse sont les suivants :
 
 * **Engagement par fonctionnalité** : vous pouvez établir une corrélation directe entre l’engagement et l’adoption d’une fonctionnalité spécifique. Comprendre les fonctionnalités les plus utilisées peut aider à déterminer les fonctionnalités dans lesquelles investir davantage.
-* **Découvrir les fonctionnalités sous-utilisées** : les fonctionnalités avec un faible nombre d’utilisateurs et utilisatrices actifs mais une utilisation élevée peuvent indiquer une fonctionnalité prédominante, qui a de la valeur, mais n’est pas découverte ou utilisée par la population plus large. Envisagez d’améliorer la capacité de découverte de ces fonctionnalités afin que plus d’utilisateurs et d’utilisatrices les exploitent.
+* **Découvrir les fonctionnalités sous-utilisées** : les fonctionnalités avec un faible nombre d’utilisateurs et utilisatrices actifs mais une utilisation élevée peuvent indiquer une fonctionnalité prédominante, qui a de la valeur, mais n’est pas découverte ou utilisée par la population plus large. Envisagez d’améliorer la découvrabilité de ces fonctionnalités afin que davantage d’utilisateurs en tirent parti.
 * **Améliorer les fonctionnalités populaires** : les fonctionnalités avec un nombre élevé d’utilisateurs et utilisatrices actifs mais une faible utilisation peuvent indiquer qu’une fonctionnalité est très demandée, mais sous-utilisée. Ces situations présentent des opportunités pour en savoir plus de vos utilisateurs et utilisatrices sur les améliorations qui rendraient la fonctionnalité plus utile pour eux.
 * **Créer des segments basés sur des fonctionnalités** : affichez l’utilisation des fonctionnalités de cette manière pour demander des opportunités d’analyse supplémentaires. Créez un segment pour tout point du graphique afin d’explorer plus en détail ce groupe d’utilisateurs et utilisatrices et d’appliquer ces enseignements à votre stratégie d’engagement client.
 * **Tests A/B d’adoption des fonctionnalités** : comparez l’utilisation de plusieurs fonctionnalités sur différents groupes d’utilisateurs et utilisatrices. Ajoutez des segments dans le rail de requête pour déterminer la différence d’utilisation des fonctionnalités entre les groupes d’utilisateurs et utilisatrices clés.
@@ -65,7 +75,7 @@ Consultez [Interface](../overview.md#interface) pour une vue d’ensemble de l�
 Le rail de requête vous permet de configurer les composants suivants :
 
 * **[!UICONTROL Événements]** : événements que vous souhaitez mesurer. Chaque événement représente l’utilisation d’une fonctionnalité donnée et s’affiche sous la forme d’un point dans la matrice. Vous pouvez inclure jusqu’à dix événements. La médiane est calculée en fonction des événements sélectionnés.
-* **[!UICONTROL Comptabilisé comme]** : le long de l’axe X, vous pouvez mesurer le pourcentage moyen d’utilisateurs et utiliatrices actifs par jour, par semaine, par mois ou par trimestre. L’axe Y ajuste automatiquement les temps moyens par personne en fonction de la sélection de l’axe X.
+* **[!UICONTROL Comptabilisé comme]** : le long de l’axe X, vous pouvez mesurer le pourcentage moyen d’utilisateurs et utiliatrices actifs par jour, par semaine, par mois ou par trimestre. L’axe Y ajuste automatiquement les durées moyennes par utilisateur en fonction de la sélection effectuée sur l’axe X.
 * **[!UICONTROL Segments]** : segments que vous souhaitez mesurer. Chaque segment sélectionné double le nombre de points du graphique et de lignes du tableau. Vous pouvez inclure jusqu’à trois segments.
 
 >[!TIP]
@@ -89,7 +99,7 @@ L’analyse [!UICONTROL Engagement] propose les paramètres de graphique suivant
 
 Période souhaitée pour votre analyse. Ce paramètre comporte deux composants :
 
-* **[!UICONTROL Intervalle]** : granularité de la date selon laquelle vous souhaitez afficher les données de tendance. Cette analyse traite [!UICONTROL Intervalle] de la même manière que [!UICONTROL Comptabilisé comme] dans le rail de requête. Les utilisateurs et utilisatrices actifs par heure ne sont pas pris en charge.
+* **[!UICONTROL Intervalle]** : granularité de la date selon laquelle vous souhaitez afficher les données de tendance. Cette analyse traite [!UICONTROL Intervalle] de la même manière que [!UICONTROL Comptabilisé comme] dans le rail de requête. Les utilisateurs actifs par heure ne sont pas pris en charge.
 * **[!UICONTROL Date]** : date de début et de fin. Les paramètres prédéfinis de période flottante et les périodes personnalisées enregistrées précédemment sont disponibles pour votre commodité. Vous pouvez également utiliser le sélecteur de calendrier pour choisir une période fixe.
 
 <!--

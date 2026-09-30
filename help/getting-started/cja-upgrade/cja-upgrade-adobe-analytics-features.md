@@ -9,24 +9,32 @@ autotag-review: '2026-05-19T08:07:04.110Z'
 TQID: 'https://experienceleague.adobe.com/SP2BT-sh552jPgJRQOpUv2QuEE6iYfz6TX06s6wON34'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
+    internal-label: Upgrade
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Data collection
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 561
+source-wordcount: '561'
 ht-degree: 100%
-
 ---
-
 # Comprendre la prise en charge des fonctionnalités d’Adobe Analytics lors de la mise à niveau vers Customer Journey Analytics {#feature-support-upgrade}
 
 <!-- markdownlint-disable MD034 -->
@@ -122,6 +130,6 @@ Tenez compte des fonctionnalités suivantes d’Adobe Analytics que vous souhai
 | [Superposition d’Activity Map et suivi des liens](https://experienceleague.adobe.com/fr/docs/analytics/analyze/activity-map/overview) | Pas encore disponible |
 | [Données de classification](https://experienceleague.adobe.com/fr/docs/analytics/components/classifications/c-classifications) | Les jeux de données de recherche sont la méthode de classification des données dans Customer Journey Analytics.<p>[Créez un jeu de données de recherche pour chaque dimension contenant des données de classification.](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)</p> |
 | [Canaux marketing](https://experienceleague.adobe.com/fr/docs/analytics/components/marketing-channels/c-getting-started-mchannel) | Les champs dérivés sont créés dans une vue de données. <p>[Créez un champ dérivé de canal marketing.](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)</p> |
-| [Flux de données](https://experienceleague.adobe.com/fr/docs/analytics/export/analytics-data-feed/data-feed-overview) | Experience Platform et Customer Journey Analytics offrent des fonctionnalités qui, utilisées seules ou conjointement, peuvent résoudre les différents besoins en matière d’export. Ces fonctionnalités incluent l’[API d’accès aux données d’Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html?lang=fr), les [destinations Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=fr), l’[export du tableau complet de Customer Journey Analytics](/help/analysis-workspace/export/export-cloud.md) et l’[intégration de l’outil BI](/help/data-views/bi-extension.md).<p>Pour plus d’informations sur les options d’export, consultez [Cas d’utilisation d’export de données](/help/use-cases/data-export/overview.md).</p> |
+| [Flux de données](https://experienceleague.adobe.com/fr/docs/analytics/export/analytics-data-feed/data-feed-overview) | Experience Platform et Customer Journey Analytics offrent plusieurs fonctionnalités qui, utilisées seules ou conjointement, permettent de répondre aux diverses exigences d’exportation. Ces fonctionnalités incluent l’[API d’accès aux données d’Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html?lang=fr), les [destinations Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=fr), l’[export du tableau complet de Customer Journey Analytics](/help/analysis-workspace/export/export-cloud.md) et l’[intégration de l’outil BI](/help/data-views/bi-extension.md).<p>Pour plus d’informations sur les options d’export, consultez [Cas d’utilisation d’export de données](/help/use-cases/data-export/overview.md).</p> |
 | [Data Warehouse](https://experienceleague.adobe.com/fr/docs/analytics/export/data-warehouse/data-warehouse) | [L’export de tableaux complets Customer Journey Analytics](/help/analysis-workspace/export/export-cloud.md) correspond à l’évolution des rapports des entrepôts de données dans Adobe Analytics, avec de nombreuses nouvelles fonctionnalités souvent demandées et qui ne sont pas disponibles dans les entrepôts de données aujourd’hui. |
 | [Données de médias en streaming](https://experienceleague.adobe.com/fr/docs/media-analytics/using/media-overview) | Les données des médias en streaming sont disponibles dans le connecteur source Analytics dans le cadre des panneaux Visionneuses simultanées de médias et Temps de lecture de média dans l’espace de travail. |

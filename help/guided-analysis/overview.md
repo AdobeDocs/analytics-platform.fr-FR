@@ -5,30 +5,43 @@ keywords: Product Analytics
 exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
 role: User
-TQID: https://experienceleague.adobe.com/fQgAV5IWbQdocTV83hG11T7NFJdS0hqqF7ruX74hEdw
+TQID: 'https://experienceleague.adobe.com/fQgAV5IWbQdocTV83hG11T7NFJdS0hqqF7ruX74hEdw'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
   - id: c38ed341-fab2-46df-9d72-88d8166edebb
+    internal-label: Workspace projects
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: bfa38d8a-4e93-4fd8-8cd8-e72c589e3af8
+    internal-label: Guided analysis
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Insights
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1857
+source-wordcount: '1857'
 ht-degree: 98%
-
 ---
-
 # Vue d’ensemble des analyses guidées
 
 L’analyse guidée permet aux utilisateurs et aux utilisatrices, qu’ils fassent partie des équipes marketing, produit ou d’analyse, d’obtenir des données et des informations en libre-service de haute qualité sur le parcours client au moyen de workflows guidés, établis à partir des données cross-canal de Customer Journey Analytics. Tout comme Analysis Workspace et les cartes de performance mobiles, l’analyse guidée utilise les données d’une [Vue des données](/help/data-views/data-views.md), qui référence les données dans Adobe Experience Platform au moyen d’une [Connexion](../connections/overview.md). De nombreux rapports créés dans les analyses guidées peuvent facilement être transférés vers Analysis Workspace pour effectuer des recherches supplémentaires.
@@ -39,12 +52,12 @@ Les analyses guidées suivantes sont disponibles :
 | :----:|--- | --- |
 | ![PeopleGroup](/help/assets/icons/PeopleGroup.svg) | [Croissance active](types/active-growth.md) | Identifiez les nouvelles personnes, celles qui ont été conservées, celles qui reviennent ou celles qui sont inactives. |
 | ![ConversionTrends](/help/assets/icons/ConversionTrends.svg) | [Tendances de conversion](types/conversion-trends.md) | Suivez l’évolution des taux de conversion au fil du temps. |
-| ![EngagementGraph](/help/assets/icons/EngagementGraph.svg) | [Engagement](types/engagement.md) | Comprendre l’étendue et la profondeur de l’engagement des fonctionnalités. |
+| ![EngagementGraph](/help/assets/icons/EngagementGraph.svg) | [Engagement](types/engagement.md) | Comprenez l’étendue et la profondeur de l’engagement vis-à-vis des fonctionnalités. |
 | ![FirstUse](/help/assets/icons/FirstUse.svg) | [Impact de la première utilisation](types/first-use-impact.md) | Mesurez l’impact de la première utilisation des fonctionnalités sur les indicateurs clés. |
 | ![Histogramme](/help/assets/icons/Histogram.svg) | [Fréquence](types/frequency.md) | Mesurez l’engagement par la fréquence d’utilisation. |
 | ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) | [Entonnoir](types/funnel.md) | Comparez les taux de conversion entre les étapes. |
-| ![NetGrowth](/help/assets/icons/NetGrowth.svg) | [Croissance nette](types/net-growth.md) | Êtes-vous en train de gagner ou de perdre des utilisateurs et utilisatrices ? |
-| ![Version](/help/assets/icons/Release.svg) | [Impact de la version](types/release-impact.md) | Comparez les performances sur des périodes égales avant et après la version. |
+| ![NetGrowth](/help/assets/icons/NetGrowth.svg) | [Croissance nette](types/net-growth.md) | Êtes-vous en train de gagner ou de perdre des utilisateurs ? |
+| ![Version](/help/assets/icons/Release.svg) | [Impact de la version](types/release-impact.md) | Comparez les performances sur des périodes égales avant et après la mise à jour. |
 | ![Rétention](/help/assets/icons/Retention.svg) | [Rétention](types/retention.md) | Mesurez les habitudes de retour de vos utilisateurs et de vos utilisatrices. |
 | ![Chronologie](/help/assets/icons/Timeline.svg) | [Chronologie](types/timeline.md) | Explorez les modèles de l’activité de la session. |
 | ![GraphTrend](/help/assets/icons/GraphTrend.svg) | [Tendances](types/trends.md) | Mesurez l’engagement client au fil du temps. |
@@ -79,7 +92,7 @@ Vous pouvez également accéder à l’analyse guidée à partir d’un projet A
 
 ## Interface
 
-L’interface d’analyse guidée se présente sous la forme de question et de réponse. Formulez votre question dans le rail de requête, puis obtenez une réponse avec des informations écrites, un graphique et un tableau. Vous pouvez ensuite poser la question suivante avec les analyses et les paramètres de visualisation.
+L’interface d’analyse guidée se présente sous la forme d’un format questions-réponses. Formulez votre question dans le rail de requête, puis obtenez une réponse avec des informations écrites, un graphique et un tableau. Vous pouvez ensuite poser la question suivante en vous appuyant sur les analyses et les paramètres de visualisation.
 
 L’analyse guidée utilise les éléments suivants de l’interface utilisateur :
 
@@ -89,7 +102,7 @@ L’analyse guidée utilise les éléments suivants de l’interface utilisateur
 | ![Graphique](assets/chart.png){style="border:1px solid gray"} | **[!UICONTROL Graphique]** | Visualisation des données renvoyées en fonction de vos entrées dans le rail de requête et les paramètres. La visualisation que vous voyez dépend de la vue et des paramètres au-dessus du graphique. Le graphique comprend également les éléments suivants : <ul><li>**Info-bulles** : passez la souris sur un point de données de graphique pour afficher une info-bulle contenant plus d’informations.</li><li>**Légende** : passez la souris sur la série de légendes du graphique pour afficher les définitions lorsqu’elles sont disponibles, vous concentrer sur cette série et masquer temporairement d’autres séries. Sélectionnez une série dans la légende pour la masquer.</li><li>**Annotations** : les [annotations](../components/annotations/overview.md) applicables sont visibles entre la visualisation et la légende. Elles s’affichent sous la forme d’une icône ![Icône Annotation](assets/annotation.png) dans la couleur configurée de l’annotation. Les analyses qui affichent des données au fil du temps placent l’icône ![Icône Annotation](assets/annotation.png) sous la date ou la période configurée. Les analyses qui n’affichent pas des données au fil du temps affichent l’icône ![Icône Annotation](assets/annotation.png) dans le coin inférieur droit du graphique.</li><li>**Sélectionner des actions** : affichez les actions disponibles suivantes en cliquant sur un point de données. Les options incluent **Enregistrer le segment**.</li></ul> |
 | ![Tableau](assets/table.png){style="border:1px solid gray"} | **[!UICONTROL Tableau]** | Représentation sous forme de tableau des données renvoyées en fonction de votre entrée dans le rail de requête et les paramètres. Lignes du tableau utilisant l’événement (1, 2, ...) et les identifiants de segment (A, B, ...) pour référence. Les colonnes du tableau dépendent de l’analyse située au-dessus du graphique. Le tableau comprend également pour chaque ligne ce qui suit : <ul><li>**Sélectionner des actions** : basculez l’icône ![Icône d’affichage et de masquage](assets/hide-in-chart.png) pour masquer ou exposer une série de graphiques pour une ligne. Sélectionnez ![Plus](/help/assets/icons/More.svg) pour des actions supplémentaires. Les options incluent **Enregistrer le segment**.</li></ul> |
 | ![Paramètres de visualisation](assets/visualization-settings.png){style="border:1px solid gray"} | **[!UICONTROL Paramètres de visualisation]** | Options au-dessus du graphique vous permettant de poser la question suivante et de personnaliser la manière dont le graphique et le tableau renvoient des données. Les options suivantes sont disponibles pour toutes les analyses, avec des paramètres supplémentaires disponibles par analyse. <ul><li>![GraphTrend](/help/assets/icons/GraphTrend.svg) **Paramètres du graphique** : affinez l’affichage de votre graphique et de votre tableau. Les options disponibles dépendent de l’analyse sélectionnée.</li><li>![Couche](/help/assets/icons/Layer.svg) **Paramètres de superposition** : ajoutez une superposition. Les options disponibles dépendent de l’analyse sélectionnée.</li><li>![Compartiment](/help/assets/icons/Bucket.svg) **[!UICONTROL Paramètres du compartiment]** : compartiment automatique ou application de paramètres de compartiment personnalisés aux données. Les options disponibles dépendent de l’analyse sélectionnée.<li>![DataCorrelated](/help/assets/icons/DataCorrelated.svg) **[!UICONTROL Comparer les paramètres]** : comparez les données à une période spécifique. Les options disponibles dépendent de l’analyse sélectionnée.</li><li>![Footsteps](/help/assets/icons/Footsteps.svg) **[!UICONTROL Paramètres d’affichage]** : choisissez comment afficher les données. Les options disponibles dépendent de l’analyse sélectionnée.<li>![Calendrier](/help/assets/icons/Calendar.svg) **Période** : sélecteur de calendrier qui permet de déterminer la période de l’analyse. Vous pouvez également sélectionner un intervalle pour les analyses de tendances, par exemple, quotidien, hebdomadaire ou mensuel.</li><li>![LightBulb](/help/assets/icons/LightBulb.svg) **Informations** : informations contextuelles selon l’analyse que vous affichez. Ces informations fournissent des observations pour l’analyse actuelle. Si plusieurs informations sont disponibles, vous pouvez les afficher à l’aide des flèches situées à droite. Vous pouvez activer/désactiver la visibilité de cette zone à l’aide de l’icône d’ampoule située en haut à droite.</li></ul> |
-| ![Icône de menu](assets/menu.png){style="border:1px solid gray"} | **[!UICONTROL Menu]**<br/>Disponible dans un projet d’analyse guidée | Commandes en haut à droite d’un projet d’analyse guidée qui fournissent des actions globales pour votre analyse.<ul><li>![Icône de données](/help/assets/icons/Data.svg) ***Nom de la vue de données*** : modifiez la vue de données utilisée par l’analyse. Lorsque vous modifiez la vue de données, les composants disponibles dans le rail de requête changent également.</li><li>![Icône de lien](/help/assets/icons/Link.svg) **Copier le lien** : copie un lien vers l’analyse dans le presse-papiers. Vous recevez une invitation à enregistrer avant de partager.</li><li>**Partager** : ouvre la boîte de dialogue modale de partage, qui contient d’autres options de partage pour des utilisateurs et utilisatrices individuels ou des groupes. Vous pouvez partager une analyse avec d’autres personnes ou générer un lien de partage avec n’importe qui.</li><li>**Enregistrer** : enregistre l’analyse. Si vous enregistrez une nouvelle analyse, une boîte de dialogue **[!UICONTROL Enregistrer l’analyse]** s’affiche et vous demande un nom et une description. Une fois enregistrée, une boîte de dialogue **[!UICONTROL Analyse enregistrée]** vous permet de partager votre analyse.</li><li>![Icône Ajouter à Workspace](/help/assets/icons/MultipleAdd.svg) **[!UICONTROL Ajouter à Workspace]** : affiche les projets Workspace disponibles auxquels vous pouvez ajouter cette analyse. La sélection d’un projet Workspace ouvre le projet Workspace dans un nouvel onglet, en ajoutant l’analyse au bas du projet.</li></ul>Sélectionnez ![Icône Plus](/help/assets/icons/More.svg) pour d’autres actions, telles que les suivantes :<ul><li>**[!UICONTROL Enregistrer sous]** : enregistre l’analyse séparément de l’analyse actuelle, en créant une copie. Une boîte de dialogue s’affiche et vous demande un nouveau nom et une nouvelle description.</li><li>**[!UICONTROL Exporter dans Workspace]** : recrée la requête de l’analyse guidée actuelle dans Analysis Workspace. Le projet Workspace est créé dans un nouvel onglet afin d’éviter toute interruption lors de l’utilisation de l’analyse guidée. Il s’agit d’une copie de l’analyse qui, une fois ouverte, n’est pas synchronisée avec l’analyse guidée d’origine. Utilisez cette commande lorsque vous souhaitez transmettre à votre équipe d’analyse ou approfondir les données dans la mesure permise par l’analyse guidée.</li><li>**[!UICONTROL Copier le graphique dans le presse-papiers]** : copie le graphique dans le presse-papiers, pour pouvoir le coller dans d’autres applications. Le rail de requête et le tableau ne sont pas inclus dans le graphique.</li><li>**[!UICONTROL Télécharger PNG]** : télécharge les éléments graphiques du graphique sous forme de `.png`. Le rail de requête et le tableau ne sont pas inclus dans le graphique.</li><li>**[!UICONTROL Télécharger un CSV]** : télécharge les données du tableau sous forme de `.csv`. Le rail de requête et le graphique ne sont pas inclus dans le fichier.</li></ul> |
+| ![Icône de menu](assets/menu.png){style="border:1px solid gray"} | **[!UICONTROL Menu]**<br/>Disponible dans un projet d’analyse guidée | Commandes en haut à droite d’un projet d’analyse guidée qui fournissent des actions globales pour votre analyse.<ul><li>![Icône de données](/help/assets/icons/Data.svg) ***Nom de la vue de données*** : modifiez la vue de données utilisée par l’analyse. Lorsque vous modifiez la vue de données, les composants disponibles dans le rail de requête changent également.</li><li>![Icône de lien](/help/assets/icons/Link.svg) **Copier le lien** : copie un lien vers l’analyse dans le presse-papiers. Vous recevez une invitation à enregistrer avant de partager.</li><li>**Partager** : ouvre la boîte de dialogue modale de partage, qui contient d’autres options de partage pour des utilisateurs et utilisatrices individuels ou des groupes. Vous pouvez partager une analyse avec d’autres personnes ou générer un lien de partage avec n’importe qui.</li><li>**Enregistrer** : enregistre l’analyse. Si vous enregistrez une nouvelle analyse, une boîte de dialogue **[!UICONTROL Enregistrer l’analyse]** s’affiche et vous demande un nom et une description. Une fois enregistrée, une boîte de dialogue **[!UICONTROL Analyse enregistrée]** vous permet de partager votre analyse.</li><li>![Icône Ajouter à Workspace](/help/assets/icons/MultipleAdd.svg) **[!UICONTROL Ajouter à Workspace]** : affiche les projets Workspace disponibles auxquels vous pouvez ajouter cette analyse. La sélection d’un projet Workspace ouvre le projet Workspace dans un nouvel onglet, en ajoutant l’analyse au bas du projet.</li></ul>Sélectionnez ![Icône Plus](/help/assets/icons/More.svg) pour d’autres actions, telles que les suivantes :<ul><li>**[!UICONTROL Enregistrer sous]** : enregistre l’analyse séparément de l’analyse actuelle, en créant une copie. Une boîte de dialogue s’affiche et vous demande un nouveau nom et une nouvelle description.</li><li>**[!UICONTROL Exporter dans Workspace]** : recrée la requête de l’analyse guidée actuelle dans Analysis Workspace. Le projet Workspace est créé dans un nouvel onglet afin d’éviter toute interruption lors de l’utilisation de l’analyse guidée. Il s’agit d’une copie de l’analyse qui, une fois ouverte, n’est pas synchronisée avec l’analyse d’origine. Utilisez cette commande lorsque vous souhaitez transmettre l’analyse à votre équipe d’analystes ou approfondir les données au-delà de ce que permet l’analyse.</li><li>**[!UICONTROL Copier le graphique dans le presse-papiers]** : copie le graphique dans le presse-papiers, pour pouvoir le coller dans d’autres applications. Le rail de requête et le tableau ne sont pas inclus dans le graphique.</li><li>**[!UICONTROL Télécharger PNG]** : télécharge les éléments graphiques du graphique sous forme de `.png`. Le rail de requête et le tableau ne sont pas inclus dans le graphique.</li><li>**[!UICONTROL Télécharger un CSV]** : télécharge les données du tableau sous forme de `.csv`. Le rail de requête et le graphique ne sont pas inclus dans le fichier.</li></ul> |
 | ![Visualisation de menu](assets/menu-visualization.png){style="border:1px solid gray"} | **Menu**<br/> Disponible dans une visualisation d’analyse guidée dans Analysis Workspace. | Commandes dans une visualisation d’analyse guidée dans Analysis Workspace.<ul><li>![GraphScatter](/help/assets/icons/GraphScatter.svg) **[!UICONTROL Graphique]** : pour afficher uniquement le graphique de l’analyse.</li><li>![Tableau](/help/assets/icons/Table.svg) **[!UICONTROL Tableau]** : pour afficher uniquement le tableau de l’analyse.</li><li>![TableAndChart](/help/assets/icons/TableAndChart.svg) **[!UICONTROL Tout]** : pour afficher le graphique et le tableau de l’analyse.</li><li>![Modifier](/help/assets/icons/Edit.svg) **[!UICONTROL Modifier]** : pour modifier la configuration de l’analyse.</li><li>![Calendrier](/help/assets/icons/Calendar.svg) **[!UICONTROL *Période *]** : pour configurer la période pour l’analyse.</li></ul> |
 
 
@@ -102,7 +115,7 @@ Les analyses guidées sont incluses dans les packages Customer Journey Analyti
 | [!UICONTROL Modules complémentaires Customer Journey Analytics] | Croissance active, tendances de conversion, fréquence, entonnoir, croissance nette, rétention, tendances |
 | [!UICONTROL Customer Journey Analytics Foundation] | Tendances |
 | [!UICONTROL Customer Journey Analytics Select] | Vues de base + croissance active, tendances de conversion, fréquence, entonnoir, croissance nette, rétention |
-| [!UICONTROL Customer Journey Analytics Prime] | Vues Select + engagement, impact de la première utilisation, impact des versions, chronologie |
+| [!UICONTROL Customer Journey Analytics Prime] | Sélectionner les vues + Engagement, Impact de la première utilisation, Impact de la version, Chronologie |
 | [!UICONTROL Customer Journey Analytics Ultimate] | Vues Prime |
 
 {style="table-layout:auto"}

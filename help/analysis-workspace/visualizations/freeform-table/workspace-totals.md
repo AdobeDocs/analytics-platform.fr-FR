@@ -4,25 +4,32 @@ title: Totaux
 feature: Visualizations
 exl-id: ba14b88c-44c2-45f6-b68f-f5c1263a89dd
 role: User
-TQID: https://experienceleague.adobe.com/BoH9J-fL9UxPG4wId9-GU7muMNR10aeWe0BBd1NQOjo
+TQID: 'https://experienceleague.adobe.com/BoH9J-fL9UxPG4wId9-GU7muMNR10aeWe0BBd1NQOjo'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
+    internal-label: Freeform tables
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: User
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 502
+source-wordcount: '502'
 ht-degree: 88%
-
 ---
-
 # Totaux {#workspace-totals}
 
 >[!CONTEXTUALHELP]
@@ -62,6 +69,6 @@ Consultez [Éléments de dimension dynamiques ou statiques dans les tableaux à 
 |---|---|
 | Sur quel *total* sont basés les pourcentages de la colonne grise ? | Ce *total* dépend de la sélection du paramètre **[!UICONTROL Pourcentages]** sous **[!UICONTROL Paramètres de la ligne]** :<ul><li>Calculer les pourcentages par colonne : ce paramètre est la valeur par défaut. Les pourcentages sont basés sur le total du tableau.</li><li>Calculer les pourcentages par ligne : les pourcentages sont basés sur le total général.</li></ul> |
 | De quelle manière le paramètre **[!UICONTROL Inclure « Aucune valeur »]** affecte-t-il les totaux ? | Si le paramètre **[!UICONTROL Inclure « Aucunevaleur »]** n’est pas coché, la ligne **[!UICONTROL Aucun valeur]** sera supprimée du tableau et du total du tableau, et sera répercutée sur toutes les mesures calculées qui utilisent les types de mesures [** Total](/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md). |
-| Lorsque des segments de tableau personnalisés sont appliqués à un tableau à structure libre, est-ce que toutes les mesures calculées et la mise en forme conditionnelle tiennent compte du segment ? | Pas pour le moment. Le paramètre **[!UICONTROL Inclure « Aucune valeur »]** est pris en compte, mais les segments de tableau personnalisés n’auront aucun impact sur les éléments suivants :<ul><li>La plage max/min de la colonne utilisée par la mise en forme conditionnelle s’applique à toutes les données.</li><li>Mesures calculées qui utilisent les types de mesures **[!UICONTROL Total général]**.</li><li>Mesures calculées avec des fonctions qui effectuent des calculs sur les lignes d’un tableau à structure libre, c’est-à-dire Somme de la colonne, Colonne max, Colonne min, Nombre, Moyenne, Médiane, Percentile, Quartile, Nombre de lignes, Écart type, Variance, Cumulatif, Moyenne cumulée, Variantes de régression, Score normalisé, Test en T, Score centré réduit, Test Z.</li></ul> |
+| Lorsque des segments de tableau personnalisés sont appliqués à un tableau à structure libre, est-ce que toutes les mesures calculées et la mise en forme conditionnelle tiennent compte du segment ? | Pas pour le moment. Le paramètre **[!UICONTROL Inclure « Aucune valeur »]** est pris en compte, mais les segments de tableau personnalisés n’auront aucun impact sur les éléments suivants :<ul><li>La plage max/min de la colonne utilisée par la mise en forme conditionnelle s’applique à toutes les données.</li><li>Mesures calculées qui utilisent les types de mesures **[!UICONTROL Total général]**.</li><li>Mesures calculées avec des fonctions qui effectuent des calculs sur les lignes d’un tableau à structure libre, c’est-à-dire Somme de la colonne, Colonne max, Colonne min, Nombre, Moyenne, Médiane, Percentile, Quartile, Nombre de lignes, Écart type, Variance, Cumulatif, Moyenne cumulée, Variantes de régression, T-score, Test en T, Z-score et Test Z.</li></ul> |
 | Dans les mesures calculées, que signifie le type de mesure **[!UICONTROL Total général]** ? | **[!UICONTROL Total général]** continue de faire référence au **[!UICONTROL total général]** et ne reflète pas les segments appliqués à un tableau ou au **[!UICONTROL total du tableau]**. |
-| Quel est le total affiché lorsque les données sont copiées et collées à partir d’un tableau à structure libre ou téléchargées via le format CSV ? | La ligne de total reflète uniquement le **[!UICONTROL total du tableau]** et respecte le paramètre **[!UICONTROL Afficher les totaux]** de la colonne. |
+| Quel est le total affiché lorsque les données sont copiées et collées à partir d’un tableau à structure libre ou téléchargées via CSV ? | La ligne de total reflète uniquement le **[!UICONTROL total du tableau]** et respecte le paramètre **[!UICONTROL Afficher les totaux]** de la colonne. |

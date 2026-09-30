@@ -8,23 +8,30 @@ autotag-review: '2026-05-19T08:43:31.310Z'
 TQID: 'https://experienceleague.adobe.com/WrOP1B4Dclj004zTWZMACNAVusD47Ugi0IrlXVUrZ88'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
 subfeature_v2:
   - id: ddf59f64-0e46-4986-a525-056acc143c70
+    internal-label: Workspace visualizations
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
+    internal-label: Customer engagement
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Customer journeys
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 951
+source-wordcount: '951'
 ht-degree: 79%
-
 ---
-
 # Paramètres des colonnes
 
 Grâce aux [!UICONTROL paramètres des colonnes], vous pouvez configurer la mise en forme des colonnes, dont certains éléments peuvent être conditionnels.
@@ -50,7 +57,7 @@ Vous pouvez modifier les paramètres pour plusieurs colonnes à la fois. Sélect
 | --- | --- |
 | **[!UICONTROL Afficher le total]** | Affichez une somme côté client de la colonne. Ce total ne déduplique **pas** les mesures telles que les sessions ou les personnes. |
 | **[!UICONTROL Afficher le total général]** | Affichez une somme côté serveur de la colonne. Le total général déduplique les mesures telles que les sessions ou les personnes. |
-| **[!UICONTROL Afficher les graphiques sparkline]** | Affichez un graphique en courbes dans l’en-tête des colonnes. |
+| **[!UICONTROL Afficher les graphiques sparkline]** | Afficher un graphique linéaire dans l’en-tête de colonne. |
 | **[!UICONTROL Nombre]** | Déterminez si une cellule affiche/masque la valeur numérique pour la mesure. Par exemple, si la mesure est Pages vues, la valeur numérique correspond au nombre de pages vues pour l’élément de ligne. |
 | **[!UICONTROL Percent]** | Déterminez si une cellule affiche/masque la valeur de pourcentage pour la mesure. Par exemple, si la mesure est Pages vues, la valeur de pourcentage correspond au nombre de pages vues pour l’élément de ligne, divisé par le nombre total de pages vues pour la colonne.  Remarque : des pourcentages supérieurs à 100 % sont possibles pour garantir l’exactitude. La limite supérieure peut passer à 1 000 % pour éviter que la largeur des colonnes ne devienne trop grande. |
 | **[!UICONTROL Afficher les anomalies]** | Déterminez si la détection des anomalies est exécutée sur les valeurs de cette colonne. |
@@ -71,10 +78,10 @@ La mise en forme conditionnelle applique la mise en forme aux limites supérieur
 
 | Options de mise en forme conditionnelle | Description |
 | --- | --- |
-| **[!UICONTROL Utiliser des limites en pourcentage]** | Modifiez la plage de limites pour qu’elle soit basée sur des pourcentages plutôt que sur des valeurs absolues. La plage de limites en pourcentage fonctionne avec les mesures qui reposent uniquement sur des pourcentages (comme Taux de rebond) et celles qui reposent sur un nombre et un pourcentage (comme Pages vues). |
+| **[!UICONTROL Utiliser des limites en pourcentage]** | Modifiez la plage de limites pour qu’elle soit basée sur des pourcentages plutôt que sur des valeurs absolues. La plage de limites en pourcentage fonctionne pour les mesures exprimées uniquement en pourcentages (comme Taux de rebond) et celles qui comportent un nombre et un pourcentage (comme Pages vues). |
 | **[!UICONTROL Génération automatique]** | Calculer automatiquement les limites hautes/moyennes/basses en fonction des données. La limite supérieure est la valeur la plus élevée de cette colonne. La limite inférieure est la valeur la plus faible et la valeur moyenne est la moyenne entre les limites supérieure et inférieure. |
 | **[!UICONTROL Personnalisé]** | Attribuez manuellement les valeurs **[!UICONTROL Limite supérieure]**, **[!UICONTROL Milieu]** et **[!UICONTROL Limite inférieure]**. Vous disposez grâce aux limites de la flexibilité nécessaire pour déterminer si la valeur d’une colonne devient bonne, moyenne ou mauvaise. |
-| **[!UICONTROL Palette de mise en forme conditionnelle]** | Appliquez un jeu de couleurs préconfiguré aux cellules. En fonction des quatre modèles de couleurs disponibles que vous sélectionnez, différentes couleurs sont attribuées aux valeurs élevées, aux valeurs intermédiaires et aux valeurs faibles. <br> Le remplacement d’une dimension dans le tableau réinitialise les limites de mise en forme conditionnelle. Le remplacement d’une mesure recalcule les limites de cette colonne (lorsqu’une mesure se trouve sur l’axe des abscisses et une dimension sur l’axe des ordonnées). |
+| **[!UICONTROL Palette de mise en forme conditionnelle]** | Appliquer un ensemble de couleurs préconfiguré aux cellules. En fonction des quatre modèles de couleurs disponibles que vous sélectionnez, différentes couleurs sont attribuées aux valeurs élevées, aux valeurs intermédiaires et aux valeurs faibles. <br> Le remplacement d’une dimension dans le tableau réinitialise les limites de mise en forme conditionnelle. Le remplacement d’une mesure recalcule les limites de cette colonne (lorsqu’une mesure se trouve sur l’axe des abscisses et une dimension sur l’axe des ordonnées). |
 
 ## Utiliser un modèle d’attribution différent du modèle par défaut {#use-non-default-attribution-model}
 

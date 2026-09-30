@@ -5,31 +5,45 @@ exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-TQID: https://experienceleague.adobe.com/Ozf-XAsirDMkZLIQCX4SLGD7SvKinu3O4fwJ4ifgSvQ
+TQID: 'https://experienceleague.adobe.com/Ozf-XAsirDMkZLIQCX4SLGD7SvKinu3O4fwJ4ifgSvQ'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
   - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
 subfeature_v2:
   - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
+    internal-label: Templates
   - id: ad5685a0-8296-4a0c-814c-658c10b4af12
+    internal-label: Content Analytics
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: c38ed341-fab2-46df-9d72-88d8166edebb
+    internal-label: Workspace projects
+  - id: e1471301-a189-438e-8d48-264a8db508a6
+    internal-label: Data views
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-source-git-commit: dcc1be6e0c0e0dab19b4067232e48dc175011ed1
+    internal-label: Governance
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 4127
+source-wordcount: '4127'
 ht-degree: 48%
-
 ---
-
 # Paramètres de composant {#component-settings}
 
 <!-- markdownlint-disable MD034 -->
@@ -63,11 +77,11 @@ Les informations suivantes décrivent les paramètres utilisés par un composant
 | [!UICONTROL Balises] | Facultatif. Permet de baliser le composant avec des balises personnalisées ou prêtes à l’emploi pour faciliter la recherche/le filtrage dans l’interface utilisateur d’Analysis Workspace. |
 | [!UICONTROL Libellés de contexte] | Facultatif. Menu déroulant des libellés [contextuels](#context-labels) définis par le système disponibles pouvant être appliqués à un composant. |
 | [!UICONTROL Nom du champ de schéma] | Nom du champ de schéma. |
-| [!UICONTROL Type de jeu de données] | Obligatoire. Champ non modifiable qui indique le type de jeu de données (événement, recherche ou profil) dʼoù provient le composant. |
+| [!UICONTROL Type de jeu de données] | Obligatoire. Champ non modifiable qui indique le type de jeu de données (event, lookup ou profil) dʼoù provient le composant |
 | [!UICONTROL Jeu de données] | Champ non modifiable indiquant le jeu de données d’où provient le composant. Ce champ peut contenir plusieurs jeux de données. |
 | [!UICONTROL Type de schéma] | Champ non modifiable affichant le type de données du composant. Alors que vous pouvez utiliser n’importe quel type de champ de schéma pris en charge dans Platform, tous les types de champs ne sont pas pris en charge dans Customer Journey Analytics. Les types de données pris en charge sont les suivants : `Integer`, `Int`, `Long`, `Double`, `Float`, `Number`, `Short`, `Byte`, `String` et `Boolean`. Seul le type de données de schéma `String` est actuellement autorisé dans les jeux de données de recherche. |
-| [!UICONTROL ID du composant] | Obligatoire. Lʼ[API Customer Journey Analytics](https://www.adobe.io/cja-apis/docs) utilise ce champ pour référencer le composant. Chaque composant d’une vue de données doit être unique. Adobe génère automatiquement un identifiant pour chaque composant ; vous pouvez toutefois cliquer sur l’icône de modification et modifier l’identifiant du composant. La modification de cet identifiant de composant rompt tous les projets Workspace existants qui contiennent ce composant. Bien que chaque composant ait besoin d’un identifiant unique dans une seule vue de données, vous pouvez utiliser le même identifiant de composant dans d’autres vues de données. Si vous utilisez le même ID de composant dans d’autres vues de données, vous pouvez rendre les projets Workspace compatibles entre les vues de données. <br/>Pour les composants basés sur un profil et une recherche, l’ID du composant comporte un préfixe d’ID basé sur l’ID du jeu de données (par exemple : `642b28fcc1f0ee1c074265a0.person.name.firstName`). Lorsque vous souhaitez réutiliser un composant basé sur un profil ou une recherche, comme `person.name.firstName`, dans votre projet Workspace, et configurer ce composant dans différentes vues de données, assurez-vous de renommer l’ID de composant de manière unique (par exemple, `myUniqueID.person.name.firstName`) dans vos vues de données. |
-| [!UICONTROL Chemin d’accès] | Obligatoire. Champ non modifiable qui indique le chemin dʼaccès du schéma dʼoù provient le composant. |
+| [!UICONTROL ID du composant] | Obligatoire. Lʼ[API Customer Journey Analytics](https://www.adobe.io/cja-apis/docs) utilise ce champ pour référencer le composant. Chaque composant d’une vue de données doit être unique. Adobe génère automatiquement un identifiant pour chaque composant ; vous pouvez toutefois cliquer sur l’icône de modification et modifier l’identifiant du composant. La modification de cet identifiant de composant rompt tous les projets Workspace existants qui contiennent ce composant. Bien que chaque composant ait besoin d’un ID unique dans une seule vue de données, vous pouvez utiliser le même ID de composant dans d’autres vues de données. Si vous utilisez le même ID de composant dans d’autres vues de données, vous pouvez rendre les projets Workspace compatibles entre les vues de données. <br/>Pour les composants basés sur un profil et une recherche, l’ID du composant comporte un préfixe d’ID basé sur l’ID du jeu de données (par exemple : `642b28fcc1f0ee1c074265a0.person.name.firstName`). Lorsque vous souhaitez réutiliser un composant basé sur un profil ou une recherche, comme `person.name.firstName`, dans votre projet Workspace, et configurer ce composant dans différentes vues de données, assurez-vous de renommer l’ID de composant de manière unique (par exemple, `myUniqueID.person.name.firstName`) dans vos vues de données. |
+| [!UICONTROL Chemin d’accès] | Obligatoire. Champ non modifiable qui indique le chemin de schéma dʼoù provient le composant |
 | [!UICONTROL Libellés d’utilisation des données] | Tout libellé d’utilisation des données attribué à ce composant dans Adobe Experience Platform. [En savoir plus](/help/data-views/data-governance.md). |
 | [!UICONTROL Masquer le composant dans le reporting] | Permet de traiter le composant en dehors de la vue de données pour les non-administrateurs. Les administrateurs peuvent toujours y accéder en cliquant sur [!UICONTROL Afficher tous les composants] dans un projet Analysis Workspace. |
 
@@ -125,7 +139,7 @@ Des libellés de contexte peuvent être requis dans les cas suivants :
 
 * Pour afficher les [modèles fournis par Adobe](/help/analysis-workspace/templates/use-templates.md). Certains modèles fournis par Adobe peuvent ne pas fonctionner, car certains composants ne figurent pas dans votre vue de données.
 
-  Pour chaque composant manquant, un libellé de contexte correspondant est disponible dans votre vue de données. Vous devez ajouter le libellé de contexte correspondant à un composant qui se trouve déjà dans votre vue de données. Ou vous devez ajouter un nouveau composant à votre vue de données et ajouter le libellé de contexte au composant (s’il n’est pas déjà fourni automatiquement).
+  Pour chaque composant manquant, un libellé contextuel correspondant est disponible dans votre vue de données. Vous devez ajouter le libellé de contexte correspondant à un composant qui se trouve déjà dans votre vue de données. Ou vous devez ajouter un nouveau composant à votre vue de données et ajouter le libellé de contexte au composant (s’il n’est pas déjà fourni automatiquement).
 
   Pour plus d’informations, voir [Ajouter les composants manquants à la vue de données d’un modèle donné](/help/analysis-workspace/templates/create-templates.md#add-missing-components-to-the-data-view-for-a-given-template) dans l’article [Créer et gérer des modèles](/help/analysis-workspace/templates/create-templates.md).
 
@@ -270,7 +284,7 @@ Les groupes de libellés de contexte suivants sont disponibles, chacun avec une 
 | Blocages mobiles | Accidents mobiles. |
 | Nom de l’appareil mobile | Nom de l’appareil mobile. |
 | Type d’appareil mobile | Type d’appareil mobile. |
-| Nom de message in-app mobile | Nom du message mobile dans l’application. |
+| Nom du message mobile in-app | Nom du message mobile dans l’application. |
 | Installations mobiles | Installations mobiles. |
 | Lancements mobiles | Lancements mobiles. |
 | Fabricant du dispositif portable | Fabricant du dispositif portable. |
@@ -386,7 +400,7 @@ Les groupes de libellés de contexte suivants sont disponibles, chacun avec une 
 | Nombre de mots de lisibilité de l’expérience par nombre de phrases | Nombre De Mots De Lisibilité De L’Expérience Par Nombre De Phrases. |
 | Score de lisibilité de l’expérience | Score de lisibilité de l’expérience. |
 | Nombre de phrases pour la lisibilité de l’expérience | Nombre de phrases de lisibilité de l’expérience. |
-| Nombre de mots d’arrêt pour la lisibilité de l’expérience | Nombre de mots vides de lisibilité de l’expérience. |
+| Nombre de mots vides pour la lisibilité de l’expérience | Nombre de mots vides de lisibilité de l’expérience. |
 | Nombre de citations de texte pour la lisibilité de l’expérience | Nombre de guillemets de texte lisibles par l’expérience. |
 | Nombre de mots pour la lisibilité de l’expérience | Nombre de mots de lisibilité de l’expérience. |
 | Source de l’expérience | Experience Source. |
@@ -401,13 +415,13 @@ Les groupes de libellés de contexte suivants sont disponibles, chacun avec une 
 | Nom | Description |
 |------|-------------|
 | Erreur d’action (AJO) | Nombre d’erreurs générées par les actions de parcours. |
-| Erreur d’exécution d’action | Condition d’erreur qui empêchait l’exécution du parcours d’exécuter l’action. |
-| Libellé d’action (AJO) | Le client ou la cliente a généré le nom d’affichage de l’élément avec lequel la personne finale a interagi. |
+| Erreur d’exécution d’action | Condition d’erreur qui a empêché Journey Runtime d’exécuter l’action |
+| Libellé d’action (AJO) | Nom d’affichage généré par le client pour l’élément avec lequel l’utilisateur final a interagi |
 | Autres sorties (AJO) | Nombre de sorties qui n’ont pas eu lieu du fait qu’un profil a atteint un nœud de fin ou en raison d’échecs liés à une erreur. |
 | Installations d’applications (AJO) | Nombre d’installations d’applications. |
 | Lancements d’application (AJO) | Nombre de lancements d’une application mobile. |
 | Identifiant de lot (AJO) | GUID créé à l’appel de chaque nouvelle instance de lot pour une action de parcours ou de campagne planifiée. Par exemple : si un Parcours planifié ou une action de campagne s’exécute à 8 h et à 10 h, il y aura deux batchInstanceID différents. |
-| Date et heure des instances de lot (AJO) | Date et heure de l’instance de lot. |
+| Date et heure d’instance de lot (AJO) | Date et heure de l’instance de lot. |
 | Rebonds pour les canaux sortants (obsolètes) | Nombre total de messages rejetés sur les canaux sortants. |
 | Nom de l’action de campagne (AJO) | Nom de l’action de campagne. |
 | Identifiant de campagne (AJO) | Identifiant de la campagne. |
@@ -423,24 +437,24 @@ Les groupes de libellés de contexte suivants sont disponibles, chacun avec une 
 | Nombre d’offres (AJO) | Nombre d’éléments d’offre dans la proposition. |
 | Clé de liaison de l’élément de décision | Identifiant composite qui combine l’ID d’élément avec l’ID de requête Experience Decisioning, ce qui permet la persistance des données dans les interactions. |
 | Fournisseur de décision (AJO) | Fournisseur à qui la décision a été demandée. Cette dimension est utilisée lorsque plusieurs services peuvent prendre des décisions pour le même emplacement ou la même activité. |
-| Fournisseur de décision (conservé) (AJO) | Fournisseur de décision avec liaison de persistance activée. |
+| Fournisseur de décision (persistant) (AJO) | Fournisseur de décision avec liaison de persistance activée. |
 | Identifiant de politique de décision (AJO) | Identifiant de la politique de décision utilisée lors de la décision des éléments à inclure dans cette proposition. |
 | Mesure de déduplication (AJO) | Mesure de déduplication. |
 | Diffusions (obsolètes) | Nombre total de messages diffusés. |
 | Affichages (AJO) | Ce nombre affiche les messages AJO. Ce nombre inclut les ouvertures d’e-mail, les affichages web et les affichages dans les applications. Les plateformes mobiles ne signalent pas les affichages de SMS et de messages push, ils ne sont donc pas comptabilisés. |
-| Refusé (AJO) | Compte chaque fois que le message in-app est fermé par le SDK Adobe, quelle que soit l’action choisie par la personne finale pour le fermer. |
-| ID du Dry Run (AJO) | Identifiant unique pour le Dry Run |
+| Refusé (AJO) | Compte chaque fois que le message in-app est fermé par le SDK Adobe, quelle que soit l’action choisie par l’utilisatrice ou l’utilisateur final pour le fermer. |
+| ID du test à blanc (AJO) | Identifiant unique pour le test à blanc |
 | Ouvertures d’e-mails par des robots (AJO) | Nombre total d’ouvertures d’e-mail effectuées par des robots. |
 | Ouvertures d’e-mail (AJO) | Nombre total d’ouvertures d’e-mails. |
 | Domaine de la personne destinataire de l’e-mail (AJO) | Domaine de l’adresse électronique. |
 | Objet de l’e-mail | Objet de l’e-mail, non personnalisé. |
 | ID d’événement | Identifiant unique de l’événement de série temporelle. |
-| ID de critères de sortie (AJO) | ID des critères de sortie utilisés pour déterminer si le parcours doit être fermé. |
-| Nom de critères de sortie (AJO) | Nom des critères de sortie. |
+| ID de critère de sortie (AJO) | ID du critère de sortie utilisé pour déterminer si le parcours doit être fermé |
+| Nom de critères de sortie (AJO) | Nom du critère de sortie |
 | Identifiant de l’expérience (AJO) | Identifiant de l’expérience. |
 | Nom de l’expérience (AJO) | Nom de l’expérience. |
-| Nombre des offres de secours (AJO) | Nombre d’offres de secours. |
-| Erreur de récupération | Condition d’erreur qui empêchait l’exécution du parcours d’exécuter la récupération. |
+| Nombre d’offres de secours (AJO) | Nombre d’offres de secours. |
+| Erreur de récupération | Condition d’erreur qui a empêché Journey Runtime d’exécuter la récupération |
 | Clics entrants (AJO) | Nombre total de clics sur les canaux entrants. |
 | Rejets entrants (AJO) | Nombre total d’ignorances sur les canaux entrants. |
 | Impressions entrantes (AJO) | Nombre total d’impressions sur les canaux entrants. |
@@ -455,9 +469,9 @@ Les groupes de libellés de contexte suivants sont disponibles, chacun avec une 
 | Nom d’élément (conservé) (AJO) | Nom de l’élément pour lequel la liaison de persistance est activée. |
 | Erreur d’action de parcours (AJO) | Messages d’erreur générés par des actions de parcours. |
 | Nom du nœud d’action du parcours | Nom de nœud de l’action de parcours. |
-| Entrées du parcours | True si l’événement d’étape était un événement d’entrée de parcours pour un profil. |
+| Entrées du parcours | Vrai si l’événement d’étape était un événement d’entrée de parcours pour un profil |
 | Fin du parcours (AJO) | La fin du parcours. |
-| Nom du nœud d’événement de parcours | Cette valeur est définie chaque fois qu’un segment ou un événement externe se produit dans un parcours. |
+| Nom du nœud d’événement de parcours | Cette valeur est attribuée chaque fois qu’un segment ou un événement externe se produit dans un parcours. |
 | Motif d’exclusion du parcours | Raison de l’exclusion de l’instance de parcours. |
 | Nom de la règle d’exclusion du parcours | Nom de la règle à l’origine du refus d’entrée dans le parcours. |
 | Exclusions du parcours (AJO) | Indiquez si l’événement d’étape en cours a entraîné l’abandon du parcours pour un profil. Cela se produit généralement en raison de l’application de règles de limitation ou de simultanéité, qui empêchent toute progression ultérieure dans le parcours. |
@@ -467,13 +481,13 @@ Les groupes de libellés de contexte suivants sont disponibles, chacun avec une 
 | Nom du parcours | Nom du parcours. |
 | Nom et version du parcours | Nom et version du parcours. |
 | ID de version du parcours | Identifiant de version du parcours. |
-| JourneyExits | True si l’étape actuelle entraînait la fin d’une instance du parcours. Il s’agit de la dernière étape d’un parcours pour un profil donné qui a été exécutée avec succès. |
+| JourneyExits | Vrai si l’étape actuelle a entraîné la fin d’une instance du parcours La dernière étape d’un parcours pour un profil donné a été exécutée avec succès. |
 | Conversions de pages de destination (AJO) | Nombre total de conversions sur la page de destination. |
 | Identifiant de page de destination (AJO) | Identifiant unique de la page de destination. |
 | Source de la page de destination (AJO) | Source de la page de destination. |
 | Vues de la page de destination (AJO) | Nombre total de vues sur la page de destination. |
 | Clics sur la page de destination (AJO) | Nombre total de clics sur la page de destination. |
-| URL de lien (AJO) | URL sur laquelle l’utilisateur ou l’utilisatrice a cliqué. |
+| URL de lien (AJO) | URL sur laquelle l’utilisateur a cliqué |
 | Raison du rebond du message (AJO) | Raison du rebond du message. |
 | Raison de l’erreur du message (AJO) | Raison de l’erreur du message. |
 | Raison d’exclusion du message (AJO) | Raison de l’exclusion. |
@@ -486,12 +500,12 @@ Les groupes de libellés de contexte suivants sont disponibles, chacun avec une 
 | Reprise de message (AJO) | Nombre de reprises. |
 | Statut du message (AJO) | Statut du message (par exemple, envoyé, rebond, erreur, etc.) |
 | Type de message (AJO) | Si le message est de type marketing ou transactionnel. |
-| Statut du feedback sur les messages (obsolète) | Statut du feedback. |
-| Entrées de nœud | True si l’événement d’étape était un événement d’entrée de nœud pour un profil. |
+| Statut des commentaires sur les messages (obsolète) | Statut du feedback. |
+| Entrées de nœud | Vrai si l’événement d’étape était un événement d’entrée de nœud pour un profil |
 | ID du nœud | Identifiant du nœud de parcours. |
 | Nom du nœud | Nom du nœud du parcours. |
 | Type de nœud | Type de nœud du parcours. |
-| Espace de noms d’identité d’actions de campagnes orchestrées (AJO) | Espace de noms d’identité de l’action de campagne orchestrée. |
+| Espace de noms d’identité d’action de campagne orchestrée (AJO) | Espace de noms d’identité de l’action de campagne orchestrée. |
 | Nom de l’action de campagne orchestrée (AJO) | Nom de l’action de la campagne orchestrée. |
 | Identifiant du nœud d’action de campagne orchestrée (AJO) | Identifiant d’action de la campagne orchestrée. |
 | Identifiant de campagne orchestrée (AJO) | Identifiant de la campagne orchestrée. |
@@ -503,11 +517,11 @@ Les groupes de libellés de contexte suivants sont disponibles, chacun avec une 
 | Envois sortants (obsolètes) | Nombre total de messages envoyés sur les canaux sortants. |
 | Point d’intérêt | point d’intérêt. |
 | ID de la proposition (AJO) | Identifiant de la proposition. |
-| Actions personnalisées de notification push (AJO) | Nombre total d’actions personnalisées dans l’interaction avec des notifications push. |
+| Actions personnalisées push (AJO) | Nombre total d’actions personnalisées dans l’interaction push |
 | Interactions des notifications push (AJO) | Nombre de fois où une application mobile est lancée en raison d’une interaction de message push direct. |
 | Plateforme de notifications push (AJO) | Service de fournisseur de notifications push, par exemple APNS ou FCM. |
 | Titre de notification push | Titre de notification push, non personnalisé. |
-| ID de stratégie de classement (AJO) | ID de stratégie de classement. |
+| ID de stratégie de classement (AJO) | ID de stratégie de classement. |
 | Nom de la politique de consentement rejetée | Nom de la politique de consentement rejetée correspondante. |
 | Comptage des reprises (AJO) | Nombre de tentatives d’envoi d’un message avant succès ou échec. |
 | Nom de la règle | Nom de la règle à l’origine du refus d’entrée dans le parcours. |
@@ -519,10 +533,10 @@ Les groupes de libellés de contexte suivants sont disponibles, chacun avec une 
 | Fournisseur de SMS (AJO) | Fournisseur de SMS, par exemple Sinch ou Twilio. |
 | Taux de plaintes relatives au spam (AJO) | Nombre total de plaintes pour spam. |
 | Nom de la stratégie (AJO) | Nom de la stratégie. Nom de la stratégie d&#39;où provient l&#39;élément. |
-| Nom de stratégie (conservé) (AJO) | Nom de la stratégie pour laquelle la liaison de persistance est activée. |
+| Nom de stratégie (persistant) (AJO) | Nom de la stratégie pour laquelle la liaison de persistance est activée. |
 | Ajouts à la liste d’abonnements (AJO) | Nombre total d’ajouts à une liste d’abonnements. |
-| ID de liste d’abonnements (AJO) | Identifiant unique de la liste d’abonnements. |
-| Suppressions de la liste d’abonnements (AJO) | Nombre total de suppressions d’une liste d’abonnements. |
+| ID de liste d’abonnements (AJO) | Identifiant unique de la liste d’abonnement |
+| Suppressions de la liste d’abonnement (AJO) | Nombre total de suppressions d’une liste d’abonnements. |
 | Surface (AJO) | Surface du canal sur laquelle le message a été affiché. |
 | Ciblés (obsolètes) | Nombre de fois où une proposition a été ciblée sur une personne. Il s&#39;agit du nombre de fois où une proposition a été envisagée pour être présentée à une personne. |
 | Nom de la règle de ciblage (AJO) | Nom de la règle de ciblage. |

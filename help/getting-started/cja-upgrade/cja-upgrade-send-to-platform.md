@@ -5,35 +5,46 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 exl-id: d9d7f186-9077-4372-94ad-8dd5b97779ca
-TQID: https://experienceleague.adobe.com/OQzCu-gf3Br-rXU0AnWCVzMTxdEq28M7aEAKmZN6b7c
+TQID: 'https://experienceleague.adobe.com/OQzCu-gf3Br-rXU0AnWCVzMTxdEq28M7aEAKmZN6b7c'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-source-git-commit: d9715c3da9893e1c47b702acb4daef5e666bedd7
+    internal-label: Measurement
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1018
+source-wordcount: '1018'
 ht-degree: 98%
-
 ---
-
 # Étape 3 : envoyer les données à Adobe Experience Platform lors de la mise à niveau
 
 +++Développez cette section pour voir la place des informations de cette page dans un processus de mise à niveau plus large. Vérifiez que toutes les étapes de mise à niveau précédentes sont terminées.
 
 Avant de poursuivre cette section, assurez-vous d’avoir effectué toutes les tâches de mise à niveau précédentes.
 
-Les informations de cette page couvrent l’Étape 2 de la mise à niveau, comme indiqué dans le tableau ci-dessous :
+Les informations de cette page couvrent l’étape 3 du processus de mise à niveau, comme indiqué dans le tableau ci-dessous :
 
 | Tâche de mise à niveau | Détails |
 |---------|----------|
@@ -57,9 +68,9 @@ Le processus d’envoi de données à Experience Platform pour chaque chemin de
 
 | Chemin de mise à niveau | Processus d’envoi de données à Platform | Informations supplémentaires |
 |---------|----------|----------|
-| Nouvelle implémentation du SDK web Experience Platform | <ol><li>Créez un schéma XDM pour votre organisation.<p>Travaillez avec votre équipe de données pour identifier la conception de schéma idéale de votre organisation avec Customer Journey Analytics.</p></li><li>Implémentez le SDK web d’Experience Platform.</li><li>Envoyez des données à Platform.</li></ol><p>Pour plus d’informations sur chacune de ces étapes, voir [Ingérer des données via le SDK web d’Adobe Experience Platform](/help/data-ingestion/aepwebsdk.md). | Puisqu’il s’agit d’une nouvelle implémentation du SDK web d’Experience Platform, le mappage de schéma n’est pas nécessaire, puisque le schéma doit être créé dans l’une des premières étapes de l’implémentation. |
-| Migrer votre implémentation Adobe Analytics pour utiliser le SDK web | <ol><li>Déplacez votre implémentation Adobe Analytics existante vers le SDK web d’Experience Platform, puis vérifiez que tout fonctionne dans Adobe Analytics.<p>Pour plus d’informations sur la procédure à suivre, utilisez les ressources suivantes, selon que votre implémentation actuelle est l’extension des balises Analytics ou AppMeasurement :</p><ul><li>Si vous utilisez l’extension des balises Analytics, voir [Migrer depuis l’extension des balises Adobe Analytics vers l’extension des balises du SDK web](https://experienceleague.adobe.com/fr/docs/analytics/implementation/aep-edge/web-sdk/analytics-extension-to-web-sdk).</li><li>Si vous utilisez AppMeasurement, voir [Migrer depuis AppMeasurement vers le SDK web](https://experienceleague.adobe.com/fr/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk).</li></ul><li>[Créez un schéma XDM pour votre organisation](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk#set-up-a-schema-and-dataset).<p>Travaillez avec votre équipe de données pour identifier la conception de schéma idéale de votre organisation avec Customer Journey Analytics.</p></li><li>[Utilisez la Préparation des données pour mapper tous les champs de l’objet de données à votre schéma XDM.](https://experienceleague.adobe.com/fr/docs/experience-platform/data-prep/home).</li><li>Commencez à envoyer des données à Platform en [configurant un flux de données](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk#set-up-a-datastream).</li></ol> |  |
-| Configurer votre implémentation existante du SDK web Adobe Analytics pour envoyer des données à Customer Journey Analytics | <ol><li>Commencez à envoyer des données à Platform en [configurant un train de données](/help/data-ingestion/aepwebsdk.md#set-up-a-datastream).<p>Comme votre implémentation Adobe Analytics utilise déjà le SDK web d’Experience Platform, vous pouvez ignorer les autres sections dans [Ingérer des données via le SDK web d’Adobe Experience Platform](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk).</p><p>Si vous envoyez déjà des données à Platform avec votre implémentation Adobe Analytics, cette étape n’est pas obligatoire. Il vous suffit de créer une connexion entre les jeux de données Platform et Customer Journey Analytics, comme décrit plus loin dans ce processus.</p></li><li>(Facultatif) [Créez un schéma XDM pour votre organisation](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk#set-up-a-schema-and-dataset).<p>Travaillez avec votre équipe de données pour identifier la conception de schéma idéale de votre organisation avec Customer Journey Analytics.</p><p>Note : pour plus d’informations sur les avantages de la création d’un schéma XDM, voir [Choisir votre schéma](/help/getting-started/cja-upgrade/cja-upgrade-path.md#choose-your-schema).</li><li>(Le cas échéant) Si vous avez créé un schéma XDM, vous pouvez [utiliser la Préparation des données pour mapper tous les champs de l’objet de données à votre schéma XDM](https://experienceleague.adobe.com/fr/docs/experience-platform/data-prep/home).</li></ol> |  |
+| Nouvelle implémentation du SDK web Experience Platform | <ol><li>Créez un schéma XDM pour votre organisation.<p>Travaillez avec votre équipe de données pour identifier la conception de schéma idéale de votre organisation avec Customer Journey Analytics.</p></li><li>Implémentez le SDK web d’Experience Platform.</li><li>Envoyez des données à Platform.</li></ol><p>Pour plus d’informations sur chacune de ces étapes, voir [Ingérer des données via le SDK web d’Adobe Experience Platform](/help/data-ingestion/aepwebsdk.md). | Comme il s’agit d’une nouvelle mise en œuvre du SDK web Experience Platform, le mappage de schéma n’est pas nécessaire, car vous devez le créer lors de l’une des premières étapes de la mise en œuvre. |
+| Migrer votre mise en œuvre Adobe Analytics pour utiliser le SDK web | <ol><li>Migrez votre mise en œuvre Adobe Analytics existante vers le SDK web Adobe Experience Platform, puis vérifiez que tout fonctionne dans Adobe Analytics.<p>Pour plus d’informations sur la procédure à suivre, utilisez les ressources suivantes, selon que votre mise en œuvre actuelle repose sur l’extension de balises Analytics ou sur AppMeasurement :</p><ul><li>Si vous utilisez l’extension des balises Analytics, voir [Migrer depuis l’extension des balises Adobe Analytics vers l’extension des balises du SDK web](https://experienceleague.adobe.com/fr/docs/analytics/implementation/aep-edge/web-sdk/analytics-extension-to-web-sdk).</li><li>Si vous utilisez AppMeasurement, voir [Migrer depuis AppMeasurement vers le SDK web](https://experienceleague.adobe.com/fr/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk).</li></ul><li>[Créez un schéma XDM pour votre organisation](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk#set-up-a-schema-and-dataset).<p>Collaborez avec votre équipe chargée des données pour identifier la conception de schéma idéale de votre organisation pour Customer Journey Analytics.</p></li><li>[Utilisez la Préparation des données pour mapper tous les champs de l’objet de données à votre schéma XDM.](https://experienceleague.adobe.com/fr/docs/experience-platform/data-prep/home).</li><li>Commencez à envoyer des données à Platform en [configurant un flux de données](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk#set-up-a-datastream).</li></ol> |  |
+| Configurer votre mise en œuvre existante du SDK web Adobe Analytics pour envoyer des données à Platform | <ol><li>Commencez à envoyer des données à Platform en [configurant un train de données](/help/data-ingestion/aepwebsdk.md#set-up-a-datastream).<p>Comme votre implémentation Adobe Analytics utilise déjà le SDK web d’Experience Platform, vous pouvez ignorer les autres sections dans [Ingérer des données via le SDK web d’Adobe Experience Platform](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk).</p><p>Si vous envoyez déjà des données à Platform avec votre implémentation Adobe Analytics, cette étape n’est pas obligatoire. Il vous suffit de créer une connexion entre les jeux de données Platform et Customer Journey Analytics, comme décrit plus loin dans ce processus.</p></li><li>(Facultatif) [Créez un schéma XDM pour votre organisation](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk#set-up-a-schema-and-dataset).<p>Travaillez avec votre équipe de données pour identifier la conception de schéma idéale de votre organisation avec Customer Journey Analytics.</p><p>Note : pour plus d’informations sur les avantages de la création d’un schéma XDM, voir [Choisir votre schéma](/help/getting-started/cja-upgrade/cja-upgrade-path.md#choose-your-schema).</li><li>(Le cas échéant) Si vous avez créé un schéma XDM, vous pouvez [utiliser la Préparation des données pour mapper tous les champs de l’objet de données à votre schéma XDM](https://experienceleague.adobe.com/fr/docs/experience-platform/data-prep/home).</li></ol> |  |
 | Utiliser le connecteur source Analytics | [Ingérer et utiliser des données à partir d’Adobe Analytics classique](/help/data-ingestion/analytics.md) | Les données Adobe Analytics sont automatiquement mappées au schéma XDM lorsque vous utilisez le connecteur source Analytics. Aucun mappage supplémentaire n’est requis. |
 
 ## Ensuite, conservez les données historiques.

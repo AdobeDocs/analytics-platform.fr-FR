@@ -6,52 +6,80 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-TQID: https://experienceleague.adobe.com/-Zv1B2pvTFAAgwV1uAV6ik65jtKVRBsF-2rc0tCHuUs
+TQID: 'https://experienceleague.adobe.com/-Zv1B2pvTFAAgwV1uAV6ik65jtKVRBsF-2rc0tCHuUs'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: a4cd176f-aea0-45b8-80e6-7f1b931e5847
+    internal-label: Labs
   - id: a67cb189-a535-41f6-afa2-448f39c4759f
+    internal-label: Access control
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
   - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+    internal-label: Use cases
   - id: bfa38d8a-4e93-4fd8-8cd8-e72c589e3af8
+    internal-label: Guided analysis
   - id: c38ed341-fab2-46df-9d72-88d8166edebb
+    internal-label: Workspace projects
   - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+    internal-label: Audiences
   - id: d13dba12-733d-4914-8d92-d643658bbe5d
+    internal-label: Forecasting
   - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: e0cfe18a-f68c-495b-bafc-f6bcc0392d6c
+    internal-label: Identity
   - id: e1471301-a189-438e-8d48-264a8db508a6
+    internal-label: Data views
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
   - id: e8abc408-b05c-427f-9e37-f8b033a6b3c3
+    internal-label: Schema
   - id: f24857a4-4b64-4b25-b237-d43026362144
+    internal-label: BI extension
   - id: fa6ac035-8403-478b-9ce1-3fe29d211fca
+    internal-label: Annotations
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
+    internal-label: Data modeling
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Administration
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1661
+source-wordcount: '1661'
 ht-degree: 96%
-
 ---
-
 # Contrôle d’accès
 
 Customer Journey Analytics est régi par trois niveaux d’accès ou trois rôles : le rôle d’administration de produit, le rôle d’administration de profil de produit et l’accès au niveau des utilisateurs et utilisatrices. Cette rubrique explique ces rôles de manière plus détaillée.
 
-En outre, cet article aborde des méthodes plus détaillées sur la limite d’accès, telles que le traitement de Workspace ainsi que le contrôle d’accès au niveau des lignes et au niveau de la valeur.
+En outre, cet article présente des méthodes plus précises pour limiter l’accès, telles que la curation de Workspace, ainsi que le contrôle d’accès au niveau des lignes et au niveau des valeurs.
 
 ## Contrôle d’accès en fonction du rôle
 
@@ -100,7 +128,7 @@ En plus de l’ajout en tant qu’administrateur ou administratrice de produit d
   Pour plus d’informations sur les autorisations Experience Platform, voir [Gestion des autorisations pour un profil de produit](https://experienceleague.adobe.com/fr/docs/experience-platform/access-control/ui/permissions).
 
 
-* Si Journey Optimizer est intégré à Customer Journey Analytics où il existe des connexions Journey Optimizer, les autorisations de parcours doivent également être ajoutées pour accéder aux connexions :
+* Si Journey Optimizer est intégré à Customer Journey Analytics et que des connexions Journey Optimizer existent, les autorisations relatives aux parcours doivent également être ajoutées pour accéder aux connexions :
 
   | Catégorie | Autorisation | Description |
   |---|---|---|
@@ -122,7 +150,7 @@ En plus de l’ajout en tant qu’administrateur ou administratrice de produit d
 
 * Utiliser l’[extension BI](../data-views/bi-extension.md)
 
-  Pour que les personnes puissent utiliser l’extension BI, un administrateur ou une administration de produit
+  Pour que les personnes puissent utiliser l’extension BI, un administrateur de produit
 
   * doit s’assurer que les autorisations Experience Platform de la personne incluent un rôle disposant de la ressource Service de requête avec les options Gérer les requêtes et Gérer l’intégration du service de requête. Pour plus d’informations sur les autorisations Experience Platform, voir [Gestion des autorisations pour un profil de produit](https://experienceleague.adobe.com/fr/docs/experience-platform/access-control/ui/permissions).
 
@@ -131,21 +159,21 @@ En plus de l’ajout en tant qu’administrateur ou administratrice de produit d
     | [!UICONTROL Service de requête] | [!UICONTROL Gestion des requêtes] | Accès à la lecture, la création, la modification et la suppression des requêtes SQL structurées pour les données Platform. |
     | [!UICONTROL Service de requête] | [!UICONTROL Gestion de lʼintégration du service de requête] | Accès à la création, la mise à jour et la suppression des informations dʼidentification sans date dʼexpiration pour lʼaccès au service de requête. |
 
-  * doit s’assurer que la personne dispose des autorisations Customer Journey Analytics appropriées :
+  * doit s’assurer que l’utilisateur dispose des autorisations Customer Journey Analytics appropriées :
     * autorisation d’accéder aux vues de données appropriées. Voir [!UICONTROL Vues de données] dans [Accès au niveau utilisateur et utilisatrice](#user-level-access).
     * autorisation d’accéder à l’extension BI de Customer Journey Analytics. Voir [!UICONTROL Outils de vues de données] dans [Accès au niveau utilisateur et utilisatrice](#user-level-access).
 
 ### Rôle d’administration de profil de produit
 
-Un profil de produit est un ensemble d’autorisations. Les administrateurs et administratrices de produit créent des profils de produit et peuvent affecter des personnes à la gestion d’un ou de plusieurs profils de produit. Un administrateur ou une administratrice de profil de produit peut alors :
+Un profil de produit est un ensemble d’autorisations. Les administrateurs de produit créent des profils de produit et peuvent désigner des administrateurs de profil de produit chargés de gérer un ou plusieurs profils de produit. Un administrateur ou une administratrice de profil de produit peut alors :
 
-* Gérer les profils de produit attribués. Par exemple, ajouter ou supprimer des personnes ou des groupes et modifier les autorisations pour les profils de produit.
+* Gérer les profils de produit attribués. Par exemple, ajouter ou supprimer des utilisateurs ou des groupes d’utilisateurs et modifier les autorisations pour les profils de produit.
 
 * Dans Customer Journey Analytics, modifier les vues de données qui font partie d’un profil de produit attribué. Les administrateurs et administratrices de profil de produit ne peuvent pas créer de vues de données.
 
 ### Accès au niveau utilisateur
 
-Le tableau ci-dessous décrit les principales autorisations d’accès pour différentes fonctionnalités de Customer Journey Analytics que vous pouvez configurer pour les personnes appropriées. Vous pouvez gérer différents niveaux d’accès d’utilisation par le biais de profils de produit. Un profil de produit combine un certain nombre d’autorisations que vous pouvez ensuite attribuer à des personnes individuelles ou à des groupes.
+Le tableau ci-dessous décrit les principales autorisations d’accès pour différentes fonctionnalités de Customer Journey Analytics que vous pouvez configurer pour les personnes appropriées. Vous pouvez gérer différents niveaux d’accès utilisateur par le biais de profils de produit. Un profil de produit regroupe un certain nombre d’autorisations que vous pouvez ensuite attribuer à des utilisateurs individuels ou à des groupes d’utilisateurs.
 
 L’onglet **[!UICONTROL Autorisations]** s’affiche sur chaque profil de produit dans [Admin Console](https://adminconsole.adobe.com/enterprise/).
 
@@ -158,7 +186,7 @@ L’onglet **[!UICONTROL Autorisations]** s’affiche sur chaque profil de produ
 | [!UICONTROL Outils de création de rapports] | [!UICONTROL Création des mesures calculées] | Autoriser la création des [mesures calculées](/help/components/calc-metrics/calc-metr-overview.md). Les utilisateurs peuvent baliser, partager, supprimer et renommer uniquement les mesures calculées qu’ils créent ou les mesures calculées partagées avec eux. |
 | [!UICONTROL Outils de création de rapports] | [!UICONTROL Création de segment] | Autoriser la création des [segments](/help/components/segments/seg-overview.md). Les utilisateurs peuvent baliser, partager, supprimer et renommer uniquement les segments qu’ils créent ou les segments qu’ils partagent. |
 | [!UICONTROL Outils de création de rapports] | [!UICONTROL Accès aux laboratoires] | Autoriser l’accès à l’onglet [Labs](/help/labs/labs.md) dans Customer Journey Analytics. |
-| [!UICONTROL Outils de création de rapports] | [!UICONTROL Création d’annotation] | Autoriser la création des [annotations](/help/components/annotations/overview.md). Les personnes peuvent uniquement baliser, partager, supprimer et renommer les annotations qu’elles créent ou auxquelles elles ont accès. |
+| [!UICONTROL Outils de création de rapports] | [!UICONTROL Création d’annotation] | Autoriser la création des [annotations](/help/components/annotations/overview.md). Les utilisateurs peuvent uniquement baliser, partager, supprimer et renommer les annotations qu’ils ont créées ou qui ont été partagées avec eux. |
 | [!UICONTROL Outils de création de rapports] | [!UICONTROL Affichage de lʼaudience] | Autoriser l’affichage des [audiences](/help/components/audiences/audiences-overview.md). |
 | [!UICONTROL Outils de création de rapports] | [!UICONTROL Création dʼaudiences] | Autoriser la création des [audiences](/help/components/audiences/audiences-overview.md). Nécessite [Gérer les segments](https://experienceleague.adobe.com/fr/docs/experience-platform/access-control/home) dans Adobe Experience Platform. |
 | [!UICONTROL Outils de création de rapports] | [!UICONTROL Mise en récit des données] | Autoriser à [générer des présentations de diapositives basées sur des projets Workspace.](/help/analysis-workspace/curate-share/generate-slides.md) |
@@ -180,7 +208,7 @@ Un autre niveau de contrôle d’accès peut être utilisé au niveau des rappor
 
 ## Accorder l’accès à des mesures ou dimensions individuelles
 
-Vous ne pouvez pas accorder ni refuser des autorisations concernant des mesures ou des dimensions individuelles dans Customer Journey Analytics comme le permet la version standard d’Adobe Analytics. Les mesures et dimensions peuvent être modifiées dans les [vues de données](/help/data-views/data-views.md) et sont susceptibles d’être modifiées dans Customer Journey Analytics. Cette modification permet également de modifier rétroactivement les rapports.
+Contrairement à la version classique d’Adobe Analytics, Customer Journey Analytics ne permet pas d’accorder ou de refuser des autorisations pour des mesures ou des dimensions individuelles. Les mesures et dimensions peuvent être modifiées dans les [vues de données](/help/data-views/data-views.md) et sont susceptibles d’être modifiées dans Customer Journey Analytics. Cette modification permet également de modifier rétroactivement les rapports.
 
 ## Cas d’utilisation
 
@@ -188,7 +216,7 @@ Voici quelques cas d’utilisation qui illustrent comment le contrôle d’accè
 
 ### Accès tiers
 
-Vous pouvez fournir un accès d’administration de profil de produit à un chef ou une cheffe d’équipe d’une tierce personne au sein duquel votre entreprise travaille. Cette dernière peut ensuite ajouter des personnes de son équipe à ce profil de produit. La personne administrant le profil de produit peut donner accès à des vues de données spécifiques et ajouter d’autres personnes à ce profil de produit. Elle peut modifier les vues de données pour les adapter aux besoins de l’équipe tierce.
+Vous pouvez accorder des droits d’administration du profil de produit au responsable d’équipe d’un tiers avec lequel votre entreprise collabore. Cet administrateur peut ensuite ajouter des membres de l’équipe de l’entreprise à ce profil de produit. La personne administrant le profil de produit peut donner accès à des vues de données spécifiques et ajouter d’autres personnes à ce profil de produit. L’administrateur du profil de produit peut modifier les vues de données pour les adapter aux besoins de l’équipe tierce.
 
 ### Contrôle d’accès au niveau de la ligne
 

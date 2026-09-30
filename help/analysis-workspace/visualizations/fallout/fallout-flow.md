@@ -8,22 +8,28 @@ autotag-review: '2026-05-19T08:41:54.033Z'
 TQID: 'https://experienceleague.adobe.com/sitlejANJcDN2u-baGg2iz2SaOyZJe8jbyXjgBbasss'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
 subfeature_v2:
   - id: ddf59f64-0e46-4986-a525-056acc143c70
+    internal-label: Workspace visualizations
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Privacy
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 389
+source-wordcount: '389'
 ht-degree: 87%
-
 ---
-
 # Abandon - Aperçu {#fallout-overview}
 
 <!-- markdownlint-disable MD034 -->
@@ -31,7 +37,7 @@ ht-degree: 87%
 >[!CONTEXTUALHELP]
 >id="workspace_fallout_button"
 >title="Abandons"
->abstract="Crééz une visualisation pour voir comment les personnes accèdent à certains points de contrôle."
+>abstract="Crée une visualisation pour voir comment les personnes accèdent avec succès aux points de contrôle souhaités."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -54,19 +60,19 @@ Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Créer un 
 >[!ENDSHADEBOX]
 
 
-Grâce aux visualisations Abandons, vous pouvez effectuer ce qui suit :
+Les visualisations d’abandon vous permettent d’effectuer les opérations suivantes :
 
 * Comparer en vis-à-vis deux segments du même rapport
-* Faites glisser, déposez et réorganisez les étapes de l’entonnoir (points de contact).
+* Glisser-déposer (et réorganiser) les étapes du funnel (points de contact).
 * Combinez et associez des valeurs issues de différentes dimensions et mesures.
-* Créez un rapport multidimensionnel sur les abandons.
+* Créer un rapport sur les abandons multidimensionnel.
 * Déterminez où se rendent les clientes et clients immédiatement après un abandon.
 
 La visualisation Abandons présente les taux de conversion et d’abandon entre chaque étape ou point de contact d’une séquence.
 
 Vous pouvez, par exemple, effectuer le suivi des points d’abandon d’une personne au cours d’un processus d’achat. Il vous suffit de sélectionner un point de contact de départ et un autre de conclusion, puis d’ajouter des points de contact intermédiaires afin de créer un chemin de navigation sur le site web. Vous pouvez également effectuer un suivi sur les abandons multidimensionnels.
 
-## Choisissez entre les visualisations Abandons, Flux et Zone de travail de parcours.
+## Choisir entre les visualisations Abandon, Flux et Canevas de parcours
 
 La visualisation Abandons présente des similitudes avec la [visualisation Flux](/help/analysis-workspace/visualizations/c-flow/flow.md) et la [visualisation Zone de travail de parcours &#x200B;](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md).
 
@@ -76,17 +82,17 @@ La visualisation Abandons présente des similitudes avec la [visualisation Flux]
 
 {{journey-visualization-comparisons}}
 
-### Quand utiliser la visualisation Abandons
+### Quand utiliser la visualisation Abandon
 
 Les visualisations Abandons et [Zone de travail de parcours](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) sont utiles pour analyser les éléments suivants :
 
 * Taux de conversion par le biais de processus particuliers sur votre site (tels qu’un processus d’achat ou d’enregistrement).
 * Flux de trafic généraux et de portée plus large : de toutes les personnes qui ont visité la page d’accueil, ce flux indique le nombre de personnes qui ont effectué une recherche. Et ensuite combien d’entre elles ont finalement regardé un article spécifique.
-* Corrélations entre les événements de votre site. Les corrélations indiquent quel pourcentage de personnes ayant consulté votre politique de confidentialité ont continué leur visite jusqu’à l’achat d’un produit.
+* Corrélations entre les événements de votre site. Les corrélations indiquent le pourcentage de personnes qui, après avoir consulté votre politique de confidentialité, ont acheté un produit.
 
-Les visualisations Abandons sont particulièrement adaptées aux éléments suivants :
+Les visualisations Abandon sont particulièrement adaptées aux éléments suivants :
 
-* Analyse des abandons impliquant des parcours avec une séquence prédéfinie de pages et un point d’entrée unique ainsi qu’un chemin d’accès. (Utilisez Zone de travail de parcours pour les parcours comportant plusieurs points d’entrée et chemins d’accès.)
+* L’analyse des abandons portant sur des parcours comportant une séquence prédéfinie de pages, avec un point d’entrée et un chemin uniques. (Utilisez le canevas de parcours pour les parcours comportant plusieurs points d’entrée et chemins.)
 
 * Parcours pour lesquels vous devez effectuer une comparaison en vis-à-vis de deux segments différents du même rapport.
 

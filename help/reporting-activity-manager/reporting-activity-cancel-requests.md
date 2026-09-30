@@ -1,36 +1,44 @@
 ---
-title: Annuler les demandes de rapport dans le gestionnaire des activités de rapport
-description: Découvrez comment utiliser le gestionnaire des activités de rapport pour diagnostiquer et corriger les problèmes de capacité pendant les heures de pointe de la création de rapports.
+title: Annuler les demandes de reporting dans le Gestionnaire des activités de reporting
+description: Découvrez comment utiliser le Gestionnaire des activités de reporting pour diagnostiquer et corriger les problèmes de capacité pendant les heures de pointe de reporting.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 87da2447-f114-432a-9f63-e660c2541d0f
 role: Admin
-TQID: https://experienceleague.adobe.com/Rzq3IeZudRcTRC60v2RsijL-g-rno7xPS6Lc5jZlMbs
+TQID: 'https://experienceleague.adobe.com/Rzq3IeZudRcTRC60v2RsijL-g-rno7xPS6Lc5jZlMbs'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Privacy
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1497
+source-wordcount: '1497'
 ht-degree: 100%
-
 ---
-
-# Annuler les demandes de rapport dans le gestionnaire des activités de rapport
+# Annuler les demandes de reporting dans le Gestionnaire des activités de reporting
 
 Le [!UICONTROL gestionnaire des activités de rapport] permet aux administrateurs et administratrices de diagnostiquer et d’annuler rapidement les demandes de création de rapports afin de résoudre les problèmes de capacité de création de rapports pendant les heures de pointe de la création de rapports.
 
 Tenez compte des points suivants lors de l’annulation de demandes de création de rapports :
 
-* Vous pouvez annuler des demandes spécifiques, annuler toutes les demandes d’une personne spécifique ou annuler toutes les demandes liées à un projet spécifique.
+* Vous pouvez annuler des demandes spécifiques, annuler toutes les demandes d’un utilisateur ou d’une utilisatrice spécifique ou annuler toutes les demandes liées à un projet spécifique.
 
 * Lorsque vous annulez des demandes, vous pouvez également choisir de restreindre les demandes suivantes pour une période donnée.
 
@@ -42,7 +50,7 @@ Pour plus d’informations sur le gestionnaire des activités de rapport, y comp
 
 ## Annuler des demandes spécifiques
 
-Vous pouvez annuler des demandes individuelles qui consomment une grande quantité de capacité de création de rapports. Lors de l’annulation d’une demande, vous pouvez choisir de la restreindre davantage pour une période donnée.
+Vous pouvez annuler des demandes individuelles qui consomment une grande quantité de capacité de reporting. Lors de l’annulation d’une demande, vous pouvez choisir de la restreindre davantage pour une période donnée.
 
 1. Dans Customer Journey Analytics, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Gestionnaire des activités de rapport]**.
 
@@ -60,7 +68,7 @@ Vous pouvez annuler des demandes individuelles qui consomment une grande quantit
 
 1. Le champ Message d’annulation indique le message qui s’affiche pour les personnes lorsque leurs demandes sont annulées. Un message par défaut est fourni. Vous pouvez mettre à jour le message par défaut pour fournir des détails supplémentaires.
 
-1. (Facultatif) Pour restreindre les demandes futures pour une période donnée, procédez comme suit :
+1. (Facultatif) Pour restreindre les demandes futures pour une période donnée :
 
    1. Activez l’option pour [!UICONTROL **Restreindre les demandes ultérieures**].
 
@@ -70,7 +78,7 @@ Vous pouvez annuler des demandes individuelles qui consomment une grande quantit
 
       | Option | Fonction |
       |---------|----------|
-      | [!UICONTROL **Utilisateur ou utilisatrice et projet**] | Les utilisateurs et utilisatrices associés aux demandes sélectionnées seront temporairement limités dans l’exécution des demandes de rapport pour les projets associés. |
+      | [!UICONTROL **Utilisateur ou utilisatrice et projet**] | Les utilisateurs et utilisatrices associés aux demandes sélectionnées seront temporairement limités dans l’exécution des demandes de reporting pour les projets associés. |
       | [!UICONTROL **Utilisateur ou utilisatrice**] | Les utilisateurs et utilisatrices associés aux demandes sélectionnées ne pourront temporairement pas effectuer des demandes de rapports. |
       | [!UICONTROL **Projet**] | Les projets associés aux demandes sélectionnées seront temporairement exclus de toutes les demandes de rapports. |
       | [!UICONTROL **Réservé à**] | Choisissez la durée pendant laquelle les demandes seront restreintes. Vous pouvez choisir 1 minute (par défaut), 5 minutes, 10 minutes, 15 minutes ou 30 minutes. <!-- double-check this --><p>Vous ne pouvez pas supprimer une restriction plus tôt une fois qu’elle a été définie.</p> |
@@ -83,7 +91,7 @@ Vous pouvez annuler des demandes individuelles qui consomment une grande quantit
 
 ## Annuler les demandes par personne
 
-Vous pouvez annuler toutes les demandes associées à une ou plusieurs personnes. Lors de l’annulation de demandes associées à une personne, vous pouvez choisir de restreindre davantage les demandes de cette personne pendant une période donnée.
+Vous pouvez annuler toutes les demandes associées à une ou plusieurs personnes. Lors de l’annulation de demandes associées à un utilisateur, vous pouvez choisir de restreindre davantage les demandes de cet utilisateur ou de cette utilisatrice pendant une période donnée.
 
 1. Dans Customer Journey Analytics, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Gestionnaire des activités de rapport]**.
 
@@ -111,9 +119,9 @@ Vous pouvez annuler toutes les demandes associées à une ou plusieurs personnes
 
       | Option | Fonction |
       |---------|----------|
-      | [!UICONTROL **Utilisateur ou utilisatrice et projet**] | Les utilisateurs et utilisatrices sélectionnés ne pourront temporairement pas faire de demandes de rapport pour les projets associés. <p>Il s’agit de l’option la moins contraignante.</p> |
-      | [!UICONTROL **Utilisateur ou utilisatrice**] | Les utilisateurs et utilisatrices sélectionnés ne pourront temporairement pas faire de demandes de rapport. |
-      | [!UICONTROL **Projet**] | Les projets associés aux utilisateurs et utilisatrices sélectionnés ne pourront pas faire l’objet de demandes de rapports d’un utilisateur ou d’une utilisatrice. |
+      | [!UICONTROL **Utilisateur ou utilisatrice et projet**] | Les utilisateurs et utilisatrices sélectionnés ne pourront temporairement pas effectuer de demandes de reporting pour les projets associés. <p>Il s’agit de l’option la moins contraignante.</p> |
+      | [!UICONTROL **Utilisateur ou utilisatrice**] | Les utilisateurs et utilisatrices sélectionnés ne pourront temporairement pas effectuer de demandes de reporting. |
+      | [!UICONTROL **Projet**] | Les projets associés aux utilisateurs et utilisatrices sélectionnés seront restreints pour toute demande de reporting, quel que soit l’utilisateur ou l’utilisatrice. |
       | [!UICONTROL **Réservé à**] | Choisissez la durée pendant laquelle les demandes seront restreintes. Vous pouvez choisir 1 minute (par défaut), 5 minutes, 10 minutes, 15 minutes ou 30 minutes. <!--double-check this--> <p>Vous ne pouvez pas supprimer une restriction plus tôt une fois qu’elle a été définie.</p> |
 
       {style="table-layout:auto"}
@@ -142,7 +150,7 @@ Vous pouvez annuler toutes les demandes associées à un ou plusieurs projets. L
 
 1. Le champ Message d’annulation indique le message qui s’affiche pour les personnes lorsque leurs demandes sont annulées. Un message par défaut est fourni. Vous pouvez mettre à jour le message par défaut pour fournir des détails supplémentaires.
 
-1. (Facultatif) Pour restreindre les demandes futures pour une période donnée, procédez comme suit :
+1. (Facultatif) Pour restreindre les demandes futures pour une période donnée :
 
    1. Activez l’option pour [!UICONTROL **Restreindre les demandes ultérieures**].
 
@@ -152,9 +160,9 @@ Vous pouvez annuler toutes les demandes associées à un ou plusieurs projets. L
 
       | Option | Fonction |
       |---------|----------|
-      | [!UICONTROL **Utilisateur ou utilisatrice et projet**] | Les projets sélectionnés seront temporairement exclus de toute demande de rapport de la part des utilisateurs et utilisatrices associés.<p>Il s’agit de l’option la moins contraignante.</p> |
+      | [!UICONTROL **Utilisateur ou utilisatrice et projet**] | Les projets sélectionnés seront temporairement exclus de toute demande de reporting de la part des utilisateurs et utilisatrices associés.<p>Il s’agit de l’option la moins contraignante.</p> |
       | [!UICONTROL **Utilisateur ou utilisatrice**] | Les utilisateurs et utilisatrices associés aux projets sélectionnés ne pourront temporairement pas effectuer des demandes de rapports. |
-      | [!UICONTROL **Projet**] | Les projets sélectionnés seront temporairement exclus de toute demande de rapport émanant d’un utilisateur ou d’une utilisatrice. |
+      | [!UICONTROL **Projet**] | Les projets sélectionnés seront temporairement exclus de toute demande de reporting émanant d’un utilisateur ou d’une utilisatrice. |
       | [!UICONTROL **Réservé à**] | Choisissez la durée pendant laquelle les demandes seront restreintes. Vous pouvez choisir 1 minute (par défaut), 5 minutes, 10 minutes, 15 minutes ou 30 minutes. <!--double-check this--> <p>Vous ne pouvez pas supprimer une restriction plus tôt une fois qu’elle a été définie.</p> |
 
       {style="table-layout:auto"}
@@ -178,7 +186,7 @@ Les applications comprennent les suivantes :
 * Export du tableau complet
 * Liens de partage avec tout le monde
 * Analyse guidée
-* Toute autre application interrogeant le moteur de création de rapports Analytics
+* Toute autre application qui envoie des requêtes au moteur de reporting Analytics
 
 Pour annuler des demandes par application, procédez comme suit :
 
@@ -208,9 +216,9 @@ Pour annuler des demandes par application, procédez comme suit :
 
       | Option | Fonction |
       |---------|----------|
-      | [!UICONTROL **Utilisateur ou utilisatrice et projet**] | Les applications sélectionnées seront temporairement exclues de toute demande de rapport de la part des utilisateurs, utilisatrices et projets associés.<p>Il s’agit de l’option la moins contraignante.</p> |
-      | [!UICONTROL **Utilisateur ou utilisatrice**] | Les utilisateurs et utilisatrices associés aux projets sélectionnés ne pourront temporairement pas effectuer de demandes de rapports. |
-      | [!UICONTROL **Projet**] | Les projets associés aux utilisateurs et utilisatrices sélectionnés ne pourront pas faire l’objet de demandes de rapports d’un utilisateur ou d’une utilisatrice. |
+      | [!UICONTROL **Utilisateur ou utilisatrice et projet**] | Les applications sélectionnées seront temporairement exclues de toute demande de reporting de la part des utilisateurs, utilisatrices et projets associés.<p>Il s’agit de l’option la moins contraignante.</p> |
+      | [!UICONTROL **Utilisateur ou utilisatrice**] | Les utilisateurs et utilisatrices associés aux applications sélectionnées ne pourront temporairement pas effectuer de demandes de reporting. |
+      | [!UICONTROL **Projet**] | Les projets associés aux applications sélectionnées seront temporairement restreints et ne pourront faire l’objet d’aucune demande de reporting, quel que soit l’utilisateur ou l’utilisatrice. |
       | [!UICONTROL **Réservé à**] | Choisissez la durée pendant laquelle les demandes seront restreintes. Vous pouvez choisir 1 minute (par défaut), 5 minutes, 10 minutes, 15 minutes ou 30 minutes. <!--double-check this--> <p>Vous ne pouvez pas supprimer une restriction plus tôt une fois qu’elle a été définie.</p> |
 
       {style="table-layout:auto"}

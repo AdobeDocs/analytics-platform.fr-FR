@@ -5,27 +5,39 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 exl-id: 27eaa7c7-f1e1-4cf1-9d59-67ac552eb430
 role: User
-TQID: https://experienceleague.adobe.com/q-egeF94DZ-kxHpVBJX7A-Th0N30t7ji-V2EoXMe1P4
+TQID: 'https://experienceleague.adobe.com/q-egeF94DZ-kxHpVBJX7A-Th0N30t7ji-V2EoXMe1P4'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
+  - id: d494f34f-674c-496a-a400-b33552b95463
+    internal-label: Adobe Product Analytics
+  - id: bfa38d8a-4e93-4fd8-8cd8-e72c589e3af8
+    internal-label: Guided analysis
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 7f8ab656c7dbf508b2a78fd2022592faf883c56e
+    internal-label: Optimization
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 659
+source-wordcount: '659'
 ht-degree: 100%
-
 ---
-
 # Analyse de la [!UICONTROL fréquence] {#frequency}
 
 <!-- markdownlint-disable MD034 -->
@@ -33,7 +45,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="workspace_guidedanalysis_frequency_button"
 >title="Fréquence"
->abstract="Afficher la répartition de l’activité des personnes ayant une utilisation récurrente pour des événements spécifiques."
+>abstract="Afficher la répartition de l’activité récurrente des utilisateurs pour des événements spécifiques."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -71,13 +83,13 @@ L’analyse [!UICONTROL Fréquence] propose les paramètres de graphique suivant
 
 ### Paramètres du compartiment
 
-Détermine la manière dont l’événement est classé dans des groupes (compartiments). Dans la vue Tableau de tendances, les utilisateurs et utilisatrices sont regroupés en fonction de la fréquence d’utilisation au total et dans chaque intervalle, ce qui signifie qu’une personne peut être comptabilisée dans différents regroupements à différents intervalles.
+Détermine la manière dont l’événement est classé dans des groupes (compartiments). Dans la vue de tableau des tendances, les utilisateurs sont regroupés en fonction de leur fréquence d’utilisation totale et pour chaque intervalle. Un même utilisateur peut donc être comptabilisé dans des compartiments différents selon les intervalles.
 
 * **[!UICONTROL Compartiments automatiques]** : identifiez automatiquement la taille optimale des compartiments en fonction de la distribution des données.
 * **[!UICONTROL Compartiments personnalisés]** : personnalisez la manière dont les données sont regroupées dans des compartiments.
-   * [!UICONTROL De] : premier compartiment. Une fréquence inférieure à cette valeur est exclue de la création de rapports.
-   * [!UICONTROL À] : les fréquences supérieures à cette valeur sont regroupées dans le dernier compartiment.
-   * [!UICONTROL Taille] : intervalle du compartiment.
+  * [!UICONTROL De] : premier compartiment. Une fréquence inférieure à cette valeur est exclue de la création de rapports.
+  * [!UICONTROL À] : les fréquences supérieures à cette valeur sont regroupées dans le dernier compartiment.
+  * [!UICONTROL Taille] : intervalle du compartiment.
 
 ### Comparaison de temps
 
@@ -87,7 +99,7 @@ Détermine la manière dont l’événement est classé dans des groupes (compar
 
 Période souhaitée pour votre analyse. Ce paramètre comporte deux composants :
 
-* **[!UICONTROL Intervalle]** : granularité de la date selon laquelle vous souhaitez afficher les données de tendance. Le graphique et le tableau affichent des données agrégées par défaut, avec la possibilité de développer le tableau pour obtenir une vue de tendance. Dans la vue de tendance, les utilisateurs et utilisatrices sont regroupés en fonction de la fréquence d’utilisation au total et dans chaque intervalle, ce qui signifie qu’une personne peut être comptabilisée dans différents compartiments à différents intervalles.
+* **[!UICONTROL Intervalle]** : granularité de la date selon laquelle vous souhaitez afficher les données de tendance. Le graphique et le tableau affichent des données agrégées par défaut, avec la possibilité de développer le tableau pour obtenir une vue de tendance. Dans la vue des tendances, les utilisateurs sont regroupés en fonction de leur fréquence d’utilisation totale et pour chaque intervalle. Un même utilisateur peut donc être comptabilisé dans des compartiments différents selon les intervalles.
 * **[!UICONTROL Date]** : date de début et de fin. Les paramètres prédéfinis de période flottante et les périodes personnalisées enregistrées précédemment sont disponibles pour votre commodité. Vous pouvez également utiliser le sélecteur de calendrier pour choisir une période fixe.
 
 
