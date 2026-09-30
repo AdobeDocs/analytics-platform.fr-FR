@@ -137,7 +137,7 @@ Votre droit d’utilisation de Customer Journey Analytics vous permet d’ing�
 
 +++**Comment puis-je intégrer des données [!UICONTROL Adobe Analytics] dans [!UICONTROL Customer Journey Analytics] ?**
 
-Les données [!UICONTROL Adobe Analytics] peuvent être connectées à Experience Platform par le biais du [connecteur source Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). La plupart des champs [!UICONTROL Adobe Analytics] sont transférés au format XDM. Cependant, d’autres champs ne sont pas encore disponibles.
+Les données [!UICONTROL Adobe Analytics] peuvent être connectées à Experience Platform par le biais du [connecteur source Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=fr). La plupart des champs [!UICONTROL Adobe Analytics] sont transférés au format XDM. Cependant, d’autres champs ne sont pas encore disponibles.
 
 +++
 
@@ -181,7 +181,7 @@ Adobe a récemment modifié la manière dont il traite les données dans Custome
 
 ## &#x200B;5. Définir un intervalle variable pour la conservation des données [!UICONTROL Connexion] {#data-retention}
 
-Le paramètre [**[!UICONTROL Activer la fenêtre dynamique de données &#x200B;]**](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#create-connection) vous permet de définir la conservation des données Customer Journey Analytics sous la forme d’une fenêtre dynamique en mois (trois mois, six mois, etc.). Il est défini au niveau de la [!UICONTROL connexion] et non au niveau du [!UICONTROL jeu de données]. La conservation des données est basée sur les horodatages des jeux de données dʼévénement et sʼapplique uniquement aux jeux de données dʼévénement. Il n’existe aucun paramètre de conservation des données pour les jeux de données de profil ou de recherche, car aucun horodatage ne leur est applicable.
+Le paramètre [**[!UICONTROL Activer la fenêtre dynamique de données &#x200B;]**](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=fr#create-connection) vous permet de définir la conservation des données Customer Journey Analytics sous la forme d’une fenêtre dynamique en mois (trois mois, six mois, etc.). Il est défini au niveau de la [!UICONTROL connexion] et non au niveau du [!UICONTROL jeu de données]. La conservation des données est basée sur les horodatages des jeux de données dʼévénement et sʼapplique uniquement aux jeux de données dʼévénement. Il n’existe aucun paramètre de conservation des données pour les jeux de données de profil ou de recherche, car aucun horodatage ne leur est applicable.
 
 Lʼavantage principal est que vous ne stockez ou ne créez des rapports que sur les données applicables et utiles, et supprimez les données plus anciennes qui ne sont plus utiles. Elle vous aide à rester dans les limites de votre contrat et réduit le risque de surcoût.
 
@@ -209,7 +209,7 @@ For data deletion, you should be concerned about six types of components: sandbo
 
 ## &#x200B;7. Remarques concernant la fusion de suites de rapports dans Customer Journey Analytics {#merge-reportsuite}
 
-Si vous prévoyez d’ingérer des données Adobe Analytics par l’intermédiaire du [connecteur source Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html), tenez compte de ces ramifications lors de la fusion de suites de rapports Adobe Analytics ou plus.
+Si vous prévoyez d’ingérer des données Adobe Analytics par l’intermédiaire du [connecteur source Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=fr), tenez compte de ces ramifications lors de la fusion de suites de rapports Adobe Analytics ou plus.
 
 | Problème | Considération |
 | --- | --- |
@@ -315,4 +315,4 @@ Lorsque les données atteignent le centre de données régional, la configuratio
 Customer Journey Analytics nécessite des jeux de données provenant d’Adobe Experience Platform. Par conséquent, votre configuration de transfert d’événement ou de train de données a besoin du service Adobe Experience Platform pour acheminer les données du centre de données régional vers le centre de données où se trouve votre instance Adobe Experience Platform. Customer Journey Analytics et ses services et son infrastructure de prise en charge sont déployés sur cette même instance Adobe Experience Platform.
 
 
-Voir [Vue d’ensemble de la collecte de données](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html) pour plus d’informations sur le processus de collecte de données au-delà du réseau Adobe Experience Platform Edge et de ses centres de données régionaux.
+Voir [Vue d’ensemble de la collecte de données](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html?lang=fr) pour plus d’informations sur le processus de collecte de données au-delà du réseau Adobe Experience Platform Edge et de ses centres de données régionaux.

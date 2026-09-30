@@ -53,9 +53,9 @@ Une suite de rapports virtuelle :
 * Peut s’appliquer de manière non destructive aux données historiques et nouvelles.
 * Permet de créer une ou plusieurs vues virtuelles en plus d’une suite de rapports Adobe Analytics pour une utilisation par différentes équipes métier.
 * Peut servir à contrôler l’accès et à organiser différents types de données pour différents utilisateurs dans Adobe Analytics.
-* Offre des possibilités facultatives de [traitement de la période de rapport](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html) pour Adobe Analytics. Dans ce cas, une suite de rapports virtuelles peut être utilisée pour créer une définition personnalisée de la « visite ».
+* Offre des possibilités facultatives de [traitement de la période de rapport](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=fr) pour Adobe Analytics. Dans ce cas, une suite de rapports virtuelles peut être utilisée pour créer une définition personnalisée de la « visite ».
 * S’applique au moment de l’exécution du rapport, comme pour l’évaluation des segments. Ceci se produit _après_ la collecte et le stockage des données dans Adobe Analytics.
-* Est requise pour l’[analyse entre appareils](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html) dans Adobe Analytics.
+* Est requise pour l’[analyse entre appareils](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=fr) dans Adobe Analytics.
 * Dispose du même nombre de variables qu’une suite de rapports Analytics standard (250 eVars, 250 props, 1 000 événements), même si la curation des suites de rapports virtuelles peut limiter les variables exposées aux utilisateurs et utilisatrices.
 * Prend en charge les options de calendrier personnalisé.
 
@@ -68,7 +68,7 @@ Une suite de rapports virtuelle n’est pas :
 
 ## Vues de données Customer Journey Analytics
 
-Consultez l’[aperçu des vues des données](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html) pour en savoir plus.
+Consultez l’[aperçu des vues des données](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=fr) pour en savoir plus.
 
 Une vue de données :
 

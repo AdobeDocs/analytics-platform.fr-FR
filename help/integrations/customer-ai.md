@@ -76,7 +76,7 @@ Pour intégrer concrètement les données de l’IA dédiée aux clients à Cust
 
 ## Étape 1 : Configurer une instance d’IA dédiée aux clients
 
-Une fois vos données préparées et vos informations d’identification et schémas en place, commencez par suivre le guide [Configurer une instance IA dédiée aux clients](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/user-guide/configure.html) dans Adobe Experience Platform.
+Une fois vos données préparées et vos informations d’identification et schémas en place, commencez par suivre le guide [Configurer une instance IA dédiée aux clients](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/user-guide/configure.html?lang=fr) dans Adobe Experience Platform.
 
 ## Étape 2 : Configurer une connexion Customer Journey Analytics aux jeux de données de l’IA dédiée aux clients
 

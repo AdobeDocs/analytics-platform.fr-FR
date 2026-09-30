@@ -70,7 +70,7 @@ Dans ce cas, vous utiliserez alors le [modèle d’attribution en forme de J inv
 
 Supposons que votre hypothèse soit la suivante : *« Dans un secteur spécifique (comme l’industrie du voyage), la fenêtre d’attribution est de 60 ou 90 jours, et non de 30 jours, car les clients font beaucoup de recherches avant d’acheter un produit* ».
 
-Dans ce cas, vous pouvez modifier votre [intervalle de recherche en amont](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/attribution/models) à 90 jours.
+Dans ce cas, vous pouvez modifier votre [intervalle de recherche en amont](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/attribution/models) à 90 jours.
 
 ## Utiliser l’attribution algorithmique
 
@@ -80,5 +80,5 @@ Si vous ne disposez pas encore d’un modèle d’attribution qui fournit des r�
 
 * Il se peut que vous deviez faire appel aux services dʼun spécialiste des données au lieu de vous fier uniquement à Analysis Workspace.
 * Vous pouvez vous fier aux données brutes, comme dans les flux de données Adobe.
-* Pensez à utiliser [&#128279;](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-overview), par exemple, si vous souhaitez tenir compte des données de vos impressions.
+* Pensez à utiliser [&#128279;](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-overview), par exemple, si vous souhaitez tenir compte des données de vos impressions.
 
