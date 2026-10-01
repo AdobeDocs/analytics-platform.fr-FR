@@ -5,42 +5,52 @@ exl-id: 998a9f9b-cfa7-4b97-b32b-d50e35d01b39
 TQID: https://experienceleague.adobe.com/5sjpTMocv3547Xqg4VD6C5Gp-cRzNmyHTI5iE6P-JGA
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Governance
+source-git-commit: 2a01268e537fb7982f698ccf9c14b831edf8437f
 workflow-type: tm+mt
-source-wordcount: 1292
+source-wordcount: '1337'
 ht-degree: 3%
-
 ---
-
 # Mesures et dimensions partagées - Aperçu
 
-Les mesures et dimensions partagées fournissent un emplacement central pour gérer les dimensions et mesures qui peuvent être utilisées dans un certain nombre de vues de données. Ces composants sont particulièrement utiles aux entreprises qui utilisent plusieurs vues de données, en particulier si ces vues de données ont des paramètres de composant en commun. Les modifications apportées aux mesures et dimensions partagées s’appliquent instantanément à toutes les vues de données avec lesquelles elles sont partagées. Lors de la modification d’une vue de données individuelle, les dimensions et mesures partagées peuvent être identifiées par une icône ![Composant partagé](/help/assets/icons/CCLibrary.svg) en regard du nom du composant.
+Les mesures et dimensions partagées fournissent un emplacement central pour gérer les dimensions et mesures qui peuvent être utilisées dans un certain nombre de vues de données. Ces composants sont particulièrement utiles aux entreprises qui utilisent plusieurs vues de données, en particulier si ces vues de données ont des paramètres de composant en commun. Les modifications apportées aux mesures et dimensions partagées s’appliquent instantanément à toutes les vues de données avec lesquelles elles sont partagées. Lors de la modification d’une vue de données individuelle, vous pouvez identifier les dimensions et mesures partagées à l’aide d’une icône ![Composant partagé](/help/assets/icons/CCLibrary.svg) située en regard du nom du composant.
 
 Bien que les dimensions et mesures partagées permettent d’utiliser des composants communs dans de nombreuses vues de données, elles ne peuvent pas être partagées entre connexions.
+
+## Autorisations
+* [Les administrateurs et administratrices de produit](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/access-control#product-administrator-role) ont également besoin des autorisations **Gérer les politiques d’utilisation des données** et **Afficher les politiques d’utilisation des données** pour tous les sandbox dans [Autorisations Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home#permissions).
 
 ## Processus
 
 La plupart des entreprises utilisent le workflow global suivant pour dédupliquer et gérer les dimensions et les mesures au fil du temps :
 
-1. Importez les composants de chaque vue de données qui peuvent être partagés dans plusieurs vues de données. Si la même dimension ou mesure existe dans plusieurs vues de données, Adobe recommande d’importer toutes les instances de ce composant. Bien que cette bonne pratique consiste à importer les doublons, ils sont importés afin qu’ils puissent être dédupliqués et conserver leurs références respectives aux projets Workspace.
+1. Importez les composants de chaque vue de données qui sont partagés entre plusieurs vues de données. Si la même dimension ou mesure existe dans plusieurs vues de données, Adobe recommande d’importer toutes les instances de ce composant. Bien que cette bonne pratique consiste à importer les doublons, ils sont importés afin qu’ils puissent être dédupliqués et conserver leurs références respectives aux projets Workspace.
 1. Passez en revue tous les composants qui utilisent le même ID de composant mais des paramètres de composant différents. Pour chaque groupe de composants en double, sélectionnez les paramètres de composant souhaités à appliquer à tous les autres composants qui partagent cet identifiant de composant.
 1. Passez en revue tous les composants qui utilisent le même ID de composant et qui ont également les mêmes paramètres de composant. Ces dimensions ou mesures peuvent être fusionnées facilement et en toute sécurité.
 
 ## Gestionnaire [!UICONTROL Mesures et dimensions partagées]
 
-**&#x200B;**&#x200B;> **[!UICONTROL Vues de données]** > **[!UICONTROL Mesures et dimensions partagées]**
+**** > **[!UICONTROL Vues de données]** > **[!UICONTROL Mesures et dimensions partagées]**
 
 Accéder à cette interface utilisateur affiche toutes les dimensions et mesures actuelles qui peuvent être partagées dans plusieurs vues de données. Le coin supérieur droit contient deux boutons permettant d’ajouter des composants à cette interface :
 
@@ -49,7 +59,7 @@ Accéder à cette interface utilisateur affiche toutes les dimensions et mesures
 
 Directement au-dessous de ces deux boutons, quatre cartes de présentation sont visibles :
 
-![&#x200B; Aperçu des cartes de présentation &#x200B;](assets/overview-cards.png)
+![ Aperçu des cartes de présentation ](assets/overview-cards.png)
 
 * **Mesures** : nombre total de mesures disponibles à partager dans les vues de données pour cette connexion. Chaque connexion peut contenir jusqu’à 10 000 mesures partagées.
 * **Dimensions** : nombre total de dimensions disponibles pour être partagées entre les vues de données pour cette connexion. Chaque connexion peut contenir jusqu’à 10 000 dimensions partagées.
@@ -61,40 +71,40 @@ Toutes les dimensions et mesures partagées sont affichées sous les quatre cart
 ![Aperçu des dimensions et mesures disponibles](assets/shared-metrics-dimensions.png)
 
 * **Filtrer** : sélectionnez l’icône ![Filtrer](../../assets/icons/Filter.svg) pour afficher ou masquer les filtres disponibles. Les filtres suivants sont disponibles :
-   * **[!UICONTROL Type de composant]** : affichez uniquement les dimensions ou uniquement les mesures.
-   * **[!UICONTROL Jeu de données]** : affichez uniquement les composants où le jeu de données est inclus dans les vues de données avec lesquelles un composant est partagé.
-   * **[!UICONTROL Vue de données]** : affichez uniquement les composants partagés avec cette vue de données.
-   * **[!UICONTROL Créé par]** : affiche uniquement les composants créés par un utilisateur donné.
-   * **[!UICONTROL Doublons]** : affichez uniquement les composants ayant le même ID de composant qu’un autre composant. Ces filtres sont identiques à la révision des composants à l’aide des cartes de présentation.
+  * **[!UICONTROL Type de composant]** : affichez uniquement les dimensions ou uniquement les mesures.
+  * **[!UICONTROL Jeu de données]** : affichez uniquement les composants où le jeu de données est inclus dans les vues de données avec lesquelles un composant est partagé.
+  * **[!UICONTROL Vue de données]** : affichez uniquement les composants partagés avec cette vue de données.
+  * **[!UICONTROL Créé par]** : affiche uniquement les composants créés par un utilisateur donné.
+  * **[!UICONTROL Doublons]** : affichez uniquement les composants ayant le même ID de composant qu’un autre composant. Ces filtres sont identiques à la révision des composants à l’aide des cartes de présentation.
 * **Rechercher** : utilisez l’icône ![Rechercher](../../assets/icons/Search.svg) pour rechercher un composant par nom.
 * **[!UICONTROL Connexion]** : menu déroulant qui modifie la [connexion](/help/connections/overview.md). Les dimensions et mesures partagées sont toujours spécifiques à une seule connexion.
 * **[!UICONTROL Personnaliser le tableau]** : sélectionnez l’icône ![Personnaliser le tableau](/help/assets/icons/ColumnSetting.svg) pour afficher ou masquer les colonnes du tableau. Les options disponibles sont les suivantes :
-   * **[!UICONTROL Nom du champ]** : le nom de la dimension ou de la mesure partagée. Ce champ est toujours visible.
-   * **[!UICONTROL Type]** : indique si le composant est une dimension ou une mesure. Ce champ est toujours visible.
-   * **[!UICONTROL Type de jeu de données]** : le type de jeu de données. La plupart des jeux de données sont des jeux de données d’événement.
-   * **[!UICONTROL Partagé dans la vue de données]** : toutes les vues de données avec lesquelles ce composant est partagé. Ce champ est toujours visible. Sélectionnez le lien pour ouvrir une boîte de dialogue modale qui répertorie toutes les vues de données dans lesquelles ce composant est disponible.
-   * **[!UICONTROL Jeux de données]** : tous les jeux de données inclus dans chaque vue de données avec laquelle ce composant est partagé. Sélectionnez le lien pour ouvrir une boîte de dialogue modale qui répertorie tous les jeux de données pour le composant.
-   * **[!UICONTROL Créé par]** : nom de la personne qui a créé ou importé le composant dans l’interface des mesures et dimensions partagées.
-   * **[!UICONTROL Type de schéma]** : format dans lequel les données sont stockées. Par exemple, `string`, `double` ou `boolean`.
-   * **[!UICONTROL ID du composant]** : ID du composant de la dimension ou de la mesure. Tous les composants qui partagent le même ID de composant dans cette interface doivent être examinés et dédupliqués.
-   * **[!UICONTROL Schéma]** : chemin d’accès au schéma pour la dimension ou la mesure. Par exemple : `web.webPageDetails.URL`.
-   * **[!UICONTROL Description]** : [description](/help/data-views/component-settings/overview.md) du composant.
-   * **[!UICONTROL Libellés de contexte]** : les [libellés de contexte](/help/data-views/component-settings/overview.md) du composant.
-   * **[!UICONTROL Inclure/exclure des valeurs]** : répertorie le nombre de règles tel que spécifié sous [Inclure/exclure des valeurs](/help/data-views/component-settings/include-exclude-values.md).
-   * **[!UICONTROL Libellés d’utilisation des données]** : [libellés d’utilisation des données](https://experienceleague.adobe.com/fr/docs/experience-platform/data-governance/labels/overview) pour le champ de schéma.
-   * **[!UICONTROL Obsolète]** : indique si l’indicateur obsolète est défini.
-   * **[!UICONTROL Format]** : format dans lequel les valeurs apparaissent. Les booléens apparaissent généralement sous la forme `True | False`, les mesures apparaissent généralement sous la forme `Decimal`, etc.
-   * **[!UICONTROL Déduplication des mesures]** : paramètres [Déduplication des mesures](/help/data-views/component-settings/metric-deduplication.md) du composant.
-   * **[!UICONTROL Comportement]** : paramètres [Comportement](/help/data-views/component-settings/behavior.md) du composant.
-   * **[!UICONTROL Attribution]** : paramètres [Attribution](/help/data-views/component-settings/attribution.md) du composant.
-   * **[!UICONTROL Option Aucune valeur]** : le du composant [Aucune option de valeur](/help/data-views/component-settings/no-value-options.md).
-   * **[!UICONTROL Regroupement de valeurs]** : paramètres [Regroupement de valeurs](/help/data-views/component-settings/value-bucketing.md) du composant.
-   * **[!UICONTROL Persistance]** : paramètres [Persistance](/help/data-views/component-settings/persistence.md) du composant.
-   * **[!UICONTROL Minuscules]** : indique si les minuscules du composant sont activées en fonction des paramètres [Comportement](/help/data-views/component-settings/behavior.md) du composant.
-   * **[!UICONTROL Substring]** : paramètres [Substring](/help/data-views/component-settings/substring.md) du composant.
-   * **[!UICONTROL Groupe de données de résumé]** : paramètres du [groupe de données de résumé](/help/data-views/component-settings/summary-data-group.md) du composant.
-   * **[!UICONTROL Date de création]** : date à laquelle le composant a été créé ou importé.
-   * **[!UICONTROL Dernière modification]** : si le composant a été modifié après sa création, date de sa dernière modification.
+  * **[!UICONTROL Nom du champ]** : le nom de la dimension ou de la mesure partagée. Ce champ est toujours visible.
+  * **[!UICONTROL Type]** : indique si le composant est une dimension ou une mesure. Ce champ est toujours visible.
+  * **[!UICONTROL Type de jeu de données]** : le type de jeu de données. La plupart des jeux de données sont des jeux de données d’événement.
+  * **[!UICONTROL Partagé dans la vue de données]** : toutes les vues de données avec lesquelles ce composant est partagé. Ce champ est toujours visible. Sélectionnez le lien pour ouvrir une boîte de dialogue modale qui répertorie toutes les vues de données dans lesquelles ce composant est disponible.
+  * **[!UICONTROL Jeux de données]** : tous les jeux de données inclus dans chaque vue de données avec laquelle ce composant est partagé. Sélectionnez le lien pour ouvrir une boîte de dialogue modale qui répertorie tous les jeux de données pour le composant.
+  * **[!UICONTROL Créé par]** : nom de la personne qui a créé ou importé le composant dans l’interface des mesures et dimensions partagées.
+  * **[!UICONTROL Type de schéma]** : format dans lequel les données sont stockées. Par exemple, `string`, `double` ou `boolean`.
+  * **[!UICONTROL ID du composant]** : ID du composant de la dimension ou de la mesure. Tous les composants qui partagent le même ID de composant dans cette interface doivent être examinés et dédupliqués.
+  * **[!UICONTROL Schéma]** : chemin d’accès au schéma pour la dimension ou la mesure. Par exemple : `web.webPageDetails.URL`.
+  * **[!UICONTROL Description]** : [description](/help/data-views/component-settings/overview.md) du composant.
+  * **[!UICONTROL Libellés de contexte]** : les [libellés de contexte](/help/data-views/component-settings/overview.md) du composant.
+  * **[!UICONTROL Inclure/exclure des valeurs]** : répertorie le nombre de règles tel que spécifié sous [Inclure/exclure des valeurs](/help/data-views/component-settings/include-exclude-values.md).
+  * **[!UICONTROL Libellés d’utilisation des données]** : [libellés d’utilisation des données](https://experienceleague.adobe.com/fr/docs/experience-platform/data-governance/labels/overview) pour le champ de schéma.
+  * **[!UICONTROL Obsolète]** : indique si l’indicateur obsolète est défini.
+  * **[!UICONTROL Format]** : format dans lequel les valeurs apparaissent. Les booléens apparaissent généralement sous la forme `True | False`, les mesures apparaissent généralement sous la forme `Decimal`, etc.
+  * **[!UICONTROL Déduplication des mesures]** : paramètres [Déduplication des mesures](/help/data-views/component-settings/metric-deduplication.md) du composant.
+  * **[!UICONTROL Comportement]** : paramètres [Comportement](/help/data-views/component-settings/behavior.md) du composant.
+  * **[!UICONTROL Attribution]** : paramètres [Attribution](/help/data-views/component-settings/attribution.md) du composant.
+  * **[!UICONTROL Option Aucune valeur]** : le du composant [Aucune option de valeur](/help/data-views/component-settings/no-value-options.md).
+  * **[!UICONTROL Regroupement de valeurs]** : paramètres [Regroupement de valeurs](/help/data-views/component-settings/value-bucketing.md) du composant.
+  * **[!UICONTROL Persistance]** : paramètres [Persistance](/help/data-views/component-settings/persistence.md) du composant.
+  * **[!UICONTROL Minuscules]** : indique si les minuscules du composant sont activées en fonction des paramètres [Comportement](/help/data-views/component-settings/behavior.md) du composant.
+  * **[!UICONTROL Substring]** : paramètres [Substring](/help/data-views/component-settings/substring.md) du composant.
+  * **[!UICONTROL Groupe de données de résumé]** : paramètres du [groupe de données de résumé](/help/data-views/component-settings/summary-data-group.md) du composant.
+  * **[!UICONTROL Date de création]** : date à laquelle le composant a été créé ou importé.
+  * **[!UICONTROL Dernière modification]** : si le composant a été modifié après sa création, date de sa dernière modification.
 * **[!UICONTROL Historique des tâches]** : si vous importez ou partagez un grand nombre de composants, une tâche est automatiquement créée. Sélectionnez l’icône ![Icône Historique](/help/assets/icons/History.svg) pour ouvrir une fenêtre modale qui affiche toutes les instances d’importation de dimensions et de mesures à partir de vues de données individuelles. Si aucune de vos actions d’importation ou de partage n’est suffisamment volumineuse pour déclencher une tâche, ce bouton n’apparaît pas.
 
 ## Modifier des composants ou partager des composants avec des vues de données
