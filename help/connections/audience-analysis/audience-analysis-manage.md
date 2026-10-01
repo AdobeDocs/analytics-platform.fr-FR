@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 5%
+source-wordcount: '296'
+ht-degree: 2%
 ---
 # Gestion des configurations d’analyse d’audience{#manage-audience-analysis}
 
@@ -65,9 +65,9 @@ Pour afficher vos configurations d’analyse d’audience existantes :
 
    * **[!UICONTROL Statut]** : le statut de la configuration. Les statuts possibles sont Terminé, En cours ou Échec. <!--true?-->
 
-   Vous pouvez masquer des colonnes en sélectionnant l’icône Colonne ![icône Colonne](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg), en désactivant les colonnes à masquer, puis en sélectionnant **[!UICONTROL Appliquer]**.
+   Vous pouvez masquer des colonnes en sélectionnant l’icône Colonne ![icône Colonne](/help/assets/icons2/ColumnSettings.svg), en désactivant les colonnes à masquer, puis en sélectionnant **[!UICONTROL Appliquer]**.
 
-1. (Facultatif) Pour filtrer la liste des configurations, sélectionnez l’icône **Filtrer** ![Filtre d’analyse d’audience](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg), puis filtrez selon l’un des critères suivants :
+1. (Facultatif) Pour filtrer la liste des configurations, sélectionnez l’icône **Filtrer** ![Filtre d’analyse d’audience](/help/assets/icons/Filter.svg), puis filtrez selon l’un des critères suivants :
 
    * **[!UICONTROL Connexion]**
 

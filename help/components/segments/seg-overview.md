@@ -7,25 +7,32 @@ role: User
 TQID: https://experienceleague.adobe.com/omsyiimc8b3EsGvJYb0V-jHqOxUp-8S7fFQ8dXUGUxs
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments, Segments (CJA)
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Insights
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: 1496
+source-wordcount: '1496'
 ht-degree: 99%
-
 ---
-
 # Vue d’ensemble de la segmentation
 
 Customer Journey Analytics vous permet de créer, de gérer, de partager et d’appliquer des segments d’audience puissants et ciblés à vos rapports. Les segments vous permettent d’identifier des sous-ensembles de personnes, de sessions ou d’événements en fonction de caractéristiques ou d’interactions. Les segments sont conçus comme des informations codifiées sur les audiences que vous pouvez créer en fonction de vos besoins spécifiques. Vous pouvez ensuite les vérifier, les modifier et les partager avec d’autres membres de votre équipe.
@@ -33,7 +40,7 @@ Customer Journey Analytics vous permet de créer, de gérer, de partager et d�
 Les segments peuvent être basés sur des :
 
 - attributs (type de navigateur, appareil, nombre de visites, pays, genre),
-- interactions (campagnes, recherche par mots-clés, moteur de recherche),
+- interactions (campagnes, recherche par mot-clé, moteur de recherche),
 - sorties et entrées (personnes provenant de Facebook, d’une page de destination définie, d’un domaine référent, d’un événement de géorepérage),
 - variables personnalisées (champ de formulaire, catégories définies, ID de client ou cliente),
 - et d’autres critères.
@@ -44,12 +51,12 @@ Utilisez le [gestionnaire de segments](seg-manage.md) pour gérer les segments.
 
 ## Préparer les segments
 
-Particulièrement en tant qu’administrateur ou administratrice, une préparation appropriée des segments améliore les chances que les segments soient utilisés. Tenez compte des points suivants lors de la préparation des segments :
+Particulièrement en tant qu’administrateur ou administratrice, une préparation appropriée des segments améliore les chances que les segments soient utilisés. Tenez compte des points suivants lors de la planification des segments :
 
 - **Audience** : qui va utiliser vos segments ? Veillez à fournir une bonne description du segment afin que l’audience comprenne :
-  - Quel est l’objet de ce segment ?
+  - Quel est l’objet de ce segment ?
 
-  - Quand dois-je utiliser ce segment ?
+  - Quand dois-je utiliser ce segment ?
 
 - **Portée** : quel [conteneur de segments](#segment-containers) représente le mieux les données que vous recherchez ? Utilisez le plus petit conteneur possible.
 
@@ -78,7 +85,7 @@ Les segments standard vous permettent d’identifier des données (personnes, se
 >
 >Vous devez disposer du package **Select** pour créer des segments séquentiels cross-canal. Contactez votre administrateur ou administratrice si vous ne savez pas de quel package Customer Journey Analytics vous disposez.
 
-Les segments séquentiels vous permettent d’identifier des données (personnes, sessions, événements) en fonction de la navigation (pages vues de l’ensemble de votre site, interactions avec des scènes sur votre application mobile ou à l’aide d’un menu via un boîtier TV). Les segments séquentiels vous permettent par exemple d’identifier ce qu’aime une personne et ce qu’elle évite. Utilisez l’opérateur logique Alors pour définir un segment séquentiel. Consultez [Segments séquentiels](seg-sequential-build.md) pour plus d’informations.
+Les segments séquentiels vous permettent d’identifier des données (personnes, sessions, événements) en fonction de la navigation (pages vues de l’ensemble de votre site, interactions avec des scènes sur votre application mobile ou à l’aide d’un menu via un boîtier TV). Les segments séquentiels vous permettent par exemple d’identifier ce qu’aime une personne et ce qu’elle évite. Utilisez l’opérateur logique Then pour définir un segment séquentiel. Consultez [Segments séquentiels](seg-sequential-build.md) pour plus d’informations.
 
 
 <!--
@@ -97,18 +104,18 @@ Les segments sont basés sur une hiérarchie au niveau de la personne, de la ses
 <table style="table-layout: fixed; border: none;" width="100%">
 
 <tr>
-<td style="background-color: #E5E4E2;" colspan="3" width="200" height="100"><img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_User_18_N.svg"/> Personne</td>
+<td style="background-color: #E5E4E2;" colspan="3" width="200" height="100"><img src="/help/assets/icons/User.svg"/> Personne</td>
 </tr>
 
 <tr>
 <td style="background-color: #E5E4E2;" width="200"></td>
-<td style="background-color: #D3D3D3;" colspan="2" width="200" height="100"><img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Visit_18_N.svg"/> Session</td>
+<td style="background-color: #D3D3D3;" colspan="2" width="200" height="100"><img src="/help/assets/icons/Visit.svg"/> Session</td>
 </tr>
 
 <tr>
 <td style="background-color: #E5E4E2;" width="200" height="100"></td>
 <td style="background-color: #D3D3D3;" width="200" height="100"></td>
-<td style="background-color: #C0C0C0;" width="200" height="100" colspan="1"><img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Events_18_N.svg"/> Événement</td>
+<td style="background-color: #C0C0C0;" width="200" height="100" colspan="1"><img src="/help/assets/icons/Events.svg"/> Événement</td>
 </tr>
 </table>
 
@@ -118,19 +125,19 @@ Les segments sont basés sur une hiérarchie au niveau de la personne, de la ses
 > 
 > - Dans Adobe Analytics, le conteneur **Personne** est connu sous le nom de conteneur **Visiteur ou visiteuse**.
 > - Dans Adobe Analytics, le conteneur **Session** est connu sous le nom de conteneur **Visite**.
-> - Dans Adobe Analytics, le conteneur **Événement** est connu sous le nom de conteneur **Accès**.
+> - Dans Adobe Analytics, le conteneur **Événement** est connu sous le nom de conteneur **Hit**.
 >
 
-Un segment définit des conditions pour segmenter des personnes, des sessions ou des événements en fonction de conditions. Par exemple, les conditions de segmentation des personnes sont basées sur leurs caractéristiques et leurs comportements de navigation. Pour ventiler davantage les données, vous pouvez segmenter des sessions spécifiques, des événements de page vue, des interactions avec l’écran, des choix de menu sur un décodeur, etc. Vous pouvez également segmenter les attributs que vous avez ingérés à partir d’un système CRM ou de fidélité. Le [créateur de segments](/help/components/segments/seg-builder.md) fournit une interface simple permettant de créer ces sous-ensembles et d’appliquer des conditions sous la forme de conteneurs imbriqués, selon la hiérarchie Personne, Session ou Événement.
+Un segment définit des conditions pour segmenter des personnes, des sessions ou des événements en fonction de certains critères. Par exemple, les conditions de segmentation des personnes sont basées sur leurs caractéristiques et leurs comportements de navigation. Pour ventiler davantage les données, vous pouvez segmenter des sessions spécifiques, des événements de page vue, des interactions avec l’écran, des choix de menu sur un décodeur, etc. Vous pouvez également segmenter les personnes en fonction des attributs que vous avez ingérés à partir d’un système de gestion de la relation client (CRM) ou de fidélité. Le [créateur de segments](/help/components/segments/seg-builder.md) fournit une interface simple permettant de créer ces sous-ensembles et d’appliquer des conditions sous la forme de conteneurs imbriqués, selon la hiérarchie Personne, Session ou Événement.
 
-L’architecture de conteneur utilisée dans le [créateur de segments](/help/components/segments/seg-builder.md) définit le conteneur Personne comme étant le plus englobant. Ce conteneur contient les données principales spécifiques à la personne dans les sessions et événements tels que les pages vues, les écrans d’applications mobiles ou les écrans de menus sur un décodeur. Un conteneur imbriqué Session vous permet de définir des règles pour ventiler les données d’une personne en fonction des sessions. Le conteneur imbriqué Événement vous permet de ventiler les informations d’une personne en fonction des interactions individuelles. Chaque conteneur permet de créer un rapport de l’historique d’une personne, de ses interactions ventilées par sessions ou de ses ventilations par événements individuels.
+L’architecture de conteneur utilisée dans le [créateur de segments](/help/components/segments/seg-builder.md) définit le conteneur Personne comme étant le plus englobant. Ce conteneur contient les données principales spécifiques à la personne dans les sessions et événements tels que les pages vues, les écrans d’applications mobiles ou les écrans de menus sur un décodeur. Un conteneur imbriqué Session vous permet de définir des règles pour répartir les données d’une personne en fonction des sessions. Le conteneur imbriqué Événement vous permet de ventiler les informations d’une personne en fonction des interactions individuelles. Chaque conteneur permet de créer un rapport sur l’historique d’une personne, sur ses interactions réparties par sessions ou sur ses événements individuels répartis.
 
 ### Conteneur Personne
 
 Le conteneur Personne comprend chaque session et chaque événement pour les personnes qui remplissent les critères de la condition spécifiée dans le conteneur. Lorsque vous définissez un segment avec une condition simple telle que `Page Name equals Checkout`, le conteneur Personne inclut alors :
 
 - toutes les personnes qui ont visité la page nommée `Checkout` ;
-- toutes les sessions de ces personnes ;
+- Toutes les sessions de ces personnes.
 - toutes les données d’événement de ces personnes.
 
 En tant que conteneur défini de la manière la plus large, les rapports générés au niveau du conteneur Personne renvoient des événements et des sessions de toutes les personnes qui remplissent les critères du segment. Le conteneur Personne est le plus susceptible de changer selon les périodes définies.
@@ -149,7 +156,7 @@ Le conteneur Session permet d’identifier les interactions de pages, les intera
 
 Le conteneur Session peut vous aider à répondre aux questions suivantes :
 
-- Combien de sessions ont impliqué des sources de données web et du centre d’appel ?
+- Combien de sessions ont impliqué des sources de données web et du centre d’appel ?
 - Quelles pages ont contribué à une conversion réussie en vente ?
 
 Les conteneurs Session incluent des valeurs basées sur l’occurrence par session :
@@ -164,11 +171,11 @@ Les vues de données dans Customer Journey Analytics vous permettent de détermi
 
 ### Conteneur Événement
 
-Le conteneur Événement définit les événements de page, d’application mobile ou autre que vous souhaitez inclure ou exclure d’un segment. Il s’agit du conteneur le plus restreint disponible. Il vous permet d’identifier des clics spécifiques, des pages vues et des clics sur un bouton dans une application mobile où une condition est vraie. Le conteneur Événement permet d’afficher un code de suivi unique ou d’isoler le comportement dans une zone particulière de votre application mobile. Vous pouvez également déterminer une valeur spécifique lorsqu’une action se produit, tel que le canal marketing lorsqu’une personne passe une commande. Lorsque vous définissez un segment avec une condition simple telle que `Page Name equals Checkout`, le conteneur Événement est résolu sur :
+Le conteneur Événement définit les événements de page, d’application mobile ou autre que vous souhaitez inclure ou exclure d’un segment. Il s’agit du conteneur le plus restreint disponible. Il vous permet d’identifier des clics spécifiques, des pages vues et des clics sur un bouton dans une application mobile où une condition est vraie. Le conteneur Événement permet d’afficher un code de suivi unique ou d’isoler le comportement dans une zone particulière de votre application mobile. Vous pouvez également déterminer une valeur spécifique lorsqu’une action se produit, telle que le canal marketing lorsqu’une personne passe une commande. Lorsque vous définissez un segment avec une condition simple telle que `Page Name equals Checkout`, le conteneur Événement est résolu sur :
 
 - Tous les événements de page vue pour lesquels le nom de la page est `Checkout`.
 
-Les conteneurs Événement incluent des répartitions de page unique basées sur des valeurs pour :
+Les conteneurs Événement incluent des répartitions pour une seule page basées sur des valeurs pour :
 
 - Produits
 - Propriétés de liste
@@ -186,13 +193,13 @@ Lorsque vous avez accès à [Customer Journey Analytics B2B Edition](/help/getti
 
 ### Conteneur Groupe logique
 
-Les conteneurs Groupe logique servent à regrouper des conditions dans un point de contrôle de segment séquentiel unique. Dans le cadre de la séquence, la logique définie dans le conteneur identifié comme [!UICONTROL Groupe logique] est évaluée après tout point de contrôle séquentiel précédent et avant tout point de contrôle séquentiel suivant. Pour plus d’informations, consultez [Groupe logique](seg-sequential-build.md#logic-group).
+Le conteneur Groupe logique permet de regrouper des conditions dans un point de contrôle de segment séquentiel unique. Dans le cadre de la séquence, la logique définie dans le conteneur identifié comme [!UICONTROL Groupe logique] est évaluée après tout point de contrôle séquentiel précédent et avant tout point de contrôle séquentiel suivant. Pour plus d’informations, consultez [Groupe logique](seg-sequential-build.md#logic-group).
 
 ### Imbriquer des conteneurs
 
 Lorsque vous créez des conteneurs dans d’autres conteneurs, vous créez un segment dans un segment. La logique suivante s’applique aux conteneurs imbriqués :
 
-1. Déterminez les données qui sont incluses à l’aide du conteneur le plus éloigné. Les données qui ne correspondent pas à cette règle externe sont exclues du rapport.
+1. Déterminez les données qui sont incluses à l’aide du conteneur le plus externe. Les données qui ne correspondent pas à cette règle externe sont exclues du rapport.
 2. Appliquez la définition de segment imbriqué aux données restantes. La définition de segment imbriqué NE s’applique PAS aux données exclues par la première définition.
 3. Répétez l’opération jusqu’à ce que toutes les définitions de segment de conteneur imbriqué aient été calculées. Les données restantes sont ensuite incluses dans le résultat et utilisées pour le reporting.
 

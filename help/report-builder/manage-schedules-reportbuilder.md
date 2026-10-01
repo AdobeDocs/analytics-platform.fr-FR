@@ -9,18 +9,20 @@ exl-id: 0a0427d9-223e-410b-a8ef-8601390d88aa
 TQID: https://experienceleague.adobe.com/HcKyD-v3I1hsxWwiDZJwgvO9pH9ifBVOjBapARdYQVQ
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Admin
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: 387
-ht-degree: 6%
-
+source-wordcount: '381'
+ht-degree: 4%
 ---
-
 # Gérer les classeurs planifiés
 
 Vous pouvez planifier le partage d’un classeur par e-mail ou en l’exportant vers une destination cloud, comme décrit dans les articles suivants :
@@ -49,7 +51,7 @@ Vous pouvez afficher et gérer tous les classeurs planifiés dans l’onglet **[
 
    * Sélectionnez l’icône de colonne ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) pour définir les colonnes à afficher.
 
-   * Sélectionnez l’icône de filtre ![icône de filtre](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg), puis sélectionnez [!UICONTROL **Tout afficher**] pour afficher tous les classeurs planifiés pour une organisation donnée.
+   * Sélectionnez l’icône de filtre ![icône de filtre](/help/assets/icons/Filter.svg), puis sélectionnez [!UICONTROL **Tout afficher**] pour afficher tous les classeurs planifiés pour une organisation donnée.
 
 1. Sélectionnez un ou plusieurs classeurs.
 

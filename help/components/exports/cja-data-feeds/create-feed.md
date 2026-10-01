@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 2391b13373992de30834f846da2fb7b71f5279ee
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: '4250'
-ht-degree: 31%
+source-wordcount: '4244'
+ht-degree: 30%
 ---
 # Créer un flux de données
 
@@ -129,7 +129,7 @@ Avant de créer un flux de données, il est important de comprendre les bases de
 
    Les segments que vous appliquez ici s’ajoutent aux segments qui peuvent déjà être appliqués dans votre vue de données.
 
-1. (Facultatif) Dans le rail de gauche, utilisez le champ **rechercher** pour localiser des composants spécifiques. Vous pouvez également sélectionner l’icône **Trier** ![Icône Trier les composants](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg) pour appliquer l’une des options de tri suivantes :
+1. (Facultatif) Dans le rail de gauche, utilisez le champ **rechercher** pour localiser des composants spécifiques. Vous pouvez également sélectionner l’icône **Trier** ![Icône Trier les composants](/help/assets/icons/SortOrderDown.svg) pour appliquer l’une des options de tri suivantes :
 
    | Option | Fonction |
    | --------- | ---------- |

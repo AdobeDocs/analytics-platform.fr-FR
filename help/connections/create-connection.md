@@ -33,9 +33,9 @@ topic_v2:
     internal-label: Troubleshooting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 6acb1ca076e28e8da4bbc1920837cea9216777e1
+source-git-commit: 91497f695a693fd15135dc5173e8a35537616e72
 workflow-type: tm+mt
-source-wordcount: '10738'
+source-wordcount: '10677'
 ht-degree: 89%
 ---
 # Créer ou modifier une connexion {#create-or-edit-a-connection}
@@ -560,7 +560,7 @@ Vous pouvez ajouter un ou plusieurs jeux de données Experience Platform lorsque
 
    | Colonne | Description |
    |---|---|
-   | **[!UICONTROL Jeu de données]** | Nom du jeu de données. Sélectionnez le nom pour accéder au jeu de données dans Experience Platform. Sélectionnez ![Info](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) pour afficher une fenêtre contextuelle contenant plus de détails sur le jeu de données. Vous pouvez sélectionner **[!UICONTROL Modifier dans Platform]** pour modifier le jeu de données directement dans Experience Platform. |
+   | **[!UICONTROL Jeu de données]** | Nom du jeu de données. Sélectionnez le nom pour accéder au jeu de données dans Experience Platform. Sélectionnez ![InfoOutline](/help/assets/icons/InfoOutline.svg) pour afficher une fenêtre contextuelle contenant plus de détails sur le jeu de données. Vous pouvez sélectionner **[!UICONTROL Modifier dans Platform]** pour modifier le jeu de données directement dans Experience Platform. |
    | **[!UICONTROL Type de jeu de données]** | Le type de jeu de données : [Événement](#event-dataset), [Profil](#profile-dataset), [Recherche](#lookup-dataset), [Résumé](#summary-dataset), [Ad hoc](#ad-hoc-dataset) ou [Relationnel](#relational-dataset). |
    | **[!UICONTROL Nombre d’enregistrements]** | Total des enregistrements du mois précédent pour le jeu de données dans Experience Platform. |
    | **[!UICONTROL Schéma]** | Schéma du jeu de données. Sélectionnez le nom pour vous diriger vers le schéma dans Experience Platform. |
@@ -568,10 +568,10 @@ Vous pouvez ajouter un ou plusieurs jeux de données Experience Platform lorsque
    | **[!UICONTROL Identifiant du jeu de données]** | ID du jeu de données. |
    | **[!UICONTROL Dernière mise à jour]** | Dernier horodatage mis à jour du jeu de données. |
 
-   * Pour modifier les colonnes affichées de la liste des jeux de données, sélectionnez ![Paramètres des colonnes](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg) et sélectionnez les colonnes à afficher dans la boîte de dialogue [!UICONTROL Personnaliser le tableau].
-   * Pour rechercher un jeu de données spécifique, utilisez le champ de recherche ![Rechercher](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg).
-   * Pour basculer entre l’affichage ou le masquage des jeux de données sélectionnés, sélectionnez ![Sélectionner](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SelectBoxAll_18_N.svg), **[!UICONTROL Masquer la sélection]** ou **[!UICONTROL Afficher la sélection]**.
-   * Pour supprimer un jeu de données de la liste des jeux de données sélectionnés, utilisez ![Fermer](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg). Pour supprimer tous les jeux de données sélectionnés, sélectionnez **[!UICONTROL Effacer tout]**.
+   * Pour modifier les colonnes affichées pour la liste des jeux de données, sélectionnez ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) et sélectionnez les colonnes à afficher dans la boîte de dialogue [!UICONTROL Personnaliser le tableau].
+   * Pour rechercher un jeu de données spécifique, utilisez le champ de recherche ![Rechercher](/help/assets/icons/Search.svg).
+   * Pour afficher ou masquer les jeux de données sélectionnés, sélectionnez ![SelectBoxAll](/help/assets/icons/SelectBoxAll.svg) **[!UICONTROL Hide selected]** ou **[!UICONTROL Show selected]**.
+   * Pour supprimer un jeu de données de la liste des jeux de données sélectionnés, utilisez ![Fermer](/help/assets/icons2/Close.svg). Pour supprimer tous les jeux de données sélectionnés, sélectionnez **[!UICONTROL Effacer tout]**.
    * Pour afficher les détails d’un jeu de données, sélectionnez ![Aperçu des informations](/help/assets/icons/InfoOutline.svg).
 
 
@@ -623,7 +623,7 @@ Vous pouvez ajouter un ou plusieurs jeux de données Experience Platform lorsque
 
    | Colonne | Description |
    |---|---|
-   | **[!UICONTROL Jeu de données]** | Nom du jeu de données. Sélectionnez le nom pour accéder au jeu de données dans Experience Platform. Sélectionnez ![Info](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) pour afficher une fenêtre contextuelle contenant plus de détails sur le jeu de données. Vous pouvez sélectionner **[!UICONTROL Modifier dans Platform]** pour modifier le jeu de données directement dans Experience Platform. |
+   | **[!UICONTROL Jeu de données]** | Nom du jeu de données. Sélectionnez le nom pour accéder au jeu de données dans Experience Platform. Sélectionnez ![Info](/help/assets/icons/InfoOutline.svg) pour afficher une fenêtre contextuelle contenant plus de détails sur le jeu de données. Vous pouvez sélectionner **[!UICONTROL Modifier dans Platform]** pour modifier le jeu de données directement dans Experience Platform. |
    | **[!UICONTROL Type de jeu de données]** | Le type de jeu de données : [Événement](#event-dataset), [Profil](#profile-dataset), [Recherche](#lookup-dataset), [Résumé](#summary-dataset), [Ad hoc](#ad-hoc-dataset) ou [Relationnel](#relational-dataset). |
    | **[!UICONTROL Nombre d’enregistrements]** | Total des enregistrements du mois précédent pour le jeu de données dans Experience Platform. |
    | **[!UICONTROL Schéma]** | Schéma du jeu de données. Sélectionnez le nom pour vous diriger vers le schéma dans Experience Platform. |
@@ -631,10 +631,10 @@ Vous pouvez ajouter un ou plusieurs jeux de données Experience Platform lorsque
    | **[!UICONTROL Identifiant du jeu de données]** | ID du jeu de données. |
    | **[!UICONTROL Dernière mise à jour]** | Dernier horodatage mis à jour du jeu de données. |
 
-   * Pour modifier les colonnes affichées de la liste des jeux de données, sélectionnez ![Paramètres des colonnes](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg) et sélectionnez les colonnes à afficher dans la boîte de dialogue [!UICONTROL Personnaliser le tableau].
-   * Pour rechercher un jeu de données spécifique, utilisez le champ de recherche ![Rechercher](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg).
-   * Pour basculer entre l’affichage ou le masquage des jeux de données sélectionnés, sélectionnez ![Sélectionner](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SelectBoxAll_18_N.svg), **[!UICONTROL Masquer la sélection]** ou **[!UICONTROL Afficher la sélection]**.
-   * Pour supprimer un jeu de données de la liste des jeux de données sélectionnés, utilisez ![Fermer](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg). Pour supprimer tous les jeux de données sélectionnés, sélectionnez **[!UICONTROL Effacer tout]**.
+   * Pour modifier les colonnes affichées de la liste des jeux de données, sélectionnez ![Paramètres des colonnes](/help/assets/icons/ColumnSetting.svg) et sélectionnez les colonnes à afficher dans la boîte de dialogue [!UICONTROL Personnaliser le tableau].
+   * Pour rechercher un jeu de données spécifique, utilisez le champ de recherche ![Rechercher](/help/assets/icons/Search.svg).
+   * Pour basculer entre l’affichage ou le masquage des jeux de données sélectionnés, sélectionnez ![Sélectionner](/help/assets/icons/SelectBoxAll.svg), **[!UICONTROL Masquer la sélection]** ou **[!UICONTROL Afficher la sélection]**.
+   * Pour supprimer un jeu de données de la liste des jeux de données sélectionnés, utilisez ![Fermer](/help/assets/icons/Close.svg). Pour supprimer tous les jeux de données sélectionnés, sélectionnez **[!UICONTROL Effacer tout]**.
    * Pour afficher les détails d’un jeu de données, sélectionnez ![Aperçu des informations](/help/assets/icons/InfoOutline.svg).
 
 

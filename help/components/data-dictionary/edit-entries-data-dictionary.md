@@ -7,27 +7,36 @@ exl-id: 2d232811-e34a-4667-819c-cbe2a3e72702
 TQID: https://experienceleague.adobe.com/MPtF2ZOWbjayiJtMoTS705nWS-W9OdTmNOp3Wagi6io
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments, Segments (CJA)
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
   - id: df28738e-9c71-4aa8-929e-edde22340cc6
+    internal-label: Data Dictionary
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Experimentation
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: 1301
-ht-degree: 64%
-
+source-wordcount: '1247'
+ht-degree: 63%
 ---
-
 # Modifier les entrées de composant
 
 Les administrateurs et administratrices de Customer Journey Analytics peuvent modifier les entrées de composant dans le dictionnaire de données pour une vue de données donnée. Toutes les modifications apportées sont visibles par tous les utilisateurs de la vue de données.
@@ -48,38 +57,38 @@ Pour modifier un composant dans le dictionnaire de données :
 
    Le type de composant peut être identifié à la fois par couleur et par icône.
 
-   * **Les dimensions** icône ![Dimension](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) sont orange
+   * **Les dimensions** icône ![Dimension](/help/assets/icons/Data.svg) sont orange
 
-   * **Segments** ![icône de segment](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) sont bleus
+   * **Segments** ![icône de segment](/help/assets/icons/Segmentation.svg) sont bleus
 
-   * **périodes** ![icône de période](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) sont violettes
+   * **périodes** ![icône de période](/help/assets/icons/Calendar.svg) sont violettes
 
-   * **Mesures** ![icône de mesure](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) sont verts
+   * **Mesures** ![icône de mesure](/help/assets/icons/Event.svg) sont verts
 
    * L’icône **&#x200B;**&#x200B;l’icône ![Adobe](assets/default-calc-metric-icon.png) indique soit un modèle de mesure calculée, soit un modèle de segment
 
-   * **Icône Calculateur** ![Icône Calculateur](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) indique une mesure calculée qui a été créée par un administrateur ou une administratrice Analytics de votre entreprise
+   * **Icône Calculateur** ![Icône Calculateur](/help/assets/icons/Calculator.svg) indique une mesure calculée qui a été créée par un administrateur ou une administratrice Analytics de votre entreprise
 
-1. (Facultatif) Sélectionnez l’icône **Filtrer** ![icône du filtre du dictionnaire de données](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg), puis sélectionnez l’une des options de filtre suivantes pour filtrer la liste des composants :
+1. (Facultatif) Sélectionnez l’icône **Filtrer** ![icône du filtre du dictionnaire de données](/help/assets/icons/Filter.svg), puis sélectionnez l’une des options de filtre suivantes pour filtrer la liste des composants :
 
    | Option | Fonction |
    |---------|----------|
-   | **[!UICONTROL Approuvés]** | Afficher uniquement les composants marqués comme approuvés par l’administration. |
+   | **[!UICONTROL Approuvés]** | Affiche uniquement les composants marqués comme approuvés par un administrateur ou une administratrice. |
    | **[!UICONTROL Favoris]** | Affichez uniquement les composants figurant dans votre liste de favoris. Pour plus d’informations sur l’ajout de composants à votre liste de favoris, consultez la section [Présentation des composants](/help/components/overview.md). |
    | **[!UICONTROL Dimensions]** | Afficher uniquement les composants qui sont des dimensions. (Cette option est également disponible dans l’onglet **[!UICONTROL Segments rapides]** lorsque vous accédez au dictionnaire de données pour la première fois). |
    | **[!UICONTROL Mesures]** | Afficher uniquement les composants qui sont des mesures. (Cette option est également disponible dans l’onglet **[!UICONTROL Segments rapides]** lorsque vous accédez au dictionnaire de données pour la première fois). |
    | **[!UICONTROL Segments]** | Afficher uniquement les composants qui sont des segments. (Cette option est également disponible dans l’onglet **[!UICONTROL Segments rapides]** lorsque vous accédez au dictionnaire de données pour la première fois). |
    | **[!UICONTROL Périodes]** | Afficher uniquement les composants qui sont des périodes. (Cette option est également disponible dans l’onglet **[!UICONTROL Segments rapides]** lorsque vous accédez au dictionnaire de données pour la première fois). |
-   | **[!UICONTROL Tout afficher]** | Permet d’afficher tous les composants. Cette option est réservée à l’administration. |
-   | **[!UICONTROL Non approuvé]** | Permet de n’afficher que les composants qui n’ont pas encore été marqués comme approuvés par l’administration. Cette option est utile pour l’administration pour identifier les composants qui doivent être examinés et approuvés. Cette option est réservée à l’administration. |
-   | **[!UICONTROL Description manquante]** | Afficher uniquement les composants qui n’ont pas encore de description dans le champ de description. Cette option est réservée à l’administration. |
-   | **[!UICONTROL Afficher les doublons]** | Afficher uniquement les composants portant le même nom ou la même description qu’un autre composant de la vue de données sélectionnée. Cela inclut les composants que vous créez, ainsi que ceux fournis par Adobe. Les noms ou descriptions doivent correspondre exactement pour apparaître comme des doublons. Cette option est réservée à l’administration. |
-   | **[!UICONTROL Aucune donnée récente]** | Afficher uniquement les composants qui n’ont collecté aucune donnée au cours des 90 derniers jours. Cette option est réservée à l’administration. |
-   | **[!UICONTROL Création Adobe]** <!-- I don't see this option--> | Afficher uniquement les composants créés par Adobe. Par exemple, **&#x200B;**. Les composants créés par l’administration ou une autre personne de votre organisation ne s’affichent pas. |
+   | **[!UICONTROL Tout afficher]** | Permet d’afficher tous les composants. Cette option est réservée aux administrateurs et administratrices. |
+   | **[!UICONTROL Non approuvé]** | Permet d’afficher uniquement les composants qui n’ont pas encore été marqués comme approuvés par un administrateur ou une administratrice. En tant qu’administrateur ou administratrice, cette option est utile pour identifier les composants qui doivent être examinés et approuvés. Cette option est réservée aux administrateurs et administratrices. |
+   | **[!UICONTROL Description manquante]** | Afficher uniquement les composants qui n’ont pas encore de description dans le champ de description. Cette option est réservée aux administrateurs et administratrices. |
+   | **[!UICONTROL Afficher les doublons]** | Afficher uniquement les composants portant le même nom ou la même description qu’un autre composant de la vue de données sélectionnée. Cela inclut les composants que vous créez, ainsi que ceux fournis par Adobe. Les noms ou descriptions doivent correspondre exactement pour apparaître comme des doublons. Cette option est réservée aux administrateurs et administratrices. |
+   | **[!UICONTROL Aucune donnée récente]** | Afficher uniquement les composants qui n’ont collecté aucune donnée au cours des 90 derniers jours. Cette option est réservée aux administrateurs et administratrices. |
+   | **[!UICONTROL Création Adobe]** <!-- I don't see this option--> | Afficher uniquement les composants créés par Adobe. Par exemple, **&#x200B;**. Les composants créés par un administrateur ou un autre utilisateur de votre organisation ne sont pas affichés. |
 
    {style="table-layout:auto"}
 
-1. (Facultatif) Sélectionnez l’icône **Trier** ![Icône Trier les composants](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg), puis sélectionnez l’une des options de segment suivantes pour trier la liste des composants :
+1. (Facultatif) Sélectionnez l’icône **Trier** ![Icône Trier les composants](/help/assets/icons/SortOrderDown.svg), puis sélectionnez l’une des options de segment suivantes pour trier la liste des composants :
 
    | Option | Fonction |
    |---------|----------|
@@ -91,7 +100,7 @@ Pour modifier un composant dans le dictionnaire de données :
 
 1. Dans la liste des composants, sélectionnez le composant à modifier.
 
-1. Sélectionnez l’icône **Modifier** ![icône Modifier le dictionnaire de données](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) en regard du nom du composant.
+1. Sélectionnez l’icône **Modifier** ![icône Modifier le dictionnaire de données](/help/assets/icons/Edit.svg) en regard du nom du composant.
 
 1. Modifiez l’une des informations suivantes sur le composant :
 
@@ -100,10 +109,10 @@ Pour modifier un composant dans le dictionnaire de données :
    | **[!UICONTROL Approuvés]** | <p>Indique que le composant a été révisé et approuvé par l’administration.</p><p>Un bouton **[!UICONTROL Désapprouver]** apparaît pour l’administration. Si vous sélectionnez cette option, le composant est marqué comme « Non approuvé » pour les utilisateurs et utilisatrices.</p> |
    | **[!UICONTROL Non approuvé]** | <p>Indique que le composant n’a pas encore été révisé et approuvé par l’administration.</p><p>Un bouton dédié permet à l’administration d’**[!UICONTROL Approuver]** le composant. Celui-ci est alors marqué comme « Approuvé » pour les utilisateurs et utilisatrices.</p> |
    | **[!UICONTROL Description]** | Décrit la fonction prévue du composant. (Ces informations sont ajoutées par l’administration Analytics, comme décrit dans la section [Ajouter des descriptions de composant](/help/components/add-component-descriptions.md)). |
-   | **[!UICONTROL Fréquemment utilisé avec]** | <p>Affiche les composants les plus couramment utilisés avec le composant que vous visualisez actuellement.</p><p>Jusqu’à 5 composants peuvent s’afficher parmi les 5 types de composants principaux : mesure, mesure calculée, Dimension, segment et période.</p><p>Cette liste est basée sur les données des 90 derniers jours. Seuls les composants que vous êtes en droit de consulter s’affichent.</p><p>L’administration peut personnaliser les composants visibles par les utilisateurs et utilisatrices au sein de cette section en sélectionnant les composants souhaités dans les champs déroulants **[!UICONTROL Toujours inclure]** et **[!UICONTROL Toujours exclure]**. Avant de procéder à la sélection des composants visibles par les utilisateurs et utilisatrices, appliquez le segment **Tout afficher** afin de vous assurer de voir tous les composants, non partagés avec vous, qui ont pu être ajoutés par un autre administrateur ou une autre administratrice.<!-- Soon we will make it so any fields that an admin doesn't have access to will be greyed out, and then they can enable the Show all segment to make it editable. --></p> |
+   | **[!UICONTROL Fréquemment utilisé avec]** | <p>Affiche les composants les plus couramment utilisés avec le composant que vous visualisez actuellement.</p><p>Jusqu’à 5 composants peuvent s’afficher parmi les 5 types de composants principaux : mesure, mesure calculée, dimension, segment et période.</p><p>Cette liste est basée sur les données des 90 derniers jours. Seuls les composants que vous êtes en droit de consulter s’affichent.</p><p>L’administration peut personnaliser les composants visibles par les utilisateurs et utilisatrices au sein de cette section en sélectionnant les composants souhaités dans les champs déroulants **[!UICONTROL Toujours inclure]** et **[!UICONTROL Toujours exclure]**. Avant de procéder à la sélection des composants visibles par les utilisateurs et utilisatrices, appliquez le segment **Tout afficher** afin de vous assurer de voir tous les composants, non partagés avec vous, qui ont pu être ajoutés par un autre administrateur ou une autre administratrice.<!-- Soon we will make it so any fields that an admin doesn't have access to will be greyed out, and then they can enable the Show all segment to make it editable. --></p> |
    | **[!UICONTROL Similaire à]** | <p>Permet d’afficher les composants dotés de noms similaires au composant que vous visualisez actuellement.</p><p>Jusqu’à 5 composants peuvent s’afficher parmi les 5 types de composants principaux : mesure, mesure calculée, Dimension, segment et période.</p><p>Seuls les composants que vous êtes autorisé à consulter s’affichent.</p><p>Tous les composants en double de votre vue de données s’afficheront ici. L’administration d’Analytics doit identifier et supprimer tous les composants en double, comme décrit dans la section [Surveiller l’intégrité du dictionnaire de données](/help/components/data-dictionary/monitor-data-dictionary-health.md).</p><p>L’administration peut personnaliser les composants visibles par les utilisateurs et utilisatrices au sein de cette section en sélectionnant les composants souhaités dans les champs déroulants **[!UICONTROL Toujours inclure]** et **[!UICONTROL Toujours exclure]**. Avant de procéder à la sélection des composants visibles par les utilisateurs et utilisatrices, appliquez le segment **Tout afficher** afin de vous assurer de voir tous les composants, non partagés avec vous, qui ont pu être ajoutés par un autre administrateur ou une autre administratrice.<!-- Soon we will make it so any fields that an admin doesn't have access to will be greyed out, and then they can enable the Show all segment to make it editable. --></p><p>**Remarque :** actuellement, la section **Similaire à** comprend uniquement les composants que vous créez, et non ceux fournis par Adobe. Les composants fournis par Adobe seront ajoutés dans une version ultérieure.</p> |
    | **[!UICONTROL Compatibilité des produits]** | Indique où, dans Customer Journey Analytics, cette mesure calculée peut être utilisée. <p>Les valeurs possibles sont les suivantes :</p><ul><li>**[!UICONTROL Partout dans Customer Journey Analytics]** : la mesure calculée peut être utilisée dans l’ensemble de Customer Journey Analytics, y compris dans Analysis Workspace, Report Builder, etc.</li><li>**[!UICONTROL Partout dans Customer Journey Analytics (à l’exclusion de l’expérimentation)]** : la mesure calculée peut être utilisée dans tout Customer Journey Analytics, sauf dans le panneau Expérimentation.</li> <p>Pour plus d’informations sur les critères qui déterminent si une mesure calculée peut être utilisée avec l’expérimentation, voir [Utiliser des mesures calculées dans le panneau Expérimentation](/help/analysis-workspace/c-panels/experimentation.md#use-calculated-metrics-in-the-experimentation-panel) dans [panneau Expérimentation](/help/analysis-workspace/c-panels/experimentation.md).</p></ul> |
-   | **[!UICONTROL Balises]** | Affiche toutes les balises associées au composant. L’administration peut ajouter des balises lors de la modification du composant. |
+   | **[!UICONTROL Balises]** | Affiche toutes les balises associées au composant. Les utilisateurs et utilisatrices disposant d’un accès d’administrateur peuvent ajouter des balises lors de la modification du composant. |
    | **[!UICONTROL Type de composant]** | Indique le type du composant : dimension, mesure, segment ou période. |
    | **[!UICONTROL Créé par]** | Affiche le nom de l’utilisateur ou de l’utilisatrice ayant créé le composant. |
    | **[!UICONTROL Aperçu]** | Affiche un aperçu de l’apparence du composant dans Analysis Workspace. |
@@ -111,4 +120,4 @@ Pour modifier un composant dans le dictionnaire de données :
 
    {style="table-layout:auto"}
 
-1. Cliquez sur l’icône **Enregistrer** ![icône Enregistrer le dictionnaire de données](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SaveFloppy_18_N.svg) pour enregistrer vos modifications.
+1. Cliquez sur l’icône **Enregistrer** ![icône Enregistrer le dictionnaire de données](/help/assets/icons/SaveFloppy.svg) pour enregistrer vos modifications.

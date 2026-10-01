@@ -19,10 +19,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 5%
+source-wordcount: '360'
+ht-degree: 2%
 ---
 # Afficher des prévisions
 
@@ -32,7 +32,7 @@ Vous pouvez afficher des prévisions dans un tableau à structure libre ou dans 
 
 Vous pouvez afficher des prévisions dans un tableau à structure libre de série temporelle. Lorsque l’option [!UICONTROL Afficher la prévision] est activée pour le tableau à structure libre dans [Préférences utilisateur](../user-preferences.md), la prévision s’affiche automatiquement pour la première colonne de mesures ajoutée au tableau. Pour toute colonne supplémentaire :
 
-1. Sélectionnez l’icône des paramètres de colonne ![Paramètres de colonne](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) dans l’en-tête de colonne, puis assurez-vous que **[!UICONTROL Afficher la prévision]** est sélectionné dans la liste des options. Pour plus d’informations, consultez [Paramètres de colonne](../visualizations/freeform-table/column-row-settings/column-settings.md).
+1. Sélectionnez l’icône des paramètres de colonne ![Paramètres de colonne](/help/assets/icons2/Settings.svg) dans l’en-tête de colonne, puis assurez-vous que **[!UICONTROL Afficher la prévision]** est sélectionné dans la liste des options. Pour plus d’informations, consultez [Paramètres de colonne](../visualizations/freeform-table/column-row-settings/column-settings.md).
 
 1. Cliquez en dehors du menu **[!UICONTROL Paramètres de colonne]** pour enregistrer le paramètre et afficher le tableau mis à jour.
 
@@ -48,7 +48,7 @@ Les prévisions sont présentées dans le tableau comme suit :
 
 Un graphique en courbes est la seule visualisation qui vous permet d’afficher des prévisions.
 
-1. Sélectionnez l’icône des paramètres ![Paramètres de colonne](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) dans l’en-tête de visualisation, puis assurez-vous que **[!UICONTROL Afficher la prévision]** est sélectionné dans la liste des options.
+1. Sélectionnez l’icône des paramètres ![Paramètres de colonne](/help/assets/icons2/Settings.svg) dans l’en-tête de visualisation, puis assurez-vous que **[!UICONTROL Afficher la prévision]** est sélectionné dans la liste des options.
 
 1. (Facultatif) Pour permettre aux prévisions de mettre correctement à l’échelle le graphique, sélectionnez **[!UICONTROL Autoriser la prévision à mettre à l’échelle l’axe Y]**. Cette option n’est pas sélectionnée par défaut, car elle peut parfois rendre un graphique moins lisible.
 

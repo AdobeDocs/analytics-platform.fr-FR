@@ -32,9 +32,9 @@ topic_v2:
     internal-label: Customer journeys
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '899'
 ht-degree: 93%
 ---
 # Ajouter le jeu de données du connecteur source Analytics à la connexion {#upgrade-source-connector-dataset}
@@ -115,7 +115,7 @@ Pour ajouter le jeu de données créé automatiquement à la même connexion que
 
 1. Dans la section **[!UICONTROL Renvoi du jeu de données]**, sélectionnez **[!UICONTROL Demander un renvoi]**.
 
-1. Définissez la période que vous souhaitez inclure dans le renvoi de la connexion à Customer Journey Analytics en saisissant les dates de début et de fin ou en sélectionnant l’icône de calendrier ![Calendrier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg).
+1. Définissez la période que vous souhaitez inclure dans le renvoi de la connexion à Customer Journey Analytics en saisissant les dates de début et de fin ou en sélectionnant l’icône de calendrier ![Calendrier](/help/assets/icons/Calendar.svg).
 
    Soyez explicite lors de la spécification des dates de renvoi que vous demandez. Selon plusieurs facteurs, vous pouvez effectuer l’une des opérations suivantes :
 

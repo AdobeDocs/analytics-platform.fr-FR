@@ -37,9 +37,9 @@ topic_v2:
     internal-label: Implementation
   - id: beb7a3c1-66ab-4786-b879-7621375b3c40
     internal-label: Email marketing
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: '10602'
+source-wordcount: '10578'
 ht-degree: 98%
 ---
 # Champs dérivés {#derived-fields}
@@ -877,10 +877,10 @@ Vous définissez un champ dérivé `Page Name (updated)`. Utilisez la fonction [
 
 Les fonctionnalités supplémentaires suivantes sont disponibles dans l’interface de règle Classifier :
 
-- Pour effacer rapidement toutes les valeurs du tableau, sélectionnez ![Effacer](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Erase_18_N.svg) **[!UICONTROL Effacer toutes les valeurs du tableau]**.
-- Pour charger un fichier CSV contenant les valeurs d’origine pour Lorsque les valeurs sont égales à et les nouvelles valeurs pour Remplacer les valeurs par, sélectionnez ![CSV](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FileCSV_18_N.svg) **[!UICONTROL Charger CSV]**.
-- Pour télécharger un modèle permettant de créer un fichier CSV avec les valeurs d’origine et les nouvelles valeurs à charger, sélectionnez ![Télécharger](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Download_18_N.svg) **[!UICONTROL Télécharger le modèle CSV]**.
-- Pour télécharger un fichier CSV avec toutes les valeurs d’origine et les nouvelles valeurs renseignées dans l’interface de règle, sélectionnez ![Télécharger](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Download_18_N.svg) **[!UICONTROL Télécharger les valeurs CSV]**.
+- Pour effacer rapidement toutes les valeurs du tableau, sélectionnez ![Effacer](/help/assets/icons/Erase.svg) **[!UICONTROL Effacer toutes les valeurs du tableau]**.
+- Pour charger un fichier CSV contenant les valeurs d’origine pour Lorsque les valeurs sont égales à et les nouvelles valeurs pour Remplacer les valeurs par, sélectionnez ![CSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Charger CSV]**.
+- Pour télécharger un modèle permettant de créer un fichier CSV avec les valeurs d’origine et les nouvelles valeurs à charger, sélectionnez ![Télécharger](/help/assets/icons/Download.svg) **[!UICONTROL Télécharger le modèle CSV]**.
+- Pour télécharger un fichier CSV avec toutes les valeurs d’origine et les nouvelles valeurs renseignées dans l’interface de règle, sélectionnez ![Télécharger](/help/assets/icons/Download.svg) **[!UICONTROL Télécharger les valeurs CSV]**.
 
 
 +++

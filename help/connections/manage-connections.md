@@ -10,27 +10,36 @@ autotag-review: '2026-05-19T08:50:02.853Z'
 TQID: 'https://experienceleague.adobe.com/iJ5jp3wtWSrJzCnJqIceIHwwLideF-U2puXvit5GFac'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
   - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
 subfeature_v2:
   - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 88ff7c4124d4612a3411b315a605aec29bc9a218
+    internal-label: Data management
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: 7319
-ht-degree: 87%
-
+source-wordcount: '7127'
+ht-degree: 86%
 ---
-
 # Gérer des connexions {#manage-connections}
 
 >[!CONTEXTUALHELP]
@@ -52,7 +61,7 @@ Une fois que vous avez [créé ou modifié une ou plusieurs connexions](/help/co
 * Créer une vue de données à partir d’une connexion.
 * Affichage de tous les jeux de données dans une connexion.
 * Vérifiez le statut des jeux de données de votre connexion et du processus dʼingestion. Par exemple, quand vos données sont-elles disponibles pour que vous puissiez commencer à créer des rapports et des analyses dans Analysis Workspace ?
-* Identifiez les incohérences de données dues à une mauvaise configuration. Vous manque-t-il des lignes ? Si c’est le cas, quelles lignes sont manquantes, et pourquoi ? Avez-vous mal configuré les connexions et généré des données manquantes dans Customer Journey Analytics ?
+* Identifiez les incohérences de données dues à une mauvaise configuration. Vous manque-t-il des lignes ? Si oui, quelles lignes sont manquantes et pourquoi ? Avez-vous mal configuré les connexions et généré des données manquantes dans Customer Journey Analytics ?
 * Obtenez des informations sur l’utilisation des lignes ingérées et pouvant faire l’objet d’un rapport sur toutes vos connexions.
 
 L’affichage [!UICONTROL Connexions] a deux interfaces : [[!UICONTROL Liste]](#list) et [[!UICONTROL Utilisation]](#usage).
@@ -71,9 +80,9 @@ Les colonnes ou icônes suivantes sont disponibles dans le tableau.
 | Colonne ou icône | Description |
 | --- | --- |
 | **[!UICONTROL _Nom_]** | Nom convivial de la connexion. Sélectionnez le nom du lien hypertexte pour afficher les [détails de la connexion](#connection-details). |
-| ![Informations](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) | Pour afficher des informations sur [!UICONTROL Jeux de données inclus], [!UICONTROL Sandbox], [!UICONTROL Propriétaire], etc., sélectionnez ![Informations](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) en regard du nom de la connexion.<p>Une fenêtre contextuelle affiche des détails sur le jeu de données. <p>![Fenêtre contextuelle des informations de connexion](assets/connection-info-popup.png) |
-| ![Vue de données](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) | Pour [créer une vue de données](#create-a-data-view) pour la connexion, sélectionnez ![Vue de données](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg). Cette icône s’affiche uniquement lorsqu’aucune vue de données n’est déjà associée à la connexion. |
-| ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) | Sélectionnez ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) pour ouvrir un menu contextuel. Vous pouvez sélectionner : <p>![Modifier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Modifier]** pour [modifier](#edit-a-connection) une connexion.<p>![Supprimer](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **[!UICONTROL Supprimer]** pour [supprimer](#delete-a-connection) une connexion.<p>![Vue de données](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) **[!UICONTROL Créer une vue de données]** pour [créer une vue de données](#create-a-data-view) pour la connexion.<p>![GraphPathing](/help/assets/icons/GraphPathing.svg) **[!UICONTROL Mappage de connexion]** pour afficher un [mappage de connexion](#map-a-connection) pour la connexion. |
+| ![Informations](/help/assets/icons/InfoOutline.svg) | Pour afficher des informations sur [!UICONTROL Jeux de données inclus], [!UICONTROL Sandbox], [!UICONTROL Propriétaire], etc., sélectionnez ![Informations](/help/assets/icons/InfoOutline.svg) en regard du nom de la connexion.<p>Une fenêtre contextuelle affiche des détails sur le jeu de données. <p>![Fenêtre contextuelle des informations de connexion](assets/connection-info-popup.png) |
+| ![Vue de données](/help/assets/icons/DataAdd.svg) | Pour [créer une vue de données](#create-a-data-view) pour la connexion, sélectionnez ![Vue de données](/help/assets/icons/DataAdd.svg). Cette icône s’affiche uniquement lorsqu’aucune vue de données n’est déjà associée à la connexion. |
+| ![Plus](/help/assets/icons/More.svg) | Sélectionnez ![Plus](/help/assets/icons/More.svg) pour ouvrir un menu contextuel. Vous pouvez sélectionner : <p>![Modifier](/help/assets/icons/Edit.svg) **[!UICONTROL Modifier]** pour [modifier](#edit-a-connection) une connexion.<p>![Supprimer](/help/assets/icons/Delete.svg) **[!UICONTROL Supprimer]** pour [supprimer](#delete-a-connection) une connexion.<p>![Vue de données](/help/assets/icons/DataAdd.svg) **[!UICONTROL Créer une vue de données]** pour [créer une vue de données](#create-a-data-view) pour la connexion.<p>![GraphPathing](/help/assets/icons/GraphPathing.svg) **[!UICONTROL Mappage de connexion]** pour afficher un [mappage de connexion](#map-a-connection) pour la connexion. |
 | [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Type de connexion &#x200B;]** | Type de connexion : connexion basée sur une **[!UICONTROL personne]** ou un **[!UICONTROL compte]**. |
 | **[!UICONTROL Jeux de données]** | Un ou plusieurs liens vers les jeux de données qui font partie de la connexion. Vous pouvez sélectionner le lien hypertexte du jeu de données pour afficher le jeu de données dans la connexion. Si d’autres jeux de données font partie de la connexion sélectionnée, sélectionnez **[!UICONTROL +*x* plus]** pour afficher un panneau **[!UICONTROL Jeux de données inclus]**. Ce panneau affiche des liens vers tous les jeux de données et une option permettant de ![Search](/help/assets/icons/Search.svg) rechercher des jeux de données spécifiques faisant partie de la connexion.<p>![Jeux de données inclus](assets/datasets-included.png)<p>Sélectionnez un nom de jeu de données pour ouvrir ce jeu de données dans l’interface d’Experience Platform dans un nouvel onglet. |
 | **[!UICONTROL Sandbox]** | [Sandbox Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/sandbox/home) dʼoù cette connexion tire ses jeux de données. Vous sélectionnez ce sandbox lorsque vous avez créé la connexion. Vous ne pouvez pas modifier le sandbox une fois qu’une connexion est enregistrée. |
@@ -81,15 +90,15 @@ Les colonnes ou icônes suivantes sont disponibles dans le tableau.
 | **[!UICONTROL Importer de nouvelles données]** | Statut de l’import de nouvelles données pour les jeux de données : <p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _activés]**&#x200B;pour les jeux de données configurés afin d’importer de nouvelles données, et<p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _x désactivés_]** pour les jeux de données non configurés pour importer de nouvelles données. |
 | **[!UICONTROL Date de création]** | Date et heure auxquelles la connexion a été créée. |
 | **[!UICONTROL Dernière modification]** | Date et heure de la dernière mise à jour de la connexion. |
-| **[!UICONTROL Renvoyer les données]** | Statut des données de renvoi dans les jeux de données.<p>![Statut rouge](assets/status-red.svg) **[!UICONTROL _x _renvois ont échoué]**&#x200B;pour le nombre de renvois ayant échoué dans les jeux de données,<p>![Statut orange](assets/status-orange.svg) **[!UICONTROL _x _ renvois en cours de traitement]**&#x200B;pour le nombre de renvois en cours de traitement dans les jeux de données,<p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _ renvois terminés]**&#x200B;pour le nombre de renvois terminés pour les jeux de données, et<p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _Désactivé_]** au cas où aucun renvoi n’est défini pour les jeux de données dans la connexion. |
+| **[!UICONTROL Renvoyer les données]** | Statut des données de renvoi sur l’ensemble des jeux de données.<p>![Statut rouge](assets/status-red.svg) **[!UICONTROL _x _renvois ont échoué]**&#x200B;pour le nombre de renvois ayant échoué dans les jeux de données,<p>![Statut orange](assets/status-orange.svg) **[!UICONTROL _x _ renvois en cours de traitement]**&#x200B;pour le nombre de renvois en cours de traitement dans les jeux de données,<p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _ renvois terminés]**&#x200B;pour le nombre de renvois terminés pour les jeux de données, et<p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _Désactivé_]** au cas où aucun renvoi n’est défini pour les jeux de données dans la connexion. |
 | **[!UICONTROL Intégrations]** | Affiche toutes les applications Experience Platform activées avec la connexion. |
 | **[!UICONTROL Utiliser dans CJA]** | Indique si la connexion a été activée pour une utilisation avec Customer Journey Analytics. |
 
-Pour configurer les colonnes à afficher dans le tableau, sélectionnez ![Paramètres des colonnes](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg). Dans la boîte de dialogue **[!UICONTROL Personnaliser le tableau]**, sélectionnez les colonnes à afficher. Sélectionnez ensuite **[!UICONTROL Appliquer]**.
+Pour configurer les colonnes à afficher dans le tableau, sélectionnez ![Paramètres des colonnes](/help/assets/icons/ColumnSetting.svg). Dans la boîte de dialogue **[!UICONTROL Personnaliser le tableau]**, sélectionnez les colonnes à afficher. Sélectionnez ensuite **[!UICONTROL Appliquer]**.
 
 ### Rechercher des connexions
 
-Vous pouvez rechercher rapidement des connexions à l’aide de la zone ![Rechercher](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg).
+Vous pouvez rechercher rapidement des connexions à l’aide de la zone ![Rechercher](/help/assets/icons/Search.svg).
 
 ### Filtrer les connexions
 
@@ -110,14 +119,14 @@ Sélectionnez ![Filtrer](/help/assets/icons/Filter.svg) **[!UICONTROL Masquer le
 
 Pour modifier une connexion, procédez comme suit :
 
-1. Sélectionnez ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) en regard du nom de la connexion.
-1. Sélectionnez ![Modifier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Modifier]** dans le menu contextuel.
+1. Sélectionnez ![Plus](/help/assets/icons/More.svg) en regard du nom de la connexion.
+1. Sélectionnez ![Modifier](/help/assets/icons/Edit.svg) **[!UICONTROL Modifier]** dans le menu contextuel.
 
 Vous pouvez également effectuer les opérations suivantes :
 
 1. Sélectionnez la ligne de connexion.
 
-1. Sélectionnez ![Modifier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Modifier]** dans la barre d’action bleue.
+1. Sélectionnez ![Modifier](/help/assets/icons/Edit.svg) **[!UICONTROL Modifier]** dans la barre d’action bleue.
 
 Consultez [Créer ou modifier une connexion](create-connection.md) pour plus d’informations.
 
@@ -126,14 +135,14 @@ Consultez [Créer ou modifier une connexion](create-connection.md) pour plus d�
 
 Pour supprimer une connexion, procédez comme suit :
 
-1. Sélectionnez ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) en regard du nom de la connexion.
-1. Sélectionnez ![Supprimer](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **[!UICONTROL Supprimer]**.
+1. Sélectionnez ![Plus](/help/assets/icons/More.svg) en regard du nom de la connexion.
+1. Sélectionnez ![Supprimer](/help/assets/icons/Delete.svg) **[!UICONTROL Supprimer]**.
 
 Vous pouvez également effectuer les opérations suivantes :
 
 1. Sélectionnez la ligne de connexion.
 
-1. Sélectionnez ![Supprimer](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **[!UICONTROL Supprimer]** dans la barre d’action bleue.
+1. Sélectionnez ![Supprimer](/help/assets/icons/Delete.svg) **[!UICONTROL Supprimer]** dans la barre d’action bleue.
 
 Lorsque vous supprimez une connexion, un panneau **[!UICONTROL Supprimer la connexion]** indique quelles vues de données sont supprimées et quels projets d’espace de travail sont affectés.
 
@@ -152,14 +161,14 @@ Pour plus d’informations sur la suppression d’une connexion, consultez [Cons
 
 Pour créer une vue de données pour une connexion :
 
-1. Sélectionnez ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) en regard du nom de la connexion.
-1. Sélectionnez ![Ajouter une vue de données](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) **[!UICONTROL Créer une vue de données]**.
+1. Sélectionnez ![Plus](/help/assets/icons/More.svg) en regard du nom de la connexion.
+1. Sélectionnez ![Ajouter une vue de données](/help/assets/icons/DataAdd.svg) **[!UICONTROL Créer une vue de données]**.
 
 Vous pouvez également effectuer les opérations suivantes :
 
 1. Sélectionnez la ligne de connexion.
 
-1. Sélectionnez ![Ajouter une vue de données](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) **[!UICONTROL Créer une vue de données]** dans la barre d’action bleue.
+1. Sélectionnez ![Ajouter une vue de données](/help/assets/icons/DataAdd.svg) **[!UICONTROL Créer une vue de données]** dans la barre d’action bleue.
 
 Consultez [Créer ou modifier une vue de données](/help/data-views/create-dataview.md) pour plus d’informations.
 
@@ -182,7 +191,7 @@ Vous pouvez utiliser une connexion Journey Optimizer dans Customer Journey Analy
 >
 >**Si vous pouviez utiliser Customer Journey Analytics et Journey Optimizer entre octobre 2024 et octobre 2025, consultez le document suivant sur les [Connexions activées pour AJO](https://view.adobe.com/viewer/1ed94fc35c7860b260766c620889e7a0#1)**.
 
-Pour activer cette fonctionnalité, votre organisation doit avoir accès à Customer Journey Analytics. Si vous n’y avez pas accès, contactez votre représentant commercial ou votre représentante commerciale Adobe.
+Pour activer cette fonctionnalité, votre organisation doit avoir accès à Customer Journey Analytics. Si vous n’y avez pas accès, contactez votre représentant commercial Adobe.
 
 #### Utiliser une connexion Journey Optimizer {#use-connection-in-cja}
 
@@ -255,7 +264,7 @@ Pour supprimer cette connexion de Customer Journey Analytics :
 
 Pour afficher une [carte de la connexion](/help/connections/create-connection.md#connection-map) qui détaille les relations entre ses jeux de données :
 
-1. Sélectionnez ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) en regard du nom de la connexion.
+1. Sélectionnez ![Plus](/help/assets/icons/More.svg) en regard du nom de la connexion.
 1. Sélectionnez ![GraphPathing](/help/assets/icons/GraphPathing.svg) **[!UICONTROL Carte de la connexion]**.
 
 ### Détails de la connexion {#connection-detail}
@@ -268,27 +277,27 @@ L’interface Détails des connexions vous offre une vue très détaillée du st
 
 * Vérifier le statut des jeux de données de votre connexion et du processus dʼingestion.
 * Identifiez les problèmes de configuration qui provoquent des enregistrements ignorés ou supprimés.
-* Voir quand les données sont disponibles pour le compte rendu des performances.
+* Voir quand les données sont disponibles pour le reporting.
 
 | Interface utilisateur | Description |
 | --- | --- |
-| ![Modifier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Modifier la connexion]** | Pour modifier les détails d’une connexion, sélectionnez ![Modifier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Modifier la connexion]**. Consultez [Créer ou modifier une connexion](create-connection.md) pour plus d’informations. |
+| ![Modifier](/help/assets/icons/Edit.svg) **[!UICONTROL Modifier la connexion]** | Pour modifier les détails d’une connexion, sélectionnez ![Modifier](/help/assets/icons/Edit.svg) **[!UICONTROL Modifier la connexion]**. Consultez [Créer ou modifier une connexion](create-connection.md) pour plus d’informations. |
 | **[!UICONTROL *Sélecteur de jeu de données *]** | Sélectionnez un ou tous les jeux de données pour lesquels afficher les détails dans la connexion. Vous ne pouvez pas sélectionner plusieurs jeux de données. La valeur par défaut est **[!UICONTROL Tous les jeux de données]**. |
-| **[!UICONTROL *Sélecteur de périodes *]** | Sélectionnez une plage de données pour laquelle afficher les détails dans la connexion. Modifiez la date de début ou de fin, ou sélectionnez ![Calendrier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) pour ouvrir le sélecteur de période. Dans le sélecteur de période, sélectionnez une période à l’aide de l’une des périodes prédéfinies (par exemple, **[!UICONTROL 6 derniers mois]**) ou utilisez le calendrier pour sélectionner les dates de début et de fin. Sélectionnez **[!UICONTROL Appliquer]** pour appliquer la nouvelle période aux détails de la connexion. |
+| **[!UICONTROL *Sélecteur de périodes *]** | Sélectionnez une plage de données pour laquelle afficher les détails dans la connexion. Modifiez la date de début ou de fin, ou sélectionnez ![Calendrier](/help/assets/icons/Calendar.svg) pour ouvrir le sélecteur de période. Dans le sélecteur de période, sélectionnez une période à l’aide de l’une des périodes prédéfinies (par exemple, **[!UICONTROL 6 derniers mois]**) ou utilisez le calendrier pour sélectionner les dates de début et de fin. Sélectionnez **[!UICONTROL Appliquer]** pour appliquer la nouvelle période aux détails de la connexion. |
 | **[!UICONTROL Enregistrements de données d’événement disponibles]** | Affiche le nombre total de lignes de jeux de données dʼévénement disponibles pour la création de rapports, **sur lʼensemble de la connexion**. Ce nombre est indépendant de toute période ou sélection de jeu de données. |
-| [!UICONTROL **[!UICONTROL Mesures]**] | Résumez les enregistrements de jeux de données d’événement, de recherche, de profil et de synthèse qui sont ajoutés, ignorés et supprimés, ainsi que le nombre de lots ajoutés. Ces mesures sont basées sur **le jeu de données et la période que vous avez sélectionnés**.<p>Sélectionnez **[!UICONTROL Vérifier les détails]** pour afficher la fenêtre contextuelle **[!UICONTROL Vérifier les détails ignorés]**. La fenêtre contextuelle répertorie le nombre d’enregistrements ignorés et la raison pour tous les jeux de données d’événement ou du jeu de données sélectionné.<p>![Enregistrements ignorés](assets/skipped-records.png)<p>Sélectionnez la fenêtre contextuelle ![Info](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) avec plus d’informations. Pour certaines raisons ignorées, telles que [!UICONTROL ID de visiteur ou visiteuse vide], la fenêtre contextuelle affiche **[!UICONTROL Exemple de PSQL pour EQS]** (Experience Platform pour Query Service) que vous pouvez utiliser dans le [service de requête](https://experienceleague.adobe.com/fr/docs/experience-platform/query/home) pour rechercher les enregistrements ignorés dans le jeu de données. Sélectionnez ![Copier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) **[!UICONTROL Copier l’exemple de PSQL pour EQS]** pour copier le code SQL. |
+| [!UICONTROL **[!UICONTROL Mesures]**] | Résumez les enregistrements de jeux de données d’événement, de recherche, de profil et de synthèse qui sont ajoutés, ignorés et supprimés, ainsi que le nombre de lots ajoutés. Ces mesures sont basées sur **le jeu de données et la période que vous avez sélectionnés**.<p>Sélectionnez **[!UICONTROL Vérifier les détails]** pour afficher la fenêtre contextuelle **[!UICONTROL Vérifier les détails ignorés]**. La fenêtre contextuelle répertorie le nombre d’enregistrements ignorés et la raison pour tous les jeux de données d’événement ou du jeu de données sélectionné.<p>![Enregistrements ignorés](assets/skipped-records.png)<p>Sélectionnez la fenêtre contextuelle ![Info](/help/assets/icons/InfoOutline.svg) avec plus d’informations. Pour certaines raisons ignorées, telles que [!UICONTROL ID de visiteur ou visiteuse vide], la fenêtre contextuelle affiche **[!UICONTROL Exemple de PSQL pour EQS]** (Experience Platform pour Query Service) que vous pouvez utiliser dans le [service de requête](https://experienceleague.adobe.com/fr/docs/experience-platform/query/home) pour rechercher les enregistrements ignorés dans le jeu de données. Sélectionnez ![Copier](/help/assets/icons/Copy.svg) **[!UICONTROL Copier l’exemple de PSQL pour EQS]** pour copier le code SQL. |
 | **[!UICONTROL Enregistrements ajoutés]** | Visualisation indiquant le nombre de lignes ajoutées au cours de la période sélectionnée, **pour le jeu de données et la période sélectionnés**. Se met à jour toutes les 10 minutes. |
 | **[!UICONTROL Enregistrements ignorés]** | Visualisation indiquant le nombre de lignes ignorées au cours de la période sélectionnée, **pour le jeu de données et la période sélectionnés**. Les raisons pour lesquelles des enregistrements sont ignorés sont les suivantes : dates et heures manquantes, ID de personne ou de compte [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} manquant ou non valide, etc. Se met à jour toutes les 10 minutes. <p>Un ID non valide (par exemple, `undefined` ou `00000000` ou toute combinaison de nombres et de lettres dans un [!UICONTROL ID de personne] qui apparaît dans un événement plus d’un million de fois au cours d’un mois) ne peut pas être attribué à un utilisateur ou une utilisatrice ou à une personne spécifique. Ces lignes ne peuvent pas être ingérées dans le système et entraînent une ingestion et un reporting sujets aux erreurs. Pour corriger les ID de personne ou de compte [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} non valides, vous disposez de trois options :<ul><li>Utilisez le [Groupement](/help/stitching/overview.md) pour renseigner les ID d’utilisateur ou d’utilisatrice non définis ou composés entièrement de zéros avec des ID d’utilisateur ou d’utilisatrice valides.</li><li>Effacez les ID d’utilisateur ou d’utilisatrice, qui seront également ignorés lors de l’ingestion (préférable aux ID d’utilisateur ou d’utilisatrice non valides ou entièrement composés de zéros).</li><li>Corrigez tout ID d’utilisateur ou d’utilisatrice non valide dans votre système avant d’ingérer les données.</li></ul> |
-| **[!UICONTROL Enregistrements supprimés]** | Visualisation indiquant le nombre de lignes supprimées au cours de la période sélectionnée, **pour le jeu de données et la période sélectionnés**. Une personne peut avoir supprimé un jeu de données dans [!DNL Experience Platform], par exemple. Se met à jour toutes les 10 minutes.<p>Dans certains scénarios, cette valeur peut également inclure des enregistrements remplacés, comme avec le groupement ou certaines mises à jour des jeux de données de recherche. Prenons cet exemple :</p><ul><li>Vous chargez un enregistrement dans un jeu de données de profil individuel XDM, que Customer Journey Analytics est configuré pour ingérer en tant que données de recherche de profil. Dans les détails de la connexion, ce jeu de données affiche 1 enregistrement ajouté.</li><li>Vous chargez un doublon de l’enregistrement d’origine dans le même jeu de données AEP, qui contient désormais deux enregistrements. Customer Journey Analytics ingère l’enregistrement supplémentaire à partir du jeu de données de recherche du profil ou du compte [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}. Si un enregistrement de profil ou de compte est déjà ingéré dans la connexion pour cet ID de personne ou de compte [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, Customer Journey Analytics supprime sa version antérieure et ajoute les nouvelles données de profil. Dans les détails de la connexion, cette action représenterait 1 enregistrement ajouté et 1 enregistrement supprimé, car Customer Journey Analytics ne conserve que les données de recherche de profil les plus récentes pour tout ID de personne ou de compte [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} ingéré.</li><li>Au total, le jeu de données AEP contient deux enregistrements qui se trouvent être identiques. Séparément, les détails de la connexion Customer Journey Analytics affichent le statut de ses données ingérées : 2 enregistrements ajoutés et 1 enregistrement supprimé pour ce jeu de données de profil. </li></ul> |
-| ![Recherche](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) | Champ de recherche de jeux de données. Vous pouvez rechercher les jeux de données par nom ou par identifiant dans le tableau correspondant. |
+| **[!UICONTROL Enregistrements supprimés]** | Visualisation indiquant le nombre de lignes supprimées au cours de la période sélectionnée, **pour le jeu de données et la période sélectionnés**. Une personne peut avoir supprimé un jeu de données dans [!DNL Experience Platform], par exemple. Se met à jour toutes les 10 minutes.<p>Dans certains scénarios, cette valeur peut également inclure des enregistrements remplacés, comme avec le groupement ou certaines mises à jour des jeux de données de recherche. Prenons cet exemple :</p><ul><li>Vous chargez un enregistrement dans un jeu de données de profil individuel XDM, que Customer Journey Analytics est configuré pour ingérer en tant que données de recherche de profil. Dans les détails de la connexion, ce jeu de données affiche 1 enregistrement ajouté.</li><li>Vous chargez un doublon de l’enregistrement d’origine dans le même jeu de données AEP, qui contient désormais deux enregistrements. Customer Journey Analytics ingère l’enregistrement supplémentaire à partir du jeu de données de recherche du profil ou du compte [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}. Si un enregistrement de profil ou de compte est déjà ingéré dans la connexion pour cet ID de personne ou de compte [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, Customer Journey Analytics supprime sa version antérieure et ajoute les nouvelles données de profil. Dans les détails de la connexion, cette action représenterait 1 enregistrement ajouté et 1 enregistrement supprimé, car Customer Journey Analytics ne conserve que les données de recherche de profil les plus récentes pour tout ID de personne ou de compte [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} ingéré.</li><li>Au total, le jeu de données AEP contient deux enregistrements qui se trouvent être identiques. Par ailleurs, les détails de la connexion Customer Journey Analytics affichent le statut de ses données ingérées : 2 enregistrements ajoutés et 1 enregistrement supprimé pour ce jeu de données de profil. </li></ul> |
+| ![Recherche](/help/assets/icons/Search.svg) | Champ de recherche de jeux de données. Vous pouvez rechercher les jeux de données par nom ou par identifiant dans le tableau correspondant. |
 | [!UICONTROL Tableau des jeux de données] | Jeux de données qui font partie de la connexion. Consultez le tableau ci-dessous pour plus de détails. Sélectionnez ![SelectBox](/help/assets/icons/SelectBox.svg) un seul jeu de données pour afficher uniquement les détails de connexion du jeu de données sélectionné. Cela équivaut à sélectionner un jeu de données à partir du **[!UICONTROL _sélecteur de jeu de données_]**. |
 
 Le tableau des jeux de données affiche les colonnes suivantes pour chaque jeu de données :
 
 | Colonne | Description |
 | --- | --- |
-| **[!UICONTROL Jeux de données]** | Nom du jeu de données. Vous pouvez sélectionner le lien hypertexte pour ouvrir le jeu de données dans l’interface d’utilisation d’Experience Platform dans un nouvel onglet. Vous pouvez sélectionner la ligne ou la case à cocher pour afficher les détails du jeu de données sélectionné uniquement. |
-| **[!UICONTROL Identifiant du jeu de données]** | Identifiant du jeu de données, généré par Experience Platform. |
+| **[!UICONTROL Jeux de données]** | Nom du jeu de données. Vous pouvez sélectionner le lien hypertexte pour ouvrir le jeu de données dans l’interface utilisateur d’Experience Platform, dans un nouvel onglet. Vous pouvez sélectionner la ligne ou la case à cocher pour afficher les détails du jeu de données sélectionné uniquement. |
+| **[!UICONTROL Identifiant du jeu de données]** | Identifiant du jeu de données, généré par Experience Platform. |
 | **[!UICONTROL Enregistrements ajoutés]** | Nombre d’enregistrements de jeux de données (lignes) ajoutés à une connexion au cours de la période sélectionnée. |
 | **[!UICONTROL Enregistrements ignorés]** | Nombre d’enregistrements de jeux de données (lignes) ignorés pendant le transfert de données pour une connexion au cours de la période sélectionnée. |
 | **[!UICONTROL Enregistrements supprimés]** | Nombre d’enregistrements de jeux de données (lignes) supprimés d’une connexion au cours de la période sélectionnée. |
@@ -313,14 +322,14 @@ Lorsqu’aucun jeu de données individuel n’est sélectionné dans le tableau 
 
 | Options | Description |
 | --- | --- |
-| ![Actualiser](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) **[!UICONTROL Actualiser]** | Pour actualiser la connexion et permettre la prise en compte des enregistrements récemment ajoutés, sélectionnez ![Actualiser](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) **[!UICONTROL Actualiser]**. |
-| ![Supprimer](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **[!UICONTROL Supprimer]** | [Supprimez](#delete-a-connection) cette connexion. |
-| ![Ajouter une vue de données](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) **[!UICONTROL Créer une vue de données]** | [Créez une vue de données](#create-a-data-view) basée sur cette connexion. Pour plus d’informations, consultez [Vues de données](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dataviews/data-views). |
+| ![Actualiser](/help/assets/icons/Refresh.svg) **[!UICONTROL Actualiser]** | Pour actualiser la connexion et permettre la prise en compte des enregistrements récemment ajoutés, sélectionnez ![Actualiser](/help/assets/icons/Refresh.svg) **[!UICONTROL Actualiser]**. |
+| ![Supprimer](/help/assets/icons/Delete.svg) **[!UICONTROL Supprimer]** | [Supprimez](#delete-a-connection) cette connexion. |
+| ![Ajouter une vue de données](/help/assets/icons/DataAdd.svg) **[!UICONTROL Créer une vue de données]** | [Créez une vue de données](#create-a-data-view) basée sur cette connexion. Pour plus d’informations, consultez [Vues de données](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dataviews/data-views). |
 | **[!UICONTROL Utiliser dans CJA]** | Utilisez une connexion Journey Optimizer dans Customer Journey Analytics pour ajouter de la valeur à votre connexion Journey Optimizer. Pour plus d’informations, voir [Utiliser une connexion Journey Optimizer dans Customer Journey Analytics](#use-a-journey-optimizer-connection-in-customer-journey-analytics). |
 | **[!UICONTROL Nom de la connexion]** | Nom convivial de la connexion. |
 | **[!UICONTROL Description de la connexion]** | Description plus détaillée concernant lʼobjectif de cette connexion. |
 | **[!UICONTROL Sandbox]** | [Sandbox Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/sandbox/home) dʼoù cette connexion tire ses jeux de données. Vous sélectionnez ce sandbox lorsque vous avez créé la connexion. Vous ne pouvez pas modifier le sandbox une fois qu’une connexion est enregistrée. |
-| **[!UICONTROL ID de connexion]** | Identifiant généré pour la connexion. Vous pouvez utiliser ![Copier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) pour copier la valeur. |
+| **[!UICONTROL ID de connexion]** | Identifiant généré pour la connexion. Vous pouvez utiliser ![Copier](/help/assets/icons/Copy.svg) pour copier la valeur. |
 | [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Type d’ID principal &#x200B;]** | Type d’identifiant principal pour la connexion : **[!UICONTROL Personne]** pour une connexion basée sur une personne, **[!UICONTROL Compte]** pour une connexion basée sur un compte. |
 | [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Conteneurs &#x200B;]** | Conteneurs configurés pour la connexion. |
 | **[!UICONTROL Vues de données utilisant la connexion]** | Vues de données qui utilisent cette connexion. |
@@ -342,8 +351,8 @@ Lorsqu’une ligne de jeu de données est sélectionnée dans le tableau des jeu
 | **[!UICONTROL ID de personne]** | Identité que vous avez spécifiée comme ID de personne pour la connexion. |
 | **[!UICONTROL Clé]** | Clé que vous avez spécifiée pour un jeu de données de recherche. |
 | **[!UICONTROL Clé correspondante]** | Clé correspondante que vous avez spécifiée pour un jeu de données de recherche. |
-| **[!UICONTROL Date et heure]** | Horodatage défini pour un jeu de données d’événement. |
-| **[!UICONTROL Enregistrements disponibles]** | Nombre total de lignes ingérées pour ce jeu de données, au cours de la période sélectionnée dans le calendrier. Une fois ajoutées, les données apparaissent dans le compte rendu des performances sans aucune latence. Cependant, lorsque vous créez une toute nouvelle connexion, il y a [latence](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-faq). |
+| **[!UICONTROL Date et heure]** | Date et heure définies pour un jeu de données d’événement. |
+| **[!UICONTROL Enregistrements disponibles]** | Nombre total de lignes ingérées pour ce jeu de données, au cours de la période sélectionnée dans le calendrier. Une fois les données ajoutées, elles apparaissent dans les rapports sans aucune latence. Cependant, lorsque vous créez une toute nouvelle connexion, il y a [latence](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-faq). |
 | **[!UICONTROL Enregistrements ajoutés]** | Nombre d’enregistrements de jeux de données (lignes) ajoutés à une connexion au cours de la période sélectionnée. |
 | **[!UICONTROL Enregistrements ignorés]** | Nombre d’enregistrements de jeux de données (lignes) ignorés pendant le transfert de données pour une connexion au cours de la période sélectionnée. |
 | **[!UICONTROL Lots ajoutés]** | Nombre de lots ayant été ajoutés à une connexion. |
@@ -353,8 +362,8 @@ Lorsqu’une ligne de jeu de données est sélectionnée dans le tableau des jeu
 | **[!UICONTROL Renvoyer les données]** | Statut des données de renvoi pour le jeu de données.<p>![Statut rouge](assets/status-red.svg) **[!UICONTROL _x _renvois ayant échoué]**&#x200B;pour le nombre de renvois ayant échoué,<p>![Statut rouge](assets/status-orange.svg) **[!UICONTROL _x _renvois en cours de traitement]**&#x200B;pour le nombre de renvois en cours de traitement,<p>![Statut vert](assets/status-green.svg) **[!UICONTROL _x _renvois terminés]**&#x200B;pour le nombre de renvois terminés, et<p>![Statut gris](assets/status-gray.svg) **[!UICONTROL _Désactivé_]** au cas où aucun renvoi n’est configuré.<p>Pour afficher une boîte de dialogue avec une vue d’ensemble des renvois précédents pour le jeu de données, sélectionnez <img src="./assets/pastbackfill.svg" alt="Renvois précédents" width="15"/> **[!UICONTROL Renvois précédents]**. |
 | **[!UICONTROL Type de source de données]** | Type de source de données tel que défini lors de l’ajout du jeu de données à la connexion. |
 | **[!UICONTROL Type de jeu de données]** | [Type de jeu de données](create-connection.md#dataset-types). Le type peut être **[!UICONTROL Événement]**, **[!UICONTROL Profil]**, **[!UICONTROL Recherche]** ou **[!UICONTROL Synthèse]**. Un jeu de données ad hoc ou relationnel est identifié par **[!UICONTROL (ad hoc)]** ou **[!UICONTROL (relationnel)]**. Par exemple, **[!UICONTROL Événement (ad hoc)]** ou **[!UICONTROL Recherche (relationnelle)]**. |
-| **[!UICONTROL Schéma]** | Schéma Experience Platform sur lequel est basé ce jeu de données. |
-| **[!UICONTROL Identifiant du jeu de données]** | Identifiant de jeu de données tel que généré dans Experience Platform. |
+| **[!UICONTROL Schéma]** | Schéma Experience Platform sur lequel est basé ce jeu de données. |
+| **[!UICONTROL Identifiant du jeu de données]** | Identifiant de jeu de données tel que généré dans Experience Platform. |
 
 
 ## Utilisation {#connections-usage}
@@ -397,12 +406,12 @@ Lorsqu’une ligne de jeu de données est sélectionnée dans le tableau des jeu
 >[!CONTEXTUALHELP]
 >id="connections_corereportablerows"
 >title="Lignes de base à déclarer"
->abstract="Nombre total de lignes disponibles au cours des 13 derniers mois pour le mois en cours, avec un pourcentage de variation par rapport au mois précédent.  Par exemple, le 1er février 2024, le nombre affiche le nombre total de lignes disponibles avec un horodatage d’événement de janvier 2023 à janvier 2024."
+>abstract="Nombre total de lignes disponibles au cours des 13 derniers mois pour le mois en cours, avec un pourcentage de variation par rapport au mois précédent.  Par exemple, au 1er février 2024, ce nombre indique le nombre total de lignes disponibles dont la date et l’heure d’événement sont comprises entre janvier 2023 et janvier 2024."
 
 >[!CONTEXTUALHELP]
 >id="connections_historicalreportablerows"
 >title="Lignes historiques à inclure dans un rapport"
->abstract="Nombre total de lignes disponibles sur une période de plus de 13 mois pour le mois en cours, avec un pourcentage de variation par rapport au mois précédent. Par exemple, le 1er février 2024, le nombre affiche le nombre total de lignes disponibles avec un horodatage d’événement antérieur à janvier 2023."
+>abstract="Nombre total de lignes disponibles sur une période de plus de 13 mois pour le mois en cours, avec un pourcentage de variation par rapport au mois précédent. Par exemple, au 1er février 2024, ce nombre indique le nombre total de lignes disponibles dont la date et l’heure d’événement sont antérieures à janvier 2023."
 
 
 >[!CONTEXTUALHELP]
@@ -528,8 +537,8 @@ L’interface **[!UICONTROL Utilisation de]** se compose de deux panneaux :
 
   * Quatre visualisations de synthèse qui affichent les modifications totales et en pourcentage par rapport au mois précédent pour les éléments suivants :
 
-    * **[!UICONTROL Lignes de données principales à déclarer]**. Nombre total de lignes disponibles au cours des 13 derniers mois pour le mois en cours, avec un pourcentage de variation par rapport au mois précédent. Par exemple, le 1er février 2024, le nombre affiche le nombre total de lignes disponibles avec un horodatage d’événement de janvier 2023 à janvier 2024.
-    * **[!UICONTROL Lignes de capacité de données étendue]**. Nombre total de lignes disponibles sur une période de plus de 13 mois pour le mois en cours, avec un pourcentage de variation par rapport au mois précédent. Par exemple, le 1er février 2024, le nombre affiche le nombre total de lignes disponibles avec un horodatage d’événement antérieur à janvier 2023.
+    * **[!UICONTROL Lignes de données principales à déclarer]**. Nombre total de lignes disponibles au cours des 13 derniers mois pour le mois en cours, avec un pourcentage de variation par rapport au mois précédent. Par exemple, au 1er février 2024, ce nombre indique le nombre total de lignes disponibles dont la date et l’heure d’événement sont comprises entre janvier 2023 et janvier 2024.
+    * **[!UICONTROL Lignes de capacité de données étendue]**. Nombre total de lignes disponibles sur une période de plus de 13 mois pour le mois en cours, avec un pourcentage de variation par rapport au mois précédent. Par exemple, au 1er février 2024, ce nombre indique le nombre total de lignes disponibles dont la date et l’heure d’événement sont antérieures à janvier 2023.
     * **[!UICONTROL Lignes ingérées mensuelles]**. Lignes ingérées au cours du mois de facturation, avec une modification en pourcentage par rapport au mois précédent
     * **[!UICONTROL Volume de données principal]**. Quantité totale de données stockées sur le disque, horodatées pour le mois en cours (en To), avec un pourcentage de modification par rapport au mois précédent.
     * **[!UICONTROL Taille moyenne des lignes]**. Stockage moyen consommé par chaque ligne ingérée pour le mois en cours (en Ko), avec la modification en pourcentage par rapport au mois précédent.
@@ -561,7 +570,7 @@ L’interface **[!UICONTROL Utilisation de]** se compose de deux panneaux :
 
   +++ Répartition des détails
 
-  Vous pouvez utiliser le tableau **[!UICONTROL Répartition des détails]** pour afficher les mesures détaillées par connexion, jeu de données, sandbox et balises. Les jeux de données dont l’objet de rapports à l’aide d’identifiants plutôt que de noms, car les noms des jeux de données peuvent être modifiés pendant une période de création de rapports. Les jeux de données ou les connexions inconnus font l’objet de rapport via leurs identifiants.
+  Vous pouvez utiliser le tableau **[!UICONTROL Répartition des détails]** pour afficher les mesures détaillées par connexion, jeu de données, sandbox et balises. Les jeux de données sont indiqués à l’aide de leur identifiant plutôt que de leur nom, car leur nom peut être modifié au cours d’une période de reporting. Les jeux de données ou les connexions inconnus font l’objet de rapport via leurs identifiants.
 
   Pour les mois précédant septembre 2024, les données ont été collectées au niveau des jeux de données et s’affichent sous la forme [!UICONTROL Autres jeux de données] par souci de clarté. À compter de septembre 2024, les données seront collectées au niveau d’un jeu de données granulaire et [!UICONTROL autres jeux de données] n’apparaîtront plus.
 
@@ -618,7 +627,7 @@ L’interface **[!UICONTROL Utilisation de]** se compose de deux panneaux :
 
   +++ Répartition des détails
 
-  Vous pouvez utiliser le tableau **[!UICONTROL Répartition des détails]** pour afficher les mesures détaillées par connexion, jeu de données, sandbox et balises. Les jeux de données dont l’objet de rapports à l’aide d’identifiants plutôt que de noms, car les noms des jeux de données peuvent être modifiés pendant une période de création de rapports. Les jeux de données ou les connexions inconnus font l’objet de rapport via leurs identifiants.
+  Vous pouvez utiliser le tableau **[!UICONTROL Répartition des détails]** pour afficher les mesures détaillées par connexion, jeu de données, sandbox et balises. Les jeux de données sont indiqués à l’aide de leur identifiant plutôt que de leur nom, car leur nom peut être modifié au cours d’une période de reporting. Les jeux de données ou les connexions inconnus font l’objet de rapport via leurs identifiants.
 
   Pour les mois précédant septembre 2024, les données ont été collectées au niveau des jeux de données et s’affichent sous la forme [!UICONTROL Autres jeux de données] par souci de clarté. À compter de septembre 2024, les données seront collectées au niveau d’un jeu de données granulaire et [!UICONTROL autres jeux de données] n’apparaîtront plus.
 
@@ -642,8 +651,8 @@ L’interface **[!UICONTROL Utilisation de CJA B2B edition]** utilise les mesure
 
 | Nom de la mesure | Description |
 |---|---|
-| **BPP à déclaration obligatoire principale** | Nombre total de lignes à déclarer de profil professionnel disponibles au cours des 13 derniers mois pour le mois en cours, avec une variation en pourcentage par rapport au mois précédent.  Par exemple, le 1er février 2024, le nombre affiche le nombre total de lignes disponibles avec un horodatage d’événement de janvier 2023 à janvier 2024. |
-| **Historique à signaler BPP** | Nombre total de lignes à déclarer de profil professionnel disponibles sur une période de plus de 13 mois pour le mois en cours, avec une variation en pourcentage par rapport au mois précédent. Par exemple, le 1er février 2024, le nombre affiche le nombre total de lignes disponibles avec un horodatage d’événement antérieur à janvier 2023. |
+| **BPP à déclaration obligatoire principale** | Nombre total de lignes à déclarer de profil professionnel disponibles au cours des 13 derniers mois pour le mois en cours, avec une variation en pourcentage par rapport au mois précédent.  Par exemple, au 1er février 2024, ce nombre indique le nombre total de lignes disponibles dont la date et l’heure d’événement sont comprises entre janvier 2023 et janvier 2024. |
+| **Historique à signaler BPP** | Nombre total de lignes à déclarer de profil professionnel disponibles sur une période de plus de 13 mois pour le mois en cours, avec une variation en pourcentage par rapport au mois précédent. Par exemple, au 1er février 2024, ce nombre indique le nombre total de lignes disponibles dont la date et l’heure d’événement sont antérieures à janvier 2023. |
 
 >[!NOTE]
 >
@@ -670,7 +679,7 @@ Vous pouvez pointer sur les points de données dans la visualisation pour affich
 
 +++ Répartition des détails
 
-Vous pouvez utiliser le tableau **[!UICONTROL Répartition des détails]** pour afficher les mesures détaillées par connexion, jeu de données, sandbox et balises. Les jeux de données dont l’objet de rapports à l’aide d’identifiants plutôt que de noms, car les noms des jeux de données peuvent être modifiés pendant une période de création de rapports. Les jeux de données ou les connexions inconnus font l’objet de rapport via leurs identifiants.
+Vous pouvez utiliser le tableau **[!UICONTROL Répartition des détails]** pour afficher les mesures détaillées par connexion, jeu de données, sandbox et balises. Les jeux de données sont indiqués à l’aide de leur identifiant plutôt que de leur nom, car leur nom peut être modifié au cours d’une période de reporting. Les jeux de données ou les connexions inconnus font l’objet de rapport via leurs identifiants.
 
 Pour les mois précédant septembre 2024, les données ont été collectées au niveau des jeux de données et s’affichent sous la forme [!UICONTROL Autres jeux de données] par souci de clarté. À compter de septembre 2024, les données sont collectées au niveau d’un jeu de données granulaire et l’option [!UICONTROL Autres jeux de données] n’apparaît plus.
 
@@ -726,7 +735,7 @@ L’interface **[!UICONTROL Utilisation des médias en flux continu]** se compos
 
   +++ Répartition des détails
 
-  Vous pouvez utiliser le tableau **[!UICONTROL Répartition des détails]** pour afficher les mesures détaillées par connexion, jeu de données, sandbox et balises. Les jeux de données dont l’objet de rapports à l’aide d’identifiants plutôt que de noms, car les noms des jeux de données peuvent être modifiés pendant une période de création de rapports. Les jeux de données ou les connexions inconnus font l’objet de rapport via leurs identifiants.
+  Vous pouvez utiliser le tableau **[!UICONTROL Répartition des détails]** pour afficher les mesures détaillées par connexion, jeu de données, sandbox et balises. Les jeux de données sont indiqués à l’aide de leur identifiant plutôt que de leur nom, car leur nom peut être modifié au cours d’une période de reporting. Les jeux de données ou les connexions inconnus font l’objet de rapport via leurs identifiants.
 
   Pour les mois précédant septembre 2024, les données ont été collectées au niveau des jeux de données et s’affichent sous la forme [!UICONTROL Autres jeux de données] par souci de clarté. À compter de septembre 2024, les données sont collectées au niveau d’un jeu de données granulaire et l’option [!UICONTROL Autres jeux de données] n’apparaît plus.
 

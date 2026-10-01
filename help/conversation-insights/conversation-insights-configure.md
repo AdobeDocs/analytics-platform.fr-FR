@@ -18,10 +18,10 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 34bb13891eebb12875f3e355e73aade6b3eed750
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: '824'
-ht-degree: 20%
+source-wordcount: '810'
+ht-degree: 16%
 ---
 # Création ou modification de configurations
 
@@ -80,7 +80,7 @@ Pour chaque configuration :
    1. Sélectionnez **[!UICONTROL Utiliser la connexion]**.
 
    * Pour effectuer une recherche dans la liste des connexions à sélectionner, utilisez le champ ![Rechercher](/help/assets/icons/Search.svg).
-   * Pour configurer les colonnes à afficher dans le tableau, sélectionnez ![Paramètres des colonnes](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg). Dans la boîte de dialogue **[!UICONTROL Personnaliser le tableau]**, sélectionnez les colonnes à afficher. Sélectionnez ensuite **[!UICONTROL Appliquer]**.
+   * Pour configurer les colonnes à afficher dans le tableau, sélectionnez ![ColumnSetting](/help/assets/icons/ColumnSetting.svg). Dans la boîte de dialogue **[!UICONTROL Personnaliser le tableau]**, sélectionnez les colonnes à afficher. Sélectionnez ensuite **[!UICONTROL Appliquer]**.
 
 1. Dans la section **[!UICONTROL Vues de données]** , si aucune vue de données n’est déjà configurée, sélectionnez **[!UICONTROL Sélectionner les vues de données]** pour sélectionner les vues de données.
 
@@ -95,7 +95,7 @@ Pour chaque configuration :
    1. Sélectionnez **[!UICONTROL Utiliser les vues de données]** pour utiliser les vues de données. Sélectionner Annuler pour annuler.
 
    * Pour effectuer une recherche dans la liste des vues de données à sélectionner, utilisez le champ ![Rechercher](/help/assets/icons/Search.svg).
-   * Pour configurer les colonnes à afficher dans le tableau, sélectionnez ![Paramètres des colonnes](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg). Dans la boîte de dialogue **[!UICONTROL Personnaliser le tableau]**, sélectionnez les colonnes à afficher. Sélectionnez ensuite **[!UICONTROL Appliquer]**.
+   * Pour configurer les colonnes à afficher dans le tableau, sélectionnez ![ColumnSetting](/help/assets/icons/ColumnSetting.svg). Dans la boîte de dialogue **[!UICONTROL Personnaliser le tableau]**, sélectionnez les colonnes à afficher. Sélectionnez ensuite **[!UICONTROL Appliquer]**.
 
 1. Pour terminer la configuration :
 

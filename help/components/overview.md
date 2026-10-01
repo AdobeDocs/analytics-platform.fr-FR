@@ -8,33 +8,48 @@ role: User
 TQID: https://experienceleague.adobe.com/91yF4rq5CqbAtgfY9X31FmgiCynSJFHaNF1KKsKDycg
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments, Segments (CJA)
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
   - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+    internal-label: Audiences
   - id: df28738e-9c71-4aa8-929e-edde22340cc6
+    internal-label: Data Dictionary
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
   - id: e4a0bad2-b448-47f1-9fa6-222ebdb3b5b0
+    internal-label: Alerts
   - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+    internal-label: Exports
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Insights
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: 972
+source-wordcount: '912'
 ht-degree: 100%
-
 ---
-
 # Vue d’ensemble des composants
 
 Les composants sont des fonctionnalités de Customer Journey Analytics qui peuvent être utilisées dans des visualisations (telles qu’un tableau à structure libre) ou qui complètent les fonctionnalités de rapport.
@@ -97,36 +112,36 @@ Vous pouvez gérer les composants (individuellement ou en en sélectionnant plus
 
 Les composants personnalisés peuvent également être gérés par l’intermédiaire de leurs gestionnaires de composants respectifs. Par exemple, consultez [Gérer les segments](/help/components/segments/seg-manage.md).
 
-## Gestion de la liste des composants
+## Gérer la liste des composants
 
 Vous pouvez rechercher, filtrer et trier la liste des composants dans le panneau de gauche d’Analysis Workspace afin de localiser un composant particulier.
 
 ### Recherche
 
-1. Sélectionnez l’icône **Composants** ![Composants](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) dans le panneau de gauche.
+1. Sélectionnez l’icône **Composants** ![Composants](/help/assets/icons/Curate.svg) dans le panneau de gauche.
 
 2. Dans le champ de recherche, commencez à saisir le nom du composant que vous souhaitez utiliser dans votre projet.
 
-   Une couleur et une icône permettent d’identifier le type de composant. **Les dimensions** ![icône Dimension](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) sont orange, **les segments** ![icône Segment](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) sont bleus, **les périodes** ![icône Période](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) sont violettes et **les mesures** ![icône Mesure](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) sont vertes.<br/>L’icône Adobe ![Logo Adobe](/help/assets/icons/AdobeLogoSmall.svg) indique soit un modèle de mesure calculée, soit un modèle de segment. L’icône de calculateur ![Icône de calculateur](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) indique une mesure calculée créée par un administrateur ou une administratrice de votre organisation.
+   Une couleur et une icône permettent d’identifier le type de composant. **Les dimensions** ![icône Dimension](/help/assets/icons/Data.svg) sont orange, **les segments** ![icône Segment](/help/assets/icons/Segmentation.svg) sont bleus, **les périodes** ![icône Période](/help/assets/icons/Calendar.svg) sont violettes et **les mesures** ![icône Mesure](/help/assets/icons/Event.svg) sont vertes.<br/>L’icône Adobe ![Logo Adobe](/help/assets/icons/AdobeLogoSmall.svg) indique soit un modèle de mesure calculée, soit un modèle de segment. L’icône de calculateur ![Icône de calculateur](/help/assets/icons/Calculator.svg) indique une mesure calculée créée par un administrateur ou une administratrice de votre organisation.
 
 3. Sélectionnez le composant dans le menu déroulant.
 
 ### Filtre
 
-1. Sélectionnez l’icône **Composants** ![Icône des composants](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) dans le panneau de gauche.
+1. Sélectionnez l’icône **Composants** ![Icône des composants](/help/assets/icons/Curate.svg) dans le panneau de gauche.
 
-2. Sélectionnez **Filtre** ![Icône de filtre de dictionnaire de données](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) ou saisissez `#` dans le champ de recherche.
+2. Sélectionnez **Filtre** ![Icône de filtre de dictionnaire de données](/help/assets/icons/Filter.svg) ou saisissez `#` dans le champ de recherche.
 
 3. Sélectionnez l’une des options de filtre suivantes pour filtrer la liste des composants :
 
    | Icône | Option de filtre | Description |
    |---------|---|----------|
-   | ![Coche](/help/assets/icons/Checkmark.svg) | **[!UICONTROL Approuvés]** | Afficher uniquement les composants marqués comme approuvés par l’administration. |
+   | ![Coche](/help/assets/icons/Checkmark.svg) | **[!UICONTROL Approuvés]** | Afficher uniquement les composants marqués comme approuvés par un administrateur |
    | ![Étoile](/help/assets/icons/Star.svg) | **[!UICONTROL Favoris]** | Affichez uniquement les composants figurant dans votre liste de favoris. <br/>Pour plus d’informations sur l’ajout de composants à votre liste de favoris, consultez [Gérer les composants](#manage-components). |
    | ![Dimensions](/help/assets/icons/Dimensions.svg) | **[!UICONTROL Dimensions]** | Afficher uniquement les composants qui sont des dimensions. |
    | ![Événement](/help/assets/icons/Event.svg) | **[!UICONTROL Mesures]** | Afficher uniquement les composants qui sont des mesures. |
    | ![Segmentation](/help/assets/icons/Segmentation.svg) | **[!UICONTROL Segments]** | Afficher uniquement les composants qui sont des segments. |
-   | ![Calendrier](/help/assets/icons/Calendar.svg) | **[!UICONTROL Périodes]** | Affiche uniquement les composants qui sont des périodes. |
+   | ![Calendrier](/help/assets/icons/Calendar.svg) | **[!UICONTROL Périodes]** | Affiche uniquement les composants qui sont des Périodes. |
    | ![Libellé](/help/assets/icons/Label.svg) | **[!UICONTROL *Nom d’étiquette *]** | Affiche uniquement les composants avec les étiquettes spécifiques sélectionnées. Une étiquette dédiée est disponible pour le modèle d’Adobe qui sont les [mesures calculées par défaut](/help/components/calc-metrics/default-calcmetrics.md) d’Adobe. |
 
    Sélectionnez ![CrossSize75](/help/assets/icons/CrossSize75.svg) dans un filtre pour supprimer le filtre.
@@ -139,9 +154,9 @@ Vous pouvez rechercher, filtrer et trier la liste des composants dans le panneau
 
 1. (Facultatif) Appliquez des filtres à la liste des composants, comme décrit dans la section [Filtrer la liste des composants](#filter-the-component-list).
 
-2. Sélectionnez **Composants** ![Icône des composants](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) dans le panneau de gauche.
+2. Sélectionnez **Composants** ![Icône des composants](/help/assets/icons/Curate.svg) dans le panneau de gauche.
 
-3. Sélectionnez **Trier** ![Icône Trier les composants](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg), puis sélectionnez l’une des options de filtre suivantes pour trier la liste des composants.
+3. Sélectionnez **Trier** ![Icône Trier les composants](/help/assets/icons/SortOrderDown.svg), puis sélectionnez l’une des options de filtre suivantes pour trier la liste des composants.
 
 Les options de tri disponibles sont les suivantes :
 
