@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hold: true
 role: Admin
-source-git-commit: 7cd3764ebbab83530ebb42f2041aee4bd390d168
+source-git-commit: 42b73f2843244a02fd51301d8d99282ae5f309cd
 workflow-type: tm+mt
-source-wordcount: '1589'
+source-wordcount: '1710'
 ht-degree: 0%
 ---
 
@@ -28,8 +28,8 @@ Les données de médias payants sont ingérées par le biais des connecteurs sou
 Vérifiez que vous disposez des droits d&#39;accès suivants dans Experience Platform :
 
 * Autorisation d’affichage et de gestion des sources.
-* Un sandbox pour travailler.
 * Autorisation de créer des schémas, des jeux de données et des flux de données.
+* Sandbox sélectionné pour fonctionner. Vous devez choisir le sandbox avant de poursuivre les étapes de configuration.
 
 Si vous utilisez [!DNL Meta Ads] comme source, veillez également à respecter les conditions préalables suivantes :
 
@@ -75,23 +75,33 @@ Le jeu de données des mesures récapitulatives peut inclure les groupes de mesu
 * **Engagement social** : mentions J’aime, commentaires et suivis.
 * **Attribution et chemin** : détails du modèle d’attribution, degré de confiance, poids, mesures de chemin et contribution du canal.
 * **Qualité et fraude** : scores de qualité, indicateurs de fraude, taux de trafic non valides et mesures de sécurité de la marque.
-* **Répartitions dimensionnelles** : canal, réseau publicitaire, type d’appareil, tranche d’âge, sexe, pays, ville, langue, jour de la semaine, catégorie d’audience, format créatif et type de répartition.
+* **Répartitions dimensionnelles** : les données peuvent être ventilées par canal, réseau publicitaire, type d’appareil, tranche d’âge, sexe, pays, ville, langue, jour de la semaine, catégorie d’audience, format de contenu créatif et d’autres dimensions selon la plateforme source.
 
 ### Jeux de données standard
 
-Lorsque vous connectez une source de médias achetés, Adobe fournit 12 jeux de données de médias achetés standard en fonction des classes de schéma et des groupes de champs de médias achetés globaux. Ces jeux de données incluent les six jeux de données de recherche, le jeu de données de mesures récapitulatives et les jeux de données annexes. Les 12 jeux de données doivent être présents pour que les données de médias payants soient correctement résolues en aval.
+Lorsque vous connectez une source de médias achetés, Adobe fournit 12 jeux de données de médias achetés standard en fonction des classes de schéma et des groupes de champs de médias achetés globaux. Ces jeux de données comprennent six jeux de données de mesures récapitulatives, les six jeux de données de recherche et des jeux de données annexes. Les 12 jeux de données de résumé et de recherche doivent être présents pour que les données de médias achetés soient correctement résolues en aval.
 
-* Recherche de campagne multimédia payante
-* Recherche de ressources multimédias payantes
-* Recherche d’expérience de média payante
-* Recherche de publicité multimédia payante
-* Recherche de groupe publicitaire de médias payants
+Jeux de données requis :
+
+* Résumé du compte de média payant
+* Résumé de la campagne média payante
+* Résumé du groupe publicitaire du média payant
+* Résumé de l’annonce publicitaire médias payants
+* Résumé de l’expérience de média payant
+* Résumé des ressources multimédia payantes
 * Recherche de compte média payant
+* Recherche de campagne multimédia payante
+* Recherche de groupe publicitaire média payant
+* Recherche de publicité multimédia payante
+* Recherche d’expérience de média payante
+* Recherche de ressources multimédias payantes
+
+Jeux de données pris en charge, par exemple :
+
 * Média payant et recherche démographique
 * Résumé de l’emplacement de l’expérience multimédia payante
 * Résumé géographique et médias payants
 * Résumé de l’annonce publicitaire pour médias payants (mesures récapitulatives)
-* Résumé des ressources multimédia payantes
 * Résumé démographique des ressources multimédias payantes
 
 ## Ingestion de données de médias achetés dans Adobe Experience Platform
@@ -100,10 +110,12 @@ Procédez comme suit pour connecter une source et ingérer des données de médi
 
 1. Vérifiez que vous disposez des autorisations source Experience Platform requises et d’un accès à la plateforme publicitaire.
 1. Dans Experience Platform, accédez à **[!UICONTROL Sources]** > **[!UICONTROL Catalogue]** > **[!UICONTROL Advertising]**.
-1. Sélectionnez le connecteur à utiliser, par exemple **[!DNL Meta Ads]**, puis sélectionnez **[!UICONTROL Configurer]**.
+1. 
+   1. Assurez-vous que vous vous trouvez dans le sandbox qui contient les jeux de données de médias achetés.
+1. Sélectionnez le connecteur à utiliser, par exemple **[!DNL Meta Ads]**. Sélectionnez **[!UICONTROL Configurer]** pour créer une connexion ou sélectionnez **[!UICONTROL Ajouter des données]** pour ajouter plus de données à une connexion existante.
 1. Authentifiez-vous avec [!DNL OAuth 2.0] en vous connectant avec un utilisateur disposant de l’accès requis au niveau de l’annonceur.
 1. Sélectionnez les comptes publicitaires, les entités et les données insight à ingérer.
-1. Confirmez les mappages cibles au schéma de média payant global et vérifiez que les jeux de données de recherche et de mesures récapitulatives sont correctement configurés.
+1. Vérifiez que les jeux de données de recherche et de mesures récapitulatives sont correctement configurés.
 1. Saisissez les paramètres du flux de données, confirmez les jeux de données cibles et configurez le planning d’ingestion.
 1. Enregistrez le flux de données et surveillez les exécutions dans **[!UICONTROL Sources]** > **[!UICONTROL Flux de données]**.
 1. Vérifiez que les jeux de données de médias achetés standard existent et contiennent des données.
@@ -112,7 +124,7 @@ Avant de passer à Customer Journey Analytics, validez les données ingérées :
 
 * Vérifiez que les `GUID` d’entité et les valeurs d’ID natives sont renseignées de manière cohérente sur les mesures récapitulatives et les jeux de données de recherche.
 * Vérifiez que chaque ligne de mesures récapitulatives comprend un horodatage.
-* Vérifiez que les champs de création de rapports clés tels que la campagne, le canal, le réseau publicitaire, les impressions, les clics, les dépenses, la région et le type d’appareil contiennent des valeurs.
+* Vérifiez que les champs de création de rapports clés tels que les dimensions (par exemple : `channel`, `adNetwork`) et les mesures (par exemple : `impressions`, `clicks`, `spend`) contiennent des valeurs. Notez que certains champs tels que `region` peuvent ne pas être renseignés par toutes les plateformes sources.
 * Vérifiez que les valeurs de devise et de fuseau horaire sont cohérentes entre les comptes concernés.
 
 ## Importation de données de médias achetés dans Customer Journey Analytics
@@ -124,9 +136,9 @@ Customer Journey Analytics ne crée pas de rapports directement sur les jeux de 
 Pour créer ou mettre à jour une connexion, procédez comme suit :
 
 1. Dans Customer Journey Analytics, [créez ou modifiez une connexion existante](/help/connections/create-connection.md).
-1. Veillez à sélectionner le sandbox qui contient les jeux de données de médias achetés.
-1. Ajoutez le jeu de données de mesures récapitulatives en tant que données récapitulatives.
-1. Ajoutez chaque jeu de données de recherche en tant que jeu de données de recherche et joignez le jeu de données aux données de résumé par les identifiants d’entité correspondants pour le compte, la campagne, le groupe publicitaire, l’annonce, la ressource et l’expérience.
+1. Veillez à sélectionner le sandbox qui contient les jeux de données de médias achetés dans le cadre de la configuration de la connexion.
+1. Ajoutez les jeux de données de mesures récapitulatives en tant que données récapitulatives. Si plusieurs jeux de données de mesures récapitulatives sont disponibles, utilisez [search](/help/connections/create-connection.md#add-datasets) pour filtrer selon les classes `Paid Media` afin d’identifier les jeux de données corrects.
+1. Ajoutez chaque jeu de données de recherche en tant que jeu de données de recherche. Joignez le jeu de données de recherche aux données de résumé à l’aide des identifiants GUID d’entité correspondants (les clés globales générées par Adobe) pour le compte, la campagne, le groupe publicitaire, la publicité, la ressource et l’expérience. Certaines plateformes sources peuvent également prendre en charge les jointures sur les valeurs d’identifiant natives.
 1. Vous pouvez éventuellement ajouter des données d’événement de parcours de navigation si vous souhaitez mettre en relation des données de médias achetés agrégées avec des métadonnées partagées telles que des identifiants, des codes de suivi ou des paramètres de `UTM`.
 1. Examinez les [paramètres spécifiques au jeu de données](/help/connections/create-connection.md#dataset-settings) pour chaque jeu de données.
 1. Enregistrez la connexion et confirmez que la connexion commence à renvoyer des données.
@@ -174,5 +186,5 @@ Utilisez la liste de contrôle suivante pour valider l’implémentation.
 
 >[!MORELIKETHIS]
 >
->[Connecteur source Meta Ads](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/advertising/meta-ads)
+>[Connecteur source Meta Ads](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/advertising/meta-ads)
 >
