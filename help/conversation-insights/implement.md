@@ -16,7 +16,7 @@ feature_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 4a005c03e46547810de8d27fcf85a041ab59a4d6
+source-git-commit: 84e89fe4ecbd4dd479c9dad12175a9a93e7578cb
 workflow-type: tm+mt
 source-wordcount: '2592'
 ht-degree: 5%
@@ -427,7 +427,7 @@ Pour implémenter des événements qui propagent le groupe de champs Information
 Vous pouvez ajouter des groupes de champs facultatifs au schéma que vous utilisez pour les jeux de données d’invite, de réponse et de commentaires. Par exemple :
 
 * Groupe de champs **Détails web**. Pour capturer les détails de la page web dans laquelle la conversation a été incorporée.
-* Groupe de champs Détails du Commerce **&#x200B;**. Pour capturer les détails du produit recommandé mentionné dans le cadre de la conversation.
+* Groupe de champs Détails du Commerce ****. Pour capturer les détails du produit recommandé mentionné dans le cadre de la conversation.
 
 
 
@@ -623,7 +623,6 @@ Vous trouverez ci-dessous un exemple d’utilisation du groupe de champs Événe
 ## Collecte de données
 
 Utilisez la stratégie de collecte de données suivante pour Conversation Insights.
-
 
 ### Types d’événements
 

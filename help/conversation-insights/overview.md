@@ -17,7 +17,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 4a005c03e46547810de8d27fcf85a041ab59a4d6
+source-git-commit: 84e89fe4ecbd4dd479c9dad12175a9a93e7578cb
 workflow-type: tm+mt
 source-wordcount: '1114'
 ht-degree: 1%
@@ -68,7 +68,7 @@ Une conversation est le niveau de conteneur ou de regroupement. Ce conteneur est
 * Comment le sentiment a-t-il changé au cours d’une conversation ?
 * Quelles conversations ont finalement abouti à une conversion ?
 
-Pour plus d’informations sur l’implémentation, reportez-vous à l’objet [conversation](./implement.md#conversation) dans la documentation [&#x200B; Implémenter des informations sur la conversation](./implement.md).
+Pour plus d’informations sur l’implémentation, reportez-vous à l’objet [conversation](./implement.md#conversation) dans la documentation [ Implémenter des informations sur la conversation](./implement.md).
 
 ### Tourner
 
@@ -151,6 +151,7 @@ Pour identifier l’application ou le service de l’agent, des informations sur
 Si votre application d’expérience de l’agent prend en charge l’appel des compétences qui représentent les fonctionnalités invoquées pendant le traitement, vous pouvez ajouter ces appels de compétences au sein du groupe de champs informations sur l’agent .
 
 Pour plus d’informations sur l’implémentation, reportez-vous au groupe de champs [informations agentiques](./implement.md#agentic-information-field-group) dans la documentation [Implémenter les informations de conversation](./implement.md).
+
 
 ## Fonctionnement
 
