@@ -55,9 +55,9 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 2c0efe27451163d9fe4fe0f60bab11151a8ac6f1
+source-git-commit: 17af5df91a28b3a6e44528f88661b6dcc86d6cae
 workflow-type: tm+mt
-source-wordcount: '7162'
+source-wordcount: '7170'
 ht-degree: 96%
 ---
 
@@ -69,19 +69,21 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 
 | Fonctionnalité | Description |
 |---|---|
+| **Octobre 2026** | |
+| Informations sur la conversation | [Documentation](/help/conversation-insights/overview.md) pour les informations sur les conversations. |
 | **Septembre 2026** | |
-| Comparaison de la zone de travail de parcours sur les flèches et les abandons | Mise à jour du paramètre [!UICONTROL Comparer à] dans [Configurer une visualisation de zone de travail de Parcours &#x200B;](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#configure-visualization-settings) afin d’afficher le pourcentage de changement entre les périodes sur chaque nœud, flèche et abandon du parcours. |
-| Publications de blog intégrées | Intégration des articles de blog suivants :<ul><li>[Playbook complet pour la gestion de « Aucune valeur » dans Adobe CJA](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/the-complete-playbook-for-handling-no-value-in-adobe-cja-12769?profile.language=fr#M598)</li><li>[Exploration approfondie des cas d’utilisation de sortie de données Adobe Experience Platform et Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/adobe-experience-platform-customer-journey-analytics-data-egress-use-cases-deep-dive-12725?profile.language=fr)</li></ul>dans notre article sur les cas d’utilisation de [Exportation de données](/help/use-cases/data-export/overview.md) et un nouvel article sur les cas d’utilisation de [Aucune valeur](/help/use-cases/data-views/no-value.md). |
+| Comparaison de la zone de travail de parcours sur les flèches et les abandons | Mise à jour du paramètre [!UICONTROL Comparer à] dans [Configurer une visualisation de zone de travail de Parcours ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#configure-visualization-settings) afin d’afficher le pourcentage de changement entre les périodes sur chaque nœud, flèche et abandon du parcours. |
+| Publications de blog intégrées | Intégration des articles de blog suivants :<ul><li>[Playbook complet pour la gestion de « Aucune valeur » dans Adobe CJA](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/the-complete-playbook-for-handling-no-value-in-adobe-cja-12769#M598)</li><li>[Exploration approfondie des cas d’utilisation de sortie de données Adobe Experience Platform et Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/adobe-experience-platform-customer-journey-analytics-data-egress-use-cases-deep-dive-12725)</li></ul>dans notre article sur les cas d’utilisation de [Exportation de données](/help/use-cases/data-export/overview.md) et un nouvel article sur les cas d’utilisation de [Aucune valeur](/help/use-cases/data-views/no-value.md). |
 | Nouvelles actions de raccourci de redimensionnement | Les nouveaux raccourcis clavier d’Analysis Workspace vous permettent désormais de [redimensionner un panneau ou une visualisation](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md#resize-panel-or-visualization) qu’il soit plus large, plus étroit, plus grand ou plus court. |
 | **août 2026** | |
 | Clarification des informations sur l’actualisation des audiences | Lors de la [publication d’audiences](/help/components/audiences/publish.md#audience-builder), a précisé que le nombre d’audiences qui peuvent être planifiées pour s’actualiser dépend de vos droits Customer Journey Analytics et est compris entre 75 et 150. |
 | **Juillet 2026** | |
-| Intégration entrante de Brand Visibility | Documentation pour l’intégration entrante [&#128279;](/help/integrations/bv.md#inbound-integration). |
+| Intégration entrante de Brand Visibility | Documentation pour l’intégration entrante [](/help/integrations/bv.md#inbound-integration). |
 | Interface Utilisation | Mises à jour de la documentation [Interface d’utilisation](/help/connections/manage-connections.md#usage) pour les connexions. |
 | Analyse des sous-événements | Documentation pour [analyse de sous-événement](/help/components/segments/sub-event.md) et [conteneurs personnalisés](/help/data-views/create-dataview.md#custom-containers). |
 | Classifications intégrées | Documentation pour les [classifications intégrées](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md#inline-classifications). |
 | **Juin 2026** | |
-| Nouveau guide GA4 | Ajout de la section [Transition de Google Analytics 4 vers Customer Journey Analytics](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/compare-aa-cja/ga-to-cja/home). |
+| Nouveau guide GA4 | Ajout de la section [Transition de Google Analytics 4 vers Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/ga-to-cja/home). |
 | **Mai 2026** | |
 | Bibliothèque JavaScript pour Content Analytics | Documentation sur la mise en œuvre de Content Analytics pour le canal web à l’aide de la [bibliothèque JavaScript Content Analytics](/help/content-analytics/config/tags-agnostic.md) sans nécessiter de balises de collecte de données Experience Platform. |
 | Considérations relatives à Data Mirror | [Documentation](/help/data-mirror/considerations.md) qui décrit les facteurs à prendre en compte lors de la configuration de [jeux de données Data Mirror](/help/data-mirror/data-mirror.md). |
@@ -116,7 +118,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Configuration de l’attribution | Mises à jour supplémentaires pour refléter les nouvelles options de configuration de l’attribution pour le modèle, le conteneur et l’intervalle de recherche en amont. |
 | Ingérer et utiliser des audiences Experience Platform | Mise à jour de l’article sur les cas d’utilisation relatif à [l’ingestion et l’utilisation d’audiences Experience Platform](/help/use-cases/data-ingestion/ingest-aep-segments.md). |
 | Préparer votre organisation à la mise à niveau vers Customer Journey Analytics | Ajout d’informations sur la manière de [préparer une organisation à la mise à niveau vers Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-org-readiness.md). |
-| Créer un rapport sur le trafic généré par LLM et IA | Ajout d’un [article de cas d’utilisation](/help/use-cases/data-views/derived-fields/ai-traffic.md) sur la création de rapports sur le trafic généré par LLM et IA à l’aide de champs dérivés comme base. Cet article s’appuie sur l’article de blog [Suivi et analyse du trafic généré par LLM et par IA dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967?profile.language=fr). |
+| Créer un rapport sur le trafic généré par LLM et IA | Ajout d’un [article de cas d’utilisation](/help/use-cases/data-views/derived-fields/ai-traffic.md) sur la création de rapports sur le trafic généré par LLM et IA à l’aide de champs dérivés comme base. Cet article s’appuie sur l’article de blog [Suivi et analyse du trafic généré par LLM et par IA dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967). |
 | **Septembre 2025** | |
 | Dates antérieures à 1900 | Ajout d’une [note](/help/connections/create-connection.md#datasets) sur la manière dont les dates antérieures à 1900 sont gérées par Customer Journey Analytics. |
 | Créer des rapports en temps réel | Ajout de la documentation sur la [création de rapports en temps réel](/help/components/real-time/real-time.md) dans Customer Journey Analytics. |
@@ -189,7 +191,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | **Août 2024** | |
 | Exemple de projet B2B | Ajout d’un [cas d’utilisation](/help/use-cases/b2b/example.md) expliquant comment paramétrer, configurer et générer des rapports sur les données B2B au niveau du profil (personne) dans Customer Journey Analytics, à l’aide de la nouvelle fonctionnalité [Transformer les jeux de données pour les recherches B2B](/help/connections/transform-datasets-b2b-lookups.md). |
 | Mise à jour des cas d’utilisation d’export de données | Ajout d’exemples de requêtes plus détaillés au [service de requête (Data Distiller) et Exporter des jeux de données](/help/use-cases/data-export/queryservice-export-datasets.md) pour illustrer comment appliquer correctement l’attribution entre les sessions à l’aide d’un intervalle de recherche en amont. |
-| Données de résumé | Ajout d’une documentation sur les [données récapitulatives](/help/data-views/summary-data.md) et les [&#x200B; paramètres du composant de groupe de données récapitulatives](/help/data-views/component-settings/summary-data-group.md) et d’un [cas d’utilisation de données récapitulatives](/help/use-cases/data-views/summary-data.md). |
+| Données de résumé | Ajout d’une documentation sur les [données récapitulatives](/help/data-views/summary-data.md) et les [ paramètres du composant de groupe de données récapitulatives](/help/data-views/component-settings/summary-data-group.md) et d’un [cas d’utilisation de données récapitulatives](/help/use-cases/data-views/summary-data.md). |
 | **Juillet 2024** | |
 | Ajout d’informations à propos des mesures calculées rapides | Mise à jour des informations dans [Mesures](/help/components/apply-create-metrics.md) afin de clarifier la différence entre les [mesures calculées créées dans le créateur de mesures calculées](/help/components/apply-create-metrics.md#create-calculated-metrics-for-all-projects) et [celles créées sous forme de mesures calculées rapides dans un seul projet](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project). Ajout également d’informations supplémentaires sur les mesures calculées rapides.<p>Les mesures calculées créées dans le créateur de mesures calculées sont disponibles dans la liste des composants et peuvent être appliquées aux projets dans l’ensemble de l’organisation, tandis que les mesures calculées qui sont créées sous forme de mesures calculées rapides ne sont disponibles que dans le projet dans lequel elles ont été créées.</p><p>Mise à jour des informations dans [Créer des mesures](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) pour effectuer des clarifications similaires.</p> |
 | Fonction de déduplication des champs dérivés | Ajout d’une documentation sur la fonction de [Déduplication](/help/data-views/derived-fields/derived-fields.md#deduplicate) des champs dérivés. |
