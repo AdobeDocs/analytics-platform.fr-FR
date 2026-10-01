@@ -115,7 +115,7 @@ En plus de l’ajout en tant qu’administrateur ou administratrice de produit d
 * Créer, mettre à jour et supprimer des [vues de données](/help/data-views/data-views.md)
 * Créer, mettre à jour et supprimer des [connexions](/help/connections/overview.md)
 
-  Pour effectuer cette tâche, les utilisateurs doivent faire partie d&#39;un rôle **** qui fournit les autorisations suivantes :
+  Pour effectuer cette tâche, les utilisateurs doivent faire partie d&#39;un rôle **&#x200B;**&#x200B;qui fournit les autorisations suivantes :
 
   | Catégorie | Autorisation | Description |
   |---|---|---|
@@ -125,11 +125,11 @@ En plus de l’ajout en tant qu’administrateur ou administratrice de produit d
   | [!UICONTROL Gestion des données] | [!UICONTROL Affichage des jeux de données] | Accès en lecture seule aux jeux de données et aux schémas. |
   | [!UICONTROL Identity Management] | [!UICONTROL Affichage des espaces de noms d’identité] | Accès en lecture seule aux espaces de noms d’identité. |
 
-  Pour plus d’informations sur les rôles d’Experience Platform, voir [ Présentation du contrôle d’accès ](https://experienceleague.adobe.com/fr/docs/experience-platform/access-control/home).
+  Pour plus d’informations sur les rôles d’Experience Platform, voir [&#x200B; Présentation du contrôle d’accès &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/access-control/home).
 
 * Gérer [Mesures et dimensions partagées](/help/data-views/shared-metrics-dimensions/smd-overview.md)
 
-  Pour accéder au gestionnaire **Mesures et dimensions partagées**, les utilisateurs doivent faire partie d’un rôle Experience Platform **** qui fournit les autorisations suivantes :
+  Pour accéder au gestionnaire **Mesures et dimensions partagées**, les utilisateurs doivent faire partie d’un rôle Experience Platform **&#x200B;**&#x200B;qui fournit les autorisations suivantes :
 
   | Catégorie | Autorisation | Description |
   |---|---|---|
@@ -137,7 +137,7 @@ En plus de l’ajout en tant qu’administrateur ou administratrice de produit d
   | [!UICONTROL Gouvernance des données] | [!UICONTROL Afficher les politiques d’utilisation des données] | Accès en lecture seule pour les politiques dʼutilisation des données appartenant à votre organisation. |
   | [!UICONTROL Gouvernance des données] | [!UICONTROL Gestion des politiques d’utilisation des données] | Accès à la lecture, la création, la modification et la suppression des politiques dʼutilisation des données. |
 
-  Pour plus d’informations sur les autorisations Experience Platform, voir [ Sandbox et autorisations ](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home#sandboxes-and-permissions).
+  Pour plus d’informations sur les autorisations Experience Platform, voir [&#x200B; Sandbox et autorisations &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home#sandboxes-and-permissions).
 
 * Si Journey Optimizer est intégré à Customer Journey Analytics où il existe des connexions Journey Optimizer, les autorisations [Parcours](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/high-low-permissions#journey-capability) doivent également être ajoutées pour accéder aux connexions :
 
@@ -150,14 +150,14 @@ En plus de l’ajout en tant qu’administrateur ou administratrice de produit d
 
 * Exporter des jeux de données vers des [destinations](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/activate/export-datasets)
 
-  Pour effectuer cette tâche, les utilisateurs doivent faire partie d’un rôle **** qui fournit les [autorisations de destinations](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home#access-controls) suivantes :
+  Pour effectuer cette tâche, les utilisateurs doivent faire partie d’un rôle **&#x200B;**&#x200B;qui fournit les [autorisations de destinations](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home#access-controls) suivantes :
 
   | Catégorie | Autorisation | Description |
   |---|---|---|
   | [!UICONTROL Destinations] | [!UICONTROL Gérer les destinations] | Accès à la lecture, à la création et à la suppression des connexions de destination et des comptes de destination. |
   | [!UICONTROL Destinations] | [!UICONTROL Activer les destinations] | Permet aux utilisateurs et utilisatrices d’activer des segments vers des destinations existantes. Active l’étape de mappage dans le workflow d’activation. Cette autorisation nécessite également que le droit Afficher les destinations soit accordé à la personne qui souhaite activer les données vers des destinations. |
 
-  Pour plus d’informations sur les autorisations Experience Platform, voir [ Sandbox et autorisations ](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home#sandboxes-and-permissions).
+  Pour plus d’informations sur les autorisations Experience Platform, voir [&#x200B; Sandbox et autorisations &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home#sandboxes-and-permissions).
 
 
 * Utiliser l’[extension BI](../data-views/bi-extension.md)
@@ -206,9 +206,9 @@ L’onglet **[!UICONTROL Autorisations]** s’affiche sur chaque profil de produ
 | [!UICONTROL Outils de création de rapports] | [!UICONTROL Partager les liens du projet avec tout le monde] | Autoriser le [partage du projet avec tout le monde.](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/curate-share/share-projects) |
 | [!UICONTROL Outils de création de rapports] | [!UICONTROL Prévisions] | Autoriser l’accès à la fonctionnalité [Prévision](../analysis-workspace/c-forecast/forecasting.md) d’Analysis Workspace |
 | [!UICONTROL Outils de création de rapports] | [!UICONTROL Assistant IA : connaissances du produit] | Autoriser l’accès à l’[assistant AI](../ai-assistant.md) pour acquérir des connaissances sur les produits. |
-| [!UICONTROL Outils de création de rapports] | [!UICONTROL Agent Data Insights] | Autoriser les utilisateurs à accéder à [](../data-analysis-ai.md) pour les informations de données pilotées par l’IA. |
+| [!UICONTROL Outils de création de rapports] | [!UICONTROL Agent Data Insights] | Autoriser les utilisateurs à accéder à [&#128279;](../data-analysis-ai.md) pour les informations de données pilotées par l’IA. |
 | [!UICONTROL Outils de création de rapports] | [!UICONTROL Légendes intelligentes] | Autoriser l’accès aux [légendes intelligentes](/help/analysis-workspace/visualizations/intelligent-captions.md). |
-| [!UICONTROL Outils de création de rapports] | [!UICONTROL Accès MCP] | Autoriser les utilisateurs à accéder au serveur MCP [](https://developer.adobe.com/analytics-mcp/docs/cja/). |
+| [!UICONTROL Outils de création de rapports] | [!UICONTROL Accès MCP] | Autoriser les utilisateurs à accéder au serveur MCP [&#128279;](https://developer.adobe.com/analytics-mcp/docs/cja/). |
 | [!UICONTROL Outils des vues de données] | [!UICONTROL Export du tableau complet] | Autorise l’[export des tableaux complets dans le cloud](/help/analysis-workspace/export/export-cloud.md) |
 | [!UICONTROL Outils des vues de données] | [!UICONTROL Extension BI de CJA] | Autoriser l’utilisation de l’extension [BI](../data-views/bi-extension.md). |
 
