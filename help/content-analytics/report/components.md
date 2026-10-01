@@ -8,25 +8,32 @@ exl-id: 79bf235a-6f6e-4b04-bcd8-1ff884536648
 TQID: https://experienceleague.adobe.com/grwbNht938ivCsnzlFBzP8Ga8h1udmQLcZngxY6s0-4
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: ad5685a0-8296-4a0c-814c-658c10b4af12
+    internal-label: Content Analytics
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: e3936b74ba4b4cf23e1b7235e545091a8cb546ed
+    internal-label: Metadata
+source-git-commit: fec14c8ed1f94e16423682a165198dbda760f78d
 workflow-type: tm+mt
-source-wordcount: 1869
-ht-degree: 56%
-
+source-wordcount: '1943'
+ht-degree: 58%
 ---
-
 
 # Composants de Content Analytics
 
@@ -172,58 +179,63 @@ Dans les tableaux ci-dessous, ![généré par l’IA](/help/assets/icons/AI.svg)
 
 ## Média acheté
 
-Ces composants sont ajoutés à une vue de données lorsque le canal **Média payant** est activé par le biais d’un connecteur source de [médias payants Adobe Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/home) (par exemple, Meta Ads ou Google Ads). Ils vous permettent de créer des rapports sur les entités de médias payantes, les créations et les dépenses associées à votre contenu web et mobile.
+Ces composants sont ajoutés à une vue de données lorsque le canal **Média payant** est activé par le biais d’un connecteur source de médias payants [Adobe Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/home). Ils vous permettent de créer des rapports sur les campagnes média payantes, la création et les dépenses, ainsi que sur votre contenu web et mobile. La disponibilité et les valeurs renseignées dépendent du réseau publicitaire et du grain de reporting.
 
 Les [attributs de ressource](#asset-attributes) et [attributs d’expérience](#experience-attributes) générés par l’IA décrits ci-dessus sont également disponibles pour les créatifs de médias achetés. La même fonctionnalité s’exécute sur les canaux Web, Mobile et Média payant.
 
 ### Dimensions Média payant
 
+Les dimensions ci-dessous incluent les noms, statuts et autres détails des comptes publicitaires, des campagnes, des groupes publicitaires, des publicités, des expériences et des ressources.
+
 | Titre | Description | Type |
 |---|---|---|
 | Réseau publicitaire | Plateforme publicitaire à partir de laquelle les données de médias payants ont été ingérées. | Dimension |
+| GUID de compte | Identifiant unique du compte publicitaire. | Dimension |
+| GUID de campagne | Identifiant unique de la campagne média payante. | Dimension |
+| GUID de groupe publicitaire | Identifiant unique du groupe publicitaire. | Dimension |
+| GUID d’annonce publicitaire | Identifiant unique de l’annonce publicitaire. | Dimension |
 | Nom de compte | Nom du compte publicitaire. | Dimension |
 | Nom de la campagne | Nom de la campagne média payante. | Dimension |
-| Nom de groupe publicitaire | Nom du groupe publicitaire (groupe publicitaire Meta / groupe publicitaire Google). | Dimension |
+| Nom du groupe publicitaire | Nom du groupe ou de la visionneuse d’annonces. | Dimension |
 | Nom de la publicité | Nom de l’annonce publicitaire. | Dimension |
 | Nom de l’expérience | Nom de l’expérience publicitaire (composition créative). | Dimension |
-| Nom de la ressource | Nom de la ressource de création. | Dimension |
+| Nom de la ressource (média payant) | Nom de la ressource de création. | Dimension |
 | État de la campagne | Statut de la campagne. | Dimension |
 | État du groupe publicitaire | Statut du groupe publicitaire. | Dimension |
 | État de l&#39;annonce | Statut de la publicité. | Dimension |
-| Statut de service | Statut de diffusion détaillé indiquant si l’entité diffuse actuellement. | Dimension |
 | Devise du compte | Devise du compte publicitaire. | Dimension |
 | Fuseau horaire du compte | Fuseau horaire du compte publicitaire. | Dimension |
 | Type de compte | Type du compte publicitaire. | Dimension |
-| Nom de l’entreprise du compte | Nom commercial associé au compte publicitaire. | Dimension |
+| Nom commercial du compte | Nom commercial associé au compte publicitaire. | Dimension |
 | Type de campagne | Type de canal Principal de la campagne. | Dimension |
 | Objectif de la campagne | Objectif de la campagne. | Dimension |
-| Stratégie d’enchères de la campagne | Stratégie d’enchères pour la campagne. | Dimension |
+| Stratégie d’enchères de campagne | Stratégie d’enchères pour la campagne. | Dimension |
 | Type de budget de campagne | Type de répartition budgétaire pour la campagne. | Dimension |
 | Budget quotidien de la campagne | Montant budgétaire quotidien, dans la devise du compte publicitaire. | Dimension |
-| Budget de durée de vie de la campagne | Montant du budget cumulé, dans la devise du compte publicitaire. | Dimension |
+| Budget de durée de campagne | Montant du budget cumulé, dans la devise du compte publicitaire. | Dimension |
 | Heure de début de la campagne | Date de début de la campagne. | Dimension |
 | Heure de fin de la campagne | À la fin de la campagne. | Dimension |
 | Type de groupe publicitaire | Type du groupe publicitaire. | Dimension |
-| Stratégie d’enchères du groupe publicitaire | Stratégie d’enchères pour le groupe publicitaire. | Dimension |
+| Type de stratégie d’enchères du groupe publicitaire | Stratégie d’enchères pour le groupe publicitaire. | Dimension |
 | Objectif d’optimisation du groupe publicitaire | Objectif d’optimisation pour le groupe publicitaire. | Dimension |
 | Heure de début du groupe publicitaire | Date de démarrage du groupe publicitaire. | Dimension |
 | Heure de fin du groupe publicitaire | Lorsque le groupe publicitaire s’est terminé. | Dimension |
 | Type d’annonce | Type/format de la publicité. | Dimension |
-| Statut de révision de la publicité | Statut de révision/approbation de la publicité. | Dimension |
-| Type de Creative publicitaire | Type de contenu créatif utilisé par la publicité. | Dimension |
+| Statut de diffusion de la publicité | Statut de diffusion de la publicité. | Dimension |
+| Statut de la vérification de la publicité | Statut de révision/approbation de la publicité. | Dimension |
+| Type de création publicitaire | Type de contenu créatif utilisé par la publicité. | Dimension |
 | Titre de la publicité | Titre/titre de la création publicitaire. | Dimension |
-| Call to action publicitaire | Call-to-action de la création publicitaire. | Dimension |
+| Appel à l’action de publicité | Call-to-action de la création publicitaire. | Dimension |
 | Ajouter une URL de destination | URL de destination de la publicité. | Dimension |
 | URL d’affichage de la publicité | Afficher l’URL affichée sur la publicité. | Dimension |
 | Type d’expérience | Type/format de l’expérience publicitaire. | Dimension |
-| URL de la page de destination Experience | URL de la page de destination de l’expérience. | Dimension |
-| Experience Call to action | Call-to-action de l’expérience. | Dimension |
+| URL de la page de destination de l’expérience | URL de la page de destination de l’expérience. | Dimension |
+| Appel à l’action d’expérience | Call-to-action de l’expérience. | Dimension |
 | Type de ressource | Type de la ressource de création (image ou vidéo, par exemple). | Dimension |
 | Largeur de la ressource | Largeur de la ressource, en pixels. | Dimension |
 | Hauteur de la ressource | Hauteur de la ressource, en pixels. | Dimension |
-| Rapport L/H Des Ressources | Format de la ressource. | Dimension |
+| Rapport L/H de ressource | Format de la ressource. | Dimension |
 | Orientation de la ressource | Orientation de la ressource. | Dimension |
-| Type d&#39;appareil | Répartition du type d’appareil pour les mesures signalées. | Dimension |
 | Placement | Répartition de l’emplacement pour les mesures signalées. | Dimension |
 | Platform | Répartition de la plateforme pour les mesures signalées. | Dimension |
 | Pays | Répartition par pays pour les mesures signalées. | Dimension |
@@ -237,10 +249,10 @@ Les [attributs de ressource](#asset-attributes) et [attributs d’expérience](#
 |---|---|---|
 | Impressions | Nombre d’affichages de la publicité. | Mesure |
 | Clics | Nombre de clics sur la publicité. | Mesure |
-| Dépense | Montant dépensé, dans la devise du compte publicitaire. | Mesure |
+| Dépense | Montant dépensé, tel qu’indiqué par la plateforme publicitaire. | Mesure |
 | Conversions | Nombre total de conversions. | Mesure |
 | Valeur de conversion | Valeur totale des conversions. | Mesure |
-| Portée | Nombre de personnes uniques ayant vu la publicité. | Mesure |
+| Portée | Portée de l’audience signalée par la plateforme publicitaire. L’agrégation de la portée sur plusieurs lignes de rapports ne déduplique pas les personnes. | Mesure |
 | Engagements | Nombre d’engagements avec la publicité. | Mesure |
 | Affichages de vidéos | Nombre de vues vidéo. | Mesure |
 | Video Completions | Nombre de vidéos visionnées jusqu’à la fin. | Mesure |
@@ -263,6 +275,8 @@ Les [attributs de ressource](#asset-attributes) et [attributs d’expérience](#
 {style="table-layout:fixed"}
 
 ### Mesures calculées de média payant
+
+Ces mesures calculées calculent les ratios à partir des mesures de base agrégées pour le grain déclaré, plutôt que de additionner des taux individuels.
 
 | Titre | Description | Type |
 |---|---|---|
