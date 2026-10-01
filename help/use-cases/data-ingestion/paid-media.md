@@ -110,7 +110,7 @@ Procédez comme suit pour connecter une source et ingérer des données de médi
 
 1. Vérifiez que vous disposez des autorisations source Experience Platform requises et d’un accès à la plateforme publicitaire.
 1. Dans Experience Platform, accédez à **[!UICONTROL Sources]** > **[!UICONTROL Catalogue]** > **[!UICONTROL Advertising]**.
-1. 
+1. &#x200B;
    1. Assurez-vous que vous vous trouvez dans le sandbox qui contient les jeux de données de médias achetés.
 1. Sélectionnez le connecteur à utiliser, par exemple **[!DNL Meta Ads]**. Sélectionnez **[!UICONTROL Configurer]** pour créer une connexion ou sélectionnez **[!UICONTROL Ajouter des données]** pour ajouter plus de données à une connexion existante.
 1. Authentifiez-vous avec [!DNL OAuth 2.0] en vous connectant avec un utilisateur disposant de l’accès requis au niveau de l’annonceur.
