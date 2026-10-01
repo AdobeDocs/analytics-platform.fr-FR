@@ -17,12 +17,14 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 3acb31df785d038def3432a9734b499810636860
+source-git-commit: e550b7005c12bc5e2fb92bea44767bae0d7db3dc
 workflow-type: tm+mt
 source-wordcount: '1117'
 ht-degree: 1%
 ---
 # Informations sur la conversation
+
+{{release-limited-testing}}
 
 Conversation Insights vous permet d’analyser les conversations à partir des expériences d’agent que vous proposez à vos clients. Ces expériences d’agent peuvent être basées sur des modèles de langage étendus (LLM) ou sur des conversations humaines. Par exemple, un bot conversationnel interagissant avec les transcriptions d’un client ou d’un centre d’appel.
 
@@ -68,7 +70,7 @@ Une conversation est le niveau de conteneur ou de regroupement. Ce conteneur est
 * Comment le sentiment a-t-il changé au cours d’une conversation ?
 * Quelles conversations ont finalement abouti à une conversion ?
 
-Pour plus d’informations sur l’implémentation, reportez-vous à l’objet [conversation](./implement.md#conversation) dans la documentation [&#x200B; Implémenter des informations sur la conversation](./implement.md).
+Pour plus d’informations sur l’implémentation, reportez-vous à l’objet [conversation](./implement.md#conversation) dans la documentation [ Implémenter des informations sur la conversation](./implement.md).
 
 ### Tourner
 

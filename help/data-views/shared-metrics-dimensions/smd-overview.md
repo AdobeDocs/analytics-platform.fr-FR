@@ -26,7 +26,7 @@ role_v2:
 topic_v2:
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
     internal-label: Governance
-source-git-commit: 2a01268e537fb7982f698ccf9c14b831edf8437f
+source-git-commit: d16771a675504a6330a59478f15bf6112ae444d6
 workflow-type: tm+mt
 source-wordcount: '1337'
 ht-degree: 3%
@@ -38,7 +38,8 @@ Les mesures et dimensions partagées fournissent un emplacement central pour gé
 Bien que les dimensions et mesures partagées permettent d’utiliser des composants communs dans de nombreuses vues de données, elles ne peuvent pas être partagées entre connexions.
 
 ## Autorisations
-* [Les administrateurs et administratrices de produit](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/technotes/access-control#product-administrator-role) ont également besoin des autorisations **Gérer les politiques d’utilisation des données** et **Afficher les politiques d’utilisation des données** pour tous les sandbox dans [Autorisations Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/access-control/home#permissions).
+
+* [Les administrateurs et administratrices de produit](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/access-control#product-administrator-role) ont également besoin des autorisations **Gérer les politiques d’utilisation des données** et **Afficher les politiques d’utilisation des données** pour tous les sandbox dans [Autorisations Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home#permissions).
 
 ## Processus
 
@@ -50,7 +51,7 @@ La plupart des entreprises utilisent le workflow global suivant pour déduplique
 
 ## Gestionnaire [!UICONTROL Mesures et dimensions partagées]
 
-**&#x200B;**&#x200B;> **[!UICONTROL Vues de données]** > **[!UICONTROL Mesures et dimensions partagées]**
+**** > **[!UICONTROL Vues de données]** > **[!UICONTROL Mesures et dimensions partagées]**
 
 Accéder à cette interface utilisateur affiche toutes les dimensions et mesures actuelles qui peuvent être partagées dans plusieurs vues de données. Le coin supérieur droit contient deux boutons permettant d’ajouter des composants à cette interface :
 
@@ -59,7 +60,7 @@ Accéder à cette interface utilisateur affiche toutes les dimensions et mesures
 
 Directement au-dessous de ces deux boutons, quatre cartes de présentation sont visibles :
 
-![&#x200B; Aperçu des cartes de présentation &#x200B;](assets/overview-cards.png)
+![ Aperçu des cartes de présentation ](assets/overview-cards.png)
 
 * **Mesures** : nombre total de mesures disponibles à partager dans les vues de données pour cette connexion. Chaque connexion peut contenir jusqu’à 10 000 mesures partagées.
 * **Dimensions** : nombre total de dimensions disponibles pour être partagées entre les vues de données pour cette connexion. Chaque connexion peut contenir jusqu’à 10 000 dimensions partagées.
