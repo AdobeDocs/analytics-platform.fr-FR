@@ -39,7 +39,7 @@ Bien que les dimensions et mesures partagées permettent d’utiliser des compos
 
 ## Autorisations
 
-* [Les administrateurs et administratrices de produit](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/access-control#product-administrator-role) ont également besoin des autorisations **Gérer les politiques d’utilisation des données** et **Afficher les politiques d’utilisation des données** pour tous les sandbox dans [Autorisations Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home#permissions).
+* [Les administrateurs et administratrices de produit](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/technotes/access-control#product-administrator-role) ont également besoin des autorisations **Gérer les politiques d’utilisation des données** et **Afficher les politiques d’utilisation des données** pour tous les sandbox dans [Autorisations Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/access-control/home#permissions).
 
 ## Processus
 
