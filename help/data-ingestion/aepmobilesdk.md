@@ -125,11 +125,11 @@ Configurer le schéma :
 
    1. Dans la boîte de dialogue [!UICONTROL Ajouter des groupes de champs], sélectionnez le groupe de champs **[!UICONTROL ExperienceEvent AEP Mobile SDK]** dans la liste.
 
-      ![Groupe de champs Détails du cycle de vie mobile ](./assets/select-aepmobilesdk-experienceevent.png)
+      ![Groupe de champs Détails du cycle de vie mobile &#x200B;](./assets/select-aepmobilesdk-experienceevent.png)
 
       Vous pouvez sélectionner le bouton Aperçu pour afficher un aperçu des champs qui font partie de ce groupe de champs, comme `application > name`.
 
-      ![Aperçu du groupe de champs Détails du cycle de vie mobile ](./assets/aepmobilesdk-experienceevent-preview.png)
+      ![Aperçu du groupe de champs Détails du cycle de vie mobile &#x200B;](./assets/aepmobilesdk-experienceevent-preview.png)
 
       Sélectionnez **[!UICONTROL Précédent]** pour fermer l’aperçu.
 
@@ -465,7 +465,7 @@ Vous pouvez désormais déployer le code dans votre application mobile. Une fois
 
 Validez la mise en œuvre, corrigez-la si nécessaire puis, une fois qu’elle est correcte, déployez-la dans votre environnement d’évaluation et de production à l’aide de la fonctionnalité de workflow de publication des balises.
 
-Pour des informations beaucoup plus détaillées](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=fr) consultez le tutoriel [Implémentation d’Adobe Experience Cloud dans les applications mobiles .
+Pour des informations beaucoup plus détaillées[&#128279;](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=fr) consultez le tutoriel Implémentation d’Adobe Experience Cloud dans les applications mobiles .
 
 ## Configurer une connexion
 
