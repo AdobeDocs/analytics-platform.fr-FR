@@ -38,9 +38,9 @@ topic_v2:
     internal-label: Data management
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: e3936b74ba4b4cf23e1b7235e545091a8cb546ed
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: '4806'
+source-wordcount: '4800'
 ht-degree: 56%
 ---
 
@@ -382,7 +382,7 @@ Pour le canal web, vous pouvez configurer [la capture et la définition d’exp�
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiencecapture_edit_include_experiences"
 >title="Capture et définition de l’expérience"
->abstract="Lorsque cette option est activée, les données d’expérience sont collectées, les attributs d’expérience sont générés et les rapports d’expérience sont disponibles. <br><br/>Utilisez ![Modifier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Modifier]** pour modifier la configuration de la collecte de données pour les expériences dans la propriété Balises associée à la configuration actuelle."
+>abstract="Lorsque cette option est activée, les données d’expérience sont collectées, les attributs d’expérience sont générés et les rapports d’expérience sont disponibles. <br><br/>Utilisez ![Modifier](/help/assets/icons/Edit.svg) **[!UICONTROL Modifier]** pour modifier la configuration de la collecte de données pour les expériences dans la propriété Balises associée à la configuration actuelle."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiencecapture_edit_button"
@@ -689,7 +689,7 @@ Consultez ci-dessous des exemples de configuration du connecteur source Google A
 
 >[!ENDTABS]
 
-Consultez Présentation des connecteurs Source [&#128279;](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/home) pour plus d’informations sur les connecteurs source pris en charge pour le canal média payant.
+Consultez Présentation des connecteurs Source [](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/home) pour plus d’informations sur les connecteurs source pris en charge pour le canal média payant.
 
 Après avoir configuré les connecteurs source dans Experience Platform, sélectionnez ![Actualiser](/help/assets/icons/Refresh.svg) **[!UICONTROL Actualiser]** pour mettre à jour la liste des connecteurs source.
 

@@ -1,5 +1,5 @@
 ---
-title: Analyse du Parcours cross-canal
+title: Analyse du parcours cross-canal
 description: Analysez et obtenez des informations à partir des interactions des clients sur lʼensemble du parcours client.
 exl-id: 285532b1-eb37-4984-9559-054a18515ddf
 solution: Customer Journey Analytics
@@ -9,26 +9,34 @@ autotag-review: '2026-05-19T09:37:23.903Z'
 TQID: 'https://experienceleague.adobe.com/zguhaVwn2XtF0vSGqYAgjiL2IwUq-DMH-WUd0uQRnPc'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
   - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
 subfeature_v2:
   - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+    internal-label: Use cases, Use cases (CJA)
   - id: b7fb3355-1f54-4380-bce3-d444b226c0e9
+    internal-label: Cross channel analysis
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Insights
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: 638
+source-wordcount: '614'
 ht-degree: 100%
-
 ---
-
 # Analyse cross-canal {#cross-channel}
 
 <!-- markdownlint-disable MD034 -->
@@ -49,21 +57,21 @@ L’analyse cross-canal permet une vue consolidée unique du comportement des cl
 1. [Créez des schémas](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=fr) pour les données à ingérer.
 1. [Créez des jeux de données](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=fr) pour les données à ingérer.
 1. [Ingérer des données dans Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/understanding-data-ingestion.html?lang=fr) :
-   1. Données basées sur un événement ![événement](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Events_18_N.svg) provenant d’un site web ou d’une application mobile via le connecteur source Edge Network ou Analytics.
-   2. Données de profil ![profil](https://spectrum.adobe.com/static/icons/workflow_18/Smock_User_18_N.svg) (par exemple, à partir d’un système CRM, d’une application de centre d’appel, d’une application de fidélité).
-   3. Données de recherche ![recherche](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) (par exemple, nom de produit, catégorie d’un système d’information sur les produits).
+   1. Données basées sur un événement ![événement](/help/assets/icons/Events.svg) provenant d’un site web ou d’une application mobile via le connecteur source Edge Network ou Analytics.
+   2. Données de profil ![profil](/help/assets/icons/User.svg) (par exemple, à partir d’un système CRM, d’une application de centre d’appel, d’une application de fidélité).
+   3. Données de recherche ![recherche](/help/assets/icons/Search.svg) (par exemple, nom de produit, catégorie d’un système d’information sur les produits).
 
-1. Utilisez un identifiant d’espace de noms commun aux jeux de données. Utilisez le [Groupement](../../stitching/overview.md) pour élever tout jeu de données basé sur un événement ![actualisation des données](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataRefresh_18_N.svg) par rapport à la fourniture de l’identifiant commun sur chaque ligne. Notez que Customer Journey Analytics nʼutilise actuellement pas les services Experience Platform Profile ou Identity pour lʼassemblage.
+1. Utilisez un identifiant d’espace de noms commun aux jeux de données. Utilisez le [Groupement](../../stitching/overview.md) pour élever tout jeu de données basé sur un événement ![actualisation des données](/help/assets/icons/DataRefresh.svg) par rapport à la fourniture de l’identifiant commun sur chaque ligne. Notez que Customer Journey Analytics nʼutilise actuellement pas les services Experience Platform Profile ou Identity pour lʼassemblage.
 1. Effectuez toute préparation de données personnalisée nécessaire afin de garantir une clé commune à tous les jeux de données de la série temporelle à ingérer dans Customer Journey Analytics.
-1. Assignez un identifiant principal aux données de recherche qui peut être relié à un champ dans les données dʼévénement. Compte comme des lignes dans les licences.
-1. Définissez le même identifiant principal pour les données de profil que l’identifiant principal des données d’événement.
+1. Assignez aux données de recherche un identifiant principal permettant d’effectuer une jointure avec un champ dans les données dʼévénement. Compte comme des lignes dans les licences.
+1. Définissez pour les données de profil le même identifiant principal que pour les données d’événement.
 1. [Créez une connexion](../../connections/overview.md) pour ingérer les jeux de données pertinents d’Experience Platform vers Customer Journey Analytics.
-1. [Créez une vue de données](/help/data-views/create-dataview.md) sur la connexion pour sélectionner les dimensions et mesures spécifiques à inclure dans la vue. Les paramètres d’attribution sont également configurés dans la vue de données. Ces paramètres sont calculés au moment du rapport.
+1. [Créez une vue de données](/help/data-views/create-dataview.md) sur la connexion pour sélectionner les dimensions et mesures spécifiques à inclure dans la vue. Les paramètres d’attribution et d’affectation sont également configurés dans la vue de données. Ces paramètres sont calculés au moment du rapport.
 1. [Créez un projet](/help/analysis-workspace/home.md) pour configurer des tableaux de bord et des rapports dans Analysis Workspace.
 
 ## Considérations
 
-Lors de la création de ce processus, veillez à tenir compte des points suivants.
+Lors de la création de ce workflow, veillez à prendre en compte les points suivants.
 
 * L’analyse des données sur l’ensemble des canaux nécessite le même espace de noms d’identifiant pour chaque enregistrement.
 * Le processus d’union de jeux de données disparates nécessite une clé personne/entité principale commune dans les jeux de données.

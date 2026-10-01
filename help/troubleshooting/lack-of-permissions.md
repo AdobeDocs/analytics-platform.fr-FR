@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Governance
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: '218'
-ht-degree: 94%
+source-wordcount: '212'
+ht-degree: 93%
 ---
 # Absence d’autorisations
 
@@ -64,7 +64,7 @@ Par exemple, après avoir créé une [Connexion](../connections/overview.md) et 
 
 1. Accédez au rôle approprié.
 
-1. Sélectionnez ![Modifier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Modifier]** pour modifier le rôle.
+1. Sélectionnez ![Modifier](/help/assets/icons/Edit.svg) **[!UICONTROL Modifier]** pour modifier le rôle.
 
 1. Assurez-vous que les options **[!UICONTROL Gérer des politiques d’utilisation des données]** et **[!UICONTROL Afficher des politiques d’utilisation des données]** sont ajoutées au conteneur **[!UICONTROL Gouvernance des données]**.
 

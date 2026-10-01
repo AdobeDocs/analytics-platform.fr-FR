@@ -7,26 +7,34 @@ exl-id: 23cdf02f-56a1-4465-ae7f-b3a1bcad28af
 TQID: https://experienceleague.adobe.com/xTwvC1oPjibPO1fMs1ig4CTqonTwEq20gY-FxlWgHSM
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: a8b1c240-f315-46e3-b813-f545c4279dd1
+    internal-label: Workspace basics
   - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
+    internal-label: Templates, Templates (CJA)
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments, Segments (CJA)
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Reporting
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: 1888
+source-wordcount: '1882'
 ht-degree: 100%
-
 ---
-
 # Créer et gérer des modèles
 
 Les administrateurs et administratrices peuvent créer des modèles et les enregistrer pour que d’autres personnes de leur société de connexion puissent les utiliser.
@@ -130,7 +138,7 @@ Les administrateurs et administratrices peuvent renommer, baliser et approuver l
 
    Une liste des modèles d’entreprise s’affiche. Aucun projet standard ne s’affiche sauf ceux épinglés.
 
-   Les modèles d’entreprise peuvent être identifiés par l’![icône de modèles](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FileTemplate_18_N.svg) qui précède le nom du modèle.
+   Les modèles d’entreprise peuvent être identifiés par l’![icône de modèles](/help/assets/icons/FileTemplate.svg) qui précède le nom du modèle.
 
    ![Affichage des filtres des modèles d’entreprise](assets/company-templates-filter.png)
 
@@ -166,23 +174,23 @@ Pour ajouter des composants manquants à un modèle, procédez comme suit :
 
    * **Si vous affichez des modèles dans une vue Colonnes** ![icône de vue Colonnes](assets/column-view-icon.png), procédez comme suit :
 
-      1. Accédez au modèle qui n’est pas encore prêt à être utilisé avec votre vue de données, puis sélectionnez l’icône d’informations à côté du nom du modèle.
+     1. Accédez au modèle qui n’est pas encore prêt à être utilisé avec votre vue de données, puis sélectionnez l’icône d’informations à côté du nom du modèle.
 
-         ![Informations sur le modèle d’entreprise](assets/company-template-info.png)
+        ![Informations sur le modèle d’entreprise](assets/company-template-info.png)
 
-      1. Sélectionnez **[!UICONTROL Prévisualisation]**.
+     1. Sélectionnez **[!UICONTROL Prévisualisation]**.
 
-         ![Page de prévisualisation du modèle](assets/template-preview.png)
+        ![Page de prévisualisation du modèle](assets/template-preview.png)
 
    * **Si vous affichez des modèles dans un mode Carte** ![icône du mode Carte](assets/card-view-icon.png), procédez comme suit :
 
-      1. Recherchez le modèle qui n’est pas encore prêt à être utilisé avec votre vue de données.
+     1. Recherchez le modèle qui n’est pas encore prêt à être utilisé avec votre vue de données.
 
-         ![Mode Carte de modèle d’entreprise](assets/company-template-cards.png)
+        ![Mode Carte de modèle d’entreprise](assets/company-template-cards.png)
 
-      1. Pointez sur le modèle, puis sélectionnez **[!UICONTROL Prévisualisation]**.
+     1. Pointez sur le modèle, puis sélectionnez **[!UICONTROL Prévisualisation]**.
 
-         ![Page de prévisualisation du modèle](assets/template-preview.png)
+        ![Page de prévisualisation du modèle](assets/template-preview.png)
 
 1. Dans la section **[!UICONTROL Composants manquants]**, une liste des composants manquants de la vue de données s’affiche. Sélectionnez **[!UICONTROL Ajouter ces composants à votre vue de données]**.
 
