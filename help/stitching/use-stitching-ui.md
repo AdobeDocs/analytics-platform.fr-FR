@@ -25,10 +25,10 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 59d79c72fd52b3eb409c2554bef9daf7094b0287
+source-git-commit: 8800f7c1659785931edb7d9f7139f037a086511c
 workflow-type: tm+mt
-source-wordcount: '1952'
-ht-degree: 18%
+source-wordcount: '1929'
+ht-degree: 19%
 ---
 # Activer le rapprochement
 
@@ -244,13 +244,17 @@ Exemples de cas d’utilisation d’ID incorrects :
 
 ### Enregistrer
 
-Une fois que vous avez enregistré une connexion, le processus de groupement pour les jeux de données activés commence dès que l’ingestion des données de ces jeux de données commence.
 
-Une fois que vous avez enregistré une connexion, le processus d’activation du groupement sur les jeux de données configurés est déclenché. Une fois le groupement configuré, le service de groupement traite toutes les données diffusées en direct et lance le renvoi à partir des jeux de données d’événement dans Experience Platform, puis les ingère dans la connexion Customer Journey Analytics.
 
-Chaque étape du processus ajoute certains retards. Les délais de traitement ci-dessous sont des mécanismes de sécurisation, et non des contrats de niveau de service (SLA) pour une configuration de connexion initiale valide enregistrée et contenant un jeu de données activé pour l’assemblage :
+Une fois que vous avez enregistré une connexion, le processus d’activation du groupement sur les jeux de données configurés est déclenché. Une fois le groupement configuré, le service de groupement traite toutes les données diffusées en direct et démarre le renvoi à partir des jeux de données d’événement dans Experience Platform, puis ingère les données dans la connexion Customer Journey Analytics.
 
-* Les données dynamiques s’affichent initialement dans Customer Journey Analytics au bout de quelques heures (moins de 17 heures). Les données actives commencent par des valeurs d’horodatage d’événement qui correspondent au moment réel auquel l’activation de l’assemblage s’est terminée. Activez l’option **[!UICONTROL Importer toutes les nouvelles données]** pour le jeu de données. Cela permet de s’assurer que les données actives commencent à circuler.
+Chaque étape du processus ajoute certains retards. Les délais de traitement ci-dessous sont des mécanismes de sécurisation, et non des contrats de niveau de service (SLA).
+
+Pour une configuration de connexion initiale valide enregistrée et contenant un jeu de données activé pour le groupement :
+
+* Les données dynamiques s’affichent initialement dans Customer Journey Analytics au bout de quelques heures (moins de 17 heures). Les données actives commencent par des valeurs d’horodatage d’événement qui correspondent au moment réel auquel l’activation de l’assemblage s’est terminée.
+
+  Pour que les données actives commencent à circuler, activez l’option **[!UICONTROL Importer toutes les nouvelles données]** pour le jeu de données.
 
   Toutes les nouvelles données ingérées dans le jeu de données d’événement source dans Experience Platform s’affichent dans Customer Journey Analytics dans les quatre heures.
 
