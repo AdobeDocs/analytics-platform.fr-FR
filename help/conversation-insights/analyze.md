@@ -4,7 +4,6 @@ description: Découvrez comment analyser les informations sur les conversations.
 solution: Customer Journey Analytics
 feature: AI Tools
 role: Admin, User
-hold: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -18,11 +17,12 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 34bb13891eebb12875f3e355e73aade6b3eed750
+source-git-commit: 84e89fe4ecbd4dd479c9dad12175a9a93e7578cb
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 0%
 ---
+
 # Analyser les informations de conversation
 
 ## Analyse simple
@@ -41,7 +41,7 @@ Pour analyser les conversations à grande échelle et fournir un contexte pour c
 
 * Combinez vos événements Insights de conversation avec d’autres jeux de données d’événement et des jeux de données de profil et de recherche supplémentaires. Ajoutez ces jeux de données à la connexion que vous avez sélectionnée pour la configuration des informations de conversation.
 * Ajoutez des composants supplémentaires (mesures et dimensions) aux vues de données que vous avez sélectionnées pour la configuration des informations de conversation.
-* ...
+
 
 +++ Exemple de projet
 

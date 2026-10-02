@@ -4,7 +4,6 @@ description: Découvrez comment instrumenter votre application ou service d’ag
 solution: Customer Journey Analytics
 feature: AI Tools
 role: Admin, User
-hold: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -13,12 +12,11 @@ feature_v2:
     internal-label: Components
   - id: ae3aff40-b2f6-4df1-8c01-0b0720d1510f
     internal-label: AI Tools
-role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 99e0e43c34f77b6e42f8d3c4fdf5d2773569b3e7
+source-git-commit: 84e89fe4ecbd4dd479c9dad12175a9a93e7578cb
 workflow-type: tm+mt
 source-wordcount: '2592'
 ht-degree: 5%
@@ -39,7 +37,7 @@ Cet article décrit les étapes de mise en œuvre requises.
 
 Configurez des jeux de données pour les principaux événements de conversation : invite, réponse, retour d’informations. Les jeux de données d’invite, de réponse et de commentaires doivent étendre le schéma de base d’événement d’expérience XDM avec le [groupe de champs Événement de conversation](#conversation-event-field-group) et peuvent éventuellement inclure le [groupe de champs Informations agences](#agentic-information-field-group) et d’autres [groupes de champs supplémentaires](#additional-field-groups).
 
-Vous pouvez définir des jeux de données distincts pour les invites, les réponses et les commentaires ou combiner les données dans des jeux de données. Par exemple, utilisez un jeu de données pour les invites et les réponses et un autre pour les commentaires. Vous pouvez également utiliser un jeu de données distinct pour chaque type d’événement de conversation, comme illustré dans la section [Fonctionnement](/help/conversation-insights/conversation-insights-overview.md#how-it-works).
+Vous pouvez définir des jeux de données distincts pour les invites, les réponses et les commentaires ou combiner les données dans des jeux de données. Par exemple, utilisez un jeu de données pour les invites et les réponses et un autre pour les commentaires. Vous pouvez également utiliser un jeu de données distinct pour chaque type d’événement de conversation, comme illustré dans la section [Fonctionnement](/help/conversation-insights/overview.md#how-it-works).
 
 À titre d’illustration, utilisez :
 
@@ -625,7 +623,6 @@ Vous trouverez ci-dessous un exemple d’utilisation du groupe de champs Événe
 ## Collecte de données
 
 Utilisez la stratégie de collecte de données suivante pour Conversation Insights.
-
 
 ### Types d’événements
 

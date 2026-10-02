@@ -2,7 +2,7 @@
 user-guide-title: Guide de Customer Journey Analytics (parcours client)
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 7357a8b929d72095aee7c154ea9e77791ac1a751
+source-git-commit: 4a005c03e46547810de8d27fcf85a041ab59a4d6
 workflow-type: tm+mt
 source-wordcount: '1510'
 ht-degree: 89%
@@ -316,14 +316,6 @@ ht-degree: 89%
     + [Bibliothèque JavaScript](/help/content-analytics/config/tags-agnostic.md)
     + [Collecte de données](/help/content-analytics/config/datacollection.md)
 
-+ Tableaux de bord Analytics {#cja-dashboards}
-  + [Vue d’ensemble](../mobile-app/home.md)
-  + [Tâches d’édition](../mobile-app/curator.md)
-  + [Créer des cartes de performance mobiles](../mobile-app/create-scorecard.md)
-  + [Gérer les cartes de performance mobiles](../mobile-app/manage-scorecard.md)
-  + [Configurer les cadres dirigeants pour utiliser les tableaux de bord](../mobile-app/set-up-execs.md)
-  + [Guide de démarrage rapide pour les cadres dirigeants](../mobile-app/executive.md)
-
 + Analyse guidée {#guided-analysis}
   + [Vue d’ensemble](../guided-analysis/overview.md)
   + [Croissance active](../guided-analysis/types/active-growth.md)
@@ -341,12 +333,19 @@ ht-degree: 89%
   + [Questions fréquentes](../guided-analysis/faq.md)
 
 + Informations sur la conversation {#conversation-insights}
-  + {hide-from-toc}[Vue d’ensemble](/help/conversation-insights/conversation-insights-overview.md)
-  + {hide-from-toc}[Configuration](/help/conversation-insights/conversation-insights-configure.md)
-  + {hide-from-toc}[Gérer](/help/conversation-insights/conversation-insights-manage.md)
-  + {hide-from-toc}[Implémenter](/help/conversation-insights/conversation-insights-implement.md)
-  + {hide-from-toc}[&#x200B; Analyser &#x200B;](/help/conversation-insights/conversation-insights-analyze.md)
+  + [Vue d’ensemble](/help/conversation-insights/overview.md)
+  + [Configurer](/help/conversation-insights/configure.md)
+  + [Gérer](/help/conversation-insights/manage.md)
+  + [Mise en œuvre](/help/conversation-insights/implement.md)
+  + [Analyser](/help/conversation-insights/analyze.md)
 
++ Tableaux de bord Analytics {#cja-dashboards}
+  + [Vue d’ensemble](../mobile-app/home.md)
+  + [Tâches d’édition](../mobile-app/curator.md)
+  + [Créer des cartes de performance mobiles](../mobile-app/create-scorecard.md)
+  + [Gérer les cartes de performance mobiles](../mobile-app/manage-scorecard.md)
+  + [Configurer les cadres dirigeants pour utiliser les tableaux de bord](../mobile-app/set-up-execs.md)
+  + [Guide de démarrage rapide pour les cadres dirigeants](../mobile-app/executive.md)
 
 + Composants {#cja-components}
   + [Vue d’ensemble](../components/overview.md)
