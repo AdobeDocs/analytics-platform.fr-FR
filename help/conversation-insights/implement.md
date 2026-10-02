@@ -16,9 +16,9 @@ feature_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 84e89fe4ecbd4dd479c9dad12175a9a93e7578cb
+source-git-commit: 7bd10643bc54f5923f590f849d05890bffd77a2e
 workflow-type: tm+mt
-source-wordcount: '2592'
+source-wordcount: '2563'
 ht-degree: 5%
 ---
 # Implémenter des informations de conversation
@@ -275,7 +275,7 @@ Le groupe de champs **[!UICONTROL Informations agentiques]** est un groupe de ch
 | `agents[].name` | string | `"Chatbot Assistant"` | Nom de l’agent |
 | `agents[].version` | string | `"2.1.3"` | Version de l’agent |
 | `agents[].score` | number | `0.92` | Score de confiance de l’agent dans ses valeurs renvoyées |
-| `agents[].skills[]` | tableau | Voir objet de compétence ci-dessous | **Obsolète** — Utilisez plutôt le tableau de `skills[]` de niveau supérieur ci-dessous, qui possède la liste complète ordonnée des appels de compétences et les lie chacun à son agent via `agentID` |
+| `agents[].skills[]` | tableau | Voir objet de compétence ci-dessous | **Obsolète**. Utilisez plutôt le tableau de `skills[]` de niveau supérieur ci-dessous, qui possède la liste complète ordonnée des appels de compétences et lie chacun à son agent via `agentID` |
 | `agents[].skills[].name` | string | `"Intent Recognition"` | Nom de la compétence (tableau obsolète) |
 | `agents[].skills[].version` | string | `"1.0.0"` | Version de la compétence (tableau obsolète) |
 | `agents[].skills[].score` | number | `0.95` | Score de confiance des compétences (0-1) (tableau obsolète) |
@@ -427,13 +427,9 @@ Pour implémenter des événements qui propagent le groupe de champs Information
 Vous pouvez ajouter des groupes de champs facultatifs au schéma que vous utilisez pour les jeux de données d’invite, de réponse et de commentaires. Par exemple :
 
 * Groupe de champs **Détails web**. Pour capturer les détails de la page web dans laquelle la conversation a été incorporée.
-* Groupe de champs Détails du Commerce **&#x200B;**. Pour capturer les détails du produit recommandé mentionné dans le cadre de la conversation.
+* Groupe de champs Détails du Commerce ****. Pour capturer les détails du produit recommandé mentionné dans le cadre de la conversation.
 
-
-
-Le client est chargé de produire les événements de conversation source. Adobe Platform effectue ensuite l’extraction du signal et le mélange des données. Le client n’a pas besoin de mettre en œuvre les services d’extraction ou de mélange de signaux.
-
-Ce document couvre les exigences d’entrée du MVP Insights de conversation et la mise à jour actuelle du schéma agent. Il n’inclut pas les fonctionnalités Insights de conversation 1.0 ni les exigences de versions ultérieures.
+Le client est chargé de produire les événements de conversation source. Adobe effectue l’extraction du signal et le mélange des données. Le client n’a pas besoin de mettre en œuvre les services d’extraction ou de mélange de signaux.
 
 ### Type d’événement
 
