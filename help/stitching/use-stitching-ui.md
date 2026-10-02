@@ -4,6 +4,7 @@ description: Activez le groupement pour les jeux de données d’événements da
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
+hold: true
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
 TQID: 'https://experienceleague.adobe.com/Nj-IePDbHxBtgiSxEAobJ0DGlJSaiTwpTXIPtCxDTHw'
 product_v2:
@@ -24,10 +25,10 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 59d79c72fd52b3eb409c2554bef9daf7094b0287
 workflow-type: tm+mt
-source-wordcount: '1788'
-ht-degree: 20%
+source-wordcount: '1952'
+ht-degree: 18%
 ---
 # Activer le rapprochement
 
@@ -41,16 +42,16 @@ Vous devez vérifier et respecter les conditions préalables pour la méthode de
 
 ## Contrôles en amont
 
-Si vous remplissez les conditions préalables, vous pouvez effectuer des contrôles en amont sur les données du jeu de données d’événement avant d’activer le regroupement d’identités :
+Si vous remplissez les conditions préalables, effectuez des contrôles en amont sur les données du jeu de données d’événement avant d’activer la combinaison d’identités :
 
-* Si vous prévoyez d’utiliser les champs [Schéma de modèle de données d’expérience (XDM)](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/home) pour l’ID persistant ou l’ID de personne, assurez-vous que les identités sont correctement marquées dans le schéma du jeu de données d’événement. [Voir Présentation des espaces de noms d’identité](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/features/namespaces).
+* Si vous utilisez des champs [Schéma de modèle de données d’expérience (XDM)](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/home) pour l’ID persistant ou l’ID de personne, assurez-vous que les identités sont correctement marquées dans le schéma du jeu de données d’événement. [Voir Présentation des espaces de noms d’identité](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/features/namespaces).
 * Vérifiez la couverture d’identité pour l’ID persistant et l’ID de personne :
 
   * **[!UICONTROL ID persistant]**
 
     Interroger 7 jours de données lorsque le champ de votre identifiant persistant n’est pas nul et le diviser par une requête de 7 jours de données pour tous les événements de votre jeu de données. Ce pourcentage doit être supérieur à 95 %.
 
-    Exemple de requête à utiliser pour la vérification :
+    Exemple de requête à vérifier :
 
     ```sql
     SELECT
@@ -74,10 +75,10 @@ Si vous remplissez les conditions préalables, vous pouvez effectuer des contrô
 
 
   * **[!UICONTROL ID de personne]**
-    * Pour le groupement basé sur les graphiques, assurez-vous que le graphique d’identités contient des fragments qui lient les valeurs d’identifiant de l’espace de noms d’identifiant persistant et de l’espace de noms d’identifiant de personne de votre choix. Vous pouvez exécuter un test en accédant à la visionneuse de graphiques d’identités [d’](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} et interroger le graphique à l’aide d’exemples de valeurs d’ID persistantes. Vérifiez si ces valeurs d’ID persistantes sont liées aux valeurs d’ID de personne dans le graphique.
-    * Pour le groupement basé sur les champs, interrogez 7 jours de données lorsque le champ de votre ID de personne n’est pas nul et divisez par une interrogation de 7 jours de données pour tous les événements de votre jeu de données. Ce pourcentage devrait idéalement être supérieur à 5 %.
+    * Pour le groupement basé sur les graphiques, assurez-vous que le graphique d’identités contient des fragments qui lient les valeurs d’identifiant de l’espace de noms d’identifiant persistant et de l’espace de noms d’identifiant de personne de votre choix. Accédez à la visionneuse de graphiques d’identités [d’](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} et interrogez le graphique à l’aide d’exemples de valeurs d’ID persistantes. Pour vérifier, vérifiez si ces valeurs d’ID persistant sont liées à des valeurs d’ID de personne dans le graphique.
+    * Pour le groupement basé sur les champs, interrogez 7 jours de données lorsque le champ de votre ID de personne n’est pas nul et divisez par une interrogation de 7 jours de données pour tous les événements de votre jeu de données. Ce pourcentage doit idéalement être supérieur à 5 %.
 
-      Exemple de requête à utiliser pour la vérification :
+      Exemple de requête à vérifier :
 
       ```sql
       SELECT
@@ -146,7 +147,7 @@ Vous pouvez activer la combinaison d’identités lorsque vous [ajoutez](/help/c
 
 ### Paramètres des jeux de données
 
-Pour activer le groupement, dans la section Jeu de données d’événement **[!UICONTROL Paramètres des jeux de données]** de la boîte de dialogue **[!UICONTROL Ajouter des jeux de données]** ou **[!UICONTROL Modifier le jeu de données]**.
+Pour activer le groupement, utilisez la section Jeu de données d’événement **[!UICONTROL Paramètres des jeux de données]** de la boîte de dialogue **[!UICONTROL Ajouter des jeux de données]** ou **[!UICONTROL Modifier le jeu de données]**.
 
 ![Options de combinaison d’identités lorsque vous activez la fonction](assets/identity-stitching-ui.png)
 
@@ -226,14 +227,14 @@ Les **[!UICONTROL mesures d’assemblage]** sont calculées à l’aide d’un �
 Dans Customer Journey Analytics, un ID incorrect est un identifiant :
 
 * avec une valeur d’ID spécifique qui provient d’un ID persistant ou d’un champ d’ID de personne dans les jeux de données activés pour le groupement, **et**
-* est sur plus d’un million (1 000 000) d’événements dans les données de connexion, au cours d’un mois.
+* apparaît sur plus d’un million (1 000 000) d’événements dans les données de connexion chaque mois.
 
 Lorsqu’une valeur d’ID est marquée comme ID incorrect, tous les événements futurs contenant cette valeur d’ID sont ignorés des données de connexion et n’apparaissent pas dans les rapports.
 
 Exemples de cas d’utilisation d’ID incorrects :
 
 * Le champ d’ID de personne (par exemple, `undefined`) contient des valeurs personnalisées ou d’espace réservé. Ces valeurs peuvent également affecter [l’assemblage et la qualité des données de rapport](/help/stitching/faq.md#undefined-person-id-values).
-* Dans une configuration d’assemblage basée sur les champs, si plusieurs personnes partagent un appareil et que le nombre total de transitions entre les utilisateurs dépasse 50 000. Dans ce scénario, le processus de groupement s’arrête pour utiliser les informations d’ID de personne pour cet appareil et utilise uniquement les informations d’ID persistantes à la place. Par conséquent, tous les événements du jeu de données de cet appareil sont envoyés dans des données de connexion avec l’identité d’identifiant persistante, avec un risque élevé de provoquer une situation d’ID incorrects.
+* Dans une configuration d’assemblage basée sur les champs, si plusieurs personnes partagent un appareil et que le nombre total de transitions entre les utilisateurs dépasse 50 000. Dans ce scénario, le processus de groupement cesse d’utiliser les informations d’ID de personne pour cet appareil et utilise uniquement les informations d’ID persistantes à la place. Par conséquent, tous les événements du jeu de données de cet appareil sont envoyés dans les données de connexion avec l’identité d’identifiant persistante, ce qui peut entraîner une situation d’ID incorrects.
 
 
 >[!NOTE]
@@ -243,11 +244,21 @@ Exemples de cas d’utilisation d’ID incorrects :
 
 ### Enregistrer
 
-Une fois que vous avez enregistré une connexion, le processus de groupement pour les jeux de données activés est lancé dès que l’ingestion des données de ces jeux de données commence.
+Une fois que vous avez enregistré une connexion, le processus de groupement pour les jeux de données activés commence dès que l’ingestion des données de ces jeux de données commence.
+
+Une fois que vous avez enregistré une connexion, le processus d’activation du groupement sur les jeux de données configurés est déclenché. Une fois le groupement configuré, le service de groupement traite toutes les données diffusées en direct et lance le renvoi à partir des jeux de données d’événement dans Experience Platform, puis les ingère dans la connexion Customer Journey Analytics.
+
+Chaque étape du processus ajoute certains retards. Les délais de traitement ci-dessous sont des mécanismes de sécurisation, et non des contrats de niveau de service (SLA) pour une configuration de connexion initiale valide enregistrée et contenant un jeu de données activé pour l’assemblage :
+
+* Les données dynamiques s’affichent initialement dans Customer Journey Analytics au bout de quelques heures (moins de 17 heures). Les données actives commencent par des valeurs d’horodatage d’événement qui correspondent au moment réel auquel l’activation de l’assemblage s’est terminée. Activez l’option **[!UICONTROL Importer toutes les nouvelles données]** pour le jeu de données. Cela permet de s’assurer que les données actives commencent à circuler.
+
+  Toutes les nouvelles données ingérées dans le jeu de données d’événement source dans Experience Platform s’affichent dans Customer Journey Analytics dans les quatre heures.
+
+* Les données renvoyées (si elles ont été initialement demandées) s’affichent dans Customer Journey Analytics à peu près au même moment que les données actives, mais leur traitement prend des jours ou des semaines (moins de 4 semaines) selon les volumes impliqués. Les données renvoyées commencent par les valeurs d’horodatage d’événement les plus anciennes.
 
 >[!CAUTION]
 >
->Pour les jeux de données activés pour le groupement dans l’interface Connexions, le statut de renvoi est immédiatement et incorrectement signalé comme ![Statut vert](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _renvois terminés]**&#x200B;pour le nombre de renvois terminés. Utilisez d’autres méthodes pour vérifier si les données du jeu de données groupé sont renvoyées.
+>Pour les jeux de données activés pour le groupement dans l’interface Connexions, le statut de renvoi ne peut actuellement pas être signalé en raison d’une limitation connue. Utilisez d’autres méthodes pour vérifier si les données du jeu de données groupé sont renvoyées.
 >
 
 
@@ -264,5 +275,5 @@ Le groupement activé dans l’interface de connexion peut coexister sans probl�
 
 Par exemple, vous disposez de jeux de données assemblés web dans le lac de données à la suite de requêtes d’assemblage antérieures ou actuelles. Vous pouvez ajouter des données groupées à partir d’un jeu de données de centre d’appels à l’aide de l’interface Connexions pour combiner ces données avec les données web.
 
-À la fin, Adobe migrera vos jeux de données groupés basés sur les requêtes vers la nouvelle expérience de groupement dans les connexions.
+À la fin, Adobe migre vos jeux de données groupés basés sur les requêtes vers la nouvelle expérience de groupement dans les connexions.
 
