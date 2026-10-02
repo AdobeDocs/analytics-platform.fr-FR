@@ -4,8 +4,7 @@ description: Découvrez comment configurer les configurations de Conversation In
 solution: Customer Journey Analytics
 feature: AI Tools
 role: Admin, User
-autotag-review: '2026-10-02T07:00:50.074Z'
-TQID: 'https://experienceleague.adobe.com/yw5FGvOYbxxpcm3CfDyKed1-T7sGFTIRkvRz3Q4xj4I'
+TQID: https://experienceleague.adobe.com/yw5FGvOYbxxpcm3CfDyKed1-T7sGFTIRkvRz3Q4xj4I
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -13,7 +12,7 @@ feature_v2:
   - id: ae3aff40-b2f6-4df1-8c01-0b0720d1510f
     internal-label: AI Tools
   - id: d7a261eb-f9ac-4dd6-bd60-1637efcd3d36
-    internal-label: ''
+    internal-label: Conversation Insights
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -30,7 +29,8 @@ topic_v2:
     internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: b58d1768aef87f01bb3c20b01102d08a17e973ef
+autotag-review: '2026-10-02T07:00:50.074Z'
+source-git-commit: ebc2d1d9992150683fb642862e0ea29b7f70ddb0
 workflow-type: tm+mt
 source-wordcount: '810'
 ht-degree: 16%
@@ -46,7 +46,7 @@ Lorsque vous créez ou modifiez une configuration Insights de conversation, vous
 
 Seuls les administrateurs système peuvent créer ou modifier des configurations de Conversation Insights.
 
-Vous pouvez créer ou modifier des configurations à partir de l’interface [&#x200B; Configurations de Conversation Insights &#x200B;](./manage.md).
+Vous pouvez créer ou modifier des configurations à partir de l’interface [ Configurations de Conversation Insights ](./manage.md).
 
 ## Restaurer le jeu de données fusionné manquant
 
@@ -130,7 +130,7 @@ Les vues de données que vous avez configurées dans [Étapes de configuration](
 
 Pour chacune des vues de données configurées :
 
-* **Conteneurs** : l’onglet [Conteneurs](/help/data-views/create-dataview.md#containers) contient un nouveau **[!UICONTROL Nom du conteneur]** : **[!UICONTROL conversation]** avec **[!UICONTROL Nom d’affichage]**: **[!UICONTROL Container]** comme **[!UICONTROL Système]** Type de conteneur **&#x200B;**&#x200B;supplémentaire.
+* **Conteneurs** : l’onglet [Conteneurs](/help/data-views/create-dataview.md#containers) contient un nouveau **[!UICONTROL Nom du conteneur]** : **[!UICONTROL conversation]** avec **[!UICONTROL Nom d’affichage]**: **[!UICONTROL Container]** comme **[!UICONTROL Système]** Type de conteneur **** supplémentaire.
 * **Composants** : d’autres dossiers de champs de schéma s’affichent. Par exemple : agentExperience et conversation. En outre, les composants suivants sont automatiquement ajoutés :
 
   | Mesures | Type de données de schéma | Chemin du schéma |

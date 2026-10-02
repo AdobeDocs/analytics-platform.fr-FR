@@ -13,7 +13,7 @@ feature_v2:
   - id: ae3aff40-b2f6-4df1-8c01-0b0720d1510f
     internal-label: AI Tools
   - id: d7a261eb-f9ac-4dd6-bd60-1637efcd3d36
-    internal-label: ''
+    internal-label: Conversation Insights
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -30,7 +30,7 @@ topic_v2:
     internal-label: Data collection
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 05d993f3ae8bda2bbf9ce79d5462d47f3d507e92
+source-git-commit: ebc2d1d9992150683fb642862e0ea29b7f70ddb0
 workflow-type: tm+mt
 source-wordcount: '1117'
 ht-degree: 1%
@@ -83,7 +83,7 @@ Une conversation est le niveau de conteneur ou de regroupement. Ce conteneur est
 * Comment le sentiment a-t-il changé au cours d’une conversation ?
 * Quelles conversations ont finalement abouti à une conversion ?
 
-Pour plus d’informations sur l’implémentation, reportez-vous à l’objet [conversation](./implement.md#conversation) dans la documentation [&#x200B; Implémenter des informations sur la conversation](./implement.md).
+Pour plus d’informations sur l’implémentation, reportez-vous à l’objet [conversation](./implement.md#conversation) dans la documentation [ Implémenter des informations sur la conversation](./implement.md).
 
 ### Tourner
 
