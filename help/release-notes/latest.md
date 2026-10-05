@@ -72,7 +72,7 @@ Ces notes de mise à jour couvrent la période de publication de septembre 2026.
 
 ### Correctifs dans Customer Journey Analytics
 
-**** : AN-487374, AN-487119, AN-468907, AN-468810, AN-468363, AN-468096, AN-467414, AN-466986, AN-466982, AN-465073, AN-463571, AN-462373, AN-492801, AN-488821, AN-488452, AN-486517, AN-478930, AN-468325
+**&#x200B;**&#x200B;: AN-487374, AN-487119, AN-468907, AN-468810, AN-468363, AN-468096, AN-467414, AN-466986, AN-466982, AN-465073, AN-463571, AN-462373, AN-492801, AN-488821, AN-488452, AN-486517, AN-478930, AN-468325
 **Composants** :
 **Connexions** : AN-451458, AN-365942
 **Content Analytics** :
@@ -81,7 +81,7 @@ Ces notes de mise à jour couvrent la période de publication de septembre 2026.
 **Vues de données** : AN-478732, AN-468836, AN-467851, AN-487651, AN-423592
 **Ingestion de données** : AN-489829, AN-489722, AN-469451, AN-467436, AN-467049, AN-466087, AN-465049, AN-463524, AN-457433, AN-490288, AN-487500, AN-390916, AN-342311
 **Mise en œuvre** :
-**** : AN-487486, AN-478944, AN-470036, AN-468589, AN-468436, AN-456747, AN-456700, AN-442695, AN-492330, AN-490564, AN-468293, AN-460921
+**&#x200B;**&#x200B;: AN-487486, AN-478944, AN-470036, AN-468589, AN-468436, AN-456747, AN-456700, AN-442695, AN-492330, AN-490564, AN-468293, AN-460921
 **Reporting** : AN-479145, AN-469095, AN-468070, AN-467786, AN-456684, AN-465257, AN-422685, AN-406114, AN-356706, AN-322733
 **Segmentation** : AN-486561, AN-278260
 **Rapports planifiés** : AN-479157
@@ -101,6 +101,6 @@ Ces notes de mise à jour couvrent la période de publication de septembre 2026.
 >* [Notes de mise à jour précédentes de Customer Journey Analytics pour 2026](/help/release-notes/2026.md)
 >* [Notes de mise à jour d’Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=fr)
 >* [Notes de mise à jour du module complémentaire Streaming Media Collection](https://experienceleague.adobe.com/docs/media-analytics/using/additional-resources/release-notes.html?lang=fr)
->* [Notes de mise à jour de ](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=fr)
->* [Mises à jour de la documentation de ](/help/release-notes/doc-changes.md)
+>* [Notes de mise à jour de &#x200B;](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=fr)
+>* [Mises à jour de la documentation de &#x200B;](/help/release-notes/doc-changes.md)
 
