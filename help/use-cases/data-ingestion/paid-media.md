@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hold: true
 role: Admin
-source-git-commit: 42b73f2843244a02fd51301d8d99282ae5f309cd
+source-git-commit: 4bb99471d256fe29dc54980a5da37cf2385b679f
 workflow-type: tm+mt
-source-wordcount: '1710'
+source-wordcount: '1704'
 ht-degree: 0%
 ---
 
@@ -43,7 +43,7 @@ L’authentification sur le connecteur utilise [!DNL OAuth 2.0]. Lors de la conf
 
 ## Modèle de données de média payant
 
-Les données de média payantes utilisent un schéma en étoile. Un [jeu de données de mesures récapitulatives](#summary-metrics-dataset) agit comme la table des faits, et six jeux de données de recherche fournissent les dimensions associées. Les jeux de données de recherche se joignent au jeu de données de mesures récapitulatives par `GUID` d’entité et valeurs d’identifiant natives pour les comptes, les campagnes, les groupes publicitaires, les annonces, les ressources et les expériences.
+[Les jeux de données de mesures récapitulatives](#summary-metrics-datasets) servent de tables de faits, et les jeux de données de recherche fournissent les dimensions associées. Les jeux de données de recherche se joignent aux jeux de données de mesures récapitulatives par `GUID` d’entité et valeurs d’identifiant natives pour les comptes, les campagnes, les groupes publicitaires, les annonces, les ressources et les expériences.
 
 Les jeux de données de recherche partagent deux blocs de création communs :
 
@@ -61,11 +61,11 @@ Le tableau suivant résume les six jeux de données de recherche.
 | Recherche de ressources | Propriétés de la ressource telles que les dimensions, les détails de fichier, les propriétés d’image, les URL de média, les métadonnées d’utilisation, les métadonnées vidéo, la description, le sous-type, le titre et le type |
 | Recherche d’expérience | Regroupements créatifs de niveau expérience tels que l’Experience ID, les ressources, le titre, la description et call to action |
 
-### Jeu de données de mesures récapitulatives
+### Jeux de données de mesures récapitulatives
 
-Le jeu de données Mesures de résumé du média payant est le jeu de données de résumé central. Chaque ligne représente généralement une entité pour un jour et comprend un horodatage, un identifiant, un type d’événement, des identifiants d’entité et des noms dénormalisés pour le compte rendu des performances.
+Les jeux de données de mesures de résumé du média payant sont les jeux de données de résumé centraux. Chaque ligne d’un jeu de données de résumé représente généralement une entité pour un jour et comprend un horodatage, un identifiant, un type d’événement, des identifiants d’entité et des noms dénormalisés pour la création de rapports.
 
-Le jeu de données des mesures récapitulatives peut inclure les groupes de mesures suivants :
+Chaque jeu de données de mesures récapitulatives peut inclure les groupes de mesures suivants :
 
 * **Performances de base** : impressions, clics, taux de clics, engagements, taux d’engagement, conversions, taux de conversion, valeur de conversion, prospects, clics sur les liens, téléchargements et installations ou ouvertures d’applications.
 * **Coût et budget** : dépenses quotidiennes, budget alloué et restant, fréquence, dépassement ou sous-exécution, mesures de coût moyen et montants des enchères.
@@ -79,9 +79,9 @@ Le jeu de données des mesures récapitulatives peut inclure les groupes de mesu
 
 ### Jeux de données standard
 
-Lorsque vous connectez une source de médias achetés, Adobe fournit 12 jeux de données de médias achetés standard en fonction des classes de schéma et des groupes de champs de médias achetés globaux. Ces jeux de données comprennent six jeux de données de mesures récapitulatives, les six jeux de données de recherche et des jeux de données annexes. Les 12 jeux de données de résumé et de recherche doivent être présents pour que les données de médias achetés soient correctement résolues en aval.
+Lorsque vous connectez une source de médias achetés, Adobe fournit 12 jeux de données de médias achetés standard en fonction des classes de schéma et des groupes de champs de médias achetés globaux. Ces jeux de données comprennent six jeux de données de mesures récapitulatives, six jeux de données de recherche et des jeux de données annexes. Les 12 jeux de données de résumé et de recherche doivent être présents pour que les données de médias achetés soient correctement résolues en aval.
 
-Jeux de données requis :
+#### Jeux de données requis
 
 * Résumé du compte de média payant
 * Résumé de la campagne média payante
@@ -96,7 +96,9 @@ Jeux de données requis :
 * Recherche d’expérience de média payante
 * Recherche de ressources multimédias payantes
 
-Jeux de données pris en charge, par exemple :
+#### Prise en charge des jeux de données
+
+Par exemple :
 
 * Média payant et recherche démographique
 * Résumé de l’emplacement de l’expérience multimédia payante
@@ -110,8 +112,7 @@ Procédez comme suit pour connecter une source et ingérer des données de médi
 
 1. Vérifiez que vous disposez des autorisations source Experience Platform requises et d’un accès à la plateforme publicitaire.
 1. Dans Experience Platform, accédez à **[!UICONTROL Sources]** > **[!UICONTROL Catalogue]** > **[!UICONTROL Advertising]**.
-1. &#x200B;
-   1. Assurez-vous que vous vous trouvez dans le sandbox qui contient les jeux de données de médias achetés.
+1. Assurez-vous que vous vous trouvez dans le sandbox qui contient les jeux de données de médias achetés.
 1. Sélectionnez le connecteur à utiliser, par exemple **[!DNL Meta Ads]**. Sélectionnez **[!UICONTROL Configurer]** pour créer une connexion ou sélectionnez **[!UICONTROL Ajouter des données]** pour ajouter plus de données à une connexion existante.
 1. Authentifiez-vous avec [!DNL OAuth 2.0] en vous connectant avec un utilisateur disposant de l’accès requis au niveau de l’annonceur.
 1. Sélectionnez les comptes publicitaires, les entités et les données insight à ingérer.
