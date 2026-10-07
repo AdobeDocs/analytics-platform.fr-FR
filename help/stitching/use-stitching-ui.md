@@ -25,10 +25,10 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 8800f7c1659785931edb7d9f7139f037a086511c
+source-git-commit: 1ee7e0b046f370c956b083e494522cfbc892e092
 workflow-type: tm+mt
-source-wordcount: '1929'
-ht-degree: 19%
+source-wordcount: '1979'
+ht-degree: 18%
 ---
 # Activer le rapprochement
 
@@ -244,9 +244,7 @@ Exemples de cas d’utilisation d’ID incorrects :
 
 ### Enregistrer
 
-
-
-Une fois que vous avez enregistré une connexion, le processus d’activation du groupement sur les jeux de données configurés est déclenché. Une fois le groupement configuré, le service de groupement traite toutes les données diffusées en direct et démarre le renvoi à partir des jeux de données d’événement dans Experience Platform, puis ingère les données dans la connexion Customer Journey Analytics.
+Une fois que vous avez enregistré une connexion, le processus d’activation du groupement sur les jeux de données configurés est déclenché. Une fois le service d’assemblage configuré, il traite les données diffusées en direct et tout renvoi demandé à partir des jeux de données d’événement dans Experience Platform. Par la suite, les données sont ingérées dans la connexion Customer Journey Analytics.
 
 Chaque étape du processus ajoute certains retards. Les délais de traitement ci-dessous sont des mécanismes de sécurisation, et non des contrats de niveau de service (SLA).
 
@@ -256,15 +254,16 @@ Pour une configuration de connexion initiale valide enregistrée et contenant un
 
   Pour que les données actives commencent à circuler, activez l’option **[!UICONTROL Importer toutes les nouvelles données]** pour le jeu de données.
 
-  Toutes les nouvelles données ingérées dans le jeu de données d’événement source dans Experience Platform s’affichent dans Customer Journey Analytics dans les quatre heures.
+  Les nouvelles données ingérées dans le jeu de données d’événement source Experience Platform apparaissent dans Customer Journey Analytics dans les quatre heures.
 
-* Les données renvoyées (si elles ont été initialement demandées) s’affichent dans Customer Journey Analytics à peu près au même moment que les données actives, mais leur traitement prend des jours ou des semaines (moins de 4 semaines) selon les volumes impliqués. Les données renvoyées commencent par les valeurs d’horodatage d’événement les plus anciennes.
+* Les données renvoyées (si elles ont été initialement demandées) s’affichent dans Customer Journey Analytics à peu près au même moment que les données actives, mais leur traitement complet peut prendre plusieurs jours, selon les volumes impliqués. Les données renvoyées commencent par les valeurs d’horodatage d’événement les plus anciennes.
 
->[!CAUTION]
->
->Pour les jeux de données activés pour le groupement dans l’interface Connexions, le statut de renvoi ne peut actuellement pas être signalé en raison d’une limitation connue. Utilisez d’autres méthodes pour vérifier si les données du jeu de données groupé sont renvoyées.
->
+  >[!CAUTION]
+  >
+  >Pour les jeux de données activés pour le groupement dans l’interface Connexions, le statut de renvoi ne peut actuellement pas être signalé en raison d’une limitation connue.
+  >
 
+  Utilisez d’autres méthodes pour vérifier si les données du jeu de données groupé sont renvoyées. Par exemple, utilisez l’interface utilisateur [Experience Platform Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/overview) pour extraire du jeu de données le nombre d’événements pour la période appropriée. Comparez le nombre d’événements à la mesure des événements dans les rapports [](/help/analysis-workspace/home.md) pour la même période. Si ces nombres correspondent, le renvoi est terminé.
 
 ## Limites
 
