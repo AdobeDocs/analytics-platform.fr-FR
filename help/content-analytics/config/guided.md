@@ -38,7 +38,7 @@ topic_v2:
     internal-label: Data management
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: 1af0b3565fe054a5073f574d53b82f561df1abda
 workflow-type: tm+mt
 source-wordcount: '4800'
 ht-degree: 56%
@@ -669,7 +669,7 @@ Consultez ci-dessous des exemples de configuration du connecteur source Google A
 
 1. À l’étape ➋ **[!UICONTROL Sélectionner des comptes]** de l’assistant, sélectionnez les comptes à configurer.
 
-   ![Sélectionnez des comptes dans le connecteur source Meta Ads](paid-media-meta-select-account.png)
+   ![Sélectionnez des comptes dans le connecteur source Meta Ads](../assets/paid-media-meta-select-account.png)
 
    Sélectionnez **[!UICONTROL Suivant]**.
 
@@ -689,7 +689,7 @@ Consultez ci-dessous des exemples de configuration du connecteur source Google A
 
 >[!ENDTABS]
 
-Consultez Présentation des connecteurs Source [&#128279;](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/home) pour plus d’informations sur les connecteurs source pris en charge pour le canal média payant.
+Consultez Présentation des connecteurs Source [](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/home) pour plus d’informations sur les connecteurs source pris en charge pour le canal média payant.
 
 Après avoir configuré les connecteurs source dans Experience Platform, sélectionnez ![Actualiser](/help/assets/icons/Refresh.svg) **[!UICONTROL Actualiser]** pour mettre à jour la liste des connecteurs source.
 
