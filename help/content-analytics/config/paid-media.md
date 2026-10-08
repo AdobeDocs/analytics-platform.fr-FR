@@ -3,11 +3,12 @@ title: Configuration automatique des médias payants Content Analytics
 description: Découvrez la configuration automatique des jeux de données, de la connexion, des vues de données, etc.
 solution: Customer Journey Analytics
 feature: Content Analytics
+hold: true
 role: Admin
-source-git-commit: 2727dce145b996192ac873dd43d5106b011ff736
+source-git-commit: 684fef6a5e007d6dabe6518d7c7ec93a41dc6cdd
 workflow-type: tm+mt
-source-wordcount: '1493'
-ht-degree: 4%
+source-wordcount: '2179'
+ht-degree: 3%
 ---
 # Configuration automatique des médias payants
 
@@ -142,3 +143,45 @@ Pour effectuer des recherches, utilisez des répartitions supplémentaires pour 
 | Coût par clic | Résumé de la publicité |
 
 
+### Corrélation des données de médias achetés avec les données d’événement d’expérience
+
+Combinez la performance des médias payants avec les données comportementales sur site pour comprendre comment les campagnes et les annonces sont associées à l’engagement, aux conversions et au chiffre d’affaires du site web. Par exemple, comparez les clics et les dépenses publicitaires du réseau avec les commandes attribuées aux visites de la même campagne.
+
+Pour configurer ces rapports, incluez les jeux de données de résumé de média payant et votre jeu de données d’événement sur site dans la même connexion Customer Journey Analytics. Capturez des identifiants de campagne, d’annonce publicitaire ou de ressource pris en charge à partir des paramètres d’URL de page de destination ou de champs d’événement existants. Utilisez les champs dérivés selon les besoins pour analyser et mapper ces valeurs sur les identifiants de médias achetés correspondants, en préservant le contexte réseau et de compte requis. Conserver les identifiants sous forme de chaînes. Configurez un groupe de données de résumé dans la vue de données pour associer l&#39;événement correspondant et les dimensions de résumé. L’activation du canal Média payant ne configure pas automatiquement ce suivi et ce mappage d’URL spécifiques à l’implémentation.
+
+
+| Option de tracking | Considérations |
+|---|---|
+| Meta Ads | Configurez les paramètres d’URL de destination à l’aide d’identifiants dynamiques tels que `campaign.id`, `adset.id` et `ad.id`, le cas échéant. Capturez les valeurs résolues sur votre site web. L’activation du connecteur n’ajoute pas automatiquement ces paramètres à vos URL de publicité. |
+| Google Ads | |
+| Ressources individuelles | La création de rapports au niveau des ressources pour les résultats en aval nécessite un identifiant capturé qui mappe à la ressource spécifique associée au clic. Un paramètre d’URL personnalisé peut prendre en charge cette fonction lorsque le format d’annonce autorise le suivi spécifique aux ressources. Un identifiant d’annonce publicitaire ne peut pas distinguer plusieurs ressources dans une annonce publicitaire et un paramètre de ressource statique appliqué à une annonce publicitaire multi-ressources entière n’identifie pas la ressource associée au clic. |
+
+Dans Analysis Workspace, utilisez les mesures **[!UICONTROL Résumé de l’annonce]** pour les comparaisons de campagnes ou d’annonces et les mesures **[!UICONTROL Résumé des ressources]** pour les comparaisons de ressources prises en charge. Appliquez un modèle d’attribution et un intervalle de recherche en amont aux mesures de conversion sur site qui reflètent votre question de création de rapports.
+
+Tenez compte des éléments suivants :
+
+* Les données de médias payantes sont des données récapitulatives agrégées sans ID de personne. Le comportement sur site correspond aux données d’événement.
+* Le regroupement de dimensions correspondantes prend en charge le compte rendu des performances sur ces sources, mais ne correspond pas aux conversions réseau et individuelles en conversions de sites web ou n’effectue pas de regroupement au niveau de la personne.
+* La comparaison montre une association, et non un effet élévateur causal.
+* Les résultats peuvent différer en raison des définitions de conversion, des fenêtres d’attribution, des conversions d’affichage publicitaire ou modélisées, du consentement et des dates ou fuseaux horaires de création de rapports.
+* Validez la source des visites balisées par la campagne, en particulier lorsque les paramètres de tracking sont réutilisés sur plusieurs canaux.
+
+
+### Exemple de comparaison des performances d&#39;une campagne avec des commandes sur site
+
+Une URL de page de destination peut contenir plusieurs paramètres de tracking. Dans cet exemple, nous utilisons l’identifiant de campagne dans `utm_id` pour comparer les dépenses de campagne aux commandes de site web.
+
+https://www.example.com/offer?utm_source=facebook&utm_medium=paid_social&utm_campaign=autumn_offer&utm_id=120218706543980215
+
+Paramètre utilisé pour cette comparaison : `utm_id=120218706543980215`. Les autres paramètres décrivent la source, le support et le libellé de la campagne, mais ne sont pas utilisés comme champ correspondant utilisé dans cet exemple.
+
+Si l’URL est capturée dans les données d’événement de site web et que les jeux de données d’événement de site web et de médias achetés font partie de la même connexion Customer Journey Analytics :
+
+1. Identifiez la campagne. Utilisez un champ dérivé pour lire le `utm_id` à partir de l’URL et mapper sa valeur sur l’identifiant de campagne correspondant dans les données de médias achetés.
+1. Regroupez les dimensions correspondantes. Dans la vue de données, ajoutez la dimension de campagne du site web à la `Summary Data Group` de la dimension de campagne payante, en conservant tous les membres existants.
+1. Comparez les dépenses et les commandes. Dans Analysis Workspace, utilisez la dimension de campagne groupée comme lignes d’un tableau à structure libre. Ajoutez `Ad Summary` dépenses et les `Orders` de site web sous forme de colonnes. Définissez le modèle d’attribution et l’intervalle de recherche en amont pour `Orders`.
+
+
+Le tableau présente les dépenses publicitaires réseau ainsi que les commandes de sites web attribuées à chaque campagne. Deux campagnes avec des dépenses publicitaires similaires peuvent avoir des nombres différents d’actions de site web attribuées en aval. Utilisez cette comparaison pour identifier les campagnes et les expériences de page de destination à des fins d’enquête ou de test plus approfondi, plutôt que d’évaluer les performances à partir des seules mesures publicitaires.
+
+L’exemple utilise un identifiant de campagne, mais la même approche peut utiliser des identifiants de groupe publicitaire, d’annonce ou de ressource lors de la capture de valeurs correspondantes. Les attributs Content Analytics, tels que **[!UICONTROL Couleurs de premier plan des ressources]**, vous permettent de comparer les caractéristiques créatives aux performances des médias achetés. Avec le suivi spécifique aux ressources et les dimensions d’attributs correspondantes configurées sur les deux sources, vous pouvez étendre cette comparaison aux commandes de sites web attribuées et utiliser les résultats pour guider les tests créatifs.
