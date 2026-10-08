@@ -4,12 +4,11 @@ description: Découvrez la configuration automatique des jeux de données, de la
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
-source-git-commit: f83d40d33e90ba73f26129ab416f063f361edca7
+source-git-commit: 2727dce145b996192ac873dd43d5106b011ff736
 workflow-type: tm+mt
 source-wordcount: '1493'
 ht-degree: 4%
 ---
-
 # Configuration automatique des médias payants
 
 Lorsque vous activez le canal média payant dans Content Analytics et enregistrez la configuration, Adobe met à jour la connexion et les vues de données sélectionnées avec la configuration de création de rapports pour les jeux de données de médias payants. Vous n’avez pas besoin de recréer vous-même les dimensions, mesures, logique de recherche ou groupes de données de résumé par défaut.
@@ -65,7 +64,6 @@ Ce tableau décrit la couverture du jeu de données, et ne garantit pas que chaq
 Des jeux de données de recherche distincts décrivent le compte, la campagne, le groupe publicitaire, la publicité, l’expérience et la ressource. Ils fournissent des noms et des métadonnées à l’aide de GUID d’entité. Il n’existe aucune association un-à-un entre les jeux de données de résumé et les six jeux de données de recherche.
 
 Le regroupement de données récapitulatives rassemble des dimensions équivalentes ; le regroupement ne totalise pas les six totaux des mesures de performances.
-
 
 ## Composants
 
