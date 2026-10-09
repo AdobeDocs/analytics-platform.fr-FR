@@ -94,4 +94,4 @@ Voir pour plus d’informations :
 
 ## Intégration sortante
 
-Pour plus d’informations sur l’intégration sortante, consultez la section [Intégration de &#x200B;](https://experienceleague.adobe.com/en/docs/brand-visibility/using/resources/customer-journey-analytics-integration){target="_blank"} dans la documentation de Adobe Brand Visibility.
+Pour plus d’informations sur l’intégration sortante, consultez la section [Intégration de &#x200B;](https://experienceleague.adobe.com/fr/docs/brand-visibility/using/resources/customer-journey-analytics-integration){target="_blank"} dans la documentation de Adobe Brand Visibility.

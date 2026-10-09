@@ -40,7 +40,7 @@ Vérifiez avec Adobe les deux parties de la remise :
 1. Adobe a confirmé que les journaux sont reçus et détectés pour le site approprié.
 
 Le transfert de journal BYOCDN fournit les données de requête CDN côté serveur utilisées pour l’analyse du trafic des agents automatisés. Les données ne dépendent pas des balises JavaScript exécutées dans un navigateur. L’élément requis
-Le flux de journal du réseau CDN s’assure que le jeu de données de résumé en aval contient les données de trafic agentic de Brand Visibility prévues. Pour plus d’informations, consultez la [référence du transfert de journal BYOCDN](https://experienceleague.adobe.com/en/docs/brand-visibility/using/log-forwarding/log-forwarding-overview).
+Le flux de journal du réseau CDN s’assure que le jeu de données de résumé en aval contient les données de trafic agentic de Brand Visibility prévues. Pour plus d’informations, consultez la [référence du transfert de journal BYOCDN](https://experienceleague.adobe.com/fr/docs/brand-visibility/using/log-forwarding/log-forwarding-overview).
 
 ### Informations requises
 
