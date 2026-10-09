@@ -43,7 +43,7 @@ L’authentification sur le connecteur utilise [!DNL OAuth 2.0]. Lors de la conf
 
 ## Modèle de données
 
-La configuration automatique des médias achetés de Content Analytics [](/help/content-analytics/config/paid-media.md) explique en détail le modèle de données des médias achetés. Cette configuration automatique crée et configure les jeux de données et les composants requis en général et pour analyser le contenu en particulier.
+La configuration automatique des médias achetés de Content Analytics [&#128279;](/help/content-analytics/config/paid-media.md) explique en détail le modèle de données des médias achetés. Cette configuration automatique crée et configure les jeux de données et les composants requis en général et pour analyser le contenu en particulier.
 
 Pour comprendre le modèle de données de média payant, reportez-vous à cette documentation. Utilisez-la pour choisir les jeux de données à utiliser dans Customer Journey Analytics. Les connecteurs source configurés génèrent ces jeux de données.
 
@@ -133,4 +133,4 @@ Utilisez la liste de contrôle suivante pour valider l’implémentation.
 >[!MORELIKETHIS]
 >
 >[Connecteur source Meta Ads](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/advertising/meta-ads)
->[Configuration automatique des médias payants ](/help/content-analytics/config/paid-media.md)
+>[Configuration automatique des médias payants &#x200B;](/help/content-analytics/config/paid-media.md)
