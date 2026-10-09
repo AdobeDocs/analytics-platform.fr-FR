@@ -1,6 +1,6 @@
 ---
-title: Intégration de Brand Visibility
-description: Intégration de Brand Visibility à Customer Journey Analytics
+title: Référence du jeu de données d’intégration entrant Brand Visibility
+description: Découvrez tous les détails des jeux de données utilisés pour l’intégration de Brand Visibility avec Customer Journey Analytics
 feature: Experience Platform Integration
 role: User
 product_v2:
@@ -15,9 +15,9 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: a7bea19dcd89472ee21c533e44e1f87f5d179838
 workflow-type: tm+mt
-source-wordcount: '2572'
+source-wordcount: '2555'
 ht-degree: 3%
 ---
 
@@ -90,11 +90,11 @@ Brand Visibility vous fournit cette clé dans la dimension **URL du réseau CDN*
 
 Brand Visibility lit les journaux d’accès au réseau CDN côté serveur et extrait les enregistrements où la partie demandeuse est un robot ou un agent automatisé. Comme les données proviennent de la couche CDN, Brand Visibility capture les requêtes des robots qui ne déclenchent aucune balise JavaScript. Les outils d’analyse web standard manquent entièrement ce trafic.
 
-Le jeu de données utilise le groupe de champs **Résumé des requêtes CDN**. Chaque champ se trouve sous un objet `cdn`. Par conséquent, les noms de champ dans les tableaux ci-dessous prennent la forme `cdn.<name>`, par exemple `cdn.url` et `cdn.botType`.
+Le jeu de données utilise le groupe de champs **Résumé des requêtes CDN**. Chaque champ se trouve sous un objet `cdn`. Par conséquent, les noms de champ dans les tableaux ci-dessous se présentent sous la forme <code>cdn._name_</code>, par exemple `cdn.url` et `cdn.botType`.
 
 Chaque enregistrement décrit une combinaison d’hôte, de chemin d’URL, de type de robot, de fournisseur de réseau CDN, de code d’état, de référent, d’hôte transféré et de temps du premier octet pendant une heure. Lorsque la même combinaison apparaît plusieurs fois par heure, Customer Journey Analytics combine ces enregistrements en une seule ligne et augmente le nombre de requêtes. Utilisez la mesure **Nombre de requêtes CDN** pour mesurer le volume. N’utilisez pas le nombre de lignes.
 
-### Dimensions
+## Dimensions
 
 Les dimensions suivantes peuvent être utilisées comme composants dans une vue de données une fois que vous avez configuré une connexion qui inclut un jeu de données Brand Visibility. La colonne **Champ** affiche le champ source dans le groupe de champs Résumé des requêtes du réseau CDN.
 
@@ -165,7 +165,7 @@ Les codes d’état HTTP de ce jeu de données indiquent si l’agent AI a reçu
 | 429 | Trop De Requêtes | Le réseau de diffusion de contenu a limité le robot. Des erreurs 429 persistantes sur les types d’agents de récupération en direct signifient que les utilisateurs qui posent des questions aux assistants d’IA sur votre contenu recevront des réponses incomplètes ou manquantes. |
 | 504 | Délai d’expiration de la passerelle | Le réseau CDN a cessé d’attendre que l’origine réponde. Le contenu n’a pas atteint l’IA. Lorsqu’une page expire, l’IA ne peut pas accéder à son contenu et ne peut pas l’inclure dans une réponse. Un volume 504 élevé sur les types d’agents de récupération en direct est un risque de visibilité directe de l’IA. |
 
-### Mesures
+## Mesures
 
 Les mesures suivantes peuvent être utilisées comme composants dans une vue de données une fois que vous avez configuré une connexion qui inclut un jeu de données Brand Visibility. La colonne **Champ** affiche le champ source dans le groupe de champs Résumé des requêtes du réseau CDN.
 
@@ -176,7 +176,7 @@ Les mesures suivantes peuvent être utilisées comme composants dans une vue de 
 | Taux d’erreur du réseau CDN | Dérivé du nombre d’erreurs CDN | Le nombre d’erreurs est exprimé en pourcentage du nombre total de requêtes. |
 | Temps moyen jusqu’au premier octet sur le réseau CDN | `cdn.timeToFirstByte` | Temps moyen en millisecondes entre le moment où le réseau CDN a reçu une requête et le premier octet de la réponse. Les réponses mises en cache par CDN sont généralement inférieures à 50 ms. Les réponses diffusées depuis l’origine sont généralement comprises entre 300 et 700 ms. Les agents d’extraction en direct de l’IA présentent souvent des valeurs beaucoup plus élevées, qui correspondent à des réponses d’origine expirées ou très lentes. Des valeurs moyennes élevées sur les types d’agents de récupération en direct méritent d’être étudiées en tant que risque de visibilité de l’IA. |
 
-### Limites des jeux de données
+## Limites
 
 Ce jeu de données capture uniquement le trafic des robots provenant des journaux d’accès CDN. Il ne contient pas les éléments suivants :
 
@@ -185,7 +185,3 @@ Ce jeu de données capture uniquement le trafic des robots provenant des journau
 * **Granularité temporelle inférieure à la seconde.** La date et l’heure sont toutes les heures. Vous ne pouvez pas répartir le trafic au cours d’une heure en minutes ou secondes.
 * **Contenu de la page ou rendu d’HTML.** Ce jeu de données enregistre le fait de la récupération et son résultat, et non pas ce que l’IA lit de la page.
 * **Données de conversion.** Ce jeu de données ne vous indique pas si une réponse de l’IA a conduit une personne à visiter votre site ou à effectuer une conversion. Il contient des données de résumé CDN agrégées, et non des données d’événement basées sur une personne. Il ne lie donc aucune requête à une personne ou session individuelle.
-
-## Intégration sortante
-
-Pour plus d’informations sur l’intégration sortante, reportez-vous à la section [Intégration de &#x200B;](https://experienceleague.adobe.com/fr/docs/brand-visibility/using/resources/customer-journey-analytics-integration){target="_blank"} dans la documentation sur la visibilité des marques Adobe.
