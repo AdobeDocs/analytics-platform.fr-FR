@@ -69,7 +69,7 @@ Pour afficher des informations sur un composant dans le dictionnaire de données
 
    * **Mesures** ![icône de mesure](/help/assets/icons/Event.svg) sont verts
 
-   * L’icône **** l’icône ![Adobe](assets/default-calc-metric-icon.png) indique soit un modèle de mesure calculée, soit un modèle de segment
+   * L’icône **&#x200B;**&#x200B;l’icône ![Adobe](assets/default-calc-metric-icon.png) indique soit un modèle de mesure calculée, soit un modèle de segment
 
    * **Icône Calculateur** ![Icône Calculateur](/help/assets/icons/Calculator.svg) indique une mesure calculée qui a été créée par un administrateur ou une administratrice Analytics de votre entreprise
 

@@ -65,7 +65,7 @@ Pour modifier un composant dans le dictionnaire de données :
 
    * **Mesures** ![icône de mesure](/help/assets/icons/Event.svg) sont verts
 
-   * L’icône **** l’icône ![Adobe](assets/default-calc-metric-icon.png) indique soit un modèle de mesure calculée, soit un modèle de segment
+   * L’icône **&#x200B;**&#x200B;l’icône ![Adobe](assets/default-calc-metric-icon.png) indique soit un modèle de mesure calculée, soit un modèle de segment
 
    * **Icône Calculateur** ![Icône Calculateur](/help/assets/icons/Calculator.svg) indique une mesure calculée qui a été créée par un administrateur ou une administratrice Analytics de votre entreprise
 
@@ -84,7 +84,7 @@ Pour modifier un composant dans le dictionnaire de données :
    | **[!UICONTROL Description manquante]** | Afficher uniquement les composants qui n’ont pas encore de description dans le champ de description. Cette option est réservée aux administrateurs et administratrices. |
    | **[!UICONTROL Afficher les doublons]** | Afficher uniquement les composants portant le même nom ou la même description qu’un autre composant de la vue de données sélectionnée. Cela inclut les composants que vous créez, ainsi que ceux fournis par Adobe. Les noms ou descriptions doivent correspondre exactement pour apparaître comme des doublons. Cette option est réservée aux administrateurs et administratrices. |
    | **[!UICONTROL Aucune donnée récente]** | Afficher uniquement les composants qui n’ont collecté aucune donnée au cours des 90 derniers jours. Cette option est réservée aux administrateurs et administratrices. |
-   | **[!UICONTROL Création Adobe]** <!-- I don't see this option--> | Afficher uniquement les composants créés par Adobe. Par exemple, ****. Les composants créés par un administrateur ou un autre utilisateur de votre organisation ne sont pas affichés. |
+   | **[!UICONTROL Création Adobe]** <!-- I don't see this option--> | Afficher uniquement les composants créés par Adobe. Par exemple, **&#x200B;**. Les composants créés par un administrateur ou un autre utilisateur de votre organisation ne sont pas affichés. |
 
    {style="table-layout:auto"}
 

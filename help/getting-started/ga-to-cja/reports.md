@@ -65,7 +65,7 @@ Dans Analysis Workspace, appliquez un modèle d’attribution **[!UICONTROL Prem
 2. Cliquez avec le bouton droit sur un en-tête de colonne de mesure et sélectionnez **[!UICONTROL Utiliser un modèle d’attribution autre que celui par défaut]**.
 3. Sélectionnez **[!UICONTROL Première touche]** avec un intervalle de recherche en amont approprié à votre analyse.
 
-Vous pouvez également utiliser le panneau [[!UICONTROL Attribution] ](/help/analysis-workspace/c-panels/attribution.md) pour une comparaison côte à côte des performances des canaux Première touche et Dernière touche.
+Vous pouvez également utiliser le panneau [[!UICONTROL Attribution] &#x200B;](/help/analysis-workspace/c-panels/attribution.md) pour une comparaison côte à côte des performances des canaux Première touche et Dernière touche.
 
 +++
 
@@ -90,7 +90,7 @@ Les répartitions de GA4 correspondent à ces dimensions Customer Journey Analyt
 
 Les rapports Attribution de GA4 (sous Advertising) montrent comment différents canaux contribuent aux conversions et permettent de comparer les modèles et d’analyser les chemins de conversion.
 
-Dans Analysis Workspace, utilisez le panneau [[!UICONTROL Attribution] ](/help/analysis-workspace/c-panels/attribution.md) :
+Dans Analysis Workspace, utilisez le panneau [[!UICONTROL Attribution] &#x200B;](/help/analysis-workspace/c-panels/attribution.md) :
 
 1. Sélectionnez l’icône Panneaux et faites glisser un panneau **[!UICONTROL Attribution]** sur la zone de travail.
 2. Faites glisser la dimension **[!UICONTROL Canal marketing]** vers la zone **[!UICONTROL Ajouter Dimension]**.
@@ -384,7 +384,7 @@ Dans Customer Journey Analytics, la mesure équivalente est **[!UICONTROL Évén
 
 +++Sessions → Sessions
 
-Les **Sessions** de GA4 et les **[!UICONTROL Sessions]** de Customer Journey Analytics mesurent toutes deux le nombre de sessions dans une période. Les nombres peuvent différer en raison de règles de définition de session différentes. Pour plus d’informations](compare-data.md#sessions) voir [Pourquoi les données GA4 et Customer Journey Analytics diffèrent-elles ?
+Les **Sessions** de GA4 et les **[!UICONTROL Sessions]** de Customer Journey Analytics mesurent toutes deux le nombre de sessions dans une période. Les nombres peuvent différer en raison de règles de définition de session différentes. Pour plus d’informations[&#128279;](compare-data.md#sessions) voir Pourquoi les données GA4 et Customer Journey Analytics diffèrent-elles ?
 
 +++
 

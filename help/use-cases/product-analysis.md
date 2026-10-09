@@ -149,5 +149,5 @@ Communiquez les résultats clés entre les équipes afin d’aligner les efforts
 Les fonctionnalités suivantes de Customer Journey Analytics vous aident à partager efficacement des informations :
 
 * [Partage](/help/analysis-workspace/curate-share/share-projects.md) vues d’analyse guidée adaptées à des questions commerciales spécifiques, permettant aux consommateurs de se servir de leur prochaine question
-* Combinez des analyses guidées, des panneaux et des visualisations dans un tableau de bord complet dans [](/help/analysis-workspace/home.md)
+* Combinez des analyses guidées, des panneaux et des visualisations dans un tableau de bord complet dans [&#128279;](/help/analysis-workspace/home.md)
 * Créez une [carte de performance mobile](/help/mobile-app/home.md) avec des informations clés sur les produits pour les dirigeants et les autres consommateurs en déplacement

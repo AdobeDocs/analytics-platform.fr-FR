@@ -41,13 +41,13 @@ Cependant, les administrateurs peuvent accorder aux utilisateurs l’autorisatio
 
 Vous pouvez créer un segment des manières suivantes :
 
-![Comment créer un segment ](assets/create-filter.png)
+![Comment créer un segment &#x200B;](assets/create-filter.png)
 
 * **A** Dans l’interface principale, sélectionnez **[!UICONTROL Composants]** puis **[!UICONTROL Segments]**. Sélectionnez ![AddCircle](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL Add]**] dans le gestionnaire [[!UICONTROL Segment]](/help/components/segments/seg-manage.md).
 * **B**. Dans un projet Workspace, dans le panneau de gauche Composants , sélectionnez ![Ajouter](/help/assets/icons/Add.svg) sous ![Segment](/help/assets/icons/Segmentation.svg) **Segments**.
 * **C**. Dans un projet Workspace, dans le menu contextuel d’une visualisation, sélectionnez **[!UICONTROL Créer un segment à partir de la sélection]**.
 * **J**. Dans un projet Workspace, sélectionnez **[!UICONTROL Composants]** dans le menu, puis sélectionnez **[!UICONTROL Créer un segment]**.
-* **. Dans un projet Workspace, utilisez le raccourci**[!UICONTROL  maj+cmd+e ]**(macOS) ou**[!UICONTROL  maj+ctrl+e ]**(Windows).**
+* **. Dans un projet Workspace, utilisez le raccourci**&#x200B;[!UICONTROL &#x200B; maj+cmd+e &#x200B;]&#x200B;**(macOS) ou**&#x200B;[!UICONTROL &#x200B; maj+ctrl+e &#x200B;]&#x200B;**(Windows).**
 * **F**. Sélectionnez ![Ajouter](/help/assets/icons/Add.svg) dans ***Déposez un segment ici (ou tout autre composant)*** zone de dépôt. Cette action crée un segment Projet uniquement.
 
 Pour définir le nouveau segment, utilisez le [créateur de segments](/help/components/segments/seg-builder.md).

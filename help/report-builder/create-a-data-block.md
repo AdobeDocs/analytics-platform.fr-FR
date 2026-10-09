@@ -44,7 +44,7 @@ Configurez les paramètres initiaux du bloc de données : son emplacement, les v
 
 1. Sélectionnez ![AjouterCercle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Créer]**.
 
-   ![Capture d’écran affichant l’option Créer un bloc de données ](./assets/create-data-block.png){zoomable="yes"}
+   ![Capture d’écran affichant l’option Créer un bloc de données &#x200B;](./assets/create-data-block.png){zoomable="yes"}
 
 
 1. Définissez lʼ&#x200B;**[!UICONTROL Emplacement du bloc de données]**.
@@ -69,7 +69,7 @@ Configurez les paramètres initiaux du bloc de données : son emplacement, les v
 
    Sélectionnez **[!UICONTROL À partir de la cellule]** pour définir des données de début et de fin en fonction d&#39;une cellule de la feuille active.
 
-   Pour plus d’informations sur les options de période, voir [ Sélectionner une période ](select-date-range.md).
+   Pour plus d’informations sur les options de période, voir [&#x200B; Sélectionner une période &#x200B;](select-date-range.md).
 
 1. Sélectionnez **[!UICONTROL Suivant]**.
 
@@ -123,7 +123,7 @@ Pour créer le bloc de données, sélectionnez les composants du rapport, puis p
 
 1. Sélectionnez **[!UICONTROL Terminer]** pour terminer la configuration de votre bloc de données.
 
-1. Un message de traitement **** s’affiche lors de la récupération des données d’analyse.
+1. Un message de traitement **&#x200B;**&#x200B;s’affiche lors de la récupération des données d’analyse.
 
    ![Message de traitement.](./assets/image11.png)
 

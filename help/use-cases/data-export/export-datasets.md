@@ -35,7 +35,7 @@ ht-degree: 6%
 ---
 # Exporter les jeux de données
 
-Cet article décrit comment le [!DNL Customer Journey Analytics Export datasets] peut être utilisé pour implémenter le cas d’utilisation d’exportation de données [ suivant ](overview.md) :
+Cet article décrit comment le [!DNL Customer Journey Analytics Export datasets] peut être utilisé pour implémenter le cas d’utilisation d’exportation de données [&#x200B; suivant &#x200B;](overview.md) :
 
 - Sauvegarde des données
 
@@ -49,7 +49,7 @@ Extension ![BI](../assets/export-datasets.png)
 
 ## Informations supplémentaires
 
-Pour exporter des jeux de données bruts à partir du lac de données dans Experience Platform, utilisez des destinations d’espace de stockage. Cette exportation est appelée destinations d’exportation de jeux de données dans la terminologie des destinations Experience Platform. Pour obtenir une présentation, voir [ Exporter des jeux de données vers des destinations d’espace de stockage ](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/activate/export-datasets).
+Pour exporter des jeux de données bruts à partir du lac de données dans Experience Platform, utilisez des destinations d’espace de stockage. Cette exportation est appelée destinations d’exportation de jeux de données dans la terminologie des destinations Experience Platform. Pour obtenir une présentation, voir [&#x200B; Exporter des jeux de données vers des destinations d’espace de stockage &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/activate/export-datasets).
 
 Les destinations suivantes de stockage dans le cloud sont prises en charge :
 

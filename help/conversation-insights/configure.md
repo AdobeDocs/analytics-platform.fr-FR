@@ -46,7 +46,7 @@ Lorsque vous créez ou modifiez une configuration Insights de conversation, vous
 
 Seuls les administrateurs système peuvent créer ou modifier des configurations de Conversation Insights.
 
-Vous pouvez créer ou modifier des configurations à partir de l’interface [ Configurations de Conversation Insights ](./manage.md).
+Vous pouvez créer ou modifier des configurations à partir de l’interface [&#x200B; Configurations de Conversation Insights &#x200B;](./manage.md).
 
 ## Restaurer le jeu de données fusionné manquant
 
@@ -130,7 +130,7 @@ Les vues de données que vous avez configurées dans [Étapes de configuration](
 
 Pour chacune des vues de données configurées :
 
-* **Conteneurs** : l’onglet [Conteneurs](/help/data-views/create-dataview.md#containers) contient un nouveau **[!UICONTROL Nom du conteneur]** : **[!UICONTROL conversation]** avec **[!UICONTROL Nom d’affichage]**: **[!UICONTROL Container]** comme **[!UICONTROL Système]** Type de conteneur **** supplémentaire.
+* **Conteneurs** : l’onglet [Conteneurs](/help/data-views/create-dataview.md#containers) contient un nouveau **[!UICONTROL Nom du conteneur]** : **[!UICONTROL conversation]** avec **[!UICONTROL Nom d’affichage]**: **[!UICONTROL Container]** comme **[!UICONTROL Système]** Type de conteneur **&#x200B;**&#x200B;supplémentaire.
 * **Composants** : d’autres dossiers de champs de schéma s’affichent. Par exemple : agentExperience et conversation. En outre, les composants suivants sont automatiquement ajoutés :
 
   | Mesures | Type de données de schéma | Chemin du schéma |
