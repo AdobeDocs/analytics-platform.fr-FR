@@ -31,7 +31,7 @@ ht-degree: 87%
 >[!CONTEXTUALHELP]
 >id="component_datadictionary"
 >title="Dictionnaire de données"
->abstract="Lorsque cette option est sélectionnée, le composant principal est partagé avec toutes les personnes ayant accès aux composants en double (leurs propriétaires et toutes les personnes avec lesquelles ils sont partagés). Ces personnes peuvent ensuite sélectionner le composant principal dans la liste des composants pour les projets futurs. Cependant, elles ne peuvent pas modifier le composant, même si elles étaient propriétaires d’un composant en double qui a été consolidé. <br/>Cette option est disponible uniquement lorsque le composant principal est un segment, une mesure calculée ou une période. Les mesures et dimensions sont toujours disponibles pour l’ensemble des utilisateurs et utilisatrices.
+>abstract="Lorsque cette option est sélectionnée, le composant principal est partagé avec toutes les personnes ayant accès aux composants en double (leurs propriétaires et toutes les personnes avec lesquelles ils sont partagés). Ces personnes peuvent ensuite sélectionner le composant principal dans la liste des composants pour les projets futurs. Cependant, elles ne peuvent pas modifier le composant, même si elles étaient propriétaires d’un composant en double qui a été consolidé. <br/>Cette option est disponible uniquement lorsque le composant principal est un segment, une mesure calculée ou une période. Les mesures et dimensions sont toujours disponibles pour l’ensemble des utilisateurs et utilisatrices."
 >
 >When this option is deselected, the primary component still replaces duplicates in existing projects and segments, but users who didn't previously have access to it can't access it from the component list for future projects. "
 

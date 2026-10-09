@@ -342,7 +342,7 @@ Les heures d’arrivée varient en fonction du type de données que vous collect
 
 #### Phase 2 : les données sont ingérées à partir du lac de données dans Customer Journey Analytics
 
-Cela peut prendre jusqu’à 90 minutes (voir [ Latences ](/help/technotes/guardrails.md#latencies)).
+Cela peut prendre jusqu’à 90 minutes (voir [&#x200B; Latences &#x200B;](/help/technotes/guardrails.md#latencies)).
 
 * **Jeux de données groupés** : le groupement peut ajouter jusqu’à 4 heures (voir [Latences](/help/technotes/guardrails.md#latencies)). Si le groupement est activé pour la connexion, définissez un délai d’au moins 6 heures, et potentiellement de 8 heures. Les données mises à jour par une relecture d’assemblage ne sont généralement pas incluses dans les fichiers de flux de données déjà traités.
 
