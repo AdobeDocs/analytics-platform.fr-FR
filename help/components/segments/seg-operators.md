@@ -97,6 +97,6 @@ Vous pouvez créer un segment basé sur un nombre d’éléments distincts au se
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Nombre de dimensions distinct](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/components/calculated-metrics/approximate-count-distinct-function-in-calculated-metrics){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Nombre de dimensions distinct](https://experienceleague.adobe.com/fr/docs/analytics-learn/tutorials/components/calculated-metrics/approximate-count-distinct-function-in-calculated-metrics){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
