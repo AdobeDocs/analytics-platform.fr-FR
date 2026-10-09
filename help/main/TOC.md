@@ -2,9 +2,9 @@
 user-guide-title: Guide de Customer Journey Analytics (parcours client)
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: d7614102d54af57a3a084c8550041f8e04f4bc37
+source-git-commit: a7bea19dcd89472ee21c533e44e1f87f5d179838
 workflow-type: tm+mt
-source-wordcount: '1515'
+source-wordcount: '1518'
 ht-degree: 89%
 ---
 # Guide d’Adobe Customer Journey Analytics {#using}
@@ -435,7 +435,7 @@ ht-degree: 89%
       + {hide-from-toc}[Préparer le mappage des colonnes](/help/components/exports/cja-data-feeds/df-column-mapping-prep.md)
       + {hide-from-toc}[Mapper les colonnes](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)
       + {hide-from-toc}[Créer des flux de données](/help/components/exports/cja-data-feeds/create-feed.md)
-      + {hide-from-toc}[&#x200B; Disponibilité des composants &#x200B;](/help/components/exports/cja-data-feeds/df-components.md)
+      + {hide-from-toc}[ Disponibilité des composants ](/help/components/exports/cja-data-feeds/df-components.md)
       + {hide-from-toc}[Segmentation dans les flux de données](/help/components/exports/cja-data-feeds/df-segmentation.md)
       + {hide-from-toc}[Appliquer des transformations de données](/help/components/exports/cja-data-feeds/df-data-transformations.md)
       + {hide-from-toc}[Sous-événements dans les flux de données](/help/components/exports/cja-data-feeds/df-sub-event.md)
@@ -491,7 +491,10 @@ ht-degree: 89%
   + [Intégrer des données Journey Optimizer](/help/integrations/ajo.md)
   + [Intégrer les données de gestion des décisions](/help/integrations/ajo-od.md)
   + [Intégrer l’IA dédiée aux clientes et clients](/help/integrations/customer-ai.md)
-  + [Intégration de Brand Visibility](/help/integrations/bv.md)
+  + Intégration de Brand Visibility {#bv}
+    + [Vue d’ensemble](/help/integrations/bv/bv.md)
+    + [Configurer](/help/integrations/bv/configure.md)
+    + [Référence](/help/integrations/bv/reference.md)
   + [Intégrer Adobe Advertising](/help/integrations/advertising.md)
 
 + Gouvernance des données {#cja-privacy}
@@ -573,7 +576,7 @@ ht-degree: 89%
       + [Lier des lectures de session](/help/use-cases/third-party/quantum-metric/tie-session-replays.md)
       + [Utiliser des cartes thermiques](/help/use-cases/third-party/quantum-metric/heatmap.md)
       + [Ajouter des événements de friction](/help/use-cases/third-party/quantum-metric/friction-events.md)
-      + {hide-from-toc}[Connecteur &#x200B;](/help/use-cases/third-party/quantum-metric/source-connector.md)
+      + {hide-from-toc}[Connecteur ](/help/use-cases/third-party/quantum-metric/source-connector.md)
 
 + Labs {#labs}
   + [Guide d’utilisation de Labs](../labs/labs.md)
