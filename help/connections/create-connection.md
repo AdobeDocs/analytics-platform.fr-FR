@@ -36,7 +36,7 @@ topic_v2:
 source-git-commit: cc31e50f01da63eaf1e7b6eb8465d187485b7816
 workflow-type: tm+mt
 source-wordcount: '10677'
-ht-degree: 89%
+ht-degree: 90%
 ---
 # Créer ou modifier une connexion {#create-or-edit-a-connection}
 
@@ -733,7 +733,7 @@ Tous les jeux de données et types de jeux de données comportent des [paramètr
 >[!CONTEXTUALHELP]
 >id="connection_eventdataset_rowfilter"
 >title="Activer le filtrage des lignes"
->abstract="Les filtres de ligne déterminent quels événements sont ingérés dans Customer Journey Analytics. Seuls les événements correspondant à vos règles d’inclusion sont ingérés. Tous les autres événements seront définitivement exclus et indisponibles pour la création de rapports, la segmentation ou l’analyse dans Customer Journey Analytics.<ul><li>Vous pouvez créer jusqu’à 10 filtres.</li><li> Les modifications apportées aux filtres s’appliquent uniquement aux nouvelles données ingérées après la modification et n’affectent pas rétroactivement les données précédemment ingérées ni ne déclenchent de renvoi historique.</li></ul>"
+>abstract="Les filtres de ligne déterminent quels événements sont ingérés dans Customer Journey Analytics. Seuls les événements correspondant à vos règles d’inclusion sont ingérés. Tous les autres événements seront définitivement exclus et indisponibles pour la création de rapports, la segmentation ou l’analyse dans Customer Journey Analytics.<ul><li>Vous pouvez créer jusqu’à 10 filtres/</li><li> Les modifications apportées aux filtres s’appliquent uniquement aux nouvelles données ingérées après la modification et n’affectent pas rétroactivement les données précédemment ingérées ni ne déclenchent de renvoi historique.</li></ul>"
 
 >[!CONTEXTUALHELP]
 >id="connection_eventdataset_rowfilter_field"
@@ -748,7 +748,7 @@ Tous les jeux de données et types de jeux de données comportent des [paramètr
 >[!CONTEXTUALHELP]
 >id="connection_eventdataset_rowfilter_values"
 >title="Valeurs"
->abstract="Saisissez une ou plusieurs valeurs. La valeur de chaîne exacte est utilisée. Utilisez une virgule pour séparer les valeurs. Chaque valeur séparée par des virgules est considérée comme distincte et est incluse dans la condition ."
+>abstract="Saisissez une ou plusieurs valeurs. La valeur de chaîne exacte est utilisée. Utilisez une virgule pour séparer les valeurs. Chaque valeur séparée par des virgules est considérée comme distincte et est incluse dans la condition."
 
 Les paramètres spécifiques d’un jeu de données d’événement dépendent du type de connexion.
 

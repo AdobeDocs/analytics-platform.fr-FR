@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: d7614102d54af57a3a084c8550041f8e04f4bc37
 workflow-type: tm+mt
-source-wordcount: '4244'
-ht-degree: 30%
+source-wordcount: '3881'
+ht-degree: 12%
 ---
 # Créer un flux de données
 
@@ -68,27 +68,9 @@ Avant de créer un flux de données, il est important de comprendre les bases de
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_datafeed_processing_delay"
->title="Délai de traitement"
->abstract="Durée d’attente des événements arrivant en retard avant de traiter un fichier de flux de données. Tous les accès tardifs qui arrivent pendant la période de délai de traitement sont inclus dans le flux de données. <p>Les délais de traitement sont utiles pour diverses raisons, par exemple pour laisser aux appareils mobiles hors ligne le temps de se reconnecter et d’envoyer leurs données, ou pour tenir compte des processus côté serveur de votre entreprise lors de la gestion de fichiers déjà traités.</p><p>Pour être incluses, les sessions doivent commencer après le délai de traitement ; les sessions qui commencent avant et se terminent dans le délai de traitement ne sont pas incluses.</p><p>Customer Journey Analytics détermine de manière dynamique le délai optimal en fonction de la durée habituelle des événements arrivant en retard pour votre flux, mais vous pouvez le définir manuellement sur un délai de 2, 3, 4 ou 8 heures.</p>"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja_datafeed_user-agent"
->title=""
->abstract="Les données de l’agent utilisateur et les données de recherche de périphérique ne peuvent pas exister dans la même configuration de flux de données."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja_datafeed_required_dimensions"
->title="Dimensions obligatoires"
->abstract="Chaque flux de données doit inclure certaines dimensions, identifiées par un libellé **Obligatoire** en regard du nom de la dimension. Ces dimensions fournissent la structure minimale nécessaire à l’analyse au niveau de l’événement."
+>id="cja_datafeed_frequency_granularity"
+>title="Fréquence et granularité"
+>abstract="**Fréquence de diffusion** (flux actifs) : fréquence de diffusion du flux de données. Les diffusions horaires contiennent l’équivalent d’une heure de données ; les diffusions quotidiennes contiennent l’équivalent d’une journée de données. La période de recherche en amont et le délai de traitement peuvent également affecter les événements inclus.<p>**Granularité** (flux de renvoi) : intervalle de temps utilisé pour diviser les données historiques. Chaque bloc contient l’équivalent d’une journée de données et est diffusé le plus rapidement possible, et non une fois par jour. Ce champ est toujours défini sur Quotidien et ne peut pas être modifié.</p>"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -147,156 +129,7 @@ Avant de créer un flux de données, il est important de comprendre les bases de
 
    <!--add screenshot-->
 
-   +++ Dimensions toujours incluses dans les flux de données
-
-   Les dimensions suivantes sont incluses par défaut dans chaque flux de données et ne peuvent pas être supprimées :
-
-   | Nom de la dimension | Notes | Flux de données | Autres rapports |
-   |---|---|---|---|
-   | Date et heure UTC | Date et heure de l’événement, représentées dans le fuseau horaire UTC. Prend en charge la granularité inférieure à la seconde (micro-seconde). | Obligatoire | Non disponible |
-   | ID de ligne | Identifiant unique pour chaque ligne incluse dans le flux de données. | Obligatoire | Non disponible |
-   | Identifiant de session | Identifiant unique pour chaque session incluse dans le flux de données. | Obligatoire | Non disponible |
-   | ID de personne | Identifiant de personne pour la vue de données et la connexion | Obligatoire | Norme facultative |
-   | ID de compte {type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Identifiant de compte lors de l’utilisation du conteneur Compte | Obligatoire | Norme facultative |
-
-   +++
-
-   +++ Dimensions qui ne peuvent pas être incluses dans les flux de données
-
-   Les dimensions standard de Customer Journey Analytics ne peuvent pas être incluses dans les flux de données. Le tableau suivant répertorie ces dimensions :
-
-   | Nom de la dimension | Notes | Flux de données |
-   |---|---|---|
-   | 5 minutes | Intervalles de cinq minutes lorsque des événements se sont produits (arrondi à l’unité inférieure) | Non disponible |
-   | 15 minutes | Intervalles de quinze minutes lorsque des événements se sont produits (arrondi à l’unité inférieure) | Non disponible |
-   | 30 minutes | Intervalles de trente minutes lorsque des événements se sont produits (arrondi à l’unité inférieure) | Non disponible |
-   | Jour | Jour où un événement s’est produit | Non disponible |
-   | Jour de la semaine | Jour de la semaine où un événement s’est produit | Non disponible |
-   | Jour du mois | Jour du mois où un événement s’est produit | Non disponible |
-   | Heure | Heure à laquelle l’événement s’est produit (arrondie à l’unité inférieure) | Non disponible |
-   | Heure de la journée | Heure du jour où un événement s’est produit (arrondie à l’unité inférieure) | Non disponible |
-   | Minute | Minute à laquelle un événement s’est produit (arrondi à l’unité inférieure) | Non disponible |
-   | Minute de l’heure | Minute de l’heure à laquelle un événement s’est produit (arrondie à l’unité inférieure) | Non disponible |
-   | Mois | Mois au cours duquel un événement s’est produit | Non disponible |
-   | Mois de l’année | Mois de l’année au cours duquel un événement s’est produit | Non disponible |
-   | Trimestre | Trimestre au cours duquel un événement s’est produit | Non disponible |
-   | Trimestre de l’année | Trimestre de l’année au cours duquel un événement s’est produit | Non disponible |
-   | Second | Deuxième occurrence (arrondi à l’unité inférieure) | Non disponible |
-   | Semaine | Semaine au cours de laquelle un événement s’est produit | Non disponible |
-   | Semaine de l’année | Semaine de l’année au cours de laquelle un événement s’est produit | Non disponible |
-   | Année | Année au cours de laquelle un événement s’est produit | Non disponible |
-
-   +++
-
-   +++ Mesures qui ne peuvent pas être incluses dans les flux de données
-
-   Les mesures standard Customer Journey Analytics suivantes ne peuvent pas être incluses dans les flux de données :
-
-   | Nom de la mesure | Notes | Flux de données |
-   |---|---|---|
-   | Profil des visiteurs Adobe | | Non disponible |
-   | Union des opportunités Adobe | | Non disponible |
-   | Profil d’opportunités Adobe | | Non disponible |
-   | Union des comptes Adobe | | Non disponible |
-   | Profil des comptes Adobe | | Non disponible |
-   | Union des groupes d’achat Adobe | | Non disponible |
-   | Profil de groupes d’achats Adobe | | Non disponible |
-   | Union des comptes globaux Adobe | | Non disponible |
-   | Profil de comptes globaux Adobe | | Non disponible |
-   | Union des personnes Adobe | | Non disponible |
-   | Profil de personnes Adobe | | Non disponible |
-
-   +++
-
-   +++ Dimensions qui ne peuvent pas être utilisées ensemble dans les flux de données
-
-   >[!IMPORTANT]
-   >
-   >Certaines dimensions ne peuvent pas être utilisées ensemble dans les jeux de données Experience Platform et ne peuvent donc pas être incluses dans le même flux de données.
-   >
-   >Si vous choisissez d’inclure les dimensions **Agent utilisateur** ou **ID mobile** dans votre flux de données, les dimensions répertoriées ci-dessous ne peuvent pas être ajoutées au flux de données.
-   >
-   >Si vous utilisez le SDK Web, cette restriction est appliquée dans les flux de données avant que les données n’arrivent dans un jeu de données Experience Platform. Pour plus d’informations, voir [Configurer la recherche d’appareil](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/configure#geolocation-device-lookup) dans [Créer et configurer des flux de données](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/configure) dans le guide Collecte de données .
-
-   Les dimensions suivantes ne peuvent pas être utilisées avec les dimensions **Agent utilisateur** ou **ID mobile** :
-
-   * Type de navigateur
-   * Navigateur
-   * Fabricant du dispositif portable
-   * Type d’appareil mobile
-   * Prise en charge de l&#39;audio sur le dispositif portable
-   * DRM mobile
-   * Java VM de mobile
-   * Services d&#39;informations mobiles
-   * Prise en charge des images sur le dispositif portable
-   * Profondeur de couleur du dispositif portable
-   * Protocoles Net mobile
-   * Numéro d’appareil mobile
-   * Mobile - Longueur max. d’adresse e-mail
-   * Mobile - Décoration de courrier
-   * Mobile - Presser pour parler
-   * Largeur d’écran du périphérique mobile
-   * Longueur maximale d’URL de navigateur mobile
-   * Système d’exploitation mobile (obsolète)
-   * Hauteur d’écran du périphérique mobile
-   * Prise en charge de la vidéo sur le dispositif portable
-   * Prise en charge des cookies sur le dispositif portable
-   * Mobile - Longueur max. du signet
-   * Taille d’écran du périphérique mobile
-   * Nom de l’appareil mobile
-   * Types de systèmes d’exploitation
-   * Systèmes d’exploitation
-
-   +++
-
-   +++ Mesures qui doivent être remplacées dans les flux de données
-
-   Les mesures Customer Journey Analytics suivantes doivent être remplacées :
-
-   | Nom de la mesure | Notes | Flux de données |
-   |---|---|---|
-   | Comptes [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | En fonction de l’identifiant de compte spécifié dans la connexion | Non disponible. Utilisez un nombre distinct de l’ID de compte. |
-   | Groupe d&#39;achat {type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Groupes d&#39;achat basés sur l&#39;ID de groupe d&#39;achat dans la connexion | Non disponible. Utiliser le nombre distinct de l&#39;ID du groupe d&#39;achat. |
-   | Événements | Nombre de lignes de tous les jeux de données d’événements dans une connexion | Non disponible. Utilisez un nombre distinct de l’ID de ligne. |
-   | Comptes globaux [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | En fonction de l’identifiant de comptes globaux dans la connexion | Non disponible. Utilisez un nombre distinct de l’identifiant de comptes globaux. |
-   | Opportunités [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Opportunités basées sur l’ID d’opportunité dans la connexion | Non disponible. Utiliser le nombre distinct de l’ID d’opportunité. |
-   | Personnes | En fonction de l’ID de personne spécifié dans une connexion | Non disponible. Utilisez un nombre distinct de l’ID de personne. |
-   | Conversations | Nombre de conversations | Non disponible. Utilisez un nombre distinct de l’ID de conversation. |
-   | Fins de session | Nombre d’événements qui étaient le dernier événement d’une session | Non disponible |
-   | Débuts de session | Nombre d’événements qui ont été le premier événement d’une session | Non disponible |
-   | Sessions | En fonction des paramètres de session de la vue de données | Non disponible. Utilisez un nombre distinct de l’ID de session. |
-   | Durée (secondes) | Additionne le temps entre deux valeurs de dimension différentes | Non disponible |
-
-   +++
-
-   +++ Composants standard facultatifs
-
-   | Nom du composant | Type | Notes | Flux de données |
-   |---|---|---|---|
-   | Matin/après-midi | Dimension de répartition temporelle | Matin ou après-midi | Non disponible |
-   | ID de lot | Dimension | Identifiant d’un lot Experience Platform | Disponible |
-   | Identifiant du jeu de données | Dimension | Identifiant d’un jeu de données Experience Platform | Disponible |
-   | Jour du mois | Dimension de répartition temporelle | 1-31 | Non disponible |
-   | Jour de la semaine | Dimension de répartition temporelle | Du lundi au dimanche | Non disponible |
-   | Jour de l’année | Dimension de répartition temporelle | 1-366 | Non disponible |
-   | Profondeur de l’événement | Dimension | Valeur numérique séquentielle (1, 2, 3, etc.) affecté à chaque interaction d’événement dans une session<p>Se réinitialise au début de chaque nouvelle session</p> | Disponible |
-   | Heure de la journée | Dimension de répartition temporelle | 0-23 | Non disponible |
-   | Mois de l’année | Dimension de répartition temporelle | Janvier-Décembre | Non disponible |
-   | Premières sessions | Mesure | Première session définie par une personne dans la fenêtre de création de rapports | Non disponible |
-   | Sessions récurrentes | Mesure | Sessions qui n’étaient pas la première session d’une personne | Non disponible |
-   | Espace de noms de l’ID de personne | Dimension | Type d’ID dont est constitué l’ID de personne (par exemple, e-mail ou ID de cookie) | Disponible |
-   | Identifiant de compte global {type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Dimension | Identifiant de compte global lors de l’utilisation du conteneur de compte global | Disponible |
-   | ID de l’opportunité {type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Dimension | ID de l’opportunité lors de l’utilisation du conteneur d’opportunités | Disponible |
-   | ID de groupe d&#39;achat {type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Dimension | ID groupe d&#39;achat lors de l&#39;utilisation du conteneur groupe d&#39;achat | Disponible |
-   | Trimestre de l’année | Dimension de répartition temporelle | T1, T2, T3, T4 | Non disponible |
-   | Session répétée | Mesure | Sessions qui n’ont pas été la toute première session d’une personne | Non disponible |
-   | Type de session | Dimension | Deux valeurs : Première fois ou Récurrent | Non disponible |
-   | Temps passé par événement | Dimension | Regroupe la mesure Durée de la visite dans des regroupements événement . | Non disponible |
-   | Temps passé par session | Dimension | Regroupe la mesure Durée de la visite dans des regroupements de session | Non disponible |
-   | Durée par personne | Dimension | Regroupe la mesure Temps passé dans des regroupements Personne . | Non disponible |
-   | Week-end/Jour de semaine | Dimension de répartition temporelle | Week-end ou jour de la semaine | Non disponible |
-
-   +++
+   Certains composants sont obligatoires, ne sont pas pris en charge ou présentent des restrictions dans les flux de données. Pour plus d’informations, voir [Disponibilité des composants dans les flux de données](/help/components/exports/cja-data-feeds/df-components.md).
 
 1. (Facultatif) Réorganisez les composants sur la zone de travail en les faisant glisser. L’ordre que vous définissez est conservé dans l’ordre des colonnes du fichier de flux de données exporté.
 
@@ -330,9 +163,10 @@ Avant de créer un flux de données, il est important de comprendre les bases de
    | [!UICONTROL **Date de début**] | Date de début du flux de données. Pour les flux en direct, il doit s’agir d’aujourd’hui ou d’une date ultérieure. Pour les flux de renvoi, il doit s’agir d’une date passée dans la fenêtre de conservation des données de la vue de données. La date de début est basée sur le fuseau horaire de la vue de données. |
    | [!UICONTROL **Date d’expiration**] <br/>Disponible uniquement pour les flux en direct | Date à laquelle le flux de données expire et ne s’exécute plus. La date est basée sur le fuseau horaire de la vue de données. |
    | [!UICONTROL **Date de fin**]<br/> Disponible uniquement pour les flux de renvoi | Date de fin du flux de données. La date de fin ne peut pas être dans le futur. La date est basée sur le fuseau horaire de la vue de données. |
-   | [!UICONTROL **Fréquence**] | Sélectionnez la fréquence d’envoi du flux de données. Les événements dont la date et l’heure se trouvent dans la fenêtre de fréquence sont inclus dans la diffusion du flux de données. Les champs [!UICONTROL **Période de recherche en amont**] et [!UICONTROL **Délai de traitement**] peuvent également affecter les événements inclus dans les données pour la fréquence de diffusion que vous choisissez.<p>Pour les flux en direct, sélectionnez cette option pour inclure l’équivalent d’une heure de données ou d’une journée de données. Pour les flux de renvoi, ce champ est verrouillé sur **Quotidien**, ce qui signifie que les données sont regroupées en blocs quotidiens.</p><ul><li>**Quotidien** : les flux contiennent l’équivalent d’une journée complète de données, de minuit à minuit dans le fuseau horaire de la vue de données. <p>Cette option est obligatoire pour les flux de renvoi et facultative pour les flux en direct.</p></li><li>**Par heure** : les flux contiennent l’équivalent d’une heure de données. <p>Cette option est disponible uniquement pour les flux en direct.</p></li></ul> |
-   | [!UICONTROL **Période de recherche en amont**] | Contrôle la période sur laquelle Customer Journey Analytics se base pour traiter la diffusion du flux de données. La valeur par défaut est de 30 jours.<p>La fenêtre de fréquence (heure ou jour) détermine les événements inclus dans le flux de données, tandis que la **période de recherche en amont** fournit le contexte historique nécessaire pour classer correctement ces événements.</p><p>La qualification des segments, la persistance des dimensions, le calcul de session et les transformations de champs dérivés peuvent tous affecter les événements inclus.</p> <p>Avant de configurer cette option, consultez les détails et les exemples décrits dans la section ci-dessous, [Comprendre la période de recherche en amont](#understand-the-lookback-date-range).</p> |
-   | [!UICONTROL **Délai de traitement**] | Sélectionnez la durée d’attente avant de traiter un fichier de flux de données. La valeur par défaut est de 2 heures. Tous les événements arrivant tardivement pendant la période de retard du traitement sont inclus dans le flux de données. <p>Les délais de traitement sont utiles pour diverses raisons, par exemple pour laisser aux appareils mobiles hors ligne le temps de se reconnecter et d’envoyer leurs données, ou pour tenir compte des processus côté serveur de votre entreprise lors de la gestion de fichiers déjà traités. </p><p>Pour être incluses, les sessions doivent commencer après le délai de traitement ; les sessions qui commencent avant et se terminent dans le délai de traitement ne sont pas incluses.</p><p>Customer Journey Analytics détermine de manière dynamique le délai optimal en fonction de la durée habituelle des événements arrivant en retard pour votre flux, mais vous pouvez le définir manuellement sur un délai de 2, 3, 4 ou 8 heures.</p> |
+   | [!UICONTROL **Fréquence**]<br/> Disponible uniquement pour les flux en direct | Sélectionnez la fréquence d’envoi du flux de données. Les événements dont la date et l’heure se trouvent dans la fenêtre de fréquence sont inclus dans la diffusion du flux de données. Les champs [!UICONTROL **Période de recherche en amont**] et [!UICONTROL **Délai de traitement**] peuvent également affecter les événements inclus dans les données pour la fréquence de diffusion que vous choisissez.<p>Sélectionnez cette option pour inclure l’équivalent d’une heure de données ou d’un jour de données.</p><ul><li>**Quotidien** : les flux contiennent l’équivalent d’une journée complète de données, de minuit à minuit dans le fuseau horaire de la vue de données.</li><li>**Par heure** : les flux contiennent l’équivalent d’une heure de données.</li></ul> |
+   | [!UICONTROL **Granularité**]<br/> Disponible uniquement pour les flux de renvoi | Intervalle de temps utilisé pour diviser les données historiques en blocs. Chaque bloc contient l’équivalent d’une journée complète de données, de minuit à minuit dans le fuseau horaire de la vue de données. <p>La granularité détermine la manière dont les données sont regroupées, et non la fréquence de diffusion. Les données de renvoi sont diffusées le plus rapidement possible, et non une fois par jour.</p><p>Ce champ est toujours défini sur [!UICONTROL **Quotidien**] et ne peut pas être modifié.</p> |
+   | [!UICONTROL **Période de recherche en amont**] | Contrôle la période sur laquelle Customer Journey Analytics se base pour traiter la diffusion du flux de données. La valeur par défaut est de 30 jours.<p>La fenêtre de fréquence (heure ou jour) détermine les événements inclus dans le flux de données, tandis que la **période de recherche en amont** fournit le contexte historique nécessaire pour classer correctement ces événements.</p><p>La qualification des segments, la persistance des dimensions, le calcul de session et les transformations de champs dérivés peuvent tous affecter les événements inclus.</p> <p>Avant de configurer cette option, consultez les détails et les exemples décrits dans la section ci-dessous, [Comprendre la période de recherche en amont](#data-feed-lookback-date-range).</p> |
+   | [!UICONTROL **Délai de traitement**] | Sélectionnez le temps d’attente de Customer Journey Analytics avant de traiter un fichier de flux de données. Tous les événements arrivant tardivement pendant la période de retard du traitement sont inclus dans le flux de données. <p>Le délai de traitement minimal est de 2 heures, mais certains types de données nécessitent un délai plus long. Le délai que vous choisissez dépend des types de données de votre connexion, telles que les données de diffusion en continu, par lots, groupées, de recherche ou de profil.</p><p>Choisissez un délai suffisant pour que les données les plus lentes de votre connexion terminent le traitement. Si le délai est trop court, les données en cours de traitement ne sont pas incluses dans le fichier de flux de données.</p><p>Avant de configurer cette option, consultez les détails et les exemples décrits dans la section ci-dessous, [Comprendre le délai de traitement](#data-feed-processing-delay).</p> |
    | [!UICONTROL **Format de compression**] | Sélectionnez le format de compression des fichiers de sortie Parquet diffusés vers votre destination cloud. Choisissez l’un des formats suivants :<ul><li>[!UICONTROL **Snappy**] : compression et décompression rapides avec des tailles de fichier modérées. Largement pris en charge par les plateformes de données modernes telles que BigQuery, Snowflake et Apache Spark.</li><li>[!UICONTROL **GZip**] : largement compatible, y compris avec les outils qui ne prennent pas en charge Snappy en mode natif. Recommandé si votre pipeline en aval nécessite une norme de compression largement reconnue.</li><li>[!UICONTROL **Z Standard (Zstd)**] : Efficacité de compression élevée avec décompression rapide. Convient si la réduction de la taille du fichier est une priorité et que vos outils prennent en charge Zstd.</li></ul> |
 
 1. Sous l’onglet [!UICONTROL **Diffusion**], dans la section [!UICONTROL **Destination**], configurez la destination vers laquelle vous souhaitez envoyer les données.
@@ -405,7 +239,14 @@ Dans ce cas, les utilisateurs ne sont inclus dans le flux de données que s’il
 
 ### Calcul de session
 
-Les limites de session sont calculées à l’aide de données comprises dans la période de recherche en amont. <!--Maybe this matters more regarding what the session ID is? Could it impact the Session ID? This could impact several factors, such as session-based persistence.-->
+Les limites de session sont calculées en utilisant tous les événements de la période de recherche en amont, et pas seulement les événements de la fenêtre de diffusion. Une session ayant démarré avant la fenêtre de diffusion est toujours reconnue comme la même session.
+
+L’ID de session est basé sur la personne, l’heure de début de la session et les paramètres de session dans votre vue de données. Une session conserve le même ID de session sur toutes les diffusions. Vous pouvez donc joindre des événements à partir d’une session qui s’étend sur plusieurs diffusions horaires ou quotidiennes.
+
+Tenez compte des points suivants lorsque vous utilisez des sessions dans les flux de données :
+
+* Si une session a démarré avant la période de recherche en amont, ses événements précédents ne sont pas disponibles. Par conséquent, les valeurs de session peuvent différer d’Analysis Workspace. Pour plus d’informations, voir [Comprendre les écarts de données entre les flux de données et Analysis Workspace](/help/components/exports/cja-data-feeds/df-comparison-workspace.md).
+* La modification des paramètres de session dans votre vue de données modifie les ID de session. Les ID de session dans les diffusions ultérieures ne correspondent pas aux ID de session dans les diffusions antérieures.
 
 ### Persistance de Dimension
 
@@ -442,5 +283,84 @@ Dans ce cas, la campagne d’origine s’affiche dans la sortie du flux de donn�
 
 Toutes les fonctions de champ dérivé qui font référence à des conteneurs utilisent la période de recherche en amont dans les exportations de flux de données. Quelles sont les fonctionnalités de date disponibles dans les champs dérivés ? <!--Not sure how this applies.-->
 
+## Comprendre le délai de traitement {#data-feed-processing-delay}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_datafeed_processing_delay"
+>title="Délai de traitement"
+>abstract="Temps d’attente de Customer Journey Analytics avant de traiter un fichier de flux de données. Tous les événements arrivant tardivement pendant la période de retard du traitement sont inclus dans le flux de données.<p>Le délai de traitement minimal est de 2 heures, mais certains types de données nécessitent un délai plus long. Choisissez un délai suffisant pour que les données les plus lentes de votre connexion arrivent dans le lac de données Experience Platform et soient ingérées dans Customer Journey Analytics. Si le délai est trop court, les données en cours de traitement ne sont pas incluses dans le fichier de flux de données.</p><p>L’assemblage peut prendre jusqu’à 4 heures. Pour en tenir compte, ajoutez 4 heures au délai pour toutes les données regroupées.</p>"
+
+<!-- markdownlint-enable MD034 -->
+
+### Fonctionnement du délai de traitement
+
+Le délai de traitement correspond au temps d’attente de Customer Journey Analytics avant de traiter un fichier de flux de données. Tous les événements arrivant tardivement pendant la période de retard du traitement sont inclus dans le flux de données.
+
+Les délais de traitement sont nécessaires pour différentes raisons, notamment pour tenir compte de la latence du pipeline, pour permettre aux implémentations mobiles de mettre en ligne les appareils hors ligne et d’envoyer des données, ou pour adapter les processus côté serveur de votre entreprise à la gestion des fichiers précédemment traités.
+
+Le délai de traitement minimal est de 2 heures, mais certains types de données nécessitent un délai plus long.
+
+>[!BEGINSHADEBOX]
+
+**Exemple :**
+
+Supposons qu’un flux de données horaire contienne des données de 13 h à 14 h et que le délai de traitement soit de 2 heures. Le traitement de ce fichier de flux de données commence à 16h00 et inclut toutes les données arrivées avant le début du traitement.
+
+>[!ENDSHADEBOX]
+
+### Choisissez un délai de traitement en fonction de vos données
+
+La disponibilité de différents types de données varie en fonction du temps nécessaire pour les obtenir dans Customer Journey Analytics. Les données passent par deux phases de traitement, et le temps de chaque phase s’ajoute au total.
+
+Choisissez un délai de traitement suffisamment long pour que les données les plus lentes de votre connexion puissent terminer les deux phases. Si le délai est trop court, les données en cours de traitement ne sont pas incluses dans le fichier de flux de données.
+
+#### Phase 1 : les données arrivent dans le lac de données Experience Platform
+
+Les heures d’arrivée varient en fonction du type de données que vous collectez. Choisissez un délai qui s’adapte au type de données que vous collectez.
+
+* **Jeux de données d’événements de l’ingestion Edge Network ou en flux continu** : les données arrivent généralement dans le lac de données dans les 60 minutes (voir [Latences](/help/technotes/guardrails.md#latencies)).
+
+* **Jeux de données du connecteur source Analytics** : les données arrivent généralement dans le lac de données dans les 2,25 heures (voir [Latences](/help/technotes/guardrails.md#latencies)).
+
+  <!--When using the Analytics Source Connector, the minimum processing delay increases from 2 hours to 6 hours (?) to account for the source connector data. (checking to see if this is feasible) -->
+
+* **Jeux de données provenant d’autres connecteurs source** : la latence varie en fonction du connecteur source et du moment d’envoi des lots. Le traitement en amont dans Experience Platform, tel que la préparation des données, peut ajouter du temps.
+
+* **Jeux de données de recherche** : le temps nécessaire pour que les données arrivent dans le lac de données dépend de la fréquence de chargement des données. Les données de recherche sont généralement chargées sous la forme d’une copie complète d’une base de données, dans laquelle seul un petit pourcentage d’enregistrements a été modifié. Chargez les données de recherche par plus petits lots pour réduire le temps de traitement.
+
+  Les petits chargements sont généralement traités dans les délais les plus courts.
+
+  Les chargements volumineux (par exemple, un chargement hebdomadaire de millions d’enregistrements) sont traités avec une priorité inférieure et peuvent prendre 3 à 4 heures de plus. Dans le cas de chargements volumineux, les données d’événement ne sont pas retardées, mais les valeurs de recherche peuvent ne pas refléter les mises à jour les plus récentes.
+
+* **Jeux de données de profil** : le temps nécessaire pour que les données arrivent dans le lac de données dépend de la fréquence de chargement des données. Les données de profil sont généralement ingérées par lots volumineux, tels qu’un instantané quotidien de la table des profils complète. Chargez les données de profil par lots plus petits afin de réduire le temps de traitement.
+
+  Les petits chargements sont généralement traités dans les délais les plus courts.
+
+  Les chargements volumineux (par exemple, un chargement hebdomadaire de millions d’enregistrements) sont traités avec une priorité inférieure et peuvent prendre 3 à 4 heures de plus. Dans le cas de chargements volumineux, les données d’événement ne sont pas retardées, mais les valeurs de profil peuvent ne pas refléter les mises à jour les plus récentes.
+
+#### Phase 2 : les données sont ingérées à partir du lac de données dans Customer Journey Analytics
+
+Cela peut prendre jusqu’à 90 minutes (voir [&#x200B; Latences &#x200B;](/help/technotes/guardrails.md#latencies)).
+
+* **Jeux de données groupés** : le groupement peut ajouter jusqu’à 4 heures (voir [Latences](/help/technotes/guardrails.md#latencies)). Si le groupement est activé pour la connexion, définissez un délai d’au moins 6 heures, et potentiellement de 8 heures. Les données mises à jour par une relecture d’assemblage ne sont généralement pas incluses dans les fichiers de flux de données déjà traités.
+
+  Lorsque le groupement est activé, le délai de traitement minimal passe de 2 heures à 6 heures pour tenir compte des données groupées.
+
+>[!BEGINSHADEBOX]
+
+**Exemple :**
+
+Si votre connexion comprend plusieurs types de données, choisissez un délai qui prend en compte les données les plus lentes. Dans l&#39;exemple ci-dessous, cela fait environ 8 heures.
+
+L’assemblage peut ajouter jusqu’à 4 heures à l’ingestion dans Customer Journey Analytics. Pour en tenir compte, ajoutez 4 heures au délai pour toutes les données regroupées.
+
+| Source de données | Phase 1 : Arrivée dans le lac de données | Phase 2 : ingestion dans Customer Journey Analytics | Total |
+| --- | --- | --- | --- |
+| Ingestion par Edge Network ou par flux | 60 minutes | 90 minutes <p>Sans couture</p> | 2,5 heures |
+| Connecteur source Analytics | 2,25 heures | 90 minutes + 4 heures pour la couture <p>Avec couture</p> | 7,75 heures |
+
+>[!ENDSHADEBOX]
 
 

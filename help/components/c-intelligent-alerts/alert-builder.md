@@ -39,7 +39,7 @@ topic_v2:
 source-git-commit: 4f3c4a214bb9676ced6fe3c9627c969413013790
 workflow-type: tm+mt
 source-wordcount: '1093'
-ht-degree: 62%
+ht-degree: 65%
 ---
 # Créer des alertes {#create-alerts}
 
@@ -57,7 +57,7 @@ ht-degree: 62%
 >[!CONTEXTUALHELP]
 >id="components_alerts_delay"
 >title="Délai"
->abstract="Les alertes se déclenchent au moment de la granularité que vous sélectionnez après ce délai. Les données provenant de vos connexions peuvent arriver avec différentes latences, entre 1 et 24 heures. Le délai par défaut se déclenche 9 heures après chaque fenêtre d’alerte."
+>abstract="Les alertes se déclenchent au moment de la granularité que vous sélectionnez après ce délai. Les données provenant de vos connexions peuvent arriver avec différentes latences, entre 1 et 24 heures. Le délai par défaut se déclenche 9 heures après chaque fenêtre d’alerte."
 
 <!-- markdownlint-enable MD034 -->
 
