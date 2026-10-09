@@ -1,6 +1,6 @@
 ---
-title: Autres méthodes lors de la mise à niveau vers Customer Journey Analytics
-description: Découvrez les autres méthodes disponibles lors de la mise à niveau vers Customer Journey Analytics
+title: 'Alternative de mise à niveau : envoyez votre couche de données à Customer Journey Analytics'
+description: Découvrez comment envoyer l’intégralité de la couche de données à Customer Journey Analytics au lieu de collecter des données avec l’objet XDM.
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -38,9 +38,9 @@ topic_v2:
     internal-label: Data collection
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '707'
 ht-degree: 54%
 ---
 # Alternative de mise à niveau : envoyez votre couche de données à Customer Journey Analytics {#data-collection-data-layer}

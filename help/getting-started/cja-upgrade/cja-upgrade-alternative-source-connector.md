@@ -1,6 +1,6 @@
 ---
-title: Utiliser exclusivement le connecteur source Analytics pour effectuer la mise à niveau vers Customer Journey Analytics
-description: Découvrez comment créer le connecteur source Analytics et mapper des champs
+title: 'Alternative de mise à niveau : utiliser exclusivement le connecteur source Analytics pour effectuer la mise à niveau vers Customer Journey Analytics'
+description: Comprenez les avantages et les inconvénients liés à l’utilisation du connecteur source Analytics comme seul chemin d’implémentation pour Customer Journey Analytics, une approche qu’Adobe ne recommande pas.
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 94%
+source-wordcount: '437'
+ht-degree: 88%
 ---
 # Alternative de mise à niveau : utiliser exclusivement le connecteur source Analytics pour effectuer la mise à niveau vers Customer Journey Analytics {#use-source-connector-exclusively}
 

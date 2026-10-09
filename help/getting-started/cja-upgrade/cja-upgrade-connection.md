@@ -1,6 +1,6 @@
 ---
-title: Créer un schéma pour Customer Journey Analytics
-description: En savoir plus sur le chemin recommandé lors de la mise à niveau à partir d’Adobe Analytics vers Customer Journey Analytics
+title: Créer et configurer une connexion à utiliser dans Customer Journey Analytics
+description: Découvrez comment créer une connexion Customer Journey Analytics et ajouter vos jeux de données Experience Platform lors de la mise à niveau à partir d’Adobe Analytics.
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -38,10 +38,10 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
-source-wordcount: '1672'
-ht-degree: 100%
+source-wordcount: '1682'
+ht-degree: 98%
 ---
 # Créer et configurer une connexion à utiliser dans Customer Journey Analytics {#upgrade-create-connection}
 

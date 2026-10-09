@@ -1,6 +1,6 @@
 ---
-title: Créer une propriété de balise et ajouter l’extension SDK web
-description: Découvrir comment créer une propriété de balise et ajouter l’extension SDK web
+title: Créer une balise pour votre propriété
+description: Découvrez comment créer une propriété de balise lors de la mise à niveau d’Adobe Analytics vers Customer Journey Analytics.
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 92%
+source-wordcount: '315'
+ht-degree: 86%
 ---
 # Créer une balise pour votre propriété {#upgrade-tag-property}
 

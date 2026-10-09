@@ -1,6 +1,6 @@
 ---
-title: Créer un schéma pour Customer Journey Analytics
-description: En savoir plus sur le chemin recommandé lors de la mise à niveau à partir d’Adobe Analytics vers Customer Journey Analytics
+title: Ajouter Platform en tant que service au train de données
+description: Découvrez comment ajouter Experience Platform en tant que service à votre flux de données lors de la mise à niveau d’Adobe Analytics vers Customer Journey Analytics.
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
-source-wordcount: '280'
-ht-degree: 100%
+source-wordcount: '288'
+ht-degree: 92%
 ---
 # Ajouter Platform en tant que service au train de données {#upgrade-addplatform-datastream}
 

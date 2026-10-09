@@ -1,6 +1,6 @@
 ---
 title: Comprendre votre mise en œuvre Adobe Analytics et son impact sur votre mise à niveau vers Customer Journey Analytics
-description: En savoir plus sur le chemin recommandé lors de la mise à niveau à partir d’Adobe Analytics vers Customer Journey Analytics
+description: Découvrez comment votre méthode d’implémentation Adobe Analytics affecte les chemins de mise à niveau disponibles pour Customer Journey Analytics.
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -36,10 +36,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
-source-wordcount: '994'
-ht-degree: 98%
+source-wordcount: '997'
+ht-degree: 96%
 ---
 # Comprendre votre mise en œuvre Adobe Analytics et son impact sur votre mise à niveau vers Customer Journey Analytics {#implementation-affects-upgrade}
 
