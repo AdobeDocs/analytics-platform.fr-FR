@@ -132,5 +132,5 @@ Utilisez la liste de contrôle suivante pour valider l’implémentation.
 
 >[!MORELIKETHIS]
 >
->[Connecteur source Meta Ads](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/advertising/meta-ads)
+>[Connecteur source Meta Ads](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/advertising/meta-ads)
 >[Configuration automatique des médias payants &#x200B;](/help/content-analytics/config/paid-media.md)
