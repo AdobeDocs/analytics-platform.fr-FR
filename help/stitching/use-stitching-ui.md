@@ -4,7 +4,6 @@ description: Activez le groupement pour les jeux de données d’événements da
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
-hold: true
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
 TQID: 'https://experienceleague.adobe.com/Nj-IePDbHxBtgiSxEAobJ0DGlJSaiTwpTXIPtCxDTHw'
 product_v2:
@@ -25,9 +24,9 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 1ee7e0b046f370c956b083e494522cfbc892e092
+source-git-commit: 49795b40eab1fcd1bfd472ccb756587adf9877b8
 workflow-type: tm+mt
-source-wordcount: '1979'
+source-wordcount: '1989'
 ht-degree: 18%
 ---
 # Activer le rapprochement
@@ -250,7 +249,7 @@ Chaque étape du processus ajoute certains retards. Les délais de traitement ci
 
 Pour une configuration de connexion initiale valide enregistrée et contenant un jeu de données activé pour le groupement :
 
-* Les données dynamiques s’affichent initialement dans Customer Journey Analytics au bout de quelques heures (moins de 17 heures). Les données actives commencent par des valeurs d’horodatage d’événement qui correspondent au moment réel auquel l’activation de l’assemblage s’est terminée.
+* Les données dynamiques s’affichent initialement dans Customer Journey Analytics au bout de quelques heures (moins de 14 heures). De nouvelles données actives sont disponibles dans les heures qui suivent. Les données actives commencent par des valeurs d’horodatage d’événement qui correspondent au moment réel auquel l’activation de l’assemblage s’est terminée.
 
   Pour que les données actives commencent à circuler, activez l’option **[!UICONTROL Importer toutes les nouvelles données]** pour le jeu de données.
 
@@ -258,12 +257,14 @@ Pour une configuration de connexion initiale valide enregistrée et contenant un
 
 * Les données renvoyées (si elles ont été initialement demandées) s’affichent dans Customer Journey Analytics à peu près au même moment que les données actives, mais leur traitement complet peut prendre plusieurs jours, selon les volumes impliqués. Les données renvoyées commencent par les valeurs d’horodatage d’événement les plus anciennes.
 
+
   >[!CAUTION]
   >
-  >Pour les jeux de données activés pour le groupement dans l’interface Connexions, le statut de renvoi ne peut actuellement pas être signalé en raison d’une limitation connue.
+  >Pour les jeux de données [activés pour le groupement](#enable-stitching) dans l’interface Connexions, le statut de renvoi ne peut pas être signalé en raison d’une limitation connue.
   >
 
-  Utilisez d’autres méthodes pour vérifier si les données du jeu de données groupé sont renvoyées. Par exemple, utilisez l’interface utilisateur [Experience Platform Query Service](https://experienceleague.adobe.com/fr/docs/experience-platform/query/ui/overview) pour extraire du jeu de données le nombre d’événements pour la période appropriée. Comparez le nombre d’événements à la mesure des événements dans les rapports [&#128279;](/help/analysis-workspace/home.md) pour la même période. Si ces nombres correspondent, le renvoi est terminé.
+  Utilisez d’autres méthodes pour vérifier si les données du jeu de données groupé sont renvoyées. Par exemple, utilisez l’interface utilisateur [Experience Platform Query Service](https://experienceleague.adobe.com/fr/docs/experience-platform/query/ui/overview) pour extraire du jeu de données le nombre d’événements pour la période appropriée. Comparez le nombre d’événements à la valeur de la mesure **[!UICONTROL Événements]** dans les rapports [Customer Journey Analytics](/help/analysis-workspace/home.md) pour la même période. Si ces nombres correspondent, le renvoi est terminé.
+
 
 ## Limites
 
