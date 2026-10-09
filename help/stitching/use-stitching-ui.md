@@ -4,7 +4,6 @@ description: Activez le groupement pour les jeux de données d’événements da
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
-hold: true
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
 TQID: 'https://experienceleague.adobe.com/Nj-IePDbHxBtgiSxEAobJ0DGlJSaiTwpTXIPtCxDTHw'
 product_v2:
@@ -25,9 +24,9 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: e387cf97c6190e4bda66b891e02e8cf8ac05b1f2
+source-git-commit: 49795b40eab1fcd1bfd472ccb756587adf9877b8
 workflow-type: tm+mt
-source-wordcount: '1990'
+source-wordcount: '1989'
 ht-degree: 18%
 ---
 # Activer le rapprochement
@@ -258,14 +257,14 @@ Pour une configuration de connexion initiale valide enregistrée et contenant un
 
 * Les données renvoyées (si elles ont été initialement demandées) s’affichent dans Customer Journey Analytics à peu près au même moment que les données actives, mais leur traitement complet peut prendre plusieurs jours, selon les volumes impliqués. Les données renvoyées commencent par les valeurs d’horodatage d’événement les plus anciennes.
 
-   
 
   >[!CAUTION]
   >
-  >Pour les jeux de données activés pour le groupement dans l’interface Connexions, le statut de renvoi ne peut actuellement pas être signalé en raison d’une limitation connue.
+  >Pour les jeux de données [activés pour le groupement](#enable-stitching) dans l’interface Connexions, le statut de renvoi ne peut pas être signalé en raison d’une limitation connue.
   >
 
-  Utilisez d’autres méthodes pour vérifier si les données du jeu de données groupé sont renvoyées. Par exemple, utilisez l’interface utilisateur [Experience Platform Query Service](https://experienceleague.adobe.com/fr/docs/experience-platform/query/ui/overview) pour extraire du jeu de données le nombre d’événements pour la période appropriée. Comparez le nombre d’événements à la valeur de la mesure **[!UICONTROL Événements]** dans les rapports [Customer Journey Analytics](/help/analysis-workspace/home.md) pour la même période. Si ces nombres correspondent, le renvoi est terminé.
+  Utilisez d’autres méthodes pour vérifier si les données du jeu de données groupé sont renvoyées. Par exemple, utilisez l’interface utilisateur [Experience Platform Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/overview) pour extraire du jeu de données le nombre d’événements pour la période appropriée. Comparez le nombre d’événements à la valeur de la mesure **[!UICONTROL Événements]** dans les rapports [Customer Journey Analytics](/help/analysis-workspace/home.md) pour la même période. Si ces nombres correspondent, le renvoi est terminé.
+
 
 ## Limites
 
