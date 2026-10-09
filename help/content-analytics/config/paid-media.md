@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 hold: true
 role: Admin
-source-git-commit: e9274ad7899537837723e2eb9cd842c5449530ff
+source-git-commit: 29a21d57b6b50d873a4464d1a705c1b4855dd3ea
 workflow-type: tm+mt
-source-wordcount: '2309'
+source-wordcount: '2502'
 ht-degree: 2%
 ---
 # Configuration automatique des médias payants
@@ -59,12 +59,28 @@ Le réseau publicitaire spécifique détermine les jeux de données de résumé 
 | `paidmedia_asset_summary` <br/>`ad.asset.summary`<br/>`\| Asset Summary` | Asset<br/>none | ![Coche](/help/assets/icons2/Checkmark.svg) | ![Coche](/help/assets/icons2/Checkmark.svg) | | | ![Coche](/help/assets/icons2/Checkmark.svg) | Performances quotidiennes au niveau des ressources<br/> dans le contexte de l’annonce ou de la campagne<br/>sans répartition démographique ou géographique. |
 | `paidmedia_assets_demographics` <br/> `ad.asset.demographics`<br/>`\| Asset Demo` | Ressource<br/>âge, sexe | ![Coche](/help/assets/icons2/Checkmark.svg) | | | | | Performances quotidiennes au niveau des ressources<br/> dans le contexte de l’annonce publicitaire/de la campagne<br/>ventilées par âge et par sexe. |
 
-
 Ce tableau décrit la couverture du jeu de données, et ne garantit pas qu’un réseau particulier renseigne chaque mesure ou champ de métadonnées. Vérifiez les champs nécessaires à votre analyse. Un champ non disponible ou une répartition non prise en charge n’est pas identique à une valeur nulle mesurée pour un champ.
+
+Le regroupement de données récapitulatives rassemble des dimensions équivalentes ; le regroupement ne totalise pas les six totaux des mesures de performances.
+
+## Jeux de données de recherche
 
 Des jeux de données de recherche distincts décrivent le compte, la campagne, le groupe publicitaire, la publicité, l’expérience et la ressource. Ils fournissent des noms et des métadonnées à l’aide de GUID d’entité. Il n’existe aucune association un-à-un entre les jeux de données de résumé et les six jeux de données de recherche.
 
-Le regroupement de données récapitulatives rassemble des dimensions équivalentes ; le regroupement ne totalise pas les six totaux des mesures de performances.
+Les jeux de données de recherche partagent deux blocs de création communs :
+
+* **Objet ID d’entité** : stocke les objets compte, annonce, groupe publicitaire, ressource, campagne et expérience. Chaque objet contient une clé globale générée par Adobe et un identifiant natif de la plateforme.
+* **Métadonnées de base des médias payants** : stocke des champs descriptifs courants tels que le nom, le statut, l’objectif, l’objectif d’optimisation, la stratégie d’enchères, le type de budget, les valeurs de budget, la devise, le fuseau horaire, le statut de diffusion, les dates, le réseau publicitaire, le canal, le chemin d’accès à la hiérarchie, le réseau et les identifiants de portfolio.
+
+| Jeu de données de recherche | Contenus clés |
+|---|---|
+| Recherche de compte | Métadonnées au niveau du compte telles que le nom, la devise, le fuseau horaire, le statut, la limite de dépense et les dates de création |
+| Recherche de campagne | Paramètres de la campagne pour le budget, la planification, le ciblage, le suivi des conversions, l’attribution, les emplacements, les objets promus, l’objectif et les ID de catalogue ou de boutique |
+| Recherche de groupe publicitaire | Métadonnées du groupe publicitaire telles que le lien de la campagne, le statut, le budget, les objectifs d’optimisation et le ciblage |
+| Recherche de publicité | Ajoutez des détails créatifs tels que des ressources, des variantes, des dimensions, des URL de suivi, call to action, du corps de texte, des titres, l’URL de destination, le statut de diffusion et le statut de révision |
+| Recherche de ressources | Propriétés de la ressource telles que les dimensions, les détails de fichier, les propriétés d’image, les URL de média, les métadonnées d’utilisation, les métadonnées vidéo, la description, le sous-type, le titre et le type |
+| Recherche d’expérience | Regroupements créatifs de niveau expérience tels que l’Experience ID, les ressources, le titre, la description et call to action |
+
 
 ## Composants
 
@@ -194,7 +210,7 @@ L’exemple utilise un identifiant de campagne, mais la même approche peut util
 
 Si vous souhaitez générer des rapports et des analyses sur les performances des ressources liées à vos investissements dans les médias achetés, pensez à ajouter un paramètre UTM de ressource spécifique dans la configuration des médias achetés de votre réseau publicitaire. Par exemple, en plus des paramètres dynamiques standard tels que s`ite_source_name`, `campaign.id`, `adset.id` ou `placement`, ajoutez des paramètres personnalisés statiques tels que `aca_asset_id=999999`.
 
-Ce paramètre personnalisé est ajouté à l’URL de votre page de destination. Par exemple : https://www.example.com/home.html?utm_content=120241705099850539%2Caca_asset_id%3D9999999%2Caca_placement%3DFacebook_Desktop_Feed&aca_id_2=8888888&utm_medium=paid&utm_source=fb&utm_id=120241705099830539&utm_term=120241705099840539&utm_campaign=120241705099830539
+Ce paramètre personnalisé est ajouté à l’URL de votre page de destination. Par exemple : https://www.example.com/home.html?utm_content=120241705099850539%2Caca_asset_id%3D9999999%2Caca_placement%3DFacebook_Desktop_Feed&amp;aca_id_2=8888888&amp;utm_medium=paid&amp;utm_source=fb&amp;utm_id=120241705099830539&amp;utm_term=120241705099840539&amp;utm_campaign=120241705099830539
 
 Vous disposez désormais d’une relation entre une ressource sur une page et vos données de médias achetés. Utilisez cette relation dans Analysis Workspace pour voir comment les métadonnées des ressources Content Analytics (par exemple, **[!UICONTROL Couleurs de premier plan des ressources]**) contribuent au succès des campagnes de médias achetés.
 
