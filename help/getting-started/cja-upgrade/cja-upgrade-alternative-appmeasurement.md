@@ -101,7 +101,7 @@ Les étapes de base pour migrer une implémentation d’Adobe Analytics (AppMeas
 
    1. Envoyez toutes vos variables au format AppMeasurement via l’objet de données.
 
-      Si vous envoyez également ces données à Adobe Analytics, Edge Network mappe automatiquement ces champs d’objet de données aux variables Adobe Analytics. Pour obtenir la liste des champs pris en charge, voir [Mappage de champs d’objet de données vers Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping). Customer Journey Analytics n’utilise pas ces mappages. À une étape ultérieure, vous mappez les champs d’objet de données à votre schéma XDM pour Customer Journey Analytics.
+      Si vous envoyez également ces données à Adobe Analytics, Edge Network mappe automatiquement ces champs d’objet de données aux variables Adobe Analytics. Pour obtenir la liste des champs pris en charge, voir [Mappage de champs d’objet de données vers Adobe Analytics](https://experienceleague.adobe.com/fr/docs/analytics/implementation/aep-edge/data-var-mapping). Customer Journey Analytics n’utilise pas ces mappages. À une étape ultérieure, vous mappez les champs d’objet de données à votre schéma XDM pour Customer Journey Analytics.
 
    1. Choisissez votre schéma.
 
@@ -127,7 +127,7 @@ Les étapes de base pour migrer une implémentation d’Adobe Analytics (AppMeas
 
    1. Utilisez le mappage des flux de données pour mapper tous les champs de l’objet de données à votre schéma XDM.
 
-      Customer Journey Analytics ne peut utiliser que les champs d’objet de données que vous mappez à votre schéma. Pour plus d’informations, consultez [Mappage](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep?lang=en#mapping) dans [Préparation des données pour la collecte de données](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) dans la documentation d’Experience Platform.
+      Customer Journey Analytics ne peut utiliser que les champs d’objet de données que vous mappez à votre schéma. Pour plus d’informations, consultez [Mappage](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/data-prep?lang=en#mapping) dans [Préparation des données pour la collecte de données](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/data-prep) dans la documentation d’Experience Platform.
 
 {{upgrade-final-step}}.
 
