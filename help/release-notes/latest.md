@@ -72,7 +72,7 @@ Ces notes de mise à jour couvrent la période de publication d’octobre 2026. 
 
 ### Correctifs dans Customer Journey Analytics
 
-**** : AN-495340, AN-494789, AN-493307, AN-468900
+**&#x200B;**&#x200B;: AN-495340, AN-494789, AN-493307, AN-468900
 **Composants** : AN-492523
 **Connexions** : AN-492236
 **Content Analytics** :
@@ -81,7 +81,7 @@ Ces notes de mise à jour couvrent la période de publication d’octobre 2026. 
 **Vues de données** : AN-492093, AN-467770, AN-455367, AN-444467
 **Ingestion de données** : AN-496439, AN-495339, AN-493456, AN-491984, AN-490515, AN-490479, AN-470065
 **Mise en œuvre** :
-**** : AN-496602, AN-494224, AN-493737, AN-493508, AN-493505, AN-492806, AN-468981, AN-454376
+**&#x200B;**&#x200B;: AN-496602, AN-494224, AN-493737, AN-493508, AN-493505, AN-492806, AN-468981, AN-454376
 **Reporting** : AN-495661, AN-493562, AN-487058, AN-478768
 **Segmentation** :
 **Rapports planifiés** : AN-491103, AN-468049
@@ -101,6 +101,6 @@ Ces notes de mise à jour couvrent la période de publication d’octobre 2026. 
 >* [Notes de mise à jour précédentes de Customer Journey Analytics pour 2026](/help/release-notes/2026.md)
 >* [Notes de mise à jour d’Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=fr)
 >* [Notes de mise à jour du module complémentaire Streaming Media Collection](https://experienceleague.adobe.com/docs/media-analytics/using/additional-resources/release-notes.html?lang=fr)
->* [Notes de mise à jour de ](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=fr)
->* [Mises à jour de la documentation de ](/help/release-notes/doc-changes.md)
+>* [Notes de mise à jour de &#x200B;](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=fr)
+>* [Mises à jour de la documentation de &#x200B;](/help/release-notes/doc-changes.md)
 
