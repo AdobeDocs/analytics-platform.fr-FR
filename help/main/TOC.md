@@ -2,9 +2,9 @@
 user-guide-title: Guide de Customer Journey Analytics (parcours client)
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: a7bea19dcd89472ee21c533e44e1f87f5d179838
+source-git-commit: f5e2a6604ee1bf2b5a5a393b402da24b66d9b81d
 workflow-type: tm+mt
-source-wordcount: '1518'
+source-wordcount: '1517'
 ht-degree: 89%
 ---
 # Guide d’Adobe Customer Journey Analytics {#using}
@@ -65,7 +65,7 @@ ht-degree: 89%
       + [Implémenter la balise de chargement pour l’extension SDK web](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)
       + [Ajouter une logique de collecte de données XDM à votre balise](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md)
     + [Implémenter le SDK web manuellement](/help/getting-started/cja-upgrade/cja-upgrade-manual.md)
-    + [Implémenter le SDK web avec l’API](/help/getting-started/cja-upgrade/cja-upgrade-api.md)
+    + [Mise en œuvre de Web SDK avec le package NPM](/help/getting-started/cja-upgrade/cja-upgrade-api.md)
     + [Créer une connexion](/help/getting-started/cja-upgrade/cja-upgrade-connection.md)
     + [Créer une vue de données](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md)
     + [Créer un champ dérivé d’un canal marketing](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)
@@ -435,10 +435,10 @@ ht-degree: 89%
       + {hide-from-toc}[Préparer le mappage des colonnes](/help/components/exports/cja-data-feeds/df-column-mapping-prep.md)
       + {hide-from-toc}[Mapper les colonnes](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)
       + {hide-from-toc}[Créer des flux de données](/help/components/exports/cja-data-feeds/create-feed.md)
-      + {hide-from-toc}[&#x200B; Disponibilité des composants &#x200B;](/help/components/exports/cja-data-feeds/df-components.md)
+      + {hide-from-toc}[ Disponibilité des composants ](/help/components/exports/cja-data-feeds/df-components.md)
       + {hide-from-toc}[Segmentation dans les flux de données](/help/components/exports/cja-data-feeds/df-segmentation.md)
       + {hide-from-toc}[Appliquer des transformations de données](/help/components/exports/cja-data-feeds/df-data-transformations.md)
-      + {hide-from-toc}[Sous-événements dans les flux de données](/help/components/exports/cja-data-feeds/df-sub-event.md)
+      + {hide-from-toc}[Composants de sous-conteneur](/help/components/exports/cja-data-feeds/df-sub-event.md)
   + Dictionnaire de données {#data-dictionary}
     + [Vue d’ensemble](../components/data-dictionary/data-dictionary-overview.md)
     + [Afficher des informations sur les composants dans le dictionnaire de données](../components/data-dictionary/view-data-dictionary.md)
@@ -576,7 +576,7 @@ ht-degree: 89%
       + [Lier des lectures de session](/help/use-cases/third-party/quantum-metric/tie-session-replays.md)
       + [Utiliser des cartes thermiques](/help/use-cases/third-party/quantum-metric/heatmap.md)
       + [Ajouter des événements de friction](/help/use-cases/third-party/quantum-metric/friction-events.md)
-      + {hide-from-toc}[Connecteur &#x200B;](/help/use-cases/third-party/quantum-metric/source-connector.md)
+      + {hide-from-toc}[Connecteur ](/help/use-cases/third-party/quantum-metric/source-connector.md)
 
 + Labs {#labs}
   + [Guide d’utilisation de Labs](../labs/labs.md)
