@@ -263,7 +263,7 @@ Pour une configuration de connexion initiale valide enregistrée et contenant un
   >Pour les jeux de données [activés pour le groupement](#enable-stitching) dans l’interface Connexions, le statut de renvoi ne peut pas être signalé en raison d’une limitation connue.
   >
 
-  Utilisez d’autres méthodes pour vérifier si les données du jeu de données groupé sont renvoyées. Par exemple, utilisez l’interface utilisateur [Experience Platform Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/overview) pour extraire du jeu de données le nombre d’événements pour la période appropriée. Comparez le nombre d’événements à la valeur de la mesure **[!UICONTROL Événements]** dans les rapports [Customer Journey Analytics](/help/analysis-workspace/home.md) pour la même période. Si ces nombres correspondent, le renvoi est terminé.
+  Utilisez d’autres méthodes pour vérifier si les données du jeu de données groupé sont renvoyées. Par exemple, utilisez l’interface utilisateur [Experience Platform Query Service](https://experienceleague.adobe.com/fr/docs/experience-platform/query/ui/overview) pour extraire du jeu de données le nombre d’événements pour la période appropriée. Comparez le nombre d’événements à la valeur de la mesure **[!UICONTROL Événements]** dans les rapports [Customer Journey Analytics](/help/analysis-workspace/home.md) pour la même période. Si ces nombres correspondent, le renvoi est terminé.
 
 
 ## Limites
