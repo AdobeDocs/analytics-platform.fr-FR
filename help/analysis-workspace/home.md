@@ -6,31 +6,41 @@ feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
-TQID: https://experienceleague.adobe.com/mzyzOOuWJ1gOiLnUGvjQGrxysdoAMFm2RrXYQutiMT8
+TQID: 'https://experienceleague.adobe.com/mzyzOOuWJ1gOiLnUGvjQGrxysdoAMFm2RrXYQutiMT8'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: a8b1c240-f315-46e3-b813-f545c4279dd1
+    internal-label: Workspace basics
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
   - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+    internal-label: Audiences
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 5771edbe491ceeeaf487dd5eeb2ffb67ef880f96
+    internal-label: Insights
+source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
 workflow-type: tm+mt
-source-wordcount: 1530
+source-wordcount: '1530'
 ht-degree: 97%
-
 ---
-
 # Vue d’ensemble d’Analysis Workspace {#analysis-workspace-overview}
 
 Analysis Workspace vous permet de créer rapidement des analyses pour recueillir des informations, puis de partager ces informations avec d’autres personnes. L’interface de navigateur par glisser-déposer vous permet de concevoir votre analyse, d’ajouter des visualisations pour donner vie aux données, de traiter un jeu de données et de partager et de planifier des [projets](/help/analysis-workspace/build-workspace-project/freeform-overview.md) avec les personnes de votre choix.
@@ -43,7 +53,7 @@ Voir la vidéo de démonstration ![VideoCheckedOut](/help/assets/icons/VideoChec
 
 ## Interface
 
-L’image suivante et le tableau qui l’accompagne présentent les principaux éléments de l’interface d’utilisation d’Analysis Workspace :
+L’image suivante et le tableau qui l’accompagne présentent les principaux éléments de l’interface utilisateur d’Analysis Workspace :
 
 ![Fenêtre Analysis Workspace mettant en surbrillance les différentes sections de l’interface](assets/analysis-workspace-overview.png)
 
@@ -159,7 +169,7 @@ Synchronisez les visualisations pour contrôler quelle table de données ou quel
 
 Pour commencer à utiliser Analysis Workspace :
 
-1. Connectez-vous à [Adobe CX Enterprise](https://experience.adobe.com) à l’aide de vos informations d’identification Adobe ID.
+1. Connectez-vous à [](https://experience.adobe.com) à l’aide de vos informations d’identification Adobe ID.
 1. Sélectionnez **[!UICONTROL Customer Journey Analytics]** dans le sélecteur d’applications ![App](/help/assets/icons/Apps.svg) en haut à droite de l’interface.
 1. La page **[!UICONTROL Projets]** d’Analysis Workspace s’affiche par défaut. Si un projet spécifique a été sélectionné pour vous ou si vous avez récemment travaillé sur un projet, ce projet s’affiche par défaut.
 
@@ -181,5 +191,5 @@ Une fois que vous avez terminé de créer le projet et que celui-ci collecte des
 
 - La page [Formation](/help/getting-started/landing.md#learning) dans Customer Journey Analytics. Cette page est très utile pour vous familiariser avec Analysis Workspace. En particulier le modèle Découvrir les principes de base de Workspace. Ce modèle vous explique la terminologie et les étapes courantes nécessaires à la création de votre première analyse dans Workspace.
 - Adobe propose des centaines de [tutoriels de formation vidéo Analytics](https://experienceleague.adobe.com/fr/docs/analytics-learn/tutorials/overview).
-- Consultez les notes de mise à jour d’[CX Enterprise](https://experienceleague.adobe.com/fr/docs/release-notes/experience-cloud/current) pour obtenir des mises à jour sur les nouvelles fonctionnalités.
+- Voir les [notes de mise à jour de ](https://experienceleague.adobe.com/fr/docs/release-notes/experience-cloud/current) pour obtenir des mises à jour sur les nouvelles fonctionnalités.
 

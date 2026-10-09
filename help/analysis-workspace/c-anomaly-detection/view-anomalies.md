@@ -4,23 +4,26 @@ title: Affichage des anomalies
 feature: Anomaly Detection
 exl-id: a76fd967-e4ae-4616-83ce-19de67300f0c
 role: User
-TQID: https://experienceleague.adobe.com/LnQBV8OMK6D1tg1JgnBKARqYvKgAGqDME3vGpsmgJ0E
+TQID: 'https://experienceleague.adobe.com/LnQBV8OMK6D1tg1JgnBKARqYvKgAGqDME3vGpsmgJ0E'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
 subfeature_v2:
   - id: aff2ef09-fc60-4018-9197-e2befd623064
+    internal-label: Anomaly detection
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: User
+source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
 workflow-type: tm+mt
-source-wordcount: 433
+source-wordcount: '433'
 ht-degree: 50%
-
 ---
-
 # Afficher les anomalies
 
 Vous pouvez afficher les anomalies dans Analysis Workspace sous forme de tableau ou de graphique en courbes.
@@ -33,7 +36,7 @@ Vous pouvez afficher les anomalies dans un tableau à structure libre de série 
 
 1. Le tableau présente les anomalies comme suit :
 
-   ![&#x200B; Anomalies détectées &#x200B;](assets/anomaly-detected.png)
+   ![ Anomalies détectées ](assets/anomaly-detected.png)
 
    Un ◥ s’affiche dans le coin supérieur droit de chaque ligne où une anomalie des données est détectée.
 
@@ -41,11 +44,11 @@ Vous pouvez afficher les anomalies dans un tableau à structure libre de série 
 
 1. Sélectionnez ◥ dans le coin supérieur droit d’une ligne pour afficher les détails sur l’anomalie. Cela indique l’ampleur (en pourcentage) de l’écart supérieur ou inférieur entre la valeur réelle et la valeur attendue.
 
-## Affichage des anomalies dans un graphique en courbes
+## Affichage des anomalies dans un graphique linéaire
 
 Les graphiques en courbes sont la seule visualisation qui vous permet d’afficher les anomalies.
 
-Afficher des anomalies dans un graphique en courbes :
+Pour afficher des anomalies dans un graphique linéaire :
 
 1. Sélectionnez ![Paramètre](/help/assets/icons/Setting.svg) dans l’en-tête de visualisation, puis assurez-vous que l’option [!UICONTROL **Afficher les anomalies**] est sélectionnée dans la liste des options. Pour plus d’informations, consultez [Ligne](/help/analysis-workspace/visualizations/line.md).
 
@@ -53,7 +56,7 @@ Afficher des anomalies dans un graphique en courbes :
 
    Cette option n’est pas sélectionnée par défaut, car elle peut parfois rendre le graphique moins lisible.
 
-   Le graphique en courbes présente les anomalies comme suit :
+   Le graphique linéaire présente les anomalies comme suit :
 
    ![Visualisation en ligne des anomalies détectées](assets/anomaly-detected-line.png)
 
@@ -61,7 +64,7 @@ Afficher des anomalies dans un graphique en courbes :
 
    La **zone ombrée claire** est la marge de confiance, ou la plage attendue, où les valeurs doivent apparaître. Toute valeur située en dehors de cette plage attendue est une anomalie.
 
-   Si le graphique en courbes comporte plusieurs mesures, seules les anomalies sont présentées et vous devez survoler chacune d’elles pour en connaître la marge de confiance.
+   Si le graphique linéaire comporte plusieurs mesures, seules les anomalies sont présentées et vous devez pointer sur chacune d’elles pour en connaître la marge de confiance.
 
    La **ligne pointillée** est la valeur exacte attendue.
 

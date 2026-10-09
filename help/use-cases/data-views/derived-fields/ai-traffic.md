@@ -33,21 +33,22 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-    internal-label: ''
-  - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
-    internal-label: ''
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-    internal-label: ''
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-    internal-label: ''
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-    internal-label: ''
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-    internal-label: ''
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
+    internal-label: Artificial intelligence
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
+source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
 workflow-type: tm+mt
 source-wordcount: '1453'
 ht-degree: 3%
@@ -301,7 +302,7 @@ Pour configurer les méthodes de détection et les signaux de détection, utilis
 
 Utilisez les fonctions de champ dérivé [Case When](/help/data-views/derived-fields/derived-fields.md#case-when) pour définir un champ dérivé qui identifie les agents utilisateur LLM/AI.
 
-![&#x200B; Identification de l’agent utilisateur LLM/AI &#x200B;](assets/aitraffic-useragents.png){zoomable="yes"}
+![ Identification de l’agent utilisateur LLM/AI ](assets/aitraffic-useragents.png){zoomable="yes"}
 
 
 #### Détection des paramètres de requête LLM/AI
@@ -329,12 +330,12 @@ Configurez des segments dédiés qui vous aident à identifier les événements,
 
 Utilisez les champs dérivés et les segments pour générer des rapports et des analyses sur le trafic généré par LLM et par l’IA. Par exemple, consultez le projet annoté ci-dessous.
 
-![&#x200B; Projet de Workspace du trafic généré par LLM et l’IA &#x200B;](assets/aitraffic-workspace.png){zoomable="yes"}
+![ Projet de Workspace du trafic généré par LLM et l’IA ](assets/aitraffic-workspace.png){zoomable="yes"}
 
 
 
 >[!MORELIKETHIS]
 >
->Cet article de cas d’utilisation est basé sur l’article de blog [Tracking et analyse du trafic généré par LLM et par l’IA dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967?profile.language=fr).
+>Cet article de cas d’utilisation est basé sur l’article de blog [Tracking et analyse du trafic généré par LLM et par l’IA dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967).
 >
 >

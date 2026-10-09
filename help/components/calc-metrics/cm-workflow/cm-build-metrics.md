@@ -3,29 +3,37 @@ description: Découvrez le créateur de mesures calculées qui fournit une zone 
 title: Créer des mesures
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-TQID: https://experienceleague.adobe.com/ilqzP7cMRQqi7-zoylBlfYGv-mgRqbC-66utGrNVFdY
+TQID: 'https://experienceleague.adobe.com/ilqzP7cMRQqi7-zoylBlfYGv-mgRqbC-66utGrNVFdY'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Experimentation
+source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
 workflow-type: tm+mt
-source-wordcount: 1693
+source-wordcount: '1699'
 ht-degree: 93%
-
 ---
-
 # Créer des mesures calculées {#build-metrics}
 
 >[!CONTEXTUALHELP]
@@ -84,8 +92,8 @@ La boîte de dialogue du **[!UICONTROL Créateur de mesures calculées]** permet
    Le **[!UICONTROL Compatibilité des produits]** indique si la mesure calculée peut être utilisée dans le cadre d’expériences et d’exportations de tables complètes. Les valeurs possibles sont les suivantes :
    * **[!UICONTROL Partout dans Customer Journey Analytics]** : la mesure calculée peut être utilisée dans l’ensemble de Customer Journey Analytics.
    * **[!UICONTROL Non compatible dans :]**
-      * **[!UICONTROL Expérimentation]** : la mesure calculée peut être utilisée dans l’ensemble de Customer Journey Analytics, sauf dans le panneau Expérimentation.
-      * **[!UICONTROL Exportation complète des tables]** : la mesure calculée peut être utilisée dans l’ensemble de Customer Journey Analytics, sauf lors de l’exportation de tables complètes à partir de Workspace. Certaines fonctions ne sont pas prises en charge lors de l’exportation de tableaux complets. Si vous avez besoin d’inclure la mesure calculée lors de l’exportation de tables complètes, utilisez une fonction prise en charge. Pour plus d’informations, voir [Fonctions de mesures calculées non prises en charge](/help/analysis-workspace/export/export-cloud.md#unsupported-calculated-metric-functions) dans [Exporter des tables complètes vers le cloud](/help/analysis-workspace/export/export-cloud.md).
+     * **[!UICONTROL Expérimentation]** : la mesure calculée peut être utilisée dans l’ensemble de Customer Journey Analytics, sauf dans le panneau Expérimentation.
+     * **[!UICONTROL Exportation complète des tables]** : la mesure calculée peut être utilisée dans l’ensemble de Customer Journey Analytics, sauf lors de l’exportation de tables complètes à partir de Workspace. Certaines fonctions ne sont pas prises en charge lors de l’exportation de tableaux complets. Si vous avez besoin d’inclure la mesure calculée lors de l’exportation de tables complètes, utilisez une fonction prise en charge. Pour plus d’informations, voir [Fonctions de mesures calculées non prises en charge](/help/analysis-workspace/export/export-cloud.md#unsupported-calculated-metric-functions) dans [Exporter des tables complètes vers le cloud](/help/analysis-workspace/export/export-cloud.md).
 
 1. Sélectionnez :
    * **[!UICONTROL Enregistrez]** pour enregistrer la mesure calculée.
@@ -155,22 +163,22 @@ Le concept de conteneur de segment permet de créer une [mesure segmentée](metr
 
 * Pour ajouter un conteneur de segment à partir d’une dimension, procédez comme suit :
 
-   1. Faites glisser et déposez un composant ![Dimensions](/help/assets/icons/Dimensions.svg) **[!UICONTROL Dimensions]** du panneau Composants sur **[!UICONTROL Faites glisser et déposez ici des mesures, des dimensions, des éléments de dimension, des segments et/ou des fonctions]**. Vous pouvez utiliser la fonction ![Rechercher](/help/assets/icons/Search.svg) dans la barre des composants pour rechercher des composants spécifiques.
-   1. Dans la fenêtre contextuelle **[!UICONTROL Créer un segment à partir d’une dimension]**, définissez la condition du segment. Sélectionnez dans la liste des opérateurs une valeur ou saisissez-en une. Par exemple, **[!UICONTROL Mois]** **[!UICONTROL est égal à]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) `Sep 2024`.
-   1. Sélectionnez **[!UICONTROL Terminé]**. Un conteneur de segment est ajouté à la **[!UICONTROL Définition]**.
+  1. Faites glisser et déposez un composant ![Dimensions](/help/assets/icons/Dimensions.svg) **[!UICONTROL Dimensions]** du panneau Composants sur **[!UICONTROL Faites glisser et déposez ici des mesures, des dimensions, des éléments de dimension, des segments et/ou des fonctions]**. Vous pouvez utiliser la fonction ![Rechercher](/help/assets/icons/Search.svg) dans la barre des composants pour rechercher des composants spécifiques.
+  1. Dans la fenêtre contextuelle **[!UICONTROL Créer un segment à partir d’une dimension]**, définissez la condition du segment. Sélectionnez un opérateur dans la liste, puis sélectionnez une valeur ou saisissez-en une. Par exemple, **[!UICONTROL Mois]** **[!UICONTROL est égal à]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) `Sep 2024`.
+  1. Sélectionnez **[!UICONTROL Terminé]**. Un conteneur de segment est ajouté à la **[!UICONTROL Définition]**.
 
 
 * Pour ajouter un conteneur de segment à partir d’un segment, procédez comme suit :
 
-   * Faites glisser et déposez un composant ![Segmentation](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segments]** du panneau Composants sur **[!UICONTROL Faites glisser et déposez ici des mesures, des dimensions, des éléments, des segments et/ou des fonctions]**. Vous pouvez utiliser la fonction ![Rechercher](/help/assets/icons/Search.svg) dans la barre des composants pour rechercher des segments spécifiques.
-Un conteneur de segment est automatiquement ajouté à la **[!UICONTROL définition]** à l’aide du nom du segment.
+  * Faites glisser et déposez un composant ![Segmentation](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segments]** du panneau Composants sur **[!UICONTROL Faites glisser et déposez ici des mesures, des dimensions, des éléments, des segments et/ou des fonctions]**. Vous pouvez utiliser la fonction ![Rechercher](/help/assets/icons/Search.svg) dans la barre des composants pour rechercher des segments spécifiques.
+    Un conteneur de segment est automatiquement ajouté à la **[!UICONTROL définition]** à l’aide du nom du segment.
 
-   * Faites glisser et déposez un composant ![Segmentation](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segment]** du panneau Composants vers un conteneur générique. Le conteneur est modifié en conteneur de segment.
+  * Faites glisser et déposez un composant ![Segmentation](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segment]** du panneau Composants vers un conteneur générique. Le conteneur est modifié en conteneur de segment.
 
-   * Sélectionnez ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Ajouter]** depuis un conteneur :
+  * Sélectionnez ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Ajouter]** depuis un conteneur :
 
-      1. Sélectionnez **[!UICONTROL Segment]**. Un conteneur de segment est ajouté à la **[!UICONTROL Définition]**.
-      1. Dans le nouveau conteneur de segment, sélectionnez un segment dans le menu déroulant [!UICONTROL *Sélectionner...*].
+    1. Sélectionnez **[!UICONTROL Segment]**. Un conteneur de segment est ajouté à la **[!UICONTROL Définition]**.
+    1. Dans le nouveau conteneur de segment, sélectionnez un segment dans le menu déroulant [!UICONTROL *Sélectionner...*].
 
   >[!TIP]
   >
@@ -190,13 +198,13 @@ Pour ajouter un conteneur de fonction, vous pouvez utiliser ce qui suit :
 
 * Faire glisser et déposer :
 
-   1. Faites glisser et déposez un composant ![Fonction](/help/assets/icons/Effect.svg) **[!UICONTROL Fonctions]** du panneau Composants sur **[!UICONTROL Faites glisser et déposez ici des mesures, des dimensions, des éléments, des segments et/ou des fonctions]**. Vous pouvez utiliser la fonction ![Rechercher](/help/assets/icons/Search.svg) dans la barre des composants pour rechercher des fonctions spécifiques.
-   1. Un conteneur de fonction est automatiquement ajouté à la **[!UICONTROL Définition]** à l’aide du nom de la fonction.
+  1. Faites glisser et déposez un composant ![Fonction](/help/assets/icons/Effect.svg) **[!UICONTROL Fonctions]** du panneau Composants sur **[!UICONTROL Faites glisser et déposez ici des mesures, des dimensions, des éléments, des segments et/ou des fonctions]**. Vous pouvez utiliser la fonction ![Rechercher](/help/assets/icons/Search.svg) dans la barre des composants pour rechercher des fonctions spécifiques.
+  1. Un conteneur de fonction est automatiquement ajouté à la **[!UICONTROL Définition]** à l’aide du nom de la fonction.
 
 * Sélectionnez ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Ajouter]** depuis un conteneur :
 
-   1. Sélectionnez **[!UICONTROL Fonction]**.
-   1. Dans le conteneur, sélectionnez une fonction dans le menu déroulant [!UICONTROL *Sélectionner...*].
+  1. Sélectionnez **[!UICONTROL Fonction]**.
+  1. Dans le conteneur, sélectionnez une fonction dans le menu déroulant [!UICONTROL *Sélectionner...*].
 
 Le conteneur de fonction est nommé selon le composant de fonction. Par exemple, ![Fonction](/help/assets/icons/Effect.svg) **[!UICONTROL RACINE CARRÉE (mesure)]**. Sélectionnez ![InfoOutline](/help/assets/icons/InfoOutline.svg) pour afficher une fenêtre contextuelle contenant plus de détails sur la fonction. Sélectionnez **[!UICONTROL En savoir plus]** pour plus d’informations sur la fonction.
 

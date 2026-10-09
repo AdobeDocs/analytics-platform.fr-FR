@@ -13,6 +13,8 @@ feature_v2:
     internal-label: Analysis Workspace
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
     internal-label: Administration
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
     internal-label: Dimensions
@@ -26,7 +28,7 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
 workflow-type: tm+mt
 source-wordcount: '3202'
 ht-degree: 0%
@@ -63,7 +65,7 @@ Dans Analysis Workspace, appliquez un modèle d’attribution **[!UICONTROL Prem
 2. Cliquez avec le bouton droit sur un en-tête de colonne de mesure et sélectionnez **[!UICONTROL Utiliser un modèle d’attribution autre que celui par défaut]**.
 3. Sélectionnez **[!UICONTROL Première touche]** avec un intervalle de recherche en amont approprié à votre analyse.
 
-Vous pouvez également utiliser le panneau [[!UICONTROL Attribution] &#x200B;](/help/analysis-workspace/c-panels/attribution.md) pour une comparaison côte à côte des performances des canaux Première touche et Dernière touche.
+Vous pouvez également utiliser le panneau [[!UICONTROL Attribution] ](/help/analysis-workspace/c-panels/attribution.md) pour une comparaison côte à côte des performances des canaux Première touche et Dernière touche.
 
 +++
 
@@ -88,7 +90,7 @@ Les répartitions de GA4 correspondent à ces dimensions Customer Journey Analyt
 
 Les rapports Attribution de GA4 (sous Advertising) montrent comment différents canaux contribuent aux conversions et permettent de comparer les modèles et d’analyser les chemins de conversion.
 
-Dans Analysis Workspace, utilisez le panneau [[!UICONTROL Attribution] &#x200B;](/help/analysis-workspace/c-panels/attribution.md) :
+Dans Analysis Workspace, utilisez le panneau [[!UICONTROL Attribution] ](/help/analysis-workspace/c-panels/attribution.md) :
 
 1. Sélectionnez l’icône Panneaux et faites glisser un panneau **[!UICONTROL Attribution]** sur la zone de travail.
 2. Faites glisser la dimension **[!UICONTROL Canal marketing]** vers la zone **[!UICONTROL Ajouter Dimension]**.
@@ -242,7 +244,7 @@ Faites glisser l’une de ces dimensions du panneau Composants vers un [[!UICONT
 
 >[!NOTE]
 >
->Les navigateurs modernes ayant réduit le détail de la chaîne Agent-utilisateur, des valeurs complètes et précises dépendent de la collecte de [User-Agent Client Hints](https://experienceleague.adobe.com/fr/docs/experience-platform/collection/use-cases/client-hints) dans votre configuration de Web SDK.
+>Les navigateurs modernes ayant réduit le détail de la chaîne Agent-utilisateur, des valeurs complètes et précises dépendent de la collecte de [User-Agent Client Hints](https://experienceleague.adobe.com/en/docs/experience-platform/collection/use-cases/client-hints) dans votre configuration de Web SDK.
 
 +++
 
@@ -382,7 +384,7 @@ Dans Customer Journey Analytics, la mesure équivalente est **[!UICONTROL Évén
 
 +++Sessions → Sessions
 
-Les **Sessions** de GA4 et les **[!UICONTROL Sessions]** de Customer Journey Analytics mesurent toutes deux le nombre de sessions dans une période. Les nombres peuvent différer en raison de règles de définition de session différentes. Pour plus d’informations[&#128279;](compare-data.md#sessions) voir Pourquoi les données GA4 et Customer Journey Analytics diffèrent-elles ?
+Les **Sessions** de GA4 et les **[!UICONTROL Sessions]** de Customer Journey Analytics mesurent toutes deux le nombre de sessions dans une période. Les nombres peuvent différer en raison de règles de définition de session différentes. Pour plus d’informations](compare-data.md#sessions) voir [Pourquoi les données GA4 et Customer Journey Analytics diffèrent-elles ?
 
 +++
 

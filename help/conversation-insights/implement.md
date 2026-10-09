@@ -13,7 +13,7 @@ feature_v2:
   - id: ae3aff40-b2f6-4df1-8c01-0b0720d1510f
     internal-label: AI Tools
   - id: d7a261eb-f9ac-4dd6-bd60-1637efcd3d36
-    internal-label: Conversation Insights
+    internal-label: Conversation Insights (CJA)
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -30,7 +30,7 @@ topic_v2:
     internal-label: Data collection
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: ebc2d1d9992150683fb642862e0ea29b7f70ddb0
+source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
 workflow-type: tm+mt
 source-wordcount: '2563'
 ht-degree: 5%
@@ -441,7 +441,7 @@ Pour implémenter des événements qui propagent le groupe de champs Information
 Vous pouvez ajouter des groupes de champs facultatifs au schéma que vous utilisez pour les jeux de données d’invite, de réponse et de commentaires. Par exemple :
 
 * Groupe de champs **Détails web**. Pour capturer les détails de la page web dans laquelle la conversation a été incorporée.
-* Groupe de champs Détails du Commerce **&#x200B;**. Pour capturer les détails du produit recommandé mentionné dans le cadre de la conversation.
+* Groupe de champs Détails du Commerce ****. Pour capturer les détails du produit recommandé mentionné dans le cadre de la conversation.
 
 Le client est chargé de produire les événements de conversation source. Adobe effectue l’extraction du signal et le mélange des données. Le client n’a pas besoin de mettre en œuvre les services d’extraction ou de mélange de signaux.
 

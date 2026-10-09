@@ -6,27 +6,34 @@ feature: Report Builder
 type: Documentation
 exl-id: 46382621-d5e1-41d6-865c-782ec28a21fa
 solution: Customer Journey Analytics
-TQID: https://experienceleague.adobe.com/MdIYz3KjKm6YUCTNT31LGIvEvfezHyOpemy7xg1FCvE
+TQID: 'https://experienceleague.adobe.com/MdIYz3KjKm6YUCTNT31LGIvEvfezHyOpemy7xg1FCvE'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: f2ef16dc-055a-4bb7-baa5-7039653f3966
+    internal-label: Report Builder
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: User
+source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
 workflow-type: tm+mt
-source-wordcount: 774
+source-wordcount: '774'
 ht-degree: 25%
-
 ---
-
 # Créer un bloc de données
 
 Un *bloc de données* est le tableau de données créé par une requête de données unique. Un classeur Report Builder peut contenir plusieurs blocs de données. Lorsque vous créez un bloc de données, vous devez dʼabord le configurer avant de le créer.
@@ -37,7 +44,7 @@ Configurez les paramètres initiaux du bloc de données : son emplacement, les v
 
 1. Sélectionnez ![AjouterCercle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Créer]**.
 
-   ![Capture d’écran affichant l’option Créer un bloc de données &#x200B;](./assets/create-data-block.png){zoomable="yes"}
+   ![Capture d’écran affichant l’option Créer un bloc de données ](./assets/create-data-block.png){zoomable="yes"}
 
 
 1. Définissez lʼ&#x200B;**[!UICONTROL Emplacement du bloc de données]**.
@@ -62,7 +69,7 @@ Configurez les paramètres initiaux du bloc de données : son emplacement, les v
 
    Sélectionnez **[!UICONTROL À partir de la cellule]** pour définir des données de début et de fin en fonction d&#39;une cellule de la feuille active.
 
-   Pour plus d’informations sur les options de période, voir [&#x200B; Sélectionner une période &#x200B;](select-date-range.md).
+   Pour plus d’informations sur les options de période, voir [ Sélectionner une période ](select-date-range.md).
 
 1. Sélectionnez **[!UICONTROL Suivant]**.
 
@@ -72,7 +79,7 @@ Configurez les paramètres initiaux du bloc de données : son emplacement, les v
 
 ## Création du bloc de données
 
-Pour créer le bloc de données, sélectionnez les composants du rapport et personnalisez leur disposition.
+Pour créer le bloc de données, sélectionnez les composants du rapport, puis personnalisez la disposition.
 
 1. Ajoutez les composants **[!UICONTROL Dimensions]**, **[!UICONTROL Mesures]** et **[!UICONTROL Segments]**.
 
@@ -116,7 +123,7 @@ Pour créer le bloc de données, sélectionnez les composants du rapport et pers
 
 1. Sélectionnez **[!UICONTROL Terminer]** pour terminer la configuration de votre bloc de données.
 
-1. Un message de traitement **&#x200B;**&#x200B;s’affiche lors de la récupération des données d’analyse.
+1. Un message de traitement **** s’affiche lors de la récupération des données d’analyse.
 
    ![Message de traitement.](./assets/image11.png)
 

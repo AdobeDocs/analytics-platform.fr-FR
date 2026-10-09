@@ -4,24 +4,28 @@ title: Opérateurs
 exl-id: 744c7450-d6e9-4f78-a306-fe725ea0fa18
 feature: Filters, Segments
 role: User
-TQID: https://experienceleague.adobe.com/16SJDNJiR49Ztw0jGO8Jj3iIuoDZJKFWmGDtK26P1Ps
+TQID: 'https://experienceleague.adobe.com/16SJDNJiR49Ztw0jGO8Jj3iIuoDZJKFWmGDtK26P1Ps'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: User
+source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
 workflow-type: tm+mt
-source-wordcount: 1215
+source-wordcount: '1215'
 ht-degree: 38%
-
 ---
-
 # Opérateurs
 
 Le créateur de segments vous permet de comparer et de contraindre des valeurs pour des composants à l’aide d’opérateurs sélectionnés. Il existe trois catégories d’opérateurs : [Standard](#standard-operators), [Data Warehouse](#data-warehouse-operators) et [Nombre distinct](#distinct-count-operators).
@@ -55,7 +59,7 @@ Par exemple, vous avez un nom de page appelé *Mon produit cool*.
 | **[!UICONTROL n’est égal à aucun(e)]** | Identifie les éléments qui correspondent exactement à n’importe quelle valeur du champ de saisie (jusqu’à 500 éléments), puis renvoie uniquement les éléments sans ces valeurs. Par exemple, la saisie de `Search Results, Homepage` avec cet opérateur pour la dimension **[!UICONTROL Nom de page]** identifie *Résultats de la recherche* et *Page d’accueil* puis **exclut** les éléments renvoyés. Cet exemple serait considéré comme deux éléments. Le champ de saisie de cet opérateur est délimité par des virgules. |
 | **[!UICONTROL contient]** | Renvoie les éléments qui sont comparés aux sous-chaînes des valeurs saisies. Par exemple, si la règle est **[!UICONTROL Nom de la page]** **[!UICONTROL contient]** `Search`, cette règle correspond à toute page qui contient le `Search` de sous-chaîne, y compris *Résultats de la recherche*, *Rechercher* et *Searching*. La condition « contient » n’est pas sensible à la casse dans Adobe Analytics, mais elle l’est dans Customer Journey Analytics. |
 | **[!UICONTROL ne contient pas]** | Renvoie l’inverse de la règle **[!UICONTROL contains]**. Plus précisément, tous les éléments qui correspondent à la valeur entrée seront exclus des valeurs entrées. Par exemple, si la règle est **[!UICONTROL Nom de la page]** **[!UICONTROL ne contient pas]** `Search`, elle ne correspond à aucune page qui contient le `Search` de sous-chaîne, y compris *Résultats de la recherche*, *Rechercher* et *Searching*. Ces valeurs seront exclues des résultats. |
-| **[!UICONTROL contient tous les]** | Renvoie les éléments comparés aux sous-chaînes, notamment plusieurs valeurs associées. Par exemple, la saisie de `Search Results` avec cet opérateur pour la dimension **[!UICONTROL Nom de page]** correspondrait à *Résultats de la recherche* et *Résultats de la recherche*, mais pas à *Recherche* ou *Résultats* individuellement. La règle correspondrait à *Recherche* ET *Résultats* trouvés ensemble. Le champ de saisie de cet opérateur est délimité par des espaces (100 mots). |
+| **[!UICONTROL contient tous les]** | Renvoie les éléments qui contiennent les sous-chaînes indiquées, y compris lorsque plusieurs valeurs sont associées. Par exemple, la saisie de `Search Results` avec cet opérateur pour la dimension **[!UICONTROL Nom de page]** correspondrait à *Résultats de la recherche* et *Résultats de la recherche*, mais pas à *Recherche* ou *Résultats* individuellement. La règle correspondrait à *Recherche* ET *Résultats* trouvés ensemble. Le champ de saisie de cet opérateur est délimité par des espaces (100 mots). |
 | **[!UICONTROL ne contient pas tous les]** | Identifie les éléments comparés à des sous-chaînes, y compris plusieurs valeurs jointes, puis renvoie uniquement les éléments sans ces valeurs. Par exemple, la saisie de `Search Results` avec cet opérateur pour la dimension **[!UICONTROL Nom de page]** identifie *Résultats de la recherche* et *Résultats de la recherche* (mais pas *Recherche* ou *Résultats* individuellement), puis exclut ces éléments. Le champ de saisie de cet opérateur est délimité par des espaces (100 mots). |
 | **[!UICONTROL contient n’importe lequel]** | Renvoie les éléments comparés aux sous-chaînes, notamment plusieurs valeurs associées ou identifiées indépendamment. Par exemple, la saisie de `Search Results` avec cet opérateur doit correspondre à *Résultats de la recherche*, *Résultats de la recherche*, *Recherche* et *Résultats*. Il correspond soit à *Recherche* SOIT à *Résultats* trouvés ensemble ou séparément. Le champ de saisie de cet opérateur est délimité par des espaces (100 mots). |
 | **[!UICONTROL ne contient aucun(e)]** | Identifie les éléments d’après les sous-chaînes, puis renvoie les valeurs qui ne contiennent pas ces sous-chaînes. Il peut y avoir plusieurs valeurs jointes ou des valeurs identifiées individuellement. Par exemple, la saisie de `Search Results` pour la dimension **[!UICONTROL Nom de page]** correspondrait à *Résultats de la recherche* s, *Résultats de la recherche*, *Recherche* et *Résultats* où *Search* ou *Result* sont trouvés ensemble ou indépendamment. Les éléments qui contiennent ces sous-chaînes seraient ensuite exclus. Le champ de saisie de cet opérateur est délimité par des espaces (100 mots). |
@@ -79,7 +83,7 @@ Par exemple, vous avez un nom de page appelé *Mon produit cool*.
 
 ## Opérateurs Comptage distincts
 
-Vous pouvez segmenter un nombre d’éléments distinct dans une dimension. Exemples : *visiteurs et visiteuses ayant consulté plus de 5 produits distincts* ou *visites et visiteuses ayant consulté plus de 5 pages distinctes*.
+Vous pouvez créer un segment basé sur un nombre d’éléments distincts au sein d’une dimension. Exemples : *visiteurs et visiteuses ayant consulté plus de 5 produits distincts* ou *visites et visiteuses ayant consulté plus de 5 pages distinctes*.
 
 | Opérateur | La dimension, le segment ou l’événement de mesure sélectionné... |
 | --- | --- |
@@ -93,6 +97,6 @@ Vous pouvez segmenter un nombre d’éléments distinct dans une dimension. Exem
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Nombre de dimensions distinct](https://experienceleague.adobe.com/fr/docs/analytics-learn/tutorials/components/calculated-metrics/approximate-count-distinct-function-in-calculated-metrics){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Nombre de dimensions distinct](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/components/calculated-metrics/approximate-count-distinct-function-in-calculated-metrics){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]

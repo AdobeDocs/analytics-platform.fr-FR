@@ -5,53 +5,62 @@ feature: Analytics Dashboards
 role: User
 exl-id: 12901a76-cb88-45a5-81e9-59fb310328be
 solution: Customer Journey Analytics
-TQID: https://experienceleague.adobe.com/VZRakAqCMywVAtKs60w-WQqHJhfKdMj2z3uSSrPyztc
+TQID: 'https://experienceleague.adobe.com/VZRakAqCMywVAtKs60w-WQqHJhfKdMj2z3uSSrPyztc'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: b743a5d9-dc51-41ed-8b2f-86a1f8de430f
+    internal-label: Analytics dashboards
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: b21c7889-c659-4a99-a779-de1bae57e47e
+    internal-label: Scorecards
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Insights
+source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
 workflow-type: tm+mt
-source-wordcount: 1335
+source-wordcount: '1335'
 ht-degree: 72%
-
 ---
-
-# Guide pour une prise en main rapide destiné aux utilisateurs en charge de l’exécution
+# Guide de démarrage rapide pour les dirigeants
 
 Les informations suivantes fournissent aux utilisateurs en charge de l’exécution des informations sur les bonnes pratiques relatives à l’utilisation et à l’affichage des tableaux de bord Analytics.
 
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Aider les cadres à accéder aux cartes de performance mobiles](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/dashboards/assist-executives-to-access-mobile-scorecards){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Aider les cadres à accéder aux cartes de performance mobiles](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/dashboards/assist-executives-to-access-mobile-scorecards){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 
-Lʼobjectif de ce guide est dʼaider les utilisateurs en charge de lʼexécution à lire et à interpréter les cartes de performance dans les tableaux de bord Analytics. L’application permet aux utilisateurs en charge de l’exécution de visualiser rapidement et facilement un large rendu de données récapitulatives importantes sur leurs propres appareils mobiles.
+Lʼobjectif de ce guide est dʼaider les utilisateurs en charge de lʼexécution à lire et à interpréter les cartes de performance dans les tableaux de bord Analytics. L’application permet aux cadres dirigeants de consulter rapidement et facilement, sur leurs propres appareils mobiles, une vue d’ensemble des principales données récapitulatives.
 
-## Configuration des tableaux de bord sur votre appareil
+## Configurer des tableaux de bord sur votre appareil
 
-Pour utiliser efficacement les tableaux de bord, vous devrez demander l’aide de votre curateur de Fiches d’évaluation pour les configurer. Cette section fournit des informations pour vous aider à la configurer avec l’aide de votre curateur.
+Pour utiliser efficacement les tableaux de bord, vous devrez demander l’aide de votre curateur de Fiches d’évaluation pour les configurer. Les informations de cette section vous aident à effectuer la configuration avec l’aide de votre responsable de la curation.
 
 ### Obtenir l’accès
 
 Pour accéder aux Fiches d’évaluation sur les tableaux de bord, assurez-vous que :
 
 * Vous disposez dʼidentifiants de connexion valides à Customer Journey Analytics.
-* votre curateur a créé correctement les Fiches d’évaluation mobiles et les a partagées avec vous.
+* Votre responsable de la curation a correctement créé les cartes de performance mobiles et les a partagées avec vous.
 
 ### Téléchargement et installation des tableaux de bord
 
@@ -110,17 +119,17 @@ Pour utiliser les tableaux de bord :
 
    Informations supplémentaires sur les mosaïques :
 
-   * La granularité des graphiques sparkline dépend de la longueur de la période :
+   * La granularité des graphiques sparkline dépend de la durée de la période :
 
-     * Une tendance horaire s’affiche pour les plages d’une journée.
-     * Une tendance quotidienne s’affiche pour les plages comprises entre une journée et un an.
+     * Une journée affiche une tendance horaire.
+     * Une période de plus d’une journée et de moins d’un an affiche une tendance quotidienne.
      * Une tendance hebdomadaire s’affiche pour les plages supérieures à un an.
 
    * La formule de modification de la valeur de pourcentage est calculée de la manière suivante : total de la mesure (période en cours) - total de la mesure (période de comparaison)/total de la mesure (période de comparaison).
 
-   * Vous pouvez tirer l’écran vers le bas pour actualiser la Fiche d’évaluation.
+   * Vous pouvez faire glisser l’écran vers le bas pour actualiser la carte de performance.
 
-   L’exemple suivant de la Fiche d’évaluation est affiché en mode normal :
+   L’exemple suivant présente une carte de performance en mode normal :
 
    ![Exemple de Fiche d’évaluation](assets/intro_scorecard.png)
 
@@ -129,11 +138,11 @@ Pour utiliser les tableaux de bord :
    ![Vue Ventilation](assets/sparkline.png)
 
 
-1. Pour modifier les périodes de votre fiche d’évaluation :
+1. Pour modifier les périodes de votre carte de performance :
 
    ![Modifier les dates](assets/changedate.png)
 
-   * Vous pouvez également modifier les périodes dans la vue Répartition affichée ci-dessus de la même manière.
+   * Vous pouvez également modifier de la même manière les périodes dans la vue Répartition affichée ci-dessus.
 
    * Selon l’intervalle sur lequel vous appuyez (**Jour**, **Semaine**, **Mois** ou **Année**), deux options de période s’affichent : soit la période actuelle, soit celle qui la précède immédiatement. Appuyez sur l’une de ces deux options pour sélectionner la première période. Dans la liste **[!UICONTROL COMPARER À]**, appuyez sur l’une des options qui s’affiche pour comparer les données de cette période avec la première période que vous avez sélectionnée. Appuyez sur **[!UICONTROL Terminé]** en haut à droite de l’écran. Le champ **[!UICONTROL Périodes]** et les mosaïques de la Fiche d’évaluation sont mis à jour avec les nouvelles données de comparaison des périodes que vous venez de sélectionner.
 
@@ -141,7 +150,7 @@ Pour utiliser les tableaux de bord :
 
    ![Segment](assets/segment_filter.png)
 
-1. Obtenez les mises à jour de [!UICONTROL Fiche d’évaluation]. Si une [!UICONTROL Carte de performance] n’inclut pas toutes les mesures ou répartitions qui peuvent vous intéresser, contactez votre équipe Customer Journey Analytics pour mettre à jour la Carte de performance. Une fois la carte mise à jour, vous pouvez tirer sur la carte à l’écran pour l’actualiser et charger les données récemment ajoutées.
+1. Obtenez les mises à jour de [!UICONTROL Fiche d’évaluation]. Si une [!UICONTROL Carte de performance] n’inclut pas toutes les mesures ou répartitions qui peuvent vous intéresser, contactez votre équipe Customer Journey Analytics pour mettre à jour la Carte de performance. Une fois la mise à jour effectuée, vous pouvez faire glisser la carte vers le bas pour l’actualiser et charger les données récemment ajoutées.
 
 1. Pour faire part de vos commentaires sur cette application :
 
@@ -158,17 +167,17 @@ Pour utiliser les tableaux de bord :
 
 **Pour signaler un bogue** :
 
-Appuyez sur l’option, puis choisissez une sous-catégorie de bogue. Dans le formulaire de signalement d’un bogue, indiquez votre adresse e-mail dans le champ supérieur et votre description du bogue dans le champ qui suit. Une capture d’écran des informations de votre compte est jointe automatiquement au message, mais vous pouvez la supprimer en appuyant sur le **X** dans l’image de la pièce jointe. Vous disposez également d’options pour effectuer un enregistrement de l’écran, ajouter davantage de captures d’écran ou joindre des fichiers. Pour envoyer le rapport, appuyez sur l’icône en forme d’avion en papier en haut à droite du formulaire.
+Appuyez sur l’option, puis choisissez une sous-catégorie du bug. Dans le formulaire de signalement d’un bug, indiquez votre adresse e-mail dans le champ supérieur et la description du bug dans le champ situé en dessous. Une capture d’écran des informations de votre compte est jointe automatiquement au message, mais vous pouvez la supprimer en appuyant sur le **X** dans l’image de la pièce jointe. Vous disposez également d’options pour effectuer un enregistrement de l’écran, ajouter davantage de captures d’écran ou joindre des fichiers. Pour envoyer le rapport, appuyez sur l’icône en forme d’avion en papier en haut à droite du formulaire.
 
 ![Signaler un bogue](assets/newbug.png)
 
 **Pour suggérer une amélioration** :
 
-Appuyez sur l’option et choisissez une sous-catégorie de suggestion. Dans le formulaire de suggestion, indiquez votre adresse e-mail dans le champ supérieur et votre description de la suggestion dans le champ qui suit. Une capture d’écran des informations de votre compte est jointe automatiquement au message, mais vous pouvez la supprimer en appuyant sur le **X** dans l’image de la pièce jointe. Vous disposez également d’options pour effectuer un enregistrement de l’écran, ajouter davantage de captures d’écran ou joindre des fichiers. Pour envoyer la suggestion, appuyez sur l’icône en forme d’avion en papier en haut à droite du formulaire.
+Appuyez sur l’option et choisissez une sous-catégorie de suggestion. Dans le formulaire de suggestion, indiquez votre adresse e-mail dans le champ supérieur et la description du bug dans le champ situé en dessous. Une capture d’écran des informations de votre compte est jointe automatiquement au message, mais vous pouvez la supprimer en appuyant sur le **X** dans l’image de la pièce jointe. Vous disposez également d’options pour effectuer un enregistrement de l’écran, ajouter davantage de captures d’écran ou joindre des fichiers. Pour envoyer la suggestion, appuyez sur l’icône en forme d’avion en papier en haut à droite du formulaire.
 
 **Pour poser une question** :
 
-Appuyez sur l’option et indiquez votre adresse e-mail dans le champ supérieur et votre question dans le champ qui suit. Une capture d’écran est jointe automatiquement au message, mais vous pouvez la supprimer en appuyant sur le **X** dans l’image de la pièce jointe. Vous disposez également d’options pour effectuer un enregistrement de l’écran, ajouter davantage de captures d’écran ou joindre des fichiers. Pour envoyer la question, appuyez sur l’icône en forme d’avion en papier en haut à droite du formulaire.
+Appuyez sur l’option et indiquez votre adresse e-mail dans le champ supérieur, puis votre question dans le champ situé en dessous. Une capture d’écran est jointe automatiquement au message, mais vous pouvez la supprimer en appuyant sur le **X** dans l’image de la pièce jointe. Vous disposez également d’options pour effectuer un enregistrement de l’écran, ajouter davantage de captures d’écran ou joindre des fichiers. Pour envoyer la question, appuyez sur l’icône en forme d’avion en papier en haut à droite du formulaire.
 
 ## Glossaire terminologique
 
@@ -176,9 +185,9 @@ Appuyez sur l’option et indiquez votre adresse e-mail dans le champ supérieur
 |--- |--- |
 | Consommateur | Responsable affichant les mesures et informations clés de Customer Journey Analytics sur un appareil mobile |
 | Curateur | Personne rompue aux données qui trouve et distribue des informations à partir de Customer Journey Analytics et configure les cartes de performance à afficher par le consommateur |
-| Traitement | L’acte de création ou de modification d’une Fiche d’évaluation mobile contenant des mesures, des dimensions ainsi que d’autres composants pertinents pour le consommateur |
-| Fiche d’évaluation | Un affichage dans les tableaux de bord contenant une ou plusieurs mosaïques |
-| Mosaïque | Un rendu d’une mesure dans un affichage de la Fiche d’évaluation |
-| Répartition | Un affichage secondaire accessible en appuyant sur une mosaïque de la Fiche d’évaluation. Cet affichage étend la mesure affichée sur la mosaïque et peut de manière facultative gérer des dimensions de répartition supplémentaires |
-| Période | La période principale pour la création de rapports dans les tableaux de bord |
-| Période de comparaison | La période comparée à la période principale |
+| Traitement | Action consistant à créer ou modifier une carte de performance mobile contenant des mesures, des dimensions ainsi que d’autres composants pertinents pour le client |
+| Fiche d’évaluation | Vue de tableaux de bord contenant une ou plusieurs vignettes. |
+| Mosaïque | Rendu d’une mesure dans une vue de carte de performance |
+| Répartition | Vue secondaire accessible en appuyant sur une vignette dans la carte de performance. Cette vue étend la mesure affichée sur la vignette et peut éventuellement présenter des dimensions de répartition supplémentaires. |
+| Période | Période principale pour les rapports des tableaux de bord |
+| Période de comparaison | Période comparée à la période principale |

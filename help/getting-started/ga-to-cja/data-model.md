@@ -13,6 +13,8 @@ feature_v2:
     internal-label: Components
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
     internal-label: Administration
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
 subfeature_v2:
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
     internal-label: Dimensions
@@ -28,7 +30,7 @@ topic_v2:
     internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
 workflow-type: tm+mt
 source-wordcount: '704'
 ht-degree: 2%
@@ -47,7 +49,7 @@ Chaque interaction dans GA4 est un **événement** : une action nommée avec un 
 | Collecté automatiquement | `page_view`, `session_start`, `first_visit`, `scroll` |
 | Mesure améliorée | `file_download`, `video_start`, `form_submit` |
 | Recommandé | `purchase`, `add_to_cart`, `sign_up` |
-| Valeur personnalisée | Tout nom d’événement défini |
+| Personnalisé | Tout nom d’événement défini |
 
 Chaque événement peut comporter jusqu’à 25 paramètres. Par exemple, un événement `purchase` inclut généralement `transaction_id`, `value`, `currency` et `items` en tant que paramètres.
 
@@ -88,7 +90,7 @@ GA4 collecte automatiquement un ensemble d’événements via son SDK. Le tablea
 
 Dans GA4, les événements personnalisés ont un nom et jusqu’à 25 paramètres. Dans Customer Journey Analytics, les événements personnalisés correspondent aux champs de schéma XDM personnalisés définis lors de l’implémentation :
 
-* Le **nom de l’événement** devient une valeur de champ dans un champ XDM (généralement [`xdm.eventType`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/classes/experienceevent)).
+* Le **nom de l’événement** devient une valeur de champ dans un champ XDM (généralement [`xdm.eventType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/experienceevent)).
 * Chaque **paramètre** devient un champ de schéma XDM distinct. Tout champ XDM peut être exposé en tant que dimension ou mesure lors de la [configuration d’une vue de données](/help/data-views/component-settings/overview.md).
 
 >[!NOTE]

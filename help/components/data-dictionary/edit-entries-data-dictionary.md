@@ -4,7 +4,7 @@ title: Modifier les entrées de composant
 feature: Components
 role: Admin
 exl-id: 2d232811-e34a-4667-819c-cbe2a3e72702
-TQID: https://experienceleague.adobe.com/MPtF2ZOWbjayiJtMoTS705nWS-W9OdTmNOp3Wagi6io
+TQID: 'https://experienceleague.adobe.com/MPtF2ZOWbjayiJtMoTS705nWS-W9OdTmNOp3Wagi6io'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -17,7 +17,7 @@ subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
     internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-    internal-label: Segments, Segments (CJA)
+    internal-label: Segments
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
     internal-label: Calendar
   - id: df28738e-9c71-4aa8-929e-edde22340cc6
@@ -32,7 +32,7 @@ role_v2:
 topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
     internal-label: Experimentation
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
 workflow-type: tm+mt
 source-wordcount: '1247'
 ht-degree: 63%
@@ -65,7 +65,7 @@ Pour modifier un composant dans le dictionnaire de données :
 
    * **Mesures** ![icône de mesure](/help/assets/icons/Event.svg) sont verts
 
-   * L’icône **&#x200B;**&#x200B;l’icône ![Adobe](assets/default-calc-metric-icon.png) indique soit un modèle de mesure calculée, soit un modèle de segment
+   * L’icône **** l’icône ![Adobe](assets/default-calc-metric-icon.png) indique soit un modèle de mesure calculée, soit un modèle de segment
 
    * **Icône Calculateur** ![Icône Calculateur](/help/assets/icons/Calculator.svg) indique une mesure calculée qui a été créée par un administrateur ou une administratrice Analytics de votre entreprise
 
@@ -84,7 +84,7 @@ Pour modifier un composant dans le dictionnaire de données :
    | **[!UICONTROL Description manquante]** | Afficher uniquement les composants qui n’ont pas encore de description dans le champ de description. Cette option est réservée aux administrateurs et administratrices. |
    | **[!UICONTROL Afficher les doublons]** | Afficher uniquement les composants portant le même nom ou la même description qu’un autre composant de la vue de données sélectionnée. Cela inclut les composants que vous créez, ainsi que ceux fournis par Adobe. Les noms ou descriptions doivent correspondre exactement pour apparaître comme des doublons. Cette option est réservée aux administrateurs et administratrices. |
    | **[!UICONTROL Aucune donnée récente]** | Afficher uniquement les composants qui n’ont collecté aucune donnée au cours des 90 derniers jours. Cette option est réservée aux administrateurs et administratrices. |
-   | **[!UICONTROL Création Adobe]** <!-- I don't see this option--> | Afficher uniquement les composants créés par Adobe. Par exemple, **&#x200B;**. Les composants créés par un administrateur ou un autre utilisateur de votre organisation ne sont pas affichés. |
+   | **[!UICONTROL Création Adobe]** <!-- I don't see this option--> | Afficher uniquement les composants créés par Adobe. Par exemple, ****. Les composants créés par un administrateur ou un autre utilisateur de votre organisation ne sont pas affichés. |
 
    {style="table-layout:auto"}
 
