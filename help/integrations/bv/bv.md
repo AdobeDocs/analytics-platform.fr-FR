@@ -23,7 +23,7 @@ ht-degree: 3%
 
 # Intégration de Adobe Brand Visibility
 
-[](https://experienceleague.adobe.com/fr/docs/brand-visibility/using/home){target="_blank"} est une application IA générative pour l&#39;optimisation du moteur de génération, conçue pour aider les marques à améliorer leur visibilité, leur précision et leur influence dans les environnements de recherche pilotés par l&#39;IA. Brand Visibility fournit des informations sur la présence des marques dans les réponses générées par l’IA, propose des recommandations de contenu prescriptives et automatise les correctifs d’optimisation.
+[&#128279;](https://experienceleague.adobe.com/fr/docs/brand-visibility/using/home){target="_blank"} est une application IA générative pour l&#39;optimisation du moteur de génération, conçue pour aider les marques à améliorer leur visibilité, leur précision et leur influence dans les environnements de recherche pilotés par l&#39;IA. Brand Visibility fournit des informations sur la présence des marques dans les réponses générées par l’IA, propose des recommandations de contenu prescriptives et automatise les correctifs d’optimisation.
 
 L’IA est devenue un canal de découverte essentiel. Les agents de grands modèles linguistiques (LLM), tels que ChatGPT, Claude, Copilot et Perplexity, explorent le contenu de la marque.
 
@@ -94,4 +94,4 @@ Voir pour plus d’informations :
 
 ## Intégration sortante
 
-Pour plus d’informations sur l’intégration sortante, consultez la section [Intégration de ](https://experienceleague.adobe.com/en/docs/brand-visibility/using/resources/customer-journey-analytics-integration){target="_blank"} dans la documentation de Adobe Brand Visibility.
+Pour plus d’informations sur l’intégration sortante, consultez la section [Intégration de &#x200B;](https://experienceleague.adobe.com/en/docs/brand-visibility/using/resources/customer-journey-analytics-integration){target="_blank"} dans la documentation de Adobe Brand Visibility.

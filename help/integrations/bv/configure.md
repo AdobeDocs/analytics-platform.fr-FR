@@ -80,7 +80,7 @@ le trafic.
 
 Brand Visibility utilise les journaux d’accès CDN pour identifier les requêtes provenant des robots et des agents automatisés. Ce trafic ne déclenche pas les balises JavaScript du navigateur et n’est donc pas capturé par le biais d’une implémentation Web Analytics conventionnelle.
 
-Pour obtenir une description détaillée de l’intégration entrante, de la structure du jeu de données et des champs disponibles, voir [ à propos du jeu de données ](#about-the-dataset).
+Pour obtenir une description détaillée de l’intégration entrante, de la structure du jeu de données et des champs disponibles, voir [&#x200B; à propos du jeu de données &#x200B;](#about-the-dataset).
 
 Le connecteur géré crée le jeu de données de résumé dans Experience Platform en utilisant :
 
@@ -141,7 +141,7 @@ Procédez comme suit pour vérifier l’intégration entrante :
 1. Vérifier le jeu de données géré dans Experience Platform
 
    Une fois qu’Adobe a confirmé que le connecteur géré a créé le jeu de données :
-   1. Connectez-vous à ****.
+   1. Connectez-vous à **&#x200B;**.
    1. Sélectionnez le sandbox nommé fourni lors de la réception dans la liste des sandbox.
    1. Recherchez le nom ou l’identifiant du jeu de données fourni par Adobe dans **[!UICONTROL Jeux de données]**.
    1. Vérifiez que le jeu de données est associé au site de Visibilité des marques attendu.
