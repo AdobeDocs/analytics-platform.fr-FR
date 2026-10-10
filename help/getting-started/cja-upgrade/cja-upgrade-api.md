@@ -1,6 +1,6 @@
 ---
-title: Créer une propriété de balise et ajouter l’extension SDK web
-description: Découvrir comment créer une propriété de balise et ajouter l’extension SDK web
+title: Installer Platform Web SDK avec le package NPM
+description: Découvrez comment installer le SDK Web à l’aide du package NPM lors de la mise à niveau d’Adobe Analytics vers Customer Journey Analytics.
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -28,12 +28,12 @@ topic_v2:
     internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
-source-wordcount: '141'
-ht-degree: 73%
+source-wordcount: '146'
+ht-degree: 47%
 ---
-# Installer le SDK web Platform avec l’API Edge Network {#upgrade-manual}
+# Installer Platform Web SDK avec le package NPM {#upgrade-manual}
 
 <!-- markdownlint-disable MD034 -->
 

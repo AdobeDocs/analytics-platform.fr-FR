@@ -5,38 +5,48 @@ feature: Analytics Dashboards
 role: User, Admin
 solution: Customer Journey Analytics
 exl-id: 6a0de7db-689d-448d-b8e0-90af4a5ee325
-TQID: https://experienceleague.adobe.com/Sb4kVGW3EHe85km5NDp-qWQu8MIeW5v2gwrYNTmNevY
+TQID: 'https://experienceleague.adobe.com/Sb4kVGW3EHe85km5NDp-qWQu8MIeW5v2gwrYNTmNevY'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: b743a5d9-dc51-41ed-8b2f-86a1f8de430f
+    internal-label: Analytics dashboards
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: b21c7889-c659-4a99-a779-de1bae57e47e
+    internal-label: Scorecards
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Machine learning
+source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
 workflow-type: tm+mt
-source-wordcount: 1849
+source-wordcount: '1849'
 ht-degree: 81%
-
 ---
-
 # Gérer les cartes de performance
 
 Cette rubrique explique aux curateurs des données Customer Journey Analytics comment afficher et gérer les éléments des cartes de performance.
 
-## Afficher et configurer des propriétés dʼune vignette {#tiles}
+## Afficher et configurer les propriétés d’une vignette {#tiles}
 
-Lorsque vous cliquez sur une vignette dans le créateur de cartes de performance, le rail de droite affiche les propriétés et les caractéristiques associées à cette vignette et à sa diapositive détaillée. Dans ce rail, vous pouvez fournir un nouveau **titre** pour la vignette ainsi que la configurer en appliquant des segments.
+Lorsque vous cliquez sur une vignette dans le générateur de cartes de performance, le rail de droite affiche les propriétés et les caractéristiques associées à cette vignette et à sa diapositive de détails. Dans ce rail, vous pouvez fournir un nouveau **titre** pour la vignette ainsi que la configurer en appliquant des segments.
 
 ![Vignette Propriétés](assets/properties-tile-new.png)
 
@@ -47,7 +57,7 @@ Si vous cliquez sur les vignettes, une fenêtre pop-up dynamique monte comment l
 Les répartitions affinent votre analyse en répartissant les mesures par éléments de dimension, tels que :
 
 * Mesure Visiteurs uniques ventilée par Plateforme publicitaire (AMO ID)
-* Mesure Visites ventilée par Catégorie de produit (vente au détail)
+* Visites ventilées par catégorie de produits (vente au détail)
 * Mesure Chiffre dʼaffaires total ventilée par Nom de produit
 
 ![Breakdown_view](assets/break_view.png)
@@ -83,7 +93,7 @@ Vous pouvez également modifier la disposition des diapositives en glissant-dép
 
 Vous pouvez ajouter du texte pour fournir des informations significatives sur le contenu des graphiques ou des nuances sur les données.
 
-Pour ajouter du texte à une diapositive détaillée, sélectionnez une disposition qui affiche le symbole `T` ou glissez-déposez le composant Visualisation de texte depuis le rail de gauche. L’éditeur de texte s’ouvre automatiquement lors de l’ajout d’une nouvelle visualisation de texte ou du choix d’une disposition de diapositives avec texte. L’éditeur de texte fournit toutes les options standard pour le formatage de votre texte. Vous pouvez appliquer des styles de texte tels que des paragraphes, des en-têtes et des sous-titres, ainsi qu’appliquer des polices en gras et en italique. Vous pouvez justifier du texte, ajouter des listes à puces ou numérotées et ajouter des liens. Une fois la modification terminée, cliquez sur le bouton Réduire dans le coin supérieur droit de l’éditeur de texte pour le fermer. Pour modifier le texte que vous avez déjà ajouté, cliquez sur l’icône en forme de crayon pour ouvrir à nouveau l’éditeur de texte.
+Pour ajouter du texte à une diapositive détaillée, sélectionnez une disposition qui affiche le symbole `T` ou glissez-déposez le composant Visualisation de texte depuis le rail de gauche. L’éditeur de texte s’ouvre automatiquement lors de l’ajout d’une nouvelle visualisation de texte ou du choix d’une disposition de diapositives avec texte. L’éditeur de texte fournit toutes les options standard pour le formatage de votre texte. Vous pouvez appliquer des styles de texte tels que des paragraphes, des en-têtes et des sous-titres, ainsi qu’appliquer des polices en gras et en italique. Vous pouvez justifier du texte, ajouter des listes à puces ou numérotées et ajouter des liens. Une fois les modifications terminées, sélectionnez le bouton Réduire dans le coin supérieur droit de l’éditeur de texte pour le fermer. Pour modifier le texte que vous avez déjà ajouté, sélectionnez l’icône en forme de crayon pour ouvrir à nouveau l’éditeur de texte.
 
 ![Modifier la disposition des diapositives](assets/add-descriptive-text.png)
 
@@ -95,11 +105,11 @@ De même, si vous souhaitez supprimer un composant appliqué à la totalité de 
 
 ## Créer des histoires de données {#create-data-story}
 
-Une histoire de données consiste en un ensemble de points de données complémentaires, de contexte commercial et de mesures associées construit autour d’un thème central ou d’une mesure commune.
+Un récit de données est un ensemble de points de données complémentaires, de contexte métier et de mesures associées autour d’un thème ou d’une mesure centrale.
 
-Si, par exemple, vous cherchez à augmenter votre trafic web, la mesure la plus importante peut être le nombre de visites, suivie par le nombre de nouvelles personnes ou de personnes uniques. Pour une analyse plus poussée, vous souhaitez certainement consulter ces données réparties par page web ou par type d’appareil d’où le trafic provient. Les histoires de données contées dans les projets des cartes de performance mobiles vous permettent de faire ressortir vos mesures les plus importantes, tout en racontant la logique derrière les mesures grâce à plusieurs diapositives détaillées.
+Par exemple, si vous vous concentrez sur le trafic web, votre mesure la plus importante peut être le nombre de visites, mais vous pouvez aussi vous intéresser aux nouvelles personnes et aux personnes uniques, et souhaiter ventiler les données par page web ou selon le type d’appareil à l’origine du trafic. Dans les projets de cartes de performance mobiles, les récits de données vous permettent de mettre en avant vos mesures les plus importantes, tout en racontant toute l’histoire qui se cache derrière ces mesures à l’aide de plusieurs diapositives de détails.
 
-Regardez la vidéo pour en savoir plus sur la création d’histoires de données dans les projets des cartes de performance mobiles d’Analysis Workspace.
+Regardez la vidéo pour en savoir plus sur la création de récits de données dans les projets de cartes de performance mobiles dans Analysis Workspace.
 
 
 >[!BEGINSHADEBOX]
@@ -111,14 +121,14 @@ Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Histoires 
 
 **Pour créer une histoire de données** {#data-story-create}
 
-Créez votre histoire de données en ajoutant plusieurs diapositives détaillées à une mosaïque.
+Créez votre récit de données en ajoutant plusieurs diapositives de détails à une vignette.
 
 1. Commencez par un projet de carte de performance mobile.
-1. Sélectionnez une mosaïque à partir de laquelle vous souhaitez créer une histoire.
+1. Sélectionnez une vignette à partir de laquelle vous souhaitez créer un récit.
    ![Créer une histoire de données](assets/data-story1.png)
    ![Création d’icônes d’histoire de données](assets/create-data-story.png){width=".50%"}
 1. Ajoutez des diapositives pour élaborer votre histoire de données. Votre première diapositive est générée par défaut.
-Pour ajouter de nouvelles diapositives, pointez ou cliquez sur une diapositive, puis sélectionnez l’une des options disponibles :
+Pour ajouter des diapositives, pointez sur une diapositive ou cliquez dessus, puis sélectionnez l’une des options disponibles :
    * Appuyez sur le signe « + » pour créer une diapositive.
    * Appuyez sur l’icône de duplication pour dupliquer la diapositive existante.
 1. Si vous créez une diapositive vierge, faites glisser et déposez des composants depuis le rail de gauche ou choisissez une disposition pour remplir automatiquement la diapositive avec les données de la mosaïque.
@@ -127,12 +137,12 @@ Pour ajouter de nouvelles diapositives, pointez ou cliquez sur une diapositive, 
 
 ### Personnaliser une histoire de données {#customize-data-story}
 
-Les histoires de données vous permettent de personnaliser chaque élément, afin de partager uniquement les informations que vous souhaitez partager, et d’exclure tout ce dont vous n’avez pas besoin. Vous pouvez personnaliser les mosaïques et les diapositives en ajoutant des segments, en affichant les répartitions et en modifiant la disposition et les visualisations.
+Les histoires de données vous permettent de personnaliser chaque élément, afin de partager uniquement les informations que vous souhaitez partager, et d’exclure tout ce dont vous n’avez pas besoin. Vous pouvez personnaliser les vignettes et les diapositives individuelles pour ajouter des segments, afficher des répartitions, modifier la mise en page et changer les visualisations.
 
 **Pour personnaliser les mosaïques**
 
 1. Appuyez sur une mosaïque. La mosaïque sélectionnée est entourée en bleu et le panneau de droite affiche ses propriétés.
-1. Modifiez le titre, le type de graphique et d’autres options de mosaïque.
+1. Modifiez le titre, le type de graphique et d’autres options de vignette.
 1. Faites glisser un composant sur la mosaïque.
    ![Créer une histoire de données](assets/data-story3.png)
    Lorsque vous faites glisser et déposez un composant, tel qu’une visualisation, sur une mosaïque, le composant est appliqué à toutes les diapositives du récit des données.
@@ -144,9 +154,9 @@ Les histoires de données vous permettent de personnaliser chaque élément, afi
 
 **Pour personnaliser des diapositives individuelles**
 
-Vous pouvez modifier la visualisation de diapositives individuelles d’une histoire de données. Vous pouvez, par exemple, remplacer une barre horizontale par un graphique en anneau dans une diapositive. Vous pouvez également modifier la disposition. Consultez la section [Personnaliser les diapositives détaillées](#customize-detail-slide).
+Vous pouvez modifier la visualisation de chaque diapositive d’un récit de données. Vous pouvez, par exemple, remplacer un graphique à barres horizontales par un graphique en anneau pour une diapositive spécifique. Vous pouvez également modifier la disposition. Consultez la section [Personnaliser les diapositives détaillées](#customize-detail-slide).
 
-### Prévisualiser une histoire de données {#preview-data-story}
+### Afficher l’aperçu d’un récit de données {#preview-data-story}
 
 Une fois votre histoire de données créée, appuyez sur le bouton **Prévisualiser** pour afficher votre histoire de données et interagir avec elle comme si vous étiez un utilisateur ou une utilisatrice de l’application. Pour plus d’informations sur la prévisualisation des histoires de données, consultez la section [Prévisualiser une carte de performance](#preview)
 
@@ -162,7 +172,7 @@ Pour naviguer d’avant en arrière, utilisez les flèches de votre clavier ou s
 
 ## Prévisualiser des cartes de performance {#preview}
 
-Vous pouvez prévisualiser l’aspect et le fonctionnement de la carte de performance une fois qu’elle est publiée dans l’application de tableaux de bord Adobe Analytics.
+Vous pouvez afficher un aperçu de l’apparence et du fonctionnement de la carte de performance une fois qu’elle sera publiée dans l’application de tableaux de bord Adobe Analytics.
 
 1. Cliquez sur **[!UICONTROL Prévisualisation]** dans le coin supérieur droit de l’écran.
 
@@ -172,7 +182,7 @@ Vous pouvez prévisualiser l’aspect et le fonctionnement de la carte de perfor
 
    ![Device_preview](assets/device-preview.png)
 
-1. Pour interagir avec la prévisualisation, vous pouvez :
+1. Pour interagir avec l’aperçu, vous pouvez :
 
    * Cliquer avec le bouton gauche pour simuler l’appui sur l’écran du téléphone.
 
@@ -197,7 +207,7 @@ Pour partager la carte de performance avec un utilisateur ou une utilisatrice en
 
 ![Share_Scorecards](assets/new_share.png)
 
-Après avoir partagé une carte de performance, vos destinataires peuvent y accéder depuis leurs tableaux de bord Analytics. Si, par la suite, vous apportez des modifications à la carte de performance dans le créateur de carte de performance, celles-ci seront mises à jour automatiquement dans la carte de performance que vous avez partagée. Les utilisateurs et utilisatrices en charge de l’exécution pourront accéder aux changements en actualisant la carte de performance sur leur application.
+Une fois que vous avez partagé une carte de performance, vos destinataires peuvent y accéder dans leurs tableaux de bord Analytics. Si, par la suite, vous apportez des modifications à la carte de performance dans le créateur de cartes de performance, celles-ci seront automatiquement mises à jour dans la carte de performance partagée. Les utilisateurs et utilisatrices en charge de l’exécution pourront accéder aux changements en actualisant la carte de performance sur leur application.
 
 Si vous mettez à jour la carte de performance en ajoutant de nouveaux composants, vous voudrez peut-être à nouveau la partager (et cocher lʼoption **[!UICONTROL Partager les composants incorporés]**) afin de vous assurer que vos utilisateurs en charge de lʼexécution ont accès à ces modifications.
 
@@ -224,7 +234,7 @@ Pour partager une carte de performance à l’aide d’un lien partageable, proc
 
 Si vous souhaitez supprimer [!UICONTROL Non spécifié] des éléments de dimension de vos données, procédez comme suit :
 
-1. Sélectionnez la mosaïque appropriée.
+1. Sélectionnez la vignette appropriée.
 1. Dans le rail de droite, sous **[!UICONTROL Analyses]**, sélectionnez la flèche vers la droite en regard de l’élément de dimension pour lequel vous voulez supprimer les éléments **[!UICONTROL Non spécifiés]**.
 
    ![Propriétés avec flèche pointant vers la flèche droite en regard du nom de la dimension.](assets/unspecified.png)

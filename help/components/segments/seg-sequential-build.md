@@ -3,28 +3,35 @@ description: Découvrez les segments séquentiels qui utilisent l’opérateur T
 title: Segments séquentiels
 feature: Filters, Segments
 exl-id: 64cb10b5-36f0-42c8-b687-ae5de5ced8b5
-TQID: https://experienceleague.adobe.com/TqLnqudV-SrIk7SdMT7dUeNBAwaa5FkoZocUkwrod6g
+TQID: 'https://experienceleague.adobe.com/TqLnqudV-SrIk7SdMT7dUeNBAwaa5FkoZocUkwrod6g'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Reporting
+source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
 workflow-type: tm+mt
-source-wordcount: 2496
+source-wordcount: '2496'
 ht-degree: 4%
-
 ---
-
 # Segments séquentiels
 
 Vous créez des segments séquentiels à l’aide de l’opérateur logique [!UICONTROL Then] entre les composants, les conteneurs et les composants, ou les conteneurs. L’opérateur logique [!UICONTROL Then] implique qu’une condition de segment se produit, suivie d’une autre.
@@ -270,7 +277,7 @@ Identifiez les personnes qui ont visité une page mais n’ont jamais visité d�
 >
 >Un [!UICONTROL Groupe logique] ne peut être défini que dans un segment séquentiel, ce qui signifie que l’opérateur [!UICONTROL Then] est utilisé dans le conteneur.
 
-Les conteneurs Groupe logique servent à regrouper des conditions dans un point de contrôle de segment séquentiel unique. Dans le cadre de la séquence, la logique définie dans le conteneur identifié comme Groupe logique est évaluée après tout point de contrôle séquentiel précédent et avant tout point de contrôle séquentiel suivant.
+Le conteneur Groupe logique permet de regrouper des conditions dans un point de contrôle de segment séquentiel unique. Dans le cadre de la séquence, la logique définie dans le conteneur identifié comme Groupe logique est évaluée après tout point de contrôle séquentiel précédent et avant tout point de contrôle séquentiel suivant.
 
 Les conditions du groupe logique lui-même peuvent être remplies dans n&#39;importe quel ordre. En revanche, les conteneurs non séquentiels (événement, session, personne) n’ont pas besoin que leurs conditions soient remplies dans la séquence globale, ce qui produit des résultats inintuitifs possibles s’ils sont utilisés avec un opérateur Then.
 

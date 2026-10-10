@@ -17,10 +17,10 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: d7614102d54af57a3a084c8550041f8e04f4bc37
+source-git-commit: adc7e85339e89c181375c0d3ea5c228d473239a7
 workflow-type: tm+mt
-source-wordcount: '1391'
-ht-degree: 44%
+source-wordcount: '1419'
+ht-degree: 43%
 ---
 # Disponibilité des composants dans les flux de données
 
@@ -98,6 +98,8 @@ Les mesures standard Customer Journey Analytics suivantes ne peuvent pas être i
 
 <!-- markdownlint-disable MD034 -->
 
+<!-- pretty sure this isn't being used -->
+
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_user_agent"
 >title=""
@@ -115,8 +117,14 @@ Les mesures standard Customer Journey Analytics suivantes ne peuvent pas être i
 
 Les dimensions suivantes ne peuvent pas être utilisées avec les dimensions **Agent utilisateur** ou **ID mobile** :
 
+>[!NOTE]
+>
+>La liste suivante utilise les noms de dimension par défaut. Les dimensions renommées dans votre vue de données apparaissent dans les flux de données avec leurs noms personnalisés.
+
+
 * Type de navigateur
 * Navigateur
+* Identifiant de navigateur
 * Fabricant du dispositif portable
 * Type d’appareil mobile
 * Prise en charge de l&#39;audio sur le dispositif portable
@@ -141,6 +149,7 @@ Les dimensions suivantes ne peuvent pas être utilisées avec les dimensions **A
 * Nom de l’appareil mobile
 * Types de systèmes d’exploitation
 * Systèmes d’exploitation
+* Identifiant du système d’exploitation
 
 ## Mesures nécessitant un substitut {#substitute-metrics}
 

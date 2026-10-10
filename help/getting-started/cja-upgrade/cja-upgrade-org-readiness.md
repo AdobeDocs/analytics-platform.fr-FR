@@ -1,6 +1,6 @@
 ---
-title: Mettre à niveau Adobe Analytics vers Customer Journey Analytics
-description: En savoir plus sur les étapes recommandées lors de la mise à niveau à partir d’Adobe Analytics vers Customer Journey Analytics
+title: Préparer votre organisation à la mise à niveau vers Customer Journey Analytics
+description: Découvrez comment préparer votre organisation à une mise à niveau d’Adobe Analytics vers Customer Journey Analytics.
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -39,10 +39,10 @@ topic_v2:
     internal-label: Behavioral data
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
-source-wordcount: '1186'
-ht-degree: 15%
+source-wordcount: '1189'
+ht-degree: 14%
 ---
 # Préparer votre organisation à la mise à niveau vers Customer Journey Analytics
 

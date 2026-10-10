@@ -5,30 +5,39 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: User
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-TQID: https://experienceleague.adobe.com/IM7-a-jp-lLfuGKj-CM2McnFXcus2-x-ffLC8UUKAmY
+TQID: 'https://experienceleague.adobe.com/IM7-a-jp-lLfuGKj-CM2McnFXcus2-x-ffLC8UUKAmY'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: ad5685a0-8296-4a0c-814c-658c10b4af12
+    internal-label: Content Analytics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
+    internal-label: Freeform tables
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: e3936b74ba4b4cf23e1b7235e545091a8cb546ed
+    internal-label: Insights
+source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
 workflow-type: tm+mt
-source-wordcount: 1643
-ht-degree: 41%
-
+source-wordcount: '1643'
+ht-degree: 43%
 ---
-
 
 # Vue d’ensemble de la création de rapports sur Content Analytics
 
@@ -202,7 +211,7 @@ Ce tableau à structure libre détaille l’emplacement des ressources les plus 
 
 ### Modèle de Content Analytics de média payant
 
-Un modèle de Content Analytics de médias payants [modèle](/help/analysis-workspace/templates/use-templates.md) est disponible pour vous aider à identifier le contenu de médias payants et les attributs de contenu qui ont les meilleures performances. Le modèle fait partie du [cas d’utilisation du canal web et de l’engagement](/help/analysis-workspace/templates/use-templates.md#web-engagement) et vous aide à comprendre comment votre contenu multimédia payant se comporte à un niveau granulaire. Vous pouvez consulter la portée, l’engagement, les dépenses et l’efficacité des médias payants sur les réseaux, les comptes, les campagnes, les expériences et les ressources. Les mesures et dimensions de ce panneau restent intentionnellement dans le grain du résumé des ressources de médias payantes. Ne combinez pas les jeux de données de résumé des panneaux de ce modèle avec les données d’événement.
+Un modèle de Content Analytics de médias payants [modèle](/help/analysis-workspace/templates/use-templates.md) est disponible pour vous aider à identifier le contenu de médias payants et les attributs de contenu qui ont les meilleures performances. Le modèle fait partie du [cas d’utilisation du canal web et de l’engagement](/help/analysis-workspace/templates/use-templates.md#web-engagement) et vous aide à comprendre comment votre contenu multimédia payant se comporte à un niveau granulaire. Vous pouvez consulter la portée de média acheté, l’engagement, les dépenses et l’efficacité sur les réseaux, les comptes, les campagnes, les expériences et les ressources. Les mesures et dimensions dans ce panneau restent intentionnellement à la granularité de résumé des ressources de média acheté. Ne combinez pas les jeux de données de résumé des panneaux de ce modèle avec les données d’événement.
 
 En fonction de ce que vous avez appris, vous pouvez réaliser un certain nombre de choses, comme vous recentrer sur la manière dont vous dépensez de l’argent sur vos canaux médias payants, dont vous dépensez plus d’argent sur des campagnes peu performantes ou dont vous dépensez plus d’argent sur des campagnes avec des ressources hautement performantes.
 

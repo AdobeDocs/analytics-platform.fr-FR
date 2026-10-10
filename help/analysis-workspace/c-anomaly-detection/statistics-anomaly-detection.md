@@ -4,24 +4,27 @@ title: Techniques Statistiques Utilisées Pour La Détection Des Anomalies
 feature: Anomaly Detection
 exl-id: 7165e7a1-a04f-450e-bffd-e329adac6903
 role: User
-TQID: https://experienceleague.adobe.com/hYbiTS7DEatmCon2w0Y6QvGOAYZChPeW5nb6TCQE5AE
+TQID: 'https://experienceleague.adobe.com/hYbiTS7DEatmCon2w0Y6QvGOAYZChPeW5nb6TCQE5AE'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
 subfeature_v2:
   - id: aff2ef09-fc60-4018-9197-e2befd623064
+    internal-label: Anomaly detection
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Reporting
+source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
 workflow-type: tm+mt
-source-wordcount: 830
+source-wordcount: '830'
 ht-degree: 65%
-
 ---
-
 # Techniques statistiques
 
 Dans Analysis Workspace, la détection des anomalies applique différentes techniques statistiques avancées afin de déterminer si une observation doit être considérée comme anormale.
@@ -58,7 +61,7 @@ Ces jours fériés ont été choisis en fonction d’une analyse statistique app
 Une fois le modèle sélectionné et les jours fériés identifiés dans la période de création des rapports, l’algorithme s’exécute comme suit :
 
 1. Créez la période de référence des anomalies. Cette période de référence des anomalies comprend jusqu’à 35 jours avant la période de création des rapports, ainsi qu’une période correspondante un an auparavant. Tenez compte des jours bissextiles lorsque cela est nécessaire et incluez tous les jours fériés applicables qui peuvent avoir eu lieu un autre jour de l’année précédente.
-1. Vérifie si les jours fériés de la période actuelle (à l’exclusion de l’année précédente) sont anormaux en fonction des données les plus récentes.
+1. Testez si les jours fériés de la période actuelle (à l’exclusion de l’année précédente) sont anormaux en fonction des données les plus récentes.
 1. Si le jour férié dans la période actuelle est anormal, adapte la valeur attendue et l’intervalle de confiance du jour férié actuel étant donné le jour férié de l’année précédente (avec une marge de deux jours avant et après). La correction des jours fériés actuels repose sur l’erreur en pourcentage absolu de la moyenne la plus faible de :
 
    1. Effets additifs
@@ -75,7 +78,7 @@ Pour les données horaires, on applique le même algorithme de série temporelle
 
 Le créneau de formation des tendances horaires repose sur un intervalle de recherche en amont de 336 heures.
 
-## Détection des anomalies avec une granularité horaire ou mensuelle
+## Détection des anomalies avec une granularité hebdomadaire ou mensuelle
 
 Les tendances hebdomadaires et mensuelles diffèrent des tendances hebdomadaires ou quotidiennes déterminées avec une granularité quotidienne ou horaire, de sorte qu’un algorithme distinct est appliqué. Pour les tests hebdomadaires et mensuels, une approche de détection des valeurs aberrantes en deux étapes est connue sous le nom de test de déviation généralisée extrémiste et identifiée (DGSE). Ce test tient compte du nombre maximum d’anomalies attendues combiné à l’approche ajustée de diagrammes en boîte (méthode non paramétrique de détection des valeurs aberrantes) afin de déterminer le nombre maximum de valeurs aberrantes. Les deux étapes sont les suivantes :
 

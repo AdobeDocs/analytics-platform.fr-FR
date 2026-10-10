@@ -1,6 +1,6 @@
 ---
-title: Ajouter le jeu de données du connecteur source Analytics à la connexion
-description: Découvrir comment ajouter le jeu de données du connecteur source Analytics à la connexion
+title: Désactiver Adobe Analytics
+description: Découvrez comment désactiver la collecte de données Adobe Analytics après la mise à niveau vers Customer Journey Analytics.
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
-source-wordcount: '149'
-ht-degree: 100%
+source-wordcount: '145'
+ht-degree: 85%
 ---
 # Désactiver Adobe Analytics {#disable-appmeasurement}
 
@@ -54,7 +54,7 @@ Avant de désactiver Adobe Analytics, consultez les informations de la section 
 
 * **Balises :** désactiver l’extension Adobe Analytics
 
-* **AppMeasurment :** remplacer la bibliothèque AppMeasurement.js s=newobject
+* **AppMeasurement:** Remplacer la bibliothèque AppMeasurement.js s=newobject
 
 >[!NOTE]
 >

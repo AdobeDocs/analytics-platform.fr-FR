@@ -3,29 +3,37 @@ description: Découvrez comment créer des mesures calculées.
 title: Créer des mesures calculées
 feature: Calculated Metrics
 exl-id: 55ed36c1-99ca-400a-bc2b-661994cbf720
-TQID: https://experienceleague.adobe.com/8xHrnqI8ZUf3qwy4Im3Qa-ESAokGMs3XPOYmpFF6Dx0
+TQID: 'https://experienceleague.adobe.com/8xHrnqI8ZUf3qwy4Im3Qa-ESAokGMs3XPOYmpFF6Dx0'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Reporting
+source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
 workflow-type: tm+mt
-source-wordcount: 384
+source-wordcount: '384'
 ht-degree: 17%
-
 ---
-
 # Créer des mesures calculées
 
 Par défaut, seuls les administrateurs peuvent créer des mesures calculées. Les utilisateurs et utilisatrices disposent de droits pour afficher les mesures calculées, de la même manière que les utilisateurs et utilisatrices affichent d’autres composants (tels que les segments, les annotations, etc.).
@@ -54,8 +62,8 @@ Avant de créer des mesures calculées, prenez soigneusement en compte le workfl
 | --- | --- |
 | Planifier les mesures calculées | En particulier pour les mesures qui vont être officiellement approuvées, il est logique de planifier pour souligner les mesures calculées qui seront largement utilisées et comment elles seront définies. |
 | [Créer](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) mesures calculées | Créez et modifiez des mesures calculées et des mesures calculées avancées en vue de les utiliser dans les composants d’[!DNL Customer Journey Analytics]. |
-| [Balise](cm-tagging.md) mesures calculées | Balisez les mesures calculées pour faciliter l’organisation et le partage. Apprenez à planifier et affecter des balises pour des recherches simples et avancées et pour l’entreprise. |
-| [Approuver](cm-approving.md) les mesures calculées | Approuvez des mesures calculées pour les rendre canoniques. |
+| [Balise](cm-tagging.md) mesures calculées | Ajoutez des balises aux mesures calculées pour faciliter l’organisation et le partage. Découvrez comment planifier et attribuer des balises pour l’organisation ainsi que pour des recherches simples et avancées. |
+| [Approuver](cm-approving.md) les mesures calculées | Approuvez les mesures calculées pour les rendre canoniques. |
 | Utilisation des mesures calculées | Utilisez les mesures calculées dans vos projets. |
 | [Partage](cm-sharing.md) mesures calculées | Partagez vos mesures calculées avec d’autres personnes, groupes ou organisations. |
 | [Filtrer](cm-filter.md) mesures calculées | Filtrez les mesures calculées par balises, propriétaires et autres filtres (Afficher tout, À moi, Partagé avec moi, Favoris et Approuvé). |

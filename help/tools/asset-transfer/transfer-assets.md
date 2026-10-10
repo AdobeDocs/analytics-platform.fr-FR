@@ -4,28 +4,33 @@ description: Découvrez comment transférer des composants d’une personne à l
 role: Admin
 solution: Customer Journey Analytics
 exl-id: c5ed81ea-1d55-4193-9bb1-a2a93ebde91f
-TQID: https://experienceleague.adobe.com/jjqF5CYG0y7OfRA9oGihAQwXQCOW00gkiEwwbfH3jrU
+TQID: 'https://experienceleague.adobe.com/jjqF5CYG0y7OfRA9oGihAQwXQCOW00gkiEwwbfH3jrU'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
   - id: e4a0bad2-b448-47f1-9fa6-222ebdb3b5b0
+    internal-label: Alerts
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Admin
+source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
 workflow-type: tm+mt
-source-wordcount: 856
+source-wordcount: '857'
 ht-degree: 98%
-
 ---
-
 # Transférer les ressources
 
-L’outil de transfert de ressources vous permet de transférer la propriété des ressources à d’autres utilisateurs et utilisatrices. Les ressources peuvent inclure des composants tels que des projets, des segments, des périodes, des mesures calculées, des annotations, des alertes et des projets planifiés.
+L’outil de transfert de ressources vous permet de transférer la propriété de ressources à d’autres utilisateurs et utilisatrices. Les ressources peuvent inclure des composants tels que des projets, des segments, des périodes, des mesures calculées, des annotations, des alertes et des projets planifiés.
 
 Les ressources sont souvent liées à une personne propriétaire individuelle et, dans certains cas, comme les segments et les mesures calculées, ne peuvent pas être modifiées ni partagées, même par les administrateurs et administratrices. Lorsque les utilisateurs et utilisatrices quittent l’organisation ou que leur rôle change, il peut s’avérer nécessaire de transférer la propriété de ces ressources à d’autres utilisateurs et utilisatrices afin d’assurer la continuité et un accès approprié.
 
@@ -95,7 +100,7 @@ Un transfert peut avoir trois conséquences :
 
 - Le corps POST de l’API ne se remplit pas correctement : un composant peut ne pas être envoyé dans le corps POST de l’API lorsque plusieurs types de composants sont sélectionnés.
 
-- Utilisateur ou utilisatrice inexistant : l’utilisateur ou l’utilisatrice a été supprimé lors du transfert ou n’est pas valide pour une autre raison. Si l’utilisateur ou l’utilisatrice n’est pas valide avant le début du transfert, l’outil l’intercepte et ne traite pas le traitement. Si l’utilisateur ou l’utilisatrice a été supprimé en cours de transfert, cela peut entraîner des échecs partiels.
+- Utilisateur ou utilisatrice inexistant : l’utilisateur ou l’utilisatrice a été supprimé lors du transfert ou est non valide pour une autre raison. Si l’utilisateur ou l’utilisatrice est non valide avant le début du transfert, l’outil l’intercepte et ne réalise pas le traitement. Si l’utilisateur ou l’utilisatrice a été supprimé en cours de transfert, cela peut entraîner des échecs partiels.
 
 - Échec de connexion/réseau : la connexion s’interrompt au cours du transfert. Tous les lots de traitements de transfert déjà transmis au serveur principal sont toujours traités jusqu’à la fin, mais l’utilisateur ou l’utilisatrice ne voit pas le message de résultat du transfert avec un résumé de ce qui a réussi et de ce qui a échoué.
 

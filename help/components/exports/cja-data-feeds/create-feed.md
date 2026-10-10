@@ -26,9 +26,9 @@ topic_v2:
     internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: d7614102d54af57a3a084c8550041f8e04f4bc37
+source-git-commit: 93107a7cf46e5d71bcb5c588eb7395fd1b88d150
 workflow-type: tm+mt
-source-wordcount: '3881'
+source-wordcount: '3924'
 ht-degree: 12%
 ---
 # Créer un flux de données
@@ -125,11 +125,11 @@ Avant de créer un flux de données, il est important de comprendre les bases de
    * **Bouton Plus** : sélectionnez l’icône Plus ![Ajouter](/help/assets/icons/Add.svg) en regard de n’importe quel composant dans le rail de gauche pour l’ajouter à la zone de travail.
    * **[!UICONTROL Tout afficher]** : sélectionnez **[!UICONTROL Tout afficher]** au bas de la liste des composants pour ouvrir une boîte de dialogue affichant tous les composants disponibles. Cochez la case en regard de chaque composant à ajouter, puis sélectionnez **[!UICONTROL Ajouter la sélection]**. Lorsqu’un terme de recherche ou une balise de filtre est actif dans le rail de gauche, un bouton **[!UICONTROL Ajouter tout]** s’affiche également pour vous permettre d’ajouter tous les résultats filtrés en même temps.
 
-   Lorsque vous ajoutez un composant qui appartient à un champ de tableau XDM (par exemple, un champ de proposition Adobe Journey Optimizer), il apparaît sur la zone de travail sous la forme d’un groupe imbriqué réductible plutôt que d’un élément plat. Le groupe reflète la structure de données sous-jacente et génère un tableau imbriqué dans le fichier exporté.
+   Tenez compte des points suivants lors de l’ajout de champs :
 
-   <!--add screenshot-->
+   * Certains composants sont obligatoires, ne sont pas pris en charge ou présentent des restrictions dans les flux de données. Pour plus d’informations, voir [Disponibilité des composants dans les flux de données](/help/components/exports/cja-data-feeds/df-components.md).
 
-   Certains composants sont obligatoires, ne sont pas pris en charge ou présentent des restrictions dans les flux de données. Pour plus d’informations, voir [Disponibilité des composants dans les flux de données](/help/components/exports/cja-data-feeds/df-components.md).
+   * Lorsque vous ajoutez un composant qui appartient à un champ de tableau XDM (par exemple, un champ de proposition Adobe Journey Optimizer) ou un champ de mappage, une boîte de dialogue vous invite à ajouter tout autre composant du même sous-conteneur. Dans la sortie du flux de données, tous ces composants apparaissent dans une seule colonne. Pour plus d’informations, voir [&#x200B; Composants de sous-conteneur dans les flux de données &#x200B;](/help/components/exports/cja-data-feeds/df-sub-event.md)
 
 1. (Facultatif) Réorganisez les composants sur la zone de travail en les faisant glisser. L’ordre que vous définissez est conservé dans l’ordre des colonnes du fichier de flux de données exporté.
 
@@ -342,9 +342,11 @@ Les heures d’arrivée varient en fonction du type de données que vous collect
 
 #### Phase 2 : les données sont ingérées à partir du lac de données dans Customer Journey Analytics
 
-Cela peut prendre jusqu’à 90 minutes (voir [&#x200B; Latences &#x200B;](/help/technotes/guardrails.md#latencies)).
+Les délais d’ingestion des données varient selon que le groupement est activé ou non dans le jeu de données.
 
-* **Jeux de données groupés** : le groupement peut ajouter jusqu’à 4 heures (voir [Latences](/help/technotes/guardrails.md#latencies)). Si le groupement est activé pour la connexion, définissez un délai d’au moins 6 heures, et potentiellement de 8 heures. Les données mises à jour par une relecture d’assemblage ne sont généralement pas incluses dans les fichiers de flux de données déjà traités.
+* **Jeux de données non groupés** : cette opération peut prendre jusqu’à 90 minutes (voir [Latences](/help/technotes/guardrails.md#latencies)).
+
+* **Jeux de données groupés** : le groupement peut ajouter jusqu’à 4 heures en plus des 90 minutes nécessaires pour les jeux de données non groupés (voir [Latences](/help/technotes/guardrails.md#latencies)). Si le groupement est activé pour la connexion, définissez un délai d’au moins 6 heures, et potentiellement de 8 heures. Les données mises à jour par une relecture d’assemblage ne sont généralement pas incluses dans les fichiers de flux de données déjà traités.
 
   Lorsque le groupement est activé, le délai de traitement minimal passe de 2 heures à 6 heures pour tenir compte des données groupées.
 
