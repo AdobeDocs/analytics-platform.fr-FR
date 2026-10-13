@@ -80,7 +80,7 @@ le trafic.
 
 Brand Visibility utilise les journaux d’accès CDN pour identifier les requêtes provenant des robots et des agents automatisés. Ce trafic ne déclenche pas les balises JavaScript du navigateur et n’est donc pas capturé par le biais d’une implémentation Web Analytics conventionnelle.
 
-Pour obtenir une description détaillée de l’intégration entrante, de la structure du jeu de données et des champs disponibles, voir [ à propos du jeu de données ](#about-the-dataset).
+Pour obtenir une description détaillée de l’intégration entrante, de la structure du jeu de données et des champs disponibles, voir [&#x200B; à propos du jeu de données &#x200B;](#about-the-dataset).
 
 La source de Visibilité des marques crée le jeu de données de résumé dans Experience Platform en utilisant :
 
@@ -124,19 +124,19 @@ n’est pas disponible pour les utilisateurs par le biais d’une vue de donnée
 Pour activer la source :
 
 1. Dans Experience Platform, sélectionnez le sandbox dans lequel vous souhaitez placer le jeu de données. Un site ne peut être alloué qu’une seule fois. Assurez-vous donc que ce sandbox est celui que vous souhaitez.
-1. Accédez à **[!UICONTROL Sources]**, puis **[!UICONTROL Catalogue]** et enfin aux applications Adobe. Sur la carte ****, sélectionnez **[!UICONTROL Configurer]** la première fois. Ensuite, la carte affiche **[!UICONTROL Ajouter des données]**.
+1. Accédez à **[!UICONTROL Sources]**, puis **[!UICONTROL Catalogue]** et enfin aux applications Adobe. Sur la carte **&#x200B;**, sélectionnez **[!UICONTROL Configurer]** la première fois. Ensuite, la carte affiche **[!UICONTROL Ajouter des données]**.
 
    ![Sélectionner la Visibilité des marques à partir des sources](assets/aep-sources-select-bv.png)
 
 1. Sélectionnez **[!UICONTROL Ajouter des données]**.
 
-   ![Ajouter des données à la source de Visibilité des marques ](assets/aep-sources-bv-add-data.png)
+   ![Ajouter des données à la source de Visibilité des marques &#x200B;](assets/aep-sources-bv-add-data.png)
 
 1. À l’étape ➊ **[!UICONTROL Sélectionner des données]** :
 
    1. Sélectionnez le site dans le tableau **[!UICONTROL Nom du site]**. Une fois qu’un site a été alloué à un flux de données, vous ne pouvez plus sélectionner le site dans ce sandbox ou dans un autre.
 
-      ![Étape 1 de la configuration de la source de Visibilité des marques ](assets/bv-source-step-1.png)
+      ![Étape 1 de la configuration de la source de Visibilité des marques &#x200B;](assets/bv-source-step-1.png)
 
    1. Sélectionnez **[!UICONTROL Suivant]**.
 
@@ -152,7 +152,7 @@ Pour activer la source :
 
    1. Vérifiez la connexion et l’affectation du jeu de données.
 
-      ![Étape 3 de la configuration de la source de Visibilité des marques ](assets/bv-source-step-3.png)
+      ![Étape 3 de la configuration de la source de Visibilité des marques &#x200B;](assets/bv-source-step-3.png)
 
    1. sélectionnez **[!UICONTROL Terminer]**.
 
@@ -181,7 +181,7 @@ Procédez comme suit pour vérifier l’intégration entrante :
 1. Vérifiez le jeu de données dans Experience Platform.
 
    Après avoir créé le flux de données :
-   1. Connectez-vous à ****.
+   1. Connectez-vous à **&#x200B;**.
    1. Sélectionnez le sandbox dans lequel vous avez créé le flux de données.
    1. Recherchez le jeu de données de votre site Brand Visibility dans **[!UICONTROL Jeux de données]**.
    1. Vérifiez que le jeu de données est associé au site de Visibilité des marques attendu.
