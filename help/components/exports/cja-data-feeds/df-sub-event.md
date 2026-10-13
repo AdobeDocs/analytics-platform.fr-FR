@@ -98,7 +98,7 @@ Lorsque vous ajoutez un composant de sous-événement à un flux de données, un
 
 Les champs du même sous-événement apparaissent sur la zone de travail sous la forme d’un groupe imbriqué réductible plutôt que d’un élément plat.
 
-![ Groupe de sous-événements ](assets/data-feeds-subevent-added.png)
+![&#x200B; Groupe de sous-événements &#x200B;](assets/data-feeds-subevent-added.png)
 
 Ce groupe reflète la structure de données sous-jacente.
 
