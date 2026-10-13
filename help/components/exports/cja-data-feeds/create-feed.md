@@ -26,7 +26,7 @@ topic_v2:
     internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 93107a7cf46e5d71bcb5c588eb7395fd1b88d150
+source-git-commit: 77f5caf20d2bf391563de20a572ce100cdcca61e
 workflow-type: tm+mt
 source-wordcount: '3924'
 ht-degree: 12%
@@ -129,7 +129,7 @@ Avant de créer un flux de données, il est important de comprendre les bases de
 
    * Certains composants sont obligatoires, ne sont pas pris en charge ou présentent des restrictions dans les flux de données. Pour plus d’informations, voir [Disponibilité des composants dans les flux de données](/help/components/exports/cja-data-feeds/df-components.md).
 
-   * Lorsque vous ajoutez un composant qui appartient à un champ de tableau XDM (par exemple, un champ de proposition Adobe Journey Optimizer) ou un champ de mappage, une boîte de dialogue vous invite à ajouter tout autre composant du même sous-conteneur. Dans la sortie du flux de données, tous ces composants apparaissent dans une seule colonne. Pour plus d’informations, voir [&#x200B; Composants de sous-conteneur dans les flux de données &#x200B;](/help/components/exports/cja-data-feeds/df-sub-event.md)
+   * Lorsque vous ajoutez un composant qui appartient à un champ de tableau XDM (par exemple, un champ de proposition Adobe Journey Optimizer) ou un champ de mappage, une boîte de dialogue vous invite à ajouter tout autre composant du même sous-événement. Dans la sortie du flux de données, tous ces composants apparaissent dans une seule colonne. Pour plus d’informations, voir [Composants de sous-événement dans les flux de données](/help/components/exports/cja-data-feeds/df-sub-event.md)
 
 1. (Facultatif) Réorganisez les composants sur la zone de travail en les faisant glisser. L’ordre que vous définissez est conservé dans l’ordre des colonnes du fichier de flux de données exporté.
 
