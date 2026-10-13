@@ -15,26 +15,28 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: fb3ebdba335ce2dde30d37b8aff4e8f201dc5d9f
+source-git-commit: e3958dfbad19f5fdd78b2755817d21afad8f8e84
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '844'
 ht-degree: 3%
 ---
 
 # Intégration de Adobe Brand Visibility
 
-[&#128279;](https://experienceleague.adobe.com/fr/docs/brand-visibility/using/home){target="_blank"} est une application IA générative pour l&#39;optimisation du moteur de génération, conçue pour aider les marques à améliorer leur visibilité, leur précision et leur influence dans les environnements de recherche pilotés par l&#39;IA. Brand Visibility fournit des informations sur la présence des marques dans les réponses générées par l’IA, propose des recommandations de contenu prescriptives et automatise les correctifs d’optimisation.
+[](https://experienceleague.adobe.com/fr/docs/brand-visibility/using/home){target="_blank"} est une application IA générative pour l&#39;optimisation du moteur de génération, conçue pour aider les marques à améliorer leur visibilité, leur précision et leur influence dans les environnements de recherche pilotés par l&#39;IA. Brand Visibility fournit des informations sur la présence des marques dans les réponses générées par l’IA, propose des recommandations de contenu prescriptives et automatise les correctifs d’optimisation.
 
 L’IA est devenue un canal de découverte essentiel. Les agents de grands modèles linguistiques (LLM), tels que ChatGPT, Claude, Copilot et Perplexity, explorent le contenu de la marque.
 
 >[!NOTE]
 >
->Vous devez disposer d’une offre de paiement par Visibilité des marques configurée et connectée à votre configuration Experience Platform par le biais du connecteur géré.
+>Vous devez avoir une offre payante de Visibilité des marques. Vous pouvez ensuite [configurer et activer](./configure.md) la source Adobe Brand Visibility dans votre sandbox Experience Platform.
+>
 
 
 >[!IMPORTANT]
 >
 >Dans le cadre de cette intégration, certains traitements temporaires des données de Brand Visibility sont effectués aux États-Unis. Les données sont finalement stockées dans la région désignée, telle que configurée dans votre contrat Customer Journey Analytics.
+>
 
 
 ## Cas d’utilisation
@@ -68,7 +70,7 @@ La seconde méthode consiste en un robot ou un agent qui demande directement vos
 
 ### Intégration du jeu de données
 
-Le connecteur géré par la Visibilité des marques fournit les données à Experience Platform sous la forme d’un jeu de données de résumé. Pour le mesurer dans Customer Journey Analytics, vous effectuez vous-même deux étapes de configuration :
+Vous activez la source Adobe Brand Visibility dans Experience Platform. La source diffuse les données dans votre sandbox sous la forme d’un jeu de données de résumé. Pour mesurer les données dans Customer Journey Analytics, vous devez ensuite effectuer vous-même deux autres étapes de configuration :
 
 1. Créez une connexion qui inclut le jeu de données Brand Visibility.
 2. Créez une vue de données sur cette connexion. La vue de données rend les dimensions et mesures ci-dessous disponibles dans Analysis Workspace.
@@ -94,4 +96,4 @@ Voir pour plus d’informations :
 
 ## Intégration sortante
 
-Pour plus d’informations sur l’intégration sortante, consultez la section [Intégration de &#x200B;](https://experienceleague.adobe.com/fr/docs/brand-visibility/using/resources/customer-journey-analytics-integration){target="_blank"} dans la documentation de Adobe Brand Visibility.
+Pour plus d’informations sur l’intégration sortante, consultez la section [Intégration de ](https://experienceleague.adobe.com/en/docs/brand-visibility/using/resources/customer-journey-analytics-integration){target="_blank"} dans la documentation de Adobe Brand Visibility.
