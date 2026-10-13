@@ -15,9 +15,9 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: fb3ebdba335ce2dde30d37b8aff4e8f201dc5d9f
+source-git-commit: e3958dfbad19f5fdd78b2755817d21afad8f8e84
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '844'
 ht-degree: 3%
 ---
 
@@ -29,12 +29,14 @@ L’IA est devenue un canal de découverte essentiel. Les agents de grands modè
 
 >[!NOTE]
 >
->Vous devez disposer d’une offre de paiement par Visibilité des marques configurée et connectée à votre configuration Experience Platform par le biais du connecteur géré.
+>Vous devez avoir une offre payante de Visibilité des marques. Vous pouvez ensuite [configurer et activer](./configure.md) la source Adobe Brand Visibility dans votre sandbox Experience Platform.
+>
 
 
 >[!IMPORTANT]
 >
 >Dans le cadre de cette intégration, certains traitements temporaires des données de Brand Visibility sont effectués aux États-Unis. Les données sont finalement stockées dans la région désignée, telle que configurée dans votre contrat Customer Journey Analytics.
+>
 
 
 ## Cas d’utilisation
@@ -68,7 +70,7 @@ La seconde méthode consiste en un robot ou un agent qui demande directement vos
 
 ### Intégration du jeu de données
 
-Le connecteur géré par la Visibilité des marques fournit les données à Experience Platform sous la forme d’un jeu de données de résumé. Pour le mesurer dans Customer Journey Analytics, vous effectuez vous-même deux étapes de configuration :
+Vous activez la source Adobe Brand Visibility dans Experience Platform. La source diffuse les données dans votre sandbox sous la forme d’un jeu de données de résumé. Pour mesurer les données dans Customer Journey Analytics, vous devez ensuite effectuer vous-même deux autres étapes de configuration :
 
 1. Créez une connexion qui inclut le jeu de données Brand Visibility.
 2. Créez une vue de données sur cette connexion. La vue de données rend les dimensions et mesures ci-dessous disponibles dans Analysis Workspace.
