@@ -1,6 +1,6 @@
 ---
-title: Composants de sous-conteneur des tableaux et mappages dans les flux de données
-description: Découvrez comment les flux de données Customer Journey Analytics exportent des composants de sous-conteneur à partir de champs de tableau et de mappage, et comment les interroger dans votre entrepôt de données.
+title: Composants de sous-événements des tableaux et mappages dans les flux de données
+description: Découvrez comment les flux de données Customer Journey Analytics exportent les composants de sous-événements des champs de tableau et de mappage, et comment les interroger dans votre entrepôt de données.
 hide: true
 feature: Components
 product_v2:
@@ -14,52 +14,52 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 93107a7cf46e5d71bcb5c588eb7395fd1b88d150
+source-git-commit: 77f5caf20d2bf391563de20a572ce100cdcca61e
 workflow-type: tm+mt
 source-wordcount: '1286'
 ht-degree: 1%
 ---
-# Composants de sous-conteneur dans les flux de données
+# Composants de sous-événement dans les flux de données
 
 {{release-limited-testing}}
 
-Les composants de sous-conteneur sont des dimensions et des mesures basées sur les champs d’un tableau ou d’un mappage dans votre schéma XDM. Ils vous permettent d’analyser les données à un niveau plus granulaire que le niveau de l’événement, comme les produits individuels d’un achat. Pour plus d’informations sur l’utilisation de ces données dans les segments, voir [Sous-événements](/help/components/segments/sub-event.md).
+Les composants de sous-événement sont des dimensions et des mesures basées sur des champs dans un tableau ou un mappage de votre schéma XDM. Ils vous permettent d’analyser les données à un niveau plus granulaire que le niveau de l’événement, comme les produits individuels d’un achat. Pour plus d’informations sur l’utilisation de ces données dans les segments, voir [Sous-événements](/help/components/segments/sub-event.md).
 
-Utilisez les informations suivantes pour comprendre comment les composants de sous-conteneur des champs de tableau et de mappage apparaissent dans vos flux de données Customer Journey Analytics.
+Utilisez les informations suivantes pour comprendre comment les composants de sous-événement des champs de tableau et de mappage apparaissent dans vos flux de données Customer Journey Analytics.
 
-## Présentation des composants de sous-conteneur
+## Présentation des composants de sous-événement
 
-### Composants de sous-conteneur dans le schéma XDM
+### Composants de sous-événement dans le schéma XDM
 
-Dans le schéma XDM, chaque élément d’un tableau (un tableau de chaîne ou un tableau d’objets) est un sous-conteneur. Chaque entrée d’un champ de mappage est également un sous-conteneur, comme décrit dans la section [Mapper des champs dans les flux de données](#map-fields-in-data-feeds). Les dimensions et les mesures basées sur les champs d’un sous-conteneur sont des composants de sous-conteneur.
+Dans le schéma XDM, chaque élément d’un tableau (un tableau de chaîne ou un tableau d’objet) est un sous-événement. Chaque entrée d’un champ de mappage est également un sous-événement, comme décrit dans la section [Mapper des champs dans les flux de données](#use-map-fields-in-data-feeds). Les dimensions et les mesures basées sur les champs d’un sous-événement sont des composants de sous-événement.
 
-Pour afficher les sous-conteneurs dans le schéma XDM dans Adobe Experience Platform, sélectionnez [!UICONTROL **Schémas**], puis développez un événement contenant des sous-conteneurs.
+Pour afficher les sous-événements dans le schéma XDM dans Adobe Experience Platform, sélectionnez [!UICONTROL **Schémas**], puis développez un événement contenant des sous-événements.
 
-Dans l’exemple suivant, `Product list items` est un tableau d’objets contenant divers composants de sous-conteneur.
+Dans l’exemple suivant, `Product list items` est un tableau d’objets contenant divers composants de sous-événement.
 
-![Schéma XDM contenant un tableau d’objets et des composants de sous-conteneur](assets/df-sub-event-schema.png)
+![Schéma XDM contenant un tableau d’objets et des composants de sous-événements](assets/df-sub-event-schema.png)
 
-### Différences de sous-conteneurs entre Analysis Workspace et les flux de données
+### Différences de sous-événements entre Analysis Workspace et les flux de données
 
-Les composants de sous-conteneur sont représentés différemment entre Analysis Workspace et les flux de données dans Customer Journey Analytics.
+Les composants de sous-événement sont représentés différemment entre Analysis Workspace et les flux de données dans Customer Journey Analytics.
 
-| Emplacement | Représentation des composants de sous-conteneur |
+| Emplacement | Représentation des composants de sous-événements |
 | --- | --- |
 | **Analysis Workspace (dans Customer Journey Analytics)** | Sélectionnable en tant que composants individuels, séparés de toute hiérarchie visible. |
 | **Flux de données (dans Customer Journey Analytics)** | Représentés sous la forme d’un groupe, avec leur hiérarchie intacte. |
 
-### Différences de sous-conteneurs entre Adobe Analytics et Customer Journey Analytics
+### Différences de sous-événements entre Adobe Analytics et Customer Journey Analytics
 
-Les données de sous-conteneur (comme plusieurs détails de produit dans un seul événement d’achat) s’affichent différemment dans les flux de données Customer Journey Analytics que dans les flux de données Adobe Analytics. Le tableau suivant compare la manière dont chaque produit représente les données de sous-conteneur.
+Les données de sous-événement (comme plusieurs détails de produit dans un seul événement d’achat) apparaissent différemment dans les flux de données Customer Journey Analytics et dans les flux de données Adobe Analytics. Le tableau suivant compare la manière dont chaque produit représente les données de sous-événement.
 
-| Product | Affichage des données de sous-conteneur dans les flux de données | Exemple : liste de produits |
+| Product | Affichage des données de sous-événements dans les flux de données | Exemple : liste de produits |
 | --- | --- | --- |
 | **Adobe Analytics** | Aplati en une chaîne délimitée dans une seule colonne. | Une liste de produits contient plusieurs produits regroupés dans une seule chaîne :<p>`Power Tools;Cordless Drill;1;129.99,Power Tools;Drill Battery Pack;2;39.98` <!--screenshot of what this looks like: product lists, list vars. --></p> |
-| **Customer Journey Analytics** | Les composants de sous-conteneur conservent la hiérarchie définie dans votre schéma XDM. Bien que regroupés dans la même colonne, ils affichent leur hiérarchie relationnelle par rapport à leur événement parent et aux sous-conteneurs frères. | Une liste de produits conserve sa hiérarchie définie dans le schéma XDM sous la forme d’un tableau :<p>`[{"category":"Power Tools","product":"Cordless Drill","quantity":1,"revenue":129.99},{"category":"Power Tools","product":"Drill Battery Pack","quantity":2,"revenue":39.98}]` <!--screenshot of what this looks like: product lists, list vars. --></p> |
+| **Customer Journey Analytics** | Les composants de sous-événement conservent la hiérarchie définie dans votre schéma XDM. Bien que regroupés dans la même colonne, ils affichent leur hiérarchie relationnelle par rapport à l’événement parent et aux sous-événements frères. | Une liste de produits conserve sa hiérarchie définie dans le schéma XDM sous la forme d’un tableau :<p>`[{"category":"Power Tools","product":"Cordless Drill","quantity":1,"revenue":129.99},{"category":"Power Tools","product":"Drill Battery Pack","quantity":2,"revenue":39.98}]` <!--screenshot of what this looks like: product lists, list vars. --></p> |
 
 {style="table-layout:auto"}
 
-### Exemple de sous-conteneur : Produits dans un événement d’achat
+### Exemple de sous-événement : Produits dans un événement d’achat
 
 Un client achète deux produits en une seule commande : une perceuse sans fil et deux packs de batteries de perceuse. Votre implémentation envoie un seul événement d’achat qui inclut les deux produits dans le tableau d’objets `productListItems` :
 
@@ -77,38 +77,38 @@ Un client achète deux produits en une seule commande : une perceuse sans fil et
 }
 ```
 
-Cet événement contient deux sous-conteneurs, un pour chaque objet du tableau `productListItems`. Le tableau suivant indique les champs qui appartiennent à l&#39;événement et ceux qui appartiennent à ses sous-conteneurs.
+Cet événement contient deux sous-événements, un pour chaque objet du tableau `productListItems`. Le tableau suivant indique les champs qui appartiennent à l&#39;événement et ceux qui appartiennent à ses sous-événements.
 
 | Niveau | Champs | Description des champs |
 | --- | --- | --- |
 | **Événement** | `eventType`, `timestamp`, `commerce.purchases.value` | L’achat dans son ensemble. Chaque champ comporte une valeur pour l’événement. La mesure **Commandes** compte `1` pour cet événement, quel que soit le nombre de produits qu’il contient. |
-| **Sous-conteneur** | `SKU`, `name`, `quantity`, `priceTotal` dans chaque objet `productListItems` | Un produit individuel dans l’achat. Chaque champ comporte une valeur par produit. Par exemple, `quantity` est `1` pour la perceuse sans fil et `2` pour le bloc-batterie de perceuse. |
+| **Sous-événement** | `SKU`, `name`, `quantity`, `priceTotal` dans chaque objet `productListItems` | Un produit individuel dans l’achat. Chaque champ comporte une valeur par produit. Par exemple, `quantity` est `1` pour la perceuse sans fil et `2` pour le bloc-batterie de perceuse. |
 
 {style="table-layout:auto"}
 
 >[!NOTE]
 >
->Les sous-conteneurs incluent uniquement les données envoyées avec l’événement. Customer Journey Analytics ne reconstruit pas le contenu du panier à partir d’événements précédents, tels que des ajouts au panier ou des passages en caisse. Pour que les produits apparaissent en tant que sous-conteneurs d’un événement d’achat, votre implémentation doit les inclure dans les `productListItems` de cet événement d’achat.
+>Les sous-événements incluent uniquement les données envoyées avec l’événement. Customer Journey Analytics ne reconstruit pas le contenu du panier à partir d’événements précédents, tels que des ajouts au panier ou des passages en caisse. Pour que les produits apparaissent en tant que sous-événements d’un événement d’achat, votre implémentation doit les inclure dans les `productListItems` de cet événement d’achat.
 
-## Ajouter des composants de sous-conteneur à un flux de données
+## Ajouter des composants de sous-événement à un flux de données
 
-Lorsque vous ajoutez un composant de sous-conteneur à un flux de données, une boîte de dialogue vous invite à ajouter les autres composants du même sous-conteneur.
+Lorsque vous ajoutez un composant de sous-événement à un flux de données, une boîte de dialogue vous invite à ajouter les autres composants du même sous-événement.
 
-![Boîte de dialogue vous invitant à ajouter les composants de sous-conteneur associés](assets/data-feeds-add-subevent.png)
+![Boîte de dialogue vous invitant à ajouter les composants de sous-événement associés](assets/data-feeds-add-subevent.png)
 
-Les champs du même sous-conteneur apparaissent sur la zone de travail sous la forme d’un groupe imbriqué réductible plutôt que d’un élément plat.
+Les champs du même sous-événement apparaissent sur la zone de travail sous la forme d’un groupe imbriqué réductible plutôt que d’un élément plat.
 
-![Groupe de sous-conteneurs](assets/data-feeds-subevent-added.png)
+![&#x200B; Groupe de sous-événements &#x200B;](assets/data-feeds-subevent-added.png)
 
 Ce groupe reflète la structure de données sous-jacente.
 
 Dans la sortie du flux de données, tous ces composants apparaissent sous la forme d’un tableau imbriqué dans une seule colonne.
 
-Pour plus d’informations sur l’ajout de composants, y compris des composants de sous-conteneur, à un flux de données, voir [Création d’un flux de données](/help/components/exports/cja-data-feeds/create-feed.md).
+Pour plus d’informations sur l’ajout de composants, y compris des composants de sous-événements, à un flux de données, voir [Création d’un flux de données](/help/components/exports/cja-data-feeds/create-feed.md).
 
-## Requête sur les données de sous-conteneur dans la sortie du flux de données
+## Requête sur les données de sous-événement dans la sortie du flux de données
 
-Comme les données de sous-conteneur [apparaissent différemment dans les flux de données Customer Journey Analytics](#sub-container-differences-between-adobe-analytics-and-customer-journey-analytics), les requêtes que vous utilisez pour ces données diffèrent de celles que vous utilisez pour les flux de données Adobe Analytics.
+Comme les données de sous-événement [apparaissent différemment dans les flux de données Customer Journey Analytics](#sub-event-differences-between-adobe-analytics-and-customer-journey-analytics), les requêtes que vous utilisez pour ces flux diffèrent de celles que vous utilisez pour les flux de données Adobe Analytics.
 
 Les exemples suivants montrent comment rechercher des événements qui incluent un produit spécifique. Les exemples utilisent la syntaxe BigQuery Google. D’autres entrepôts de données, tels que Snowflake et Databricks, prennent en charge la même approche avec des différences de syntaxe mineures.
 
@@ -184,7 +184,7 @@ WHERE REGEXP_CONTAINS(product_list, r'(^|,)[^;]*;Cordless Drill;')
 
 ## Utilisation des champs de mappage dans les flux de données
 
-Mappez les champs de votre schéma XDM pour stocker les paires clé-valeur. Les flux de données exportent chaque mappage sous la forme d’un tableau d’objets, de la même manière que les autres [données de sous-conteneur](#query-sub-container-data-in-data-feed-output). Chaque objet contient la clé de mappage et sa valeur sous la forme de champs distincts.
+Mappez les champs de votre schéma XDM pour stocker les paires clé-valeur. Les flux de données exportent chaque mappage sous la forme d’un tableau d’objets, de la même manière que les autres [données de sous-événement](#query-sub-event-data-in-data-feed-output). Chaque objet contient la clé de mappage et sa valeur sous la forme de champs distincts.
 
 Les noms des champs dans la sortie proviennent des identifiants de composant que vous configurez pour le flux de données, et non de noms fixes tels que `key` ou `value`. Les exemples de cette section utilisent des ID de composant d’exemple.
 
