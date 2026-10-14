@@ -81,7 +81,7 @@ Veillez à ne pas confondre le groupement avec ce qui suit :
 
 ## Options
 
-Le package Customer Journey Analytics auquel vous avez droit détermine les méthodes de groupement disponibles, les options relatives à la durée de renvoi initiale, l’intervalle de recherche en amont, la fréquence de relecture et le nombre maximal de jeux de données autorisés pour le groupement. Voir la description du produit [](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html?lang=fr) pour plus d’informations. Déterminez les options disponibles avant d’activer le groupement.
+Le package Customer Journey Analytics auquel vous avez droit détermine les méthodes de groupement disponibles, les options relatives à la durée de renvoi initiale, l’intervalle de recherche en amont, la fréquence de relecture et le nombre maximal de jeux de données autorisés pour le groupement. Voir la description du produit [&#128279;](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html?lang=fr) pour plus d’informations. Déterminez les options disponibles avant d’activer le groupement.
 
 | | <br/>Select | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>Ultimate |
 |---|---|---|---|
@@ -113,7 +113,7 @@ L’assemblage prend en charge les jeux de données Journey Optimizer suivants,
 
 >[!MORELIKETHIS]
 >
->[ Groupement basé sur les champs](fbs.md)
+>[&#x200B; Groupement basé sur les champs](fbs.md)
 >[Rapprochement basé sur les graphiques](gbs.md)
 >[Utilisation du groupement](use-stitching.md)
 >[Valider le groupement](validate.md)
