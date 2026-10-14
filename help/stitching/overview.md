@@ -37,7 +37,7 @@ ht-degree: 58%
 
 Le rapprochement d’identités (ou simplement rapprochement) est une fonctionnalité puissante qui améliore l’aptitude d’un jeu de données d’événements à l’analyse cross-canal. L’analyse cross-canal est un cas d’utilisation principal pour Customer Journey Analytics. L’analyse cross-canal vous permet de combiner et d’exécuter facilement des rapports sur plusieurs jeux de données de différents canaux, en fonction d’un identifiant commun (ID de personne).
 
-Lorsque vous combinez des jeux de données avec des identifiants de personne similaires, l’attribution est transférée sur plusieurs appareils et canaux. Par exemple, un utilisateur ou une utilisatrice consulte votre site par le biais d’une publicité sur son ordinateur de bureau. L’utilisateur achète un produit, mais il rencontre ensuite un problème avec la commande. L’utilisateur ou l’utilisatrice appelle ensuite votre équipe du service client pour l’aider à résoudre le problème. Avec l’analyse cross-canal, vous pouvez attribuer des événements de centre d’appel à l’annonce publicitaire qui a fait l’objet d’un clic à l’origine.
+Lorsque vous combinez des jeux de données avec des identifiants de personne similaires, l’attribution est transférée sur plusieurs appareils et canaux. Par exemple, un utilisateur ou une utilisatrice consulte votre site par le biais d’une publicité sur son ordinateur de bureau. L’utilisateur achète un produit, mais il rencontre ensuite un problème avec la commande. Elle appelle ensuite votre équipe du service clientèle pour l’aider à résoudre le problème. Avec l’analyse cross-canal, vous pouvez attribuer des événements de centre d’appel à l’annonce publicitaire qui a fait l’objet d’un clic à l’origine.
 
 Malheureusement, tous les jeux de données basés sur un événement qui font partie de votre connexion dans Customer Journey Analytics ne sont pas suffisamment alimentées en données pour prendre en charge cette attribution dès le départ. En particulier, les jeux de données d’expérience web ou mobiles ne disposent souvent pas d’informations d’ID de personne pour tous les événements.
 
@@ -81,7 +81,7 @@ Veillez à ne pas confondre le groupement avec ce qui suit :
 
 ## Options
 
-Le package Customer Journey Analytics auquel vous avez droit détermine les méthodes de groupement disponibles, les options relatives à la durée de renvoi initiale, l’intervalle de recherche en amont, la fréquence de relecture et le nombre maximal de jeux de données autorisés pour le groupement. Voir la description du produit [&#128279;](https://helpx.adobe.com/fr/legal/product-descriptions/customer-journey-analytics.html?lang=fr) pour plus d’informations. Déterminez les options disponibles avant d’activer le groupement.
+Le package Customer Journey Analytics auquel vous avez droit détermine les méthodes de groupement disponibles, les options relatives à la durée de renvoi initiale, l’intervalle de recherche en amont, la fréquence de relecture et le nombre maximal de jeux de données autorisés pour le groupement. Voir la description du produit [](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html?lang=fr) pour plus d’informations. Déterminez les options disponibles avant d’activer le groupement.
 
 | | <br/>Select | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>Ultimate |
 |---|---|---|---|
@@ -113,7 +113,7 @@ L’assemblage prend en charge les jeux de données Journey Optimizer suivants,
 
 >[!MORELIKETHIS]
 >
->[&#x200B; Groupement basé sur les champs](fbs.md)
+>[ Groupement basé sur les champs](fbs.md)
 >[Rapprochement basé sur les graphiques](gbs.md)
 >[Utilisation du groupement](use-stitching.md)
 >[Valider le groupement](validate.md)
