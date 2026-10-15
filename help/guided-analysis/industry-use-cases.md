@@ -9,26 +9,34 @@ autotag-review: '2026-05-19T09:14:30.932Z'
 TQID: 'https://experienceleague.adobe.com/HHtmhZ33F9iyQFlATLTiT8kTII25n11Xxfla6LRQMCE'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
 subfeature_v2:
   - id: bfa38d8a-4e93-4fd8-8cd8-e72c589e3af8
+    internal-label: Guided analysis
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: 1490
+source-wordcount: '1490'
 ht-degree: 78%
-
 ---
-
 # Cas dʼutilisation du secteur
 
 Cette page fournit des exemples représentatifs du secteur de ce que les équipes d’expérience client, des personnes chargées de l’analyse aux équipes chargée des produits, en passant par les équipes marketing, peuvent accomplir avec l’analyse guidée.
@@ -38,8 +46,8 @@ Cette page fournit des exemples représentatifs du secteur de ce que les équipe
 | Cas d’utilisation | Exemple | Impact | Analyse |
 | --- | --- | --- | --- |
 | **Optimiser l’application d’achat mobile** | De nombreux clientes et clients ont téléchargé l’application mobile d’une entreprise, mais ne sont jamais revenus. La société constate que les clientes et clients l’utilisent uniquement pour l’offre initiale. Elle a réengagé ces clientes et clients inactifs. | **Augmenter le LTV des utilisateurs mobiles.** Mesurez et augmentez l’utilisation de l’application pour développer une expérience utilisateur plus « heureuse ». | [Analyse de la croissance active](types/active-growth.md)<br>[Analyse de la croissance nette](types/net-growth.md) |
-| **Quantifier l’impact des nouvelles fonctionnalités de passage en caisse** | Une épicerie teste les modes d’achat en ligne qu’elle propose. Elle mesure rapidement l’impact des nouvelles fonctionnalités de passage en caisse, telles que les recommandations de produits ou le retrait en magasin. | **Augmentation des taux de conversion.** Mesurez l’impact commercial plutôt que simplement l’utilisation des fonctionnalités. | [Analyse de l’impact des versions](types/release-impact.md)<br>[Analyse de l’impact de la première utilisation](types/first-use-impact.md) |
-| **Réduire la perte d’abonnement** | Une organisation détecte les points de friction dans les parcours client qui provoquent la perte de clientèle. Cela lui permet de passer en revue les programmes d’abonnement et d’analyser les comportements des personnes membres à risque. | **Réduire la perte de clientèle.** Trouver des façons de favoriser et d&#39;entretenir les relations avec les clients pour prévenir l&#39;attrition et réduire le taux de perte de clientèle. | [Analyse de la croissance active](types/active-growth.md)<br>[Analyse de l’entonnoir](types/funnel.md) |
+| **Quantifier l’impact des nouvelles fonctionnalités de passage en caisse** | Une épicerie fait des tests pour se lancer dans la vente en ligne. Elle mesure rapidement l’impact des nouvelles fonctionnalités de passage en caisse, telles que les recommandations de produits ou le retrait en magasin. | **Augmentation des taux de conversion.** Mesurez l’impact commercial plutôt que simplement l’utilisation des fonctionnalités. | [Analyse de l’impact des versions](types/release-impact.md)<br>[Analyse de l’impact de la première utilisation](types/first-use-impact.md) |
+| **Réduire la perte d’abonnement** | Une organisation détecte les points de friction dans les parcours client qui provoquent la perte de clientèle. Cela lui permet d’examiner les programmes d’abonnement et d’analyser les comportements des membres à risque. | **Réduire la perte de clientèle.** Trouver des façons de favoriser et d&#39;entretenir les relations avec les clients pour prévenir l&#39;attrition et réduire le taux de perte de clientèle. | [Analyse de la croissance active](types/active-growth.md)<br>[Analyse de l’entonnoir](types/funnel.md) |
 | **Rechercher les parcours de vente inefficaces** | Une organisation détecte les inefficacités dans le parcours des vendeurs et vendeuses en magasin qui sont éloignés des clientes et clients. Elle adapte son processus, ce qui donne aux clientes et clients une expérience d’achat plus agréable en magasin. | **Améliorez la réponse des ventes.** Réduire les processus inefficaces, qui se traduisent par une amélioration des parcours internes et une expérience client positive. | [Analyse de l’entonnoir](types/funnel.md) |
 
 {style="table-layout:auto"}
@@ -115,7 +123,7 @@ Cette page fournit des exemples représentatifs du secteur de ce que les équipe
 | **Améliorer les résultats pour la santé des patients et patientes** | Une entreprise dispose des données pour concentrer ses efforts sur la croissance. Avant d’utiliser une analyse guidée, elle ne savait pas clairement combien de personnes membres du plan de bien-être par semaine cessaient simplement de l’utiliser. | **Réduire les visites chez le médecin.** Identification rapide des utilisateurs inactifs en vue d’un réengagement. | [Analyse de la croissance active](types/active-growth.md) |
 | **Améliorer l’expérience de la patientèle** | La visibilité sur le nombre de patientes et patients ayant contacté les centres d’appel pour une simple réinitialisation du mot de passe a permis de raviver la flamme d’une personne membre de l’équipe d’analyse pour se concentrer sur le renforcement de l’expérience de sa patientèle. | **Réduisez le coût global du service.** Améliorez l&#39;expérience des patients et réduisez les appels vers les services aux patients. | [Analyse des tendances](types/trends.md)<br>[Analyse de l’entonnoir](types/funnel.md) |
 | **Identifier les actions cross-canal répétées par segment** | Une entreprise veut comprendre l’activité des personnes membres éligibles à Medicare quant à l’utilisation de leur plan pour leur fournir des messages spécifiques dans leurs produits numériques. Les connaissances acquises grâce à l’analyse guidée permettent de rendre le marketing plus efficace. | **Personnaliser les choix d’inscription à Medicare.** Comparer les actions séquentielles courantes des membres les plus actifs de mon plan. | [Analyse de l’entonnoir](types/funnel.md)<br>[Analyse de la croissance active](types/active-growth.md) |
-| **Conserver les meilleurs talents du secteur** | Les ressources d’analyse d’une entreprise sont limitées dans le temps. L’analyse guidée permet à l’entreprise d’obtenir rapidement les données d’utilisation des produits nécessaires aux appels de mise à jour de gestion. | **Réduction de la charge de travail des analystes.** Obtenez des réponses plus rapidement. Création de rapports accessibles lorsque vous en avez le plus besoin. | [Analyse guidée](overview.md) |
+| **Conserver les meilleurs talents du secteur** | Les ressources chargées de l’analytics au sein d’une organisation disposent de peu de temps L’analyse guidée permet à l’entreprise d’obtenir rapidement les données d’utilisation des produits nécessaires aux appels de mise à jour de gestion. | **Réduction de la charge de travail des analystes.** Obtenez des réponses plus rapidement. Création de rapports accessibles lorsque vous en avez le plus besoin. | [Analyse guidée](overview.md) |
 
 {style="table-layout:auto"}
 
@@ -130,7 +138,7 @@ Cette page fournit des exemples représentatifs du secteur de ce que les équipe
 | **Quantifier l’impact des nouvelles fonctionnalités** | Une entreprise peut analyser la hausse de l’utilisation d’une nouvelle fonctionnalité de produit et déterminer les segments qui fonctionnent le mieux. Cette analyse l’aide à hiérarchiser les ressources à allouer afin d’optimiser l’engagement client et de renforcer son partenariat avec le marketing. | **Hiérarchisation basée sur les données.** Prenez des décisions éclairées concernant l’allocation des ressources. | [Analyse de l’impact des versions](types/release-impact.md)<br>[Analyse de l’impact de la première utilisation](types/first-use-impact.md) |
 | **Identifier les rôles qui sous-utilisent le produit** | Une entreprise crée un produit à utiliser par des ingénieures et ingénieurs et des personnes responsables de produits et du marketing. L’analyse guidée a montré que, bien que les personnes responsables de produits et celles spécialisées dans le marketing l’utilisaient presque quotidiennement, les personnes spécialisées dans l’ingénierie ne l’adoptaient pas dans la plupart des cas. | **Favoriser l’adoption des produits.** Identifiez rapidement le comportement des utilisateurs de différentes manières. | [Analyse de la croissance active](types/active-growth.md)<br>[Analyse de la croissance nette](types/net-growth.md) |
 | **Supprimer les points de friction dans le processus de conversion** | L’exigence d’un numéro de bon de commande dans le flux d’achat freine les utilisateurs et les utilisatrices qui préfèrent les cartes de crédit pour passer leurs commandes. Les conversions ont augmenté lorsque ce champ est devenu facultatif. | **Améliorez l’expérience client.** Réduisez l’attrition potentielle. | [Analyse de l’entonnoir](types/funnel.md)<br>[Analyse des tendances de conversion](types/conversion-trends.md) |
-| **Exploiter l’analyse en libre-service** | L’accès aux connaissances est un défi, et certains utilisateurs et certaines utilisatrices d’une entreprise ne sont pas formés à l’analyse. L’analyse guidée leur permet d’obtenir des réponses et d’exploiter les mêmes données que le reste de l’entreprise, ce qui entraîne des partenariats plus solides et permet de prendre des décisions fondées sur les données. | **Des partenariats plus étroits dans toute l’organisation.** Donnez aux chefs de produit un accès aux données précédemment compartimentées. | [Analyse guidée](overview.md) |
+| **Exploiter l’analyse en libre-service** | L’accès aux connaissances est un défi, et certains utilisateurs et certaines utilisatrices d’une entreprise ne sont pas formés à l’analyse. L’analyse guidée leur permet d’obtenir des réponses et d’exploiter les mêmes données que le reste de l’organisation, ce qui renforce les partenariats et permet de prendre de véritables décisions axées sur les données. | **Des partenariats plus étroits dans toute l’organisation.** Donnez aux chefs de produit un accès aux données précédemment compartimentées. | [Analyse guidée](overview.md) |
 
 {style="table-layout:auto"}
 
