@@ -38,10 +38,10 @@ topic_v2:
     internal-label: Data management
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 1af0b3565fe054a5073f574d53b82f561df1abda
+source-git-commit: 7dc0d254bfdf55d9b0b9a13587292b4dab59af30
 workflow-type: tm+mt
-source-wordcount: '4800'
-ht-degree: 56%
+source-wordcount: '4844'
+ht-degree: 55%
 ---
 
 # Configuration guidée de Content Analytics
@@ -705,6 +705,11 @@ Lorsque vous sélectionnez **[!UICONTROL Enregistrer]**, Content Analytics autom
 * Met à jour la connexion Customer Journey Analytics pour inclure les jeux de données de média acheté de tous les connecteurs source configurés dans ce sandbox.
 * Active les dimensions et les mesures de média acheté dans toutes les vues de données sélectionnées.
 * Affiche les canaux de média acheté en tant que dimension filtrable dans les rapports Workspace.
+
+Voir [Configuration automatique de médias payants](./paid-media.md) pour plus d’informations sur :
+
+* Configuration automatique de jeux de données de médias achetés résultant de la première utilisation d’un connecteur source de médias achetés.
+* Composants de la vue de données créés lors de la configuration et de l’activation du canal média payant dans Content Analytics.
 
 ### Enregistrer {#paidmedia-save}
 

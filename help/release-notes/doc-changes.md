@@ -55,10 +55,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a7bea19dcd89472ee21c533e44e1f87f5d179838
+source-git-commit: 7dc0d254bfdf55d9b0b9a13587292b4dab59af30
 workflow-type: tm+mt
-source-wordcount: '7183'
-ht-degree: 96%
+source-wordcount: '7222'
+ht-degree: 95%
 ---
 
 # Customer Journey Analytics - Mises à jour de la documentation
@@ -70,8 +70,8 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Fonctionnalité | Description |
 |---|---|
 | **Octobre 2026** | |
+| Canal média payant Content Analytics | Une [documentation](/help/content-analytics/config/paid-media.md) complète sur la configuration automatique des jeux de données et des composants de vue de données résultant de l’utilisation d’un connecteur source de médias achetés (comme Google Ads ou Meta Ads) ainsi que de la configuration et de l’activation du canal de médias achetés Content Analytics. |
 | Informations sur la conversation | [Documentation](/help/conversation-insights/overview.md) pour les informations sur les conversations. |
-| Octobre 2026 | |
 | Visibilité de la marque | Mise à jour de la documentation pour l’intégration entrante [&#128279;](/help/integrations/bv/bv.md#inbound-integration) avec plus de détails. |
 | **Septembre 2026** | |
 | Comparaison de la zone de travail de parcours sur les flèches et les abandons | Mise à jour du paramètre [!UICONTROL Comparer à] dans [Configurer une visualisation de zone de travail de Parcours &#x200B;](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#configure-visualization-settings) afin d’afficher le pourcentage de changement entre les périodes sur chaque nœud, flèche et abandon du parcours. |
