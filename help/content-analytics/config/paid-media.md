@@ -3,9 +3,8 @@ title: Configuration automatique des médias payants Content Analytics
 description: Découvrez la configuration automatique des jeux de données, de la connexion, des vues de données, etc.
 solution: Customer Journey Analytics
 feature: Content Analytics
-hold: true
 role: Admin
-source-git-commit: 2a788aa5cf007a434e5b40c65aea0c887bc357e3
+source-git-commit: 7dc0d254bfdf55d9b0b9a13587292b4dab59af30
 workflow-type: tm+mt
 source-wordcount: '2545'
 ht-degree: 2%
@@ -207,6 +206,6 @@ L’exemple utilise un identifiant de campagne, mais la même approche peut util
 
 Si vous souhaitez générer des rapports et des analyses sur les performances des ressources liées à vos investissements dans les médias achetés, pensez à ajouter un paramètre UTM de ressource spécifique dans la configuration des médias achetés de votre réseau publicitaire. Par exemple, en plus des paramètres dynamiques standard tels que s`ite_source_name`, `campaign.id`, `adset.id` ou `placement`, ajoutez des paramètres personnalisés statiques tels que `aca_asset_id=999999`.
 
-Ce paramètre personnalisé est ajouté à l’URL de votre page de destination. Par exemple : https://www.example.com/home.html?utm_content=120241705099850539%2Caca_asset_id%3D9999999%2Caca_placement%3DFacebook_Desktop_Feed&aca_id_2=8888888&utm_medium=paid&utm_source=fb&utm_id=120241705099830539&utm_term=120241705099840539&utm_campaign=120241705099830539
+Ce paramètre personnalisé est ajouté à l’URL de votre page de destination. Par exemple : https://www.example.com/home.html?utm_content=120241705099850539%2Caca_asset_id%3D9999999%2Caca_placement%3DFacebook_Desktop_Feed&amp;aca_id_2=8888888&amp;utm_medium=paid&amp;utm_source=fb&amp;utm_id=120241705099830539&amp;utm_term=120241705099840539&amp;utm_campaign=120241705099830539
 
 Vous disposez désormais d’une relation entre une ressource sur une page et vos données de médias achetés. Utilisez cette relation dans Analysis Workspace pour voir comment les métadonnées des ressources Content Analytics (par exemple, **[!UICONTROL Couleurs de premier plan des ressources]**) contribuent au succès des campagnes de médias achetés.
