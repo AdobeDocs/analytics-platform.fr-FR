@@ -689,7 +689,7 @@ Consultez ci-dessous des exemples de configuration du connecteur source Google A
 
 >[!ENDTABS]
 
-Consultez Présentation des connecteurs Source [](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/home) pour plus d’informations sur les connecteurs source pris en charge pour le canal média payant.
+Consultez Présentation des connecteurs Source [&#128279;](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/home) pour plus d’informations sur les connecteurs source pris en charge pour le canal média payant.
 
 Après avoir configuré les connecteurs source dans Experience Platform, sélectionnez ![Actualiser](/help/assets/icons/Refresh.svg) **[!UICONTROL Actualiser]** pour mettre à jour la liste des connecteurs source.
 
