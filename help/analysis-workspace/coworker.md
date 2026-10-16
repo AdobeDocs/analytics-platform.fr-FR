@@ -50,7 +50,7 @@ L’expérience intégrée au produit pour Coworker est disponible dans un panne
 
 ### Choisir entre l’application Coworker dans Workspace et l’application Coworker
 
-L’expérience intégrée au produit pour Coworker possède de nombreuses fonctionnalités similaires à celles de l’application [](https://experienceleague.adobe.com/en/docs/coworker/content/chat/use-cases/data-insights/analytics-chat), y compris les compétences auxquelles vous avez accès. Cependant, il existe des différences importantes qui déterminent dans quels cas vous pouvez utiliser l’un plutôt que l’autre :
+L’expérience intégrée au produit pour Coworker possède de nombreuses fonctionnalités similaires à celles de l’application [&#128279;](https://experienceleague.adobe.com/en/docs/coworker/content/chat/use-cases/data-insights/analytics-chat), y compris les compétences auxquelles vous avez accès. Cependant, il existe des différences importantes qui déterminent dans quels cas vous pouvez utiliser l’un plutôt que l’autre :
 
 | | Expérience intégrée au produit pour Coworker | Application de collègue |
 | --- | --- | --- |
