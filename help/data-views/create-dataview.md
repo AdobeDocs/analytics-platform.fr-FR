@@ -41,9 +41,9 @@ topic_v2:
     internal-label: Governance
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
 workflow-type: tm+mt
-source-wordcount: '3122'
+source-wordcount: '3165'
 ht-degree: 77%
 ---
 # Création ou modification d’une vue de données
@@ -53,7 +53,7 @@ La création dʼune vue de données implique soit la création de mesures et de 
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Créer ou modifier une vue de données](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/data-views/overview-of-configuring-data-views-for-cja){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Créer ou modifier une vue de données](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/data-views/overview-of-configuring-data-views-for-cja){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 
@@ -117,9 +117,20 @@ Cette section est visible uniquement pour les administrateurs auxquels Journey O
 {style="table-layout:auto"}
 
 
-### Paramètres de l’IA
+### Paramètres de l’IA {#ai-settings}
 
-Sélectionnez **[!UICONTROL Activer pour Data Insights Agent]** pour activer la vue de données pour le [Data Insights Agent](/help/data-analysis-ai.md). Le Data Insights Agent est un agent de conversation d’IA génératif accessible à partir de l’assistant d’IA dans Customer Journey Analytics. Il vous permet d’analyser rapidement vos données à l’aide d’invites textuelles. L’agent crée des visualisations pertinentes dans Analysis Workspace à l’aide des composants de votre vue de données et en utilisant vos données réelles.
+<!-- FOLLOW-UP: The Enable for Data Insights Agent setting is still in the UI, but Data Insights Agent has been replaced by Coworker. Confirm with the SME what this setting does now and whether it will be renamed or removed. This contextual help block was moved here from the retired data-analysis-ai.md page; confirm that the in-product help still resolves. -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-enable-data-insights-data-view"
+>title="Activer pour l’agent Data Insights"
+>abstract="Cette option permet d’utiliser cette vue de données avec l’agent Data Insights. Data Insights Agent est un agent de conversation d’IA génératif qui vous permet d’analyser rapidement vos données à l’aide d’invites textuelles. Il crée des visualisations pertinentes dans Analysis Workspace en utilisant les composants de votre vue de données et vos données réelles."
+
+<!-- markdownlint-enable MD034 -->
+
+Sélectionnez **[!UICONTROL Activer pour Data Insights Agent]** pour activer la vue de données pour Data Insights Agent. Le Data Insights Agent est un agent de conversation d’IA génératif qui vous permet d’analyser rapidement vos données à l’aide d’invites textuelles. L’agent crée des visualisations pertinentes dans Analysis Workspace à l’aide des composants de votre vue de données et en utilisant vos données réelles.
 
 
 ### Calendrier
@@ -161,13 +172,13 @@ Désigne le nom des conteneurs pour la vue de données. Les noms de conteneur so
 
 | Nom du conteneur | Nom d’affichage (par défaut) | Description |
 | --- | --- | --- |
-| globalAccount | [!BADGE Compte &#x200B;]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL &#x200B; Global &#x200B;]** | Le conteneur [!UICONTROL Compte global] inclut toutes les sessions et événements des comptes globaux au cours de la période indiquée. Si votre organisation utilise un autre terme, vous pouvez renommer le conteneur ici. |
+| globalAccount | [!BADGE Compte ]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL  Global ]** | Le conteneur [!UICONTROL Compte global] inclut toutes les sessions et événements des comptes globaux au cours de la période indiquée. Si votre organisation utilise un autre terme, vous pouvez renommer le conteneur ici. |
 | Personne | **[!UICONTROL Personne]** | Le conteneur [!UICONTROL Personne] inclut chaque session et événement pour les personnes au cours dʼune période indiquée. Si votre organisation utilise un autre terme (par exemple, « Visiteur » ou « Utilisateur »), vous pouvez renommer le conteneur ici. |
 | séance | **[!UICONTROL Session]** | Le conteneur [!UICONTROL Session] permet dʼidentifier les interactions de pages, les campagnes ou les conversions pour une session spécifique. Vous pouvez renommer ce conteneur en « Visite » ou tout autre terme de votre choix. |
-| opportunité | {type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Opportunity &#x200B;]** | Le conteneur [!UICONTROL Opportunité] inclut toutes les sessions et événements des opportunités au cours de la période indiquée. Si votre organisation utilise un autre terme, vous pouvez renommer le conteneur ici. |
-| buyGroup | {type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Groupe d&#39;achat &#x200B;]** | Le conteneur [!UICONTROL Groupe d’achat] inclut toutes les sessions et événements des groupes d’achat au cours de la période indiquée. Si votre organisation utilise un autre terme, vous pouvez renommer le conteneur ici. |
+| opportunité | [!BADGE ]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Opportunity ]** | Le conteneur [!UICONTROL Opportunité] inclut toutes les sessions et événements des opportunités au cours de la période indiquée. Si votre organisation utilise un autre terme, vous pouvez renommer le conteneur ici. |
+| buyGroup | [!BADGE ]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Groupe d&#39;achat ]** | Le conteneur [!UICONTROL Groupe d’achat] inclut toutes les sessions et événements des groupes d’achat au cours de la période indiquée. Si votre organisation utilise un autre terme, vous pouvez renommer le conteneur ici. |
 | événement | **[!UICONTROL Événement]** | Le conteneur [!UICONTROL Événement] définit des événements individuels dans un jeu de données. Si votre organisation utilise un autre terme (par exemple, « Hits » ou « Pages vues »), vous pouvez renommer le conteneur ici. |
-| account | {type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Account &#x200B;]** | Le conteneur [!UICONTROL Compte] inclut toutes les sessions et événements des comptes au cours de la période indiquée. Si votre organisation utilise un autre terme, vous pouvez renommer le conteneur ici. |
+| account | [!BADGE ]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Account ]** | Le conteneur [!UICONTROL Compte] inclut toutes les sessions et événements des comptes au cours de la période indiquée. Si votre organisation utilise un autre terme, vous pouvez renommer le conteneur ici. |
 
 Pour renommer des conteneurs système :
 
@@ -233,7 +244,7 @@ Vous pouvez ensuite définir les composants d’une vue de données et créer ai
 
    Vous pouvez voir la [!UICONTROL connexion] en haut à gauche qui contient les jeux de données et ses [!UICONTROL champs de schéma] en dessous.  Toutes les vues de données incluent des composants standard tels que les événements, les personnes, les mesures de session et les dimensions temporelles.<ul><li>Lorsque vous définissez [conteneurs personnalisés](#containers-1), les mesures sont automatiquement ajoutées sous la forme ![ShowAllLayer](/help/assets/icons/ShowAllLayer.svg) **[!UICONTROL _nom de conteneur personnalisé&#x200B;_Occurrences]**.</li><li>Le système applique par défaut le filtre **[!UICONTROL n’est pas obsolète]** afin que seuls les champs de schéma non obsolètes apparaissent.</li></ul>
 
-1. Recherchez un champ de schéma à l’aide de l’![icône Rechercher](/help/assets/icons/Search.svg) **[!UICONTROL Rechercher des champs de schéma]**, ou bien recherchez un champ en accédant à l’une des collections de jeux de données, comme ![Dossier](/help/assets/icons/Folder.svg) **[!UICONTROL Jeux de données d’événement]** ou ![Dossier](/help/assets/icons/Folder.svg) **[!UICONTROL Jeux de données de recherche]**. Pour les jeux de données d’événement, des collections distinctes pour ![Dossier](/help/assets/icons/Folder.svg) **[!UICONTROL Champs XDM]** et ![Dossier](/help/assets/icons/Folder.svg) **[!UICONTROL Champs ad hoc et relationnels]** sont disponibles.<br/>Vous pouvez également créer un champ dérivé à l’aide de ![Icône de données](/help/assets/icons/Data.svg)Créer un champ dérivé&#x200B;**&#x200B;**. Voir [Champs dérivés](./derived-fields/derived-fields.md) pour plus d’informations.
+1. Recherchez un champ de schéma à l’aide de l’![icône Rechercher](/help/assets/icons/Search.svg) **[!UICONTROL Rechercher des champs de schéma]**, ou bien recherchez un champ en accédant à l’une des collections de jeux de données, comme ![Dossier](/help/assets/icons/Folder.svg) **[!UICONTROL Jeux de données d’événement]** ou ![Dossier](/help/assets/icons/Folder.svg) **[!UICONTROL Jeux de données de recherche]**. Pour les jeux de données d’événement, des collections distinctes pour ![Dossier](/help/assets/icons/Folder.svg) **[!UICONTROL Champs XDM]** et ![Dossier](/help/assets/icons/Folder.svg) **[!UICONTROL Champs ad hoc et relationnels]** sont disponibles.<br/>Vous pouvez également créer un champ dérivé à l’aide de ![Icône de données](/help/assets/icons/Data.svg)Créer un champ dérivé&#x200B;****. Voir [Champs dérivés](./derived-fields/derived-fields.md) pour plus d’informations.
 
 1. Une fois que vous avez trouvé votre champ de schéma spécifique ou défini votre champ dérivé, faites glisser ce champ, par exemple ![Icône de gestion](/help/assets/icons/DragHandle.svg) **[!UICONTROL Nom de page]**, du rail de gauche vers la section **[!UICONTROL Mesures]** ou **[!UICONTROL Dimensions]** sous **[!UICONTROL Composants inclus]**.
 Vous pouvez faire glisser plusieurs fois le même champ de schéma vers les sections des dimensions ou des mesures et configurer la même dimension ou mesure de différentes manières. Par exemple, dans le champ pageName , créez des dimensions `Product Pages` et `Error pages` à l’aide de différents [paramètres de composant](component-settings/overview.md) sur la droite.
@@ -321,7 +332,7 @@ Vous pouvez filtrer ![icône Filtrer](/help/assets/icons/Filter.svg) les champs 
 La section **[!UICONTROL Composants inclus]** contient la liste des **[!UICONTROL Mesures]** et **[!UICONTROL Dimensions]** que vous configurez pour la vue de données.
 
 * Pour rechercher des composants, utilisez ![Rechercher](/help/assets/icons/Search.svg) **[!UICONTROL _Rechercher des composants_]**.
-* Pour filtrer les composants inclus répertoriés, sélectionnez ![Filtrer &#x200B;](/help/assets/icons/Filter.svg).
+* Pour filtrer les composants inclus répertoriés, sélectionnez ![Filtrer ](/help/assets/icons/Filter.svg).
 
   ![Boîte de dialogue de filtrage des composants inclus](assets/dataview_includedcomponents_filter.png)
 

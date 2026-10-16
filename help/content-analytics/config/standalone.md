@@ -43,7 +43,7 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
 workflow-type: tm+mt
 source-wordcount: '2631'
 ht-degree: 10%
@@ -75,9 +75,9 @@ Ce guide utilise plusieurs termes techniques, issus d’Experience Platform et d
 | **Sandbox** | Experience Platform fournit des [sandbox](https://experienceleague.adobe.com/fr/docs/experience-platform/sandbox/home) qui divisent une instance Experience Platform unique en environnements virtuels distincts pour favoriser le développement et l’évolution d’applications d’expérience digitale. Content Analytics utilise généralement le sandbox *de production*. |
 | **Connexion** | [Connexions](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-connections/overview) définissez les jeux de données Experience Platform à ingérer. Une connexion définit le lien entre votre jeu de données (où les données sont stockées dans AEP) et Customer Journey Analytics (où vous les analysez). Une connexion rend les données collectées disponibles pour la création de rapports. |
 | **Vue de données** | Une [vue de données](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dataviews/data-views) est un conteneur qui vous permet de déterminer comment interpréter les données d’une connexion. Une vue de données spécifie toutes les dimensions et mesures pour lesquelles vous pouvez créer des rapports. Une vue de données est semblable à une configuration qui détermine les lignes et colonnes disponibles que vous pouvez utiliser dans votre analyse. |
-| **Analysis Workspace** | [&#128279;](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/home) est une interface de navigateur par glisser-déposer que vous utilisez pour créer vos rapports et analyses Content Analytics. |
-| **Expérience** | Dans Content Analytics, une [expérience](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/content-analytics/content-analytics#terminology) fait référence à tout le contenu textuel d’une page web qui peut être capturé et analysé en fonction de l’URL de la page. |
-| **Ressource** | Dans Content Analytics, une [ressource](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/content-analytics/content-analytics#terminology) est un élément de contenu individuel et unique, comme une image. |
+| **Analysis Workspace** | [](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/home) est une interface de navigateur par glisser-déposer que vous utilisez pour créer vos rapports et analyses Content Analytics. |
+| **Expérience** | Dans Content Analytics, une [expérience](https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/content-analytics#terminology) fait référence à tout le contenu textuel d’une page web qui peut être capturé et analysé en fonction de l’URL de la page. |
+| **Ressource** | Dans Content Analytics, une [ressource](https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/content-analytics#terminology) est un élément de contenu individuel et unique, comme une image. |
 
 
 ## Présentation de la configuration
@@ -139,7 +139,7 @@ Vous devez être un administrateur de produit pour les produits et profils de pr
 
 Vous définissez l’accès administrateur de produit via l’Admin Console :
 
-1. Accédez à [&#128279;](https://adminconsole.adobe.com).
+1. Accédez à [](https://adminconsole.adobe.com).
 1. Sélectionnez **[!UICONTROL Produits]**.
 1. Sélectionnez le produit spécifique.
 1. Sélectionnez l’onglet **[!UICONTROL Administrateurs]**.
@@ -149,7 +149,7 @@ Vous définissez l’accès administrateur de produit via l’Admin Console :
 
 Vous définissez l’accès administrateur de profil de produit via Admin Console :
 
-1. Accédez à [&#128279;](https://adminconsole.adobe.com).
+1. Accédez à [](https://adminconsole.adobe.com).
 1. Sélectionnez **[!UICONTROL Produits]**.
 1. Sélectionnez le produit spécifique. Vérifiez que vous disposez déjà d’un accès d’administrateur de produit.
 1. Sélectionnez **[!UICONTROL Profils de produit]**.
@@ -206,7 +206,7 @@ Dans l’interface Autorisations , vous pouvez vérifier les rôles et les autor
 1. Dans l’écran de bienvenue, dans **[!UICONTROL Accès rapide]**, sélectionnez **[!UICONTROL Afficher tout]**.
 1. Activez l’épingle ![PinOn](/help/assets/icons/PinOn.svg) pour **[!UICONTROL Autorisations]** afin que **[!UICONTROL Autorisations]** soit disponible dans **[!UICONTROL Accès rapide]** pour une utilisation ultérieure.
 1. Sélectionnez **[!UICONTROL Autorisations]**.
-1. Sélectionnez ![&#x200B; Utilisateur &#x200B;](/help/assets/icons/User.svg) **[!UICONTROL Rôles]**.
+1. Sélectionnez ![ Utilisateur ](/help/assets/icons/User.svg) **[!UICONTROL Rôles]**.
 1. Sélectionnez le rôle spécifique à vérifier (par exemple, **[!UICONTROL Tous les accès de production par défaut]**). Sélectionnez **[!UICONTROL Afficher tout]** pour afficher toutes les autorisations.
 1. Dans l’écran **[!UICONTROL Détails]** :
    1. Vérifiez les **[!UICONTROL Ressources]** répertoriées dans **[!UICONTROL Autorisations]**.
@@ -216,7 +216,7 @@ Dans l’interface Autorisations , vous pouvez vérifier les rôles et les autor
    1. Pour ajouter une ressource manquante, sélectionnez **[!UICONTROL Nom de la ressource]** ![Ajouter](/help/assets/icons/Add.svg) dans le rail de gauche **[!UICONTROL Ressources]** > **[!UICONTROL Adobe Experience Platform]**.
    1. Pour ajouter une autorisation manquante, sélectionnez ![ChevronDown](/help/assets/icons/ChevronDown.svg) dans la ressource à laquelle il manque l’autorisation dans le panneau principal, puis sélectionnez l’autorisation manquante.
 
-      ![&#x200B; Interface des autorisations &#x200B;](/help/content-analytics/assets/aep-permissions-ui.png)
+      ![ Interface des autorisations ](/help/content-analytics/assets/aep-permissions-ui.png)
 
    Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer toute mise à jour.
 
@@ -242,7 +242,7 @@ Pour Content Analytics, vous devez vérifier si les autorisations de profil de p
   * Accès aux journaux d’audit
   * Partager les liens du projet avec tout le monde
   * Prévisions
-  * Assistant IA : connaissances du produit
+  * Assistant IA : <!-- FOLLOW-UP (waiting on PM): These two permissions haven't been updated in the product yet. Update when the PM confirms the Coworker permission name. --> de la connaissance des produits
   * Agent Data Insights
   * Légendes intelligentes
 
@@ -251,11 +251,11 @@ Pour Content Analytics, vous devez vérifier si les autorisations de profil de p
 
 Pour vérifier et mettre à jour ces autorisations pour Customer Journey Analytics :
 
-1. Accédez à [&#128279;](https://adminconsole.adobe.com).
+1. Accédez à [](https://adminconsole.adobe.com).
 1. Sélectionnez **[!UICONTROL Produits]**.
-1. Sélectionnez le produit **&#x200B;**.
+1. Sélectionnez le produit ****.
 1. Sélectionnez **[!UICONTROL Profils de produit]**.
-1. Sélectionnez le profil de produit configuré par défaut disponible pour Customer Journey Analytics. Par exemple : **&#x200B;**.
+1. Sélectionnez le profil de produit configuré par défaut disponible pour Customer Journey Analytics. Par exemple : ****.
 1. Dans l’écran du profil de produit, sélectionnez **[!UICONTROL Autorisations]**.
 1. Sélectionnez l’un des boutons ![Modifier](/help/assets/icons/Edit.svg) pour modifier les autorisations. Dans la boîte de dialogue **[!UICONTROL Modifier les autorisations pour Customer Journey Analytics]** :
 
@@ -334,4 +334,4 @@ Pour implémenter Content Analytics pour votre site web, vous devez publier la p
 
 ### Configurer un projet
 
-Configurez un projet dans Customer Journey Analytics pour créer vos [rapports et visualisations Content Analytics](/help/content-analytics/report/report.md). Vous pouvez également utiliser un modèle [&#128279;](/help/content-analytics/report/report.md#template) pour commencer.
+Configurez un projet dans Customer Journey Analytics pour créer vos [rapports et visualisations Content Analytics](/help/content-analytics/report/report.md). Vous pouvez également utiliser un modèle [](/help/content-analytics/report/report.md#template) pour commencer.
