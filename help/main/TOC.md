@@ -2,11 +2,12 @@
 user-guide-title: Guide de Customer Journey Analytics (parcours client)
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 137dba69c8827f3b67d5656760d7715437c58b73
+source-git-commit: 65d4115d4c292cff7e074d37a91563d369072ba5
 workflow-type: tm+mt
 source-wordcount: '1526'
 ht-degree: 88%
 ---
+
 # Guide d’Adobe Customer Journey Analytics {#using}
 
 + [Guide d’Adobe Customer Journey Analytics](../getting-started/cja-landing.md)
@@ -439,10 +440,10 @@ ht-degree: 88%
       + {hide-from-toc}[Préparer le mappage des colonnes](/help/components/exports/cja-data-feeds/df-column-mapping-prep.md)
       + {hide-from-toc}[Mapper les colonnes](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)
       + {hide-from-toc}[Créer des flux de données](/help/components/exports/cja-data-feeds/create-feed.md)
-      + {hide-from-toc}[&#x200B; Disponibilité des composants &#x200B;](/help/components/exports/cja-data-feeds/df-components.md)
+      + {hide-from-toc}[ Disponibilité des composants ](/help/components/exports/cja-data-feeds/df-components.md)
       + {hide-from-toc}[Segmentation dans les flux de données](/help/components/exports/cja-data-feeds/df-segmentation.md)
       + {hide-from-toc}[Appliquer des transformations de données](/help/components/exports/cja-data-feeds/df-data-transformations.md)
-      + {hide-from-toc}[&#x200B; Composants de sous-événement &#x200B;](/help/components/exports/cja-data-feeds/df-sub-event.md)
+      + {hide-from-toc}[ Composants de sous-événement ](/help/components/exports/cja-data-feeds/df-sub-event.md)
   + Dictionnaire de données {#data-dictionary}
     + [Vue d’ensemble](../components/data-dictionary/data-dictionary-overview.md)
     + [Afficher des informations sur les composants dans le dictionnaire de données](../components/data-dictionary/view-data-dictionary.md)
@@ -580,7 +581,7 @@ ht-degree: 88%
       + [Lier des lectures de session](/help/use-cases/third-party/quantum-metric/tie-session-replays.md)
       + [Utiliser des cartes thermiques](/help/use-cases/third-party/quantum-metric/heatmap.md)
       + [Ajouter des événements de friction](/help/use-cases/third-party/quantum-metric/friction-events.md)
-      + {hide-from-toc}[Connecteur &#x200B;](/help/use-cases/third-party/quantum-metric/source-connector.md)
+      + {hide-from-toc}[Connecteur ](/help/use-cases/third-party/quantum-metric/source-connector.md)
 
 + Labs {#labs}
   + [Guide d’utilisation de Labs](../labs/labs.md)
