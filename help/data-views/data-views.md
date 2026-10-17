@@ -37,7 +37,7 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
 workflow-type: tm+mt
 source-wordcount: '1124'
 ht-degree: 88%
@@ -91,7 +91,7 @@ Les vues de données vous permettent de modifier directement les paramètres des
 
 * Vous pouvez renommer vos conteneurs dans une vue de données et faire en sorte que ces conteneurs renommés apparaissent dans tout projet Workspace basé sur cette vue de données.
 
-* Vous pouvez activer ou désactiver le Data Insights Agent pour une vue de données.
+* Vous pouvez activer ou désactiver le Data Insights Agent pour une vue de données. <!-- FOLLOW-UP: Data Insights Agent has been replaced by Coworker, but this setting is still in the UI. Confirm with the SME. -->
 
 ## Conditions préalables des vues de données {#prerequisites}
 
