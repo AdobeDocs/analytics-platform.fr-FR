@@ -49,14 +49,14 @@ topic_v2:
     internal-label: Implementation
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 8c27da8181de41a626da4b5bd86fdd945b5bff3a
+source-git-commit: 780ed7fc4794de92e096b35383a5f7a8600f8870
 workflow-type: tm+mt
-source-wordcount: '965'
-ht-degree: 24%
+source-wordcount: '1044'
+ht-degree: 22%
 ---
 # Notes de mise à jour actuelles de Customer Journey Analytics (octobre 2026)
 
-**Dernière mise à jour** : 7 octobre 2026
+**Dernière mise à jour** : 19 octobre 2026
 
 Ces notes de mise à jour couvrent la période de publication d’octobre 2026. Les mises à jour d’Adobe Customer Journey Analytics suivent un [modèle de diffusion continue](releases.md) qui permet une approche plus évolutive et plus progressive du déploiement des fonctionnalités. Par conséquent, ces notes sont mises à jour plusieurs fois par mois. Veuillez les vérifier régulièrement.
 
@@ -66,6 +66,7 @@ Ces notes de mise à jour couvrent la période de publication d’octobre 2026. 
 | -----------|-----------|-----------|
 | **Autorisation en lecture seule pour le serveur MCP Customer Journey Analytics**<br/> Les administrateurs peuvent désormais donner aux utilisateurs un accès en lecture seule au serveur MCP Customer Journey Analytics. Le nouvel élément d’autorisation [!UICONTROL Accès en lecture seule MCP] donne aux utilisateurs et utilisatrices l’accès à tous les outils en lecture seule, sans leur permettre de créer des projets, des segments ou des mesures calculées.<p>L’élément d’autorisation [!UICONTROL Accès MCP] existant est renommé [!UICONTROL Accès complet MCP]. Les utilisateurs et utilisatrices bénéficiant de cette autorisation conservent l’accès à tous les outils, y compris ceux qui créent, modifient ou suppriment des composants.</p><p>Pour plus d’informations, consultez [Configuration des autorisations](https://developer.adobe.com/analytics-mcp/docs/guides/permissions) dans la documentation du serveur MCP Customer Journey Analytics.</p> | | 6 Octobre 2026 |
 | **Analysez les expériences client LLM dans Analysis Workspace avec les informations de conversation**<br/> Customer Journey Analytics apporte désormais des données de conversation non structurées dans Analysis Workspace, ce qui vous permet de créer des rapports sur les expériences de navigation et d’achat basées sur LLM qui se produisent dans vos propriétés.<p>Grâce à cette fonctionnalité, vous pouvez :</p><ul><li>Collectez les invites, les réponses et les métadonnées de l’agent à partir des agents de conversation (les agents personnalisés de votre organisation ou Adobe Brand Concierge) via Web SDK.</li><li>Analysez l’intention, le ton et le sentiment afin de comprendre ce que les clients demandent, comment votre agent répond et ce que vos clients pensent de leurs interactions.</li><li>Analysez à grande échelle à l’aide de votre schéma, de vos jeux de données et de vos vues de données existants, puis obtenez des informations sur les surfaces dans Analysis Workspace.</li><li>Connectez les conversations aux résultats en liant les interactions des agents à vos parcours clients généraux, afin de pouvoir mesurer l’impact réel sur la conversion, l’engagement, etc.</li></ul><p>Auparavant, les expériences basées sur LLM étaient difficiles à mesurer et presque impossibles à connecter à vos parcours clients existants.</p><p>Pour plus d’informations, voir [Informations sur les conversations](/help/conversation-insights/overview.md).</p> | | 8 octobre 2026<p>(Initialement prévu pour le 22 septembre 2026)</p> |
+| **Zone de travail de Parcours : Comparer les pourcentages**<br/> Lors de la comparaison d’un parcours à une période précédente, vous pouvez désormais activer la nouvelle option [!UICONTROL Comparer les pourcentages] pour afficher le changement en points de pourcentage pour chaque nœud, flèche et abandon. Cela s’avère utile pour la comparaison des taux, tels que la rétention entre les nœuds ou les abandons, car la comparaison reste précise même lorsque le nombre de personnes dans le parcours diffère entre les périodes.<p>Pour plus d’informations, voir « Comparer les pourcentages » dans [Configurer une visualisation de zone de travail de Parcours ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#configure-visualization-settings).</p> | | 19 Octobre 2026 |
 | **Générer automatiquement des descriptions de composant** <br/>Vous pouvez désormais générer automatiquement des descriptions pour les dimensions, les mesures, les mesures calculées, les segments et les périodes. Cela permet aux utilisateurs et utilisatrices de Workspace de savoir quels composants utiliser, en particulier dans les organisations qui disposent de bibliothèques de composants volumineuses. <p>Vous pouvez générer une description pour un seul composant ou générer des descriptions pour de nombreux composants en même temps.</p> <p>(Lien vers la documentation à suivre.)<!--For more information, see [Automatically generate descriptions](/help/components/add-component-descriptions.md#automatically-generate-descriptions).--></p> | | 28 Octobre 2026 |
 | **Intégration de**<br/> connectez Adobe Brand Visibility aux données Customer Journey Analytics de votre entreprise afin de mesurer la manière dont les découvertes pilotées par l’IA se traduisent par un engagement réel sur le site web et des résultats commerciaux.<p>(Lien vers la documentation à suivre.)</p> | | Octobre 2026 |
 | L’expérience **intégrée au produit pour les collaborateurs**<br/> collègues est désormais disponible dans un panneau de conversation dans Analysis Workspace. Un collègue utilise le projet que vous avez ouvert comme contexte, de sorte que vous pouvez poser des questions sur votre analyse sans expliquer ce que le projet contient.<p>Grâce à l’expérience intégrée au produit pour Coworker, vous pouvez :</p><ul><li>Résumez le projet ouvert, recherchez des informations et exécutez une analyse des causes premières.</li><li>Créez et modifiez le projet avec des invites en langage naturel. Par exemple, vous pouvez ajouter des panneaux et des tableaux, répartir les données, modifier les types de visualisation et les périodes, et créer des segments.</li></ul><p>(Mises à jour de la documentation à suivre.)<!-- For more information, see [Use the in-product experience for Coworker](/help/analysis-workspace/coworker.md). --></p> | 22 octobre 2026 (initialement prévu pour le 15 octobre 2026) | À confirmer |
@@ -73,7 +74,7 @@ Ces notes de mise à jour couvrent la période de publication d’octobre 2026. 
 
 ### Correctifs dans Customer Journey Analytics
 
-**&#x200B;**&#x200B;: AN-495340, AN-494789, AN-493307, AN-468900
+**** : AN-495340, AN-494789, AN-493307, AN-468900
 **Composants** : AN-492523
 **Connexions** : AN-492236
 **Content Analytics** :
@@ -82,7 +83,7 @@ Ces notes de mise à jour couvrent la période de publication d’octobre 2026. 
 **Vues de données** : AN-492093, AN-467770, AN-455367, AN-444467
 **Ingestion de données** : AN-496439, AN-495339, AN-493456, AN-491984, AN-490515, AN-490479, AN-470065
 **Mise en œuvre** :
-**&#x200B;**&#x200B;: AN-496602, AN-494224, AN-493737, AN-493508, AN-493505, AN-492806, AN-468981, AN-454376
+**** : AN-496602, AN-494224, AN-493737, AN-493508, AN-493505, AN-492806, AN-468981, AN-454376
 **Reporting** : AN-495661, AN-493562, AN-487058, AN-478768
 **Segmentation** :
 **Rapports planifiés** : AN-491103, AN-468049
@@ -102,6 +103,6 @@ Ces notes de mise à jour couvrent la période de publication d’octobre 2026. 
 >* [Notes de mise à jour précédentes de Customer Journey Analytics pour 2026](/help/release-notes/2026.md)
 >* [Notes de mise à jour d’Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=fr)
 >* [Notes de mise à jour du module complémentaire Streaming Media Collection](https://experienceleague.adobe.com/docs/media-analytics/using/additional-resources/release-notes.html?lang=fr)
->* [Notes de mise à jour de &#x200B;](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=fr)
->* [Mises à jour de la documentation de &#x200B;](/help/release-notes/doc-changes.md)
+>* [Notes de mise à jour de ](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=fr)
+>* [Mises à jour de la documentation de ](/help/release-notes/doc-changes.md)
 
