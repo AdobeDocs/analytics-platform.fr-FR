@@ -39,9 +39,9 @@ topic_v2:
     internal-label: Experimentation
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
     internal-label: Governance
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 6283ecbeab12a19fd5b7229dff772afaaedf3296
 workflow-type: tm+mt
-source-wordcount: '4127'
+source-wordcount: '4133'
 ht-degree: 48%
 ---
 # Paramètres de composant {#component-settings}
@@ -51,7 +51,7 @@ ht-degree: 48%
 >[!CONTEXTUALHELP]
 >id="dataview_component_settings"
 >title="Paramètres de composant"
->abstract="Affichez et configurez le nom, la description et d’autres paramètres associés à un composant. Cochez cette case pour masquer ce composant aux utilisateurs et utilisatrices ne faisant pas partie de l’équipe d’administration dans les rapports. Les administrateurs et les administratrices peuvent toujours accéder au composant en sélectionnant **[!UICONTROL Afficher tous les composants]** dans un projet Workspace."
+>abstract="Affichez et configurez le nom, la description et d’autres paramètres associés à un composant. Cochez cette case pour masquer ce composant aux utilisateurs non-administrateurs dans l’interface d’Analysis Workspace. Les administrateurs et les administratrices peuvent toujours accéder au composant en sélectionnant **[!UICONTROL Afficher tous les composants]** dans un projet Workspace."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -72,7 +72,7 @@ Les informations suivantes décrivent les paramètres utilisés par un composant
 | Paramètre | Description/Cas d’utilisation |
 | --- | --- |
 | [!UICONTROL Type de composant] | Obligatoire. Permet de modifier un composant de Mesure en Dimension ou inversement. La modification de la sélection de cette liste déroulante déplace le composant vers sa zone de composants incluse respective. |
-| [!UICONTROL &#x200B; Nom du composant &#x200B;] | Obligatoire. Permet de définir le nom convivial qui apparaîtra dans Analysis Workspace. Vous pouvez renommer un composant pour lui donner un nom spécifique à la vue de données. |
+| [!UICONTROL  Nom du composant ] | Obligatoire. Permet de définir le nom convivial qui apparaîtra dans Analysis Workspace. Vous pouvez renommer un composant pour lui donner un nom spécifique à la vue de données. |
 | [!UICONTROL Description] | Facultatif, mais recommandé. Fournit des informations sur le composant à d’autres utilisateurs. |
 | [!UICONTROL Balises] | Facultatif. Permet de baliser le composant avec des balises personnalisées ou prêtes à l’emploi pour faciliter la recherche/le filtrage dans l’interface utilisateur d’Analysis Workspace. |
 | [!UICONTROL Libellés de contexte] | Facultatif. Menu déroulant des libellés [contextuels](#context-labels) définis par le système disponibles pouvant être appliqués à un composant. |
@@ -83,7 +83,7 @@ Les informations suivantes décrivent les paramètres utilisés par un composant
 | [!UICONTROL ID du composant] | Obligatoire. Lʼ[API Customer Journey Analytics](https://www.adobe.io/cja-apis/docs) utilise ce champ pour référencer le composant. Chaque composant d’une vue de données doit être unique. Adobe génère automatiquement un identifiant pour chaque composant ; vous pouvez toutefois cliquer sur l’icône de modification et modifier l’identifiant du composant. La modification de cet identifiant de composant rompt tous les projets Workspace existants qui contiennent ce composant. Bien que chaque composant ait besoin d’un ID unique dans une seule vue de données, vous pouvez utiliser le même ID de composant dans d’autres vues de données. Si vous utilisez le même ID de composant dans d’autres vues de données, vous pouvez rendre les projets Workspace compatibles entre les vues de données. <br/>Pour les composants basés sur un profil et une recherche, l’ID du composant comporte un préfixe d’ID basé sur l’ID du jeu de données (par exemple : `642b28fcc1f0ee1c074265a0.person.name.firstName`). Lorsque vous souhaitez réutiliser un composant basé sur un profil ou une recherche, comme `person.name.firstName`, dans votre projet Workspace, et configurer ce composant dans différentes vues de données, assurez-vous de renommer l’ID de composant de manière unique (par exemple, `myUniqueID.person.name.firstName`) dans vos vues de données. |
 | [!UICONTROL Chemin d’accès] | Obligatoire. Champ non modifiable qui indique le chemin de schéma dʼoù provient le composant |
 | [!UICONTROL Libellés d’utilisation des données] | Tout libellé d’utilisation des données attribué à ce composant dans Adobe Experience Platform. [En savoir plus](/help/data-views/data-governance.md). |
-| [!UICONTROL Masquer le composant dans le reporting] | Permet de traiter le composant en dehors de la vue de données pour les non-administrateurs. Les administrateurs peuvent toujours y accéder en cliquant sur [!UICONTROL Afficher tous les composants] dans un projet Analysis Workspace. |
+| [!UICONTROL Masquer le composant dans le reporting] | Empêche les utilisateurs non-administrateurs d’accéder au composant dans Analysis Workspace. Les administrateurs peuvent toujours y accéder en cliquant sur [!UICONTROL Afficher tous les composants]. Ce paramètre s’applique uniquement à l’interface d’Analysis Workspace et ne limite pas l’accès via les [API CJA](https://developer.adobe.com/cja-apis/docs/). |
 
 {style="table-layout:auto"}
 
@@ -91,7 +91,7 @@ Les informations suivantes décrivent les paramètres utilisés par un composant
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Paramètres du type de composant](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/data-views/component-type-settings-in-data-views){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Paramètres du type de composant](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/data-views/component-type-settings-in-data-views){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 
@@ -106,9 +106,9 @@ Les libellés de contexte fonctionnent au niveau du composant (dimension ou mesu
 
 Pour des raisons de commodité, les libellés de contexte par défaut intelligents sont appliqués automatiquement aux composants en fonction des champs avec un chemin XDM spécifique. Par exemple, le libellé de contexte **[!UICONTROL Commerce : Catégorie de produits]** est automatiquement appliqué à une dimension **[!UICONTROL Nom de la catégorie]** basée sur le chemin d’accès au schéma `productListItems.productCategories.categoryName`. Vous pouvez toutefois déplacer le libellé de contexte vers un autre composant sans problème.
 
-Pour rationaliser les modèles de projet fournis par Adobe, plusieurs intégrations (telles que Journey Optimizer, Content Analytics, etc.) configurent des vues de données dans lesquelles les composants prêts à l’emploi sont construits d’une manière spécifique. Les libellés de contexte appropriés sont automatiquement appliqués. Là encore, vous pouvez simplement déplacer l’un de ces libellés de contexte vers d’autres composants créés dans la vue de données et votre composant personnalisé est utilisé à la place.
+Pour rationaliser les modèles de projet fournis par Adobe, plusieurs intégrations (telles que Journey Optimizer, Content Analytics, etc.) configurent des vues de données et ajoutent des libellés de contexte aux composants préconstruits. Vous pouvez déplacer l’un de ces libellés de contexte vers d’autres composants créés dans la vue de données afin que votre composant personnalisé soit utilisé à la place.
 
-Les libellés de contexte sont également pertinents pour la divulgation des modèles de projet. Les modèles de projet forment rapidement la base de création de rapports pour plusieurs cas d’utilisation spécifiques différents. Cependant, tous les modèles n’ont pas de sens pour toutes les vues de données et vous ne souhaitez pas afficher les modèles non applicables. Les libellés de contexte sont utilisés pour afficher les modèles en fonction de l’inclusion ou non des libellés de contexte dans la vue de données sélectionnée.  Vous pouvez simplement ajouter d’autres libellés de contexte à votre vue de données (composants) pour que d’autres modèles soient disponibles. Vous pouvez également supprimer les libellés de contexte pour masquer des modèles spécifiques.
+Les libellés de contexte sont également pertinents pour la divulgation des modèles de projet. Les modèles de projet forment rapidement la base de création de rapports pour plusieurs cas d’utilisation spécifiques différents. Cependant, tous les modèles ne s’appliquent pas à toutes les vues de données et vous ne souhaitez pas afficher les modèles non applicables. Les libellés de contexte sont utilisés pour afficher les modèles en fonction de l’inclusion ou non des libellés de contexte dans la vue de données sélectionnée.  Vous pouvez ajouter d’autres libellés de contexte à votre vue de données (composants) afin que d’autres modèles soient disponibles. Vous pouvez également supprimer les libellés de contexte pour masquer des modèles spécifiques.
 
 >[!NOTE]
 >
@@ -127,11 +127,11 @@ Les avantages des libellés de contexte sont les suivants :
 
 Des libellés de contexte peuvent être requis dans les cas suivants :
 
-* Pour définir un ensemble de composants, vous pouvez utiliser dans les rapports d’expérience à l’aide du [panneau Expérimentation](/help/analysis-workspace/c-panels/experimentation.md) dans les projets Analysis Workspace.
+* Pour définir un ensemble de composants que vous pouvez utiliser dans les rapports d’expérience à l’aide du [panneau Expérimentation](/help/analysis-workspace/c-panels/experimentation.md) dans les projets Analysis Workspace.
 
   Pour plus d’informations, voir [Intégrer à Journey Optimizer](/help/integrations/ajo.md#data-view) et [Rapports Target](/help/integrations/at.md).
 
-* Pour définir un ensemble de composants, vous pouvez utiliser dans la visualisation [Carte](/help/analysis-workspace/visualizations/map.md) des projets Analysis Workspace.
+* Pour définir un ensemble de composants, vous pouvez utiliser la visualisation [Carte](/help/analysis-workspace/visualizations/map.md) dans les projets Analysis Workspace.
 
   Pour plus d’informations, voir [Ajouter des libellés de contexte dans les vues de données](/help/analysis-workspace/visualizations/map.md#add-context-labels-in-data-views) dans [Mapper](/help/analysis-workspace/visualizations/map.md).
 
@@ -187,19 +187,19 @@ Les groupes de libellés de contexte suivants sont disponibles, chacun avec une 
 
 | Nom | Description |
 |------|-------------|
-| [Identifiant du contenu](https://experienceleague.adobe.com/fr/docs/media-analytics/using/reporting/dimensions/content) | Identifiant unique du contenu en cours de lecture. Active le bouton radio **[!UICONTROL ID de contenu]** dans le panneau [Audience moyenne par minute de média](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
-| [Durée du contenu](https://experienceleague.adobe.com/fr/docs/media-analytics/using/reporting/metrics/content-time-spent) | Durée de visionnage du contenu, hors publicités. alimente le paramètre avancé **[!UICONTROL Temps passé sur le contenu]** dans le panneau [Audience moyenne par minute de média](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
-| [Épisode](https://experienceleague.adobe.com/fr/docs/media-analytics/using/reporting/dimensions/episode) | Numéro d’épisode dans une série. Active le filtrage par épisode dans le panneau [&#x200B; Audience moyenne par minute de média &#x200B;](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
+| [Identifiant du contenu](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/content) | Identifiant unique du contenu en cours de lecture. Active le bouton radio **[!UICONTROL ID de contenu]** dans le panneau [Audience moyenne par minute de média](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
+| [Durée du contenu](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/metrics/content-time-spent) | Durée de visionnage du contenu, hors publicités. alimente le paramètre avancé **[!UICONTROL Temps passé sur le contenu]** dans le panneau [Audience moyenne par minute de média](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
+| [Épisode](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/episode) | Numéro d’épisode dans une série. Active le filtrage par épisode dans le panneau [ Audience moyenne par minute de média ](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
 | Type d’événement | Type d’événement multimédia, par exemple `media.play` ou `media.ping`. Obligatoire pour que Customer Journey Analytics calcule la mesure dérivée [Visionneuses simultanées de médias](/help/analysis-workspace/c-panels/media-concurrent-viewers.md). |
-| [Durée des médias](https://experienceleague.adobe.com/fr/docs/media-analytics/using/reporting/metrics/media-time-spent) | Durée totale incluant le contenu, les publicités, la mise en mémoire tampon et la mise en pause. alimente le panneau [Temps de lecture de média](/help/analysis-workspace/c-panels/media-playback-time-spent.md) et le paramètre avancé **[!UICONTROL Temps de média]** dans le panneau [Audience moyenne par minute de média](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
-| [&#x200B; Saison &#x200B;](https://experienceleague.adobe.com/fr/docs/media-analytics/using/reporting/dimensions/season) | Numéro de saison dans une série. Active le filtrage par saison dans le panneau [&#x200B; Audience moyenne par minute de média &#x200B;](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
+| [Durée des médias](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/metrics/media-time-spent) | Durée totale incluant le contenu, les publicités, la mise en mémoire tampon et la mise en pause. alimente le panneau [Temps de lecture de média](/help/analysis-workspace/c-panels/media-playback-time-spent.md) et le paramètre avancé **[!UICONTROL Temps de média]** dans le panneau [Audience moyenne par minute de média](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
+| [ Saison ](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/season) | Numéro de saison dans une série. Active le filtrage par saison dans le panneau [ Audience moyenne par minute de média ](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
 | Secondes depuis le dernier appel | Temps en secondes depuis le ping de pulsation précédent. Obligatoire pour que Customer Journey Analytics calcule la mesure dérivée [Observateurs simultanés de médias](/help/analysis-workspace/c-panels/media-concurrent-viewers.md) qui identifie quand une session est toujours active. |
-| [Afficher](https://experienceleague.adobe.com/fr/docs/media-analytics/using/reporting/dimensions/show) | Nom du programme ou de la série. Active le filtrage par émission dans le panneau [Audience moyenne par minute de média](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
-| [Heure de commencer](https://experienceleague.adobe.com/fr/docs/media-analytics/using/reporting/metrics/time-to-start) | Durée entre la sélection du contenu et le début de la lecture. Inclus dans le calcul [&#x200B; Temps de lecture de média &#x200B;](/help/analysis-workspace/c-panels/media-playback-time-spent.md). |
-| [Durée totale de la mémoire tampon](https://experienceleague.adobe.com/fr/docs/media-analytics/using/reporting/metrics/total-buffer-duration) | Temps total passé en mémoire tampon au cours d’une session. Inclus dans le calcul [&#x200B; Temps de lecture de média &#x200B;](/help/analysis-workspace/c-panels/media-playback-time-spent.md). |
-| [Durée totale de la pause](https://experienceleague.adobe.com/fr/docs/media-analytics/using/reporting/metrics/total-pause-duration) | Temps total passé en pause au cours d’une session. Inclus dans le calcul [&#x200B; Temps de lecture de média &#x200B;](/help/analysis-workspace/c-panels/media-playback-time-spent.md). |
-| [Durée de la vidéo](https://experienceleague.adobe.com/fr/docs/media-analytics/using/reporting/dimensions/content-length) | Durée du contenu en secondes. Obligatoire pour le mode **[!UICONTROL Contenu spécifique]** dans le panneau [Audience moyenne par minute de média](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
-| [Nom de la vidéo](https://experienceleague.adobe.com/fr/docs/media-analytics/using/reporting/dimensions/content-name) | Nom d’affichage du contenu. Active le bouton radio **[!UICONTROL Nom de la vidéo]** dans le panneau [Audience moyenne par minute de média](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
+| [Afficher](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/show) | Nom du programme ou de la série. Active le filtrage par émission dans le panneau [Audience moyenne par minute de média](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
+| [Heure de commencer](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/metrics/time-to-start) | Durée entre la sélection du contenu et le début de la lecture. Inclus dans le calcul [ Temps de lecture de média ](/help/analysis-workspace/c-panels/media-playback-time-spent.md). |
+| [Durée totale de la mémoire tampon](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/metrics/total-buffer-duration) | Temps total passé en mémoire tampon au cours d’une session. Inclus dans le calcul [ Temps de lecture de média ](/help/analysis-workspace/c-panels/media-playback-time-spent.md). |
+| [Durée totale de la pause](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/metrics/total-pause-duration) | Temps total passé en pause au cours d’une session. Inclus dans le calcul [ Temps de lecture de média ](/help/analysis-workspace/c-panels/media-playback-time-spent.md). |
+| [Durée de la vidéo](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/content-length) | Durée du contenu en secondes. Obligatoire pour le mode **[!UICONTROL Contenu spécifique]** dans le panneau [Audience moyenne par minute de média](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
+| [Nom de la vidéo](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/content-name) | Nom d’affichage du contenu. Active le bouton radio **[!UICONTROL Nom de la vidéo]** dans le panneau [Audience moyenne par minute de média](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
 
 +++
 
@@ -442,7 +442,7 @@ Les groupes de libellés de contexte suivants sont disponibles, chacun avec une 
 | Mesure de déduplication (AJO) | Mesure de déduplication. |
 | Diffusions (obsolètes) | Nombre total de messages diffusés. |
 | Affichages (AJO) | Ce nombre affiche les messages AJO. Ce nombre inclut les ouvertures d’e-mail, les affichages web et les affichages dans les applications. Les plateformes mobiles ne signalent pas les affichages de SMS et de messages push, ils ne sont donc pas comptabilisés. |
-| Refusé (AJO) | Compte chaque fois que le message in-app est fermé par le SDK Adobe, quelle que soit l’action choisie par l’utilisatrice ou l’utilisateur final pour le fermer. |
+| Refusé (AJO) | Compte chaque fois que le message in-app est fermé par le SDK Adobe, quelle que soit l’action choisie par la personne finale pour le fermer. |
 | ID du test à blanc (AJO) | Identifiant unique pour le test à blanc |
 | Ouvertures d’e-mails par des robots (AJO) | Nombre total d’ouvertures d’e-mail effectuées par des robots. |
 | Ouvertures d’e-mail (AJO) | Nombre total d’ouvertures d’e-mails. |
