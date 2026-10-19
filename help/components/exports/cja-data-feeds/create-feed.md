@@ -29,7 +29,7 @@ topic_v2:
 source-git-commit: 77f5caf20d2bf391563de20a572ce100cdcca61e
 workflow-type: tm+mt
 source-wordcount: '3924'
-ht-degree: 12%
+ht-degree: 20%
 ---
 # Créer un flux de données
 
@@ -70,7 +70,7 @@ Avant de créer un flux de données, il est important de comprendre les bases de
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_frequency_granularity"
 >title="Fréquence et granularité"
->abstract="**Fréquence de diffusion** (flux actifs) : fréquence de diffusion du flux de données. Les diffusions horaires contiennent l’équivalent d’une heure de données ; les diffusions quotidiennes contiennent l’équivalent d’une journée de données. La période de recherche en amont et le délai de traitement peuvent également affecter les événements inclus.<p>**Granularité** (flux de renvoi) : intervalle de temps utilisé pour diviser les données historiques. Chaque bloc contient l’équivalent d’une journée de données et est diffusé le plus rapidement possible, et non une fois par jour. Ce champ est toujours défini sur Quotidien et ne peut pas être modifié.</p>"
+>abstract="**Fréquence de diffusion** (flux actifs) : fréquence de diffusion du flux de données. Les diffusions horaires contiennent l’équivalent d’une heure de données ; les diffusions quotidiennes contiennent l’équivalent d’une journée de données. La période de recherche en amont et le délai de traitement peuvent également affecter les événements inclus.<p>**Granularité** (flux de renvoi) : intervalle de temps utilisé pour diviser les données historiques. Chaque bloc contient l’équivalent d’une journée de données et est diffusé le plus rapidement possible, et non une fois par jour. Ce champ est toujours défini sur Quotidien et ne peut pas être modifié.</p>"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -166,7 +166,7 @@ Avant de créer un flux de données, il est important de comprendre les bases de
    | [!UICONTROL **Fréquence**]<br/> Disponible uniquement pour les flux en direct | Sélectionnez la fréquence d’envoi du flux de données. Les événements dont la date et l’heure se trouvent dans la fenêtre de fréquence sont inclus dans la diffusion du flux de données. Les champs [!UICONTROL **Période de recherche en amont**] et [!UICONTROL **Délai de traitement**] peuvent également affecter les événements inclus dans les données pour la fréquence de diffusion que vous choisissez.<p>Sélectionnez cette option pour inclure l’équivalent d’une heure de données ou d’un jour de données.</p><ul><li>**Quotidien** : les flux contiennent l’équivalent d’une journée complète de données, de minuit à minuit dans le fuseau horaire de la vue de données.</li><li>**Par heure** : les flux contiennent l’équivalent d’une heure de données.</li></ul> |
    | [!UICONTROL **Granularité**]<br/> Disponible uniquement pour les flux de renvoi | Intervalle de temps utilisé pour diviser les données historiques en blocs. Chaque bloc contient l’équivalent d’une journée complète de données, de minuit à minuit dans le fuseau horaire de la vue de données. <p>La granularité détermine la manière dont les données sont regroupées, et non la fréquence de diffusion. Les données de renvoi sont diffusées le plus rapidement possible, et non une fois par jour.</p><p>Ce champ est toujours défini sur [!UICONTROL **Quotidien**] et ne peut pas être modifié.</p> |
    | [!UICONTROL **Période de recherche en amont**] | Contrôle la période sur laquelle Customer Journey Analytics se base pour traiter la diffusion du flux de données. La valeur par défaut est de 30 jours.<p>La fenêtre de fréquence (heure ou jour) détermine les événements inclus dans le flux de données, tandis que la **période de recherche en amont** fournit le contexte historique nécessaire pour classer correctement ces événements.</p><p>La qualification des segments, la persistance des dimensions, le calcul de session et les transformations de champs dérivés peuvent tous affecter les événements inclus.</p> <p>Avant de configurer cette option, consultez les détails et les exemples décrits dans la section ci-dessous, [Comprendre la période de recherche en amont](#data-feed-lookback-date-range).</p> |
-   | [!UICONTROL **Délai de traitement**] | Sélectionnez le temps d’attente de Customer Journey Analytics avant de traiter un fichier de flux de données. Tous les événements arrivant tardivement pendant la période de retard du traitement sont inclus dans le flux de données. <p>Le délai de traitement minimal est de 2 heures, mais certains types de données nécessitent un délai plus long. Le délai que vous choisissez dépend des types de données de votre connexion, telles que les données de diffusion en continu, par lots, groupées, de recherche ou de profil.</p><p>Choisissez un délai suffisant pour que les données les plus lentes de votre connexion terminent le traitement. Si le délai est trop court, les données en cours de traitement ne sont pas incluses dans le fichier de flux de données.</p><p>Avant de configurer cette option, consultez les détails et les exemples décrits dans la section ci-dessous, [Comprendre le délai de traitement](#data-feed-processing-delay).</p> |
+   | [!UICONTROL **Délai de traitement**] | Sélectionnez le temps d’attente de Customer Journey Analytics avant de traiter un fichier de flux de données. Tous les événements tardifs qui arrivent pendant le délai de traitement sont inclus dans le flux de données. <p>Le délai de traitement minimal est de 2 heures, mais certains types de données nécessitent un délai plus long. Le délai que vous choisissez dépend des types de données de votre connexion, telles que les données de diffusion en continu, par lots, groupées, de recherche ou de profil.</p><p>Choisissez un délai suffisant pour que les données les plus lentes de votre connexion terminent le traitement. Si le délai est trop court, les données en cours de traitement ne sont pas incluses dans le fichier de flux de données.</p><p>Avant de configurer cette option, consultez les détails et les exemples décrits dans la section ci-dessous, [Comprendre le délai de traitement](#data-feed-processing-delay).</p> |
    | [!UICONTROL **Format de compression**] | Sélectionnez le format de compression des fichiers de sortie Parquet diffusés vers votre destination cloud. Choisissez l’un des formats suivants :<ul><li>[!UICONTROL **Snappy**] : compression et décompression rapides avec des tailles de fichier modérées. Largement pris en charge par les plateformes de données modernes telles que BigQuery, Snowflake et Apache Spark.</li><li>[!UICONTROL **GZip**] : largement compatible, y compris avec les outils qui ne prennent pas en charge Snappy en mode natif. Recommandé si votre pipeline en aval nécessite une norme de compression largement reconnue.</li><li>[!UICONTROL **Z Standard (Zstd)**] : Efficacité de compression élevée avec décompression rapide. Convient si la réduction de la taille du fichier est une priorité et que vos outils prennent en charge Zstd.</li></ul> |
 
 1. Sous l’onglet [!UICONTROL **Diffusion**], dans la section [!UICONTROL **Destination**], configurez la destination vers laquelle vous souhaitez envoyer les données.
@@ -290,17 +290,17 @@ Toutes les fonctions de champ dérivé qui font référence à des conteneurs ut
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_processing_delay"
 >title="Délai de traitement"
->abstract="Temps d’attente de Customer Journey Analytics avant de traiter un fichier de flux de données. Tous les événements arrivant tardivement pendant la période de retard du traitement sont inclus dans le flux de données.<p>Le délai de traitement minimal est de 2 heures, mais certains types de données nécessitent un délai plus long. Choisissez un délai suffisant pour que les données les plus lentes de votre connexion arrivent dans le lac de données Experience Platform et soient ingérées dans Customer Journey Analytics. Si le délai est trop court, les données en cours de traitement ne sont pas incluses dans le fichier de flux de données.</p><p>L’assemblage peut prendre jusqu’à 4 heures. Pour en tenir compte, ajoutez 4 heures au délai pour toutes les données regroupées.</p>"
+>abstract="Temps d’attente de Customer Journey Analytics avant de traiter un fichier de flux de données. Tous les événements tardifs qui arrivent pendant le délai de traitement sont inclus dans le flux de données.<p>Le délai de traitement minimal est de 2 heures, mais certains types de données nécessitent un délai plus long. Choisissez un délai suffisant pour que les données les plus lentes de votre connexion arrivent dans le lac de données Experience Platform et soient ingérées dans Customer Journey Analytics. Si le délai est trop court, les données en cours de traitement ne sont pas incluses dans le fichier de flux de données.</p><p>L’assemblage peut prendre jusqu’à 4 heures. Pour en tenir compte, ajoutez 4 heures au délai pour toutes les données regroupées.</p>"
 
 <!-- markdownlint-enable MD034 -->
 
 ### Fonctionnement du délai de traitement
 
-Le délai de traitement correspond au temps d’attente de Customer Journey Analytics avant de traiter un fichier de flux de données. Tous les événements arrivant tardivement pendant la période de retard du traitement sont inclus dans le flux de données.
+Le délai de traitement correspond au temps d’attente de Customer Journey Analytics avant de traiter un fichier de flux de données. Tous les événements tardifs qui arrivent pendant le délai de traitement sont inclus dans le flux de données.
 
 Les délais de traitement sont nécessaires pour différentes raisons, notamment pour tenir compte de la latence du pipeline, pour permettre aux implémentations mobiles de mettre en ligne les appareils hors ligne et d’envoyer des données, ou pour adapter les processus côté serveur de votre entreprise à la gestion des fichiers précédemment traités.
 
-Le délai de traitement minimal est de 2 heures, mais certains types de données nécessitent un délai plus long.
+Le délai de traitement minimal est de 2 heures, mais certains types de données nécessitent un délai plus long.
 
 >[!BEGINSHADEBOX]
 
@@ -356,7 +356,7 @@ Les délais d’ingestion des données varient selon que le groupement est activ
 
 Si votre connexion comprend plusieurs types de données, choisissez un délai qui prend en compte les données les plus lentes. Dans l&#39;exemple ci-dessous, cela fait environ 8 heures.
 
-L’assemblage peut ajouter jusqu’à 4 heures à l’ingestion dans Customer Journey Analytics. Pour en tenir compte, ajoutez 4 heures au délai pour toutes les données regroupées.
+L’assemblage peut ajouter jusqu’à 4 heures à l’ingestion dans Customer Journey Analytics. Pour en tenir compte, ajoutez 4 heures au délai pour toutes les données regroupées.
 
 | Source de données | Phase 1 : Arrivée dans le lac de données | Phase 2 : ingestion dans Customer Journey Analytics | Total |
 | --- | --- | --- | --- |

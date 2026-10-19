@@ -1,5 +1,5 @@
 ---
-title: Installer Platform Web SDK avec le package NPM
+title: Installer le SDK web Platform avec le package NPM
 description: Découvrez comment installer le SDK Web à l’aide du package NPM lors de la mise à niveau d’Adobe Analytics vers Customer Journey Analytics.
 role: Admin
 solution: Customer Journey Analytics
@@ -31,9 +31,9 @@ topic_v2:
 source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
 source-wordcount: '146'
-ht-degree: 47%
+ht-degree: 60%
 ---
-# Installer Platform Web SDK avec le package NPM {#upgrade-manual}
+# Installer le SDK web Platform avec le package NPM {#upgrade-manual}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -48,7 +48,7 @@ ht-degree: 47%
 
 Vous pouvez installer le SDK web Platform en installant le package NPM afin de contrôler le processus de création pour le SDK web JavaScript d’Adobe Experience Platform.
 
-1. Suivez les informations de la section [Option 3 : Utilisation du package NPM](https://experienceleague.adobe.com/fr/docs/experience-platform/edge/fundamentals/installing-the-sdk#option-3-using-the-npm-package) dans [Installation de Web SDK](https://experienceleague.adobe.com/fr/docs/experience-platform/edge/fundamentals/installing-the-sdk) dans le Guide de Web SDK.
+1. Suivez les informations de la section [Option 3 : Utilisation du package NPM](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/installing-the-sdk#option-3-using-the-npm-package) dans [Installation de Web SDK](https://experienceleague.adobe.com/fr/docs/experience-platform/edge/fundamentals/installing-the-sdk) dans le Guide de Web SDK.
 
 {{upgrade-final-step}}
 

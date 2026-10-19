@@ -39,7 +39,7 @@ topic_v2:
 source-git-commit: 4cdf80f86cea6a60e3b098c6efbaab0821a256c7
 workflow-type: tm+mt
 source-wordcount: '7372'
-ht-degree: 82%
+ht-degree: 83%
 ---
 # Configurer une visualisation Canevas de parcours
 
@@ -150,7 +150,7 @@ Voir [Vue d’ensemble de la zone de travail de parcours](/help/analysis-workspa
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_compare_percentages"
 >title="Comparer les pourcentages"
->abstract="Compare le pourcentage de changement sur chaque nœud, flèche et abandon dans le parcours entre la période actuelle et la période de comparaison sélectionnée, en fonction de la mesure principale. Lorsque cette option est désactivée, le pourcentage de la valeur brute s’affiche au lieu du pourcentage de modification."
+>abstract="Compare le pourcentage de modification de chaque nœud, flèche et abandon du parcours entre la période actuelle et la période de comparaison sélectionnée, en fonction de la mesure principale. Lorsque cette option est désactivée, le pourcentage de la valeur brute s’affiche au lieu du pourcentage de modification."
 
 <!-- markdownlint-enable MD034 -->
 

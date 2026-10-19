@@ -1,5 +1,5 @@
 ---
-title: Installation de Platform Web SDK avec alloy.js
+title: Installer le SDK web de Platform avec alloy.js
 description: Découvrez comment installer Platform Web SDK avec alloy.js.
 role: Admin
 solution: Customer Journey Analytics
@@ -31,9 +31,9 @@ topic_v2:
 source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
 source-wordcount: '211'
-ht-degree: 88%
+ht-degree: 95%
 ---
-# Installation de Platform Web SDK avec alloy.js {#upgrade-manual}
+# Installer le SDK web de Platform avec alloy.js {#upgrade-manual}
 
 <!-- markdownlint-disable MD034 -->
 
