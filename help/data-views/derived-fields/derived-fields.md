@@ -2114,8 +2114,8 @@ Vous souhaitez utiliser la valeur du paramètre `cid` d’une chaîne de requêt
 
 | [!DNL Page URL] |
 |----|
-| `https://www.adobe.com/?cid=abc123` |
-| `https://www.adobe.com/?em=email1234&cid=def123` |
+| `https://www.adobe.com/fr/?cid=abc123` |
+| `https://www.adobe.com/fr/?em=email1234&cid=def123` |
 | `https://www.adobe.com/landingpage?querystring1=test&test2=1234&cid=xyz123` |
 
 {style="table-layout:auto"}
