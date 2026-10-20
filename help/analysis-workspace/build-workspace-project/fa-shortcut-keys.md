@@ -8,22 +8,26 @@ role: User
 TQID: https://experienceleague.adobe.com/YWKW578JfolnUul64XLty6ehTVlsdsdTRAgHQG3wzbY
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: a8b1c240-f315-46e3-b813-f545c4279dd1
+    internal-label: Workspace basics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 18b3b42cafd437749041bc1d408e60e77b42e1fc
+    internal-label: Insights
+source-git-commit: 0932da0728fd386c366b3c9b3cec45115f4e7e4b
 workflow-type: tm+mt
-source-wordcount: 488
-ht-degree: 78%
-
+source-wordcount: '527'
+ht-degree: 72%
 ---
-
 # Touches de raccourci
 
 Des touches de raccourci (raccourcis clavier) sont disponibles dans Analysis Workspace pour une navigation, une analyse et une démocratisation optimales.
@@ -97,6 +101,10 @@ Notez que sur votre clavier, les symboles suivants peuvent être utilisés :
 | Redimensionner plus court | **[!UICONTROL *cmd + opt + shift + up *]** | **[!UICONTROL *ctrl + alt + maj + haut *]** |
 
 La largeur est redimensionnée par pas d’une colonne de grille et la hauteur est redimensionnée par pas d’une cellule de grille (environ 25 pixels).
+
+## Actions des colonnes du tableau
+
+Vous pouvez redimensionner et réorganiser les colonnes d’un tableau à l’aide du clavier. Ces actions ne sont pas des touches d’accès rapide globales. Elles sont disponibles lorsque le focus se trouve sur un séparateur de redimensionnement de colonne ou sur le bouton **[!UICONTROL Réorganiser]** d’en-tête de colonne. Voir [Navigation au clavier pour les colonnes du tableau](/help/analysis-workspace/workspace-faq/aw-accessibility.md#table-columns).
 
 ## Actions de démocratisation
 
