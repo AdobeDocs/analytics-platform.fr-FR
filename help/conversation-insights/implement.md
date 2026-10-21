@@ -477,7 +477,7 @@ Vous trouverez ci-dessous un exemple d’utilisation du groupe de champs Événe
     ]
   },
   "web": {
-    "webPageDetails": { "URL": "https://www.adobe.com", "name": "Home Page" }
+    "webPageDetails": { "URL": "https://www.adobe.com/fr", "name": "Home Page" }
   },
   "agenticExperience":{
     "conciergeID":"concierge-abc123",
@@ -517,7 +517,7 @@ Vous trouverez ci-dessous un exemple d’utilisation du groupe de champs Événe
     ]
   },
   "web": {
-    "webPageDetails": { "URL": "https://www.adobe.com", "name": "Home Page" }
+    "webPageDetails": { "URL": "https://www.adobe.com/fr", "name": "Home Page" }
   },
   "agenticExperience":{
     "conciergeID":"concierge-abc123",
@@ -558,7 +558,7 @@ Vous trouverez ci-dessous un exemple d’utilisation du groupe de champs Événe
     ]
   },
   "web": {
-    "webPageDetails": { "URL": "https://www.adobe.com", "name": "Home Page" }
+    "webPageDetails": { "URL": "https://www.adobe.com/fr", "name": "Home Page" }
   },
   "conversation": {
     "conversationID": "conv-001",
@@ -591,7 +591,7 @@ Vous trouverez ci-dessous un exemple d’utilisation du groupe de champs Événe
     ]
   },
   "web": {
-    "webPageDetails": { "URL": "https://www.adobe.com", "name": "Home Page" }
+    "webPageDetails": { "URL": "https://www.adobe.com/fr", "name": "Home Page" }
   },
   "agenticExperience":{
     "conciergeID":"concierge-xyz789",
@@ -696,7 +696,7 @@ Toute valeur de chaîne est acceptable. Cependant, Adobe remplit les portées su
     ]
   },
   "web":{
-    "webPageDetails":{ "URL":"https://www.adobe.com", "name":"Home Page" }
+    "webPageDetails":{ "URL":"https://www.adobe.com/fr", "name":"Home Page" }
   },
   "agenticExperience":{
     "conciergeID":"concierge-abc123",
