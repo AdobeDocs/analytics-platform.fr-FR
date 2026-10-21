@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: a02b8d1d6bae6ed8269668d49ed9559688001833
 workflow-type: tm+mt
-source-wordcount: '810'
-ht-degree: 16%
+source-wordcount: '1185'
+ht-degree: 14%
 ---
 # Création ou modification de configurations
 
@@ -46,7 +46,7 @@ Lorsque vous créez ou modifiez une configuration Insights de conversation, vous
 
 Seuls les administrateurs système peuvent créer ou modifier des configurations de Conversation Insights.
 
-Vous pouvez créer ou modifier des configurations à partir de l’interface [&#x200B; Configurations de Conversation Insights &#x200B;](./manage.md).
+Vous pouvez créer ou modifier des configurations à partir de l’interface [ Configurations de Conversation Insights ](./manage.md).
 
 ## Restaurer le jeu de données fusionné manquant
 
@@ -64,7 +64,7 @@ Pour chaque configuration :
    | Champ | Description |
    |---------|----------|
    | **[!UICONTROL Nom]** | Attribuez un nom à la configuration. |
-   | **[!UICONTROL Sandbox]** | Sélectionnez la sandbox Experience Platform qui contient les jeux de données d’événements d’invites, de réponses et de commentaires que vous souhaitez ajouter à votre connexion. |
+   | **[!UICONTROL Sandbox]** | Sélectionnez la sandbox Experience Platform qui contient les jeux de données d’événements d’invites, de réponses et de commentaires que vous souhaitez ajouter à votre connexion. Vous recevez une notification si aucun jeu de données compatible n’est disponible pour le sandbox sélectionné. |
 
 1. Dans la section **[!UICONTROL Jeux de données]**, spécifiez les informations suivantes :
 
@@ -75,6 +75,13 @@ Pour chaque configuration :
    | **[!UICONTROL Invite le jeu de données d’événement]** | Sélectionnez le jeu de données qui contient les données d’événement d’invite. |
    | **[!UICONTROL Jeu de données d’événement de réponses]** | Sélectionnez le jeu de données contenant les données d’événement de réponse. |
    | **[!UICONTROL Jeu de données d’événement de retour]** | Sélectionnez le jeu de données contenant les données d’événement de retour. |
+
+   Lorsqu’un jeu de données contient à la fois des invites et des réponses, sélectionnez le même jeu de données pour **[!UICONTROL Jeu de données d’événement d’invite]** et **[!UICONTROL Jeu de données d’événement de réponse]**.
+
+   L’option permettant de [spécifier des conversations mixtes](#blend-specification) via **[!UICONTROL Configurer la spécification mixte]** n’est disponible qu’une seule fois :
+   * Cette configuration est terminée.
+   * Tous les jeux de données sont disponibles.
+   * Vous disposez des autorisations Customer Journey Analytics [autorisations pour modifier les connexions](/help/technotes/access-control.md).
 
 1. Dans la section **[!UICONTROL Connexion]**, si aucune connexion n’est déjà configurée, utilisez **[!UICONTROL Sélectionner une connexion]** pour sélectionner une connexion.
 
@@ -123,6 +130,48 @@ Pour chaque configuration :
 
    * Sélectionnez **[!UICONTROL Quitter]** pour ignorer toute modification de la configuration.
 
+## Spécification de fusion
+
+
+>[!CONTEXTUALHELP]
+>id="conversationinsights_blend_specification"
+>title="Configurer la spécification de fusion"
+>abstract="Vous ne pouvez modifier la spécification de fusion qu’une fois cette configuration de conversation avec Insights terminée, tous les jeux de données sont disponibles et vous disposez des autorisations Customer Journey Analytics pour modifier les connexions."
+>additional-url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/technotes/access-control" text="Contrôle d’accès"
+
+
+>[!CONTEXTUALHELP]
+>id="conversationinsights_dataset_winner"
+>title="Gagnant du jeu de données"
+>abstract="Sélectionnez le jeu de données qui détermine la valeur du ou des champs nommés de manière correspondante (s’il s’agit d’un conteneur) dans le jeu de données de conversation mixte."
+
+Une fois la configuration créée, vous pouvez configurer [la manière dont les conversations des jeux de données d’invites, de réponses, de commentaires et de signaux sont mélangées](/help/conversation-insights/overview.md#how-it-works).
+
+Cette spécification vous permet de sélectionner le jeu de données qui détermine la valeur des champs nommés de manière correspondante (s’il s’agit d’un conteneur) dans le jeu de données de conversation mixte.
+
+Par exemple : si vous souhaitez que le nom du champ **[!UICONTROL Produit par]** dans le jeu de données de conversation mixte soit défini à partir de ce champ nommé similaire dans le jeu de données de commentaires, sélectionnez **[!UICONTROL Jeu de données de commentaires]** dans le menu déroulant **[!UICONTROL Gagnant du jeu de données]** pour ce champ.
+
+Pour spécifier la conversation fusionnée :
+
+1. Sélectionnez **[!UICONTROL Configurer la spécification de fusion]**.
+
+1. Dans la boîte de dialogue **[!UICONTROL Spécification de fusion]**, pour chaque **[!UICONTROL Nom du champ]**, passez en revue le **[!UICONTROL Gagnant du jeu de données]** suggéré et sélectionnez éventuellement un autre jeu de données.
+
+   * Pour chaque champ activé, vous pouvez éventuellement sélectionner un autre **[!UICONTROL gagnant du jeu de données]**. Vous pouvez choisir entre **[!UICONTROL Jeu de données d’invites]**, **[!UICONTROL Jeu de données de réponses]** et **[!UICONTROL Jeu de données de commentaires]**.
+   * Pour chaque champ de conteneur, vous pouvez éventuellement sélectionner un autre **[!UICONTROL gagnant du jeu de données]** pour mettre à jour tous les champs appartenant au conteneur. Vous pouvez choisir entre **[!UICONTROL Jeu de données d’invites]**, **[!UICONTROL Jeu de données de réponses]** et **[!UICONTROL Jeu de données de commentaires]**.
+   * Vous ne pouvez pas sélectionner de **[!UICONTROL gagnant du jeu de données]** pour les champs partagés entre les jeux de données de conversation (invites, réponses, commentaires et signaux). Ces champs font partie des groupes de champs suivants :
+
+     | Nom du champ | Groupe de champs | Gagnant du jeu de données |
+     |---|---|---|
+     | **[!UICONTROL invite]** | `conversation.prompt.*` | **[!UICONTROL Invite le jeu de données]** |
+     | **[!UICONTROL response]** | `conversation.response.*` | **[!UICONTROL Jeu de données de réponses]** |
+     | **[!UICONTROL commentaires]** | `conversation.feedback.*` | **[!UICONTROL Jeu de données de commentaires]** |
+     | **[!UICONTROL agentExperience]** | `agentExperience.*` | **[!UICONTROL Jeu de données de réponses]** |
+     | **[!UICONTROL signaux]** | `conversation.signals.*` | **[!UICONTROL Jeu de données de signaux]** |
+
+   * Aucune sélection **[!UICONTROL gagnant du jeu de données]** n’est disponible pour les champs d’identité spécifiques, tels que **[!UICONTROL ID de conversation]** ou **[!UICONTROL ID de tour]**.
+
+1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer la spécification. Sélectionnez **[!UICONTROL Annuler]** pour annuler la spécification.
 
 ## Vérification de la vue de données
 
@@ -130,7 +179,7 @@ Les vues de données que vous avez configurées dans [Étapes de configuration](
 
 Pour chacune des vues de données configurées :
 
-* **Conteneurs** : l’onglet [Conteneurs](/help/data-views/create-dataview.md#containers) contient un nouveau **[!UICONTROL Nom du conteneur]** : **[!UICONTROL conversation]** avec **[!UICONTROL Nom d’affichage]**: **[!UICONTROL Container]** comme **[!UICONTROL Système]** Type de conteneur **&#x200B;**&#x200B;supplémentaire.
+* **Conteneurs** : l’onglet [Conteneurs](/help/data-views/create-dataview.md#containers) contient un nouveau **[!UICONTROL Nom du conteneur]** : **[!UICONTROL conversation]** avec **[!UICONTROL Nom d’affichage]**: **[!UICONTROL Container]** comme **[!UICONTROL Système]** Type de conteneur **** supplémentaire.
 * **Composants** : d’autres dossiers de champs de schéma s’affichent. Par exemple : agentExperience et conversation. En outre, les composants suivants sont automatiquement ajoutés :
 
   | Mesures | Type de données de schéma | Chemin du schéma |
