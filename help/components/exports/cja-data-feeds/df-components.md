@@ -17,10 +17,10 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: adc7e85339e89c181375c0d3ea5c228d473239a7
+source-git-commit: 5006a5e7f48fb107cc32cf56051062cc88f35c8e
 workflow-type: tm+mt
-source-wordcount: '1419'
-ht-degree: 43%
+source-wordcount: '1548'
+ht-degree: 40%
 ---
 # Disponibilité des composants dans les flux de données
 
@@ -98,8 +98,6 @@ Les mesures standard Customer Journey Analytics suivantes ne peuvent pas être i
 
 <!-- markdownlint-disable MD034 -->
 
-<!-- pretty sure this isn't being used -->
-
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_user_agent"
 >title=""
@@ -107,20 +105,37 @@ Les mesures standard Customer Journey Analytics suivantes ne peuvent pas être i
 
 <!-- markdownlint-enable MD034 -->
 
->[!IMPORTANT]
->
->Certaines dimensions ne peuvent pas être utilisées ensemble dans les jeux de données Experience Platform et ne peuvent donc pas être incluses dans le même flux de données.
->
->Si vous choisissez d’inclure les dimensions **Agent utilisateur** ou **ID mobile** dans votre flux de données, les dimensions répertoriées ci-dessous ne peuvent pas être ajoutées au flux de données.
+Certaines dimensions ne peuvent pas être utilisées conjointement dans les jeux de données Experience Platform. Un flux de données peut inclure des dimensions de l’un des groupes suivants, mais pas des deux :
+
+* Les dimensions **Agent utilisateur** et **ID mobile**. <!--UI shows "Type identifier" for device.typeID; align with docs name "Mobile ID" (open question for Danny Carmen).-->
+
+* Dimensions de recherche d’appareil, telles que les dimensions du navigateur, de l’appareil mobile et du système d’exploitation. Pour obtenir la liste complète, voir [Dimensions de recherche d’appareil](#device-lookup-dimensions).
+
+>[!NOTE]
 >
 >Si vous utilisez le SDK Web, cette restriction est appliquée dans les flux de données avant que les données n’arrivent dans un jeu de données Experience Platform. Pour plus d’informations, voir [Configurer la recherche d’appareil](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/configure#geolocation-device-lookup) dans [Créer et configurer des flux de données](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/configure) dans le guide Collecte de données .
 
-Les dimensions suivantes ne peuvent pas être utilisées avec les dimensions **Agent utilisateur** ou **ID mobile** :
+### Résoudre les conflits de dimension
+
+Lorsque vous ajoutez des dimensions qui ne peuvent pas être utilisées ensemble, une boîte de dialogue s’affiche. Elle répertorie les dimensions qui seront ajoutées, celles qui ne seront pas ajoutées ou celles qui seront supprimées. Ce qui se passe dépend de l’endroit du conflit :
+
+* **Les dimensions que vous ajoutez sont en conflit avec les dimensions déjà présentes dans le flux de données** : les dimensions que vous ajoutez sont prioritaires. La boîte de dialogue vous invite à ajouter votre sélection et à supprimer les dimensions en conflit du flux de données.
+
+* **Les dimensions que vous ajoutez sont en conflit les unes avec les autres** : les dimensions **Agent utilisateur** et **ID mobile** sont prioritaires. La boîte de dialogue vous invite à les ajouter ; les dimensions de recherche d’appareil de votre sélection ne sont pas ajoutées.
+
+Pour conserver le flux de données inchangé, sélectionnez **[!UICONTROL Annuler]**.
+
+<!--Open questions for Danny Carmen: behavior when a batch contains both groups and the feed already has conflicting dimensions; whether "add all" adds the full selection or only the listed dimensions.-->
+
+### Dimensions de recherche d’appareil {#device-lookup-dimensions}
+
+Les dimensions suivantes ne peuvent pas être incluses dans le même flux de données que les dimensions **Agent utilisateur** ou **ID mobile**.
 
 >[!NOTE]
 >
 >La liste suivante utilise les noms de dimension par défaut. Les dimensions renommées dans votre vue de données apparaissent dans les flux de données avec leurs noms personnalisés.
 
+<!--Engineering lists 30 device lookup fields; this list has 28. Likely missing: environment.operatingSystemIDStr and environment.browserIDStr. Confirm display names with Danny Carmen.-->
 
 * Type de navigateur
 * Navigateur
