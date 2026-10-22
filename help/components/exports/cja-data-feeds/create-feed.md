@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 77f5caf20d2bf391563de20a572ce100cdcca61e
+source-git-commit: 39d7aae2c47754899a2ac7d1a544a0b585d99b8b
 workflow-type: tm+mt
-source-wordcount: '3924'
-ht-degree: 20%
+source-wordcount: '4362'
+ht-degree: 15%
 ---
 # Créer un flux de données
 
@@ -71,6 +71,24 @@ Avant de créer un flux de données, il est important de comprendre les bases de
 >id="cja_datafeed_frequency_granularity"
 >title="Fréquence et granularité"
 >abstract="**Fréquence de diffusion** (flux actifs) : fréquence de diffusion du flux de données. Les diffusions horaires contiennent l’équivalent d’une heure de données ; les diffusions quotidiennes contiennent l’équivalent d’une journée de données. La période de recherche en amont et le délai de traitement peuvent également affecter les événements inclus.<p>**Granularité** (flux de renvoi) : intervalle de temps utilisé pour diviser les données historiques. Chaque bloc contient l’équivalent d’une journée de données et est diffusé le plus rapidement possible, et non une fois par jour. Ce champ est toujours défini sur Quotidien et ne peut pas être modifié.</p>"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-df-export-file-name"
+>title="Chemin d’accès ou nom de fichier"
+>abstract="Indiquez un chemin d’accès ou un nom de fichier (ou les deux) pour déterminer où les fichiers sont envoyés à l’emplacement sélectionné. Pour enregistrer des fichiers dans le dossier de niveau supérieur de l’emplacement, spécifiez `/`.<br/>Pour les flux en direct, vous pouvez utiliser des variables pour rendre le chemin d’accès ou le nom de fichier dynamique. <br/>Par exemple, si vous spécifiez `${yyyy}/${MM}/${dd}/my-feed-${instance_id}-${idx}`, un flux dynamique diffusé le 15 janvier 2027 aura le chemin et le nom de fichier suivants : `[prefix_folder_name]/2027/01/15/my-feed-[UUID]-1.parquet` <br/>Sélectionnez le lien ci-dessous pour obtenir une liste des variables disponibles."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-df-export-file-name-override"
+>title="Remplacer le chemin d&#39;accès ou le nom de fichier par défaut"
+>abstract="Activez cette option pour remplacer le chemin d’accès ou le nom de fichier par défaut défini pour cet emplacement. Le remplacement s’applique uniquement à ce flux de données et détermine où les fichiers de flux de données sont envoyés."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -137,13 +155,24 @@ Avant de créer un flux de données, il est important de comprendre les bases de
 
    Les largeurs de colonne sont enregistrées dans un cookie et persistent la prochaine fois que vous revenez à ce flux de données sur le même navigateur.
 
-1. (Facultatif) Modifiez l’ID de composant qui s’affiche dans la sortie du flux de données.
+1. (Facultatif) Modifiez l’identifiant de sortie d’un composant. L’identifiant de sortie est le nom de la colonne dans la sortie du flux de données.
 
-   1. Pointez sur un composant sur la zone de travail, puis sélectionnez l’icône d’informations.
+   Par défaut, l’ID de sortie est l’ID du composant dans snake_case. La modification de l’identifiant de sortie affecte uniquement ce flux de données. Cela ne modifie pas l’identifiant du composant dans la vue de données. L’aperçu du schéma affiche l’identifiant du composant et l’identifiant de sortie.
 
-   1. Dans le champ ID du composant , spécifiez un nouvel ID de composant.
+   1. Pointez sur un composant sur la zone de travail, puis sélectionnez l’icône d’information ![Infos](/help/assets/icons/InfoOutline.svg).
+
+   1. Sélectionnez l’icône Modifier ![Modifier](/help/assets/icons/Edit.svg) en regard de l’identifiant, puis spécifiez un nouvel identifiant de sortie.
 
       <!--add screenshot-->
+
+   Les identifiants de sortie doivent :
+
+   * Être unique dans le flux de données.
+   * Contiennent uniquement des lettres, des chiffres et des traits de soulignement (`_`). Les espaces, points (`.`), tirets (`-`), barres obliques (`/`) et autres caractères spéciaux ne sont pas autorisés.
+   * Commencez par une lettre ou un trait de soulignement.
+   * Doit comporter 255 caractères ou moins.
+
+   Les identifiants de sortie ne peuvent pas commencer par `_cja`, qui est réservé à une utilisation par Adobe.
 
 1. (Facultatif) Utilisez les panneaux **[!UICONTROL Résumé du flux]** et **[!UICONTROL Aperçu du schéma]** sur le côté droit de la page pour passer en revue votre structure de données avant de continuer :
 
@@ -166,7 +195,7 @@ Avant de créer un flux de données, il est important de comprendre les bases de
    | [!UICONTROL **Fréquence**]<br/> Disponible uniquement pour les flux en direct | Sélectionnez la fréquence d’envoi du flux de données. Les événements dont la date et l’heure se trouvent dans la fenêtre de fréquence sont inclus dans la diffusion du flux de données. Les champs [!UICONTROL **Période de recherche en amont**] et [!UICONTROL **Délai de traitement**] peuvent également affecter les événements inclus dans les données pour la fréquence de diffusion que vous choisissez.<p>Sélectionnez cette option pour inclure l’équivalent d’une heure de données ou d’un jour de données.</p><ul><li>**Quotidien** : les flux contiennent l’équivalent d’une journée complète de données, de minuit à minuit dans le fuseau horaire de la vue de données.</li><li>**Par heure** : les flux contiennent l’équivalent d’une heure de données.</li></ul> |
    | [!UICONTROL **Granularité**]<br/> Disponible uniquement pour les flux de renvoi | Intervalle de temps utilisé pour diviser les données historiques en blocs. Chaque bloc contient l’équivalent d’une journée complète de données, de minuit à minuit dans le fuseau horaire de la vue de données. <p>La granularité détermine la manière dont les données sont regroupées, et non la fréquence de diffusion. Les données de renvoi sont diffusées le plus rapidement possible, et non une fois par jour.</p><p>Ce champ est toujours défini sur [!UICONTROL **Quotidien**] et ne peut pas être modifié.</p> |
    | [!UICONTROL **Période de recherche en amont**] | Contrôle la période sur laquelle Customer Journey Analytics se base pour traiter la diffusion du flux de données. La valeur par défaut est de 30 jours.<p>La fenêtre de fréquence (heure ou jour) détermine les événements inclus dans le flux de données, tandis que la **période de recherche en amont** fournit le contexte historique nécessaire pour classer correctement ces événements.</p><p>La qualification des segments, la persistance des dimensions, le calcul de session et les transformations de champs dérivés peuvent tous affecter les événements inclus.</p> <p>Avant de configurer cette option, consultez les détails et les exemples décrits dans la section ci-dessous, [Comprendre la période de recherche en amont](#data-feed-lookback-date-range).</p> |
-   | [!UICONTROL **Délai de traitement**] | Sélectionnez le temps d’attente de Customer Journey Analytics avant de traiter un fichier de flux de données. Tous les événements tardifs qui arrivent pendant le délai de traitement sont inclus dans le flux de données. <p>Le délai de traitement minimal est de 2 heures, mais certains types de données nécessitent un délai plus long. Le délai que vous choisissez dépend des types de données de votre connexion, telles que les données de diffusion en continu, par lots, groupées, de recherche ou de profil.</p><p>Choisissez un délai suffisant pour que les données les plus lentes de votre connexion terminent le traitement. Si le délai est trop court, les données en cours de traitement ne sont pas incluses dans le fichier de flux de données.</p><p>Avant de configurer cette option, consultez les détails et les exemples décrits dans la section ci-dessous, [Comprendre le délai de traitement](#data-feed-processing-delay).</p> |
+   | [!UICONTROL **Délai de traitement**] | Temps d’attente de Customer Journey Analytics avant de traiter un fichier de flux de données. Tous les événements tardifs qui arrivent pendant le délai de traitement sont inclus dans le flux de données. <p>Choisissez un délai suffisant pour que les données les plus lentes de votre connexion terminent le traitement. Si le délai est trop court, les données en cours de traitement ne sont pas incluses dans le fichier de flux de données.</p><p>Le délai de traitement minimal est de 2 heures. La valeur par défaut est basée sur les jeux de données de votre connexion. Par exemple, si le groupement est activé, la valeur par défaut est de 6 heures. Certains types de données nécessitent un délai plus long. Le délai que vous choisissez dépend des types de données de votre connexion, telles que les données de diffusion en continu, par lots, groupées, de recherche ou de profil.</p><p>Avant de configurer cette option, consultez les détails et les exemples décrits dans la section ci-dessous, [Comprendre le délai de traitement](#data-feed-processing-delay).</p> |
    | [!UICONTROL **Format de compression**] | Sélectionnez le format de compression des fichiers de sortie Parquet diffusés vers votre destination cloud. Choisissez l’un des formats suivants :<ul><li>[!UICONTROL **Snappy**] : compression et décompression rapides avec des tailles de fichier modérées. Largement pris en charge par les plateformes de données modernes telles que BigQuery, Snowflake et Apache Spark.</li><li>[!UICONTROL **GZip**] : largement compatible, y compris avec les outils qui ne prennent pas en charge Snappy en mode natif. Recommandé si votre pipeline en aval nécessite une norme de compression largement reconnue.</li><li>[!UICONTROL **Z Standard (Zstd)**] : Efficacité de compression élevée avec décompression rapide. Convient si la réduction de la taille du fichier est une priorité et que vos outils prennent en charge Zstd.</li></ul> |
 
 1. Sous l’onglet [!UICONTROL **Diffusion**], dans la section [!UICONTROL **Destination**], configurez la destination vers laquelle vous souhaitez envoyer les données.
@@ -189,7 +218,9 @@ Avant de créer un flux de données, il est important de comprendre les bases de
    | [!UICONTROL **Afficher les destinations pour tous les utilisateurs**] | Si vous êtes un administrateur ou une administratrice système, vous pouvez activer cette option pour afficher les destinations créées par tous les utilisateurs et utilisatrices de votre organisation. Lorsque cette option est désactivée, seules les destinations que vous avez créées s’affichent. |
    | [!UICONTROL **Compte**] | Effectuez l’une des opérations suivantes :<ul><li>**Utiliser un compte existant :** sélectionnez le menu déroulant en regard du champ **[!UICONTROL Compte]**. Vous pouvez également commencer à saisir le nom du compte, puis le sélectionner dans le menu déroulant. <p>Vous ne pouvez accéder aux comptes que si vous les avez configurés ou s’ils sont partagés avec une organisation dont vous faites partie.</p></li><li>**Créer un compte :** sélectionnez **[!UICONTROL Ajouter un compte]** dans le menu **[!UICONTROL Compte]**. Pour plus d’informations sur la configuration du compte, voir [Configuration des comptes d’exportation dans le cloud](/help/components/exports/cloud-export-accounts.md).</li></ul> |
    | [!UICONTROL **Emplacement**] | Effectuez l’une des opérations suivantes :<ul><li>**Utiliser un emplacement existant :** sélectionnez le menu déroulant en regard du champ **[!UICONTROL Emplacement]**. Vous pouvez également commencer à saisir le nom de l’emplacement, puis le sélectionner dans le menu déroulant.</li><li>**Créer un emplacement :** sélectionnez **[!UICONTROL Ajouter un emplacement]** dans le menu **[!UICONTROL Emplacement]**. Pour plus d’informations sur la configuration de l’emplacement, voir [Configuration des emplacements d’exportation dans le cloud](/help/components/exports/cloud-export-locations.md).</li></ul> |
-   | [!UICONTROL **Envoyer une notification par e-mail une fois l’opération terminée**] | Indiquez une ou plusieurs adresses e-mail auxquelles une notification doit être envoyée une fois le flux de données envoyé avec succès ou en cas d’échec. Plusieurs adresses e-mail doivent être séparées par une virgule. |
+   | [!UICONTROL **Remplacer le chemin d’accès ou le nom de fichier par défaut**] | Activez cette option pour remplacer le chemin d’accès ou le nom de fichier par défaut défini pour l’emplacement sélectionné. Le remplacement s’applique uniquement à ce flux de données et détermine où les fichiers de flux de données sont envoyés.<p>Lorsque cette option est activée, le champ [!UICONTROL **Chemin d’accès ou nom de fichier**] s’affiche.</p> |
+   | [!UICONTROL **Chemin ou nom de fichier**]<br/> Disponible uniquement lorsque [!UICONTROL **Remplacer le chemin ou le nom de fichier par défaut**] est activé | Indiquez un chemin d’accès ou un nom de fichier (ou les deux) pour déterminer où les fichiers sont envoyés à l’emplacement sélectionné. Pour enregistrer des fichiers dans le dossier de niveau supérieur de l’emplacement, spécifiez `/`.<p>Pour les flux en direct, vous pouvez utiliser l’une des variables suivantes pour rendre le chemin d’accès ou le nom de fichier dynamique :</p><ul><li>**{yyyy}** : année civile à 4 chiffres (sensible à la casse)</li><li>**{yy}** : année civile à 2 chiffres (sensible à la casse)</li><li>**{MM}** : mois à 2 chiffres (sensible à la casse)</li><li>**{dd}** : jour à 2 chiffres (sensible à la casse)</li><li>**{HH}** : heure à 2 chiffres (sensible à la casse)</li><li>**{mm}** : minutes à 2 chiffres (sensible à la casse)</li><li>**{ss}** : secondes à 2 chiffres (sensible à la casse)</li><li>**{fff}** : nanosecondes à 3 chiffres (sensible à la casse)</li><li>**{instance_id}** : UUID de requête (instance)</li><li>**{export_id}** : UUID de l&#39;export (planning)</li><li>**{idx}** : index démarré à partir de 0 (incrémenté pour chaque fichier)</li><li>**{total}** : nombre total de fichiers pour l&#39;ensemble de la tâche de transfert</li><li>**{completion_millis}** : heure de transfert en millisecondes</li></ul><p>Par exemple, si vous spécifiez `${yyyy}/${MM}/${dd}/my-feed-${instance_id}-${idx}`, un flux dynamique diffusé le 15 janvier 2027 aura le chemin et le nom de fichier suivants : `[prefix_folder_name]/2027/01/15/my-feed-[UUID]-1.parquet`</p> |
+   | [!UICONTROL **Notifier des problèmes, une fois l’opération terminée et lors de l’expiration**] | Indiquez une ou plusieurs adresses e-mail auxquelles une notification doit être envoyée lorsque le flux de données est terminé, arrive à expiration ou rencontre des problèmes. Séparez plusieurs adresses e-mail par une virgule. |
    | [!UICONTROL **Activer le manifeste**] | Choisissez d’inclure un fichier manifeste avec chaque diffusion de flux de données. Le fichier manifeste contient des informations pour chaque fichier inclus dans le flux de données. |
 
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
@@ -290,7 +321,7 @@ Toutes les fonctions de champ dérivé qui font référence à des conteneurs ut
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_processing_delay"
 >title="Délai de traitement"
->abstract="Temps d’attente de Customer Journey Analytics avant de traiter un fichier de flux de données. Tous les événements tardifs qui arrivent pendant le délai de traitement sont inclus dans le flux de données.<p>Le délai de traitement minimal est de 2 heures, mais certains types de données nécessitent un délai plus long. Choisissez un délai suffisant pour que les données les plus lentes de votre connexion arrivent dans le lac de données Experience Platform et soient ingérées dans Customer Journey Analytics. Si le délai est trop court, les données en cours de traitement ne sont pas incluses dans le fichier de flux de données.</p><p>L’assemblage peut prendre jusqu’à 4 heures. Pour en tenir compte, ajoutez 4 heures au délai pour toutes les données regroupées.</p>"
+>abstract="Temps d’attente du système avant de traiter un fichier de flux de données. Tous les événements tardifs qui arrivent pendant le délai sont inclus dans le flux.<p>Le délai de traitement minimal est de 2 heures, mais certains types de données nécessitent plus de temps. Choisissez un délai suffisamment long pour les données les plus lentes de votre connexion. Si le délai de traitement est trop court, certaines données peuvent ne pas être incluses dans le flux.</p>"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -316,6 +347,8 @@ La disponibilité de différents types de données varie en fonction du temps n�
 
 Choisissez un délai de traitement suffisamment long pour que les données les plus lentes de votre connexion puissent terminer les deux phases. Si le délai est trop court, les données en cours de traitement ne sont pas incluses dans le fichier de flux de données.
 
+Lorsque vous créez un flux de données, le délai de traitement correspond par défaut à une valeur recommandée en fonction des jeux de données de votre connexion. Par exemple, si le groupement est activé pour la connexion, la valeur par défaut est de 6 heures. Vous pouvez choisir un délai plus court, jusqu’à un minimum de 2 heures, mais un avertissement s’affiche, car certaines données peuvent ne pas être incluses dans le flux de données.
+
 #### Phase 1 : les données arrivent dans le lac de données Experience Platform
 
 Les heures d’arrivée varient en fonction du type de données que vous collectez. Choisissez un délai qui s’adapte au type de données que vous collectez.
@@ -324,7 +357,7 @@ Les heures d’arrivée varient en fonction du type de données que vous collect
 
 * **Jeux de données du connecteur source Analytics** : les données arrivent généralement dans le lac de données dans les 2,25 heures (voir [Latences](/help/technotes/guardrails.md#latencies)).
 
-  <!--When using the Analytics Source Connector, the minimum processing delay increases from 2 hours to 6 hours (?) to account for the source connector data. (checking to see if this is feasible) -->
+  <!--Default delay for Analytics source connector datasets is TBD (Oct 19 decision); add when confirmed.-->
 
 * **Jeux de données provenant d’autres connecteurs source** : la latence varie en fonction du connecteur source et du moment d’envoi des lots. Le traitement en amont dans Experience Platform, tel que la préparation des données, peut ajouter du temps.
 
@@ -346,9 +379,7 @@ Les délais d’ingestion des données varient selon que le groupement est activ
 
 * **Jeux de données non groupés** : cette opération peut prendre jusqu’à 90 minutes (voir [Latences](/help/technotes/guardrails.md#latencies)).
 
-* **Jeux de données groupés** : le groupement peut ajouter jusqu’à 4 heures en plus des 90 minutes nécessaires pour les jeux de données non groupés (voir [Latences](/help/technotes/guardrails.md#latencies)). Si le groupement est activé pour la connexion, définissez un délai d’au moins 6 heures, et potentiellement de 8 heures. Les données mises à jour par une relecture d’assemblage ne sont généralement pas incluses dans les fichiers de flux de données déjà traités.
-
-  Lorsque le groupement est activé, le délai de traitement minimal passe de 2 heures à 6 heures pour tenir compte des données groupées.
+* **Jeux de données groupés** : le groupement peut ajouter jusqu’à 4 heures en plus des 90 minutes nécessaires pour les jeux de données non groupés (voir [Latences](/help/technotes/guardrails.md#latencies)). Si le groupement est activé pour la connexion, le délai par défaut est de 6 heures. Les données mises à jour par une relecture d’assemblage ne sont généralement pas incluses dans les fichiers de flux de données déjà traités.
 
 >[!BEGINSHADEBOX]
 
