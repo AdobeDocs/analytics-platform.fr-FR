@@ -21,10 +21,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: 21a2b0cc296d30de7f656a658d7e382c8c4ea835
 workflow-type: tm+mt
-source-wordcount: '1215'
-ht-degree: 38%
+source-wordcount: '1216'
+ht-degree: 37%
 ---
 # Opérateurs
 
@@ -47,9 +47,15 @@ Le seul caractère générique pris en charge pour les opérateurs qui le font e
 Par exemple, vous avez un nom de page appelé *Mon produit cool*.
 
 * La règle de segment **[!UICONTROL Nom de page]** **[!UICONTROL correspond]** `* product` correspond au nom de page ci-dessus.
-* Cependant, la règle **[!UICONTROL Nom de la page]** **[!UICONTROL correspond]** `My \* product` correspond uniquement au nom de la page *Mon* Produit*.
+* Cependant, la règle **[!UICONTROL Nom de la page]** **[!UICONTROL correspond]** `My \* product` correspond uniquement au nom de la page *Mon* produit*.
 
 ## Opérateurs standard
+
+>[!NOTE]
+>
+>Lorsque vous utilisez des opérateurs standard, les valeurs que vous saisissez renvoient des résultats indépendamment de la casse, à l’exception de **[!UICONTROL correspond]** et **[!UICONTROL ne correspond pas]**.
+>
+>Par exemple, la fonction **[!UICONTROL Nom de la page]** **[!UICONTROL est égal à]** `search results` renvoie *Résultats de la recherche*, *Résultats de la recherche* et *Résultats de la recherche*.
 
 | Opérateur | La dimension, le segment ou l’événement de mesure sélectionné... |
 |--- |--- |
@@ -57,7 +63,7 @@ Par exemple, vous avez un nom de page appelé *Mon produit cool*.
 | **[!UICONTROL différent de]** | Renvoie les éléments qui ne comportent pas une correspondance exacte avec la valeur saisie.  Remarque : si vous utilisez des caractères génériques, utilisez l’opérateur **[!UICONTROL ne correspond pas]**. |
 | **[!UICONTROL est égal à n’importe lequel]** | Renvoie les éléments qui correspondent exactement à n’importe quelle valeur du champ de saisie (jusqu’à 500 éléments). Par exemple, la saisie de `Search Results, Homepage` pour la dimension **[!UICONTROL Nom de la page]** avec cet opérateur doit correspondre à *Résultats de la recherche* et *Page d’accueil*, et compter comme 2 éléments. Le champ de saisie de cet opérateur est délimité par des virgules. |
 | **[!UICONTROL n’est égal à aucun(e)]** | Identifie les éléments qui correspondent exactement à n’importe quelle valeur du champ de saisie (jusqu’à 500 éléments), puis renvoie uniquement les éléments sans ces valeurs. Par exemple, la saisie de `Search Results, Homepage` avec cet opérateur pour la dimension **[!UICONTROL Nom de page]** identifie *Résultats de la recherche* et *Page d’accueil* puis **exclut** les éléments renvoyés. Cet exemple serait considéré comme deux éléments. Le champ de saisie de cet opérateur est délimité par des virgules. |
-| **[!UICONTROL contient]** | Renvoie les éléments qui sont comparés aux sous-chaînes des valeurs saisies. Par exemple, si la règle est **[!UICONTROL Nom de la page]** **[!UICONTROL contient]** `Search`, cette règle correspond à toute page qui contient le `Search` de sous-chaîne, y compris *Résultats de la recherche*, *Rechercher* et *Searching*. La condition « contient » n’est pas sensible à la casse dans Adobe Analytics, mais elle l’est dans Customer Journey Analytics. |
+| **[!UICONTROL contient]** | Renvoie les éléments qui sont comparés aux sous-chaînes des valeurs saisies. Par exemple, si la règle est **[!UICONTROL Nom de la page]** **[!UICONTROL contient]** `Search`, cette règle correspond à toute page qui contient le `Search` de sous-chaîne, y compris *Résultats de la recherche*, *Rechercher* et *Searching*. |
 | **[!UICONTROL ne contient pas]** | Renvoie l’inverse de la règle **[!UICONTROL contains]**. Plus précisément, tous les éléments qui correspondent à la valeur entrée seront exclus des valeurs entrées. Par exemple, si la règle est **[!UICONTROL Nom de la page]** **[!UICONTROL ne contient pas]** `Search`, elle ne correspond à aucune page qui contient le `Search` de sous-chaîne, y compris *Résultats de la recherche*, *Rechercher* et *Searching*. Ces valeurs seront exclues des résultats. |
 | **[!UICONTROL contient tous les]** | Renvoie les éléments qui contiennent les sous-chaînes indiquées, y compris lorsque plusieurs valeurs sont associées. Par exemple, la saisie de `Search Results` avec cet opérateur pour la dimension **[!UICONTROL Nom de page]** correspondrait à *Résultats de la recherche* et *Résultats de la recherche*, mais pas à *Recherche* ou *Résultats* individuellement. La règle correspondrait à *Recherche* ET *Résultats* trouvés ensemble. Le champ de saisie de cet opérateur est délimité par des espaces (100 mots). |
 | **[!UICONTROL ne contient pas tous les]** | Identifie les éléments comparés à des sous-chaînes, y compris plusieurs valeurs jointes, puis renvoie uniquement les éléments sans ces valeurs. Par exemple, la saisie de `Search Results` avec cet opérateur pour la dimension **[!UICONTROL Nom de page]** identifie *Résultats de la recherche* et *Résultats de la recherche* (mais pas *Recherche* ou *Résultats* individuellement), puis exclut ces éléments. Le champ de saisie de cet opérateur est délimité par des espaces (100 mots). |
@@ -67,7 +73,7 @@ Par exemple, vous avez un nom de page appelé *Mon produit cool*.
 | **[!UICONTROL ne commence pas par]** | Renvoie tous les éléments qui ne commencent pas par la valeur de chaîne saisie. Il s’agit de l’inverse de l’opérateur **[!UICONTROL commence par]**. |
 | **[!UICONTROL se termine par]** | Renvoie les éléments qui se terminent par une valeur de chaîne saisie. |
 | **[!UICONTROL ne se termine pas par]** | Renvoie tous les éléments qui ne se terminent pas par la valeur de chaîne saisie. Il s’agit de l’inverse de l’opérateur **[!UICONTROL se termine par]**. |
-| **[!UICONTROL correspond]** | Renvoie des éléments qui correspondent exactement à une valeur numérique ou de chaîne donnée. La clause **[!UICONTROL correspond]** est sensible à la casse dans Adobe Analytics et dans Customer Journey Analytics. **Remarque** : utilisez cet opérateur lors de l’utilisation des fonctions [caractère générique](#wildcards) (extension métacaractère). Exemples d’« extension métacaractère » :<ul><li>`a*e` correspondrait à `ae`, `abcde`, `adobe` et `a whole sentence`.</li><li>`adob*` correspondrait à `adobe`, `adobe analytics` et `adobo recipe`.</li><li>`*dobe` correspondrait à `dobe`, `adobe` et `cute little dobe`.</li></ul> |
+| **[!UICONTROL correspond]** | Renvoie des éléments qui correspondent exactement à une valeur numérique ou de chaîne donnée. **Remarque** : utilisez cet opérateur lors de l’utilisation des fonctions [caractère générique](#wildcards) (extension métacaractère). Exemples d’« extension métacaractère » :<ul><li>`a*e` correspondrait à `ae`, `abcde`, `adobe` et `a whole sentence`.</li><li>`adob*` correspondrait à `adobe`, `adobe analytics` et `adobo recipe`.</li><li>`*dobe` correspondrait à `dobe`, `adobe` et `cute little dobe`.</li></ul> |
 | **[!UICONTROL ne correspond pas]** | Renvoie les éléments qui ne comportent pas une correspondance exacte avec la valeur saisie. Remarque : utilisez cet opérateur lors de l’utilisation des fonctions [caractère générique](#wildcards) (extension métacaractère). |
 | **[!UICONTROL existe]** | Renvoie le nombre d’éléments existants. Par exemple, si vous évaluez la dimension **[!UICONTROL Pages introuvables]** à l’aide de l’opérateur **[!UICONTROL exists]**, le nombre de pages d’erreur existantes est renvoyé. |
 | **[!UICONTROL n’existe pas]** | Renvoie tous les éléments qui n’existent pas. Par exemple, si vous évaluez la dimension **[!UICONTROL Pages introuvables]** à l’aide de l’opérateur **[!UICONTROL n’existe pas]**, le nombre de pages où cette page d’erreur n’existait pas est renvoyé. |
@@ -97,6 +103,6 @@ Vous pouvez créer un segment basé sur un nombre d’éléments distincts au se
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Nombre de dimensions distinct](https://experienceleague.adobe.com/fr/docs/analytics-learn/tutorials/components/calculated-metrics/approximate-count-distinct-function-in-calculated-metrics){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Nombre de dimensions distinct](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/components/calculated-metrics/approximate-count-distinct-function-in-calculated-metrics){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
