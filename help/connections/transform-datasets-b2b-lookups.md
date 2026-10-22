@@ -34,9 +34,9 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 9e9722a8c5848cba2e657a9c538d61e9453b0d09
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '514'
 ht-degree: 10%
 ---
 # Transformer les jeux de données pour les recherches B2B
@@ -56,9 +56,9 @@ Cette transformation n’est disponible que pour les jeux de données contenant 
 
 >[!PREREQUISITES]
 >
->Pour que l’ingestion fonctionne correctement, vous devez vérifier que les données des jeux de données de recherche B2B sont renseignées pour les champs suivants (tels que définis dans les schémas de recherche B2B) :
+>Pour que l’ingestion fonctionne correctement, chaque jeu de données du tableau suivant doit contenir le champ spécifié renseigné avec des données :
 >
->| Jeu de données contenant des données conformes au schéma | Champ renseigné avec des données |
+>| Jeu de données contenant des données conformes au schéma | Champ obligatoire renseigné avec des données |
 >|---|---|
 >| Relation Personne/Compte d’entreprise XDM | `accountPersonID` |
 >| Personne de l’opportunité commerciale XDM | `opportunityPersonID` |
