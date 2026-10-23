@@ -14,9 +14,9 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 77f5caf20d2bf391563de20a572ce100cdcca61e
+source-git-commit: a4ea9270d5bf27234fa229e8ba3df5998ecea0e1
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1303'
 ht-degree: 1%
 ---
 # Composants de sous-événement dans les flux de données
@@ -98,7 +98,7 @@ Lorsque vous ajoutez un composant de sous-événement à un flux de données, un
 
 Les champs du même sous-événement apparaissent sur la zone de travail sous la forme d’un groupe imbriqué réductible plutôt que d’un élément plat.
 
-![&#x200B; Groupe de sous-événements &#x200B;](assets/data-feeds-subevent-added.png)
+![ Groupe de sous-événements ](assets/data-feeds-subevent-added.png)
 
 Ce groupe reflète la structure de données sous-jacente.
 
@@ -110,7 +110,7 @@ Pour plus d’informations sur l’ajout de composants, y compris des composants
 
 Comme les données de sous-événement [apparaissent différemment dans les flux de données Customer Journey Analytics](#sub-event-differences-between-adobe-analytics-and-customer-journey-analytics), les requêtes que vous utilisez pour ces flux diffèrent de celles que vous utilisez pour les flux de données Adobe Analytics.
 
-Les exemples suivants montrent comment rechercher des événements qui incluent un produit spécifique. Les exemples utilisent la syntaxe BigQuery Google. D’autres entrepôts de données, tels que Snowflake et Databricks, prennent en charge la même approche avec des différences de syntaxe mineures.
+Les exemples suivants montrent comment rechercher des événements qui incluent un produit spécifique. Les exemples utilisent la syntaxe BigQuery de Google, où `UNNEST` développe un tableau en lignes. D’autres entrepôts de données prennent en charge la même approche avec leurs propres fonctions de tableau, telles que `FLATTEN` dans Snowflake ou `explode` dans les briques de données.
 
 +++ Requête sur les données de produit dans les flux de données Customer Journey Analytics
 
@@ -133,7 +133,7 @@ Le mode d’écriture de la requête varie selon que vous souhaitez une ligne pa
 
 **Renvoie une ligne par événement**
 
-Pour filtrer les événements sans modifier le nombre de lignes, utilisez `UNNEST` dans une sous-requête `EXISTS` :
+Pour filtrer les événements sans modifier le nombre de lignes, utilisez une fonction de tableau telle que `UNNEST` dans une sous-requête `EXISTS` :
 
 ```sql
 SELECT row_id, timestamp_utc, product_list_items
@@ -149,7 +149,7 @@ Cette requête renvoie une ligne pour chaque événement correspondant, avec le 
 
 **Renvoie une ligne par produit correspondant**
 
-Pour renvoyer une ligne pour chaque produit correspondant, déplacez-`UNNEST` dans la clause de `FROM` externe :
+Pour renvoyer une ligne pour chaque produit correspondant, déplacez la fonction de tableau dans la clause de `FROM` externe :
 
 ```sql
 SELECT f.row_id, f.timestamp_utc, item.product, item.quantity, item.revenue
@@ -220,7 +220,7 @@ Dans la sortie du flux de données, `survey_question` et `survey_answer` sont le
 
 ### Mappage d’identités
 
-Chaque identité du champ [`identityMap`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/field-groups/profile/identitymap) est exportée sous la forme d’un seul objet . L’objet contient l’espace de noms d’identité (la clé), ainsi que l’identifiant, l’état authentifié et l’indicateur principal. L’espace de noms se répète pour chaque identité de cet espace de noms.
+Chaque identité du champ [`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap) est exportée sous la forme d’un seul objet . L’objet contient l’espace de noms d’identité (la clé), ainsi que l’identifiant, l’état authentifié et l’indicateur principal. L’espace de noms se répète pour chaque identité de cet espace de noms.
 
 Seuls les attributs de mappage d’identités qui existent en tant que dimensions dans votre vue de données et que vous ajoutez au flux de données sont exportés.
 
