@@ -55,9 +55,9 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 0932da0728fd386c366b3c9b3cec45115f4e7e4b
+source-git-commit: 6bc56f504e19548e7e1cf0a6b32df54c45240749
 workflow-type: tm+mt
-source-wordcount: '7341'
+source-wordcount: '7362'
 ht-degree: 94%
 ---
 
@@ -70,14 +70,15 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Fonctionnalité | Description |
 |---|---|
 | **Octobre 2026** | |
+| Respect de la casse pour les opérateurs de segment | Clarification du fait que [les opérateurs standard](/help/components/segments/seg-operators.md#standard-operators) renvoient des résultats indépendamment de la casse, à l’exception de **[!UICONTROL correspondances]** et **[!UICONTROL ne correspondent pas]**. |
 | Navigation au clavier pour les colonnes du tableau | Documentation sur la [redimensionnement](/help/analysis-workspace/workspace-faq/aw-accessibility.md#resize-columns) et [réorganisation](/help/analysis-workspace/workspace-faq/aw-accessibility.md#rearrange-columns) des colonnes de tableau dans Analysis Workspace à l’aide du clavier, y compris les commentaires du lecteur d’écran. Ajout également d’une section [Actions de colonne de tableau](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md#table-column-actions) aux touches de raccourci. |
 | Assistant AI et Data Insights Agent remplacés par un collègue | Suppression des articles sur l’assistant AI et Data Insights Agent . Adobe CX Enterprise Coworker remplace les deux fonctionnalités. Pour plus d’informations, voir [Analyse des données avec la conversation des collègues](https://experienceleague.adobe.com/fr/docs/coworker/content/chat/use-cases/data-insights/analytics-overview). Mise à jour également de la prise en charge des fonctionnalités de [&#128279;](/help/getting-started/aa-vs-cja/cja-aa.md#cja-not-aa) pour refléter la modification. |
 | Canal média payant Content Analytics | Une [documentation](/help/content-analytics/config/paid-media.md) complète sur la configuration automatique des jeux de données et des composants de vue de données résultant de l’utilisation d’un connecteur source de médias achetés (comme Google Ads ou Meta Ads) ainsi que de la configuration et de l’activation du canal de médias achetés Content Analytics. |
-| Informations sur la conversation | [Documentation](/help/conversation-insights/overview.md) pour les informations sur les conversations. |
+| Statistiques de conversation | [Documentation](/help/conversation-insights/overview.md) pour les informations sur les conversations. |
 | Visibilité de la marque | Mise à jour de la documentation pour l’intégration entrante [&#128279;](/help/integrations/bv/bv.md#inbound-integration) avec plus de détails. |
 | **Septembre 2026** | |
 | Comparaison de la zone de travail de parcours sur les flèches et les abandons | Mise à jour du paramètre [!UICONTROL Comparer à] dans [Configurer une visualisation de zone de travail de Parcours &#x200B;](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#configure-visualization-settings) afin d’afficher le pourcentage de changement entre les périodes sur chaque nœud, flèche et abandon du parcours. |
-| Publications de blog intégrées | Intégration des articles de blog suivants :<ul><li>[Playbook complet pour la gestion de « Aucune valeur » dans Adobe CJA](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/the-complete-playbook-for-handling-no-value-in-adobe-cja-12769?profile.language=fr&lang=fr#M598)</li><li>[Exploration approfondie des cas d’utilisation de sortie de données Adobe Experience Platform et Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/adobe-experience-platform-customer-journey-analytics-data-egress-use-cases-deep-dive-12725?profile.language=fr&lang=fr)</li></ul>dans notre article sur les cas d’utilisation de [Exportation de données](/help/use-cases/data-export/overview.md) et un nouvel article sur les cas d’utilisation de [Aucune valeur](/help/use-cases/data-views/no-value.md). |
+| Publications de blog intégrées | Intégration des articles de blog suivants :<ul><li>[Playbook complet pour la gestion de « Aucune valeur » dans Adobe CJA](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/the-complete-playbook-for-handling-no-value-in-adobe-cja-12769?lang=fr#M598)</li><li>[Exploration approfondie des cas d’utilisation de sortie de données Adobe Experience Platform et Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/adobe-experience-platform-customer-journey-analytics-data-egress-use-cases-deep-dive-12725?lang=fr)</li></ul>dans notre article sur les cas d’utilisation de [Exportation de données](/help/use-cases/data-export/overview.md) et un nouvel article sur les cas d’utilisation de [Aucune valeur](/help/use-cases/data-views/no-value.md). |
 | Nouvelles actions de raccourci de redimensionnement | Les nouveaux raccourcis clavier d’Analysis Workspace vous permettent désormais de [redimensionner un panneau ou une visualisation](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md#resize-panel-or-visualization) qu’il soit plus large, plus étroit, plus grand ou plus court. |
 | **août 2026** | |
 | Clarification des informations sur l’actualisation des audiences | Lors de la [publication d’audiences](/help/components/audiences/publish.md#audience-builder), a précisé que le nombre d’audiences qui peuvent être planifiées pour s’actualiser dépend de vos droits Customer Journey Analytics et est compris entre 75 et 150. |

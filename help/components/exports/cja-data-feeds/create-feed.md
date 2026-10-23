@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 39d7aae2c47754899a2ac7d1a544a0b585d99b8b
+source-git-commit: bccb25182630e18943a52ceca621cdfd6696b819
 workflow-type: tm+mt
-source-wordcount: '4362'
-ht-degree: 15%
+source-wordcount: '4243'
+ht-degree: 16%
 ---
 # Créer un flux de données
 
@@ -71,24 +71,6 @@ Avant de créer un flux de données, il est important de comprendre les bases de
 >id="cja_datafeed_frequency_granularity"
 >title="Fréquence et granularité"
 >abstract="**Fréquence de diffusion** (flux actifs) : fréquence de diffusion du flux de données. Les diffusions horaires contiennent l’équivalent d’une heure de données ; les diffusions quotidiennes contiennent l’équivalent d’une journée de données. La période de recherche en amont et le délai de traitement peuvent également affecter les événements inclus.<p>**Granularité** (flux de renvoi) : intervalle de temps utilisé pour diviser les données historiques. Chaque bloc contient l’équivalent d’une journée de données et est diffusé le plus rapidement possible, et non une fois par jour. Ce champ est toujours défini sur Quotidien et ne peut pas être modifié.</p>"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja-df-export-file-name"
->title="Chemin d’accès ou nom de fichier"
->abstract="Indiquez un chemin d’accès ou un nom de fichier (ou les deux) pour déterminer où les fichiers sont envoyés à l’emplacement sélectionné. Pour enregistrer des fichiers dans le dossier de niveau supérieur de l’emplacement, spécifiez `/`.<br/>Pour les flux en direct, vous pouvez utiliser des variables pour rendre le chemin d’accès ou le nom de fichier dynamique. <br/>Par exemple, si vous spécifiez `${yyyy}/${MM}/${dd}/my-feed-${instance_id}-${idx}`, un flux dynamique diffusé le 15 janvier 2027 aura le chemin et le nom de fichier suivants : `[prefix_folder_name]/2027/01/15/my-feed-[UUID]-1.parquet` <br/>Sélectionnez le lien ci-dessous pour obtenir une liste des variables disponibles."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja-df-export-file-name-override"
->title="Remplacer le chemin d&#39;accès ou le nom de fichier par défaut"
->abstract="Activez cette option pour remplacer le chemin d’accès ou le nom de fichier par défaut défini pour cet emplacement. Le remplacement s’applique uniquement à ce flux de données et détermine où les fichiers de flux de données sont envoyés."
 
 <!-- markdownlint-enable MD034 -->
 
