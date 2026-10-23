@@ -220,7 +220,7 @@ Dans la sortie du flux de données, `survey_question` et `survey_answer` sont le
 
 ### Mappage d’identités
 
-Chaque identité du champ [`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap) est exportée sous la forme d’un seul objet . L’objet contient l’espace de noms d’identité (la clé), ainsi que l’identifiant, l’état authentifié et l’indicateur principal. L’espace de noms se répète pour chaque identité de cet espace de noms.
+Chaque identité du champ [`identityMap`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/field-groups/profile/identitymap) est exportée sous la forme d’un seul objet . L’objet contient l’espace de noms d’identité (la clé), ainsi que l’identifiant, l’état authentifié et l’indicateur principal. L’espace de noms se répète pour chaque identité de cet espace de noms.
 
 Seuls les attributs de mappage d’identités qui existent en tant que dimensions dans votre vue de données et que vous ajoutez au flux de données sont exportés.
 
