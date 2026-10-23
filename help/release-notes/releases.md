@@ -7,25 +7,31 @@ autotag-review: '2026-05-19T09:19:46.530Z'
 TQID: 'https://experienceleague.adobe.com/nNV-qOa3LVmHUMLf-R2MwNHY0N67hxG2DWbVrpA-ZpI'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: a8e39571-4463-4aa3-8b3f-4e2341ecf3b3
+    internal-label: Release notes
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
-workflow-type: ht
-source-wordcount: 402
+workflow-type: tm+mt
+source-wordcount: '402'
 ht-degree: 100%
-
 ---
-
-# Stratégie de mise à jour des fonctionnalités de Customer Journey Analytics
+# Stratégie de publication des fonctionnalités de Customer Journey Analytics
 
 Les mises à jour de Customer Journey Analytics fonctionnent sur un modèle de diffusion continu qui permet une approche évolutive et progressive du déploiement des fonctionnalités.
 
@@ -33,17 +39,17 @@ Les mises à jour de Customer Journey Analytics fonctionnent sur un modèle de
 
 [!UICONTROL Analysis Workspace] utilise des indicateurs de fonctionnalité (également appelés « bascules ») pour contrôler la visibilité des nouvelles fonctionnalités, ce qui permet de les tester à échelle contrôlée avant la mise à jour complète. Cette stratégie de mise à jour comprend les phases suivantes :
 
-* **Tests limités** : la mise à jour par étapes commence par un test réalisé par les utilisateurs et utilisatrices internes d’Adobe. Elle est ensuite mise à la disposition d’un petit groupe de comptes clients afin de s’assurer que la fonctionnalité répond aux besoins et aux attentes des clientes et clients.
+* **Tests limités** : la mise à jour par étapes commence par un test réalisé par les utilisateurs et utilisatrices internes d’Adobe. Elle est ensuite mise à la disposition d’un petit groupe de comptes clients afin de s’assurer que la fonctionnalité répond aux besoins et aux attentes des clients.
 
-* **Début du déploiement** : le déploiement d’une mise à jour par phases commence par la phase Tests limités. La mise à jour passe à une disponibilité de 0 % à 100 % pour les clients en quelques mois. Le déploiement par phases se produit au niveau de l’organisation CX Enterprise, de sorte que tous les personnes autorisées d’une même organisation bénéficient de la même expérience.
+* **Début du déploiement** : le déploiement d’une mise à jour par phases commence par la phase Tests limités. La version passe à une disponibilité de 0 % à 100 % pour les clients et clientes en quelques mois. Le déploiement par phases se produit au niveau de l’organisation CX Enterprise, de sorte que tous les personnes autorisées d’une même organisation bénéficient de la même expérience.
 
 * **Disponibilité générale** : la fonctionnalité est disponible pour 100 % des organisations CX Enterprise autorisées et la mise à jour est terminée.
 
-Selon les mises à jour de fonctionnalité, la chronologie peut varier entre la mise en production et la disponibilité générale. L’objectif est que la mise à jour soit courte, afin qu’elle atteigne la disponibilité générale dans un délai de 2 mois à compter de la mise en production.
+Pour chaque publication de fonctionnalité, la chronologie entre le début du déploiement (RTP) et la disponibilité générale (GA) peut varier. L’objectif est de maintenir des publications courtes, afin que, dans un délai de 2 mois à compter du début du déploiement (RTP), une fonctionnalité atteigne la disponibilité générale (GA).
 
 ## Indicateurs de fonctionnalités
 
-Les indicateurs de fonctionnalités permettent de contrôler la visibilité des nouvelles fonctionnalités pendant la mise à jour. Adobe recommande d’autoriser `app.launchdarkly.com` via le pare-feu de votre organisation pour une expérience optimale lors des mises à jour. Ces indicateurs sont supprimés une fois qu’une fonctionnalité est disponible pour toutes les personnes. Voir [Domaines utilisés par Customer Journey Analytics](../technotes/domains.md) pour plus d’informations.
+Les indicateurs de fonctionnalités permettent de contrôler la visibilité des nouvelles fonctionnalités pendant leur publication. Adobe recommande d’autoriser `app.launchdarkly.com` via le pare-feu de votre organisation pour une expérience optimale lors des mises à jour. Ces indicateurs sont supprimés une fois qu’une fonctionnalité est disponible pour toutes les personnes. Voir [Domaines utilisés par Customer Journey Analytics](../technotes/domains.md) pour plus d’informations.
 
 Vous pouvez à tout moment afficher vos indicateurs de fonctionnalités actifs sous **Aide > À propos de Workspace > Indicateurs de fonctionnalités actifs**.
 
@@ -55,5 +61,5 @@ Les mises à jour par phases permettent à Adobe de mieux adapter le processus d
 
 | Question | Réponse |
 | --- | --- |
-| Puis-je demander un accès anticipé à une fonctionnalité ? | Non. Aucun accès anticipé ne sera accordé.<br>Si vous voulez tester les concepts Analytics en avant-première, nous vous encourageons à essayer [Adobe Analytics Labs](https://experienceleague.adobe.com/docs/analytics/analyze/labs.html?lang=fr) pour faire part de vos commentaires sur nos innovations de pointe. |
-| Cette stratégie de mise à jour affecte-t-elle mon accès aux fonctionnalités ? | Non. Quand une fonctionnalité atteint la disponibilité générale, vous avez accès à la fonctionnalité à condition qu’elle soit incluse dans votre package Analytics. |
+| Puis-je demander un accès anticipé à une fonctionnalité ? | Non. Aucun accès anticipé ne sera accordé.<br>Si vous voulez tester les concepts Analytics en avant-première, nous vous encourageons à essayer [Adobe Analytics Labs](https://experienceleague.adobe.com/docs/analytics/analyze/labs.html?lang=fr) pour faire part de vos commentaires sur nos innovations de pointe. |
+| Cette stratégie de mise à jour affecte-t-elle mon accès aux fonctionnalités ? | Non. Quand une fonctionnalité atteint la disponibilité générale, vous avez accès à la fonctionnalité à condition qu’elle soit incluse dans votre package Analytics. |
