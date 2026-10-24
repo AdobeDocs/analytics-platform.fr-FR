@@ -55,10 +55,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 6bc56f504e19548e7e1cf0a6b32df54c45240749
+source-git-commit: f7d853a3b658328f952b675f838ce314b7c30fb1
 workflow-type: tm+mt
-source-wordcount: '7362'
-ht-degree: 94%
+source-wordcount: '7412'
+ht-degree: 93%
 ---
 
 # Customer Journey Analytics - Mises à jour de la documentation
@@ -70,7 +70,8 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Fonctionnalité | Description |
 |---|---|
 | **Octobre 2026** | |
-| Respect de la casse pour les opérateurs de segment | Clarification du fait que [les opérateurs standard](/help/components/segments/seg-operators.md#standard-operators) renvoient des résultats indépendamment de la casse, à l’exception de **[!UICONTROL correspondances]** et **[!UICONTROL ne correspondent pas]**. |
+| Verrouiller la sélection pour les visualisations | Restructuré [Gérer les sources de données](/help/analysis-workspace/visualizations/t-sync-visualization.md) pour séparer la configuration des paramètres de source de données du verrouillage de la sélection. Elle a également expliqué comment fonctionne la [sélection de verrouillage](/help/analysis-workspace/visualizations/t-sync-visualization.md#lock-selection) lorsqu’une visualisation est verrouillée sur des lignes dans un tableau à structure libre, y compris ce qui se produit lorsque des lignes de répartition verrouillées ne se trouvent plus dans le tableau. |
+| Respect de la casse pour les opérateurs de segment | Il a été précisé que lorsque vous utilisez [opérateurs standard](/help/components/segments/seg-operators.md#standard-operators), les résultats ne respectent pas la casse, à l’exception de **[!UICONTROL correspondances]** et **[!UICONTROL ne correspondent pas]**. |
 | Navigation au clavier pour les colonnes du tableau | Documentation sur la [redimensionnement](/help/analysis-workspace/workspace-faq/aw-accessibility.md#resize-columns) et [réorganisation](/help/analysis-workspace/workspace-faq/aw-accessibility.md#rearrange-columns) des colonnes de tableau dans Analysis Workspace à l’aide du clavier, y compris les commentaires du lecteur d’écran. Ajout également d’une section [Actions de colonne de tableau](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md#table-column-actions) aux touches de raccourci. |
 | Assistant AI et Data Insights Agent remplacés par un collègue | Suppression des articles sur l’assistant AI et Data Insights Agent . Adobe CX Enterprise Coworker remplace les deux fonctionnalités. Pour plus d’informations, voir [Analyse des données avec la conversation des collègues](https://experienceleague.adobe.com/fr/docs/coworker/content/chat/use-cases/data-insights/analytics-overview). Mise à jour également de la prise en charge des fonctionnalités de [&#128279;](/help/getting-started/aa-vs-cja/cja-aa.md#cja-not-aa) pour refléter la modification. |
 | Canal média payant Content Analytics | Une [documentation](/help/content-analytics/config/paid-media.md) complète sur la configuration automatique des jeux de données et des composants de vue de données résultant de l’utilisation d’un connecteur source de médias achetés (comme Google Ads ou Meta Ads) ainsi que de la configuration et de l’activation du canal de médias achetés Content Analytics. |

@@ -21,9 +21,9 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 21a2b0cc296d30de7f656a658d7e382c8c4ea835
+source-git-commit: ef2836930bd1fefb99115d4a73b9b0d4a178ccd3
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1211'
 ht-degree: 37%
 ---
 # Opérateurs
@@ -53,7 +53,7 @@ Par exemple, vous avez un nom de page appelé *Mon produit cool*.
 
 >[!NOTE]
 >
->Lorsque vous utilisez des opérateurs standard, les valeurs que vous saisissez renvoient des résultats indépendamment de la casse, à l’exception de **[!UICONTROL correspond]** et **[!UICONTROL ne correspond pas]**.
+>Lorsque vous utilisez des opérateurs standard, les résultats ne respectent pas la casse, à l’exception de **[!UICONTROL correspondances]** et **[!UICONTROL ne correspondent pas]**.
 >
 >Par exemple, la fonction **[!UICONTROL Nom de la page]** **[!UICONTROL est égal à]** `search results` renvoie *Résultats de la recherche*, *Résultats de la recherche* et *Résultats de la recherche*.
 
