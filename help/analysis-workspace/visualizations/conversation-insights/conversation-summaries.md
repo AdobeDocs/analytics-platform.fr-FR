@@ -51,7 +51,7 @@ Pour créer et configurer une visualisation **[!UICONTROL Récapitulatifs des co
 
 1. Sélectionnez **[!UICONTROL Créer]** pour créer la visualisation. Sélectionnez **[!UICONTROL Réinitialiser]** pour réinitialiser les valeurs de configuration aux valeurs par défaut. Sélectionnez **[!UICONTROL Annuler]** pour annuler la configuration.
 
-Pour reconfigurer la visualisation **[!UICONTROL Synthèses des conversations]**, sélectionnez ![Modifier](/help/assets/icons/Edit.svg) en regard de **[!UICONTROL Mesure : _mesure_]**ou **[!UICONTROL Mesure :_mesure_]** | **[!UICONTROL Segments : _segments_]**.
+Pour reconfigurer la visualisation **[!UICONTROL Synthèses des conversations]**, sélectionnez ![Modifier](/help/assets/icons/Edit.svg) en regard de **[!UICONTROL Mesure : _mesure_]**&#x200B;ou **[!UICONTROL Mesure :_mesure_]** | **[!UICONTROL Segments : _segments_]**.
 
 ## Utilisation
 
