@@ -4,12 +4,12 @@ title: Sujets tendance
 feature: Visualizations
 role: User
 hide: true
-source-git-commit: ccaa957e79fba24292316c7447be786f57f03493
+source-git-commit: 85311bf19368560ef54a3361edf2e7c13590929c
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 7%
+source-wordcount: '424'
+ht-degree: 8%
 ---
-# Sujets tendance
+# Sujets tendance {#trending-topics}
 
 >[!CONTEXTUALHELP]
 >id="workspace_trendingtopics_button"
@@ -25,21 +25,26 @@ La visualisation ![Flux](/help/assets/icons/Feed.svg) **[!UICONTROL Sujets de te
 
 Vous pouvez rechercher des rubriques spécifiques et comparer le nombre et le pourcentage de chaque rubrique à chaque niveau avec d’autres plages de données.
 
-## Création et configuration
+## Création et configuration {#trendimg-topics-create-and-configure}
 
 >[!CONTEXTUALHELP]
->id="workspace_trendingtopics_attribution"
->title="Attribution des mesures des rubriques de tendance"
->abstract="Activer un modèle d’attribution autre que celui par défaut pour la mesure sélectionnée."
+>id="workspace_trendingtopics_usenondefaultattributionmodel"
+>title="Utilisation d’un modèle d’attribution différent du modèle par défaut"
+>abstract="Activez un modèle d’attribution autre que celui par défaut pour cette mesure."
 
-Pour créer et configurer une visualisation des rubriques de tendance :
+>[!CONTEXTUALHELP]
+>id="workspace_trendingtopics_usenondefaultattributionmodel_disabled"
+>title="Utilisation d’un modèle d’attribution différent du modèle par défaut"
+>abstract="Les modèles d’attribution non par défaut ne sont pas disponibles pour cette mesure."
+
+Pour créer et configurer une visualisation **[!UICONTROL Rubriques de tendance]** :
 
 1. Ajoutez une visualisation ![Flux](/help/assets/icons/Feed.svg) **[!UICONTROL Rubriques de tendance]** . Voir [Ajouter une visualisation à un panneau](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
 
 1. Dans la **[!UICONTROL Rubriques de tendance]** configuration de la visualisation :
 
    1. Sélectionnez une **[!UICONTROL mesure de classement]**. Par exemple : **[!UICONTROL Conversations]**.
-   1. Si vous souhaitez définir [attribution](/help/analysis-workspace/attribution/models.md) sur la mesure, sélectionnez **[!UICONTROL Définir l’attribution]**, puis sélectionnez **[!UICONTROL Modèle]**, **[!UICONTROL Conteneur]** et **[!UICONTROL Intervalle de recherche en amont]**.
+   1. Si vous souhaitez utiliser un modèle [attribution](/help/analysis-workspace/attribution/models.md) autre que celui par défaut pour la mesure, sélectionnez **[!UICONTROL Utiliser un modèle d’attribution autre que celui par défaut]**, puis sélectionnez **[!UICONTROL Modèle]**, **[!UICONTROL Conteneur]** et **[!UICONTROL Intervalle de recherche en amont]**.
 1. Sélectionnez **[!UICONTROL Créer]** pour créer la visualisation. Sélectionnez **[!UICONTROL Réinitialiser]** pour réinitialiser les valeurs de configuration aux valeurs par défaut.
 
 Pour reconfigurer la visualisation des rubriques de tendance, sélectionnez ![Modifier](/help/assets/icons/Edit.svg) en regard de **[!UICONTROL Mesure de classement : _mesure de classement_ | Niveaux de sous-rubrique : _x_]**.
