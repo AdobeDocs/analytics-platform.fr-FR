@@ -1,7 +1,7 @@
 ---
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: ccaa957e79fba24292316c7447be786f57f03493
 workflow-type: tm+mt
-source-wordcount: '5584'
+source-wordcount: '5605'
 ht-degree: 95%
 ---
 # Extraits
@@ -129,6 +129,7 @@ Un conteneur d’attribution définit la portée souhaitée pour l’attribution
 
 * **Session :** recherche en amont jusqu’au début d’une session au cours de laquelle une conversion s’est produite. Les intervalles de recherche en amont des sessions respectent le [délai d’expiration de session](/help/data-views/create-dataview.md#session-settings) modifié dans une vue de données. Lorsque l’option **[!UICONTROL Session]** est sélectionnée, l’[intervalle de recherche en amont Attribution](#atribution-lookback-window) est automatiquement défini sur **[!UICONTROL Intervalle de rapport]** et ne peut pas être modifié.
 * **Personne** : examine les conversions à partir de la portée du conteneur de personnes.
+* **Conversation** : examine les conversions à partir de la portée du conteneur de conversation. Ce conteneur est disponible pour les visualisations et composants [Informations sur les conversations](/help/conversation-insights/overview.md).
 * **Compte global** [!BADGE B2B Edition]{type=Informative} : examine les conversions à partir de la portée du conteneur de comptes globaux.
 * **Comptes** [!BADGE B2B Edition]{type=Informative} : examine les conversions à partir de la portée du conteneur de personnes.
 * **Opportunité** [!BADGE B2B Edition]{type=Informative} : examine les conversions à partir de la portée du conteneur d’opportunités.
