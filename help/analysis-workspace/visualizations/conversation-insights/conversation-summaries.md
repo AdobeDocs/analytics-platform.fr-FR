@@ -4,10 +4,10 @@ title: Synthèses de conversation
 feature: Visualizations
 role: User
 hide: true
-source-git-commit: ccaa957e79fba24292316c7447be786f57f03493
+source-git-commit: 2cca5dfaec6be8f22308e09a023e9e57bec387b7
 workflow-type: tm+mt
-source-wordcount: '329'
-ht-degree: 8%
+source-wordcount: '351'
+ht-degree: 10%
 ---
 # Synthèses des conversations {#conversation-summaries}
 
@@ -30,9 +30,14 @@ La visualisation présente un résumé de la mesure sélectionnée (par exemple,
 ## Création et configuration {#conversation-summaries-create-configure}
 
 >[!CONTEXTUALHELP]
->id="workspace_conversationsummaries_attribution"
->title="Attribution des résumés de conversation"
->abstract="Activer un modèle d’attribution autre que celui par défaut pour la mesure sélectionnée."
+>id="workspace_conversationsummaries_usenondefaultattributionmodel"
+>title="Utilisation d’un modèle d’attribution différent du modèle par défaut"
+>abstract="Activez un modèle d’attribution autre que celui par défaut pour cette mesure."
+
+>[!CONTEXTUALHELP]
+>id="workspace_conversationsummaries_usenondefaultattributionmodel_disabled"
+>title="Utilisation d’un modèle d’attribution différent du modèle par défaut"
+>abstract="Les modèles d’attribution non par défaut ne sont pas disponibles pour cette mesure."
 
 Pour créer et configurer une visualisation **[!UICONTROL Récapitulatifs des conversations]** :
 
@@ -41,12 +46,12 @@ Pour créer et configurer une visualisation **[!UICONTROL Récapitulatifs des co
 1. Dans la configuration de visualisation **[!UICONTROL Synthèses des conversations]** :
 
    1. Sélectionnez une **[!UICONTROL mesure]**. Par exemple : **[!UICONTROL Conversations]**.
-   1. Si vous souhaitez définir [attribution](/help/analysis-workspace/attribution/models.md) sur la mesure, sélectionnez **[!UICONTROL Définir l’attribution]**, puis sélectionnez **[!UICONTROL Modèle]**, **[!UICONTROL Conteneur]** et **[!UICONTROL Intervalle de recherche en amont]**.
+   1. Si vous souhaitez utiliser un modèle [attribution](/help/analysis-workspace/attribution/models.md) autre que celui par défaut pour la mesure, sélectionnez **[!UICONTROL Utiliser un modèle d’attribution autre que celui par défaut]**, puis sélectionnez **[!UICONTROL Modèle]**, **[!UICONTROL Conteneur]** et **[!UICONTROL Intervalle de recherche en amont]**.
    1. Vous pouvez éventuellement appliquer un segment à la visualisation. Sélectionnez un segment dans le menu déroulant **[!UICONTROL Segments]**.
 
 1. Sélectionnez **[!UICONTROL Créer]** pour créer la visualisation. Sélectionnez **[!UICONTROL Réinitialiser]** pour réinitialiser les valeurs de configuration aux valeurs par défaut. Sélectionnez **[!UICONTROL Annuler]** pour annuler la configuration.
 
-Pour reconfigurer la visualisation **[!UICONTROL Synthèses des conversations]**, sélectionnez ![Modifier](/help/assets/icons/Edit.svg) en regard de **[!UICONTROL Mesure : _mesure_]**&#x200B;ou **[!UICONTROL Mesure :_mesure_]** | **[!UICONTROL Segments : _segments_]**.
+Pour reconfigurer la visualisation **[!UICONTROL Synthèses des conversations]**, sélectionnez ![Modifier](/help/assets/icons/Edit.svg) en regard de **[!UICONTROL Mesure : _mesure_]**ou **[!UICONTROL Mesure :_mesure_]** | **[!UICONTROL Segments : _segments_]**.
 
 ## Utilisation
 
