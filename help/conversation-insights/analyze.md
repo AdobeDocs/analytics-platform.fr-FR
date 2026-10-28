@@ -24,23 +24,37 @@ topic_v2:
     internal-label: Customer journeys
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: d08ee4bf4c5e53e16389c5d58971a97dd5f78c0e
 workflow-type: tm+mt
-source-wordcount: '132'
+source-wordcount: '190'
 ht-degree: 0%
 ---
 
 # Analyser les informations de conversation
 
-## Analyse simple
 
 Pour analyser les Insights de conversation, vous devez créer ou modifier un projet dans Analysis Workspace et utiliser l’une des vues de données configurées comme vue de données pour un ou plusieurs panneaux de votre projet.
 
+## Analyse simple
+
+Pour créer des tableaux à structure libre ou des visualisations, utilisez les mesures de conversation (**[!UICONTROL Tours]**, **[!UICONTROL Conversations]**, **[!UICONTROL Sentiment]**, **[!UICONTROL Ton de conversation]**, etc.) pour afficher un aperçu des conversations.
+
 +++ Exemple de projet
 
-![Exemple de projet de base pour les informations de conversation](assets/conversation-insights-analyze-sample-project-basic.png)
+![Exemple de projet de base pour les informations de conversation](assets/conversation-insights-analyze-sample-project-basic.png){zoomable="yes"}
 
 +++
+
+## Analyse détaillée
+
+Pour effectuer une analyse détaillée des conversations, utilisez les visualisations [Sujets en tendance](/help/analysis-workspace/visualizations/conversation-insights/trending-topics.md), [Résumés des conversations](/help/analysis-workspace/visualizations/conversation-insights/conversation-summaries.md) et [Révision des conversations](/help/analysis-workspace/visualizations/conversation-insights/conversation-review.md). Ces visualisations offrent différentes perspectives sur les données de conversation.
+
++++ Exemple de projet
+
+![Exemple de projet détaillé pour Conversation Insights](assets/conversation-insights-analyze-sample-project-detailed.png){zoomable="yes"}
+
++++
+
 
 ## Analyser les conversations à grande échelle et dans leur contexte
 
@@ -52,6 +66,6 @@ Pour analyser les conversations à grande échelle et fournir un contexte pour c
 
 +++ Exemple de projet
 
-À déterminer.
+En attente.
 
 +++ 

@@ -4,10 +4,10 @@ title: Révision de conversation
 feature: Visualizations
 role: User
 hide: true
-source-git-commit: f1f19b229d06a69ae180bff7dc8648a350465aa0
+source-git-commit: d08ee4bf4c5e53e16389c5d58971a97dd5f78c0e
 workflow-type: tm+mt
-source-wordcount: '173'
-ht-degree: 9%
+source-wordcount: '188'
+ht-degree: 8%
 ---
 # Examen de la conversation
 
@@ -22,7 +22,7 @@ ht-degree: 9%
 >abstract="comprendre le contexte et le flux d’une conversation individuelle, y compris les horodatages et les signaux ; Configurez les signaux à afficher."
 
 
-La visualisation ![Chat](/help/assets/icons/Chat.svg) **[!UICONTROL Révision de la conversation]** affiche l’échange complet tour à tour dans le cadre de la conversation entre le client et l’agent.
+La visualisation ![Chat](/help/assets/icons/Chat.svg) **[!UICONTROL Révision de la conversation]** montre l’échange complet tour à tour entre le client et l’agent.
 
 La visualisation vous permet de comprendre le contexte et le flux d’une conversation individuelle, y compris les horodatages et les signaux. Vous pouvez configurer les signaux à afficher ou non.
 
@@ -34,15 +34,21 @@ Pour créer et configurer une visualisation ![Chat](/help/assets/icons/Chat.svg)
 
 1. Dans la **[!UICONTROL Révision des conversations]** configuration de la visualisation :
 
-   1. Sélectionnez une **[!UICONTROL Conversation]**.
+   * Sélectionnez une **[!UICONTROL Conversation]**.
 
 1. Sélectionnez **[!UICONTROL Créer]** pour créer la visualisation. Sélectionnez **[!UICONTROL Réinitialiser]** pour réinitialiser les valeurs de configuration aux valeurs par défaut. Sélectionnez **[!UICONTROL Annuler]** pour annuler la configuration.
 
-Pour reconfigurer la visualisation **[!UICONTROL Révision de la conversation]**, sélectionnez ![Modifier](/help/assets/icons/Edit.svg) en regard de **[!UICONTROL Conversation : _conversation_]**.
+Pour reconfigurer la visualisation **[!UICONTROL Révision de la conversation]**, sélectionnez ![Modifier](/help/assets/icons/Edit.svg).
 
 ## Utilisation
 
-Pour utiliser la visualisation :
+Utilisez la barre de défilement segmentée verticale pour parcourir la conversation.
+
+**[!UICONTROL Début de session]** indique le début de la conversation. **[!UICONTROL Fin de session]** indique la fin de la conversation.
+
+![Révision des conversations](assets/conversation-review.png)
 
 
-## Paramètres
+
+
+
