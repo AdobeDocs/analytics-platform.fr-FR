@@ -2,9 +2,9 @@
 user-guide-title: Guide de Customer Journey Analytics (parcours client)
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 89dc7258649e9c16d6a43c15ced42e1af7c6009a
+source-git-commit: 3fc129c2eeb5fd86e8ef4d885a4682dd819fc481
 workflow-type: tm+mt
-source-wordcount: '1521'
+source-wordcount: '1528'
 ht-degree: 88%
 ---
 
@@ -336,7 +336,7 @@ ht-degree: 88%
   + [Cas dʼutilisation du secteur](../guided-analysis/industry-use-cases.md)
   + [Questions fréquentes](../guided-analysis/faq.md)
 
-+ Informations sur la conversation {#conversation-insights}
++ Statistiques de conversation {#conversation-insights}
   + [Vue d’ensemble](/help/conversation-insights/overview.md)
   + [Configurer](/help/conversation-insights/configure.md)
   + [Gérer](/help/conversation-insights/manage.md)
@@ -435,13 +435,13 @@ ht-degree: 88%
       + {hide-from-toc}[Vue d’ensemble](/help/components/exports/cja-data-feeds/data-feed-overview.md)
       + {hide-from-toc}[Comparer les flux de données Adobe Analytics](/help/components/exports/cja-data-feeds/df-comparison.md)
       + {hide-from-toc}[Comparer Workspace aux flux de données](/help/components/exports/cja-data-feeds/df-comparison-workspace.md)
-      + {hide-from-toc}[&#x200B; Disponibilité des composants &#x200B;](/help/components/exports/cja-data-feeds/df-components.md)
+      + {hide-from-toc}[ Disponibilité des composants ](/help/components/exports/cja-data-feeds/df-components.md)
       + {hide-from-toc}[Préparer le mappage des colonnes](/help/components/exports/cja-data-feeds/df-column-mapping-prep.md)
       + {hide-from-toc}[Mapper les colonnes](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)
       + {hide-from-toc}[Créer des flux de données](/help/components/exports/cja-data-feeds/create-feed.md)
       + {hide-from-toc}[Segmentation dans les flux de données](/help/components/exports/cja-data-feeds/df-segmentation.md)
       + {hide-from-toc}[Appliquer des transformations de données](/help/components/exports/cja-data-feeds/df-data-transformations.md)
-      + {hide-from-toc}[&#x200B; Composants de sous-événement &#x200B;](/help/components/exports/cja-data-feeds/df-sub-event.md)
+      + {hide-from-toc}[ Composants de sous-événement ](/help/components/exports/cja-data-feeds/df-sub-event.md)
   + Dictionnaire de données {#data-dictionary}
     + [Vue d’ensemble](../components/data-dictionary/data-dictionary-overview.md)
     + [Afficher des informations sur les composants dans le dictionnaire de données](../components/data-dictionary/view-data-dictionary.md)
@@ -524,6 +524,7 @@ ht-degree: 88%
   + Données cross-canal {#cross-channel}
     + [Analyse des données sur plusieurs canaux](../use-cases/cross-channel/cross-channel.md)
     + [Importer les données du centre d’appel et web](../use-cases/cross-channel/call-center.md)
+    + {hide-from-toc}[Joindre des données de média payantes à des données web](../use-cases/cross-channel/paid-media-web.md)
   + Export de données {#data-export}
     + [Vue d’ensemble](../use-cases/data-export/overview.md)
     + [Extension BI](../use-cases/data-export/bi-extension.md)
@@ -536,7 +537,7 @@ ht-degree: 88%
   + Ingestion de données {#data-ingestion}
     + [Ingérer et utiliser des données de Marketo Engage](../use-cases/data-ingestion/marketo.md)
     + [Ingérer et utiliser des audiences Experience Platform](../use-cases/data-ingestion/ingest-aep-segments.md)
-    + {hide-from-toc}[Ingérer et utiliser des données de médias achetés](/help/use-cases/data-ingestion/paid-media.md)
+    + {hide-from-toc}[Ingérer et utiliser des données de médias achetés](/help/use-cases/cross-channel/paid-media-web.md)
   + Vues des données {#data-views}
     + [Cas dʼutilisation des vues de données](/help/use-cases/data-views/data-views-usecases.md)
     + [Utiliser des dimensions et des mesures de liaison](/help/use-cases/data-views/binding-dimensions-metrics.md)
@@ -579,7 +580,7 @@ ht-degree: 88%
       + [Lier des lectures de session](/help/use-cases/third-party/quantum-metric/tie-session-replays.md)
       + [Utiliser des cartes thermiques](/help/use-cases/third-party/quantum-metric/heatmap.md)
       + [Ajouter des événements de friction](/help/use-cases/third-party/quantum-metric/friction-events.md)
-      + {hide-from-toc}[Connecteur &#x200B;](/help/use-cases/third-party/quantum-metric/source-connector.md)
+      + {hide-from-toc}[Connecteur ](/help/use-cases/third-party/quantum-metric/source-connector.md)
 
 + Labs {#labs}
   + [Guide d’utilisation de Labs](../labs/labs.md)
