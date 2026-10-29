@@ -48,13 +48,13 @@ L’expérience intégrée au produit pour Coworker est disponible dans un panne
 <!--
 FOLLOW-UP: Coworker permissions are still being finalized. The Coworker permission name below is a placeholder. Confirm the name, category, and Admin Console steps with the SME.
 
-* **Permissions**: In the [!UICONTROL Adobe Admin Console], the [!UICONTROL Reporting Tools] **[!UICONTROL Coworker]** permission determines access to Coworker. A [product profile administrator](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) must add this permission to your product profile. For more information, see [Access control](/help/technotes/access-control.md#access-control).
+* **Permissions**: In the [!UICONTROL Adobe Admin Console], the [!UICONTROL Reporting Tools] **[!UICONTROL Coworker]** permission determines access to Coworker. A [product profile administrator](https://helpx.adobe.com/fr/enterprise/using/manage-product-profiles.html) must add this permission to your product profile. For more information, see [Access control](/help/technotes/access-control.md#access-control).
 
 -->
 
 ### Choisir entre l’application Coworker dans Workspace et l’application Coworker
 
-L’expérience intégrée au produit pour Coworker possède de nombreuses fonctionnalités similaires à celles de l’application [&#128279;](https://experienceleague.adobe.com/en/docs/coworker/content/chat/use-cases/data-insights/analytics-chat), y compris les compétences auxquelles vous avez accès. Cependant, il existe des différences importantes qui déterminent dans quels cas vous pouvez utiliser l’un plutôt que l’autre :
+L’expérience intégrée au produit pour Coworker possède de nombreuses fonctionnalités similaires à celles de l’application [&#128279;](https://experienceleague.adobe.com/fr/docs/coworker/content/chat/use-cases/data-insights/analytics-chat), y compris les compétences auxquelles vous avez accès. Cependant, il existe des différences importantes qui déterminent dans quels cas vous pouvez utiliser l’un plutôt que l’autre :
 
 | | Expérience intégrée au produit pour Coworker | Application de collègue |
 | --- | --- | --- |
