@@ -4,7 +4,7 @@ title: Sujets tendance
 feature: Visualizations
 role: User
 hide: true
-source-git-commit: 85311bf19368560ef54a3361edf2e7c13590929c
+source-git-commit: 113a215e26092c65d6eaf2c321f60d3f3a5015b8
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 8%
@@ -21,6 +21,8 @@ ht-degree: 8%
 >title="Sujets tendance"
 >abstract="Analysez les rubriques de tendance en fonction de la mesure de classement sélectionnée. Sélectionnez des rubriques pour effectuer une analyse jusqu&#39;à cinq niveaux de profondeur. Recherchez des rubriques spécifiques et comparez les rubriques à d’autres périodes."
 
+{{release-limited-testing}}
+
 La visualisation ![Flux](/help/assets/icons/Feed.svg) **[!UICONTROL Sujets de tendance]** vous permet d’explorer et d’analyser les sujets de tendance dans le cadre des informations sur les conversations.
 
 Vous pouvez rechercher des rubriques spécifiques et comparer le nombre et le pourcentage de chaque rubrique à chaque niveau avec d’autres plages de données.
@@ -36,6 +38,7 @@ Vous pouvez rechercher des rubriques spécifiques et comparer le nombre et le po
 >id="workspace_trendingtopics_usenondefaultattributionmodel_disabled"
 >title="Utilisation d’un modèle d’attribution différent du modèle par défaut"
 >abstract="Les modèles d’attribution non par défaut ne sont pas disponibles pour cette mesure."
+
 
 Pour créer et configurer une visualisation **[!UICONTROL Rubriques de tendance]** :
 
@@ -57,7 +60,7 @@ Pour utiliser la visualisation :
 
 * Pointez sur une rubrique pour afficher une fenêtre contextuelle contenant plus de détails. ➊
 
-* Pour afficher les sous-rubriques de tendance pour une rubrique à un niveau inférieur, sélectionnez une rubrique à un niveau spécifique. Si aucune rubrique n&#39;est disponible à un sous-niveau, ![DataRemove](/help/assets/icons/DataRemove.svg) **[!UICONTROL Aucune sous-rubrique trouvée pour _topic > sous-rubrique > ...]**.
+* Pour afficher les sous-rubriques de tendance pour une rubrique à un niveau inférieur, sélectionnez une rubrique à un niveau spécifique. Si aucune rubrique n’est disponible à un sous-niveau, vous voyez ![DataRemove](/help/assets/icons/DataRemove.svg) **[!UICONTROL Aucune sous-rubrique trouvée pour _topic > sous-topic_ > ...]**.
 
 * Utilisez ![Rechercher](/help/assets/icons/Search.svg) **[!UICONTROL _Rechercher des rubriques_]** pour rechercher rapidement des rubriques. ➋
 

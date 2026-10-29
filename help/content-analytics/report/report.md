@@ -33,9 +33,9 @@ topic_v2:
     internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: 62a6bb436d59ab7a5a7be515afbe1f5f0f7817ee
 workflow-type: tm+mt
-source-wordcount: '1643'
+source-wordcount: '1650'
 ht-degree: 43%
 ---
 
@@ -91,7 +91,7 @@ Des miniatures s’affichent lorsque vous pointez sur un point de données dans 
 
 Vous pouvez ouvrir une fenêtre contextuelle d’aperçu. Pour ce faire, procédez comme suit :
 
-* Sélectionnez ![&#x200B; InfoOutline &#x200B;](/help/assets/icons/InfoOutline.svg) dans un [tableau à structure libre](#freeform-table).
+* Sélectionnez ![ InfoOutline ](/help/assets/icons/InfoOutline.svg) dans un [tableau à structure libre](#freeform-table).
 * Sélectionnez une barre spécifique dans une visualisation [barre](#bar-and-horizontal-bar) ou [barre horizontale](#bar-and-horizontal-bar) ou un point de données dans une visualisation [nuage de points](#scatter).
 
 
@@ -219,7 +219,7 @@ Pour utiliser le modèle :
 
 1. Sélectionnez **[!UICONTROL Workspace]** dans le menu principal.
 1. Vérifiez que vous avez sélectionné une vue de données déjà configurée pour Content Analytics.
-1. Recherchez ou utilisez des segments (**[!UICONTROL Web]** pour **[!UICONTROL Canal]** et **[!UICONTROL Engagement]** pour **[!UICONTROL Cas d’utilisation]**&#x200B;s) pour rechercher et sélectionner le modèle **[!UICONTROL Content Analytics de médias payants]**.
+1. Recherchez ou utilisez des segments (**[!UICONTROL Web]** pour **[!UICONTROL Canal]** et **[!UICONTROL Engagement]** pour **[!UICONTROL Cas d’utilisation]**s) pour rechercher et sélectionner le modèle **[!UICONTROL Content Analytics de médias payants]**.
 1. Sélectionnez **[!UICONTROL Utiliser le modèle]**.
 
 Un projet **[!UICONTROL Content Analytics - Données récapitulatives de médias payants]** s’ouvre dans [Analysis Workspace](/help/analysis-workspace/home.md). Le projet se compose du **[!UICONTROL Paid Media Performance]** [panel](/help/analysis-workspace/c-panels/panels.md), avec des [tableaux à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) et [visualisations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md). Utilisez le panneau pour passer en revue la portée, l’engagement, les dépenses et l’efficacité des médias achetés sur les réseaux, les comptes, les campagnes, les expériences et les ressources. Les mesures et dimensions du panneau restent intentionnellement dans le grain résumé de la ressource multimédia payante ; ne combinez pas les jeux de données de résumé aux données d’événement.
@@ -228,4 +228,5 @@ Un projet **[!UICONTROL Content Analytics - Données récapitulatives de médias
 >
 >[Composants Content Analytics](components.md)
 >[Utiliser des modèles](/help/analysis-workspace/templates/use-templates.md#web-engagement)
+>[Joignez les données de médias achetés aux données web](/help/use-cases/cross-channel/paid-media-web.md)
 >

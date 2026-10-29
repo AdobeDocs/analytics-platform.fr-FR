@@ -30,12 +30,14 @@ topic_v2:
     internal-label: Data collection
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: 113a215e26092c65d6eaf2c321f60d3f3a5015b8
 workflow-type: tm+mt
 source-wordcount: '2563'
 ht-degree: 5%
 ---
 # Implémenter des informations de conversation
+
+{{release-limited-testing}}
 
 Pour produire des données de conversation sous la forme d’événements d’expérience XDM et vous assurer que ces événements d’expérience de conversation aboutissent dans Adobe Experience Platform sous la forme de jeux de données, instrumentez votre application d’agent ou service pour utiliser des informations de conversation.
 
@@ -441,7 +443,7 @@ Pour implémenter des événements qui propagent le groupe de champs Information
 Vous pouvez ajouter des groupes de champs facultatifs au schéma que vous utilisez pour les jeux de données d’invite, de réponse et de commentaires. Par exemple :
 
 * Groupe de champs **Détails web**. Pour capturer les détails de la page web dans laquelle la conversation a été incorporée.
-* Groupe de champs Détails du Commerce **&#x200B;**. Pour capturer les détails du produit recommandé mentionné dans le cadre de la conversation.
+* Groupe de champs Détails du Commerce ****. Pour capturer les détails du produit recommandé mentionné dans le cadre de la conversation.
 
 Le client est chargé de produire les événements de conversation source. Adobe effectue l’extraction du signal et le mélange des données. Le client n’a pas besoin de mettre en œuvre les services d’extraction ou de mélange de signaux.
 
@@ -477,7 +479,7 @@ Vous trouverez ci-dessous un exemple d’utilisation du groupe de champs Événe
     ]
   },
   "web": {
-    "webPageDetails": { "URL": "https://www.adobe.com/fr", "name": "Home Page" }
+    "webPageDetails": { "URL": "https://www.adobe.com", "name": "Home Page" }
   },
   "agenticExperience":{
     "conciergeID":"concierge-abc123",
@@ -517,7 +519,7 @@ Vous trouverez ci-dessous un exemple d’utilisation du groupe de champs Événe
     ]
   },
   "web": {
-    "webPageDetails": { "URL": "https://www.adobe.com/fr", "name": "Home Page" }
+    "webPageDetails": { "URL": "https://www.adobe.com", "name": "Home Page" }
   },
   "agenticExperience":{
     "conciergeID":"concierge-abc123",
@@ -558,7 +560,7 @@ Vous trouverez ci-dessous un exemple d’utilisation du groupe de champs Événe
     ]
   },
   "web": {
-    "webPageDetails": { "URL": "https://www.adobe.com/fr", "name": "Home Page" }
+    "webPageDetails": { "URL": "https://www.adobe.com", "name": "Home Page" }
   },
   "conversation": {
     "conversationID": "conv-001",
@@ -591,7 +593,7 @@ Vous trouverez ci-dessous un exemple d’utilisation du groupe de champs Événe
     ]
   },
   "web": {
-    "webPageDetails": { "URL": "https://www.adobe.com/fr", "name": "Home Page" }
+    "webPageDetails": { "URL": "https://www.adobe.com", "name": "Home Page" }
   },
   "agenticExperience":{
     "conciergeID":"concierge-xyz789",
@@ -696,7 +698,7 @@ Toute valeur de chaîne est acceptable. Cependant, Adobe remplit les portées su
     ]
   },
   "web":{
-    "webPageDetails":{ "URL":"https://www.adobe.com/fr", "name":"Home Page" }
+    "webPageDetails":{ "URL":"https://www.adobe.com", "name":"Home Page" }
   },
   "agenticExperience":{
     "conciergeID":"concierge-abc123",

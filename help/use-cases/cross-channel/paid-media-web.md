@@ -3,11 +3,10 @@ title: Joindre Des Données De Médias Payants À Des Données Web Dans Customer
 description: Rejoignez les données de résumé des médias achetés avec les événements de site web dans Adobe Customer Journey Analytics pour comparer les dépenses publicitaires, les clics, les commandes, le chiffre d’affaires et le retour sur dépenses publicitaires.
 solution: Customer Journey Analytics
 feature: Use Cases
-hide: true
 role: Admin
-source-git-commit: c5a7403374f26ebc641f3491a88dc14c5f8693c6
+source-git-commit: 62a6bb436d59ab7a5a7be515afbe1f5f0f7817ee
 workflow-type: tm+mt
-source-wordcount: '3910'
+source-wordcount: '3912'
 ht-degree: 3%
 ---
 # Joindre des données de média payantes à des données web
@@ -45,9 +44,14 @@ Les jeux de données de résumé de médias payants contiennent des mesures quot
 
 ## Comprendre la jointure par reporting
 
-Vous ne pouvez adhérer qu’à des niveaux dont les ID apparaissent dans les URL de votre page de destination ou dans les champs d’événement existants. Par exemple, le balisage des campagnes uniquement prend en charge les rapports de campagne, mais pas les rapports au niveau des annonces. Les jointures au niveau de l’expérience et au niveau des ressources nécessitent des paramètres d’URL supplémentaires et sortent du cadre de ce guide.
+Vous ne pouvez adhérer qu’à des niveaux dont les ID apparaissent dans les URL de votre page de destination ou dans les champs d’événement existants. Par exemple, le balisage des campagnes uniquement prend en charge les rapports de campagne, mais pas les rapports au niveau des annonces.
 
-Voir [Données récapitulatives](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dataviews/summary-data) et [Paramètres des composants du groupe de données récapitulatives](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dataviews/component-settings/summary-data-group) pour référence.
+>[!NOTE]
+>
+>Les jointures au niveau de l’expérience et au niveau des ressources Content Analytics nécessitent des paramètres d’URL supplémentaires et ne relèvent pas de ce guide.
+
+
+Voir [Données récapitulatives](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dataviews/summary-data) et [Paramètres des composants du groupe de données récapitulatives](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/summary-data-group) pour référence.
 
 ### Choisir la clé de jointure
 
@@ -81,7 +85,7 @@ Vérifiez que vous disposez des éléments suivants :
 * [!DNL Customer Journey Analytics] Select ou une version ultérieure, avec accès aux fonctions de champ dérivé utilisées ici : [Analyse d’URL](/help/data-views/derived-fields/derived-fields.md#url-parse), [Casse quand](/help/data-views/derived-fields/derived-fields.md#case-when), [Remplacement d’expression régulière](/help/data-views/derived-fields/derived-fields.md#regex-replace) et, pour l’enrichissement du nom, [Recherche](/help/data-views/derived-fields/derived-fields.md#lookup).
 * [!DNL Adobe Experience Platform] des autorisations pour gérer les schémas, les jeux de données et les flux de données dans le sandbox cible, ainsi que l’accès aux jeux de données et à Query Service à des fins de vérification.
 * [!DNL Customer Journey Analytics] l’autorisation de modifier la connexion cible et la vue de données.
-* Connecteurs source de médias payants configurés dans le même sandbox et ingérant des jeux de données de résumé et de recherche. Pour obtenir un exemple de connecteur, consultez [Source Meta Ads](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/advertising/meta-ads).
+* Connecteurs source de médias payants configurés dans le même sandbox et ingérant des jeux de données de résumé et de recherche. Pour obtenir un exemple de connecteur, consultez [Source Meta Ads](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/advertising/meta-ads).
 * Événements de site web qui capturent l’URL complète de la page de destination, y compris sa chaîne de requête, ou des champs équivalents contenant les identifiants de réseau.
 
 
@@ -122,10 +126,10 @@ Ouvrez la vue de données que vous prévoyez d’utiliser et examinez les compos
 
 | | Point de départ | Configuration existante | Étapes à suivre |
 |---|---|---|---|
-| A | Content Analytics avec web ou mobile et média payant | Jeux de données et composants de médias payants, ainsi que les jeux de données d’événement et de recherche Content Analytics | Ajoutez le jeu de données d’événement de votre site web si nécessaire, puis configurez les champs dérivés du web et les groupes de génération de rapports |
-| B | Content Analytics avec médias achetés uniquement | Jeux de données et composants de médias payants ; les jeux de données de recherche de contenu partagé peuvent également être présents | Ajoutez le jeu de données d’événement de votre site web, puis configurez les champs dérivés du web et les groupes de rapports |
-| C | Médias payants sans approvisionnement de Content Analytics | Les jeux de données de médias achetés existent dans Experience Platform, mais la connexion et la vue de données ne contiennent pas la configuration de médias achetés | Ajoutez le site web et les jeux de données de médias achetés, puis créez les composants web et de médias achetés |
-| D | Content Analytics sans média payant | Composants Content Analytics uniquement | Activez le canal de média payant dans la configuration Content Analytics, puis suivez le chemin d’accès existing-configuration |
+| A | Content Analytics avec web ou mobile et média payant | [Jeux de données et composants de médias payants](/help/content-analytics/config/paid-media.md), ainsi que les jeux de données d’événement et de recherche Content Analytics. | Ajoutez le jeu de données d’événement de votre site web si nécessaire, puis configurez les champs dérivés du web et les groupes de génération de rapports. |
+| B | Content Analytics avec médias achetés uniquement | [Jeux de données et composants de médias payants](/help/content-analytics/config/paid-media.md) ; les jeux de données de recherche de contenu partagé peuvent également être présents. | Ajoutez le jeu de données d’événement de votre site web, puis configurez les champs dérivés du web et les groupes de génération de rapports. |
+| C | Médias payants sans approvisionnement de Content Analytics | Les jeux de données de médias payants existent dans Experience Platform, mais la connexion et la vue de données ne contiennent pas la configuration de médias payants. | Ajoutez le site web et les jeux de données de médias achetés, puis créez les composants web et de médias achetés. |
+| D | Content Analytics sans média payant | Composants Content Analytics uniquement. | Activez le canal de média payant dans la configuration Content Analytics, puis suivez le chemin d’accès existing-configuration. |
 
 Ne supprimez ou ne modifiez pas les jeux de données ou les composants en lecture seule configurés par le système lors de l’extension d’une connexion gérée par Content Analytics.
 
@@ -143,10 +147,10 @@ Ignorez la création du schéma, du jeu de données et du flux de données si vo
 
    | Groupe de champs | Données requises |
    |---|---|
-   | ExperienceEvent AEP Web SDK | URL de page, pages vues, référent et autre contexte web |
-   | Informations commerciales | Nombre d’achats, valeur de commande, devise, ID d’achat et détails du produit |
-   | Détails marketing de la campagne, facultatif | Codes de suivi si votre implémentation les capture séparément |
-   | IdentityMap, s’il n’est pas déjà présent | Identifiant de personne, tel qu’ECID |
+   | ExperienceEvent AEP Web SDK | URL de la page, pages vues, référent et autre contexte web. |
+   | Informations commerciales | Nombre d’achats, valeur de commande, devise, ID d’achat et détails du produit. |
+   | Détails marketing de la campagne, facultatif | Codes de suivi si votre implémentation les capture séparément. |
+   | IdentityMap, s’il n’est pas déjà présent | Identifiant de personne, tel que l’ECID. |
 
 1. Enregistrez le schéma. L’activation du profil n’est pas requise pour ce cas d’utilisation de création de rapports.
 1. Accédez à **[!UICONTROL Gestion des données]** > **[!UICONTROL Jeux de données]** > **[!UICONTROL Créer un jeu de données]** > **[!UICONTROL Créer un jeu de données à partir d’un schéma]**.
@@ -158,7 +162,7 @@ Ignorez la création du schéma, du jeu de données et du flux de données si vo
 1. Nommez le flux de données et sélectionnez votre schéma d’événement comme schéma de mappage.
 1. Enregistrez, puis sélectionnez **[!UICONTROL Ajouter un service]** > **[!UICONTROL Adobe Experience Platform]**.
 1. Sélectionnez le sandbox et le jeu de données d’événement, puis **[!UICONTROL Enregistrer]**.
-1. Utilisez l’identifiant du flux de données pour configurer [Experience Platform Web SDK](https://experienceleague.adobe.com/fr/docs/experience-platform/collection/js/js-overview).
+1. Utilisez l’identifiant du flux de données pour configurer [Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/js-overview).
 
 Capturez les éléments suivants :
 
@@ -195,11 +199,11 @@ Pour ingérer le jeu de données d’événement web dans Customer Journey Analy
 
    | Paramètre | Valeur |
    |---|---|
-   | ID de personne | `identityMap` avec l’espace de noms ECID ou le champ d’ID de personne de votre implémentation |
+   | ID de personne | `identityMap` avec l’espace de noms ECID ou le champ d’ID de personne de votre implémentation. |
    | Date et heure | `timestamp` |
    | Type de source de données | Données web |
    | Importer toutes les nouvelles données | Activé |
-   | Renvoyer toutes les données existantes | Activé pour la période historique dont vous avez besoin |
+   | Renvoyer toutes les données existantes | Activé pour la période historique dont vous avez besoin. |
 
 1. Ajoutez le jeu de données et enregistrez la connexion.
 
@@ -286,11 +290,11 @@ Créez un champ dérivé par niveau de reporting. La structure suivante gère le
 
 | Composants de | Fonction | Configuration |
 |---|---|---|
-| 1 | [Analyse de l’URL](/help/data-views/derived-fields/derived-fields.md#url-parse) | Lire le paramètre Meta spécifique au niveau dans l’URL de la page |
-| 2 | [Analyse de l’URL](/help/data-views/derived-fields/derived-fields.md#url-parse) | Lire le paramètre UTM spécifique au niveau à partir de l’URL de la page |
-| 3 | [Analyse de l’URL](/help/data-views/derived-fields/derived-fields.md#url-parse) | Lire le `s_kwcid` depuis l’URL de la page |
-| 4 | [Remplacement d’expression régulière](/help/data-views/derived-fields/derived-fields.md#regex-replace) | Appliquez l’expression spécifique au niveau à la règle 3 ; sortie `$1` |
-| 5 | [Cas si](/help/data-views/derived-fields/derived-fields.md#case-when) | Si la règle 3 est définie, renvoyez la règle 4 ; sinon, si la règle 1 est définie, renvoyez la règle 1 ; dans le cas contraire, renvoyez la règle 2 |
+| 1 | [Analyse de l’URL](/help/data-views/derived-fields/derived-fields.md#url-parse) | Lisez le paramètre Meta spécifique au niveau dans l’URL de la page. |
+| 2 | [Analyse de l’URL](/help/data-views/derived-fields/derived-fields.md#url-parse) | Lisez le paramètre UTM spécifique au niveau dans l’URL de la page. |
+| 3 | [Analyse de l’URL](/help/data-views/derived-fields/derived-fields.md#url-parse) | `s_kwcid` à partir de l’URL de la page. |
+| 4 | [Remplacement d’expression régulière](/help/data-views/derived-fields/derived-fields.md#regex-replace) | Appliquez l’expression spécifique au niveau à la règle 3 ; `$1` de sortie. |
+| 5 | [Cas si](/help/data-views/derived-fields/derived-fields.md#case-when) | Si la règle 3 est définie, renvoyez la règle 4 ; dans le cas contraire, si la règle 1 est définie, renvoyez la règle 1 ; dans le cas contraire, renvoyez la règle 2. |
 
 Utilisez les valeurs suivantes :
 
@@ -363,7 +367,7 @@ Ajoutez le champ dérivé des atterrissages payants en tant que mesure, puis con
 
 Conservez les mesures **[!UICONTROL Commandes]** et **[!UICONTROL Chiffre d’affaires]** d’origine inchangées pour conserver les rapports existants. L’activation explicite du remplacement est requise pour cette configuration, même si les valeurs par défaut affichées semblent correspondre.
 
-Pour obtenir un crédit de conversion entre des visites récurrentes, envisagez plutôt un conteneur **[!UICONTROL Personne]** et un intervalle de recherche en amont approprié. Voir le [cas d’utilisation des données de résumé](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-usecases/data-views/summary-data).
+Pour obtenir un crédit de conversion entre des visites récurrentes, envisagez plutôt un conteneur **[!UICONTROL Personne]** et un intervalle de recherche en amont approprié. Voir le [cas d’utilisation des données de résumé](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-views/summary-data).
 
 Utilisez l’attribution de mesures plutôt que d’ajouter de la persistance aux dimensions d’ID web. Pour éviter de gonfler les décomptes interprétés comme des destinations, ne conservez pas les identifiants d’événements ultérieurs, car cela modifie les événements qui apparaissent sous les lignes de la campagne.
 
@@ -443,7 +447,7 @@ Examinez les lignes avec des dénominateurs nuls avant d’interpréter les mesu
 1. Ventilez une ligne de campagne par groupe d’annonces web et dimensions d’annonces. Vérifiez que les mesures récapitulatives et web sont renseignées à chaque niveau configuré.
 1. Ajoutez un second tableau à l’aide de **[!UICONTROL PM Network (Web)]** pour passer en revue les totaux au niveau du réseau et la ligne sans valeur.
 
-   ![&#x200B; Projet d’espace de travail de données web et de médias payants &#x200B;](./assets/paid-media-and-web-data-workspace.png)
+   ![ Projet d’espace de travail de données web et de médias payants ](./assets/paid-media-and-web-data-workspace.png)
 
    ![Projet d’espace de travail de données web et de médias payants sans données](./assets/paid-media-and-web-data-workspace-no-value.png)
 
