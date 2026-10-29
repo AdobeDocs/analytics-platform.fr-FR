@@ -51,7 +51,7 @@ Vous pouvez [partager](seg-share.md), [segment](seg-filter.md), [balise](seg-tag
 
 Le gestionnaire de segments comporte les éléments d’interface suivants :
 
-![ Interface des segments ](assets/filters-manager.png)
+![&#x200B; Interface des segments &#x200B;](assets/filters-manager.png)
 
 ### Liste des segments
 

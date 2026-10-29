@@ -58,7 +58,7 @@ Maintenant que vous avez créé un projet Workspace vierge, assurez-vous de conn
 
 * Ajoutez des [visualisations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) à vos panneaux. Par exemple :
   * **[!DNL Line Graph]** [Visualisation](/help/analysis-workspace/visualizations/line.md) sous forme de lignes➋
-  * **[!DNL Countries]** [Visualisation sous forme de ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)tableau à structure libre➌
+  * **[!DNL Countries]** [Visualisation sous forme de &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)tableau à structure libre➌
 * Ajoutez des [composants](/help/components/overview.md) à vos visualisations. Par exemple :
   * **[!DNL Store Country]** [dimension](/help/components/dimensions/overview.md) ➍
   * **[!DNL People]** [mesure](/help/components/apply-create-metrics.md) ➎

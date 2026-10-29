@@ -70,7 +70,7 @@ La boîte de dialogue **[!UICONTROL Nouvelle période]** ou **[!UICONTROL Modifi
 
    Pour qu’Adobe génère une description pour vous, sélectionnez **[!UICONTROL Générer la description]**. Cette option n’est pas disponible tant que vous n’avez pas créé la définition de période.
 
-   Les descriptions générées incluent le texte **[!UICONTROL Généré par Adobe à l’aide de l’IA]** et vous pouvez les modifier une fois qu’elles ont été générées. Pour plus d’informations, voir [ Générer automatiquement des descriptions ](/help/components/add-component-descriptions.md#automatically-generate-descriptions).
+   Les descriptions générées incluent le texte **[!UICONTROL Généré par Adobe à l’aide de l’IA]** et vous pouvez les modifier une fois qu’elles ont été générées. Pour plus d’informations, voir [&#x200B; Générer automatiquement des descriptions &#x200B;](/help/components/add-component-descriptions.md#automatically-generate-descriptions).
 
 1. Organisez le segment en créant ou en appliquant une ou plusieurs **[!UICONTROL Balises]**. Commencez à saisir du texte pour rechercher des balises existantes que vous pouvez sélectionner. Ou appuyez sur **[!UICONTROL ENTRÉE]** pour ajouter une nouvelle balise. Sélectionnez ![CrossSize75](/help/assets/icons/CrossSize75.svg) pour supprimer une étiquette. |
 1. Sélectionnez une **[!UICONTROL Période]** en sélectionnant d’abord la date de début, puis la date de fin.
