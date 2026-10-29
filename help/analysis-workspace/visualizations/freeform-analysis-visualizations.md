@@ -25,10 +25,10 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 27b268c88c84b530d9fbbc454eae23cc43d4d041
 workflow-type: tm+mt
-source-wordcount: '1786'
-ht-degree: 89%
+source-wordcount: '2035'
+ht-degree: 78%
 ---
 # Visualisations - Aperçu
 
@@ -105,7 +105,7 @@ Vous pouvez gérer une visualisation en pointant la souris sur la visualisation 
 * Pour afficher une visualisation réduite, sélectionnez ![ChevronLeft](/help/assets/icons/ChevronLeft.svg).
 * Pour supprimer une visualisation, sélectionnez ![CrossSize400](/help/assets/icons/CrossSize400.svg). Pour annuler, sélectionnez **[!UICONTROL Modifier]** > **[!UICONTROL Annuler]** (**[!UICONTROL *cmd+z *]**|**[!UICONTROL * ctrl+z *]**).
 * Pour rétablir la hauteur par défaut d’une visualisation, sélectionnez ![ImageResize](/help/assets/icons/Resize.svg).
-* Pour déplacer une visualisation dans un panneau, faites-la glisser et déposez-la chaque fois qu’une ![&#x200B; Déplacer &#x200B;](/help/assets/icons/Move.svg) est visible (généralement lorsque vous passez la souris sur l’en-tête).
+* Pour déplacer une visualisation dans un panneau, faites-la glisser et déposez-la chaque fois qu’une ![ Déplacer ](/help/assets/icons/Move.svg) est visible (généralement lorsque vous passez la souris sur l’en-tête).
 
 
 
@@ -124,6 +124,30 @@ Pour modifier un libellé de légende :
 
 1. Saisissez le nouveau texte du libellé.
 1. Appuyez sur **[!UICONTROL Entrée]** pour enregistrer.
+
+### Libellés concis
+
+Lorsque chaque série dans la visualisation partage la même mesure, le même segment, le même élément de dimension ou la même période, chaque libellé de légende la répète. Les libellés peuvent devenir longs et le texte qui les différencie n’est souvent visible que lorsque vous pointez sur chaque libellé.
+
+Le paramètre **[!UICONTROL Libellés concis]** se concentre intelligemment sur les informations qui différencient un libellé d’un autre. Il supprime une mesure, un segment, un élément de dimension ou un nom de période uniquement lorsque le nom apparaît dans chaque libellé. Par exemple, si un segment est appliqué à chaque colonne du tableau source, il est supprimé des libellés de légende. Si le segment est appliqué à chaque colonne sauf une, les libellés de légende incluent toujours le segment. Pour afficher le libellé complet, pointez sur un libellé de légende.
+
+Les libellés concis sont désactivés par défaut. Pour activer les libellés concis pour une visualisation :
+
+1. Sélectionnez ![Paramètre](/help/assets/icons/Setting.svg) **[!UICONTROL Paramètres]** dans l’en-tête de visualisation.
+1. Sélectionnez l’onglet **[!UICONTROL Paramètres]**.
+1. Assurez-vous que **[!UICONTROL Légende visible]** est sélectionné. **[!UICONTROL Libellés concis]** n’est disponible que lorsque la légende est visible.
+1. Sélectionnez **[!UICONTROL Libellés concis]**.
+
+Des libellés concis sont disponibles pour les visualisations suivantes :
+
+* [Aires et aires empilées](area.md)
+* [Barres et barres empilées](bar.md)
+* [Combo](combo-charts.md)
+* [Anneau](donut.md)
+* [Histogramme](histogram.md)
+* [Barre horizontale et barres empilées horizontales](horizontal-bar.md)
+* [Graphique linéaire](line.md)
+* [Venn](venn.md)
 
 
 ## Paramètres
@@ -152,6 +176,7 @@ La disponibilité des paramètres de visualisation dépend de la visualisation. 
 | **[!UICONTROL Pourcentages]** | Affichez les valeurs en pourcentages. |
 | **[!UICONTROL Empilé à 100 %]** | Transformez le graphique en une visualisation empilée à 100 %.  Applicable uniquement pour une visualisation empilée sous forme de surface, barre et barre horizontale. |
 | **[!UICONTROL Légende visible]** | Affichez le texte de la légende. |
+| **[!UICONTROL Libellés concis]** | Raccourcissez les libellés de légende pour vous concentrer sur les informations qui différencient une étiquette d’une autre. Les noms de mesure, de segment, d’élément de dimension et de période qui apparaissent dans chaque libellé sont supprimés. Ce paramètre est disponible uniquement lorsque l’option **[!UICONTROL Légende visible]** est sélectionnée et est désactivée par défaut. Pour plus d’informations, voir [ Étiquettes concises ](#concise-labels). |
 | **[!UICONTROL Nombre max d’éléments]** | Limitez le nombre d’éléments affichés dans une visualisation. Lorsque cette option est sélectionnée, définissez le nombre maximal d’éléments. |
 | **[!UICONTROL Afficher les annotations]** | Affichez les annotations effectuées pour cette visualisation. |
 | **[!UICONTROL Masquer le titre]** | Masquez le titre de la visualisation. |
