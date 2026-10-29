@@ -147,4 +147,4 @@ Pour générer des descriptions pour plusieurs composants dans le dictionnaire d
 
    Un message de confirmation indique le nombre de descriptions qui ont été ajoutées.
 
-   Si vous avez sélectionné un grand nombre de composants, les descriptions sont générées en arrière-plan. Une fois la requête terminée, vous recevez une notification in-app [notification](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#view-notifications) qui indique le nombre de descriptions générées et le nombre d’échecs.
+   Si vous avez sélectionné un grand nombre de composants, les descriptions sont générées en arrière-plan. Une fois la requête terminée, vous recevez une notification in-app [notification](https://experienceleague.adobe.com/fr/docs/core-services/interface/features/account-preferences#view-notifications) qui indique le nombre de descriptions générées et le nombre d’échecs.
