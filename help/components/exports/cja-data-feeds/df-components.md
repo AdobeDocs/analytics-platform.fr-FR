@@ -17,10 +17,10 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 5006a5e7f48fb107cc32cf56051062cc88f35c8e
+source-git-commit: 56f881fc811f0eeffb9633872b3edbe0eb2d7070
 workflow-type: tm+mt
-source-wordcount: '1548'
-ht-degree: 40%
+source-wordcount: '1596'
+ht-degree: 39%
 ---
 # Disponibilité des composants dans les flux de données
 
@@ -49,7 +49,7 @@ Les dimensions suivantes sont incluses par défaut dans chaque flux de données 
 | ID de ligne | Identifiant unique pour chaque ligne incluse dans le flux de données. | Obligatoire | Non disponible |
 | Identifiant de session | Identifiant unique pour chaque session incluse dans le flux de données. | Obligatoire | Non disponible |
 | ID de personne | Identifiant de personne pour la vue de données et la connexion | Obligatoire | Norme facultative |
-| ID de compte {type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Identifiant de compte lors de l’utilisation du conteneur Compte | Obligatoire | Norme facultative |
+| ID de compte [!BADGE ]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Identifiant de compte lors de l’utilisation du conteneur Compte | Obligatoire | Norme facultative |
 
 ## Dimensions non prises en charge {#unsupported-dimensions}
 
@@ -100,7 +100,7 @@ Les mesures standard Customer Journey Analytics suivantes ne peuvent pas être i
 
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_user_agent"
->title=""
+>title="Dimensions qui ne peuvent pas être utilisées ensemble"
 >abstract="Les données de l’agent utilisateur et les données de recherche de périphérique ne peuvent pas exister dans la même configuration de flux de données."
 
 <!-- markdownlint-enable MD034 -->
@@ -111,17 +111,35 @@ Certaines dimensions ne peuvent pas être utilisées conjointement dans les jeux
 
 * Dimensions de recherche d’appareil, telles que les dimensions du navigateur, de l’appareil mobile et du système d’exploitation. Pour obtenir la liste complète, voir [Dimensions de recherche d’appareil](#device-lookup-dimensions).
 
+Cette restriction s’applique également aux champs dérivés qui font référence à ces dimensions.
+
 >[!NOTE]
 >
 >Si vous utilisez le SDK Web, cette restriction est appliquée dans les flux de données avant que les données n’arrivent dans un jeu de données Experience Platform. Pour plus d’informations, voir [Configurer la recherche d’appareil](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/configure#geolocation-device-lookup) dans [Créer et configurer des flux de données](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/configure) dans le guide Collecte de données .
 
+<!--
+SME CHECK (derived fields; from Slack thread with Ron Fulkerson, Matt Freestone, Courtney Ferguson). Assumptions to confirm:
+1. Derived fields are restricted only when combined with dimensions from the other group. They aren't blocked from data feeds entirely.
+2. The restriction applies in both directions. Derived fields that reference User agent or Mobile ID conflict with device lookup dimensions, not only the reverse.
+3. The restriction applies to nested derived fields (a derived field that references another derived field that references a restricted dimension).
+4. "Device Atlas sourced" dimensions are the same set as the device lookup dimensions listed on this page.
+5. The restriction itself is permanent.
+6. Derived fields get the same conflict dialog experience as dimensions (per Matt Freestone). This requires the UI to identify which derived fields reference these dimensions; Courtney Ferguson said the UI doesn't have that information today. Confirm this will be built before release.
+7. The priority rules in "Resolve dimension conflicts" apply to derived fields the same way they apply to the dimensions they reference. For example, a derived field that references User agent takes priority over device lookup dimensions in the same selection.
+8. Editing a derived field that is already in a data feed so that it references a conflicting dimension fails when the user adds the conflicting dimension to the derived field. Does this check every data feed that uses the derived field? What does the error say?
+Open question: Can a derived field that references dimensions from BOTH groups be added to any data feed?
+-->
+
 ### Résoudre les conflits de dimension
 
-Lorsque vous ajoutez des dimensions qui ne peuvent pas être utilisées ensemble, une boîte de dialogue s’affiche. Elle répertorie les dimensions qui seront ajoutées, celles qui ne seront pas ajoutées ou celles qui seront supprimées. Ce qui se passe dépend de l’endroit du conflit :
+Lorsque vous ajoutez des dimensions qui ne peuvent pas être utilisées ensemble (y compris les champs dérivés qui font référence à ces dimensions), une boîte de dialogue s’affiche. Elle répertorie les dimensions qui seront ajoutées, celles qui ne seront pas ajoutées ou celles qui seront supprimées. Le tableau suivant montre ce qui se passe, en fonction de l’endroit du conflit :
 
-* **Les dimensions que vous ajoutez sont en conflit avec les dimensions déjà présentes dans le flux de données** : les dimensions que vous ajoutez sont prioritaires. La boîte de dialogue vous invite à ajouter votre sélection et à supprimer les dimensions en conflit du flux de données.
+| Conflit | Est prioritaire | Résultats |
+|---|---|---|
+| Les dimensions que vous ajoutez sont en conflit avec les dimensions figurant déjà dans le flux de données | Dimensions que vous ajoutez | Les nouvelles dimensions remplacent les dimensions en conflit qui se trouvent déjà dans le flux de données. |
+| Les dimensions que vous ajoutez sont en conflit les unes avec les autres. | Les dimensions **Agent utilisateur** et **ID mobile** (et les champs dérivés qui y font référence) | Les dimensions de recherche d’appareil de votre sélection (et les champs dérivés qui y font référence) ne sont pas ajoutées. Le reste de votre sélection est ajouté au flux de données. |
 
-* **Les dimensions que vous ajoutez sont en conflit les unes avec les autres** : les dimensions **Agent utilisateur** et **ID mobile** sont prioritaires. La boîte de dialogue vous invite à les ajouter ; les dimensions de recherche d’appareil de votre sélection ne sont pas ajoutées.
+{style="table-layout:auto"}
 
 Pour conserver le flux de données inchangé, sélectionnez **[!UICONTROL Annuler]**.
 
@@ -129,7 +147,7 @@ Pour conserver le flux de données inchangé, sélectionnez **[!UICONTROL Annule
 
 ### Dimensions de recherche d’appareil {#device-lookup-dimensions}
 
-Les dimensions suivantes ne peuvent pas être incluses dans le même flux de données que les dimensions **Agent utilisateur** ou **ID mobile**.
+Les dimensions suivantes (et les champs dérivés qui y font référence) ne peuvent pas être incluses dans le même flux de données que les dimensions **Agent utilisateur** ou **ID mobile**.
 
 >[!NOTE]
 >
@@ -173,7 +191,7 @@ Les mesures Customer Journey Analytics suivantes doivent être remplacées :
 | Nom de la mesure | Notes | Flux de données |
 |---|---|---|
 | Comptes [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | En fonction de l’identifiant de compte spécifié dans la connexion | Non disponible. Utilisez un nombre distinct de l’ID de compte. |
-| Groupe d&#39;achat {type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Groupes d&#39;achat basés sur l&#39;ID de groupe d&#39;achat dans la connexion | Non disponible. Utiliser le nombre distinct de l&#39;ID du groupe d&#39;achat. |
+| Groupe d&#39;achat [!BADGE ]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Groupes d&#39;achat basés sur l&#39;ID de groupe d&#39;achat dans la connexion | Non disponible. Utiliser le nombre distinct de l&#39;ID du groupe d&#39;achat. |
 | Événements | Nombre de lignes de tous les jeux de données d’événements dans une connexion | Non disponible. Utilisez un nombre distinct de l’ID de ligne. |
 | Comptes globaux [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | En fonction de l’identifiant de comptes globaux dans la connexion | Non disponible. Utilisez un nombre distinct de l’identifiant de comptes globaux. |
 | Opportunités [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Opportunités basées sur l’ID d’opportunité dans la connexion | Non disponible. Utiliser le nombre distinct de l’ID d’opportunité. |
@@ -200,9 +218,9 @@ Les mesures Customer Journey Analytics suivantes doivent être remplacées :
 | Premières sessions | Mesure | Première session définie par une personne dans la fenêtre de création de rapports | Non disponible |
 | Sessions récurrentes | Mesure | Sessions qui n’étaient pas la première session d’une personne | Non disponible |
 | Espace de noms de l’ID de personne | Dimension | Type d’ID dont est constitué l’ID de personne (par exemple, e-mail ou ID de cookie) | Disponible |
-| Identifiant de compte global {type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Dimension | Identifiant de compte global lors de l’utilisation du conteneur de compte global | Disponible |
-| ID de l’opportunité {type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Dimension | ID de l’opportunité lors de l’utilisation du conteneur d’opportunités | Disponible |
-| ID de groupe d&#39;achat {type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Dimension | ID groupe d&#39;achat lors de l&#39;utilisation du conteneur groupe d&#39;achat | Disponible |
+| Identifiant de compte global [!BADGE ]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Dimension | Identifiant de compte global lors de l’utilisation du conteneur de compte global | Disponible |
+| ID de l’opportunité [!BADGE ]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Dimension | ID de l’opportunité lors de l’utilisation du conteneur d’opportunités | Disponible |
+| ID de groupe d&#39;achat [!BADGE ]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Dimension | ID groupe d&#39;achat lors de l&#39;utilisation du conteneur groupe d&#39;achat | Disponible |
 | Trimestre de l’année | Dimension de répartition temporelle | T1, T2, T3, T4 | Non disponible |
 | Session répétée | Mesure | Sessions qui n’ont pas été la toute première session d’une personne | Non disponible |
 | Type de session | Dimension | Deux valeurs : Première fois ou Récurrent | Non disponible |
