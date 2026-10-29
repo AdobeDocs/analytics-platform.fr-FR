@@ -19,13 +19,11 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 8ab47e74ee442d97e8e7b1b9e92129025a5b1d1f
 workflow-type: tm+mt
-source-wordcount: 542
-ht-degree: 92%
-
+source-wordcount: '589'
+ht-degree: 85%
 ---
-
 # Créer des périodes
 
 
@@ -69,13 +67,18 @@ La boîte de dialogue **[!UICONTROL Nouvelle période]** ou **[!UICONTROL Modifi
 
 1. Spécifiez un **[!UICONTROL titre]** pour cette période. Par exemple, **[!UICONTROL Trimestriel]**.
 1. Vous pouvez éventuellement spécifier une **[!UICONTROL Description]**.
-1. Organisez le segment en créant ou en appliquant une ou plusieurs **[!UICONTROL Balises]**. Commencez à saisir du texte pour rechercher les balises existantes que vous pouvez sélectionner. Ou appuyez sur **[!UICONTROL ENTRÉE]** pour ajouter une nouvelle balise. Sélectionnez ![CrossSize75](/help/assets/icons/CrossSize75.svg) pour supprimer une étiquette. |
+
+   Pour qu’Adobe génère une description pour vous, sélectionnez **[!UICONTROL Générer la description]**. Cette option n’est pas disponible tant que vous n’avez pas créé la définition de période.
+
+   Les descriptions générées incluent le texte **[!UICONTROL Généré par Adobe à l’aide de l’IA]** et vous pouvez les modifier une fois qu’elles ont été générées. Pour plus d’informations, voir [ Générer automatiquement des descriptions ](/help/components/add-component-descriptions.md#automatically-generate-descriptions).
+
+1. Organisez le segment en créant ou en appliquant une ou plusieurs **[!UICONTROL Balises]**. Commencez à saisir du texte pour rechercher des balises existantes que vous pouvez sélectionner. Ou appuyez sur **[!UICONTROL ENTRÉE]** pour ajouter une nouvelle balise. Sélectionnez ![CrossSize75](/help/assets/icons/CrossSize75.svg) pour supprimer une étiquette. |
 1. Sélectionnez une **[!UICONTROL Période]** en sélectionnant d’abord la date de début, puis la date de fin.
 Vous pouvez également sélectionner un **[!UICONTROL paramètre prédéfini]** dans le menu déroulant [!UICONTROL *Sélectionner un paramètre prédéfini*].
 
 1. Vous pouvez également sélectionner **[!UICONTROL Afficher les paramètres avancés]** pour :
 
-   * Spécifier une **[!UICONTROL heure de départ]** et une **[!UICONTROL heure de fin]** différentes de celles par défaut, à savoir `12:00 AM` (`0:00`) et `11:59 PM` (`23:59`). Les heures de fin comprennent toujours 59 secondes. Pour une période qui s’étend sur plusieurs jours, l’heure de début s’applique au premier jour de la période et l’heure de fin s’applique au dernier jour de la période. Utilisez **[!UICONTROL (Réinitialiser les heures)]** pour réinitialiser les heures de début et de fin à leurs valeurs par défaut.
+   * Spécifier une **[!UICONTROL heure de départ]** et une **[!UICONTROL heure de fin]** différentes de celles par défaut, à savoir `12:00 AM` (`0:00`) et `11:59 PM` (`23:59`). Les heures de fin comprennent toujours 59 secondes. Pour une période couvrant plusieurs jours, l’heure de début s’applique au premier jour de la période et l’heure de fin au dernier jour. Utilisez **[!UICONTROL (Réinitialiser les heures)]** pour réinitialiser les heures de début et de fin à leurs valeurs par défaut.
    * **[!UICONTROL Utilisation de dates glissantes]**. Si cette option est activée, les périodes prédéfinies telles que **[!UICONTROL 7 derniers jours complets]** se mettent dynamiquement à jour en fonction de l’évolution de la date et de l’heure actuelles. Si cette option est désactivée, ces paramètres prédéfinis ne sont pas mis à jour une fois appliqués.
 
      Vous pouvez sélectionner le texte entre parenthèses (par exemple : **[!UICONTROL début fixe - dates glissantes chaque trimestre]**) pour étendre le panneau et spécifier des détails pour **[!UICONTROL Début]** et **[!UICONTROL Fin]**.

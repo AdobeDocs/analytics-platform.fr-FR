@@ -29,10 +29,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: f886069ac388da7985beac80cdaaa7bd0a506439
 workflow-type: tm+mt
-source-wordcount: '454'
-ht-degree: 100%
+source-wordcount: '514'
+ht-degree: 89%
 ---
 # Créer des projets {#create-projects}
 
@@ -99,7 +99,7 @@ Les paramètres incluent :
 | Personne propriétaire | Nom de la personne propriétaire du projet. |
 | Dernière modification | Date de la dernière modification du projet. |
 | Balises | Répertorie les balises appliquées à un projet afin de faciliter la catégorisation. |
-| Description | Une description est utile pour clarifier l’objet d’un projet. Double-cliquez dessus pour la modifier. |
+| Description | Une description est utile pour clarifier l’objet d’un projet. Double-cliquez dessus pour la modifier. <p>Pour qu’Adobe génère une description pour vous, sélectionnez **[!UICONTROL Générer la description]** au-dessus du champ de description. Adobe analyse plusieurs panneaux du projet et les résume dans une description. Les descriptions générées incluent le texte **[!UICONTROL Généré par Adobe à l’aide de l’IA]** et peuvent être modifiées. Cette option nécessite que votre entreprise accepte certains termes juridiques d’IA générative.</p> |
 | Comptage des instances répétées | Spécifie si les instances répétées sont comptabilisées dans les rapports. Remarque : ce paramètre ne s’applique pas aux visualisations Flux ou Abandon. |
 | Affichage des annotations | Spécifie si les annotations s’affichent pour ce projet ou non. |
 | [Palette de couleurs du projet](/help/analysis-workspace/build-workspace-project/color-palettes.md) | Vous pouvez modifier la palette de couleurs catégoriques utilisée dans Workspace en choisissant parmi les palettes prêtes à l’emploi qui ont été optimisées pour le daltonisme ou en spécifiant votre palette personnalisée. Cette fonction affecte de nombreux éléments dans Workspace, y compris la plupart des visualisations. |

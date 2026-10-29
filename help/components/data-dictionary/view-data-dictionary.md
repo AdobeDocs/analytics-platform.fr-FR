@@ -34,7 +34,7 @@ role_v2:
 topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
     internal-label: Experimentation
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: f886069ac388da7985beac80cdaaa7bd0a506439
 workflow-type: tm+mt
 source-wordcount: '1322'
 ht-degree: 59%
@@ -69,7 +69,7 @@ Pour afficher des informations sur un composant dans le dictionnaire de données
 
    * **Mesures** ![icône de mesure](/help/assets/icons/Event.svg) sont verts
 
-   * L’icône **&#x200B;**&#x200B;l’icône ![Adobe](assets/default-calc-metric-icon.png) indique soit un modèle de mesure calculée, soit un modèle de segment
+   * L’icône **** l’icône ![Adobe](assets/default-calc-metric-icon.png) indique soit un modèle de mesure calculée, soit un modèle de segment
 
    * **Icône Calculateur** ![Icône Calculateur](/help/assets/icons/Calculator.svg) indique une mesure calculée qui a été créée par un administrateur ou une administratrice Analytics de votre entreprise
 

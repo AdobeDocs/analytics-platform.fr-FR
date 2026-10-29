@@ -32,10 +32,10 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: f886069ac388da7985beac80cdaaa7bd0a506439
 workflow-type: tm+mt
-source-wordcount: '903'
-ht-degree: 32%
+source-wordcount: '970'
+ht-degree: 30%
 ---
 # Gérer des mesures calculées
 
@@ -86,8 +86,9 @@ Vous pouvez agir sur les filtres à l’aide de la barre d’actions ➋. La bar
 | ![Partager](/help/assets/icons/ShareAlt.svg) | **[!UICONTROL Partager]** | Partagez les mesures calculées sélectionnées. Dans la boîte de dialogue **[!UICONTROL Partager les mesures calculées]**, vous pouvez ![Rechercher](/help/assets/icons/Search.svg) *Rechercher des individus ou des groupes* ou sélectionner **[!UICONTROL Organisation]** ou **[!UICONTROL Groupes]**. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les détails de partage pour les mesures calculées sélectionnées. Voir [Partage de mesures calculées](cm-sharing.md) pour plus d’informations. |
 | ![Supprimer](/help/assets/icons/Delete.svg) | **[!UICONTROL Supprimer]** | Supprimez les mesures calculées sélectionnées. Il vous est demandé de confirmer. |
 | ![Modifier](/help/assets/icons/Edit.svg) | **[!UICONTROL Renommer]** | Renommez une mesure calculée sélectionnée unique. Lorsque cette option est sélectionnée, vous pouvez renommer la mesure calculée en ligne. |
-| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL Approuver]** | Approuver les mesures calculées sélectionnées. Voir [&#x200B; Approuver les mesures calculées &#x200B;](cm-approving.md). |
+| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL Approuver]** | Approuver les mesures calculées sélectionnées. Voir [ Approuver les mesures calculées ](cm-approving.md). |
 | ![Copier](/help/assets/icons/Copy.svg) | **[!UICONTROL Copier]** | Copiez les mesures calculées sélectionnées. De nouvelles mesures calculées sont créées avec le même nom et le même suffixe `(Copy)` |
+| ![AI](/help/assets/icons/AI.svg) | **[!UICONTROL Générer des descriptions]** | <p>Générer des descriptions pour les mesures calculées sélectionnées, en remplaçant les descriptions existantes.</p><p>Pour éviter de remplacer des descriptions existantes, commencez par [filtrer](#filter-panel) la liste pour afficher uniquement les mesures calculées sans description (dans le filtre, sous [!UICONTROL **Autres filtres**], sélectionnez [!UICONTROL **Description manquante**]).</p><p>Il vous est demandé de confirmer. Les requêtes volumineuses s’exécutent en arrière-plan et vous recevez une notification lorsqu’elles se terminent.</p><p>Pour plus d’informations, voir [Générer automatiquement des descriptions](/help/components/add-component-descriptions.md#automatically-generate-descriptions).</p> |
 | ![Fichier CSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL Exporter dans un fichier CSV]** | Exportez les mesures calculées dans un fichier `Calculated  metric List.csv`. |
 
 ### Barre de filtres actifs
