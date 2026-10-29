@@ -447,7 +447,7 @@ Examinez les lignes avec des dénominateurs nuls avant d’interpréter les mesu
 1. Ventilez une ligne de campagne par groupe d’annonces web et dimensions d’annonces. Vérifiez que les mesures récapitulatives et web sont renseignées à chaque niveau configuré.
 1. Ajoutez un second tableau à l’aide de **[!UICONTROL PM Network (Web)]** pour passer en revue les totaux au niveau du réseau et la ligne sans valeur.
 
-   ![ Projet d’espace de travail de données web et de médias payants ](./assets/paid-media-and-web-data-workspace.png)
+   ![&#x200B; Projet d’espace de travail de données web et de médias payants &#x200B;](./assets/paid-media-and-web-data-workspace.png)
 
    ![Projet d’espace de travail de données web et de médias payants sans données](./assets/paid-media-and-web-data-workspace-no-value.png)
 
