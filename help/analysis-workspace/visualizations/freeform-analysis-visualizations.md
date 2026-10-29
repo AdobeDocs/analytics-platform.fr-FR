@@ -105,7 +105,7 @@ Vous pouvez gérer une visualisation en pointant la souris sur la visualisation 
 * Pour afficher une visualisation réduite, sélectionnez ![ChevronLeft](/help/assets/icons/ChevronLeft.svg).
 * Pour supprimer une visualisation, sélectionnez ![CrossSize400](/help/assets/icons/CrossSize400.svg). Pour annuler, sélectionnez **[!UICONTROL Modifier]** > **[!UICONTROL Annuler]** (**[!UICONTROL *cmd+z *]**|**[!UICONTROL * ctrl+z *]**).
 * Pour rétablir la hauteur par défaut d’une visualisation, sélectionnez ![ImageResize](/help/assets/icons/Resize.svg).
-* Pour déplacer une visualisation dans un panneau, faites-la glisser et déposez-la chaque fois qu’une ![ Déplacer ](/help/assets/icons/Move.svg) est visible (généralement lorsque vous passez la souris sur l’en-tête).
+* Pour déplacer une visualisation dans un panneau, faites-la glisser et déposez-la chaque fois qu’une ![&#x200B; Déplacer &#x200B;](/help/assets/icons/Move.svg) est visible (généralement lorsque vous passez la souris sur l’en-tête).
 
 
 
@@ -176,7 +176,7 @@ La disponibilité des paramètres de visualisation dépend de la visualisation. 
 | **[!UICONTROL Pourcentages]** | Affichez les valeurs en pourcentages. |
 | **[!UICONTROL Empilé à 100 %]** | Transformez le graphique en une visualisation empilée à 100 %.  Applicable uniquement pour une visualisation empilée sous forme de surface, barre et barre horizontale. |
 | **[!UICONTROL Légende visible]** | Affichez le texte de la légende. |
-| **[!UICONTROL Libellés concis]** | Raccourcissez les libellés de légende pour vous concentrer sur les informations qui différencient une étiquette d’une autre. Les noms de mesure, de segment, d’élément de dimension et de période qui apparaissent dans chaque libellé sont supprimés. Ce paramètre est disponible uniquement lorsque l’option **[!UICONTROL Légende visible]** est sélectionnée et est désactivée par défaut. Pour plus d’informations, voir [ Étiquettes concises ](#concise-labels). |
+| **[!UICONTROL Libellés concis]** | Raccourcissez les libellés de légende pour vous concentrer sur les informations qui différencient une étiquette d’une autre. Les noms de mesure, de segment, d’élément de dimension et de période qui apparaissent dans chaque libellé sont supprimés. Ce paramètre est disponible uniquement lorsque l’option **[!UICONTROL Légende visible]** est sélectionnée et est désactivée par défaut. Pour plus d’informations, voir [&#x200B; Étiquettes concises &#x200B;](#concise-labels). |
 | **[!UICONTROL Nombre max d’éléments]** | Limitez le nombre d’éléments affichés dans une visualisation. Lorsque cette option est sélectionnée, définissez le nombre maximal d’éléments. |
 | **[!UICONTROL Afficher les annotations]** | Affichez les annotations effectuées pour cette visualisation. |
 | **[!UICONTROL Masquer le titre]** | Masquez le titre de la visualisation. |
