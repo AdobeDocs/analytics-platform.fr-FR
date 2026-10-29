@@ -4,7 +4,7 @@ title: Synthèses de conversation
 feature: Visualizations
 role: User
 hide: true
-source-git-commit: 2cca5dfaec6be8f22308e09a023e9e57bec387b7
+source-git-commit: 113a215e26092c65d6eaf2c321f60d3f3a5015b8
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 10%
@@ -21,6 +21,7 @@ ht-degree: 10%
 >title="Synthèses des conversations"
 >abstract="Résumer un groupe filtré de conversations. Contrôlez la longueur du résumé. Voir les devis représentatifs des clients pour valider la précision des signaux extraits. Sélectionnez un devis pour ouvrir la relecture complète de la conversation."
 
+{{release-limited-testing}}
 
 La visualisation ![Résumer](/help/assets/icons/Summarize.svg) **[!UICONTROL Résumés des conversations]** vous permet de résumer un groupe filtré de conversations.
 

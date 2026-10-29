@@ -30,12 +30,14 @@ topic_v2:
     internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: a02b8d1d6bae6ed8269668d49ed9559688001833
+source-git-commit: 113a215e26092c65d6eaf2c321f60d3f3a5015b8
 workflow-type: tm+mt
-source-wordcount: '1185'
+source-wordcount: '1187'
 ht-degree: 14%
 ---
 # Création ou modification de configurations
+
+{{release-limited-testing}}
 
 Conversation Insights vous permet d’analyser les conversations à partir des expériences d’agent que vous proposez à vos clients. Ces expériences d’agent peuvent être basées sur des modèles de langage étendus (LLM) ou sur des conversations humaines. Par exemple, un bot conversationnel interagissant avec les transcriptions d’un client ou d’un centre d’appel.
 Grâce à Conversation Insights, vous pouvez comprendre l’impact des agents sur les résultats réels des utilisateurs et utilisatrices.
@@ -147,7 +149,7 @@ Pour chaque configuration :
 
 Une fois la configuration créée, vous pouvez configurer [la manière dont les conversations des jeux de données d’invites, de réponses, de commentaires et de signaux sont mélangées](/help/conversation-insights/overview.md#how-it-works).
 
-Cette spécification vous permet de sélectionner le jeu de données qui détermine la valeur des champs nommés de manière correspondante (s’il s’agit d’un conteneur) dans le jeu de données de conversation mixte.
+Cette spécification vous permet de sélectionner le jeu de données qui détermine la valeur du ou des champs nommés de manière correspondante (s’il s’agit d’un conteneur) dans le jeu de données de conversation mixte.
 
 Par exemple : si vous souhaitez que le nom du champ **[!UICONTROL Produit par]** dans le jeu de données de conversation mixte soit défini à partir de ce champ nommé similaire dans le jeu de données de commentaires, sélectionnez **[!UICONTROL Jeu de données de commentaires]** dans le menu déroulant **[!UICONTROL Gagnant du jeu de données]** pour ce champ.
 

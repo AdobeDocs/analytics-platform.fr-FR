@@ -55,9 +55,9 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: f7d853a3b658328f952b675f838ce314b7c30fb1
+source-git-commit: 62a6bb436d59ab7a5a7be515afbe1f5f0f7817ee
 workflow-type: tm+mt
-source-wordcount: '7412'
+source-wordcount: '7431'
 ht-degree: 93%
 ---
 
@@ -70,6 +70,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Fonctionnalité | Description |
 |---|---|
 | **Octobre 2026** | |
+| Joindre des données de média payantes à des données web | [Guide de cas d’utilisation](/help/use-cases/cross-channel/paid-media-web.md) comment joindre des données de médias achetés à des données web. |
 | Verrouiller la sélection pour les visualisations | Restructuré [Gérer les sources de données](/help/analysis-workspace/visualizations/t-sync-visualization.md) pour séparer la configuration des paramètres de source de données du verrouillage de la sélection. Elle a également expliqué comment fonctionne la [sélection de verrouillage](/help/analysis-workspace/visualizations/t-sync-visualization.md#lock-selection) lorsqu’une visualisation est verrouillée sur des lignes dans un tableau à structure libre, y compris ce qui se produit lorsque des lignes de répartition verrouillées ne se trouvent plus dans le tableau. |
 | Respect de la casse pour les opérateurs de segment | Il a été précisé que lorsque vous utilisez [opérateurs standard](/help/components/segments/seg-operators.md#standard-operators), les résultats ne respectent pas la casse, à l’exception de **[!UICONTROL correspondances]** et **[!UICONTROL ne correspondent pas]**. |
 | Navigation au clavier pour les colonnes du tableau | Documentation sur la [redimensionnement](/help/analysis-workspace/workspace-faq/aw-accessibility.md#resize-columns) et [réorganisation](/help/analysis-workspace/workspace-faq/aw-accessibility.md#rearrange-columns) des colonnes de tableau dans Analysis Workspace à l’aide du clavier, y compris les commentaires du lecteur d’écran. Ajout également d’une section [Actions de colonne de tableau](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md#table-column-actions) aux touches de raccourci. |

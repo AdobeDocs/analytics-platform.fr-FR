@@ -30,12 +30,14 @@ topic_v2:
     internal-label: Data collection
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: 113a215e26092c65d6eaf2c321f60d3f3a5015b8
 workflow-type: tm+mt
 source-wordcount: '2563'
 ht-degree: 5%
 ---
 # Implémenter des informations de conversation
+
+{{release-limited-testing}}
 
 Pour produire des données de conversation sous la forme d’événements d’expérience XDM et vous assurer que ces événements d’expérience de conversation aboutissent dans Adobe Experience Platform sous la forme de jeux de données, instrumentez votre application d’agent ou service pour utiliser des informations de conversation.
 
