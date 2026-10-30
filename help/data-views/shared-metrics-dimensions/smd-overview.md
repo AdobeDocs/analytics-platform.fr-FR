@@ -26,7 +26,7 @@ role_v2:
 topic_v2:
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
     internal-label: Governance
-source-git-commit: d16771a675504a6330a59478f15bf6112ae444d6
+source-git-commit: a80a12b061bee5165667b361a9e4bc1888d86c95
 workflow-type: tm+mt
 source-wordcount: '1337'
 ht-degree: 3%
@@ -49,7 +49,7 @@ La plupart des entreprises utilisent le workflow global suivant pour déduplique
 1. Passez en revue tous les composants qui utilisent le même ID de composant mais des paramètres de composant différents. Pour chaque groupe de composants en double, sélectionnez les paramètres de composant souhaités à appliquer à tous les autres composants qui partagent cet identifiant de composant.
 1. Passez en revue tous les composants qui utilisent le même ID de composant et qui ont également les mêmes paramètres de composant. Ces dimensions ou mesures peuvent être fusionnées facilement et en toute sécurité.
 
-## Gestionnaire [!UICONTROL Mesures et dimensions partagées]
+## Gestionnaire [!UICONTROL Mesures et dimensions partagées] {#smd-manager}
 
 **&#x200B;**&#x200B;> **[!UICONTROL Vues de données]** > **[!UICONTROL Mesures et dimensions partagées]**
 

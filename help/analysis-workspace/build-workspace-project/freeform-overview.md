@@ -22,18 +22,16 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 6883ea7ea65827315805720142186eec75ad7558
 workflow-type: tm+mt
-source-wordcount: 1675
+source-wordcount: '1675'
 ht-degree: 100%
-
 ---
-
 # Vue d’ensemble des projets
 
 Les projets Workspace vous permettent de combiner des tableaux, des visualisations et des composants afin d’élaborer votre analyse et de la partager avec qui vous le souhaitez au sein de votre entreprise. Avant de démarrer votre premier projet, découvrez comment accéder à vos projets, les parcourir et les gérer.
 
-Pour accéder aux projets dans Customer Journey Analytics, sélectionnez **[!UICONTROL Workspace]**.  Le gestionnaire **[!UICONTROL Projets]** répertorie tous les projets que vous possédez ou les projets partagés avec vous. Le gestionnaire de projets avec la liste Projet est également la page de destination par défaut de Customer Journey Analytics, sauf configuration contraire dans les Préférences.
+Pour accéder aux projets dans Customer Journey Analytics, sélectionnez **[!UICONTROL Workspace]**.  Le gestionnaire **[!UICONTROL Projets]** répertorie tous les projets que vous possédez ou les projets partagés avec vous. Le gestionnaire de projets, qui contient la liste des projets, est également la page de destination par défaut de Customer Journey Analytics, sauf configuration contraire dans les Préférences.
 
 ![Page de destination du projet affichant la liste des projets.](assets/projects.png)
 
@@ -98,7 +96,7 @@ Vous pouvez agir sur un ou plusieurs projets à l’aide du menu contextuel ![Pl
 | Icône | Action | Description |
 |:---:| ---|---|
 | ![CrossSize75](/help/assets/icons/Close.svg) | **[!UICONTROL *x *sélectionné]** | Désélectionnez les projets et dossiers sélectionnés et supprimez la barre d’actions bleue. |
-| ![Supprimer](/help/assets/icons/Delete.svg) | **[!UICONTROL Supprimer]** | Supprimez un ou plusieurs projets ou dossiers. Il vous est demandé de confirmer.<p>Projets que vous supprimez :</p><ul><li>Impossible à récupérer</li><li>Suppression de la liste des projets</li><li>ne sont plus accessibles avec leur URL</li><li>ne figurent plus dans les diffusions planifiées (en cas de configuration précédente pour des diffusions planifiées)<br/>Pour plus d’informations sur les diffusions planifiées, voir la section [Projets planifiés](/help/components/scheduled-projects-manager.md).  </p> |
+| ![Supprimer](/help/assets/icons/Delete.svg) | **[!UICONTROL Supprimer]** | Supprimez un ou plusieurs projets ou dossiers. Il vous est demandé de confirmer.<p>Projets que vous supprimez :</p><ul><li>Impossible à récupérer</li><li>Sont supprimés de la liste des projets</li><li>ne sont plus accessibles avec leur URL</li><li>ne figurent plus dans les diffusions planifiées (en cas de configuration précédente pour des diffusions planifiées)<br/>Pour plus d’informations sur les diffusions planifiées, voir la section [Projets planifiés](/help/components/scheduled-projects-manager.md).  </p> |
 | ![Partager](/help/assets/icons/ShareAlt.svg) | **[!UICONTROL Partager]** | Partagez un projet. Consultez [Partager un projet](/help/analysis-workspace/curate-share/share-projects.md) pour plus d’informations. |
 | ![Modifier](/help/assets/icons/Edit.svg) | **[!UICONTROL Renommer]** | Renommez un projet. Ouvre une **[!UICONTROL boîte de dialogue Renommer : *nom du projet *]**. Saisissez un nouveau nom et sélectionnez**[!UICONTROL Enregistrer ]**. |
 | ![Copier](/help/assets/icons/Copy.svg) | **[!UICONTROL Copier]** | Copiez un ou plusieurs projets. Les projets reçoivent le même nom et le même suffixe `(Copy)`. |
@@ -125,13 +123,13 @@ Vous pouvez changer l’aspect de l’interface Projets à l’aide des sélecte
 
 Vous pouvez filtrer les projets et les dossiers dans la [Liste des projets](#project-list) à l’aide du panneau Filtrer ➍. Pour afficher ou masquer le panneau Filtrer, utilisez ![Filtrer](/help/assets/icons/Filter.svg).
 
-Le panneau Filtrer se compose des sections suivantes.
+Le panneau Filtre se compose des sections suivantes.
 
 ### Balises
 
 | Balises | Description |
 |---|---|
-| ![Balises](/help/analysis-workspace/build-workspace-project/assets/projects-filters-tags.png){width="300"} | La section **[!UICONTROL Balises]** permet de filtrer par balise. <ul><li>Vous utilisez ![Rechercher](/help/assets/icons/Search.svg) *Rechercher des balises* pour rechercher les balises que vous souhaitez utiliser pour filtrer.</li><li>Vous pouvez sélectionnez plusieurs balises. Les balises disponibles dépendent des sélections effectuées dans d’autres sections du panneau Filtrer.</li><li>Les chiffres indiquent ce qui suit :<ul><li>**2︎⃣** : nombre de balises disponibles pour les projets résultant du filtre actuel.</li><li>7︎⃣ : nombre de projets associés à la balise spécifique.</li></ul></li></ul> |
+| ![Balises](/help/analysis-workspace/build-workspace-project/assets/projects-filters-tags.png){width="300"} | La section **[!UICONTROL Balises]** permet de filtrer par balise. <ul><li>Vous utilisez ![Rechercher](/help/assets/icons/Search.svg) *Rechercher des balises* pour rechercher les balises que vous souhaitez utiliser pour filtrer.</li><li>Vous pouvez sélectionnez plusieurs balises. Les balises disponibles dépendent des sélections effectuées dans d’autres sections du panneau Filtre.</li><li>Les chiffres indiquent ce qui suit :<ul><li>**2︎⃣** : nombre de balises disponibles pour les projets résultant du filtre actuel.</li><li>7︎⃣ : nombre de projets associés à la balise spécifique.</li></ul></li></ul> |
 
 
 ### Vue de données
@@ -145,27 +143,27 @@ Le panneau Filtrer se compose des sections suivantes.
 
 | Propriétaire | Description |
 |---|---|
-| ![Propriétaires](/help/analysis-workspace/build-workspace-project/assets/projects-filters-owners.png){width="300"} | La section **[!UICONTROL Propriétaire]** vous permet de filtrer les propriétaires. <ul><li>Utilisez ![Rechercher](/help/assets/icons/Search.svg) *Rechercher des propriétaires* pour rechercher les propriétaires que vous souhaitez utiliser pour filtrer.</li><li>Vous pouvez sélectionner plusieurs propriétaires. Les propriétaires disponibles dépendent des sélections effectuées dans d’autres sections du panneau Filtrer.</li><li>Les chiffres indiquent ce qui suit :<ul><li>**3︎⃣** : nombre de propriétaires disponibles pour les projets résultant du filtre actuel.</li><li>4︎⃣ : nombre de projets associés à la personne propriétaire spécifique.</li></ul></li></ul> |
+| ![Propriétaires](/help/analysis-workspace/build-workspace-project/assets/projects-filters-owners.png){width="300"} | La section **[!UICONTROL Propriétaire]** vous permet de filtrer les propriétaires. <ul><li>Utilisez ![Rechercher](/help/assets/icons/Search.svg) *Rechercher des propriétaires* pour rechercher les propriétaires que vous souhaitez utiliser pour filtrer.</li><li>Vous pouvez sélectionner plusieurs propriétaires. Les propriétaires disponibles dépendent des sélections effectuées dans d’autres sections du panneau de filtre.</li><li>Les chiffres indiquent ce qui suit :<ul><li>**3︎⃣** : nombre de propriétaires disponibles pour les projets résultant du filtre actuel.</li><li>4︎⃣ : nombre de projets associés à la personne propriétaire spécifique.</li></ul></li></ul> |
 
 
 ### Type
 
 | Type | Description |
 |---|---|
-| ![Type](/help/analysis-workspace/build-workspace-project/assets/projects-filters-type.png){width="300"} | La section **[!UICONTROL Type]** permet de filtrer selon le type de projets ou de dossiers.<ul><li>Vous pouvez sélectionner l’une ou plusieurs des options suivantes :<ul><li> **[!UICONTROL Dossier]**</li><li>**[!UICONTROL Projet Espace de travail]**</li><li>**[!UICONTROL Carte de performance mobile]**</li></ul> <li>Vous pouvez sélectionner plusieurs filtres. Les autres filtres disponibles dépendent des sélections effectuées dans d’autres sections du panneau Filtrer.</li><li>Les chiffres indiquent ce qui suit :<ul><li>**5︎⃣** : nombre d’autres filtres disponibles pour les projets résultant du filtre actuel.</li><li>4︎⃣ : nombre de projets associés à l’autre filtre spécifique.</li></ul></li></ul> |
+| ![Type](/help/analysis-workspace/build-workspace-project/assets/projects-filters-type.png){width="300"} | La section **[!UICONTROL Type]** permet de filtrer selon le type de projets ou de dossiers.<ul><li>Vous pouvez sélectionner l’une ou plusieurs des options suivantes :<ul><li> **[!UICONTROL Dossier]**</li><li>**[!UICONTROL Projet Espace de travail]**</li><li>**[!UICONTROL Carte de performance mobile]**</li></ul> <li>Vous pouvez sélectionner plusieurs filtres. Les autres filtres disponibles dépendent des sélections effectuées dans d’autres sections du panneau de filtre.</li><li>Les chiffres indiquent ce qui suit :<ul><li>**5︎⃣** : nombre d’autres filtres disponibles pour les projets résultant du filtre actuel.</li><li>4︎⃣ : nombre de projets associés à l’autre filtre spécifique.</li></ul></li></ul> |
 
 
 ### Autres filtres
 
 | Autres filtres | Description |
 |---|---|
-| ![Autres filtres](/help/analysis-workspace/build-workspace-project/assets/projects-filters-others.png){width="300"} | La section **[!UICONTROL Autres filtres]** vous permet de filtrer selon un autre filtre prédéfini.<ul><li>Vous pouvez sélectionner l’une ou plusieurs des options suivantes :<ul><li> **[!UICONTROL Tout afficher]**</li><li>**[!UICONTROL Partagé avec moi]**</li><li>**[!UICONTROL À moi]**</li><li>**[!UICONTROL Approuvés]**</li><li>**[!UICONTROL Favoris]**</li></ul> Ce que vous pouvez sélectionner dépend de votre rôle et de vos autorisations.</li><li>Vous pouvez sélectionner plusieurs filtres. Les autres filtres disponibles dépendent des sélections effectuées dans d’autres sections du panneau Filtrer.</li><li>Les chiffres indiquent ce qui suit :<ul><li>**5︎⃣** : nombre d’autres filtres disponibles pour les projets résultant du filtre actuel.</li><li>4︎⃣ : nombre de projets associés à l’autre filtre spécifique.</li></ul></li></ul> |
+| ![Autres filtres](/help/analysis-workspace/build-workspace-project/assets/projects-filters-others.png){width="300"} | La section **[!UICONTROL Autres filtres]** vous permet de filtrer selon un autre filtre prédéfini.<ul><li>Vous pouvez sélectionner l’une ou plusieurs des options suivantes :<ul><li> **[!UICONTROL Tout afficher]**</li><li>**[!UICONTROL Partagé avec moi]**</li><li>**[!UICONTROL À moi]**</li><li>**[!UICONTROL Approuvés]**</li><li>**[!UICONTROL Favoris]**</li></ul> Ce que vous pouvez sélectionner dépend de votre rôle et de vos autorisations.</li><li>Vous pouvez sélectionner plusieurs filtres. Les autres filtres disponibles dépendent des sélections effectuées dans d’autres sections du panneau de filtre.</li><li>Les chiffres indiquent ce qui suit :<ul><li>**5︎⃣** : nombre d’autres filtres disponibles pour les projets résultant du filtre actuel.</li><li>4︎⃣ : nombre de projets associés à l’autre filtre spécifique.</li></ul></li></ul> |
 
 ## Recherche
 
 Utilisez la zone de recherche ➎ pour rechercher des projets et des dossiers à l’aide du champ ![Rechercher](/help/assets/icons/Search.svg). Commencez la saisie et la [liste de projets](#project-list) filtre automatiquement selon votre entrée de recherche.
 
-La zone de recherche affiche également les filtres appliqués à partir du panneau Filtrer.
+La zone de recherche affiche également les filtres appliqués à partir du panneau Filtre.
 
 * Pour supprimer un filtre, sélectionnez ![CrossSize75](/help/assets/icons/CrossSize75.svg) dans le filtre.
 * Pour supprimer tous les filtres, sélectionnez Effacer tout.
@@ -240,7 +238,7 @@ Settings include:
 |  Created By  | Project owner name  |
 |  Last Modified  | Date of last modification to the project.  |
 |  Tags  |Lists any tags applied to a project for easier categorization.  |
-|  Description  | A description is useful for clarifying the purpose of a project. You can double-click the description to edit it.  |
+|  Description  | A description is useful for clarifying the purpose of a project. You can double-click the description to edit it. <p>To have Adobe generate a description for you, select **[!UICONTROL Generate description]** below the description field. Adobe analyzes several panels in the project and summarizes them into a description. Generated descriptions include the text **[!UICONTROL Generated by Adobe using AI]** and can be edited. This option requires your organization to agree to certain generative AI legal terms.</p> |
 |  Count repeat instances in project  | Specifies whether repeat instances are counted in reports. Note: this setting does not apply to Flow or Fallout visualizations.  |
 |  [Project color palette](/help/analysis-workspace/build-workspace-project/color-palettes.md)  | You can change the categorical color palette used in Workspace, by choosing from out-of-the-box palettes that have been optimized for color blindness, or by specifying your custom palette. This feature affects many things in Workspace, including most visualizations.  |
 | [View Density](/help/analysis-workspace/build-workspace-project/view-density.md) | Lets you see more data on the screen by reducing the vertical padding of the left panel, freeform tables and cohort tables. |

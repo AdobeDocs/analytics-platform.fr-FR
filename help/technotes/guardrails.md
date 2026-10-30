@@ -41,7 +41,7 @@ topic_v2:
     internal-label: Insights
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
+source-git-commit: 5b0c9d764d17daa63316f8ab294aa9c8f7f94427
 workflow-type: tm+mt
 source-wordcount: '2440'
 ht-degree: 12%
@@ -144,7 +144,7 @@ Consultez également la section Experience Platform [&#x200B; Mécanismes de sé
 | Nom | Valeur | Type de limite | Description |
 |---|--:|---|---|
 | Projets | 50 000 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de projets pour une organisation. |
-| Vues des données | 2 000 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de [vues de données](../data-views/data-views.md) pour une organisation. |
+| Vues des données | 5 000 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de [vues de données](../data-views/data-views.md) pour une organisation. |
 | Vues des données | 500-1000 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de vues de données pour une connexion. La valeur varie en fonction du package Customer Journey Analytics (voir Description du produit). |
 | Jeux de données | 100 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de [jeux de données](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=fr) par connexion. |
 | Connexions | 1 000 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de [connexions](../connections/overview.md) pour une organisation. |

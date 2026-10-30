@@ -29,10 +29,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: f886069ac388da7985beac80cdaaa7bd0a506439
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 33%
+source-wordcount: '997'
+ht-degree: 32%
 ---
 # Gérer les segments
 
@@ -85,6 +85,7 @@ Vous pouvez agir sur les segments à l’aide de la barre d’actions ➋. La ba
 | ![Modifier](/help/assets/icons/Edit.svg) **[!UICONTROL Renommer]** | Renommez un seul segment sélectionné. Lorsque cette option est sélectionnée, vous pouvez renommer le segment en ligne. |
 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Approuver]** | Valider les segments sélectionnés. Voir [Approuver les segments](seg-approve.md) pour plus d’informations. |
 | ![Copier](/help/assets/icons/Copy.svg) **[!UICONTROL Copier]** | Copiez le segment sélectionné. Les nouveaux segments sont créés avec les mêmes nom et suffixe `(Copy)`. |
+| ![AI](/help/assets/icons/AI.svg) **[!UICONTROL générer des descriptions]** | <p>Générer des descriptions pour les segments sélectionnés, en remplaçant les descriptions existantes.</p><p>Pour éviter de remplacer des descriptions existantes, commencez par [filtrer](#filter-panel) la liste pour afficher uniquement les segments sans description (dans le filtre, sous [!UICONTROL **Autres filtres**], sélectionnez [!UICONTROL **Description manquante**]).</p><p>Il vous est demandé de confirmer. Les requêtes volumineuses s’exécutent en arrière-plan et vous recevez une notification lorsqu’elles se terminent.</p><p>Pour plus d’informations, voir [Générer automatiquement des descriptions](/help/components/add-component-descriptions.md#automatically-generate-descriptions).</p> |
 | ![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Exporter au format CSV]** | Exportez les segments vers un fichier `Segments List.csv`. |
 
 ### Barre de filtres actifs

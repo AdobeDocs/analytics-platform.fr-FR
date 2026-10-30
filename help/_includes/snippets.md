@@ -1,7 +1,7 @@
 ---
-source-git-commit: ccaa957e79fba24292316c7447be786f57f03493
+source-git-commit: f886069ac388da7985beac80cdaaa7bd0a506439
 workflow-type: tm+mt
-source-wordcount: '5605'
+source-wordcount: '5607'
 ht-degree: 95%
 ---
 # Extraits
@@ -94,7 +94,7 @@ Cette vidéo présente la fonctionnalité dans Adobe Analytics. Toutefois, cett
 
 | Autres filtres | Description |
 |---|---|
-| ![Autres filtres](/help/assets/filter-other.png){width="300"} | La section **[!UICONTROL Autres filtres]** vous permet de filtrer selon un autre filtre prédéfini.<ul><li>Vous pouvez sélectionner l’une ou plusieurs des options suivantes :<ul><li> **[!UICONTROL Tout afficher]**</li><li>**[!UICONTROL Partagé avec moi]**</li><li>**[!UICONTROL À moi]**</li><li>**[!UICONTROL Approuvés]**</li><li>**[!UICONTROL Favoris]**</li></ul> Ce que vous pouvez sélectionner dépend de votre rôle et de vos autorisations.</li><li>Vous pouvez sélectionner plusieurs filtres. Les autres filtres disponibles dépendent des sélections effectuées dans d’autres sections du panneau de filtre.</li><li>Les chiffres indiquent ce qui suit :<ul><li>**(1)** : nombre d’autres filtres sélectionnés (si un ou plusieurs autres filtres sont sélectionnés).</li><li>**5︎⃣** : nombre d’autres filtres disponibles pour les éléments résultant du filtre actuel.</li><li>4︎⃣ : nombre d’éléments associés à l’autre filtre spécifique.</li></ul></li></ul> |
+| ![Autres filtres](/help/assets/filter-other.png){width="300"} | La section **[!UICONTROL Autres filtres]** vous permet de filtrer selon un autre filtre prédéfini.<ul><li>Vous pouvez sélectionner l’une ou plusieurs des options suivantes :<ul><li> **[!UICONTROL Tout afficher]**</li><li>**[!UICONTROL Partagé avec moi]**</li><li>**[!UICONTROL À moi]**</li><li>**[!UICONTROL Approuvés]**</li><li>**[!UICONTROL Favoris]**</li><li>**[!UICONTROL Description manquante]**</li></ul> Ce que vous pouvez sélectionner dépend de votre rôle et de vos autorisations.</li><li>Vous pouvez sélectionner plusieurs filtres. Les autres filtres disponibles dépendent des sélections effectuées dans d’autres sections du panneau de filtre.</li><li>Les chiffres indiquent ce qui suit :<ul><li>**(1)** : nombre d’autres filtres sélectionnés (si un ou plusieurs autres filtres sont sélectionnés).</li><li>**5︎⃣** : nombre d’autres filtres disponibles pour les éléments résultant du filtre actuel.</li><li>4︎⃣ : nombre d’éléments associés à l’autre filtre spécifique.</li></ul></li></ul> |
 
 ## Section de filtre de période  {#daterangefiltersection}
 

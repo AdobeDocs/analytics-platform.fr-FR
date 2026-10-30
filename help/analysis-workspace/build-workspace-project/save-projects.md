@@ -17,13 +17,11 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 8ab47e74ee442d97e8e7b1b9e92129025a5b1d1f
 workflow-type: tm+mt
-source-wordcount: 860
-ht-degree: 95%
-
+source-wordcount: '962'
+ht-degree: 85%
 ---
-
 # Enregistrer des projets {#save-projects}
 
 <!-- markdownlint-disable MD034 -->
@@ -53,7 +51,7 @@ Une fois votre projet ouvert dans Analysis Workspace, sélectionnez **[!UICONTR
   1. Indiquez ce qui suit :
 
      * **[!UICONTROL Nom]** (obligatoire). Nom de votre projet.
-     * **[!UICONTROL Description]**. Description de votre projet.
+     * **[!UICONTROL Description]**. Description de votre projet. Pour qu’Adobe génère une description pour vous, sélectionnez **[!UICONTROL Générer la description]**. Adobe analyse plusieurs panneaux du projet et les résume dans une description. Les descriptions générées incluent le texte **[!UICONTROL Généré par Adobe à l’aide de l’IA]** et peuvent être modifiées. Cette option nécessite que votre entreprise accepte certains termes juridiques d’IA générative.
      * **[!UICONTROL Balises]**. Recherchez des balises dans le champ [!UICONTROL *Rechercher des balises*] ou ajoutez de nouvelles balises avec **[!UICONTROL ENTRÉE]**.
      * **[!UICONTROL Dossier]**. Sélectionnez un dossier dans le menu déroulant [!UICONTROL *Sélectionner un dossier*]. Si vous ne spécifiez pas de dossier, le projet est enregistré dans le dossier actuel à partir duquel vous avez créé un projet.
      * **[!UICONTROL Notes de version]**. Ajoutez des notes de version dans la zone de texte *Ajouter des notes*.
@@ -90,7 +88,7 @@ Une fois votre projet ouvert dans Analysis Workspace, sélectionnez **[!UICONTR
   1. Indiquez ce qui suit :
 
      * **[!UICONTROL Nom]** (obligatoire). Nom de votre projet.
-     * **[!UICONTROL Description]**. Description de votre projet.
+     * **[!UICONTROL Description]**. Description de votre projet. Pour qu’Adobe génère une description pour vous, sélectionnez **[!UICONTROL Générer la description]**. Adobe analyse plusieurs panneaux du projet et les résume dans une description. Les descriptions générées incluent le texte **[!UICONTROL Généré par Adobe à l’aide de l’IA]** et peuvent être modifiées. Cette option nécessite que votre entreprise accepte certains termes juridiques d’IA générative.
      * **[!UICONTROL Balises]**. Recherchez des balises dans le champ [!UICONTROL *Rechercher des balises*] ou ajoutez de nouvelles balises avec **[!UICONTROL ENTRÉE]**.
      * **[!UICONTROL Dossier]**. Sélectionnez un dossier dans le menu déroulant [!UICONTROL *Sélectionner un dossier*]. Si vous ne spécifiez pas de dossier, le projet est enregistré dans le dossier actuel à partir duquel vous avez créé un projet.
      * **[!UICONTROL Notes de version]**. Ajoutez des notes de version dans la zone de texte *Ajouter des notes*.
@@ -146,19 +144,19 @@ Si vous ouvrez un projet supplémentaire alors que vous travaillez sur un projet
 Les options disponibles sont les suivantes :
 
 * **[!UICONTROL Enregistrer]** : remplace la copie locale la plus récente de votre projet enregistrée automatiquement par vos dernières modifications.
-* **[!UICONTROL Ignorer les modifications]** : ignore les dernières modifications. Le projet conserve les modifications les plus récentes enregistrées automatiquement.
+* **[!UICONTROL Ignorer les modifications]** : ignore les dernières modifications. Le projet conserve la copie locale la plus récente enregistrée automatiquement.
 * **[!UICONTROL Annuler]** : annulez l’action pour ouvrir un autre projet et conserver le projet existant ouvert.
 
 <!-- ![Click Save to save changes to a project.](assets/existing-save.png) -->
 
 #### Quitter ou fermer un onglet
 
-Si vous quittez la page ou fermez l’onglet du navigateur lors de l’affichage d’un projet avec des modifications qui n’ont pas encore été enregistrées automatiquement, le navigateur vous avertit que les modifications non enregistrées seront perdues. Vous pouvez choisir de quitter ou d’annuler. Le mode d’avertissement du navigateur dépend du navigateur que vous utilisez.
+Si vous quittez la page ou fermez l’onglet du navigateur lors de l’affichage d’un projet avec des modifications qui n’ont pas encore fait l’objet d’un enregistrement automatique, le navigateur vous avertit que les modifications non enregistrées seront perdues. Vous pouvez choisir de quitter ou d’annuler. Le mode d’avertissement du navigateur dépend du navigateur que vous utilisez.
 
 
 ### Blocage du navigateur ou expiration d’une session
 
-En cas de blocage du navigateur ou d’expiration de la session, vous recevez une invitation, lors de votre prochain accès à Analysis Workspace, à récupérer les modifications apportées à votre projet qui n’ont pas encore été enregistrées automatiquement.
+En cas de blocage du navigateur ou d’expiration de la session, vous recevez une invitation, lors de votre prochain accès à Analysis Workspace, à récupérer les modifications apportées à votre projet qui n’ont pas encore fait l’objet d’un enregistrement automatique.
 
 * Sélectionnez **[!UICONTROL Oui]** pour restaurer le projet à partir de la copie la plus récente enregistrée automatiquement.
 

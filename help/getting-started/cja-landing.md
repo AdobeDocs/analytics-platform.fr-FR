@@ -40,10 +40,10 @@ topic_v2:
     internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
+source-git-commit: 5aba7dcf73ddd7aee48a945911a8ff4b0f18e2e3
 workflow-type: tm+mt
-source-wordcount: '1124'
-ht-degree: 60%
+source-wordcount: '1062'
+ht-degree: 64%
 ---
 # Guide de Customer Journey Analytics
 
@@ -188,8 +188,7 @@ Comprenez les différences entre Customer Journey Analytics et Adobe Analytic
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td><strong>Customer Journey Analytics</strong><br/>
-<!-- FOLLOW-UP (Thursday): When the in-app Coworker experience launches, point the Coworker link to /help/analysis-workspace/coworker.md. -->
-<a href="https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/overview" target="_blank">Tutoriels</a> - <a href="https://helpx.adobe.com/fr/legal/product-descriptions/customer-journey-analytics.html?lang=fr" target="_blank">Description du produit Customer Journey Analytics</a> - <a href="https://helpx.adobe.com/fr/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html?lang=fr" target="_blank">Description du produit Adobe Analytics (module complémentaire Customer Journey Analytics)</a> - <a href="https://helpx.adobe.com/fr/legal/product-descriptions/customer-journey-analytics-b2b.html?lang=fr" target="_blank">Description du produit Customer Journey Analytics B2B edition</a> - <a href="https://developer.adobe.com/cja-apis/docs/" target="_blank">API Customer Journey Analytics</a> - <a href="https://experienceleague.adobe.com/fr/docs/coworker/content/chat/use-cases/data-insights/analytics-overview" target="_blank">Coworker</a>
+<a href="https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/overview" target="_blank">Tutoriels</a> - <a href="https://helpx.adobe.com/fr/legal/product-descriptions/customer-journey-analytics.html?lang=fr" target="_blank">Description du produit Customer Journey Analytics</a> - <a href="https://helpx.adobe.com/fr/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html?lang=fr" target="_blank">Description du produit Adobe Analytics (module complémentaire Customer Journey Analytics)</a> - <a href="https://helpx.adobe.com/fr/legal/product-descriptions/customer-journey-analytics-b2b.html?lang=fr" target="_blank">Description du produit Customer Journey Analytics B2B edition</a> - <a href="https://developer.adobe.com/cja-apis/docs/" target="_blank">API Customer Journey Analytics</a> - <a href="/help/analysis-workspace/coworker.md">Coworker</a>
 </td>
 <td><strong>Ingestion des données</strong><br/><a href="/help/data-ingestion/data-ingestion.md">Vue d’ensemble</a> - <a href="/help/data-ingestion/analytics.md">Analytics</a> - <a href="/help/data-ingestion/aepwebsdk.md">SDK Web</a> - <a href="/help/data-ingestion/aepmobilesdk.md">SDK Mobile</a> - <a href="/help/data-ingestion/batch.md">Lot</a> - <a href="/help/data-ingestion/streaming.md">Streaming</a> - <a href="/help/data-ingestion/sources.md">Sources</a> - <a href="/help/data-ingestion/serverapi.md">API du serveur</a>
 </td>
