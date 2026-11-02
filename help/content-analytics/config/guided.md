@@ -38,9 +38,9 @@ topic_v2:
     internal-label: Data management
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 7dc0d254bfdf55d9b0b9a13587292b4dab59af30
+source-git-commit: 80d2b7da2e2b6c12a44d7e9bffd821e58dbeeecc
 workflow-type: tm+mt
-source-wordcount: '4844'
+source-wordcount: '4894'
 ht-degree: 55%
 ---
 
@@ -298,6 +298,8 @@ Pour le canal mobile, vous pouvez configurer les options [capture et définition
 
 Dans cette section, vous pouvez choisir d’inclure des expériences dans les données mobiles que vous collectez avec Content Analytics.  Pour le canal mobile, une expérience correspond à ce que vous avez enregistré comme expérience à l’aide de Adobe Experience Platform SDK for Content Analytics.
 
+Les dimensions Expérience sont activées par défaut dans votre jeu de données et votre vue de données. La sélection **[!UICONTROL Inclure les expériences]** permet d’activer les expériences Content Analytics dans la collecte de données.
+
 Par défaut, l’option **[!UICONTROL Inclure les expériences]** est désactivée.
 
 N’envisagez d’inclure des expériences que lorsque vous avez instrumenté votre application mobile pour enregistrer des expériences et effectuer le suivi des vues d’expérience et des clics d’expérience.
@@ -469,7 +471,9 @@ Par défaut, l’option **[!UICONTROL Inclure les expériences]** est désactiv�
 N’envisagez d’inclure des expériences que dans les cas suivants :
 
 * Les pages du site doivent être reproductibles à l’aide de l’URL de la page.
-* Le contenu textuel affiché par une personne donnée peut être reproduit à l’aide de l’URL de la page et ne dépend pas de cookies ou d’autres mécanismes de personnalisation.
+* Le contenu textuel affiché par un utilisateur donné peut être reproduit à l’aide de l’URL de la page et ne dépend pas de cookies ni d’autres mécanismes de personnalisation.
+
+Les dimensions Expérience sont activées par défaut dans votre jeu de données et votre vue de données. La sélection **[!UICONTROL Inclure les expériences]** permet d’activer les expériences Content Analytics dans la collecte de données.
 
 >[!IMPORTANT]
 >
