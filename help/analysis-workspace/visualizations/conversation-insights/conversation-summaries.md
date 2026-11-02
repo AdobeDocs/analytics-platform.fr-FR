@@ -7,19 +7,19 @@ hide: true
 source-git-commit: 113a215e26092c65d6eaf2c321f60d3f3a5015b8
 workflow-type: tm+mt
 source-wordcount: '351'
-ht-degree: 10%
+ht-degree: 20%
 ---
-# Synthèses des conversations {#conversation-summaries}
+# Récapitulatifs des conversations {#conversation-summaries}
 
 >[!CONTEXTUALHELP]
 >id="workspace_conversationsummaries_button"
->title="Synthèses des conversations"
+>title="Récapitulatifs des conversations"
 >abstract="Créez une visualisation qui résume un groupe filtré de conversations."
 
 >[!CONTEXTUALHELP]
 >id="workspace_conversationsummaries_panel"
->title="Synthèses des conversations"
->abstract="Résumer un groupe filtré de conversations. Contrôlez la longueur du résumé. Voir les devis représentatifs des clients pour valider la précision des signaux extraits. Sélectionnez un devis pour ouvrir la relecture complète de la conversation."
+>title="Récapitulatifs des conversations"
+>abstract="Résumez un groupe filtré de conversations. Contrôlez la longueur du résumé. Consultez les citations représentatives de la clientèle pour valider la précision des signaux extraits. Sélectionnez un devis pour ouvrir la relecture complète de la conversation."
 
 {{release-limited-testing}}
 
@@ -52,7 +52,7 @@ Pour créer et configurer une visualisation **[!UICONTROL Récapitulatifs des co
 
 1. Sélectionnez **[!UICONTROL Créer]** pour créer la visualisation. Sélectionnez **[!UICONTROL Réinitialiser]** pour réinitialiser les valeurs de configuration aux valeurs par défaut. Sélectionnez **[!UICONTROL Annuler]** pour annuler la configuration.
 
-Pour reconfigurer la visualisation **[!UICONTROL Synthèses des conversations]**, sélectionnez ![Modifier](/help/assets/icons/Edit.svg) en regard de **[!UICONTROL Mesure : _mesure_]**&#x200B;ou **[!UICONTROL Mesure :_mesure_]** | **[!UICONTROL Segments : _segments_]**.
+Pour reconfigurer la visualisation **[!UICONTROL Synthèses des conversations]**, sélectionnez ![Modifier](/help/assets/icons/Edit.svg) en regard de **[!UICONTROL Mesure : _mesure_]**ou **[!UICONTROL Mesure :_mesure_]** | **[!UICONTROL Segments : _segments_]**.
 
 ## Utilisation
 
