@@ -7,19 +7,19 @@ hide: true
 source-git-commit: 113a215e26092c65d6eaf2c321f60d3f3a5015b8
 workflow-type: tm+mt
 source-wordcount: '424'
-ht-degree: 8%
+ht-degree: 16%
 ---
-# Sujets tendance {#trending-topics}
+# Sujets de tendance {#trending-topics}
 
 >[!CONTEXTUALHELP]
 >id="workspace_trendingtopics_button"
->title="Sujets tendance"
+>title="Sujets de tendance"
 >abstract="Créez une visualisation qui affiche une répartition hiérarchique des sujets de tendance avec des occurrences et des pourcentages, pour vous aider à identifier les thèmes importants dans les conversations."
 
 >[!CONTEXTUALHELP]
 >id="workspace_trendingtopics_panel"
->title="Sujets tendance"
->abstract="Analysez les rubriques de tendance en fonction de la mesure de classement sélectionnée. Sélectionnez des rubriques pour effectuer une analyse jusqu&#39;à cinq niveaux de profondeur. Recherchez des rubriques spécifiques et comparez les rubriques à d’autres périodes."
+>title="Sujets de tendance"
+>abstract="Analysez les sujets de tendance en fonction de la mesure de classement sélectionnée. Sélectionnez des sujets pour effectuer une analyse de jusqu’à cinq niveaux de profondeur. Recherchez des rubriques spécifiques et comparez les rubriques à d’autres périodes."
 
 {{release-limited-testing}}
 

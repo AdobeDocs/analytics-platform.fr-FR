@@ -126,7 +126,7 @@ Cette section est visible uniquement pour les administrateurs auxquels Journey O
 >[!CONTEXTUALHELP]
 >id="cja-enable-data-insights-data-view"
 >title="Activer pour l’agent Data Insights"
->abstract="Cette option permet d’utiliser cette vue de données avec l’agent Data Insights. Data Insights Agent est un agent de conversation d’IA génératif qui vous permet d’analyser rapidement vos données à l’aide d’invites textuelles. Il crée des visualisations pertinentes dans Analysis Workspace en utilisant les composants de votre vue de données et vos données réelles."
+>abstract="Cette option permet d’utiliser cette vue de données avec l’agent Data Insights. L’agent Data Insights est un agent conversationnel basé sur l’IA générative qui vous permet d’analyser rapidement vos données à l’aide de prompts textuels. Il crée des visualisations pertinentes dans Analysis Workspace en utilisant les composants de votre vue de données et vos données réelles."
 
 <!-- markdownlint-enable MD034 -->
 

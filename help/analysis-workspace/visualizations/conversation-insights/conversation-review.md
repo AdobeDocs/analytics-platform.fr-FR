@@ -7,20 +7,20 @@ hide: true
 source-git-commit: 113a215e26092c65d6eaf2c321f60d3f3a5015b8
 workflow-type: tm+mt
 source-wordcount: '188'
-ht-degree: 8%
+ht-degree: 16%
 ---
-# Examen de la conversation
+# Révision des conversations
 
 {{release-limited-testing}}
 
 >[!CONTEXTUALHELP]
 >id="workspace_conversationreview_button"
->title="Examen de la conversation"
->abstract="Créez une visualisation qui montre l’échange complet, tour à tour, entre le client et l’agent."
+>title="Révision des conversations"
+>abstract="Créez une visualisation qui montre l’échange complet, tour à tour, entre la clientèle et l’agent."
 
 >[!CONTEXTUALHELP]
 >id="workspace_conversationreview_panel"
->title="Examen de la conversation"
+>title="Révision des conversations"
 >abstract="comprendre le contexte et le flux d’une conversation individuelle, y compris les horodatages et les signaux ; Configurez les signaux à afficher."
 
 
