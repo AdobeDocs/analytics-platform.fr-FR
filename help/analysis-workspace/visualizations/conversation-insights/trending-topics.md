@@ -3,8 +3,7 @@ description: Utilisez la visualisation des sujets en tendance pour explorer les 
 title: Sujets tendance
 feature: Visualizations
 role: User
-hide: true
-source-git-commit: 113a215e26092c65d6eaf2c321f60d3f3a5015b8
+source-git-commit: e498c374e8bfe12d7adda6ff9e7870a86f91dd5c
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 16%
@@ -23,7 +22,7 @@ ht-degree: 16%
 
 {{release-limited-testing}}
 
-La visualisation ![Flux](/help/assets/icons/Feed.svg) **[!UICONTROL Sujets de tendance]** vous permet d’explorer et d’analyser les sujets de tendance dans le cadre des informations sur les conversations.
+La visualisation ![Répartition](/help/assets/icons/Breakdown.svg) **[!UICONTROL Sujets de tendance]** vous permet d’explorer et d’analyser les sujets de tendance dans le cadre de [Informations sur les conversations](/help/conversation-insights/overview.md).
 
 Vous pouvez rechercher des rubriques spécifiques et comparer le nombre et le pourcentage de chaque rubrique à chaque niveau avec d’autres plages de données.
 
@@ -42,7 +41,7 @@ Vous pouvez rechercher des rubriques spécifiques et comparer le nombre et le po
 
 Pour créer et configurer une visualisation **[!UICONTROL Rubriques de tendance]** :
 
-1. Ajoutez une visualisation ![Flux](/help/assets/icons/Feed.svg) **[!UICONTROL Rubriques de tendance]** . Voir [Ajouter une visualisation à un panneau](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
+1. Ajoutez une visualisation ![Répartition](/help/assets/icons/Breakdown.svg) **[!UICONTROL Tendances des rubriques]**. Voir [Ajouter une visualisation à un panneau](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
 
 1. Dans la **[!UICONTROL Rubriques de tendance]** configuration de la visualisation :
 
