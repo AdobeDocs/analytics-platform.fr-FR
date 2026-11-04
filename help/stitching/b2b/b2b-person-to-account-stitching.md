@@ -29,9 +29,9 @@ topic_v2:
     internal-label: Customer journeys
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: c244c7d5c08f2059046603d09b09fbe70f8bff07
 workflow-type: tm+mt
-source-wordcount: '2292'
+source-wordcount: '2330'
 ht-degree: 25%
 ---
 # Combinaison de personnes B2B et de comptes
@@ -46,7 +46,7 @@ Sans assemblage de comptes de personne à personne, tout événement qui ne cont
 
 L’assemblage des personnes et des comptes effectue les opérations suivantes sur vos jeux de données :
 
-* **Élever l’identité de personne** : comme pour l’approche de groupement [B2C](/help/stitching/overview.md), vous allez configurer un champ contenant des ID de personne persistants. À l’aide du graphique d’identité, l’ID de personne persistant sur chaque événement est élevé à un ID de personne à partir de l’espace de noms d’identifiant de personne configuré.
+* **Élever l’identité de personne** : comme pour l’approche de groupement [B2C](/help/stitching/overview.md), vous configurez un champ contenant des ID de personne persistants. À l’aide du graphique d’identité, l’ID de personne persistant sur chaque événement est élevé à un ID de personne à partir de l’espace de noms d’identifiant de personne configuré.
 * **Ajouter les identités de compte manquantes** : après obtention des informations d’ID de personne pour un événement, le [mappage personne à compte](#prerequisites) est utilisé pour dériver et ajouter les informations d’identité de compte. Toute identité de compte disponible sur l’événement lui-même est utilisée comme méthode de secours.
 
 ## Fonctionnement de l’assemblage des personnes B2B avec les comptes
@@ -70,7 +70,7 @@ Dans Customer Journey Analytics B2B edition, les événements sans ID de compte 
 L’assemblage des personnes B2B avec les comptes empêche les événements d’être ignorés et de ne pas être ingérés à l’aide des opérations suivantes :
 
 * [Élever les identités de personne](#elevate-person-identities).
-* [Ajouter les identités de compte manquantes](#add-missing-account-identitiers).
+* [Ajouter les identités de compte manquantes](#add-missing-account-identities).
 
 
 ### Élever les identités de personne
@@ -78,7 +78,7 @@ L’assemblage des personnes B2B avec les comptes empêche les événements d’
 +++ Détails
 
 Pour prendre en charge l’assemblage des comptes entre personnes B2B, lorsque vous [configurez les paramètres d’assemblage B2B](#configure-b2b-stitching-settings), vous fournissez un espace de noms d’identifiant de personne principal (par exemple, l’e-mail) et un jeu de données de mappage personne-compte.
-L’espace de noms de l’ID de personne du jeu de données Personne au compte peut être identique à celui du jeu principal (E-mail) ou différent. Dans l’exemple ci-dessous, il est défini comme ID CRM (qui devra être lié à E-mail dans le graphique d’identité).
+L’espace de noms de l’ID de personne du jeu de données Personne au compte peut être identique à celui du jeu principal (E-mail) ou différent. Dans l’exemple ci-dessous, il est défini comme ID CRM (qui doit être lié à E-mail dans le graphique d’identité).
 
 | ID CRM | ID de compte |
 |---|---|
@@ -89,8 +89,8 @@ L’espace de noms de l’ID de personne du jeu de données Personne au compte p
 | b978bbw9 | Ubiquité |
 | fs453ghi | Adobe |
 
-Le jeu de données de mappage de personne à compte est élevé à l’aide d’un groupement basé sur des graphiques. Notez que cela se produit en arrière-plan et n’est pas reflété dans les données réelles du jeu de données.
-Dans notre exemple, en utilisant des liens de graphique d’identité entre l’ID CRM et les espaces de noms d’e-mail, le résultat est un jeu de données de mappage personne-compte mis à jour avec des ID de personne élevés.
+Le jeu de données de mappage de personne à compte est élevé à l’aide d’un groupement basé sur des graphiques. Cela se produit en arrière-plan et n’est pas reflété dans les données réelles du jeu de données.
+Dans l’exemple, en utilisant des liens de graphique d’identité entre l’ID CRM et les espaces de noms d’e-mail, le résultat est un jeu de données de mappage personne-compte mis à jour avec des ID de personne élevés.
 
 | ID CRM | ID de personne élevé | ID de compte |
 |---|---|---|
@@ -136,7 +136,7 @@ Le jeu de données Personne à compte est utilisé pour élever les identifiants
 
 ### Résultats
 
-Cet exemple montre comment l’assemblage de comptes de personne B2B met à jour vos données d’événement d’expérience avec des identifiants de personne manquants et des identifiants de compte manquants ou incorrects, en fonction des données de graphique d’identité et du jeu de données de mappage de personne à compte que vous avez fourni en entrée.
+Cet exemple montre comment l’assemblage de comptes de personne B2B met à jour vos données d’événement d’expérience avec des identifiants de personne manquants et des identifiants de compte manquants ou incorrects, en fonction des données de graphique d’identité et du jeu de données de mappage de personne à compte fourni.
 
 
 ## Conditions préalables
@@ -149,7 +149,8 @@ Avant d’activer la personne B2B pour l’assemblage des comptes, préparez les
 
 >[!IMPORTANT]
 >
->Le champ ID de personne de votre jeu de données Personne à compte doit être marqué comme une identité dans votre schéma.
+>* Le champ ID de personne de votre jeu de données Personne à compte doit être marqué comme une identité dans votre schéma.
+>* Le jeu de données de recherche de personne à compte peut utiliser le schéma B2B standard basé sur la classe de relation de la personne avec le compte professionnel XDM ou un schéma relationnel personnalisé où les champs d’ID de personne et d’ID de compte sont des chaînes simples. Les schémas qui utilisent l’objet tableau **[!UICONTROL personComponents]** pour récupérer les informations d’identifiant de compte ne sont pas pris en charge pour les jeux de données de compte de personne à personne.
 
 ## Activer l’assemblage personne-compte {#enable-account-stitching}
 
@@ -277,7 +278,7 @@ Une fois que vous avez configuré la personne B2B pour l’assemblage des compte
 
 >[!IMPORTANT]
 >
->Une fois une connexion enregistrée, la configuration d’assemblage des personnes B2B avec le compte devient immuable. Pour afficher vos paramètres après l’enregistrement, sélectionnez **Ouvrir la configuration de groupement B2B**. Tous les champs sont en lecture seule. En outre, si le jeu de données utilisé pour le mappage [personne vers compte](#prerequisites) est supprimé dans Experience Platform, la configuration de groupement est supprimée et la connexion passe dans un état non valide, signalé par un message d’avertissement dans l’interface utilisateur.
+>Une fois une connexion enregistrée, la configuration d’assemblage des personnes B2B avec le compte devient immuable. Pour afficher vos paramètres après l’enregistrement, sélectionnez **Ouvrir la configuration de groupement B2B**. Tous les champs sont en lecture seule. En outre, si le jeu de données [mappage personne-compte](#prerequisites) est supprimé dans Experience Platform, la configuration de groupement est supprimée et la connexion devient non valide, signalée par un avertissement.
 
 ## Planning de mise à jour des données
 
