@@ -3,11 +3,10 @@ description: Utilisez la visualisation des résumés des conversations pour rés
 title: Synthèses de conversation
 feature: Visualizations
 role: User
-hide: true
-source-git-commit: 113a215e26092c65d6eaf2c321f60d3f3a5015b8
+source-git-commit: 30311dc0e753778c6e5316d82ffba25748d8315e
 workflow-type: tm+mt
-source-wordcount: '351'
-ht-degree: 20%
+source-wordcount: '407'
+ht-degree: 17%
 ---
 # Récapitulatifs des conversations {#conversation-summaries}
 
@@ -23,7 +22,7 @@ ht-degree: 20%
 
 {{release-limited-testing}}
 
-La visualisation ![Résumer](/help/assets/icons/Summarize.svg) **[!UICONTROL Résumés des conversations]** vous permet de résumer un groupe filtré de conversations.
+La visualisation ![AI](/help/assets/icons/AI.svg) **[!UICONTROL Synthèses des conversations]** vous permet de résumer un groupe filtré de conversations dans le cadre de [Informations sur les conversations](/help/conversation-insights/overview.md).
 
 La visualisation présente un résumé de la mesure sélectionnée (par exemple, Conversations) et affiche des sous-rubriques ou des commentaires textuels lorsque vous avez configuré la visualisation pour inclure des sous-rubriques.
 
@@ -42,7 +41,7 @@ La visualisation présente un résumé de la mesure sélectionnée (par exemple,
 
 Pour créer et configurer une visualisation **[!UICONTROL Récapitulatifs des conversations]** :
 
-1. Ajoutez une visualisation ![Résumer](/help/assets/icons/Summarize.svg) **[!UICONTROL Résumés des conversations]**. Voir [Ajouter une visualisation à un panneau](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
+1. Ajoutez une visualisation ![AI](/help/assets/icons/AI.svg) **[!UICONTROL Récapitulatifs des conversations]**. Voir [Ajouter une visualisation à un panneau](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
 
 1. Dans la configuration de visualisation **[!UICONTROL Synthèses des conversations]** :
 
@@ -52,7 +51,7 @@ Pour créer et configurer une visualisation **[!UICONTROL Récapitulatifs des co
 
 1. Sélectionnez **[!UICONTROL Créer]** pour créer la visualisation. Sélectionnez **[!UICONTROL Réinitialiser]** pour réinitialiser les valeurs de configuration aux valeurs par défaut. Sélectionnez **[!UICONTROL Annuler]** pour annuler la configuration.
 
-Pour reconfigurer la visualisation **[!UICONTROL Synthèses des conversations]**, sélectionnez ![Modifier](/help/assets/icons/Edit.svg) en regard de **[!UICONTROL Mesure : _mesure_]**&#x200B;ou **[!UICONTROL Mesure :_mesure_]** | **[!UICONTROL Segments : _segments_]**.
+Pour reconfigurer la visualisation **[!UICONTROL Synthèses des conversations]**, sélectionnez ![Modifier](/help/assets/icons/Edit.svg) en regard de **[!UICONTROL Mesure : _mesure_]**ou **[!UICONTROL Mesure :_mesure_]** | **[!UICONTROL Segments : _segments_]**.
 
 ## Utilisation
 
@@ -72,6 +71,13 @@ Pour utiliser la visualisation :
 
 * Si vous avez [inclus des sous-rubriques](#settings), sélectionnez **[!UICONTROL Sous-rubriques]** pour afficher les sous-rubriques ou **[!UICONTROL Commentaires verbatim]** pour afficher les commentaires verbatim.
 * Lorsque vous avez sélectionné **[!UICONTROL Commentaires verbatim]**, sélectionnez ![FileSearch](/help/assets/icons/FileSearch.svg) pour ouvrir une nouvelle visualisation [**[!UICONTROL Révision de conversation]**](./conversation-review.md) pour la conversation spécifique dont le commentaire textuel fait partie.
+
+Pour parcourir rapidement plusieurs révisions de conversation :
+
+1. Créez un [tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) avec **[!UICONTROL ID de conversation]** et **[!UICONTROL Nom de conversation]** comme dimensions.
+1. Sélectionnez le tableau à structure libre comme source de données pour la visualisation **[!UICONTROL Révision des conversations]**.
+
+Sélectionnez une conversation dans le tableau à structure libre pour mettre automatiquement à jour la **[!UICONTROL Révision de conversation]** avec les détails de cette conversation sélectionnée.
 
 ## Paramètres
 

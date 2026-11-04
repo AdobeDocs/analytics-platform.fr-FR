@@ -3,10 +3,9 @@ description: Utilisez la visualisation d’examen des conversations pour examine
 title: Révision de conversation
 feature: Visualizations
 role: User
-hide: true
-source-git-commit: 113a215e26092c65d6eaf2c321f60d3f3a5015b8
+source-git-commit: 6b84720eae3c0c6cd6cfd204591fb9d5f1f5cdb0
 workflow-type: tm+mt
-source-wordcount: '188'
+source-wordcount: '193'
 ht-degree: 16%
 ---
 # Révision des conversations
@@ -24,7 +23,7 @@ ht-degree: 16%
 >abstract="comprendre le contexte et le flux d’une conversation individuelle, y compris les horodatages et les signaux ; Configurez les signaux à afficher."
 
 
-La visualisation ![Chat](/help/assets/icons/Chat.svg) **[!UICONTROL Révision de la conversation]** montre l’échange complet tour à tour entre le client et l’agent.
+La visualisation ![Chat](/help/assets/icons/Chat.svg) **[!UICONTROL Révision de la conversation]** montre l’échange complet tour à tour entre le client et l’agent dans le cadre de [Informations sur la conversation](/help/conversation-insights/overview.md).
 
 La visualisation vous permet de comprendre le contexte et le flux d’une conversation individuelle, y compris les horodatages et les signaux. Vous pouvez configurer les signaux à afficher ou non.
 
