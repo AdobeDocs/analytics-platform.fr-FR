@@ -29,7 +29,7 @@ workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 100%
 ---
-# Paramètres du composant [!UICONTROL roupement de valeurs] {#value-bucketing-component-settings}
+# Paramètres du composant [!UICONTROL Groupement de valeurs] {#value-bucketing-component-settings}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -43,7 +43,7 @@ ht-degree: 100%
 
 Lors de la création ou de la modification d’une vue de données, le groupement de valeurs permet de combiner des valeurs numériques en fonction d’une plage de données. Elle n’est disponible que pour les dimensions utilisant des types de données de schéma entier ou double.
 
-![ des valeurs](../assets/value-bucketing.png)
+![Groupement des valeurs](../assets/value-bucketing.png)
 
 Le groupement de valeurs est utile lorsque vous souhaitez regrouper des plages au lieu de traiter chaque nombre unique comme un élément de dimension distinct. Par exemple, un groupement de valeurs « de 5 à 10 » sʼaffiche en tant quʼélément de ligne « 5 à 10 » dans Analysis Workspace.
 
