@@ -60,7 +60,7 @@ Les flux de données et Analysis Workspace traitent différemment l’assemblage
 
 * **Flux de données** : reflète uniquement l’identité regroupée au moment de l’exportation. Les résultats de la relecture ne sont pas appliqués rétroactivement aux fichiers exportés.
 
-* **** : affiche les données regroupées les plus récentes, mises à jour rétroactivement chaque fois qu’une relecture s’exécute. Les données historiques changent après chaque relecture, de sorte que Workspace reflète toujours la dernière résolution d’identité.
+* **&#x200B;**&#x200B;: affiche les données regroupées les plus récentes, mises à jour rétroactivement chaque fois qu’une relecture s’exécute. Les données historiques changent après chaque relecture, de sorte que Workspace reflète toujours la dernière résolution d’identité.
 
 ## Evénements en retard
 
@@ -70,9 +70,9 @@ Les flux de données et Analysis Workspace fonctionnent différemment concernant
 
 * **Flux de données** : exporte les données dans une fenêtre temporelle fixe en fonction du moment de réception des événements.
 
-  Les événements qui arrivent après la fermeture de la fenêtre peuvent ne pas être inclus dans l’exportation. Cela est influencé par le [ délai de traitement ](/help/components/exports/cja-data-feeds/create-feed.md#data-feed-processing-delay) vous choisissez.
+  Les événements qui arrivent après la fermeture de la fenêtre peuvent ne pas être inclus dans l’exportation. Cela est influencé par le [&#x200B; délai de traitement &#x200B;](/help/components/exports/cja-data-feeds/create-feed.md#data-feed-processing-delay) vous choisissez.
 
-* **** : traite les données au moment du rapport, de sorte que les événements soient inclus dans les rapports, quelle que soit la date de réception.
+* **&#x200B;**&#x200B;: traite les données au moment du rapport, de sorte que les événements soient inclus dans les rapports, quelle que soit la date de réception.
 
 ## Traitement par lots de données
 
@@ -82,5 +82,5 @@ Les flux de données et Analysis Workspace fonctionnent différemment concernant
 
 * **Flux de données** : distribue des données par lots sur chaque jour ou heure en fonction des horodatages d’origine. Par exemple, un lot contenant 30 jours de données est réparti sur 30 jours d’exportations. Par conséquent, une seule petite tranche apparaît dans une exportation unique.
 
-* **** : affiche toutes les données d&#39;un lot dès qu&#39;elles sont entièrement traitées, quelle que soit la période incluse dans le lot.
+* **&#x200B;**&#x200B;: affiche toutes les données d&#39;un lot dès qu&#39;elles sont entièrement traitées, quelle que soit la période incluse dans le lot.
 
