@@ -14,9 +14,9 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: a4ea9270d5bf27234fa229e8ba3df5998ecea0e1
+source-git-commit: bd396cb4909d131ed60c97e7101cf85946555e38
 workflow-type: tm+mt
-source-wordcount: '1303'
+source-wordcount: '1320'
 ht-degree: 1%
 ---
 # Composants de sous-événement dans les flux de données
@@ -98,11 +98,11 @@ Lorsque vous ajoutez un composant de sous-événement à un flux de données, un
 
 Les champs du même sous-événement apparaissent sur la zone de travail sous la forme d’un groupe imbriqué réductible plutôt que d’un élément plat.
 
-![&#x200B; Groupe de sous-événements &#x200B;](assets/data-feeds-subevent-added.png)
+![ Groupe de sous-événements ](assets/data-feeds-subevent-added.png)
 
 Ce groupe reflète la structure de données sous-jacente.
 
-Dans la sortie du flux de données, tous ces composants apparaissent sous la forme d’un tableau imbriqué dans une seule colonne.
+Dans la sortie du flux de données, tous ces composants apparaissent sous la forme d’un tableau imbriqué dans une seule colonne. Les fichiers parquet prennent en charge les tableaux imbriqués de manière native. Pour plus d’informations, voir [Utilisation de fichiers Parquet dans les flux de données](/help/components/exports/cja-data-feeds/df-parquet.md).
 
 Pour plus d’informations sur l’ajout de composants, y compris des composants de sous-événements, à un flux de données, voir [Création d’un flux de données](/help/components/exports/cja-data-feeds/create-feed.md).
 
@@ -220,7 +220,7 @@ Dans la sortie du flux de données, `survey_question` et `survey_answer` sont le
 
 ### Mappage d’identités
 
-Chaque identité du champ [`identityMap`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/field-groups/profile/identitymap) est exportée sous la forme d’un seul objet . L’objet contient l’espace de noms d’identité (la clé), ainsi que l’identifiant, l’état authentifié et l’indicateur principal. L’espace de noms se répète pour chaque identité de cet espace de noms.
+Chaque identité du champ [`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap) est exportée sous la forme d’un seul objet . L’objet contient l’espace de noms d’identité (la clé), ainsi que l’identifiant, l’état authentifié et l’indicateur principal. L’espace de noms se répète pour chaque identité de cet espace de noms.
 
 Seuls les attributs de mappage d’identités qui existent en tant que dimensions dans votre vue de données et que vous ajoutez au flux de données sont exportés.
 

@@ -17,10 +17,10 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 56f881fc811f0eeffb9633872b3edbe0eb2d7070
+source-git-commit: e4a2c292024e2d88c3dec02b86711d4f58d1c82c
 workflow-type: tm+mt
-source-wordcount: '1596'
-ht-degree: 39%
+source-wordcount: '1669'
+ht-degree: 38%
 ---
 # Disponibilité des composants dans les flux de données
 
@@ -49,7 +49,7 @@ Les dimensions suivantes sont incluses par défaut dans chaque flux de données 
 | ID de ligne | Identifiant unique pour chaque ligne incluse dans le flux de données. | Obligatoire | Non disponible |
 | Identifiant de session | Identifiant unique pour chaque session incluse dans le flux de données. | Obligatoire | Non disponible |
 | ID de personne | Identifiant de personne pour la vue de données et la connexion | Obligatoire | Norme facultative |
-| ID de compte {type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Identifiant de compte lors de l’utilisation du conteneur Compte | Obligatoire | Norme facultative |
+| ID de compte [!BADGE ]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Identifiant de compte lors de l’utilisation du conteneur Compte | Obligatoire | Norme facultative |
 
 ## Dimensions non prises en charge {#unsupported-dimensions}
 
@@ -93,6 +93,12 @@ Les mesures standard Customer Journey Analytics suivantes ne peuvent pas être i
 | Profil de comptes globaux Adobe | | Non disponible |
 | Union des personnes Adobe | | Non disponible |
 | Profil de personnes Adobe | | Non disponible |
+
+## Mesures calculées {#calculated-metrics}
+
+Les mesures calculées ne peuvent pas être incluses dans les flux de données. Une mesure calculée est calculée au moment du rapport en agrégeant de nombreux événements. Elle n’a donc aucune valeur sur une ligne d’événement individuelle.
+
+Si vous avez besoin des résultats des mesures calculées en dehors de Customer Journey Analytics, vous pouvez utiliser l’extension [Customer Journey Analytics BI](/help/data-views/bi-extension.md). L’extension BI renvoie des résultats au niveau du rapport plutôt que des lignes d’événement. Par conséquent, utilisez-la avec des flux de données plutôt que comme remplacement.
 
 ## Dimensions qui ne peuvent pas être utilisées ensemble {#incompatible-dimensions}
 
@@ -191,7 +197,7 @@ Les mesures Customer Journey Analytics suivantes doivent être remplacées :
 | Nom de la mesure | Notes | Flux de données |
 |---|---|---|
 | Comptes [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | En fonction de l’identifiant de compte spécifié dans la connexion | Non disponible. Utilisez un nombre distinct de l’ID de compte. |
-| Groupe d&#39;achat {type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Groupes d&#39;achat basés sur l&#39;ID de groupe d&#39;achat dans la connexion | Non disponible. Utiliser le nombre distinct de l&#39;ID du groupe d&#39;achat. |
+| Groupe d&#39;achat [!BADGE ]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Groupes d&#39;achat basés sur l&#39;ID de groupe d&#39;achat dans la connexion | Non disponible. Utiliser le nombre distinct de l&#39;ID du groupe d&#39;achat. |
 | Événements | Nombre de lignes de tous les jeux de données d’événements dans une connexion | Non disponible. Utilisez un nombre distinct de l’ID de ligne. |
 | Comptes globaux [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | En fonction de l’identifiant de comptes globaux dans la connexion | Non disponible. Utilisez un nombre distinct de l’identifiant de comptes globaux. |
 | Opportunités [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Opportunités basées sur l’ID d’opportunité dans la connexion | Non disponible. Utiliser le nombre distinct de l’ID d’opportunité. |
@@ -218,9 +224,9 @@ Les mesures Customer Journey Analytics suivantes doivent être remplacées :
 | Premières sessions | Mesure | Première session définie par une personne dans la fenêtre de création de rapports | Non disponible |
 | Sessions récurrentes | Mesure | Sessions qui n’étaient pas la première session d’une personne | Non disponible |
 | Espace de noms de l’ID de personne | Dimension | Type d’ID dont est constitué l’ID de personne (par exemple, e-mail ou ID de cookie) | Disponible |
-| Identifiant de compte global {type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Dimension | Identifiant de compte global lors de l’utilisation du conteneur de compte global | Disponible |
-| ID de l’opportunité {type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Dimension | ID de l’opportunité lors de l’utilisation du conteneur d’opportunités | Disponible |
-| ID de groupe d&#39;achat {type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Dimension | ID groupe d&#39;achat lors de l&#39;utilisation du conteneur groupe d&#39;achat | Disponible |
+| Identifiant de compte global [!BADGE ]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Dimension | Identifiant de compte global lors de l’utilisation du conteneur de compte global | Disponible |
+| ID de l’opportunité [!BADGE ]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Dimension | ID de l’opportunité lors de l’utilisation du conteneur d’opportunités | Disponible |
+| ID de groupe d&#39;achat [!BADGE ]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Dimension | ID groupe d&#39;achat lors de l&#39;utilisation du conteneur groupe d&#39;achat | Disponible |
 | Trimestre de l’année | Dimension de répartition temporelle | T1, T2, T3, T4 | Non disponible |
 | Session répétée | Mesure | Sessions qui n’ont pas été la toute première session d’une personne | Non disponible |
 | Type de session | Dimension | Deux valeurs : Première fois ou Récurrent | Non disponible |

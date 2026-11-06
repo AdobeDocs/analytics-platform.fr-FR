@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 22ec8a3fc4334e49e06986fdf52b27f3e97bef75
+source-git-commit: 6db3ace5744a4277477c2a712c12fdd9a5f57c82
 workflow-type: tm+mt
-source-wordcount: '4056'
-ht-degree: 13%
+source-wordcount: '4331'
+ht-degree: 12%
 ---
 # Créer un flux de données
 
@@ -117,7 +117,7 @@ Avant de créer un flux de données, il est important de comprendre les bases de
    | --------- | ---------- |
    | [!UICONTROL **Recommandé**] | Trie les composants avec ceux qui sont recommandés en haut de la liste. Les composants utilisés le plus souvent et le plus récemment par vous ou par d’autres membres de votre organisation sont répertoriés plus haut dans la liste. |
    | [!UICONTROL **Alphabétique**] | Trie les composants par ordre alphabétique. |
-   | [!UICONTROL **Catégorique**] | Trie les composants similaires à [!UICONTROL **Recommandé**], à la différence que les mesures calculées et les mesures standard sont regroupées séparément au lieu d’être mélangées. |
+   | [!UICONTROL **Catégorique**] | Trie les composants de la même manière que la mention [!UICONTROL **Recommandé**], à la différence que les composants sont regroupés séparément au lieu d’être mélangés. |
 
 1. Ajoutez des composants à la configuration des flux de données. Le rail de gauche affiche uniquement les composants valides pour les flux de données.
 
@@ -139,13 +139,7 @@ Avant de créer un flux de données, il est important de comprendre les bases de
 
 1. (Facultatif) Modifiez l’identifiant de sortie d’un composant. L’identifiant de sortie est le nom de la colonne dans la sortie du flux de données.
 
-   Par défaut, l’ID de sortie est l’ID du composant dans snake_case. La modification de l’identifiant de sortie affecte uniquement ce flux de données. Cela ne modifie pas l’identifiant du composant dans la vue de données. L’aperçu du schéma affiche l’identifiant du composant et l’identifiant de sortie.
-
-   1. Pointez sur un composant sur la zone de travail, puis sélectionnez l’icône d’information ![Infos](/help/assets/icons/InfoOutline.svg).
-
-   1. Sélectionnez l’icône Modifier ![Modifier](/help/assets/icons/Edit.svg) en regard de l’identifiant, puis spécifiez un nouvel identifiant de sortie.
-
-      <!--add screenshot-->
+   Par défaut, l’ID de sortie est l’ID du composant dans snake_case. La modification de l’identifiant de sortie affecte uniquement ce flux de données. Cela ne modifie pas l’identifiant du composant dans la vue de données. Dans la prévisualisation du schéma, la valeur `id` est l’identifiant de sortie.
 
    Les identifiants de sortie doivent :
 
@@ -156,6 +150,36 @@ Avant de créer un flux de données, il est important de comprendre les bases de
 
    Les identifiants de sortie ne peuvent pas commencer par `_cja`, qui est réservé à une utilisation par Adobe.
 
+   Vous pouvez modifier les identifiants de sortie un par un ou en bloc :
+
+   +++ Pour modifier l’identifiant de sortie d’un seul composant
+
+   1. Pointez sur un composant sur la zone de travail, puis sélectionnez l’icône d’information ![Infos](/help/assets/icons/InfoOutline.svg).
+
+   1. Sélectionnez l’icône Modifier ![Modifier](/help/assets/icons/Edit.svg) en regard de l’identifiant, puis spécifiez un nouvel identifiant de sortie.
+
+      <!--add screenshot-->
+
+   +++
+
+   +++ Pour modifier plusieurs identifiants de sortie à la fois
+
+   1. Sous le panneau **[!UICONTROL Aperçu du schéma]**, sélectionnez **[!UICONTROL Modifier en bloc les identifiants de sortie]**.
+
+   1. Sélectionnez **[!UICONTROL Copier]**, puis collez le fichier JSON dans un éditeur de texte ou un autre outil.
+
+   1. Mettez à jour les valeurs `id`, qui sont les identifiants de sortie. Vous ne pouvez pas modifier les noms (`name`) ou les types (`type` et `dataType`) des composants.
+
+   1. Collez à nouveau le fichier JSON modifié dans la boîte de dialogue, en remplaçant le fichier JSON existant, puis sélectionnez **[!UICONTROL Valider]**.
+
+   1. Vérifiez le nombre d’identifiants modifiés, inchangés et erronés. S’il existe des erreurs, sélectionnez **[!UICONTROL Précédent]** pour les corriger.
+
+   1. Sélectionnez **[!UICONTROL Appliquer les modifications]**.
+
+   <!--SME CHECK: How are JSON entries matched to components (order or name)? What happens if entries are reordered, removed, or added? Where are error details shown?-->
+
+   +++
+
 1. (Facultatif) Utilisez les panneaux **[!UICONTROL Résumé du flux]** et **[!UICONTROL Aperçu du schéma]** sur le côté droit de la page pour passer en revue votre structure de données avant de continuer :
 
    * Le **[!UICONTROL résumé des flux]** affiche un nombre réel de composants, colonnes, dimensions et mesures que vous avez ajoutés.
@@ -164,7 +188,7 @@ Avant de créer un flux de données, il est important de comprendre les bases de
 
    <!--add screenshot-->
 
-1. Sous l’onglet [!UICONTROL **Diffusion**], dans la section [!UICONTROL **Planifier**], choisissez le type de flux que vous souhaitez créer (actif ou de renvoi), puis spécifiez la fenêtre de création de rapports, la fréquence et d’autres options de configuration :
+1. Sous l’onglet [!UICONTROL **Diffusion**], dans la section [!UICONTROL **Planning**], choisissez le type de flux que vous souhaitez créer (actif ou de renvoi), puis spécifiez la fréquence, le délai de traitement et d’autres options de configuration :
 
    <!--add screenshot-->
 
@@ -174,10 +198,10 @@ Avant de créer un flux de données, il est important de comprendre les bases de
    | [!UICONTROL **Date de début**] | Date de début du flux de données. Pour les flux en direct, il doit s’agir d’aujourd’hui ou d’une date ultérieure. Pour les flux de renvoi, il doit s’agir d’une date passée dans la fenêtre de conservation des données de la vue de données. La date de début est basée sur le fuseau horaire de la vue de données. |
    | [!UICONTROL **Date d’expiration**] <br/>Disponible uniquement pour les flux en direct | Date à laquelle le flux de données expire et ne s’exécute plus. La date est basée sur le fuseau horaire de la vue de données. |
    | [!UICONTROL **Date de fin**]<br/> Disponible uniquement pour les flux de renvoi | Date de fin du flux de données. La date de fin ne peut pas être dans le futur. La date est basée sur le fuseau horaire de la vue de données. |
-   | [!UICONTROL **Fréquence**]<br/> Disponible uniquement pour les flux en direct | Sélectionnez la fréquence d’envoi du flux de données. Les événements dont la date et l’heure se trouvent dans la fenêtre de fréquence sont inclus dans la diffusion du flux de données. <p>Sélectionnez cette option pour inclure l’équivalent d’une heure de données ou d’un jour de données.</p><ul><li>**Quotidien** : les flux contiennent l’équivalent d’une journée complète de données, de minuit à minuit dans le fuseau horaire de la vue de données.</li><li>**Par heure** : les flux contiennent l’équivalent d’une heure de données.</li></ul> <p>Chaque diffusion utilise également une fenêtre de traitement progressive de 30 jours, précédant la fenêtre de fréquence incluse, pour qualifier les segments, calculer les sessions et conserver les valeurs de dimension. La fenêtre de traitement et le champ [!UICONTROL **Délai de traitement**] peuvent tous deux affecter les événements inclus. Pour plus d’informations, voir [Présentation de la fenêtre de traitement](#data-feed-processing-window) et [Présentation du délai de traitement](#data-feed-processing-delay).</p> |
+   | [!UICONTROL **Fréquence**]<br/> Disponible uniquement pour les flux en direct | Sélectionnez la fréquence d’envoi du flux de données. Les événements dont la date et l’heure se trouvent dans la fenêtre de fréquence sont inclus dans la diffusion du flux de données. <p>Sélectionnez cette option pour inclure l’équivalent d’une heure de données ou d’un jour de données.</p><ul><li>**Quotidien** : les flux contiennent l’équivalent d’une journée complète de données, de minuit à minuit dans le fuseau horaire de la vue de données.</li><li>**Par heure** : les flux contiennent l’équivalent d’une heure de données.</li></ul> <p>Chaque diffusion utilise également une fenêtre de traitement progressive de 30 jours, précédant la fenêtre de fréquence incluse, pour qualifier les segments, calculer les sessions et conserver les valeurs de dimension. La fenêtre de traitement et le paramètre [!UICONTROL **Délai de traitement**] peuvent tous deux affecter les événements inclus. Pour plus d’informations, voir [Présentation de la fenêtre de traitement](#data-feed-processing-window) et [Présentation du délai de traitement](#data-feed-processing-delay).</p> |
    | [!UICONTROL **Granularité**]<br/> Disponible uniquement pour les flux de renvoi | Intervalle de temps utilisé pour diviser les données historiques en blocs. Chaque bloc contient l’équivalent d’une journée complète de données, de minuit à minuit dans le fuseau horaire de la vue de données. <p>La granularité détermine la manière dont les données sont regroupées, et non la fréquence de diffusion. Les données de renvoi sont diffusées le plus rapidement possible, et non une fois par jour.</p><p>Ce champ est toujours défini sur [!UICONTROL **Quotidien**] et ne peut pas être modifié.</p> |
    | [!UICONTROL **Délai de traitement**] | Temps d’attente de Customer Journey Analytics avant de traiter un fichier de flux de données. Tous les événements tardifs qui arrivent pendant le délai de traitement sont inclus dans le flux de données. <p>Choisissez un délai suffisant pour que les données les plus lentes de votre connexion terminent le traitement. Si le délai est trop court, les données en cours de traitement ne sont pas incluses dans le fichier de flux de données.</p><p>Le délai de traitement minimal est de 2 heures. La valeur par défaut est basée sur les jeux de données de votre connexion. Par exemple, si le groupement est activé, la valeur par défaut est de 6 heures. Certains types de données nécessitent un délai plus long. Le délai que vous choisissez dépend des types de données de votre connexion, telles que les données de diffusion en continu, par lots, groupées, de recherche ou de profil.</p><p>Avant de configurer cette option, consultez les détails et les exemples décrits dans la section ci-dessous, [Comprendre le délai de traitement](#data-feed-processing-delay).</p> |
-   | [!UICONTROL **Format de compression**] | Sélectionnez le format de compression des fichiers de sortie Parquet diffusés vers votre destination cloud. Choisissez l’un des formats suivants :<ul><li>[!UICONTROL **Snappy**] : compression et décompression rapides avec des tailles de fichier modérées. Largement pris en charge par les plateformes de données modernes telles que BigQuery, Snowflake et Apache Spark.</li><li>[!UICONTROL **GZip**] : largement compatible, y compris avec les outils qui ne prennent pas en charge Snappy en mode natif. Recommandé si votre pipeline en aval nécessite une norme de compression largement reconnue.</li><li>[!UICONTROL **Z Standard (Zstd)**] : Efficacité de compression élevée avec décompression rapide. Convient si la réduction de la taille du fichier est une priorité et que vos outils prennent en charge Zstd.</li></ul> |
+   | [!UICONTROL **Format de compression**] | Sélectionnez le format de compression des fichiers de sortie Parquet diffusés vers votre destination cloud. Choisissez l’un des formats suivants :<ul><li>[!UICONTROL **Snappy**] : compression et décompression rapides avec des tailles de fichier modérées. Largement pris en charge par les plateformes de données modernes telles que BigQuery, Snowflake et Apache Spark.</li><li>[!UICONTROL **GZip**] : largement compatible, y compris avec les outils qui ne prennent pas en charge Snappy en mode natif. Recommandé si votre pipeline en aval nécessite une norme de compression largement reconnue.</li><li>[!UICONTROL **Z Standard (Zstd)**] : Efficacité de compression élevée avec décompression rapide. Convient si la réduction de la taille du fichier est une priorité et que vos outils prennent en charge Zstd.</li></ul><p>Tous les formats compressent les données à l’intérieur de chaque fichier Parquet, une colonne à la fois, de sorte que votre entrepôt de données peut toujours lire uniquement les colonnes dont une requête a besoin.</p><p>Pour plus d’informations sur les avantages de Parquet et sur la manière d’interroger ou de charger les fichiers après leur diffusion, voir [ Utilisation de fichiers Parquet dans les flux de données ](/help/components/exports/cja-data-feeds/df-parquet.md).</p> |
 
 1. Sous l’onglet [!UICONTROL **Diffusion**], dans la section [!UICONTROL **Destination**], configurez la destination vers laquelle vous souhaitez envoyer les données.
 
@@ -250,14 +274,23 @@ Tenez compte des points suivants lorsque vous utilisez des sessions dans les flu
 
 ### Persistance de Dimension
 
-Lorsque vous définissez la persistance sur une dimension individuelle, vous définissez également une expiration pour déterminer la durée pendant laquelle l’élément de dimension persiste au-delà de l’événement sur lequel il est défini.
+Lorsque vous définissez la persistance sur une dimension, vous définissez également une expiration qui détermine la durée pendant laquelle l’élément de dimension persiste au-delà de l’événement sur lequel il est défini.
 
-La fenêtre de traitement affecte la persistance des dimensions lorsque l’expiration est définie sur l’une des options suivantes dans la vue de données :
+La fenêtre de traitement limite la persistance pour chaque paramètre d’expiration. Les valeurs définies avant la fenêtre de traitement ne sont pas prises en compte, sauf avec l’expiration [!UICONTROL **Heure personnalisée**] :
 
-* [!UICONTROL **Fenêtre de création de rapports sur les personnes**] : la fenêtre de traitement devient la nouvelle fenêtre de création de rapports pour chaque dimension de la définition de flux de données qui utilise [!UICONTROL **Fenêtre de création de rapports sur les personnes**] comme expiration.
-* [!UICONTROL **Heure personnalisée**] : si l’heure personnalisée sélectionnée s’étend au-delà de la fenêtre de traitement, l’heure personnalisée est ignorée et la fenêtre de traitement est utilisée pour l’expiration de dimension pour chaque dimension de la définition du flux de données qui utilise [!UICONTROL **Heure personnalisée**] comme expiration. Les valeurs antérieures à la fenêtre de traitement ne sont pas prises en compte.
+* [!UICONTROL **Session**] : les valeurs persistent jusqu’à la fin de la session. Si une session a démarré avant la fenêtre de traitement, les valeurs définies avant la fenêtre de traitement ne sont pas prises en compte.
+* [!UICONTROL **Créneau de rapport des personnes**] : le créneau de traitement de 30 jours est utilisé comme délai d’expiration. Seules les valeurs définies dans la fenêtre de traitement persistent.
+* [!UICONTROL **Heure personnalisée**] : les valeurs persistent pour l’heure personnalisée définie sur la dimension. Si la durée personnalisée est supérieure à la fenêtre de traitement de 30 jours, le flux de données revient avant le début de la fenêtre de traitement (jusqu’à 90 jours) afin que les valeurs de dimension définies avant la fenêtre de traitement puissent persister pour les événements dans la diffusion.
 
-  Pour plus d’informations sur la définition de la persistance sur les dimensions dans la vue de données, voir [Paramètres des composants de persistance](/help/data-views/component-settings/persistence.md).
+  <!--FOLLOW-UP: Remove this note when the persistence back-end change (AN-495620) ships. Also remove the matching sentence in df-comparison-workspace.md (Dimension persistence bullet).-->
+
+  >[!NOTE]
+  >
+  >Actuellement, les expirations du temps personnalisé sont limitées à la fenêtre de traitement de 30 jours. Si la durée personnalisée est supérieure à 30 jours, la fenêtre de traitement est utilisée comme expiration à la place et les valeurs définies avant la fenêtre de traitement ne sont pas prises en compte. La prise en charge des délais personnalisés qui s’étendent au-delà de la fenêtre de traitement sera bientôt disponible.
+
+* [!UICONTROL **Mesure**] : les valeurs persistent jusqu’à ce que la mesure sélectionnée soit effectuée. Les valeurs définies avant la fenêtre de traitement ne sont pas prises en compte.
+
+Pour plus d’informations sur la définition de la persistance sur les dimensions dans la vue de données, voir [Paramètres des composants de persistance](/help/data-views/component-settings/persistence.md). Pour plus d’informations sur les différences de persistance dans les flux de données par rapport à Analysis Workspace, voir [Comprendre les écarts de données entre les flux de données et Analysis Workspace](/help/components/exports/cja-data-feeds/df-comparison-workspace.md#processing-window).
 
 >[!BEGINSHADEBOX]
 
@@ -265,7 +298,7 @@ La fenêtre de traitement affecte la persistance des dimensions lorsque l’expi
 
 Supposons que dans votre flux de données vous souhaitiez savoir quelle campagne marketing les utilisateurs ont vue à l’origine avant d’accéder à votre site.
 
-Pour ce faire, définissez la persistance sur la dimension Campagnes avec l’Original comme modèle d’affectation.
+Pour ce faire, définissez la persistance sur la dimension Campagnes avec Original comme modèle d’affectation et [!UICONTROL **Fenêtre de création de rapports de personne**] comme expiration.
 
 Dans ce cas, la campagne d’origine s’affiche dans la sortie du flux de données uniquement si les utilisateurs et utilisatrices remplissent **les deux** les conditions suivantes :
 
