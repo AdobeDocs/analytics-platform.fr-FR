@@ -45,10 +45,10 @@ topic_v2:
     internal-label: Data management
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '3512'
-ht-degree: 63%
+source-wordcount: '3504'
+ht-degree: 61%
 ---
 # Ingestion de données via Mobile SDK
 
@@ -125,11 +125,11 @@ Configurer le schéma :
 
    1. Dans la boîte de dialogue [!UICONTROL Ajouter des groupes de champs], sélectionnez le groupe de champs **[!UICONTROL ExperienceEvent AEP Mobile SDK]** dans la liste.
 
-      ![Groupe de champs Détails du cycle de vie mobile &#x200B;](./assets/select-aepmobilesdk-experienceevent.png)
+      ![Groupe de champs Détails du cycle de vie mobile ](./assets/select-aepmobilesdk-experienceevent.png)
 
       Vous pouvez sélectionner le bouton Aperçu pour afficher un aperçu des champs qui font partie de ce groupe de champs, comme `application > name`.
 
-      ![Aperçu du groupe de champs Détails du cycle de vie mobile &#x200B;](./assets/aepmobilesdk-experienceevent-preview.png)
+      ![Aperçu du groupe de champs Détails du cycle de vie mobile ](./assets/aepmobilesdk-experienceevent-preview.png)
 
       Sélectionnez **[!UICONTROL Précédent]** pour fermer l’aperçu.
 
@@ -147,7 +147,7 @@ Configurer le schéma :
 
    ![Objet d’identification](./assets/identification-field-mobile.png)
 
-   L’objet d’identification ajoute des fonctionnalités d’identification au schéma. Dans votre cas, vous devez identifier les profils à l’aide de votre application mobile à l’aide d’Experience Cloud ID et de l’adresse e-mail. De nombreux autres attributs sont disponibles pour effectuer le suivi de l’identification de la personne (par exemple, l’identifiant client, l’identifiant de fidélité).
+   L’objet d’identification ajoute des fonctionnalités d’identification au schéma. Dans votre cas, vous devez identifier les profils à l’aide de votre application mobile à l’aide de l’ECID et de l’adresse e-mail. De nombreux autres attributs sont disponibles pour effectuer le suivi de l’identification de la personne (par exemple, l’identifiant client, l’identifiant de fidélité).
 
    Sélectionnez **[!UICONTROL Appliquer]** pour ajouter cet objet au schéma.
 
@@ -155,7 +155,7 @@ Configurer le schéma :
 
    ![Spécifier l’ECID comme identité](./assets/specify-identity-mobile.png)
 
-   Vous spécifiez l’identité Experience Cloud comme identité principale que le service d’identités Adobe Experience Platform peut utiliser pour combiner (rapprocher) le comportement des profils avec le même ECID.
+   Vous spécifiez l’ECID en tant qu’identité principale que le service d’identités Adobe Experience Platform peut utiliser pour combiner (regrouper) le comportement des profils avec le même ECID.
 
    Sélectionnez **[!UICONTROL Appliquer]**. Une icône d’empreinte digitale apparaît dans l’attribut ecid.
 
@@ -183,7 +183,7 @@ Configurer le schéma :
 
 1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer le schéma.
 
-Vous avez créé un schéma minimal qui modélise les données que vous pouvez capturer à partir de votre application mobile. Le schéma permet d’identifier les profils à l’aide d’Experience Cloud Identity et de l’adresse e-mail. En activant le schéma pour le profil, vous vous assurez que les données capturées à partir de votre application mobile sont ajoutées au profil client en temps réel.
+Vous avez créé un schéma minimal qui modélise les données que vous pouvez capturer à partir de votre application mobile. Le schéma permet d’identifier les profils à l’aide de l’ECID et de l’adresse e-mail. En activant le schéma pour le profil, vous vous assurez que les données capturées à partir de votre application mobile sont ajoutées au profil client en temps réel.
 
 En regard des données de comportement, vous pouvez également capturer les données d’attributs de profil de votre application mobile (par exemple, les détails des profils s’abonnant à une newsletter).
 
@@ -195,7 +195,7 @@ Pour capturer les données de profil, vous devez :
 
 - Ajouter un objet d’identification basé sur le groupe de champs Profile Core v2.
 
-- Définir l’Experience Cloud ID comme identifiant principal et l’adresse e-mail comme identifiant.
+- Définir l’ECID comme identifiant principal et l’e-mail comme identifiant ;
 
 - Activer le schéma pour le profil.
 
@@ -271,7 +271,7 @@ Configurer le flux de données :
 
 Le flux de données est maintenant configuré pour transférer les données collectées depuis l’application mobile vers le jeu de données dans Adobe Experience Platform.
 
-Consultez [Présentation des flux de données](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=fr) pour plus d’informations sur la configuration d’un flux de données et la gestion des données sensibles.
+Consultez [Présentation des flux de données](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) pour plus d’informations sur la configuration d’un flux de données et la gestion des données sensibles.
 
 
 
@@ -465,7 +465,7 @@ Vous pouvez désormais déployer le code dans votre application mobile. Une fois
 
 Validez la mise en œuvre, corrigez-la si nécessaire puis, une fois qu’elle est correcte, déployez-la dans votre environnement d’évaluation et de production à l’aide de la fonctionnalité de workflow de publication des balises.
 
-Pour des informations beaucoup plus détaillées[&#128279;](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=fr) consultez le tutoriel Implémentation d’Adobe Experience Cloud dans les applications mobiles .
+Pour des informations beaucoup plus détaillées](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=fr) consultez le tutoriel [Implémentation d’Adobe Experience Cloud dans les applications mobiles .
 
 ## Configurer une connexion
 

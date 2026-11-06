@@ -47,7 +47,7 @@ topic_v2:
     internal-label: Personalization
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
 source-wordcount: '1476'
 ht-degree: 9%
@@ -111,13 +111,13 @@ Pour vérifier cette stratégie d’ID, vous devez exécuter un pilote de groupe
 
 +++Mapper les champs de données sources Marketo à leurs cibles XDM
 
-Mappez les objets [Personnes](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) et [Activités](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) à leurs champs cibles de schéma XDM respectifs.
+Mappez les objets [Personnes](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) et [Activités](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) à leurs champs cibles de schéma XDM respectifs.
 
 +++
 
 +++Ingestion de données Marketo dans Adobe Experience Platform
 
-Utilisez le connecteur [&#128279;](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo) pour importer les données de Marketo dans Experience Platform et les tenir à jour à l’aide des applications Experience Platform.
+Utilisez le connecteur [](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo) pour importer les données de Marketo dans Experience Platform et les tenir à jour à l’aide des applications Experience Platform.
 
 +++
 

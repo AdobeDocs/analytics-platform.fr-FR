@@ -22,9 +22,9 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '1300'
+source-wordcount: '1297'
 ht-degree: 0%
 ---
 
@@ -95,7 +95,7 @@ GA4 utilise un modèle d’identité en cascade pour identifier les utilisateurs
 2. Signaux Google (si l’utilisateur est connecté à un compte Google avec la personnalisation activée)
 3. Identifiant de l’appareil (identifiant client basé sur des cookies)
 
-Dans la plupart des mises en œuvre, cet ID de personne est un ECID (Experience Cloud ID). La fonctionnalité facultative **[!UICONTROL Assemblage]** peut ensuite résoudre les identités entre appareils et entre canaux à l’aide de méthodes basées sur les champs ou sur des graphiques, ce qui permet d’associer une session d’application mobile et une session de navigateur de bureau à la même personne.
+Dans la plupart des mises en œuvre, cet ID de personne est un ECID. La fonctionnalité facultative **[!UICONTROL Assemblage]** peut ensuite résoudre les identités entre appareils et entre canaux à l’aide de méthodes basées sur les champs ou sur des graphiques, ce qui permet d’associer une session d’application mobile et une session de navigateur de bureau à la même personne.
 
 Comme la résolution des identités diffère entre les plateformes, les décomptes au niveau de l’utilisateur correspondent rarement exactement. Cette incohérence est attendue et n’indique pas de problème de qualité des données.
 
@@ -114,7 +114,7 @@ GA4 étant défini par défaut sur l’attribution pilotée par les données, al
 
 Lorsque les chiffres diffèrent plus que prévu, trois chemins d’audit sont disponibles :
 
-* **&#x200B;**&#x200B;: l’outil de validation intégré au produit Adobe confirme que les événements XDM se déclenchent correctement, atteignent Edge Network et sont écrits dans les jeux de données Platform. Utilisez cet outil pour vérifier votre implémentation avant de comparer les numéros de rapport.
+* **** : l’outil de validation intégré au produit Adobe confirme que les événements XDM se déclenchent correctement, atteignent Edge Network et sont écrits dans les jeux de données Platform. Utilisez cet outil pour vérifier votre implémentation avant de comparer les numéros de rapport.
 * **Prévisualisations des jeux de données** : dans l’interface utilisateur de Platform, vous pouvez prévisualiser les lignes brutes de n’importe quel jeu de données. Comparez-les à l’exportation DebugView ou BigQuery de GA4 pour vérifier la précision au niveau du champ.
-* **&#x200B;**&#x200B;: en cas d’incohérences persistantes et inexpliquées, votre équipe de compte Adobe peut organiser un audit formel de la mise en œuvre avec un consultant Adobe.
+* **** : en cas d’incohérences persistantes et inexpliquées, votre équipe de compte Adobe peut organiser un audit formel de la mise en œuvre avec un consultant Adobe.
 * **Révision de l’ingestion** : si vous pensez que la différence provient de la manière dont les données GA ont été importées dans Platform plutôt que dans les définitions de rapports, consultez la configuration de l’ingestion dans [Migration des données depuis Google Analytics](/help/use-cases/third-party/ga/overview.md).

@@ -31,9 +31,9 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '720'
+source-wordcount: '719'
 ht-degree: 65%
 ---
 # Configurer les cadres dirigeants pour l’utilisation des tableaux de bord
@@ -83,7 +83,7 @@ Une fois téléchargés et installés, les utilisateurs en charge de l’exécut
 
    Lʼécran **[!UICONTROL Choisir une société]** sʼaffiche. Cet écran répertorie les organisations de connexion auxquelles le cadre dirigeant appartient.
 
-1. Demandez-leur d’appuyer sur le nom de la société de connexion ou de l’organisation CX Enterprise qui s’applique à la carte de performance que vous avez partagée.
+1. Demandez-leur d’appuyer sur le nom de la société de connexion ou de l’organisation Adobe qui s’applique à la carte de performance que vous avez partagée.
 
    La liste des Cartes de performance affiche alors toutes les cartes de performance partagées avec la personne en charge de lʼexécution pour cette société de connexion.
 

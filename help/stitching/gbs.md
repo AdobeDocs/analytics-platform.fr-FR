@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '1999'
-ht-degree: 64%
+source-wordcount: '1997'
+ht-degree: 63%
 ---
 # Rapprochement basé sur les graphiques
 
@@ -43,7 +43,7 @@ Dans le groupement basé sur les graphiques, vous spécifiez un jeu de données 
 
 >[!NOTE]
 >
->Le [Service d’identités](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/home) est un service Experience Platform de base qui ne nécessite pas de licence supplémentaire. Pour plus d’informations, voir [Comprendre le rôle du service d’identités dans l’infrastructure d’Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/home#understanding-the-role-of-identity-service-within-the-experience-platform-infrastructure).
+>Le [Service d’identités](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/home) est un service Experience Platform de base qui ne nécessite pas de licence supplémentaire. Pour plus d’informations, voir [Comprendre le rôle du service d’identités dans l’infrastructure d’Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home#understanding-the-role-of-identity-service-within-the-experience-platform-infrastructure).
 >
 
 Si les informations de l’ID de personne ne peuvent pas être récupérées pour un événement, l’ID persistant est utilisé à la place pour cet événement *désassemblé*. Par conséquent, dans une [vue de données](/help/data-views/data-views.md) associée à une [connexion](/help/connections/overview.md) qui contient le jeu de données activé pour le groupement, le composant de vue de données ID de personne contient la valeur de l’ID de personne ou la valeur de l’ID persistant au niveau de l’événement.
@@ -232,14 +232,14 @@ Le tableau suivant représente les mêmes données que ci-dessus, mais montre l�
 
 Les conditions préalables suivantes s’appliquent spécifiquement à l’assemblage basé sur un graphique :
 
-- Le jeu de données d’événements dans Adobe Experience Platform auquel vous souhaitez appliquer un assemblage doit comporter une colonne qui identifie un profil sur chaque ligne, l’**identifiant persistant**. Il peut s’agir, par exemple, d’un identifiant visiteur généré par une bibliothèque Adobe Analytics AppMeasurement ou d’un ECID (Experience Cloud ID) généré par le Service d’identités Experience Platform.
+- Le jeu de données d’événements dans Adobe Experience Platform auquel vous souhaitez appliquer un assemblage doit comporter une colonne qui identifie un profil sur chaque ligne, l’**identifiant persistant**. Il peut s’agir, par exemple, d’un identifiant visiteur généré par une bibliothèque Adobe Analytics AppMeasurement ou d’un ECID généré par Edge Network.
 - Le graphique d’identités d’Experience Platform Identity Service doit être configuré au niveau de la sandbox, avant d’activer le groupement basé sur les graphiques.
   - Le graphique d’identité doit comporter un espace de noms (par exemple `Email` ou `Phone`) que vous souhaitez utiliser lors du groupement pour résoudre l’ID de personne.
   - Le graphique d’identités doit être renseigné avec des informations d’identités de tous les jeux de données pertinents (de type *événement* ou *profil* et qui contiennent au moins deux espaces de noms utiles avec des valeurs d’identifiant).
-  - Tous les jeux de données contenant ces identités pertinentes doivent être [&#x200B; activés pour l’ingestion de données de graphique d’identités](faq.md#enable-a-dataset-for-the-identity-service). Cette activation garantit que les identités entrantes sont ajoutées au graphique au fil du temps à partir de toutes les sources nécessaires.
+  - Tous les jeux de données contenant ces identités pertinentes doivent être [ activés pour l’ingestion de données de graphique d’identités](faq.md#enable-a-dataset-for-the-identity-service). Cette activation garantit que les identités entrantes sont ajoutées au graphique au fil du temps à partir de toutes les sources nécessaires.
   - Si vous utilisez déjà le profil de données client en temps réel ou Adobe Journey Optimizer depuis un certain temps, le graphique doit déjà être configuré dans une certaine mesure.<br/>Si le renvoi du groupement historique est également requis pour le jeu de données activé avec le groupement basé sur les graphiques, le graphique doit déjà contenir des identités historiques pour l’ensemble de la période, afin d’obtenir les résultats de groupement souhaités.
 - Si vous souhaitez utiliser le groupement basé sur des graphiques et que vous prévoyez que le jeu de données d’événement contribuera au graphique d’identité, vous devez [activer le jeu de données pour le service d’identités](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service).
-- L’ID persistant et l’ID de personne peuvent être utilisés avec [identityMap](#identitymap). Ou l’identifiant persistant et l’identifiant de personne peuvent être des champs du schéma XDM, auquel cas les champs doivent être [définis comme une identité](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/ui/fields/identity?lang=en) dans le schéma .
+- L’ID persistant et l’ID de personne peuvent être utilisés avec [identityMap](#identitymap). Ou l’identifiant persistant et l’identifiant de personne peuvent être des champs du schéma XDM, auquel cas les champs doivent être [définis comme une identité](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity?lang=en) dans le schéma .
 
 >[!NOTE]
 >

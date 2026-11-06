@@ -33,10 +33,10 @@ topic_v2:
     internal-label: Implementation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '591'
-ht-degree: 100%
+source-wordcount: '589'
+ht-degree: 94%
 ---
 # Comprendre les fonctionnalités propres à Customer Journey Analytics {#feature-support-upgrade}
 
@@ -54,7 +54,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-stitch-datasets"
 >title="Regrouper les hits à partir de plusieurs jeux de données"
->abstract="Si l’un de vos jeux de données ne partage pas d’identifiant principal (tel qu’un Experience Cloud ID), vous pouvez toujours regrouper ces données à l’aide d’une autre dimension, telle que le nom d’utilisateur ou d’utilisatrice ou l’adresse e-mail de connexion."
+>abstract="Si l’un de vos jeux de données ne partage pas d’identifiant principal (un ECID, par exemple), vous pouvez toujours regrouper ces données à l’aide d’une autre dimension, telle que le nom d’utilisateur de connexion ou l’adresse e-mail."
 
 <!-- markdownlint-enable MD034 -->
 

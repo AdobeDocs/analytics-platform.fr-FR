@@ -41,10 +41,10 @@ topic_v2:
     internal-label: Data management
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '2447'
-ht-degree: 62%
+source-wordcount: '2439'
+ht-degree: 60%
 ---
 # Ingérer des données via l’API du serveur Edge Network
 
@@ -121,7 +121,7 @@ Configurer le schéma :
 
    1. Dans la boîte de dialogue [!UICONTROL Ajouter des groupes de champs], sélectionnez le groupe de champs **[!UICONTROL Lumière aveuglante]** dans la liste. Ce groupe de champs est créé pour suivre les progrès de l’utilisateur lors de la lecture d’un jeu fictif intitulé Lumière aveuglante sur une console.
 
-      ![&#x200B; Groupe de champs Lumière aveuglante &#x200B;](assets/schema-fieldgroup-blindinglight.png)
+      ![ Groupe de champs Lumière aveuglante ](assets/schema-fieldgroup-blindinglight.png)
 
       Vous pouvez sélectionner le bouton Aperçu pour afficher un aperçu des champs qui font partie de ce groupe de champs, comme `scores > afterMatch`.
 
@@ -143,7 +143,7 @@ Configurer le schéma :
 
    ![Objet d’identification](./assets/identification-field-gaming.png)
 
-   L’objet d’identification ajoute des fonctionnalités d’identification au schéma. Dans votre cas, vous devez identifier les profils qui jouent à votre jeu à l’aide de l’Experience Cloud Id et de l’adresse e-mail qu’ils utilisent pour se connecter à leur console de jeux. De nombreux autres attributs sont disponibles pour effectuer le suivi de l’identification de votre personne.
+   L’objet d’identification ajoute des fonctionnalités d’identification au schéma. Dans votre cas, vous devez identifier les profils qui jouent à votre jeu à l’aide de l’ECID et de l’adresse e-mail qu’ils utilisent pour se connecter à leur console de jeux. De nombreux autres attributs sont disponibles pour effectuer le suivi de l’identification de votre personne.
 
    Sélectionnez **[!UICONTROL Appliquer]** pour ajouter cet objet au schéma.
 
@@ -151,7 +151,7 @@ Configurer le schéma :
 
    ![Spécifier l’ECID comme identité](./assets/specify-identity-gaming.png)
 
-   Vous spécifiez l’identité Experience Cloud comme identité principale que le service d’identités Adobe Experience Platform peut utiliser pour combiner (rapprocher) le comportement des profils avec le même ECID.
+   Vous spécifiez l’ECID en tant qu’identité principale que le service d’identités Adobe Experience Platform peut utiliser pour combiner (regrouper) le comportement des profils avec le même ECID.
 
    Sélectionnez **[!UICONTROL Appliquer]**. Une icône d’empreinte digitale apparaît dans l’attribut ecid.
 
@@ -179,7 +179,7 @@ Configurer le schéma :
 
 1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer le schéma.
 
-Vous avez créé un schéma minimal qui modélise les données que vous pouvez capturer à partir de votre jeu. Le schéma permet d’identifier les profils à l’aide d’Experience Cloud Identity et de l’adresse e-mail. En activant le schéma pour le profil, vous vous assurez que les données capturées dans le jeu de la console sont ajoutées au profil client en temps réel.
+Vous avez créé un schéma minimal qui modélise les données que vous pouvez capturer à partir de votre jeu. Le schéma permet d’identifier les profils à l’aide de l’ECID et de l’adresse e-mail. En activant le schéma pour le profil, vous vous assurez que les données capturées dans le jeu de la console sont ajoutées au profil client en temps réel.
 
 En regard des données de comportement, vous pouvez également capturer les données d’attribut de profil à partir de la console (par exemple, les détails des profils connectés dans la console).
 
@@ -191,7 +191,7 @@ Pour capturer les données de profil, vous devez :
 
 - Ajouter un objet d’identification basé sur le groupe de champs Profile Core v2.
 
-- Définir l’Experience Cloud ID comme identifiant principal et l’adresse e-mail comme identifiant.
+- Définir l’ECID comme identifiant principal et l’e-mail comme identifiant ;
 
 - Activer le schéma pour le profil.
 
@@ -306,7 +306,7 @@ curl -X POST "https://server.adobedc.net/ee/v2/interact?dataStreamId={DATASTREAM
 
 Dans l’exemple de requête POST, `{DATASTREAM_ID}` pointe vers l’identifiant de l’exemple de flux de données que vous avez configuré précédemment. `{sandbox}` est le nom unique de votre sandbox qui identifie le chemin d’accès au groupe de champs personnalisé Lumière aveuglante .
 
-Voir [Collecte de données interactive](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html?lang=fr) et [Collecte de données non interactive](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/non-interactive-data-collection.html?lang=fr) pour plus d’informations sur l’utilisation de l’API du serveur Edge Network.
+Voir [Collecte de données interactive](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html?lang=fr) et [Collecte de données non interactive](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/non-interactive-data-collection.html) pour plus d’informations sur l’utilisation de l’API du serveur Edge Network.
 
 ## Configurer une connexion
 

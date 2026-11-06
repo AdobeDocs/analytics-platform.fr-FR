@@ -29,13 +29,11 @@ topic_v2:
     internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 14557a59902110b1768d61e621adfb3f76ee9930
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: 452
+source-wordcount: '451'
 ht-degree: 43%
-
 ---
-
 # Ajout de recherches standard à vos jeux de données
 
 >[!IMPORTANT]
@@ -43,7 +41,7 @@ ht-degree: 43%
 >Les recherches standard ne sont disponibles que pour les sources de données du connecteur source Analytics dans Customer Journey Analytics. Vous pouvez les utiliser avec des implémentations Adobe Analytics standard, le [SDK Web Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=fr) ou les API de collecte de données d’Experience Platform.
 >
 
-Les recherches standard (également appelées recherches fournies par Adobe) améliorent la capacité de Customer Journey Analytics à créer des rapports sur certaines dimensions/attributs qui ne sont pas utiles par elles-mêmes, mais qui le sont lorsqu’elles sont jointes à d’autres données. Il s’agit par exemple des attributs des appareils mobiles et des attributs des dimensions du système d’exploitation et du navigateur, tels que les numéros de version des navigateurs. Une « recherche standard » est similaire à un jeu de données de recherche. Les recherches standard s’appliquent à toutes les organisations CX Grands comptes. Elles sont automatiquement appliquées à tous les jeux de données d’événements qui contiennent certains champs de schéma XDM (voir ci-dessous pour les champs spécifiques). Il existe un jeu de données de recherche standard pour chaque emplacement de schéma classé par Adobe.
+Les recherches standard (également appelées recherches fournies par Adobe) améliorent la capacité de Customer Journey Analytics à créer des rapports sur certaines dimensions/attributs qui ne sont pas utiles par elles-mêmes, mais qui le sont lorsqu’elles sont jointes à d’autres données. Il s’agit par exemple des attributs des appareils mobiles et des attributs des dimensions du système d’exploitation et du navigateur, tels que les numéros de version des navigateurs. Une « recherche standard » est similaire à un jeu de données de recherche. Les recherches standard s’appliquent à toutes les organisations Adobe. Elles sont automatiquement appliquées à tous les jeux de données d’événements qui contiennent certains champs de schéma XDM (voir ci-dessous pour les champs spécifiques). Il existe un jeu de données de recherche standard pour chaque emplacement de schéma classé par Adobe.
 
 Dans Adobe Analytics traditionnel, ces dimensions s’affichent par elles-mêmes, tandis que dans Customer Journey Analytics, vous devez les inclure activement lorsque vous créez des vues de données. Dans le workflow Connexions, vous sélectionnez un jeu de données marqué comme étant celui avec une clé pour la recherche standard. L’interface utilisateur des vues de données sait automatiquement inclure toutes les dimensions de recherche standard disponibles pour la création de rapports. Les fichiers de recherche sont automatiquement tenus à jour et disponibles, dans toutes les régions et pour tous les comptes. Ils sont stockés dans des organisations spécifiques à une région associées au client.
 
