@@ -17,9 +17,9 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '2338'
+source-wordcount: '2335'
 ht-degree: 16%
 ---
 # Migrer des balises vers XDM {#upgrade-migration-planner}
@@ -80,7 +80,7 @@ Avant de créer une migration, vérifiez que vous disposez des éléments suivan
 
 * Implémentation d’Adobe Analytics prise en charge (extension Analytics pour les balises). Voir [Implémentations Adobe Analytics prises en charge](#supported-adobe-analytics-implementations).
 
-* Accès à la propriété Adobe Tags à migrer, dans l’organisation Experience Cloud à laquelle vous êtes connecté.
+* Accès à la propriété Adobe Tags à migrer, dans l’organisation Adobe à laquelle vous êtes connecté.
 
 * Accès à la suite de rapports Adobe Analytics dont vous souhaitez mapper les variables à XDM.
 
@@ -114,7 +114,7 @@ Une migration passe par trois étapes : [!UICONTROL **Audit**], [!UICONTROL **Ma
 
 1. Sélectionnez la propriété de balise à migrer, puis sélectionnez [!UICONTROL **Suivant**].
 
-   Seules les propriétés de balise disponibles pour votre organisation Experience Cloud connectée s’affichent.
+   Seules les propriétés de balise disponibles pour votre organisation connectée s’affichent.
 
 1. Sélectionnez l’instantané de bibliothèque de balises à migrer, puis sélectionnez [!UICONTROL **Suivant**].
 

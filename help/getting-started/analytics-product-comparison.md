@@ -23,10 +23,10 @@ topic_v2:
     internal-label: Reporting
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 34959e37a7040bcd861a506968895ad6f051b686
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '464'
-ht-degree: 44%
+source-wordcount: '461'
+ht-degree: 43%
 ---
 
 # Comparaison des produits Analytics
@@ -37,7 +37,7 @@ Utilisez cette page pour comparer les outils de création de rapports et d’exp
 |---|---|---|---|---|---|---|---|---|
 | **Méthode d’accès** | Navigateur | Microsoft Excel | Navigateur | Configuration via le navigateur | Outils d’API RESTful | Outils compatibles avec MCP | Outils de BI | Outils compatibles avec MCP |
 | **Granularité des données** | Agrégé | Agrégé | Agrégé | Événement | Agrégé | Agrégé | Agrégé | Agrégé |
-| **Experience Cloud ID (ECID) disponible** | Non | Non | Non | Oui | Non | Non | Non | Non |
+| **ECID disponible** | Non | Non | Non | Oui | Non | Non | Non | Non |
 | **Horodatage disponible** | Non | Non | Non | Oui | Non | Non | Non | Non |
 | **Niveau de traitement** | Traitement complet | Traitement complet, avec rapport en temps réel distinct | Traitement complet | Traitement complet | Traitement complet | Traitement complet | Traitement complet | Traitement complet |
 | **Où le filtrage des robots est appliqué** | Dans le [flux de données](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/bot-detection) et/ou dans [CJA](/help/data-views/derived-fields/derived-fields.md#simple-bot-detection) | Dans le [flux de données](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/bot-detection) et/ou dans [CJA](/help/data-views/derived-fields/derived-fields.md#simple-bot-detection) | Dans le [flux de données](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/bot-detection) et/ou dans [CJA](/help/data-views/derived-fields/derived-fields.md#simple-bot-detection) | Dans le [flux de données](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/bot-detection) et/ou dans [CJA](/help/data-views/derived-fields/derived-fields.md#simple-bot-detection) |  |  | Dans le [flux de données](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/bot-detection) et/ou dans [CJA](/help/data-views/derived-fields/derived-fields.md#simple-bot-detection) | |

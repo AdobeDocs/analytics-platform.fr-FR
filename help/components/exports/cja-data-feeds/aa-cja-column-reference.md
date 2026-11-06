@@ -47,9 +47,9 @@ topic_v2:
     internal-label: Data management
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '3921'
+source-wordcount: '3918'
 ht-degree: 48%
 ---
 # Mapper les colonnes de flux de données d’Adobe Analytics à Customer Journey Analytics
@@ -667,7 +667,7 @@ Lieu (jusqu’à 1 m)
 
 +++**`mcvisid`**
 
-Identifiant visiteur Experience Cloud. Nombre 128 bits constitué de deux nombres 64 bits concaténés complétés par 19 chiffres.
+ECID. Nombre 128 bits constitué de deux nombres 64 bits concaténés complétés par 19 chiffres.
 
 +++
 

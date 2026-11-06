@@ -30,9 +30,9 @@ topic_v2:
     internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '323'
 ht-degree: 85%
 ---
 # Ajouter l’extension SDK web à votre balise {#upgrade-tag-extension}
@@ -50,7 +50,7 @@ ht-degree: 85%
 
 Utilisez la fonction Balises d’Adobe Experience Platform pour implémenter du code sur le site afin de collecter des données. Cette solution de gestion des balises vous permet de déployer le code parallèlement à d’autres exigences de balisage. Les balises offrent une intégration transparente avec Adobe Experience Platform à l’aide de l’extension du SDK Web Adobe Experience Platform.
 
-Les informations suivantes décrivent comment ajouter l’extension SDK web à votre balise. Pour plus d’informations, consultez [Configuration de l’extension de balise SDK web](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) de la documentation d’Experience Platform. Web SDK inclut Experience Platform Identity Service, ce qui signifie que vous n’avez pas besoin d’ajouter l’extension [!UICONTROL Experience Cloud ID Service] à la balise.
+Les informations suivantes décrivent comment ajouter l’extension SDK web à votre balise. Pour plus d’informations, consultez [Configuration de l’extension de balise SDK web](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) de la documentation d’Experience Platform. Web SDK obtient l’ECID d’Edge Network. Vous n’avez donc pas besoin d’ajouter l’extension [!UICONTROL Experience Cloud ID Service] à la balise.
 
 Après avoir [créé une balise](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md), vous devez la configurer avec l’extension SDK web Adobe Experience Platform. Vous pouvez ainsi envoyer des données à Adobe Experience Platform (par le biais de votre train de données).
 

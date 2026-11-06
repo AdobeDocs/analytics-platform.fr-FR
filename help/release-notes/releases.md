@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Customer experience
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '402'
-ht-degree: 100%
+source-wordcount: '399'
+ht-degree: 91%
 ---
 # Stratégie de publication des fonctionnalités de Customer Journey Analytics
 
@@ -41,9 +41,9 @@ Les mises à jour de Customer Journey Analytics fonctionnent sur un modèle de
 
 * **Tests limités** : la mise à jour par étapes commence par un test réalisé par les utilisateurs et utilisatrices internes d’Adobe. Elle est ensuite mise à la disposition d’un petit groupe de comptes clients afin de s’assurer que la fonctionnalité répond aux besoins et aux attentes des clients.
 
-* **Début du déploiement** : le déploiement d’une mise à jour par phases commence par la phase Tests limités. La version passe à une disponibilité de 0 % à 100 % pour les clients et clientes en quelques mois. Le déploiement par phases se produit au niveau de l’organisation CX Enterprise, de sorte que tous les personnes autorisées d’une même organisation bénéficient de la même expérience.
+* **Début du déploiement** : le déploiement d’une mise à jour par phases commence par la phase Tests limités. La version passe à une disponibilité de 0 % à 100 % pour les clients et clientes en quelques mois. Le déploiement échelonné se produit au niveau de l’organisation Adobe, de sorte que tous les utilisateurs autorisés d’une organisation bénéficient de la même expérience.
 
-* **Disponibilité générale** : la fonctionnalité est disponible pour 100 % des organisations CX Enterprise autorisées et la mise à jour est terminée.
+* **Disponibilité générale (GA, General Availability)** : la fonctionnalité est disponible pour 100 % des organisations éligibles et sa publication est terminée.
 
 Pour chaque publication de fonctionnalité, la chronologie entre le début du déploiement (RTP) et la disponibilité générale (GA) peut varier. L’objectif est de maintenir des publications courtes, afin que, dans un délai de 2 mois à compter du début du déploiement (RTP), une fonctionnalité atteigne la disponibilité générale (GA).
 

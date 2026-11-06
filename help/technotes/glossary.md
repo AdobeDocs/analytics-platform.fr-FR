@@ -36,10 +36,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 95%
+source-wordcount: '328'
+ht-degree: 96%
 ---
 # Glossaire Customer Journey Analytics
 
@@ -49,7 +49,7 @@ Certains termes de Customer Journey Analytics diffèrent de leur utilisation h
 | --- | --- | --- |
 | Jeu de données de recherche | En-tête | Utilisez la recherche pour récupérer la valeur du jeu de données spécifié pour une clé/clé correspondante (dans un jeu de données d’événement) où il existe une relation 1:1. Par exemple, vous pouvez spécifier « code_de_suivi » comme clé correspondant à « code_de_suivi » dans le jeu de données de l’événement. |
 | Jeu de données de profil | Attribut du client | Si vous capturez les données client d’entreprise dans une base de données de gestion de la relation client (GRC), vous pouvez les charger dans un jeu de données de profil dans Adobe Experience Platform. Après avoir créé une connexion à ce jeu de données dans Customer Journey Analytics et créé une vue de données, exploitez les données dans Workspace. |
-| Organisation CX Enterprise (Experience Cloud) | Société de connexion | Voir [Liaison d’organisations et de comptes](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html?lang=fr#topic_C31CB834F109465A82ED57FF0563B3F1). |
+| Organisation Adobe | Société de connexion | Voir [Liaison d’organisations et de comptes](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html?lang=fr#topic_C31CB834F109465A82ED57FF0563B3F1). |
 | S.O. | Suite de rapports | Les suites de rapports au sens traditionnel d’Adobe Analytics n’existent plus. A la place, vous créez des [vues de données](/help/data-views/create-dataview.md) (virtuelles) à partir des jeux de données Platform vers lesquels vous avez établi des connexions. |
 | Segment | Segment | Les segments étaient auparavant des « filtres ». Ils ont été renommés « segments ». |
 | Vue de données | Suite de rapports virtuelle | Dans Adobe Analytics, une suite de rapports virtuelle est une vue filtrée dʼune suite de rapports parente. La principale différence entre une suite de rapports virtuelle et une vue de données dans Customer Journey Analytics réside dans le fait que la suite de rapports virtuelle est un sous-ensemble d’une suite de rapports « de base » ou « parente » et, en tant que telle, hérite de certains de ses paramètres. Comme les suites de rapports parents/de base n’existent plus, vous définissez des vues de données avec leurs propres paramètres. |

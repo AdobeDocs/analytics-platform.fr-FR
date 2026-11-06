@@ -28,9 +28,9 @@ topic_v2:
     internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '316'
 ht-degree: 86%
 ---
 # Créer une balise pour votre propriété {#upgrade-tag-property}
@@ -48,7 +48,7 @@ ht-degree: 86%
 
 Utilisez la fonction Balises d’Adobe Experience Platform pour implémenter du code sur le site afin de collecter des données. Cette solution de gestion des balises vous permet de déployer le code parallèlement à d’autres exigences de balisage. Les balises offrent une intégration transparente à Adobe Experience Platform à l’aide de l’extension SDK web.
 
-Les informations suivantes décrivent comment créer une balise pour votre propriété. Pour plus d’informations, consultez [Configuration de l’extension de balise SDK web](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) de la documentation d’Experience Platform. Web SDK inclut Experience Platform Identity Service, ce qui signifie que vous n’avez pas besoin d’ajouter l’extension [!UICONTROL Experience Cloud ID Service] à la balise.
+Les informations suivantes décrivent comment créer une balise pour votre propriété. Pour plus d’informations, consultez [Configuration de l’extension de balise SDK web](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) de la documentation d’Experience Platform. Web SDK obtient l’ECID d’Edge Network. Vous n’avez donc pas besoin d’ajouter l’extension [!UICONTROL Experience Cloud ID Service] à la balise.
 
 Une propriété est essentiellement un conteneur que vous remplissez avec des extensions, des règles, des éléments de données et des bibliothèques lorsque vous déployez des balises sur votre site. De nombreuses personnes créent une propriété pour chaque site web (ou groupe de sites étroitement liés) où elles souhaitent déployer le même ensemble de balises. Pour plus d’informations sur les propriétés, consultez [Propriétés](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/admin/companies-and-properties) dans la documentation sur la collecte de données Experience Platform.
 

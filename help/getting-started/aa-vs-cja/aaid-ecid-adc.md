@@ -31,9 +31,9 @@ topic_v2:
     internal-label: Customer experience
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '623'
 ht-degree: 90%
 ---
 # AAID, ECID, AACUSTOMID et le connecteur source Analytics
@@ -48,9 +48,9 @@ L’AAID est transformé en `HEX(post_visid_high) + "-" + HEX(post_visid_low)` d
 
 ## ECID
 
-L’ECID (ID Experience Cloud), également parfois appelé MCID (ID Marketing Cloud), est un champ d’identifiant de l’appareil distinct qui est renseigné dans Adobe Analytics lorsqu’Analytics est implémenté à l’aide du [Service d’identification des visiteurs](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=fr) (AppMeasurement) ou du service d’identification Experience Platform (SDK Web). L’ECID est représenté par la colonne `mcvisid` dans les flux de données Adobe Analytics.
+L’ECID, également parfois appelé MCID (Marketing Cloud ID), est un champ d’identifiant d’appareil distinct qui est renseigné dans Adobe Analytics lorsqu’Analytics est implémenté à l’aide du [service d’identification des visiteurs](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=fr) (AppMeasurement) ou de la SDK Web. L’ECID est représenté par la colonne `mcvisid` dans les flux de données Adobe Analytics.
 
-Si un ECID existe sur un événement, l’AAID peut être basé sur l’ECID selon que le [délai de grâce](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/grace-period.html?lang=fr) d’Analytics est configuré ou non. Voir également : [Requêtes d’ID Analytics et Experience Cloud](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/legacy-analytics.html?lang=fr).
+Si un ECID existe sur un événement, l’AAID peut être basé sur l’ECID selon que le [délai de grâce](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/grace-period.html?lang=fr) d’Analytics est configuré ou non. Voir aussi : [Requêtes Analytics et ECID](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/legacy-analytics.html?lang=fr).
 
 ## AACUSTOMID
 
