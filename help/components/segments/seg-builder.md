@@ -25,10 +25,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: f886069ac388da7985beac80cdaaa7bd0a506439
+source-git-commit: 24613d361b6b3058b1c4911a9df3654da91b2c88
 workflow-type: tm+mt
-source-wordcount: '1978'
-ht-degree: 71%
+source-wordcount: '1962'
+ht-degree: 67%
 ---
 # Créer des segments {#build-segments}
 
@@ -89,6 +89,10 @@ Vous pouvez configurer le type et la portée de votre définition :
 
 Vous pourrez toujours modifier ces paramètres ultérieurement.
 
+>[!NOTE]
+>
+>L’interface du créateur de segments ne prend pas en charge toutes les définitions de segment créées via l’[API](https://developer.adobe.com/cja-apis/docs/endpoints/segments/#create-a-segment). Le chargement de cette page peut échouer ou générer des erreurs pour ces segments.
+
 ### Composants
 
 Une partie essentielle de la création de votre définition de segment consiste à utiliser des dimensions, des mesures, des segments existants et des périodes. Tous ces composants sont disponibles à partir du panneau des composants dans le créateur de segments.
@@ -111,7 +115,7 @@ Pour ajouter un composant :
 
    Cette option s’affiche uniquement lorsque [!UICONTROL **Personne**] est sélectionné comme portée (conteneur) de votre définition dans le menu déroulant **[!UICONTROL Inclure]** ou **[!UICONTROL Exclure]**.
 
-   **REMARQUE** : cette fonctionnalité est en phase de test limité de la publication et peut ne pas encore être disponible dans votre environnement. Cette note sera supprimée lorsque la fonctionnalité sera disponible. Pour plus d’informations sur le processus de mise à jour de Customer Journey Analytics, consultez [Mise à jour des fonctionnalités de Customer Journey Analytics](/help/release-notes/releases.md).
+
 
 1. (Facultatif) Modifiez l’opérateur par défaut.
 
@@ -137,7 +141,7 @@ Vous pouvez regrouper plusieurs composants dans un ou plusieurs conteneurs et d�
 * Pour ajouter un composant existant au conteneur, faites-le glisser et déposez-le dans le conteneur.
 * Pour ajouter un autre composant au conteneur, faites glisser un composant du panneau des composants et déposez-le dans le conteneur. Utilisez la ligne d’insertion bleue comme guide.
 * Pour ajouter un autre composant à l’extérieur du conteneur, faites glisser un composant depuis le panneau des composants à l’extérieur du conteneur, mais à l’intérieur du conteneur de définition principal. Utilisez la ligne d’insertion bleue comme guide.
-* Pour modifier la logique entre les composants d’un conteneur, entre les conteneurs ou entre un conteneur et un composant, sélectionnez les opérateurs **[!UICONTROL Et]**, **[!UICONTROL Ou]** et **[!UICONTROL Alors]** appropriés. Lorsque vous sélectionnez Ensuite, vous transformez le segment en segment séquentiel. Consultez [Créer un segment séquentiel](seg-sequential-build.md) pour plus d’informations.
+* Pour modifier la logique entre les composants, les conteneurs ou un conteneur et un composant, sélectionnez les **[!UICONTROL Et]**, **[!UICONTROL Ou]**, **[!UICONTROL Alors]** appropriés. Lorsque vous sélectionnez Ensuite, vous transformez le segment en segment séquentiel. Consultez [Créer un segment séquentiel](seg-sequential-build.md) pour plus d’informations.
 * Pour changer de niveau de conteneur, sélectionnez ![Globe](/help/assets/icons/Globe.svg) **[!UICONTROL Compte global]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, ![Compte](/help/assets/icons/Account.svg) **[!UICONTROL Compte]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, ![Opportunity](/help/assets/icons/Opportunity.svg)Opportunity **[!UICONTROL [!BADGE B2B edition]**, &#x200B;]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}BuyingGroup![Buying Group](/help/assets/icons/BuyingGroup.svg) [!BADGE B2B edition **[!UICONTROL ,]** Page]{type=Informative url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}Event![, &#x200B;](/help/assets/icons/WebPage.svg)Visit **&#x200B;**&#x200B;Session![, &#x200B;](/help/assets/icons/Visit.svg)User **&#x200B;**&#x200B;Person![&#x200B; ou &#x200B;](/help/assets/icons/User.svg)Layer **&#x200B;**&#x200B;Object![&#x200B; &#x200B;](/help/assets/icons/Layer.svg) **&#x200B;**. Lorsque vous sélectionnez ![Calque](/help/assets/icons/Layer.svg) **[!UICONTROL Objet]**, sélectionnez le [conteneur personnalisé](/help/data-views/create-dataview.md#containers-1) à utiliser. Par exemple, Products ou Content Assets.
 
 Vous pouvez utiliser ![Paramètre](/help/assets/icons/Setting.svg) dans un conteneur pour les actions suivantes :
@@ -203,7 +207,7 @@ Vous pouvez également définir 52 segments : 50 segments pour les États améri
 
 
 
-Lorsque vous utilisez une dimension dans le Créateur de segments, vous disposez des options permettant de spécifier le modèle d’attribution de cette dimension. Le modèle d’attribution que vous sélectionnez détermine si les données sont admissibles pour la condition que vous avez spécifiée pour le composant de dimension.
+Lorsque vous utilisez une dimension dans le créateur de segments, vous avez la possibilité de spécifier le modèle d’attribution pour cette dimension. Le modèle d’attribution que vous sélectionnez détermine si les données sont admissibles pour la condition que vous avez spécifiée pour le composant de dimension.
 
 Sélectionnez ![Paramètre](/help/assets/icons/Setting.svg) dans le composant de dimension, puis sélectionnez l’un des modèles d’attribution dans la fenêtre contextuelle :
 
