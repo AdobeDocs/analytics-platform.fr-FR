@@ -47,7 +47,7 @@ topic_v2:
     internal-label: Personalization
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '1476'
 ht-degree: 9%
@@ -75,7 +75,7 @@ Pour créer des rapports sur les données Marketo Engage dans Customer Journey A
 
 Si vous souhaitez ingérer des données d’activité Marketo dans Customer Journey Analytics, vous devez sélectionner une stratégie d’identifiant appropriée pour vous assurer que les données Marketo peuvent être liées aux données Customer Journey Analytics.
 
-Les données Marketo ne contiennent pas d’ECID de manière native, mais le champ ECID peut être ajouté en tant que champ personnalisé collecté avec la bibliothèque `munchkin.js`. Cet ajout crée un identifiant partagé entre Marketo et les données web Customer Parcours Analytics existantes.
+Les données Marketo ne contiennent pas d’ECID de manière native, mais le champ ECID peut être ajouté en tant que champ personnalisé collecté avec la bibliothèque `munchkin.js`. Cet ajout crée un identifiant partagé entre Marketo et les données web Customer Journey Analytics existantes.
 
 Pour lier les données Marketo et Customer Journey Analytics, utilisez le [groupement basé sur les graphiques](/help/stitching/gbs.md) sur les jeux de données appropriés. Vous pouvez utiliser plusieurs identifiants disponibles en fonction de votre implémentation :
 

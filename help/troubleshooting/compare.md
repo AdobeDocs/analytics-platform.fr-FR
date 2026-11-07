@@ -34,10 +34,10 @@ topic_v2:
     internal-label: Reporting
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '770'
-ht-degree: 100%
+ht-degree: 96%
 ---
 # Comparer les données du connecteur source Analytics à Adobe Analytics
 
@@ -60,7 +60,7 @@ Les raisons suivantes sont celles pour lesquelles les données peuvent différer
   >
   >Adobe recommande vivement que les dimensions dans Adobe Analytics utilisent l’attribution suivante : « [!UICONTROL Le dernier] ». Ce paramètre d’attribution assure une flexibilité bien plus grande en la matière dans Customer Journey Analytics.
 
-* **Définition de visite** : en plus des paramètres de dimension et de mesure individuels, la vue de données elle-même contient des paramètres qui modifient fondamentalement la manière dont les données des visiteurs et visiteuses sont interprétées. Par exemple, vous pouvez appliquer un segment à une vue de données entière (comme une [suite de rapports virtuelle](https://experienceleague.adobe.com/fr/docs/analytics/components/virtual-report-suites/vrs-about) dans Adobe Analytics). Vous pouvez également modifier la définition d’une durée de visite ou démarrer automatiquement une nouvelle visite pour l’un des événements souhaités. Chacun de ces paramètres peut avoir une incidence notable sur les différences de rapports entre Customer Journey Analytics et Adobe Analytics.
+* **Définition de visite** : en plus des paramètres de dimension et de mesure individuels, la vue de données elle-même contient des paramètres qui modifient fondamentalement la manière dont les données du visiteur sont interprétées. Par exemple, vous pouvez appliquer un segment à une vue de données entière (comme une [suite de rapports virtuelle](https://experienceleague.adobe.com/fr/docs/analytics/components/virtual-report-suites/vrs-about) dans Adobe Analytics). Vous pouvez également modifier la définition d’une durée de visite ou démarrer automatiquement une nouvelle visite pour l’un des événements souhaités. Chacun de ces paramètres peut avoir une incidence notable sur les différences de rapports entre Customer Journey Analytics et Adobe Analytics.
 
 ## Vérification du nombre d’enregistrements entre les produits
 

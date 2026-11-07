@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Reporting
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
     internal-label: Governance
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '1251'
-ht-degree: 23%
+ht-degree: 21%
 ---
 # Téléchargement de projets et de données
 
@@ -46,7 +46,7 @@ D’autres méthodes d’exportation des données Customer Journey Analytics son
 
 ## Télécharger un projet sous la forme d’un fichier PDF ou CSV {#download-project}
 
-![Menu déroulant Projet avec les options Télécharger au format CSV et Télécharger au format PDF mises en surbrillance.](assets/download-project.png)
+![Menu déroulant Projet avec les options Télécharger le CSV et Télécharger le PDF mises en surbrillance.](assets/download-project.png)
 
 ### Télécharger un projet sous forme de fichier PDF
 

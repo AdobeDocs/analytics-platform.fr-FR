@@ -31,7 +31,7 @@ topic_v2:
     internal-label: Customer journeys
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '889'
 ht-degree: 1%
@@ -128,4 +128,4 @@ Les considérations suivantes s’appliquent aux clés et champs système :
 
 ## Taille de lot des données en miroir
 
-Pour tout jeu de données mis en miroir configuré dans le cadre d’une connexion, vous devez vous assurer que chacun des lots à ingérer pour ingérer des données pour le jeu de données mis en miroir ne dépasse pas 100GB. Pour plus d’informations, consultez la section [&#x200B; Mécanismes de sécurisation pour l’ingestion par lots &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/ingestion/guardrails#guardrails-for-batch-ingestion){target="_blank"}.
+Pour tout jeu de données en miroir configuré dans le cadre d’une connexion, vous devez vous assurer que chacun des lots à ingérer pour ingérer des données pour le jeu de données en miroir ne dépasse pas 100GB. Pour plus d’informations, consultez la section [&#x200B; Mécanismes de sécurisation pour l’ingestion par lots &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/ingestion/guardrails#guardrails-for-batch-ingestion){target="_blank"}.

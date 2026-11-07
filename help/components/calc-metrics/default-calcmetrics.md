@@ -23,10 +23,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '549'
-ht-degree: 83%
+ht-degree: 80%
 ---
 # Modèles de mesures calculées
 
@@ -44,7 +44,7 @@ Customer Journey Analytics fournit les modèles de mesures calculées suivants p
 | **[!UICONTROL Taux de session multicanaux]** | Rapport entre les sessions impliquant plusieurs canaux (tels que le trafic web et le trafic mobile) et celles n’impliquant qu’un seul canal. |
 | **[!UICONTROL Taux de personnes multicanaux]** | Taux de personnes ayant participé à plusieurs canaux par rapport à celles qui n’ont participé qu’à un seul canal. |
 | **[!UICONTROL Sessions de l’application mobile]** | Nombre de sessions qui se sont produites sur l’application mobile. |
-| **[!UICONTROL Sessions cross-canal web et application]** | Nombre de sessions incluant à la fois du trafic web et du trafic mobile. |
+| **[!UICONTROL Sessions cross-canal web et application]** | Nombre de sessions qui se sont produites et qui incluaient à la fois le trafic web et le trafic mobile. |
 | **[!UICONTROL Coût des appels]** | Coût total des appels au centre d’appel. <!-- <p>Summary: Call length</p> --> |
 | **[!UICONTROL Durée moyenne d’appel]** | Durée moyenne des appels au centre d’appel. |
 | **[!UICONTROL Coût moyen par appel]** | Coût moyen des appels passés au centre d’appel. |

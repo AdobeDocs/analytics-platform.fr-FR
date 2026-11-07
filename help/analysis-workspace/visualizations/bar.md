@@ -23,10 +23,10 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '243'
-ht-degree: 69%
+ht-degree: 64%
 ---
 # Barres (empilées)
 
@@ -54,7 +54,7 @@ La visualisation Barres comporte une option Standard et Empilées.
 
 La visualisation ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) **[!UICONTROL Barres]** affiche des barres verticales représentant plusieurs valeurs pour une ou plusieurs mesures.
 
-![Visualisation sous forme de barres verticales présentant plusieurs mesures, notamment Pages vues, Visites, Entrées et Sorties.](assets/bar.png)
+![Visualisation sous forme de barre verticale présentant plusieurs mesures, notamment Pages vues, Visites, Entrées et Sorties.](assets/bar.png)
 
 Un menu déroulant de granularité dans les paramètres de visualisation vous permet de faire passer une visualisation de tendance (par exemple, en courbes ou en barres) de quotidienne à hebdomadaire, mensuelle, etc.
 

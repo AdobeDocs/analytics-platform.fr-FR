@@ -39,10 +39,10 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '1186'
-ht-degree: 96%
+ht-degree: 93%
 ---
 # Vue d’ensemble de Customer Journey Analytics
 
@@ -52,7 +52,7 @@ L’architecture de haut niveau de Customer Journey Analytics est présentée 
 
 ![Architecture Customer Journey Analytics](assets/cja-overview.png)
 
-Cette architecture illustre la manière dont Customer Journey Analytics vous permet d’effectuer les opérations suivantes :
+Cette architecture illustre la manière dont Customer Journey Analytics vous permet d’effectuer les opérations suivantes :
 
 * Combinez plusieurs jeux de données ![Données](/help/assets/icons/Data.svg) dans une [connexion](/help/connections/overview.md).
 * Définissez et configurez des dimensions ![Dimensions](/help/assets/icons/Dimensions.svg) et des métriques ![Événement](/help/assets/icons/Event.svg) dans une [vue de données](/help/data-views/data-views.md) en fonction des champs disponibles dans les jeux de données que vous avez définis dans votre connexion.
@@ -131,7 +131,7 @@ De l’ingestion de données à l’accès SQL direct, plusieurs composantes de 
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Utilisation des données dans Customer Journey Analytics](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/data-prep/working-with-data-in-cja){target="_blank"} pour une présentation vidéo sur l’utilisation des données dans Customer Journey Analytics.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Utilisation des données dans Customer Journey Analytics](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/data-prep/working-with-data-in-cja){target="_blank"} pour une vidéo d’introduction sur l’utilisation des données dans Customer Journey Analytics.
 
 >[!ENDSHADEBOX]
 

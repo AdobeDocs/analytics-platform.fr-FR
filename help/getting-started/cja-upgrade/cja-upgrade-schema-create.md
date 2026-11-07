@@ -32,7 +32,7 @@ topic_v2:
     internal-label: Customer journeys
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '1286'
 ht-degree: 94%
@@ -159,7 +159,7 @@ Pour créer un schéma personnalisé, procédez comme suit :
 
 1. Sélectionnez le champ **[!UICONTROL ecid]** dans l’objet d’identification que vous venez d’ajouter, puis sélectionnez **[!UICONTROL Identité]**, **[!UICONTROL Identité principale]** et **[!UICONTROL ECID]** dans la liste [!UICONTROL Espace de noms d’identité] du panneau de droite.
 
-   ![Spécifier l’ECID comme identité](./assets/specify-identity.png)
+   ![Spécifier ECID comme identité](./assets/specify-identity.png)
 
    Vous spécifiez l’ECID en tant qu’identité principale que le service d’identités Adobe Experience Platform peut utiliser pour combiner (regrouper) le comportement des profils avec le même ECID.
 

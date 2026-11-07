@@ -26,9 +26,9 @@ topic_v2:
     internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 34959e37a7040bcd861a506968895ad6f051b686
+source-git-commit: bd396cb4909d131ed60c97e7101cf85946555e38
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '562'
 ht-degree: 1%
 ---
 # Présentation des flux de données
@@ -37,7 +37,7 @@ ht-degree: 1%
 
 Les flux de données exportent des données brutes au niveau de l’événement de Customer Journey Analytics vers une destination cloud. Vous pouvez utiliser ces données sur d’autres plateformes en dehors d’Adobe, telles qu’un entrepôt de données.
 
-Les flux de données sont créés à partir des composants dans une vue de données. Chaque dimension et mesure que vous incluez devient une colonne dans le flux de données et les paramètres de vue de données tels que la persistance, les champs dérivés et les segments sont appliqués aux données. Les fichiers sont livrés au format Parquet.
+Les flux de données sont créés à partir des composants dans une vue de données. Chaque dimension et mesure que vous incluez devient une colonne dans le flux de données et les paramètres de vue de données tels que la persistance, les champs dérivés et les segments sont appliqués aux données. Les fichiers sont diffusés au format [Parquet](/help/components/exports/cja-data-feeds/df-parquet.md).
 
 Vous pouvez créer les types de flux de données suivants :
 
@@ -71,13 +71,15 @@ Consultez les articles suivants pour planifier, migrer et créer vos flux de don
 
 ### Planification des flux de données
 
-* [Comparer des flux de données dans Customer Journey Analytics et Adobe Analytics](/help/components/exports/cja-data-feeds/df-comparison.md) : découvrez les différences de fonctionnalités et de concepts si vous avez utilisé des flux de données Adobe Analytics par le passé.
-
 * [Comprendre les écarts de données entre les flux de données et Analysis Workspace](/help/components/exports/cja-data-feeds/df-comparison-workspace.md) : découvrez pourquoi la sortie des flux de données peut ne pas correspondre aux rapports dans Analysis Workspace.
 
 * [Disponibilité des composants dans les flux de données](/help/components/exports/cja-data-feeds/df-components.md) : découvrez les dimensions et mesures requises, non prises en charge ou restreintes dans les flux de données.
 
+* [Utiliser des fichiers Parquet dans les flux de données](/help/components/exports/cja-data-feeds/df-parquet.md) : découvrez pourquoi les flux de données utilisent Parquet et comment interroger ou charger les fichiers dans votre entrepôt de données.
+
 ### Migration des flux de données d’Adobe Analytics
+
+1. [Comparer des flux de données dans Customer Journey Analytics et Adobe Analytics](/help/components/exports/cja-data-feeds/df-comparison.md) : découvrez les différences de fonctionnalités et de concepts si vous avez utilisé des flux de données Adobe Analytics par le passé.
 
 1. [Préparer le mappage des colonnes de flux de données](/help/components/exports/cja-data-feeds/df-column-mapping-prep.md) : découvrez les facteurs qui affectent la manière dont les colonnes Adobe Analytics sont mappées à Customer Journey Analytics.
 

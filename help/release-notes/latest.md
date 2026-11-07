@@ -49,14 +49,14 @@ topic_v2:
     internal-label: Implementation
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 84fea2df7c99420099d8203de6fdfda5ddcb4667
+source-git-commit: 616f285c80b32279ea75f22dabe471831153cf2b
 workflow-type: tm+mt
-source-wordcount: '1300'
+source-wordcount: '1461'
 ht-degree: 17%
 ---
-# Notes de mise à jour actuelles de Customer Journey Analytics (octobre 2026)
+# Notes de mise à jour actuelles de Customer Journey Analytics (octobre à décembre 2026)
 
-**Dernière mise à jour** : 4 novembre 2026
+**Dernière mise à jour** : 6 novembre 2026
 
 Ces notes de mise à jour couvrent la période de publication d’octobre 2026. Les mises à jour d’Adobe Customer Journey Analytics suivent un [modèle de diffusion continue](releases.md) qui permet une approche plus évolutive et plus progressive du déploiement des fonctionnalités. Par conséquent, ces notes sont mises à jour plusieurs fois par mois. Veuillez les vérifier régulièrement.
 
@@ -72,6 +72,10 @@ Ces notes de mise à jour couvrent la période de publication d’octobre 2026. 
 | **Générer automatiquement des descriptions pour les composants et les projets** <br/>Vous pouvez désormais générer automatiquement des descriptions pour les dimensions, les mesures, les mesures calculées, les segments et les périodes. Cela permet aux utilisateurs et utilisatrices de Workspace de savoir quels composants utiliser, en particulier dans les organisations qui disposent de bibliothèques de composants volumineuses. <p>Vous pouvez générer une description pour un seul composant ou générer des descriptions pour de nombreux composants en même temps. Pour plus d’informations, voir [&#x200B; Générer automatiquement des descriptions &#x200B;](/help/components/add-component-descriptions.md#automatically-generate-descriptions).</p><p>Vous pouvez également générer des descriptions pour les projets Workspace lorsque vous [enregistrez un projet](/help/analysis-workspace/build-workspace-project/save-projects.md) ou à partir de [Informations et paramètres du projet](/help/analysis-workspace/build-workspace-project/create-projects.md#project-info-settings).</p> | 29 Octobre 2026 | 18 Novembre 2026 |
 | **CX Enterprise Coworker : Posez des questions sur votre contenu** <br/>Vous pouvez désormais utiliser le Module de conversation des collègues pour obtenir des réponses précises sur votre contenu depuis Content Analytics. Posez une question spécifique, par exemple « Quelles images ont généré le plus de chiffre d’affaires au dernier trimestre ? », ou une question générale, par exemple « Quel type de contenu dois-je privilégier ? ». Il comprend la structure des données Content Analytics et applique les règles de création de rapports d’un analyste expérimenté, de sorte que les spécialistes marketing et les autres utilisateurs professionnels obtiennent des résultats fiables sans expertise approfondie de Content Analytics.<p></p>Pour plus d’informations, voir [Poser des questions sur votre contenu avec le Module de conversation des collègues](https://experienceleague.adobe.com/fr/docs/coworker/content/chat/use-cases/data-insights/content-performance/ask-content-questions) | 14 Octobre 2026 | 3 Novembre 2026 |
 | L’expérience **intégrée au produit pour les collaborateurs**<br/> collègues est désormais disponible dans un panneau de conversation dans Analysis Workspace. Un collègue utilise le projet que vous avez ouvert comme contexte, de sorte que vous pouvez poser des questions sur votre analyse sans expliquer ce que le projet contient.<p>Grâce à l’expérience intégrée au produit pour Coworker, vous pouvez :</p><ul><li>Résumez le projet ouvert, recherchez des informations et exécutez une analyse des causes premières.</li><li>Créez et modifiez le projet avec des invites en langage naturel. Par exemple, vous pouvez ajouter des panneaux et des tableaux, répartir les données, modifier les types de visualisation et les périodes, et créer des segments.</li></ul><p>Pour plus d’informations, voir [Utiliser l’expérience intégrée au produit pour Coworker](/help/analysis-workspace/coworker.md).</p> | 29 Octobre 2026 | À confirmer |
+| **API Customer Journey Analytics : rapports avancés sur les tendances des dates**<br/> un nouveau guide décrit les fonctionnalités avancées des rapports sur les tendances des dates, y compris les comparaisons de périodes et l’ajout de segments.<p>Pour plus d’informations, voir [Rapports avancés de tendances sur les dates](https://developer.adobe.com/cja-apis/docs/endpoints/reporting/advanced) dans la documentation de l’API Customer Journey Analytics.</p> | | 1er novembre 2026 |
+| **API Customer Journey Analytics : automatiser les rapports récurrents**<br/> un nouveau guide décrit comment configurer des rapports Customer Journey Analytics récurrents pour votre workflow automatisé, avec de nouvelles mesures selon un planning.<p>(Lien vers la documentation à suivre.)</p> | | 30 Novembre 2026 |
+| **API Customer Journey Analytics : rapports de répartition**<br/> Un nouveau guide décrit les requêtes de rapports de répartition simples et fournit des exemples. Le guide explique également la différence entre les répartitions simples et les [rapports à dimensions multiples](https://developer.adobe.com/cja-apis/docs/endpoints/reporting/multidim).<p>(Lien vers la documentation à suivre.)</p> | | 30 Novembre 2026 |
+| **API Customer Journey Analytics : bonnes pratiques relatives aux vues de données**<br/> un nouveau guide décrit les bonnes pratiques relatives à l’utilisation des identifiants de vues de données sur plusieurs services d’API.<p>(Lien vers la documentation à suivre.)</p> | | 30 Novembre 2026 |
 
 
 ### Correctifs dans Customer Journey Analytics

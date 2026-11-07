@@ -25,10 +25,10 @@ topic_v2:
     internal-label: Reporting
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '1852'
-ht-degree: 83%
+ht-degree: 82%
 ---
 # Configurer une visualisation de flux {#configure-a-flow-visualization}
 
@@ -152,7 +152,7 @@ Supposons que vous souhaitiez tracer le chemin suivi par les utilisateurs et uti
 
 Un résumé de la configuration Flux s’affiche en haut des visualisations. Les tracés dans le diagramme sont proportionnels. Les tracés plus épais sont ceux pour lesquels l’activité est la plus intense.
 
-![Exemple de sortie de flux montrant Se termine par des visites, la dimension de cheminement : Page et le conteneur de flux : Visiteurs et visiteuses.](assets/flow-output.png)
+![Exemple de sortie de flux montrant les fins avec des visites, la dimension de cheminement : Page et le conteneur de flux : Visiteurs.](assets/flow-output.png)
 
 Pour approfondir l’analyse des données, vous disposez de plusieurs options :
 

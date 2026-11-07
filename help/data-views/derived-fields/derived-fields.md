@@ -37,7 +37,7 @@ topic_v2:
     internal-label: Implementation
   - id: beb7a3c1-66ab-4786-b879-7621375b3c40
     internal-label: Email marketing
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '10578'
 ht-degree: 98%
@@ -1685,7 +1685,7 @@ Customer Journey Analytics utilise un sous-ensemble de la syntaxe de l’expre
 | `(?:...)` | Capture sans marquage. Empêche la correspondance d’être référencée dans la chaîne de sortie. |
 | `a?` | Zéro ou un de : `a`. |
 | `a*` | Zéro ou plus de : `a`. |
-| `a+` | Un ou plus de : `a`. |
+| `a+` | Une ou plusieurs des `a`. |
 | `a{3}` | Exactement 3 de : `a`. |
 | `a{3,}` | 3 ou plus de : `a`. |
 | `a{3,6}` | Entre 3 et 6 de : `a`. |

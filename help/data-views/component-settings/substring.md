@@ -22,13 +22,11 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 28959f1ea858dee686e6d13025621c4a6164c319
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
-source-wordcount: 955
+source-wordcount: '955'
 ht-degree: 91%
-
 ---
-
 # Paramètres des composants de sous-chaîne {#substring-component-settings}
 
 <!-- markdownlint-disable MD034 -->
@@ -55,9 +53,9 @@ Prenez une partie d’une chaîne en fonction de sa position au début ou à la 
 * **[!UICONTROL Fin de chaîne]** : la fin de la chaîne.
 * **[!UICONTROL Position]** : un nombre statique de caractères de la gauche ou de la droite, selon la méthode.
 * **[!UICONTROL Chaîne]** : faites correspondre un caractère ou une séquence de caractères pour indiquer le début ou la fin d’une chaîne. Ce menu déroulant affiche également des options supplémentaires :
-   * **[!UICONTROL Correspondance]** : la chaîne à faire correspondre. Si l’entrée ne correspond pas à ce champ, [Aucune option de valeur](no-value-options.md) ne s’applique.
-   * **[!UICONTROL Index]** : le critère **[!UICONTROL Correspondance]** peut être présent plusieurs fois dans une chaîne. Cet entier détermine la correspondance à utiliser pour démarrer ou terminer la sortie, selon la méthode. Par exemple, un index de `1` représente la première correspondance. Si l’index est supérieur au nombre de correspondances disponibles, [Aucune option de valeur](no-value-options.md) ne s’applique.
-   * **[!UICONTROL Inclure la chaîne]** : une case à cocher qui inclut la chaîne **[!UICONTROL Correspondance]** dans la sortie si activée.
+  * **[!UICONTROL Correspondance]** : la chaîne à faire correspondre. Si l’entrée ne correspond pas à ce champ, [Aucune option de valeur](no-value-options.md) ne s’applique.
+  * **[!UICONTROL Index]** : le critère **[!UICONTROL Correspondance]** peut être présent plusieurs fois dans une chaîne. Cet entier détermine la correspondance à utiliser pour démarrer ou terminer le résultat, selon la méthode. Par exemple, un index de `1` représente la première correspondance. Si l’index est supérieur au nombre de correspondances disponibles, [Aucune option de valeur](no-value-options.md) ne s’applique.
+  * **[!UICONTROL Inclure la chaîne]** : une case à cocher qui inclut la chaîne **[!UICONTROL Correspondance]** dans la sortie si activée.
 * **[!UICONTROL Longueur]** : un entier qui spécifie le nombre de caractères à inclure après la position de départ de la sortie. Disponible uniquement sous le menu déroulant **[!UICONTROL À]**.
 
 ## Délimiteur
@@ -65,9 +63,9 @@ Prenez une partie d’une chaîne en fonction de sa position au début ou à la 
 Utilisez cette méthode pour les champs qui utilisent un délimiteur pour séparer plusieurs valeurs de chaîne. Vous pouvez extraire un élément individuel à utiliser comme sortie ou convertir la chaîne en élément de schéma de tableau d’objets.
 
 * **[!UICONTROL Critère]** : comment traiter la liste délimitée de valeurs.
-   * **[!UICONTROL De la gauche]** : commencez au début de la liste délimitée et comptez vers l’avant.
-   * **[!UICONTROL De la droite]** : commencez à la fin de la liste délimitée et comptez à rebours.
-   * **[!UICONTROL Convertir en tableau]** : traitez cette dimension comme s’il s’agissait d’un élément de schéma de tableau d’objets. La dimension devient disponible sous la forme d’un [conteneur personnalisé](/help/data-views/create-dataview.md#containers-1) que vous pouvez sélectionner dans votre vue de données et utiliser pour l’[analyse des sous-événements](/help/components/segments/sub-event.md) dans un projet Workspace.
+  * **[!UICONTROL De la gauche]** : commencez au début de la liste délimitée et comptez vers l’avant.
+  * **[!UICONTROL De la droite]** : commencez à la fin de la liste délimitée et comptez à rebours.
+  * **[!UICONTROL Convertir en tableau]** : traitez cette dimension comme s’il s’agissait d’un élément de schéma de tableau d’objets. La dimension devient disponible sous la forme d’un [conteneur personnalisé](/help/data-views/create-dataview.md#containers-1) que vous pouvez sélectionner dans votre vue de données et utiliser pour l’[analyse des sous-événements](/help/components/segments/sub-event.md) dans un projet Workspace.
 * **[!UICONTROL Délimiteur]** : le délimiteur utilisé par le champ.
 * **[!UICONTROL Index]** : uniquement présent si le critère est De la gauche/droite. Numéro de l’élément comme s’il se trouvait dans un tableau. Par exemple, si l’entrée de chaîne est `"Fox,Turtle,Rabbit,Wolf"` avec un index de 3, la sortie est `"Rabbit"`. Si l’index est supérieur au nombre d’éléments délimités, [Aucune option de valeur](no-value-options.md) ne s’applique.
 
@@ -95,7 +93,7 @@ Supprimez l’espace blanc ou les caractères spéciaux de la chaîne.
 Appliquez des expressions régulières à une dimension pour récupérer la valeur souhaitée.
 
 * **[!UICONTROL Regex]** : formule d’expression régulière.
-* **[!UICONTROL Format de sortie]** : champ facultatif qui vous permet d’ajouter du texte ou de réorganiser la sortie du sous-groupe regex. Si ce champ est vide, la sortie de chaîne est l’expression régulière évaluée.
+* **[!UICONTROL Format de sortie]** : champ facultatif qui vous permet d’ajouter du texte ou de réorganiser la sortie du sous-groupe regex. Si ce champ est vide, le résultat de la chaîne est l’expression régulière évaluée.
 * **[!UICONTROL Respect de la casse]** : si elle est activée, cette case à cocher force l’expression régulière à être sensible à la casse.
 
 Customer Journey Analytics utilise un sous-ensemble de la syntaxe de l’expression régulière Perl. Si l’entrée ne correspond pas à l’expression régulière et que la variable **[!UICONTROL Format de sortie]** est vide, [Aucune option de valeur](no-value-options.md) ne s’applique. Les expressions ci-dessous sont prises en charge :
@@ -124,15 +122,15 @@ Customer Journey Analytics utilise un sous-ensemble de la syntaxe de l’expre
 | `\<` | Début de mot. |
 | `\>` | Fin de mot. |
 | `(...)` | Acquérir tout ce qui est compris. |
-| `(?:...)` | Capture sans marquage. Empêche la référence de la correspondance dans la chaîne de sortie. |
+| `(?:...)` | Capture sans marquage. Empêche la correspondance d’être référencée dans la chaîne de sortie. |
 | `a?` | Zéro ou un de : `a`. |
 | `a*` | Zéro ou plus de : `a`. |
-| `a+` | Un ou plus de : `a`. |
+| `a+` | Une ou plusieurs des `a`. |
 | `a{3}` | Exactement 3 de : `a`. |
 | `a{3,}` | 3 ou plus de : `a`. |
 | `a{3,6}` | Entre 3 et 6 de : `a`. |
 
-Les espaces réservés de sortie sont également pris en charge. Vous pouvez utiliser ces séquences au **[!UICONTROL Format de sortie]** le nombre de fois désiré et dans n’importe quel ordre pour obtenir la sortie de chaîne souhaitée.
+Les espaces réservés de résultat sont également pris en charge. Vous pouvez utiliser ces séquences au **[!UICONTROL Format de sortie]** le nombre de fois désiré et dans n’importe quel ordre pour obtenir la sortie de chaîne souhaitée.
 
 | Séquence d’espace réservé de sortie | Description |
 | --- | --- |

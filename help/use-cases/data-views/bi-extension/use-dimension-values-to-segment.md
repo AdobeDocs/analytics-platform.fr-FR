@@ -26,10 +26,10 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '798'
-ht-degree: 0%
+ht-degree: 1%
 ---
 # Utilisation des valeurs de dimension pour segmenter
 
@@ -121,7 +121,7 @@ Une visualisation s’affiche **[!UICONTROL Erreur de récupération des donnée
    1. Dans la liste des champs, sélectionnez **[!UICONTROL Catégorie de produits]**.
 1. Assurez-vous que **[!UICONTROL est]** est sélectionné pour le filtre.
 
-![AlertRed](/help/assets/icons/AlertRed.svg) Recherche n&#39;affiche pas la liste des valeurs possibles pour **[!UICONTROL Catégorie de produits]**.
+![AlertRed](/help/assets/icons/AlertRed.svg) Looker n&#39;affiche pas la liste des valeurs possibles pour **[!UICONTROL Product Category]**.
 
 ![Nombre de recherches distinct](../assets/uc10-looker-result.png)
 
@@ -174,7 +174,7 @@ Une visualisation s’affiche **[!UICONTROL Erreur de récupération des donnée
 
 >[!TAB RStudio]
 
-1. Saisissez le bloc de code suivant dans un nouveau bloc. Veillez à utiliser une catégorie appropriée. Par exemple, `Hunting`.
+1. Saisissez le bloc de code suivant dans un nouveau bloc. Veillez à utiliser une catégorie appropriée. Par exemple : `Hunting`.
 
    ```R
    ## Dimension 1 Filtered by Dimension 2 value

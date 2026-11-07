@@ -31,9 +31,9 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
-source-wordcount: '1680'
+source-wordcount: '1679'
 ht-degree: 14%
 ---
 # Ingérer et utiliser des audiences Experience Platform
@@ -363,7 +363,7 @@ Dans l’interface utilisateur d’Experience Platform :
    1. (facultatif) Saisissez une **[!UICONTROL Description]**.
    1. Sélectionnez **[!UICONTROL Terminer]**.
 1. Configurez votre schéma pour qu’il contienne un groupe de champs personnalisés (nommé, par exemple, **[!UICONTROL Appartenance à une audience]**) qui contient deux champs nommés **[!UICONTROL audienceMembershipId]** et **[!UICONTROL audienceMembershipName]**.
-1. Assurez-vous que le champ **[!UICONTROL personID]** est une **[!UICONTROL Identité]**, une **[!UICONTROL Identité de Principal]** et qu’il contient **[!UICONTROL E-mail]** comme I&#x200B;**[!UICONTROL espace de noms d’identité]**.
+1. Assurez-vous que le champ **[!UICONTROL personID]** est une **[!UICONTROL Identité]**, une **[!UICONTROL Identité de Principal]** et qu’il contient **[!UICONTROL E-mail]** comme **[!UICONTROL Espace de noms d’identité]**.
 
    ![&#x200B; Segment à exporter &#x200B;](assets/segment-for-export.png)
 

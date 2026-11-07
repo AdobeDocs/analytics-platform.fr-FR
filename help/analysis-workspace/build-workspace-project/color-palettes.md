@@ -17,13 +17,11 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
-source-wordcount: 219
-ht-degree: 91%
-
+source-wordcount: '219'
+ht-degree: 87%
 ---
-
 # Palettes de couleurs de visualisations {#visualization-color-palettes}
 
 <!-- markdownlint-disable MD034 -->
@@ -36,7 +34,7 @@ ht-degree: 91%
 <!-- markdownlint-enable MD034 -->
 
 
-Vous pouvez modifier la palette de couleurs de visualisation utilisée dans Workspace. Vous pouvez sélectionner une palette de couleurs prédéfinie ou spécifier votre propre palette correspondant aux couleurs de marque de votre entreprise. Cette fonction affecte la plupart des visualisations dans Workspace, mais n’a **AUCUNE** incidence sur le Résumé des changements, le formatage conditionnel dans les tableaux à structure libre et la visualisation des cartes.
+Vous pouvez modifier la palette de couleurs de visualisation utilisée dans Workspace. Vous pouvez sélectionner une palette de couleurs prédéfinie ou spécifier votre propre palette correspondant aux couleurs de branding de votre entreprise. Cette fonction affecte la plupart des visualisations dans Workspace, mais n’a **AUCUNE** incidence sur le Résumé des changements, le formatage conditionnel dans les tableaux à structure libre et la visualisation des cartes.
 
 >[!NOTE]
 >
@@ -47,9 +45,9 @@ Vous pouvez modifier la palette de couleurs de visualisation utilisée dans Work
 Remarque :
 
 * Vous pouvez choisir parmi six palettes de couleurs prédéfinies. Le contraste de la palette par défaut et de la palette ci-dessous a été optimisé, et elles sont toutes deux plus accessibles pour les personnes daltoniennes.
-* Les autres palettes ont été optimisées pour l’harmonie des couleurs.
+* Les autres palettes ont été optimisées pour l&#39;harmonie des couleurs.
 
-## Changer de palette de couleurs :
+## Modifiez votre palette de couleurs :
 
 1. Accédez à **[!UICONTROL Workspace]** > **[!UICONTROL Projet]** > **[!UICONTROL Informations et paramètres du projet]**.
 1. Dans le menu déroulant **[!UICONTROL Palette de couleurs du projet]**, vous pouvez sélectionner l’un des modèles de couleurs prédéfinis.

@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Reporting
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '518'
-ht-degree: 59%
+ht-degree: 58%
 ---
 # Utiliser des tableaux d’objets
 
@@ -97,7 +97,7 @@ Lors de la création d’une vue de données, les dimensions et mesures suivante
   * produit : nom
   * produit : id_commande
   * produit : garantie : couverture
-  * produit : garantie : durée
+  * produit : garantie : longueur
   * produit : garantie : nom
   * produit : garantie : type
 * **Mesures :**

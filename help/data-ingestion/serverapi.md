@@ -41,10 +41,10 @@ topic_v2:
     internal-label: Data management
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '2439'
-ht-degree: 60%
+ht-degree: 59%
 ---
 # Ingérer des données via l’API du serveur Edge Network
 
@@ -149,7 +149,7 @@ Configurer le schéma :
 
 1. Sélectionnez le champ **[!UICONTROL ecid]** dans l’objet d’identification que vous venez d’ajouter, puis sélectionnez **[!UICONTROL Identité]**, **[!UICONTROL Identité principale]** et **[!UICONTROL ECID]** dans la liste [!UICONTROL Espace de noms d’identité] du panneau de droite.
 
-   ![Spécifier l’ECID comme identité](./assets/specify-identity-gaming.png)
+   ![Spécifier ECID comme identité](./assets/specify-identity-gaming.png)
 
    Vous spécifiez l’ECID en tant qu’identité principale que le service d’identités Adobe Experience Platform peut utiliser pour combiner (regrouper) le comportement des profils avec le même ECID.
 

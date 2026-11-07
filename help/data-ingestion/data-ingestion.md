@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '1129'
-ht-degree: 100%
+ht-degree: 99%
 ---
 # Vue d’ensemble de l’ingestion de données
 
@@ -48,7 +48,7 @@ L’architecture de haut niveau de Customer Journey Analytics est présentée 
 
 ![Architecture Customer Journey Analytics](/help/getting-started/assets/cja-overview.png)
 
-Cette architecture illustre la manière dont Customer Journey Analytics vous permet d’effectuer les opérations suivantes :
+Cette architecture illustre la manière dont Customer Journey Analytics vous permet d’effectuer les opérations suivantes :
 
 * Combinez plusieurs jeux de données ![Données](/help/assets/icons/Data.svg) dans une [connexion](/help/connections/overview.md).
 * Définissez et configurez des dimensions ![Dimensions](/help/assets/icons/Dimensions.svg) et des métriques ![Événement](/help/assets/icons/Event.svg) dans une [vue de données](/help/data-views/data-views.md) en fonction des champs disponibles dans les jeux de données que vous avez définis dans votre connexion.
@@ -133,7 +133,7 @@ Consultez [Ingérer et utiliser des données à l’aide des connecteurs source]
 
 Vous disposez de données ad hoc qui ne nécessitent qu’un seul jeu de données dans Experience Platform et ne requièrent pas la configuration d’un schéma de modèle de données d’expérience (XDM). Ce scénario est appelé un schéma ad hoc. Les schémas ad hoc sont utilisés dans plusieurs workflows d’ingestion de données différents pour Experience Platform, notamment dans l’ingestion de fichiers CSV et dans la création de certains types de connexions sources.
 
-Voir [ Ingérer et utiliser des données ad hoc](./adhoc.md)
+Voir [&#x200B; Ingérer et utiliser des données ad hoc](./adhoc.md)
 
 >[!MORELIKETHIS]
 >

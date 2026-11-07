@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Reporting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '1338'
-ht-degree: 64%
+ht-degree: 63%
 ---
 # Comparer le traitement des données dans Adobe Analytics et Customer Journey Analytics
 

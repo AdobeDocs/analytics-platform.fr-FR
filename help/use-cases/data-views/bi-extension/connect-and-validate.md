@@ -26,7 +26,7 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '2013'
 ht-degree: 11%
@@ -84,7 +84,7 @@ Lorsque vous parcourez les cas d’utilisation, remplacez ces exemples d’objet
       1. Assurez-vous que le menu déroulant **[!UICONTROL Sélectionner le niveau auquel appliquer ces paramètres]** est défini sur le **[!UICONTROL Serveur]** que vous avez défini précédemment.
       1. Sélectionnez **[!UICONTROL Connexion]**.
    1. Dans la boîte de dialogue **[!UICONTROL Navigateur]**, les vues de données sont récupérées. Cette récupération peut prendre un certain temps. Une fois la récupération effectuée, les éléments suivants s’affichent dans Power BI Desktop.
-      ![Données de chargement de bureau &#x200B;](../assets/powerbi-navigator-load.png)
+      ![Données De Chargement Du Bureau &#x200B;](../assets/powerbi-navigator-load.png)
       1. Sélectionnez **[!UICONTROL public.cc_data_view]** dans la liste du panneau de gauche.
       1. Vous avez deux possibilités :
          1. Sélectionnez **[!UICONTROL Charger]** pour continuer et terminer la configuration.
@@ -92,7 +92,7 @@ Lorsque vous parcourez les cas d’utilisation, remplacez ces exemples d’objet
             ![Données de transformation de bureau &#x200B;](../assets/powerbi-transform-data.png)
             * Sélectionnez **[!UICONTROL Fermer et appliquer]**.
    1. Au bout d’un certain temps, **[!UICONTROL public.cc_data_view]** s’affiche dans le volet **[!UICONTROL Data]**. Sélectionnez ![ChevronRight](/help/assets/icons/ChevronRight.svg) pour afficher les dimensions et les mesures.
-      ![Données Du Serveur De Bureau Power BI Chargées](../assets/powerbi-navigator-loaded.png)
+      ![Données De Power BI Desktop Server Chargées](../assets/powerbi-navigator-loaded.png)
 
 
 ## A APLATIR ou non

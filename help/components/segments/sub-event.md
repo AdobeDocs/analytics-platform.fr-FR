@@ -16,7 +16,7 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 8%
@@ -72,7 +72,7 @@ Vous avez défini un **[!UICONTROL Détails du produit]** [conteneur personnalis
 
 Dans le créateur de segments ou dans le cadre d’un **[!UICONTROL segment rapide]**, vous spécifiez pour **[!UICONTROL Exclure]** le **[!UICONTROL Dimension]** **[!UICONTROL product_category]** **[!UICONTROL égal]** **[!UICONTROL Vues professionnelles]** dans le conteneur **[!UICONTROL Détails du produit]**.
 
-![Panneau présentant la segmentation au niveau des sous-accès pour exclure la catégorie de produits Hommes](./assets/product-category-segmentation-subevents-exclude.png)
+![Panneau présentant une segmentation au niveau des sous-accès pour exclure la catégorie de produits Hommes](./assets/product-category-segmentation-subevents-exclude.png)
 
 Pour exclure au niveau du produit, les événements contenant au moins un produit sont inclus, puis l’exclusion au niveau des sous-événements est appliquée dans cette portée. Cette exclusion est différente de l’exclusion au niveau de l’événement, qui exclut l’événement entier.
 

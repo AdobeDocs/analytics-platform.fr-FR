@@ -43,10 +43,10 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '1680'
-ht-degree: 100%
+ht-degree: 99%
 ---
 # Comparer Customer Journey Analytics aux solutions BI
 
@@ -60,7 +60,7 @@ Cette section de la documentation explique les différences fondamentales entre 
 
 Un obstacle fréquent aux analyses traditionnelles des parcours clients est le fait qu’elles ne sont pas axées sur le client ou la cliente. Chaque équipe collecte des données en silos, analysant et optimisant les expériences en fonction des données auxquelles elle a accès.
 
-![Workflow BI traditionnel comme décrit dans cette section](./assets/biworkflow.png)
+![Workflow BI traditionnel, comme décrit dans cette section](./assets/biworkflow.png)
 
 Si vous souhaitez comprendre l’impact d’une campagne numérique spécifique sur une action hors ligne stockée dans un autre silo de données, envoyez une requête à la file d’attente de l’équipe de BI. L’équipe de BI écrit les requêtes nécessaires pour acquérir et transformer les données. Une fois les données brutes récupérées, l’équipe de BI crée la visualisation. Les données sont partagées avec vous à mesure que vous parcourez les insights et extrayez les données pour les activer dans d’autres systèmes.
 

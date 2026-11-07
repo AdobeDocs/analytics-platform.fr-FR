@@ -43,7 +43,7 @@ topic_v2:
     internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '4354'
 ht-degree: 94%
@@ -221,7 +221,7 @@ Sélectionnez les titres des sections liées pour plus d’informations et de co
 >abstract="Sélectionnez le conteneur par défaut à utiliser pour les visualisations de [!UICONTROL zone de travail de parcours]. Si la vue de données sélectionnée ne contient pas le conteneur par défaut sélectionné, la visualisation [!UICONTROL Zone de travail de parcours] passe automatiquement à un autre conteneur principal."
 
 
-Vous pouvez mettre à jour les préférences de visualisation pour tous les nouveaux projets que vous créez dans Analysis Workspace. Pour plus d’informations sur l’accès à ces préférences, voir [Modifier les préférences](#edit-preferences).
+Vous pouvez mettre à jour les préférences de visualisation pour tous les nouveaux projets que vous créez dans Analysis Workspace. Pour plus d’informations sur l’accès à ces préférences, voir [Modifier les préférences](#edit-preferences).
 
 Certaines de ces préférences peuvent également être personnalisées pour des visualisations individuelles.
 

@@ -35,9 +35,9 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
-source-wordcount: '2770'
+source-wordcount: '2771'
 ht-degree: 95%
 ---
 # Créer une carte de performance mobile {#create-a-mobile-scorecard}
@@ -57,7 +57,7 @@ Les informations suivantes expliquent aux responsables de la curation des donné
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Créer une carte de performance mobile](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Créer une carte de performance mobile](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 

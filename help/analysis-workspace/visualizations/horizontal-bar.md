@@ -19,10 +19,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '236'
-ht-degree: 65%
+ht-degree: 58%
 ---
 # Barres horizontales (empilées)
 
@@ -46,7 +46,7 @@ La visualisation Barres horizontales comporte une option standard et une option 
 <!-- markdownlint-enable MD034 -->
 
 
-La visualisation ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) **[!UICONTROL Barres horizontales]** affiche des barres horizontales représentant plusieurs valeurs pour une ou plusieurs mesures.
+La visualisation ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) **[!UICONTROL Barre horizontale]** affiche des barres horizontales représentant diverses valeurs pour une ou plusieurs mesures.
 
 ![Visualisation Barres horizontales présentant des mesures telles que les Pages vues, la Vitesse de la page, les Visites, les Entrées et les Sorties.](assets/horizontal-bar.png)
 

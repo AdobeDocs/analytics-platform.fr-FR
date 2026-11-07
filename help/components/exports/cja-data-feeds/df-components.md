@@ -17,10 +17,10 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 56f881fc811f0eeffb9633872b3edbe0eb2d7070
+source-git-commit: e4a2c292024e2d88c3dec02b86711d4f58d1c82c
 workflow-type: tm+mt
-source-wordcount: '1596'
-ht-degree: 39%
+source-wordcount: '1669'
+ht-degree: 38%
 ---
 # Disponibilité des composants dans les flux de données
 
@@ -93,6 +93,12 @@ Les mesures standard Customer Journey Analytics suivantes ne peuvent pas être i
 | Profil de comptes globaux Adobe | | Non disponible |
 | Union des personnes Adobe | | Non disponible |
 | Profil de personnes Adobe | | Non disponible |
+
+## Mesures calculées {#calculated-metrics}
+
+Les mesures calculées ne peuvent pas être incluses dans les flux de données. Une mesure calculée est calculée au moment du rapport en agrégeant de nombreux événements. Elle n’a donc aucune valeur sur une ligne d’événement individuelle.
+
+Si vous avez besoin des résultats des mesures calculées en dehors de Customer Journey Analytics, vous pouvez utiliser l’extension [Customer Journey Analytics BI](/help/data-views/bi-extension.md). L’extension BI renvoie des résultats au niveau du rapport plutôt que des lignes d’événement. Par conséquent, utilisez-la avec des flux de données plutôt que comme remplacement.
 
 ## Dimensions qui ne peuvent pas être utilisées ensemble {#incompatible-dimensions}
 
