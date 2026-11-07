@@ -133,7 +133,7 @@ Consultez [Ingérer et utiliser des données à l’aide des connecteurs source]
 
 Vous disposez de données ad hoc qui ne nécessitent qu’un seul jeu de données dans Experience Platform et ne requièrent pas la configuration d’un schéma de modèle de données d’expérience (XDM). Ce scénario est appelé un schéma ad hoc. Les schémas ad hoc sont utilisés dans plusieurs workflows d’ingestion de données différents pour Experience Platform, notamment dans l’ingestion de fichiers CSV et dans la création de certains types de connexions sources.
 
-Voir [ Ingérer et utiliser des données ad hoc](./adhoc.md)
+Voir [&#x200B; Ingérer et utiliser des données ad hoc](./adhoc.md)
 
 >[!MORELIKETHIS]
 >

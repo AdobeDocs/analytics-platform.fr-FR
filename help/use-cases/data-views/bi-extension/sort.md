@@ -215,7 +215,7 @@ GROUP BY 1
       1. Sélectionnez **[!UICONTROL Décimales]** dans le menu déroulant **[!UICONTROL Format]** et assurez-vous que `0` est saisi dans **[!UICONTROL Décimales]**.
          ![Champ de mesure personnalisé de recherche](../assets/uc5-looker-customfield.png)
       1. Sélectionnez **[!UICONTROL Enregistrer]**.
-1. Veillez à sélectionner ↓]**(**[!UICONTROL  Décroissant, Ordre de tri : 1 ]**) dans la colonne**[!UICONTROL  Chiffre d’affaires d’achat ]**.**[!UICONTROL 
+1. Veillez à sélectionner ↓**(**&#x200B;[!UICONTROL &#x200B; Décroissant, Ordre de tri : 1 &#x200B;]&#x200B;**) dans la colonne**&#x200B;[!UICONTROL &#x200B; Chiffre d’affaires d’achat &#x200B;]&#x200B;**.**
 1. Sélectionnez **[!UICONTROL Exécuter]**.
 1. Sélectionnez **[!UICONTROL ‣ Visualisation]**.
 
