@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '1129'
-ht-degree: 100%
+ht-degree: 99%
 ---
 # Vue d’ensemble de l’ingestion de données
 
@@ -48,7 +48,7 @@ L’architecture de haut niveau de Customer Journey Analytics est présentée 
 
 ![Architecture Customer Journey Analytics](/help/getting-started/assets/cja-overview.png)
 
-Cette architecture illustre la manière dont Customer Journey Analytics vous permet d’effectuer les opérations suivantes :
+Cette architecture illustre la manière dont Customer Journey Analytics vous permet d’effectuer les opérations suivantes :
 
 * Combinez plusieurs jeux de données ![Données](/help/assets/icons/Data.svg) dans une [connexion](/help/connections/overview.md).
 * Définissez et configurez des dimensions ![Dimensions](/help/assets/icons/Dimensions.svg) et des métriques ![Événement](/help/assets/icons/Event.svg) dans une [vue de données](/help/data-views/data-views.md) en fonction des champs disponibles dans les jeux de données que vous avez définis dans votre connexion.
@@ -137,5 +137,5 @@ Voir [ Ingérer et utiliser des données ad hoc](./adhoc.md)
 
 >[!MORELIKETHIS]
 >
->Blog : [en savoir plus sur le traitement et l’ingestion des données dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-closer-look-at-data-processing-amp-ingestion-in-adobe-customer/ba-p/665091?profile.language=fr)
+>Blog : [en savoir plus sur le traitement et l’ingestion des données dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-closer-look-at-data-processing-amp-ingestion-in-adobe-customer/ba-p/665091)
 

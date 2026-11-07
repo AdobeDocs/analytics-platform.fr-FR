@@ -38,7 +38,7 @@ topic_v2:
     internal-label: Data management
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 80d2b7da2e2b6c12a44d7e9bffd821e58dbeeecc
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '4894'
 ht-degree: 55%
@@ -693,7 +693,7 @@ Consultez ci-dessous des exemples de configuration du connecteur source Google A
 
 >[!ENDTABS]
 
-Consultez Présentation des connecteurs Source [&#128279;](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/home) pour plus d’informations sur les connecteurs source pris en charge pour le canal média payant.
+Consultez Présentation des connecteurs Source [](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/home) pour plus d’informations sur les connecteurs source pris en charge pour le canal média payant.
 
 Après avoir configuré les connecteurs source dans Experience Platform, sélectionnez ![Actualiser](/help/assets/icons/Refresh.svg) **[!UICONTROL Actualiser]** pour mettre à jour la liste des connecteurs source.
 

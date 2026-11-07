@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Reporting
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
     internal-label: Governance
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '1251'
-ht-degree: 23%
+ht-degree: 21%
 ---
 # Téléchargement de projets et de données
 
@@ -46,7 +46,7 @@ D’autres méthodes d’exportation des données Customer Journey Analytics son
 
 ## Télécharger un projet sous la forme d’un fichier PDF ou CSV {#download-project}
 
-![Menu déroulant Projet avec les options Télécharger au format CSV et Télécharger au format PDF mises en surbrillance.](assets/download-project.png)
+![Menu déroulant Projet avec les options Télécharger le CSV et Télécharger le PDF mises en surbrillance.](assets/download-project.png)
 
 ### Télécharger un projet sous forme de fichier PDF
 
@@ -91,7 +91,7 @@ L&#39;option **[!UICONTROL Copier dans le presse-papiers]** du menu contextuel p
 >Vous pouvez utiliser la touche de raccourci **_cmd + c_** (macOS) ou **_ctrl + c_** (Windows) pour copier votre sélection dans le presse-papiers. Utilisez ensuite **_cmd + v_** (macOS) ou **_ctrl + v_** (Windows) pour coller les données.
 
 
-![Option Copier la sélection dans le presse-papiers. &#x200B;](assets/copy-clipboard.png){zoomable="yes"}
+![Option Copier la sélection dans le presse-papiers. ](assets/copy-clipboard.png){zoomable="yes"}
 
 ## Télécharger des données dans une visualisation sous la forme d’un fichier CSV {#download-data}
 
@@ -141,8 +141,8 @@ Les fonctionnalités suivantes d’un tableau à structure libre sont appliquée
 
 Les notifications suivantes s’affichent au fur et à mesure des téléchargements du fichier :
 
-* Un bleu **[!UICONTROL _Nom de la table _-_Dimension _.csv a été demandé._x _% terminé]**&#x200B;indiquant la progression. Pour annuler le téléchargement à tout moment, sélectionnez **[!UICONTROL Annuler le téléchargement]**. Sélectionnez ![CrossSize100](/help/assets/icons/CrossSize100.svg) si vous souhaitez fermer le message, ce qui n’annule pas le téléchargement.
-* Un **[!UICONTROL _Nom de la table _vert -_Dimension _.csv a été téléchargé]**&#x200B;notification d’achèvement une fois le téléchargement du fichier terminé. Le fichier est téléchargé dans le dossier des téléchargements configuré pour votre navigateur.
+* Un bleu **[!UICONTROL _Nom de la table _-_Dimension _.csv a été demandé._x _% terminé]**indiquant la progression. Pour annuler le téléchargement à tout moment, sélectionnez **[!UICONTROL Annuler le téléchargement]**. Sélectionnez ![CrossSize100](/help/assets/icons/CrossSize100.svg) si vous souhaitez fermer le message, ce qui n’annule pas le téléchargement.
+* Un **[!UICONTROL _Nom de la table _vert -_Dimension _.csv a été téléchargé]**notification d’achèvement une fois le téléchargement du fichier terminé. Le fichier est téléchargé dans le dossier des téléchargements configuré pour votre navigateur.
 
 Si vous demandez plusieurs téléchargements à la fois, vous recevez une notification indiquant que chaque téléchargement supplémentaire est mis en file d’attente jusqu’à ce que le téléchargement précédent soit terminé.
 

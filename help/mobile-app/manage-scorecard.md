@@ -35,7 +35,7 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '1849'
 ht-degree: 81%
@@ -114,7 +114,7 @@ Regardez la vidéo pour en savoir plus sur la création de récits de données d
 
 >[!BEGINSHADEBOX]
 
-Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Histoires de données pour les projets de cartes de performance mobiles](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Histoires de données pour les projets de cartes de performance mobiles](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 
@@ -257,7 +257,7 @@ Pour afficher des légendes intelligentes dans une carte de performance mobile :
 
 1. Appuyez sur l’icône bleue en haut à droite pour générer les légendes. Les légendes s’affichent sous le graphique linéaire.
 
-   ![&#x200B; Légende intelligente dans la visualisation en ligne &#x200B;](assets/caption2.png)
+   ![ Légende intelligente dans la visualisation en ligne ](assets/caption2.png)
 
 1. Balayez vers la droite pour afficher toutes les légendes intelligentes.
 

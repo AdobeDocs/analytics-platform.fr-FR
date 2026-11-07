@@ -26,7 +26,7 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '788'
 ht-degree: 1%
@@ -231,8 +231,8 @@ GROUP BY 1
 1. Dans la section **[!UICONTROL ‣ Cr Vue des données]** rail de gauche :
    1. Sélectionnez **[!UICONTROL Nom du produit]**.
    1. Sélectionnez **[!UICONTROL Nombre]** sous **[!UICONTROL MESURES]** dans le rail de gauche (en bas).
-1. Veillez à sélectionner ↓**(**&#x200B;[!UICONTROL &#x200B; Décroissant, Ordre de tri : 1 &#x200B;]&#x200B;**) dans la colonne**&#x200B;[!UICONTROL &#x200B; Chiffre d’affaires d’achat &#x200B;]&#x200B;**.**
-1. Veillez à sélectionner ↓**(**&#x200B;[!UICONTROL &#x200B; Décroissant, Ordre de tri : 1 &#x200B;]&#x200B;**) dans la colonne**&#x200B;[!UICONTROL &#x200B; Chiffre d’affaires d’achat &#x200B;]&#x200B;**.**
+1. Veillez à sélectionner ↓]**(**[!UICONTROL  Décroissant, Ordre de tri : 1 ]**) dans la colonne**[!UICONTROL  Chiffre d’affaires d’achat ]**.**[!UICONTROL 
+1. Veillez à sélectionner ↓]**(**[!UICONTROL  Décroissant, Ordre de tri : 1 ]**) dans la colonne**[!UICONTROL  Chiffre d’affaires d’achat ]**.**[!UICONTROL 
 1. Sélectionnez **[!UICONTROL Exécuter]**.
 1. Sélectionnez **[!UICONTROL ‣ Visualisation]**.
 

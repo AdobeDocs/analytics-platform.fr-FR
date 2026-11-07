@@ -1,5 +1,5 @@
 ---
-source-git-commit: f886069ac388da7985beac80cdaaa7bd0a506439
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '5607'
 ht-degree: 95%
@@ -41,7 +41,7 @@ ht-degree: 95%
 | Option | Fonction |
 |---------|----------|
 | **[!UICONTROL Recommandé]** | Triez les composants pour chaque type (dimension, mesure, segment et période) en fonction de leur recommandation. Les composants utilisés le plus souvent et le plus récemment par vous ou par d’autres membres de votre organisation sont répertoriés plus haut dans chaque liste. |
-| **[!UICONTROL Dernière modification]** | Triez les composants pour chaque type (dimension, mesure, segment et période) en fonction de leur date de dernière modification. Les composants qui ont été modifiés le plus récemment sont affichés plus haut dans chaque liste. |
+| **[!UICONTROL Dernière modification]** | Triez les composants pour chaque type (dimension, mesure, segment et période) en fonction de leur date de dernière modification. Les composants qui ont été modifiés le plus récemment sont affichés en haut de chaque liste. |
 | **[!UICONTROL Alphabétique]** | Triez les composants pour chaque type (dimension, mesure, segment et période) par ordre alphabétique croissant. |
 | **[!UICONTROL Catégorique]** | Triez les composants pour chaque type (dimension, mesure, segment et période) en fonction de leur catégorie. Par exemple, Composants de vue de données traités ou non traités. |
 
@@ -135,7 +135,7 @@ Un conteneur d’attribution définit la portée souhaitée pour l’attribution
 * **Opportunité** [!BADGE B2B Edition]{type=Informative} : examine les conversions à partir de la portée du conteneur d’opportunités.
 * **Groupe d’achat** [!BADGE B2B Edition]{type=Informative} : examine les conversions à partir de la portée du conteneur de groupes d’achat.
 
-## Intervalle de recherche en amont des attributions {#attribution-lookback-window}
+## Intervalle de recherche en amont d’attribution {#attribution-lookback-window}
 
 Un intervalle de recherche en amont d’attribution correspond à la durée pendant laquelle une conversion doit effectuer une recherche en amont pour englober les points de contact. Si un élément de dimension est défini en dehors de l’intervalle de recherche en amont, la valeur n’est incluse dans aucun calcul d’attribution.
 

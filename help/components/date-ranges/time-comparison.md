@@ -1,5 +1,5 @@
 ---
-description: Découvrez comment utiliser la comparaison des dates dans Analysis Workspace, qui permet de prendre n’importe quelle colonne contenant une période et de créer une comparaison de dates commune.
+description: Découvrez comment utiliser la comparaison de date dans Analysis Workspace, qui permet de prendre n’importe quelle colonne contenant une période et de créer une comparaison de date commune.
 title: Comparaison des dates
 feature: Calendar
 exl-id: 08113536-658f-486b-ac56-6c531240c3c2
@@ -21,13 +21,11 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: a4b5baeec55de64b1fbaf009b9da34c93cf12f24
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
-source-wordcount: 798
-ht-degree: 75%
-
+source-wordcount: '798'
+ht-degree: 73%
 ---
-
 # Comparaison des dates
 
 Dans Analysis Workspace, la comparaison de dates vous permet de prendre n’importe quelle colonne contenant une période et de créer une comparaison de dates commune, par exemple : année par année, trimestre par trimestre, mois par mois, etc.
@@ -49,14 +47,14 @@ L’analyse nécessite un contexte, et une période précédente fournit souvent
 
    >[!NOTE]
    >
-   >Cette option de menu contextuelle est désactivée pour les lignes de mesures, de périodes et de dimension temporelle.
+   >Cette option de menu contextuelle est désactivée pour les lignes de mesure, de période et de dimension temporelle.
 
-1. Selon la façon dont sont définies les périodes du tableau, les options de comparaison suivantes sont disponibles :
+1. Selon la façon dont est définie la période du tableau, les options de comparaison suivantes sont disponibles :
 
    | Option | Description |
    |---|---|
-   | **[!UICONTROL *x* semaines/mois/trimestres/années précédant cette période]** | Compare à la période sélectionnée immédiatement avant cette période. |
-   | **[!UICONTROL Ces x semaines/mois/trimestres/années l’an dernier à cette période]** | Compare les données à la même période il y a un an. |
+   | **[!UICONTROL *x* semaines/mois/trimestres/années précédant cette période]** | Comparez avec la période sélectionnée immédiatement avant cette période. |
+   | **[!UICONTROL Ces x semaines/mois/trimestres/années l’an dernier à cette période]** | Comparez à la même période il y a un an. |
    | **[!UICONTROL Période personnalisée à cette période]** | Permet de définir une période personnalisée. |
 
    >[!NOTE]
@@ -69,7 +67,7 @@ L’analyse nécessite un contexte, et une période précédente fournit souvent
 
    Les lignes dans la colonne Pourcentage de modification sont en rouge pour les valeurs négatives et en vert pour les valeurs positives.
 
-## Ajouter une colonne de périodes à la comparaison
+## Ajouter une colonne de période pour la comparaison
 
 Vous pouvez désormais ajouter une période à chaque colonne d’un tableau. Vous pouvez ainsi ajouter une période différente de celle définie pour votre calendrier.
 
@@ -77,7 +75,7 @@ Vous pouvez désormais ajouter une période à chaque colonne d’un tableau. Vo
 
    ![](assets/add-time-period-column.png)
 
-1. Selon la façon dont sont définies les périodes du tableau, les options de comparaison suivantes sont disponibles :
+1. Selon la façon dont est définie la période du tableau, les options de comparaison suivantes sont disponibles :
 
    | Option | Description |
    |---|---|

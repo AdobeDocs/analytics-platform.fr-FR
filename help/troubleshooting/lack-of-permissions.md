@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Governance
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '212'
-ht-degree: 93%
+ht-degree: 90%
 ---
 # Absence d’autorisations
 
@@ -56,7 +56,7 @@ Par exemple, après avoir créé une [Connexion](../connections/overview.md) et 
    * Vous devez être un utilisateur ou une utilisatrice du profil de produit AEP-Default-All-Users. Demandez à votre équipe d’administration si vous ne disposez pas des autorisations nécessaires pour vous ajouter à ce profil. Voir [Hiérarchie et workflow du contrôle d’accès](https://experienceleague.adobe.com/fr/docs/experience-platform/access-control/home#access-control-hierarchy-and-workflow) pour plus d’informations.
 
 
-1. Accédez à l’interface d’utilisation d’Adobe Experience Platform.
+1. Accédez à l’interface utilisateur de Adobe Experience Platform.
 
 1. Sélectionnez **[!UICONTROL Autorisations]** dans le rail de gauche.
 

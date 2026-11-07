@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '499'
-ht-degree: 77%
+ht-degree: 75%
 ---
 # Guide de démarrage rapide de B2B Edition
 
@@ -45,8 +45,8 @@ Ce document se concentre sur le workflow spécifique à la mise en œuvre de Cus
 
 Pour mettre en œuvre Customer Journey Analytics B2B Edition, les conditions préalables suivantes doivent être remplies
 
-* Vous disposez [&#x200B; du contrôle d’accès et des autorisations](/help/technotes/access-control.md) nécessaires pour effectuer des tâches d’administration dans Customer Journey Analytics.
-* Vous avez acheté le package de module complémentaire Customer Journey Analytics B2B Edition.
+* Vous disposez [ du contrôle d’accès et des autorisations](/help/technotes/access-control.md) nécessaires pour effectuer des tâches d’administration dans Customer Journey Analytics.
+* Vous avez acheté le package complémentaire Customer Journey Analytics B2B edition.
 
 
 ## Processus

@@ -23,16 +23,16 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '243'
-ht-degree: 69%
+ht-degree: 64%
 ---
 # Barres (empilées)
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente les visualisations à barres et à barres empilées dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Voir [Barres et barres empilées](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/bar) pour la version ![AdobeAnalytics_ _&#x200B;**Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) de cet article.** _
+_Cet article présente les visualisations à barres et à barres empilées dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Voir [Barres et barres empilées](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/bar) pour la version ![AdobeAnalytics_ _**Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) de cet article.** _
 
 
 >[!ENDSHADEBOX]
@@ -54,7 +54,7 @@ La visualisation Barres comporte une option Standard et Empilées.
 
 La visualisation ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) **[!UICONTROL Barres]** affiche des barres verticales représentant plusieurs valeurs pour une ou plusieurs mesures.
 
-![Visualisation sous forme de barres verticales présentant plusieurs mesures, notamment Pages vues, Visites, Entrées et Sorties.](assets/bar.png)
+![Visualisation sous forme de barre verticale présentant plusieurs mesures, notamment Pages vues, Visites, Entrées et Sorties.](assets/bar.png)
 
 Un menu déroulant de granularité dans les paramètres de visualisation vous permet de faire passer une visualisation de tendance (par exemple, en courbes ou en barres) de quotidienne à hebdomadaire, mensuelle, etc.
 
@@ -80,7 +80,7 @@ Utilisez l’option **[!UICONTROL Empilé à 100 %]** dans ![Paramètre](/help
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisation de zone](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-bar-visualizations){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisation de zone](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-bar-visualizations){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 

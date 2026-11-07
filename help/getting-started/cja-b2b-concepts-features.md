@@ -38,7 +38,7 @@ topic_v2:
     internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '1592'
 ht-degree: 3%
@@ -103,14 +103,14 @@ Vous pouvez utiliser les conteneurs B2B pour des fonctionnalités B2B spécifiqu
 
 * **Attribution** : vous pouvez utiliser les nouveaux conteneurs B2B dans [panneau d’attribution](/help/analysis-workspace/c-panels/attribution.md), dans [paramètres des composants d’attribution](/help/data-views/component-settings/attribution.md), dans [mesures calculées](/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md) ou dans [colonnes d’un tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md). Les recherches en amont de comptes sont étendues à 13 mois.
 
-* **Visualisations** : les visualisations [Abandon](/help/analysis-workspace/visualizations/fallout/fallout-flow.md), [Flux](/help/analysis-workspace/visualizations/c-flow/flow.md), [Zone de travail de Parcours &#x200B;](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) et [Tableau de cohorte](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) prennent en charge les nouveaux conteneurs B2B. Par exemple : vous pouvez utiliser les nouveaux conteneurs pour comprendre comment les groupes d’achats consomment du contenu ou comment les cohortes d’opportunités se rapprochent de la conclusion d’une vente.
+* **Visualisations** : les visualisations [Abandon](/help/analysis-workspace/visualizations/fallout/fallout-flow.md), [Flux](/help/analysis-workspace/visualizations/c-flow/flow.md), [Zone de travail de Parcours ](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) et [Tableau de cohorte](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) prennent en charge les nouveaux conteneurs B2B. Par exemple : vous pouvez utiliser les nouveaux conteneurs pour comprendre comment les groupes d’achats consomment du contenu ou comment les cohortes d’opportunités se rapprochent de la conclusion d’une vente.
 Vous pouvez également définir le conteneur par défaut pour ces visualisations dans les [préférences utilisateur](/help/analysis-workspace/user-preferences.md#visualizations-preferences).
 
 Les segments, l’attribution et les visualisations ainsi que les conteneurs B2B vous aident à obtenir des analyses et des informations B2B approfondies.
 
 ## Schémas
 
-L’éditeur B2B de Customer Journey Analytics utilise le [modèle de données d’expérience (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=fr) d’Adobe pour normaliser les données B2B et définir des schémas pour vos données B2B. Vous pouvez baser vos schémas sur les [classes standard fournies dans Real-time CDP B2B edition](https://experienceleague.adobe.com/fr/docs/experience-platform/rtcdp/schemas/b2b) ou utiliser vos propres classes et schémas personnalisés. Les articles [cas d’utilisation](/help/use-cases/b2b/b2b-edition/use-cases-overview.md) utilisent des classes et des schémas de B2B edition Real-time CDP. Toutefois, une licence Real-time CDP B2B edition n’est pas nécessaire pour utiliser les classes et schémas standard.
+Le B2B edition Customer Journey Analytics utilise le [modèle de données d’expérience (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=fr) d’Adobe pour normaliser les données B2B et définir des schémas pour vos données B2B. Vous pouvez baser vos schémas sur les [classes standard fournies dans Real-time CDP B2B edition](https://experienceleague.adobe.com/fr/docs/experience-platform/rtcdp/schemas/b2b) ou utiliser vos propres classes et schémas personnalisés. Les articles [cas d’utilisation](/help/use-cases/b2b/b2b-edition/use-cases-overview.md) utilisent des classes et des schémas de B2B edition Real-time CDP. Toutefois, une licence Real-time CDP B2B edition n’est pas nécessaire pour utiliser les classes et schémas standard.
 
 ## Jeux de données
 

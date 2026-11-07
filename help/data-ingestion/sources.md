@@ -39,10 +39,10 @@ topic_v2:
     internal-label: Data management
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '2150'
-ht-degree: 75%
+ht-degree: 76%
 ---
 # Ingérer et utiliser des données à l’aide des connecteurs source
 
@@ -103,7 +103,7 @@ Configurer le schéma :
 
    1. Saisissez un **[!UICONTROL nom d’affichage de schéma]** pour votre schéma et (facultatif) une **[!UICONTROL description]**.
 
-      ![Fenêtre Créer un schéma présentant les champs pour nommer votre schéma &#x200B;](./assets/create-pr-schema-wizard-step-2.png)
+      ![Fenêtre Créer un schéma présentant les champs pour nommer votre schéma ](./assets/create-pr-schema-wizard-step-2.png)
 
    1. Sélectionnez **[!UICONTROL Terminer]**.
 
@@ -208,11 +208,11 @@ En fonction de la source des données de fidélité, choisissez le connecteur so
 
 Vous pouvez ingérer des données provenant de diverses sources. Voici quelques-unes des nombreuses sources disponibles :
 
-- Applications Adobe (les connecteurs source incluent [Adobe Analytics](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/analytics), [Adobe Audience Manager](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/audience-manager), etc.).
+- Applications Adobe (les connecteurs source incluent [Adobe Analytics](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/analytics), [Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/audience-manager), etc.).
 
-- Stockage dans le cloud (les connecteurs source comprennent [Amazon S3](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/cloud-storage/s3), [Azure Blob](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/cloud-storage/blob), etc.)
+- Stockage dans le cloud (les connecteurs source comprennent [Amazon S3](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/s3), [Azure Blob](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/blob), etc.)
 
-- Bases de données (les connecteurs source comprennent [&#128279;](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/databases/snowflake), [Microsoft SQL Server](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/databases/sql-server), etc.)
+- Bases de données (les connecteurs source comprennent [](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/databases/snowflake), [Microsoft SQL Server](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/sql-server), etc.)
 
 Pour configurer un connecteur source :
 
@@ -244,9 +244,9 @@ Pour configurer un connecteur source :
 
 Consultez [Ingérer et utiliser des données à partir d’Adobe Analytics classique](./analytics.md) pour plus d’informations sur l’utilisation du connecteur source Adobe Analytics.
 
-Consultez [&#x200B; Ingérer et utiliser des données de flux &#x200B;](./streaming.md) pour plus d’informations sur l’utilisation du connecteur source d’API HTTP.
+Consultez [ Ingérer et utiliser des données de flux ](./streaming.md) pour plus d’informations sur l’utilisation du connecteur source d’API HTTP.
 
-Consultez [Présentation des connecteurs source](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=fr#terms-and-conditions) pour obtenir un aperçu des connecteurs source, ainsi que des liens vers des informations supplémentaires pour chaque connecteur.
+Consultez [Présentation des connecteurs source](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html#terms-and-conditions) pour obtenir un aperçu des connecteurs source, ainsi que des liens vers des informations supplémentaires pour chaque connecteur.
 
 
 ## Configurer une connexion

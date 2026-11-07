@@ -36,10 +36,10 @@ topic_v2:
     internal-label: Experimentation
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '1530'
-ht-degree: 97%
+ht-degree: 96%
 ---
 # Vue d’ensemble d’Analysis Workspace {#analysis-workspace-overview}
 
@@ -80,7 +80,7 @@ Les principales fonctionnalités d’Analysis Workspace sont disponibles via le 
 
 ## Menu
 
-La plupart des fonctionnalités d’Analysis Workspace sont disponibles par glisser-déposer et par le biais des menus contextuels dans les panneaux, les visualisations et les composants.
+La plupart des fonctionnalités d’Analysis Workspace sont disponibles par glisser-déposer, et par le biais de menus contextuels dans les panneaux, les visualisations et les composants.
 
 Les fonctionnalités sont également disponibles par le biais du menu Workspace et des raccourcis clavier. Les raccourcis clavier varient en fonction du système d’exploitation sur lequel votre navigateur s’exécute. Consultez les tableaux ci-dessous pour une vue d’ensemble.
 
@@ -169,7 +169,7 @@ Synchronisez les visualisations pour contrôler quelle table de données ou quel
 
 Pour commencer à utiliser Analysis Workspace :
 
-1. Connectez-vous à [&#128279;](https://experience.adobe.com) à l’aide de vos informations d’identification Adobe ID.
+1. Connectez-vous à [](https://experience.adobe.com) à l’aide de vos informations d’identification Adobe ID.
 1. Sélectionnez **[!UICONTROL Customer Journey Analytics]** dans le sélecteur d’applications ![App](/help/assets/icons/Apps.svg) en haut à droite de l’interface.
 1. La page **[!UICONTROL Projets]** d’Analysis Workspace s’affiche par défaut. Si un projet spécifique a été sélectionné pour vous ou si vous avez récemment travaillé sur un projet, ce projet s’affiche par défaut.
 
@@ -191,5 +191,5 @@ Une fois que vous avez terminé de créer le projet et que celui-ci collecte des
 
 - La page [Formation](/help/getting-started/landing.md#learning) dans Customer Journey Analytics. Cette page est très utile pour vous familiariser avec Analysis Workspace. En particulier le modèle Découvrir les principes de base de Workspace. Ce modèle vous explique la terminologie et les étapes courantes nécessaires à la création de votre première analyse dans Workspace.
 - Adobe propose des centaines de [tutoriels de formation vidéo Analytics](https://experienceleague.adobe.com/fr/docs/analytics-learn/tutorials/overview).
-- Voir les [notes de mise à jour de &#x200B;](https://experienceleague.adobe.com/fr/docs/release-notes/experience-cloud/current) pour obtenir des mises à jour sur les nouvelles fonctionnalités.
+- Voir les [notes de mise à jour de ](https://experienceleague.adobe.com/fr/docs/release-notes/experience-cloud/current) pour obtenir des mises à jour sur les nouvelles fonctionnalités.
 

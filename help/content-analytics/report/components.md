@@ -29,7 +29,7 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: fec14c8ed1f94e16423682a165198dbda760f78d
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '1943'
 ht-degree: 58%
@@ -56,7 +56,7 @@ Dans les tableaux ci-dessous, ![généré par l’IA](/help/assets/icons/AI.svg)
 |---|---|---|
 | SOURCE DE L’ID | Pour Content Analytics, la valeur est `ContentAnalytics`. | Dimension |
 | Canal | Canal de l’expérience. La valeur est `Web`, `Mobile` ou `Paid Media`. | Dimension |
-| ID d’expérience de contenu | ID unique de l’expérience. <br>Pour **web** : URL de la page web. <br/>Pour **web granulaire** : hachage calculé côté client en fonction de la payload du contenu (textes, images, ctas) avec préfixe `web-`. <br/>Pour **mobile** : hachage calculé côté client en fonction de la payload du contenu (textes, images, ctas) avec le préfixe `mobile-`. | Dimension |
+| ID d’expérience de contenu | ID unique de l’expérience. <br>Pour **web** : URL de la page web. <br/>Pour **web granulaire** : hachage calculé côté client en fonction de la payload du contenu (textes, images, ctas) avec le préfixe `web-`. <br/>Pour **mobile** : côté client calculé par hachage en fonction de la payload du contenu (textes, images, ctas) avec le préfixe `mobile-`. | Dimension |
 | Source d’expérience de contenu | Pour **web** : URL de la page web.<br/>Pour **mobile** : nom d’écran transmis par le biais du SDK mobile Experience Platform. | Dimension |
 | Canal d’expérience (obsolète) | Canal de l’expérience. La valeur est soit `Web` soit `Mobile`. | Dimension |
 | Extras d’expérience | Toutes les autres données supplémentaires que vous souhaitez suivre. Comme l’identifiant externe ou l’emplacement. | Dimension |
@@ -73,7 +73,7 @@ Dans les tableaux ci-dessous, ![généré par l’IA](/help/assets/icons/AI.svg)
 | Titre | Description | Type |
 |---|---|---|
 | Attributs de l’expérience | ![Générés par l’IA](/help/assets/icons/AI.svg) Liste complète de tous les noms et valeurs d’attribut de l’expérience. | Dimension<br>Champ dérivé |
-| Score de lisibilité de l’expérience | ![Généré par l’IA](/help/assets/icons/AI.svg) Score de lisibilité de l’expérience. | Dimension |
+| Score de lisibilité de l’expérience | ![Généré par l’IA](/help/assets/icons/AI.svg) Score de lisibilité de l’expérience | Dimension |
 | Mots-clés de l’expérience | ![Générés par l’IA](/help/assets/icons/AI.svg) Mots-clés pour l’expérience. | Dimension<br>Champ dérivé |
 | Stratégies de persuasion de l’expérience | ![Générées par l’IA](/help/assets/icons/AI.svg) Stratégies de persuasion contenues dans l’expérience donnée. Les valeurs possibles sont : Identité sociale, Preuve sociale, Autorité, Concrétude, Pied-dans-la-porte, Dépassement de la réactance, Réciprocité, Ancrage et comparaison, Impact social, Rareté et Anthropomorphisme. | Dimension<br/>Champ dérivé |
 | Narrations de l’expérience | ![Générées par l’IA](/help/assets/icons/AI.svg) Récits que l’expérience crée en fonction de la pertinence du point de vue d’un spécialiste marketing. | Dimension<br/>Champ dérivé |
