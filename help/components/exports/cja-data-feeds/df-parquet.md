@@ -66,7 +66,7 @@ Plutôt que de télécharger les fichiers, vous connectez généralement votre e
 
 Définissez une table externe qui pointe vers les fichiers de votre espace de stockage dans le cloud. L’entrepôt de données lit les fichiers lorsque vous exécutez une requête.
 
-* **** : tables externes ou requêtes sur une étape externe
+* **&#x200B;**&#x200B;: tables externes ou requêtes sur une étape externe
 * **Bricks de données** : tables externes sur Amazon S3, Azure Data Lake Storage (ADLS) ou Google Cloud Storage
 * **BigQuery** : tables externes sur Google Cloud Storage
 * **Amazon Redshift** : spectre Redshift sur Amazon S3
