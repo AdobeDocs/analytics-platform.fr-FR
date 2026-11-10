@@ -14,7 +14,7 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: bd396cb4909d131ed60c97e7101cf85946555e38
+source-git-commit: f77f416ad958b28a8489d7a6eb13100ba699236e
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 1%
@@ -35,7 +35,9 @@ Parquet est mieux adapté à la sortie de flux de données que CSV, TSV ou JSON 
 
 * **Champs imbriqués** : le parquet représente les champs imbriqués, tels qu’une liste de produits, de manière native. Les formats CSV et TSV ne peuvent les représenter qu’en les codant en chaînes. Pour plus d’informations, voir [Composants de sous-événement dans les flux de données](/help/components/exports/cja-data-feeds/df-sub-event.md).
 
-* **Exportations importantes** : Le parquet réduit généralement les coûts de stockage et de transfert. Cela évite également l’analyse de texte et la saisie de devinettes lorsque vous chargez les données.
+* **Schéma intégré** : chaque fichier Parquet stocke son propre schéma, y compris les noms de colonne, les types de données et les structures imbriquées. Comme le schéma se trouve dans le fichier , votre entrepôt de données peut créer des tables directement à partir des fichiers . Vous n’avez pas besoin de fournir un fichier d’en-tête distinct ou une définition de schéma, et l’entrepôt de données n’a pas besoin d’en déduire des types de données.
+
+* **Exportations importantes** : Le parquet réduit généralement les coûts de stockage et de transfert. Cela évite également l’analyse de texte lorsque vous chargez les données.
 
 ## Comparaison de Parquet aux formats CSV, TSV et JSON
 
@@ -49,7 +51,6 @@ Le tableau suivant présente les différences entre Parquet, CSV, TSV et JSON :
 
 | Caractéristique | Parquet | CSV ou TSV | JSON |
 | --- | --- | --- | --- |
-| **Taille du fichier** | Le plus petit. La compression est intégrée au fichier et les outils ne décompressent que les colonnes lues par une requête. | Plus grand. La compression, comme gzip, s’applique à l’ensemble du fichier. Par conséquent, les outils doivent décompresser l’ensemble du fichier pour le lire et ne peuvent souvent pas le lire en parallèle. | La plus grande. Les noms des champs sont répétés dans chaque enregistrement. |
 | **Vitesse des requêtes** | Vite. Une requête lit uniquement les colonnes dont elle a besoin. | Plus lentement. Des lignes entières doivent être lues et analysées. | Plus lentement. Des lignes entières doivent être lues et analysées. |
 | **Types des données** | Saisi. Le schéma est incorporé dans le fichier . | Non typé. Toutes les valeurs sont au format texte et les types sont déduits lors du chargement des données. | Lentement tapé. |
 | **Données imbriquées** | Les tableaux et les objets sont pris en charge de manière native. | Non pris en charge. Les tableaux et les objets doivent être aplatis ou codés en tant que chaînes. | Les tableaux et les objets sont pris en charge de manière native. |
