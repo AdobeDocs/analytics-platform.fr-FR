@@ -24,10 +24,10 @@ topic_v2:
     internal-label: Reporting
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
+source-git-commit: 930ce593b744f0afc0e97dda1acf48e009e9e30a
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 76%
+source-wordcount: '303'
+ht-degree: 73%
 ---
 # Paramètres du composant de déduplication des mesures {#metric-deduplication-component-settings}
 
@@ -54,6 +54,3 @@ La déduplication de la mesure vous permet de configurer une mesure pour ne comp
 
 {style="table-layout:auto"}
 
->[!CAUTION]
->
->La déduplication à la portée d’une _personne_ est évaluée par mois complets en heure UTC. Un créneau de rapport pour un mois partiel peut ne pas afficher toutes les premières ou dernières instances, si certaines se sont produites au cours du mois complet mais en dehors des dates de création de rapports.

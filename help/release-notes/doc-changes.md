@@ -55,9 +55,9 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 1523b216a48e0bedb57d2afcb5f95e8e2efdadda
+source-git-commit: 930ce593b744f0afc0e97dda1acf48e009e9e30a
 workflow-type: tm+mt
-source-wordcount: '7436'
+source-wordcount: '7485'
 ht-degree: 92%
 ---
 
@@ -69,6 +69,8 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 
 | Fonctionnalité | Description |
 |---|---|
+| **Novembre 2026** | |
+| Portée de la déduplication des mesures | Suppression de la mise en garde qui s’appliquait lorsque la portée de déduplication d’une mesure [était définie sur Personne](/help/data-views/component-settings/metric-deduplication.md), qui indiquait que la mesure était évaluée par mois calendaires complets. Pour une mesure dont la portée de déduplication est définie sur Personne, la déduplication s’applique désormais uniquement dans la fenêtre de création de rapports sélectionnée. |
 | **Octobre 2026** | |
 | Mécanismes de sécurisation pour les vues de données | Mise à jour du [guadrail](/help/technotes/guardrails.md) pour le nombre maximal de vues de données pour une organisation (de 2 000 à 5 000). |
 | Joindre des données de média payantes à des données web | [Guide du cas d’utilisation](/help/use-cases/cross-channel/paid-media-web.md) expliquant comment joindre des données de médias achetés à des données web. |
