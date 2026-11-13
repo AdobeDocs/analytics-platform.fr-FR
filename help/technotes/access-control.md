@@ -70,10 +70,10 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
+source-git-commit: a48eccd77887e94bce5c0ef18bd070877601ddbd
 workflow-type: tm+mt
-source-wordcount: '1764'
-ht-degree: 74%
+source-wordcount: '1773'
+ht-degree: 72%
 ---
 # Contrôle d’accès
 
@@ -112,10 +112,10 @@ Les administrateurs et administratrices de produit disposent par défaut des aut
 
 En plus de l’ajout en tant qu’administrateur ou administratrice de produit dans le profil de produit **Customer Journey Analytics** de l’[Admin Console](https://adminconsole.adobe.com/enterprise/), vous devez disposer d’autorisations supplémentaires pour effectuer les tâches suivantes dans Customer Journey Analytics :
 
-* Créer, mettre à jour et supprimer des [vues de données](/help/data-views/data-views.md)
+* Créer, mettre à jour et supprimer [vues de données](/help/data-views/data-views.md)
 * Créer, mettre à jour et supprimer des [connexions](/help/connections/overview.md)
 
-  Pour effectuer cette tâche, les utilisateurs doivent faire partie d&#39;un rôle **&#x200B;**&#x200B;qui fournit les autorisations suivantes :
+  Pour effectuer cette tâche, les utilisateurs doivent appartenir à un **rôle Experience Platform** qui fournit les autorisations suivantes :
 
   | Catégorie | Autorisation | Description |
   |---|---|---|
@@ -125,21 +125,21 @@ En plus de l’ajout en tant qu’administrateur ou administratrice de produit d
   | [!UICONTROL Gestion des données] | [!UICONTROL Affichage des jeux de données] | Accès en lecture seule aux jeux de données et aux schémas. |
   | [!UICONTROL Identity Management] | [!UICONTROL Affichage des espaces de noms d’identité] | Accès en lecture seule aux espaces de noms d’identité. |
 
-  Pour plus d’informations sur les rôles d’Experience Platform, voir [&#x200B; Présentation du contrôle d’accès &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/access-control/home).
+  Pour plus d’informations sur les rôles d’Experience Platform, consultez [Présentation du contrôle d’accès](https://experienceleague.adobe.com/fr/docs/experience-platform/access-control/home).
 
-* Gérer [Mesures et dimensions partagées](/help/data-views/shared-metrics-dimensions/smd-overview.md)
+* Gérer [Mesures Et Dimensions Partagées](/help/data-views/shared-metrics-dimensions/smd-overview.md)
 
-  Pour accéder au gestionnaire **Mesures et dimensions partagées**, les utilisateurs doivent faire partie d’un rôle Experience Platform **&#x200B;**&#x200B;qui fournit les autorisations suivantes :
+  Pour accéder au gestionnaire **Mesures et dimensions partagées**, les utilisateurs doivent faire partie d’un **rôle Experience Platform** qui fournit les autorisations suivantes :
 
   | Catégorie | Autorisation | Description |
   |---|---|---|
   | [!UICONTROL Sandbox] | [!UICONTROL Tous] | Accès à tous les sandbox. |
-  | [!UICONTROL Gouvernance des données] | [!UICONTROL Afficher les politiques d’utilisation des données] | Accès en lecture seule pour les politiques dʼutilisation des données appartenant à votre organisation. |
-  | [!UICONTROL Gouvernance des données] | [!UICONTROL Gestion des politiques d’utilisation des données] | Accès à la lecture, la création, la modification et la suppression des politiques dʼutilisation des données. |
+  | [!UICONTROL Gouvernance des données] | [!UICONTROL Afficher Les Politiques D&#39;Utilisation Des Données] | Accès en lecture seule pour les politiques dʼutilisation des données appartenant à votre organisation. |
+  | [!UICONTROL Gouvernance des données] | [!UICONTROL Gestion Des Politiques D’Utilisation Des Données] | Accès à la lecture, la création, la modification et la suppression des politiques dʼutilisation des données. |
 
-  Pour plus d’informations sur les autorisations Experience Platform, voir [&#x200B; Sandbox et autorisations &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/access-control/home#sandboxes-and-permissions).
+  Pour plus d’informations sur les autorisations Experience Platform, voir [Sandbox et autorisations](https://experienceleague.adobe.com/fr/docs/experience-platform/access-control/home#sandboxes-and-permissions).
 
-* Si Journey Optimizer est intégré à Customer Journey Analytics où il existe des connexions Journey Optimizer, les autorisations [Parcours](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/access-control/high-low-permissions#journey-capability) doivent également être ajoutées pour accéder aux connexions :
+* Si Journey Optimizer est intégré à Customer Journey Analytics où il existe des connexions Journey Optimizer, [les autorisations Parcours](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/access-control/high-low-permissions#journey-capability) doivent également être ajoutées pour accéder aux connexions :
 
   | Catégorie | Autorisation | Description |
   |---|---|---|
@@ -150,21 +150,21 @@ En plus de l’ajout en tant qu’administrateur ou administratrice de produit d
 
 * Exporter des jeux de données vers des [destinations](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/activate/export-datasets)
 
-  Pour effectuer cette tâche, les utilisateurs doivent faire partie d’un rôle **&#x200B;**&#x200B;qui fournit les [autorisations de destinations](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/home#access-controls) suivantes :
+  Pour effectuer cette tâche, les utilisateurs doivent faire partie d’un **rôle Experience Platform** qui fournit les [autorisations de destinations](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/home#access-controls) suivantes :
 
   | Catégorie | Autorisation | Description |
   |---|---|---|
   | [!UICONTROL Destinations] | [!UICONTROL Gérer les destinations] | Accès à la lecture, à la création et à la suppression des connexions de destination et des comptes de destination. |
   | [!UICONTROL Destinations] | [!UICONTROL Activer les destinations] | Permet aux utilisateurs et utilisatrices d’activer des segments vers des destinations existantes. Active l’étape de mappage dans le workflow d’activation. Cette autorisation nécessite également que le droit Afficher les destinations soit accordé à la personne qui souhaite activer les données vers des destinations. |
 
-  Pour plus d’informations sur les autorisations Experience Platform, voir [&#x200B; Sandbox et autorisations &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/access-control/home#sandboxes-and-permissions).
+  Pour plus d’informations sur les autorisations Experience Platform, voir [Sandbox et autorisations](https://experienceleague.adobe.com/fr/docs/experience-platform/access-control/home#sandboxes-and-permissions).
 
 
 * Utiliser l’[extension BI](../data-views/bi-extension.md)
 
   Pour que les personnes puissent utiliser l’extension BI, un administrateur de produit
 
-  * doit s’assurer que les autorisations Experience Platform de l’utilisateur incluent un rôle disposant de la ressource Query Service avec les options Gérer les requêtes et Gérer l’intégration de Query Service . Pour plus d’informations sur les autorisations Experience Platform, voir [Présentation du contrôle d’accès](https://experienceleague.adobe.com/fr/docs/experience-platform/access-control/home).
+  * doit s’assurer que les autorisations Experience Platform de l’utilisateur incluent un rôle disposant de la ressource Query Service avec les options Gérer les requêtes et Gérer l’intégration de Query Service . Pour plus d’informations sur les autorisations Experience Platform, consultez [Présentation du contrôle d’accès](https://experienceleague.adobe.com/fr/docs/experience-platform/access-control/home).
 
     | Catégorie | Autorisation | Description |
     |---|---|---|
@@ -195,7 +195,7 @@ L’onglet **[!UICONTROL Autorisations]** s’affiche sur chaque profil de produ
 
 | Catégorie | Autorisation | Description |
 | --- | --- | ---|
-| [!UICONTROL Vues des données] | *nom de la vue de données* | Si vous définissez **[!UICONTROL Inclure automatiquement]** sur **[!UICONTROL Activé]**, les personnes qui font partie de ce profil de produit peuvent afficher toutes les vues de données existantes et nouvellement créées. Si ce paramètre est défini sur **[!UICONTROL Désactivé]**, vous pouvez sélectionner des vues de données spécifiques auxquelles les utilisateurs ont accès. |
+| [!UICONTROL Vues des données] | *nom de la vue de données* | Si vous basculez **[!UICONTROL Inclusion automatique]** sur **[!UICONTROL Activé]**, les utilisateurs qui font partie de ce profil de produit peuvent afficher toutes les vues de données existantes et nouvellement créées. Cela inclut les vues de données créées pour vous par Adobe.<p>Si ce paramètre est défini sur **[!UICONTROL Désactivé]**, vous pouvez sélectionner des vues de données spécifiques auxquelles les utilisateurs ont accès.  </p> |
 | [!UICONTROL Outils de création de rapports] | [!UICONTROL Accès aux analyses guidées] | Autoriser l’accès aux [Analyses guidées](/help/guided-analysis/overview.md). |
 | [!UICONTROL Outils de création de rapports] | [!UICONTROL Création des mesures calculées] | Autoriser la création des [mesures calculées](/help/components/calc-metrics/calc-metr-overview.md). Les utilisateurs peuvent baliser, partager, supprimer et renommer uniquement les mesures calculées qu’ils créent ou les mesures calculées partagées avec eux. |
 | [!UICONTROL Outils de création de rapports] | [!UICONTROL Création de segment] | Autoriser la création des [segments](/help/components/segments/seg-overview.md). Les utilisateurs peuvent baliser, partager, supprimer et renommer uniquement les segments qu’ils créent ou les segments qu’ils partagent. |
@@ -210,7 +210,7 @@ L’onglet **[!UICONTROL Autorisations]** s’affiche sur chaque profil de produ
 | [!UICONTROL Outils de création de rapports] | [!UICONTROL Assistant IA : connaissances du produit] | Autoriser les utilisateurs à accéder à l’assistant AI pour connaître le produit. |
 | [!UICONTROL Outils de création de rapports] | [!UICONTROL Agent Data Insights] | Autoriser les utilisateurs à accéder à Data Insights Agent pour les informations de données pilotées par l’IA |
 | [!UICONTROL Outils de création de rapports] | [!UICONTROL Légendes intelligentes] | Autoriser l’accès aux [légendes intelligentes](/help/analysis-workspace/visualizations/intelligent-captions.md). |
-| [!UICONTROL Outils de création de rapports] | [!UICONTROL Accès MCP] | Autoriser les utilisateurs à accéder au serveur MCP [&#128279;](https://developer.adobe.com/analytics-mcp/docs/cja/). |
+| [!UICONTROL Outils de création de rapports] | [!UICONTROL Accès MCP] | Autoriser les utilisateurs à accéder au serveur [Customer Journey Analytics MCP](https://developer.adobe.com/analytics-mcp/docs/cja/). |
 | [!UICONTROL Outils des vues de données] | [!UICONTROL Export du tableau complet] | Autorise l’[export des tableaux complets dans le cloud](/help/analysis-workspace/export/export-cloud.md) |
 | [!UICONTROL Outils des vues de données] | [!UICONTROL Extension BI de CJA] | Autoriser l’utilisation de l’extension [BI](../data-views/bi-extension.md). |
 
@@ -242,6 +242,9 @@ Vous souhaitez octroyer un accès aux données pour un seul jour. Voici comment 
 
 ### Contrôle d’accès au niveau de la valeur
 
-Les personnes qui ont accès à une vue de données ne peuvent travailler qu’avec les mesures et dimensions incluses par l’administrateur ou l’administratrice dans cette vue de données. Les administrateurs et administratrices peuvent utiliser la fonctionnalité [Inclure/Exclure](/help/data-views/component-settings/include-exclude-values.md) ou le [Regroupement de valeurs](../data-views/component-settings/value-bucketing.md) des paramètres de composant dans une vue de données pour exclure ou agréger certaines valeurs de dimension d’une vue de données.
+Les personnes qui ont accès à une vue de données ne peuvent travailler qu’avec les mesures et dimensions incluses par l’administrateur ou l’administratrice dans cette vue de données. Les administrateurs peuvent utiliser la fonctionnalité [Inclure/Exclure](/help/data-views/component-settings/include-exclude-values.md) ou le [Regroupement de valeurs](../data-views/component-settings/value-bucketing.md) dans une vue de données pour exclure ou agréger certaines valeurs de dimension d’une vue de données.
 
 Par exemple : vous créez une mesure appelée *Hypertension* dans une vue de données à partir d’un composant qui contient les données individuelles d’une patiente ou d’un patient à partir du jeu de données. Vous utilisez le regroupement de valeurs pour autoriser l’accès uniquement aux valeurs regroupées, de sorte que les utilisateurs des données ne voient pas les données de chaque patient.
+
+
+
