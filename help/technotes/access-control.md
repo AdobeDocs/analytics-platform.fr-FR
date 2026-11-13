@@ -137,9 +137,9 @@ En plus de l’ajout en tant qu’administrateur ou administratrice de produit d
   | [!UICONTROL Gouvernance des données] | [!UICONTROL Afficher Les Politiques D&#39;Utilisation Des Données] | Accès en lecture seule pour les politiques dʼutilisation des données appartenant à votre organisation. |
   | [!UICONTROL Gouvernance des données] | [!UICONTROL Gestion Des Politiques D’Utilisation Des Données] | Accès à la lecture, la création, la modification et la suppression des politiques dʼutilisation des données. |
 
-  Pour plus d’informations sur les autorisations Experience Platform, voir [Sandbox et autorisations](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home#sandboxes-and-permissions).
+  Pour plus d’informations sur les autorisations Experience Platform, voir [Sandbox et autorisations](https://experienceleague.adobe.com/fr/docs/experience-platform/access-control/home#sandboxes-and-permissions).
 
-* Si Journey Optimizer est intégré à Customer Journey Analytics où il existe des connexions Journey Optimizer, [les autorisations Parcours](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/high-low-permissions#journey-capability) doivent également être ajoutées pour accéder aux connexions :
+* Si Journey Optimizer est intégré à Customer Journey Analytics où il existe des connexions Journey Optimizer, [les autorisations Parcours](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/access-control/high-low-permissions#journey-capability) doivent également être ajoutées pour accéder aux connexions :
 
   | Catégorie | Autorisation | Description |
   |---|---|---|
@@ -150,14 +150,14 @@ En plus de l’ajout en tant qu’administrateur ou administratrice de produit d
 
 * Exporter des jeux de données vers des [destinations](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/activate/export-datasets)
 
-  Pour effectuer cette tâche, les utilisateurs doivent faire partie d’un **rôle Experience Platform** qui fournit les [autorisations de destinations](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home#access-controls) suivantes :
+  Pour effectuer cette tâche, les utilisateurs doivent faire partie d’un **rôle Experience Platform** qui fournit les [autorisations de destinations](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/home#access-controls) suivantes :
 
   | Catégorie | Autorisation | Description |
   |---|---|---|
   | [!UICONTROL Destinations] | [!UICONTROL Gérer les destinations] | Accès à la lecture, à la création et à la suppression des connexions de destination et des comptes de destination. |
   | [!UICONTROL Destinations] | [!UICONTROL Activer les destinations] | Permet aux utilisateurs et utilisatrices d’activer des segments vers des destinations existantes. Active l’étape de mappage dans le workflow d’activation. Cette autorisation nécessite également que le droit Afficher les destinations soit accordé à la personne qui souhaite activer les données vers des destinations. |
 
-  Pour plus d’informations sur les autorisations Experience Platform, voir [Sandbox et autorisations](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home#sandboxes-and-permissions).
+  Pour plus d’informations sur les autorisations Experience Platform, voir [Sandbox et autorisations](https://experienceleague.adobe.com/fr/docs/experience-platform/access-control/home#sandboxes-and-permissions).
 
 
 * Utiliser l’[extension BI](../data-views/bi-extension.md)
