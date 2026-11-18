@@ -78,7 +78,7 @@ La mise en forme conditionnelle applique la mise en forme aux limites supérieur
 
 | Options de mise en forme conditionnelle | Description |
 | --- | --- |
-| **[!UICONTROL Utiliser des limites en pourcentage]** | Modifiez la plage de limites pour qu’elle soit basée sur des pourcentages plutôt que sur des valeurs absolues. La plage de limites en pourcentage fonctionne pour les mesures exprimées uniquement en pourcentages (comme Taux de rebond) et celles qui comportent un nombre et un pourcentage (comme Pages vues). |
+| **[!UICONTROL Utiliser les limites de pourcentage]** | Modifiez la plage de limites pour qu’elle soit basée sur des pourcentages plutôt que sur des valeurs absolues. La plage de limites en pourcentage fonctionne pour les mesures exprimées uniquement en pourcentages (comme Taux de rebond) et celles qui comportent un nombre et un pourcentage (comme Pages vues). |
 | **[!UICONTROL Génération automatique]** | Calculer automatiquement les limites hautes/moyennes/basses en fonction des données. La limite supérieure est la valeur la plus élevée de cette colonne. La limite inférieure est la valeur la plus faible et la valeur moyenne est la moyenne entre les limites supérieure et inférieure. |
 | **[!UICONTROL Personnalisé]** | Attribuez manuellement les valeurs **[!UICONTROL Limite supérieure]**, **[!UICONTROL Milieu]** et **[!UICONTROL Limite inférieure]**. Vous disposez grâce aux limites de la flexibilité nécessaire pour déterminer si la valeur d’une colonne devient bonne, moyenne ou mauvaise. |
 | **[!UICONTROL Palette de mise en forme conditionnelle]** | Appliquer un ensemble de couleurs préconfiguré aux cellules. En fonction des quatre modèles de couleurs disponibles que vous sélectionnez, différentes couleurs sont attribuées aux valeurs élevées, aux valeurs intermédiaires et aux valeurs faibles. <br> Le remplacement d’une dimension dans le tableau réinitialise les limites de mise en forme conditionnelle. Le remplacement d’une mesure recalcule les limites de cette colonne (lorsqu’une mesure se trouve sur l’axe des abscisses et une dimension sur l’axe des ordonnées). |
@@ -99,21 +99,21 @@ La mise en forme conditionnelle applique la mise en forme aux limites supérieur
 >[!CONTEXTUALHELP]
 >id="workspace_freeformtable_column_usenondefaultattributionmodel_disabled"
 >title="Utiliser un modèle d’attribution différent du modèle par défaut"
->abstract="Les modèles d’attribution non par défaut ne sont pas disponibles pour cette mesure."
+>abstract="Les modèles d’attribution autre que celui par défaut n’est pas disponible pour cette mesure."
 
 <!-- markdownlint-enable MD034 -->
 
 
 
-Vous pouvez remplacer le modèle d’attribution par défaut configuré dans [Vues de données](/help/data-views/component-settings/attribution.md).
+Vous pouvez remplacer le modèle d’attribution par défaut configuré dans les [Vues de données](/help/data-views/component-settings/attribution.md).
 
 >[!NOTE]
 >
 >Tenez compte des points suivants lors de l’activation d’un modèle d’attribution autre que celui par défaut sur une mesure :
 >
->* **Lors de l’utilisation de la mesure dans un rapport avec *une seule dimension* :** l’attribution de la mesure remplace le modèle d’attribution défini sur la dimension. Par exemple, une mesure avec une attribution « première touche » remplace une attribution de dimension « le plus récent ».
+>* **Lors de l’utilisation de la mesure dans un rapport avec *une seule dimension*:** L’attribution de la mesure remplace le modèle d’attribution défini sur la dimension. Par exemple, une mesure avec une attribution « première touche » remplace une attribution de dimension « le plus récent ».
 >
->* **Lors de l’utilisation de la mesure dans un rapport avec *plusieurs dimensions* :** l’attribution de la mesure est appliquée en plus du modèle d’attribution pour chaque dimension. Par exemple, une mesure avec une attribution « Première touche » est appliquée en plus d’une attribution de dimension « Le plus récent ».
+>* **Lors de l’utilisation de la mesure dans un rapport avec *plusieurs dimensions*:** L’attribution de la mesure est appliquée en plus du modèle d’attribution pour chaque dimension. Par exemple, une mesure avec une attribution « Première touche » est appliquée en plus d’une attribution de dimension « Le plus récent ».
 >
 > Pour plus d’informations sur l’attribution, consultez [Paramètres des composants de persistance](/help/data-views/component-settings/persistence.md).
 

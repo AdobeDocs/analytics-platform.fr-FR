@@ -33,7 +33,7 @@ topic_v2:
 source-git-commit: 113a215e26092c65d6eaf2c321f60d3f3a5015b8
 workflow-type: tm+mt
 source-wordcount: '1187'
-ht-degree: 14%
+ht-degree: 18%
 ---
 # Création ou modification de configurations
 
@@ -48,7 +48,7 @@ Lorsque vous créez ou modifiez une configuration Insights de conversation, vous
 
 Seuls les administrateurs système peuvent créer ou modifier des configurations de Conversation Insights.
 
-Vous pouvez créer ou modifier des configurations à partir de l’interface [&#x200B; Configurations de Conversation Insights &#x200B;](./manage.md).
+Vous pouvez créer ou modifier des configurations à partir de l’interface [Configurations de Conversation Insights](./manage.md).
 
 ## Restaurer le jeu de données fusionné manquant
 
@@ -70,7 +70,7 @@ Pour chaque configuration :
 
 1. Dans la section **[!UICONTROL Jeux de données]**, spécifiez les informations suivantes :
 
-   ![Jeux de données d’informations sur les conversations](assets/conversation-insights-configuration-datasets.png)
+   ![Jeux De Données D’Informations De Conversation](assets/conversation-insights-configuration-datasets.png)
 
    | Champ | Description |
    |---------|----------|
@@ -80,36 +80,36 @@ Pour chaque configuration :
 
    Lorsqu’un jeu de données contient à la fois des invites et des réponses, sélectionnez le même jeu de données pour **[!UICONTROL Jeu de données d’événement d’invite]** et **[!UICONTROL Jeu de données d’événement de réponse]**.
 
-   L’option permettant de [spécifier des conversations mixtes](#blend-specification) via **[!UICONTROL Configurer la spécification mixte]** n’est disponible qu’une seule fois :
+   L’option permettant de [spécifier des conversations mixtes](#blend-specification) à **[!UICONTROL Configurer la spécification mixte]** n’est disponible qu’une seule fois :
    * Cette configuration est terminée.
    * Tous les jeux de données sont disponibles.
-   * Vous disposez des autorisations Customer Journey Analytics [autorisations pour modifier les connexions](/help/technotes/access-control.md).
+   * Vous disposez des autorisations Customer Journey Analytics [pour modifier les connexions](/help/technotes/access-control.md).
 
 1. Dans la section **[!UICONTROL Connexion]**, si aucune connexion n’est déjà configurée, utilisez **[!UICONTROL Sélectionner une connexion]** pour sélectionner une connexion.
 
-   ![Connexion Insights de conversation](assets/conversation-insights-configuration-connection.png)
+   ![Connexion À Conversation Insights](assets/conversation-insights-configuration-connection.png)
 
    Si une connexion est déjà configurée, sélectionnez ![Modifier](/help/assets/icons/Edit.svg) **[!UICONTROL Modifier]** pour sélectionner une autre connexion.
 
-   ![Conversation Insights Edit Connection](assets/conversation-insights-configuration-edit-connection.png)
+   ![Insights De Conversation Modifiant La Connexion](assets/conversation-insights-configuration-edit-connection.png)
 
    Dans la boîte de dialogue **[!UICONTROL Sélectionner une connexion]** :
 
-   ![Les informations de conversation sélectionnent la connexion](assets/conversation-insights-configuration-select-connection.png)
+   ![Les Insights De Conversation Sélectionnent La Connexion](assets/conversation-insights-configuration-select-connection.png)
 
    1. Cochez la case en regard de la connexion à laquelle vous souhaitez ajouter les jeux de données d’événements d’invites, de réponses et de commentaires.
    1. Sélectionnez **[!UICONTROL Utiliser la connexion]**.
 
-   * Pour effectuer une recherche dans la liste des connexions à sélectionner, utilisez le champ ![Rechercher](/help/assets/icons/Search.svg).
+   * Pour rechercher dans la liste des connexions à sélectionner, utilisez le champ ![Rechercher](/help/assets/icons/Search.svg).
    * Pour configurer les colonnes à afficher dans le tableau, sélectionnez ![ColumnSetting](/help/assets/icons/ColumnSetting.svg). Dans la boîte de dialogue **[!UICONTROL Personnaliser le tableau]**, sélectionnez les colonnes à afficher. Sélectionnez ensuite **[!UICONTROL Appliquer]**.
 
-1. Dans la section **[!UICONTROL Vues de données]** , si aucune vue de données n’est déjà configurée, sélectionnez **[!UICONTROL Sélectionner les vues de données]** pour sélectionner les vues de données.
+1. Dans la section **[!UICONTROL Vues de données]**, si aucune vue de données n’est déjà configurée, sélectionnez **[!UICONTROL Sélectionner les vues de données]** pour sélectionner les vues de données.
 
    Si les vues de données sont déjà configurées, sélectionnez ![Modifier](/help/assets/icons/Edit.svg) **[!UICONTROL Modifier la sélection des vues de données]** pour reconfigurer la sélection des vues de données.
 
    Dans la boîte de dialogue **[!UICONTROL Sélectionner plusieurs vues de données]** :
 
-   ![Conversation Insights : sélectionnez les vues de données](assets/conversation-insights-configuration-select-data-views.png)
+   ![Conversation Insights Sélectionner les vues de données](assets/conversation-insights-configuration-select-data-views.png)
 
    1. Sélectionnez une ou plusieurs vues de données à utiliser pour la configuration des informations sur la conversation.
 
@@ -120,7 +120,7 @@ Pour chaque configuration :
 
 1. Pour terminer la configuration :
 
-   * Sélectionnez **[!UICONTROL Ignorer]** pour une nouvelle configuration qui n’est pas créée.
+   * Sélectionnez **[!UICONTROL Ignorer]** pour une nouvelle configuration qui n&#39;est pas créée.
 
    * Sélectionnez **[!UICONTROL Enregistrer pour plus tard]** pour une nouvelle configuration que vous souhaitez enregistrer, mais pour laquelle vous ne souhaitez pas créer l’artefact (mises à jour des vues de données par exemple). Vous pouvez revoir la configuration ultérieurement et terminer la création réelle de la configuration.
 
@@ -128,7 +128,7 @@ Pour chaque configuration :
 
    * Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer la configuration modifiée.
 
-   * Sélectionnez **[!UICONTROL Restaurer]** pour restaurer la configuration afin de régénérer un nouveau jeu de données fusionné pour la configuration.
+   * Sélectionnez **[!UICONTROL Restaurer]** pour restaurer la configuration afin de régénérer un nouveau jeu de données mixte pour la configuration.
 
    * Sélectionnez **[!UICONTROL Quitter]** pour ignorer toute modification de la configuration.
 
@@ -138,16 +138,16 @@ Pour chaque configuration :
 >[!CONTEXTUALHELP]
 >id="conversationinsights_blend_specification"
 >title="Configurer la spécification de fusion"
->abstract="Vous ne pouvez modifier la spécification de fusion qu’une fois cette configuration de conversation avec Insights terminée, tous les jeux de données sont disponibles et vous disposez des autorisations Customer Journey Analytics pour modifier les connexions."
+>abstract="Vous ne pouvez modifier la spécification de fusion qu’une fois cette configuration de Conversation Insights terminée, tous les jeux de données sont disponibles et vous disposez des autorisations Customer Journey Analytics pour modifier les connexions."
 >additional-url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/technotes/access-control" text="Contrôle d’accès"
 
 
 >[!CONTEXTUALHELP]
 >id="conversationinsights_dataset_winner"
->title="Gagnant du jeu de données"
->abstract="Sélectionnez le jeu de données qui détermine la valeur du ou des champs nommés de manière correspondante (s’il s’agit d’un conteneur) dans le jeu de données de conversation mixte."
+>title="Jeu de données gagnant"
+>abstract="Sélectionnez le jeu de données qui détermine la valeur du ou des champs nommés de manière correspondante (s’il s’agit d’un conteneur) dans le jeu de données de conversation fusionné."
 
-Une fois la configuration créée, vous pouvez configurer [la manière dont les conversations des jeux de données d’invites, de réponses, de commentaires et de signaux sont mélangées](/help/conversation-insights/overview.md#how-it-works).
+Une fois que vous avez créé une configuration, vous pouvez configurer [la manière dont les conversations des jeux de données d’invites, de réponses, de commentaires et de signaux sont combinées](/help/conversation-insights/overview.md#how-it-works).
 
 Cette spécification vous permet de sélectionner le jeu de données qui détermine la valeur du ou des champs nommés de manière correspondante (s’il s’agit d’un conteneur) dans le jeu de données de conversation mixte.
 
@@ -157,31 +157,31 @@ Pour spécifier la conversation fusionnée :
 
 1. Sélectionnez **[!UICONTROL Configurer la spécification de fusion]**.
 
-1. Dans la boîte de dialogue **[!UICONTROL Spécification de fusion]**, pour chaque **[!UICONTROL Nom du champ]**, passez en revue le **[!UICONTROL Gagnant du jeu de données]** suggéré et sélectionnez éventuellement un autre jeu de données.
+1. Dans la boîte de dialogue **[!UICONTROL Spécification de fusion]**, pour chaque **[!UICONTROL Nom de champ]**, passez en revue le **[!UICONTROL gagnant du jeu de données]** suggéré et sélectionnez éventuellement un autre jeu de données.
 
-   * Pour chaque champ activé, vous pouvez éventuellement sélectionner un autre **[!UICONTROL gagnant du jeu de données]**. Vous pouvez choisir entre **[!UICONTROL Jeu de données d’invites]**, **[!UICONTROL Jeu de données de réponses]** et **[!UICONTROL Jeu de données de commentaires]**.
+   * Pour chaque champ activé, sélectionnez éventuellement un autre **[!UICONTROL gagnant du jeu de données]**. Vous pouvez choisir entre **[!UICONTROL Jeu de données d’invites]**, **[!UICONTROL Jeu de données de réponses]** et **[!UICONTROL Jeu de données de commentaires]**.
    * Pour chaque champ de conteneur, vous pouvez éventuellement sélectionner un autre **[!UICONTROL gagnant du jeu de données]** pour mettre à jour tous les champs appartenant au conteneur. Vous pouvez choisir entre **[!UICONTROL Jeu de données d’invites]**, **[!UICONTROL Jeu de données de réponses]** et **[!UICONTROL Jeu de données de commentaires]**.
    * Vous ne pouvez pas sélectionner de **[!UICONTROL gagnant du jeu de données]** pour les champs partagés entre les jeux de données de conversation (invites, réponses, commentaires et signaux). Ces champs font partie des groupes de champs suivants :
 
-     | Nom du champ | Groupe de champs | Gagnant du jeu de données |
+     | Nom du champ | Groupe de champs | Jeu de données gagnant |
      |---|---|---|
-     | **[!UICONTROL invite]** | `conversation.prompt.*` | **[!UICONTROL Invite le jeu de données]** |
+     | **[!UICONTROL invite]** | `conversation.prompt.*` | **[!UICONTROL Jeu de données des invites]** |
      | **[!UICONTROL response]** | `conversation.response.*` | **[!UICONTROL Jeu de données de réponses]** |
      | **[!UICONTROL commentaires]** | `conversation.feedback.*` | **[!UICONTROL Jeu de données de commentaires]** |
      | **[!UICONTROL agentExperience]** | `agentExperience.*` | **[!UICONTROL Jeu de données de réponses]** |
      | **[!UICONTROL signaux]** | `conversation.signals.*` | **[!UICONTROL Jeu de données de signaux]** |
 
-   * Aucune sélection **[!UICONTROL gagnant du jeu de données]** n’est disponible pour les champs d’identité spécifiques, tels que **[!UICONTROL ID de conversation]** ou **[!UICONTROL ID de tour]**.
+   * Aucune sélection de **[!UICONTROL gagnant du jeu de données]** n’est disponible pour des champs d’identité spécifiques, tels que **[!UICONTROL ID de conversation]** ou **[!UICONTROL ID de tour]**.
 
 1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer la spécification. Sélectionnez **[!UICONTROL Annuler]** pour annuler la spécification.
 
 ## Vérification de la vue de données
 
-Les vues de données que vous avez configurées dans [Étapes de configuration](#configuration-steps) ont **[!UICONTROL Informations sur la conversation]** comme valeur pour **[!UICONTROL Intégrations]** dans [Vues de données](/help/data-views/manage-dataviews.md).
+Les vues de données que vous avez configurées aux [étapes de configuration](#configuration-steps) ont **[!UICONTROL Insights de conversation]** comme valeur pour les **[!UICONTROL intégrations]** dans les [vues de données](/help/data-views/manage-dataviews.md).
 
 Pour chacune des vues de données configurées :
 
-* **Conteneurs** : l’onglet [Conteneurs](/help/data-views/create-dataview.md#containers) contient un nouveau **[!UICONTROL Nom du conteneur]** : **[!UICONTROL conversation]** avec **[!UICONTROL Nom d’affichage]**: **[!UICONTROL Container]** comme **[!UICONTROL Système]** Type de conteneur **&#x200B;**&#x200B;supplémentaire.
+* **Conteneurs** : l’onglet [Conteneurs](/help/data-views/create-dataview.md#containers) contient un nouveau **[!UICONTROL nom de conteneur]** : **[!UICONTROL conversation]** avec **[!UICONTROL nom d’affichage]** : **[!UICONTROL Conteneur]** en tant que **[!UICONTROL système]** **[!UICONTROL type de conteneur]** supplémentaire.
 * **Composants** : d’autres dossiers de champs de schéma s’affichent. Par exemple : agentExperience et conversation. En outre, les composants suivants sont automatiquement ajoutés :
 
   | Mesures | Type de données de schéma | Chemin du schéma |

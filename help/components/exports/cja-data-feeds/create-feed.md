@@ -29,7 +29,7 @@ topic_v2:
 source-git-commit: 6db3ace5744a4277477c2a712c12fdd9a5f57c82
 workflow-type: tm+mt
 source-wordcount: '4331'
-ht-degree: 12%
+ht-degree: 14%
 ---
 # Créer un flux de données
 
@@ -101,7 +101,7 @@ Avant de créer un flux de données, il est important de comprendre les bases de
 
 1. Sélectionnez [!UICONTROL **Suivant**].
 
-1. Dans l’onglet [!UICONTROL **Structure de données**], assurez-vous que la vue de données appropriée est sélectionnée dans le champ **[!UICONTROL Vue de données]**.
+1. Dans l’onglet [!UICONTROL **Structure de données**], vérifiez que la vue de données appropriée est sélectionnée dans le champ **[!UICONTROL Vue de données]**.
 
    <!--add screenshot-->
 
@@ -111,23 +111,23 @@ Avant de créer un flux de données, il est important de comprendre les bases de
 
    Les segments que vous appliquez ici s’ajoutent aux segments qui peuvent déjà être appliqués dans votre vue de données.
 
-1. (Facultatif) Dans le rail de gauche, utilisez le champ **rechercher** pour localiser des composants spécifiques. Vous pouvez également sélectionner l’icône **Trier** ![Icône Trier les composants](/help/assets/icons/SortOrderDown.svg) pour appliquer l’une des options de tri suivantes :
+1. (Facultatif) Dans le rail de gauche, utilisez le champ **rechercher** pour localiser des composants spécifiques. Ou sélectionnez l’icône **Trier** ![Icône Trier les composants](/help/assets/icons/SortOrderDown.svg) pour appliquer l’une des options de tri suivantes :
 
    | Option | Fonction |
    | --------- | ---------- |
    | [!UICONTROL **Recommandé**] | Trie les composants avec ceux qui sont recommandés en haut de la liste. Les composants utilisés le plus souvent et le plus récemment par vous ou par d’autres membres de votre organisation sont répertoriés plus haut dans la liste. |
    | [!UICONTROL **Alphabétique**] | Trie les composants par ordre alphabétique. |
-   | [!UICONTROL **Catégorique**] | Trie les composants de la même manière que la mention [!UICONTROL **Recommandé**], à la différence que les composants sont regroupés séparément au lieu d’être mélangés. |
+   | [!UICONTROL **Catégorique**] | Trie les composants similaires à [!UICONTROL **Recommandé**], sauf que les composants sont regroupés séparément au lieu d’être mélangés. |
 
 1. Ajoutez des composants à la configuration des flux de données. Le rail de gauche affiche uniquement les composants valides pour les flux de données.
 
    * **Glisser-déposer** : faites glisser des composants du rail de gauche vers la zone de travail. Maintenez la touche **[!UICONTROL Maj]** ou **[!UICONTROL Commande]** (macOS) ou **[!UICONTROL Ctrl]** (Windows) enfoncée pour sélectionner plusieurs composants et les faire glisser simultanément.
-   * **Bouton Plus** : sélectionnez l’icône Plus ![Ajouter](/help/assets/icons/Add.svg) en regard de n’importe quel composant dans le rail de gauche pour l’ajouter à la zone de travail.
-   * **[!UICONTROL Tout afficher]** : sélectionnez **[!UICONTROL Tout afficher]** au bas de la liste des composants pour ouvrir une boîte de dialogue affichant tous les composants disponibles. Cochez la case en regard de chaque composant à ajouter, puis sélectionnez **[!UICONTROL Ajouter la sélection]**. Lorsqu’un terme de recherche ou une balise de filtre est actif dans le rail de gauche, un bouton **[!UICONTROL Ajouter tout]** s’affiche également pour vous permettre d’ajouter tous les résultats filtrés en même temps.
+   * Bouton **Plus** : sélectionnez l’icône Plus ![Ajouter](/help/assets/icons/Add.svg) en regard de n’importe quel composant dans le rail de gauche pour l’ajouter à la zone de travail.
+   * **[!UICONTROL Tout afficher]** : sélectionnez **[!UICONTROL Tout afficher]** en bas de la liste des composants pour ouvrir une boîte de dialogue affichant tous les composants disponibles. Cochez la case en regard de chaque composant à ajouter, puis sélectionnez **[!UICONTROL Ajouter la sélection]**. Lorsqu’un terme de recherche ou une balise de filtre est actif dans le rail de gauche, un bouton **[!UICONTROL Ajouter tout]** s’affiche également, vous permettant d’ajouter tous les résultats filtrés en même temps.
 
    Tenez compte des points suivants lors de l’ajout de champs :
 
-   * Certains composants sont obligatoires, ne sont pas pris en charge ou présentent des restrictions dans les flux de données. Pour plus d’informations, voir [Disponibilité des composants dans les flux de données](/help/components/exports/cja-data-feeds/df-components.md).
+   * Certains composants sont obligatoires, ne sont pas pris en charge ou présentent des restrictions dans les flux de données. Pour plus d’informations, consultez [Disponibilité des composants dans les flux de données](/help/components/exports/cja-data-feeds/df-components.md).
 
    * Lorsque vous ajoutez un composant qui appartient à un champ de tableau XDM (par exemple, un champ de proposition Adobe Journey Optimizer) ou un champ de mappage, une boîte de dialogue vous invite à ajouter tout autre composant du même sous-événement. Dans la sortie du flux de données, tous ces composants apparaissent dans une seule colonne. Pour plus d’informations, voir [Composants de sous-événement dans les flux de données](/help/components/exports/cja-data-feeds/df-sub-event.md)
 
@@ -144,7 +144,7 @@ Avant de créer un flux de données, il est important de comprendre les bases de
    Les identifiants de sortie doivent :
 
    * Être unique dans le flux de données.
-   * Contiennent uniquement des lettres, des chiffres et des traits de soulignement (`_`). Les espaces, points (`.`), tirets (`-`), barres obliques (`/`) et autres caractères spéciaux ne sont pas autorisés.
+   * Contient uniquement des lettres, des chiffres et des traits de soulignement (`_`). Les espaces, points (`.`), tirets (`-`), barres obliques (`/`) et autres caractères spéciaux ne sont pas autorisés.
    * Commencez par une lettre ou un trait de soulignement.
    * Doit comporter 255 caractères ou moins.
 
@@ -154,9 +154,9 @@ Avant de créer un flux de données, il est important de comprendre les bases de
 
    +++ Pour modifier l’identifiant de sortie d’un seul composant
 
-   1. Pointez sur un composant sur la zone de travail, puis sélectionnez l’icône d’information ![Infos](/help/assets/icons/InfoOutline.svg).
+   1. Pointez sur un composant sur la zone de travail, puis sélectionnez l’icône d’informations ![Info](/help/assets/icons/InfoOutline.svg).
 
-   1. Sélectionnez l’icône Modifier ![Modifier](/help/assets/icons/Edit.svg) en regard de l’identifiant, puis spécifiez un nouvel identifiant de sortie.
+   1. Sélectionnez l’icône de modification ![Modifier](/help/assets/icons/Edit.svg) en regard de l’ID, puis spécifiez un nouvel ID de sortie.
 
       <!--add screenshot-->
 
@@ -168,11 +168,11 @@ Avant de créer un flux de données, il est important de comprendre les bases de
 
    1. Sélectionnez **[!UICONTROL Copier]**, puis collez le fichier JSON dans un éditeur de texte ou un autre outil.
 
-   1. Mettez à jour les valeurs `id`, qui sont les identifiants de sortie. Vous ne pouvez pas modifier les noms (`name`) ou les types (`type` et `dataType`) des composants.
+   1. Mettez à jour les valeurs `id`, qui sont les identifiants de sortie. Vous ne pouvez pas modifier les noms (`name`) ou les types de composants (`type` et `dataType`).
 
-   1. Collez à nouveau le fichier JSON modifié dans la boîte de dialogue, en remplaçant le fichier JSON existant, puis sélectionnez **[!UICONTROL Valider]**.
+   1. Collez à nouveau le JSON modifié dans la boîte de dialogue, en remplaçant le JSON existant, puis sélectionnez **[!UICONTROL Valider]**.
 
-   1. Vérifiez le nombre d’identifiants modifiés, inchangés et erronés. S’il existe des erreurs, sélectionnez **[!UICONTROL Précédent]** pour les corriger.
+   1. Vérifiez le nombre d’identifiants modifiés, inchangés et erronés. S&#39;il y a des erreurs, sélectionnez **[!UICONTROL Précédent]** pour les corriger.
 
    1. Sélectionnez **[!UICONTROL Appliquer les modifications]**.
 
@@ -180,15 +180,15 @@ Avant de créer un flux de données, il est important de comprendre les bases de
 
    +++
 
-1. (Facultatif) Utilisez les panneaux **[!UICONTROL Résumé du flux]** et **[!UICONTROL Aperçu du schéma]** sur le côté droit de la page pour passer en revue votre structure de données avant de continuer :
+1. (Facultatif) Utilisez les panneaux **[!UICONTROL Résumé des flux]** et **[!UICONTROL Aperçu du schéma]** sur le côté droit de la page pour vérifier votre structure de données avant de continuer :
 
    * Le **[!UICONTROL résumé des flux]** affiche un nombre réel de composants, colonnes, dimensions et mesures que vous avez ajoutés.
-   * L’**[!UICONTROL aperçu du schéma]** affiche une représentation JSON du schéma de flux de données qui se met à jour au fur et à mesure que vous ajoutez ou réorganisez des composants.
+   * L’aperçu du **[!UICONTROL schéma]** affiche une représentation JSON du schéma de flux de données qui se met à jour au fur et à mesure que vous ajoutez ou réorganisez des composants.
    * Le bouton **[!UICONTROL Exemples de lignes]** ouvre une boîte de dialogue qui affiche des exemples de lignes de sortie afin que vous puissiez vérifier que la structure semble correcte. Cette boîte de dialogue affiche uniquement des exemples de données et ne reflète pas vos données réelles.
 
    <!--add screenshot-->
 
-1. Sous l’onglet [!UICONTROL **Diffusion**], dans la section [!UICONTROL **Planning**], choisissez le type de flux que vous souhaitez créer (actif ou de renvoi), puis spécifiez la fréquence, le délai de traitement et d’autres options de configuration :
+1. Dans l’onglet [!UICONTROL **Diffusion**], dans la section [!UICONTROL **Planifier**], choisissez le type de flux que vous souhaitez créer (actif ou de renvoi), puis spécifiez la fréquence, le délai de traitement et d’autres options de configuration :
 
    <!--add screenshot-->
 
@@ -198,12 +198,12 @@ Avant de créer un flux de données, il est important de comprendre les bases de
    | [!UICONTROL **Date de début**] | Date de début du flux de données. Pour les flux en direct, il doit s’agir d’aujourd’hui ou d’une date ultérieure. Pour les flux de renvoi, il doit s’agir d’une date passée dans la fenêtre de conservation des données de la vue de données. La date de début est basée sur le fuseau horaire de la vue de données. |
    | [!UICONTROL **Date d’expiration**] <br/>Disponible uniquement pour les flux en direct | Date à laquelle le flux de données expire et ne s’exécute plus. La date est basée sur le fuseau horaire de la vue de données. |
    | [!UICONTROL **Date de fin**]<br/> Disponible uniquement pour les flux de renvoi | Date de fin du flux de données. La date de fin ne peut pas être dans le futur. La date est basée sur le fuseau horaire de la vue de données. |
-   | [!UICONTROL **Fréquence**]<br/> Disponible uniquement pour les flux en direct | Sélectionnez la fréquence d’envoi du flux de données. Les événements dont la date et l’heure se trouvent dans la fenêtre de fréquence sont inclus dans la diffusion du flux de données. <p>Sélectionnez cette option pour inclure l’équivalent d’une heure de données ou d’un jour de données.</p><ul><li>**Quotidien** : les flux contiennent l’équivalent d’une journée complète de données, de minuit à minuit dans le fuseau horaire de la vue de données.</li><li>**Par heure** : les flux contiennent l’équivalent d’une heure de données.</li></ul> <p>Chaque diffusion utilise également une fenêtre de traitement progressive de 30 jours, précédant la fenêtre de fréquence incluse, pour qualifier les segments, calculer les sessions et conserver les valeurs de dimension. La fenêtre de traitement et le paramètre [!UICONTROL **Délai de traitement**] peuvent tous deux affecter les événements inclus. Pour plus d’informations, voir [Présentation de la fenêtre de traitement](#data-feed-processing-window) et [Présentation du délai de traitement](#data-feed-processing-delay).</p> |
+   | [!UICONTROL **Fréquence**]<br/> Disponible uniquement pour les flux en direct | Sélectionnez la fréquence d’envoi du flux de données. Les événements dont la date et l’heure se trouvent dans la fenêtre de fréquence sont inclus dans la diffusion du flux de données. <p>Sélectionnez cette option pour inclure l’équivalent d’une heure de données ou d’un jour de données.</p><ul><li>**Quotidien** : les flux contiennent l’équivalent d’une journée complète de données, de minuit à minuit dans le fuseau horaire de la vue de données.</li><li>**Par heure** : les flux contiennent l’équivalent d’une heure de données.</li></ul> <p>Chaque diffusion utilise également une fenêtre de traitement progressive de 30 jours, précédant la fenêtre de fréquence incluse, pour qualifier les segments, calculer les sessions et conserver les valeurs de dimension. La fenêtre de traitement et le paramètre [!UICONTROL **Délai de traitement**] peuvent tous deux affecter les événements inclus. Pour plus d’informations, voir [Comprendre la fenêtre de traitement](#data-feed-processing-window) et [Comprendre le délai de traitement](#data-feed-processing-delay).</p> |
    | [!UICONTROL **Granularité**]<br/> Disponible uniquement pour les flux de renvoi | Intervalle de temps utilisé pour diviser les données historiques en blocs. Chaque bloc contient l’équivalent d’une journée complète de données, de minuit à minuit dans le fuseau horaire de la vue de données. <p>La granularité détermine la manière dont les données sont regroupées, et non la fréquence de diffusion. Les données de renvoi sont diffusées le plus rapidement possible, et non une fois par jour.</p><p>Ce champ est toujours défini sur [!UICONTROL **Quotidien**] et ne peut pas être modifié.</p> |
-   | [!UICONTROL **Délai de traitement**] | Temps d’attente de Customer Journey Analytics avant de traiter un fichier de flux de données. Tous les événements tardifs qui arrivent pendant le délai de traitement sont inclus dans le flux de données. <p>Choisissez un délai suffisant pour que les données les plus lentes de votre connexion terminent le traitement. Si le délai est trop court, les données en cours de traitement ne sont pas incluses dans le fichier de flux de données.</p><p>Le délai de traitement minimal est de 2 heures. La valeur par défaut est basée sur les jeux de données de votre connexion. Par exemple, si le groupement est activé, la valeur par défaut est de 6 heures. Certains types de données nécessitent un délai plus long. Le délai que vous choisissez dépend des types de données de votre connexion, telles que les données de diffusion en continu, par lots, groupées, de recherche ou de profil.</p><p>Avant de configurer cette option, consultez les détails et les exemples décrits dans la section ci-dessous, [Comprendre le délai de traitement](#data-feed-processing-delay).</p> |
-   | [!UICONTROL **Format de compression**] | Sélectionnez le format de compression des fichiers de sortie Parquet diffusés vers votre destination cloud. Choisissez l’un des formats suivants :<ul><li>[!UICONTROL **Snappy**] : compression et décompression rapides avec des tailles de fichier modérées. Largement pris en charge par les plateformes de données modernes telles que BigQuery, Snowflake et Apache Spark.</li><li>[!UICONTROL **GZip**] : largement compatible, y compris avec les outils qui ne prennent pas en charge Snappy en mode natif. Recommandé si votre pipeline en aval nécessite une norme de compression largement reconnue.</li><li>[!UICONTROL **Z Standard (Zstd)**] : Efficacité de compression élevée avec décompression rapide. Convient si la réduction de la taille du fichier est une priorité et que vos outils prennent en charge Zstd.</li></ul><p>Tous les formats compressent les données à l’intérieur de chaque fichier Parquet, une colonne à la fois, de sorte que votre entrepôt de données peut toujours lire uniquement les colonnes dont une requête a besoin.</p><p>Pour plus d’informations sur les avantages de Parquet et sur la manière d’interroger ou de charger les fichiers après leur diffusion, voir [&#x200B; Utilisation de fichiers Parquet dans les flux de données &#x200B;](/help/components/exports/cja-data-feeds/df-parquet.md).</p> |
+   | [!UICONTROL **Délai de traitement**] | Temps d’attente de Customer Journey Analytics avant de traiter un fichier de flux de données. Tous les événements tardifs qui arrivent pendant le délai de traitement sont inclus dans le flux de données. <p>Choisissez un délai suffisant pour que les données les plus lentes de votre connexion terminent le traitement. Si le délai est trop court, les données en cours de traitement ne sont pas incluses dans le fichier de flux de données.</p><p>Le délai de traitement minimal est de 2 heures. La valeur par défaut est basée sur les jeux de données de votre connexion. Par exemple, si le groupement est activé, la valeur par défaut est de 6 heures. Certains types de données nécessitent un délai plus long. Le délai que vous choisissez dépend des types de données de votre connexion, telles que les données de diffusion en continu, par lots, groupées, de recherche ou de profil.</p><p>Avant de configurer cette option, consultez les détails et les exemples décrits dans la section ci-dessous, [Comprenez le délai de traitement](#data-feed-processing-delay).</p> |
+   | [!UICONTROL **Format de compression**] | Sélectionnez le format de compression des fichiers de sortie Parquet diffusés vers votre destination cloud. Choisissez l’un des formats suivants :<ul><li>[!UICONTROL **Snappy**] : compression et décompression rapides avec des tailles de fichier modérées. Largement pris en charge par les plateformes de données modernes telles que BigQuery, Snowflake et Apache Spark.</li><li>[!UICONTROL **GZip**] : largement compatible, y compris avec les outils qui ne prennent pas en charge Snappy en mode natif. Recommandé si votre pipeline en aval nécessite une norme de compression largement reconnue.</li><li>[!UICONTROL **Z Standard (Zstd)**] : Efficacité de compression élevée avec décompression rapide. Convient si la réduction de la taille du fichier est une priorité et que vos outils prennent en charge Zstd.</li></ul><p>Tous les formats compressent les données à l’intérieur de chaque fichier Parquet, une colonne à la fois, de sorte que votre entrepôt de données peut toujours lire uniquement les colonnes dont une requête a besoin.</p><p>Pour plus d&#39;informations sur les avantages de Parquet et sur la manière d&#39;interroger ou de charger les fichiers après leur diffusion, consultez [Utilisation des fichiers Parquet dans les flux de données](/help/components/exports/cja-data-feeds/df-parquet.md).</p> |
 
-1. Sous l’onglet [!UICONTROL **Diffusion**], dans la section [!UICONTROL **Destination**], configurez la destination vers laquelle vous souhaitez envoyer les données.
+1. Dans l’onglet [!UICONTROL **Diffusion**], dans la section [!UICONTROL **Destination**], configurez la destination vers laquelle vous souhaitez envoyer les données.
 
    >[!NOTE]
    >
@@ -214,29 +214,29 @@ Avant de créer un flux de données, il est important de comprendre les bases de
    >
    >* Les comptes cloud sont associés à votre compte utilisateur Customer Journey Analytics. Les autres utilisateurs ne peuvent pas utiliser ni afficher les comptes cloud que vous configurez, sauf si vous les rendez disponibles pour tous les utilisateurs de votre organisation.
    >
-   >* Vous pouvez modifier les emplacements que vous créez à partir du gestionnaire d’emplacements dans [Composants > Exportations > Emplacements](/help/components/exports/cloud-export-locations.md).
+   >* Vous pouvez modifier tous les emplacements que vous créez à partir du gestionnaire d’emplacements dans [Composants > Exportations > Emplacements](/help/components/exports/cloud-export-locations.md).
 
    Renseignez les champs suivants :
 
    | Champ | Fonction |
    |---------|----------|
    | [!UICONTROL **Afficher les destinations pour tous les utilisateurs**] | Si vous êtes un administrateur ou une administratrice système, vous pouvez activer cette option pour afficher les destinations créées par tous les utilisateurs et utilisatrices de votre organisation. Lorsque cette option est désactivée, seules les destinations que vous avez créées s’affichent. |
-   | [!UICONTROL **Compte**] | Effectuez l’une des opérations suivantes :<ul><li>**Utiliser un compte existant :** sélectionnez le menu déroulant en regard du champ **[!UICONTROL Compte]**. Vous pouvez également commencer à saisir le nom du compte, puis le sélectionner dans le menu déroulant. <p>Vous ne pouvez accéder aux comptes que si vous les avez configurés ou s’ils sont partagés avec une organisation dont vous faites partie.</p></li><li>**Créer un compte :** sélectionnez **[!UICONTROL Ajouter un compte]** dans le menu **[!UICONTROL Compte]**. Pour plus d’informations sur la configuration du compte, voir [Configuration des comptes d’exportation dans le cloud](/help/components/exports/cloud-export-accounts.md).</li></ul> |
-   | [!UICONTROL **Emplacement**] | Effectuez l’une des opérations suivantes :<ul><li>**Utiliser un emplacement existant :** sélectionnez le menu déroulant en regard du champ **[!UICONTROL Emplacement]**. Vous pouvez également commencer à saisir le nom de l’emplacement, puis le sélectionner dans le menu déroulant.</li><li>**Créer un emplacement :** sélectionnez **[!UICONTROL Ajouter un emplacement]** dans le menu **[!UICONTROL Emplacement]**. Pour plus d’informations sur la configuration de l’emplacement, voir [Configuration des emplacements d’exportation dans le cloud](/help/components/exports/cloud-export-locations.md).</li></ul> |
-   | [!UICONTROL **Remplacer le chemin d’accès ou le nom de fichier par défaut**] | Activez cette option pour remplacer le chemin d’accès ou le nom de fichier par défaut défini pour l’emplacement sélectionné. Le remplacement s’applique uniquement à ce flux de données et détermine où les fichiers de flux de données sont envoyés.<p>Lorsque cette option est activée, le champ [!UICONTROL **Chemin d’accès ou nom de fichier**] s’affiche.</p> |
-   | [!UICONTROL **Chemin ou nom de fichier**]<br/> Disponible uniquement lorsque [!UICONTROL **Remplacer le chemin ou le nom de fichier par défaut**] est activé | Indiquez un chemin d’accès ou un nom de fichier (ou les deux) pour déterminer où les fichiers sont envoyés à l’emplacement sélectionné. Pour enregistrer des fichiers dans le dossier de niveau supérieur de l’emplacement, spécifiez `/`.<p>Pour les flux en direct, vous pouvez utiliser l’une des variables suivantes pour rendre le chemin d’accès ou le nom de fichier dynamique :</p><ul><li>**{yyyy}** : année civile à 4 chiffres (sensible à la casse)</li><li>**{yy}** : année civile à 2 chiffres (sensible à la casse)</li><li>**{MM}** : mois à 2 chiffres (sensible à la casse)</li><li>**{dd}** : jour à 2 chiffres (sensible à la casse)</li><li>**{HH}** : heure à 2 chiffres (sensible à la casse)</li><li>**{mm}** : minutes à 2 chiffres (sensible à la casse)</li><li>**{ss}** : secondes à 2 chiffres (sensible à la casse)</li><li>**{fff}** : nanosecondes à 3 chiffres (sensible à la casse)</li><li>**{instance_id}** : UUID de requête (instance)</li><li>**{export_id}** : UUID de l&#39;export (planning)</li><li>**{idx}** : index démarré à partir de 0 (incrémenté pour chaque fichier)</li><li>**{total}** : nombre total de fichiers pour l&#39;ensemble de la tâche de transfert</li><li>**{completion_millis}** : heure de transfert en millisecondes</li></ul><p>Par exemple, si vous spécifiez `${yyyy}/${MM}/${dd}/my-feed-${instance_id}-${idx}`, un flux dynamique diffusé le 15 janvier 2027 aura le chemin et le nom de fichier suivants : `[prefix_folder_name]/2027/01/15/my-feed-[UUID]-1.parquet`</p> |
-   | [!UICONTROL **Notifier des problèmes, une fois l’opération terminée et lors de l’expiration**] | Indiquez une ou plusieurs adresses e-mail auxquelles une notification doit être envoyée lorsque le flux de données est terminé, arrive à expiration ou rencontre des problèmes. Séparez plusieurs adresses e-mail par une virgule. |
+   | [!UICONTROL **Compte**] | Effectuez l’une des opérations suivantes :<ul><li>**Utiliser un compte existant :** Sélectionnez le menu déroulant en regard du champ **[!UICONTROL Compte]**. Vous pouvez également commencer à saisir le nom du compte, puis le sélectionner dans le menu déroulant. <p>Vous ne pouvez accéder aux comptes que si vous les avez configurés ou s’ils sont partagés avec une organisation dont vous faites partie.</p></li><li>**Créer un compte :** Sélectionnez **[!UICONTROL Ajouter un compte]** dans le menu déroulant **[!UICONTROL Compte]**. Pour plus d’informations sur la configuration du compte, voir [Configuration des comptes d’exportation dans le cloud](/help/components/exports/cloud-export-accounts.md).</li></ul> |
+   | [!UICONTROL **Emplacement**] | Effectuez l’une des opérations suivantes :<ul><li>**Utiliser un emplacement existant :** Sélectionnez le menu déroulant en regard du champ **[!UICONTROL Emplacement]**. Vous pouvez également commencer à saisir le nom de l’emplacement, puis le sélectionner dans le menu déroulant.</li><li>**Créez un emplacement :** Sélectionnez **[!UICONTROL Ajouter un emplacement]** dans le menu déroulant **[!UICONTROL Emplacement]**. Pour plus d’informations sur la configuration de l’emplacement, consultez [Configuration des emplacements d’exportation dans le cloud](/help/components/exports/cloud-export-locations.md).</li></ul> |
+   | [!UICONTROL **Remplacer le chemin d&#39;accès ou le nom de fichier par défaut**] | Activez cette option pour remplacer le chemin d’accès ou le nom de fichier par défaut défini pour l’emplacement sélectionné. Le remplacement s’applique uniquement à ce flux de données et détermine où les fichiers de flux de données sont envoyés.<p>Lorsque cette option est activée, le champ [!UICONTROL **Chemin d&#39;accès ou nom de fichier**] s&#39;affiche.</p> |
+   | [!UICONTROL **Chemin ou nom de fichier**]<br/> Disponible uniquement lorsque [!UICONTROL **Remplacer le chemin ou le nom de fichier par défaut**] est activé | Indiquez un chemin d’accès ou un nom de fichier (ou les deux) pour déterminer où les fichiers sont envoyés au sein de l’emplacement sélectionné. Pour enregistrer des fichiers dans le dossier de niveau supérieur de l’emplacement, spécifiez `/`.<p>Pour les flux en direct, vous pouvez utiliser l’une des variables suivantes pour rendre le chemin d’accès ou le nom de fichier dynamique :</p><ul><li>**{yyyy}** : année civile à 4 chiffres (sensible à la casse)</li><li>**{yy}** : année civile à 2 chiffres (sensible à la casse)</li><li>**{MM}** : mois à 2 chiffres (sensible à la casse)</li><li>**{dd}** : jour à 2 chiffres (sensible à la casse)</li><li>**{HH}** : heure à 2 chiffres (sensible à la casse)</li><li>**{mm}** : minutes à 2 chiffres (sensible à la casse)</li><li>**{ss}** : secondes à 2 chiffres (sensible à la casse)</li><li>**{fff}** : nanosecondes à 3 chiffres (sensible à la casse)</li><li>**{instance_id}** : UUID de requête (instance)</li><li>**{export_id}** : UUID de l&#39;export (planning)</li><li>**{idx}** : début de l’index à partir de 0 (incrémenté pour chaque fichier)</li><li>**{total}** : nombre total de fichiers pour l&#39;ensemble de la tâche de transfert</li><li>**{completion_millis}** : heure de transfert en millisecondes</li></ul><p>Par exemple, si vous spécifiez `${yyyy}/${MM}/${dd}/my-feed-${instance_id}-${idx}`, un flux dynamique diffusé le 15 janvier 2027 aura le chemin et le nom de fichier suivants : `[prefix_folder_name]/2027/01/15/my-feed-[UUID]-1.parquet`</p> |
+   | [!UICONTROL **Notifier les problèmes, une fois l&#39;opération terminée et lors de l&#39;expiration**] | Indiquez une ou plusieurs adresses e-mail auxquelles une notification doit être envoyée lorsque le flux de données est terminé, arrive à expiration ou rencontre des problèmes. Séparez plusieurs adresses e-mail par une virgule. |
    | [!UICONTROL **Activer le manifeste**] | Choisissez d’inclure un fichier manifeste avec chaque diffusion de flux de données. Le fichier manifeste contient des informations pour chaque fichier inclus dans le flux de données. |
 
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
 
 ## Présentation de la fenêtre de traitement {#data-feed-processing-window}
 
-La **fenêtre de traitement** est une période variable de 30 jours qui précède et inclut la fenêtre de fréquence (heure ou jour) sélectionnée. Customer Journey Analytics utilise les données de la fenêtre de traitement pour traiter chaque diffusion de flux de données. La fenêtre de traitement est toujours de 30 jours et ne peut pas être modifiée.
+La **fenêtre de traitement** est une période glissante de 30 jours qui précède et inclut la fenêtre de fréquence (heure ou jour) sélectionnée. Customer Journey Analytics utilise les données de la fenêtre de traitement pour traiter chaque diffusion de flux de données. La fenêtre de traitement est toujours de 30 jours et ne peut pas être modifiée.
 
 La fenêtre de fréquence détermine les événements inclus dans la diffusion. La fenêtre de traitement fournit le contexte historique nécessaire pour classer correctement ces événements, par exemple les segments pour lesquels ils sont qualifiés, la session à laquelle ils appartiennent et les valeurs de dimension qui leur persistent.
 
-La fenêtre de traitement, ainsi que la fenêtre de fréquence, fonctionnent de la même manière que la fenêtre de création de rapports d’Analysis Workspace. Cependant, il existe [des différences majeures](/help/components/exports/cja-data-feeds/df-comparison-workspace.md#processing-window). Ces différences peuvent entraîner des incohérences de données entre les rapports Workspace et les diffusions de flux de données.
+La fenêtre de traitement, ainsi que la fenêtre de fréquence, fonctionnent de la même manière que la fenêtre de création de rapports d’Analysis Workspace. Cependant, il existe [différences clés](/help/components/exports/cja-data-feeds/df-comparison-workspace.md#processing-window). Ces différences peuvent entraîner des incohérences de données entre les rapports Workspace et les diffusions de flux de données.
 
 La qualification des segments, le calcul des sessions, la persistance des dimensions et les transformations de champs dérivés sont chacun pris en compte lors du traitement des données dans la fenêtre de traitement :
 
@@ -250,14 +250,14 @@ Lorsqu’un segment est appliqué à votre définition de flux de données, les 
 
 Supposons que vous souhaitiez créer un flux de données pour comprendre le comportement des utilisateurs qui font partie d’une campagne marketing spécifique, la campagne B.
 
-Pour ce faire, appliquez un segment au flux de données appelé _Utilisateurs dans la campagne B_, en indiquant que seuls les événements liés aux utilisateurs de ce segment doivent être inclus dans le flux de données.
+Pour ce faire, appliquez un segment au flux de données appelé _Utilisateurs dans Campaign B_, ce qui indique que seuls les événements liés aux utilisateurs de ce segment doivent être inclus dans le flux de données.
 
-Dans ce cas, les utilisateurs ne sont inclus dans le flux de données que s’ils remplissent **les deux** les conditions suivantes :
+Dans ce cas, les utilisateurs ne sont inclus dans le flux de données que s&#39;ils remplissent **les deux** conditions suivantes :
 
 * L’utilisateur a eu un événement dont la date et l’heure se trouvent dans la fenêtre de fréquence du flux de données (l’heure ou le jour donné du flux de données).
-* L’utilisateur s’est qualifié pour le segment _Campaign B_ **parfois dans la fenêtre de traitement**.
+* L’utilisateur s’est qualifié pour le segment _Campaign B_ **à un moment donné dans la fenêtre de traitement**.
 
-  Par exemple, un utilisateur qualifié pour le segment 9 jours auparavant **est inclus** dans le flux de données. Un utilisateur qualifié pour la dernière fois il y a 45 jours **n’est pas inclus**, car cet événement se situe en dehors de l’intervalle de traitement de 30 jours.
+  Par exemple, un utilisateur qualifié pour le segment il y a 9 jours **est inclus** dans le flux de données. Un utilisateur qualifié pour la dernière fois il y a **45 jours n’est pas inclus**, car cet événement se situe en dehors de l’intervalle de traitement de 30 jours.
 
 >[!ENDSHADEBOX]
 
@@ -290,7 +290,7 @@ La fenêtre de traitement limite la persistance pour chaque paramètre d’expir
 
 * [!UICONTROL **Mesure**] : les valeurs persistent jusqu’à ce que la mesure sélectionnée soit effectuée. Les valeurs définies avant la fenêtre de traitement ne sont pas prises en compte.
 
-Pour plus d’informations sur la définition de la persistance sur les dimensions dans la vue de données, voir [Paramètres des composants de persistance](/help/data-views/component-settings/persistence.md). Pour plus d’informations sur les différences de persistance dans les flux de données par rapport à Analysis Workspace, voir [Comprendre les écarts de données entre les flux de données et Analysis Workspace](/help/components/exports/cja-data-feeds/df-comparison-workspace.md#processing-window).
+Pour plus d’informations sur la définition de la persistance sur les dimensions dans la vue de données, voir [Paramètres des composants de persistance](/help/data-views/component-settings/persistence.md). Pour plus d’informations sur les différences de persistance dans les flux de données par rapport à Analysis Workspace, consultez [Comprendre les écarts de données entre les flux de données et Analysis Workspace](/help/components/exports/cja-data-feeds/df-comparison-workspace.md#processing-window).
 
 >[!BEGINSHADEBOX]
 
@@ -300,11 +300,11 @@ Supposons que dans votre flux de données vous souhaitiez savoir quelle campagne
 
 Pour ce faire, définissez la persistance sur la dimension Campagnes avec Original comme modèle d’affectation et [!UICONTROL **Fenêtre de création de rapports de personne**] comme expiration.
 
-Dans ce cas, la campagne d’origine s’affiche dans la sortie du flux de données uniquement si les utilisateurs et utilisatrices remplissent **les deux** les conditions suivantes :
+Dans ce cas, la campagne d’origine ne s’affiche dans la sortie du flux de données que si les utilisateurs remplissent **les deux** conditions suivantes :
 
 * L’utilisateur a eu un événement dont la date et l’heure se trouvent dans la fenêtre de fréquence du flux de données (l’heure ou le jour donné du flux de données).
 
-* L’utilisateur s’est qualifié pour la campagne d’origine **parfois dans la fenêtre de traitement**.
+* L’utilisateur s’est qualifié pour la campagne d’origine **à un moment donné dans la fenêtre de traitement**.
 
   Si l’utilisateur s’est qualifié pour la campagne d’origine il y a 9 jours, la campagne d’origine **est incluse** dans le flux de données. Si l’utilisateur s’est qualifié il y a 45 jours, la campagne d’origine **n’est pas incluse**, car elle se situe en dehors de l’intervalle de traitement de 30 jours.
 
@@ -321,7 +321,7 @@ Toutes les fonctions de champ dérivé qui font référence à des conteneurs ut
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_processing_delay"
 >title="Délai de traitement"
->abstract="Temps d’attente du système avant de traiter un fichier de flux de données. Tous les événements tardifs qui arrivent pendant le délai sont inclus dans le flux.<p>Le délai de traitement minimal est de 2 heures, mais certains types de données nécessitent plus de temps. Choisissez un délai suffisamment long pour les données les plus lentes de votre connexion. Si le délai de traitement est trop court, certaines données peuvent ne pas être incluses dans le flux.</p>"
+>abstract="Temps d’attente du système avant de traiter un fichier de flux de données. Tous les événements tardifs qui arrivent pendant ce délai sont inclus dans le flux de données.<p>Le délai de traitement minimal est de 2 heures, mais certains types de données nécessitent un délai plus long. Choisissez un délai suffisamment long pour les données les plus lentes de votre connexion. Si le délai de traitement est trop court, certaines données peuvent ne pas être incluses dans le flux.</p>"
 
 <!-- markdownlint-enable MD034 -->
 
