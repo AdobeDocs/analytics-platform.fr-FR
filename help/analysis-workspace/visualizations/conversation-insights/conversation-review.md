@@ -6,7 +6,7 @@ role: User
 source-git-commit: 6b84720eae3c0c6cd6cfd204591fb9d5f1f5cdb0
 workflow-type: tm+mt
 source-wordcount: '193'
-ht-degree: 16%
+ht-degree: 26%
 ---
 # Révision des conversations
 
@@ -20,22 +20,22 @@ ht-degree: 16%
 >[!CONTEXTUALHELP]
 >id="workspace_conversationreview_panel"
 >title="Révision des conversations"
->abstract="comprendre le contexte et le flux d’une conversation individuelle, y compris les horodatages et les signaux ; Configurez les signaux à afficher."
+>abstract="Comprenez le contexte et le flux d’une conversation individuelle, y compris les dates et heures, et les signaux. Configurez les signaux à afficher."
 
 
-La visualisation ![Chat](/help/assets/icons/Chat.svg) **[!UICONTROL Révision de la conversation]** montre l’échange complet tour à tour entre le client et l’agent dans le cadre de [Informations sur la conversation](/help/conversation-insights/overview.md).
+La visualisation ![Conversation](/help/assets/icons/Chat.svg) **[!UICONTROL Révision de la conversation]** montre l’échange complet tour à tour entre le client et l’agent dans le cadre de [Informations sur la conversation](/help/conversation-insights/overview.md).
 
 La visualisation vous permet de comprendre le contexte et le flux d’une conversation individuelle, y compris les horodatages et les signaux. Vous pouvez configurer les signaux à afficher ou non.
 
-## Création et configuration
+## Créer et configurer
 
-Pour créer et configurer une visualisation ![Chat](/help/assets/icons/Chat.svg) **[!UICONTROL Révision de conversation]** :
+Pour créer et configurer une visualisation ![Conversation](/help/assets/icons/Chat.svg) **[!UICONTROL Révision de conversation]** :
 
-1. Ajoutez une visualisation ![Chat](/help/assets/icons/Chat.svg) **[!UICONTROL Révision de conversation]**. Voir [Ajouter une visualisation à un panneau](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
+1. Ajoutez une visualisation ![Conversation](/help/assets/icons/Chat.svg) **[!UICONTROL Révision de conversation]**. Voir [Ajouter une visualisation à un panneau](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
 
-1. Dans la **[!UICONTROL Révision des conversations]** configuration de la visualisation :
+1. Dans la configuration de visualisation **[!UICONTROL Révision de la conversation]** :
 
-   * Sélectionnez une **[!UICONTROL Conversation]**.
+   * Sélectionnez une **[!UICONTROL conversation]**.
 
 1. Sélectionnez **[!UICONTROL Créer]** pour créer la visualisation. Sélectionnez **[!UICONTROL Réinitialiser]** pour réinitialiser les valeurs de configuration aux valeurs par défaut. Sélectionnez **[!UICONTROL Annuler]** pour annuler la configuration.
 
@@ -47,7 +47,7 @@ Utilisez la barre de défilement segmentée verticale pour parcourir la conversa
 
 **[!UICONTROL Début de session]** indique le début de la conversation. **[!UICONTROL Fin de session]** indique la fin de la conversation.
 
-![Révision des conversations](assets/conversation-review.png)
+![Révision de la conversation](assets/conversation-review.png)
 
 
 

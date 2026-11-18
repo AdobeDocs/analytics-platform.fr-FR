@@ -6,7 +6,7 @@ role: User
 source-git-commit: 30311dc0e753778c6e5316d82ffba25748d8315e
 workflow-type: tm+mt
 source-wordcount: '407'
-ht-degree: 17%
+ht-degree: 22%
 ---
 # Récapitulatifs des conversations {#conversation-summaries}
 
@@ -18,7 +18,7 @@ ht-degree: 17%
 >[!CONTEXTUALHELP]
 >id="workspace_conversationsummaries_panel"
 >title="Récapitulatifs des conversations"
->abstract="Résumez un groupe filtré de conversations. Contrôlez la longueur du résumé. Consultez les citations représentatives de la clientèle pour valider la précision des signaux extraits. Sélectionnez un devis pour ouvrir la relecture complète de la conversation."
+>abstract="Résumez un groupe filtré de conversations. Contrôlez la longueur du résumé. Consultez les citations représentatives de la clientèle pour valider la précision des signaux extraits. Sélectionnez une citation pour accéder à la relecture complète de la conversation."
 
 {{release-limited-testing}}
 
@@ -27,31 +27,31 @@ La visualisation ![AI](/help/assets/icons/AI.svg) **[!UICONTROL Synthèses des c
 La visualisation présente un résumé de la mesure sélectionnée (par exemple, Conversations) et affiche des sous-rubriques ou des commentaires textuels lorsque vous avez configuré la visualisation pour inclure des sous-rubriques.
 
 
-## Création et configuration {#conversation-summaries-create-configure}
+## Créer et configurer {#conversation-summaries-create-configure}
 
 >[!CONTEXTUALHELP]
 >id="workspace_conversationsummaries_usenondefaultattributionmodel"
->title="Utilisation d’un modèle d’attribution différent du modèle par défaut"
+>title="Utiliser un modèle d’attribution différent du modèle par défaut"
 >abstract="Activez un modèle d’attribution autre que celui par défaut pour cette mesure."
 
 >[!CONTEXTUALHELP]
 >id="workspace_conversationsummaries_usenondefaultattributionmodel_disabled"
->title="Utilisation d’un modèle d’attribution différent du modèle par défaut"
->abstract="Les modèles d’attribution non par défaut ne sont pas disponibles pour cette mesure."
+>title="Utiliser un modèle d’attribution différent du modèle par défaut"
+>abstract="Les modèles d’attribution autre que celui par défaut n’est pas disponible pour cette mesure."
 
-Pour créer et configurer une visualisation **[!UICONTROL Récapitulatifs des conversations]** :
+Pour créer et configurer une visualisation **[!UICONTROL Résumés des conversations]** :
 
-1. Ajoutez une visualisation ![AI](/help/assets/icons/AI.svg) **[!UICONTROL Récapitulatifs des conversations]**. Voir [Ajouter une visualisation à un panneau](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
+1. Ajoutez une visualisation ![AI](/help/assets/icons/AI.svg) **[!UICONTROL Récapitulatifs de conversation]**. Voir [Ajouter une visualisation à un panneau](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
 
-1. Dans la configuration de visualisation **[!UICONTROL Synthèses des conversations]** :
+1. Dans la configuration de visualisation **[!UICONTROL Récapitulatifs de conversation]** :
 
-   1. Sélectionnez une **[!UICONTROL mesure]**. Par exemple : **[!UICONTROL Conversations]**.
-   1. Si vous souhaitez utiliser un modèle [attribution](/help/analysis-workspace/attribution/models.md) autre que celui par défaut pour la mesure, sélectionnez **[!UICONTROL Utiliser un modèle d’attribution autre que celui par défaut]**, puis sélectionnez **[!UICONTROL Modèle]**, **[!UICONTROL Conteneur]** et **[!UICONTROL Intervalle de recherche en amont]**.
+   1. Sélectionnez une **[!UICONTROL mesure]**. Par exemple : **[!UICONTROL conversations]**.
+   1. Si vous souhaitez utiliser un modèle d’[attribution](/help/analysis-workspace/attribution/models.md) autre que celui par défaut pour la mesure, sélectionnez **[!UICONTROL Utiliser un modèle d’attribution autre que celui par défaut]**, puis **[!UICONTROL Modèle]**, **[!UICONTROL Conteneur]** et **[!UICONTROL Intervalle de recherche en amont]**.
    1. Vous pouvez éventuellement appliquer un segment à la visualisation. Sélectionnez un segment dans le menu déroulant **[!UICONTROL Segments]**.
 
 1. Sélectionnez **[!UICONTROL Créer]** pour créer la visualisation. Sélectionnez **[!UICONTROL Réinitialiser]** pour réinitialiser les valeurs de configuration aux valeurs par défaut. Sélectionnez **[!UICONTROL Annuler]** pour annuler la configuration.
 
-Pour reconfigurer la visualisation **[!UICONTROL Synthèses des conversations]**, sélectionnez ![Modifier](/help/assets/icons/Edit.svg) en regard de **[!UICONTROL Mesure : _mesure_]**&#x200B;ou **[!UICONTROL Mesure :_mesure_]** | **[!UICONTROL Segments : _segments_]**.
+Pour reconfigurer la visualisation **[!UICONTROL Résumés des conversations]**, sélectionnez ![Modifier](/help/assets/icons/Edit.svg) en regard de **[!UICONTROL Mesure : _mesure_]**ou **[!UICONTROL Mesure :_mesure_]** | **[!UICONTROL Segments : _segments_]**.
 
 ## Utilisation
 
@@ -59,13 +59,13 @@ Pour utiliser la visualisation :
 
 >[!BEGINTABS]
 
->[!TAB Sous-rubriques]
+>[!TAB Sous-Rubriques]
 
-![Sous-rubriques](assets/conversation-summaries-subtopics.png)
+![Sous-Rubriques](assets/conversation-summaries-subtopics.png)
 
->[!TAB Commentaires détaillés]
+>[!TAB Commentaires verbatim]
 
-![Commentaires détaillés](assets/conversation-summaries-verbatimcomments.png)
+![Commentaires verbatim](assets/conversation-summaries-verbatimcomments.png)
 
 >[!ENDTABS]
 
@@ -74,10 +74,10 @@ Pour utiliser la visualisation :
 
 Pour parcourir rapidement plusieurs révisions de conversation :
 
-1. Créez un [tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) avec **[!UICONTROL ID de conversation]** et **[!UICONTROL Nom de conversation]** comme dimensions.
-1. Sélectionnez le tableau à structure libre comme source de données pour la visualisation **[!UICONTROL Révision des conversations]**.
+1. Créez un [tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) avec **[!UICONTROL l’ID de conversation]** et **[!UICONTROL le nom de conversation]** comme dimensions.
+1. Sélectionnez le tableau à structure libre comme source de données pour la visualisation **[!UICONTROL Révision de la conversation]**.
 
-Sélectionnez une conversation dans le tableau à structure libre pour mettre automatiquement à jour la **[!UICONTROL Révision de conversation]** avec les détails de cette conversation sélectionnée.
+Sélectionnez une conversation dans le tableau à structure libre pour mettre automatiquement à jour la **[!UICONTROL Révision de la conversation]** avec les détails de cette conversation sélectionnée.
 
 ## Paramètres
 

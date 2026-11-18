@@ -27,7 +27,7 @@ topic_v2:
 source-git-commit: f7d853a3b658328f952b675f838ce314b7c30fb1
 workflow-type: tm+mt
 source-wordcount: '520'
-ht-degree: 18%
+ht-degree: 22%
 ---
 # Gérer des sources de données {#manage-data-sources}
 
@@ -39,7 +39,7 @@ ht-degree: 18%
 >[!CONTEXTUALHELP]
 >id="workspace_freeformtable_lockselection_showtable"
 >title="Afficher le tableau"
->abstract="Sélectionnez **[!UICONTROL Afficher le tableau]** pour générer une nouvelle source de données pour la visualisation actuelle, distincte de la source de données d’origine."
+>abstract="Sélectionnez **[!UICONTROL Afficher le tableau]** pour générer une nouvelle source de données pour votre visualisation actuelle, distincte de la source de données d’origine."
 
 >[!CONTEXTUALHELP]
 >id="workspace_freeformtable_showtable"
@@ -61,7 +61,7 @@ Dans Analysis Workspace, chaque visualisation repose sur une source de données,
 
 1. Sélectionnez l’onglet **[!UICONTROL Source de données]**.
 
-   ![Onglet Source de données affichant la source de données, la visualisation liée et les paramètres de sélection de verrouillage.](assets/lock-selection.png)
+   ![Onglet Source de données affichant la source de données, la visualisation liée et les paramètres de sélection du verrouillage.](assets/lock-selection.png)
 
 1. Configurez l’un des paramètres suivants :
 
