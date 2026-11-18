@@ -74,7 +74,7 @@ Par exemple, la visualisation de la matrice suivante montre le nombre de chevauc
 
 ## Choisissez entre les visualisations Matrice, Tableau à structure libre, Venn ou Nuage de points
 
-La visualisation de la matrice présente des similitudes avec [l’utilisation de plusieurs colonnes de dimensions dans un tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table-multidimensions.md), la visualisation de Venn [3} et la visualisation de dispersion [5}. ](/help/analysis-workspace/visualizations/venn.md)](/help/analysis-workspace/visualizations/scatterplot.md)Chaque visualisation montre comment les composants sont liés les uns aux autres, mais ils diffèrent par les composants qu’ils utilisent et par la manière dont ils affichent les résultats.
+La visualisation de la matrice présente des similitudes avec [l’utilisation de plusieurs colonnes de dimensions dans un tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table-multidimensions.md), la visualisation de Venn [&#128279;](/help/analysis-workspace/visualizations/scatterplot.md)3&rbrace; et la visualisation de dispersion [5&rbrace;. &#x200B;](/help/analysis-workspace/visualizations/venn.md)Chaque visualisation montre comment les composants sont liés les uns aux autres, mais ils diffèrent par les composants qu’ils utilisent et par la manière dont ils affichent les résultats.
 
 ### Quand utiliser chaque visualisation
 
