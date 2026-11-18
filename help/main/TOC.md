@@ -2,9 +2,9 @@
 user-guide-title: Guide de Customer Journey Analytics (parcours client)
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: bd396cb4909d131ed60c97e7101cf85946555e38
+source-git-commit: 3199a70eee577f4e283208e2c5089c05fe20ed0d
 workflow-type: tm+mt
-source-wordcount: '1525'
+source-wordcount: '1528'
 ht-degree: 88%
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 88%
 + Mettre à niveau et comparer {#compare-aa-cja}
   + Mettre à niveau vers Customer Journey Analytics {#upgrade-to-cja}
     + {hide-from-toc}[Prise en main](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md)
-    + {hide-from-toc}[Choisissez le chemin de mise à niveau](/help/getting-started/cja-upgrade/cja-upgrade-path.md)
+    + {hide-from-toc}[Choisissez votre chemin de mise à niveau](/help/getting-started/cja-upgrade/cja-upgrade-path.md)
     + {hide-from-toc}[Envoyer des données à Platform](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)
     + {hide-from-toc}[Conserver les données historiques](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
     + [Processus de mise à niveau recommandé](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)
@@ -241,6 +241,9 @@ ht-degree: 88%
       + [Vue d’ensemble](../analysis-workspace/visualizations/journey-canvas/journey-canvas.md)
       + [Configurer](../analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
       + [Résoudre des problèmes](../analysis-workspace/visualizations/journey-canvas/journey-canvas-troubleshooting.md)
+    + Matrice {#matrix}
+      + {hide-from-toc}[Vue d’ensemble](../analysis-workspace/visualizations/matrix/matrix.md)
+      + {hide-from-toc}[Configuration](../analysis-workspace/visualizations/matrix/configure-matrix.md)
     + [Révision des conversations](../analysis-workspace/visualizations/conversation-insights/conversation-review.md)
     + [Récapitulatifs des conversations](../analysis-workspace/visualizations/conversation-insights/conversation-summaries.md)
     + [Sujets de tendance](../analysis-workspace/visualizations/conversation-insights/trending-topics.md)
@@ -434,14 +437,14 @@ ht-degree: 88%
     + Flux de données {#cja-data-feeds}
       + {hide-from-toc}[Vue d’ensemble](/help/components/exports/cja-data-feeds/data-feed-overview.md)
       + {hide-from-toc}[Comparer les flux de données Adobe Analytics](/help/components/exports/cja-data-feeds/df-comparison.md)
-      + {hide-from-toc}[Comparer Workspace aux flux de données](/help/components/exports/cja-data-feeds/df-comparison-workspace.md)
-      + {hide-from-toc}[&#x200B; Disponibilité des composants &#x200B;](/help/components/exports/cja-data-feeds/df-components.md)
+      + {hide-from-toc}[Comparer le Workspace et les flux de données](/help/components/exports/cja-data-feeds/df-comparison-workspace.md)
+      + {hide-from-toc}[Disponibilité du composant](/help/components/exports/cja-data-feeds/df-components.md)
       + {hide-from-toc}[Préparer le mappage des colonnes](/help/components/exports/cja-data-feeds/df-column-mapping-prep.md)
       + {hide-from-toc}[Mapper les colonnes](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)
       + {hide-from-toc}[Créer des flux de données](/help/components/exports/cja-data-feeds/create-feed.md)
       + {hide-from-toc}[Segmentation dans les flux de données](/help/components/exports/cja-data-feeds/df-segmentation.md)
       + {hide-from-toc}[Appliquer des transformations de données](/help/components/exports/cja-data-feeds/df-data-transformations.md)
-      + {hide-from-toc}[&#x200B; Composants de sous-événement &#x200B;](/help/components/exports/cja-data-feeds/df-sub-event.md)
+      + {hide-from-toc}[Composants de sous-événement](/help/components/exports/cja-data-feeds/df-sub-event.md)
       + {hide-from-toc}[Utiliser des fichiers Parquet](/help/components/exports/cja-data-feeds/df-parquet.md)
   + Dictionnaire de données {#data-dictionary}
     + [Vue d’ensemble](../components/data-dictionary/data-dictionary-overview.md)
@@ -580,7 +583,7 @@ ht-degree: 88%
       + [Lier des lectures de session](/help/use-cases/third-party/quantum-metric/tie-session-replays.md)
       + [Utiliser des cartes thermiques](/help/use-cases/third-party/quantum-metric/heatmap.md)
       + [Ajouter des événements de friction](/help/use-cases/third-party/quantum-metric/friction-events.md)
-      + {hide-from-toc}[Connecteur &#x200B;](/help/use-cases/third-party/quantum-metric/source-connector.md)
+      + {hide-from-toc}[Connecteur Source](/help/use-cases/third-party/quantum-metric/source-connector.md)
 
 + Labs {#labs}
   + [Guide d’utilisation de Labs](../labs/labs.md)
