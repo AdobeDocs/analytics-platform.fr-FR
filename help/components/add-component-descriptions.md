@@ -25,7 +25,7 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: b46a27ff9faca74c3c2baa7938a588b643633705
+source-git-commit: 3199a70eee577f4e283208e2c5089c05fe20ed0d
 workflow-type: tm+mt
 source-wordcount: '593'
 ht-degree: 10%
@@ -38,7 +38,7 @@ Les administrateurs et administratrices de Customer Journey Analytics peuvent aj
 
 ## Vue de données
 
-Vous pouvez ajouter une description à un composant que vous avez ajouté à votre vue de données. Voir [&#x200B; Paramètres des composants &#x200B;](/help/data-views/component-settings/overview.md).
+Vous pouvez ajouter une description à un composant que vous avez ajouté à votre vue de données. Voir [Paramètres des composants](/help/data-views/component-settings/overview.md).
 
 ## Dictionnaire de données
 
@@ -56,19 +56,17 @@ Pour obtenir des informations générales sur le dictionnaire de données, consu
 
 ## Génération automatique de descriptions
 
-{{release-limited-testing-section}}
-
 Au lieu d’écrire chaque description manuellement, Customer Journey Analytics peut utiliser l’IA générative pour écrire des descriptions pour vous. Vous pouvez générer une description pour un seul composant ou générer des descriptions pour de nombreux composants en même temps.
 
 Descriptions générées :
 
 * Ne contiennent pas plus de 3 phrases.
-* Terminez par le texte **[!UICONTROL Généré par Adobe à l’aide de l’IA]** afin que les utilisateurs et utilisatrices sachent que la description a été générée.
+* Terminez par le texte **[!UICONTROL Généré par Adobe à l’aide de l’IA]**, afin que les utilisateurs sachent que la description a été générée.
 * Modifiables une fois qu’ils ont été générés.
 
 ### Conditions préalables
 
-Avant de pouvoir générer des descriptions, votre entreprise doit accepter certains termes juridiques d’IA générative. Si votre entreprise n’a pas accepté ces conditions, l’option permettant de générer des descriptions est grisée. Sélectionnez l’icône d’information ![Infos](/help/assets/icons/InfoOutline.svg) en regard de l’option pour savoir comment activer la fonctionnalité, ou contactez l’administrateur ou l’administratrice de votre organisation ou l’équipe du compte Adobe.
+Avant de pouvoir générer des descriptions, votre entreprise doit accepter certains termes juridiques d’IA générative. Si votre entreprise n’a pas accepté ces conditions, l’option permettant de générer des descriptions est grisée. Sélectionnez l’icône d’information ![Info](/help/assets/icons/InfoOutline.svg) en regard de l’option pour savoir comment activer la fonctionnalité, ou contactez l’équipe de l’administrateur ou administratrice de votre organisation ou l’équipe du compte Adobe.
 
 ### Comment sont générées les descriptions ?
 
@@ -87,20 +85,20 @@ Sélectionnez un emplacement pour savoir comment y générer des descriptions.
 
 | Emplacement | Composants pris en charge | Un seul composant | Composants multiples |
 | --- | --- | --- | --- |
-| [Dictionnaire de données](/help/components/data-dictionary/edit-entries-data-dictionary.md) | <ul><li>Dimensions</li><li>Mesures</li><li>Mesures calculées</li><li>Segments</li><li>Périodes</li></ul> | Oui | Oui |
+| [Dictionnaire De Données](/help/components/data-dictionary/edit-entries-data-dictionary.md) | <ul><li>Dimensions</li><li>Mesures</li><li>Mesures calculées</li><li>Segments</li><li>Périodes</li></ul> | Oui | Oui |
 | [Vue de données](/help/data-views/component-settings/overview.md) | <ul><li>Dimensions</li><li>Mesures</li><li>Champs dérivés</li><li>Mesures et dimensions partagées (pour plus d’informations, voir [Mesures et dimensions partagées](#generate-descriptions-for-shared-metrics-and-dimensions).)</li></ul> | Oui | Oui |
 | [Créateur de segments](/help/components/segments/seg-builder.md) | Segments | Oui | Non |
-| [&#x200B; Gestionnaire de segments &#x200B;](/help/components/segments/seg-manage.md#action-bar) | Segments | Non | Oui |
+| [Gestionnaire de segments](/help/components/segments/seg-manage.md#action-bar) | Segments | Non | Oui |
 | [Créateur de mesures calculées](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) | Mesures calculées | Oui | Non |
 | [Gestionnaire de mesures calculées](/help/components/calc-metrics/cm-workflow/cm-manager.md#action-bar) | Mesures calculées | Non | Oui |
 | [Créateur de périodes](/help/components/date-ranges/create.md#date-range-builder) | Périodes | Oui | Non |
-| [Gestionnaire de périodes](/help/components/date-ranges/manage.md#action-bar) | Périodes | Non | Oui |
+| [Gestionnaire des périodes](/help/components/date-ranges/manage.md#action-bar) | Périodes | Non | Oui |
 
 {style="table-layout:auto"}
 
 ### Générer des descriptions pour les mesures et dimensions partagées
 
-Vous ne pouvez générer des descriptions pour les mesures et dimensions partagées qu’à partir d’une vue de données, comme indiqué dans le tableau de la section [&#x200B; Générer des descriptions à partir de différents emplacements &#x200B;](#generate-descriptions-from-various-locations). Vous ne pouvez pas générer de descriptions à partir du [gestionnaire des mesures et dimensions partagées](/help/data-views/shared-metrics-dimensions/smd-overview.md#smd-manager).
+Vous pouvez générer des descriptions pour les mesures et dimensions partagées uniquement à partir d’une vue de données, comme indiqué dans le tableau de la section [Générer des descriptions à partir de divers emplacements](#generate-descriptions-from-various-locations). Vous ne pouvez pas générer de descriptions à partir du [gestionnaire des mesures et dimensions partagées](/help/data-views/shared-metrics-dimensions/smd-overview.md#smd-manager).
 
 Tenez compte des points suivants lorsque vous générez une description pour une mesure ou une dimension partagée dans une vue de données :
 
