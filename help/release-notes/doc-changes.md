@@ -55,10 +55,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 930ce593b744f0afc0e97dda1acf48e009e9e30a
+source-git-commit: a46dfefa38e5c4d7f4daa51871b4de75bf5304e1
 workflow-type: tm+mt
-source-wordcount: '7485'
-ht-degree: 92%
+source-wordcount: '7516'
+ht-degree: 91%
 ---
 
 # Customer Journey Analytics - Mises à jour de la documentation
@@ -70,6 +70,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Fonctionnalité | Description |
 |---|---|
 | **Novembre 2026** | |
+| Utiliser un collègue lors de la mise à niveau vers Customer Journey Analytics | Mise à jour de [Mise à niveau d’Adobe Analytics vers Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md) avec des liens vers de nouvelles fonctionnalités d’Adobe CX Enterprise Coworker, telles que la génération d’étapes de mise à niveau et la validation de vos données. |
 | Portée de la déduplication des mesures | Suppression de la mise en garde qui s’appliquait lorsque la portée de déduplication d’une mesure [était définie sur Personne](/help/data-views/component-settings/metric-deduplication.md), qui indiquait que la mesure était évaluée par mois calendaires complets. Pour une mesure dont la portée de déduplication est définie sur Personne, la déduplication s’applique désormais uniquement dans la fenêtre de création de rapports sélectionnée. |
 | **Octobre 2026** | |
 | Mécanismes de sécurisation pour les vues de données | Mise à jour du [guadrail](/help/technotes/guardrails.md) pour le nombre maximal de vues de données pour une organisation (de 2 000 à 5 000). |
@@ -162,7 +163,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | **Mars 2025** | |
 | Cas d’utilisation de Quantum Metric | Ajout de cas d’utilisation pour la collecte de données à partir de [Quantum Metric](/help/use-cases/third-party/quantum-metric/qm-overview.md). |
 | Modèle d’utilisation du produit | Un nouveau modèle d’espace de travail vous permet de voir comment le produit Customer Journey Analytics est utilisé au sein de votre organisation. [En savoir plus](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/templates/use-templates). |
-| Guide de mise à niveau de Customer Journey Analytics | Permet de générer un guide détaillé pour la mise à niveau d’Adobe Analytics vers Customer Journey Analytics. Pour commencer à générer votre guide personnalisé, connectez-vous à [!DNL Customer Journey Analytics], puis sélectionnez **[!UICONTROL Mettre à niveau vers Customer Journey Analytics]** dans l’onglet **[!UICONTROL Espace de travail]**. [En savoir plus](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/compare-aa-cja/upgrade-to-cja/cja-upgrade-recommendations#recommended-upgrade-steps-for-most-organizations) |
+| Guide de mise à niveau de Customer Journey Analytics | Permet de générer un guide détaillé pour la mise à niveau d’Adobe Analytics vers Customer Journey Analytics. Pour commencer à générer votre guide personnalisé, connectez-vous à [!DNL Customer Journey Analytics], puis sélectionnez **[!UICONTROL Mettre à niveau vers Customer Journey Analytics]** dans l’onglet **[!UICONTROL Espace de travail]**. [En savoir plus](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/compare-aa-cja/upgrade-to-cja/cja-upgrade-recommendations#upgrade-process) |
 | Mises à jour de l’élément de ligne « Aucune valeur » sur les dimensions numériques | Pour les dimensions numériques, cette mise à jour vous permet d’utiliser l’élément de dimension « Aucune valeur » dans un segment et d’effectuer une répartition dans un rapport sur l’élément de ligne « Aucune valeur ». [En savoir plus](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dataviews/component-settings/no-value-options#numeric) |
 | Collecte de médias : mises à jour du connecteur source Adobe pour le nouveau XDM de reporting des médias | Le connecteur source Analytics mappe automatiquement les données de médias en streaming dans Adobe Analytics aux mêmes champs utilisés par le SDK web. Auparavant, les données étaient mappées à la fois à l’ancien et au nouvel emplacement, mais seul le nouvel emplacement sera utilisé à l’avenir. [En savoir plus](https://experienceleague.adobe.com/fr/docs/analytics/implementation/aep-edge/xdm-var-mapping) |
 | **Février 2025** |  |

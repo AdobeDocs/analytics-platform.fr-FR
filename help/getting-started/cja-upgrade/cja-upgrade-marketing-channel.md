@@ -27,7 +27,7 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 1f480cda20e0b2d54dd42b909bfa8bf8a2bc0c95
+source-git-commit: da6fd038a1ec8a662550b5c31382e18dca18a9c3
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 57%
@@ -72,7 +72,7 @@ Pour utiliser les canaux marketing dans Customer Journey Analytics avec Experien
 
 {{upgrade-final-step}}
 
-&#x200B;# Différences entre les canaux marketing dans Adobe Analytics et Customer Journey Analytics
+## Différences entre les canaux marketing dans Adobe Analytics et Customer Journey Analytics
 
 Bien que les champs dérivés offrent une logique de traitement basée sur des règles similaire pour les canaux marketing dans Adobe Analytics, les différences architecturales entre les deux plateformes peuvent entraîner des résultats différents entre les deux plateformes.
 

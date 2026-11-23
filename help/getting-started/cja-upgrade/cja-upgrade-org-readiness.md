@@ -39,14 +39,14 @@ topic_v2:
     internal-label: Behavioral data
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
+source-git-commit: a46dfefa38e5c4d7f4daa51871b4de75bf5304e1
 workflow-type: tm+mt
 source-wordcount: '1189'
 ht-degree: 14%
 ---
 # Préparer votre organisation à la mise à niveau vers Customer Journey Analytics
 
-Une partie d’une mise à niveau réussie (comme décrit dans [Mise à niveau d’Adobe Analytics vers Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)) consiste à préparer votre entreprise en se concentrant sur certaines considérations opérationnelles. Pour préparer votre organisation, il est recommandé de :
+Une partie d&#39;une mise à niveau réussie (comme décrit dans [Mise à niveau d&#39;Adobe Analytics vers Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)) consiste à préparer votre organisation en se concentrant sur certaines considérations opérationnelles. Pour préparer votre organisation, il est recommandé de :
 
 * Obtenir l’adhésion et l’alignement des principales parties prenantes
 
@@ -107,11 +107,11 @@ Avec l’aide de votre sponsor exécutif, obtenez le soutien d’autres dirigean
 
 Un plan de mise à niveau peut inclure les informations suivantes :
 
-* Description claire de la raison pour laquelle la mise à niveau est en cours. Par exemple, décrivez les avantages pour les utilisateurs et pour l’organisation ou l’entreprise dans son ensemble. Pour plus d’informations sur les avantages, voir [Focus on value](#focus-on-value).
+* Description claire de la raison pour laquelle la mise à niveau est en cours. Par exemple, décrivez les avantages pour les utilisateurs et pour l’organisation ou l’entreprise dans son ensemble. Pour plus d’informations sur les avantages, voir [Se concentrer sur la valeur](#focus-on-value).
 
 * Calendrier général, par exemple la date prévue pour le début de la mise à niveau, plan des jalons clés et estimation de la date prévue pour la fin de la mise à niveau.
 
-* Une indication du moment où les utilisateurs peuvent commencer à suivre des formations officielles pour apprendre à utiliser Customer Journey Analytics. Pour plus d’informations, voir [Formation des utilisateurs finaux dans l’ensemble de votre organisation](#train-end-users-throughout-your-organization).
+* Une indication du moment où les utilisateurs peuvent commencer à suivre des formations officielles pour apprendre à utiliser Customer Journey Analytics. Pour plus d&#39;informations, consultez [Formation des utilisateurs finaux dans l&#39;ensemble de votre organisation](#train-end-users-throughout-your-organization).
 
 * Informations sur les personnes qui dirigent la mise à niveau et sur la manière ou le moment où les personnes peuvent poser des questions.
 
@@ -181,4 +181,4 @@ Identifiez des champions dans l’ensemble de votre organisation. Ces champions 
 
 ## Suivez les étapes de mise à niveau recommandées
 
-Lorsque vous êtes prêt à lancer le processus de mise à niveau, suivez les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou les étapes de mise à niveau générées dynamiquement dans le Guide de mise à niveau de Customer Journey Analytics. Pour accéder au guide à partir de Customer Journey Analytics, sélectionnez l’onglet **[!UICONTROL Espace de travail]**, puis sélectionnez **[!UICONTROL Mettre à niveau vers Customer Journey Analytics]** dans le panneau de gauche. Suivez les instructions à l’écran.
+Lorsque vous êtes prêt à lancer le processus de mise à niveau, suivez les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#upgrade-process) ou les étapes de mise à niveau générées dynamiquement dans le Guide de mise à niveau de Customer Journey Analytics. Pour accéder au guide à partir de Customer Journey Analytics, sélectionnez l’onglet **[!UICONTROL Espace de travail]**, puis sélectionnez **[!UICONTROL Mettre à niveau vers Customer Journey Analytics]** dans le panneau de gauche. Suivez les instructions à l’écran.
