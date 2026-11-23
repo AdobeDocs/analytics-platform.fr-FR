@@ -76,7 +76,7 @@ Pour utiliser les canaux marketing dans Customer Journey Analytics avec Experien
 
 Bien que les champs dérivés offrent une logique de traitement basée sur des règles similaire pour les canaux marketing dans Adobe Analytics, les différences architecturales entre les deux plateformes peuvent entraîner des résultats différents entre les deux plateformes.
 
-* Le paramètre [Remplacer le canal Dernière touche](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-channels#override-best-practices) n’est pris en charge que dans Adobe Analytics
+* Le paramètre [Remplacer le canal Dernière touche](https://experienceleague.adobe.com/fr/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-channels#override-best-practices) n’est pris en charge que dans Adobe Analytics
 
-* [L’expiration du canal marketing](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/visitor-engagement) commence après une période d’inactivité, tandis que l’expiration de la persistance Customer Journey Analytics repose sur l’instanciation de la valeur.
+* [L’expiration du canal marketing](https://experienceleague.adobe.com/fr/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/visitor-engagement) commence après une période d’inactivité, tandis que l’expiration de la persistance Customer Journey Analytics repose sur l’instanciation de la valeur.
 
