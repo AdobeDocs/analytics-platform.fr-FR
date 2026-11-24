@@ -29,7 +29,7 @@ topic_v2:
 source-git-commit: 6db3ace5744a4277477c2a712c12fdd9a5f57c82
 workflow-type: tm+mt
 source-wordcount: '4331'
-ht-degree: 14%
+ht-degree: 15%
 ---
 # Créer un flux de données
 
@@ -70,7 +70,7 @@ Avant de créer un flux de données, il est important de comprendre les bases de
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_frequency_granularity"
 >title="Fréquence et granularité"
->abstract="**Fréquence de diffusion** (flux actifs) : fréquence de diffusion du flux de données. Les diffusions horaires contiennent l’équivalent d’une heure de données ; les diffusions quotidiennes contiennent l’équivalent d’une journée de données.<p>Chaque diffusion examine également une fenêtre de traitement de 30 jours pour qualifier les segments, calculer les sessions et conserver les valeurs de dimension. La fenêtre de traitement et le délai de traitement peuvent tous deux affecter les événements inclus.</p><p>**Granularité** (flux de renvoi) : intervalle de temps utilisé pour diviser les données historiques. Chaque bloc contient l’équivalent d’une journée de données et est diffusé le plus rapidement possible, et non une fois par jour. Ce champ est toujours défini sur Quotidien et ne peut pas être modifié.</p>"
+>abstract="**Fréquence de diffusion** (flux actifs) : fréquence de diffusion du flux de données. Les diffusions horaires contiennent l’équivalent d’une heure de données ; les diffusions quotidiennes contiennent l’équivalent d’une journée de données.<p>Chaque diffusion examine également une fenêtre de traitement de 30 jours pour qualifier les segments, calculer les sessions et conserver les valeurs de dimension. La fenêtre de traitement et le délai de traitement peuvent tous deux affecter les événements inclus.</p><p>**Granularité** (flux de renvoi) : intervalle de temps utilisé pour diviser les données historiques. Chaque bloc contient l’équivalent d’une journée de données et est diffusé le plus rapidement possible, et non une fois par jour. Ce champ est toujours défini sur Quotidien et ne peut pas être modifié.</p>"
 
 <!-- markdownlint-enable MD034 -->
 
